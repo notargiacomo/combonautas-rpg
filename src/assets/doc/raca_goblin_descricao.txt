@@ -1,0 +1,13 @@
+<p>Estes pequenos seres feiosos conseguiram um lugar entre os povos do Reinado. Podem ser encontrados em todas as grandes cidades, muitos vivendo na imundície, outros prosperando em carreiras que quase ninguém tentaria: espiões, aeronautas, engenhoqueiros. Onde o anão teimoso e o elfo empolado falham, o goblin pode dar um jeito. Porque ele não tem vergonha. Nem orgulho. Nem bom senso.</p>
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Destreza +2, Inteligência +1, Carisma –1.</p></b>
+<p><b>Engenhoso.</b> Você não sofre penalidades em testes de perícia por não usar ferramentas. Se usar a ferramenta necessária, recebe +2 no teste de perícia.</p>
+<p><b>Espelunqueiro.</b>Você recebe visão no escuro e deslocamento de escalada igual ao seu deslocamento terrestre.</p>
+<p><b>Peste Esguia.</b> Seu tamanho é Pequeno (veja a página 106), mas seu deslocamento se mantém 9m. Apesar de pequenos, goblins são rápidos.</p>
+<p><b>Rato das Ruas.</b> Você recebe +2 em Fortitude e sua recuperação de PV e PM nunca é inferior ao seu nível.</p>
+<p><b>Tipo de Criatura:</b> Humanoide</p>
+<p><b>Tamanho:</b> Pequeno</p>
+<p><b>Deslocamentos:</b> Terrestre 9 metros, Escalada 9 metros</p>
+<p><b>Sentidos:</b> Visão no Escuro</p>
+<p><b>Longevidade:</b> Normal</p>
+<p><b>Devotos:</b> Qualquer</p>

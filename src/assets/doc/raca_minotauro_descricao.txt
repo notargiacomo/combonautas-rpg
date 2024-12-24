@@ -1,0 +1,14 @@
+<p>Povo guerreiro, orgulhoso e poderoso, criadores de uma civilização avançada, com a missão sagrada de proteger e governar os fracos — ou assim se enxergavam. Em seus tempos áureos, tomaram grande parte de Arton. Hoje, após a morte de sua divindade e a decadência de seu Império, os minotauros lutam para recuperar a glória perdida ou encontrar um novo papel no mundo.<p>
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Força +2, Constituição +1, Sabedoria –1.</b></p>
+<p><b>Chifres.</b> Você possui uma arma natural de chifres (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.</p>
+<p><b>Couro Rígido.</b> Sua pele é dura como a de um touro. Você recebe +1 na Defesa.</p>
+<p><b>Faro.</b> Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas
+20% de chance de falha.</p>
+<p><b>Medo de Altura.</b> Se estiver adjacente a uma queda de 3m ou mais de altura (como um buraco ou penhasco), você fica abalado.</p>
+<p><b>Tipo de Criatura:</b> Humanoide</p>
+<p><b>Tamanho:</b> Médio</p>
+<p><b>Deslocamentos:</b> Terrestre 9 metros</p>
+<p><b>Sentidos:</b> Olfato Apurado</p>
+<p><b>Longevidade:</b> Normal</p>
+<p><b>Devotos:</b> Qualquer</p>

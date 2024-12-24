@@ -1,0 +1,197 @@
+<div class="container">
+  <mat-card class="example-card">
+    <form>
+      <div class="row">
+        <div class="col-md-6 mt-4">
+          <div class="row">
+            <label id="radio-radio-tipo-criatura"
+              ><b>Tipo de Criatura</b></label
+            >
+          </div>
+          <div class="row">
+            <mat-radio-group
+              name="tipo"
+              [(ngModel)]="consultaRacaDto.tipo_criatura"
+              (change)="selecaoTipoCriatura($event.value)"
+              title="Tipo de Criatura"
+              aria-labelledby="radio-tipo-criatura"
+            >
+              <mat-radio-button value="Construtor">Construtor</mat-radio-button>
+              <mat-radio-button value="Espírito">Espírito</mat-radio-button>
+              <mat-radio-button value="Humanoide">Humanoide</mat-radio-button>
+              <mat-radio-button value="Monstro">Monstro</mat-radio-button>
+              <mat-radio-button value="Morto-vivo">Morto-vivo</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4">
+          <div class="row">
+            <label id="radio-tamanho"><b>Tamanho</b></label>
+          </div>
+          <div class="row">
+            <mat-radio-group
+              title="Tamanho"
+              name="tamanho"
+              [(ngModel)]="consultaRacaDto.tamanho"
+              (change)="selecaoTamanho($event.value)"
+              aria-labelledby="radio-tamanho"
+            >
+              <mat-radio-button value="Minúsculo">Minúsculo</mat-radio-button>
+              <mat-radio-button value="Pequeno">Pequeno</mat-radio-button>
+              <mat-radio-button value="Médio">Médio</mat-radio-button>
+              <mat-radio-button value="Grande">Grande</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mt-4">
+          <div class="row">
+            <label id="radio-sentidos"><b>Sentidos</b></label>
+          </div>
+          <div class="row">
+            <section class="example-section">
+              <mat-checkbox name="sentido" 
+              [(ngModel)]="checkboxState[sentido]"
+              *ngFor="let sentido of sentidos" 
+              (change)="checkSentido(sentido, $event.checked)">
+                {{ sentido }}
+              </mat-checkbox>
+            </section>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="row">
+            <label id="radio-deslocamentos"><b>Deslocamentos</b></label>
+          </div>
+          <div class="row">
+            <section class="example-section">
+              <mat-checkbox name="deslocamento" *ngFor="let deslocamento of deslocamentos" 
+              [(ngModel)]="checkboxState[deslocamento]"
+              (change)="checkDeslocamento(deslocamento, $event.checked)">
+                {{ deslocamento }}
+              </mat-checkbox>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mt-4">
+          <mat-form-field class="example-form-field">
+            <mat-label>Raça</mat-label>
+            <input
+              matInput
+              type="text"
+              name="raca"
+              (keyup)="consultar()"
+              [(ngModel)]="consultaRacaDto.raca"
+            />
+          </mat-form-field>
+        </div>
+        <div class="col-md-6 mt-4">
+          <section>
+            <div class="example-button-row d-flex justify-content-end">
+              <button class="me-2" (click)="limparFiltros()" mat-flat-button>
+                Limpar Filtros
+              </button>
+              <button mat-flat-button>Adicionar Raça</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </form>
+  </mat-card>
+
+  <div class="row mt-4">
+    <mat-card class="example-card">
+      <table
+        mat-table
+        [dataSource]="racas"
+        multiTemplateDataRows
+        class="mat-elevation-z8"
+      >
+        @for (column of columnsToDisplay; track column) {
+        <ng-container matColumnDef="{{ column }}">
+          <th
+            mat-header-cell
+            *matHeaderCellDef
+            style="text-transform: uppercase"
+          >
+            {{ column }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element[column] }}</td>
+        </ng-container>
+        }
+        <ng-container matColumnDef="expand">
+          <th mat-header-cell *matHeaderCellDef aria-label="row actions">
+            &nbsp;
+          </th>
+          <td mat-cell *matCellDef="let element">
+            <button
+              mat-icon-button
+              aria-label="expand row"
+              (click)="
+                expandedElement = expandedElement === element ? null : element;
+                $event.stopPropagation()
+              "
+            >
+              @if (expandedElement === element) {
+              <mat-icon>keyboard_arrow_up</mat-icon>
+              } @else {
+              <mat-icon>keyboard_arrow_down</mat-icon>
+              }
+            </button>
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="expandedDetail">
+          <td
+            mat-cell
+            *matCellDef="let element"
+            [attr.colspan]="columnsToDisplayWithExpand.length"
+          >
+            <div
+              class="example-element-detail"
+              [@detailExpand]="
+                element == expandedElement ? 'expanded' : 'collapsed'
+              "
+            >
+              <div class="row">
+                <!-- <div
+                  class="col-md-5 text-justify"
+                  [innerHTML]="element.historia"
+                ></div> -->
+
+                <div
+                  class="col-md-9 text-justify"
+                  [innerHTML]="element.descricao"
+                ></div>
+                <div class="col-md-3">
+                  <mat-card>
+                    <img [src]="element.imagem" [alt]="element.nome" />
+                  </mat-card>
+                </div>
+              </div>
+            </div>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+        <tr
+          mat-row
+          *matRowDef="let element; columns: columnsToDisplayWithExpand"
+          class="example-element-row"
+          [class.example-expanded-row]="expandedElement === element"
+          (click)="
+            expandedElement = expandedElement === element ? null : element
+          "
+        ></tr>
+        <tr
+          mat-row
+          *matRowDef="let row; columns: ['expandedDetail']"
+          class="example-detail-row"
+        ></tr>
+      </table>
+    </mat-card>
+  </div>
+</div>

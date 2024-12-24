@@ -1,0 +1,10 @@
+<p>O povo mais numeroso em Arton, humanos são considerados os escolhidos dos deuses, aqueles que governam o mundo. Em sua variedade e adaptabilidade, são encontrados em quase todos os pontos do continente — dos vales férteis do Reinado às vastidões áridas do Deserto da Perdição. São exploradores e desbravadores ambiciosos, sempre buscando algo além.</p>
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>+1 em Três Atributos Diferentes.</b> Filhos de Valkaria, Deusa da Ambição, humanos podem se destacar em qualquer caminho que escolherem. </p>
+<p><b>Versátil.</b> Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha.</p>
+<p><b>Tipo de Criatura:</b> Humanoide</p>
+<p><b>Tamanho:</b> Médio</p>
+<p><b>Deslocamentos:</b> Terrestre 9 metros</p>
+<p><b>Sentidos:</b> Normais</p>
+<p><b>Longevidade:</b> Normal</p>
+<p><b>Devotos:</b> Qualquer</p>

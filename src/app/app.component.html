@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-content>
+    <button mat-button (click)="navigateTo('')">Home</button>
+    <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
+    <mat-menu #menuPersonagem="matMenu" yPosition="below">
+      <button mat-menu-item (click)="navigateTo('personagem/racas')">Raças</button>
+      <button mat-menu-item>Origens</button>
+      <button mat-menu-item>Classes</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menuRegra">Regra</button>
+    <mat-menu #menuRegra="matMenu" yPosition="below">
+      <button mat-menu-item>Ações</button>
+      <button mat-menu-item>Condições</button>
+    </mat-menu>
+  </mat-card-content>
+</mat-card>
+
+<mat-divider></mat-divider>
+
+<router-outlet />
