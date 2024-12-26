@@ -2,3 +2,27 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h2 {
+    margin-top: 1% !important;
+    color: rgb(200, 50, 35) !important;
+}
+
+b {
+    color: rgb(200, 50, 35) !important;
+}
+
+.card-padrao {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.mat-mdc-card-content{
+    background-color: rgb(132, 26, 18) !important;
+}
+
+.mdc-button__label{
+    color: rgb(247, 247, 247)
+}

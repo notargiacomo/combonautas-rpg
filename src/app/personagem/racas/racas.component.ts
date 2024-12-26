@@ -22,7 +22,7 @@ import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-racas',
   standalone:true,
-  imports: [MatTableModule, MatButtonModule, MatIconModule, MatCardModule, MatDividerModule, MatRadioModule, MatCheckboxModule, FormsModule, FormsModule, MatInputModule, MatFormFieldModule, ReactiveFormsModule, NgFor],
+  imports: [MatTableModule, MatButtonModule, MatIconModule, MatCardModule, MatDividerModule, MatRadioModule, MatCheckboxModule, FormsModule, MatInputModule, MatFormFieldModule, ReactiveFormsModule, NgFor],
   templateUrl: './racas.component.html',
   styleUrl: './racas.component.scss',
   animations: [

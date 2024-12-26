@@ -1,17 +1,21 @@
-<mat-card>
-  <mat-card-content>
+<mat-card style="background-color: (132, 26, 18) !important">
+  <mat-card-content style="background-color: (132, 26, 18) !important">
     <button mat-button (click)="navigateTo('')">Home</button>
     <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
     <mat-menu #menuPersonagem="matMenu" yPosition="below">
       <button mat-menu-item (click)="navigateTo('personagem/racas')">Raças</button>
-      <button mat-menu-item (click)="navigateTo('personagem/origem')">Origens</button>
-      <button mat-menu-item>Classes</button>
+      <!-- <button mat-menu-item (click)="navigateTo('personagem/origem')">Origens</button>
+      <button mat-menu-item>Classes</button> -->
     </mat-menu>
 
-    <button mat-button [matMenuTriggerFor]="menuRegra">Regra</button>
+    <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
     <mat-menu #menuRegra="matMenu" yPosition="below">
       <button mat-menu-item>Ações</button>
       <button mat-menu-item>Condições</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menuUtilitarios">Utilitários</button>
+    <mat-menu #menuUtilitarios="matMenu" yPosition="below">
+      <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">Cálculo de Desafios</button>
     </mat-menu>
   </mat-card-content>
 </mat-card>

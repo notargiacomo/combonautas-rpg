@@ -1,0 +1,136 @@
+<form [formGroup]="formulario">
+  <div class="container">
+    <h2>Calculo de Desafios</h2>
+    <mat-divider></mat-divider>
+    <div class="row">
+      <div class="col-md-5 mt-4">
+        <div class="col-md-12 mt-4">
+          <div class="row">
+            <div class="col-md-6 mt-4">
+              <mat-form-field class="example-form-field">
+                <mat-label>Nível Médio do Grupo</mat-label>
+                <input
+                  formControlName="nivel"
+                  matInput
+                  type="number"
+                  name="nivel"
+                  (keyup)="calcular()"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6 mt-4">
+              <mat-form-field class="example-form-field">
+                <mat-label>Número de Jogadores</mat-label>
+                <input
+                  formControlName="numero_jogadores"
+                  matInput
+                  type="number"
+                  name="numero_jogadores"
+                  (keyup)="calcular()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-4">
+              <div class="row">
+                <label id="radio-experientes"><b>Experientes?</b></label>
+              </div>
+              <div class="row">
+                <mat-radio-group
+                  title="experientes"
+                  name="experientes"
+                  formControlName="experientes"
+                  (change)="calcular()"
+                  aria-labelledby="radio-experientes"
+                >
+                  <mat-radio-button value="true">Sim</mat-radio-button>
+                  <mat-radio-button value="false">Não</mat-radio-button>
+                </mat-radio-group>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4">
+              <div class="row">
+                <label id="radio-entrosados"><b>Entrosados?</b></label>
+              </div>
+              <div class="row">
+                <mat-radio-group
+                  title="entrosados"
+                  name="entrosados"
+                  formControlName="entrosados"
+                  (change)="calcular()"
+                  aria-labelledby="radio-entrosados"
+                >
+                  <mat-radio-button value="true">Sim</mat-radio-button>
+                  <mat-radio-button value="false">Não</mat-radio-button>
+                </mat-radio-group>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-4">
+              <mat-form-field>
+                <mat-label>Situação do Combate</mat-label>
+                <mat-select (valueChange)="calcular()">
+                  @for (situacao of situacoes; track situacao) {
+                  <mat-option [value]="situacao">{{ situacao }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-6 mt-4">
+              <mat-form-field class="example-form-field">
+                <mat-label>Número de Encontros</mat-label>
+                <input
+                  formControlName="numero_encontros"
+                  matInput
+                  type="number"
+                  name="numero_encontros"
+                  (keyup)="calcular()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 mt-4">
+        <mat-card class="card-padrao">
+          <label id="radio-tamanho"
+            ><b
+              >Leis do Cálculo de Desafio (Referência: PAG. 282 do livro
+              básico)</b
+            ></label
+          >
+          <label id="radio-tamanho"
+            >1. A ND DE DESAFIO INICIAL SEM VARIANTES, É EQUIVALENTE A MÉDIA
+            TRUNCADA DO NÍVEL DO GRUPO</label
+          >
+          <label id="radio-tamanho"
+            >2. A ND AUMENTA EM 2 PARA CADA JOGADOR ACIMA DE 4</label
+          >
+          <label id="radio-tamanho"
+            >3. A ND AUMENTA EM 1 PARA JOGADORES EXPERIENTES</label
+          >
+          <label id="radio-tamanho"
+            >4. A ND AUMENTA EM 1 PARA JOGADORES ENTROSADOS</label
+          >
+          <label id="radio-tamanho"
+            >5. A ND DIMINUI EM 1 PARA CADA DESAFIO EXTRA ENTRE DESCANSOS</label
+          >
+          <label id="radio-tamanho"
+            >6. A ND AUMENTA EM 1 PARA SITUAÇÃO FAVORÁVEIS AOS JOGADORES</label
+          >
+          <label id="radio-tamanho"
+            >7. A ND DIMINUI EM 1 PARA SITUAÇÃO DESFAVORÁVEIS AOS
+            JOGADORES</label
+          >
+          <label id="radio-tamanho"
+            >8. O IDEIAL É QUE A ND TENHA A DIFERENÇA DE APENAS 3 PONTOS DA ND
+            MÉDIA DO GRUPO. ABAIXO DISSO SE TORNA UM ENCONTRO INSIGNIFICANTE,
+            ACIMA SE TORNA LETAL.</label
+          >
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</form>
