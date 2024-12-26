@@ -1,7 +1,7 @@
 export class ConsultaRacaDto {
   id?: number;
   raca: string = '';
-  tipo_criatura: '';
+  tipoCriatura: '';
   tamanho: '';
   sentidos: string[] = [];
   deslocamentos: string[] = [];
@@ -9,7 +9,7 @@ export class ConsultaRacaDto {
   constructor() {
     this.raca = '';
     this.tamanho = '';
-    this.tipo_criatura = '';
+    this.tipoCriatura = '';
     this.sentidos = [];
     this.deslocamentos = [];
   }
