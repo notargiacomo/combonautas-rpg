@@ -3,12 +3,34 @@ import { RacaData } from '../data/raca.data';
 import { HttpClient } from '@angular/common/http';
 import { ConsultaRacaDto } from '../dto/consulta.raca.dto';
 import { Raca } from '../model/raca';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class RacaService {
-  constructor(private racaData: RacaData, private http: HttpClient) {}
+  private readonly racaUrl = 'api/raca';  // URL to web api
+
+  constructor(private readonly racaData: RacaData, private readonly http: HttpClient) {}
+
+
+
+
+
+  removeBlankAttributes(obj:any) {
+    const result:any = {};
+    for (const key in obj) {
+        if (obj[key] !== null && obj[key] !== undefined) {
+            result[key] = obj[key];
+        }
+    }
+    return result;
+  }
+
+
+  listar(filtro:any): Observable<Raca[]> {
+    return this.http.get<Raca[]>(this.racaUrl,{params:this.removeBlankAttributes(filtro)});
+  }
 
   getRacas(consultaRacaDto?: ConsultaRacaDto): any[] {
     const racas = this.racaData.getRacas();
@@ -18,7 +40,7 @@ export class RacaService {
       racas.forEach((raca) => {
         // consulta por nome
         var temNome = consultaRacaDto?.raca.length > 0 ? !raca.nome.toLowerCase().indexOf(consultaRacaDto?.raca.toLowerCase()): true;
-        var eTipo = consultaRacaDto.tipo_criatura?.length > 0 ? raca.tipo === consultaRacaDto.tipo_criatura : true;
+        var eTipo = consultaRacaDto.tipoCriatura?.length > 0 ? raca.tipo === consultaRacaDto.tipoCriatura : true;
         var eTamanho = consultaRacaDto.tamanho?.length > 0 ? raca.tamanho === consultaRacaDto.tamanho: true;
         var temSentidos = consultaRacaDto.sentidos.length > 0 ? consultaRacaDto.sentidos.every((elemento) => raca.sentidos.includes(elemento)): true;
         var temDeslocamentos = consultaRacaDto.deslocamentos.length > 0 ? consultaRacaDto.deslocamentos.every((elemento) => raca.deslocamentos.includes(elemento)): true;

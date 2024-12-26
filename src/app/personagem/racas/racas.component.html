@@ -1,7 +1,7 @@
 <div class="container">
   <mat-card class="example-card">
-    <form>
-      <div class="row">
+    <form [formGroup]="form">
+      <div class="row" >
         <div class="col-md-6 mt-4">
           <div class="row">
             <label id="radio-radio-tipo-criatura"
@@ -11,7 +11,7 @@
           <div class="row">
             <mat-radio-group
               name="tipo"
-              [(ngModel)]="consultaRacaDto.tipo_criatura"
+              formControlName="tipo"
               (change)="selecaoTipoCriatura($event.value)"
               title="Tipo de Criatura"
               aria-labelledby="radio-tipo-criatura"
@@ -30,10 +30,10 @@
             <label id="radio-tamanho"><b>Tamanho</b></label>
           </div>
           <div class="row">
-            <mat-radio-group
+            <mat-radio-group 
               title="Tamanho"
               name="tamanho"
-              [(ngModel)]="consultaRacaDto.tamanho"
+              formControlName="tamanho"
               (change)="selecaoTamanho($event.value)"
               aria-labelledby="radio-tamanho"
             >
@@ -51,9 +51,8 @@
             <label id="radio-sentidos"><b>Sentidos</b></label>
           </div>
           <div class="row">
-            <section class="example-section">
-              <mat-checkbox name="sentido" 
-              [(ngModel)]="checkboxState[sentido]"
+            <section class="example-section" formArrayName="sentidos">
+              <mat-checkbox name="sentido"
               *ngFor="let sentido of sentidos" 
               (change)="checkSentido(sentido, $event.checked)">
                 {{ sentido }}
@@ -66,9 +65,8 @@
             <label id="radio-deslocamentos"><b>Deslocamentos</b></label>
           </div>
           <div class="row">
-            <section class="example-section">
+            <section class="example-section" formArrayName="deslocamentos">
               <mat-checkbox name="deslocamento" *ngFor="let deslocamento of deslocamentos" 
-              [(ngModel)]="checkboxState[deslocamento]"
               (change)="checkDeslocamento(deslocamento, $event.checked)">
                 {{ deslocamento }}
               </mat-checkbox>
@@ -80,12 +78,11 @@
         <div class="col-md-6 mt-4">
           <mat-form-field class="example-form-field">
             <mat-label>Raça</mat-label>
-            <input
+            <input formControlName="nome"
               matInput
               type="text"
               name="raca"
               (keyup)="consultar()"
-              [(ngModel)]="consultaRacaDto.raca"
             />
           </mat-form-field>
         </div>

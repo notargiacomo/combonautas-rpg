@@ -15,7 +15,7 @@ import {MatDividerModule} from '@angular/material/divider';
 export class AppComponent implements OnInit{
   title = 'combonautas';
 
-  constructor(private router: Router){}
+  constructor(private readonly router: Router){}
 
   ngOnInit() {}
 
