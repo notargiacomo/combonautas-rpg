@@ -16,6 +16,7 @@ export const appConfig: ApplicationConfig = {
               provideZoneChangeDetection({ eventCoalescing: true }), 
               provideRouter(routes, withComponentInputBinding()), 
               provideClientHydration(withEventReplay()), provideAnimationsAsync(),
-              importProvidersFrom(FormsModule,InMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 1000 })),
+              importProvidersFrom(FormsModule,InMemoryWebApiModule.forRoot(InMemoryDataService, {passThruUnknownUrl: true,
+                dataEncapsulation: false, delay: 1000 })),
             ]
 };
