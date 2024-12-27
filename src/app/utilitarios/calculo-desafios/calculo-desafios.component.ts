@@ -15,9 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
-
-
-
+import { CalculoDesafiosDto } from '../../dto/calculo-desafios.dto';
 
 @Component({
   selector: 'app-calculo-desafios',
@@ -28,22 +26,39 @@ import {MatSelectModule} from '@angular/material/select';
 })
 export class CalculoDesafiosComponent implements OnInit {
   formulario!: FormGroup;
+  calculoDesafios = new CalculoDesafiosDto();
+  resultado: string = '';
 
   situacoes: string[] = ['FAVORÁVEL', 'NEUTRA', 'DESFAVORÁVEL'];
 
   constructor(private fb: FormBuilder) {}
+
   ngOnInit(){
     this.formulario = this.fb.group({
-      nivel:Number,
-      numero_jogadores: Number,
-      experientes: Boolean,
-      entrosados: Boolean,
-      situacao: String,
-      numero_encontros: Number
+      nivel: new FormControl(this.calculoDesafios.nivel),
+      numero_jogadores: new FormControl(this.calculoDesafios.numero_jogadores),
+      experientes: new FormControl(this.calculoDesafios.experientes),
+      entrosados: new FormControl(this.calculoDesafios.entrosados),
+      situacao: new FormControl(this.calculoDesafios.situacao),
+      numero_encontros: new FormControl(this.calculoDesafios.numero_encontros)
     });
+    this.calcular();
   }
 
   calcular(){
-
+    // console.log(this.formulario.get("entrosados")?.value);
+    const valores : CalculoDesafiosDto = this.formulario.value;
+    var resultado: number = valores.nivel;
+    resultado += valores.numero_jogadores - 4;
+    console.log(resultado);
+    resultado += valores.experientes ? 1 : 0;
+    console.log(resultado);
+    resultado += valores.entrosados ? 1 : 0;
+    console.log(resultado);
+    resultado += valores.situacao;
+    console.log(resultado);
+    resultado += -(valores.numero_encontros-1);
+    console.log(resultado);
+    this.resultado = valores.numero_encontros + " encontros de ND " + resultado;
   }
 }
