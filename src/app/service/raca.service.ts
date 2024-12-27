@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { RacaData } from '../data/raca.data';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { map, Observable } from 'rxjs';
+import { RacaData } from '../data/raca.data';
 import { ConsultaRacaDto } from '../dto/consulta.raca.dto';
 import { Raca } from '../model/raca';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,9 +12,6 @@ export class RacaService {
   private readonly racaUrl = 'api/raca';  // URL to web api
 
   constructor(private readonly racaData: RacaData, private readonly http: HttpClient) {}
-
-
-
 
 
   removeBlankAttributes(obj:any) {
@@ -27,9 +24,29 @@ export class RacaService {
     return result;
   }
 
-
   listar(filtro:any): Observable<Raca[]> {
-    return this.http.get<Raca[]>(this.racaUrl,{params:this.removeBlankAttributes(filtro)});
+    return this.http.get<Raca[]>(this.racaUrl,{params:this.removeBlankAttributes(filtro)})
+    .pipe(map(resultado => {
+      resultado.forEach((raca) => {
+
+        raca.descricao = "assets/doc/${raca.nome_arquivo_descricao}.txt"
+        raca.historia = 'assets/doc/${raca.nome_arquivo_historia}.txt'
+        this.http
+          .get(`assets/doc/${raca.nome_arquivo_descricao}.txt`, {
+            responseType: 'text',
+          })
+          .subscribe((descricao) => (raca.descricao = descricao));
+        this.http
+          .get(`assets/doc/${raca.nome_arquivo_historia}.txt`, {
+            responseType: 'text',
+          })
+          .subscribe((historia) => (raca.historia = historia));
+      });
+  
+      return resultado;
+
+    }));
+    
   }
 
   getRacas(consultaRacaDto?: ConsultaRacaDto): any[] {
