@@ -1,162 +1,182 @@
 <form [formGroup]="formulario">
   <div class="container">
-    <h2>CÁLCULO DE DESAFIOS</h2>
-    <mat-divider></mat-divider>
     <div class="row">
-      <div class="col-md-5 mt-4">
-        <div class="col-md-12 mt-4">
-          <div class="row">
-            <div class="col-md-6 mt-4">
-              <mat-form-field class="example-form-field">
-                <mat-label>Nível Médio do Grupo</mat-label>
-                <input
-                  formControlName="nivel"
-                  matInput
-                  type="number"
-                  name="nivel"
-                  (change)="calcular()"
-                  (keyup)="calcular()"
-                />
-              </mat-form-field>
-            </div>
-            <div class="col-md-6 mt-4">
-              <mat-form-field class="example-form-field">
-                <mat-label>Número de Jogadores</mat-label>
-                <input
-                  formControlName="numero_jogadores"
-                  matInput
-                  type="number"
-                  name="numero_jogadores"
-                  (change)="calcular()"
-                  (keyup)="calcular()"
-                />
-              </mat-form-field>
-            </div>
+      <h2>CÁLCULO DE DESAFIOS</h2>
+    </div>
+    <div class="row">
+      <mat-divider></mat-divider>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mt-4">
+        <mat-card class="card-padrao">
+          <div class ="row">
+            <label
+            ><b
+              class="negrito-centralizado"
+              style="text-justify: center !important"
+              >PREENCHA O PERFIL DE SUA MESA ABAIXO:
+            </b></label
+          >
           </div>
-          <div class="row">
-            <div class="col-md-6 mt-4">
-              <div class="row">
-                <label id="radio-experientes"><b>Experientes?</b></label>
+          <div class="col-md-12 mt-4">
+            <div class="row">
+              <div class="col-md-6 mt-4">
+                <mat-form-field class="example-form-field">
+                  <mat-label>Nível Médio do Grupo</mat-label>
+                  <input
+                    formControlName="nivel"
+                    matInput
+                    type="number"
+                    name="nivel"
+                    (change)="calcular()"
+                    (keyup)="calcular()"
+                  />
+                </mat-form-field>
               </div>
-              <div class="row">
-                <mat-radio-group
-                  title="experientes"
-                  name="experientes"
-                  formControlName="experientes"
-                  (change)="calcular()"
-                  aria-labelledby="radio-experientes"
-                >
-                  <mat-radio-button [value]="true">Sim</mat-radio-button>
-                  <mat-radio-button [value]="false">Não</mat-radio-button>
-                </mat-radio-group>
+              <div class="col-md-6 mt-4">
+                <mat-form-field class="example-form-field">
+                  <mat-label>Número de Jogadores</mat-label>
+                  <input
+                    formControlName="numero_jogadores"
+                    matInput
+                    type="number"
+                    name="numero_jogadores"
+                    (change)="calcular()"
+                    (keyup)="calcular()"
+                  />
+                </mat-form-field>
               </div>
-            </div>
-            <div class="col-md-6 mt-4">
-              <div class="row">
-                <label id="radio-entrosados"><b>Entrosados?</b></label>
-              </div>
-              <div class="row">
-                <mat-radio-group
-                  title="entrosados"
-                  name="entrosados"
-                  formControlName="entrosados"
-                  (change)="calcular()"
-                  aria-labelledby="radio-entrosados"
-                >
-                  <mat-radio-button [value]="true">Sim</mat-radio-button>
-                  <mat-radio-button [value]="false">Não</mat-radio-button>
-                </mat-radio-group>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mt-4">
-              <div class="row">
-                <label id="radio-situacao"><b>Situação</b></label>
-              </div>
-              <div class="row">
-                <mat-radio-group
-                  title="situacao"
-                  name="situacao"
-                  formControlName="situacao"
-                  (change)="calcular()"
-                  aria-labelledby="radio-situacao"
-                >
-                  <mat-radio-button [value]="1">Favorável</mat-radio-button>
-                  <mat-radio-button [value]="0">Neutro</mat-radio-button>
-                  <mat-radio-button [value]="-1">Desfavorável</mat-radio-button>
-                </mat-radio-group>
-              </div>
-            </div>
-            <div class="col-md-6 mt-4">
-              <mat-form-field class="example-form-field">
-                <mat-label>Número de Encontros</mat-label>
-                <input
-                  formControlName="numero_encontros"
-                  matInput
-                  type="number"
-                  name="numero_encontros"
-                  (change)="calcular()"
-                  (keyup)="calcular()"
-                />
-              </mat-form-field>
             </div>
             <div class="row">
-              <div class="col-md-12 mt-4">
-                <mat-card class="card-padrao">
-                  <mat-label><b>RESULTADO: {{resultado}}</b> </mat-label>
-                </mat-card>
+              <div class="col-md-6 mt-4">
+                <div class="row">
+                  <label id="radio-experientes"><b>Experientes?</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    title="experientes"
+                    name="experientes"
+                    formControlName="experientes"
+                    (change)="calcular()"
+                    aria-labelledby="radio-experientes"
+                  >
+                    <mat-radio-button [value]="true">Sim</mat-radio-button>
+                    <mat-radio-button [value]="false">Não</mat-radio-button>
+                  </mat-radio-group>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4">
+                <div class="row">
+                  <label id="radio-entrosados"><b>Entrosados?</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    title="entrosados"
+                    name="entrosados"
+                    formControlName="entrosados"
+                    (change)="calcular()"
+                    aria-labelledby="radio-entrosados"
+                  >
+                    <mat-radio-button [value]="true">Sim</mat-radio-button>
+                    <mat-radio-button [value]="false">Não</mat-radio-button>
+                  </mat-radio-group>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mt-4">
+                <div class="row">
+                  <label id="radio-situacao"><b>Situação</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    title="situacao"
+                    name="situacao"
+                    formControlName="situacao"
+                    (change)="calcular()"
+                    aria-labelledby="radio-situacao"
+                  >
+                    <mat-radio-button [value]="1">Favorável</mat-radio-button>
+                    <mat-radio-button [value]="0">Neutro</mat-radio-button>
+                    <mat-radio-button [value]="-1"
+                      >Desfavorável</mat-radio-button
+                    >
+                  </mat-radio-group>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4">
+                <mat-form-field class="example-form-field">
+                  <mat-label>Número de Encontros</mat-label>
+                  <input
+                    formControlName="numero_encontros"
+                    matInput
+                    type="number"
+                    name="numero_encontros"
+                    (change)="calcular()"
+                    (keyup)="calcular()"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="row">
+                <mat-divider></mat-divider>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mt-4">
+                  <h4>RESULTADO: {{ resultado }}</h4>
+                </div>
+              </div>
             </div>
           </div>
-          </div>
-        </div>
+        </mat-card>
       </div>
-      <div class="col-md-7 mt-4">
+      <div class="col-md-6 mt-4">
         <mat-card class="card-padrao">
-          <label 
-            ><b class="negrito-centralizado" style="text-justify: center !important"
+          <label
+            ><b
+              class="negrito-centralizado"
+              style="text-justify: center !important"
               >OS 10 MANDAMENTOS DO CÁLCULO DE DESAFIOS
-               </b
+            </b></label
+          >
+          <label
+            ><b class="negrito-centralizado">
+              (BASEADO NA PAG. 282 DO LIVRO BÁSICO)</b
             ></label
           >
-          <label 
-            ><b class="negrito-centralizado"
-              >
-               (BASEADO NA PAG. 282 DO LIVRO BÁSICO)</b
-            ></label>
-          <label 
-            >1. A ND DE DESAFIO INICIAL SEM VARIANTES, É EQUIVALENTE A MÉDIA
-            TRUNCADA DO NÍVEL DO GRUPO</label
+          <mat-divider></mat-divider>
+          <label
+            ><b>1.</b> A ND DE DESAFIO INICIAL SEM VARIANTES, É EQUIVALENTE A
+            MÉDIA TRUNCADA DO NÍVEL DO GRUPO</label
           >
-          <label 
-            >2. A ND AUMENTA EM 2 PARA CADA JOGADOR ACIMA DE 4</label
+          <label
+            ><b>2.</b> A ND AUMENTA EM 1 PARA CADA JOGADOR ACIMA DE 4</label
           >
-          <label 
-            >3. A ND DIMINUI EM 2 PARA CADA JOGADOR ABAIXO DE 4</label
+          <label
+            ><b>3.</b> A ND DIMINUI EM 1 PARA CADA JOGADOR ABAIXO DE 4</label
           >
-          <label 
-            >4. A ND AUMENTA EM 1 PARA JOGADORES EXPERIENTES</label
+          <label><b>4.</b> A ND AUMENTA EM 1 PARA JOGADORES EXPERIENTES</label>
+          <label><b>5.</b> A ND AUMENTA EM 1 PARA JOGADORES ENTROSADOS</label>
+          <label
+            ><b>6.</b> A ND DIMINUI EM 1 PARA CADA DESAFIO EXTRA ENTRE
+            DESCANSOS</label
           >
-          <label 
-            >5. A ND AUMENTA EM 1 PARA JOGADORES ENTROSADOS</label
-          >
-          <label 
-            >6. A ND DIMINUI EM 1 PARA CADA DESAFIO EXTRA ENTRE DESCANSOS</label
-          >
-          <label 
-            >7. A ND AUMENTA EM 1 PARA SITUAÇÃO FAVORÁVEIS AOS JOGADORES</label
-          >
-          <label 
-            >8. A ND DIMINUI EM 1 PARA SITUAÇÃO DESFAVORÁVEIS AOS
+          <label
+            ><b>7.</b> A ND AUMENTA EM 1 PARA SITUAÇÃO FAVORÁVEIS AOS
             JOGADORES</label
           >
-          <label 
-            >9. O IDEIAL É QUE A ND TENHA A DIFERENÇA DE APENAS 3 PONTOS DA ND
-            MÉDIA DO GRUPO. ABAIXO DISSO SE TORNA UM ENCONTRO INSIGNIFICANTE,
-            ACIMA SE TORNA LETAL.</label
+          <label
+            ><b>8.</b> A ND DIMINUI EM 1 PARA SITUAÇÃO DESFAVORÁVEIS AOS
+            JOGADORES</label
           >
-          <label 
-            >10. O BOM SENSO DO MESTRE E A DIVERSÃO DO GRUPO SÃO AS PRIORIDADES.</label
+          <label>
+            <b>9.</b> A ND DIMINUI EM 1 PARA SITUAÇÃO DESFAVORÁVEIS AOS O IDEIAL
+            É QUE A ND TENHA A DIFERENÇA DE APENAS 3 PONTOS DA ND MÉDIA DO
+            GRUPO. ABAIXO DISSO SE TORNA UM ENCONTRO INSIGNIFICANTE, ACIMA SE
+            TORNA LETAL.</label
+          >
+          <label>
+            <b>10.</b> A ND DIMINUI EM 1 PARA SITUAÇÃO DESFAVORÁVEIS AOS O BOM
+            SENSO DO MESTRE E A DIVERSÃO DO GRUPO SÃO AS PRIORIDADES.</label
           >
         </mat-card>
       </div>

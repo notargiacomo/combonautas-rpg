@@ -50,15 +50,10 @@ export class CalculoDesafiosComponent implements OnInit {
     const valores : CalculoDesafiosDto = this.formulario.value;
     var resultado: number = valores.nivel;
     resultado += valores.numero_jogadores - 4;
-    console.log(resultado);
     resultado += valores.experientes ? 1 : 0;
-    console.log(resultado);
     resultado += valores.entrosados ? 1 : 0;
-    console.log(resultado);
     resultado += valores.situacao;
-    console.log(resultado);
     resultado += -(valores.numero_encontros-1);
-    console.log(resultado);
-    this.resultado = valores.numero_encontros + " encontros de ND " + resultado;
+    this.resultado = valores.numero_encontros + " ENCONTRO(S) DE ND " + resultado;
   }
 }

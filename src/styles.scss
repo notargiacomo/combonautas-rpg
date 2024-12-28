@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-h2 {
+h2, h4 {
     margin-top: 1% !important;
     color: rgb(200, 50, 35) !important;
 }
@@ -23,10 +23,22 @@ b {
     margin-bottom: 5px;
 }
 
+.mat-mdc-card-title{
+    color: rgb(132, 26, 18) !important;
+    font-size: small !important;
+}
+
 .mat-mdc-card-content{
+    font-size: small !important;
     background-color: rgb(132, 26, 18) !important;
+    color: rgb(247, 247, 247)
 }
 
 .mdc-button__label{
     color: rgb(247, 247, 247)
+}
+
+.mat-mdc-unelevated-button:not(:disabled) {
+    color: var(--mdc-filled-button-label-text-color, var(--mat-sys-on-primary));
+    background-color: rgb(132, 26, 18) !important;
 }
