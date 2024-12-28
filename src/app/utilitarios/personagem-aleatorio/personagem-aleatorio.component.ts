@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-personagem-aleatorio',
-  imports: [MatDividerModule, MatCardModule],
+  imports: [MatDividerModule, MatCardModule, MatButtonModule],
   templateUrl: './personagem-aleatorio.component.html',
   styleUrl: './personagem-aleatorio.component.scss'
 })
