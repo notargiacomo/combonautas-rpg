@@ -42,6 +42,7 @@ b {
     border-radius: 10px; /* Arredonda os cantos */
     overflow: hidden;    /* Garante que o conteúdo respeite o arredondamento */
     margin-bottom: 10px !important;
+    text-align: justify;
 }
 
 .mat-mdc-card-title{
@@ -69,6 +70,10 @@ b {
     font-size: small !important;
     background-color: rgb(132, 26, 18) !important;
     color: rgb(247, 247, 247)
+}
+
+.content-cartao-condicoes {
+    height: 400px !important;
 }
 
 .mdc-button__label{

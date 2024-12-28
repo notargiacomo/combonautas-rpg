@@ -10,8 +10,8 @@
 
     <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
     <mat-menu #menuRegra="matMenu" yPosition="below">
-      <button mat-menu-item>Ações</button>
-      <button mat-menu-item>Condições</button>
+      <!-- <button mat-menu-item>Ações</button> -->
+      <button mat-menu-item (click)="navigateTo('regras/condicoes')">Condições</button>
     </mat-menu>
     <button mat-button [matMenuTriggerFor]="menuUtilitarios">Utilitários</button>
     <mat-menu #menuUtilitarios="matMenu" yPosition="below">
