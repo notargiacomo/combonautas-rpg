@@ -1,7 +1,18 @@
+@font-face {
+    font-family: 'Tormenta20x' !important;
+    src: url('assets/font/Tormenta20x.ttf') format('truetype') !important;
+    
+    font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
+    font-style: normal;  /* Pode ser 'italic' ou outros estilos */
+}
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; 
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Tormenta20x', sans-serif !important;
+}
+
 
 h2, h4 {
     margin-top: 1% !important;
@@ -23,9 +34,35 @@ b {
     margin-bottom: 5px;
 }
 
+.botao-cartao-apresentacao {
+    margin-top: 15px !important;
+}
+
+.interior-cartao {
+    border-radius: 10px; /* Arredonda os cantos */
+    overflow: hidden;    /* Garante que o conteúdo respeite o arredondamento */
+    margin-bottom: 10px !important;
+}
+
 .mat-mdc-card-title{
-    color: rgb(132, 26, 18) !important;
+    color: rgb(247, 247, 247) !important;
+    background-color: rgb(132, 26, 18);
     font-size: small !important;
+}
+
+.mat-mdc-card-subtitle {
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.mat-mdc-card-title,.mat-mdc-card-subtitle {
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.titulo-cartao-apresentacao > .mat-mdc-card-subtitle {
+    font-weight: bold !important;
+    text-align: center !important;
 }
 
 .mat-mdc-card-content{

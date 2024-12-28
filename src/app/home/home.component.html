@@ -1,21 +1,21 @@
 <div class="container">
   <mat-card class="card-padrao">
     <div class="row">
-        <h2>SITE FEITO POR UM FÃ PARA FÃS DE TORMENTA 20</h2>
-      </div>
-      <div class="row">
-        <mat-divider></mat-divider>
-      </div>
+      <h2>SITE FEITO POR UM FÃ PARA FÃS DE TORMENTA 20</h2>
+    </div>
     <div class="row">
-      <div class="col-md-3">
+      <mat-divider></mat-divider>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
         <mat-card class="card-padrao">
-          <mat-card-title
-            ><b>CONHEÇA AS RAÇAS DO TORMENTA 20</b></mat-card-title
-          >
-          <mat-card-content>
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao"
+                >CONHEÇA AS RAÇAS DO TORMENTA 20</mat-card-title
+              >
+          <mat-card-content class="interior-cartao">
             <div class="content">
               <div class="row">
-                <button mat-menu-item (click)="navigateTo('personagem/racas')">
+                <button class="botao-cartao-apresentacao" mat-menu-item (click)="navigateTo('personagem/racas')">
                   CONSULTA DE RAÇAS
                 </button>
               </div>
@@ -23,15 +23,18 @@
           </mat-card-content>
         </mat-card>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <mat-card class="card-padrao">
-          <mat-card-title
-            ><b>CALCULE OS DESAFIOS DE SUA MESA</b></mat-card-title
+          <mat-card-title class="titulo-cartao-apresentacao interior-cartao"
+            >CALCULE OS DESAFIOS DE SUA MESA</mat-card-title
           >
-          <mat-card-content>
+          <mat-card-content class="interior-cartao">
             <div class="content">
               <div class="row">
-                <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">
+                <button class="botao-cartao-apresentacao"
+                  mat-menu-item
+                  (click)="navigateTo('utilitarios/calculo-desafios')"
+                >
                   CÁLCULO DE DESAFIOS
                 </button>
               </div>
