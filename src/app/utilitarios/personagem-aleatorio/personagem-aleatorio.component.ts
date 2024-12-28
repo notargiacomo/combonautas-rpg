@@ -25,7 +25,7 @@ export class PersonagemAleatorioComponent implements OnInit{
 
   rezarPraNimb(){
     const racaIndex = Math.floor(Math.random() * this.raca.length);
-    const origemIndex = Math.floor(Math.random() * this.classe.length);
+    const origemIndex = Math.floor(Math.random() * this.origem.length);
     const classeIndex = Math.floor(Math.random() * this.classe.length);
     this.personagem_nimb = this.raca[racaIndex]+' - '+this.origem[origemIndex]+' - ' +this.classe[classeIndex];
   }
