@@ -181,5 +181,18 @@
         </mat-card>
       </div>
     </div>
+
+    Lista de possibilidades
+    <mat-list>
+      @for (item of monstrosSelecionadosAleatoriamente; track item) {
+        <mat-list-item>
+          <mat-icon matListItemIcon>ophthalmology</mat-icon>
+          <div matListItemLine>ND: {{item.nd}}</div>
+          <div matListItemTitle>{{item.nome}}</div>
+          Descrição do monstro
+        </mat-list-item>
+      }
+    </mat-list>
+    <mat-divider></mat-divider>
   </div>
 </form>
