@@ -36,7 +36,7 @@ export class PersonagemAleatorioComponent implements OnInit{
   }
   
   carregaClasses() {
-    this.classe = ['Arcanista', 'Bárbaro', 'Bardo', 'Bucaneiro', 'Caçador', 'Caçador', 'Clérigo', 'Druida', 'Guerreiro', 'Inventor', 'Ladino', 'Lutador', 'Mirragem', 'Místico', 'Nobre', 'Paladino', 'Samurai']
+    this.classe = ['Arcanista', 'Bárbaro', 'Bardo', 'Bucaneiro', 'Caçador', 'Cavaleiro', 'Clérigo', 'Druida', 'Guerreiro', 'Inventor', 'Ladino', 'Lutador', 'Mirragem', 'Místico', 'Nobre', 'Paladino', 'Samurai']
   }
   
   carregaOrigens() {
