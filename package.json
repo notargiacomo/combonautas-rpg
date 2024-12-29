@@ -26,6 +26,7 @@
     "angular-in-memory-web-api": "^0.19.0",
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
+    "ngx-loader-indicator": "^19.0.0",
     "node-fetch": "^3.3.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
