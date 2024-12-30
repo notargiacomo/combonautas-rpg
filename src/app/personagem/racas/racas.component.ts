@@ -91,6 +91,15 @@ export class RacasComponent implements OnInit{
       this.checkboxState[sentidos] = false;
     });
     // this.racas = this.racaService.getRacas();
+    ( this.form.controls['deslocamentos'] as FormArray).clear();
+  //   let arr = this.sentidosFormArray;
+
+  //   while (this.sentidosFormArray.length) {
+  //     this.sentidosFormArray.removeAt(0);
+  //  }
+
+   this.sentidosFormArray.clear()
+
     this.form.reset()
     this.consultar();
   }

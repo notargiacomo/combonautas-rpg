@@ -4,28 +4,19 @@ import { map, Observable } from 'rxjs';
 import { RacaData } from '../data/raca.data';
 import { ConsultaRacaDto } from '../dto/consulta.raca.dto';
 import { Raca } from '../model/raca';
+import { AbstractService } from './abstract.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class RacaService {
-  private readonly racaUrl = 'api/raca';  // URL to web api
+export class RacaService extends AbstractService{
 
-  constructor(private readonly racaData: RacaData, private readonly http: HttpClient) {}
-
-
-  removeBlankAttributes(obj:any) {
-    const result:any = {};
-    for (const key in obj) {
-        if (obj[key] !== null && obj[key] !== undefined) {
-            result[key] = obj[key];
-        }
-    }
-    return result;
+  constructor(private readonly racaData: RacaData, private readonly http: HttpClient) {
+    super('raca');
   }
 
   listar(filtro:any): Observable<Raca[]> {
-    return this.http.get<Raca[]>(this.racaUrl,{params:this.removeBlankAttributes(filtro)})
+    return this.http.get<Raca[]>(this.url,{params:this.removeBlankAttributes(filtro)})
     .pipe(map(resultado => {
       resultado.forEach((raca) => {
 
