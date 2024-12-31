@@ -5,9 +5,44 @@
     font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
     font-style: normal;  /* Pode ser 'italic' ou outros estilos */
 }
+
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
+header, .cabecalho {
+    width: 100%!important;
+    height: 50%!important; /* Você pode ajustar a altura como preferir */
+    background-image: url('assets/img/header_combonautas_.png') !important; /* Substitua pelo caminho da sua imagem */
+    background-size: cover!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+}
+
+.titulo_tormenta20 {
+    width: 50%!important;
+    height: 15%!important; /* Você pode ajustar a altura como preferir */
+    // background-size: cover!important;
+    // background-position: center!important;
+    // background-repeat: no-repeat!important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+    margin-right: 10%;
+}
+
+.titulo_combonautas {
+    width: 50%!important;
+    height: auto!important; /* Você pode ajustar a altura como preferir */
+    background-size: cover!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+    margin-right: 10%;
+}
+
+
 body { margin: 0; 
     // font-family: Roboto, "Helvetica Neue", sans-serif;
     font-family: 'Tormenta20x', sans-serif !important;
