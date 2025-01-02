@@ -4,9 +4,3 @@
 <p><b>Desejos.</b> Se lançar uma magia que alguém tenha pedido desde seu último turno, o custo da magia diminui em –1 PM. Fazer um desejo ao qareen é uma ação livre.</p>
 <p><b>Resistência Elemental.</b> Conforme sua ascendência, você recebe redução 10 a um tipo de dano. Escolha uma: frio (qareen da água), eletricidade (do ar), fogo (do fogo), ácido (da terra), luz (da luz) ou trevas (qareen das trevas).</p>
 <p><b>Tatuagem Mística.</b> Você pode lançar uma magia de 1º círculo a sua escolha (atributo- chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e</p>
-<p><b>Tipo de Criatura:</b> Humanoide</p>
-<p><b>Tamanho:</b> Médio</p>
-<p><b>Deslocamentos:</b> Terrestre 9 metros</p>
-<p><b>Sentidos:</b> Normais</p>
-<p><b>Longevidade:</b> x2</p>
-<p><b>Devotos:</b> Qualquer</p>

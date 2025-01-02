@@ -5,9 +5,3 @@
 <p><b>Espelunqueiro.</b>Você recebe visão no escuro e deslocamento de escalada igual ao seu deslocamento terrestre.</p>
 <p><b>Peste Esguia.</b> Seu tamanho é Pequeno (veja a página 106), mas seu deslocamento se mantém 9m. Apesar de pequenos, goblins são rápidos.</p>
 <p><b>Rato das Ruas.</b> Você recebe +2 em Fortitude e sua recuperação de PV e PM nunca é inferior ao seu nível.</p>
-<p><b>Tipo de Criatura:</b> Humanoide</p>
-<p><b>Tamanho:</b> Pequeno</p>
-<p><b>Deslocamentos:</b> Terrestre 9 metros, Escalada 9 metros</p>
-<p><b>Sentidos:</b> Visão no Escuro</p>
-<p><b>Longevidade:</b> Normal</p>
-<p><b>Devotos:</b> Qualquer</p>

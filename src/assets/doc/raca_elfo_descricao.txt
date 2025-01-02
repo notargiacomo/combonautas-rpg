@@ -6,9 +6,3 @@ de Glórienn, os elfos se tornaram um povo sem uma deusa. Um povo independente. 
 <p><b>Graça de Glórienn.</b> Seu deslocamento é 12m (em vez de 9m).</p>
 <p><b>Sangue Mágico.</b> Você recebe +1 ponto de mana por nível.</p>
 <p><b>Sentidos Élficos.</b> Você recebe visão na penumbra e +2 em Misticismo e Percepção.</p>
-<p><b>Tipo de Criatura:</b> Humanoide</p>
-<p><b>Tamanho:</b> Médio</p>
-<p><b>Deslocamentos:</b> Terrestre 12 metros</p>
-<p><b>Sentidos:</b> Visão na Penumbra</p>
-<p><b>Longevidade:</b> x5</p>
-<p><b>Devotos:</b> Qualquer</p>

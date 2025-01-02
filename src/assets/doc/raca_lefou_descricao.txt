@@ -5,9 +5,3 @@
 <p><b>Deformidade.</b> Todo lefou possui defeitos físicos que, embora desagradáveis, conferem certas vantagens. Você recebe
 +2 em duas perícias a sua escolha. Cada um desses bônus conta como um
 poder da Tormenta (exceto para perda de Crisma). Você pode trocar um desses bônus por um poder da Tormenta a sua escolha (ele também não conta para perda de Carisma).</p>
-<p><b>Tipo de Criatura:</b> Monstro</p>
-<p><b>Tamanho:</b> Médio</p>
-<p><b>Deslocamentos:</b> Terrestre 9 metros</p>
-<p><b>Sentidos:</b> Normais</p>
-<p><b>Longevidade:</b> Normal</p>
-<p><b>Devotos:</b> Qualquer</p>

@@ -4,9 +4,3 @@
 <p><b>Amiga das Plantas.</b> Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e</p>
 <p><b>Armadura de Allihanna.</b> Você pode gastar uma ação de movimento e 1 PM para transformarsua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.</p>
 <p><b>Empatia Selvagem.</b> Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais (veja Diplomacia, na página 118). Caso receba esta habilidade novamente, recebe +2 em Adestramento.</p>
-<p><b>Tipo de Criatura:</b> Humanoide</p>
-<p><b>Tamanho:</b> Médio</p>
-<p><b>Deslocamentos:</b> Terrestre 9 metros</p>
-<p><b>Sentidos:</b> Normais</p>
-<p><b>Longevidade:</b> x5</p>
-<p><b>Devotos:</b> Qualquer</p>
