@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Raca } from "../model/raca";
-import { CARISMA, Construtor, Espirito as Espirito, Humanoide, MEDIO, MINUSCULO, Monstro, Morto_Vivo, PEQUENO } from "../model/constantes";
+import { CARISMA, Construtor, Espirito as Espirito, GRANDE, Humanoide, MEDIO, MINUSCULO, Monstro, Morto_Vivo, PEQUENO } from "../model/constantes";
 
   @Injectable({
     providedIn: 'root'
@@ -63,7 +63,7 @@ import { CARISMA, Construtor, Espirito as Espirito, Humanoide, MEDIO, MINUSCULO,
           },
           {
             id: 12, id_raca_superior:0, nome:`Medusa`, tipo:Monstro, tamanho: MEDIO,         nome_arquivo_descricao:`raca_medusa_descricao`, nome_arquivo_historia:`raca_medusa_historia`, imagem:'assets/img/raca_medusa.png',
-            deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "28 e 29"}, descricao:``, historia:``
+            deslocamentos: [''], sentidos:['Visão no Escuro'], referencia: {livro: "Básico", paginas: "28 e 29"}, descricao:``, historia:``
           },
           {
             id: 13, id_raca_superior:0, nome:`Osteon`, tipo:Morto_Vivo, tamanho: MEDIO,         nome_arquivo_descricao:`raca_osteon_descricao`, nome_arquivo_historia:`raca_osteon_historia`, imagem:'assets/img/raca_osteon.png',
@@ -88,34 +88,40 @@ import { CARISMA, Construtor, Espirito as Espirito, Humanoide, MEDIO, MINUSCULO,
             id: 18, id_raca_superior:0, nome:`Trog`, tipo:Monstro, tamanho: MEDIO,         nome_arquivo_descricao:`raca_trog_descricao`, nome_arquivo_historia:`raca_trog_historia`, imagem:'assets/img/raca_trog.png',
             deslocamentos: [''], sentidos:['Visão no Escuro'], referencia: {livro: "Básico", paginas: "31"}, descricao:``, historia:``
           },
-          // {
-          //   id: 6, id_raca_superior:0, nome:`Trog`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
-          //   deslocamentos: [''], sentidos:['Visão no Escuro'], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``
-          // },
-          // {
-          //   id: 6, id_raca_superior:0, nome:`Lefou`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
-          //   deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``
-          // },
-          // {
-          //   id: 6, id_raca_superior:0, nome:`Lefou`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
-          //   deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``
-          // },
-          // {
-          //   id: 6, id_raca_superior:0, nome:`Lefou`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
-          //   deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``
-          // },
-          // {
-          //   id: 6, id_raca_superior:0, nome:`Lefou`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
-          //   deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``
-          // },
-          // {
-          //   id: 6, id_raca_superior:0, nome:`Lefou`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
-          //   deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``
-          // },
-          // {
-          //   id: 6, id_raca_superior:0, nome:`Lefou`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
-          //   deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``
-          // },
+
+          // RAÇAS DO AMEAÇAS
+
+          {
+            id: 19, id_raca_superior:0, nome:`Meio-Orc`, tipo:Humanoide, tamanho: MEDIO,         nome_arquivo_descricao:`raca_meio_orc_descricao`, nome_arquivo_historia:`raca_meio_orc_historia`, imagem:'assets/img/raca_meio_orc.png',
+            deslocamentos: [''], sentidos:['Visão no Escuro'], referencia: {livro: "Ameaças", paginas: "31"}, descricao:``, historia:``
+          },
+          {
+            id: 20, id_raca_superior:0, nome:`Orc`, tipo:Humanoide, tamanho: MEDIO,         nome_arquivo_descricao:`raca_orc_descricao`, nome_arquivo_historia:`raca_orc_historia`, imagem:'assets/img/raca_orc.png',
+            deslocamentos: [''], sentidos:['Visão no Escuro'], referencia: {livro: "Ameaças", paginas: "33"}, descricao:``, historia:``
+          },
+          {
+            id: 21, id_raca_superior:0, nome:`Tabrachi`, tipo:Humanoide, tamanho: MEDIO,         nome_arquivo_descricao:`raca_tabrachi_descricao`, nome_arquivo_historia:`raca_tabrachi_historia`, imagem:'assets/img/raca_tabrachi.png',
+            deslocamentos: ['Natação'], sentidos:['Visão na Penumbra'], referencia: {livro: "Ameaças", paginas: "37"}, descricao:``, historia:``
+          },
+          {
+            id: 22, id_raca_superior:0, nome:`Trog Anão`, tipo:Monstro, tamanho: MEDIO,         nome_arquivo_descricao:`raca_trog_anao_descricao`, nome_arquivo_historia:`raca_trog_anao_historia`, imagem:'assets/img/raca_trog_anao.png', deslocamentos: [''], sentidos:['Visão no Escuro'], referencia: {livro: "Ameaças", paginas: "39"}, descricao:``, historia:``
+          },
+          {
+            id: 23, id_raca_superior:0, nome:`Ogro`, tipo:Humanoide, tamanho: GRANDE,         nome_arquivo_descricao:`raca_ogro_descricao`, nome_arquivo_historia:`raca_ogro_historia`, imagem:'assets/img/raca_ogro.png',
+            deslocamentos: [''], sentidos:['Visão na Penumbra'], referencia: {livro: "Ameaças", paginas: "40"}, descricao:``, historia:``
+          },
+          {
+            id: 24, id_raca_superior:0, nome:`Bugbear`, tipo:Humanoide, tamanho: MEDIO,         nome_arquivo_descricao:`raca_bugbear_descricao`, nome_arquivo_historia:`raca_bugbear_historia`, imagem:'assets/img/raca_bugbear.png',
+            deslocamentos: [''], sentidos:['Olfato Aguçado', 'Visão no Escuro'], referencia: {livro: "Ameaças", paginas: "79"}, descricao:``, historia:``
+          },
+          {
+            id: 25, id_raca_superior:0, nome:`Hobgoblin`, tipo:Humanoide, tamanho: MEDIO,         nome_arquivo_descricao:`raca_hobgoblin_descricao`, nome_arquivo_historia:`raca_hobgoblin_historia`, imagem:'assets/img/raca_hobgoblin.png',
+            deslocamentos: [''], sentidos:['Visão no Escuro'], referencia: {livro: "Ameaças", paginas: "84"}, descricao:``, historia:``
+          },
+          {
+            id: 26, id_raca_superior:0, nome:`Centauro`, tipo:Humanoide, tamanho: GRANDE,         nome_arquivo_descricao:`raca_centauro_descricao`, nome_arquivo_historia:`raca_centauro_historia`, imagem:'assets/img/raca_centauro.png',
+            deslocamentos: [''], sentidos:[''], referencia: {livro: "Ameaças", paginas: "105"}, descricao:``, historia:``
+          },
           // {
           //   id: 6, id_raca_superior:0, nome:`Lefou`, tipo:`Monstro`, tamanho: MEDIO,         nome_arquivo_descricao:`raca_lefou_descricao`, nome_arquivo_historia:`raca_lefou_historia`, imagem:'assets/img/raca_lefou.png',
           //   deslocamentos: [''], sentidos:[''], referencia: {livro: "Básico", paginas: "24"}, descricao:``, historia:``

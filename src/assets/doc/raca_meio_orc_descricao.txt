@@ -1,0 +1,5 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Força +2, +1 em outro atributo (exceto Carisma).</b></p>
+<p><b>Adaptável.</b> Você recebe +2 em Intimidação e se torna treinado em uma perícia a sua escolha. </p>
+<p><b>Criatura das Profundezas.</b> Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.</p>
+<p><b>Sangue Orc.</b> Você recebe +1 em rolagens de dano com armas corpo a corpo e de arremesso e é considerado um orc para efeitos relacionados a raça.</p>
