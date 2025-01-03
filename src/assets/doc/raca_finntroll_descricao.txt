@@ -1,0 +1,6 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Inteligência +2, Constituição +1, Força –1.</b>
+<p><b>Corpo Vegetal.</b> Você é uma criatura do tipo monstro e recebe natureza vegetal e visão no escuro. 
+<p><b>Presença Arcana.</b> Você recebe +2 em Misticismo e resistência a magia +2.
+<p><b>Regeneração Vegetal.</b> Uma vez por rodada, você pode gastar 1 PM para recuperar 5 PV. Esta habilidade não cura dano de ácido ou fogo. 
+<p><b>Intolerância a Luz.</b> Você recebe sensibilidade a luz e, quando exposto à luz do sol ou similar, não consegue ativar sua Regeneração Vegetal.

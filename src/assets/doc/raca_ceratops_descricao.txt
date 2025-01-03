@@ -1,0 +1,7 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Constituição +2, Força +1, Destreza –1, Inteligência –1.</b></p>
+<p><b>Chifres.</b> Você possui uma arma natural de chifres (dano 1d8, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.</p>
+<p><b>Papel Tribal.</b> Você é treinado em uma perícia a sua escolha entre Cura, Intimidação, Ofício ou Sobrevivência. </p>
+<p><b>Paquidérmico.</b> Seu tamanho é Grande. Você recebe +1 na Defesa e pode usar Força como atributo-chave de Intimidação (em vez de Carisma).</p>
+<p><b>Medo de Altura.</b> Se estiver adjacente a uma queda de 3m ou mais (como um buraco 
+ou penhasco), você fica abalado.</p>

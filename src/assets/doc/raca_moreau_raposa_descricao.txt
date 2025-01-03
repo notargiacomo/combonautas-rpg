@@ -1,0 +1,5 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Inteligência +1, +1 em dois atributos.</b></p>
+<p><b>Agarra-me Se Puderes.</b> Seu deslocamento é 12m (em vez de 9m) e você tem visão na penumbra.</p> 
+<p><b>Esperteza Vulpina.</b> Você recebe +2 em duas perícias originalmente baseadas em Inteligência ou Carisma, a sua escolha.</p>
+<p><b>Faro.</b> Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha.</p>

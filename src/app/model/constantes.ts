@@ -20,3 +20,11 @@ export const Espirito = "Espírito";
 export const Humanoide = "Humanoide";
 export const Monstro = "Monstro";
 export const Morto_Vivo = "Morto-vivo";
+
+// REFERÊNCIAS
+export const BASICO = "Tormenta 20 Jogo do Ano";
+export const AMEACAS = "Ameaças de Arton";
+export const ATLAS = "Atlas de Arton";
+export const DEUSES = "Deuses de Arton";
+export const HEROIS = "Heróis de Arton";
+export const DB = "Revista Dragão Brasil";

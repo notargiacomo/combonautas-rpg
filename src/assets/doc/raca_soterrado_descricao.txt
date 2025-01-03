@@ -1,0 +1,6 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>+1 em Três Atributos Diferentes (exceto Constituição), Constituição –1.</b></p>
+<p><b>Abraço Gélido.</b> Você recebe +2 em testes para agarrar. Além disso, seus ataques desarmados e com armas naturais causam 2 pontos de dano de frio extras.</p>
+<p><b>Esquife de Gelo.</b> Você recebe redução de corte e perfuração 5 e redução de frio 10. Entretanto, sofre 1 ponto de dano adicional por dado de dano de fogo.</p>
+<p><b>Natureza Esquelética.</b> Você é uma criatura do tipo morto-vivo. Recebe visão no escuro e imunidade a efeitos de cansaço, metabólicos, de trevas e de veneno. Além disso, não precisa respirar, alimentar-se ou dormir. Por fim, efeitos mágicos de cura de luz causam dano a você e você não se beneficia de itens da categoria alimentação, mas dano de trevas recupera seus PV.</p>
+<p><b>Preço da Não Vida.</b> Você precisa passar oito horas sob a luz de estrelas ou no subterrâneo. Se fizer isso, recupera PV e PM por descanso em condições normais (osteon não são afetados por condições boas ou ruins de descanso). Caso contrário, sofre os efeitos de fome.</p>

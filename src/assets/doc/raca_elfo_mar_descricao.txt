@@ -1,0 +1,5 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Destreza +2, Constituição +1, Inteligência –1.</b></p>
+<p><b>Arsenal do Oceano.</b> Você recebe proficiência em arpão, rede e tridente e +2 em testes de ataque com essas armas. Se receber proficiência em uma dessas armas novamente, pode considerá-la uma arma leve.</p>
+<p><b>Cria das Águas.</b> Você possui deslocamento de natação igual a seu deslocamento em terra e visão na penumbra. Quando dentro d’água, você recebe percepção às cegas e +2 na Defesa e, em Furtividade e Sobrevivência.</p>
+<p><b>Dependência de Água.</b> Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água (ou, pelo menos, tomar um bom banho!).</p>

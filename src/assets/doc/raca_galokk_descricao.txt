@@ -1,0 +1,5 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Força +1, Constituição +1, +1 em um atributo, Carisma –1.</b></p>
+<p><b>Força dos Titãs.</b> Quando faz um ataque corpo a corpo ou de arremesso, você pode gastar 1 PM. Se fizer isso e acertar o ataque, pode rolar mais uma vez qualquer resultado máximo da rolagem de dano e adicionar o novo resultado ao dano causado.</p>
+<p><b>Grandão.</b> Você é uma criatura do tipo humanoide (gigante). Seu tamanho é Grande e você pode usar Força como atributo-chave de Intimidação (em vez de Carisma).</p>
+<p><b>Infância Entre os Pequenos.</b> Você se torna treinado em uma perícia a sua escolha.</p>

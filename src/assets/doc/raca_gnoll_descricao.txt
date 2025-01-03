@@ -1,0 +1,6 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Constituição +2, Sabedoria +1, Inteligência –1.</b></p>
+<p><b>Faro.</b> Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha.</p>
+<p><b>Mordida.</b> Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfu- ração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida.</p>
+<p><b>Oportunista.</b> Você recebe +2 nas rolagens de dano contra criaturas que tenham sofrido dano de outras criaturas desde seu último turno.</p>
+<p><b>Rendição.</b> Quando um inimigo se rende, você recebe 1d4 PM temporários cumulati- vos. Da mesma forma, quando é reduzido a um quarto de seus PV ou menos, seu instinto é se render. Caso continue lutando, fica alquebrado.</p>

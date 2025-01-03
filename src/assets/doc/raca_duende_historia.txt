@@ -1,0 +1,5 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Força +2, Constituição +1, Inteligência –1.</b></p>
+<p><b>Feroz.</b> Você recebe +2 em rolagens de dano com armas corpo a corpo e de arre- messo. Quando sofre dano de um inimigo, esse bônus se torna +4 até o fim de seu próximo turno.</p>
+<p><b>Habitante das Cavernas.</b> Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo. Entretanto, recebe sensibilidade a luz. </p>
+<p><b>Vigor Brutal.</b> Você recebe +2 em Fortitude e soma sua Força em seu total de pontos de vida.</p>

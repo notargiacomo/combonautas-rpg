@@ -15,14 +15,14 @@ import { RacaService } from '../../service/raca.service';
 import { ConsultaRacaDto } from '../../dto/consulta.raca.dto';
 import { Deslocamento } from '../../enum/deslocamento.enum';
 import { Sentido } from '../../enum/sentido.enum';
-import { NgFor } from '@angular/common';
+import { NgFor,NgIf } from '@angular/common';
 import { FormControl } from '@angular/forms';
 
 
 @Component({
   selector: 'app-racas',
   standalone:true,
-  imports: [MatTableModule, MatButtonModule, MatIconModule, MatCardModule, MatDividerModule, MatRadioModule, MatCheckboxModule, FormsModule, MatInputModule, MatFormFieldModule, ReactiveFormsModule, NgFor],
+  imports: [MatTableModule, MatButtonModule, MatIconModule, MatCardModule, MatDividerModule, MatRadioModule, MatCheckboxModule, FormsModule, MatInputModule, MatFormFieldModule, ReactiveFormsModule, NgFor,NgIf],
   templateUrl: './racas.component.html',
   styleUrl: './racas.component.scss',
   animations: [
@@ -36,7 +36,7 @@ import { FormControl } from '@angular/forms';
 export class RacasComponent implements OnInit{
 
   raca = "";
-  columnsToDisplay = ['nome', 'tipo', 'tamanho'];
+  columnsToDisplay = ['nome', 'tipo', 'tamanho', 'livro', 'paginas'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
   racas!: Raca[];

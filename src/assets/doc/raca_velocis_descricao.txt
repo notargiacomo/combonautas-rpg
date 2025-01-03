@@ -1,0 +1,5 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Destreza +2, Sabedoria +1, Inteligência –1.</b></p>
+<p><b>Através de Espinheiros.</b> Você recebe redução de corte e perfuração 2 e não sofre redução em seu deslocamento por terreno difícil natural.</p>
+<p><b>Sentidos Selvagens.</b> Você recebe +2 em Sobrevivência, visão na penumbra e faro (contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha).</p>
+<p><b>Velocista da Planície.</b> Seu deslocamento é 12m. Você pode usar Destreza como atributo-chave de Atletismo (em vez de Força) e, quando faz testes de Atletismo para correr ou saltar, pode rolar dois dados e usar o melhor resultado.</p>

@@ -1,0 +1,5 @@
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Destreza +1, +1 em dois atributos.</b></p>
+<p><b>Patas Ligeiras.</b> Seu deslocamento é 12m e, quando faz uma investida ou um teste de Atletismo para correr, você não precisa percorrer uma linha reta.</p>
+<p><b>Pé de Coelho.</b> Quando faz um teste de uma perícia baseada em Destreza (exceto testes de ataque), você pode gastar 1 PM para rolar dois dados e usar o melhor resultado.</p>
+<p><b>Senso de Preservação.</b> Você recebe visão na penumbra e +2 em Percepção e Reflexos.</p>
