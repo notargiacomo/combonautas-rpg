@@ -17,7 +17,7 @@ import { Deslocamento } from '../../enum/deslocamento.enum';
 import { Sentido } from '../../enum/sentido.enum';
 import { NgFor,NgIf } from '@angular/common';
 import { FormControl } from '@angular/forms';
-
+import { Referencia } from '../../enum/referencia.enum';
 
 @Component({
   selector: 'app-racas',
@@ -43,6 +43,7 @@ export class RacasComponent implements OnInit{
   consultaRacaDto: ConsultaRacaDto = new ConsultaRacaDto();
   deslocamentos = Object.values(Deslocamento);
   sentidos = Object.values(Sentido);
+  referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};
 
   form!: FormGroup;
@@ -62,6 +63,7 @@ export class RacasComponent implements OnInit{
       tamanho:[],
       sentidos: new FormArray([]),
       deslocamentos: new FormArray([]),
+      referencias: new FormArray([]),
       nome:[]
     });
 
@@ -122,8 +124,6 @@ export class RacasComponent implements OnInit{
     } else {
       this.consultaRacaDto.deslocamentos = this.consultaRacaDto.deslocamentos.filter((item) => item !== deslocamento);
     }
-    console.log('Seleção atualizada:', this.consultaRacaDto.deslocamentos);
-
 
     const formArray = this.form.controls['deslocamentos'] as FormArray;
     if (isChecked) {
@@ -142,14 +142,30 @@ export class RacasComponent implements OnInit{
     } else {
       this.consultaRacaDto.sentidos = this.consultaRacaDto.sentidos.filter((item) => item !== sentido);
     }
-    console.log('Seleção atualizada:', this.consultaRacaDto.sentidos);
-
-    // const isChecked = (event.target as HTMLInputElement).checked;
+    
     const formArray = this.sentidosFormArray;
     if (isChecked) {
       formArray.push(new FormControl(sentido));
     } else {
       const index = formArray.controls.findIndex(item => item.value === sentido);
+      formArray.removeAt(index);
+    }
+
+    this.consultar();
+  }
+
+  checkReferencia(referencia:Referencia, isChecked: boolean): void {
+    if (isChecked) {
+      this.consultaRacaDto.referencia.push(referencia);
+    } else {
+      this.consultaRacaDto.referencia = this.consultaRacaDto.referencia.filter((item) => item !== referencia);
+    }
+
+    const formArray = this.form.controls['referencias'] as FormArray;
+    if (isChecked) {
+      formArray.push(new FormControl(referencia));
+    } else {
+      const index = formArray.controls.findIndex(item => item.value === referencia);
       formArray.removeAt(index);
     }
 

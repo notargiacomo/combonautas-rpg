@@ -81,6 +81,21 @@
         </div>
       </div>
       <div class="row">
+        <div class="col-md-12 mt-4">
+          <div class="row">
+            <label id="radio-referencias"><b>Referências</b></label>
+          </div>
+          <div class="row">
+            <section class="section" formArrayName="referencias">
+              <mat-checkbox name="referencia" *ngFor="let referencia of referencias" 
+              (change)="checkReferencia(referencia, $event.checked)">
+                {{ referencia }}
+              </mat-checkbox>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-6 mt-4">
           <mat-form-field class="form-field">
             <mat-label>Raça</mat-label>

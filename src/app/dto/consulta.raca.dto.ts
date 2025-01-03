@@ -5,6 +5,7 @@ export class ConsultaRacaDto {
   tamanho: '';
   sentidos: string[] = [];
   deslocamentos: string[] = [];
+  referencia: string[] = [];
 
   constructor() {
     this.raca = '';
