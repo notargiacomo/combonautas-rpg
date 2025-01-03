@@ -119,3 +119,65 @@ b {
     color: var(--mdc-filled-button-label-text-color, var(--mat-sys-on-primary));
     background-color: rgb(132, 26, 18) !important;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr.detail-row {
+    height: 0;
+  }
+  
+  tr.element-row:not(.expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.element-row:not(.expanded-row):active {
+    background: #efefef;
+  }
+  
+  .element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  
+  // table tr:nth-child(odd) {
+  //   background-color: rgb(132, 26, 18);
+  //   color: white; /* Adicione isso para o texto ficar visível na linha vermelha */
+  // }
+  
+  // table tr:nth-child(even) {
+  //   background-color: white;
+  //   color: black; /* Adicione isso para o texto ficar visível na linha branca */
+  // }
+  
+  // table th, table td {
+  //   padding: 8px;
+  //   border: 1px solid #ddd;
+  //   text-align: left;
+  // }
+  
+  // .odd-row {
+  //   background-color: rgb(132, 26, 18)!important ;
+  //   color: white !important; /* Para o texto ficar visível */
+  // }
+  
+  // .even-row {
+  //   background-color: white !important;
+  //   color: black !important; /* Para o texto ficar visível */
+  // }
+
+  .element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .element-description-attribution {
+    opacity: 0.5;
+  }

@@ -1,0 +1,7 @@
+<p>Anões são o mais resiliente dos povos. Em suas cidadelas subterrâneas, trabalham duro escavando minas e forjando metal em belas armas, armaduras e joias. São honestos e determinados, honrando a família e a tradição. Apesar de sua profunda paixão por forja e cerveja, pouca coisa é mais preciosa para um anão que cultivar uma barba longa e orgulhosa.<p>
+<h4>HABILIDADES DE RAÇA</h4>
+<p><b>Constituição +2, Sabedoria +1, Destreza –1.</b></p>
+<p><b>Conhecimento das Rochas.</b> Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.</p>
+<p><b>Devagar e Sempre.</b> Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.</p>
+<p><b>Duro como Pedra.</b> Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte.</p>
+<p><b>Adepto da Pólvora</b> Você acredita que a pedra-fu- maça é um presente de Tenebra, um minério como qualquer outro que deve ter trabalhado e transformado. Você recebe proficiência com armas de fogo e pode fabricar armas de fogo, munições e bombas pagando um quarto do preço em matéria-prima, ao invés de um terço.</p>

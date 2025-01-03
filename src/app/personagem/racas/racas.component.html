@@ -1,5 +1,5 @@
 <div class="container">
-  <mat-card class="example-card">
+  <mat-card class="cartao">
     <form [formGroup]="form">
       <div class="row">
         <h2><b>CONHEÇA AS RAÇAS DO TORMENTA 20</b></h2>
@@ -57,7 +57,7 @@
             <label id="radio-sentidos"><b>Sentidos</b></label>
           </div>
           <div class="row">
-            <section class="example-section" formArrayName="sentidos">
+            <section class="section" formArrayName="sentidos">
               <mat-checkbox name="sentido"
               *ngFor="let sentido of sentidos" 
               (change)="checkSentido(sentido, $event.checked)">
@@ -71,7 +71,7 @@
             <label id="radio-deslocamentos"><b>Deslocamentos</b></label>
           </div>
           <div class="row">
-            <section class="example-section" formArrayName="deslocamentos">
+            <section class="section" formArrayName="deslocamentos">
               <mat-checkbox name="deslocamento" *ngFor="let deslocamento of deslocamentos" 
               (change)="checkDeslocamento(deslocamento, $event.checked)">
                 {{ deslocamento }}
@@ -82,7 +82,7 @@
       </div>
       <div class="row">
         <div class="col-md-6 mt-4">
-          <mat-form-field class="example-form-field">
+          <mat-form-field class="form-field">
             <mat-label>Raça</mat-label>
             <input formControlName="nome"
               matInput
@@ -94,7 +94,7 @@
         </div>
         <div class="col-md-6 mt-4">
           <section>
-            <div class="example-button-row d-flex justify-content-end">
+            <div class="button-row d-flex justify-content-end">
               <button class="me-2" (click)="limparFiltros()" mat-flat-button>
                 Limpar Filtros
               </button>
@@ -107,7 +107,7 @@
   </mat-card>
 
   <div class="row mt-4">
-    <mat-card class="example-card">
+    <mat-card class="cartao">
       <table
         mat-table
         [dataSource]="racas"
@@ -154,7 +154,7 @@
             [attr.colspan]="columnsToDisplayWithExpand.length"
           >
             <div
-              class="example-element-detail"
+              class="element-detail"
               [@detailExpand]="
                 element == expandedElement ? 'expanded' : 'collapsed'
               "
@@ -183,8 +183,8 @@
         <tr
           mat-row
           *matRowDef="let element; columns: columnsToDisplayWithExpand"
-          class="example-element-row"
-          [class.example-expanded-row]="expandedElement === element"
+          class="element-row"
+          [class.expanded-row]="expandedElement === element"
           (click)="
             expandedElement = expandedElement === element ? null : element
           "
@@ -192,7 +192,7 @@
         <tr
           mat-row
           *matRowDef="let row; columns: ['expandedDetail']"
-          class="example-detail-row"
+          class="detail-row"
         ></tr>
       </table>
     </mat-card>
