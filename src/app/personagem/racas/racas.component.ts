@@ -36,7 +36,7 @@ import { Referencia } from '../../enum/referencia.enum';
 export class RacasComponent implements OnInit{
 
   raca = "";
-  columnsToDisplay = ['nome', 'tipo', 'tamanho', 'livro', 'paginas'];
+  columnsToDisplay = ['nome', 'tipo', 'tamanho', 'referencias', 'paginas'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
   racas!: Raca[];
