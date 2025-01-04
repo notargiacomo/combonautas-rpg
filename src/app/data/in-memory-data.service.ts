@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { RacaData } from './raca.data';
 import { Raca } from '../model/raca';
 import { condicoes } from './condicoes.data';
+import { acoes } from './acoes.data';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class InMemoryDataService implements InMemoryDbService {
 
   createDb() {
     const raca: Raca[] = this.racaData.getRacas();
-    return { raca: raca, condicoes:condicoes };
+    return { raca: raca, condicoes:condicoes, acoes:acoes };
   }
 
 }

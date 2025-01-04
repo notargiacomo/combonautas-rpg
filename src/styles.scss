@@ -78,6 +78,7 @@ b {
     overflow: hidden;    /* Garante que o conteúdo respeite o arredondamento */
     margin-bottom: 10px !important;
     text-align: justify;
+    display: flex;
 }
 
 .mat-mdc-card-title{
@@ -96,7 +97,7 @@ b {
     text-align: center !important;
 }
 
-.titulo-cartao-apresentacao > .mat-mdc-card-subtitle {
+.titulo-cartao-apresentacao .mat-mdc-card-subtitle {
     font-weight: bold !important;
     text-align: center !important;
 }
@@ -108,7 +109,7 @@ b {
 }
 
 .content-cartao-condicoes {
-    height: 250px !important;
+    height: auto !important;
 }
 
 .mdc-button__label{
