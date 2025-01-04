@@ -8,7 +8,7 @@
         <mat-divider></mat-divider>
       </div>
       <div class="row" >
-        <div class="col-md-6 mt-4">
+        <div class="col-sm-6 mt-4">
           <div class="row">
             <label id="radio-radio-tipo-criatura"
               ><b>Tipo de Criatura</b></label
@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 mt-4">
+        <div class="col-sm-6 mt-4">
           <div class="row">
             <label id="radio-tamanho"><b>Tamanho</b></label>
           </div>
@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 mt-4">
+        <div class="col-sm-6 mt-4">
           <div class="row">
             <label id="radio-sentidos"><b>Sentidos</b></label>
           </div>
@@ -66,7 +66,7 @@
             </section>
           </div>
         </div>
-        <div class="col-md-6 mt-4">
+        <div class="col-sm-6 mt-4">
           <div class="row">
             <label id="radio-deslocamentos"><b>Deslocamentos</b></label>
           </div>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 mt-4">
+        <div class="col-sm-12 mt-4">
           <div class="row">
             <label id="radio-referencias"><b>Referências</b></label>
           </div>
@@ -96,7 +96,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 mt-4">
+        <div class="col-sm-6 mt-4">
           <mat-form-field class="form-field">
             <mat-label>Raça</mat-label>
             <input formControlName="nome"
@@ -107,7 +107,7 @@
             />
           </mat-form-field>
         </div>
-        <div class="col-md-6 mt-4">
+        <div class="col-sm-6 mt-4">
           <section>
             <div class="button-row d-flex justify-content-end">
               <button class="me-2" (click)="limparFiltros()" mat-flat-button>
@@ -176,15 +176,15 @@
             >
               <div class="row">
                 <!-- <div
-                  class="col-md-5 text-justify"
+                  class="col-sm-5 text-justify"
                   [innerHTML]="element.historia"
                 ></div> -->
 
                 <div
-                  class="col-md-9 text-justify"
+                  class="col-sm-9 text-justify"
                   [innerHTML]="element.descricao"
                 ></div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                   <mat-card *ngIf="element.imagem != null">
                     <img [src]="element.imagem" [alt]="element.nome" />
                   </mat-card>
