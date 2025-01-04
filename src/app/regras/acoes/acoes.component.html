@@ -84,7 +84,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-12">
-                      <h4>TRAÇOS: {{ element.tracos.join(" || ") }}</h4>
+                      <h4>TRAÇOS: {{ element.tracos.join(" - ") }}</h4>
                       <mat-divider></mat-divider>
                     </div>
                   </div>
@@ -124,35 +124,5 @@
         </table>
       </mat-card>
     </div>
-
-    <!-- <mat-grid-list cols="1" gutterSize="15">
-      <mat-grid-tile
-        *ngFor="let acao of acoes"
-        class="mat-grid-tile-content-acoes"
-      >
-        <mat-card class="card-padrao">
-          <mat-card-title
-            class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
-          >
-            {{ acao.nome }}
-          </mat-card-title>
-          <mat-card-title
-            class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
-          >
-            MARCAS : {{ acao.marcas.join(" || ") }}
-          </mat-card-title>
-          <mat-card-title
-            class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
-          >
-            RECURSO : {{ acao.custo }}
-          </mat-card-title>
-          <mat-card-content
-            class="interior-cartao interior-cartao-condicoes content-cartao-condicoes"
-          >
-            <div class="col-sm-12 mt-4" [innerHTML]="acao.descricao"></div>
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list> -->
   </mat-card>
 </div>
