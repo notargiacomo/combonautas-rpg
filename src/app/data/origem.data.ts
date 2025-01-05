@@ -469,7 +469,7 @@ export class OrigemData {
         <h4>À Prova de Tudo</h4>
         <p>Você não sofre penalidade em deslocamento e Sobrevivência por clima ruim e por terreno difícil natura</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'95'
+        paginas:'88'
       },
     ];
   }
