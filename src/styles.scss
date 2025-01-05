@@ -78,7 +78,7 @@ b {
     overflow: hidden;    /* Garante que o conteúdo respeite o arredondamento */
     margin-bottom: 10px !important;
     text-align: justify;
-    display: flex;
+    // display: flex;
 }
 
 .mat-mdc-card-title{
@@ -109,7 +109,7 @@ b {
 }
 
 .content-cartao-condicoes {
-    height: auto !important;
+    height: 250px !important;
 }
 
 .mdc-button__label{
