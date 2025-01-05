@@ -44,6 +44,19 @@ export class OrigemData {
         referencias:Referencia.BASICO ,
         paginas:'85'
       },
+      {
+        id: 1,
+        nome: 'AMIGO DOS ANIMAIS',
+        regiao: 'Geral',
+        descricao: `
+        <p>Você pode ter sido cavalariço no estábulo de um castelo, criador de gado em uma fazenda, ginete de Namalkah ou mesmo tratador em um zoológico ou circo — em Arton, existem espetáculos circenses com animais em jaulas, que talvez você tenha desejado libertar. Ou então nada disso: desde criança você tem facilidade em lidar com animais, sempre conversou com eles, sentiu ser capaz de compreendê-los. Em certos lugares ou tribos, alguma montaria especial seria destinada a você.</p>
+        <p><b>Itens.</b> Cão de caça, cavalo, pônei ou trobo (escolha um).</p>
+        <p><b>Benefícios.</b> Adestramento, Cavalgar (perícias); Amigo Especial (poder).</p>
+        <h4>Amigo Especial</h4
+        <p>Você recebe +5 em testes de Adestramento com animais. Além disso, possui um animal de estimação que o auxilia e o acompanha em suas aventuras. Em termos de jogo, é um parceiro que fornece +2 em uma perícia a sua escolha (exceto Luta ou Pontaria e aprovada pelo mestre) e não conta em seu limite de parceiros.</p>`,
+        referencias:Referencia.BASICO ,
+        paginas:'85'
+      },
     ];
   }
 }
