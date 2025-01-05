@@ -1,7 +1,5 @@
-<div class="cabecalho">
-
-</div>
-  <!-- <div class="content">
+<div class="cabecalho"></div>
+<!-- <div class="content">
     <div class="row">
       <div class="col-sm-6">
         <div class="d-flex ">
@@ -16,48 +14,65 @@
     </div>
   </div> -->
 
-  <mat-card style="background-color: (132, 26, 18) !important">
-    <mat-card-content style="background-color: (132, 26, 18) !important">
-      <button mat-button (click)="navigateTo('')">Home</button>
-      <button mat-button [matMenuTriggerFor]="menuPersonagem">
-        Personagem
+<mat-card style="background-color: (132, 26, 18) !important">
+  <mat-card-content style="background-color: (132, 26, 18) !important">
+    <button mat-button (click)="navigateTo('')">Home</button>
+    <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
+    <mat-menu #menuPersonagem="matMenu" yPosition="below">
+      <button mat-menu-item (click)="navigateTo('personagem/racas')">
+        Raças
       </button>
-      <mat-menu #menuPersonagem="matMenu" yPosition="below">
-        <button mat-menu-item (click)="navigateTo('personagem/racas')">
-          Raças
-        </button>
-        <!-- <button mat-menu-item (click)="navigateTo('personagem/origem')">Origens</button>
-      <button mat-menu-item>Classes</button> -->
-      </mat-menu>
-
-      <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
-      <mat-menu #menuRegra="matMenu" yPosition="below">
-        <button mat-menu-item (click)="navigateTo('regras/acoes')" >Ações</button>
-        <button mat-menu-item (click)="navigateTo('regras/condicoes')">
-          Condições
-        </button>
-      </mat-menu>
-      <button mat-button [matMenuTriggerFor]="menuUtilitarios">
-        Utilitários
+      <button mat-menu-item (click)="navigateTo('personagem/origens')">
+        Origens
       </button>
-      <mat-menu #menuUtilitarios="matMenu" yPosition="below">
-        <button
-          mat-menu-item
-          (click)="navigateTo('utilitarios/calculo-desafios')"
-        >
-          Cálculo de Desafios
-        </button>
-        <button
-          mat-menu-item
-          (click)="navigateTo('utilitarios/personagem-aleatorio')"
-        >
-          Personagem Aleatório
-        </button>
-      </mat-menu>
-    </mat-card-content>
-  </mat-card>
+      <button mat-menu-item (click)="navigateTo('personagem/classes')">
+        Classes
+      </button>
+      <button mat-menu-item (click)="navigateTo('personagem/deuses')">
+        Deuses
+      </button>
+      <button mat-menu-item (click)="navigateTo('personagem/habilidades')">
+        Habilidades
+      </button>
+      <button mat-menu-item (click)="navigateTo('personagem/poderes')">
+        Poderes
+      </button>
+      <button mat-menu-item (click)="navigateTo('personagem/magias')">
+        Magias
+      </button>
+      <button mat-menu-item (click)="navigateTo('personagem/itens')">
+        Itens
+      </button>
+    </mat-menu>
 
-  <mat-divider></mat-divider>
+    <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
+    <mat-menu #menuRegra="matMenu" yPosition="below">
+      <button mat-menu-item (click)="navigateTo('regras/acoes')">Ações</button>
+      <button mat-menu-item (click)="navigateTo('regras/condicoes')">
+        Condições
+      </button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menuUtilitarios">
+      Utilitários
+    </button>
+    <mat-menu #menuUtilitarios="matMenu" yPosition="below">
+      <button
+        mat-menu-item
+        (click)="navigateTo('utilitarios/calculo-desafios')"
+      >
+        Cálculo de Desafios
+      </button>
+      <button
+        mat-menu-item
+        (click)="navigateTo('utilitarios/personagem-aleatorio')"
+      >
+        Personagem Aleatório
+      </button>
+    </mat-menu>
+  </mat-card-content>
+</mat-card>
 
-  <router-outlet />
-  <loading-indicator [detectRouteTransitions]="true" />
+<mat-divider></mat-divider>
+
+<router-outlet />
+<loading-indicator [detectRouteTransitions]="true" />

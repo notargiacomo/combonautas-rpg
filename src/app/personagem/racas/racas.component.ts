@@ -24,7 +24,6 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Raca } from '../../model/raca';
 import { RacaService } from '../../service/raca.service';
-import { ConsultaRacaDto } from '../../dto/consulta.raca.dto';
 import { Deslocamento } from '../../enum/deslocamento.enum';
 import { Sentido } from '../../enum/sentido.enum';
 import { NgFor, NgIf } from '@angular/common';
@@ -68,7 +67,6 @@ export class RacasComponent implements OnInit {
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
   racas!: Raca[];
-  consultaRacaDto: ConsultaRacaDto = new ConsultaRacaDto();
   deslocamentos = Object.values(Deslocamento);
   sentidos = Object.values(Sentido);
   referencias = Object.values(Referencia);
@@ -106,9 +104,6 @@ export class RacasComponent implements OnInit {
         console.log(response);
       },
     });
-
-    // this.racas = this.racaService.getRacas();
-    this.consultaRacaDto = new ConsultaRacaDto();
   }
 
   get sentidosFormArray(): FormArray {
@@ -116,20 +111,14 @@ export class RacasComponent implements OnInit {
   }
 
   limparFiltros() {
-    this.consultaRacaDto = new ConsultaRacaDto();
     this.deslocamentos.forEach((deslocamento) => {
       this.checkboxState[deslocamento] = false;
     });
     this.sentidos.forEach((sentidos) => {
       this.checkboxState[sentidos] = false;
     });
-    // this.racas = this.racaService.getRacas();
-    (this.form.controls['deslocamentos'] as FormArray).clear();
-    //   let arr = this.sentidosFormArray;
 
-    //   while (this.sentidosFormArray.length) {
-    //     this.sentidosFormArray.removeAt(0);
-    //  }
+    (this.form.controls['deslocamentos'] as FormArray).clear();
 
     this.sentidosFormArray.clear();
 
@@ -138,29 +127,14 @@ export class RacasComponent implements OnInit {
   }
 
   selecaoTamanho(event: any): void {
-    this.consultaRacaDto.tamanho = event?.value;
-    console.log('Tamanho selecionado:', this.consultaRacaDto.tamanho);
     this.consultar();
   }
 
   selecaoTipoCriatura(event: any): void {
-    this.consultaRacaDto.tipoCriatura = event?.value;
-    console.log(
-      'Tipo de Criatura selecionado:',
-      this.consultaRacaDto.tipoCriatura
-    );
     this.consultar();
   }
 
   checkDeslocamento(deslocamento: Deslocamento, isChecked: boolean): void {
-    if (isChecked) {
-      this.consultaRacaDto.deslocamentos.push(deslocamento);
-    } else {
-      this.consultaRacaDto.deslocamentos =
-        this.consultaRacaDto.deslocamentos.filter(
-          (item) => item !== deslocamento
-        );
-    }
 
     const formArray = this.form.controls['deslocamentos'] as FormArray;
     if (isChecked) {
@@ -176,14 +150,6 @@ export class RacasComponent implements OnInit {
   }
 
   checkSentido(sentido: Sentido, isChecked: boolean): void {
-    if (isChecked) {
-      this.consultaRacaDto.sentidos.push(sentido);
-    } else {
-      this.consultaRacaDto.sentidos = this.consultaRacaDto.sentidos.filter(
-        (item) => item !== sentido
-      );
-    }
-
     const formArray = this.sentidosFormArray;
     if (isChecked) {
       formArray.push(new FormControl(sentido));
@@ -198,14 +164,6 @@ export class RacasComponent implements OnInit {
   }
 
   checkReferencia(referencia: Referencia, isChecked: boolean): void {
-    if (isChecked) {
-      this.consultaRacaDto.referencia.push(referencia);
-    } else {
-      this.consultaRacaDto.referencia = this.consultaRacaDto.referencia.filter(
-        (item) => item !== referencia
-      );
-    }
-
     const formArray = this.form.controls['referencias'] as FormArray;
     if (isChecked) {
       formArray.push(new FormControl(referencia));
@@ -235,8 +193,6 @@ export class RacasComponent implements OnInit {
       },
     });
 
-    // this.racas = this.racaService.getRacas(this.consultaRacaDto);
     console.log(this.racas);
-    // alert("chamou consultar");
   }
 }

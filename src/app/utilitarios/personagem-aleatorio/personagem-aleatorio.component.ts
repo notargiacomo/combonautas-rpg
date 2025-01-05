@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { RacaService } from '../../service/raca.service';
+import { Raca } from '../../model/raca';
 
 @Component({
   selector: 'app-personagem-aleatorio',
@@ -11,12 +13,12 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class PersonagemAleatorioComponent implements OnInit{
 
-  raca!: string[];
+  raca!: Raca[];
   origem!: string[];
   classe!: string[];
   personagem_nimb!: string;
 
-  constructor() {}
+  constructor(private readonly racaService: RacaService) {}
 
   ngOnInit() {
     this.carregaRacas();
@@ -28,11 +30,19 @@ export class PersonagemAleatorioComponent implements OnInit{
     const racaIndex = Math.floor(Math.random() * this.raca.length);
     const origemIndex = Math.floor(Math.random() * this.origem.length);
     const classeIndex = Math.floor(Math.random() * this.classe.length);
-    this.personagem_nimb = this.raca[racaIndex]+' - '+this.origem[origemIndex]+' - ' +this.classe[classeIndex];
+    this.personagem_nimb = this.raca[racaIndex].nome+' - '+this.origem[origemIndex]+' - ' +this.classe[classeIndex];
   }
 
   carregaRacas() {
-    this.raca = ['Anão', 'Anão Adepto da Pólvora',  'Bugbear',  'Centauro',  'Ceratops', 'Dahllan', 'Dahllan Artesã Natural', 'Duende', 'Eiradaan',  'Elfo do Mar',  'Elfo', 'Finntroll',  'Galokk', 'Gnoll', 'Goblin', 'Golem', 'Harpia', 'Hobgoblin', 'Humano', 'Hynne', 'Kaijin', 'Kallyanach', 'Kappa', 'Kliren',   'Kobold', 'Lefou', 'Mashin', 'Medusa', 'Meio Elfo', 'Meio Orc' ,'Minauro', 'Minotauro', 'Moreau Bufalo', 'Moreau Coruja', 'Moreau Crocodilo', 'Moreau Hiena', 'Moreau Leão', 'Moreau Lobo', 'Moreau Morcego', 'Moreau Raposa', 'Moreau Serpente', 'Moreau Urso', 'Nagah Fêmea', 'Nagah Macho', 'Nezumi', 'Ogro', 'Orc', 'Osteon', 'Pteros', 'Qareen', 'Qareen Amigo da Magia', 'Sátiro', 'Sereia/Tritão', 'Sílfide', 'Soterrado', 'Suraggel Aggelus', 'Suraggel Sulfure','Tabrachi', 'Tengu', 'Trog Anao', 'Trog', 'Velocis', 'Voracis', 'Yidishan']
+    // this.raca = ['Anão', 'Anão Adepto da Pólvora',  'Bugbear',  'Centauro',  'Ceratops', 'Dahllan', 'Dahllan Artesã Natural', 'Duende', 'Eiradaan',  'Elfo do Mar',  'Elfo', 'Finntroll',  'Galokk', 'Gnoll', 'Goblin', 'Golem', 'Harpia', 'Hobgoblin', 'Humano', 'Hynne', 'Kaijin', 'Kallyanach', 'Kappa', 'Kliren',   'Kobold', 'Lefou', 'Mashin', 'Medusa', 'Meio Elfo', 'Meio Orc' ,'Minauro', 'Minotauro', 'Moreau Bufalo', 'Moreau Coruja', 'Moreau Crocodilo', 'Moreau Hiena', 'Moreau Leão', 'Moreau Lobo', 'Moreau Morcego', 'Moreau Raposa', 'Moreau Serpente', 'Moreau Urso', 'Nagah Fêmea', 'Nagah Macho', 'Nezumi', 'Ogro', 'Orc', 'Osteon', 'Pteros', 'Qareen', 'Qareen Amigo da Magia', 'Sátiro', 'Sereia/Tritão', 'Sílfide', 'Soterrado', 'Suraggel Aggelus', 'Suraggel Sulfure','Tabrachi', 'Tengu', 'Trog Anao', 'Trog', 'Velocis', 'Voracis', 'Yidishan']
+    this.racaService.listar(null).subscribe({
+      next: (response) => {
+        this.raca = response;
+      },
+      error: (response) => {
+        console.log(response);
+      },
+    });
   }
   
   carregaClasses() {
