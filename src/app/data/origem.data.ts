@@ -17,7 +17,7 @@ export class OrigemData {
       // RAÇAS BASE DO referencia BÁSICO
       {
         id: 1,
-        nome: 'ACÓLITO',
+        nome: 'Acólito',
         regiao: 'Geral',
         descricao: `
         <p>Neste mundo agraciado com tantos deuses e igrejas, muitos ingressam cedo em alguma ordem religiosa — o que, dependendo de quem é seu deus padroeiro, pode ser motivo de admiração ou repulsa. Talvez você tenha ouvido o chamado da fé, seguiu a tradição espiritual de sua família, ou apenas foi abandonado quando pequeno às portas de um templo ou mosteiro. Tenha ou não se tornado um devoto, suas lembranças são carregadas de orações, evangelhos e outros ensinamentos.</p>
@@ -30,7 +30,7 @@ export class OrigemData {
       },
       {
         id: 2,
-        nome: 'AMIGO DOS ANIMAIS',
+        nome: 'Amigo dos Animais',
         regiao: 'Geral',
         descricao: `
         <p>Você pode ter sido cavalariço no estábulo de um castelo, criador de gado em uma fazenda, ginete de Namalkah ou mesmo tratador em um zoológico ou circo — em Arton, existem espetáculos circenses com animais em jaulas, que talvez você tenha desejado libertar. Ou então nada disso: desde criança você tem facilidade em lidar com animais, sempre conversou com eles, sentiu ser capaz de compreendê-los. Em certos lugares ou tribos, alguma montaria especial seria destinada a você.</p>
@@ -43,7 +43,7 @@ export class OrigemData {
       },
       {
         id: 3,
-        nome: 'AMNÉSICO',
+        nome: 'Amnésico',
         regiao: 'Geral',
         descricao: `
         <p>Você perdeu a maior parte da memória. Sabe apenas o próprio nome ou nem isso. Talvez tenha alguns itens pessoais, mas nenhuma ideia de como os conseguiu — podem ser relíquias de família, presentes de um ente querido ou apenas coisas que pegou de viajantes mortos lá atrás. Você não sabe como recebeu seu treinamento; apenas tem uma intuição sobre aquilo que consegue fazer. Seus atuais companheiros são a única família que conhece. Talvez viajando com eles você descubra algo sobre seu passado.</p>
@@ -56,7 +56,7 @@ export class OrigemData {
       },
       {
         id: 4,
-        nome: 'ARISTOCRATA',
+        nome: 'Aristocrata',
         regiao: 'Geral',
         descricao: `
         <p>Você nasceu na nobreza. Recebeu educação sofisticada em assuntos acadêmicos, política mercantil, torneios de cavalaria ou mesmo conjuração arcana, dependendo das tradições em sua linhagem e desejos de seus pais. Você ainda procura cumprir seus compromissos como nobre? Luta para conciliar as expectativas da família com a vida de aventuras? Ou cortou totalmente seus laços com o passado, mantendo apenas alguns pertences valiosos e contatos úteis?</p>
@@ -69,7 +69,7 @@ export class OrigemData {
       },
       {
         id: 5,
-        nome: 'ARTESÃO',
+        nome: 'Artesão',
         regiao: 'Geral',
         descricao: `
         <p>Do alfaiate habilidoso em costurar as vestes da nobreza ao armeiro que forja armas letais, você foi treinado por um parente, mestre ou guilda para fabricar itens importantes no mundo civilizado. Suas habilidades podem ter sido aprendidas para o trabalho, mas se mostraram úteis durante as aventuras.</p>
@@ -82,7 +82,7 @@ export class OrigemData {
       },
       {
         id: 6,
-        nome: 'ARTISTA',
+        nome: 'Artista',
         regiao: 'Geral',
         descricao: `
         <p>Você possui talento, nasceu com um “dom” — pelo menos é o que outras pessoas gostam de pensar. Será verdade? Ou será que você apenas sentiu atração por certa forma de arte e treinou muito, muito mesmo? Enquanto o artesão fabrica itens  “mundanos”,  o  artista produz entretenimento, alimento para o coração e a alma. Talvez você apenas saiba entoar belas canções, aprendidas na infância com pais amorosos, ou ouvindo fadas na floresta. Ou talvez seja um ator ou dançarino formado em alguma escola de artes prestigiada.</p>
@@ -95,7 +95,7 @@ export class OrigemData {
       },
       {
         id: 7,
-        nome: 'ASSISTENTE DE LABORATÓRIO',
+        nome: 'Assistente de Laboratório',
         regiao: 'Geral',
         descricao: `
         <p>Você atuou como ajudante para um alquimista, inventor ou mago. Costumava tomar notas, limpar o laboratório, arrumar as ferramentas, vasculhar mercados em busca de ingredientes exóticos, recapturar a aberração antinatural que fugiu da jaula... enfim, não era o trabalho mais fácil, limpo ou seguro do mundo. Exposição prolongada a substâncias e experimentos perigosos talvez tenham prejudicado sua saúde (ou despertado suas habilidades de classe...).</p>
@@ -108,7 +108,7 @@ export class OrigemData {
       },
       {
         id: 8,
-        nome: 'CAPANGA',
+        nome: 'Capanga',
         regiao: 'Geral',
         descricao: `
         <p>Agilidade e esperteza são importantes no mundo do crime, mas não são tudo; às vezes é preciso esmurrar alguém. Por ser grande, forte ou mal-encarado, você acabou trabalhando como músculos para algum bandido, ou integrando um bando, quadrilha ou guilda de ladrões. Talvez você não fosse muito bom em bater carteiras nas ruas de Ahlen, mas sabia erguer alguém pelo tornozelo e sacudir até as moedas caírem. Hoje, como aventureiro, você provavelmente deixou essa época para trás — pelo menos até que alguém precise ser “convencido” a colaborar</p>
@@ -122,7 +122,7 @@ export class OrigemData {
       },
       {
         id: 9,
-        nome: 'CHARLATÃO',
+        nome: 'Charlatão',
         regiao: 'Geral',
         descricao: `
         <p>Você sempre teve talento para resolver problemas com conversa, sincera ou nem tanto. Talvez tenha aprendido andando com más companhias. Por ser pequeno e fraco em meio a guerreiros truculentos, talvez fosse pura questão de sobrevivência. Ou foi tocado por Hyninn, Sszzaas ou outra entidade traiçoeira. Seja como for, após um pouco de diálogo, você percebe o que as pessoas mais querem ou temem, usando palavras para vencer obstáculos tão facilmente quanto espadas e magias. Ou melhor.</p>
@@ -135,7 +135,7 @@ export class OrigemData {
       },
       {
         id: 10,
-        nome: 'CIRCENSE',
+        nome: 'Circense',
         regiao: 'Geral',
         descricao: `
         <p>Você treinou acrobacia, malabarismo, mágica ou outra forma de arte circense. Talvez tenha aprendido sozinho, durante as brincadeiras de infância. Talvez tenha sido ensinado por um ente querido, tornando essa arte uma forte ligação com seu passado. Ou ainda, é possível que tenha sido forçado a aprender seus truques para sobreviver nas ruas. De qualquer forma, são aptidões que podem ser úteis em suas aventuras.</p>
@@ -148,7 +148,7 @@ export class OrigemData {
       },
       {
         id: 11,
-        nome: 'CRIMINOSO',
+        nome: 'Criminoso',
         regiao: 'Geral',
         descricao: `
         <p>Fazer o bem é bonito, mas não enche barriga — pelo menos, assim você foi ensinado. Por necessidade, ambição ou apenas sem conhecer outra vida, você foi um bandido durante boa parte da juventude. Furtava bolsas, trapaceava em jogos de taverna, emboscava viajantes nas estradas ou até aceitava contratos para matar. Agia sozinho, com seu próprio bando, pertencia a uma guilda de ladrões. Tornar-se aventureiro talvez seja uma forma de expiar por seus crimes, ou apenas o passo seguinte; em vez de mercadores, roubar tesouros de dragões!</p>
@@ -161,7 +161,7 @@ export class OrigemData {
       },
       {
         id: 12,
-        nome: 'CURANDEIRO',
+        nome: 'Curandeiro',
         regiao: 'Geral',
         descricao: `
         <p>Que bom seria se a cura milagrosa dos clérigos estivesse ao alcance de todos! Talvez você tenha sido ajudante do curandeiro da vila, testemunhando quando ele tratava doenças e lesões sem conjurar qualquer magia. Ou teve um estudo formal e sofisticado de medicina no Colégio Real de Médicos em Salistick. De qualquer modo, você é treinado em curar com remédios e tratamentos naturais — algo sempre útil, mesmo quando há um clérigo por perto.</p>
@@ -174,7 +174,7 @@ export class OrigemData {
       },
       {
         id: 13,
-        nome: 'EREMITA',
+        nome: 'Eremita',
         regiao: 'Geral',
         descricao: `
         <p>Você passou parte da vida isolado, afastado da sociedade. Foi banido ainda criança, por nascer lefou ou com alguma deformidade da Tormenta. Ouviu um chamado dos deuses, buscando o isolamento para meditar sobre seu significado. Viveu enclausurado em um mosteiro, mantendo contato apenas com monges silenciosos. Ou foi praticante de artes arcanas proibidas, mantendo-se longe de olhares curiosos. A vida simples o tornou forte de corpo e espírito. Mas, em algum momento, você decidiu que bastava — ou teve sua tranquilidade interrompida.</p>
@@ -187,7 +187,7 @@ export class OrigemData {
       },
       {
         id: 14,
-        nome: 'ESCRAVO',
+        nome: 'Escravo',
         regiao: 'Geral',
         descricao: `
         <p>De minotauros odiosos no Império de Tauron aos cruéis mestres subterrâneos de Trollkyrka, várias culturas praticam a escravidão. Você já nasceu escravo, fez parte de um povo derrotado na guerra ou foi capturado em alguma rua escura para depois despertar na jaula, em algum mercado clandestino? Encontrou uma chance de escapar, tornando-se agora um escravo foragido? Recebeu a liberdade como recompensa por realizar um grande favor a seu algoz? Foi resgatado por aventureiros que agora se tornaram sua nova família?</p>
@@ -200,7 +200,7 @@ export class OrigemData {
       },
       {
         id: 15,
-        nome: 'ESTUDIOSO',
+        nome: 'Estudioso',
         regiao: 'Geral',
         descricao: `
         <p>Não importa se você já nasceu apaixonado por certo assunto, testemunhou um evento incrível que atiçou sua curiosidade ou se viu forçado a estudar por imposição familiar. Longos anos de sua vida foram gastos em meio a livros e pergaminhos. Da engenharia dos anões à geopolítica do Reinado, das táticas militares puristas aos sistemas de conjuração da Academia Arcana, da anatomia dos dragões aos enigmas cósmicos da Tormenta... em Arton não faltam campos a conquistar, segredos a desvendar. Agora, como aventureiro, você tem a chance de vivenciar aquilo que aprendeu e também auxiliar o grupo com o fruto de seus estudos.</p>
@@ -213,7 +213,7 @@ export class OrigemData {
       },
       {
         id: 16,
-        nome: 'FAZENDEIRO',
+        nome: 'Fazendeiro',
         regiao: 'Geral',
         descricao: `
         <p>Boa parte da população de Arton jamais conheceu outro modo de viver. Em algum lugar na perigosa transição entre os ermos e as cidades, você trabalhou duro em campos e fazendas. Cultivando a terra ou criando animais, viveu longos anos em contato com a natureza, orando e trabalhando por boas colheitas ou gado saudável, só ocasionalmente visitando povoados para negociar sua produção. Por que essa vida tranquila acabou? Sua família foi assassinada por goblins? Sua fazenda foi devastada por um dragão? Ou você apenas foi atraído pelo chamado da aventura?</p>
@@ -226,7 +226,7 @@ export class OrigemData {
       },
       {
         id: 17,
-        nome: 'FORASTEIRO',
+        nome: 'Forasteiro',
         regiao: 'Geral',
         descricao: `
         <p>Você veio de longe. Sua cultura nativa é quase ou totalmente desconhecida no Reinado, tornando-o uma  figura  exótica,  de  hábitos  estranhos.  Você pertence a uma tribo perdida nas Montanhas Sanguinárias? Nasceu em uma bela cidade de cúpulas douradas no Deserto da Perdição? Navegou em navios audazes desde os Reinos de Moreania? Talvez você até tenha chegado de outro mundo, através de algum portal mágico. Será que conseguiu ajustar-se a este Reinado, agora chamando-o de lar? Ou procura até hoje o caminho de volta para casa?</p>
@@ -239,7 +239,7 @@ export class OrigemData {
       },
       {
         id: 18,
-        nome: 'GLADIADOR',
+        nome: 'Gladiador',
         regiao: 'Geral',
         descricao: `
         <p>Combates de arena são um entretenimento popular em Arton — a ponto de atrair muitos jovens praticantes. Podem ser combates até a morte ou apenas encenações elaboradas ou ainda corridas de cavalo, arquearia e outros esportes menos sangrentos. Você se envolveu nesse mundo glamoroso por ser tradição em sua família, por admirar algum gladiador renomado ou apenas por sede de fama e fortuna. Um evento traumático, uma desilusão ou o puro tédio levou você a abandonar as arenas e aplausos, usando sua experiência em torneios para viver aventuras.</p>
@@ -252,7 +252,7 @@ export class OrigemData {
       },
       {
         id: 19,
-        nome: 'GUARDA',
+        nome: 'Guarda',
         regiao: 'Geral',
         descricao: `
         <p>Você atuou como agente da lei em uma vila ou cidade. Nem de longe uma profissão tão glamorosa ou emocionante quanto parece; boa parte de seu trabalho resumia-se a guardar um portão, fazer rondas tediosas ou recolher bêbados em tavernas. Pelo menos você recebeu algum treino em investigação e combate. Também tem consigo alguma boa arma, que “esqueceu” de devolver quando abandonou a milícia para se tornar aventureiro.</p>
@@ -265,7 +265,7 @@ export class OrigemData {
       },
       {
         id: 20,
-        nome: 'HERDEIRO',
+        nome: 'Herdeiro',
         regiao: 'Geral',
         descricao: `
         <p>Você pertence a uma linhagem de nobres, mercadores, conjuradores, acadêmicos, assassinos, ou outra atividade tradicional em sua família — tão tradicional que, de você, não se espera outra coisa. Pode ser uma longa e antiquíssima ascendência, traçada até antes da Grande Batalha, ou você apenas é filho de uma importante personalidade. Talvez tenha nascido em alguma ordem de cavalaria em Bielefeld, ou uma influente estirpe da nobreza de Deheon, ou como filho de um célebre arquimago com planos de enviá-lo à Academia Arcana, ou até cresceu em um culto familiar secreto a um deus maligno. Graças a essa herança, recebeu treino e equipamento adequados. Mas você pretende mesmo seguir esse caminho?</p>
@@ -278,7 +278,7 @@ export class OrigemData {
       },
       {
         id: 21,
-        nome: 'HERÓI CAMPONÊS',
+        nome: 'Herói Camponês',
         regiao: 'Geral',
         descricao: `
         <p>Quando o povoado foi atacado por goblins, você empunhou o forcado para expulsá-los. Quando o estábulo pegou fogo, você se arriscou para salvar todos os animais. Quando todos temiam a mansão assombrada na colina, você encontrou a carta de amor perdida que trouxe descanso à alma torturada. Você era o campeão local, amado pelo povo, mas também destinado a feitos maiores. Houve comoção quando você partiu para uma vida de aventuras, mas ninguém deixou de orar por seu sucesso. Talvez você até tenha sido presenteado com alguma arma ou item há tempos guardado no povoado.</p>
@@ -291,7 +291,7 @@ export class OrigemData {
       },
       {
         id: 22,
-        nome: 'MARUJO',
+        nome: 'Marujo',
         regiao: 'Geral',
         descricao: `
         <p>Você foi tripulante em uma embarcação — um barco pesqueiro, galé pirata, caravela exploradora, trirreme dos minotauros... — no Mar Negro, no Mar do Dragão Rei ou mesmo ao longo do imenso Rio dos Deuses. Você também pode ter trabalhado em um veículo exótico, como um dirigível goblin, ou mesmo em uma embarcação mágica, como as naves vivas gog’magogue que viajam entre mundos!</p>
@@ -304,7 +304,7 @@ export class OrigemData {
       },
       {
         id: 23,
-        nome: 'MATEIRO',
+        nome: 'Mateiro',
         regiao: 'Geral',
         descricao: `
         <p>Nem todos em Arton vivem em cidades confortavelmente abastecidas por fazendeiros, mineiros ou pescadores — muitas comunidades ainda obtêm sustento através da caça. Você aprendeu cedo a abater animais selvagens para colocar comida na mesa, ou como esporte de gosto duvidoso. Se você caça com reverência a Allihanna ou apenas coleciona troféus com orgulho, a escolha é sua. De qualquer forma, para alguém habituado a flechar cervos e colocar armadilhas para coelhos, combater ogros, demônios e dragões seria apenas o passo seguinte.</p>
@@ -317,7 +317,7 @@ export class OrigemData {
       },
       {
         id: 24,
-        nome: 'MEMBRO DE GUILDA',
+        nome: 'Membro de Guilda',
         regiao: 'Geral',
         descricao: `
         <p>Você foi, ou ainda é, membro atuante em uma grande guilda — uma associação de artesãos, mercadores, magos, criminosos ou mesmo aventureiros. A guilda forneceu o treinamento e equipamento necessários para suas atividades, esperando que você seja útil em troca. Você se manteve fiel a seus patronos, cumprindo missões e colhendo os benefícios de pertencer a uma vasta organização? Ou deixou essa vida para trás, sendo agora desprezado ou até caçado por seus antigos mestres?</p>
@@ -330,7 +330,7 @@ export class OrigemData {
       },
       {
         id: 25,
-        nome: 'MERCADOR',
+        nome: 'Mercador',
         regiao: 'Geral',
         descricao: `
         <p>Seguindo uma tradição de família, após herdar um estabelecimento ou apenas como um jovem empregado, você atuou como comerciante — pelo menos por algum tempo. Uma tenda modesta em algum grande mercado urbano? Uma caravana mercante cruzando o Reinado? Um belo bazar na prestigiada cidade voadora de Vectora? Após alguns anos de negociações e jornadas (nem tão tranquilas quanto outros imaginam), você talvez não tenha ficado rico, mas reuniu algum equipamento e dinheiro suficientes para começar carreira como aventureiro.</p>
@@ -343,7 +343,7 @@ export class OrigemData {
       },
       {
         id: 26,
-        nome: 'MINERADOR',
+        nome: 'Minerador',
         regiao: 'Geral',
         descricao: `
         <p>Ser aventureiro é a profissão mais perigosa de todas; ser mineiro, talvez a segunda mais perigosa. Você mergulhou nas profundezas da terra atrás de metais necessários à civilização ou riquezas em gemas preciosas. Enquanto humanos e outras raças consideram essa vida um pesadelo, quase todos os anões acreditam ser a mais feliz das carreiras. A escuridão e o sufocamento dos subterrâneos talvez tenham sido assustadores, mas trouxeram a você bens materiais valiosos, bem como informação profunda (sem trocadilhos) sobre túneis e masmorras.</p>
@@ -356,7 +356,7 @@ export class OrigemData {
       },
       {
         id: 27,
-        nome: 'NÔMADE',
+        nome: 'Nômade',
         regiao: 'Geral',
         descricao: `
         <p>Até onde se lembra, você nunca pertenceu a um só lugar. Sua família viajava constantemente, como parte de alguma grande caravana comercial, peregrinação religiosa ou algum povo primitivo que nunca praticou agricultura. Ou talvez suas razões para viajar sejam bastante diferentes e pessoais — após a quase extinção de seu povo, muitos elfos temem criar raízes, enquanto a deusa Valkaria exige que seus devotos se mantenham sempre em viagem. Para você, habituado às estradas e sem laços com nenhuma terra, bastou um pequeno passo para se tornar aventureiro.</p>
@@ -369,7 +369,7 @@ export class OrigemData {
       },
       {
         id: 28,
-        nome: 'PIVETE',
+        nome: 'Pivete',
         regiao: 'Geral',
         descricao: `
         <p>Você era uma criança de rua. Não conheceu seus pais, foi abandonado por eles ou fugiu para evitar maus tratos. Sem muitas escolhas na vida, aprendeu cedo a sobreviver em grandes cidades, pedindo esmolas, roubando bolsas ou cumprindo pequenas tarefas para bandidos. Tornar-se aventureiro não parecia apenas um jeito de ficar rico e famoso, mas também a única chance de uma vida melhor. Talvez você não tenha as armaduras e mantos chiques de seus companheiros, mas sabe se virar nas ruas melhor que ninguém.</p>
@@ -382,7 +382,7 @@ export class OrigemData {
       },
       {
         id: 29,
-        nome: 'REFUGIADO',
+        nome: 'Refugiado',
         regiao: 'Geral',
         descricao: `
         <p>Neste mundo assolado por tantas guerras e tragédias, você acabou sobrevivendo a alguma delas. Sendo elfo, estava presente durante a sofrida queda de Lenórienn. Escapou à destruição de Tamu-ra. Teve sorte em sair do caminho de Mestre Arsenal, conseguiu esconder-se das forças puristas ou testemunhou a chegada da Flecha de Fogo e viveu para contar a história. Trauma e privações talvez tenham tornado você amargo, sombrio, embrutecido... mas também um sobrevivente tenaz, acostumado a uma vida perigosa.</p>
@@ -395,7 +395,7 @@ export class OrigemData {
       },
       {
         id: 30,
-        nome: 'SEGUIDOR',
+        nome: 'Seguidor',
         regiao: 'Geral',
         descricao: `
         <p>Você não nasceu herói, mas viveu algum tempo na companhia de um. Pode ter sido escudeiro de um cavaleiro de Khalmyr, garoto de recados para um ladino, criado de um nobre... enfim, um ajudante para um aventureiro de verdade. Durante esse tempo adquiriu aprendizado valioso, testemunhou eventos incríveis, mas você não seria um seguidor para sempre. Como ocorreu a separação? Você apenas disse adeus e trilhou seu próprio caminho? Seu mestre desapareceu de forma misteriosa ou foi assassinado diante de seus olhos? Você ficou com parte de seus itens, como presente ou lembrança?</p>
@@ -408,7 +408,7 @@ export class OrigemData {
       },
       {
         id: 31,
-        nome: 'SELVAGEM',
+        nome: 'Selvagem',
         regiao: 'Geral',
         descricao: `
         <p>Você nasceu em uma tribo de bárbaros incultos ou tem uma origem bem mais exótica. Perdeu-se dos pais verdadeiros em alguma região remota, sobrevivendo graças aos cuidados de um eremita, ou criado por animais, ou por pura bondade dos deuses. Você pode nem mesmo ter nascido de pais humanoides — talvez seja cria de dragões, demônios ou deuses, com poderes a serem revelados no momento certo. Será que você ainda teme a civilização, assustando-se com uma simples fogueira? Ou já aprendeu algumas coisas, graças a seus novos companheiros?</p>
@@ -421,7 +421,7 @@ export class OrigemData {
       },
       {
         id: 32,
-        nome: 'SOLDADO',
+        nome: 'Soldado',
         regiao: 'Geral',
         descricao: `
         <p>Deheon. Bielefeld. A Supremacia Purista. Em Arton existem vastas forças militares. Ainda jovem, você se alistou (ou foi convocado) como soldado em um grande exército. Independentemente de sua função exata dentro da máquina de guerra — infantaria, cavalaria, arqueiro, cozinheiro... —, você recebeu treinamento em combate e equipamento decente. Mas em alguma ocasião você abandonou a vida militar para se tornar aventureiro. Foi dispensado com honras, após uma grande façanha? Sobreviveu a um conflito sangrento? Desertou antes de um massacre?</p>
@@ -434,7 +434,7 @@ export class OrigemData {
       },
       {
         id: 33,
-        nome: 'TAVERNEIRO',
+        nome: 'Taverneiro',
         regiao: 'Geral',
         descricao: `
         <p>Não é incomum que heróis aposentados se tornem donos de tavernas ou estalagens, mas o contrário também pode ocorrer. Você foi dono, filho do dono ou empregado em algum lugar frequentado por aventureiros — esses tipos sempre cheios de ouro e bravatas, atiçando sua ambição. Claro, eles nem sempre mencionam os horrores, amputações e mortes! Ainda assim, parece bem melhor que a vida atrás do balcão, limpando canecas sujas. Você ouviu todas as grandes histórias, trocou socos em algumas brigas e até ganhou uma lembrança ou outra de algum herói bêbado.</p>
@@ -447,7 +447,7 @@ export class OrigemData {
       },
       {
         id: 34,
-        nome: 'TRABALHADOR',
+        nome: 'Trabalhador',
         regiao: 'Geral',
         descricao: `
         <p>Nenhum glamour aqui, apenas trabalho braçal pesado. De origem humilde, sem grandes chances na vida, você trabalhou duro desde muito jovem. Transportou pedras na construção de templos e castelos, carregou sacas de grãos em fazendas, empilhou cargas em portos, puxou arado feito um animal de tração. Talvez sua vida tenha sido um pouco melhor, como servo em um palácio. Ou muito pior, arrastando ou queimando corpos em campos de batalha. Não é surpresa que a carreira como aventureiro, mesmo perigosa, tenha parecido muito mais atraente.</p>
@@ -460,7 +460,7 @@ export class OrigemData {
       },
       {
         id: 35,
-        nome: 'BATEDOR',
+        nome: 'Batedor',
         regiao: 'Geral',
         descricao: `
         <p>Seja conduzindo caravanas através dos reinos, rastreando inimigos nos campos de batalha ou guiando exploradores nas vastidões selvagens, você aprendeu a achar caminhos e dirigir outros com segurança. Batedores podem surgir nas tribos mais primitivas, acompanhando grupos de caça, como profissionais sofisticados nas grandes cidades e forças militares ou ainda na perigosa atividade de caça-recompensas. Pouco importando a carreira que adotou mais tarde, como aventureiro, seu antigo treino acaba se revelando útil em numerosas ocasiões.</p>
@@ -473,7 +473,7 @@ export class OrigemData {
       },
       {
         id: 36,
-        nome: 'AGRICULTOR DE SAMBUR',
+        nome: 'Agricultor de Sambur',
         regiao: 'Sambúrdia',
         descricao: `
         <p>Você trabalhou nos campos férteis das Repúblicas Livres, onde aprendeu muito sobre os animais, a natureza e o trabalho duro..</p>
@@ -484,7 +484,7 @@ export class OrigemData {
       },
       {
         id: 37,
-        nome: 'AMAZONA DE HIPPION',
+        nome: 'Amazone de Hippion',
         regiao: 'Deheon, Namalkah',
         descricao: `
         <p>Você é uma das orgulhosas amazonas de Hippion, um dos povos nativos de Arton Norte.</p>
@@ -495,7 +495,7 @@ export class OrigemData {
       },
       {
         id: 38,
-        nome: 'AMÓQUE PÚRPURA',
+        nome: 'Amóque Púrpura',
         regiao: 'Ermos Púrpuras',
         descricao: `
         <p>Raiva compele os golpes de guerreiros por todo o mundo, mas nos Ermos Púrpuras a prática é refinada ao limite. Você cresceu entre esses lutadores imprevisíveis.</p>
@@ -506,7 +506,7 @@ export class OrigemData {
       },
       {
         id: 39,
-        nome: 'ANÃO DE ARMAS',
+        nome: 'Anão de Armas',
         regiao: 'Doherimm',
         descricao: `
         <p>Você foi treinado pela Guilda dos Armeiros, tendo aprendido a fabricar — e usar — armas anãs.</p>
@@ -517,7 +517,7 @@ export class OrigemData {
       },
       {
         id: 40,
-        nome: 'ANDARILHO UBANERI',
+        nome: 'Andarilho Ubaneri',
         regiao: 'Ubani',
         descricao: `
         <p>Sonhando um dia ser membro da Patrulha da Fronteira, você pratica técnicas de lança e escudo e já conquistou a amizade de um alikunhá. </p>
@@ -530,7 +530,7 @@ export class OrigemData {
       },
       {
         id: 41,
-        nome: 'APRENDIZ DE DRAGOEIRO',
+        nome: 'Aprendir de Dragoeiro',
         regiao: 'Sckharshantallas',
         descricao: `
         <p>Você aprendeu técnicas para enfrentar dragões tolos a ponto de entrar em Sckharshantallas — o que certamente será útil contra outras feras.</p>
@@ -541,7 +541,7 @@ export class OrigemData {
       },
       {
         id: 42,
-        nome: 'APRENDIZ DE DROGADORA',
+        nome: 'Aprendiz de Drogadora',
         regiao: 'Galrasia',
         descricao: `
         <p>Você era discípula de uma voracis drogadora e estudou as artes de cura em Galrasia.</p>
@@ -552,7 +552,7 @@ export class OrigemData {
       },
       {
         id: 43,
-        nome: 'ARISTOCRATA DE DAI’ZENSHI',
+        nome: 'Aristocrata de Dai’zenshi',
         regiao: 'Tamu-ra',
         descricao: `
         <p>Você faz parte da nobreza tamuraniana, como descendente direto de um dos três Grandes Clãs ou como vassalo em alguma família samurai. Assim, é visto como um exemplo a ser seguido.</p>
@@ -563,7 +563,7 @@ export class OrigemData {
       },
       {
         id: 44,
-        nome: 'ARMEIRO ARMADO',
+        nome: 'Armeiro Armado',
         regiao: 'Zakharov',
         descricao: `
         <p>Você aprendeu o ofício mais tradicional e respeitado de Zakharov. Suas armas não são apenas instrumentos de combate, mas obras de arte.</p>
@@ -574,7 +574,7 @@ export class OrigemData {
       },
       {
         id: 45,
-        nome: 'ASPIRANTE A HERÓI',
+        nome: 'Aspirante a Herói',
         regiao: 'Deheon',
         descricao: `
         <p>Você nasceu para ser herói, com potencial para se tornar protagonista das canções épicas dos bardos.</p>
@@ -585,7 +585,7 @@ export class OrigemData {
       },
       {
         id: 46,
-        nome: 'ASSISTENTE FORENSE',
+        nome: 'Assistente Forense',
         regiao: 'Salistick',
         descricao: `
         <p>Você cresceu em Salistick, onde teve contato com o que a ciência tem de mais avançado para a detecção e solução de crimes. Suas capacidades de dedução e análise se tornaram profundamente aguçadas.</p>
@@ -596,7 +596,7 @@ export class OrigemData {
       },
       {
         id: 47,
-        nome: 'BANDOLEIRO DA FORTALEZA',
+        nome: 'Bandoleiro da Fortaleza',
         regiao: 'Khalifor',
         descricao: `
         <p>Você cresceu se esgueirando pelos becos de Khalifor, vendo o pior que humanos e duyshidakk têm a oferecer.</p>
@@ -607,7 +607,7 @@ export class OrigemData {
       },
       {
         id: 48,
-        nome: 'BARÃO ARRUINADO',
+        nome: 'Barão Arruinado',
         regiao: 'Trebuck',
         descricao: `
         <p>Você estava destinado a se tornar o senhor de um feudo, mas seu título se perdeu. Pelo menos isso o ensinou a lidar com os reveses da vida.</p>
@@ -618,7 +618,7 @@ export class OrigemData {
       },
       {
         id: 49,
-        nome: 'CATADOR DA CIDADE VELHA',
+        nome: 'Catador da Cidade Velha',
         regiao: 'Nova Malpetrim',
         descricao: `
         <p>As ruínas inundadas da Velha Malpetrim guardam riquezas, segredos e incontáveis perigos. Você cresceu vasculhando essas profundezas em busca do almoço do dia seguinte.</p>
@@ -629,7 +629,7 @@ export class OrigemData {
       },
       {
         id: 50,
-        nome: 'CATIVO DAS FADAS',
+        nome: 'Cativo das Fadas',
         regiao: 'Pondsmânia',
         descricao: `
         <p>Quando era um bebê, você foi levado para a Pondsmânia. Talvez tenha sido trocado por seus pais em um acordo com uma fada, talvez tenha sido roubado pelas Cyruthnallach. De qualquer forma, sua infância foi permeada de brincadeiras bizarras e jogos feéricos.</p>
@@ -640,7 +640,7 @@ export class OrigemData {
       },
       {
         id: 51,
-        nome: 'COMPETIDOR DO CIRCUITO',
+        nome: 'Competidor do Circuito',
         regiao: 'Trebuck',
         descricao: `
         <p>Você percorreu o grande Circuito de Torneios de Trebuck. Pode ter sido parte da equipe de um cavaleiro ou um aspirante a competidor, ansiando por um dia disputar os eventos principais. Sua hora ainda não chegou, mas enquanto isso você usa o que aprendeu em suas aventuras.</p>
@@ -651,7 +651,7 @@ export class OrigemData {
       },
       {
         id: 52,
-        nome: 'COSMOPOLITA',
+        nome: 'Cosmopolita',
         regiao: 'Valkaria',
         descricao: `
         <p>Tendo crescido na maior cidade de Arton, você já viu de tudo e está preparado para a maior parte.</p>
@@ -662,7 +662,7 @@ export class OrigemData {
       },
       {
         id: 53,
-        nome: 'CRIA DE FAVELA',
+        nome: 'Cria de Favela',
         regiao: 'Valkaria',
         descricao: `
         <p>A Favela dos Goblins é um lugar empobrecido e injustiçado, esquecido pelos governantes de Valkaria. Essa comunidade o tornou resistente e incansável.</p>
@@ -673,7 +673,7 @@ export class OrigemData {
       },
       {
         id: 54,
-        nome: 'CRIADO PELAS VORACIS',
+        nome: 'Criado pelas Voracis',
         regiao: 'Galrasia',
         descricao: `
         <p>Ainda jovem, você foi encontrado por um grupo de voracis em Galrasia. Elas o adotaram e o criaram de acordo com suas tradições e valores.</p>
@@ -684,7 +684,7 @@ export class OrigemData {
       },
       {
         id: 55,
-        nome: 'DE OUTRO MUNDO',
+        nome: 'De Outro Mundo',
         regiao: 'Éter Divino',
         descricao: `
         <p>Você veio de outro mundo através do Éter Divino. Como alternativa, pode ter chegado a Arton por uma tempestade de areia do Deserto da Perdição, via uma viagem planar de Vectora ou por qualquer outra forma mágica ou maluca.</p>
@@ -695,7 +695,7 @@ export class OrigemData {
       },
       {
         id: 56,
-        nome: 'DESCENDENTE COLLENIANO',
+        nome: 'Descendente Colleniano',
         regiao: 'Ahlen',
         descricao: `
         <p>Você descende do povo de Collen, um antigo reino insular absorvido por Ahlen. Sua linhagem tem olhos de cores incomuns, com alguns poucos chegando a apresentar poderes mágicos ligados à visão. Você é um desses poucos.</p>
@@ -706,7 +706,7 @@ export class OrigemData {
       },
       {
         id: 57,
-        nome: 'DESERTOR DA SUPREMACIA',
+        nome: 'Desertor da Supremacia',
         regiao: 'Supremacia',
         descricao: `
         <p>Você passou pelo treinamento padrão dos batalhões puristas e talvez tenha visto de perto as atrocidades desses vilões. Seja como for, decidiu que não podia ficar neutro frente à Supremacia.</p>
@@ -717,7 +717,7 @@ export class OrigemData {
       },
       {
         id: 58,
-        nome: 'DUPLO FEÉRICO',
+        nome: 'Duplo Feérico',
         regiao: 'Pondsmânia',
         descricao: `
         <p>Em algum lugar de Arton, há alguém igual a você. Com a mesma aparência, as mesmas capacidades, os mesmos ideais. Talvez isso rendesse uma boa amizade, mas esse alguém veio primeiro. Você é apenas a cópia feita por uma fada.</p>
@@ -732,7 +732,7 @@ export class OrigemData {
       },
       {
         id: 59,
-        nome: 'DUYSHIDAKK INFILTRADO',
+        nome: 'Duyshidakk Infiltrado',
         regiao: 'Tyrondir',
         descricao: `
         <p>Você viveu entre o povo do Reinado por muito tempo, absorvendo seu modo de vida… mas secretamente devotado a construir O Mundo Como Deve Ser. </p>
@@ -743,7 +743,7 @@ export class OrigemData {
       },
       {
         id: 60,
-        nome: 'EMISSÁRIO UBANERI',
+        nome: 'Emissário Ubaneri',
         regiao: 'Ubani',
         descricao: `
         <p>Você foi preparado para percorrer as terras distantes e conhecer mais sobre o mundo além da Savana. Você nunca fica solitário, pois está acompanhado de um alikunhá, um pequeno pedaço de Ubani.</p>
@@ -756,7 +756,7 @@ export class OrigemData {
       },
       {
         id: 61,
-        nome: 'ESCUDEIRO DA LUZ',
+        nome: 'Escudeiro da Luz',
         regiao: 'Bielefeld',
         descricao: `
         <p>Você não serviu a um cavaleiro errante qualquer, mas a um nobre e honrado cavaleiro da Luz. Ao lado dele, aprendeu todas as tarefas diárias desse ofício, além dos valores da nobreza e da justiça.</p>
@@ -767,7 +767,7 @@ export class OrigemData {
       },
       {
         id: 62,
-        nome: 'ESCUDEIRO SOLITÁRIO',
+        nome: 'Escudeiro Solitário',
         regiao: 'Bielefeld',
         descricao: `
         <p>Ninguém sabe, mas você foi escudeiro de um cavaleiro de Bielefeld… ou cupincha de um trambiqueiro. Seu mestre era membro dos Cavaleiros Solitários, disposto a todo tipo de subterfúgio, intriga e traição para ajudar os verdadeiros heróis. </p>
@@ -778,7 +778,7 @@ export class OrigemData {
       },
       {
         id: 63,
-        nome: 'ESTANDARTE VIVO',
+        nome: 'Estandarde Vivo',
         regiao: 'Ermos Púrpuras',
         descricao: `
         <p>Muitas tribos dos Ermos Púrpuras acabaram extintas — por guerra, por doença ou pela corrupção da Tormenta. Sua tribo se foi, mas você permanece, uma prova viva de que um dia seu povo existiu.</p>
@@ -789,7 +789,7 @@ export class OrigemData {
       },
       {
         id: 64,
-        nome: 'ESTUDANTE DA ACADEMIA',
+        nome: 'Estudante da Academia',
         regiao: 'Academia Arcana',
         descricao: `
         <p>Você frequentou a Academia Arcana. Pode ou não ter se tornado um arcanista, mas com certeza aprendeu algo sobre lançar magias.</p>
@@ -800,7 +800,7 @@ export class OrigemData {
       },
       {
         id: 65,
-        nome: 'ESTUDANTE DO COLÉGIO REAL',
+        nome: 'Estudante do Colégio Real',
         regiao: 'Salistick',
         descricao: `
         <p>Você teve a oportunidade de estudar no ilustríssimo Colégio Real de Médicos de Salistick. Seu ceticismo e rigor científico o afastam dos deuses e o aproximam da compreensão da vida.</p>
@@ -811,7 +811,7 @@ export class OrigemData {
       },
       {
         id: 66,
-        nome: 'EXPLORADOR DE RUÍNAS',
+        nome: 'Explorador de Ruínas',
         regiao: 'Tyrondir',
         descricao: `
         <p>A destruição de Tyrondir atraiu exploradores em busca de riquezas que possam ter sobrevivido à queda da Flecha de Fogo. Após um tempo nessa atividade, você aprendeu alguns truques úteis.</p>
@@ -822,7 +822,7 @@ export class OrigemData {
       },
       {
         id: 67,
-        nome: 'FILHOTE DE REVOADA',
+        nome: 'Filhote da Revoada',
         regiao: 'Lamnor',
         descricao: `
         <p>Você passou grande parte de sua juventude entre a Revoada Carnívora e seus perigosos e fantásticos engenhos voadores. Você ainda não tem seu próprio veículo, mas aprendeu duras lições entre voos e quedas.</p>
@@ -833,7 +833,7 @@ export class OrigemData {
       },
       {
         id: 68,
-        nome: 'FUTURA LENDA',
+        nome: 'Futura Lenda',
         regiao: 'Nova Malpetrim',
         descricao: `
         <p>Você nasceu ouvindo histórias sobre heróis, talvez tenha sido batizado com o nome de um deles e por fim decidiu fazer a única coisa que tinha sentido: superá-los! </p>
@@ -844,7 +844,7 @@ export class OrigemData {
       },
       {
         id: 69,
-        nome: 'GINETE TUMARKHÂN',
+        nome: 'Ginete Tumarkhân',
         regiao: 'Khubar',
         descricao: `
         <p>O povo de Khubar usa o lagarto tumarkhân como montaria. Você estabeleceu um elo com um desses animais, que o acompanha em suas jornadas.</p>
@@ -855,7 +855,7 @@ export class OrigemData {
       },
       {
         id: 70,
-        nome: 'GRUMETE PIRATA',
+        nome: 'Grumete Pirata',
         regiao: 'Três Mares',
         descricao: `
         <p>Por paixão, sede de liberdade ou pura necessidade, você serviu em uma embarcação pirata.</p>
@@ -866,7 +866,7 @@ export class OrigemData {
       },
       {
         id: 71,
-        nome: 'GUARDIÃO GLACIAL',
+        nome: 'Guardião Glacial',
         regiao: 'Uivantes',
         descricao: `
         <p>As Uivantes são inclementes, mas também precisam de seus protetores. Você treinou com eles e aprendeu como afugentar intrometidos.</p>
@@ -877,7 +877,7 @@ export class OrigemData {
       },
       {
         id: 72,
-        nome: 'INICIADO DOS CAÇAS-MONSTROS',
+        nome: 'Iniciado dos Caça-Monstros',
         regiao: 'Sanguinárias',
         descricao: `
         <p>Você foi iniciado na Guilda dos Caça-Monstros. Mesmo que ainda não seja capaz de vencer todas as criaturas, consegue ao menos identificá-las!</p>
@@ -888,7 +888,7 @@ export class OrigemData {
       },
       {
         id: 73,
-        nome: 'INSURGENTE TAPISTANO',
+        nome: 'Insurgente Tapistano',
         regiao: 'Império de Tauron',
         descricao: `
         <p>O Império de Tauron está ruindo. O Deus da Força está morto. Para você, isso ainda não é suficiente. O povo só estará satisfeito quando todos os antigos generais e escravagistas forem punidos.</p>
@@ -899,7 +899,7 @@ export class OrigemData {
       },
       {
         id: 74,
-        nome: 'IRMÃO SEM ESPORAS',
+        nome: 'Irmão sem Esporas',
         regiao: 'Namalkah',
         descricao: `
         <p>Você possui um cavalo que o acompanha desde a infância; vocês cresceram juntos, tornando-se ver- dadeiros irmãos.</p>
@@ -910,7 +910,7 @@ export class OrigemData {
       },
       {
         id: 75,
-        nome: 'LEGIONÁRIO',
+        nome: 'Legionário',
         regiao: 'Império de Tauron',
         descricao: `
         <p>Você serviu nas legiões do Império de Tauron, onde aprendeu a usar o equipamento de um legionário. Agora que seu serviço terminou, você espera usar as técnicas aprendidas para dar um novo rumo a Tapista.</p>
@@ -921,7 +921,7 @@ export class OrigemData {
       },
       {
         id: 76,
-        nome: 'LENHADOR DE TOLLON',
+        nome: 'Lenhador de Tollan',
         regiao: 'Tollon',
         descricao: `
         <p>Você foi criado entre as imponentes árvores da Floresta de Tollon, que lhe serviram tanto como casa quanto como fonte de sustento.</p>
@@ -932,7 +932,7 @@ export class OrigemData {
       },
       {
         id: 77,
-        nome: 'LIRICISTA DE LENÓRIENN',
+        nome: 'Liricista de Lenórienn',
         regiao: 'Lamnor',
         descricao: `
         <p>Você Mesmo não tendo vivido o auge do Reino dos Elfos, você ouviu histórias suficientes para admirá-lo. Inspirado pelas tradições élficas, você aprendeu a transformar sua magia em arte.</p>
@@ -943,7 +943,7 @@ export class OrigemData {
       },
       {
         id: 78,
-        nome: 'MEMBRO DO PRINCIPADO',
+        nome: 'Membro do Principado',
         regiao: 'Sambúrdia',
         descricao: `
         <p>Você faz parte do Principado Mercante, uma das organizações mais poderosas das Repúblicas Livres. Ainda está longe do topo, mas até mesmo os Príncipes Mercantes começaram em algum lugar.</p>
@@ -954,7 +954,7 @@ export class OrigemData {
       },
       {
         id: 79,
-        nome: 'NITAMURANIANO',
+        nome: 'Nitamuraniano',
         regiao: 'Valkaria',
         descricao: `
         <p>Você foi criado na maior comunidade tamuraniana fora do próprio Império de Jade. Seus valores culturais misturam as complexas e distintas tradições deheoni e tamuranianas.</p>
@@ -965,7 +965,7 @@ export class OrigemData {
       },
       {
         id: 80,
-        nome: 'NOBRE ZAKHAROVIANO',
+        nome: 'Nobre Zakharoviano',
         regiao: 'Zakharov',
         descricao: `
         <p>Você descende de uma das tradicionais famílias de nobres armeiros zakharovianos. Além do sobrenome, ostenta com orgulho uma de suas obras-primas.</p>
@@ -976,7 +976,7 @@ export class OrigemData {
       },
       {
         id: 81,
-        nome: 'NÔMADE DE SAR-ALLAN',
+        nome: 'Nômade de Sar-Allan',
         regiao: 'Halak-Tûr',
         descricao: `
         <p>Você cresceu entre os sar-allan, aprendendo a resistir aos rigores — e aos predadores — do deserto.</p>
@@ -987,7 +987,7 @@ export class OrigemData {
       },
       {
         id: 82,
-        nome: 'PESCADOR PARRUDO',
+        nome: 'Pescador Parrudo',
         regiao: 'Khubar',
         descricao: `
         <p>Desde criança, você pesca nas águas profundas de Khubar. Tal atividade deixou seu corpo forte e resistente.</p>
@@ -998,7 +998,7 @@ export class OrigemData {
       },
       {
         id: 83,
-        nome: 'PLEBEU ARCANO',
+        nome: 'Plebeu Arcano',
         regiao: 'Wynlla',
         descricao: `
         <p>Crescer em Wynlla é estar próximo da magia. Esse contato o deixou mais acostumado aos aspectos místicos de Arton.</p>
@@ -1009,7 +1009,7 @@ export class OrigemData {
       },
       {
         id: 84,
-        nome: 'PRISIONEIRO DAS CATACUMBAS',
+        nome: 'Prisioneiro das Catacumbas',
         regiao: 'Leverick',
         descricao: `
         <p>Você vivia uma vida comum e sem grandes emoções, até ter o azar de abrir a porta errada. Talvez também tenha sido por mero acaso que você escapou das Catacumbas de Leverick.</p>
@@ -1020,7 +1020,7 @@ export class OrigemData {
       },
       {
         id: 85,
-        nome: 'PROCURADO: VIVO OU MORTO',
+        nome: 'Procurado: Vivo ou Morto',
         regiao: 'Smokestone',
         descricao: `
         <p>Você é um pistoleiro infame nas cercanias de Smokestone, odiado e caçado por outros durões. Provavelmente foi tudo um engano e você ainda não faz jus a esse renome, mas sua cabeça está a prêmio!</p>
@@ -1033,7 +1033,7 @@ export class OrigemData {
       },
       {
         id: 86,
-        nome: 'PROJETA DO AKZATH',
+        nome: 'Profeta do Akzath',
         regiao: 'Lamnor',
         descricao: `
         <p>Você conhece a verdade sobre o tempo e o destino, na forma do Akzath. Quem sabe será você a encontrar o novo Ayrrak?</p>
@@ -1044,7 +1044,7 @@ export class OrigemData {
       },
       {
         id: 87,
-        nome: 'QUERIDO FILHO',
+        nome: 'Querido Filho',
         regiao: 'Aslothia',
         descricao: `
         <p>Você passou parte de sua juventude em Aslothia. Lá, por escolha ou imposição do destino, abraçou a dádiva das trevas.</p>
@@ -1055,7 +1055,7 @@ export class OrigemData {
       },
       {
         id: 88,
-        nome: 'REBELDE AGITADOR',
+        nome: 'Rebelde Agitador',
         regiao: 'Sckharshantallas',
         descricao: `
         <p>Sua terra natal, Sckharshantallas, está sob o jugo permanente de um monstro tirano. Você fez parte de grupos rebeldes, mas agora partiu para se aventurar. Espera se tornar forte para, um dia, depor o Dragão-Rei.</p>
@@ -1066,7 +1066,7 @@ export class OrigemData {
       },
       {
         id: 89,
-        nome: 'REBELDE AGITADOR',
+        nome: 'Receptador das Nuvens',
         regiao: 'Vectora',
         descricao: `
         <p>Você cresceu em Vectora, o fabuloso Mercado nas Nuvens. Andando entre os bazares e becos da cidade, conheceu diversos mercadores.</p>
@@ -1077,7 +1077,7 @@ export class OrigemData {
       },
       {
         id: 90,
-        nome: 'RECRUTA ARCANO',
+        nome: 'Recruta Arcano',
         regiao: 'Wynlla',
         descricao: `
         <p>Você serviu entre os Magos de Batalha de Wynlla. Agora, livre de suas obrigações cívicas, está pronto para seguir sua vida de aventuras.</p>
@@ -1088,7 +1088,7 @@ export class OrigemData {
       },
       {
         id: 91,
-        nome: 'RECRUTA DA FENIX',
+        nome: 'Recruta da Fenix',
         regiao: 'Triunphus',
         descricao: `
         <p>Você começou o treinamento para combater a Horda Moóck montado em um majestoso grifo. Por vontade própria ou imposição, você saiu da cidade antes de completar o treinamento… ou morrer!</p>
@@ -1099,7 +1099,7 @@ export class OrigemData {
       },
       {
         id: 92,
-        nome: 'SÁBIO MATEMÁTICO',
+        nome: 'Sábio Matemático',
         regiao: 'Halak-Tûr',
         descricao: `
         <p>Você estudou as complexas equações que os sar-allan usam para calcular a formação de portais no deserto. Talvez ainda não consiga prever esses eventos tão bem quanto seus mestres, mas sabe usar o poder da matemática para resolver diversos problemas.</p>
@@ -1110,7 +1110,7 @@ export class OrigemData {
       },
       {
         id: 93,
-        nome: 'SELVAGEM SANGUINÁRIO',
+        nome: 'Selvagem Sanguinário',
         regiao: 'Sanguinárias',
         descricao: `
         <p>Você nasceu ou foi criado nas Montanhas Sanguinárias, um dos lugares mais brutais de Arton, onde aprendeu a sobreviver com base na determinação e força bruta.</p>
@@ -1121,7 +1121,7 @@ export class OrigemData {
       },
       {
         id: 94,
-        nome: 'SUCATEIRO DE BATALHA',
+        nome: 'Sucateiro de Batalha',
         regiao: 'Conflagração do Aço',
         descricao: `
         <p>Muitos dizem que a Guerra Artoniana acabou. Não onde você foi criado. Em uma terra onde escaramuças são frequentes, você se especializou em pilhar armas e outros itens abandonados nos campos de batalha.</p>
@@ -1132,7 +1132,7 @@ export class OrigemData {
       },
       {
         id: 95,
-        nome: 'TAMALU',
+        nome: 'Tamalu',
         regiao: 'Khubar',
         descricao: `
         <p>Você nasceu entre os tamalus, a casta política de Khubar que ostenta tatuagens mágicas mostrando sua história. Embora sua saga esteja apenas começando, você já conquistou sua primeira tatuagem.</p>
@@ -1145,7 +1145,7 @@ export class OrigemData {
       },
       {
         id: 96,
-        nome: 'TOCADO PELA DAMA ALTIVA',
+        nome: 'Tocado pela Dama Altiva',
         regiao: 'Moreania',
         descricao: `
         <p>Nascido em Moreania, você foi agraciado pela própria Mãe Natureza. Você consegue entender as vozes da natureza e pode invocar o auxílio dos filhos de Allihanna.</p>
@@ -1156,7 +1156,7 @@ export class OrigemData {
       },
       {
         id: 97,
-        nome: 'TOCADO PELO INDOMÁVEL',
+        nome: 'Tocado pelo Indomável',
         regiao: 'Moreania',
         descricao: `
         <p>A face oposta da Dama Altiva, o Indomável é uma divindade de ferocidade e selvageria. Agraciado com o poder dos monstros, você tem dificuldade em se adequar às normas e restrições da sociedade.</p>
@@ -1167,7 +1167,7 @@ export class OrigemData {
       },
       {
         id: 98,
-        nome: 'TRADICIONALISTA SLAVANO',
+        nome: 'Tradicionalista Svalano',
         regiao: 'Svalas',
         descricao: `
         <p>Svalas é díspar, honrado e livre. Após todos os registros escritos do reino terem sido destruídos, a tradição svalana foi passada pela oralidade. Você é o fruto dessas histórias.</p>
@@ -1178,7 +1178,7 @@ export class OrigemData {
       },
       {
         id: 99,
-        nome: 'TRAPACEIRO AHLENIENSE',
+        nome: 'Trapaceiro Ahleniense',
         regiao: 'Ahlen',
         descricao: `
         <p>Há um ditado em Ahlen: todo dia saem de casa um malandro e um otário. Você definitivamente aprendeu como não ser o otário.</p>
@@ -1189,7 +1189,7 @@ export class OrigemData {
       },
       {
         id: 100,
-        nome: 'TURISTA DA ACADEMIA',
+        nome: 'Turista da Academia',
         regiao: 'Academia Arcana',
         descricao: `
         <p>Você assistiu a algumas aulas na Academia Arcana. Não se tornou um arcanista, mas aprendeu a lidar com magias e enjambrar alguns truques!</p>
@@ -1200,7 +1200,7 @@ export class OrigemData {
       },
       {
         id: 101,
-        nome: 'UM COM OS KAMI',
+        nome: 'Um com os Kami',
         regiao: 'Tamu-ra',
         descricao: `
         <p>Desde muito novo, você vê e ouve seres que não podem ser percebidos pela maioria das pessoas. São os kami, os espíritos divinos de Tamu-ra. Às vezes estão enfurecidos; outras vezes, querem pedir sua ajuda. Na maior parte das ocasiões, apenas acham graça de ser percebidos por você e por isso o tratam como amigo.</p>
