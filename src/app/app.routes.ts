@@ -6,11 +6,23 @@ import { CalculoDesafiosComponent } from './utilitarios/calculo-desafios/calculo
 import { CondicoesComponent } from './regras/condicoes/condicoes.component';
 import { PersonagemAleatorioComponent } from './utilitarios/personagem-aleatorio/personagem-aleatorio.component';
 import { AcoesComponent } from './regras/acoes/acoes.component';
+import { ClassesComponent } from './personagem/classes/classes.component';
+import { HabilidadesComponent } from './personagem/habilidades/habilidades.component';
+import { PoderesComponent } from './personagem/poderes/poderes.component';
+import { MagiasComponent } from './personagem/magias/magias.component';
+import { ItensComponent } from './personagem/itens/itens.component';
+import { DeusesComponent } from './personagem/deuses/deuses.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'personagem/racas', component: RacasComponent },
-    { path: 'personagem/origem', component: OrigensComponent },
+    { path: 'personagem/origens', component: OrigensComponent },
+    { path: 'personagem/classes', component: ClassesComponent },
+    { path: 'personagem/habilidades', component: HabilidadesComponent },
+    { path: 'personagem/poderes', component: PoderesComponent },
+    { path: 'personagem/magias', component: MagiasComponent },
+    { path: 'personagem/itens', component: ItensComponent },
+    { path: 'personagem/deuses', component: DeusesComponent },
     { path: 'utilitarios/calculo-desafios', component: CalculoDesafiosComponent},
     { path: 'regras/condicoes', component: CondicoesComponent},
     { path: 'regras/acoes', component: AcoesComponent},

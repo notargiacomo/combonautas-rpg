@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { RacaData } from '../data/raca.data';
-import { ConsultaRacaDto } from '../dto/consulta.raca.dto';
 import { Raca } from '../model/raca';
 import { AbstractService } from './abstract.service';
 
