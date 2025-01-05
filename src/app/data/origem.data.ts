@@ -471,6 +471,744 @@ export class OrigemData {
         referencias:Referencia.BASICO ,
         paginas:'88'
       },
+      {
+        id: 36,
+        nome: 'AGRICULTOR DE SAMBUR',
+        regiao: 'Sambúrdia',
+        descricao: `
+        <p>Você trabalhou nos campos férteis das Repúblicas Livres, onde aprendeu muito sobre os animais, a natureza e o trabalho duro..</p>
+        <p><b>Itens.</b>  Ferramenta agrícola (mesmas estatísticas de uma lança), T$ 100 (um presente de despedida da sua família).</p>
+        <p><b>Benefícios.</b>  Você é treinado em Adestramento e Sobrevivência e, uma vez por cena, pode gastar 1 PM para receber +1d6 em um teste de perícia.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'470'
+      },
+      {
+        id: 37,
+        nome: 'AMAZONA DE HIPPION',
+        regiao: 'Deheon, Namalkah',
+        descricao: `
+        <p>Você é uma das orgulhosas amazonas de Hippion, um dos povos nativos de Arton Norte.</p>
+        <p><b>Itens.</b> Arma simples ou marcial, cavalo de guerra.</p>
+        <p><b>Benefícios.</b> Você é treinada em Cavalgar e, se não estiver usando armadura pesada, soma seu Carisma nos PM, limitado pelo seu nível (apenas após um dia).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'470'
+      },
+      {
+        id: 38,
+        nome: 'AMÓQUE PÚRPURA',
+        regiao: 'Ermos Púrpuras',
+        descricao: `
+        <p>Raiva compele os golpes de guerreiros por todo o mundo, mas nos Ermos Púrpuras a prática é refinada ao limite. Você cresceu entre esses lutadores imprevisíveis.</p>
+        <p><b>Itens.</b> Arma simples, estandarte da sua tribo.</p>
+        <p><b>Benefícios.</b> Você é treinado em Intimidação e, quando está sob efeito de Fúria, Fúria Divina ou Poder Oculto, recebe +2 em rolagens de dano.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'470'
+      },
+      {
+        id: 39,
+        nome: 'ANÃO DE ARMAS',
+        regiao: 'Doherimm',
+        descricao: `
+        <p>Você foi treinado pela Guilda dos Armeiros, tendo aprendido a fabricar — e usar — armas anãs.</p>
+        <p><b>Itens.</b> Arma marcial tradicional anã, instrumentos de Ofício (armeiro).</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro) e recebe +2 em rolagens de dano com armas tradicionais anãs (machados, martelos, marretas e picaretas).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'470'
+      },
+      {
+        id: 40,
+        nome: 'ANDARILHO UBANERI',
+        regiao: 'Ubani',
+        descricao: `
+        <p>Sonhando um dia ser membro da Patrulha da Fronteira, você pratica técnicas de lança e escudo e já conquistou a amizade de um alikunhá. </p>
+        <p><b>Itens.</b> Escudo pesado, lança.</p>
+        <p><b>Benefícios.</b> Você recebe um alikunhá, um parceiro iniciante que não conta em seu limite de parceiros (veja o quadro na página 471), e proficiência com escudos. Caso já tenha essa proficiência, o bônus na Defesa que seu escudo fornece aumenta em +1.</p>
+        <h4>Alikunhá</h4>
+        <p>Os elementais que acompanham os ubaneri são conhecidos como alikunhá. Cada um desses espíritos é ligado a um elemento e conta como um parceiro iniciante de um tipo a sua escolha entre os associados ao seu elemento. Ar: assassino, perseguidor ou vigilante; água: ajudante, guardião ou médico; fogo:atirador, combatente ou fortão; terra:combatente, guardião ou montaria; luz:guardião, médico ou vigilante; trevas: assassino, magivocador ou perseguidor.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'470'
+      },
+      {
+        id: 41,
+        nome: 'APRENDIZ DE DRAGOEIRO',
+        regiao: 'Sckharshantallas',
+        descricao: `
+        <p>Você aprendeu técnicas para enfrentar dragões tolos a ponto de entrar em Sckharshantallas — o que certamente será útil contra outras feras.</p>
+        <p><b>Itens.</b> Arma simples ou marcial à sua escolha, troféu de caça, treckod</p>
+        <p><b>Benefícios.</b> Você recebe +2 na Defesa contra criaturas maiores que você e +2 em Reflexos. Além disso, se passar em um teste de Reflexos, seus ataques contra a fonte do efeito causam +1d8 pontos de dano até o final da cena.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'470'
+      },
+      {
+        id: 42,
+        nome: 'APRENDIZ DE DROGADORA',
+        regiao: 'Galrasia',
+        descricao: `
+        <p>Você era discípula de uma voracis drogadora e estudou as artes de cura em Galrasia.</p>
+        <p><b>Itens.</b> Bálsamo restaurador x2, poção de curar ferimentos x2, maleta de medicamentos.</p>
+        <p><b>Benefícios.</b> Você é treinada em Cura e Ofício (alquimista). Como usa partes de seu corpo para fabricar preparados alquímicos e poções, você gasta apenas 1/4 do preço dos itens em matérias-primas.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'470'
+      },
+      {
+        id: 43,
+        nome: 'ARISTOCRATA DE DAI’ZENSHI',
+        regiao: 'Tamu-ra',
+        descricao: `
+        <p>Você faz parte da nobreza tamuraniana, como descendente direto de um dos três Grandes Clãs ou como vassalo em alguma família samurai. Assim, é visto como um exemplo a ser seguido.</p>
+        <p><b>Itens.</b> Traje da corte, katana superior com uma melhoria (exceto material especial).</p>
+        <p><b>Benefícios.</b> Você é treinado em Nobreza. Além disso, ao completar um descanso, caso não tenha feito nenhum teste de Enganação, Furtividade ou Ladinagem desde seu último descanso, você recebe +1 PM temporário para cada dois níveis</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'471'
+      },
+      {
+        id: 44,
+        nome: 'ARMEIRO ARMADO',
+        regiao: 'Zakharov',
+        descricao: `
+        <p>Você aprendeu o ofício mais tradicional e respeitado de Zakharov. Suas armas não são apenas instrumentos de combate, mas obras de arte.</p>
+        <p><b>Itens.</b> Arma marcial, instrumentos de Ofício (armeiro).</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro) e pode fabricar armas com uma melhoria. Se aprender a fabricar armas superiores por outra habilidade, gasta apenas 1/4 do preço das melhorias que aplica em armas.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'471'
+      },
+      {
+        id: 45,
+        nome: 'ASPIRANTE A HERÓI',
+        regiao: 'Deheon',
+        descricao: `
+        <p>Você nasceu para ser herói, com potencial para se tornar protagonista das canções épicas dos bardos.</p>
+        <p><b>Itens.</b> Essência de mana, mochila de aventureiro.</p>
+        <p><b>Benefícios.</b> Você recebe +1 em um atributo à sua escolha.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'471'
+      },
+      {
+        id: 46,
+        nome: 'ASSISTENTE FORENSE',
+        regiao: 'Salistick',
+        descricao: `
+        <p>Você cresceu em Salistick, onde teve contato com o que a ciência tem de mais avançado para a detecção e solução de crimes. Suas capacidades de dedução e análise se tornaram profundamente aguçadas.</p>
+        <p><b>Itens.</b> Lupa (conta como uma ferramenta que fornece +1 em Investigação).</p>
+        <p><b>Benefícios.</b> Você é treinado em Investigação e pode usar esta perícia para necropsia, identificar itens alquímicos e rastrear (veja as perícias Cura, Ofício e Sobrevivência, em Tormenta20). Além disso, pode identificar criaturas em uma cena de crime ou equivalente mesmo que elas não estejam mais presentes. Isso funciona como um teste de identificar criatura, com uma penalidade de –1 para cada dia decorrido. Se passar, além do normal, você identifica a raça da criatura.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'471'
+      },
+      {
+        id: 47,
+        nome: 'BANDOLEIRO DA FORTALEZA',
+        regiao: 'Khalifor',
+        descricao: `
+        <p>Você cresceu se esgueirando pelos becos de Khalifor, vendo o pior que humanos e duyshidakk têm a oferecer.</p>
+        <p><b>Itens.</b> Adaga, gazua, manto camuflado (urbano).</p>
+        <p><b>Benefícios.</b> Você é treinado em Furtividade e Intimidação, e recebe resistência a medo +5.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'471'
+      },
+      {
+        id: 48,
+        nome: 'BARÃO ARRUINADO',
+        regiao: 'Trebuck',
+        descricao: `
+        <p>Você estava destinado a se tornar o senhor de um feudo, mas seu título se perdeu. Pelo menos isso o ensinou a lidar com os reveses da vida.</p>
+        <p><b>Itens.</b> Anel com símbolo da família (T$ 200), títulos de terras expirados (+2 em Diplomacia com nobres e burocratas), traje da corte.</p>
+        <p><b>Benefícios.</b> Você é treinado em Nobreza. Sempre que falha em um teste de perícia e a falha acarreta uma consequência negativa (gastar uma ação, perder PV, sofrer um efeito etc.), você recebe +2 em testes da mesma perícia até o final da cena.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'471'
+      },
+      {
+        id: 49,
+        nome: 'CATADOR DA CIDADE VELHA',
+        regiao: 'Nova Malpetrim',
+        descricao: `
+        <p>As ruínas inundadas da Velha Malpetrim guardam riquezas, segredos e incontáveis perigos. Você cresceu vasculhando essas profundezas em busca do almoço do dia seguinte.</p>
+        <p><b>Itens.</b> Luneta, luvas de pelica, tranqueiras resgatadas do mar (2 espaços, valor de venda T$ 100).</p>
+        <p><b>Benefícios.</b> Você é treinado em Fortitude e Percepção e pode gastar 1 PM para receber deslocamento de natação igual ao seu deslocamento básico (se já tiver deslocamento de natação, em vez disso ele aumenta em +3m) por uma cena. Esse deslocamento não permite respirar debaixo d’água automaticamente, mas dobra o limite de tempo em que você pode segurar sua respiração.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'471 e 472'
+      },
+      {
+        id: 50,
+        nome: 'CATIVO DAS FADAS',
+        regiao: 'Pondsmânia',
+        descricao: `
+        <p>Quando era um bebê, você foi levado para a Pondsmânia. Talvez tenha sido trocado por seus pais em um acordo com uma fada, talvez tenha sido roubado pelas Cyruthnallach. De qualquer forma, sua infância foi permeada de brincadeiras bizarras e jogos feéricos.</p>
+        <p><b>Itens.</b> Corda, ração de viagem x10, essência de mana.</p>
+        <p><b>Benefícios.</b> Você recebe resistência a espíritos e magia +2 e +1 PV por nível de personagem.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'472'
+      },
+      {
+        id: 51,
+        nome: 'COMPETIDOR DO CIRCUITO',
+        regiao: 'Trebuck',
+        descricao: `
+        <p>Você percorreu o grande Circuito de Torneios de Trebuck. Pode ter sido parte da equipe de um cavaleiro ou um aspirante a competidor, ansiando por um dia disputar os eventos principais. Sua hora ainda não chegou, mas enquanto isso você usa o que aprendeu em suas aventuras.</p>
+        <p><b>Itens.</b> Arma marcial, T$ 100 (suas economias para comprar equipamentos de torneio).</p>
+        <p><b>Benefícios.</b> Você recebe o poder Torcida. Enquanto está sob efeito desse poder, sempre que reduz um inimigo a 0 PV com um ataque corpo a corpo, você recupera 1 PM.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'472'
+      },
+      {
+        id: 52,
+        nome: 'COSMOPOLITA',
+        regiao: 'Valkaria',
+        descricao: `
+        <p>Tendo crescido na maior cidade de Arton, você já viu de tudo e está preparado para a maior parte.</p>
+        <p><b>Itens.</b> Equipamento de viagem, traje de viajante, um item artístico de origem cultural indefinida (½ espaço, T$ 100).</p>
+        <p><b>Benefícios.</b>  Escolha um poder geral ou de uma classe na qual você tenha pelo menos dois níveis, e cujos requisitos você cumpra (exceto poderes concedidos ou da Tormenta). Você recebe esse poder. Uma vez por aventura, após concluir um descanso (oito horas de sono), pode trocar esse poder por outro.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'472'
+      },
+      {
+        id: 53,
+        nome: 'CRIA DE FAVELA',
+        regiao: 'Valkaria',
+        descricao: `
+        <p>A Favela dos Goblins é um lugar empobrecido e injustiçado, esquecido pelos governantes de Valkaria. Essa comunidade o tornou resistente e incansável.</p>
+        <p><b>Itens.</b> Andrajos de aldeão, corda, vara de madeira.</p>
+        <p><b>Benefícios.</b> Você recebe +1 em Constituição e, por piores que sejam as condições de descanso, sua recuperação é sempre pelo menos normal.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'472'
+      },
+      {
+        id: 54,
+        nome: 'CRIADO PELAS VORACIS',
+        regiao: 'Galrasia',
+        descricao: `
+        <p>Ainda jovem, você foi encontrado por um grupo de voracis em Galrasia. Elas o adotaram e o criaram de acordo com suas tradições e valores.</p>
+        <p><b>Itens.</b> Arma simples, armadura leve, lança.</p>
+        <p><b>Benefícios.</b>  Você recebe +2 na Defesa e Sobrevivência e +3m em seu deslocamento.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'472'
+      },
+      {
+        id: 55,
+        nome: 'DE OUTRO MUNDO',
+        regiao: 'Éter Divino',
+        descricao: `
+        <p>Você veio de outro mundo através do Éter Divino. Como alternativa, pode ter chegado a Arton por uma tempestade de areia do Deserto da Perdição, via uma viagem planar de Vectora ou por qualquer outra forma mágica ou maluca.</p>
+        <p><b>Itens.</b> Trajes exóticos, um item qualquer de até T$ 100 do seu mundo natal.</p>
+        <p><b>Benefícios.</b> Você possui uma habilidade ou tecnologia especial de seu mundo de origem. Para representar esse efeito, escolha uma magia de 1º círculo e um atributo-chave para ela. Se for uma habilidade, você pode lançar essa magia. Se for uma tecnologia, você recebe um item Minúsculo (RD 10, PV iguais à metade dos seus) que ocupa 1 espaço e deve ser empunhado para lançar a magia, mas seu limite de PM para ela aumenta em +2. Por fim, escolha se o efeito será mágico ou mundano (nesse caso, não contará como uma magia, exceto para fins de acúmulo). O mestre tem a palavra final sobre qualquer efeito e combinação.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'472'
+      },
+      {
+        id: 56,
+        nome: 'DESCENDENTE COLLENIANO',
+        regiao: 'Ahlen',
+        descricao: `
+        <p>Você descende do povo de Collen, um antigo reino insular absorvido por Ahlen. Sua linhagem tem olhos de cores incomuns, com alguns poucos chegando a apresentar poderes mágicos ligados à visão. Você é um desses poucos.</p>
+        <p><b>Itens.</b> Arma simples, estojo de disfarces, ração de viagem x5.</p>
+        <p><b>Benefícios.</b> Você recebe +2 em Percepção e pode lançar a magia Visão Mística. Caso aprenda essa magia novamente, seu custo diminui em –1 PM. e</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'473'
+      },
+      {
+        id: 57,
+        nome: 'DESERTOR DA SUPREMACIA',
+        regiao: 'Supremacia',
+        descricao: `
+        <p>Você passou pelo treinamento padrão dos batalhões puristas e talvez tenha visto de perto as atrocidades desses vilões. Seja como for, decidiu que não podia ficar neutro frente à Supremacia.</p>
+        <p><b>Itens.</b> Brunea com símbolo purista raspado, escudo pesado, espada bastarda, ração de viagem x10.</p>
+        <p><b>Benefícios.</b> Você é treinado em Guerra e recebe proficiência com espadas bastardas e escudos. Se estiver empunhando uma espada bastarda e um escudo pesado, recebe +2 em testes de ataque.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'473'
+      },
+      {
+        id: 58,
+        nome: 'DUPLO FEÉRICO',
+        regiao: 'Pondsmânia',
+        descricao: `
+        <p>Em algum lugar de Arton, há alguém igual a você. Com a mesma aparência, as mesmas capacidades, os mesmos ideais. Talvez isso rendesse uma boa amizade, mas esse alguém veio primeiro. Você é apenas a cópia feita por uma fada.</p>
+        <p><b>Itens.</b> Essência de mana, marca no corpo ou característica física não possuída pela sua versão original.</p>
+        <p><b>Benefícios.</b> Escolha uma habilidade de classe de 1º nível de uma classe que não seja a sua. Você recebe essa habilidade e pode usá-la como se tivesse 1 nível naquela classe (se escolher a habilidade Magias, você aprende uma única magia e recebe +1 ponto de mana, mas não soma o atributo-chave da habilidade em seu total de PM).</p>
+        <h4>Encontrando-se Consigo Mesmo</h4>
+        <p>Quando um duplo encontra sua versão original, tem extrema dificuldade em lidar com o fato de ser uma cópia. Quando isso ocorre, deve passar em um teste de Vontade (CD seu próprio Car). Se falhar, o duplo entra em um frenesi homicida até o fim da cena, tendo como único propósito matar sua versão original.</p>
+        <p>Caso uma das duas criaturas morra nesse encontro, a versão sobrevivente herda todas as lembranças do morto, incluindo uma de suas perícias treinadas, mas perde permanentemente 1 ponto de Carisma — já que, para o bem ou para o mal, perdeu uma parte de si para sempre.</p>
+        `,
+        referencias:Referencia.ATLAS ,
+        paginas:'474'
+      },
+      {
+        id: 59,
+        nome: 'DUYSHIDAKK INFILTRADO',
+        regiao: 'Tyrondir',
+        descricao: `
+        <p>Você viveu entre o povo do Reinado por muito tempo, absorvendo seu modo de vida… mas secretamente devotado a construir O Mundo Como Deve Ser. </p>
+        <p><b>Itens.</b> Arma marcial, peças sobressalentes (T$ 100 para vender ou construir engenhocas).</p>
+        <p><b>Benefícios.</b> Você recebe +2 em Furtividade e Vontade e pode usar Sabedoria como atributo-chave de Enganação (em vez de Carisma).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'474'
+      },
+      {
+        id: 60,
+        nome: 'EMISSÁRIO UBANERI',
+        regiao: 'Ubani',
+        descricao: `
+        <p>Você foi preparado para percorrer as terras distantes e conhecer mais sobre o mundo além da Savana. Você nunca fica solitário, pois está acompanhado de um alikunhá, um pequeno pedaço de Ubani.</p>
+        <p><b>Itens.</b> Essência de mana, mochila de aventureiro.</p>
+        <p><b>Benefícios.</b> Você recebe um alikunhá, um parceiro iniciante que não conta em seu limite de parceiros (veja o quadro na página 471) e pode usar Sabedoria como atributo-chave de Misticismo (em vez de Inteligência).</p>
+        <h4>Alikunhá</h4>
+        <p>Os elementais que acompanham os ubaneri são conhecidos como alikunhá. Cada um desses espíritos é ligado a um elemento e conta como um parceiro iniciante de um tipo a sua escolha entre os associados ao seu elemento. Ar: assassino, perseguidor ou vigilante; água: ajudante, guardião ou médico; fogo:atirador, combatente ou fortão; terra:combatente, guardião ou montaria; luz:guardião, médico ou vigilante; trevas: assassino, magivocador ou perseguidor.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'474'
+      },
+      {
+        id: 61,
+        nome: 'ESCUDEIRO DA LUZ',
+        regiao: 'Bielefeld',
+        descricao: `
+        <p>Você não serviu a um cavaleiro errante qualquer, mas a um nobre e honrado cavaleiro da Luz. Ao lado dele, aprendeu todas as tarefas diárias desse ofício, além dos valores da nobreza e da justiça.</p>
+        <p><b>Itens.</b> Cota de malha ou escudo pesado, enfeite de elmo com o símbolo da Ordem da Luz.</p>
+        <p><b>Benefícios.</b> Você é treinado em Nobreza. Além disso, recebe +2 na Defesa e +3 PM.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'474'
+      },
+      {
+        id: 62,
+        nome: 'ESCUDEIRO SOLITÁRIO',
+        regiao: 'Bielefeld',
+        descricao: `
+        <p>Ninguém sabe, mas você foi escudeiro de um cavaleiro de Bielefeld… ou cupincha de um trambiqueiro. Seu mestre era membro dos Cavaleiros Solitários, disposto a todo tipo de subterfúgio, intriga e traição para ajudar os verdadeiros heróis. </p>
+        <p><b>Itens.</b> Cota de malha, escudo pesado, enfeite de elmo.</p>
+        <p><b>Benefícios.</b> Você é treinado em Enganação e Ladinagem e recebe +10 em testes de Enganação para se disfarçar como cavaleiro da Luz. Além disso, se tiver Código de Honra (ou outro semelhante), atacar pelas costas não faz com que você o viole.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'474'
+      },
+      {
+        id: 63,
+        nome: 'ESTANDARTE VIVO',
+        regiao: 'Ermos Púrpuras',
+        descricao: `
+        <p>Muitas tribos dos Ermos Púrpuras acabaram extintas — por guerra, por doença ou pela corrupção da Tormenta. Sua tribo se foi, mas você permanece, uma prova viva de que um dia seu povo existiu.</p>
+        <p><b>Itens.</b> Arma simples ou marcial, gibão de peles, fragmento do estandarte do seu povo (se vestido, fornece +1 em testes de Vontade).</p>
+        <p><b>Benefícios.</b> Você recebe +2 em Sobrevivência e um poder de combate ou da Tormenta à sua escolha.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'474'
+      },
+      {
+        id: 64,
+        nome: 'ESTUDANTE DA ACADEMIA',
+        regiao: 'Academia Arcana',
+        descricao: `
+        <p>Você frequentou a Academia Arcana. Pode ou não ter se tornado um arcanista, mas com certeza aprendeu algo sobre lançar magias.</p>
+        <p><b>Itens.</b>  Coleção de livros (uma qualquer), essência de mana x2.</p>
+        <p><b>Benefícios.</b> Você aprende e pode lançar uma magia arcana de 1o círculo a sua escolha (atributo-chave Inteligência). Além disso, pode fazer testes de Misticismo mesmo sem ser treinado nessa perícia. Se for treinado, recebe +2 em testes dela.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'474 e 475'
+      },
+      {
+        id: 65,
+        nome: 'ESTUDANTE DO COLÉGIO REAL',
+        regiao: 'Salistick',
+        descricao: `
+        <p>Você teve a oportunidade de estudar no ilustríssimo Colégio Real de Médicos de Salistick. Seu ceticismo e rigor científico o afastam dos deuses e o aproximam da compreensão da vida.</p>
+        <p><b>Itens.</b>  Bálsamo restaurador x3, maleta de medicamentos.</p>
+        <p><b>Benefícios.</b> Você é treinado em Cura. Além disso, seus efeitos de cura recuperam +2 PV por dado. Você perde esse benefício caso se torne um devoto de qualquer tipo.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 66,
+        nome: 'EXPLORADOR DE RUÍNAS',
+        regiao: 'Tyrondir',
+        descricao: `
+        <p>A destruição de Tyrondir atraiu exploradores em busca de riquezas que possam ter sobrevivido à queda da Flecha de Fogo. Após um tempo nessa atividade, você aprendeu alguns truques úteis.</p>
+        <p><b>Itens.</b>  Mochila de aventureiro, tocha, vara de madeira (3m).</p>
+        <p><b>Benefícios.</b> Você recebe +2 em Ladinagem, Percepção e Reflexos e +3m em seu deslocamento.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 67,
+        nome: 'FILHOTE DE REVOADA',
+        regiao: 'Lamnor',
+        descricao: `
+        <p>Você passou grande parte de sua juventude entre a Revoada Carnívora e seus perigosos e fantásticos engenhos voadores. Você ainda não tem seu próprio veículo, mas aprendeu duras lições entre voos e quedas.</p>
+        <p><b>Itens.</b>  Instrumentos de Ofício (artesão), T$ 100 (que você está juntando para fabricar seu primeiro veículo aéreo).</p>
+        <p><b>Benefícios.</b> Você é treinado em Acrobacia e Pilotagem. Quando faz um teste de uma dessas perícias, pode gastar 1 PM para rolar um dado adicional e usar o melhor resultado.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 68,
+        nome: 'FUTURA LENDA',
+        regiao: 'Nova Malpetrim',
+        descricao: `
+        <p>Você nasceu ouvindo histórias sobre heróis, talvez tenha sido batizado com o nome de um deles e por fim decidiu fazer a única coisa que tinha sentido: superá-los! </p>
+        <p><b>Itens.</b> Arma simples ou marcial com nome pomposo (e nenhuma melhoria), essência de mana x2</p>
+        <p><b>Benefícios.</b> Escolha um dos poderes de sua classe, normalmente disponíveis a partir do 2º nível. Você recebe esse poder.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 69,
+        nome: 'GINETE TUMARKHÂN',
+        regiao: 'Khubar',
+        descricao: `
+        <p>O povo de Khubar usa o lagarto tumarkhân como montaria. Você estabeleceu um elo com um desses animais, que o acompanha em suas jornadas.</p>
+        <p><b>Itens.</b> Bálsamo restaurador, sela.</p>
+        <p><b>Benefícios.</b> Você é treinado em Cavalgar e possui um parceiro tumarkhân iniciante, com quem recebe +2 em testes de Adestramento e Cavalgar. Se receber outra montaria especial (como pelos poderes Montaria ou Montaria Sagrada), você pode usar seu tumarkhân como essa montaria, acumulando o bônus em perícias com os benefícios da montaria especial</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 70,
+        nome: 'GRUMETE PIRATA',
+        regiao: 'Três Mares',
+        descricao: `
+        <p>Por paixão, sede de liberdade ou pura necessidade, você serviu em uma embarcação pirata.</p>
+        <p><b>Itens.</b> Adaga, corda, tatuagem de sua antiga tripulação (+1 em Intimidação).</p>
+        <p><b>Benefícios.</b> Você é treinado em Acrobacia, Atletismo e Reflexos e, se estiver se equilibrando, escalando ou nadando, só cai ou afunda se falhar no teste de perícia por 10 ou mais (em vez de 5 ou mais).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 71,
+        nome: 'GUARDIÃO GLACIAL',
+        regiao: 'Uivantes',
+        descricao: `
+        <p>As Uivantes são inclementes, mas também precisam de seus protetores. Você treinou com eles e aprendeu como afugentar intrometidos.</p>
+        <p><b>Itens.</b> Casaco longo, cavalo glacial.</p>
+        <p><b>Benefícios.</b> Você recebe redução de frio 5 e proficiência em arco longo e machado de batalha. Caso já possua proficiência com essas armas, você recebe +2 em rolagens de dano com elas.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 72,
+        nome: 'INICIADO DOS CAÇAS-MONSTROS',
+        regiao: 'Sanguinárias',
+        descricao: `
+        <p>Você foi iniciado na Guilda dos Caça-Monstros. Mesmo que ainda não seja capaz de vencer todas as criaturas, consegue ao menos identificá-las!</p>
+        <p><b>Itens.</b> Arma simples ou marcial, gibão de peles.</p>
+        <p><b>Benefícios.</b> Você pode fazer testes para identificar criaturas com uma ação de movimento e, quando acerta um ataque em uma criatura não humanoide, pode gastar 1 PM para causar +1d8 pontos de dano.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475'
+      },
+      {
+        id: 73,
+        nome: 'INSURGENTE TAPISTANO',
+        regiao: 'Império de Tauron',
+        descricao: `
+        <p>O Império de Tauron está ruindo. O Deus da Força está morto. Para você, isso ainda não é suficiente. O povo só estará satisfeito quando todos os antigos generais e escravagistas forem punidos.</p>
+        <p><b>Itens.</b> Amuleto com um símbolo da resistência reconhecível por outros rebeldes, arma simples.</p>
+        <p><b>Benefícios.</b> Você recebe +1 em Fortitude, Reflexos e Vontade. Além disso, recebe +3 pontos de vida no 1º nível e +1 PV por nível seguinte.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'475 e 476'
+      },
+      {
+        id: 74,
+        nome: 'IRMÃO SEM ESPORAS',
+        regiao: 'Namalkah',
+        descricao: `
+        <p>Você possui um cavalo que o acompanha desde a infância; vocês cresceram juntos, tornando-se ver- dadeiros irmãos.</p>
+        <p><b>Itens.</b> Bálsamo restaurador, sela.</p>
+        <p><b>Benefícios.</b> Você possui um irmão cavalo, um cavalo de guerra parceiro iniciante que fornece +1 em testes de ataque e Reflexos. Se receber outra montaria especial (como aquela concedida pelos poderes Montaria ou Montaria Sagrada), você pode usar seu irmão cavalo como essa montaria, acumulando o bônus em perícias com os benefícios da montaria especial.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476'
+      },
+      {
+        id: 75,
+        nome: 'LEGIONÁRIO',
+        regiao: 'Império de Tauron',
+        descricao: `
+        <p>Você serviu nas legiões do Império de Tauron, onde aprendeu a usar o equipamento de um legionário. Agora que seu serviço terminou, você espera usar as técnicas aprendidas para dar um novo rumo a Tapista.</p>
+        <p><b>Itens.</b> Brunea com símbolo de sua legião, escudo pesado, gládio, ração de viagem x10.</p>
+        <p><b>Benefícios.</b> Você é treinado em Guerra e recebe proficiência com gládios (veja Ameaças de Arton) e escudos. Se estiver empunhando um gládio e um escudo pesado, recebe +1 na margem de ameaça e +1 na Defesa.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476'
+      },
+      {
+        id: 76,
+        nome: 'LENHADOR DE TOLLON',
+        regiao: 'Tollon',
+        descricao: `
+        <p>Você foi criado entre as imponentes árvores da Floresta de Tollon, que lhe serviram tanto como casa quanto como fonte de sustento.</p>
+        <p><b>Itens.</b> Item superior de madeira Tollon.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (artesão) e recebe +5 em testes de perícias (exceto testes de ataque) relacionados a madeira. Além disso, você recebe proficiência com machadinhas e machados de batalha; caso já possua proficiência com essas armas, recebe +2 em rolagens de dano com elas.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476'
+      },
+      {
+        id: 77,
+        nome: 'LIRICISTA DE LENÓRIENN',
+        regiao: 'Lamnor',
+        descricao: `
+        <p>Você Mesmo não tendo vivido o auge do Reino dos Elfos, você ouviu histórias suficientes para admirá-lo. Inspirado pelas tradições élficas, você aprendeu a transformar sua magia em arte.</p>
+        <p><b>Itens.</b> Alaúde élfico, réplica de uma peça artística élfica (1 espaço, T$ 50).</p>
+        <p><b>Benefícios.</b> Você é treinado em Atuação e recebe +2 nessa perícia. Além disso, pode usar Carisma como atributo-chave de Misticismo (no lugar de Inteligência).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476'
+      },
+      {
+        id: 78,
+        nome: 'MEMBRO DO PRINCIPADO',
+        regiao: 'Sambúrdia',
+        descricao: `
+        <p>Você faz parte do Principado Mercante, uma das organizações mais poderosas das Repúblicas Livres. Ainda está longe do topo, mas até mesmo os Príncipes Mercantes começaram em algum lugar.</p>
+        <p><b>Itens.</b> Carroça, mercadorias sortidas (8 espaços, T$ 400).</p>
+        <p><b>Benefícios.</b> Você é treinado em Diplomacia e Intuição. Quando chega em uma cidade pela primeira vez em cada aventura, pode fazer um teste de Diplomacia (CD 20). Se passar, recebe 10% de desconto em todos os itens que comprar neste lugar (cumulativo com barganha).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476'
+      },
+      {
+        id: 79,
+        nome: 'NITAMURANIANO',
+        regiao: 'Valkaria',
+        descricao: `
+        <p>Você foi criado na maior comunidade tamuraniana fora do próprio Império de Jade. Seus valores culturais misturam as complexas e distintas tradições deheoni e tamuranianas.</p>
+        <p><b>Itens.</b> Arco longo ou katana, camisa bufante ou traje de seda.</p>
+        <p><b>Benefícios.</b> Você recebe proficiência em katana e arco longo. Caso receba proficiência nessas armas novamente, recebe +2 em rolagens de dano com elas. Além disso, quando falha em um teste de perícia originalmente baseada em Sabedoria, você pode gastar 2 PM para refazer esse teste (apenas uma vez por teste).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476'
+      },
+      {
+        id: 80,
+        nome: 'NOBRE ZAKHAROVIANO',
+        regiao: 'Zakharov',
+        descricao: `
+        <p>Você descende de uma das tradicionais famílias de nobres armeiros zakharovianos. Além do sobrenome, ostenta com orgulho uma de suas obras-primas.</p>
+        <p><b>Itens.</b> Traje da corte.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro) e recebe uma arma superior com uma melhoria (exceto material especial). Se estiver de posse dessa arma, recebe +2 PM por patamar (apenas após um dia).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476'
+      },
+      {
+        id: 81,
+        nome: 'NÔMADE DE SAR-ALLAN',
+        regiao: 'Halak-Tûr',
+        descricao: `
+        <p>Você cresceu entre os sar-allan, aprendendo a resistir aos rigores — e aos predadores — do deserto.</p>
+        <p><b>Itens.</b> Arma simples ou marcial, corcel do deserto ou dromedário (veja Ameaças de Arton), manto camuflado (deserto).</p>
+        <p><b>Benefícios.</b> Você recebe +2 em Fortitude e Sobrevivência e nas rolagens de dano com alfanges, arcos curtos e cimitarras.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'476 e 477'
+      },
+      {
+        id: 82,
+        nome: 'PESCADOR PARRUDO',
+        regiao: 'Khubar',
+        descricao: `
+        <p>Desde criança, você pesca nas águas profundas de Khubar. Tal atividade deixou seu corpo forte e resistente.</p>
+        <p><b>Itens.</b> Vara de pesca (pode usar Sobrevivência para sustento), peixes raros salgados para revenda (1 espaço, T$ 50).</p>
+        <p><b>Benefícios.</b> Você recebe +2 em Atletismo, Fortitude e Sobrevivência e +3 PV. Além disso, quando faz um teste de Atletismo para nadar você avança seu deslocamento (em vez de apenas a metade).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'477'
+      },
+      {
+        id: 83,
+        nome: 'PLEBEU ARCANO',
+        regiao: 'Wynlla',
+        descricao: `
+        <p>Crescer em Wynlla é estar próximo da magia. Esse contato o deixou mais acostumado aos aspectos místicos de Arton.</p>
+        <p><b>Itens.</b> Bandoleira de poções, gorro de ervas, poção arcana de 1  círculo.</p>
+        <p><b>Benefícios.</b> Você recebe +2 PM. Além disso, uma vez por rodada, quando falha em um teste de resistência contra um efeito mágico, você pode gastar 1 PM para rolar novamente esse teste.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'477'
+      },
+      {
+        id: 84,
+        nome: 'PRISIONEIRO DAS CATACUMBAS',
+        regiao: 'Leverick',
+        descricao: `
+        <p>Você vivia uma vida comum e sem grandes emoções, até ter o azar de abrir a porta errada. Talvez também tenha sido por mero acaso que você escapou das Catacumbas de Leverick.</p>
+        <p><b>Itens.</b> Arma marcial encontrada no corpo de alguém que não sobreviveu às Catacumbas.</p>
+        <p><b>Benefícios.</b> Você é treinado em Percepção e Reflexos e recebe resistência a armadilhas e efeitos de movimento +5.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'477'
+      },
+      {
+        id: 85,
+        nome: 'PROCURADO: VIVO OU MORTO',
+        regiao: 'Smokestone',
+        descricao: `
+        <p>Você é um pistoleiro infame nas cercanias de Smokestone, odiado e caçado por outros durões. Provavelmente foi tudo um engano e você ainda não faz jus a esse renome, mas sua cabeça está a prêmio!</p>
+        <p><b>Itens.</b> Pistola, balas cruéis (20).</p>
+        <p><b>Benefícios.</b> Você recebe proficiência com armas de fogo. Além disso, recebe +5 em testes de Intimidação e –5 em testes de Diplomacia contra qualquer um que, a critério do mestre, o reconheça e saiba de sua fama.</p>
+        <h4>Por um Punhado de Tibares</h4>
+        <p>Personagens com a origem Procurado: Vivo ou Morto são caçados por pistoleiros e todo tipo de mercenários. Uma vez por aventura, a critério do mestre, você e seu grupo são atacados por caçadores de recompensa (um encontro de ND igual ou inferior ao do grupo). Cruéis e dispostos a qualquer coisa por uma recompensa, esses caçadores tendem a atacar nos momentos mais inconvenientes…</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'477'
+      },
+      {
+        id: 86,
+        nome: 'PROJETA DO AKZATH',
+        regiao: 'Lamnor',
+        descricao: `
+        <p>Você conhece a verdade sobre o tempo e o destino, na forma do Akzath. Quem sabe será você a encontrar o novo Ayrrak?</p>
+        <p><b>Itens.</b> Arma simples ou marcial, bordão, pergaminho com diagrama do Akzath.</p>
+        <p><b>Benefícios.</b> Você é treinado em Religião e pode lançar magias mesmo sob o efeito de Fúria Divina.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'477'
+      },
+      {
+        id: 87,
+        nome: 'QUERIDO FILHO',
+        regiao: 'Aslothia',
+        descricao: `
+        <p>Você passou parte de sua juventude em Aslothia. Lá, por escolha ou imposição do destino, abraçou a dádiva das trevas.</p>
+        <p><b>Itens.</b> Essência de sombra, manto camuflado (urbano).</p>
+        <p><b>Benefícios.</b> Você redução de frio e trevas 5 e visão no escuro. Se já possuir visão no escuro, em vez disso recebe +2 em Percepção.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'477'
+      },
+      {
+        id: 88,
+        nome: 'REBELDE AGITADOR',
+        regiao: 'Sckharshantallas',
+        descricao: `
+        <p>Sua terra natal, Sckharshantallas, está sob o jugo permanente de um monstro tirano. Você fez parte de grupos rebeldes, mas agora partiu para se aventurar. Espera se tornar forte para, um dia, depor o Dragão-Rei.</p>
+        <p><b>Itens.</b>  Arma simples ou marcial, panfleto revolucionário, T$ 6d12 (impostos que você deixou de pagar).</p>
+        <p><b>Benefícios.</b> Você é treinado em Iniciativa e, uma vez por aventura, pode gastar um dia para convencer pessoas comuns a ajudá-lo. Faça um teste de Diplomacia (CD 10). Se passar, você convence uma pessoa, mais uma para cada 10 pontos acima da CD (duas pessoas com resultado 20, três com resultado 30 e assim por diante). Cada pessoa pode ser usada como um parceiro iniciante de um tipo à sua escolha por uma cena. As pessoas não contam em seu limite de parceiros e ficam com você até serem usadas ou até o fim da aventura.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'477'
+      },
+      {
+        id: 89,
+        nome: 'REBELDE AGITADOR',
+        regiao: 'Vectora',
+        descricao: `
+        <p>Você cresceu em Vectora, o fabuloso Mercado nas Nuvens. Andando entre os bazares e becos da cidade, conheceu diversos mercadores.</p>
+        <p><b>Itens.</b>  Mercadorias raras e variadas (2 espaços, T$ 300).</p>
+        <p><b>Benefícios.</b> Você possui contatos em Vectora que lhe dão acesso a mercadorias. Se estiver em uma cidade ou outro lugar em que, a critério do mestre, possa acessar seus contatos, você pode gastar 1 dia para obter um aparato mágico: um item de 1 espaço que você (e apenas você) pode empunhar para lançar uma magia de 1º círculo (atributo-chave Inteligência), escolhida ao obter o aparato. Você pode ter até 2 aparatos ao mesmo tempo. Os aparatos não têm valor comercial.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'478'
+      },
+      {
+        id: 90,
+        nome: 'RECRUTA ARCANO',
+        regiao: 'Wynlla',
+        descricao: `
+        <p>Você serviu entre os Magos de Batalha de Wynlla. Agora, livre de suas obrigações cívicas, está pronto para seguir sua vida de aventuras.</p>
+        <p><b>Itens.</b> Essência de mana x2, varinha arcana.</p>
+        <p><b>Benefícios.</b> A CD para resistir a suas magias arcanas aumenta em +1 e elas causam +1 ponto de dano.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'478'
+      },
+      {
+        id: 91,
+        nome: 'RECRUTA DA FENIX',
+        regiao: 'Triunphus',
+        descricao: `
+        <p>Você começou o treinamento para combater a Horda Moóck montado em um majestoso grifo. Por vontade própria ou imposição, você saiu da cidade antes de completar o treinamento… ou morrer!</p>
+        <p><b>Itens.</b> Arma marcial, brunea, grifo iniciante.</p>
+        <p><b>Benefícios.</b> Você recebe +1 PV por nível e redução de fogo 5, e é treinado em Cavalgar.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'478'
+      },
+      {
+        id: 92,
+        nome: 'SÁBIO MATEMÁTICO',
+        regiao: 'Halak-Tûr',
+        descricao: `
+        <p>Você estudou as complexas equações que os sar-allan usam para calcular a formação de portais no deserto. Talvez ainda não consiga prever esses eventos tão bem quanto seus mestres, mas sabe usar o poder da matemática para resolver diversos problemas.</p>
+        <p><b>Itens.</b> Coleção de livros, luneta.</p>
+        <p><b>Benefícios.</b> Você é treinado em Conhecimento. Além disso, aprende e pode lançar Concentração de Com bate e Orientação. Estes efeitos não contam como magias (exceto para fins de acúmulo) e não são mágicos — eles provêm de sua habilidade de calcular resultados a partir de uma mistura de geometria, análise de probabilidades e outros campos da matemática.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'478'
+      },
+      {
+        id: 93,
+        nome: 'SELVAGEM SANGUINÁRIO',
+        regiao: 'Sanguinárias',
+        descricao: `
+        <p>Você nasceu ou foi criado nas Montanhas Sanguinárias, um dos lugares mais brutais de Arton, onde aprendeu a sobreviver com base na determinação e força bruta.</p>
+        <p><b>Itens.</b> Arma marcial, gibão de peles.</p>
+        <p><b>Benefícios.</b> Você é treinado em Sobrevivência e, se não estiver usando armadura pesada, recebe +1 em rolagens de dano com armas e redução de dano 1.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'478'
+      },
+      {
+        id: 94,
+        nome: 'SUCATEIRO DE BATALHA',
+        regiao: 'Conflagração do Aço',
+        descricao: `
+        <p>Muitos dizem que a Guerra Artoniana acabou. Não onde você foi criado. Em uma terra onde escaramuças são frequentes, você se especializou em pilhar armas e outros itens abandonados nos campos de batalha.</p>
+        <p><b>Itens.</b> Arma simples ou marcial, bálsamo restaurador, escudo leve ou pesado, essência de mana, ração de viagem x5, T$ 4d6.</p>
+        <p><b>Benefícios.</b> Você é treinado em Guerra e Investigação. Além disso, quando rola na Tabela 8-1: Tesouro por Nível de Desafio (Tormenta20, p. 328), para cada tipo de tesouro (dinheiro ou item) você pode rolar novamente o resultado.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'478'
+      },
+      {
+        id: 95,
+        nome: 'TAMALU',
+        regiao: 'Khubar',
+        descricao: `
+        <p>Você nasceu entre os tamalus, a casta política de Khubar que ostenta tatuagens mágicas mostrando sua história. Embora sua saga esteja apenas começando, você já conquistou sua primeira tatuagem.</p>
+        <p><b>Itens.</b> Traje da corte.</p>
+        <p><b>Benefícios.</b> Você é treinado em Diplomacia e Nobreza e recebe uma tatuagem mística à sua escolha.</p>
+        <h4>Tatuagem Mística</h4>
+        <p>Os tatuadores tamalus de Khubar podem criar tatuagens especiais com Ofício (tatuador). Essas tatuagens podem terum entre três benefícios: +1 na Defesa, resistência a magia +2 ou a habilidade de lançar uma magia de 1  círculo (atributo-chave Sabedoria). Tatuagens precisam estar visíveis para funcionarem e, quando expostas, ocupam o espaço de um item vestido. Cada tatuagem custa T$ 1.000 x sua quantidade de tatuagens místicas (a primeira custa T$ 1.000, a segunda custa T$ 2.000 e assim progressivamente).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'478'
+      },
+      {
+        id: 96,
+        nome: 'TOCADO PELA DAMA ALTIVA',
+        regiao: 'Moreania',
+        descricao: `
+        <p>Nascido em Moreania, você foi agraciado pela própria Mãe Natureza. Você consegue entender as vozes da natureza e pode invocar o auxílio dos filhos de Allihanna.</p>
+        <p><b>Itens.</b> Bordão, ração de viagem x5.</p>
+        <p><b>Benefícios.</b> Você é treinado em Adestramento e pode gastar 1 minuto e 1 PM para convocar um animal Minúsculo a sua escolha, como um falcão ou gato, em seu auxílio. A criatura convocada fornece +2 nos seus testes de uma perícia específica, adequada às suas capacidades, e permanece auxiliando-o até o fim da cena, quando então retorna para os ermos. Você pode ter um número de criaturas convocadas simultâneas igual à sua Sabedoria (mínimo de 1). O mestre tem a palavra final sobre quais criaturas estão disponíveis e em quais perícias elas podem prestar auxílio.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'479'
+      },
+      {
+        id: 97,
+        nome: 'TOCADO PELO INDOMÁVEL',
+        regiao: 'Moreania',
+        descricao: `
+        <p>A face oposta da Dama Altiva, o Indomável é uma divindade de ferocidade e selvageria. Agraciado com o poder dos monstros, você tem dificuldade em se adequar às normas e restrições da sociedade.</p>
+        <p><b>Itens.</b> Trapos surrados, carcaça de couro de algum animal caçado por você (conta como um gibão de peles).</p>
+        <p><b>Benefícios.</b>  Você é treinado em Atletismo e recebe +2 em rolagens de dano com armas naturais e ataques desarmados.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'479'
+      },
+      {
+        id: 98,
+        nome: 'TRADICIONALISTA SLAVANO',
+        regiao: 'Svalas',
+        descricao: `
+        <p>Svalas é díspar, honrado e livre. Após todos os registros escritos do reino terem sido destruídos, a tradição svalana foi passada pela oralidade. Você é o fruto dessas histórias.</p>
+        <p><b>Itens.</b> Arma simples ou marcial, corda, mochila de aventureiro, vara de madeira (3 m).</p>
+        <p><b>Benefícios.</b> Você pode usar Sabedoria como atributo-chave de Conhecimento e Nobreza e pode fazer testes dessas perícias mesmo sem treinamento. Além disso, recebe +1 em Fortitude e Vontade.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'479'
+      },
+      {
+        id: 99,
+        nome: 'TRAPACEIRO AHLENIENSE',
+        regiao: 'Ahlen',
+        descricao: `
+        <p>Há um ditado em Ahlen: todo dia saem de casa um malandro e um otário. Você definitivamente aprendeu como não ser o otário.</p>
+        <p><b>Itens.</b> Essência de sombra, gazua, estojo de disfarces.</p>
+        <p><b>Benefícios.</b> Você recebe +2 em Enganação e Furtividade e pode usar Carisma como atributo-chave de Ladinagem (em vez de Destreza).</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'479'
+      },
+      {
+        id: 100,
+        nome: 'TURISTA DA ACADEMIA',
+        regiao: 'Academia Arcana',
+        descricao: `
+        <p>Você assistiu a algumas aulas na Academia Arcana. Não se tornou um arcanista, mas aprendeu a lidar com magias e enjambrar alguns truques!</p>
+        <p><b>Itens.</b> Três pergaminhos de magias arcanas de 1º círculo à sua escolha.</p>
+        <p><b>Benefícios.</b> Você recebe resistência a magia +2 e pode ativar pergaminhos de todas as magias arcanas de 1º círculo como se as conhecesse.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'479'
+      },
+      {
+        id: 101,
+        nome: 'UM COM OS KAMI',
+        regiao: 'Tamu-ra',
+        descricao: `
+        <p>Desde muito novo, você vê e ouve seres que não podem ser percebidos pela maioria das pessoas. São os kami, os espíritos divinos de Tamu-ra. Às vezes estão enfurecidos; outras vezes, querem pedir sua ajuda. Na maior parte das ocasiões, apenas acham graça de ser percebidos por você e por isso o tratam como amigo.</p>
+        <p><b>Itens.</b> Bálsamo restaurador, essência de mana.</p>
+        <p><b>Benefícios.</b> Você pode usar Sabedoria como atributo-chave de Misticismo (em vez de Inteligência). Além disso, é acompanhado por um kami incorpóreo e invisível. Ele é um parceiro especial, que permite que você veja criaturas incorpóreas invisíveis e afete criaturas com seus ataques e habilidades como se fossem mágicos, e não conta em seu limite de parceiros. Além disso, uma vez por rodada você pode gastar 1 PM para executar o equivalente a uma ação de movimento que só pode ser usada para manipular um objeto solto em alcance curto. O kami não pode se afastar além de alcance curto de você. Se for destruído por qualquer efeito, o kami desaparece, retornando no início da próxima cena.</p>`,
+        referencias:Referencia.ATLAS ,
+        paginas:'479'
+      },
     ];
   }
 }
