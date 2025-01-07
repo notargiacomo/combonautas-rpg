@@ -18,6 +18,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { CalculoDesafiosDto } from '../../dto/calculo-desafios.dto';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon'; 
+import { ameacas } from '../../data/ameacas.data';
+import { Ameaca } from '../../model/ameaca';
 
 @Component({
   selector: 'app-calculo-desafios',
@@ -33,23 +35,7 @@ export class CalculoDesafiosComponent implements OnInit {
 
   situacoes: string[] = ['FAVORÁVEL', 'NEUTRA', 'DESFAVORÁVEL'];
 
-  monstros:any = [
-    {id:  1, nd: 1, nome:'monstro 01'},
-    {id:  2, nd: 2, nome:'monstro 02'},
-    {id:  3, nd: 3, nome:'monstro 03'},
-    {id:  4, nd: 4, nome:'monstro 04'},
-    {id:  5, nd: 5, nome:'monstro 05'},
-    {id:  6, nd: 6, nome:'monstro 06'},
-    {id:  7, nd: 7, nome:'monstro 07'},
-    {id:  8, nd: 8, nome:'monstro 08'},
-    {id:  9, nd: 9, nome:'monstro 09'},
-    {id: 10, nd:10, nome:'monstro 10'},
-    {id: 11, nd:11, nome:'monstro 11'},
-    {id: 12, nd:12, nome:'monstro 12'},
-    {id: 13, nd:13, nome:'monstro 13'},
-    {id: 14, nd:14, nome:'monstro 14'},
-    {id: 15, nd:15, nome:'monstro 15'},
-  ]
+  monstros:Ameaca[] = ameacas
 
   monstrosSelecionadosAleatoriamente: any[] = []
 
@@ -84,15 +70,15 @@ export class CalculoDesafiosComponent implements OnInit {
   listaResultado(nd: number){
     this.monstrosSelecionadosAleatoriamente = []
 
-    let shuffled = this.monstros
-    .map((value:any) => ({ value, sort: Math.random() }))
+    let shuffled: Ameaca[] = this.monstros
+    .map((value:Ameaca) => ({ value, sort: Math.random() }))
     .sort((a:any, b:any) => a.sort - b.sort)
     .map((value:any) => value.value)
 
     this.encontrarMonstros (nd,shuffled);
   }
 
-  encontrarMonstros(nd: number, lista: any[], soma:number=0, posicao:number = 0){
+  encontrarMonstros(nd: number, lista: Ameaca[], soma:number=0, posicao:number = 0){
 
     for (let index = posicao; index < lista.length; index++) {
       const element = lista[index];
