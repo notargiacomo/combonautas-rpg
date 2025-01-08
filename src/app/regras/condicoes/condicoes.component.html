@@ -4,11 +4,8 @@
       <h2><b>LISTA DE CONDIÇÕES</b></h2>
     </div>
     <div class="row">
-      <mat-divider></mat-divider>
+      <hr>
     </div>
-    <mat-divider>
-
-    </mat-divider>
     <form [formGroup]="form">
       <div class="row" >
         <div class="col-sm-6 mt-4">
@@ -23,11 +20,6 @@
         </div>
       </div>
     </form>
-
-    <div class="row">
-      <mat-divider></mat-divider>
-    </div>
-
     <mat-grid-list cols="3" gutterSize="15">
       <mat-grid-tile *ngFor="let condicao of condicoes">
         <mat-card class="card-padrao">

@@ -1,3 +1,3 @@
 <h4>HABILIDADES DE RAÇA</h4>
 <p>Para representar a variedade dos duendes, esta será uma raça “modular”, com uma lista de diversas habilidades únicas. O jogador poderá escolher algumas habilidades e, com isso, construir seu próprio duende, único e diferente dos demais.</p>
-<p>A lista de habilidades está em cons- trução, e será revelada na próxima prévia.</p>
+<p>A lista de habilidades está em construção, e será revelada na próxima prévia.</p>

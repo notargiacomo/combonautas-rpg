@@ -1,0 +1,70 @@
+<h4>Linhagens Sobrenaturais</h4>
+<p>O poder de um feiticeiro vem de seu sangue — mais precisamente, do sangue de um antepassado sobrenatural, como um dragão ou uma fada. Além da capacidade de lançar magias, o feiticeiro herda desse antepassado uma fração de seu poder natural, que ele pode desenvolver ao longo de sua vida. Ao escolher o caminho do feiticeiro, escolha uma linhagem da lista a seguir. Você recebe a herança básica de sua linhagem e pode desenvolver as demais através de poderes de arcanista.</p>
+
+<p><b>Linhagem Dracônica</b></p>
+<p>Um de seus antepassados foi um majestoso dragão. Escolha um tipo de dano entre ácido, eletricidade, fogo ou frio.</p>
+<ul>
+<li><b>Básica.</b> Você soma seu Carisma em seus pontos de vida iniciais e recebe redução de dano 5 ao tipo escolhido.</li>
+<li><b>Aprimorada.</b> Suas magias do tipo escolhido custam –1 PM e causam +1 ponto de dano por dado.</li>
+<li><b>Superior.</b> Você passa a somar o dobro do seu Carisma em seus pontos de vida iniciais e se torna imune a dano do tipo escolhido. Além disso, sempre que reduz um ou mais inimigos a 0 PV ou menos com uma magia do tipo escolhido, você recebe uma quantidade de PM temporários igual ao círculo da magia.</li>
+</ul>
+
+<p><b>Linhagem Feérica</b></p>
+<p>Seu sangue foi tocado pelas fadas.</p>
+<ul>
+<li><b>Básica.</b> Você se torna treinado em Enganação e aprende uma magia de 1º círculo de encantamento ou ilusão, arcana ou divina, a sua escolha.</li>
+<li><b>Aprimorada.</b> A CD para resistir a suas magias de encantamento e ilusão aumenta em +2 e suas magias dessas escolas custam –1 PM.</li>
+<li><b>Superior.</b> Você recebe +2 em Carisma. Se uma criatura passar no teste de resistência contra uma magia de encantamento ou ilusão lançada por você, você fica alquebrado até o final da cena.</li>
+</ul>
+
+<p><b>Linhagem Rubra</b></p>
+<p>Seu sangue foi corrompido pela Tormenta.</p>
+<ul>
+<li><b>Básica.</b> Você recebe um poder da Tormenta. Além disso, pode perder outro atributo em vez de Carisma por poderes da Tormenta.</li>
+<li><b>Aprimorada.</b> Escolha uma magia para cada poder da Tormenta que você possui. Essas magias custam –1 PM. Sempre que recebe um novo 
+poder da Tormenta, você pode escolher uma nova magia. Esta herança 
+conta como um poder da Tormenta (exceto para perda de Carisma).</li>
+<li><b>Superior.</b> Você recebe +4 PM para cada poder da Tormenta que tiver. Esta herança conta como um poder da Tormenta (exceto para perda de Carisma).</li>
+</ul>
+
+<p><b>Linhagem Rubra</b></p>
+<p>Seu sangue foi corrompido pela Tormenta.</p>
+<ul>
+<li><b>Básica.</b> Você recebe um poder da Tormenta. Além disso, pode perder outro atributo em vez de Carisma por poderes da Tormenta.</li>
+<li><b>Aprimorada.</b> Escolha uma magia para cada poder da Tormenta que você possui. Essas magias custam –1 PM. Sempre que recebe um novo 
+poder da Tormenta, você pode escolher uma nova magia. Esta herança 
+conta como um poder da Tormenta (exceto para perda de Carisma).</li>
+<li><b>Superior.</b> Você recebe +4 PM para cada poder da Tormenta que tiver. Esta herança conta como um poder da Tormenta (exceto para perda de Carisma).</li>
+</ul>
+
+<p><b>Linhagem Abençoada</b></p>
+<p>É consenso que devotos têm pactos sagrados com seus deuses. Recebem poderes miraculosos em troca de servir a seus objetivos com grande esforço e dedicação. Certos indivíduos, contudo, parecem violar essa regra suprema. São contemplados com dons divinos, sem a necessidade de praticar nenhuma devoção. Já nascem com a centelha divina em seu sangue.</p>
+<ul>
+<li><b>Básica.</b> Escolha um deus maior. Uma vez feita, esta escolha não pode ser mudada. Você recebe um poder concedido do deus escolhido, sem precisar ser devoto dele (mas você ainda pode ser devoto desse ou de outro deus) e pode aprender magias divinas de 1º círculo como se fossem arcanas.</li>
+<li><b>Aprimorada.</b> Suas magias divinas de círculo igual ou menor que sua Sabedoria custam –1 PM e você pode aprender magias divinas de 2º e 3º círculo como se fossem arcanas.</li>
+<li><b>Superior.</b> Você recebe +1 em Sabedoria e aprende uma magia divina de cada círculo igual ou menor que sua Sabedoria. A cada dia, após descansar, você pode trocar essas magias por outras magias divinas dos mesmos círculos. Por fim, pode aprender magias divinas de 4º e 5º círculo como se fossem arcanas.</li>
+</ul>
+
+<hr>
+
+<h4>Anulando Magias</h4>
+<p>Você pode anular uma magia conjurada por outra pessoa, fazendo uma contramágica. Para isso, use a ação preparar para agir quando uma criatura lançar uma magia. Nesse instante, você deve lançar uma magia que possa anular a magia original.</p>
+<p>Normalmente, uma magia só pode ser anulada por outra igual — se um inimigo lança Bola de Fogo, você deve lançar outra Bola de Fogo para anulá-la. Mas algumas magias podem anular outras: por exemplo, Luz anula Escuridão (e vice-versa). Em caso de dúvida, cabe ao mestre julgar se uma magia anula outra. Como regra geral, uma magia nunca pode anular outra de círculo maior.</p>
+<p>Dissipar Magia é uma exceção — pode ser usada para anular qualquer magia (mesmo de círculos maiores), mas você deve fazer um teste de Misticismo oposto por Misticismo ou Vontade de quem está lançando a magia (o que for maior). Se você vencer, seu Dissipar Magia funciona como contramágica.</p>
+<p>Tanto a magia anulada quanto a usada como contramágica encerram-se instantaneamente.</p>
+
+<hr>
+
+<h4>Familiares Arcanos</h4>
+<p>Um familiar é uma criatura mágica. Em termos de jogo, é um parceiro especial com o qual você pode se comunicar telepaticamente em alcance longo. Ele obedece a suas ordens, mas ainda está limitado ao que uma criatura de sua espécie pode fazer. Se ele morrer, você fica atordoado por uma rodada. Você pode invocar um novo familiar com um ritual que exige um dia e T$ 100 em ingredientes.</p>
+<ul>
+<li><b>Borboleta.</b> A CD dos testes de Vontade para resistir a suas magias aumenta em +1.</li>
+<li><b>Cobra.</b> A CD dos testes de Fortitude para resistir a suas magias aumenta em +1.</li>
+<li><b>Coruja.</b> Quando lança uma magia com alcance de toque, você pode pagar 1 PM para aumentar seu alcance para curto.</li>
+<li><b>Corvo.</b> Quando faz um teste de Misticismo ou Vontade, você pode pagar 1 PM para rolar dois dados e usar o melhor resultado.</li>
+<li><b>Falcão.</b> Você não pode ser surpreendido e nunca fica desprevenido.</li>
+<li><b>Gato.</b> Você recebe visão no escuro e +2 em Furtividade.</li>
+<li><b>Lagarto.</b> A CD dos testes de Reflexos para resistir a suas magias aumenta em +1.</li>
+<li><b>Morcego.</b> Você adquire percepção às cegas em alcance curto.</li>
+<li><b>Rato.</b> Você pode usar seu atributo-chave em Fortitude, no lugar de Constituição.</li>
+<li><b>Sapo.</b> Você soma seu atributo-chave ao seu total de pontos de vida (cumulativo).</li>

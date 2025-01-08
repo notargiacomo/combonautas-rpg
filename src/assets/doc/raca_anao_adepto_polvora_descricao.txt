@@ -4,4 +4,4 @@
 <p><b>Conhecimento das Rochas.</b> Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.</p>
 <p><b>Devagar e Sempre.</b> Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.</p>
 <p><b>Duro como Pedra.</b> Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte.</p>
-<p><b>Adepto da Pólvora</b> Você acredita que a pedra-fu- maça é um presente de Tenebra, um minério como qualquer outro que deve ter trabalhado e transformado. Você recebe proficiência com armas de fogo e pode fabricar armas de fogo, munições e bombas pagando um quarto do preço em matéria-prima, ao invés de um terço.</p>
+<p><b>Adepto da Pólvora</b> Você acredita que a pedra-fumaça é um presente de Tenebra, um minério como qualquer outro que deve ter trabalhado e transformado. Você recebe proficiência com armas de fogo e pode fabricar armas de fogo, munições e bombas pagando um quarto do preço em matéria-prima, ao invés de um terço.</p>

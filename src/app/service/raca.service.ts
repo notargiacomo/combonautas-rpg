@@ -18,9 +18,6 @@ export class RacaService extends AbstractService{
     return this.http.get<Raca[]>(this.url,{params:this.removeBlankAttributes(filtro)})
     .pipe(map(resultado => {
       resultado.forEach((raca) => {
-
-        raca.descricao = "assets/doc/${raca.nome_arquivo_descricao}.txt"
-        raca.historia = 'assets/doc/${raca.nome_arquivo_historia}.txt'
         this.http
           .get(`assets/doc/${raca.nome_arquivo_descricao}.txt`, {
             responseType: 'text',

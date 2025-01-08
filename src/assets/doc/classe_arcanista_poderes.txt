@@ -1,0 +1,28 @@
+<div class="row">
+    <h4>Poderes de Classe</h4>
+    <div class="col-sm-6 text-justify">
+        <p><b>Arcano de Batalha.</b> Quando lança uma magia, você soma seu atributo-chave na rolagem de dano.</b>
+        <p><b>Aumento de Atributo.</b> Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo.</p>
+        <p><b>Caldeirão do Bruxo.</b> Você pode criar poções, como se tivesse o poder geral Preparar Poção. Se tiver ambos, pode criar poções de até 5º círculo. <i>Pré-requisitos: Bruxo, treinado em Ofício (alquimista).</i></p>
+        <p><b>Conhecimento Mágico.</b> Você aprende duas magias de qualquer círculo que possa lançar. Você pode escolher este poder quantas vezes quiser.</p>
+        <p><b>Contramágica Aprimorada.</b> Uma vez por rodada, você pode fazer uma contramágica como uma reação (veja a aba de informações adicionais). <i>Pré-requisito: Dissipar Magia.</i></p>
+        <p><b>Envolto em Mistério.</b> Sua aparência e postura assombrosas o permitem manipular e assustar pessoas ignorantes ou supersticiosas. O mestre define o que exatamente você pode fazer e quem se encaixa nessa descrição. Como regra geral, você recebe +5 em Enganação e Intimidação contra pessoas não treinadas em Conhecimento ou Misticismo.</p>
+        <p><b>Escriba  Arcano</b> Você pode aprender magias copiando os textos de pergaminhos e grimórios de outros magos. Aprender uma magia dessa forma exige um dia de trabalho e T$ 250 em matérias-primas por PM necessário para lançar a magia. Assim, aprender uma magia de 3º círculo (6 PM) exige 6 dias de trabalho e o gasto de T$ 1.500. <i>Pré-requisitos: Mago, treinado em Ofício (escriba).</i></p>
+        <p><b>Especialista em Escola.</b> Escolha uma escola de magia. A CD para resistir a suas magias dessa escola aumenta em +2. <i>Pré-requisito: Bruxo ou Mago.</i></p>
+        <p><b>Familiar.</b> Você possui um animal de estimação mágico. Veja a aba da informações adicionais.
+        <p><b>Fluxo de Mana.</b> Você pode manter dois efeitos sustentados ativos simultaneamente com apenas uma ação livre, pagando o custo de cada efeito separadamente. <i>Pré-requisito: 10º nível de arcanista.</i></p>
+        <p><b>Foco Vital.</b> Se você estiver segurando seu foco e sofrer dano que o levaria a 0 PV ou menos, você fica com 1 PV e o foco perde PV igual ao valor excedente ou até ser destruído (se o foco for destruído, você sofre o dano excedente). <i>Pré-requisito: Bruxo. e</i></p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Fortalecimento  Arcano.</b> A CD para resistir a suas magias aumenta em +1. Se você puder lançar magias de 4º círculo, em vez disso ela aumenta em +2. <i>Pré-requisito: 5º nível de arcanista.</i></p>
+        <p><b>Herança Aprimorada.</b> Você recebe a herança aprimorada de sua linhagem sobrenatural. <i>Pré-requisitos: Feiticeiro, 6º nível de arcanista.</i></p>
+        <p><b>Herança Superior.</b> Você recebe a herança superior de sua linhagem sobrenatural. <i>Pré-requisitos: Herança Aprimorada, 11º nível de arcanista.</i></p>
+        <p><b>Magia Pungente.</b> Quando lança uma magia, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ela.</p>
+        <p><b>Mestre em Escola.</b> Escolha uma escola de magia. O custo para lançar magias dessa escola diminui em –1 PM. <i>Pré-requisitos: Especialista em Escola com a escola escolhida, 8º nível de arcanista.</i></p>
+        <p><b>Poder Mágico.</b> Você recebe +1 ponto de mana por nível de arcanista. Quando sobe de nível, os PM que recebe por este poder aumentam de acordo. Por exemplo, se escolher este poder no 4º nível, recebe 4 PM. Quando subir para o 5º nível, recebe +1 PM e assim por diante.</p>
+        <p><b>Raio Arcano.</b> Você pode gastar uma ação padrão para causar 1d8 pontos de dano de essência num alvo em alcance curto. Esse dano aumenta em +1d8 para cada círculo de magia acima do 1º que você puder lançar. O alvo pode fazer um teste de Reflexos (CD atributo-chave) para reduzir o dano à metade. O raio arcano conta como uma magia para efeitos de habilidades e itens que beneficiem suas magias. e</p>
+        <p><b>Raio Elemental.</b> Quando usa Raio Arcano, você pode pagar 1 PM para que ele cause dano de ácido, eletricidade, fogo, frio ou trevas, a sua escolha. Se o alvo falhar no teste de Reflexos, sofre uma condição, de acordo com o tipo de dano (veja a descrição das condições na página 394). Ácido: vulnerável por 1 rodada. Eletricidade: ofuscado por 1 rodada. Fogo: fica em chamas. Frio: lento por 1 rodada. Trevas: não pode curar PV por 1 rodada. <i>Pré-requisito: Raio Arcano. e</i></p>
+        <p><b>Raio Poderoso.</b> Os dados de dano do seu Raio Arcano aumentam para d12 e o alcance dele aumenta para médio. <i>Pré-requisito: Raio Arcano. e</i></p>
+        <p><b>Tinta do Mago.</b> Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, seu custo para criar pergaminhos é reduzido à metade. <i>Pré-requisitos: Mago, treinado em Ofício (escriba).</i></p>
+    </div>
+</div>

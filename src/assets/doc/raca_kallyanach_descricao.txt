@@ -9,7 +9,7 @@
 +2 na Defesa e aumentam a RD de sua Herança Dracônica para 10.</p>
 <li><b>Prática Arcana.</b> Escolha uma magia arcana de 1º círculo que cause dano do mesmo tipo de sua 
 Herança Dracônica. Você pode lançar essa magia (atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você pode escolher esta bênção mais de uma vez para outras magias. e</li>
-<li><b>Sentidos Dracônicos.</b> Seus sentidos são impreg- nados com poder dracônico. Você recebe faro e 
+<li><b>Sentidos Dracônicos.</b> Seus sentidos são impregnados com poder dracônico. Você recebe faro e 
 visão no escuro.</p>
 <li><b>Sopro de Dragão.</b> Você pode gastar uma ação padrão e 1 PM para soprar um cone de 6m que causa 1d12 pontos de dano do tipo de sua Herança Dracônica (Ref CD Constituição reduz à metade). A cada quatro níveis após o 1º, você pode gastar +1 PM para aumentar o dano do sopro em +1d12.</p>
 </ul>

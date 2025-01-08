@@ -22,6 +22,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Classe } from '../../model/classe';
 import { ClasseService } from '../../service/classe.service';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @Component({
   selector: 'app-origens',
@@ -37,7 +38,8 @@ import { ClasseService } from '../../service/classe.service';
     MatInputModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    NgFor,
+    MatTabsModule,
+    NgIf
   ],
   animations: [
       trigger('detailExpand', [
@@ -54,7 +56,7 @@ import { ClasseService } from '../../service/classe.service';
 })
 export class ClassesComponent implements OnInit {
   classes!: Classe[];
-  columnsToDisplay = ['nome', 'regiao', 'referencias', 'paginas'];
+  columnsToDisplay = ['nome', 'referencias', 'paginas'];
   form!: FormGroup;
   referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};
@@ -80,20 +82,6 @@ export class ClassesComponent implements OnInit {
         console.log(response);
       },
     });
-  }
-
-  checkReferencia(referencia: Referencia, isChecked: boolean): void {
-    const formArray = this.form.controls['referencias'] as FormArray;
-    if (isChecked) {
-      formArray.push(new FormControl(referencia));
-    } else {
-      const index = formArray.controls.findIndex(
-        (item) => item.value === referencia
-      );
-      formArray.removeAt(index);
-    }
-
-    this.consultar();
   }
 
   limparFiltros() {
