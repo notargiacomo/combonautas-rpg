@@ -15,7 +15,7 @@ export const SABEDORIA = "SABEDORIA";
 export const CARISMA = "CARISMA";
 
 // ATRIBUTOS DE PERSONAGEM
-export const Construtor = "Construtor";
+export const Construto = "Construto";
 export const Espirito = "Espírito";
 export const Humanoide = "Humanoide";
 export const Monstro = "Monstro";
