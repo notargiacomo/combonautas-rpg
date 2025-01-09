@@ -1,0 +1,12 @@
+<h4>Animais Totêmicos</h4>
+<p>A seguir está uma lista de animais venerados por tribos bárbaras de Arton.</p>
+<ul>
+<li><b>Coruja.</b> A sábia coruja guia seus discípulos. Você pode lançar Orientação.</li>
+<li><b>Corvo.</b> Um seguidor do corvo enxerga além do véu. Você pode lançar Visão Mística.</li>
+<li><b>Falcão.</b> Sempre atento, o falcão permite que você lance Detectar Ameaças.</li>
+<li><b>Grifo.</b> O mais veloz dos animais, o grifo permite que você lance Primor Atlético.</li>
+<li><b>Lobo.</b> O lobo é feroz e letal. Você pode lançar Concentração de Combate.</li>
+<li><b>Raposa.</b> A sagaz raposa nunca está onde se espera. Você pode lançar Imagem Espelhada.</li>
+<li><b>Tartaruga.</b> A tartaruga protege os seus. Você pode lançar Armadura Arcana.</li>
+<li><b>Urso.</b> O vigoroso urso permite que você lance Vitalidade Fantasma e possa usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um druida de seu nível.</li>
+</ul>
