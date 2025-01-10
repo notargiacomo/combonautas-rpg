@@ -1,0 +1,5 @@
+<h4>Características de Classe</h4>
+<p><b>Pontos de Vida.</b>  Um bardo começa com 12 pontos de vida + Constituição e ganha 3 PV + Con por nível.</p>
+<p><b>Pontos de Mana.</b> 4 PM por nível.</p>
+<p><b>Perícias.</b>   Atuação (Car) e Reflexos (Des) mais 6 a sua escolha entre Acrobacia (Des), Cavalgar (Des), Conhecimento  (Int),  Diplomacia  (Car),  Enganação (Car), Furtividade (Des), Iniciativa (Des), Intuição (Sab), Investigação (Int), Jogatina (Car), Ladinagem (Des), Luta (For), Misticismo (Int), Nobreza (Int), Percepção (Sab), Pontaria (Des) e Vontade (Sab).</p>
+<p><b>Proficiências.</b> Armas marciais.</p>

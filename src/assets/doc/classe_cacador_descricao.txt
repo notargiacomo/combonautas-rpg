@@ -1,0 +1,5 @@
+<h4>Características de Classe</h4>
+<p><b>Pontos de Vida.</b>   Um caçador começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+<p><b>Pontos de Mana.</b> 4 PM por nível.</p>
+<p><b>Perícias.</b> Luta (For) ou Pontaria (Des), Sobrevivência (Sab), mais 6 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Cura (Sab), Fortitude (Con), Furtividade (Des), Iniciativa (Des), Investigação (Int), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des) e Reflexos (Des).</p>
+<p><b>Proficiências.</b>  Armas marciais e escudos.</p>

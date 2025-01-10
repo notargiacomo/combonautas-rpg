@@ -1,0 +1,7 @@
+<h4>Músicas de Bardo</h4>
+<p>Alguns poderes do bardo são Músicas. Esses poderes compartilham as seguintes regras.</p>
+<ul>
+<li>Para ativar uma música, você precisa ser treinado em Atuação e empunhar um instrumento musical.</li>
+<li>Ativar uma música gasta uma ação padrão e 1 PM.</li>
+<li>Efeitos de músicas têm alcance curto.</li>
+</ul>

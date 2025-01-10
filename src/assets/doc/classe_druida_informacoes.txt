@@ -1,0 +1,55 @@
+<h4>Companheiro Animal</h4>
+<p>Um companheiro animal é um amigo valoroso e fiel. Você decide de qual espécie 
+é seu companheiro. Vocês têm um vínculo mental, sendo capazes de entender um ao outro. Seu companheiro animal obedece a você, mesmo que isso arrisque a vida dele.</p>
+<p>Em termos de jogo, seu companheiro animal é um parceiro ajudante, assassino, atirador, combatente, fortão, guardião, perseguidor, ou uma montaria, do nível iniciante. No 7º nível ele muda para veterano e, no 15º nível, para mestre (se 
+tiver mais de um tipo, todos mudam de nível). Se o companheiro animal morrer, 
+você fica atordoado por uma rodada. Você pode invocar um novo companheiro após 
+um dia inteiro de prece e meditação.</p>
+<p>A seguir, alguns exemplos de animais (mas você é livre para escolher outros). Veja a página 260 para as regras de parceiros.</p>
+<ul>
+<li>Ajudante. Corvo, macaco, raposa, serpente ou outro animal ágil ou esperto.</li>
+<li>Assassino. Lince, onça ou outro animal treinado para abater presas.</li>
+<li>Atirador. Águia, falcão ou outro animal capaz de mergulhar rapidamente nos alvos de seus ataques à distância. </li>
+<li>Fortão. Crocodilo, javali, leão, lobo ou outro animal capaz de lutar ao seu lado.</li>
+<li>Guardião. Alce, cão, coruja, tartaruga, urso ou outro animal pesado ou atento.</li>
+<li>Perseguidor. Gambá, sabujo ou outro animal farejador.</li>
+</ul>
+<hr>
+<h4>Forma Selvagem</h4>
+<p>Você pode gastar uma ação completa e 3 PM para adquirir a forma de uma criatura selvagem. Em termos de jogo, quando usa esta habilidade você adquire os modificadores de uma das formas abaixo. Características não mencionadas não mudam.</p>
+<p>Na forma selvagem você não pode falar, empunhar itens ou lançar magias. Seu equipamento desaparece (mas você mantém os benefícios de quaisquer itens vestidos), ressurgindo quando você volta ao normal. Outras criaturas podem fazer um teste de Percepção oposto pelo seu teste de Enganação para perceber que você não é um animal comum (você recebe +10 neste teste). Cada transformação dura pelo tempo que você quiser, mas você reverte à forma normal se ficar inconsciente ou morrer.</p>
+
+<b>Forma Ágil</b>
+<p>Você recebe Destreza +2 e duas armas naturais que causam 1d6 pontos de dano e possuem margem de ameaça 19. Se atacar com ambas, sofre –2 em todos os testes de ataque até o seu próximo turno.</p>
+<ul>
+<li><i>Aprimorada.</i> Você recebe Destreza +4, deslocamento +3m e duas armas naturais (como acima, mas com dano de 1d8). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</li>
+<li><i>Superior.</i> Você recebe Destreza +6, deslocamento +6m e duas armas naturais (como acima, mas com dano de 1d10). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</li>
+</ul>
+
+<b>Forma Feroz</b>
+<p>Você recebe Força +3, +2 na Defesa e uma arma natural que causa 1d8 pontos de dano.</p>
+<ul>
+<li><i>Aprimorada.</i> Você  recebe  Força  +5,  +4  na Defesa e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</li>
+<li><i>Superior.</i> Você recebe Força +10, +6 na Defesa e uma arma natural que causa 4d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra).</li>
+</ul>
+
+<b>Forma Resistente</b>
+<p>Você recebe +5 na Defesa, redução de dano 5 e uma arma natural que causa 1d6 pontos de dano.</p>
+<ul>
+<li><i>Aprimorada.</i> Você recebe Força +3, +8 na Defesa, redução de dano 8 e uma arma natural que causa 1d8 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</li>
+<li><i>Superior.</i> Você recebe Força +5, +10 na Defesa, redução de dano 10 e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra).</li>
+</ul>
+
+<b>Forma Sorrateira</b>
+<p>Você recebe Destreza +2 e uma arma natural que causa 1d4 pontos de dano. Seu tamanho muda para Pequeno (+2 em Furtividade, –2 em testes de manobra).</p>
+<ul>
+<li><i>Aprimorada.</i> Você  recebe  Destreza  +4.  Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra).</li>
+<li><i>Superior.</i> Você recebe Destreza +6 e deslocamento de voo 18m. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra).</li>
+</ul>
+
+<b>Forma Veloz</b>
+<p>Você recebe Destreza +2, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 15m, deslocamento de escalada 9m ou deslocamento de natação 9m.</p>
+<ul>
+<li><i>Aprimorada.</i> Você recebe Destreza +4, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m.</li>
+<li><i>Superior.</i> Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m.</li>
+</ul>

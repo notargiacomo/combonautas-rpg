@@ -1,0 +1,7 @@
+<h4>Missas</h4>
+<p>Alguns poderes do clérigo são Missas. Esses poderes compartilham as seguintes regras.</p>
+<ul>
+<li>Rezar uma Missa exige uma hora e o gasto de materiais especiais (como velas, incensos, água benta...) no valor de T$ 25. Um mesmo celebrante pode aplicar mais de um poder de Missa na mesma celebração. Cada poder adicional aumenta o custo da Missa em T$ 25.</li>
+<li>Uma Missa afeta um número máximo de pessoas igual a 1 + sua Sabedoria. Todas as pessoas precisam estar presentes durante toda a Missa.</li>
+<li>Os efeitos de uma Missa duram um dia. Uma mesma criatura só pode receber os benefícios da mesma Missa uma vez por dia.</li>
+</ul>
