@@ -1,3 +1,4 @@
+<div class="row">
 <h4>Posturas de Combate</h4>
 <p>Alguns poderes do cavaleiro são Posturas de Combate. Esses poderes compartilham as seguintes regras.</p>
 <ul>
@@ -5,3 +6,4 @@
 <li>Os efeitos de uma postura duram até o final da cena, a menos que sua descrição diga o contrário.</li>
 <li>Você só pode manter uma postura por vez.</li>
 </ul>
+</div>

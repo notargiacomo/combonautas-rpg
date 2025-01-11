@@ -1,3 +1,4 @@
+<div class="row">
 <h4>Missas</h4>
 <p>Alguns poderes do clérigo são Missas. Esses poderes compartilham as seguintes regras.</p>
 <ul>
@@ -5,3 +6,4 @@
 <li>Uma Missa afeta um número máximo de pessoas igual a 1 + sua Sabedoria. Todas as pessoas precisam estar presentes durante toda a Missa.</li>
 <li>Os efeitos de uma Missa duram um dia. Uma mesma criatura só pode receber os benefícios da mesma Missa uma vez por dia.</li>
 </ul>
+</div>

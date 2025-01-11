@@ -1,3 +1,4 @@
+<div class="row">
 <h4>Armadilhas</h4>
 <p>Alguns poderes do caçador são Armadilhas. Esses poderes compartilham as seguintes regras.</p>
 <ul>
@@ -11,3 +12,4 @@ ação padrão procurando e passar em um teste de Investigação (CD Sab).</li>
 como galhos e cipós. Porém, precisa estar em um ambiente propício, como uma 
 floresta, um beco repleto de entulhos etc.</li>
 </ul>
+</div>

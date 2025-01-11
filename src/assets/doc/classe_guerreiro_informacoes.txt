@@ -1,3 +1,4 @@
+<div class="row">
 <h4>Efeitos do Golpe Pessoal</h4>
 <p><b>Amplo (+3 PM).</b> Seu ataque atinge todas as criaturas em alcance curto (incluindo aliados, mas não você mesmo). Faça um único teste de ataque e compare com a Defesa de cada criatura. Atordoante (+2 PM). Uma criatura que sofra dano do ataque fica atordoada por uma rodada (apenas uma vez por cena; Fortitude CD For anula).</p> 
 <p><b>Brutal (+1 PM).</b> Fornece um dado extra de dano do mesmo tipo.
@@ -14,3 +15,4 @@ ou como centro de sua área o ponto atingido pelo ataque (atributo-chave é um m
 <p><b>Lento (–2 PM).</b> Seu ataque exige uma ação completa para ser usado.</p>
 <p><b>Perto da Morte (–2 PM).</b> O ataque só pode ser usado se você estiver com um quarto de seus PV ou menos.</p>
 <p><b>Sacrifício (–2 PM).</b> Sempre que usa seu Golpe Pessoal, você perde 10 PV.</p>
+<div>
