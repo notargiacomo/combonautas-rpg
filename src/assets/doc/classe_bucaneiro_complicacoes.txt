@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Coragem Líquida.</b> Você não vai a lugar algum sem uma caneca ou garrafa. Você sempre ocupa uma de suas mãos com uma bebida e, na primeira rodada de qualquer cena envolvendo um perigo, deve gastar uma ação de movimento para tomar um gole. A bebida não o beneficia, mas também não causa penalidades (além do gasto da ação) — de tanto beber, você já está acostumado a aguentar o tranco!</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Esbanjador.</b> Você tem certas necessidades, que alguns chamam de “luxo” — mas, para você, são o motivo de viver! Para subir de nível, além de acumular XP suficiente, você deve “torrar” tibares em um festas e frivolidades, em um valor igual à 25% da diferença do dinheiro inicial do nível que vai alcançar para o nível atual (por exemplo, T$ 250 para subir para o 5° nível).</p>
+    </div>
+</div>

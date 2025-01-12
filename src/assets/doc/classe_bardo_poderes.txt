@@ -1,7 +1,7 @@
 <div class="row">
     <h4>Poderes de Classe</h4>
     <div class="col-sm-6 text-justify">
-        <p><b>Arte Mágica.</b> Enquanto você estiver sob efeito de sua Inspiração, a CD para resistir a suas habilidades de bardo aumenta em +2.</b>
+        <p><b>Arte Mágica.</b> Enquanto você estiver sob efeito de sua Inspiração, a CD para resistir a suas habilidades de bardo aumenta em +2.</p>
         <p><b>Aumentar Repertório. </b>Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.</p>
         <p><b>Aumento de Atributo.</b> Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo.</p>
         <p><b>Dança das Lâminas.</b> Quando você lança uma magia com execução de uma ação padrão, pode gastar 1 PM para fazer um ataque corpo a corpo como uma ação livre. Pré-requisitos: Esgrima Mágica, 10º nível de bardo.</p>
