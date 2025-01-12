@@ -1,6 +1,5 @@
 <div class="row">
     <div class="col-sm-12 text-justify">
-        <h4> Habilidades de Classe </h4>
         <p><b>Briga.</b> Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades). A cada quatro níveis, seu dano desarmado aumenta, conforme a tabela.</p>
         <p>O dano na tabela é para criaturas Pequenas e Médias. Criaturas Minúsculas diminuem esse dano em um passo, Grandes e Enormes aumentam em um passo e Colossais aumentam em dois passos.</p>
         <p><b>Golpe Relâmpago.</b>  Quando usa a ação agredir para fazer um ataque desarmado, você pode gastar 1 PM para realizar um ataque desarmado adicional.</p>

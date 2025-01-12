@@ -1,6 +1,5 @@
 <div class="row">
     <div class="col-sm-12 text-justify">
-        <h4> Habilidades de Classe </h4>
         <p><b>Engenhosidade.</b> Quando faz um teste de perícia, você pode gastar 2 PM para somar a sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque.</p>
         <p><b>Protótipo.</b>  Você começa o jogo com um item superior, ou com 10 itens alquímicos, com preço total de até T$ 500. Veja o Capítulo 3: Equipamento para a lista de itens.</p>
         <p><b>Fabricar Item Superior.</b>  No 2º nível, você recebe um item superior com preço de até T$ 2.000 e passa a poder fabricar itens superiores com uma melhoria. Veja o Capítulo 3: Equipamento para a lista de melhorias.</p>

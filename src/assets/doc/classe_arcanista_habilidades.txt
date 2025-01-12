@@ -1,7 +1,5 @@
 <div class="row">
     <div class="col-sm-12 text-justify">
-        <h4> Habilidades de Classe </h4>
-        <p>Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma. Segue as habilidades de Arcaista.</p>
         <p><b>Caminho do Arcanista.</b> A magia é um poder incrível, capaz de alterar a realidade. Esse poder tem fontes distintas e cada uma opera conforme suas próprias regras. Escolha uma das opções a seguir. Uma vez feita, essa escolha não pode ser mudada.</p>
         <ul>
             <li><i>Bruxo.</i> Você lança magias através de um foco — uma varinha, cajado, chapéu... Para lançar uma magia, você precisa empunhar o foco com uma mão (e gesticular com a outra) ou fazer um teste de Misticismo (CD 20 + o custo em PM da magia; se falhar, a magia não funciona, mas você gasta os PM mesmo assim). O foco tem RD 10 e PV iguais à metade dos seus, independentemente de seu material ou forma. Se for danificado, é totalmente restaurado na próxima vez que você recuperar seus PM. Se for destruído (reduzido a 0 PV), você fica atordoado por uma rodada. Você pode recuperar um foco destruído ou perdido com uma semana de trabalho e T$ 100. Seu atributo-chave para magias é Inteligência.</li>

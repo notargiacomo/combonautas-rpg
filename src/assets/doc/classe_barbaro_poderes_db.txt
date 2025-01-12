@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Brado Amplo.</b> O alcance de seus poderes Brado Assombroso e Brado Assustador aumenta para médio. <i>Pré-requisito: Brado Assustador.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Brado Assombroso.</b> Você pode gastar uma ação de movimento e uma quantidade de PM limitada pela sua Constituição para emitir um brado assombroso contra um inimigo em alcance curto. Para cada PM que gastar, você causa 1d6 pontos de dano psíquico (Fort CD For reduz à metade). <i>Pré-requisito: Brado Assustador. Medo.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Brado Revigorante.</b> Quando usa Brado Assombroso ou Brado Assustador enquanto está em fúria, recebe uma quantidade de PV temporários igual à metade de seu nível + sua Força. <i>Pré-requisitos: Alma de Bronze, Brado Assustador.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Brado Vitorioso.</b> Quando faz um acerto crítico ou reduz um inimigo a 0 PV enquanto está em fúria, você pode usar Brado Assombroso ou Brado Assustador. <i>Pré-requisitos: Brado Assustador, Sangue dos Inimigos.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Fúria Rodopiante.</b> Quando está em Fúria, você soma o multiplicador de crítico de uma arma corpo a corpo empunhada à sua Defesa.<b> (Dragão Brasil 198, Pag. 53)</b></p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Instinto Feral.</b> Você aplica seu bônus de Instinto Selvagem em testes de Adestramento e Cavalgar. <i>Pré-requisito: Instinto Selvagem.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Instinto Furioso.</b> Enquanto está em fúria, você soma seu bônus de fúria ao bônus de Instinto Selvagem. <i>Pré-requisito: Instinto Selvagem, 15º nível de bárbaro.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Intinto Indomável.</b>Você pode usar Força Indomável com qualquer perícia contemplada por Instinto Selvagem.<i>Pré-requisitos: Força Indomável, 10º nível de bárbaro.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Instinto Sábio.</b> Você aplica seu bônus de Instinto Selvagem em testes de Cura e Misticismo.<i>Pré-requisito: Instinto Selvagem.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Instinto Robusto.</b> Você aplica seu bônus de Instinto Selvagem em testes de Atletismo e Intimidação. <i>Pré-requisito: Instinto Selvagem.</i><b> (Dragão Brasil 198, Pag. 53)</b></p>
+        <p><b>Sem Piedade.</b> Você recebe +2 em testes de ataque e rolagens de dano contra criaturas vulneráveis, e estas criaturas sofrem –2 em testes de resistência contra suas habilidades.<b> (Dragão Brasil 198, Pag. 53)</b></p>
+    </div>
+</div>

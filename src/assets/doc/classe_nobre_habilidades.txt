@@ -1,6 +1,5 @@
 <div class="row">
     <div class="col-sm-12 text-justify">
-        <h4> Habilidades de Classe </h4>
         <p><b>Autoconfiança.</b>  Você pode usar seu Carisma em vez de Destreza na Defesa (mas continua não podendo somar um atributo na Defesa quando usa armadura pesada).</p>
         <p><b>Espólio.</b> Você recebe um item a sua escolha com preço de até T$ 2.000.</p>
         <p><b>Orgulho.</b> Quando faz um teste de perícia, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu Carisma). Para cada PM que gastar, recebe +2 no teste.</p>
