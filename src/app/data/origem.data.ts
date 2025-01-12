@@ -166,7 +166,7 @@ export class OrigemData {
         descricao: `
         <p>Que bom seria se a cura milagrosa dos clérigos estivesse ao alcance de todos! Talvez você tenha sido ajudante do curandeiro da vila, testemunhando quando ele tratava doenças e lesões sem conjurar qualquer magia. Ou teve um estudo formal e sofisticado de medicina no Colégio Real de Médicos em Salistick. De qualquer modo, você é treinado em curar com remédios e tratamentos naturais — algo sempre útil, mesmo quando há um clérigo por perto.</p>
         <p><b>Itens.</b> Bálsamo restaurador x2, maleta de medicamentos.</p>
-        <p><b>Benefícios.</b> Cura, Vontade (perícias); Medicina, Médico de Campo, Venefício (poderes).</p>>
+        <p><b>Benefícios.</b> Cura, Vontade (perícias); Medicina, Médico de Campo, Venefício (poderes).</p>
         <h4>Médico de Campo</h4>
         <p>Você soma sua Sabedoria aos PV restaurados por suas habilidades e itens mundanos de cura.</p>`,
         referencias:Referencia.BASICO ,

@@ -42,6 +42,16 @@ export class ClasseService extends AbstractService {
                 responseType: 'text',
               })
               .subscribe((descricao_informacoes) => (classe.descricao_informacoes = descricao_informacoes));
+            this.http
+              .get(`assets/doc/${classe.nome_arquivo_descricao_complicacoes}.txt`, {
+                responseType: 'text',
+              })
+              .subscribe((descricao_complicacoes) => (classe.descricao_complicacoes = descricao_complicacoes));
+            this.http
+              .get(`assets/doc/${classe.nome_arquivo_descricao_poderes_db}.txt`, {
+                responseType: 'text',
+              })
+              .subscribe((descricao_poderes_db) => (classe.descricao_poderes_db = descricao_poderes_db));
           });
           return resultado;
         })

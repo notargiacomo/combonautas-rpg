@@ -8,9 +8,13 @@ export interface Classe {
   nome_arquivo_descricao_habilidades?: string;
   nome_arquivo_descricao_poderes?:string;
   nome_arquivo_descricao_informacoes?:string;
+  nome_arquivo_descricao_complicacoes?:string;
+  nome_arquivo_descricao_poderes_db?:string;
   descricao_classe?: string;
   descricao_habilidades?: string;
   descricao_poderes?: string;
+  descricao_complicacoes?: string;
+  descricao_poderes_db?: string;
   ha_informacoes_adicionais?: boolean;
   descricao_informacoes?:string;
   fator_vida?: number;

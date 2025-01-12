@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Arcanista de Rotina.</b> Você não está acostumado a lançar magias sob pressão. Se estiver em alcance médio de qualquer ameaça, é considerado sob condição ruim para lançar magias. Se estiver em alcance curto, é considerado sobcondição terrível!</b>
+        <p><b>Foco Exigente.</b> Seu foco o pune quando você falha. Sempre que uma criatura passa em um teste de resistência contra uma magia sua, você perde 1 PV por PM gasto na magia.<i>Pré-requisito: bruxo.</i></p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Linhagem Prepotente.</b> Sua magia inata rejeita auxílio de cacarecos. Você não pode usar catalisadores e itens esotéricos mundanos. Você ainda pode usar itens esotéricos mágicos, já que esses são verdadeiramente imbuídos de magia — como você! <i>Pré-requisito: feiticeiro.</i></p>
+        <p><b>Mente Cansada.</b> Sua memória é péssima. Quanto mais magias você aprende, mais difícil fica lembrar de todas! Para cada círculo de magia que você pode lançar, o total de magias que pode memorizar diminui em 1. <i>Pré-requisito: mago.</i></p>
+    </div>
+</div>
