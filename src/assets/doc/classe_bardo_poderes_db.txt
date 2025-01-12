@@ -7,10 +7,10 @@
         <p><b>Ressoar.</b> Se estiver empunhando um instrumento musical, quando lança uma magia que tenha apenas você como alvo, você pode fazer um teste de Atuação com CD 15 + PM gastos na magia. Se passar, pode compartilhar os efeitos desta magia com aliados em alcance curto que estejam sob efeito de sua Inspiração, gastando 1 PM por aliado escolhido. <i>Pré-requisito: 6º nível de bardo.</i><b> (Dragão Brasil 179, Pag. 48)</b></p>
     </div>
     <div class="col-sm-6 text-justify">
-        <p><b>Vide mais informações sobre performance na aba de informações</b></p>
+        <p><b>(Vide mais informações sobre performance na aba de informações)</b></p>
         <p><b>Performance: Allegro.</b> Você e seus aliados afetados somam seu bônus de Inspiração à CD de magias, habilidades mágicas e habilidades de bardo. Esse poder se acumula com Arte Mágica. <i>Pré-requisito: Arte Mágica.</i><b> (Dragão Brasil 179, Pag. 48)</b></p>
         <p><b>Performance: Crescendo.</b> Você e seus aliados afetados recebem 1 dado adicional em rolagens de dano com ataques e magias. <i>Pré-requisito: Inspiração Marcial, 6º nível de bardo.</i><b> (Dragão Brasil 179, Pag. 48)</b></p>
-        <p><b>Performance: Fortíssimo.</b>VVocê e seus aliados afetados somam o bônus de Inspiração na Defesa e recebem resistência a dano igual ao bônus de inspiração.<b> (Dragão Brasil 179, Pag. 48)</b></p>
+        <p><b>Performance: Fortíssimo.</b>Você e seus aliados afetados somam o bônus de Inspiração na Defesa e recebem resistência a dano igual ao bônus de inspiração.<b> (Dragão Brasil 179, Pag. 48)</b></p>
         <p><b>Performance: Prestissimo.</b> Você e aliados afetados por sua Inspiração recebem um aumento de 3m em seu deslocamento multiplicado pelo bônus de Inspiração. Por exemplo, se sua Inspiração concede um bônus de +3, alvos afetados recebem +9m de deslocamento.<b> (Dragão Brasil 179, Pag. 48)</b></p>
         <p><b>Performance: Vivace</b> Você e aliados afetados pela Inspiração também recebem um total de PM temporários igual ao dobro do bônus concedido pela habilidade. Por exemplo, se sua inspiração tem bônus de +2, recebem 4 PM temporários. <i>Pré-requisito: 4º nível de bardo.</i><b> (Dragão Brasil 179, Pag. 48)</b></p>
         <p><b>Performance: Virtuoso. </b> Você e seus aliados afetados recebem pontos de vida temporários igual ao bônus de inspiração x5 e se tornam imunes a efeitos de medo.<b> (Dragão Brasil 179, Pag. 48)</b></p>
