@@ -1,0 +1,29 @@
+<div class="row">
+    <h4>Poderes de Classe</h4>
+    <div class="col-sm-6 text-justify">
+        <p><b>Aspecto do Inverno.</b>Você aprende e pode lançar uma magia de convocação ou evocação, arcana ou divina, de qualquer círculo que possa lançar. Além disso, recebe redução de frio 5 e suas magias que causam dano de frio causam +1 ponto de dano por dado.</p>
+        <p><b>Aspecto do Outono.</b> Você aprende e pode lançar uma magia de necromancia, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para impor uma penalidade de –2 nos testes de resistência de todos os inimigos em alcance curto até o início do seu próximo turno.</p>
+        <p><b>Aspecto da Primavera.</b>Você aprende e pode lançar uma magia de encantamento ou ilusão, arcana ou divina, de qualquer círculo que possa lançar. Além disso, escolha uma quantidade de magias igual ao seu Carisma (mínimo 1). O custo dessas magias é reduzido em −1 PM.</p>
+        <p><b>Aspecto do Verão.</b>Você aprende e pode lançar uma magia de transmutação, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para cobrir uma de suas armas com chamas até o fim da cena. A arma causa +1d6 pontos de dano de fogo. Sempre que você acertar um ataque com ela, recebe 1 PM temporário. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível e eles desaparecem no final da cena. e</p>
+        <p><b>Aumento de Atributo.</b> Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo.</p>
+        <p><b>Companheiro Animal.</b>Você recebe um companheiro animal. Veja o quadro para detalhes. Você pode escolher este poder quantas vezes quiser, mas deve escolher companheiros diferentes e ainda está sujeito ao limite de parceiros que pode ter (veja a página 260). Pré-requisitos: Car 1, treinado em Adestramento.</p>
+        <p><b>Companheiro Animal Aprimorado.</b>  Escolha um de seus companheiros animais. Ele recebe um segundo tipo, ganhando os bônus de seu nível. Por exemplo, se você tiver um companheiro guardião veterano, pode adicionar o tipo fortão a ele, tornando-o um guardião fortão veterano que concede +3 na Defesa e +1d12 em uma rolagem de dano corpo a corpo. Pré-requisitos: Companheiro Animal, 6º nível de druida.</p>
+        <p><b>Companheiro Animal Lendário.</b> Escolha um de seus companheiros animais. Esse animal passa a dobrar os bônus concedidos de seu tipo original. Pré-requisitos: Companheiro Animal, 18º nível de druida.</p>
+        <p><b>Companheiro  Animal  Mágico.</b> Escolha um de seus companheiros animais. Ele recebe um segundo tipo diferente, entre adepto, destruidor, magivocador ou médico, ganhando os bônus de seu nível. Pré-requisitos: Companheiro Animal, 8º nível de druida.</p>
+        <p><b>Coração da Selva.</b> A CD para resistir a seus efeitos de veneno aumenta em +2 e estes efeitos causam +1 de perda de vida por dado.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Espírito dos Equinócios.</b>Você pode gastar 4 PM para ficar em equilíbrio com o mundo. Até o final da cena, quando rola um dado, pode rolar novamente qualquer resultado 1. Pré-requisitos: Aspecto da Primavera, Aspecto do Outono, 10º nível de druida. e</p>
+        <p><b>Espírito  dos  Solstícios.</b> Você transita entre os extremos do mundo natural. Quando lança uma magia, pode gastar +4 PM para maximizar os efeitos numéricos variáveis dela. Por exemplo, uma magia Curar Ferimentos aprimorada para curar 5d8+5 PV irá curar automaticamente 45 PV, sem a necessidade de rolar dados. Uma magia sem efeitos variáveis não pode ser afetada por este poder. Pré-requisitos: Aspecto do Inverno, Aspecto do Verão, 10º nível de druida.</p>
+        <p><b>Força dos Penhascos.</b>Você recebe +2 em Fortitude. Quando sofre dano enquanto em contato com o solo ou uma superfície de pedra, pode gastar uma quantidade de PM limitada por sua Sabedoria. Para cada PM gasto, reduz esse dano em 10. Pré-requisito: 4º nível de druida.</p>
+        <p><b>Forma Primal.</b>Quando usa Forma Selvagem, você pode se transformar em uma fera primal. Você recebe os benefícios de dois tipos de animais (bônus iguais não se acumulam; use o que você quiser de cada tipo). Pré-requisito: 18º nível de druida.</p>
+        <p><b>Forma Selvagem.</b>Você pode se transformar em animais (veja a seguir). e</p>
+        <p><b>Forma Selvagem Aprimorada.</b>Quando usa Forma Selvagem, você pode gastar 6 PM ao todo para assumir uma forma aprimorada. Pré-requisitos: Forma Selvagem, 6º nível de druida. e</p>
+        <p><b>Forma Selvagem Superior.</b> Quando usa Forma Selvagem, você pode gastar 10 PM ao todo para assumir uma forma superior. Pré-requisitos: Forma Selvagem Aprimorada, 12º nível de druida. e</p>
+        <p><b>Liberdade da Pradaria.</b>Você recebe +2 em Reflexos. Se estiver ao ar livre, sempre que lança uma magia, pode gastar 1 PM para aumentar o alcance dela em um passo (de toque para curto, de curto para médio ou de médio para longo).</p>
+        <p><b>Magia Natural.</b>Em forma selvagem, você pode lançar magias e empunhar catalisadores e esotéricos. Pré-requisito: Forma Selvagem.</p>
+        <p><b>Presas Afiadas.</b>A margem de ameaça de suas armas naturais aumenta em +2.</p>
+        <p><b>Segredos da Natureza.</b>Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.</p>
+        <p><b>Tranquilidade  dos  Lagos.</b> Você  recebe  +2  em Vontade. Se estiver portando um recipiente com água (não precisa estar empunhando), uma vez por rodada, quando faz um teste de resistência, pode pagar 1 PM para refazer a rolagem.</p>
+    </div>
+</div>

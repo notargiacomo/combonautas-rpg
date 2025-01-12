@@ -1,0 +1,25 @@
+<div class="row">
+    <h4>Poderes de Classe</h4>
+    <div class="col-sm-6 text-justify">
+        <p><b>Ambidestria.</b> Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Pré-requisito: Des 2.</p>
+        <p><b>Arqueiro.</b>Se estiver usando uma arma de ataque à distância, você soma sua Sabedoria em rolagens de dano (limitado pelo seu nível). Pré-requisito: Sab 1.</p>
+        <p><b>Ataque Reflexo.</b> Se um alvo em alcance de seus ataques corpo a corpo ficar desprevenido ou se mover voluntariamente para fora do seu alcance, você pode gastar 1 PM para fazer um ataque corpo a corpo contra esse alvo (apenas uma vez por alvo a cada rodada). Pré-requisito: Des 1.</p>
+        <p><b>Aumento de Atributo.</b>Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo</p>
+        <p><b>Bater e Correr.</b>Quando faz uma investida, você pode continuar se movendo após o ataque, até o limite de seu deslocamento. Se gastar 2 PM, pode fazer uma investida sobre terreno difícil e sem sofrer a penalidade de Defesa.</p>
+        <p><b>Destruidor.</b>Quando causa dano com uma arma corpo a corpo de duas mãos, você pode rolar novamente qualquer resultado 1 ou 2 da rolagem de dano da arma. Pré-requisito: For 1.</p>
+        <p><b>Esgrimista.</b>Quando usa uma arma corpo a corpo leve ou ágil, você soma sua Inteligência em rolagens de dano (limitado pelo seu nível). Pré-requisito: Int 1.</p>
+        <p><b>Especialização  em  Arma.</b>Escolha uma arma. Você recebe +2 em rolagens de dano com essa arma. Você pode escolher este poder outras vezes para armas diferentes.</p>
+        <p><b>Especialização  em  Armadura.</b>Uma vez por rodada, quando erra um ataque, você pode gastar 2 PM. Se fizer isso, causa metade do dano que causaria (ignorando efeitos que se aplicariam caso o ataque acertasse).</p>
+        <p><b>Golpe Demolidor.</b>Quando usa a manobra que brar ou ataca um objeto, você pode gastar 2 PM para ignorar a redução de dano dele.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Golpe Pessoal.</b>Quando faz um ataque, você pode desferir seu Golpe Pessoal, uma técnica única, com efeitos determinados por você. Você constrói seu Golpe Pessoal escolhendo efeitos da lista a seguir. Cada efeito possui um custo; a soma deles será o custo do Golpe Pessoal (mínimo 1 PM). O Golpe Pessoal só pode ser usado com uma arma específica (por exemplo, apenas espadas longas). Quando sobe de nível, você pode reconstruir seu Golpe Pessoal e alterar a arma que ele usa. Você pode escolher este poder outras vezes para golpes diferentes e não pode gastar mais PM em golpes pessoais em uma mesma rodada do que seu limite de PM. Pré-requisito: 5º nível de guerreiro.</p>
+        <p><b>Ímpeto.</b> Você pode gastar 1 PM para aumentar seu deslocamento em +6m por uma rodada.</p>
+        <p><b>Mestre em Arma.</b>Escolha uma arma. Com esta arma, seu dano aumenta em um passo e você pode gastar 2 PM para rolar novamente um teste de ataque recém realizado. Pré-requisitos: Especialização em Arma com a arma escolhida, 12º nível de guerreiro.</p>
+        <p><b>Planejamento Marcial.</b>Uma vez por dia, você pode gastar uma hora e 3 PM para escolher um poder de guerreiro ou de combate cujos pré-requisitos cumpra. Você recebe os benefícios desse poder até o próximo dia. Pré-requisitos: treinado em Guerra, 10º nível de guerreiro.</p>
+        <p><b>Romper Resistências.</b>Quando faz um Ataque Especial, você pode gastar 1 PM adicional para ignorar 10 pontos de redução de dano.</p>
+        <p><b>Solidez.</b>Se estiver usando um escudo, você aplica o bônus na Defesa recebido pelo escudo em testes de resistência.</p>
+        <p><b>Tornado de Dor.</b>Você pode gastar uma ação padrão e 2 PM para desferir uma série de golpes giratórios. Faça um ataque corpo a corpo e compare-o com a Defesa de cada inimigo em seu alcance natural. Então faça uma rolagem de dano com um bônus cumulativo de +2 para cada acerto e aplique-a em cada inimigo atingido. Pré-requisito: 6º nível de guerreiro.</p>
+        <p><b>Valentão.</b>Você recebe +2 em testes de ataque e rolagens de dano contra oponentes caídos, desprevenidos, flanqueados ou indefesos.</p>
+    </div>
+</div>
