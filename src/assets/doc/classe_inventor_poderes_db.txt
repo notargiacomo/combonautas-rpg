@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Autômato Alquímico.</b> Uma vez por rodada, você pode usar um item alquímico ou poção guardada no compartimento de carga do seu autômato como uma ação livre. <i>Prérequisito: Compartimento de Carga.</i><b> (Dragão Brasil 198, Pag. 55)</b></p>
+        <p><b>Catalisador Composto.</b> Você pode usar dois catalisadores ao mesmo tempo <i>Pré-requisito: Catalisador Químico.</i><b> (Dragão Brasil 198, Pag. 55)</b></p>
+        <p><b>Catalisador Químico.</b> Você pode usar catalisadores com itens alquímicos, poções e engenhocas. <i>Pré-requisito: treinado em Misticismo.</i><b> (Dragão Brasil 198, Pag. 55)</b></p>
+        <p><b>Compartimento de Carga.</b> Seu autômato pode armazenar itens, com uma capacidade de espaços igual à sua Inteligência. Você pode sacar esses itens como uma ação livre. <i>Pré-requisito: Autômato.</i><b> (Dragão Brasil 198, Pag. 55)</b></p>
+        <p><b>Estilista.</b> Quando usa um item de vestuário feito por você mesmo, o bônus dele aumenta em 1 e você recebe +2 em testes de Diplomacia e Enganação contra humanoides. <i>Pré-requisito: treinado em Ofício (alfaiate).</i> <b>(Dragão Brasil 198, Pag. 55)</b></p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Explicação Científica.</b> Você pode gastar uma ação de movimento e uma quantidade de PMs limitada pela sua Inteligência. Você recebe resistência a magia igual aos PMs gastos até o final da cena.<b> (Dragão Brasil 198, Pag. 55)</b></p>
+        <p><b>Luthier.</b> Quando usa um instrumento musical feito por você mesmo, você faz testes de Atuação com Inteligência. <i>Pré-requisito: treinado em Ofício (artesão).</i><b> (Dragão Brasil 198, Pag. 55)</b></p>
+        <p><b>Saraivada.</b>Quando usa um item alquímico ou uma poção que cause dano como uma ação padrão, você pode gastar 2 PM para usar um segundo item alquímico ou poção que cause dano como parte da mesma ação. <i>Pré-requisito: Granadeiro, 7º nível de inventor.</i><b> (Dragão Brasil 198, Pag. 55)</b></p>
+        <p><b>Traje de Batalha.</b> Você combina seu autômato com uma armadura pesada que tenha fabricado. Quando veste essa armadura, você recebe 5 pontos de vida temporários para cada ponto de Inteligência. Enquanto estes pontos de vida temporários durarem, os bônus de parceiro do autômato são dobrados. Quando os pontos de vida temporários acabarem, o autômato enguiça como uma engenhoca. <i>Pré-requisitos: Autômato, Couraceiro, 12º nível de inventor.</i><b> (Dragão Brasil 198, Pag. 55)</b></p>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Estrelismo.</b> Você é lindo, talentoso e… extremamente egocêntrico. Você sofre –5 em testes de Diplomacia e Intuição. Além disso, sempre que falha em um teste de Atuação, fica alquebrado até o fim da cena.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Falastrão.</b> Você está dando suas palestrinhas. Você não consegue ficar quieto e deve ser sempre o primeiro a falar, por mais inconveniente que isso possa ser. Você sofre –5 em testes de Furtividade e Nobreza e pode se envolver em diversos problemas, especialmente se estiver diante de certas autoridades ou tentando passar discretamente por alguém. †</p>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 <div class="row">
+<div class="col-sm-12 text-justify">
 <h4>Músicas de Bardo</h4>
 <p>Alguns poderes do bardo são Músicas. Esses poderes compartilham as seguintes regras.</p>
 <ul>
@@ -6,4 +7,12 @@
 <li>Ativar uma música gasta uma ação padrão e 1 PM.</li>
 <li>Efeitos de músicas têm alcance curto.</li>
 </ul>
+<hr>
+<h4>Performances</h4>
+<p>Alguns poderes de bardo são Performances. Esses poderes compartilham as seguintes regras.</p>
+<ul>
+    <li>Usar uma performance gasta uma ação de movimento e exige um teste de Atuação (CD 15 + 5 para cada performance usada anteriormente na mesma cena) usando um instrumento musical.</li>
+    <li> Uma performance tem o mesmo alcance de sua Inspiração e afeta todos os aliados sob efeito de sua Inspiração.</li>
+</ul>
+</div>
 </div>
