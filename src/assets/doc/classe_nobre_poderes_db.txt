@@ -1,6 +1,16 @@
 <div class="row">
     <div class="col-sm-6 text-justify">
+        <p><b>Antecipar Ataque.</b> Quando um aliado em alcance curto é atingido por um ataque, você pode gastar 2 PM para forçar o inimigo a rolar novamente o teste de ataque e ficar com o segundo resultado. <i>Pré-requisito: 10º nível de nobre.</i></p>
+        <p><b>Apontar Fraqueza.</b> Quando um aliado sob efeito de Estrategista causa dano, você pode instruí-lo sobre onde atacar para penetrar as defesas do inimigo. Para cada PM gasto (limitado pelo seu Carisma), o aliado ignora 5 pontos de redução de dano. <i>Pré-requisito: Estrategista.</i></p>
+        <p><b>Aproveitar Brecha.</b> Quando um aliado faz um acerto crítico em um inimigo, você pode gastar 5 PM para instruir outro aliado em alcance curto. Esse aliado pode gastar uma reação para fazer um ataque contra esse inimigo. <i>Pré-requisito: 12º nível de nobre.</i></p>
+        <p><b>Comitiva.</b> Você pode ter um parceiro adicional, além do normal para o seu nível.</p>
+        <p><b>Encorajar Bravura.</b> Quando usa Gritar Ordens, você pode gastar uma quantidade de PM (limitado por seu Carisma). Para cada PM que gastar, os aliados afetados por suas ordens recebem 5 PV temporários. <i>Pré-requisito: 7º nível de nobre.</i></p>
     </div>
     <div class="col-sm-6 text-justify">
+        <p><b>Em Formação.</b> Seus aliados sob efeito de Estrategista recebem +2 em rolagens de dano contra inimigos flanqueados. <i>Pré-requisito: Estrategista.</i></p>
+        <p><b>Liderar o Ataque.</b> Quando obtém um acerto crítico, até o fim do turno, você pode usar Estrategista como uma ação livre. <i>Pré-requisitos: Estrategista, 11º nível de nobre.</i></p>
+        <p><b>Ordens Marciais.</b> Você pode usar Gritar Ordens como uma ação de movimento, em vez de livre. Se fizer isso, cada aliado afetado soma o bônus de suas ordens em sua primeira rolagem de dano no turno. <i>Pré-requisito: 5º nível de nobre, Estrategista.</i></p>
+        <p><b>Palavras Rápidas.</b> Quando usa Palavras Afiadas, você pode gastar +2 PM para usá-la como ação de movimento. <i>Prérequisito: 9º nível de nobre.</i></p>
+        <p><b>Siga o Líder.</b> Você soma seu Carisma em Iniciativa. Se for o primeiro na iniciativa, em sua primeira rodada você pode usar uma habilidade de nobre com tempo de execução de ação padrão ou menor como ação livre. <i>Pré-requisito: treinado em Iniciativa.</i></p>
     </div>
 </div>

@@ -1,5 +1,8 @@
 <div class="row">
     <div class="col-sm-6 text-justify">
-
+        <p><b>Filantropo.</b> Você doa parte de sua riqueza para fazer o bem. Você não recebe a habilidade Espólio e, quando usa sua habilidade Riqueza, recebe apenas metade do valor normal.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Mimado.</b> Bajulado desde criança, você fica desconcertado sempre que percebe que não é tão bom quanto lhe diziam. Na primeira vez em que cada cena que você falha em um teste de perícia, você perde 1 PM por patamar. Se já estiver sem PM, você fica frustrado por uma rodada.</p>
     </div>
 </div>
