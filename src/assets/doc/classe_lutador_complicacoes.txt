@@ -1,4 +1,5 @@
 <div class="row">
     <div class="col-sm-6 text-justify">
+        <p><b>Firula.</b> Na primeira rodada de cada combate, você deve gastar uma ação padrão se apresentando, fazendo uma coreografia ou declamando seu peso, altura e histórico. †</p>
     </div>
 </div>

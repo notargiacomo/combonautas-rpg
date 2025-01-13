@@ -1,6 +1,27 @@
 <div class="row">
     <div class="col-sm-6 text-justify">
+        <p><b>Caminho Suave.</b> Quando faz um teste de manobra de combate, você pode gastar uma quantidade de PM a sua escolha (limitado por sua Sabedoria). Para cada PM que gastar, você recebe +2 no teste. Este bônus é dobrado contra ameaças do tipo lacaio. <i>Pré-requisito: Sabedoria 2.</i></p>
+        <p><b>Corpo Fechado.</b> Você pode gastar 1 PM para somar sua Constituição como um bônus em um teste de resistência. (cumulativo com o atributo-chave da perícia).</i></p>
+        <p><b>Dança de Batalha.</b> Você pode gastar uma ação de movimento e 1 PM para começar uma dança de batalha. Enquanto estiver dançando, você recebe +2 na Defesa, em Acrobacia e em testes de Enganação para fintar. A partir do 7º nível, e novamente a partir do 15º nível, você pode gastar +1 PM ao usar sua dança para aumentar esses bônus em +2 por PM adicional gasto. A dança dura até o fim da cena, até você escolher interrompê-la ou até você sofrer uma condição de atordoamento ou de movimento. <i>Pré-requisitos: treinado em Acrobacia e Atuação.</i></p>
+        <p><b>Escudo de Punhos.</b> Você recebe um bônus na Defesa igual à quantidade de ataques desarmados que acertou no seu turno. Esse bônus dura até o começo do seu próximo turno.</p>
+        <p><b>Mahoujutso.</b> Você aprende a magia Toque Chocante ou a magia Infligir Ferimentos, à sua escolha (CD Sab). Quando usa o aprimoramento dessas magias que permite fazer um ataque como parte da execução da magia, você recebe +2 nesse teste de ataque, caso use um ataque desarmado. Você pode aprender este poder duas vezes, uma para cada magia. <i>Pré-requisitos: Sexto Sentido, treinado em Misticismo. <b>e</b></i></p>
+        <p><b>Mahoujutso Rápido.</b> Quando faz um ataque relâmpago, você substitui um de seus ataques desarmados por uma conjuração das magias Toque Chocante, Infligir Ferimentos, Toque Álgido ou Toque Vampírico. A magia deve usar o aprimoramento que permite fazer um ataque como parte da execução da magia e nenhum outro. <i>Pré-requisito: Mahoujutsu.<b>e</b></i></p>
+        <p><b>Mahoujutso Superior.</b> Você aprende a magia Toque Álgido (DB 182) ou Toque Vampírico, à sua escolha (CD Sab). Quando usa o aprimoramento dessas magias que permite fazer um ataque como parte da execução da magia, seu ataque desarmado causa um dado de dano adicional do mesmo tipo. Você pode aprender este poder duas vezes, uma para cada magia. <i>Pré-requisitos: Mahoujutsu.<b>e</b></i></p>
+        <p><b>Meditação de Ataque.</b> Você pode gastar uma ação de movimento e 1 PM para meditar, concentrando sua mente no ataque. Seu próximo ataque desarmado feito nesta cena tem o dano aumentado em um passo e causa dano dobrado contra objetos. <i>Pré-requisito: treinado em Misticismo.</i></p>
+        <p><b>Mente Sã em Corpo São.</b> Você pode gastar uma ação de movimento e uma quantidade de PM à sua escolha (limitado pela sua Sabedoria) para se curar. Cada PM gasto recupera 1d10 PV. <i>Pré-requisitos: treinado em Vontade, Sab 1.</i></p>
     </div>
     <div class="col-sm-6 text-justify">
+        <p><b>Onde de Choque.</b> Você pode gastar 3 PM e uma ação padrão para golpear o chão. Todas as criaturas em uma linha de 9m a partir de você sofrem o dano de seu ataque desarmado e ficam caídas (Reflexos CD For evita o dano e a condição). <i>Pré-requisitos: 6º nível, Força 4.</i></p>
+        <p><b>Passo Leve.</b> Você ganha deslocamento de escalada igual ao seu deslocamento base e +10 em testes de Atletismo para saltar. Caso termine seu deslocamento em uma superfície vertical ou de ponta-cabeça, cai e sofre dano normal pela queda. <i>Pré-requisitos: treinado em Acrobacia ou Atletismo.</i></p>
+        <p><b>Pontdo de Pressão.</b> A CD de suas habilidades de lutador aumenta em +2. <i>Pré-requisito: treinado em Cura.</i></p>
+        <p><b>Segredo da Essência.</b> Quando acerta um alvo com dois ou mais ataques desarmados no mesmo turno, você pode gastar 1 PM para causar dano de essência igual ao dano de um ataque desarmado contra esse mesmo alvo. <i>Pré-requisito: Sexto Sentido.</i></p>
+        <p><b>Sexto Sentido.</b> Se você não estiver usando armadura, soma sua Sabedoria na Defesa, limitado pelo seu nível.</p>
+        <p><b>Terceira Mão.</b> Quando faz um ataque corpo a corpo com uma arma simples, você pode usar o dano básico da arma ou seu dano básico desarmado, o que for maior.</i></p>
+        <p><b>Terceira Mão: Adaga.</b> Você pode usar ataques com adagas como parte de um
+        ataque relâmpago. <i>Pré-requisito: Terceira Mão.</i></p>
+        <p><b>Terceira Mão: Bordão.</b> Você pode usar qualquer poder de lutador que permita um teste de resistência usando um bordão. Caso o faça, a CD do teste de resistência aumenta em +2. <i>Pré-requisito: Terceira Mão.</i></p>
+        <p><b>Terceira Mão: Espada Curta. </b> Você aumenta a margem de crítico de espadas curtas para 17-20. <i>Pré-requisito: Terceira Mão.</i></p>
+        <p><b>Terceira Mão: Lança.</b> Você aumenta o multiplicador de crítico de lanças para x4. <i>Pré-requisito: Terceira Mão.</i></p>
+        <p><b>Toque Cegante.</b> Quando faz um ataque desarmado contra uma criatura, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a criatura fica cega por uma rodada (Fortitude CD Sab nega). Esse é um efeito de metabolismo.</p>
     </div>
 </div>

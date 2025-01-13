@@ -349,7 +349,7 @@ export class ClasseData {
         proficiencias: [Proficiencia.ARMAS_SIMPLES,Proficiencia.ARMADURAS_LEVES],
         pericia_obrigatoria:'Luta',
         pericia_escolha_entre_duas:['Fortitude'],
-        pericias_escolha_grupo:['Acrobacia', 'Atletismo', 'Adestramento','Enganação', 'Furtividade', 'Iniciativa', 'Intimidação', 'Ofício', 'Percepção', 'Pontaria', 'Reflexos'],
+        pericias_escolha_grupo:['Acrobacia', 'Adestramento', 'Atletismo','Enganação', 'Furtividade', 'Iniciativa', 'Intimidação', 'Ofício', 'Percepção', 'Pontaria', 'Reflexos'],
         numero_pericias_escolha_grupo: 4,
         imagem: 'assets/img/classe_lutador.png',
         tabela: 'assets/img/tabela_classe_lutador.png',
