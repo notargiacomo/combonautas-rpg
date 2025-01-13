@@ -56,5 +56,59 @@ um dia inteiro de prece e meditação.</p>
 <li><i>Aprimorada.</i> Você recebe Destreza +4, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m.</li>
 <li><i>Superior.</i> Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m.</li>
 </ul>
+
+<hr>
+
+<h4>NOVO TIPO DE PARCEIRO: ABERRANTE</h4>
+<b> (Dragão Brasil 204, Pag. 78)</b>
+<p>Uma criatura corrompida pela Tormenta, de aparência perturbadora. Apenas devotos de Aharadak podem ter esse tipo de parceiro.</p>
+<p>Uma vez por rodada, você pode gastar 1 PM para causar 2d6 pontos de dano psíquico ou causar a perda de 1d4 PM em uma criatura em alcance curto (este é um efeito mental).</p>
+<ul>
+<li><b>Veterano:</b> você também pode gastar 2 PM para causar 4d6 de dano ou perda de 1d6 PM.</li>
+<li><b>Mestre:</b> você também pode gastar 4 PM para causar 6d6 de dano ou perda de 1d8 PM.</li>
+</ul>
+
+<hr>
+
+<h4>Forma Elemental</h4>
+(Dragão Brasil 204, Pag. 83, 84 e 85)
+<p>O druida de Arton pode escolher substituir sua habilidade de Forma Selvagem por Forma Elemental. Uma vez escolhida, a troca é permanente.</p>
+<p>Esta habilidade funciona como Forma Selvagem (Tormenta20, p. 63) mas, em vez de um animal, você assume a forma de um elemental escolhido entre as opções a seguir no momento da transformação.</p>
+<p>Forma Elemental conta como Forma Selvagem para efeitos de pré-requisitos, itens e outras habilidades. Por exemplo Forma Selvagem Aprimorada também permite assumir a forma elemental aprimorada, e Magia Natural permite lançar magias enquanto estiver em Forma Elemental.</p>
+
+<b>Forma Aquosa</b>
+<p>Você recebe Força +2, deslocamento de natação 12m, imunidade a frio, vulnerabilidade a fogo e uma arma natural que ataca inimigos a até 3m, causa 1d8 pontos de dano de frio e é uma arma versátil (+2 em testes para desarmar e derrubar).</p>
+<ul>
+<li><i>Aprimorada.</i> Você recebe Força +4, deslocamento de natação 18m, imunidade a frio, vulnerabilidade a fogo e uma arma natural que ataca inimigos a até 6m, causa 1d10 pontos de dano de frio e é uma arma versátil (+4 em testes para desarmar e derrubar). Seu tamanho muda para Grande.</li>
+<li><i>Superior.</i> Você recebe Força +6, deslocamento de natação 24m, imunidade a frio, vulnerabilidade a fogo e uma arma natural que ataca inimigos a até 9m, causa 1d12 pontos de dano de frio e é uma arma versátil (+6 em testes para desarmar e derrubar). Seu tamanho muda para Grande.</li>
+</ul>
+
+<b>Forma Eólica</b>
+<p>Você recebe Destreza +2, deslocamento de voo 12m, imunidade a elétrico, vulnerabilidade a ácido e duas armas naturais à distância, que causam 1d6 pontos de dano de eletricidade com alcance curto. Se atacar com ambas, sofre –2 em todos os testes de ataque até seu próximo turno.</p>
+<ul>
+<li><i>Aprimorada.</i> Você recebe Destreza +4, deslocamento de voo 18m, imunidade a elétrico, vulnerabilidade a ácido e duas armas naturais à distância (como acima, mas dano Fofo? Sim,e
+letal também! de 1d8). Se atacar com ambas, sofre –2 em todos os testes de ataque até seu próximo turno. Seu tamanho muda para Grande.</li>
+<li><i>Superior.</i> Você recebe Destreza +6, deslocamento de voo 24m, imunidade a elétrico, vulnerabilidade a ácido e duas armas naturais à distância (como acima, mas dano de 1d10 e alcance médio). Se atacar com ambas, sofre –2 em todos os testes de ataque até seu próximo turno. Seu tamanho
+muda para Grande.</li>
+</ul>
+
+<b>Forma Ígnea</b>
+<p>Você recebe Destreza +2, imunidade a fogo, vulnerabilidade a frio e uma arma natural à distância, que causa 1d8 pontos de dano em alcance curto. Você pode gastar uma ação de movimento para concentrar as chamas; se fizer isso, seu próximo ataque atinge todas as criaturas em um cone de 6m (faça um ataque à distância e compare com a Defesa de cada criatura).</p>
+<ul>
+<li><i>Aprimorada.</i> Você recebe Destreza +4, imunidade a fogo, vulnerabilidade a frio e uma arma natural à distância, que causa 1d10 pontos de dano em alcance curto. Você pode gastar uma ação de movimento para concentrar as chamas; se fizer isso, seu próximo ataque atinge todas as criaturas
+em um cone de 6m (faça um ataque à distância e compare com a Defesa de cada criatura). Além disso, quando sofre dano por um ataque corpo a corpo adjacente, o atacante sofre 2d6 pontos de dano de fogo.
+Seu tamanho muda para Grande.</li>
+<li><i>Superior.</i> Você recebe Destreza +6, imunidade a fogo, vulnerabilidade a frio e uma arma natural à distância que causa 1d12 pontos de dano em alcance curto. Você pode gastar uma ação de movimento para concentrar as chamas. Se fizer isso, seu próximo ataque atinge todas as criaturas em um
+cone de 6m, faça um ataque à distância e compare com a Defesa de cada criatura. Além disso, quando sofre dano por um ataque corpo a corpo adjacente, o atacante sofre 4d6 pontos de dano de fogo. Seu tamanho muda para Grande.</li>
+</ul>
+
+<b>Forma Rochosa</b>
+<p>Você recebe Força +2, deslocamento de escalada 9m, imunidade a ácido, redução de corte, impacto e perfuração 5, vulnerabilidade a elétrico e uma arma natural à distância (1d6 pontos de dano de ácido
+em alcance curto). Você soma Força nos ataques com essa arma, e ela é afetada por poderes que afetam armas de arremesso (mas não de disparo).</p>
+<ul>
+<li><i>Aprimorada.</i> Você recebe Força +4, deslocamento de escalada 9m e escavação 3m, imunidade a ácido, redução de corte, impacto e perfuração 10, vulnerabilidade a elétrico e uma arma natural à distância (1d10 pontos de dano de ácido em alcance curto). Você soma Força nos ataques com essa arma e ela é afetada por poderes que afetam armas de arremesso (mas não de disparo). Seu tamanho muda para Grande.</li>
+<li><i>Superior.</i> Você recebe Força +6, deslocamento de escalada 12m e escavação 6m, imunidade a ácido, redução de corte, impacto e perfuração 20, vulnerabilidade a elétrico e uma arma natural à distância (3d6 pontos de dano de ácido em alcance curto). Você soma Força nos ataques com essa arma e ela é afetada por poderes que afetam armas de arremesso (mas não de disparo). Seu tamanho muda para Enorme.</li>
+</ul>
+
 </div>
 </div>
