@@ -9,4 +9,6 @@
 <li><b>Raposa.</b> A sagaz raposa nunca está onde se espera. Você pode lançar Imagem Espelhada.</li>
 <li><b>Tartaruga.</b> A tartaruga protege os seus. Você pode lançar Armadura Arcana.</li>
 <li><b>Urso.</b> O vigoroso urso permite que você lance Vitalidade Fantasma e possa usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um druida de seu nível.</li>
+<li><b>Dragão.</b> Dragões não são animais, mas algumas tribos bárbaras veneram dragões e os adotam como seu totem. Isso os torna uma opção para animal totêmico. Implacável, o dragão permite que seus bárbaros lancem Arma Mágica. <b>(Dragão Brasil 200, Pag. 71)</b></li>
+<li><b>Texugo.</b> O corajoso texugo permite que você lance Arma Espiritual. A arma se manifesta como um texugo espectral que causa dano de perfuração com sua mordida. <b>(Dragão Brasil 208, Pag. 56)</b></li>
 </ul>
