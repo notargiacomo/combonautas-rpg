@@ -257,7 +257,7 @@ export class ClasseData {
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
-        ha_poderes_db: true,
+        ha_poderes_db: false,
         ha_complicacoes: true,
         descricao_informacoes: '',
         fator_vida: 5,
