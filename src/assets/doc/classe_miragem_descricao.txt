@@ -1,0 +1,6 @@
+<h4>Características de Classe</h4>
+<p><b>Pontos de Vida.</b> Um miragem começa com 16 pontos de vida + Constituição e ganha 4 PV +
+Constituição por nível.</p>
+<p><b>Pontos de Mana.</b>  3 PM por nível.</p>
+<p><b>Perícias.</b> Luta (For) ou Pontaria (Des), Reflexos (Des), mais 2 a sua escolha entre Acrobacia (Des), Adestramento (Car), Atletismo (For), Fortitude (Con), Furtividade (Des), Guerra (Int), Iniciativa (Des), Intimidação (Car), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des) e Sobrevivência (Sab).</p>
+<p><b>Proficiências.</b> Armas marciais e escudos.</p>

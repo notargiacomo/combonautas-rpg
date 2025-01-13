@@ -1,0 +1,26 @@
+<div class="row">
+    <h4>Poderes de Classe</h4>
+    <div class="col-sm-6 text-justify">
+        <p><b>Arsenal do Deserto.</b> Você recebe +2 nas rolagens de dano com azagaias, cimitarras e lanças e pode considerá-las armas leves.</p>
+        <p><b>Aumento de Atributo.</b> Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo.</p>
+        <p><b>Bater e Correr.</b> Quando faz uma investida, você pode continuar se movendo após o ataque, até o limite de seu deslocamento. Se gastar 2 PM, pode fazer uma investida sobre terreno difícil e sem sofrer a penalidade de Defesa.</p>
+        <p><b>Coração de Trovão.</b> Você recebe +2 em Vontade e se torna imune a efeitos de medo.</p>
+        <p><b>Demônio de Areia.</b> Você possui um pequeno espírito companheiro. Veja a aba informações para mais detalhes. <i><b>e</b></i></p>
+        <p><b>Emboscar.</b> Você pode gastar 2 PM para realizar uma ação padrão adicional em seu turno. Você só pode usar este poder na primeira rodada de um combate.</p>
+        <p><b>Espiral Ampla.</b> Você pode aplicar o bônus em rolagens de dano por Dança da Areia contra alvos em alcance médio, e, enquanto está executando a dança, seu deslocamento aumenta em +3m.</p>
+        <p><b>Erguer Areia.</b> Enquanto está executando uma Dança da Areia, uma vez por rodada você pode gastar 1 PM para projetar um pequeno redemoinho que percorre uma linha de 9m. Criaturas nessa área ficam cegas por 1d4 rodadas e caídas (Ref CD Sab reduz as condições para ofuscado por 1 rodada). <i><b>e</b></i></p>
+        <p><b>Esquiva Instintiva.</b> Enquanto está executando a Dança da Areia, você soma sua Sabedoria na Defesa e em Reflexos, limitado pelo seu nível.</p>
+        <p><b>Evasão.</b> Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar. Você ainda sofre dano normal se falhar no teste de Reflexos. Este poder exige liberdade de movimentos; você não pode usá-lo se estiver de armadura pesada ou na condição imóvel.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Instinto Guerrilheiro.</b> Você soma sua Sabedoria em Atletismo e Furtividade. <i>Pré-requisito: Sab 1.</i></p>
+        <p><b>Mergulho Longo.</b> O alcance de seu Mergulho Terrestre aumenta para médio. <i>Pré-requisito: 10º nível de miragem.</i></p>
+        <p><b>Passo Duplo.</b> Uma vez por rodada, se estiver executando a Dança da Areia e usar a ação agredir para fazer um ataque com uma arma leve, você pode gastar 2 PM para fazer um ataque adicional.</p>
+        <p><b>Passos Precisos.</b> Enquanto está executando a Dança da Areia, você recebe +2 na margem de ameaça de seus ataques.</p>
+        <p><b>Pele de Areia.</b> Quando usa Mergulho Terrestre, você recebe redução de dano 5 até o início de seu próximo turno. <i>Pré-requisito: 10º nível de miragem.</i></p>
+        <p><b>Tempestade de Areia.</b> Quando faz uma investida, você pode gastar 2 PM para cada inimigo adjacente em seu caminho. Se fizer isso, você pode fazer um ataque corpo a corpo contra esse inimigo com os mesmos benefícios da investida. <i>Pré-requisitos: 6º nível de miragem, Bater e Correr.</i></p>
+        <p><b> Tesouros do Deserto.</b> Uma vez por dia, se for bem-sucedido em montar um acampamento em terreno natural, você encontra frutos, insetos ou outros recursos naturais que podem ser consumidos para recuperar 1d4+1 PM. <i>Pré-requisito: treinado em Sobrevivência.</i></p>
+        <p><b>Tornar-se Sombra.</b> Se estiver sob efeito de camuflagem, você recebe +2 na Defesa e em testes de resistência.</p>
+        <p><b>Veloz.</b> Uma vez por rodada, você pode gastar 2 PM para realizar uma ação de movimento adicional em seu turno.</p>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-sm-12 text-justify">
+        <p><b>Dança da Areia.</b> Você pode gastar 2 PM para iniciar uma Dança da Areia. Enquanto executa essa dança, você recebe um bônus de +1d4 em suas rolagens de dano contra alvos em alcance curto. A cada quatro níveis, você pode gastar +1 PM para aumentar o bônus de dano (veja a tabela da classe). A dança termina ao final da cena ou se você passar uma rodada sem percorrer pelo menos 6m sem passar pelo mesmo espaço duas vezes. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel.</p>
+        <p><b>Movimento Furtivo.</b>  Você pode se mover com seu deslocamento normal enquanto usa Furtividade sem sofrer penalidades no teste de perícia.</p>
+        <p><b>Investida Acrobática.</b> No 3º nível, você não precisa percorrer uma linha reta para fazer uma investida.</p>
+        <p><b>Cortina de Poeira.</b>  No 5º nível, você aprende como criar uma nuvem de terra ou outros detritos para obscurecer a visão de seus inimigos. Quando usa Dança da Areia, você pode gastar 2 PM para receber camuflagem leve enquanto sua dança estiver ativa. <i><b>e</i></b></p>
+        <p><b>Guerrilheiro das Dunas.</b> No 7º nível, a penalidade que você sofre em testes de Furtividade por atacar ou realizar uma ação chamativa é reduzida para −5.</p>
+        <p><b>Mergulho Terrestre.</b> A partir do 9º nível, se estiver sobre areia, terra ou outro tipo de terreno que não seja rocha sólida (ou o equivalente), uma vez por rodada você pode gastar 3 PM para se teleportar para qualquer outro ponto em alcance curto do mesmo tipo de terreno. <i><b>e</i></b></p>
+        <p><b>Corpo de Areia.</b> No 20º nível, quando usa Dança da Areia, você pode gastar 5 PM para se transformar parcialmente em um redemoinho de poeira. Enquanto sua dança estiver ativa, você recebe fortificação 25% e imunidade a efeitos de movimento e ignora os primeiros 20 pontos de dano que sofrer a cada turno.</p>
+    </div>
+</div>

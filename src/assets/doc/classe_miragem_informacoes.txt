@@ -1,0 +1,14 @@
+<div class="row">
+<div class="col-sm-12 text-justify">
+<h4>Demônios de Areia</h4>
+<p>Um demônio de areia é um espírito menor que se manifesta na forma de um pequeno animal do deserto feito de areia. Em termos de jogo, é um aliado especial com o qual você pode se comunicar telepaticamente em alcance médio. Ele obedece a suas ordens, mas ainda está limitado ao que uma criatura de sua forma pode fazer. Se ele morrer, você fica atordoado por uma rodada. Você pode invocar um novo demônio de areia com um ritual que exige um dia e T$ 100 em ingredientes.</p>
+<ul>
+<li>Coiote. Quando faz um teste de Acrobacia ou Sobrevivência, você pode pagar 1 PM para rolar dois dados e usar o melhor resultado.</li>
+<li>Escorpião. Você pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja empunhando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Veneno.</li>
+<li>Falcão. Você não pode ser surpreendido e nunca fica desprevenido.</li>
+<li>Raposa. Seu deslocamento aumenta em +3m.</li>
+<li>Serpente. Você adquire percepção às cegas em alcance curto.</li>
+<li>Urubu. Você soma sua Sabedoria em Fortitude e em seu total de pontos de vida.</li>
+</ul>
+</div>
+</div>
