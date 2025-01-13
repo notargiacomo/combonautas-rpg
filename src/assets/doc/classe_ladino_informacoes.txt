@@ -1,0 +1,11 @@
+<div class="row">
+<h4>Esquemas</h4>
+<p>É comum aos personagens mencionados anteriormente um certo grau de planejamento, mas também de improviso. Os livros de Locke Lamora, principalmente, são estruturados como filmes de assalto. Abordar planejamento dentro do RPG, porém, é desafiador por alguns motivos. O primeiro é por já existir essa questão na esfera dos jogadores. Todas as ações podem ser planejadas, seja coordenando com os demais membros do grupo ou apenas pensando com antecedência. Isso significa que quaisquer elementos mecânicos
+relacionados a planejamento precisam ser relativamente sutis e pouco intrusivos.</p>
+<p>Assim, vamos considerar esquemas um novo tipo de poder para a classe Ladino. Um esquema é um plano rápido, feito quase que de improviso, determinando ações desse turno e do próximo. Quando se concretiza, um esquema oferece bônus adicionais.</p>
+<p>Esses novos poderes são baseados em Destreza, por dependerem de reflexos e escolhas súbitas muito mais que de qualquer planejamento prévio.</p>
+<hr>
+<h4>Ferramentas</h4>
+<p>Os mestres incondicionais de equipamentos em Tormenta20 são os inventores. Porém, ao ladino cabe o papel de usar ferramentas de forma incomum, de obter vantagens inesperadas e especializadas de objetos aparentemente inócuos. Deixe o lutador usar cadeiras ou pedras como armas improvisadas; ao ladino cabe aproveitar moedas para distrair, capas para se esconder e toda sorte de item ou vestimenta para enganar e obter vantagem. Por mais que não entenda completamente os meandros da engenharia e da magia que geram itens superiores ou mágicos, o ladino pode encontrar alguma forma de explorar essas características por um viés torto que escapa aos mais honestos.</p>
+<p>Alguns dos poderes apresentados nesse artigo abordam esse uso de ferramentas, seja expandindo o repertório do Truque Mágico ou gerando novas habilidades.</p>
+</div>
