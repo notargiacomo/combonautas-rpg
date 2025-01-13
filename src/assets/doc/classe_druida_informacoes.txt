@@ -1,4 +1,6 @@
 <div class="row">
+<div class="col-sm-12 text-justify">
+
 <h4>Companheiro Animal</h4>
 <p>Um companheiro animal é um amigo valoroso e fiel. Você decide de qual espécie 
 é seu companheiro. Vocês têm um vínculo mental, sendo capazes de entender um ao outro. Seu companheiro animal obedece a você, mesmo que isso arrisque a vida dele.</p>
@@ -54,4 +56,5 @@ um dia inteiro de prece e meditação.</p>
 <li><i>Aprimorada.</i> Você recebe Destreza +4, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m.</li>
 <li><i>Superior.</i> Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m.</li>
 </ul>
+</div>
 </div>

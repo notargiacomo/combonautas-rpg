@@ -16,6 +16,8 @@ export interface Classe {
   descricao_complicacoes?: string;
   descricao_poderes_db?: string;
   ha_informacoes_adicionais?: boolean;
+  ha_poderes_db?: boolean;
+  ha_complicacoes?: boolean;
   descricao_informacoes?:string;
   fator_vida?: number;
   fator_mana?:number;
