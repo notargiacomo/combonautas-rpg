@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Estandarde do Dragão.</b> No início de cada cena, você e todos os aliados que possam ver seu estandarte podem jurar lealdade a um dragão como uma reação. Caso o façam, os PMs temporários recebidos por Estandarte são dobrados e sofrem -2 em testes de resistência contra habilidades de dragões. <i>Pré-requisitos: Coração de Dragão, Estandarte.</i><b> (Dragão Brasil 200, Pag. 72)</b></p>
+        <p><b>Coração de Dragão.</b> Você recebe +2 PV e +2 PM. Além disso, para você, um dragão jovem conta como um único parceiro para seu limite de parceiros. <i>Pré-requisitos: Car 2, 3º nível de personagem.</i><b> (Ameaças de Arton, Pag. 67)</b></p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Postura de Combate: Dragão Incansável.</b> Enquanto esta postura estiver ativa, você aumenta sua margem de crítico em dois. Sempre que obtém um acerto crítico, recupera 1 PM. <i>Pré-requisitos: Coração de Dragão.</i><b> (Dragão Brasil 200, Pag. 72)</b></p>
+    </div>
+</div>
