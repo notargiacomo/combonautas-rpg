@@ -1,5 +1,5 @@
 <div class="row">
-    <h4>Poderes de Classe</h4>
+    
     <div class="col-sm-6 text-justify">
         <p><b>Arma Sagrada.</b> Quando usa Golpe Divino para atacar com a arma preferida de sua divindade, o dado de dano que você rola por Golpe Divino aumenta para d12. <i>Pré-requisito: devoto de uma divindade (exceto Lena e Marah).</i></p>
         <p><b>Aumento de Atributo.</b> Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo.</p>

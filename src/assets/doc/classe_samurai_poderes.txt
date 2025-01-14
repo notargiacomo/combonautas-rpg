@@ -1,5 +1,5 @@
 <div class="row">
-    <h4>Poderes de Classe</h4>
+    
     <div class="col-sm-6 text-justify">
         <p><b>Arma Ancestral Adicional. </b>Você recebe uma arma ancestral adicional de um tipo à sua escolha. Esta arma segue a mesma progressão de melhorias e encantos de sua primeira arma ancestral, mas você pode escolher benefícios diferentes para ela.</p>
         <p><b>Arma Reverberante. </b>Quando usa Grito de Kiai para atacar com sua arma ancestral, você pode gastar +1 PM para aumentar o bônus de dano em +1 dado do mesmo tipo concedido por seu grito. <i>Pré-requisito: 5º nível de samurai.</i></p>

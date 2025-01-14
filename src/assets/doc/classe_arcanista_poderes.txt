@@ -1,5 +1,5 @@
 <div class="row">
-    <h4>Poderes de Classe</h4>
+    
     <div class="col-sm-6 text-justify">
         <p><b>Arcano de Batalha.</b> Quando lança uma magia, você soma seu atributo-chave na rolagem de dano.</b>
         <p><b>Aumento de Atributo.</b> Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo.</p>

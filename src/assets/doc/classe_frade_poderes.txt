@@ -1,0 +1,37 @@
+<div class="row">
+    
+    <div class="col-sm-6 text-justify">
+        <p><b>Ampliar Sacrário.</b> Você pode criar sacrários em alcance médio e eles passam a ocupar uma esfera de até 6m de raio. <i>Pré-requisito: 10º nível de frade.</i></p>
+        <p><b>Aumento de Atributo.</b> Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas uma vez por patamar para um mesmo atributo.</p>
+        <p><b>Autoridade Eclesiástica.</b> Você possui uma posição formal em uma igreja reconhecida pelos outros membros de sua fé. Os efeitos deste poder variam de acordo com a igreja e o deus — frades de Khalmyr, por exemplo, possuem autoridade como juízes no Reinado — e ficam a cargo do mestre. Como regra geral, você recebe +5 em testes de Diplomacia ou Intimidação ao lidar com devotos de sua divindade e paga metade do preço de itens alquímicos, poções e serviços em templos de sua divindade. <i>Pré-requisitos: 5º nível de frade, devoto de um deus maior.</i></p>
+        <p><b>Bênção Fortalecedora.</b> Quando lança Bênção, os aliados abençoados recebem uma quantidade de PV temporários igual a 5 vezes o bônus em testes de ataque fornecido pela magia. Estes PV temporários duram até o fim da cena. <i>Pré-requisito: Bênção.</i></p>
+        <p><b>Canto Monástico.</b> Você pode gastar uma ação padrão e 1 PM para entoar um cântico religioso. Faça um teste de Atuação para ajudar; se passar, você e todos os seus aliados em alcance curto recebem um bônus igual ao bônus de ajuda em um teste de perícia feito até o fim da cena ou na CD para resistir a uma de suas habilidades usada até o fim da cena. <i>Pré-requisito: treinado em Atuação.</i></p>
+        <p><b>Comunhão Vital.</b> Quando lança uma magia que cure uma criatura, você pode pagar +2 PM para que outra criatura em alcance curto (incluindo você mesmo) recupere uma quantidade de pontos de vida igual à metade dos PV da cura original. <i><b>e</b></i></p>
+        <p><b>Copista.</b> Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, pode fabricar o dobro de pergaminhos ao mesmo tempo (pagando o custo de matéria-prima de ambos). <i>Pré-requisito: treinado em Ofício (escriba).</i></p>
+        <p><b>Conhecimento Mágico.</b> Você aprende duas magias divinas de qualquer círculo que possa lançar. Você pode escolher este poder quantas vezes quiser.</p>
+        <p><b>Estudante Diligente.</b> No começo do dia você pode escolher uma perícia em que não seja treinado. Se fizer isso, até o fim do dia você sofre uma penalidade de 2 PM mas pode fazer testes da perícia escolhida como se fosse treinado nela.</p>
+        <p><b>Fé e Razão.</b> Quando usa uma habilidade de frade, você pode gastar 1 PM para somar sua Inteligência na CD para resistir à ela.</p>
+        <p><b>Liturgia Mágica.</b> Você pode gastar uma ação de movimento para executar uma breve liturgia de sua fé. Se fizer isso, a CD para resistir à sua próxima habilidade de frade (desde que usada até o final de seu próximo turno) aumenta em +2.</p>
+        <p><b>Mago Branco.</b> Suas magias de cura de luz custam –1 PM e curam +1 PV por dado de cura. <i>Pré-requisito: 3º nível de frade.</i></p>
+        <p><b>Memorizar Liturgia.</b> Uma vez por dia, você pode gastar uma hora de estudo e um número de pergaminhos que contenham magias divinas até sua Sabedoria. Até o fim do dia, você pode lançar as magias contidas nesses pergaminhos como se as conhecesse ou, se já conhecia a magia, seu custo é reduzido em –1 PM (cumulativo com outras reduções de custo). <i>Pré-requisitos: Copista, 8º nível de frade.</i></p>
+        <p><b>Mestre Celebrante.</b> número de pessoas que você afeta com uma missa aumenta em dez vezes e os benefícios que elas recebem dobram. <i>Pré-requisitos: qualquer poder de Missa, 10º nível de frade.</i></p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Missa: Bênção da Vida.</b> Os participantes recebem pontos de vida temporários em um valor igual ao seu nível + sua Sabedoria.</i></p>
+        <p><b>Missa: Chamado às Armas.</b> Os participantes recebem +1 em testes de ataque e rolagens de dano.</i></p>
+        <p><b>Missa: Esforço Concentrado.</b> Até o fim do efeito da missa, cada participante pode executar uma única ação padrão adicional em um de seus turnos. <i>Pré-requisito: Superar as Limitações.</i></p>
+        <p><b>Missa: Elevação do Espírito.</b> Os participantes recebem pontos de mana temporários em um valor igual a sua Sabedoria.</i></p>
+        <p><b>Missa: Escudo Divino.</b> Os participantes recebem +1 na Defesa e em testes de resistência.</p>
+        <p><b>Missa: Foco Espiritual.</b> Cada participante escolhe uma de suas habilidades. O custo dessa habilidade é reduzido em –1 PM. <i>Pré-requisito. Elevação do Espírito.</i></p>
+        <p><b>Missa: Imposição da Vontade.</b> Os participantes recebem +1 na CD para resistir às suas habilidades.</p>
+        <p><b>Missa: Mente Abençoada.</b> Quando faz um teste de Vontade, o participante pode rolar dois dados e usar o melhor resultado.</p>
+        <p><b>Missa: Superar as Limitações.</b> Cada participante recebe +1d6 num único teste a sua escolha e pode usá-lo mesmo após rolar o dado.</p>
+        <p><b>Psicografia.</b> Seus textos recebem inspiração divina. Você pode fabricar pergaminhos de qualquer magia divina (mesmo uma que não conheça) de quaisquer círculos a que tenha acesso. A CD para fabricar um desses pergaminhos aumenta em +5. <i>Pré-requisitos:  Copista, 5º nível de frade.</i></p>
+        <p><b>Sacrário da Misericórdia.</b> No início de cada um dos seus turnos, você pode gastar 1 PM para recuperar uma quantidade de PV igual a 5 + Sabedoria de cada criatura a sua escolha dentro do sacrário. <i>Pré-requisito: 6º nível de frade. <b>e</b></i></p>
+        <p><b>Sacrário da Resiliência.</b> Criaturas a sua escolha dentro do sacrário recebem +2 em testes de resistência e na Defesa. Quando ativa esse sacrário você pode gastar mais PM para fortalecer seu efeito; para cada 2 PM adicionais gastos, o bônus concedido pelo sacrário aumenta em +1 (bônus máximo limitado pelo círculo máximo de magias que você pode lançar). <i>Pré-requisito: 5º nível de frade. <b>e</b></i></p>
+        <p><b>Sacrário da Solenidade.</b> Criaturas dentro da área ficam sob condição terrível para lançar magias e sofrem –2 em testes de perícia. Quando ativa esse sacrário você pode gastar mais PM para fortalecer seu efeito; para cada 2 PM adicionais gastos, a penalidade causada pelo sacrário aumenta em +1 (penalidade máxima limitada pelo círculo máximo de magias que você pode lançar). <i><b>e</b></i></p>
+        <p><b>Sacrário da Verdade.</b> Sempre que uma criatura na área passa em um teste de Acrobacia, Enganação, Furtividade ou Ladinagem, ou acerta um ataque contra alguém flanqueado, ela sofre 2d6 pontos de dano psíquico por círculo de magia a que você tem acesso. <i><b>e</b></i></p>
+        <p><b>Sacrário das Sombras.</b> A área do sacrário é coberta por sombras; criaturas dentro dela recebem camuflagem leve e mortos-vivos dentro dela recebem +2 na Defesa e em testes de perícia. <i><b>e</b></i></p>
+        <p><b>Teologia Aplicada.</b> Escolha duas perícias. Quando faz um teste de uma dessas perícias (exceto testes de ataque), você pode gastar 1 PM para rolar novamente esse teste, usando Religião. Você pode escolher esse poder outras vezes para perícias diferentes.</p>
+    </div>
+</div>

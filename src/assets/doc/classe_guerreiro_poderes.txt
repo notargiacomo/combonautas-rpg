@@ -1,5 +1,5 @@
 <div class="row">
-    <h4>Poderes de Classe</h4>
+    
     <div class="col-sm-6 text-justify">
         <p><b>Ambidestria.</b> Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. <i>Pré-requisito: Des 2.</i></p>
         <p><b>Arqueiro.</b> Se estiver usando uma arma de ataque à distância, você soma sua Sabedoria em rolagens de dano (limitado pelo seu nível). <i>Pré-requisito: Sab 1.</i></p>

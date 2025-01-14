@@ -497,6 +497,35 @@ export class ClasseData {
         referencias: Referencia.DB,
         paginas: 'DB 199 pags. 91 a 94'
       },
+      {
+        id: 18,
+        nome: 'Frade',
+        nome_arquivo_descricao_classe:'classe_frade_descricao',
+        nome_arquivo_descricao_habilidades:'classe_frade_habilidades',
+        nome_arquivo_descricao_poderes:'classe_frade_poderes',
+        nome_arquivo_descricao_informacoes: 'classe_frade_informacoes',
+        nome_arquivo_descricao_poderes_db:'classe_frade_poderes_db',
+        nome_arquivo_descricao_complicacoes: 'classe_frade_complicacoes',
+        descricao_classe: '',
+        descricao_habilidades: '',
+        descricao_poderes: '',
+        descricao_poderes_db: '',
+        ha_informacoes_adicionais: true,
+        ha_poderes_db: false,
+        ha_complicacoes: false,
+        descricao_informacoes: '',
+        fator_vida: 3,
+        fator_mana: 6,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES,Proficiencia.ARMADURAS_LEVES],
+        pericia_obrigatoria:'Vontade',
+        pericia_escolha_entre_duas:['Religião'],
+        pericias_escolha_grupo:['Adestramento', 'Atuação', 'Conhecimento', 'Cura', 'Diplomacia', 'Fortitude', 'Guerra','Iniciativa', 'Intimidação', 'Intuição', 'Investigação', 'Misticismo','Ofício','Percepção', 'Nobreza'],
+        numero_pericias_escolha_grupo: 4,
+        imagem: 'assets/img/classe_frade.png',
+        tabela: 'assets/img/tabela_classe_frade.png',
+        referencias: Referencia.HEROIS,
+        paginas: ''
+      },
     ];
   }
 }

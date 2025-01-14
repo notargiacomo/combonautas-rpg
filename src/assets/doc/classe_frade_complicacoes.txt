@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Divindade Exigente.</b> Você serve sua divindade com afinco, mas às vezes parece que ela não fica satisfeita. No início de cada dia, role 1d4. Com um resultado 1, o custo de suas magias divinas aumenta em +1 PM por círculo até o fim do dia.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Preparação Litúrgica</b> Você só pode lançar magias preparadas; suas outras magias não podem ser lançadas, mesmo que você tenha pontos de mana para tal. Para preparar magias, você precisa gastar uma hora de seu dia orando, meditando, entoando mantras ou fazendo qualquer outro tipo de ritual litúrgico. Ao fazer isso, você escolhe metade das magias que conhece (por exemplo, se conhece 5 magias, escolhe 2) e só poderá lançar as magias escolhidas. Caso não possa se preparar, não poderá trocar as magias escolhidas no dia anterior.</p>
+    </div>
+</div>

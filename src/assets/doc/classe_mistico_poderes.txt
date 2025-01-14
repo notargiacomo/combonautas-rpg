@@ -1,5 +1,5 @@
 <div class="row">
-    <h4>Poderes de Classe</h4>
+    
     <div class="col-sm-6 text-justify">
         <p><b>Absorver Elemento.</b> Uma vez por cena, quando está em contato com uma expressão natural do seu elemento, você pode gastar uma ação de movimento para absorver energia mágica dele. Você adquire uma quantidade de PM temporários igual ao círculo máximo de magia que pode lançar. Esses PM duram por uma cena.</p>
         <p><b>Afinidade Maior.</b> Você escolhe um terceiro elemento para sua habilidade Afinidade. <i>Pré-requisito: 12º nível de místico, Afinidade Expandida.</i></p>

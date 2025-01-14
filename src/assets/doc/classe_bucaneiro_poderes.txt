@@ -1,5 +1,5 @@
 <div class="row">
-    <h4>Poderes de Classe</h4>
+    
     <div class="col-sm-6 text-justify">
         <p><b>Abusar dos Fracos.</b> Quando ataca uma criatura sob efeito de uma condição de medo, seu dano aumenta em um passo. <i>Pré-requisito: Flagelo dos Mares.</i></b>
         <p><b>Amigos no Porto. </b>Quando chega em uma comunidade portuária, você pode fazer um teste de Carisma (CD 10). Se passar, encontra um amigo para o qual pode pedir um favor ou que pode ajudá-lo como parceiro veterano de um tipo a sua escolha por um dia. <i>Pré-requisitos: Car 1, 6º nível de bucaneiro.</i></p>

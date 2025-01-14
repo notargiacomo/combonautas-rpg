@@ -1,0 +1,5 @@
+<h4>Características de Classe</h4>
+<p><b>Pontos de Vida.</b> Um frade começa com 12 pontos de vida (+ Constituição) e ganha 3 PV (+
+Constituição) por nível.</p>
+<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
+<p><b>Perícias.</b> Religião (Sab) e Vontade (Sab), mais 4 a sua escolha entre Adestramento (Car), Atuação (Car), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Misticismo (Int), Ofício (Int), Percepção (Sab) e Nobreza (Int).</p>

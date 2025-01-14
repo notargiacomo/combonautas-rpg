@@ -1,0 +1,22 @@
+<div class="row">
+<div class="col-sm-12 text-justify">
+<h4>Missas</h4>
+<p>Assim como o clérigo, o frade pode aprender poderes de missa. Esses poderes são descritos a seguir e compartilham as seguintes regras.</p>
+<ul>
+<li>Rezar uma Missa exige uma hora e o gasto de materiais especiais (como velas, incensos, água benta...) no valor de T$ 25. Um mesmo celebrante pode aplicar mais de um poder de Missa na mesma celebração. Cada poder adicional aumenta o custo da Missa em T$ 25.</li>
+<li>Uma Missa afeta um número máximo de pessoas igual a 1 + sua Sabedoria. Todas as pessoas precisam estar presentes durante toda a Missa.</li>
+<li>Os efeitos de uma Missa duram um dia. Uma mesma criatura só pode receber os benefícios da mesma Missa uma vez por dia.</li>
+</ul>
+
+<hr>
+
+<h4>Sacrários</h4>
+<p>Alguns poderes de frade são Sacrários – uma área consagrada pelo poder divino. Esses poderes compartilham as seguintes regras.</p>
+<ul>
+<li>Ativar um sacrário gasta uma ação padrão e 3 PM.</li>
+<li>Um sacrário ocupa uma esfera de 3m de raio em alcance curto e dura até o fim da cena.</li>
+<li>Você pode ter um número de sacrários ativos simultâneos igual à sua Sabedoria.</li>
+<li>Um sacrário não pode ser ativado em uma área afetada por outro sacrário.</li>
+</ul>
+</div>
+</div>

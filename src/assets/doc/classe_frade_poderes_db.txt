@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-sm-6 text-justify">
+        <p><b>Coração de Dragão.</b> Você recebe +2 PV e +2 PM. Além disso, para você, um dragão jovem conta como um único parceiro para seu limite de parceiros. <i>Pré-requisitos: Car 2, 3º nível de personagem.</i><b> (Ameaças de Arton, Pag. 67)</b></p>
+        <p><b>Gerador Elemental.</b> Você passa a gerar uma pequena quantidade de energia elemental no seu corpo, mesmo sendo incapaz de conter esse poder. No começo de cada turno, você pode optar por receber uma quantidade de PM temporários igual ao seu Carisma. Caso o faça, cada PM gasto nesse turno faz com que você perca 5 pontos de vida. <i>Pré-requisitos: Coração de Dragão, 13º nível.</i><b> (Dragão Brasil 200, Pag. 71)</b></p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Sopro Elemental</b> Quando usa Raio Arcano, você pode gastar mais PM para usar o poder como um sopro, afetando uma área de linha. O tamanho dessa linha é de 3m por PM gasto, limitado pelo alcance do seu Raio Arcano. Pré-requisitos: Coração de Dragão, Raio Elemental.</p><i>Pré-requisitos: Mago, treinado em Ofício (escriba).</i><b> (Dragão Brasil 200, Pag. 71)</b></p>
+    </div>
+</div>
