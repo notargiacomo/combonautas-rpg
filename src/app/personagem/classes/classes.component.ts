@@ -60,8 +60,9 @@ export class ClassesComponent implements OnInit {
   form!: FormGroup;
   referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};
-    columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
-    expandedElement!: Origem | null;
+  columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
+  expandedElement!: Origem | null;
+  numero_registros=0;
 
   constructor(
     private readonly classeService: ClasseService,
@@ -77,6 +78,7 @@ export class ClassesComponent implements OnInit {
     this.classeService.listar(null).subscribe({
       next: (response) => {
         this.classes = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);
@@ -103,6 +105,7 @@ export class ClassesComponent implements OnInit {
     this.classeService.listar(filtro).subscribe({
       next: (response) => {
         this.classes = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);

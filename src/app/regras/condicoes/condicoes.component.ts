@@ -18,6 +18,7 @@ export class CondicoesComponent  implements OnInit {
 
   condicoes!: Condicoes[]
   form!: FormGroup;
+  numero_registros=0;
 
   constructor(private readonly service: CondicoesService,private fb: FormBuilder){}
 
@@ -28,7 +29,8 @@ export class CondicoesComponent  implements OnInit {
   
       this.service.listar(null).subscribe({
         next: response =>{
-          this.condicoes = response
+          this.condicoes = response;
+          this.numero_registros = response.length;
         },
         error: response => {
           console.log(response)
@@ -46,7 +48,8 @@ export class CondicoesComponent  implements OnInit {
       }
       this.service.listar( filtro ).subscribe({
         next: response =>{
-          this.condicoes = response
+          this.condicoes = response;
+          this.numero_registros = response.length;
         },
         error: response => {
           console.log(response)

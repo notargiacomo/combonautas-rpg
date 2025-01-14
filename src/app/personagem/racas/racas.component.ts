@@ -71,6 +71,7 @@ export class RacasComponent implements OnInit {
   sentidos = Object.values(Sentido);
   referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};
+  numero_registros = 0;
 
   form!: FormGroup;
 
@@ -99,6 +100,7 @@ export class RacasComponent implements OnInit {
     this.racaService.listar(null).subscribe({
       next: (response) => {
         this.racas = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);
@@ -187,6 +189,7 @@ export class RacasComponent implements OnInit {
     this.racaService.listar(filtro).subscribe({
       next: (response) => {
         this.racas = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);

@@ -5,7 +5,7 @@
         <h2><b>CONHEÇA AS CLASSES DO TORMENTA 20</b></h2>
       </div>
       <div class="row">
-        <hr>
+        <hr />
       </div>
       <div class="row">
         <div class="col-sm-6 mt-4">
@@ -33,7 +33,11 @@
       </div>
     </form>
   </mat-card>
-
+  <div class="col-sm-12 mt-4">
+    <div class="d-flex justify-content-end">
+      <b>Número de Registros: {{ numero_registros }}</b>
+    </div>
+  </div>
   <div class="row mt-4">
     <mat-card class="cartao">
       <table
@@ -110,9 +114,17 @@
                 </mat-tab>
                 <mat-tab label="Habilidades">
                   <div class="row">
-                    <h4> Habilidades de Classe </h4>
-                    <p>Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma. Segue as habilidades de {{element.nome}}.</p>
-                    <p>(PS: Habilidades Mágicas são marcadas com o símbolo: <i><b>e</b></i>.)</p>
+                    <h4>Habilidades de Classe</h4>
+                    <p>
+                      Habilidades de Classe são poderes dados passivamente pela
+                      classe, de acordo com o nível da mesma. Segue as
+                      habilidades de {{ element.nome }}.
+                    </p>
+                    <p>
+                      (PS: Habilidades Mágicas são marcadas com o símbolo:
+                      <i><b>e</b></i
+                      >.)
+                    </p>
                     <div
                       class="col-sm-12 text-justify"
                       [innerHTML]="element.descricao_habilidades"
@@ -122,14 +134,21 @@
                 <mat-tab label="Poderes">
                   <div class="row">
                     <h4>Poderes de Classe</h4>
-                    <p>(PS: Poderes Mágicos são marcados com o símbolo: <i><b>e</b></i>.)</p>
+                    <p>
+                      (PS: Poderes Mágicos são marcados com o símbolo:
+                      <i><b>e</b></i
+                      >.)
+                    </p>
                     <div
                       class="col-sm-12 text-justify"
                       [innerHTML]="element.descricao_poderes"
                     ></div>
                   </div>
                 </mat-tab>
-                <mat-tab *ngIf="element.ha_informacoes_adicionais" label="Informações Adicionais">
+                <mat-tab
+                  *ngIf="element.ha_informacoes_adicionais"
+                  label="Informações Adicionais"
+                >
                   <div class="row">
                     <div
                       class="col-sm-12 text-justify"
@@ -140,8 +159,19 @@
                 <mat-tab *ngIf="element.ha_complicacoes" label="Complicações">
                   <div class="row">
                     <h4>Complicações</h4>
-                    <p>Complicações são restrições e penalidades com as quais seu personagem precisa lidar. Quando você cria seu personagem, pode escolher uma complicação para ele (e apenas uma). Se fizer isso, recebe um poder geral extra. Você é livre para escolher o poder, mas deve preencher seus pré-requisitos.</p>
-                    <p>(PS:Certas complicações restringem as ações de um herói, seja por serem uma limitação de sua personalidade, seja por serem um código ou voto que ele decidiu seguir. Tais complicações vêm acompanhadas do símbolo <b>†</b>).</p>
+                    <p>
+                      Complicações são restrições e penalidades com as quais seu
+                      personagem precisa lidar. Quando você cria seu personagem,
+                      pode escolher uma complicação para ele (e apenas uma). Se
+                      fizer isso, recebe um poder geral extra. Você é livre para
+                      escolher o poder, mas deve preencher seus pré-requisitos.
+                    </p>
+                    <p>
+                      (PS:Certas complicações restringem as ações de um herói,
+                      seja por serem uma limitação de sua personalidade, seja
+                      por serem um código ou voto que ele decidiu seguir. Tais
+                      complicações vêm acompanhadas do símbolo <b>†</b>).
+                    </p>
                     <div
                       class="col-sm-12 text-justify"
                       [innerHTML]="element.descricao_complicacoes"
@@ -150,8 +180,15 @@
                 </mat-tab>
                 <mat-tab *ngIf="element.ha_poderes_db" label="Poderes DB">
                   <div class="row">
-                    <p><h4>Poderes de Classe da Dragão Brasil</h4>
-                    <p>Essa aba vai apresentar material de jogo em fase de teste, que está sendo trabalhado pela equipe de game design e pode (ou não) ser inserido em futuros suplementos da franquia. Todas as regras mostradas aqui são opcionais e podem apresentar mudanças caso publicadas oficialmente.</p>
+                    <p></p>
+                    <h4>Poderes de Classe da Dragão Brasil</h4>
+                    <p>
+                      Essa aba vai apresentar material de jogo em fase de teste,
+                      que está sendo trabalhado pela equipe de game design e
+                      pode (ou não) ser inserido em futuros suplementos da
+                      franquia. Todas as regras mostradas aqui são opcionais e
+                      podem apresentar mudanças caso publicadas oficialmente.
+                    </p>
                     <div
                       class="col-sm-12 text-justify"
                       [innerHTML]="element.descricao_poderes_db"

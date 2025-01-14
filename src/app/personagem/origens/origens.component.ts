@@ -57,8 +57,9 @@ export class OrigensComponent implements OnInit {
   form!: FormGroup;
   referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};
-    columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
-    expandedElement!: Origem | null;
+  columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
+  expandedElement!: Origem | null;
+  numero_registros = 0;
 
   constructor(
     private readonly origemService: OrigemService,
@@ -74,6 +75,7 @@ export class OrigensComponent implements OnInit {
     this.origemService.listar(null).subscribe({
       next: (response) => {
         this.origens = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);
@@ -114,6 +116,7 @@ export class OrigensComponent implements OnInit {
     this.origemService.listar(filtro).subscribe({
       next: (response) => {
         this.origens = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);

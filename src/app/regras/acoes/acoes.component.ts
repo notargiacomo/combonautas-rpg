@@ -45,6 +45,7 @@ export class AcoesComponent implements OnInit {
   expandedElement!: Acao | null;
   acoes!: Acao[];
   form!: FormGroup;
+  numero_registros=0;
 
   constructor(private readonly service: AcoesService,private fb: FormBuilder){}
 
@@ -56,6 +57,7 @@ export class AcoesComponent implements OnInit {
       this.service.listar(null).subscribe({
         next: response =>{
           this.acoes = response
+          this.numero_registros = response.length;
         },
         error: response => {
           console.log(response)
@@ -74,6 +76,7 @@ export class AcoesComponent implements OnInit {
       this.service.listar( filtro ).subscribe({
         next: response =>{
           this.acoes = response
+          this.numero_registros = response.length;
         },
         error: response => {
           console.log(response)
