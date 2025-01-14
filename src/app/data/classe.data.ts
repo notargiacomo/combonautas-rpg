@@ -468,6 +468,35 @@ export class ClasseData {
         referencias: Referencia.DB,
         paginas: 'DB 199 pags. 82 a 89'
       },
+      {
+        id: 17,
+        nome: 'Samurai',
+        nome_arquivo_descricao_classe:'classe_samurai_descricao',
+        nome_arquivo_descricao_habilidades:'classe_samurai_habilidades',
+        nome_arquivo_descricao_poderes:'classe_samurai_poderes',
+        nome_arquivo_descricao_informacoes: 'classe_samurai_informacoes',
+        nome_arquivo_descricao_poderes_db:'classe_samurai_poderes_db',
+        nome_arquivo_descricao_complicacoes: 'classe_samurai_complicacoes',
+        descricao_classe: '',
+        descricao_habilidades: '',
+        descricao_poderes: '',
+        descricao_poderes_db: '',
+        ha_informacoes_adicionais: false,
+        ha_poderes_db: true,
+        ha_complicacoes: false,
+        descricao_informacoes: '',
+        fator_vida: 5,
+        fator_mana: 3,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES,Proficiencia.ARMADURAS_LEVES, Proficiencia.ARMAS_MARCIAIS, Proficiencia.ARMADURAS_PESADAS],
+        pericia_obrigatoria:'Vontade',
+        pericia_escolha_entre_duas:['Luta'],
+        pericias_escolha_grupo:['Acrobacia', 'Adestramento', 'Atletismo', 'Cavalgar', 'Conhecimento', 'Diplomacia', 'Fortitude', 'Guerra','Iniciativa', 'Intimidação', 'Intuição', 'Nobreza','Ofício','Percepção', 'Pontaria'],
+        numero_pericias_escolha_grupo: 2,
+        imagem: 'assets/img/classe_samurai.png',
+        tabela: 'assets/img/tabela_classe_samurai.png',
+        referencias: Referencia.DB,
+        paginas: 'DB 199 pags. 91 a 94'
+      },
     ];
   }
 }

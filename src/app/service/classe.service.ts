@@ -51,7 +51,7 @@ export class ClasseService extends AbstractService {
                 })
                 .subscribe((descricao_complicacoes) => (classe.descricao_complicacoes = descricao_complicacoes));
             }
-            if(classe.ha_complicacoes){   
+            if(classe.ha_poderes_db){   
               this.http
                 .get(`assets/doc/${classe.nome_arquivo_descricao_poderes_db}.txt`, {
                   responseType: 'text',
