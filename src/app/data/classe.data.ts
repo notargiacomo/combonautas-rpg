@@ -440,6 +440,34 @@ export class ClasseData {
         referencias: Referencia.DB,
         paginas: 'DB 199 pags. 78, 79, 80 e 81'
       },
+      {
+        id: 16,
+        nome: 'Místico',
+        nome_arquivo_descricao_classe:'classe_mistico_descricao',
+        nome_arquivo_descricao_habilidades:'classe_mistico_habilidades',
+        nome_arquivo_descricao_poderes:'classe_mistico_poderes',
+        nome_arquivo_descricao_informacoes: 'classe_mistico_informacoes',
+        nome_arquivo_descricao_poderes_db:'classe_mistico_poderes_db',
+        nome_arquivo_descricao_complicacoes: 'classe_mistico_complicacoes',
+        descricao_classe: '',
+        descricao_habilidades: '',
+        descricao_poderes: '',
+        ha_informacoes_adicionais: true,
+        ha_poderes_db: false,
+        ha_complicacoes: false,
+        descricao_informacoes: '',
+        fator_vida: 4,
+        fator_mana: 4,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES,Proficiencia.ARMADURAS_LEVES, Proficiencia.ARMAS_MARCIAIS],
+        pericia_obrigatoria:'Vontade',
+        pericia_escolha_entre_duas:['Misticismo'],
+        pericias_escolha_grupo:['Acrobacia', 'Atletismo', 'Conhecimento', 'Cura', 'Diplomacia', 'Fortitude', 'Iniciativa', 'Luta','Ofício','Percepção', 'Pontaria', 'Reflexos'],
+        numero_pericias_escolha_grupo: 4,
+        imagem: 'assets/img/classe_mistico.png',
+        tabela: 'assets/img/tabela_classe_mistico.png',
+        referencias: Referencia.DB,
+        paginas: 'DB 199 pags. 82 a 89'
+      },
     ];
   }
 }

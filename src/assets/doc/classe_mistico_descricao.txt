@@ -1,0 +1,7 @@
+<h4>Características de Classe</h4>
+<p><b>Pontos de Vida.</b> Um místico começa com 16 pontos de vida (+ Constituição) e ganha 4 PV
+(+ Constituição) por nível.</p>
+<p><b>Pontos de Mana.</b>  4 PM por nível.</p>
+<p><b>Perícias.</b> Misticismo (Int) e Vontade (Sab), mais 4 a sua escolha entre Acrobacia (Des),
+Atletismo (For), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des) e Reflexos (Des).</p>
+<p><b>Proficiências.</b> Armas marciais.</p>
