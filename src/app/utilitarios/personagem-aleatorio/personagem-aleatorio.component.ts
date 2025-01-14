@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
@@ -6,22 +6,36 @@ import { RacaService } from '../../service/raca.service';
 import { Raca } from '../../model/raca';
 import { OrigemService } from '../../service/origem.service';
 import { Origem } from '../../model/origem';
+import { ClasseService } from '../../service/classe.service';
+import { Classe } from '../../model/classe';
+import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatTabsModule } from '@angular/material/tabs';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-personagem-aleatorio',
-  imports: [MatDividerModule, MatCardModule, MatButtonModule],
+  imports: [MatDividerModule, MatCardModule, MatButtonModule, MatExpansionModule, MatDatepickerModule, MatTabsModule,
+      NgIf],
   templateUrl: './personagem-aleatorio.component.html',
-  styleUrl: './personagem-aleatorio.component.scss'
+  styleUrl: './personagem-aleatorio.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PersonagemAleatorioComponent implements OnInit{
 
+  readonly panelOpenState = signal(false);
+  racaIndex!: number;
+  origemIndex!: number;
+  classeIndex!: number;
+
   racas!: Raca[];
   origens!: Origem[];
-  classe!: string[];
+  classes!: Classe[];
   personagem_nimb!: string;
 
   constructor(private readonly racaService: RacaService, 
-              private readonly origemService: OrigemService
+              private readonly origemService: OrigemService,
+              private readonly classeService: ClasseService
   ) {}
 
   ngOnInit() {
@@ -31,10 +45,10 @@ export class PersonagemAleatorioComponent implements OnInit{
   }
 
   rezarPraNimb(){
-    const racaIndex = Math.floor(Math.random() * this.racas.length);
-    const origemIndex = Math.floor(Math.random() * this.origens.length);
-    const classeIndex = Math.floor(Math.random() * this.classe.length);
-    this.personagem_nimb = this.racas[racaIndex].nome+' - '+this.origens[origemIndex].nome+' - ' +this.classe[classeIndex];
+    this.racaIndex = Math.floor(Math.random() * this.racas.length);
+    this.origemIndex = Math.floor(Math.random() * this.origens.length);
+    this.classeIndex = Math.floor(Math.random() * this.classes.length);
+    this.personagem_nimb = this.racas[this.racaIndex].nome+' - '+this.origens[this.origemIndex].nome+' - ' +this.classes[this.classeIndex].nome;
   }
 
   carregaRacas() {
@@ -50,7 +64,15 @@ export class PersonagemAleatorioComponent implements OnInit{
   }
   
   carregaClasses() {
-    this.classe = ['Arcanista', 'Bárbaro', 'Bardo', 'Bucaneiro', 'Caçador', 'Cavaleiro', 'Clérigo', 'Druida', 'Guerreiro', 'Inventor', 'Ladino', 'Lutador', 'Mirragem', 'Místico', 'Nobre', 'Paladino', 'Samurai']
+    // this.classe = ['Arcanista', 'Bárbaro', 'Bardo', 'Bucaneiro', 'Caçador', 'Cavaleiro', 'Clérigo', 'Druida', 'Guerreiro', 'Inventor', 'Ladino', 'Lutador', 'Mirragem', 'Místico', 'Nobre', 'Paladino', 'Samurai']
+    this.classeService.listar(null).subscribe({
+      next: (response) => {
+        this.classes = response;
+      },
+      error: (response) => {
+        console.log(response);
+      },
+    });
   }
   
   carregaOrigens() {
