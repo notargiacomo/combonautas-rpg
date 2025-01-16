@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Aura de Medo.</b> Você pode gastar 2 PM para gerar uma aura de medo de 9m de raio e duração até o fim da cena. Todos os inimigos que entrem na aura devem fazer um teste de Vontade (CD Car) ou ficam abalados até o fim da cena. Uma criatura que passe no teste de Vontade fica imune a esta habilidade por um dia. <i><b>e</b></i></p>
+
+<p><b>Escamas Dracônicas.</b> Você recebe +2 na Defesa e em Fortitude.</p>
+
+<p><b>Servos do Dragão.</b> Você pode gastar uma ação completa e 2 PM para invocar 2d4+1 kobolds capangas em espaços desocupados em alcance curto. Você pode gastar uma ação de movimento para fazer os kobolds andarem (eles têm deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6–1 pontos de dano de perfuração cada). Os kobolds têm For –1, Des 1, Defesa 12, 1 PV e falham automaticamente em qualquer teste de resistência ou oposto. Eles desaparecem quando morrem ou no fim da cena. Os kobolds não agem sem receber uma ordem. Usos criativos para capangas fora de combate ficam a critério do mestre. <i><b>e</b></i></p>
+
+<p><b>Presas Primordiais.</b> Você pode gastar 1 PM para transformar seus dentes em presas afiadas até o fim da cena. Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Se já possuir outro ataque natural de mordida, em vez disso, o dano desse ataque aumenta em dois passos. <i><b>e</b></i></p>
+
+<p><b>Alimentar-se do Pavor.</b> Quando uma criatura em alcance curto sob efeito de uma condição de medo morre, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.</p>
+
+<p><b>Baforada Dracônica.</b> Escolha um elemento entre ácido, eletricidade, fogo, frio, luz ou trevas (uma vez feita, essa escolha não pode ser mudada). Você pode gastar uma ação padrão e PM (limitado por sua Constituição) para desferir um sopro elemental em uma criatura em alcance curto. Para cada PM que você gastar, o alvo sofre 1d10 pontos de dano do tipo escolhido (Ref CD Con reduz à metade). Alternativamente, quando faz a ação agredir, você pode usar este poder como parte dessa ação.</p>
+
+<p><b>Poder Sem Limites.</b> Todos os seus limites de PM para habilidades aumentam em +2.</p>
+
+<p><b>Temor Arcano.</b> Quando um inimigo em alcance médio sob efeito de uma condição de medo falha em um teste de resistência contra uma de suas magias, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.</p>

@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Coragem Total.</b> Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais (como o medo de altura dos minotauros).</p>
+
+<p><b>Dom da Verdade.</b> Você pode pagar 2 PM para receber +5 em testes de Intuição, e em testes de Percepção contra Enganação e Furtividade, até o fim da cena.</p>
+
+<p><b>Espada Justiceira.</b> Você pode gastar 1 PM para encantar sua espada (ou outra arma corpo a corpo de corte que esteja empunhando). Ela tem seu dano aumentado em um passo até o fim da cena.<i><b>e</b></i></p>
+
+<p><b>Reparar Injustiça.</b> Uma vez por rodada, quando um oponente em alcance curto acerta um ataque em você ou em um de seus aliados, você pode gastar 2 PM para fazer este oponente repetir o ataque, escolhendo o pior entre os dois resultados.</p>
+
+<p><b>Dom da Vontade.</b> Você recebe +2 em Vontade e, uma vez por cena, quando falha em um teste de Vontade contra um efeito de um inimigo ou de um perigo, recebe 1d4 PM.</p>
+
+<p><b>Jurista Divino.</b> Você se torna treinado em Nobreza (se já for treinado, em vez disso recebe +2 nessa perícia) e pode usar esta perícia no lugar de Diplomacia e Intimidação.</p>
+
+<p><b>Pilar de Heredrimm.</b> Você pode gastar 2 PM receber +2 na Defesa e redução de dano 5 até o fim da cena ou até encerrar este poder (uma ação livre). Enquanto este efeito estiver ativo, seu deslocamento é reduzido à metade e você não pode correr ou fazer investidas.</p>
+
+<p><b>Quebrar Encanto.</b> Você recebe +2 em testes de ataque para quebrar. Além disso, quando vence um teste oposto para quebrar um item, você pode gastar 2 PM. Se fizer isso, gera um efeito semelhante a Dissipar Magia sobre o item e sobre seu usuário, usando o resultado do seu teste de quebrar no lugar do teste de Misticismo. <i><b>e</b></i></p>

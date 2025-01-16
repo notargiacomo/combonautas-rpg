@@ -1,5 +1,16 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Almejar o Impossível.</b> Quando faz um teste de perícia, um resultado de 19 ou mais no dado sempre é um sucesso, não importando o valor a ser alcançado.</p>
+
+<p><b>Fúria Divina.</b> Você pode gastar 2 PM para invocar uma fúria selvagem, tornando-se temível em combate. Até o fim da cena, você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não pode executar nenhuma ação que exija paciência ou concentração (como usar a perícia Furtividade ou lançar magias). Se usar este poder em conjunto com a habilidade Fúria, ela também dura uma cena (e não termina se você não atacar ou for alvo de uma ação hostil). <i><b>e</b></i></p>
+
+<p><b>Olhar Amedrontador.</b> Você aprende e pode lançar Amedrontar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Tropas Duyshidakk.</b> Você pode gastar uma ação completa e 2 PM para invocar 1d4+1 goblinoides capangas em espaços desocupados em alcance curto. Você pode gastar uma ação de movimento para fazer os goblinoides andarem (eles têm deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6+1 pontos de dano de corte cada). Os goblinoides têm For 1, Des 1, Defesa 15, 1 PV e falham automaticamente em qualquer teste de resistência ou oposto. Eles desaparecem quando morrem ou no fim da cena. Os goblinoides não agem sem receber uma ordem. Usos criativos para capangas fora de combate ficam a critério do mestre. <i><b>e</b></i></p>
+
+<p><b>Alma de Mudança.</b> No início de cada aventura, você pode trocar um número de outros poderes até sua Sabedoria por poderes diferentes.</p>
+
+<p><b>O Futuro que vier disso.</b> Quando faz um teste, você pode rolar um dado à
+sua escolha (entre 1d4 e 1d20) e somar o resultado a este teste. Quando você faz isso, o mestre recebe um dado do mesmo tipo que ele pode gastar para aplicar como uma penalidade em um de seus testes até o fim da próxima sessão. Você não pode usar este poder novamente até que o mestre use o dado que ele recebeu.</p>
+
+<p><b>Terror Profundo.</b> Você recebe +2 em Intimidação e na CD de seus efeitos de medo.</p>
+
+<p><b>Ushult.</b> Escolha um de seus aliados como seu Ushult. Enquanto estiverem em alcance curto um do outro, vocês recebem +1 em testes de perícia e rolagens de dano (esse bônus dobra se o Ushult também for duyshidakk). Você pode trocar seu Ushult uma vez por aventura.</p>

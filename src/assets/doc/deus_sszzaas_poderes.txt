@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Astúcia da Serpente.</b> Você recebe +2 em Enganação, Furtividade e Intuição.</p>
+
+<p><b>Familiar Ofídico.</b> Você recebe um familiar cobra (veja a página 38) que não conta em seu limite de parceiros.</p>
+
+<p><b>Presas venenosas.</b> Você pode gastar uma ação de movimento e 1 PM para envenenar uma arma corpo a corpo que esteja empunhando. Em caso de acerto, a arma causa perda de 1d12 pontos de vida. A arma permanece envenenada até atingir uma criatura ou até o fim da cena, o que acontecer primeiro.</p>
+
+<p><b>Sangue Ofídico.</b> Você recebe resistência a veneno +5 e a CD para resistir aos seus venenos aumenta em +2.</p>
+
+<p><b>Dom dos Segredos.</b> Você pode gastar uma ação padrão e 2 PM para suplicar à Sszzaas por um segredo oculto. Faça um teste de Carisma (CD 10). Se passar, você aprende um poder cujos requisitos possa cumprir (mas você não precisa cumprir requisitos de classe) até o fim da cena. Se falhar, entretanto, você fica alquebrado por um dia.</p>
+
+<p><b>Magia Venenosa.</b> Suas magias com resistência Fortitude recebem o seguinte aprimoramento: +1 PM: além do normal, criaturas que falharem perdem 1d12 PV por veneno.</p>
+
+<p><b>Manto Ardiloso.</b> Você aprende a magia Disfarce Ilusório (CD Car). Na primeira vez que interage com alguém enquanto está sob efeito dessa magia, você recebe +10 no teste de Diplomacia para tentar mudar a atitude dela. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Mordida de Víbora.</b> Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Suas presas são retráteis e podem armazenar até 2 doses de veneno, como o efeito da melhoria injeção alquímica (Tormenta20, p. 165).</p>

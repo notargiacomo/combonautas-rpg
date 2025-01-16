@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Bênção do Mana.</b> Você recebe +1 PM a cada nível ímpar.</p>
+
+<p><b>Centelha Mágica.</b> Escolha uma magia arcana ou divina de 1º círculo. Você aprende e pode lançar essa magia.</p>
+
+<p><b>Escudo Mágico.</b> Quando lança uma magia, você recebe um bônus na Defesa igual ao círculo da magia lançada até o início do seu próximo turno. <i><b>e</b></i></p>
+
+<p><b>Teurgista Místico.</b> Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (se você for um conjurador arcano) ou entre magias arcanas (se for um conjurador divino). <i>Pré-requisito: habilidade de classe Magias.</i></p>
+
+<p><b>Belo Presente.</b> Uma vez por cena, você pode gastar uma ação padrão para pedir o conhecimento de uma magia a Wynna. Gaste uma ação padrão e faça um teste de Religião (CD 15+ custo em PM da magia). Você pode pedir qualquer magia que tenha visto sendo lançada nessa aventura e que seja de um círculo a que tenha acesso. Se passar, você pode lançar essa magia até o fim do seu próximo turno.</p>
+
+<p><b>Familiar Elemental.</b> Você possui um familiar arcano (veja Tormenta20, p. 38) escolhido entre um aquin’ne, t’peel, pakk ou terrier (veja Ameaças de Arton, p. 88).</p>
+
+<p><b>Poder do Vínculo.</b> Você pode gastar uma ação de movimento e uma quantidade de PM limitada ao círculo de magias a que você tem acesso, 1 PM (e +1 pm para cada círculo de magia que for capaz de conjurar) e tocar em uma criatura capaz de conjurar magias. O custo em PMs da próxima magia que aquela criatura lançar é reduzido numa quantidade igual aos PMs que você gastou.</p>
+
+<p><b>Sorvo de Mana.</b> Sempre que falhar no teste de resistência contra uma magia de um inimigo, você recupera uma quantidade de PM igual ao círculo dela.</p>

@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Aura de Paz.</b> Você pode gastar 2 PM para gerar uma aura de paz com alcance curto e duração de uma cena. Qualquer inimigo dentro da aura que tente fazer uma ação hostil contra você deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Se passar, fica imune a esta habilidade por um dia. <i><b>e</b></i></p>
+
+<p><b>Dom da Esperança.</b> Você soma sua Sabedoria em seus PV em vez de Constituição, e se torna imune às condições alquebrado, esmorecido e frustrado.</p>
+
+<p><b>Palavras de Bondade.</b> Você aprende e pode lançar Enfeitiçar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Talento Artístico.</b> Você recebe +2 em Acrobacia, Atuação e Diplomacia.</p>
+
+<p><b>Cancioneiro da Esperança.</b> Você pode gastar uma ação padrão e 2 PM para entoar uma canção de superação e paz. Criaturas escolhidas em alcance curto (limitadas por seu Carisma) recebem +2 em Força e Destreza e +3m de deslocamento até o fim da cena (Von CD Car evita), Se uma criatura afetada executar qualquer ação hostil, os bônus são substituídos por uma penalidade de –2 em todos os testes de perícia.</p>
+
+<p><b>Companheiro Celeste.</b> Você possui um luminar (veja p. @@) que lhe acompanha como um parceiro iniciante. Se perder esse luminar, você recebe outro no início da próxima aventura.</p>
+
+<p><b>Discurso Conciliador.</b> Quando faz um teste de Diplomacia para mudar atitude, você pode rolar dois dados e usar o melhor resultado ou ambos (como se tivesse usado mudar atitude duas vezes). Se passar em ambos, as mudanças de atitude serão cumulativas.</p>
+
+<p><b>Remorso do Belicista.</b> Uma vez por rodada, quando sofre dano de um inimigo, você pode gastar 1 PM. Se fizer isso, até o fim da cena aquela criatura sofre uma penalidade cumulativa de –2 em testes de ataque e rolagens de dano. Mental.</p>

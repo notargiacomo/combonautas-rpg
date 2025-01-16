@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Coragem Total.</b> Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais (como o medo de altura dos minotauros).</p>
+
+<p><b>Kiai Divino.</b> Uma vez por rodada, quando faz um ataque corpo a corpo, você pode pagar 3 PM. Se acertar o ataque, causa dano máximo, sem necessidade de rolar dados.</p>
+
+<p><b>Mente Vazia.</b> Você recebe +2 em Iniciativa, Percepção e Vontade.</p>
+
+<p><b>Tradição de Lin-Wu.</b> Você considera a katana uma arma simples e, se for proficiente em armas marciais, recebe +1 na margem de ameaça com ela.</p>
+
+<p><b>Cerimonialista Divino.</b> Uma vez por descanso, você pode executar uma cerimônia religiosa tradicional. Faça um teste de Religião com um bônus igual ao seu Carisma. Para cada 10 pontos no resultado desse teste, você recebe um marcador de pétalas. Você pode distribuir esses marcadores entre criaturas escolhidas que tenham participado da cerimônia. Até o fim do dia, cada criatura pode gastar um marcador para receber +1d6 em um teste de Iniciativa, Intuição, Diplomacia, Percepção ou Vontade. <i><b>e</b></i></p>
+
+<p><b>Expor Honra.</b> Você pode pagar 1 PM para gerar uma aura de verdade de 9m de raio e duração até o fim da cena. Dentro dessa área, devotos de Lin-Wu e personagens que sigam algum código de conduta (como Código de Honra ou Código do Herói) recebem +2 em Diplomacia e Nobreza, enquanto as demais criaturas sofrem –2 em testes de Enganação, Furtividade e Ladinagem. Apenas personagens com a habilidade Abençoado ou Devoto Fiel podem escolher este poder.</p>
+
+<p><b>Jurista Divino.</b> Você se torna treinado em Nobreza (se já for treinado, em vez disso recebe +2 nessa perícia) e pode usar esta perícia no lugar de Diplomacia e Intimidação.</p>
+
+<p><b>Mestre de Si.</b> Você passa automaticamente no primeiro teste de Vontade que fizer a cada cena.</p>

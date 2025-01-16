@@ -1,5 +1,17 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Compreender os Ermos.</b> Você recebe +2 em Sobrevivência e pode usar Sabedoria para Adestramento (em vez de Carisma).</p>
+
+<p><b>Dedo Verde.</b> Você aprende e pode lançar Controlar Plantas. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Descanso Natural.</b> Para você, dormir ao relento conta como condição de descanso confortável.</p>
+
+<p><b>Voz da Natureza.</b> Você pode falar com animais (como o efeito da magia Voz Divina) e aprende e pode lançar Acalmar Animal, mas só contra animais. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Companheiro Silvestre.</b> Você possui um bogum (veja Ameaças de Arton, p. 190) que lhe acompanha como um parceiro iniciante. Se perder esse bogum, você recebe outro no início da próxima aventura.</p>
+
+<p><b>Espírito Animal.</b> Você aprende e pode lançar Arma Espiritual. A arma convocada, entretanto, tem a forma um animal espiritual a sua escolha, que causa dano de um tipo apropriado à sua forma. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Estouro da Trobada.</b> Você pode gastar uma ação completa e 2 PM para convocar uma manada enfurecida de trobos (ou qualquer outro animal da região) em um ponto a sua escolha em alcance curto com duração sustentada. A manada tem tamanho Grande e pode passar pelo espaço de outras criaturas. Você pode gastar uma ação de movimento para mover a manada 12m em linha
+reta. Criaturas pelas quais a manada passar sofrem 3d6 pontos de dano de impacto e ficam caídas (Fort CD Sab reduz à metade e evita a condição).</p>
+
+<p><b>O Sol que nos Aquece.</b> Você pode gastar uma ação padrão e 3 PM para intensificar a luz solar em uma esfera de 6m de raio em alcance médio. Nessa área, habilidades mágicas de fogo e relacionadas à plantas (como Controlar Plantas) custam –1 PM e criaturas com sensibilidade a luz
+sofrem o dobro da penalidade por ficarem ofuscadas. Você só pode usar este poder se estiver sob a luz do sol natural. <i><b>e</b></i></p>

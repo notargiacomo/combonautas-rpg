@@ -1,5 +1,17 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Almejar o Impossível.</b> Quando faz um teste de perícia, um resultado de 19 ou mais no dado sempre é um sucesso, não importando o valor a ser alcançado.</p>
+
+<p><b>Armas da Ambição.</b> Você recebe +1 em testes de ataque e na margem de ameaça com armas nas quais é proficiente.</p>
+
+<p><b>Coragem Total.</b> Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais (como o medo de altura dos minotauros).</p>
+
+<p><b>Liberdade Divina.</b> Você pode gastar 2 PM para receber imunidade a efeitos de movimento por uma rodada. <i><b>e</b></i></p>
+
+<p><b>Andarilho Carregado.</b> Sua primeira mochila de aventureiro não conta em seu limite de itens vestidos e, se estiver vestindo uma dessas mochilas, pode usar Sabedoria para estabelecer seu limite de carga (em vez de Força).</p>
+
+<p><b>Aventureiro Inquieto.</b> Uma vez por busca (Tormenta20, p. 278), você pode rolar novamente um teste recém-realizado (mas deve aceitar o novo resultado) e, quando recebe uma
+recompensa ou castigo aleatório por uma busca, rola dois dados e escolhe entre os dois resultados.</p>
+
+<p><b>Convicção Ambiciosa.</b> Enquanto estiver encurralado ou sobrepujado (pelo menos dois oponentes para cada membro do grupo ou um encontro de ND maior que o do grupo), você recebe
++2 em testes de perícia. Além disso, contra chefes finais (veja Ameaças de Arton, p. 368), você recebe uma ação padrão extra na primeira rodada de combate.</p>
+
+<p><b>Mochileiro Preparado.</b> Você pode gastar 1 PM para fazer uma ferramenta ou um item de aventura de até T$ 100 aparecer na sua mão ou em um espaço adjacente. O item dura até o fim da cena, ou até deixar sua posse.</p>

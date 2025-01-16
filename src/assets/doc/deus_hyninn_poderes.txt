@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Apostar com o Trapaceiro.</b> Quando faz um teste de perícia, você pode gastar 1 PM para apostar com Hyninn. Você e o mestre rolam 1d20, mas o mestre mantém o resultado dele em segredo. Você então escolhe entre usar seu próprio resultado ou o resultado oculto do mestre (neste caso, ele revela o resultado). <i><b>e</b></i></p>
+
+<p><b>Farsa do Fingidor.</b> Você aprende e pode lançar Criar Ilusão. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</p>
+
+<p><b>Forma de Macaco.</b> Você pode gastar uma ação completa e 2 PM para se transformar em um macaco. Você adquire tamanho Minúsculo (o que fornece +5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de escalar 9m. Seu equipamento desaparece (e você perde seus benefícios) até você voltar ao normal, mas suas outras estatísticas não são alteradas. A transformação dura indefinidamente, mas termina caso você faça um ataque, lance uma magia ou sofra dano. <i><b>e</b></i></p>
+
+<p><b>Golpista Divino.</b> Você recebe +2 em Enganação, Jogatina e Ladinagem.</p>
+
+<p><b>Armadilha Divina.</b> Você recebe um poder de Armadilha do caçador (Tormenta20, p. 50) à sua escolha. Por ser criada a partir de energia divina, essa armadilha pode ser preparada em locais sem os materiais propícios. <i><b>e</b></i></p>
+
+<p><b>Dom da Furtividade.</b> Você soma sua Sabedoria em Furtividade e, contra criaturas desprevenidas, a CD para resistir às suas magias aumenta em +2.</p>
+
+<p><b>Mochileiro Preparado.</b> Você pode gastar 1 PM para fazer uma ferramenta ou um item de aventura de até T$ 100 aparecer na sua mão ou em um espaço adjacente. O item dura até o fim da cena, ou até deixar sua posse.</p>
+
+<p><b>O Dobro ou Nada.</b> Quando usa uma habilidade com um custo em PM, você pode pagar o dobro desse custo. Se fizer isso, a CD dessa habilidade aumenta em +5. Se pelo menos um alvo passar no teste de resistência, você fica alquebrado.</p>

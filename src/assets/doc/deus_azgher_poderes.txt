@@ -1,5 +1,16 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Espada Solar.</b> Você pode gastar 1 PM para fazer uma arma corpo a corpo de corte que esteja empunhando causar +1d6 de dano por fogo até o fim da cena. <i><b>e</b></i></p>
+
+<p><b>Fulgor Solar.</b> Você recebe redução de frio e trevas 5. Além disso, quando é alvo de um ataque você pode gastar 1 PM para emitir um clarão solar que deixa o atacante ofuscado por uma rodada.</p>
+
+<p><b>Habitante do Deserto.</b> Você recebe redução de fogo 10 e pode pagar 1 PM para criar água pura e potável suficiente para um odre (ou outro recipiente pequeno). <i><b>e</b></i></p>
+
+<p><b>Inimigo de Tenebra.</b> Seus ataques e habilidades causam +1d6 pontos de dano contra mortos-vivos. Quando você usa um efeito que gera luz, o alcance da iluminação dobra.</p>
+
+<p><b>Imolação Sagrada.</b> Você pode gastar uma ação padrão e 2 PM para cobrir-se com chamas até o fim da cena ou té ser submerso em água. Enquanto estiver coberto pelas chamas, uma vez por rodada, quando sofre um ataque corpo a corpo, você pode causar 2d6 + Sabedoria pontos de dano de fogo no atacante. <i><b>e</b></i></p>
+
+<p><b>O Sol que nos Aquece.</b> Você pode gastar uma ação padrão e 3 PM para intensificar a luz solar em uma esfera de 6m de raio em alcance médio. Nessa área, habilidades mágicas de fogo e relacionadas à plantas (como Controlar Plantas) custam –1 PM e criaturas com sensibilidade a luz
+sofrem o dobro da penalidade por ficarem ofuscadas. Você só pode usar este poder se estiver sob a luz do sol natural. <i><b>e</b></i></p>
+
+<p><b>Proeminência Solar.</b> Suas magias que causam dano de fogo e que têm um teste de resistência recebem o seguinte aprimoramento: +1 PM: Criaturas que falhem na resistência ficam em chamas. Elas também ficam lentas até apagarem as chamas.</p>
+
+<p><b>Resplendor Divino.</b> Você pode gastar 2 PM para gerar uma aura de luz solar com 9m de raio e duração até o fim da cena. Além de sofrer os efeitos de exposição à luz solar, criaturas dentro da aura perdem toda camuflagem por escuridão, incluindo mágica. <i><b>e</b></i></p>

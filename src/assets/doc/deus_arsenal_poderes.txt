@@ -1,5 +1,16 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Conjurar Arma.</b> Você pode gastar 1 PM para invocar uma arma corpo a corpo ou de arremesso com a qual seja proficiente. A arma surge em sua mão, fornece +1 em testes de ataque e rolagens de dano, é considerada mágica e dura pela cena. Você não pode criar armas de disparo, mas pode criar 20 munições. <i><b>e</b></i></p>
+
+<p><b>Coragem Total.</b> Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais (como o medo de altura dos minotauros).  </p>
+
+<p><b>Fé Guerreira.</b> Você pode usar Sabedoria para Guerra (em vez de Inteligência). Além disso, em combate, pode gastar 2 PM para substituir um teste de perícia (exceto testes de ataque) por um teste de Guerra.</p>
+
+<p><b>Sangue de Ferro.</b> Você pode pagar 3 PM para receber +2 em rolagens de dano e redução de dano 5 até o fim da cena. <i><b>e</b></i></p>
+
+<p><b>Armas da Destruição.</b> Você recebe +1 nas rolagens de dano e no multiplicador de crítico com armas.</p>
+
+<p><b>Ferramentas da Guerra.</b> Uma vez por dia, você pode gastar uma hora e TS 10 por item para abençoar uma quantidade de itens limitada por sua Sabedoria. Armas abençoadas desta forma fornecem +2 em testes de ataque e rolagens de dano, enquanto armaduras e escudos têm seu bônus na Defesa aumentados em +2. Se o usuário de um item abençoado for derrotado em combate, o item é destruído. Os efeitos da bênção duram um dia. <i><b>e</b></i></p>
+
+<p><b>Golpe Tempestuoso.</b> Quando acerta um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso, a criatura é empurrada 3m em uma direção a sua escolha e fica vulnerável por 1 rodada.</p>
+
+<p><b>Vitória a qualquer custo.</b> Se estiver com 0 PM, você pode gastar seus pontos de vida no lugar de mana, à taxa de 3 PV por 1 PM. Pontos de vida gastos dessa forma só podem ser recuperados com descanso.</p>
+<p>Quando faz um teste de ataque, de resistência ou de Guerra, você pode gastar 2 PM para rolar novamente este teste. Você pode usar este efeito várias vezes no mesmo teste, mas a cada novo uso seu custo aumenta em +1 PM.</p>

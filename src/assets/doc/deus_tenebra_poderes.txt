@@ -1,5 +1,17 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Carícia Sombria.</b> Você pode gastar 1 PM e uma ação padrão para cobrir sua mão com energia negativa e tocar uma criatura em alcance corpo a corpo. A criatura sofre 2d6 pontos de dano de trevas (Fortitude CD Sab reduz à metade) e você recupera PV iguais à metade do dano causado. Você pode aprender Toque Vampírico como uma magia divina. Se fizer isso, o custo dela
+diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Manto da Penumbra.</b> Você aprende e pode lançar Escuridão. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Visão nas Trevas.</b> Você enxerga perfeitamente no escuro, incluindo em magias de escuridão.</p>
+
+<p><b>Zumbificar.</b> Você pode gastar uma ação completa e 3 PM para reanimar o cadáver de uma criatura Pequena ou Média adjacente por um dia. O cadáver funciona como um parceiro iniciante de um tipo a sua escolha entre combatente, fortão ou guardião. Além disso, quando sofre dano, você pode sacrificar esse parceiro; se fizer isso, você sofre apenas metade do dano, mas o cadáver é destruído. <i><b>e</b></i></p>
+
+<p><b>Adaga Lunar.</b> Você pode gastar 1 PM para fazer uma arma de perfuração que esteja empunhando causar +1d6 pontos de dano de frio até o fim da cena. <i><b>e</b></i></p>
+
+<p><b>Armadura de Ossos.</b> Você pode gastar 3 PM para receber +2 na Defesa e
+redução de corte, frio e perfuração 10 até o fim da cena. <i><b>e</b></i></p>
+
+<p><b>Passo Sombrio.</b> Uma vez por rodada, você pode gastar 2 PM para se teleportar para um espaço desocupado em alcance curto. Se tanto você quanto o espaço de destino estiverem sob qualquer tipo de escuridão, o custo deste poder é reduzido em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Toque de Não Vida.</b> Você pode pagar 2 PM para cobrir você ou um aliado adjacente em trevas protetivas. O alvo recebe 2d12 PV temporários. Enquanto esses PV durarem, ele também tem camuflagem leve por escuridão. <i><b>e</b></i></p>

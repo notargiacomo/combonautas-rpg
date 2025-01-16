@@ -1,5 +1,19 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Anfíbio.</b> Você pode respirar embaixo d’água e adquire deslocamento de natação igual a seu deslocamento terrestre.</p>
+
+<p><b>Arsenal das profundezas.</b> Você recebe +2 nas rolagens de dano com azagaias, lanças e tridentes e seu multiplicador de crítico com essas armas aumenta em +1.</p>
+
+<p><b>Mestre dos Mares.</b> Você pode falar com animais aquáticos (como o efeito da magia Voz Divina) e aprende e pode lançar Acalmar Animal, mas só contra criaturas aquáticas. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Sopro do Mar.</b> Você pode gastar uma ação padrão e 1 PM para soprar vento marinho em um cone de 6m. Criaturas na área sofrem 2d6 pontos de dano de frio (Reflexos CD Sab reduz à metade). Você pode aprender Sopro das Uivantes como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Barreira de Coral</b> Você pode gastar uma ação de movimento e 2 PM para cobrir seu corpo de coral. Até o fim da cena, seu deslocamento é reduzido à metade, mas você recebe +2 na Defesa e, sempre que sofrer um ataque corpo a corpo, o atacante sofre dano de perfuração igual a 1d6 + sua Constituição. Se estiver com pelo menos metade do corpo imerso em água, você pode usar esse
+poder como uma ação livre.<i><b>e</b></i></p>
+
+<p><b>Égide dos Mares.</b> Você possui um escudeiro (veja Ameaças de Arton, p. 190) que lhe acompanha como um parceiro iniciante. Se perder esse escudeiro, você recebe outro no início
+da próxima aventura.</p>
+
+<p><b>Golpe Tempestuoso.</b> Quando acerta um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso, a criatura é empurrada 3m em uma direção a sua escolha e fica vulnerável por 1 rodada.</p>
+
+<p><b>Mar Revolto.</b> Você pode gastar 1 PM para gerar uma aura de 6m de raio com duração sustentada. Cada criatura, à sua escolha, que começar seu próprio turno dentro dessa aura deverá passar em um teste de Acrobacia (CD Sab; criaturas dentro da água sofrem uma penalidade de –5 nesse teste.) ou ficará caída.<i><b>e</b></i></p>
+
+<p><b>Navegador Sagrado.</b> Você se torna treinado em Pilotagem (se já for treinado, em vez disso recebe +2 nessa perícia) e, enquanto estiver em uma embarcação aquática, suas magias divinas custam –1 PM.</p>

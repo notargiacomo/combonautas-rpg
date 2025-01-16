@@ -1,5 +1,16 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Conhecimento Enciclopédico.</b> Você se torna treinado em duas perícias baseadas em Inteligência a sua escolha.</p>
+
+<p><b>Mente Analítica.</b> Você recebe +2 em Intuição, Investigação e Vontade.</p>
+
+<p><b>Pesquisa Abençoada.</b> Se passar uma hora pesquisando seus livros e anotações, você pode rolar novamente um teste de perícia baseada em Inteligência ou Sabedoria que tenha feito desde a última cena. Se tiver acesso a mais livros, você recebe um bônus no teste: +2 para uma coleção particular ou biblioteca pequena e +5 para a biblioteca de um templo ou universidade.</p>
+
+<p><b>Voz da Civilização.</b> Você está sempre sob efeito de Compreensão. <i><b>e</b></i></p>
+
+<p><b>Espírito do Conhecimento.</b> Você pode gastar uma ação padrão e 2 PM para invocar uma manifestação do saber em um espaço desocupado em alcance curto. Ela é um espírito Minúsculo que tem deslocamento de voo 6m, For –, Des 3, Defesa 15, 1 PV, visão no escuro e falha em qualquer teste de resistência ou oposto. A partir do seu próximo turno, a manifestação pode fazer uma
+ação de movimento no início de cada um dos seus turnos. Você pode perceber tudo que a manifestação for capaz de perceber, e pode lançar magias com alcance de toque ou maior como se a manifestação fosse seu ponto de origem. A manifestação desaparece quando morre ou no fim da cena. <i><b>e</b></i></p></p>
+
+<p><b>Golpe Semântico.</b> Você pode substituir testes de Diplomacia e Enganação por Conhecimento.</p>
+
+<p><b>Palavra de Poder.</b> Você aprende e pode lançar Comando. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Perceber Farsas.</b> Você recebe +2 em Intuição e se torna imune a magias de ilusão.</p>

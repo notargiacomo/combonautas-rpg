@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Ataque Piedoso.</b> Você pode usar armas corpo a corpo para causar dano não letal sem sofrer a penalidade de –5 no teste de ataque.</p>
+
+<p><b>Aura Restauradora.</b> Efeitos de cura usados por você e seus aliados em alcance curto recuperam +1 PV por dado.</p>
+
+<p><b>Cura Gentil.</b> Você soma seu Carisma aos PV restaurados por seus efeitos mágicos de cura.</p>
+
+<p><b>Curandeira Perfeita.</b> Você sempre pode escolher 10 em testes de Cura. Além disso, não sofre penalidade por usar essa perícia sem uma maleta de medicamentos. Se possuir o item, recebe +2 no teste de Cura (ou +5, se ele for aprimorado).</p>
+
+<p><b>Companheiro Celeste.</b> Você possui um luminar (veja p. @@) que lhe acompanha como um parceiro iniciante. Se perder esse luminar, você recebe outro no início da próxima aventura.</p>
+
+<p><b>Curar o Espírito.</b> Você pode gastar uma ação completa para inspirar esperança em uma criatura em que possa tocar. Faça um teste de Carisma (CD 10). Se passar, a criatura recupera 1d4 PM. Você só pode usar este poder uma vez por dia numa mesma criatura.</p>
+
+<p><b>Magia Piedosa.</b> Quando lança uma magia que causa dano, você pode gastar +1 PM para transformar o dano dela em não-letal.</p>
+
+<p><b>Transbordar Cura.</b> Quando você usa um efeito de cura, quaisquer pontos de vida excedentes desse efeito se tornam pontos de vida temporários, até um valor máximo igual ao dobro do nível do alvo.</p>

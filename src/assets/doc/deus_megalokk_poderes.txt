@@ -1,5 +1,15 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Olhar Amedrontador.</b> Você aprende e pode lançar Amedrontar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Presas Primordiais.</b> Você pode gastar 1 PM para transformar seus dentes em presas afiadas até o fim da cena. Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Se já possuir outro ataque natural de mordida, em vez disso, o dano desse ataque aumenta em dois passos. <i><b>e</b></i></p>
+
+<p><b>Urro Divino.</b> Quando faz um ataque ou lança uma magia, você pode pagar 1 PM para somar sua Constituição (mínimo +1) à rolagem de dano desse ataque ou magia.</p>
+
+<p><b>Voz dos Monstros.</b> Você conhece os idiomas de todos os monstros inteligentes e pode se comunicar livremente com monstros não inteligentes (Int –4 ou menor), como se estivesse sob efeito da magia Voz Divina. <i><b>e</b></i></p>
+
+<p><b>Alimentar-se do Pavor.</b> Quando uma criatura em alcance curto sob efeito de uma condição de medo morre, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.</p>
+
+<p><b>Armas da Selvageria.</b> Você considera todas as armas naturais como armas favoritas de Megalokk e recebe +2 em rolagens de dano com elas.</p>
+
+<p><b>Chamado Monstruoso.</b> Você aprende e pode lançar Conjurar Monstro e pode lançar e sustentar essa magia sem violar suas Obrigações e Restrições. <i><b>e</b></i></p>
+
+<p><b>Terror Profundo.</b> Você recebe +2 em Intimidação e na CD de seus efeitos de medo.</p>

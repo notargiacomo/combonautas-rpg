@@ -1,5 +1,17 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Ataque Piedoso.</b> Você pode usar armas corpo a corpo para causar dano não letal sem sofrer a penalidade de –5 no teste de ataque.</p>
+
+<p><b>Dom da Imortalidade.</b> Você é imortal. Sempre que morre, não importando o motivo, volta à vida após 3d6 dias. Apenas paladinos podem escolher este poder. Um personagem pode ter Dom da Imortalidade ou Dom da Ressurreição, mas não ambos. <i><b>e</b></i></p>
+
+<p><b>Dom da Profecia.</b> Você pode lançar Augúrio. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você também pode gastar 2 PM para receber +2 em um teste. <i><b>e</b></i></p>
+
+<p><b>Dom da Ressurreição.</b> Você pode gastar uma ação completa e todos os PM que possui (mínimo 1 PM) para tocar o corpo de uma criatura morta há menos de um ano e ressuscitá-la. A criatura volta à vida com 1 PV e 0 PM, e perde 1 ponto de Constituição permanentemente. Este poder só pode ser usado uma vez em cada criatura. Apenas clérigos podem escolher este poder.
+Um personagem pode ter Dom da Imortalidade ou Dom da Ressurreição, mas não ambos. <i><b>e</b></i></p>
+
+<p><b>Abraço da Fênix.</b> Você se torna imune a fogo. Se fosse sofrer dano mágico de fogo, em vez disso recebe PV temporários em quantidade igual à metade desse dano.</p>
+
+<p><b>Imolação Sagrada.</b> Você pode gastar uma ação padrão e 2 PM para cobrir-se com chamas até o fim da cena ou té ser submerso em água. Enquanto estiver coberto pelas chamas, uma vez por rodada, quando sofre um ataque corpo a corpo, você pode causar 2d6 + Sabedoria pontos de dano de fogo no atacante. <i><b>e</b></i></p>
+
+<p><b>Magia Piedosa.</b> Quando lança uma magia que causa dano, você pode gastar +1 PM para transformar o dano dela em não-letal.</p>
+
+<p><b>Redirecionar Destino.</b> Ao escolher este poder, role um d20 e anote o resultado. Uma vez por rodada, quando uma criatura em alcance curto faz um teste, você pode gastar 1
+PM para trocar o valor do dado desse teste pelo valor anotado (o valor do dado passa a ser o novo valor anotado).</p>

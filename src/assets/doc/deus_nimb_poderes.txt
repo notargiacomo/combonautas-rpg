@@ -1,5 +1,59 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p><b>Êxtase da Loucura.</b> Toda vez que uma ou mais criaturas falham em um teste de Vontade contra uma de suas habilidades mágicas, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena desta forma igual a sua Sabedoria.</p>
+
+<p><b>Poder Oculto.</b> Você pode gastar uma ação de movimento e 2  PM para invocar a força, a rapidez ou o vigor dos loucos. Role 1d6 para receber +2 em Força (1 ou 2), Destreza (3 ou 4) ou Constituição (5 ou 6) até o fim da cena. Você pode usar este poder várias vezes, mas bônus no mesmo atributo não são cumulativos. <i><b>e</b></i></p>
+
+<p><b>Sorte dos loucos.</b> Você pode pagar 1 PM para rolar novamente um  teste recém realizado. Se ainda assim falhar no teste, você perde 1d6 PM.</p>
+
+<p><b>Transmissão da Loucura.</b> Você pode lançar Sussurros Insanos (CD Car). Caso
+aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+
+<p><b>Magia Caótica.</b> Quando lança uma magia, você pode gastar 1 PM para aceitar o poder do caos. Se fizer isso, a CD para resistir a essa magia recebe um modificador igual a 1d20-10.</p>
+
+<p><b>Nimb.</b> Você é Nimb, ou não. Você pode gastar uma ação padrão e 2 PM para gerar uma habilidade única. Para isso, role 1d6 duas vezes, uma para Área/Alvo e outra para Efeito. <i><b>e</b></i></p>
+<p>
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr>
+      <th>1d6</th>
+      <th>Área/Alvo</th>
+      <th>Efeito</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Criaturas em um cone de 6m.</td>
+      <td>Fica verde por 1 dia; sofre −2 em testes baseados em Carisma.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Uma criatura em alcance médio.</td>
+      <td>Cura 2d6 PV.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Criaturas em um raio de 9m.</td>
+      <td>No próximo teste que fizer, deve rolar 2 dados e escolher o pior resultado.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Criaturas em uma esfera com 6m de raio em alcance curto.</td>
+      <td>Sofre 2d6 pontos de dano psíquico.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Criaturas em uma linha de 15m.</td>
+      <td>Recebe 1d4 PM temporários que duram 1 rodada.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Criaturas escolhidas em alcance curto.</td>
+      <td>Pode usar Poder Oculto (<i>Tormenta20</i>, p. 134) até o fim da cena.</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+
+<p><b>O Dobro ou Nada.</b> Quando usa uma habilidade com um custo em PM, você pode pagar o dobro desse custo. Se fizer isso, a CD dessa habilidade aumenta em +5. Se pelo menos um alvo passar no teste de resistência, você fica alquebrado.</p>
+
+<p><b>Só os Loucos Sabem.</b> No começo de cada dia, determine duas perícias aleatoriamente usando a Tabela 6-6: Desafios de Buscas (Tormenta20, p. 279). Até o fim do dia, você se torna treinado nas perícias determinadas ou, se já for treinado em alguma delas, recebe +2 naquela perícia.</p>
