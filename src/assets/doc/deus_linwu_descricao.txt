@@ -1,5 +1,11 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p>Mesmo com a quase extinção de seu povo pela Tormenta, o honrado Deus Samurai nunca fraquejou, nunca perdeu sua dignidade. Hoje, o Império de Jade está livre da tempestade, seus habitantes retornam para a grande reconstrução. Lin-Wu e seu povo sempre serão gratos aos campeões gaijin, por sua amizade e suporte durante os anos de pesadelo. Talvez por esse motivo, conforme especulam seus servos shugenja, devotos de Lin-Wu atuando longe de Tamu-ra recebem poderes diferentes, mais convenientes para suas missões.</p>
+<p><b>Crenças e Objetivos.</b> Promover a honra acima de tudo. Proteger Tamu-ra e o Reinado de Arton. Praticar honestidade, coragem, cortesia e compaixão. Demonstrar integridade e dignidade.
+Ser leal a seus companheiros. Buscar redenção após cometer desonra.</p>
+<p><b>Símbolo Sagrado.</b> Placa de metal com a silhueta de um dragão-serpente celestial.</p>
+<p><b>Canalizar Energia.</b> Qualquer.</p>
+<p><b>Arma Preferida.</b> Katana.</p>
+<p><b>Devotos.</b> Anões, cavaleiros, guerreiros, nobres, paladinos.</p>
+<p><b>Obrigações & Restrições.</b> Antigas proibições quanto a devotos estrangeiros ou do gênero
+feminino não mais se aplicam. No entanto, devotos de Lin-Wu ainda devem demonstrar comportamento
+honrado, jamais recorrendo a mentiras e subterfúgios. Em termos de jogo, são proibidos de tentar
+qualquer ação que exigiria um teste de Enganação, Furtividade ou Ladinagem.</p>

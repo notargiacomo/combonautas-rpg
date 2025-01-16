@@ -3,5 +3,5 @@
 <p><b>Símbolo Sagrado.</b> Um olho macabro de pupila vertical e cercado de espinhos.</p>
 <p><b>Canalizar Energia.</b> Negativa.</p>
 <p><b>Arma Preferida.</b> Corrente de espinhos.</p>
-<p><b>Devotos. Quaisquer.</b> A Tormenta aceita tudo e todos.</p>
+<p><b>Devotos.</b> Quaisquer. A Tormenta aceita tudo e todos.</p>
 <p><b>Obrigações & Restrições.</b> Quase todos os cultistas de Aharadak são maníacos insanos, compelidos a praticar os atos mais abomináveis. No entanto, talvez devido à natureza alienígena e incompreensível deste deus, alguns devotos conseguem se resguardar. Preservam sua humanidade, abstendo-se de cometer crimes ou profanações. Ainda assim, o devoto paga um preço. No início de qualquer cena de ação, role 1d6. Com um resultado ímpar, você fica fascinado na primeira rodada, perdido em devaneios sobre a futilidade da vida (mesmo que seja imune a esta condição).

@@ -1,5 +1,11 @@
-<h4>Características de Classe</h4>
-<p><b>Pontos de Vida.</b> Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
-<p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-<p><b>Perícias.</b>  Misticismo  (Int)  e  Vontade  (Sab), mais  2  a  sua  escolha  entre  Conhecimento  (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação  (Int),  Nobreza  (Int),  Ofício  (Int)  e Percepção (Sab).</p>
-<p><b>Proficiências.</b> Nenhuma.</p>
+<p>Capaz de enganar até mesmo outros deuses, o ardiloso Deus da Trapaça é uma divindade favorita
+de foras da lei — seus clérigos atuam como conselheiros, ou até mesmo líderes, em guildas criminosas ou navios piratas. Também é louvado por regentes e mercadores não muito honestos, orando por vantagens ilícitas. No entanto, mesmo pessoas honradas eventualmente simpatizam com Hyninn por sua esperteza, despreocupação e ousadia.</p>
+<p><b>Crenças e Objetivos.</b> Praticar a astúcia e a esperteza. Demonstrar que honestidade e sinceridade levam ao fracasso. Desafiar a lei e a ordem. Ser vitorioso sem seguir regras. Fazer aos outros antes que façam a você. Levar vantagem em tudo.</p>
+<p><b>Símbolo Sagrado.</b> Uma adaga atravessando uma máscara, ou uma raposa.</p>
+<p><b>Canalizar Energia.</b> Qualquer.</p>
+<p><b>Arma Preferida.</b> Adaga.</p>
+<p><b>Devotos.</b> Hynne, goblins, sílfides, bardos, bucaneiros, ladinos, inventores, nobres.</p>
+<p><b>Obrigações & Restrições.</b> Hyninn não recusa participação em um golpe, trapaça ou artimanha (o que muitas vezes inclui missões para roubar... hã, resgatar tesouros), exceto quando prejudica seus próprios aliados.</p>
+<p>O devoto também deve fazer um ato furtivo, ousado ou proibido por dia (ou por sessão de jogo,
+o que demorar mais), como oferenda a Hyninn. Roubar uma bolsa, enganar um miliciano, invadir o
+quarto de um nobre... Em termos de jogo, uma ação exigindo um teste de Enganação ou Ladinagem com CD mínima 15 + metade do seu nível.</p>
