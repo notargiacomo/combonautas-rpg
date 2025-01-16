@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import { CondicoesService } from '../../service/condicoes.service';
-import { Condicoes } from '../../model/condicoes';
+import { Condicao } from '../../model/condicao';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { NgFor } from '@angular/common';
@@ -16,7 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 })
 export class CondicoesComponent  implements OnInit {
 
-  condicoes!: Condicoes[]
+  condicoes!: Condicao[]
   form!: FormGroup;
   numero_registros=0;
 

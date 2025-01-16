@@ -21,11 +21,11 @@ export interface Classe {
   descricao_informacoes?:string;
   fator_vida?: number;
   fator_mana?:number;
-  proficiencias: Proficiencia[];
-  pericia_obrigatoria:string;
-  pericia_escolha_entre_duas:string[];
-  pericias_escolha_grupo:string[];
-  numero_pericias_escolha_grupo:number;
+  proficiencias?: Proficiencia[];
+  pericia_obrigatoria?:string;
+  pericia_escolha_entre_duas?:string[];
+  pericias_escolha_grupo?:string[];
+  numero_pericias_escolha_grupo?:number;
   imagem?: string,
   tabela?: string,
   referencias?: string,

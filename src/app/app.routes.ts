@@ -12,13 +12,14 @@ import { PoderesComponent } from './personagem/poderes/poderes.component';
 import { MagiasComponent } from './personagem/magias/magias.component';
 import { ItensComponent } from './personagem/itens/itens.component';
 import { DeusesComponent } from './personagem/deuses/deuses.component';
+import { ComplicacoesComponent } from './personagem/complicacoes/complicacoes.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'personagem/racas', component: RacasComponent },
     { path: 'personagem/origens', component: OrigensComponent },
     { path: 'personagem/classes', component: ClassesComponent },
-    { path: 'personagem/habilidades', component: HabilidadesComponent },
+    { path: 'personagem/complicacoes', component: ComplicacoesComponent },
     { path: 'personagem/poderes', component: PoderesComponent },
     { path: 'personagem/magias', component: MagiasComponent },
     { path: 'personagem/itens', component: ItensComponent },
