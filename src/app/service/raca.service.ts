@@ -11,7 +11,7 @@ import { AbstractService } from './abstract.service';
 export class RacaService extends AbstractService{
 
   constructor(private readonly racaData: RacaData, private readonly http: HttpClient) {
-    super('raca');
+    super('raca/');
   }
 
   listar(filtro:any): Observable<Raca[]> {

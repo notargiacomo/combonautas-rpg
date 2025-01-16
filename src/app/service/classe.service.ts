@@ -10,10 +10,9 @@ import { Classe } from '../model/classe';
 })
 export class ClasseService extends AbstractService {
   constructor(
-    private readonly classeData: ClasseData,
     private readonly http: HttpClient
   ) {
-    super('classe');
+    super('classe/');
   }
 
   listar(filtro: any): Observable<Classe[]> {
@@ -62,5 +61,11 @@ export class ClasseService extends AbstractService {
           return resultado;
         })
       );
+  }
+
+
+  getbyId(id: number|undefined){
+    return this.http
+    .get<any>(this.url+id )
   }
 }

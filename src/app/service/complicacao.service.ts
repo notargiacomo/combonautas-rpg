@@ -12,14 +12,19 @@ import { ClasseService } from './classe.service';
 export class ComplicacaoService extends AbstractService{
 
   constructor(private readonly complicacaoData: ComplicacaoData, private readonly http: HttpClient, private readonly classeService: ClasseService) {
-    super('complicacao');
+    super('complicacao/');
   }
 
   listar(filtro:any): Observable<Complicacao[]> {
     return this.http.get<Complicacao[]>(this.url,{params:this.removeBlankAttributes(filtro)})
         .pipe(map(resultado => {
           resultado.forEach((complicacao) => {
-            this.classeService.listar(complicacao.classe);
+            this.classeService.getbyId(complicacao.classe?.id).subscribe({
+              next: (classe) => {
+                debugger
+                complicacao.classe = classe
+              }
+            });
           });
           return resultado;
     
