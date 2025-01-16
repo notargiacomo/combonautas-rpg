@@ -10,7 +10,7 @@ import { Condicao } from '../model/condicao';
 export class CondicoesService extends AbstractService {
 
   constructor(private readonly http: HttpClient) {
-      super('condicoes');
+      super('condicoes/');
   }
 
   listar(filtro:any): Observable<Condicao[]> {

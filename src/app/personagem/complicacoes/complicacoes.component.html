@@ -29,8 +29,9 @@
         <mat-grid-tile *ngFor="let complicacao of complicacoes">
           <mat-card class="card-padrao">
             <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-              {{complicacao.nome}} 
-              <!-- {{complicacao.classe.nome}}  -->
+              {{complicacao.nome}}
+              {{complicacao.classe?.nome ? '-':''}}
+              {{complicacao.classe?.nome}} 
             </mat-card-title>
             <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
               <div class="content">
