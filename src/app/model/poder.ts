@@ -7,9 +7,13 @@ export interface Poder {
   nome?: string;
   descricao?: string;
   prerequisito?: string;
-  atributo?: number;
-  pericia?: number;
+  prerequisito_atributo_nome?: string;
+  prerequisito_atributo_valor?: number;
+  prerequisito_pericia?: string;
+  prerequisito_nivel?: number;
   tipo?: string;
   classe?: Classe;
+  referencias?:string;
+  paginas?:string;
 
 }
