@@ -19,7 +19,7 @@ export class ComplicacaoService extends AbstractService{
     return this.http.get<Complicacao[]>(this.url,{params:this.removeBlankAttributes(filtro)})
         .pipe(map(resultado => {
           resultado.forEach((complicacao) => {
-            // this.classeService.listar(complicacao.classe);
+            this.classeService.listar(complicacao.classe);
           });
           return resultado;
     
