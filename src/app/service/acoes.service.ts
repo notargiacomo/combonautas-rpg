@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class AcoesService extends AbstractService {
 
   constructor(private readonly http: HttpClient) {
-      super('acoes');
+      super('acoes/');
   }
 
   listar(filtro:any): Observable<Acao[]> {

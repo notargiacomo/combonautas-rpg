@@ -11,7 +11,7 @@ import { AbstractService } from './abstract.service';
 export class DeusService extends AbstractService{
 
   constructor(private readonly deusData: DeusData, private readonly http: HttpClient) {
-    super('deus');
+    super('deus/');
   }
 
   listar(filtro:any): Observable<Deus[]> {

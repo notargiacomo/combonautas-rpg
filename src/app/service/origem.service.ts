@@ -11,7 +11,7 @@ import { Origem } from '../model/origem';
 export class OrigemService extends AbstractService{
 
   constructor(private readonly origemData: OrigemData, private readonly http: HttpClient) {
-    super('origem');
+    super('origem/');
   }
 
   listar(filtro:any): Observable<Origem[]> {
