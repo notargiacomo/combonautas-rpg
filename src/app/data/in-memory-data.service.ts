@@ -8,6 +8,8 @@ import { OrigemData } from './origem.data';
 import { Origem } from '../model/origem';
 import { Classe } from '../model/classe';
 import { ClasseData } from './classe.data';
+import { DeusData } from './deus.data';
+import { Deus } from '../model/deus';
 
 @Injectable({
   providedIn: 'root'
@@ -16,14 +18,16 @@ export class InMemoryDataService implements InMemoryDbService {
 
   constructor(private readonly racaData: RacaData,
     private readonly origemData: OrigemData,
-    private readonly classeData: ClasseData
+    private readonly classeData: ClasseData,
+    private readonly deusData: DeusData
   ) {}
 
   createDb() {
     const raca: Raca[] = this.racaData.getRacas();
     const origem: Origem[] = this.origemData.getOrigens();
     const classe: Classe[] = this.classeData.getClasses();
-    return { raca: raca, condicoes:condicoes, acoes:acoes, origem:origem, classe:classe};
+    const deus: Deus[] = this.deusData.getDeuses();
+    return { raca: raca, condicoes:condicoes, acoes:acoes, origem:origem, classe:classe, deus:deus};
   }
 
 }

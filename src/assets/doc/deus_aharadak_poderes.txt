@@ -1,0 +1,15 @@
+<p><b>Afinidade com a Tormenta Aharadak.</b> Você recebe +10 em testes de resistência contra efeitos da Tormenta, de suas criaturas e de devotos de Aharadak. Além disso, seu primeiro poder da Tormenta não conta para perda de Carisma.</p>
+
+<p><b>Êxtase da Loucura.</b> Toda vez que uma ou mais criaturas falham em um teste de Vontade contra uma de suas habilidades mágicas, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena desta forma igual a sua Sabedoria.</p>
+
+<p><b>Percepção Temporal.</b> Você pode gastar 3 PM para somar sua Sabedoria (limitado por seu nível e não cumulativo com efeitos que somam este atributo) a seus ataques, Defesa e testes de Reflexos até o fim da cena.</p>
+
+<p><b>Rejeição Divina.</b> Você recebe resistência a magia divina +5.</p>
+
+<p><b>Corromper Equipamento.</b> Você pode gastar 2 PM para cobrir um item que esteja empunhando com uma substância rubra. Até o fim da cena, o item recebe os benefícios de matéria vermelha (Tormenta20, p. 167), cumulativo com outros materiais especiais. Se usar esse poder em uma arma produzida com Armamento Aberrante, seu custo é reduzido em –1 PM.</p>
+
+<p><b>Júbilo na Dor.</b> Quando causa ou sofre dano, você recebe redução de dano 1. Esse efeito é cumulativo e limitado por sua Sabedoria e termina se você passar 1 rodada sem causar ou sofrer dano.</p>
+
+<p><b>Mediador da Tempestade.</b> Você pode falar com lefeu livremente e recebe +5 em testes de Diplomacia e Intuição com criaturas da Tormenta e devotos de Aharadak.</p>
+
+<p><b>Portal Vivo.</b> Você pode gastar uma ação completa e 2 PM para criar um enxame de insetos rubros em um ponto a sua escolha em alcance curto e com duração sustentada. O enxame tem tamanho Médio e pode passar pelo espaço de outras criaturas. Uma vez por rodada, você pode gastar uma ação de movimento para mover o enxame 9m. No final do seu turno, o enxame causa 2d6 pontos de dano de ácido a qualquer criatura no espaço que ele estiver ocupando. Você pode aprender Enxame Rubro de Ichabod como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. <i><b>e</b></i></p>
