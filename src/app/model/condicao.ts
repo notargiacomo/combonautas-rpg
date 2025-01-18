@@ -1,5 +1,6 @@
 export interface Condicao {
     id:number;
-    nome:string;
-    descricao:string;
+    nome?:string;
+    descricao?:string;
+    tipo?:string;
 }

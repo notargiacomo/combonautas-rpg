@@ -33,7 +33,7 @@ export class ComplicacaoData {
       },
       { id:10,  nome: 'Cria de Nimb', descricao: 'Você tem um parafuso a menos (talvez literalmente, se for um golem). Você sofre –5 em testes de perícias baseadas em Carisma. Além disso, no início de cada cena de ação, role 1d6. Com um resultado 1, você fica confuso (mesmo que seja imune a esta condição). Você não pode escolher essa complicação se for devoto de Nimb ou, por algum outro motivo, seguir suas obrigações e restrições.',  e_restritiva: false
       },
-      { id:11,  nome: 'Crise de Fé', descricao: 'Você segue um dos deuses do Panteão, mas, no fundo, se pergunta se isso é o certo a se fazer. Você sofre –2 em Vontade e segue as Obrigações & Restrições de um deus, mas não recebe nenhum poder concedido por isso nem conta como devoto dessa divindade para cumprir pré-requisitos. Você não pode ser devoto de outro deus. †',  e_restritiva: true
+      { id:11,  nome: 'Crise de Fé', descricao: 'Você segue um dos deuses do Panteão, mas, no fundo, se pergunta se isso é o certo a se fazer. Você sofre –2 em Vontade e segue as Obrigações & Restrições de um deus, mas não recebe nenhum poder concedido por isso nem conta como devoto dessa divindade para cumprir pré-requisitos. Você não pode ser devoto de outro deus. ',  e_restritiva: true
       },
       { id:12,  nome: 'Desprotegido', descricao: 'Você nunca aprendeu a se defender. Você sofre –2 na Defesa e em testes de resistência.',  e_restritiva: false
       },
@@ -45,7 +45,7 @@ export class ComplicacaoData {
       },
       { id:16,  nome: 'Hedonista', descricao: 'Você está acostumado a viver no luxo e não aceita nada abaixo disso. Em condições luxuosas, sua recuperação de PV e PM é igual ao seu nível. Em condições confortáveis, sua recuperação é igual à metade do seu nível. Em condições normais ou ruins, você recupera apenas 1 PV e 1 PM, independentemente do seu nível.',  e_restritiva: false
       },
-      { id:17,  nome: 'Ímpio', descricao: 'Você odeia os deuses — e eles sabem disso. Você sofre –5 em testes de resistência contra magias divinas e não pode se beneficiar de efeitos de magias divinas. †',  e_restritiva: true
+      { id:17,  nome: 'Ímpio', descricao: 'Você odeia os deuses — e eles sabem disso. Você sofre –5 em testes de resistência contra magias divinas e não pode se beneficiar de efeitos de magias divinas. ',  e_restritiva: true
       },
       { id:18,  nome: 'Impulsivo', descricao: 'Você age primeiro e pensa depois (ou nem pensa). Você sofre –5 em Furtividade e Investigação e não pode fazer a ação preparar.',  e_restritiva: false
       },
@@ -81,13 +81,13 @@ export class ComplicacaoData {
       },
       { id:34,  nome: 'Mente Cansada', descricao: `Sua memória é péssima. Quanto mais magias você aprende, mais difícil fica lembrar de todas! Para cada círculo de magia que você pode lançar, o total de magias que pode memorizar diminui em 1. Pré-requisito: mago.`, classe: {id:1}, e_restritiva: false
       },
-      { id:35,  nome: 'De Peito Aberto', descricao: `Você tem tatuagens tribais que quer exibir, confia na sua resistência natural ou só acha seu corpo lindo. Seja qual for o motivo, você não pode vestir armaduras e seu limite de itens vestidos diminui em dois. †`, classe: {id:2}, e_restritiva: true
+      { id:35,  nome: 'De Peito Aberto', descricao: `Você tem tatuagens tribais que quer exibir, confia na sua resistência natural ou só acha seu corpo lindo. Seja qual for o motivo, você não pode vestir armaduras e seu limite de itens vestidos diminui em dois. `, classe: {id:2}, e_restritiva: true
       },
-      { id:36,  nome: 'Totem Gigante', descricao: `Você levou a orientação de levar o totem de sua tribo consigo muito literalmente. Você carrega uma grande coluna de madeira esculpida que jamais pode abandonar. A coluna ocupa 10 espaços e impõe penalidade de armadura –5. †`, classe: {id:1}, e_restritiva: true
+      { id:36,  nome: 'Totem Gigante', descricao: `Você levou a orientação de levar o totem de sua tribo consigo muito literalmente. Você carrega uma grande coluna de madeira esculpida que jamais pode abandonar. A coluna ocupa 10 espaços e impõe penalidade de armadura –5. `, classe: {id:1}, e_restritiva: true
       },
       { id:37,  nome: 'Estrelismo', descricao: `Você é lindo, talentoso e… extremamente egocêntrico. Você sofre –5 em testes de Diplomacia e Intuição. Além disso, sempre que falha em um teste de Atuação, fica alquebrado até o fim da cena.`, classe: {id:3}, e_restritiva: false
       },
-      { id:38,  nome: 'Falastrão', descricao: `Você está dando suas palestrinhas. Você não consegue ficar quieto e deve ser sempre o primeiro a falar, por mais inconveniente que isso possa ser. Você sofre –5 em testes de Furtividade e Nobreza e pode se envolver em diversos problemas, especialmente se estiver diante de certas autoridades ou tentando passar discretamente por alguém. †`, classe: {id:3}, e_restritiva: true
+      { id:38,  nome: 'Falastrão', descricao: `Você está dando suas palestrinhas. Você não consegue ficar quieto e deve ser sempre o primeiro a falar, por mais inconveniente que isso possa ser. Você sofre –5 em testes de Furtividade e Nobreza e pode se envolver em diversos problemas, especialmente se estiver diante de certas autoridades ou tentando passar discretamente por alguém. `, classe: {id:3}, e_restritiva: true
       },
       { id:39,  nome: 'Coragem Líquida', descricao: `Você não vai a lugar algum sem uma caneca ou garrafa. Você sempre ocupa uma de suas mãos com uma bebida e, na primeira rodada de qualquer cena envolvendo um perigo, deve gastar uma ação de movimento para tomar um gole. A bebida não o beneficia, mas também não causa penalidades (além do gasto da ação) — de tanto beber, você já está acostumado a aguentar o tranco!`, classe: {id:4}, e_restritiva: false
       },
@@ -101,15 +101,15 @@ export class ComplicacaoData {
       },
       { id:44,  nome: 'Preparação Litúrgica', descricao: `Você só pode lançar magias preparadas; suas outras magias não podem ser lançadas, mesmo que você tenha pontos de mana para tal. Para preparar magias, você precisa gastar uma hora de seu dia orando, meditando, entoando mantras ou fazendo qualquer outro tipo de ritual litúrgico. Ao fazer isso, você escolhe metade das magias que conhece (por exemplo, se conhece 5 magias, escolhe 2) e só poderá lançar as magias escolhidas. Caso não possa se preparar, não poderá trocar as magias escolhidas no dia anterior.`, classe: {id:7}, e_restritiva: false
       },
-      { id:45,  nome: 'Tosco', descricao: `Você não se dá bem com objetos civilizados. Você não pode usar armas metálicas, nem nenhum equipamento superior. †`, classe: {id:8}, e_restritiva: true
+      { id:45,  nome: 'Tosco', descricao: `Você não se dá bem com objetos civilizados. Você não pode usar armas metálicas, nem nenhum equipamento superior. `, classe: {id:8}, e_restritiva: true
       },
       { id:46,  nome: 'Precavido', descricao: `Enquanto não conhece as capacidades do inimigo, você prefere lutar de maneira cautelosa. Tanta preocupação causa –2 em testes de ataque e resistência. Você pode se livrar desta penalidade até o final da cena gastando uma ação de movimento e passando em um teste de Guerra (CD 15 + ND do inimigo mais poderoso na cena).`, classe: {id:9}, e_restritiva: false
       },
       { id:47,  nome: 'Trabalhador Ocupado', descricao: `Você está tão ocupado trabalhando para os outros que não tem tempo de fazer seus próprios projetos! Você não recebe a habilidade Protótipo e, quando ganha a habilidade Fabricar Item Superior, não recebe um item gratuito.`, classe: {id:10}, e_restritiva: false
       },
-      { id:48,  nome: 'Honra de Ladrão', descricao: `Você pode ser um bandido e salafrário, mas tem seus princípios. Você sempre cumpre suas promessas e nunca rouba ou tira vantagem de pessoas com menos recursos que você e seu grupo. †`, classe: {id:11}, e_restritiva: true
+      { id:48,  nome: 'Honra de Ladrão', descricao: `Você pode ser um bandido e salafrário, mas tem seus princípios. Você sempre cumpre suas promessas e nunca rouba ou tira vantagem de pessoas com menos recursos que você e seu grupo. `, classe: {id:11}, e_restritiva: true
       },
-      { id:49,  nome: 'Firula', descricao: `Na primeira rodada de cada combate, você deve gastar uma ação padrão se apresentando, fazendo uma coreografia ou declamando seu peso, altura e histórico. †`, classe: {id:12}, e_restritiva: true
+      { id:49,  nome: 'Firula', descricao: `Na primeira rodada de cada combate, você deve gastar uma ação padrão se apresentando, fazendo uma coreografia ou declamando seu peso, altura e histórico. `, classe: {id:12}, e_restritiva: true
       },
       { id:50,  nome: 'Filantropo', descricao: `Você doa parte de sua riqueza para fazer o bem. Você não recebe a habilidade Espólio e, quando usa sua habilidade Riqueza, recebe apenas metade do valor normal.`, classe: {id:13}, e_restritiva: false
       },
