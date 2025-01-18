@@ -1,14 +1,6 @@
-@font-face {
-    font-family: 'Tormenta20x' !important;
-    src: url('assets/font/Tormenta20x.ttf') format('truetype') !important;
-    
-    font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
-    font-style: normal;  /* Pode ser 'italic' ou outros estilos */
-}
-
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%; font-family: 'Cinzel', serif !important;}
 header, .cabecalho {
     width: 100%!important;
     height: 50%!important; /* Você pode ajustar a altura como preferir */
@@ -43,9 +35,12 @@ header, .cabecalho {
 }
 
 
-body { margin: 0; 
-    // font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-family: 'Tormenta20x', sans-serif !important;
+body { 
+    margin: 0; 
+    font-family: 'Cinzel', serif !important;
+    font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
+    font-style: normal;  /* Pode ser 'italic' ou outros estilos */
+    font-size: 13pt !important;
 }
 
 
@@ -111,6 +106,16 @@ b {
 
 .mat-mdc-card-content b {
     color: rgb(247, 247, 247) !important;
+}
+
+.mat-mdc-card-content img {
+    background: rgb(255, 248, 248) !important;
+
+}
+
+img {
+    background: rgb(255, 248, 248) !important;
+
 }
 
 .mat-mdc-card-content hr {
