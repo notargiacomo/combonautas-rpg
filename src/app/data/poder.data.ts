@@ -510,6 +510,8 @@ export class PoderData {
         id: 44,
         nome: 'Ao Sabor do Destino',
         descricao: `<p>Confiando em suas próprias habilidades (ou em sua própria sorte), você abre mão de usar itens mágicos. Sua autoconfiança fornece diversos benefícios, de acordo com seu nível de personagem e a tabela da página seguinte.</p>
+        <div class="row">
+        <div class="col-sm-12 mt-2 mb-4">
         <table border="1">
           <thead>
             <tr>
@@ -568,7 +570,9 @@ export class PoderData {
             </tr>
           </tbody>
         </table>
-        </br>
+        </div>
+        </div>
+      </div>
         <p>Os bônus não são cumulativos (os bônus em atributos e perícias devem ser aplicados num atributo ou perícia diferente a cada vez). Se você utilizar voluntariamente qualquer item mágico (exceto poções), perde o benefício deste poder até o fim da aventura. Você ainda pode lançar magias, receber magias benéficas ou beneficiar-se de itens usados por outros — por exemplo, pode “ir de carona” em um tapete voador, mas não pode você mesmo conduzi-lo.</p>
       `,
         prerequisito: 'Pré-requisito: 6º nível de personagem.',
@@ -2426,6 +2430,8 @@ export class PoderData {
         descricao:
           `<p><b>Nimb.</b> Você é Nimb, ou não. Você pode gastar uma ação padrão e 2 PM para gerar uma habilidade única. Para isso, role 1d6 duas vezes, uma para Área/Alvo e outra para Efeito. </p>
           <p>
+          <div class="row">
+          <div class="col-sm-12 mt-2 mb-4">
           <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
             <thead>
               <tr>
@@ -2466,7 +2472,9 @@ export class PoderData {
                 <td>Pode usar Poder Oculto (<i>Tormenta20</i>, p. 134) até o fim da cena.</td>
               </tr>
             </tbody>
-          </table>`,
+          </table>
+          </div>
+          </div>`,
         id_deuses:[12],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
