@@ -12,35 +12,35 @@
             <mat-accordion>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> {{this.racas[racaIndex].nome}} </mat-panel-title>
+                  <mat-panel-title> {{this.racas[racaIndex] === null ? '': this.racas[racaIndex].nome}} </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div class="row">
                   <div
                     class="col-sm-9 text-justify"
-                    [innerHTML]="this.racas[racaIndex].descricao"
+                    [innerHTML]="this.racas[racaIndex] === null ? '': this.racas[racaIndex].descricao"
                   ></div>
                   <div class="col-sm-3">
                     <mat-card>
-                      <img [src]="this.racas[racaIndex].imagem" [alt]="this.racas[racaIndex].nome" />
+                      <img [src]="this.racas[racaIndex] === null ? '': this.racas[racaIndex].imagem" [alt]="this.racas[racaIndex] === null ? '': this.racas[racaIndex].nome" />
                     </mat-card>
                   </div>
                 </div>
               </mat-expansion-panel>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> {{this.origens[origemIndex].nome}} </mat-panel-title>
+                  <mat-panel-title> {{this.origens[origemIndex] === null ? '': origens[origemIndex].nome}} </mat-panel-title>
                   <mat-panel-description>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
                 <div class="row">
                   <div
                     class="col-sm-12 text-justify"
-                    [innerHTML]="this.origens[origemIndex].descricao"
+                    [innerHTML]="this.origens[origemIndex] === null ? '': origens[origemIndex].descricao"
                   ></div></div>
               </mat-expansion-panel>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> {{this.classes[classeIndex].nome}} </mat-panel-title>
+                  <mat-panel-title> {{this.classes[classeIndex]=== null ? '': classes[classeIndex].nome}} </mat-panel-title>
                   <mat-panel-description>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
@@ -50,17 +50,17 @@
                       <div class="content">
                         <div class="row">
                           <div class="col-sm-3">
-                            <mat-card *ngIf="this.classes[classeIndex].tabela != null">
-                              <img [src]="this.classes[classeIndex].tabela" [alt]="this.classes[classeIndex].nome" />
+                            <mat-card *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].tabela != null">
+                              <img [src]="this.classes[classeIndex]=== null ? '': classes[classeIndex].tabela" [alt]="this.classes[classeIndex]=== null ? '': classes[classeIndex].nome" />
                             </mat-card>
                           </div>
                           <div
                             class="col-sm-6 text-justify"
-                            [innerHTML]="this.classes[classeIndex].descricao_classe"
+                            [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_classe"
                           ></div>
                           <div class="col-sm-3">
-                            <mat-card *ngIf="this.classes[classeIndex].imagem != null">
-                              <img [src]="this.classes[classeIndex].imagem" [alt]="this.classes[classeIndex].nome" />
+                            <mat-card *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].imagem != null">
+                              <img [src]="this.classes[classeIndex]=== null ? '': classes[classeIndex].imagem" [alt]="this.classes[classeIndex]=== null ? '': classes[classeIndex].nome" />
                             </mat-card>
                           </div>
                         </div>
@@ -69,11 +69,11 @@
                     <mat-tab label="Habilidades">
                       <div class="row">
                         <h4> Habilidades de Classe </h4>
-                        <p>Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma. Segue as habilidades de {{this.classes[classeIndex].nome}}.</p>
+                        <p>Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma. Segue as habilidades de {{this.classes[classeIndex]=== null ? '': classes[classeIndex].nome}}.</p>
                         <p>(PS: Habilidades Mágicas são marcadas com o símbolo: <i><b>e</b></i>.)</p>
                         <div
                           class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex].descricao_habilidades"
+                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_habilidades"
                         ></div>
                       </div>
                     </mat-tab>
@@ -83,36 +83,36 @@
                         <p>(PS: Poderes Mágicos são marcados com o símbolo: <i><b>e</b></i>.)</p>
                         <div
                           class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex].descricao_poderes"
+                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_poderes"
                         ></div>
                       </div>
                     </mat-tab>
-                    <mat-tab *ngIf="this.classes[classeIndex].ha_informacoes_adicionais" label="Informações Adicionais">
+                    <mat-tab *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].ha_informacoes_adicionais" label="Informações Adicionais">
                       <div class="row">
                         <div
                           class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex].descricao_informacoes"
+                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_informacoes"
                         ></div>
                       </div>
                     </mat-tab>
-                    <mat-tab *ngIf="this.classes[classeIndex].ha_complicacoes" label="Complicações">
+                    <mat-tab *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].ha_complicacoes" label="Complicações">
                       <div class="row">
                         <h4>Complicações</h4>
                         <p>Complicações são restrições e penalidades com as quais seu personagem precisa lidar. Quando você cria seu personagem, pode escolher uma complicação para ele (e apenas uma). Se fizer isso, recebe um poder geral extra. Você é livre para escolher o poder, mas deve preencher seus pré-requisitos.</p>
                         <p>(PS:Certas complicações restringem as ações de um herói, seja por serem uma limitação de sua personalidade, seja por serem um código ou voto que ele decidiu seguir. Tais complicações vêm acompanhadas do símbolo <b>†</b>).</p>
                         <div
                           class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex].descricao_complicacoes"
+                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_complicacoes"
                         ></div>
                       </div>
                     </mat-tab>
-                    <mat-tab *ngIf="this.classes[classeIndex].ha_poderes_db" label="Poderes DB">
+                    <mat-tab *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].ha_poderes_db" label="Poderes DB">
                       <div class="row">
                         <p><h4>Poderes de Classe da Dragão Brasil</h4>
                         <p>Essa aba vai apresentar material de jogo em fase de teste, que está sendo trabalhado pela equipe de game design e pode (ou não) ser inserido em futuros suplementos da franquia. Todas as regras mostradas aqui são opcionais e podem apresentar mudanças caso publicadas oficialmente.</p>
                         <div
                           class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex].descricao_poderes_db"
+                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_poderes_db"
                         ></div>
                       </div>
                     </mat-tab>
