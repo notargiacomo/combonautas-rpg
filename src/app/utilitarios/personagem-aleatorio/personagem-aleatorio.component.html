@@ -28,19 +28,19 @@
               </mat-expansion-panel>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> <b>{{this.origens[origemIndex] === null ? '': origens[origemIndex].nome}} </b></mat-panel-title>
+                  <mat-panel-title> <b>{{this.origens[origemIndex] === null ? '': this.origens[origemIndex].nome}} </b></mat-panel-title>
                   <mat-panel-description>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
                 <div class="row">
                   <div
                     class="col-sm-12 text-justify"
-                    [innerHTML]="this.origens[origemIndex] === null ? '': origens[origemIndex].descricao"
+                    [innerHTML]="this.origens[origemIndex] === null ? '': this.origens[origemIndex].descricao"
                   ></div></div>
               </mat-expansion-panel>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> <b>{{this.classes[classeIndex]=== null ? '': classes[classeIndex].nome}} </b></mat-panel-title>
+                  <mat-panel-title> <b>{{this.classes[classeIndex]=== null ? '': this.classes[classeIndex].nome}} </b></mat-panel-title>
                   <mat-panel-description>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
