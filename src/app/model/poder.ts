@@ -1,4 +1,5 @@
 import { Classe } from "./classe";
+import { Deus } from "./deus";
 
 export interface Poder {
 
@@ -15,7 +16,8 @@ export interface Poder {
   prerequisito_nivel?: number;
   prerequisito_habilidade?: string[];
   prerequisito_numero_habilidade_tormenta?: number;
-  deuses?: number[];
+  id_deuses?: number[];
+  deuses?: Deus[];
   fator_tormenta?: number,
   e_aprimoramento?: boolean;
   e_poder_magico?:boolean;

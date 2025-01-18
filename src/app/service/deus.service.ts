@@ -34,4 +34,9 @@ export class DeusService extends AbstractService{
 
     }));
   }
+
+  getbyId(id: number|undefined){
+    return this.http
+    .get<any>(this.url+id )
+  }
 }

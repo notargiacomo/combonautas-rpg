@@ -1,4 +1,4 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import {
   FormBuilder,
@@ -14,6 +14,7 @@ import { Poder } from '../../model/poder';
 import { PoderService } from '../../service/poder.service';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TipoPoder } from '../../enum/tipopoder.enum';
+import { Deus } from '../../model/deus';
 
 @Component({
   selector: 'app-poderes',
@@ -21,7 +22,7 @@ import { TipoPoder } from '../../enum/tipopoder.enum';
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
-    NgFor,
+    NgFor, //NgIf,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
@@ -33,11 +34,13 @@ import { TipoPoder } from '../../enum/tipopoder.enum';
 export class PoderesComponent {
   poderes_combate!: Poder[];
   poderes_destino!: Poder[];
+  poderes_magia!: Poder[];
   poderes_concedido!: Poder[];
   poderes_tormenta!: Poder[];
   form!: FormGroup;
   numero_registros_combate = 0;
   numero_registros_concedido = 0;
+  numero_registros_magia = 0;
   numero_registros_destino = 0;
   numero_registros_tormenta = 0;
 
@@ -71,6 +74,17 @@ export class PoderesComponent {
         console.log(response);
       },
     });
+
+    this.service.listar({tipo: TipoPoder.MAGIA}).subscribe({
+      next: (response) => {
+        this.poderes_magia = response;
+        this.numero_registros_magia = response.length;
+      },
+      error: (response) => {
+        console.log(response);
+      },
+    });
+
     this.service.listar({tipo: TipoPoder.CONCEDIDO}).subscribe({
       next: (response) => {
         this.poderes_concedido = response;
@@ -131,6 +145,26 @@ export class PoderesComponent {
     
   }
 
+  consultarPoderesMagia() {
+    console.log(this.form.value);
+    let filtro = this.form.value;
+    filtro.tipo = TipoPoder.MAGIA;
+    if (filtro.nome) {
+      // regex - in-memory-web-api
+      filtro.nome = '^' + filtro.nome;
+    }
+    this.service.listar(filtro).subscribe({
+      next: (response) => {
+        this.poderes_magia = response;
+        this.numero_registros_magia = response.length;
+      },
+      error: (response) => {
+        console.log(response);
+      },
+    });
+    
+  }
+
   consultarPoderesConcedido() {
     console.log(this.form.value);
     let filtro = this.form.value;
@@ -169,5 +203,9 @@ export class PoderesComponent {
       },
     });
     
+  }
+
+  nomeDeuses(deuses?: Deus[]): string {
+    return  deuses ? deuses.map(deus => deus.nome).join(' ') : '';
   }
 }

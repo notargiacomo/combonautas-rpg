@@ -104,13 +104,21 @@ b {
     font-size: small !important;
     background-color: rgb(132, 26, 18) !important;
     color: rgb(247, 247, 247);
-    max-height: 300px !important; /* Defina a altura máxima do card */
+    max-height: 400px !important; /* Defina a altura máxima do card */
     overflow-y: auto !important; /* Habilita o scroll vertical */
     padding: 16px !important; /* Opcional: ajuste o espaçamento interno */
 }
 
 .mat-mdc-card-content b {
     color: rgb(247, 247, 247) !important;
+}
+
+.mat-mdc-card-content hr {
+    border: none !important;  /* Remove estilos padrão */
+    border-top: 5px solid rgb(247, 247, 247) !important; /* Define a cor e a altura */
+    border-radius: 10px !important; /* Arredonda os cantos */
+    overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+    opacity: 1 !important;
 }
 
 .content-cartao-condicoes {

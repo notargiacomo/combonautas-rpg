@@ -883,7 +883,7 @@ export class PoderData {
         nome: 'Afinidade com a Tormenta',
         descricao:
           'Você recebe +10 em testes de resistência contra efeitos da Tormenta, de suas criaturas e de devotos de Aharadak. Além disso, seu primeiro poder da Tormenta não conta para perda de Carisma.',
-        deuses: [1],
+        id_deuses: [1],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -893,7 +893,7 @@ export class PoderData {
         nome: 'Almejar o Impossível',
         descricao:
           'Quando faz um teste de perícia, um resultado de 19 ou mais no dado sempre é um sucesso, não importando o valor a ser alcançado.',
-        deuses: [17, 19],
+        id_deuses: [17, 19],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -903,7 +903,7 @@ export class PoderData {
         nome: 'Anfíbio',
         descricao:
           'Você pode respirar embaixo d’água e adquire deslocamento de natação igual a seu deslocamento terrestre.',
-        deuses: [13],
+        id_deuses: [13],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -912,8 +912,8 @@ export class PoderData {
         id: 75,
         nome: 'Apostar com o Trapaceiro',
         descricao:
-          `Quando faz um teste de perícia, você pode gastar 1 PM para apostar com Hyninn. Você e o mestre rolam 1d20, mas o mestre mantém o resultado dele em segredo. Você então escolhe entre usar seu próprio resultado ou o resultado oculto do mestre (neste caso, ele revela o resultado).<i><b>e</b></i>`,
-        deuses: [5],
+          `Quando faz um teste de perícia, você pode gastar 1 PM para apostar com Hyninn. Você e o mestre rolam 1d20, mas o mestre mantém o resultado dele em segredo. Você então escolhe entre usar seu próprio resultado ou o resultado oculto do mestre (neste caso, ele revela o resultado).`,
+        id_deuses: [5],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '132',
@@ -924,7 +924,7 @@ export class PoderData {
         nome: 'Armas da ambição',
         descricao:
           `Você recebe +1 em testes de ataque e na margem de ameaça com armas nas quais é proficiente.`,
-        deuses: [19],
+        id_deuses: [19],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -934,7 +934,7 @@ export class PoderData {
         nome: 'Arsenal das profundezas',
         descricao:
           `Você recebe +2 nas rolagens de dano com azagaias, lanças e tridentes e seu multiplicador de crítico com essas armas aumenta em +1.`,
-        deuses: [13],
+        id_deuses: [13],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -944,7 +944,7 @@ export class PoderData {
         nome: 'Astúcia da Serpente',
         descricao:
           `Você recebe +2 em Enganação, Furtividade e Intuição.`,
-        deuses: [14],
+        id_deuses: [14],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -954,7 +954,7 @@ export class PoderData {
         nome: 'Ataque Piedoso',
         descricao:
           `Você pode usar armas corpo a corpo para causar dano não letal sem sofrer a penalidade de –5 no teste de ataque.`,
-        deuses: [8, 18],
+        id_deuses: [8, 18],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -963,8 +963,8 @@ export class PoderData {
         id: 80,
         nome: 'Aura de Medo',
         descricao:
-          `Você pode gastar 2 PM para gerar uma aura de medo de 9m de raio e duração até o fim da cena. Todos os inimigos que entrem na aura devem fazer um teste de Vontade (CD Car) ou ficam abalados até o fim da cena. Uma criatura que passe no teste de Vontade fica imune a esta habilidade por um dia. <i><b>e</b></i>`,
-        deuses: [6],
+          `Você pode gastar 2 PM para gerar uma aura de medo de 9m de raio e duração até o fim da cena. Todos os inimigos que entrem na aura devem fazer um teste de Vontade (CD Car) ou ficam abalados até o fim da cena. Uma criatura que passe no teste de Vontade fica imune a esta habilidade por um dia. `,
+        id_deuses: [6],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '132',
@@ -974,8 +974,8 @@ export class PoderData {
         id: 81,
         nome: 'Aura de Paz',
         descricao:
-          `Você pode gastar 2 PM para gerar uma aura de paz com alcance curto e duração de uma cena. Qualquer inimigo dentro da aura que tente fazer uma ação hostil contra você deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Se passar, fica imune a esta habilidade por um dia. <i><b>e</b></i>`,
-        deuses: [10],
+          `Você pode gastar 2 PM para gerar uma aura de paz com alcance curto e duração de uma cena. Qualquer inimigo dentro da aura que tente fazer uma ação hostil contra você deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Se passar, fica imune a esta habilidade por um dia. `,
+        id_deuses: [10],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '132',
@@ -986,7 +986,7 @@ export class PoderData {
         nome: 'Aura Restauradora',
         descricao:
           `Efeitos de cura usados por você e seus aliados em alcance curto recuperam +1 PV por dado.`,
-        deuses: [8],
+        id_deuses: [8],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -996,7 +996,7 @@ export class PoderData {
         nome: 'Bênção do Mana',
         descricao:
           `Você recebe +1 PM a cada nível ímpar.`,
-        deuses: [20],
+        id_deuses: [20],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -1005,8 +1005,8 @@ export class PoderData {
         id: 84,
         nome: 'Carícia Sombria',
         descricao:
-          `Você pode gastar 1 PM e uma ação padrão para cobrir sua mão com energia negativa e tocar uma criatura em alcance corpo a corpo. A criatura sofre 2d6 pontos de dano de trevas (Fortitude CD Sab reduz à metade) e você recupera PV iguais à metade do dano causado. Você pode aprender Toque Vampírico como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [16],
+          `Você pode gastar 1 PM e uma ação padrão para cobrir sua mão com energia negativa e tocar uma criatura em alcance corpo a corpo. A criatura sofre 2d6 pontos de dano de trevas (Fortitude CD Sab reduz à metade) e você recupera PV iguais à metade do dano causado. Você pode aprender Toque Vampírico como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. `,
+        id_deuses: [16],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '132',
@@ -1017,7 +1017,7 @@ export class PoderData {
         nome: 'Centelha Mágica',
         descricao:
           `Escolha uma magia arcana ou divina de 1º círculo. Você aprende e pode lançar essa magia.`,
-        deuses: [20],
+        id_deuses: [20],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -1027,7 +1027,7 @@ export class PoderData {
         nome: 'Compreender os Ermos',
         descricao:
           `Você recebe +2 em Sobrevivência e pode usar Sabedoria para Adestramento (em vez de Carisma).`,
-        deuses: [2],
+        id_deuses: [2],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -1037,7 +1037,7 @@ export class PoderData {
         nome: 'Conhecimento Enciclopédico',
         descricao:
           `Você se torna treinado em duas perícias baseadas em Inteligência a sua escolha.`,
-        deuses: [15],
+        id_deuses: [15],
         referencias: Referencia.BASICO,
         paginas: '132',
         tipo: TipoPoder.CONCEDIDO,
@@ -1046,8 +1046,8 @@ export class PoderData {
         id: 88,
         nome: 'Conjurar Arma',
         descricao:
-          `Você pode gastar 1 PM para invocar uma arma corpo a corpo ou de arremesso com a qual seja proficiente. A arma surge em sua mão, fornece +1 em testes de ataque e rolagens de dano, é considerada mágica e dura pela cena. Você não pode criar armas de disparo, mas pode criar 20 munições. <i><b>e</b></i>`,
-        deuses: [3],
+          `Você pode gastar 1 PM para invocar uma arma corpo a corpo ou de arremesso com a qual seja proficiente. A arma surge em sua mão, fornece +1 em testes de ataque e rolagens de dano, é considerada mágica e dura pela cena. Você não pode criar armas de disparo, mas pode criar 20 munições. `,
+        id_deuses: [3],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '132',
@@ -1058,7 +1058,7 @@ export class PoderData {
         nome: 'Coragem Total',
         descricao:
           `Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais (como o medo de altura dos minotauros).`,
-        deuses: [3, 7, 9, 19],
+        id_deuses: [3, 7, 9, 19],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1068,7 +1068,7 @@ export class PoderData {
         nome: 'Cura Gentil',
         descricao:
           `Você soma seu Carisma aos PV restaurados por seus efeitos mágicos de cura.`,
-        deuses: [8],
+        id_deuses: [8],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1078,7 +1078,7 @@ export class PoderData {
         nome: 'Curandeira Perfeita',
         descricao:
           `Você sempre pode escolher 10 em testes de Cura. Além disso, não sofre penalidade por usar essa perícia sem uma maleta de medicamentos. Se possuir o item, recebe +2 no teste de Cura (ou +5, se ele for aprimorado).`,
-        deuses: [8],
+        id_deuses: [8],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1088,7 +1088,7 @@ export class PoderData {
         nome: 'Curandeira Perfeita',
         descricao:
           `Você sempre pode escolher 10 em testes de Cura. Além disso, não sofre penalidade por usar essa perícia sem uma maleta de medicamentos. Se possuir o item, recebe +2 no teste de Cura (ou +5, se ele for aprimorado).`,
-        deuses: [8],
+        id_deuses: [8],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1097,8 +1097,8 @@ export class PoderData {
         id: 93,
         nome: 'Dedo Verde',
         descricao:
-          `Você aprende e pode lançar Controlar Plantas. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [2],
+          `Você aprende e pode lançar Controlar Plantas. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses: [2],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '133',
@@ -1109,7 +1109,7 @@ export class PoderData {
         nome: 'Descanso Natural',
         descricao:
           `Para você, dormir ao relento conta como condição de descanso confortável.`,
-        deuses: [2],
+        id_deuses: [2],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1119,7 +1119,7 @@ export class PoderData {
         nome: 'Dom da Esperança',
         descricao:
           `Você soma sua Sabedoria em seus PV em vez de Constituição, e se torna imune às condições alquebrado, esmorecido e frustrado.`,
-        deuses: [10],
+        id_deuses: [10],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1128,8 +1128,8 @@ export class PoderData {
         id: 96,
         nome: 'Dom da Imortalidade',
         descricao:
-          `Você é imortal. Sempre que morre, não importando o motivo, volta à vida após 3d6 dias. Apenas paladinos podem escolher este poder. Um personagem pode ter Dom da Imortalidade ou Dom da Ressurreição, mas não ambos. <i><b>e</b></i>`,
-        deuses: [18],
+          `Você é imortal. Sempre que morre, não importando o motivo, volta à vida após 3d6 dias. Apenas paladinos podem escolher este poder. Um personagem pode ter Dom da Imortalidade ou Dom da Ressurreição, mas não ambos. `,
+        id_deuses: [18],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '133',
@@ -1139,8 +1139,8 @@ export class PoderData {
         id: 97,
         nome: 'Dom da Profecia',
         descricao:
-          `Você pode lançar Augúrio. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você também pode gastar 2 PM para receber +2 em um teste. <i><b>e</b></i>`,
-        deuses: [18],
+          `Você pode lançar Augúrio. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você também pode gastar 2 PM para receber +2 em um teste. `,
+        id_deuses: [18],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '133',
@@ -1150,8 +1150,8 @@ export class PoderData {
         id: 98,
         nome: 'Dom da Ressurreição',
         descricao:
-          `Você pode gastar uma ação completa e todos os PM que possui (mínimo 1 PM) para tocar o corpo de uma criatura morta há menos de um ano e ressuscitá-la. A criatura volta à vida com 1 PV e 0 PM, e perde 1 ponto de Constituição permanentemente. Este poder só pode ser usado uma vez em cada criatura. Apenas clérigos podem escolher este poder. Um personagem pode ter Dom da Imortalidade ou Dom da Ressurreição, mas não ambos. <i><b>e</b></i>`,
-        deuses: [18],
+          `Você pode gastar uma ação completa e todos os PM que possui (mínimo 1 PM) para tocar o corpo de uma criatura morta há menos de um ano e ressuscitá-la. A criatura volta à vida com 1 PV e 0 PM, e perde 1 ponto de Constituição permanentemente. Este poder só pode ser usado uma vez em cada criatura. Apenas clérigos podem escolher este poder. Um personagem pode ter Dom da Imortalidade ou Dom da Ressurreição, mas não ambos. `,
+        id_deuses: [18],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '133',
@@ -1162,7 +1162,7 @@ export class PoderData {
         nome: 'Dom da Verdade',
         descricao:
           `Você pode pagar 2 PM para receber +5 em testes de Intuição, e em testes de Percepção contra Enganação e Furtividade, até o fim da cena.`,
-        deuses: [7],
+        id_deuses: [7],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1172,7 +1172,7 @@ export class PoderData {
         nome: 'Escamas Dracônicas',
         descricao:
           `Você recebe +2 na Defesa e em Fortitude.`,
-        deuses: [6],
+        id_deuses: [6],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1181,8 +1181,8 @@ export class PoderData {
         id: 101,
         nome: 'Escudo Mágico',
         descricao:
-          `Quando lança uma magia, você recebe um bônus na Defesa igual ao círculo da magia lançada até o início do seu próximo turno. <i><b>e</b></i>`,
-        deuses: [20],
+          `Quando lança uma magia, você recebe um bônus na Defesa igual ao círculo da magia lançada até o início do seu próximo turno. `,
+        id_deuses: [20],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '133',
@@ -1192,8 +1192,8 @@ export class PoderData {
         id: 102,
         nome: 'Espada Justiceira',
         descricao:
-          `Você pode gastar 1 PM para encantar sua espada (ou outra arma corpo a corpo de corte que esteja empunhando). Ela tem seu dano aumentado em um passo até o fim da cena. <i><b>e</b></i>`,
-        deuses: [7],
+          `Você pode gastar 1 PM para encantar sua espada (ou outra arma corpo a corpo de corte que esteja empunhando). Ela tem seu dano aumentado em um passo até o fim da cena. `,
+        id_deuses: [7],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '133',
@@ -1203,8 +1203,8 @@ export class PoderData {
         id: 103,
         nome: 'Espada Solar',
         descricao:
-          `Você pode gastar 1 PM para fazer uma arma corpo a corpo de corte que esteja empunhando causar +1d6 de dano por fogo até o fim da cena. <i><b>e</b></i>`,
-        deuses: [4],
+          `Você pode gastar 1 PM para fazer uma arma corpo a corpo de corte que esteja empunhando causar +1d6 de dano por fogo até o fim da cena. `,
+        id_deuses: [4],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '133',
@@ -1215,7 +1215,7 @@ export class PoderData {
         nome: 'Êxtase da Loucura',
         descricao:
           `Toda vez que uma ou mais criaturas falham em um teste de Vontade contra uma de suas habilidades mágicas, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena desta forma igual a sua Sabedoria.`,
-        deuses: [1, 12],
+        id_deuses: [1, 12],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1225,7 +1225,7 @@ export class PoderData {
         nome: 'Familiar Ofídico',
         descricao:
           `Você recebe um familiar cobra (veja a página 38) que não conta em seu limite de parceiros.`,
-        deuses: [14],
+        id_deuses: [14],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1235,7 +1235,7 @@ export class PoderData {
         nome: 'Farsa do Fingidor',
         descricao:
           `Você aprende e pode lançar Criar Ilusão. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.`,
-        deuses: [5],
+        id_deuses: [5],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1245,7 +1245,7 @@ export class PoderData {
         nome: 'Fé Guerreira',
         descricao:
           `Você pode usar Sabedoria para Guerra (em vez de Inteligência). Além disso, em combate, pode gastar 2 PM para substituir um teste de perícia (exceto testes de ataque) por um teste de Guerra.`,
-        deuses: [3],
+        id_deuses: [3],
         referencias: Referencia.BASICO,
         paginas: '133',
         tipo: TipoPoder.CONCEDIDO,
@@ -1255,7 +1255,7 @@ export class PoderData {
         nome: 'Fé Guerreira',
         descricao:
           `Você pode usar Sabedoria para Guerra (em vez de Inteligência). Além disso, em combate, pode gastar 2 PM para substituir um teste de perícia (exceto testes de ataque) por um teste de Guerra.`,
-        deuses: [3],
+        id_deuses: [3],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1265,7 +1265,7 @@ export class PoderData {
         nome: 'Fé Guerreira',
         descricao:
           `Você pode usar Sabedoria para Guerra (em vez de Inteligência). Além disso, em combate, pode gastar 2 PM para substituir um teste de perícia (exceto testes de ataque) por um teste de Guerra.`,
-        deuses: [3],
+        id_deuses: [3],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1274,8 +1274,8 @@ export class PoderData {
         id: 110,
         nome: 'Forma de Macaco',
         descricao:
-          `Você pode gastar uma ação completa e 2 PM para se transformar em um macaco. Você adquire tamanho Minúsculo (o que fornece +5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de escalar 9m. Seu equipamento desaparece (e você perde seus benefícios) até você voltar ao normal, mas suas outras estatísticas não são alteradas. A transformação dura indefinidamente, mas termina caso você faça um ataque, lance uma magia ou sofra dano. <i><b>e</b></i>`,
-        deuses: [5],
+          `Você pode gastar uma ação completa e 2 PM para se transformar em um macaco. Você adquire tamanho Minúsculo (o que fornece +5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de escalar 9m. Seu equipamento desaparece (e você perde seus benefícios) até você voltar ao normal, mas suas outras estatísticas não são alteradas. A transformação dura indefinidamente, mas termina caso você faça um ataque, lance uma magia ou sofra dano. `,
+        id_deuses: [5],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1286,7 +1286,7 @@ export class PoderData {
         nome: 'Fulgor Solar',
         descricao:
           `Você recebe redução de frio e trevas 5. Além disso, quando é alvo de um ataque você pode gastar 1 PM para emitir um clarão solar que deixa o atacante ofuscado por uma rodada.`,
-        deuses: [4],
+        id_deuses: [4],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1295,8 +1295,8 @@ export class PoderData {
         id: 112,
         nome: 'Fúria Divina',
         descricao:
-          `Você pode gastar 2 PM para invocar uma fúria selvagem, tornando-se temível em combate. Até o fim da cena, você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não pode executar nenhuma ação que exija paciência ou concentração (como usar a perícia Furtividade ou lançar magias). Se usar este poder em conjunto com a habilidade Fúria, ela também dura uma cena (e não termina se você não atacar ou for alvo de uma ação hostil). <i><b>e</b></i>`,
-        deuses: [17],
+          `Você pode gastar 2 PM para invocar uma fúria selvagem, tornando-se temível em combate. Até o fim da cena, você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não pode executar nenhuma ação que exija paciência ou concentração (como usar a perícia Furtividade ou lançar magias). Se usar este poder em conjunto com a habilidade Fúria, ela também dura uma cena (e não termina se você não atacar ou for alvo de uma ação hostil). `,
+        id_deuses: [17],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1307,7 +1307,7 @@ export class PoderData {
         nome: 'Golpista Divino',
         descricao:
           `Você recebe +2 em Enganação, Jogatina e Ladinagem.`,
-        deuses: [5],
+        id_deuses: [5],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1316,8 +1316,8 @@ export class PoderData {
         id: 114,
         nome: 'Habitante do Deserto',
         descricao:
-          `Você recebe redução de fogo 10 e pode pagar 1 PM para criar água pura e potável suficiente para um odre (ou outro recipiente pequeno). <i><b>e</b></i>`,
-        deuses: [4],
+          `Você recebe redução de fogo 10 e pode pagar 1 PM para criar água pura e potável suficiente para um odre (ou outro recipiente pequeno). `,
+        id_deuses: [4],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1328,7 +1328,7 @@ export class PoderData {
         nome: 'Inimigo de Tenebra',
         descricao:
           `Seus ataques e habilidades causam +1d6 pontos de dano contra mortos-vivos. Quando você usa um efeito que gera luz, o alcance da iluminação dobra.`,
-        deuses: [4],
+        id_deuses: [4],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1338,7 +1338,7 @@ export class PoderData {
         nome: 'Kiai Divino',
         descricao:
           `Uma vez por rodada, quando faz um ataque corpo a corpo, você pode pagar 3 PM. Se acertar o ataque, causa dano máximo, sem necessidade de rolar dados.`,
-        deuses: [9],
+        id_deuses: [9],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1347,8 +1347,8 @@ export class PoderData {
         id: 117,
         nome: 'Liberdade Divina',
         descricao:
-          `Você pode gastar 2 PM para receber imunidade a efeitos de movimento por uma rodada. <i><b>e</b></i>`,
-        deuses: [9],
+          `Você pode gastar 2 PM para receber imunidade a efeitos de movimento por uma rodada. `,
+        id_deuses: [9],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1358,8 +1358,8 @@ export class PoderData {
         id: 118,
         nome: 'Manto da Penumbra',
         descricao:
-          `Você aprende e pode lançar Escuridão. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [16],
+          `Você aprende e pode lançar Escuridão. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses: [16],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1370,7 +1370,7 @@ export class PoderData {
         nome: 'Mente Analítica',
         descricao:
           `Você recebe +2 em Intuição, Investigação e Vontade.`,
-        deuses: [15],
+        id_deuses: [15],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1380,7 +1380,7 @@ export class PoderData {
         nome: 'Mente Vazia',
         descricao:
           `Você recebe +2 em Iniciativa, Percepção e Vontade.`,
-        deuses: [9],
+        id_deuses: [9],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1390,7 +1390,7 @@ export class PoderData {
         nome: 'Mestre dos Mares',
         descricao:
           `Você recebe +2 em Intuição, Investigação e Vontade.`,
-        deuses: [13],
+        id_deuses: [13],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1399,8 +1399,8 @@ export class PoderData {
         id: 122,
         nome: 'Olhar Amedrontador',
         descricao:
-          `Você aprende e pode lançar Amedrontar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [11, 17],
+          `Você aprende e pode lançar Amedrontar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses: [11, 17],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1410,8 +1410,8 @@ export class PoderData {
         id: 123,
         nome: 'Palavras de Bondade',
         descricao:
-          `Você aprende e pode lançar Enfeitiçar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [10],
+          `Você aprende e pode lançar Enfeitiçar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses: [10],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1422,7 +1422,7 @@ export class PoderData {
         nome: 'Percepção Temporal',
         descricao:
           `Você pode gastar 3 PM para somar sua Sabedoria (limitado por seu nível e não cumulativo com efeitos que somam este atributo) a seus ataques, Defesa e testes de Reflexos até o fim da cena.`,
-        deuses: [1],
+        id_deuses: [1],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1432,7 +1432,7 @@ export class PoderData {
         nome: 'Pesquisa Abençoada',
         descricao:
           `Se passar uma hora pesquisando seus livros e anotações, você pode rolar novamente um teste de perícia baseada em Inteligência ou Sabedoria que tenha feito desde a última cena. Se tiver acesso a mais livros, você recebe um bônus no teste: +2 para uma coleção particular ou biblioteca pequena e +5 para a biblioteca de um templo ou universidade.`,
-        deuses: [15],
+        id_deuses: [15],
         referencias: Referencia.BASICO,
         paginas: '134',
         tipo: TipoPoder.CONCEDIDO,
@@ -1441,8 +1441,8 @@ export class PoderData {
         id: 126,
         nome: 'Poder Oculto',
         descricao:
-          `Você pode gastar uma ação de movimento e 2 PM para invocar a força, a rapidez ou o vigor dos loucos. Role 1d6 para receber +2 em Força (1 ou 2), Destreza (3 ou 4) ou Constituição (5 ou 6) até o fim da cena. Você pode usar este poder várias vezes, mas bônus no mesmo atributo não são cumulativos. <i><b>e</b></i>`,
-        deuses: [12],
+          `Você pode gastar uma ação de movimento e 2 PM para invocar a força, a rapidez ou o vigor dos loucos. Role 1d6 para receber +2 em Força (1 ou 2), Destreza (3 ou 4) ou Constituição (5 ou 6) até o fim da cena. Você pode usar este poder várias vezes, mas bônus no mesmo atributo não são cumulativos. `,
+        id_deuses: [12],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -1452,8 +1452,8 @@ export class PoderData {
         id: 127,
         nome: 'Presas Primordiais',
         descricao:
-          `Você pode gastar 1 PM para transformar seus dentes em presas afiadas até o fim da cena. Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Se já possuir outro ataque natural de mordida, em vez disso, o dano desse ataque aumenta em dois passos. <i><b>e</b></i>`,
-        deuses: [6, 11],
+          `Você pode gastar 1 PM para transformar seus dentes em presas afiadas até o fim da cena. Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Se já possuir outro ataque natural de mordida, em vez disso, o dano desse ataque aumenta em dois passos. `,
+        id_deuses: [6, 11],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '135',
@@ -1464,7 +1464,7 @@ export class PoderData {
         nome: 'Presas venenosas',
         descricao:
           `Você pode gastar uma ação de movimento e 1 PM para envenenar uma arma corpo a corpo que esteja empunhando. Em caso de acerto, a arma causa perda de 1d12 pontos de vida. A arma permanece envenenada até atingir uma criatura ou até o fim da cena, o que acontecer primeiro.`,
-        deuses: [14],
+        id_deuses: [14],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1474,7 +1474,7 @@ export class PoderData {
         nome: 'Rejeição Divina',
         descricao:
           `Você recebe resistência a magia divina +5.`,
-        deuses: [1],
+        id_deuses: [1],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1484,7 +1484,7 @@ export class PoderData {
         nome: 'Reparar Injustiça',
         descricao:
           `Uma vez por rodada, quando um oponente em alcance curto acerta um ataque em você ou em um de seus aliados, você pode gastar 2 PM para fazer este oponente repetir o ataque, escolhendo o pior entre os dois resultados.`,
-        deuses: [7],
+        id_deuses: [7],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1493,8 +1493,8 @@ export class PoderData {
         id: 131,
         nome: 'Sangue de Ferro',
         descricao:
-          `Você pode pagar 3 PM para receber +2 em rolagens de dano e redução de dano 5 até o fim da cena. <i><b>e</b></i>`,
-        deuses: [3],
+          `Você pode pagar 3 PM para receber +2 em rolagens de dano e redução de dano 5 até o fim da cena. `,
+        id_deuses: [3],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '135',
@@ -1505,7 +1505,7 @@ export class PoderData {
         nome: 'Sangue Ofídico',
         descricao:
           `Você recebe resistência a veneno +5 e a CD para resistir aos seus venenos aumenta em +2.`,
-        deuses: [14],
+        id_deuses: [14],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1514,8 +1514,8 @@ export class PoderData {
         id: 133,
         nome: 'Servos do Dragão',
         descricao:
-          `Você pode gastar uma ação completa e 2 PM para invocar 2d4+1 kobolds capangas em espaços desocupados em alcance curto. Você pode gastar uma ação de movimento para fazer os kobolds andarem (eles têm deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6–1 pontos de dano de perfuração cada). Os kobolds têm For –1, Des 1, Defesa 12, 1 PV e falham automaticamente em qualquer teste de resistência ou oposto. Eles desaparecem quando morrem ou no fim da cena. Os kobolds não agem sem receber uma ordem. Usos criativos para capangas fora de combate ficam a critério do mestre. <i><b>e</b></i>`,
-        deuses: [6],
+          `Você pode gastar uma ação completa e 2 PM para invocar 2d4+1 kobolds capangas em espaços desocupados em alcance curto. Você pode gastar uma ação de movimento para fazer os kobolds andarem (eles têm deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6–1 pontos de dano de perfuração cada). Os kobolds têm For –1, Des 1, Defesa 12, 1 PV e falham automaticamente em qualquer teste de resistência ou oposto. Eles desaparecem quando morrem ou no fim da cena. Os kobolds não agem sem receber uma ordem. Usos criativos para capangas fora de combate ficam a critério do mestre. `,
+        id_deuses: [6],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '135',
@@ -1525,8 +1525,8 @@ export class PoderData {
         id: 134,
         nome: 'Sopro do Mar',
         descricao:
-          `Você pode gastar uma ação padrão e 1 PM para soprar vento marinho em um cone de 6m. Criaturas na área sofrem 2d6 pontos de dano de frio (Reflexos CD Sab reduz à metade). Você pode aprender Sopro das Uivantes como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [13],
+          `Você pode gastar uma ação padrão e 1 PM para soprar vento marinho em um cone de 6m. Criaturas na área sofrem 2d6 pontos de dano de frio (Reflexos CD Sab reduz à metade). Você pode aprender Sopro das Uivantes como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. `,
+        id_deuses: [13],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '135',
@@ -1537,7 +1537,7 @@ export class PoderData {
         nome: 'Sorte dos loucos',
         descricao:
           `Você pode pagar 1 PM para rolar novamente um teste recém realizado. Se ainda assim falhar no teste, você perde 1d6 PM.`,
-        deuses: [12],
+        id_deuses: [12],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1547,7 +1547,7 @@ export class PoderData {
         nome: 'Talento Artístico',
         descricao:
           `Você recebe +2 em Acrobacia, Atuação e Diplomacia.`,
-        deuses: [10],
+        id_deuses: [10],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1559,7 +1559,7 @@ export class PoderData {
           `Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (se você for um conjurador arcano) ou entre magias arcanas (se for um conjurador divino).`,
         prerequisito: 'Pré-requisito: habilidade de classe Magias.',
         prerequisito_habilidade: ['Magia'],
-        deuses: [20],
+        id_deuses: [20],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1569,7 +1569,7 @@ export class PoderData {
         nome: 'Tradição de Lin-Wu',
         descricao:
           `Você considera a katana uma arma simples e, se for proficiente em armas marciais, recebe +1 na margem de ameaça com ela.`,
-        deuses: [9],
+        id_deuses: [9],
         referencias: Referencia.BASICO,
         paginas: '135',
         tipo: TipoPoder.CONCEDIDO,
@@ -1578,8 +1578,8 @@ export class PoderData {
         id: 139,
         nome: 'Transmissão da Loucura',
         descricao:
-          `Você pode lançar Sussurros Insanos (CD Car). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [12],
+          `Você pode lançar Sussurros Insanos (CD Car). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses: [12],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '135',
@@ -1589,8 +1589,8 @@ export class PoderData {
         id: 140,
         nome: 'Tropas Duyshidakk',
         descricao:
-          `Você pode gastar uma ação completa e 2 PM para invocar 1d4+1 goblinoides capangas em espaços desocupados em alcance curto. Você pode gastar uma ação de movimento para fazer os goblinoides andarem (eles têm deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6+1 pontos de dano de corte cada). Os goblinoides têm For 1, Des 1, Defesa 15, 1 PV e falham automaticamente em qualquer teste de resistência ou oposto. Eles desaparecem quando morrem ou no fim da cena. Os goblinoides não agem sem receber uma ordem. Usos criativos para capangas fora de combate ficam a critério do mestre. <i><b>e</b></i>`,
-        deuses: [17],
+          `Você pode gastar uma ação completa e 2 PM para invocar 1d4+1 goblinoides capangas em espaços desocupados em alcance curto. Você pode gastar uma ação de movimento para fazer os goblinoides andarem (eles têm deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6+1 pontos de dano de corte cada). Os goblinoides têm For 1, Des 1, Defesa 15, 1 PV e falham automaticamente em qualquer teste de resistência ou oposto. Eles desaparecem quando morrem ou no fim da cena. Os goblinoides não agem sem receber uma ordem. Usos criativos para capangas fora de combate ficam a critério do mestre. `,
+        id_deuses: [17],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '135',
@@ -1601,7 +1601,7 @@ export class PoderData {
         nome: 'Urro Divino',
         descricao:
           `Quando faz um ataque ou lança uma magia, você pode pagar 1 PM para somar sua Constituição (mínimo +1) à rolagem de dano desse ataque ou magia.`,
-        deuses: [11],
+        id_deuses: [11],
         referencias: Referencia.BASICO,
         paginas: '136',
         tipo: TipoPoder.CONCEDIDO,
@@ -1611,7 +1611,7 @@ export class PoderData {
         nome: 'Visão nas Trevas',
         descricao:
           `Você enxerga perfeitamente no escuro, incluindo em magias de escuridão.`,
-        deuses: [16],
+        id_deuses: [16],
         referencias: Referencia.BASICO,
         paginas: '136',
         tipo: TipoPoder.CONCEDIDO,
@@ -1620,8 +1620,8 @@ export class PoderData {
         id: 143,
         nome: 'Voz da Civilização',
         descricao:
-          `Você está sempre sob efeito de Compreensão. <i><b>e</b></i>`,
-        deuses: [15],
+          `Você está sempre sob efeito de Compreensão. `,
+        id_deuses: [15],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '136',
@@ -1631,8 +1631,8 @@ export class PoderData {
         id: 144,
         nome: 'Voz da Natureza',
         descricao:
-          `Você pode falar com animais (como o efeito da magia Voz Divina) e aprende e pode lançar Acalmar Animal, mas só contra animais. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses: [2],
+          `Você pode falar com animais (como o efeito da magia Voz Divina) e aprende e pode lançar Acalmar Animal, mas só contra animais. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses: [2],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '136',
@@ -1642,8 +1642,8 @@ export class PoderData {
         id: 145,
         nome: 'Voz dos Monstros',
         descricao:
-          `Você conhece os idiomas de todos os monstros inteligentes e pode se comunicar livremente com monstros não inteligentes (Int –4 ou menor), como se estivesse sob efeito da magia Voz Divina. <i><b>e</b></i>`,
-        deuses: [11],
+          `Você conhece os idiomas de todos os monstros inteligentes e pode se comunicar livremente com monstros não inteligentes (Int –4 ou menor), como se estivesse sob efeito da magia Voz Divina. `,
+        id_deuses: [11],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '136',
@@ -1653,8 +1653,8 @@ export class PoderData {
         id: 145,
         nome: 'Zumbificar',
         descricao:
-          `Você pode gastar uma ação completa e 3 PM para reanimar o cadáver de uma criatura Pequena ou Média adjacente por um dia. O cadáver funciona como um parceiro iniciante de um tipo a sua escolha entre combatente, fortão ou guardião. Além disso, quando sofre dano, você pode sacrificar esse parceiro; se fizer isso, você sofre apenas metade do dano, mas o cadáver é destruído. <i><b>e</b></i>`,
-        deuses: [16],
+          `Você pode gastar uma ação completa e 3 PM para reanimar o cadáver de uma criatura Pequena ou Média adjacente por um dia. O cadáver funciona como um parceiro iniciante de um tipo a sua escolha entre combatente, fortão ou guardião. Além disso, quando sofre dano, você pode sacrificar esse parceiro; se fizer isso, você sofre apenas metade do dano, mas o cadáver é destruído. `,
+        id_deuses: [16],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '136',
@@ -1748,7 +1748,7 @@ export class PoderData {
         id: 154,
         nome: 'Cuspir Enxame',
         descricao:
-          `Você pode gastar uma ação completa e 2 PM para criar um enxame de insetos rubros em um ponto a sua escolha em alcance curto e com duração sustentada. O enxame tem tamanho Médio e pode passar pelo espaço de outras criaturas. Uma vez por rodada, você pode gastar uma ação de movimento para mover o enxame 9m. No final do seu turno, o enxame causa 2d6 pontos de dano de ácido a qualquer criatura no espaço que ele estiver ocupando. Para cada dois outros poderes da Tormenta que possui, você pode gastar +1 PM quando usa este poder para aumentar o dano do enxame em +1d6. <i><b>e</b></i>`,
+          `Você pode gastar uma ação completa e 2 PM para criar um enxame de insetos rubros em um ponto a sua escolha em alcance curto e com duração sustentada. O enxame tem tamanho Médio e pode passar pelo espaço de outras criaturas. Uma vez por rodada, você pode gastar uma ação de movimento para mover o enxame 9m. No final do seu turno, o enxame causa 2d6 pontos de dano de ácido a qualquer criatura no espaço que ele estiver ocupando. Para cada dois outros poderes da Tormenta que possui, você pode gastar +1 PM quando usa este poder para aumentar o dano do enxame em +1d6. `,
         referencias: Referencia.BASICO,
         fator_tormenta: 2,
         e_poder_magico: true,
@@ -1802,7 +1802,7 @@ export class PoderData {
         nome: 'Larva Explosiva',
         ids_poder_pai: [155],
         descricao:
-          `Se uma criatura que tenha sofrido dano de sua mordida nesta cena for reduzida a 0 ou menos PV, ela explode em chuva cáustica, morrendo e causando 4d4 pontos de dano de ácido em criaturas adjacentes. Para cada dois outros poderes da Tormenta que você possui, o dano aumenta em +2d4. Você é imune a esse dano. <i><b>e</b></i>`,
+          `Se uma criatura que tenha sofrido dano de sua mordida nesta cena for reduzida a 0 ou menos PV, ela explode em chuva cáustica, morrendo e causando 4d4 pontos de dano de ácido em criaturas adjacentes. Para cada dois outros poderes da Tormenta que você possui, o dano aumenta em +2d4. Você é imune a esse dano. `,
         prerequisito: 'Pré-requisito: Dentes Afiados.',
         e_poder_magico: true,
         fator_tormenta: 2,
@@ -1860,7 +1860,7 @@ export class PoderData {
         id: 164,
         nome: 'Mente Aberrante',
         descricao:
-          `Você recebe resistência a efeitos mentais +1. Além disso, sempre que precisa fazer um teste de Vontade para resistir a uma habilidade, a criatura que usou essa habilidade sofre 1d6 pontos de dano psíquico. Para cada dois outros poderes da Tormenta que você possui o bônus em testes de resistência aumenta em +1 e o dano aumenta em +1d6. <i><b>e</b></i>`,
+          `Você recebe resistência a efeitos mentais +1. Além disso, sempre que precisa fazer um teste de Vontade para resistir a uma habilidade, a criatura que usou essa habilidade sofre 1d6 pontos de dano psíquico. Para cada dois outros poderes da Tormenta que você possui o bônus em testes de resistência aumenta em +1 e o dano aumenta em +1d6. `,
         e_poder_magico: true,
         fator_tormenta: 2,
         referencias: Referencia.BASICO,
@@ -1922,7 +1922,7 @@ export class PoderData {
         nome: 'Abraço da Fênix',
         descricao:
           `Você se torna imune a fogo. Se fosse sofrer dano mágico de fogo, em vez disso recebe PV temporários em quantidade igual à metade desse dano.`,
-        deuses:[18],
+        id_deuses:[18],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -1931,8 +1931,8 @@ export class PoderData {
         id: 171,
         nome: 'Adaga Lunar',
         descricao:
-          `Você pode gastar 1 PM para fazer uma arma de perfuração que esteja empunhando causar +1d6 pontos de dano de frio até o fim da cena. <i><b>e</b></i>`,
-        deuses:[16],
+          `Você pode gastar 1 PM para fazer uma arma de perfuração que esteja empunhando causar +1d6 pontos de dano de frio até o fim da cena. `,
+        id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1943,7 +1943,7 @@ export class PoderData {
         nome: 'Alimentar-se do Pavor',
         descricao:
           `Quando uma criatura em alcance curto sob efeito de uma condição de medo morre, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.`,
-        deuses:[6, 11],
+        id_deuses:[6, 11],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -1953,7 +1953,7 @@ export class PoderData {
         nome: 'Alma de Mudança',
         descricao:
           `No início de cada aventura, você pode trocar um número de outros poderes até sua Sabedoria por poderes diferentes.`,
-        deuses:[17],
+        id_deuses:[17],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -1963,7 +1963,7 @@ export class PoderData {
         nome: 'Andarilho Carregado',
         descricao:
           `Sua primeira mochila de aventureiro não conta em seu limite de itens vestidos e, se estiver vestindo uma dessas mochilas, pode usar Sabedoria para estabelecer seu limite de carga (em vez de Força).`,
-        deuses:[19],
+        id_deuses:[19],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -1972,8 +1972,8 @@ export class PoderData {
         id: 175,
         nome: 'Armadilha Divina',
         descricao:
-          `Você recebe um poder de Armadilha do caçador (Tormenta20, p. 50) à sua escolha. Por ser criada a partir de energia divina, essa armadilha pode ser preparada em locais sem os materiais propícios. <i><b>e</b></i>`,
-        deuses:[5],
+          `Você recebe um poder de Armadilha do caçador (Tormenta20, p. 50) à sua escolha. Por ser criada a partir de energia divina, essa armadilha pode ser preparada em locais sem os materiais propícios. `,
+        id_deuses:[5],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1983,8 +1983,8 @@ export class PoderData {
         id: 176,
         nome: 'Armadura de Ossos',
         descricao:
-          `Você pode gastar 3 PM para receber +2 na Defesa e redução de corte, frio e perfuração 10 até o fim da cena. <i><b>e</b></i>`,
-        deuses:[16],
+          `Você pode gastar 3 PM para receber +2 na Defesa e redução de corte, frio e perfuração 10 até o fim da cena. `,
+        id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1995,7 +1995,7 @@ export class PoderData {
         nome: 'Armas da Destruição',
         descricao:
           `Você recebe +1 nas rolagens de dano e no multiplicador de crítico com armas.`,
-        deuses:[3],
+        id_deuses:[3],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2005,7 +2005,7 @@ export class PoderData {
         nome: 'Armas da Selvageria',
         descricao:
           `Você considera todas as armas naturais como armas favoritas de Megalokk e recebe +2 em rolagens de dano com elas.`,
-        deuses:[11],
+        id_deuses:[11],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2015,7 +2015,7 @@ export class PoderData {
         nome: 'Armas da Selvageria',
         descricao:
           `Você considera todas as armas naturais como armas favoritas de Megalokk e recebe +2 em rolagens de dano com elas.`,
-        deuses:[11],
+        id_deuses:[11],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2025,7 +2025,7 @@ export class PoderData {
         nome: 'Aventureiro Inquieto',
         descricao:
           `Uma vez por busca (Tormenta20, p. 278), você pode rolar novamente um teste recém-realizado (mas deve aceitar o novo resultado) e, quando recebe uma recompensa ou castigo aleatório por uma busca, rola dois dados e escolhe entre os dois resultados.`,
-        deuses:[19],
+        id_deuses:[19],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2035,7 +2035,7 @@ export class PoderData {
         nome: 'Baforada Dracônica',
         descricao:
           `Escolha um elemento entre ácido, eletricidade, fogo, frio, luz ou trevas (uma vez feita, essa escolha não pode ser mudada). Você pode gastar uma ação padrão e PM (limitado por sua Constituição) para desferir um sopro elemental em uma criatura em alcance curto. Para cada PM que você gastar, o alvo sofre 1d10 pontos de dano do tipo escolhido (Ref CD Con reduz à metade). Alternativamente, quando faz a ação agredir, você pode usar este poder como parte dessa ação.`,
-        deuses:[6],
+        id_deuses:[6],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2044,8 +2044,8 @@ export class PoderData {
         id: 182,
         nome: 'Barreira de Coral',
         descricao:
-          `Você pode gastar uma ação de movimento e 2 PM para cobrir seu corpo de coral. Até o fim da cena, seu deslocamento é reduzido à metade, mas você recebe +2 na Defesa e, sempre que sofrer um ataque corpo a corpo, o atacante sofre dano de perfuração igual a 1d6 + sua Constituição. Se estiver com pelo menos metade do corpo imerso em água, você pode usar esse poder como uma ação livre.<i><b>e</b></i>`,
-        deuses:[13],
+          `Você pode gastar uma ação de movimento e 2 PM para cobrir seu corpo de coral. Até o fim da cena, seu deslocamento é reduzido à metade, mas você recebe +2 na Defesa e, sempre que sofrer um ataque corpo a corpo, o atacante sofre dano de perfuração igual a 1d6 + sua Constituição. Se estiver com pelo menos metade do corpo imerso em água, você pode usar esse poder como uma ação livre.`,
+        id_deuses:[13],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2056,7 +2056,7 @@ export class PoderData {
         nome: 'Belo Presente',
         descricao:
           `Uma vez por cena, você pode gastar uma ação padrão para pedir o conhecimento de uma magia a Wynna. Gaste uma ação padrão e faça um teste de Religião (CD 15+ custo em PM da magia). Você pode pedir qualquer magia que tenha visto sendo lançada nessa aventura e que seja de um círculo a que tenha acesso. Se passar, você pode lançar essa magia até o fim do seu próximo turno.`,
-        deuses:[20],
+        id_deuses:[20],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2066,7 +2066,7 @@ export class PoderData {
         nome: 'Biblioteca Divina',
         descricao:
           `Você recebe uma perícia treinada adicional por patamar.`,
-        deuses:[15],
+        id_deuses:[15],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2076,7 +2076,7 @@ export class PoderData {
         nome: 'Cancioneiro da Esperança',
         descricao:
           `Você pode gastar uma ação padrão e 2 PM para entoar uma canção de superação e paz. Criaturas escolhidas em alcance curto (limitadas por seu Carisma) recebem +2 em Força e Destreza e +3m de deslocamento até o fim da cena (Von CD Car evita), Se uma criatura afetada executar qualquer ação hostil, os bônus são substituídos por uma penalidade de –2 em todos os testes de perícia.`,
-        deuses:[10],
+        id_deuses:[10],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2085,8 +2085,8 @@ export class PoderData {
         id: 186,
         nome: 'Cerimonialista Divino',
         descricao:
-          `Uma vez por descanso, você pode executar uma cerimônia religiosa tradicional. Faça um teste de Religião com um bônus igual ao seu Carisma. Para cada 10 pontos no resultado desse teste, você recebe um marcador de pétalas. Você pode distribuir esses marcadores entre criaturas escolhidas que tenham participado da cerimônia. Até o fim do dia, cada criatura pode gastar um marcador para receber +1d6 em um teste de Iniciativa, Intuição, Diplomacia, Percepção ou Vontade. <i><b>e</b></i>`,
-        deuses:[9],
+          `Uma vez por descanso, você pode executar uma cerimônia religiosa tradicional. Faça um teste de Religião com um bônus igual ao seu Carisma. Para cada 10 pontos no resultado desse teste, você recebe um marcador de pétalas. Você pode distribuir esses marcadores entre criaturas escolhidas que tenham participado da cerimônia. Até o fim do dia, cada criatura pode gastar um marcador para receber +1d6 em um teste de Iniciativa, Intuição, Diplomacia, Percepção ou Vontade. `,
+        id_deuses:[9],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2096,8 +2096,8 @@ export class PoderData {
         id: 187,
         nome: 'Chamado Monstruoso',
         descricao:
-          `Você aprende e pode lançar Conjurar Monstro e pode lançar e sustentar essa magia sem violar suas Obrigações e Restrições. <i><b>e</b></i>`,
-        deuses:[11],
+          `Você aprende e pode lançar Conjurar Monstro e pode lançar e sustentar essa magia sem violar suas Obrigações e Restrições. `,
+        id_deuses:[11],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2108,7 +2108,7 @@ export class PoderData {
         nome: 'Companheiro Celeste',
         descricao:
           `Você possui um luminar (veja p. @@) que lhe acompanha como um parceiro iniciante. Se perder esse luminar, você recebe outro no início da próxima aventura.`,
-        deuses:[8, 10],
+        id_deuses:[8, 10],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2118,7 +2118,7 @@ export class PoderData {
         nome: 'Companheiro Silvestre',
         descricao:
           `Você possui um bogum (veja Ameaças de Arton, p. 190) que lhe acompanha como um parceiro iniciante. Se perder esse bogum, você recebe outro no início da próxima aventura.`,
-        deuses:[2],
+        id_deuses:[2],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2128,7 +2128,7 @@ export class PoderData {
         nome: 'Convicção Ambiciosa',
         descricao:
           `Enquanto estiver encurralado ou sobrepujado (pelo menos dois oponentes para cada membro do grupo ou um encontro de ND maior que o do grupo), você recebe +2 em testes de perícia. Além disso, contra chefes finais (veja Ameaças de Arton, p. 368), você recebe uma ação padrão extra na primeira rodada de combate.`,
-        deuses:[19],
+        id_deuses:[19],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2138,7 +2138,7 @@ export class PoderData {
         nome: 'Corromper Equipamento',
         descricao:
           `Você pode gastar 2 PM para cobrir um item que esteja empunhando com uma substância rubra. Até o fim da cena, o item recebe os benefícios de matéria vermelha (Tormenta20, p. 167), cumulativo com outros materiais especiais. Se usar esse poder em uma arma produzida com Armamento Aberrante, seu custo é reduzido em –1 PM.`,
-        deuses:[1],
+        id_deuses:[1],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2148,7 +2148,7 @@ export class PoderData {
         nome: 'Curar o Espírito',
         descricao:
           `Você pode gastar uma ação completa para inspirar esperança em uma criatura em que possa tocar. Faça um teste de Carisma (CD 10). Se passar, a criatura recupera 1d4 PM. Você só pode usar este poder uma vez por dia numa mesma criatura.`,
-        deuses:[8],
+        id_deuses:[8],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2158,7 +2158,7 @@ export class PoderData {
         nome: 'Discurso Conciliador',
         descricao:
           `Quando faz um teste de Diplomacia para mudar atitude, você pode rolar dois dados e usar o melhor resultado ou ambos (como se tivesse usado mudar atitude duas vezes). Se passar em ambos, as mudanças de atitude serão cumulativas.`,
-        deuses:[10],
+        id_deuses:[10],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2168,7 +2168,7 @@ export class PoderData {
         nome: 'Dom da Furtividade',
         descricao:
           `Você soma sua Sabedoria em Furtividade e, contra criaturas desprevenidas, a CD para resistir às suas magias aumenta em +2.`,
-        deuses:[5],
+        id_deuses:[5],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2178,7 +2178,7 @@ export class PoderData {
         nome: 'Dom da Vontade',
         descricao:
           `Você recebe +2 em Vontade e, uma vez por cena, quando falha em um teste de Vontade contra um efeito de um inimigo ou de um perigo, recebe 1d4 PM.`,
-        deuses:[7],
+        id_deuses:[7],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2188,7 +2188,7 @@ export class PoderData {
         nome: 'Dom dos Segredos',
         descricao:
           `Você pode gastar uma ação padrão e 2 PM para suplicar à Sszzaas por um segredo oculto. Faça um teste de Carisma (CD 10). Se passar, você aprende um poder cujos requisitos possa cumprir (mas você não precisa cumprir requisitos de classe) até o fim da cena. Se falhar, entretanto, você fica alquebrado por um dia.`,
-        deuses:[14],
+        id_deuses:[14],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2198,7 +2198,7 @@ export class PoderData {
         nome: 'Égide dos Mares',
         descricao:
           `Você possui um escudeiro (veja Ameaças de Arton, p. 190) que lhe acompanha como um parceiro iniciante. Se perder esse escudeiro, você recebe outro no início da próxima aventura.`,
-        deuses:[13],
+        id_deuses:[13],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2207,8 +2207,8 @@ export class PoderData {
         id: 198,
         nome: 'Espírito Animal',
         descricao:
-          `Você aprende e pode lançar Arma Espiritual. A arma convocada, entretanto, tem a forma um animal espiritual a sua escolha, que causa dano de um tipo apropriado à sua forma. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses:[2],
+          `Você aprende e pode lançar Arma Espiritual. A arma convocada, entretanto, tem a forma um animal espiritual a sua escolha, que causa dano de um tipo apropriado à sua forma. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses:[2],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2218,8 +2218,8 @@ export class PoderData {
         id: 199,
         nome: 'Espírito do Conhecimento',
         descricao:
-          `Você pode gastar uma ação padrão e 2 PM para invocar uma manifestação do saber em um espaço desocupado em alcance curto. Ela é um espírito Minúsculo que tem deslocamento de voo 6m, For –, Des 3, Defesa 15, 1 PV, visão no escuro e falha em qualquer teste de resistência ou oposto. A partir do seu próximo turno, a manifestação pode fazer uma ação de movimento no início de cada um dos seus turnos. Você pode perceber tudo que a manifestação for capaz de perceber, e pode lançar magias com alcance de toque ou maior como se a manifestação fosse seu ponto de origem. A manifestação desaparece quando morre ou no fim da cena. <i><b>e</b></i>`,
-        deuses:[15],
+          `Você pode gastar uma ação padrão e 2 PM para invocar uma manifestação do saber em um espaço desocupado em alcance curto. Ela é um espírito Minúsculo que tem deslocamento de voo 6m, For –, Des 3, Defesa 15, 1 PV, visão no escuro e falha em qualquer teste de resistência ou oposto. A partir do seu próximo turno, a manifestação pode fazer uma ação de movimento no início de cada um dos seus turnos. Você pode perceber tudo que a manifestação for capaz de perceber, e pode lançar magias com alcance de toque ou maior como se a manifestação fosse seu ponto de origem. A manifestação desaparece quando morre ou no fim da cena. `,
+        id_deuses:[15],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2230,7 +2230,7 @@ export class PoderData {
         nome: 'Estouro da Trobada',
         descricao:
           `Você pode gastar uma ação completa e 2 PM para convocar uma manada enfurecida de trobos (ou qualquer outro animal da região) em um ponto a sua escolha em alcance curto com duração sustentada. A manada tem tamanho Grande e pode passar pelo espaço de outras criaturas. Você pode gastar uma ação de movimento para mover a manada 12m em linha reta. Criaturas pelas quais a manada passar sofrem 3d6 pontos de dano de impacto e ficam caídas (Fort CD Sab reduz à metade e evita a condição).`,
-        deuses:[2],
+        id_deuses:[2],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2240,7 +2240,7 @@ export class PoderData {
         nome: 'Expor Honra',
         descricao:
           `Você pode pagar 1 PM para gerar uma aura de verdade de 9m de raio e duração até o fim da cena. Dentro dessa área, devotos de Lin-Wu e personagens que sigam algum código de conduta (como Código de Honra ou Código do Herói) recebem +2 em Diplomacia e Nobreza, enquanto as demais criaturas sofrem –2 em testes de Enganação, Furtividade e Ladinagem. Apenas personagens com a habilidade Abençoado ou Devoto Fiel podem escolher este poder.`,
-        deuses:[9],
+        id_deuses:[9],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2250,7 +2250,7 @@ export class PoderData {
         nome: 'Familiar Elemental',
         descricao:
           `Você possui um familiar arcano (veja Tormenta20, p. 38) escolhido entre um aquin’ne, t’peel, pakk ou terrier (veja Ameaças de Arton, p. 88).`,
-        deuses:[20],
+        id_deuses:[20],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2259,8 +2259,8 @@ export class PoderData {
         id: 203,
         nome: 'Ferramentas da Guerra',
         descricao:
-          `Uma vez por dia, você pode gastar uma hora e TS 10 por item para abençoar uma quantidade de itens limitada por sua Sabedoria. Armas abençoadas desta forma fornecem +2 em testes de ataque e rolagens de dano, enquanto armaduras e escudos têm seu bônus na Defesa aumentados em +2. Se o usuário de um item abençoado for derrotado em combate, o item é destruído. Os efeitos da bênção duram um dia. <i><b>e</b></i>`,
-        deuses:[3],
+          `Uma vez por dia, você pode gastar uma hora e TS 10 por item para abençoar uma quantidade de itens limitada por sua Sabedoria. Armas abençoadas desta forma fornecem +2 em testes de ataque e rolagens de dano, enquanto armaduras e escudos têm seu bônus na Defesa aumentados em +2. Se o usuário de um item abençoado for derrotado em combate, o item é destruído. Os efeitos da bênção duram um dia. `,
+        id_deuses:[3],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2271,7 +2271,7 @@ export class PoderData {
         nome: 'Golpe Semântico',
         descricao:
           `Você pode substituir testes de Diplomacia e Enganação por Conhecimento.`,
-        deuses:[15],
+        id_deuses:[15],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2281,7 +2281,7 @@ export class PoderData {
         nome: 'Golpe Tempestuoso',
         descricao:
           `Quando acerta um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso, a criatura é empurrada 3m em uma direção a sua escolha e fica vulnerável por 1 rodada.`,
-        deuses:[3, 13],
+        id_deuses:[3, 13],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2290,8 +2290,8 @@ export class PoderData {
         id: 206,
         nome: 'Imolação Sagrada',
         descricao:
-          `Você pode gastar uma ação padrão e 2 PM para cobrir-se com chamas até o fim da cena ou té ser submerso em água. Enquanto estiver coberto pelas chamas, uma vez por rodada, quando sofre um ataque corpo a corpo, você pode causar 2d6 + Sabedoria pontos de dano de fogo no atacante. <i><b>e</b></i>`,
-        deuses:[4, 18],
+          `Você pode gastar uma ação padrão e 2 PM para cobrir-se com chamas até o fim da cena ou té ser submerso em água. Enquanto estiver coberto pelas chamas, uma vez por rodada, quando sofre um ataque corpo a corpo, você pode causar 2d6 + Sabedoria pontos de dano de fogo no atacante. `,
+        id_deuses:[4, 18],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2302,7 +2302,7 @@ export class PoderData {
         nome: 'Júbilo na Dor',
         descricao:
           `Quando causa ou sofre dano, você recebe redução de dano 1. Esse efeito é cumulativo e limitado por sua Sabedoria e termina se você passar 1 rodada sem causar ou sofrer dano.`,
-        deuses:[1],
+        id_deuses:[1],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2312,7 +2312,7 @@ export class PoderData {
         nome: 'Jurista Divino',
         descricao:
           `Você se torna treinado em Nobreza (se já for treinado, em vez disso recebe +2 nessa perícia) e pode usar esta perícia no lugar de Diplomacia e Intimidação.`,
-        deuses:[7, 9],
+        id_deuses:[7, 9],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2322,7 +2322,7 @@ export class PoderData {
         nome: 'Magia Caótica',
         descricao:
           `Quando lança uma magia, você pode gastar 1 PM para aceitar o poder do caos. Se fizer isso, a CD para resistir a essa magia recebe um modificador igual a 1d20-10.`,
-        deuses:[12],
+        id_deuses:[12],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2332,7 +2332,7 @@ export class PoderData {
         nome: 'Magia Piedosa',
         descricao:
           `Quando lança uma magia que causa dano, você pode gastar +1 PM para transformar o dano dela em não-letal.`,
-        deuses:[8, 18],
+        id_deuses:[8, 18],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2342,7 +2342,7 @@ export class PoderData {
         nome: 'Magia Venenosa',
         descricao:
           `Suas magias com resistência Fortitude recebem o seguinte aprimoramento: +1 PM: além do normal, criaturas que falharem perdem 1d12 PV por veneno.`,
-        deuses:[14],
+        id_deuses:[14],
         e_aprimoramento: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2352,8 +2352,8 @@ export class PoderData {
         id: 212,
         nome: 'Manto Ardiloso',
         descricao:
-          `Você aprende a magia Disfarce Ilusório (CD Car). Na primeira vez que interage com alguém enquanto está sob efeito dessa magia, você recebe +10 no teste de Diplomacia para tentar mudar a atitude dela. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses:[14],
+          `Você aprende a magia Disfarce Ilusório (CD Car). Na primeira vez que interage com alguém enquanto está sob efeito dessa magia, você recebe +10 no teste de Diplomacia para tentar mudar a atitude dela. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses:[14],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2363,8 +2363,8 @@ export class PoderData {
         id: 213,
         nome: 'Mar Revolto',
         descricao:
-          `Você pode gastar 1 PM para gerar uma aura de 6m de raio com duração sustentada. Cada criatura, à sua escolha, que começar seu próprio turno dentro dessa aura deverá passar em um teste de Acrobacia (CD Sab; criaturas dentro da água sofrem uma penalidade de –5 nesse teste.) ou ficará caída.<i><b>e</b></i>`,
-        deuses:[13],
+          `Você pode gastar 1 PM para gerar uma aura de 6m de raio com duração sustentada. Cada criatura, à sua escolha, que começar seu próprio turno dentro dessa aura deverá passar em um teste de Acrobacia (CD Sab; criaturas dentro da água sofrem uma penalidade de –5 nesse teste.) ou ficará caída.`,
+        id_deuses:[13],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2375,7 +2375,7 @@ export class PoderData {
         nome: 'Mediador da Tempestade',
         descricao:
           `Você pode falar com lefeu livremente e recebe +5 em testes de Diplomacia e Intuição com criaturas da Tormenta e devotos de Aharadak.`,
-        deuses:[1],
+        id_deuses:[1],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2385,7 +2385,7 @@ export class PoderData {
         nome: 'Mestre de Si',
         descricao:
           `Você passa automaticamente no primeiro teste de Vontade que fizer a cada cena.`,
-        deuses:[9],
+        id_deuses:[9],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2395,7 +2395,7 @@ export class PoderData {
         nome: 'Mochileiro Preparado',
         descricao:
           `Você pode gastar 1 PM para fazer uma ferramenta ou um item de aventura de até T$ 100 aparecer na sua mão ou em um espaço adjacente. O item dura até o fim da cena, ou até deixar sua posse.`,
-        deuses:[5, 19],
+        id_deuses:[5, 19],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2405,7 +2405,7 @@ export class PoderData {
         nome: 'Mordida de Víbora',
         descricao:
           `Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Suas presas são retráteis e podem armazenar até 2 doses de veneno, como o efeito da melhoria injeção alquímica (Tormenta20, p. 165).`,
-        deuses:[14],
+        id_deuses:[14],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2415,7 +2415,7 @@ export class PoderData {
         nome: 'Navegador Sagrado',
         descricao:
           `Você se torna treinado em Pilotagem (se já for treinado, em vez disso recebe +2 nessa perícia) e, enquanto estiver em uma embarcação aquática, suas magias divinas custam –1 PM.`,
-        deuses:[13],
+        id_deuses:[13],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2424,7 +2424,7 @@ export class PoderData {
         id: 219,
         nome: 'Nimb',
         descricao:
-          `<p><b>Nimb.</b> Você é Nimb, ou não. Você pode gastar uma ação padrão e 2 PM para gerar uma habilidade única. Para isso, role 1d6 duas vezes, uma para Área/Alvo e outra para Efeito. <i><b>e</b></i></p>
+          `<p><b>Nimb.</b> Você é Nimb, ou não. Você pode gastar uma ação padrão e 2 PM para gerar uma habilidade única. Para isso, role 1d6 duas vezes, uma para Área/Alvo e outra para Efeito. </p>
           <p>
           <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
             <thead>
@@ -2467,7 +2467,7 @@ export class PoderData {
               </tr>
             </tbody>
           </table>`,
-        deuses:[12],
+        id_deuses:[12],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2478,7 +2478,7 @@ export class PoderData {
         nome: 'O dobro ou nada',
         descricao:
           `Quando usa uma habilidade com um custo em PM, você pode pagar o dobro desse custo. Se fizer isso, a CD dessa habilidade aumenta em +5. Se pelo menos um alvo passar no teste de resistência, você fica alquebrado.`,
-        deuses:[5, 12],
+        id_deuses:[5, 12],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2488,7 +2488,7 @@ export class PoderData {
         nome: 'O Futuro que vier disso',
         descricao:
           `Quando faz um teste, você pode rolar um dado à sua escolha (entre 1d4 e 1d20) e somar o resultado a este teste. Quando você faz isso, o mestre recebe um dado do mesmo tipo que ele pode gastar para aplicar como uma penalidade em um de seus testes até o fim da próxima sessão. Você não pode usar este poder novamente até que o mestre use o dado que ele recebeu.`,
-        deuses:[17],
+        id_deuses:[17],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2497,8 +2497,8 @@ export class PoderData {
         id: 222,
         nome: 'O Sol que nos Aquece',
         descricao:
-          `Você pode gastar uma ação padrão e 3 PM para intensificar a luz solar em uma esfera de 6m de raio em alcance médio. Nessa área, habilidades mágicas de fogo e relacionadas à plantas (como Controlar Plantas) custam –1 PM e criaturas com sensibilidade a luz sofrem o dobro da penalidade por ficarem ofuscadas. Você só pode usar este poder se estiver sob a luz do sol natural. <i><b>e</b></i>`,
-        deuses:[2, 4],
+          `Você pode gastar uma ação padrão e 3 PM para intensificar a luz solar em uma esfera de 6m de raio em alcance médio. Nessa área, habilidades mágicas de fogo e relacionadas à plantas (como Controlar Plantas) custam –1 PM e criaturas com sensibilidade a luz sofrem o dobro da penalidade por ficarem ofuscadas. Você só pode usar este poder se estiver sob a luz do sol natural. `,
+        id_deuses:[2, 4],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2508,8 +2508,8 @@ export class PoderData {
         id: 223,
         nome: 'Palavra de Poder',
         descricao:
-          `Você aprende e pode lançar Comando. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i>`,
-        deuses:[15],
+          `Você aprende e pode lançar Comando. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+        id_deuses:[15],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2519,8 +2519,8 @@ export class PoderData {
         id: 224,
         nome: 'Passo Sombrio',
         descricao:
-          `Uma vez por rodada, você pode gastar 2 PM para se teleportar para um espaço desocupado em alcance curto. Se tanto você quanto o espaço de destino estiverem sob qualquer tipo de escuridão, o custo deste poder é reduzido em –1 PM. <i><b>e</b></i>`,
-        deuses:[16],
+          `Uma vez por rodada, você pode gastar 2 PM para se teleportar para um espaço desocupado em alcance curto. Se tanto você quanto o espaço de destino estiverem sob qualquer tipo de escuridão, o custo deste poder é reduzido em –1 PM. `,
+        id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2531,7 +2531,7 @@ export class PoderData {
         nome: 'Perceber Farsas',
         descricao:
           `Você recebe +2 em Intuição e se torna imune a magias de ilusão.`,
-        deuses:[15],
+        id_deuses:[15],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2541,7 +2541,7 @@ export class PoderData {
         nome: 'Pilar de Heredrimm',
         descricao:
           `Você pode gastar 2 PM receber +2 na Defesa e redução de dano 5 até o fim da cena ou até encerrar este poder (uma ação livre). Enquanto este efeito estiver ativo, seu deslocamento é reduzido à metade e você não pode correr ou fazer investidas.`,
-        deuses:[7],
+        id_deuses:[7],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2551,7 +2551,7 @@ export class PoderData {
         nome: 'Poder do Vínculo',
         descricao:
           `Você pode gastar uma ação de movimento e uma quantidade de PM limitada ao círculo de magias a que você tem acesso1 PM (e +1 pm para cada círculo de magia que for capaz de conjurar) e tocar em uma criatura capaz de conjurar magias. O custo em PMs da próxima magia que aquela criatura lançar é reduzido numa quantidade igual aos PMs que você gastou.`,
-        deuses:[20],
+        id_deuses:[20],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2561,7 +2561,7 @@ export class PoderData {
         nome: 'Poder Sem Limites',
         descricao:
           `Todos os seus limites de PM para habilidades aumentam em +2.`,
-        deuses:[6],
+        id_deuses:[6],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2571,7 +2571,7 @@ export class PoderData {
         nome: 'Portal Vivo',
         descricao:
           `Você pode gastar uma ação completa e 2 PM para criar um enxame de insetos rubros em um ponto a sua escolha em alcance curto e com duração sustentada. O enxame tem tamanho Médio e pode passar pelo espaço de outras criaturas. Uma vez por rodada, você pode gastar uma ação de movimento para mover o enxame 9m. No final do seu turno, o enxame causa 2d6 pontos de dano de ácido a qualquer criatura no espaço que ele estiver ocupando. Você pode aprender Enxame Rubro de Ichabod como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. <i><b>e</i></b>`,
-        deuses:[1],
+        id_deuses:[1],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2582,7 +2582,7 @@ export class PoderData {
         nome: 'Proeminência Solar',
         descricao:
           `Suas magias que causam dano de fogo e que têm um teste de resistência recebem o seguinte aprimoramento: +1 PM: Criaturas que falhem na resistência ficam em chamas. Elas também ficam lentas até apagarem as chamas.`,
-        deuses:[4],
+        id_deuses:[4],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2591,8 +2591,8 @@ export class PoderData {
         id: 231,
         nome: 'Quebrar Encanto',
         descricao:
-          `Você recebe +2 em testes de ataque para quebrar. Além disso, quando vence um teste oposto para quebrar um item, você pode gastar 2 PM. Se fizer isso, gera um efeito semelhante a Dissipar Magia sobre o item e sobre seu usuário, usando o resultado do seu teste de quebrar no lugar do teste de Misticismo. <i><b>e</b></i>`,
-        deuses:[7],
+          `Você recebe +2 em testes de ataque para quebrar. Além disso, quando vence um teste oposto para quebrar um item, você pode gastar 2 PM. Se fizer isso, gera um efeito semelhante a Dissipar Magia sobre o item e sobre seu usuário, usando o resultado do seu teste de quebrar no lugar do teste de Misticismo. `,
+        id_deuses:[7],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2603,7 +2603,7 @@ export class PoderData {
         nome: 'Redirecionar Destino',
         descricao:
           `Ao escolher este poder, role um d20 e anote o resultado. Uma vez por rodada, quando uma criatura em alcance curto faz um teste, você pode gastar 1 PM para trocar o valor do dado desse teste pelo valor anotado (o valor do dado passa a ser o novo valor anotado).`,
-        deuses:[17],
+        id_deuses:[17],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2613,7 +2613,7 @@ export class PoderData {
         nome: 'Remorso do Belicista',
         descricao:
           `Uma vez por rodada, quando sofre dano de um inimigo, você pode gastar 1 PM. Se fizer isso, até o fim da cena aquela criatura sofre uma penalidade cumulativa de –2 em testes de ataque e rolagens de dano. Mental.`,
-        deuses:[10],
+        id_deuses:[10],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2622,8 +2622,8 @@ export class PoderData {
         id: 234,
         nome: 'Resplendor Divino',
         descricao:
-          `Você pode gastar 2 PM para gerar uma aura de luz solar com 9m de raio e duração até o fim da cena. Além de sofrer os efeitos de exposição à luz solar, criaturas dentro da aura perdem toda camuflagem por escuridão, incluindo mágica. <i><b>e</b></i>`,
-        deuses:[4],
+          `Você pode gastar 2 PM para gerar uma aura de luz solar com 9m de raio e duração até o fim da cena. Além de sofrer os efeitos de exposição à luz solar, criaturas dentro da aura perdem toda camuflagem por escuridão, incluindo mágica. `,
+        id_deuses:[4],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2634,7 +2634,7 @@ export class PoderData {
         nome: 'Saque Celestial',
         descricao:
           `O primeiro ataque que você acertar numa rodada causa +1d6 pontos de dano de luz. Este dano extra é multiplicado em um acerto crítico.`,
-        deuses:[9],
+        id_deuses:[9],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2644,7 +2644,7 @@ export class PoderData {
         nome: 'Só os Loucos Sabem',
         descricao:
           `No começo de cada dia, determine duas perícias aleatoriamente usando a Tabela 6-6: Desafios de Buscas (Tormenta20, p. 279). Até o fim do dia, você se torna treinado nas perícias determinadas ou, se já for treinado em alguma delas, recebe +2 naquela perícia.`,
-        deuses:[12],
+        id_deuses:[12],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2654,7 +2654,7 @@ export class PoderData {
         nome: 'Sorvo de Mana',
         descricao:
           `Sempre que falhar no teste de resistência contra uma magia de um inimigo, você recupera uma quantidade de PM igual ao círculo dela.`,
-        deuses:[20],
+        id_deuses:[20],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2664,7 +2664,7 @@ export class PoderData {
         nome: 'Temor Arcano',
         descricao:
           `Quando um inimigo em alcance médio sob efeito de uma condição de medo falha em um teste de resistência contra uma de suas magias, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.`,
-        deuses:[6],
+        id_deuses:[6],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2674,7 +2674,7 @@ export class PoderData {
         nome: 'Terror Profundo',
         descricao:
           `Você recebe +2 em Intimidação e na CD de seus efeitos de medo.`,
-        deuses:[6, 11, 17],
+        id_deuses:[6, 11, 17],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2683,8 +2683,8 @@ export class PoderData {
         id: 240,
         nome: 'Toque de Não Vida',
         descricao:
-          `Você pode pagar 2 PM para cobrir você ou um aliado adjacente em trevas protetivas. O alvo recebe 2d12 PV temporários. Enquanto esses PV durarem, ele também tem camuflagem leve por escuridão. <i><b>e</b></i>`,
-        deuses:[16],
+          `Você pode pagar 2 PM para cobrir você ou um aliado adjacente em trevas protetivas. O alvo recebe 2d12 PV temporários. Enquanto esses PV durarem, ele também tem camuflagem leve por escuridão. `,
+        id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2695,7 +2695,7 @@ export class PoderData {
         nome: 'Transbordar Cura',
         descricao:
           `Quando você usa um efeito de cura, quaisquer pontos de vida excedentes desse efeito se tornam pontos de vida temporários, até um valor máximo igual ao dobro do nível do alvo.`,
-        deuses:[8],
+        id_deuses:[8],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2704,8 +2704,8 @@ export class PoderData {
         id: 242,
         nome: 'Trilha Desimpedida',
         descricao:
-          `Você está sempre sob o efeito básico da magia Caminhos da Natureza. Se aprender essa magia, o custo dela diminui em –1 PM. <i><b>e</b></i>`,
-        deuses:[2],
+          `Você está sempre sob o efeito básico da magia Caminhos da Natureza. Se aprender essa magia, o custo dela diminui em –1 PM. `,
+        id_deuses:[2],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2716,7 +2716,7 @@ export class PoderData {
         nome: 'Ushult',
         descricao:
           `Escolha um de seus aliados como seu Ushult. Enquanto estiverem em alcance curto um do outro, vocês recebem +1 em testes de perícia e rolagens de dano (esse bônus dobra se o Ushult também for duyshidakk). Você pode trocar seu Ushult uma vez por aventura.`,
-        deuses:[17],
+        id_deuses:[17],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2727,7 +2727,7 @@ export class PoderData {
         descricao:
           `<p>Se estiver com 0 PM, você pode gastar seus pontos de vida no lugar de mana, à taxa de 3 PV por 1 PM. Pontos de vida gastos dessa forma só podem ser recuperados com descanso.</p>
           <p>Quando faz um teste de ataque, de resistência ou de Guerra, você pode gastar 2 PM para rolar novamente este teste. Você pode usar este efeito várias vezes no mesmo teste, mas a cada novo uso seu custo aumenta em +1 PM.</p>`,
-        deuses:[3],
+        id_deuses:[3],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
