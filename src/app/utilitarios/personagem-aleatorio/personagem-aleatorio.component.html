@@ -12,7 +12,7 @@
             <mat-accordion>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> {{this.racas[racaIndex] === null ? '': this.racas[racaIndex].nome}} </mat-panel-title>
+                  <mat-panel-title> <b> {{this.racas[racaIndex] === null ? '': this.racas[racaIndex].nome}} </b></mat-panel-title>
                 </mat-expansion-panel-header>
                 <div class="row">
                   <div
@@ -28,7 +28,7 @@
               </mat-expansion-panel>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> {{this.origens[origemIndex] === null ? '': origens[origemIndex].nome}} </mat-panel-title>
+                  <mat-panel-title> <b>{{this.origens[origemIndex] === null ? '': origens[origemIndex].nome}} </b></mat-panel-title>
                   <mat-panel-description>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
@@ -40,7 +40,7 @@
               </mat-expansion-panel>
               <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
                 <mat-expansion-panel-header>
-                  <mat-panel-title> {{this.classes[classeIndex]=== null ? '': classes[classeIndex].nome}} </mat-panel-title>
+                  <mat-panel-title> <b>{{this.classes[classeIndex]=== null ? '': classes[classeIndex].nome}} </b></mat-panel-title>
                   <mat-panel-description>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
