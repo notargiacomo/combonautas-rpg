@@ -93,19 +93,24 @@ b {
 }
 
 .mat-mdc-card-title,.mat-mdc-card-subtitle {
-    font-weight: bold !important;
     text-align: center !important;
 }
 
 .titulo-cartao-apresentacao .mat-mdc-card-subtitle {
-    font-weight: bold !important;
     text-align: center !important;
 }
 
 .mat-mdc-card-content{
     font-size: small !important;
     background-color: rgb(132, 26, 18) !important;
-    color: rgb(247, 247, 247)
+    color: rgb(247, 247, 247);
+    max-height: 300px !important; /* Defina a altura máxima do card */
+    overflow-y: auto !important; /* Habilita o scroll vertical */
+    padding: 16px !important; /* Opcional: ajuste o espaçamento interno */
+}
+
+.mat-mdc-card-content b {
+    color: rgb(247, 247, 247) !important;
 }
 
 .content-cartao-condicoes {

@@ -1,1 +1,186 @@
-<p>poderes works!</p>
+<div class="container">
+  <mat-card class="card-padrao">
+    <div class="row">
+      <h2><b>Poderes Gerais</b></h2>
+    </div>
+    <div class="row">
+      <hr />
+    </div>
+    <form [formGroup]="form">
+      <mat-tab-group>
+        <mat-tab label="Poderes de Combate">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Poder de Combate</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarPoderesCombate()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros_combate }}</b>
+            </div>
+          </div>
+          <mat-grid-list cols="3" gutterSize="15">
+            <mat-grid-tile *ngFor="let poder of poderes_combate">
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ poder.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-condicoes"
+                >
+                  <div class="content">
+                    <div class="row">
+                      <div
+                        class="col-sm-12 mt-4"
+                        [innerHTML]="poder.descricao"
+                      ></div>
+                    </div>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Poderes de Destino">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Poder de Destino</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarPoderesDestino()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros_destino }}</b>
+            </div>
+          </div>
+          <mat-grid-list cols="3" gutterSize="15">
+            <mat-grid-tile *ngFor="let poder of poderes_destino">
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ poder.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-condicoes"
+                >
+                  <div class="content">
+                    <div class="row">
+                      <div
+                        class="col-sm-12 mt-4"
+                        [innerHTML]="poder.descricao"
+                      ></div>
+                    </div>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Poderes Concedidos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Poder Concedido</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarPoderesConcedido()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros_concedido }}</b>
+            </div>
+          </div>
+          <mat-grid-list cols="3" gutterSize="15">
+            <mat-grid-tile *ngFor="let poder of poderes_concedido">
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ poder.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-condicoes"
+                >
+                  <div class="content">
+                    <div class="row">
+                      <div
+                        class="col-sm-12 mt-4"
+                        [innerHTML]="poder.descricao"
+                      ></div>
+                    </div>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Poderes da Tormenta">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Poder da Tormenta</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarPoderesTormenta()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros_tormenta }}</b>
+            </div>
+          </div>
+          <mat-grid-list cols="3" gutterSize="15">
+            <mat-grid-tile *ngFor="let poder of poderes_tormenta">
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ poder.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-condicoes"
+                >
+                  <div class="content">
+                    <div class="row">
+                      <div
+                        class="col-sm-12 mt-4"
+                        [innerHTML]="poder.descricao"
+                      ></div>
+                    </div>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+      </mat-tab-group>
+    </form>
+  </mat-card>
+</div>
