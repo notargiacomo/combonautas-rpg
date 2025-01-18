@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import { AcoesService } from '../../service/acoes.service';
-import { Acao } from '../../model/acoes';
+import { Acao } from '../../model/acao';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 // import { NgFor, NgIf } from '@angular/common';

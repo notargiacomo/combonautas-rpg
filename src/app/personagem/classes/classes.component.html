@@ -95,16 +95,16 @@
                 <mat-tab label="Classe">
                   <div class="content">
                     <div class="row">
-                      <div class="col-sm-3">
+                      <div class="col-sm-3 mt-4 mb-4 ml-1 mr-1">
                         <mat-card *ngIf="element.tabela != null">
                           <img [src]="element.tabela" [alt]="element.nome" />
                         </mat-card>
                       </div>
                       <div
-                        class="col-sm-6 text-justify"
+                        class="col-sm-5 text-justify"
                         [innerHTML]="element.descricao_classe"
                       ></div>
-                      <div class="col-sm-3">
+                      <div class="col-sm-3 mt-4 mb-4">
                         <mat-card *ngIf="element.imagem != null">
                           <img [src]="element.imagem" [alt]="element.nome" />
                         </mat-card>
