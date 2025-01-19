@@ -925,7 +925,7 @@ export class PoderData {
       },
       {
         id: 76,
-        nome: 'Armas da ambição',
+        nome: 'Armas da Ambição',
         descricao:
           `Você recebe +1 em testes de ataque e na margem de ameaça com armas nas quais é proficiente.`,
         id_deuses: [19],
@@ -935,7 +935,7 @@ export class PoderData {
       },
       {
         id: 77,
-        nome: 'Arsenal das profundezas',
+        nome: 'Arsenal das Profundezas',
         descricao:
           `Você recebe +2 nas rolagens de dano com azagaias, lanças e tridentes e seu multiplicador de crítico com essas armas aumenta em +1.`,
         id_deuses: [13],
@@ -2731,7 +2731,7 @@ export class PoderData {
       },
       {
         id: 244,
-        nome: 'Vitória a qualquer custo',
+        nome: 'Vitória a Qualquer Custo',
         descricao:
           `<p>Se estiver com 0 PM, você pode gastar seus pontos de vida no lugar de mana, à taxa de 3 PV por 1 PM. Pontos de vida gastos dessa forma só podem ser recuperados com descanso.</p>
           <p>Quando faz um teste de ataque, de resistência ou de Guerra, você pode gastar 2 PM para rolar novamente este teste. Você pode usar este efeito várias vezes no mesmo teste, mas a cada novo uso seu custo aumenta em +1 PM.</p>`,
