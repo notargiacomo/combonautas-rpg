@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Destreza +2, Sabedoria +1, Inteligência –1.</b></p>
 <p><b>Através de Espinheiros.</b> Você recebe redução de corte e perfuração 2 e não sofre redução em seu deslocamento por terreno difícil natural.</p>
 <p><b>Sentidos Selvagens.</b> Você recebe +2 em Sobrevivência, visão na penumbra e faro (contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha).</p>

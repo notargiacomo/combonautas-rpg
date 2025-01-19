@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Constituição +1, +1 em dois atributos.</b></p>
 <p><b>Abraço de Urso.</b> Você é Grande e pode usar Constituição como atributo-chave de Intimidação (em vez de Carisma).</p>
 <p><b>Faro. Você tem olfato apurado.</b> Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha.</p>

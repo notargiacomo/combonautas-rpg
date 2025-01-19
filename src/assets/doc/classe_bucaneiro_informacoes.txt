@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-sm-12 text-justify">
-<h4>Bravatas</h4>
+<h5>Bravatas</h5>
 <p>Audazes e imprudentes, bucaneiros têm o costume da bravata — a promessa pública de realizar uma façanha, às vezes atrelada a uma restrição, como “Navegarei até Galrasia com um barco furado!”. Todas as Bravatas compartilham as seguintes regras.</p>
 <ul>
 <li>Uma Bravata deve envolver um desafio real. Em termos de jogo, deve ser uma ação com ND igual ou maior que o nível do bucaneiro.</li>

@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Destreza +2, Carisma +1, Inteligência –1.</b></p>
 <p><b>Asas de Abutre.</b> Você possui asas no lugar dos braços e das mãos. Você pode pairar a 1,5m do chão com deslocamento 12m. Isso permite que você ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Se não estiver usando armadura pesada, você pode gastar 1 PM por rodada para voar com deslocamento de 12m.</p>
 <p><b>Cria de Masmorra.</b> Você é uma criatura do tipo monstro e recebe visão no escuro e +2 em Intimidação e Sobrevivência.</p>

@@ -1,5 +1,5 @@
 <p>Parte humanas, parte fadas, as dahllan são uma raça de mulheres com a seiva de árvores correndo nas veias. Falam com os animais, controlam as plantas — mas também são ferozes em batalha, retorcendo madeira para formar armaduras.</p>
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Sabedoria +2, Destreza +1, Inteligência –1.</p></b>
 <p><b>Amiga das Plantas.</b> Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e</p>
 <p><b>Artesã Natural</b> Você pode lançar a magia Transmutar Objetos (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</p>

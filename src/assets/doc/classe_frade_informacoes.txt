@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-sm-12 text-justify">
-<h4>Missas</h4>
+<h5>Missas</h5>
 <p>Assim como o clérigo, o frade pode aprender poderes de missa. Esses poderes são descritos a seguir e compartilham as seguintes regras.</p>
 <ul>
 <li>Rezar uma Missa exige uma hora e o gasto de materiais especiais (como velas, incensos, água benta...) no valor de T$ 25. Um mesmo celebrante pode aplicar mais de um poder de Missa na mesma celebração. Cada poder adicional aumenta o custo da Missa em T$ 25.</li>
@@ -10,7 +10,7 @@
 
 <hr>
 
-<h4>Sacrários</h4>
+<h5>Sacrários</h5>
 <p>Alguns poderes de frade são Sacrários – uma área consagrada pelo poder divino. Esses poderes compartilham as seguintes regras.</p>
 <ul>
 <li>Ativar um sacrário gasta uma ação padrão e 3 PM.</li>

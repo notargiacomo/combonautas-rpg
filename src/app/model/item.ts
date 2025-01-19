@@ -15,4 +15,6 @@ export interface Item {
     alcance?:number;
     espaco?:number;
     tracos?:string[];
+    referencias?:string;
+    paginas?:string;
 }

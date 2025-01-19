@@ -1,10 +1,10 @@
 <div class="row">
-<h4>Livro de Fórmulas</h4>
+<h5>Livro de Fórmulas</h5>
 <p>Quando adquire o poder Alquimista Iniciado, você recebe um livro de fórmulas. Uma “fórmula” é uma magia divina ou arcana (atributo-chave Inteligência) que serve para cumprir os pré-requisitos de fabricação de poções.</p>
 <p>Você começa com três fórmulas de 1º círculo. A cada nível além do 1º, aprende uma fórmula adicional. A partir do 6º nível, pode aprender fórmulas de 2º círculo e, se possuir o poder Mestre Alquimista, a cada quatro níveis (10º, 14º e 18º) pode aprender fórmulas de um círculo maior.</p>
 <p>Se não tiver seu livro de fórmulas, você não pode fabricar poções. Se perder seu livro, você pode preparar outro com uma semana de trabalho e o gasto de T$ 100.</p>
 <hr>
-<h4>Engenhocas</h4>
+<h5>Engenhocas</h5>
 <p>Uma engenhoca é uma invenção que simula o efeito de uma magia. Exemplos incluem um canhão (simula o efeito da magia <i>Bola de Fogo</i>), uma arma de raios (<i>Relâmpago</i>), um casaco blindado (<i>Armadura Arcana</i>), um emplastro curativo (<i>Curar Ferimentos</i>), um guarda-costas mecânico (<i>Conjurar Monstro</i>), um projetor de imagens (<i>Criar Ilusão</i>), um veículo a vapor (<i>Montaria Arcana</i>) etc.</p>
 <p>Uma engenhoca é um item mundano Minúsculo que ocupa 1 espaço e possui Defesa 15, pontos de vida iguais à metade dos PV de seu fabricante e RD 5. Quando é fabricada, escolha se ela será empunhada (precisa estar na sua mão para ser ativada) ou vestida (precisa estar vestida para ser ativada, conta para seu limite de itens vestidos). Ao ser ativada, uma engenhoca pode assumir outra forma. Por exemplo, uma engenhoca que simula Montaria Arcana pode ser uma caixinha de engrenagens que se desdobra na forma de uma moto de madeira. Suas estatísticas não mudam.</p>
 <p><b>Fabricação.</b> Para fabricar uma engenhoca, escolha uma magia arcana ou divina de 1º círculo. Essa será a magia que a engenhoca irá simular. A partir do 6º nível, você pode criar engenhocas com magias de 2º círculo e, a cada quatro níveis, pode criar engenhocas de um círculo maior.</p>

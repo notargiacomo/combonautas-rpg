@@ -1,4 +1,4 @@
-<h4>Linhagens Sobrenaturais</h4>
+<h5>Linhagens Sobrenaturais</h5>
 <p>O poder de um feiticeiro vem de seu sangue — mais precisamente, do sangue de um antepassado sobrenatural, como um dragão ou uma fada. Além da capacidade de lançar magias, o feiticeiro herda desse antepassado uma fração de seu poder natural, que ele pode desenvolver ao longo de sua vida. Ao escolher o caminho do feiticeiro, escolha uma linhagem da lista a seguir. Você recebe a herança básica de sua linhagem e pode desenvolver as demais através de poderes de arcanista.</p>
 
 <p><b>Linhagem Dracônica</b></p>
@@ -47,7 +47,7 @@ conta como um poder da Tormenta (exceto para perda de Carisma).</li>
 
 <hr>
 
-<h4>Anulando Magias</h4>
+<h5>Anulando Magias</h5>
 <p>Você pode anular uma magia conjurada por outra pessoa, fazendo uma contramágica. Para isso, use a ação preparar para agir quando uma criatura lançar uma magia. Nesse instante, você deve lançar uma magia que possa anular a magia original.</p>
 <p>Normalmente, uma magia só pode ser anulada por outra igual — se um inimigo lança Bola de Fogo, você deve lançar outra Bola de Fogo para anulá-la. Mas algumas magias podem anular outras: por exemplo, Luz anula Escuridão (e vice-versa). Em caso de dúvida, cabe ao mestre julgar se uma magia anula outra. Como regra geral, uma magia nunca pode anular outra de círculo maior.</p>
 <p>Dissipar Magia é uma exceção — pode ser usada para anular qualquer magia (mesmo de círculos maiores), mas você deve fazer um teste de Misticismo oposto por Misticismo ou Vontade de quem está lançando a magia (o que for maior). Se você vencer, seu Dissipar Magia funciona como contramágica.</p>
@@ -55,7 +55,7 @@ conta como um poder da Tormenta (exceto para perda de Carisma).</li>
 
 <hr>
 
-<h4>Familiares Arcanos</h4>
+<h5>Familiares Arcanos</h5>
 <p>Um familiar é uma criatura mágica. Em termos de jogo, é um parceiro especial com o qual você pode se comunicar telepaticamente em alcance longo. Ele obedece a suas ordens, mas ainda está limitado ao que uma criatura de sua espécie pode fazer. Se ele morrer, você fica atordoado por uma rodada. Você pode invocar um novo familiar com um ritual que exige um dia e T$ 100 em ingredientes.</p>
 <ul>
 <li><b>Borboleta.</b> A CD dos testes de Vontade para resistir a suas magias aumenta em +1.</li>

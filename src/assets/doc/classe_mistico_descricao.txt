@@ -1,4 +1,4 @@
-<h4>Características de Classe</h4>
+<h5>Características de Classe</h5>
 <p><b>Pontos de Vida.</b> Um místico começa com 16 pontos de vida (+ Constituição) e ganha 4 PV
 (+ Constituição) por nível.</p>
 <p><b>Pontos de Mana.</b>  4 PM por nível.</p>

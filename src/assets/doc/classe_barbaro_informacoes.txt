@@ -1,4 +1,4 @@
-<h4>Animais Totêmicos</h4>
+<h5>Animais Totêmicos</h5>
 <p>A seguir está uma lista de animais venerados por tribos bárbaras de Arton.</p>
 <ul>
 <li><b>Coruja.</b> A sábia coruja guia seus discípulos. Você pode lançar Orientação.</li>

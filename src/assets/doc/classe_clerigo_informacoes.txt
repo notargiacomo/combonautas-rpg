@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-sm-12 text-justify">
-<h4>Missas</h4>
+<h5>Missas</h5>
 <p>Alguns poderes do clérigo são Missas. Esses poderes compartilham as seguintes regras.</p>
 <ul>
 <li>Rezar uma Missa exige uma hora e o gasto de materiais especiais (como velas, incensos, água benta...) no valor de T$ 25. Um mesmo celebrante pode aplicar mais de um poder de Missa na mesma celebração. Cada poder adicional aumenta o custo da Missa em T$ 25.</li>

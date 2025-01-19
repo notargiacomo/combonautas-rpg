@@ -1,5 +1,5 @@
 <div class="row">
-<h4>Posturas de Combate</h4>
+<h5>Posturas de Combate</h5>
 <p>Alguns poderes do cavaleiro são Posturas de Combate. Esses poderes compartilham as seguintes regras.</p>
 <ul>
 <li>Assumir uma postura gasta uma ação de movimento e 2 PM.</li>

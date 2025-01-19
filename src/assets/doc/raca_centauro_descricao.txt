@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Sabedoria +2, Força +1, Inteligência –1.</b></p>
 <p><b>Avantajado.</b> Seu tamanho é Grande e seu deslocamento é 12m.</p>
 <p><b>Cascos.</b> Você possui uma arma natural de cascos (dano 1d8, crítico x2, impacto). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os cascos.</p>

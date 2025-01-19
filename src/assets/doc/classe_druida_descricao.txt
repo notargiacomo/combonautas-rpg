@@ -1,4 +1,4 @@
-<h4>Características de Classe</h4>
+<h5>Características de Classe</h5>
 <p><b>Pontos de Vida.</b> Um druida começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
 <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
 <p><b>Perícias.</b>  Sobrevivência (Sab) e Vontade (Sab), mais  4  a  sua  escolha  entre  Adestramento  (Car), Atletismo  (For),  Cavalgar  (Des),  Conhecimento (Int), Cura (Sab), Fortitude (Con), Iniciativa (Des), Intuição (Sab), Luta (For), Misticismo (Int), Ofício (Int), Percepção (Sab) e Religião (Sab).</p>

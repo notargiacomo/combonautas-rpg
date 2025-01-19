@@ -1,5 +1,5 @@
 <div class="row">
-<h4>Armadilhas</h4>
+<h5>Armadilhas</h5>
 <p>Alguns poderes do caçador são Armadilhas. Esses poderes compartilham as seguintes regras.</p>
 <ul>
 <li>Preparar uma armadilha gasta uma ação completa e 3 PM.</li>

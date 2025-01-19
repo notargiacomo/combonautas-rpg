@@ -1,5 +1,5 @@
 <p>Com a influência macabra da Tormenta permeando cada vez mais o mundo, surgiram os lefou. Estes meios-demônios de aparência grotesca passaram a nascer em famílias de outras raças, sendo logo sacrificados ou expulsos. Entre os que escapam, por sua facilidade em manifestar poderes aberrantes, muitos escolhem abraçar o mal, enquanto outros decidem combatê-lo.<p>
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>+1 em Três Atributos Diferentes (exceto Carisma), Carisma –1.</b></p>
 <p><b>Cria da Tormenta.</b> Você é uma criatura do tipo monstro e recebe +5 em testes de resistência contra efeitos causados por lefeu e pela Tormenta.</p>
 <p><b>Deformidade.</b> Todo lefou possui defeitos físicos que, embora desagradáveis, conferem certas vantagens. Você recebe

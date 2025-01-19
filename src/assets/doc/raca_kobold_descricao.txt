@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Destreza +2, Força –1.</b></p>
 <p><b>Ajuntamento Escamoso.</b> Embora sejam um grupo de kobolds, para todos os efeitos vocês são uma única criatura Média com dois braços. Entretanto, contam como Pequenos para efeitos dos espaços por onde podem passar e, quando fazem um teste de resistência contra um efeito que afeta apenas uma criatura e não causa dano, rolam dois dados e usam o melhor resultado. Por fim, têm vulnerabilidade a dano de área.</p>
 <p><b>Praga Monstruosa.</b> Vocês são criaturas do tipo monstro e recebem visão no escuro e +2 em Sobrevivência.</p>

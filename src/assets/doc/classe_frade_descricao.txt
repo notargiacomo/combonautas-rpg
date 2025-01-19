@@ -1,4 +1,4 @@
-<h4>Características de Classe</h4>
+<h5>Características de Classe</h5>
 <p><b>Pontos de Vida.</b> Um frade começa com 12 pontos de vida (+ Constituição) e ganha 3 PV (+
 Constituição) por nível.</p>
 <p><b>Pontos de Mana.</b> 6 PM por nível.</p>

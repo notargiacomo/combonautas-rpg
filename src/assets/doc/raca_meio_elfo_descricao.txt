@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Inteligência +1, +1 em dois atributos, exceto constituição.</b></p>
 <p><b>Ambição Herdada.</b> Você recebe um poder geral ou poder único de origem (veja Tormenta20, p. 85) à sua escolha.</p>
 <p><b>Entre Dois Mundos.</b> Você recebe +1 em perícias baseadas em Carisma.</p>

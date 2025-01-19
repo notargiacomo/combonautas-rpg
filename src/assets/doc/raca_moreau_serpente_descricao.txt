@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Inteligência +1, +1 em dois atributos.</b></p>
 <p><b>Arborícola.</b> Você recebe deslocamento de escalada 6m e +2 em Furtividade.</p>
 <p><b>Constritor.</b> Você recebe +2 em testes para agarrar e em rolagens de dano contra criaturas que estiver agarrando.</p>

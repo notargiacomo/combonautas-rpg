@@ -1,4 +1,4 @@
-<h4>Características de Classe</h4>
+<h5>Características de Classe</h5>
 <p><b>Pontos de Vida.</b>  Um cavaleiro começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
 <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
 <p><b>Perícias.</b>  Fortitude (Con) e Luta (For), mais 2 a sua escolha entre Adestramento (Car), Atletismo (For),  Cavalgar  (Des),  Diplomacia  (Car),  Guerra (Int), Iniciativa (Des), Intimidação (Car), Nobreza (Int), Percepção (Sab) e Vontade (Sab).</p>

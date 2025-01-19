@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Sabedoria +2, Carisma +1, Força –1.</b></p>
 <p><b>Essência Feérica.</b> Você é uma criatura do tipo espírito, recebe visão na penumbra e pode falar com animais livremente.</p>
 <p><b>Magia Instintiva.</b> Você pode usar Sabedoria no lugar de Inteligência como atributo-chave de Misticismo e de seu atributo-chave para magias arcanas. Além disso, está sempre sob o efeito básico da magia Visão Mística e, quando lança uma magia com aprimoramentos, o custo total dela diminui em –1 PM.</p>

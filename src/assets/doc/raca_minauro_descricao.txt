@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Força +1, +1 em dois atributos.</b></p>
 <p><b>Faro.</b> Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha.</p>
 <p><b>Mente Aberta.</b> Você recebe +2 em Diplomacia e Investigação.</p>

@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Inteligência +2, Constituição +1, Força –1.</b>
 <p><b>Corpo Vegetal.</b> Você é uma criatura do tipo monstro e recebe natureza vegetal e visão no escuro. 
 <p><b>Presença Arcana.</b> Você recebe +2 em Misticismo e resistência a magia +2.

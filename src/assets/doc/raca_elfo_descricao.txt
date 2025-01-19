@@ -1,7 +1,7 @@
 <p>Elfos são seres feitos para a beleza e para a guerra, tão habilidosos com magia quanto com espadas e arcos. Elegantes, astutos, de vidas quase eternas, parecem superiores aos humanos em
 tudo. Poderiam ter governado toda Arton, não fosse a arrogância herdada de sua deusa. Com a queda
 de Glórienn, os elfos se tornaram um povo sem uma deusa. Um povo independente. Enquanto alguns veem a falta de uma divindade como uma tragédia, outros acreditam que, pela primeira vez na história, são livres.</p>
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Inteligência +2, Destreza +1, Constituição –1.</p></b>
 <p><b>Graça de Glórienn.</b> Seu deslocamento é 12m (em vez de 9m).</p>
 <p><b>Sangue Mágico.</b> Você recebe +1 ponto de mana por nível.</p>

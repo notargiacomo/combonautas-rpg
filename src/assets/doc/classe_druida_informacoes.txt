@@ -1,7 +1,7 @@
 <div class="row">
 <div class="col-sm-12 text-justify">
 
-<h4>Companheiro Animal</h4>
+<h5>Companheiro Animal</h5>
 <p>Um companheiro animal é um amigo valoroso e fiel. Você decide de qual espécie 
 é seu companheiro. Vocês têm um vínculo mental, sendo capazes de entender um ao outro. Seu companheiro animal obedece a você, mesmo que isso arrisque a vida dele.</p>
 <p>Em termos de jogo, seu companheiro animal é um parceiro ajudante, assassino, atirador, combatente, fortão, guardião, perseguidor, ou uma montaria, do nível iniciante. No 7º nível ele muda para veterano e, no 15º nível, para mestre (se 
@@ -18,7 +18,7 @@ um dia inteiro de prece e meditação.</p>
 <li>Perseguidor. Gambá, sabujo ou outro animal farejador.</li>
 </ul>
 <hr>
-<h4>Forma Selvagem</h4>
+<h5>Forma Selvagem</h5>
 <p>Você pode gastar uma ação completa e 3 PM para adquirir a forma de uma criatura selvagem. Em termos de jogo, quando usa esta habilidade você adquire os modificadores de uma das formas abaixo. Características não mencionadas não mudam.</p>
 <p>Na forma selvagem você não pode falar, empunhar itens ou lançar magias. Seu equipamento desaparece (mas você mantém os benefícios de quaisquer itens vestidos), ressurgindo quando você volta ao normal. Outras criaturas podem fazer um teste de Percepção oposto pelo seu teste de Enganação para perceber que você não é um animal comum (você recebe +10 neste teste). Cada transformação dura pelo tempo que você quiser, mas você reverte à forma normal se ficar inconsciente ou morrer.</p>
 
@@ -59,7 +59,7 @@ um dia inteiro de prece e meditação.</p>
 
 <hr>
 
-<h4>NOVO TIPO DE PARCEIRO: ABERRANTE</h4>
+<h5>NOVO TIPO DE PARCEIRO: ABERRANTE</h5>
 <b> (Dragão Brasil 204, Pag. 78)</b>
 <p>Uma criatura corrompida pela Tormenta, de aparência perturbadora. Apenas devotos de Aharadak podem ter esse tipo de parceiro.</p>
 <p>Uma vez por rodada, você pode gastar 1 PM para causar 2d6 pontos de dano psíquico ou causar a perda de 1d4 PM em uma criatura em alcance curto (este é um efeito mental).</p>
@@ -70,7 +70,7 @@ um dia inteiro de prece e meditação.</p>
 
 <hr>
 
-<h4>Forma Elemental</h4>
+<h5>Forma Elemental</h5>
 (Dragão Brasil 204, Pag. 83, 84 e 85)
 <p>O druida de Arton pode escolher substituir sua habilidade de Forma Selvagem por Forma Elemental. Uma vez escolhida, a troca é permanente.</p>
 <p>Esta habilidade funciona como Forma Selvagem (Tormenta20, p. 63) mas, em vez de um animal, você assume a forma de um elemental escolhido entre as opções a seguir no momento da transformação.</p>

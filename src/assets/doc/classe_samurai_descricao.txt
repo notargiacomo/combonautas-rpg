@@ -1,4 +1,4 @@
-<h4>Características de Classe</h4>
+<h5>Características de Classe</h5>
 <p><b>Pontos de Vida.</b> Um samurai começa com 20 pontos de vida (+ Constituição) e ganha 5 PV (+ Constituição) por nível.</p>
 <p><b>Pontos de Mana.</b>  3 PM por nível.</p>
 <p><b>Perícias.</b>  Luta (For) e Vontade (Sab), mais 2 a sua escolha entre Acrobacia (Des), Adestramento (Car), Atletismo (For), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pontaria (Des).</p>

@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Destreza +2, Inteligência +1.</b></p>
 <p><b>Asas Desorientadoras.</b> Quando estão livres, suas asas podem ser usadas para distrair seus oponentes. Se não estiver usando-as para voar, você recebe os benefícios de Finta Aprimorada. Se tiver esse poder, em vez disso o bônus em Enganação para fintar aumenta para +5.</p>
 <p><b>Caminhante do Céu.</b> Você pode pairar a 1,5m do chão com deslocamento 9m. Isso permite que você 

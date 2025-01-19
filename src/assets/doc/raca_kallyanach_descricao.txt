@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>+2 em um atributo a sua escolha ou +1 em dois atributos a sua escolha.</b></p>
 <p><b>Herança Dracônica.</b> Você é uma criatura do tipo monstro e recebe redução 5 contra um tipo de dano a sua escolha entre ácido, eletricidade, fogo, frio, luz ou trevas.</p>
 <p><b>Bênção de Kallyadranoch.</b> Escolha dois dos poderes a seguir. Uma vez por patamar, você pode escolher uma bênção no lugar de um poder de classe.</p>
@@ -14,5 +14,5 @@ visão no escuro.</p>
 <li><b>Sopro de Dragão.</b> Você pode gastar uma ação padrão e 1 PM para soprar um cone de 6m que causa 1d12 pontos de dano do tipo de sua Herança Dracônica (Ref CD Constituição reduz à metade). A cada quatro níveis após o 1º, você pode gastar +1 PM para aumentar o dano do sopro em +1d12.</p>
 </ul>
 
-<h4>Feiticeiros Dracônicos</h4>
+<h5>Feiticeiros Dracônicos</h5>
 <p>A combinação de heranças místicas em um kallyanach feiticeiro da linhagem dracônica concede a ele certas habilidades especiais. Primeiramente, o kallyanach feiticeiro dracônico pode escolher Carisma como atributo-chave de seu Sopro de Dragão e das magias recebidas por Prática Arcana. Além disso, seu Sopro de Dragão conta como uma magia de feiticeiro para efeitos de habilidades e itens que beneficiem suas magias.</p>

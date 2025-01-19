@@ -1,5 +1,5 @@
 <p>Mashins são golens especiais criados com técnicas tamuranianas. Eles são um tipo de chassi para personagens golens (veja a página 134 - Ameaças de Arton).</p>
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Mashin (chassi).</b> +1 em dois atributos a sua escolha. Você se torna treinado em duas perícias a sua escolha e pode substituir uma dessas perícias por uma maravilha mecânica. Entretanto, você é sempre Médio.</p>
 <p><b>Maravilha Mecânica.</b> Se escolher uma maravilha mecânica, você recebe um dos poderes a seguir. Uma vez por patamar, você pode escolher uma maravilha mecânica no lugar de um poder de classe.</p>
 <ul>

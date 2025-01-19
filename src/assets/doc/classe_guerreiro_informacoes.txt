@@ -1,5 +1,5 @@
 <div class="row">
-<h4>Efeitos do Golpe Pessoal</h4>
+<h5>Efeitos do Golpe Pessoal</h5>
 <p><b>Amplo (+3 PM).</b> Seu ataque atinge todas as criaturas em alcance curto (incluindo aliados, mas não você mesmo). Faça um único teste de ataque e compare com a Defesa de cada criatura. Atordoante (+2 PM). Uma criatura que sofra dano do ataque fica atordoada por uma rodada (apenas uma vez por cena; Fortitude CD For anula).</p> 
 <p><b>Brutal (+1 PM).</b> Fornece um dado extra de dano do mesmo tipo.
 <p><b>Conjurador (Custo da Magia + 1 PM).</b> Escolha uma magia de 1º ou 2º círculos que tenha como alvo uma criatura ou que afete uma área. Se acertar seu golpe, você lança a magia como uma ação livre, tendo como alvo a criatura atingida ou como centro de sua área o ponto atingido pelo ataque (atributo-chave é um mental a sua escolha). Considere que a mão da arma está livre para lançar esta magia. <i><b>e</b></i></p>

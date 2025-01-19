@@ -1,11 +1,11 @@
 <div class="row">
 <div class="col-sm-12 text-justify">
-<h4>Ditames</h4>
+<h5>Ditames</h5>
 <p>O místico expande suas magias conhecidas através de ditames, conjuntos temáticos fechados de conhecimento mágico. Ele não tem acesso a poderes como Conhecimento Mágico, do arcanista, e precisa seguir padrões e tradições estabelecidos há muito tempo e passados de geração a geração.</p>
 <p>Quando você adquire um poder de ditame, se já conhece uma das magias fornecidas pelo poder, pode trocá-la por outra magia de mesmo círculo, desde que essa magia seja de uma de suas escolas permitidas.</p>
 <p>Quando você lança uma magia aprendida por meio de um poder de ditame, se estiver em contato com uma expressão natural do seu elemento de volume equivalente a uma criatura Média, o custo dessa magia é reduzido em –1 PM.</p>
 <hr>
-<h4>Manifestações Elementais</h4>
+<h5>Manifestações Elementais</h5>
 <p>Manifestações elementais são pequenos espíritos ligados a um tipo de energia elemental. Um místico que tenha realizado o ritual apropriado, pode se conectar a uma dessas manifestações e invocá-la em seu auxílio. Em termos de regras, manifestações elementais são parceiros que usam as regras a seguir.</p>
 <ul>
     <li>Para usar uma manifestação elemental você precisa primeiro gastar uma ação de movimento e 2 PM para evocá-la. Para isso, você precisa de acesso a uma expressão natural do elemento correspondente. Uma manifestação evocada desaparece no fim da cena.</li>
@@ -47,7 +47,7 @@ que pode lançar.</p>
 
 <hr>
 
-<h4>Expressão Natural dos Elementos</h4>
+<h5>Expressão Natural dos Elementos</h5>
 <p>Alguns poderes fazem referência a expressões naturais de um elemento. Isso quer dizer uma manifestação do elemento que ocorra sem que seja alimentada de magia. Uma fogueira pode servir como uma expressão natural de fogo mesmo que tenha sido acesa com uma Bola de Fogo, mas um ber’baram ou outro elemental não poderia, bem como as chamas da magia Muralha Elemental. Para luz, expressões naturais são ambientes banhados diretamente pela luz do sol e para trevas são ambientes completamente
 escuros. Para água, corpos de água como poças, lagos e rios são expressões naturais desde que estejam limpos. Para terra, montanhas e extensões de terra fértil são expressões naturais. Para ar, ambientes
 com ar puro servem como expressões naturais; normalmente, em grandes cidades, tais ambientes são encontrados apenas em altitudes elevadas.</p>

@@ -1,4 +1,4 @@
-<h4>HABILIDADES DE RAÇA</h4>
+<h5>HABILIDADES DE RAÇA</h5>
 <p><b>Destreza +2, Constituição +1, Carisma –1.</b></p>
 <p><b>Alma da Água.</b> Você é uma criatura do tipo espírito e tem deslocamento de natação igual ao seu deslocamento terrestre.</p>
 <p><b>Carapaça Kappa.</b> Você não pode ser flanqueado e recebe cobertura leve se estiver submerso ou caído. Você soma sua Constituição na Defesa, limitado pelo seu nível, mas apenas se não estiver usando armaduras pesadas (se já faz isso, como pela habilidade Casca Grossa, em vez disso você recebe +2 na Defesa).</p>
