@@ -1,26 +1,22 @@
 <form [formGroup]="formulario">
   <div class="container">
     <div class="row">
-      <h2><b>CÁLCULO DE DESAFIOS</b></h2>
-    </div>
-    <div class="row">
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 mt-4">
+      <div class="col-sm-12 mt-4">
         <mat-card class="card-padrao">
-          <div class ="row">
-            <label
+          <h2><b>CÁLCULO DE DESAFIOS</b></h2>
+          <div class="button-row d-flex justify-content-end">
+            <button mat-button (click)="openDialog()">OS 10 MANDAMENTOS DO CÁLCULO DE DESAFIOS</button>
+          </div>
+          <hr />
+          <label
             ><b
               class="negrito-centralizado"
               style="text-justify: center !important"
               >PREENCHA O PERFIL DE SUA MESA ABAIXO:
-            </b></label
-          >
-          </div>
+            </b></label>
           <div class="col-sm-12 mt-4">
             <div class="row">
-              <div class="col-sm-6 mt-4">
+              <div class="col-sm-4">
                 <mat-form-field class="form-field">
                   <mat-label>Nível Médio do Grupo</mat-label>
                   <input
@@ -33,7 +29,7 @@
                   />
                 </mat-form-field>
               </div>
-              <div class="col-sm-6 mt-4">
+              <div class="col-sm-4">
                 <mat-form-field class="form-field">
                   <mat-label>Número de Jogadores</mat-label>
                   <input
@@ -46,9 +42,22 @@
                   />
                 </mat-form-field>
               </div>
+              <div class="col-sm-4">
+                <mat-form-field class="form-field">
+                  <mat-label>Número de Encontros</mat-label>
+                  <input
+                    formControlName="numero_encontros"
+                    matInput
+                    type="number"
+                    name="numero_encontros"
+                    (change)="calcular()"
+                    (keyup)="calcular()"
+                  />
+                </mat-form-field>
+              </div>
             </div>
             <div class="row">
-              <div class="col-sm-6 mt-4">
+              <div class="col-sm-4">
                 <div class="row">
                   <label id="radio-experientes"><b>Experientes?</b></label>
                 </div>
@@ -65,7 +74,7 @@
                   </mat-radio-group>
                 </div>
               </div>
-              <div class="col-sm-6 mt-4">
+              <div class="col-sm-4">
                 <div class="row">
                   <label id="radio-entrosados"><b>Entrosados?</b></label>
                 </div>
@@ -82,9 +91,7 @@
                   </mat-radio-group>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 mt-4">
+              <div class="col-sm-4">
                 <div class="row">
                   <label id="radio-situacao"><b>Situação</b></label>
                 </div>
@@ -104,24 +111,11 @@
                   </mat-radio-group>
                 </div>
               </div>
-              <div class="col-sm-6 mt-4">
-                <mat-form-field class="form-field">
-                  <mat-label>Número de Encontros</mat-label>
-                  <input
-                    formControlName="numero_encontros"
-                    matInput
-                    type="number"
-                    name="numero_encontros"
-                    (change)="calcular()"
-                    (keyup)="calcular()"
-                  />
-                </mat-form-field>
-              </div>
-              <div class="row">
-                <hr>
-              </div>
+            </div>
+            <div class="row">
               <div class="row">
                 <div class="col-sm-12 mt-4">
+                  <hr />
                   <h5>RESULTADO: {{ resultado }}</h5>
                 </div>
               </div>
@@ -129,71 +123,7 @@
           </div>
         </mat-card>
       </div>
-      <div class="col-sm-6 mt-4">
-        <mat-card class="card-padrao">
-          <label
-            ><b
-              class="negrito-centralizado"
-              style="text-justify: center !important"
-              >OS 10 MANDAMENTOS DO CÁLCULO DE DESAFIOS
-            </b></label
-          >
-          <label
-            ><b class="negrito-centralizado">
-              (BASEADO NA PAG. 282 DO LIVRO BÁSICO)</b
-            ></label
-          >
-          <hr>
-          <label
-            ><b>1.</b> A ND DE DESAFIO INICIAL SEM VARIANTES, É EQUIVALENTE A
-            MÉDIA TRUNCADA DO NÍVEL DO GRUPO</label
-          >
-          <label
-            ><b>2.</b> A ND AUMENTA EM 1 PARA CADA JOGADOR ACIMA DE 4</label
-          >
-          <label
-            ><b>3.</b> A ND DIMINUI EM 1 PARA CADA JOGADOR ABAIXO DE 4</label
-          >
-          <label><b>4.</b> A ND AUMENTA EM 1 PARA JOGADORES EXPERIENTES</label>
-          <label><b>5.</b> A ND AUMENTA EM 1 PARA JOGADORES ENTROSADOS</label>
-          <label
-            ><b>6.</b> A ND DIMINUI EM 1 PARA CADA DESAFIO EXTRA ENTRE
-            DESCANSOS</label
-          >
-          <label
-            ><b>7.</b> A ND AUMENTA EM 1 PARA SITUAÇÃO FAVORÁVEIS AOS
-            JOGADORES</label
-          >
-          <label
-            ><b>8.</b> A ND DIMINUI EM 1 PARA SITUAÇÃO DESFAVORÁVEIS AOS
-            JOGADORES</label
-          >
-          <label>
-            <b>9.</b> A ND DIMINUI EM 1 PARA SITUAÇÃO DESFAVORÁVEIS AOS O IDEIAL
-            É QUE A ND TENHA A DIFERENÇA DE APENAS 3 PONTOS DA ND MÉDIA DO
-            GRUPO. ABAIXO DISSO SE TORNA UM ENCONTRO INSIGNIFICANTE, ACIMA SE
-            TORNA LETAL.</label
-          >
-          <label>
-            <b>10.</b> O BOM
-            SENSO DO MESTRE E A DIVERSÃO DO GRUPO SÃO AS PRIORIDADES.</label
-          >
-        </mat-card>
-      </div>
     </div>
-
-    <!-- Lista de possibilidades
-    <mat-list>
-      @for (item of monstrosSelecionadosAleatoriamente; track item) {
-        <mat-list-item>
-          <mat-icon matListItemIcon>ophthalmology</mat-icon>
-          <mat-icon matListItemIcon>eye</mat-icon>
-          <div matListItemLine>ND: {{item.nd}}</div>
-          <div matListItemTitle>{{item.nome}}</div>
-          Descrição do monstro
-        </mat-list-item>
-      }
-    </mat-list> -->
-    <hr>
+    <hr />
   </div>
 </form>

@@ -13,7 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Poder } from '../../model/poder';
 import { PoderService } from '../../service/poder.service';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TipoPoder } from '../../enum/tipopoder.enum';
+import { TipoPoder } from '../../enum/tipo.poder.enum';
 import { Deus } from '../../model/deus';
 
 @Component({

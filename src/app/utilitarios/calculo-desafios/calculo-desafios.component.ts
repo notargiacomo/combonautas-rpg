@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import {
   FormArray,
   FormBuilder,
@@ -15,20 +15,30 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import {
+  MatDialog,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogTitle,
+} from '@angular/material/dialog';
 import { CalculoDesafiosDto } from '../../dto/calculo-desafios.dto';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon'; 
 import { ameacas } from '../../data/ameacas.data';
 import { Ameaca } from '../../model/ameaca';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-calculo-desafios',
   standalone: true,
   imports: [FormsModule, MatFormFieldModule, ReactiveFormsModule, MatDividerModule, MatCardModule, MatInputModule, MatCheckboxModule, MatRadioModule, MatSelectModule, MatListModule,MatIconModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './calculo-desafios.component.html',
   styleUrl: './calculo-desafios.component.scss',
 })
 export class CalculoDesafiosComponent implements OnInit {
+  readonly dialog = inject(MatDialog);
   formulario!: FormGroup;
   calculoDesafios = new CalculoDesafiosDto();
   resultado: string = '';
@@ -40,6 +50,10 @@ export class CalculoDesafiosComponent implements OnInit {
   monstrosSelecionadosAleatoriamente: any[] = []
 
   constructor(private fb: FormBuilder) {}
+
+  openDialog() {
+    this.dialog.open(DialogElementsExampleDialog);
+  }
 
   ngOnInit(){
     this.formulario = this.fb.group({
@@ -93,3 +107,11 @@ export class CalculoDesafiosComponent implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'dialog-elements-example-dialog',
+  templateUrl: 'dialog-elements-example-dialog.html',
+  imports: [MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose, MatDialogActions, MatButtonModule, MatCardModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class DialogElementsExampleDialog {}

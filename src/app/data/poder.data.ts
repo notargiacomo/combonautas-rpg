@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { Poder } from '../model/poder';
-import { TipoPoder } from '../enum/tipopoder.enum';
+import { TipoPoder } from '../enum/tipo.poder.enum';
 import { Atributo } from '../enum/atributo.enum';
 import { Referencia } from '../enum/referencia.enum';
 

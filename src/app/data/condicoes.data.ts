@@ -1,4 +1,4 @@
-import { TipoCondicao } from "../enum/tipocondicao.enum";
+import { TipoCondicao } from "../enum/tipo.condicao.enum";
 
 export const condicoes = [
     {id:  1, nome: 'ABALADO', descricao: 'O personagem sofre –2 em testes de perícia. Se ficar abalado novamente, em vez disso fica apavorado.', tipo: TipoCondicao.MEDO},
