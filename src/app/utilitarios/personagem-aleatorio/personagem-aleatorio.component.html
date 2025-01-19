@@ -1,140 +1,358 @@
 <div class="container">
-    <mat-card class="cartao">
-      <div class="row">
-        <div class="col-sm-12 mt-4">
+  <mat-card class="cartao">
+    <div class="row">
+      <div class="col-sm-12 mt-4">
         <h2><b>DEIXE NIMB CRIAR UM PERSONAGEM PARA VOCÊ!</b></h2>
-          <hr>
-        </div>
+        <hr />
       </div>
+    </div>
+    <div class="row">
       <div class="row">
-        <div class="row">
-          <div class="col-sm-12 mt-4">
-            <mat-accordion>
-              <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                <mat-expansion-panel-header>
-                  <mat-panel-title> <b> Raça: {{this.racas[racaIndex] === null ? '': this.racas[racaIndex].nome}} </b></mat-panel-title>
-                </mat-expansion-panel-header>
-                <div class="row">
-                  <div
-                    class="col-sm-9 text-justify"
-                    [innerHTML]="this.racas[racaIndex] === null ? '': this.racas[racaIndex].descricao"
-                  ></div>
-                  <div class="col-sm-3">
-                    <mat-card>
-                      <img [src]="this.racas[racaIndex] === null ? '': this.racas[racaIndex].imagem" [alt]="this.racas[racaIndex] === null ? '': this.racas[racaIndex].nome" />
-                    </mat-card>
+        <div class="col-sm-12">
+          <mat-accordion>
+            <mat-expansion-panel
+              (opened)="panelOpenState.set(true)"
+              (closed)="panelOpenState.set(false)"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <b>
+                          Raça:
+                          {{
+                            this.racas[racaIndex] === null
+                              ? ""
+                              : this.racas[racaIndex].nome
+                          }}
+                        </b>
+                      </div>
+                      <div class="col-sm-6 d-flex justify-content-end">
+                        <b>
+                          {{
+                            this.racas[racaIndex] === null
+                              ? ""
+                              : this.racas[racaIndex].referencias +
+                                " | pag. " +
+                                this.racas[racaIndex].paginas
+                          }}
+                        </b>
+                      </div>
+                    </div>
                   </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div
+                  class="col-sm-9 text-justify"
+                  [innerHTML]="
+                    this.racas[racaIndex] === null
+                      ? ''
+                      : this.racas[racaIndex].descricao
+                  "
+                ></div>
+                <div class="col-sm-3">
+                  <mat-card>
+                    <img
+                      [src]="
+                        this.racas[racaIndex] === null
+                          ? ''
+                          : this.racas[racaIndex].imagem
+                      "
+                      [alt]="
+                        this.racas[racaIndex] === null
+                          ? ''
+                          : this.racas[racaIndex].nome
+                      "
+                    />
+                  </mat-card>
                 </div>
-              </mat-expansion-panel>
-              <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                <mat-expansion-panel-header>
-                  <mat-panel-title> <b>Origem: {{this.origens[origemIndex] === null ? '': this.origens[origemIndex].nome}} </b></mat-panel-title>
-                  <mat-panel-description>
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                <div class="row">
-                  <div
-                    class="col-sm-12 text-justify"
-                    [innerHTML]="this.origens[origemIndex] === null ? '': this.origens[origemIndex].descricao"
-                  ></div></div>
-              </mat-expansion-panel>
-              <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-                <mat-expansion-panel-header>
-                  <mat-panel-title> <b>Classe: {{this.classes[classeIndex]=== null ? '': this.classes[classeIndex].nome}} </b></mat-panel-title>
-                  <mat-panel-description>
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                <div class="row">
-                  <mat-tab-group>
-                    <mat-tab label="Classe">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-3">
-                            <mat-card *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].tabela != null">
-                              <img [src]="this.classes[classeIndex]=== null ? '': classes[classeIndex].tabela" [alt]="this.classes[classeIndex]=== null ? '': classes[classeIndex].nome" />
-                            </mat-card>
-                          </div>
-                          <div
-                            class="col-sm-6 text-justify"
-                            [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_classe"
-                          ></div>
-                          <div class="col-sm-3">
-                            <mat-card *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].imagem != null">
-                              <img [src]="this.classes[classeIndex]=== null ? '': classes[classeIndex].imagem" [alt]="this.classes[classeIndex]=== null ? '': classes[classeIndex].nome" />
-                            </mat-card>
-                          </div>
+              </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              (opened)="panelOpenState.set(true)"
+              (closed)="panelOpenState.set(false)"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <b>
+                          Origem:
+                          {{
+                            this.origens[origemIndex] === null
+                              ? ""
+                              : this.origens[origemIndex].nome
+                          }}
+                        </b>
+                      </div>
+                      <div class="col-sm-6 d-flex justify-content-end">
+                        <b>
+                          {{
+                            this.origens[origemIndex] === null
+                              ? ""
+                              : this.origens[origemIndex].referencias +
+                                " | pag. " +
+                                this.origens[origemIndex].paginas
+                          }}
+                        </b>
+                      </div>
+                    </div>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div
+                  class="col-sm-12 text-justify"
+                  [innerHTML]="
+                    this.origens[origemIndex] === null
+                      ? ''
+                      : this.origens[origemIndex].descricao
+                  "
+                ></div>
+              </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              (opened)="panelOpenState.set(true)"
+              (closed)="panelOpenState.set(false)"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <b>
+                          Classe:
+                          {{
+                            this.classes[classeIndex] === null
+                              ? ""
+                              : this.classes[classeIndex].nome
+                          }}
+                        </b>
+                      </div>
+                      <div class="col-sm-6 d-flex justify-content-end">
+                        <b>
+                          {{
+                            this.classes[classeIndex] === null
+                              ? ""
+                              : this.classes[classeIndex].referencias +
+                                " | pag. " +
+                                this.classes[classeIndex].paginas
+                          }}
+                        </b>
+                      </div>
+                    </div>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <mat-tab-group>
+                  <mat-tab label="Classe">
+                    <div class="content">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <mat-card
+                            *ngIf="
+                              this.classes[classeIndex] === null
+                                ? ''
+                                : classes[classeIndex].tabela != null
+                            "
+                          >
+                            <img
+                              [src]="
+                                this.classes[classeIndex] === null
+                                  ? ''
+                                  : classes[classeIndex].tabela
+                              "
+                              [alt]="
+                                this.classes[classeIndex] === null
+                                  ? ''
+                                  : classes[classeIndex].nome
+                              "
+                            />
+                          </mat-card>
+                        </div>
+                        <div
+                          class="col-sm-6 text-justify"
+                          [innerHTML]="
+                            this.classes[classeIndex] === null
+                              ? ''
+                              : classes[classeIndex].descricao_classe
+                          "
+                        ></div>
+                        <div class="col-sm-3">
+                          <mat-card
+                            *ngIf="
+                              this.classes[classeIndex] === null
+                                ? ''
+                                : classes[classeIndex].imagem != null
+                            "
+                          >
+                            <img
+                              [src]="
+                                this.classes[classeIndex] === null
+                                  ? ''
+                                  : classes[classeIndex].imagem
+                              "
+                              [alt]="
+                                this.classes[classeIndex] === null
+                                  ? ''
+                                  : classes[classeIndex].nome
+                              "
+                            />
+                          </mat-card>
                         </div>
                       </div>
-                    </mat-tab>
-                    <mat-tab label="Habilidades">
-                      <div class="row">
-                        <h4> Habilidades de Classe </h4>
-                        <p>Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma. Segue as habilidades de {{this.classes[classeIndex]=== null ? '': classes[classeIndex].nome}}.</p>
-                        <p>(PS: Habilidades Mágicas são marcadas com o símbolo: <i><b>e</b></i>.)</p>
-                        <div
-                          class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_habilidades"
-                        ></div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Poderes">
-                      <div class="row">
-                        <h4>Poderes de Classe</h4>
-                        <p>(PS: Poderes Mágicos são marcados com o símbolo: <i><b>e</b></i>.)</p>
-                        <div
-                          class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_poderes"
-                        ></div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].ha_informacoes_adicionais" label="Informações Adicionais">
-                      <div class="row">
-                        <div
-                          class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_informacoes"
-                        ></div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].ha_complicacoes" label="Complicações">
-                      <div class="row">
-                        <h4>Complicações</h4>
-                        <p>Complicações são restrições e penalidades com as quais seu personagem precisa lidar. Quando você cria seu personagem, pode escolher uma complicação para ele (e apenas uma). Se fizer isso, recebe um poder geral extra. Você é livre para escolher o poder, mas deve preencher seus pré-requisitos.</p>
-                        <p>(PS:Certas complicações restringem as ações de um herói, seja por serem uma limitação de sua personalidade, seja por serem um código ou voto que ele decidiu seguir. Tais complicações vêm acompanhadas do símbolo <b>†</b>).</p>
-                        <div
-                          class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_complicacoes"
-                        ></div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab *ngIf="this.classes[classeIndex]=== null ? '': classes[classeIndex].ha_poderes_db" label="Poderes DB">
-                      <div class="row">
-                        <p><h4>Poderes de Classe da Dragão Brasil</h4>
-                        <p>Essa aba vai apresentar material de jogo em fase de teste, que está sendo trabalhado pela equipe de game design e pode (ou não) ser inserido em futuros suplementos da franquia. Todas as regras mostradas aqui são opcionais e podem apresentar mudanças caso publicadas oficialmente.</p>
-                        <div
-                          class="col-sm-12 text-justify"
-                          [innerHTML]="this.classes[classeIndex]=== null ? '': classes[classeIndex].descricao_poderes_db"
-                        ></div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-expansion-panel>
-            </mat-accordion>
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 mt-4">
-            <section>
-              <div class="button-row d-flex justify-content-end">
-                <button class="me-2" (click)="rezarPraNimb()" mat-flat-button>
-                  Reze para Nimb e Alegre-se!
-                </button>
-                <!-- <button mat-flat-button>Adicionar Raça</button> -->
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Habilidades">
+                    <div class="row">
+                      <h4>Habilidades de Classe</h4>
+                      <p>
+                        Habilidades de Classe são poderes dados passivamente
+                        pela classe, de acordo com o nível da mesma. Segue as
+                        habilidades de
+                        {{
+                          this.classes[classeIndex] === null
+                            ? ""
+                            : classes[classeIndex].nome
+                        }}.
+                      </p>
+                      <p>
+                        (PS: Habilidades Mágicas são marcadas com o símbolo:
+                        <i><b>e</b></i
+                        >.)
+                      </p>
+                      <div
+                        class="col-sm-12 text-justify"
+                        [innerHTML]="
+                          this.classes[classeIndex] === null
+                            ? ''
+                            : classes[classeIndex].descricao_habilidades
+                        "
+                      ></div>
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Poderes">
+                    <div class="row">
+                      <h4>Poderes de Classe</h4>
+                      <p>
+                        (PS: Poderes Mágicos são marcados com o símbolo:
+                        <i><b>e</b></i
+                        >.)
+                      </p>
+                      <div
+                        class="col-sm-12 text-justify"
+                        [innerHTML]="
+                          this.classes[classeIndex] === null
+                            ? ''
+                            : classes[classeIndex].descricao_poderes
+                        "
+                      ></div>
+                    </div>
+                  </mat-tab>
+                  <mat-tab
+                    *ngIf="
+                      this.classes[classeIndex] === null
+                        ? ''
+                        : classes[classeIndex].ha_informacoes_adicionais
+                    "
+                    label="Informações Adicionais"
+                  >
+                    <div class="row">
+                      <div
+                        class="col-sm-12 text-justify"
+                        [innerHTML]="
+                          this.classes[classeIndex] === null
+                            ? ''
+                            : classes[classeIndex].descricao_informacoes
+                        "
+                      ></div>
+                    </div>
+                  </mat-tab>
+                  <mat-tab
+                    *ngIf="
+                      this.classes[classeIndex] === null
+                        ? ''
+                        : classes[classeIndex].ha_complicacoes
+                    "
+                    label="Complicações"
+                  >
+                    <div class="row">
+                      <h4>Complicações</h4>
+                      <p>
+                        Complicações são restrições e penalidades com as quais
+                        seu personagem precisa lidar. Quando você cria seu
+                        personagem, pode escolher uma complicação para ele (e
+                        apenas uma). Se fizer isso, recebe um poder geral extra.
+                        Você é livre para escolher o poder, mas deve preencher
+                        seus pré-requisitos.
+                      </p>
+                      <p>
+                        (PS:Certas complicações restringem as ações de um herói,
+                        seja por serem uma limitação de sua personalidade, seja
+                        por serem um código ou voto que ele decidiu seguir. Tais
+                        complicações vêm acompanhadas do símbolo <b>†</b>).
+                      </p>
+                      <div
+                        class="col-sm-12 text-justify"
+                        [innerHTML]="
+                          this.classes[classeIndex] === null
+                            ? ''
+                            : classes[classeIndex].descricao_complicacoes
+                        "
+                      ></div>
+                    </div>
+                  </mat-tab>
+                  <mat-tab
+                    *ngIf="
+                      this.classes[classeIndex] === null
+                        ? ''
+                        : classes[classeIndex].ha_poderes_db
+                    "
+                    label="Poderes DB"
+                  >
+                    <div class="row">
+                      <p></p>
+                      <h4>Poderes de Classe da Dragão Brasil</h4>
+                      <p>
+                        Essa aba vai apresentar material de jogo em fase de
+                        teste, que está sendo trabalhado pela equipe de game
+                        design e pode (ou não) ser inserido em futuros
+                        suplementos da franquia. Todas as regras mostradas aqui
+                        são opcionais e podem apresentar mudanças caso
+                        publicadas oficialmente.
+                      </p>
+                      <div
+                        class="col-sm-12 text-justify"
+                        [innerHTML]="
+                          this.classes[classeIndex] === null
+                            ? ''
+                            : classes[classeIndex].descricao_poderes_db
+                        "
+                      ></div>
+                    </div>
+                  </mat-tab>
+                </mat-tab-group>
               </div>
-            </section>
-          </div>
+            </mat-expansion-panel>
+          </mat-accordion>
         </div>
       </div>
-    </mat-card>
+      <div class="row">
+        <div class="col-sm-12 mt-4">
+          <section>
+            <div class="button-row d-flex justify-content-end">
+              <button class="me-2" (click)="rezarPraNimb()" mat-flat-button>
+                Reze para Nimb e Alegre-se!
+              </button>
+              <!-- <button mat-flat-button>Adicionar Raça</button> -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </mat-card>
 </div>
