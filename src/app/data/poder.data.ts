@@ -752,15 +752,15 @@ export class PoderData {
         paginas: '131',
         tipo: TipoPoder.DESTINO,
       },
-      {
-        id: 60,
-        nome: 'Surto Heroico',
-        descricao:
-          'Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.',
-        referencias: Referencia.BASICO,
-        paginas: '131',
-        tipo: TipoPoder.DESTINO,
-      },
+      // {
+      //   id: 60,
+      //   nome: 'Surto Heroico',
+      //   descricao:
+      //     'Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.',
+      //   referencias: Referencia.BASICO,
+      //   paginas: '131',
+      //   tipo: TipoPoder.DESTINO,
+      // },
       {
         id: 61,
         nome: 'Torcida',
