@@ -20,8 +20,9 @@ export class PoderService extends AbstractService{
 
   listar(filtro:any): Observable<Poder[]> {
     return this.http.get<Poder[]>(this.url,{params:this.removeBlankAttributes(filtro)}).pipe(map(resultado => {
-      resultado.forEach((poder) => {
-        poder.id_deuses?.forEach((id_deus) => {
+      resultado.forEach(
+        (poder) => {
+          poder.id_deuses?.forEach((id_deus) => {
           this.deusService.getbyId(id_deus).subscribe({
             next: (deus) => {
               poder.deuses === null || poder.deuses === undefined ? poder.deuses = []: '';

@@ -15,6 +15,8 @@ import { PoderService } from '../../service/poder.service';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TipoPoder } from '../../enum/tipo.poder.enum';
 import { Deus } from '../../model/deus';
+import { MatRadioModule } from '@angular/material/radio';
+import { DeusService } from '../../service/deus.service';
 
 @Component({
   selector: 'app-poderes',
@@ -27,6 +29,7 @@ import { Deus } from '../../model/deus';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatRadioModule,
   ],
   templateUrl: './poderes.component.html',
   styleUrl: './poderes.component.scss',
@@ -43,16 +46,30 @@ export class PoderesComponent {
   numero_registros_magia = 0;
   numero_registros_destino = 0;
   numero_registros_tormenta = 0;
+  id_deus?: number;
+  deuses: Deus[] = [];
 
 
   constructor(
     private readonly service: PoderService,
+    private readonly serviceDeus: DeusService,
     private fb: FormBuilder
   ) {}
 
   ngOnInit() {
+
+    this.serviceDeus.listar(null).subscribe({
+      next: (response) => {
+        this.deuses = response;
+      },
+      error: (response) => {
+        console.log(response);
+      },
+    });;
+
     this.form = this.fb.group({
       nome: [],
+      id_deus: []
     });
 
     this.service.listar({tipo: TipoPoder.COMBATE}).subscribe({
@@ -165,7 +182,11 @@ export class PoderesComponent {
     
   }
 
-  consultarPoderesConcedido() {
+  selecaoDeuses(event: any): void {
+    this.consultarPoderesConcedido(event);
+  }
+
+  consultarPoderesConcedido(event: any) {
     console.log(this.form.value);
     let filtro = this.form.value;
     filtro.tipo = TipoPoder.CONCEDIDO;
@@ -181,6 +202,18 @@ export class PoderesComponent {
       error: (response) => {
         console.log(response);
       },
+      complete: () => {
+        let poderes : Poder[] = [];
+        this.poderes_concedido.forEach(
+          (element) => {
+              if(element.id_deuses?.includes(Number(event))) {
+                poderes.push(element);
+              }
+          }
+        );
+        this.poderes_concedido = poderes;
+        this.numero_registros_concedido = this.poderes_concedido.length;
+      }
     });
     
   }

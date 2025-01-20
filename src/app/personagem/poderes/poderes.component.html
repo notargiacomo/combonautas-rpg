@@ -178,6 +178,19 @@
         </mat-tab>
         <mat-tab label="Poderes Concedidos">
           <div class="row">
+            <div class="col-sm-12 mt-4">
+              <mat-radio-group 
+                title="Deuses"
+                name="id_deus"
+                (change)="selecaoDeuses($event.value)"
+                aria-labelledby="radio-deus"
+              >
+              @for (deus of deuses; track deus) {
+                <mat-radio-button class="example-radio-button" [value]="deus.id">{{deus.nome}}</mat-radio-button>
+              }
+              </mat-radio-group>
+              <div>Your favorite season is: {{id_deus}}</div>
+            </div>
             <div class="col-sm-6 mt-4">
               <mat-form-field class="form-field">
                 <mat-label>Poder Concedido</mat-label>
@@ -185,7 +198,7 @@
                   formControlName="nome"
                   matInput
                   type="text"
-                  (keyup)="consultarPoderesConcedido()"
+                  (keyup)="consultarPoderesConcedido(null)"
                 />
               </mat-form-field>
             </div>
