@@ -1088,16 +1088,6 @@ export class PoderData {
         tipo: TipoPoder.CONCEDIDO,
       },
       {
-        id: 92,
-        nome: 'Curandeira Perfeita',
-        descricao:
-          `Você sempre pode escolher 10 em testes de Cura. Além disso, não sofre penalidade por usar essa perícia sem uma maleta de medicamentos. Se possuir o item, recebe +2 no teste de Cura (ou +5, se ele for aprimorado).`,
-        id_deuses: [8],
-        referencias: Referencia.BASICO,
-        paginas: '133',
-        tipo: TipoPoder.CONCEDIDO,
-      },
-      {
         id: 93,
         nome: 'Dedo Verde',
         descricao:
@@ -1255,26 +1245,6 @@ export class PoderData {
         tipo: TipoPoder.CONCEDIDO,
       },
       {
-        id: 108,
-        nome: 'Fé Guerreira',
-        descricao:
-          `Você pode usar Sabedoria para Guerra (em vez de Inteligência). Além disso, em combate, pode gastar 2 PM para substituir um teste de perícia (exceto testes de ataque) por um teste de Guerra.`,
-        id_deuses: [3],
-        referencias: Referencia.BASICO,
-        paginas: '134',
-        tipo: TipoPoder.CONCEDIDO,
-      },
-      {
-        id: 109,
-        nome: 'Fé Guerreira',
-        descricao:
-          `Você pode usar Sabedoria para Guerra (em vez de Inteligência). Além disso, em combate, pode gastar 2 PM para substituir um teste de perícia (exceto testes de ataque) por um teste de Guerra.`,
-        id_deuses: [3],
-        referencias: Referencia.BASICO,
-        paginas: '134',
-        tipo: TipoPoder.CONCEDIDO,
-      },
-      {
         id: 110,
         nome: 'Forma de Macaco',
         descricao:
@@ -1352,7 +1322,7 @@ export class PoderData {
         nome: 'Liberdade Divina',
         descricao:
           `Você pode gastar 2 PM para receber imunidade a efeitos de movimento por uma rodada. `,
-        id_deuses: [9],
+        id_deuses: [19],
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         paginas: '134',
@@ -2611,7 +2581,7 @@ export class PoderData {
         nome: 'Redirecionar Destino',
         descricao:
           `Ao escolher este poder, role um d20 e anote o resultado. Uma vez por rodada, quando uma criatura em alcance curto faz um teste, você pode gastar 1 PM para trocar o valor do dado desse teste pelo valor anotado (o valor do dado passa a ser o novo valor anotado).`,
-        id_deuses:[17],
+        id_deuses:[18],
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
