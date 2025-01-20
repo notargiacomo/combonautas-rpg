@@ -181,7 +181,7 @@
             <div class="col-sm-12 mt-4">
               <mat-radio-group 
                 title="Deuses"
-                name="id_deus"
+                formControlName="id_deuses"
                 (change)="selecaoDeuses($event.value)"
                 aria-labelledby="radio-deus"
               >
@@ -200,6 +200,11 @@
                   (keyup)="consultarPoderesConcedido(null)"
                 />
               </mat-form-field>
+            </div>
+            <div class="col-sm-6 mt-4 button-row d-flex justify-content-end">
+              <button class="me-2" (click)="limparFiltros()" mat-flat-button>
+                Limpar Filtros
+              </button>
             </div>
           </div>
           <div class="col-sm-12 mt-4">

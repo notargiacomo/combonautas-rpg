@@ -17,6 +17,7 @@ import { TipoPoder } from '../../enum/tipo.poder.enum';
 import { Deus } from '../../model/deus';
 import { MatRadioModule } from '@angular/material/radio';
 import { DeusService } from '../../service/deus.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-poderes',
@@ -30,6 +31,7 @@ import { DeusService } from '../../service/deus.service';
     ReactiveFormsModule,
     MatTabsModule,
     MatRadioModule,
+    MatButtonModule
   ],
   templateUrl: './poderes.component.html',
   styleUrl: './poderes.component.scss',
@@ -46,7 +48,6 @@ export class PoderesComponent {
   numero_registros_magia = 0;
   numero_registros_destino = 0;
   numero_registros_tormenta = 0;
-  id_deus?: number;
   deuses: Deus[] = [];
 
 
@@ -69,7 +70,7 @@ export class PoderesComponent {
 
     this.form = this.fb.group({
       nome: [],
-      id_deus: []
+      id_deuses: []
     });
 
     this.service.listar({tipo: TipoPoder.COMBATE}).subscribe({
@@ -203,16 +204,18 @@ export class PoderesComponent {
         console.log(response);
       },
       complete: () => {
-        let poderes : Poder[] = [];
-        this.poderes_concedido.forEach(
-          (element) => {
-              if(element.id_deuses?.includes(Number(event))) {
-                poderes.push(element);
-              }
-          }
-        );
-        this.poderes_concedido = poderes;
-        this.numero_registros_concedido = this.poderes_concedido.length;
+        if(event){
+          let poderes : Poder[] = [];
+          this.poderes_concedido.forEach(
+            (element) => {
+                if(element.id_deuses?.includes(Number(event))) {
+                  poderes.push(element);
+                }
+            }
+          );
+          this.poderes_concedido = poderes;
+          this.numero_registros_concedido = this.poderes_concedido.length;
+        }
       }
     });
     
@@ -236,6 +239,11 @@ export class PoderesComponent {
       },
     });
     
+  }
+
+  limparFiltros() {
+    this.form.reset();
+    this.consultarPoderesConcedido(null);
   }
 
   nomeDeuses(deuses?: Deus[]): string {

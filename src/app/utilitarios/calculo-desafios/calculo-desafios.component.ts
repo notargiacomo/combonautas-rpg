@@ -32,7 +32,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-calculo-desafios',
   standalone: true,
-  imports: [FormsModule, MatFormFieldModule, ReactiveFormsModule, MatDividerModule, MatCardModule, MatInputModule, MatCheckboxModule, MatRadioModule, MatSelectModule, MatListModule,MatIconModule],
+  imports: [FormsModule, MatFormFieldModule, ReactiveFormsModule, MatDividerModule, MatCardModule, MatInputModule, MatCheckboxModule, MatRadioModule, MatSelectModule, MatListModule,MatIconModule, MatButtonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './calculo-desafios.component.html',
   styleUrl: './calculo-desafios.component.scss',
