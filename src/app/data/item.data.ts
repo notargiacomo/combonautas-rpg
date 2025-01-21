@@ -73,6 +73,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'ALONGADA'],
+        imagem: 'assets/img/item_arma_alabarda.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',        
         tipo: TipoItem.ARMA
@@ -102,6 +103,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
+        imagem: 'assets/img/item_arma_alfange.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',        
         tipo: TipoItem.ARMA
@@ -131,6 +133,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO FLECHA', 'MONTADO'],
+        imagem: 'assets/img/item_arma_arco_curto.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',        
         tipo: TipoItem.ARMA
@@ -160,6 +163,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO FLECHA', 'APLICA FORÇA NO DANO'],
+        imagem: 'assets/img/item_arma_arco_longo.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',        
         tipo: TipoItem.ARMA
@@ -189,6 +193,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE A DISTÂNCIA', 'UMA MÃO', 'ATAQUE CORPO A CORPO -5'],
+        imagem: 'assets/img/item_arma_azagaia.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',        
         tipo: TipoItem.ARMA
@@ -218,6 +223,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE A DISTÂNCIA', 'UMA MÃO', 'MUNIÇÃO VIROTE', 'RECARREGA AÇÃO MOVIMENTO'],
+        imagem: 'assets/img/item_arma_besta_leve.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',        
         tipo: TipoItem.ARMA
@@ -247,6 +253,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO VIROTE', 'RECARREGA AÇÃO PADRÃO'],
+        imagem: 'assets/img/item_arma_besta_pesada.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',        
         tipo: TipoItem.ARMA
@@ -276,6 +283,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'DUPLA 1d6'],
+        imagem: 'assets/img/item_arma_bordao.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',        
         tipo: TipoItem.ARMA
@@ -305,6 +313,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL', 'VERSÁTIL DERRUBAR DESARMAR', 'ALCANCE 4,5m'],
+        imagem: 'assets/img/item_arma_chicote.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 147',        
         tipo: TipoItem.ARMA
@@ -334,6 +343,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL'],
+        imagem: 'assets/img/item_arma_cimitarra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',        
         tipo: TipoItem.ARMA
@@ -363,6 +373,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
+        imagem: 'assets/img/item_arma_clava.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',        
         tipo: TipoItem.ARMA
@@ -392,6 +403,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL', 'ARMA MARCIAL DUAS MÃOS 1d12'],
+        imagem: 'assets/img/item_arma_espada_bastarda.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',        
         tipo: TipoItem.ARMA
@@ -421,6 +433,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'LEVE', 'UMA MÃO'],
+        imagem:'assets/img/item_arma_espada_curta.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',        
         tipo: TipoItem.ARMA
@@ -450,6 +463,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
+        imagem: 'assets/img/item_arma_espada_longa.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',        
         tipo: TipoItem.ARMA
@@ -478,7 +492,7 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL'],
+        tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL'], imagem: 'assets/img/item_arma_florete.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',        
         tipo: TipoItem.ARMA
@@ -508,6 +522,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'LEVE'],
+        imagem: 'assets/img/item_arma_foice.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',        
         tipo: TipoItem.ARMA
@@ -537,6 +552,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ATAQUE A DISTÂNCIA', 'MUNIÇÃO PEDRA POLIDA', 'MUNIÇÃO PEDRA COMUM 1d3', 'APLICA FORÇA NO DANO'],
+        imagem: 'assets/img/item_arma_funda.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',        
         tipo: TipoItem.ARMA
@@ -566,6 +582,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
+        imagem: 'assets/img/item_arma_gadanho.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',        
         tipo: TipoItem.ARMA
@@ -595,6 +612,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ADAPTÁVEL 1d10', 'ÁGIL'],
+        imagem: 'assets/img/item_arma_katana.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',        
         tipo: TipoItem.ARMA
@@ -624,6 +642,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ARREMESSO'],
+        imagem: 'assets/img/item_arma_lanca.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',        
         tipo: TipoItem.ARMA
@@ -652,7 +671,8 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'ARREMESSO', 'MONTADO UMA MÃO', 'INVESTIDA MONTADA +2d8 DANO', 'ALONGADA'],
+        tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'ARREMESSO', 'MONTADO UMA MÃO', 'ALONGADA', 'INVESTIDA MONTADA +2d8 DANO'],
+        imagem: 'assets/img/item_arma_lanca_montada.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',        
         tipo: TipoItem.ARMA
@@ -682,6 +702,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
+        imagem: 'assets/img/item_arma_maca.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',        
         tipo: TipoItem.ARMA
@@ -711,6 +732,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'LEVE', 'ARREMESSO'],
+        imagem: 'assets/img/item_arma_machadinha.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',        
         tipo: TipoItem.ARMA
@@ -740,6 +762,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ARMA MARCIAL DUAS MÃOS 1d10'],
+        imagem: 'assets/img/item_arma_machado_anão.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',        
         tipo: TipoItem.ARMA
@@ -769,6 +792,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', ],
+        imagem: 'assets/img/item_arma_machado_de_batalha.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',        
         tipo: TipoItem.ARMA
@@ -798,6 +822,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
+        imagem: 'assets/img/item_arma_machado_guerra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',        
         tipo: TipoItem.ARMA
@@ -827,6 +852,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'DESBALANCEADA'],
+        imagem: 'assets/img/item_arma_machado_taurico.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',        
         tipo: TipoItem.ARMA
@@ -856,6 +882,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'VERSÁTIL DESARMAR'],
+        imagem: 'assets/img/item_arma_mangual.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',        
         tipo: TipoItem.ARMA
@@ -885,6 +912,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
+        imagem: 'assets/img/item_arma_marreta.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',        
         tipo: TipoItem.ARMA
@@ -914,6 +942,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
+        imagem: 'assets/img/item_arma_martelo_de_guerra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',        
         tipo: TipoItem.ARMA
@@ -943,6 +972,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
+        imagem: 'assets/img/item_arma_montante.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',        
         tipo: TipoItem.ARMA
@@ -972,6 +1002,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
+        imagem: 'assets/img/item_arma_mosquete.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',        
         tipo: TipoItem.ARMA
@@ -1001,6 +1032,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
+        imagem: 'assets/img/item_arma_picareta.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',        
         tipo: TipoItem.ARMA
@@ -1030,6 +1062,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'ALONGADA'],
+        imagem: 'assets/img/item_arma_pique.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',        
         tipo: TipoItem.ARMA
@@ -1059,6 +1092,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE A DISTÂNCIA', 'UMA MÃO', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
+        imagem: 'assets/img/item_arma_pistola.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',        
         tipo: TipoItem.ARMA
@@ -1088,6 +1122,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE A DISTÂNCIA', 'ATAQUE ENREDAR'],
+        imagem: 'assets/img/item_arma_rede.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',        
         tipo: TipoItem.ARMA
@@ -1117,6 +1152,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
+        imagem: 'assets/img/item_arma_tacape.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',        
         tipo: TipoItem.ARMA
@@ -1146,6 +1182,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'VERSÁTIL DERRUBAR'],
+        imagem: 'assets/img/item_arma_tridente.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',        
         tipo: TipoItem.ARMA
@@ -1175,6 +1212,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'DANO METABOLICO -2 TESTE/DANO 1 RODADA'],
+        imagem: 'assets/img/item_arma_acoite_finntroll.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',        
         tipo: TipoItem.ARMA
@@ -1204,6 +1242,7 @@ export class ItemData {
         alcance: Alcance.MEDIO,
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
+        imagem: 'assets/img/item_arma_arcabuz.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',        
         tipo: TipoItem.ARMA
@@ -1233,6 +1272,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ATAQUE A DISTÂNCIA', 'UMA MÃO', 'ARREMESSO', 'ATAQUE CORPO A CORPO -5'],
+        imagem: 'assets/img/item_arma_arpao.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',        
         tipo: TipoItem.ARMA
@@ -1262,6 +1302,7 @@ export class ItemData {
         alcance: Alcance.AREA_CONE_6M,
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO 2 BALA','RECARREGA AÇÃO COMPLETA', 'ALCANCE AREA CONE 6M'],
+        imagem: 'assets/img/item_arma_bacamarte.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',        
         tipo: TipoItem.ARMA
@@ -1291,6 +1332,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
+        imagem: 'assets/img/item_arma_espada_vespa.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',        
         tipo: TipoItem.ARMA
@@ -1320,6 +1362,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
+        imagem: 'assets/img/item_arma_gladio.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',        
         tipo: TipoItem.ARMA
@@ -1348,7 +1391,8 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['HÍBRIDA','ATAQUE CORPO A CORPO ALONGADA DANO 1d10 CRITICO x3', 'ATAQUE A DISTÂNCIA ARMA DE FOGO DANO 2d8 CRÍTICO 19/x3 ALCANCE MÉDIO RECARREGA AÇÃO PADRÃO', 'DUAS MÃOS', 'MUNIÇÃO BALA'],
+        tracos:['ARMA EXÓTICA', 'DUAS MÃOS', 'MUNIÇÃO BALA','ATAQUE CORPO A CORPO ALONGADA DANO 1d10 CRITICO x3', 'ATAQUE A DISTÂNCIA DANO 2d8 CRÍTICO 19/x3 ALCANCE MÉDIO', 'ARMA DE FOGO', 'RECARREGA AÇÃO PADRÃO', 'HÍBRIDA'],
+        imagem: 'assets/img/item_arma_lanca_fogo.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',        
         tipo: TipoItem.ARMA
@@ -1378,6 +1422,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA','ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL','VERSÁTIL AGARRAR DESARMAR'],
+        imagem: 'assets/img/item_arma_mordida_diabo.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',        
         tipo: TipoItem.ARMA
@@ -1407,6 +1452,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA LEVE','ATAQUE CORPO A CORPO', 'UMA MÃO', 'ATLETISMO +2 ESCALAR','DUAS ARMAS ATLETISMO ESCALAR 1,5M'],
+        imagem: 'assets/img/item_arma_nekote.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',        
         tipo: TipoItem.ARMA
@@ -1435,7 +1481,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['HÍBRIDA','ATAQUE CORPO A CORPO ÁGIL DANO 1d6 CRITICO 18', 'UMA MÃO','ATAQUE A DISTÂNCIA ARMA DE FOGO DANO 2d6 CRÍTICO 19/x3 ALCANCE CURTO RECARREGA AÇÃO PADRÃO', 'ATAQUE CORPO A CORPO DANO EXTRA 2d6', 'MUNIÇÃO BALA'],
+        tracos:
+        ['ARMA EXÓTICA', 'UMA MÃO', 'MUNIÇÃO BALA','ATAQUE CORPO A CORPO ÁGIL DANO 1d6 CRITICO 18', 'ATAQUE A DISTÂNCIA DANO 2d6 CRÍTICO 19/x3 ALCANCE CURTO', 'ARMA DE FOGO', 'RECARREGA AÇÃO PADRÃO', 'HÍBRIDA'],
+        imagem: 'assets/img/item_arma_pistola_punhal.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',        
         tipo: TipoItem.ARMA
@@ -1465,6 +1513,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA LEVE','ATAQUE CORPO A CORPO', 'UMA MÃO', 'NÃO-LETAL'],
+        imagem: 'assets/img/item_arma_porrete.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',        
         tipo: TipoItem.ARMA
@@ -1494,6 +1543,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA','ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL', 'DANO CRÍTICO d10'],
+        imagem: 'assets/img/item_arma_presa_serpente.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',        
         tipo: TipoItem.ARMA
@@ -1523,6 +1573,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ARMA LEVE','ATAQUE A DISTÂNCIA', 'UMA MÃO', 'ATAQUE ADICIONAL CUSTO 1 PM', 'ATAQUE ADICIONAL ARREMESSO MÚLTIPLO CUSTO 0 PM'],
+        imagem: 'assets/img/item_arma_shuriken.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',        
         tipo: TipoItem.ARMA
@@ -1552,6 +1603,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA MARCIAL','ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'VERSÁTIL DERRUBAR EMPURRAR'],
+        imagem: 'assets/img/item_arma_tetsubo.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',        
         tipo: TipoItem.ARMA
@@ -1581,6 +1633,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA DE FOGO','ATAQUE A DISTÂNCIA', 'UMA MÃO', 'LEVE', 'ERRA RESULTADO IMPAR DANIFICA'],
+        imagem: 'assets/img/item_arma_traque.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',        
         tipo: TipoItem.ARMA
@@ -1610,6 +1663,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         tracos:['ARMA SIMPLES','ATAQUE A DISTÂNCIA', 'UMA MÃO', 'MUNIÇÃO DARDOS', 'RESISTIR A VENENOS CD +2'],
+        imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',        
         tipo: TipoItem.ARMA

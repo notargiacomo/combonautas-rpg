@@ -42,7 +42,11 @@ export class ItensComponent {
   constructor(private readonly service: ItemService, private fb: FormBuilder) {}
 
   ngOnInit() {
-    this.service.listar(null).subscribe({
+    this.form = this.fb.group({
+      nome: [],
+    });
+
+    this.service.listar({ tipo: TipoItem.ARMA }).subscribe({
       next: (response) => {
         this.armas = response;
         this.numero_registros_armas = response.length;
@@ -54,7 +58,13 @@ export class ItensComponent {
   }
 
   consultarArmas() {
-    this.service.listar({tipo: TipoItem.ARMA}).subscribe({
+    console.log(this.form.value);
+    let filtro = this.form.value;
+    if (filtro.nome) {
+      // regex - in-memory-web-api
+      filtro.nome = '^' + filtro.nome;
+    }
+    this.service.listar(filtro).subscribe({
       next: (response) => {
         this.armas = response;
       },

@@ -188,10 +188,22 @@ b {
 .mat-mdc-card-content {
   background-color: rgb(132, 26, 18) !important;
   color: rgb(247, 247, 247);
-  max-height: 400px !important; /* Defina a altura máxima do card */
+  max-height: 600px !important; /* Defina a altura máxima do card */
   overflow-y: auto !important; /* Habilita o scroll vertical */
   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
 }
+
+img {
+  max-width: 200px; /* Largura máxima da imagem */
+  max-height: 200px; /* Altura máxima da imagem */
+  object-fit: contain; /* Mantém as proporções */
+  border: 5px solid rgb(228, 176, 100); /* Moldura */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  padding: 10px; /* Espaço entre a imagem e a borda */
+  background-color: white; /* Fundo da moldura */
+}
+
 
 .mat-mdc-card-content table {
   border-collapse: collapse;
