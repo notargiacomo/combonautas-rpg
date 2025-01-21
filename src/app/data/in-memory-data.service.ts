@@ -14,6 +14,8 @@ import { Complicacao } from '../model/complicacao';
 import { ComplicacaoData } from './complicacao.data';
 import { Poder } from '../model/poder';
 import { PoderData } from './poder.data';
+import { Item } from '../model/item';
+import { ItemData } from './item.data';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +27,8 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly classeData: ClasseData,
     private readonly deusData: DeusData,
     private readonly complicacaoData: ComplicacaoData,
-    private readonly poderData: PoderData
+    private readonly poderData: PoderData,
+    private readonly itemData: ItemData
   ) {}
 
   createDb() {
@@ -35,7 +38,8 @@ export class InMemoryDataService implements InMemoryDbService {
     const deus: Deus[] = this.deusData.getDeuses();
     const complicacao: Complicacao[] = this.complicacaoData.getComplicacoes();
     const poder: Poder[] = this.poderData.getPoderes();
-    return { raca: raca, condicoes:condicoes, acoes:acoes, origem:origem, classe:classe, deus:deus, complicacao:complicacao, poder:poder};
+    const item: Item[] = this.itemData.getItens();
+    return { raca: raca, condicoes:condicoes, acoes:acoes, origem:origem, classe:classe, deus:deus, complicacao:complicacao, poder:poder, item:item};
   }
 
 }

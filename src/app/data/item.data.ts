@@ -4,6 +4,7 @@ import { TipoDano } from '../enum/tipo.dano.enum';
 import { Alcance } from '../enum/alcance.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { Tamanho } from '../enum/tamanho.enum';
+import { TipoItem } from '../enum/tipo.item.enum';
 
 @Injectable({
   providedIn: 'root',
@@ -41,9 +42,11 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'LEVE', 'DISCRETA', 'ARREMESSO', 'ATACA COM DESTREZA'],
+        tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'LEVE', 'DISCRETA', 'ARREMESSO', 'ATAQUE COM DESTREZA'],
+        imagem: 'assets/img/item_arma_adaga.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 146'
+        paginas: '144 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 2,
@@ -71,7 +74,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'ALONGADA'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 146'
+        paginas: '145 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 3,
@@ -99,7 +103,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 146'
+        paginas: '145 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 4,
@@ -127,7 +132,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO FLECHA', 'MONTADO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 146'
+        paginas: '144 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 5,
@@ -155,7 +161,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO FLECHA', 'APLICA FORÇA NO DANO'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 146'
+        paginas: '145 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 6,
@@ -183,7 +190,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE A DISTÂNCIA', 'UMA MÃO', 'ATAQUE CORPO A CORPO -5'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 146'
+        paginas: '144 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 7,
@@ -211,7 +219,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE A DISTÂNCIA', 'UMA MÃO', 'MUNIÇÃO VIROTE', 'RECARREGA AÇÃO MOVIMENTO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 146'
+        paginas: '144 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 8,
@@ -239,7 +248,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO VIROTE', 'RECARREGA AÇÃO PADRÃO'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 146'
+        paginas: '145 E 146',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 9,
@@ -267,7 +277,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'DUPLA 1d6'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 147'
+        paginas: '144 E 147',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 10,
@@ -295,7 +306,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL', 'VERSÁTIL DERRUBAR DESARMAR', 'ALCANCE 4,5m'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 147'
+        paginas: '145 E 147',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 11,
@@ -323,7 +335,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 147'
+        paginas: '144 E 147',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 12,
@@ -351,7 +364,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 147'
+        paginas: '144 E 147',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 14,
@@ -379,7 +393,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL', 'ARMA MARCIAL DUAS MÃOS 1d12'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 148'
+        paginas: '145 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 15,
@@ -407,7 +422,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'LEVE', 'UMA MÃO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 148'
+        paginas: '144 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 16,
@@ -435,7 +451,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 148'
+        paginas: '144 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 17,
@@ -463,7 +480,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 148'
+        paginas: '144 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 18,
@@ -491,7 +509,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'LEVE'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 148'
+        paginas: '144 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 19,
@@ -519,7 +538,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ATAQUE A DISTÂNCIA', 'MUNIÇÃO PEDRA POLIDA', 'MUNIÇÃO PEDRA COMUM 1d3', 'APLICA FORÇA NO DANO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 148'
+        paginas: '144 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 20,
@@ -547,7 +567,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 148'
+        paginas: '145 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 21,
@@ -575,7 +596,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ADAPTÁVEL 1d10', 'ÁGIL'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 148'
+        paginas: '145 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 22,
@@ -603,7 +625,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ARREMESSO'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 148'
+        paginas: '145 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 23,
@@ -631,7 +654,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'ARREMESSO', 'MONTADO UMA MÃO', 'INVESTIDA MONTADA +2d8 DANO', 'ALONGADA'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 148'
+        paginas: '145 E 148',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 24,
@@ -659,7 +683,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 149'
+        paginas: '144 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 25,
@@ -687,7 +712,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'LEVE', 'ARREMESSO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 149'
+        paginas: '144 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 26,
@@ -715,7 +741,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ARMA MARCIAL DUAS MÃOS 1d10'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 149'
+        paginas: '145 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 27,
@@ -743,7 +770,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', ],
         referencias: Referencia.BASICO,
-        paginas: '144 E 149'
+        paginas: '144 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 28,
@@ -771,7 +799,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 149'
+        paginas: '144 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 29,
@@ -799,7 +828,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'DESBALANCEADA'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 149'
+        paginas: '145 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 30,
@@ -827,7 +857,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'VERSÁTIL DESARMAR'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 149'
+        paginas: '144 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 31,
@@ -855,7 +886,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 149'
+        paginas: '145 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 32,
@@ -883,7 +915,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 149'
+        paginas: '144 E 149',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 33,
@@ -911,7 +944,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 150'
+        paginas: '145 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 34,
@@ -939,7 +973,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 150'
+        paginas: '145 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 35,
@@ -967,7 +1002,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 150'
+        paginas: '144 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 36,
@@ -995,7 +1031,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'ALONGADA'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 150'
+        paginas: '144 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 37,
@@ -1023,7 +1060,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE A DISTÂNCIA', 'UMA MÃO', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 150'
+        paginas: '145 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 38,
@@ -1051,7 +1089,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE A DISTÂNCIA', 'ATAQUE ENREDAR'],
         referencias: Referencia.BASICO,
-        paginas: '145 E 150'
+        paginas: '145 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 39,
@@ -1079,7 +1118,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA SIMPLES', 'ATAQUE CORPO A CORPO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 150'
+        paginas: '144 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 40,
@@ -1107,7 +1147,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'VERSÁTIL DERRUBAR'],
         referencias: Referencia.BASICO,
-        paginas: '144 E 150'
+        paginas: '144 E 150',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 41,
@@ -1135,7 +1176,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'DANO METABOLICO -2 TESTE/DANO 1 RODADA'],
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394'
+        paginas: '392 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 42,
@@ -1163,7 +1205,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394'
+        paginas: '392 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 43,
@@ -1191,7 +1234,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ATAQUE A DISTÂNCIA', 'UMA MÃO', 'ARREMESSO', 'ATAQUE CORPO A CORPO -5'],
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394'
+        paginas: '392 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 44,
@@ -1219,7 +1263,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA DE FOGO', 'ATAQUE A DISTÂNCIA', 'DUAS MÃOS', 'MUNIÇÃO 2 BALA','RECARREGA AÇÃO COMPLETA', 'ALCANCE AREA CONE 6M'],
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394'
+        paginas: '392 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 45,
@@ -1247,7 +1292,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394'
+        paginas: '392 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 46,
@@ -1275,7 +1321,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL', 'ATAQUE CORPO A CORPO', 'UMA MÃO'],
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394'
+        paginas: '392 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 47,
@@ -1303,7 +1350,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['HÍBRIDA','ATAQUE CORPO A CORPO ALONGADA DANO 1d10 CRITICO x3', 'ATAQUE A DISTÂNCIA ARMA DE FOGO DANO 2d8 CRÍTICO 19/x3 ALCANCE MÉDIO RECARREGA AÇÃO PADRÃO', 'DUAS MÃOS', 'MUNIÇÃO BALA'],
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394'
+        paginas: '392 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 48,
@@ -1331,7 +1379,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA','ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL','VERSÁTIL AGARRAR DESARMAR'],
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394'
+        paginas: '393 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 49,
@@ -1359,7 +1408,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA LEVE','ATAQUE CORPO A CORPO', 'UMA MÃO', 'ATLETISMO +2 ESCALAR','DUAS ARMAS ATLETISMO ESCALAR 1,5M'],
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394'
+        paginas: '393 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 50,
@@ -1387,7 +1437,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['HÍBRIDA','ATAQUE CORPO A CORPO ÁGIL DANO 1d6 CRITICO 18', 'UMA MÃO','ATAQUE A DISTÂNCIA ARMA DE FOGO DANO 2d6 CRÍTICO 19/x3 ALCANCE CURTO RECARREGA AÇÃO PADRÃO', 'ATAQUE CORPO A CORPO DANO EXTRA 2d6', 'MUNIÇÃO BALA'],
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394'
+        paginas: '393 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 51,
@@ -1415,7 +1466,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA LEVE','ATAQUE CORPO A CORPO', 'UMA MÃO', 'NÃO-LETAL'],
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394'
+        paginas: '393 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 52,
@@ -1443,7 +1495,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA EXÓTICA','ATAQUE CORPO A CORPO', 'UMA MÃO', 'ÁGIL', 'DANO CRÍTICO d10'],
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394'
+        paginas: '393 E 394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 53,
@@ -1471,7 +1524,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA LEVE','ATAQUE A DISTÂNCIA', 'UMA MÃO', 'ATAQUE ADICIONAL CUSTO 1 PM', 'ATAQUE ADICIONAL ARREMESSO MÚLTIPLO CUSTO 0 PM'],
         referencias: Referencia.AMEACAS,
-        paginas: '394'
+        paginas: '394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 54,
@@ -1499,7 +1553,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA MARCIAL','ATAQUE CORPO A CORPO', 'DUAS MÃOS', 'VERSÁTIL DERRUBAR EMPURRAR'],
         referencias: Referencia.AMEACAS,
-        paginas: '394'
+        paginas: '394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 55,
@@ -1527,7 +1582,8 @@ export class ItemData {
         penalidade: 0,
         tracos:['ARMA DE FOGO','ATAQUE A DISTÂNCIA', 'UMA MÃO', 'LEVE', 'ERRA RESULTADO IMPAR DANIFICA'],
         referencias: Referencia.AMEACAS,
-        paginas: '394'
+        paginas: '394',        
+        tipo: TipoItem.ARMA
       },
       {
         id: 56,
@@ -1553,9 +1609,10 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['ARMA SIMPLES','ATAQUE A DISTÂNCIA', 'UMA MÃO', 'MUNIÇÃO DARDOS', 'CD +2 RESISTIR A VENENOS'],
+        tracos:['ARMA SIMPLES','ATAQUE A DISTÂNCIA', 'UMA MÃO', 'MUNIÇÃO DARDOS', 'RESISTIR A VENENOS CD +2'],
         referencias: Referencia.AMEACAS,
-        paginas: '394'
+        paginas: '394',        
+        tipo: TipoItem.ARMA
       },
     ];
   }

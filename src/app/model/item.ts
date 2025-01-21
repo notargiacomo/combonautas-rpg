@@ -1,5 +1,6 @@
 export interface Item {
     id:number;
+    tipo:string;
     nome?:string;
     descricao?:string;
     preco?:number;
@@ -25,6 +26,7 @@ export interface Item {
     alcance?:number;
     penalidade?:number;
     tracos?:string[];
+    imagem?:string;
     referencias?:string;
     paginas?:string;
 }

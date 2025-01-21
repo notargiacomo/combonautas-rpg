@@ -152,6 +152,20 @@ b {
   background-color: rgb(132, 26, 18);
 }
 
+.mat-grid-tile-content{
+  margin: 0px !important;
+}
+
+.mat-mdc-card-content .mdc-tab__text-label  {
+  color: black !important;
+}
+
+.mat-mdc-card-content .mat-mdc-tab-header {
+  border-radius: 10px !important; /* Arredonda os cantos */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  background-color: rgb(228, 176, 100);
+}
+
 .mat-mdc-card {
   background-color: rgb(248, 233, 220)!important;
 }
@@ -226,10 +240,24 @@ img {
 
 .mat-mdc-card-content hr {
   border: none !important; /* Remove estilos padrão */
-  border-top: 5px solid rgb(247, 247, 247) !important; /* Define a cor e a altura */
+  border-top: 2px solid rgb(247, 247, 247) !important; /* Define a cor e a altura */
   border-radius: 10px !important; /* Arredonda os cantos */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
   opacity: 1 !important;
+}
+
+button[mat-flat-button] {
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  font-size: 0.75rem; /* Reduz o tamanho da fonte */
+  padding: 0.4rem 0.8rem; /* Ajusta o espaçamento interno */
+  background-color: #e0e0e0; /* Define uma cor de fundo diferente */
+  color: #333; /* Define a cor do texto */
+  border-radius: 5px; /* Suaviza os cantos */
+  transition: background-color 0.3s ease; /* Anima a mudança de cor */
+}
+
+button[mat-flat-button]:hover {
+  background-color: #c8c8c8; /* Cor de fundo ao passar o mouse */
 }
 
 .content-cartao-condicoes {
@@ -243,6 +271,14 @@ img {
 .mat-mdc-unelevated-button:not(:disabled) {
   color: var(--mdc-filled-button-label-text-color, var(--mat-sys-on-primary));
   background-color: rgb(132, 26, 18) !important;
+}
+
+.content-cartao-itens {
+  height: 500px !important;
+}
+
+.mat-mdc-tab-body-content {
+  overflow: hidden !important;
 }
 
 table {
