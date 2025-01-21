@@ -12,10 +12,21 @@
           <div class="row">
             <div class="col-sm-6 mt-4">
               <mat-form-field class="form-field">
-                <mat-label>Armas</mat-label>
+                <mat-label>Arma</mat-label>
                 <input
                   formControlName="nome"
                   matInput
+                  type="text"
+                  (keyup)="consultarArmas()"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Traço</mat-label>
+                <input
+                  matInput
+                  formControlName="tracos"
                   type="text"
                   (keyup)="consultarArmas()"
                 />
