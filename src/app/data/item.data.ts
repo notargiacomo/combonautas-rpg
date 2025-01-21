@@ -762,7 +762,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         tracos:['ARMA EXÓTICA', 'ATAQUE CORPO A CORPO', 'UMA MÃO', 'ARMA MARCIAL DUAS MÃOS 1d10'],
-        imagem: 'assets/img/item_arma_machado_anão.png',
+        imagem: 'assets/img/item_arma_machado_anao.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',        
         tipo: TipoItem.ARMA
