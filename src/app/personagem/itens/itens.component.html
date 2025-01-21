@@ -27,7 +27,7 @@
               <b>Número de Registros: {{ numero_registros_armas }}</b>
             </div>
           </div>
-          <mat-grid-list cols="2" [rowHeight]="550" gutterSize="15">
+          <mat-grid-list cols="2" [rowHeight]="500" gutterSize="15">
             <mat-grid-tile *ngFor="let arma of armas">
               <mat-card class="card-padrao">
                 <mat-card-title
@@ -43,6 +43,17 @@
                       <mat-tab label="Descrição">
                         <div class="content">
                           <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{arma.referencias + ' pag. ' + arma.paginas}}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
                             <div class="col-sm-12 mt-2 button-row">
                                 <section class="d-flex flex-wrap gap-2">
                             @for (traco of arma.tracos; track traco) {
@@ -57,6 +68,7 @@
                               [innerHTML]="arma.tracos?.join(' || ')"
                             ></div> -->
                           </div>
+
                           <div class="row">
                             <div class="col-sm-12">
                               <hr class="" />
