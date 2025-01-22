@@ -240,6 +240,205 @@
             </mat-grid-tile>
           </mat-grid-list>
         </mat-tab>
+        <mat-tab label="Armaduras">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Armadura</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarArmaduras()"
+                />
+              </mat-form-field>
+            </div>
+            <!-- <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Traço</mat-label>
+                <input
+                  matInput
+                  formControlName="tracos"
+                  type="text"
+                  (keyup)="consultarArmas()"
+                />
+              </mat-form-field>
+            </div> -->
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros_armadura }}</b>
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile *ngFor="let armadura of armaduras">
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ armadura.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{armadura.referencias + ' pag. ' + armadura.paginas}}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                                <section class="d-flex flex-wrap gap-2">
+                            @for (traco of armadura.tracos; track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                    {{traco}}
+                                  </button>
+                              }
+                                </section>
+                            </div>
+                            <!-- <div
+                              class="col-sm-12 mt-2"
+                              [innerHTML]="arma.tracos?.join(' || ')"
+                            ></div> -->
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-8"
+                              [innerHTML]="armadura.descricao"
+                            ></div>
+                            <div class="col-sm-4">
+                              <mat-card>
+                                <img [src]="armadura.imagem" />
+                              </mat-card>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Defesa</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ '+'+armadura.defesa }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Penalidade</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ '-'+armadura.penalidade }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ armadura.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + armadura.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ armadura.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ armadura.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Perícia para Fabricação/Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ armadura.pericia_fabricacao_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">CD para Fabricação/Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ armadura.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + armadura.preco_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ armadura.tempo_fabricacao_em_horas }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                                Custo para Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                                {{ "T$ " + armadura.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ armadura.tempo_conserto_em_horas }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
       </mat-tab-group>
     </form>
   </mat-card>

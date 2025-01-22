@@ -37,7 +37,9 @@ import { TipoItem } from '../../enum/tipo.item.enum';
 export class ItensComponent {
   form!: FormGroup;
   armas!: Item[];
+  armaduras!: Item[];
   numero_registros_armas = 0;
+  numero_registros_armadura = 0;
 
   constructor(private readonly service: ItemService, private fb: FormBuilder) {}
 
@@ -56,6 +58,15 @@ export class ItensComponent {
         console.log(response);
       },
     });
+
+    this.service.listar({ tipo: TipoItem.ARMADURA }).subscribe({
+      next: (response) => {
+        this.armaduras = response;
+        this.numero_registros_armadura = this.armaduras.length;
+      },
+      error: (response) => {
+        console.log(response);
+      } });
   }
 
   filtro_traco: string = '';
@@ -71,6 +82,8 @@ export class ItensComponent {
       filtro.tracos = '';
       this.filtro_traco = this.form.value.tracos;
     }
+
+    filtro.tipo = TipoItem.ARMA;
 
     this.service.listar(filtro).subscribe({
       next: (response) => {
@@ -97,5 +110,30 @@ export class ItensComponent {
         }
       },
     });
+  }
+
+  consultarArmaduras() {
+    let filtro = { ...this.form.value };
+    if (filtro.nome) {
+      // regex - in-memory-web-api
+      filtro.nome = '^' + filtro.nome;
+    }
+
+    if (filtro.tracos) {
+      filtro.tracos = '';
+      this.filtro_traco = this.form.value.tracos;
+    }
+
+    filtro.tipo = TipoItem.ARMADURA;
+
+    this.service.listar(filtro).subscribe({
+      next: (response) => {
+        this.armaduras = response;
+        this.numero_registros_armadura = this.armaduras.length;
+      },
+      error: (response) => {
+        console.log(response);
+      } });
+    
   }
 }
