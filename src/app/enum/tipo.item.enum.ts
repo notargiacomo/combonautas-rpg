@@ -1,4 +1,5 @@
 export enum TipoItem {
     ARMA = "1.Arma",
-    ARMADURA = "2.Armadura",
+    MUNICAO = "2.Munição",
+    ARMADURA = "3.Armadura",
 }

@@ -38,8 +38,10 @@ export class ItensComponent {
   form!: FormGroup;
   armas!: Item[];
   armaduras!: Item[];
+  municoes!: Item[];
   numero_registros_armas = 0;
   numero_registros_armadura = 0;
+  numero_registros_municoes = 0;
 
   constructor(private readonly service: ItemService, private fb: FormBuilder) {}
 
@@ -58,6 +60,15 @@ export class ItensComponent {
         console.log(response);
       },
     });
+
+    this.service.listar({ tipo: TipoItem.MUNICAO }).subscribe({
+      next: (response) => {
+        this.municoes = response;
+        this.numero_registros_municoes = this.municoes.length;
+      },
+      error: (response) => {
+        console.log(response);
+      } });
 
     this.service.listar({ tipo: TipoItem.ARMADURA }).subscribe({
       next: (response) => {
@@ -134,6 +145,25 @@ export class ItensComponent {
       error: (response) => {
         console.log(response);
       } });
-    
+  }
+
+  consultarMunicoes() {
+    let filtro = { ...this.form.value };
+
+    if (filtro.nome) {
+      // regex - in-memory-web-api
+      filtro.nome = '^' + filtro.nome;
+    }
+
+    filtro.tipo = TipoItem.MUNICAO;
+
+    this.service.listar(filtro).subscribe({
+      next: (response) => {
+        this.municoes = response;
+        this.numero_registros_municoes = this.municoes.length;
+      },
+      error: (response) => {
+        console.log(response);
+      } });
   }
 }

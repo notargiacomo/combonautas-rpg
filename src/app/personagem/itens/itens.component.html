@@ -59,20 +59,20 @@
                             </div>
                             <div class="col-sm-12">
                               <div class="d-flex justify-content-end">
-                                {{arma.referencias + ' pag. ' + arma.paginas}}
+                                {{ arma.referencias + " pag. " + arma.paginas }}
                               </div>
                               <hr class="" />
                             </div>
                           </div>
                           <div class="row">
                             <div class="col-sm-12 mt-2 button-row">
-                                <section class="d-flex flex-wrap gap-2">
-                            @for (traco of arma.tracos; track traco) {
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of arma.tracos; track traco) {
                                 <button class="me-2" mat-flat-button disabled>
-                                    {{traco}}
-                                  </button>
-                              }
-                                </section>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
                             </div>
                             <!-- <div
                               class="col-sm-12 mt-2"
@@ -184,14 +184,18 @@
                             <hr />
                           </div>
                           <div class="row">
-                            <div class="col-sm-6">Perícia para Fabricação/Conserto</div>
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                               {{ arma.pericia_fabricacao_conserto }}
                             </div>
                             <hr />
                           </div>
                           <div class="row">
-                            <div class="col-sm-6">CD para Fabricação/Conserto</div>
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                               {{ arma.cd_fabricacao }}
                             </div>
@@ -214,11 +218,9 @@
                             <hr />
                           </div>
                           <div class="row">
-                            <div class="col-sm-6">
-                                Custo para Conserto
-                            </div>
+                            <div class="col-sm-6">Custo para Conserto</div>
                             <div class="col-sm-6 d-flex justify-content-end">
-                                {{ "T$ " + arma.preco_conserto }}
+                              {{ "T$ " + arma.preco_conserto }}
                             </div>
                             <hr />
                           </div>
@@ -228,6 +230,145 @@
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                               {{ arma.tempo_conserto_em_horas }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Munições">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Munições</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarMunicoes()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros_municoes }}</b>
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile *ngFor="let municao of municoes">
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ municao.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  municao.referencias +
+                                    " pag. " +
+                                    municao.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of municao.tracos; track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-8"
+                              [innerHTML]="municao.descricao"
+                            ></div>
+                            <div class="col-sm-4">
+                              <mat-card>
+                                <img [src]="municao.imagem" />
+                              </mat-card>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Espaço</div>
+                            <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                              {{ municao.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + municao.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Perícia para Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ municao.pericia_fabricacao_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">CD para Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ municao.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + municao.preco_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ municao.tempo_fabricacao_em_horas }}
                             </div>
                             <hr />
                           </div>
@@ -253,17 +394,6 @@
                 />
               </mat-form-field>
             </div>
-            <!-- <div class="col-sm-6 mt-4">
-              <mat-form-field class="form-field">
-                <mat-label>Traço</mat-label>
-                <input
-                  matInput
-                  formControlName="tracos"
-                  type="text"
-                  (keyup)="consultarArmas()"
-                />
-              </mat-form-field>
-            </div> -->
           </div>
           <div class="col-sm-12 mt-4">
             <div class="d-flex justify-content-end">
@@ -291,27 +421,26 @@
                             </div>
                             <div class="col-sm-12">
                               <div class="d-flex justify-content-end">
-                                {{armadura.referencias + ' pag. ' + armadura.paginas}}
+                                {{
+                                  armadura.referencias +
+                                    " pag. " +
+                                    armadura.paginas
+                                }}
                               </div>
                               <hr class="" />
                             </div>
                           </div>
                           <div class="row">
                             <div class="col-sm-12 mt-2 button-row">
-                                <section class="d-flex flex-wrap gap-2">
-                            @for (traco of armadura.tracos; track traco) {
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of armadura.tracos; track traco) {
                                 <button class="me-2" mat-flat-button disabled>
-                                    {{traco}}
-                                  </button>
-                              }
-                                </section>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
                             </div>
-                            <!-- <div
-                              class="col-sm-12 mt-2"
-                              [innerHTML]="arma.tracos?.join(' || ')"
-                            ></div> -->
                           </div>
-
                           <div class="row">
                             <div class="col-sm-12">
                               <hr class="" />
@@ -337,14 +466,14 @@
                             <div
                               class="col-sm-6 mt-4 d-flex justify-content-end"
                             >
-                              {{ '+'+armadura.defesa }}
+                              {{ "+" + armadura.defesa }}
                             </div>
                             <hr />
                           </div>
                           <div class="row">
                             <div class="col-sm-6">Penalidade</div>
                             <div class="col-sm-6 d-flex justify-content-end">
-                              {{ '-'+armadura.penalidade }}
+                              {{ "-" + armadura.penalidade }}
                             </div>
                             <hr />
                           </div>
@@ -383,14 +512,18 @@
                             <hr />
                           </div>
                           <div class="row">
-                            <div class="col-sm-6">Perícia para Fabricação/Conserto</div>
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                               {{ armadura.pericia_fabricacao_conserto }}
                             </div>
                             <hr />
                           </div>
                           <div class="row">
-                            <div class="col-sm-6">CD para Fabricação/Conserto</div>
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                               {{ armadura.cd_fabricacao }}
                             </div>
@@ -413,11 +546,9 @@
                             <hr />
                           </div>
                           <div class="row">
-                            <div class="col-sm-6">
-                                Custo para Conserto
-                            </div>
+                            <div class="col-sm-6">Custo para Conserto</div>
                             <div class="col-sm-6 d-flex justify-content-end">
-                                {{ "T$ " + armadura.preco_conserto }}
+                              {{ "T$ " + armadura.preco_conserto }}
                             </div>
                             <hr />
                           </div>
