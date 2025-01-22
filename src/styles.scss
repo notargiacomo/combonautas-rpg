@@ -12,11 +12,16 @@ body {
 header,
 .cabecalho {
   width: 100% !important;
-  height: 50% !important; /* Você pode ajustar a altura como preferir */
-  background-image: url("assets/img/header_combonautas_.png") !important; /* Substitua pelo caminho da sua imagem */
+  height: 30% !important; /* Você pode ajustar a altura como preferir */
+  background-image: url("assets/img/banner_combonautas.jpg") !important; /* Substitua pelo caminho da sua imagem */
+  max-height: 30% !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  object-fit: contain; /* Mantém as proporções */
+  border: 5px solid rgb(228, 176, 100); /* Moldura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  padding: 10px; /* Espaço entre a imagem e a borda */
 }
 
 .titulo_tormenta20 {
