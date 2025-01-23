@@ -4443,7 +4443,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'CORTE', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIAS DANO GANHAM APRIMORAMENTO'],
+        tracos:['EMPUNHADO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIAS DANO GANHAM APRIMORAMENTO'],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',        
         tipo: TipoItem.ESOTERICO
