@@ -85,6 +85,7 @@ b {
 .mat-mdc-button {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
+  border: 1px solid rgb(228, 176, 100); /* Moldura */
   
 }
 
@@ -272,6 +273,7 @@ button[mat-flat-button] {
   color: #333; /* Define a cor do texto */
   border-radius: 5px; /* Suaviza os cantos */
   transition: background-color 0.3s ease; /* Anima a mudança de cor */
+  border: 1px solid rgb(228, 176, 100); /* Moldura */
 }
 
 button[mat-flat-button]:hover {

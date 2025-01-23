@@ -37,11 +37,13 @@ import { TipoItem } from '../../enum/tipo.item.enum';
 export class ItensComponent {
   form!: FormGroup;
   armas!: Item[];
-  armaduras!: Item[];
   municoes!: Item[];
+  armaduras!: Item[];
+  equipamentos_aventura!: Item[];
   numero_registros_armas = 0;
-  numero_registros_armadura = 0;
   numero_registros_municoes = 0;
+  numero_registros_armadura = 0;
+  numero_registros_equipamento_aventura = 0;
 
   constructor(private readonly service: ItemService, private fb: FormBuilder) {}
 
@@ -68,7 +70,8 @@ export class ItensComponent {
       },
       error: (response) => {
         console.log(response);
-      } });
+      },
+    });
 
     this.service.listar({ tipo: TipoItem.ARMADURA }).subscribe({
       next: (response) => {
@@ -77,7 +80,18 @@ export class ItensComponent {
       },
       error: (response) => {
         console.log(response);
-      } });
+      },
+    });
+
+    this.service.listar({ tipo: TipoItem.EQUIPAMENTO_AVENTURA }).subscribe({
+      next: (response) => {
+        this.equipamentos_aventura = response;
+        this.numero_registros_equipamento_aventura = this.equipamentos_aventura.length;
+      },
+      error: (response) => {
+        console.log(response);
+      },
+    });
   }
 
   filtro_traco: string = '';
@@ -106,10 +120,21 @@ export class ItensComponent {
       },
       complete: () => {
         let armas_filtradas: Item[] = [];
-        if(this.filtro_traco.length !== 0){
+        if (this.filtro_traco.length !== 0) {
           this.armas.forEach((arma) => {
             arma.tracos?.forEach((traco) => {
-              if(traco.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(this.filtro_traco.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))){
+              if (
+                traco
+                  .toLowerCase()
+                  .normalize('NFD')
+                  .replace(/[\u0300-\u036f]/g, '')
+                  .includes(
+                    this.filtro_traco
+                      .toLowerCase()
+                      .normalize('NFD')
+                      .replace(/[\u0300-\u036f]/g, '')
+                  )
+              ) {
                 if (!armas_filtradas.includes(arma)) {
                   armas_filtradas.push(arma);
                 }
@@ -117,7 +142,7 @@ export class ItensComponent {
             });
           });
           this.armas = armas_filtradas;
-          this.numero_registros_armas = this.armas.length
+          this.numero_registros_armas = this.armas.length;
         }
       },
     });
@@ -144,7 +169,8 @@ export class ItensComponent {
       },
       error: (response) => {
         console.log(response);
-      } });
+      },
+    });
   }
 
   consultarMunicoes() {
@@ -155,15 +181,19 @@ export class ItensComponent {
       filtro.nome = '^' + filtro.nome;
     }
 
-    filtro.tipo = TipoItem.MUNICAO;
+    filtro.tipo = TipoItem.EQUIPAMENTO_AVENTURA;
 
     this.service.listar(filtro).subscribe({
       next: (response) => {
-        this.municoes = response;
-        this.numero_registros_municoes = this.municoes.length;
+        this.equipamentos_aventura = response;
+        this.numero_registros_equipamento_aventura =
+          this.equipamentos_aventura.length;
       },
       error: (response) => {
         console.log(response);
-      } });
+      },
+    });
   }
+
+  consultarEquipamentosAventura() {}
 }
