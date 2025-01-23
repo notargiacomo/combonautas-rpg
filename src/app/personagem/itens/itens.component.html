@@ -324,7 +324,9 @@
                         <div class="content">
                           <div class="row">
                             <div class="col-sm-6 mt-4">Espaço</div>
-                            <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
                               {{ municao.espaco }}
                             </div>
                             <hr />
@@ -586,11 +588,16 @@
           </div>
           <div class="col-sm-12 mt-4">
             <div class="d-flex justify-content-end">
-              <b>Número de Registros: {{ numero_registros_equipamento_aventura }}</b>
+              <b
+                >Número de Registros:
+                {{ numero_registros_equipamento_aventura }}</b
+              >
             </div>
           </div>
           <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
-            <mat-grid-tile *ngFor="let equipamentos_aventura of equipamentos_aventura">
+            <mat-grid-tile
+              *ngFor="let equipamentos_aventura of equipamentos_aventura"
+            >
               <mat-card class="card-padrao">
                 <mat-card-title
                   class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
@@ -622,7 +629,8 @@
                           <div class="row">
                             <div class="col-sm-12 mt-2 button-row">
                               <section class="d-flex flex-wrap gap-2">
-                                @for (traco of equipamentos_aventura.tracos; track traco) {
+                                @for (traco of equipamentos_aventura.tracos;
+                                track traco) {
                                 <button class="me-2" mat-flat-button disabled>
                                   {{ traco }}
                                 </button>
@@ -684,7 +692,9 @@
                               Perícia para Fabricação/Conserto
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
-                              {{ equipamentos_aventura.pericia_fabricacao_conserto }}
+                              {{
+                                equipamentos_aventura.pericia_fabricacao_conserto
+                              }}
                             </div>
                             <hr />
                           </div>
@@ -700,7 +710,9 @@
                           <div class="row">
                             <div class="col-sm-6">Custo de Fabricação</div>
                             <div class="col-sm-6 d-flex justify-content-end">
-                              {{ "T$ " + equipamentos_aventura.preco_fabricacao }}
+                              {{
+                                "T$ " + equipamentos_aventura.preco_fabricacao
+                              }}
                             </div>
                             <hr />
                           </div>
@@ -709,7 +721,9 @@
                               Tempo de Fabricação (Em Horas)
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
-                              {{ equipamentos_aventura.tempo_fabricacao_em_horas }}
+                              {{
+                                equipamentos_aventura.tempo_fabricacao_em_horas
+                              }}
                             </div>
                             <hr />
                           </div>
@@ -725,7 +739,2557 @@
                               Tempo de Conserto (Em Horas)
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
-                              {{ equipamentos_aventura.tempo_conserto_em_horas }}
+                              {{
+                                equipamentos_aventura.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Ferramentas">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Ferramentas</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarFerramentas()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_ferramenta }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let ferramenta of ferramentas"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ ferramenta.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  ferramenta.referencias +
+                                    " pag. " +
+                                    ferramenta.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of ferramenta.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="ferramenta.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ ferramenta.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + ferramenta.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ ferramenta.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ ferramenta.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                ferramenta.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ ferramenta.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + ferramenta.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                ferramenta.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + ferramenta.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                ferramenta.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Vestuários">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Vestuários</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarVestuario()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_vestuario }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let vestuario of vestuarios"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ vestuario.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  vestuario.referencias +
+                                    " pag. " +
+                                    vestuario.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of vestuario.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="vestuario.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ vestuario.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + vestuario.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ vestuario.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ vestuario.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                vestuario.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ vestuario.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + vestuario.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                vestuario.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + vestuario.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                vestuario.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Esotéricos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Esotéricos</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarEsotericos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_esoterico }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let esoterico of esotericos"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ esoterico.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  esoterico.referencias +
+                                    " pag. " +
+                                    esoterico.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of esoterico.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="esoterico.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ esoterico.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + esoterico.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ esoterico.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ esoterico.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                esoterico.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ esoterico.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + esoterico.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                esoterico.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + esoterico.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                esoterico.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Alquímicos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Alquímicos</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarAlquimicos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_alquimico }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let alquimico of alquimicos"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ alquimico.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  alquimico.referencias +
+                                    " pag. " +
+                                    alquimico.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of alquimico.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="alquimico.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alquimico.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + alquimico.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alquimico.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alquimico.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                alquimico.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alquimico.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + alquimico.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                alquimico.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + alquimico.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                alquimico.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Alimentos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Alimentos</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarAlimentos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_alimento }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let alimento of alimentos"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ alimento.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  alimento.referencias +
+                                    " pag. " +
+                                    alimento.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of alimento.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="alimento.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alimento.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + alimento.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alimento.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alimento.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                alimento.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ alimento.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + alimento.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                alimento.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + alimento.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                alimento.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Animais">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Animais</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarAnimais()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_animal }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let animal of animais"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ animal.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  animal.referencias +
+                                    " pag. " +
+                                    animal.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of animal.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="animal.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ animal.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + animal.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ animal.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ animal.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                animal.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ animal.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + animal.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                animal.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + animal.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                animal.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Veículos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Veículos</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarVeiculos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_veiculo }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let veiculo of veiculos"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ veiculo.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  veiculo.referencias +
+                                    " pag. " +
+                                    veiculo.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of veiculo.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="veiculo.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ veiculo.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + veiculo.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ veiculo.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ veiculo.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                veiculo.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ veiculo.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + veiculo.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                veiculo.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + veiculo.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                veiculo.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Serviços">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Serviços</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarServicos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_servico }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let servico of servicos"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ servico.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  servico.referencias +
+                                    " pag. " +
+                                    servico.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of servico.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="servico.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ servico.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + servico.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ servico.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ servico.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                servico.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ servico.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + servico.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                servico.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + servico.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                servico.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Melhorias">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Melhorias</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarMelhorias()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_melhoria }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let melhoria of melhorias"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ melhoria.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  melhoria.referencias +
+                                    " pag. " +
+                                    melhoria.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of melhoria.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="melhoria.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + melhoria.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + melhoria.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + melhoria.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Riquezas">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Riquezas</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarRiquezas()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_riqueza }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let melhoria of melhorias"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ melhoria.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  melhoria.referencias +
+                                    " pag. " +
+                                    melhoria.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of melhoria.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="melhoria.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + melhoria.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + melhoria.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + melhoria.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Encantos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Encantos</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarEncantos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_encanto }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let melhoria of melhorias"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ melhoria.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  melhoria.referencias +
+                                    " pag. " +
+                                    melhoria.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of melhoria.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="melhoria.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + melhoria.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + melhoria.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + melhoria.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Poções Mágicas">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Poções Mágicas</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarPocoesMagicas()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_pocao_magica }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let melhoria of melhorias"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ melhoria.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  melhoria.referencias +
+                                    " pag. " +
+                                    melhoria.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of melhoria.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="melhoria.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + melhoria.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + melhoria.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + melhoria.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Acessórios Mágicos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Acessórios Mágicos</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarAcessoriosMagicos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_acessorio_magico }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let melhoria of melhorias"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ melhoria.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  melhoria.referencias +
+                                    " pag. " +
+                                    melhoria.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of melhoria.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="melhoria.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + melhoria.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + melhoria.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + melhoria.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_conserto_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Artefatos">
+          <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="form-field">
+                <mat-label>Artefatos</mat-label>
+                <input
+                  formControlName="nome"
+                  matInput
+                  type="text"
+                  (keyup)="consultarArtefatos()"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-4">
+            <div class="d-flex justify-content-end">
+              <b
+                >Número de Registros:
+                {{ numero_registros_acessorio_magico }}</b
+              >
+            </div>
+          </div>
+          <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+            <mat-grid-tile
+              *ngFor="let melhoria of melhorias"
+            >
+              <mat-card class="card-padrao">
+                <mat-card-title
+                  class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                >
+                  {{ melhoria.nome }}
+                </mat-card-title>
+                <mat-card-content
+                  class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                >
+                  <div class="content">
+                    <mat-tab-group>
+                      <mat-tab label="Descrição">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="d-flex justify-content-end">
+                                {{
+                                  melhoria.referencias +
+                                    " pag. " +
+                                    melhoria.paginas
+                                }}
+                              </div>
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 mt-2 button-row">
+                              <section class="d-flex flex-wrap gap-2">
+                                @for (traco of melhoria.tracos;
+                                track traco) {
+                                <button class="me-2" mat-flat-button disabled>
+                                  {{ traco }}
+                                </button>
+                                }
+                              </section>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr class="" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-sm-12"
+                              [innerHTML]="melhoria.descricao"
+                            ></div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Estatísticas">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6">Espaço</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.espaco }}
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Fabricação">
+                        <div class="content">
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ "T$ " + melhoria.preco }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">RD</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.rd }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">PV's</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.pv }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Perícia para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.pericia_fabricacao_conserto
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              CD para Fabricação/Conserto
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ melhoria.cd_fabricacao }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo de Fabricação</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                "T$ " + melhoria.preco_fabricacao
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Fabricação (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_fabricacao_em_horas
+                              }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">Custo para Conserto</div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{ "T$ " + melhoria.preco_conserto }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              Tempo de Conserto (Em Horas)
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                              {{
+                                melhoria.tempo_conserto_em_horas
+                              }}
                             </div>
                             <hr />
                           </div>
