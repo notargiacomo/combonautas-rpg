@@ -2931,7 +2931,7 @@ export class ItemData {
       },
       {
         id: 97,
-        nome: 'Dente de Wisphago',
+        nome: 'Gema de Força',
         descricao: `Parte de certos engenhos da Supremacia, esta gema tem 1d4 cargas. Empunhando a gema, você pode gastar uma ação padrão e uma carga para produzir um domo semelhante ao efeito básico da magia Campo de Força. Alternativamente, quando lança essa magia, você pode empulhá-lo e usar uma carga para reduzir seu custo em –2 PM. Encontrada nos destroços de corcéis e carruagens de comando, esta gema não pode ser fabricada.`,
         preco: 50,
         defesa: 0,
