@@ -4475,7 +4475,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '2D4 DANO ÁCIDO', 'REFLEXO CD DESTREZA REDUZ METADE'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 149,
@@ -4504,7 +4504,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO COMPLETA', 'RECUPERA 2D4 VIDA'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 150,
@@ -4533,7 +4533,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '6D6 DANO IMPACTO', '3 METROS AREA', 'REFLEXO CD DESTREZA REDUZ METADE'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 151,
@@ -4562,7 +4562,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO COMPLETA','CARISMA +2 ATÉ O FIM DA CENA'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 152,
@@ -4591,7 +4591,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'BEBER DEIXA COM CONDIÇÃO ENFEITIÇADO POR 1D3 DIAS','VONTADE CD CARISMA'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 153,
@@ -4620,7 +4620,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO PADRÃO', 'BEBER RECUPERA 1D4 DE MANA'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 154,
@@ -4649,7 +4649,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '1D6 DANO FOGO', 'CONDIÇÃO EM CHAMAS', 'REFLEXO CD DESTREZA REDUZ METADE E EVITA CONDIÇÃO'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 155,
@@ -4678,7 +4678,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'CRIATURA AO OBJETO', 'INVISIVEL POR 2D6 RODADAS'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 156,
@@ -4707,7 +4707,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DANO DE FOGO DE MAGIAS +1D6'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 157,
@@ -4736,7 +4736,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DANO DE MAGIAS + 1 DADO'],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 158,
@@ -4765,7 +4765,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DE DANO DA MAGIA EM UM PASSO', 'MAXIMO D12'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 159,
@@ -4794,7 +4794,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DANO DE FRIO DE MAGIAS +1D6'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 160,
@@ -4823,7 +4823,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIA DE ILUSÃO CD +2'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 161,
@@ -4852,7 +4852,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIA DE NECROMANCIA CD +2'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 162,
@@ -4881,7 +4881,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DIMINUI CUSTO MAGIA DE ENCANTAMENTO EM 1PM'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 163,
@@ -4910,7 +4910,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DIMINUI CUSTO MAGIA DE CONVOCAÇÃO EM -1PM'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 164,
@@ -4939,7 +4939,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA CURA MAGICA EM +1PV POR DADO'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 165,
@@ -4968,7 +4968,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIA ABJURAÇÃO CD +2'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 166,
@@ -4997,7 +4997,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DIMINUI CUSTO MAGIA DE TRANSMUTAÇÃO EM -1PM'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 167,
@@ -5026,7 +5026,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'INGESTÃO', 'PARALISADA POR 3 RODADAS', 'SE RESISTIR LENTO POR 3 RODADAS', 'RESISTIR CD +5'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 168,
@@ -5055,7 +5055,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'INCONSCIENTE POR 1 RODADAS', 'SE RESISTIR ENJOADO POR 1 RODADAS'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 169,
@@ -5084,7 +5084,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'INJESTÃO', 'PERDE 1D12 PV POR 3 RODADAS', 'PERDE 1D12 PV POR 1 RODADA'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 170,
@@ -5113,7 +5113,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'FICA DEBILITADO DURAÇÃO CENA', 'SE RESISTIR FICA FRACO DURAÇÃO CENA'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 171,
@@ -5142,7 +5142,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'PERDE 1D12 PV POR 3 RODADAS', 'PERDE 1D12 PV POR 1 RODADA'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 172,
@@ -5171,7 +5171,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D12 PV'],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 173,
@@ -5200,7 +5200,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D12 PV POR 3 RODADAS', 'PERDE 1D12 PV POR 1 RODADA'],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 174,
@@ -5229,7 +5229,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 2D12 PV POR 3 RODADAS', 'PERDE 2D12 PV POR 1 RODADA'],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 175,
@@ -5258,7 +5258,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'INGESTÃO', 'PERDE 4D12 PV POR 5 RODADAS', 'PERDE 4D12 PV POR 1 RODADA', 'RESISTIR CD +5'],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 176,
@@ -5287,7 +5287,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'FICA CONFUSA', 'SE RESISTIR FICA LENTA 1 RODADA'],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 177,
@@ -5316,7 +5316,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO COMPLETA', 'RECUPERA 4D6+4 VIDA'],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 178,
@@ -5345,7 +5345,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '3 METROS AREA', 'DISTANCIA 1,5M CAMUFLAGEM LEVE', 'DURAÇÃO CENA','DISTANCIA 5M CAMUFLAGEM TOTAL'],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 179,
@@ -5374,7 +5374,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'INGESTÃO', 'GANHA ARMA NATURAL MORDIDA', 'DANO 1D6 CRITICO X2', 'DURAÇÃO CENA'],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 180,
@@ -5403,7 +5403,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'AUMENTO DANO ARMA EM 1D4 ELEMENTAL', 'DURAÇÃO CENA'],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 181,
@@ -5432,7 +5432,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', 'ALCANCE MÉDIO','AREA', 'CRIATURA', 'DURAÇÃO CENA'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 182,
@@ -5461,7 +5461,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', 'ALCANCE CURTO','REMOVE EFEITOS TODOS METAMORFOSE', 'CRIATURA', 'REFLEXO CD DESTREZA EVITA'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 183,
@@ -5490,7 +5490,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'PREPARADO', 'IGNORA PENALIDADES COMBATE SUBMERSO', 'ALVO ARMA OU MUNIÇÃO', 'DURAÇÃO CENA'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 184,
@@ -5522,7 +5522,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 185,
@@ -5552,7 +5552,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 186,
@@ -5581,7 +5581,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DANO MAGIA ÁCIDO EM UM PASSO', 'MAXIMO D12'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 187,
@@ -5610,7 +5610,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DANO MAGIA FRIO EM UM PASSO', 'MAXIMO D12'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 188,
@@ -5639,7 +5639,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'FORTITUDE +1 RESISTIR MAGIAS'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 189,
@@ -5668,7 +5668,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DANO MAGIA ELETRECIDADE EM UM PASSO', 'MAXIMO D12'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 190,
@@ -5697,7 +5697,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'PARALISADA POR 1 RODADAS', 'SE RESISTIR LENTO POR 1 RODADAS'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 191,
@@ -5726,7 +5726,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 3D12 PV POR 3 RODADAS', 'SE RESISTIR PERDE 3D12 PV POR 1 RODADA', 'IGNORA IMUNIDADE VENENOS'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 192,
@@ -5755,7 +5755,7 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D6'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
       { 
         id: 193,
@@ -5784,12 +5784,414 @@ export class ItemData {
         tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D12 E FICA ENJOADO', 'SE RESISTIR PERDE 1D6 PV'],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',        
-        tipo: TipoItem.ALQUÍMICO
+        tipo: TipoItem.ALQUIMICO
       },
-
-
-
-
+      { 
+        id: 194,
+        nome: 'Batata Valkariana',
+        descricao: `Batatas cortadas em tiras e mergulhadas em óleo fervente. Gordurentas e pouco nutritivas, são o tipo de prato que só é servido numa metrópole como Valkaria. Apesar disso, são gostosas e deixam qualquer um empolgado. Você recebe +1d6 em um teste a sua escolha realizado até o fim do dia. Para não esquecer, deixe 1d6 em cima da sua ficha. De preferência, amarelo.`,
+        preco: 2,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0.6,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE +1D6 PARA QUALQUER TESTE'],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 195,
+        nome: 'Gorad Quente',
+        descricao: `Gorad e leite, servidos quentes. Não tem erro. O gorad ativa o cérebro, fornecendo +2 PM temporários.`,
+        preco: 18,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 6,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE 2PM TEMPORÁRIOS'],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 196,
+        nome: 'Macarrão de Yuvalin',
+        descricao: `Yuvalin é uma cidade mineradora em Zakharov, na fronteira com as Montanhas Uivantes. Seus habitantes criaram este prato reforçado (macarrão, bacon e creme de leite!) para encarar suas árduas jornadas de trabalho nas minas. Delicioso, o prato se espalhou por outras cidades e reinos. Você recebe +5 PV temporários.`,
+        preco: 6,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 2,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE 5PV TEMPORÁRIOS'],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 197,
+        nome: 'Prato do Aventureiro',
+        descricao: `Um cozido de galinha com legumes, esta é uma refeição simples, mas nutritiva. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de vida em +1 por nível.`,
+        preco: 1,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0.3,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'AUMENTA RECUPERACAO PV POR NIVEL +1'],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 198,
+        nome: 'Ração de Viagem',
+        descricao: `Própria para viagens, uma porção desta ração alimenta uma pessoa por um dia. É feita de alimentos conservados, como carne defumada, frutas secas, pão, queijo e biscoitos. Se mantida seca dura bastante, mas quando molhada se estraga em 24 horas.`,
+        preco: 0.5,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0.1,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'DURAÇÃO UM DIA'],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 199,
+        nome: 'Refeição Comum',
+        descricao: `Uma refeição típica inclui pão, queijo, cozido de carne ou galinha com legumes e uma caneca de bebida, geralmente cidra, vinho ou cerveja.`,
+        preco: 0.3,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0.1,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'DURAÇÃO UM DIA'],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 200,
+        nome: 'Sopa de Peixe',
+        descricao: `Um cozido de peixe com verduras. É um prato humilde, mas garante um descanso relaxante. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de mana em +1 por nível.`,
+        preco: 1,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0.3,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'AUMENTA RECUPERACAO PM POR NIVEL +1'],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 201,
+        nome: 'Algravia',
+        descricao: `Bebida alcoólica adocicada feita da seiva de feras-cactos. Você recebe +1 em perícias baseadas em Carisma, cumulativo com outros itens. Múltiplas doses são cumulativas entre si, mas intoxicantes; para cada dose além da primeira no mesmo dia, você deve fazer um teste de Fortitude (CD 15 + 5 para cada dose anterior). Em caso de falha, você fica enjoado e perde todos os bônus de alimentação até o fim do dia.`,
+        preco: 3,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 1,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'CARIMSA +1','DOSES CUMULATIVAS', 'DOSES INTOXICANTES','CADA DOSE EXTRA TESTE FORTITUDE CD 15', 'CD AUMENTA 5 CADA DOSE ANTERIOR', 'FALHA DEIXA ENJOADOE PERDE BONUS ALIMENTAÇÃO'],
+        referencias: Referencia.AMEACAS,
+        paginas: '397 E 398',      
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 202,
+        nome: 'Banquete de Canceronte',
+        descricao: `Um canceronte adulto é suficiente para produzir um pequeno banquete. Você recebe 1d4+1 dados de auxílio. Sempre que realizar um teste de perícia, você pode gastar 1d4 e adicionar o resultado como bônus no teste. Se o banquete for preparado por um personagem com o poder Mestre Cuca, os dados de auxílio se tornam d6. Este prato requer carne fresca de canceronte, sendo assim raramente encontrado longe de grandes cidades costeiras.`,
+        preco: 36,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 12,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE 1D4+1 DADOS 1D4 AUXÍLIO EM TESTE', 'AUMENTA PARA D6 SE FEITO PODER MESTRE CUCA'],
+        referencias: Referencia.AMEACAS,
+        paginas: '397 E 398',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 203,
+        nome: 'Coc-au-Triz',
+        descricao: `Ovos de cocatriz são ingredientes mágicos poderosos, e esta guloseima reflete esse poder; é um ninho de fios de ovos assados e gratinados. Ao consumir, escolha uma habilidade com custo em PM. Seu custo diminui em –1 PM.`,
+        preco: 54,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 18,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'REDUZ CUSTO HABILIDADE EM -1PM'],
+        referencias: Referencia.AMEACAS,
+        paginas: '397 E 398',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 204,
+        nome: 'Cozido de Serpe',
+        descricao: `Quando cozida por várias horas em uma sopa específica, a carne da serpe fica livre de seu veneno natural. Diferente de outros alimentos, preparar este cozido é um teste estendido de Ofício (cozinheiro) com CD 20, que requer 3 sucessos antes de 3 falhas. Se preparado com sucesso, fornece+1 em todos os testes de perícia, cumulativo com outros itens. Se falhar, os ingredientes são consumidos e você é envenenado (perde 1d12 pontos de vida por rodada durante 3 rodadas; Fort CD 20 reduz para 1 rodada).`,
+        preco: 54,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 20,
+        cd_identificar_item: 0,
+        preco_fabricacao: 18,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'TESTE EXTENDIDO CD 20', '3 SUCESSOS 3 FALHAS', ' SUCESSO RECEBE + 1 TODOS TESTES PERÍCIAS', 'FALHA PERDE 1D12 PV POR 3 RODADAS', 'FORTITUDE CD 20 REDUZ PARA 1 RODADA'],
+        referencias: Referencia.AMEACAS,
+        paginas: '397 E 398',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 205,
+        nome: 'Gorlogg Ensopado',
+        descricao: `Criado nas cozinhas de Yuvalin por Rizzelena, chef élfica de grande talento, este é um ensopado altamente nutritivo. Em sua próxima noite de sono, você aumenta a sua recuperação de PV e PM em +1 por nível.`,
+        preco: 6,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 2,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'AUMENTA RECUPERACAO DE PV E PM EM +1'],
+        referencias: Referencia.AMEACAS,
+        paginas: '398',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 206,
+        nome: 'Omelete Monstruosa',
+        descricao: `Dizem que este prato foi inventado por aventureiros presos em uma caverna cheia de ovos. Desde então, tornou-se popular entre aqueles de baixa seletividade alimentar, ou muita coragem. É feita com ovos de qualquer praga monstruosa, mas variações mais refinadas usam ovos de corcel de Kally e outras feras dracônicas menores. Você recebe +2 em rolagens de dano e –2 em testes de perícias baseadas em Sabedoria, cumulativo com outros itens. Se feita com ovos de dragão, muda para +5 e –5. E garante que você será caçado por uma mamãe dragoa furiosa…`,
+        preco: 3,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 1,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'VIDE DESCRIÇÃO'],
+        referencias: Referencia.AMEACAS,
+        paginas: '398',        
+        tipo: TipoItem.ALIMENTACAO
+      },
+      { 
+        id: 207,
+        nome: 'Sashimi de Kraken',
+        descricao: `Esta iguaria exótica foi criada pelos maiores chefs de Tamu-ra. Você recebe +2 em Diplomacia, cumulativo com outros itens, e 5 PM temporários. Dificilmente encontrada em cidades longe do mar.`,
+        preco: 3,
+        defesa: 0 ,
+        rd: 0,
+        pv: 2,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 1,//    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0,//    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0.5,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE +2 DIPLOMACIA CUMULATIVO COM OUTROS ITENS', 'RECEBE 5 PM TEMPORÁRIOS'],
+        referencias: Referencia.AMEACAS,
+        paginas: '398',        
+        tipo: TipoItem.ALIMENTACAO
+      },
     ];
   }
 }

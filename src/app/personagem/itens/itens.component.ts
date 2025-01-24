@@ -153,7 +153,7 @@ export class ItensComponent {
       },
     });
 
-    this.service.listar({ tipo: TipoItem.ALQUÍMICO }).subscribe({
+    this.service.listar({ tipo: TipoItem.ALQUIMICO }).subscribe({
       next: (response) => {
         this.alquimicos = response;
         this.numero_registros_alquimico =
@@ -164,7 +164,7 @@ export class ItensComponent {
       },
     });
 
-    this.service.listar({ tipo: TipoItem.ALIMENTO }).subscribe({
+    this.service.listar({ tipo: TipoItem.ALIMENTACAO }).subscribe({
       next: (response) => {
         this.alimentos = response;
         this.numero_registros_alimento =
@@ -460,7 +460,7 @@ export class ItensComponent {
       filtro.nome = '^' + filtro.nome;
     }
 
-    filtro.tipo = TipoItem.ALQUÍMICO;
+    filtro.tipo = TipoItem.ALQUIMICO;
 
     this.service.listar(filtro).subscribe({
       next: (response) => {
@@ -482,7 +482,7 @@ export class ItensComponent {
       filtro.nome = '^' + filtro.nome;
     }
 
-    filtro.tipo = TipoItem.ALIMENTO;
+    filtro.tipo = TipoItem.ALIMENTACAO;
 
     this.service.listar(filtro).subscribe({
       next: (response) => {
