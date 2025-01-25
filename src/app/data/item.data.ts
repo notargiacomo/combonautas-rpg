@@ -9110,7 +9110,7 @@ export class ItemData {
         descricao: `<p>Resultado de cruzamentos entre várias raças domésticas trazidas de Lamnor na Caravana dos Exilados, o molosso deheoni é um cão enorme, destinado a proteger as habitações dos colonos e auxiliar em caçadas. Acabaria se tornando exímio no combate a serpentes, sendo resistente a seu veneno e hábil em rastreá-las. Essa perícia se tornaria valiosa mais tarde durante a inquisição contra os sszzaazitas, uma vez que o molosso podia farejá-los através de seus disfarces. Nos dias de hoje, o cão é popular como animal de guarda não apenas em aldeias e fazendas, mas também templos, palácios e quaisquer lugares onde devotos do Deus da Traição poderiam se infiltrar.</p>`,
         descricao_extra: `
         <br>
-        <p>PERSEGUIDOR</p>
+        <p>VIGILANTE</p>
             <p>Um molosso é um parceiro especial (vigilante) que fornece os benefícios a seguir.</p>
             <ul>
             <li>Iniciante: você recebe +1 na Defesa e +2 em testes de Intuição e Percepção (contra seres ofídicos e sszzaazitas, o bônus nos testes de perícia muda para +5).</li>
@@ -9142,7 +9142,7 @@ export class ItemData {
         penalidade: 0,
         tracos: [
           'PARCEIRO',
-          'RARO', 'DOHERIMM', 'PERSEGUIDOR'
+          'RARO', 'DEHEON', 'VIGILANTE'
         ],
         referencias: Referencia.AMEACAS,
         paginas: '194',
