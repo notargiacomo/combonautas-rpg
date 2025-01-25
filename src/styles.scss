@@ -2,6 +2,7 @@
 
 html,
 body {
+  background-color: rgb(60, 60, 60) !important; /* Define o fundo como a cor dominante */
   height: 100%;
   font-family: "Oswald" !important;
   margin: 0;
@@ -139,13 +140,6 @@ b {
 .mat-expansion-panel-content {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-
-}
-
-.mat-mdc-tab {
-  font-family: "Oswald" !important;
-  font-size: 12pt !important;
-  
 
 }
 
@@ -327,38 +321,41 @@ tr.element-row:not(.expanded-row):active {
   display: flex;
 }
 
-// table tr:nth-child(odd) {
-//   background-color: rgb(132, 26, 18);
-//   color: white; /* Adicione isso para o texto ficar visível na linha vermelha */
-// }
-
-// table tr:nth-child(even) {
-//   background-color: white;
-//   color: black; /* Adicione isso para o texto ficar visível na linha branca */
-// }
-
-// table th, table td {
-//   padding: 8px;
-//   border: 1px solid #ddd;
-//   text-align: left;
-// }
-
-// .odd-row {
-//   background-color: rgb(132, 26, 18)!important ;
-//   color: white !important; /* Para o texto ficar visível */
-// }
-
-// .even-row {
-//   background-color: white !important;
-//   color: black !important; /* Para o texto ficar visível */
-// }
-
 .element-symbol {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: normal;
+  font-weight: bold !important;
+  font-size: 40px !important;
+  line-height: normal !important;
 }
 
 .element-description-attribution {
-  opacity: 0.5;
+  opacity: 0.5 !important;
+}
+
+.mat-mdc-tab {
+  font-family: "Oswald" !important;
+  font-size: 12pt !important;
+}
+
+.mat-mdc-dialog-container {
+  max-height: 500px !important;
+}
+
+.mat-mdc-dialog-surface {
+  border: 2px solid rgb(228, 176, 100);
+  background-color: rgb(60, 60, 60) !important;
+  border-radius: 16px !important;      /* Arredondamento */
+  padding: 16px !important;           /* Espaçamento interno */
+
+}
+
+.mat-mdc-dialog-surface b {
+  color: white !important;
+}
+
+.mat-mdc-dialog-surface .card-padrao {
+  border: 2px solid rgb(228, 176, 100);
+  background-color: rgb(132, 26, 18) !important;
+  color: white !important;
+  border-radius: 16px !important;      /* Arredondamento */
+  padding: 16px !important;           /* Espaçamento interno */
 }

@@ -1,4 +1,5 @@
 <div class="container">
+  <div class="row mt-4">
   <mat-card class="cartao">
     <form [formGroup]="form">
       <div class="row">
@@ -7,7 +8,7 @@
           <hr />
         </div>
       </div>
-      <div class="row" >
+      <div class="row">
         <div class="col-sm-6 mt-4">
           <div class="row">
             <label id="radio-radio-tipo-criatura"
@@ -36,7 +37,7 @@
             <label id="radio-tamanho"><b>Tamanho</b></label>
           </div>
           <div class="row">
-            <mat-radio-group 
+            <mat-radio-group
               title="Tamanho"
               name="tamanho"
               formControlName="tamanho"
@@ -58,9 +59,11 @@
           </div>
           <div class="row">
             <section class="section" formArrayName="sentidos">
-              <mat-checkbox name="sentido"
-              *ngFor="let sentido of sentidos" 
-              (change)="checkSentido(sentido, $event.checked)">
+              <mat-checkbox
+                name="sentido"
+                *ngFor="let sentido of sentidos"
+                (change)="checkSentido(sentido, $event.checked)"
+              >
                 {{ sentido }}
               </mat-checkbox>
             </section>
@@ -72,8 +75,11 @@
           </div>
           <div class="row">
             <section class="section" formArrayName="deslocamentos">
-              <mat-checkbox name="deslocamento" *ngFor="let deslocamento of deslocamentos" 
-              (change)="checkDeslocamento(deslocamento, $event.checked)">
+              <mat-checkbox
+                name="deslocamento"
+                *ngFor="let deslocamento of deslocamentos"
+                (change)="checkDeslocamento(deslocamento, $event.checked)"
+              >
                 {{ deslocamento }}
               </mat-checkbox>
             </section>
@@ -87,8 +93,11 @@
           </div>
           <div class="row">
             <section class="section" formArrayName="referencias">
-              <mat-checkbox name="referencia" *ngFor="let referencia of referencias" 
-              (change)="checkReferencia(referencia, $event.checked)">
+              <mat-checkbox
+                name="referencia"
+                *ngFor="let referencia of referencias"
+                (change)="checkReferencia(referencia, $event.checked)"
+              >
                 {{ referencia }}
               </mat-checkbox>
             </section>
@@ -99,7 +108,8 @@
         <div class="col-sm-6 mt-4">
           <mat-form-field class="form-field">
             <mat-label>Raça</mat-label>
-            <input formControlName="nome"
+            <input
+              formControlName="nome"
               matInput
               type="text"
               name="raca"
@@ -119,13 +129,15 @@
       </div>
     </form>
   </mat-card>
-  <div class="col-sm-12 mt-4">
-      <div class="d-flex justify-content-end">
-        <b>Número de Registros: {{numero_registros}}</b>
-      </div>
   </div>
   <div class="row mt-4">
     <mat-card class="cartao">
+      <div class="row">
+        <div class="d-flex justify-content-end">
+          <b>Número de Registros: {{ numero_registros }}</b>
+        </div>
+      </div>
+      <br>
       <table
         mat-table
         [dataSource]="racas"

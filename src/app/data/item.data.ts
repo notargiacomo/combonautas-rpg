@@ -5,6 +5,7 @@ import { Alcance } from '../enum/alcance.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { TipoItem } from '../enum/tipo.item.enum';
+import { Regras } from '../enum/regras.enum';
 
 @Injectable({
   providedIn: 'root',
@@ -42,11 +43,20 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'LEVE', 'DISCRETA', 'ARREMESSO', 'ATAQUE COM DESTREZA'],
+        tracos: [
+          'SIMPLES',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'LEVE',
+          'DISCRETA',
+          'ARREMESSO',
+          'ATAQUE COM DESTREZA',
+        ],
         imagem: 'assets/img/item_arma_adaga.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 2,
@@ -72,11 +82,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS', 'ALONGADA'],
+        tracos: [
+          'MARCIAL',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'ALONGADA',
+        ],
         imagem: 'assets/img/item_arma_alabarda.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 3,
@@ -102,11 +118,11 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
         imagem: 'assets/img/item_arma_alfange.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 4,
@@ -120,7 +136,7 @@ export class ItemData {
         cd_identificar_item: 0,
         preco_fabricacao: 10,
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 3 ,
+        preco_conserto: 3,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (armeiro)',
         valor_teste_resistencia: 0,
@@ -132,11 +148,18 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['MARCIAL', 'A DISTÂNCIA', 'EMPUNHADO', 'DUAS MÃOS', 'MUNIÇÃO FLECHA', 'MONTADO'],
+        tracos: [
+          'MARCIAL',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'MUNIÇÃO FLECHA',
+          'MONTADO',
+        ],
         imagem: 'assets/img/item_arma_arco_curto.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 5,
@@ -150,7 +173,7 @@ export class ItemData {
         cd_identificar_item: 0,
         preco_fabricacao: 33,
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 10 ,
+        preco_conserto: 10,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (armeiro)',
         valor_teste_resistencia: 0,
@@ -162,11 +185,18 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['MARCIAL', 'A DISTÂNCIA', 'EMPUNHADO', 'DUAS MÃOS', 'MUNIÇÃO FLECHA', 'APLICA FORÇA NO DANO'],
+        tracos: [
+          'MARCIAL',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'MUNIÇÃO FLECHA',
+          'APLICA FORÇA NO DANO',
+        ],
         imagem: 'assets/img/item_arma_arco_longo.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 6,
@@ -180,7 +210,7 @@ export class ItemData {
         cd_identificar_item: 0,
         preco_fabricacao: 0.3,
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 0.1 ,
+        preco_conserto: 0.1,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (armeiro)',
         valor_teste_resistencia: 0,
@@ -192,11 +222,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['SIMPLES', 'A DISTÂNCIA', 'EMPUNHADO', 'UMA MÃO', 'CORPO A CORPO -5'],
+        tracos: [
+          'SIMPLES',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'CORPO A CORPO -5',
+        ],
         imagem: 'assets/img/item_arma_azagaia.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 7,
@@ -210,7 +246,7 @@ export class ItemData {
         cd_identificar_item: 0,
         preco_fabricacao: 11.6,
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 3.5 ,
+        preco_conserto: 3.5,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (armeiro)',
         valor_teste_resistencia: 0,
@@ -222,11 +258,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['SIMPLES', 'A DISTÂNCIA', 'EMPUNHADO', 'UMA MÃO', 'MUNIÇÃO VIROTE', 'RECARREGA AÇÃO MOVIMENTO'],
+        tracos: [
+          'SIMPLES',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'MUNIÇÃO VIROTE',
+          'RECARREGA AÇÃO MOVIMENTO',
+        ],
         imagem: 'assets/img/item_arma_besta_leve.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 8,
@@ -252,11 +295,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['MARCIAL', 'A DISTÂNCIA', 'EMPUNHADO', 'DUAS MÃOS', 'MUNIÇÃO VIROTE', 'RECARREGA AÇÃO PADRÃO'],
+        tracos: [
+          'MARCIAL',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'MUNIÇÃO VIROTE',
+          'RECARREGA AÇÃO PADRÃO',
+        ],
         imagem: 'assets/img/item_arma_besta_pesada.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 146',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 146',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 9,
@@ -282,11 +332,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS', 'DUPLA 1d6'],
+        tracos: [
+          'SIMPLES',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'DUPLA 1d6',
+        ],
         imagem: 'assets/img/item_arma_bordao.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 147',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 147',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 10,
@@ -312,11 +368,19 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL', 'VERSÁTIL DERRUBAR DESARMAR', 'ALCANCE 4,5m'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ÁGIL',
+          'VERSÁTIL DERRUBAR DESARMAR',
+          'ALCANCE 4,5m',
+        ],
         imagem: 'assets/img/item_arma_chicote.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 147',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 147',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 11,
@@ -342,11 +406,11 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL'],
         imagem: 'assets/img/item_arma_cimitarra.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 147',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 147',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 12,
@@ -372,11 +436,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
+        tracos: ['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
         imagem: 'assets/img/item_arma_clava.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 147',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 147',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 14,
@@ -402,11 +466,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL', 'MARCIAL DUAS MÃOS 1d12'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ÁGIL',
+          'MARCIAL DUAS MÃOS 1d12',
+        ],
         imagem: 'assets/img/item_arma_espada_bastarda.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 15,
@@ -432,11 +503,11 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'LEVE', 'EMPUNHADO', 'UMA MÃO'],
-        imagem:'assets/img/item_arma_espada_curta.png',
+        tracos: ['SIMPLES', 'CORPO A CORPO', 'LEVE', 'EMPUNHADO', 'UMA MÃO'],
+        imagem: 'assets/img/item_arma_espada_curta.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 16,
@@ -462,11 +533,11 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
         imagem: 'assets/img/item_arma_espada_longa.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 17,
@@ -492,10 +563,11 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL'], imagem: 'assets/img/item_arma_florete.png',
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL'],
+        imagem: 'assets/img/item_arma_florete.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 18,
@@ -521,11 +593,11 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'LEVE'],
+        tracos: ['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'LEVE'],
         imagem: 'assets/img/item_arma_foice.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 19,
@@ -551,11 +623,20 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'A DISTÂNCIA', 'MUNIÇÃO PEDRA POLIDA', 'MUNIÇÃO PEDRA COMUM 1d3', 'APLICA FORÇA NO DANO'],
+        tracos: [
+          'SIMPLES',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'A DISTÂNCIA',
+          'MUNIÇÃO PEDRA POLIDA',
+          'MUNIÇÃO PEDRA COMUM 1d3',
+          'APLICA FORÇA NO DANO',
+        ],
         imagem: 'assets/img/item_arma_funda.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 20,
@@ -581,11 +662,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
         imagem: 'assets/img/item_arma_gadanho.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 21,
@@ -611,11 +692,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ADAPTÁVEL 1d10', 'ÁGIL'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ADAPTÁVEL 1d10',
+          'ÁGIL',
+        ],
         imagem: 'assets/img/item_arma_katana.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 22,
@@ -641,11 +729,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ARREMESSO'],
+        tracos: [
+          'SIMPLES',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ARREMESSO',
+        ],
         imagem: 'assets/img/item_arma_lanca.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 23,
@@ -671,11 +765,20 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS', 'ARREMESSO', 'MONTADO UMA MÃO', 'ALONGADA', 'INVESTIDA MONTADA +2d8 DANO'],
+        tracos: [
+          'MARCIAL',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'ARREMESSO',
+          'MONTADO UMA MÃO',
+          'ALONGADA',
+          'INVESTIDA MONTADA +2d8 DANO',
+        ],
         imagem: 'assets/img/item_arma_lanca_montada.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 148',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 148',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 24,
@@ -701,11 +804,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
         imagem: 'assets/img/item_arma_maca.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 25,
@@ -731,11 +834,18 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'LEVE', 'ARREMESSO'],
+        tracos: [
+          'MARCIAL',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'LEVE',
+          'ARREMESSO',
+        ],
         imagem: 'assets/img/item_arma_machadinha.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 26,
@@ -761,11 +871,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'MARCIAL DUAS MÃOS 1d10'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'MARCIAL DUAS MÃOS 1d10',
+        ],
         imagem: 'assets/img/item_arma_machado_anao.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 27,
@@ -791,11 +907,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', ],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
         imagem: 'assets/img/item_arma_machado_de_batalha.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 28,
@@ -821,11 +937,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
         imagem: 'assets/img/item_arma_machado_guerra.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 29,
@@ -851,11 +967,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS', 'DESBALANCEADA'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'DESBALANCEADA',
+        ],
         imagem: 'assets/img/item_arma_machado_taurico.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 30,
@@ -881,11 +1003,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'VERSÁTIL DESARMAR'],
+        tracos: [
+          'MARCIAL',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'VERSÁTIL DESARMAR',
+        ],
         imagem: 'assets/img/item_arma_mangual.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 31,
@@ -911,11 +1039,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
         imagem: 'assets/img/item_arma_marreta.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 32,
@@ -941,11 +1069,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
         imagem: 'assets/img/item_arma_martelo_de_guerra.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 149',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 149',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 33,
@@ -971,11 +1099,11 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
         imagem: 'assets/img/item_arma_montante.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 34,
@@ -1001,11 +1129,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['ARMA DE FOGO', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
+        tracos: [
+          'ARMA DE FOGO',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'MUNIÇÃO BALA',
+          'RECARREGA AÇÃO PADRÃO',
+        ],
         imagem: 'assets/img/item_arma_mosquete.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 35,
@@ -1031,11 +1166,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
         imagem: 'assets/img/item_arma_picareta.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 36,
@@ -1061,11 +1196,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS', 'ALONGADA'],
+        tracos: [
+          'SIMPLES',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'ALONGADA',
+        ],
         imagem: 'assets/img/item_arma_pique.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 37,
@@ -1091,11 +1232,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['ARMA DE FOGO', 'A DISTÂNCIA', 'EMPUNHADO', 'UMA MÃO', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
+        tracos: [
+          'ARMA DE FOGO',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'MUNIÇÃO BALA',
+          'RECARREGA AÇÃO PADRÃO',
+        ],
         imagem: 'assets/img/item_arma_pistola.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 38,
@@ -1121,11 +1269,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['EXÓTICA', 'A DISTÂNCIA', 'ATAQUE ENREDAR'],
+        tracos: ['EXÓTICA', 'A DISTÂNCIA', 'ATAQUE ENREDAR'],
         imagem: 'assets/img/item_arma_rede.png',
         referencias: Referencia.BASICO,
-        paginas: '145 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '145 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 39,
@@ -1151,11 +1299,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
         imagem: 'assets/img/item_arma_tacape.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 40,
@@ -1181,11 +1329,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'VERSÁTIL DERRUBAR'],
+        tracos: [
+          'MARCIAL',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'VERSÁTIL DERRUBAR',
+        ],
         imagem: 'assets/img/item_arma_tridente.png',
         referencias: Referencia.BASICO,
-        paginas: '144 E 150',        
-        tipo: TipoItem.ARMA
+        paginas: '144 E 150',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 41,
@@ -1211,11 +1365,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'DANO METABOLICO -2 TESTE/DANO 1 RODADA'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'DANO METABOLICO -2 TESTE/DANO 1 RODADA',
+        ],
         imagem: 'assets/img/item_arma_acoite_finntroll.png',
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '392 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 42,
@@ -1241,11 +1401,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        tracos:['ARMA DE FOGO', 'A DISTÂNCIA', 'EMPUNHADO', 'DUAS MÃOS', 'MUNIÇÃO BALA','RECARREGA AÇÃO PADRÃO'],
+        tracos: [
+          'ARMA DE FOGO',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'MUNIÇÃO BALA',
+          'RECARREGA AÇÃO PADRÃO',
+        ],
         imagem: 'assets/img/item_arma_arcabuz.png',
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '392 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 43,
@@ -1271,11 +1438,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['A DISTÂNCIA', 'EMPUNHADO', 'UMA MÃO', 'ARREMESSO', 'CORPO A CORPO -5'],
+        tracos: [
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ARREMESSO',
+          'CORPO A CORPO -5',
+        ],
         imagem: 'assets/img/item_arma_arpao.png',
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '392 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 44,
@@ -1301,11 +1474,19 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.AREA_CONE_6M,
         penalidade: 0,
-        tracos:['ARMA DE FOGO', 'A DISTÂNCIA', 'EMPUNHADO', 'DUAS MÃOS', 'MUNIÇÃO 2 BALA','RECARREGA AÇÃO COMPLETA', 'ALCANCE AREA CONE 6M'],
+        tracos: [
+          'ARMA DE FOGO',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'MUNIÇÃO 2 BALA',
+          'RECARREGA AÇÃO COMPLETA',
+          'ALCANCE AREA CONE 6M',
+        ],
         imagem: 'assets/img/item_arma_bacamarte.png',
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '392 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 45,
@@ -1331,11 +1512,11 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
+        tracos: ['EXÓTICA', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
         imagem: 'assets/img/item_arma_espada_vespa.png',
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '392 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 46,
@@ -1361,11 +1542,11 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
+        tracos: ['MARCIAL', 'CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO'],
         imagem: 'assets/img/item_arma_gladio.png',
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '392 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 47,
@@ -1391,11 +1572,21 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA', 'EMPUNHADO', 'DUAS MÃOS', 'MUNIÇÃO BALA','CORPO A CORPO ALONGADA DANO 1d10 CRITICO x3', 'A DISTÂNCIA DANO 2d8 CRÍTICO 19/x3 ALCANCE MÉDIO', 'ARMA DE FOGO', 'RECARREGA AÇÃO PADRÃO', 'HÍBRIDA'],
+        tracos: [
+          'EXÓTICA',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'MUNIÇÃO BALA',
+          'CORPO A CORPO ALONGADA DANO 1d10 CRITICO x3',
+          'A DISTÂNCIA DANO 2d8 CRÍTICO 19/x3 ALCANCE MÉDIO',
+          'ARMA DE FOGO',
+          'RECARREGA AÇÃO PADRÃO',
+          'HÍBRIDA',
+        ],
         imagem: 'assets/img/item_arma_lanca_fogo.png',
         referencias: Referencia.AMEACAS,
-        paginas: '392 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '392 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 48,
@@ -1421,11 +1612,18 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA','CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL','VERSÁTIL AGARRAR DESARMAR'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ÁGIL',
+          'VERSÁTIL AGARRAR DESARMAR',
+        ],
         imagem: 'assets/img/item_arma_mordida_diabo.png',
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '393 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 49,
@@ -1451,11 +1649,18 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        tracos:['ARMA LEVE','CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ATLETISMO +2 ESCALAR','DUAS ARMAS ATLETISMO ESCALAR 1,5M'],
+        tracos: [
+          'ARMA LEVE',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ATLETISMO +2 ESCALAR',
+          'DUAS ARMAS ATLETISMO ESCALAR 1,5M',
+        ],
         imagem: 'assets/img/item_arma_nekote.png',
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '393 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 50,
@@ -1481,12 +1686,21 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:
-        ['EXÓTICA', 'EMPUNHADO', 'UMA MÃO', 'MUNIÇÃO BALA','CORPO A CORPO ÁGIL DANO 1d6 CRITICO 18', 'A DISTÂNCIA DANO 2d6 CRÍTICO 19/x3 ALCANCE CURTO', 'ARMA DE FOGO', 'RECARREGA AÇÃO PADRÃO', 'HÍBRIDA'],
+        tracos: [
+          'EXÓTICA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'MUNIÇÃO BALA',
+          'CORPO A CORPO ÁGIL DANO 1d6 CRITICO 18',
+          'A DISTÂNCIA DANO 2d6 CRÍTICO 19/x3 ALCANCE CURTO',
+          'ARMA DE FOGO',
+          'RECARREGA AÇÃO PADRÃO',
+          'HÍBRIDA',
+        ],
         imagem: 'assets/img/item_arma_pistola_punhal.png',
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '393 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 51,
@@ -1512,11 +1726,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['ARMA LEVE','CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'NÃO-LETAL'],
+        tracos: [
+          'ARMA LEVE',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NÃO-LETAL',
+        ],
         imagem: 'assets/img/item_arma_porrete.png',
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '393 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 52,
@@ -1542,11 +1762,18 @@ export class ItemData {
         margem_ameaca: 4,
         alcance: 0,
         penalidade: 0,
-        tracos:['EXÓTICA','CORPO A CORPO', 'EMPUNHADO', 'UMA MÃO', 'ÁGIL', 'DANO CRÍTICO d10'],
+        tracos: [
+          'EXÓTICA',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ÁGIL',
+          'DANO CRÍTICO d10',
+        ],
         imagem: 'assets/img/item_arma_presa_serpente.png',
         referencias: Referencia.AMEACAS,
-        paginas: '393 E 394',        
-        tipo: TipoItem.ARMA
+        paginas: '393 E 394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 53,
@@ -1572,11 +1799,18 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['ARMA LEVE','A DISTÂNCIA', 'EMPUNHADO', 'UMA MÃO', 'ATAQUE ADICIONAL CUSTO 1 PM', 'ATAQUE ADICIONAL ARREMESSO MÚLTIPLO CUSTO 0 PM'],
+        tracos: [
+          'ARMA LEVE',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'ATAQUE ADICIONAL CUSTO 1 PM',
+          'ATAQUE ADICIONAL ARREMESSO MÚLTIPLO CUSTO 0 PM',
+        ],
         imagem: 'assets/img/item_arma_shuriken.png',
         referencias: Referencia.AMEACAS,
-        paginas: '394',        
-        tipo: TipoItem.ARMA
+        paginas: '394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 54,
@@ -1602,11 +1836,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['MARCIAL','CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS', 'VERSÁTIL DERRUBAR EMPURRAR'],
+        tracos: [
+          'MARCIAL',
+          'CORPO A CORPO',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'VERSÁTIL DERRUBAR EMPURRAR',
+        ],
         imagem: 'assets/img/item_arma_tetsubo.png',
         referencias: Referencia.AMEACAS,
-        paginas: '394',        
-        tipo: TipoItem.ARMA
+        paginas: '394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 55,
@@ -1632,11 +1872,18 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['ARMA DE FOGO','A DISTÂNCIA', 'EMPUNHADO', 'UMA MÃO', 'LEVE', 'ERRA RESULTADO IMPAR DANIFICA'],
+        tracos: [
+          'ARMA DE FOGO',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'LEVE',
+          'ERRA RESULTADO IMPAR DANIFICA',
+        ],
         imagem: 'assets/img/item_arma_traque.png',
         referencias: Referencia.AMEACAS,
-        paginas: '394',        
-        tipo: TipoItem.ARMA
+        paginas: '394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 56,
@@ -1662,11 +1909,18 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        tracos:['SIMPLES','A DISTÂNCIA', 'EMPUNHADO', 'UMA MÃO', 'MUNIÇÃO DARDOS', 'RESISTIR A VENENOS CD +2'],
+        tracos: [
+          'SIMPLES',
+          'A DISTÂNCIA',
+          'EMPUNHADO',
+          'UMA MÃO',
+          'MUNIÇÃO DARDOS',
+          'RESISTIR A VENENOS CD +2',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
-        paginas: '394',        
-        tipo: TipoItem.ARMA
+        paginas: '394',
+        tipo: TipoItem.ARMA,
       },
       {
         id: 57,
@@ -1692,11 +1946,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO','LEVE', 'FORTITUDE + 2'],
+        tracos: ['VESTIDO', 'LEVE', 'FORTITUDE + 2'],
         imagem: 'assets/img/item_armadura_acolchoada.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 58,
@@ -1723,11 +1977,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        tracos:['VESTIDO', 'PESADA', 'SOB MEDIDA', 'AJUSTAR T$ 200'],
+        tracos: ['VESTIDO', 'PESADA', 'SOB MEDIDA', 'AJUSTAR T$ 200'],
         imagem: 'assets/img/item_armadura_armadura_completa.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 59,
@@ -1753,11 +2007,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        tracos:['VESTIDO', 'LEVE'],
+        tracos: ['VESTIDO', 'LEVE'],
         imagem: 'assets/img/item_armadura_armadura_couro.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 59,
@@ -1783,11 +2037,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        tracos:['VESTIDO','PESADA'],
+        tracos: ['VESTIDO', 'PESADA'],
         imagem: 'assets/img/item_armadura_brunea.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 60,
@@ -1813,11 +2067,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        tracos:['VESTIDO','PESADA'],
+        tracos: ['VESTIDO', 'PESADA'],
         imagem: 'assets/img/item_armadura_cota_malha.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 61,
@@ -1843,11 +2097,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        tracos:['VESTIDO','LEVE'],
+        tracos: ['VESTIDO', 'LEVE'],
         imagem: 'assets/img/item_armadura_couraca.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 62,
@@ -1873,11 +2127,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 1,
-        tracos:['VESTIDO','LEVE'],
+        tracos: ['VESTIDO', 'LEVE'],
         imagem: 'assets/img/item_armadura_couro_batido.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 63,
@@ -1903,11 +2157,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 1,
-        tracos:['EMPUNHADO', 'ESCUDO', 'MÃO LIVRE EXCETO ARMA', 'PROFICIÊNCIA ARMAS MARCIAS PARA ATAQUE CORPOR A CORPO', 'CASO ATAQUE PERDE BONUS DEFESA 1 TURNO'],
+        tracos: [
+          'EMPUNHADO',
+          'ESCUDO',
+          'MÃO LIVRE EXCETO ARMA',
+          'PROFICIÊNCIA ARMAS MARCIAS PARA ATAQUE CORPOR A CORPO',
+          'CASO ATAQUE PERDE BONUS DEFESA 1 TURNO',
+        ],
         imagem: 'assets/img/item_armadura_escudo_leve.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 64,
@@ -1933,11 +2193,16 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 1,
-        tracos:['EMPUNHADO', 'ESCUDO', 'PROFICIÊNCIA ARMAS MARCIAS PARA ATAQUE CORPOR A CORPO', 'CASO ATAQUE PERDE BONUS DEFESA 1 TURNO'],
+        tracos: [
+          'EMPUNHADO',
+          'ESCUDO',
+          'PROFICIÊNCIA ARMAS MARCIAS PARA ATAQUE CORPOR A CORPO',
+          'CASO ATAQUE PERDE BONUS DEFESA 1 TURNO',
+        ],
         imagem: 'assets/img/item_armadura_escudo_pesado.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 65,
@@ -1963,11 +2228,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        tracos:['VESTIDO', 'LEVE'],
+        tracos: ['VESTIDO', 'LEVE'],
         imagem: 'assets/img/item_armadura_gibao_peles.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 66,
@@ -1993,11 +2258,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        tracos:['VESTIDO', 'PESADA'],
+        tracos: ['VESTIDO', 'PESADA'],
         imagem: 'assets/img/item_armadura_loriga_segmentada.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 67,
@@ -2023,11 +2288,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 4,
-        tracos:['VESTIDO', 'PESADA'],
+        tracos: ['VESTIDO', 'PESADA'],
         imagem: 'assets/img/item_armadura_meia_armadura.png',
         referencias: Referencia.BASICO,
-        paginas: '153 E 154',        
-        tipo: TipoItem.ARMADURA
+        paginas: '153 E 154',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 68,
@@ -2053,11 +2318,16 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        tracos:['VESTIDO', 'LEVE', 'INTIMIDAÇÃO + 1','RESISTIR A EFEITOS DE MEDO CD +1'],
+        tracos: [
+          'VESTIDO',
+          'LEVE',
+          'INTIMIDAÇÃO + 1',
+          'RESISTIR A EFEITOS DE MEDO CD +1',
+        ],
         imagem: 'assets/img/item_armadura_armadura_ossos.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396',        
-        tipo: TipoItem.ARMADURA
+        paginas: '396',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 69,
@@ -2083,11 +2353,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        tracos:['VESTIDO', 'PESADA', 'NÃO REDUZ DESLOCAMENTO USUÁRIO'],
+        tracos: ['VESTIDO', 'PESADA', 'NÃO REDUZ DESLOCAMENTO USUÁRIO'],
         imagem: 'assets/img/item_armadura_armadura_quitina.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396',        
-        tipo: TipoItem.ARMADURA
+        paginas: '396',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 70,
@@ -2113,11 +2383,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 1,
-        tracos:['EMPUNHADO', 'ESCUDO', 'DEFESA +3 ATAQUES A DISNTÂNCIA'],
+        tracos: ['EMPUNHADO', 'ESCUDO', 'DEFESA +3 ATAQUES A DISNTÂNCIA'],
         imagem: 'assets/img/item_armadura_escudo_couro.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396',        
-        tipo: TipoItem.ARMADURA
+        paginas: '396',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 71,
@@ -2143,11 +2413,16 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'LEVE', 'FURTIVIDADE +5', 'NÃO PODE RECEBER MELHORIA MATERIAL ESPECIAL'],
+        tracos: [
+          'VESTIDO',
+          'LEVE',
+          'FURTIVIDADE +5',
+          'NÃO PODE RECEBER MELHORIA MATERIAL ESPECIAL',
+        ],
         imagem: 'assets/img/item_armadura_veste_teia_aranha.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396',        
-        tipo: TipoItem.ARMADURA
+        paginas: '396',
+        tipo: TipoItem.ARMADURA,
       },
       {
         id: 72,
@@ -2173,11 +2448,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'CONSUMÍVEL', 'BOLSA DE 20 BALAS'],
+        tracos: ['EMPUNHADO', 'CONSUMÍVEL', 'BOLSA DE 20 BALAS'],
         imagem: 'assets/img/item_municao_balas.png',
         referencias: Referencia.BASICO,
-        paginas: '151',        
-        tipo: TipoItem.MUNICAO
+        paginas: '151',
+        tipo: TipoItem.MUNICAO,
       },
       {
         id: 73,
@@ -2203,11 +2478,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO','CONSUMÍVEL', 'ALJAVA DE 20 FLECHAS'],
+        tracos: ['EMPUNHADO', 'CONSUMÍVEL', 'ALJAVA DE 20 FLECHAS'],
         imagem: 'assets/img/item_municao_flechas.png',
         referencias: Referencia.BASICO,
-        paginas: '151',        
-        tipo: TipoItem.MUNICAO
+        paginas: '151',
+        tipo: TipoItem.MUNICAO,
       },
       {
         id: 74,
@@ -2233,11 +2508,15 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'CONSUMÍVEL', 'SACO DE COURO DE 20 PEDRAS POLIDAS'],
+        tracos: [
+          'EMPUNHADO',
+          'CONSUMÍVEL',
+          'SACO DE COURO DE 20 PEDRAS POLIDAS',
+        ],
         imagem: 'assets/img/item_municao_pedras.png',
         referencias: Referencia.BASICO,
-        paginas: '151',        
-        tipo: TipoItem.MUNICAO
+        paginas: '151',
+        tipo: TipoItem.MUNICAO,
       },
       {
         id: 75,
@@ -2263,11 +2542,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'CONSUMÍVEL', 'ALJAVA DE 20 VIROTES'],
+        tracos: ['EMPUNHADO', 'CONSUMÍVEL', 'ALJAVA DE 20 VIROTES'],
         imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.BASICO,
-        paginas: '151',        
-        tipo: TipoItem.MUNICAO
+        paginas: '151',
+        tipo: TipoItem.MUNICAO,
       },
       {
         id: 76,
@@ -2293,11 +2572,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'CONSUMÍVEL', 'PACOTE COM 20 DARDOS'],
+        tracos: ['EMPUNHADO', 'CONSUMÍVEL', 'PACOTE COM 20 DARDOS'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
-        paginas: '394 E 395',        
-        tipo: TipoItem.MUNICAO
+        paginas: '394 E 395',
+        tipo: TipoItem.MUNICAO,
       },
       {
         id: 77,
@@ -2323,11 +2602,17 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO','CONSUMÍVEL', 'ARREMESSO', 'CAUSA 2D10 DANO DE LUZ MORTOS-VIVOS DEMÔNIOS DIABOS','REFLEXOS CD SAB REDUZ DANO METADE'],
+        tracos: [
+          'EMPUNHADO',
+          'CONSUMÍVEL',
+          'ARREMESSO',
+          'CAUSA 2D10 DANO DE LUZ MORTOS-VIVOS DEMÔNIOS DIABOS',
+          'REFLEXOS CD SAB REDUZ DANO METADE',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '151',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '151',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 78,
@@ -2353,11 +2638,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['ACROBACIA ESCAPAR CD 30', 'FORCA ESCAPAR CD 25'],
+        tracos: ['ACROBACIA ESCAPAR CD 30', 'FORCA ESCAPAR CD 25'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 79,
@@ -2383,11 +2668,16 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'DUAS MÃOS','PRENDER ARPÉU PONTARIA CD 15', 'ATLETISMO ESCALAR +5'],
+        tracos: [
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'PRENDER ARPÉU PONTARIA CD 15',
+          'ATLETISMO ESCALAR +5',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 80,
@@ -2413,11 +2703,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'PODE SACAR ITEM ALQUÍMICO COM AÇÃO LIVRE'],
+        tracos: ['VESTIDO', 'PODE SACAR ITEM ALQUÍMICO COM AÇÃO LIVRE'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 81,
@@ -2443,11 +2733,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CABE DUAS PESSOAS', 'SOBREVIVÊNCIAS ACAMPAR +2'],
+        tracos: ['CABE DUAS PESSOAS', 'SOBREVIVÊNCIAS ACAMPAR +2'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 82,
@@ -2473,11 +2763,16 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['ROLO 10 METROS', 'DESCER ATLETISMO ESCALAR +2', 'NÓ FIRME DESTREZA CD 15', 'ARREBENTAR FORÇA CD 20'],
+        tracos: [
+          'ROLO 10 METROS',
+          'DESCER ATLETISMO ESCALAR +2',
+          'NÓ FIRME DESTREZA CD 15',
+          'ARREBENTAR FORÇA CD 20',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 83,
@@ -2503,11 +2798,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['OBSERVAR CANTOS', 'SINAIS DE LUZ'],
+        tracos: ['OBSERVAR CANTOS', 'SINAIS DE LUZ'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 84,
@@ -2533,11 +2828,15 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['ACENDER AÇÃO PADRÃO', 'ILUMINA 15 METROS', 'CARGA DE ÓLEO DURA UMA CENA'],
+        tracos: [
+          'ACENDER AÇÃO PADRÃO',
+          'ILUMINA 15 METROS',
+          'CARGA DE ÓLEO DURA UMA CENA',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 85,
@@ -2563,11 +2862,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONTAINER', 'NÃO CONTA COMO VESTIDO'],
+        tracos: ['CONTAINER', 'NÃO CONTA COMO VESTIDO'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 86,
@@ -2593,11 +2892,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONTAINER', 'NÃO CONTA COMO VESTIDO', 'CARGA +2'],
+        tracos: ['CONTAINER', 'NÃO CONTA COMO VESTIDO', 'CARGA +2'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 86,
@@ -2623,11 +2922,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONTAINER', 'VESTIDO', 'CARGA +2'],
+        tracos: ['CONTAINER', 'VESTIDO', 'CARGA +2'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 87,
@@ -2653,11 +2952,17 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL','ARREMESS0', 'ALCANCE CURTO', 'AÇÃO PADRÃO', 'DANO DE FOGO CAUSA +1d6 DANO E CONDIÇÃO EM CHAMAS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'ARREMESS0',
+          'ALCANCE CURTO',
+          'AÇÃO PADRÃO',
+          'DANO DE FOGO CAUSA +1d6 DANO E CONDIÇÃO EM CHAMAS',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 88,
@@ -2683,11 +2988,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'PODE SACAR PERGAMINHO COM AÇÃO LIVRE'],
+        tracos: ['VESTIDO', 'PODE SACAR PERGAMINHO COM AÇÃO LIVRE'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 89,
@@ -2713,11 +3018,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'FORNECE FORÇA +5 PARA ABRIR'],
+        tracos: ['EMPUNHADO', 'FORNECE FORÇA +5 PARA ABRIR'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 90,
@@ -2743,11 +3048,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['DORMIR SEM DIMINUI RECUPERAÇÃO EM UM PASSO.'],
+        tracos: ['DORMIR SEM DIMINUI RECUPERAÇÃO EM UM PASSO.'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '155 E 156',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '155 E 156',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 91,
@@ -2773,11 +3078,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'EMPUNHADO', '+1 TESTES DE RESISTÊNCIA'],
+        tracos: ['VESTIDO', 'EMPUNHADO', '+1 TESTES DE RESISTÊNCIA'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '156 E 157',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '156 E 157',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 92,
@@ -2803,11 +3108,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'LEVE', 'DANO 1D4 IMPACTO +1 FOGO CRITICO x2' ],
+        tracos: ['EMPUNHADO', 'LEVE', 'DANO 1D4 IMPACTO +1 FOGO CRITICO x2'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '156 E 157',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '156 E 157',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 93,
@@ -2833,11 +3138,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'ALCANÇA 3M' ],
+        tracos: ['EMPUNHADO', 'ALCANÇA 3M'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.BASICO,
-        paginas: '156 E 157',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '156 E 157',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 94,
@@ -2863,11 +3168,15 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'HABILIDADE BARBO NOBRE AUMENTA ALCANCE EM UM PASSO', '1D4 CARGAS' ],
+        tracos: [
+          'EMPUNHADO',
+          'HABILIDADE BARBO NOBRE AUMENTA ALCANCE EM UM PASSO',
+          '1D4 CARGAS',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '396 E 398',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 95,
@@ -2893,11 +3202,16 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['ROLO 10 METROS', 'DESCER ATLETISMO ESCALAR +2', 'NÓ FIRME DESTREZA CD 15', 'ARREBENTAR FORÇA CD 28' ],
+        tracos: [
+          'ROLO 10 METROS',
+          'DESCER ATLETISMO ESCALAR +2',
+          'NÓ FIRME DESTREZA CD 15',
+          'ARREBENTAR FORÇA CD 28',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '396 E 398',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 96,
@@ -2923,11 +3237,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'CONSUMÍVEL', 'RESISTÊNCIA A MAGIA ARCANA +2'],
+        tracos: ['VESTIDO', 'CONSUMÍVEL', 'RESISTÊNCIA A MAGIA ARCANA +2'],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '396 E 398',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 97,
@@ -2953,11 +3267,15 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'MAGIA CAMPO DE FORÇA', 'REDUZ O CUSTO EM -2PM USO MAGIA CAMPO DE FORCA'],
+        tracos: [
+          'EMPUNHADO',
+          'MAGIA CAMPO DE FORÇA',
+          'REDUZ O CUSTO EM -2PM USO MAGIA CAMPO DE FORCA',
+        ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        paginas: '396 E 398',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 98,
@@ -2969,9 +3287,9 @@ export class ItemData {
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 100,//    preco/3
+        preco_fabricacao: 100, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 30,//    preco/10
+        preco_conserto: 30, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -2983,10 +3301,15 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['INSTRUMENTO MUSICAL', 'EMPUNHADO','DUAS MÃOS', 'EXECUTA INSPIRAÇÃO AÇÃO MOVIMENTO'],
+        tracos: [
+          'INSTRUMENTO MUSICAL',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'EXECUTA INSPIRAÇÃO AÇÃO MOVIMENTO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 99,
@@ -3000,9 +3323,9 @@ export class ItemData {
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 25,//    preco/3
+        preco_fabricacao: 25, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 7.5,//    preco/10
+        preco_conserto: 7.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3014,26 +3337,31 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['OU CONHECIMENTO +1', 'OU GUERRA +1', 'OU RELIGIÃO +1', 'OU NOBREZA +1'],
+        tracos: [
+          'OU CONHECIMENTO +1',
+          'OU GUERRA +1',
+          'OU RELIGIÃO +1',
+          'OU NOBREZA +1',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
       },
-      { 
+      {
         id: 100,
         nome: 'Equipamento de Viagem',
         descricao: `Um saco de lona contendo instrumentos  úteis para sobreviver nos 
          ermos, como pederneira (pedra para fazer fogo), panelas e talheres para cozinhar,
          anzól e linha para pescar e uma pequena pá. Um personagem sem este item sofre –5 em testes de Sobrevivência para fazer um acampamento. Não inclui saco de dormir ou barraca.`,
-        preco:10,
+        preco: 10,
         defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 3.3,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1,//    preco/10
+        preco_conserto: 1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3045,24 +3373,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['SEM EQUIPAMENTO SOBREVIVENCIA ACAMPAR -5'],
+        tracos: ['SEM EQUIPAMENTO SOBREVIVENCIA ACAMPAR -5'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
       },
-      { 
+      {
         id: 101,
         nome: 'Estojo de Disfarces',
         descricao: `Um conjunto de cosméticos, tintas para cabelo e algumas próteses simples (como bigodes e narizes falsos). Um personagem sem este item sofre –5 em testes de Enganação para disfarce`,
-        preco:50,
+        preco: 50,
         defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 16.6,//    preco/3
+        preco_fabricacao: 16.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 5,//    preco/10
+        preco_conserto: 5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3074,25 +3402,25 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['SEM EQUIPAMENTO ENGANAÇÃO DISFARCE -5'],
+        tracos: ['SEM EQUIPAMENTO ENGANAÇÃO DISFARCE -5'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
       },
-      { 
+      {
         id: 102,
         nome: 'Flauta Mística',
         descricao: `Um instrumento delicado, repleto de runas e pequenas gemas místicas. Um
        bardo que empunhe este item aumenta a CD para resistir às magias lançadas por ele em +1. Conta como um instrumento musica `,
-        preco:150,
+        preco: 150,
         defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 15,//    preco/10
+        preco_conserto: 15, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3104,12 +3432,17 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'INSTRUMENTO MUSICAL', 'DUAS MÃOS', 'MAIS BARDICAS CD +1'],
+        tracos: [
+          'EMPUNHADO',
+          'INSTRUMENTO MUSICAL',
+          'DUAS MÃOS',
+          'MAIS BARDICAS CD +1',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
       },
-      { 
+      {
         id: 103,
         nome: 'Gazua',
         descricao: `Uma barra fina de ferro, com a ponta torta ou em forma de gancho. Um personagem sem este item sofre –5 em testes de Ladinagem para abrir fechaduras.`,
@@ -3119,9 +3452,9 @@ export class ItemData {
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 1.6,//    preco/3
+        preco_fabricacao: 1.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 0.5,//    preco/10
+        preco_conserto: 0.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3133,26 +3466,26 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['SEM EQUIPAMENTO LADINAGEM ABRIR FECHADURA -5'],
+        tracos: ['SEM EQUIPAMENTO LADINAGEM ABRIR FECHADURA -5'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
-      }, 
-      { 
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
+      },
+      {
         id: 104,
         nome: 'Instrumentos de <Ofício>',
         descricao: `Existe uma
        versão deste item para cada perícia de Ofício. Por exemplo, martelo, pregos e serrote para Ofício (carpinteiro), pergaminhos em branco, tinta e pena para Ofício (escriba) e assim por diante. Um
        personagem sem os instrumentos de seu Ofício sofre –5 nessa perícia.`,
-        preco: 30 ,
+        preco: 30,
         defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 10 ,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 3,//    preco/10
+        preco_conserto: 3, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3164,25 +3497,25 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['SEM EQUIPAMENTO OFÍCIO -5'],
+        tracos: ['SEM EQUIPAMENTO OFÍCIO -5'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
-      }, 
-      { 
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
+      },
+      {
         id: 105,
         nome: 'Instrumento Musical',
         descricao: `Um instrumento típico, como um bandolim, flauta ou lira. Veja o
        quadro acima para as regras deste item`,
-        preco: 35 ,
+        preco: 35,
         defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 11.6 ,//    preco/3
+        preco_fabricacao: 11.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 3.5,//    preco/10
+        preco_conserto: 3.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3194,24 +3527,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['INSTRUMENTO MUSICAL', 'EMPUNHADO', 'DUAS MÃOS'],
+        tracos: ['INSTRUMENTO MUSICAL', 'EMPUNHADO', 'DUAS MÃOS'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
-      }, 
-      { 
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
+      },
+      {
         id: 106,
         nome: 'Luneta',
         descricao: `Este instrumento valioso consiste de um cilindro metálico com duas lentes. Fornece +5 em testes de Percepção para observar coisas em alcance longo ou além `,
-        preco:100   ,
-        defesa: 0 ,
+        preco: 100,
+        defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  33.3,//    preco/3
+        preco_fabricacao: 33.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 10,//    preco/10
+        preco_conserto: 10, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3223,24 +3556,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO','PERCEPÇÃO OBSERVAR +5', 'ALCANCE LONGO', 'ALCANCE LONGO+'],
+        tracos: [
+          'EMPUNHADO',
+          'PERCEPÇÃO OBSERVAR +5',
+          'ALCANCE LONGO',
+          'ALCANCE LONGO+',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
-      }, 
-      { 
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
+      },
+      {
         id: 107,
         nome: 'Maleta de medicamentos',
         descricao: `Caixa de madeira com ervas, unguentos, bandagens e outros materiais úteis. Um personagem sem este item sofre –5 em Cura`,
-        preco:50,
-        defesa: 0 ,
+        preco: 50,
+        defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  16.6,//    preco/3
+        preco_fabricacao: 16.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 5,//    preco/10
+        preco_conserto: 5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3252,25 +3590,25 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'DUAS MÃOS','SEM EQUIPAMENTO CURA -5'],
+        tracos: ['EMPUNHADO', 'DUAS MÃOS', 'SEM EQUIPAMENTO CURA -5'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
       },
-      { 
+      {
         id: 108,
         nome: 'Sela',
         descricao: `Uma peça ouro e pelego colocada sobre o lombo da montaria, sobre a qual o cavaleiro se senta. Inclui arreios para conduzir o animal. Um personagem montado em uma montaria sem sela sofre –5 em testes de Cavalgar. Usada no animal, a
         sela não ocupa espaço de carga do personagem `,
-        preco:20,
-        defesa: 0 ,
+        preco: 20,
+        defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  6.6,//    preco/3
+        preco_fabricacao: 6.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 2,//    preco/10
+        preco_conserto: 2, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3282,25 +3620,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['SEM EQUIPAMENTO CAVALGAR -5', 'VESTIDO NO ANIMAL NÃO OCUPA ESPAÇO'],
+        tracos: [
+          'SEM EQUIPAMENTO CAVALGAR -5',
+          'VESTIDO NO ANIMAL NÃO OCUPA ESPAÇO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
-      }, 
-      { 
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
+      },
+      {
         id: 109,
         nome: 'Tambor das Profundezas ',
         descricao: `Um instrumento típico de anões de Doherimm, capaz de sons graves e retumbantes. Enquanto empunha este item, o alcance da habilidade Inspiração e de
         qualquer Música de Bardo é dobrado. Conta como um instrumento musical.`,
-        preco:80,
-        defesa: 0 ,
+        preco: 80,
+        defesa: 0,
         rd: 5,
         pv: 5,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 26.6 ,//    preco/3
+        preco_fabricacao: 26.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 8,//    preco/10
+        preco_conserto: 8, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -3312,24 +3653,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['INSTRUMENTO MUSICAL', 'EMPUNHADO', 'DUAS MÃOS', 'ALCANCE INSPIRACAO/MUSICA BARDICA DOBRADO'],
+        tracos: [
+          'INSTRUMENTO MUSICAL',
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'ALCANCE INSPIRACAO/MUSICA BARDICA DOBRADO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 158',        
-        tipo: TipoItem.FERRAMENTA
+        paginas: '156 E 158',
+        tipo: TipoItem.FERRAMENTA,
       },
-      { 
+      {
         id: 110,
         nome: 'Andrajos de Aldeão',
         descricao: `Roupas típicas de camponês. Consiste de camisa larga e calças soltas ou blusa e saia e não inclui botas — os mais pobres andam descalços. Fornece +2 em testes de Investigação para interrogar (ninguém se importa com o que um aldeão escuta) e, se você possuir o poder Aparência Inofensiva, a CD para resistir a ele aumenta em +2. Porém, impõe –2 em perícias baseadas em Carisma contra pessoas que se importam com classe social.`,
         preco: 1,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 0.3 ,//    preco/3
+        preco_fabricacao: 0.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 0.1,//    preco/10
+        preco_conserto: 0.1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3341,24 +3687,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'INVESTIGAÇÃO INTERROGAR +2', 'APARÊNCIA INOFENSIVA CD +2', 'PERICIA BASEADA EM CARISMA -2 PRECONCEITO SOCIAL'],
+        tracos: [
+          'VESTIDO',
+          'INVESTIGAÇÃO INTERROGAR +2',
+          'APARÊNCIA INOFENSIVA CD +2',
+          'PERICIA BASEADA EM CARISMA -2 PRECONCEITO SOCIAL',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 111,
         nome: 'Bandana',
         descricao: `Um lenço tipicamente usado por bandidos e piratas. Fornece +1 em Intimidação.`,
         preco: 5,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 1.6 ,//    preco/3
+        preco_fabricacao: 1.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 0.5,//    preco/10
+        preco_conserto: 0.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3370,24 +3721,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'INTIMIDAÇÃO +1'],
+        tracos: ['VESTIDO', 'INTIMIDAÇÃO +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 112,
         nome: 'Botas Reforçadas',
         descricao: `Grossas e resistentes, estas botas de cano alto protegem contra perigos do terreno. Aumentam seu deslocamento em +1,5m se ele for reduzido por terreno difícil (após a redução).`,
         preco: 20,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 6.6 ,//    preco/3
+        preco_fabricacao: 6.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 2,//    preco/10
+        preco_conserto: 2, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3399,24 +3750,27 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'DESLOCAMENTO +1,5M SE REDUZIDO EM TERRENO DIFÍCIL'],
+        tracos: [
+          'VESTIDO',
+          'DESLOCAMENTO +1,5M SE REDUZIDO EM TERRENO DIFÍCIL',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 113,
         nome: 'Camisa bufante',
         descricao: `Blusa colorida, com mangas e golas longas e encrespadas. Fornece +1 em Atuação.`,
         preco: 25,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 8.3 ,//    preco/3
+        preco_fabricacao: 8.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 2.5,//    preco/10
+        preco_conserto: 2.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3428,24 +3782,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'ATUAÇÃO +1'],
+        tracos: ['VESTIDO', 'ATUAÇÃO +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 114,
         nome: 'Capa Esvoaçante',
         descricao: `Favorita entre heróis ousados, esta capa de seda produz movimentos amplos e chamativos, que fornecem +1 em Enganação.`,
         preco: 25,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 8.3 ,//    preco/3
+        preco_fabricacao: 8.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 2.5,//    preco/10
+        preco_conserto: 2.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3457,24 +3811,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'ENGANAÇÃO +1'],
+        tracos: ['VESTIDO', 'ENGANAÇÃO +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 115,
         nome: 'Capa Pesada',
         descricao: `Uma capa de couro grossa e resistente. Protege e aquece o corpo, fornecendo +1 em Fortitude.`,
         preco: 15,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 5 ,//    preco/3
+        preco_fabricacao: 5, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1.5,//    preco/10
+        preco_conserto: 1.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3486,24 +3840,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'FORTITUDE +1'],
+        tracos: ['VESTIDO', 'FORTITUDE +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 116,
         nome: 'Casaco Longo',
         descricao: `Feito de peles ou couro grosso forrado com lã, e impermeabilizado com óleo, este casaco é quente e pesado. Fornece +5 em testes de Fortitude para resistir a efeitos de frio, mas impõe penalidade de armadura de –2.`,
         preco: 20,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  6.6 ,//    preco/3
+        preco_fabricacao: 6.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 2,//    preco/10
+        preco_conserto: 2, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3515,24 +3869,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'FORTITUDE +5 EFEITOS FRIO','PENALIDADE ARMADURA -2'],
+        tracos: [
+          'VESTIDO',
+          'FORTITUDE +5 EFEITOS FRIO',
+          'PENALIDADE ARMADURA -2',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 117,
         nome: 'Chapéu Arcano',
         descricao: `Com pinturas e bordados de símbolos místicos, este chapéu pontudo ajuda a canalizar energias mágicas. Ele fornece +1 ponto de mana, mas apenas se você possuir a habilidade de classe Caminho do Arcanista.`,
         preco: 50,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  16.6 ,//    preco/3
+        preco_fabricacao: 16.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 5,//    preco/10
+        preco_conserto: 5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3544,24 +3902,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', '+1 MANA ARCANISTAS'],
+        tracos: ['VESTIDO', '+1 MANA ARCANISTAS'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 118,
         nome: 'Enfeite de Elmo',
         descricao: `Um adorno chamativo, como crina de cavalo, plumas, asas ou um totem de animal. Fornece resistência a medo +2.`,
         preco: 15,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  5 ,//    preco/3
+        preco_fabricacao: 5, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1.5,//    preco/10
+        preco_conserto: 1.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3573,24 +3931,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'RESISTÊNCIA MEDO +2'],
+        tracos: ['VESTIDO', 'RESISTÊNCIA MEDO +2'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 119,
         nome: 'Farrapos de Ermitão',
         descricao: `Trapos “adornados” com plantas e raízes. Uma pessoa vestindo farrapos de ermitão não parece muito civilizada, e sofre –2 em Diplomacia e em testes de Investigação para interrogar. Entretanto, recebe +2 em Adestramento.`,
         preco: 1,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  0.3 ,//    preco/3
+        preco_fabricacao: 0.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 0.1,//    preco/10
+        preco_conserto: 0.1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3602,24 +3960,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'DIPLOMACIA -2', 'INVESTIGAR INTERROGAR -2', 'ADESTRAMENTO +2'],
+        tracos: [
+          'VESTIDO',
+          'DIPLOMACIA -2',
+          'INVESTIGAR INTERROGAR -2',
+          'ADESTRAMENTO +2',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 120,
         nome: 'Gorro de Ervas',
         descricao: `Formado por duas camadas de tecido, este chapéu é preenchido com ervas preparadas para auxiliar a concentração do usuário. Fornece +1 em Vontade.`,
         preco: 75,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  25 ,//    preco/3
+        preco_fabricacao: 25, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 7.5,//    preco/10
+        preco_conserto: 7.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3631,24 +3994,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'VONTADE +1'],
+        tracos: ['VESTIDO', 'VONTADE +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 121,
         nome: 'Luva de Pelica',
         descricao: `Estas luvas delicadas preservam o tato e impedem que o suor deixe os dedos escorregadios. Fornecem +1 em Ladinagem.`,
         preco: 5,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  1.6 ,//    preco/3
+        preco_fabricacao: 1.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 0.5,//    preco/10
+        preco_conserto: 0.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3660,24 +4023,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'LADINAGEM +1'],
+        tracos: ['VESTIDO', 'LADINAGEM +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 122,
         nome: 'Manopla',
         descricao: `Luva metálica que permite socos mais perigosos — o dano de seus ataques desarmados torna-se letal. Uma manopla conta como uma arma para receber melhorias e encantos para usá-los em seus ataques desarmados.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3 ,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1,//    preco/10
+        preco_conserto: 1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3689,24 +4052,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'ATAQUE DESARMADO LETAL', 'CONTA COMO ARMA PARA RECEBER MELHORIAS ENCANTOS'],
+        tracos: [
+          'VESTIDO',
+          'ATAQUE DESARMADO LETAL',
+          'CONTA COMO ARMA PARA RECEBER MELHORIAS ENCANTOS',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 123,
         nome: 'Manto Camuflado',
         descricao: `Um manto camuflado é feito para um tipo de terreno específico (veja a habilidade Explorador, na página 51). Por exemplo, um manto camuflado para floresta pode ser verde e marrom e coberto de folhas, enquanto um manto urbano pode ser cinza ou negro. Usar um manto camuflado no terreno correto fornece +2 em Furtividade.`,
         preco: 12,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  4 ,//    preco/3
+        preco_fabricacao: 4, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1.2,//    preco/10
+        preco_conserto: 1.2, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3718,24 +4085,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'VARIA CONFORMA AMBIENTE', 'FURTIVIDADE +2'],
+        tracos: ['VESTIDO', 'VARIA CONFORMA AMBIENTE', 'FURTIVIDADE +2'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 124,
         nome: 'Manto Eclesiástico',
         descricao: `Um manto típico de igrejas e templos. Fornece +1 em Religião.`,
         preco: 20,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  6.6 ,//    preco/3
+        preco_fabricacao: 6.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 2,//    preco/10
+        preco_conserto: 2, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3747,24 +4114,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'RELIGIÃO +1'],
+        tracos: ['VESTIDO', 'RELIGIÃO +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 125,
         nome: 'Robe Místico',
         descricao: `Um manto longo, adornado com temas arcanos. Fornece +1 em Misticismo.`,
         preco: 50,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  16.6 ,//    preco/3
+        preco_fabricacao: 16.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 5,//    preco/10
+        preco_conserto: 5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3776,24 +4143,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'MISTICISMO +1'],
+        tracos: ['VESTIDO', 'MISTICISMO +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 126,
         nome: 'Sapatos de Camurça',
         descricao: `Leves e resistentes, aprimoram o equilíbrio e a firmeza dos pés, fornecendo +1 em Acrobacia.`,
         preco: 8,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  2.3 ,//    preco/3
+        preco_fabricacao: 2.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 0.8,//    preco/10
+        preco_conserto: 0.8, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3805,24 +4172,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'ACROBACIA +1'],
+        tracos: ['VESTIDO', 'ACROBACIA +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 127,
         nome: 'Tabardo',
         descricao: `Uma peça de tecido usada como um colete, cobrindo o peito e as costas. Geralmente ostenta a heráldica de um reino, igreja, casa nobre ou ordem de cavaleiros. Fornece +1 em Diplomacia.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3 ,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1,//    preco/10
+        preco_conserto: 1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3834,24 +4201,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'DIPLOMACIA +1'],
+        tracos: ['VESTIDO', 'DIPLOMACIA +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 128,
         nome: 'Traje da Corte',
         descricao: `Roupas de luxo, feitas sob medida e adequadas à nobreza e realeza. Inclui algumas joias, como aneis e colares. Em certos ambientes (um baile, um salão de palácio), um personagem que não esteja vestindo este item sofre –5 em perícias baseadas em Carisma.`,
         preco: 100,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  33.3 ,//    preco/3
+        preco_fabricacao: 33.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 10,//    preco/10
+        preco_conserto: 10, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3863,24 +4230,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'SEM EQUIPAMENTO -5 CARISMA COM NOBREZA'],
+        tracos: ['VESTIDO', 'SEM EQUIPAMENTO -5 CARISMA COM NOBREZA'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 128,
         nome: 'Traje de Viajante',
         descricao: `Inclui botas, calças ou saias, cinto, camisa de linho e capa com capuz. A roupa padrão de aventureiros.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3 ,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1,//    preco/10
+        preco_conserto: 1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3892,24 +4259,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO'],
+        tracos: ['VESTIDO'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 129,
         nome: 'Veste de Seda',
         descricao: `Esta roupa leve e elegante deixa seus movimentos os mais livres possíveis. Fornece +1 em Reflexos.`,
         preco: 25,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  8.3 ,//    preco/3
+        preco_fabricacao: 8.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 2.5,//    preco/10
+        preco_conserto: 2.5, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3921,24 +4288,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO','REFLEXOS +1'],
+        tracos: ['VESTIDO', 'REFLEXOS +1'],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '156 E 159',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 130,
         nome: 'Garra Feroz',
         descricao: `Estas pinças de insetos gigantes, presas com tiras de couro, funcionam como uma manopla (Tormenta20, p. 159), mas seus benefícios também se aplicam a uma garra ou a uma arma natural de um personagem sob efeito de habilidades como Forma Selvagem.`,
         preco: 60,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  20 ,//    preco/3
+        preco_fabricacao: 20, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 6,//    preco/10
+        preco_conserto: 6, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3950,24 +4317,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'CONTA COMO ARMA PARA RECEBER MELHORIAS ENCANTOS', 'BENEFICIOS SE APLICAM A GARRA OU ARMA NATURAL'],
+        tracos: [
+          'VESTIDO',
+          'CONTA COMO ARMA PARA RECEBER MELHORIAS ENCANTOS',
+          'BENEFICIOS SE APLICAM A GARRA OU ARMA NATURAL',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '396 E 398',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 131,
         nome: 'Manto do Mantor',
         descricao: `Este manto, feito a partir do couro de um mantor, oferece parte de sua furtividade. Na escuridão completa fornece camuflagem total, mesmo contra criaturas que vejam no escuro.`,
         preco: 450,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  150 ,//    preco/3
+        preco_fabricacao: 150, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 45,//    preco/10
+        preco_conserto: 45, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -3979,24 +4350,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'CAMUFLAGEM TOTAL NA ESCURIDAO COMPLETA', 'ANULA VISAO ESCURO OPONENTE'],
+        tracos: [
+          'VESTIDO',
+          'CAMUFLAGEM TOTAL NA ESCURIDAO COMPLETA',
+          'ANULA VISAO ESCURO OPONENTE',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '396 E 398',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 132,
         nome: 'Manto Pesado',
         descricao: `Estas vestes pesadas com um grande capuz oferecem proteção contra o sol e contra claridade em excesso. Você recebe imunidade a condição ofuscado e, mesmo durante o dia, não é considerado sob luz solar ou semelhante.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3 ,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1,//    preco/10
+        preco_conserto: 1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -4008,24 +4383,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'IMUNIDADE A CONDICAO OFUSCADO'],
+        tracos: ['VESTIDO', 'IMUNIDADE A CONDICAO OFUSCADO'],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '396 E 398',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 133,
         nome: 'Sombreiro',
         descricao: `Tipo de chapéu com abas muito largas, comum nas proximidades de Smokestone. Fornece resistência a efeitos de sentidos +2.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3 ,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 1,//    preco/10
+        preco_conserto: 1, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -4037,24 +4412,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'RESISTÊNCIA A EFEITOS DE SENTIDOS +2'],
+        tracos: ['VESTIDO', 'RESISTÊNCIA A EFEITOS DE SENTIDOS +2'],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '396 E 398',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 134,
         nome: 'Traje Selako',
         descricao: `Feito com couro de selako, este traje fornece parte das capacidades desses predadores. Você recebe +2 em testes de Atletismo para nadar e +3m em seu deslocamento de natação.`,
         preco: 90,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  30 ,//    preco/3
+        preco_fabricacao: 30, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 9,//    preco/10
+        preco_conserto: 9, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alfaiate)',
         valor_teste_resistencia: 0,
@@ -4066,24 +4441,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'ATLETISMO NADAR +2', 'ATLETISMO NADAR DESLOCAMENTO +3M'],
+        tracos: [
+          'VESTIDO',
+          'ATLETISMO NADAR +2',
+          'ATLETISMO NADAR DESLOCAMENTO +3M',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.VESTUARIO
+        paginas: '396 E 398',
+        tipo: TipoItem.VESTUARIO,
       },
-      { 
+      {
         id: 135,
         nome: 'Bolsa de Pó',
         descricao: `Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos.`,
         preco: 300,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  100 ,//    preco/3
+        preco_fabricacao: 100, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 30,//    preco/10
+        preco_conserto: 30, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4095,24 +4474,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIA ENCANTAMENTO E ILUSÃO +2PM PARA APRIMORAMENTO'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIA ENCANTAMENTO E ILUSÃO +2PM PARA APRIMORAMENTO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 159',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 159',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 136,
         nome: 'Cajado Arcano',
         descricao: `Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão.`,
         preco: 1000,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  333.3 ,//    preco/3
+        preco_fabricacao: 333.3, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 100,//    preco/10
+        preco_conserto: 100, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4124,24 +4508,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'DUAS MÃOS', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'LIMITE PM +1 MAGIAS ARCANAS', 'MAGIAS ARCANAS CD +1'],
+        tracos: [
+          'EMPUNHADO',
+          'DUAS MÃOS',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'LIMITE PM +1 MAGIAS ARCANAS',
+          'MAGIAS ARCANAS CD +1',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 137,
         nome: 'Cetro elemental',
         descricao: `Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo.`,
         preco: 750,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  250 ,//    preco/3
+        preco_fabricacao: 250, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 75,//    preco/10
+        preco_conserto: 75, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4153,24 +4543,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DANO DA MAGIA EM UM DADO DO TIPO DO CETRO'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AUMENTA DANO DA MAGIA EM UM DADO DO TIPO DO CETRO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 138,
         nome: 'Costela de Lich',
         descricao: `Esta varinha é feita a partir do osso de um morto-vivo. Suas magias causam +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura.`,
         preco: 300,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  100 ,//    preco/3
+        preco_fabricacao: 100, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 30,//    preco/10
+        preco_conserto: 30, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4182,24 +4577,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIAS CAUSAM +1D6 DANO TREVAS', 'NÃO RECUPERA PV EFEITOS DE CURA'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIAS CAUSAM +1D6 DANO TREVAS',
+          'NÃO RECUPERA PV EFEITOS DE CURA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 139,
         nome: 'Dedo de Ente',
         descricao: `Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM.`,
         preco: 200,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  66.6 ,//    preco/3
+        preco_fabricacao: 66.6, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 20,//    preco/10
+        preco_conserto: 20, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4211,24 +4612,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AO GASTAR PM E TIRAR 1 NO 1D4 RECUPERA MANA'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AO GASTAR PM E TIRAR 1 NO 1D4 RECUPERA MANA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 140,
         nome: 'Luva de Ferro',
         descricao: `Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1.`,
         preco: 150,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  50 ,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 15,//    preco/10
+        preco_conserto: 15, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4240,24 +4646,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO','NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA EM +1 BONUS DEFESA OU RESISTÊNCIA SUAS MAGIAS'],
+        tracos: [
+          'VESTIDO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AUMENTA EM +1 BONUS DEFESA OU RESISTÊNCIA SUAS MAGIAS',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 141,
         nome: 'Medalhão de Prata',
         descricao: `Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em –1 PM o custo de magias de alcance pessoal.`,
         preco: 750,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  250 ,//    preco/3
+        preco_fabricacao: 250, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 75,//    preco/10
+        preco_conserto: 75, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4269,24 +4679,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['VESTIDO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'CUSTO MAGIAS DE ALCANCE PESSOAL -1PM'],
+        tracos: [
+          'VESTIDO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'CUSTO MAGIAS DE ALCANCE PESSOAL -1PM',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 142,
         nome: 'Orbe Cristalina',
         descricao: `Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1.`,
         preco: 750,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  250 ,//    preco/3
+        preco_fabricacao: 250, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 75,//    preco/10
+        preco_conserto: 75, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4298,24 +4712,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'LIMITE PM +1 MAGIAS ARCANAS'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'LIMITE PM +1 MAGIAS ARCANAS',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 143,
         nome: 'Tomo Hermético',
         descricao: `Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2.`,
         preco: 1500,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  500 ,//    preco/3
+        preco_fabricacao: 500, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 150,//    preco/10
+        preco_conserto: 150, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4327,24 +4746,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIAS ARCANAS CD +2'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIAS ARCANAS CD +2',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 144,
         nome: 'Varinha Arcana',
         descricao: `Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1.`,
         preco: 100,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  500 ,//    preco/3
+        preco_fabricacao: 500, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 150,//    preco/10
+        preco_conserto: 150, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4356,24 +4780,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIAS ARCANAS CD +1'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIAS ARCANAS CD +1',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 145,
         nome: 'Ankh Solar',
         descricao: `Este item raro é encontrado em corpos embalsamados no Deserto da Perdição. Pode ser usado como arma leve simples corpo a corpo (dano 1d6, crítico 19, corte). Suas magias que tenham testes de resistência recebem o seguinte aprimoramento: +2 PM. Além do normal, criaturas que falham na resistência não podem recuperar PV por 1 rodada.`,
         preco: 450,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  150 ,//    preco/3
+        preco_fabricacao: 150, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 45,//    preco/10
+        preco_conserto: 45, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4385,24 +4814,32 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'LEVE', 'CORPO A CORPO', 'DANO 1D6 CRÍTICO 19, CORTE', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIAS COM TESTE RESISTENCIA GANHAM APRIMORAMENTO'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'LEVE',
+          'CORPO A CORPO',
+          'DANO 1D6 CRÍTICO 19, CORTE',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIAS COM TESTE RESISTENCIA GANHAM APRIMORAMENTO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '396 E 398',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '396 E 398',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 146,
         nome: 'Tomo de Guerra',
         descricao: `Quando lança uma magia de evocação, você recebe +1 PM para gastar em aprimoramentos.`,
         preco: 300,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  100 ,//    preco/3
+        preco_fabricacao: 100, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 30,//    preco/10
+        preco_conserto: 30, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4414,24 +4851,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'UMA MÃO', 'MAIS EVOCAÇÃO RECEBEM +1 PARA APRIMORAMENTO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO'],
+        tracos: [
+          'EMPUNHADO',
+          'UMA MÃO',
+          'MAIS EVOCAÇÃO RECEBEM +1 PARA APRIMORAMENTO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '396 E 398',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '396 E 398',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 147,
         nome: 'Tomo do Rancor',
         descricao: `Suas magias de dano recebem o seguinte aprimoramento: +2 PM. Além do normal, quando lança uma magia de dano, ela causa +2d8+2 pontos de dano de corte, impacto ou perfuração, a sua escolha.`,
         preco: 750,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao:  250 ,//    preco/3
+        preco_fabricacao: 250, //    preco/3
         tempo_fabricacao_em_horas: 40,
-        preco_conserto: 75,//    preco/10
+        preco_conserto: 75, //    preco/10
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
         valor_teste_resistencia: 0,
@@ -4443,24 +4885,28 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['EMPUNHADO', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIAS DANO GANHAM APRIMORAMENTO'],
+        tracos: [
+          'EMPUNHADO',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIAS DANO GANHAM APRIMORAMENTO',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.ESOTERICO
+        paginas: '396 E 398',
+        tipo: TipoItem.ESOTERICO,
       },
-      { 
+      {
         id: 148,
         nome: 'Ácido',
         descricao: `Frasco de vidro contendo um ácido alquímico altamente corrosivo. Para usar o ácido, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 2d4 pontos de dano de ácido (Reflexos CD Des reduz à metade).`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3 ,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4472,24 +4918,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '2D4 DANO ÁCIDO', 'REFLEXO CD DESTREZA REDUZ METADE'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'ARREMESSO',
+          '2D4 DANO ÁCIDO',
+          'REFLEXO CD DESTREZA REDUZ METADE',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 149,
         nome: 'Bálsamo Restaurador',
         descricao: `Uma pasta verde e fedorenta, feita de ervas medicinais. Usá-la é uma ação completa e recupera 2d4 pontos de vida.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3 ,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4501,24 +4953,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO COMPLETA', 'RECUPERA 2D4 VIDA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'AÇÃO COMPLETA',
+          'RECUPERA 2D4 VIDA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 150,
         nome: 'Bomba',
         descricao: `Uma granada rudimentar. Para usar a bomba, você precisa empunhá-la, gastar uma ação de movimento para acender seu pavio e uma ação padrão para arremessá-la em um ponto em alcance curto. Criaturas a até 3m desse ponto sofrem 6d6 pontos de dano de impacto (Reflexos CD Des reduz à metade)`,
         preco: 50,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  16.6 ,//    preco/3
+        preco_fabricacao: 16.6, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4530,24 +4987,31 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '6D6 DANO IMPACTO', '3 METROS AREA', 'REFLEXO CD DESTREZA REDUZ METADE'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'ARREMESSO',
+          '6D6 DANO IMPACTO',
+          '3 METROS AREA',
+          'REFLEXO CD DESTREZA REDUZ METADE',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 151,
         nome: 'Cosmético',
         descricao: `Perfume ou maquiagem. Usá-lo é uma ação completa e fornece +2 em testes de perícias baseadas em Carisma até o fim da cena.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4559,24 +5023,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO COMPLETA','CARISMA +2 ATÉ O FIM DA CENA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'AÇÃO COMPLETA',
+          'CARISMA +2 ATÉ O FIM DA CENA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 152,
         nome: 'Elixir do Amor',
         descricao: `Um humanoide que beba este líquido adocicado fica apaixonado pela primeira criatura que enxergar (condição enfeitiçado; Vontade CD Car anula). O efeito dura 1d3 dias.`,
         preco: 100,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  33.3,//    preco/3
+        preco_fabricacao: 33.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4588,24 +5057,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'BEBER DEIXA COM CONDIÇÃO ENFEITIÇADO POR 1D3 DIAS','VONTADE CD CARISMA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'BEBER DEIXA COM CONDIÇÃO ENFEITIÇADO POR 1D3 DIAS',
+          'VONTADE CD CARISMA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 153,
         nome: 'Essência de Mana',
         descricao: `Esta poção feita de ervas raras e compostos alquímicos recupera energia pessoal. Beber a essência de mana é uma ação padrão e recupera 1d4 pontos de mana.`,
         preco: 50,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  16.6,//    preco/3
+        preco_fabricacao: 16.6, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4617,24 +5091,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO PADRÃO', 'BEBER RECUPERA 1D4 DE MANA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'AÇÃO PADRÃO',
+          'BEBER RECUPERA 1D4 DE MANA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 154,
         nome: 'Fogo Alquímico',
         descricao: `Frasco de cerâmica contendo uma substância que entra em combustão em contato com o ar. Para usar o fogo alquímico, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 1d6 pontos de dano de fogo e fica em chamas. Um teste de Reflexos (CD Des) reduz o dano à metade e evita as chamas.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  3.3,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4646,24 +5125,31 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '1D6 DANO FOGO', 'CONDIÇÃO EM CHAMAS', 'REFLEXO CD DESTREZA REDUZ METADE E EVITA CONDIÇÃO'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'ARREMESSO',
+          '1D6 DANO FOGO',
+          'CONDIÇÃO EM CHAMAS',
+          'REFLEXO CD DESTREZA REDUZ METADE E EVITA CONDIÇÃO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 155,
         nome: 'Pó do Desaparecimento',
         descricao: `Uma criatura ou objeto coberto por este pó torna-se invisível (como em Invisibilidade) por 2d6 rodadas. O usuário não sabe quando a invisibilidade vai terminar.`,
         preco: 100,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  33.3,//    preco/3
+        preco_fabricacao: 33.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4675,24 +5161,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'CRIATURA AO OBJETO', 'INVISIVEL POR 2D6 RODADAS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'CRIATURA AO OBJETO',
+          'INVISIVEL POR 2D6 RODADAS',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 156,
         nome: 'Baga-de-Fogo',
         descricao: `Pequeno fruto vermelho, apreciado por seu sabor picante. Usado como catalisador, adiciona +1d6 de dano de fogo a magias.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao:  10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4704,24 +5195,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DANO DE FOGO DE MAGIAS +1D6'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'DANO DE FOGO DE MAGIAS +1D6',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 157,
         nome: 'Dente-de-Dragão',
         descricao: `Uma flor comum em regiões montanhosas, especialmente nas Sanguinárias, possui formato parecido com uma presa de monstro. Suas propriedades místicas aumentam o dano de magias em um dado do mesmo tipo.`,
         preco: 45,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 15,//    preco/3
+        preco_fabricacao: 15, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4733,24 +5229,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DANO DE MAGIAS + 1 DADO'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'DANO DE MAGIAS + 1 DADO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '156 E 160',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '156 E 160',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 158,
         nome: 'Essência Abissal',
         descricao: `Um líquido espesso, produzido através do sangue de criaturas demoníacas. Aumenta os dados de dano de magias de fogo em uma categoria — d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (o máximo).`,
         preco: 150,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4762,24 +5263,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DE DANO DA MAGIA EM UM PASSO', 'MAXIMO D12'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AUMENTA DADO DE DANO DA MAGIA EM UM PASSO',
+          'MAXIMO D12',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 159,
         nome: 'Líquen Lilás',
         descricao: `Esta estranha planta tem aspecto cristalino e cresce em abundância na região das Uivantes. Adiciona +1d6 de dano de frio a magias.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4791,24 +5298,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DANO DE FRIO DE MAGIAS +1D6'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'DANO DE FRIO DE MAGIAS +1D6',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 160,
         nome: 'Musgo Púrpura',
         descricao: `Encontrado em florestas fechadas, esse fungo cintilante possui propriedades que fornecem +2 na CD de magias de ilusão.`,
         preco: 45,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 15,//    preco/3
+        preco_fabricacao: 15, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4820,24 +5332,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIA DE ILUSÃO CD +2'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIA DE ILUSÃO CD +2',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 161,
         nome: 'Ossos de Monstro',
         descricao: `Pequenas falanges de criaturas monstruosas, tratadas com óleos alquímicos. Fornece +2 na CD de magias de necromancia.`,
         preco: 45,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 15,//    preco/3
+        preco_fabricacao: 15, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4849,24 +5366,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIA DE NECROMANCIA CD +2'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIA DE NECROMANCIA CD +2',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 162,
         nome: 'Pó de Cristal',
         descricao: `Uma pitada de pó de um mineral cristalino puro, como quartzo ou topázio. Diminui o custo de magias de encantamento em –1 PM.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4878,24 +5400,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DIMINUI CUSTO MAGIA DE ENCANTAMENTO EM 1PM'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'DIMINUI CUSTO MAGIA DE ENCANTAMENTO EM 1PM',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 163,
         nome: 'Pó de Giz',
         descricao: `Calcário esmagado em pó, uma substância comum que, usada como catalisador, diminui o custo de magias de convocação em –1 PM.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4907,24 +5434,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DIMINUI CUSTO MAGIA DE CONVOCAÇÃO EM -1PM'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'DIMINUI CUSTO MAGIA DE CONVOCAÇÃO EM -1PM',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 164,
         nome: 'Ramo Verdejante',
         descricao: `Esta combinação de ervas potencializa magias de cura, aumentando sua cura em +1 PV por dado.`,
         preco: 45,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 15,//    preco/3
+        preco_fabricacao: 15, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4936,24 +5468,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA CURA MAGICA EM +1PV POR DADO'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AUMENTA CURA MAGICA EM +1PV POR DADO',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 165,
         nome: 'Saco de Sal',
         descricao: `Um pequeno saco de couro com sal marinho. Fornece +2 na CD de magias de abjuração.`,
         preco: 45,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 15,//    preco/3
+        preco_fabricacao: 15, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4965,24 +5502,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'MAGIA ABJURAÇÃO CD +2'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'MAGIA ABJURAÇÃO CD +2',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 166,
         nome: 'Seixo de Âmbar',
         descricao: `Essa “gema” feita de seiva de árvore fossilizada diminui o custo de magias de transmutação em –1 PM.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -4994,24 +5536,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'DIMINUI CUSTO MAGIA DE TRANSMUTAÇÃO EM -1PM'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'DIMINUI CUSTO MAGIA DE TRANSMUTAÇÃO EM -1PM',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 167,
         nome: 'Beladona',
         descricao: `Planta extremamente tóxica que afeta o sistema nervoso da vítima. Ingestão, vítima fica paralisada (lenta) por 3 rodadas. A CD para fabricar e para resistir a este veneno aumenta em +5.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 25,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5023,24 +5570,31 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'INGESTÃO', 'PARALISADA POR 3 RODADAS', 'SE RESISTIR LENTO POR 3 RODADAS', 'RESISTIR CD +5'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'INGESTÃO',
+          'PARALISADA POR 3 RODADAS',
+          'SE RESISTIR LENTO POR 3 RODADAS',
+          'RESISTIR CD +5',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 168,
         nome: 'Bruma Sonolenta',
         descricao: `Um gás sonífero. Inalação, vítima fica inconsciente (enjoada por 1 rodada).`,
         preco: 150,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5052,24 +5606,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'INCONSCIENTE POR 1 RODADAS', 'SE RESISTIR ENJOADO POR 1 RODADAS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'INALAÇÃO',
+          'INCONSCIENTE POR 1 RODADAS',
+          'SE RESISTIR ENJOADO POR 1 RODADAS',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 169,
         nome: 'Cicuta',
         descricao: `Planta cuja ingestão pode causar náusea, dores e até morte. Ingestão, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).`,
         preco: 100,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 33.3,//    preco/3
+        preco_fabricacao: 33.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5081,24 +5641,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'INJESTÃO', 'PERDE 1D12 PV POR 3 RODADAS', 'PERDE 1D12 PV POR 1 RODADA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'INJESTÃO',
+          'PERDE 1D12 PV POR 3 RODADAS',
+          'PERDE 1D12 PV POR 1 RODADA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 170,
         nome: 'Essência de Sombra',
         descricao: `Produzido a partir de compostos alquímicos que canalizam energia de trevas. Contato, vítima fica debilitada (fraca).`,
         preco: 100,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 33.3,//    preco/3
+        preco_fabricacao: 33.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5110,24 +5676,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'FICA DEBILITADO DURAÇÃO CENA', 'SE RESISTIR FICA FRACO DURAÇÃO CENA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'CONTATO',
+          'FICA DEBILITADO DURAÇÃO CENA',
+          'SE RESISTIR FICA FRACO DURAÇÃO CENA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 171,
         nome: 'Névoa Tóxica',
         descricao: `Este gás verde queima e corrói a pele e os pulmões. Inalação, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5139,24 +5711,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'PERDE 1D12 PV POR 3 RODADAS', 'PERDE 1D12 PV POR 1 RODADA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'INALAÇÃO',
+          'PERDE 1D12 PV POR 3 RODADAS',
+          'PERDE 1D12 PV POR 1 RODADA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 172,
         nome: 'Peçonha Comum',
         descricao: `Veneno típico, extraído de animais ou plantas tóxicas Contato, perde 1d12 PV.`,
         preco: 15,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 5,//    preco/3
+        preco_fabricacao: 5, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5168,24 +5746,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D12 PV'],
+        tracos: ['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D12 PV'],
         referencias: Referencia.BASICO,
-        paginas: '157 E 161',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 161',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 173,
         nome: 'Peçonha Concentrada',
         descricao: `Dose concentrada da peçonha comum. Contato, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).`,
         preco: 90,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 30,//    preco/3
+        preco_fabricacao: 30, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5197,24 +5775,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D12 PV POR 3 RODADAS', 'PERDE 1D12 PV POR 1 RODADA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'CONTATO',
+          'PERDE 1D12 PV POR 3 RODADAS',
+          'PERDE 1D12 PV POR 1 RODADA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 174,
         nome: 'Peçonha Potente',
         descricao: `Veneno poderoso, extraído de animais ou plantas perigosos. Contato, perde 2d12 PV por rodada durante 3 rodadas (perde 2d12 PV).`,
         preco: 600,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 200,//    preco/3
+        preco_fabricacao: 200, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5226,24 +5810,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 2D12 PV POR 3 RODADAS', 'PERDE 2D12 PV POR 1 RODADA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'CONTATO',
+          'PERDE 2D12 PV POR 3 RODADAS',
+          'PERDE 2D12 PV POR 1 RODADA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 175,
         nome: 'Pó de Lich',
         descricao: `Veneno letal, usado para assassinar alvos poderosos. Ingestão, perde 4d12 PV por rodada durante 5 rodadas (perde 4d12 PV). A CD para fabricar e para resistir a este veneno aumenta em +5.`,
         preco: 3000,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 25,
         cd_identificar_item: 0,
-        preco_fabricacao: 1000,//    preco/3
+        preco_fabricacao: 1000, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5255,24 +5845,31 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'INGESTÃO', 'PERDE 4D12 PV POR 5 RODADAS', 'PERDE 4D12 PV POR 1 RODADA', 'RESISTIR CD +5'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'INGESTÃO',
+          'PERDE 4D12 PV POR 5 RODADAS',
+          'PERDE 4D12 PV POR 1 RODADA',
+          'RESISTIR CD +5',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 176,
         nome: 'Riso de Nimb',
         descricao: `Este gás púrpura faz a vítima rir descontroladamente e agir de forma caótica. Inalação, vítima fica confusa (lenta por 1 rodada).`,
         preco: 150,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5284,24 +5881,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'FICA CONFUSA', 'SE RESISTIR FICA LENTA 1 RODADA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'INALAÇÃO',
+          'FICA CONFUSA',
+          'SE RESISTIR FICA LENTA 1 RODADA',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 177,
         nome: 'Bálsamo de Drogadora',
         descricao: `Produzido por curandeiras dos povos-trovão, este pote de cerâmica contém uma pasta gosmenta. Aplicá-la é uma ação completa e cura 4d6+4 PV.`,
         preco: 60,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5313,24 +5916,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'AÇÃO COMPLETA', 'RECUPERA 4D6+4 VIDA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'AÇÃO COMPLETA',
+          'RECUPERA 4D6+4 VIDA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '396 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 178,
         nome: 'Bomba de Fumaça',
         descricao: `Saco de estopa com pavio, contendo uma pólvora especial que produz mais fumaça do que fogo. Segue as mesmas regras da bomba, mas, em vez de causar dano, emite uma nuvem de fumaça espessa com 6m de raio, que obscurece toda a visão e dura até o fim da cena. Criaturas a até 1,5m têm camuflagem leve e criaturas a partir de 3m têm camuflagem total.`,
         preco: 15,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 5,//    preco/3
+        preco_fabricacao: 5, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5342,24 +5950,32 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', '3 METROS AREA', 'DISTANCIA 1,5M CAMUFLAGEM LEVE', 'DURAÇÃO CENA','DISTANCIA 5M CAMUFLAGEM TOTAL'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'ARREMESSO',
+          '3 METROS AREA',
+          'DISTANCIA 1,5M CAMUFLAGEM LEVE',
+          'DURAÇÃO CENA',
+          'DISTANCIA 5M CAMUFLAGEM TOTAL',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '396 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 179,
         nome: 'Elixir Quimérico',
         descricao: `Beber este elixir é uma ação padrão; até o fim da cena, você ganha uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Se já possui uma mordida, seu dano aumenta em um passo.`,
         preco: 120,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 40,//    preco/3
+        preco_fabricacao: 40, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5371,24 +5987,31 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'INGESTÃO', 'GANHA ARMA NATURAL MORDIDA', 'DANO 1D6 CRITICO X2', 'DURAÇÃO CENA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'INGESTÃO',
+          'GANHA ARMA NATURAL MORDIDA',
+          'DANO 1D6 CRITICO X2',
+          'DURAÇÃO CENA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '396 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 180,
         nome: 'Éter Elemental',
         descricao: `Extraído de elementais, este líquido viscoso tem cor e textura relacionados ao elemento de origem. Uma dose é suficiente para cobrir uma arma corpo a corpo ou 20 munições; aplicá-lo é uma ação padrão e faz a arma (ou as munições) causar +1d4 pontos de dano do tipo do dano elemental até o fim da cena. Múltiplas doses não são cumulativas.`,
         preco: 60,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 20,//    preco/3
+        preco_fabricacao: 20, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5400,24 +6023,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'AUMENTO DANO ARMA EM 1D4 ELEMENTAL', 'DURAÇÃO CENA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'AUMENTO DANO ARMA EM 1D4 ELEMENTAL',
+          'DURAÇÃO CENA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '396 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '396 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 181,
         nome: 'Isca Putrefata',
         descricao: `Frasco de restos mortais diluídos em uma solução macabra. Você pode gastar uma ação padrão para arremessar a isca em um local ou criatura em alcance médio. A isca se gruda ao alvo (Ref CD Des evita) e dura 1d6 rodadas. Durante esse tempo, cada morto-vivo não inteligente em alcance curto é atraído (Von CD Des evita), gastando todas as suas ações para se deslocar até a isca. Quando a alcança, fica fascinado ou, se a isca estiver presa a uma criatura, a ataca.`,
         preco: 60,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 20,//    preco/3
+        preco_fabricacao: 20, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5429,24 +6057,32 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', 'ALCANCE MÉDIO','AREA', 'CRIATURA', 'DURAÇÃO CENA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'ARREMESSO',
+          'ALCANCE MÉDIO',
+          'AREA',
+          'CRIATURA',
+          'DURAÇÃO CENA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 182,
         nome: 'Lágrima Pétrea',
         descricao: `Este líquido cristalino tem o poder de devolver criaturas à sua forma original. Você pode gastar uma ação padrão para aplicá-lo em uma criatura adjacente ou arremessá-lo em uma criatura em alcance curto; uma dose remove todos os efeitos de metamorfose (Ref CD Des evita).`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5458,24 +6094,32 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'ARREMESSO', 'ALCANCE CURTO','REMOVE EFEITOS TODOS METAMORFOSE', 'CRIATURA', 'REFLEXO CD DESTREZA EVITA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'ARREMESSO',
+          'ALCANCE CURTO',
+          'REMOVE EFEITOS TODOS METAMORFOSE',
+          'CRIATURA',
+          'REFLEXO CD DESTREZA EVITA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 183,
         nome: 'Óleo de Baleia',
         descricao: `Este antigo preparado é um destilado de gordura de baleia. Você pode usar uma ação padrão para aplicar o óleo em uma arma ou pacote de munições para ignorar penalidades de combate submerso com esse item até o fim da cena.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5487,24 +6131,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'IGNORA PENALIDADES COMBATE SUBMERSO', 'ALVO ARMA OU MUNIÇÃO', 'DURAÇÃO CENA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'IGNORA PENALIDADES COMBATE SUBMERSO',
+          'ALVO ARMA OU MUNIÇÃO',
+          'DURAÇÃO CENA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 184,
         nome: 'Óleo de Besouro',
         descricao: `O líquido do terrível besouro-do-óleo pode ser usado em lampiões (dobro da duração e área de iluminação) e explosivos. Para usar um frasco, você precisa empunhá-lo, gastar uma ação de movimento para acender seu pavio e uma ação padrão para arremessá-lo em alcance curto. Criaturas a até 3m do ponto atingido sofrem 4d6 pontos de dano de fogo e ficam em chamas (Ref CD Des reduz o dano à metade e evita a condição).`,
         preco: 50,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 16.6,//    preco/3
+        preco_fabricacao: 16.6, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5516,27 +6166,35 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'BOMBA', 'EMPUNHADO', 'ARREMESSO',
-          'ALCANCE CURTO', 'AREA 3M', 'DANO 4D6 DE FOGO', 'CONDICAO EM CHAMAS',
-          'REFLEXO CD DESTREZA REDUZ DANO METADE EVITA CONDICAO'
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'BOMBA',
+          'EMPUNHADO',
+          'ARREMESSO',
+          'ALCANCE CURTO',
+          'AREA 3M',
+          'DANO 4D6 DE FOGO',
+          'CONDICAO EM CHAMAS',
+          'REFLEXO CD DESTREZA REDUZ DANO METADE EVITA CONDICAO',
         ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 185,
         nome: 'Pó Azul',
         descricao: `Saquinho de couro com pó feito a partir de uma planta exótica de Galrasia, capaz de absorver energia mágica ambiente. Inalar o pó é uma ação completa e recupera 2d4 PM.`,
         preco: 150,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5548,25 +6206,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PREPARADO', 'INALAÇÃO', 'AÇÃO COMPLETA', 'RECUPERA 2D4 PM'
+        tracos: [
+          'CONSUMÍVEL',
+          'PREPARADO',
+          'INALAÇÃO',
+          'AÇÃO COMPLETA',
+          'RECUPERA 2D4 PM',
         ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 186,
         nome: 'Corrosivo Mineral',
         descricao: `Pasta mineral corrosiva produzida com ingredientes naturais. Aumenta os dados de dano de magias de ácido em uma categoria: d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (máximo).`,
         preco: 150,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5578,24 +6241,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DANO MAGIA ÁCIDO EM UM PASSO', 'MAXIMO D12'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AUMENTA DADO DANO MAGIA ÁCIDO EM UM PASSO',
+          'MAXIMO D12',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 187,
         nome: 'Gelo Extremo',
         descricao: `Cristais minerais que eliminam todo o calor ao redor. Aumenta os dados de dano de magias de frio em uma categoria: d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (máximo).`,
         preco: 150,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 50,//    preco/3
+        preco_fabricacao: 50, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5607,24 +6276,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DANO MAGIA FRIO EM UM PASSO', 'MAXIMO D12'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AUMENTA DADO DANO MAGIA FRIO EM UM PASSO',
+          'MAXIMO D12',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 188,
         nome: 'Pedaço de Língua',
         descricao: `Glândulas que podem ser usadas como um catalisador que fornece +1 na CD dos testes de Fortitude para resistir a suas magias.`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5636,24 +6311,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'FORTITUDE +1 RESISTIR MAGIAS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'FORTITUDE +1 RESISTIR MAGIAS',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 189,
         nome: 'Raio Cristalizado',
         descricao: `Eletricidade gerada por elementais e outros seres mágicos pode ser solidificada na forma de pequenos cristais. Aumenta os dados de dano de magias de eletricidade em uma categoria: d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (máximo).`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5665,24 +6345,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'CATALIZADOR', 'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO', 'AUMENTA DADO DANO MAGIA ELETRECIDADE EM UM PASSO', 'MAXIMO D12'],
+        tracos: [
+          'CONSUMÍVEL',
+          'CATALIZADOR',
+          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+          'AUMENTA DADO DANO MAGIA ELETRECIDADE EM UM PASSO',
+          'MAXIMO D12',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 190,
         nome: 'Esporos de Cogumelo',
         descricao: `Extraído de certos cogumelos e criaturas aparentadas, causa breve mas perigosa paralisia. Inalação, vítima fica paralisada (lenta) por 1 rodada, depois imune a paralisia por este veneno pela cena.`,
         preco: 75,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 25,//    preco/3
+        preco_fabricacao: 25, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5694,24 +6380,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'INALAÇÃO', 'PARALISADA POR 1 RODADAS', 'SE RESISTIR LENTO POR 1 RODADAS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'INALAÇÃO',
+          'PARALISADA POR 1 RODADAS',
+          'SE RESISTIR LENTO POR 1 RODADAS',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 191,
         nome: 'Peçonha Anciã',
         descricao: `Veneno poderoso, extraído de serpes anciãs, capaz de afetar até criaturas imunes. Contato, perde 3d12 PV por rodada durante 3 rodadas e ignora imunidade a venenos (perde 3d12 PV).`,
         preco: 1800,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 600,//    preco/3
+        preco_fabricacao: 600, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5723,24 +6415,31 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 3D12 PV POR 3 RODADAS', 'SE RESISTIR PERDE 3D12 PV POR 1 RODADA', 'IGNORA IMUNIDADE VENENOS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'CONTATO',
+          'PERDE 3D12 PV POR 3 RODADAS',
+          'SE RESISTIR PERDE 3D12 PV POR 1 RODADA',
+          'IGNORA IMUNIDADE VENENOS',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 192,
         nome: 'Peçonha Irritante',
         descricao: `Este veneno leve, produzido por diversas criaturas, tem efeito brando mas que não pode ser resistido. Contato, perde 1d6 PV.`,
         preco: 10,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 3.3,//    preco/3
+        preco_fabricacao: 3.3, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5752,24 +6451,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D6'],
+        tracos: ['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D6'],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 193,
         nome: 'Veneno Batráquio',
         descricao: `Produzida a partir da saliva de sapos gigantes, esta gosma machuca e enjoa. Contato, perde 1d12 PV e fica enjoado por 1 rodada (perde 1d6 PV).`,
         preco: 30,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 10,//    preco/3
+        preco_fabricacao: 10, //    preco/3
         tempo_fabricacao_em_horas: 8,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         valor_teste_resistencia: 0,
@@ -5781,24 +6480,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'VENENO', 'CONTATO', 'PERDE 1D12 E FICA ENJOADO', 'SE RESISTIR PERDE 1D6 PV'],
+        tracos: [
+          'CONSUMÍVEL',
+          'VENENO',
+          'CONTATO',
+          'PERDE 1D12 E FICA ENJOADO',
+          'SE RESISTIR PERDE 1D6 PV',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALQUIMICO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALQUIMICO,
       },
-      { 
+      {
         id: 194,
         nome: 'Batata Valkariana',
         descricao: `Batatas cortadas em tiras e mergulhadas em óleo fervente. Gordurentas e pouco nutritivas, são o tipo de prato que só é servido numa metrópole como Valkaria. Apesar disso, são gostosas e deixam qualquer um empolgado. Você recebe +1d6 em um teste a sua escolha realizado até o fim do dia. Para não esquecer, deixe 1d6 em cima da sua ficha. De preferência, amarelo.`,
         preco: 2,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 0.6,//    preco/3
+        preco_fabricacao: 0.6, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -5810,24 +6515,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE +1D6 PARA QUALQUER TESTE'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'RECEBE +1D6 PARA QUALQUER TESTE',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 195,
         nome: 'Gorad Quente',
         descricao: `Gorad e leite, servidos quentes. Não tem erro. O gorad ativa o cérebro, fornecendo +2 PM temporários.`,
         preco: 18,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 6,//    preco/3
+        preco_fabricacao: 6, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -5839,24 +6549,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE 2PM TEMPORÁRIOS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'RECEBE 2PM TEMPORÁRIOS',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 196,
         nome: 'Macarrão de Yuvalin',
         descricao: `Yuvalin é uma cidade mineradora em Zakharov, na fronteira com as Montanhas Uivantes. Seus habitantes criaram este prato reforçado (macarrão, bacon e creme de leite!) para encarar suas árduas jornadas de trabalho nas minas. Delicioso, o prato se espalhou por outras cidades e reinos. Você recebe +5 PV temporários.`,
         preco: 6,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 2,//    preco/3
+        preco_fabricacao: 2, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -5868,24 +6583,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE 5PV TEMPORÁRIOS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'RECEBE 5PV TEMPORÁRIOS',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 197,
         nome: 'Prato do Aventureiro',
         descricao: `Um cozido de galinha com legumes, esta é uma refeição simples, mas nutritiva. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de vida em +1 por nível.`,
         preco: 1,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 0.3,//    preco/3
+        preco_fabricacao: 0.3, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -5897,24 +6617,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'AUMENTA RECUPERACAO PV POR NIVEL +1'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'AUMENTA RECUPERACAO PV POR NIVEL +1',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 198,
         nome: 'Ração de Viagem',
         descricao: `Própria para viagens, uma porção desta ração alimenta uma pessoa por um dia. É feita de alimentos conservados, como carne defumada, frutas secas, pão, queijo e biscoitos. Se mantida seca dura bastante, mas quando molhada se estraga em 24 horas.`,
         preco: 0.5,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 0.1,//    preco/3
+        preco_fabricacao: 0.1, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -5926,24 +6651,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'DURAÇÃO UM DIA'],
+        tracos: ['CONSUMÍVEL', 'DURAÇÃO UM DIA'],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 199,
         nome: 'Refeição Comum',
         descricao: `Uma refeição típica inclui pão, queijo, cozido de carne ou galinha com legumes e uma caneca de bebida, geralmente cidra, vinho ou cerveja.`,
         preco: 0.3,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 0.1,//    preco/3
+        preco_fabricacao: 0.1, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -5955,24 +6680,24 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'DURAÇÃO UM DIA'],
+        tracos: ['CONSUMÍVEL', 'DURAÇÃO UM DIA'],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 200,
         nome: 'Sopa de Peixe',
         descricao: `Um cozido de peixe com verduras. É um prato humilde, mas garante um descanso relaxante. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de mana em +1 por nível.`,
         preco: 1,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 0.3,//    preco/3
+        preco_fabricacao: 0.3, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -5984,24 +6709,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'AUMENTA RECUPERACAO PM POR NIVEL +1'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'AUMENTA RECUPERACAO PM POR NIVEL +1',
+        ],
         referencias: Referencia.BASICO,
-        paginas: '157 E 162',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '157 E 162',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 201,
         nome: 'Algravia',
         descricao: `Bebida alcoólica adocicada feita da seiva de feras-cactos. Você recebe +1 em perícias baseadas em Carisma, cumulativo com outros itens. Múltiplas doses são cumulativas entre si, mas intoxicantes; para cada dose além da primeira no mesmo dia, você deve fazer um teste de Fortitude (CD 15 + 5 para cada dose anterior). Em caso de falha, você fica enjoado e perde todos os bônus de alimentação até o fim do dia.`,
         preco: 3,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 1,//    preco/3
+        preco_fabricacao: 1, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -6013,24 +6743,34 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'CARIMSA +1','DOSES CUMULATIVAS', 'DOSES INTOXICANTES','CADA DOSE EXTRA TESTE FORTITUDE CD 15', 'CD AUMENTA 5 CADA DOSE ANTERIOR', 'FALHA DEIXA ENJOADOE PERDE BONUS ALIMENTAÇÃO'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'CARIMSA +1',
+          'DOSES CUMULATIVAS',
+          'DOSES INTOXICANTES',
+          'CADA DOSE EXTRA TESTE FORTITUDE CD 15',
+          'CD AUMENTA 5 CADA DOSE ANTERIOR',
+          'FALHA DEIXA ENJOADOE PERDE BONUS ALIMENTAÇÃO',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',      
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 202,
         nome: 'Banquete de Canceronte',
         descricao: `Um canceronte adulto é suficiente para produzir um pequeno banquete. Você recebe 1d4+1 dados de auxílio. Sempre que realizar um teste de perícia, você pode gastar 1d4 e adicionar o resultado como bônus no teste. Se o banquete for preparado por um personagem com o poder Mestre Cuca, os dados de auxílio se tornam d6. Este prato requer carne fresca de canceronte, sendo assim raramente encontrado longe de grandes cidades costeiras.`,
         preco: 36,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 12,//    preco/3
+        preco_fabricacao: 12, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -6042,24 +6782,30 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE 1D4+1 DADOS 1D4 AUXÍLIO EM TESTE', 'AUMENTA PARA D6 SE FEITO PODER MESTRE CUCA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'RECEBE 1D4+1 DADOS 1D4 AUXÍLIO EM TESTE',
+          'AUMENTA PARA D6 SE FEITO PODER MESTRE CUCA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 203,
         nome: 'Coc-au-Triz',
         descricao: `Ovos de cocatriz são ingredientes mágicos poderosos, e esta guloseima reflete esse poder; é um ninho de fios de ovos assados e gratinados. Ao consumir, escolha uma habilidade com custo em PM. Seu custo diminui em –1 PM.`,
         preco: 54,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 18,//    preco/3
+        preco_fabricacao: 18, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -6071,24 +6817,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'REDUZ CUSTO HABILIDADE EM -1PM'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'REDUZ CUSTO HABILIDADE EM -1PM',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 204,
         nome: 'Cozido de Serpe',
         descricao: `Quando cozida por várias horas em uma sopa específica, a carne da serpe fica livre de seu veneno natural. Diferente de outros alimentos, preparar este cozido é um teste estendido de Ofício (cozinheiro) com CD 20, que requer 3 sucessos antes de 3 falhas. Se preparado com sucesso, fornece+1 em todos os testes de perícia, cumulativo com outros itens. Se falhar, os ingredientes são consumidos e você é envenenado (perde 1d12 pontos de vida por rodada durante 3 rodadas; Fort CD 20 reduz para 1 rodada).`,
         preco: 54,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 20,
         cd_identificar_item: 0,
-        preco_fabricacao: 18,//    preco/3
+        preco_fabricacao: 18, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -6100,24 +6851,33 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'TESTE EXTENDIDO CD 20', '3 SUCESSOS 3 FALHAS', ' SUCESSO RECEBE + 1 TODOS TESTES PERÍCIAS', 'FALHA PERDE 1D12 PV POR 3 RODADAS', 'FORTITUDE CD 20 REDUZ PARA 1 RODADA'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'TESTE EXTENDIDO CD 20',
+          '3 SUCESSOS 3 FALHAS',
+          ' SUCESSO RECEBE + 1 TODOS TESTES PERÍCIAS',
+          'FALHA PERDE 1D12 PV POR 3 RODADAS',
+          'FORTITUDE CD 20 REDUZ PARA 1 RODADA',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '397 E 398',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '397 E 398',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 205,
         nome: 'Gorlogg Ensopado',
         descricao: `Criado nas cozinhas de Yuvalin por Rizzelena, chef élfica de grande talento, este é um ensopado altamente nutritivo. Em sua próxima noite de sono, você aumenta a sua recuperação de PV e PM em +1 por nível.`,
         preco: 6,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 2,//    preco/3
+        preco_fabricacao: 2, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -6129,24 +6889,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'AUMENTA RECUPERACAO DE PV E PM EM +1'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'AUMENTA RECUPERACAO DE PV E PM EM +1',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '398',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '398',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 206,
         nome: 'Omelete Monstruosa',
         descricao: `Dizem que este prato foi inventado por aventureiros presos em uma caverna cheia de ovos. Desde então, tornou-se popular entre aqueles de baixa seletividade alimentar, ou muita coragem. É feita com ovos de qualquer praga monstruosa, mas variações mais refinadas usam ovos de corcel de Kally e outras feras dracônicas menores. Você recebe +2 em rolagens de dano e –2 em testes de perícias baseadas em Sabedoria, cumulativo com outros itens. Se feita com ovos de dragão, muda para +5 e –5. E garante que você será caçado por uma mamãe dragoa furiosa…`,
         preco: 3,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 1,//    preco/3
+        preco_fabricacao: 1, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -6158,24 +6923,29 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'VIDE DESCRIÇÃO'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'VIDE DESCRIÇÃO',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '398',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '398',
+        tipo: TipoItem.ALIMENTACAO,
       },
-      { 
+      {
         id: 207,
         nome: 'Sashimi de Kraken',
         descricao: `Esta iguaria exótica foi criada pelos maiores chefs de Tamu-ra. Você recebe +2 em Diplomacia, cumulativo com outros itens, e 5 PM temporários. Dificilmente encontrada em cidades longe do mar.`,
         preco: 3,
-        defesa: 0 ,
+        defesa: 0,
         rd: 0,
         pv: 2,
         cd_fabricacao: 15,
         cd_identificar_item: 0,
-        preco_fabricacao: 1,//    preco/3
+        preco_fabricacao: 1, //    preco/3
         tempo_fabricacao_em_horas: 1,
-        preco_conserto: 0,//    preco/10
+        preco_conserto: 0, //    preco/10
         tempo_conserto_em_horas: 0,
         pericia_fabricacao_conserto: 'Ofício (cozinheiro)',
         valor_teste_resistencia: 0,
@@ -6187,10 +6957,148 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        tracos:['CONSUMÍVEL', 'PRATO ESPECIAL','DURAÇÃO UM DIA', 'RECEBE +2 DIPLOMACIA CUMULATIVO COM OUTROS ITENS', 'RECEBE 5 PM TEMPORÁRIOS'],
+        tracos: [
+          'CONSUMÍVEL',
+          'PRATO ESPECIAL',
+          'DURAÇÃO UM DIA',
+          'RECEBE +2 DIPLOMACIA CUMULATIVO COM OUTROS ITENS',
+          'RECEBE 5 PM TEMPORÁRIOS',
+        ],
         referencias: Referencia.AMEACAS,
-        paginas: '398',        
-        tipo: TipoItem.ALIMENTACAO
+        paginas: '398',
+        tipo: TipoItem.ALIMENTACAO,
+      },
+      {
+        id: 208,
+        nome: 'Alforje',
+        descricao: `Sacos de couro feitos para serem presos em uma sela. Permitem que um parceiro montaria carregue até 10 espaços de item para você.`,
+        preco: 30,
+        defesa: 0,
+        rd: 5,
+        pv: 5,
+        cd_fabricacao: 15,
+        cd_identificar_item: 0,
+        preco_fabricacao: 10, //    preco/3
+        tempo_fabricacao_em_horas: 1,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: 'Ofício (artesão)',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'CONTAINER',
+          'NÃO CONTA COMO VESTIDO',
+          'ANIMAL',
+          'ADICIONA +10 ESPAÇOS PARA VOCE MONTARIA',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+      },
+      {
+        id: 209,
+        nome: 'Cão de Caça',
+        descricao: `Este cachorro valente e leal pode ser usado como parceiro perseguidor por personagens treinados em Adestramento ou montaria por personagens Pequenos e Minúsculos.`,
+        descricao_extra: `
+        <br>
+        <p>PERSEGUIDOR</p>
+        <p>Um caçador, animal farejador ou outro especialista em localizar alvos.</p>
+        <ul>
+        <li>Iniciante: +2 em Percepção e Sobrevivência.</li>
+        <li>Veterano (somente através de habilidade): você pode usar Sentidos Aguçados.</li>
+        <li>Mestre (somente através de habilidade): você pode usar Percepção às Cegas.</li>
+        </ul>
+        <hr>
+        <p>MONTARIA</p>
+        <p>Cães de porte adequado são montarias comuns para personagens Pequenos ou Minúsculos.</p>
+        <ul>
+        <li>Iniciante: seu deslocamento muda para 9m, você pode usar faro e recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+        <li>Veterano (somente através de habilidade):como acima, mas seu deslocamento muda para 12m e você recebe +2 na Defesa.</li>
+        <li>Mestre (somente através de habilidade): como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</li>
+        </ul>
+        <br>`,
+        preco: 150,
+        defesa: 0,
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'PERSEGUIDOR',
+          'REQUER TREINAMENTO ADESTRAMENTO',
+          'PARCEIRO',
+          'MONTARIA',
+          'PERSONAGENS PEQUENOS MINÚSCULOS',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 210,
+        nome: 'Cavalo',
+        descricao: `A montaria mais comum no Reinado. Pode ser usado como parceiro montaria (veja a página 262). Cavalos sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. `,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>A montaria mais comum do Reinado.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar)</li>
+            <li>Veterano (somente através de habilidade):como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 75,
+        defesa: 0,
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'PARCEIRO',
+          'MONTARIA',
+          'PERSONAGENS MÉDIOS PEQUENOS MINÚSCULOS',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',
+        tipo: TipoItem.ANIMAIS,
       },
     ];
   }

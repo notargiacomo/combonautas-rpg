@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -16,6 +16,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ItemService } from '../../service/item.service';
 import { Item } from '../../model/item';
 import { TipoItem } from '../../enum/tipo.item.enum';
+import { CaixaInformativaComponent } from '../../components/caixa-informativa.component';
+import { MatDialog } from '@angular/material/dialog';
+import { Regras } from '../../enum/regras.enum';
 
 @Component({
   selector: 'app-itens',
@@ -73,6 +76,7 @@ export class ItensComponent {
   numero_registros_pocao_magica = 0;
   numero_registros_acessorio_magico = 0;
   numero_registros_artefato = 0;
+  filtro_traco: string = '';
 
   constructor(private readonly service: ItemService, private fb: FormBuilder) {}
 
@@ -82,190 +86,28 @@ export class ItensComponent {
       tracos: [''],
     });
 
-    this.service.listar({ tipo: TipoItem.ARMA }).subscribe({
-      next: (response) => {
-        this.armas = response;
-        this.numero_registros_armas = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.MUNICAO }).subscribe({
-      next: (response) => {
-        this.municoes = response;
-        this.numero_registros_municoes = this.municoes.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.ARMADURA }).subscribe({
-      next: (response) => {
-        this.armaduras = response;
-        this.numero_registros_armadura = this.armaduras.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.EQUIPAMENTO_AVENTURA }).subscribe({
-      next: (response) => {
-        this.equipamentos_aventura = response;
-        this.numero_registros_equipamento_aventura = this.equipamentos_aventura.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.FERRAMENTA }).subscribe({
-      next: (response) => {
-        this.ferramentas = response;
-        this.numero_registros_ferramenta = this.ferramentas.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.VESTUARIO }).subscribe({
-      next: (response) => {
-        this.vestuarios = response;
-        this.numero_registros_vestuario = this.vestuarios.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.ESOTERICO }).subscribe({
-      next: (response) => {
-        this.esotericos = response;
-        this.numero_registros_esoterico =
-          this.esotericos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.ALQUIMICO }).subscribe({
-      next: (response) => {
-        this.alquimicos = response;
-        this.numero_registros_alquimico =
-          this.alquimicos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.ALIMENTACAO }).subscribe({
-      next: (response) => {
-        this.alimentos = response;
-        this.numero_registros_alimento =
-          this.alimentos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.VEICULOS }).subscribe({
-      next: (response) => {
-        this.veiculos = response;
-        this.numero_registros_veiculo =
-          this.alimentos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.SERVICOS }).subscribe({
-      next: (response) => {
-        this.servicos = response;
-        this.numero_registros_servico =
-          this.servicos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.MELHORIAS }).subscribe({
-      next: (response) => {
-        this.melhorias = response;
-        this.numero_registros_melhoria =
-          this.melhorias.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.RIQUEZAS }).subscribe({
-      next: (response) => {
-        this.riquezas = response;
-        this.numero_registros_riqueza =
-          this.riquezas.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.ENCANTOS }).subscribe({
-      next: (response) => {
-        this.encantos = response;
-        this.numero_registros_encanto =
-          this.encantos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-    this.service.listar({ tipo: TipoItem.POCOES_MAGICAS }).subscribe({
-      next: (response) => {
-        this.pocoes_magicas = response;
-        this.numero_registros_pocao_magica =
-          this.pocoes_magicas.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.ACESSORIOS_MAGICOS }).subscribe({
-      next: (response) => {
-        this.acessorios_magicos = response;
-        this.numero_registros_acessorio_magico =
-          this.acessorios_magicos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({ tipo: TipoItem.ARTEFATOS }).subscribe({
-      next: (response) => {
-        this.artefatos = response;
-        this.numero_registros_artefato =
-          this.artefatos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
+    this.consultar(0);
+    this.consultar(1);
+    this.consultar(2);
+    this.consultar(3);
+    this.consultar(4);
+    this.consultar(5);
+    this.consultar(6);
+    this.consultar(7);
+    this.consultar(8);
+    this.consultar(9);
+    this.consultar(10);
+    this.consultar(11);
+    this.consultar(12);
+    this.consultar(13);
+    this.consultar(14);
+    this.consultar(15);
+    this.consultar(16);
+    this.consultar(17);
+    this.consultar(18);
   }
 
-  filtro_traco: string = '';
-
-  consultarArmas(): void {
+  consultar(idTipo: number): void {
     let filtro = { ...this.form.value };
     if (filtro.nome) {
       // regex - in-memory-web-api
@@ -277,421 +119,109 @@ export class ItensComponent {
       this.filtro_traco = this.form.value.tracos;
     }
 
-    filtro.tipo = TipoItem.ARMA;
+    this.consultarTodos(idTipo, filtro);
+  }
+
+  consultarTodos(idTipo: number, filtro: string) {
+    (filtro as any).tipo = Object.values(TipoItem)[idTipo];
 
     this.service.listar(filtro).subscribe({
       next: (response) => {
-        this.armas = response;
-        this.numero_registros_armas = this.armas.length;
+        if ((filtro as any).tipo === TipoItem.ARMA) {
+          this.armas = response;
+          this.numero_registros_armas = this.armas?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.MUNICAO) {
+          this.municoes = response;
+          this.numero_registros_municoes = this.municoes?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.ARMADURA) {
+          this.armaduras = response;
+          this.numero_registros_armadura = this.armaduras?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.EQUIPAMENTO_AVENTURA) {
+          this.equipamentos_aventura = response;
+          this.numero_registros_equipamento_aventura =
+            this.equipamentos_aventura?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.FERRAMENTA) {
+          this.ferramentas = response;
+          this.numero_registros_ferramenta = this.ferramentas?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.VESTUARIO) {
+          this.vestuarios = response;
+          this.numero_registros_vestuario = this.vestuarios?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.ESOTERICO) {
+          this.esotericos = response;
+          this.numero_registros_esoterico = this.esotericos?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.ALQUIMICO) {
+          this.alquimicos = response;
+          this.numero_registros_alquimico = this.alquimicos?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.ALIMENTACAO) {
+          this.alimentos = response;
+          this.numero_registros_alimento = this.alimentos?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.ANIMAIS) {
+          this.animais = response;
+          this.numero_registros_animal = this.animais?.length;
+        }
       },
       error: (response) => {
         console.log(response);
       },
-      complete: () => {
-        let armas_filtradas: Item[] = [];
-        if (this.filtro_traco.length !== 0) {
-          this.armas.forEach((arma) => {
-            arma.tracos?.forEach((traco) => {
-              if (
-                traco
+      complete: () => {},
+    });
+  }
+
+  consultaTracos(tipo: TipoItem) {
+    if (tipo === TipoItem.ARMA) {
+      this.armas = this.consultarTracosTodosItens(this.armas);
+      this.numero_registros_armas = this.armas.length;
+    }
+  }
+
+  consultarTracosTodosItens(itens: Item[]): Item[] {
+    let itens_filtrado: Item[] = [];
+    if (this.filtro_traco.length !== 0) {
+      itens.forEach((arma) => {
+        arma.tracos?.forEach((traco) => {
+          if (
+            traco
+              .toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .includes(
+                this.filtro_traco
                   .toLowerCase()
                   .normalize('NFD')
                   .replace(/[\u0300-\u036f]/g, '')
-                  .includes(
-                    this.filtro_traco
-                      .toLowerCase()
-                      .normalize('NFD')
-                      .replace(/[\u0300-\u036f]/g, '')
-                  )
-              ) {
-                if (!armas_filtradas.includes(arma)) {
-                  armas_filtradas.push(arma);
-                }
-              }
-            });
-          });
-          this.armas = armas_filtradas;
-          this.numero_registros_armas = this.armas.length;
-        }
+              )
+          ) {
+            if (!itens_filtrado.includes(arma)) {
+              itens_filtrado.push(arma);
+            }
+          }
+        });
+      });
+    }
+
+    return itens_filtrado;
+  }
+
+  
+  readonly dialog = inject(MatDialog);
+    
+  openDialog(titulo: string, idTexto: number) {
+    this.dialog.open(CaixaInformativaComponent, {
+      data: {
+        titulo: titulo,
+        texto: Object.values(Regras)[idTexto],
       },
     });
   }
 
-  consultarArmaduras() {
-    let filtro = { ...this.form.value };
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    if (filtro.tracos) {
-      filtro.tracos = '';
-      this.filtro_traco = this.form.value.tracos;
-    }
-
-    filtro.tipo = TipoItem.ARMADURA;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.armaduras = response;
-        this.numero_registros_armadura = this.armaduras.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarMunicoes() {
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.MUNICAO;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.municoes = response;
-        this.numero_registros_municoes =
-          this.municoes.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarEquipamentosAventura() {
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.EQUIPAMENTO_AVENTURA;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.equipamentos_aventura = response;
-        this.numero_registros_equipamento_aventura =
-          this.equipamentos_aventura.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarFerramentas(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.FERRAMENTA;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.ferramentas = response;
-        this.numero_registros_ferramenta =
-          this.ferramentas.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarVestuario(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.VESTUARIO;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.vestuarios = response;
-        this.numero_registros_vestuario =
-          this.vestuarios.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarEsotericos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.ESOTERICO;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.esotericos = response;
-        this.numero_registros_esoterico =
-          this.esotericos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarAlquimicos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.ALQUIMICO;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.alquimicos = response;
-        this.numero_registros_alquimico =
-          this.alquimicos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarAlimentos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.ALIMENTACAO;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.alimentos = response;
-        this.numero_registros_alimento =
-          this.alimentos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarAnimais(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.ANIMAIS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.animais = response;
-        this.numero_registros_animal =
-          this.animais.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarServicos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.SERVICOS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.veiculos = response;
-        this.numero_registros_veiculo =
-          this.veiculos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarVeiculos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.VEICULOS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.servicos = response;
-        this.numero_registros_servico =
-          this.servicos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarMelhorias(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.MELHORIAS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.melhorias = response;
-        this.numero_registros_melhoria =
-          this.melhorias.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarRiquezas(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.RIQUEZAS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.riquezas = response;
-        this.numero_registros_riqueza =
-          this.riquezas.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarEncantos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.ENCANTOS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.encantos = response;
-        this.numero_registros_encanto =
-          this.encantos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarPocoesMagicas(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.POCOES_MAGICAS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.pocoes_magicas = response;
-        this.numero_registros_pocao_magica =
-          this.pocoes_magicas.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarAcessoriosMagicos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.ACESSORIOS_MAGICOS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.acessorios_magicos = response;
-        this.numero_registros_acessorio_magico =
-          this.acessorios_magicos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  consultarArtefatos(){
-    let filtro = { ...this.form.value };
-
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-
-    filtro.tipo = TipoItem.ACESSORIOS_MAGICOS;
-
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.artefatos = response;
-        this.numero_registros_artefato =
-          this.artefatos.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
 
 }

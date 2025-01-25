@@ -3,6 +3,7 @@ export interface Item {
     tipo:string;
     nome?:string;
     descricao?:string;
+    descricao_extra?:string;
     preco?:number;
     defesa?:number;
     rd?:number;
