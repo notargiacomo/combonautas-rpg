@@ -9105,6 +9105,50 @@ export class ItemData {
         tipo: TipoItem.ANIMAIS,
       },
       {
+        id: 253,
+        nome: 'Molosso Deheoni',
+        descricao: `<p>Resultado de cruzamentos entre várias raças domésticas trazidas de Lamnor na Caravana dos Exilados, o molosso deheoni é um cão enorme, destinado a proteger as habitações dos colonos e auxiliar em caçadas. Acabaria se tornando exímio no combate a serpentes, sendo resistente a seu veneno e hábil em rastreá-las. Essa perícia se tornaria valiosa mais tarde durante a inquisição contra os sszzaazitas, uma vez que o molosso podia farejá-los através de seus disfarces. Nos dias de hoje, o cão é popular como animal de guarda não apenas em aldeias e fazendas, mas também templos, palácios e quaisquer lugares onde devotos do Deus da Traição poderiam se infiltrar.</p>`,
+        descricao_extra: `
+        <br>
+        <p>PERSEGUIDOR</p>
+            <p>Um molosso é um parceiro especial (vigilante) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe +1 na Defesa e +2 em testes de Intuição e Percepção (contra seres ofídicos e sszzaazitas, o bônus nos testes de perícia muda para +5).</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, você recebe +2d6 em uma rolagem de dano corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): muda o bônus na Defesa para +2 e, uma vez por rodada, quando faz uma investida, você pode fazer a manobra derrubar como uma ação livre.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'DOHERIMM', 'PERSEGUIDOR'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '194',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
         id: 254,
         nome: 'Tentacute',
         descricao: `<p>O pequeno animal tem o mesmo tamanho e corpo felino de um gato comum. As maiores diferenças são os olhos telescópicos, como olhos de caracol; a concha em forma de capacete sobre a cabeça, e a cauda longa em forma de tentáculo de polvo, com ventosas e tudo.</p>`,
