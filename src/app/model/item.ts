@@ -6,6 +6,8 @@ export interface Item {
     descricao_extra?:string;
     preco?:number;
     defesa?:number;
+    manutencao?:number;
+    tipo_manutencao?:string;
     rd?:number;
     pv?:number;
     cd_fabricacao?:number;

@@ -1646,9 +1646,9 @@
                   <button class="me-2" (click)="openDialog('Montarias e Combate Montado', 0)" mat-flat-button>
                     Montarias e Combate Montado
                   </button>
-                  <!-- <caixa-informativa 
-                tituto="Montarias e Combate Montado" 
-                texto="Regras.MONTARIA"></caixa-informativa> -->
+                  <button class="me-2" (click)="openDialog('Treinando Montarias Selvagens', 6)" mat-flat-button>
+                    Treinando Montarias Selvagens 
+                  </button>
                 </section>
               </div>
             </div>
@@ -1736,11 +1736,11 @@
                         </mat-tab>
                         <mat-tab label="Outros">
                           <div class="row">
-                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div class="col-sm-3 mt-4">Preço</div>
                             <div
-                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                              class="col-sm-9 mt-4 d-flex justify-content-end"
                             >
-                              {{ "T$ " + animal.preco }}
+                              {{ animal.preco !== 0? "T$ " + animal.preco : 'Vide Treinando Montarias Selvagens' }}
                             </div>
                             <hr />
                           </div>
@@ -1750,6 +1750,15 @@
                               class="col-sm-6 mt-4 d-flex justify-content-end"
                             >
                               {{ animal.tamanho }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Manutênção</div>
+                            <div
+                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                            >
+                              {{ animal.manutencao +' '+ animal.tipo_manutencao +'/dia' }}
                             </div>
                             <hr />
                           </div>

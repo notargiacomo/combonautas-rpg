@@ -7020,12 +7020,14 @@ export class ItemData {
         <p>Cães de porte adequado são montarias comuns para personagens Pequenos ou Minúsculos.</p>
         <ul>
         <li>Iniciante: seu deslocamento muda para 9m, você pode usar faro e recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
-        <li>Veterano (somente através de habilidade):como acima, mas seu deslocamento muda para 12m e você recebe +2 na Defesa.</li>
+        <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 12m e você recebe +2 na Defesa.</li>
         <li>Mestre (somente através de habilidade): como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</li>
         </ul>
         <br>`,
         preco: 150,
         defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
         rd: 0,
         pv: 0,
         cd_fabricacao: 0,
@@ -7050,7 +7052,7 @@ export class ItemData {
           'REQUER TREINAMENTO ADESTRAMENTO',
           'PARCEIRO',
           'MONTARIA',
-          'PERSONAGENS PEQUENOS MINÚSCULOS',
+          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -7066,12 +7068,14 @@ export class ItemData {
             <p>A montaria mais comum do Reinado.</p>
             <ul>
             <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar)</li>
-            <li>Veterano (somente através de habilidade):como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.</li>
             <li>Mestre (somente através de habilidade): como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).</li>
             </ul> 
             <br>`,
         preco: 75,
         defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
         rd: 0,
         pv: 0,
         cd_fabricacao: 0,
@@ -7092,12 +7096,2981 @@ export class ItemData {
         penalidade: 0,
         tracos: [
           'PARCEIRO',
-          'PARCEIRO',
           'MONTARIA',
-          'PERSONAGENS MÉDIOS PEQUENOS MINÚSCULOS',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 211,
+        nome: 'Cavalo de Guerra',
+        descricao: `A montaria mais comum no Reinado. Treinados para Guerra, não se assustam facilmente e dispensam teste teste de cavalgar CD 20 por se assustar.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>A montaria mais comum do Reinado.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar)</li>
+            <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 400,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 212,
+        nome: 'Pônei',
+        descricao: `A montaria mais comum entre raças Pequenas. Pode ser usado como parceiro montaria (veja a página 262). Pôneis sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. Pôneis de guerra dispensam esse teste.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>A montaria mais comum entre raças Pequenas.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar)</li>
+            <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 5,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 213,
+        nome: 'Pônei de Guerra',
+        descricao: `A montaria mais comum entre raças Pequenas. Treinados para Guerra, não se assustam facilmente e dispensam teste teste de cavalgar CD 20 por se assustar.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>A montaria mais comum entre raças Pequenas.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar)</li>
+            <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 30,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 162',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 214,
+        nome: 'Trobo',
+        descricao: `Estas enormes aves, também chamadas de pássaros-touros, são parecidas com avestruzes com chifres, couro e cascos. Não têm asas. Possuem poucas penas, que servem apenas como ornamento. Muito dóceis, trobos são usados em áreas rurais como animais de carga e tração, mas também podem ser usados como montaria.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>Usados como animais de carga e tração, trobos também servem como montarias.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m e você recebe uma ação de movimento extra por turno (apenas para se deslocar) e +1 em testes de resistência.</li>
+            <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 12m e o bônus em testes de resistência muda para +2.</li>
+            <li>Mestre (somente através de habilidade): como acima, mas o bônus em testes de resistência muda para +5.</li>
+            </ul> 
+            <br>
+                    <br>
+        <p>BESTA DE CARGA</p>
+            <p>Uma criatura capaz de carregar peso, como um boi, burro ou mula.</p>
+            <ul>
+            <li>Iniciante: pode carregar 10 espaços de itens.</li>
+            <li>Veterano (somente através de habilidade): pode carregar 15 espaços.</li>
+            <li>Mestre (somente através de habilidade): pode carregar 20 espaços de itens.</li>
+            </ul> 
+            <br>`,
+        preco: 60,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'BESTA DE CARGA',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '157 E 163',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 215,
+        nome: 'Lobo-das-Cavernas',
+        descricao: `Primos primitivos e maiores dos lobos comuns, lobos-das-cavernas são usados como montaria por goblinoides e aventureiros selvagens.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>Primos primitivos e maiores dos lobos comuns, lobos-das-cavernas são usados como montaria por goblinoides e aventureiros selvagens.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 15m e, uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '262',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 216,
+        nome: 'Lobo',
+        descricao: `Versão menor do lobo das cavernas.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>Versão menor do lobo das cavernas.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): como acima, mas seu deslocamento muda para 15m e, uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '262',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 217,
+        nome: 'Grifo',
+        descricao: `Esta fera majestosa é muito cobiçada por heróis.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>Esta fera majestosa é muito cobiçada por heróis.</p>
+            <ul>
+            <li>Iniciante: uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo (um grifo iniciante é um filhote e não pode ser usado como montaria).</li>
+            <li>Veterano (somente através de habilidade): como acima, mas pode ser usado como montaria, mudando seu deslocamento para voo 18m.</li>
+            <li>Mestre (somente através de habilidade): como acima, mas você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '262',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 218,
+        nome: 'Gorlogg',
+        descricao: `A besta quadrúpede lembra um lagarto, mas também um lobo ou pantera, combinando patas robustas com garras felinas e uma cabeça estreita e alongada de mandíbula imensa, com dentes caninos do tamanho de adagas. O animal é grande o bastante para ser cavalgado, embora seja difícil imaginar quem consiga fazê-lo.`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>Esta besta primitiva é usada como montaria pelos mais selvagens</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): como acima, mas o bônus em rolagens de dano corpo a corpo muda para +1d10.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento muda para 15m e o bônus em rolagens de dano corpo a corpo muda para +2d8.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '262',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 219,
+        nome: 'Bulette',
+        descricao: `<p>Temperamental e feroz, esta fera pode ser adquirida de mercadores na Grande Savana, no Deserto da Perdição ou em Doherimm — em outros lugares, atinge o dobro do preço. Pode ser usado como um parceiro montaria.</p> <p>O animal lembra um imenso tubarão com patas curtas, carapaça grossa e a famosa bocarra com centenas de dentes. Quando vocês menos esperam, ele afunda e desaparece no chão, mergulhando sem deixar nenhum túnel atrás de si. O solo ondula como água por onde a fera passa, “nadando” à volta de vocês em círculos cada vez mais fechados.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O bulette é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m (escavação 6m) e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): o bônus em rolagens de dano muda para +1d10.</li>
+            <li>Mestre (somente através de habilidade): o deslocamento de escavação muda para 12m e o bônus em rolagens de dano muda para +2d8.</li>
+            </ul> 
+            <br>`,
+        preco: 500,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO', 'GRANDE SAVANA', 'DESERTO DA PERDIÇÃO', 'DOREHIMM' ,
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 220,
+        nome: 'Capivara',
+        descricao: `<p>Simpática, amistosa e dotada de longos e afiados dentes, a capivara é muito apreciada por ginetes Pequenos como hynne e goblins. Pode ser usado como um parceiro montaria por personagens Pequenos e Minúsculos.</p>
+        <p>O animal lembra um rato ou coelho, mas muito maior e mais robusto, provavelmente pesando o mesmo que um humano. Sua pelagem é áspera e marrom, bastante suja de lama. Tem pescoço muito curto, pequenas orelhas redondas e dentes salientes de roedor.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>A capivara é um parceiro montaria (Médio) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m (natação 12m) e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você pode usar Aparência Inofensiva (se já possuir esse poder, a CD para resistir a ele aumenta em +2).</li>
+            <li>Mestre (somente através de habilidade): uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.</li>
+            </ul> 
+            <br>`,
+        preco: 60,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO',
+          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 221,
+        nome: 'Corcel do Deserto',
+        descricao: `<p>Tipo de cavalo insetoide encontrado na Grande Savana e no Deserto da Perdição. Pode ser usado como um parceiro montaria.</p>
+        <p>Visto de longe, o guerreiro Sar-Allan parecia estar cavalgando um cavalo comum. Quando se aproxima, no entanto, vocês percebem que a criatura nem mesmo é um mamífero; tem as mesmas quatro patas, o mesmo tronco horizonta e a mesma cabeça alongada de um cavalo, mas tudo coberto de carapaça quitinosa. É algum tipo de inseto enorme.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O corcel do deserto é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você ignora terreno difícil natural.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, você pode gastar 1 PM para causar 2d6 pontos de dano de impacto em uma criatura adjacente.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento muda para 15m e você recebe +5 em testes para resistir a efeitos de clima, calor e frio (veja Tormenta20, p. 267).</li>
+            </ul> 
+            <br>`,
+        preco: 150,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO', 'GRANDE SAVANA', 'DESERTO DA PERDIÇÃO',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 222,
+        nome: 'Dromedário',
+        descricao: `<p>Disponível em regiões áridas ou montanhosas, pode ser um parceiro montaria.</p>
+        <p>O animal até lembra um cavalo, mas bem maior e mais robusto. A pelagem é densa, em tons de marrom. Pernas longas terminam em patas achatadas de dois dedos, próprias para solo instável. Tem cabeça triangular, com olhos e orelhas proeminentes, encimando um pescoço longo e flexível. Mais interessante é a grande corcova nas costas.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O dromedário é um parceiro montaria (Grande) que fornece os benefícios a seguir</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e ignora terreno difícil natural em desertos e terrenos similares.</li>
+            <li>Veterano (somente através de habilidade): você recebe +2 em Percepção e Sobrevivência (este bônus é dobrado em desertos) e, uma vez por rodada, pode gastar 1 PM para causar 1d4+3 pontos de dano de impacto em uma criatura em alcance curto.</li>
+            <li>Mestre (somente através de habilidade): você recebe uma ação de movimento extra por turno (apenas para se deslocar) e +5 em testes para resistir a efeitos de clima.</li>
+            </ul> 
+            <br>`,
+        preco: 75,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO', 'REGIÕES ÁRIDAS', 'REGIÕES MONTANHOSAS',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 223,
+        nome: 'Elefante/Mamute',
+        descricao: `<p>Grande demais para ambientes urbanos, é empregado como animal de trabalho em áreas abertas, como fazendas e áreas de mineração. Pode ser usado como um parceiro montaria.</p>
+        <p>O imenso e estranho animal tem pele grossa, rugosa e com pelos espaçados, em tom variando do cinza ao marrom. As pernas são grossas e cilíndricas como colunas de templos, com pés redondos. A cabeçorra tem grandes orelhas e um nariz longo, forte e musculoso como um tentáculo. Da boca emergem duas presas muito longas, que parecem armas perigosas.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O elefante é um parceiro montaria (Enorme) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e ignora terreno difícil.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, você pode sacar um item ou pegar um objeto solto em alcance de 4,5m como ação livre.</li>
+            <li>Mestre (somente através de habilidade): Você recebe +5 em testes de manobra para atropelar e, uma vez por rodada, se vencer o teste para atropelar uma criatura, pode pagar 1 PM para fazer um ataque contra ela.</li>
+            </ul> 
+            <br>`,
+        preco: 1500,
+        defesa: 0,
+        manutencao: 4,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.ENORME,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO',
+          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 224,
+        nome: 'Hiena',
+        descricao: `<p>Embora sejam mais comuns entre gnolls, hienas podem ocasionalmente ser domesticadas por outros povos. Uma hiena pode ser usada como um parceiro especial (veja p. 119) por personagens treinados em Adestramento, ou montaria por personagens Pequenos e Minúsculos.</p>
+        <p>O bando de canídeos robustos, de orelhas arredondadas e focinhos enegrecidos, emite latidos enervantes que lembram risadas. Embora sejam ameaçadores, entre eles emerge uma criatura muito maior, saída de pesadelos.</p>`,
+        descricao_extra: `
+        <br>
+        <p>PERSEGUIDOR</p>
+            <p>A hiena é um parceiro especial (perseguidor) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: +2 em Furtividade e Sobrevivência</li>
+            <li>Veterano (somente através de habilidade): você pode usar Oportunismo. Se possuir esse poder, em vez disso seu custo diminui em –1 PM.</li>
+            <li>Mestre (somente através de habilidade): você pode usar Sentidos Aguçados.</li>
+            </ul> 
+            <br>
+        <p>MONTARIA</p>
+            <p>A hiena pode ser montada por personagens Pequenos e Minúsculos.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você pode usar Oportunismo. Se possuir esse poder, em vez disso seu custo diminui em –1 PM.</li>
+            <li>Mestre (somente através de habilidade): quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</li>
+            </ul> 
+            <br>`,
+        preco: 220,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO', 'GNOLL',
+          'PERSEGUIDOR', 'REQUER TREINAMENTO ADESTRAMENTO',
+          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 225,
+        nome: 'Leão',
+        descricao: `<p>Considerado símbolo de nobreza e força, o majestoso leão pode ser treinado para aceitar um cavaleiro, sendo usado como um parceiro montaria.</p>
+        <p>O leão de corpo poderoso e esguio se aproxima rugindo, o sol brilhando no pelo alaranjado, a juba farta como uma coroa. Parece a ponto de atacar, mas então se detém. O ataque não vem do Rei dos Animais — chega pelas costas, nas garras e presas das várias leoas, que chegaram sorrateiras enquanto o líder do bando distraía vocês.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O leão é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em rolagens de dano corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): quando faz uma investida, o bônus em rolagens de dano corpo a corpo dobra.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento muda para 15m e o bônus em rolagens de dano corpo a corpo muda para +1d10.</li>
+            </ul> 
+            <br>`,
+        preco: 800,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 226,
+        nome: 'Rinoceronte',
+        descricao: `<p>Eram animais de gado dos anões quando estes ainda viviam na superfície; hoje são selvagens e perigosos, de difícil domesticação. Podem ser usados como parceiros montaria, mas raramente são encontrados à venda.</p>
+        <p>O imenso animal de couro grosso poderia ser confundido com um porco imenso, mas com uma cabeçorra volumosa e um enorme chifre no focinho. As pernas são curtas, mas muito fortes — e mais rápidas do que parecem.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O rinoceronte é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe +2 em testes de ataque quando faz investidas.</li>
+            <li>Veterano (somente através de habilidade): você pode usar Carga de Cavalaria. Caso possua esse poder, o bônus no dano em investida aumenta em +1d8.</li>
+            <li>Mestre (somente através de habilidade): quando faz uma investida você ignora 10 pontos de redução de dano do alvo.</li>
+            </ul> 
+            <br>`,
+        preco: 600,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 228,
+        nome: 'Urso Pardo',
+        descricao: `<p>Este robusto predador pode ser encontrado em várias regiões de Arton. Ainda que incomum, pode ser empregado como um parceiro montaria.</p>
+        <p>O tipo mais comum, encontrado em florestas frias, de clima temperado — especialmente nas proximidades das Uivantes. Um parente próximo, o urso marrom, habita florestas mais quentes.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O urso pardo é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra agarrar como uma ação livre. Essa manobra não deixa sua mão ocupada, mas você só pode manter um inimigo agarrado por vez.</li>
+            <li>Mestre (somente através de habilidade): muda o bônus em rolagens de dano corpo a corpo para +1d10.</li>
+            </ul> 
+            <br>`,
+        preco: 300,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO', 'FLORESTAS FRIAS', 'CLIMA TEMPERADO', 'UIVANTES',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '398 e 399',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 227,
+        nome: 'Baleote',
+        descricao: `<p>O grande animal tem aspecto de golfinho ou baleia, mas está “nadando” nas alturas como que por mágica. Tem couro branco-azulado e grandes barbatanas peitorais que quase lembram asas. Traz no dorso um cavaleiro que, por sua indumentária, deve pertencer à Milícia de Vectora.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O baleote é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você pode gastar 1 PM para causar 2d6 pontos de dano de eletricidade em uma linha de 9m (um baleote iniciante é muito jovem para ser usado como montaria).</li>
+            <li>Veterano (somente através de habilidade): pode ser usado como montaria, mudando seu deslocamento para 9m (voo 12m).</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento de voo muda para 15m e você também pode gastar 4 PM para causar 6d6 pontos de dano de eletricidade em uma linha de 9m.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'NOS CÉUS', 'VECTORA',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '210',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 228,
+        nome: 'Cavalo de Carga',
+        descricao: `<p>Uma criatura capaz de carregar peso, como um boi, burro ou mula.</p>`,
+        descricao_extra: `
+        <br>
+        <p>BESTA DE CARGA</p>
+            <p>Uma criatura capaz de carregar peso, como um boi, burro ou mula.</p>
+            <ul>
+            <li>Iniciante: pode carregar 10 espaços de itens.</li>
+            <li>Veterano (somente através de habilidade): pode carregar 15 espaços.</li>
+            <li>Mestre (somente através de habilidade): pode carregar 20 espaços de itens.</li>
+            </ul> 
+            <br>`,
+        preco: 75,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'BESTA DE CARGA',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '210',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 229,
+        nome: 'Cavalo de Namalkah',
+        descricao: `<p>O reino de Namalkah é conhecido por criar os mais extraordinários cavalos de Arton. Seus cavalos de montaria são mais rápidos, seus cavalos de carga são mais fortes e seus cavalos de guerra são mais poderosos.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O cavalo de Namalkah é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 15m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): seu deslocamento muda para 18m e você recebe +2 em ataques corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar) e, uma vez por rodada, +2d6 em uma rolagem de dano corpo a corpo.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'NAMALKAH',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '213',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 230,
+        nome: 'Cavalo Glacial',
+        descricao: `<p>O estranho animal quadrúpede até lembra um cavalo, tem o mesmo tamanho, mas claramente não é. Em vez de pelagem, tem um couro liso e manchado de preto e branco. Em vez de crina, uma grande barbatana atrás da cabeça. A cauda é longa e também achatada como uma nadadeira. E a boca, que parecia pequena como a de um cavalo, arreganha-se, imensa, com fileiras de presas amareladas.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O cavalo glacial é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m (natação 12m) e você recebe redução de frio 5.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, quando faz um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso e acertar o ataque, você causa +2d6 pontos de dano de frio.</li>
+            <li>Mestre (somente através de habilidade): muda a redução de frio para 10 e você recebe uma ação de movimento extra (apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'MONTANHAS UIVANTES','PONTOS GELADOS DE ARTON',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '213',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 231,
+        nome: 'Pantera/Leopardo',
+        descricao: `<p>Este caçador solitário prefere atacar em selvas e florestas escuras, preferencialmente à noite, matando a presa e depois levando-a para ser devorada no alto de uma árvore. O leopardo, espécie com pelo amarelo e manchas escuras, existe em Lamnor, onde disputa caça com os leões. Outra espécie, o leopardo-das-neves, habita as Uivantes.</p>`,
+        descricao_extra: `
+        <br>
+        <p>ASSASSINO</p>
+            <p>A pantera/leopardo é um parceiro especial (assassino) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: uma vez por rodada, quando causa dano com um ataque corpo a corpo, você pode deixar o alvo sangrando.</li>
+            <li>Veterano (somente através de habilidade): a CD dos testes para remover um sangramento que você provoca aumenta em +2.</li>
+            <li>Mestre (somente através de habilidade): os sangramentos que você provoca exigem dois sucessos em testes para serem removidos.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'SELVAGEM',
+          'ASSASSINO',
+          'RARO', 'SELVAS','FLORESTAS ESCURAS', 'UIVANTES',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '216',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 232,
+        nome: 'Tigre',
+        descricao: `<p>Quase não existem mais tigres em estado selvagem; seu habitat natural, a ilha de Tamu-ra, foi devastado pela Tormenta — levando o animal à beira da extinção. Hoje são extremamente raros, vistos apenas em espetáculos como o Circo dos Irmãos Thiannate, demonstrações de arenas e alguns palácios de Nitamu-ra. Considerados sagrados pelos tamuranianos, hoje a Igreja de Lin-Wu exerce esforços para repovoar a ilha com exemplares adquiridos ou capturados no continente.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>tigre é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe +5 em Iniciativa.</li>
+            <li>Veterano (somente através de habilidade): na primeira rodada de combate, você recebe +5 em testes de ataque e rolagens de dano com armas.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento muda para 15m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'EXTREMAMENTE RARO', 'TAMU-RA',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '216',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 233,
+        nome: 'Rinoceronte Lanoso',
+        descricao: `<p>Além do rinoceronte comum dos campos e savanas, existe o rinoceronte lanoso das Uivantes e o brontotério — variedade gigante com chifre em forma de “Y”, encontrada em Galrasia.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O rinoceronte lanoso é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe +2 em testes de ataque quando faz investidas.</li>
+            <li>Veterano (somente através de habilidade): você pode usar Carga de Cavalaria. Se possui esse poder, o bônus no dano em investida aumenta em +1d8.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento não é afetado por gelo ou neve.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'UIVANTES',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '216',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 234,
+        nome: 'Tatu-Montanha',
+        descricao: `<p>O imenso monstro não é realmente um tatu, mas sim uma variedade gigante de molusco — lembrando mais algum tipo de tartaruga monstruosa. O corpo é blindado com uma concha seca e marrom, grande como um celeiro. Sob a carapaça não há patas, mas uma barriga rastejante de caramujo. A cabeça sai de uma abertura, encimando um pescoço curto e apresentando uma massa de tentáculos com protuberâncias redondas nas pontas. Possui uma longa e musculosa cauda, trazendo na ponta uma esfera massivamente revestida de espinhos, à semelhança de uma maça.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O tatu-montanha é um parceiro montaria (Enorme) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m (normal e de natação) e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você recebe +1 na Defesa e redução de ácido 5.</li>
+            <li>Mestre (somente através de habilidade): muda o bônus na Defesa para +2 e a redução de ácido para 10.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 4,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.ENORME,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'PÂNTANOS',
+          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '220',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 235,
+        nome: 'Tumarkhân',
+        descricao: `<p>O animal enorme e robusto parece um elefante, com as mesmas patas poderosas mantendo o corpo muito acima do chão e as mesmas presas proeminentes — mas as semelhanças terminam aí. Olhando melhor, trata-se de um lagarto, o couro coberto de padrões verdes e castanhos. Tem uma cauda curta, que mal chega ao chão. Os olhos são pequenos e bovinos.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O tumarkhân é um parceiro montaria (Enorme) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e seu limite de carga aumenta em 5 espaços.</li>
+            <li>Veterano (somente através de habilidade): você recebe uma ação de movimento extra por turno (apenas para se deslocar) e, uma vez por rodada, recebe +1d8 em uma rolagem de dano corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): o bônus no limite de carga muda para 10 espaços e, quando faz um teste de Força ou de perícia baseada em Força, você pode gastar 2 PM para rolar dois dados e usar o melhor resultado.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 4,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.ENORME,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'KHUBAR',
+          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '222',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 236,
+        nome: 'Urso Panda',
+        descricao: `<p>Menor e relativamente inofensivo, alimenta-se de brotos de bambu e luta apenas em defesa própria. Era nativo de Tamu-ra: hoje está quase extinto, sendo um dos animais mais raros e valiosos de Arton. Alguns dos únicos exemplares vivos conhecidos vivem hoje no palácio do Imperador Tekametsu, na nova capital de Tamu-ra.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O panda é um parceiro montaria (Médio) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m e você recebe +2 em Diplomacia e uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você pode usar Rolamento Defensivo. Caso possua esse poder, em vez disso o custo para usá-lo diminui em –1 PM.</li>
+            <li>Mestre (somente através de habilidade): você pode usar Aparência Inofensiva. Se possuir esse poder, a CD para resistir a ele aumenta em +2.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'EXTREMAMENTE RARO', 'TAMU-RA',
+          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '222',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 237,
+        nome: 'Urso das Cavernas',
+        descricao: `<p>Versão maior e mais antiga do urso comum, encontrado em Galrasia e nas Sanguinárias. Agressivo, é o único urso que ataca seres inteligentes sem hesitar.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O urso das cavernas é um parceiro montaria (Enorme) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe redução de dano 2.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra agarrar como uma ação livre. Essa manobra não deixa sua mão ocupada, mas você só pode manter um inimigo agarrado desta forma.</li>
+            <li>Mestre (somente através de habilidade): muda a redução de dano para 5.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 4,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.ENORME,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'GALRÁSIA', 'SANGUINÁRIAS',
+          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '224',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 239,
+        nome: 'Warg',
+        descricao: `<p>A criatura é quadrúpede e musculosa, grande como um urso e negra como a noite, apenas as presas grandes e brilhantes visíveis contra a pelagem escura. Lembra um lobo imenso, mas com cabeça larga, focinho achatado e mandíbulas grossas. Apesar da aparência bestial, uma inteligência feroz brilha nos olhos vermelhos.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O warg é um parceiro montaria (Grande) que não causa penalidades em Furtividade por seu tamanho e fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você recebe +2 em Furtividade e pode usar a habilidade Ataque Furtivo +2d6 (se já possui Ataque Furtivo, o bônus de dano se acumula).</li>
+            <li>Mestre (somente através de habilidade): uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'LAMNOR', 'SANGUINÁRIAS', 'ERMOS SELVAGENS',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '225',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 240,
+        nome: 'Unicórnio',
+        descricao: `<p>O animal tem a aparência de um grande e magnífico cavalo branco, com um único chifre dourado e espiralado na fronte. Está bebendo de um córrego cristalino, mas, mesmo que vocês não façam nenhum ruído, ele percebe sua presença. E desaparece em um brilho mágico.</p>
+        <p>Unicórnios só aceitam ser cavalgados por pessoas que considerem dignas e seus critérios nem sempre são transparentes. O mestre tem a palavra final sobre se um personagem é digno de cavalgar um unicórnio..</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O unicórnio é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): seu deslocamento muda para 15m e você pode lançar Purificação.</li>
+            <li>Mestre (somente através de habilidade): cada dado de seus efeitos mágicos de cura aumenta em um passo (até o máximo de d12).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'MUITO RARO', 'BOSQUES REMOTOS', 'FLORESTAS REMOTAS',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '226 E 227',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 241,
+        nome: 'Sapo Atroz',
+        descricao: `<p>Apenas os grandes olhos são visíveis na superfície da lama. No entanto, quando o monstro emerge, revela um corpanzil rugoso que poderia rivalizar com um hipopótamo.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O sapo atroz é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m (normal e de natação) e você recebe uma ação de movimento extra por turno (apenas para se deslocar) e +5 em testes de Atletismo para saltar.</li>
+            <li>Veterano (somente através de habilidade): você recebe +2 em testes para derrubar e desarmar.</li>
+            <li>Mestre (somente através de habilidade): muda o bônus de Atletismo para +10 e, uma vez por rodada, você pode gastar 1 PM para fazer uma manobra desarmar ou derrubar contra um alvo a até 3m.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'PÂNTANOS',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '36',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 242,
+        nome: 'Dragão Jovem',
+        descricao: `<p>Dragões, mesmo os jovens, são criaturas orgulhosas e de personalidade forte. Assim, para se tornar o cavaleiro de um dragão, um personagem precisa primeiro conquistar sua amizade e, sobretudo, seu respeito! Isso significa que um dragão montaria não pode simplesmente ser escolhido como opção de uma habilidade (como o poder Parceiro). Conquistar um dragão deve fazer parte da história e ser a recompensa por ações do personagem durante o jogo. Os detalhes exatos de como isso ocorre dependem de cada campanha, mas, em geral, envolvem encontrar um dragão e conquistar seu respeito por meio de um favor, demonstração de poder ou qualquer ato que mostre ao dragão que você é digno de ser seu cavaleiro.</p>
+        <p>Um dragão jovem conta como dois parceiros para efeitos do limite de parceiros que você pode ter. Isso significa que um personagem de nível 4 ou menor dificilmente poderá ter um dragão jovem como parceiro, a menos que consiga aumentar seu limite de parceiros ou escolha o poder Coração de Dragão.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>Dragões jovens de qualquer tipo podem servir como um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m (normal e de voo) e, uma vez por rodada, você pode gastar 1 PM para causar 2d6 pontos de dano da energia do dragão em uma criatura em alcance médio.</li>
+            <li>Veterano (somente através de habilidade): você recebe também uma ação de movimento extra por turno (apenas para se deslocar) e pode gastar 2 PM para causar 4d6 pontos de dano.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento muda para 18m e você pode gastar 5 PM e uma ação de movimento para usar a habilidade Sopro (de acordo com o dragão jovem).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'CONTA COMO DOIS PARCEIROS',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '67',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 243,
+        nome: 'Hienodonte',
+        descricao: `<p>Mais raro e perigoso que as hienas, também existe o hienodonte, sua versão atroz de tempos primevos. Quase do tamanho de um urso, raramente é encontrado longe de Galrasia, onde forma bandos capazes de abater os maiores lagartos-trovão. Alguns foram trazidos para o Reinado por caçadores; acabaram escapando para os ermos, cruzando com hienas normais e liderando suas alcateias. Os maiores bandos gnolls conseguem usá-los como montarias poderosas, e diz-se que alguns aventureiros também os cavalgam.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O hienodonte é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você pode usar Oportunismo. Se possuir esse poder, em vez disso seu custo diminui em –1 PM.</li>
+            <li>Mestre (somente através de habilidade): quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'SELVAGEM',
+          'RARO', 'GALRÁSIA',
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '67',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 244,
+        nome: 'Corcel de Kally',
+        descricao: `<p>A criatura tem o tamanho e forma de um cavalo, mas claramente não é. O corpo escamado, a longa cauda, as grandes asas coriáceas, as mandíbulas com dentes afiados de onde pingam chamas — tudo isso deixa pouca dúvida sobre sua real natureza.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O corcel de Kally é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): o bônus na rolagem de dano muda para +1d8 e seu deslocamento muda para 12m (normal e de voo).</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento normal e de voo muda para 18m e, uma vez por rodada, você pode gastar 2 PM para causar 3d8 pontos de dano de fogo em todas as criaturas em um cone de 6m (Ref CD Car reduz à metade).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'NÃO NATURAL',
+          'RECOMPENSA DEVOTOS DE KALLY' ,
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '148',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 245,
+        nome: 'Ko-Kabuto',
+        descricao: `<p>Um olhar apressado sugere que a grande besta-inseto seja alguma aberração da Tormenta. No entanto, por estranho que pareça, o robusto besouro negro com chifres enormes age como um animal natural.</p>`,
+        descricao_extra: `
+        <br>
+        <p>GUARDIÃO</p>
+            <p>O ko-kabuto é um parceiro especial (guardião) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe visão na penumbra e +1 na Defesa.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): o bônus na Defesa muda para +2 e o bônus em rolagens de dano muda para +1d10.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.5,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.PEQUENO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'TAMU-RA' ,
+          'GUARDIÃO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '155',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 246,
+        nome: 'Dai-Kabuto',
+        descricao: `<p>Um olhar apressado sugere que a grande besta-inseto seja alguma aberração da Tormenta. No entanto, por estranho que pareça, o robusto besouro negro com chifres enormes age como um animal natural.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O dai-kabuto é um parceiro montaria (Grande) que fornece os benefícios a seguir. </p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m e você recebe +2 em testes de agarrar e derrubar e uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você recebe deslocamento de voo 6m.</li>
+            <li>Mestre (somente através de habilidade): o bônus em agarrar se aplica a todas as manobras e você recebe +2 na Defesa.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'MONTARIA',
+          'RARO', 'TAMU-RA' ,
+          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '155',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 247,
+        nome: 'Cão de Kally',
+        descricao: `<p>Quando o bando de humanoides-cães-lagartos raivosos emerge da vegetação, algo maior toma a dianteira. Uma fera semelhante aos kobolds no aspecto canino e reptiliano, mas quadrúpede e muito maior. Lembra um lobo escamado, com chifres de kobold na cabeça e no pescoço. Quando arreganha a bocarra, além de presas enormes, exibe também o temido brilho flamejante de outro monstro bem conhecido…</p>`,
+        descricao_extra: `
+        <br>
+        <p>FORTÃO</p>
+            <p>Embora seja difícil de treinar, um cão de Kally é um parceiro especial (fortão) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: uma vez por rodada, uma de suas rolagens de dano corpo a corpo causa +1d6 pontos de dano de fogo.</li>
+            <li>Veterano (somente através de habilidade): muda para +2d6.</li>
+            <li>Mestre (somente através de habilidade): além do normal, uma vez por rodada, você pode gastar 2 PM para causar 4d6 pontos de dano de fogo em um cone de 6m.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO', 'FORTÃO',
+          'RARO', 'KOBOLDS'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '179',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 248,
+        nome: 'Bogum',
+        descricao: `<p>O que parecia apenas um pequeno amontoado de folhas subitamente se move. Ergue-se sobre duas perninhas de galhos, distende dois bracinhos de gravetos. Olhinhos brilham sob a concha de caramujo que lhe serve de cabeça.</p>`,
+        descricao_extra: `
+        <br>
+        <p>COMPANHEIRO ANIMAL ESPECIAL</p>
+            <p>O bogum é um parceiro especial (companheiro animal), exclusivo de druidas, que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você forma um elo mental com o bogum (semelhante ao de um arcanista com seu familiar) e recebe +2 em Percepção e Sobrevivência.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, você recebe +1d6 de ácido em uma rolagem de dano.</li>
+            <li>Mestre (somente através de habilidade): o bogum fornece também o benefício de um dedo de ente.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO', 'COMPANHEIRO ANIMAL',
+          'RARO', 'DRUIDA', 'ALLIHANNA' ,
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '190',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 249,
+        nome: 'Escudeiro',
+        descricao: `<p>Os elfos-do-mar erguem-se das águas e avançam como guerreiros furiosos. Empunham estranhos escudos feitos de carapaça, com lanças que lembram ferrões.Olhando melhor, seus escudos são na verdade um tipo de grande crustáceo agarrado ao braço!</p>`,
+        descricao_extra: `
+        <br>
+        <p>FORTÃO</p>
+            <p>O escudeiro é um parceiro especial (fortão) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você pode empunhar o escudeiro como uma lança e um escudo pesado na mesma mão; você pode atacar com a lança sem perder o bônus na Defesa com o escudo, mas não pode atacar com ela e o escudo na mesma rodada.</li>
+            <li>Veterano (somente através de habilidade): o escudeiro recebe uma melhoria de arma ou de escudo (exceto material especial).</li>
+            <li>Mestre (somente através de habilidade): o escudeiro recebe uma segunda melhoria de arma ou de escudo (exceto material especial).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.5,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.PEQUENO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO', 'FORTÃO',
+          'RARO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '190',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 250,
+        nome: 'Fofo',
+        descricao: `<p>O bicho lembra uma massa de pão, tanto na consistência quanto na cor. É quente e macio ao toque. Não tem olhos ou feições reconhecíveis, mas muda continuamente de forma, representando figuras familiares; parece estar tentando se comunicar!</p>`,
+        descricao_extra: `
+        <br>
+        <p>GUARDIÃO</p>
+            <p>O fofo é um parceiro especial (guardião) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe redução de dano 1.</li>
+            <li>Veterano (somente através de habilidade): a RD aumenta para 2 e você pode vestir um item que ocupe 1 espaço ou menos sem contar em seu limite de itens vestidos.</li>
+            <li>Mestre (somente através de habilidade): a RD aumenta para 3.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MINUSCULO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'GUARDIÃO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '192',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 251,
+        nome: 'Gambá',
+        descricao: `<p>O gambá é um parceiro especial (vigilante) que fornece os benefícios a seguir.</p>`,
+        descricao_extra: `
+        <br>
+        <p>VIGILANTE</p>
+            <p>O fofo é um parceiro especial (guardião) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe +2 em Iniciativa e Percepção.</li>
+            <li>Veterano (somente através de habilidade): você pode gastar uma ação de movimento e 1 PM para deixar uma criatura em alcance curto enjoada por 1d4 rodadas (Fort CD Sab evita).</li>
+            <li>Mestre (somente através de habilidade): os bônus em perícias aumentam para +5.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MINUSCULO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'VIGILANTE'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '192',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 252,
+        nome: 'Homúnculo',
+        descricao: `<p>Você desperta a tempo de ver algo próximo de seu travesseiro algo pequeno e demoníaco. Lembra uma estatueta grotesca, feita de ônix ou outro mineral escuro. Tem a aparência de um demônio diminuto, com asas de morcego e gemas amarelas nos olhos. Na ponta da cauda longa há um ferrão gotejando algo que exala filetes de vapor.</p>`,
+        descricao_extra: `
+        <br>
+        <p>AJUDANTE</p>
+            <p>O homúnculo é um parceiro especial (ajudante) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seus venenos causam a perda de +1 PV por dado.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, quando faz um ataque, você pode gastar 1 PM. Se acertar o ataque, causa a perda de 1d12 PV por veneno.</li>
+            <li>Mestre (somente através de habilidade): a perda de PV aumenta para +2 por dado.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MINUSCULO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'ABISSAL', 'AJUDANTE'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '193',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 253,
+        nome: 'Kill’Bone',
+        descricao: `<p>O animal parece um cão selvagem, mas com algum tipo de armadura óssea revestida de espinhos e uma longa cauda também espinhosa. A cabeça ossuda lembra mais um crânio, os olhos pouco visíveis através de orifícios que lembram órbitas vazias.</p>`,
+        descricao_extra: `
+        <br>
+        <p>PERSEGUIDOR</p>
+            <p>O kill’bone é um parceiro especial (perseguidor) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe faro e, uma vez por rodada, +1d6 em uma rolagem de dano corpo a corpo (o dano extra é dobrado contra finntroll e trolls).</li>
+            <li>Veterano (somente através de habilidade): o bônus em rolagens de dano muda para +1d8 e você recebe +2 em testes de perícia contra finntroll e trolls.</li>
+            <li>Mestre (somente através de habilidade): o bônus em rolagens de dano muda para +1d10 e você não pode ser flanqueado.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'DOHERIMM', 'PERSEGUIDOR'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '194',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 253,
+        nome: 'Kill’Bone',
+        descricao: `<p>O animal parece um cão selvagem, mas com algum tipo de armadura óssea revestida de espinhos e uma longa cauda também espinhosa. A cabeça ossuda lembra mais um crânio, os olhos pouco visíveis através de orifícios que lembram órbitas vazias.</p>`,
+        descricao_extra: `
+        <br>
+        <p>PERSEGUIDOR</p>
+            <p>O kill’bone é um parceiro especial (perseguidor) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe faro e, uma vez por rodada, +1d6 em uma rolagem de dano corpo a corpo (o dano extra é dobrado contra finntroll e trolls).</li>
+            <li>Veterano (somente através de habilidade): o bônus em rolagens de dano muda para +1d8 e você recebe +2 em testes de perícia contra finntroll e trolls.</li>
+            <li>Mestre (somente através de habilidade): o bônus em rolagens de dano muda para +1d10 e você não pode ser flanqueado.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'DOHERIMM', 'PERSEGUIDOR'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '194',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 254,
+        nome: 'Tentacute',
+        descricao: `<p>O pequeno animal tem o mesmo tamanho e corpo felino de um gato comum. As maiores diferenças são os olhos telescópicos, como olhos de caracol; a concha em forma de capacete sobre a cabeça, e a cauda longa em forma de tentáculo de polvo, com ventosas e tudo.</p>`,
+        descricao_extra: `
+        <br>
+        <p>VIGILANTE</p>
+            <p>O tentacute é um parceiro especial (vigilante) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe +2 em Percepção e, quando faz um teste de Ladinagem para punga, pode rolar dois dados e usar o melhor resultado.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, você pode gastar uma ação de movimento e 1 PM para fazer um teste de Ladinagem para punga contra um alvo em alcance curto que possa ser alcançado pelo tentacute.</li>
+            <li>Mestre (somente através de habilidade): o bônus em Percepção se torna +4 e o alcance da punga muda para médio.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MINUSCULO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'COPAS DE ARVORES DE FLORESTAS', 'VIGILANTE'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '195',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 255,
+        nome: 'Verilêmur',
+        descricao: `<p>O verilêmur, também conhecido como “protetor da Ordem”, é um pequeno mamífero de hábitos noturnos que se alimenta de frutas e insetos. Animal sagrado de Khalmyr, emana uma aura de ordem que afeta as chances ao seu redor, diminuindo a instabilidade, a desordem e a mentira. Dentro dessa área será mais difícil para qualquer criatura mentir ou usar qualquer poder ou magia de ilusão, invisibilidade, influência ou controle da mente.</p>`,
+        descricao_extra: `
+        <br>
+        <p>VIGILANTE</p>
+            <p>O verilêmur é um parceiro especial (vigilante) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você pode lançar a magia Círculo da Justiça (atributo-chave Sabedoria); se aprender essa magia, seu custo diminui em –1 PM.</li>
+            <li>Veterano (somente através de habilidade): quando falha em um teste de resistência contra uma magia, você pode gastar 2 PM para rolar novamente esse teste (apenas uma vez por teste).</li>
+            <li>Mestre (somente através de habilidade): a CD para resistir à sua magia Círculo da Justiça aumenta em +5.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MINUSCULO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'APENAS DEVOTOS DE KHALMYR', 'VIGILANTE'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '196 E 197',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 256,
+        nome: 'Malafex',
+        descricao: `<p>O inimigo natural do verilêmur, como esperado, é um animal sagrado de Nimb — o malafex, ou “pássaro do Caos”. Devotos dizem que estas aves são puras manifestações do acaso, da sorte e do azar, trazendo consigo o imprevisível e o inesperado. A presença de um ou mais deles distorce as leis naturais da área, trocando a sorte pelo azar. Coisas que deveriam dar certo dão errado e vice-versa. Assim, um combatente extremamente habilidoso errará a maioria de seus golpes, enquanto um novato incompetente acertará o tempo inteiro!</p>`,
+        descricao_extra: `
+        <br>
+        <p>AJUDANTE</p>
+            <p>O malafex é um parceiro especial (ajudante) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você pode usar Sorte dos Loucos. Se já tiver esse poder, a perda de PM é reduzida para 1d4.</li>
+            <li>Veterano (somente através de habilidade): você pode usar Sorte dos Loucos em aliados voluntários em alcance curto (caso falhe, o aliado perde os PM).</li>
+            <li>Mestre (somente através de habilidade): quando um inimigo em alcance curto faz um teste, você pode gastar 2 PM para forçá-lo a rolar novamente o dado. Se ainda assim ele passar, você perde 1d6 PM (ou 1d4 se tiver Sorte dos Loucos).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MINUSCULO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'APENAS DEVOTOS DE NIMB', 'AJUDANTE'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '196 E 197',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 257,
+        nome: 'Asa-Assassina',
+        descricao: `<p>As criaturas têm o aspecto de mariposas, mas são grandes como pássaros. As asas abertas, de cores metálicas, produzem brilhos e sons afiados enquanto o bando voeja em sua direção.</p>`,
+        descricao_extra: `
+        <br>
+        <p>ASSASSINO</p>
+            <p>Uma asa-assassina é um parceiro especial (assassino) que fornece os benefícios a seguir</p>
+            <ul>
+            <li>Iniciante: uma vez por rodada, quando causa dano com um ataque, você pode deixar a vítima sangrando.</li>
+            <li>Veterano (somente através de habilidade): a perda de PV pelo sangramento aumenta para 1d8.</li>
+            <li>Mestre (somente através de habilidade): a perda de PV aumenta para 2d8.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MINUSCULO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'MASMORRAS', 'ASSASSINA'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '198',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 258,
+        nome: 'Cocatriz',
+        descricao: `<p>O bicho parece um galo grande e muito feio, mas com duas caudas (ou três, difícil dizer) escamadas de serpente. Apesar do aspecto cômico, os olhos brilham sinistros e avermelhados.</p>`,
+        descricao_extra: `
+        <br>
+        <p>ADEPTO</p>
+            <p>A cocatriz é um parceiro especial (adepto) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: suas habilidades mágicas que causam condições de movimento têm o custo reduzido em –1 PM.</li>
+            <li>Veterano (somente através de habilidade): a CD para resistir a essas habilidades aumenta em +2.</li>
+            <li>Mestre (somente através de habilidade): a redução de custo se torna cumulativa com outras reduções.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.5,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.PEQUENO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'ADEPTO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '199',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 259,
+        nome: 'Cocatriz-Real',
+        descricao: `<p>Do tamanho de um avestruz, a criatura lendária comanda e protege várias famílias de cocatrizes normais. Não há relatos sobre bandos de cocatrizes-reais, embora isso não seja impossível.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>cocatriz-real é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você ignora terreno difícil.</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer com que a vítima fique lenta (Fort CD For evita).</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento muda para 12m (normal e de voo). Entretanto, quando voa, você deve terminar seu movimento sobre o chão ou outra superfície firme.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '199',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 260,
+        nome: 'Cavalo Esqueleto',
+        descricao: `<p>Dispensa explicações.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O cavalo esqueleto é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): você recebe +2 em Intimidação e na CD de efeitos de medo.</li>
+            <li>Mestre (somente através de habilidade): você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar) e o alcance de seus efeitos de medo aumenta em um passo (de curto para médio, de médio para longo).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '229',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 261,
+        nome: 'Deinonico',
+        descricao: `<p>O animal é um lagarto bípede do tamanho de um cavalo, coberto de plumagem muito colorida, como um pássaro tropical. Tem longas patas traseiras, cada pé trazendo uma longa e terrível garra em forma de foice, muito capaz de estripar um ogro. Nos olhos grandes, uma inteligência que não deveria existir em feras.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O deinonico é um parceiro montaria (Média) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e sua margem de ameaça com armas corpo a corpo aumenta em +1.</li>
+            <li>Veterano (somente através de habilidade): você recebe +5 em testes de Atletismo para saltar e uma ação de movimento adicional por turno (apenas para se deslocar).</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento muda para 15m e o bônus na margem de ameaça aumenta para +2.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM PEQUENO MINÚSCULO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '244',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 262,
+        nome: 'Galhada Macho',
+        descricao: `<p>À primeira vista, o animal parece um cervo comum, com a característica galhada emaranhada. Contudo, vocês logo percebem que a criatura não tem olhos, o corpo é feito de matéria vegetal parecida com musgo e seus chifres são de madeira.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O galhada macho é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe +2 em Sobrevivência.</li>
+            <li>Veterano (somente através de habilidade): seus ataques corpo a corpo são considerados mágicos e, uma vez por turno, você recebe +1d8 em uma rolagem de dano corpo a corpo (esse bônus é dobrado contra mortos-vivos).</li>
+            <li>Mestre (somente através de habilidade): o bônus em rolagens de dano muda para +1d10 e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '246',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 263,
+        nome: 'Galhada Fêmea',
+        descricao: `<p>À primeira vista, o animal parece um cervo comum, com a característica galhada emaranhada. Contudo, vocês logo percebem que a criatura não tem olhos, o corpo é feito de matéria vegetal parecida com musgo e seus chifres são de madeira.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>A galhada fêmea é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você pode gastar uma ação padrão e 1 PM para curar 1d8+1 PV.</li>
+            <li>Veterano (somente através de habilidade): você também pode gastar uma ação padrão e 3 PM para curar 3d8+3 PV ou remover uma condição de doença, fadiga, paralisia ou veneno que o esteja afetando.</li>
+            <li>Mestre (somente através de habilidade): você recebe uma ação de movimento extra por turno (apenas para se deslocar) e pode também gastar uma ação padrão e 5 PM para curar 6d8+6 PV.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '246',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 264,
+        nome: 'Tuntram',
+        descricao: `<p>Grande e pesado como um elefante, o animal tem a cabeçorra guarnecida por um escudo de osso com cores vivas, e um conjunto de chifres longos como lanças de justa, muito provavelmente com a mesma função.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O tuntram é um parceiro montaria (Enorme) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m e você recebe +2 em testes de ataque para derrubar e empurrar.</li>
+            <li>Veterano (somente através de habilidade): você recebe cobertura leve contra ataques à distância e uma ação de movimento extra (apenas para se deslocar).</li>
+            <li>Mestre (somente através de habilidade): você recebe +2 em testes de ataque para atropelar e, quando faz essa manobra, seu oponente não tem a opção de sair do caminho (mas ele ainda pode resistir com um teste oposto). Quando atropela uma criatura com essa manobra, você pode gastar 1 PM para fazer um ataque extra contra ela.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 4,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.ENORME,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM GRAMDE MÉDIO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '249',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 265,
+        nome: 'Corcel de Comando',
+        descricao: `<p>Corcel do comando é montaria purista com alguns engenhos, do tamanho de cavalos, conhecidos como corcéis de comando. Sabe-se que alguns foram tomados e domados por aventureiros.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O corcel de comando é um parceiro montaria (Grande) que fornece os benefícios a seguir, e que usa Pilotagem no lugar de Cavalgar.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você ignora a penalidade por terreno difícil.</li>
+            <li>Veterano (somente através de habilidade): você pode lançar a magia Campo de Força (apenas o efeito básico). Se aprender essa magia, seu custo diminui em –1 PM.</li>
+            <li>Mestre (somente através de habilidade): o alcance de suas habilidades baseadas em som (como Músicas de bardo) aumenta em um passo (de curto para médio e de médio para longo).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'PILOTAGEM',
+          'RARO', 'SUPREMACIA PURISTA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '277',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 266,
+        nome: 'Búfalo-de-Guerra',
+        descricao: `<p>O animal tem quase o dobro da altura de um humano na cernelha e deve pesar tanto quanto dois ou três touros. A cabeçorra ostenta chifres massivos, o couro é escuro como piche. Mas o mais surpreendente em sua figura talvez seja o fato de servir como montaria a um cavaleiro em armadura, que parece minúsculo comparado à besta.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O búfalo-de-guerra é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 9m e seu limite de carga aumenta em 5 espaços. Uma vez por rodada, quando faz uma investida montada, você recebe +1d8 em uma rolagem de dano corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): seu deslocamento muda para 12m e ignora terreno difícil.</li>
+            <li>Mestre (somente através de habilidade): o bônus em rolagens de dano corpo a corpo muda para +2d8 e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'MOREANIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '296',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 267,
+        nome: 'Hippossauro',
+        descricao: `<p>O animal tem o tamanho e porte de um cavalo de guerra, mas parece uma combinação estranha entre este e uma ave, ou lagarto, ou ambos. É revestido de penugem fina, exceto no focinho e nas pernas, onde a pele é escamosa. As quatro patas longas terminam em garras de ave. A cauda é curta, mas adornada com penas longas e coloridas, que também aparecem vistosas na crina. A cabeça alongada e ossuda lembra mais um lagarto-terror de Galrasia, mas com olhos grandes e afetuosos. Dentes longos e recurvados fazem o animal parecer sorridente, em vez de ameaçador.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O hippossauro é um parceiro montaria (Grande) que fornece os benefícios a seguir</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe +2 em Diplomacia (hippossauro macho) ou em Furtividade (hipossauro fêmea).</li>
+            <li>Veterano (somente através de habilidade): seu deslocamento muda para 15m e, uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.</li>
+            <li>Mestre (somente através de habilidade): muda o bônus na perícia para +4 e você recebe uma ação de movimento extra (apenas para se deslocar).</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'MOREANIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '297 E 298',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 268,
+        nome: 'Platan',
+        descricao: `<p>O animal tem formato de peixe, mas o orifício no alto da cabeça demonstra que respira ar. Tem couro liso cinza-azulado, com manchas amarelas perto da cauda. Enquanto faz saltos acrobáticos perto do barco, produz um trinado estridente e divertido, que lembra uma risada.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O platan é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para natação 9m e e você recebe uma ação de movimento extra (apenas para se deslocar).</li>
+            <li>Veterano (somente através de habilidade): uma vez por rodada, você pode gastar 1 PM para causar 2d6 pontos de dano de impacto em uma criatura em alcance curto.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento de natação muda para 15m e você pode também gastar 4 PM para causar 6d6 pontos de dano de impacto em uma criatura em alcance curto.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'OCEANO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '322',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 269,
+        nome: 'Selako',
+        descricao: `<p>Não se consegue ver o predador sob as águas, exceto pela grande barbatana dorsal triangular que se aproxima rápido, muito rápido, enquanto um timbre musical abafado parece ressoar ao fundo.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O selako é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para natação 15m e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.</li>
+            <li>Veterano (somente através de habilidade): o bônus de dano aumenta para +2d6.</li>
+            <li>Mestre (somente através de habilidade): seu deslocamento de natação muda para 18m e, quando você usa o bônus de dano do selako contra uma criatura, ela fica sangrando.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'OCEANO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '322',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 270,
+        nome: 'Elemental do Veneno Pequeno/Médio',
+        descricao: `<p>Não se consegue ver o predador sob as águas, exceto pela grande barbatana dorsal triangular que se aproxima rápido, muito rápido, enquanto um timbre musical abafado parece ressoar ao fundo.</p>`,
+        descricao_extra: `
+        <br>
+        <p>ASSASSINO</p>
+            <p>O elemental é um parceiro especial (assassino) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: a CD para resistir aos seus efeitos de veneno aumenta em +2 e, uma vez por rodada, você pode gastar 1 PM para envenenar uma arma que esteja usando. No próximo ataque que acertar com ela nesta cena, a arma causa perda de 1d12 PV.</li>
+            <li>Veterano (somente através de habilidade): você também pode gastar 3 PM para aplicar um veneno que causa perda de 2d12 PV.</li>
+            <li>Mestre (somente através de habilidade): seus efeitos de veneno ignoram imunidade a veneno e você também pode gastar 5 PM para aplicar um veneno que causa perda de 3d12 PV.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.5,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.PEQUENO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'SSZZAAS', 'ASSASSINO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '328',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 271,
+        nome: 'Perdigueiro Troll',
+        descricao: `<p>Visto à distância, poderia ser confundido com um grande cão ou lobo. Mas, em vez de carne e pelagem, o corpo parece feito de uma massa fibrosa revestida de musgo. Uma juba densa de tentáculos emoldura a cabeçorra com mandíbula poderosa e presas brancas.</p>`,
+        descricao_extra: `
+        <br>
+        <p>PERSEGUIDOR</p>
+            <p>O perdigueiro troll é um um parceiro especial (perseguidor) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: você recebe +2 em Percepção e Sobrevivência.</li>
+            <li>Veterano (somente através de habilidade): você recebe +2 em testes para agarrar e derrubar, e pode manter uma criatura Grande ou menor agarrada sem ocupar uma mão.</li>
+            <li>Mestre (somente através de habilidade): muda os bônus para +5 e, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode usar a manobra agarrar como uma reação.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 1,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.MEDIO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'PERSEGUIDOR'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '343',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 272,
+        nome: 'Carcaju',
+        descricao: `<p>O animal de pelagem castanha e negra lembra um urso muito pequeno, do tamanho de um cão, mas com cauda grande e peluda. Tem o mesmo pescoço curto e orelhas redondas, emprestando-lhe um aspecto gracioso. Quando rosna e arreganha as presas, contudo, demonstra ser muito mais perigoso do que parecia.</p>`,
+        descricao_extra: `
+        <br>
+        <p>FORTÃO</p>
+            <p>O carcaju é um parceiro especial (fortão) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: uma vez por rodada você recebe +1d6 em uma rolagem de dano corpo a corpo. Se rolar um 6 nesse dado extra de dano, você pode rolar +1d6 e somar ao resultado uma vez.</li>
+            <li>Veterano (somente através de habilidade): sua margem de ameaça com armas corpo a corpo aumenta em +1.</li>
+            <li>Mestre (somente através de habilidade): quando sofre dano, você recebe +2 em testes de ataque e rolagens de dano até o fim de seu próximo turno.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 0.5,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.PEQUENO,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'UIVANTES', 'FORTÃO'
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '348',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 273,
+        nome: 'Urso das Neves',
+        descricao: `<p>A fera lembra um urso, mas bem maior que outros que vocês tenham visto. Tem pelagem completamente branca, mas com olhos, focinho e garras vermelhos. Ainda, a parte posterior do dorso traz formações afiadas que lembram cristais de gelo.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O urso das neves é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe redução de frio 5.</li>
+            <li>Veterano (somente através de habilidade):seu deslocamento muda para 12m (normal e de natação) e a redução de frio aumenta para 10.</li>
+            <li>Mestre (somente através de habilidade): a redução de frio aumenta para 20.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'UIVANTES', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '348',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 274,
+        nome: 'Urso das Neves',
+        descricao: `<p>A fera lembra um urso, mas bem maior que outros que vocês tenham visto. Tem pelagem completamente branca, mas com olhos, focinho e garras vermelhos. Ainda, a parte posterior do dorso traz formações afiadas que lembram cristais de gelo.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O urso das neves é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe redução de frio 5.</li>
+            <li>Veterano (somente através de habilidade):seu deslocamento muda para 12m (normal e de natação) e a redução de frio aumenta para 10.</li>
+            <li>Mestre (somente através de habilidade): a redução de frio aumenta para 20.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'UIVANTES', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '348',
         tipo: TipoItem.ANIMAIS,
       },
     ];
