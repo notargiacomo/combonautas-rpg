@@ -9105,50 +9105,6 @@ export class ItemData {
         tipo: TipoItem.ANIMAIS,
       },
       {
-        id: 253,
-        nome: 'Kill’Bone',
-        descricao: `<p>O animal parece um cão selvagem, mas com algum tipo de armadura óssea revestida de espinhos e uma longa cauda também espinhosa. A cabeça ossuda lembra mais um crânio, os olhos pouco visíveis através de orifícios que lembram órbitas vazias.</p>`,
-        descricao_extra: `
-        <br>
-        <p>PERSEGUIDOR</p>
-            <p>O kill’bone é um parceiro especial (perseguidor) que fornece os benefícios a seguir.</p>
-            <ul>
-            <li>Iniciante: você recebe faro e, uma vez por rodada, +1d6 em uma rolagem de dano corpo a corpo (o dano extra é dobrado contra finntroll e trolls).</li>
-            <li>Veterano (somente através de habilidade): o bônus em rolagens de dano muda para +1d8 e você recebe +2 em testes de perícia contra finntroll e trolls.</li>
-            <li>Mestre (somente através de habilidade): o bônus em rolagens de dano muda para +1d10 e você não pode ser flanqueado.</li>
-            </ul> 
-            <br>`,
-        preco: 0,
-        defesa: 0,
-        manutencao: 1,
-        tipo_manutencao: 'Ração',
-        rd: 0,
-        pv: 0,
-        cd_fabricacao: 0,
-        cd_identificar_item: 0,
-        preco_fabricacao: 0, //    preco/3
-        tempo_fabricacao_em_horas: 0,
-        preco_conserto: 0, //    preco/10
-        tempo_conserto_em_horas: 0,
-        pericia_fabricacao_conserto: '',
-        valor_teste_resistencia: 0,
-        tamanho: Tamanho.MEDIO,
-        espaco: 0,
-        dano: '',
-        tipo_dano: [],
-        multiplicador_critico: 0,
-        margem_ameaca: 0,
-        alcance: 0,
-        penalidade: 0,
-        tracos: [
-          'PARCEIRO',
-          'RARO', 'DOHERIMM', 'PERSEGUIDOR'
-        ],
-        referencias: Referencia.AMEACAS,
-        paginas: '194',
-        tipo: TipoItem.ANIMAIS,
-      },
-      {
         id: 254,
         nome: 'Tentacute',
         descricao: `<p>O pequeno animal tem o mesmo tamanho e corpo felino de um gato comum. As maiores diferenças são os olhos telescópicos, como olhos de caracol; a concha em forma de capacete sobre a cabeça, e a cauda longa em forma de tentáculo de polvo, com ventosas e tudo.</p>`,
@@ -9856,7 +9812,7 @@ export class ItemData {
       {
         id: 270,
         nome: 'Elemental do Veneno Pequeno/Médio',
-        descricao: `<p>Não se consegue ver o predador sob as águas, exceto pela grande barbatana dorsal triangular que se aproxima rápido, muito rápido, enquanto um timbre musical abafado parece ressoar ao fundo.</p>`,
+        descricao: `<p>A criatura amorfa parece levitar pouco acima do solo. Lembra um aglomerado de gemas ou cristais escuros, mantidos em coesão por um muco esverdeado, luminoso. Por onde passa, goteja e deixa poças da mesma gosma, que emitem chiados e desprendem vapores.</p>`,
         descricao_extra: `
         <br>
         <p>ASSASSINO</p>
