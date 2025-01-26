@@ -168,6 +168,10 @@ export class ItensComponent {
           this.animais = response;
           this.numero_registros_animal = this.animais?.length;
         }
+        if ((filtro as any).tipo === TipoItem.VEICULOS) {
+          this.veiculos = response;
+          this.numero_registros_veiculo = this.veiculos?.length;
+        }
       },
       error: (response) => {
         console.log(response);

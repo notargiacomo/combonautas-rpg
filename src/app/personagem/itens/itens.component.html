@@ -1770,7 +1770,7 @@
               </mat-grid-tile>
             </mat-grid-list>
           </mat-tab>
-          <!-- 
+          
         <mat-tab label="Veículos">
           <div class="row">
             <div class="col-sm-6 mt-4">
@@ -1780,7 +1780,7 @@
                   formControlName="nome"
                   matInput
                   type="text"
-                  (keyup)="consultarVeiculos()"
+                  (keyup)="consultar(10)"
                 />
               </mat-form-field>
             </div>
@@ -1853,9 +1853,30 @@
                       <mat-tab label="Estatísticas">
                         <div class="content">
                           <div class="row">
-                            <div class="col-sm-6 mt-4">Espaço</div>
+                            <div class="col-sm-6 mt-4">Tamanho</div>
                             <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                              {{ veiculo.espaco }}
+                              {{ veiculo.tamanho }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6 mt-4">Capacidade Mínima</div>
+                            <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                              {{ veiculo.capacidade_minima_criaturas }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-11 mt-4">Capacidade Máxima Criaturas Médias (Ou Carga ou Criaturas)</div>
+                            <div class="col-sm-1 mt-4 d-flex justify-content-end">
+                              {{ veiculo.capacidade_maxima_criaturas }}
+                            </div>
+                            <hr />
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-9 mt-4">Cacidade de Carga (Ou Carga ou Criaturas)</div>
+                            <div class="col-sm-3 mt-4 d-flex justify-content-end">
+                              {{ veiculo.capacidade_maxima_espacos + ' espaços' }}
                             </div>
                             <hr />
                           </div>
@@ -1953,6 +1974,7 @@
             </mat-grid-tile>
           </mat-grid-list>
         </mat-tab>
+        <!-- 
         <mat-tab label="Serviços">
           <div class="row">
             <div class="col-sm-6 mt-4">

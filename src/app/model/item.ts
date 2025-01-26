@@ -18,6 +18,9 @@ export interface Item {
     tempo_conserto_em_horas?:number;
     pericia_fabricacao_conserto?:string;
     valor_teste_resistencia?:number;
+    capacidade_minima_criaturas?:number;
+    capacidade_maxima_criaturas?:number;
+    capacidade_maxima_espacos?:number;
     // são variantes, porem usarei o valor medio
     tamanho?:string;
     espaco?:number;
