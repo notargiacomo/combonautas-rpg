@@ -1974,7 +1974,6 @@
             </mat-grid-tile>
           </mat-grid-list>
         </mat-tab>
-        <!-- 
         <mat-tab label="Serviços">
           <div class="row">
             <div class="col-sm-6 mt-4">
@@ -1984,7 +1983,7 @@
                   formControlName="nome"
                   matInput
                   type="text"
-                  (keyup)="consultarServicos()"
+                  (keyup)="consultar(11)"
                 />
               </mat-form-field>
             </div>
@@ -2052,99 +2051,13 @@
                               [innerHTML]="servico.descricao"
                             ></div>
                           </div>
-                        </div>
-                      </mat-tab>
-                      <mat-tab label="Estatísticas">
-                        <div class="content">
+                          <br>
                           <div class="row">
-                            <div class="col-sm-6 mt-4">Espaço</div>
-                            <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                              {{ servico.espaco }}
-                            </div>
-                            <hr />
-                          </div>
-                        </div>
-                      </mat-tab>
-                      <mat-tab label="Fabricação">
-                        <div class="content">
-                          <div class="row">
-                            <div class="col-sm-6 mt-4">Preço</div>
+                            <div class="col-sm-6">Preço</div>
                             <div
-                              class="col-sm-6 mt-4 d-flex justify-content-end"
+                              class="col-sm-6 d-flex justify-content-end"
                             >
-                              {{ "T$ " + servico.preco }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">RD</div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{ servico.rd }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">PV's</div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{ servico.pv }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">
-                              Perícia para Fabricação/Conserto
-                            </div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{
-                                servico.pericia_fabricacao_conserto
-                              }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">
-                              CD para Fabricação/Conserto
-                            </div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{ servico.cd_fabricacao }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">Custo de Fabricação</div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{
-                                "T$ " + servico.preco_fabricacao
-                              }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">
-                              Tempo de Fabricação (Em Horas)
-                            </div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{
-                                servico.tempo_fabricacao_em_horas
-                              }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">Custo para Conserto</div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{ "T$ " + servico.preco_conserto }}
-                            </div>
-                            <hr />
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">
-                              Tempo de Conserto (Em Horas)
-                            </div>
-                            <div class="col-sm-6 d-flex justify-content-end">
-                              {{
-                                servico.tempo_conserto_em_horas
-                              }}
+                              {{ 'T$ ' + servico.preco + ' ' + servico.preco_descricao }}
                             </div>
                             <hr />
                           </div>
@@ -2157,6 +2070,7 @@
             </mat-grid-tile>
           </mat-grid-list>
         </mat-tab>
+                <!-- 
         <mat-tab label="Melhorias">
           <div class="row">
             <div class="col-sm-6 mt-4">

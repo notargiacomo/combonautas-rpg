@@ -5,6 +5,7 @@ export interface Item {
     descricao?:string;
     descricao_extra?:string;
     preco?:number;
+    preco_descricao?:string,
     defesa?:number;
     manutencao?:number;
     tipo_manutencao?:string;

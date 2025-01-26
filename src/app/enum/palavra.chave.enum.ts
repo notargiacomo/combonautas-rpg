@@ -143,6 +143,10 @@ export enum PalavraChave {
     INALACAO = 'INALAÇÃO',
     INGESTAO = 'INGESTÃO',
 
+    // SERVIÇOS
+    ESTADIA = 'ESTADIA',
+    CONDUCAO = 'CONDUÇÃO',
+
     // DESLOCAMENTO
     TERRESTRE = 'TERRESTRE',
     ESCALADA = 'ESCALADA',
@@ -167,6 +171,8 @@ export enum PalavraChave {
 
     // AREA
     AREA_CONE_SEIS_METROS = 'ÁREA CONE 6M',
-    AREA_CONE_NOVE_METROS = 'ÁREA CONE 9M'
+    AREA_CONE_NOVE_METROS = 'ÁREA CONE 9M',
+
+    MAGIA = 'MAGIA',
 
 }

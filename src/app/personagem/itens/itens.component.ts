@@ -172,6 +172,10 @@ export class ItensComponent {
           this.veiculos = response;
           this.numero_registros_veiculo = this.veiculos?.length;
         }
+        if ((filtro as any).tipo === TipoItem.SERVICOS) {
+          this.servicos = response;
+          this.numero_registros_servico = this.servicos?.length;
+        }
       },
       error: (response) => {
         console.log(response);
