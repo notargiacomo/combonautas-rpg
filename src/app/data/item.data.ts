@@ -10215,7 +10215,7 @@ export class ItemData {
       {
         id: 279,
         nome: 'Veleiro',
-        descricao: `<p>Construída a partir de um único tronco de árvore, é a mais simples das embarcações. Tem as mesmas estatísticas de uma carroça, mas com deslocamento de natação.</p>`,
+        descricao: `<p>Com três mastros, é o típico navio de viagem, muito popular entre mercadores.</p>`,
         descricao_extra: ``,
         preco: 10000,
         defesa: 7,
