@@ -176,6 +176,10 @@ export class ItensComponent {
           this.servicos = response;
           this.numero_registros_servico = this.servicos?.length;
         }
+        if ((filtro as any).tipo === TipoItem.MELHORIAS) {
+          this.melhorias = response;
+          this.numero_registros_melhoria = this.melhorias?.length;
+        }
       },
       error: (response) => {
         console.log(response);

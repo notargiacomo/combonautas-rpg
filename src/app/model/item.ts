@@ -1,5 +1,6 @@
 export interface Item {
     id:number;
+    id_prerequisitos?: number;
     tipo:string;
     nome?:string;
     descricao?:string;
