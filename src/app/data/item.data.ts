@@ -1295,8 +1295,8 @@ export class ItemData {
         espaco: 2,
         dano: '1d10',
         tipo_dano: [TipoDano.IMPACTO],
-        multiplicador_critico: 0,
-        margem_ameaca: 0,
+        multiplicador_critico: 2,
+        margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
         tracos: ['SIMPLES', 'CORPO A CORPO', 'EMPUNHADO', 'DUAS MÃOS'],
@@ -9987,6 +9987,50 @@ export class ItemData {
       },
       {
         id: 273,
+        nome: 'Urso das Neves',
+        descricao: `<p>A fera lembra um urso, mas bem maior que outros que vocês tenham visto. Tem pelagem completamente branca, mas com olhos, focinho e garras vermelhos. Ainda, a parte posterior do dorso traz formações afiadas que lembram cristais de gelo.</p>`,
+        descricao_extra: `
+        <br>
+        <p>MONTARIA</p>
+            <p>O urso das neves é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
+            <ul>
+            <li>Iniciante: seu deslocamento muda para 12m e você recebe redução de frio 5.</li>
+            <li>Veterano (somente através de habilidade):seu deslocamento muda para 12m (normal e de natação) e a redução de frio aumenta para 10.</li>
+            <li>Mestre (somente através de habilidade): a redução de frio aumenta para 20.</li>
+            </ul> 
+            <br>`,
+        preco: 0,
+        defesa: 0,
+        manutencao: 2,
+        tipo_manutencao: 'Ração',
+        rd: 0,
+        pv: 0,
+        cd_fabricacao: 0,
+        cd_identificar_item: 0,
+        preco_fabricacao: 0, //    preco/3
+        tempo_fabricacao_em_horas: 0,
+        preco_conserto: 0, //    preco/10
+        tempo_conserto_em_horas: 0,
+        pericia_fabricacao_conserto: '',
+        valor_teste_resistencia: 0,
+        tamanho: Tamanho.GRANDE,
+        espaco: 0,
+        dano: '',
+        tipo_dano: [],
+        multiplicador_critico: 0,
+        margem_ameaca: 0,
+        alcance: 0,
+        penalidade: 0,
+        tracos: [
+          'PARCEIRO',
+          'RARO', 'UIVANTES', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        ],
+        referencias: Referencia.AMEACAS,
+        paginas: '348',
+        tipo: TipoItem.ANIMAIS,
+      },
+      {
+        id: 274,
         nome: 'Urso das Neves',
         descricao: `<p>A fera lembra um urso, mas bem maior que outros que vocês tenham visto. Tem pelagem completamente branca, mas com olhos, focinho e garras vermelhos. Ainda, a parte posterior do dorso traz formações afiadas que lembram cristais de gelo.</p>`,
         descricao_extra: `
