@@ -31,37 +31,42 @@ export enum Regras {
   <p>A critério do mestre, estas regras também podem ser usadas para treinar outros tipos de parceiros irracionais (como um animal perseguidor ou vigilante).</p>`,
   ITENS_SUPERIORES = `<p>Itens superiores são equipamentos de alta qualidade, fabricados com as melhores técnicas e matérias-primas. Em termos de jogo, itens superiores possuem de uma a quatro melhorias. Cada melhoria fornece um benefício, mas aumenta o preço do item. Por exemplo, uma espada longa normal custa T$ 15. Uma espada longa superior com uma melhoria custa T$ 315. Já uma espada longa com quatro melhorias custa incríveis T$ 18.015!</p>
   <p>Itens com uma melhoria são caros, mas ainda relativamente comuns. Por exemplo, um castelo poderoso e próspero pode equipar seus guardas com armas com uma melhoria. Itens com duas melhorias são muito valiosos, e nunca são produzidos em grande quantidade. O capitão da guarda do mesmo castelo pode ter um item com duas melhorias. Já itens com três ou quatro melhorias são obras-primas, tão ou mais famosos quanto seus portadores. O senhor ou a senhora do castelo do exemplo talvez tenha um item assim, e ele provavelmente terá sido uma herança passada de geração em geração.</p>
-  <table border="1" style="border-collapse: collapse; width: 100%;">
-  <caption><strong>Tabela 3-7: Preço de Melhorias</strong></caption>
-  <thead>
-    <tr>
-      <th>Número de Melhorias</th>
-      <th>Aumento no Preço</th>
-      <th>Aumento na CD</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>+ T$ 300</td>
-      <td>+5</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>+ T$ 3.000</td>
-      <td>+10</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>+ T$ 9.000</td>
-      <td>+15</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>+ T$ 18.000</td>
-      <td>+20</td>
-    </tr>
-  </tbody>
-</table>
+
+  <hr>
+    <p>
+  <table style="border-collapse: collapse; width: 100%; text-align: center; font-family: Arial, sans-serif;">
+    <thead>
+      <tr style="background-color: #b22222; color: white;">
+        <th>Número de Melhorias</th>
+        <th>Aumento no Preço</th>
+        <th>Aumento na CD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>+ T$ 300</td>
+        <td>+5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>+ T$ 3.000</td>
+        <td>+10</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>+ T$ 9.000</td>
+        <td>+15</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>+ T$ 18.000</td>
+        <td>+20</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </p>
+
   `,
 }

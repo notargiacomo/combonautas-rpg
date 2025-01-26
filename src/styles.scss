@@ -359,3 +359,15 @@ tr.element-row:not(.expanded-row):active {
   border-radius: 16px !important;      /* Arredondamento */
   padding: 16px !important;           /* Espaçamento interno */
 }
+
+.mat-mdc-dialog-surface table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  background-color: #fff !important;
+  border: 1px solid #ddd !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mat-mdc-dialog-surface b {
+  color: #fff !important;
+}
