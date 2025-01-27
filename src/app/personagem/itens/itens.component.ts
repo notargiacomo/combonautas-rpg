@@ -102,11 +102,6 @@ export class ItensComponent {
     this.consultar(11);
     this.consultar(12);
     this.consultar(13);
-    this.consultar(14);
-    this.consultar(15);
-    this.consultar(16);
-    this.consultar(17);
-    this.consultar(18);
   }
 
   consultar(idTipo: number): void {

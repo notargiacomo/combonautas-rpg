@@ -13,9 +13,8 @@ export enum TipoItem {
     SERVICOS = "12.Serviços",
     MELHORIAS = "13.Melhorias",
     MATERIAIS_ESPECIAIS = "14.Materias Especiais", 
-    RIQUEZAS = "15.Riquezas",
-    ENCANTOS = "16.Encantos",
-    POCOES_MAGICAS = "17.Encantos",
-    ACESSORIOS_MAGICOS = "18.Acessórios Mágicos",
-    ARTEFATOS = "19.Artefatos",
+    ENCANTOS = "15.Encantos",
+    POCOES_MAGICAS = "16.Poções Mágicas",
+    ACESSORIOS_MAGICOS = "17.Acessórios Mágicos",
+    // ARTEFATOS = "18.Artefatos",
 }
