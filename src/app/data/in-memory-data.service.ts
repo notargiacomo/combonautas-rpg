@@ -3,7 +3,6 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 import { RacaData } from './raca.data';
 import { Raca } from '../model/raca';
 import { condicoes } from './condicoes.data';
-import { acoes } from './acoes.data';
 import { OrigemData } from './origem.data';
 import { Origem } from '../model/origem';
 import { Classe } from '../model/classe';
@@ -16,30 +15,49 @@ import { Poder } from '../model/poder';
 import { PoderData } from './poder.data';
 import { Item } from '../model/item';
 import { ItemData } from './item.data';
+import { Pericia } from '../model/pericia';
+import { PericiaData } from './pericia.data';
+import { Acao } from '../model/acao';
+import { AcaoData } from './acao.data';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class InMemoryDataService implements InMemoryDbService {
-
-  constructor(private readonly racaData: RacaData,
+  constructor(
+    private readonly racaData: RacaData,
     private readonly origemData: OrigemData,
     private readonly classeData: ClasseData,
+    private readonly periciaData: PericiaData,
     private readonly deusData: DeusData,
     private readonly complicacaoData: ComplicacaoData,
     private readonly poderData: PoderData,
-    private readonly itemData: ItemData
+    private readonly itemData: ItemData,
+    private readonly acaoData: AcaoData,
   ) {}
 
   createDb() {
-    const raca: Raca[] = this.racaData.getRacas();
-    const origem: Origem[] = this.origemData.getOrigens();
-    const classe: Classe[] = this.classeData.getClasses();
-    const deus: Deus[] = this.deusData.getDeuses();
-    const complicacao: Complicacao[] = this.complicacaoData.getComplicacoes();
-    const poder: Poder[] = this.poderData.getPoderes();
-    const item: Item[] = this.itemData.getItens();
-    return { raca: raca, condicoes:condicoes, acoes:acoes, origem:origem, classe:classe, deus:deus, complicacao:complicacao, poder:poder, item:item};
-  }
+    const raca: Raca[] = this.racaData.get();
+    const origem: Origem[] = this.origemData.get();
+    const classe: Classe[] = this.classeData.get();
+    const pericia: Pericia[] = this.periciaData.get();
+    const deus: Deus[] = this.deusData.get();
+    const complicacao: Complicacao[] = this.complicacaoData.get();
+    const poder: Poder[] = this.poderData.get();
+    const item: Item[] = this.itemData.get();
+    const acao: Acao[] = this.acaoData.get();
 
+    return {
+      raca: raca,
+      condicoes: condicoes,
+      acao: acao,
+      origem: origem,
+      classe: classe,
+      pericia: pericia,
+      deus: deus,
+      complicacao: complicacao,
+      poder: poder,
+      item: item,
+    };
+  }
 }

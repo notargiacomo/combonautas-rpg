@@ -20,7 +20,7 @@ import { Tamanho } from '../enum/tamanho.enum';
 export class RacaData {
   private racas: Raca[] = [];
 
-  getRacas(): any[] {
+  get(): any[] {
     return this.racas;
   }
 

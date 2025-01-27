@@ -7,7 +7,7 @@ import { Complicacao } from '../model/complicacao';
 export class ComplicacaoData {
   private complicacoes: Complicacao[] = [];
 
-  getComplicacoes(): any[] {
+  get(): any[] {
     return this.complicacoes;
   }
 

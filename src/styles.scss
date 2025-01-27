@@ -87,6 +87,7 @@ b {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
   border: 1px solid rgb(228, 176, 100); /* Moldura */
+  background-color: rgb(132, 26, 18) !important;
   
 }
 
@@ -287,6 +288,10 @@ button[mat-flat-button]:hover {
   background-color: rgb(132, 26, 18) !important;
 }
 
+.mat-mdc-button-disabled {
+  background-color: rgb(132, 26, 18) !important;
+}
+
 .content-cartao-itens {
   height: 500px !important;
 }
@@ -367,3 +372,59 @@ tr.element-row:not(.expanded-row):active {
   border: 1px solid #ddd !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
+
+table {
+    width: 100%;
+  }
+  
+  tr.detail-row {
+    height: 0;
+  }
+  
+  tr.element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.element-row:not(.example-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .element-description-attribution {
+    opacity: 0.5;
+  }
+  
+  .cartao {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .divisao-filtro {
+    padding: 16px;
+    width: 30%;
+  }
+  
+  .divisao-tabela {
+    padding: 16px;
+    width: 70%;
+  }

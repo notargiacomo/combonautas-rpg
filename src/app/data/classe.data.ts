@@ -10,7 +10,7 @@ import { Proficiencia } from '../enum/proficiencia.enum';
 export class ClasseData {
   private classes: Classe[] = [];
 
-  getClasses(): any[] {
+  get(): any[] {
     return this.classes;
   }
 

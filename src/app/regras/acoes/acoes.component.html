@@ -1,33 +1,36 @@
 <div class="container">
-  <mat-card class="card-padrao">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2><b>AÇÕES</b></h2>
-        <hr>
-      </div>
-    </div>
-    <form [formGroup]="form">
-      <div class="row">
-        <div class="col-sm-6 mt-4">
-          <mat-form-field class="form-field">
-            <mat-label>Ação</mat-label>
-            <input
-              formControlName="nome"
-              matInput
-              type="text"
-              (keyup)="consultar()"
-            />
-          </mat-form-field>
+  <div class="row mt-4">
+    <mat-card class="cartao">
+      <form [formGroup]="form">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2><b>AÇÕES</b></h2>
+            <hr />
+          </div>
         </div>
-      </div>
-    </form>
-    <div class="col-sm-12 mt-4">
-      <div class="d-flex justify-content-end">
-        <b>Número de Registros: {{ numero_registros }}</b>
-      </div>
-    </div>
+        <div class="row">
+          <div class="col-sm-12 mt-4">
+            <mat-form-field class="form-field">
+              <mat-label>Ação</mat-label>
+              <input
+                formControlName="nome"
+                matInput
+                type="text"
+                (keyup)="consultar()"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </mat-card>
     <div class="row mt-4">
       <mat-card class="cartao">
+        <div class="row">
+          <div class="d-flex justify-content-end">
+            <b>Número de Registros: {{ numero_registros }}</b>
+          </div>
+        </div>
+        <br />
         <table
           mat-table
           [dataSource]="acoes"
@@ -84,16 +87,16 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <h5>TRAÇOS: {{ element.tracos.join(" - ") }}</h5>
-                      <hr>
+                      <hr />
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
                       <h5>RECURSO: {{ element.custo }}</h5>
-                      <hr>
+                      <hr />
                     </div>
                   </div>
-                <br>
+                  <br />
                   <div class="row">
                     <div
                       class="col-sm-12 text-justify"
@@ -123,5 +126,5 @@
         </table>
       </mat-card>
     </div>
-  </mat-card>
+  </div>
 </div>

@@ -14,7 +14,7 @@ import { PalavraChave } from '../enum/palavra.chave.enum';
 export class ItemData {
   private itens: Item[] = [];
 
-  getItens(): any[] {
+  get(): any[] {
     return this.itens;
   }
 

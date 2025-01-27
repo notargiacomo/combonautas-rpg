@@ -11,7 +11,7 @@ import { Referencia } from '../enum/referencia.enum';
 export class PoderData {
   private poderes: Poder[] = [];
 
-  getPoderes(): any[] {
+  get(): any[] {
     return this.poderes;
   }
 

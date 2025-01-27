@@ -8,7 +8,7 @@ import { Referencia } from '../enum/referencia.enum';
 export class DeusData {
   private deuses: Deus[] = [];
 
-  getDeuses(): any[] {
+  get(): any[] {
     return this.deuses;
   }
 

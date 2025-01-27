@@ -8,7 +8,7 @@ import { Origem } from '../model/origem';
 export class OrigemData {
   private origens: Origem[] = [];
 
-  getOrigens(): any[] {
+  get(): any[] {
     return this.origens;
   }
 
