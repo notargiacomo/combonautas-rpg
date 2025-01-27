@@ -52,6 +52,7 @@ export class ItensComponent {
   veiculos!: Item[];
   servicos!: Item[];
   melhorias!: Item[];
+  materiais_especiais!: Item[];
   riquezas!: Item[];
   encantos!: Item[];
   pocoes_magicas!: Item[];
@@ -71,6 +72,7 @@ export class ItensComponent {
   numero_registros_veiculo = 0;
   numero_registros_servico = 0;
   numero_registros_melhoria = 0;
+  numero_registros_material_especial = 0;
   numero_registros_riqueza = 0;
   numero_registros_encanto = 0;
   numero_registros_pocao_magica = 0;
@@ -179,6 +181,10 @@ export class ItensComponent {
         if ((filtro as any).tipo === TipoItem.MELHORIAS) {
           this.melhorias = response;
           this.numero_registros_melhoria = this.melhorias?.length;
+        }
+        if ((filtro as any).tipo === TipoItem.MATERIAIS_ESPECIAIS) {
+          this.materiais_especiais = response;
+          this.numero_registros_material_especial = this.materiais_especiais?.length;
         }
       },
       error: (response) => {
