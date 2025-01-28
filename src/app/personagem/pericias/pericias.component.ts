@@ -91,7 +91,7 @@ export class PericiasComponent implements OnInit {
   }
 
   limparFiltros() {
-    this.form.controls['atributo'].setValue(null);
+    this.form?.get('atributo')?.setValue(null);
     this.form.reset();
     this.consultar();
   }

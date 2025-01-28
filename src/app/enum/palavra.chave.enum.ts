@@ -237,5 +237,38 @@ export enum PalavraChave {
     AREA_CONE_NOVE_METROS = 'ÁREA CONE 9M',
 
     MAGIA = 'MAGIA',
+    
+    // ESCOLAS DE MAGIA
+    ABJURACAO = 'Abjuração',
+    ADVINHACAO = 'Adivinhação',
+    CONVOCACAO = 'Convocação',
+    ENCANTAMENTO = 'Encantamento',
+    EVOCACAO = 'Evocação',
+    ILUSAO = 'Ilusão',
+    NECROMANCIA = 'Necromancia',
+    TRANSMUTACAO = 'Transmutação',
+
+    // TIPOS DE MAGIA
+    ARCANA = 'Arcana',
+    DIVINA = 'Divina',
+    UNIVERSAL = 'Universal',
+
+    // CIRCULO MAGIA
+    PRIMEIRO_CIRCULO = '1º Círculo',
+    SEGUNDO_CIRCULO = '2º Círculo',
+    TERCEIRO_CIRCULO = '3º Círculo',
+    QUARTO_CIRCULO = '4º Círculo',
+    QUINTO_CIRCULO = '5º Círculo',
+
+    // DURAÇÃO MAGIA
+    INSTANTANEA = 'Instantânea',
+    CENA = 'Cena',
+    SUSTENTADA = 'Sustentada',
+    PERMANENTE = 'Permanente',
+
+    // APRIMORAMENTOS DE MAGIA
+    TRUQUE = 'Truque',
+    AUMENTA = 'Aumenta',
+    COMPONENTE_MATERIAL = 'Componente Material',
 
 }

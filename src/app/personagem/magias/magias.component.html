@@ -1,1 +1,215 @@
-<p>magias works!</p>
+<div class="container">
+  <div class="row mt-4">
+    <mat-card class="card-padrao">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2><b>MAGIAS</b></h2>
+          <hr />
+        </div>
+      </div>
+      <form [formGroup]="form">
+        <mat-tab-group>
+          <mat-tab label="Arcanas">
+            <div class="col-sm-12 mt-4">
+              <mat-tab-group>
+                <mat-tab label="1° Círculo">
+                  <div class="col-sm-12 mt-4">
+                    <div class="row">
+                      <div class="col-sm-6 mt-4">
+                        <mat-form-field class="form-field">
+                          <mat-label>Magia</mat-label>
+                          <input
+                            formControlName="nome"
+                            matInput
+                            type="text"
+                            (keyup)="consultar()"
+                          />
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 mt-4">
+                        <div class="d-flex justify-content-end">
+                          <b>Número de Registros: {{ numero_registros }}</b>
+                        </div>
+                      </div>
+                      <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
+                        @for (objeto of objetos; track objeto.id) {
+                        <mat-grid-tile>
+                          <mat-card class="card-padrao">
+                            <mat-card-title
+                              class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
+                            >
+                              {{ objeto.nome }}
+                            </mat-card-title>
+                            <mat-card-content
+                              class="interior-cartao interior-cartao-condicoes content-cartao-itens"
+                            >
+                              <div class="content">
+                                <mat-tab-group>
+                                  <mat-tab label="Descrição">
+                                    <div class="content">
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <hr class="" />
+                                        </div>
+                                        <div class="col-sm-12">
+                                          <div
+                                            class="d-flex justify-content-end"
+                                          >
+                                            {{
+                                              objeto.referencias +
+                                                " pag. " +
+                                                objeto.paginas
+                                            }}
+                                          </div>
+                                          <hr class="" />
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12 mt-2 button-row">
+                                          <section
+                                            class="d-flex flex-wrap gap-2"
+                                          >
+                                            @for (traco of objeto.tracos; track
+                                            traco) {
+                                            <button
+                                              class="me-2"
+                                              mat-flat-button
+                                              disabled
+                                            >
+                                              {{ traco }}
+                                            </button>
+                                            }
+                                          </section>
+                                        </div>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <hr class="" />
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div
+                                          class="col-sm-12"
+                                          [innerHTML]="objeto.descricao"
+                                        ></div>
+                                      </div>
+                                    </div>
+                                  </mat-tab>
+                                  <mat-tab label="Aprimoramentos">
+                                    <div class="content">
+                                      <div class="col-sm-12">
+                                        <hr />
+                                      </div>
+                                      @for (aprimoramento of
+                                      objeto.aprimoramentos; track
+                                      aprimoramento.id) {
+                                      <div class="row">
+                                        <div class="col-sm-12 mt-2 button-row">
+                                          <section
+                                            class="d-flex flex-wrap gap-2"
+                                          >
+                                            @for (traco_aprimoramento of
+                                            aprimoramento.tracos; track
+                                            traco_aprimoramento) {
+                                            <button
+                                              class="me-2"
+                                              mat-flat-button
+                                              disabled
+                                            >
+                                              {{ traco_aprimoramento }}
+                                            </button>
+                                            }
+                                          </section>
+                                        </div>
+                                        <div
+                                          class="col-sm-12 mt-2"
+                                          [innerHTML]="aprimoramento.descricao"
+                                        ></div>
+                                        <div
+                                          class="col-sm-6 mt-4 d-flex justify-content-end"
+                                        ></div>
+                                        <hr />
+                                      </div>
+                                      }
+                                    </div>
+                                  </mat-tab>
+                                  <mat-tab label="Poção">
+                                    <div class="content">
+                                      <!-- <div class="row">
+                                        <div class="col-sm-6 mt-4">Preço</div>
+                                        <div
+                                          class="col-sm-6 mt-4 d-flex justify-content-end"
+                                        >
+                                          {{ "T$ " + arma.preco }}
+                                        </div>
+                                        <hr />
+                                      </div> -->
+                                    </div>
+                                  </mat-tab>
+                                  <mat-tab label="Pergaminho">
+                                    <div class="content">
+                                      <!-- <div class="row">
+                                        <div class="col-sm-6 mt-4">Preço</div>
+                                        <div
+                                          class="col-sm-6 mt-4 d-flex justify-content-end"
+                                        >
+                                          {{ "T$ " + arma.preco }}
+                                        </div>
+                                        <hr />
+                                      </div> -->
+                                    </div>
+                                  </mat-tab>
+                                </mat-tab-group>
+                              </div>
+                            </mat-card-content>
+                          </mat-card>
+                        </mat-grid-tile>
+                        }
+                      </mat-grid-list>
+                    </div>
+                  </div>
+                </mat-tab>
+                <mat-tab label="2° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+                <mat-tab label="3° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+                <mat-tab label="4° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+                <mat-tab label="5° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+              </mat-tab-group>
+            </div>
+          </mat-tab>
+          <mat-tab label="Divinas">
+            <div class="col-sm-12 mt-4">
+              <mat-tab-group>
+                <mat-tab label="1° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+                <mat-tab label="2° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+                <mat-tab label="3° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+                <mat-tab label="4° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+                <mat-tab label="5° Círculo">
+                  <div class="col-sm-12 mt-4"></div>
+                </mat-tab>
+              </mat-tab-group>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </form>
+    </mat-card>
+  </div>
+</div>

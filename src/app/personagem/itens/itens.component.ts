@@ -53,11 +53,6 @@ export class ItensComponent {
   servicos!: Item[];
   melhorias!: Item[];
   materiais_especiais!: Item[];
-  riquezas!: Item[];
-  encantos!: Item[];
-  pocoes_magicas!: Item[];
-  acessorios_magicos!: Item[];
-  artefatos!: Item[];
 
   numero_registros_armas = 0;
   numero_registros_municoes = 0;
@@ -73,11 +68,6 @@ export class ItensComponent {
   numero_registros_servico = 0;
   numero_registros_melhoria = 0;
   numero_registros_material_especial = 0;
-  numero_registros_riqueza = 0;
-  numero_registros_encanto = 0;
-  numero_registros_pocao_magica = 0;
-  numero_registros_acessorio_magico = 0;
-  numero_registros_artefato = 0;
   filtro_traco: string = '';
 
   constructor(private readonly service: ItemService, private fb: FormBuilder) {}

@@ -19,6 +19,8 @@ import { Pericia } from '../model/pericia';
 import { PericiaData } from './pericia.data';
 import { Acao } from '../model/acao';
 import { AcaoData } from './acao.data';
+import { Magia } from '../model/magia';
+import { MagiaData } from './magia.data';
 
 @Injectable({
   providedIn: 'root',
@@ -34,6 +36,7 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly poderData: PoderData,
     private readonly itemData: ItemData,
     private readonly acaoData: AcaoData,
+    private readonly magiaData: MagiaData,
   ) {}
 
   createDb() {
@@ -46,6 +49,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const poder: Poder[] = this.poderData.get();
     const item: Item[] = this.itemData.get();
     const acao: Acao[] = this.acaoData.get();
+    const magia: Magia[] = this.magiaData.get();
 
     return {
       raca: raca,
@@ -58,6 +62,7 @@ export class InMemoryDataService implements InMemoryDbService {
       complicacao: complicacao,
       poder: poder,
       item: item,
+      magia: magia,
     };
   }
 }
