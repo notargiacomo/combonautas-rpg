@@ -8,6 +8,7 @@ import { AlcanceMagia } from '../enum/alcance.magia.enum';
 import { DuracaoMagia } from '../enum/duracao.magia.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { PalavraChave } from '../enum/palavra.chave.enum';
+import { AlvoMagia } from '../enum/alvo.magia.enum';
 
 @Injectable({
   providedIn: 'root',
@@ -31,7 +32,8 @@ export class MagiaData {
         custo: 1,
         execucao: ExecucaoMagia.PADRAO,
         alcance: AlcanceMagia.CURTO,
-        alvo: 'alimento para 1 criatura',
+        alvo_descricao: 'alimento para 1 criatura',
+        alvo: AlvoMagia.OBJETO,
         efeito: '',
         duracao: DuracaoMagia.CENA,
         resistencia: '',
@@ -42,13 +44,16 @@ export class MagiaData {
         aprimoramentos: [
           {
             id: 1,
+            e_aumenta: false,
+            checkado:false,
             descricao: `<b>Truque:</b> o alimento é purificado (não causa nenhum efeito nocivo se estava estragado ou envenenado), mas não fornece bônus ao ser consumido.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 0,
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
-            alvo: 'alimento para 1 criatura',
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: 'alimento para 1 criatura',
             efeito: '',
             duracao: DuracaoMagia.CENA,
             resistencia: '',
@@ -58,13 +63,15 @@ export class MagiaData {
           {
             id: 2,
             e_aumenta: true,
+            aumenta: 0,
             descricao: `<b>+1 PM:</b> aumenta o número de alvos em +1.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
-            alvo: 'alimento para 1 criatura',
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: 'alimento para 1 criatura',
             efeito: '',
             duracao: DuracaoMagia.CENA,
             resistencia: '',
@@ -74,20 +81,23 @@ export class MagiaData {
           {
             id: 3,
             e_aumenta: false,
+            checkado:false,
             descricao: `<b>+1 PM:</b> muda a duração para permanente, o alvo para 1 frasco com água e adiciona componente material (pó de prata no valor de T$ 5). Em vez do normal, cria um frasco de água benta.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
+            custo_material: 5,
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
-            alvo: '1 frasco com água',
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 frasco com água',
             efeito: '',
             duracao: DuracaoMagia.PERMANENTE,
             resistencia: '',
             custoespecial: 'componente material (pó de prata no valor de T$ 5).',
             tracos: [DuracaoMagia.PERMANENTE, PalavraChave.COMPONENTE_MATERIAL],
           },
-        ]
+        ],
       }
     ];
   }
