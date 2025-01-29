@@ -113,6 +113,13 @@
                                     >
                                       {{ "Duração: " + objeto.duracao }}
                                     </button>
+                                    <button
+                                    class="me-2"
+                                    mat-flat-button
+                                    disabled
+                                  >
+                                    {{ "Resistência: " + objeto.resistencia }}
+                                  </button>
                                   </section>
                                 </div>
                               </div>
@@ -164,7 +171,7 @@
                               }
                             </div>
                           </mat-tab>
-                          <mat-tab label="Poção">
+                          <mat-tab label="Poção" *ngIf="seFazPocao(objeto)">
                             <div class="content">
                               <div class="row">
                                 <div class="col-sm-12 mt-2"></div>

@@ -270,5 +270,6 @@ export enum PalavraChave {
     TRUQUE = 'Truque',
     AUMENTA = 'Aumenta',
     COMPONENTE_MATERIAL = 'Componente Material',
+    DISCRETA = 'Discreta',
 
 }

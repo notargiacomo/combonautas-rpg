@@ -191,6 +191,10 @@ export class MagiasComponent {
     return objeto;
   }
 
+  seFazPocao(objeto:Magia): boolean {
+    return objeto.alvo == AlvoMagia.CRIATURA || objeto.alvo == AlvoMagia.OBJETO || objeto.alvo == TipoAlquimico.GRANADA;
+  }
+
   calculaCheck(aprimoramento: any, objeto: Magia) : boolean {
     aprimoramento.checkado = !aprimoramento.checkado;
     this.calculaPreco(objeto);
