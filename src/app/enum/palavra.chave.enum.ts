@@ -275,4 +275,9 @@ export enum PalavraChave {
     // CONDIÇÕES
     PARALISADO = 'Paralisado',
 
+    // PARCEIRO
+    INICIANTE = 'Iniciante',
+    VETERANO  = 'Veterano',
+    MESTRE = 'Mestre', 
+
 }
