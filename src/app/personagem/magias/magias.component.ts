@@ -166,7 +166,7 @@ export class MagiasComponent {
         return TipoAlquimico.GRANADA;
       }
       default: {
-        return '';
+        return 'INTERPRETATIVO';
       }
     }
   }
