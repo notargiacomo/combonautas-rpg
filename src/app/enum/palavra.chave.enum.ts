@@ -272,4 +272,7 @@ export enum PalavraChave {
     COMPONENTE_MATERIAL = 'Componente Material',
     DISCRETA = 'Discreta',
 
+    // CONDIÇÕES
+    PARALISADO = 'Paralisado',
+
 }

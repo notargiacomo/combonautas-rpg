@@ -4,5 +4,7 @@ export enum AlvoMagia {
     MONSTRO = 'Monstro',
     ESPIRITO = 'Espírito',
     OBJETO = 'Objeto',
-    AREA = 'Área'
+    AREA = 'Área',
+    ESFERA = 'Esfera',
+    
 }
