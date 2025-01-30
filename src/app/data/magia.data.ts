@@ -2199,7 +2199,7 @@ export class MagiaData {
           {
             id: 4,
             descricao: `<p><b>+3 PM:</b> aumenta o número de alvos em +1.</p>`,
-            e_aumenta: false,
+            e_aumenta: true,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 3,
