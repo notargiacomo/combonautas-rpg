@@ -4,5 +4,6 @@ export enum AlcanceMagia {
     CURTO = 'Curto',
     MEDIO = 'Médio',
     LONGO = 'Longo',
+    MAIOR = 'Maior',
     ILIMITADO = 'Ilimitado'
 }
