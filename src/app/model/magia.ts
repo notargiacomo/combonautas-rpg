@@ -19,6 +19,7 @@ export interface Magia {
     duracao?:string;
     duracao_rodadas?:number;
     descricao_duracao?: string,
+    efeito?:string;
     pericia_resistencia?:string;
     maneira_resistencia?:string;
     referencias?:string;
@@ -43,6 +44,7 @@ export interface Magia {
             duracao?:string;
             duracao_rodadas?:number;
             descricao_duracao?: string;
+            efeito?: string;
             pericia_resistencia?:string;
             maneira_resistencia?:string;
             tracos?: string[];
