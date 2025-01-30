@@ -6,4 +6,5 @@ export enum DuracaoMagia {
     DIA = 'Dia',
     SEMANA = 'Semana',
     PERMANENTE = 'Permanente',
+    VARIAVEL = 'Variável',
 }
