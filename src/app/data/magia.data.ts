@@ -650,6 +650,198 @@ export class MagiaData {
             aumenta: 0
           }
         ]
+      },
+      {
+        id: 9,
+        nome: 'Amarras Etéreas',
+        descricao: `Três laços de energia surgem e se enroscam no alvo, deixando-o agarrado. A vítima pode tentar se livrar, gastando uma ação padrão para fazer um teste de Atletismo. Se passar, destrói um laço, mais um laço adicional para cada 5 pontos pelos quais superou a CD. Os laços também podem ser atacados e destruídos: cada um tem Defesa 10, 10 PV, RD 5 e imunidade a dano mágico. Se todos os laços forem destruídos, a magia é dissipada. Por serem feitos de energia, os laços afetam criaturas incorpóreas.`,
+        escola: EscolasMagia.CONVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.SEGUNDO_CIRCULO,
+        custo: 3, // custo em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA, 
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.REFLEXOS, 
+        maneira_resistencia: ResistenciaMagia.ANULA,
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia. BASICO,
+        paginas: '179',
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: `<b>+2 PM:</b> aumenta o número de alvos em +1.`,
+            e_aumenta: true,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [PalavraChave.AUMENTA],
+            aumenta: 0
+          },
+          {
+            id: 2,
+            descricao: `<b>+2 PM:</b> aumenta o número de laços em um alvo a sua escolha em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).`,
+            e_aumenta: true,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS, 
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [PalavraChave.AUMENTA],            aumenta: 0
+          },
+          {
+            id: 3,
+            descricao: `<b>+3 PM:</b> em vez do normal, cada laço é destruído automaticamente com um único ataque bem-sucedido; porém, cada laço destruído libera um choque de energia que causa 1d8+1 pontos de dano de essência na criatura amarrada. Requer 3º círculo.`,
+            e_aumenta: false,
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS, 
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [PalavraChave.TERCEIRO_CIRCULO],            
+            aumenta: 0
+          }
+        ]
+      }, 
+      {
+        id: 10,
+        nome: 'Amedrontar',
+        descricao: `O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.`,
+        escola: EscolasMagia.NECROMANCIA,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 animal ou humanoide;', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA, 
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VONTADE, 
+        maneira_resistencia: ResistenciaMagia.PARCIAL,
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia. BASICO,
+        paginas: '179',
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: `<b>+2 PM:</b> alvos que falhem na resistência ficam apavorados por 1d4+1 rodadas, em vez de apenas 1.`,
+            e_aumenta: false,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 animal ou humanoide',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE, 
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [],
+            aumenta: 0
+          },
+          
+          {
+            id: 2,
+            descricao: `<b>+2 PM:</b> muda o alvo para 1 criatura.`,
+            e_aumenta: false,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE, 
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [AlvoMagia.CRIATURA],
+            aumenta: 0
+          },
+          {
+            id: 3,
+            descricao: `<b>+5 PM:</b> afeta todos os alvos válidos a sua escolha dentro do alcance.`,
+            e_aumenta: false,
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: 'afeta todos os alvos válidos a sua escolha dentro do alcance.',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE, 
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [],
+            aumenta: 0
+          },
+        ]
       }
     ];
   }
