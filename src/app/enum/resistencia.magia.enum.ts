@@ -5,9 +5,4 @@ export enum ResistenciaMagia {
     PARCIAL = 'Parcial',
     REDUZ_METADE = 'Reduz metade',
     DESACREDITA = 'Desacredita',
-
-    // PERICIAS DE RESISTENCIA
-    FORTITUDE = 'Fortitude ',
-    REFLEXOS = 'Reflexos ',
-    VONTADE = 'Vontade '
 }

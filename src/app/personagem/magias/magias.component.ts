@@ -18,6 +18,11 @@ import { Magia } from '../../model/magia';
 import { MagiaService } from '../../service/magia.service';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CirculoMagia } from '../../enum/circulo.magia.enum';
+import { TipoMagia } from '../../enum/tipo.magia.enum';
+import { EscolasMagia } from '../../enum/escolas.magia.enum';
+import { Resistencia } from '../../enum/resistencia.enum';
+import { AlcanceMagia } from '../../enum/alcance.magia.enum';
+import { ExecucaoMagia } from '../../enum/execucao.magia.enum';
 
 @Component({
   selector: 'app-magias',
@@ -40,6 +45,12 @@ export class MagiasComponent {
   form!: FormGroup;
   objetos!: Magia[];
   numero_registros!: number;
+  tipos = Object.values(TipoMagia);
+  escolas = Object.values(EscolasMagia);
+  circulos = Object.values(CirculoMagia);
+  resistencias = Object.values(Resistencia);
+  alcances = Object.values(AlcanceMagia);
+  execucoes = Object.values(ExecucaoMagia);
 
   constructor(
     private readonly service: MagiaService,
@@ -48,7 +59,13 @@ export class MagiasComponent {
 
   ngOnInit() {
     this.form = this.fb.group({
-      nome: [''],
+      nome: [],
+      tipo: [],
+      escola: [],
+      circulo: [],
+      pericia_resistencia: [],
+      alcance: [],
+      execucao: [],
     });
     1 ** 2;
     this.consultar();
@@ -98,14 +115,15 @@ export class MagiasComponent {
     preco += objeto.custo_material ? objeto.custo_material : 0;
 
     objeto.aprimoramentos?.forEach((aprimoramento) => {
+      let custo = aprimoramento.custo? aprimoramento.custo: 0;
       if (aprimoramento.checkado) {
-        preco += aprimoramento.custo;
+        preco += custo;
         custo_material += aprimoramento.custo_material
           ? aprimoramento.custo_material
           : 0;
       } else if (aprimoramento.e_aumenta) {
         preco += aprimoramento.aumenta
-          ? aprimoramento.aumenta * aprimoramento.custo
+          ? aprimoramento.aumenta * custo
           : 0;
           custo_material += aprimoramento.custo_material
           ? aprimoramento.aumenta? aprimoramento.aumenta * aprimoramento.custo_material : 0
@@ -200,4 +218,9 @@ export class MagiasComponent {
     this.calculaPreco(objeto);
     return aprimoramento.checkado;
   }
+
+    limparFiltros() {
+      this.form.reset();
+      this.consultar();
+    }
 }

@@ -11,6 +11,134 @@
         <div class="col-sm-12 mt-4">
           <div class="col-sm-12 mt-4">
             <div class="row">
+              <div class="col-sm-4 mt-4">
+                <div class="row">
+                  <label id="radio-tipo"><b>Tipo</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    name="tipo"
+                    formControlName="tipo"
+                    (change)="consultar()"
+                    title="Tipo"
+                    aria-labelledby="radio-tipo"
+                  >
+                    @for (tipo of tipos; track tipo) {
+                    <mat-radio-button [value]="tipo">{{
+                      tipo
+                    }}</mat-radio-button>
+                    }
+                  </mat-radio-group>
+                </div>
+              </div>
+              <div class="col-sm-8 mt-4">
+                <div class="row">
+                  <label id="radio-circulo"><b>Círculos</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    name="circulo"
+                    formControlName="circulo"
+                    (change)="consultar()"
+                    title="Círculos"
+                    aria-labelledby="radio-circulo"
+                  >
+                    @for (objeto of circulos; track objeto) {
+                    <mat-radio-button [value]="objeto">{{
+                      objeto
+                    }}</mat-radio-button>
+                    }
+                  </mat-radio-group>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 mt-4">
+                <div class="row">
+                  <label id="radio-escola"><b>Escola</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    name="Escola"
+                    formControlName="escola"
+                    (change)="consultar()"
+                    title="Círculos"
+                    aria-labelledby="radio-escola"
+                  >
+                    @for (objeto of escolas; track objeto) {
+                    <mat-radio-button [value]="objeto">{{
+                      objeto
+                    }}</mat-radio-button>
+                    }
+                  </mat-radio-group>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 mt-4">
+                <div class="row">
+                  <label id="radio-resistencia"><b>Resistencias</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    name="pericia_resistencia"
+                    formControlName="pericia_resistencia"
+                    (change)="consultar()"
+                    title="Resistencias"
+                    aria-labelledby="radio-resistencia"
+                  >
+                    @for (objeto of resistencias; track objeto) {
+                    <mat-radio-button [value]="objeto">{{
+                      objeto
+                    }}</mat-radio-button>
+                    }
+                  </mat-radio-group>
+                </div>
+              </div>
+              <div class="col-sm-8 mt-4">
+                <div class="row">
+                  <label id="radio-circulo"><b>Alcances</b></label>
+                </div>
+                <div class="row">
+                  <mat-radio-group
+                    name="alcance"
+                    formControlName="alcance"
+                    (change)="consultar()"
+                    title="Alcances"
+                    aria-labelledby="radio-alcance"
+                  >
+                    @for (objeto of alcances; track objeto) {
+                    <mat-radio-button [value]="objeto">{{
+                      objeto
+                    }}</mat-radio-button>
+                    }
+                  </mat-radio-group>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 mt-4">
+                  <div class="row">
+                    <label id="radio-execucao"><b>Execucão</b></label>
+                  </div>
+                  <div class="row">
+                    <mat-radio-group
+                      name="execucao"
+                      formControlName="execucao"
+                      (change)="consultar()"
+                      title="Execucão"
+                      aria-labelledby="radio-execucao"
+                    >
+                      @for (objeto of execucoes; track objeto) {
+                      <mat-radio-button [value]="objeto">{{
+                        objeto
+                      }}</mat-radio-button>
+                      }
+                    </mat-radio-group>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-sm-6 mt-4">
                 <mat-form-field class="form-field">
                   <mat-label>Magia</mat-label>
@@ -21,6 +149,19 @@
                     (keyup)="consultar()"
                   />
                 </mat-form-field>
+              </div>
+              <div class="col-sm-6 mt-4">
+                <section>
+                  <div class="button-row d-flex justify-content-end">
+                    <button
+                      class="me-2"
+                      (click)="limparFiltros()"
+                      mat-flat-button
+                    >
+                      Limpar Filtros
+                    </button>
+                  </div>
+                </section>
               </div>
             </div>
             <div class="row">
@@ -114,12 +255,17 @@
                                       {{ "Duração: " + objeto.duracao }}
                                     </button>
                                     <button
-                                    class="me-2"
-                                    mat-flat-button
-                                    disabled
-                                  >
-                                    {{ "Resistência: " + objeto.resistencia }}
-                                  </button>
+                                      class="me-2"
+                                      mat-flat-button
+                                      disabled
+                                    >
+                                      {{
+                                        "Resistência: " +
+                                          objeto.pericia_resistencia +
+                                          " " +
+                                          objeto.maneira_resistencia
+                                      }}
+                                    </button>
                                   </section>
                                 </div>
                               </div>
@@ -423,7 +569,13 @@
                                 <div
                                   class="col-sm-3 mt-1 d-flex justify-content-end"
                                 >
-                                  {{ "T$ " + objeto ? objeto.custo ? objeto.custo * 100: 0 : 0 }}
+                                  {{
+                                    "T$ " + objeto
+                                      ? objeto.custo
+                                        ? objeto.custo * 100
+                                        : 0
+                                      : 0
+                                  }}
                                 </div>
                                 <hr />
                               </div>
@@ -450,13 +602,13 @@
                                 <hr />
                               </div>
                               <div class="row">
-                                <div class="col-sm-6 mt-1">PM gasto na Ativação</div>
+                                <div class="col-sm-6 mt-1">
+                                  PM gasto na Ativação
+                                </div>
                                 <div
                                   class="col-sm-6 mt-1 d-flex justify-content-end"
                                 >
-                                  {{
-                                    calculaPMEngenhoqueiro(objeto)
-                                  }}
+                                  {{ calculaPMEngenhoqueiro(objeto) }}
                                 </div>
                                 <hr />
                               </div>

@@ -1,4 +1,5 @@
 export enum AlvoMagia {
+    VOCE = 'Você',
     CRIATURA = 'Criatura',
     ANIMAL = 'Animal',
     MONSTRO = 'Monstro',

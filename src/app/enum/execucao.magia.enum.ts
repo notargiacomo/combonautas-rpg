@@ -1,7 +1,9 @@
 export enum ExecucaoMagia {
+    LIVRE = 'Livre',
+    REACAO = 'Reação',
     MOVIMENTO = 'Movimento',
     PADRAO = 'Padrão',
     COMPLETA = 'Completa',
-    REACAO = 'Reação',
-    LIVRE = 'Livre',
+    RODADA = 'Rodada',
+    MAIOR = 'Maior',
 }
