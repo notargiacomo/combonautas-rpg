@@ -271,6 +271,7 @@ export enum PalavraChave {
     AUMENTA = 'Aumenta',
     COMPONENTE_MATERIAL = 'Componente Material',
     DISCRETA = 'Discreta',
+    CRIATURAS_ESCOLHIDAS = 'Criaturas Escolhidas',
 
     // CONDIÇÕES
     PARALISADO = 'Paralisado',

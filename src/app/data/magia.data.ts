@@ -91,7 +91,8 @@ export class MagiaData {
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
             custo_material: 5,
-            descricao_material: 'componente material (pó de prata no valor de T$ 5).',
+            descricao_material:
+              'componente material (pó de prata no valor de T$ 5).',
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.OBJETO,
@@ -116,7 +117,8 @@ export class MagiaData {
         alvo_descricao: '1 animal',
         alvo: AlvoMagia.ANIMAL,
         duracao: DuracaoMagia.CENA,
-        pericia_resistencia: Resistencia.VONTADE, maneira_resistencia: ResistenciaMagia.ANULA,
+        pericia_resistencia: Resistencia.VONTADE,
+        maneira_resistencia: ResistenciaMagia.ANULA,
         tracos: [
           TipoMagia.DIVINA,
           EscolasMagia.TRANSMUTACAO,
@@ -140,7 +142,8 @@ export class MagiaData {
             alvo_descricao: '1 animal',
             alvo: AlvoMagia.ANIMAL,
             duracao: DuracaoMagia.CENA,
-            pericia_resistencia: Resistencia.VONTADE, maneira_resistencia: ResistenciaMagia.ANULA,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [PalavraChave.ALCANCE_MEDIO],
           },
           {
@@ -155,9 +158,10 @@ export class MagiaData {
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
             alvo_descricao: '1 monstro ou espírito com Inteligência 1 ou 2.',
-            alvo: AlvoMagia.MONSTRO + ' ou ' + AlvoMagia.ESPIRITO ,
+            alvo: AlvoMagia.MONSTRO + ' ou ' + AlvoMagia.ESPIRITO,
             duracao: DuracaoMagia.CENA,
-            pericia_resistencia: Resistencia.VONTADE, maneira_resistencia: ResistenciaMagia.ANULA,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlvoMagia.MONSTRO, AlvoMagia.ESPIRITO],
           },
           {
@@ -173,9 +177,10 @@ export class MagiaData {
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
             alvo_descricao: '1 animal',
-            alvo: AlvoMagia.ANIMAL ,
+            alvo: AlvoMagia.ANIMAL,
             duracao: DuracaoMagia.CENA,
-            pericia_resistencia: Resistencia.VONTADE,maneira_resistencia: ResistenciaMagia.ANULA,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [PalavraChave.AUMENTA],
           },
           {
@@ -191,10 +196,15 @@ export class MagiaData {
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
             alvo_descricao: '1 monstro ou espírito',
-            alvo: AlvoMagia.MONSTRO + ' ou ' + AlvoMagia.ESPIRITO ,
+            alvo: AlvoMagia.MONSTRO + ' ou ' + AlvoMagia.ESPIRITO,
             duracao: DuracaoMagia.CENA,
-            pericia_resistencia: Resistencia.VONTADE, maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [CirculoMagia.TERCEIRO_CIRCULO , AlvoMagia.MONSTRO, AlvoMagia.ESPIRITO],
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [
+              CirculoMagia.TERCEIRO_CIRCULO,
+              AlvoMagia.MONSTRO,
+              AlvoMagia.ESPIRITO,
+            ],
           },
         ],
       },
@@ -211,7 +221,8 @@ export class MagiaData {
         alvo_descricao: '1 criatura',
         alvo: AlvoMagia.CRIATURA,
         duracao: DuracaoMagia.INSTANTANEA,
-        pericia_resistencia: Resistencia.VONTADE, maneira_resistencia: ResistenciaMagia.PARCIAL,
+        pericia_resistencia: Resistencia.VONTADE,
+        maneira_resistencia: ResistenciaMagia.PARCIAL,
         tracos: [
           TipoMagia.ARCANA,
           EscolasMagia.ENCANTAMENTO,
@@ -235,7 +246,8 @@ export class MagiaData {
             alvo_descricao: '1 criatura',
             alvo: AlvoMagia.CRIATURA,
             duracao: DuracaoMagia.INSTANTANEA,
-            pericia_resistencia: Resistencia.VONTADE, maneira_resistencia: ResistenciaMagia.PARCIAL,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [PalavraChave.DISCRETA],
           },
           {
@@ -252,7 +264,8 @@ export class MagiaData {
             alvo_descricao: '1 criatura',
             alvo: AlvoMagia.CRIATURA,
             duracao: DuracaoMagia.DIA,
-            pericia_resistencia: Resistencia.VONTADE, maneira_resistencia: ResistenciaMagia.PARCIAL,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [DuracaoMagia.DIA],
           },
           {
@@ -270,7 +283,8 @@ export class MagiaData {
             alvo_descricao: '1 criatura',
             alvo: AlvoMagia.CRIATURA,
             duracao: DuracaoMagia.DIA,
-            pericia_resistencia: Resistencia.VONTADE,maneira_resistencia: ResistenciaMagia.PARCIAL,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [PalavraChave.AUMENTA],
           },
         ],
@@ -350,7 +364,8 @@ export class MagiaData {
             alvo_descricao: 'esfera com 9m de raio',
             alvo: AlvoMagia.ESFERA,
             duracao: DuracaoMagia.DIA,
-            pericia_resistencia: Resistencia.VONTADE,maneira_resistencia: ResistenciaMagia.ANULA,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [PalavraChave.PARALISADO],
           },
         ],
@@ -457,7 +472,7 @@ export class MagiaData {
           CirculoMagia.QUINTO_CIRCULO,
         ],
         referencias: Referencia.BASICO,
-        paginas: '179'
+        paginas: '179',
       },
       {
         id: 7,
@@ -475,13 +490,17 @@ export class MagiaData {
         alcance: AlcanceMagia.TOQUE,
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
-        duracao: DuracaoMagia.INSTANTANEA, 
+        duracao: DuracaoMagia.INSTANTANEA,
         duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
-        pericia_resistencia: Resistencia.VONTADE, 
+        pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
-        referencias: Referencia. BASICO,
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ENCANTAMENTO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
           {
@@ -504,8 +523,8 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.AREA]
-            ,aumenta: 0
+            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.AREA],
+            aumenta: 0,
           },
           {
             id: 2,
@@ -528,9 +547,9 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: ['APAGA 24 HORAS'],
-            aumenta: 0
-          }
-        ]
+            aumenta: 0,
+          },
+        ],
       },
       {
         id: 8,
@@ -548,13 +567,17 @@ export class MagiaData {
         alcance: AlcanceMagia.CURTO,
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: '1 objeto', // descritivo para exibição do alvo
-        duracao: DuracaoMagia.DIA, 
+        duracao: DuracaoMagia.DIA,
         duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
-        pericia_resistencia: '', 
+        pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
-        referencias: Referencia. BASICO,
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.TRANSMUTACAO,
+          CirculoMagia.SEGUNDO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
           {
@@ -578,7 +601,7 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [PalavraChave.AUMENTA],
-            aumenta: 0
+            aumenta: 0,
           },
           {
             id: 2,
@@ -601,7 +624,7 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA],
-            aumenta: 0
+            aumenta: 0,
           },
           {
             id: 3,
@@ -623,8 +646,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0
+            tracos: [
+              AlcanceMagia.TOQUE,
+              AlvoMagia.CRIATURA,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta: 0,
           },
           {
             id: 4,
@@ -646,10 +673,14 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0
-          }
-        ]
+            tracos: [
+              AlcanceMagia.TOQUE,
+              AlvoMagia.CRIATURA,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta: 0,
+          },
+        ],
       },
       {
         id: 9,
@@ -667,13 +698,17 @@ export class MagiaData {
         alcance: AlcanceMagia.MEDIO,
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
-        duracao: DuracaoMagia.CENA, 
+        duracao: DuracaoMagia.CENA,
         duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
-        pericia_resistencia: Resistencia.REFLEXOS, 
+        pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
-        referencias: Referencia. BASICO,
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.CONVOCACAO,
+          CirculoMagia.SEGUNDO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
           {
@@ -697,7 +732,7 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [PalavraChave.AUMENTA],
-            aumenta: 0
+            aumenta: 0,
           },
           {
             id: 2,
@@ -717,9 +752,10 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             duracao_rodadas: 0,
             descricao_duracao: '',
-            pericia_resistencia: Resistencia.REFLEXOS, 
+            pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],            aumenta: 0
+            tracos: [PalavraChave.AUMENTA],
+            aumenta: 0,
           },
           {
             id: 3,
@@ -739,13 +775,13 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             duracao_rodadas: 0,
             descricao_duracao: '',
-            pericia_resistencia: Resistencia.REFLEXOS, 
+            pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.TERCEIRO_CIRCULO],            
-            aumenta: 0
-          }
-        ]
-      }, 
+            tracos: [PalavraChave.TERCEIRO_CIRCULO],
+            aumenta: 0,
+          },
+        ],
+      },
       {
         id: 10,
         nome: 'Amedrontar',
@@ -762,13 +798,17 @@ export class MagiaData {
         alcance: AlcanceMagia.CURTO,
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 animal ou humanoide;', // descritivo para exibição do alvo
-        duracao: DuracaoMagia.CENA, 
+        duracao: DuracaoMagia.CENA,
         duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
-        pericia_resistencia: Resistencia.VONTADE, 
+        pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
-        referencias: Referencia. BASICO,
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.NECROMANCIA,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
           {
@@ -789,12 +829,12 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             duracao_rodadas: 0,
             descricao_duracao: '',
-            pericia_resistencia: Resistencia.VONTADE, 
+            pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0
+            aumenta: 0,
           },
-          
+
           {
             id: 2,
             descricao: `<b>+2 PM:</b> muda o alvo para 1 criatura.`,
@@ -813,10 +853,10 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             duracao_rodadas: 0,
             descricao_duracao: '',
-            pericia_resistencia: Resistencia.VONTADE, 
+            pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0
+            aumenta: 0,
           },
           {
             id: 3,
@@ -832,17 +872,168 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.CRIATURA,
-            alvo_descricao: 'afeta todos os alvos válidos a sua escolha dentro do alcance.',
+            alvo_descricao:
+              'afeta todos os alvos válidos a sua escolha dentro do alcance.',
             duracao: DuracaoMagia.CENA,
             duracao_rodadas: 0,
             descricao_duracao: '',
-            pericia_resistencia: Resistencia.VONTADE, 
+            pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0
+            aumenta: 0,
           },
-        ]
-      }
+        ],
+      },
+      {
+        id: 11,
+        nome: 'Âncora Dimensional',
+        descricao: `O alvo é envolvido por um campo de força cor de esmeralda que impede qualquer movimento planar. Isso inclui magias de convocação (como Salto Dimensional e Teletransporte), viagens astrais e a habilidade incorpóreo.`,
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 6, // custo em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: '',
+        maneira_resistencia: '',
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '179',
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: `<b>+2 PM:</b> muda o alcance para médio, a área para esfera com 3m de raio e o alvo para criaturas escolhidas.`,
+            e_aumenta: false,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+            execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'criaturas escolhidas', // descritivo para exibição do alvo
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [
+              AlcanceMagia.MEDIO,
+              AlvoMagia.AREA,
+              PalavraChave.CRIATURAS_ESCOLHIDAS,
+            ],
+            aumenta: 0,
+          },
+          {
+            id: 2,
+            descricao: `<b>+2 PM:</b> muda o efeito para criar um fio de energia cor de esmeralda que prende o alvo a um ponto no espaço dentro do alcance. O ponto precisa ser fixo, mas não precisa de nenhum apoio ou superfície (pode simplesmente flutuar no ar). O alvo não pode se afastar mais de 3m do ponto, nem fisicamente, nem com movimento planar. O fio possui 20 PV e redução de dano 20 (mas pode ser dissipado por efeitos que libertam criaturas, como o Julgamento Divino: Libertação do paladino).`,
+            e_aumenta: false,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+            execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [],
+            aumenta: 0,
+          },
+          {
+            id: 3,
+            descricao: `<b>+4 PM:</b> como acima, mas em vez de um fio, cria uma corrente de energia, com 20 PV e redução de dano 40.`,
+            e_aumenta: false,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+            execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [],
+            aumenta: 0,
+          },
+          {
+            id: 4,
+            descricao: `<b>+4 PM:</b> muda o alvo para área de cubo de 9m, a duração para permanente e adiciona componente material (chave de esmeralda no valor de T$ 2.000). Em vez do normal, nenhum tipo de movimento planar pode ser feito para entrar ou sair da área.`,
+            e_aumenta: false,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            custo: 4,
+            custo_material: 2000,
+            descricao_material: 'chave de esmeralda no valor de T$ 2.000',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+            execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'área de cubo de 9m', // descritivo para exibição do alvo
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [AlvoMagia.AREA, PalavraChave.COMPONENTE_MATERIAL, DuracaoMagia.PERMANENTE],
+            aumenta: 0,
+          },
+          {
+            id: 5,
+            descricao: `<b>+9 PM:</b> muda o alcance para médio, a área para esfera com 3m de raio e o alvo para criaturas escolhidas. Cria um fio de energia (veja acima) que prende todos os alvos ao centro da área.`,
+            e_aumenta: false,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+            execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [AlcanceMagia.MEDIO, AlvoMagia.AREA, ],
+            aumenta: 0,
+          },
+        ],
+      },
     ];
   }
 }

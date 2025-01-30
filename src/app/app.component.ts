@@ -6,11 +6,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { NgxLoaderIndicatorDirective } from 'ngx-loader-indicator';
 import { LoadingIndicatorComponent } from './conf/loading-indicator/loading-indicator.component';
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatMenuModule, MatButtonModule, MatCardModule, MatDividerModule, LoadingIndicatorComponent],
+  imports: [RouterOutlet, MatMenuModule, MatButtonModule, MatCardModule, MatDividerModule, LoadingIndicatorComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
