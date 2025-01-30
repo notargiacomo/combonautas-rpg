@@ -21,16 +21,19 @@ export interface Magia {
     descricao_duracao?: string,
     pericia_resistencia?:string;
     maneira_resistencia?:string;
+    referencias?:string;
+    paginas?:string;
+    tracos?: string[];
     aprimoramentos?:
         {
             id: number;
             descricao?: string;
             e_aumenta?: boolean;
+            tipo?:string;
+            circulo?:string;
             custo?: number;
             custo_material?:number;
             descricao_material?:string;
-            tipo?:string;
-            circulo?:string;
             execucao?:string;
             execucao_rodada?:number;
             execucao_complemento?:string;
@@ -47,9 +50,6 @@ export interface Magia {
             aumenta?: number;
             checkado?: boolean;
         }[],
-    tracos?: string[];
-    referencias?:string;
-    paginas?:string;
     // variáveis para cálculo
     custo_total?:number;
     custo_material_total?:number;
