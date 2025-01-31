@@ -3768,7 +3768,8 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: ResistenciaMagia.NENHUMA,
-            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO]
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
+            aumenta: 0,
           },
           {
             id: 4,
