@@ -4287,6 +4287,133 @@ export class MagiaData {
           },
         ],
       },
+      {
+        id: 46, // Defina o ID conforme necessário
+        nome: 'Tranca Arcana',
+        descricao:
+          'Esta magia tranca uma porta ou outro item que possa ser aberto ou fechado (como um baú, caixa etc.), aumentando a CD de testes de Força ou Ladinagem para abri-lo em +10. Você pode abrir livremente sua própria tranca sem problemas. Componente material: chave de bronze no valor de T$ 25.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 25, // custo em T$ de material (chave de bronze)
+        descricao_material: 'chave de bronze no valor de T$ 25', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.OBJETO,
+        alvo_descricao: '1 objeto Grande ou menor', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.PERMANENTE,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '209', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>Truque:</b> muda o alcance para curto. Em vez do normal, pode abrir ou fechar um objeto de tamanho Grande ou menor, como uma porta ou baú. Não afeta objetos trancados.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 0, // Truque não tem custo adicional
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 objeto Grande ou menor',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [AlcanceMagia.CURTO, DuracaoMagia.INSTANTANEA],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+1 PM:</b> muda o alcance para curto e a duração para instantânea. Em vez do normal, a magia abre portas, baús e janelas trancadas, presas, barradas ou protegidas por Tranca Arcana (o efeito é dissipado) a sua escolha. Ela também afrouxa grilhões e solta correntes.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 objeto Grande ou menor',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [AlcanceMagia.CURTO, DuracaoMagia.INSTANTANEA],
+          },
+          {
+            id: 3,
+            descricao: '<b>+5 PM:</b> aumenta a CD para abrir o alvo em +5.',
+            e_aumenta: true, // Aumenta a CD para abrir o alvo
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 objeto Grande ou menor',
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 4,
+            descricao:
+              '<b>+5 PM:</b> muda o alvo para 1 objeto de qualquer tamanho, podendo afetar até mesmo os portões de um castelo. Requer 3º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alvo
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 objeto de qualquer tamanho',
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [AlvoMagia.OBJETO, CirculoMagia.TERCEIRO_CIRCULO],
+          },
+        ],
+      },
     ];
   }
 }
