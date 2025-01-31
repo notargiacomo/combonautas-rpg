@@ -6714,7 +6714,7 @@ export class MagiaData {
           CirculoMagia.SEGUNDO_CIRCULO,
         ],
         referencias: Referencia.BASICO,
-        paginas: '179 e 180',
+        paginas: '206',
         aprimoramentos: [
           {
             id: 1,
@@ -6933,7 +6933,8 @@ export class MagiaData {
       {
         id: 70, // Defina o ID conforme necessário
         nome: 'Dissipar Magia',
-        descricao: 'Você dissipa outras magias que estejam ativas, como se sua duração tivesse acabado. Note que efeitos de magias instantâneas não podem ser dissipados (não se pode dissipar uma Bola de Fogo ou Relâmpago depois que já causaram dano...). Se lançar essa magia em uma criatura ou área, faça um teste de Misticismo você dissipa as magias com CD igual ou menor que o resultado do teste. Se lançada contra um item mágico, o transforma em um item mundano por 1d6 rodadas (Vontade anula).',
+        descricao:
+          'Você dissipa outras magias que estejam ativas, como se sua duração tivesse acabado. Note que efeitos de magias instantâneas não podem ser dissipados (não se pode dissipar uma Bola de Fogo ou Relâmpago depois que já causaram dano...). Se lançar essa magia em uma criatura ou área, faça um teste de Misticismo você dissipa as magias com CD igual ou menor que o resultado do teste. Se lançada contra um item mágico, o transforma em um item mundano por 1d6 rodadas (Vontade anula).',
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.UNIVERSAL,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
@@ -6945,19 +6946,25 @@ export class MagiaData {
         execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
         alcance: AlcanceMagia.MEDIO,
         alvo: AlvoMagia.CRIATURA_OBJETO_AREA,
-        alvo_descricao: '1 criatura ou 1 objeto mágico ou esfera com 3m de raio', // descritivo para exibição do alvo
+        alvo_descricao:
+          '1 criatura ou 1 objeto mágico ou esfera com 3m de raio', // descritivo para exibição do alvo
         duracao: DuracaoMagia.INSTANTANEA,
         duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        tracos: [
+          TipoMagia.UNIVERSAL,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.SEGUNDO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '191', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao: '<b>+12 PM:</b> muda a área para esfera com 9m de raio. Em vez do normal, cria um efeito de disjunção. Todas as magias na área são automaticamente dissipadas e todos os itens mágicos na área, exceto aqueles que você estiver carregando, viram itens mundanos por uma cena (com direito a um teste de Vontade para evitar esse efeito). Requer 5º círculo.',
+            descricao:
+              '<b>+12 PM:</b> muda a área para esfera com 9m de raio. Em vez do normal, cria um efeito de disjunção. Todas as magias na área são automaticamente dissipadas e todos os itens mágicos na área, exceto aqueles que você estiver carregando, viram itens mundanos por uma cena (com direito a um teste de Vontade para evitar esse efeito). Requer 5º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 12,
             custo_material: 0,
@@ -6975,10 +6982,256 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [AlcanceMagia.MEDIO, AlvoMagia.AREA, CirculoMagia.QUINTO_CIRCULO]
-          }
-        ]
-      }
+            tracos: [
+              AlcanceMagia.MEDIO,
+              AlvoMagia.AREA,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 71,
+        nome: 'Teia',
+        descricao: `Teia cria várias camadas de fibras entrelaçadas e pegajosas na área. Qualquer criatura na área que falhar na resistência fica enredada. Uma vítima pode se libertar com uma ação padrão e um teste de Acrobacia ou Atletismo. A área ocupada por Teia é terreno difícil. A Teia é inflamável. Qualquer ataque que cause dano de fogo destrói as teias por onde passar, libertando as criaturas  enredadas mas deixando-as em chamas.`,
+        escola: EscolasMagia.CONVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1,
+        custo_material: 0,
+        descricao_material: '',
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0,
+        execucao_complemento: '',
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cubo com 6m de lado',
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0,
+        descricao_duracao: '',
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: ResistenciaMagia.ANULA,
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.CONVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '208',
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: `<p><b>+1 PM:</b> além do normal, criaturas que falhem na resistência também ficam imóveis.`,
+            e_aumenta: false,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cubo com 6m de lado',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [],
+            aumenta: 0,
+          },
+          {
+            id: 2,
+            descricao: `<p><b>+2 PM:</b> além do normal, no início de seus turnos a magia afeta novamente qualquer criatura na área, exigindo um novo teste de Reflexos. Requer 2º círculo.`,
+            e_aumenta: false,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cubo com 6m de lado',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [CirculoMagia.SEGUNDO_CIRCULO],
+            aumenta: 0,
+          },
+          {
+            id: 3,
+            descricao: `<p><b>+1 PM:</b> aumenta a área em +1 cubo de 1,5m.`,
+            e_aumenta: true,
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cubo com 6m de lado',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [PalavraChave.AUMENTA],
+            aumenta: 0,
+          },
+        ],
+      },
+      {
+        id: 72, // Defina o ID conforme necessário
+        nome: 'Refúgio',
+        descricao:
+          'Esta magia cria um domo imóvel e quase opaco por fora, mas transparente pelo lado de dentro. Ele protege contra calor, frio e forças pequenas, mas não contra qualquer coisa capaz de causar dano. Assim, o domo protege contra neve e vento comuns, mas não contra uma flecha ou Bola de Fogo. Porém, como o domo é quase opaco, qualquer criatura dentro dele tem camuflagem total contra ataques vindos de fora. Criaturas podem entrar e sair do domo livremente. Descansar dentro do Refúgio concede recuperação normal de PV e PM.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.SEGUNDO_CIRCULO,
+        custo: 2, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.COMPLETA,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'domo com 6m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.DIA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.SEGUNDO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '203', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+1 PM:</b> além do normal, os limites do domo são envoltos por uma fumaça escura e espessa, que impede criaturas do lado de fora de enxergar ou ouvir o que está dentro. Criaturas do lado de dentro enxergam e ouvem normalmente o que está do lado de fora. A fumaça também bloqueia magias de adivinhação.',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.COMPLETA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'domo com 6m de raio',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+3 PM:</b> em vez do normal, cria uma cabana que comporta até 10 criaturas Médias. Descansar nesse espaço concede recuperação confortável (recupera PV e PM igual ao dobro do nível). Para todos os efeitos é uma cabana normal, com paredes de madeira, telhado, uma porta, duas janelas e alguma mobília (camas, uma mesa com bancos e uma lareira). A porta e as janelas têm 15 PV, RD 5 e são protegidas por um efeito idêntico à magia Tranca Arcana. As paredes têm 200 PV e RD 5.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.COMPLETA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cabana que comporta até 10 criaturas Médias',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+3 PM:</b> em vez do normal, cria um espaço extradimensional, similar a uma caverna vazia e escura, que comporta até 10 criaturas Médias. A entrada para o espaço precisa estar desenhada em um objeto fixo como uma grande pedra ou árvore. Qualquer criatura que atravesse a entrada consegue entrar no espaço. Nenhum efeito a partir do mundo real afeta o espaço e vice-versa, mas aqueles que estiverem dentro podem observar o mundo real como se uma janela de 1m estivesse centrada na entrada. Qualquer coisa que esteja no espaço extradimensional surge no mundo real na área vazia mais próxima da entrada quando a duração da acaba. Requer 3º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.COMPLETA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao:
+              'espaço extradimensional que comporta até 10 criaturas Médias',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 4,
+            descricao:
+              '<b>+9 PM:</b> em vez do normal, cria uma mansão extradimensional que comporta até 100 criaturas Médias, com quartos luxuosos, comida e bebida e dez servos fantasmagóricos (como na Servos Invisíveis). Descansar na mansão concede recuperação luxuosa (recupera PV e PM igual ao triplo do nível). A mansão tem uma única entrada, uma porta feita de luz. Você pode deixá-la visível ou invisível como uma ação livre e apenas criaturas escolhidas por você podem passar. Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.COMPLETA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao:
+              'mansão extradimensional que comporta até 100 criaturas Médias',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+        ],
+      },
     ];
   }
 }
