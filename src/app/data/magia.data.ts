@@ -3902,6 +3902,7 @@ export class MagiaData {
               EscolasMagia.ABJURACAO,
               CirculoMagia.PRIMEIRO_CIRCULO,
             ],
+            aumenta: 0,
           },
           {
             id: 2,
@@ -3982,6 +3983,144 @@ export class MagiaData {
           },
         ],
       },
+      {
+        id: 43, // Defina o ID conforme necessário
+        nome: 'Resistência a Energia',
+        descricao: 'Ao lançar esta magia, escolha entre ácido, eletricidade, fogo, frio, luz ou trevas. O alvo recebe redução de dano 10 contra o tipo de dano escolhido.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.UNIVERSAL,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA,
+        maneira_resistencia: ResistenciaMagia.NENHUMA,
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '204', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+2 PM:</b> aumenta a redução de dano em +5.',
+            e_aumenta: true, // Aumenta a redução de dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
+            aumenta: 0,
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> muda a duração para um dia. Requer 2º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica a duração
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [DuracaoMagia.DIA, CirculoMagia.SEGUNDO_CIRCULO]
+          },
+          {
+            id: 3,
+            descricao: '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas. Requer 3º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica alcance e alvo
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO]
+          },
+          {
+            id: 4,
+            descricao: '<b>+5 PM:</b> muda o efeito para redução de dano contra todos os tipos listados na magia. Requer 3º círculo.',
+            e_aumenta: false, // Não aumenta, apenas expande o efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO]
+          },
+          {
+            id: 5,
+            descricao: '<b>+9 PM:</b> muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas muda para imunidade
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO]
+          }
+        ]
+      }
     ];
   }
 }
