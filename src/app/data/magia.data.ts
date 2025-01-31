@@ -3700,7 +3700,7 @@ export class MagiaData {
         duracao_rodadas: 1, // duração em rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
-        maneira_resistencia: ResistenciaMagia.NENHUMA,
+        maneira_resistencia: '',
         tracos: [
           TipoMagia.DIVINA,
           EscolasMagia.ABJURACAO,
@@ -3729,7 +3729,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               ExecucaoMagia.PADRAO,
               AlcanceMagia.TOQUE,
@@ -3756,7 +3756,7 @@ export class MagiaData {
             duracao_rodadas: 1,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               TipoMagia.DIVINA,
               EscolasMagia.ABJURACAO,
@@ -3782,7 +3782,7 @@ export class MagiaData {
             duracao_rodadas: 1,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               TipoMagia.DIVINA,
               EscolasMagia.ABJURACAO,
@@ -3810,7 +3810,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               ExecucaoMagia.PADRAO,
               AlcanceMagia.TOQUE,
@@ -3838,7 +3838,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               TipoMagia.DIVINA,
               EscolasMagia.ABJURACAO,
@@ -3868,7 +3868,7 @@ export class MagiaData {
         duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
-        maneira_resistencia: ResistenciaMagia.NENHUMA,
+        maneira_resistencia: '',
         tracos: [
           TipoMagia.DIVINA,
           EscolasMagia.ABJURACAO,
@@ -3896,7 +3896,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               TipoMagia.DIVINA,
               EscolasMagia.ABJURACAO,
@@ -3924,7 +3924,7 @@ export class MagiaData {
             duracao_rodadas: 1,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               ExecucaoMagia.REACAO,
               AlcanceMagia.CURTO,
@@ -3951,7 +3951,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [AlvoMagia.AREA, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
@@ -3974,7 +3974,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [
               TipoMagia.DIVINA,
               EscolasMagia.ABJURACAO,
@@ -4003,7 +4003,7 @@ export class MagiaData {
         duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
-        maneira_resistencia: ResistenciaMagia.NENHUMA,
+        maneira_resistencia: '',
         tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '204', // ou número da página, se disponível
@@ -4027,7 +4027,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
             aumenta: 0,
           },
@@ -4050,7 +4050,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA, CirculoMagia.SEGUNDO_CIRCULO]
           },
           {
@@ -4072,7 +4072,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO]
           },
           {
@@ -4094,7 +4094,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO]
           },
           {
@@ -4116,7 +4116,7 @@ export class MagiaData {
             duracao_rodadas: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
-            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            maneira_resistencia: '',
             tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO]
           }
         ]
