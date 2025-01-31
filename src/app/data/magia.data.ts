@@ -4388,6 +4388,7 @@ export class MagiaData {
               EscolasMagia.ABJURACAO,
               CirculoMagia.PRIMEIRO_CIRCULO,
             ],
+            aumenta: 0
           },
           {
             id: 4,
@@ -4411,6 +4412,171 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [AlvoMagia.OBJETO, CirculoMagia.TERCEIRO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 14, // Defina o ID conforme necessário
+        nome: 'Campo de Força',
+        descricao:
+          'Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.SEGUNDO_CIRCULO,
+        custo: 2, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.VOCE,
+        alvo_descricao: 'você', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.SEGUNDO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '183', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+1 PM:</b> muda a execução para reação e a duração para instantânea. Em vez do normal, você recebe RD 30 contra o próximo dano que sofrer.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.REACAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [ExecucaoMagia.REACAO, DuracaoMagia.INSTANTANEA],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+3 PM:</b> muda os PV temporários ou a RD para 50. Requer 3º círculo.',
+            e_aumenta: true, // Aumenta os PV temporários ou a RD
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+7 PM:</b> muda os PV temporários ou a RD para 70. Requer 4º círculo.',
+            e_aumenta: true, // Aumenta os PV temporários ou a RD
+            custo: 7,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 4,
+            descricao:
+              '<b>+7 PM:</b> muda o alcance para curto, o alvo para outra criatura ou objeto solto Enorme ou menor e a duração para sustentada. Em vez do normal, cria uma esfera imóvel e tremeluzente ao redor do alvo. Nenhuma criatura, objeto ou efeito de dano pode passar pela esfera, embora criaturas possam respirar normalmente. Criaturas na área podem fazer um teste de Reflexos para evitar serem aprisionadas e sempre que você se concentrar. Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 7,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'outra criatura ou objeto solto Enorme ou menor',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURA_OBJETO,
+              DuracaoMagia.SUSTENTADA,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 5,
+            descricao:
+              '<b>+9 PM:</b> como o aprimoramento acima, mas tudo dentro da esfera fica praticamente sem peso. Uma vez por rodada, você pode gastar uma ação livre para flutuar a esfera e seu conteúdo 9m em uma direção. Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'outra criatura ou objeto solto Enorme ou menor',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURA_OBJETO,
+              DuracaoMagia.SUSTENTADA,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
           },
         ],
       },
