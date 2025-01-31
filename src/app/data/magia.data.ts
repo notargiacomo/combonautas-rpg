@@ -3986,7 +3986,8 @@ export class MagiaData {
       {
         id: 43, // Defina o ID conforme necessário
         nome: 'Resistência a Energia',
-        descricao: 'Ao lançar esta magia, escolha entre ácido, eletricidade, fogo, frio, luz ou trevas. O alvo recebe redução de dano 10 contra o tipo de dano escolhido.',
+        descricao:
+          'Ao lançar esta magia, escolha entre ácido, eletricidade, fogo, frio, luz ou trevas. O alvo recebe redução de dano 10 contra o tipo de dano escolhido.',
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.UNIVERSAL,
         circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -4004,7 +4005,11 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
-        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        tracos: [
+          TipoMagia.UNIVERSAL,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '204', // ou número da página, se disponível
         aprimoramentos: [
@@ -4028,12 +4033,17 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
             aumenta: 0,
           },
           {
             id: 2,
-            descricao: '<b>+2 PM:</b> muda a duração para um dia. Requer 2º círculo.',
+            descricao:
+              '<b>+2 PM:</b> muda a duração para um dia. Requer 2º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica a duração
             custo: 2,
             custo_material: 0,
@@ -4051,11 +4061,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [DuracaoMagia.DIA, CirculoMagia.SEGUNDO_CIRCULO]
+            tracos: [DuracaoMagia.DIA, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 3,
-            descricao: '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas. Requer 3º círculo.',
+            descricao:
+              '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas. Requer 3º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica alcance e alvo
             custo: 5,
             custo_material: 0,
@@ -4073,11 +4084,16 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO]
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURAS_ESCOLHIDAS,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
           },
           {
             id: 4,
-            descricao: '<b>+5 PM:</b> muda o efeito para redução de dano contra todos os tipos listados na magia. Requer 3º círculo.',
+            descricao:
+              '<b>+5 PM:</b> muda o efeito para redução de dano contra todos os tipos listados na magia. Requer 3º círculo.',
             e_aumenta: false, // Não aumenta, apenas expande o efeito
             custo: 5,
             custo_material: 0,
@@ -4095,11 +4111,16 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO]
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
           },
           {
             id: 5,
-            descricao: '<b>+9 PM:</b> muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo.',
+            descricao:
+              '<b>+9 PM:</b> muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo.',
             e_aumenta: false, // Não aumenta, apenas muda para imunidade
             custo: 9,
             custo_material: 0,
@@ -4117,10 +4138,100 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO]
-          }
-        ]
-      }
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 44, // Defina o ID conforme necessário
+        nome: 'Santuário',
+        descricao:
+          'Qualquer criatura que tente fazer uma ação hostil contra o alvo deve fazer um teste de Vontade. Se falhar, não consegue, perde a ação e não pode tentar novamente até o fim da cena. Santuário não protege o alvo de efeitos de área. Além disso, o próprio alvo também não pode fazer ações hostis (incluindo forçar outras criaturas a atacá-lo), ou a magia é dissipada — mas pode usar habilidades e magias de cura e suporte, como Curar Ferimentos e Bênção.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VONTADE,
+        maneira_resistencia: ResistenciaMagia.ANULA,
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '205', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+1 PM:</b> além do normal, escolha um tipo de criatura entre animal, construto ou morto-vivo. Você não pode ser percebido por criaturas não inteligentes (Int –4 ou menor) do tipo escolhido.',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+9 PM:</b> também protege o alvo contra efeitos de área. Uma criatura que tente atacar uma área que inclua o alvo deve fazer o teste de Vontade; se falhar, não consegue e perde a ação. Ela só pode tentar novamente se o alvo sair da área.',
+            e_aumenta: false, // Não aumenta, apenas adiciona proteção contra efeitos de área
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
     ];
   }
 }
