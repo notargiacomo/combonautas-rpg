@@ -4416,7 +4416,7 @@ export class MagiaData {
         ],
       },
       {
-        id: 14, // Defina o ID conforme necessário
+        id: 47, // Defina o ID conforme necessário
         nome: 'Campo de Força',
         descricao:
           'Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.',
