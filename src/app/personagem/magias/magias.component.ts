@@ -112,7 +112,7 @@ export class MagiasComponent {
     let custo_material = 0;
 
     preco += objeto.custo? objeto.custo: 0;
-    preco += objeto.custo_material ? objeto.custo_material : 0;
+    custo_material += objeto.custo_material ? objeto.custo_material : 0;
 
     objeto.aprimoramentos?.forEach((aprimoramento) => {
       let custo = aprimoramento.custo? aprimoramento.custo: 0;
