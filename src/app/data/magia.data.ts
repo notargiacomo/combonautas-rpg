@@ -3679,6 +3679,143 @@ export class MagiaData {
           },
         ],
       },
+      {
+        id: 41, // Defina o ID conforme necessário
+        nome: 'Escudo da Fé',
+        descricao: 'Um escudo místico se manifesta momentaneamente para bloquear um golpe. O alvo recebe +2 na Defesa.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.REACAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.TURNO,
+        duracao_rodadas: 1, // duração em rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA,
+        maneira_resistencia: ResistenciaMagia.NENHUMA,
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '192', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> muda a execução para ação padrão, o alcance para toque e a duração para cena.',
+            e_aumenta: false,
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, DuracaoMagia.CENA]
+          },
+          {
+            id: 2,
+            descricao: '<b>+1 PM:</b> também fornece ao alvo camuflagem leve contra ataques à distância.',
+            e_aumenta: false,
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.REACAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.TURNO,
+            duracao_rodadas: 1,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO]
+          },
+          {
+            id: 3,
+            descricao: '<b>+2 PM:</b> aumenta o bônus na Defesa em +1.',
+            e_aumenta: true,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.REACAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.RODADA,
+            duracao_rodadas: 1,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO]
+          },
+          {
+            id: 4,
+            descricao: '<b>+2 PM:</b> muda a execução para ação padrão, o alcance para toque e a duração para cena. A magia cria uma conexão mística entre você e o alvo. Além do efeito normal, o alvo sofre metade do dano por ataques e efeitos; a outra metade do dano é transferida a você. Se o alvo sair de alcance curto de você, a magia é dissipada. Requer 2º círculo.',
+            e_aumenta: false,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, DuracaoMagia.CENA, CirculoMagia.SEGUNDO_CIRCULO]
+          },
+          {
+            id: 5,
+            descricao: '<b>+3 PM:</b> muda a duração para um dia. Requer 2º círculo.',
+            e_aumenta: false,
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.REACAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: ResistenciaMagia.NENHUMA,
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO]
+          }
+        ]
+      }
     ];
   }
 }

@@ -5,4 +5,5 @@ export enum ResistenciaMagia {
     PARCIAL = 'Parcial',
     REDUZ_METADE = 'Reduz metade',
     DESACREDITA = 'Desacredita',
+    NENHUMA = 'Nenhuma'
 }
