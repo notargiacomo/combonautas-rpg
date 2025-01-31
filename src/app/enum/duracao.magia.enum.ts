@@ -1,7 +1,7 @@
 export enum DuracaoMagia {
     INSTANTANEA = 'Instantânea',
     SUSTENTADA = 'Sustentada',
-    RODADA = 'Rodada',
+    RODADA = 'Rodada(s)',
     CENA = 'Cena',
     DIA = 'Dia',
     SEMANA = 'Semana',
