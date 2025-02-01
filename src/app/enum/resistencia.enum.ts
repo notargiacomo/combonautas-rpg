@@ -3,5 +3,6 @@ export enum Resistencia {
     FORTITUDE = 'Fortitude',
     REFLEXOS = 'Reflexos',
     VONTADE = 'Vontade',
+    VARIA = 'Varia',
     NENHUMA = 'Nenhuma'
 }

@@ -7840,6 +7840,1096 @@ export class MagiaData {
           },
         ],
       },
+      {
+        id: 81, // Defina o ID conforme necessário
+        nome: 'Libertação',
+        descricao:
+          'O alvo fica imune a efeitos de movimento e ignora qualquer efeito que impeça ou restrinja seu deslocamento. Por fim, pode usar habilidades que exigem liberdade de movimentos mesmo se estiver usando armadura ou escudo.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.UNIVERSAL,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 4, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.UNIVERSAL,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '196', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> além do normal, o alvo pode caminhar sobre a água ou outros líquidos com seu deslocamento normal. Entretanto, isso não protege contra qualquer efeito que o líquido possa causar (o alvo pode andar sobre lava, mas ainda vai sofrer dano).',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> além do normal, o alvo pode escolher 20 em todos os testes de Atletismo.',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+2 PM:</b> além do normal, o alvo pode escolher 20 em todos os testes de Acrobacia e pode fazer todas as manobras desta perícia mesmo sem treinamento.',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 4,
+            descricao:
+              '<b>+5 PM:</b> muda o alcance para curto e o alvo para até 5 criaturas.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alcance e o alvo
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'até 5 criaturas',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURAS_ESCOLHIDAS,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 5,
+            descricao: '<b>+5 PM:</b> pode dissipar Aprisionamento.',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 82, // Defina o ID conforme necessário
+        nome: 'Aprisionamento',
+        descricao:
+          'Você cria uma prisão mágica para aprisionar uma criatura. Se falhar no teste de resistência, o alvo sofre o efeito da se passar, fica imune a esta magia por uma semana. Enquanto estiver aprisionada, a criatura não precisa respirar e alimentar-se, e não envelhece.s de adivinhação não conseguem localizar ou perceber o alvo. Ao lançar a, você escolhe uma das seguintes formas de prisão. O componente material varia, mas todos custam T$ 1.000.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 5, // custo base em PM
+        custo_material: 1000, // custo em T$ de material
+        descricao_material: 'varia conforme o tipo de prisão', // descritivo para exibição
+        execucao: ExecucaoMagia.COMPLETA,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.PERMANENTE,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
+        maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '180', // ou número da página, se disponível
+        aprimoramentos: [], // Sem aprimoramentos descritos
+      },
+      {
+        id: 83, // Defina o ID conforme necessário
+        nome: 'Runa de Proteção',
+        descricao:
+          'Você escreve uma runa pessoal em uma superfície fixa, como uma parede ou o chão, que protege uma pequena área ao redor. Quando uma criatura entra na área afetada a runa explode, causando 6d6 pontos de dano em todos os alvos a até 6m. A criatura que ativa a runa não tem direito a teste de resistência outras criaturas na área têm direito a um teste de Reflexos para reduzir o dano à metade. Quando lança a magia, você escolhe o tipo de dano, entre ácido, eletricidade, fogo, frio, luz ou trevas. Você pode determinar que a runa se ative apenas em condições específicas — por exemplo, apenas por goblins ou apenas por mortos-vivos. Você também pode criar uma palavra mágica que impeça a runa de se ativar. Um personagem pode encontrar a runa com um teste de Investigação e desarmá-la com um teste de Ladinagem. Componente material: pó de diamante no valor de T$ 200, com o qual o conjurador desenha a runa, que brilha por alguns instantes e depois se torna praticamente invisível.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.UNIVERSAL,
+        circulo: CirculoMagia.SEGUNDO_CIRCULO,
+        custo: 2, // custo base em PM
+        custo_material: 200, // custo em T$ de material
+        descricao_material: 'pó de diamante no valor de T$ 200', // descritivo para exibição
+        execucao: ExecucaoMagia.HORA,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'uma área de 6m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.PERMANENTE,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.UNIVERSAL,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.SEGUNDO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '204_205', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +2d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.HORA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'uma área de 6m de raio',
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+            aumenta: 0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+1 PM:</b> muda o alvo para “você” e o alcance para “pessoal”. Ao invés do normal, escolha uma magia de 1º círculo que você conhece e pode lançar, com tempo de execução de uma ação padrão ou menor. Você escreve a runa em seu corpo e especifica uma condição de ativação como, por exemplo, “quando eu for alvo de um ataque” ou “quando for alvo de uma”. Quando a condição for cumprida, você pode ativar a runa e lançar a magia escolhida como uma reação. Você só pode escrever uma runa em seu corpo ao mesmo tempo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.HORA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.PESSOAL,
+              AlvoMagia.VOCE,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+3 PM:</b> como o aprimoramento anterior, mas você pode escolher magias de 2º círculo. Requer 3º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.HORA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.PESSOAL,
+              AlvoMagia.VOCE,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 84, // Defina o ID conforme necessário
+        nome: 'Globo de Invulnerabilidade',
+        descricao:
+          'Você é envolto por uma esfera mágica brilhante com 3m de raio, que detém qualquer magia de 2º círculo ou menor. Nenhuma magia pode ser lançada contra um alvo dentro do globo e magias de área não o penetram. No entanto, magias ainda podem ser lançadas de dentro para fora. Uma magia que dissipe outras magias só dissipa o globo se for usada diretamente sobre você, não o afetando se usada em área. Efeitos mágicos não são dissipados quando entram na esfera, apenas suprimidos (voltam a funcionar fora do globo, caso sua duração não tenha acabado). O globo é imóvel e não tem efeito sobre criaturas ou objetos. Após lançá-lo, você pode entrar ou sair livremente.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 3, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.VOCE,
+        alvo_descricao: 'você', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.SUSTENTADA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '194', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+4 PM:</b> muda o efeito para afetar magias de até 3º círculo. Requer 4º círculo.',
+            e_aumenta: false, // Aumenta o nível das magias afetadas
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+9 PM:</b> muda o efeito para afetar magias de até 4º círculo. Requer 5º círculo.',
+            e_aumenta: false, // Aumenta o nível das magias afetadas
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO, // Requer 5º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 85, // Defina o ID conforme necessário
+        nome: 'Engenho de Mana',
+        descricao:
+          'Você cria um disco de energia que lembra uma roda de engenho e flutua no ponto em que foi conjurado. O disco é imune a dano, não pode ser movido e faz uma contramágica automática contra qualquer magia lançada em alcance médio dele (exceto as suas), usando seu teste de Misticismo. Caso vença o teste, o engenho não só anula a magia como absorve os PM usados para lançá-la, acumulando PM temporários. No seu turno, se estiver ao alcance do disco, você pode gastar PM nele para lançar magias.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 5, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'disco de energia com 1,5m de diâmetro', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.SUSTENTADA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '192', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+1 PM:</b> em vez de flutuar no ponto em que foi conjurado, o disco flutua atrás de você, mantendo-se sempre adjacente.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'disco de energia com 1,5m de diâmetro',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao: '<b>+4 PM:</b> muda a duração para um dia.',
+            e_aumenta: false, // Não aumenta, apenas modifica a duração
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'disco de energia com 1,5m de diâmetro',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 86, // Defina o ID conforme necessário
+        nome: 'Banimento',
+        descricao:
+          'Você expulsa uma criatura não nativa de Arton. Um alvo nativo de outro mundo (como muitos espíritos), é teletransportado de volta para um lugar aleatório de seu mundo de origem. Já um alvo morto-vivo tem sua conexão com as energias negativas rompidas, sendo reduzido a 0 PV. Se passar na resistência, em vez dos efeitos acima, o alvo fica enjoado por 1d4 rodadas. Se você tiver um ou mais itens que se oponham ao alvo de alguma maneira, a CD do teste de resistência aumenta em +2 por item. Por exemplo, se lançar a contra demônios do frio (vulneráveis a água benta e que odeiam luz e calor) enquanto segura um frasco de água benta e uma tocha acesa, a CD aumenta em +4. O mestre decide se determinado item é forte o bastante contra a criatura para isso.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 3, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.RODADA,
+        execucao_rodada: 0, // tempo de execução em rodadas
+        execucao_complemento: '1d3+1', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
+        maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: 'Edição Jogo do Ano', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+0 PM:</b> muda a resistência para nenhum. Em vez do normal, devolve automaticamente uma criatura conjurada (como por uma magia de convocação) para seu plano de origem.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 0,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.RODADA,
+            execucao_rodada: 0,
+            execucao_complemento: '1d3+1',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 87, // Defina o ID conforme necessário
+        nome: 'Dificultar Detecção',
+        descricao:
+          'Esta magia oculta a presença do alvo contra qualquer meio mágico de detecção, inclusive detectar magia. Um conjurador que lance uma magia de adivinhação para detectar a presença ou localização do alvo deve fazer um teste de Vontade. Se falhar, a magia não funciona, mas os PM são gastos mesmo assim. Se for lançada sobre uma criatura, Dificultar Detecção protege tanto a criatura quanto seu equipamento.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 3, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.DIA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '190_191', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+4 PM:</b> muda o alvo para área de cubo de 9m. Qualquer criatura ou objeto na área recebe o efeito da magia enquanto estiver dentro dela.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alvo
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'área de cubo de 9m',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.TOQUE,
+              AlvoMagia.AREA,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao: '<b>+4 PM:</b> muda a duração para 1 semana.',
+            e_aumenta: false, // Não aumenta, apenas modifica a duração
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura ou objeto',
+            duracao: DuracaoMagia.SEMANA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 88, // Defina o ID conforme necessário
+        nome: 'Campo Antimagia',
+        descricao:
+          'Você é cercado por uma barreira invisível com 3m de raio que o acompanha. Qualquer habilidade mágica ou item mágico que entre na área da barreira é suprimida enquanto estiver lá. Criaturas convocadas que entrem em um Campo Antimagia desaparecem. Elas reaparecem na mesma posição quando a duração do Campo termina — supondo que a duração da magia que as convocou ainda não tenha terminado. Criaturas mágicas ou imbuídas com durante sua criação não são diretamente afetadas pelo Campo Antimagia. Entretanto, como qualquer criatura, não poderão usar magias ou habilidades mágicas dentro dele. Uma magia que dissipa outras não dissipa um Campo Antimagia, e dois Campos na mesma área não se neutralizam. Artefatos e deuses maiores não são afetados por um Campo Antimagia.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 4, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.VOCE,
+        alvo_descricao: 'você', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.SUSTENTADA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '183', // ou número da página, se disponível
+        aprimoramentos: [], // Sem aprimoramentos descritos
+      },
+      {
+        id: 89, // Defina o ID conforme necessário
+        nome: 'Cúpula de Repulsão',
+        descricao:
+          'Uma cúpula de energia invisível o cerca, impedindo a aproximação de certas criaturas. Escolha um tipo de criatura (animais, espíritos, monstros...) ou uma raça de humanoides (elfos, goblins, minotauros...). Criaturas do grupo escolhido que tentem se aproximar a menos de 3m de você (ou seja, que tentem ficar adjacentes a você) devem fazer um teste de Vontade. Se falharem, não conseguem, gastam a ação e só podem tentar novamente na rodada seguinte. Isso impede ataques corpo a corpo, mas não ataques ou outros efeitos à distância. Se você tentar se aproximar além do limite de 3m, rompe a cúpula e a magia é dissipada.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 4, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.VOCE,
+        alvo_descricao: 'você', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.SUSTENTADA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
+        maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '189', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> a cúpula impede criaturas de se aproximarem a menos de 4,5m de você (ou seja, deve haver dois quadrados entre você e as criaturas).',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
+            maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+5 PM:</b> além do normal, criaturas afetadas também precisam fazer o teste de resistência se fizerem um ataque ou efeito à distância você. Se falharem, o efeito é desviado pela cúpula. Requer 5º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO, // Requer 5º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.VOCE,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
+            maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 90, // Defina o ID conforme necessário
+        nome: 'Aura Divina',
+        descricao:
+          'Você se torna um conduíte da energia de sua divindade, emanando uma aura brilhante. Você e aliados devotos da mesma divindade ficam imunes a encantamento e recebem +10 na Defesa e em testes de resistência. Aliados não devotos da mesma divindade recebem +5 na Defesa e em testes de resistência. Além disso, inimigos que entrem na área devem fazer um teste de Vontade em caso de falha, recebem uma condição a sua escolha entre esmorecido, debilitado ou lento até o fim da cena. O teste deve ser refeito cada vez que a criatura entrar novamente na área.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 5, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'esfera com 9m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
+        maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '182', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> aumenta os bônus na Defesa e em testes de resistência em +1.',
+            e_aumenta: true, // Aumenta os bônus
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 9m de raio',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
+            maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+            aumenta: 0
+          },
+        ],
+      },
+      {
+        id: 91, // Defina o ID conforme necessário
+        nome: 'Invulnerabilidade',
+        descricao:
+          'Esta magia cria uma barreira mágica impenetrável que protege você contra efeitos nocivos mentais ou físicos, a sua escolha. Proteção mental: você fica imune às condições abalado, alquebrado, apavorado, atordoado, confuso, esmorecido, fascinado, frustrado e pasmo, além de efeitos de encantamento e ilusão. Proteção física: você fica imune às condições atordoado, cego, debilitado, enjoado, envenenado, exausto, fatigado, fraco, lento, ofuscado e paralisado, além de acertos críticos, ataques furtivos e doenças.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.UNIVERSAL,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 5, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.VOCE,
+        alvo_descricao: 'você', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.UNIVERSAL,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '195_196', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+5 PM:</b> muda o alcance para curto e o alvo para 1 criatura.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alcance e o alvo
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURA,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 92, // Defina o ID conforme necessário
+        nome: 'Proteção Contra Magia',
+        descricao:
+          'Você protege o alvo contra efeitos mágicos nocivos. O alvo recebe +5 em testes de resistência contra magias.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 3, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '202', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+4 PM:</b> muda o bônus para +10. Requer 4º círculo.',
+            e_aumenta: false, // Aumenta o bônus em testes de resistência
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta: 0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+4 PM:</b> em vez do normal, o alvo fica imune a uma escola de magia a sua escolha. Requer 4º Círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+9 PM:</b> em vez do normal, o alvo fica imune a duas escolas de magia a sua escolha. Requer 5º Círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO, // Requer 5º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 93, // Defina o ID conforme necessário
+        nome: 'Vestimenta da Fé',
+        descricao:
+          'Você fortalece um item, aumentando o bônus de Defesa de uma armadura ou escudo em +2. No caso de um vestuário, ele passa a oferecer +2 na Defesa (não cumulativo com armadura). Os efeitos desta magia contam como um bônus de encanto.',
+        escola: EscolasMagia.ABJURACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.SEGUNDO_CIRCULO,
+        custo: 2, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.OBJETO,
+        alvo_descricao: '1 armadura, escudo ou vestuário', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.DIA,
+        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.ABJURACAO,
+          CirculoMagia.SEGUNDO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '210', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+3 PM:</b> o objeto oferece o mesmo bônus em testes de resistência. Requer 3º círculo.',
+            e_aumenta: false, // Aumenta o bônus em testes de resistência
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 armadura, escudo ou vestuário',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta: 0
+          },
+          {
+            id: 2,
+            descricao: '<b>+4 PM:</b> aumenta o bônus em +1.',
+            e_aumenta: true, // Aumenta o bônus
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 armadura, escudo ou vestuário',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+            aumenta: 0
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+7 PM:</b> o objeto também oferece redução de dano 5. Requer 4º círculo.',
+            e_aumenta: true, // Aumenta o efeito com redução de dano
+            custo: 7,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.OBJETO,
+            alvo_descricao: '1 armadura, escudo ou vestuário',
+            duracao: DuracaoMagia.DIA,
+            duracao_rodadas: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.ABJURACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta: 0
+          },
+        ],
+      },
     ];
   }
 }
