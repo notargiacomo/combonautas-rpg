@@ -12079,6 +12079,7 @@ export class MagiaData {
               EscolasMagia.EVOCACAO,
               CirculoMagia.TERCEIRO_CIRCULO,
             ],
+            aumenta: 0
           },
           {
             id: 2,
