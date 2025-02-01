@@ -18,7 +18,7 @@ export interface Magia {
     alvo_quantidade?: number;
     alvo_descricao?:string;
     duracao?:string;
-    duracao_rodadas?:number;
+    duracao_quantidade?:number;
     descricao_duracao?: string,
     efeito?:string;
     pericia_resistencia?:string;
@@ -44,7 +44,7 @@ export interface Magia {
             alvo_quantidade?: number;
             alvo_descricao?:string;
             duracao?:string;
-            duracao_rodadas?:number;
+            duracao_quantidade?:number;
             descricao_duracao?: string;
             efeito?: string;
             pericia_resistencia?:string;

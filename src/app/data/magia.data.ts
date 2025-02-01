@@ -490,7 +490,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -518,7 +518,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'área cone de 4,5m',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -541,7 +541,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -567,7 +567,7 @@ export class MagiaData {
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: '1 objeto', // descritivo para exibição do alvo
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -595,7 +595,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -618,7 +618,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -641,7 +641,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -668,7 +668,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -698,7 +698,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -726,7 +726,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -749,7 +749,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -772,7 +772,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -798,7 +798,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 animal ou humanoide;', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -826,7 +826,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 animal ou humanoide',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -850,7 +850,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -874,7 +874,7 @@ export class MagiaData {
             alvo_descricao:
               'afeta todos os alvos válidos a sua escolha dentro do alcance.',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -900,7 +900,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA_OBJETO,
         alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -928,7 +928,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'criaturas escolhidas', // descritivo para exibição do alvo
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -955,7 +955,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -978,7 +978,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1001,7 +1001,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'área de cubo de 9m', // descritivo para exibição do alvo
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1028,7 +1028,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+            duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1059,7 +1059,7 @@ export class MagiaData {
         alvo_descricao:
           'até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1088,7 +1088,7 @@ export class MagiaData {
             alvo_descricao:
               'até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1113,7 +1113,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'esfera com 6m de raio',
         duracao: DuracaoMagia.VARIAVEL,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1141,7 +1141,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 6m de raio',
             duracao: DuracaoMagia.VARIAVEL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1164,7 +1164,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 6m de raio',
             duracao: DuracaoMagia.VARIAVEL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1187,7 +1187,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 6m de raio',
             duracao: DuracaoMagia.VARIAVEL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1213,7 +1213,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: '',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1241,7 +1241,7 @@ export class MagiaData {
             alvo: AlvoMagia.HUMANOIDE,
             alvo_descricao: '1 humanoide.',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1273,7 +1273,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.PERMANENTE,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -1304,7 +1304,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA_OBJETO,
         alvo_descricao: 'quadrado de 3m ou 1 objeto',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: '',
@@ -1332,7 +1332,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA_OBJETO,
             alvo_descricao: 'quadrado de 3m ou 1 objeto',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: '',
@@ -1355,7 +1355,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA_OBJETO,
             alvo_descricao: 'quadrado de 3m ou 1 objeto',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: '',
@@ -1378,7 +1378,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA_OBJETO,
             alvo_descricao: 'quadrado de 3m ou 1 objeto',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: '',
@@ -1404,7 +1404,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1432,7 +1432,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1455,7 +1455,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1478,7 +1478,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1501,7 +1501,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1524,7 +1524,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1547,7 +1547,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1573,7 +1573,7 @@ export class MagiaData {
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: '1 arma empunhada',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1601,7 +1601,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 arma empunhada',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1624,7 +1624,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 arma empunhada',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1647,7 +1647,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 arma empunhada',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1673,7 +1673,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1701,7 +1701,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1724,7 +1724,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1747,7 +1747,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1773,7 +1773,7 @@ export class MagiaData {
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: '1 arma (veja texto);',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1801,7 +1801,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 arma (veja texto);',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1824,7 +1824,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 arma (veja texto);',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1847,7 +1847,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 arma (veja texto);',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1870,7 +1870,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 arma (veja texto);',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1898,7 +1898,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -1929,7 +1929,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -1957,7 +1957,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -1980,7 +1980,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.UM_MINUTO,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2007,7 +2007,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2030,7 +2030,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2056,7 +2056,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'esfera com 9m de raio ',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -2084,7 +2084,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 9m de raio ',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -2114,7 +2114,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -2142,7 +2142,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2165,7 +2165,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2188,7 +2188,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2211,7 +2211,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2238,7 +2238,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA_OBJETO,
         alvo_descricao: '1 criatura ou texto',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -2266,7 +2266,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: '1 criatura ou texto',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -2289,7 +2289,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'criaturas escolhidas',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -2312,7 +2312,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criaturas',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -2335,7 +2335,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -2365,7 +2365,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -2393,7 +2393,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2416,7 +2416,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2439,7 +2439,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2462,7 +2462,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2488,7 +2488,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você.',
         duracao: DuracaoMagia.RODADA,
-        duracao_rodadas: 1,
+        duracao_quantidade: 1,
         descricao_duracao: '1 rodada',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -2516,7 +2516,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você.',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2543,7 +2543,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você.',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '1 rodada',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2570,7 +2570,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'você.',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2599,7 +2599,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você.',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2629,7 +2629,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
         alvo_descricao: 'até 5 criaturas',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -2657,7 +2657,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'até 5 criaturas',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2680,7 +2680,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'até 5 criaturas',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2706,7 +2706,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -2734,7 +2734,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2757,7 +2757,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2783,7 +2783,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'esfera com 18m de raio',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -2811,7 +2811,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 18m de raio',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2834,7 +2834,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 18m de raio',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -2860,7 +2860,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: '1 globo',
         pericia_resistencia: '',
@@ -2889,7 +2889,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 globo',
             pericia_resistencia: '',
@@ -2913,7 +2913,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 globo',
             pericia_resistencia: '',
@@ -2937,7 +2937,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 globo',
             pericia_resistencia: '',
@@ -2961,7 +2961,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '10 globos',
             pericia_resistencia: '',
@@ -2993,7 +2993,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA_OBJETO,
         alvo_descricao: '1 criatura, objeto ou local',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3022,7 +3022,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: '1 criatura, objeto ou local',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3052,7 +3052,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '2 criaturas voluntárias',
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3080,7 +3080,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '2 criaturas voluntárias',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3103,7 +3103,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '2 criaturas voluntárias',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3129,7 +3129,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'esfera com 90m de raio',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3157,7 +3157,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3180,7 +3180,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 90m de raio',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3206,7 +3206,7 @@ export class MagiaData {
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: 'superfície ou objeto plano, como uma mesa ou papel;',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3234,7 +3234,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.UMA_HORA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3260,7 +3260,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3288,7 +3288,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3311,7 +3311,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3334,7 +3334,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3357,7 +3357,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3383,7 +3383,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.RODADA,
-        duracao_rodadas: 1,
+        duracao_quantidade: 1,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3411,7 +3411,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3434,7 +3434,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3457,7 +3457,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3486,7 +3486,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3514,7 +3514,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3537,7 +3537,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3564,7 +3564,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA_AREA,
         alvo_descricao: 'local ou criatura conhecidos',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3592,7 +3592,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_AREA,
             alvo_descricao: 'local ou criatura conhecidos',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3618,7 +3618,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura viva',
         duracao: 'Veja o texto.',
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -3646,7 +3646,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura viva',
             duracao: 'Veja o texto.',
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3669,7 +3669,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura viva',
             duracao: 'Veja o texto.',
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -3696,7 +3696,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.TURNO,
-        duracao_rodadas: 1, // duração em rodadas
+        duracao_quantidade: 1, // duração em rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
@@ -3725,7 +3725,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3752,7 +3752,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.TURNO,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3778,7 +3778,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3806,7 +3806,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3834,7 +3834,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3864,7 +3864,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
@@ -3892,7 +3892,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3920,7 +3920,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3947,7 +3947,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'área de esfera com 3m de raio',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -3970,7 +3970,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -4000,7 +4000,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
@@ -4028,7 +4028,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -4056,7 +4056,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -4079,7 +4079,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'criaturas escolhidas',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -4106,7 +4106,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -4133,7 +4133,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -4163,7 +4163,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -4192,7 +4192,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -4219,7 +4219,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -4249,7 +4249,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4278,7 +4278,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'criaturas escolhidas',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4304,7 +4304,7 @@ export class MagiaData {
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: '1 objeto Grande ou menor', // descritivo para exibição do alvo
         duracao: DuracaoMagia.PERMANENTE,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4333,7 +4333,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 objeto Grande ou menor',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4356,7 +4356,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 objeto Grande ou menor',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4378,7 +4378,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 objeto Grande ou menor',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4406,7 +4406,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 objeto de qualquer tamanho',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4432,7 +4432,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4461,7 +4461,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4484,7 +4484,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4511,7 +4511,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4538,7 +4538,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: 'outra criatura ou objeto solto Enorme ou menor',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4566,7 +4566,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: 'outra criatura ou objeto solto Enorme ou menor',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -4606,7 +4606,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -4636,7 +4636,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -4664,7 +4664,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4687,7 +4687,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4710,7 +4710,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4733,7 +4733,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4759,7 +4759,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você.',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -4787,7 +4787,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você.',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4810,7 +4810,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você.',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4833,7 +4833,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você.',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4861,7 +4861,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.RODADA,
-        duracao_rodadas: 3,
+        duracao_quantidade: 3,
         efeito: 'buraco negro',
         descricao_duracao: '',
         pericia_resistencia: '',
@@ -4890,7 +4890,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 3,
+            duracao_quantidade: 3,
             efeito: 'buraco negro',
             descricao_duracao: '',
             pericia_resistencia: '',
@@ -4917,7 +4917,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
         alvo_descricao: 'criaturas escolhidas',
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -4945,7 +4945,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4968,7 +4968,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'criatuas escolhidas',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -4991,7 +4991,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'criatuas escolhidas',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -5017,7 +5017,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'quadrado com 18m de lado',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -5045,7 +5045,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'quadrado com 18m de lado',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -5077,7 +5077,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'parceiro elemental',
         pericia_resistencia: '',
@@ -5106,7 +5106,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'parceiro elemental',
             pericia_resistencia: '',
@@ -5130,7 +5130,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'parceiro elemental',
             pericia_resistencia: '',
@@ -5163,7 +5163,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: '1 criatura conjurada',
         pericia_resistencia: '',
@@ -5192,7 +5192,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5216,7 +5216,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5240,7 +5240,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5264,7 +5264,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5288,7 +5288,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5312,7 +5312,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5336,7 +5336,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5360,7 +5360,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5384,7 +5384,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5408,7 +5408,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5432,7 +5432,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5456,7 +5456,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
@@ -5484,7 +5484,7 @@ export class MagiaData {
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: '1 objeto de até 2 espaços',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -5512,7 +5512,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 objeto de até 2 espaços',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -5535,7 +5535,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 baú',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -5558,7 +5558,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 objeto de até 2 espaços',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -5581,7 +5581,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 objeto de até 10 espaços.',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -5612,7 +5612,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'elemento escolhido',
         pericia_resistencia: '',
@@ -5641,7 +5641,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'elemento escolhido',
             pericia_resistencia: '',
@@ -5665,7 +5665,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: '',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'alvo 1 criatura ou objeto',
             pericia_resistencia: '',
@@ -5693,7 +5693,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: '',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'alvo 1 criatura ou objeto',
             pericia_resistencia: '',
@@ -5720,7 +5720,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: '1 enxame Médio (quadrado de 1,5m)',
         pericia_resistencia: Resistencia.FORTITUDE,
@@ -5749,7 +5749,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 enxame Médio (quadrado de 1,5m)',
             pericia_resistencia: Resistencia.FORTITUDE,
@@ -5773,7 +5773,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 enxame Médio (quadrado de 1,5m)',
             pericia_resistencia: Resistencia.FORTITUDE,
@@ -5797,7 +5797,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 enxame Médio (quadrado de 1,5m)',
             pericia_resistencia: Resistencia.FORTITUDE,
@@ -5821,7 +5821,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 enxame Médio (quadrado de 1,5m)',
             pericia_resistencia: Resistencia.FORTITUDE,
@@ -5845,7 +5845,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 enxame Médio (quadrado de 1,5m)',
             pericia_resistencia: Resistencia.FORTITUDE,
@@ -5869,7 +5869,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: '1 enxame Médio (quadrado de 1,5m)',
             pericia_resistencia: Resistencia.FORTITUDE,
@@ -5897,7 +5897,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'elemental de luz invocado',
         pericia_resistencia: '',
@@ -5941,7 +5941,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: '',
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -5974,7 +5974,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'mão gigante de energia',
         pericia_resistencia: '',
@@ -6003,7 +6003,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'mão gigante de energia',
             pericia_resistencia: '',
@@ -6027,7 +6027,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'mão gigante de energia',
             pericia_resistencia: '',
@@ -6054,7 +6054,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'criatura conjurada',
         pericia_resistencia: '',
@@ -6083,7 +6083,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
@@ -6107,7 +6107,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
@@ -6131,7 +6131,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
@@ -6158,7 +6158,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'nuvem com 6m de raio e 6m de altura',
         pericia_resistencia: '',
@@ -6187,7 +6187,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
@@ -6211,7 +6211,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
@@ -6235,7 +6235,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
@@ -6259,7 +6259,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
@@ -6283,7 +6283,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
@@ -6307,7 +6307,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
@@ -6334,7 +6334,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -6362,7 +6362,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -6385,7 +6385,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você e uma criatura voluntária',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -6408,7 +6408,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -6431,7 +6431,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -6457,7 +6457,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'semiplano com 30m de lado',
         pericia_resistencia: '',
@@ -6486,7 +6486,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'semiplano com 30m de lado',
             pericia_resistencia: '',
@@ -6511,7 +6511,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'semiplano com 30m de lado',
             pericia_resistencia: '',
@@ -6544,7 +6544,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.UMA_HORA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'criatura conjurada',
         pericia_resistencia: '',
@@ -6573,7 +6573,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
@@ -6597,7 +6597,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.SEMANA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
@@ -6624,7 +6624,7 @@ export class MagiaData {
         alvo: '',
         alvo_descricao: '',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         efeito: 'criaturas conjuradas',
         pericia_resistencia: '',
@@ -6653,7 +6653,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'criaturas conjuradas',
             pericia_resistencia: '',
@@ -6677,7 +6677,7 @@ export class MagiaData {
             alvo: '',
             alvo_descricao: '',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             efeito: 'criaturas conjuradas',
             pericia_resistencia: '',
@@ -6704,7 +6704,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -6732,7 +6732,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
@@ -6760,7 +6760,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -6783,7 +6783,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -6806,7 +6806,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -6833,7 +6833,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'esfera com 9m de raio', // descritivo para exibição do alvo
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
         maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
@@ -6862,7 +6862,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -6890,7 +6890,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 9m de raio',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
@@ -6917,7 +6917,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 9m de raio',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
@@ -6949,7 +6949,7 @@ export class MagiaData {
         alvo_descricao:
           '1 criatura ou 1 objeto mágico ou esfera com 3m de raio', // descritivo para exibição do alvo
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -6978,7 +6978,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 9m de raio',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7007,7 +7007,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'cubo com 6m de lado',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -7035,7 +7035,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'cubo com 6m de lado',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -7058,7 +7058,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'cubo com 6m de lado',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -7081,7 +7081,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'cubo com 6m de lado',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -7108,7 +7108,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'domo com 6m de raio', // descritivo para exibição do alvo
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7137,7 +7137,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'domo com 6m de raio',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7164,7 +7164,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'cabana que comporta até 10 criaturas Médias',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7192,7 +7192,7 @@ export class MagiaData {
             alvo_descricao:
               'espaço extradimensional que comporta até 10 criaturas Médias',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7220,7 +7220,7 @@ export class MagiaData {
             alvo_descricao:
               'mansão extradimensional que comporta até 100 criaturas Médias',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7254,7 +7254,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURAS_VOLUNTARIAS,
         alvo_descricao: 'até 5 criaturas voluntária',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -7282,7 +7282,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_VOLUNTARIAS,
             alvo_descricao: 'até 10 criaturas voluntária',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7305,7 +7305,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_VOLUNTARIAS,
             alvo_descricao: 'até 5 criaturas voluntária',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7328,7 +7328,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_VOLUNTARIAS,
             alvo_descricao: 'até 5 criaturas voluntária',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7354,7 +7354,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -7382,7 +7382,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'cinco criaturas',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7413,7 +7413,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você',
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -7441,7 +7441,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_VOLUNTARIAS,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7467,7 +7467,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
         alvo_descricao: 'aliados',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -7495,7 +7495,7 @@ export class MagiaData {
             alvo: AlvoMagia.CADAVER,
             alvo_descricao: '1 cadáver',
             duracao: DuracaoMagia.SEMANA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7518,7 +7518,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'aliados',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7549,7 +7549,7 @@ export class MagiaData {
         alvo: AlvoMagia.HUMANOIDE,
         alvo_descricao: '1 humanoide',
         duracao: DuracaoMagia.RODADA,
-        duracao_rodadas: 1,
+        duracao_quantidade: 1,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -7577,7 +7577,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7600,7 +7600,7 @@ export class MagiaData {
             alvo: AlvoMagia.HUMANOIDE,
             alvo_descricao: '1 humanóide',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7626,7 +7626,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.PERMANENTE,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -7654,7 +7654,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7680,7 +7680,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'cone de 6m',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -7708,7 +7708,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'cone de 6m',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -7731,7 +7731,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'cone de 6m',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -7754,7 +7754,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'cone de 6m',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -7780,7 +7780,7 @@ export class MagiaData {
         alvo: AlvoMagia.ANIMAL + ' ou ' + AlvoMagia.PLANTA,
         alvo_descricao: '1 animal ou planta',
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -7808,7 +7808,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 escultura mundana inanimada',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7831,7 +7831,7 @@ export class MagiaData {
             alvo: AlvoMagia.ANIMAL + ' ou ' + AlvoMagia.PLANTA,
             alvo_descricao: '1 animal ou planta',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -7858,7 +7858,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7887,7 +7887,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7914,7 +7914,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7941,7 +7941,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7968,7 +7968,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'até 5 criaturas',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -7994,7 +7994,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8024,7 +8024,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.PERMANENTE,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
         maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
@@ -8055,7 +8055,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'uma área de 6m de raio', // descritivo para exibição do alvo
         duracao: DuracaoMagia.PERMANENTE,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8083,7 +8083,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'uma área de 6m de raio',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8111,7 +8111,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8138,7 +8138,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.PERMANENTE,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8168,7 +8168,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você', // descritivo para exibição do alvo
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8197,7 +8197,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8224,7 +8224,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8254,7 +8254,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'disco de energia com 1,5m de diâmetro', // descritivo para exibição do alvo
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8283,7 +8283,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'disco de energia com 1,5m de diâmetro',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8309,7 +8309,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'disco de energia com 1,5m de diâmetro',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8339,7 +8339,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.INSTANTANEA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
         maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
@@ -8368,7 +8368,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.INSTANTANEA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8398,7 +8398,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA_OBJETO,
         alvo_descricao: '1 criatura ou objeto', // descritivo para exibição do alvo
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8427,7 +8427,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'área de cubo de 9m',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8453,7 +8453,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA_OBJETO,
             alvo_descricao: '1 criatura ou objeto',
             duracao: DuracaoMagia.SEMANA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8483,7 +8483,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você', // descritivo para exibição do alvo
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8514,7 +8514,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você', // descritivo para exibição do alvo
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
         maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
@@ -8543,7 +8543,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
             maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
@@ -8570,7 +8570,7 @@ export class MagiaData {
             alvo: AlvoMagia.VOCE,
             alvo_descricao: 'você',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
             maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
@@ -8600,7 +8600,7 @@ export class MagiaData {
         alvo: AlvoMagia.AREA,
         alvo_descricao: 'esfera com 9m de raio', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
         maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
@@ -8629,7 +8629,7 @@ export class MagiaData {
             alvo: AlvoMagia.AREA,
             alvo_descricao: 'esfera com 9m de raio',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
@@ -8660,7 +8660,7 @@ export class MagiaData {
         alvo: AlvoMagia.VOCE,
         alvo_descricao: 'você', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8689,7 +8689,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8719,7 +8719,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura', // descritivo para exibição do alvo
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8748,7 +8748,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8776,7 +8776,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8803,7 +8803,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8833,7 +8833,7 @@ export class MagiaData {
         alvo: AlvoMagia.OBJETO,
         alvo_descricao: '1 armadura, escudo ou vestuário', // descritivo para exibição do alvo
         duracao: DuracaoMagia.DIA,
-        duracao_rodadas: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8862,7 +8862,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 armadura, escudo ou vestuário',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8889,7 +8889,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 armadura, escudo ou vestuário',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8917,7 +8917,7 @@ export class MagiaData {
             alvo: AlvoMagia.OBJETO,
             alvo_descricao: '1 armadura, escudo ou vestuário',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
@@ -8947,7 +8947,7 @@ export class MagiaData {
         alvo: AlvoMagia.HUMANOIDE,
         alvo_descricao: '1 humanoide',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -8975,7 +8975,7 @@ export class MagiaData {
             alvo: AlvoMagia.HUMANOIDE,
             alvo_descricao: '1 humanoide',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -8998,7 +8998,7 @@ export class MagiaData {
             alvo: AlvoMagia.HUMANOIDE,
             alvo_descricao: '1 humanoide',
             duracao: DuracaoMagia.CONDICIONAL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9021,7 +9021,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
             alvo_descricao: 'todos os alvos dentro do alcance',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9047,7 +9047,7 @@ export class MagiaData {
         alvo: AlvoMagia.CRIATURA,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
@@ -9075,7 +9075,7 @@ export class MagiaData {
             alvo: AlvoMagia.CRIATURA,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
@@ -9101,7 +9101,7 @@ export class MagiaData {
         alvo: AlvoMagia.ANIMAL_HUMANOIDE,
         alvo_descricao: '1 animal ou humanoide',
         duracao: DuracaoMagia.RODADA_VARIAVEL,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '1d4 rodadas',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9129,7 +9129,7 @@ export class MagiaData {
             alvo: AlvoMagia.ANIMAL_HUMANOIDE,
             alvo_descricao: '1 animal ou humanoide',
             duracao: DuracaoMagia.RODADA,
-            duracao_rodadas: 1,
+            duracao_quantidade: 1,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9152,7 +9152,7 @@ export class MagiaData {
             alvo: AlvoMagia.ANIMAL_HUMANOIDE,
             alvo_descricao: '1 animal ou humanoide',
             duracao: DuracaoMagia.RODADA_VARIAVEL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '1d4 rodadas',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9175,7 +9175,7 @@ export class MagiaData {
             alvo: AlvoMagia.ANIMAL_HUMANOIDE,
             alvo_descricao: 'animais ou humanoides escolhidos',
             duracao: DuracaoMagia.RODADA_VARIAVEL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '1d4 rodadas',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9198,7 +9198,7 @@ export class MagiaData {
             alvo: AlvoMagia.ANIMAL_HUMANOIDE,
             alvo_descricao: 'animais ou humanoides escolhidos',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9222,7 +9222,7 @@ export class MagiaData {
             alvo_descricao:
               'animais ou humanoides escolhidos, também afeta espíritos e monstros na área',
             duracao: DuracaoMagia.RODADA_VARIAVEL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '1d4 rodadas',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9249,7 +9249,7 @@ export class MagiaData {
             alvo_descricao:
               'animais ou humanoides escolhidos, também afeta construtos, espíritos, monstros e mortos-vivos na área',
             duracao: DuracaoMagia.RODADA_VARIAVEL,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '1d4 rodadas',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9278,7 +9278,7 @@ export class MagiaData {
         alvo: AlvoMagia.ANIMAL_HUMANOIDE,
         alvo_descricao: '1 humanoide ou animal',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -9306,7 +9306,7 @@ export class MagiaData {
             alvo: AlvoMagia.ESPIRITO,
             alvo_descricao: '1 espírito',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -9329,7 +9329,7 @@ export class MagiaData {
             alvo: AlvoMagia.ANIMAL_HUMANOIDE,
             alvo_descricao: '1 humanóideo ou animal',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -9352,7 +9352,7 @@ export class MagiaData {
             alvo: AlvoMagia.ANIMAL_HUMANOIDE,
             alvo_descricao: '1 humanóideo ou animal',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -9379,7 +9379,7 @@ export class MagiaData {
         alvo_quantidade: 10,
         alvo_descricao: 'até 10 criaturas na área',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -9408,7 +9408,7 @@ export class MagiaData {
             alvo_quantidade: 10,
             alvo_descricao: 'até 10 criaturas na área',
             duracao: DuracaoMagia.SUSTENTADA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
@@ -9435,7 +9435,7 @@ export class MagiaData {
         alvo_quantidade: 1,
         alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.CENA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9464,7 +9464,7 @@ export class MagiaData {
             alvo_quantidade: 1,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.DIA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9488,7 +9488,7 @@ export class MagiaData {
             alvo_quantidade: 1,
             alvo_descricao: '1 criatura',
             duracao: DuracaoMagia.CENA,
-            duracao_rodadas: 0,
+            duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9514,10 +9514,9 @@ export class MagiaData {
         alcance: AlcanceMagia.MEDIO,
         alvo: AlvoMagia.CRIATURA,
         alvo_quantidade: 1,
-        alvo_descricao:
-          '1 criatura',
+        alvo_descricao: '1 criatura',
         duracao: DuracaoMagia.SUSTENTADA,
-        duracao_rodadas: 0,
+        duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.ANULA,
@@ -9530,7 +9529,1303 @@ export class MagiaData {
         paginas: '198',
         aprimoramentos: [],
       },
-      
+      {
+        id: 101,
+        nome: 'Missão Divina',
+        descricao: `<p>Esta magia obriga o alvo a cumprir uma tarefa a sua escolha. Ela dura uma semana ou até o alvo cumprir a tarefa, o que vier primeiro. O alvo pode recusar a missão — mas, no fim de cada dia em que não se esforçar para cumprir a tarefa, deve fazer um teste de Vontade; se falhar, sofre uma penalidade cumulativa de –2 em todos os testes e rolagens.</p>
+        <p>A Missão Divina não pode forçar um ato suicida, nem uma missão impossível (como matar um ser que não existe).</p>`,
+        escola: EscolasMagia.ENCANTAMENTO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 6,
+        custo_material: 0,
+        descricao_material: '',
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0,
+        execucao_complemento: '',
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_quantidade: 1,
+        alvo_descricao: '1 criatura',
+        duracao: DuracaoMagia.SEMANA,
+        duracao_quantidade: 0,
+        descricao_duracao: '',
+        pericia_resistencia: Resistencia.VONTADE,
+        maneira_resistencia: ResistenciaMagia.ANULA,
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.ENCANTAMENTO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ],
+        referencias: Referencia.BASICO,
+        paginas: '199',
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: `<p><b>+2 PM:</b>muda o alcance para toque, a duração para permanente e adiciona penalidade de –1 PM. Em vez do normal, você inscreve uma marca (como uma tatuagem) na pele do alvo e escolhe um tipo de ação que ativará a marca. Normalmente, será cometer um crime (roubar, matar...) ou outra coisa contrária às Obrigações & Restrições de sua divindade. Sempre que a marca é ativada, o alvo recebe uma penalidade cumulativa de –2 em todos os testes. Muitas vezes, portar essa marca é um estigma por si só, já que esta magia normalmente é lançada em criminosos ou traidores. Uma magia que dissipe outras suprime a marca e suas penalidades por um dia; elas só podem ser totalmente removidas pelo conjurador original ou pela magia Purificação.</p>`,
+            e_aumenta: false,
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_quantidade: 1,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [AlcanceMagia.TOQUE, DuracaoMagia.PERMANENTE],
+            aumenta: 0,
+          },
+          {
+            id: 2,
+            descricao: `<p><b>+4 PM:</b> aumenta a duração para 1 ano ou até ser descarregada.</p>`,
+            e_aumenta: false,
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_quantidade: 1,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.ANO,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: ResistenciaMagia.ANULA,
+            tracos: [DuracaoMagia.ANO],
+            aumenta: 0,
+          },
+        ],
+      },
+      {
+        id: 102, // Defina o ID conforme necessário
+        nome: 'Luz',
+        descricao:
+          'O alvo emite luz (mas não produz calor) em uma área com 6m de raio. O objeto pode ser guardado (em um bolso, por exemplo) para interromper a luz, que voltará a funcionar caso o objeto seja revelado. Se lançar a magia num objeto de uma criatura involuntária, ela tem direito a um teste de Vontade para anulá-la. Luz anula Escuridão.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.UNIVERSAL,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar número rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 objeto', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_quantidade: 0, // se a duração for do DuracaoMagia.RODADA, digitar número rodadas
+        descricao_duracao: '', // se a duração for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade"
+        maneira_resistencia: 'anula (veja texto)', // descrição da resistência
+        tracos: [
+          TipoMagia.UNIVERSAL,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '197', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta a área iluminada em +3m de raio.',
+            e_aumenta: true, // Aumenta a área iluminada
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 objeto',
+            duracao: DuracaoMagia.CENA,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: 'anula (veja texto)',
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> muda a duração para um dia.',
+            e_aumenta: false, // Apenas altera a duração
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 objeto',
+            duracao: DuracaoMagia.DIA,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: 'anula (veja texto)',
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+2 PM:</b> muda a duração para permanente e adiciona componente material (pó de rubi no valor de T$ 50). Não pode ser usado em conjunto com outros aprimoramentos. Requer 2º círculo.',
+            e_aumenta: false, // Apenas altera a duração e adiciona material
+            custo: 2,
+            custo_material: 50, // custo em T$ de material
+            descricao_material: 'pó de rubi no valor de T$ 50', // descritivo para exibição
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 objeto',
+            duracao: DuracaoMagia.PERMANENTE,
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: 'anula (veja texto)',
+            tracos: [DuracaoMagia.PERMANENTE, CirculoMagia.SEGUNDO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 103, // Defina o ID conforme necessário
+        nome: 'Consagrar',
+        descricao:
+          'Você enche a área com energia positiva. Pontos de vida curados por efeitos de luz são maximizados dentro da área. Isso também afeta dano causado em mortos-vivos por esses efeitos. Por exemplo, Curar Ferimentos cura automaticamente 18 PV. Esta magia não pode ser lançada em uma área contendo um símbolo visível dedicado a uma divindade que não a sua. Consagrar anula Profanar.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.LONGO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'esfera com 9m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.DIA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '186', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+1 PM:</b> além do normal, mortos-vivos na área sofrem –2 em testes e Defesa.',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.LONGO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 9m de raio',
+            duracao: DuracaoMagia.DIA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> aumenta as penalidades para mortos-vivos em –1. (penalidade máxima limitada pelo círculo máximo de magia que você pode lançar)',
+            e_aumenta: true, // Aumenta as penalidades
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.LONGO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 9m de raio',
+            duracao: DuracaoMagia.DIA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+9 PM:</b> muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 9,
+            custo_material: 1000, // custo em T$ de material
+            descricao_material: 'incenso e óleos no valor de T$ 1.000', // descritivo para exibição
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.HORA,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.LONGO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 9m de raio',
+            duracao: DuracaoMagia.PERMANENTE,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              ExecucaoMagia.HORA,
+              DuracaoMagia.PERMANENTE,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 104, // Defina o ID conforme necessário
+        nome: 'Dardo Gélido',
+        descricao:
+          'Você dispara um dardo de gelo contra o alvo, que sofre 2d6 pontos de dano de frio e fica lento por 1 rodada. Passar no teste de resistência reduz o dano à metade e evita a condição.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
+        maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.AMEACAS,
+        paginas: 'Ameaças de Arton', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
+            maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+1 PM:</b> aumenta o número de alvos em +1 (total de alvos limitado pelo círculo máximo de magia que você pode lançar).',
+            e_aumenta: false, // Não aumenta, apenas modifica o número de alvos
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
+            maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURAS_ESCOLHIDAS,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 105, // Defina o ID conforme necessário
+        nome: 'Seta Infalível de Talude',
+        descricao:
+          'Favorita entre arcanistas iniciantes, esta magia lança duas setas de energia que causam 1d4+1 pontos de dano de essência cada. Você pode lançar as setas em alvos diferentes ou concentrá-las num mesmo alvo. Caso você possua um bônus no dano de magias, como pelo poder Arcano de Batalha, ele é aplicado em apenas uma seta (o bônus vale para a magia, não cada alvo).',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+        alvo_descricao: 'criaturas escolhidas', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '206', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> muda as setas para lanças de energia que surgem e caem do céu. Cada lança causa 1d8+1 pontos de dano de essência. Requer 2º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> muda o número de setas/lanças para três.',
+            e_aumenta: true, // Aumenta o número de setas/lanças
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+4 PM:</b> muda o número de setas/lanças para cinco. Requer 2º círculo.',
+            e_aumenta: true, // Aumenta o número de setas/lanças
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+          },
+          {
+            id: 4,
+            descricao:
+              '<b>+9 PM:</b> muda o número de setas/lanças para dez. Requer 4º círculo.',
+            e_aumenta: true, // Aumenta o número de setas/lanças
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 106, // Defina o ID conforme necessário
+        nome: 'Curar Ferimentos',
+        descricao:
+          'Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '189', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>Truque:</b> muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 0, // Truque não tem custo adicional
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 morto-vivo',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade reduz à metade"
+            maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Resistência reduz à metade
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao: '<b>+1 PM:</b> aumenta a cura em +1d8+1.',
+            e_aumenta: true, // Aumenta a cura
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+2 PM:</b> também remove uma condição de fadiga do alvo.',
+            e_aumenta: false, // Não aumenta, apenas adiciona um efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 4,
+            descricao: '<b>+2 PM:</b> muda o alcance para curto.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alcance
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.CURTO,
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 5,
+            descricao:
+              '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alcance e o alvo
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+            maneira_resistencia: '', // Campo vazio, conforme solicitado
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURAS_ESCOLHIDAS,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 107, // Defina o ID conforme necessário
+        nome: 'Geiser Cáustico',
+        descricao:
+          'O solo explode em ácido corrosivo, causando 2d6 pontos de dano de ácido em todas as criaturas e objetos livres na área.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cilindro com 3m de diâmetro e 3m de altura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
+        maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cilindro com 3m de diâmetro e 3m de altura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> Além do normal, o solo continua borbulhando em ácido venenoso até o final da cena, tornando-se terreno difícil. Qualquer criatura que entre na área ou comece o turno dentro dela sofre 2d6 pontos de dano de ácido (sem direito a teste de resistência).',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cilindro com 3m de diâmetro e 3m de altura',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA, // Sem teste de resistência
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 108, // Defina o ID conforme necessário
+        nome: 'Detonação Congelante',
+        descricao:
+          'Você emite uma onda de frio extremo que cobre a área de gelo. Criaturas na área sofrem 2d6 pontos de dano de frio e ficam enredadas e imóveis por 1d4 rodadas. Passar no teste de resistência reduz o dano pela metade e deixa a criatura enredada por uma rodada. Uma criatura voadora que fica imóvel começa a cair no início do seu turno.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'esfera de 6m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
+        maneira_resistencia: ResistenciaMagia.PARCIAL, // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera de 6m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> muda a duração para sustentada. Ao invés do normal, você emite uma aura de frio constante em alcance curto. Uma criatura que entre na área ou inicie seu turno dentro dela sofre 2d6 pontos de dano de frio e fica enredada por uma rodada. Passar no teste de resistência reduz o dano pela metade, evita a condição imóvel e faz com que a criatura não possa mais ficar imóvel por esta magia nesta cena. Requer 2º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica a duração
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'aura de frio constante em alcance curto',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 109, // Defina o ID conforme necessário
+        nome: 'Jato Corrosivo',
+        descricao:
+          'Você dispara um jato, que causa 2d6 pontos de dano de ácido às criaturas na área. Contra construtos e objetos soltos, a magia causa +1 ponto de dano por dado.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'linha de 9m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
+        maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'linha de 9m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+1 PM:</b> muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica vulnerável.',
+            e_aumenta: false, // Não aumenta, apenas modifica a resistência
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'linha de 9m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 110, // Defina o ID conforme necessário
+        nome: 'Despedaçar',
+        descricao:
+          'Esta magia emite um som alto e agudo. O alvo sofre 1d8+2 pontos de dano de impacto (ou o dobro disso e ignora RD se for um construto ou objeto mundano) e fica atordoado por uma rodada (apenas uma vez por cena). Um teste de Fortitude reduz o dano à metade e evita o atordoamento.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura ou objeto mundano Pequeno', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: ResistenciaMagia.PARCIAL,
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '190', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+2 PM:</b> aumenta o dano em +1d8+2.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura ou objeto mundano Pequeno',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> muda o alvo para objeto mundano Médio. Requer 2º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alvo
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Requer 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'objeto mundano Médio',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.SEGUNDO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+5 PM:</b> muda o alvo para objeto mundano Grande. Requer 3º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alvo
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Requer 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'objeto mundano Grande',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 4,
+            descricao:
+              '<b>+9 PM:</b> muda o alvo para objeto mundano Enorme. Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alvo
+            custo: 9,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'objeto mundano Enorme',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+          {
+            id: 5,
+            descricao:
+              '<b>+14 PM:</b> muda o alvo para objeto mundano Colossal. Requer 5º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alvo
+            custo: 14,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO, // Requer 5º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'objeto mundano Colossal',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+          {
+            id: 6,
+            descricao:
+              '<b>+5 PM:</b> muda o alcance para pessoal e a área para esfera com 6m de raio. Todas as criaturas e objetos mundanos na área são afetados.',
+            e_aumenta: false, // Não aumenta, apenas modifica o alcance e a área
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 6m de raio',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 111, // Defina o ID conforme necessário
+        nome: 'Explosão de Chamas',
+        descricao:
+          'Um leque de chamas irrompe de suas mãos, causando 2d6 pontos de dano de fogo às criaturas na área.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cone de 6m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '193', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 6m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+1 PM:</b> muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade se falhar, fica em chamas (veja Condições, na página 394).',
+            e_aumenta: false, // Não aumenta, apenas modifica a resistência
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 6m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: ResistenciaMagia.PARCIAL,
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 112, // Defina o ID conforme necessário
+        nome: 'Disparo Gélido',
+        descricao:
+          'Você dispara um dardo de neve e gelo contra o alvo, que causa 2d8+2 pontos de dano de frio.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_rodada: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
+        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.CRIATURA,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
+        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
+        pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude reduz à metade"
+        maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Resistência reduz à metade
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.PRIMEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil #', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +1d8+1.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude reduz à metade"
+            maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Resistência reduz à metade
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+1 PM:</b> muda a resistência para Fortitude parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica lenta até o final da cena.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_rodada: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
+            maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.PRIMEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
     ];
   }
 }

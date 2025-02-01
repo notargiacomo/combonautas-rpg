@@ -9,6 +9,7 @@ export enum DuracaoMagia {
     CONDICIONAL = 'Condicional',
     DIA = 'Dia',
     SEMANA = 'Semana',
+    ANO = 'Ano',
     PERMANENTE = 'Permanente',
     UM_MINUTO = 'Um Minuto',
     UMA_HORA = 'Uma Hora',
