@@ -11853,7 +11853,7 @@ export class MagiaData {
             aumenta: 0,
           },
           {
-            id: 2,
+            id: 3,
             descricao: `<p><b>+5 PM:</b> muda o alcance para médio e o alvo para criaturas escolhidas. Requer 3º círculo.</p>`,
             e_aumenta: false,
             tipo: TipoMagia.DIVINA,
