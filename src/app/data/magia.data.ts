@@ -9530,6 +9530,7 @@ export class MagiaData {
         paginas: '198',
         aprimoramentos: [],
       },
+      
     ];
   }
 }
