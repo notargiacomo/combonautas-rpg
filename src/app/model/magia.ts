@@ -11,7 +11,7 @@ export interface Magia {
     custo_material?:number;
     descricao_material?:string;
     execucao?:string;
-    execucao_rodada?:number;
+    execucao_quantidade?:number;
     execucao_complemento?:string;
     alcance?:string;
     alvo?:string;
@@ -37,7 +37,7 @@ export interface Magia {
             custo_material?:number;
             descricao_material?:string;
             execucao?:string;
-            execucao_rodada?:number;
+            execucao_quantidade?:number;
             execucao_complemento?:string;
             alcance?:string;
             alvo?:string;
