@@ -1,6 +1,6 @@
 export enum AlvoMagia {
     VOCE = 'Você',
-    CRIATURA = 'Criatura',
+    CRIATURA = 'Criatura(s)',
     CRIATURAS_ESCOLHIDAS = 'Criaturas Escolhidas',
     CRIATURAS_VOLUNTARIAS = 'Criaturas Voluntárias',
     CRIATURA_OBJETO = 'Criatura ou Objeto',
@@ -10,6 +10,7 @@ export enum AlvoMagia {
     CRIATURA_AREA = 'Criatura ou Área',
     HUMANOIDE = 'Humanóide',
     ANIMAL = 'Animal',
+    ANIMAL_HUMANOIDE = 'Animal ou Humanóide',
     PLANTA = 'Planta',
     CONSTRUTO = 'Construto',
     MONSTRO = 'Monstro',

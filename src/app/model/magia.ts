@@ -15,6 +15,7 @@ export interface Magia {
     execucao_complemento?:string;
     alcance?:string;
     alvo?:string;
+    alvo_quantidade?: number;
     alvo_descricao?:string;
     duracao?:string;
     duracao_rodadas?:number;
@@ -40,6 +41,7 @@ export interface Magia {
             execucao_complemento?:string;
             alcance?:string;
             alvo?:string;
+            alvo_quantidade?: number;
             alvo_descricao?:string;
             duracao?:string;
             duracao_rodadas?:number;
