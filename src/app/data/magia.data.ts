@@ -15811,7 +15811,7 @@ export class MagiaData {
           EscolasMagia.CONVOCACAO,
           CirculoMagia.SEGUNDO_CIRCULO,
         ],
-        referencias: Referencia.BASICO,
+        referencias: Referencia.AMEACAS,
         paginas: '404 e 405',
         aprimoramentos: [
           {
