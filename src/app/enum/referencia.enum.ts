@@ -5,4 +5,5 @@ export enum Referencia {
     DEUSES = "Deuses de Arton",
     HEROIS = "Heróis de Arton",
     DB = "Revista Dragão Brasil",
+    GUIA_NPC = "Guia de NPC's"
 }
