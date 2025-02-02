@@ -8,5 +8,5 @@ export enum ExecucaoMagia {
     UM_MINUTO = 'Um Minuto',
     DEZ_MINUTOS = 'Dez Minuto',
     HORA = 'Hora',
-    MAIOR = 'Maior',
+    DIA = 'Dia',
 }

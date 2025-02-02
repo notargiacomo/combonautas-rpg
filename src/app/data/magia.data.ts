@@ -3015,7 +3015,7 @@ export class MagiaData {
             custo_material: 1000,
             descricao_material:
               'cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000',
-            execucao: ExecucaoMagia.MAIOR,
+            execucao: ExecucaoMagia.DIA,
             execucao_quantidade: 0,
             execucao_complemento: '',
             alcance: AlcanceMagia.ILIMITADO,
@@ -3027,7 +3027,7 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [
-              ExecucaoMagia.MAIOR,
+              ExecucaoMagia.DIA,
               AlcanceMagia.ILIMITADO,
               PalavraChave.COMPONENTE_MATERIAL,
             ],
@@ -16019,6 +16019,1527 @@ export class MagiaData {
           },
         ],
       },
+      {
+        id: 168, // Defina o ID conforme necessário
+        nome: 'Barragem Elemental de Vectorius',
+        descricao:
+          'Criada pelo arquimago Vectorius, esta magia produz quatro esferas, de ácido, eletricidade, fogo e frio, que voam até um ponto a sua escolha. Quando atingem o ponto escolhido, explodem causando 6d6 pontos de dano de seu respectivo tipo numa área com 12m de raio. Um teste de Reflexos reduz o dano à metade. Você pode mirar cada esfera em uma criatura ou ponto diferente. Uma criatura ao alcance da explosão de mais de uma esfera deve fazer um teste de resistência para cada uma. Além disso, as esferas causam os seguintes efeitos em criaturas que falharem em seus testes de resistência: Ácido: vulnerável até o fim da cena. Elétrica: atordoado por 1 rodada (apenas uma vez por cena). Fogo: em chamas. Frio: lento até o fim da cena.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.LONGO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: '4 esferas elementais', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '182', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+5 PM:</b> aumenta o dano de cada esfera em +2d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.LONGO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: '4 esferas elementais',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+5 PM:</b> muda o tipo de dano de todas as esferas para essência (mas elas ainda causam os outros efeitos como se seu tipo de dano não mudasse).',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.LONGO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: '4 esferas elementais',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 169, // Defina o ID conforme necessário
+        nome: 'Círculo da Restauração',
+        descricao:
+          'Você evoca um círculo de luz que emana uma energia poderosa. Qualquer criatura viva que termine o turno dentro do círculo recupera 3d8+3 PV e 1 PM. Mortos-vivos e criaturas que sofrem dano por luz perdem PV e PM na mesma quantidade. Uma criatura pode recuperar no máximo 5 PM por dia com esta magia.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'esfera com 3m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.RODADA,
+        duracao_quantidade: 5, // quantidade de rodadas
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '184', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+2 PM:</b> aumenta a regeneração de PV em 1d8+1.',
+            e_aumenta: true, // Aumenta a regeneração de PV
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 3m de raio',
+            duracao: DuracaoMagia.RODADA,
+            duracao_quantidade: 5,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+        ],
+      },
+      {
+        id: 170, // Defina o ID conforme necessário
+        nome: 'Cólera de Azgher',
+        descricao:
+          'Você cria um fulgor dourado e intenso. Criaturas na área ficam cegas por 1d4 rodadas e em chamas, e sofrem 10d6 pontos de dano de fogo (mortos-vivos sofrem 10d8 pontos de dano). Uma criatura que passe no teste de resistência não fica cega nem em chamas e sofre metade do dano.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'esfera com 6m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '184', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> aumenta o dano em +2d6 (+2d8 contra mortos-vivos).',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 6m de raio',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> aumenta a área em +6m de raio.',
+            e_aumenta: true, // Aumenta a área
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 6m de raio',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+5 PM:</b> a luz purificadora do Deus-Sol dissipa todas as magias de necromancia ativas na área. Requer 5º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO, // Requer 5º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 6m de raio',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.QUINTO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 171, // Defina o ID conforme necessário
+        nome: 'Deflagração de Mana',
+        descricao:
+          'Após concentrar seu mana, você emana energia, como uma estrela em plena terra. Todas as criaturas na área sofrem 150 pontos de dano de essência e todos os itens mágicos (exceto artefatos) tornam-se mundanos. Você não é afetado pela magia. Alvos que passem no teste de Fortitude sofrem metade do dano e seus itens mágicos voltam a funcionar após um dia.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.COMPLETA,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'esfera com 15m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '189_190', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em 10.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.COMPLETA,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 15m de raio',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao: '<b>+5 PM:</b> afeta apenas criaturas à sua escolha.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.COMPLETA,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              AlvoMagia.CRIATURAS_ESCOLHIDAS,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 172, // Defina o ID conforme necessário
+        nome: 'Fúria do Panteão',
+        descricao:
+          'Você cria uma nuvem de tempestade violenta. Os ventos tornam ataques à distância impossíveis e fazem a área contar como condição terrível para lançar magia. Além disso, inimigos na área têm a visibilidade reduzida (como a magia Névoa). Uma vez por turno, você pode gastar uma ação de movimento para gerar um dos efeitos a seguir. Nevasca: Inimigos na área sofrem 10d6 pontos de dano de frio (Fortitude reduz à metade). A área fica coberta de neve, virando terreno difícil até o fim da cena ou até você usar siroco. Raios: Até 6 inimigos a sua escolha na área sofrem 10d8 pontos de dano de eletricidade (Reflexos reduz à metade). Siroco: Transforma a chuva em uma tempestade de areia escaldante. Inimigos na área sofrem 10d6 pontos de dano (metade corte, metade fogo) e ficam sangrando (Fortitude reduz o dano à metade e evita a condição). Trovões: Inimigos sofrem 10d6 pontos de dano de impacto e ficam desprevenidos por uma rodada (Fortitude reduz o dano à metade e evita a condição).',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.COMPLETA,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.LONGO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cubo de 90m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.SUSTENTADA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: '',
+        maneira_resistencia: '', // Resistência depende do texto
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '194', // ou número da página, se disponível
+        aprimoramentos: [],
+      },
+      {
+        id: 173, // Defina o ID conforme necessário
+        nome: 'Hálito Peçonhento',
+        descricao:
+          'Você sopra uma fumaça densa esverdeada de toxinas corrosivas que queima a pele e os olhos dos alvos. Criaturas na área sofrem 4d8 pontos de dano de ácido mais 4d8 pontos de dano de veneno e ficam cegas por 1d4+1 rodadas. Passar num teste de Fortitude reduz o dano pela metade e evita a cegueira.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.UNIVERSAL,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cone de 9m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.UNIVERSAL,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> aumenta o dano de ácido em +1d8 e o dano de veneno em +1d8.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.UNIVERSAL,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 9m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.UNIVERSAL,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta:0
+          },
+        ],
+      },
+      {
+        id: 174, // Defina o ID conforme necessário
+        nome: 'Impacto Fulminante',
+        descricao:
+          'Você evoca um poderoso relâmpago dos céus que acerta o alvo com um clarão estrondoso. O alvo sofre 4d6 pontos de dano elétrico mais 4d6 pontos de dano de impacto e fica caído e atordoado por uma rodada. Se passar no teste de resistência, o alvo sofre metade do dano, evita as condições e não pode mais ser atordoado por essa magia até o fim da cena.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: 'uma criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> aumenta o dano de eletricidade em +1d6 e o dano de impacto em +1d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'uma criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+4 PM:</b> muda o alvo para “criaturas escolhidas”. Requer 4º Círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              AlvoMagia.CRIATURAS_ESCOLHIDAS,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 175, // Defina o ID conforme necessário
+        nome: 'Katana Celestial',
+        descricao:
+          'Um golpe vindo dos céus risca o campo de batalha. Se escolher duas linhas, cada uma deve seguir em uma direção diferente, criando um corte em “V”. Criaturas na área sofrem 12d8 pontos de dano de luz (ou 12d12, se forem mortos-vivos) e ficam cegas e surdas até o fim da cena (Reflexos reduz à metade e evita as condições).',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'linha de 60m ou duas linhas de 30m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.AMEACAS,
+        paginas: '404', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+3 PM:</b> aumenta o dano em +2d8 (ou +2d12 contra mortos-vivos).',
+            e_aumenta: true, // Aumenta o dano
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'linha de 60m ou duas linhas de 30m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+6 PM:</b> muda a área para uma linha de 120m ou quatro linhas de 30m em direções opostas, formando um “X”.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 6,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao:
+              'linha de 120m ou quatro linhas de 30m em direções opostas, formando um “X”',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [AlvoMagia.AREA, CirculoMagia.QUINTO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 176, // Defina o ID conforme necessário
+        nome: 'Lança Ígnea de Aleph',
+        descricao:
+          'Esta magia foi desenvolvida pelo mago imortal Aleph Olhos Vermelhos, um entusiasta dos estudos vulcânicos. Ela dispara um projétil de magma contra o alvo, que sofre 4d6 pontos de dano de fogo e 4d6 pontos de dano de perfuração e fica em chamas. As chamas causam 2d6 pontos de dano por rodada, em vez do dano normal. Se passar no teste de resistência, o alvo sofre metade do dano e não fica em chamas. Respingos de rocha incandescente se espalham com a explosão, atingindo todas as criaturas adjacentes ao alvo, que devem fazer um teste de Reflexos. Se falharem, ficam em chamas, como descrito acima.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '196', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+3 PM:</b> aumenta o dano inicial em +2d6 e o dano do efeito em chamas em +1d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+4 PM:</b> muda a duração para cena ou até ser descarregada. Em vez do efeito normal, a magia cria quatro dardos de lava que flutuam ao lado do conjurador. Uma vez por rodada, como uma ação livre, você pode disparar um dos dardos em uma criatura, causando o efeito normal da magia. Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: 'ou até ser descarregada',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'parcial',
+            tracos: [DuracaoMagia.CENA, CirculoMagia.QUARTO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 177, // Defina o ID conforme necessário
+        nome: 'Manto do Cruzado',
+        descricao:
+          'Você invoca o poder de sua divindade na forma de um manto de energia que reveste seu corpo. Esta magia tem duas versões. Você escolhe qual versão pode lançar quando aprende esta magia. Ela não pode ser mudada. Manto de Luz: um manto dourado e luminoso. No início de cada um de seus turnos, você e todos os seus aliados em alcance curto recuperam 2d8 PV. Você recebe imunidade a dano de trevas e seus ataques corpo a corpo causam +2d8 pontos de dano de luz. Manto de Trevas: um manto negro como a noite. No início de cada um de seus turnos, todos os inimigos em alcance curto sofrem 4d8 pontos de dano de trevas. Você cura metade de todo o dano causado pela magia.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: 'você', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.SUSTENTADA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '197', // ou número da página, se disponível
+        aprimoramentos: [],
+      },
+      {
+        id: 178, // Defina o ID conforme necessário
+        nome: 'Mata-Dragão',
+        descricao:
+          'Esta é uma das mais poderosas magias de destruição existentes. Após entoar longos cânticos, o conjurador dispara uma carga de energia que varre uma enorme área à sua frente, causando 20d12 pontos de dano de essência em todas as criaturas, construções e objetos livres atingidos. Sempre que rola um resultado 12 em um dado de dano, a magia causa +1d12 pontos de dano. Apesar de seu poder destrutivo, esta magia é lenta, tornando seu uso difícil em combate.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.RODADA,
+        execucao_quantidade: 2, // quantidade de rodadas
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cone de 30m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: 'reduz à metade', // Reflexos reduz à metade
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '198', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta o dano em +1d12.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.RODADA,
+            execucao_quantidade: 2,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 30m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'reduz à metade',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+        ],
+      },
+      {
+        id: 179, // Defina o ID conforme necessário
+        nome: 'Muralha Elemental',
+        descricao:
+          'Uma muralha de um elemento à sua escolha se eleva da terra. Ela pode ser um muro de até 30m de comprimento e 3m de altura (ou o contrário) ou uma cúpula de 3m de raio. Os efeitos variam conforme o elemento escolhido. Fogo: Faz surgir uma violenta cortina de chamas. Um lado da muralha (a sua escolha) emite ondas de calor, que causam 2d6 pontos de dano de fogo em criaturas a até 6m quando você lança a magia e no início de seus turnos. Atravessar a muralha causa 8d6 pontos de dano de fogo. Caso seja criada em uma área onde existem criaturas, elas sofrem dano como se estivessem atravessando a muralha, mas podem fazer um teste de Reflexos para reduzir o dano à metade e escapar para um lado (a criatura escolhe, mas se escapar para o lado quente sofrerá mais 2d6 pontos de dano). Gelo: Evoca uma parede grossa de gelo denso com 15cm de espessura. Na forma de cúpula, pode prender uma ou mais criaturas, mas elas têm direito a um teste de Reflexos para escapar antes que a cúpula se forme. Cada trecho de 3m da muralha tem Defesa 8, 40 PV e RD 5. Um trecho da muralha que atinja 0 PV será rompido. Qualquer efeito de fogo causa dano dobrado à muralha. Uma criatura que atravesse um trecho rompido da muralha sofre 4d6 pontos de dano de frio.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.MEDIO,
+        alvo: '',
+        alvo_descricao: 'muralha de energia', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        efeito: 'muralha de energia',
+        pericia_resistencia: '',
+        maneira_resistencia: '', // Resistência depende do texto
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '200', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> aumenta o dano por atravessar a muralha em +2d6.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: '',
+            alvo_descricao: 'muralha de energia',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            efeito: 'muralha de energia',
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> aumenta o comprimento em +15m e altura em +3m, até 60m de comprimento e 9m de altura.',
+            e_aumenta: true, // Aumenta dimensões
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: '',
+            alvo_descricao: 'muralha de energia',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            efeito: 'muralha de energia',
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+4 PM:</b> muda a duração para sustentada e adiciona uma nova escolha, Essência. A muralha é invisível e indestrutível — imune a qualquer forma de dano e não afetada por nenhuma magia. Ela não pode ser atravessada nem mesmo por criaturas incorpóreas. No entanto, magias que teletransportam criaturas, como Salto Dimensional, podem atravessá-la. Magias e efeitos de dano, como Bola de Fogo e o sopro de um dragão, não vencem a muralha, mas magias lançadas diretamente sobre uma criatura ou área, como Sono, podem ser lançadas contra alvos que estejam no outro lado como se tivessem linha de efeito. Requer 4º círculo.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO, // Requer 4º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: '',
+            alvo_descricao: 'muralha de energia',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            efeito: 'muralha de energia',
+            pericia_resistencia: '',
+            maneira_resistencia: '',
+            tracos: [DuracaoMagia.SUSTENTADA, CirculoMagia.QUARTO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 180, // Defina o ID conforme necessário
+        nome: 'Raio de Plasma',
+        descricao:
+          'Você dispara uma rajada luminosa superaquecida que causa 10d8 pontos de dano de fogo em todas as criaturas e objetos livres na área. O raio é capaz de derreter qualquer barreira física, seja de madeira, pedra ou metal, atingindo mesmo alvos fora de sua linha de visão.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'linha', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: 'reduz à metade', // Resistência reduz à metade
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'linha',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'reduz à metade',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> muda o alcance para pessoal, a área para “Efeito: espada de plasma”, a duração para sustentada e a resistência para “Reflexos reduz à metade”. Ao invés do normal, você condensa a rajada na forma de uma espada de plasma que emite luz (alcance curto) e calor intensos. Você pode usar uma ação padrão para atingir um alvo adjacente com a espada, que causa 10d8 pontos de dano de fogo e ignora a resistência a dano de objetos. Sua mão que “empunha” a espada é considerada ocupada.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: '',
+            alvo_descricao: 'espada de plasma',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            efeito: 'espada de plasma',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'reduz à metade',
+            tracos: [AlcanceMagia.PESSOAL, DuracaoMagia.SUSTENTADA],
+          },
+        ],
+      },
+      {
+        id: 181, // Defina o ID conforme necessário
+        nome: 'Raio Polar',
+        descricao:
+          'Você dispara um raio azul esbranquiçado de gelo e ar congelante. O alvo sofre 10d8 pontos de dano de frio e fica preso em um bloco de gelo (paralisado). Se passar no teste de resistência, sofre metade do dano e, em vez de paralisado, fica lento por uma rodada. É possível quebrar o gelo para libertar uma criatura presa: o bloco tem 20 PV, RD 10 e é vulnerável a fogo. Uma criatura presa pode gastar uma ação completa para fazer um teste de Atletismo e se libertar do gelo cada vez que passar no teste causa 10 pontos de dano ao bloco, ignorando a RD.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.MEDIO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '203', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+3 PM:</b> aumenta o dano em +2d8.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 3,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+5 PM:</b> muda o alvo para área de esfera com 6m de raio. Em vez de um raio, você dispara uma bola de gelo que explode, causando o efeito da magia em todas as criaturas na área.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'esfera com 6m de raio',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [AlvoMagia.AREA, CirculoMagia.QUARTO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 182, // Defina o ID conforme necessário
+        nome: 'Relâmpago Flamejante de Reynard',
+        descricao:
+          'Esta é uma magia poderosa, desenvolvida pelo metódico e impassível arquimago Reynard. Você invoca as energias elementais do fogo e do relâmpago, fazendo com que uma de suas mãos fique em chamas e a outra mão eletrificada. Pela duração da magia, você pode gastar uma ação de movimento para disparar uma bola de fogo (10d6 pontos de dano de fogo numa esfera com 6m de raio) ou um relâmpago (10d6 pontos de dano de eletricidade numa linha). Você também pode, como uma ação padrão, usar as duas mãos num ataque de energia mista (20d12 pontos de dano, metade de fogo e metade de eletricidade, numa esfera com 9m de raio). Você precisa estar com as duas mãos livres para invocar o efeito misto e isso consome toda a energia da magia, terminando-a imediatamente. Por se tratar de um ritual complexo, o tempo de execução dessa magia não pode ser reduzido.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.RODADA,
+        execucao_quantidade: 2, // quantidade de rodadas
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.MEDIO,
+        alvo: '',
+        alvo_descricao: '', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.SUSTENTADA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        efeito: 'bolas de fogo e relâmpagos',
+        pericia_resistencia: Resistencia.REFLEXOS,
+        maneira_resistencia: 'reduz à metade', // Resistência reduz à metade
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '203_204', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao:
+              '<b>+2 PM:</b> aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.RODADA,
+            execucao_quantidade: 2,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: '',
+            alvo_descricao: '',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            efeito: 'bolas de fogo e relâmpagos',
+            pericia_resistencia: Resistencia.REFLEXOS,
+            maneira_resistencia: 'reduz à metade',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+        ],
+      },
+      {
+        id: 183, // Defina o ID conforme necessário
+        nome: 'Segunda Chance',
+        descricao:
+          'Um brilho de luz, na forma de asas de fênix, emana do alvo. Ele recupera 200 pontos de vida e se cura de qualquer das seguintes condições: abalado, apavorado, alquebrado, atordoado, cego, confuso, debilitado, enjoado, envenenado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, ofuscado, paralisado, pasmo ou surdo.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUINTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUINTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '205', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> aumenta a cura em +20 PV.',
+            e_aumenta: true, // Aumenta a cura
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> muda o alcance para curto e o alvo para até 5 criaturas.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'até 5 criaturas',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: '',
+            tracos: [
+              AlcanceMagia.CURTO,
+              AlvoMagia.CRIATURAS_ESCOLHIDAS,
+              CirculoMagia.QUINTO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+5 PM:</b> muda o alvo para uma criatura que tenha morrido há até uma rodada. Esta magia pode curá-la.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.QUINTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura que tenha morrido há até uma rodada',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: '',
+            tracos: [AlvoMagia.CRIATURA_OBJETO, CirculoMagia.QUINTO_CIRCULO],
+          },
+        ],
+      },
+      {
+        id: 184, // Defina o ID conforme necessário
+        nome: 'Sopro da Salvação',
+        descricao:
+          'Você enche seus pulmões de luz e energia positiva e sopra um cone de poeira reluzente. O sopro afeta apenas seus aliados na área, curando 2d8+4 pontos de vida e removendo uma das seguintes condições de todos os alvos: abalado, atordoado, apavorado, alquebrado, cego, confuso, debilitado, enfeitiçado, enjoado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, paralisado, pasmo e surdo.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cone de 9m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
+        maneira_resistencia: '', // Campo vazio, conforme solicitado
+        tracos: [
+          TipoMagia.DIVINA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.TERCEIRO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '207', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+2 PM:</b> aumenta a cura em +1d8+2.',
+            e_aumenta: true, // Aumenta a cura
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 9m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+            aumenta:0
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+4 PM:</b> além do normal, se um aliado estiver com PV negativos, seus PV são levados a 0 e então a cura é aplicada.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 9m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+          {
+            id: 3,
+            descricao:
+              '<b>+4 PM:</b> remove todas as condições listadas, em vez de apenas uma.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 4,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.DIVINA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 9m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.NENHUMA,
+            maneira_resistencia: '',
+            tracos: [
+              TipoMagia.DIVINA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.TERCEIRO_CIRCULO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 185, // Defina o ID conforme necessário
+        nome: 'Talho Invisível de Edauros',
+        descricao:
+          'Esta magia cruel foi desenvolvida pelo mago de combate Edauros, quando ainda era um bípede. Você faz um gesto rápido e dispara uma lâmina de ar em alta velocidade. Criaturas na área sofrem 10d8 pontos de dano de corte e ficam sangrando. Alvos que passem no teste de resistência sofrem metade do dano e não ficam sangrando.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cone de 9m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [
+          TipoMagia.ARCANA,
+          EscolasMagia.EVOCACAO,
+          CirculoMagia.QUARTO_CIRCULO,
+        ], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '207', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 9m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [
+              TipoMagia.ARCANA,
+              EscolasMagia.EVOCACAO,
+              CirculoMagia.QUARTO_CIRCULO,
+            ],
+            aumenta:0,
+          },
+          {
+            id: 2,
+            descricao:
+              '<b>+2 PM:</b> muda o alvo para você, a duração para sustentada e o efeito para uma vez por rodada, como uma ação de movimento, você pode disparar uma lâmina de ar contra um alvo em alcance médio, causando 6d8 pontos de dano de corte (Fortitude reduz à metade).',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.QUARTO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.MEDIO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: 'você',
+            duracao: DuracaoMagia.SUSTENTADA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'reduz à metade',
+            tracos: [
+              AlcanceMagia.MEDIO,
+              DuracaoMagia.SUSTENTADA,
+              AlvoMagia.CRIATURA_OBJETO,
+            ],
+          },
+        ],
+      },
+      {
+        id: 186, // Defina o ID conforme necessário
+        nome: 'Terremoto',
+        descricao: 'Esta magia cria um tremor de terra que rasga o solo. O terremoto dura uma rodada, durante a qual criaturas sobre o solo ficam atordoadas (apenas uma vez por cena). Barreiras físicas não interrompem a área de Terremoto. O efeito exato depende do terreno. Caverna ou subterrâneo: a magia derruba o teto, causando 12d6 pontos de dano de impacto e agarrando todas as criaturas na área. Um teste de Reflexos reduz o dano à metade e evita a condição. Construção: todas as estruturas na área sofrem 200 pontos de dano de impacto, o suficiente para derrubar construções de madeira ou alvenaria simples, mas não de alvenaria reforçada. Criaturas em uma construção que desmorone sofrem o mesmo efeito de criaturas em uma caverna (veja acima). Espaço aberto: fendas se abrem no chão. Cada criatura na área precisa rolar um dado em um resultado ímpar, uma fenda se abre sob ela e ela precisa fazer um teste de Reflexos; se falhar, cai na fenda. A criatura pode escapar gastando uma ação completa e passando em um teste de Atletismo. No início do seu próximo turno as fendas se fecham, matando todos que estejam dentro delas. Penhasco: o penhasco racha, criando um desmoronamento que percorre uma distância horizontal igual à distância da queda. Por exemplo, um penhasco com 30m de altura desmorona em uma área de 30m de comprimento além da base. Qualquer criatura no caminho sofre 12d6 pontos de dano de impacto e fica agarrada. Um teste de Reflexos reduz o dano à metade e evita ficar agarrado. Rio, lago ou pântano: fissuras se abrem sob a água, drenando-a e formando um lamaçal. Criaturas na área precisam fazer um teste de Reflexos para não afundarem na lama e ficarem agarradas. No início do seu próximo turno as fissuras se fecham, possivelmente afogando as criaturas que ficaram agarradas. Criaturas agarradas (efeito possível de caverna, construção, penhasco e rio, lago ou pântano) sofrem 1d6 pontos de dano por rodada até serem libertadas, o que exige uma ação completa e um teste de Atletismo (por parte da própria criatura ou de um aliado adjacente).',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.DIVINA,
+        circulo: CirculoMagia.QUARTO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.LONGO,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'esfera com 30m de raio', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.RODADA,
+        duracao_quantidade: 1, // quantidade de rodadas
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: '',
+        maneira_resistencia: '', // Resistência depende do texto
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '209', // ou número da página, se disponível
+        aprimoramentos: []
+      },
+      {
+        id: 41, // Defina o ID conforme necessário
+        nome: 'Toque Álgido',
+        descricao: 'Sua mão emite uma energia congelante que causa 6d8 pontos de dano de frio e recobre o alvo com uma camada de gelo, deixando-o paralisado por 1d4 rodadas. O alvo pode refazer o teste de Fortitude no final de seus turnos para quebrar o gelo e se livrar da condição. Passar no teste de resistência reduz o dano pela metade e deixa o alvo enredado por uma rodada.',
+        escola: EscolasMagia.EVOCACAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.TERCEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.TOQUE,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE,
+        maneira_resistencia: 'parcial', // Resistência parcial
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.DB,
+        paginas: 'Dragão Brasil', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+1 PM:</b> como parte da execução da magia, você pode fazer um ataque corpo a corpo contra o alvo. Se acertar, causa o dano do ataque e da magia.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 1,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO]
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
+            e_aumenta: true, // Aumenta o dano
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
+            aumenta: 0
+          }
+        ]
+      }
     ];
   }
 }
