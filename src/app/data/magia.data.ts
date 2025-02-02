@@ -17469,7 +17469,7 @@ export class MagiaData {
         aprimoramentos: []
       },
       {
-        id: 41, // Defina o ID conforme necessário
+        id: 187, // Defina o ID conforme necessário
         nome: 'Toque Álgido',
         descricao: 'Sua mão emite uma energia congelante que causa 6d8 pontos de dano de frio e recobre o alvo com uma camada de gelo, deixando-o paralisado por 1d4 rodadas. O alvo pode refazer o teste de Fortitude no final de seus turnos para quebrar o gelo e se livrar da condição. Passar no teste de resistência reduz o dano pela metade e deixa o alvo enredado por uma rodada.',
         escola: EscolasMagia.EVOCACAO,
