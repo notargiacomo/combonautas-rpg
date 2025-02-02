@@ -20203,7 +20203,7 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> em vez do normal, se falhar na resistência o alvo fica exausto. Se passar, fica fatigado. Requer 2º círculo.',
-            e_aumenta: true, // Aumenta a severidade do efeito
+            e_aumenta: false, // Aumenta a severidade do efeito
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -20225,7 +20225,7 @@ export class MagiaData {
           {
             id: 3,
             descricao: '<b>+5 PM:</b> como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo.',
-            e_aumenta: true, // Aumenta o escopo de alvos
+            e_aumenta: false, // Aumenta o escopo de alvos
             custo: 5,
             custo_material: 0,
             descricao_material: '',
