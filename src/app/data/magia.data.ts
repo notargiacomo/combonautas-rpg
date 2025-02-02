@@ -19966,6 +19966,285 @@ export class MagiaData {
             tracos: [CirculoMagia.TERCEIRO_CIRCULO]
           }
         ]
+      },
+      {
+        id: 215, // Defina o ID conforme necessário
+        nome: 'Leque Cromático',
+        descricao: 'Um cone de luzes brilhantes surge das suas mãos, deixando os animais e humanoides na área atordoados por 1 rodada (apenas uma vez por cena, Vontade anula) e ofuscados pela cena. Esta magia não afeta criaturas cegas.',
+        escola: EscolasMagia.ILUSAO,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.PESSOAL,
+        alvo: AlvoMagia.AREA,
+        alvo_descricao: 'cone de 4,5m', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.INSTANTANEA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
+        maneira_resistencia: 'parcial', // Campo preenchido conforme solicitado
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '196', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>+2 PM:</b> além do normal, as criaturas afetadas ficam vulneráveis pela cena.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 4,5m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.PRIMEIRO_CIRCULO]
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> também afeta espíritos e monstros na área. Requer 2º círculo.',
+            e_aumenta: true, // Aumenta o escopo de criaturas afetadas
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Alteração para 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 4,5m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.SEGUNDO_CIRCULO]
+          },
+          {
+            id: 3,
+            descricao: '<b>+5 PM:</b> também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo.',
+            e_aumenta: true, // Aumenta ainda mais o escopo de criaturas afetadas
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Alteração para 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.PESSOAL,
+            alvo: AlvoMagia.AREA,
+            alvo_descricao: 'cone de 4,5m',
+            duracao: DuracaoMagia.INSTANTANEA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.VONTADE,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.TERCEIRO_CIRCULO]
+          }
+        ]
+      },
+      {
+        id: 216, // Defina o ID conforme necessário
+        nome: 'Raio do Enfraquecimento',
+        descricao: 'Você dispara um raio púrpura que drena as forças do alvo. Se falhar na resistência, o alvo fica fatigado. Se passar, fica vulnerável. Note que, como efeitos de magia não acumulam, lançar esta duas vezes contra o mesmo alvo não irá deixá-lo exausto.',
+        escola: EscolasMagia.NECROMANCIA,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
+        maneira_resistencia: 'parcial', // Campo preenchido conforme solicitado
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '202', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>Truque:</b> muda o alcance para toque e a resistência para Fortitude anula. Em vez do normal, sua mão emana um brilho púrpura e, ao tocar o alvo, ele fica fatigado.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 0, // Truques não consomem PM adicionais
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'anula',
+            tracos: [AlcanceMagia.TOQUE, CirculoMagia.PRIMEIRO_CIRCULO]
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> em vez do normal, se falhar na resistência o alvo fica exausto. Se passar, fica fatigado. Requer 2º círculo.',
+            e_aumenta: true, // Aumenta a severidade do efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Alteração para 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.SEGUNDO_CIRCULO]
+          },
+          {
+            id: 3,
+            descricao: '<b>+5 PM:</b> como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo.',
+            e_aumenta: true, // Aumenta o escopo de alvos
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Alteração para 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.TERCEIRO_CIRCULO]
+          }
+        ]
+      },
+      {
+        id: 216, // Defina o ID conforme necessário
+        nome: 'Raio do Enfraquecimento',
+        descricao: 'Você dispara um raio púrpura que drena as forças do alvo. Se falhar na resistência, o alvo fica fatigado. Se passar, fica vulnerável. Note que, como efeitos de magia não acumulam, lançar esta duas vezes contra o mesmo alvo não irá deixá-lo exausto.',
+        escola: EscolasMagia.NECROMANCIA,
+        tipo: TipoMagia.ARCANA,
+        circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+        custo: 1, // custo base em PM
+        custo_material: 0, // custo em T$ de material
+        descricao_material: '', // descritivo para exibição
+        execucao: ExecucaoMagia.PADRAO,
+        execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        execucao_complemento: '', // descrição complementar, se necessário
+        alcance: AlcanceMagia.CURTO,
+        alvo: AlvoMagia.CRIATURA_OBJETO,
+        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
+        duracao: DuracaoMagia.CENA,
+        duracao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
+        descricao_duracao: '', // descrição complementar, se necessário
+        pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
+        maneira_resistencia: 'parcial', // Campo preenchido conforme solicitado
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
+        referencias: Referencia.BASICO,
+        paginas: '202', // ou número da página, se disponível
+        aprimoramentos: [
+          {
+            id: 1,
+            descricao: '<b>Truque:</b> muda o alcance para toque e a resistência para Fortitude anula. Em vez do normal, sua mão emana um brilho púrpura e, ao tocar o alvo, ele fica fatigado.',
+            e_aumenta: false, // Não aumenta, apenas modifica o efeito
+            custo: 0, // Truques não consomem PM adicionais
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.PRIMEIRO_CIRCULO,
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.TOQUE,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'anula',
+            tracos: [AlcanceMagia.TOQUE, CirculoMagia.PRIMEIRO_CIRCULO]
+          },
+          {
+            id: 2,
+            descricao: '<b>+2 PM:</b> em vez do normal, se falhar na resistência o alvo fica exausto. Se passar, fica fatigado. Requer 2º círculo.',
+            e_aumenta: true, // Aumenta a severidade do efeito
+            custo: 2,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.SEGUNDO_CIRCULO, // Alteração para 2º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURA_OBJETO,
+            alvo_descricao: '1 criatura',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.SEGUNDO_CIRCULO]
+          },
+          {
+            id: 3,
+            descricao: '<b>+5 PM:</b> como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo.',
+            e_aumenta: true, // Aumenta o escopo de alvos
+            custo: 5,
+            custo_material: 0,
+            descricao_material: '',
+            tipo: TipoMagia.ARCANA,
+            circulo: CirculoMagia.TERCEIRO_CIRCULO, // Alteração para 3º círculo
+            execucao: ExecucaoMagia.PADRAO,
+            execucao_quantidade: 0,
+            execucao_complemento: '',
+            alcance: AlcanceMagia.CURTO,
+            alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
+            alvo_descricao: 'criaturas escolhidas',
+            duracao: DuracaoMagia.CENA,
+            duracao_quantidade: 0,
+            descricao_duracao: '',
+            pericia_resistencia: Resistencia.FORTITUDE,
+            maneira_resistencia: 'parcial',
+            tracos: [CirculoMagia.TERCEIRO_CIRCULO]
+          }
+        ]
       }
     ];
   }
