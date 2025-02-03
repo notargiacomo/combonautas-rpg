@@ -10518,6 +10518,7 @@ export class MagiaData {
               EscolasMagia.EVOCACAO,
               CirculoMagia.PRIMEIRO_CIRCULO,
             ],
+            aumenta: 0
           },
           {
             id: 2,
