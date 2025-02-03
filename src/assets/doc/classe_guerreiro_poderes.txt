@@ -9,7 +9,7 @@
         <p><b>Destruidor.</b> Quando causa dano com uma arma corpo a corpo de duas mãos, você pode rolar novamente qualquer resultado 1 ou 2 da rolagem de dano da arma. <i>Pré-requisito: For 1.</i></p>
         <p><b>Esgrimista.</b> Quando usa uma arma corpo a corpo leve ou ágil, você soma sua Inteligência em rolagens de dano (limitado pelo seu nível). <i>Pré-requisito: Int 1.</i></p>
         <p><b>Especialização  em  Arma.</b> Escolha uma arma. Você recebe +2 em rolagens de dano com essa arma. Você pode escolher este poder outras vezes para armas diferentes.</p>
-        <p><b>Especialização  em  Armadura.</b> Uma vez por rodada, quando erra um ataque, você pode gastar 2 PM. Se fizer isso, causa metade do dano que causaria (ignorando efeitos que se aplicariam caso o ataque acertasse).</p>
+        <p><b>Especialização  em  Armadura.</b> Você recebe redução de dano 5 se estiver usando uma armadura pesada. Pré-requisito: 12º nível de guerreiro.</p>
         <p><b>Golpe Demolidor.</b> Quando usa a manobra que brar ou ataca um objeto, você pode gastar 2 PM para ignorar a redução de dano dele.</p>
     </div>
     <div class="col-sm-6 text-justify">
