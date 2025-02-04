@@ -58,7 +58,9 @@
                     (selectionChange)="consultar()"
                   >
                     @for (resistencia of resistencias; track resistencia) {
-                    <mat-option [value]="resistencia">{{ resistencia }}</mat-option>
+                    <mat-option [value]="resistencia">{{
+                      resistencia
+                    }}</mat-option>
                     }
                   </mat-select>
                 </mat-form-field>
@@ -126,15 +128,11 @@
               <div class="col-sm-6 mt-4">
                 <table
                   mat-table
-                  [dataSource]="objetos"
+                  [dataSource]="dataSource"
                   class="mat-elevation-z8"
-                >
-                  <!--- Note that these columns can be defined in any order.
-                        The actual rendered columns are set as a property on the row definition" -->
-
-                  <!-- Position Column -->
+                  matSort>
                   <ng-container matColumnDef="nome">
-                    <th mat-header-cell *matHeaderCellDef>Nome</th>
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
                     <td mat-cell *matCellDef="let element">
                       {{ element.nome }}
                     </td>
@@ -142,7 +140,7 @@
 
                   <!-- Name Column -->
                   <ng-container matColumnDef="tipo">
-                    <th mat-header-cell *matHeaderCellDef>Tipo</th>
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Tipo</th>
                     <td mat-cell *matCellDef="let element">
                       {{ element.tipo }}
                     </td>
@@ -150,7 +148,7 @@
 
                   <!-- Weight Column -->
                   <ng-container matColumnDef="escola">
-                    <th mat-header-cell *matHeaderCellDef>Escola</th>
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Escola</th>
                     <td mat-cell *matCellDef="let element">
                       {{ element.escola }}
                     </td>
@@ -158,7 +156,7 @@
 
                   <!-- Symbol Column -->
                   <ng-container matColumnDef="circulo">
-                    <th mat-header-cell *matHeaderCellDef>Circulo</th>
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Circulo</th>
                     <td mat-cell *matCellDef="let element">
                       {{ element.circulo }}
                     </td>
@@ -183,6 +181,12 @@
                     *matRowDef="let row; columns: displayedColumns"
                   ></tr>
                 </table>
+                <mat-paginator
+                  [pageSizeOptions]="[10, 20, 50]"
+                  showFirstLastButtons
+                  aria-label="Select page of periodic elements"
+                >
+                </mat-paginator>
               </div>
 
               <div class="col-sm-6 mt-4">
@@ -653,14 +657,6 @@
                   </mat-card-content>
                 </mat-card>
               </div>
-
-              <!-- <mat-grid-list cols="2" [rowHeight]="600" gutterSize="15">
-                @for (objeto of objetos; track objeto.id) {
-                <mat-grid-tile>
-                  
-                </mat-grid-tile>
-                }
-              </mat-grid-list> -->
             </div>
           </div>
         </div>

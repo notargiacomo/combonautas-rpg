@@ -12,7 +12,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTabsModule } from '@angular/material/tabs';
-import {MatTableModule} from '@angular/material/table';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 
 import { AlvoMagia } from '../../enum/alvo.magia.enum';
 import { TipoAlquimico } from '../../enum/tipo.alquimico.enum';
@@ -30,6 +30,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {AfterViewInit, ViewChild} from '@angular/core';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatSort, MatSortModule} from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @Component({
@@ -48,12 +49,13 @@ import {MatSort, MatSortModule} from '@angular/material/sort';
     MatCheckboxModule,
     MatTableModule,
     MatSelectModule,
-    MatSortModule, MatPaginatorModule
+    MatSortModule, MatPaginatorModule,
+    MatFormFieldModule,
   ],
   templateUrl: './magias.component.html',
   styleUrl: './magias.component.scss',
 })
-export class MagiasComponent {
+export class MagiasComponent implements AfterViewInit {
   displayedColumns: string[] = ['nome', 'tipo', 'escola', 'circulo', 'acao'];
 
   form!: FormGroup;
@@ -67,10 +69,26 @@ export class MagiasComponent {
   execucoes = Object.values(ExecucaoMagia);
   objeto: Magia | undefined;
 
+  dataSource = new MatTableDataSource<Magia>;
+
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+
+  @ViewChild(MatSort)
+  sort!: MatSort;
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
+
   constructor(
     private readonly service: MagiaService,
     private fb: FormBuilder
-  ) {}
+  ) {
+        // Assign the data to the data source for the table to render
+
+  }
 
   ngOnInit() {
     this.form = this.fb.group({
@@ -107,6 +125,11 @@ export class MagiasComponent {
       error: (response) => {
         console.log(response);
       },
+      complete:() => {
+        this.dataSource = new MatTableDataSource(this.objetos);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+      }
     });
 
     console.log(this.objetos);
