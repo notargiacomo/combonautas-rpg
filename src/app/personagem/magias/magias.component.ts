@@ -94,7 +94,14 @@ export class MagiasComponent {
     }
     this.service.listar(filtro).subscribe({
       next: (response) => {
+        response.sort((a, b) => {
+          let nome_a = a.nome ? a.nome : 'a';
+          let nome_b = b.nome ? b.nome : 'b';
+          return nome_a.localeCompare(nome_b);
+        }
+      );
         this.objetos = response;
+        this.objeto
         this.numero_registros = response.length;
       },
       error: (response) => {
