@@ -12,6 +12,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
+
 import { AlvoMagia } from '../../enum/alvo.magia.enum';
 import { TipoAlquimico } from '../../enum/tipo.alquimico.enum';
 import { Magia } from '../../model/magia';
@@ -23,6 +25,12 @@ import { EscolasMagia } from '../../enum/escolas.magia.enum';
 import { Resistencia } from '../../enum/resistencia.enum';
 import { AlcanceMagia } from '../../enum/alcance.magia.enum';
 import { ExecucaoMagia } from '../../enum/execucao.magia.enum';
+import { MatIconModule } from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
+import {AfterViewInit, ViewChild} from '@angular/core';
+import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
+import {MatSort, MatSortModule} from '@angular/material/sort';
+
 
 @Component({
   selector: 'app-magias',
@@ -33,15 +41,21 @@ import { ExecucaoMagia } from '../../enum/execucao.magia.enum';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    MatIconModule,
     MatTabsModule,
     MatRadioModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatTableModule,
+    MatSelectModule,
+    MatSortModule, MatPaginatorModule
   ],
   templateUrl: './magias.component.html',
   styleUrl: './magias.component.scss',
 })
 export class MagiasComponent {
+  displayedColumns: string[] = ['nome', 'tipo', 'escola', 'circulo', 'acao'];
+
   form!: FormGroup;
   objetos!: Magia[];
   numero_registros!: number;
@@ -51,6 +65,7 @@ export class MagiasComponent {
   resistencias = Object.values(Resistencia);
   alcances = Object.values(AlcanceMagia);
   execucoes = Object.values(ExecucaoMagia);
+  objeto: Magia | undefined;
 
   constructor(
     private readonly service: MagiaService,
@@ -222,5 +237,9 @@ export class MagiasComponent {
     limparFiltros() {
       this.form.reset();
       this.consultar();
+    }
+
+    selecionaMagia(objeto: Magia){
+      this.objeto = objeto;
     }
 }

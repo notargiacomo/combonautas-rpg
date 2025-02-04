@@ -2,13 +2,14 @@
 
 html,
 body {
+  width: 100% !important;
   background-color: rgb(60, 60, 60) !important; /* Define o fundo como a cor dominante */
   height: 100%;
   font-family: "Oswald" !important;
   margin: 0;
   font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
   font-style: normal; /* Pode ser 'italic' ou outros estilos */
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 header,
 .cabecalho {
@@ -126,9 +127,8 @@ b {
 
 .mat-mdc-row {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
-  
-
+  font-size: 10pt !important;
+  height: var(--mat-table-row-item-container-height, 20px) !important;
 }
 
 .mat-expansion-panel-header {

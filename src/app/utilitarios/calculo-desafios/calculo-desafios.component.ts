@@ -1,20 +1,14 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import {
-  FormArray,
   FormBuilder,
+  FormControl,
   FormGroup,
   FormsModule,
-  ReactiveFormsModule,
+  ReactiveFormsModule
 } from '@angular/forms';
-import { FormControl } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {animate, state, style, transition, trigger} from '@angular/animations';
-import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatRadioModule } from '@angular/material/radio';
-import {MatSelectModule} from '@angular/material/select';
 import {
   MatDialog,
   MatDialogActions,
@@ -22,12 +16,16 @@ import {
   MatDialogContent,
   MatDialogTitle,
 } from '@angular/material/dialog';
-import { CalculoDesafiosDto } from '../../dto/calculo-desafios.dto';
-import {MatListModule} from '@angular/material/list';
-import {MatIconModule} from '@angular/material/icon'; 
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
 import { ameacas } from '../../data/ameacas.data';
+import { CalculoDesafiosDto } from '../../dto/calculo-desafios.dto';
 import { Ameaca } from '../../model/ameaca';
-import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-calculo-desafios',
