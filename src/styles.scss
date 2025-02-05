@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
   font-style: normal; /* Pode ser 'italic' ou outros estilos */
-  font-size: 10pt !important;
+  font-size: 12pt !important;
 }
 header,
 .cabecalho {
@@ -86,7 +86,7 @@ b {
 
 .mat-mdc-button {
   font-family: "Oswald" !important;
-  font-size: 10pt !important;
+  font-size: 12pt !important;
   border: 1px solid rgb(228, 176, 100); /* Moldura */
   background-color: rgb(132, 26, 18) !important;
   
@@ -94,31 +94,35 @@ b {
 
 .mat-mdc-select {
   font-family: "Oswald" !important;
-  font-size: 10pt !important;
+  font-size: 12pt !important;
 }
 
 .mat-mdc-option {
   font-family: "Oswald" !important;
-  font-size: 10pt !important;
+  font-size: 12pt !important;
 }
 
 .mdc-floating-label {
   font-family: "Oswald" !important;
-  font-size: 10pt !important;
+  font-size: 12pt !important;
   
 
 }
 
+.mat-mdc-icon-button[disabled], .mat-mdc-icon-button.mat-mdc-button-disabled{
+  background-color: lightgrey !important;
+}
+
 .mat-mdc-menu-item-text {
   font-family: "Oswald" !important;
-  font-size: 10pt !important;
+  font-size: 12pt !important;
   
 
 }
 
 .mat-internal-form-field {
   font-family: "Oswald" !important;
-  font-size: 10pt !important;
+  font-size: 12pt !important;
   
 
 }
@@ -137,7 +141,7 @@ b {
 
 .mat-mdc-row {
   font-family: "Oswald" !important;
-  font-size: 10pt !important;
+  font-size: 12pt !important;
   height: var(--mat-table-row-item-container-height, 20px) !important;
 }
 
