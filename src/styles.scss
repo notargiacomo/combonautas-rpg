@@ -21,7 +21,7 @@ header,
   background-position: center !important;
   background-repeat: no-repeat !important;
   object-fit: contain; /* Mantém as proporções */
-  border: 5px solid rgb(228, 176, 100); /* Moldura */
+  border-bottom: 5px solid rgb(228, 176, 100); /* Moldura */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
 }

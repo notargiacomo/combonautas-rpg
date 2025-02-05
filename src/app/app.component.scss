@@ -1,0 +1,7 @@
+.mat-mdc-card-content {
+    background-color: rgb(132, 26, 18) !important;
+    color: rgb(247, 247, 247);
+    max-height: 600px !important; /* Defina a altura máxima do card */
+    overflow-y: auto !important; /* Habilita o scroll vertical */
+    padding: 8px !important; /* Opcional: ajuste o espaçamento interno */
+  }
