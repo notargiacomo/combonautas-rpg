@@ -89,7 +89,7 @@ b {
   font-size: 12pt !important;
   border: 1px solid rgb(228, 176, 100); /* Moldura */
   background-color: rgb(132, 26, 18) !important;
-  
+  cursor: pointer !important;
 }
 
 .mat-mdc-select {
@@ -272,6 +272,10 @@ img {
   border-radius: 10px !important; /* Arredonda os cantos */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
   opacity: 1 !important;
+}
+
+.mat-icon {
+  cursor: pointer !important;
 }
 
 button[mat-flat-button] {

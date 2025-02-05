@@ -33,7 +33,7 @@ export interface Item {
     margem_ameaca?:number;
     alcance?:number;
     penalidade?:number;
-    tracos?:string[];
+    traco:string[];
     imagem?:string;
     referencias?:string;
     paginas?:string;

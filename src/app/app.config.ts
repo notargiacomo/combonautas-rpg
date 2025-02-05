@@ -4,7 +4,7 @@ import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
 import { importProvidersFrom } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -15,7 +15,7 @@ import { LoaderInterceptor } from './conf/core/loader-interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-              provideHttpClient(withInterceptorsFromDi()), 
+              provideHttpClient(withFetch()), 
               provideZoneChangeDetection({ eventCoalescing: true }), 
               provideRouter(routes, withComponentInputBinding()), 
               provideClientHydration(withEventReplay()), provideAnimationsAsync(),
