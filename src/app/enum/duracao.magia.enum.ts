@@ -5,7 +5,7 @@ export enum DuracaoMagia {
     RODADA = 'Rodada(s)',
     RODADA_VARIAVEL = 'Rodada(s) Variaveis',
     CENA = 'Cena',
-    CENA_DESCARREGADA = 'Cena ou Descarregar',
+    CENA_DESCARREGAR = 'Cena ou Descarregar',
     CONDICIONAL = 'Condicional',
     DIA = 'Dia',
     SEMANA = 'Semana',
