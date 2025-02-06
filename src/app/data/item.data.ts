@@ -10172,50 +10172,6 @@ export class ItemData {
         tipo: TipoItem.ANIMAL,
       },
       {
-        id: 274,
-        nome: 'Urso das Neves',
-        descricao: `<p>A fera lembra um urso, mas bem maior que outros que vocês tenham visto. Tem pelagem completamente branca, mas com olhos, focinho e garras vermelhos. Ainda, a parte posterior do dorso traz formações afiadas que lembram cristais de gelo.</p>`,
-        descricao_extra: `
-        <br>
-        <p>MONTARIA</p>
-            <p>O urso das neves é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>
-            <ul>
-            <li>Iniciante: seu deslocamento muda para 12m e você recebe redução de frio 5.</li>
-            <li>Veterano (somente através de habilidade):seu deslocamento muda para 12m (normal e de natação) e a redução de frio aumenta para 10.</li>
-            <li>Mestre (somente através de habilidade): a redução de frio aumenta para 20.</li>
-            </ul> 
-            <br>`,
-        preco: 0,
-        defesa: 0,
-        manutencao: 2,
-        tipo_manutencao: 'Ração',
-        rd: 0,
-        pv: 0,
-        cd_fabricacao: 0,
-        cd_identificar_item: 0,
-        preco_fabricacao: 0, //    preco/3
-        tempo_fabricacao_em_horas: 0,
-        preco_conserto: 0, //    preco/10
-        tempo_conserto_em_horas: 0,
-        pericia_fabricacao_conserto: '',
-        valor_teste_resistencia: 0,
-        tamanho: Tamanho.GRANDE,
-        espaco: 0,
-        dano: '',
-        tipo_dano: [],
-        multiplicador_critico: 0,
-        margem_ameaca: 0,
-        alcance: 0,
-        penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_MONTARIA, 
-        ],
-        referencias: Referencia.AMEACAS,
-        paginas: '348',
-        tipo: TipoItem.ANIMAL,
-      },
-      {
         id: 275,
         nome: 'Balão Goblin',
         descricao: `<p>Feito de imensas bolsas de couro e outros tecidos remendados, com uma gôndola parecida com um grande cesto, o balão goblin é um engenho tecnológico sem igual em Arton. Um balão tem tamanho Enorme, deslocamento voo 12m, Defesa 5 (+ Des do baloeiro), 100 PV e pode carregar até 8 criaturas Médias ou 160 espaços. Ao contrário do que possa parecer, quedas de balões raramente são fatais. Quando o balão perde mais da metade de seus PV, começa a perder ar e flutua lentamente na direção do solo. Cada ocupante sofre 4d6 pontos de dano de impacto (Ref CD 15 reduz à metade). Um balão só cai de forma perigosa caso perca todos os seus PV. Neste caso, os ocupantes sofrem dano normal pela queda, de acordo com a altura. Remendar um balão em pleno voo exige uma ação completa e um teste de Ofício (artesão) contra CD 15. Se você passar no teste, recupera 1d8 PV do balão.</p>`,
