@@ -35,21 +35,20 @@
           </div>
           <div class="col-sm-6 mt-4">
             <mat-form-field class="select-dobrado">
-              <mat-label>Palavras Chaves</mat-label>
+              <mat-label>Chave</mat-label>
               <mat-select
-                formControlName="traco"
+                formControlName="chave"
                 (selectionChange)="consultar()"
               >
-                @for (traco of tracos; track traco) {
-                <mat-option [value]="traco">{{ traco }}</mat-option>
+                @for (chave of chaves; track chave) {
+                <mat-option [value]="chave" >{{ 
+                  chave 
+                  }}</mat-option>
                 }
               </mat-select>
             </mat-form-field>
           </div>
-        </div>
-        <div class="row"></div>
-
-        <div class="row">
+        </div>        <div class="row">
           <div class="col-sm-12 mt-4">
             <section>
               <div class="button-row d-flex justify-content-end">
@@ -195,9 +194,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -388,9 +387,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -499,9 +498,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -642,9 +641,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -782,9 +781,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -922,9 +921,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1062,9 +1061,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1202,9 +1201,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1327,9 +1326,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1467,9 +1466,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1563,9 +1562,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1729,9 +1728,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1796,9 +1795,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>
@@ -1852,9 +1851,9 @@
                         <div class="row">
                           <div class="col-sm-12 mt-2 button-row">
                             <section class="d-flex flex-wrap gap-2">
-                              @for (traco of objeto.traco; track traco) {
+                              @for (chave of objeto.chave; track chave) {
                               <button class="me-2" mat-flat-button disabled>
-                                {{ traco }}
+                                {{ chave }}
                               </button>
                               }
                             </section>

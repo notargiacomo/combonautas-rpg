@@ -25,6 +25,7 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { Chave } from '../../enum/chave.enum';
 
 @Component({
   selector: 'app-itens',
@@ -57,7 +58,7 @@ export class ItensComponent implements AfterViewInit {
   objetos!: Item[];
   objeto: Item | undefined;
   tipos = Object.values(TipoItem);
-  tracos: string[] = [];
+  chaves: Chave[] = [];
 
   numero_registros = 0;
   filtro_traco: string = '';
@@ -78,9 +79,14 @@ export class ItensComponent implements AfterViewInit {
   }
 
   ngOnInit() {
+    
+
+    // console.log(Object.keys(Chave).filter(chave => chave.startsWith("ARMA_")));
+    
+
     this.form = this.fb.group({
       nome: [''],
-      traco: [''],
+      chave: [''],
       tipo: [''],
     });
 
@@ -116,7 +122,7 @@ export class ItensComponent implements AfterViewInit {
         });
         this.objetos = response;
         this.numero_registros = response.length;
-        this.carregaTracos();
+        this.carregaChaves();
       },
       error: (response) => {
         console.log(response);
@@ -129,10 +135,10 @@ export class ItensComponent implements AfterViewInit {
     });
   }
 
-  carregaTracos(){
-    this.tracos = [];
-    this.tracos = [...new Set(this.objetos.flatMap(item => item.traco))];
-    this.tracos.sort((a, b) => {
+  carregaChaves(){
+    this.chaves = [];
+    this.chaves = [...new Set(this.objetos.flatMap(item => item.chave))];
+    this.chaves = this.chaves.sort((a, b) => {
       return a.localeCompare(b);
     });
   }
@@ -141,7 +147,7 @@ export class ItensComponent implements AfterViewInit {
     let itens_filtrado: Item[] = [];
     if (this.filtro_traco.length !== 0) {
       itens.forEach((arma) => {
-        arma.traco?.forEach((traco) => {
+        arma.chave?.forEach((traco) => {
           if (
             traco
               .toLowerCase()
@@ -175,6 +181,11 @@ export class ItensComponent implements AfterViewInit {
       },
     });
   }
+
+    chaveToString(chave:Chave): string{
+      let chaveEncontrada = Object.keys(Chave).find(key => Chave[key as keyof typeof Chave] === chave);
+      return chaveEncontrada? chaveEncontrada.split("_").join(" "): "";
+    }
 
   limparFiltros() {
     this.objeto = undefined;

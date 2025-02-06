@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Alcance } from '../enum/alcance.enum';
-import { PalavraChave } from '../enum/palavra.chave.enum';
+import { Chave } from '../enum/chave.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { TipoDano } from '../enum/tipo.dano.enum';
@@ -43,16 +43,16 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ARMA_LEVE,
-          PalavraChave.DISCRETA,
-          PalavraChave.ARREMESSO,
-          PalavraChave.ATAQUE_DESTREZA,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.DISCRETA,
+          Chave.ARREMESSO,
+          Chave.ATAQUE_DESTREZA,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_adaga.png',
         referencias: Referencia.BASICO,
@@ -83,14 +83,14 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.ALONGADA,
-          PalavraChave.CORTE,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.HABILIDADE_ARMA_ALONGADA,
+          Chave.TIPO_DANO_CORTE,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_alabarda.png',
         referencias: Referencia.BASICO,
@@ -121,12 +121,12 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_alfange.png',
         referencias: Referencia.BASICO,
@@ -157,14 +157,14 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.MUNICAO_FLECHA,
-          PalavraChave.EMPUNHADURA_MONTADA,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.MUNICAO_FLECHA,
+          Chave.EMPUNHADURA_MONTADA,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_arco_curto.png',
         referencias: Referencia.BASICO,
@@ -195,14 +195,14 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.MUNICAO_FLECHA,
-          PalavraChave.SOMA_FORCA_DANO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.MUNICAO_FLECHA,
+          Chave.SOMA_FORCA_DANO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_arco_longo.png',
         referencias: Referencia.BASICO,
@@ -233,13 +233,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ATAQUE_CORPO_A_CORPO_PENALIDADE_MAIOR,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.ATAQUE_CORPO_A_CORPO_PENALIDADE_MAIOR,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_azagaia.png',
         referencias: Referencia.BASICO,
@@ -270,14 +270,14 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.MUNICAO_VIROTE,
-          PalavraChave.RECARREGA_ACAO_MOVIMENTO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.MUNICAO_VIROTE,
+          Chave.RECARREGA_ACAO_MOVIMENTO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_besta_leve.png',
         referencias: Referencia.BASICO,
@@ -308,14 +308,14 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.MUNICAO_VIROTE,
-          PalavraChave.RECARREGA_ACAO_PADRÃO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.MUNICAO_VIROTE,
+          Chave.RECARREGA_ACAO_PADRÃO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_besta_pesada.png',
         referencias: Referencia.BASICO,
@@ -346,13 +346,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.DUPLA,
-          PalavraChave.IMPACTO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.HABILIDADE_ARMA_DUPLA,
+          Chave.TIPO_DANO_IMPACTO
         ],
         imagem: 'assets/img/item_arma_bordao.png',
         referencias: Referencia.BASICO,
@@ -383,17 +383,17 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.AGIL,
-          PalavraChave.VERSATIL, 
-          PalavraChave.DERRUBAR, 
-          PalavraChave.DESARMAR,
-          PalavraChave.ARMA_DE_ALCANCE,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.HABILIDADE_ARMA_AGIL,
+          Chave.HABILIDADE_ARMA_VERSATIL, 
+          Chave.ACAO_DERRUBAR, 
+          Chave.ACAO_DESARMAR,
+          Chave.HABILIDADE_ALCANCE,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_chicote.png',
         referencias: Referencia.BASICO,
@@ -424,13 +424,13 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO, 
-          PalavraChave.AGIL,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
+          Chave.HABILIDADE_ARMA_AGIL,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_cimitarra.png',
         referencias: Referencia.BASICO,
@@ -461,12 +461,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.IMPACTO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_IMPACTO
         ],
         imagem: 'assets/img/item_arma_clava.png',
         referencias: Referencia.BASICO,
@@ -497,14 +497,14 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.AGIL,
-          PalavraChave.ARMA_MARCIAL_DUAS_MAOS,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.HABILIDADE_ARMA_AGIL,
+          Chave.PROFICIENCIA_ARMA_MARCIAL_DUAS_MAOS,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_espada_bastarda.png',
         referencias: Referencia.BASICO,
@@ -535,13 +535,13 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.ARMA_LEVE, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.EMPUNHADURA_ARMA_LEVE, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_espada_curta.png',
         referencias: Referencia.BASICO,
@@ -572,12 +572,12 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO, 
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_espada_longa.png',
         referencias: Referencia.BASICO,
@@ -608,13 +608,13 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO, 
-          PalavraChave.AGIL,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
+          Chave.HABILIDADE_ARMA_AGIL,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_florete.png',
         referencias: Referencia.BASICO,
@@ -645,13 +645,13 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO, 
-          PalavraChave.ARMA_LEVE,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_foice.png',
         referencias: Referencia.BASICO,
@@ -682,15 +682,15 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.SOMA_FORCA_DANO,
-          PalavraChave.MUNICAO_PEDRA_POLIDA,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.SOMA_FORCA_DANO,
+          Chave.MUNICAO_PEDRA_POLIDA,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_funda.png',
         referencias: Referencia.BASICO,
@@ -721,12 +721,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_gadanho.png',
         referencias: Referencia.BASICO,
@@ -757,15 +757,15 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ADAPTAVEL,
-          PalavraChave.AGIL,
-          PalavraChave.ARMA_MARCIAL_DUAS_MAOS,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.HABILIDADE_ARMA_ADAPTAVEL,
+          Chave.HABILIDADE_ARMA_AGIL,
+          Chave.PROFICIENCIA_ARMA_MARCIAL_DUAS_MAOS,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_katana.png',
         referencias: Referencia.BASICO,
@@ -796,13 +796,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ARREMESSO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.ARREMESSO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_lanca.png',
         referencias: Referencia.BASICO,
@@ -833,15 +833,15 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.ARREMESSO,
-          PalavraChave.ALONGADA,
-          PalavraChave.EMPUNHADURA_MONTADA_UMA_MAO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.ARREMESSO,
+          Chave.HABILIDADE_ARMA_ALONGADA,
+          Chave.EMPUNHADURA_MONTADA_UMA_MAO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_lanca_montada.png',
         referencias: Referencia.BASICO,
@@ -872,12 +872,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.IMPACTO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_IMPACTO
         ],
         imagem: 'assets/img/item_arma_maca.png',
         referencias: Referencia.BASICO,
@@ -908,14 +908,14 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ARMA_LEVE,
-          PalavraChave.ARREMESSO,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.ARREMESSO,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_machadinha.png',
         referencias: Referencia.BASICO,
@@ -946,13 +946,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ARMA_MARCIAL_DUAS_MAOS,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.PROFICIENCIA_ARMA_MARCIAL_DUAS_MAOS,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_machado_anao.png',
         referencias: Referencia.BASICO,
@@ -983,12 +983,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_machado_de_batalha.png',
         referencias: Referencia.BASICO,
@@ -1019,12 +1019,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_machado_guerra.png',
         referencias: Referencia.BASICO,
@@ -1055,13 +1055,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.DESBALANCEADA,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.HABILIDADE_ARMA_DESBALANCEADA,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_machado_taurico.png',
         referencias: Referencia.BASICO,
@@ -1092,14 +1092,14 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.VERSATIL,
-          PalavraChave.DESARMAR,
-          PalavraChave.IMPACTO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.HABILIDADE_ARMA_VERSATIL,
+          Chave.ACAO_DESARMAR,
+          Chave.TIPO_DANO_IMPACTO
         ],
         imagem: 'assets/img/item_arma_mangual.png',
         referencias: Referencia.BASICO,
@@ -1130,12 +1130,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.IMPACTO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.TIPO_DANO_IMPACTO
         ],
         imagem: 'assets/img/item_arma_marreta.png',
         referencias: Referencia.BASICO,
@@ -1166,12 +1166,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.IMPACTO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.TIPO_DANO_IMPACTO
         ],
         imagem: 'assets/img/item_arma_martelo_de_guerra.png',
         referencias: Referencia.BASICO,
@@ -1202,12 +1202,12 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.CORTE
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.TIPO_DANO_CORTE
         ],
         imagem: 'assets/img/item_arma_montante.png',
         referencias: Referencia.BASICO,
@@ -1238,14 +1238,14 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_DE_FOGO,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.MUNICAO_BALA,
-          PalavraChave.RECARREGA_ACAO_PADRÃO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_DE_FOGO,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.MUNICAO_BALA,
+          Chave.RECARREGA_ACAO_PADRÃO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_mosquete.png',
         referencias: Referencia.BASICO,
@@ -1276,12 +1276,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_picareta.png',
         referencias: Referencia.BASICO,
@@ -1312,13 +1312,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.ALONGADA,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.HABILIDADE_ARMA_ALONGADA,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_pique.png',
         referencias: Referencia.BASICO,
@@ -1349,14 +1349,14 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_DE_FOGO,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.MUNICAO_BALA,
-          PalavraChave.RECARREGA_ACAO_PADRÃO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_DE_FOGO,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.MUNICAO_BALA,
+          Chave.RECARREGA_ACAO_PADRÃO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_pistola.png',
         referencias: Referencia.BASICO,
@@ -1387,11 +1387,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA, 
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ENREDADO,
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA, 
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.CONDICAO_ENREDADO,
         ],
         imagem: 'assets/img/item_arma_rede.png',
         referencias: Referencia.BASICO,
@@ -1422,12 +1422,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.IMPACTO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.TIPO_DANO_IMPACTO
         ],
         imagem: 'assets/img/item_arma_tacape.png',
         referencias: Referencia.BASICO,
@@ -1458,15 +1458,15 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.VERSATIL,
-          PalavraChave.DERRUBAR,
-          PalavraChave.ARREMESSO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.HABILIDADE_ARMA_VERSATIL,
+          Chave.ACAO_DERRUBAR,
+          Chave.ARREMESSO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_tridente.png',
         referencias: Referencia.BASICO,
@@ -1497,13 +1497,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.CORTE,
-          PalavraChave.METABOLISMO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_CORTE,
+          Chave.METABOLISMO
         ],
         imagem: 'assets/img/item_arma_acoite_finntroll.png',
         referencias: Referencia.AMEACAS,
@@ -1534,15 +1534,15 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: Alcance.MEDIO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_DE_FOGO,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.DESBALANCEADA,
-          PalavraChave.MUNICAO_BALA,
-          PalavraChave.RECARREGA_ACAO_PADRÃO,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_DE_FOGO,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.HABILIDADE_ARMA_DESBALANCEADA,
+          Chave.MUNICAO_BALA,
+          Chave.RECARREGA_ACAO_PADRÃO,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_arcabuz.png',
         referencias: Referencia.AMEACAS,
@@ -1573,13 +1573,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ARREMESSO,
-          PalavraChave.ATAQUE_CORPO_A_CORPO_PENALIDADE_MAIOR,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.ARREMESSO,
+          Chave.ATAQUE_CORPO_A_CORPO_PENALIDADE_MAIOR,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_arpao.png',
         referencias: Referencia.AMEACAS,
@@ -1610,16 +1610,16 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.AREA_CONE_6M,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_DE_FOGO,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.MUNICAO_BALA,
-          PalavraChave.RECARREGA_ACAO_COMPLETA,
-          PalavraChave.ARMA_DE_ALCANCE,
-          PalavraChave.CONE,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_DE_FOGO,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.MUNICAO_BALA,
+          Chave.RECARREGA_ACAO_COMPLETA,
+          Chave.HABILIDADE_ALCANCE,
+          Chave.CONE,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_bacamarte.png',
         referencias: Referencia.AMEACAS,
@@ -1650,13 +1650,13 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.CORTE,
-          PalavraChave.PERFURACAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_CORTE,
+          Chave.TIPO_DANO_PERFURACAO
         ],
         imagem: 'assets/img/item_arma_espada_vespa.png',
         referencias: Referencia.AMEACAS,
@@ -1687,11 +1687,11 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL, 
-          PalavraChave.ATAQUE_CORPO_A_CORPO, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_UMA_MAO
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL, 
+          Chave.ATAQUE_CORPO_A_CORPO, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_UMA_MAO
         ],
         imagem: 'assets/img/item_arma_gladio.png',
         referencias: Referencia.AMEACAS,
@@ -1722,14 +1722,14 @@ export class ItemData {
         margem_ameaca: 3,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.MUNICAO_BALA,
-          PalavraChave.ARMA_DE_FOGO,
-          PalavraChave.RECARREGA_ACAO_PADRÃO,
-          PalavraChave.HIBRIDA,
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.MUNICAO_BALA,
+          Chave.PROFICIENCIA_ARMA_DE_FOGO,
+          Chave.RECARREGA_ACAO_PADRÃO,
+          Chave.HABILIDADE_ARMA_HIBRIDA,
         ],
         imagem: 'assets/img/item_arma_lanca_fogo.png',
         referencias: Referencia.AMEACAS,
@@ -1760,15 +1760,15 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.AGIL,
-          PalavraChave.VERSATIL,
-          PalavraChave.AGARRAR,
-          PalavraChave.DESARMAR
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.HABILIDADE_ARMA_AGIL,
+          Chave.HABILIDADE_ARMA_VERSATIL,
+          Chave.ACAO_AGARRAR,
+          Chave.ACAO_DESARMAR
         ],
         imagem: 'assets/img/item_arma_mordida_diabo.png',
         referencias: Referencia.AMEACAS,
@@ -1799,11 +1799,11 @@ export class ItemData {
         margem_ameaca: 2,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_LEVE,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
+        chave: [
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
         ],
         imagem: 'assets/img/item_arma_nekote.png',
         referencias: Referencia.AMEACAS,
@@ -1834,14 +1834,14 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.MUNICAO_BALA,
-          PalavraChave.ARMA_DE_FOGO,
-          PalavraChave.RECARREGA_ACAO_PADRÃO,
-          PalavraChave.HIBRIDA,
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.MUNICAO_BALA,
+          Chave.PROFICIENCIA_ARMA_DE_FOGO,
+          Chave.RECARREGA_ACAO_PADRÃO,
+          Chave.HABILIDADE_ARMA_HIBRIDA,
         ],
         imagem: 'assets/img/item_arma_pistola_punhal.png',
         referencias: Referencia.AMEACAS,
@@ -1872,12 +1872,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_LEVE,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.NAO_LETAL,
+        chave: [
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.NAO_LETAL,
         ],
         imagem: 'assets/img/item_arma_porrete.png',
         referencias: Referencia.AMEACAS,
@@ -1908,12 +1908,12 @@ export class ItemData {
         margem_ameaca: 4,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_EXOTICA,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.AGIL,
+        chave: [
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.HABILIDADE_ARMA_AGIL,
         ],
         imagem: 'assets/img/item_arma_presa_serpente.png',
         referencias: Referencia.AMEACAS,
@@ -1944,11 +1944,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_LEVE,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
+        chave: [
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
         ],
         imagem: 'assets/img/item_arma_shuriken.png',
         referencias: Referencia.AMEACAS,
@@ -1979,14 +1979,14 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_MARCIAL,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.VERSATIL,
-          PalavraChave.DERRUBAR,
-          PalavraChave.EMPURRAR,
+        chave: [
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.HABILIDADE_ARMA_VERSATIL,
+          Chave.ACAO_DERRUBAR,
+          Chave.ACAO_EMPURRAR,
         ],
         imagem: 'assets/img/item_arma_tetsubo.png',
         referencias: Referencia.AMEACAS,
@@ -2017,12 +2017,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_DE_FOGO,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ARMA_LEVE,
+        chave: [
+          Chave.PROFICIENCIA_ARMA_DE_FOGO,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.EMPUNHADURA_ARMA_LEVE,
         ],
         imagem: 'assets/img/item_arma_traque.png',
         referencias: Referencia.AMEACAS,
@@ -2053,12 +2053,12 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: Alcance.CURTO,
         penalidade: 0,
-        traco: [
-          PalavraChave.ARMA_SIMPLES,
-          PalavraChave.ATAQUE_A_DISTANCIA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.MUNICAO_DARDO,
+        chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.MUNICAO_DARDO,
         ],
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
@@ -2089,9 +2089,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMADURA_LEVE
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PROFICIENCIA_ARMADURA_LEVE
         ],
         imagem: 'assets/img/item_armadura_acolchoada.png',
         referencias: Referencia.BASICO,
@@ -2123,10 +2123,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMADURA_PESADA, 
-          PalavraChave.SOB_MEDIDA,   
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PROFICIENCIA_ARMADURA_PESADA, 
+          Chave.SOB_MEDIDA,   
         ],
         imagem: 'assets/img/item_armadura_armadura_completa.png',
         referencias: Referencia.BASICO,
@@ -2157,9 +2157,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMA_LEVE
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.EMPUNHADURA_ARMA_LEVE
         ],
         imagem: 'assets/img/item_armadura_armadura_couro.png',
         referencias: Referencia.BASICO,
@@ -2190,9 +2190,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMADURA_PESADA
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PROFICIENCIA_ARMADURA_PESADA
         ],
         imagem: 'assets/img/item_armadura_brunea.png',
         referencias: Referencia.BASICO,
@@ -2223,9 +2223,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMADURA_PESADA],
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_cota_malha.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
@@ -2255,9 +2255,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMA_LEVE
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.EMPUNHADURA_ARMA_LEVE
         ],
         imagem: 'assets/img/item_armadura_couraca.png',
         referencias: Referencia.BASICO,
@@ -2288,9 +2288,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 1,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMA_LEVE
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.EMPUNHADURA_ARMA_LEVE
         ],
         imagem: 'assets/img/item_armadura_couro_batido.png',
         referencias: Referencia.BASICO,
@@ -2321,11 +2321,11 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 1,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ESCUDO,
-          'MÃO LIVRE EXCETO ARMA',
-          'PROFICIÊNCIA ARMAS MARCIAS PARA ATAQUE CORPOR A CORPO',
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.HABILIDADE_ESCUDO_MAO_LIVRE_EXCETO_ARMA,
+          Chave.HABILIDADE_ESCUDO_PROFICIENCIA_ARMA_MARCIAL_PARA_ATAQUE
         ],
         imagem: 'assets/img/item_armadura_escudo_leve.png',
         referencias: Referencia.BASICO,
@@ -2356,9 +2356,9 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 1,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ESCUDO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.PROFICIENCIA_ESCUDO,
         ],
         imagem: 'assets/img/item_armadura_escudo_pesado.png',
         referencias: Referencia.BASICO,
@@ -2389,9 +2389,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMA_LEVE
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.EMPUNHADURA_ARMA_LEVE
         ],
         imagem: 'assets/img/item_armadura_gibao_peles.png',
         referencias: Referencia.BASICO,
@@ -2422,9 +2422,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMADURA_PESADA
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PROFICIENCIA_ARMADURA_PESADA
         ],
         imagem: 'assets/img/item_armadura_loriga_segmentada.png',
         referencias: Referencia.BASICO,
@@ -2455,9 +2455,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 4,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMADURA_PESADA
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PROFICIENCIA_ARMADURA_PESADA
         ],
         imagem: 'assets/img/item_armadura_meia_armadura.png',
         referencias: Referencia.BASICO,
@@ -2488,9 +2488,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        traco: [
-          PalavraChave.VESTIDO,
-          PalavraChave.ARMA_LEVE,
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.EMPUNHADURA_ARMA_LEVE,
         ],
         imagem: 'assets/img/item_armadura_armadura_ossos.png',
         referencias: Referencia.AMEACAS,
@@ -2521,9 +2521,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ARMADURA_PESADA, 
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PROFICIENCIA_ARMADURA_PESADA, 
         ],
         imagem: 'assets/img/item_armadura_armadura_quitina.png',
         referencias: Referencia.AMEACAS,
@@ -2554,9 +2554,9 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 1,
-        traco: [
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ESCUDO, 
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ESCUDO, 
         ],
         imagem: 'assets/img/item_armadura_escudo_couro.png',
         referencias: Referencia.AMEACAS,
@@ -2587,9 +2587,9 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          PalavraChave.ARMA_LEVE,
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.EMPUNHADURA_ARMA_LEVE,
         ],
         imagem: 'assets/img/item_armadura_veste_teia_aranha.png',
         referencias: Referencia.AMEACAS,
@@ -2620,9 +2620,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.CONSUMIVEL,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.CONSUMIVEL,
         ],
         imagem: 'assets/img/item_municao_balas.png',
         referencias: Referencia.BASICO,
@@ -2653,9 +2653,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.CONSUMIVEL
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.CONSUMIVEL
         ],
         imagem: 'assets/img/item_municao_flechas.png',
         referencias: Referencia.BASICO,
@@ -2686,9 +2686,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.CONSUMIVEL,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.CONSUMIVEL,
         ],
         imagem: 'assets/img/item_municao_pedras.png',
         referencias: Referencia.BASICO,
@@ -2719,9 +2719,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.CONSUMIVEL, 
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.CONSUMIVEL, 
         ],
         imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.BASICO,
@@ -2752,9 +2752,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.CONSUMIVEL, 
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.CONSUMIVEL, 
         ],
         
         referencias: Referencia.AMEACAS,
@@ -2785,10 +2785,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.ARREMESSO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.CONSUMIVEL,
+          Chave.ARREMESSO,
         ],
         
         referencias: Referencia.BASICO,
@@ -2819,7 +2819,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
+        chave: [
         ],
         
         referencias: Referencia.BASICO,
@@ -2850,9 +2850,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
         ],
         
         referencias: Referencia.BASICO,
@@ -2883,8 +2883,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
         ],
         
         referencias: Referencia.BASICO,
@@ -2915,7 +2915,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [],
+        chave: [],
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
@@ -2945,7 +2945,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
+        chave: [
         ],
         
         referencias: Referencia.BASICO,
@@ -2976,7 +2976,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
+        chave: [
         ],
         
         referencias: Referencia.BASICO,
@@ -3007,7 +3007,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
+        chave: [
         ],
         
         referencias: Referencia.BASICO,
@@ -3038,9 +3038,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONTAINER, 
-          PalavraChave.NAO_CONTA_COMO_VESTIDO
+        chave: [
+          Chave.CONTAINER, 
+          Chave.NAO_CONTA_COMO_VESTIDO
         ],
         
         referencias: Referencia.BASICO,
@@ -3071,9 +3071,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONTAINER, 
-          PalavraChave.NAO_CONTA_COMO_VESTIDO,
+        chave: [
+          Chave.CONTAINER, 
+          Chave.NAO_CONTA_COMO_VESTIDO,
         ],
         
         referencias: Referencia.BASICO,
@@ -3104,10 +3104,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.ARREMESSO,
-          PalavraChave.ALCANCE_CURTO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.ARREMESSO,
+          Chave.ALCANCE_CURTO,
         ],
         
         referencias: Referencia.BASICO,
@@ -3138,8 +3138,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
         ],
         
         referencias: Referencia.BASICO,
@@ -3170,8 +3170,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO, 
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
         ],
         
         referencias: Referencia.BASICO,
@@ -3202,7 +3202,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
+        chave: [
         ],
         
         referencias: Referencia.BASICO,
@@ -3233,9 +3233,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.EMPUNHADO,
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.LIMITE_USO_EMPUNHADO,
         ],
         
         referencias: Referencia.BASICO,
@@ -3266,9 +3266,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_LEVE, 
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_LEVE, 
         ],
         
         referencias: Referencia.BASICO,
@@ -3299,8 +3299,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
         ],
         
         referencias: Referencia.BASICO,
@@ -3331,8 +3331,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
         ],
         
         referencias: Referencia.AMEACAS,
@@ -3363,7 +3363,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
+        chave: [
         ],
         
         referencias: Referencia.AMEACAS,
@@ -3394,9 +3394,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.CONSUMIVEL, 
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.CONSUMIVEL, 
         ],
         
         referencias: Referencia.AMEACAS,
@@ -3427,8 +3427,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
         ],
         
         referencias: Referencia.AMEACAS,
@@ -3459,10 +3459,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.INSTRUMENTO_MUSICAL,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
+        chave: [
+          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3494,7 +3494,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
+        chave: [
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3526,9 +3526,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.FERRAMENTA_ACAO_REQUERIDA,
-          PalavraChave.ACAMPAMENTO
+        chave: [
+          Chave.FERRAMENTA_ACAO_REQUERIDA,
+          Chave.ACAO_ACAMPAMENTO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3558,9 +3558,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.FERRAMENTA_ACAO_REQUERIDA,
-          PalavraChave.DISFARCE
+        chave: [
+          Chave.FERRAMENTA_ACAO_REQUERIDA,
+          Chave.ACAO_DISFARCE
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3591,10 +3591,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.INSTRUMENTO_MUSICAL,
-          PalavraChave.ARMA_DUAS_MAOS,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3624,9 +3624,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.FERRAMENTA_ACAO_REQUERIDA,
-          PalavraChave.ABRIR_FECHADURA
+        chave: [
+          Chave.FERRAMENTA_ACAO_REQUERIDA,
+          Chave.ACAO_ABRIR_FECHADURA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3658,8 +3658,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.FERRAMENTA_PERICIA_REQUERIDA, PalavraChave.OFICIO
+        chave: [
+          Chave.FERRAMENTA_PERICIA_REQUERIDA, Chave.PERICIA_OFICIO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3667,7 +3667,7 @@ export class ItemData {
       },
       {
         id: 105,
-        nome: PalavraChave.INSTRUMENTO_MUSICAL,
+        nome: Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
         descricao: `Um instrumento típico, como um bandolim, flauta ou lira. Veja o
        quadro acima para as regras deste item`,
         preco: 35,
@@ -3690,10 +3690,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.INSTRUMENTO_MUSICAL, 
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS
+        chave: [
+          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, 
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3723,8 +3723,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3754,11 +3754,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO, 
-          PalavraChave.ARMA_DUAS_MAOS, 
-          PalavraChave.FERRAMENTA_PERICIA_REQUERIDA,
-          PalavraChave.CURA
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS, 
+          Chave.FERRAMENTA_PERICIA_REQUERIDA,
+          Chave.PERICIA_CURA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3789,9 +3789,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.ANIMAL,
-          PalavraChave.VESTIDO,
+        chave: [
+          Chave.TIPO_ITEM_ANIMAL,
+          Chave.LIMITE_USO_VESTIDO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3822,10 +3822,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.INSTRUMENTO_MUSICAL,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
+        chave: [
+          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
@@ -3855,10 +3855,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          PalavraChave.INVESTIGACAO,
-          PalavraChave.INTERROGAR,
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PERICIA_INVESTIGACAO,
+          Chave.ACAO_INTERROGAR,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -3888,9 +3888,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.INTIMIDACAO
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PERICIA_INTIMIDACAO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -3920,8 +3920,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -3951,9 +3951,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ATUACAO
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PERICIA_ATUACAO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -3983,9 +3983,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ENGANACAO
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PERICIA_ENGANACAO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4015,9 +4015,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.FORTITUDE
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PERICIA_FORTITUDE
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4047,8 +4047,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4078,9 +4078,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.MANA
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PERSONAGEM_MANA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4110,9 +4110,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.MEDO
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.MEDO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4142,12 +4142,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          PalavraChave.ADESTRAMENTO,
-          PalavraChave.DIPLOMACIA,
-          PalavraChave.INVESTIGACAO,
-          PalavraChave.INTERROGAR
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PERICIA_ADESTRAMENTO,
+          Chave.PERICIA_DIPLOMACIA,
+          Chave.PERICIA_INVESTIGACAO,
+          Chave.ACAO_INTERROGAR
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4177,7 +4177,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, PalavraChave.VONTADE],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_VONTADE],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4206,7 +4206,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, PalavraChave.LADINAGEM],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_LADINAGEM],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4235,10 +4235,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          'ATAQUE DESARMADO LETAL',
-          'CONTA COMO ARMA PARA RECEBER MELHORIAS ENCANTOS',
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.ATAQUE_DESARMADO,
+          Chave.HABILIDADE_VESTUARIO_CONTA_COMO_ARMA,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4268,7 +4268,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, 'VARIA CONFORMA AMBIENTE', 'FURTIVIDADE +2'],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_FURTIVIDADE],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4297,7 +4297,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, PalavraChave.RELIGIAO],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_RELIGIAO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4326,7 +4326,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, PalavraChave.MISTICISMO],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4355,9 +4355,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO, 
-          PalavraChave.ACROBACIA
+        chave: [
+          Chave.LIMITE_USO_VESTIDO, 
+          Chave.PERICIA_ACROBACIA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4387,7 +4387,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, PalavraChave.DIPLOMACIA],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_DIPLOMACIA],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4416,7 +4416,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, 'SEM EQUIPAMENTO -5 CARISMA COM NOBREZA'],
+        chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4445,7 +4445,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO],
+        chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4474,7 +4474,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, PalavraChave.REFLEXOS],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_REFLEXOS],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
         tipo: TipoItem.VESTUARIO,
@@ -4503,10 +4503,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          'CONTA COMO ARMA PARA RECEBER MELHORIAS ENCANTOS',
-          'BENEFICIOS SE APLICAM A GARRA OU ARMA NATURAL',
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.HABILIDADE_VESTUARIO_CONTA_COMO_ARMA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -4536,10 +4535,8 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          'CAMUFLAGEM TOTAL NA ESCURIDAO COMPLETA',
-          'ANULA VISAO ESCURO OPONENTE',
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -4569,7 +4566,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, 'IMUNIDADE A CONDICAO OFUSCADO'],
+        chave: [Chave.LIMITE_USO_VESTIDO, ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
         tipo: TipoItem.VESTUARIO,
@@ -4598,7 +4595,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.VESTIDO, 'RESISTÊNCIA A EFEITOS DE SENTIDOS +2'],
+        chave: [Chave.LIMITE_USO_VESTIDO, ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
         tipo: TipoItem.VESTUARIO,
@@ -4627,10 +4624,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          PalavraChave.ATLETISMO,
-          PalavraChave.DESLOCAMENTO
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PERICIA_ATLETISMO,
+          Chave.DESLOCAMENTO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -4660,11 +4657,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'MAGIA ENCANTAMENTO E ILUSÃO +2PM PARA APRIMORAMENTO',
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
@@ -4694,13 +4690,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_DUAS_MAOS,
-          PalavraChave.MISTICISMO,
-          PalavraChave.LIMITE_PM,
-          PalavraChave.CD_MAGIA,
-          PalavraChave.ARCANA,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
+          Chave.PERICIA_MISTICISMO,
+          Chave.LIMITE_PM,
+          Chave.CD_MAGIA,
+          Chave.ARCANA,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4730,12 +4726,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ELEMENTAL,
-          PalavraChave.MAGIA,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.ELEMENTAL,
+          Chave.MAGIA,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4765,11 +4761,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.MISTICISMO,
-          PalavraChave.TREVAS
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.PERICIA_MISTICISMO,
+          Chave.TIPO_DANO_TREVAS
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4799,11 +4795,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.MANA,
-          PalavraChave.MISTICISMO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.PERSONAGEM_MANA,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4833,9 +4829,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4865,10 +4861,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.VESTIDO,
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'CUSTO MAGIAS DE ALCANCE PESSOAL -1PM',
+        chave: [
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4898,10 +4893,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.LIMITE_PM,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.LIMITE_PM,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4931,11 +4926,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'MAGIAS ARCANAS CD +2',
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.PERICIA_MISTICISMO,
+          Chave.MAGIA,
+          Chave.CD_MAGIA,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -4965,12 +4961,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.CD_MAGIA,
-          PalavraChave.ARCANA,
-          PalavraChave.MISTICISMO,
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.CD_MAGIA,
+          Chave.ARCANA,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5000,14 +4996,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.ARMA_LEVE,
-          PalavraChave.ATAQUE_CORPO_A_CORPO,
-          PalavraChave.CORTE,
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'MAGIAS COM TESTE RESISTENCIA GANHAM APRIMORAMENTO',
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.TIPO_DANO_CORTE,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '396 E 398',
@@ -5037,10 +5032,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARMA_UMA_MAO,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.BASICO,
         paginas: '396 E 398',
@@ -5070,10 +5065,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.EMPUNHADO,
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'MAGIAS DANO GANHAM APRIMORAMENTO',
+        chave: [
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -5103,13 +5097,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ARREMESSO,
-          PalavraChave.ACIDO,
-          PalavraChave.REFLEXOS,
-          PalavraChave.REDUZ_METADE
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ARREMESSO,
+          Chave.TIPO_DANO_ACIDO,
+          Chave.PERICIA_REFLEXOS,
+          Chave.REDUZ_METADE
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5139,11 +5133,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          'AÇÃO COMPLETA',
-          'RECUPERA 2D4 VIDA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.PERSONAGEM_MANA_REGENERAÇÃO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5173,14 +5166,14 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ARREMESSO,
-          PalavraChave.IMPACTO,
-          PalavraChave.ESFERA,
-          PalavraChave.REFLEXOS,
-          PalavraChave.REDUZ_METADE,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ARREMESSO,
+          Chave.TIPO_DANO_IMPACTO,
+          Chave.ESFERA,
+          Chave.PERICIA_REFLEXOS,
+          Chave.REDUZ_METADE,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5210,11 +5203,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          'AÇÃO COMPLETA',
-          'CARISMA +2 ATÉ O FIM DA CENA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ATRIBUTO_CARISMA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5244,12 +5236,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ENFEITIÇADO,
-          PalavraChave.VONTADE,
-          PalavraChave.ANULA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.CONDICAO_ENFEITICADO,
+          Chave.PERICIA_VONTADE,
+          Chave.ANULA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5279,11 +5271,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.CURA,
-          PalavraChave.MANA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.PERICIA_CURA,
+          Chave.PERSONAGEM_MANA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5313,13 +5305,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ARREMESSO,
-          PalavraChave.FOGO,
-          PalavraChave.EM_CHAMAS,
-          PalavraChave.REFLEXOS
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ARREMESSO,
+          Chave.TIPO_DANO_FOGO,
+          Chave.CONDICAO_EM_CHAMAS,
+          Chave.PERICIA_REFLEXOS
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5349,11 +5341,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          'CRIATURA AO OBJETO',
-          'INVISIVEL POR 2D6 RODADAS',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5383,11 +5373,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.FOGO,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.TIPO_DANO_FOGO,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5417,11 +5407,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.MISTICISMO,
-          PalavraChave.MAGIA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
+          Chave.MAGIA
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
@@ -5451,12 +5441,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.DANO,
-          PalavraChave.MAGIA,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.DANO,
+          Chave.MAGIA,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5486,11 +5476,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.FRIO,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.TIPO_DANO_FRIO,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5520,11 +5510,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          'CATALIZADOR',
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'MAGIA DE ILUSÃO CD +2',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5554,11 +5543,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          'CATALIZADOR',
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'MAGIA DE NECROMANCIA CD +2',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5588,11 +5576,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          'CATALIZADOR',
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'DIMINUI CUSTO MAGIA DE ENCANTAMENTO EM 1PM',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5622,11 +5609,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          'CATALIZADOR',
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'DIMINUI CUSTO MAGIA DE CONVOCAÇÃO EM -1PM',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5656,11 +5642,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.MISTICISMO,
-          PalavraChave.CURA,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
+          Chave.PERICIA_CURA,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5690,11 +5676,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          'CATALIZADOR',
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'MAGIA ABJURAÇÃO CD +2',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5724,11 +5709,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          'CATALIZADOR',
-          'NECESSÁRIO TREINAMENTO MISTICISMO PARA FABRICAÇÃO',
-          'DIMINUI CUSTO MAGIA DE TRANSMUTAÇÃO EM -1PM',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5758,13 +5742,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          'INGESTÃO',
-          'PARALISADA POR 3 RODADAS',
-          'SE RESISTIR LENTO POR 3 RODADAS',
-          'RESISTIR CD +5',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_INGESTAO,
+          Chave.CONDICAO_PARALISADO,
+          Chave.CONDICAO_LENTO
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5794,12 +5777,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.INALACAO,
-          'INCONSCIENTE POR 1 RODADAS',
-          'SE RESISTIR ENJOADO POR 1 RODADAS',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_INALACAO,
+          Chave.CONDICAO_INCONSCIENTE,
+          Chave.CONDICAO_ENJOADO
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5829,10 +5812,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          'INJESTÃO',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_INGESTAO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5862,12 +5845,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.CONTATO,
-          'FICA DEBILITADO DURAÇÃO CENA',
-          'SE RESISTIR FICA FRACO DURAÇÃO CENA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_CONTATO,
+          Chave.CONDICAO_DEBILITADO,
+          Chave.CONDICAO_FRACO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5897,10 +5880,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.INALACAO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_INALACAO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5930,7 +5913,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.CONSUMIVEL, PalavraChave.VENENO, PalavraChave.CONTATO, 
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_CONTATO, 
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
@@ -5960,10 +5943,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.CONTATO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_CONTATO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -5993,10 +5976,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.CONTATO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_CONTATO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6026,10 +6009,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.INGESTAO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_INGESTAO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6059,12 +6042,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.INALACAO,
-          'FICA CONFUSA',
-          'SE RESISTIR FICA LENTA 1 RODADA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_INALACAO,
+          Chave.CONDICAO_CONFUSO,
+          Chave.CONDICAO_LENTO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6094,11 +6077,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          'AÇÃO COMPLETA',
-          'RECUPERA 4D6+4 VIDA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.PERSONAGEM_VIDA_REGENERACAO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -6128,14 +6110,14 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ARREMESSO,
-          PalavraChave.CILINDRO,
-          PalavraChave.CAMUFLAGEM_LEVE,
-          PalavraChave.CAMUFLAGEM_TOTAL,
-          PalavraChave.CENA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ARREMESSO,
+          Chave.CILINDRO,
+          Chave.CAMUFLAGEM_LEVE,
+          Chave.CAMUFLAGEM_TOTAL,
+          Chave.CENA
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -6165,13 +6147,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          'INGESTÃO',
-          'GANHA ARMA NATURAL MORDIDA',
-          'DANO 1D6 CRITICO X2',
-          'DURAÇÃO CENA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.METODO_INOCULACAO_VENENO_INGESTAO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -6201,11 +6180,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ELEMENTAL,
-          PalavraChave.CENA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ELEMENTAL,
+          Chave.CENA
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
@@ -6235,14 +6214,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ARREMESSO,
-          'ALCANCE MÉDIO',
-          'AREA',
-          'CRIATURA',
-          'DURAÇÃO CENA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ARREMESSO,
+          Chave.ALCANCE_MEDIO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6272,14 +6248,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ARREMESSO,
-          'ALCANCE CURTO',
-          'REMOVE EFEITOS TODOS METAMORFOSE',
-          'CRIATURA',
-          'REFLEXO CD DESTREZA EVITA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.ARREMESSO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6309,12 +6281,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          'IGNORA PENALIDADES COMBATE SUBMERSO',
-          'ALVO ARMA OU MUNIÇÃO',
-          'DURAÇÃO CENA',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6344,18 +6313,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.ACIDO,
-          PalavraChave.BOMBA,
-          PalavraChave.EMPUNHADO,
-          PalavraChave.ARREMESSO,
-          PalavraChave.FOGO,
-          PalavraChave.ALCANCE_CURTO,
-          PalavraChave.EM_CHAMAS,
-          PalavraChave.REFLEXOS,
-          PalavraChave.REDUZ_METADE,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.TIPO_DANO_ACIDO,
+          Chave.BOMBA,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.ARREMESSO,
+          Chave.TIPO_DANO_FOGO,
+          Chave.ALCANCE_CURTO,
+          Chave.CONDICAO_EM_CHAMAS,
+          Chave.PERICIA_REFLEXOS,
+          Chave.REDUZ_METADE,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6385,12 +6354,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PREPARADO,
-          PalavraChave.INALACAO,
-          'AÇÃO COMPLETA',
-          'RECUPERA 2D4 PM',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
+          Chave.METODO_INOCULACAO_VENENO_INALACAO,
+          Chave.PERSONAGEM_MANA,
+          Chave.PERSONAGEM_MANA_REGENERAÇÃO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6420,12 +6389,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.DANO,
-          PalavraChave.MAGIA,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.DANO,
+          Chave.MAGIA,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6455,13 +6424,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.FRIO,
-          PalavraChave.MAGIA,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.TIPO_DANO_FRIO,
+          Chave.MAGIA,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6491,12 +6460,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.MISTICISMO,
-          PalavraChave.FORTITUDE,
-          PalavraChave.MAGIA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.PERICIA_MISTICISMO,
+          Chave.PERICIA_FORTITUDE,
+          Chave.MAGIA
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6526,13 +6495,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.CATALIZADOR,
-          PalavraChave.ELETRECIDADE,
-          PalavraChave.MAGIA,
-          PalavraChave.MISTICISMO
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
+          Chave.TIPO_DANO_ELETRECIDADE,
+          Chave.MAGIA,
+          Chave.PERICIA_MISTICISMO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6562,12 +6531,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.INALACAO,
-          'PARALISADA POR 1 RODADAS',
-          'SE RESISTIR LENTO POR 1 RODADAS',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_INALACAO,
+          Chave.CONDICAO_PARALISADO,
+          Chave.CONDICAO_LENTO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6597,10 +6566,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.CONTATO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_CONTATO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6630,10 +6599,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL, 
-          PalavraChave.VENENO, 
-          PalavraChave.CONTATO
+        chave: [
+          Chave.CONSUMIVEL, 
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO, 
+          Chave.METODO_INOCULACAO_VENENO_CONTATO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6663,11 +6632,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.VENENO,
-          PalavraChave.CONTATO,
-          PalavraChave.ENJOADO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
+          Chave.METODO_INOCULACAO_VENENO_CONTATO,
+          Chave.CONDICAO_ENJOADO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6697,10 +6666,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6730,11 +6699,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          'RECEBE 2PM TEMPORÁRIOS',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
+          Chave.PERSONAGEM_MANA_TEMPORARIO
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6764,11 +6733,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          'RECEBE 5PV TEMPORÁRIOS',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
+          Chave.PERSONAGEM_VIDA_TEMPORARIO
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6798,12 +6767,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          PalavraChave.CURA,
-          PalavraChave.VIDA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
+          Chave.PERICIA_CURA,
+          Chave.PERSONAGEM_VIDA
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6833,7 +6802,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.CONSUMIVEL, PalavraChave.DIA],
+        chave: [Chave.CONSUMIVEL, Chave.DIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
         tipo: TipoItem.ALIMENTACAO,
@@ -6862,7 +6831,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [PalavraChave.CONSUMIVEL, PalavraChave.DIA],
+        chave: [Chave.CONSUMIVEL, Chave.DIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
         tipo: TipoItem.ALIMENTACAO,
@@ -6891,12 +6860,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          PalavraChave.CURA,
-          PalavraChave.MANA
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
+          Chave.PERICIA_CURA,
+          Chave.PERSONAGEM_MANA
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -6926,12 +6895,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          PalavraChave.CARISMA,
-          PalavraChave.ENJOADO,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
+          Chave.ATRIBUTO_CARISMA,
+          Chave.CONDICAO_ENJOADO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6961,10 +6930,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -6994,11 +6963,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          'REDUZ CUSTO HABILIDADE EM -1PM',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -7028,10 +6996,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
@@ -7061,13 +7029,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          PalavraChave.CURA,
-          PalavraChave.VIDA,
-          PalavraChave.MANA,
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
+          Chave.PERICIA_CURA,
+          Chave.PERSONAGEM_VIDA,
+          Chave.PERSONAGEM_MANA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
@@ -7097,11 +7065,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          'VIDE DESCRIÇÃO',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
@@ -7131,12 +7098,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONSUMIVEL,
-          PalavraChave.PRATO_ESPECIAL,
-          PalavraChave.DIA,
-          'RECEBE +2 DIPLOMACIA CUMULATIVO COM OUTROS ITENS',
-          'RECEBE 5 PM TEMPORÁRIOS',
+        chave: [
+          Chave.CONSUMIVEL,
+          Chave.PRATO_ESPECIAL,
+          Chave.DIA,
+          Chave.PERICIA_DIPLOMACIA,
+          Chave.PERSONAGEM_MANA_TEMPORARIO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
@@ -7166,10 +7133,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          PalavraChave.CONTAINER,
-          PalavraChave.NAO_CONTA_COMO_VESTIDO,
-          PalavraChave.ANIMAL,
+        chave: [
+          Chave.CONTAINER,
+          Chave.NAO_CONTA_COMO_VESTIDO,
+          Chave.TIPO_ITEM_ANIMAL,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -7219,13 +7186,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'PERSEGUIDOR',
-          'REQUER TREINAMENTO ADESTRAMENTO',
-          'PARCEIRO',
-          'MONTARIA',
-          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_PERSEGUIDOR,
+          Chave.PERICIA_ADESTRAMENTO,
+          Chave.PARCEIRO_MONTARIA,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -7267,10 +7233,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -7312,10 +7278,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -7357,10 +7323,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -7402,10 +7368,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
@@ -7456,11 +7422,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'BESTA DE CARGA',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_BESTA_CARGA,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 163',
@@ -7502,11 +7468,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
@@ -7548,11 +7514,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
@@ -7594,11 +7560,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
@@ -7640,11 +7606,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
@@ -7686,11 +7652,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO', 'GRANDE SAVANA', 'DESERTO DA PERDIÇÃO', 'DOREHIMM' ,
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO, Chave.REGIAO_HALAK_TUR, Chave.REGIAO_UBANI, Chave.REGIAO_DOHERIMM ,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -7733,11 +7699,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO',
-          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -7780,11 +7746,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO', 'GRANDE SAVANA', 'DESERTO DA PERDIÇÃO',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO, Chave.REGIAO_HALAK_TUR, Chave.REGIAO_UBANI,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -7827,11 +7793,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO', 'REGIÕES ÁRIDAS', 'REGIÕES MONTANHOSAS',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO, Chave.TERRENO_DESERTO, Chave.TERRENO_MONTANHA,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -7874,11 +7840,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO',
-          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -7929,12 +7895,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO', 'GNOLL',
-          'PERSEGUIDOR', 'REQUER TREINAMENTO ADESTRAMENTO',
-          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO,
+          Chave.PARCEIRO_PERSEGUIDOR, Chave.PERICIA_ADESTRAMENTO,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -7977,11 +7943,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -8024,11 +7990,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -8071,11 +8037,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO', 'FLORESTAS FRIAS', 'CLIMA TEMPERADO', 'UIVANTES',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO, Chave.TERRENO_FLORESTA,  Chave.REGIAO_MONTANHAS_UIVANTES,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
@@ -8117,12 +8083,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'NOS CÉUS', 'VECTORA',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.TERRENO_CEU, Chave.REGIAO_VECTORA,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '210',
@@ -8164,9 +8130,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'BESTA DE CARGA',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_BESTA_CARGA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '210',
@@ -8208,12 +8174,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'NAMALKAH',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_NAMALKAH,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '213',
@@ -8255,12 +8221,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'MONTANHAS UIVANTES','PONTOS GELADOS DE ARTON',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES,
+          Chave.TERRENO_ARTICO,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '213',
@@ -8302,12 +8269,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'SELVAGEM',
-          'ASSASSINO',
-          'RARO', 'SELVAS','FLORESTAS ESCURAS', 'UIVANTES',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.PARCEIRO_ASSASSINO,
+          Chave.RARIDADE_RARO, Chave.TERRENO_FLORESTA, Chave.REGIAO_MONTANHAS_UIVANTES,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
@@ -8349,11 +8316,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'EXTREMAMENTE RARO', 'TAMU-RA',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.EXTREMAMENTE_RARO, Chave.REGIAO_TAMU_RA,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
@@ -8395,12 +8362,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'UIVANTES',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
@@ -8442,12 +8409,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'PÂNTANOS',
-          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.TERRENO_PANTANO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '220',
@@ -8489,12 +8455,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'KHUBAR',
-          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_KHUBAR,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '222',
@@ -8536,12 +8501,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'EXTREMAMENTE RARO', 'TAMU-RA',
-          'MONTADO PERSONAGEM PEQUENO MINÚSCULO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.EXTREMAMENTE_RARO, Chave.REGIAO_TAMU_RA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '222',
@@ -8583,12 +8547,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'GALRÁSIA', 'SANGUINÁRIAS',
-          'MONTADO PERSONAGEM GRANDE MÉDIO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.REGIAO_MONTANHAS_SANGUINARIAS,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '224',
@@ -8630,12 +8593,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'LAMNOR', 'SANGUINÁRIAS', 'ERMOS SELVAGENS',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_LAMNOR, Chave.REGIAO_MONTANHAS_SANGUINARIAS,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '225',
@@ -8678,12 +8641,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'MUITO RARO', 'BOSQUES REMOTOS', 'FLORESTAS REMOTAS',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.MUITO_RARO, Chave.TERRENO_FLORESTA,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '226 E 227',
@@ -8725,12 +8688,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'PÂNTANOS',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.TERRENO_PANTANO,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '36',
@@ -8773,12 +8736,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'CONTA COMO DOIS PARCEIROS',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.PARCEIRO_CONTA_COMO_DOIS,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '67',
@@ -8820,12 +8783,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'SELVAGEM',
-          'RARO', 'GALRÁSIA',
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.PARCEIRO_SELVAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '67',
@@ -8867,12 +8830,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'NÃO NATURAL',
-          'RECOMPENSA DEVOTOS DE KALLY' ,
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.DEVOTO,
+          Chave.DEUS_KALLYADRANOCH
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '148',
@@ -8914,10 +8877,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'TAMU-RA' ,
-          'GUARDIÃO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_TAMU_RA ,
+          Chave.PARCEIRO_GUARDIAO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '155',
@@ -8959,11 +8922,11 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'MONTARIA',
-          'RARO', 'TAMU-RA' ,
-          'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PARCEIRO_MONTARIA,
+          Chave.RARIDADE_RARO, Chave.REGIAO_TAMU_RA ,
+          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '155',
@@ -9005,9 +8968,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO', 'FORTÃO',
-          'RARO', 'KOBOLDS'
+        chave: [
+          Chave.PARCEIRO, Chave.PARCEIRO_FORTAO,
+          Chave.RARIDADE_RARO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '179',
@@ -9049,9 +9012,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO', 'COMPANHEIRO ANIMAL',
-          'RARO', 'DRUIDA', 'ALLIHANNA' ,
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.CLASSE_DRUIDA, Chave.DEUS_ALLIHANNA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '190',
@@ -9093,9 +9056,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO', 'FORTÃO',
-          'RARO',
+        chave: [
+          Chave.PARCEIRO, Chave.PARCEIRO_FORTAO,
+          Chave.RARIDADE_RARO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '190',
@@ -9137,9 +9100,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'GUARDIÃO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.PARCEIRO_GUARDIAO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '192',
@@ -9181,9 +9144,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'VIGILANTE'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.PARCEIRO_VIGILANTE
         ],
         referencias: Referencia.AMEACAS,
         paginas: '192',
@@ -9225,9 +9188,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'ABISSAL', 'AJUDANTE'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.TIPO_CRIATURA_ABISSAL, Chave.PARCEIRO_AJUDANTE
         ],
         referencias: Referencia.AMEACAS,
         paginas: '193',
@@ -9269,9 +9232,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'DOHERIMM', 'PERSEGUIDOR'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_DOHERIMM, Chave.PARCEIRO_PERSEGUIDOR
         ],
         referencias: Referencia.AMEACAS,
         paginas: '194',
@@ -9313,9 +9276,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'DEHEON', 'VIGILANTE'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_DEHEON, Chave.PARCEIRO_VIGILANTE
         ],
         referencias: Referencia.AMEACAS,
         paginas: '194',
@@ -9357,9 +9320,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'COPAS DE ARVORES DE FLORESTAS', 'VIGILANTE'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.TERRENO_FLORESTA, Chave.PARCEIRO_VIGILANTE
         ],
         referencias: Referencia.AMEACAS,
         paginas: '195',
@@ -9401,9 +9364,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'APENAS DEVOTOS DE KHALMYR', 'VIGILANTE'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, 
+          Chave.DEVOTO,
+          Chave.DEUS_KHALMYR,
+          Chave.PARCEIRO_VIGILANTE
         ],
         referencias: Referencia.AMEACAS,
         paginas: '196 E 197',
@@ -9445,9 +9411,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'APENAS DEVOTOS DE NIMB', 'AJUDANTE'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, 
+          Chave.DEVOTO, 
+          Chave.DEUS_NIMB,
+          Chave.PARCEIRO_AJUDANTE
         ],
         referencias: Referencia.AMEACAS,
         paginas: '196 E 197',
@@ -9489,9 +9458,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'MASMORRAS', 'ASSASSINA'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.TERRENO_MASMORRA, Chave.PARCEIRO_ASSASSINO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '198',
@@ -9533,9 +9502,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'ADEPTO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.PARCEIRO_ADEPTO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '199',
@@ -9577,9 +9546,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '199',
@@ -9621,9 +9590,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '229',
@@ -9665,9 +9634,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM PEQUENO MINÚSCULO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '244',
@@ -9709,9 +9678,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '246',
@@ -9753,9 +9722,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '246',
@@ -9797,9 +9766,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'GALRASIA', 'MONTARIA', 'MONTADO PERSONAGEM GRAMDE MÉDIO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '249',
@@ -9841,10 +9810,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'PILOTAGEM',
-          'RARO', 'SUPREMACIA PURISTA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.PERICIA_PILOTAGEM,
+          Chave.RARIDADE_RARO, Chave.REGIAO_SUPREMACIA_PURISTA, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '277',
@@ -9886,9 +9855,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'MOREANIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_MOREANIA, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '296',
@@ -9930,9 +9899,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'MOREANIA', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_MOREANIA, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '297 E 298',
@@ -9974,9 +9943,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'OCEANO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.TERRENO_AQUATICO, Chave.PARCEIRO_MONTARIA
         ],
         referencias: Referencia.AMEACAS,
         paginas: '322',
@@ -10018,9 +9987,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'OCEANO', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.TERRENO_AQUATICO, Chave.PARCEIRO_MONTARIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '322',
@@ -10062,9 +10031,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'SSZZAAS', 'ASSASSINO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.DEUS_SSZZAAS, Chave.PARCEIRO_ASSASSINO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '328',
@@ -10106,9 +10075,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'PERSEGUIDOR'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.PARCEIRO_PERSEGUIDOR
         ],
         referencias: Referencia.AMEACAS,
         paginas: '343',
@@ -10150,9 +10119,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'UIVANTES', 'FORTÃO'
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_FORTAO
         ],
         referencias: Referencia.AMEACAS,
         paginas: '348',
@@ -10194,9 +10163,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'UIVANTES', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '348',
@@ -10238,9 +10207,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [
-          'PARCEIRO',
-          'RARO', 'UIVANTES', 'MONTARIA', 'MONTADO PERSONAGEM MÉDIO PEQUENO',
+        chave: [
+          Chave.PARCEIRO,
+          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_MONTARIA, 
         ],
         referencias: Referencia.AMEACAS,
         paginas: '348',
@@ -10273,7 +10242,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.VEICULO, PalavraChave.VOO],
+        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.VOO],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.VEICULO,
@@ -10306,9 +10275,9 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ 
-          PalavraChave.VEICULO, 
-          PalavraChave.TERRESTRE
+        chave: [ 
+          Chave.TIPO_ITEM_VEICULO, 
+          Chave.TERRESTRE
         ],
         referencias: Referencia.BASICO,
         paginas: '163',
@@ -10342,10 +10311,10 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ 
-          PalavraChave.VEICULO, 
-          PalavraChave.TERRESTRE, 
-          PalavraChave.COBERTURA_LEVE
+        chave: [ 
+          Chave.TIPO_ITEM_VEICULO, 
+          Chave.TERRESTRE, 
+          Chave.COBERTURA_LEVE
         ],
         referencias: Referencia.BASICO,
         paginas: '163',
@@ -10379,7 +10348,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.VEICULO, PalavraChave.NATACAO],
+        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.VEICULO,
@@ -10412,7 +10381,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.VEICULO, PalavraChave.NATACAO],
+        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.VEICULO,
@@ -10446,7 +10415,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.ESTADIA],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10480,7 +10449,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.ESTADIA ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10514,7 +10483,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.ESTADIA ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10548,7 +10517,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.CONDUCAO ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10582,7 +10551,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.CONDUCAO ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10616,7 +10585,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.CONDUCAO ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10650,7 +10619,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.CURA],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.PERICIA_CURA],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10684,7 +10653,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO],
+        chave: [ Chave.TIPO_ITEM_SERVICO],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10718,7 +10687,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.MAGIA ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10752,7 +10721,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.MAGIA ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10786,7 +10755,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.SERVICO, PalavraChave.MAGIA ],
+        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.SERVICO,
@@ -10820,7 +10789,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMADURA ],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA ],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -10854,7 +10823,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.FERRAMENTA, PalavraChave.VESTUARIO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -10889,7 +10858,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -10924,7 +10893,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -10958,7 +10927,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.VESTUARIO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -10992,7 +10961,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ESOTERICO ],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -11026,7 +10995,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA ],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -11060,7 +11029,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -11094,7 +11063,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMADURA, PalavraChave.ESCUDO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -11128,7 +11097,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA,PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA,Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '164',
         tipo: TipoItem.MELHORIA,
@@ -11162,7 +11131,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ESOTERICO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11196,7 +11165,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11230,7 +11199,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMADURA],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11264,7 +11233,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ESCUDO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11298,7 +11267,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11332,7 +11301,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ESOTERICO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11366,7 +11335,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11400,7 +11369,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11434,7 +11403,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [ PalavraChave.MELHORIA, PalavraChave.ARMA],
+        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11468,7 +11437,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '165',
         tipo: TipoItem.MELHORIA,
@@ -11502,7 +11471,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11536,7 +11505,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11570,7 +11539,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMADURA, PalavraChave.ESCUDO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11604,7 +11573,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11638,7 +11607,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMADURA, PalavraChave.ESCUDO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11672,7 +11641,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMADURA, PalavraChave.ESCUDO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11680,7 +11649,7 @@ export class ItemData {
       {
         id: 316,
         id_prerequisitos: 290,
-        nome: PalavraChave.SOB_MEDIDA,
+        nome: Chave.SOB_MEDIDA,
         descricao: `Embora muitas armaduras sejam feitas especificamente para um usuário, esta passou por um período extenso de ajustes e refinamento, adequando-se com perfeição ao seu corpo. Reduz a penalidade por armadura em 2, mas apenas para o usuário específico (para outros, comporta-se como um item ajustado). Pré-requisito: Ajustada.`,
         descricao_extra: ``,
         preco: 0,
@@ -11707,14 +11676,14 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMADURA, PalavraChave.ESCUDO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
       },
       {
         id: 317,
-        nome: 'Vigilante',
+        nome: Chave.PARCEIRO_VIGILANTE,
         descricao: `O item usa parte de sua mana pessoal para gerar um campo que desvia ataques. Você recebe +2 na Defesa.`,
         descricao_extra: ``,
         preco: 0,
@@ -11741,7 +11710,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11775,7 +11744,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.FERRAMENTA, PalavraChave.VESTUARIO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11810,7 +11779,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.FERRAMENTA, PalavraChave.VESTUARIO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MELHORIA,
@@ -11848,7 +11817,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -11886,7 +11855,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -11924,7 +11893,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -11961,7 +11930,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -11999,7 +11968,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '167',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12037,7 +12006,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '167',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12075,7 +12044,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12113,7 +12082,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12150,7 +12119,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12188,7 +12157,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA , PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO],
+        chave: [  Chave.TIPO_ITEM_MELHORIA , Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.AMEACAS,
         paginas: '400',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12226,7 +12195,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12264,7 +12233,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12302,7 +12271,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
         tipo: TipoItem.MATERIAL_ESPECIAL,
@@ -12340,7 +12309,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        traco: [  PalavraChave.MELHORIA, PalavraChave.ARMA, PalavraChave.ARMADURA, PalavraChave.ESCUDO, PalavraChave.ESOTERICO ],
+        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '401',
         tipo: TipoItem.MATERIAL_ESPECIAL,

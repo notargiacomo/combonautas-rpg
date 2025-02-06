@@ -1,3 +1,5 @@
+import { Chave } from "../enum/chave.enum";
+
 export interface Item {
     id:number;
     id_prerequisitos?: number;
@@ -33,7 +35,7 @@ export interface Item {
     margem_ameaca?:number;
     alcance?:number;
     penalidade?:number;
-    traco:string[];
+    chave:Chave[];
     imagem?:string;
     referencias?:string;
     paginas?:string;
