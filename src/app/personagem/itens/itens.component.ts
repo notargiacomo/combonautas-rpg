@@ -136,8 +136,8 @@ export class ItensComponent implements AfterViewInit {
   }
 
   carregaChaves(){
-    console.log(this.chaves.length);
-    if(this.chaves.length === 0){
+    let filtro = this.form.value;
+    if(this.chaves.length === 0 || filtro.tipo ){
       this.chaves = [];
       this.chaves = [...new Set(this.objetos.flatMap(item => item.chave))];
       this.chaves = this.chaves.sort((a, b) => {
