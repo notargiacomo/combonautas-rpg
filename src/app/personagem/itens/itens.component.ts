@@ -60,6 +60,8 @@ export class ItensComponent implements AfterViewInit {
   tipos = Object.values(TipoItem);
   chaves: Chave[] = [];
 
+  selecaoChave: boolean = false;
+
   numero_registros = 0;
   filtro_traco: string = '';
 
@@ -79,25 +81,21 @@ export class ItensComponent implements AfterViewInit {
   }
 
   ngOnInit() {
-    
-
-    // console.log(Object.keys(Chave).filter(chave => chave.startsWith("ARMA_")));
-    
-
     this.form = this.fb.group({
       nome: [''],
       chave: [''],
       tipo: [''],
     });
 
-    this.consultar();
+    this.consultar(false);
   }
 
   seleciona(objeto: Item) {
     this.objeto = objeto;
   }
 
-  consultar(): void {
+  consultar(selecaoChave: boolean): void {
+    this.selecaoChave = selecaoChave;
     let filtro = { ...this.form.value };
     if (filtro.nome) {
       // regex - in-memory-web-api
@@ -122,7 +120,6 @@ export class ItensComponent implements AfterViewInit {
         });
         this.objetos = response;
         this.numero_registros = response.length;
-        this.carregaChaves();
       },
       error: (response) => {
         console.log(response);
@@ -131,15 +128,15 @@ export class ItensComponent implements AfterViewInit {
         this.dataSource = new MatTableDataSource(this.objetos);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
+        this.carregaChaves();
       },
     });
   }
 
-  carregaChaves(){
-    let filtro = this.form.value;
-    if(this.chaves.length === 0 || filtro.tipo ){
+  carregaChaves() {
+    if (!this.selecaoChave) {
       this.chaves = [];
-      this.chaves = [...new Set(this.objetos.flatMap(item => item.chave))];
+      this.chaves = [...new Set(this.objetos.flatMap((item) => item.chave))];
       this.chaves = this.chaves.sort((a, b) => {
         return a.localeCompare(b);
       });
@@ -185,15 +182,17 @@ export class ItensComponent implements AfterViewInit {
     });
   }
 
-    chaveToString(chave:Chave): string{
-      let chaveEncontrada = Object.keys(Chave).find(key => Chave[key as keyof typeof Chave] === chave);
-      return chaveEncontrada? chaveEncontrada.split("_").join(" "): "";
-    }
+  chaveToString(chave: Chave): string {
+    let chaveEncontrada = Object.keys(Chave).find(
+      (key) => Chave[key as keyof typeof Chave] === chave
+    );
+    return chaveEncontrada ? chaveEncontrada.split('_').join(' ') : '';
+  }
 
   limparFiltros() {
     this.objeto = undefined;
     this.form.reset();
-    this.consultar();
+    this.consultar(false);
   }
 
   eArma(objeto: Item): boolean {

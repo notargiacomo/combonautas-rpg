@@ -16,7 +16,7 @@
                 formControlName="nome"
                 matInput
                 type="text"
-                (keyup)="consultar()"
+                (keyup)="consultar(false)"
               />
             </mat-form-field>
           </div>
@@ -25,7 +25,7 @@
               <mat-label>Tipo</mat-label>
               <mat-select
                 formControlName="tipo"
-                (selectionChange)="consultar()"
+                (selectionChange)="consultar(false)"
               >
                 @for (tipo of tipos; track tipo) {
                 <mat-option [value]="tipo">{{ tipo }}</mat-option>
@@ -34,11 +34,11 @@
             </mat-form-field>
           </div>
           <div class="col-sm-6 mt-4">
-            <mat-form-field class="select-dobrado">
+            <mat-form-field class="select-dobrado" >
               <mat-label>Chave</mat-label>
               <mat-select
                 formControlName="chave"
-                (selectionChange)="consultar()"
+                (selectionChange)="consultar(true)"
               >
                 @for (chave of chaves; track chave) {
                 <mat-option [value]="chave" >{{ 
