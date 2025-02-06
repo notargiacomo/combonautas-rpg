@@ -136,11 +136,14 @@ export class ItensComponent implements AfterViewInit {
   }
 
   carregaChaves(){
-    this.chaves = [];
-    this.chaves = [...new Set(this.objetos.flatMap(item => item.chave))];
-    this.chaves = this.chaves.sort((a, b) => {
-      return a.localeCompare(b);
-    });
+    console.log(this.chaves.length);
+    if(this.chaves.length === 0){
+      this.chaves = [];
+      this.chaves = [...new Set(this.objetos.flatMap(item => item.chave))];
+      this.chaves = this.chaves.sort((a, b) => {
+        return a.localeCompare(b);
+      });
+    }
   }
 
   consultarTracosTodosItens(itens: Item[]): Item[] {
