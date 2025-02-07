@@ -396,6 +396,15 @@ tr.element-row:not(.expanded-row):active {
   padding: 16px !important;           /* Espaçamento interno */
 }
 
+.mat-mdc-dialog-surface .card-padrao {
+  min-height: max-content;
+  border: 2px solid rgb(228, 176, 100);
+  background-color: rgb(132, 26, 18) !important;
+  color: white !important;
+  border-radius: 16px !important;      /* Arredondamento */
+  padding: 16px !important;           /* Espaçamento interno */
+}
+
 .mat-mdc-dialog-surface table {
   border-collapse: collapse !important;
   width: 100% !important;
@@ -465,6 +474,11 @@ table {
   }
 
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    margin: 1% !important;
+    max-width: 98% !important;
+  }
+
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl .container-ficha {
     margin: 1% !important;
     max-width: 98% !important;
   }
