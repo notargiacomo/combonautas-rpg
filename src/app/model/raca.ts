@@ -15,6 +15,7 @@ export interface Raca {
   // atributos?: Atributos,
   sentidos?: string[],
   deslocamentos?: string[],
+  formulas?: string[],
   referencias?: string,
   paginas?: string
 

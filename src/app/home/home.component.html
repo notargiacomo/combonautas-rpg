@@ -1,25 +1,125 @@
-<div class="container">
-    <div class="row"  style="height: 500px !important">
-      <div class="col-sm-3">
-        <mat-card class="card-padrao" style="height: 500px !important">
-          <div class="row">
-            <div class="col-sm-12">
-              <h5><b>PERSONAGENS </b></h5>
-              <hr />
-            </div>
+<div class="container py-4">
+  <div class="row" style="height: 500px !important">
+    <div class="col-sm-3">
+      <mat-card class="card-padrao" style="height: 500px !important">
+        <div class="row">
+          <div class="col-sm-12">
+            <h5><b>PERSONAGENS </b></h5>
+            <hr />
           </div>
-        </mat-card>
-      </div>
-      <div class="col-sm-9">
-        <mat-card class="card-padrao" style="height: 500px !important">
-          <div class="row">
-            <div class="col-sm-12">
-              <h5><b>FICHA DO PERSONAGEM: </b></h5>
-              <hr />
-            </div>
-          </div>
-        </mat-card>
-      </div>
+        </div>
+      </mat-card>
     </div>
-    
+    <div class="col-sm-9">
+      <mat-card class="card-padrao" style="height: 500px !important">
+        <div class="row">
+          <div class="col-sm-6">
+            <h5><b>FICHA DO PERSONAGEM: </b></h5>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-end">
+            <strong>{{ "PONTOS: " + personagem.pontos }}</strong>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <hr />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm-1">
+            <div class="avatar-container">
+              <img
+                src="/assets/avatar-placeholder.png"
+                alt="Avatar"
+                class="rounded-circle"
+                width="50"
+                height="50"
+              />
+            </div>
+          </div>
+          <div class="col-sm-11">
+            <div class="row">
+              <div class="col-sm-2">
+                <button class="btn btn-sm btn-outline-secondary">
+                  <strong>RAÇA</strong>
+                </button>
+              </div>
+              <div class="col-sm-2">
+                <button class="btn btn-sm btn-outline-secondary">
+                  <strong>ORIGEM</strong>
+                </button>
+              </div>
+              <div class="col-sm-4 d-flex">
+                <span>CLASSE(S)</span>
+                <button class="btn btn-sm btn-outline-secondary ms-2">+</button>
+              </div>
+              <div class="col-sm-2 d-flex">
+                <button class="btn btn-sm btn-outline-secondary ms-2">
+                  <strong>DIVINDADE</strong>
+                </button>
+              </div>
+              <div class="col-sm-2">
+                <strong>{{ "NÍVEL: " + personagem.nivel }}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="row align-items-center">
+              <div class="col-sm-2">
+                <div class="row text-center">
+                  <strong style="font-size: x-large !important;">FOR</strong>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div>
+                          <button style="width: 25px !important;   border: 1px solid rgb(228, 176, 100);" 
+                          (click)="personagem.calculaPontos('for', personagem.atributos.for_comprada+1)">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <button style="width: 25px !important;border: 1px solid rgb(228, 176, 100);" (click)="personagem.calculaPontos('for', personagem.atributos.for_comprada-1)">-</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <input style="height: 55px !important; width: 48px !important; font-size: xx-large !important; text-align: center; border: 1px solid rgb(228, 176, 100);"
+                      size="1"
+                      [value]="personagem.atributos.for"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="d-flex">
+                      <input style="width: 25px !important; height: 25px !important;font-size: small !important; text-align: center; border: 1px solid rgb(228, 176, 100);" value="0" size="1" [value]="personagem.atributos.for_comprada" disabled/>
+                      <input style="width: 25px !important; height: 25px !important;font-size: small !important; text-align: center; border: 1px solid rgb(228, 176, 100);" value="0" size="1" [value]="personagem.atributos.for_racial" disabled/>
+                      <input style="width: 25px !important; height: 25px !important;font-size: small !important; text-align: center; border: 1px solid rgb(228, 176, 100);" value="0" size="1" [value]="personagem.atributos.for_bonus" disabled/>
+                    </div>
+
+                  <div class="col-sm-4 ">
+                  </div>
+                  <div class="col-sm-4">
+                  </div>
+                  <div class="col-sm-4">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
 </div>
