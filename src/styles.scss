@@ -458,3 +458,8 @@ table {
   .mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
     background-color: white;
   }
+
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    margin: 1% !important;
+    max-width: 98% !important;
+  }
