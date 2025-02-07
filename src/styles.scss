@@ -483,18 +483,22 @@ table {
     max-width: 98% !important;
   }
 
-  mat-row:nth-child(odd) {
+  mat-row:nth-child(even) {
     background-color: rgb(204, 204, 204)  !important; /* Cinza claro */
   }
   
-  mat-row:nth-child(even) {
+  mat-row:nth-child(odd) {
     background-color: #ffffff !important; /* Branco */
   }
 
-  .mat-mdc-table tr:nth-child(odd) {
+  .mat-mdc-table tr:nth-child(even) {
     background-color: rgb(204, 204, 204) !important;
   }
   
-  .mat-mdc-table tr:nth-child(even) {
+  .mat-mdc-table tr:nth-child(odd) {
     background-color: #ffffff !important;
+  }
+
+  .mat-mdc-table th {
+    background-color: rgb(204, 204, 204) !important;
   }
