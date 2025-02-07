@@ -371,6 +371,11 @@ tr.element-row:not(.expanded-row):active {
   max-height: 500px !important;
 }
 
+.mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+  font-family: "Oswald" !important;
+  font-size: 12pt !important;
+}
+
 .mat-mdc-dialog-surface {
   border: 2px solid rgb(228, 176, 100);
   background-color: rgb(60, 60, 60) !important;
