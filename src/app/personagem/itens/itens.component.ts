@@ -1,5 +1,5 @@
-import { NgFor } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { NgFor, NgIf } from '@angular/common';
+import { AfterViewInit, Component, inject, ViewChild } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -19,6 +19,13 @@ import { TipoItem } from '../../enum/tipo.item.enum';
 import { CaixaInformativaComponent } from '../../components/caixa-informativa.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Regras } from '../../enum/regras.enum';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { Chave } from '../../enum/chave.enum';
 
 @Component({
   selector: 'app-itens',
@@ -26,75 +33,69 @@ import { Regras } from '../../enum/regras.enum';
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
-    NgFor, //NgIf,
+    //NgFor,
+    NgIf,
+    MatIconModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
     MatRadioModule,
     MatButtonModule,
+    MatTableModule,
+    MatSelectModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
   ],
   templateUrl: './itens.component.html',
   styleUrl: './itens.component.scss',
 })
-export class ItensComponent {
-  form!: FormGroup;
-  armas!: Item[];
-  municoes!: Item[];
-  armaduras!: Item[];
-  equipamentos_aventura!: Item[];
-  ferramentas!: Item[];
-  vestuarios!: Item[];
-  esotericos!: Item[];
-  alquimicos!: Item[];
-  alimentos!: Item[];
-  animais!: Item[];
-  veiculos!: Item[];
-  servicos!: Item[];
-  melhorias!: Item[];
-  materiais_especiais!: Item[];
+export class ItensComponent implements AfterViewInit {
+  displayedColumns: string[] = ['nome', 'tipo', 'acao'];
 
-  numero_registros_armas = 0;
-  numero_registros_municoes = 0;
-  numero_registros_armadura = 0;
-  numero_registros_equipamento_aventura = 0;
-  numero_registros_ferramenta = 0;
-  numero_registros_vestuario = 0;
-  numero_registros_esoterico = 0;
-  numero_registros_alquimico = 0;
-  numero_registros_alimento = 0;
-  numero_registros_animal = 0;
-  numero_registros_veiculo = 0;
-  numero_registros_servico = 0;
-  numero_registros_melhoria = 0;
-  numero_registros_material_especial = 0;
+  form!: FormGroup;
+  objetos!: Item[];
+  objeto: Item | undefined;
+  tipos = Object.values(TipoItem);
+  chaves: Chave[] = [];
+
+  selecaoChave: boolean = false;
+
+  numero_registros = 0;
   filtro_traco: string = '';
 
+  dataSource = new MatTableDataSource<Item>();
+
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+
+  @ViewChild(MatSort)
+  sort!: MatSort;
+
   constructor(private readonly service: ItemService, private fb: FormBuilder) {}
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
 
   ngOnInit() {
     this.form = this.fb.group({
       nome: [''],
-      tracos: [''],
+      chave: [''],
+      tipo: [''],
     });
 
-    this.consultar(0);
-    this.consultar(1);
-    this.consultar(2);
-    this.consultar(3);
-    this.consultar(4);
-    this.consultar(5);
-    this.consultar(6);
-    this.consultar(7);
-    this.consultar(8);
-    this.consultar(9);
-    this.consultar(10);
-    this.consultar(11);
-    this.consultar(12);
-    this.consultar(13);
+    this.consultar(false);
   }
 
-  consultar(idTipo: number): void {
+  seleciona(objeto: Item) {
+    this.objeto = objeto;
+  }
+
+  consultar(selecaoChave: boolean): void {
+    this.selecaoChave = selecaoChave;
     let filtro = { ...this.form.value };
     if (filtro.nome) {
       // regex - in-memory-web-api
@@ -106,83 +107,39 @@ export class ItensComponent {
       this.filtro_traco = this.form.value.tracos;
     }
 
-    this.consultarTodos(idTipo, filtro);
+    this.consultarTodos(filtro);
   }
 
-  consultarTodos(idTipo: number, filtro: string) {
-    (filtro as any).tipo = Object.values(TipoItem)[idTipo];
-
+  consultarTodos(filtro: string) {
     this.service.listar(filtro).subscribe({
       next: (response) => {
-        if ((filtro as any).tipo === TipoItem.ARMA) {
-          this.armas = response;
-          this.numero_registros_armas = this.armas?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.MUNICAO) {
-          this.municoes = response;
-          this.numero_registros_municoes = this.municoes?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.ARMADURA) {
-          this.armaduras = response;
-          this.numero_registros_armadura = this.armaduras?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.EQUIPAMENTO_AVENTURA) {
-          this.equipamentos_aventura = response;
-          this.numero_registros_equipamento_aventura =
-            this.equipamentos_aventura?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.FERRAMENTA) {
-          this.ferramentas = response;
-          this.numero_registros_ferramenta = this.ferramentas?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.VESTUARIO) {
-          this.vestuarios = response;
-          this.numero_registros_vestuario = this.vestuarios?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.ESOTERICO) {
-          this.esotericos = response;
-          this.numero_registros_esoterico = this.esotericos?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.ALQUIMICO) {
-          this.alquimicos = response;
-          this.numero_registros_alquimico = this.alquimicos?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.ALIMENTACAO) {
-          this.alimentos = response;
-          this.numero_registros_alimento = this.alimentos?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.ANIMAIS) {
-          this.animais = response;
-          this.numero_registros_animal = this.animais?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.VEICULOS) {
-          this.veiculos = response;
-          this.numero_registros_veiculo = this.veiculos?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.SERVICOS) {
-          this.servicos = response;
-          this.numero_registros_servico = this.servicos?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.MELHORIAS) {
-          this.melhorias = response;
-          this.numero_registros_melhoria = this.melhorias?.length;
-        }
-        if ((filtro as any).tipo === TipoItem.MATERIAIS_ESPECIAIS) {
-          this.materiais_especiais = response;
-          this.numero_registros_material_especial = this.materiais_especiais?.length;
-        }
+        response.sort((a, b) => {
+          let nome_a = a.nome ? a.nome : 'a';
+          let nome_b = b.nome ? b.nome : 'b';
+          return nome_a.localeCompare(nome_b);
+        });
+        this.objetos = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);
       },
-      complete: () => {},
+      complete: () => {
+        this.dataSource = new MatTableDataSource(this.objetos);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+        this.carregaChaves();
+      },
     });
   }
 
-  consultaTracos(tipo: TipoItem) {
-    if (tipo === TipoItem.ARMA) {
-      this.armas = this.consultarTracosTodosItens(this.armas);
-      this.numero_registros_armas = this.armas.length;
+  carregaChaves() {
+    if (!this.selecaoChave) {
+      this.chaves = [];
+      this.chaves = [...new Set(this.objetos.flatMap((item) => item.chave))];
+      this.chaves = this.chaves.sort((a, b) => {
+        return a.localeCompare(b);
+      });
     }
   }
 
@@ -190,7 +147,7 @@ export class ItensComponent {
     let itens_filtrado: Item[] = [];
     if (this.filtro_traco.length !== 0) {
       itens.forEach((arma) => {
-        arma.tracos?.forEach((traco) => {
+        arma.chave?.forEach((traco) => {
           if (
             traco
               .toLowerCase()
@@ -214,9 +171,8 @@ export class ItensComponent {
     return itens_filtrado;
   }
 
-  
   readonly dialog = inject(MatDialog);
-    
+
   openDialog(titulo: string, idTexto: number) {
     this.dialog.open(CaixaInformativaComponent, {
       data: {
@@ -226,5 +182,72 @@ export class ItensComponent {
     });
   }
 
+  chaveToString(chave: Chave): string {
+    let chaveEncontrada = Object.keys(Chave).find(
+      (key) => Chave[key as keyof typeof Chave] === chave
+    );
+    return chaveEncontrada ? chaveEncontrada.split('_').join(' ') : '';
+  }
 
+  limparFiltros() {
+    this.objeto = undefined;
+    this.form.reset();
+    this.consultar(false);
+  }
+
+  eArma(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ARMA;
+  }
+
+  eMunicao(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.MUNICAO;
+  }
+
+  eArmadura(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ARMADURA;
+  }
+
+  eEquipamento(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.EQUIPAMENTO_AVENTURA;
+  }
+
+  eFerramenta(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.FERRAMENTA;
+  }
+
+  eVestuario(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.VESTUARIO;
+  }
+
+  eEsoterico(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ESOTERICO;
+  }
+
+  eAlquimico(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ALQUIMICO;
+  }
+
+  eAlimentacao(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ALIMENTACAO;
+  }
+
+  eAnimal(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ANIMAL;
+  }
+
+  eVeiculo(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.VEICULO;
+  }
+
+  eServico(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.SERVICO;
+  }
+
+  eMelhoria(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.MELHORIA;
+  }
+
+  eMaterialEspecial(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.MATERIAL_ESPECIAL;
+  }
 }

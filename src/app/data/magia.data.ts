@@ -5,7 +5,7 @@ import { CirculoMagia } from '../enum/circulo.magia.enum';
 import { DuracaoMagia } from '../enum/duracao.magia.enum';
 import { EscolasMagia } from '../enum/escolas.magia.enum';
 import { ExecucaoMagia } from '../enum/execucao.magia.enum';
-import { PalavraChave } from '../enum/palavra.chave.enum';
+import { Chave } from '../enum/chave.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { Resistencia } from '../enum/resistencia.enum';
 import { ResistenciaMagia } from '../enum/resistencia.magia.enum';
@@ -62,7 +62,7 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.TRUQUE],
+            tracos: [Chave.TRUQUE],
           },
           {
             id: 2,
@@ -79,7 +79,7 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
           },
           {
             id: 3,
@@ -99,7 +99,7 @@ export class MagiaData {
             duracao: DuracaoMagia.PERMANENTE,
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [DuracaoMagia.PERMANENTE, PalavraChave.COMPONENTE_MATERIAL],
+            tracos: [DuracaoMagia.PERMANENTE, Chave.COMPONENTE_MATERIAL],
           },
         ],
       },
@@ -143,7 +143,7 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.ALCANCE_MEDIO],
+            tracos: [Chave.ALCANCE_MEDIO],
           },
           {
             id: 2,
@@ -180,7 +180,7 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
           },
           {
             id: 4,
@@ -247,7 +247,7 @@ export class MagiaData {
             duracao: DuracaoMagia.INSTANTANEA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.DISCRETA],
+            tracos: [Chave.DISCRETA],
           },
           {
             id: 2,
@@ -284,7 +284,7 @@ export class MagiaData {
             duracao: DuracaoMagia.DIA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
           },
         ],
       },
@@ -365,7 +365,7 @@ export class MagiaData {
             duracao: DuracaoMagia.DIA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.PARALISADO],
+            tracos: [Chave.CONDICAO_PARALISADO],
           },
         ],
       },
@@ -427,7 +427,7 @@ export class MagiaData {
             duracao: DuracaoMagia.DIA,
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.MESTRE],
+            tracos: [Chave.MESTRE],
           },
           {
             id: 3,
@@ -599,7 +599,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -730,7 +730,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -753,7 +753,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -776,7 +776,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.TERCEIRO_CIRCULO],
+            tracos: [Chave.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -935,7 +935,7 @@ export class MagiaData {
             tracos: [
               AlcanceMagia.MEDIO,
               AlvoMagia.AREA,
-              PalavraChave.CRIATURAS_ESCOLHIDAS,
+              Chave.CRIATURAS_ESCOLHIDAS,
             ],
             aumenta: 0,
           },
@@ -1007,7 +1007,7 @@ export class MagiaData {
             maneira_resistencia: '',
             tracos: [
               AlvoMagia.AREA,
-              PalavraChave.COMPONENTE_MATERIAL,
+              Chave.COMPONENTE_MATERIAL,
               DuracaoMagia.PERMANENTE,
             ],
             aumenta: 0,
@@ -1035,7 +1035,7 @@ export class MagiaData {
             tracos: [
               AlcanceMagia.MEDIO,
               AlvoMagia.AREA,
-              PalavraChave.CRIATURAS_ESCOLHIDAS,
+              Chave.CRIATURAS_ESCOLHIDAS,
             ],
             aumenta: 0,
           },
@@ -1145,7 +1145,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -1336,7 +1336,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -1459,7 +1459,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -1528,7 +1528,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -1605,7 +1605,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -1728,7 +1728,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -1851,7 +1851,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -1874,7 +1874,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -2088,7 +2088,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -2146,7 +2146,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA, AlcanceMagia.MAIOR],
+            tracos: [Chave.AUMENTA, AlcanceMagia.MAIOR],
             aumenta: 0,
           },
           {
@@ -2215,7 +2215,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -2420,7 +2420,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -2661,7 +2661,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -2738,7 +2738,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -3029,7 +3029,7 @@ export class MagiaData {
             tracos: [
               ExecucaoMagia.DIA,
               AlcanceMagia.ILIMITADO,
-              PalavraChave.COMPONENTE_MATERIAL,
+              Chave.COMPONENTE_MATERIAL,
             ],
             aumenta: 0,
           },
@@ -3084,7 +3084,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -3184,7 +3184,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA, AlvoMagia.AREA],
+            tracos: [Chave.AUMENTA, AlvoMagia.AREA],
             aumenta: 0,
           },
         ],
@@ -5049,7 +5049,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -5221,7 +5221,7 @@ export class MagiaData {
             efeito: '1 criatura conjurada',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -5562,7 +5562,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -5646,7 +5646,7 @@ export class MagiaData {
             efeito: 'elemento escolhido',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -5698,7 +5698,7 @@ export class MagiaData {
             efeito: 'alvo 1 criatura ou objeto',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -5778,7 +5778,7 @@ export class MagiaData {
             efeito: '1 enxame Médio (quadrado de 1,5m)',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -6008,7 +6008,7 @@ export class MagiaData {
             efeito: 'mão gigante de energia',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -6136,7 +6136,7 @@ export class MagiaData {
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -6288,7 +6288,7 @@ export class MagiaData {
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -6312,7 +6312,7 @@ export class MagiaData {
             efeito: 'nuvem com 6m de raio e 6m de altura',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -6389,7 +6389,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -6518,8 +6518,8 @@ export class MagiaData {
             maneira_resistencia: '',
             tracos: [
               DuracaoMagia.PERMANENTE,
-              PalavraChave.COMPONENTE_MATERIAL,
-              PalavraChave.AUMENTA,
+              Chave.COMPONENTE_MATERIAL,
+              Chave.AUMENTA,
             ],
             aumenta: 0,
           },
@@ -6578,7 +6578,7 @@ export class MagiaData {
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [DuracaoMagia.DIA, PalavraChave.COMPONENTE_MATERIAL],
+            tracos: [DuracaoMagia.DIA, Chave.COMPONENTE_MATERIAL],
             aumenta: 0,
           },
           {
@@ -6602,7 +6602,7 @@ export class MagiaData {
             efeito: 'criatura conjurada',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [DuracaoMagia.SEMANA, PalavraChave.COMPONENTE_MATERIAL],
+            tracos: [DuracaoMagia.SEMANA, Chave.COMPONENTE_MATERIAL],
             aumenta: 0,
           },
         ],
@@ -6658,7 +6658,7 @@ export class MagiaData {
             efeito: 'criaturas conjuradas',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -6764,7 +6764,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -6787,7 +6787,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -7085,7 +7085,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -7286,7 +7286,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -7522,7 +7522,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -9333,7 +9333,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -9412,7 +9412,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -10878,7 +10878,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -10902,7 +10902,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -11498,7 +11498,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -11853,7 +11853,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -12995,7 +12995,7 @@ export class MagiaData {
             efeito: 'ilusão que se estende a até 4 cubos de 1,5m',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -13497,7 +13497,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -13520,7 +13520,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -13574,7 +13574,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -13809,7 +13809,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
-            tracos: [DuracaoMagia.PERMANENTE, PalavraChave.COMPONENTE_MATERIAL],
+            tracos: [DuracaoMagia.PERMANENTE, Chave.COMPONENTE_MATERIAL],
             aumenta: 0,
           },
         ],
@@ -14026,7 +14026,7 @@ export class MagiaData {
             efeito: '6 mortos-vivos',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14232,7 +14232,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14256,7 +14256,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -14310,7 +14310,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14333,7 +14333,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14461,7 +14461,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14564,7 +14564,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14746,7 +14746,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14826,7 +14826,7 @@ export class MagiaData {
             efeito: 'muro de ossos',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -14904,7 +14904,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -14958,7 +14958,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -15035,7 +15035,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -15061,7 +15061,7 @@ export class MagiaData {
             tracos: [
               ExecucaoMagia.HORA,
               DuracaoMagia.PERMANENTE,
-              PalavraChave.COMPONENTE_MATERIAL,
+              Chave.COMPONENTE_MATERIAL,
               CirculoMagia.QUARTO_CIRCULO,
             ],
             aumenta: 0,
@@ -15153,7 +15153,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -15309,7 +15309,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.COMPONENTE_MATERIAL],
+            tracos: [Chave.COMPONENTE_MATERIAL],
             aumenta: 0,
           },
           {
@@ -15332,7 +15332,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.COMPONENTE_MATERIAL],
+            tracos: [Chave.COMPONENTE_MATERIAL],
             aumenta: 0,
           },
           {
@@ -15357,7 +15357,7 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [
-              PalavraChave.COMPONENTE_MATERIAL,
+              Chave.COMPONENTE_MATERIAL,
               CirculoMagia.QUARTO_CIRCULO,
             ],
             aumenta: 0,
@@ -15413,7 +15413,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -15436,7 +15436,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -15590,7 +15590,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -15672,7 +15672,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -15835,7 +15835,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {
@@ -15935,7 +15935,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [PalavraChave.AUMENTA],
+            tracos: [Chave.AUMENTA],
             aumenta: 0,
           },
           {

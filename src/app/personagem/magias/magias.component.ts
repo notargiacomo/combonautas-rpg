@@ -119,7 +119,6 @@ export class MagiasComponent implements AfterViewInit {
         }
       );
         this.objetos = response;
-        this.objeto
         this.numero_registros = response.length;
       },
       error: (response) => {
