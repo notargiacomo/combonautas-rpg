@@ -482,3 +482,19 @@ table {
     margin: 1% !important;
     max-width: 98% !important;
   }
+
+  mat-row:nth-child(odd) {
+    background-color: #f5f5f5 !important; /* Cinza claro */
+  }
+  
+  mat-row:nth-child(even) {
+    background-color: #ffffff !important; /* Branco */
+  }
+
+  .mat-mdc-table tr:nth-child(odd) {
+    background-color: #f5f5f5 !important;
+  }
+  
+  .mat-mdc-table tr:nth-child(even) {
+    background-color: #ffffff !important;
+  }

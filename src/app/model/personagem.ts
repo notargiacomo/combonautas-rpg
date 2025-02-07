@@ -1,5 +1,4 @@
 import { Raca } from './raca';
-
 export class Personagem {
   id?: number;
   nome?: string;
