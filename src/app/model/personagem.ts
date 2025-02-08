@@ -3,38 +3,38 @@ export class Personagem {
   id?: number;
   nome?: string;
   raca?: Raca;
-  nivel?:number;
+  nivel?: number;
   pontos!: number;
   atributos!: {
-        for: number;
-        for_comprada: number;
-        for_racial: number;
-        for_bonus: number;
-        des: number;
-        des_comprada: number;
-        des_racial: number;
-        des_bonus: number;
-        con: number;
-        con_comprada: number;
-        con_racial: number;
-        con_bonus: number;
-        int: number;
-        int_comprada: number;
-        int_racial: number;
-        int_bonus: number;
-        sab: number;
-        sab_comprada: number;
-        sab_racial: number;
-        sab_bonus: number;
-        car: number;
-        car_comprada: number;
-        car_racial: number;
-        car_bonus: number;
-    };
+    for: number;
+    for_comprada: number;
+    for_racial: number;
+    for_bonus: number;
+    des: number;
+    des_comprada: number;
+    des_racial: number;
+    des_bonus: number;
+    con: number;
+    con_comprada: number;
+    con_racial: number;
+    con_bonus: number;
+    int: number;
+    int_comprada: number;
+    int_racial: number;
+    int_bonus: number;
+    sab: number;
+    sab_comprada: number;
+    sab_racial: number;
+    sab_bonus: number;
+    car: number;
+    car_comprada: number;
+    car_racial: number;
+    car_bonus: number;
+  };
 
   constructor() {
-    this.pontos ? this.pontos : this.pontos = 10;
-    this.nivel ? this.nivel : this.nivel = 1;
+    this.pontos ? this.pontos : (this.pontos = 10);
+    this.nivel ? this.nivel : (this.nivel = 1);
     this.inicializaAtributos();
   }
 
@@ -76,50 +76,102 @@ export class Personagem {
   }
 
   calculaPontos(atributo: string, novoValor: number) {
-    switch(atributo){
-        case 'for': {
-            this.pontos += this.calculandoValorPonto(this.atributos.for_comprada);
-            this.pontos -= this.calculandoValorPonto(novoValor);
-            this.atributos.for_comprada = novoValor;
-            this.atributos.for = this.atributos.for_comprada + this.atributos.for_racial + this.atributos.for_bonus;
-            break;
+    switch (atributo) {
+      case 'for': {
+        if (novoValor === -1 || novoValor === 0) {
+          this.pontos += this.atributos.for_comprada - novoValor;
+        } else {
+          this.pontos += this.calculandoValorPonto(this.atributos.for_comprada);
+          this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        case 'des': {
-            this.pontos += this.calculandoValorPonto(this.atributos.des);
-            this.pontos -= this.calculandoValorPonto(novoValor);
-            this.atributos.des = novoValor;
-            break;
+        this.atributos.for_comprada = novoValor;
+        this.atributos.for =
+          this.atributos.for_comprada +
+          this.atributos.for_racial +
+          this.atributos.for_bonus;
+        break;
+      }
+      case 'des': {
+        if (novoValor === -1 || novoValor === 0) {
+          this.pontos += this.atributos.des_comprada - novoValor;
+        } else {
+          this.pontos += this.calculandoValorPonto(this.atributos.des_comprada);
+          this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        case 'con': {
-            this.pontos += this.calculandoValorPonto(this.atributos.con);
-            this.pontos -= this.calculandoValorPonto(novoValor);
-            this.atributos.con = novoValor;
-            break;
+        this.atributos.des_comprada = novoValor;
+        this.atributos.des =
+          this.atributos.des_comprada +
+          this.atributos.des_racial +
+          this.atributos.des_bonus;
+        break;
+      }
+      case 'con': {
+        if (novoValor === -1 || novoValor === 0) {
+          this.pontos += this.atributos.con_comprada - novoValor;
+        } else {
+          this.pontos += this.calculandoValorPonto(this.atributos.con_comprada);
+          this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        case 'int': {
-            this.pontos += this.calculandoValorPonto(this.atributos.int);
-            this.pontos -= this.calculandoValorPonto(novoValor);
-            this.atributos.int = novoValor;
-            break;
+        this.atributos.con_comprada = novoValor;
+        this.atributos.con =
+          this.atributos.con_comprada +
+          this.atributos.con_racial +
+          this.atributos.con_bonus;
+        break;
+      }
+      case 'int': {
+        if (novoValor === -1 || novoValor === 0) {
+          this.pontos += this.atributos.int_comprada - novoValor;
+        } else {
+          this.pontos += this.calculandoValorPonto(this.atributos.int_comprada);
+          this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        case 'sab': {
-            this.pontos += this.calculandoValorPonto(this.atributos.sab);
-            this.pontos -= this.calculandoValorPonto(novoValor);
-            this.atributos.sab = novoValor;
-            break;
+        this.atributos.int_comprada = novoValor;
+        this.atributos.int =
+          this.atributos.int_comprada +
+          this.atributos.int_racial +
+          this.atributos.int_bonus;
+        break;
+      }
+      case 'sab': {
+        if (novoValor === -1 || novoValor === 0) {
+          this.pontos += this.atributos.sab_comprada - novoValor;
+        } else {
+          this.pontos += this.calculandoValorPonto(this.atributos.sab_comprada);
+          this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        case 'car': {
-            this.pontos += this.calculandoValorPonto(this.atributos.car);
-            this.pontos -= this.calculandoValorPonto(novoValor);
-            this.atributos.car = novoValor;
-            break;
+        this.atributos.sab_comprada = novoValor;
+        this.atributos.sab =
+          this.atributos.sab_comprada +
+          this.atributos.sab_racial +
+          this.atributos.sab_bonus;
+        break;
+      }
+      case 'car': {
+        if (novoValor === -1 || novoValor === 0) {
+          this.pontos += this.atributos.car_comprada - novoValor;
+        } else {
+          this.pontos += this.calculandoValorPonto(this.atributos.car_comprada);
+          this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        default:{}
+        this.atributos.car_comprada = novoValor;
+        this.atributos.car =
+          this.atributos.car_comprada +
+          this.atributos.car_racial +
+          this.atributos.car_bonus;
+        break;
+      }
+      default: {
+      }
     }
   }
 
-  calculandoValorPonto(atributo: number):number {
-    return this.fatorialRecursivo(atributo) - (atributo === 0 ? 0 : atributo - 1);
+  calculandoValorPonto(atributo: number): number {
+    if (atributo === -1 || atributo === 0) {
+      return 0;
+    } else {
+      return this.fatorialRecursivo(atributo) - (atributo - 1);
+    }
   }
 
   fatorialRecursivo(n: number): number {
@@ -132,5 +184,4 @@ export class Personagem {
     }
     return n + this.fatorialRecursivo(n - 1);
   }
-
 }

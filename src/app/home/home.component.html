@@ -74,26 +74,48 @@
             <div class="row align-items-center">
               <div class="col-sm-2">
                 <div class="row text-center">
-                  <strong style="font-size: x-large !important;">FOR</strong>
+                  <strong style="font-size: x-large !important">FOR</strong>
                 </div>
                 <div class="row align-items-center">
                   <div class="col-sm-3">
                     <div class="row">
                       <div class="col-sm-12">
                         <div>
-                          <button style="width: 25px !important;   border: 1px solid rgb(228, 176, 100);" 
-                          (click)="personagem.calculaPontos('for', personagem.atributos.for_comprada+1)">+</button>
+                          <button
+                            class="botoes-mais-menos"
+                            [disabled]="personagem.atributos.for_comprada === 4"
+                            (click)="
+                              personagem.calculaPontos(
+                                'for',
+                                personagem.atributos.for_comprada + 1
+                              )
+                            "
+                          >
+                            +
+                          </button>
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-12">
-                        <button style="width: 25px !important;border: 1px solid rgb(228, 176, 100);" (click)="personagem.calculaPontos('for', personagem.atributos.for_comprada-1)">-</button>
+                        <button
+                          class="botoes-mais-menos"
+                          [disabled]="personagem.atributos.for_comprada === -1"
+                          (click)="
+                            personagem.calculaPontos(
+                              'for',
+                              personagem.atributos.for_comprada - 1
+                            )
+                          "
+                        >
+                          -
+                        </button>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-9">
-                    <input style="height: 55px !important; width: 48px !important; font-size: xx-large !important; text-align: center; border: 1px solid rgb(228, 176, 100);"
+                    <input
+                      class="campo-modificadores"
                       size="1"
                       [value]="personagem.atributos.for"
                       disabled
@@ -101,17 +123,408 @@
                   </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="d-flex">
-                      <input style="width: 25px !important; height: 25px !important;font-size: small !important; text-align: center; border: 1px solid rgb(228, 176, 100);" value="0" size="1" [value]="personagem.atributos.for_comprada" disabled/>
-                      <input style="width: 25px !important; height: 25px !important;font-size: small !important; text-align: center; border: 1px solid rgb(228, 176, 100);" value="0" size="1" [value]="personagem.atributos.for_racial" disabled/>
-                      <input style="width: 25px !important; height: 25px !important;font-size: small !important; text-align: center; border: 1px solid rgb(228, 176, 100);" value="0" size="1" [value]="personagem.atributos.for_bonus" disabled/>
+                  <div class="d-flex">
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.for_comprada"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.for_racial"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.for_bonus"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="row text-center">
+                  <strong style="font-size: x-large !important">DES</strong>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div>
+                          <button
+                            class="botoes-mais-menos"
+                            [disabled]="personagem.atributos.des_comprada === 4"
+                            (click)="
+                              personagem.calculaPontos(
+                                'des',
+                                personagem.atributos.des_comprada + 1
+                              )
+                            "
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
                     </div>
-
-                  <div class="col-sm-4 ">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <button
+                          class="botoes-mais-menos"
+                          [disabled]="personagem.atributos.des_comprada === -1"
+                          (click)="
+                            personagem.calculaPontos(
+                              'des',
+                              personagem.atributos.des_comprada - 1
+                            )
+                          "
+                        >
+                          -
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-9">
+                    <input
+                      class="campo-modificadores"
+                      size="1"
+                      [value]="personagem.atributos.des"
+                      disabled
+                    />
                   </div>
-                  <div class="col-sm-4">
+                </div>
+                <div class="row align-items-center">
+                  <div class="d-flex">
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.des_comprada"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.des_racial"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.des_bonus"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="row text-center">
+                  <strong style="font-size: x-large !important">CON</strong>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div>
+                          <button
+                            class="botoes-mais-menos"
+                            [disabled]="personagem.atributos.con_comprada === 4"
+                            (click)="
+                              personagem.calculaPontos(
+                                'con',
+                                personagem.atributos.con_comprada + 1
+                              )
+                            "
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <button
+                          class="botoes-mais-menos"
+                          [disabled]="personagem.atributos.con_comprada === -1"
+                          (click)="
+                            personagem.calculaPontos(
+                              'con',
+                              personagem.atributos.con_comprada - 1
+                            )
+                          "
+                        >
+                          -
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <input
+                      class="campo-modificadores"
+                      size="1"
+                      [value]="personagem.atributos.con"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="d-flex">
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.con_comprada"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.con_racial"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.con_bonus"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="row text-center">
+                  <strong style="font-size: x-large !important">INT</strong>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div>
+                          <button
+                            class="botoes-mais-menos"
+                            [disabled]="personagem.atributos.int_comprada === 4"
+                            (click)="
+                              personagem.calculaPontos(
+                                'int',
+                                personagem.atributos.int_comprada + 1
+                              )
+                            "
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <button
+                          class="botoes-mais-menos"
+                          [disabled]="personagem.atributos.int_comprada === -1"
+                          (click)="
+                            personagem.calculaPontos(
+                              'int',
+                              personagem.atributos.int_comprada - 1
+                            )
+                          "
+                        >
+                          -
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <input
+                      class="campo-modificadores"
+                      size="1"
+                      [value]="personagem.atributos.int"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="d-flex">
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.int_comprada"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.int_racial"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.int_bonus"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="row text-center">
+                  <strong style="font-size: x-large !important">SAB</strong>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div>
+                          <button
+                            class="botoes-mais-menos"
+                            [disabled]="personagem.atributos.sab_comprada === 4"
+                            (click)="
+                              personagem.calculaPontos(
+                                'sab',
+                                personagem.atributos.sab_comprada + 1
+                              )
+                            "
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <button
+                          class="botoes-mais-menos"
+                          [disabled]="personagem.atributos.sab_comprada === -1"
+                          (click)="
+                            personagem.calculaPontos(
+                              'sab',
+                              personagem.atributos.sab_comprada - 1
+                            )
+                          "
+                        >
+                          -
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <input
+                      class="campo-modificadores"
+                      size="1"
+                      [value]="personagem.atributos.sab"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="d-flex">
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.sab_comprada"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.sab_racial"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.sab_bonus"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="row text-center">
+                  <strong style="font-size: x-large !important">CAR</strong>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div>
+                          <button
+                            class="botoes-mais-menos"
+                            [disabled]="personagem.atributos.car_comprada === 4"
+                            (click)="
+                              personagem.calculaPontos(
+                                'car',
+                                personagem.atributos.car_comprada + 1
+                              )
+                            "
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <button
+                          class="botoes-mais-menos"
+                          [disabled]="personagem.atributos.car_comprada === -1"
+                          (click)="
+                            personagem.calculaPontos(
+                              'car',
+                              personagem.atributos.car_comprada - 1
+                            )
+                          "
+                        >
+                          -
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <input
+                      class="campo-modificadores"
+                      size="1"
+                      [value]="personagem.atributos.car"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="d-flex">
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.car_comprada"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.car_racial"
+                      disabled
+                    />
+                    <input
+                      class="campo-atributos"
+                      value="0"
+                      size="1"
+                      [value]="personagem.atributos.car_bonus"
+                      disabled
+                    />
                   </div>
                 </div>
               </div>
