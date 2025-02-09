@@ -6,6 +6,7 @@ import {
   MatDialogActions,
   MatDialogClose,
   MatDialogContent,
+  MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
 import { RacasComponent } from "../../personagem/racas/racas.component";
@@ -25,11 +26,11 @@ import { RacasComponent } from "../../personagem/racas/racas.component";
         </label>
       </mat-card>
     <mat-dialog-content>
-        <!-- <div class="col-sm-12 text-justify" [innerHTML]="data.texto"></div> -->
-         <app-racas></app-racas>
+         <app-racas [seVeioFicha]="true"   [racaSelecionada]="objeto"
+         (racaSelecionadaChange)="atualizarObjeto($event)">></app-racas>
     </mat-dialog-content>
     <mat-dialog-actions>
-      <button mat-button mat-flat-button>Confirmar</button>
+      <button mat-button mat-flat-button [disabled]="objeto === undefined" (click)="confirmar()">Confirmar</button>
       <button mat-button mat-dialog-close mat-flat-button>Fechar</button>
     </mat-dialog-actions>
   `,
@@ -47,7 +48,23 @@ import { RacasComponent } from "../../personagem/racas/racas.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BalaoInterativoPadraoComponent {
+objeto: any;
+
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: { titulo: string; texto: string }, private cdr: ChangeDetectorRef
-  ) {}
+    @Inject(MAT_DIALOG_DATA) public data: { titulo: string; objeto: any }, private cdr: ChangeDetectorRef, private dialogRef: MatDialogRef<BalaoInterativoPadraoComponent>
+  ) {
+  }
+
+  ngOnInit() {
+    this.objeto = this.data.objeto;
+  }
+
+  atualizarObjeto(novaRaca: any) {
+    this.objeto = novaRaca;
+    this.cdr.detectChanges(); // Atualiza a UI, já que o ChangeDetection está como OnPush
+  }
+
+  confirmar() {
+    this.dialogRef.close(this.objeto); // 🔥 Fecha o dialog e retorna a raça selecionada
+  }
 }

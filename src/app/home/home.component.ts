@@ -5,6 +5,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { Personagem } from '../model/personagem';
 import { BalaoInterativoPadraoComponent } from '../components/caixa-informativa/balao-interativo-padrao.component';
 import { MatDialog } from '@angular/material/dialog';
+import { Raca } from '../model/raca';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,7 @@ export class HomeComponent {
     const dialogRef = this.dialog.open(BalaoInterativoPadraoComponent, {
       data: {
         titulo: titulo,
+        raca: this.personagem.raca,
       },
       disableClose: true,
     });
@@ -36,14 +38,10 @@ export class HomeComponent {
     dialogRef.afterClosed().subscribe((resultado) => {
       if (resultado) {
         console.log('Retorno do diálogo:', resultado);
-        this.selecionaRaca(resultado);
+        this.personagem.raca = resultado;
       } else {
         console.log('Diálogo foi fechado sem retorno.');
       }
     });
-  }
-
-  private selecionaRaca(resultado: any) {
-    this.personagem.raca = resultado;
   }
 }

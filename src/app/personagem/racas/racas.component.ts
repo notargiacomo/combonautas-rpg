@@ -1,4 +1,3 @@
-import { ChangeDetectorRef, Component, OnInit, SimpleChanges } from '@angular/core';
 import {
   animate,
   state,
@@ -6,29 +5,37 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { NgFor, NgIf } from '@angular/common';
+import {
+  ChangeDetectorRef,
+  Component,
+  Input,
+  OnInit,
+  Output,
+  EventEmitter,
+} from '@angular/core';
 import {
   FormArray,
   FormBuilder,
+  FormControl,
   FormGroup,
   FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatTableModule } from '@angular/material/table';
-import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTableModule } from '@angular/material/table';
+import { Deslocamento } from '../../enum/deslocamento.enum';
+import { Referencia } from '../../enum/referencia.enum';
+import { Sentido } from '../../enum/sentido.enum';
 import { Raca } from '../../model/raca';
 import { RacaService } from '../../service/raca.service';
-import { Deslocamento } from '../../enum/deslocamento.enum';
-import { Sentido } from '../../enum/sentido.enum';
-import { NgFor, NgIf } from '@angular/common';
-import { FormControl } from '@angular/forms';
-import { Referencia } from '../../enum/referencia.enum';
 
 @Component({
   selector: 'app-racas',
@@ -62,7 +69,8 @@ import { Referencia } from '../../enum/referencia.enum';
   ],
 })
 export class RacasComponent implements OnInit {
-  raca = '';
+
+
   columnsToDisplay = ['nome', 'tipo', 'tamanho', 'referencias', 'paginas'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
@@ -77,7 +85,8 @@ export class RacasComponent implements OnInit {
 
   constructor(
     private readonly racaService: RacaService,
-    private fb: FormBuilder, private cdr: ChangeDetectorRef
+    private fb: FormBuilder,
+    private cdr: ChangeDetectorRef
   ) {
     this.deslocamentos.forEach((deslocamento) => {
       this.checkboxState[deslocamento] = false;
@@ -88,6 +97,21 @@ export class RacasComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.reiniciaFormulario();
+
+    this.racaService.listar(null).subscribe({
+      next: (response) => {
+        this.racas = response;
+        this.numero_registros = response.length;
+        this.cdr.detectChanges();
+      },
+      error: (response) => {
+        console.log(response);
+      },
+    });
+  }
+
+  private reiniciaFormulario() {
     this.form = this.fb.group({
       tipo: [],
       tamanho: [],
@@ -96,49 +120,15 @@ export class RacasComponent implements OnInit {
       referencias: new FormArray([]),
       nome: [],
     });
-
-    this.racaService.listar(null).subscribe({
-      next: (response) => {
-        this.racas = response;
-        this.numero_registros = response.length;
-        this.cdr.detectChanges(); 
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-  }
-
-  get sentidosFormArray(): FormArray {
-    return this.form.controls['sentidos'] as FormArray;
   }
 
   limparFiltros() {
-    this.deslocamentos.forEach((deslocamento) => {
-      this.checkboxState[deslocamento] = false;
-    });
-    this.sentidos.forEach((sentidos) => {
-      this.checkboxState[sentidos] = false;
-    });
-
-    (this.form.controls['deslocamentos'] as FormArray).clear();
-
-    this.sentidosFormArray.clear();
-
-    this.form.reset();
-    this.consultar();
-  }
-
-  selecaoTamanho(event: any): void {
-    this.consultar();
-  }
-
-  selecaoTipoCriatura(event: any): void {
+    this.checkboxState = {};
+    this.reiniciaFormulario();
     this.consultar();
   }
 
   checkDeslocamento(deslocamento: Deslocamento, isChecked: boolean): void {
-
     const formArray = this.form.controls['deslocamentos'] as FormArray;
     if (isChecked) {
       formArray.push(new FormControl(deslocamento));
@@ -152,12 +142,9 @@ export class RacasComponent implements OnInit {
     this.consultar();
   }
 
-  // ngOnChanges(changes: SimpleChanges) {
-  //   this.consultar();
-  // }
-
   checkSentido(sentido: Sentido, isChecked: boolean): void {
-    const formArray = this.sentidosFormArray;
+    var sentidosFormArray = this.form.controls['sentidos'] as FormArray;
+    const formArray = sentidosFormArray;
     if (isChecked) {
       formArray.push(new FormControl(sentido));
     } else {
@@ -195,7 +182,7 @@ export class RacasComponent implements OnInit {
       next: (response) => {
         this.racas = response;
         this.numero_registros = response.length;
-        this.cdr.detectChanges(); 
+        this.cdr.detectChanges();
       },
       error: (response) => {
         console.log(response);
@@ -204,4 +191,71 @@ export class RacasComponent implements OnInit {
 
     console.log(this.racas);
   }
+
+  /**
+   * 
+   * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA
+   *  
+   */
+
+  @Input() racaSelecionada?: any;
+  @Input() seVeioFicha: boolean = false;
+  @Output() racaSelecionadaChange = new EventEmitter<Raca>();
+  atributos = Object.keys(AcrecimoAtributo);
+  exibeCheckAtribuos = false;
+  contadorAtributos : number = 0;
+
+  checkSelecionaRaca(raca: Raca, isChecked: boolean): void {
+    if(isChecked){
+      this.racaSelecionada = raca;
+    } else {
+      this.racaSelecionada.resolucao = null;
+      this.racaSelecionada = undefined
+    }
+
+    this.racaSelecionadaChange.emit(this.racaSelecionada); // Notifica o pai da mudança
+  }
+
+  exibeCheckAtributo(raca: Raca): boolean{
+    return this.seVeioFicha && this.racaSelecionada !== undefined && raca.instrucao? raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES): false;
+  }
+
+  checkAtributo(key: string, check: boolean) {
+    if(!this.racaSelecionada.resolucao){
+      this.racaSelecionada.resolucao = [];
+    }
+
+    // if(this.racaSelecionada.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)){
+    //   this.contadorAtributos = 3;
+    // }
+
+    check ? this.racaSelecionada.resolucao.push(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]): this.racaSelecionada.resolucao.splice(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
+    console.log(this.racaSelecionada);
+  }
+}
+
+export enum Calculo {
+  MAIS_UM = '+1',
+  MAIS_DOIS = '+2',
+  DOIS_ATRIBUTOS_DIFERENTES = '2 ATRIBUTOS DIFERENTES',
+  TRES_ATRIBUTOS_DIFERENTES = '3 ATRIBUTOS DIFERENTES',
+  EXCETO = 'EXCETO',
+}
+
+export enum AcrecimoAtributo {
+  FORCA = 'personagem.for_racial += personagem.for_racial',
+  DESTREZA = 'personagem.des_racial += personagem.des_racial',
+  CONSTITUICAO = 'personagem.con_racial += personagem.con_racial',
+  INTELIGENCIA = 'personagem.int_racial += personagem.int_racial',
+  SABEDORIA = 'personagem.sab_racial += personagem.sab_racial',
+  CARISMA = 'personagem.car_racial += personagem.car_racial',
+}
+
+export enum DecrecimoAtributo {
+  FORCA = 'personagem.for_racial -= personagem.for_racial',
+  DESTREZA = 'personagem.des_racial -= personagem.des_racial',
+  CONSTITUICAO = 'personagem.con_racial -= personagem.con_racial',
+  INTELIGENCIA = 'personagem.int_racial -= personagem.int_racial',
+  SABEDORIA = 'personagem.sab_racial -= personagem.sab_racial',
+  CARISMA = 'personagem.car_racial -= personagem.car_racial',
 }

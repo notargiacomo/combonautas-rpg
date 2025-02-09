@@ -43,7 +43,7 @@
 
           <div class="col-sm-2 d-flex">
             <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA')">
-              <strong>RAÇA:</strong>
+              <strong>RAÇA: {{ personagem.raca?.nome?.toLocaleUpperCase() }}</strong>
             </button>
           </div>
           <div class="col-sm-2 d-flex">

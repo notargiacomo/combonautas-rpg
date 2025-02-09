@@ -13,6 +13,7 @@ import { Sentido } from '../enum/sentido.enum';
 import { Deslocamento } from '../enum/deslocamento.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { Tamanho } from '../enum/tamanho.enum';
+import { Calculo } from '../personagem/racas/racas.component';
 
 @Injectable({
   providedIn: 'root',
@@ -36,6 +37,7 @@ export class RacaData {
         nome_arquivo_descricao: `raca_humano_descricao`,
         imagem: 'assets/img/raca_humano.png',
         deslocamentos: [''],
+        instrucao:[Calculo.TRES_ATRIBUTOS_DIFERENTES],
         referencias: Referencia.BASICO,
         paginas: '19',
         descricao: ``,

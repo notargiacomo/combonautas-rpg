@@ -1,134 +1,137 @@
 <div class="container">
   <div class="row mt-4">
-  <mat-card class="cartao">
-    <form [formGroup]="form">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2><b>RAÇAS</b></h2>
-          <hr />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 mt-4">
-          <div class="row">
-            <label id="radio-radio-tipo-criatura"
-              ><b>Tipo de Criatura</b></label
-            >
-          </div>
-          <div class="row">
-            <mat-radio-group
-              name="tipo"
-              formControlName="tipo"
-              (change)="selecaoTipoCriatura($event.value)"
-              title="Tipo de Criatura"
-              aria-labelledby="radio-tipo-criatura"
-            >
-              <mat-radio-button value="Construto">Construto</mat-radio-button>
-              <mat-radio-button value="Espírito">Espírito</mat-radio-button>
-              <mat-radio-button value="Humanoide">Humanoide</mat-radio-button>
-              <mat-radio-button value="Monstro">Monstro</mat-radio-button>
-              <mat-radio-button value="Morto-vivo">Morto-vivo</mat-radio-button>
-            </mat-radio-group>
+    <mat-card class="cartao">
+      <form [formGroup]="form">
+        <div class="row" *ngIf="!seVeioFicha">
+          <div class="col-sm-12">
+            <h2><b>RAÇAS</b></h2>
+            <hr />
           </div>
         </div>
-
-        <div class="col-sm-6 mt-4">
-          <div class="row">
-            <label id="radio-tamanho"><b>Tamanho</b></label>
-          </div>
-          <div class="row">
-            <mat-radio-group
-              title="Tamanho"
-              name="tamanho"
-              formControlName="tamanho"
-              (change)="selecaoTamanho($event.value)"
-              aria-labelledby="radio-tamanho"
-            >
-              <mat-radio-button value="Minúsculo">Minúsculo</mat-radio-button>
-              <mat-radio-button value="Pequeno">Pequeno</mat-radio-button>
-              <mat-radio-button value="Médio">Médio</mat-radio-button>
-              <mat-radio-button value="Grande">Grande</mat-radio-button>
-            </mat-radio-group>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 mt-4">
-          <div class="row">
-            <label id="radio-sentidos"><b>Sentidos</b></label>
-          </div>
-          <div class="row">
-            <section class="section" formArrayName="sentidos">
-              <mat-checkbox
-                name="sentido"
-                *ngFor="let sentido of sentidos"
-                (change)="checkSentido(sentido, $event.checked)"
+        <div class="row">
+          <div class="col-sm-6 mt-4">
+            <div class="row">
+              <label id="radio-radio-tipo-criatura"
+                ><b>Tipo de Criatura</b></label
               >
-                {{ sentido }}
-              </mat-checkbox>
-            </section>
-          </div>
-        </div>
-        <div class="col-sm-6 mt-4">
-          <div class="row">
-            <label id="radio-deslocamentos"><b>Deslocamentos</b></label>
-          </div>
-          <div class="row">
-            <section class="section" formArrayName="deslocamentos">
-              <mat-checkbox
-                name="deslocamento"
-                *ngFor="let deslocamento of deslocamentos"
-                (change)="checkDeslocamento(deslocamento, $event.checked)"
-              >
-                {{ deslocamento }}
-              </mat-checkbox>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 mt-4">
-          <div class="row">
-            <label id="radio-referencias"><b>Referências</b></label>
-          </div>
-          <div class="row">
-            <section class="section" formArrayName="referencias">
-              <mat-checkbox
-                name="referencia"
-                *ngFor="let referencia of referencias"
-                (change)="checkReferencia(referencia, $event.checked)"
-              >
-                {{ referencia }}
-              </mat-checkbox>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 mt-4">
-          <mat-form-field class="form-field">
-            <mat-label>Raça</mat-label>
-            <input
-              formControlName="nome"
-              matInput
-              type="text"
-              name="raca"
-              (keyup)="consultar()"
-            />
-          </mat-form-field>
-        </div>
-        <div class="col-sm-6 mt-4">
-          <section>
-            <div class="button-row d-flex justify-content-end">
-              <button class="me-2" (click)="limparFiltros()" mat-flat-button>
-                Limpar Filtros
-              </button>
             </div>
-          </section>
+            <div class="row">
+              <mat-radio-group
+                name="tipo"
+                formControlName="tipo"
+                (change)="consultar()"
+                title="Tipo de Criatura"
+                aria-labelledby="radio-tipo-criatura"
+              >
+                <mat-radio-button value="Construto">Construto</mat-radio-button>
+                <mat-radio-button value="Espírito">Espírito</mat-radio-button>
+                <mat-radio-button value="Humanoide">Humanoide</mat-radio-button>
+                <mat-radio-button value="Monstro">Monstro</mat-radio-button>
+                <mat-radio-button value="Morto-vivo"
+                  >Morto-vivo</mat-radio-button
+                >
+              </mat-radio-group>
+            </div>
+          </div>
+
+          <div class="col-sm-6 mt-4">
+            <div class="row">
+              <label id="radio-tamanho"><b>Tamanho</b></label>
+            </div>
+            <div class="row">
+              <mat-radio-group
+                title="Tamanho"
+                name="tamanho"
+                formControlName="tamanho"
+                (change)="consultar()"
+                aria-labelledby="radio-tamanho"
+              >
+                <mat-radio-button value="Minúsculo">Minúsculo</mat-radio-button>
+                <mat-radio-button value="Pequeno">Pequeno</mat-radio-button>
+                <mat-radio-button value="Médio">Médio</mat-radio-button>
+                <mat-radio-button value="Grande">Grande</mat-radio-button>
+              </mat-radio-group>
+            </div>
+          </div>
         </div>
-      </div>
-    </form>
-  </mat-card>
+        <div class="row">
+          <div class="col-sm-6 mt-4">
+            <div class="row">
+              <label id="radio-sentidos"><b>Sentidos</b></label>
+            </div>
+            <div class="row">
+              <section class="section" formArrayName="sentidos">
+                @for (sentido of sentidos; track sentido) {
+                <mat-checkbox
+                  name="sentido"
+                  (change)="checkSentido(sentido, $event.checked)"
+                >
+                  {{ sentido }}
+                </mat-checkbox>
+                }
+              </section>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-4">
+            <div class="row">
+              <label id="radio-deslocamentos"><b>Deslocamentos</b></label>
+            </div>
+            <div class="row">
+              <section class="section" formArrayName="deslocamentos">
+                <mat-checkbox
+                  name="deslocamento"
+                  *ngFor="let deslocamento of deslocamentos"
+                  (change)="checkDeslocamento(deslocamento, $event.checked)"
+                >
+                  {{ deslocamento }}
+                </mat-checkbox>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 mt-4">
+            <div class="row">
+              <label id="radio-referencias"><b>Referências</b></label>
+            </div>
+            <div class="row">
+              <section class="section" formArrayName="referencias">
+                <mat-checkbox
+                  name="referencia"
+                  *ngFor="let referencia of referencias"
+                  (change)="checkReferencia(referencia, $event.checked)"
+                >
+                  {{ referencia }}
+                </mat-checkbox>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 mt-4">
+            <mat-form-field class="form-field">
+              <mat-label>Raça</mat-label>
+              <input
+                formControlName="nome"
+                matInput
+                type="text"
+                name="raca"
+                (keyup)="consultar()"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-sm-6 mt-4">
+            <section>
+              <div class="button-row d-flex justify-content-end">
+                <button class="me-2" (click)="limparFiltros()" mat-flat-button>
+                  Limpar Filtros
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </form>
+    </mat-card>
   </div>
   <div class="row mt-4">
     <mat-card class="cartao">
@@ -137,7 +140,7 @@
           <b>Número de Registros: {{ numero_registros }}</b>
         </div>
       </div>
-      <br>
+      <br />
       <table
         mat-table
         [dataSource]="racas"
@@ -184,18 +187,50 @@
             [attr.colspan]="columnsToDisplayWithExpand.length"
           >
             <div
-              class="element-detail"
+              class="container celement-detail"
               [@detailExpand]="
                 element == expandedElement ? 'expanded' : 'collapsed'
               "
             >
               <div class="row">
-                <!-- <div
-                  class="col-sm-5 text-justify"
-                  [innerHTML]="element.historia"
-                ></div> -->
+                <div class="col-sm-12 mt-4">
+                  <div class="row">
+                    <div class="col-sm-3 mt-4">
+                      <label>
+                        SELECIONAR RAÇA?
+                      </label>
+                    </div>
+                    <div class="col-sm-9 mt-3">
+                      <section class="section">
+                        <mat-checkbox
+                          *ngIf="seVeioFicha"
+                          name="racaSelecionada"
+                          (change)="checkSelecionaRaca(element, $event.checked)"
+                        >
+                        </mat-checkbox>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row" *ngIf="exibeCheckAtributo(element)">
+                <div class="col-sm-12 mt-4">
+                  <section class="section">
+                    @for (atributo of atributos; track atributo) {
+                    <mat-checkbox
+                      name="sentido"
+                      (change)="checkAtributo(atributo, $event.checked)"
+                    >
+                      {{ atributo }}
+                    </mat-checkbox>
+                    }
+                  </section>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
                 <div
-                  class="col-sm-9 mt-2 text-justify"
+                  class="col-sm-9 mt-4 text-justify"
                   [innerHTML]="element.descricao"
                 ></div>
                 <div class="col-sm-3 mt-4 mb-4">

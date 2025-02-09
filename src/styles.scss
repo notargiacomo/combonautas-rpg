@@ -310,7 +310,7 @@ button[mat-flat-button]:hover {
 }
 
 .mat-mdc-unelevated-button:not(:disabled) {
-  color: var(--mdc-filled-button-label-text-color, var(--mat-sys-on-primary));
+  color: var(--mdc-filled-button-label-text-color, var(--mat-sys-on-primary)) !important;
   background-color: rgb(132, 26, 18) !important;
 }
 
@@ -442,6 +442,7 @@ tr.element-row:not(.expanded-row):active {
 }
 
 .mat-mdc-dialog-container .mat-mdc-dialog-title {
+  height: 15% !important;
   font-size: 40px !important ;
 }
 
