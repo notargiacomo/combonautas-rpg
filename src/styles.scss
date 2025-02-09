@@ -394,11 +394,14 @@ tr.element-row:not(.expanded-row):active {
   // align-self: center !important;
 }
 
-.mat-mdc-dialog-surface .mdc-dialog__surface {
-  max-height: 500px !important;
+.mat-mdc-dialog-surface {
+  max-height: 600px !important;
   width: 1000px !important;
   max-width: 500% !important;
-  // align-content: start;
+  height: 550px !important;
+  margin-top: 20% !important;
+  margin-left: 33% !important;
+  
 }
 
 .mat-mdc-dialog-panel {

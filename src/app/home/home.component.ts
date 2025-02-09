@@ -30,6 +30,7 @@ export class HomeComponent {
       data: {
         titulo: titulo,
       },
+      disableClose: true,
     });
 
     dialogRef.afterClosed().subscribe((resultado) => {
