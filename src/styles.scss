@@ -367,9 +367,7 @@ tr.element-row:not(.expanded-row):active {
   font-size: 12pt !important;
 }
 
-.mat-mdc-dialog-container {
-  max-height: 500px !important;
-}
+
 
 .mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
   font-family: "Oswald" !important;
@@ -380,29 +378,68 @@ tr.element-row:not(.expanded-row):active {
   border: 2px solid rgb(228, 176, 100);
   background-color: rgb(60, 60, 60) !important;
   border-radius: 16px !important;      /* Arredondamento */
-  padding: 16px !important;           /* Espaçamento interno */
+  padding: 16px !important; 
+  // max-height: 150% !important ;          /* Espaçamento interno */
+  height: 150% !important;
+  max-width: 200% !important;
+  width: 200% !important;
+  align-content: center !important;
+  align-self: center !important;
+}
 
+.cdk-global-overlay-wrapper{
+  display: flow-root !important;
+  // align-items: center;
+  // align-content: center;
+  // align-self: center !important;
+}
+
+.mat-mdc-dialog-surface .mdc-dialog__surface {
+  max-height: 500px !important;
+  width: 1000px !important;
+  max-width: 500% !important;
+  // align-content: start;
+}
+
+.mat-mdc-dialog-panel {
+  // align-self: start !important;
+  // vertical-align: middle !important;
+  // justify-content: start !important;
 }
 
 .mat-mdc-dialog-surface b {
-  color: white !important;
+  color: black !important;
+  font-family: "Oswald" !important;
+}
+
+.mat-mdc-dialog-container .card-padrao {
+    border-radius: 0px !important;
+    border: 2px solid rgb(228, 176, 100);
 }
 
 .mat-mdc-dialog-surface .card-padrao {
-  border: 2px solid rgb(228, 176, 100);
-  background-color: rgb(132, 26, 18) !important;
-  color: white !important;
-  border-radius: 16px !important;      /* Arredondamento */
+
+  background-color: rgb(248, 233, 220)!important;
+  color: black !important;
+      /* Arredondamento */
   padding: 16px !important;           /* Espaçamento interno */
 }
 
-.mat-mdc-dialog-surface .card-padrao {
-  min-height: max-content;
+.mat-mdc-dialog-container {
+  max-height: 500px !important;
+  max-width: 1000px !important;
+
+}
+
+.mat-mdc-dialog-content {
+  // border-radius: 16px !important;
   border: 2px solid rgb(228, 176, 100);
-  background-color: rgb(132, 26, 18) !important;
-  color: white !important;
-  border-radius: 16px !important;      /* Arredondamento */
-  padding: 16px !important;           /* Espaçamento interno */
+  background-color: rgb(248, 233, 220)!important;
+
+}
+
+.mat-mdc-dialog-container .mat-mdc-dialog-title {
+  font-size: 40px !important ;
 }
 
 .mat-mdc-dialog-surface table {
@@ -501,4 +538,10 @@ table {
 
   .mat-mdc-table th {
     background-color: rgb(204, 204, 204) !important;
+  }
+
+  .custom-dialog-container {
+    display: flex !important;
+    // align-items: center !important;
+    // justify-content: center !important;
   }

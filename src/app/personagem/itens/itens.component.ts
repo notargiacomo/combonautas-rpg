@@ -16,7 +16,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ItemService } from '../../service/item.service';
 import { Item } from '../../model/item';
 import { TipoItem } from '../../enum/tipo.item.enum';
-import { CaixaInformativaComponent } from '../../components/caixa-informativa.component';
+import { BalaoInterativoPadraoComponent } from '../../components/caixa-informativa/balao-interativo-padrao.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Regras } from '../../enum/regras.enum';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
@@ -174,7 +174,7 @@ export class ItensComponent implements AfterViewInit {
   readonly dialog = inject(MatDialog);
 
   openDialog(titulo: string, idTexto: number) {
-    this.dialog.open(CaixaInformativaComponent, {
+    this.dialog.open(BalaoInterativoPadraoComponent, {
       data: {
         titulo: titulo,
         texto: Object.values(Regras)[idTexto],

@@ -23,11 +23,11 @@ export class RacaService extends AbstractService{
             responseType: 'text',
           })
           .subscribe((descricao) => (raca.descricao = descricao));
-        this.http
-          .get(`assets/doc/${raca.nome_arquivo_historia}.txt`, {
-            responseType: 'text',
-          })
-          .subscribe((historia) => (raca.historia = historia));
+        // this.http
+        //   .get(`assets/doc/${raca.nome_arquivo_historia}.txt`, {
+        //     responseType: 'text',
+        //   })
+        //   .subscribe((historia) => (raca.historia = historia));
       });
   
       return resultado;

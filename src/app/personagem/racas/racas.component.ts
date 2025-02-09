@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, SimpleChanges } from '@angular/core';
 import {
   animate,
   state,
@@ -77,7 +77,7 @@ export class RacasComponent implements OnInit {
 
   constructor(
     private readonly racaService: RacaService,
-    private fb: FormBuilder
+    private fb: FormBuilder, private cdr: ChangeDetectorRef
   ) {
     this.deslocamentos.forEach((deslocamento) => {
       this.checkboxState[deslocamento] = false;
@@ -101,6 +101,7 @@ export class RacasComponent implements OnInit {
       next: (response) => {
         this.racas = response;
         this.numero_registros = response.length;
+        this.cdr.detectChanges(); 
       },
       error: (response) => {
         console.log(response);
@@ -151,6 +152,10 @@ export class RacasComponent implements OnInit {
     this.consultar();
   }
 
+  // ngOnChanges(changes: SimpleChanges) {
+  //   this.consultar();
+  // }
+
   checkSentido(sentido: Sentido, isChecked: boolean): void {
     const formArray = this.sentidosFormArray;
     if (isChecked) {
@@ -190,6 +195,7 @@ export class RacasComponent implements OnInit {
       next: (response) => {
         this.racas = response;
         this.numero_registros = response.length;
+        this.cdr.detectChanges(); 
       },
       error: (response) => {
         console.log(response);

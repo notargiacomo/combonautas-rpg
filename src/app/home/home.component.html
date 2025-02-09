@@ -13,10 +13,13 @@
     <div class="col-sm-9">
       <mat-card class="card-padrao" style="height: 500px !important">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-8">
             <h5><b>FICHA DO PERSONAGEM: </b></h5>
           </div>
-          <div class="col-sm-6 d-flex justify-content-end">
+          <div class="col-sm-2 d-flex justify-content-end">
+            <strong>{{ "NÍVEL: " + personagem.nivel }}</strong>
+          </div>
+          <div class="col-sm-2 d-flex justify-content-end">
             <strong>{{ "PONTOS: " + personagem.pontos }}</strong>
           </div>
         </div>
@@ -25,9 +28,9 @@
             <hr />
           </div>
         </div>
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-sm-2">
-            <div class="avatar-container">
+            <div class="d-flex justify-content-center">
               <img
                 src="assets/img/icon_sheet.png"
                 alt="Avatar"
@@ -37,35 +40,26 @@
               />
             </div>
           </div>
-          <div class="col-sm-10">
-            <div class="row">
 
-            </div>
-            <div class="row">
-              <div class="col-sm-2 d-flex">
-                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
-                  <strong>RAÇA:</strong>
-                </button>
-              </div>
-              <div class="col-sm-2 d-flex">
-                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
-                  <strong>ORIGEM:</strong>
-                </button>
-              </div>
-              <div class="col-sm-4 d-flex">
-                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
-                  <strong>CLASSES:</strong>
-                </button>
-              </div>
-              <div class="col-sm-2 d-flex">
-                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
-                  <strong>DIVINDADE:</strong>
-                </button>
-              </div>
-              <div class="col-sm-2">
-                <strong>{{ "NÍVEL: " + personagem.nivel }}</strong>
-              </div>
-            </div>
+          <div class="col-sm-2 d-flex">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA')">
+              <strong>RAÇA:</strong>
+            </button>
+          </div>
+          <div class="col-sm-2 d-flex">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
+              <strong>ORIGEM:</strong>
+            </button>
+          </div>
+          <div class="col-sm-4 d-flex">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
+              <strong>CLASSES:</strong>
+            </button>
+          </div>
+          <div class="col-sm-2 d-flex">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
+              <strong>DIVINDADE:</strong>
+            </button>
           </div>
         </div>
         <div class="row">
