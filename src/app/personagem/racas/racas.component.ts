@@ -69,8 +69,6 @@ import { RacaService } from '../../service/raca.service';
   ],
 })
 export class RacasComponent implements OnInit {
-
-
   columnsToDisplay = ['nome', 'tipo', 'tamanho', 'referencias', 'paginas'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
@@ -193,9 +191,9 @@ export class RacasComponent implements OnInit {
   }
 
   /**
-   * 
+   *
    * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA
-   *  
+   *
    */
 
   @Input() racaSelecionada?: any;
@@ -203,34 +201,60 @@ export class RacasComponent implements OnInit {
   @Output() racaSelecionadaChange = new EventEmitter<Raca>();
   atributos = Object.keys(AcrecimoAtributo);
   exibeCheckAtribuos = false;
-  contadorAtributos : number = 0;
+  pontosAtributos: number = 0;
 
   checkSelecionaRaca(raca: Raca, isChecked: boolean): void {
-    if(isChecked){
+    if (isChecked) {
       this.racaSelecionada = raca;
     } else {
       this.racaSelecionada.resolucao = null;
-      this.racaSelecionada = undefined
+      this.racaSelecionada = undefined;
     }
 
     this.racaSelecionadaChange.emit(this.racaSelecionada); // Notifica o pai da mudança
   }
 
-  exibeCheckAtributo(raca: Raca): boolean{
-    return this.seVeioFicha && this.racaSelecionada !== undefined && raca.instrucao? raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES): false;
+  exibeCheckAtributo(raca: Raca): boolean {
+    if(raca.instrucao && (!this.racaSelecionada || !this.racaSelecionada.resolucao)){
+      if (raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)) {
+        this.pontosAtributos = 3 ;
+      }
+      if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES)) {
+        this.pontosAtributos = 2 ;
+      }
+    }
+
+    return this.seVeioFicha &&
+      this.racaSelecionada !== undefined &&
+      raca.instrucao
+      ? raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)
+      : false;
   }
 
   checkAtributo(key: string, check: boolean) {
-    if(!this.racaSelecionada.resolucao){
+    if (this.racaSelecionada.resolucao === undefined) {
       this.racaSelecionada.resolucao = [];
     }
 
-    // if(this.racaSelecionada.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)){
-    //   this.contadorAtributos = 3;
-    // }
+    if(check){
+      this.pontosAtributos -= 1;
+      this.racaSelecionada.resolucao.push(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
+    } else{
+      this.pontosAtributos = 1 + 1;
+      this.racaSelecionada.resolucao = this.racaSelecionada.resolucao.filter((res: AcrecimoAtributo) => res !== AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
+    }
 
-    check ? this.racaSelecionada.resolucao.push(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]): this.racaSelecionada.resolucao.splice(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
     console.log(this.racaSelecionada);
+  }
+
+  isDisabilitadoPorFaltaPontos = false;
+
+  seAcabouPontos(key: string):boolean {
+    if(!this.racaSelecionada.resolucao){
+      return false;
+    }
+
+    return this.pontosAtributos === 0 && !this.racaSelecionada.resolucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
   }
 }
 
@@ -243,19 +267,10 @@ export enum Calculo {
 }
 
 export enum AcrecimoAtributo {
-  FORCA = 'personagem.for_racial += personagem.for_racial',
-  DESTREZA = 'personagem.des_racial += personagem.des_racial',
-  CONSTITUICAO = 'personagem.con_racial += personagem.con_racial',
-  INTELIGENCIA = 'personagem.int_racial += personagem.int_racial',
-  SABEDORIA = 'personagem.sab_racial += personagem.sab_racial',
-  CARISMA = 'personagem.car_racial += personagem.car_racial',
-}
-
-export enum DecrecimoAtributo {
-  FORCA = 'personagem.for_racial -= personagem.for_racial',
-  DESTREZA = 'personagem.des_racial -= personagem.des_racial',
-  CONSTITUICAO = 'personagem.con_racial -= personagem.con_racial',
-  INTELIGENCIA = 'personagem.int_racial -= personagem.int_racial',
-  SABEDORIA = 'personagem.sab_racial -= personagem.sab_racial',
-  CARISMA = 'personagem.car_racial -= personagem.car_racial',
+  FORCA = 'this.personagem.atributos.for_racial = this.personagem.atributos.for_racial + 1',
+  DESTREZA = 'this.personagem.atributos.des_racial = this.personagem.atributos.des_racial + 1',
+  CONSTITUICAO = 'this.personagem.atributos.con_racial = this.personagem.atributos.con_racial + 1',
+  INTELIGENCIA = 'this.personagem.atributos.int_racial = this.personagem.atributos.int_racial + 1',
+  SABEDORIA = 'this.personagem.atributos.sab_racial = this.personagem.atributos.sab_racial + 1',
+  CARISMA = 'this.personagem.atributos.car_racial = this.personagem.atributos.car_racial + 1',
 }

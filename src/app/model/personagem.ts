@@ -184,4 +184,18 @@ export class Personagem {
     }
     return n + this.fatorialRecursivo(n - 1);
   }
+
+  recalcula(){
+    this.atributos.for = this.atributos.for_comprada + this.atributos.for_racial + this.atributos.for_bonus;
+
+    this.atributos.des = this.atributos.des_comprada + this.atributos.des_racial + this.atributos.des_bonus;
+
+    this.atributos.con = this.atributos.con_comprada + this.atributos.con_racial + this.atributos.con_bonus;
+
+    this.atributos.int = this.atributos.int_comprada + this.atributos.int_racial + this.atributos.int_bonus;
+
+    this.atributos.sab = this.atributos.sab_comprada + this.atributos.sab_racial + this.atributos.sab_bonus;
+
+    this.atributos.car = this.atributos.car_comprada + this.atributos.car_racial + this.atributos.car_bonus;
+  }
 }

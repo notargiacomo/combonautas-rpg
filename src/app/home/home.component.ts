@@ -39,6 +39,10 @@ export class HomeComponent {
       if (resultado) {
         console.log('Retorno do diálogo:', resultado);
         this.personagem.raca = resultado;
+        this.personagem.raca?.resolucao?.forEach(res =>{
+          eval(res);
+        })
+        this.personagem.recalcula();
       } else {
         console.log('Diálogo foi fechado sem retorno.');
       }
