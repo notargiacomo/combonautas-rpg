@@ -170,7 +170,6 @@ export class RacasComponent implements OnInit {
   }
 
   consultar() {
-    console.log(this.form.value);
     let filtro = this.form.value;
     if (filtro.nome) {
       // regex - in-memory-web-api
@@ -186,8 +185,6 @@ export class RacasComponent implements OnInit {
         console.log(response);
       },
     });
-
-    console.log(this.racas);
   }
 
   /**
@@ -218,9 +215,10 @@ export class RacasComponent implements OnInit {
     if(raca.instrucao && (!this.racaSelecionada || !this.racaSelecionada.resolucao)){
       if (raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)) {
         this.pontosAtributos = 3 ;
-      }
-      if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES)) {
+      } else if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES)) {
         this.pontosAtributos = 2 ;
+      } else {
+        raca.selecao = false;
       }
     }
 
@@ -240,11 +238,10 @@ export class RacasComponent implements OnInit {
       this.pontosAtributos -= 1;
       this.racaSelecionada.resolucao.push(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
     } else{
-      this.pontosAtributos = 1 + 1;
+      this.pontosAtributos += 1;
       this.racaSelecionada.resolucao = this.racaSelecionada.resolucao.filter((res: AcrecimoAtributo) => res !== AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
     }
-
-    console.log(this.racaSelecionada);
+    this.cdr.detectChanges();
   }
 
   isDisabilitadoPorFaltaPontos = false;
@@ -252,7 +249,9 @@ export class RacasComponent implements OnInit {
   seAcabouPontos(key: string):boolean {
     if(!this.racaSelecionada.resolucao){
       return false;
-    }
+    } 
+
+    this.racaSelecionada.selecao = !(this.pontosAtributos === 0);
 
     return this.pontosAtributos === 0 && !this.racaSelecionada.resolucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
   }
@@ -273,4 +272,13 @@ export enum AcrecimoAtributo {
   INTELIGENCIA = 'this.personagem.atributos.int_racial = this.personagem.atributos.int_racial + 1',
   SABEDORIA = 'this.personagem.atributos.sab_racial = this.personagem.atributos.sab_racial + 1',
   CARISMA = 'this.personagem.atributos.car_racial = this.personagem.atributos.car_racial + 1',
+}
+
+export enum DecrecimoAtributo {
+  FORCA = 'this.personagem.atributos.for_racial = this.personagem.atributos.for_racial - 1',
+  DESTREZA = 'this.personagem.atributos.des_racial = this.personagem.atributos.des_racial - 1',
+  CONSTITUICAO = 'this.personagem.atributos.con_racial = this.personagem.atributos.con_racial - 1',
+  INTELIGENCIA = 'this.personagem.atributos.int_racial = this.personagem.atributos.int_racial - 1',
+  SABEDORIA = 'this.personagem.atributos.sab_racial = this.personagem.atributos.sab_racial - 1',
+  CARISMA = 'this.personagem.atributos.car_racial = this.personagem.atributos.car_racial - 1',
 }

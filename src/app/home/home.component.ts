@@ -38,10 +38,14 @@ export class HomeComponent {
     dialogRef.afterClosed().subscribe((resultado) => {
       if (resultado) {
         console.log('Retorno do diálogo:', resultado);
-        this.personagem.raca = resultado;
-        this.personagem.raca?.resolucao?.forEach(res =>{
+        if (resultado.resolucao === undefined) {
+          resultado.resolucao = [];
+          resultado.resolucao.push(...resultado.instrucao);
+          this.personagem.raca = resultado;
+        }
+        this.personagem.raca?.resolucao?.forEach((res) => {
           eval(res);
-        })
+        });
         this.personagem.recalcula();
       } else {
         console.log('Diálogo foi fechado sem retorno.');

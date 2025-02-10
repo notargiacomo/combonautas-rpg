@@ -10198,7 +10198,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.VOO],
+        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_VOO],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.VEICULO,
@@ -10233,7 +10233,7 @@ export class ItemData {
         penalidade: 0,
         chave: [ 
           Chave.TIPO_ITEM_VEICULO, 
-          Chave.TERRESTRE
+          Chave.DESLOCAMENTO_TERRESTRE
         ],
         referencias: Referencia.BASICO,
         paginas: '163',
@@ -10269,7 +10269,7 @@ export class ItemData {
         penalidade: 0,
         chave: [ 
           Chave.TIPO_ITEM_VEICULO, 
-          Chave.TERRESTRE, 
+          Chave.DESLOCAMENTO_TERRESTRE, 
           Chave.COBERTURA_LEVE
         ],
         referencias: Referencia.BASICO,
@@ -10304,7 +10304,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.NATACAO],
+        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.VEICULO,
@@ -10337,7 +10337,7 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.NATACAO],
+        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
         tipo: TipoItem.VEICULO,

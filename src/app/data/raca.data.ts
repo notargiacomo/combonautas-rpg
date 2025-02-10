@@ -13,7 +13,8 @@ import { Sentido } from '../enum/sentido.enum';
 import { Deslocamento } from '../enum/deslocamento.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { Tamanho } from '../enum/tamanho.enum';
-import { Calculo } from '../personagem/racas/racas.component';
+import { AcrecimoAtributo, Calculo, DecrecimoAtributo } from '../personagem/racas/racas.component';
+import { Chave } from '../enum/chave.enum';
 
 @Injectable({
   providedIn: 'root',
@@ -36,7 +37,7 @@ export class RacaData {
         tamanho: Tamanho.MEDIO,
         nome_arquivo_descricao: `raca_humano_descricao`,
         imagem: 'assets/img/raca_humano.png',
-        deslocamentos: [''],
+        deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
         instrucao:[Calculo.TRES_ATRIBUTOS_DIFERENTES],
         referencias: Referencia.BASICO,
         paginas: '19',
@@ -51,7 +52,8 @@ export class RacaData {
         tamanho: Tamanho.MEDIO,
         nome_arquivo_descricao: `raca_anao_descricao`,
         imagem: 'assets/img/raca_anao.png',
-        deslocamentos: [''],
+        instrucao: [AcrecimoAtributo.CONSTITUICAO, AcrecimoAtributo.CONSTITUICAO, AcrecimoAtributo.SABEDORIA, DecrecimoAtributo.DESTREZA],
+        deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
         sentidos: [Sentido.VISAO_ESCURO],
         referencias: Referencia.BASICO,
         paginas: '20',

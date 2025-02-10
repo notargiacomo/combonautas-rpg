@@ -30,7 +30,7 @@ import { RacasComponent } from "../../personagem/racas/racas.component";
          (racaSelecionadaChange)="atualizarObjeto($event)">></app-racas>
     </mat-dialog-content>
     <mat-dialog-actions>
-      <button mat-button mat-flat-button [disabled]="objeto === undefined" (click)="confirmar()">Confirmar</button>
+      <button mat-button mat-flat-button [disabled]="seDesabilitaConfirmar()" (click)="confirmar()">Confirmar</button>
       <button mat-button mat-dialog-close mat-flat-button>Fechar</button>
     </mat-dialog-actions>
   `,
@@ -57,6 +57,11 @@ objeto: any;
 
   ngOnInit() {
     this.objeto = this.data.objeto;
+  }
+
+  seDesabilitaConfirmar(): boolean{
+    let isDesabilita: boolean = this.objeto === undefined || this.objeto.selecao === undefined || this.objeto.selecao;
+    return isDesabilita;
   }
 
   atualizarObjeto(novaRaca: any) {
