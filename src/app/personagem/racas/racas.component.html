@@ -217,7 +217,7 @@
                 <div class="col-sm-12 mt-4">
                   <section class="section">
                     @for (atributo of atributos; track atributo) {
-                    <mat-checkbox [disabled]="seAcabouPontos(atributo)"
+                    <mat-checkbox [disabled]="seExibeCheck(atributo)"
                       name="sentido"
                       (change)="checkAtributo(atributo, $event.checked)"
                     >

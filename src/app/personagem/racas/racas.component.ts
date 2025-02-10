@@ -212,11 +212,14 @@ export class RacasComponent implements OnInit {
   }
 
   exibeCheckAtributo(raca: Raca): boolean {
-    if(raca.instrucao && (!this.racaSelecionada || !this.racaSelecionada.resolucao)){
+    if (
+      raca.instrucao &&
+      (!this.racaSelecionada || !this.racaSelecionada.resolucao)
+    ) {
       if (raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)) {
-        this.pontosAtributos = 3 ;
+        this.pontosAtributos = 3;
       } else if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES)) {
-        this.pontosAtributos = 2 ;
+        this.pontosAtributos = 2;
       } else {
         raca.selecao = false;
       }
@@ -234,26 +237,47 @@ export class RacasComponent implements OnInit {
       this.racaSelecionada.resolucao = [];
     }
 
-    if(check){
+    if (check) {
       this.pontosAtributos -= 1;
-      this.racaSelecionada.resolucao.push(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
-    } else{
+      console.log(this.pontosAtributos);
+      this.racaSelecionada.resolucao.push(
+        AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
+      );
+      console.log(this.racaSelecionada);
+    } else {
       this.pontosAtributos += 1;
-      this.racaSelecionada.resolucao = this.racaSelecionada.resolucao.filter((res: AcrecimoAtributo) => res !== AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
+      this.racaSelecionada.resolucao = this.racaSelecionada.resolucao.filter(
+        (res: AcrecimoAtributo) =>
+          res !== AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
+      );
     }
     this.cdr.detectChanges();
   }
 
   isDisabilitadoPorFaltaPontos = false;
 
-  seAcabouPontos(key: string):boolean {
-    if(!this.racaSelecionada.resolucao){
-      return false;
-    } 
-
+  seExibeCheck(key: string): boolean {
     this.racaSelecionada.selecao = !(this.pontosAtributos === 0);
 
-    return this.pontosAtributos === 0 && !this.racaSelecionada.resolucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
+    if (this.racaSelecionada.instrucao.includes(Calculo.EXCETO)) {
+      return (
+        this.racaSelecionada.instrucao[
+          this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO) + 1
+        ] === AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
+      );
+    }
+
+    if (!this.racaSelecionada.resolucao) {
+      return false;
+    }
+
+
+    return (
+      this.pontosAtributos === 0 &&
+      !this.racaSelecionada.resolucao.includes(
+        AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
+      )
+    );
   }
 }
 

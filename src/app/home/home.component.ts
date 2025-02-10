@@ -37,13 +37,13 @@ export class HomeComponent {
 
     dialogRef.afterClosed().subscribe((resultado) => {
       if (resultado) {
-        console.log('Retorno do diálogo:', resultado);
-        if (resultado.resolucao === undefined) {
+        this.personagem.raca = resultado;
+        console.log('Retorno do diálogo:', resultado.resolucao);
+        if (this.personagem.raca === undefined) {
           resultado.resolucao = [];
           resultado.resolucao.push(...resultado.instrucao);
-          this.personagem.raca = resultado;
-          this.personagem.resetaAtributosRaciais();
         }
+        this.personagem.resetaAtributosRaciais();
         this.personagem.raca?.resolucao?.forEach((res) => {
           eval(res);
         });
