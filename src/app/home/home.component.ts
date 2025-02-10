@@ -42,6 +42,7 @@ export class HomeComponent {
           resultado.resolucao = [];
           resultado.resolucao.push(...resultado.instrucao);
           this.personagem.raca = resultado;
+          this.personagem.resetaAtributosRaciais();
         }
         this.personagem.raca?.resolucao?.forEach((res) => {
           eval(res);

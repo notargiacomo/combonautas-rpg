@@ -198,4 +198,13 @@ export class Personagem {
 
     this.atributos.car = this.atributos.car_comprada + this.atributos.car_racial + this.atributos.car_bonus;
   }
+
+  resetaAtributosRaciais(){
+    this.atributos.for_racial = 0;
+    this.atributos.des_racial = 0;
+    this.atributos.con_racial = 0;
+    this.atributos.int_racial = 0;
+    this.atributos.sab_racial = 0;
+    this.atributos.car_racial = 0;
+  }
 }
