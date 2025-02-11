@@ -1,7 +1,7 @@
 <div class="container py-4">
-  <div class="row" style="height: 500px !important">
+  <div class="row" style="min-height: 500px !important">
     <div class="col-sm-3">
-      <mat-card class="card-padrao" style="height: 500px !important">
+      <mat-card class="card-padrao" style="min-height: 500px !important">
         <div class="row">
           <div class="col-sm-12">
             <h5><b>PERSONAGENS </b></h5>
@@ -11,7 +11,7 @@
       </mat-card>
     </div>
     <div class="col-sm-9">
-      <mat-card class="card-padrao" style="height: 500px !important">
+      <mat-card class="card-padrao" style="min-height: 500px !important">
         <div class="row">
           <div class="col-sm-8">
             <h5><b>FICHA DO PERSONAGEM: </b></h5>
@@ -42,8 +42,16 @@
           </div>
 
           <div class="col-sm-2 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA')">
-              <strong>RAÇA: {{ personagem.raca?.nome?.toLocaleUpperCase() }}</strong>
+            <button
+              class="btn btn-sm btn-outline-secondary ms-2 botao-ficha"
+              (click)="openDialog('RAÇA')"
+            >
+              <!-- <img *ngIf="personagem.raca" [src]="personagem.raca.imagem" [alt]="personagem.raca.nome" style="width: 100px !important; height: 100px !important;" /> -->
+              <strong>{{
+                personagem.raca
+                  ? personagem.raca?.nome?.toLocaleUpperCase()
+                  : "RAÇA"
+              }}</strong>
             </button>
           </div>
           <div class="col-sm-2 d-flex">
@@ -528,7 +536,36 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <mat-card class="card-padrao">
+              <div class="row">
+                <div class="col-sm-3">
+                  <strong style="font-size: 9pt !important;">PERÍCIA</strong>
+                </div>
+                <div class="col-sm-3">
+                  <strong style="font-size: 8pt !important;">TOTAL</strong>
+                </div>
+                <div class="col-sm-3">
+                  <strong style="font-size: 8pt !important;">ATRIBUTO</strong>
+                </div>
+                <div class="col-sm-3">
+                  <strong style="font-size: 8pt !important;">OUTROS</strong>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr/>
+                </div>
+              </div>
+              @for (pericia of pericias; track pericia) {
+              <div class="row">
+                <div class="col-sm-6">
+                  <label style="font-size: 8pt !important;">{{ pericia }}</label>
+                </div>
+              </div>
+              }
+            </mat-card>
+          </div>
         </div>
       </mat-card>
     </div>

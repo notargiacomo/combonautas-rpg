@@ -125,7 +125,7 @@ export enum Chave {
   PERICIA_LADINAGEM = 'LADINAGEM',
   PERICIA_LUTA = 'LUTA',
   PERICIA_MISTICISMO = 'MISTICISMO',
-  PERICIA_NOBREZA = 'MISTICISMO',
+  PERICIA_NOBREZA = 'NOBREZA',
   PERICIA_OFICIO = 'OFICIO',
   PERICIA_PERCEPCAO = 'PERCEPÇÃO',
   PERICIA_PILOTAGEM = 'PILOTAGEM',
@@ -652,4 +652,18 @@ export enum Chave {
   TERRENO_URBANO = 'URBANO',
   TERRENO_ARTICO = 'ÁRTICO',
   TERRENO_CEU = 'CEU',
+
+}
+
+export function chaveToString(chave: Chave): string {
+  let chaveEncontrada = Object.keys(Chave).find(
+    (key) => Chave[key as keyof typeof Chave] === chave
+  );
+  return chaveEncontrada ? chaveEncontrada.split('_').join(' ') : '';
+}
+
+export function getPrefixo(prefixo: string): string[] {
+  return Object.keys(Chave)
+    .filter((key) => key.startsWith(prefixo)) 
+    .map((key) => Chave[key as keyof typeof Chave]);
 }

@@ -25,7 +25,7 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-import { Chave } from '../../enum/chave.enum';
+import { Chave, chaveToString } from '../../enum/chave.enum';
 
 @Component({
   selector: 'app-itens',
@@ -180,13 +180,6 @@ export class ItensComponent implements AfterViewInit {
         texto: Object.values(Regras)[idTexto],
       },
     });
-  }
-
-  chaveToString(chave: Chave): string {
-    let chaveEncontrada = Object.keys(Chave).find(
-      (key) => Chave[key as keyof typeof Chave] === chave
-    );
-    return chaveEncontrada ? chaveEncontrada.split('_').join(' ') : '';
   }
 
   limparFiltros() {

@@ -1,3 +1,4 @@
+import { getPrefixo } from '../enum/chave.enum';
 import { Raca } from './raca';
 export class Personagem {
   id?: number;
@@ -31,11 +32,14 @@ export class Personagem {
     car_racial: number;
     car_bonus: number;
   };
+  pericias?: Pericia [];
 
   constructor() {
     this.pontos ? this.pontos : (this.pontos = 10);
     this.nivel ? this.nivel : (this.nivel = 1);
+    this.pericias = [];
     this.inicializaAtributos();
+    this.inicializaPericias();
   }
 
   inicializaAtributos() {
@@ -185,17 +189,12 @@ export class Personagem {
     return n + this.fatorialRecursivo(n - 1);
   }
 
-  recalcula(){
+  recalculaAtributos(){
     this.atributos.for = this.atributos.for_comprada + this.atributos.for_racial + this.atributos.for_bonus;
-
     this.atributos.des = this.atributos.des_comprada + this.atributos.des_racial + this.atributos.des_bonus;
-
     this.atributos.con = this.atributos.con_comprada + this.atributos.con_racial + this.atributos.con_bonus;
-
     this.atributos.int = this.atributos.int_comprada + this.atributos.int_racial + this.atributos.int_bonus;
-
     this.atributos.sab = this.atributos.sab_comprada + this.atributos.sab_racial + this.atributos.sab_bonus;
-
     this.atributos.car = this.atributos.car_comprada + this.atributos.car_racial + this.atributos.car_bonus;
   }
 
@@ -207,4 +206,35 @@ export class Personagem {
     this.atributos.sab_racial = 0;
     this.atributos.car_racial = 0;
   }
+
+  inicializaPericias() {
+    this.pericias?.push(new Pericia('ACROBACIA', 0, 'DESTREZA', this.atributos.des, this.atributos.car_bonus));
+  }
 }
+class Pericia {
+  nome?: string;
+  descricao?: string;
+  treinado?: boolean;
+  total?: number;
+  bonus_nivel?: number;
+  atributo_descricao?: string;
+  atributo_valor?: number;
+  bonus_outros?: number;
+
+  constructor(
+    nome: string, 
+    bonus_nivel: number, 
+    atributo_descricao: string,
+    atributo_valor: number,
+    bonus_outros: number
+  ){
+    this.nome = nome;
+    this.treinado = false;
+    this.bonus_nivel = bonus_nivel;
+    this.atributo_descricao = atributo_descricao;
+    this.atributo_valor = atributo_valor;
+    this.bonus_outros = bonus_outros;
+    this.total = atributo_valor + bonus_nivel + bonus_outros;
+  }
+}
+
