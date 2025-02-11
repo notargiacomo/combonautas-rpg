@@ -36,6 +36,7 @@ import { Referencia } from '../../enum/referencia.enum';
 import { Sentido } from '../../enum/sentido.enum';
 import { Raca } from '../../model/raca';
 import { RacaService } from '../../service/raca.service';
+import { Atributo } from '../../enum/atributo.enum';
 
 @Component({
   selector: 'app-racas',
@@ -199,51 +200,110 @@ export class RacasComponent implements OnInit {
   atributos = Object.keys(AcrecimoAtributo);
   exibeCheckAtribuos = false;
   pontosAtributos: number = 0;
+  seExceto: boolean = false;
 
   checkSelecionaRaca(raca: Raca, isChecked: boolean): void {
     if (isChecked) {
       this.racaSelecionada = raca;
-    } else {
-      this.racaSelecionada.resolucao = null;
-      this.racaSelecionada = undefined;
-    }
+      this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.FORCA);
+      this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.DESTREZA);
+      this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.CONSTITUICAO);
+      this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.INTELIGENCIA);
+      this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.SABEDORIA);
+      this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.CARISMA);
 
+      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.FORCA);
+      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.DESTREZA);
+      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.CONSTITUICAO);
+      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.INTELIGENCIA);
+      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.SABEDORIA);
+      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.CARISMA);
+
+      if (raca.instrucao) {
+        if (raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)) {
+          this.pontosAtributos = 3;
+          raca.seSelecaoFinalizada = false;
+        } else if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES)) {
+          this.pontosAtributos = 2;
+          raca.seSelecaoFinalizada = false;
+        } else if (raca.instrucao.includes(Calculo.UM_ATRIBUTO)) {
+          this.pontosAtributos = 1;
+          raca.seSelecaoFinalizada = false;
+        } else {
+          raca.seSelecaoFinalizada = true;
+        }
+        console.log(
+          'Raça: ' +
+            raca.nome +
+            ' / ' +
+            this.pontosAtributos +
+            ' / ' +
+            raca.instrucao
+        );
+      } 
+  
+      console.log(this.racaSelecionada);
+    } else {
+      this.racaSelecionada = undefined;
+      this.pontosAtributos = 0;
+    }
     this.racaSelecionadaChange.emit(this.racaSelecionada); // Notifica o pai da mudança
   }
 
-  exibeCheckAtributo(raca: Raca): boolean {
-    if (
-      raca.instrucao &&
-      (!this.racaSelecionada || !this.racaSelecionada.resolucao)
-    ) {
-      if (raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)) {
-        this.pontosAtributos = 3;
-      } else if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES)) {
-        this.pontosAtributos = 2;
-      } else {
-        raca.selecao = false;
-      }
-    }
+  private varreInstrucaoBuscandoAcrecimo(raca: Raca, acrecimo: AcrecimoAtributo) {
+    const indice = this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO);
+    const antes = this.racaSelecionada.instrucao.slice(0, indice);
 
-    return this.seVeioFicha &&
-      this.racaSelecionada !== undefined &&
-      raca.instrucao
-      ? raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)
+    antes?.forEach((instrucao: AcrecimoAtributo) => {
+      if (instrucao === acrecimo) {
+        raca.resolucao?.push(acrecimo);
+      }
+    });
+  }
+
+  private varreInstrucaoBuscandoDecrecimo(raca: Raca, decrescimo: DecrecimoAtributo) {
+    raca.instrucao?.forEach((instrucao) => {
+      if (instrucao === decrescimo) {
+        raca.resolucao?.push(decrescimo);
+      }
+    });
+  }
+
+  seExibeCheckAtributos(raca: Raca): boolean {
+    return this.seVeioFicha && this.racaSelecionada !== undefined && raca.instrucao
+      ? raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES) ||
+          raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES) ||
+          raca.instrucao.includes(Calculo.UM_ATRIBUTO)
       : false;
   }
 
-  checkAtributo(key: string, check: boolean) {
-    if (this.racaSelecionada.resolucao === undefined) {
-      this.racaSelecionada.resolucao = [];
+  seDesabilitaCheckAtributoEspecifico(raca: Raca, key: string): boolean {
+    return (this.pontosAtributos === 0 && this.regraDesabilitaCheckAtributoBonusVariavel(key)) || this.regraDesaBilitaAtributoExceto(key) ;
+  }
+
+  regraDesabilitaCheckAtributoBonusVariavel(key: string): boolean {
+    return !this.racaSelecionada.resolucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
+  }
+
+  regraDesaBilitaAtributoExceto(key: string): boolean{
+    let seExceto = this.racaSelecionada.instrucao?.includes(Calculo.EXCETO);
+
+    if(seExceto){
+      const indice = this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO);
+      const depois = this.racaSelecionada.instrucao.slice(indice + 1);
+      seExceto = depois.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
     }
 
+    return seExceto  
+  }
+
+  checkAtributo(key: string, check: boolean) {
     if (check) {
       this.pontosAtributos -= 1;
       console.log(this.pontosAtributos);
       this.racaSelecionada.resolucao.push(
         AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
       );
-      console.log(this.racaSelecionada);
     } else {
       this.pontosAtributos += 1;
       this.racaSelecionada.resolucao = this.racaSelecionada.resolucao.filter(
@@ -251,39 +311,14 @@ export class RacasComponent implements OnInit {
           res !== AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
       );
     }
+
+    this.racaSelecionada.seSelecaoFinalizada = this.pontosAtributos === 0;
     this.cdr.detectChanges();
-  }
-
-  isDisabilitadoPorFaltaPontos = false;
-
-  seExibeCheck(key: string): boolean {
-    this.racaSelecionada.selecao = !(this.pontosAtributos === 0);
-
-    if (this.racaSelecionada.instrucao.includes(Calculo.EXCETO)) {
-      return (
-        this.racaSelecionada.instrucao[
-          this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO) + 1
-        ] === AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
-      );
-    }
-
-    if (!this.racaSelecionada.resolucao) {
-      return false;
-    }
-
-
-    return (
-      this.pontosAtributos === 0 &&
-      !this.racaSelecionada.resolucao.includes(
-        AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
-      )
-    );
   }
 }
 
 export enum Calculo {
-  MAIS_UM = '+1',
-  MAIS_DOIS = '+2',
+  UM_ATRIBUTO = '1 ATRIBUTO',
   DOIS_ATRIBUTOS_DIFERENTES = '2 ATRIBUTOS DIFERENTES',
   TRES_ATRIBUTOS_DIFERENTES = '3 ATRIBUTOS DIFERENTES',
   EXCETO = 'EXCETO',

@@ -15,7 +15,7 @@ export class Raca {
   deslocamentos?: string[];
   instrucao?: string[];
   resolucao?: string[];
-  selecao?: boolean;
+  seSelecaoFinalizada?: boolean;
   referencias?: string;
   paginas?: string
 

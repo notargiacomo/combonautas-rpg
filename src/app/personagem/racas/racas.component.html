@@ -192,7 +192,7 @@
                 element == expandedElement ? 'expanded' : 'collapsed'
               "
             >
-              <div class="row">
+              <div class="row" *ngIf="seVeioFicha && element.instrucao.length !== 0">
                 <div class="col-sm-12 mt-4">
                   <div class="row">
                     <div class="col-sm-3 mt-4">
@@ -203,7 +203,7 @@
                     <div class="col-sm-9 mt-3">
                       <section class="section">
                         <mat-checkbox
-                          *ngIf="seVeioFicha"
+                          *ngIf="seVeioFicha && element.instrucao.length !== 0"
                           name="racaSelecionada"
                           (change)="checkSelecionaRaca(element, $event.checked)"
                         >
@@ -213,11 +213,11 @@
                   </div>
                 </div>
               </div>
-              <div class="row" *ngIf="exibeCheckAtributo(element)">
+              <div class="row" *ngIf="seExibeCheckAtributos(element)">
                 <div class="col-sm-12 mt-4">
                   <section class="section">
                     @for (atributo of atributos; track atributo) {
-                    <mat-checkbox [disabled]="seExibeCheck(atributo)"
+                    <mat-checkbox [disabled]="seDesabilitaCheckAtributoEspecifico(element, atributo)"
                       name="sentido"
                       (change)="checkAtributo(atributo, $event.checked)"
                     >
@@ -227,7 +227,7 @@
                   </section>
                 </div>
               </div>
-              <hr />
+              <hr *ngIf="seVeioFicha && element.instrucao.length !== 0" />
               <div class="row">
                 <div
                   class="col-sm-9 mt-4 text-justify"

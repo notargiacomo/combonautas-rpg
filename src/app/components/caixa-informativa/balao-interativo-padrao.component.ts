@@ -60,7 +60,9 @@ objeto: any;
   }
 
   seDesabilitaConfirmar(): boolean{
-    let isDesabilita: boolean = this.objeto === undefined || this.objeto.selecao === undefined || this.objeto.selecao;
+    let isDesabilita: boolean = 
+    this.objeto === undefined 
+    || !this.objeto.seSelecaoFinalizada;
     return isDesabilita;
   }
 
