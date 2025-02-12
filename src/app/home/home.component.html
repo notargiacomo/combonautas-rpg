@@ -77,6 +77,7 @@
         </div>
         <div class="row">
           <div class="col-sm-8">
+            <mat-card class="card-padrao">
             <div class="row align-items-center">
               <div class="col-sm-2">
                 <div class="row text-center">
@@ -559,6 +560,7 @@
                 </div>
               </div>
             </div>
+          </mat-card>
           </div>
           <div class="col-sm-4">
             <mat-card class="card-padrao">
@@ -583,7 +585,7 @@
                         <mat-checkbox
                           name="treinado"
                           (change)="
-                            element.checkTreinamento(element, $event.checked)
+                            element.checkTreinamento($event.checked)
                           "
                         >
                         </mat-checkbox>

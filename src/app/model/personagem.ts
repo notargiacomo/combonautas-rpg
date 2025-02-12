@@ -319,18 +319,19 @@ export class PericiaPersonagem {
 
   atualiza(bonus_nivel: number,
     atributo: number,  outros: number){
+    this.nivel = bonus_nivel;
     this.atributo = atributo;
     this.outros = outros;
-    this.total = atributo + bonus_nivel + outros;
+    this.total = atributo + Math.floor(this.nivel!/2) + outros;
   }
 
   checkTreinamento(isChecked: boolean) {
     this.treinado = isChecked;
+    let bonus_treinado = 0;
     if(this.treinado){
-      let bonus_treinado = 2;
       bonus_treinado = this.nivel! >= 7 ? 4 : this.nivel! >= 15 ? 6: 2;
       this.total = this.atributo! + Math.floor(this.nivel!/2) + this.outros! + bonus_treinado;
     }
-    this.total = this.atributo! + Math.floor(this.nivel!/2) + this.outros!
+    this.total = this.atributo! + Math.floor(this.nivel!/2) + this.outros! + bonus_treinado;
   }
 }
