@@ -1,43 +1,58 @@
 .campo-modificadores {
-    height: 55px !important; width: 48px !important; font-size: xx-large !important; text-align: center; border: 1px solid rgb(228, 176, 100);
+  height: 55px !important;
+  width: 48px !important;
+  font-size: xx-large !important;
+  text-align: center;
+  border: 1px solid rgb(228, 176, 100);
 }
 
 .campo-atributos {
-    width: 25px !important; 
-    height: 25px !important;
-    font-size: small !important; 
-    text-align: center; border: 1px solid rgb(228, 176, 100);
+  width: 25px !important;
+  height: 25px !important;
+  font-size: small !important;
+  text-align: center;
+  border: 1px solid rgb(228, 176, 100);
 }
 
 .botoes-mais-menos {
-    width: 25px !important;   border: 1px solid rgb(228, 176, 100);
+  width: 25px !important;
+  border: 1px solid rgb(228, 176, 100);
 }
 
-.img, .svg {
-    zoom: 100% !important;
+.img,
+.svg {
+  zoom: 100% !important;
 }
 
 .imagem-ficha {
-    width: 100px !important; /* Ajuste para o tamanho desejado */
-    height: 100px !important; /* Ajuste para o tamanho desejado */
-    border-radius: 50% !important;
-    overflow: hidden !important;
-    background-position: center !important;
-    background-size: cover !important; /* Isso ajusta o zoom para cobrir o círculo */
-    border: 2px solid rgb(228, 176, 100) !important;
+  width: 100px !important; /* Ajuste para o tamanho desejado */
+  height: 100px !important; /* Ajuste para o tamanho desejado */
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  background-position: center !important;
+  background-size: cover !important; /* Isso ajusta o zoom para cobrir o círculo */
+  border: 2px solid rgb(228, 176, 100) !important;
+}
 
-  }
+.botao-ficha {
+  font-family: "Oswald" !important;
+  font-size: 12pt !important;
+  border: 3px solid rgb(228, 176, 100); /* Moldura */
+  background-color: rgb(132, 26, 18) !important;
+  cursor: pointer !important;
+  color: white !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 200% !important;
+  vertical-align: center !important;
+  align-self: center !important;
+}
 
-  .botao-ficha {
-    font-family: "Oswald" !important;
-    font-size: 12pt !important;
-    border: 3px solid rgb(228, 176, 100); /* Moldura */
-    background-color: rgb(132, 26, 18) !important;
-    cursor: pointer !important;
-    color: white !important;
-    width: 100% !important;
-    height: 100% !important;
-    max-height: 200% !important;
-    vertical-align: center !important;
-    align-self: center !important;
-  }
+.pericia {
+    font-size: 8pt !important;
+}
+
+.pericia-valor {
+    font-size: 8pt !important;
+    text-align: center !important
+}

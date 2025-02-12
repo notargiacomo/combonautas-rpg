@@ -1,4 +1,5 @@
 import { getPrefixo } from '../enum/chave.enum';
+import { Pericia } from './pericia';
 import { Raca } from './raca';
 export class Personagem {
   id?: number;
@@ -7,74 +8,73 @@ export class Personagem {
   nivel?: number;
   pontos!: number;
   atributos!: {
-    for: number;
-    for_comprada: number;
-    for_racial: number;
-    for_bonus: number;
-    des: number;
-    des_comprada: number;
-    des_racial: number;
-    des_bonus: number;
-    con: number;
-    con_comprada: number;
-    con_racial: number;
-    con_bonus: number;
-    int: number;
-    int_comprada: number;
-    int_racial: number;
-    int_bonus: number;
-    sab: number;
-    sab_comprada: number;
-    sab_racial: number;
-    sab_bonus: number;
-    car: number;
-    car_comprada: number;
-    car_racial: number;
-    car_bonus: number;
+    forca: number;
+    forca_comprada: number;
+    forca_racial: number;
+    forca_bonus: number;
+    destreza: number;
+    destreza_comprada: number;
+    destreza_racial: number;
+    destreza_bonus: number;
+    constituicao: number;
+    constituicao_comprada: number;
+    constituicao_racial: number;
+    constituicao_bonus: number;
+    inteligencia: number;
+    inteligencia_comprada: number;
+    inteligencia_racial: number;
+    inteligencia_bonus: number;
+    sabedoria: number;
+    sabedoria_comprada: number;
+    sabedoria_racial: number;
+    sabedoria_bonus: number;
+    carisma: number;
+    carisma_comprada: number;
+    carisma_racial: number;
+    carisma_bonus: number;
   };
-  pericias?: Pericia [];
+  pericias?: PericiaPersonagem[];
 
   constructor() {
     this.pontos ? this.pontos : (this.pontos = 10);
     this.nivel ? this.nivel : (this.nivel = 1);
     this.pericias = [];
     this.inicializaAtributos();
-    this.inicializaPericias();
   }
 
   inicializaAtributos() {
     if (this.atributos) {
-      this.atributos.for ? this.atributos.for : 0;
-      this.atributos.des ? this.atributos.des : 0;
-      this.atributos.con ? this.atributos.con : 0;
-      this.atributos.int ? this.atributos.int : 0;
-      this.atributos.sab ? this.atributos.sab : 0;
+      this.atributos.forca ? this.atributos.forca : 0;
+      this.atributos.destreza ? this.atributos.destreza : 0;
+      this.atributos.constituicao ? this.atributos.constituicao : 0;
+      this.atributos.inteligencia ? this.atributos.inteligencia : 0;
+      this.atributos.sabedoria ? this.atributos.sabedoria : 0;
     } else {
       this.atributos = {
-        for: 0,
-        for_comprada: 0,
-        for_racial: 0,
-        for_bonus: 0,
-        des: 0,
-        des_comprada: 0,
-        des_racial: 0,
-        des_bonus: 0,
-        con: 0,
-        con_comprada: 0,
-        con_racial: 0,
-        con_bonus: 0,
-        int: 0,
-        int_comprada: 0,
-        int_racial: 0,
-        int_bonus: 0,
-        sab: 0,
-        sab_comprada: 0,
-        sab_racial: 0,
-        sab_bonus: 0,
-        car: 0,
-        car_comprada: 0,
-        car_racial: 0,
-        car_bonus: 0,
+        forca: 0,
+        forca_comprada: 0,
+        forca_racial: 0,
+        forca_bonus: 0,
+        destreza: 0,
+        destreza_comprada: 0,
+        destreza_racial: 0,
+        destreza_bonus: 0,
+        constituicao: 0,
+        constituicao_comprada: 0,
+        constituicao_racial: 0,
+        constituicao_bonus: 0,
+        inteligencia: 0,
+        inteligencia_comprada: 0,
+        inteligencia_racial: 0,
+        inteligencia_bonus: 0,
+        sabedoria: 0,
+        sabedoria_comprada: 0,
+        sabedoria_racial: 0,
+        sabedoria_bonus: 0,
+        carisma: 0,
+        carisma_comprada: 0,
+        carisma_racial: 0,
+        carisma_bonus: 0,
       };
     }
   }
@@ -83,91 +83,112 @@ export class Personagem {
     switch (atributo) {
       case 'for': {
         if (novoValor === -1 || novoValor === 0) {
-          this.pontos += this.atributos.for_comprada - novoValor;
+          this.pontos += this.atributos.forca_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(this.atributos.for_comprada);
+          this.pontos += this.calculandoValorPonto(
+            this.atributos.forca_comprada
+          );
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        this.atributos.for_comprada = novoValor;
-        this.atributos.for =
-          this.atributos.for_comprada +
-          this.atributos.for_racial +
-          this.atributos.for_bonus;
+        this.atributos.forca_comprada = novoValor;
+        this.atributos.forca =
+          this.atributos.forca_comprada +
+          this.atributos.forca_racial +
+          this.atributos.forca_bonus;
         break;
       }
       case 'des': {
         if (novoValor === -1 || novoValor === 0) {
-          this.pontos += this.atributos.des_comprada - novoValor;
+          this.pontos += this.atributos.destreza_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(this.atributos.des_comprada);
+          this.pontos += this.calculandoValorPonto(
+            this.atributos.destreza_comprada
+          );
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        this.atributos.des_comprada = novoValor;
-        this.atributos.des =
-          this.atributos.des_comprada +
-          this.atributos.des_racial +
-          this.atributos.des_bonus;
+        this.atributos.destreza_comprada = novoValor;
+        this.atributos.destreza =
+          this.atributos.destreza_comprada +
+          this.atributos.destreza_racial +
+          this.atributos.destreza_bonus;
         break;
       }
       case 'con': {
         if (novoValor === -1 || novoValor === 0) {
-          this.pontos += this.atributos.con_comprada - novoValor;
+          this.pontos += this.atributos.constituicao_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(this.atributos.con_comprada);
+          this.pontos += this.calculandoValorPonto(
+            this.atributos.constituicao_comprada
+          );
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        this.atributos.con_comprada = novoValor;
-        this.atributos.con =
-          this.atributos.con_comprada +
-          this.atributos.con_racial +
-          this.atributos.con_bonus;
+        this.atributos.constituicao_comprada = novoValor;
+        this.atributos.constituicao =
+          this.atributos.constituicao_comprada +
+          this.atributos.constituicao_racial +
+          this.atributos.constituicao_bonus;
         break;
       }
       case 'int': {
         if (novoValor === -1 || novoValor === 0) {
-          this.pontos += this.atributos.int_comprada - novoValor;
+          this.pontos += this.atributos.inteligencia_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(this.atributos.int_comprada);
+          this.pontos += this.calculandoValorPonto(
+            this.atributos.inteligencia_comprada
+          );
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        this.atributos.int_comprada = novoValor;
-        this.atributos.int =
-          this.atributos.int_comprada +
-          this.atributos.int_racial +
-          this.atributos.int_bonus;
+        this.atributos.inteligencia_comprada = novoValor;
+        this.atributos.inteligencia =
+          this.atributos.inteligencia_comprada +
+          this.atributos.inteligencia_racial +
+          this.atributos.inteligencia_bonus;
         break;
       }
       case 'sab': {
         if (novoValor === -1 || novoValor === 0) {
-          this.pontos += this.atributos.sab_comprada - novoValor;
+          this.pontos += this.atributos.sabedoria_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(this.atributos.sab_comprada);
+          this.pontos += this.calculandoValorPonto(
+            this.atributos.sabedoria_comprada
+          );
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        this.atributos.sab_comprada = novoValor;
-        this.atributos.sab =
-          this.atributos.sab_comprada +
-          this.atributos.sab_racial +
-          this.atributos.sab_bonus;
+        this.atributos.sabedoria_comprada = novoValor;
+        this.atributos.sabedoria =
+          this.atributos.sabedoria_comprada +
+          this.atributos.sabedoria_racial +
+          this.atributos.sabedoria_bonus;
         break;
       }
       case 'car': {
         if (novoValor === -1 || novoValor === 0) {
-          this.pontos += this.atributos.car_comprada - novoValor;
+          this.pontos += this.atributos.carisma_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(this.atributos.car_comprada);
+          this.pontos += this.calculandoValorPonto(
+            this.atributos.carisma_comprada
+          );
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        this.atributos.car_comprada = novoValor;
-        this.atributos.car =
-          this.atributos.car_comprada +
-          this.atributos.car_racial +
-          this.atributos.car_bonus;
+        this.atributos.carisma_comprada = novoValor;
+        this.atributos.carisma =
+          this.atributos.carisma_comprada +
+          this.atributos.carisma_racial +
+          this.atributos.carisma_bonus;
         break;
       }
       default: {
       }
     }
+
+    this.recalculaPericias();
+  }
+
+  private recalculaPericias() {
+    this.pericias?.forEach(pericia => {
+      let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_descricao!));
+      pericia.atualiza(Math.floor(this.nivel! / 2), valorAtributo, 0);
+    });
   }
 
   calculandoValorPonto(atributo: number): number {
@@ -189,52 +210,117 @@ export class Personagem {
     return n + this.fatorialRecursivo(n - 1);
   }
 
-  recalculaAtributos(){
-    this.atributos.for = this.atributos.for_comprada + this.atributos.for_racial + this.atributos.for_bonus;
-    this.atributos.des = this.atributos.des_comprada + this.atributos.des_racial + this.atributos.des_bonus;
-    this.atributos.con = this.atributos.con_comprada + this.atributos.con_racial + this.atributos.con_bonus;
-    this.atributos.int = this.atributos.int_comprada + this.atributos.int_racial + this.atributos.int_bonus;
-    this.atributos.sab = this.atributos.sab_comprada + this.atributos.sab_racial + this.atributos.sab_bonus;
-    this.atributos.car = this.atributos.car_comprada + this.atributos.car_racial + this.atributos.car_bonus;
+  recalculaAtributos() {
+    this.atributos.forca =
+      this.atributos.forca_comprada +
+      this.atributos.forca_racial +
+      this.atributos.forca_bonus;
+    this.atributos.destreza =
+      this.atributos.destreza_comprada +
+      this.atributos.destreza_racial +
+      this.atributos.destreza_bonus;
+    this.atributos.constituicao =
+      this.atributos.constituicao_comprada +
+      this.atributos.constituicao_racial +
+      this.atributos.constituicao_bonus;
+    this.atributos.inteligencia =
+      this.atributos.inteligencia_comprada +
+      this.atributos.inteligencia_racial +
+      this.atributos.inteligencia_bonus;
+    this.atributos.sabedoria =
+      this.atributos.sabedoria_comprada +
+      this.atributos.sabedoria_racial +
+      this.atributos.sabedoria_bonus;
+    this.atributos.carisma =
+      this.atributos.carisma_comprada +
+      this.atributos.carisma_racial +
+      this.atributos.carisma_bonus;
+      this.recalculaPericias();
   }
 
-  resetaAtributosRaciais(){
-    this.atributos.for_racial = 0;
-    this.atributos.des_racial = 0;
-    this.atributos.con_racial = 0;
-    this.atributos.int_racial = 0;
-    this.atributos.sab_racial = 0;
-    this.atributos.car_racial = 0;
+  resetaAtributosRaciais() {
+    this.atributos.forca_racial = 0;
+    this.atributos.destreza_racial = 0;
+    this.atributos.constituicao_racial = 0;
+    this.atributos.inteligencia_racial = 0;
+    this.atributos.sabedoria_racial = 0;
+    this.atributos.carisma_racial = 0;
   }
 
-  inicializaPericias() {
-    this.pericias?.push(new Pericia('ACROBACIA', 0, 'DESTREZA', this.atributos.des, this.atributos.car_bonus));
+  inicializaPericias(pericias: Pericia[]) {
+    pericias?.forEach((pericia) => {
+      // transforma valor de Enum em string
+      // coloca em minúsculo com - toLowerCase
+      // remove acentos ortograficos - normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      let valor = this.recuperaValorAtributo(pericia
+        .atributo!.toString());
+      var periciaPersonagem = new PericiaPersonagem();
+
+      periciaPersonagem.inicializa(
+        pericia.nome!,
+        pericia.descricao!,
+        Math.floor(this.nivel! / 2),
+        pericia.atributo!.toString(),
+        Number.parseInt(valor)
+      )
+
+      this.pericias?.push(periciaPersonagem);
+    });
+  }
+
+  private recuperaValorAtributo(atributo: string) {
+    return this.pegarValor(
+      'atributos.' +
+        atributo
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+    );
+  }
+
+  pegarValor(caminho: string): any {
+    return caminho.split('.').reduce((obj: any, chave) => {
+      if (obj && typeof obj === 'object') {
+        return obj[chave];
+      }
+      return undefined;
+    }, this);
   }
 }
-class Pericia {
-  nome?: string;
+export class PericiaPersonagem {
+  pericia?: string;
   descricao?: string;
   treinado?: boolean;
   total?: number;
   bonus_nivel?: number;
   atributo_descricao?: string;
-  atributo_valor?: number;
-  bonus_outros?: number;
+  atributo?: number;
+  outros?: number;
 
-  constructor(
-    nome: string, 
-    bonus_nivel: number, 
+  constructor() {
+  }
+
+  inicializa(
+    pericia: string,
+    descricao: string,
+    bonus_nivel: number,
     atributo_descricao: string,
-    atributo_valor: number,
-    bonus_outros: number
-  ){
-    this.nome = nome;
+    atributo: number,
+  ) {
+    this.outros = 0;
+    this.pericia = pericia;
+    this.descricao = descricao;
     this.treinado = false;
     this.bonus_nivel = bonus_nivel;
     this.atributo_descricao = atributo_descricao;
-    this.atributo_valor = atributo_valor;
-    this.bonus_outros = bonus_outros;
-    this.total = atributo_valor + bonus_nivel + bonus_outros;
+    this.atributo = atributo;
+    this.total = atributo + bonus_nivel + this.outros;
+  }
+
+  atualiza(bonus_nivel: number,
+    atributo: number,  outros: number){
+    this.atributo = atributo;
+    this.outros = outros;
+    this.total = atributo + bonus_nivel + outros;
   }
 }
-

@@ -2,27 +2,47 @@ import { Component, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
-import { Personagem } from '../model/personagem';
+import { PericiaPersonagem, Personagem } from '../model/personagem';
 import { BalaoInterativoPadraoComponent } from '../components/caixa-informativa/balao-interativo-padrao.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Raca } from '../model/raca';
 import { NgIf } from '@angular/common';
 import { Chave, getPrefixo } from '../enum/chave.enum';
+import { PericiasService } from '../service/pericia.service';
+import { Pericia } from '../model/pericia';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @Component({
   selector: 'app-home',
-  imports: [MatCardModule, MatDividerModule, NgIf],
+  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  personagens: Personagem[] = [];
-  personagem: Personagem = new Personagem();
-  pericias: string[] = getPrefixo('PERICIA_');
 
-  constructor(private readonly router: Router) {}
+  pericias: Pericia[] = [];
+  personagens!: Personagem[];
+  personagem!: Personagem ;
+  dataSource = new MatTableDataSource<PericiaPersonagem>();
+  displayedColumns: string[] = ['pericia', 'total', 'atributo', 'outros'];
 
-  ngOnInit() {}
+  constructor(private readonly router: Router
+            , private readonly servicoPericia: PericiasService) {}
+
+  ngOnInit() {
+    this.personagens = [];
+    this.personagem = new Personagem();
+
+    this.servicoPericia.listar(null).subscribe({
+      next: (response) => {
+        this.pericias = response; 
+        this.personagem.inicializaPericias(this.pericias)
+        this.dataSource = new MatTableDataSource(this.personagem.pericias);
+      },
+      error: (response) => console.log(response),
+    });
+
+  }
 
   navigateTo(route: string): void {
     this.router.navigate([route]);
