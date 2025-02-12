@@ -11,10 +11,11 @@ import { Chave, getPrefixo } from '../enum/chave.enum';
 import { PericiasService } from '../service/pericia.service';
 import { Pericia } from '../model/pericia';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-home',
-  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule],
+  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule,     MatCheckboxModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -24,7 +25,7 @@ export class HomeComponent {
   personagens!: Personagem[];
   personagem!: Personagem ;
   dataSource = new MatTableDataSource<PericiaPersonagem>();
-  displayedColumns: string[] = ['pericia', 'total', 'atributo', 'outros'];
+  displayedColumns: string[] = ['treinado','pericia', 'total', 'atributo', 'outros'];
 
   constructor(private readonly router: Router
             , private readonly servicoPericia: PericiasService) {}

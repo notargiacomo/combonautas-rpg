@@ -187,7 +187,7 @@ export class Personagem {
   private recalculaPericias() {
     this.pericias?.forEach(pericia => {
       let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_descricao!));
-      pericia.atualiza(Math.floor(this.nivel! / 2), valorAtributo, 0);
+      pericia.atualiza(this.nivel!, valorAtributo, 0);
     });
   }
 
@@ -259,7 +259,7 @@ export class Personagem {
       periciaPersonagem.inicializa(
         pericia.nome!,
         pericia.descricao!,
-        Math.floor(this.nivel! / 2),
+        this.nivel!,
         pericia.atributo!.toString(),
         Number.parseInt(valor)
       )
@@ -292,7 +292,7 @@ export class PericiaPersonagem {
   descricao?: string;
   treinado?: boolean;
   total?: number;
-  bonus_nivel?: number;
+  nivel?: number;
   atributo_descricao?: string;
   atributo?: number;
   outros?: number;
@@ -303,7 +303,7 @@ export class PericiaPersonagem {
   inicializa(
     pericia: string,
     descricao: string,
-    bonus_nivel: number,
+    nivel: number,
     atributo_descricao: string,
     atributo: number,
   ) {
@@ -311,10 +311,10 @@ export class PericiaPersonagem {
     this.pericia = pericia;
     this.descricao = descricao;
     this.treinado = false;
-    this.bonus_nivel = bonus_nivel;
+    this.nivel = nivel;
     this.atributo_descricao = atributo_descricao;
     this.atributo = atributo;
-    this.total = atributo + bonus_nivel + this.outros;
+    this.total = atributo + Math.floor(nivel/2) + this.outros;
   }
 
   atualiza(bonus_nivel: number,
@@ -322,5 +322,15 @@ export class PericiaPersonagem {
     this.atributo = atributo;
     this.outros = outros;
     this.total = atributo + bonus_nivel + outros;
+  }
+
+  checkTreinamento(isChecked: boolean) {
+    this.treinado = isChecked;
+    if(this.treinado){
+      let bonus_treinado = 2;
+      bonus_treinado = this.nivel! >= 7 ? 4 : this.nivel! >= 15 ? 6: 2;
+      this.total = this.atributo! + Math.floor(this.nivel!/2) + this.outros! + bonus_treinado;
+    }
+    this.total = this.atributo! + Math.floor(this.nivel!/2) + this.outros!
   }
 }

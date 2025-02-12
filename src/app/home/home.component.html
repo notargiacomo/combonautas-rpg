@@ -567,47 +567,98 @@
                   <table
                     mat-table
                     [dataSource]="dataSource"
-                    class="mat-elevation-z8"
-                    matSort
-                  >
-                  <ng-container matColumnDef="pericia">
-                    <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                      Perícia
-                    </th>
-                    <td class="pericia" mat-cell *matCellDef="let element">
-                      {{ element.pericia }}
-                    </td>
-                  </ng-container>
-                  <ng-container matColumnDef="total">
-                    <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                      Total
-                    </th>
-                    <td class="pericia-valor" mat-cell *matCellDef="let element">
-                      {{ element.total }}
-                    </td>
-                  </ng-container>
-                  <ng-container matColumnDef="atributo">
-                    <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                      Atributo
-                    </th>
-                    <td class="pericia-valor" mat-cell *matCellDef="let element">
-                      {{ element.atributo }}
-                    </td>
-                  </ng-container>
-                  <ng-container matColumnDef="outros">
-                    <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                      Outros
-                    </th>
-                    <td class="pericia-valor" mat-cell *matCellDef="let element">
-                      {{ element.outros }}
-                    </td>
-                  </ng-container>
-                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr
-                  mat-row
-                  *matRowDef="let row; columns: displayedColumns"
-                ></tr>
-                </table>
+                    class="mat-elevation-z8 full-width"
+                    matSort>
+                    <ng-container matColumnDef="treinado" class="mat-column-treinado">
+                      <th class="mat-column-treinado"
+                        mat-header-cell
+                        *matHeaderCellDef
+                        fxFlex="5px"
+                      ></th>
+                      <td class="mat-column-treinado"
+                        mat-cell
+                        *matCellDef="let element"
+                        fxFlex="5px"
+                      >
+                        <mat-checkbox
+                          name="treinado"
+                          (change)="
+                            element.checkTreinamento(element, $event.checked)
+                          "
+                        >
+                        </mat-checkbox>
+                      </td>
+                    </ng-container>
+                    <ng-container matColumnDef="pericia">
+                      <th
+                        class="pericia"
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                      >
+                        PERÍCIA
+                      </th>
+                      <td class="pericia" mat-cell *matCellDef="let element">
+                        {{ element.pericia.toUpperCase() }}
+                      </td>
+                    </ng-container>
+                    <ng-container matColumnDef="total">
+                      <th
+                        class="pericia"
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                      >
+                        TOTAL
+                      </th>
+                      <td
+                        class="pericia-valor"
+                        mat-cell
+                        *matCellDef="let element"
+                      >
+                        {{ element.total }}
+                      </td>
+                    </ng-container>
+                    <ng-container matColumnDef="atributo">
+                      <th
+                        class="pericia"
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                      >
+                        ATRIBUTO
+                      </th>
+                      <td
+                        class="pericia-valor"
+                        mat-cell
+                        *matCellDef="let element"
+                      >
+                        {{ element.atributo }}
+                      </td>
+                    </ng-container>
+                    <ng-container matColumnDef="outros">
+                      <th
+                        class="pericia"
+                        mat-header-cell
+                        *matHeaderCellDef
+                        mat-sort-header
+                      >
+                        OUTROS
+                      </th>
+                      <td
+                        class="pericia-valor"
+                        mat-cell
+                        *matCellDef="let element"
+                      >
+                        <input type="text" [value]="element.outros" size="2" />
+                      </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr
+                      mat-row
+                      *matRowDef="let row; columns: displayedColumns"
+                    ></tr>
+                  </table>
                 </div>
               </div>
             </mat-card>
