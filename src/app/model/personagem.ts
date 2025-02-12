@@ -7,6 +7,14 @@ export class Personagem {
   raca?: Raca;
   nivel?: number;
   pontos!: number;
+  pontos_vida_atual!: number;
+  pontos_vida_total!: number;
+  pontos_vida_temporarios!: number;
+  pontos_mana_atual!: number;
+  pontos_mana_total!: number;
+  pontos_mana_temporarios!: number;
+  defesa!:number;
+  defesa_bonus!:number;
   atributos!: {
     forca: number;
     forca_comprada: number;
@@ -40,6 +48,12 @@ export class Personagem {
     this.nivel ? this.nivel : (this.nivel = 1);
     this.pericias = [];
     this.inicializaAtributos();
+    this.pontos_vida_atual = 0;
+    this.pontos_vida_total = 0;
+    this.pontos_vida_temporarios = 0;
+    this.pontos_mana_atual = 0;
+    this.pontos_mana_total = 0;
+    this.pontos_mana_temporarios = 0;
   }
 
   inicializaAtributos() {
