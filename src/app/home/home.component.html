@@ -580,7 +580,7 @@
               <div class="col-sm-4">
                 <mat-card class="card-padrao">
                   <b style="text-align: center">PONTOS DE VIDA</b>
-                  <hr style="margin: 1px" />
+                  <hr />
                   <div class="row">
                     <div style="text-align: center" class="col-sm-4">ATUAL</div>
                     <div style="text-align: center" class="col-sm-4">TOTAL</div>
@@ -605,7 +605,7 @@
               <div class="col-sm-4">
                 <mat-card class="card-padrao">
                   <b style="text-align: center">PONTOS DE MANA</b>
-                  <hr style="margin: 1px" />
+                  <hr />
                   <div class="row">
                     <div style="text-align: center" class="col-sm-4">ATUAL</div>
                     <div style="text-align: center" class="col-sm-4">TOTAL</div>
@@ -630,7 +630,7 @@
               <div class="col-sm-4">
                 <mat-card class="card-padrao">
                   <b style="text-align: center">DEFESA</b>
-                  <hr style="margin: 1px" />
+                  <hr />
                   <div class="row">
                     <div
                       class="col-sm-11 m-1 vida-mana-defesa"
@@ -641,13 +641,25 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-8">
-                      <select class="vida-mana-defesa" style="font-size: 12pt !important; ">
+                      <select
+                        class="vida-mana-defesa"
+                        style="font-size: 12pt !important"
+                      >
                         @for (atributo of atributos; track atributo) {
-                        <option [selected]="personagem.recuperaValor(atributo.toString()) === personagem.recuperaValor('Destreza')" [value]="atributo">{{ atributo }}</option>
+                        <option
+                          [selected]="
+                            personagem.recuperaValor(atributo.toString()) ===
+                            personagem.recuperaValor('Destreza')
+                          "
+                          [value]="atributo"
+                        >
+                          {{ atributo }}
+                        </option>
                         }
                       </select>
                     </div>
-                    <input style="font-size: 12pt !important; "
+                    <input
+                      style="font-size: 12pt !important"
                       class="col-sm-3 vida-mana-defesa"
                       size="2"
                       (change)="personagem.recalculaDefesa()"
@@ -657,6 +669,433 @@
                 </mat-card>
               </div>
             </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <mat-card class="card-padrao">
+                      <mat-expansion-panel [expanded]="true" [disabled]="true">
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <b> EQUIPAMENTOS EMPUNHADOS </b>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <hr />
+                        <div class="row">
+                          <table
+                            mat-table
+                            [dataSource]="personagem.equipamentos_empunhados!"
+                            multiTemplateDataRows
+                            class="mat-elevation-z8"
+                          >
+                            <ng-container
+                              matColumnDef="equipamento"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                EQUIPAMENTO
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.nome.toUpperCase() }}
+                              </td>
+                            </ng-container>
+                            <ng-container
+                              matColumnDef="formula"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                FORMULA
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.formula }}
+                              </td>
+                            </ng-container>
+                            <tr
+                              mat-header-row
+                              *matHeaderRowDef="
+                                displayedColumnsEmpunhadosVestidos
+                              "
+                            ></tr>
+                            <tr
+                              mat-row
+                              *matRowDef="
+                                let row;
+                                columns: displayedColumnsEmpunhadosVestidos
+                              "
+                            ></tr>
+                          </table>
+                        </div>
+                      </mat-expansion-panel>
+                    </mat-card>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <mat-card class="card-padrao">
+                      <mat-expansion-panel [expanded]="true" [disabled]="true">
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <b> EQUIPAMENTOS VESTIDOS </b>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <hr />
+                        <div class="row">
+                          <table
+                            mat-table
+                            [dataSource]="personagem.equipamentos_vestidos!"
+                            multiTemplateDataRows
+                            class="mat-elevation-z8"
+                          >
+                            <ng-container
+                              matColumnDef="equipamento"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                EQUIPAMENTO
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.nome?.toUpperCase() }}
+                              </td>
+                            </ng-container>
+                            <ng-container
+                              matColumnDef="formula"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                FORMULA
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.formula }}
+                              </td>
+                            </ng-container>
+                            <tr
+                              mat-header-row
+                              *matHeaderRowDef="
+                                displayedColumnsEmpunhadosVestidos
+                              "
+                            ></tr>
+                            <tr
+                              mat-row
+                              *matRowDef="
+                                let row;
+                                columns: displayedColumnsEmpunhadosVestidos
+                              "
+                            ></tr>
+                          </table>
+                        </div>
+                      </mat-expansion-panel>
+                    </mat-card>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <mat-card class="card-padrao">
+                      <mat-expansion-panel [expanded]="true" [disabled]="true">
+                        <mat-expansion-panel-header style="padding-left: 8px !important;">
+                          <mat-panel-title>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <b>EQUIPAMENTOS CARREGADOS</b>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  {{ "LIMITE DE CARGA: " + personagem.carga }}
+                                </div>
+                              </div>
+                            </div>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <hr />
+                        <div class="row">
+                          <table
+                            mat-table
+                            [dataSource]="personagem.equipamentos_carregados!"
+                            multiTemplateDataRows
+                            class="mat-elevation-z8"
+                          >
+                            <ng-container
+                              matColumnDef="equipamento"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                EQUIPAMENTO
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.nome?.toUpperCase() }}
+                              </td>
+                            </ng-container>
+                            <ng-container
+                              matColumnDef="quantidade"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                QUANTIDADE
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.quantidade }}
+                              </td>
+                            </ng-container>
+                            <ng-container
+                              matColumnDef="espaco"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                ESPACO
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.espaco }}
+                              </td>
+                            </ng-container>
+                            <tr
+                              mat-header-row
+                              *matHeaderRowDef="displayedColumnsCarregados"
+                            ></tr>
+                            <tr
+                              mat-row
+                              *matRowDef="
+                                let row;
+                                columns: displayedColumnsCarregados
+                              "
+                            ></tr>
+                          </table>
+                        </div>
+                      </mat-expansion-panel>
+                    </mat-card>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <mat-card class="card-padrao">
+                      <mat-expansion-panel [expanded]="true" [disabled]="true">
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <b> OUTROS ITENS </b>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <hr />
+                        <div class="row">
+                          <table
+                            mat-table
+                            [dataSource]="personagem.itens!"
+                            multiTemplateDataRows
+                            class="mat-elevation-z8"
+                          >
+                            <ng-container
+                              matColumnDef="item"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                ITEM
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.nome?.toUpperCase() }}
+                              </td>
+                            </ng-container>
+                            <ng-container
+                              matColumnDef="descricao"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                DESCRIÇÃO
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.descricao }}
+                              </td>
+                            </ng-container>
+                            <tr
+                              mat-header-row
+                              *matHeaderRowDef="displayedColumnsItens"
+                            ></tr>
+                            <tr
+                              mat-row
+                              *matRowDef="
+                                let row;
+                                columns: displayedColumnsItens
+                              "
+                            ></tr>
+                          </table>
+                        </div>
+                      </mat-expansion-panel>
+                    </mat-card>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> PROFICIÊNCIAS </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+                <div class="row">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> TAMANHO </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+                <div class="row">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> DESLOCAMENTOS </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+                <div class="row">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> SENTIDOS </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+                <div class="row">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> RESISTÊNCIAS </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+                <div class="row">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> IMUNIDADES </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
             <mat-card class="card-padrao">
@@ -664,9 +1103,8 @@
                 <div class="col-sm-12 mt-2">
                   <table
                     mat-table
-                    [dataSource]="dataSource"
+                    [dataSource]="dsPericias"
                     class="mat-elevation-z8 full-width"
-                    
                   >
                     <ng-container
                       matColumnDef="treinado"

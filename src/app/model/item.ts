@@ -36,6 +36,7 @@ export interface Item {
     alcance?:number;
     penalidade?:number;
     chave:Chave[];
+    formula?:string;
     imagem?:string;
     referencias?:string;
     paginas?:string;

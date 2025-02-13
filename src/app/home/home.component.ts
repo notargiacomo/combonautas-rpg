@@ -16,10 +16,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { Atributo } from '../enum/atributo.enum';
 import { FormsModule, NgModel } from '@angular/forms';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-home',
-  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule,     MatCheckboxModule, MatFormFieldModule, MatSelectModule, FormsModule],
+  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule,     MatCheckboxModule, MatFormFieldModule, MatSelectModule, FormsModule, MatExpansionModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -29,8 +30,11 @@ export class HomeComponent {
   personagens!: Personagem[];
   personagem!: Personagem ;
   atributos = Object.values(Atributo);
-  dataSource = new MatTableDataSource<PericiaPersonagem>();
+  dsPericias = new MatTableDataSource<PericiaPersonagem>();
   displayedColumns: string[] = ['treinado','pericia', 'total', 'atributo', 'outros'];
+  displayedColumnsEmpunhadosVestidos: string[] = ['equipamento', 'formula'];
+  displayedColumnsCarregados: string[] = ['equipamento', 'quantidade', 'espaco'];
+  displayedColumnsItens: string[] = ['item', 'descricao'];
 
   constructor(private readonly router: Router
             , private readonly servicoPericia: PericiasService) {}
@@ -43,7 +47,7 @@ export class HomeComponent {
       next: (response) => {
         this.pericias = response; 
         this.personagem.inicializaPericias(this.pericias)
-        this.dataSource = new MatTableDataSource(this.personagem.pericias);
+        this.dsPericias = new MatTableDataSource(this.personagem.pericias);
       },
       error: (response) => console.log(response),
     });

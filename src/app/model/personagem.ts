@@ -1,5 +1,12 @@
 import { Atributo } from '../enum/atributo.enum';
 import { getPrefixo } from '../enum/chave.enum';
+import { Proficiencia } from '../enum/proficiencia.enum';
+import { Resistencia } from '../enum/resistencia.enum';
+import { ResistenciaPersonagem } from '../enum/resistencia.personagem.enum';
+import { Sentido } from '../enum/sentido.enum';
+import { Tamanho } from '../enum/tamanho.enum';
+import { Deslocamento } from './deslocamento.interface';
+import { Item } from './item';
 import { Pericia } from './pericia';
 import { Raca } from './raca';
 export class Personagem {
@@ -44,8 +51,25 @@ export class Personagem {
     carisma_bonus: number;
   };
   pericias?: PericiaPersonagem[];
+  equipamentos_empunhados!: Equipamento[];
+  equipamentos_vestidos!: Equipamento[];
+  numero_itens_vestidos_maximo!: number;
+  equipamentos_carregados!: Equipamento[];
+  itens?: Item[];
+  carga?:number;
+  proficiencia?: Proficiencia[];
+  tamanho?: Tamanho;
+  deslocamento?: Deslocamento[];
+  sentidos?: Sentido[];
+  resistencias?: ResistenciaPersonagem[];
 
   constructor() {
+    this.equipamentos_empunhados = [{nome: 'Mão Direita'}, {nome: 'Mão Esquerda'}];
+    this.equipamentos_vestidos = [{}, {}, {}, {}];
+    this.numero_itens_vestidos_maximo = 4;
+    this.carga = 0;
+    this.equipamentos_carregados = [];
+    this.itens = [];
     this.pontos ? this.pontos : (this.pontos = 10);
     this.nivel ? this.nivel : (this.nivel = 1);
     this.pericias = [];
@@ -369,5 +393,18 @@ export class PericiaPersonagem {
 
     }
     this.total = Number(this.atributo!) + Math.floor(Number(this.nivel!)/2) + Number(this.outros!) + Number(bonus_treinado);
+  }
+
+}
+export class Equipamento {
+  nome?:string;
+  formula?:string;
+  quantidade?:number;
+  espaco?:number;
+  descricao?:string;
+  item?: Item;
+  constructor(item: Item) {
+    this.item = item;
+    this.nome = item.nome;
   }
 }

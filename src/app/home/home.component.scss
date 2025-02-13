@@ -1,7 +1,13 @@
+@use '@angular/material' as mat;
+
 .campo-modificadores {
-  height: 55px !important;
-  width: 48px !important;
+  height: 56px !important;
+  width: 49px !important;
   font-size: xx-large !important;
+  margin-top: 0px !important;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  padding-top: 0px !important;
   text-align: center;
   border: 1px solid rgb(228, 176, 100);
 }
@@ -68,78 +74,28 @@
   text-align: center !important;
 }
 
-.mat-mdc-row {
-  // line-height:
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
-}
-
 .mat-mdc-cell {
   padding-left: 0% !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
 }
 
 .mat-mdc-header-cell {
   padding-left: 0% !important;
   padding-top: 0% !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
-}
-
-.mat-mdc-table .mat-mdc-header-cell {
-    height: 20px !important;
-    min-height: 20px !important;
-    max-height: 20px !important;
-}
-
-table.mat-table tr:nth-child(n) {
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
-}
-
-table.mat-table td, 
-table.mat-table th {
-  padding: 2px !important;
-  font-size: 10px !important;
-  line-height: 1 !important;
 }
 
 .mat-mdc-table th {
   background-color: rgb(132, 26, 18) !important;
   color: white !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
 }
 
 .mat-mdc-header-row {
-    height: 20px !important;
-    min-height: 20px !important;
-    max-height: 20px !important;
+    height: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
 }
 
 .mat-mdc-table tr:nth-child(even) {
   background-color: rgb(255, 200, 100) !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
-}
-
-.mat-mdc-row .mdc-data-table__row {
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
-}
-
-.mat-mdc-table tr:nth-child(odd) {
-    height: 20px !important;
-    min-height: 20px !important;
-    max-height: 20px !important;
 }
 
 .vida-mana-defesa {
@@ -147,4 +103,14 @@ table.mat-table th {
   font-size: 18pt !important;
   border: 1px solid rgb(228, 176, 100) !important;
   border-radius: 5px !important;
+}
+
+.mat-expansion-panel-header.mat-expanded {
+  height: 50% !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+hr {
+  margin: 5px !important;
 }
