@@ -6,7 +6,7 @@ import { PericiaPersonagem, Personagem } from '../model/personagem';
 import { BalaoInterativoPadraoComponent } from '../components/caixa-informativa/balao-interativo-padrao.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Raca } from '../model/raca';
-import { NgIf } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Chave, getPrefixo } from '../enum/chave.enum';
 import { PericiasService } from '../service/pericia.service';
 import { Pericia } from '../model/pericia';
@@ -21,7 +21,7 @@ import { Tamanho } from '../enum/tamanho.enum';
 
 @Component({
   selector: 'app-home',
-  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule,     MatCheckboxModule, MatFormFieldModule, MatSelectModule, FormsModule, MatExpansionModule],
+  imports: [MatCardModule, MatDividerModule, NgIf, NgFor, MatTableModule,     MatCheckboxModule, MatFormFieldModule, MatSelectModule, FormsModule, MatExpansionModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

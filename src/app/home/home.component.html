@@ -1081,13 +1081,15 @@
                       <hr />
                       <select
                         class="vida-mana-defesa"
-                        style="font-size: 12pt !important; width: 100% !important;"
+                        style="
+                          font-size: 12pt !important;
+                          width: 100% !important;
+                        "
                       >
                         @for (tamanho of tamanhos; track tamanho) {
                         <option
                           [selected]="
-                            personagem.recuperaValor(
-                              tamanho.toString()) ===
+                            personagem.recuperaValor(tamanho.toString()) ===
                             personagem.recuperaValor('Médio')
                           "
                           [value]="tamanho"
@@ -1108,6 +1110,23 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
+                      @for (deslocamento of personagem.deslocamentos; track
+                      deslocamento){
+                      <div class="row">
+                        <button
+                          class="me-2 proficiencia"
+                          mat-flat-button
+                          disabled
+                        >
+                          {{
+                            deslocamento.nome +
+                              " " +
+                              deslocamento.valor +
+                              " metros"
+                          }}
+                        </button>
+                      </div>
+                      }
                     </mat-expansion-panel>
                   </mat-card>
                 </div>
@@ -1120,6 +1139,17 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
+                      @for (sentidos of personagem.sentidos; track sentidos){
+                      <div class="row">
+                        <button
+                          class="me-2 proficiencia"
+                          mat-flat-button
+                          disabled
+                        >
+                          {{ sentidos }}
+                        </button>
+                      </div>
+                      }
                     </mat-expansion-panel>
                   </mat-card>
                 </div>
@@ -1132,6 +1162,17 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
+                      @for (rd of personagem.resistencias; track rd){
+                      <div class="row">
+                        <button
+                          class="me-2 proficiencia"
+                          mat-flat-button
+                          disabled
+                        >
+                          {{ rd.fonte + " " + rd.redutor }}
+                        </button>
+                      </div>
+                      }
                     </mat-expansion-panel>
                   </mat-card>
                 </div>
@@ -1144,6 +1185,68 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
+                      @for (imunidade of personagem.imunidades; track
+                      imunidade){
+                      <div class="row">
+                        <button
+                          class="me-2 proficiencia"
+                          mat-flat-button
+                          disabled
+                        >
+                          {{ imunidade }}
+                        </button>
+                      </div>
+                      }
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+              </div>
+              <div class="row" style="width: 110% !important;">
+                <div class="col-sm-12" style="padding-right: 0% !important;">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> HABILIDADES E PODERES </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                      @for (imunidade of personagem.imunidades; track imunidade){
+                      <div class="row">
+                        <button
+                          class="me-2 proficiencia"
+                          mat-flat-button
+                          disabled
+                        >
+                          {{ imunidade }}
+                        </button>
+                      </div>
+                      }
+                    </mat-expansion-panel>
+                  </mat-card>
+                </div>
+              </div>
+              <div class="row" style="width: 120% !important;">
+                <div class="col-sm-12" style="padding-right: 0% !important;">
+                  <mat-card class="card-padrao">
+                    <mat-expansion-panel [expanded]="true" [disabled]="true">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b> MAGIAS </b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <hr />
+                      @for (imunidade of personagem.imunidades; track imunidade){
+                      <div class="row">
+                        <button
+                          class="me-2 proficiencia"
+                          mat-flat-button
+                          disabled
+                        >
+                          {{ imunidade }}
+                        </button>
+                      </div>
+                      }
                     </mat-expansion-panel>
                   </mat-card>
                 </div>

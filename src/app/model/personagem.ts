@@ -1,11 +1,8 @@
 import { Atributo } from '../enum/atributo.enum';
 import { getPrefixo } from '../enum/chave.enum';
 import { Proficiencia } from '../enum/proficiencia.enum';
-import { Resistencia } from '../enum/resistencia.enum';
-import { ResistenciaPersonagem } from '../enum/resistencia.personagem.enum';
 import { Sentido } from '../enum/sentido.enum';
 import { Tamanho } from '../enum/tamanho.enum';
-import { Deslocamento } from './deslocamento.interface';
 import { Item } from './item';
 import { Pericia } from './pericia';
 import { Raca } from './raca';
@@ -59,9 +56,10 @@ export class Personagem {
   carga?:number;
   proficiencia?: Proficiencia[];
   tamanho?: Tamanho;
-  deslocamento?: Deslocamento[];
+  deslocamentos?: Deslocamento[];
   sentidos?: Sentido[];
-  resistencias?: ResistenciaPersonagem[];
+  resistencias?: Resistencias[];
+  imunidades?: Imunidade[];
 
   constructor() {
     this.equipamentos_empunhados = [{nome: 'Mão Direita'}, {nome: 'Mão Esquerda'}];
@@ -69,6 +67,10 @@ export class Personagem {
     this.numero_itens_vestidos_maximo = 4;
     this.carga = 0;
     this.equipamentos_carregados = [];
+    this.deslocamentos = []
+    this.resistencias = [];
+    this.imunidades = [];
+    this.deslocamentos.push(new Deslocamento('Terrestre', 9))
     this.itens = [];
     this.proficiencia = [];
     this.proficiencia.push(Proficiencia.ARMAS_SIMPLES);
@@ -410,4 +412,27 @@ export class Equipamento {
     this.item = item;
     this.nome = item.nome;
   }
+}
+
+export class Deslocamento {
+  nome?: string;
+  valor?: number;
+
+  constructor(nome: string, valor: number){
+    this.nome = nome;
+    this.valor = valor;
+  }
+}
+
+export class Resistencias {
+  fonte?: string;
+  redutor?: number;
+
+  constructor(fonte: string, redutor: number){
+    this.fonte = fonte;
+    this.redutor = redutor;
+  }
+}
+
+export enum Imunidade {
 }
