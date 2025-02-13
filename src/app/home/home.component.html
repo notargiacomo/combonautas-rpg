@@ -563,7 +563,7 @@
                           />
                           <input
                             class="campo-atributos"
-                            style="text-align: center !important; "
+                            style="text-align: center !important"
                             value="0"
                             size="1"
                             [value]="personagem.atributos.carisma_bonus"
@@ -591,15 +591,15 @@
                       class="col-sm-4 m-1 vida-mana-defesa"
                       value="0"
                       size="1"
-                      [value]="personagem.pontos_vida_atual"                  
+                      [value]="personagem.pontos_vida_atual"
                     />
-                  <div class="col-sm-3 m-1 vida-mana-defesa">
-                    {{ personagem.pontos_vida_total }}
+                    <div class="col-sm-3 m-1 vida-mana-defesa">
+                      {{ personagem.pontos_vida_total }}
+                    </div>
+                    <div class="col-sm-3 m-1 vida-mana-defesa">
+                      {{ personagem.pontos_vida_temporarios }}
+                    </div>
                   </div>
-                  <div class="col-sm-3 m-1 vida-mana-defesa">
-                    {{ personagem.pontos_vida_temporarios }}
-                  </div>
-                </div>
                 </mat-card>
               </div>
               <div class="col-sm-4">
@@ -612,12 +612,12 @@
                     <div style="text-align: center" class="col-sm-4">TEMP.</div>
                   </div>
                   <div class="row">
-                      <input
-                        class="col-sm-4 m-1 vida-mana-defesa"
-                        value="0"
-                        size="1"
-                        [value]="personagem.pontos_mana_atual"                  
-                      />
+                    <input
+                      class="col-sm-4 m-1 vida-mana-defesa"
+                      value="0"
+                      size="1"
+                      [value]="personagem.pontos_mana_atual"
+                    />
                     <div class="col-sm-3 m-1 vida-mana-defesa">
                       {{ personagem.pontos_mana_total }}
                     </div>
@@ -631,6 +631,29 @@
                 <mat-card class="card-padrao">
                   <b style="text-align: center">DEFESA</b>
                   <hr style="margin: 1px" />
+                  <div class="row">
+                    <div
+                      class="col-sm-11 m-1 vida-mana-defesa"
+                      style="margin-left: 10px !important"
+                    >
+                      {{ personagem.defesa }}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <select class="vida-mana-defesa" style="font-size: 12pt !important; ">
+                        @for (atributo of atributos; track atributo) {
+                        <option [selected]="personagem.recuperaValor(atributo.toString()) === personagem.recuperaValor('Destreza')" [value]="atributo">{{ atributo }}</option>
+                        }
+                      </select>
+                    </div>
+                    <input style="font-size: 12pt !important; "
+                      class="col-sm-3 vida-mana-defesa"
+                      size="2"
+                      (change)="personagem.recalculaDefesa()"
+                      [(ngModel)]="personagem.defesa_bonus"
+                    />
+                  </div>
                 </mat-card>
               </div>
             </div>
@@ -729,7 +752,12 @@
                         mat-cell
                         *matCellDef="let element"
                       >
-                        <input type="text" [value]="element.outros" size="2" style="text-align: center !important;"/>
+                        <input
+                          type="text"
+                          [value]="element.outros"
+                          size="2"
+                          style="text-align: center !important"
+                        />
                       </td>
                     </ng-container>
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

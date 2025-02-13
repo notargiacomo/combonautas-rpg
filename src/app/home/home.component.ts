@@ -12,10 +12,14 @@ import { PericiasService } from '../service/pericia.service';
 import { Pericia } from '../model/pericia';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { Atributo } from '../enum/atributo.enum';
+import { FormsModule, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
-  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule,     MatCheckboxModule],
+  imports: [MatCardModule, MatDividerModule, NgIf, MatTableModule,     MatCheckboxModule, MatFormFieldModule, MatSelectModule, FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -24,6 +28,7 @@ export class HomeComponent {
   pericias: Pericia[] = [];
   personagens!: Personagem[];
   personagem!: Personagem ;
+  atributos = Object.values(Atributo);
   dataSource = new MatTableDataSource<PericiaPersonagem>();
   displayedColumns: string[] = ['treinado','pericia', 'total', 'atributo', 'outros'];
 

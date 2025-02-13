@@ -1,3 +1,4 @@
+import { Atributo } from '../enum/atributo.enum';
 import { getPrefixo } from '../enum/chave.enum';
 import { Pericia } from './pericia';
 import { Raca } from './raca';
@@ -15,6 +16,7 @@ export class Personagem {
   pontos_mana_temporarios!: number;
   defesa!:number;
   defesa_bonus!:number;
+  atributo_defesa!: string;
   atributos!: {
     forca: number;
     forca_comprada: number;
@@ -54,6 +56,9 @@ export class Personagem {
     this.pontos_mana_atual = 0;
     this.pontos_mana_total = 0;
     this.pontos_mana_temporarios = 0;
+    this.defesa = 10;
+    this.atributo_defesa = Atributo.DESTREZA;
+    this.defesa_bonus = 0;
   }
 
   inicializaAtributos() {
@@ -196,7 +201,17 @@ export class Personagem {
     }
 
     this.recalculaPericias();
+    this.recalculaDefesa();
   }
+
+  public recalculaDefesa(){
+    this.defesa = 10;
+    console.log(this.defesa);
+    this.defesa +=  Number(this.defesa_bonus);
+    console.log(this.defesa);
+    this.defesa += Number(this.recuperaValorAtributo(this.atributo_defesa));
+    console.log(this.defesa);
+  };
 
   private recalculaPericias() {
     this.pericias?.forEach(pericia => {
@@ -282,7 +297,7 @@ export class Personagem {
     });
   }
 
-  private recuperaValorAtributo(atributo: string) {
+  public recuperaValorAtributo(atributo: string) {
     return this.pegarValor(
       'atributos.' +
         atributo
@@ -290,6 +305,13 @@ export class Personagem {
         .replace(/[\u0300-\u036f]/g, '')
         .toLowerCase()
     );
+  }
+
+  public recuperaValor(texto: string) {
+    return texto
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
   }
 
   pegarValor(caminho: string): any {
