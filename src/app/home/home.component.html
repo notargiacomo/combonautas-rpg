@@ -754,7 +754,8 @@
                       >
                         <input
                           type="text"
-                          [value]="element.outros"
+                          [(ngModel)]="element.outros"
+                          (change)="personagem.recalculaPericias()"
                           size="2"
                           style="text-align: center !important"
                         />

@@ -213,10 +213,10 @@ export class Personagem {
     console.log(this.defesa);
   };
 
-  private recalculaPericias() {
+  public recalculaPericias() {
     this.pericias?.forEach(pericia => {
       let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_descricao!));
-      pericia.atualiza(this.nivel!, valorAtributo, 0);
+      pericia.atualiza(this.nivel!, valorAtributo, pericia.outros!);
     });
   }
 
@@ -358,7 +358,7 @@ export class PericiaPersonagem {
     this.nivel = bonus_nivel;
     this.atributo = atributo;
     this.outros = outros;
-    this.total = atributo + Math.floor(this.nivel!/2) + outros;
+    this.total = Number(atributo) + Math.floor(Number(this.nivel!)/2) + Number(outros);
   }
 
   checkTreinamento(isChecked: boolean) {
@@ -366,8 +366,8 @@ export class PericiaPersonagem {
     let bonus_treinado = 0;
     if(this.treinado){
       bonus_treinado = this.nivel! >= 7 ? 4 : this.nivel! >= 15 ? 6: 2;
-      this.total = this.atributo! + Math.floor(this.nivel!/2) + this.outros! + bonus_treinado;
+
     }
-    this.total = this.atributo! + Math.floor(this.nivel!/2) + this.outros! + bonus_treinado;
+    this.total = Number(this.atributo!) + Math.floor(Number(this.nivel!)/2) + Number(this.outros!) + Number(bonus_treinado);
   }
 }
