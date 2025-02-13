@@ -17,6 +17,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { Atributo } from '../enum/atributo.enum';
 import { FormsModule, NgModel } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { Tamanho } from '../enum/tamanho.enum';
 
 @Component({
   selector: 'app-home',
@@ -30,6 +31,7 @@ export class HomeComponent {
   personagens!: Personagem[];
   personagem!: Personagem ;
   atributos = Object.values(Atributo);
+  tamanhos = Object.values(Tamanho);
   dsPericias = new MatTableDataSource<PericiaPersonagem>();
   displayedColumns: string[] = ['treinado','pericia', 'total', 'atributo', 'outros'];
   displayedColumnsEmpunhadosVestidos: string[] = ['equipamento', 'formula'];

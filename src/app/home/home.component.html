@@ -835,7 +835,9 @@
                   <div class="col-sm-12">
                     <mat-card class="card-padrao">
                       <mat-expansion-panel [expanded]="true" [disabled]="true">
-                        <mat-expansion-panel-header style="padding-left: 8px !important;">
+                        <mat-expansion-panel-header
+                          style="padding-left: 8px !important"
+                        >
                           <mat-panel-title>
                             <div class="container">
                               <div class="row">
@@ -846,6 +848,28 @@
                               <div class="row">
                                 <div class="col-sm-6">
                                   {{ "LIMITE DE CARGA: " + personagem.carga }}
+                                </div>
+                                <div
+                                  class="col-sm-6 d-flex justify-content-end"
+                                >
+                                  <select
+                                    class="vida-mana-defesa"
+                                    style="font-size: 12pt !important"
+                                  >
+                                    @for (atributo of atributos; track atributo)
+                                    {
+                                    <option
+                                      [selected]="
+                                        personagem.recuperaValor(
+                                          atributo.toString()
+                                        ) === personagem.recuperaValor('Força')
+                                      "
+                                      [value]="atributo"
+                                    >
+                                      {{ atributo }}
+                                    </option>
+                                    }
+                                  </select>
                                 </div>
                               </div>
                             </div>
@@ -1031,6 +1055,18 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
+                      @for (proficiencia of personagem.proficiencia; track
+                      proficiencia) {
+                      <div class="row">
+                        <button
+                          class="me-2 proficiencia"
+                          mat-flat-button
+                          disabled
+                        >
+                          {{ proficiencia }}
+                        </button>
+                      </div>
+                      }
                     </mat-expansion-panel>
                   </mat-card>
                 </div>
@@ -1043,6 +1079,23 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
+                      <select
+                        class="vida-mana-defesa"
+                        style="font-size: 12pt !important; width: 100% !important;"
+                      >
+                        @for (tamanho of tamanhos; track tamanho) {
+                        <option
+                          [selected]="
+                            personagem.recuperaValor(
+                              tamanho.toString()) ===
+                            personagem.recuperaValor('Médio')
+                          "
+                          [value]="tamanho"
+                        >
+                          {{ tamanho }}
+                        </option>
+                        }
+                      </select>
                     </mat-expansion-panel>
                   </mat-card>
                 </div>

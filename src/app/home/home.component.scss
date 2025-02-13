@@ -71,6 +71,7 @@
   width: 40px !important; /* Ajuste conforme necessário */
   min-width: 40px !important;
   max-width: 40px !important;
+  height: 30px  !important;
   text-align: center !important;
 }
 
@@ -106,11 +107,36 @@
 }
 
 .mat-expansion-panel-header.mat-expanded {
-  height: 50% !important;
+  height: 15% !important;
   margin-top: 2px !important;
   margin-bottom: 2px !important;
 }
 
+.mat-expansion-panel-header {
+  height: 60% !important;
+  margin-top: 15px !important;
+  padding-top: 10px !important;
+  margin-bottom: 2px !important;
+}
+
+.mat-expansion-panel-body {
+  padding: 15 !important;
+}
+
 hr {
-  margin: 5px !important;
+  margin: 10px !important;
+}
+
+.proficiencia {
+  font-family: "Oswald" !important;
+  font-size: 8pt !important;
+  border: 1px solid rgb(228, 176, 100); /* Moldura */
+  background-color: rgb(132, 26, 18) !important;
+  color: white !important;
+  width: 100% !important;
+  height: 15% !important;
+  min-height: 15% !important;
+  max-height: 15% !important;
+  size: 20% !important;
+  padding: 0% !important;
 }

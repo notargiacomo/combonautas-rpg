@@ -70,6 +70,9 @@ export class Personagem {
     this.carga = 0;
     this.equipamentos_carregados = [];
     this.itens = [];
+    this.proficiencia = [];
+    this.proficiencia.push(Proficiencia.ARMAS_SIMPLES);
+    this.proficiencia.push(Proficiencia.ARMADURAS_LEVES);
     this.pontos ? this.pontos : (this.pontos = 10);
     this.nivel ? this.nivel : (this.nivel = 1);
     this.pericias = [];
