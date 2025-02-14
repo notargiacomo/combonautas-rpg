@@ -227,6 +227,249 @@
                   </section>
                 </div>
               </div>
+              <div class="row" *ngIf="seExibeSelecaoAtributos(element)">
+                <div class="col-sm-12">
+                  <mat-card class="card-padrao">
+                    <div class="row align-items-center">
+                      <div class="col-sm-2">
+                        <div class="row text-center">
+                          <b style="font-size: large !important">FOR</b>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-sm-3">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div>
+                                  <button
+                                    class="botoes-mais-menos"
+                                    [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'FORCA')"
+                                    (click)="checkAtributo('FORCA', true)">
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <button
+                                class="botoes-mais-menos"
+                                [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'FORCA')"
+                                (click)="checkAtributo('FORCA', false)">
+                                  -
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <input
+                              class="campo-modificadores"
+                              size="1"
+                              [value]="valoresAtributos.forca"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="row text-center">
+                          <b style="font-size: large !important">DES</b>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-sm-3">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div>
+                                  <button
+                                  class="botoes-mais-menos"
+                                  [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'DESTREZA')"
+                                  (click)="checkAtributo('DESTREZA', true)">
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <button
+                                class="botoes-mais-menos"
+                                [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'DESTREZA')"
+                                (click)="checkAtributo('DESTREZA', false)">
+                                  -
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <input
+                              class="campo-modificadores"
+                              size="1"
+                              [value]="valoresAtributos.destreza"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="row text-center">
+                          <b style="font-size: large !important">CON</b>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-sm-3">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div>
+                                  <button
+                                  class="botoes-mais-menos"
+                                  [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'CONSTITUICAO')"
+                                  (click)="checkAtributo('CONSTITUICAO', true)">
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <button
+                                class="botoes-mais-menos"
+                                [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'CONSTITUICAO')"
+                                (click)="checkAtributo('CONSTITUICAO', true)">
+                                  -
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <input
+                              class="campo-modificadores"
+                              size="1"
+                              [value]="valoresAtributos.constituicao"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="row text-center">
+                          <b style="font-size: large !important">INT</b>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-sm-3">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div>
+                                  <button
+                                  class="botoes-mais-menos"
+                                  [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'INTELIGENCIA')"
+                                  (click)="checkAtributo('INTELIGENCIA', true)">
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <button
+                                class="botoes-mais-menos"
+                                [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'INTELIGENCIA')"
+                                (click)="checkAtributo('INTELIGENCIA', false)">
+                                  -
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <input
+                              class="campo-modificadores"
+                              size="1"
+                              [value]="valoresAtributos.inteligencia"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="row text-center">
+                          <b style="font-size: large !important">SAB</b>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-sm-3">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div>
+                                  <button
+                                  class="botoes-mais-menos"
+                                  [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'SABEDORIA')"
+                                  (click)="checkAtributo('SABEDORIA', true)">
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <button
+                                class="botoes-mais-menos"
+                                [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'SABEDORIA')"
+                                (click)="checkAtributo('SABEDORIA', false)">
+                                  -
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <input
+                              class="campo-modificadores"
+                              size="1"
+                              [value]="valoresAtributos.sabedoria"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="row text-center">
+                          <b style="font-size: large !important">CAR</b>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-sm-3">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div>
+                                  <button
+                                  class="botoes-mais-menos"
+                                  [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'CARISMA')"
+                                  (click)="checkAtributo('CARISMA', true)">
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <button
+                                class="botoes-mais-menos"
+                                [disabled]="seDesabilitaCheckAtributoEspecifico(element, 'CARISMA')"
+                                (click)="checkAtributo('CARISMA', false)">
+                                  -
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <input
+                              class="campo-modificadores"
+                              size="1"
+                              [value]="valoresAtributos.carisma"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-card>
+                </div>
+              </div>
+
               <hr *ngIf="seVeioFicha && element.instrucao.length !== 0" />
               <div class="row">
                 <div

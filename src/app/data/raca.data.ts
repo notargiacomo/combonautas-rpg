@@ -478,7 +478,7 @@ export class RacaData {
         referencias: Referencia.AMEACAS,
         paginas: '151',
         descricao: ``,
-        historia: ``, resolucao: [], instrucao: [],
+        historia: ``, resolucao: [], instrucao: [Calculo.DOIS_ATRIBUTOS],
       },
       {
         id: 29,

@@ -201,6 +201,7 @@ export class RacasComponent implements OnInit {
   exibeCheckAtribuos = false;
   pontosAtributos: number = 0;
   seExceto: boolean = false;
+  valoresAtributos!: Atributos;
 
   checkSelecionaRaca(raca: Raca, isChecked: boolean): void {
     if (isChecked) {
@@ -214,16 +215,26 @@ export class RacasComponent implements OnInit {
 
       this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.FORCA);
       this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.DESTREZA);
-      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.CONSTITUICAO);
-      this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.INTELIGENCIA);
+      this.varreInstrucaoBuscandoDecrecimo(
+        raca,
+        DecrecimoAtributo.CONSTITUICAO
+      );
+      this.varreInstrucaoBuscandoDecrecimo(
+        raca,
+        DecrecimoAtributo.INTELIGENCIA
+      );
       this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.SABEDORIA);
       this.varreInstrucaoBuscandoDecrecimo(raca, DecrecimoAtributo.CARISMA);
 
+      this.valoresAtributos = new Atributos();
       if (raca.instrucao) {
-        if (raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES)) {
+        if (
+          raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES) 
+        ) {
           this.pontosAtributos = 3;
           raca.seSelecaoFinalizada = false;
-        } else if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES)) {
+        } else if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES) ||
+        raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS)) {
           this.pontosAtributos = 2;
           raca.seSelecaoFinalizada = false;
         } else if (raca.instrucao.includes(Calculo.UM_ATRIBUTO)) {
@@ -232,16 +243,10 @@ export class RacasComponent implements OnInit {
         } else {
           raca.seSelecaoFinalizada = true;
         }
-        console.log(
-          'Raça: ' +
-            raca.nome +
-            ' / ' +
-            this.pontosAtributos +
-            ' / ' +
-            raca.instrucao
-        );
-      } 
-  
+
+        
+      }
+
       console.log(this.racaSelecionada);
     } else {
       this.racaSelecionada = undefined;
@@ -250,7 +255,10 @@ export class RacasComponent implements OnInit {
     this.racaSelecionadaChange.emit(this.racaSelecionada); // Notifica o pai da mudança
   }
 
-  private varreInstrucaoBuscandoAcrecimo(raca: Raca, acrecimo: AcrecimoAtributo) {
+  private varreInstrucaoBuscandoAcrecimo(
+    raca: Raca,
+    acrecimo: AcrecimoAtributo
+  ) {
     const indice = this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO);
     const antes = this.racaSelecionada.instrucao.slice(0, indice);
 
@@ -261,7 +269,10 @@ export class RacasComponent implements OnInit {
     });
   }
 
-  private varreInstrucaoBuscandoDecrecimo(raca: Raca, decrescimo: DecrecimoAtributo) {
+  private varreInstrucaoBuscandoDecrecimo(
+    raca: Raca,
+    decrescimo: DecrecimoAtributo
+  ) {
     raca.instrucao?.forEach((instrucao) => {
       if (instrucao === decrescimo) {
         raca.resolucao?.push(decrescimo);
@@ -270,46 +281,64 @@ export class RacasComponent implements OnInit {
   }
 
   seExibeCheckAtributos(raca: Raca): boolean {
-    return this.seVeioFicha && this.racaSelecionada !== undefined && raca.instrucao
+    return this.seVeioFicha &&
+      this.racaSelecionada !== undefined &&
+      raca.instrucao
       ? raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES) ||
           raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES) ||
           raca.instrucao.includes(Calculo.UM_ATRIBUTO)
       : false;
   }
 
+  seExibeSelecaoAtributos(raca: Raca): boolean {
+    return this.seVeioFicha &&
+      this.racaSelecionada !== undefined &&
+      raca.instrucao
+      ? raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS)
+      : false;
+  }
+
   seDesabilitaCheckAtributoEspecifico(raca: Raca, key: string): boolean {
-    return (this.pontosAtributos === 0 && this.regraDesabilitaCheckAtributoBonusVariavel(key)) || this.regraDesaBilitaAtributoExceto(key) ;
+    return (
+      ((this.pontosAtributos === 0 || (this.valoresAtributos && (Number(this.valoresAtributos.recuperaValorAtributo(key)) === 2 || (Number(this.valoresAtributos.recuperaValorAtributo(key)) === 0 && this.pontosAtributos === 0)) ) ) &&
+        this.regraDesabilitaCheckAtributoBonusVariavel(key)) ||
+      this.regraDesaBilitaAtributoExceto(key)
+    );
   }
 
   regraDesabilitaCheckAtributoBonusVariavel(key: string): boolean {
-    return !this.racaSelecionada.resolucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]);
+    return !this.racaSelecionada.resolucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
+    || this.racaSelecionada.instrucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
   }
 
-  regraDesaBilitaAtributoExceto(key: string): boolean{
+  regraDesaBilitaAtributoExceto(key: string): boolean {
     let seExceto = this.racaSelecionada.instrucao?.includes(Calculo.EXCETO);
 
-    if(seExceto){
+    if (seExceto) {
       const indice = this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO);
       const depois = this.racaSelecionada.instrucao.slice(indice + 1);
-      seExceto = depois.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
+      seExceto = depois.includes(
+        AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
+      );
     }
 
-    return seExceto  
+    return seExceto;
   }
 
   checkAtributo(key: string, check: boolean) {
     if (check) {
       this.pontosAtributos -= 1;
-      console.log(this.pontosAtributos);
       this.racaSelecionada.resolucao.push(
         AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
       );
+      this.valoresAtributos.editandoAtributo(key, check);
     } else {
       this.pontosAtributos += 1;
       this.racaSelecionada.resolucao = this.racaSelecionada.resolucao.filter(
         (res: AcrecimoAtributo) =>
           res !== AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
       );
+      this.valoresAtributos.editandoAtributo(key, check);
     }
 
     this.racaSelecionada.seSelecaoFinalizada = this.pontosAtributos === 0;
@@ -321,6 +350,7 @@ export enum Calculo {
   UM_ATRIBUTO = '1 ATRIBUTO',
   DOIS_ATRIBUTOS_DIFERENTES = '2 ATRIBUTOS DIFERENTES',
   TRES_ATRIBUTOS_DIFERENTES = '3 ATRIBUTOS DIFERENTES',
+  DOIS_ATRIBUTOS = '2 ATRIBUTOS',
   EXCETO = 'EXCETO',
 }
 
@@ -340,4 +370,60 @@ export enum DecrecimoAtributo {
   INTELIGENCIA = 'this.personagem.atributos.inteligencia_racial = this.personagem.atributos.inteligencia_racial - 1',
   SABEDORIA = 'this.personagem.atributos.sabedoria_racial = this.personagem.atributos.sabedoria_racial - 1',
   CARISMA = 'this.personagem.atributos.carisma_racial = this.personagem.atributos.carisma_racial - 1',
+}
+
+class Atributos {
+  forca!: number;
+  destreza!: number;
+  constituicao!: number;
+  inteligencia!: number;
+  sabedoria!: number;
+  carisma!: number;
+
+  constructor() {
+    this.forca = 0;
+    this.destreza = 0;
+    this.constituicao = 0;
+    this.inteligencia = 0;
+    this.sabedoria = 0;
+    this.carisma = 0;
+  }
+
+  public recuperaValorAtributo(atributo: string): any {
+    return this.pegarValor(
+        atributo
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+    );
+  }
+  pegarValor(caminho: string): any {
+    return caminho.split('.').reduce((obj: any, chave) => {
+      if (obj && typeof obj === 'object') {
+        return obj[chave];
+      }
+      return undefined;
+    }, this);
+  }
+
+  editandoAtributo (key: string, check: boolean){
+    if(Atributo[key as keyof typeof AcrecimoAtributo] === Atributo.FORCA){
+      this.forca = check? this.forca + 1 : this.forca -1; 
+    }
+    if(Atributo[key as keyof typeof AcrecimoAtributo] === Atributo.DESTREZA){
+      this.destreza = check? this.destreza + 1 : this.destreza -1; 
+    }
+    if(Atributo[key as keyof typeof AcrecimoAtributo] === Atributo.CONSTITUICAO){
+      this.constituicao = check? this.constituicao + 1 : this.constituicao -1; 
+    }
+    if(Atributo[key as keyof typeof AcrecimoAtributo] === Atributo.INTELIGENCIA){
+      this.inteligencia = check? this.inteligencia + 1 : this.inteligencia -1; 
+    }
+    if(Atributo[key as keyof typeof AcrecimoAtributo] === Atributo.SABEDORIA){
+      this.sabedoria = check? this.sabedoria + 1 : this.sabedoria -1; 
+    }
+    if(Atributo[key as keyof typeof AcrecimoAtributo] === Atributo.CARISMA){
+      this.carisma = check? this.carisma + 1 : this.carisma -1; 
+    }
+  }
 }
