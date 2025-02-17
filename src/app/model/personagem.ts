@@ -5,6 +5,7 @@ import { Sentido } from '../enum/sentido.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { Item } from './item';
 import { Pericia } from './pericia';
+import { Poder } from './poder';
 import { Raca } from './raca';
 export class Personagem {
   id?: number;
@@ -47,6 +48,9 @@ export class Personagem {
     carisma_racial: number;
     carisma_bonus: number;
   };
+  numero_pericias_classe!: number;
+  numero_pericias_livre!: number;
+  poderes!:Poder[];
   pericias?: PericiaPersonagem[];
   equipamentos_empunhados!: Equipamento[];
   equipamentos_vestidos!: Equipamento[];
@@ -62,6 +66,7 @@ export class Personagem {
   imunidades?: Imunidade[];
 
   constructor() {
+    this.numero_pericias_classe = 0;
     this.equipamentos_empunhados = [{nome: 'Mão Direita'}, {nome: 'Mão Esquerda'}];
     this.equipamentos_vestidos = [{}, {}, {}, {}];
     this.numero_itens_vestidos_maximo = 4;
@@ -78,7 +83,9 @@ export class Personagem {
     this.pontos ? this.pontos : (this.pontos = 10);
     this.nivel ? this.nivel : (this.nivel = 1);
     this.pericias = [];
+    this.poderes = [];
     this.inicializaAtributos();
+    this.numero_pericias_livre = this.atributos.inteligencia;
     this.pontos_vida_atual = 0;
     this.pontos_vida_total = 0;
     this.pontos_vida_temporarios = 0;
@@ -191,6 +198,7 @@ export class Personagem {
           this.atributos.inteligencia_comprada +
           this.atributos.inteligencia_racial +
           this.atributos.inteligencia_bonus;
+        this.recalculaNumeroPericias(undefined);
         break;
       }
       case 'sab': {
@@ -231,6 +239,14 @@ export class Personagem {
 
     this.recalculaPericias();
     this.recalculaDefesa();
+  }
+
+  public recalculaNumeroPericias(numeroPericiasExtras?: number){
+    this.numero_pericias_livre = this.atributos.inteligencia + (numeroPericiasExtras  ? numeroPericiasExtras: 0);
+  }
+
+  adicionaVinculoPoderPersonagem(idPoderPai: number, poder: Poder){
+
   }
 
   public recalculaDefesa(){
@@ -293,7 +309,9 @@ export class Personagem {
       this.atributos.carisma_comprada +
       this.atributos.carisma_racial +
       this.atributos.carisma_bonus;
+
       this.recalculaPericias();
+      this.recalculaDefesa();
   }
 
   resetaAtributosRaciais() {

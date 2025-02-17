@@ -18,10 +18,12 @@ import { Atributo } from '../enum/atributo.enum';
 import { FormsModule, NgModel } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { Tamanho } from '../enum/tamanho.enum';
+import { DynamicSelectComponent } from "../components/dinamic-select";
+import { Poder } from '../model/poder';
 
 @Component({
   selector: 'app-home',
-  imports: [MatCardModule, MatDividerModule, NgIf, NgFor, MatTableModule,     MatCheckboxModule, MatFormFieldModule, MatSelectModule, FormsModule, MatExpansionModule],
+  imports: [MatCardModule, MatDividerModule, NgIf, NgFor, MatTableModule, MatCheckboxModule, MatFormFieldModule, MatSelectModule, FormsModule, MatExpansionModule, DynamicSelectComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -37,6 +39,7 @@ export class HomeComponent {
   displayedColumnsEmpunhadosVestidos: string[] = ['equipamento', 'formula'];
   displayedColumnsCarregados: string[] = ['equipamento', 'quantidade', 'espaco'];
   displayedColumnsItens: string[] = ['item', 'descricao'];
+  displayedColumnsPoderes: string[] = ['nome', 'tipo'];
 
   constructor(private readonly router: Router
             , private readonly servicoPericia: PericiasService) {}
@@ -61,6 +64,7 @@ export class HomeComponent {
   }
 
   readonly dialog = inject(MatDialog);
+  dataSourcePoderesPersonagens = new MatTableDataSource<Poder>();;
   openDialog(titulo: string) {
     const dialogRef = this.dialog.open(BalaoInterativoPadraoComponent, {
       data: {
@@ -79,6 +83,11 @@ export class HomeComponent {
           resultado.resolucao.push(...resultado.instrucao);
         }
         this.personagem.resetaAtributosRaciais();
+        this.personagem.raca?.habilidades ? this.personagem.poderes.push(...this.personagem.raca?.habilidades): "";
+        this.dataSourcePoderesPersonagens = new MatTableDataSource(this.personagem.poderes);
+        console.log(this.personagem.raca?.habilidades);
+        console.log(this.personagem.poderes);
+
         this.personagem.raca?.resolucao?.forEach((res) => {
           eval(res);
         });
@@ -87,5 +96,9 @@ export class HomeComponent {
         console.log('Diálogo foi fechado sem retorno.');
       }
     });
+  }
+
+  executaResolucao(event: any){
+    eval(event);
   }
 }

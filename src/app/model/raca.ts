@@ -1,3 +1,4 @@
+import { Poder } from "./poder";
 
 export class Raca {
 
@@ -15,6 +16,7 @@ export class Raca {
   deslocamentos?: string[];
   instrucao?: string[];
   resolucao?: string[];
+  habilidades?: Poder[];
   seSelecaoFinalizada?: boolean;
   referencias?: string;
   paginas?: string

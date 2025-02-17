@@ -1211,17 +1211,51 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
-                      @for (imunidade of personagem.imunidades; track imunidade){
                       <div class="row">
-                        <button
-                          class="me-2 proficiencia"
-                          mat-flat-button
-                          disabled
-                        >
-                          {{ imunidade }}
-                        </button>
+                        <div class="col-sm-12 mt-2">
+                          <table
+                            mat-table
+                            [dataSource]="dataSourcePoderesPersonagens"
+                            class="mat-elevation-z8 full-width">
+                            <ng-container matColumnDef="nome" class="mat-column-treinado">
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                NOME
+                              </th>
+                              <td class="pericia" mat-cell  style="padding-left: 2% !important" *matCellDef="let element">
+                                {{ element.nome.toUpperCase() }}
+                              </td>
+                            </ng-container>
+                            <ng-container matColumnDef="tipo" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
+                                TIPO
+                              </th>
+                              <td style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.tipo.toUpperCase() }}
+                              </td>
+                            </ng-container>
+                            <tr mat-header-row *matHeaderRowDef="displayedColumnsPoderes"></tr>
+                            <tr
+                              mat-row
+                              *matRowDef="let row; columns: displayedColumnsPoderes"
+                            ></tr>
+                          </table>
+                        </div>
                       </div>
-                      }
                     </mat-expansion-panel>
                   </mat-card>
                 </div>
@@ -1260,8 +1294,7 @@
                   <table
                     mat-table
                     [dataSource]="dsPericias"
-                    class="mat-elevation-z8 full-width"
-                  >
+                    class="mat-elevation-z8 full-width">
                     <ng-container
                       matColumnDef="treinado"
                       class="mat-column-treinado"

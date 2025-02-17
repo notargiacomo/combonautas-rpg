@@ -2710,6 +2710,16 @@ export class PoderData {
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
       },
+      {
+        id: 245,
+        nome: `Versátil`,
+        descricao: `Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        raca: {id:1},
+        instrucao: [`<app-dynamic-select [listaDinamicaInstrucao]="[{chave: '2 Perícias', valor: 'this.personagem.recalculaNumeroPericias(2);' }, {chave: '1 Perícia + 1 Poder Geral', valor: 'this.personagem.recalculaNumeroPericias(1); this.personagem.adicionaVinculoPoderPersonagem(245, undefined)' } ]" (valorSelecionado)="executaResolucao($event)"></app-dynamic-select>`],
+        referencias: Referencia.BASICO,
+        paginas: '19'
+      },
     ];
   }
 }

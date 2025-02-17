@@ -37,6 +37,12 @@ import { Sentido } from '../../enum/sentido.enum';
 import { Raca } from '../../model/raca';
 import { RacaService } from '../../service/raca.service';
 import { Atributo } from '../../enum/atributo.enum';
+import { OpcoesAtributosRaca } from '../../enum/opcoes.atributo.raca.enum';
+import { AcrecimoAtributo } from '../../enum/acrecimo.atributo.enum';
+import { DecrecimoAtributo } from '../../enum/decrecimo.atributo.enum';
+import { DynamicSelectComponent } from "../../components/dinamic-select";
+import { PoderService } from '../../service/poder.service';
+import { Poder } from '../../model/poder';
 
 @Component({
   selector: 'app-racas',
@@ -55,7 +61,8 @@ import { Atributo } from '../../enum/atributo.enum';
     ReactiveFormsModule,
     NgFor,
     NgIf,
-  ],
+    DynamicSelectComponent
+],
   templateUrl: './racas.component.html',
   styleUrl: './racas.component.scss',
   animations: [
@@ -84,6 +91,7 @@ export class RacasComponent implements OnInit {
 
   constructor(
     private readonly racaService: RacaService,
+    private readonly poderService: PoderService,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {
@@ -194,7 +202,7 @@ export class RacasComponent implements OnInit {
    *
    */
 
-  @Input() racaSelecionada?: any;
+  @Input() racaSelecionada?: Raca;
   @Input() seVeioFicha: boolean = false;
   @Output() racaSelecionadaChange = new EventEmitter<Raca>();
   atributos = Object.keys(AcrecimoAtributo);
@@ -206,6 +214,24 @@ export class RacasComponent implements OnInit {
   checkSelecionaRaca(raca: Raca, isChecked: boolean): void {
     if (isChecked) {
       this.racaSelecionada = raca;
+      let poderes : Poder[] = [];
+      this.racaSelecionada?.habilidades?.forEach((habilidade) => {
+        this.poderService.listar({id: habilidade?.id}).subscribe({
+          next: (response) => {
+            poderes.push(response[0]);
+          },
+          error: (response) => {
+            console.log(response);
+          },
+          complete: () => {
+            this.racaSelecionada!.habilidades!.length = 0;
+            this.racaSelecionada?.habilidades?.push(...poderes);
+            console.log("Complete: "+this.racaSelecionada);
+            this.cdr.detectChanges();
+          }
+        });
+      });
+
       this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.FORCA);
       this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.DESTREZA);
       this.varreInstrucaoBuscandoAcrecimo(raca, AcrecimoAtributo.CONSTITUICAO);
@@ -229,25 +255,22 @@ export class RacasComponent implements OnInit {
       this.valoresAtributos = new Atributos();
       if (raca.instrucao) {
         if (
-          raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES) 
+          raca.instrucao.includes(OpcoesAtributosRaca.TRES_ATRIBUTOS_DIFERENTES) 
         ) {
           this.pontosAtributos = 3;
           raca.seSelecaoFinalizada = false;
-        } else if (raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES) ||
-        raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS)) {
+        } else if (raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS_DIFERENTES) ||
+        raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS)) {
           this.pontosAtributos = 2;
           raca.seSelecaoFinalizada = false;
-        } else if (raca.instrucao.includes(Calculo.UM_ATRIBUTO)) {
+        } else if (raca.instrucao.includes(OpcoesAtributosRaca.UM_ATRIBUTO)) {
           this.pontosAtributos = 1;
           raca.seSelecaoFinalizada = false;
         } else {
           raca.seSelecaoFinalizada = true;
         }
-
-        
       }
 
-      console.log(this.racaSelecionada);
     } else {
       this.racaSelecionada = undefined;
       this.pontosAtributos = 0;
@@ -259,10 +282,10 @@ export class RacasComponent implements OnInit {
     raca: Raca,
     acrecimo: AcrecimoAtributo
   ) {
-    const indice = this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO);
-    const antes = this.racaSelecionada.instrucao.slice(0, indice);
+    const indice = this.racaSelecionada!.instrucao!.indexOf(OpcoesAtributosRaca.EXCETO);
+    const antes = this.racaSelecionada!.instrucao!.slice(0, indice);
 
-    antes?.forEach((instrucao: AcrecimoAtributo) => {
+    antes?.forEach((instrucao) => {
       if (instrucao === acrecimo) {
         raca.resolucao?.push(acrecimo);
       }
@@ -284,9 +307,9 @@ export class RacasComponent implements OnInit {
     return this.seVeioFicha &&
       this.racaSelecionada !== undefined &&
       raca.instrucao
-      ? raca.instrucao.includes(Calculo.TRES_ATRIBUTOS_DIFERENTES) ||
-          raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS_DIFERENTES) ||
-          raca.instrucao.includes(Calculo.UM_ATRIBUTO)
+      ? raca.instrucao.includes(OpcoesAtributosRaca.TRES_ATRIBUTOS_DIFERENTES) ||
+          raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS_DIFERENTES) ||
+          raca.instrucao.includes(OpcoesAtributosRaca.UM_ATRIBUTO)
       : false;
   }
 
@@ -294,7 +317,7 @@ export class RacasComponent implements OnInit {
     return this.seVeioFicha &&
       this.racaSelecionada !== undefined &&
       raca.instrucao
-      ? raca.instrucao.includes(Calculo.DOIS_ATRIBUTOS)
+      ? raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS)
       : false;
   }
 
@@ -307,71 +330,44 @@ export class RacasComponent implements OnInit {
   }
 
   regraDesabilitaCheckAtributoBonusVariavel(key: string): boolean {
-    return !this.racaSelecionada.resolucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
-    || this.racaSelecionada.instrucao.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
+    return !this.racaSelecionada!.resolucao!.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
+    || this.racaSelecionada!.instrucao!.includes(AcrecimoAtributo[key as keyof typeof AcrecimoAtributo])
   }
 
   regraDesaBilitaAtributoExceto(key: string): boolean {
-    let seExceto = this.racaSelecionada.instrucao?.includes(Calculo.EXCETO);
+    let seExceto = this.racaSelecionada!.instrucao?.includes(OpcoesAtributosRaca.EXCETO);
 
     if (seExceto) {
-      const indice = this.racaSelecionada.instrucao.indexOf(Calculo.EXCETO);
-      const depois = this.racaSelecionada.instrucao.slice(indice + 1);
+      const indice = this.racaSelecionada!.instrucao!.indexOf(OpcoesAtributosRaca.EXCETO);
+      const depois = this.racaSelecionada!.instrucao!.slice(indice + 1);
       seExceto = depois.includes(
         AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
       );
     }
 
-    return seExceto;
+    return seExceto!;
   }
 
   checkAtributo(key: string, check: boolean) {
     if (check) {
       this.pontosAtributos -= 1;
-      this.racaSelecionada.resolucao.push(
+      this.racaSelecionada!.resolucao!.push(
         AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
       );
       this.valoresAtributos.editandoAtributo(key, check);
     } else {
       this.pontosAtributos += 1;
-      this.racaSelecionada.resolucao = this.racaSelecionada.resolucao.filter(
-        (res: AcrecimoAtributo) =>
+      this.racaSelecionada!.resolucao = this.racaSelecionada!.resolucao!.filter(
+        (res) =>
           res !== AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]
       );
       this.valoresAtributos.editandoAtributo(key, check);
     }
 
-    this.racaSelecionada.seSelecaoFinalizada = this.pontosAtributos === 0;
+    this.racaSelecionada!.seSelecaoFinalizada = this.pontosAtributos === 0;
     this.cdr.detectChanges();
   }
 }
-
-export enum Calculo {
-  UM_ATRIBUTO = '1 ATRIBUTO',
-  DOIS_ATRIBUTOS_DIFERENTES = '2 ATRIBUTOS DIFERENTES',
-  TRES_ATRIBUTOS_DIFERENTES = '3 ATRIBUTOS DIFERENTES',
-  DOIS_ATRIBUTOS = '2 ATRIBUTOS',
-  EXCETO = 'EXCETO',
-}
-
-export enum AcrecimoAtributo {
-  FORCA = 'this.personagem.atributos.forca_racial = this.personagem.atributos.forca_racial + 1',
-  DESTREZA = 'this.personagem.atributos.destreza_racial = this.personagem.atributos.destreza_racial + 1',
-  CONSTITUICAO = 'this.personagem.atributos.constituicao_racial = this.personagem.atributos.constituicao_racial + 1',
-  INTELIGENCIA = 'this.personagem.atributos.inteligencia_racial = this.personagem.atributos.inteligencia_racial + 1',
-  SABEDORIA = 'this.personagem.atributos.sabedoria_racial = this.personagem.atributos.sabedoria_racial + 1',
-  CARISMA = 'this.personagem.atributos.carisma_racial = this.personagem.atributos.carisma_racial + 1',
-}
-
-export enum DecrecimoAtributo {
-  FORCA = 'this.personagem.atributos.forca_racial = this.personagem.atributos.forca_racial - 1',
-  DESTREZA = 'this.personagem.atributos.destreza_racial = this.personagem.atributos.destreza_racial - 1',
-  CONSTITUICAO = 'this.personagem.atributos.constituicao_racial = this.personagem.atributos.constituicao_racial - 1',
-  INTELIGENCIA = 'this.personagem.atributos.inteligencia_racial = this.personagem.atributos.inteligencia_racial - 1',
-  SABEDORIA = 'this.personagem.atributos.sabedoria_racial = this.personagem.atributos.sabedoria_racial - 1',
-  CARISMA = 'this.personagem.atributos.carisma_racial = this.personagem.atributos.carisma_racial - 1',
-}
-
 class Atributos {
   forca!: number;
   destreza!: number;

@@ -1,9 +1,10 @@
 import { Classe } from "./classe";
 import { Deus } from "./deus";
+import { Raca } from "./raca";
 
-export interface Poder {
+export class Poder {
 
-  id: number;
+  id!: number;
   ids_poder_pai?: number[];
   nome?: string;
   descricao?: string;
@@ -18,12 +19,15 @@ export interface Poder {
   prerequisito_numero_habilidade_tormenta?: number;
   id_deuses?: number[];
   deuses?: Deus[];
-  fator_tormenta?: number,
+  fator_tormenta?: number;
   e_aprimoramento?: boolean;
   e_poder_magico?:boolean;
   tipo?: string;
   classe?: Classe;
-  referencias?:string;
-  paginas?:string;
+  raca?: Raca;
+  instrucao?: string[];
+  resolucao?: string[];
+  referencias?: string;
+  paginas?: string;
 
 }
