@@ -193,12 +193,12 @@ export class Personagem {
           );
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
+        this.adicionaNumeroPericiasLivres(novoValor > this.atributos.inteligencia_comprada? 1: -1);
         this.atributos.inteligencia_comprada = novoValor;
         this.atributos.inteligencia =
-          this.atributos.inteligencia_comprada +
-          this.atributos.inteligencia_racial +
-          this.atributos.inteligencia_bonus;
-        this.recalculaNumeroPericias(undefined);
+        this.atributos.inteligencia_comprada +
+        this.atributos.inteligencia_racial +
+        this.atributos.inteligencia_bonus;
         break;
       }
       case 'sab': {
@@ -241,21 +241,14 @@ export class Personagem {
     this.recalculaDefesa();
   }
 
-  public recalculaNumeroPericias(numeroPericiasExtras?: number){
-    this.numero_pericias_livre = this.atributos.inteligencia + (numeroPericiasExtras  ? numeroPericiasExtras: 0);
-  }
-
-  adicionaVinculoPoderPersonagem(idPoderPai: number, poder: Poder){
-
+  public adicionaNumeroPericiasLivres(numeroPericiasExtras: number){
+      this.numero_pericias_livre = (numeroPericiasExtras) + this.numero_pericias_livre;
   }
 
   public recalculaDefesa(){
     this.defesa = 10;
-    console.log(this.defesa);
     this.defesa +=  Number(this.defesa_bonus);
-    console.log(this.defesa);
     this.defesa += Number(this.recuperaValorAtributo(this.atributo_defesa));
-    console.log(this.defesa);
   };
 
   public recalculaPericias() {
@@ -379,6 +372,7 @@ export class PericiaPersonagem {
   atributo_descricao?: string;
   atributo?: number;
   outros?: number;
+  bonus_treinado: number = 2;
 
   constructor() {
   }
@@ -393,11 +387,10 @@ export class PericiaPersonagem {
     this.outros = 0;
     this.pericia = pericia;
     this.descricao = descricao;
-    this.treinado = false;
     this.nivel = nivel;
     this.atributo_descricao = atributo_descricao;
     this.atributo = atributo;
-    this.total = atributo + Math.floor(nivel/2) + this.outros;
+    this.total = atributo + Math.floor(nivel/2) + this.outros + (this.treinado ? this.bonus_treinado : 0);
   }
 
   atualiza(bonus_nivel: number,
@@ -405,17 +398,20 @@ export class PericiaPersonagem {
     this.nivel = bonus_nivel;
     this.atributo = atributo;
     this.outros = outros;
-    this.total = Number(atributo) + Math.floor(Number(this.nivel!)/2) + Number(outros);
+    this.total = Number(atributo) + Math.floor(Number(this.nivel!)/2) + Number(outros) + Number(this.treinado ? this.bonus_treinado : 0);
   }
 
-  checkTreinamento(isChecked: boolean) {
+  checkTreinamento(isChecked: boolean, personagem: Personagem) {
     this.treinado = isChecked;
-    let bonus_treinado = 0;
+    this.bonus_treinado = 0;
     if(this.treinado){
-      bonus_treinado = this.nivel! >= 7 ? 4 : this.nivel! >= 15 ? 6: 2;
+      personagem.adicionaNumeroPericiasLivres(-1);
 
+      this.bonus_treinado = this.nivel! >= 7 ? 4 : this.nivel! >= 15 ? 6: 2;
+    } else {
+      personagem.adicionaNumeroPericiasLivres(1);
     }
-    this.total = Number(this.atributo!) + Math.floor(Number(this.nivel!)/2) + Number(this.outros!) + Number(bonus_treinado);
+    this.total = Number(this.atributo!) + Math.floor(Number(this.nivel!)/2) + Number(this.outros!) + Number(this.bonus_treinado);
   }
 
 }

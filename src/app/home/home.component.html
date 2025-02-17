@@ -1201,8 +1201,8 @@
                   </mat-card>
                 </div>
               </div>
-              <div class="row" style="width: 104% !important;    max-width: 104%;">
-                <div class="col-sm-12" style="padding-right: 0% !important;">
+              <div class="row" style="width: 104% !important; max-width: 104%">
+                <div class="col-sm-12" style="padding-right: 0% !important">
                   <mat-card class="card-padrao">
                     <mat-expansion-panel [expanded]="true" [disabled]="true">
                       <mat-expansion-panel-header>
@@ -1216,8 +1216,12 @@
                           <table
                             mat-table
                             [dataSource]="dataSourcePoderesPersonagens"
-                            class="mat-elevation-z8 full-width">
-                            <ng-container matColumnDef="nome" class="mat-column-treinado">
+                            class="mat-elevation-z8 full-width"
+                          >
+                            <ng-container
+                              matColumnDef="nome"
+                              class="mat-column-treinado"
+                            >
                               <th
                                 style="padding-left: 2% !important"
                                 class="pericia"
@@ -1227,12 +1231,21 @@
                               >
                                 NOME
                               </th>
-                              <td class="pericia" mat-cell  style="padding-left: 2% !important" *matCellDef="let element">
+                              <td
+                                class="pericia"
+                                mat-cell
+                                style="padding-left: 2% !important"
+                                *matCellDef="let element"
+                              >
                                 {{ element.nome.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <ng-container matColumnDef="tipo" class="mat-column-treinado">
-                              <th style="padding-left: 2% !important"
+                            <ng-container
+                              matColumnDef="tipo"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
                                 class="pericia"
                                 mat-header-cell
                                 *matHeaderCellDef
@@ -1240,7 +1253,8 @@
                               >
                                 TIPO
                               </th>
-                              <td style="padding-left: 2% !important"
+                              <td
+                                style="padding-left: 2% !important"
                                 class="pericia"
                                 mat-cell
                                 *matCellDef="let element"
@@ -1248,10 +1262,16 @@
                                 {{ element.tipo.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <tr mat-header-row *matHeaderRowDef="displayedColumnsPoderes"></tr>
+                            <tr
+                              mat-header-row
+                              *matHeaderRowDef="displayedColumnsPoderes"
+                            ></tr>
                             <tr
                               mat-row
-                              *matRowDef="let row; columns: displayedColumnsPoderes"
+                              *matRowDef="
+                                let row;
+                                columns: displayedColumnsPoderes
+                              "
                             ></tr>
                           </table>
                         </div>
@@ -1260,8 +1280,8 @@
                   </mat-card>
                 </div>
               </div>
-              <div class="row" style="width: 104% !important;    max-width: 104%;">
-                <div class="col-sm-12" style="padding-right: 0% !important;">
+              <div class="row" style="width: 104% !important; max-width: 104%">
+                <div class="col-sm-12" style="padding-right: 0% !important">
                   <mat-card class="card-padrao">
                     <mat-expansion-panel [expanded]="true" [disabled]="true">
                       <mat-expansion-panel-header>
@@ -1270,7 +1290,8 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
-                      @for (imunidade of personagem.imunidades; track imunidade){
+                      @for (imunidade of personagem.imunidades; track
+                      imunidade){
                       <div class="row">
                         <button
                           class="me-2 proficiencia"
@@ -1290,11 +1311,26 @@
           <div class="col-sm-4">
             <mat-card class="card-padrao">
               <div class="row">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <b>Número de Perícias Livres: </b>
+                    <input
+                      type="text"
+                      [(ngModel)]="personagem.numero_pericias_livre"
+                      size="2"
+                      style="text-align: center !important"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-sm-12 mt-2">
                   <table
                     mat-table
                     [dataSource]="dsPericias"
-                    class="mat-elevation-z8 full-width">
+                    class="mat-elevation-z8 full-width"
+                  >
                     <ng-container
                       matColumnDef="treinado"
                       class="mat-column-treinado"
@@ -1312,8 +1348,9 @@
                         fxFlex="5px"
                       >
                         <mat-checkbox
+                          [disabled]="seDesabilitaCheck(element)"
                           name="treinado"
-                          (change)="element.checkTreinamento($event.checked)"
+                          (change)="element.checkTreinamento($event.checked, personagem)"
                         >
                         </mat-checkbox>
                       </td>

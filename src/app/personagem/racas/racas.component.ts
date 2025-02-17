@@ -37,12 +37,12 @@ import { Sentido } from '../../enum/sentido.enum';
 import { Raca } from '../../model/raca';
 import { RacaService } from '../../service/raca.service';
 import { Atributo } from '../../enum/atributo.enum';
-import { OpcoesAtributosRaca } from '../../enum/opcoes.atributo.raca.enum';
+import { OpcoesSelecao } from '../../enum/opcoes.selecao';
 import { AcrecimoAtributo } from '../../enum/acrecimo.atributo.enum';
 import { DecrecimoAtributo } from '../../enum/decrecimo.atributo.enum';
-import { DynamicSelectComponent } from "../../components/dinamic-select";
 import { PoderService } from '../../service/poder.service';
 import { Poder } from '../../model/poder';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-racas',
@@ -61,7 +61,7 @@ import { Poder } from '../../model/poder';
     ReactiveFormsModule,
     NgFor,
     NgIf,
-    DynamicSelectComponent
+    MatTabsModule
 ],
   templateUrl: './racas.component.html',
   styleUrl: './racas.component.scss',
@@ -86,6 +86,7 @@ export class RacasComponent implements OnInit {
   referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};
   numero_registros = 0;
+  selectedIndex: number = 0;
 
   form!: FormGroup;
 
@@ -226,7 +227,13 @@ export class RacasComponent implements OnInit {
           complete: () => {
             this.racaSelecionada!.habilidades!.length = 0;
             this.racaSelecionada?.habilidades?.push(...poderes);
-            console.log("Complete: "+this.racaSelecionada);
+            this.racaSelecionada?.habilidades?.forEach((habilidade) => {
+              habilidade.resolucao = [];
+              if(habilidade?.instrucao){
+                habilidade.resolucao.push(...habilidade?.instrucao);
+              }
+            });
+            console.log("this.racaSelecionada?.habilidades? "+ this.racaSelecionada?.habilidades!);
             this.cdr.detectChanges();
           }
         });
@@ -255,15 +262,15 @@ export class RacasComponent implements OnInit {
       this.valoresAtributos = new Atributos();
       if (raca.instrucao) {
         if (
-          raca.instrucao.includes(OpcoesAtributosRaca.TRES_ATRIBUTOS_DIFERENTES) 
+          raca.instrucao.includes(OpcoesSelecao.TRES_ATRIBUTOS_DIFERENTES) 
         ) {
           this.pontosAtributos = 3;
           raca.seSelecaoFinalizada = false;
-        } else if (raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS_DIFERENTES) ||
-        raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS)) {
+        } else if (raca.instrucao.includes(OpcoesSelecao.DOIS_ATRIBUTOS_DIFERENTES) ||
+        raca.instrucao.includes(OpcoesSelecao.DOIS_ATRIBUTOS)) {
           this.pontosAtributos = 2;
           raca.seSelecaoFinalizada = false;
-        } else if (raca.instrucao.includes(OpcoesAtributosRaca.UM_ATRIBUTO)) {
+        } else if (raca.instrucao.includes(OpcoesSelecao.UM_ATRIBUTO)) {
           this.pontosAtributos = 1;
           raca.seSelecaoFinalizada = false;
         } else {
@@ -282,7 +289,7 @@ export class RacasComponent implements OnInit {
     raca: Raca,
     acrecimo: AcrecimoAtributo
   ) {
-    const indice = this.racaSelecionada!.instrucao!.indexOf(OpcoesAtributosRaca.EXCETO);
+    const indice = this.racaSelecionada!.instrucao!.indexOf(OpcoesSelecao.EXCETO);
     const antes = this.racaSelecionada!.instrucao!.slice(0, indice);
 
     antes?.forEach((instrucao) => {
@@ -303,13 +310,14 @@ export class RacasComponent implements OnInit {
     });
   }
 
-  seExibeCheckAtributos(raca: Raca): boolean {
+  seExibeSelecao(raca: Raca): boolean {
+    this.selectedIndex = 0;
     return this.seVeioFicha &&
       this.racaSelecionada !== undefined &&
       raca.instrucao
-      ? raca.instrucao.includes(OpcoesAtributosRaca.TRES_ATRIBUTOS_DIFERENTES) ||
-          raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS_DIFERENTES) ||
-          raca.instrucao.includes(OpcoesAtributosRaca.UM_ATRIBUTO)
+      ? raca.instrucao.includes(OpcoesSelecao.TRES_ATRIBUTOS_DIFERENTES) ||
+          raca.instrucao.includes(OpcoesSelecao.DOIS_ATRIBUTOS_DIFERENTES) ||
+          raca.instrucao.includes(OpcoesSelecao.UM_ATRIBUTO)
       : false;
   }
 
@@ -317,7 +325,7 @@ export class RacasComponent implements OnInit {
     return this.seVeioFicha &&
       this.racaSelecionada !== undefined &&
       raca.instrucao
-      ? raca.instrucao.includes(OpcoesAtributosRaca.DOIS_ATRIBUTOS)
+      ? raca.instrucao.includes(OpcoesSelecao.DOIS_ATRIBUTOS)
       : false;
   }
 
@@ -335,10 +343,10 @@ export class RacasComponent implements OnInit {
   }
 
   regraDesaBilitaAtributoExceto(key: string): boolean {
-    let seExceto = this.racaSelecionada!.instrucao?.includes(OpcoesAtributosRaca.EXCETO);
+    let seExceto = this.racaSelecionada!.instrucao?.includes(OpcoesSelecao.EXCETO);
 
     if (seExceto) {
-      const indice = this.racaSelecionada!.instrucao!.indexOf(OpcoesAtributosRaca.EXCETO);
+      const indice = this.racaSelecionada!.instrucao!.indexOf(OpcoesSelecao.EXCETO);
       const depois = this.racaSelecionada!.instrucao!.slice(indice + 1);
       seExceto = depois.includes(
         AcrecimoAtributo[key as keyof typeof AcrecimoAtributo]

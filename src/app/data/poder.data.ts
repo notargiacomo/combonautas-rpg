@@ -4,6 +4,7 @@ import { Poder } from '../model/poder';
 import { TipoPoder } from '../enum/tipo.poder.enum';
 import { Atributo } from '../enum/atributo.enum';
 import { Referencia } from '../enum/referencia.enum';
+import { OpcoesSelecao } from '../enum/opcoes.selecao';
 
 @Injectable({
   providedIn: 'root',
@@ -2716,7 +2717,7 @@ export class PoderData {
         descricao: `Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         raca: {id:1},
-        instrucao: [`<app-dynamic-select [listaDinamicaInstrucao]="[{chave: '2 Perícias', valor: 'this.personagem.recalculaNumeroPericias(2);' }, {chave: '1 Perícia + 1 Poder Geral', valor: 'this.personagem.recalculaNumeroPericias(1); this.personagem.adicionaVinculoPoderPersonagem(245, undefined)' } ]" (valorSelecionado)="executaResolucao($event)"></app-dynamic-select>`],
+        instrucao: ['this.personagem.adicionaNumeroPericiasLivres(1)'],
         referencias: Referencia.BASICO,
         paginas: '19'
       },
