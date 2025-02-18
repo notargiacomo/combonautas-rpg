@@ -43,6 +43,7 @@ import { DecrecimoAtributo } from '../../enum/decrecimo.atributo.enum';
 import { PoderService } from '../../service/poder.service';
 import { Poder } from '../../model/poder';
 import { MatTabsModule } from '@angular/material/tabs';
+import { PoderesComponent } from "../poderes/poderes.component";
 
 @Component({
   selector: 'app-racas',
@@ -61,7 +62,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     ReactiveFormsModule,
     NgFor,
     NgIf,
-    MatTabsModule
+    MatTabsModule,
+    PoderesComponent,
 ],
   templateUrl: './racas.component.html',
   styleUrl: './racas.component.scss',
@@ -127,6 +129,7 @@ export class RacasComponent implements OnInit {
       deslocamentos: new FormArray([]),
       referencias: new FormArray([]),
       nome: [],
+      selecao: []
     });
   }
 
@@ -199,7 +202,7 @@ export class RacasComponent implements OnInit {
 
   /**
    *
-   * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA
+   * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - RAÇA
    *
    */
 
@@ -227,13 +230,6 @@ export class RacasComponent implements OnInit {
           complete: () => {
             this.racaSelecionada!.habilidades!.length = 0;
             this.racaSelecionada?.habilidades?.push(...poderes);
-            this.racaSelecionada?.habilidades?.forEach((habilidade) => {
-              habilidade.resolucao = [];
-              if(habilidade?.instrucao){
-                habilidade.resolucao.push(...habilidade?.instrucao);
-              }
-            });
-            console.log("this.racaSelecionada?.habilidades? "+ this.racaSelecionada?.habilidades!);
             this.cdr.detectChanges();
           }
         });
@@ -375,6 +371,47 @@ export class RacasComponent implements OnInit {
     this.racaSelecionada!.seSelecaoFinalizada = this.pontosAtributos === 0;
     this.cdr.detectChanges();
   }
+
+    /**
+   *
+   * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - HABILIDADES
+   *
+   */
+
+    
+  public seInstrucaoHabilidaTemMultiplaEscolha(habilidade: Poder): boolean{
+    return habilidade?.instrucao? habilidade?.instrucao?.includes(OpcoesSelecao.RADIO): false;
+  }
+
+  public recuperaMultiplaEscolhaHabilidade(habilidade: Poder): any {
+    const indice = habilidade.instrucao!.indexOf(OpcoesSelecao.RADIO);
+    const depois = habilidade.instrucao!.slice(indice + 1);
+    let lista: any[] = []
+    eval('lista.push(...'+depois+')');
+    return lista;
+  }
+
+  trackByChave(index: number, item: any): string {
+    return item.chave; // Certifique-se de que 'chave' é único para cada item!
+  }
+
+  selecao?: string;
+  public selecionaOpcaoMultiplaEscolha(event:any, habilidade: Poder){
+    console.log("Entro em selecionaOpcaoMultiplaEscolha");
+    this.racaSelecionada?.habilidades?.forEach( hab =>{
+      if(hab === habilidade){
+        let filtro = this.form.value;
+        const indice = hab.instrucao!.indexOf(OpcoesSelecao.RADIO);
+        const antes = hab.instrucao!.slice(0, indice);
+        
+        if (!hab.resolucao) hab.resolucao = [];
+        hab.resolucao?.push(...antes);
+        hab.resolucao?.push(event.value);
+        habilidade.resolucao?.push(event);
+      }
+    })
+  }
+
 }
 class Atributos {
   forca!: number;

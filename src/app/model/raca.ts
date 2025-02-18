@@ -1,3 +1,4 @@
+import { OpcoesSelecao } from "../enum/opcoes.selecao";
 import { Poder } from "./poder";
 
 export class Raca {
@@ -23,4 +24,5 @@ export class Raca {
 
   constructor(){
   }
+
 }

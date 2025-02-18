@@ -29,5 +29,6 @@ export class Poder {
   resolucao?: string[];
   referencias?: string;
   paginas?: string;
+  auxiliar?: string;
 
 }

@@ -2717,7 +2717,7 @@ export class PoderData {
         descricao: `Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         raca: {id:1},
-        instrucao: ['this.personagem.adicionaNumeroPericiasLivres(1)'],
+        instrucao: ['this.personagem.adicionaNumeroPericiasLivres(1)', OpcoesSelecao.RADIO, `[{chave: 'Duas Perícias', value: 'this.personagem.adicionaNumeroPericiasLivres(1)'}, {chave: 'Uma Perícia e um Poder', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder geral (Versátil)')"}]`],
         referencias: Referencia.BASICO,
         paginas: '19'
       },

@@ -1,7 +1,7 @@
 <div class="container">
+  <form [formGroup]="form">
   <div class="row mt-4">
     <mat-card class="cartao">
-      <form [formGroup]="form">
         <div class="row" *ngIf="!seVeioFicha">
           <div class="col-sm-12">
             <h2><b>RAÇAS</b></h2>
@@ -130,7 +130,6 @@
             </section>
           </div>
         </div>
-      </form>
     </mat-card>
   </div>
   <div class="row mt-4">
@@ -565,6 +564,64 @@
                       </mat-card>
                     </div>
                   </div>
+                  <div class="row">
+                    <!-- TODA A MECÂNICA DE HABILIDADES DE RAÇA DEVE SER SINTETIZADA E AUTOMATIZADA AQUI! -->
+                    <div class="col-sm-12">
+                      @for (habilidade of racaSelecionada?.habilidades; track
+                      habilidade.id) {
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <hr />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <b>{{ habilidade.nome }}</b>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          {{ habilidade.descricao }}
+                        </div>
+                      </div>
+                      <div
+                        class="row"
+                        *ngIf="
+                          seInstrucaoHabilidaTemMultiplaEscolha(habilidade)
+                        "
+                      >
+                      <section class="section">
+                        <mat-radio-group
+                        title="selecao"
+                        name="selecao"
+                        formControlName="selecao"
+                          (change)="
+                            selecionaOpcaoMultiplaEscolha(
+                              $event.value, habilidade
+                            )
+                          "
+                          aria-labelledby="radio-tipo-criatura"
+                        >
+                          <!-- @for (item of
+                          recuperaMultiplaEscolhaHabilidade(habilidade); track
+                          item.chave) { -->
+                          <mat-radio-button *ngFor="let selecao of  recuperaMultiplaEscolhaHabilidade(habilidade); trackBy: trackByChave" [value]="selecao">{{
+                            selecao.chave
+                          }}</mat-radio-button>
+                            <!-- <mat-radio-button *ngFor="let atributo of atributos" [value]="atributo">{{atributo}}
+                            </mat-radio-button> -->
+                          <!-- } -->
+                        </mat-radio-group>
+                      </section>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <hr />
+                        </div>
+                      </div>
+                      }
+                    </div>
+                  </div>
                 </mat-tab>
                 <mat-tab label="Raça">
                   <div class="row">
@@ -602,4 +659,5 @@
       </table>
     </mat-card>
   </div>
+</form>
 </div>

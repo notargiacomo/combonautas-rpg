@@ -362,6 +362,10 @@ export class Personagem {
       return undefined;
     }, this);
   }
+
+  adicionarEspacoSelecaoPoder(descricao: string){
+    this.poderes.push({id:0, nome: descricao});  
+  };
 }
 export class PericiaPersonagem {
   pericia?: string;
