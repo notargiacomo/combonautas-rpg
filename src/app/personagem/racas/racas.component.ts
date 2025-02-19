@@ -82,6 +82,7 @@ export class RacasComponent implements OnInit {
   columnsToDisplay = ['nome', 'tipo', 'tamanho', 'referencias', 'paginas'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
+  isExpandedRow = (index: number, row: any) => row === this.expandedElement;
   racas!: Raca[];
   deslocamentos = Object.values(Deslocamento);
   sentidos = Object.values(Sentido);

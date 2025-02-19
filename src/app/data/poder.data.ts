@@ -5,6 +5,7 @@ import { TipoPoder } from '../enum/tipo.poder.enum';
 import { Atributo } from '../enum/atributo.enum';
 import { Referencia } from '../enum/referencia.enum';
 import { OpcoesSelecao } from '../enum/opcoes.selecao';
+import { Chave } from '../enum/chave.enum';
 
 @Injectable({
   providedIn: 'root',
@@ -2720,6 +2721,46 @@ export class PoderData {
         instrucao: ['this.personagem.adicionaNumeroPericiasLivres(1)', OpcoesSelecao.RADIO, `[{chave: 'Duas Perícias', value: 'this.personagem.adicionaNumeroPericiasLivres(1)'}, {chave: 'Uma Perícia e um Poder', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder geral (Versátil)')"}]`],
         referencias: Referencia.BASICO,
         paginas: '19'
+      },
+      {
+        id: 246,
+        nome: `Conhecimento das Rochas`,
+        descricao: `Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        raca: {id:2},
+        instrucao: ['this.personagem.adicionaSentido(Sentido.VISAO_ESCURO)', `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_PERCEPCAO}', [{bonus: 2, '${Chave.TERRENO_SUBTERRANEO}'}])`,`this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_SOBREVIVENCIA}', [{bonus: 2, '${Chave.TERRENO_SUBTERRANEO}'}])`],
+        referencias: Referencia.BASICO,
+        paginas: '20'
+      },
+      {
+        id: 247,
+        nome: `Devagar e Sempre`,
+        descricao: `Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        raca: {id:2},
+        instrucao: ['this.personagem.deslocamentos[0].valor = 6;',`this.personagem.imunidades.push(new Imunidade('${Chave.CONDICAO_SOBRECARREGADO}', 'Condição'));`],
+        referencias: Referencia.BASICO,
+        paginas: '20'
+      },
+      {
+        id: 248,
+        nome: `Duro como Pedra`,
+        descricao: `Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        raca: {id:2},
+        instrucao: ['this.personagem.adicionaBonusTotalVida(2);',`this.personagem.adicionaBonusNivelVida(1);`],
+        referencias: Referencia.BASICO,
+        paginas: '20'
+      },
+      {
+        id: 249,
+        nome: `Tradição de Heredrimm`,
+        descricao: `Você é perito nas armas tradicionais anãs, seja por ter treinado com elas, seja por usá-las como ferramentas de ofício. Para você, todos os machados, martelos, marretas e picaretas são armas simples. Você recebe +2 em ataques com essas armas.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        raca: {id:2},
+        instrucao: ['this.personagem.adicionaBonusTotalVida(2);',`this.personagem.adicionaBonusNivelVida(1);`],
+        referencias: Referencia.BASICO,
+        paginas: '20'
       },
     ];
   }

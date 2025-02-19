@@ -653,7 +653,7 @@
         ></tr>
         <tr
           mat-row
-          *matRowDef="let row; columns: ['expandedDetail']"
+          *matRowDef="let row; columns: ['expandedDetail']; when: isExpandedRow"
           class="detail-row"
         ></tr>
       </table>

@@ -16,9 +16,13 @@ export class Personagem {
   pontos_vida_atual!: number;
   pontos_vida_total!: number;
   pontos_vida_temporarios!: number;
+  bonus_vida_total!: number;
+  bonus_vida_nivel!: number;
   pontos_mana_atual!: number;
   pontos_mana_total!: number;
   pontos_mana_temporarios!: number;
+  bonus_mana_total!: number;
+  bonus_mana_nivel!: number;
   defesa!:number;
   defesa_bonus!:number;
   atributo_defesa!: string;
@@ -72,10 +76,11 @@ export class Personagem {
     this.numero_itens_vestidos_maximo = 4;
     this.carga = 0;
     this.equipamentos_carregados = [];
-    this.deslocamentos = []
     this.resistencias = [];
     this.imunidades = [];
-    this.deslocamentos.push(new Deslocamento('Terrestre', 9))
+    this.deslocamentos = [];
+    this.deslocamentos.push(new Deslocamento('Terrestre', 9));
+    this.sentidos = [];
     this.itens = [];
     this.proficiencia = [];
     this.proficiencia.push(Proficiencia.ARMAS_SIMPLES);
@@ -89,9 +94,13 @@ export class Personagem {
     this.pontos_vida_atual = 0;
     this.pontos_vida_total = 0;
     this.pontos_vida_temporarios = 0;
+    this.bonus_vida_total = 0;
+    this.bonus_vida_nivel = 0;
     this.pontos_mana_atual = 0;
     this.pontos_mana_total = 0;
     this.pontos_mana_temporarios = 0;
+    this.bonus_mana_total = 0;
+    this.bonus_mana_nivel = 0;
     this.defesa = 10;
     this.atributo_defesa = Atributo.DESTREZA;
     this.defesa_bonus = 0;
@@ -182,6 +191,7 @@ export class Personagem {
           this.atributos.constituicao_comprada +
           this.atributos.constituicao_racial +
           this.atributos.constituicao_bonus;
+          this.recalculaVida();
         break;
       }
       case 'int': {
@@ -239,6 +249,28 @@ export class Personagem {
 
     this.recalculaPericias();
     this.recalculaDefesa();
+  }
+
+  adicionaBonusTotalVida(bonusTotal: number){
+    this.bonus_vida_total = bonusTotal;
+    this.recalculaVida();
+  }
+
+  adicionaBonusNivelVida(bonusNivel: number){
+    this.bonus_vida_nivel = bonusNivel;
+    this.recalculaVida();
+  }
+
+  recalculaVida(){
+    this.pontos_vida_total = (this.atributos.constituicao * this.nivel!) + this.bonus_vida_total + (this.bonus_vida_nivel * this.nivel!);
+  }
+
+  public adicionaSentido(sentido: Sentido){
+    this.sentidos?.push(sentido);
+  }
+
+  public adicionaImunidade(imunidade: Imunidade){
+    this.imunidades?.push(imunidade);
   }
 
   public adicionaNumeroPericiasLivres(numeroPericiasExtras: number){
@@ -366,6 +398,14 @@ export class Personagem {
   adicionarEspacoSelecaoPoder(descricao: string){
     this.poderes.push({id:0, nome: descricao});  
   };
+
+  atualizaBonusCondicionalPericia(nome: string, bonus: number, condicao: {bonus?: number; condicao?: string[];}[]){
+    this.pericias?.find(p => p.pericia?.normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase() === nome        .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase())?.adicionaBonusCondicional(condicao);
+  }
 }
 export class PericiaPersonagem {
   pericia?: string;
@@ -377,6 +417,17 @@ export class PericiaPersonagem {
   atributo?: number;
   outros?: number;
   bonus_treinado: number = 2;
+  bonus_condicional?: {
+    bonus?: number;
+    condicao?: string[]; 
+  } [];
+
+  adicionaBonusCondicional(condicao: {bonus?: number; condicao?: string[];}[]){
+    if(!this.bonus_condicional) 
+      this.bonus_condicional = condicao;
+    else
+      this.bonus_condicional.push(...condicao);
+  }
 
   constructor() {
   }
@@ -452,5 +503,12 @@ export class Resistencias {
   }
 }
 
-export enum Imunidade {
+export class Imunidade {
+  nome?: string;
+  tipo?: string;
+
+  constructor(nome: string, tipo: string){
+    this.nome = nome;
+    this.tipo = tipo;
+  }
 }

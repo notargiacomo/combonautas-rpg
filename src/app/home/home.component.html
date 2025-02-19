@@ -1,6 +1,6 @@
 <div class="container py-4">
   <div class="row" style="min-height: 500px !important">
-    <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
       <mat-card class="card-padrao" style="min-height: 500px !important">
         <div class="row">
           <div class="col-sm-12">
@@ -9,8 +9,8 @@
           </div>
         </div>
       </mat-card>
-    </div>
-    <div class="col-sm-9">
+    </div> -->
+    <div class="col-sm-12">
       <mat-card class="card-padrao" style="min-height: 500px !important">
         <div class="row">
           <div class="col-sm-8">
@@ -1252,6 +1252,27 @@
                                 mat-sort-header
                               >
                                 TIPO
+                              </th>
+                              <td
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-cell
+                                *matCellDef="let element"
+                              >
+                                {{ element.tipo.toUpperCase() }}
+                              </td>
+                            </ng-container>
+                            <ng-container
+                              matColumnDef="acoes"
+                              class="mat-column-treinado"
+                            >
+                              <th
+                                style="padding-left: 2% !important"
+                                class="pericia"
+                                mat-header-cell
+                                *matHeaderCellDef
+                                mat-sort-header
+                              >
                               </th>
                               <td
                                 style="padding-left: 2% !important"

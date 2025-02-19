@@ -140,3 +140,17 @@ hr {
   size: 20% !important;
   padding: 0% !important;
 }
+
+.detail-row {
+  display: none;
+}
+
+.element-row.expanded-row + .detail-row {
+  display: table-row;
+}
+
+.expanded-content {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}

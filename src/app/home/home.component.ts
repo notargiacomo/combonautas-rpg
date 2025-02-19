@@ -14,7 +14,7 @@ import { BalaoInterativoPadraoComponent } from '../components/caixa-informativa/
 import { Atributo } from '../enum/atributo.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { Pericia } from '../model/pericia';
-import { PericiaPersonagem, Personagem } from '../model/personagem';
+import { Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
 
@@ -31,7 +31,7 @@ import { PericiasService } from '../service/pericia.service';
     MatSelectModule,
     FormsModule,
     MatExpansionModule,
-    CommonModule
+    CommonModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -57,7 +57,7 @@ export class HomeComponent {
     'espaco',
   ];
   displayedColumnsItens: string[] = ['item', 'descricao'];
-  displayedColumnsPoderes: string[] = ['nome', 'tipo'];
+  displayedColumnsPoderes: string[] = ['nome', 'tipo', 'acoes'];
 
   constructor(
     private readonly router: Router,
@@ -112,14 +112,22 @@ export class HomeComponent {
           eval(res);
         });
 
+        this.personagem.recalculaAtributos();
         this.personagem.raca?.habilidades?.forEach((habilidade) => {
-          console.log("habilidade.resolucao: " + habilidade.resolucao);
-          habilidade.resolucao?.forEach((resolucao) => {
-            eval(resolucao);
-          })
+          console.log('habilidade.instrucao: ' + habilidade.instrucao);
+          console.log('habilidade.resolucao: ' + habilidade.resolucao);
+          if (habilidade.resolucao) {
+            habilidade.resolucao?.forEach((resolucao) => {
+              eval(resolucao);
+            });
+          } else {
+            habilidade.instrucao?.forEach((instrucao) => {
+              new Imunidade('','');
+              eval(instrucao);
+            });
+          }
         });
 
-        this.personagem.recalculaAtributos();
       } else {
         console.log('Diálogo foi fechado sem retorno.');
       }
@@ -128,11 +136,16 @@ export class HomeComponent {
 
   seDesabilitaCheck(pericia: PericiaPersonagem): boolean {
     let periciaChekada = false;
-    this.personagem.pericias?.forEach(per => {
-      if(pericia === per ){
-        periciaChekada = per.treinado? per.treinado: false;
+    this.personagem.pericias?.forEach((per) => {
+      if (pericia === per) {
+        periciaChekada = per.treinado ? per.treinado : false;
       }
     });
-    return this.personagem.numero_pericias_livre === 0 && (this.personagem.pericias && this.personagem.pericias.length > 0 ? !periciaChekada: true);
+    return (
+      this.personagem.numero_pericias_livre === 0 &&
+      (this.personagem.pericias && this.personagem.pericias.length > 0
+        ? !periciaChekada
+        : true)
+    );
   }
 }
