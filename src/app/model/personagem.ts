@@ -418,12 +418,12 @@ export class Personagem {
     this.poderes.push({id:0, nome: descricao});  
   };
 
-  atualizaBonusCondicionalPericia(nome: string, bonus: number, condicao: {bonus?: number; condicao?: string[];}[]){
+  atualizaBonusCondicionalPericia(nome: string, bonus: number, condicao: {origem?: string; bonus?: number; condicao?: string[];}[]){
     this.pericias?.find(p => p.pericia?.normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase() === nome        .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase())?.adicionaBonusCondicional(condicao);
+    .toLowerCase())?.adicionaBonusCondicionalPermanente(condicao);
   }
 }
 export class PericiaPersonagem {
@@ -436,16 +436,21 @@ export class PericiaPersonagem {
   atributo?: number;
   outros?: number;
   bonus_treinado: number = 2;
-  bonus_condicional?: {
+  bonus_permanente?: {
+    origem?: string;
     bonus?: number;
-    condicao?: string[]; 
   } [];
+  bonus_condicional_permanente?: {
+    origem?: string;
+    bonus?: number;
+    condicao?: string[];
+  } []
 
-  adicionaBonusCondicional(condicao: {bonus?: number; condicao?: string[];}[]){
-    if(!this.bonus_condicional) 
-      this.bonus_condicional = condicao;
+  adicionaBonusCondicionalPermanente(condicao: {origem?: string; bonus?: number; condicao?: string[];}[]){
+    if(!this.bonus_condicional_permanente) 
+      this.bonus_condicional_permanente = condicao;
     else
-      this.bonus_condicional.push(...condicao);
+      this.bonus_condicional_permanente.push(...condicao);
   }
 
   constructor() {
@@ -465,6 +470,10 @@ export class PericiaPersonagem {
     this.atributo_descricao = atributo_descricao;
     this.atributo = atributo;
     this.total = atributo + Math.floor(nivel/2) + this.outros + (this.treinado ? this.bonus_treinado : 0);
+  }
+
+  getBonusNivel(){
+    return Math.floor(Number(this.nivel!)/2);
   }
 
   atualiza(bonus_nivel: number,

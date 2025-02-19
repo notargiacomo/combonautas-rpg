@@ -587,12 +587,11 @@
                               </div>
                               <div class="row">
                                 <div class="col-sm-6">
-                                  {{ "LIMITE DE CARGA: "+ personagem.carga_atual + " / " + (personagem.total_carga!*2) }}
+                                  {{ "LIMITE DE CARGA: "+ personagem.carga_atual + " / " + (personagem.total_carga!*2)
+                                  }}
                                   <section class="example-section">
-                                    <mat-progress-bar
-                                        class="example-margin"
-                                        mode="determinate" 
-                                        [value]="(personagem.carga_atual! / (personagem.total_carga!*2)) * 100">
+                                    <mat-progress-bar class="example-margin" mode="determinate"
+                                      [value]="(personagem.carga_atual! / (personagem.total_carga!*2)) * 100">
                                     </mat-progress-bar>
                                   </section>
                                 </div>
@@ -632,22 +631,22 @@
                                   <div class="row">
 
                                     <div class="col-sm-3">
-                                      TP$: 
+                                      TP$:
                                       <input type="text" [(ngModel)]="personagem.moedas_plantina" size="2"
                                         style="text-align: center !important" class="campo-atributos" />
                                     </div>
                                     <div class="col-sm-3">
-                                      TO$: 
+                                      TO$:
                                       <input type="text" [(ngModel)]="personagem.moedas_ouro" size="2"
                                         style="text-align: center !important" class="campo-atributos" />
                                     </div>
                                     <div class="col-sm-3">
-                                      T$: 
+                                      T$:
                                       <input type="text" [(ngModel)]="personagem.moedas_prata" size="2"
                                         style="text-align: center !important" class="campo-atributos" />
                                     </div>
                                     <div class="col-sm-3">
-                                      TC$: 
+                                      TC$:
                                       <input type="text" [(ngModel)]="personagem.moedas_cobre" size="2"
                                         style="text-align: center !important" class="campo-atributos" />
                                     </div>
@@ -969,50 +968,117 @@
               </div>
               <div class="row">
                 <div class="col-sm-12 mt-2">
-                  <table mat-table [dataSource]="dsPericias" class="mat-elevation-z8 full-width">
-                    <ng-container matColumnDef="treinado" class="mat-column-treinado">
-                      <th class="mat-column-treinado" mat-header-cell *matHeaderCellDef fxFlex="5px"></th>
-                      <td class="mat-column-treinado" mat-cell *matCellDef="let element" fxFlex="5px">
-                        <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado"
-                          (change)="element.checkTreinamento($event.checked, personagem)">
-                        </mat-checkbox>
-                      </td>
-                    </ng-container>
-                    <ng-container matColumnDef="pericia">
-                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                        PERÍCIA
+                  <table mat-table [dataSource]="dsPericias" multiTemplateDataRows class="mat-elevation-z8 full-width">
+                    @for (column of columnsToDisplayPericia; track column) {
+                    <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
+                      <th class="pericia" mat-header-cell *matHeaderCellDef style="text-transform: uppercase; padding-left: 2% !important">
+                        {{ column }}
                       </th>
-                      <td class="pericia" mat-cell *matCellDef="let element">
-                        {{ element.pericia.toUpperCase() }}
-                      </td>
+                      <td style="padding-left: 2% !important" [class]="element[column].length > 2 ? 'pericia':'pericia-valor'" mat-cell *matCellDef="let element">{{ element[column] }}</td>
                     </ng-container>
-                    <ng-container matColumnDef="total">
-                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                        TOTAL
+                    }
+                    <ng-container matColumnDef="expand">
+                      <th mat-header-cell *matHeaderCellDef aria-label="row actions" class="pericia" style="padding-left: 2% !important">
+                        &nbsp;
                       </th>
-                      <td class="pericia-valor" mat-cell *matCellDef="let element">
-                        {{ element.total }}
+                      <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
+                        <button mat-icon-button aria-label="expand row" (click)="
+                          expandedElementPericia = expandedElementPericia === element ? null : element;
+                          $event.stopPropagation()
+                        ">
+                          @if (expandedElementPericia === element) {
+                          <mat-icon>keyboard_arrow_up</mat-icon>
+                          } @else {
+                          <mat-icon>keyboard_arrow_down</mat-icon>
+                          }
+                        </button>
                       </td>
                     </ng-container>
-                    <ng-container matColumnDef="atributo">
-                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                        ATRIBUTO
-                      </th>
-                      <td class="pericia-valor" mat-cell *matCellDef="let element">
-                        {{ element.atributo }}
+                    <ng-container matColumnDef="expandedDetail">
+                      <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpandPericia.length">
+                        <div class="container celement-detail" [@detailExpand]="
+                          element == expandedElementPericia ? 'expanded' : 'collapsed'
+                        ">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <label>Treinado:</label>
+                              <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado" style="margin: 1px !important;"
+                                (change)="element.checkTreinamento($event.checked, personagem)">
+                              </mat-checkbox>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr style="margin: 5px !important;"/>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <label>Bônus Treinamento:</label>
+                             
+                          </div>
+                          <div class="col-sm-1">
+                            {{ element.treinado ? personagem.nivel! >= 7 ? 4 : personagem.nivel! >= 15 ? 6: 2 : 0}}
+                          </div>
+                        </div>
+                        </div>
+                        <div class="container celement-detail" [@detailExpand]="
+                          element == expandedElementPericia ? 'expanded' : 'collapsed'
+                        ">
+                        <div class="row">
+                          <div class="col-sm-5">
+                            Bônus Nível: 
+                          </div>
+                          <div class="col-sm-1">
+                            {{ element.getBonusNivel() }}
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-5">
+                            Bônus Atributo: 
+                          </div>
+                          <div class="col-sm-1">
+                            {{ element.atributo }}
+                          </div>
+                          <div class="col-sm-3">
+                            {{ element.atributo_descricao }}
+                          </div>
+                        </div>
+                        @for (bonus of element.bonus_permanente_poder; track bonus) {
+                          <div class="row">
+                            <div class="col-sm-5">
+                              Bônus Poder: 
+                            </div>
+                            <div class="col-sm-1">
+                              {{ bonus.bonus }}
+                            </div>
+                            <div class="col-sm-3">
+                              {{ bonus.origem }}
+                            </div>
+                          </div>
+                        }
+                        @for (bonus of element.bonus_condicional_permanente_poder; track bonus) {
+                          <div class="row">
+                            <div class="col-sm-5">
+                              Bônus Poder: 
+                            </div>
+                            <div class="col-sm-1">
+                              {{ bonus.bonus }}
+                            </div>
+                            <div class="col-sm-3">
+                              {{ bonus.origem/bonus.condicao.join(", ") }}
+                            </div>
+                          </div>
+                        }
+                        </div>
                       </td>
                     </ng-container>
-                    <ng-container matColumnDef="outros">
-                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
-                        OUTROS
-                      </th>
-                      <td class="pericia-valor" mat-cell *matCellDef="let element">
-                        <input type="text" [(ngModel)]="element.outros" (change)="personagem.recalculaPericias()"
-                          size="2" style="text-align: center !important" />
-                      </td>
-                    </ng-container>
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+                    <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpandPericia"></tr>
+                    <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpandPericia" class="element-row"
+                      [class.expanded-row]="expandedElementPericia === element" (click)="expandedElementPericia = expandedElementPericia === element ? null : element"></tr>
+                    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']; when: !isExpandedRowPericia"
+                      class="detail-row"></tr>
                   </table>
                 </div>
               </div>

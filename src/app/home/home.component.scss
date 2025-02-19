@@ -37,13 +37,17 @@
   overflow: hidden !important;
   background-position: center !important;
   background-size: cover !important; /* Isso ajusta o zoom para cobrir o círculo */
-  border: 2px solid rgb(228, 176, 100) !important;
+  border: 5px solid rgb(228, 176, 100) !important;
+  border-radius: 15px !important; /* Bordas arredondadas */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
 }
 
 .botao-ficha {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  border: 3px solid rgb(228, 176, 100); /* Moldura */
+  border: 2px solid rgb(228, 176, 100) !important;
+  border-radius: 15px !important; /* Bordas arredondadas */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
   background-color: rgb(132, 26, 18) !important;
   cursor: pointer !important;
   color: white !important;
@@ -55,12 +59,16 @@
 }
 
 .pericia {
-  font-size: 8pt !important;
+  font-size: 12pt !important;
 }
 
 .pericia-valor {
-  font-size: 8pt !important;
+  font-size: 12pt !important;
   text-align: center !important;
+}
+
+.mdc-data-table__cell, .mdc-data-table__header-cell {
+  padding: 0 8px !important;
 }
 
 .full-width {
@@ -87,6 +95,13 @@
 .mat-mdc-table th {
   background-color: rgb(132, 26, 18) !important;
   color: white !important;
+}
+
+.mat-mdc-table {
+  border: 2px solid; /* Moldura */
+  border-radius: 15px !important; /* Bordas arredondadas */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  background-color: rgb(228, 176, 100);
 }
 
 .mat-mdc-header-row {
@@ -129,7 +144,7 @@ hr {
 
 .proficiencia {
   font-family: "Oswald" !important;
-  font-size: 8pt !important;
+  font-size: 12pt !important;
   border: 1px solid rgb(228, 176, 100); /* Moldura */
   background-color: rgb(132, 26, 18) !important;
   color: white !important;

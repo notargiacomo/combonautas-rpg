@@ -1,6 +1,6 @@
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { Component, inject, Injector } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialog } from '@angular/material/dialog';
@@ -18,6 +18,10 @@ import { Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +30,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatDividerModule,
     NgIf,
     NgFor,
+    MatButtonModule,
+    ReactiveFormsModule,
+    MatIconModule,
     MatTableModule,
     MatCheckboxModule,
     MatFormFieldModule,
@@ -33,11 +40,22 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FormsModule,
     MatExpansionModule,
     CommonModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTabsModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-})
+  animations: [
+      trigger('detailExpand', [
+        state('collapsed,void', style({ height: '0px', minHeight: '0' })),
+        state('expanded', style({ height: '*' })),
+        transition(
+          'expanded <=> collapsed',
+          animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')
+        ),
+      ]),
+    ],
+  })
 export class HomeComponent {
   pericias: Pericia[] = [];
   personagens!: Personagem[];
@@ -45,13 +63,7 @@ export class HomeComponent {
   atributos = Object.values(Atributo);
   tamanhos = Object.values(Tamanho);
   dsPericias = new MatTableDataSource<PericiaPersonagem>();
-  displayedColumns: string[] = [
-    'treinado',
-    'pericia',
-    'total',
-    'atributo',
-    'outros',
-  ];
+
   displayedColumnsEmpunhadosVestidos: string[] = ['equipamento', 'formula'];
   displayedColumnsCarregados: string[] = [
     'equipamento',
@@ -60,6 +72,12 @@ export class HomeComponent {
   ];
   displayedColumnsItens: string[] = ['item', 'descricao'];
   displayedColumnsPoderes: string[] = ['nome', 'tipo', 'acoes'];
+
+
+  expandedElementPericia!: PericiaPersonagem | null;
+  columnsToDisplayPericia: string[] = ['pericia', 'total', 'atributo', 'outros'];
+  columnsToDisplayWithExpandPericia = [...this.columnsToDisplayPericia, 'expand'];
+  isExpandedRowPericia = (index: number, row: any) => row === this.expandedElementPericia;
 
   constructor(
     private readonly router: Router,
