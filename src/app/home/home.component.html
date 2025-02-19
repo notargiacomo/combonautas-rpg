@@ -31,27 +31,19 @@
         <div class="row">
           <div class="col-sm-2">
             <div class="d-flex justify-content-center">
-              <img
-                src="assets/img/icon_sheet.png"
-                alt="Avatar"
-                class="rounded-circle imagem-ficha"
-                width="50"
-                height="50"
-              />
+              <img src="assets/img/icon_sheet.png" alt="Avatar" class="rounded-circle imagem-ficha" width="50"
+                height="50" />
             </div>
           </div>
 
           <div class="col-sm-2 d-flex">
-            <button
-              class="btn btn-sm btn-outline-secondary ms-2 botao-ficha"
-              (click)="openDialog('RAÇA')"
-            >
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA')">
               <!-- <img *ngIf="personagem.raca" [src]="personagem.raca.imagem" [alt]="personagem.raca.nome" style="width: 100px !important; height: 100px !important;" /> -->
               <b style="color: white !important">{{
                 personagem.raca
-                  ? personagem.raca?.nome?.toLocaleUpperCase()
-                  : "RAÇA"
-              }}</b>
+                ? personagem.raca?.nome?.toLocaleUpperCase()
+                : "RAÇA"
+                }}</b>
             </button>
           </div>
           <div class="col-sm-2 d-flex">
@@ -90,18 +82,14 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <div>
-                                <button
-                                  class="botoes-mais-menos"
-                                  [disabled]="
+                                <button class="botoes-mais-menos" [disabled]="
                                     personagem.atributos.forca_comprada === 4
-                                  "
-                                  (click)="
+                                  " (click)="
                                     personagem.calculaPontos(
                                       'for',
                                       personagem.atributos.forca_comprada + 1
                                     )
-                                  "
-                                >
+                                  ">
                                   +
                                 </button>
                               </div>
@@ -109,55 +97,31 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-12">
-                              <button
-                                class="botoes-mais-menos"
-                                [disabled]="
+                              <button class="botoes-mais-menos" [disabled]="
                                   personagem.atributos.forca_comprada === -1
-                                "
-                                (click)="
+                                " (click)="
                                   personagem.calculaPontos(
                                     'for',
                                     personagem.atributos.forca_comprada - 1
                                   )
-                                "
-                              >
+                                ">
                                 -
                               </button>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-9" style="padding-left: 2% !important;">
-                          <input
-                            class="campo-modificadores"
-                            size="1"
-                            [value]="personagem.atributos.forca"
-                            disabled
-                          />
+                          <input class="campo-modificadores" size="1" [value]="personagem.atributos.forca" disabled />
                         </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="d-flex">
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.forca_comprada"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.forca_racial"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.forca_bonus"
-                            disabled
-                          />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.forca_comprada" disabled />
+                          <input class="campo-atributos" value="0" size="1" [value]="personagem.atributos.forca_racial"
+                            disabled />
+                          <input class="campo-atributos" value="0" size="1" [value]="personagem.atributos.forca_bonus"
+                            disabled />
                         </div>
                       </div>
                     </div>
@@ -170,18 +134,14 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <div>
-                                <button
-                                  class="botoes-mais-menos"
-                                  [disabled]="
+                                <button class="botoes-mais-menos" [disabled]="
                                     personagem.atributos.destreza_comprada === 4
-                                  "
-                                  (click)="
+                                  " (click)="
                                     personagem.calculaPontos(
                                       'des',
                                       personagem.atributos.destreza_comprada + 1
                                     )
-                                  "
-                                >
+                                  ">
                                   +
                                 </button>
                               </div>
@@ -189,55 +149,32 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-12">
-                              <button
-                                class="botoes-mais-menos"
-                                [disabled]="
+                              <button class="botoes-mais-menos" [disabled]="
                                   personagem.atributos.destreza_comprada === -1
-                                "
-                                (click)="
+                                " (click)="
                                   personagem.calculaPontos(
                                     'des',
                                     personagem.atributos.destreza_comprada - 1
                                   )
-                                "
-                              >
+                                ">
                                 -
                               </button>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-9" style="padding-left: 2% !important;">
-                          <input
-                            class="campo-modificadores"
-                            size="1"
-                            [value]="personagem.atributos.destreza"
-                            disabled
-                          />
+                          <input class="campo-modificadores" size="1" [value]="personagem.atributos.destreza"
+                            disabled />
                         </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="d-flex">
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.destreza_comprada"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.destreza_racial"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.destreza_bonus"
-                            disabled
-                          />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.destreza_comprada" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.destreza_racial" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.destreza_bonus" disabled />
                         </div>
                       </div>
                     </div>
@@ -250,20 +187,16 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <div>
-                                <button
-                                  class="botoes-mais-menos"
-                                  [disabled]="
+                                <button class="botoes-mais-menos" [disabled]="
                                     personagem.atributos
                                       .constituicao_comprada === 4
-                                  "
-                                  (click)="
+                                  " (click)="
                                     personagem.calculaPontos(
                                       'con',
                                       personagem.atributos
                                         .constituicao_comprada + 1
                                     )
-                                  "
-                                >
+                                  ">
                                   +
                                 </button>
                               </div>
@@ -271,57 +204,34 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-12">
-                              <button
-                                class="botoes-mais-menos"
-                                [disabled]="
+                              <button class="botoes-mais-menos" [disabled]="
                                   personagem.atributos.constituicao_comprada ===
                                   -1
-                                "
-                                (click)="
+                                " (click)="
                                   personagem.calculaPontos(
                                     'con',
                                     personagem.atributos.constituicao_comprada -
                                       1
                                   )
-                                "
-                              >
+                                ">
                                 -
                               </button>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-9" style="padding-left: 2% !important;">
-                          <input
-                            class="campo-modificadores"
-                            size="1"
-                            [value]="personagem.atributos.constituicao"
-                            disabled
-                          />
+                          <input class="campo-modificadores" size="1" [value]="personagem.atributos.constituicao"
+                            disabled />
                         </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="d-flex">
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.constituicao_comprada"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.constituicao_racial"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.constituicao_bonus"
-                            disabled
-                          />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.constituicao_comprada" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.constituicao_racial" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.constituicao_bonus" disabled />
                         </div>
                       </div>
                     </div>
@@ -334,20 +244,16 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <div>
-                                <button
-                                  class="botoes-mais-menos"
-                                  [disabled]="
+                                <button class="botoes-mais-menos" [disabled]="
                                     personagem.atributos
                                       .inteligencia_comprada === 4
-                                  "
-                                  (click)="
+                                  " (click)="
                                     personagem.calculaPontos(
                                       'int',
                                       personagem.atributos
                                         .inteligencia_comprada + 1
                                     )
-                                  "
-                                >
+                                  ">
                                   +
                                 </button>
                               </div>
@@ -355,57 +261,34 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-12">
-                              <button
-                                class="botoes-mais-menos"
-                                [disabled]="
+                              <button class="botoes-mais-menos" [disabled]="
                                   personagem.atributos.inteligencia_comprada ===
                                   -1
-                                "
-                                (click)="
+                                " (click)="
                                   personagem.calculaPontos(
                                     'int',
                                     personagem.atributos.inteligencia_comprada -
                                       1
                                   )
-                                "
-                              >
+                                ">
                                 -
                               </button>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-9" style="padding-left: 2% !important;">
-                          <input
-                            class="campo-modificadores"
-                            size="1"
-                            [value]="personagem.atributos.inteligencia"
-                            disabled
-                          />
+                          <input class="campo-modificadores" size="1" [value]="personagem.atributos.inteligencia"
+                            disabled />
                         </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="d-flex">
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.inteligencia_comprada"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.inteligencia_racial"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.inteligencia_bonus"
-                            disabled
-                          />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.inteligencia_comprada" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.inteligencia_racial" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.inteligencia_bonus" disabled />
                         </div>
                       </div>
                     </div>
@@ -418,20 +301,16 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <div>
-                                <button
-                                  class="botoes-mais-menos"
-                                  [disabled]="
+                                <button class="botoes-mais-menos" [disabled]="
                                     personagem.atributos.sabedoria_comprada ===
                                     4
-                                  "
-                                  (click)="
+                                  " (click)="
                                     personagem.calculaPontos(
                                       'sab',
                                       personagem.atributos.sabedoria_comprada +
                                         1
                                     )
-                                  "
-                                >
+                                  ">
                                   +
                                 </button>
                               </div>
@@ -439,55 +318,32 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-12">
-                              <button
-                                class="botoes-mais-menos"
-                                [disabled]="
+                              <button class="botoes-mais-menos" [disabled]="
                                   personagem.atributos.sabedoria_comprada === -1
-                                "
-                                (click)="
+                                " (click)="
                                   personagem.calculaPontos(
                                     'sab',
                                     personagem.atributos.sabedoria_comprada - 1
                                   )
-                                "
-                              >
+                                ">
                                 -
                               </button>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-9" style="padding-left: 2% !important;">
-                          <input
-                            class="campo-modificadores"
-                            size="1"
-                            [value]="personagem.atributos.sabedoria"
-                            disabled
-                          />
+                          <input class="campo-modificadores" size="1" [value]="personagem.atributos.sabedoria"
+                            disabled />
                         </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="d-flex">
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.sabedoria_comprada"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.sabedoria_racial"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.sabedoria_bonus"
-                            disabled
-                          />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.sabedoria_comprada" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.sabedoria_racial" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.sabedoria_bonus" disabled />
                         </div>
                       </div>
                     </div>
@@ -500,18 +356,14 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <div>
-                                <button
-                                  class="botoes-mais-menos"
-                                  [disabled]="
+                                <button class="botoes-mais-menos" [disabled]="
                                     personagem.atributos.carisma_comprada === 4
-                                  "
-                                  (click)="
+                                  " (click)="
                                     personagem.calculaPontos(
                                       'car',
                                       personagem.atributos.carisma_comprada + 1
                                     )
-                                  "
-                                >
+                                  ">
                                   +
                                 </button>
                               </div>
@@ -519,56 +371,31 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-12">
-                              <button
-                                class="botoes-mais-menos"
-                                [disabled]="
+                              <button class="botoes-mais-menos" [disabled]="
                                   personagem.atributos.carisma_comprada === -1
-                                "
-                                (click)="
+                                " (click)="
                                   personagem.calculaPontos(
                                     'car',
                                     personagem.atributos.carisma_comprada - 1
                                   )
-                                "
-                              >
+                                ">
                                 -
                               </button>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-9" style="padding-left: 2% !important;">
-                          <input
-                            class="campo-modificadores"
-                            size="1"
-                            [value]="personagem.atributos.carisma"
-                            disabled
-                          />
+                          <input class="campo-modificadores" size="1" [value]="personagem.atributos.carisma" disabled />
                         </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="d-flex">
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.carisma_comprada"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.carisma_racial"
-                            disabled
-                          />
-                          <input
-                            class="campo-atributos"
-                            style="text-align: center !important"
-                            value="0"
-                            size="1"
-                            [value]="personagem.atributos.carisma_bonus"
-                            disabled
-                          />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.carisma_comprada" disabled />
+                          <input class="campo-atributos" value="0" size="1"
+                            [value]="personagem.atributos.carisma_racial" disabled />
+                          <input class="campo-atributos" style="text-align: center !important" value="0" size="1"
+                            [value]="personagem.atributos.carisma_bonus" disabled />
                         </div>
                       </div>
                     </div>
@@ -587,12 +414,8 @@
                     <div style="text-align: center" class="col-sm-4">TEMP.</div>
                   </div>
                   <div class="row">
-                    <input
-                      class="col-sm-4 m-1 vida-mana-defesa"
-                      value="0"
-                      size="1"
-                      [value]="personagem.pontos_vida_atual"
-                    />
+                    <input class="col-sm-4 m-1 vida-mana-defesa" value="0" size="1"
+                      [value]="personagem.pontos_vida_atual" />
                     <div class="col-sm-3 m-1 vida-mana-defesa">
                       {{ personagem.pontos_vida_total }}
                     </div>
@@ -612,12 +435,8 @@
                     <div style="text-align: center" class="col-sm-4">TEMP.</div>
                   </div>
                   <div class="row">
-                    <input
-                      class="col-sm-4 m-1 vida-mana-defesa"
-                      value="0"
-                      size="1"
-                      [value]="personagem.pontos_mana_atual"
-                    />
+                    <input class="col-sm-4 m-1 vida-mana-defesa" value="0" size="1"
+                      [value]="personagem.pontos_mana_atual" />
                     <div class="col-sm-3 m-1 vida-mana-defesa">
                       {{ personagem.pontos_mana_total }}
                     </div>
@@ -632,39 +451,25 @@
                   <b style="text-align: center">DEFESA</b>
                   <hr />
                   <div class="row">
-                    <div
-                      class="col-sm-11 m-1 vida-mana-defesa"
-                      style="margin-left: 10px !important"
-                    >
+                    <div class="col-sm-11 m-1 vida-mana-defesa" style="margin-left: 10px !important">
                       {{ personagem.defesa }}
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-8">
-                      <select
-                        class="vida-mana-defesa"
-                        style="font-size: 12pt !important"
-                      >
+                      <select class="vida-mana-defesa" style="font-size: 12pt !important">
                         @for (atributo of atributos; track atributo) {
-                        <option
-                          [selected]="
+                        <option [selected]="
                             personagem.recuperaValor(atributo.toString()) ===
                             personagem.recuperaValor('Destreza')
-                          "
-                          [value]="atributo"
-                        >
+                          " [value]="atributo">
                           {{ atributo }}
                         </option>
                         }
                       </select>
                     </div>
-                    <input
-                      style="font-size: 12pt !important"
-                      class="col-sm-3 vida-mana-defesa"
-                      size="2"
-                      (change)="personagem.recalculaDefesa()"
-                      [(ngModel)]="personagem.defesa_bonus"
-                    />
+                    <input style="font-size: 12pt !important" class="col-sm-3 vida-mana-defesa" size="2"
+                      (change)="personagem.recalculaDefesa()" [(ngModel)]="personagem.defesa_bonus" />
                   </div>
                 </mat-card>
               </div>
@@ -682,69 +487,35 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table
-                            mat-table
-                            [dataSource]="personagem.equipamentos_empunhados!"
-                            multiTemplateDataRows
-                            class="mat-elevation-z8"
-                          >
-                            <ng-container
-                              matColumnDef="equipamento"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                          <table mat-table [dataSource]="personagem.equipamentos_empunhados!" multiTemplateDataRows
+                            class="mat-elevation-z8">
+                            <ng-container matColumnDef="equipamento" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 EQUIPAMENTO
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.nome.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <ng-container
-                              matColumnDef="formula"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                            <ng-container matColumnDef="formula" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 FORMULA
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.formula }}
                               </td>
                             </ng-container>
-                            <tr
-                              mat-header-row
-                              *matHeaderRowDef="
+                            <tr mat-header-row *matHeaderRowDef="
                                 displayedColumnsEmpunhadosVestidos
-                              "
-                            ></tr>
-                            <tr
-                              mat-row
-                              *matRowDef="
+                              "></tr>
+                            <tr mat-row *matRowDef="
                                 let row;
                                 columns: displayedColumnsEmpunhadosVestidos
-                              "
-                            ></tr>
+                              "></tr>
                           </table>
                         </div>
                       </mat-expansion-panel>
@@ -762,69 +533,35 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table
-                            mat-table
-                            [dataSource]="personagem.equipamentos_vestidos!"
-                            multiTemplateDataRows
-                            class="mat-elevation-z8"
-                          >
-                            <ng-container
-                              matColumnDef="equipamento"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                          <table mat-table [dataSource]="personagem.equipamentos_vestidos!" multiTemplateDataRows
+                            class="mat-elevation-z8">
+                            <ng-container matColumnDef="equipamento" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 EQUIPAMENTO
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.nome?.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <ng-container
-                              matColumnDef="formula"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                            <ng-container matColumnDef="formula" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 FORMULA
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.formula }}
                               </td>
                             </ng-container>
-                            <tr
-                              mat-header-row
-                              *matHeaderRowDef="
+                            <tr mat-header-row *matHeaderRowDef="
                                 displayedColumnsEmpunhadosVestidos
-                              "
-                            ></tr>
-                            <tr
-                              mat-row
-                              *matRowDef="
+                              "></tr>
+                            <tr mat-row *matRowDef="
                                 let row;
                                 columns: displayedColumnsEmpunhadosVestidos
-                              "
-                            ></tr>
+                              "></tr>
                           </table>
                         </div>
                       </mat-expansion-panel>
@@ -835,9 +572,7 @@
                   <div class="col-sm-12">
                     <mat-card class="card-padrao">
                       <mat-expansion-panel [expanded]="true" [disabled]="true">
-                        <mat-expansion-panel-header
-                          style="padding-left: 8px !important"
-                        >
+                        <mat-expansion-panel-header style="padding-left: 8px !important">
                           <mat-panel-title>
                             <div class="container">
                               <div class="row">
@@ -846,30 +581,77 @@
                                 </div>
                               </div>
                               <div class="row">
-                                <div class="col-sm-6">
-                                  {{ "LIMITE DE CARGA: " + personagem.carga }}
+                                <div class="col-sm-12">
+                                  <hr>
                                 </div>
-                                <div
-                                  class="col-sm-6 d-flex justify-content-end"
-                                >
-                                  <select
-                                    class="vida-mana-defesa"
-                                    style="font-size: 12pt !important"
-                                  >
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  {{ "LIMITE DE CARGA: "+ personagem.carga_atual + " / " + (personagem.total_carga!*2) }}
+                                  <section class="example-section">
+                                    <mat-progress-bar
+                                        class="example-margin"
+                                        mode="determinate" 
+                                        [value]="(personagem.carga_atual! / (personagem.total_carga!*2)) * 100">
+                                    </mat-progress-bar>
+                                  </section>
+                                </div>
+                                <div class="col-sm-3 d-flex justify-content-end">
+                                  <div *ngIf="personagem.carga_atual! > personagem.total_carga!">
+                                    SOBRECARREGADO
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 d-flex justify-content-end">
+                                  <select class="vida-mana-defesa" style="font-size: 12pt !important">
                                     @for (atributo of atributos; track atributo)
                                     {
-                                    <option
-                                      [selected]="
+                                    <option [selected]="
                                         personagem.recuperaValor(
                                           atributo.toString()
                                         ) === personagem.recuperaValor('Força')
-                                      "
-                                      [value]="atributo"
-                                    >
+                                      " [value]="atributo">
                                       {{ atributo }}
                                     </option>
                                     }
                                   </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <hr>
+                                </div>
+                              </div>
+                              <div class="row">
+
+                                <div class="col-sm-2">
+                                  <span class="material-symbols-outlined">
+                                    savings
+                                  </span>
+                                </div>
+                                <div class="col-sm-10">
+                                  <div class="row">
+
+                                    <div class="col-sm-3">
+                                      TP$: 
+                                      <input type="text" [(ngModel)]="personagem.moedas_plantina" size="2"
+                                        style="text-align: center !important" class="campo-atributos" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                      TO$: 
+                                      <input type="text" [(ngModel)]="personagem.moedas_ouro" size="2"
+                                        style="text-align: center !important" class="campo-atributos" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                      T$: 
+                                      <input type="text" [(ngModel)]="personagem.moedas_prata" size="2"
+                                        style="text-align: center !important" class="campo-atributos" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                      TC$: 
+                                      <input type="text" [(ngModel)]="personagem.moedas_cobre" size="2"
+                                        style="text-align: center !important" class="campo-atributos" />
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -877,89 +659,43 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table
-                            mat-table
-                            [dataSource]="personagem.equipamentos_carregados!"
-                            multiTemplateDataRows
-                            class="mat-elevation-z8"
-                          >
-                            <ng-container
-                              matColumnDef="equipamento"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                          <table mat-table [dataSource]="personagem.equipamentos_carregados!" multiTemplateDataRows
+                            class="mat-elevation-z8">
+                            <ng-container matColumnDef="equipamento" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 EQUIPAMENTO
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.nome?.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <ng-container
-                              matColumnDef="quantidade"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                            <ng-container matColumnDef="quantidade" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 QUANTIDADE
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.quantidade }}
                               </td>
                             </ng-container>
-                            <ng-container
-                              matColumnDef="espaco"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                            <ng-container matColumnDef="espaco" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 ESPACO
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.espaco }}
                               </td>
                             </ng-container>
-                            <tr
-                              mat-header-row
-                              *matHeaderRowDef="displayedColumnsCarregados"
-                            ></tr>
-                            <tr
-                              mat-row
-                              *matRowDef="
+                            <tr mat-header-row *matHeaderRowDef="displayedColumnsCarregados"></tr>
+                            <tr mat-row *matRowDef="
                                 let row;
                                 columns: displayedColumnsCarregados
-                              "
-                            ></tr>
+                              "></tr>
                           </table>
                         </div>
                       </mat-expansion-panel>
@@ -977,67 +713,33 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table
-                            mat-table
-                            [dataSource]="personagem.itens!"
-                            multiTemplateDataRows
-                            class="mat-elevation-z8"
-                          >
-                            <ng-container
-                              matColumnDef="item"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                          <table mat-table [dataSource]="personagem.itens!" multiTemplateDataRows
+                            class="mat-elevation-z8">
+                            <ng-container matColumnDef="item" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 ITEM
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.nome?.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <ng-container
-                              matColumnDef="descricao"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                            <ng-container matColumnDef="descricao" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 DESCRIÇÃO
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.descricao }}
                               </td>
                             </ng-container>
-                            <tr
-                              mat-header-row
-                              *matHeaderRowDef="displayedColumnsItens"
-                            ></tr>
-                            <tr
-                              mat-row
-                              *matRowDef="
+                            <tr mat-header-row *matHeaderRowDef="displayedColumnsItens"></tr>
+                            <tr mat-row *matRowDef="
                                 let row;
                                 columns: displayedColumnsItens
-                              "
-                            ></tr>
+                              "></tr>
                           </table>
                         </div>
                       </mat-expansion-panel>
@@ -1058,11 +760,7 @@
                       @for (proficiencia of personagem.proficiencia; track
                       proficiencia) {
                       <div class="row">
-                        <button
-                          class="me-2 proficiencia"
-                          mat-flat-button
-                          disabled
-                        >
+                        <button class="me-2 proficiencia" mat-flat-button disabled>
                           {{ proficiencia }}
                         </button>
                       </div>
@@ -1079,21 +777,15 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
-                      <select
-                        class="vida-mana-defesa"
-                        style="
+                      <select class="vida-mana-defesa" style="
                           font-size: 12pt !important;
                           width: 100% !important;
-                        "
-                      >
+                        ">
                         @for (tamanho of tamanhos; track tamanho) {
-                        <option
-                          [selected]="
+                        <option [selected]="
                             personagem.recuperaValor(tamanho.toString()) ===
                             personagem.recuperaValor('Médio')
-                          "
-                          [value]="tamanho"
-                        >
+                          " [value]="tamanho">
                           {{ tamanho }}
                         </option>
                         }
@@ -1113,16 +805,12 @@
                       @for (deslocamento of personagem.deslocamentos; track
                       deslocamento){
                       <div class="row">
-                        <button
-                          class="me-2 proficiencia"
-                          mat-flat-button
-                          disabled
-                        >
+                        <button class="me-2 proficiencia" mat-flat-button disabled>
                           {{
-                            deslocamento.nome +
-                              " " +
-                              deslocamento.valor +
-                              " metros"
+                          deslocamento.nome +
+                          " " +
+                          deslocamento.valor +
+                          " metros"
                           }}
                         </button>
                       </div>
@@ -1141,11 +829,7 @@
                       <hr />
                       @for (sentidos of personagem.sentidos; track sentidos){
                       <div class="row">
-                        <button
-                          class="me-2 proficiencia"
-                          mat-flat-button
-                          disabled
-                        >
+                        <button class="me-2 proficiencia" mat-flat-button disabled>
                           {{ sentidos }}
                         </button>
                       </div>
@@ -1164,11 +848,7 @@
                       <hr />
                       @for (rd of personagem.resistencias; track rd){
                       <div class="row">
-                        <button
-                          class="me-2 proficiencia"
-                          mat-flat-button
-                          disabled
-                        >
+                        <button class="me-2 proficiencia" mat-flat-button disabled>
                           {{ rd.fonte + " " + rd.redutor }}
                         </button>
                       </div>
@@ -1188,11 +868,7 @@
                       @for (imunidade of personagem.imunidades; track
                       imunidade){
                       <div class="row">
-                        <button
-                          class="me-2 proficiencia"
-                          mat-flat-button
-                          disabled
-                        >
+                        <button class="me-2 proficiencia" mat-flat-button disabled>
                           {{ imunidade }}
                         </button>
                       </div>
@@ -1213,87 +889,42 @@
                       <hr />
                       <div class="row">
                         <div class="col-sm-12 mt-2">
-                          <table
-                            mat-table
-                            [dataSource]="dataSourcePoderesPersonagens"
-                            class="mat-elevation-z8 full-width"
-                          >
-                            <ng-container
-                              matColumnDef="nome"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                          <table mat-table [dataSource]="dataSourcePoderesPersonagens"
+                            class="mat-elevation-z8 full-width">
+                            <ng-container matColumnDef="nome" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 NOME
                               </th>
-                              <td
-                                class="pericia"
-                                mat-cell
-                                style="padding-left: 2% !important"
-                                *matCellDef="let element"
-                              >
+                              <td class="pericia" mat-cell style="padding-left: 2% !important"
+                                *matCellDef="let element">
                                 {{ element.nome.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <ng-container
-                              matColumnDef="tipo"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                            <ng-container matColumnDef="tipo" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                                 TIPO
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.tipo.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <ng-container
-                              matColumnDef="acoes"
-                              class="mat-column-treinado"
-                            >
-                              <th
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-header-cell
-                                *matHeaderCellDef
-                                mat-sort-header
-                              >
+                            <ng-container matColumnDef="acoes" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
                               </th>
-                              <td
-                                style="padding-left: 2% !important"
-                                class="pericia"
-                                mat-cell
-                                *matCellDef="let element"
-                              >
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
                                 {{ element.tipo.toUpperCase() }}
                               </td>
                             </ng-container>
-                            <tr
-                              mat-header-row
-                              *matHeaderRowDef="displayedColumnsPoderes"
-                            ></tr>
-                            <tr
-                              mat-row
-                              *matRowDef="
+                            <tr mat-header-row *matHeaderRowDef="displayedColumnsPoderes"></tr>
+                            <tr mat-row *matRowDef="
                                 let row;
                                 columns: displayedColumnsPoderes
-                              "
-                            ></tr>
+                              "></tr>
                           </table>
                         </div>
                       </div>
@@ -1314,11 +945,7 @@
                       @for (imunidade of personagem.imunidades; track
                       imunidade){
                       <div class="row">
-                        <button
-                          class="me-2 proficiencia"
-                          mat-flat-button
-                          disabled
-                        >
+                        <button class="me-2 proficiencia" mat-flat-button disabled>
                           {{ imunidade }}
                         </button>
                       </div>
@@ -1335,54 +962,24 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <b>Número de Perícias Livres: </b>
-                    <input
-                      type="text"
-                      [(ngModel)]="personagem.numero_pericias_livre"
-                      size="2"
-                      style="text-align: center !important"
-                      disabled
-                    />
+                    <input type="text" [(ngModel)]="personagem.numero_pericias_livre" size="2"
+                      style="text-align: center !important" class="campo-atributos" disabled />
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-12 mt-2">
-                  <table
-                    mat-table
-                    [dataSource]="dsPericias"
-                    class="mat-elevation-z8 full-width"
-                  >
-                    <ng-container
-                      matColumnDef="treinado"
-                      class="mat-column-treinado"
-                    >
-                      <th
-                        class="mat-column-treinado"
-                        mat-header-cell
-                        *matHeaderCellDef
-                        fxFlex="5px"
-                      ></th>
-                      <td
-                        class="mat-column-treinado"
-                        mat-cell
-                        *matCellDef="let element"
-                        fxFlex="5px"
-                      >
-                        <mat-checkbox
-                          [disabled]="seDesabilitaCheck(element)"
-                          name="treinado"
-                          (change)="element.checkTreinamento($event.checked, personagem)"
-                        >
+                  <table mat-table [dataSource]="dsPericias" class="mat-elevation-z8 full-width">
+                    <ng-container matColumnDef="treinado" class="mat-column-treinado">
+                      <th class="mat-column-treinado" mat-header-cell *matHeaderCellDef fxFlex="5px"></th>
+                      <td class="mat-column-treinado" mat-cell *matCellDef="let element" fxFlex="5px">
+                        <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado"
+                          (change)="element.checkTreinamento($event.checked, personagem)">
                         </mat-checkbox>
                       </td>
                     </ng-container>
                     <ng-container matColumnDef="pericia">
-                      <th
-                        class="pericia"
-                        mat-header-cell
-                        *matHeaderCellDef
-                        mat-sort-header
-                      >
+                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
                         PERÍCIA
                       </th>
                       <td class="pericia" mat-cell *matCellDef="let element">
@@ -1390,67 +987,32 @@
                       </td>
                     </ng-container>
                     <ng-container matColumnDef="total">
-                      <th
-                        class="pericia"
-                        mat-header-cell
-                        *matHeaderCellDef
-                        mat-sort-header
-                      >
+                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
                         TOTAL
                       </th>
-                      <td
-                        class="pericia-valor"
-                        mat-cell
-                        *matCellDef="let element"
-                      >
+                      <td class="pericia-valor" mat-cell *matCellDef="let element">
                         {{ element.total }}
                       </td>
                     </ng-container>
                     <ng-container matColumnDef="atributo">
-                      <th
-                        class="pericia"
-                        mat-header-cell
-                        *matHeaderCellDef
-                        mat-sort-header
-                      >
+                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
                         ATRIBUTO
                       </th>
-                      <td
-                        class="pericia-valor"
-                        mat-cell
-                        *matCellDef="let element"
-                      >
+                      <td class="pericia-valor" mat-cell *matCellDef="let element">
                         {{ element.atributo }}
                       </td>
                     </ng-container>
                     <ng-container matColumnDef="outros">
-                      <th
-                        class="pericia"
-                        mat-header-cell
-                        *matHeaderCellDef
-                        mat-sort-header
-                      >
+                      <th class="pericia" mat-header-cell *matHeaderCellDef mat-sort-header>
                         OUTROS
                       </th>
-                      <td
-                        class="pericia-valor"
-                        mat-cell
-                        *matCellDef="let element"
-                      >
-                        <input
-                          type="text"
-                          [(ngModel)]="element.outros"
-                          (change)="personagem.recalculaPericias()"
-                          size="2"
-                          style="text-align: center !important"
-                        />
+                      <td class="pericia-valor" mat-cell *matCellDef="let element">
+                        <input type="text" [(ngModel)]="element.outros" (change)="personagem.recalculaPericias()"
+                          size="2" style="text-align: center !important" />
                       </td>
                     </ng-container>
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr
-                      mat-row
-                      *matRowDef="let row; columns: displayedColumns"
-                    ></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
                   </table>
                 </div>
               </div>

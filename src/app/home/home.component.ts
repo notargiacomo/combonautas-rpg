@@ -17,6 +17,7 @@ import { Pericia } from '../model/pericia';
 import { Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @Component({
   selector: 'app-home',
@@ -32,6 +33,7 @@ import { PericiasService } from '../service/pericia.service';
     FormsModule,
     MatExpansionModule,
     CommonModule,
+    MatProgressBarModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

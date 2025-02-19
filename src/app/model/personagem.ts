@@ -61,20 +61,28 @@ export class Personagem {
   numero_itens_vestidos_maximo!: number;
   equipamentos_carregados!: Equipamento[];
   itens?: Item[];
-  carga?:number;
+  carga_atual?:number;
+  total_carga?:number;
+  bonus_carga?:number;
   proficiencia?: Proficiencia[];
   tamanho?: Tamanho;
   deslocamentos?: Deslocamento[];
   sentidos?: Sentido[];
   resistencias?: Resistencias[];
   imunidades?: Imunidade[];
+  moedas_cobre?: number;
+  moedas_prata?: number;
+  moedas_ouro?: number;
+  moedas_plantina?: number; 
 
   constructor() {
     this.numero_pericias_classe = 0;
     this.equipamentos_empunhados = [{nome: 'Mão Direita'}, {nome: 'Mão Esquerda'}];
     this.equipamentos_vestidos = [{}, {}, {}, {}];
     this.numero_itens_vestidos_maximo = 4;
-    this.carga = 0;
+    this.total_carga = 0;
+    this.bonus_carga = 0;
+    this.carga_atual = 11;
     this.equipamentos_carregados = [];
     this.resistencias = [];
     this.imunidades = [];
@@ -104,6 +112,10 @@ export class Personagem {
     this.defesa = 10;
     this.atributo_defesa = Atributo.DESTREZA;
     this.defesa_bonus = 0;
+    this.moedas_plantina = 0;
+    this.moedas_ouro = 0;
+    this.moedas_prata = 0;
+    this.moedas_cobre = 0;
   }
 
   inicializaAtributos() {
@@ -141,6 +153,8 @@ export class Personagem {
         carisma_bonus: 0,
       };
     }
+
+    this.recalculaCarga();
   }
 
   calculaPontos(atributo: string, novoValor: number) {
@@ -249,6 +263,11 @@ export class Personagem {
 
     this.recalculaPericias();
     this.recalculaDefesa();
+    this.recalculaCarga();
+  }
+
+  recalculaCarga(){
+    this.total_carga = 10 + (this.atributos.forca*2) + this.bonus_carga!;
   }
 
   adicionaBonusTotalVida(bonusTotal: number){
