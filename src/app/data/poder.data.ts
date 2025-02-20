@@ -2728,7 +2728,10 @@ export class PoderData {
         descricao: `Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         raca: {id:2},
-        instrucao: ['this.personagem.adicionaSentido(Sentido.VISAO_ESCURO)', `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_PERCEPCAO}', [{bonus: 2, '${Chave.TERRENO_SUBTERRANEO}'}])`,`this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_SOBREVIVENCIA}', [{bonus: 2, '${Chave.TERRENO_SUBTERRANEO}'}])`],
+        instrucao: [
+          'this.personagem.adicionaSentido(Sentido.VISAO_ESCURO)', 
+          `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_PERCEPCAO}', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO']}]);`,
+          `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_SOBREVIVENCIA}', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO']}]);`],
         referencias: Referencia.BASICO,
         paginas: '20'
       },

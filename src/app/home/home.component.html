@@ -868,7 +868,7 @@
                       imunidade){
                       <div class="row">
                         <button class="me-2 proficiencia" mat-flat-button disabled>
-                          {{ imunidade }}
+                          {{ imunidade.nome }}
                         </button>
                       </div>
                       }
@@ -999,81 +999,83 @@
                         <div class="container celement-detail" [@detailExpand]="
                           element == expandedElementPericia ? 'expanded' : 'collapsed'
                         ">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <label>Treinado:</label>
-                              <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado" style="margin: 1px !important;"
-                                (change)="element.checkTreinamento($event.checked, personagem)">
-                              </mat-checkbox>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr style="margin: 5px !important;"/>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-5">
-                            <label>Bônus Treinamento:</label>
-                             
-                          </div>
-                          <div class="col-sm-1">
-                            {{ element.treinado ? personagem.nivel! >= 7 ? 4 : personagem.nivel! >= 15 ? 6: 2 : 0}}
-                          </div>
-                        </div>
-                        </div>
-                        <div class="container celement-detail" [@detailExpand]="
-                          element == expandedElementPericia ? 'expanded' : 'collapsed'
-                        ">
-                        <div class="row">
-                          <div class="col-sm-5">
-                            Bônus Nível: 
-                          </div>
-                          <div class="col-sm-1">
-                            {{ element.getBonusNivel() }}
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-5">
-                            Bônus Atributo: 
-                          </div>
-                          <div class="col-sm-1">
-                            {{ element.atributo }}
-                          </div>
-                          <div class="col-sm-3">
-                            {{ element.atributo_descricao }}
-                          </div>
-                        </div>
-                        @for (bonus of element.bonus_permanente_poder; track bonus) {
-                          <div class="row">
-                            <div class="col-sm-5">
-                              Bônus Poder: 
+                        <mat-tab-group>
+                          <mat-tab label="Estatística">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <label>Treinado:</label>
+                                  <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado" style="margin: 1px !important;"
+                                    (change)="element.checkTreinamento($event.checked, personagem)">
+                                  </mat-checkbox>
+                              </div>
                             </div>
-                            <div class="col-sm-1">
-                              {{ bonus.bonus }}
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <hr style="margin: 5px !important;"/>
+                              </div>
                             </div>
-                            <div class="col-sm-3">
-                              {{ bonus.origem }}
+                            <div class="row">
+                              <div class="col-sm-5">
+                                <label>Bônus Treinamento:</label>
+                              </div>
+                              <div class="col-sm-1">
+                                {{ element.treinado ? personagem.nivel! >= 7 ? 4 : personagem.nivel! >= 15 ? 6: 2 : 0}}
+                              </div>
                             </div>
-                          </div>
-                        }
-                        @for (bonus of element.bonus_condicional_permanente_poder; track bonus) {
-                          <div class="row">
-                            <div class="col-sm-5">
-                              Bônus Poder: 
+                            <div class="row">
+                              <div class="col-sm-5">
+                                Bônus Nível: 
+                              </div>
+                              <div class="col-sm-1">
+                                {{ element.getBonusNivel() }}
+                              </div>
                             </div>
-                            <div class="col-sm-1">
-                              {{ bonus.bonus }}
+                            <div class="row">
+                              <div class="col-sm-5">
+                                Bônus Atributo: 
+                              </div>
+                              <div class="col-sm-1">
+                                {{ element.atributo }}
+                              </div>
+                              <div class="col-sm-3">
+                                {{ element.atributo_descricao }}
+                              </div>
                             </div>
-                            <div class="col-sm-3">
-                              {{ bonus.origem/bonus.condicao.join(", ") }}
+                            <div class="row" *ngFor="let bonus of element.bonus_condicional_permanente">
+                              <div class="col-sm-5">
+                                Bônus Poder: 
+                              </div>
+                              <div class="col-sm-1">
+                                {{ bonus.bonus }}
+                              </div>
+                              <div class="col-sm-3">
+                                {{ bonus.condicao.join(", ") }}
+                              </div>
                             </div>
-                          </div>
-                        }
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <hr style="margin: 5px !important;"/>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-5">
+                                Total: 
+                              </div>
+                              <div class="col-sm-1">
+                                {{ element.total }}
+                              </div>
+                            </div>
+                          </mat-tab>
+                          <mat-tab label="Descrição">
+                            <div
+                            class="col-sm-12 mt-4 text-justify"
+                            [innerHTML]="element.descricao"
+                            ></div>
+                          </mat-tab>
+                        </mat-tab-group>
                         </div>
                       </td>
                     </ng-container>
-
                     <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpandPericia"></tr>
                     <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpandPericia" class="element-row"
                       [class.expanded-row]="expandedElementPericia === element" (click)="expandedElementPericia = expandedElementPericia === element ? null : element"></tr>

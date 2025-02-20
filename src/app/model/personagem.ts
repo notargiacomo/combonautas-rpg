@@ -1,5 +1,4 @@
 import { Atributo } from '../enum/atributo.enum';
-import { getPrefixo } from '../enum/chave.enum';
 import { Proficiencia } from '../enum/proficiencia.enum';
 import { Sentido } from '../enum/sentido.enum';
 import { Tamanho } from '../enum/tamanho.enum';
@@ -418,12 +417,13 @@ export class Personagem {
     this.poderes.push({id:0, nome: descricao});  
   };
 
-  atualizaBonusCondicionalPericia(nome: string, bonus: number, condicao: {origem?: string; bonus?: number; condicao?: string[];}[]){
+  atualizaBonusCondicionalPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[];}[]){
     this.pericias?.find(p => p.pericia?.normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase() === nome        .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase())?.adicionaBonusCondicionalPermanente(condicao);
+    this.recalculaPericias();
   }
 }
 export class PericiaPersonagem {
@@ -481,7 +481,18 @@ export class PericiaPersonagem {
     this.nivel = bonus_nivel;
     this.atributo = atributo;
     this.outros = outros;
-    this.total = Number(atributo) + Math.floor(Number(this.nivel!)/2) + Number(outros) + Number(this.treinado ? this.bonus_treinado : 0);
+
+    let bonus_permanente_total = 0;
+    this.bonus_permanente?.forEach(bonus => {
+      bonus_permanente_total += bonus.bonus!;
+    });
+
+    let bonus_condicional_permanente_total = 0;
+    this.bonus_condicional_permanente?.forEach(bonus => {
+      bonus_condicional_permanente_total += bonus.bonus!;
+    });
+
+    this.total = Number(atributo) + Math.floor(Number(this.nivel!)/2) + Number(outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_permanente_total;
   }
 
   checkTreinamento(isChecked: boolean, personagem: Personagem) {

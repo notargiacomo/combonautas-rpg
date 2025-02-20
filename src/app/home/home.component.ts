@@ -134,8 +134,6 @@ export class HomeComponent {
 
         this.personagem.recalculaAtributos();
         this.personagem.raca?.habilidades?.forEach((habilidade) => {
-          console.log('habilidade.instrucao: ' + habilidade.instrucao);
-          console.log('habilidade.resolucao: ' + habilidade.resolucao);
           if (habilidade.resolucao) {
             habilidade.resolucao?.forEach((resolucao) => {
               eval(resolucao);
@@ -152,6 +150,7 @@ export class HomeComponent {
         console.log('Diálogo foi fechado sem retorno.');
       }
     });
+    console.log(this.personagem);
   }
 
   seDesabilitaCheck(pericia: PericiaPersonagem): boolean {
