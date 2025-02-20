@@ -1039,9 +1039,10 @@
                                 {{ element.atributo }}
                               </div>
                               <div class="col-sm-6">
-                                <mat-select class="vida-mana-defesa" style="font-size: 12pt !important" [(value)]="element.atributo_selecionado">
+                                <mat-select class="vida-mana-defesa" style="font-size: 12pt 
+                                !important" (selectionChange)="element.recalculaPericia(personagem.recuperaValorAtributo($event.value))" [(value)]="element.atributo_selecionado_descricao">
                                   @for (atributo of atributos; track atributo) {
-                                    <mat-option (onSelectionChange)="element.recalculaPericia(personagem.recuperaValorAtributo(atributo))"
+                                    <mat-option 
                                       [value]="atributo">
                                       {{ atributo }}
                                     </mat-option>

@@ -304,7 +304,7 @@ export class Personagem {
 
   public recalculaPericias() {
     this.pericias?.forEach(pericia => {
-      let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_descricao!));
+      let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_selecionado_descricao!));
       pericia.atualiza(this.nivel!, valorAtributo, pericia.outros!);
     });
   }
@@ -433,9 +433,10 @@ export class PericiaPersonagem {
   treinado?: boolean;
   total?: number;
   nivel?: number;
-  atributo_descricao?: string;
-  atributo_selecionado?: string;
   atributo?: number;
+  atributo_descricao?: string;
+  atributo_selecionado?: number;
+  atributo_selecionado_descricao?: string;
   outros?: number;
   bonus_treinado: number = 2;
   bonus_permanente?: {
@@ -471,9 +472,10 @@ export class PericiaPersonagem {
     this.descricao = descricao;
     this.nivel = nivel;
     this.atributo_descricao = atributo_descricao;
-    this.atributo_selecionado = atributo_descricao;
+    this.atributo_selecionado_descricao = atributo_descricao;
+    this.atributo_selecionado = atributo;
     this.atributo = atributo;
-    this.total = atributo + Math.floor(nivel/2) + this.outros + (this.treinado ? this.bonus_treinado : 0);
+    this.total = this.atributo_selecionado + Math.floor(nivel/2) + this.outros + (this.treinado ? this.bonus_treinado : 0);
   }
 
   getBonusNivel(){
@@ -491,7 +493,8 @@ export class PericiaPersonagem {
   }
 
   public recalculaPericia(valorAtributo?: number){
-    this.atributo = valorAtributo ? valorAtributo : this.atributo;
+    this.atributo_selecionado = valorAtributo !== undefined ? valorAtributo : this.atributo_selecionado;
+    this.atributo = this.atributo_selecionado;
 
     let bonus_condicional_permanente_total = 0;
     this.bonus_condicional_permanente?.forEach(bonus => {
@@ -505,12 +508,13 @@ export class PericiaPersonagem {
       bonus_permanente_total += bonus.bonus!;
     });
 
-    this.total = Number(this.atributo) + Math.floor(Number(this.nivel!)/2) + Number(this.outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_permanente_total + bonus_condicional_permanente_total;
+    this.total = Number(this.atributo_selecionado) + Math.floor(Number(this.nivel!)/2) + Number(this.outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_permanente_total + bonus_condicional_permanente_total;
   }
 
   atualiza(bonus_nivel: number,
     atributo: number,  outros: number){
     this.nivel = bonus_nivel;
+    this.atributo_selecionado = atributo;
     this.atributo = atributo;
     this.outros = outros;
 
