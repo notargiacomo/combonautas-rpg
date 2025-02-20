@@ -2730,8 +2730,8 @@ export class PoderData {
         raca: {id:2},
         instrucao: [
           'this.personagem.adicionaSentido(Sentido.VISAO_ESCURO)', 
-          `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_PERCEPCAO}', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO']}]);`,
-          `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_SOBREVIVENCIA}', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO']}]);`],
+          `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_PERCEPCAO}', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`,
+          `this.personagem.atualizaBonusCondicionalPericia('${Chave.PERICIA_SOBREVIVENCIA}', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`],
         referencias: Referencia.BASICO,
         paginas: '20'
       },

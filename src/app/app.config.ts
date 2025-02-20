@@ -13,8 +13,6 @@ import { routes } from './app.routes';
 import { LoaderInterceptor } from './conf/core/loader-interceptor';
 import { InMemoryDataService } from './data/in-memory-data.service';
 
-const isBrowser = typeof window !== 'undefined';
-
 export const appConfig: ApplicationConfig = {
   providers: [
               provideHttpClient(withFetch()), 

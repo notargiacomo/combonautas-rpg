@@ -1,4 +1,5 @@
 import { Atributo } from '../enum/atributo.enum';
+import { Chave } from '../enum/chave.enum';
 import { Proficiencia } from '../enum/proficiencia.enum';
 import { Sentido } from '../enum/sentido.enum';
 import { Tamanho } from '../enum/tamanho.enum';
@@ -417,7 +418,7 @@ export class Personagem {
     this.poderes.push({id:0, nome: descricao});  
   };
 
-  atualizaBonusCondicionalPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[];}[]){
+  atualizaBonusCondicionalPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[];ativo:boolean;}[]){
     this.pericias?.find(p => p.pericia?.normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase() === nome        .normalize('NFD')
@@ -433,20 +434,22 @@ export class PericiaPersonagem {
   total?: number;
   nivel?: number;
   atributo_descricao?: string;
+  atributo_selecionado?: string;
   atributo?: number;
   outros?: number;
   bonus_treinado: number = 2;
   bonus_permanente?: {
     origem?: string;
-    bonus?: number;
+    bonus: number;
   } [];
   bonus_condicional_permanente?: {
     origem?: string;
     bonus?: number;
     condicao?: string[];
+    ativo?:boolean;
   } []
 
-  adicionaBonusCondicionalPermanente(condicao: {origem?: string; bonus?: number; condicao?: string[];}[]){
+  adicionaBonusCondicionalPermanente(condicao: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}[]){
     if(!this.bonus_condicional_permanente) 
       this.bonus_condicional_permanente = condicao;
     else
@@ -468,6 +471,7 @@ export class PericiaPersonagem {
     this.descricao = descricao;
     this.nivel = nivel;
     this.atributo_descricao = atributo_descricao;
+    this.atributo_selecionado = atributo_descricao;
     this.atributo = atributo;
     this.total = atributo + Math.floor(nivel/2) + this.outros + (this.treinado ? this.bonus_treinado : 0);
   }
@@ -476,23 +480,41 @@ export class PericiaPersonagem {
     return Math.floor(Number(this.nivel!)/2);
   }
 
-  atualiza(bonus_nivel: number,
-    atributo: number,  outros: number){
-    this.nivel = bonus_nivel;
-    this.atributo = atributo;
-    this.outros = outros;
+  ativaDesativaBonusCondicionalPermanente(bonus: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}){
+    this.bonus_condicional_permanente?.forEach(element => {
+      if(bonus === element){
+        element.ativo = !element.ativo;
+      }
+    });
+
+    this.recalculaPericia();
+  }
+
+  public recalculaPericia(valorAtributo?: number){
+    this.atributo = valorAtributo ? valorAtributo : this.atributo;
+
+    let bonus_condicional_permanente_total = 0;
+    this.bonus_condicional_permanente?.forEach(bonus => {
+      if(bonus.ativo){
+        bonus_condicional_permanente_total += bonus.bonus!;
+      }
+    });
 
     let bonus_permanente_total = 0;
     this.bonus_permanente?.forEach(bonus => {
       bonus_permanente_total += bonus.bonus!;
     });
 
-    let bonus_condicional_permanente_total = 0;
-    this.bonus_condicional_permanente?.forEach(bonus => {
-      bonus_condicional_permanente_total += bonus.bonus!;
-    });
+    this.total = Number(this.atributo) + Math.floor(Number(this.nivel!)/2) + Number(this.outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_permanente_total + bonus_condicional_permanente_total;
+  }
 
-    this.total = Number(atributo) + Math.floor(Number(this.nivel!)/2) + Number(outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_permanente_total;
+  atualiza(bonus_nivel: number,
+    atributo: number,  outros: number){
+    this.nivel = bonus_nivel;
+    this.atributo = atributo;
+    this.outros = outros;
+
+    this.recalculaPericia();
   }
 
   checkTreinamento(isChecked: boolean, personagem: Personagem) {
@@ -505,7 +527,7 @@ export class PericiaPersonagem {
     } else {
       personagem.adicionaNumeroPericiasLivres(1);
     }
-    this.total = Number(this.atributo!) + Math.floor(Number(this.nivel!)/2) + Number(this.outros!) + Number(this.bonus_treinado);
+    this.recalculaPericia();
   }
 
 }

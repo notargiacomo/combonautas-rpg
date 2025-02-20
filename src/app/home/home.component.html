@@ -632,23 +632,23 @@
 
                                     <div class="col-sm-3">
                                       TP$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_plantina" size="2"
-                                        style="text-align: center !important" class="campo-atributos" />
+                                      <input type="text" [(ngModel)]="personagem.moedas_plantina" size="4"
+                                        class="campo-atributos input-numerico" />
                                     </div>
                                     <div class="col-sm-3">
                                       TO$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_ouro" size="2"
-                                        style="text-align: center !important" class="campo-atributos" />
+                                      <input type="text" [(ngModel)]="personagem.moedas_ouro" size="4"
+                                        class="campo-atributos input-numerico" />
                                     </div>
                                     <div class="col-sm-3">
                                       T$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_prata" size="2"
-                                        style="text-align: center !important" class="campo-atributos" />
+                                      <input type="text" [(ngModel)]="personagem.moedas_prata" size="4"
+                                        class="campo-atributos input-numerico" />
                                     </div>
                                     <div class="col-sm-3">
                                       TC$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_cobre" size="2"
-                                        style="text-align: center !important" class="campo-atributos" />
+                                      <input type="text" [(ngModel)]="personagem.moedas_cobre" size="4"
+                                        class="campo-atributos input-numerico" />
                                     </div>
                                   </div>
                                 </div>
@@ -962,7 +962,7 @@
                   <div class="col-sm-12">
                     <b>Número de Perícias Livres: </b>
                     <input type="text" [(ngModel)]="personagem.numero_pericias_livre" size="2"
-                      style="text-align: center !important" class="campo-atributos" disabled />
+                      style="text-align: center !important" class="campo-atributos input-numerico" disabled />
                   </div>
                 </div>
               </div>
@@ -1001,7 +1001,8 @@
                         ">
                         <mat-tab-group>
                           <mat-tab label="Estatística">
-                            <div class="row">
+                            <div class="container">
+                            <div class="row" style="line-height: 250% !important;">
                               <div class="col-sm-12">
                                 <label>Treinado:</label>
                                   <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado" style="margin: 1px !important;"
@@ -1014,41 +1015,54 @@
                                 <hr style="margin: 5px !important;"/>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="col-sm-5">
-                                <label>Bônus Treinamento:</label>
+                            <div class="row" style="line-height: 250% !important;">
+                              <div class="col-sm-5" >
+                                <label>Treinamento:</label>
                               </div>
                               <div class="col-sm-1">
                                 {{ element.treinado ? personagem.nivel! >= 7 ? 4 : personagem.nivel! >= 15 ? 6: 2 : 0}}
                               </div>
                             </div>
-                            <div class="row">
+                            <div class="row" style="line-height: 250% !important;">
                               <div class="col-sm-5">
-                                Bônus Nível: 
+                                Nível: 
                               </div>
                               <div class="col-sm-1">
                                 {{ element.getBonusNivel() }}
                               </div>
                             </div>
-                            <div class="row">
+                            <div class="row" style="line-height: 250% !important;">
                               <div class="col-sm-5">
-                                Bônus Atributo: 
+                                Atributo: 
                               </div>
                               <div class="col-sm-1">
                                 {{ element.atributo }}
                               </div>
-                              <div class="col-sm-3">
-                                {{ element.atributo_descricao }}
+                              <div class="col-sm-6">
+                                <mat-select class="vida-mana-defesa" style="font-size: 12pt !important" [(value)]="element.atributo_selecionado">
+                                  @for (atributo of atributos; track atributo) {
+                                    <mat-option (onSelectionChange)="element.recalculaPericia(personagem.recuperaValorAtributo(atributo))"
+                                      [value]="atributo">
+                                      {{ atributo }}
+                                    </mat-option>
+                                  }
+                                </mat-select>
                               </div>
                             </div>
-                            <div class="row" *ngFor="let bonus of element.bonus_condicional_permanente">
+                            <div class="row" *ngFor="let bonus of element.bonus_condicional_permanente" style="line-height: 250% !important;">
                               <div class="col-sm-5">
-                                Bônus Poder: 
+                                Bônus de Poder: 
                               </div>
                               <div class="col-sm-1">
                                 {{ bonus.bonus }}
                               </div>
-                              <div class="col-sm-3">
+                              <div class="col-sm-2">
+                                <mat-checkbox name="treinado" style="margin: 1px !important;"
+                                  [(ngModel)]="element.ativo"
+                                  (change)="element.ativaDesativaBonusCondicionalPermanente(bonus)">
+                                </mat-checkbox>
+                              </div>
+                              <div class="col-sm-4">
                                 {{ bonus.condicao.join(", ") }}
                               </div>
                             </div>
@@ -1057,13 +1071,14 @@
                                 <hr style="margin: 5px !important;"/>
                               </div>
                             </div>
-                            <div class="row">
+                            <div class="row" style="line-height: 250% !important;">
                               <div class="col-sm-5">
                                 Total: 
                               </div>
                               <div class="col-sm-1">
                                 {{ element.total }}
                               </div>
+                            </div>
                             </div>
                           </mat-tab>
                           <mat-tab label="Descrição">
