@@ -304,7 +304,7 @@ export class Personagem {
 
   public recalculaPericias() {
     this.pericias?.forEach(pericia => {
-      let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_selecionado_descricao!));
+      let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_selecionado_descricao!)); 
       pericia.atualiza(this.nivel!, valorAtributo, pericia.outros!);
     });
   }
