@@ -56,10 +56,10 @@ export class Personagem {
   numero_pericias_livre!: number;
   poderes!:Poder[];
   pericias?: PericiaPersonagem[];
-  equipamentos_empunhados!: Equipamento[];
-  equipamentos_vestidos!: Equipamento[];
-  numero_itens_vestidos_maximo!: number;
-  equipamentos_carregados!: Equipamento[];
+  equipamentos_empunhados?: Equipamento[];
+  equipamentos_vestidos?: Equipamento[];
+  numero_itens_vestidos_maximo?: number;
+  equipamentos_carregados?: Equipamento[];
   itens?: Item[];
   carga_atual?:number;
   total_carga?:number;

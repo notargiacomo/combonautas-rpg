@@ -487,7 +487,7 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.equipamentos_empunhados!" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.equipamentos_empunhados ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
@@ -533,7 +533,7 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.equipamentos_vestidos!" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.equipamentos_vestidos ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
@@ -658,7 +658,7 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.equipamentos_carregados!" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.equipamentos_carregados ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
@@ -712,7 +712,7 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.itens!" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.itens  ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="item" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef

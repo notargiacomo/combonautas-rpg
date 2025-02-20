@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
 
 import { Pericia } from '../model/pericia';
 import { Atributo } from '../enum/atributo.enum';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
