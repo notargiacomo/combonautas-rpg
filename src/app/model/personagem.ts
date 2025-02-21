@@ -56,40 +56,21 @@ export class Personagem {
   numero_pericias_livre!: number;
   poderes!:Poder[];
   pericias?: PericiaPersonagem[];
-  equipamentos_empunhados?: Equipamento[];
-  equipamentos_vestidos?: Equipamento[];
-  numero_itens_vestidos_maximo?: number;
-  equipamentos_carregados?: Equipamento[];
-  itens?: Item[];
-  carga_atual?:number;
-  total_carga?:number;
-  bonus_carga?:number;
+  posse?: Posse;
   proficiencia?: Proficiencia[];
   tamanho?: Tamanho;
   deslocamentos?: Deslocamento[];
   sentidos?: Sentido[];
   resistencias?: Resistencias[];
   imunidades?: Imunidade[];
-  moedas_cobre?: number;
-  moedas_prata?: number;
-  moedas_ouro?: number;
-  moedas_plantina?: number; 
 
   constructor() {
     this.numero_pericias_classe = 0;
-    this.equipamentos_empunhados = [{nome: 'Mão Direita'}, {nome: 'Mão Esquerda'}];
-    this.equipamentos_vestidos = [{}, {}, {}, {}];
-    this.numero_itens_vestidos_maximo = 4;
-    this.total_carga = 0;
-    this.bonus_carga = 0;
-    this.carga_atual = 11;
-    this.equipamentos_carregados = [];
     this.resistencias = [];
     this.imunidades = [];
     this.deslocamentos = [];
     this.deslocamentos.push(new Deslocamento('Terrestre', 9));
     this.sentidos = [];
-    this.itens = [];
     this.proficiencia = [];
     this.proficiencia.push(Proficiencia.ARMAS_SIMPLES);
     this.proficiencia.push(Proficiencia.ARMADURAS_LEVES);
@@ -97,6 +78,7 @@ export class Personagem {
     this.nivel ? this.nivel : (this.nivel = 1);
     this.pericias = [];
     this.poderes = [];
+    this.posse = new Posse(this);
     this.inicializaAtributos();
     this.numero_pericias_livre = this.atributos.inteligencia;
     this.pontos_vida_atual = 0;
@@ -112,10 +94,7 @@ export class Personagem {
     this.defesa = 10;
     this.atributo_defesa = Atributo.DESTREZA;
     this.defesa_bonus = 0;
-    this.moedas_plantina = 0;
-    this.moedas_ouro = 0;
-    this.moedas_prata = 0;
-    this.moedas_cobre = 0;
+
   }
 
   inicializaAtributos() {
@@ -154,7 +133,7 @@ export class Personagem {
       };
     }
 
-    this.recalculaCarga();
+    this.posse!.recalculaCarga();
   }
 
   calculaPontos(atributo: string, novoValor: number) {
@@ -263,11 +242,7 @@ export class Personagem {
 
     this.recalculaPericias();
     this.recalculaDefesa();
-    this.recalculaCarga();
-  }
-
-  recalculaCarga(){
-    this.total_carga = 10 + (this.atributos.forca*2) + this.bonus_carga!;
+    this.posse!.recalculaCarga();
   }
 
   adicionaBonusTotalVida(bonusTotal: number){
@@ -575,5 +550,40 @@ export class Imunidade {
   constructor(nome: string, tipo: string){
     this.nome = nome;
     this.tipo = tipo;
+  }
+}
+
+export class Posse {
+  equipamentos_empunhados?: Equipamento[];
+  equipamentos_vestidos?: Equipamento[];
+  numero_itens_vestidos_maximo?: number;
+  equipamentos_carregados?: Equipamento[];
+  itens?: Item[];
+  carga_atual?:number;
+  total_carga?:number;
+  bonus_carga?:number;
+  moedas_cobre?: number;
+  moedas_prata?: number;
+  moedas_ouro?: number;
+  moedas_plantina?: number;
+  instrucoes?: string[];
+
+  constructor(private mediator: Personagem){
+    this.equipamentos_empunhados = [{nome: 'Mão Direita'}, {nome: 'Mão Esquerda'}];
+    this.equipamentos_vestidos = [{}, {}, {}, {}];
+    this.numero_itens_vestidos_maximo = 4;
+    this.total_carga = 0;
+    this.bonus_carga = 0;
+    this.carga_atual = 0;
+    this.equipamentos_carregados = [];
+    this.itens = [];
+    this.moedas_plantina = 0;
+    this.moedas_ouro = 0;
+    this.moedas_prata = 0;
+    this.moedas_cobre = 0;
+  }
+
+  public recalculaCarga(){
+    this.total_carga = 10 + (this.mediator.atributos.forca*2) + this.bonus_carga!;
   }
 }

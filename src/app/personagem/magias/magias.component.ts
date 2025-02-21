@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -271,4 +271,14 @@ export class MagiasComponent implements AfterViewInit {
     selecionaMagia(objeto: Magia){
       this.objeto = objeto;
     }
+
+        /**
+         *
+         * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - MAGIA
+         *
+         */
+      
+        @Input() magiaSelecionada?: Magia;
+        @Input() seVeioFicha: boolean = false;
+        @Output() magiaSelecionadaChange = new EventEmitter<Magia>();
 }

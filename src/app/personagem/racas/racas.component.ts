@@ -63,7 +63,6 @@ import { PoderesComponent } from "../poderes/poderes.component";
     NgFor,
     NgIf,
     MatTabsModule,
-    PoderesComponent,
 ],
   templateUrl: './racas.component.html',
   styleUrl: './racas.component.scss',

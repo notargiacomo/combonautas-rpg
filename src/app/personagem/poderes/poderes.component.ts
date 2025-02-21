@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -249,4 +249,16 @@ export class PoderesComponent {
   nomeDeuses(deuses?: Deus[]): string {
     return  deuses ? deuses.map(deus => deus.nome).join(' ') : '';
   }
+
+  /**
+   *
+   * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - PODER
+   *
+   */
+
+  @Input() poderSelecionado?: Poder;
+  @Input() seVeioFicha: boolean = false;
+  @Output() poderSelecionadoChange = new EventEmitter<Poder>();
+
+
 }

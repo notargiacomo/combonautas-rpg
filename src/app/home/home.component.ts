@@ -22,6 +22,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
+import { Raca } from '../model/raca';
 
 @Component({
   selector: 'app-home',
@@ -104,11 +105,12 @@ export class HomeComponent {
 
   readonly dialog = inject(MatDialog);
   dataSourcePoderesPersonagens = new MatTableDataSource<Poder>();
-  openDialog(titulo: string) {
+  openDialog(titulo: string, classe: number) {
     const dialogRef = this.dialog.open(BalaoInterativoPadraoComponent, {
       data: {
         titulo: titulo,
-        raca: this.personagem.raca,
+        objeto: this.personagem.raca,
+        classe: classe,
       },
       disableClose: true,
     });
@@ -150,7 +152,6 @@ export class HomeComponent {
         console.log('Diálogo foi fechado sem retorno.');
       }
     });
-    console.log(this.personagem);
   }
 
   seDesabilitaCheck(pericia: PericiaPersonagem): boolean {

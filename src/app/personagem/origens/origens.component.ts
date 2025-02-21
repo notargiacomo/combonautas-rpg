@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { OrigemService } from '../../service/origem.service';
 import {
   FormArray,
@@ -123,4 +123,14 @@ export class OrigensComponent implements OnInit {
       },
     });
   }
+
+    /**
+     *
+     * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - ORIGEM
+     *
+     */
+  
+    @Input() origemSelecionada?: Origem;
+    @Input() seVeioFicha: boolean = false;
+    @Output() origemSelecionadaChange = new EventEmitter<Origem>();
 }

@@ -37,7 +37,7 @@
           </div>
 
           <div class="col-sm-2 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA')">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA', 1)">
               <!-- <img *ngIf="personagem.raca" [src]="personagem.raca.imagem" [alt]="personagem.raca.nome" style="width: 100px !important; height: 100px !important;" /> -->
               <b style="color: white !important">{{
                 personagem.raca
@@ -47,17 +47,17 @@
             </button>
           </div>
           <div class="col-sm-2 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('ORIGEM', 5)">
               <b style="color: white !important">ORIGEM:</b>
             </button>
           </div>
           <div class="col-sm-4 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('CLASSE', 6)">
               <b style="color: white !important">CLASSES:</b>
             </button>
           </div>
           <div class="col-sm-2 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha">
+            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('DEUS', 7)">
               <b style="color: white !important">DIVINDADE:</b>
             </button>
           </div>
@@ -482,12 +482,23 @@
                       <mat-expansion-panel [expanded]="true" [disabled]="true">
                         <mat-expansion-panel-header>
                           <mat-panel-title>
-                            <b> EQUIPAMENTOS EMPUNHADOS </b>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm-10">
+                                  <b> EQUIPAMENTOS EMPUNHADOS </b>
+                                </div>
+                                <div class="col-sm-2 d-flex justify-content-end">
+                                  <span class="material-symbols-outlined" (click)="openDialog('ITENS: EQUIPAMENTOS EMPUNHADOS', 2)">
+                                    <mat-icon>shopping_cart</mat-icon>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
                           </mat-panel-title>
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.equipamentos_empunhados ?? []" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.posse!.equipamentos_empunhados ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
@@ -528,12 +539,23 @@
                       <mat-expansion-panel [expanded]="true" [disabled]="true">
                         <mat-expansion-panel-header>
                           <mat-panel-title>
-                            <b> EQUIPAMENTOS VESTIDOS </b>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm-10">
+                                  <b> EQUIPAMENTOS VESTIDOS </b>
+                                </div>
+                                <div class="col-sm-2 d-flex justify-content-end">
+                                  <span class="material-symbols-outlined" (click)="openDialog('ITENS: EQUIPAMENTOS VESTIDOS', 2)">
+                                    <mat-icon>shopping_cart</mat-icon>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
                           </mat-panel-title>
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.equipamentos_vestidos ?? []" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.posse!.equipamentos_vestidos ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
@@ -575,11 +597,16 @@
                         <mat-expansion-panel-header style="padding-left: 8px !important">
                           <mat-panel-title>
                             <div class="container">
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <b>EQUIPAMENTOS CARREGADOS</b>
+                                <div class="row">
+                                  <div class="col-sm-10">
+                                    <b> EQUIPAMENTOS CARREGADOS </b>
+                                  </div>
+                                  <div class="col-sm-2 d-flex justify-content-end">
+                                    <span class="material-symbols-outlined" (click)="openDialog('ITENS: EQUIPAMENTOS CARREGADOS', 2)">
+                                      <mat-icon>shopping_cart</mat-icon>
+                                    </span>
+                                  </div>
                                 </div>
-                              </div>
                               <div class="row">
                                 <div class="col-sm-12">
                                   <hr>
@@ -587,16 +614,16 @@
                               </div>
                               <div class="row">
                                 <div class="col-sm-6">
-                                  {{ "LIMITE DE CARGA: "+ personagem.carga_atual + " / " + (personagem.total_carga!*2)
+                                  {{ "LIMITE DE CARGA: "+ personagem.posse!.carga_atual + " / " + (personagem.posse!.total_carga!*2)
                                   }}
                                   <section class="example-section">
                                     <mat-progress-bar class="example-margin" mode="determinate"
-                                      [value]="(personagem.carga_atual! / (personagem.total_carga!*2)) * 100">
+                                      [value]="(personagem.posse!.carga_atual! / (personagem.posse!.total_carga!*2)) * 100">
                                     </mat-progress-bar>
                                   </section>
                                 </div>
                                 <div class="col-sm-3 d-flex justify-content-end">
-                                  <div *ngIf="personagem.carga_atual! > personagem.total_carga!">
+                                  <div *ngIf="personagem.posse!.carga_atual! > personagem.posse!.total_carga!">
                                     SOBRECARREGADO
                                   </div>
                                 </div>
@@ -624,7 +651,7 @@
 
                                 <div class="col-sm-2">
                                   <span class="material-symbols-outlined">
-                                    savings
+                                    <mat-icon>savings</mat-icon>
                                   </span>
                                 </div>
                                 <div class="col-sm-10">
@@ -632,22 +659,22 @@
 
                                     <div class="col-sm-3">
                                       TP$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_plantina" size="4"
+                                      <input type="text" [(ngModel)]="personagem.posse!.moedas_plantina" size="4"
                                         class="campo-atributos input-numerico" />
                                     </div>
                                     <div class="col-sm-3">
                                       TO$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_ouro" size="4"
+                                      <input type="text" [(ngModel)]="personagem.posse!.moedas_ouro" size="4"
                                         class="campo-atributos input-numerico" />
                                     </div>
                                     <div class="col-sm-3">
                                       T$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_prata" size="4"
+                                      <input type="text" [(ngModel)]="personagem.posse!.moedas_prata" size="4"
                                         class="campo-atributos input-numerico" />
                                     </div>
                                     <div class="col-sm-3">
                                       TC$:
-                                      <input type="text" [(ngModel)]="personagem.moedas_cobre" size="4"
+                                      <input type="text" [(ngModel)]="personagem.posse!.moedas_cobre" size="4"
                                         class="campo-atributos input-numerico" />
                                     </div>
                                   </div>
@@ -658,7 +685,7 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.equipamentos_carregados ?? []" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.posse!.equipamentos_carregados ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
@@ -707,12 +734,23 @@
                       <mat-expansion-panel [expanded]="true" [disabled]="true">
                         <mat-expansion-panel-header>
                           <mat-panel-title>
-                            <b> OUTROS ITENS </b>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm-10">
+                                  <b> OUTROS ITENS </b>
+                                </div>
+                                <div class="col-sm-2 d-flex justify-content-end">
+                                  <span class="material-symbols-outlined" (click)="openDialog('ITENS: OUTROS ITENS', 2)">
+                                    <mat-icon>shopping_cart</mat-icon>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
                           </mat-panel-title>
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.itens  ?? []" multiTemplateDataRows
+                          <table mat-table [dataSource]="personagem.posse!.itens  ?? []" multiTemplateDataRows
                             class="mat-elevation-z8">
                             <ng-container matColumnDef="item" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
@@ -882,7 +920,18 @@
                     <mat-expansion-panel [expanded]="true" [disabled]="true">
                       <mat-expansion-panel-header>
                         <mat-panel-title>
-                          <b> HABILIDADES E PODERES </b>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <b> HABILIDADES E PODERES </b>
+                              </div>
+                              <div class="col-sm-2 d-flex justify-content-end">
+                                <span class="material-symbols-outlined" (click)="openDialog('PODERES', 4)">
+                                  swords
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
@@ -937,7 +986,18 @@
                     <mat-expansion-panel [expanded]="true" [disabled]="true">
                       <mat-expansion-panel-header>
                         <mat-panel-title>
-                          <b> MAGIAS </b>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <b> MAGIAS </b>
+                              </div>
+                              <div class="col-sm-2 d-flex justify-content-end">
+                                <span class="material-symbols-outlined" (click)="openDialog('MAGIAS', 3)">
+                                  <mat-icon>thunderstorm</mat-icon> 
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />

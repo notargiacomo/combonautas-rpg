@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, Component, inject, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, inject, Input, Output, ViewChild } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -243,4 +243,16 @@ export class ItensComponent implements AfterViewInit {
   eMaterialEspecial(objeto: Item): boolean {
     return objeto.tipo === TipoItem.MATERIAL_ESPECIAL;
   }
+
+    /**
+     *
+     * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - ITEM
+     *
+     */
+  
+    @Input() itemSelecionado?: Item;
+    @Input() seVeioFicha: boolean = false;
+    @Output() itemSelecionadoChange = new EventEmitter<Item>();
+
+
 }

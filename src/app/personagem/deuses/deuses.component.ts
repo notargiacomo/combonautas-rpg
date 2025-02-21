@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
@@ -88,4 +88,14 @@ export class DeusesComponent implements OnInit {
       },
     });
   }
+
+  /**
+   *
+   * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - CLASSE
+   *
+   */
+
+  @Input() deusSelecionado?: Deus;
+  @Input() seVeioFicha: boolean = false;
+  @Output() deusSelecionadoChange = new EventEmitter<Deus>();
 }

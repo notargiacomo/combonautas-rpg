@@ -3,7 +3,11 @@
 html,
 body {
   width: 100% !important;
-  background-color: rgb(60, 60, 60) !important; /* Define o fundo como a cor dominante */
+  background-color: rgb(
+    60,
+    60,
+    60
+  ) !important; /* Define o fundo como a cor dominante */
   height: 100%;
   font-family: "Oswald" !important;
   margin: 0;
@@ -97,7 +101,7 @@ b {
   font-size: 12pt !important;
 }
 
-.select-dobrado{
+.select-dobrado {
   .mat-mdc-select {
     font-family: "Oswald" !important;
     font-size: 12pt !important;
@@ -113,26 +117,21 @@ b {
 .mdc-floating-label {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  
-
 }
 
-.mat-mdc-icon-button[disabled], .mat-mdc-icon-button.mat-mdc-button-disabled{
+.mat-mdc-icon-button[disabled],
+.mat-mdc-icon-button.mat-mdc-button-disabled {
   background-color: lightgrey !important;
 }
 
 .mat-mdc-menu-item-text {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  
-
 }
 
 .mat-internal-form-field {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  
-
 }
 
 .mat-mdc-header-row {
@@ -143,8 +142,6 @@ b {
 .mat-mdc-unelevated-button {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  
-
 }
 
 .mat-mdc-row {
@@ -156,14 +153,11 @@ b {
 .mat-expansion-panel-header {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  
-
 }
 
 .mat-expansion-panel-content {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-
 }
 
 .mat-mdc-card-title {
@@ -176,11 +170,11 @@ b {
   background-color: rgb(132, 26, 18);
 }
 
-.mat-grid-tile-content{
+.mat-grid-tile-content {
   margin: 0px !important;
 }
 
-.mat-mdc-card-content .mdc-tab__text-label  {
+.mat-mdc-card-content .mdc-tab__text-label {
   color: black !important;
 }
 
@@ -191,7 +185,7 @@ b {
 }
 
 .mat-mdc-card {
-  background-color: rgb(248, 233, 220)!important;
+  background-color: rgb(248, 233, 220) !important;
 }
 
 .mat-mdc-card-subtitle {
@@ -226,7 +220,6 @@ img {
   padding: 10px; /* Espaço entre a imagem e a borda */
   background-color: white; /* Fundo da moldura */
 }
-
 
 .mat-mdc-card-content table {
   border-collapse: collapse;
@@ -310,7 +303,10 @@ button[mat-flat-button]:hover {
 }
 
 .mat-mdc-unelevated-button:not(:disabled) {
-  color: var(--mdc-filled-button-label-text-color, var(--mat-sys-on-primary)) !important;
+  color: var(
+    --mdc-filled-button-label-text-color,
+    var(--mat-sys-on-primary)
+  ) !important;
   background-color: rgb(132, 26, 18) !important;
 }
 
@@ -367,9 +363,8 @@ tr.element-row:not(.expanded-row):active {
   font-size: 12pt !important;
 }
 
-
-
-.mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+.mat-mdc-menu-content,
+.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
 }
@@ -377,8 +372,8 @@ tr.element-row:not(.expanded-row):active {
 .mat-mdc-dialog-surface {
   border: 2px solid rgb(228, 176, 100);
   background-color: rgb(60, 60, 60) !important;
-  border-radius: 16px !important;      /* Arredondamento */
-  padding: 16px !important; 
+  border-radius: 16px !important; /* Arredondamento */
+  padding: 16px !important;
   // max-height: 150% !important ;          /* Espaçamento interno */
   height: 150% !important;
   max-width: 200% !important;
@@ -387,7 +382,7 @@ tr.element-row:not(.expanded-row):active {
   align-self: center !important;
 }
 
-.cdk-global-overlay-wrapper{
+.cdk-global-overlay-wrapper {
   display: flow-root !important;
   // align-items: center;
   // align-content: center;
@@ -401,7 +396,6 @@ tr.element-row:not(.expanded-row):active {
   height: 550px !important;
   margin-top: 17% !important;
   margin-left: 33% !important;
-  
 }
 
 .mat-mdc-dialog-panel {
@@ -416,29 +410,26 @@ tr.element-row:not(.expanded-row):active {
 }
 
 .mat-mdc-dialog-container .card-padrao {
-    border-radius: 0px !important;
-    border: 2px solid rgb(228, 176, 100);
+  border-radius: 0px !important;
+  border: 2px solid rgb(228, 176, 100);
 }
 
 .mat-mdc-dialog-surface .card-padrao {
-
-  background-color: rgb(248, 233, 220)!important;
+  background-color: rgb(248, 233, 220) !important;
   color: black !important;
-      /* Arredondamento */
-  padding: 16px !important;           /* Espaçamento interno */
+  /* Arredondamento */
+  padding: 16px !important; /* Espaçamento interno */
 }
 
 .mat-mdc-dialog-container {
   max-height: 500px !important;
   max-width: 1000px !important;
-
 }
 
 .mat-mdc-dialog-content {
   // border-radius: 16px !important;
   border: 2px solid rgb(228, 176, 100);
-  background-color: rgb(248, 233, 220)!important;
-
+  background-color: rgb(248, 233, 220) !important;
 }
 
 .mat-mdc-dialog-container .mat-mdc-dialog-title {
@@ -455,97 +446,109 @@ tr.element-row:not(.expanded-row):active {
 }
 
 table {
-    width: 100%;
-  }
-  
-  tr.detail-row {
-    height: 0;
-  }
-  
-  tr.element-row:not(.example-expanded-row):hover {
-    background: whitesmoke;
-  }
-  
-  tr.element-row:not(.example-expanded-row):active {
-    background: #efefef;
-  }
-  
-  .element-row td {
-    border-bottom-width: 0;
-  }
-  
-  .element-detail {
-    overflow: hidden;
-    display: flex;
-  }
-  
-  .element-symbol {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: normal;
-  }
-  
-  .text-justify {
-    text-align: justify;
-  }
-  
-  .element-description-attribution {
-    opacity: 0.5;
-  }
-  
-  .cartao {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .divisao-filtro {
-    padding: 16px;
-    width: 30%;
-  }
-  
-  .divisao-tabela {
-    padding: 16px;
-    width: 70%;
-  }
+  width: 100%;
+}
 
-  .mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
-    background-color: white;
-  }
+tr.detail-row {
+  height: 0;
+}
 
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    margin: 1% !important;
-    max-width: 98% !important;
-  }
+tr.element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
 
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl .container-ficha {
-    margin: 1% !important;
-    max-width: 98% !important;
-  }
+tr.element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
 
-  mat-row:nth-child(even) {
-    background-color: rgb(204, 204, 204)  !important; /* Cinza claro */
-  }
-  
-  mat-row:nth-child(odd) {
-    background-color: #ffffff !important; /* Branco */
-  }
+.element-row td {
+  border-bottom-width: 0;
+}
 
-  .mat-mdc-table tr:nth-child(even) {
-    background-color: rgb(204, 204, 204) !important;
-  }
-  
-  .mat-mdc-table tr:nth-child(odd) {
-    background-color: #ffffff !important;
-  }
+.element-detail {
+  overflow: hidden;
+  display: flex;
+}
 
-  .mat-mdc-table th {
-    background-color: rgb(204, 204, 204) !important;
-  }
+.element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
 
-  .custom-dialog-container {
-    display: flex !important;
-    // align-items: center !important;
-    // justify-content: center !important;
-  }
+.text-justify {
+  text-align: justify;
+}
+
+.element-description-attribution {
+  opacity: 0.5;
+}
+
+.cartao {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.divisao-filtro {
+  padding: 16px;
+  width: 30%;
+}
+
+.divisao-tabela {
+  padding: 16px;
+  width: 70%;
+}
+
+.mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
+  background-color: white;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  margin: 1% !important;
+  max-width: 98% !important;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl .container-ficha {
+  margin: 1% !important;
+  max-width: 98% !important;
+}
+
+mat-row:nth-child(even) {
+  background-color: rgb(204, 204, 204) !important; /* Cinza claro */
+}
+
+mat-row:nth-child(odd) {
+  background-color: #ffffff !important; /* Branco */
+}
+
+.mat-mdc-table tr:nth-child(even) {
+  background-color: rgb(204, 204, 204) !important;
+}
+
+.mat-mdc-table tr:nth-child(odd) {
+  background-color: #ffffff !important;
+}
+
+.mat-mdc-table th {
+  background-color: rgb(204, 204, 204) !important;
+}
+
+.custom-dialog-container {
+  display: flex !important;
+  // align-items: center !important;
+  // justify-content: center !important;
+}

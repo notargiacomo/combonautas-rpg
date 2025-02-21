@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import {
   FormArray,
   FormBuilder,
@@ -7,7 +7,6 @@ import {
   FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
-import { Origem } from '../../model/origem';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
@@ -25,7 +24,7 @@ import { ClasseService } from '../../service/classe.service';
 import {MatTabsModule} from '@angular/material/tabs';
 
 @Component({
-  selector: 'app-origens',
+  selector: 'app-classes',
   imports: [
     MatTableModule,
     MatButtonModule,
@@ -61,7 +60,7 @@ export class ClassesComponent implements OnInit {
   referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
-  expandedElement!: Origem | null;
+  expandedElement!: Classe | null;
   numero_registros=0;
 
   constructor(
@@ -112,4 +111,14 @@ export class ClassesComponent implements OnInit {
       },
     });
   }
+
+      /**
+       *
+       * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - CLASSE
+       *
+       */
+    
+      @Input() classeSelecionada?: Classe;
+      @Input() seVeioFicha: boolean = false;
+      @Output() classeSelecionadaChange = new EventEmitter<Classe>();
 }
