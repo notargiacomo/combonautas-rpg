@@ -7,6 +7,11 @@
           <hr />
         </div>
       </div>
+      <div class="row">
+        <label id="radio-radio-tipo-criatura"
+          ><b>Tipo de Poder</b></label
+        >
+      </div>
       <form [formGroup]="form">
         <div class="row">
           <div class="col-sm-12">
@@ -17,7 +22,12 @@
           </div>
         </div>
         <div class="row" *ngIf="seExibeDeuses()">
-          <div class="col-sm-12 mt-4">
+          <label id="radio-radio-tipo-criatura"
+            ><b>Deuses</b></label
+          >
+        </div>
+        <div class="row" *ngIf="seExibeDeuses()">
+          <div class="col-sm-12">
             <mat-radio-group title="Deuses" formControlName="id_deuses" (change)="consultar($event.value)"
               aria-labelledby="radio-deus">
               @for (deus of deuses; track deus) {

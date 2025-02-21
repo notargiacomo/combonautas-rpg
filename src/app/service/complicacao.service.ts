@@ -21,7 +21,6 @@ export class ComplicacaoService extends AbstractService{
           resultado.forEach((complicacao) => {
             this.classeService.getbyId(complicacao.classe?.id).subscribe({
               next: (classe) => {
-                debugger
                 complicacao.classe = classe
               }
             });

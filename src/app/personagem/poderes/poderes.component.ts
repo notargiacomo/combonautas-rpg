@@ -102,7 +102,9 @@ export class PoderesComponent {
   }
 
   consultar(event: any) {
-    console.log(this.form.value);
+    if(this.form.value.tipo !== TipoPoder.CONCEDIDO){
+      this.form.value.id_deuses = null;
+    }
     let filtro = this.form.value;
     if (filtro.nome) {
       // regex - in-memory-web-api
