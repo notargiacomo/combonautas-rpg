@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { OrigemService } from '../../service/origem.service';
 import {
   FormArray,
@@ -63,7 +63,8 @@ export class OrigensComponent implements OnInit {
 
   constructor(
     private readonly origemService: OrigemService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit() {
@@ -76,6 +77,7 @@ export class OrigensComponent implements OnInit {
       next: (response) => {
         this.origens = response;
         this.numero_registros = response.length;
+        this.cdr.detectChanges();
       },
       error: (response) => {
         console.log(response);

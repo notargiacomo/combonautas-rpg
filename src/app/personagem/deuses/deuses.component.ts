@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
@@ -57,6 +57,7 @@ export class DeusesComponent implements OnInit {
   constructor(
     private readonly deusService: DeusService,
     private fb: FormBuilder,
+    private cdr: ChangeDetectorRef
 
   ) {}
 
@@ -69,6 +70,7 @@ export class DeusesComponent implements OnInit {
       next: (response) => {
         this.deuses = response;
         this.numero_registros = response.length;
+        this.cdr.detectChanges();
       },
       error: (response) => {
         console.log(response);

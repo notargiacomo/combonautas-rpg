@@ -106,7 +106,7 @@ b {
     font-family: "Oswald" !important;
     font-size: 12pt !important;
   }
-  width: 500px !important;
+  width: 300px !important;
 }
 
 .mat-mdc-option {
@@ -405,8 +405,8 @@ tr.element-row:not(.expanded-row):active {
 }
 
 .mat-mdc-dialog-surface b {
-  color: black !important;
-  font-family: "Oswald" !important;
+  color: black ;
+  font-family: "Oswald" ;
 }
 
 .mat-mdc-dialog-container .card-padrao {
@@ -446,7 +446,8 @@ tr.element-row:not(.expanded-row):active {
 }
 
 table {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 tr.detail-row {
@@ -551,4 +552,8 @@ mat-row:nth-child(odd) {
   display: flex !important;
   // align-items: center !important;
   // justify-content: center !important;
+}
+
+.mat-mdc-form-field-infix{
+  width: 150px !important;
 }

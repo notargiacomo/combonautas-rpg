@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Input, Output } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -54,7 +54,8 @@ export class PoderesComponent {
   constructor(
     private readonly service: PoderService,
     private readonly serviceDeus: DeusService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit() {
@@ -77,6 +78,7 @@ export class PoderesComponent {
       next: (response) => {
         this.poderes_combate = response;
         this.numero_registros_combate = response.length;
+        this.cdr.detectChanges();
       },
       error: (response) => {
         console.log(response);

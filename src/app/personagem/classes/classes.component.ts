@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import {
   FormArray,
   FormBuilder,
@@ -65,7 +65,8 @@ export class ClassesComponent implements OnInit {
 
   constructor(
     private readonly classeService: ClasseService,
-    private fb: FormBuilder
+    private fb: FormBuilder, 
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit() {
@@ -78,6 +79,7 @@ export class ClassesComponent implements OnInit {
       next: (response) => {
         this.classes = response;
         this.numero_registros = response.length;
+        this.cdr.detectChanges();
       },
       error: (response) => {
         console.log(response);
