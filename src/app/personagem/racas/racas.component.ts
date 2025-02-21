@@ -9,10 +9,10 @@ import { NgFor, NgIf } from '@angular/common';
 import {
   ChangeDetectorRef,
   Component,
+  EventEmitter,
   Input,
   OnInit,
   Output,
-  EventEmitter,
 } from '@angular/core';
 import {
   FormArray,
@@ -31,19 +31,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { AcrecimoAtributo } from '../../enum/acrecimo.atributo.enum';
+import { Atributo } from '../../enum/atributo.enum';
+import { DecrecimoAtributo } from '../../enum/decrecimo.atributo.enum';
 import { Deslocamento } from '../../enum/deslocamento.enum';
+import { OpcoesSelecao } from '../../enum/opcoes.selecao';
 import { Referencia } from '../../enum/referencia.enum';
 import { Sentido } from '../../enum/sentido.enum';
-import { Raca } from '../../model/raca';
-import { RacaService } from '../../service/raca.service';
-import { Atributo } from '../../enum/atributo.enum';
-import { OpcoesSelecao } from '../../enum/opcoes.selecao';
-import { AcrecimoAtributo } from '../../enum/acrecimo.atributo.enum';
-import { DecrecimoAtributo } from '../../enum/decrecimo.atributo.enum';
-import { PoderService } from '../../service/poder.service';
 import { Poder } from '../../model/poder';
-import { MatTabsModule } from '@angular/material/tabs';
-import { PoderesComponent } from "../poderes/poderes.component";
+import { Raca } from '../../model/raca';
+import { PoderService } from '../../service/poder.service';
+import { RacaService } from '../../service/raca.service';
 
 @Component({
   selector: 'app-racas',

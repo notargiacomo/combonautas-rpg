@@ -1,5 +1,12 @@
 import { NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -18,6 +25,11 @@ import { Deus } from '../../model/deus';
 import { MatRadioModule } from '@angular/material/radio';
 import { DeusService } from '../../service/deus.service';
 import { MatButtonModule } from '@angular/material/button';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-poderes',
@@ -25,31 +37,37 @@ import { MatButtonModule } from '@angular/material/button';
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
-    NgFor, //NgIf,
+    NgFor,
+    NgIf,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
     MatRadioModule,
-    MatButtonModule
+    MatButtonModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatIconModule,
   ],
   templateUrl: './poderes.component.html',
   styleUrl: './poderes.component.scss',
 })
 export class PoderesComponent {
-  poderes_combate!: Poder[];
-  poderes_destino!: Poder[];
-  poderes_magia!: Poder[];
-  poderes_concedido!: Poder[];
-  poderes_tormenta!: Poder[];
+  objeto: Poder | undefined;
+  objetos!: Poder[];
   form!: FormGroup;
-  numero_registros_combate = 0;
-  numero_registros_concedido = 0;
-  numero_registros_magia = 0;
-  numero_registros_destino = 0;
-  numero_registros_tormenta = 0;
+  numero_registros = 0;
   deuses: Deus[] = [];
+  dataSource = new MatTableDataSource<Poder>();
+  displayedColumns: string[] = ['nome', 'tipo', 'acao'];
+  tipos = Object.values(TipoPoder);
 
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+
+  @ViewChild(MatSort)
+  sort!: MatSort;
 
   constructor(
     private readonly service: PoderService,
@@ -58,8 +76,21 @@ export class PoderesComponent {
     private cdr: ChangeDetectorRef
   ) {}
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
 
+  ngOnInit() {
+    this.form = this.fb.group({
+      nome: [],
+      tipo: [],
+      id_deuses: [],
+    });
+
+    this.consultar(null);
+
+    
     this.serviceDeus.listar(null).subscribe({
       next: (response) => {
         this.deuses = response;
@@ -67,189 +98,101 @@ export class PoderesComponent {
       error: (response) => {
         console.log(response);
       },
-    });;
-
-    this.form = this.fb.group({
-      nome: [],
-      id_deuses: []
-    });
-
-    this.service.listar({tipo: TipoPoder.COMBATE}).subscribe({
-      next: (response) => {
-        this.poderes_combate = response;
-        this.numero_registros_combate = response.length;
-        this.cdr.detectChanges();
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({tipo: TipoPoder.DESTINO}).subscribe({
-      next: (response) => {
-        this.poderes_destino = response;
-        this.numero_registros_destino = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({tipo: TipoPoder.MAGIA}).subscribe({
-      next: (response) => {
-        this.poderes_magia = response;
-        this.numero_registros_magia = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-
-    this.service.listar({tipo: TipoPoder.CONCEDIDO}).subscribe({
-      next: (response) => {
-        this.poderes_concedido = response;
-        this.numero_registros_concedido = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-    this.service.listar({tipo: TipoPoder.TORMENTA}).subscribe({
-      next: (response) => {
-        this.poderes_tormenta = response;
-        this.numero_registros_tormenta = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
     });
   }
 
-  consultarPoderesCombate() {
+  consultar(event: any) {
     console.log(this.form.value);
     let filtro = this.form.value;
-    filtro.tipo = TipoPoder.COMBATE;
     if (filtro.nome) {
       // regex - in-memory-web-api
       filtro.nome = '^' + filtro.nome;
     }
     this.service.listar(filtro).subscribe({
       next: (response) => {
-        this.poderes_combate = response;
-        this.numero_registros_combate = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-    
-  }
-
-  consultarPoderesDestino() {
-    console.log(this.form.value);
-    let filtro = this.form.value;
-    filtro.tipo = TipoPoder.DESTINO;
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.poderes_destino = response;
-        this.numero_registros_destino = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-    
-  }
-
-  consultarPoderesMagia() {
-    console.log(this.form.value);
-    let filtro = this.form.value;
-    filtro.tipo = TipoPoder.MAGIA;
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.poderes_magia = response;
-        this.numero_registros_magia = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-    
-  }
-
-  selecaoDeuses(event: any): void {
-    this.consultarPoderesConcedido(event);
-  }
-
-  consultarPoderesConcedido(event: any) {
-    console.log(this.form.value);
-    let filtro = this.form.value;
-    filtro.tipo = TipoPoder.CONCEDIDO;
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.poderes_concedido = response;
-        this.numero_registros_concedido = response.length;
+        response.sort((a, b) => {
+          let nome_a = a.nome ? a.nome : 'a';
+          let nome_b = b.nome ? b.nome : 'b';
+          return nome_a.localeCompare(nome_b);
+        });
+        this.objetos = response;
+        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);
       },
       complete: () => {
-        if(event){
-          let poderes : Poder[] = [];
-          this.poderes_concedido.forEach(
-            (element) => {
-                if(element.id_deuses?.includes(Number(event))) {
-                  poderes.push(element);
-                }
+        if (event) {
+          console.log(event);
+          let poderes: Poder[] = [];
+          this.objetos.forEach((element) => {
+            if (element.id_deuses?.some((id) => id === Number(event))) {
+              poderes.push(element);
             }
-          );
-          this.poderes_concedido = poderes;
-          this.numero_registros_concedido = this.poderes_concedido.length;
+          });
+          this.objetos = poderes;
+          this.numero_registros = this.objetos.length;
         }
-      }
+        this.dataSource = new MatTableDataSource(this.objetos);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+      },
     });
-    
   }
 
-  consultarPoderesTormenta() {
-    console.log(this.form.value);
-    let filtro = this.form.value;
-    filtro.tipo = TipoPoder.TORMENTA;
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
-    this.service.listar(filtro).subscribe({
-      next: (response) => {
-        this.poderes_tormenta = response;
-        this.numero_registros_tormenta = response.length;
-      },
-      error: (response) => {
-        console.log(response);
-      },
-    });
-    
+  seExibeDeuses(){
+    return this.form.value.tipo === TipoPoder.CONCEDIDO;
+  }
+
+  // selecaoDeuses(event: any): void {
+  //   this.consultarPoderesConcedido(event);
+  // }
+
+  // consultarPoderesConcedido(event: any) {
+  //   console.log(this.form.value);
+  //   let filtro = this.form.value;
+  //   filtro.tipo = TipoPoder.CONCEDIDO;
+  //   if (filtro.nome) {
+  //     // regex - in-memory-web-api
+  //     filtro.nome = '^' + filtro.nome;
+  //   }
+  //   this.service.listar(filtro).subscribe({
+  //     next: (response) => {
+  //       this.poderes_concedido = response;
+  //       this.numero_registros_concedido = response.length;
+  //     },
+  //     error: (response) => {
+  //       console.log(response);
+  //     },
+  //     complete: () => {
+  //       if(event){
+  //         let poderes : Poder[] = [];
+  //         this.poderes_concedido.forEach(
+  //           (element) => {
+  //               if(element.id_deuses?.includes(Number(event))) {
+  //                 poderes.push(element);
+  //               }
+  //           }
+  //         );
+  //         this.poderes_concedido = poderes;
+  //         this.numero_registros_concedido = this.poderes_concedido.length;
+  //       }
+  //     }
+  //   });
+
+  // }
+
+  seleciona(objeto: Poder) {
+    this.objeto = objeto;
   }
 
   limparFiltros() {
     this.form.reset();
-    this.consultarPoderesConcedido(null);
+    this.consultar(null);
   }
 
   nomeDeuses(deuses?: Deus[]): string {
-    return  deuses ? deuses.map(deus => deus.nome).join(' ') : '';
+    return deuses ? deuses.map((deus) => deus.nome).join(' ') : '';
   }
 
   /**
@@ -261,6 +204,4 @@ export class PoderesComponent {
   @Input() poderSelecionado?: Poder;
   @Input() seVeioFicha: boolean = false;
   @Output() poderSelecionadoChange = new EventEmitter<Poder>();
-
-
 }
