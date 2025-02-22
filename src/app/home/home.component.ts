@@ -19,7 +19,7 @@ import { BalaoInterativoPadraoComponent } from '../components/caixa-informativa/
 import { Atributo } from '../enum/atributo.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { Pericia } from '../model/pericia';
-import { Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
+import { Equipamento, Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
 
@@ -64,16 +64,15 @@ export class HomeComponent {
   tamanhos = Object.values(Tamanho);
   dsPericias = new MatTableDataSource<PericiaPersonagem>();
 
-  displayedColumnsEmpunhados: string[] = ['equipamento', 'formula', 'acao'];
+  expandedElementEmpunhados!: Equipamento | null;
+  displayedColumnsEmpunhados: string[] = ['nome', 'formula'];
+  displayedColumnsWithExpandEmpunhados = [...this.displayedColumnsEmpunhados, 'expand'];
+  isExpandedRowEmpunhados = (index: number, row: any) => row === this.expandedElementEmpunhados;
+  
   displayedColumnsVestido: string[] = ['equipamento', 'formula'];
-  displayedColumnsCarregados: string[] = [
-    'equipamento',
-    'quantidade',
-    'espaco',
-  ];
+  displayedColumnsCarregados: string[] = ['equipamento','quantidade','espaco'];
   displayedColumnsItens: string[] = ['item', 'descricao'];
   displayedColumnsPoderes: string[] = ['nome', 'tipo', 'acoes'];
-
 
   expandedElementPericia!: PericiaPersonagem | null;
   columnsToDisplayPericia: string[] = ['pericia', 'total', 'atributo', 'outros'];

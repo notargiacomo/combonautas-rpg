@@ -1,6 +1,7 @@
 import { Atributo } from '../enum/atributo.enum';
 import { Chave } from '../enum/chave.enum';
 import { Proficiencia } from '../enum/proficiencia.enum';
+import { Regras } from '../enum/regras.enum';
 import { Sentido } from '../enum/sentido.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { Item } from './item';
@@ -559,9 +560,28 @@ export class Equipamento {
   espaco?:number;
   descricao?:string;
   item?: Item;
+  bonus_permanente?: {
+    origem?: string;
+    bonus: number;
+  } [];
+  bonus_condicional_permanente?: {
+    origem?: string;
+    bonus?: number;
+    condicao?: string[];
+    ativo?:boolean;
+  } []
+
   constructor(item: Item) {
     this.item = item;
     this.nome = item.nome;
+  }
+
+  public ativaDesativaBonusCondicionalPermanente?(bonus: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}){
+    this.bonus_condicional_permanente?.forEach(element => {
+      if(bonus === element){
+        element.ativo = !element.ativo;
+      }
+    });
   }
 }
 
@@ -608,14 +628,21 @@ export class Posse {
   moedas_prata?: number;
   moedas_ouro?: number;
   moedas_plantina?: number;
-  instrucoes?: string[];
 
   constructor(private mediator: Personagem){
     this.atualizaPosses(mediator);
   }
 
+  adicionarEquipamentoEmpunhado(equipamento: Equipamento){
+    if(!this.equipamentos_empunhados![0].item){
+      this.equipamentos_empunhados![0] = equipamento;
+    } else if(!this.equipamentos_empunhados![1].item){
+      this.equipamentos_empunhados![1] = equipamento;
+    } else {}
+  }
+
   public atualizaPosses(mediator: Personagem) {
-    this.equipamentos_empunhados = [{ nome: 'Mão Direita', descricao: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2` }, { nome: 'Mão Esquerda', descricao: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2` }];
+    this.equipamentos_empunhados = [{ nome: 'Mão Direita', formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, descricao: Regras.ATAQUES_DESARMADOS }, { nome: 'Mão Esquerda', formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, descricao: Regras.ATAQUES_DESARMADOS }];
     this.equipamentos_vestidos = [{}, {}, {}, {}];
     this.numero_itens_vestidos_maximo = 4;
     this.total_carga = 0;
