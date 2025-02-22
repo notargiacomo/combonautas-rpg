@@ -453,6 +453,10 @@ export class PericiaPersonagem {
     this.total = this.atributo_selecionado + Math.floor(nivel/2) + this.outros + (this.treinado ? this.bonus_treinado : 0);
   }
 
+  rolarDado(){
+    alert('Rolou o dado');
+  }
+
   getBonusNivel(){
     return Math.floor(Number(this.nivel!)/2);
   }

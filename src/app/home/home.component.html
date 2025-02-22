@@ -1042,6 +1042,7 @@
                         &nbsp;
                       </th>
                       <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
+                          <img src="assets/img/d20.png" class="img-dado" (click)="element.rolarDado()"/>
                         <button mat-icon-button aria-label="expand row" (click)="
                           expandedElementPericia = expandedElementPericia === element ? null : element;
                           $event.stopPropagation()
@@ -1154,7 +1155,7 @@
                     </ng-container>
                     <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpandPericia"></tr>
                     <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpandPericia" class="element-row"
-                      [class.expanded-row]="expandedElementPericia === element" (click)="expandedElementPericia = expandedElementPericia === element ? null : element"></tr>
+                      [class.expanded-row]="expandedElementPericia === element"></tr>
                     <tr mat-row *matRowDef="let row; columns: ['expandedDetail']; when: !isExpandedRowPericia"
                       class="detail-row"></tr>
                   </table>
