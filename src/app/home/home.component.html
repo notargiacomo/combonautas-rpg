@@ -1,4 +1,4 @@
-<div class="container py-4">
+<div class="container">
   <div class="row" style="min-height: 500px !important">
     <!-- <div class="col-sm-3">
       <mat-card class="card-padrao" style="min-height: 500px !important">
@@ -13,54 +13,91 @@
     <div class="col-sm-12">
       <mat-card class="card-padrao" style="min-height: 500px !important">
         <div class="row">
-          <div class="col-sm-8">
-            <h5><b>FICHA DO PERSONAGEM: </b></h5>
-          </div>
-          <div class="col-sm-2 d-flex justify-content-end">
-            <b>{{ "NÍVEL: " + personagem.nivel }}</b>
-          </div>
-          <div class="col-sm-2 d-flex justify-content-end">
-            <b>{{ "PONTOS: " + personagem.pontos }}</b>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <hr />
-          </div>
-        </div>
-        <div class="row">
           <div class="col-sm-2">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/icon_sheet.png" alt="Avatar" class="rounded-circle imagem-ficha" width="50"
-                height="50" />
+            <div class="row">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/icon_sheet.png" alt="Avatar" class="rounded-circle imagem-ficha" width="50"
+                  height="50" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 mt-1 d-flex justify-content-center">
+                <b>{{ "PONTOS: " + personagem.pontos }}</b>
+              </div>
             </div>
           </div>
 
-          <div class="col-sm-2 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA', 1)">
-              <!-- <img *ngIf="personagem.raca" [src]="personagem.raca.imagem" [alt]="personagem.raca.nome" style="width: 100px !important; height: 100px !important;" /> -->
-              <b style="color: white !important">{{
-                personagem.raca
-                ? personagem.raca?.nome?.toLocaleUpperCase()
-                : "RAÇA"
-                }}</b>
-            </button>
+          <div class="col-sm-10">
+            <div class="row">
+              <div class="col-sm-2">
+                <h5 class="mt-2"><b>JOGADOR: </b></h5>
+              </div>
+              <div class="col-sm-4">
+                <input class="col-sm-4 m-1 vida-mana-defesa" size="1" [value]="" style="width: 100% !important;" />
+              </div>
+              <div class="col-sm-3 d-flex">
+                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('RAÇA', 1)">
+                  <!-- <img *ngIf="personagem.raca" [src]="personagem.raca.imagem" [alt]="personagem.raca.nome" style="width: 100px !important; height: 100px !important;" /> -->
+                  <b style="color: white !important">{{
+                    personagem.raca
+                    ? personagem.raca?.nome?.toLocaleUpperCase()
+                    : "RAÇA:"
+                    }}</b>
+                </button>
+              </div>
+              <div class="col-sm-3 d-flex">
+                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('ORIGEM', 5)">
+                  <b style="color: white !important">ORIGEM:</b>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2">
+                <h5 class="mt-2"><b>PERSONAGEM: </b></h5>
+              </div>
+              <div class="col-sm-4">
+                <input class="col-sm-4 m-1 vida-mana-defesa" size="1" [value]="" style="width: 100% !important;" />
+              </div>
+              <div class="col-sm-3 d-flex">
+                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('DEUS', 7)">
+                  <b style="color: white !important">DIVINDADE:</b>
+                </button>
+              </div>
+              <div class="col-sm-3 d-flex">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h5 class="mt-2"><b>NÍVEL: </b></h5>
+                  </div>
+                  <div class="col-sm-2 mt-1 mr-0">
+                    <button (click)="personagem.diminuirNivel()" [disabled]="personagem.nivel === 1" class="vida-mana-defesa">-</button>
+                  </div>
+                  <div class="col-sm-4 p-0">
+                    <input class="col-sm-4 m-1 vida-mana-defesa" size="2" [value]="personagem.nivel" style="width: 100% !important;" />
+                  </div>
+                  <div class="col-sm-2 mt-1 ml-0">
+                    <button (click)="personagem.aumentarNivel()" [disabled]="personagem.nivel === 20" class="vida-mana-defesa">+</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-sm-2 d-flex">
+                <h5 class="mt-2"><b>CLASSES: </b></h5>
+              </div>
+              <div class="col-sm-9 d-flex">
+                <input class="col-sm-4 m-1 vida-mana-defesa" size="1" [value]="" style="width: 100% !important;" disabled/>
+              </div>
+              <div class="col-sm-1 d-flex">
+                <button class="btn btn-sm botao-ficha" (click)="openDialog('CLASSE', 6)">
+                  <b style="color: white !important">+</b>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-2 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('ORIGEM', 5)">
-              <b style="color: white !important">ORIGEM:</b>
-            </button>
-          </div>
-          <div class="col-sm-4 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('CLASSE', 6)">
-              <b style="color: white !important">CLASSES:</b>
-            </button>
-          </div>
-          <div class="col-sm-2 d-flex">
-            <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" (click)="openDialog('DEUS', 7)">
-              <b style="color: white !important">DIVINDADE:</b>
-            </button>
-          </div>
+
+
+
         </div>
         <div class="row">
           <div class="col-sm-12">
@@ -488,7 +525,8 @@
                                   <b> EQUIPAMENTOS EMPUNHADOS </b>
                                 </div>
                                 <div class="col-sm-2 d-flex justify-content-end">
-                                  <span class="material-symbols-outlined" (click)="openDialog('ITENS: EQUIPAMENTOS EMPUNHADOS', 2)">
+                                  <span class="material-symbols-outlined"
+                                    (click)="openDialog('ITENS: EQUIPAMENTOS EMPUNHADOS', 2)">
                                     <mat-icon>shopping_cart</mat-icon>
                                   </span>
                                 </div>
@@ -498,8 +536,8 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.posse!.equipamentos_empunhados ?? []" multiTemplateDataRows
-                            class="mat-elevation-z8">
+                          <table mat-table [dataSource]="personagem.posse!.equipamentos_empunhados ?? []"
+                            multiTemplateDataRows class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
                                 mat-sort-header>
@@ -545,7 +583,8 @@
                                   <b> EQUIPAMENTOS VESTIDOS </b>
                                 </div>
                                 <div class="col-sm-2 d-flex justify-content-end">
-                                  <span class="material-symbols-outlined" (click)="openDialog('ITENS: EQUIPAMENTOS VESTIDOS', 2)">
+                                  <span class="material-symbols-outlined"
+                                    (click)="openDialog('ITENS: EQUIPAMENTOS VESTIDOS', 2)">
                                     <mat-icon>shopping_cart</mat-icon>
                                   </span>
                                 </div>
@@ -555,8 +594,8 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.posse!.equipamentos_vestidos ?? []" multiTemplateDataRows
-                            class="mat-elevation-z8">
+                          <table mat-table [dataSource]="personagem.posse!.equipamentos_vestidos ?? []"
+                            multiTemplateDataRows class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
                                 mat-sort-header>
@@ -597,16 +636,17 @@
                         <mat-expansion-panel-header style="padding-left: 8px !important">
                           <mat-panel-title>
                             <div class="container">
-                                <div class="row">
-                                  <div class="col-sm-10">
-                                    <b> EQUIPAMENTOS CARREGADOS </b>
-                                  </div>
-                                  <div class="col-sm-2 d-flex justify-content-end">
-                                    <span class="material-symbols-outlined" (click)="openDialog('ITENS: EQUIPAMENTOS CARREGADOS', 2)">
-                                      <mat-icon>shopping_cart</mat-icon>
-                                    </span>
-                                  </div>
+                              <div class="row">
+                                <div class="col-sm-10">
+                                  <b> EQUIPAMENTOS CARREGADOS </b>
                                 </div>
+                                <div class="col-sm-2 d-flex justify-content-end">
+                                  <span class="material-symbols-outlined"
+                                    (click)="openDialog('ITENS: EQUIPAMENTOS CARREGADOS', 2)">
+                                    <mat-icon>shopping_cart</mat-icon>
+                                  </span>
+                                </div>
+                              </div>
                               <div class="row">
                                 <div class="col-sm-12">
                                   <hr>
@@ -614,7 +654,8 @@
                               </div>
                               <div class="row">
                                 <div class="col-sm-6">
-                                  {{ "LIMITE DE CARGA: "+ personagem.posse!.carga_atual + " / " + (personagem.posse!.total_carga!*2)
+                                  {{ "LIMITE DE CARGA: "+ personagem.posse!.carga_atual + " / " +
+                                  (personagem.posse!.total_carga!*2)
                                   }}
                                   <section class="example-section">
                                     <mat-progress-bar class="example-margin" mode="determinate"
@@ -685,8 +726,8 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.posse!.equipamentos_carregados ?? []" multiTemplateDataRows
-                            class="mat-elevation-z8">
+                          <table mat-table [dataSource]="personagem.posse!.equipamentos_carregados ?? []"
+                            multiTemplateDataRows class="mat-elevation-z8">
                             <ng-container matColumnDef="equipamento" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
                                 mat-sort-header>
@@ -740,7 +781,8 @@
                                   <b> OUTROS ITENS </b>
                                 </div>
                                 <div class="col-sm-2 d-flex justify-content-end">
-                                  <span class="material-symbols-outlined" (click)="openDialog('ITENS: OUTROS ITENS', 2)">
+                                  <span class="material-symbols-outlined"
+                                    (click)="openDialog('ITENS: OUTROS ITENS', 2)">
                                     <mat-icon>shopping_cart</mat-icon>
                                   </span>
                                 </div>
@@ -993,7 +1035,7 @@
                               </div>
                               <div class="col-sm-2 d-flex justify-content-end">
                                 <span class="material-symbols-outlined" (click)="openDialog('MAGIAS', 3)">
-                                  <mat-icon>thunderstorm</mat-icon> 
+                                  <mat-icon>thunderstorm</mat-icon>
                                 </span>
                               </div>
                             </div>
@@ -1031,18 +1073,22 @@
                   <table mat-table [dataSource]="dsPericias" multiTemplateDataRows class="mat-elevation-z8 full-width">
                     @for (column of columnsToDisplayPericia; track column) {
                     <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
-                      <th class="pericia" mat-header-cell *matHeaderCellDef style="text-transform: uppercase; padding-left: 2% !important">
+                      <th class="pericia" mat-header-cell *matHeaderCellDef
+                        style="text-transform: uppercase; padding-left: 2% !important">
                         {{ column }}
                       </th>
-                      <td style="padding-left: 2% !important" [class]="element[column].length > 2 ? 'pericia':'pericia-valor'" mat-cell *matCellDef="let element">{{ element[column] }}</td>
+                      <td style="padding-left: 2% !important"
+                        [class]="element[column].length > 2 ? 'pericia':'pericia-valor'" mat-cell
+                        *matCellDef="let element">{{ element[column] }}</td>
                     </ng-container>
                     }
                     <ng-container matColumnDef="expand">
-                      <th mat-header-cell *matHeaderCellDef aria-label="row actions" class="pericia" style="padding-left: 2% !important">
+                      <th mat-header-cell *matHeaderCellDef aria-label="row actions" class="pericia"
+                        style="padding-left: 2% !important">
                         &nbsp;
                       </th>
                       <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
-                          <img src="assets/img/d20.png" class="img-dado" (click)="element.rolarDado()"/>
+                        <img src="assets/img/d20.png" class="img-dado" (click)="element.rolarDado()" />
                         <button mat-icon-button aria-label="expand row" (click)="
                           expandedElementPericia = expandedElementPericia === element ? null : element;
                           $event.stopPropagation()
@@ -1056,100 +1102,102 @@
                       </td>
                     </ng-container>
                     <ng-container matColumnDef="expandedDetail">
-                      <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpandPericia.length">
+                      <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element"
+                        [attr.colspan]="columnsToDisplayWithExpandPericia.length">
                         <div class="container celement-detail" [@detailExpand]="
                           element == expandedElementPericia ? 'expanded' : 'collapsed'
                         ">
-                        <mat-tab-group>
-                          <mat-tab label="Estatística">
-                            <div class="container">
-                            <div class="row" style="line-height: 250% !important;">
-                              <div class="col-sm-12">
-                                <label>Treinado:</label>
-                                  <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado" style="margin: 1px !important;"
-                                    (change)="element.checkTreinamento($event.checked, personagem)">
-                                  </mat-checkbox>
+                          <mat-tab-group>
+                            <mat-tab label="Estatística">
+                              <div class="container">
+                                <div class="row" style="line-height: 250% !important;">
+                                  <div class="col-sm-12">
+                                    <label>Treinado:</label>
+                                    <mat-checkbox [disabled]="seDesabilitaCheck(element)" name="treinado"
+                                      style="margin: 1px !important;"
+                                      (change)="element.checkTreinamento($event.checked, personagem)">
+                                    </mat-checkbox>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <hr style="margin: 5px !important;" />
+                                  </div>
+                                </div>
+                                <div class="row" style="line-height: 250% !important;">
+                                  <div class="col-sm-5">
+                                    <label>Treinamento:</label>
+                                  </div>
+                                  <div class="col-sm-1">
+                                    {{ element.treinado ? personagem.nivel! >= 7 ? 4 : personagem.nivel! >= 15 ? 6: 2 :
+                                    0}}
+                                  </div>
+                                </div>
+                                <div class="row" style="line-height: 250% !important;">
+                                  <div class="col-sm-5">
+                                    Nível:
+                                  </div>
+                                  <div class="col-sm-1">
+                                    {{ element.getBonusNivel() }}
+                                  </div>
+                                </div>
+                                <div class="row" style="line-height: 250% !important;">
+                                  <div class="col-sm-5">
+                                    Atributo:
+                                  </div>
+                                  <div class="col-sm-1">
+                                    {{ element.atributo }}
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <mat-select class="vida-mana-defesa" style="font-size: 12pt 
+                                !important"
+                                      (selectionChange)="element.recalculaPericia(personagem.recuperaValorAtributo($event.value))"
+                                      [(value)]="element.atributo_selecionado_descricao">
+                                      @for (atributo of atributos; track atributo) {
+                                      <mat-option [value]="atributo">
+                                        {{ atributo }}
+                                      </mat-option>
+                                      }
+                                    </mat-select>
+                                  </div>
+                                </div>
+                                <div class="row" *ngFor="let bonus of element.bonus_condicional_permanente"
+                                  style="line-height: 250% !important;">
+                                  <div class="col-sm-5">
+                                    Bônus de Poder:
+                                  </div>
+                                  <div class="col-sm-1">
+                                    {{ bonus.bonus }}
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <mat-checkbox name="treinado" style="margin: 1px !important;"
+                                      [(ngModel)]="element.ativo"
+                                      (change)="element.ativaDesativaBonusCondicionalPermanente(bonus)">
+                                    </mat-checkbox>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    {{ bonus.condicao.join(", ") }}
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <hr style="margin: 5px !important;" />
+                                  </div>
+                                </div>
+                                <div class="row" style="line-height: 250% !important;">
+                                  <div class="col-sm-5">
+                                    Total:
+                                  </div>
+                                  <div class="col-sm-1">
+                                    {{ element.total }}
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <hr style="margin: 5px !important;"/>
-                              </div>
-                            </div>
-                            <div class="row" style="line-height: 250% !important;">
-                              <div class="col-sm-5" >
-                                <label>Treinamento:</label>
-                              </div>
-                              <div class="col-sm-1">
-                                {{ element.treinado ? personagem.nivel! >= 7 ? 4 : personagem.nivel! >= 15 ? 6: 2 : 0}}
-                              </div>
-                            </div>
-                            <div class="row" style="line-height: 250% !important;">
-                              <div class="col-sm-5">
-                                Nível: 
-                              </div>
-                              <div class="col-sm-1">
-                                {{ element.getBonusNivel() }}
-                              </div>
-                            </div>
-                            <div class="row" style="line-height: 250% !important;">
-                              <div class="col-sm-5">
-                                Atributo: 
-                              </div>
-                              <div class="col-sm-1">
-                                {{ element.atributo }}
-                              </div>
-                              <div class="col-sm-6">
-                                <mat-select class="vida-mana-defesa" style="font-size: 12pt 
-                                !important" (selectionChange)="element.recalculaPericia(personagem.recuperaValorAtributo($event.value))" [(value)]="element.atributo_selecionado_descricao">
-                                  @for (atributo of atributos; track atributo) {
-                                    <mat-option 
-                                      [value]="atributo">
-                                      {{ atributo }}
-                                    </mat-option>
-                                  }
-                                </mat-select>
-                              </div>
-                            </div>
-                            <div class="row" *ngFor="let bonus of element.bonus_condicional_permanente" style="line-height: 250% !important;">
-                              <div class="col-sm-5">
-                                Bônus de Poder: 
-                              </div>
-                              <div class="col-sm-1">
-                                {{ bonus.bonus }}
-                              </div>
-                              <div class="col-sm-2">
-                                <mat-checkbox name="treinado" style="margin: 1px !important;"
-                                  [(ngModel)]="element.ativo"
-                                  (change)="element.ativaDesativaBonusCondicionalPermanente(bonus)">
-                                </mat-checkbox>
-                              </div>
-                              <div class="col-sm-4">
-                                {{ bonus.condicao.join(", ") }}
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <hr style="margin: 5px !important;"/>
-                              </div>
-                            </div>
-                            <div class="row" style="line-height: 250% !important;">
-                              <div class="col-sm-5">
-                                Total: 
-                              </div>
-                              <div class="col-sm-1">
-                                {{ element.total }}
-                              </div>
-                            </div>
-                            </div>
-                          </mat-tab>
-                          <mat-tab label="Descrição">
-                            <div
-                            class="col-sm-12 mt-4 text-justify"
-                            [innerHTML]="element.descricao"
-                            ></div>
-                          </mat-tab>
-                        </mat-tab-group>
+                            </mat-tab>
+                            <mat-tab label="Descrição">
+                              <div class="col-sm-12 mt-4 text-justify" [innerHTML]="element.descricao"></div>
+                            </mat-tab>
+                          </mat-tab-group>
                         </div>
                       </td>
                     </ng-container>

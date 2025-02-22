@@ -48,8 +48,10 @@
   background-position: center !important;
   background-size: cover !important; /* Isso ajusta o zoom para cobrir o círculo */
   border: 5px solid rgb(228, 176, 100) !important;
-  border-radius: 15px !important; /* Bordas arredondadas */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  background-color: transparent; /* Fundo da moldura */
+  padding: 0% !important;
+  margin: 0% !important;
 }
 
 .botao-ficha {
@@ -62,7 +64,7 @@
   cursor: pointer !important;
   color: white !important;
   width: 100% !important;
-  height: 100% !important;
+  height: 80% !important;
   max-height: 200% !important;
   vertical-align: center !important;
   align-self: center !important;

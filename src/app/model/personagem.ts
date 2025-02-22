@@ -245,6 +245,16 @@ export class Personagem {
     this.posse!.recalculaCarga();
   }
 
+  public diminuirNivel(){
+    this.nivel!--;
+    this.recalculaPericias();
+  }
+
+  public aumentarNivel(){
+    this.nivel!++;
+    this.recalculaPericias();
+  }
+
   adicionaBonusTotalVida(bonusTotal: number){
     this.bonus_vida_total = bonusTotal;
     this.recalculaVida();
@@ -487,6 +497,8 @@ export class PericiaPersonagem {
       bonus_permanente_total += bonus.bonus!;
     });
 
+    this.bonus_treinado = this.nivel! >= 15 ? 6 : this.nivel! >= 7 ? 4: 2;
+
     this.total = Number(this.atributo_selecionado) + Math.floor(Number(this.nivel!)/2) + Number(this.outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_permanente_total + bonus_condicional_permanente_total;
   }
 
@@ -506,7 +518,7 @@ export class PericiaPersonagem {
     if(this.treinado){
       personagem.adicionaNumeroPericiasLivres(-1);
 
-      this.bonus_treinado = this.nivel! >= 7 ? 4 : this.nivel! >= 15 ? 6: 2;
+      this.bonus_treinado = this.nivel! >= 15 ? 6 : this.nivel! >= 7 ? 4: 2;
     } else {
       personagem.adicionaNumeroPericiasLivres(1);
     }
