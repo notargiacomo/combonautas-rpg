@@ -111,8 +111,11 @@
                 <mat-card class="card-padrao">
                   <div class="row align-items-center">
                     <div class="col-sm-2">
-                      <div class="row text-center">
-                        <b style="font-size: x-large !important">FOR</b>
+                      <div class="row">
+                        <div class="col-sm-12 text-justify">
+                          <b style="font-size: x-large !important">FOR</b>
+                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                        </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="col-sm-3">
@@ -163,8 +166,11 @@
                       </div>
                     </div>
                     <div class="col-sm-2">
-                      <div class="row text-center">
-                        <b style="font-size: x-large !important">DES</b>
+                      <div class="row">
+                        <div class="col-sm-12 text-justify">
+                          <b style="font-size: x-large !important">DES</b>
+                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                        </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="col-sm-3">
@@ -216,8 +222,11 @@
                       </div>
                     </div>
                     <div class="col-sm-2">
-                      <div class="row text-center">
-                        <b style="font-size: x-large !important">CON</b>
+                      <div class="row">
+                        <div class="col-sm-12 text-justify">
+                          <b style="font-size: x-large !important">CON</b>
+                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                        </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="col-sm-3">
@@ -273,8 +282,11 @@
                       </div>
                     </div>
                     <div class="col-sm-2">
-                      <div class="row text-center">
-                        <b style="font-size: x-large !important">INT</b>
+                      <div class="row">
+                        <div class="col-sm-12 text-justify">
+                          <b style="font-size: x-large !important">INT</b>
+                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                        </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="col-sm-3">
@@ -330,8 +342,11 @@
                       </div>
                     </div>
                     <div class="col-sm-2">
-                      <div class="row text-center">
-                        <b style="font-size: x-large !important">SAB</b>
+                      <div class="row">
+                        <div class="col-sm-12 text-justify">
+                          <b style="font-size: x-large !important">SAB</b>
+                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                        </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="col-sm-3">
@@ -385,8 +400,11 @@
                       </div>
                     </div>
                     <div class="col-sm-2">
-                      <div class="row text-center">
-                        <b style="font-size: x-large !important">CAR</b>
+                      <div class="row">
+                        <div class="col-sm-12 text-justify">
+                          <b style="font-size: x-large !important">CAR</b>
+                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                        </div>
                       </div>
                       <div class="row align-items-center">
                         <div class="col-sm-3">
@@ -506,7 +524,7 @@
                       </select>
                     </div>
                     <input style="font-size: 12pt !important" class="col-sm-3 vida-mana-defesa" size="2"
-                      (change)="personagem.recalculaDefesa()" [(ngModel)]="personagem.defesa_bonus" />
+                      (change)="personagem.atualizaDefesa()" [(ngModel)]="personagem.defesa_bonus" />
                   </div>
                 </mat-card>
               </div>
@@ -551,19 +569,29 @@
                             <ng-container matColumnDef="formula" class="mat-column-treinado">
                               <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
                                 mat-sort-header>
-                                FORMULA
+                                ATAQUE
                               </th>
                               <td style="padding-left: 2% !important" class="pericia" mat-cell
                                 *matCellDef="let element">
-                                {{ element.formula }}
+                                {{ element.descricao }}
+                              </td>
+                            </ng-container>
+                            <ng-container matColumnDef="acao" class="mat-column-treinado">
+                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
+                                mat-sort-header>
+                                AÇÃO
+                              </th>
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
+                                <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 5px !important;margin-left: 10px !important; vertical-align: middle !important;" />
                               </td>
                             </ng-container>
                             <tr mat-header-row *matHeaderRowDef="
-                                displayedColumnsEmpunhadosVestidos
+                                displayedColumnsEmpunhados
                               "></tr>
                             <tr mat-row *matRowDef="
                                 let row;
-                                columns: displayedColumnsEmpunhadosVestidos
+                                columns: displayedColumnsEmpunhados
                               "></tr>
                           </table>
                         </div>
@@ -617,11 +645,11 @@
                               </td>
                             </ng-container>
                             <tr mat-header-row *matHeaderRowDef="
-                                displayedColumnsEmpunhadosVestidos
+                                displayedColumnsVestido
                               "></tr>
                             <tr mat-row *matRowDef="
                                 let row;
-                                columns: displayedColumnsEmpunhadosVestidos
+                                columns: displayedColumnsVestido
                               "></tr>
                           </table>
                         </div>

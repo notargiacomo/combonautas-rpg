@@ -1,14 +1,19 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
-import { Component, inject, Injector } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialog } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 import { Router } from '@angular/router';
 import { BalaoInterativoPadraoComponent } from '../components/caixa-informativa/balao-interativo-padrao.component';
 import { Atributo } from '../enum/atributo.enum';
@@ -17,12 +22,6 @@ import { Pericia } from '../model/pericia';
 import { Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatButtonModule } from '@angular/material/button';
-import { Raca } from '../model/raca';
 
 @Component({
   selector: 'app-home',
@@ -65,7 +64,8 @@ export class HomeComponent {
   tamanhos = Object.values(Tamanho);
   dsPericias = new MatTableDataSource<PericiaPersonagem>();
 
-  displayedColumnsEmpunhadosVestidos: string[] = ['equipamento', 'formula'];
+  displayedColumnsEmpunhados: string[] = ['equipamento', 'formula', 'acao'];
+  displayedColumnsVestido: string[] = ['equipamento', 'formula'];
   displayedColumnsCarregados: string[] = [
     'equipamento',
     'quantidade',
@@ -93,6 +93,7 @@ export class HomeComponent {
       next: (response) => {
         this.pericias = response;
         this.personagem.inicializaPericias(this.pericias);
+        this.personagem.inicializaPosses();
         this.dsPericias = new MatTableDataSource(this.personagem.pericias);
       },
       error: (response) => console.log(response),
