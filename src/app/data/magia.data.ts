@@ -6718,7 +6718,7 @@ export class MagiaData {
         aprimoramentos: [
           {
             id: 1,
-            descricao: `<p><b>+1 PM:</b>muda o alcance para pessoal, o alvo para você, a duração para cena e a resistência para nenhuma. Em vez do normal, seus ataques corpo a corpo passam a acertar inimigos distantes. Seu alcance natural aumenta em 3m; uma criatura Média pode atacar adversários a até 4,5m, por exemplo.</p>`,
+            descricao: `<p><b>+1 PM:</b> muda o alcance para pessoal, o alvo para você, a duração para cena e a resistência para nenhuma. Em vez do normal, seus ataques corpo a corpo passam a acertar inimigos distantes. Seu alcance natural aumenta em 3m; uma criatura Média pode atacar adversários a até 4,5m, por exemplo.</p>`,
             e_aumenta: false,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
