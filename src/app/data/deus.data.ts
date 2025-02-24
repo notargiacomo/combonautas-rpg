@@ -127,7 +127,7 @@ export class DeusData {
       {
         id:11,
         nome: 'Megalokk',
-        nome_arquivo_descricao: 'deus_aharadak_descricao',
+        nome_arquivo_descricao: 'deus_megalokk_descricao',
         nome_arquivo_poderes: 'deus_megalokk_poderes',
         tipo: 'Maior',
         simbolo: 'assets/img/simbolo_deus_megalokk.png',

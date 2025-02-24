@@ -69,13 +69,16 @@
                     <h5 class="mt-2"><b>NÍVEL: </b></h5>
                   </div>
                   <div class="col-sm-2 mt-1 mr-0">
-                    <button (click)="personagem.diminuirNivel()" [disabled]="personagem.nivel === 1" class="vida-mana-defesa">-</button>
+                    <button (click)="personagem.diminuirNivel()" [disabled]="personagem.nivel === 1"
+                      class="vida-mana-defesa">-</button>
                   </div>
                   <div class="col-sm-4 p-0">
-                    <input class="col-sm-4 m-1 vida-mana-defesa" size="2" [value]="personagem.nivel" style="width: 100% !important;" />
+                    <input class="col-sm-4 m-1 vida-mana-defesa" size="2" [value]="personagem.nivel"
+                      style="width: 100% !important;" />
                   </div>
                   <div class="col-sm-2 mt-1 ml-0">
-                    <button (click)="personagem.aumentarNivel()" [disabled]="personagem.nivel === 20" class="vida-mana-defesa">+</button>
+                    <button (click)="personagem.aumentarNivel()" [disabled]="personagem.nivel === 20"
+                      class="vida-mana-defesa">+</button>
                   </div>
 
                 </div>
@@ -86,7 +89,8 @@
                 <h5 class="mt-2"><b>CLASSES: </b></h5>
               </div>
               <div class="col-sm-9 d-flex">
-                <input class="col-sm-4 m-1 vida-mana-defesa" size="1" [value]="" style="width: 100% !important;" disabled/>
+                <input class="col-sm-4 m-1 vida-mana-defesa" size="1" [value]="" style="width: 100% !important;"
+                  disabled />
               </div>
               <div class="col-sm-1 d-flex">
                 <button class="btn btn-sm botao-ficha" (click)="openDialog('CLASSE', 6)">
@@ -114,7 +118,8 @@
                       <div class="row">
                         <div class="col-sm-12 text-justify">
                           <b style="font-size: x-large !important">FOR</b>
-                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                          <img src="assets/img/d20.png" class="img-dado"
+                            style="margin-bottom: 15px !important;margin-left: 10px !important" />
                         </div>
                       </div>
                       <div class="row align-items-center">
@@ -169,7 +174,8 @@
                       <div class="row">
                         <div class="col-sm-12 text-justify">
                           <b style="font-size: x-large !important">DES</b>
-                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                          <img src="assets/img/d20.png" class="img-dado"
+                            style="margin-bottom: 15px !important;margin-left: 10px !important" />
                         </div>
                       </div>
                       <div class="row align-items-center">
@@ -225,7 +231,8 @@
                       <div class="row">
                         <div class="col-sm-12 text-justify">
                           <b style="font-size: x-large !important">CON</b>
-                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                          <img src="assets/img/d20.png" class="img-dado"
+                            style="margin-bottom: 15px !important;margin-left: 10px !important" />
                         </div>
                       </div>
                       <div class="row align-items-center">
@@ -285,7 +292,8 @@
                       <div class="row">
                         <div class="col-sm-12 text-justify">
                           <b style="font-size: x-large !important">INT</b>
-                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                          <img src="assets/img/d20.png" class="img-dado"
+                            style="margin-bottom: 15px !important;margin-left: 10px !important" />
                         </div>
                       </div>
                       <div class="row align-items-center">
@@ -345,7 +353,8 @@
                       <div class="row">
                         <div class="col-sm-12 text-justify">
                           <b style="font-size: x-large !important">SAB</b>
-                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                          <img src="assets/img/d20.png" class="img-dado"
+                            style="margin-bottom: 15px !important;margin-left: 10px !important" />
                         </div>
                       </div>
                       <div class="row align-items-center">
@@ -403,7 +412,8 @@
                       <div class="row">
                         <div class="col-sm-12 text-justify">
                           <b style="font-size: x-large !important">CAR</b>
-                          <img  src="assets/img/d20.png" class="img-dado" style="margin-bottom: 15px !important;margin-left: 10px !important" />
+                          <img src="assets/img/d20.png" class="img-dado"
+                            style="margin-bottom: 15px !important;margin-left: 10px !important" />
                         </div>
                       </div>
                       <div class="row align-items-center">
@@ -557,53 +567,58 @@
                           <table mat-table [dataSource]="personagem.posse!.equipamentos_empunhados ?? []"
                             multiTemplateDataRows class="mat-elevation-z8">
                             @for (column of displayedColumnsEmpunhados; track column) {
-                              <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
-                                <th class="pericia" mat-header-cell *matHeaderCellDef
-                                  style="text-transform: uppercase; padding-left: 2% !important">
-                                  {{ column }}
-                                </th>
-                                <td style="padding-left: 2% !important"
-                                  class="pericia" mat-cell
-                                  *matCellDef="let element">{{ element[column] }}</td>
-                              </ng-container>
-                              }
-                              <ng-container matColumnDef="expand">
-                                <th mat-header-cell *matHeaderCellDef aria-label="row actions" class="pericia"
-                                  style="padding-left: 2% !important">
-                                  &nbsp;
-                                </th>
-                                <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
-                                  <img src="assets/img/d20.png" class="img-dado" (click)="element.rolarDado()" style="margin-bottom: 0px !important; vertical-align: super;" />
-                                  <button mat-icon-button aria-label="expand row" (click)="
+                            <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
+                              <th class="pericia" mat-header-cell *matHeaderCellDef
+                                style="text-transform: uppercase; padding-left: 2% !important">
+                                {{ column }}
+                              </th>
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">{{ element[column] }}</td>
+                            </ng-container>
+                            }
+                            <ng-container matColumnDef="expand">
+                              <th mat-header-cell *matHeaderCellDef aria-label="row actions" class="pericia"
+                                style="padding-left: 2% !important">
+                                &nbsp;
+                              </th>
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell
+                                *matCellDef="let element">
+                                <img src="assets/img/d20.png" class="img-dado" (click)="element.rolarDado()"
+                                  style="margin-bottom: 0px !important; vertical-align: super;" />
+                                <button mat-icon-button aria-label="expand row" (click)="
                                     expandedElementEmpunhados = expandedElementEmpunhados === element ? null : element;
                                     $event.stopPropagation()
                                   ">
-                                    @if (expandedElementEmpunhados === element) {
-                                    <mat-icon>keyboard_arrow_up</mat-icon>
-                                    } @else {
-                                    <mat-icon>keyboard_arrow_down</mat-icon>
-                                    }
-                                  </button>
-                                </td>
-                              </ng-container>
-                              <ng-container matColumnDef="expandedDetail">
-                                <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element"
-                                  [attr.colspan]="columnsToDisplayWithExpandPericia.length">
-                                  <div class="container celement-detail" [@detailExpand]="
+                                  @if (expandedElementEmpunhados === element) {
+                                  <mat-icon>keyboard_arrow_up</mat-icon>
+                                  } @else {
+                                  <mat-icon>keyboard_arrow_down</mat-icon>
+                                  }
+                                </button>
+                              </td>
+                            </ng-container>
+                            <ng-container matColumnDef="expandedDetail">
+                              <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element"
+                                [attr.colspan]="columnsToDisplayWithExpandPericia.length">
+                                <div class="container celement-detail" [@detailExpand]="
                                     element == expandedElementEmpunhados ? 'expanded' : 'collapsed'
                                   ">
-                                    <div class="text-justify" [innerHTML]="element.descricao">
+                                  <mat-tab-group>
+                                    <mat-tab label="Descrição">
+                                      <div class="text-justify" [innerHTML]="element.descricao">
+                                      </div>
+                                    </mat-tab>
+                                    <mat-tab label="Estatísticas">
+                                    </mat-tab>
+                                  </mat-tab-group>
+                                </div>
+                              </td>
+                            </ng-container>
 
-                                    </div>
-                                  </div>
-                                </td>
-                              </ng-container>
-                            
-                              <tr mat-header-row *matHeaderRowDef="displayedColumnsWithExpandEmpunhados"></tr>
-                              <tr mat-row *matRowDef="let element; columns: displayedColumnsWithExpandEmpunhados" class="element-row"
-                                [class.expanded-row]="expandedElementEmpunhados === element"></tr>
-                              <tr mat-row *matRowDef="let row; columns: ['expandedDetail'];"
-                                class="detail-row"></tr>
+                            <tr mat-header-row *matHeaderRowDef="displayedColumnsWithExpandEmpunhados"></tr>
+                            <tr mat-row *matRowDef="let element; columns: displayedColumnsWithExpandEmpunhados"
+                              class="element-row" [class.expanded-row]="expandedElementEmpunhados === element"></tr>
+                            <tr mat-row *matRowDef="let row; columns: ['expandedDetail'];" class="detail-row"></tr>
                           </table>
                         </div>
                       </mat-expansion-panel>
@@ -1243,8 +1258,7 @@
                     <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpandPericia"></tr>
                     <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpandPericia" class="element-row"
                       [class.expanded-row]="expandedElementPericia === element"></tr>
-                    <tr mat-row *matRowDef="let row; columns: ['expandedDetail'];"
-                      class="detail-row"></tr>
+                    <tr mat-row *matRowDef="let row; columns: ['expandedDetail'];" class="detail-row"></tr>
                   </table>
                 </div>
               </div>
