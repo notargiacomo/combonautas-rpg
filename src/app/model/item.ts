@@ -2,6 +2,8 @@ import { Chave } from "../enum/chave.enum";
 
 export interface Item {
     id:number;
+    pericia?:string;
+    proficiencia?:string;
     id_prerequisitos?: number;
     tipo:string;
     nome?:string;

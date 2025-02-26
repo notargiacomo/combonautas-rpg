@@ -1,3 +1,5 @@
+import { Alcance } from '../enum/alcance.enum';
+import { AlcanceMagia } from '../enum/alcance.magia.enum';
 import { Atributo } from '../enum/atributo.enum';
 import { Chave } from '../enum/chave.enum';
 import { Proficiencia } from '../enum/proficiencia.enum';
@@ -560,16 +562,38 @@ export class Equipamento {
   espaco?:number;
   descricao?:string;
   item?: Item;
-  bonus_permanente?: {
-    origem?: string;
-    bonus: number;
-  } [];
-  bonus_condicional_permanente?: {
-    origem?: string;
-    bonus?: number;
-    condicao?: string[];
-    ativo?:boolean;
-  } []
+  ataque?: {
+    ataque?: number;
+    atributo_descricao_ataque?: string;
+    atributo_valor_ataque?: number;
+    pericia_descricao_ataque?: string;
+    pericia_valor_ataque?: number;
+    bonus_ataque?: {
+      origem?:string;
+      bonus?:number;
+      condicao?: string[];
+      ativo?:boolean;
+    } [];
+    total_bonus_ataque?:number;
+    dano?:string;
+    atributo_descricao_dano?: string;
+    atributo_valor_dano?: number;
+    dano_extra?: {
+      valor_dano_extra?:number;
+      tipo_dano_extra?:string;
+      condicao?: string[];
+      ativo?:boolean;
+    } [];
+    margem_ameaca?: number;
+    multiplicador_critico?: number;
+    melhorias?: string[];
+    material_especial?: string;
+    encantamentos?: string[];
+    proficiencia?: string;
+    distancia?: string;
+    alcance?: number;
+    empunhadura?: string;
+  }
 
   constructor(item: Item) {
     this.item = item;
@@ -577,7 +601,7 @@ export class Equipamento {
   }
 
   public ativaDesativaBonusCondicionalPermanente?(bonus: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}){
-    this.bonus_condicional_permanente?.forEach(element => {
+    this.ataque?.bonus_ataque?.forEach(element => {
       if(bonus === element){
         element.ativo = !element.ativo;
       }
@@ -642,7 +666,42 @@ export class Posse {
   }
 
   public atualizaPosses(mediator: Personagem) {
-    this.equipamentos_empunhados = [{ nome: 'Mão Direita', formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, descricao: Regras.ATAQUES_DESARMADOS }, { nome: 'Mão Esquerda', formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, descricao: Regras.ATAQUES_DESARMADOS }];
+    this.equipamentos_empunhados = [
+      { 
+        nome: 'Mão Direita', 
+        formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`,
+        descricao: Regras.ATAQUES_DESARMADOS,
+        ataque: {
+          ataque: 0,
+          atributo_descricao_ataque: Atributo.FORCA,
+          pericia_descricao_ataque: Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
+          atributo_descricao_dano: Atributo.FORCA,
+          total_bonus_ataque: 0,
+          margem_ameaca: 1,
+          multiplicador_critico: 2,
+          proficiencia: Proficiencia.ARMAS_SIMPLES,
+          distancia: "Corpo a Corpo",
+          empunhadura: "Uma mão",
+          alcance: Alcance.CORPO_A_CORPO,
+        }
+      }, 
+      { 
+        nome: 'Mão Esquerda', 
+        formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, descricao: Regras.ATAQUES_DESARMADOS,
+        ataque: {
+          ataque: 0, 
+          atributo_descricao_ataque: Atributo.FORCA,
+          pericia_descricao_ataque: Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
+          atributo_descricao_dano: Atributo.FORCA,
+          total_bonus_ataque: 0,
+          margem_ameaca: 1,
+          multiplicador_critico: 2,
+          proficiencia: Proficiencia.ARMAS_SIMPLES,
+          distancia: "Corpo a Corpo",
+          empunhadura: "Uma mão",
+          alcance: Alcance.CORPO_A_CORPO,
+        }
+      }];
     this.equipamentos_vestidos = [{}, {}, {}, {}];
     this.numero_itens_vestidos_maximo = 4;
     this.total_carga = 0;

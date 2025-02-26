@@ -57,7 +57,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_adaga.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 2,
@@ -95,7 +95,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_alabarda.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 3,
@@ -131,7 +131,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_alfange.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 4,
@@ -169,7 +169,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_arco_curto.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 5,
@@ -207,7 +207,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_arco_longo.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 6,
@@ -244,7 +244,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_azagaia.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 7,
@@ -282,7 +282,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_besta_leve.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 8,
@@ -320,7 +320,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_besta_pesada.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 9,
@@ -357,7 +357,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_bordao.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 10,
@@ -398,7 +398,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_chicote.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 147',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 11,
@@ -435,7 +435,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_cimitarra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 12,
@@ -471,7 +471,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_clava.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 14,
@@ -509,7 +509,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_espada_bastarda.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 15,
@@ -546,7 +546,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_espada_curta.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 16,
@@ -582,7 +582,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_espada_longa.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 17,
@@ -619,7 +619,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_florete.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 18,
@@ -656,7 +656,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_foice.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 19,
@@ -695,7 +695,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_funda.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 20,
@@ -731,7 +731,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_gadanho.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 21,
@@ -770,7 +770,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_katana.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 22,
@@ -807,7 +807,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_lanca.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 23,
@@ -846,7 +846,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_lanca_montada.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 24,
@@ -882,7 +882,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_maca.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 25,
@@ -920,7 +920,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_machadinha.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 26,
@@ -957,7 +957,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_machado_anao.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 27,
@@ -993,7 +993,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_machado_de_batalha.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 28,
@@ -1029,7 +1029,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_machado_guerra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 29,
@@ -1066,7 +1066,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_machado_taurico.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 30,
@@ -1104,7 +1104,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_mangual.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 31,
@@ -1140,7 +1140,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_marreta.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 32,
@@ -1176,7 +1176,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_martelo_de_guerra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 33,
@@ -1212,7 +1212,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_montante.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 34,
@@ -1250,7 +1250,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_mosquete.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 35,
@@ -1286,7 +1286,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_picareta.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 36,
@@ -1323,7 +1323,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_pique.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 37,
@@ -1361,7 +1361,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_pistola.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 38,
@@ -1396,7 +1396,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_rede.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 39,
@@ -1432,7 +1432,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_tacape.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 40,
@@ -1471,7 +1471,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_tridente.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 41,
@@ -1508,7 +1508,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_acoite_finntroll.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 42,
@@ -1547,7 +1547,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_arcabuz.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 43,
@@ -1584,7 +1584,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_arpao.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 44,
@@ -1624,7 +1624,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_bacamarte.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 45,
@@ -1661,7 +1661,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_espada_vespa.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 46,
@@ -1696,7 +1696,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_gladio.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 47,
@@ -1734,7 +1734,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_lanca_fogo.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 48,
@@ -1773,7 +1773,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_mordida_diabo.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 49,
@@ -1808,7 +1808,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_nekote.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 50,
@@ -1846,7 +1846,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_pistola_punhal.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 51,
@@ -1882,7 +1882,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_porrete.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 52,
@@ -1918,7 +1918,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_presa_serpente.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 53,
@@ -1953,7 +1953,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_shuriken.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 54,
@@ -1991,7 +1991,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_tetsubo.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 55,
@@ -2027,7 +2027,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_traque.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 56,
@@ -2063,7 +2063,7 @@ export class ItemData {
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,
+        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
       },
       {
         id: 57,
@@ -2096,7 +2096,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_acolchoada.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 58,
@@ -2131,7 +2131,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_armadura_completa.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 59,
@@ -2164,7 +2164,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_armadura_couro.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 59,
@@ -2197,7 +2197,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_brunea.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 60,
@@ -2229,7 +2229,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_cota_malha.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 61,
@@ -2262,7 +2262,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_couraca.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 62,
@@ -2295,7 +2295,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_couro_batido.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 63,
@@ -2330,7 +2330,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_escudo_leve.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 64,
@@ -2363,7 +2363,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_escudo_pesado.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 65,
@@ -2396,7 +2396,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_gibao_peles.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 66,
@@ -2429,7 +2429,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_loriga_segmentada.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 67,
@@ -2462,7 +2462,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_meia_armadura.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 68,
@@ -2495,7 +2495,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_armadura_ossos.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 69,
@@ -2528,7 +2528,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_armadura_quitina.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 70,
@@ -2561,7 +2561,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_escudo_couro.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 71,
@@ -2594,7 +2594,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_veste_teia_aranha.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,
+        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
       },
       {
         id: 72,
@@ -2627,7 +2627,7 @@ export class ItemData {
         imagem: 'assets/img/item_municao_balas.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,
+        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
       },
       {
         id: 73,
@@ -2660,7 +2660,7 @@ export class ItemData {
         imagem: 'assets/img/item_municao_flechas.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,
+        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
       },
       {
         id: 74,
@@ -2693,7 +2693,7 @@ export class ItemData {
         imagem: 'assets/img/item_municao_pedras.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,
+        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
       },
       {
         id: 75,
@@ -2726,7 +2726,7 @@ export class ItemData {
         imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,
+        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
       },
       {
         id: 76,
@@ -2759,7 +2759,7 @@ export class ItemData {
         
         referencias: Referencia.AMEACAS,
         paginas: '394 E 395',
-        tipo: TipoItem.MUNICAO,
+        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
       },
       {
         id: 77,
@@ -2793,7 +2793,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 78,
@@ -2824,7 +2824,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 79,
@@ -2857,7 +2857,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 80,
@@ -2889,7 +2889,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 81,
@@ -2919,7 +2919,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 82,
@@ -2950,7 +2950,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 83,
@@ -2981,7 +2981,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 84,
@@ -3012,7 +3012,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 85,
@@ -3045,7 +3045,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 86,
@@ -3078,7 +3078,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 87,
@@ -3112,7 +3112,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 88,
@@ -3144,7 +3144,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 89,
@@ -3176,7 +3176,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 90,
@@ -3207,7 +3207,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 91,
@@ -3240,7 +3240,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '156 E 157',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 92,
@@ -3273,7 +3273,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '156 E 157',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 93,
@@ -3305,7 +3305,7 @@ export class ItemData {
         
         referencias: Referencia.BASICO,
         paginas: '156 E 157',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 94,
@@ -3337,7 +3337,7 @@ export class ItemData {
         
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 95,
@@ -3368,7 +3368,7 @@ export class ItemData {
         
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 96,
@@ -3401,7 +3401,7 @@ export class ItemData {
         
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 97,
@@ -3433,7 +3433,7 @@ export class ItemData {
         
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 98,
@@ -3466,7 +3466,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 99,
@@ -3498,7 +3498,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 100,
@@ -3532,7 +3532,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 101,
@@ -3564,7 +3564,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 102,
@@ -3598,7 +3598,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 103,
@@ -3630,7 +3630,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 104,
@@ -3663,7 +3663,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 105,
@@ -3697,7 +3697,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 106,
@@ -3728,7 +3728,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 107,
@@ -3762,7 +3762,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 108,
@@ -3795,7 +3795,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 109,
@@ -3829,7 +3829,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,
+        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
       },
       {
         id: 110,
@@ -3862,7 +3862,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 111,
@@ -3894,7 +3894,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 112,
@@ -3925,7 +3925,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 113,
@@ -3957,7 +3957,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 114,
@@ -3989,7 +3989,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 115,
@@ -4021,7 +4021,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 116,
@@ -4052,7 +4052,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 117,
@@ -4084,7 +4084,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 118,
@@ -4116,7 +4116,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 119,
@@ -4151,7 +4151,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 120,
@@ -4180,7 +4180,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_VONTADE],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 121,
@@ -4209,7 +4209,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_LADINAGEM],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 122,
@@ -4242,7 +4242,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 123,
@@ -4271,7 +4271,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_FURTIVIDADE],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 124,
@@ -4300,7 +4300,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_RELIGIAO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 125,
@@ -4329,7 +4329,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 126,
@@ -4361,7 +4361,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 127,
@@ -4390,7 +4390,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_DIPLOMACIA],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 128,
@@ -4419,7 +4419,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 128,
@@ -4448,7 +4448,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 129,
@@ -4477,7 +4477,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_REFLEXOS],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 130,
@@ -4509,7 +4509,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 131,
@@ -4540,7 +4540,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 132,
@@ -4569,7 +4569,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 133,
@@ -4598,7 +4598,7 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 134,
@@ -4631,7 +4631,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,
+        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
       },
       {
         id: 135,
@@ -4664,7 +4664,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 136,
@@ -4700,7 +4700,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 137,
@@ -4735,7 +4735,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 138,
@@ -4769,7 +4769,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 139,
@@ -4803,7 +4803,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 140,
@@ -4835,7 +4835,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 141,
@@ -4867,7 +4867,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 142,
@@ -4900,7 +4900,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 143,
@@ -4935,7 +4935,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 144,
@@ -4970,7 +4970,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 145,
@@ -5006,7 +5006,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '396 E 398',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 146,
@@ -5039,7 +5039,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '396 E 398',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 147,
@@ -5071,7 +5071,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ESOTERICO,
+        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
       },
       {
         id: 148,
@@ -5107,7 +5107,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 149,
@@ -5140,7 +5140,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 150,
@@ -5177,7 +5177,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 151,
@@ -5210,7 +5210,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 152,
@@ -5245,7 +5245,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 153,
@@ -5279,7 +5279,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 154,
@@ -5315,7 +5315,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 155,
@@ -5347,7 +5347,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 156,
@@ -5381,7 +5381,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 157,
@@ -5415,7 +5415,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 158,
@@ -5450,7 +5450,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 159,
@@ -5484,7 +5484,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 160,
@@ -5517,7 +5517,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 161,
@@ -5550,7 +5550,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 162,
@@ -5583,7 +5583,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 163,
@@ -5616,7 +5616,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 164,
@@ -5650,7 +5650,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 165,
@@ -5683,7 +5683,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 166,
@@ -5716,7 +5716,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 167,
@@ -5751,7 +5751,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 168,
@@ -5786,7 +5786,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 169,
@@ -5819,7 +5819,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 170,
@@ -5854,7 +5854,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 171,
@@ -5887,7 +5887,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 172,
@@ -5917,7 +5917,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 173,
@@ -5950,7 +5950,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 174,
@@ -5983,7 +5983,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 175,
@@ -6016,7 +6016,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 176,
@@ -6051,7 +6051,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 177,
@@ -6084,7 +6084,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 178,
@@ -6121,7 +6121,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 179,
@@ -6154,7 +6154,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 180,
@@ -6188,7 +6188,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 181,
@@ -6222,7 +6222,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 182,
@@ -6255,7 +6255,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 183,
@@ -6287,7 +6287,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 184,
@@ -6328,7 +6328,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 185,
@@ -6363,7 +6363,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 186,
@@ -6398,7 +6398,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 187,
@@ -6434,7 +6434,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 188,
@@ -6469,7 +6469,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 189,
@@ -6505,7 +6505,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 190,
@@ -6540,7 +6540,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 191,
@@ -6573,7 +6573,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 192,
@@ -6606,7 +6606,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 193,
@@ -6640,7 +6640,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,
+        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
       },
       {
         id: 194,
@@ -6673,7 +6673,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 195,
@@ -6707,7 +6707,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 196,
@@ -6741,7 +6741,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 197,
@@ -6776,7 +6776,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 198,
@@ -6805,7 +6805,7 @@ export class ItemData {
         chave: [Chave.CONSUMIVEL, Chave.DIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 199,
@@ -6834,7 +6834,7 @@ export class ItemData {
         chave: [Chave.CONSUMIVEL, Chave.DIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 200,
@@ -6869,7 +6869,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 201,
@@ -6904,7 +6904,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 202,
@@ -6937,7 +6937,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 203,
@@ -6970,7 +6970,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 204,
@@ -7003,7 +7003,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 205,
@@ -7039,7 +7039,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 206,
@@ -7072,7 +7072,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 207,
@@ -7107,7 +7107,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
-        tipo: TipoItem.ALIMENTACAO,
+        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
       },
       {
         id: 208,
@@ -7140,7 +7140,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
       },
       {
         id: 209,
@@ -7195,7 +7195,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 210,
@@ -7240,7 +7240,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 211,
@@ -7285,7 +7285,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 212,
@@ -7330,7 +7330,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 213,
@@ -7375,7 +7375,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 214,
@@ -7430,7 +7430,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 163',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 215,
@@ -7476,7 +7476,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 216,
@@ -7522,7 +7522,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 217,
@@ -7568,7 +7568,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 218,
@@ -7614,7 +7614,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 219,
@@ -7660,7 +7660,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 220,
@@ -7707,7 +7707,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 221,
@@ -7754,7 +7754,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 222,
@@ -7801,7 +7801,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 223,
@@ -7848,7 +7848,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 224,
@@ -7904,7 +7904,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 225,
@@ -7951,7 +7951,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 226,
@@ -7998,7 +7998,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 228,
@@ -8045,7 +8045,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 227,
@@ -8092,7 +8092,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '210',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 228,
@@ -8136,7 +8136,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '210',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 229,
@@ -8183,7 +8183,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '213',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 230,
@@ -8231,7 +8231,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '213',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 231,
@@ -8278,7 +8278,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 232,
@@ -8324,7 +8324,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 233,
@@ -8371,7 +8371,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 234,
@@ -8417,7 +8417,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '220',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 235,
@@ -8463,7 +8463,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '222',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 236,
@@ -8509,7 +8509,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '222',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 237,
@@ -8555,7 +8555,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '224',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 239,
@@ -8602,7 +8602,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '225',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 240,
@@ -8650,7 +8650,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '226 E 227',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 241,
@@ -8697,7 +8697,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '36',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 242,
@@ -8745,7 +8745,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '67',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 243,
@@ -8792,7 +8792,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '67',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 244,
@@ -8839,7 +8839,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '148',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 245,
@@ -8884,7 +8884,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '155',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 246,
@@ -8930,7 +8930,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '155',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 247,
@@ -8974,7 +8974,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '179',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 248,
@@ -9018,7 +9018,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '190',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 249,
@@ -9062,7 +9062,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '190',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 250,
@@ -9106,7 +9106,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '192',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 251,
@@ -9150,7 +9150,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '192',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 252,
@@ -9194,7 +9194,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '193',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 253,
@@ -9238,7 +9238,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '194',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 253,
@@ -9282,7 +9282,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '194',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 254,
@@ -9326,7 +9326,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '195',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 255,
@@ -9373,7 +9373,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '196 E 197',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 256,
@@ -9420,7 +9420,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '196 E 197',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 257,
@@ -9464,7 +9464,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '198',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 258,
@@ -9508,7 +9508,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '199',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 259,
@@ -9552,7 +9552,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '199',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 260,
@@ -9596,7 +9596,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '229',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 261,
@@ -9640,7 +9640,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '244',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 262,
@@ -9684,7 +9684,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '246',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 263,
@@ -9728,7 +9728,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '246',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 264,
@@ -9772,7 +9772,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '249',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 265,
@@ -9817,7 +9817,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '277',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 266,
@@ -9861,7 +9861,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '296',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 267,
@@ -9905,7 +9905,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '297 E 298',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 268,
@@ -9949,7 +9949,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '322',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 269,
@@ -9993,7 +9993,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '322',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 270,
@@ -10037,7 +10037,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '328',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 271,
@@ -10081,7 +10081,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '343',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 272,
@@ -10125,7 +10125,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '348',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 273,
@@ -10169,7 +10169,7 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '348',
-        tipo: TipoItem.ANIMAL,
+        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
       },
       {
         id: 275,
@@ -10201,7 +10201,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_VOO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,
+        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
       },
       {
         id: 276,
@@ -10237,7 +10237,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,
+        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
       },
       {
         id: 277,
@@ -10274,7 +10274,7 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,
+        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
       },
       {
         id: 278,
@@ -10307,7 +10307,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,
+        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
       },
       {
         id: 279,
@@ -10340,7 +10340,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,
+        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
       },
       {
         id: 280,
@@ -10374,7 +10374,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 281,
@@ -10408,7 +10408,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 282,
@@ -10442,7 +10442,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 283,
@@ -10476,7 +10476,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 283,
@@ -10510,7 +10510,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 284,
@@ -10544,7 +10544,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 285,
@@ -10578,7 +10578,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.PERICIA_CURA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 286,
@@ -10612,7 +10612,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 287,
@@ -10646,7 +10646,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 288,
@@ -10680,7 +10680,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 289,
@@ -10714,7 +10714,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,
+        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
       },
       {
         id: 290,
@@ -10748,7 +10748,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA ],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 291,
@@ -10782,7 +10782,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 292,
@@ -10817,7 +10817,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 293,
@@ -10852,7 +10852,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 294,
@@ -10886,7 +10886,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 295,
@@ -10920,7 +10920,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 296,
@@ -10954,7 +10954,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 297,
@@ -10988,7 +10988,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 298,
@@ -11022,7 +11022,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 299,
@@ -11056,7 +11056,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA,Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 300,
@@ -11090,7 +11090,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 301,
@@ -11124,7 +11124,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 302,
@@ -11158,7 +11158,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 303,
@@ -11192,7 +11192,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 304,
@@ -11226,7 +11226,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 305,
@@ -11260,7 +11260,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 306,
@@ -11294,7 +11294,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 307,
@@ -11328,7 +11328,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 308,
@@ -11362,7 +11362,7 @@ export class ItemData {
         chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 309,
@@ -11396,7 +11396,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 310,
@@ -11430,7 +11430,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 311,
@@ -11464,7 +11464,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 312,
@@ -11498,7 +11498,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 313,
@@ -11532,7 +11532,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 314,
@@ -11566,7 +11566,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 315,
@@ -11600,7 +11600,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 316,
@@ -11635,7 +11635,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 317,
@@ -11669,7 +11669,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 318,
@@ -11703,7 +11703,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 319,
@@ -11738,7 +11738,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,
+        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
       },
       {
         id: 320,
@@ -11776,7 +11776,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 321,
@@ -11814,7 +11814,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 322,
@@ -11852,7 +11852,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 323,
@@ -11889,7 +11889,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 324,
@@ -11927,7 +11927,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '167',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 325,
@@ -11965,7 +11965,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.BASICO,
         paginas: '167',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 326,
@@ -12003,7 +12003,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 327,
@@ -12041,7 +12041,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 328,
@@ -12078,7 +12078,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 329,
@@ -12116,7 +12116,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA , Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 330,
@@ -12154,7 +12154,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 331,
@@ -12192,7 +12192,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 332,
@@ -12230,7 +12230,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
       {
         id: 333,
@@ -12268,7 +12268,7 @@ export class ItemData {
         chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
         referencias: Referencia.AMEACAS,
         paginas: '401',
-        tipo: TipoItem.MATERIAL_ESPECIAL,
+        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
       },
     ];
   }

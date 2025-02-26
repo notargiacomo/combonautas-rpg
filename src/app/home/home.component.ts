@@ -22,6 +22,7 @@ import { Pericia } from '../model/pericia';
 import { Equipamento, Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
+import { Proficiencia } from '../enum/proficiencia.enum';
 
 @Component({
   selector: 'app-home',
