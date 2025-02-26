@@ -615,8 +615,9 @@
                                             <label>Proficiência:</label>
                                           </div>
                                           <div class="col-sm-6 mt-2">
-                                            <input style="font-size: 12pt !important; width: 100%;" class="col-sm-3 vida-mana-defesa" size="2"
-                                            change="" [(ngModel)]="element.ataque.proficiencia" disabled/>
+                                            <input style="font-size: 12pt !important; width: 100%;"
+                                              class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                              [(ngModel)]="element.ataque.proficiencia" disabled />
                                           </div>
                                         </div>
                                         <div class="row">
@@ -624,8 +625,9 @@
                                             <label>Distância:</label>
                                           </div>
                                           <div class="col-sm-6 mt-2">
-                                            <input style="font-size: 12pt !important; width: 100%;" class="col-sm-3 vida-mana-defesa" size="2"
-                                            change="" [(ngModel)]="element.ataque.distancia" disabled/>
+                                            <input style="font-size: 12pt !important; width: 100%;"
+                                              class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                              [(ngModel)]="element.ataque.distancia" disabled />
                                           </div>
                                         </div>
                                         <div class="row">
@@ -633,8 +635,9 @@
                                             <label>Empunhadura:</label>
                                           </div>
                                           <div class="col-sm-6 mt-2">
-                                            <input style="font-size: 12pt !important; width: 100%;" class="col-sm-3 vida-mana-defesa" size="2"
-                                            change="" [(ngModel)]="element.ataque.empunhadura" disabled/>
+                                            <input style="font-size: 12pt !important; width: 100%;"
+                                              class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                              [(ngModel)]="element.ataque.empunhadura" disabled />
                                           </div>
                                         </div>
                                         <div class="row">
@@ -642,8 +645,9 @@
                                             <label>Alcance:</label>
                                           </div>
                                           <div class="col-sm-3 mt-2">
-                                            <input style="font-size: 12pt !important; width: 100%;" class="col-sm-3 vida-mana-defesa" size="2"
-                                            change="" [(ngModel)]="element.ataque.alcance" disabled/>
+                                            <input style="font-size: 12pt !important; width: 100%;"
+                                              class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                              [(ngModel)]="element.ataque.alcance" disabled />
                                           </div>
                                           <div class="col-sm-3 mt-2">
                                             <label>metros</label>
@@ -652,41 +656,135 @@
                                         <div class="row">
                                           <hr>
                                         </div>
-                                        <div class="row">
-                                          <div class="col-sm-2 mt-2">
-                                            <label>Ataque:</label>
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                          (closed)="panelOpenState.set(false)" >
+                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
+                                            <mat-panel-title>
+                                              <div class="container">
+                                                <div class="row">
+                                                  <div class="col-sm-2 mt-2">
+                                                    <label>Ataque:</label>
+                                                  </div>
+                                                  <div class="col-sm-2 mt-2">
+                                                    <input style="font-size: 12pt !important; width: 100%;"
+                                                      class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                      [(ngModel)]="element.ataque.ataque" disabled />
+                                                  </div>
+                                                  <div class="col-sm-4 mt-2">
+                                                    <mat-select *ngIf="element.ataque" class="vida-mana-defesa"
+                                                      style="font-size: 12pt !important" selectionChange=""
+                                                      [(value)]="element.ataque.pericia_descricao_ataque">
+                                                      @for (pericia of personagem.pericias; track pericia.pericia) {
+                                                      <mat-option [value]="pericia.pericia">
+                                                        {{ pericia.pericia }}
+                                                      </mat-option>
+                                                      }
+                                                    </mat-select>
+                                                  </div>
+                                                  <div class="col-sm-4 mt-2">
+                                                    <mat-select *ngIf="element.ataque" class="vida-mana-defesa"
+                                                      style="font-size: 12pt !important" selectionChange=""
+                                                      [(value)]="element.ataque.atributo_descricao_ataque">
+                                                      @for (atributo of atributos; track atributo) {
+                                                      <mat-option [value]="atributo">
+                                                        {{atributo}}
+                                                      </mat-option>
+                                                      }
+                                                    </mat-select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </mat-panel-title>
+                                          </mat-expansion-panel-header>
+                                          <div class="row">
+                                            <hr>
                                           </div>
-                                          <div class="col-sm-2 mt-2">
-                                            <input style="font-size: 12pt !important; width: 100%;" class="col-sm-3 vida-mana-defesa" size="2"
-                                            change="" [(ngModel)]="element.ataque.ataque" disabled/>
+                                          DESCRIÇÃO DETALHADA
+
+                                        </mat-expansion-panel>
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                          (closed)="panelOpenState.set(false)" class="mt-2">
+                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
+                                            <mat-panel-title>
+                                              <div class="container">
+                                                <div class="row">
+                                                  <div class="col-sm-2 mt-2">
+                                                    <label>Dano:</label>
+                                                  </div>
+                                                  <div class="col-sm-5 mt-2">
+                                                    <input style="font-size: 12pt !important; width: 100%;"
+                                                      class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                      [(ngModel)]="element.ataque.dano" disabled />
+                                                  </div>
+                                                  <div class="col-sm-5 mt-2">
+                                                    <mat-select *ngIf="element.ataque" class="vida-mana-defesa"
+                                                      style="font-size: 12pt !important" selectionChange=""
+                                                      [(value)]="element.ataque.atributo_descricao_ataque">
+                                                      @for (atributo of atributos; track atributo) {
+                                                      <mat-option [value]="atributo">
+                                                        {{atributo}}
+                                                      </mat-option>
+                                                      }
+                                                    </mat-select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </mat-panel-title>
+                                          </mat-expansion-panel-header>
+                                          <div class="row">
+                                            <hr>
                                           </div>
-                                          <div class="col-sm-3 mt-2">
-                                            <mat-select *ngIf="element.ataque" class="vida-mana-defesa" style="font-size: 12pt !important"
-                                              selectionChange=""
-                                              [(value)]="element.ataque.pericia_descricao_ataque">
-                                              @for (pericia of personagem.pericias; track pericia.pericia) {
-                                              <mat-option [value]="pericia.pericia">
-                                                {{ pericia.pericia }}
-                                              </mat-option>
-                                              }
-                                            </mat-select>
+                                          DESCRIÇÃO DETALHADA
+
+                                        </mat-expansion-panel>
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                          (closed)="panelOpenState.set(false)" class="mt-2">
+                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
+                                            <mat-panel-title>
+                                              <div class="container">
+                                                <div class="row">
+                                                  <div class="col-sm-7 mt-2">
+                                                    <label>Margem de Ameaça:</label>
+                                                  </div>
+                                                  <div class="col-sm-5 mt-2">
+                                                    <input style="font-size: 12pt !important; width: 100%;"
+                                                      class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                      [(ngModel)]="element.ataque.margem_ameaca" disabled />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </mat-panel-title>
+                                          </mat-expansion-panel-header>
+                                          <div class="row">
+                                            <hr>
                                           </div>
-                                          <div class="col-sm-3 mt-2">
-                                            <mat-select *ngIf="element.ataque" class="vida-mana-defesa" style="font-size: 12pt !important"
-                                              selectionChange=""
-                                              [(value)]="element.ataque.atributo_descricao_ataque">
-                                              @for (atributo of atributos; track atributo) {
-                                              <mat-option [value]="atributo">
-                                                {{atributo}}
-                                              </mat-option>
-                                              }
-                                            </mat-select>
+                                          DESCRIÇÃO DETALHADA
+
+                                        </mat-expansion-panel>
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                          (closed)="panelOpenState.set(false)" class="mt-2">
+                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
+                                            <mat-panel-title>
+                                              <div class="container">
+                                                <div class="row">
+                                                  <div class="col-sm-7 mt-2">
+                                                    <label>Multiplicador de Crítico:</label>
+                                                  </div>
+                                                  <div class="col-sm-5 mt-2">
+                                                    <input style="font-size: 12pt !important; width: 100%;"
+                                                      class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                      [(ngModel)]="element.ataque.multiplicador_critico" disabled />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </mat-panel-title>
+                                          </mat-expansion-panel-header>
+                                          <div class="row">
+                                            <hr>
                                           </div>
-                                          <div class="col-sm-2 mt-2">
-                                            <input style="font-size: 12pt !important; width: 100%;" class="col-sm-3 vida-mana-defesa" size="2"
-                                            change="" [(ngModel)]="element.ataque.total_bonus_ataque" />
-                                          </div>
-                                        </div>
+                                          DESCRIÇÃO DETALHADA
+
+                                        </mat-expansion-panel>
                                       </div>
                                     </mat-tab>
                                   </mat-tab-group>

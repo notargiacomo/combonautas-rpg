@@ -683,6 +683,7 @@ export class Posse {
           distancia: "Corpo a Corpo",
           empunhadura: "Uma mão",
           alcance: Alcance.CORPO_A_CORPO,
+          dano: '1d3+0'
         }
       }, 
       { 

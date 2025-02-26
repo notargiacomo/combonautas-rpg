@@ -1,6 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -23,6 +23,7 @@ import { Equipamento, Imunidade, PericiaPersonagem, Personagem } from '../model/
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
 import { Proficiencia } from '../enum/proficiencia.enum';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-home',
@@ -43,9 +44,11 @@ import { Proficiencia } from '../enum/proficiencia.enum';
     CommonModule,
     MatProgressBarModule,
     MatTabsModule,
+    MatDatepickerModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
       trigger('detailExpand', [
         state('collapsed,void', style({ height: '0px', minHeight: '0' })),
@@ -64,6 +67,7 @@ export class HomeComponent {
   atributos = Object.values(Atributo);
   tamanhos = Object.values(Tamanho);
   dsPericias = new MatTableDataSource<PericiaPersonagem>();
+  readonly panelOpenState = signal(false);
 
   expandedElementEmpunhados!: Equipamento | null;
   displayedColumnsEmpunhados: string[] = ['nome', 'formula'];
