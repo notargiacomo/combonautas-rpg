@@ -656,10 +656,10 @@
                                         <div class="row">
                                           <hr>
                                         </div>
-                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
                                           (closed)="panelOpenState.set(false)" >
-                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
-                                            <mat-panel-title>
+                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;" >
+                                            <mat-panel-title >
                                               <div class="container">
                                                 <div class="row">
                                                   <div class="col-sm-2 mt-2">
@@ -699,10 +699,48 @@
                                           <div class="row">
                                             <hr>
                                           </div>
-                                          DESCRIÇÃO DETALHADA
+                                          <div class="container">
+                                            <div class="row">
+                                              <div class="col-sm-6 mt-2">
+                                                <label>{{element.ataque.pericia_descricao_ataque}}</label>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-sm-6 mt-2">
+                                                <label>{{element.ataque.atributo_descricao_ataque}}</label>
+                                              </div>
+                                            </div>
+                                            @for (bonus of element.ataque.bonus_ataque; track bonus) {
+                                            <div class="row" >
+                                              <div class="col-sm-12 mt-2">
+                                                <label>{{bonus.origem}}</label>
+                                              </div>
+                                              <hr>
+                                            </div>
+                                            <div class="row" >
+                                              <div class="col-sm-2 mt-2">
+                                                <label>Bônus</label>
+                                              </div>
+                                              <div class="col-sm-2 mt-2">
+                                                <input style="font-size: 12pt !important; width: 100%;"
+                                                class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                [(ngModel)]="bonus.bonus" disabled />
+                                              </div>
+                                              <div class="col-sm-6 mt-2">
+                                                <label>{{bonus.condicao}}</label>
+                                              </div>
+                                              <div class="col-sm-2 mt-2">
+                                                <mat-checkbox name="treinado" style="margin: 1px !important;"
+                                                [(ngModel)]="bonus.ativo"
+                                                change="">
+                                              </mat-checkbox>
+                                              </div>
+                                            </div>
+                                            }
+                                          </div>
 
                                         </mat-expansion-panel>
-                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
                                           (closed)="panelOpenState.set(false)" class="mt-2">
                                           <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
                                             <mat-panel-title>
@@ -737,7 +775,7 @@
                                           DESCRIÇÃO DETALHADA
 
                                         </mat-expansion-panel>
-                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
                                           (closed)="panelOpenState.set(false)" class="mt-2">
                                           <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
                                             <mat-panel-title>
@@ -761,7 +799,7 @@
                                           DESCRIÇÃO DETALHADA
 
                                         </mat-expansion-panel>
-                                        <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                        <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
                                           (closed)="panelOpenState.set(false)" class="mt-2">
                                           <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
                                             <mat-panel-title>
@@ -1392,7 +1430,8 @@
                                     </mat-select>
                                   </div>
                                 </div>
-                                <div class="row" *ngFor="let bonus of element.bonus_condicional_permanente"
+                                @for (bonus of element.bonus_condicional_permanente; track bonus) {
+                                <div class="row"
                                   style="line-height: 250% !important;">
                                   <div class="col-sm-5">
                                     Bônus de Poder:
@@ -1410,6 +1449,7 @@
                                     {{ bonus.condicao.join(", ") }}
                                   </div>
                                 </div>
+                                }
                                 <div class="row">
                                   <div class="col-sm-12">
                                     <hr style="margin: 5px !important;" />

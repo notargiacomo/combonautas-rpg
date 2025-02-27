@@ -2761,7 +2761,7 @@ export class PoderData {
         descricao: `Você é perito nas armas tradicionais anãs, seja por ter treinado com elas, seja por usá-las como ferramentas de ofício. Para você, todos os machados, martelos, marretas e picaretas são armas simples. Você recebe +2 em ataques com essas armas.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         raca: {id:2},
-        instrucao: [],
+        instrucao: [`this.personagem?.posse?.equipamentos_empunhados?.forEach(empunhado => {empunhado?.ataque?.bonus_ataque?.push({origem:'Raça Anão, Poder Tradição de Heredrimm', bonus: 2, condicao: 'Martelo, Machado e Picareta', ativo: false})})`],
         referencias: Referencia.BASICO,
         paginas: '20'
       },

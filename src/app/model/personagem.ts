@@ -571,7 +571,7 @@ export class Equipamento {
     bonus_ataque?: {
       origem?:string;
       bonus?:number;
-      condicao?: string[];
+      condicao?: string;
       ativo?:boolean;
     } [];
     total_bonus_ataque?:number;
@@ -652,6 +652,7 @@ export class Posse {
   moedas_prata?: number;
   moedas_ouro?: number;
   moedas_plantina?: number;
+  resolucao?: string[];
 
   constructor(private mediator: Personagem){
     this.atualizaPosses(mediator);
@@ -683,7 +684,8 @@ export class Posse {
           distancia: "Corpo a Corpo",
           empunhadura: "Uma mão",
           alcance: Alcance.CORPO_A_CORPO,
-          dano: '1d3+0'
+          dano: '1d3+0',
+          bonus_ataque: []
         }
       }, 
       { 
@@ -701,6 +703,8 @@ export class Posse {
           distancia: "Corpo a Corpo",
           empunhadura: "Uma mão",
           alcance: Alcance.CORPO_A_CORPO,
+          dano: '1d3+0',
+          bonus_ataque: []
         }
       }];
     this.equipamentos_vestidos = [{}, {}, {}, {}];
