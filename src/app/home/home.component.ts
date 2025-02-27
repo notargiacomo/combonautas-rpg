@@ -19,11 +19,15 @@ import { BalaoInterativoPadraoComponent } from '../components/caixa-informativa/
 import { Atributo } from '../enum/atributo.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { Pericia } from '../model/pericia';
-import { Equipamento, Imunidade, PericiaPersonagem, Personagem } from '../model/personagem';
+import { Equipamento, Imunidade, MagiaPersonagem, PericiaPersonagem, Personagem, PoderPersonagem } from '../model/personagem';
 import { Poder } from '../model/poder';
 import { PericiasService } from '../service/pericia.service';
 import { Proficiencia } from '../enum/proficiencia.enum';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MagiaService } from '../service/magia.service';
+import { Magia } from '../model/magia';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-home',
@@ -32,6 +36,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatDividerModule,
     NgIf,
     NgFor,
+    ButtonModule,
     MatButtonModule,
     ReactiveFormsModule,
     MatIconModule,
@@ -44,7 +49,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     CommonModule,
     MatProgressBarModule,
     MatTabsModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    DialogModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -77,16 +83,26 @@ export class HomeComponent {
   displayedColumnsVestido: string[] = ['equipamento', 'formula'];
   displayedColumnsCarregados: string[] = ['equipamento','quantidade','espaco'];
   displayedColumnsItens: string[] = ['item', 'descricao'];
-  displayedColumnsPoderes: string[] = ['nome', 'tipo', 'acoes'];
 
   expandedElementPericia!: PericiaPersonagem | null;
   columnsToDisplayPericia: string[] = ['pericia', 'total', 'atributo', 'outros'];
   columnsToDisplayWithExpandPericia = [...this.columnsToDisplayPericia, 'expand'];
   isExpandedRowPericia = (index: number, row: any) => row === this.expandedElementPericia;
 
+  expandedElementMagia!: MagiaPersonagem | null;
+  displayedColumnsMagias: string[] = ['nome', 'tipo', 'escola'];
+  displayedColumnsWithExpandMagias = [...this.displayedColumnsMagias, 'expand'];
+  isExpandedRowMagias = (index: number, row: any) => row === this.expandedElementMagia;
+
+  expandedElementPoderes!: PoderPersonagem | null;
+  displayedColumnsPoderes: string[] = ['nome', 'tipo', 'acoes'];
+  displayedColumnsWithExpandPoderes = [...this.displayedColumnsPoderes, 'expand'];
+  isExpandedRowPoderes = (index: number, row: any) => row === this.expandedElementPoderes;
+
   constructor(
     private readonly router: Router,
     private readonly servicoPericia: PericiasService,
+    private readonly servicoMagia: MagiaService,
   ) {}
 
   ngOnInit() {
@@ -109,7 +125,8 @@ export class HomeComponent {
   }
 
   readonly dialog = inject(MatDialog);
-  dataSourcePoderesPersonagens = new MatTableDataSource<Poder>();
+  dataSourcePoderesPersonagens = new MatTableDataSource<PoderPersonagem>();
+  dataSourceMagiasPersonagens = new MatTableDataSource<MagiaPersonagem>();
   openDialog(titulo: string, classe: number) {
     const dialogRef = this.dialog.open(BalaoInterativoPadraoComponent, {
       data: {
@@ -122,40 +139,52 @@ export class HomeComponent {
 
     dialogRef.afterClosed().subscribe((resultado) => {
       if (resultado) {
-        this.personagem.raca = resultado;
-        if (this.personagem.raca === undefined) {
-          resultado.resolucao = [];
-          resultado.resolucao.push(...resultado.instrucao);
-        }
-        this.personagem.resetaAtributosRaciais();
-        this.personagem.raca?.habilidades
-          ? this.personagem.poderes.push(...this.personagem.raca?.habilidades)
-          : '';
-        this.dataSourcePoderesPersonagens = new MatTableDataSource(
-          this.personagem.poderes
-        );
-
-        this.personagem.raca?.resolucao?.forEach((res) => {
-          eval(res);
-        });
-
-        this.personagem.recalculaAtributos();
-        this.personagem.raca?.habilidades?.forEach((habilidade) => {
-          if (habilidade.resolucao) {
-            habilidade.resolucao?.forEach((resolucao) => {
-              eval(resolucao);
-            });
-          } else {
-            habilidade.instrucao?.forEach((instrucao) => {
-              new Imunidade('','');
-              eval(instrucao);
-            });
+        if(!(this.personagem.raca?.id === resultado.id)){
+          this.personagem.raca = resultado;
+          if (this.personagem.raca === undefined) {
+            resultado.resolucao = [];
+            resultado.resolucao.push(...resultado.instrucao);
           }
-        });
+          this.personagem.resetaAtributosRaciais();
+          this.personagem.raca?.habilidades?.forEach(poder => {
+            this.personagem.poderes.push(new PoderPersonagem(poder, false));
+          })
+          this.dataSourcePoderesPersonagens = new MatTableDataSource(
+            this.personagem.poderes
+          );
+  
+          this.personagem.raca?.resolucao?.forEach((res) => {
+            eval(res);
+          });
+  
+          this.personagem.recalculaAtributos();
+          this.personagem.raca?.habilidades?.forEach((habilidade) => {
+            if (habilidade.resolucao) {
+              habilidade.resolucao?.forEach((resolucao) => {
+                eval(resolucao);
+              });
+            } else {
+              habilidade.instrucao?.forEach((instrucao) => {
+                new Imunidade('','');
+                eval(instrucao);
+              });
+            }
+          });
+        }
 
       } else {
         console.log('Diálogo foi fechado sem retorno.');
       }
+    });
+  }
+
+  adicionarMagiaExtra(id: number) {
+    this.servicoMagia.listar({id: id}).subscribe({
+      next: (response) => {
+        this.personagem.magias?.push({magia: response[0]});
+        this.dataSourceMagiasPersonagens = new MatTableDataSource(this.personagem.magias);
+      },
+      error: (response) => console.log(response),
     });
   }
 
@@ -173,4 +202,11 @@ export class HomeComponent {
         : true)
     );
   }
+
+  visible: boolean = false;
+
+  showDialog() {
+      this.visible = true;
+  }
+
 }

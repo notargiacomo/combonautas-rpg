@@ -517,12 +517,12 @@
                   <hr />
                   <div class="row">
                     <div class="col-sm-11 m-1 vida-mana-defesa" style="margin-left: 10px !important">
-                      {{ personagem.defesa }}
+                      {{ personagem.defesa.defesa }}
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-8">
-                      <select class="vida-mana-defesa" style="font-size: 12pt !important">
+                    <div class="col-sm-6 mt-1 d-flex">
+                      <select class="vida-mana-defesa" style="font-size: 12pt !important" [value]="personagem.defesa.atributo_defesa">
                         @for (atributo of atributos; track atributo) {
                         <option [selected]="
                             personagem.recuperaValor(atributo.toString()) ===
@@ -533,8 +533,43 @@
                         }
                       </select>
                     </div>
-                    <input style="font-size: 12pt !important" class="col-sm-3 vida-mana-defesa" size="2"
-                      (change)="personagem.atualizaDefesa()" [(ngModel)]="personagem.defesa_bonus" />
+                    <div class="col-sm-6 mt-1 d-flex">
+                      <button class="btn btn-sm botao-ficha" style="padding: 0px !important; vertical-align: middle !important;height: 100% !important;" (click)="showDialog()">
+                        <b style="color: white !important">
+                        {{personagem.defesa.bonus_total}}
+                        </b>
+                      </button>
+                      <div class="card flex justify-center">
+                        <p-dialog header="Bônus Defesa" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+                          <div class="container">
+                            @for (bonus of personagem.defesa.defesa_bonus; track bonus) {
+                              <div class="row">
+                                <div class="col-sm-7">
+                                  <label>{{bonus.descricao}}</label>
+                                </div>
+                                <div class="col-sm-1">
+                                  <input class="vida-mana-defesa" [value]="bonus.bonus" disabled/>
+                                </div>
+                                <div class="col-sm-4">
+                                  <label>{{bonus.duracao}}</label>
+                                </div>
+                              </div>  
+                            }
+                            @if (personagem.defesa.defesa_bonus.length === 0) {
+                              <div class="col-sm-12">
+                                <label>O personagem não possui bônus extras.</label>
+                              </div>
+                            }
+                          </div>
+                          <div class="button-row mt-4 d-flex justify-content-end">
+                            <button class="me-2" (click)="visible = false" mat-flat-button>
+                              Concluir
+                            </button>
+                            <!-- <button mat-flat-button>Adicionar Raça</button> -->
+                          </div>
+                        </p-dialog>
+                    </div>
+                    </div>
                   </div>
                 </mat-card>
               </div>
@@ -657,9 +692,10 @@
                                           <hr>
                                         </div>
                                         <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
-                                          (closed)="panelOpenState.set(false)" >
-                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;" >
-                                            <mat-panel-title >
+                                          (closed)="panelOpenState.set(false)">
+                                          <mat-expansion-panel-header
+                                            style="padding-top: 0px !important; margin-top: 0px !important;">
+                                            <mat-panel-title>
                                               <div class="container">
                                                 <div class="row">
                                                   <div class="col-sm-2 mt-2">
@@ -706,9 +742,8 @@
                                               </div>
                                               <div class="col-sm-6 mt-2">
                                                 <input style="font-size: 12pt !important; width: 100%;"
-                                                class="col-sm-3 vida-mana-defesa" size="2" change=""
-                                                [value]="element.getBonusPericiaAtaque(personagem)"
-                                                disabled />
+                                                  class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                  [value]="element.getBonusPericiaAtaque(personagem)" disabled />
                                               </div>
                                             </div>
                                             <div class="row">
@@ -717,35 +752,33 @@
                                               </div>
                                               <div class="col-sm-6 mt-2">
                                                 <input style="font-size: 12pt !important; width: 100%;"
-                                                class="col-sm-3 vida-mana-defesa" size="2" change=""
-                                                [value]="element.getBonusAtributoAtaque(personagem)"
-                                                disabled />
+                                                  class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                  [value]="element.getBonusAtributoAtaque(personagem)" disabled />
                                               </div>
                                             </div>
                                             @for (bonus of element.ataque.bonus_ataque; track bonus) {
-                                            <div class="row" >
+                                            <div class="row">
                                               <div class="col-sm-12 mt-2">
                                                 <label>{{bonus.origem}}</label>
                                               </div>
                                               <hr>
                                             </div>
-                                            <div class="row" >
+                                            <div class="row">
                                               <div class="col-sm-2 mt-2">
                                                 <label>Bônus</label>
                                               </div>
                                               <div class="col-sm-2 mt-2">
                                                 <input style="font-size: 12pt !important; width: 100%;"
-                                                class="col-sm-3 vida-mana-defesa" size="2" change=""
-                                                [(ngModel)]="bonus.bonus" disabled />
+                                                  class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                  [(ngModel)]="bonus.bonus" disabled />
                                               </div>
                                               <div class="col-sm-6 mt-2">
                                                 <label>{{bonus.condicao}}</label>
                                               </div>
                                               <div class="col-sm-2 mt-2">
                                                 <mat-checkbox name="treinado" style="margin: 1px !important;"
-                                                [(ngModel)]="bonus.ativo"
-                                                change="">
-                                              </mat-checkbox>
+                                                  [(ngModel)]="bonus.ativo" change="">
+                                                </mat-checkbox>
                                               </div>
                                             </div>
                                             }
@@ -754,7 +787,8 @@
                                         </mat-expansion-panel>
                                         <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
                                           (closed)="panelOpenState.set(false)" class="mt-2">
-                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
+                                          <mat-expansion-panel-header
+                                            style="padding-top: 0px !important; margin-top: 0px !important;">
                                             <mat-panel-title>
                                               <div class="container">
                                                 <div class="row">
@@ -789,7 +823,8 @@
                                         </mat-expansion-panel>
                                         <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
                                           (closed)="panelOpenState.set(false)" class="mt-2">
-                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
+                                          <mat-expansion-panel-header
+                                            style="padding-top: 0px !important; margin-top: 0px !important;">
                                             <mat-panel-title>
                                               <div class="container">
                                                 <div class="row">
@@ -813,7 +848,8 @@
                                         </mat-expansion-panel>
                                         <mat-expansion-panel (opened)="panelOpenState.set(true)" *ngIf="element.ataque"
                                           (closed)="panelOpenState.set(false)" class="mt-2">
-                                          <mat-expansion-panel-header style="padding-top: 0px !important; margin-top: 0px !important;">
+                                          <mat-expansion-panel-header
+                                            style="padding-top: 0px !important; margin-top: 0px !important;">
                                             <mat-panel-title>
                                               <div class="container">
                                                 <div class="row">
@@ -1260,43 +1296,63 @@
                       <hr />
                       <div class="row">
                         <div class="col-sm-12 mt-2">
-                          <table mat-table [dataSource]="dataSourcePoderesPersonagens"
-                            class="mat-elevation-z8 full-width">
-                            <ng-container matColumnDef="nome" class="mat-column-treinado">
-                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
-                                mat-sort-header>
-                                NOME
-                              </th>
-                              <td class="pericia" mat-cell style="padding-left: 2% !important"
-                                *matCellDef="let element">
-                                {{ element.nome.toUpperCase() }}
-                              </td>
-                            </ng-container>
-                            <ng-container matColumnDef="tipo" class="mat-column-treinado">
-                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
-                                mat-sort-header>
-                                TIPO
-                              </th>
-                              <td style="padding-left: 2% !important" class="pericia" mat-cell
-                                *matCellDef="let element">
-                                {{ element.tipo.toUpperCase() }}
-                              </td>
-                            </ng-container>
-                            <ng-container matColumnDef="acoes" class="mat-column-treinado">
-                              <th style="padding-left: 2% !important" class="pericia" mat-header-cell *matHeaderCellDef
-                                mat-sort-header>
-                              </th>
-                              <td style="padding-left: 2% !important" class="pericia" mat-cell
-                                *matCellDef="let element">
-                                {{ element.tipo.toUpperCase() }}
-                              </td>
-                            </ng-container>
-                            <tr mat-header-row *matHeaderRowDef="displayedColumnsPoderes"></tr>
-                            <tr mat-row *matRowDef="
-                                let row;
-                                columns: displayedColumnsPoderes
-                              "></tr>
-                          </table>
+                         
+                          <table mat-table [dataSource]="dataSourcePoderesPersonagens" multiTemplateDataRows
+                          class="mat-elevation-z8 full-width">
+                          @for (column of displayedColumnsPoderes; track column) {
+                          <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
+                            <th class="pericia" mat-header-cell *matHeaderCellDef
+                              style="text-transform: uppercase; padding-left: 2% !important">
+                              {{ column }}
+                            </th>
+                            <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
+                              {{ element.poder[column] }}</td>
+                          </ng-container>
+                          }
+                          <ng-container matColumnDef="expand">
+                            <th mat-header-cell *matHeaderCellDef aria-label="row actions" class="pericia"
+                              style="padding-left: 2% !important">
+                              &nbsp;
+                            </th>
+                            <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
+                              <img src="assets/img/d20.png" class="img-dado" (click)="element.rolarDado()"
+                                style="margin-bottom: 0px !important; vertical-align: super;" />
+                              <button mat-icon-button aria-label="expand row" (click)="
+                                    expandedElementPoderes = expandedElementPoderes === element ? null : element;
+                                    $event.stopPropagation()
+                                  ">
+                                @if (expandedElementPoderes === element) {
+                                <mat-icon>keyboard_arrow_up</mat-icon>
+                                } @else {
+                                <mat-icon>keyboard_arrow_down</mat-icon>
+                                }
+                              </button>
+                            </td>
+                          </ng-container>
+                          <ng-container matColumnDef="expandedDetail">
+                            <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element"
+                              [attr.colspan]="displayedColumnsWithExpandPoderes.length">
+                              <div class="container celement-detail" [@detailExpand]="
+                                    element == expandedElementPoderes ? 'expanded' : 'collapsed'
+                                  ">
+                                <mat-tab-group>
+                                  <mat-tab label="Descrição">
+                                    <div class="text-justify mt-2 mb-2" [innerHTML]="element.poder.descricao">
+                                    </div>
+                                  </mat-tab>
+                                </mat-tab-group>
+                              </div>
+                            </td>
+                          </ng-container>
+
+                          <tr mat-header-row *matHeaderRowDef="displayedColumnsWithExpandPoderes"></tr>
+                          <tr mat-row *matRowDef="let element; columns: displayedColumnsWithExpandPoderes"
+                            class="element-row" [class.expanded-row]="expandedElementPoderes === element"></tr>
+                          <tr mat-row *matRowDef="let row; columns: ['expandedDetail'];" class="detail-row"></tr>
+                        </table>
+
+
+
                         </div>
                       </div>
                     </mat-expansion-panel>
@@ -1319,19 +1375,69 @@
                                   <mat-icon>thunderstorm</mat-icon>
                                 </span>
                               </div>
+
                             </div>
                           </div>
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
-                      @for (imunidade of personagem.imunidades; track
-                      imunidade){
                       <div class="row">
-                        <button class="me-2 proficiencia" mat-flat-button disabled>
-                          {{ imunidade }}
-                        </button>
+                        <table mat-table [dataSource]="dataSourceMagiasPersonagens" multiTemplateDataRows
+                          class="mat-elevation-z8 full-width">
+                          @for (column of displayedColumnsMagias; track column) {
+                          <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
+                            <th class="pericia" mat-header-cell *matHeaderCellDef
+                              style="text-transform: uppercase; padding-left: 2% !important">
+                              {{ column }}
+                            </th>
+                            <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
+                              {{ element.magia[column] }}</td>
+                          </ng-container>
+                          }
+                          <ng-container matColumnDef="expand">
+                            <th mat-header-cell *matHeaderCellDef aria-label="row actions" class="pericia"
+                              style="padding-left: 2% !important">
+                              &nbsp;
+                            </th>
+                            <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element">
+                              <img src="assets/img/d20.png" class="img-dado" (click)="element.rolarDado()"
+                                style="margin-bottom: 0px !important; vertical-align: super;" />
+                              <button mat-icon-button aria-label="expand row" (click)="
+                                    expandedElementMagia = expandedElementMagia === element ? null : element;
+                                    $event.stopPropagation()
+                                  ">
+                                @if (expandedElementMagia === element) {
+                                <mat-icon>keyboard_arrow_up</mat-icon>
+                                } @else {
+                                <mat-icon>keyboard_arrow_down</mat-icon>
+                                }
+                              </button>
+                            </td>
+                          </ng-container>
+                          <ng-container matColumnDef="expandedDetail">
+                            <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element"
+                              [attr.colspan]="displayedColumnsWithExpandMagias.length">
+                              <div class="container celement-detail" [@detailExpand]="
+                                    element == expandedElementMagia ? 'expanded' : 'collapsed'
+                                  ">
+                                <mat-tab-group>
+                                  <mat-tab label="Descrição">
+                                    <div class="text-justify mt-2 mb-2" [innerHTML]="element.magia.descricao">
+                                    </div>
+                                  </mat-tab>
+                                  <mat-tab label="Aprimoramento">
+                                  </mat-tab>
+                                </mat-tab-group>
+                              </div>
+                            </td>
+                          </ng-container>
+
+                          <tr mat-header-row *matHeaderRowDef="displayedColumnsWithExpandMagias"></tr>
+                          <tr mat-row *matRowDef="let element; columns: displayedColumnsWithExpandMagias"
+                            class="element-row" [class.expanded-row]="expandedElementMagia === element"></tr>
+                          <tr mat-row *matRowDef="let row; columns: ['expandedDetail'];" class="detail-row"></tr>
+                        </table>
                       </div>
-                      }
                     </mat-expansion-panel>
                   </mat-card>
                 </div>
@@ -1443,8 +1549,7 @@
                                   </div>
                                 </div>
                                 @for (bonus of element.bonus_condicional_permanente; track bonus) {
-                                <div class="row"
-                                  style="line-height: 250% !important;">
+                                <div class="row" style="line-height: 250% !important;">
                                   <div class="col-sm-5">
                                     Bônus de Poder:
                                   </div>

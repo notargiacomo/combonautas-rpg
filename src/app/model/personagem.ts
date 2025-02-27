@@ -7,6 +7,7 @@ import { Regras } from '../enum/regras.enum';
 import { Sentido } from '../enum/sentido.enum';
 import { Tamanho } from '../enum/tamanho.enum';
 import { Item } from './item';
+import { Magia } from './magia';
 import { Pericia } from './pericia';
 import { Poder } from './poder';
 import { Raca } from './raca';
@@ -26,9 +27,7 @@ export class Personagem {
   pontos_mana_temporarios!: number;
   bonus_mana_total!: number;
   bonus_mana_nivel!: number;
-  defesa!:number;
-  defesa_bonus!:number;
-  atributo_defesa!: string;
+  defesa!: DefesaPersonagem;
   atributos!: {
     forca: number;
     forca_comprada: number;
@@ -56,7 +55,7 @@ export class Personagem {
     carisma_bonus: number;
   };
   numero_pericias_livre!: number;
-  poderes!:Poder[];
+  poderes!:PoderPersonagem[];
   pericias?: PericiaPersonagem[];
   posse?: Posse;
   proficiencia?: Proficiencia[];
@@ -65,16 +64,19 @@ export class Personagem {
   sentidos?: Sentido[];
   resistencias?: Resistencias[];
   imunidades?: Imunidade[];
+  magias!: MagiaPersonagem[]
 
   constructor() {
     this.sentidos = [];
     this.poderes = [];
+    this.magias = [];
+    this.defesa = new DefesaPersonagem(10, 'Destreza');
     
     this.inicializaNivel();
     this.inicializaAtributos();
     this.inicializaPontosVida();
     this.inicializaPontosMana();
-    this.inicializaDefesa();
+    this.defesa.inicializaDefesa();
     this.inicializaProficiencias();
     this.inicializaDeslocamentos();
     this.inicializaResistencias();
@@ -99,12 +101,6 @@ export class Personagem {
     this.proficiencia = [];
     this.proficiencia.push(Proficiencia.ARMAS_SIMPLES);
     this.proficiencia.push(Proficiencia.ARMADURAS_LEVES);
-  }
-
-  private inicializaDefesa() {
-    this.defesa = 10;
-    this.atributo_defesa = Atributo.DESTREZA;
-    this.defesa_bonus = 0;
   }
 
   private inicializaPontosMana() {
@@ -271,7 +267,7 @@ export class Personagem {
     }
 
     this.atualizaPericias();
-    this.atualizaDefesa();
+    this.defesa.atualizaDefesa(this);
     this.posse?.atualizaPosses(this);
   }
 
@@ -310,12 +306,6 @@ export class Personagem {
   public adicionaNumeroPericiasLivres(numeroPericiasExtras: number){
       this.numero_pericias_livre = (numeroPericiasExtras) + this.numero_pericias_livre;
   }
-
-  public atualizaDefesa(){
-    this.defesa = 10;
-    this.defesa +=  Number(this.defesa_bonus);
-    this.defesa += Number(this.recuperaValorAtributo(this.atributo_defesa));
-  };
 
   public atualizaPericias() {
     this.pericias?.forEach(pericia => {
@@ -371,7 +361,7 @@ export class Personagem {
       this.atributos.carisma_bonus;
 
       this.atualizaPericias();
-      this.atualizaDefesa();
+      this.defesa.atualizaDefesa(this);
   }
 
   resetaAtributosRaciais() {
@@ -431,7 +421,7 @@ export class Personagem {
   }
 
   adicionarEspacoSelecaoPoder(descricao: string){
-    this.poderes.push({id:0, nome: descricao});  
+    this.poderes.push({poder:{id:0, nome: descricao}});  
   };
 
   atualizaBonusCondicionalPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[];ativo:boolean;}[]){
@@ -779,4 +769,54 @@ export class Posse {
   public atualizaCarga(){
     this.total_carga = 10 + (this.mediator.atributos? this.mediator.atributos.forca*2: 0) + this.bonus_carga!;
   }
+
+}
+export class MagiaPersonagem {
+  magia?: Magia;
+  numero_vezes_aprendida?: number;
+  memorizada?: boolean;
+  total_pms_gastos?: number;
+  raca?: string;
+  origem?: string;
+  classe?: string;
+  nivel_classe?:number;
+}
+
+export class PoderPersonagem {
+  poder?: Poder;
+  ativo?: boolean;
+
+  constructor(poder:Poder, ativo:boolean){
+    this.poder = poder,
+    this.ativo = ativo
+  }
+}
+
+export class DefesaPersonagem {
+  defesa!:number;
+  defesa_bonus!: {
+    bonus?: number;
+    descricao?: string;
+    duracao?: string;
+  }[];
+  bonus_total!:number;
+  atributo_defesa!: string;
+
+  constructor(defesa:number, atributo_defesa:string){
+    this.defesa = defesa;
+    this.atributo_defesa = atributo_defesa;
+  }
+
+  public inicializaDefesa() {
+    this.defesa = 10;
+    this.atributo_defesa = Atributo.DESTREZA;
+    this.defesa_bonus = [];
+    this.bonus_total = 0;
+  }
+
+  public atualizaDefesa(mediator: Personagem){
+    this.defesa = 10;
+    this.defesa +=  Number(this.defesa_bonus);
+    this.defesa += Number(mediator.recuperaValorAtributo(this.atributo_defesa));
+  };
 }

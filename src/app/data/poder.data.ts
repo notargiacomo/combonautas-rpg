@@ -2765,6 +2765,15 @@ export class PoderData {
         referencias: Referencia.BASICO,
         paginas: '20'
       },
+      {
+        id: 250,
+        nome: 'Amiga das Plantas',
+        descricao: 'Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: ['this.adicionarMagiaExtra(195)'],
+        referencias: Referencia.BASICO,
+        paginas: '21'
+      }
     ];
   }
 }

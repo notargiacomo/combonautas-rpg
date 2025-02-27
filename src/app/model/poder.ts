@@ -25,8 +25,12 @@ export class Poder {
   tipo?: string;
   classe?: Classe;
   raca?: Raca;
+  duracao?: string;
+  custo_pm?: string;
+  execucao?: string;
   instrucao?: string[];
   resolucao?: string[];
+  ativacao?: string[];
   referencias?: string;
   paginas?: string;
   auxiliar?: string;
