@@ -751,7 +751,6 @@ export class Posse {
             dano: '1d3+0',
             bonus_ataque: []}, undefined))
   
-      // this.equipamentos_vestidos = [{}, {}, {}, {}];
       this.numero_itens_vestidos_maximo = 4;
       this.total_carga = 0;
       this.bonus_carga = 0;
@@ -764,6 +763,16 @@ export class Posse {
       this.moedas_cobre = 0;
       this.atualizaCarga();
     }
+
+    this.equipamentos_empunhados.forEach(equip => {
+      equip.ataque?.bonus_ataque?.forEach(bonus => {
+        equip.ataque!.total_bonus_ataque! += bonus.bonus!;
+      })
+
+      equip.ataque!.ataque = Number(equip.getBonusPericiaAtaque(mediator)) + Number(equip.getBonusAtributoAtaque(mediator)) + equip.ataque!.total_bonus_ataque!;
+
+      equip.formula = `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`;
+    });
     
   }
 
