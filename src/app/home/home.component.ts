@@ -89,7 +89,7 @@ export class HomeComponent {
     private readonly servicoPericia: PericiasService,
   ) {}
 
-  async ngOnInit() {
+  ngOnInit() {
     this.personagens = [];
     this.personagem = new Personagem();
 

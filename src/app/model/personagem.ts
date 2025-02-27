@@ -595,9 +595,49 @@ export class Equipamento {
     empunhadura?: string;
   }
 
-  constructor(item: Item) {
+  constructor(
+    nome: string, 
+    formula: string, 
+    descricao: string, 
+    ataque: {
+              ataque?: number;
+              atributo_descricao_ataque?: string;
+              atributo_valor_ataque?: number;
+              pericia_descricao_ataque?: string;
+              pericia_valor_ataque?: number;
+              bonus_ataque?: {
+                                origem?:string;
+                                bonus?:number;
+                                condicao?: string;
+                                ativo?:boolean;
+                              } [];
+              total_bonus_ataque?:number;
+              dano?:string;
+              atributo_descricao_dano?: string;
+              atributo_valor_dano?: number;
+              dano_extra?: {
+                valor_dano_extra?:number;
+                tipo_dano_extra?:string;
+                condicao?: string[];
+                ativo?:boolean;
+              } [];
+              margem_ameaca?: number;
+              multiplicador_critico?: number;
+              melhorias?: string[];
+              material_especial?: string;
+              encantamentos?: string[];
+              proficiencia?: string;
+              distancia?: string;
+              alcance?: number;
+              empunhadura?: string;
+            },
+    item?: Item, 
+    ) {
     this.item = item;
-    this.nome = item.nome;
+    this.nome = item ? item.nome: nome;
+    this.formula = formula;
+    this.descricao = descricao;
+    this.ataque = ataque;
   }
 
   public ativaDesativaBonusCondicionalPermanente?(bonus: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}){
@@ -607,6 +647,18 @@ export class Equipamento {
       }
     });
   }
+
+  
+  public getBonusPericiaAtaque(personagem: Personagem){
+    let pericia = personagem.pericias?.find((pericia) => pericia.pericia === this.ataque?.pericia_descricao_ataque);
+    return pericia?.total ? pericia?.total - Number(personagem.recuperaValorAtributo('forca')): 0;
+  }
+
+  public getBonusAtributoAtaque(personagem: Personagem): number{
+    return Number(personagem.recuperaValorAtributo('forca'));
+  }
+
+
 }
 
 export class Deslocamento {
@@ -667,12 +719,9 @@ export class Posse {
   }
 
   public atualizaPosses(mediator: Personagem) {
-    this.equipamentos_empunhados = [
-      { 
-        nome: 'Mão Direita', 
-        formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`,
-        descricao: Regras.ATAQUES_DESARMADOS,
-        ataque: {
+    if(!this.equipamentos_empunhados){
+      this.equipamentos_empunhados = [];
+      this.equipamentos_empunhados.push(new Equipamento('Mão Direita', `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, Regras.ATAQUES_DESARMADOS, {
           ataque: 0,
           atributo_descricao_ataque: Atributo.FORCA,
           pericia_descricao_ataque: Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
@@ -685,40 +734,37 @@ export class Posse {
           empunhadura: "Uma mão",
           alcance: Alcance.CORPO_A_CORPO,
           dano: '1d3+0',
-          bonus_ataque: []
-        }
-      }, 
-      { 
-        nome: 'Mão Esquerda', 
-        formula: `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, descricao: Regras.ATAQUES_DESARMADOS,
-        ataque: {
-          ataque: 0, 
-          atributo_descricao_ataque: Atributo.FORCA,
-          pericia_descricao_ataque: Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
-          atributo_descricao_dano: Atributo.FORCA,
-          total_bonus_ataque: 0,
-          margem_ameaca: 1,
-          multiplicador_critico: 2,
-          proficiencia: Proficiencia.ARMAS_SIMPLES,
-          distancia: "Corpo a Corpo",
-          empunhadura: "Uma mão",
-          alcance: Alcance.CORPO_A_CORPO,
-          dano: '1d3+0',
-          bonus_ataque: []
-        }
-      }];
-    this.equipamentos_vestidos = [{}, {}, {}, {}];
-    this.numero_itens_vestidos_maximo = 4;
-    this.total_carga = 0;
-    this.bonus_carga = 0;
-    this.carga_atual = 0;
-    this.equipamentos_carregados = [];
-    this.itens = [];
-    this.moedas_plantina = 0;
-    this.moedas_ouro = 0;
-    this.moedas_prata = 0;
-    this.moedas_cobre = 0;
-    this.atualizaCarga();
+          bonus_ataque: []}, undefined));
+  
+          this.equipamentos_empunhados.push(new Equipamento('Mão Esquerda', `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`, Regras.ATAQUES_DESARMADOS, {
+            ataque: 0,
+            atributo_descricao_ataque: Atributo.FORCA,
+            pericia_descricao_ataque: Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
+            atributo_descricao_dano: Atributo.FORCA,
+            total_bonus_ataque: 0,
+            margem_ameaca: 1,
+            multiplicador_critico: 2,
+            proficiencia: Proficiencia.ARMAS_SIMPLES,
+            distancia: "Corpo a Corpo",
+            empunhadura: "Uma mão",
+            alcance: Alcance.CORPO_A_CORPO,
+            dano: '1d3+0',
+            bonus_ataque: []}, undefined))
+  
+      // this.equipamentos_vestidos = [{}, {}, {}, {}];
+      this.numero_itens_vestidos_maximo = 4;
+      this.total_carga = 0;
+      this.bonus_carga = 0;
+      this.carga_atual = 0;
+      this.equipamentos_carregados = [];
+      this.itens = [];
+      this.moedas_plantina = 0;
+      this.moedas_ouro = 0;
+      this.moedas_prata = 0;
+      this.moedas_cobre = 0;
+      this.atualizaCarga();
+    }
+    
   }
 
   public atualizaCarga(){

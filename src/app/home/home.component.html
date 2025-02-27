@@ -565,7 +565,7 @@
                         <hr />
                         <div class="row">
                           <table mat-table [dataSource]="personagem.posse!.equipamentos_empunhados ?? []"
-                            multiTemplateDataRows class="mat-elevation-z8">
+                            multiTemplateDataRows class="mat-elevation-z8 full-width">
                             @for (column of displayedColumnsEmpunhados; track column) {
                             <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
                               <th class="pericia" mat-header-cell *matHeaderCellDef
@@ -599,7 +599,7 @@
                             </ng-container>
                             <ng-container matColumnDef="expandedDetail">
                               <td style="padding-left: 2% !important" class="pericia" mat-cell *matCellDef="let element"
-                                [attr.colspan]="columnsToDisplayWithExpandPericia.length">
+                                [attr.colspan]="displayedColumnsWithExpandEmpunhados.length">
                                 <div class="container celement-detail" [@detailExpand]="
                                     element == expandedElementEmpunhados ? 'expanded' : 'collapsed'
                                   ">
@@ -704,10 +704,22 @@
                                               <div class="col-sm-6 mt-2">
                                                 <label>{{element.ataque.pericia_descricao_ataque}}</label>
                                               </div>
+                                              <div class="col-sm-6 mt-2">
+                                                <input style="font-size: 12pt !important; width: 100%;"
+                                                class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                [value]="element.getBonusPericiaAtaque(personagem)"
+                                                disabled />
+                                              </div>
                                             </div>
                                             <div class="row">
                                               <div class="col-sm-6 mt-2">
                                                 <label>{{element.ataque.atributo_descricao_ataque}}</label>
+                                              </div>
+                                              <div class="col-sm-6 mt-2">
+                                                <input style="font-size: 12pt !important; width: 100%;"
+                                                class="col-sm-3 vida-mana-defesa" size="2" change=""
+                                                [value]="element.getBonusAtributoAtaque(personagem)"
+                                                disabled />
                                               </div>
                                             </div>
                                             @for (bonus of element.ataque.bonus_ataque; track bonus) {
