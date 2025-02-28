@@ -28,6 +28,7 @@ import { MagiaService } from '../service/magia.service';
 import { Magia } from '../model/magia';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
+import { Sentido } from '../enum/sentido.enum';
 
 @Component({
   selector: 'app-home',
@@ -159,6 +160,7 @@ export class HomeComponent {
           );
   
           this.personagem.recalculaAtributos();
+          Sentido.OLFATO_AGUCADO;
           this.personagem.raca?.habilidades?.forEach((habilidade) => {
             if (habilidade.resolucao) {
               habilidade.resolucao?.forEach((resolucao) => {
