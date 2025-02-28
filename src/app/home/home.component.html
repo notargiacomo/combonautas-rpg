@@ -544,11 +544,11 @@
                           <div class="container">
                             @for (bonus of personagem.defesa.defesa_bonus; track bonus) {
                               <div class="row">
-                                <div class="col-sm-7">
+                                <div class="col-sm-6">
                                   <label>{{bonus.descricao}}</label>
                                 </div>
-                                <div class="col-sm-1">
-                                  <input class="vida-mana-defesa" [value]="bonus.bonus" disabled/>
+                                <div class="col-sm-2">
+                                  <input size="2" style="font-size: 12pt !important; width: 100%;" class="vida-mana-defesa" [value]="bonus.bonus" disabled/>
                                 </div>
                                 <div class="col-sm-4">
                                   <label>{{bonus.duracao}}</label>
@@ -559,6 +559,16 @@
                               <div class="col-sm-12">
                                 <label>O personagem não possui bônus extras.</label>
                               </div>
+                            } @else {
+                              <div class="row">
+                                <hr>
+                                <div class="col-sm-6">
+                                  <label>Total: </label>
+                                </div>
+                                <div class="col-sm-6">
+                                  <input size="2" style="font-size: 12pt !important; width: 100%;" class="vida-mana-defesa" [value]="personagem.defesa.bonus_total" disabled/>
+                                </div>
+                              </div>  
                             }
                           </div>
                           <div class="button-row mt-4 d-flex justify-content-end">

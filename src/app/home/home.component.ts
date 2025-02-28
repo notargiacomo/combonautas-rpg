@@ -146,16 +146,17 @@ export class HomeComponent {
             resultado.resolucao.push(...resultado.instrucao);
           }
           this.personagem.resetaAtributosRaciais();
+  
+          this.personagem.raca?.resolucao?.forEach((res) => {
+            eval(res);
+          });
+
           this.personagem.raca?.habilidades?.forEach(poder => {
             this.personagem.poderes.push(new PoderPersonagem(poder, false));
           })
           this.dataSourcePoderesPersonagens = new MatTableDataSource(
             this.personagem.poderes
           );
-  
-          this.personagem.raca?.resolucao?.forEach((res) => {
-            eval(res);
-          });
   
           this.personagem.recalculaAtributos();
           this.personagem.raca?.habilidades?.forEach((habilidade) => {
@@ -171,7 +172,6 @@ export class HomeComponent {
             }
           });
         }
-
       } else {
         console.log('Diálogo foi fechado sem retorno.');
       }

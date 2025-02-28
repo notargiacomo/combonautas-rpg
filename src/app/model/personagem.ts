@@ -816,7 +816,10 @@ export class DefesaPersonagem {
 
   public atualizaDefesa(mediator: Personagem){
     this.defesa = 10;
-    this.defesa +=  Number(this.defesa_bonus);
+    this.defesa_bonus.forEach(bonus => {
+      this.bonus_total += bonus.bonus!;
+    })
+    this.defesa +=  Number(this.bonus_total);
     this.defesa += Number(mediator.recuperaValorAtributo(this.atributo_defesa));
   };
 }

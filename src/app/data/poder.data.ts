@@ -2773,6 +2773,26 @@ export class PoderData {
         instrucao: ['this.adicionarMagiaExtra(195)'],
         referencias: Referencia.BASICO,
         paginas: '21'
+      },
+      {
+        id: 251,
+        nome: 'Armadura de Allihanna',
+        descricao: 'Você pode gastar uma ação de movimento e 1 PM para transformarsua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [],
+        ativacao: [`this.personagem.defesa.defesa_bonus.push({bonus:2, descricao:'Armadura de Allihanna', duracao: 'Cena'});`, `this.personagem.defesa.atualizaDefesa(this.personagem);`],
+        referencias: Referencia.BASICO,
+        paginas: '21'
+      },
+      {
+        id: 252,
+        nome: 'Empatia Selvagem',
+        descricao: 'Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais (veja Diplomacia, na página 118). Caso receba esta habilidade novamente, recebe +2 em Adestramento.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '21'
       }
     ];
   }
