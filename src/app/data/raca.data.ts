@@ -92,7 +92,7 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '22',
         descricao: ``,
-        historia: ``, resolucao: []
+        historia: ``, resolucao: [], habilidades: [{id:253}, {id:254}, {id:255}]
       },
       {
         id: 5,
@@ -108,7 +108,7 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '23',
         descricao: ``,
-        historia: ``, resolucao: []
+        historia: ``, resolucao: [], habilidades: [{id:256}, {id:257}, {id:258}, {id:259}]
       },
       {
         id: 6,

@@ -2730,8 +2730,8 @@ export class PoderData {
         raca: {id:2},
         instrucao: [
           `this.personagem.adicionaSentido('Visão no Escuro')`, 
-          `this.personagem.atualizaBonusCondicionalPericia('PERCEPÇÃO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`,
-          `this.personagem.atualizaBonusCondicionalPericia('SOBREVIVÊNCIA', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`],
+          `this.personagem.atualizaBonusExtraPericia('PERCEPÇÃO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`,
+          `this.personagem.atualizaBonusExtraPericia('SOBREVIVÊNCIA', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`],
         referencias: Referencia.BASICO,
         paginas: '20'
       },
@@ -2793,6 +2793,77 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '21'
+      },
+      {
+        id: 253,
+        nome: 'Graça de Glórienn',
+        descricao: 'Seu deslocamento é 12m (em vez de 9m).',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: ['this.personagem.deslocamentos[0].valor = 12;'],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '21'
+      },
+      {
+        id: 254,
+        nome: 'Sangue Mágico',
+        descricao: 'Você recebe +1 ponto de mana por nível.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: ['this.personagem.adicionaBonusNivelMana(1);'],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '21'
+      },
+      {
+        id: 255,
+        nome: 'Sentidos Élficos',
+        descricao: 'Você recebe visão na penumbra e +2 em Misticismo e Percepção.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.adicionaSentido('Visão na Penumbra')`, 
+          `this.personagem.atualizaBonusExtraPericia('PERCEPÇÃO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:[], ativo: true}]);`, `this.personagem.atualizaBonusExtraPericia('MISTICISMO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:[], ativo: true}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '21'
+      },
+      {
+        id: 256,
+        nome: 'Engenhoso',
+        descricao: 'Você não sofre penalidades em testes de perícia por não usar ferramentas. Se usar a ferramenta necessária, recebe +2 no teste de perícia.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.pericias?.forEach(pericia=>{if(pericia.objeto?.exigeFerramenta){pericia.adicionaBonusExtra([{origem: "Engenhoso", bonus: 2, condicao: ['Ferramenta'], ativo:false}])}})`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '23'
+      },
+      {
+        id: 257,
+        nome: 'Espelunqueiro',
+        descricao: 'Você recebe visão no escuro e deslocamento de escalada igual ao seu deslocamento terrestre.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.adicionaSentido('Visão no Escuro')`, `this.personagem.adicionaDeslocamento('Escalada', this.personagem.deslocamentos[0].valor)`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '23'
+      },
+      {
+        id: 258,
+        nome: 'Peste Esguia',
+        descricao: 'Seu tamanho é Pequeno (veja a página 106), mas seu deslocamento se mantém 9m. Apesar de pequenos, goblins são rápidos.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.tamanho = 'Pequeno';`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '23'
+      },
+      {
+        id: 259,
+        nome: 'Rato das Ruas',
+        descricao: 'Você recebe +2 em Fortitude e sua recuperação de PV e PM nunca é inferior ao seu nível.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.atualizaBonusExtraPericia('FORTITUDE', [{origem: 'Rato das Ruas', bonus: 2, condicao:[], ativo: true}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '23'
       }
     ];
   }

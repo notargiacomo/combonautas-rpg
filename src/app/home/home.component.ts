@@ -141,13 +141,13 @@ export class HomeComponent {
     dialogRef.afterClosed().subscribe((resultado) => {
       if (resultado) {
         if(!(this.personagem.raca?.id === resultado.id)){
+          console.log(!(this.personagem.raca?.id === resultado.id));
           this.personagem.raca = resultado;
           if (this.personagem.raca === undefined) {
             resultado.resolucao = [];
             resultado.resolucao.push(...resultado.instrucao);
           }
-          this.personagem.resetaAtributosRaciais();
-  
+          this.personagem.resetarRaca();
           this.personagem.raca?.resolucao?.forEach((res) => {
             eval(res);
           });

@@ -67,10 +67,15 @@ export class Personagem {
   magias!: MagiaPersonagem[]
 
   constructor() {
+    this.resetaPersonagem();
+  }
+
+  resetaPersonagem(){
     this.sentidos = [];
     this.poderes = [];
     this.magias = [];
     this.defesa = new DefesaPersonagem(10, 'Destreza');
+    this.tamanho = Tamanho.MEDIO;
     
     this.inicializaNivel();
     this.inicializaAtributos();
@@ -80,6 +85,15 @@ export class Personagem {
     this.inicializaProficiencias();
     this.inicializaDeslocamentos();
     this.inicializaResistencias();
+  } 
+
+  resetarRaca() {
+    this.atributos.forca_racial = 0;
+    this.atributos.destreza_racial = 0;
+    this.atributos.constituicao_racial = 0;
+    this.atributos.inteligencia_racial = 0;
+    this.atributos.sabedoria_racial = 0;
+    this.atributos.carisma_racial = 0;
   }
 
   private inicializaNivel() {
@@ -282,17 +296,31 @@ export class Personagem {
   }
 
   adicionaBonusTotalVida(bonusTotal: number){
-    this.bonus_vida_total = bonusTotal;
+    this.bonus_vida_total += bonusTotal;
     this.recalculaVida();
   }
 
   adicionaBonusNivelVida(bonusNivel: number){
-    this.bonus_vida_nivel = bonusNivel;
+    this.bonus_vida_nivel += bonusNivel;
     this.recalculaVida();
+  }
+
+  adicionaBonusTotalMana(bonusTotal: number){
+    this.bonus_mana_total += bonusTotal;
+    this.recalculaVida();
+  }
+
+  adicionaBonusNivelMana(bonusNivel: number){
+    this.bonus_mana_nivel += bonusNivel;
+    this.recalculaMana();
   }
 
   recalculaVida(){
     this.pontos_vida_total = (this.atributos.constituicao * this.nivel!) + this.bonus_vida_total + (this.bonus_vida_nivel * this.nivel!);
+  }
+
+  recalculaMana(){
+    this.pontos_mana_atual = this.bonus_mana_total + (this.bonus_mana_nivel * this.nivel!);
   }
 
   public adicionaSentido(sentido: Sentido){
@@ -306,6 +334,10 @@ export class Personagem {
 
   public adicionaNumeroPericiasLivres(numeroPericiasExtras: number){
       this.numero_pericias_livre = (numeroPericiasExtras) + this.numero_pericias_livre;
+  }
+
+  public adicionaDeslocamento(nome: string, valor: number){
+    this.deslocamentos?.push(new Deslocamento(nome, valor));
   }
 
   public atualizaPericias() {
@@ -365,15 +397,6 @@ export class Personagem {
       this.defesa.atualizaDefesa(this);
   }
 
-  resetaAtributosRaciais() {
-    this.atributos.forca_racial = 0;
-    this.atributos.destreza_racial = 0;
-    this.atributos.constituicao_racial = 0;
-    this.atributos.inteligencia_racial = 0;
-    this.atributos.sabedoria_racial = 0;
-    this.atributos.carisma_racial = 0;
-  }
-
   inicializaPericias(pericias: Pericia[]) {
     this.pericias = [];
     this.numero_pericias_livre = this.atributos.inteligencia;
@@ -384,6 +407,7 @@ export class Personagem {
       var periciaPersonagem = new PericiaPersonagem();
 
       periciaPersonagem.inicializa(
+        pericia,
         pericia.nome!,
         pericia.descricao!,
         this.nivel!,
@@ -425,16 +449,17 @@ export class Personagem {
     this.poderes.push({poder:{id:0, nome: descricao}});  
   };
 
-  atualizaBonusCondicionalPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[];ativo:boolean;}[]){
+  atualizaBonusExtraPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[];ativo:boolean;}[]){
     this.pericias?.find(p => p.pericia?.normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase() === nome        .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase())?.adicionaBonusCondicionalPermanente(condicao);
+    .toLowerCase())?.adicionaBonusExtra(condicao);
     this.atualizaPericias();
   }
 }
 export class PericiaPersonagem {
+  objeto?: Pericia;
   pericia?: string;
   descricao?: string;
   treinado?: boolean;
@@ -446,34 +471,32 @@ export class PericiaPersonagem {
   atributo_selecionado_descricao?: string;
   outros?: number;
   bonus_treinado: number = 2;
-  bonus_permanente?: {
-    origem?: string;
-    bonus: number;
-  } [];
-  bonus_condicional_permanente?: {
+  bonus_extras?: {
     origem?: string;
     bonus?: number;
     condicao?: string[];
     ativo?:boolean;
   } []
 
-  adicionaBonusCondicionalPermanente(condicao: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}[]){
-    if(!this.bonus_condicional_permanente) 
-      this.bonus_condicional_permanente = condicao;
+  adicionaBonusExtra(condicao: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}[]){
+    if(!this.bonus_extras) 
+      this.bonus_extras = condicao;
     else
-      this.bonus_condicional_permanente.push(...condicao);
+      this.bonus_extras.push(...condicao);
   }
 
   constructor() {
   }
 
   inicializa(
+    objeto: Pericia,
     pericia: string,
     descricao: string,
     nivel: number,
     atributo_descricao: string,
     atributo: number,
   ) {
+    this.objeto = objeto;
     this.outros = 0;
     this.pericia = pericia;
     this.descricao = descricao;
@@ -493,8 +516,8 @@ export class PericiaPersonagem {
     return Math.floor(Number(this.nivel!)/2);
   }
 
-  ativaDesativaBonusCondicionalPermanente(bonus: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}){
-    this.bonus_condicional_permanente?.forEach(element => {
+  ativaDesativaBonusExtra(bonus: {origem?: string; bonus?: number; condicao?: string[]; ativo:boolean;}){
+    this.bonus_extras?.forEach(element => {
       if(bonus === element){
         element.ativo = !element.ativo;
       }
@@ -507,21 +530,16 @@ export class PericiaPersonagem {
     this.atributo_selecionado = valorAtributo !== undefined ? valorAtributo : this.atributo_selecionado;
     this.atributo = this.atributo_selecionado;
 
-    let bonus_condicional_permanente_total = 0;
-    this.bonus_condicional_permanente?.forEach(bonus => {
+    let bonus_extra_total = 0;
+    this.bonus_extras?.forEach(bonus => {
       if(bonus.ativo){
-        bonus_condicional_permanente_total += bonus.bonus!;
+        bonus_extra_total += bonus.bonus!;
       }
-    });
-
-    let bonus_permanente_total = 0;
-    this.bonus_permanente?.forEach(bonus => {
-      bonus_permanente_total += bonus.bonus!;
     });
 
     this.bonus_treinado = this.nivel! >= 15 ? 6 : this.nivel! >= 7 ? 4: 2;
 
-    this.total = Number(this.atributo_selecionado) + Math.floor(Number(this.nivel!)/2) + Number(this.outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_permanente_total + bonus_condicional_permanente_total;
+    this.total = Number(this.atributo_selecionado) + Math.floor(Number(this.nivel!)/2) + Number(this.outros) + Number(this.treinado ? this.bonus_treinado : 0) + bonus_extra_total;
   }
 
   atualiza(bonus_nivel: number,

@@ -1186,11 +1186,11 @@
                       <select class="vida-mana-defesa" style="
                           font-size: 12pt !important;
                           width: 100% !important;
-                        ">
+                        " [(value)]="personagem.tamanho">
                         @for (tamanho of tamanhos; track tamanho) {
                         <option [selected]="
                             personagem.recuperaValor(tamanho.toString()) ===
-                            personagem.recuperaValor('Médio')
+                            personagem.recuperaValor(personagem.tamanho!)
                           " [value]="tamanho">
                           {{ tamanho }}
                         </option>
@@ -1558,7 +1558,7 @@
                                     </mat-select>
                                   </div>
                                 </div>
-                                @for (bonus of element.bonus_condicional_permanente; track bonus) {
+                                @for (bonus of element.bonus_extras; track bonus) {
                                 <div class="row" style="line-height: 250% !important;">
                                   <div class="col-sm-5">
                                     Bônus de Poder:
@@ -1567,12 +1567,12 @@
                                     {{ bonus.bonus }}
                                   </div>
                                   <div class="col-sm-2">
-                                    <mat-checkbox name="treinado" style="margin: 1px !important;"
+                                    <mat-checkbox *ngIf="bonus.condicao.length > 0" name="treinado" style="margin: 1px !important;"
                                       [(ngModel)]="element.ativo"
-                                      (change)="element.ativaDesativaBonusCondicionalPermanente(bonus)">
+                                      (change)="element.ativaDesativaBonusExtra(bonus)">
                                     </mat-checkbox>
                                   </div>
-                                  <div class="col-sm-4">
+                                  <div class="col-sm-4" *ngIf="bonus.condicao.length > 0">
                                     {{ bonus.condicao.join(", ") }}
                                   </div>
                                 </div>
