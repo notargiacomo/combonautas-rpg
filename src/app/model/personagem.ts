@@ -299,8 +299,9 @@ export class Personagem {
     this.sentidos?.push(sentido);
   }
 
-  public adicionaImunidade(imunidade: Imunidade){
-    this.imunidades?.push(imunidade);
+  public adicionaImunidade(imunidade: string, tipo: string){
+    let objetoImunidade = new Imunidade(imunidade, tipo);
+    this.imunidades?.push(objetoImunidade);
   }
 
   public adicionaNumeroPericiasLivres(numeroPericiasExtras: number){

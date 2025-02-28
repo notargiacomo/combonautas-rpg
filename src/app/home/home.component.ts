@@ -163,13 +163,10 @@ export class HomeComponent {
           this.personagem.raca?.habilidades?.forEach((habilidade) => {
             if (habilidade.resolucao) {
               habilidade.resolucao?.forEach((resolucao) => {
-                Sentido.OLFATO_AGUCADO;
                 eval(resolucao);
               });
             } else {
               habilidade.instrucao?.forEach((instrucao) => {
-                Sentido.OLFATO_AGUCADO;
-                new Imunidade('','');
                 eval(instrucao);
               });
             }

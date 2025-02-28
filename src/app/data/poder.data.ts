@@ -2741,7 +2741,7 @@ export class PoderData {
         descricao: `Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         raca: {id:2},
-        instrucao: ['this.personagem.deslocamentos[0].valor = 6;',`this.personagem.imunidades.push(new Imunidade('SOBRECARREGADO', 'Condição'));`],
+        instrucao: ['this.personagem.deslocamentos[0].valor = 6;',`this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');`],
         referencias: Referencia.BASICO,
         paginas: '20'
       },
