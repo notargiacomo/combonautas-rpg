@@ -2,5 +2,5 @@
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>Sabedoria +2, Destreza +1, Inteligência –1.</p></b>
 <p><b>Amiga das Plantas.</b> Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e</p>
-<p><b>Armadura de Allihanna.</b> Você pode gastar uma ação de movimento e 1 PM para transformarsua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.</p>
+<p><b>Armadura de Allihanna.</b> Você pode gastar uma ação de movimento e 1 PM para transformar sua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.</p>
 <p><b>Empatia Selvagem.</b> Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais (veja Diplomacia, na página 118). Caso receba esta habilidade novamente, recebe +2 em Adestramento.</p>
