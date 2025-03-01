@@ -2718,7 +2718,7 @@ export class PoderData {
         descricao: `Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         raca: {id:1},
-        instrucao: ['this.personagem.adicionaNumeroPericiasLivres(1)', OpcoesSelecao.RADIO, `[{chave: 'Duas Perícias', value: 'this.personagem.adicionaNumeroPericiasLivres(1)'}, {chave: 'Uma Perícia e um Poder', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder geral (Versátil)')"}]`],
+        instrucao: ['this.personagem.adicionaNumeroPericiasLivres(1)', OpcoesSelecao.RADIO, `[{chave: 'Duas Perícias', value: 'this.personagem.adicionaNumeroPericiasLivres(1)'}, {chave: 'Uma Perícia e um Poder Geral', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder geral (Versátil)')"}]`],
         referencias: Referencia.BASICO,
         paginas: '19'
       },
@@ -2780,7 +2780,7 @@ export class PoderData {
         descricao: 'Você pode gastar uma ação de movimento e 1 PM para transformarsua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.',
         tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [],
-        ativacao: [`this.personagem.defesa.defesa_bonus.push({bonus:2, descricao:'Armadura de Allihanna', duracao: 'Cena'});`, `this.personagem.defesa.atualizaDefesa(this.personagem);`],
+        ativacao: [`this.personagem.adicionaBonusDefesa(2, 'Armadura de Allihanna', 'Cena');`],
         referencias: Referencia.BASICO,
         paginas: '21'
       },
@@ -2864,6 +2864,66 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '23'
+      },
+      {
+        id: 260,
+        nome: 'Cria da Tormenta',
+        descricao: 'Você é uma criatura do tipo monstro e recebe +5 em testes de resistência contra efeitos causados por lefeu e pela Tormenta.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.atualizaBonusExtraPericia('FORTITUDE', [{origem: 'Cria da Tormenta', bonus: 5, condicao:['Contra efeitos causados por lefeu e pela Tormenta.'], ativo: false}]);`, `this.personagem.atualizaBonusExtraPericia('REFLEXO', [{origem: 'Cria da Tormenta', bonus: 5, condicao:['Contra efeitos causados por lefeu e pela Tormenta.'], ativo: false}]);`, `this.personagem.atualizaBonusExtraPericia('VONTADE', [{origem: 'Cria da Tormenta', bonus: 5, condicao:['Contra efeitos causados por lefeu e pela Tormenta.'], ativo: false}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '24'
+      },
+      {
+        id: 261,
+        nome: 'Deformidade',
+        descricao: 'Todo lefou possui defeitos físicos que, embora desagradáveis, conferem certas vantagens. Você recebe +2 em duas perícias a sua escolha. Cada um desses bônus conta como um poder da Tormenta (exceto para perda de Crisma). Você pode trocar um desses bônus por um poder da Tormenta a sua escolha (ele também não conta para perda de Carisma).',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: ['this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261)', OpcoesSelecao.RADIO, `[{chave: 'Bonus +2 em Duas Perícias', value: 'this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261)'}, {chave: 'Bonus +2 em Uma Perícias e um Poder da Tormenta', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder da tormenta (Deformidade)')"}]`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '24'
+      },
+      {
+        id: 262,
+        nome: 'Chifres',
+        descricao: 'Você possui uma arma natural de chifres (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.adicionarArmaNatural(this.personagem, 'Chifre', '1d6', 1, 2, 1.5 );`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '25'
+      },
+      {
+        id: 263,
+        nome: 'Couro Rígido',
+        descricao: 'Sua pele é dura como a de um touro. Você recebe +1 na Defesa.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.adicionaBonusDefesa(1, 'Couro Rígido', 'Permanente');`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '25'
+      },
+      {
+        id: 264,
+        nome: 'Faro',
+        descricao: 'Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.adicionaSentido('Faro Aguçado')`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '25'
+      },
+      {
+        id: 265,
+        nome: 'Medo de Altura',
+        descricao: 'Se estiver adjacente a uma queda de 3m ou mais de altura (como um buraco ou penhasco), você fica abalado.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '25'
       }
     ];
   }

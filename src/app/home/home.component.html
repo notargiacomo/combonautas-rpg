@@ -609,7 +609,7 @@
                         </mat-expansion-panel-header>
                         <hr />
                         <div class="row">
-                          <table mat-table [dataSource]="personagem.posse!.equipamentos_empunhados ?? []"
+                          <table mat-table [dataSource]="dsEmpunhados"
                             multiTemplateDataRows class="mat-elevation-z8 full-width">
                             @for (column of displayedColumnsEmpunhados; track column) {
                             <ng-container matColumnDef="{{ column }}" class="mat-column-treinado">
@@ -650,7 +650,7 @@
                                   ">
                                   <mat-tab-group>
                                     <mat-tab label="Descrição">
-                                      <div class="text-justify" [innerHTML]="element.descricao">
+                                      <div class="mt-2 text-justify" [innerHTML]="element.descricao">
                                       </div>
                                     </mat-tab>
                                     <mat-tab label="Detalhes">
@@ -708,7 +708,7 @@
                                             <mat-panel-title>
                                               <div class="container">
                                                 <div class="row">
-                                                  <div class="col-sm-2 mt-2">
+                                                  <div class="col-sm-2 mt-4">
                                                     <label>Ataque:</label>
                                                   </div>
                                                   <div class="col-sm-2 mt-2">
@@ -716,7 +716,7 @@
                                                       class="col-sm-3 vida-mana-defesa" size="2" change=""
                                                       [(ngModel)]="element.ataque.ataque" disabled />
                                                   </div>
-                                                  <div class="col-sm-4 mt-2">
+                                                  <div class="col-sm-4 mt-4">
                                                     <mat-select *ngIf="element.ataque" class="vida-mana-defesa"
                                                       style="font-size: 12pt !important" selectionChange=""
                                                       [(value)]="element.ataque.pericia_descricao_ataque">
@@ -1348,6 +1348,29 @@
                                 <mat-tab-group>
                                   <mat-tab label="Descrição">
                                     <div class="text-justify mt-2 mb-2" [innerHTML]="element.poder.descricao">
+                                    </div>
+                                  </mat-tab>
+                                  <mat-tab label="Decisão" *ngIf="element.decisao">
+                                    <div class="container">
+                                      @for(bonus of element.bonus_pericia_poder_nao_localizado; track bonus) {
+                                        <div class="row">
+                                          <div class="col-sm-2 mt-2">
+                                            <input type="text" [(ngModel)]="bonus.bonus" size="4"
+                                            class="campo-atributos input-numerico" disabled/>
+                                          </div>
+                                          <div class="col-sm-10 mt-2">
+                                            <mat-select class="vida-mana-defesa"
+                                            style="font-size: 12pt !important" (selectionChange)="this.personagem.atualizaBonusExtraPericia($event.value, [{origem: element.poder['nome'], bonus: bonus.bonus, condicao:[], ativo: true}])"
+                                            [(value)]="bonus.pericia">
+                                            @for (pericia of personagem.pericias; track pericia.pericia) {
+                                            <mat-option [value]="pericia.pericia">
+                                              {{ pericia.pericia }}
+                                            </mat-option>
+                                            }
+                                          </mat-select>
+                                          </div>
+                                        </div>
+                                      }
                                     </div>
                                   </mat-tab>
                                 </mat-tab-group>

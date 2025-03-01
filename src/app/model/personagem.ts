@@ -336,6 +336,15 @@ export class Personagem {
       this.numero_pericias_livre = (numeroPericiasExtras) + this.numero_pericias_livre;
   }
 
+  adicionaBonusPericiaPoderNaoLocalizado?(bonus:number, idPoder:number){
+    this.poderes.forEach(poder => {
+      if(poder.poder?.id === idPoder){
+        poder.bonus_pericia_poder_nao_localizado?.push(...[{bonus:bonus}]);
+        poder.decisao = true;
+      }
+    })
+  }
+
   public adicionaDeslocamento(nome: string, valor: number){
     this.deslocamentos?.push(new Deslocamento(nome, valor));
   }
@@ -456,6 +465,40 @@ export class Personagem {
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase())?.adicionaBonusExtra(condicao);
     this.atualizaPericias();
+  }
+
+  public adicionarArmaNatural(mediator: Personagem, nome: string, dano: string ,margem_ameaca: number, multiplicador_critico:number, alcance:number){
+    this.posse!.equipamentos_empunhados!.push(
+      new Equipamento(
+        nome, 
+        `+${mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total} 1d3+${mediator.atributos.forca} 20x2`,
+        Regras.ARMAS_NATURAIS, 
+        {
+          ataque: 0, 
+          atributo_descricao_ataque: Atributo.FORCA,
+          pericia_descricao_ataque: Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
+          atributo_descricao_dano: Atributo.FORCA, 
+          total_bonus_ataque: 0, 
+          margem_ameaca: margem_ameaca, 
+          multiplicador_critico: multiplicador_critico, 
+          proficiencia: Proficiencia.ARMAS_SIMPLES, 
+          distancia: "Corpo a Corpo", 
+          empunhadura: "Arma Natural", 
+          alcance: alcance, 
+          dano: dano, 
+          bonus_ataque: [], 
+          custo: 1, 
+          tipo_custo: 'mana' 
+        }, 
+        undefined
+      ));
+      this.posse!.atualizaPosses(mediator);
+  }
+
+  
+  public adicionaBonusDefesa(bonus: number, descricao: string, duracao: string){
+    if (this.defesa.defesa_bonus === undefined) this.defesa.defesa_bonus = [];
+    this.defesa.defesa_bonus.push({bonus:bonus, descricao:descricao, duracao: duracao});
   }
 }
 export class PericiaPersonagem {
@@ -602,6 +645,8 @@ export class Equipamento {
     distancia?: string;
     alcance?: number;
     empunhadura?: string;
+    custo?: number;
+    tipo_custo?: string;
   }
 
   constructor(
@@ -639,6 +684,8 @@ export class Equipamento {
               distancia?: string;
               alcance?: number;
               empunhadura?: string;
+              custo?: number;
+              tipo_custo?: string;
             },
     item?: Item, 
     ) {
@@ -725,6 +772,7 @@ export class Posse {
     } else if(!this.equipamentos_empunhados![1].item){
       this.equipamentos_empunhados![1] = equipamento;
     } else {}
+
   }
 
   public atualizaPosses(mediator: Personagem) {
@@ -804,10 +852,14 @@ export class MagiaPersonagem {
 export class PoderPersonagem {
   poder?: Poder;
   ativo?: boolean;
+  bonus_pericia_poder_nao_localizado?: {bonus: number; pericia?:string}[];
+  decisao?: boolean;
 
   constructor(poder:Poder, ativo:boolean){
-    this.poder = poder,
-    this.ativo = ativo
+    this.poder = poder;
+    this.ativo = ativo;
+    this.bonus_pericia_poder_nao_localizado = [];
+    this.decisao = false;
   }
 }
 
@@ -840,5 +892,6 @@ export class DefesaPersonagem {
     })
     this.defesa +=  Number(this.bonus_total);
     this.defesa += Number(mediator.recuperaValorAtributo(this.atributo_defesa));
+    console.log(this.defesa_bonus);
   };
 }

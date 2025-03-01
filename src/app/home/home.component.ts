@@ -74,6 +74,7 @@ export class HomeComponent {
   atributos = Object.values(Atributo);
   tamanhos = Object.values(Tamanho);
   dsPericias = new MatTableDataSource<PericiaPersonagem>();
+  dsEmpunhados = new MatTableDataSource<Equipamento>();
   readonly panelOpenState = signal(false);
 
   expandedElementEmpunhados!: Equipamento | null;
@@ -154,23 +155,24 @@ export class HomeComponent {
 
           this.personagem.raca?.habilidades?.forEach(poder => {
             this.personagem.poderes.push(new PoderPersonagem(poder, false));
+            if (poder.resolucao) {
+              poder.resolucao?.forEach((resolucao) => {
+                eval(resolucao);
+              });
+            } else {
+              poder.instrucao?.forEach((instrucao) => {
+                eval(instrucao);
+              });
+            }
           })
+
+          this.dsEmpunhados = new MatTableDataSource(this.personagem.posse!.equipamentos_empunhados);
+          
           this.dataSourcePoderesPersonagens = new MatTableDataSource(
             this.personagem.poderes
           );
   
           this.personagem.recalculaAtributos();
-          this.personagem.raca?.habilidades?.forEach((habilidade) => {
-            if (habilidade.resolucao) {
-              habilidade.resolucao?.forEach((resolucao) => {
-                eval(resolucao);
-              });
-            } else {
-              habilidade.instrucao?.forEach((instrucao) => {
-                eval(instrucao);
-              });
-            }
-          });
         }
       } else {
         console.log('Diálogo foi fechado sem retorno.');
