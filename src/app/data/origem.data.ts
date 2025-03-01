@@ -183,7 +183,8 @@ export class OrigemData {
         <h5>Busca Interior</h5>
         <p>Quando você e seus companheiros estão diante de um mistério, incapazes de prosseguir, você pode gastar 1 PM para meditar sozinho durante algum tempo e receber uma dica do mestre.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'89'
+        paginas:'89',
+        poderes: [{id: 278}]
       },
       {
         id: 14,

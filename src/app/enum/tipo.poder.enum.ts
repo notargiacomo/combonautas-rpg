@@ -7,4 +7,5 @@ export enum TipoPoder {
     TORMENTA = "Poder da Tormenta",
     HABILIDADE_RACA = "Habilidade de Raça",
     HABILIDADE_CLASSE = "Habilidade de Classe",
+    HABILIDADE_ORIGEM = "Habilidade de Origem"
 }

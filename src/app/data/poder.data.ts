@@ -2924,6 +2924,246 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '25'
+      },
+      {
+        id: 266,
+        nome: 'Membro da Igreja',
+        descricao: 'Você consegue hospedagem confortável e informação em qualquer templo de sua divindade, para você e seus aliados.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '85'
+      },
+      {
+        id: 267,
+        nome: 'Amigo Especial',
+        descricao: 'Você recebe +5 em testes de Adestramento com animais. Além disso, possui um animal de estimação que o auxilia e o acompanha em suas aventuras. Em termos de jogo, é um parceiro que fornece +2 em uma perícia a sua escolha (exceto Luta ou Pontaria e aprovada pelo mestre) e não conta em seu limite de parceiros.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [`this.personagem.atualizaBonusExtraPericia('ADESTRAMENTO', [{origem: 'Amigo Especial', bonus: 5, condicao:['COM ANIMAIS'], ativo: false}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '85'
+      },
+      {
+        id: 268,
+        nome: 'Lembranças Graduais',
+        descricao: 'Durante suas aventuras, em determinados momentos a critério do mestre, você pode fazer um teste de Sabedoria (CD 10) para reconhecer pessoas, criaturas ou lugares que tenha encontrado antes de perder a memória.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '86'
+      },
+      {
+        id: 269,
+        nome: 'Sangue Azul',
+        descricao: 'Você tem alguma influência política, suficiente para ser tratado com mais leniência pela guarda, conseguir uma audiência com o nobre local etc.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '86'
+      },
+      {
+        id: 270,
+        nome: 'Frutos do Trabalho',
+        descricao: 'No início de cada aventura, você recebe até 5 itens gerais que possa fabricar num valor total de até T$ 50. Esse valor aumenta para T$ 100 no patamar aventureiro, T$ 300 no heroico e T$ 500 no lenda.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '86'
+      },
+      {
+        id: 271,
+        nome: 'Dom artístico',
+        descricao: 'Você recebe +2 em testes de Atuação, e recebe o dobro de tibares em apresentações.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [`this.personagem.atualizaBonusExtraPericia('ATUAÇÃO', [{origem: 'Dom Artístico', bonus: 2, condicao:[], ativo: true}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '86 e 87'
+      },
+      {
+        id: 272,
+        nome: 'Esse Cheiro...',
+        descricao: 'Você recebe +2 em Fortitude e detecta automaticamente a presença (mas não a localização ou natureza) de itens alquímicos em alcance curto.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [`this.personagem.atualizaBonusExtraPericia('FORTITUDE', [{origem: 'Esse Cheiro...', bonus: 2, condicao:[], ativo: true}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '87 e 88'
+      },
+      {
+        id: 273,
+        nome: 'Confissão',
+        descricao: 'Você pode usar Intimidação para interrogar sem custo e em uma hora (veja Investigação).',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '88'
+      },
+      {
+        id: 274,
+        nome: 'Alpinista Social',
+        descricao: 'Você pode substituir testes de Diplomacia por testes de Enganação.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '88 e 89'
+      },
+      {
+        id: 275,
+        nome: 'Truque de Mágica',
+        descricao: 'Você pode lançar Explosão de Chamas, Hipnotismo e Queda Suave, mas apenas com o aprimoramento Truque. Esta não é uma habilidade mágica — os efeitos provêm de prestidigitação.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '89'
+      },
+      {
+        id: 276,
+        nome: 'Punguista',
+        descricao: 'Você pode fazer testes de Ladinagem para sustento (como a perícia Ofício), mas em apenas um dia. Se passar, recebe o dobro do dinheiro, mas, se falhar, pode ter problemas com a lei (a critério do mestre).',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '89'
+      },
+      {
+        id: 277,
+        nome: 'Médico de Campo',
+        descricao: 'Você soma sua Sabedoria aos PV restaurados por suas habilidades e itens mundanos de cura.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '89'
+      },
+      {
+        id: 278,
+        nome: 'Busca Interior',
+        descricao: 'Quando você e seus companheiros estão diante de um mistério, incapazes de prosseguir, você pode gastar 1 PM para meditar sozinho durante algum tempo e receber uma dica do mestre.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '89'
+      },
+      {
+        id: 279,
+        nome: 'Desejo de Liberdade',
+        descricao: 'Ninguém voltará a torná-lo um escravo! Você recebe +5 em testes contra a manobra agarrar e efeitos de movimento.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [`this.personagem.atualizaBonusExtraPericia('LUTA', [{origem: 'Desejo de Liberdade', bonus: 5, condicao:['CONTRA AGARRAR'], ativo: false}]);`, `this.personagem.atualizaBonusExtraPericia('FORTITUDE', [{origem: 'Desejo de Liberdade', bonus: 5, condicao:['CONTRA EFEITOS DE MOVIMENTO'], ativo: false}]);`, `this.personagem.atualizaBonusExtraPericia('VONTADE', [{origem: 'Desejo de Liberdade', bonus: 5, condicao:['CONTRA EFEITOS DE MOVIMENTO'], ativo: false}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '89'
+      },
+      {
+        id: 280,
+        nome: 'Palpite Fundamentado',
+        descricao: 'Você pode gastar 2 PM para substituir um teste de qualquer perícia originalmente baseada em Inteligência ou Sabedoria por um teste de Conhecimento.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '90'
+      },
+      {
+        id: 281,
+        nome: 'Cultura Exótica',
+        descricao: 'Por sua diferente visão de mundo, você encontra soluções inesperadas. Você pode gastar 1 PM para fazer um teste de perícia somente treinada, mesmo sem ser treinado na perícia.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '90'
+      },
+      {
+        id: 282,
+        nome: 'Pão e Circo',
+        descricao: 'Por seu treino em combates de exibição, você sabe “bater sem machucar”. Pode escolher causar dano não letal sem sofrer a penalidade de –5.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '90 e 91'
+      },
+      {
+        id: 283,
+        nome: 'Detetive',
+        descricao: 'Você pode gastar 1 PM para substituir testes de Percepção e Intuição por testes de Investigação até o fim da cena.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '91'
+      },
+      {
+        id: 284,
+        nome: 'Herança',
+        descricao: 'Você herdou um item de preço de até T$ 1.000. Você pode escolher este poder duas vezes, para um item de até T$ 2.000.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '91'
+      },
+      {
+        id: 285,
+        nome: 'Coração Heroico',
+        descricao: 'Você recebe +3 pontos de mana. Quando atinge um novo patamar (no 5º, 11º e 17º níveis), recebe +3 PM.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '91 e 92'
+      },
+      {
+        id: 286,
+        nome: 'Passagem de Navio',
+        descricao: 'Você consegue transporte marítimo para você e seus aliados, sem custos, desde que todos paguem com trabalho (passar em pelo menos um teste de perícia adequado durante a viagem).',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '92'
+      },
+      {
+        id: 287,
+        nome: 'Vendedor de Carcaças',
+        descricao: 'Você pode extrair recursos de criaturas em um minuto, em vez de uma hora, e recebe +5 no teste.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '92'
+      },
+      {
+        id: 288,
+        nome: 'Negociação',
+        descricao: 'Você pode vender itens 10% mais caro (não cumulativo com barganha).',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 289,
+        nome: 'Escavador',
+        descricao: 'Você se torna proficiente em picaretas, causa +1 de dano com elas e não é afetado por terreno difícil em masmorras e subterrâneos.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
       }
     ];
   }
