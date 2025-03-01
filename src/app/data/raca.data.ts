@@ -151,12 +151,12 @@ export class RacaData {
         nome_arquivo_descricao: `raca_qareen_descricao`,
         imagem: 'assets/img/raca_qareen.png',
         deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
-        instrucao: [AcrecimoAtributo.CARISMA, AcrecimoAtributo.CARISMA, AcrecimoAtributo.INTELIGENCIA, DecrecimoAtributo.SABEDORIA],
+        instrucao: [AcrecimoAtributo.CARISMA, AcrecimoAtributo.CARISMA, AcrecimoAtributo.INTELIGENCIA, DecrecimoAtributo.SABEDORIA, OpcoesSelecao.RADIO],
         sentidos: [''],
         referencias: Referencia.BASICO,
         paginas: '26',
         descricao: ``,
-        historia: ``, resolucao: []
+        historia: ``, resolucao: [], habilidades: [{id:1000}, {id:1001}, {id:1002}]
       },
 
       // RAÇAS EXTRAS DO referencia BÁSICO

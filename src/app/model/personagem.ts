@@ -62,7 +62,7 @@ export class Personagem {
   tamanho?: Tamanho;
   deslocamentos?: Deslocamento[];
   sentidos?: Sentido[];
-  resistencias?: Resistencias[];
+  resistencias?: Resistencia[];
   imunidades?: Imunidade[];
   magias!: MagiaPersonagem[]
 
@@ -343,6 +343,10 @@ export class Personagem {
         poder.decisao = true;
       }
     })
+  }
+
+  public adicionaEspacaoResistencia?(fonte:string, redutor:number){
+    this.resistencias?.push({fonte:fonte, redutor:redutor});
   }
 
   public adicionaDeslocamento(nome: string, valor: number){
@@ -727,7 +731,7 @@ export class Deslocamento {
   }
 }
 
-export class Resistencias {
+export class Resistencia {
   fonte?: string;
   redutor?: number;
 
