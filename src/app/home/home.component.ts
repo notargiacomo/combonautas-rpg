@@ -181,13 +181,18 @@ export class HomeComponent {
   }
 
   adicionarMagiaExtra(id: number) {
-    this.servicoMagia.listar({id: id}).subscribe({
-      next: (response) => {
-        this.personagem.magias?.push({magia: response[0]});
-        this.dataSourceMagiasPersonagens = new MatTableDataSource(this.personagem.magias);
-      },
-      error: (response) => console.log(response),
-    });
+    if(id != 0){
+      this.servicoMagia.listar({id: id}).subscribe({
+        next: (response) => {
+          this.personagem.magias?.push({magia: response[0]});
+          this.dataSourceMagiasPersonagens = new MatTableDataSource(this.personagem.magias);
+        },
+        error: (response) => console.log(response),
+      });
+    } else {
+      this.personagem.magias?.push({magia: {id:id, nome: 'Escolha uma magia (atributo-chave Carisma)'}});
+      this.dataSourceMagiasPersonagens = new MatTableDataSource(this.personagem.magias);
+    }
   }
 
   seDesabilitaCheck(pericia: PericiaPersonagem): boolean {

@@ -2924,6 +2924,36 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '25'
+      },
+      {
+        id: 1000,
+        nome: 'Desejos',
+        descricao: 'Se lançar uma magia que alguém tenha pedido desde seu último turno, o custo da magia diminui em –1 PM. Fazer um desejo ao qareen é uma ação livre.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '26'
+      },
+      {
+        id: 1001,
+        nome: 'Resistência Elemental',
+        descricao: 'Conforme sua ascendência, você recebe redução 10 a um tipo de dano. Escolha uma: frio (qareen da água), eletricidade (do ar), fogo (do fogo), ácido (da terra), luz (da luz) ou trevas (qareen das trevas).',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [OpcoesSelecao.RADIO, `[{chave: 'Frio', value: "this.personagem.adicionaEspacaoResistencia('Frio', 10)"}, {chave: 'Eletricidade', value: "this.personagem.adicionaEspacaoResistencia('Eletricidade', 10)"}, {chave: 'Fogo', value: "this.personagem.adicionaEspacaoResistencia('Fogo', 10)"}, {chave: 'Ácido', value: "this.personagem.adicionaEspacaoResistencia('Ácido', 10)"}, {chave: 'Luz', value: "this.personagem.adicionaEspacaoResistencia('Luz', 10)"}, {chave: 'Trevas', value: "this.personagem.adicionaEspacaoResistencia('Trevas', 10)"}]`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '26'
+      },
+      {
+        id: 1002,
+        nome: 'Tatuagem Mística',
+        descricao: 'Você pode lançar uma magia de 1º círculo a sua escolha (atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: ['this.adicionarMagiaExtra(0)'],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '26'
       }
     ];
   }

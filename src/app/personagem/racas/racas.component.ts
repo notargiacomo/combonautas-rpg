@@ -312,7 +312,8 @@ export class RacasComponent implements OnInit {
       raca.instrucao
       ? raca.instrucao.includes(OpcoesSelecao.TRES_ATRIBUTOS_DIFERENTES) ||
           raca.instrucao.includes(OpcoesSelecao.DOIS_ATRIBUTOS_DIFERENTES) ||
-          raca.instrucao.includes(OpcoesSelecao.UM_ATRIBUTO)
+          raca.instrucao.includes(OpcoesSelecao.UM_ATRIBUTO) || 
+          raca.instrucao.includes(OpcoesSelecao.RADIO)
       : false;
   }
 
