@@ -169,12 +169,12 @@ export class RacaData {
         nome_arquivo_descricao: `raca_golem_descricao`,
         imagem: 'assets/img/raca_golem.png',
         deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
-        instrucao: [AcrecimoAtributo.FORCA, AcrecimoAtributo.FORCA, AcrecimoAtributo.CONSTITUICAO, DecrecimoAtributo.CARISMA],
+        instrucao: [AcrecimoAtributo.FORCA, DecrecimoAtributo.CARISMA, OpcoesSelecao.RADIO],
         sentidos: [Sentido.VISAO_ESCURO],
         referencias: Referencia.BASICO,
         paginas: '24',
         descricao: ``,
-        historia: ``, resolucao: [],
+        historia: ``, resolucao: [], habilidades: [{id:1003}, {id:1004}, {id:1005}, {id:1006}]
       },
       {
         id: 10,

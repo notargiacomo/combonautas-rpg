@@ -63,7 +63,9 @@ export class Personagem {
   deslocamentos?: Deslocamento[];
   sentidos?: Sentido[];
   resistencias?: Resistencia[];
+  resistencias_elementais_livre?: Resistencia[];
   imunidades?: Imunidade[];
+  imunidades_elementais_livre?: Imunidade[];
   magias!: MagiaPersonagem[]
 
   constructor() {
@@ -290,6 +292,45 @@ export class Personagem {
     this.atualizaPericias();
   }
 
+  public adicionarAtributoForca(valor:number) {
+    this.atributos.forca_racial += valor;
+    this.recalculaAtributos();
+  }
+
+  public adicionarAtributoDestreza(valor:number){
+    this.atributos.destreza_racial += valor;
+    this.recalculaAtributos();
+  }
+
+  public adicionarAtributoConstituicao(valor:number){
+    this.atributos.constituicao_racial += valor;
+    this.recalculaAtributos();
+  }
+
+  public adicionarAtributoInteligencia(valor:number){
+    this.atributos.inteligencia_racial += valor;
+    this.recalculaAtributos();
+  }
+
+  public adicionarAtributoSabedoria(valor:number){
+    this.atributos.sabedoria_racial += valor;
+    this.recalculaAtributos();
+  }
+
+  public adicionarAtributoCarisma(valor:number){
+    this.atributos.carisma_racial += valor;
+    this.recalculaAtributos();
+  }
+
+  public adicionarPontosAtributoLivres(valor:number, idPoder:number){
+    this.poderes.forEach(poder => {
+      if(poder.poder?.id === idPoder){
+        poder.pontos_atributos_unicos_livres ? poder.pontos_atributos_unicos_livres += valor : valor; 
+        poder.decisao = true;
+      }
+    })
+  }
+
   public aumentarNivel(){
     this.nivel!++;
     this.atualizaPericias();
@@ -332,6 +373,11 @@ export class Personagem {
     this.imunidades?.push(objetoImunidade);
   }
 
+  public adicionaImunidadeLivre(imunidade: string, tipo: string){
+    let objetoImunidade = new Imunidade(imunidade, tipo);
+    this.imunidades?.push(objetoImunidade);
+  }
+
   public adicionaNumeroPericiasLivres(numeroPericiasExtras: number){
       this.numero_pericias_livre = (numeroPericiasExtras) + this.numero_pericias_livre;
   }
@@ -345,8 +391,8 @@ export class Personagem {
     })
   }
 
-  public adicionaEspacaoResistencia?(fonte:string, redutor:number){
-    this.resistencias?.push({fonte:fonte, redutor:redutor});
+  public adicionaEspacoResistencia?(redutor:number){
+    this.resistencias_elementais_livre?.push({fonte:'Selecione um Elemento', redutor:redutor});
   }
 
   public adicionaDeslocamento(nome: string, valor: number){
@@ -857,6 +903,7 @@ export class PoderPersonagem {
   poder?: Poder;
   ativo?: boolean;
   bonus_pericia_poder_nao_localizado?: {bonus: number; pericia?:string}[];
+  pontos_atributos_unicos_livres?: number;
   decisao?: boolean;
 
   constructor(poder:Poder, ativo:boolean){

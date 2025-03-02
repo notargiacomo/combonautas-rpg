@@ -3194,6 +3194,73 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '93'
+      }, 
+      {
+        id: 1003,
+        nome: 'Chassi',
+        descricao: 'Você leva um dia para vestir ou remover uma armadura (pois precisa acoplar as peças dela a seu chassi). Entretanto, por ser acoplada, sua armadura não conta no limite de itens que você pode usar (mas você só pode usar uma armadura). Além disso, escolha um material para seu chassi entre os abaixo.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [
+          OpcoesSelecao.RADIO, 
+          `[
+          {chave: 'Barro. Constituição +2. Seu deslocamento não é afetado por terreno difícil e você passa automaticamente em testes de Acrobacia para passar por espaços apertados. Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água.', value: "this.personagem.adicionarAtributoConstituicao(2);"},
+          {chave: 'Bronze. +1 em dois atributos. Seu deslocamento não é reduzido por armaduras pesadas ou excesso de carga. Sua armadura não é acoplada ao seu corpo; você pode removê-la e colocá-la no tempo normal, mas ela conta em seu limite de itens vestidos.', value: "this.personagem.adicionarPontosAtributoLivres(2, 1003)"},
+          {chave: 'Carne. Constituição +2, Força +1, Carisma –1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a metamorfose e trevas, mas não pode escolher elemental (água ou fogo) ou vapor como sua fonte de energia, e dano mágico de fogo e frio o deixa lento por 1d4 rodadas.', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.adicionarAtributoForca(1, 1003); this.personagem.adicionarAtributoCarisma(-1, 1003); this.personagem.adicionaImunidade('METAMORFOSE', 'Condição'); this.personagem.adicionaImunidade('TREVAS', 'Dano');"},
+          {chave: 'Espelhos. Carisma +2, Sabedoria +1, Constituição –1. Quando uma criatura em alcance curto usa uma habilidade de classe que você possa ver, você pode gastar 1 PM para copiar essa habilidade. Até o fim do seu próximo turno, você pode usá-la como uma habilidade de raça (se ela usar um atributo para algo, use seu Carisma). Se copiar outra habilidade, você perde a anterior.', value: "this.personagem.adicionarAtributoCarisma(2, 1003); this.personagem.adicionarAtributoSabedoria(1, 1003); this.personagem.adicionarAtributoConstituicao(-1, 1003);"},
+          {chave: 'Ferro. Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe +2 na Defesa, mas possui penalidade de armadura –2.', value: "this.personagem.adicionarAtributoForca(1, 1003); this.personagem.adicionarAtributoConstituicao(1, 1003); this.personagem.adicionaBonusDefesa(2, 'Chassi', 'Permanente'); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');"},
+          {chave: 'Gelo Eterno. Constituição +2. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a frio e redução de fogo 10, mas não pode escolher elemental (fogo) ou vapor como sua fonte de energia (veja Golem de Nor na página 348).', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaImunidade('FRIO', 'Dano'); this.personagem.adicionaEspacaoResistencia('Fogo', 10)"},
+          {chave: 'Pedra. Constituição +2. Você não pode correr e seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe redução de corte, fogo e perfuração 5.', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaEspacaoResistencia('Corte', 5); this.personagem.adicionaEspacaoResistencia('Perfuração', 5); this.personagem.adicionaEspacaoResistencia('Fogo', 5);"},
+          {chave: 'Sucata. Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Quando recebe cuidados prolongados com a perícia Ofício (artesão), sua recuperação de PV aumenta em +2 por nível nesse dia (em vez de +1).', value: "this.personagem.adicionarAtributoConstituicao(1, 1003); this.personagem.adicionarAtributoForca(1, 1003); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaEspacaoResistencia('Corte', 5); this.personagem.adicionaEspacaoResistencia('Perfuração', 5); this.personagem.adicionaEspacaoResistencia('Fogo', 5);"},
+          ]`
+        ],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1004,
+        nome: 'Criatura Artificial',
+        descricao: 'Você é uma criatura do tipo construto. Recebe visão no escuro e imunidade a cansaço, efeitos metabólicos e veneno. Além disso, não precisa respirar, alimentar-se ou dormir, mas não se beneficia de cura mundana e de itens da categoria alimentação. Você precisa ficar inerte por 8 horas por dia para recarregar sua fonte de energia. Se fizer isso, recupera PV e PM por descanso em condições normais (golens não são afetados por condições boas ou ruins de descanso). Por fim, a perícia Cura não funciona em você, mas Ofício (artesão) pode ser usada no lugar dela.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.adicionaSentido('Visão no Escuro');`, `this.personagem.adicionaImunidade('CANSAÇO', 'Condição');`, `this.personagem.adicionaImunidade('METABOLISMO', 'Condição');`, `this.personagem.adicionaImunidade('VENENO', 'Condição');`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1005,
+        nome: 'Fonte de energia',
+        descricao: 'Escolha sua fonte de energia da lista abaixo.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [OpcoesSelecao.RADIO, `[
+          {chave: 'Alquímica. Uma mistura alquímica gera a energia necessária à sua vida. Você pode gastar uma ação padrão para ingerir um item alquímico qualquer; se fizer isso, recupera 1 PM.', value: ""}, 
+          {chave: 'Elemental. Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico deste tipo, em vez disso cura PV em quantidade igual à metade do dano.', value: "this.personagem.adicionaEspacoResistencia(10)"},
+          {chave: 'Sagrada. Você foi animado por um texto ou símbolo sagrado depositado em seu corpo. Você pode lançar uma magia divina de 1º círculo a sua escolha (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Alguém treinado em Religião pode trocar essa magia com um ritual que demora um dia e exige o gasto de um pergaminho mágico com outra magia de 1° círculo.', value: "this.adicionarMagiaExtra(0)"},
+          {chave: 'Vapor. Seu corpo é movido por vapor e engrenagens. Você é imune a dano de fogo; se fosse sofrer dano desse tipo, em vez disso seu deslocamento aumenta em 4,5m por 1 rodada. Entretanto, dano de frio deixa-o lento por 1 rodada. Você pode gastar uma ação padrão e PM para soprar um jato de vapor escaldante em um cone de 4,5m. Criaturas na área sofrem 1d6 pontos de dano de fogo por PM gasto e ficam em chamas (Ref CD Con reduz à metade e evita a condição).', value: "this.personagem.adicionaImunidade('FOGO', 'Dano');"}
+          ]`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1006,
+        nome: 'Propósito de Criação',
+        descricao: 'Você foi construído “pronto” para um propósito específico e não teve uma infância. Você não tem direito a escolher uma origem, mas recebe um poder geral a sua escolha.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: ['this.disableOrigem = true;'],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1007,
+        nome: 'Tamanho',
+        descricao: 'Escolha seu tamanho da lista abaixo.',
+        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        instrucao: [OpcoesSelecao.RADIO, `[{chave: 'Pequeno', value: 'this.personagem.adicionarAtributoDestreza(1, 1007)'}, {chave: 'Médio', value: ""}, {chave: 'Grande', value: 'this.personagem.adicionarAtributoDestreza(-1, 1007)'}]`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
       }
     ];
   }

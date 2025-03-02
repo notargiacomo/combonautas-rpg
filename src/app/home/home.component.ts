@@ -76,6 +76,7 @@ export class HomeComponent {
   dsPericias = new MatTableDataSource<PericiaPersonagem>();
   dsEmpunhados = new MatTableDataSource<Equipamento>();
   readonly panelOpenState = signal(false);
+  disableOrigem = false;
 
   expandedElementEmpunhados!: Equipamento | null;
   displayedColumnsEmpunhados: string[] = ['nome', 'formula'];
