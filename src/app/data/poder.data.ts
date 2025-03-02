@@ -2741,7 +2741,7 @@ export class PoderData {
         descricao: `Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         raca: {id:2},
-        instrucao: ['this.personagem.deslocamentos[0].valor = 6;',`this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');`],
+        instrucao: ["this.personagem.atualizarDeslocamento('Terrestre', 6);",`this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');`],
         referencias: Referencia.BASICO,
         paginas: '20'
       },
@@ -2799,7 +2799,7 @@ export class PoderData {
         nome: 'Graça de Glórienn',
         descricao: 'Seu deslocamento é 12m (em vez de 9m).',
         tipo: TipoPoder.HABILIDADE_RACA,
-        instrucao: ['this.personagem.deslocamentos[0].valor = 12;'],
+        instrucao: ["this.personagem.atualizarDeslocamento('Terrestre', 12);"],
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '21'
@@ -2850,7 +2850,7 @@ export class PoderData {
         nome: 'Peste Esguia',
         descricao: 'Seu tamanho é Pequeno (veja a página 106), mas seu deslocamento se mantém 9m. Apesar de pequenos, goblins são rápidos.',
         tipo: TipoPoder.HABILIDADE_RACA,
-        instrucao: [`this.personagem.tamanho = 'Pequeno';`],
+        instrucao: [`this.personagem.atualizaTamanho('Pequeno')`],
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '23'
@@ -2940,7 +2940,7 @@ export class PoderData {
         nome: 'Resistência Elemental',
         descricao: 'Conforme sua ascendência, você recebe redução 10 a um tipo de dano. Escolha uma: frio (qareen da água), eletricidade (do ar), fogo (do fogo), ácido (da terra), luz (da luz) ou trevas (qareen das trevas).',
         tipo: TipoPoder.HABILIDADE_RACA,
-        instrucao: [OpcoesSelecao.RADIO, `[{chave: 'Frio', value: "this.personagem.adicionaEspacaoResistencia('Frio', 10)"}, {chave: 'Eletricidade', value: "this.personagem.adicionaEspacaoResistencia('Eletricidade', 10)"}, {chave: 'Fogo', value: "this.personagem.adicionaEspacaoResistencia('Fogo', 10)"}, {chave: 'Ácido', value: "this.personagem.adicionaEspacaoResistencia('Ácido', 10)"}, {chave: 'Luz', value: "this.personagem.adicionaEspacaoResistencia('Luz', 10)"}, {chave: 'Trevas', value: "this.personagem.adicionaEspacaoResistencia('Trevas', 10)"}]`],
+        instrucao: [OpcoesSelecao.RADIO, `[{chave: 'Frio', value: "this.personagem.adicionaResistenciaElemental('Frio', 10)"}, {chave: 'Eletricidade', value: "this.personagem.adicionaResistenciaElemental('Eletricidade', 10)"}, {chave: 'Fogo', value: "this.personagem.adicionaResistenciaElemental('Fogo', 10)"}, {chave: 'Ácido', value: "this.personagem.adicionaResistenciaElemental('Ácido', 10)"}, {chave: 'Luz', value: "this.personagem.adicionaResistenciaElemental('Luz', 10)"}, {chave: 'Trevas', value: "this.personagem.adicionaResistenciaElemental('Trevas', 10)"}]`],
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '26'
@@ -3205,12 +3205,12 @@ export class PoderData {
           `[
           {chave: 'Barro. Constituição +2. Seu deslocamento não é afetado por terreno difícil e você passa automaticamente em testes de Acrobacia para passar por espaços apertados. Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água.', value: "this.personagem.adicionarAtributoConstituicao(2);"},
           {chave: 'Bronze. +1 em dois atributos. Seu deslocamento não é reduzido por armaduras pesadas ou excesso de carga. Sua armadura não é acoplada ao seu corpo; você pode removê-la e colocá-la no tempo normal, mas ela conta em seu limite de itens vestidos.', value: "this.personagem.adicionarPontosAtributoLivres(2, 1003)"},
-          {chave: 'Carne. Constituição +2, Força +1, Carisma –1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a metamorfose e trevas, mas não pode escolher elemental (água ou fogo) ou vapor como sua fonte de energia, e dano mágico de fogo e frio o deixa lento por 1d4 rodadas.', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.adicionarAtributoForca(1, 1003); this.personagem.adicionarAtributoCarisma(-1, 1003); this.personagem.adicionaImunidade('METAMORFOSE', 'Condição'); this.personagem.adicionaImunidade('TREVAS', 'Dano');"},
+          {chave: 'Carne. Constituição +2, Força +1, Carisma –1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a metamorfose e trevas, mas não pode escolher elemental (água ou fogo) ou vapor como sua fonte de energia, e dano mágico de fogo e frio o deixa lento por 1d4 rodadas.', value: "this.personagem.atualizarDeslocamento('Terrestre', 6); this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.adicionarAtributoForca(1, 1003); this.personagem.adicionarAtributoCarisma(-1, 1003); this.personagem.adicionaImunidade('METAMORFOSE', 'Condição'); this.personagem.adicionaImunidade('TREVAS', 'Dano');"},
           {chave: 'Espelhos. Carisma +2, Sabedoria +1, Constituição –1. Quando uma criatura em alcance curto usa uma habilidade de classe que você possa ver, você pode gastar 1 PM para copiar essa habilidade. Até o fim do seu próximo turno, você pode usá-la como uma habilidade de raça (se ela usar um atributo para algo, use seu Carisma). Se copiar outra habilidade, você perde a anterior.', value: "this.personagem.adicionarAtributoCarisma(2, 1003); this.personagem.adicionarAtributoSabedoria(1, 1003); this.personagem.adicionarAtributoConstituicao(-1, 1003);"},
-          {chave: 'Ferro. Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe +2 na Defesa, mas possui penalidade de armadura –2.', value: "this.personagem.adicionarAtributoForca(1, 1003); this.personagem.adicionarAtributoConstituicao(1, 1003); this.personagem.adicionaBonusDefesa(2, 'Chassi', 'Permanente'); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');"},
-          {chave: 'Gelo Eterno. Constituição +2. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a frio e redução de fogo 10, mas não pode escolher elemental (fogo) ou vapor como sua fonte de energia (veja Golem de Nor na página 348).', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaImunidade('FRIO', 'Dano'); this.personagem.adicionaEspacaoResistencia('Fogo', 10)"},
-          {chave: 'Pedra. Constituição +2. Você não pode correr e seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe redução de corte, fogo e perfuração 5.', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaEspacaoResistencia('Corte', 5); this.personagem.adicionaEspacaoResistencia('Perfuração', 5); this.personagem.adicionaEspacaoResistencia('Fogo', 5);"},
-          {chave: 'Sucata. Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Quando recebe cuidados prolongados com a perícia Ofício (artesão), sua recuperação de PV aumenta em +2 por nível nesse dia (em vez de +1).', value: "this.personagem.adicionarAtributoConstituicao(1, 1003); this.personagem.adicionarAtributoForca(1, 1003); this.personagem.deslocamentos[0].valor = 6; this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaEspacaoResistencia('Corte', 5); this.personagem.adicionaEspacaoResistencia('Perfuração', 5); this.personagem.adicionaEspacaoResistencia('Fogo', 5);"},
+          {chave: 'Ferro. Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe +2 na Defesa, mas possui penalidade de armadura –2.', value: "this.personagem.adicionarAtributoForca(1, 1003); this.personagem.adicionarAtributoConstituicao(1, 1003); this.personagem.adicionaBonusDefesa(2, 'Chassi', 'Permanente'); this.personagem.atualizarDeslocamento('Terrestre', 6); this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');"},
+          {chave: 'Gelo Eterno. Constituição +2. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a frio e redução de fogo 10, mas não pode escolher elemental (fogo) ou vapor como sua fonte de energia (veja Golem de Nor na página 348).', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.atualizarDeslocamento('Terrestre', 6); this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaImunidade('FRIO', 'Dano'); this.personagem.adicionaEspacaoResistencia('Fogo', 10)"},
+          {chave: 'Pedra. Constituição +2. Você não pode correr e seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe redução de corte, fogo e perfuração 5.', value: "this.personagem.adicionarAtributoConstituicao(2, 1003); this.personagem.atualizarDeslocamento('Terrestre', 6); this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaEspacaoResistencia('Corte', 5); this.personagem.adicionaEspacaoResistencia('Perfuração', 5); this.personagem.adicionaEspacaoResistencia('Fogo', 5);"},
+          {chave: 'Sucata. Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Quando recebe cuidados prolongados com a perícia Ofício (artesão), sua recuperação de PV aumenta em +2 por nível nesse dia (em vez de +1).', value: "this.personagem.adicionarAtributoConstituicao(1, 1003); this.personagem.adicionarAtributoForca(1, 1003); this.personagem.atualizarDeslocamento('Terrestre', 6); this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição'); this.personagem.adicionaEspacaoResistencia('Corte', 5); this.personagem.adicionaEspacaoResistencia('Perfuração', 5); this.personagem.adicionaEspacaoResistencia('Fogo', 5);"},
           ]`
         ],
         ativacao: [],
@@ -3231,10 +3231,10 @@ export class PoderData {
         id: 1005,
         nome: 'Fonte de energia',
         descricao: 'Escolha sua fonte de energia da lista abaixo.',
-        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [OpcoesSelecao.RADIO, `[
           {chave: 'Alquímica. Uma mistura alquímica gera a energia necessária à sua vida. Você pode gastar uma ação padrão para ingerir um item alquímico qualquer; se fizer isso, recupera 1 PM.', value: ""}, 
-          {chave: 'Elemental. Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico deste tipo, em vez disso cura PV em quantidade igual à metade do dano.', value: "this.personagem.adicionaEspacoResistencia(10)"},
+          {chave: 'Elemental. Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico deste tipo, em vez disso cura PV em quantidade igual à metade do dano.', value: "this.personagem.adicionaResistenciaElementalLivre(10)"},
           {chave: 'Sagrada. Você foi animado por um texto ou símbolo sagrado depositado em seu corpo. Você pode lançar uma magia divina de 1º círculo a sua escolha (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Alguém treinado em Religião pode trocar essa magia com um ritual que demora um dia e exige o gasto de um pergaminho mágico com outra magia de 1° círculo.', value: "this.adicionarMagiaExtra(0)"},
           {chave: 'Vapor. Seu corpo é movido por vapor e engrenagens. Você é imune a dano de fogo; se fosse sofrer dano desse tipo, em vez disso seu deslocamento aumenta em 4,5m por 1 rodada. Entretanto, dano de frio deixa-o lento por 1 rodada. Você pode gastar uma ação padrão e PM para soprar um jato de vapor escaldante em um cone de 4,5m. Criaturas na área sofrem 1d6 pontos de dano de fogo por PM gasto e ficam em chamas (Ref CD Con reduz à metade e evita a condição).', value: "this.personagem.adicionaImunidade('FOGO', 'Dano');"}
           ]`],
@@ -3246,7 +3246,7 @@ export class PoderData {
         id: 1006,
         nome: 'Propósito de Criação',
         descricao: 'Você foi construído “pronto” para um propósito específico e não teve uma infância. Você não tem direito a escolher uma origem, mas recebe um poder geral a sua escolha.',
-        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: ['this.disableOrigem = true;'],
         ativacao: [],
         referencias: Referencia.BASICO,
@@ -3256,8 +3256,36 @@ export class PoderData {
         id: 1007,
         nome: 'Tamanho',
         descricao: 'Escolha seu tamanho da lista abaixo.',
-        tipo: TipoPoder.HABILIDADE_ORIGEM,
-        instrucao: [OpcoesSelecao.RADIO, `[{chave: 'Pequeno', value: 'this.personagem.adicionarAtributoDestreza(1, 1007)'}, {chave: 'Médio', value: ""}, {chave: 'Grande', value: 'this.personagem.adicionarAtributoDestreza(-1, 1007)'}]`],
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [OpcoesSelecao.RADIO, `[{chave: 'Pequeno', value: "this.personagem.atualizaTamanho('Pequeno');this.personagem.adicionarAtributoDestreza(1, 1007)"}, {chave: 'Médio', value: "this.personagem.atualizaTamanho('Médio')"}, {chave: 'Grande', value: "this.personagem.atualizaTamanho('Pequeno');this.personagem.adicionarAtributoDestreza(-1, 1007)"}]`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1008,
+        nome: 'Arremessador',
+        descricao: 'Quando faz um ataque à distância com uma funda ou uma arma de arremesso, seu dano aumenta em um passo.',
+        tipo: TipoPoder.HABILIDADE_RACA,
+        instrucao: [`this.personagem.adicionaAumentoPasso(['Funda', 'Arremesso']);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1009,
+        nome: 'Pequeno e Rechonchudo',
+        descricao: 'Seu tamanho é Pequeno (veja a página 106) e seu deslocamento é 6m. Você recebe +2 em Enganação e pode usar Destreza como atributo-chave de Atletismo (em vez de Força).',
+        instrucao: [`this.personagem.atualizaTamanho('Pequeno')`, `this.personagem.atualizarDeslocamento('Terrestre', 6);`,`this.personagem.atualizaBonusExtraPericia('ENGANAÇÃO', [{origem: 'Pequeno e Rechonchudo', bonus: 2, condicao:[], ativo: true}]);`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1010,
+        nome: 'Sorte Salvadora',
+        descricao: 'Quando faz um teste de resistência, você pode gastar 1 PM para rolar este teste novamente.',
+        instrucao: [],
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '93'

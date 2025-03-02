@@ -1191,7 +1191,7 @@
                         <option [selected]="
                             personagem.recuperaValor(tamanho.toString()) ===
                             personagem.recuperaValor(personagem.tamanho!)
-                          " [value]="tamanho">
+                          " [value]="tamanho.toString()">
                           {{ tamanho }}
                         </option>
                         }
@@ -1252,7 +1252,7 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
-                      @for (rd of personagem.resistencias; track rd){
+                      @for (rd of personagem.resiliencia?.resistencias; track rd){
                       <div class="row">
                         <button class="me-2 proficiencia" mat-flat-button disabled>
                           {{ rd.fonte + " " + rd.redutor }}
@@ -1271,7 +1271,7 @@
                         </mat-panel-title>
                       </mat-expansion-panel-header>
                       <hr />
-                      @for (imunidade of personagem.imunidades; track
+                      @for (imunidade of personagem.resiliencia?.imunidades; track
                       imunidade){
                       <div class="row">
                         <button class="me-2 proficiencia" mat-flat-button disabled>
