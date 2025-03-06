@@ -112,6 +112,8 @@ export class HomeComponent {
     this.personagens = [];
     this.personagem = new Personagem();
 
+    this.personagem.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria({origem: 'Engenhosidade', atributo: 'Inteligência', condicao:['2 PM'], ativo: false});
+
     this.servicoPericia.listar(null).subscribe({
       next: (response) => {
         this.pericias = response;

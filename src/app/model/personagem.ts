@@ -58,7 +58,7 @@ export class Personagem {
   poderes!: PoderPersonagem[];
   pericias?: PericiaPersonagem[];
   posse?: Posse;
-  proficiencia?: Proficiencia[];
+  proficiencia?: string[];
   tamanho?: string;
   deslocamentos?: Deslocamento[];
   sentidos?: Sentido[];
@@ -109,6 +109,10 @@ export class Personagem {
     this.proficiencia = [];
     this.proficiencia.push(Proficiencia.ARMAS_SIMPLES);
     this.proficiencia.push(Proficiencia.ARMADURAS_LEVES);
+  }
+
+  public adicionaProficiencia(proficiencia: string){
+    this.proficiencia!.push(proficiencia);
   }
 
   private inicializaPontosMana() {
@@ -383,11 +387,14 @@ export class Personagem {
       numeroPericiasExtras + this.numero_pericias_livre;
   }
 
-  adicionaBonusPericiaPoderNaoLocalizado?(bonus: number, idPoder: number) {
+  oficio = ['Ofício Armeiro','Ofício Artesão','Ofício Alquimista', 'Ofício Cozinheiro', 'Ofício Alfaiate', 'Ofício Engenhoqueiro', 'Ofício Escriba', 'Ofício Professor', 'Ofício Tatuador', 'Ofício Fazendeiro', 'Ofício Pescador', 'Ofício Lenhador', 'Ofício Minerador', 'Ofício de Soldado', 'Ofício Marinheiro', 'Ofício Armadilheiro', 'Ofício Zelador', 'Ofício Mercador', 'Ofício Ferreiro', 'Ofício Taverneiro', 'Ofício Carpinteiro', 'Ofício Barbeiro', 'Ofício Pedreiro', 'Ofício Coureiro', 'Ofício Padeiro', 'Ofício Faxineiro'];
+
+  adicionaBonusPericiaPoderNaoLocalizado?(bonus: number, idPoder: number, escopo_pericias?: string[]) {
     this.poderes.forEach((poder) => {
       if (poder.poder?.id === idPoder) {
-        poder.bonus_pericia_poder_nao_localizado?.push(...[{ bonus: bonus }]);
+        poder.bonus_pericia_poder_nao_localizado?.push(...[{ bonus: bonus, escopo_pericias: escopo_pericias}]);
         poder.decisao = true;
+        // console.log("Poder: "+JSON.stringify(poder, null, 2));
       }
     });
   }
@@ -408,6 +415,7 @@ export class Personagem {
   }
 
   public atualizaPericias() {
+    this.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria();
     this.pericias?.forEach((pericia) => {
       let valorAtributo = Number.parseInt(
         this.recuperaValorAtributo(pericia.atributo_selecionado_descricao!)
@@ -529,28 +537,37 @@ export class Personagem {
     this.poderes.push({ poder: { id: 0, nome: descricao } });
   }
 
-  atualizaBonusExtraPericia(
-    nome: string,
-    condicao: {
-      origem?: string;
-      bonus?: number;
-      condicao?: string[];
-      ativo: boolean;
-    }[]
-  ) {
-    this.pericias
-      ?.find(
-        (p) =>
-          p.pericia
-            ?.normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase() ===
-          nome
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase()
-      )
-      ?.adicionaBonusExtra(condicao);
+  atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria(bonus?: {origem: string; atributo: string; condicao:string[], ativo: boolean}){
+    this.pericias?.forEach( pericia => {
+      if(bonus){
+        if(pericia.pericia !== "Luta" && pericia.pericia !== "Pontaria"){
+          this.atualizaBonusExtraPericia(pericia.pericia!, [{origem: bonus.origem, bonus: this.recuperaValorAtributo(bonus.atributo), condicao:['2 PM'], ativo: false, atributo: bonus.atributo}]);
+        }
+      } else {
+        pericia.bonus_extras?.forEach( be => {
+          if(be.atributo){
+            be.bonus = this.recuperaValorAtributo(be.atributo);
+          }
+        });
+      }
+    });
+  }
+
+  atualizaBonusExtraPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[]; ativo: boolean; atributo: string;}[]) {
+    let pericia =  this.pericias?.find((p) => p.pericia?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === nome.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase());
+
+    if(pericia){
+      pericia?.adicionaBonusExtra(condicao)
+    } else {
+      if(nome.includes("Ofício")){
+        const indice = this.pericias!.indexOf(this.pericias!.find( (p) => {  p.pericia!.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === "Ofício".normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()})!);
+        // Inserir o novo item após o item alvo
+        let oficio: PericiaPersonagem = this.pericias![indice];
+        oficio.pericia = nome;
+        this.pericias!.splice(indice + 1, 0, oficio);
+      }
+    }
+
     this.atualizaPericias();
   }
 
@@ -635,6 +652,7 @@ export class PericiaPersonagem {
     bonus?: number;
     condicao?: string[];
     ativo?: boolean;
+    atributo?: string;
   }[];
 
   adicionaBonusExtra(
@@ -645,8 +663,11 @@ export class PericiaPersonagem {
       ativo: boolean;
     }[]
   ) {
-    if (!this.bonus_extras) this.bonus_extras = condicao;
-    else this.bonus_extras.push(...condicao);
+    if (!this.bonus_extras) {
+      this.bonus_extras = condicao;
+    } else {
+      this.bonus_extras.push(...condicao);
+    }
   }
 
   constructor() {}
@@ -1044,14 +1065,14 @@ export class MagiaPersonagem {
 export class PoderPersonagem {
   poder?: Poder;
   ativo?: boolean;
-  bonus_pericia_poder_nao_localizado?: { bonus: number; pericia?: string }[];
+  bonus_pericia_poder_nao_localizado?: { bonus: number; pericia?: string; escopo_pericias?: string[]}[];
   pontos_atributos_unicos_livres?: number;
   decisao?: boolean;
 
   constructor(poder: Poder, ativo: boolean) {
     this.poder = poder;
     this.ativo = ativo;
-    this.bonus_pericia_poder_nao_localizado = [];
+    this.bonus_pericia_poder_nao_localizado = this.bonus_pericia_poder_nao_localizado ? this.bonus_pericia_poder_nao_localizado :[];
     this.decisao = false;
   }
 }
@@ -1085,7 +1106,6 @@ export class DefesaPersonagem {
     });
     this.defesa += Number(this.bonus_total);
     this.defesa += Number(mediator.recuperaValorAtributo(this.atributo_defesa));
-    console.log(this.defesa_bonus);
   }
 }
 

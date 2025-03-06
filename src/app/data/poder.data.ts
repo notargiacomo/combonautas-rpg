@@ -2880,7 +2880,7 @@ export class PoderData {
         nome: 'Deformidade',
         descricao: 'Todo lefou possui defeitos físicos que, embora desagradáveis, conferem certas vantagens. Você recebe +2 em duas perícias a sua escolha. Cada um desses bônus conta como um poder da Tormenta (exceto para perda de Crisma). Você pode trocar um desses bônus por um poder da Tormenta a sua escolha (ele também não conta para perda de Carisma).',
         tipo: TipoPoder.HABILIDADE_RACA,
-        instrucao: ['this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261)', OpcoesSelecao.RADIO, `[{chave: 'Bonus +2 em Duas Perícias', value: 'this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261)'}, {chave: 'Bonus +2 em Uma Perícias e um Poder da Tormenta', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder da tormenta (Deformidade)')"}]`],
+        instrucao: ['this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261, undefined)', OpcoesSelecao.RADIO, `[{chave: 'Bonus +2 em Duas Perícias', value: 'this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261, undefined)'}, {chave: 'Bonus +2 em Uma Perícias e um Poder da Tormenta', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder da tormenta (Deformidade)')"}]`],
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '24'
@@ -3289,7 +3289,43 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '93'
-      }
+      },
+      {
+        id: 1011,
+        nome: 'Híbrido',
+        descricao: 'Sua natureza multifacetada fez com que você aprendesse conhecimentos variados. Você se torna treinado em uma perícia a sua escolha (não precisa ser da sua classe).',
+        instrucao: [`this.personagem.adicionaNumeroPericiasLivres(1)`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1012,
+        nome: 'Engenhosidade',
+        descricao: 'Quando faz um teste de perícia, você pode gastar 2 PM para somar sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque. Caso receba esta habilidade novamente, seu custo é reduzido em –1 PM.',
+        instrucao: [`this.personagem.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria({origem: 'Engenhosidade', atributo: 'inteligencia', condicao:['2 PM'], ativo: false});`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1013,
+        nome: 'Ossos Frágeis',
+        descricao: 'Você sofre 1 ponto de dano adicional por dado de dano de impacto. Por exemplo, se for atingido por uma clava (dano 1d6), sofre 1d6+1 pontos de dano. Se cair de 3m de altura (dano 2d6), sofre 2d6+2 pontos de dano.',
+        instrucao: [],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
+      {
+        id: 1014,
+        nome: 'Vanguardista',
+        descricao: 'Você recebe proficiência em armas de fogo e +2 em Ofício (um qualquer, a sua escolha).',
+        instrucao: [`this.personagem.adicionaProficiencia('Armas de Fogo');`, `this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 1014, ['Ofício Armeiro','Ofício Artesão','Ofício Alquimista', 'Ofício Cozinheiro', 'Ofício Alfaiate', 'Ofício Engenhoqueiro', 'Ofício Escriba', 'Ofício Professor', 'Ofício Tatuador', 'Ofício Fazendeiro', 'Ofício Pescador', 'Ofício Lenhador', 'Ofício Minerador', 'Ofício de Soldado', 'Ofício Marinheiro', 'Ofício Armadilheiro', 'Ofício Zelador', 'Ofício Mercador', 'Ofício Ferreiro', 'Ofício Taverneiro', 'Ofício Carpinteiro', 'Ofício Barbeiro', 'Ofício Pedreiro', 'Ofício Coureiro', 'Ofício Padeiro', 'Ofício Faxineiro'])`],
+        ativacao: [],
+        referencias: Referencia.BASICO,
+        paginas: '93'
+      },
     ];
   }
 }
