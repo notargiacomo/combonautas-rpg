@@ -1360,9 +1360,9 @@
                                           </div>
                                           <div class="col-sm-10 mt-2">
                                             <mat-select class="vida-mana-defesa"
-                                            style="font-size: 12pt !important" (selectionChange)="this.personagem.atualizaBonusExtraPericia($event.value, [{origem: element.poder['nome'], bonus: bonus.bonus, condicao:[], ativo: true, atributo: bonus.atributo}])"
+                                            style="font-size: 12pt !important" (selectionChange)="this.atualizaTabela($event.value, {origem: element.poder['nome'], bonus: bonus.bonus, condicao:[], ativo: true, atributo: bonus.atributo})"
                                             [(value)]="bonus.pericia">
-                                            @for (pericia of bonus.escopo_pericias; track pericia.pericia) {
+                                            @for (pericia of bonus.escopo_pericias; track pericia) {
                                             <mat-option [value]="pericia">
                                               {{ pericia }}
                                             </mat-option>

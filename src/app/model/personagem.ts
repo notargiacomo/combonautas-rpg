@@ -1,3 +1,4 @@
+import { ChangeDetectorRef } from '@angular/core';
 import { Alcance } from '../enum/alcance.enum';
 import { AlcanceMagia } from '../enum/alcance.magia.enum';
 import { Atributo } from '../enum/atributo.enum';
@@ -65,7 +66,7 @@ export class Personagem {
   resiliencia?: Resiliencia;
   magias!: MagiaPersonagem[];
 
-  constructor() {
+  constructor(private cdRef: ChangeDetectorRef) {
     this.resetaPersonagem();
   }
 
@@ -394,7 +395,6 @@ export class Personagem {
       if (poder.poder?.id === idPoder) {
         poder.bonus_pericia_poder_nao_localizado?.push(...[{ bonus: bonus, escopo_pericias: escopo_pericias}]);
         poder.decisao = true;
-        // console.log("Poder: "+JSON.stringify(poder, null, 2));
       }
     });
   }
@@ -560,15 +560,16 @@ export class Personagem {
       pericia?.adicionaBonusExtra(condicao)
     } else {
       if(nome.includes("Ofício")){
-        const indice = this.pericias!.indexOf(this.pericias!.find( (p) => {  p.pericia!.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === "Ofício".normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()})!);
-        // Inserir o novo item após o item alvo
-        let oficio: PericiaPersonagem = this.pericias![indice];
+        const indice = this.pericias!.indexOf(this.pericias!.find( (p) => {  return p.objeto!.nome === 'Ofício'})!);
+        let oficio = new PericiaPersonagem();
+        Object.assign(oficio, this.pericias![indice]);
         oficio.pericia = nome;
-        this.pericias!.splice(indice + 1, 0, oficio);
+        this.pericias = [...this.pericias!.slice(0, indice + 1), oficio, ...this.pericias!.slice(indice + 1)];
+        this.cdRef.detectChanges();
       }
     }
-
-    this.atualizaPericias();
+    console.log(this.pericias)
+    // this.atualizaPericias();
   }
 
   public adicionarArmaNatural(

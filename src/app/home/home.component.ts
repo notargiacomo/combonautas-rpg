@@ -106,13 +106,14 @@ export class HomeComponent {
     private readonly router: Router,
     private readonly servicoPericia: PericiasService,
     private readonly servicoMagia: MagiaService,
+    private cdRef: ChangeDetectorRef
   ) {}
 
   ngOnInit() {
     this.personagens = [];
-    this.personagem = new Personagem();
+    this.personagem = new Personagem(this.cdRef);
 
-    this.personagem.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria({origem: 'Engenhosidade', atributo: 'Inteligência', condicao:['2 PM'], ativo: false});
+    // this.personagem.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria({origem: 'Engenhosidade', atributo: 'Inteligência', condicao:['2 PM'], ativo: false});
 
     this.servicoPericia.listar(null).subscribe({
       next: (response) => {
@@ -145,7 +146,6 @@ export class HomeComponent {
     dialogRef.afterClosed().subscribe((resultado) => {
       if (resultado) {
         if(!(this.personagem.raca?.id === resultado.id)){
-          console.log(!(this.personagem.raca?.id === resultado.id));
           this.personagem.raca = resultado;
           if (this.personagem.raca === undefined) {
             resultado.resolucao = [];
@@ -217,6 +217,11 @@ export class HomeComponent {
 
   showDialog() {
       this.visible = true;
+  }
+
+  atualizaTabela(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[]; ativo: boolean; atributo: string;}){
+    this.personagem.atualizaBonusExtraPericia(nome, [{origem: condicao.origem, bonus: condicao.bonus, condicao:[], ativo: true, atributo: condicao.atributo}]);
+    this.dsPericias = new MatTableDataSource(this.personagem.pericias);
   }
 
 }
