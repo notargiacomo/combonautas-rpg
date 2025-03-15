@@ -47,9 +47,9 @@ export class TipoParceiroData {
         tracos: ['AUMENTA','PERICIA'],
         parceiro_patamar: [
           'Iniciante: você recebe +2 em duas perícias.',
-    'Veterano: muda para +2 em três perícias.',
-    'Mestre: muda para +4 em três perícias.' ,
-    'As perícias são definidas pelo parceiro. Um ajudante não pode fornecer bônus em Luta ou Pontaria.',
+          'Veterano: muda para +2 em três perícias.',
+          'Mestre: muda para +4 em três perícias.' ,
+          'As perícias são definidas pelo parceiro. Um ajudante não pode fornecer bônus em Luta ou Pontaria.',
         ],
         referencias: 'Referencia.BASICO',
         pagina: '260',
