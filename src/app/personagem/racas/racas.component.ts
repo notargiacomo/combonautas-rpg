@@ -43,6 +43,9 @@ import { Poder } from '../../model/poder';
 import { Raca } from '../../model/raca';
 import { PoderService } from '../../service/poder.service';
 import { RacaService } from '../../service/raca.service';
+import { TipoCriatura } from '../../enum/tipo.criatura.enum';
+import { MatSelectModule } from '@angular/material/select';
+import { Tamanho } from '../../enum/tamanho.enum';
 
 @Component({
   selector: 'app-racas',
@@ -59,6 +62,7 @@ import { RacaService } from '../../service/raca.service';
     MatInputModule,
     MatFormFieldModule,
     ReactiveFormsModule,
+    MatSelectModule,
     NgFor,
     NgIf,
     MatTabsModule,
@@ -77,15 +81,16 @@ import { RacaService } from '../../service/raca.service';
   ],
 })
 export class RacasComponent implements OnInit {
-  columnsToDisplay = ['nome', 'tipo', 'tamanho', 'referencias', 'paginas'];
+  columnsToDisplay = ['nome', 'tipo', 'tamanho'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
   isExpandedRow = (index: number, row: any) => row === this.expandedElement;
   racas!: Raca[];
   deslocamentos = Object.values(Deslocamento);
   sentidos = Object.values(Sentido);
+  tamanhos = Object.values(Tamanho);
   referencias = Object.values(Referencia);
-  checkboxState: { [key: string]: boolean } = {};
+  tipos = Object.values(TipoCriatura);
   numero_registros = 0;
   selectedIndex: number = 0;
 
@@ -97,12 +102,6 @@ export class RacasComponent implements OnInit {
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {
-    this.deslocamentos.forEach((deslocamento) => {
-      this.checkboxState[deslocamento] = false;
-    });
-    this.sentidos.forEach((sentidos) => {
-      this.checkboxState[sentidos] = false;
-    });
   }
 
   ngOnInit() {
@@ -124,16 +123,15 @@ export class RacasComponent implements OnInit {
     this.form = this.fb.group({
       tipo: [],
       tamanho: [],
-      sentidos: new FormArray([]),
-      deslocamentos: new FormArray([]),
-      referencias: new FormArray([]),
+      sentidos: [],
+      deslocamentos: [],
+      // referencias: new FormArray([]),
       nome: [],
       selecao: []
     });
   }
 
   limparFiltros() {
-    this.checkboxState = {};
     this.reiniciaFormulario();
     this.consultar();
   }
@@ -145,21 +143,6 @@ export class RacasComponent implements OnInit {
     } else {
       const index = formArray.controls.findIndex(
         (item) => item.value === deslocamento
-      );
-      formArray.removeAt(index);
-    }
-
-    this.consultar();
-  }
-
-  checkSentido(sentido: Sentido, isChecked: boolean): void {
-    var sentidosFormArray = this.form.controls['sentidos'] as FormArray;
-    const formArray = sentidosFormArray;
-    if (isChecked) {
-      formArray.push(new FormControl(sentido));
-    } else {
-      const index = formArray.controls.findIndex(
-        (item) => item.value === sentido
       );
       formArray.removeAt(index);
     }

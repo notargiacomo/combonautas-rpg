@@ -1,19 +1,4 @@
 <div class="cabecalho"></div>
-<!-- <div class="content">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="d-flex ">
-          <img mat-card-image class="titulo_combonautas" src="assets/img/combonautas.png" >
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="d-flex">
-          <img mat-card-image class="titulo_tormenta_20" src="assets/img/tormenta20.png" >
-        </div>
-      </div>
-    </div>
-  </div> -->
-
 <mat-card style="background-color: (132, 26, 18) !important">
   <mat-card-content style="background-color: (132, 26, 18) !important">
     <button mat-button (click)="navigateTo('')">Home</button>
@@ -59,16 +44,10 @@
       Utilitários
     </button>
     <mat-menu #menuUtilitarios="matMenu" yPosition="below">
-      <button
-        mat-menu-item
-        (click)="navigateTo('utilitarios/calculo-desafios')"
-      >
+      <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">
         Cálculo de Desafios
       </button>
-      <button
-        mat-menu-item
-        (click)="navigateTo('utilitarios/personagem-aleatorio')"
-      >
+      <button mat-menu-item (click)="navigateTo('utilitarios/personagem-aleatorio')">
         Personagem Aleatório
       </button>
     </mat-menu>

@@ -564,12 +564,13 @@ export class Personagem {
         let oficio = new PericiaPersonagem();
         Object.assign(oficio, this.pericias![indice]);
         oficio.pericia = nome;
+        oficio?.adicionaBonusExtra(condicao)
         this.pericias = [...this.pericias!.slice(0, indice + 1), oficio, ...this.pericias!.slice(indice + 1)];
         this.cdRef.detectChanges();
       }
     }
     console.log(this.pericias)
-    // this.atualizaPericias();
+    this.atualizaPericias();
   }
 
   public adicionarArmaNatural(
