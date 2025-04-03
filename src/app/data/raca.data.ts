@@ -50,7 +50,9 @@ export class RacaData {
         constituicao: 0,
         inteligencia: 0,
         sabedoria: 0,
-        carisma: 0
+        carisma: 0,
+        temMagia: false,
+        temPoderGeral: true,
       },
       {
         id: 2,
@@ -73,6 +75,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 1,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 3,
@@ -95,6 +100,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 2,
         carisma: 0
+,
+        temMagia: true,
+        temPoderGeral: false,
       },
       {
         id: 4,
@@ -117,6 +125,9 @@ export class RacaData {
         inteligencia: 2,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 5,
@@ -139,6 +150,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 6,
@@ -161,6 +175,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: true,
       },
       {
         id: 7,
@@ -183,6 +200,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: -1,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 8,
@@ -205,6 +225,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: -1,
         carisma: 2
+,
+        temMagia: true,
+        temPoderGeral: false,
       },
 
       // RAÇAS EXTRAS DO referencia BÁSICO
@@ -229,6 +252,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: true,
+        temPoderGeral: false,
       },
       {
         id: 10,
@@ -251,6 +277,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 11,
@@ -273,6 +302,9 @@ export class RacaData {
         inteligencia: 2,
         sabedoria: 0,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 12,
@@ -295,6 +327,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 13,
@@ -317,6 +352,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 14,
@@ -339,6 +377,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: true,
+        temPoderGeral: false,
       },
       {
         id: 15,
@@ -361,6 +402,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 2
+,
+        temMagia: true,
+        temPoderGeral: false,
       },
       {
         id: 16,
@@ -383,6 +427,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 2,
         carisma: 1
+,
+        temMagia: true,
+        temPoderGeral: false,
       },
       {
         id: 17,
@@ -405,6 +452,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: true,
+        temPoderGeral: false,
       },
       {
         id: 18,
@@ -427,6 +477,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
 
       // RAÇAS DO AMEAÇAS
@@ -452,6 +505,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 20,
@@ -474,6 +530,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 21,
@@ -496,6 +555,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 22,
@@ -518,6 +580,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 23,
@@ -540,6 +605,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 24,
@@ -562,6 +630,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 25,
@@ -584,6 +655,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 26,
@@ -606,6 +680,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 2,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 27,
@@ -628,6 +705,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 1,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 28,
@@ -649,6 +729,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 29,
@@ -671,6 +754,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -2
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 30,
@@ -693,6 +779,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 31,
@@ -714,6 +803,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 32,
@@ -736,6 +828,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 33,
@@ -758,6 +853,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 34,
@@ -780,6 +878,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 35,
@@ -802,6 +903,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 37,
@@ -824,6 +928,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 38,
@@ -846,6 +953,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 39,
@@ -868,6 +978,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 2,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 40,
@@ -890,6 +1003,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 1,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 41,
@@ -912,6 +1028,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 42,
@@ -934,6 +1053,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 43,
@@ -956,6 +1078,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 1,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 44,
@@ -978,6 +1103,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 1,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 45,
@@ -1000,6 +1128,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 46,
@@ -1022,6 +1153,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 47,
@@ -1044,6 +1178,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 48,
@@ -1066,6 +1203,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 49,
@@ -1088,6 +1228,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 50,
@@ -1110,6 +1253,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 51,
@@ -1132,6 +1278,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 52,
@@ -1154,6 +1303,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 53,
@@ -1176,6 +1328,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 54,
@@ -1198,6 +1353,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 55,
@@ -1220,6 +1378,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 56,
@@ -1242,6 +1403,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 57,
@@ -1264,6 +1428,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: 1,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 58,
@@ -1286,6 +1453,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 59,
@@ -1308,6 +1478,9 @@ export class RacaData {
         inteligencia: 2,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 60,
@@ -1330,6 +1503,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 61,
@@ -1351,6 +1527,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 62,
@@ -1373,6 +1552,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 2,
         carisma: 1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 63,
@@ -1395,6 +1577,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 0,
         carisma: -1
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 64,
@@ -1417,6 +1602,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: 0,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 65,
@@ -1439,6 +1627,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: -1,
         carisma: 2
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 66,
@@ -1461,6 +1652,9 @@ export class RacaData {
         inteligencia: 0,
         sabedoria: 1,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 67,
@@ -1483,6 +1677,9 @@ export class RacaData {
         inteligencia: -1,
         sabedoria: 2,
         carisma: 0
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
       {
         id: 69,
@@ -1505,6 +1702,9 @@ export class RacaData {
         inteligencia: 1,
         sabedoria: -1,
         carisma: 2
+,
+        temMagia: false,
+        temPoderGeral: false,
       },
     ];
   }

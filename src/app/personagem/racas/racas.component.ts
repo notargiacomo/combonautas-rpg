@@ -132,6 +132,8 @@ export class RacasComponent implements OnInit {
       inteligencia: [],
       sabedoria: [],
       carisma: [],
+      temMagia: [],
+      temPoderGeral: [],
       // referencias: new FormArray([]),
       nome: [],
       selecao: []

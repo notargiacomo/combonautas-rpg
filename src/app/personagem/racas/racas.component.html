@@ -66,6 +66,12 @@
                   </mat-select>
                 </mat-form-field>
               </div>
+              <div class="col-sm-2 mt-1">
+                <mat-checkbox formControlName="temMagia" (change)="consultar()">Concede Magia?</mat-checkbox>
+              </div>
+              <div class="col-sm-2 mt-1">
+                <mat-checkbox formControlName="temPoderGeral" (change)="consultar()">Concede Poder Geral?</mat-checkbox>
+              </div>
           </div>
         </div>
         <div class="row">

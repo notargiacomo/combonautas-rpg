@@ -27,6 +27,8 @@ export class Raca {
   inteligencia?: number;
   sabedoria?: number;
   carisma?: number;
+  temMagia?: boolean;
+  temPoderGeral?: boolean;
 
   constructor(){
   }
