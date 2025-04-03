@@ -53,6 +53,7 @@ export class RacaData {
         carisma: 0,
         temMagia: false,
         temPoderGeral: true,
+        temPericia: true,
       },
       {
         id: 2,
@@ -78,6 +79,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 3,
@@ -103,6 +105,7 @@ export class RacaData {
 ,
         temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 4,
@@ -128,6 +131,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 5,
@@ -153,6 +157,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 6,
@@ -178,6 +183,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: true,
+        temPericia: false,
       },
       {
         id: 7,
@@ -203,6 +209,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 8,
@@ -228,6 +235,7 @@ export class RacaData {
 ,
         temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
 
       // RAÇAS EXTRAS DO referencia BÁSICO
@@ -255,6 +263,7 @@ export class RacaData {
 ,
         temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 10,
@@ -280,6 +289,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 11,
@@ -305,6 +315,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: true,
       },
       {
         id: 12,
@@ -330,6 +341,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 13,
@@ -354,7 +366,8 @@ export class RacaData {
         carisma: 0
 ,
         temMagia: false,
-        temPoderGeral: false,
+        temPoderGeral: true,
+        temPericia: true,
       },
       {
         id: 14,
@@ -380,6 +393,7 @@ export class RacaData {
 ,
         temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 15,
@@ -405,6 +419,7 @@ export class RacaData {
 ,
         temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 16,
@@ -430,6 +445,7 @@ export class RacaData {
 ,
         temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 17,
@@ -455,6 +471,7 @@ export class RacaData {
 ,
         temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 18,
@@ -480,6 +497,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
 
       // RAÇAS DO AMEAÇAS
@@ -508,6 +526,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: true,
       },
       {
         id: 20,
@@ -533,6 +552,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 21,
@@ -558,6 +578,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 22,
@@ -583,6 +604,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 23,
@@ -608,6 +630,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 24,
@@ -633,6 +656,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 25,
@@ -658,6 +682,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: true,
       },
       {
         id: 26,
@@ -683,6 +708,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 27,
@@ -708,6 +734,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 28,
@@ -730,8 +757,9 @@ export class RacaData {
         sabedoria: 0,
         carisma: 0
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 29,
@@ -756,7 +784,8 @@ export class RacaData {
         carisma: -2
 ,
         temMagia: false,
-        temPoderGeral: false,
+        temPoderGeral: true,
+        temPericia: false,
       },
       {
         id: 30,
@@ -780,8 +809,9 @@ export class RacaData {
         sabedoria: 0,
         carisma: -1
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 31,
@@ -806,6 +836,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: true,
       },
       {
         id: 32,
@@ -831,6 +862,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 33,
@@ -856,6 +888,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 34,
@@ -880,7 +913,8 @@ export class RacaData {
         carisma: 0
 ,
         temMagia: false,
-        temPoderGeral: false,
+        temPoderGeral: true,
+        temPericia: false,
       },
       {
         id: 35,
@@ -904,8 +938,9 @@ export class RacaData {
         sabedoria: 0,
         carisma: 0
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 37,
@@ -931,6 +966,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 38,
@@ -956,6 +992,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: true,
       },
       {
         id: 39,
@@ -981,6 +1018,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 40,
@@ -1006,6 +1044,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 41,
@@ -1031,6 +1070,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 42,
@@ -1055,7 +1095,8 @@ export class RacaData {
         carisma: 0
 ,
         temMagia: false,
-        temPoderGeral: false,
+        temPoderGeral: true,
+        temPericia: true,
       },
       {
         id: 43,
@@ -1079,8 +1120,9 @@ export class RacaData {
         sabedoria: 1,
         carisma: 0
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 44,
@@ -1106,6 +1148,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 45,
@@ -1131,6 +1174,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 46,
@@ -1156,6 +1200,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 47,
@@ -1181,6 +1226,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 48,
@@ -1206,6 +1252,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 49,
@@ -1231,6 +1278,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 50,
@@ -1256,6 +1304,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 51,
@@ -1281,6 +1330,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 52,
@@ -1306,6 +1356,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 53,
@@ -1331,6 +1382,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 54,
@@ -1356,6 +1408,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 55,
@@ -1380,7 +1433,8 @@ export class RacaData {
         carisma: 0
 ,
         temMagia: false,
-        temPoderGeral: false,
+        temPoderGeral: true,
+        temPericia: true,
       },
       {
         id: 56,
@@ -1406,6 +1460,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 57,
@@ -1431,6 +1486,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 58,
@@ -1456,6 +1512,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 59,
@@ -1481,6 +1538,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 60,
@@ -1506,6 +1564,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 61,
@@ -1528,8 +1587,9 @@ export class RacaData {
         sabedoria: 0,
         carisma: 0
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 62,
@@ -1553,8 +1613,9 @@ export class RacaData {
         sabedoria: 2,
         carisma: 1
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 63,
@@ -1580,6 +1641,7 @@ export class RacaData {
 ,
         temMagia: false,
         temPoderGeral: false,
+        temPericia: true,
       },
       {
         id: 64,
@@ -1604,7 +1666,8 @@ export class RacaData {
         carisma: 0
 ,
         temMagia: false,
-        temPoderGeral: false,
+        temPoderGeral: true,
+        temPericia: false,
       },
       {
         id: 65,
@@ -1628,8 +1691,9 @@ export class RacaData {
         sabedoria: -1,
         carisma: 2
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 66,
@@ -1654,7 +1718,8 @@ export class RacaData {
         carisma: 0
 ,
         temMagia: false,
-        temPoderGeral: false,
+        temPoderGeral: true,
+        temPericia: false,
       },
       {
         id: 67,
@@ -1678,8 +1743,9 @@ export class RacaData {
         sabedoria: 2,
         carisma: 0
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
       {
         id: 69,
@@ -1703,8 +1769,9 @@ export class RacaData {
         sabedoria: -1,
         carisma: 2
 ,
-        temMagia: false,
+        temMagia: true,
         temPoderGeral: false,
+        temPericia: false,
       },
     ];
   }

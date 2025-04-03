@@ -29,6 +29,7 @@ export class Raca {
   carisma?: number;
   temMagia?: boolean;
   temPoderGeral?: boolean;
+  temPericia?: boolean;
 
   constructor(){
   }
