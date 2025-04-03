@@ -30,6 +30,9 @@ export class Raca {
   temMagia?: boolean;
   temPoderGeral?: boolean;
   temPericia?: boolean;
+  temRD?:boolean;
+  temDefeito?: boolean;
+  temArmaNatural?: boolean;
 
   constructor(){
   }

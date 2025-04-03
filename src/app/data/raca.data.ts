@@ -54,6 +54,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: true,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 2,
@@ -80,6 +83,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 3,
@@ -106,6 +112,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 4,
@@ -132,6 +141,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 5,
@@ -158,6 +170,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 6,
@@ -184,6 +199,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 7,
@@ -210,6 +228,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 8,
@@ -236,6 +257,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
 
       // RAÇAS EXTRAS DO referencia BÁSICO
@@ -244,7 +268,7 @@ export class RacaData {
         id_raca_superior: 0,
         nome: `Golem`,
         tipo: Construto,
-        tamanho: Tamanho.MEDIO,
+        tamanho: Tamanho.VARIAVEL,
         nome_arquivo_descricao: `raca_golem_descricao`,
         imagem: 'assets/img/raca_golem.png',
         deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
@@ -264,6 +288,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: true,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 10,
@@ -290,6 +317,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 11,
@@ -316,6 +346,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: true,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 12,
@@ -342,6 +375,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 13,
@@ -368,6 +404,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: true,
+        temRD: true,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 14,
@@ -394,6 +433,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 15,
@@ -420,6 +462,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 16,
@@ -446,6 +491,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 17,
@@ -472,6 +520,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 18,
@@ -498,6 +549,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
 
       // RAÇAS DO AMEAÇAS
@@ -527,6 +581,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: true,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 20,
@@ -553,6 +610,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 21,
@@ -579,6 +639,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 22,
@@ -605,6 +668,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 23,
@@ -631,6 +697,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 24,
@@ -657,6 +726,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 25,
@@ -683,6 +755,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: true,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 26,
@@ -709,6 +784,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 27,
@@ -735,6 +813,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 28,
@@ -760,6 +841,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 29,
@@ -786,6 +870,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: false,
+        temRD: true,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 30,
@@ -812,6 +899,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 31,
@@ -837,6 +927,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: true,
+        temRD: true,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 32,
@@ -863,6 +956,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 33,
@@ -889,6 +985,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 34,
@@ -915,6 +1014,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 35,
@@ -941,6 +1043,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 37,
@@ -967,6 +1072,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 38,
@@ -993,6 +1101,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: true,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 39,
@@ -1019,6 +1130,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 40,
@@ -1045,6 +1159,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: true,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 41,
@@ -1071,6 +1188,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 42,
@@ -1097,6 +1217,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: true,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 43,
@@ -1123,6 +1246,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 44,
@@ -1149,6 +1275,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 45,
@@ -1175,6 +1304,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 46,
@@ -1201,6 +1333,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 47,
@@ -1227,6 +1362,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 48,
@@ -1253,6 +1391,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 49,
@@ -1279,6 +1420,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 50,
@@ -1305,6 +1449,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 51,
@@ -1331,6 +1478,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 52,
@@ -1357,6 +1507,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 53,
@@ -1383,6 +1536,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 54,
@@ -1409,6 +1565,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 55,
@@ -1435,6 +1594,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: true,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 56,
@@ -1461,6 +1623,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 57,
@@ -1487,6 +1652,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 58,
@@ -1513,6 +1681,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 59,
@@ -1539,6 +1710,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 60,
@@ -1565,13 +1739,16 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: false,
+        temRD: true,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 61,
         id_raca_superior: 0,
         nome: `Duende`,
-        tipo: '',
-        tamanho: '',
+        tipo: Espirito,
+        tamanho: Tamanho.VARIAVEL,
         nome_arquivo_descricao: `raca_duende_descricao`,
         imagem: 'assets/img/raca_duende.png',
         deslocamentos: [''],
@@ -1590,6 +1767,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: true,
+        temDefeito: true,
+        temArmaNatural: true,
       },
       {
         id: 62,
@@ -1616,6 +1796,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 63,
@@ -1642,6 +1825,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: false,
         temPericia: true,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 64,
@@ -1668,6 +1854,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 65,
@@ -1694,6 +1883,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: true,
       },
       {
         id: 66,
@@ -1720,6 +1912,9 @@ export class RacaData {
         temMagia: false,
         temPoderGeral: true,
         temPericia: false,
+        temRD: false,
+        temDefeito: true,
+        temArmaNatural: false,
       },
       {
         id: 67,
@@ -1746,6 +1941,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
       {
         id: 69,
@@ -1772,6 +1970,9 @@ export class RacaData {
         temMagia: true,
         temPoderGeral: false,
         temPericia: false,
+        temRD: false,
+        temDefeito: false,
+        temArmaNatural: false,
       },
     ];
   }

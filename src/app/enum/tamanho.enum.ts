@@ -5,4 +5,5 @@ export enum Tamanho {
     GRANDE = "Grande",
     ENORME = "Enorme",
     COLOSSAL = "Colossal",
+    VARIAVEL = "Variável"
 }
