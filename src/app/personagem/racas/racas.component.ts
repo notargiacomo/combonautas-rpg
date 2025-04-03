@@ -91,6 +91,7 @@ export class RacasComponent implements OnInit {
   tamanhos = Object.values(Tamanho);
   referencias = Object.values(Referencia);
   tipos = Object.values(TipoCriatura);
+  atributo = [-2, -1, 0, 1, 2, 3];
   numero_registros = 0;
   selectedIndex: number = 0;
 
@@ -125,6 +126,12 @@ export class RacasComponent implements OnInit {
       tamanho: [],
       sentidos: [],
       deslocamentos: [],
+      forca: [],
+      destreza: [],
+      constituicao: [],
+      inteligencia: [],
+      sabedoria: [],
+      carisma: [],
       // referencias: new FormArray([]),
       nome: [],
       selecao: []

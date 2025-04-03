@@ -44,7 +44,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '19',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:245}]
+        historia: ``, resolucao: [], habilidades: [{id:245}],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 2,
@@ -60,7 +66,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '20',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:246}, {id:247}, {id:248}, {id: 249}]
+        historia: ``, resolucao: [], habilidades: [{id:246}, {id:247}, {id:248}, {id: 249}],
+        forca: 0,
+        destreza: -1,
+        constituicao: 2,
+        inteligencia: 0,
+        sabedoria: 1,
+        carisma: 0
       },
       {
         id: 3,
@@ -76,7 +88,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '21',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:250}, {id:251}, {id:252}]
+        historia: ``, resolucao: [], habilidades: [{id:250}, {id:251}, {id:252}], 
+        forca: 0,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: -1,
+        sabedoria: 2,
+        carisma: 0
       },
       {
         id: 4,
@@ -92,7 +110,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '22',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:253}, {id:254}, {id:255}]
+        historia: ``, resolucao: [], habilidades: [{id:253}, {id:254}, {id:255}],
+        forca: 0,
+        destreza: 1,
+        constituicao: -1,
+        inteligencia: 2,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 5,
@@ -108,7 +132,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '23',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:256}, {id:257}, {id:258}, {id:259}]
+        historia: ``, resolucao: [], habilidades: [{id:256}, {id:257}, {id:258}, {id:259}], 
+        forca: 0,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 6,
@@ -125,6 +155,12 @@ export class RacaData {
         paginas: '24',
         descricao: ``,
         historia: ``, resolucao: [], habilidades: [{id:260}, {id:261}]
+       , forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 7,
@@ -140,7 +176,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '25',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:262}, {id:263}, {id:264}, {id:265}]
+        historia: ``, resolucao: [], habilidades: [{id:262}, {id:263}, {id:264}, {id:265}], 
+        forca: 2,
+        destreza: 0,
+        constituicao: 1,
+        inteligencia: 0,
+        sabedoria: -1,
+        carisma: 0
       },
       {
         id: 8,
@@ -157,6 +199,12 @@ export class RacaData {
         paginas: '26',
         descricao: ``,
         historia: ``, resolucao: [], habilidades: [{id:1000}, {id:1001}, {id:1002}]
+       , forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: -1,
+        carisma: 2
       },
 
       // RAÇAS EXTRAS DO referencia BÁSICO
@@ -174,7 +222,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '24',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:1003}, {id:1004}, {id:1005}, {id:1006}, {id:1007}]
+        historia: ``, resolucao: [], habilidades: [{id:1003}, {id:1004}, {id:1005}, {id:1006}, {id:1007}], 
+        forca: 1,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 10,
@@ -190,7 +244,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '27 e 28',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:1008}, {id:1009}, {id:1010}]
+        historia: ``, resolucao: [], habilidades: [{id:1008}, {id:1009}, {id:1010}], 
+        forca: -1,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 1
       },
       {
         id: 11,
@@ -206,7 +266,13 @@ export class RacaData {
         referencias: Referencia.BASICO,
         paginas: '28',
         descricao: ``,
-        historia: ``, resolucao: [], habilidades: [{id:1011}, {id:1012}, {id:1013}, {id:1014}]
+        historia: ``, resolucao: [], habilidades: [{id:1011}, {id:1012}, {id:1013}, {id:1014}], 
+        forca: -1,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 2,
+        sabedoria: 0,
+        carisma: 1
       },
       {
         id: 12,
@@ -223,6 +289,12 @@ export class RacaData {
         paginas: '28 e 29',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 1
       },
       {
         id: 13,
@@ -239,6 +311,12 @@ export class RacaData {
         paginas: '29',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 0,
+        constituicao: -1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 14,
@@ -255,6 +333,12 @@ export class RacaData {
         paginas: '29 e 30',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 15,
@@ -271,6 +355,12 @@ export class RacaData {
         paginas: '30',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: -2,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 2
       },
       {
         id: 16,
@@ -287,6 +377,12 @@ export class RacaData {
         paginas: '30 e 31',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 2,
+        carisma: 1
       },
       {
         id: 17,
@@ -303,6 +399,12 @@ export class RacaData {
         paginas: '30 e 31',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 18,
@@ -319,6 +421,12 @@ export class RacaData {
         paginas: '31',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 0,
+        constituicao: 2,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 0
       },
 
       // RAÇAS DO AMEAÇAS
@@ -338,6 +446,12 @@ export class RacaData {
         paginas: '31',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 2,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 20,
@@ -354,6 +468,12 @@ export class RacaData {
         paginas: '33',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 2,
+        destreza: 0,
+        constituicao: 1,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 21,
@@ -370,6 +490,12 @@ export class RacaData {
         paginas: '37',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 0,
+        constituicao: 2,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 22,
@@ -386,6 +512,12 @@ export class RacaData {
         paginas: '39',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: -1,
+        constituicao: 2,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 23,
@@ -402,6 +534,12 @@ export class RacaData {
         paginas: '40',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 3,
+        destreza: 0,
+        constituicao: 2,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 24,
@@ -418,6 +556,12 @@ export class RacaData {
         paginas: '79',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 2,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 25,
@@ -434,6 +578,12 @@ export class RacaData {
         paginas: '84',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 1,
+        constituicao: 2,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 26,
@@ -450,6 +600,12 @@ export class RacaData {
         paginas: '105',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: -1,
+        sabedoria: 2,
+        carisma: 0
       },
       {
         id: 27,
@@ -466,6 +622,12 @@ export class RacaData {
         paginas: '115',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 2,
+        inteligencia: -1,
+        sabedoria: 1,
+        carisma: 0
       },
       {
         id: 28,
@@ -481,6 +643,12 @@ export class RacaData {
         paginas: '151',
         descricao: ``,
         historia: ``, resolucao: [], instrucao: [OpcoesSelecao.DOIS_ATRIBUTOS],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 29,
@@ -497,6 +665,12 @@ export class RacaData {
         paginas: '157',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 2,
+        destreza: 0,
+        constituicao: 1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -2
       },
       {
         id: 30,
@@ -513,6 +687,12 @@ export class RacaData {
         paginas: '158',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 2,
+        constituicao: 1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 31,
@@ -528,6 +708,12 @@ export class RacaData {
         paginas: '161',
         descricao: ``,
         historia: ``, resolucao: [], instrucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 32,
@@ -544,6 +730,12 @@ export class RacaData {
         paginas: '162',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 1,
+        constituicao: 2,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 33,
@@ -560,6 +752,12 @@ export class RacaData {
         paginas: '164',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 34,
@@ -576,6 +774,12 @@ export class RacaData {
         paginas: '175',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 35,
@@ -592,6 +796,12 @@ export class RacaData {
         paginas: '183',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: -1,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 37,
@@ -608,6 +818,12 @@ export class RacaData {
         paginas: '201',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 1
       },
       {
         id: 38,
@@ -624,6 +840,12 @@ export class RacaData {
         paginas: '265',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 1,
+        destreza: -1,
+        constituicao: 2,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 39,
@@ -640,6 +862,12 @@ export class RacaData {
         paginas: '267',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: -1,
+        sabedoria: 2,
+        carisma: 0
       },
       {
         id: 40,
@@ -656,6 +884,12 @@ export class RacaData {
         paginas: '268',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 2,
+        constituicao: 0,
+        inteligencia: -1,
+        sabedoria: 1,
+        carisma: 0
       },
       {
         id: 41,
@@ -672,6 +906,12 @@ export class RacaData {
         paginas: '270',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 2,
+        constituicao: 1,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 42,
@@ -688,6 +928,12 @@ export class RacaData {
         paginas: '300',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 43,
@@ -704,6 +950,12 @@ export class RacaData {
         paginas: '304',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 1,
+        carisma: 0
       },
       {
         id: 44,
@@ -720,6 +972,12 @@ export class RacaData {
         paginas: '304',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 1,
+        carisma: 0
       },
       {
         id: 45,
@@ -736,6 +994,12 @@ export class RacaData {
         paginas: '304',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 46,
@@ -752,6 +1016,12 @@ export class RacaData {
         paginas: '304',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 47,
@@ -768,6 +1038,12 @@ export class RacaData {
         paginas: '304',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 48,
@@ -784,6 +1060,12 @@ export class RacaData {
         paginas: '304',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 49,
@@ -800,6 +1082,12 @@ export class RacaData {
         paginas: '304',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 0,
+        constituicao: 1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 50,
@@ -816,6 +1104,12 @@ export class RacaData {
         paginas: '305',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 1
       },
       {
         id: 51,
@@ -832,6 +1126,12 @@ export class RacaData {
         paginas: '305',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 52,
@@ -848,6 +1148,12 @@ export class RacaData {
         paginas: '305',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 1
       },
       {
         id: 53,
@@ -864,6 +1170,12 @@ export class RacaData {
         paginas: '305',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 54,
@@ -880,6 +1192,12 @@ export class RacaData {
         paginas: '305',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 55,
@@ -896,6 +1214,12 @@ export class RacaData {
         paginas: '305',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 56,
@@ -912,6 +1236,12 @@ export class RacaData {
         paginas: '316',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 2,
+        constituicao: 1,
+        inteligencia: -1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 57,
@@ -928,6 +1258,12 @@ export class RacaData {
         paginas: '333',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: 1,
+        carisma: 1
       },
       {
         id: 58,
@@ -944,6 +1280,12 @@ export class RacaData {
         paginas: '333',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 1,
+        constituicao: 1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 59,
@@ -960,6 +1302,12 @@ export class RacaData {
         paginas: '339',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: -1,
+        destreza: 0,
+        constituicao: 1,
+        inteligencia: 2,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 60,
@@ -970,12 +1318,18 @@ export class RacaData {
         nome_arquivo_descricao: `raca_soterrado_descricao`,
         imagem: 'assets/img/raca_soterrado.png',
         deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
-        instrucao: [OpcoesSelecao.TRES_ATRIBUTOS_DIFERENTES, OpcoesSelecao.EXCETO, AcrecimoAtributo.CONSTITUICAO],
+        instrucao: [OpcoesSelecao.TRES_ATRIBUTOS_DIFERENTES, OpcoesSelecao.EXCETO, DecrecimoAtributo.CONSTITUICAO],
         sentidos: [Sentido.VISAO_ESCURO],
         referencias: Referencia.AMEACAS,
         paginas: '354',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: -1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 61,
@@ -991,6 +1345,12 @@ export class RacaData {
         paginas: '',
         descricao: ``,
         historia: ``, resolucao: [], instrucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 62,
@@ -1007,6 +1367,12 @@ export class RacaData {
         paginas: '',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: -1,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: 2,
+        carisma: 1
       },
       {
         id: 63,
@@ -1023,6 +1389,12 @@ export class RacaData {
         paginas: '',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 1,
+        destreza: 0,
+        constituicao: 1,
+        inteligencia: 0,
+        sabedoria: 0,
+        carisma: -1
       },
       {
         id: 64,
@@ -1039,6 +1411,12 @@ export class RacaData {
         paginas: '',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: 0,
+        carisma: 0
       },
       {
         id: 65,
@@ -1055,6 +1433,12 @@ export class RacaData {
         paginas: '',
         descricao: ``,
         historia: ``, resolucao: [], 
+        forca: 0,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: 0,
+        sabedoria: -1,
+        carisma: 2
       },
       {
         id: 66,
@@ -1071,6 +1455,12 @@ export class RacaData {
         paginas: 'DB 173 pag. 48',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: -1,
+        constituicao: 2,
+        inteligencia: 0,
+        sabedoria: 1,
+        carisma: 0
       },
       {
         id: 67,
@@ -1087,6 +1477,12 @@ export class RacaData {
         paginas: 'DB 173 pag. 48',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 1,
+        constituicao: 0,
+        inteligencia: -1,
+        sabedoria: 2,
+        carisma: 0
       },
       {
         id: 69,
@@ -1103,6 +1499,12 @@ export class RacaData {
         paginas: 'DB 173 pag. 48',
         descricao: ``,
         historia: ``, resolucao: [],
+        forca: 0,
+        destreza: 0,
+        constituicao: 0,
+        inteligencia: 1,
+        sabedoria: -1,
+        carisma: 2
       },
     ];
   }

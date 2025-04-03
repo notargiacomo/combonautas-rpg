@@ -20,7 +20,13 @@ export class Raca {
   habilidades?: Poder[];
   seSelecaoFinalizada?: boolean;
   referencias?: string;
-  paginas?: string
+  paginas?: string;
+  forca?: number;
+  destreza?: number;
+  constituicao?: number;
+  inteligencia?: number;
+  sabedoria?: number;
+  carisma?: number;
 
   constructor(){
   }

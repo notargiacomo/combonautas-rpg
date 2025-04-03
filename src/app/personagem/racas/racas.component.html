@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <div class="row">
-              <div class="col-sm-3 mt-1">
+              <div class="col-sm-2 mt-1">
                 <mat-form-field class="select-dobrado">
                   <mat-label>Tipo de Criatura</mat-label>
                   <mat-select
@@ -24,7 +24,7 @@
                   </mat-select>
                 </mat-form-field>
               </div>
-              <div class="col-sm-3 mt-1">
+              <div class="col-sm-2 mt-1">
                 <mat-form-field class="select-dobrado">
                   <mat-label>Tamanho</mat-label>
                   <mat-select
@@ -38,7 +38,7 @@
                   </mat-select>
                 </mat-form-field>
               </div>
-              <div class="col-sm-3 mt-1">
+              <div class="col-sm-2 mt-1">
                 <mat-form-field class="select-dobrado">
                   <mat-label>Sentido</mat-label>
                   <mat-select
@@ -52,7 +52,7 @@
                   </mat-select>
                 </mat-form-field>
               </div>
-              <div class="col-sm-3 mt-1">
+              <div class="col-sm-2 mt-1">
                 <mat-form-field class="select-dobrado">
                   <mat-label>Deslocamento</mat-label>
                   <mat-select
@@ -66,6 +66,45 @@
                   </mat-select>
                 </mat-form-field>
               </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 mt-1">
+            
+            <mat-form-field class="select-dobrado">
+              <mat-label>FOR</mat-label>
+              <input matInput  type="number" formControlName="forca" min="-2" max="3" (change)="consultar()"/>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-form-field class="select-dobrado">
+              <mat-label>DES</mat-label>
+              <input matInput  type="number" formControlName="destreza" min="-2" max="3" (change)="consultar()"/>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-form-field class="select-dobrado">
+              <mat-label>CON</mat-label>
+              <input matInput  type="number" formControlName="constituicao" min="-2" max="3" (change)="consultar()"/>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-form-field class="select-dobrado">
+              <mat-label>INT</mat-label>
+              <input matInput  type="number" formControlName="inteligencia" min="-2" max="3" (change)="consultar()"/>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-form-field class="select-dobrado">
+              <mat-label>SAB</mat-label>
+              <input matInput  type="number" formControlName="sabedoria" min="-2" max="3" (change)="consultar()"/>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-form-field class="select-dobrado">
+              <mat-label>CAR</mat-label>
+              <input matInput  type="number" formControlName="carisma" min="-2" max="3" (change)="consultar()"/>
+            </mat-form-field>
           </div>
         </div>
         <!-- <div class="row">

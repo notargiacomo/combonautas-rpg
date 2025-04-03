@@ -553,3 +553,8 @@ mat-row:nth-child(odd) {
 .mat-mdc-form-field-infix{
   width: 150px !important;
 }
+
+.mat-mdc-form-field{
+  width: max-content !important;
+  max-width: max-content !important;
+}
