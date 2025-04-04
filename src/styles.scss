@@ -357,6 +357,7 @@ tr.element-row:not(.expanded-row):active {
 .mat-mdc-tab {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
+  --mat-sys-primary: grey !important;
 }
 
 .mat-mdc-menu-content,
@@ -567,6 +568,10 @@ tr.element-row:not(.example-expanded-row):active {
 
 .mat-mdc-table th {
   background-color: rgb(204, 204, 204) !important;
+}
+
+.mat-mdc-table {
+  // border: 5px #000 !important;
 }
 
 .custom-dialog-container {
