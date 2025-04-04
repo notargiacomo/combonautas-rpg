@@ -1,7 +1,7 @@
 <div class="container">
   <form [formGroup]="form">
-  <div class="row mt-1">
-    <mat-card class="cartao">
+    <div class="row mt-1">
+      <mat-card class="cartao">
         <div class="row" *ngIf="!seVeioFicha">
           <div class="col-sm-12">
             <h2><b>RAÇAS</b></h2>
@@ -9,101 +9,93 @@
           </div>
         </div>
         <div class="row">
-            <div class="row">
-              <div class="col-sm-2 mt-1">
-                <mat-form-field class="select-dobrado">
-                  <mat-label>Tipo de Criatura</mat-label>
-                  <mat-select
-                  (selectionChange)="consultar()"
-                  formControlName="tipo">
-                    @for (tipo of tipos; track tipo) {
-                    <mat-option [value]="tipo">{{
-                      tipo
-                      }}</mat-option>
-                    }
-                  </mat-select>
-                </mat-form-field>
-              </div>
-              <div class="col-sm-2 mt-1">
-                <mat-form-field class="select-dobrado">
-                  <mat-label>Tamanho</mat-label>
-                  <mat-select
-                  (selectionChange)="consultar()"
-                  formControlName="tamanho">
-                    @for (tamanho of tamanhos; track tamanho) {
-                    <mat-option [value]="tamanho">{{
-                      tamanho
-                      }}</mat-option>
-                    }
-                  </mat-select>
-                </mat-form-field>
-              </div>
-              <div class="col-sm-2 mt-1">
-                <mat-form-field class="select-dobrado">
-                  <mat-label>Sentido</mat-label>
-                  <mat-select
-                  (selectionChange)="consultar()"
-                  formControlName="sentidos">
-                    @for (sentido of sentidos; track sentido) {
-                    <mat-option [value]="sentido">{{
-                      sentido
-                      }}</mat-option>
-                    }
-                  </mat-select>
-                </mat-form-field>
-              </div>
-              <div class="col-sm-2 mt-1">
-                <mat-form-field class="select-dobrado">
-                  <mat-label>Deslocamento</mat-label>
-                  <mat-select
-                  (selectionChange)="consultar()"
-                  formControlName="deslocamentos">
-                    @for (deslocamento of deslocamentos; track deslocamento) {
-                    <mat-option [value]="deslocamento">{{
-                      deslocamento
-                      }}</mat-option>
-                    }
-                  </mat-select>
-                </mat-form-field>
-              </div>
+          <div class="row">
+            <div class="col-sm-2 mt-1">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Tipo de Criatura</mat-label>
+                <mat-select (selectionChange)="consultar()" formControlName="tipo">
+                  @for (tipo of tipos; track tipo) {
+                  <mat-option [value]="tipo">{{
+                    tipo
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-2 mt-1">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Tamanho</mat-label>
+                <mat-select (selectionChange)="consultar()" formControlName="tamanho">
+                  @for (tamanho of tamanhos; track tamanho) {
+                  <mat-option [value]="tamanho">{{
+                    tamanho
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-2 mt-1">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Sentido</mat-label>
+                <mat-select (selectionChange)="consultar()" formControlName="sentidos">
+                  @for (sentido of sentidos; track sentido) {
+                  <mat-option [value]="sentido">{{
+                    sentido
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-2 mt-1">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Deslocamento</mat-label>
+                <mat-select (selectionChange)="consultar()" formControlName="deslocamentos">
+                  @for (deslocamento of deslocamentos; track deslocamento) {
+                  <mat-option [value]="deslocamento">{{
+                    deslocamento
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-2 mt-1">
-            
+
             <mat-form-field class="select-dobrado">
               <mat-label>FOR</mat-label>
-              <input matInput  type="number" formControlName="forca" min="-2" max="3" (change)="consultar()"/>
+              <input matInput type="number" formControlName="forca" min="-2" max="3" (change)="consultar()" />
             </mat-form-field>
           </div>
           <div class="col-sm-2 mt-1">
             <mat-form-field class="select-dobrado">
               <mat-label>DES</mat-label>
-              <input matInput  type="number" formControlName="destreza" min="-2" max="3" (change)="consultar()"/>
+              <input matInput type="number" formControlName="destreza" min="-2" max="3" (change)="consultar()" />
             </mat-form-field>
           </div>
           <div class="col-sm-2 mt-1">
             <mat-form-field class="select-dobrado">
               <mat-label>CON</mat-label>
-              <input matInput  type="number" formControlName="constituicao" min="-2" max="3" (change)="consultar()"/>
+              <input matInput type="number" formControlName="constituicao" min="-2" max="3" (change)="consultar()" />
             </mat-form-field>
           </div>
           <div class="col-sm-2 mt-1">
             <mat-form-field class="select-dobrado">
               <mat-label>INT</mat-label>
-              <input matInput  type="number" formControlName="inteligencia" min="-2" max="3" (change)="consultar()"/>
+              <input matInput type="number" formControlName="inteligencia" min="-2" max="3" (change)="consultar()" />
             </mat-form-field>
           </div>
           <div class="col-sm-2 mt-1">
             <mat-form-field class="select-dobrado">
               <mat-label>SAB</mat-label>
-              <input matInput  type="number" formControlName="sabedoria" min="-2" max="3" (change)="consultar()"/>
+              <input matInput type="number" formControlName="sabedoria" min="-2" max="3" (change)="consultar()" />
             </mat-form-field>
           </div>
           <div class="col-sm-2 mt-1">
             <mat-form-field class="select-dobrado">
               <mat-label>CAR</mat-label>
-              <input matInput  type="number" formControlName="carisma" min="-2" max="3" (change)="consultar()"/>
+              <input matInput type="number" formControlName="carisma" min="-2" max="3" (change)="consultar()" />
             </mat-form-field>
           </div>
         </div>
@@ -131,13 +123,7 @@
           <div class="col-sm-6 mt-1">
             <mat-form-field class="form-field">
               <mat-label>Raça</mat-label>
-              <input
-                formControlName="nome"
-                matInput
-                type="text"
-                name="raca"
-                (keyup)="consultar()"
-              />
+              <input formControlName="nome" matInput type="text" name="raca" (keyup)="consultar()" />
             </mat-form-field>
           </div>
           <div class="col-sm-6 mt-1">
@@ -150,528 +136,407 @@
             </section>
           </div>
         </div>
-    </mat-card>
-  </div>
-  <div class="row mt-1">
-    <mat-card class="cartao">
-      <div class="row">
-        <div class="d-flex justify-content-end">
-          <b>Número de Registros: {{ numero_registros }}</b>
+      </mat-card>
+    </div>
+    <div class="row mt-1">
+      <mat-card class="cartao">
+        <div class="row">
+          <div class="d-flex justify-content-end">
+            <b>Número de Registros: {{ numero_registros }}</b>
+          </div>
         </div>
-      </div>
-      <br />
-      <table
-        mat-table
-        [dataSource]="racas"
-        multiTemplateDataRows
-        class="mat-elevation-z8"
-      >
-        @for (column of columnsToDisplay; track column) {
-        <ng-container matColumnDef="{{ column }}">
-          <th
-            mat-header-cell
-            *matHeaderCellDef
-            style="text-transform: uppercase"
-          >
-            {{ column }}
-          </th>
-          <td mat-cell *matCellDef="let element">{{ element[column] }}</td>
-        </ng-container>
-        }
-        <ng-container matColumnDef="expand">
-          <th mat-header-cell *matHeaderCellDef aria-label="row actions">
-            &nbsp;
-          </th>
-          <td mat-cell *matCellDef="let element">
-            <button
-              mat-icon-button
-              aria-label="expand row"
-              (click)="
+        <br />
+        <table mat-table [dataSource]="racas" multiTemplateDataRows class="mat-elevation-z8">
+          @for (column of columnsToDisplay; track column) {
+          <ng-container matColumnDef="{{ column }}">
+            <th mat-header-cell *matHeaderCellDef style="text-transform: uppercase">
+              {{ column }}
+            </th>
+            <td mat-cell *matCellDef="let element" style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;">{{ element[column] }}</td>
+          </ng-container>
+          }
+          <ng-container matColumnDef="expand">
+            <th mat-header-cell *matHeaderCellDef aria-label="row actions">
+              &nbsp;
+            </th>
+            <td mat-cell style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;" *matCellDef="let element">
+              <button mat-icon-button aria-label="expand row" (click)="
                 expandedElement = expandedElement === element ? null : element;
-                $event.stopPropagation()
-              "
-            >
-              @if (expandedElement === element) {
-              <mat-icon>keyboard_arrow_up</mat-icon>
-              } @else {
-              <mat-icon>keyboard_arrow_down</mat-icon>
-              }
-            </button>
-          </td>
-        </ng-container>
-        <ng-container matColumnDef="expandedDetail">
-          <td
-            mat-cell
-            *matCellDef="let element"
-            [attr.colspan]="columnsToDisplayWithExpand.length"
-          >
-            <div
-              class="container celement-detail"
-              [@detailExpand]="
-                element == expandedElement ? 'expanded' : 'collapsed'
-              "
-            >
-              <div
-                class="row"
-                *ngIf="seVeioFicha && element.instrucao.length !== 0">
-                <div class="col-sm-12 mt-4">
-                  <div class="row">
-                    <div class="col-sm-3 mt-4">
-                      <label> SELECIONAR RAÇA? </label>
-                    </div>
-                    <div class="col-sm-9 mt-3">
-                      <section class="section">
-                        <mat-checkbox
-                          *ngIf="seVeioFicha && element.instrucao.length !== 0"
-                          name="racaSelecionada"
-                          (change)="checkSelecionaRaca(element, $event.checked)"
-                        >
-                        </mat-checkbox>
-                      </section>
+                $event.stopPropagation()">
+                @if (expandedElement === element) {
+                <mat-icon>keyboard_arrow_up</mat-icon>
+                } @else {
+                <mat-icon>keyboard_arrow_down</mat-icon>
+                }
+              </button>
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;">
+              <div class="element-detail-wrapper" [class.element-detail-wrapper-expanded]="isExpanded(element)">
+                <div class="element-detail">
+                  <div class="row" *ngIf="seVeioFicha && element.instrucao.length !== 0">
+                    <div class="col-sm-12">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label> SELECIONAR RAÇA? </label>
+                        </div>
+                        <div class="col-sm-9 mt-2">
+                          <section class="section">
+                            <mat-checkbox *ngIf="seVeioFicha && element.instrucao.length !== 0" name="racaSelecionada"
+                              (change)="checkSelecionaRaca(element, $event.checked)">
+                            </mat-checkbox>
+                          </section>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <mat-tab-group>
-                <mat-tab label="Seleção" *ngIf="seExibeSelecao(element)">
-                  <div class="row">
-                    <div class="col-sm-12 mt-4">
-                      <section class="section">
-                        @for (atributo of atributos; track atributo) {
-                        <mat-checkbox
-                          [disabled]="
+                  <mat-tab-group>
+                    <mat-tab label="Seleção" *ngIf="seExibeSelecao(element)">
+                      <div class="row">
+                        <div class="col-sm-12 mt-2">
+                          <section class="section">
+                            @for (atributo of atributos; track atributo) {
+                            <mat-checkbox [disabled]="
                             seDesabilitaCheckAtributoEspecifico(
                               element,
                               atributo
                             )
-                          "
-                          name="sentido"
-                          (change)="checkAtributo(atributo, $event.checked)"
-                        >
-                          {{ atributo }}
-                        </mat-checkbox>
-                        }
-                      </section>
-                    </div>
-                  </div>
+                          " name="sentido" (change)="checkAtributo(atributo, $event.checked)">
+                              {{ atributo }}
+                            </mat-checkbox>
+                            }
+                          </section>
+                        </div>
+                      </div>
 
-                  <div class="row" *ngIf="seExibeSelecaoAtributos(element)">
-                    <div class="col-sm-12">
-                      <mat-card class="card-padrao">
-                        <div class="row align-items-center">
-                          <div class="col-sm-2">
-                            <div class="row text-center">
-                              <b style="font-size: large !important">FOR</b>
-                            </div>
+                      <div class="row" *ngIf="seExibeSelecaoAtributos(element)">
+                        <div class="col-sm-12 mt-2">
+                          <mat-card class="card-padrao">
                             <div class="row align-items-center">
-                              <div class="col-sm-3">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div>
-                                      <button
-                                        class="botoes-mais-menos"
-                                        [disabled]="
+                              <div class="col-sm-2 mt-2">
+                                <div class="row text-center">
+                                  <b style="font-size: large !important">FOR</b>
+                                </div>
+                                <div class="row align-items-center">
+                                  <div class="col-sm-3 mt-2">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div>
+                                          <button class="botoes-mais-menos" [disabled]="
                                           seDesabilitaCheckAtributoEspecifico(
                                             element,
                                             'FORCA'
                                           )
-                                        "
-                                        (click)="checkAtributo('FORCA', true)"
-                                      >
-                                        +
-                                      </button>
+                                        " (click)="checkAtributo('FORCA', true)">
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <button
-                                      class="botoes-mais-menos"
-                                      [disabled]="
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <button class="botoes-mais-menos" [disabled]="
                                         seDesabilitaCheckAtributoEspecifico(
                                           element,
                                           'FORCA'
                                         )
-                                      "
-                                      (click)="checkAtributo('FORCA', false)"
-                                    >
-                                      -
-                                    </button>
+                                      " (click)="checkAtributo('FORCA', false)">
+                                          -
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <input class="campo-modificadores" size="1" [value]="valoresAtributos.forca"
+                                      disabled />
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-9">
-                                <input
-                                  class="campo-modificadores"
-                                  size="1"
-                                  [value]="valoresAtributos.forca"
-                                  disabled
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2">
-                            <div class="row text-center">
-                              <b style="font-size: large !important">DES</b>
-                            </div>
-                            <div class="row align-items-center">
-                              <div class="col-sm-3">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div>
-                                      <button
-                                        class="botoes-mais-menos"
-                                        [disabled]="
+                              <div class="col-sm-2">
+                                <div class="row text-center">
+                                  <b style="font-size: large !important">DES</b>
+                                </div>
+                                <div class="row align-items-center">
+                                  <div class="col-sm-3">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div>
+                                          <button class="botoes-mais-menos" [disabled]="
                                           seDesabilitaCheckAtributoEspecifico(
                                             element,
                                             'DESTREZA'
                                           )
-                                        "
-                                        (click)="
+                                        " (click)="
                                           checkAtributo('DESTREZA', true)
-                                        "
-                                      >
-                                        +
-                                      </button>
+                                        ">
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <button
-                                      class="botoes-mais-menos"
-                                      [disabled]="
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <button class="botoes-mais-menos" [disabled]="
                                         seDesabilitaCheckAtributoEspecifico(
                                           element,
                                           'DESTREZA'
                                         )
-                                      "
-                                      (click)="checkAtributo('DESTREZA', false)"
-                                    >
-                                      -
-                                    </button>
+                                      " (click)="checkAtributo('DESTREZA', false)">
+                                          -
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <input class="campo-modificadores" size="1" [value]="valoresAtributos.destreza"
+                                      disabled />
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-9">
-                                <input
-                                  class="campo-modificadores"
-                                  size="1"
-                                  [value]="valoresAtributos.destreza"
-                                  disabled
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2">
-                            <div class="row text-center">
-                              <b style="font-size: large !important">CON</b>
-                            </div>
-                            <div class="row align-items-center">
-                              <div class="col-sm-3">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div>
-                                      <button
-                                        class="botoes-mais-menos"
-                                        [disabled]="
+                              <div class="col-sm-2">
+                                <div class="row text-center">
+                                  <b style="font-size: large !important">CON</b>
+                                </div>
+                                <div class="row align-items-center">
+                                  <div class="col-sm-3">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div>
+                                          <button class="botoes-mais-menos" [disabled]="
                                           seDesabilitaCheckAtributoEspecifico(
                                             element,
                                             'CONSTITUICAO'
                                           )
-                                        "
-                                        (click)="
+                                        " (click)="
                                           checkAtributo('CONSTITUICAO', true)
-                                        "
-                                      >
-                                        +
-                                      </button>
+                                        ">
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <button
-                                      class="botoes-mais-menos"
-                                      [disabled]="
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <button class="botoes-mais-menos" [disabled]="
                                         seDesabilitaCheckAtributoEspecifico(
                                           element,
                                           'CONSTITUICAO'
                                         )
-                                      "
-                                      (click)="
+                                      " (click)="
                                         checkAtributo('CONSTITUICAO', true)
-                                      "
-                                    >
-                                      -
-                                    </button>
+                                      ">
+                                          -
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <input class="campo-modificadores" size="1" [value]="valoresAtributos.constituicao"
+                                      disabled />
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-9">
-                                <input
-                                  class="campo-modificadores"
-                                  size="1"
-                                  [value]="valoresAtributos.constituicao"
-                                  disabled
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2">
-                            <div class="row text-center">
-                              <b style="font-size: large !important">INT</b>
-                            </div>
-                            <div class="row align-items-center">
-                              <div class="col-sm-3">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div>
-                                      <button
-                                        class="botoes-mais-menos"
-                                        [disabled]="
+                              <div class="col-sm-2">
+                                <div class="row text-center">
+                                  <b style="font-size: large !important">INT</b>
+                                </div>
+                                <div class="row align-items-center">
+                                  <div class="col-sm-3">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div>
+                                          <button class="botoes-mais-menos" [disabled]="
                                           seDesabilitaCheckAtributoEspecifico(
                                             element,
                                             'INTELIGENCIA'
                                           )
-                                        "
-                                        (click)="
+                                        " (click)="
                                           checkAtributo('INTELIGENCIA', true)
-                                        "
-                                      >
-                                        +
-                                      </button>
+                                        ">
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <button
-                                      class="botoes-mais-menos"
-                                      [disabled]="
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <button class="botoes-mais-menos" [disabled]="
                                         seDesabilitaCheckAtributoEspecifico(
                                           element,
                                           'INTELIGENCIA'
                                         )
-                                      "
-                                      (click)="
+                                      " (click)="
                                         checkAtributo('INTELIGENCIA', false)
-                                      "
-                                    >
-                                      -
-                                    </button>
+                                      ">
+                                          -
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <input class="campo-modificadores" size="1" [value]="valoresAtributos.inteligencia"
+                                      disabled />
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-9">
-                                <input
-                                  class="campo-modificadores"
-                                  size="1"
-                                  [value]="valoresAtributos.inteligencia"
-                                  disabled
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2">
-                            <div class="row text-center">
-                              <b style="font-size: large !important">SAB</b>
-                            </div>
-                            <div class="row align-items-center">
-                              <div class="col-sm-3">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div>
-                                      <button
-                                        class="botoes-mais-menos"
-                                        [disabled]="
+                              <div class="col-sm-2">
+                                <div class="row text-center">
+                                  <b style="font-size: large !important">SAB</b>
+                                </div>
+                                <div class="row align-items-center">
+                                  <div class="col-sm-3">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div>
+                                          <button class="botoes-mais-menos" [disabled]="
                                           seDesabilitaCheckAtributoEspecifico(
                                             element,
                                             'SABEDORIA'
                                           )
-                                        "
-                                        (click)="
+                                        " (click)="
                                           checkAtributo('SABEDORIA', true)
-                                        "
-                                      >
-                                        +
-                                      </button>
+                                        ">
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <button
-                                      class="botoes-mais-menos"
-                                      [disabled]="
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <button class="botoes-mais-menos" [disabled]="
                                         seDesabilitaCheckAtributoEspecifico(
                                           element,
                                           'SABEDORIA'
                                         )
-                                      "
-                                      (click)="
+                                      " (click)="
                                         checkAtributo('SABEDORIA', false)
-                                      "
-                                    >
-                                      -
-                                    </button>
+                                      ">
+                                          -
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <input class="campo-modificadores" size="1" [value]="valoresAtributos.sabedoria"
+                                      disabled />
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-9">
-                                <input
-                                  class="campo-modificadores"
-                                  size="1"
-                                  [value]="valoresAtributos.sabedoria"
-                                  disabled
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2">
-                            <div class="row text-center">
-                              <b style="font-size: large !important">CAR</b>
-                            </div>
-                            <div class="row align-items-center">
-                              <div class="col-sm-3">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div>
-                                      <button
-                                        class="botoes-mais-menos"
-                                        [disabled]="
+                              <div class="col-sm-2">
+                                <div class="row text-center">
+                                  <b style="font-size: large !important">CAR</b>
+                                </div>
+                                <div class="row align-items-center">
+                                  <div class="col-sm-3">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div>
+                                          <button class="botoes-mais-menos" [disabled]="
                                           seDesabilitaCheckAtributoEspecifico(
                                             element,
                                             'CARISMA'
                                           )
-                                        "
-                                        (click)="checkAtributo('CARISMA', true)"
-                                      >
-                                        +
-                                      </button>
+                                        " (click)="checkAtributo('CARISMA', true)">
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <button
-                                      class="botoes-mais-menos"
-                                      [disabled]="
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <button class="botoes-mais-menos" [disabled]="
                                         seDesabilitaCheckAtributoEspecifico(
                                           element,
                                           'CARISMA'
                                         )
-                                      "
-                                      (click)="checkAtributo('CARISMA', false)"
-                                    >
-                                      -
-                                    </button>
+                                      " (click)="checkAtributo('CARISMA', false)">
+                                          -
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <input class="campo-modificadores" size="1" [value]="valoresAtributos.carisma"
+                                      disabled />
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-9">
-                                <input
-                                  class="campo-modificadores"
-                                  size="1"
-                                  [value]="valoresAtributos.carisma"
-                                  disabled
-                                />
-                              </div>
+                            </div>
+                          </mat-card>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!-- TODA A MECÂNICA DE HABILIDADES DE RAÇA DEVE SER SINTETIZADA E AUTOMATIZADA AQUI! -->
+                        <div class="col-sm-12">
+                          @for (habilidade of racaSelecionada?.habilidades; track
+                          habilidade.id) {
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr />
                             </div>
                           </div>
-                        </div>
-                      </mat-card>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <!-- TODA A MECÂNICA DE HABILIDADES DE RAÇA DEVE SER SINTETIZADA E AUTOMATIZADA AQUI! -->
-                    <div class="col-sm-12">
-                      @for (habilidade of racaSelecionada?.habilidades; track
-                      habilidade.id) {
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <hr />
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <b>{{ habilidade.nome }}</b>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          {{ habilidade.descricao }}
-                        </div>
-                      </div>
-                      <div
-                        class="row"
-                        *ngIf="
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <b>{{ habilidade.nome }}</b>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              {{ habilidade.descricao }}
+                            </div>
+                          </div>
+                          <div class="row" *ngIf="
                           seInstrucaoHabilidaTemMultiplaEscolha(habilidade)
-                        "
-                      >
-                      <section class="section">
-                        <mat-radio-group
-                        title="selecao"
-                        name="selecao"
-                        formControlName="selecao"
-                          (change)="
+                        ">
+                            <section class="section">
+                              <mat-radio-group title="selecao" name="selecao" formControlName="selecao" (change)="
                             selecionaOpcaoMultiplaEscolha(
                               $event.value, habilidade
                             )
-                          "
-                          aria-labelledby="radio-tipo-criatura"
-                        >
-                          <!-- @for (item of
+                          " aria-labelledby="radio-tipo-criatura">
+                                <!-- @for (item of
                           recuperaMultiplaEscolhaHabilidade(habilidade); track
                           item.chave) { -->
-                          <mat-radio-button *ngFor="let selecao of recuperaMultiplaEscolhaHabilidade(habilidade); trackBy: trackByChave" [value]="selecao">{{
-                            selecao.chave
-                          }}</mat-radio-button>
-                            <!-- <mat-radio-button *ngFor="let atributo of atributos" [value]="atributo">{{atributo}}
+                                <mat-radio-button
+                                  *ngFor="let selecao of recuperaMultiplaEscolhaHabilidade(habilidade); trackBy: trackByChave"
+                                  [value]="selecao">{{
+                                  selecao.chave
+                                  }}</mat-radio-button>
+                                <!-- <mat-radio-button *ngFor="let atributo of atributos" [value]="atributo">{{atributo}}
                             </mat-radio-button> -->
-                          <!-- } -->
-                        </mat-radio-group>
-                      </section>
+                                <!-- } -->
+                              </mat-radio-group>
+                            </section>
+                          </div>
+                          }
+                        </div>
                       </div>
-                      }
-                    </div>
-                  </div>
-                </mat-tab>
-                <mat-tab label="Raça">
-                  <div class="row">
-                    <div
-                      class="col-sm-9 mt-4 text-justify"
-                      [innerHTML]="element.descricao"
-                    ></div>
-                    <div class="col-sm-3 mt-4 mb-4">
-                      <mat-card *ngIf="element.imagem != null">
-                        <img [src]="element.imagem" [alt]="element.nome" />
-                      </mat-card>
-                    </div>
-                  </div>
-                </mat-tab>
-              </mat-tab-group>
-            </div>
-          </td>
-        </ng-container>
+                    </mat-tab>
+                    <mat-tab label="Raça">
+                      <div class="row">
+                        <div class="col-sm-9 mt-4 text-justify" [innerHTML]="element.descricao"></div>
+                        <div class="col-sm-3 mt-4 mb-4">
+                          <mat-card *ngIf="element.imagem != null">
+                            <img [src]="element.imagem" [alt]="element.nome" />
+                          </mat-card>
+                        </div>
+                      </div>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </div>
+            </td>
+          </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
-        <tr
-          mat-row
-          *matRowDef="let element; columns: columnsToDisplayWithExpand"
-          class="element-row"
-          [class.expanded-row]="expandedElement === element"
-          (click)="
-            expandedElement = expandedElement === element ? null : element
-          "
-        ></tr>
-        <tr
-          mat-row
-          *matRowDef="let row; columns: ['expandedDetail']; when: !isExpandedRow"
-          class="detail-row"
-        ></tr>
-      </table>
-    </mat-card>
-  </div>
-</form>
+          <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+          <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;" class="example-element-row"
+            [ngClass]="{'zebra': isOdd(element)}" [class.example-expanded-row]="isExpanded(element)"
+            (click)="toggle(element)">
+          </tr>
+          <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+        </table>
+      </mat-card>
+    </div>
+  </form>
 </div>

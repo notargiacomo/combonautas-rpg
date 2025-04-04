@@ -467,6 +467,23 @@ tr.element-row:not(.example-expanded-row):active {
   display: flex;
 }
 
+.element-detail-wrapper {
+  overflow: hidden !important;
+  display: grid !important;
+  grid-template-rows: 0fr !important;
+  grid-template-columns: 100% !important;
+  transition: grid-template-rows 225ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.element-detail-wrapper-expanded {
+  grid-template-rows: 1fr !important;
+}
+
+.element-detail {
+  display: flex !important;
+  min-height: 0 !important;
+}
+
 .element-symbol {
   font-weight: bold;
   font-size: 40px;
@@ -502,6 +519,10 @@ tr.element-row:not(.example-expanded-row):active {
   background-color: white;
 }
 
+.mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table {
+  height: 0px !important; min-height: 0px !important; max-height: 0px !important;
+}
+
 .container,
 .container-fluid,
 .container-lg,
@@ -524,21 +545,25 @@ tr.element-row:not(.example-expanded-row):active {
   max-width: 98% !important;
 }
 
-mat-row:nth-child(even) {
+.zebra {
   background-color: rgb(204, 204, 204) !important; /* Cinza claro */
 }
 
-mat-row:nth-child(odd) {
-  background-color: #ffffff !important; /* Branco */
-}
+// mat-row:nth-child(even) {
+//   background-color: rgb(204, 204, 204) !important; /* Cinza claro */
+// }
 
-.mat-mdc-table tr:nth-child(even) {
-  background-color: rgb(204, 204, 204) !important;
-}
+// mat-row:nth-child(odd) {
+//   background-color: #ffffff !important; /* Branco */
+// }
 
-.mat-mdc-table tr:nth-child(odd) {
-  background-color: #ffffff !important;
-}
+// .mat-mdc-table tr:nth-child(even) {
+//   background-color: rgb(204, 204, 204) !important;
+// }
+
+// .mat-mdc-table tr:nth-child(odd) {
+//   background-color: #ffffff !important;
+// }
 
 .mat-mdc-table th {
   background-color: rgb(204, 204, 204) !important;
