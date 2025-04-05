@@ -4,9 +4,9 @@ html,
 body {
   width: 100% !important;
   background-color: rgb(
-    60,
-    60,
-    60
+    25,
+    20,
+    40
   ) !important; /* Define o fundo como a cor dominante */
   height: 100%;
   font-family: "Oswald" !important;
@@ -25,8 +25,8 @@ header,
   background-position: center !important;
   background-repeat: no-repeat !important;
   object-fit: contain; /* Mantém as proporções */
-  border-bottom: 5px solid rgb(228, 176, 100); /* Moldura */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border-bottom: 5px solid rgb(120, 80, 160); /* Moldura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
 }
 
@@ -58,11 +58,11 @@ h2,
 h4,
 h5 {
   margin-top: 1% !important;
-  color: rgb(132, 26, 18) !important;
+  color: rgb(200, 50, 50) !important;
 }
 
 b {
-  color: rgb(132, 26, 18) !important;
+  color: rgb(200, 50, 50) !important;
 }
 
 .negrito-centralizado > b {
@@ -91,8 +91,8 @@ b {
 .mat-mdc-button {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  border: 1px solid rgb(228, 176, 100); /* Moldura */
-  background-color: rgb(132, 26, 18) !important;
+  border: 1px solid rgb(120, 80, 160); /* Moldura */
+  background-color: rgb(45, 35, 60) !important;
   cursor: pointer !important;
 }
 
@@ -166,8 +166,8 @@ b {
   // font-family: "Source Sans 3", serif !important;
   font-family: "Oswald" !important;
   font-size: 20pt !important;
-  color: rgb(228, 176, 100);
-  background-color: rgb(132, 26, 18);
+  color: rgb(120, 80, 160);
+  background-color: rgb(45, 35, 60);
 }
 
 .mat-grid-tile-content {
@@ -181,11 +181,11 @@ b {
 .mat-mdc-card-content .mat-mdc-tab-header {
   border-radius: 10px !important; /* Arredonda os cantos */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  background-color: rgb(228, 176, 100);
+  background-color: rgb(120, 80, 160);
 }
 
 .mat-mdc-card {
-  background-color: rgb(248, 233, 220) !important;
+  background-color: rgb(240, 230, 245) !important;
 }
 
 .mat-mdc-card-subtitle {
@@ -203,8 +203,8 @@ b {
 }
 
 .mat-mdc-card-content {
-  background-color: rgb(132, 26, 18) !important;
-  color: rgb(247, 247, 247);
+  background-color: rgb(200, 50, 50) !important;
+  color: rgb(240, 240, 245);
   max-height: 600px !important; /* Defina a altura máxima do card */
   overflow-y: auto !important; /* Habilita o scroll vertical */
   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
@@ -214,9 +214,9 @@ img {
   max-width: 400px; /* Largura máxima da imagem */
   max-height: 400px; /* Altura máxima da imagem */
   object-fit: contain; /* Mantém as proporções */
-  border: 5px solid rgb(228, 176, 100); /* Moldura */
+  border: 5px solid rgb(120, 80, 160); /* Moldura */
   border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
   background-color: white; /* Fundo da moldura */
 }
@@ -256,16 +256,16 @@ td {
 }
 
 .mat-mdc-card-content b {
-  color: rgb(247, 247, 247) !important;
+  color: rgb(240, 240, 245) !important;
 }
 
 .mat-mdc-card-content img {
-  background: rgb(255, 248, 248) !important;
+  background: rgb(240, 240, 245) !important;
 }
 
 .mat-mdc-card-content hr {
   border: none !important; /* Remove estilos padrão */
-  border-top: 2px solid rgb(247, 247, 247) !important; /* Define a cor e a altura */
+  border-top: 2px solid rgb(240, 240, 245) !important; /* Define a cor e a altura */
   border-radius: 10px !important; /* Arredonda os cantos */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
   opacity: 1 !important;
@@ -283,7 +283,7 @@ button[mat-flat-button] {
   color: #333; /* Define a cor do texto */
   border-radius: 5px; /* Suaviza os cantos */
   transition: background-color 0.3s ease; /* Anima a mudança de cor */
-  border: 1px solid rgb(228, 176, 100); /* Moldura */
+  border: 1px solid rgb(120, 80, 160); /* Moldura */
 }
 
 button[mat-flat-button]:hover {
@@ -295,7 +295,7 @@ button[mat-flat-button]:hover {
 }
 
 .mdc-button__label {
-  color: rgb(247, 247, 247);
+  color: rgb(240, 240, 245);
 }
 
 .mat-mdc-unelevated-button:not(:disabled) {
@@ -303,11 +303,11 @@ button[mat-flat-button]:hover {
     --mdc-filled-button-label-text-color,
     var(--mat-sys-on-primary)
   ) !important;
-  background-color: rgb(132, 26, 18) !important;
+  background-color: rgb(45, 35, 60) !important;
 }
 
 .mat-mdc-button-disabled {
-  background-color: rgb(132, 26, 18) !important;
+  background-color: rgb(200, 50, 50) !important;
 }
 
 .content-cartao-itens {
@@ -367,8 +367,8 @@ tr.element-row:not(.expanded-row):active {
 }
 
 .mat-mdc-dialog-surface {
-  border: 2px solid rgb(228, 176, 100);
-  background-color: rgb(60, 60, 60) !important;
+  border: 2px solid rgb(120, 80, 160);
+  background-color: rgb(25, 20, 40) !important;
   border-radius: 16px !important; /* Arredondamento */
   padding: 16px !important;
   // max-height: 150% !important ;          /* Espaçamento interno */
@@ -408,11 +408,11 @@ tr.element-row:not(.expanded-row):active {
 
 .mat-mdc-dialog-container .card-padrao {
   border-radius: 0px !important;
-  border: 2px solid rgb(228, 176, 100);
+  border: 2px solid rgb(120, 80, 160);
 }
 
 .mat-mdc-dialog-surface .card-padrao {
-  background-color: rgb(248, 233, 220) !important;
+  background-color: rgb(240, 230, 245) !important;
   color: black !important;
   /* Arredondamento */
   padding: 16px !important; /* Espaçamento interno */
@@ -425,8 +425,8 @@ tr.element-row:not(.expanded-row):active {
 
 .mat-mdc-dialog-content {
   // border-radius: 16px !important;
-  border: 2px solid rgb(228, 176, 100);
-  background-color: rgb(248, 233, 220) !important;
+  border: 2px solid rgb(120, 80, 160);
+  background-color: rgb(240, 230, 245) !important;
 }
 
 .mat-mdc-dialog-container .mat-mdc-dialog-title {
@@ -547,7 +547,8 @@ tr.element-row:not(.example-expanded-row):active {
 }
 
 .zebra {
-  background-color: rgb(204, 204, 204) !important; /* Cinza claro */
+  background-color: rgb(45, 35, 60) !important; /* Cinza claro */
+  color: white !important;
 }
 
 // mat-row:nth-child(even) {
