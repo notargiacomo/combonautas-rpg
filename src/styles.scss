@@ -536,9 +536,9 @@ tr.element-row:not(.example-expanded-row):active {
   max-width: 98% !important;
 }
 
-.zebra {
+.zebra td {
   background-color: rgb(45, 35, 60) !important; /* Cinza claro */
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 // mat-row:nth-child(even) {
@@ -558,7 +558,8 @@ tr.element-row:not(.example-expanded-row):active {
 // }
 
 .mat-mdc-table th {
-  background-color: rgb(204, 204, 204) !important;
+  background-color: rgb(45, 35, 60) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .mat-mdc-table {
