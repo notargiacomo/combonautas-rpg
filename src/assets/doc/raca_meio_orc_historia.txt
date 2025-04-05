@@ -1,6 +1,6 @@
 <I><p>“Acha que essa cara feia me assusta? Venha, tenho trabalho para você na minha estalagem.”</p>
 <p>— Ned Kallrogan, ex-aventureiro</p>
-<p>O forasteiro poderia ser descrito apenas como um “humano grande e feroz”, mas é algo mais. A pele possui tom cinza-esverdeado, os caninos inferiores são maiores, as orelhas e o nariz também parecem grandes demais para o resto da face.</p>
+<p><I><b>O forasteiro poderia ser descrito apenas como um “humano grande e feroz”, mas é algo mais. A pele possui tom cinza-esverdeado, os caninos inferiores são maiores, as orelhas e o nariz também parecem grandes demais para o resto da face.</b></I></p>
 <p>Meios-orcs não unem, necessariamente, o melhor das duas raças. São mais inteligentes e determinados que orcs, mas não tanto quanto humanos. São mais fortes que humanos, mas não se equiparam a orcs. Sua aparência pode causar repulsa entre humanos e entre orcs. Sua própria existência muitas vezes é rejeitada, pois a maior parte das duas raças não acredita que seus membros podem conviver em paz, respeito e até amor.</p>
 <p>No Reinado, meios-orcs se isolam nos ermos ou vivem em comunidades populosas, onde são apenas “mais um na multidão”. Vários detestam suas linhagens, revoltam-se quando lembrados de que são apenas “metade” de alguma coisa. Ficam mais confortáveis sozinhos.</p>
 <p>A maior parte dos povos trata um meio-orc como trataria um orc puro — atacando-o ou expulsando-o.

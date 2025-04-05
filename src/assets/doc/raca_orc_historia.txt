@@ -1,7 +1,7 @@
 <I><p>“Você diz que orcs são impuros por serem miscigenados? Traz o narizinho mais perto e repete isso…”</p></I>
 <p>— Brivaria, meia-elfa lutadora</p>
-<p>O bando é formado por humanoides musculosos, com pele verde-acinzentada, focinho suíno e presas inferiores que se projetam fora da boca. Os olhos trazem um sinistro brilho avermelhado.</p>
-<p>Quando alguém diz que humanoides monstruosos são violentos e estúpidos, quase sempre está falando de orcs.</p>
+<p><I><b>O bando é formado por humanoides musculosos, com pele verde-acinzentada, focinho suíno e presas inferiores que se projetam fora da boca. Os olhos trazem um sinistro brilho avermelhado.</b></I></p>
+<p>Quando alguém diz que humanoides monstruosos são violentos e estúpidos, quase sempre está falando de orcs.
 <p>Orcs são, talvez, o povo humanoide mais brutal e violento de Arton. Orcs existem em números vastos,
 espalhados por todo o mundo — de fato, é uma surpresa que nunca tenham formado reinos ou mesmo erguido impérios. Vivem em cavernas e túneis sob Arton, tanto por hábito quanto por necessidade: são sensíveis à luz do sol, que ofusca sua visão e reduz suas habilidades de combate.</p>
 <p>A origem dos orcs é um mistério. Alguns afirmam que eles podem ter sido o povo mais antigo do mundo
