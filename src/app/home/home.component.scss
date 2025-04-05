@@ -9,7 +9,7 @@
   margin-left: 0px !important;
   padding-top: 0px !important;
   text-align: center;
-  border: 1px solid rgb(228, 176, 100);
+  border: 1px solid rgb(120, 80, 160);
 }
 
 .campo-atributos {
@@ -17,12 +17,12 @@
   height: 25px !important;
   font-size: small !important;
   text-align: center;
-  border: 1px solid rgb(228, 176, 100);
+  border: 1px solid rgb(120, 80, 160);
 }
 
 .botoes-mais-menos {
   width: 25px !important;
-  border: 1px solid rgb(228, 176, 100);
+  border: 1px solid rgb(120, 80, 160);
 }
 
 .img,
@@ -49,7 +49,7 @@
   overflow: hidden !important;
   background-position: center !important;
   background-size: cover !important; /* Isso ajusta o zoom para cobrir o círculo */
-  border: 5px solid rgb(228, 176, 100) !important;
+  border: 5px solid rgb(120, 80, 160) !important;
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
   background-color: transparent; /* Fundo da moldura */
   padding: 0% !important;
@@ -59,10 +59,10 @@
 .botao-ficha {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  border: 2px solid rgb(228, 176, 100) !important;
+  border: 2px solid rgb(120, 80, 160) !important;
   border-radius: 15px !important; /* Bordas arredondadas */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  background-color: rgb(132, 26, 18) !important;
+  background-color: rgb(45, 35, 60) !important;
   cursor: pointer !important;
   color: white !important;
   width: 100% !important;
@@ -107,7 +107,7 @@
 }
 
 .mat-mdc-table th {
-  background-color: rgb(132, 26, 18) !important;
+  background-color: rgb(45, 35, 60) !important;
   color: white !important;
 }
 
@@ -115,7 +115,7 @@
   border: 2px solid; /* Moldura */
   border-radius: 15px !important; /* Bordas arredondadas */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  background-color: rgb(228, 176, 100);
+  background-color: rgb(120, 80, 160);
 }
 
 .mat-mdc-header-row {
@@ -125,13 +125,13 @@
 }
 
 .mat-mdc-table tr:nth-child(even) {
-  background-color: rgb(255, 200, 100) !important;
+  background-color: rgb(255, 180, 50) !important;
 }
 
 .vida-mana-defesa {
   text-align: center !important;
   font-size: 18pt !important;
-  border: 1px solid rgb(228, 176, 100) !important;
+  border: 1px solid rgb(120, 80, 160) !important;
   border-radius: 5px !important;
 }
 
@@ -164,8 +164,8 @@ hr {
 .proficiencia {
   font-family: "Oswald" !important;
   font-size: 12pt !important;
-  border: 1px solid rgb(228, 176, 100); /* Moldura */
-  background-color: rgb(132, 26, 18) !important;
+  border: 1px solid rgb(120, 80, 160); /* Moldura */
+  background-color: rgb(200, 50, 50) !important;
   color: white !important;
   width: 100% !important;
   height: 15% !important;
@@ -192,16 +192,16 @@ hr {
 .input-numerico {
   text-align: center !important; 
   width: 50% !important;
-  border: 1px solid rgb(228, 176, 100) !important;
+  border: 1px solid rgb(120, 80, 160) !important;
   border-radius: 5px !important;
 
 }
 
 .mat-mdc-card-content b {
-  color: rgb(247, 247, 247) !important;
+  color: rgb(240, 240, 245) !important;
 }
 
 .mat-mdc-dialog-surface b {
-  color: rgb(247, 247, 247) !important;
+  color: rgb(240, 240, 245) !important;
   font-family: "Oswald" !important;
 }
