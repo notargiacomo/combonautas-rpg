@@ -1,4 +1,3 @@
-<p>Anões são o mais resiliente dos povos. Em suas cidadelas subterrâneas, trabalham duro escavando minas e forjando metal em belas armas, armaduras e joias. São honestos e determinados, honrando a família e a tradição. Apesar de sua profunda paixão por forja e cerveja, pouca coisa é mais preciosa para um anão que cultivar uma barba longa e orgulhosa.<p>
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>Constituição +2, Sabedoria +1, Destreza –1.</b></p>
 <p><b>Conhecimento das Rochas.</b> Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.</p>

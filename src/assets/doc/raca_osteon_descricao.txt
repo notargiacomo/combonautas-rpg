@@ -1,4 +1,3 @@
-<p>Esqueletos sempre foram temidos como monstros profanos, movidos por puro rancor pelos vivos. Isso mudou; conhecidos como osteon, estes esqueletos demonstram a inteligência e a consciência das raças vivas, sendo capazes de adotar quaisquer de suas profissões e devoções. Alguns atribuem seu surgimento à queda de Ragnar, antigo Deus da Morte; outros dizem ser consequência da ascensão de Ferren Asloth como um poderoso lich, transformando a nação de Aslothia em um reino necromante.</p>
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>+1 em Três Atributos Diferentes (exceto Constituição), Constituição –1.</b></p>
 <p><b>Armadura Óssea.</b> Você recebe redução de corte, frio e perfuração 5.</p>

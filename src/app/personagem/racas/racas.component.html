@@ -506,7 +506,7 @@
                             </div>
                           </div>
                           <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-sm-12" style="width: max-content !important;">
                               {{ habilidade.descricao }}
                             </div>
                           </div>
@@ -545,6 +545,11 @@
                             <img [src]="element.imagem" [alt]="element.nome" />
                           </mat-card>
                         </div>
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="História">
+                      <div class="row">
+                        <div class="col-sm-12 mt-4 text-justify" [innerHTML]="element.historia"></div>
                       </div>
                     </mat-tab>
                   </mat-tab-group>

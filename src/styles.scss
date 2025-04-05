@@ -339,11 +339,6 @@ tr.element-row:not(.expanded-row):active {
   border-bottom-width: 0;
 }
 
-.element-detail {
-  overflow: hidden;
-  display: flex;
-}
-
 .element-symbol {
   font-weight: bold !important;
   font-size: 40px !important;
@@ -465,7 +460,7 @@ tr.element-row:not(.example-expanded-row):active {
 
 .element-detail {
   overflow: hidden;
-  display: flex;
+  display: block !important;
 }
 
 .element-detail-wrapper {
@@ -478,11 +473,6 @@ tr.element-row:not(.example-expanded-row):active {
 
 .element-detail-wrapper-expanded {
   grid-template-rows: 1fr !important;
-}
-
-.element-detail {
-  display: flex !important;
-  min-height: 0 !important;
 }
 
 .element-symbol {

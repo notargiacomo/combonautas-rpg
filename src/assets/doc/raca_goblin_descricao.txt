@@ -1,4 +1,3 @@
-<p>Estes pequenos seres feiosos conseguiram um lugar entre os povos do Reinado. Podem ser encontrados em todas as grandes cidades, muitos vivendo na imundície, outros prosperando em carreiras que quase ninguém tentaria: espiões, aeronautas, engenhoqueiros. Onde o anão teimoso e o elfo empolado falham, o goblin pode dar um jeito. Porque ele não tem vergonha. Nem orgulho. Nem bom senso.</p>
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>Destreza +2, Inteligência +1, Carisma –1.</p></b>
 <p><b>Engenhoso.</b> Você não sofre penalidades em testes de perícia por não usar ferramentas. Se usar a ferramenta necessária, recebe +2 no teste de perícia.</p>

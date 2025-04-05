@@ -1,4 +1,3 @@
-<p>Descendentes de extraplanares divinos, esta raça é formada por seres com traços angelicais ou demoníacos — ou ambos. Por serem ligados às forças opostas da luz e trevas, suraggel têm traços diferentes quando orientados para seu lado celestial, sendo então conhecidos como aggelus; ou para o lado abissal, assim sendo chamados sulfure. Sua natureza em geral combina com a ascendência, lembrando habitantes dos Mundos dos Deuses, mas eles também podem ser surpreendentes e contraditórios: não se espante muito ao conhecer um aggelus ladino ou um sulfure paladino.</p>
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>Sabedoria +2, Carisma +1</b></p>
 <p><b>Herança Divina.</b> Você é uma criatura do tipo espírito e recebe visão no escuro.</p>
