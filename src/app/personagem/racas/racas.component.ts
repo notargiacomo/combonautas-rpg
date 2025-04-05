@@ -213,17 +213,27 @@ export class RacasComponent implements OnInit {
 
   consultar() {
     let filtro = this.form.value;
+  
     if (filtro.nome) {
-      // regex - in-memory-web-api
       filtro.nome = '^' + filtro.nome;
     }
+  
+    // Corrigir tipos
+    ['forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'].forEach(campo => {
+      if (filtro[campo] !== null && filtro[campo] !== undefined && filtro[campo] !== '') {
+        filtro[campo] = Number(filtro[campo]);
+      } else {
+        delete filtro[campo]; // Remove para não enviar vazio
+      }
+    });
+  
     this.racaService.listar(filtro).subscribe({
-      next: (response) => {
+      next: (response: any[]) => {
         this.racas = response;
         this.numero_registros = response.length;
         this.cdr.detectChanges();
       },
-      error: (response) => {
+      error: (response: any[]) => {
         console.log(response);
       },
       complete: () => {

@@ -21,6 +21,7 @@ import { provideEnvironmentNgxLoaderIndicator } from 'ngx-loader-indicator';
 import { routes } from './app.routes';
 import { LoaderInterceptor } from './conf/core/loader-interceptor';
 import { InMemoryDataService } from './data/in-memory-data.service';
+import { RacaService } from './service/raca.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [

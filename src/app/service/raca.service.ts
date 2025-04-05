@@ -18,23 +18,55 @@ export class RacaService extends AbstractService {
 
   listar(filtro: any): Observable<Raca[]> {
     return this.http
-      .get<Raca[]>(this.url, { params: this.removeBlankAttributes(filtro) })
+      .get<Raca[]>(this.url)
       .pipe(
         map((resultado) => {
-          resultado.forEach((raca) => {
+          // Se não houver filtro ou todos os filtros estiverem vazios, retorna tudo
+          const temFiltroValido = filtro && Object.values(filtro).some(
+            (v) => v !== null && v !== undefined && v !== ''
+          );
+  
+          let filtrados: Raca[];
+  
+          if (temFiltroValido) {
+            filtrados = resultado.filter((raca) => {
+              return Object.keys(filtro).every((chave) => {
+                const valorFiltro = filtro[chave];
+                const valorRaca = (raca as any)[chave];
+  
+                if (valorFiltro === null || valorFiltro === undefined || valorFiltro === '') {
+                  return true;
+                }
+  
+                // Se o valor do filtro é um número, compara numericamente
+                if (!isNaN(Number(valorFiltro)) && typeof valorRaca === 'number') {
+                  return Number(valorFiltro) === valorRaca;
+                }
+  
+                // Comparação padrão (string, boolean etc.)
+                return valorFiltro === valorRaca;
+              });
+            });
+          } else {
+            filtrados = resultado; // sem filtros = retorna tudo
+          }
+  
+          // Puxa os textos descritivos
+          filtrados.forEach((raca) => {
             this.http
               .get(`assets/doc/${raca.nome_arquivo_descricao}.txt`, {
                 responseType: 'text',
               })
               .subscribe((descricao) => (raca.descricao = descricao));
+  
             this.http
               .get(`assets/doc/${raca.nome_arquivo_historia}.txt`, {
                 responseType: 'text',
               })
               .subscribe((historia) => (raca.historia = historia));
           });
-
-          return resultado;
+  
+          return filtrados;
         })
       );
   }

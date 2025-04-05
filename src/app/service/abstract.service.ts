@@ -14,7 +14,7 @@ export class AbstractService {
         const result:any = {};
         for (const key in obj) {
             if (obj[key] !== null && obj[key] !== undefined) {
-                result[key] = obj[key];
+                result[key] = !isNaN(Number(obj[key]))? Number(obj[key]): obj[key];
             }
         }
         return result;
