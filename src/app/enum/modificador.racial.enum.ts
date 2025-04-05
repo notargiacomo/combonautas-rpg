@@ -1,6 +1,6 @@
 export enum ModificadorRacial {
     ACERTO = "Acerto",
-    ACERTO_MANOBRA = "Acerto Manobra",
+    MANOBRA = "Acerto Manobra",
     DANO = "Dano",
     PASSO_DANO = "Passo de Dano",
     MARGEM_AMEACA = "Margem de Ameaça",

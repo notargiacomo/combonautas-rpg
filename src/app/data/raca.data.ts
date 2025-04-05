@@ -1381,7 +1381,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_FURTIVIDADE, ModificadorRacial.ACERTO_MANOBRA, ModificadorRacial.DANO, ModificadorRacial.PERICIA_DIPLOMACIA, ModificadorRacial.CD],
+        bonus: [ModificadorRacial.PERICIA_FURTIVIDADE, ModificadorRacial.MANOBRA, ModificadorRacial.DANO, ModificadorRacial.PERICIA_DIPLOMACIA, ModificadorRacial.CD],
         penalidade: [],
       },
       {
@@ -1471,7 +1471,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.ACERTO_MANOBRA, ModificadorRacial.DEFESA, ModificadorRacial.PERICIA_FURTIVIDADE],
+        bonus: [ModificadorRacial.MANOBRA, ModificadorRacial.DEFESA, ModificadorRacial.PERICIA_FURTIVIDADE],
         penalidade: [],
       },
       {
@@ -1801,7 +1801,7 @@ export class RacaData {
         temRD: true,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.ACERTO_MANOBRA],
+        bonus: [ModificadorRacial.MANOBRA],
         penalidade: [],
       },
       {
