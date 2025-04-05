@@ -33,6 +33,8 @@ export class Raca {
   temRD?:boolean;
   temDefeito?: boolean;
   temArmaNatural?: boolean;
+  bonus?: string[];
+  penalidade?: string[];
 
   constructor(){
   }

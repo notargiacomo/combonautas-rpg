@@ -46,6 +46,7 @@ import { RacaService } from '../../service/raca.service';
 import { TipoCriatura } from '../../enum/tipo.criatura.enum';
 import { MatSelectModule } from '@angular/material/select';
 import { Tamanho } from '../../enum/tamanho.enum';
+import { ModificadorRacial } from '../../enum/modificador.racial.enum';
 
 @Component({
   selector: 'app-racas',
@@ -92,6 +93,8 @@ export class RacasComponent implements OnInit {
   tamanhos = Object.values(Tamanho);
   referencias = Object.values(Referencia);
   tipos = Object.values(TipoCriatura);
+  bonus = Object.values(ModificadorRacial);
+  penalidade = Object.values(ModificadorRacial);
   atributo = [-2, -1, 0, 1, 2, 3];
   numero_registros = 0;
   selectedIndex: number = 0;
@@ -167,6 +170,8 @@ export class RacasComponent implements OnInit {
       temRD: [],
       temArmaNatural: [],
       temDefeito: [],
+      bonus: [],
+      penalidade: [],
       // referencias: new FormArray([]),
       nome: [],
       selecao: []

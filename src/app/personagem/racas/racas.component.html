@@ -58,6 +58,30 @@
                 </mat-select>
               </mat-form-field>
             </div>
+            <div class="col-sm-2 mt-1">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Bonus</mat-label>
+                <mat-select (selectionChange)="consultar()" formControlName="bonus">
+                  @for (bonus of bonus; track bonus) {
+                  <mat-option [value]="bonus">{{
+                    bonus
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-2 mt-1">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Penalidades</mat-label>
+                <mat-select (selectionChange)="consultar()" formControlName="penalidade">
+                  @for (penalidade of penalidade; track penalidade) {
+                  <mat-option [value]="penalidade">{{
+                    penalidade
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
           </div>
         </div>
         <div class="row">
