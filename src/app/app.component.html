@@ -35,6 +35,7 @@
 
     <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
     <mat-menu #menuRegra="matMenu" yPosition="below">
+      <button mat-menu-item (click)="navigateTo('regras/regras')">Regras</button>
       <button mat-menu-item (click)="navigateTo('regras/acoes')">Ações</button>
       <button mat-menu-item (click)="navigateTo('regras/condicoes')">
         Condições

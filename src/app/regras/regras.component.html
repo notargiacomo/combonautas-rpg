@@ -1,0 +1,84 @@
+<div class="container">
+    <form [formGroup]="form">
+      <div class="row mt-1">
+        <mat-card class="cartao">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2><b>REGRAS</b></h2>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-1">
+              <mat-form-field class="form-field">
+                <mat-label>REGRAS</mat-label>
+                <input formControlName="nome" matInput type="text" name="raca" (keyup)="consultar()" />
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6 mt-1">
+              <section>
+                <div class="button-row d-flex justify-content-end">
+                  <button class="me-2" (click)="limparFiltros()" mat-flat-button>
+                    Limpar Filtros
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div class="row mt-1">
+        <mat-card class="cartao">
+          <div class="row">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros }}</b>
+            </div>
+          </div>
+          <br />
+          <table mat-table [dataSource]="regras" multiTemplateDataRows class="mat-elevation-z8">
+            @for (column of columnsToDisplay; track column) {
+            <ng-container matColumnDef="{{ column }}">
+              <th mat-header-cell *matHeaderCellDef style="text-transform: uppercase">
+                {{ column }}
+              </th>
+              <td mat-cell *matCellDef="let element" style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;">{{ element[column] }}</td>
+            </ng-container>
+            }
+            <ng-container matColumnDef="expand">
+              <th mat-header-cell *matHeaderCellDef aria-label="row actions">
+                &nbsp;
+              </th>
+              <td mat-cell style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;" *matCellDef="let element">
+                <button mat-icon-button aria-label="expand row" (click)="
+                  expandedElement = expandedElement === element ? null : element;
+                  $event.stopPropagation()">
+                  @if (expandedElement === element) {
+                  <mat-icon>keyboard_arrow_up</mat-icon>
+                  } @else {
+                  <mat-icon>keyboard_arrow_down</mat-icon>
+                  }
+                </button>
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="expandedDetail">
+              <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;">
+                <div class="element-detail-wrapper" [class.element-detail-wrapper-expanded]="isExpanded(element)">
+                  <div class="element-detail">
+                  </div>
+                </div>
+              </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+            <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;" class="example-element-row"
+              [ngClass]="{'zebra': isOdd(element)}" [class.example-expanded-row]="isExpanded(element)"
+              (click)="toggle(element)">
+            </tr>
+            <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+          </table>
+        </mat-card>
+      </div>
+    </form>
+  </div>

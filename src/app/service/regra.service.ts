@@ -1,23 +1,23 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { RacaData } from '../data/raca.data';
-import { Raca } from '../model/raca';
+import { RegraData } from '../data/regra.data';
+import { Regra } from '../model/regra';
 import { AbstractService } from './abstract.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class RacaService extends AbstractService {
+export class RegraService extends AbstractService {
   constructor(
     private readonly http: HttpClient
   ) {
-    super('raca/');
+    super('regra/');
   }
 
-  listar(filtro: any): Observable<Raca[]> {
+  listar(filtro: any): Observable<Regra[]> {
     return this.http
-      .get<Raca[]>(this.url)
+      .get<Regra[]>(this.url)
       .pipe(
         map((resultado) => {
           // Se não houver filtro ou todos os filtros estiverem vazios, retorna tudo
@@ -25,45 +25,30 @@ export class RacaService extends AbstractService {
             (v) => v !== null && v !== undefined && v !== ''
           );
   
-          let filtrados: Raca[];
+          let filtrados: Regra[];
   
           if (temFiltroValido) {
-            filtrados = resultado.filter((raca) => {
+            filtrados = resultado.filter((Regra) => {
               return Object.keys(filtro).every((chave) => {
                 const valorFiltro = filtro[chave];
-                const valorRaca = (raca as any)[chave];
+                const valorRegra = (Regra as any)[chave];
   
                 if (valorFiltro === null || valorFiltro === undefined || valorFiltro === '') {
                   return true;
                 }
   
                 // Se o valor do filtro é um número, compara numericamente
-                if (!isNaN(Number(valorFiltro)) && typeof valorRaca === 'number') {
-                  return Number(valorFiltro) === valorRaca;
+                if (!isNaN(Number(valorFiltro)) && typeof valorRegra === 'number') {
+                  return Number(valorFiltro) === valorRegra;
                 }
   
                 // Comparação padrão (string, boolean etc.)
-                return valorFiltro === valorRaca;
+                return valorFiltro === valorRegra;
               });
             });
           } else {
             filtrados = resultado; // sem filtros = retorna tudo
           }
-  
-          // Puxa os textos descritivos
-          filtrados.forEach((raca) => {
-            this.http
-              .get(`assets/doc/${raca.nome_arquivo_descricao}.txt`, {
-                responseType: 'text',
-              })
-              .subscribe((descricao) => (raca.descricao = descricao));
-  
-            this.http
-              .get(`assets/doc/${raca.nome_arquivo_historia}.txt`, {
-                responseType: 'text',
-              })
-              .subscribe((historia) => (raca.historia = historia));
-          });
   
           return filtrados;
         })

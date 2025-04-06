@@ -13,6 +13,7 @@ import { CondicoesComponent } from './regras/condicoes/condicoes.component';
 import { CalculoDesafiosComponent } from './utilitarios/calculo-desafios/calculo-desafios.component';
 import { PersonagemAleatorioComponent } from './utilitarios/personagem-aleatorio/personagem-aleatorio.component';
 import { PericiasComponent } from './personagem/pericias/pericias.component';
+import { RegrasComponent } from './regras/regras.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ export const routes: Routes = [
     { path: 'personagem/itens', component: ItensComponent },
     { path: 'personagem/deuses', component: DeusesComponent },
     { path: 'utilitarios/calculo-desafios', component: CalculoDesafiosComponent},
+    { path: 'regras/regras', component: RegrasComponent},
     { path: 'regras/condicoes', component: CondicoesComponent},
     { path: 'regras/acoes', component: AcoesComponent},
     { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent},
