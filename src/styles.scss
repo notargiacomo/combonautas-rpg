@@ -58,11 +58,11 @@ h2,
 h4,
 h5 {
   margin-top: 1% !important;
-  color: rgb(200, 50, 50) !important;
+  color: rgb(45, 35, 60) !important;
 }
 
 b {
-  color: rgb(200, 50, 50) !important;
+  color: rgb(45, 35, 60) !important;
 }
 
 .negrito-centralizado > b {
@@ -307,7 +307,8 @@ button[mat-flat-button]:hover {
 }
 
 .mat-mdc-button-disabled {
-  background-color: rgb(200, 50, 50) !important;
+  background-color: rgb(45, 35, 60) !important;
+  color: white !important;
 }
 
 .content-cartao-itens {
