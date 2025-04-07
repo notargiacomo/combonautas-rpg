@@ -2,3 +2,29 @@
 <p><b>Sabedoria +2, Carisma +1</b></p>
 <p><b>Herança Divina.</b> Você é uma criatura do tipo espírito e recebe visão no escuro.</p>
 <p><b>Luz Sagrada (Aggelus).</b> Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e</p>
+
+<p>Mais de vinte traços raciais variantes para aggelus são listados a seguir, nomeados conforme cada reino divino e outros mundos planares. Um personagem suraggel pode substituir sua habilidade de raça <b>Luz Sagrada.</b></p>
+<ul>
+<li><b>Herança de Al-Gazara.</b> Devido à presença do puro caos primordial de Nimb em seu sangue, você recebe +1 em um atributo aleatório.</li>
+<li><b>Herança de Arbória.</b> Como parte do Ciclo de Allihanna, você recebe a habilidade Forma Selvagem para uma única forma, escolhida entre Ágil, Sorrateira ou Veloz. Caso adquira essa habilidade novamente, o custo dessa forma diminui em –1 PM.</li>
+<li><b>Herança de Chacina.</b> Pela ferocidade de Megalokk, você recebe a habilidade Forma Selvagem para uma única forma, escolhida entre Feroz ou Resistente. Caso adquira essa habilidade novamente, o custo dessa forma diminui em –1 PM.</li>
+<li><b>Herança de Deathok.</b> A mudança constante faz parte de sua alma tocada. Você recebe +2 em duas perícias a sua escolha. A cada manhã você pode trocar essas perícias.</li>
+<li><b>Herança de Drashantyr.</b> Graças ao imenso poder elemental dos dragões de Kallyadranoch, você recebe redução de ácido, eletricidade, fogo, frio, luz e trevas 5.</li>
+<li><b>Herança de Kundali.</b> Pelo espírito protetor, mas também opressor, de Tauron, você recebe +2 na Defesa e em testes de manobras de combate.</li>
+<li><b>Herança de Magika.</b> Seu sangue é abençoado por Wynna. Você aprende e pode lançar uma magia arcana de 1º círculo a sua escolha (atributo-chave Inteligência ou Carisma, à sua escolha). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</li>
+<li><b>Herança de Nivenciuén.</b> Mesmo que o Reino de Glórienn tenha sofrido um destino terrível, a antiga soberania élfica ainda permeia seu sangue. Escolha um traço racial dos elfos entre os seguintes: Graça de Glórienn, Sangue Mágico ou Sentidos Élficos. Você tem esse traço racial.</li>
+<li><b>Herança de Odisseia.</b> Sua alma tocada por Valkaria está sempre preparada para problemas! Você recebe +2 em Iniciativa e Percepção e sua capacidade de carga aumenta em 2 espaços.</li>
+<li><b>Herança de Ordine</b>. As forças da lei e ordem de Khalmyr afetam suas ações, mesmo sem seu conhecimento. Você recebe +2 em Intuição, Investigação e em testes sem rolagens de dados (ao escolher 0, 10 ou 20).
+<li><b>Herança de Pelágia.</b> Mesmo nas situações mais desesperadoras, seu espírito se mantém plácido e imperturbável como o próprio Oceano. Escolha 3 perícias. Com elas, você pode gastar 1 PM para escolher 10 em qualquer situação, exceto testes de ataque.</li>
+<li><b>Herança de Pyra</b>. Em algum lugar dentro de você, sempre existe uma segunda chance. Quando faz um teste de resistência, ou um teste de atributo para remover uma condição, você pode gastar 2 PM para rolá-lo novamente.</li>
+<li><b>Herança de Ramknal</b>. Escolha duas perícias entre Acrobacia, Enganação, Furtividade, Jogatina e Ladinagem. Quando faz um teste da perícia escolhida, você pode gastar 2 PM para receber +5 nesse teste, pela esperteza de Hyninn!</li>
+<li><b>Herança de Serena.</b> Pela proteção de Marah, você recebe +2 na Defesa e em testes de resistência contra oponentes aos quais não tenha causado dano, perda de PV ou condições (exceto enfeitiçado, fascinado e pasmo) nesta cena.</li>
+<li><b>Herança de Skerry.</b> Descendendo de antigos e poderosos seres do mundo kliren, você carrega a força de criatividade. Quando vai fazer um teste de Ofício, você pode gastar 1 PM para receber os benefícios de ser treinado na perícia em questão ou para rolar dois dados e usar o melhor resultado.</li>
+<li><b>Herança de Solaris.</b> Pelo poder de Azgher, durante o dia você recebe +1 em todos os testes de perícia. Se estiver diretamente sob a luz do sol, esse bônus aumenta para +2.</li>
+<li><b>Herança de Sombria.</b> Pelo poder de Tenebra, durante a noite você recebe +1 em todos os testes de perícia. Se estiver num local sem nenhuma iluminação artificial (como tochas ou magia), esse bônus aumenta para +2</li>
+<li><b>Herança de Sora.</b> Os honrados espíritos ancestrais de Lin-Wu abençoam sua perseverança. Você recebe +2 em Nobreza e Vontade e em testes de perícia estendidos (incluindo contra perigos complexos).</li>
+<li><b>Herança de Terápolis.</b> O conhecimento de Tanna-Toh o protege contra mentiras. Você recebe +2 em Intuição e Vontade e pode fazer testes dessas perícias contra ilusões automaticamente, sem precisar interagir com elas.</li>
+<li><b>Herança de Venomia.</b> Ser escorregadio como Sszzaas faz parte de sua natureza, mesmo que você não goste disso. Você recebe +2 em Enganação e em testes para evitar manobras de combate e efeitos de movimento.</li>
+<li><b>Herança de Vitalia.</b> A força da vida corre intensa em seu sangue. Você recebe +5 PV por patamar de jogo (Tormenta20, p. 35) e sua recuperação de pontos de vida com descanso aumenta em uma categoria.</li>
+<li><b>Herança de Werra.</b> Arsenal abençoou você com um conhecimento intuitivo para armas. Você recebe o poder Proficiência, mas apenas para um grupo de armas.</li>
+</ul>

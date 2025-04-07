@@ -1,6 +1,7 @@
 <p>Mashins são golens especiais criados com técnicas tamuranianas. Eles são um tipo de chassi para personagens golens (veja a página 134 - Ameaças de Arton).</p>
 <h5>HABILIDADES DE RAÇA</h5>
-<p><b>Mashin (chassi).</b> +1 em dois atributos a sua escolha. Você se torna treinado em duas perícias a sua escolha e pode substituir uma dessas perícias por uma maravilha mecânica. Entretanto, você é sempre Médio.</p>
+<p><b>Força +1, Carisma –1 (cumulativo com Chassi e Tamanho).</b></p>
+<p><b>Chassi.</b> +1 em dois atributos a sua escolha. Você se torna treinado em duas perícias a sua escolha e pode substituir uma dessas perícias por uma maravilha mecânica. Entretanto, você é sempre Médio.</p>
 <p><b>Maravilha Mecânica.</b> Se escolher uma maravilha mecânica, você recebe um dos poderes a seguir. Uma vez por patamar, você pode escolher uma maravilha mecânica no lugar de um poder de classe.</p>
 <ul>
 <li><b>Adaptação Elemental.</b> Quando sofre dano de ácido, eletricidade, fogo, frio, luz ou trevas, você pode gastar 2 PM para receber redução 10 contra esse tipo de dano até o fim da cena.</li>
@@ -13,3 +14,20 @@
 <li><b>Dínamo de Mana.</b> Escolha uma de suas habilidades com um custo em PM. Você pode gastar uma ação de movimento para canalizar seu mana. Quando faz isso, até o fim do seu turno, o custo do próximo uso da habilidade escolhida é reduzido em –1 PM. Um personagem treinado em Ofício (artesão) pode substituir essa habilidade com uma hora de trabalho e o gasto de T$ 100.</li>
 <li><b>Pernas Aprimoradas.</b> Você pode gastar 2 PM para receber +6m em seu deslocamento e +5 em Atletismo até o fim da cena.</li>
 <li><b>Reservatório Alquímico.</b> Você possui um reservatório em seu corpo que pode armazenar até duas doses de preparados alquímicos. Uma vez por rodada, você pode usar um desses preparados ou pode consumi-lo para  sua fonte de energia. Carregar seu reservatório exige uma ação completa e o gasto dos itens com os quais você quiser carregá-lo. Pré-requisito: Fonte de Energia (alquímica).</li>
+</ul>
+
+<p><b>Criatura Artificial.</b> Você é uma criatura do tipo construto. Recebe visão no escuro e imunidade a cansaço, efeitos metabólicos e veneno. Além disso, não precisa respirar, alimentar-se ou dormir, mas não se beneficia de cura mundana e de itens da categoria alimentação. Você precisa ficar inerte por 8 horas por dia para recarregar sua fonte de energia. Se fizer isso, recupera PV e PM por descanso em condições normais (golens não são afetados por condições boas ou ruins de descanso). Por fim, a perícia Cura não funciona em você, mas Ofício (artesão) pode ser usada no lugar dela.</p>
+<p><b>Fonte de energia.</b> Escolha sua fonte de energia da lista abaixo.</p>
+<ul>
+<li><b>Alquímica.</b> Uma mistura alquímica gera a energia necessária à sua vida. Você pode gastar uma ação padrão para ingerir um item alquímico qualquer; se fizer isso, recupera 1 PM.</li>
+<li><b>Elemental.</b> Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico deste tipo, em vez disso cura PV em quantidade igual à metade do dano.</li>
+<li><b>Sagrada.</b> Você foi animado por um texto ou símbolo sagrado depositado em seu corpo. Você pode lançar uma magia divina de 1º círculo a sua escolha (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Alguém treinado em Religião pode trocar essa magia com um ritual que demora um dia e exige o gasto de um pergaminho mágico com outra magia de 1° círculo.</li>
+<li><b>Vapor.</b> Seu corpo é movido por vapor e engrenagens. Você é imune a dano de fogo; se fosse sofrer dano desse tipo, em vez disso seu deslocamento aumenta em 4,5m por 1 rodada. Entretanto, dano de frio deixa-o lento por 1 rodada. Você pode gastar uma ação padrão e PM para soprar um jato de vapor escaldante em um cone de 4,5m. Criaturas na área sofrem 1d6 pontos de dano de fogo por PM gasto e ficam em chamas (Ref CD Con reduz à metade e evita a condição).</li>
+</ul>
+
+<p><b>Tamanho.</b> Escolha seu tamanho da lista abaixo.</p>
+<ul>
+<li><b>Pequeno.</b> Destreza +1.</li>
+<li><b>Médio.</b> Sem ajustes.</li>
+<li><b>Grande.</b> Destreza –1.</li>
+</ul>
