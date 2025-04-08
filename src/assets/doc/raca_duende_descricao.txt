@@ -1,3 +1,90 @@
-<h5>HABILIDADES DE RAÇA</h5>
-<p>Para representar a variedade dos duendes, esta será uma raça “modular”, com uma lista de diversas habilidades únicas. O jogador poderá escolher algumas habilidades e, com isso, construir seu próprio duende, único e diferente dos demais.</p>
-<p>A lista de habilidades está em construção, e será revelada na próxima prévia.</p>
+<h4>HABILIDADES DE RAÇA</h4>
+<p>Nenhum conjunto pré-determinado de habilidades poderia representar os diferentes membros desta raça.
+Assim, para criar um duende, você precisará fazer algumas escolhas.</p>
+<h4>Passo 1: Natureza</h4>
+<p>Você é uma criatura do tipo espírito. Além disso, escolha se você será animal, vegetal ou mineral.</p>
+<p><b>1) Animal.</b> Você é feito de carne e osso. Seu corpo é humanoide, mas sua aparência varia: pode ser algo similar a um elfo ou sílfide, um animal que anda sobre duas patas ou uma mistura dessas possibilidades. Você recebe +1 em um atributo a sua escolha.</p>
+<p><b>2) Vegetal.</b> Você é feito de folhas, vinhas, cortiça ou madeira, podendo ser desde uma pequena flor saltitante a uma grande árvore desenraizada. Você recebe as habilidades Natureza Vegetal (é imune a atordoamento e metamorfose, mas pode ser afetado por efeitos que afetem plantas) e Regeneração Vegetal (pode gastar uma quantidade de PM limitada pela sua Constituição para curar 2d8 PV por PM gasto no início
+de seu próximo turno).</p>
+<p><b>3) Mineral.</b> Você é feito de material inorgânico, como argila, rocha, cristal ou vidro. Você recebe imunidade a efeitos de metabolismo e redução de corte, fogo e perfuração 5, mas não se beneficia de itens da categoria alimentação.</p>
+<h4>Passo 2: Tamanho</h4>
+<p>Este passo é o mais direto: escolha seu tamanho, entre <b>Minúsculo, Pequeno, Médio ou Grande.</b></p>
+<p><b>1) Minúsculo.</b> Você é miudinho e fofinho. Pode ser uma caneca falante, um gato de monóculo ou um corvo com cara de velho barbudo (é, talvez não seja tão fofo assim). Você é Minúsculo (+5 em testes de Furtividade, –5 em testes de manobras de combate, usa armas reduzidas), possui deslocamento base 6m e sofre –1 de Força.</p>
+<p><b>2) Pequeno.</b> Você tem o tamanho de um hynne, de uma criança, de um cachorro ou de um barril. Você pode inclusive ser um barril. Você é Pequeno (+2 em testes de Furtividade, –2 em testes de manobra) e possui deslocamento base 6m.</p>
+<p><b>3) Médio.</b> Sério? Que sem graça! Você é Médio (sem modificadores por tamanho) e possui deslocamento base 9m. Blé.</p>
+<p><b>4) Grande.</b> Agora sim! Meta medo em qualquer um que achar que fadas são fracotes. Você é Grande (–2 em testes de Furtividade, +2 em testes de manobra, usa armas aumentadas), possui deslocamento base 9m e sofre –1 de Destreza.</p>
+<h4>Passo 3: Dons</h4>
+<p>Escolha dois atributos diferentes. Você recebe +1 em cada atributo escolhido. Não, não pode ser +2 em um único atributo. Xô, larga disso! Porém, se você for animal, pode adicionar +1 no mesmo atributo que aumentou pela natureza.</p>
+<p>Se você estiver criando seu duende de forma aleatória, a rolagem de 2d6 determina os atributos nos quais você receberá +1, sendo uma rolagem 1 = Força, 2 = Destreza e assim por diante.</p>
+<h4>Passo 4: Presentes de Magia e de Caos</h4>
+<p>Duendes não são só esquisitos, eles também conseguem fazer coisas esquisitas. Neste passo, escolha três poderes da lista abaixo. Todas as habilidades a seguir são mágicas. No caso de habilidades que permitam teste de resistência, a CD é Car a menos que especificado o contrário. Uma vez por patamar, você pode escolher um presente no lugar de um poder de classe.</p>
+<p><b>1) Afinidade elemental.</b> Você possui ligação com um tipo de elemento do mundo natural, entre água, fogo ou vegetação.</p>
+<ul>
+<li><I>Água.</I> Você é ligado a lagos e rios. Provavelmente tem a pele e/ou os cabelos azulados. Você pode respirar debaixo d’água, recebe deslocamento de natação igual ao seu deslocamento base e pode lançar a magia Controlar Água.</li>
+<li><I>Fogo.</I> Você é ligado ao calor e às chamas. Provavelmente tem a pele e/ou os cabelos avermelhados. Você recebe redução de fogo 5 e pode lançar a magia Controlar Fogo por seu custo normal –1 PM.</li>
+<li><I>Vegetação.</I> Você é ligado a bosques e florestas. Provavelmente tem a pele e/ou cabelos esverdeados. Você pode atravessar terrenos difíceis naturais sem sofrer redução em seu deslocamento e pode lançar Controlar Madeira e Controlar Plantas.</li>
+</ul>
+<p><b>2) Encantar objetos.</b> Você pode gastar uma ação de movimento e 2 PM para tocar um item e colocar um encanto pertinente a sua escolha nele (por exemplo, se tocar uma arma, pode colocar um encanto de arma nela). O encanto não pode ter pré-requisitos e dura até o fim da cena.</p>
+<p>Se você for do patamar veterano ou superior, pode também gastar uma ação completa e 6 PM para fazer o mesmo, mas nesse caso o encanto é permanente até você cancelá-lo (uma ação livre). Você só pode ter um encanto permanente ativo por vez e, enquanto ele estiver ativo, seus pontos de mana máximos reduzem em –2.</p>
+<p><b>3) Enfeitiçar.</b> Suas feições feéricas podem deslumbrar outros seres. Você pode lançar Enfeitiçar e pode usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um arcanista de seu nível.</p>
+<p><b>4) Invisibilidade.</b> Um poder comum entre duendes e responsável por boa parte do folclore confuso sobre eles (“Como assim você não viu aquela tartaruga alada e falante que estava aqui agora há pouco?”). Você pode lançar Invisibilidade e pode usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um arcanista de seu nível.</p>
+<p><b>5) Língua da natureza.</b> Você recebe +2 em Adestramento e Sobrevivência e pode falar livremente com animais e plantas.</p>
+<p><b>6) Maldição.</b> Nem todos os poderes feéricos são fofos ou engraçados… Você pode gastar uma ação padrão e 3 PM para amaldiçoar uma criatura em alcance curto. A criatura tem direito a um teste de resistência. Se falhar, sofre o efeito da maldição. Se passar, fica imune a este poder por um dia. Para construir sua maldição, escolha qual resistência ela permite (entre Fortitude ou Vontade) e seu efeito (da lista abaixo). Uma vez feitas, essas escolhas não podem ser mudadas.</p>
+<p>A maldição é permanente, mas você pode cancelá-la como uma ação livre e ela pode ser curada por Purificação com o aprimoramento de +7 PM. Além disso, você só pode manter uma maldição por vez (se quiser amaldiçoar uma nova criatura, precisa cancelar a maldição da criatura anterior). Com a permissão do mestre, você pode criar uma maldição personalizada, usando os efeitos acima como parâmetros.</p>
+<ul>
+<li><I>Apatia profunda.</I> A criatura fica alquebrada e esmorecida.</li>
+<li><I>Coração de Geleia.</I> A criatura fica abalada e, na primeira vez que tentar fazer uma ação ofensiva em cada cena, deve fazer um teste de Vontade. Se falhar, não consegue e perde sua ação.</li>
+<li><I>Envelhecimento Súbito.</I> A criatura fica fraca e lenta.</li>
+<li><I>Loucura do Verão.</I> No início de cada cena, a criatura fica confusa.</li>
+<li><I>Mil Verrugas.</I> A criatura sofre –2 no Carisma e, sempre que uma criatura inicia seu turno em alcance curto dela, precisa fazer um teste de Vontade. Se falhar, deve gastar seu próximo turno atacando a vítima da maldição! Este efeito só se aplica uma vez para cada criatura.</li>
+<li><I>Ruína do Corpo.</I> A criatura fica debilitada.</li>
+</ul>
+<p><b>7) Metamorfose animal.</b> Você pode se transformar em um tipo de animal específico. Escolha uma forma selvagem do druida, como forma ágil ou veloz (veja Tormenta20, p. 63). Você pode gastar uma ação completa e 3 PM para assumir essa forma, recebendo todos seus modificadores. Ao contrário de um druida, você pode falar e lançar magias mesmo em sua forma selvagem. Porém, você pode assumir apenas a forma escolhida, e apenas em sua versão básica (não aprimorada ou superior).</p>
+<p><b>8) Mudança de tamanho.</b> Outro poder comum entre duendes. Você pode gastar uma ação de movimento e 3 PM para aumentar ou diminuir seu tamanho em uma categoria até o fim da cena (mínimo Minúsculo, máximo Grande). Se aumentar seu tamanho, recebe Força +1. Se diminuir, recebe Destreza +1.</p>
+<p><b>9) Sonhos proféticos.</b> Uma vez por cena, você pode gastar 2 PM para ter uma visão que, graças à sua natureza feérica, provavelmente se concretizará. Role 1d20. Até o final da cena, você pode substituir o resultado do d20 de um teste realizado por uma criatura em alcance curto (incluindo você mesmo) pelo resultado do dado que você rolou ao usar este poder.</p>
+<p><b>10) Velocidade do pensamento.</b> Na primeira rodada de cada cena, você pode gastar 1 PM para realizar um turno adicional. Se fizer isso, você pula seu turno na segunda rodada.</p>
+<p><b>11) Visão feérica.</b> Você recebe +2 em Misticismo e Percepção, visão na penumbra e está permanentemente sob efeito da magia Visão Mística com o aprimoramento de enxergar criaturas e objetos invisíveis.</p>
+<p><b>12) Voo.</b> Você possui asas ou alguma fonte de voo mágico. Consegue flutuar 1,5m acima do nível do chão com deslocamento igual ao seu deslocamento base +3m, o que permite que ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Você também pode voar, mas isso é cansativo: você gasta 1 PM por rodada para voar com deslocamento igual ao seu deslocamento base +6m.</p>
+<h4>Passo 5: Limitações</h4>
+<p>A natureza mágica e caótica dos duendes faz com que eles sejam poderosos — mas também lhes impõe várias limitações. Você recebe as habilidades a seguir</p>
+<p><b>Aversão a Ferro.</b> Um material rígido e inflexível, o ferro é nocivo a duendes. Você sofre 1 ponto de dano adicional por dado de dano de ataques com armas de ferro e sofre 1d6 pontos de dano por rodada se estiver empunhando ou vestindo um item de ferro. Isso também se aplica a aço, que inclui ferro em sua composição. Na prática, duendes usam apenas armas de madeira ou materiais especiais, como mitral.</p>
+<p><b>Aversão a Sinos.</b> O badalar de um sino representa ordem e devoção, algo que faz mal a duendes. Se você escutar esse som, fica alquebrado e esmorecido até o fim da cena. No início de qualquer cena em um ambiente urbano no qual haja uma ou mais igrejas ou templos (o que inclui praticamente todas as vilas e cidades do Reinado!), role 1d6. Em um resultado 1, você escutará um sino badalando em algum lugar.</p>
+<p><b>Tabu.</b> Você possui um tabu — algo que nunca pode fazer (ou deixar de fazer). Crie seu tabu junto com o mestre. Em termos de regras, a esquisitice de seu tabu impõe uma penalidade de –5 em Diplomacia, Iniciativa, Luta ou Percepção, a sua escolha (um tabu que afete seu comportamento, por exemplo, irá impor
+–5 em Diplomacia). Se você desrespeitar seu tabu, fica fatigado por um dia. Nenhum efeito pode curar essa condição. Se no dia seguinte continuar desrespeitando o tabu, fica exausto. Se no terceiro dia não mudar seu
+comportamento, você morre.</p>
+<br>
+<hr>
+<br>
+<h4>Sonhos Malucos</h4>
+<p>Sabe quando você tem um sonho maluco, no qual nada faz sentido? Alguns duendes são exatamente assim. O que  não é de se estranhar, afinal, Nimb tem um dedo na criação das fadas. Se quiser emular essa esquisitice toda, você pode criar seu duende de forma aleatória. Para isso, role 1d3, 1d4, 2d6 e 3d12, todos ao mesmo  tempo. Esses dados irão definir, respectivamente, sua natureza, tamanho, dois bônus de atributos e três poderes (se você rolar bônus de atributos ou poderes repetidos, role novamente). Você ainda recebe as
+três limitações de todos os duendes (veja o passo 5) e ainda precisa definir seu tabu junto com o mestre.
+Se criar seu duende de forma aleatória, você começa o jogo com +2 PM — um presente do Deus do Caos pela sua ousadia.</p>
+<br>
+<hr>
+<br>
+<h4>Tabus de Duendes</h4>
+<p>Em teoria, duendes podem ter qualquer tipo de tabu. Na prática, apenas os comportamentos mais esquisitos, absurdos e desprovidos de sentido surgem como tabus para esta raça peculiar. Aqui vão alguns exemplos.</p>
+<ul>
+<li>Sempre remenda as roupas de qualquer mortal que esteja dormindo sob o mesmo teto que ele.</li>
+<li>Come apenas carne crua.</li>
+<li>Nunca pode ouvir um agradecimento.</li>
+<li>Sempre entra em qualquer lugar de costas.</li>
+<li>Não revela o próprio nome.</li>
+<li>Compõe um pequeno poema para todos que encontra, descrevendo a morte de cada um.</li>
+<li>Não pode ver crianças em noites de lua cheia.</li>
+<li>Nunca senta em cadeiras.</li>
+<li>Carrega sempre consigo um pote fechado. Diz que ali dentro está seu coração.</li>
+<li>Usa sapatos muito pequenos e reclama de dor nos pés o tempo todo. Fica enfurecido se alguém sugerir ou oferecer sapatos diferentes.</li>
+<li>Age como se estivesse paralisado se qualquer quantidade de sal tocar sua pele</li>
+<li>Um dia por semana, atende por um nome diferente e demonstra personalidade um pouco diferente. Diz não lembrar de seu outro nome</li>
+<li>Varre qualquer cômodo onde esteja.</li>
+<li>Tem pavor do próprio reflexo</li>
+<li>Nunca pode aceitar um favor sem pagar pelo menos uma moeda.</li>
+<li>Ao passar na frente de qualquer templo, cobre os olhos com uma venda.</li>
+<li>Rouba exatamente um garfo de qualquer casa na qual entre.</li>
+<li>Precisa atravessar todos os espinheiros que encontra em seu caminho.</li>
+<li>Sempre responde uma pergunta com outra pergunta.</li>
+<li>Não pode falar a verdade durante um dia inteiro por mês. Esse dia varia a cada mês. Não pode avisar ninguém sobre a chegada desse dia, ou sobre este tabu.</li>
+<li>Em intervalos de tempo aleatórios, lembra-se de que está atrasado para um compromisso importante e corre para longe, sumindo por algumas horas.</li>
+<li>Não pode olhar pessoas feridas nos olhos.</li>
+</ul>
