@@ -36,6 +36,10 @@ export class RacaService extends AbstractService {
                 if (valorFiltro === null || valorFiltro === undefined || valorFiltro === '') {
                   return true;
                 }
+
+                if(Array.isArray(valorRaca)){
+                  return valorRaca.includes(valorFiltro);
+                }
   
                 // Se o valor do filtro é um número, compara numericamente
                 if (!isNaN(Number(valorFiltro)) && typeof valorRaca === 'number') {

@@ -88,6 +88,12 @@ export class RacasComponent implements OnInit {
   expandedElement!: Raca | null;
   isExpandedRow = (index: number, row: any) => row === this.expandedElement;
   racas!: Raca[];
+  
+  atributo = [-2, -1, 0, 1, 2, 3];
+  numero_registros = 0;
+  dataSource = new MatTableDataSource<Raca>();
+  form!: FormGroup;
+
   deslocamentos = Object.values(Deslocamento);
   sentidos = Object.values(Sentido);
   tamanhos = Object.values(Tamanho);
@@ -95,11 +101,6 @@ export class RacasComponent implements OnInit {
   tipos = Object.values(TipoCriatura);
   bonus = Object.values(ModificadorRacial);
   penalidade = Object.values(ModificadorRacial);
-  atributo = [-2, -1, 0, 1, 2, 3];
-  numero_registros = 0;
-  selectedIndex: number = 0;
-  dataSource = new MatTableDataSource<Raca>();
-  form!: FormGroup;
 
   constructor(
     private readonly racaService: RacaService,
@@ -111,20 +112,7 @@ export class RacasComponent implements OnInit {
 
   ngOnInit() {
     this.reiniciaFormulario();
-
-    this.racaService.listar(null).subscribe({
-      next: (response) => {
-        this.racas = response;
-        this.numero_registros = response.length;
-        this.cdr.detectChanges();
-      },
-      error: (response) => {
-        console.log(response);
-      },
-      complete: () => {
-        this.dataSource = new MatTableDataSource(this.racas);
-      },
-    });
+    this.consultar();
   }
 
   isOdd(element: any): boolean {
@@ -229,6 +217,11 @@ export class RacasComponent implements OnInit {
   
     this.racaService.listar(filtro).subscribe({
       next: (response: any[]) => {
+        response.sort((a, b) => {
+          let nome_a = a.nome ? a.nome : 'a';
+          let nome_b = b.nome ? b.nome : 'b';
+          return nome_a.localeCompare(nome_b);
+        });
         this.racas = response;
         this.numero_registros = response.length;
         this.cdr.detectChanges();
@@ -349,7 +342,6 @@ export class RacasComponent implements OnInit {
   }
 
   seExibeSelecao(raca: Raca): boolean {
-    this.selectedIndex = 0;
     return this.seVeioFicha &&
       this.racaSelecionada !== undefined &&
       raca.instrucao
