@@ -1,5 +1,7 @@
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>Sabedoria +2, Carisma +1, Força –1.</b></p>
-<p><b>Essência Feérica.</b> Você é uma criatura do tipo espírito, recebe visão na penumbra e pode falar com animais livremente.</p>
-<p><b>Magia Instintiva.</b> Você pode usar Sabedoria no lugar de Inteligência como atributo-chave de Misticismo e de seu atributo-chave para magias arcanas. Além disso, está sempre sob o efeito básico da magia Visão Mística e, quando lança uma magia com aprimoramentos, o custo total dela diminui em –1 PM.</p>
+<p><b>Essência Feérica.</b> Você é uma criatura do tipo espírito, recebe visão na penumbra e pode falar com
+animais livremente.</p>
+<p><b>Magia Instintiva.</b> Você pode usar Sabedoria no lugar de seu atributo-chave de magias arcanas e Misticismo. Além disso, quando lança uma magia com aprimoramentos, o custo total desses aprimoramentos diminui em –1 PM. Este efeito não reduz o custo básico da magia nem se acumula com reduções de custo normais dela.</p>
+<p><b>Sentidos Místicos.</b> Você está sempre sob o efeito básico da magia Visão Mística. e</p>
 <p><b>Canção da Melancolia.</b> Quando faz um teste de Vontade contra efeitos mentais, você rola dois dados e usa o pior.</p>

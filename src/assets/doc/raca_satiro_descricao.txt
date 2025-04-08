@@ -1,6 +1,7 @@
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>Carisma +2, Destreza +1, Sabedoria –1.</b></p>
-<p><b>Chifres.</b> Você possui uma arma natural de chifres (dano 1d6, crítico x2, impacto). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.</p>
+<p><b>Chifres.</b> Você possui uma arma natural de chifres (dano 1d6, crítico x2, impacto). Uma vez por
+rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.</p>
 <p><b>Festeiro Feérico.</b> Você é uma criatura do tipo espírito e recebe visão na penumbra e +2 em Atuação e Fortitude.</p>
 <p><b>Instrumentista Mágico.</b> Se estiver empunhando um instrumento musical, você pode lançar as magias Amedrontar, Enfeitiçar, Hipnotismo e Sono (atributo-chave Carisma). Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM. e</p>
 <p><b>Pernas Caprinas.</b> Seu deslocamento é 12m e você pode usar Destreza como atributo-chave de Atletismo (em vez de Força).</p>

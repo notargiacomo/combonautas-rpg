@@ -1,8 +1,7 @@
-<p>Elfos são seres feitos para a beleza e para a guerra, tão habilidosos com magia quanto com espadas e arcos. Elegantes, astutos, de vidas quase eternas, parecem superiores aos humanos em
-tudo. Poderiam ter governado toda Arton, não fosse a arrogância herdada de sua deusa. Com a queda
-de Glórienn, os elfos se tornaram um povo sem uma deusa. Um povo independente. Enquanto alguns veem a falta de uma divindade como uma tragédia, outros acreditam que, pela primeira vez na história, são livres.</p>
-<h5>HABILIDADES DE RAÇA</h5>
-<p><b>Inteligência +2, Destreza +1, Constituição –1.</p></b>
-<p><b>Graça de Glórienn.</b> Seu deslocamento é 12m (em vez de 9m).</p>
-<p><b>Sangue Mágico.</b> Você recebe +1 ponto de mana por nível.</p>
-<p><b>Sentidos Élficos.</b> Você recebe visão na penumbra e +2 em Misticismo e Percepção.</p>
+<p>Seres féericos ancestrais, os eiradaan foram criados pelo Panteão para proteger Vitalia, o Reino de Lena, de todo o mal da Criação, e chegaram a Arton após um evento que trouxe grande tristeza. Não há registros acurados sobre o que teria exatamente acontecido; sabe-se apenas que os eiradaan falharam em sua tarefa sagrada, sendo expulsos de seu lar divino</p>
+<p>Em Arton, os eiradaan se refugiaram nas florestas mais densas e profundas. Lendas dizem que, nesses locais secretos, ergueram reinos feéricos que governam conforme seus caprichos. De fato, muitos nobres na corte de Thanthalla-Dhaedelin, Rainha da Pondsmânia, são eiradaan.</p>
+<p>Fisicamente, o eiradaan lembra um elfo, com as mesmas orelhas pontiagudas, olhos amendoados e traços delicados. Mas seu corpo exibe a exuberância do mundo natural, com galhadas ramificando na cabeça. Nos olhos, grande inteligência, mas também certo resquício de tristeza profunda.</p>
+<p>Eiradaan entregam-se a longos momentos de melancolia, ou então buscam se manter ocupados para afastar a tristeza (mas nunca se dedicam a um mesmo projeto por muito tempo). Apesar de seu poder mágico fenomenal, eiradaan ainda são fadas: vulneráveis a emoções fortes, tornando-se perigosos quando algo desperta sua antiga mágoa.</p>
+<p>Entre os eiradaan, muitos são arcanistas, mas também há nobres e cavaleiros feéricos — guardiões e soldados de elite da rainha das fadas. Esses são especialmente imponentes e dignos, vivendo conforme códigos e tabus de honra e glória, duelando (entre si ou com mortais) ou protegendo locais sagrados. Suas
+montarias são grandes gamos celestiais presenteados por Allihanna; dizem que a deusa, às vezes, também oferta estas montarias sagradas a outros devotos valorosos.</p>
+<p>Alguns eiradaan aceitam acompanhar grupos de aventureiros, seja para aplacar a melancolia ancestral, seja para procurar pistas sobre o mistério de seu banimento divino.</p>

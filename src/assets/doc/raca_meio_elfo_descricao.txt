@@ -1,5 +1,5 @@
 <h5>HABILIDADES DE RAÇA</h5>
 <p><b>Inteligência +1, +1 em dois atributos, exceto constituição.</b></p>
-<p><b>Ambição Herdada.</b> Você recebe um poder geral ou poder único de origem (veja Tormenta20, p. 85) à sua escolha.</p>
+<p><b>Ambição Herdada.</b> Você recebe um poder geral ou poder único de origem (Tormenta20, p. 85) à sua escolha.</p>
 <p><b>Entre Dois Mundos.</b> Você recebe +1 em perícias baseadas em Carisma.</p>
 <p><b>Sangue Élfico.</b> Você recebe visão na penumbra e +1 ponto de mana a cada nível ímpar (incluindo o 1º). Além disso, é considerado um elfo para efeitos relacionados à raça.</p>
