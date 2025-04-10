@@ -117,6 +117,7 @@ export class ItensComponent implements AfterViewInit {
           let nome_a = a.nome ? a.nome : 'a';
           let nome_b = b.nome ? b.nome : 'b';
           return nome_a.localeCompare(nome_b);
+          
         });
         this.objetos = response;
         this.numero_registros = response.length;

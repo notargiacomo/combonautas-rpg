@@ -33,7 +33,7 @@ import { DeusesComponent } from "../../personagem/deuses/deuses.component";
         </label>
       </mat-card>
     <mat-dialog-content>
-         <app-racas *ngIf="this.data.classe === 1"  [seVeioFicha]="true"   [racaSelecionada]="objeto"
+         <!-- <app-racas *ngIf="this.data.classe === 1"  [seVeioFicha]="true"   [racaSelecionada]="objeto"
          (racaSelecionadaChange)="atualizarObjeto($event)"></app-racas>
          <app-itens *ngIf="this.data.classe === 2" [seVeioFicha]="true"   [itemSelecionado]="objeto"
          (itemSelecionadoChange)="atualizarObjeto($event)"></app-itens>
@@ -46,7 +46,7 @@ import { DeusesComponent } from "../../personagem/deuses/deuses.component";
          <app-classes *ngIf="this.data.classe === 6" [seVeioFicha]="true"   [classeSelecionada]="objeto"
          (classeSelecionadaChange)="atualizarObjeto($event)"></app-classes>
          <app-deuses *ngIf="this.data.classe === 7" [seVeioFicha]="true"   [deusSelecionado]="objeto"
-         (deusSelecionadoChange)="atualizarObjeto($event)"></app-deuses>
+         (deusSelecionadoChange)="atualizarObjeto($event)"></app-deuses> -->
     </mat-dialog-content>
     <mat-dialog-actions>
       <button mat-button mat-flat-button [disabled]="seDesabilitaConfirmar()" (click)="confirmar()">Confirmar</button>

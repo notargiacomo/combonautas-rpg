@@ -1210,6 +1210,336 @@ export class OrigemData {
         referencias:Referencia.ATLAS ,
         paginas:'479'
       },
+      {
+        id: 102,
+        nome: 'Bacharel',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Para que a justiça de Khalmyr seja cumprida, os inocentes devem ser protegidos e os culpados, punidos. Seja atuando em grandes tribunais do Reinado, seja resolvendo tumultos locais repentinos em que alguém pode acabar na forca, você foi treinado para argumentar, questionar, debater, objetar. É capaz de defender vítimas e acusar criminosos, utilizando como arma apenas argumentos, jurisprudências, filosofia e bom senso. Quando dizem que a pena é mais poderosa que a espada, estão falando sobre você.</p>
+        <p><b>Itens.</b> Tabardo com o símbolo de Khalmyr, uma coleção de livros à sua escolha.</p>
+        <p><b>Benefícios.</b> Você é treinado em Conhecimento, Diplomacia e Nobreza. Além disso, uma vez por cena pode usar Diplomacia para mudar atitude como uma ação livre.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 103,
+        nome: 'Boticário',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você foi aprendiz de um especialista em ervas, poções e misturas alquímicas, alguém capaz de curar doenças, fabricar elixires e até  criar venenos. Na loja de seu mestre, repleta de frascos misteriosos e ingredientes exóticos, você passava os dias triturando raízes, destilando essências e consultando grimórios antigos. Seus clientes variavam de camponeses com males comuns a magos em busca  de componentes raros. Seu trabalho não era livre de perigos: ao manusear substâncias exóticas, uma dosagem errada podia ser fatal. Talvez tenha cometido um erro terrível que levou a seu banimento? Seus atuais colegas aventureiros sabem disso?</p>
+        <p><b>Itens.</b> Bálsamo restaurador, instrumentos de Ofício (alquimista), maleta de medicamentos.</p>
+        <p><b>Benefícios.</b> Você é treinado em Cura e Ofício (alquimista). Além disso, pode fabricar poções de duas fórmulas de 1º círculo à sua escolha, como se tivesse o poder Alquimista Iniciado (Tormenta20, p. 68).</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 104,
+        nome: 'Caçador de Ratos',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Quando o porão da taverna está infestado de ratos, morcegos ou glops, isso pode ser trabalho para heróis iniciantes — ou para um bom caçador de ratos, como você costumava ser! Recorrendo a armadilhas, venenos ou mesmo bons golpes de clava, você sempre soube como livrar seus clientes dessas pestes. Até aquele dia, quando os ratos pareciam um pouco grandes demais, com dentes demais e olhos vermelhos demais. Você escapou sem muitos pedaços faltando. Então vieram aventureiros e deram um jeito. Eram bem durões! Você resolveu que seria durão também. Nunca mais nenhum rato crescido levaria a melhor, nem pensar!</p>
+        <p><b>Itens: </b> Clava, um gato (um parceiro perseguidor iniciante), T$ 50 (recompensa por sua última caçada).</p>
+        <p><b>Benefícios.</b> Você é treinado em Furtividade, Investigação e Sobrevivência e recebe +2 em testes de perícias contra criaturas menores que você.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 105,
+        nome: 'Cão de Briga',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Nem todas as lutas com plateia e apostas envolvem gladiadores glamorosos em coliseus imponentes. Existe no Reinado um vasto submundo de torneios clandestinos, com poucas ou nenhuma regra, muito mais sangrentos. São sediados em tavernas suspeitas, galpões e estaleiros escuros, câmaras de esgotos ou mesmo masmorras, onde capangas armados garantem acesso a um público seleto. Sem carisma suficiente para as grandes arenas, mas com brutalidade de sobra, você foi um desses lutadores sujos. O que teria acontecido para levá-lo a abandonar essa vida, juntando-se a um grupo de aventureiros?</p>
+        <p><b>Itens: </b> Manoplas ou uma arma marcial.</p>
+        <p><b>Benefícios.</b> Na primeira vez em cada cena em que você faz a ação agredir, pode fazer um ataque extra.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 106,
+        nome: 'Carcereiro',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Em Arton, cuidar de calabouços e prisões não é tarefa simples. Claro que havia ladrões e capangas comuns, mas muitas vezes você precisou vigiar prisioneiros mais estranhos e perigosos: assassinos, cultistas, bruxos, monstros, seres sobrenaturais. Como quando o ogro ficou faminto e simplesmente arrebentou as grades. Ou quando você encontrou a própria imperatriz Shivara na cela, descobrindo tarde demais ser um duplo. Ou quando aquele sszzaazita conjurou algum encanto que forçou você a entregar as chaves. Com os diabos, se precisa mesmo viver em masmorras escuras e lidar com bandidos e monstros, que seja com um grupo de aventureiros!</p>
+        <p><b>Itens: </b> Algemas, lampião, uma arma corpo a corpo simples ou marcial a sua escolha.</p>
+        <p><b>Benefícios.</b> Você recebe +2 em testes de manobras de combate e resistência a efeitos mentais +5. Além disso, é treinado em Intimidação ou Intuição, a sua escolha.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 107,
+        nome: 'Carpinteiro de Guilda',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você foi treinado em uma guilda especializada. Mais do que um mero faz-tudo em uma aldeia, você era um artesão versátil, responsável por construir e reparar desde simples mobílias até estruturas de madeira complexas, como pontes, navios e fortalezas. Seu dia começava com a escolha da melhor madeira, coletada nas redondezas ou proveniente das florestas mágicas de Tollon. Com serras, formões e martelos, transformava troncos em criações duráveis e esteticamente belas. Entre fabricar um arco e flechas para um caçador, ou uma balestra para o navio de um bucaneiro, vez por outra você acabava envolvido com aventureiros. Até decidir se envolver ainda mais.</p>
+        <p><b>Itens: </b> Instrumentos de Ofício (carpinteiro), uma arma de corte a sua escolha.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (artesão). Além disso, recebe redução de corte 2 e, em suas mãos, armas de corte ignoram 5 pontos de redução de dano</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 108,
+        nome: 'Catador da Catástrofe',
+        regiao: 'Incomum',
+        descricao: `
+        <p>A queda da Flecha de Fogo. As Guerras Táuricas. A invasão de Lenórienn. Todos os eventos cataclísmicos da história de Arton deixam ruínas e vítimas inocentes. Você foi uma delas. Antes de começar a caçar tesouros em masmorras cheias de monstros, você vasculhou lugares bem menos perigosos (mas igualmente sujos) em busca de sustento: terrenos devastados ou empobrecidos por alguma hecatombe. Você precisou viver dos restos deixados por um desses eventos — mantimentos nas ruínas de armazéns, comida em cozinhas palacianas devastadas, vazamentos em laboratórios de alquimia... Muitas vezes vendeu produtos de suas coletas por preços camaradas, mas o melhor você guardou para si mesmo. Talvez até tenha achado alguma coisa útil para um futuro aventureiro!</p>
+        <p><b>Itens: </b> Dois equipamentos de aventura de até T$ 150 cada à sua escolha.</p>
+        <p><b>Benefícios.</b> Você é treinado em Fortitude e Percepção. No início de cada aventura, pode fazer um teste de Percepção (CD 15 + metade do seu nível). Se passar, encontra um tesouro correspondente a seu próprio ND, escolhido pelo mestre ou rolado nas colunas Dinheiro e Itens da Tabela 8-2: Tesouro por Nível de Desafio (Tormenta20, p. 328).</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 109,
+        nome: 'Cirurgião-Barbeiro',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Atuando em algum vilarejo, porto ou navio, além de cortar cabelos e barbas, você realizava procedimentos médicos rudimentares, como extração de dentes, tratamento de feridas e amputações. Munido de facas afiadas, ervas curativas, bebida forte (a título de anestesia) e conhecimento prático transmitido por gerações, você tratava de camponeses adoentados, feridos em acidentes ou atacados por feras. Suas habilidades misturavam medicina, alquimia e intuição, sendo a última esperança dos aflitos quando não havia curas milagrosas por perto. Grandes coisas, esses tais clérigos! Tudo se resolve cortando fora a parte que dói!</p>
+        <p><b>Itens: </b> Instrumentos de barbeiro, maleta de medicamentos.</p>
+        <p><b>Benefícios.</b> Você é treinado em Cura e Ofício (barbeiro). Além disso, pode gastar uma ação completa e 2 PM para remover uma das seguintes condições de uma criatura adjacente: abalado, alquebrado, apavorado, atordoado, cego, confuso, debilitado, enjoado, envenenado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, ofuscado, paralisado, pasmo ou surdo. Contudo, a criatura também perde 1d6 pontos de vida.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 110,
+        nome: 'Citadino Abastado',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você nasceu em uma família rica de comerciantes ou artesãos de uma grande cidade como Valkaria, Thartann ou Tiberus. Com acesso a boa educação, cresceu com preocupações diferentes de um aldeão ou trabalhador comum. Talvez tenha sido incentivado (ou forçado) por seus pais a honrar esses privilégios, treinando duro para ser alguém melhor — ou fez isso por iniciativa própria. Seja como for, esteve sempre apenas um degrau abaixo da nobreza, mas sendo lembrado o tempo todo que não era um nobre verdadeiro. Agora você procura provar seu valor para sua família, para aqueles que o menosprezaram, para uma pessoa importante ou para si mesmo.</p>
+        <p><b>Itens: </b> Uma arma, armadura, ferramenta ou vestuário no valor de até T$ 500.</p>
+        <p><b>Benefícios.</b> Você é treinado em Nobreza e um Ofício à sua escolha. Se estiver em uma cidade grande (a critério do mestre), pode gastar tibares para aprender algum conhecimento local útil. O custo é T$ 10 x seu nível. Se fizer isso, escolha um poder de combate, de destino ou de uma de suas classes cujos pré-requisitos você cumpra (o mestre determina se um poder está disponível na cidade). Até o fim da aventura, ou até usar esta habilidade novamente, você pode usar o poder escolhido por uma cena.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 111,
+        nome: 'Cocheiro',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você costumava conduzir e manter carroças, carruagens, diligências e outros veículos puxados por animais, transportando passageiros e mercadorias através dos ermos. Além de garantir que os cavalos (ou trobos, ou outras bestas) estivessem bem alimentados e cuidados, cabia-lhe saber navegar por trilhas perigosas e enfrentar desafios como bandidos ou predadores, enquanto protegia seus passageiros. Sua habilidade em manejar as rédeas e seu conhecimento das rotas tornavam-no um guia confiável, essencial para o transporte (quase sempre) seguro nos reinos. Então teve aquele dia, quando levou um bando de esquisitos até a entrada de uma masmorra..</p>
+        <p><b>Itens: </b> Cavalo ou trobo, carroça.</p>
+        <p><b>Benefícios.</b> Você é treinado em Adestramento e Pilotagem e, quando está conduzindo um veículo, você e o veículo recebem +2 na Defesa e em testes de resistência.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 112,
+        nome: 'Construtor',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Nem tudo construído em Arton foi obra de algum inventor aventureiro, capaz de produzir engenhocas miraculosas que rivalizam com a própria magia. Para empreendimentos mais comuns, porém importantes — casas, castelos, estradas, pontes, muralhas... —, bastam construtores bem treinados e esforçados. Você estava satisfeito labutando com as próprias mãos ou liderando outros trabalhadores, erguendo edificações, gerenciando forjas, usando suas habilidades para tornar vidas melhores. Poderia fazer isso para sempre, feliz e produtivo. O que aconteceu? Um gigante derrubou sua muralha? Um dragão destruiu seu castelo? Como acabou em um grupo de aventureiros?</p>
+        <p><b>Itens: </b> Instrumentos de pedreiro ou uma ferramenta pesada (mesmas estatísticas de uma maça ou lança, a sua escolha).</p>
+        <p><b>Benefícios.</b> Você é treinado em Fortitude e Ofício (pedreiro). Além disso, sabe encontrar pontos fracos em construções e estruturas. Pode pagar 2 PM para você ou um aliado em alcance curto ignorar 5 pontos da redução de dano por uma cena.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 113,
+        nome: 'Contrabandista',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Itens mágicos malditos. Relíquias roubadas. Armas de pólvora. Monstros para a Arena de Valkaria. Matéria vermelha. No passado, você foi alguém que fez “mercadorias” como essas chegarem a seus compradores. Atravessava o continente sob disfarce, enganando ou subornando as patrulhas para ignorarem sua carga proibida. Trabalho perigoso, mas lucrativo. Um dia, as coisas não saíram como deveriam. Você, ou alguém importante, pagou um preço terrível. Então você conheceu uma carreira ainda mais perigosa e ainda mais lucrativa, mas desta vez abençoada pelos deuses.</p>
+        <p><b>Itens: </b> Uma arma de fogo, ou 10 doses de venenos, com preço total de até T$ 500.</p>
+        <p><b>Benefícios.</b> Você é treinado em Enganação e Ladinagem e recebe +5 em testes de Ladinagem para ocultar itens em si mesmo ou em veículos. Além disso, sua capacidade de carga aumenta em 2 espaços.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 114,
+        nome: 'Coureiro',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você era um artesão especializado no tratamento e modelagem de peles e couros, criando armaduras, roupas, botas e acessórios essenciais para viajantes, caçadores e nobres. Após atenta seleção de peles, provenientes de animais comuns ou monstros, vinha o cuidadoso processo de curtição. Você trabalhava o material com precisão, usando facas, agulhas e moldes. Além de vestimentas, também fabricava itens de uso diário como algibeiras, bolsas, selas e cintos, que combinam durabilidade e estilo. Aquele dia, quando aventureiros trouxeram couro de lagarto-trovão para confeccionar uma armadura, foi desafiador. E também interessante...</p>
+        <p><b>Itens: </b> Faca de corte (como uma adaga, mas com dano de corte), instrumentos de coureiro, T$ 100 em itens alquímicos.</p>
+        <p><b>Benefícios.</b> Você é treinado em Fortitude e Ofício (coureiro). Além disso, pode gastar 10 minutos e T$ 10 para trabalhar em uma armadura de couro (incluindo couro batido, gibão de peles e brunea) e aumentar a Defesa dela em +1 e reduzir sua penalidade de armadura em –2 por um dia.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 115,
+        nome: 'Chef Hynne',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você cozinhava em algum castelo, taverna, navio ou quartel militar, preparando refeições para nobres, guerreiros, marujos e viajantes. Mas, mais do que apenas preparar comida, você mantinha viva a tradição gastronômica de Hongari, o antigo Reino dos Hynne, engolfado por Aslothia. Mesmo que você não seja um hynne, reconhece o valor (e o sabor!) dessa culinária única em Arton. Entre caldeirões fumegantes e facas afiadas, seus pratos não apenas alimentavam, mas revitalizavam, às vezes incluindo poções ou encantamentos sutis. Sua habilidade não apenas garantia a satisfação de seus senhores, mas também influenciava alianças e eventos — uma refeição bem servida podia selar pactos ou preparar heróis para batalhas épicas. Heróis... sim, você também poderia ser um</p>
+        <p><b>Itens: </b> Cutelo (mesmas estatísticas de uma foice), instrumentos de cozinheiro aprimorado.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro). Quando prepara um prato especial, seu benefício dura um dia adicional (se for um benefício com uso diário, ele pode ser usado novamente nesse dia).</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 116,
+        nome: 'Escriba',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Seu antigo trabalho era copiar documentos para preservar textos religiosos, literários, científicos e legais — em Arton, escribas são essenciais para a disseminação de conhecimento e cultura, incentivados pela igreja de Tanna-Toh. Trabalhando em um mosteiro, biblioteca ou corte de nobres, você transcrevia manuscritos com precisão e habilidade, além de os embelezar com iluminuras e decorações. Você também tratava pergaminhos e papiros, corrigia erros e traduzia obras para diferentes línguas, mostrando atenção aos detalhes, paciência e profundo conhecimento da língua e caligrafia. Um dia, após ler muitas histórias de aventura, decidiu ser protagonista em vez de apenas um figurante.</p>
+        <p><b>Itens: </b> Instrumentos de escriba, organizador de pergaminhos, uma coleção de livros à sua escolha.</p>
+        <p><b>Benefícios.</b> Você é treinado em Conhecimento e Ofício (escriba) e recebe o poder de bardo Lendas e Histórias (Tormenta20, p. 45). Se receber esse poder novamente, recebe um bônus de +5 ao rolar novamente um teste usando seu efeito.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 117,
+        nome: 'Espião',
+        regiao: 'Incomum',
+        descricao: `
+        <p>No passado, sua lealdade pertencia secretamente a algum governo, exército, igreja, culto, guilda ou patrono poderoso, talvez até mesmo um vilão. Você fingia ser aliado daqueles que espionava, enviando relatórios regulares sobre suas atividades e segredos. Fazia isso por acreditar ser a coisa certa, ou por dinheiro, ou forçado por seu patrono — através de controle mental, chantagem ou um refém. Um dia foi desmascarado, ou traído por seu patrono, ou apenas desistiu. Não voltaria a confiar em ninguém por muito tempo, até acabar viajando com aventureiros. São seus primeiros amigos leais. Mas eles sabem sobre seu passado?</p>
+        <p><b>Itens: </b> Estojo de disfarces, gazua, luneta, três doses de cosmético.</p>
+        <p><b>Benefícios.</b> Você é treinado em Enganação, Além disso, escolha uma classe na qual você não tenha níveis. Para propósitos de escolher poderes de classe, você conta como um personagem de 1º nível da classe escolhida.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 118,
+        nome: 'Ferreiro Guerreiro',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você participou de uma das guerras na história recente de Arton, mas não como combatente. Você forjava armas, armaduras e ferramentas para guerreiros, soldados, oficiais e nobres. Sua rotina começava antes do sol nascer, acendendo a forja e moldando o metal incandescente com golpes precisos de seu martelo. Às vezes lidava com materiais raros, como adamante, mitral ou aço-rubi. Entre faíscas e o som do metal sendo trabalhado, não produzia apenas instrumentos de combate, mas também itens cotidianos como ferraduras e pregos, que também salvam vidas e podem decidir batalhas. Muitas vezes também foi visitado por heróis, para informar sobre armas lendárias ou reparar seus equipamentos. Até que, um dia, decidiu acompanhá-los.</p>
+        <p><b>Itens: </b> Instrumentos de armeiro, martelo leve.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro). Além disso, recebe +2 em rolagens de dano com martelos e marretas de qualquer tipo.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 119,
+        nome: 'Freira',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Mesmo sem os milagres dos clérigos e frades você se dedicava ao serviço espiritual, caridade e proteção dos vulneráveis. Vivendo em um convento isolado ou abadia fortificada, mantinha uma rotina de orações, cultivo de ervas medicinais, preparo de remédios e cuidado de enfermos. Muitas vezes também atuava como conselheira para heróis em busca de redenção ou orientação. E, em tempos de crise, chegava a defender o convento contra ameaças, até recorrendo a relíquias sagradas e antigos rituais para proteger os inocentes. Considerando sua vocação, bastou um pequeno passo para se reunir a aventureiros e se tornar uma campeã do bem.</p>
+        <p><b>Itens: </b> Maleta de medicamentos, manto eclesiástico, símbolo sagrado.</p>
+        <p><b>Benefícios.</b> Você é treinada em Cura. Quando faz um teste de perícia para ajudar, você pode gastar 1 PM para aumentar o bônus da ajuda em +1d4 e, quando usa um efeito de cura, pode gastar 1 PM para aumentar esse efeito em +1 dado do mesmo tipo.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 120,
+        nome: 'Goradista',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você tinha talento para preparar e decorar bolos e doces. Foi treinado por grandes mestres confeiteiros de Tragematum (a província do Império de Tauron antes conhecida como Hershire) ou talvez tenha vindo de lá! Você pode ter tido uma bela confeitaria em Valkaria ou Vectora, ou atuado em alguma cozinha palaciana preparando as mais belas sobremesas para jantares da nobreza. Tudo com base no mais saboroso e insubstituível ingrediente: gorad. Você era feliz, sempre buscando a excelência em cada gulodice, alegrando-se com a satisfação de seus convidados? Ou vivia frustrado, acreditando ser destinado a algo maior, mais importante? Talvez por isso, quando aqueles heróis foram recompensados com um banquete e ficaram maravilhados com suas guloseimas, você ficou tentado a servir-lhes mais vezes…</p>
+        <p><b>Itens: </b> Instrumentos de cozinheiro, T$ 36 em ingredientes para produzir gorad quente.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro) e, quando prepara um prato especial, pode gastar T$ 6 a mais para adicionar gorad a ele. Além de seus benefícios normais, um prato especial com gorad fornece 2 PM temporários por patamar do comensal.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 121,
+        nome: 'Insciente',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você nasceu em Wynlla, mas sem nenhuma capacidade de conjurar — um grande problema para aqueles que vivem no Reino da Magia. Considerado cidadão de segunda categoria por alguns (e menos que isso por muitos outros), você costumava viver na Parte Baixa da capital Sophand ou em guetos similares de outras cidades, ou ainda arriscando a sorte nos ermos infestados de elementais. De qualquer modo, você teve que aprender a viver sem qualquer auxílio mágico. Mas e depois? Seria um insciente para sempre, brandindo aço ou criando inventos? Ou superou essa limitação e agora sabe conjurar?</p>
+        <p><b>Itens: </b> Uma arma simples ou ferramenta a sua escolha de até T$ 100.</p>
+        <p><b>Benefícios.</b> Você é treinado em Sobrevivência e recebe resistência a magia +5.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 122,
+        nome: 'Interrogador',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Na verdade, você foi algo bem pior — e fez coisas bem piores — que um simples “interrogador”. Coisas cruéis que tiram seu sono à noite, coisas que você gostaria de deixar no passado, mas sempre voltam para assombrá-lo. Você serviu a um dos poderes malignos de Arton, como os finntroll, os sszzaazitas ou mesmo a Tormenta. Ser um aventureiro heroico, proteger os reinos, salvar o mundo... talvez isso ajude a compensar todos aqueles atos terríveis perante os deuses. Você ora a esses mesmos deuses para nunca reencontrar alguém que tenha “interrogado”, ainda que muitos não estejam mais neste mundo. Mas, pensando bem, existem os osteon...</p>
+        <p><b>Itens: </b> Um ou mais itens somando T$ 100 que pertenciam a antigas vítim... ahem, interrogados.</p>
+        <p><b>Benefícios.</b> Você é treinado em Intimidação e Investigação e recebe +1 na margem de ameaça contra criaturas feridas (PV abaixo do total), pois aprendeu a bater onde mais dói.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 123,
+        nome: 'Ladrão de Túmulos',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Não a mais digna das profissões, mas se tornaria especialmente popular no pós-guerra. Você percorreu antigos campos de batalha e outros lugares de grande morticínio, coletando pertences daqueles que não precisavam mais. Ou ainda, você ousou literalmente saquear sepulturas consagradas aos deuses — ou seja, não apenas perturbou os mortos, mas também certos espíritos muito mais poderosos! Ainda bem que escolheu se tornar aventureiro, com certeza uma vida bem menos arriscada. Chega a ser surpresa você nunca ter sido assombrado ou amaldiçoado. Ainda.</p>
+        <p><b>Itens: </b> Uma pá (mesmas estatísticas de uma lança) e um pé de cabra.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ladinagem e Sobrevivência e recebe +2 na Defesa e em testes de perícia contra mortos-vivos. Além disso, recebe redução de trevas 5 (ou, se for um morto-vivo, recupera +1 PV por dado de dano de trevas).</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 124,
+        nome: 'Menestrel',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Nem todo aquele disposto a cantar e dedilhar instrumentos está também disposto a viajar aos confins de Arton, rastejar em masmorras perigosas e receber baforadas de dragões. Muitos ficam mais que satisfeitos ao alegrar trabalhadores cansados em tavernas, animar festividades coloridas ou entreter nobres entediados, sem riscos maiores que uma ocasional fruta ou caneca arremessada. Isto é, assim você acreditava. Antes de conhecer aquele grupo de aventureiros, empolgar-se com suas histórias, encantar-se com a arcanista élfica de cabelos dourados como — ahem, enfim, você encontrou motivação para acompanhá-los. Como bardo? Talvez, talvez não. Brandir aquele machado não parece tão difícil...</p>
+        <p><b>Itens: </b> Um instrumento musical de até T$ 35 à sua escolha.</p>
+        <p><b>Benefícios.</b> Você é treinado em Atuaçãoe recebe um poder de música de bardo, escolhido entre Balada Fascinante, Canção Assustadora e Melodia Curativa.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 125,
+        nome: 'Mensageiro',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Sempre que meios mágicos não estavam disponíveis, você assumia a tarefa de transportar informações vitais entre reinos, cidades e vilarejos, muitas vezes arriscando a vida em territórios perigosos. Levando cartas, pergaminhos, mensagens verbais, você percorria longas distâncias em embarcações, a cavalo ou a pé. Precisava ser rápido, discreto e corajoso, enfrentando criaturas hostis, bandidos e terrenos traiçoeiros — garantindo que ordens de guerra, tratados de paz ou pedidos de socorro chegassem ao destino, preservando alianças e evitando desastres. Pensando bem, isso não é muito diferente de ser um aventureiro...</p>
+        <p><b>Itens: </b> Cavalo com sela, mochila de aventureiro, traje de viajante.</p>
+        <p><b>Benefícios.</b> Você recebe +3m em seu deslocamento e +2 em testes de resistência.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 126,
+        nome: 'Náufrago',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você foi passageiro, tripulante ou capitão a bordo de uma embarcação — até que, durante uma longa viagem, esta naufragou. Teria sido uma tempestade, abordagem de piratas, ataque de elfos-do-mar, ou mesmo um kaiju? Você sobreviveu, mas acabou isolado em alguma terra remota. Praticamente sem recursos exceto por alguns detritos de naufrágio, precisou achar maneiras de obter sustento e abrigo, além de evitar predadores e tribos selvagens. Não foram tempos fáceis, mas você viveu o bastante para ser encontrado e resgatado. Graças aos deuses, aqueles aventureiros apareceram! Quem sabe, usando as habilidades que aprendeu, você também poderia ser um...?</p>
+        <p><b>Itens: </b> Arco curto, 20 flechas, uma bola (ou outro objeto simples) com uma cara pintada e nome de gente.</p>
+        <p><b>Benefícios.</b> Você recebe +5 PV e +2 PM. Além disso, uma vez por cena pode gastar 2 PM para receber um dos seguintes benefícios até o fim da cena: treinamento em uma perícia; proficiência em uma arma, armadura ou escudo; usar uma ferramenta no lugar de outra.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 127,
+        nome: 'Padeiro',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você começava sua jornada ainda antes do amanhecer, acendendo o forno de pedra com madeira encantada para assar pães, bolos e tortas que alimentavam a comunidade. Amassava farinhas com trigo dourado de campos abençoados por Azgher ou frutas colhidas sob as estrelas de Tenebra. Em sua padaria, moradores e aventureiros se reuniam para comprar suas delícias e compartilhar notícias. Você também preparava iguarias especiais para festivais, ou até encomendas secretas, como pães encantados para fortalecer guerreiros, ou aquela torta destinada a envenenar um inimigo... Ah sim, foi por isso que acabou fugindo e virando aventureiro!</p>
+        <p><b>Itens: </b> Instrumentos de Ofício (cozinheiro), rolo de massa (mesmas estatísticas de uma clava).</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro). Além disso, sua profissão fortificou seus braços! Você recebe +1 em rolagens de dano com armas de impacto e pode substituir testes de Atletismo por testes de Ofício (cozinheiro).</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 128,
+        nome: 'Pedinte',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você sobrevivia às margens da sociedade, perambulando por ruas movimentadas em cidades como Valkaria, Crovandir ou Zakharin. Muitas vezes ignorado ou desprezado, dependia da caridade de transeuntes e sobras de festividades locais para obter comida e abrigo. Sua rotina era marcada pela incerteza, enfrentando mau tempo, fome e, às vezes, criaturas que espreitavam nas ruas sombrias. Mas você era astuto, ouvia segredos murmurados nas tavernas e becos, testemunhava eventos cruciais despercebidos pelos outros. Um dia, acabou obtendo alguma informação valiosa que mudou sua vida, levando à sua transformação em aventureiro. </p>
+        <p><b>Itens: </b> Andrajos, esmolas que guardou (1 bálsamo restaurador e 1 essência de mana).</p>
+        <p><b>Benefícios.</b> Você é muito discreto, recebendo +2 em Enganação e Furtividade. Além disso, aprendeu a aproveitar o máximo de cada recurso e a partilhar do pouco que tinha com seus companheiros em dificuldade. Sempre que usa um alimento, preparado alquímico ou poção com efeito aleatório, pode rolar seu efeito duas vezes e usar o melhor resultado, ou pode dividir o item com um aliado adjacente (ele também gasta a ação para consumi-lo e recebe o benefício normal, mas você gasta apenas um item).</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 129,
+        nome: 'Pescador',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Ofício muito comum nas áreas costeiras de Arton, bem como nas muitas regiões cortadas pelo Rio dos Deuses e outros grandes cursos d’água. Utilizando redes, linhas e anzóis de materiais naturais, você pescava para consumo próprio, para sua família ou para comércio. Enfrentava longas horas em condições adversas nas margens ou a bordo de barcos. Dizem que pescadores têm muita paciência, mas a sua talvez tenha se esgotado quando aqueles elfos-do-mar roubaram sua pesca, ou quando os homens-piranha afundaram seu barco, ou quando os lursh-lyin destruíram sua aldeia. Chega, para tudo há limite!</p>
+        <p><b>Itens: </b> Bolsa cheia de minhocas, instrumentos de pescador.</p>
+        <p><b>Benefícios.</b> Você é treinado em Ofício (pescador) e Sobrevivência. Além disso, você sabe aguardar o instante exato de puxar o anzol. Recebe +2 em Iniciativa e, sempre que prepara uma ação (Tormenta20, p. 234), recebe +2 em testes para executá-la.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 130,
+        nome: 'Servo',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Você foi um servo em algum castelo ou palácio nas áreas mais tradicionais de Arton, atendendo às necessidades de nobres, magos ou cavaleiros. Suas funções variavam desde a limpeza e manutenção dos aposentos até a preparação de refeições e cuidado com animais. Mas houve vezes em que foi incumbido de missões mais perigosas, como acompanhar seu senhor em viagens ou buscar ingredientes raros em florestas. Também era frequentemente o primeiro a perceber intrigas, segredos e perigos iminentes, assim protegendo seus mestres. Então, esses tais aventureiros pensam que são muito fortes? Hora de mostrar a eles!</p>
+        <p><b>Itens: </b> Balde e vassoura (mesmas estatísticas de um bordão), tabardo de seu patrono.</p>
+        <p><b>Benefícios.</b>  Você é treinado em Diplomacia e Ofício (serviçal). Além disso, recebe +2 em testes de Diplomacia e Enganação contra alvos que tenham status ou posição superior à sua (ou que acreditam ter) e pode substituir testes de Nobreza por testes de Ofício (serviçal).</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      },
+      {
+        id: 131,
+        nome: 'Suporte de Tropas',
+        regiao: 'Incomum',
+        descricao: `
+        <p>Exércitos em marcha não são formados apenas por combatentes. Muitas vezes são seguidos por grupos de mercadores, cozinheiros, costureiros, curandeiros, até coveiros que lidam com (ou saqueiam) os cadáveres. Estes seguidores são apreciados pelos soldados, por seu apoio às tropas no campo de batalha — mas podem ser desprezados pelos oficiais, considerados parasitas oportunistas. Em menor escala, também existem aqueles que acompanham aventureiros à distância, esperando colher seus espólios ou ajudar quando houver oportunidade. Você foi alguém assim, até se cansar de seguir e resolver juntar-se ao grupo.</p>
+        <p><b>Itens: </b> Equipamento de viagem, instrumentos de ofício, maleta de medicamentos.</p>
+        <p><b>Benefícios.</b> Sempre que faz um teste para ajudar, o bônus que você fornece aumenta em +2. Além disso, quando flanqueia um inimigo, o bônus que você e seus aliados recebem em testes de ataque aumenta para +4.</p>`,
+        referencias:Referencia.HEROIS ,
+        paginas:''
+      }
     ];
   }
 }
