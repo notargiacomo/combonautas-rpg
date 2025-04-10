@@ -67,6 +67,12 @@ export class RacaService extends AbstractService {
                 responseType: 'text',
               })
               .subscribe((historia) => (raca.historia = historia));
+
+              this.http
+              .get(`assets/doc/${raca.nome_arquivo_poderes_gerais}.txt`, {
+                responseType: 'text',
+              })
+              .subscribe((poderes_gerais) => (raca.poderes_gerais = poderes_gerais));
           });
   
           return filtrados;

@@ -1,0 +1,16 @@
+<div class="row">
+    
+    <div class="col-sm-6 text-justify">
+        <p><b>Criança da Luz.</b> O sangue extraplanar é mais forte em você. Seu bônus racial em Diplomacia e Intuição aumenta para +5 e você recebe redução de eletricidade e frio 5.</p>
+        <p><b>Familiar de Luz.</b> Seu familiar se transforma em uma criatura celestial. Além dos benefícios que ele já fornecia, seu familiar se torna imune a dano de luz e, sempre que você lança uma magia que gere um efeito de luz, recebe +1 PM para gastar em aprimoramentos. Pré-requisito: possuir um familiar.</p>
+        <p><b>Tradição Perdida.</b> Membros de sua raça sabem conjurar magias de formas diferentes das tradições conhecidas. Escolha um atributo (Força, Destreza, Constituição, Inteligência, Sabedoria ou Carisma). Você soma o atributo escolhido no seu total de PM, em vez do atributo determinado por sua classe. Pré-requisitos: não humano, habilidade Magias.</p>
+        <p><I>Exemplo 1:</I> Thorvak é um anão feiticeiro cujo poder não provém de uma personalidade poderosa, e sim de sua resistência pétrea. Ele soma sua Constituição em vez de Carisma no seu total de PM.</p> 
+        <p><I>Exemplo 2:</I> graças à dança ancestral praticada pelos membros de sua família, a maga elfa Thilanna sabe realizar gestos e sinais velozes capazes de conjurar magias arcanas. Ela soma Destreza em vez de Inteligência no seu total de PM. </p>
+        <p><I>Exemplo 3:</I> o minotauro Kardus é um clérigo de Arsenal, que rosna e flexiona os músculos poderosos para impressionar o Deus da Guerra e receber sua bênção. Ele soma Força em vez de Sabedoria no seu total de PM.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+    <p><b>Asas de Aço.</b> Suas asas são sobrenaturalmente resistentes. Cada asa fornece +1 na Defesa (cumulativo) e pode ser usada como uma arma natural (dano 1d4, crítico x2, impacto). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com cada asa. Quando usa uma asa para atacar, você perde seu bônus na Defesa até seu próximo turno. Você não pode usar este poder enquanto estiver usando as asas para voar. Pré-requisito: harpia, kallyanach (com Asas Dracônicas), pteros, suraggel (com Asas Extraplanares).</p>
+        <p><b>Asas Extraplanares.</b> Você desenvolve um par de asas adequado à sua herança planar — normalmente, emplumadas se você for um agellus ou coriáceas se você for um sulfure, embora isso possa mudar. Você pode gastar 1 PM por rodada para voar com deslocamento de 15m. Enquanto estiver voando dessa forma, você fica vulnerável. Pré-requisito: 5º nível de personagem.</p>
+        <p><b>Tradição Perdida Aprimorada.</b> Seu atributo-chave para lançar magias passa a ser o atributo escolhido pelo poder Tradição Perdida. Pré-requisito: Tradição Perdida.</p>
+    </div>
+</div>

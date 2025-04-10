@@ -9,8 +9,10 @@ export class Raca {
   tipo?: string;
   nome_arquivo_descricao?: string;
   nome_arquivo_historia?: string;
+  nome_arquivo_poderes_gerais?: string;
   descricao?: string;
   historia?: string;
+  poderes_gerais?: string;
   tamanho?: string;
   imagem?: string;
   sentidos?: string[];
