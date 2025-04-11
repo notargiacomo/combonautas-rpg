@@ -578,3 +578,11 @@ tr.element-row:not(.example-expanded-row):active {
   width: max-content !important;
   max-width: max-content !important;
 }
+
+.mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
+  background-color: white !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: white !important;
+}
