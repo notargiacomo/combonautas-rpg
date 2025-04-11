@@ -166,7 +166,7 @@ b {
   // font-family: "Source Sans 3", serif !important;
   font-family: "Oswald" !important;
   font-size: 20pt !important;
-  color: rgb(120, 80, 160);
+  color: white;
   background-color: rgb(45, 35, 60);
 }
 
@@ -175,13 +175,14 @@ b {
 }
 
 .mat-mdc-card-content .mdc-tab__text-label {
-  color: black !important;
+  color: white !important;
 }
 
 .mat-mdc-card-content .mat-mdc-tab-header {
   border-radius: 10px !important; /* Arredonda os cantos */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  background-color: rgb(120, 80, 160);
+  background-color: rgb(45, 35, 60);
+  color: white !important;
 }
 
 .mat-mdc-card {
@@ -203,8 +204,8 @@ b {
 }
 
 .mat-mdc-card-content {
-  background-color: rgb(200, 50, 50) !important;
-  color: rgb(240, 240, 245);
+  background-color: rgb(120, 80, 160) !important;
+  color: rgb(240, 240, 245) !important;
   max-height: 600px !important; /* Defina a altura máxima do card */
   overflow-y: auto !important; /* Habilita o scroll vertical */
   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
@@ -409,7 +410,7 @@ tr.element-row:not(.expanded-row):active {
 
 .mat-mdc-dialog-surface .card-padrao {
   background-color: rgb(240, 230, 245) !important;
-  color: black !important;
+  color: white !important;
   /* Arredondamento */
   padding: 16px !important; /* Espaçamento interno */
 }
