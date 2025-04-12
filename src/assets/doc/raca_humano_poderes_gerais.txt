@@ -1,0 +1,9 @@
+<div class="row">    
+    <div class="col-sm-6 text-justify">
+        <p><b>Citadino.</b> Você foi criado em uma metrópole, onde se acostumou a lidar com várias pessoas — mas também se acostumou às facilidades da civilização. Você recebe +2 em testes de perícias baseadas em Carisma (exceto Adestramento), mas sofre –2 em Fortitude e Sobrevivência.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Estilo Clássico.</b> Enquanto estiver empunhando uma espada e um escudo, você recebe +1 nas rolagens de dano com sua arma e +1 na Defesa.</p>
+        <p><b>Comandar Aprimorado.</b> Quando usa Comandar, você pode gastar 2 PM (em vez de 1) para fornecer um bônus de +2 (em vez de +1). Pré-requisitos: Car 2, Comandar.</p>
+    </div>
+</div>
