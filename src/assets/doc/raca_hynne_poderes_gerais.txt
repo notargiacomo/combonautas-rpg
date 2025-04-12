@@ -1,0 +1,10 @@
+<div class="row">    
+    <div class="col-sm-6 text-justify">
+        <p><b>Citadino.</b> Você foi criado em uma metrópole, onde se acostumou a lidar com várias pessoas — mas também se acostumou às facilidades da civilização. Você recebe +2 em testes de perícias baseadas em Carisma (exceto Adestramento), mas sofre –2 em Fortitude e Sobrevivência.</p>
+        <p><b>Golpe no Joelho.</b> Se você fizer um ataque corpo a corpo contra uma criatura maior que você enquanto ocupa o mesmo espaço que ela, o dano desse ataque aumenta em um passo e você recebe +2 na margem de ameaça. Pré-requisito: Entre as Pernas.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Entre as Pernas.</b> Você pode ocupar o mesmo espaço de criaturas duas categorias de tamanho maiores que você (em vez de três). Enquanto estiver ocupando o mesmo espaço que uma criatura maior que você, ataques contra você têm 25% de chance de acertar a criatura maior (inclusive ataques feitos pela própria criatura!). Pré-requisito: treinado em Acrobacia.</p>
+        <p><b>Valentia Nata.</b> Seu povo não tem medo. Nem juízo. Você recebe imunidade a medo e +2 em Iniciativa.</p>
+    </div>
+</div>

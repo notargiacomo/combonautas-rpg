@@ -1,0 +1,15 @@
+<div class="row">    
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida Aprimorada.</b> Seu atributo-chave para lançar magias passa a ser o atributo escolhido pelo poder Tradição Perdida. Pré-requisito: Tradição Perdida.</p>
+        <p><I>Exemplo 1:</I> Thorvak é um anão feiticeiro cujo poder não provém de uma personalidade poderosa, e sim de sua resistência pétrea. Ele soma sua Constituição em vez de Carisma no seu total de PM.</p> 
+        <p><I>Exemplo 2:</I> graças à dança ancestral praticada pelos membros de sua família, a maga elfa Thilanna sabe realizar gestos e sinais velozes capazes de conjurar magias arcanas. Ela soma Destreza em vez de Inteligência no seu total de PM. </p>
+        <p><I>Exemplo 3:</I> o minotauro Kardus é um clérigo de Arsenal, que rosna e flexiona os músculos poderosos para impressionar o Deus da Guerra e receber sua bênção. Ele soma Força em vez de Sabedoria no seu total de PM.</p>
+        <p><b>Arma Natural Aprimorada.</b> Escolha uma de suas armas naturais fornecidas por raça. O dano dessa arma aumenta em um passo e sua margem de ameaça aumenta em +1. Você pode escolher este poder outras vezes para armas naturais diferentes. Pré-requisito: arma natural fornecida por uma habilidade de raça.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida.</b> Membros de sua raça sabem conjurar magias de formas diferentes das tradições conhecidas. Escolha um atributo (Força, Destreza, Constituição, Inteligência, Sabedoria ou Carisma). Você soma o atributo escolhido no seu total de PM, em vez do atributo determinado por sua classe. Pré-requisitos: não humano, habilidade Magias.</p>
+        <p><b>Asas de Aço.</b> Suas asas são sobrenaturalmente resistentes. Elas fornecem +2 na Defesa e podem ser usadas como armas naturais (dano 1d4 cada, crítico x2, impacto). Uma vez por rodada, quando usa a ação agredir para atacar com uma arma, você pode gastar 1 PM por asa para fazer um ataque corpo a corpo extra com ela (desde que ela já não tenha sido usada na rodada). Note que o ataque inicial pode ser com uma asa (mas nesse caso você só pode fazer um ataque extra). Você não pode atacar com as asas se elas estiverem sendo usadas para voar. Se for um kallyanach ou suraggel, você precisa ter uma habilidade que forneça asas para escolher este poder.</p>
+        <p><b>Herança Erudita.</b> Seu sangue não carrega apenas a fagulha mágica que lhe dá poder, mas também conhecimento ancestral. Escolha uma perícia originalmente baseada em Inteligência. Você soma seu Carisma nessa perícia.</p>
+        <p><b>Arma Natural Hábil.</b> Escolha uma arma natural fornecida por raça com a qual você possa gastar 1 PM para fazer um ataque corpo a corpo extra quando faz a ação agredir. Você não precisa gastar pontos de mana para isso. Você continua só podendo fazer isso uma vez por rodada. Pré-requisito: arma natural fornecida por uma habilidade de raça.</p>
+    </div>
+</div>
