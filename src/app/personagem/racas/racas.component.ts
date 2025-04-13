@@ -75,7 +75,7 @@ import { RacaService } from '../../service/raca.service';
   ],
 })
 export class RacasComponent implements OnInit {
-  columnsToDisplay = ['nome', 'tipo', 'tamanho'];
+  columnsToDisplay = ['nome', 'tipo'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
   isExpandedRow = (index: number, row: any) => row === this.expandedElement;
