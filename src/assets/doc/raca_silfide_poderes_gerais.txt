@@ -1,0 +1,23 @@
+<div class="row">    
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida.</b> Membros de sua raça sabem conjurar magias de formas diferentes das tradições conhecidas. Escolha um atributo (Força, Destreza, Constituição, Inteligência, Sabedoria ou Carisma). Você soma o atributo escolhido no seu total de PM, em vez do atributo determinado por sua classe. Pré-requisitos: não humano, habilidade Magias.</p>
+        <p><I>Exemplo 1:</I> Thorvak é um anão feiticeiro cujo poder não provém de uma personalidade poderosa, e sim de sua resistência pétrea. Ele soma sua Constituição em vez de Carisma no seu total de PM.</p> 
+        <p><I>Exemplo 2:</I> graças à dança ancestral praticada pelos membros de sua família, a maga elfa Thilanna sabe realizar gestos e sinais velozes capazes de conjurar magias arcanas. Ela soma Destreza em vez de Inteligência no seu total de PM. </p>
+        <p><I>Exemplo 3:</I> o minotauro Kardus é um clérigo de Arsenal, que rosna e flexiona os músculos poderosos para impressionar o Deus da Guerra e receber sua bênção. Ele soma Força em vez de Sabedoria no seu total de PM.</p>
+        <p><b>Tradição Perdida Aprimorada.</b> Seu atributo-chave para lançar magias passa a ser o atributo escolhido pelo poder Tradição Perdida. Pré-requisito: Tradição Perdida.</p>
+        <p><b>Crescimento Feérico.</b> Você pode gastar uma ação de movimento e 1 PM para mudar para tamanho Pequeno e receber +1 em Força. A partir do patamar veterano, também pode mudar para tamanho Médio; nesse caso, recebe +2 em Força. Seu equipamento muda com você. A transformação dura pelo tempo que você quiser, mas você reverte ao tamanho normal se ficar inconsciente ou morrer. Voltar ao seu tamanho original é uma ação livre.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Glamour.</b> O mais icônico dos poderes feéricos, glamour é uma ilusão tão poderosa que gera efeitos reais. Escolha três magias de 1º círculo, arcanas ou divinas. Você pode lançar essas magias, com as seguintes mudanças:
+        <ul>
+        <li>Elas contam como magias de ilusão além de seus tipos normais (por exemplo, um glamour de Explosão de Chamas conta como uma magia de evocação e de ilusão).</li>
+        <li>Sempre que você lança uma magia de glamour que não pede testes de resistência, precisa rolar 1d6. Se rolar 1, a magia não funciona (mas você gasta os PM mesmo assim) e não pode mais lançar magias de glamour até o fim da cena.</li>
+        <li>Sempre que você lança uma magia de glamour que permite testes de resistência de Fortitude ou Reflexo, os alvos podem substituir os testes originais por Vontade. Além disso, se um alvo passar no teste de resistência, você não pode mais lançar magias de glamour até o fim da cena.</li>
+        </ul>
+        <p>Se você aprender uma magia de glamour novamente, pode lançá-la como uma magia normal ou de glamour. Nesse caso, ela sofre as mudanças acima, mas seu custo diminui em –1 PM.</p>
+        </p>
+        <p><b>Glamour Maior.</b> Você aprende mais três magias, de 1º ou 2º círculo, arcanas ou divinas, que pode lançar como magias de glamour (veja acima). Pré-requisitos: Glamour, 5º nível de personagem.</p>
+        <p><b>Sangue Mágico.</b> Você pode dar seu sangue para conjurar magias — literalmente! Uma vez por dia, você pode ganhar um número de PM a sua escolha, limitado pela sua Constituição. Por exemplo, se você possui Con 3, pode ganhar 1, 2 ou 3 PM. Se lançar uma magia no mesmo turno, os PM ganhos por este poder podem ultrapassar seu limite de PM por nível.</p>
+        <p><b>Vitalidade das Fadas.</b> Sua energia vital não provém de simples saúde física, mas de sua convicção, postura positiva e força de personalidade. Você soma seu Carisma em seus pontos de vida iniciais e recebe +1 PV por nível a partir do 2º.</p>
+    </div>
+</div>

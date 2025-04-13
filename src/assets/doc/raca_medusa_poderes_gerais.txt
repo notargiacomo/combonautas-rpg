@@ -1,0 +1,16 @@
+<div class="row">    
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida Aprimorada.</b> Seu atributo-chave para lançar magias passa a ser o atributo escolhido pelo poder Tradição Perdida. Pré-requisito: Tradição Perdida.</p>
+        <p><I>Exemplo 1:</I> Thorvak é um anão feiticeiro cujo poder não provém de uma personalidade poderosa, e sim de sua resistência pétrea. Ele soma sua Constituição em vez de Carisma no seu total de PM.</p> 
+        <p><I>Exemplo 2:</I> graças à dança ancestral praticada pelos membros de sua família, a maga elfa Thilanna sabe realizar gestos e sinais velozes capazes de conjurar magias arcanas. Ela soma Destreza em vez de Inteligência no seu total de PM. </p>
+        <p><I>Exemplo 3:</I> o minotauro Kardus é um clérigo de Arsenal, que rosna e flexiona os músculos poderosos para impressionar o Deus da Guerra e receber sua bênção. Ele soma Força em vez de Sabedoria no seu total de PM.</p>
+        <p><b>Magia Ofídica.</b> Para cada círculo de magia que você é capaz de lançar, a CD para resistir a seus efeitos de veneno aumenta em +1 e esses venenos causam +1 ponto de perda de vida por dado.</p>
+        <p><b>Veneno Aprimorado.</b> O veneno que você aplica com sua habilidade Natureza Venenosa passa a causar a perda de 2d12 PV. Pré-requisito: Con 1.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida.</b> Membros de sua raça sabem conjurar magias de formas diferentes das tradições conhecidas. Escolha um atributo (Força, Destreza, Constituição, Inteligência, Sabedoria ou Carisma). Você soma o atributo escolhido no seu total de PM, em vez do atributo determinado por sua classe. Pré-requisitos: não humano, habilidade Magias.</p>
+        <p><b>Coração de Pedra.</b> Você recebe +5 pontos de vida e é imune a petrificação.</p>
+        <p><b>Coro Sibilante.</b> Você pode gastar 1 PM para fazer suas serpentes ecoarem suas palavras. Até o fim da cena, você recebe +2 em testes de perícias originalmente baseadas em Carisma (exceto testes de ataque).</p>
+        <p><b>Olhar Petrificante.</b> Você pode gastar uma ação padrão e 3 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se a criatura falhar, fica lenta por 1d4 rodadas. Se já estiver lenta por este efeito, em vez disso fica petrificada permanentemente — ela e todo o seu equipamento se transformam em uma estátua inerte e sem consciência, com redução de dano 8 e os mesmos PV que ela tinha em vida. Se a estátua for quebrada, a criatura morrerá. Pré-requisito: 9º nível de personagem.</p>
+    </div>
+</div>

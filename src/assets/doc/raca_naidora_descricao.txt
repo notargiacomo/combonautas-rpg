@@ -1,0 +1,5 @@
+<h5>HABILIDADES DE RAÇA</h5>
+<p><b>Inteligência +2, Destreza +1, Constituição –1.</p></b>
+<p><b>Alma das Nuvens.</b> Você recebe resistência a encantamento +2.</p>
+<p><b>Asas Emplumadas.</b> Você pode gastar 1 PM por rodada para voar com deslocamento 12m. Enquanto está voando dessa forma, você recebe +2 na Defesa e em Reflexos.</p>
+<p><b>Sentidos Élficos.</b> Você recebe visão na penumbra e +2 em Misticismo e Percepção.</p>

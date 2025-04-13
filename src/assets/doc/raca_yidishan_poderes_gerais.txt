@@ -1,0 +1,11 @@
+<div class="row">    
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida Aprimorada.</b> Seu atributo-chave para lançar magias passa a ser o atributo escolhido pelo poder Tradição Perdida. Pré-requisito: Tradição Perdida.</p>
+        <p><I>Exemplo 1:</I> Thorvak é um anão feiticeiro cujo poder não provém de uma personalidade poderosa, e sim de sua resistência pétrea. Ele soma sua Constituição em vez de Carisma no seu total de PM.</p> 
+        <p><I>Exemplo 2:</I> graças à dança ancestral praticada pelos membros de sua família, a maga elfa Thilanna sabe realizar gestos e sinais velozes capazes de conjurar magias arcanas. Ela soma Destreza em vez de Inteligência no seu total de PM. </p>
+        <p><I>Exemplo 3:</I> o minotauro Kardus é um clérigo de Arsenal, que rosna e flexiona os músculos poderosos para impressionar o Deus da Guerra e receber sua bênção. Ele soma Força em vez de Sabedoria no seu total de PM.</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida.</b> Membros de sua raça sabem conjurar magias de formas diferentes das tradições conhecidas. Escolha um atributo (Força, Destreza, Constituição, Inteligência, Sabedoria ou Carisma). Você soma o atributo escolhido no seu total de PM, em vez do atributo determinado por sua classe. Pré-requisitos: não humano, habilidade Magias.</p>
+    </div>
+</div>

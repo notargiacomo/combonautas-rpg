@@ -1,0 +1,18 @@
+<div class="row">    
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida.</b> Membros de sua raça sabem conjurar magias de formas diferentes das tradições conhecidas. Escolha um atributo (Força, Destreza, Constituição, Inteligência, Sabedoria ou Carisma). Você soma o atributo escolhido no seu total de PM, em vez do atributo determinado por sua classe. Pré-requisitos: não humano, habilidade Magias.</p>
+        <p><I>Exemplo 1:</I> Thorvak é um anão feiticeiro cujo poder não provém de uma personalidade poderosa, e sim de sua resistência pétrea. Ele soma sua Constituição em vez de Carisma no seu total de PM.</p> 
+        <p><I>Exemplo 2:</I> graças à dança ancestral praticada pelos membros de sua família, a maga elfa Thilanna sabe realizar gestos e sinais velozes capazes de conjurar magias arcanas. Ela soma Destreza em vez de Inteligência no seu total de PM. </p>
+        <p><I>Exemplo 3:</I> o minotauro Kardus é um clérigo de Arsenal, que rosna e flexiona os músculos poderosos para impressionar o Deus da Guerra e receber sua bênção. Ele soma Força em vez de Sabedoria no seu total de PM.</p>
+        <p><b>Estirpe Arcana.</b> Você recebe +2 pontos de mana por patamar e +2 em Misticismo.</p>
+        <p><b>Magia Ofídica.</b> Para cada círculo de magia que você é capaz de lançar, a CD para resistir a seus efeitos de veneno aumenta em +1 e esses venenos causam +1 ponto de perda de vida por dado.</p>
+        <p><b>Quatro Braços.</b> Você possui um par de braços extras. Isso permite que você empunhe até quatro objetos, mas não fornece ações extras — por exemplo, você continua fazendo apenas um ataque com a ação agredir (mas veja Quadridestria).</p>
+    </div>
+    <div class="col-sm-6 text-justify">
+        <p><b>Tradição Perdida Aprimorada.</b> Seu atributo-chave para lançar magias passa a ser o atributo escolhido pelo poder Tradição Perdida. Pré-requisito: Tradição Perdida.</p>
+        <p><b>Fúria Natural.</b> Quando você é dominado pelos instintos selvagens, prefere usar suas armas naturais àquelas criadas pela civilização. Quando você está em fúria, recebe +2 em testes de ataque e rolagens de dano com armas naturais. Pré-requisitos: Fúria, arma natural fornecida por uma habilidade de raça.</p>
+        <p><b>Arma Natural Aprimorada.</b> Escolha uma de suas armas naturais fornecidas por raça. O dano dessa arma aumenta em um passo e sua margem de ameaça aumenta em +1. Você pode escolher este poder outras vezes para armas naturais diferentes. Pré-requisito: arma natural fornecida por uma habilidade de raça.</p>
+        <p><b>Arma Natural Hábil.</b> Escolha uma arma natural fornecida por raça coma qual você possa gastar 1 PM para fazer  um ataque corpo a corpo extra quando faz a ação agredir. Você não precisa gastar pontos de mana para isso. Você continua só podendo fazer isso uma vez por rodada. Pré-requisito: arma natural fornecida por uma habilidade de raça.</p>
+        <p><b>Quadridestria.</b> Você consegue agir com todos os seus braços ao mesmo tempo. Uma vez por rodada, quando usa o poder Estilo de Duas Armas, você pode gastar 2 PM para fazer um ataque com cada arma que estiver empunhando, desde que todas, com exceção de uma, sejam leves. Assim, se estiver empunhando três armas (e pelo menos duas forem leves), pode fazer três ataques; se estiver empunhando quatro armas (e pelo menos três forem leves), pode fazer quatro ataques. Poderes que modificam Estilo de Duas Armas também se aplicam aos seus braços extras. Por exemplo, Arma Secundária Grande permite que você use armas de uma mão em todos os seus braços e Ambidestria elimina a penalidade de todos os ataques. Pré-requisitos: Estilo de Duas Armas, Quatro Braços, 5º nível de personagem.</p>
+    </div>
+</div>
