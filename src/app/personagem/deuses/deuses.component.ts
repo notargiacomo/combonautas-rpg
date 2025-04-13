@@ -48,7 +48,7 @@ import { NgIf } from '@angular/common';
 export class DeusesComponent implements OnInit {
 
   deuses!: Deus[];
-  columnsToDisplay = ['nome', 'referencias', 'paginas'];
+  columnsToDisplay = ['nome'];
   form!: FormGroup;
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Deus | null;

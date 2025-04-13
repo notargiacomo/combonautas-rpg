@@ -55,7 +55,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 })
 export class ClassesComponent implements OnInit {
   classes!: Classe[];
-  columnsToDisplay = ['nome', 'referencias', 'paginas'];
+  columnsToDisplay = ['nome'];
   form!: FormGroup;
   referencias = Object.values(Referencia);
   checkboxState: { [key: string]: boolean } = {};

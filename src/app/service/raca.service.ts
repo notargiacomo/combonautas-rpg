@@ -37,13 +37,17 @@ export class RacaService extends AbstractService {
                   return true;
                 }
 
-                if(Array.isArray(valorRaca)){
+                if(Array.isArray(valorFiltro)){
                   return valorRaca.includes(valorFiltro);
                 }
   
                 // Se o valor do filtro é um número, compara numericamente
-                if (!isNaN(Number(valorFiltro)) && typeof valorRaca === 'number') {
+                if (!isNaN(Number(valorFiltro)) && typeof valorFiltro === 'number') {
                   return Number(valorFiltro) === valorRaca;
+                }
+
+                if (typeof valorFiltro === 'string') {
+                  return valorRaca.toUpperCase().includes(valorFiltro.toUpperCase());
                 }
   
                 // Comparação padrão (string, boolean etc.)

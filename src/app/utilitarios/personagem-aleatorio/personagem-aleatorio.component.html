@@ -18,24 +18,14 @@
                 <mat-panel-title>
                   <div class="container">
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-12">
                         <b>
                           Raça:
                           {{
-                            this.racas[racaIndex] === null
+                            this.racas === undefined ||
+                            this.racas[racaIndex] === undefined
                               ? ""
                               : this.racas[racaIndex].nome
-                          }}
-                        </b>
-                      </div>
-                      <div class="col-sm-6 d-flex justify-content-end">
-                        <b>
-                          {{
-                            this.racas[racaIndex] === null
-                              ? ""
-                              : this.racas[racaIndex].referencias +
-                                " | pag. " +
-                                this.racas[racaIndex].paginas
                           }}
                         </b>
                       </div>
@@ -47,21 +37,22 @@
                 <div
                   class="col-sm-9 text-justify"
                   [innerHTML]="
-                    this.racas[racaIndex] === null
+                    this.racas === undefined ||
+                    this.racas[racaIndex] === undefined
                       ? ''
                       : this.racas[racaIndex].descricao
                   "
                 ></div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 mt-2">
                   <mat-card>
                     <img
                       [src]="
-                        this.racas[racaIndex] === null
+                        this.racas[racaIndex] === undefined
                           ? ''
                           : this.racas[racaIndex].imagem
                       "
                       [alt]="
-                        this.racas[racaIndex] === null
+                        this.racas[racaIndex] === undefined
                           ? ''
                           : this.racas[racaIndex].nome
                       "
@@ -78,24 +69,14 @@
                 <mat-panel-title>
                   <div class="container">
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-12">
                         <b>
                           Origem:
                           {{
-                            this.origens[origemIndex] === null
+                            this.origens === undefined ||
+                            this.origens[origemIndex] === undefined
                               ? ""
                               : this.origens[origemIndex].nome
-                          }}
-                        </b>
-                      </div>
-                      <div class="col-sm-6 d-flex justify-content-end">
-                        <b>
-                          {{
-                            this.origens[origemIndex] === null
-                              ? ""
-                              : this.origens[origemIndex].referencias +
-                                " | pag. " +
-                                this.origens[origemIndex].paginas
                           }}
                         </b>
                       </div>
@@ -107,7 +88,8 @@
                 <div
                   class="col-sm-12 text-justify"
                   [innerHTML]="
-                    this.origens[origemIndex] === null
+                    this.origens === undefined ||
+                    this.origens[origemIndex] === undefined
                       ? ''
                       : this.origens[origemIndex].descricao
                   "
@@ -122,24 +104,14 @@
                 <mat-panel-title>
                   <div class="container">
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-12">
                         <b>
                           Classe:
                           {{
-                            this.classes[classeIndex] === null
+                            this.classes === undefined ||
+                            this.classes[classeIndex] === undefined
                               ? ""
                               : this.classes[classeIndex].nome
-                          }}
-                        </b>
-                      </div>
-                      <div class="col-sm-6 d-flex justify-content-end">
-                        <b>
-                          {{
-                            this.classes[classeIndex] === null
-                              ? ""
-                              : this.classes[classeIndex].referencias +
-                                " | pag. " +
-                                this.classes[classeIndex].paginas
                           }}
                         </b>
                       </div>
@@ -152,22 +124,24 @@
                   <mat-tab label="Classe">
                     <div class="content">
                       <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 mt-2">
                           <mat-card
                             *ngIf="
-                              this.classes[classeIndex] === null
+                              this.classes === undefined ||
+                              this.classes[classeIndex] === undefined
                                 ? ''
-                                : classes[classeIndex].tabela != null
+                                : classes[classeIndex].tabela != undefined
                             "
                           >
                             <img
                               [src]="
-                                this.classes[classeIndex] === null
+                                this.classes === undefined ||
+                                this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].tabela
                               "
                               [alt]="
-                                this.classes[classeIndex] === null
+                                this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].nome
                               "
@@ -177,27 +151,31 @@
                         <div
                           class="col-sm-6 text-justify"
                           [innerHTML]="
-                            this.classes[classeIndex] === null
+                            this.classes === undefined ||
+                            this.classes[classeIndex] === undefined
                               ? ''
                               : classes[classeIndex].descricao_classe
                           "
                         ></div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 mt-1">
                           <mat-card
                             *ngIf="
-                              this.classes[classeIndex] === null
+                              this.classes === undefined ||
+                              this.classes[classeIndex] === undefined
                                 ? ''
-                                : classes[classeIndex].imagem != null
+                                : classes[classeIndex].imagem != undefined
                             "
                           >
                             <img
                               [src]="
-                                this.classes[classeIndex] === null
+                                this.classes === undefined ||
+                                this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].imagem
                               "
                               [alt]="
-                                this.classes[classeIndex] === null
+                                this.classes === undefined ||
+                                this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].nome
                               "
@@ -215,7 +193,8 @@
                         pela classe, de acordo com o nível da mesma. Segue as
                         habilidades de
                         {{
-                          this.classes[classeIndex] === null
+                          this.classes === undefined ||
+                          this.classes[classeIndex] === undefined
                             ? ""
                             : classes[classeIndex].nome
                         }}.
@@ -228,7 +207,8 @@
                       <div
                         class="col-sm-12 text-justify"
                         [innerHTML]="
-                          this.classes[classeIndex] === null
+                          this.classes === undefined ||
+                          this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_habilidades
                         "
@@ -246,7 +226,8 @@
                       <div
                         class="col-sm-12 text-justify"
                         [innerHTML]="
-                          this.classes[classeIndex] === null
+                          this.classes === undefined ||
+                          this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_poderes
                         "
@@ -255,7 +236,8 @@
                   </mat-tab>
                   <mat-tab
                     *ngIf="
-                      this.classes[classeIndex] === null
+                      this.classes === undefined ||
+                      this.classes[classeIndex] === undefined
                         ? ''
                         : classes[classeIndex].ha_informacoes_adicionais
                     "
@@ -265,7 +247,8 @@
                       <div
                         class="col-sm-12 text-justify"
                         [innerHTML]="
-                          this.classes[classeIndex] === null
+                          this.classes === undefined ||
+                          this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_informacoes
                         "
@@ -274,7 +257,8 @@
                   </mat-tab>
                   <mat-tab
                     *ngIf="
-                      this.classes[classeIndex] === null
+                      this.classes === undefined ||
+                      this.classes[classeIndex] === undefined
                         ? ''
                         : classes[classeIndex].ha_complicacoes
                     "
@@ -299,7 +283,8 @@
                       <div
                         class="col-sm-12 text-justify"
                         [innerHTML]="
-                          this.classes[classeIndex] === null
+                          this.classes === undefined ||
+                          this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_complicacoes
                         "
@@ -308,7 +293,8 @@
                   </mat-tab>
                   <mat-tab
                     *ngIf="
-                      this.classes[classeIndex] === null
+                      this.classes === undefined ||
+                      this.classes[classeIndex] === undefined
                         ? ''
                         : classes[classeIndex].ha_poderes_db
                     "
@@ -328,7 +314,8 @@
                       <div
                         class="col-sm-12 text-justify"
                         [innerHTML]="
-                          this.classes[classeIndex] === null
+                          this.classes === undefined ||
+                          this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_poderes_db
                         "

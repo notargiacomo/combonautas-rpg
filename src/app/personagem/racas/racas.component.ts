@@ -193,7 +193,6 @@ export class RacasComponent implements OnInit {
 
   consultar() {
     let filtro = this.form.value;
-  
     // Corrigir tipos
     ['forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'].forEach(campo => {
       if (filtro[campo] !== null && filtro[campo] !== undefined && filtro[campo] !== '') {

@@ -28,7 +28,13 @@ header,
   border-bottom: 5px solid rgb(120, 80, 160); /* Moldura */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
+
+  @media (max-width: 768px) {
+    background-image: url("assets/img/preview-combonautas.png") !important;
+    height: 25% !important; // ajuste se quiser um banner menor no celular
+  }
 }
+
 
 .titulo_tormenta20 {
   width: 50% !important;
