@@ -6,12 +6,12 @@
 
 <p><b>Voz da Natureza.</b> Você pode falar com animais (como o efeito da magia Voz Divina) e aprende e pode lançar Acalmar Animal, mas só contra animais. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
 
-<p><b>Companheiro Silvestre.</b> Você possui um bogum (veja Ameaças de Arton, p. 190) que lhe acompanha como um parceiro iniciante. Se perder esse bogum, você recebe outro no início da próxima aventura.</p>
+<p><b>Companheiro Silvestre.</b> Você possui um espírito da natureza que o acompanha como um parceiro perseguidor iniciante. Alternativamente, se você tiver o suplemento Ameaças de Arton, pode receber um bogum inciante (p. 190). Se perder esse parceiro, você pode receber outro com uma cerimônia que exige 1 dia e T$ 100 em oferendas.</p>
 
-<p><b>Espírito Animal.</b> Você aprende e pode lançar Arma Espiritual. A arma convocada, entretanto, tem a forma um animal espiritual a sua escolha, que causa dano de um tipo apropriado à sua forma. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. <i><b>e</b></i></p>
+<p><b>Espírito Animal.</b> Você pode gastar uma ação de movimento e 2 PM para conjurar um espírito animal que o envolve e luta com você. Até o fim da cena, você não pode ser flanqueado e recebe 10 PV temporários e uma arma natural (dano 1d6, crítico x2, tipo a sua escolha entre corte, impacto ou perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com essa arma. Quando usa este poder, você pode gastar PM adicionais (custo total limitado por sua Sabedoria). Para cada PM adicional, os PV temporários aumentam em +5. <i><b>e</b></i></p>
 
-<p><b>Estouro da Trobada.</b> Você pode gastar uma ação completa e 2 PM para convocar uma manada enfurecida de trobos (ou qualquer outro animal da região) em um ponto a sua escolha em alcance curto com duração sustentada. A manada tem tamanho Grande e pode passar pelo espaço de outras criaturas. Você pode gastar uma ação de movimento para mover a manada 12m em linha
-reta. Criaturas pelas quais a manada passar sofrem 3d6 pontos de dano de impacto e ficam caídas (Fort CD Sab reduz à metade e evita a condição).</p>
+<p><b>Estouro da Trobada.</b> Você pode gastar uma ação completa e 2 PM para convocar uma manada de trobos (ou outro animal da região) em um ponto desocupado a sua escolha em alcance curto com duração sustentada. A manada é Enorme e pode passar pelo espaço de outras criaturas. Você pode gastar uma ação de movimento para mover a manada 12m em linha reta. Criaturas pelas quais ela passar sofrem 3d6 pontos de dano de impacto e ficam caídas (Fort CD Sab reduz à metade e evita a condição).</p>
 
-<p><b>O Sol que nos Aquece.</b> Você pode gastar uma ação padrão e 3 PM para intensificar a luz solar em uma esfera de 6m de raio em alcance médio. Nessa área, habilidades mágicas de fogo e relacionadas à plantas (como Controlar Plantas) custam –1 PM e criaturas com sensibilidade a luz
-sofrem o dobro da penalidade por ficarem ofuscadas. Você só pode usar este poder se estiver sob a luz do sol natural. <i><b>e</b></i></p>
+<p><b>O Sol que nos Aquece.</b> Você pode gastar uma ação padrão e 2 PM para projetar uma aura de luz solar em um raio de 6m. Nessa área, habilidades mágicas de fogo ou luz e relacionadas a plantas (como Controlar Plantas) custam –1 PM (cumulativo com outras reduções) e criaturas com sensibilidade a luz e mortos-vivos ficam vulneráveis.  <i><b>e</b></i></p>
+
+<p><b>Trilha Desimpedida.</b> Você aprende e pode lançar a magia Caminhos da Natureza. Se aprender essa magia, o custo dela diminui em –1 PM. <i><b>e</b></i></p>

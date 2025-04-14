@@ -6,11 +6,10 @@
 
 <p><b>Inimigo de Tenebra.</b> Seus ataques e habilidades causam +1d6 pontos de dano contra mortos-vivos. Quando você usa um efeito que gera luz, o alcance da iluminação dobra.</p>
 
-<p><b>Imolação Sagrada.</b> Você pode gastar uma ação padrão e 2 PM para cobrir-se com chamas até o fim da cena ou té ser submerso em água. Enquanto estiver coberto pelas chamas, uma vez por rodada, quando sofre um ataque corpo a corpo, você pode causar 2d6 + Sabedoria pontos de dano de fogo no atacante. <i><b>e</b></i></p>
+<p><b>Imolação Sagrada.</b> Você pode gastar uma ação padrão e 1 PM para cobrir seus braços com chamas com duração sustentada. Nesse estado, seus ataques corpo a corpo causam +1d6 pontos de dano de fogo.  <i><b>e</b></i></p>
 
-<p><b>O Sol que nos Aquece.</b> Você pode gastar uma ação padrão e 3 PM para intensificar a luz solar em uma esfera de 6m de raio em alcance médio. Nessa área, habilidades mágicas de fogo e relacionadas à plantas (como Controlar Plantas) custam –1 PM e criaturas com sensibilidade a luz
-sofrem o dobro da penalidade por ficarem ofuscadas. Você só pode usar este poder se estiver sob a luz do sol natural. <i><b>e</b></i></p>
+<p><b>O Sol que nos Aquece.</b> Você pode gastar uma ação padrão e 2 PM para projetar uma aura de luz solar em um raio de 6m. Nessa área, habilidades mágicas de fogo ou luz e relacionadas a plantas (como Controlar Plantas) custam –1 PM (cumulativo com outras reduções) e criaturas com sensibilidade a luz e mortos-vivos ficam vulneráveis. <i><b>e</b></i></p>
 
-<p><b>Proeminência Solar.</b> Suas magias que causam dano de fogo e que têm um teste de resistência recebem o seguinte aprimoramento: +1 PM: Criaturas que falhem na resistência ficam em chamas. Elas também ficam lentas até apagarem as chamas.</p>
+<p><b>Proeminência Solar.</b> Suas magias que causam dano de fogo e que têm um teste de resistência recebem o seguinte aprimoramento: +1 PM: criaturas que falhem na resistência ficam em chamas e lentas até apagarem as chamas.</p>
 
-<p><b>Resplendor Divino.</b> Você pode gastar 2 PM para gerar uma aura de luz solar com 9m de raio e duração até o fim da cena. Além de sofrer os efeitos de exposição à luz solar, criaturas dentro da aura perdem toda camuflagem por escuridão, incluindo mágica. <i><b>e</b></i></p>
+<p><b>Resplendor Divino.</b> Você pode gastar 2 PM para gerar uma aura de luz solar com 9m de raio que dura até o fim da cena. Além de sofrer os efeitos de exposição à luz, criaturas dentro da aura perdem toda camuflagem por escuridão e efeitos semelhantes (como da cobertura de sombras do aprimoramento da magia Escuridão). <i><b>e</b></i></p>

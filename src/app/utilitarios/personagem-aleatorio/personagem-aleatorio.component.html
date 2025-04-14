@@ -10,22 +10,62 @@
       <div class="row">
         <div class="col-sm-12">
           <mat-accordion>
-            <mat-expansion-panel
-              (opened)="panelOpenState.set(true)"
-              (closed)="panelOpenState.set(false)"
-            >
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <div class="container">
                     <div class="row">
                       <div class="col-sm-12">
                         <b>
-                          Raça:
+                          RAÇA:
                           {{
-                            this.racas === undefined ||
-                            this.racas[racaIndex] === undefined
-                              ? ""
-                              : this.racas[racaIndex].nome
+                          this.racas === undefined ||
+                          this.racas[racaIndex] === undefined
+                          ? ""
+                          : this.racas[racaIndex].nome?.toUpperCase()
+                          }}
+                        </b>
+                      </div>
+                    </div>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-tab-group>
+                <mat-tab label="Raça">
+                  <div class="row">
+                    <div class="col-sm-9 mt-4 text-justify" [innerHTML]="racas[racaIndex].descricao"></div>
+                    <div class="col-sm-3 mt-4 mb-4">
+                      <mat-card *ngIf="racas[racaIndex].imagem != null">
+                        <img [src]="racas[racaIndex].imagem" [alt]="racas[racaIndex].nome" />
+                      </mat-card>
+                    </div>
+                  </div>
+                </mat-tab>
+                <mat-tab label="Poderes Gerais">
+                  <div class="row">
+                    <div class="col-sm-12 mt-4 text-justify" [innerHTML]="racas[racaIndex].poderes_gerais"></div>
+                  </div>
+                </mat-tab>
+                <mat-tab label="História">
+                  <div class="row">
+                    <div class="col-sm-12 mt-4 text-justify" [innerHTML]="racas[racaIndex].historia"></div>
+                  </div>
+                </mat-tab>
+              </mat-tab-group>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <b>
+                          ORIGEM:
+                          {{
+                          this.origens === undefined ||
+                          this.origens[origemIndex] === undefined
+                          ? ""
+                          : this.origens[origemIndex].nome?.toUpperCase()
                           }}
                         </b>
                       </div>
@@ -34,84 +74,29 @@
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <div class="row">
-                <div
-                  class="col-sm-9 text-justify"
-                  [innerHTML]="
-                    this.racas === undefined ||
-                    this.racas[racaIndex] === undefined
-                      ? ''
-                      : this.racas[racaIndex].descricao
-                  "
-                ></div>
-                <div class="col-sm-3 mt-2">
-                  <mat-card>
-                    <img
-                      [src]="
-                        this.racas[racaIndex] === undefined
-                          ? ''
-                          : this.racas[racaIndex].imagem
-                      "
-                      [alt]="
-                        this.racas[racaIndex] === undefined
-                          ? ''
-                          : this.racas[racaIndex].nome
-                      "
-                    />
-                  </mat-card>
+                <div class="element-detail">
+                  <div class="row">
+                    <div
+                      class="col-sm-12 mt-4 text-justify"
+                      [innerHTML]="origens[origemIndex].descricao"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </mat-expansion-panel>
-            <mat-expansion-panel
-              (opened)="panelOpenState.set(true)"
-              (closed)="panelOpenState.set(false)"
-            >
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <div class="container">
                     <div class="row">
                       <div class="col-sm-12">
                         <b>
-                          Origem:
+                          CLASSE:
                           {{
-                            this.origens === undefined ||
-                            this.origens[origemIndex] === undefined
-                              ? ""
-                              : this.origens[origemIndex].nome
-                          }}
-                        </b>
-                      </div>
-                    </div>
-                  </div>
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <div class="row">
-                <div
-                  class="col-sm-12 text-justify"
-                  [innerHTML]="
-                    this.origens === undefined ||
-                    this.origens[origemIndex] === undefined
-                      ? ''
-                      : this.origens[origemIndex].descricao
-                  "
-                ></div>
-              </div>
-            </mat-expansion-panel>
-            <mat-expansion-panel
-              (opened)="panelOpenState.set(true)"
-              (closed)="panelOpenState.set(false)"
-            >
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <b>
-                          Classe:
-                          {{
-                            this.classes === undefined ||
-                            this.classes[classeIndex] === undefined
-                              ? ""
-                              : this.classes[classeIndex].nome
+                          this.classes === undefined ||
+                          this.classes[classeIndex] === undefined
+                          ? ""
+                          : this.classes[classeIndex].nome?.toLocaleUpperCase()
                           }}
                         </b>
                       </div>
@@ -125,61 +110,48 @@
                     <div class="content">
                       <div class="row">
                         <div class="col-sm-3 mt-2">
-                          <mat-card
-                            *ngIf="
+                          <mat-card *ngIf="
                               this.classes === undefined ||
                               this.classes[classeIndex] === undefined
                                 ? ''
                                 : classes[classeIndex].tabela != undefined
-                            "
-                          >
-                            <img
-                              [src]="
+                            ">
+                            <img [src]="
                                 this.classes === undefined ||
                                 this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].tabela
-                              "
-                              [alt]="
+                              " [alt]="
                                 this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].nome
-                              "
-                            />
+                              " />
                           </mat-card>
                         </div>
-                        <div
-                          class="col-sm-6 text-justify"
-                          [innerHTML]="
+                        <div class="col-sm-6 text-justify" [innerHTML]="
                             this.classes === undefined ||
                             this.classes[classeIndex] === undefined
                               ? ''
                               : classes[classeIndex].descricao_classe
-                          "
-                        ></div>
+                          "></div>
                         <div class="col-sm-3 mt-1">
-                          <mat-card
-                            *ngIf="
+                          <mat-card *ngIf="
                               this.classes === undefined ||
                               this.classes[classeIndex] === undefined
                                 ? ''
                                 : classes[classeIndex].imagem != undefined
-                            "
-                          >
-                            <img
-                              [src]="
+                            ">
+                            <img [src]="
                                 this.classes === undefined ||
                                 this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].imagem
-                              "
-                              [alt]="
+                              " [alt]="
                                 this.classes === undefined ||
                                 this.classes[classeIndex] === undefined
                                   ? ''
                                   : classes[classeIndex].nome
-                              "
-                            />
+                              " />
                           </mat-card>
                         </div>
                       </div>
@@ -193,26 +165,22 @@
                         pela classe, de acordo com o nível da mesma. Segue as
                         habilidades de
                         {{
-                          this.classes === undefined ||
-                          this.classes[classeIndex] === undefined
-                            ? ""
-                            : classes[classeIndex].nome
+                        this.classes === undefined ||
+                        this.classes[classeIndex] === undefined
+                        ? ""
+                        : classes[classeIndex].nome
                         }}.
                       </p>
                       <p>
                         (PS: Habilidades Mágicas são marcadas com o símbolo:
-                        <i><b>e</b></i
-                        >.)
+                        <i><b>e</b></i>.)
                       </p>
-                      <div
-                        class="col-sm-12 text-justify"
-                        [innerHTML]="
+                      <div class="col-sm-12 text-justify" [innerHTML]="
                           this.classes === undefined ||
                           this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_habilidades
-                        "
-                      ></div>
+                        "></div>
                     </div>
                   </mat-tab>
                   <mat-tab label="Poderes">
@@ -220,50 +188,37 @@
                       <h5>Poderes de Classe</h5>
                       <p>
                         (PS: Poderes Mágicos são marcados com o símbolo:
-                        <i><b>e</b></i
-                        >.)
+                        <i><b>e</b></i>.)
                       </p>
-                      <div
-                        class="col-sm-12 text-justify"
-                        [innerHTML]="
+                      <div class="col-sm-12 text-justify" [innerHTML]="
                           this.classes === undefined ||
                           this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_poderes
-                        "
-                      ></div>
+                        "></div>
                     </div>
                   </mat-tab>
-                  <mat-tab
-                    *ngIf="
+                  <mat-tab *ngIf="
                       this.classes === undefined ||
                       this.classes[classeIndex] === undefined
                         ? ''
                         : classes[classeIndex].ha_informacoes_adicionais
-                    "
-                    label="Informações Adicionais"
-                  >
+                    " label="Informações Adicionais">
                     <div class="row">
-                      <div
-                        class="col-sm-12 text-justify"
-                        [innerHTML]="
+                      <div class="col-sm-12 text-justify" [innerHTML]="
                           this.classes === undefined ||
                           this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_informacoes
-                        "
-                      ></div>
+                        "></div>
                     </div>
                   </mat-tab>
-                  <mat-tab
-                    *ngIf="
+                  <mat-tab *ngIf="
                       this.classes === undefined ||
                       this.classes[classeIndex] === undefined
                         ? ''
                         : classes[classeIndex].ha_complicacoes
-                    "
-                    label="Complicações"
-                  >
+                    " label="Complicações">
                     <div class="row">
                       <h5>Complicações</h5>
                       <p>
@@ -280,26 +235,20 @@
                         por serem um código ou voto que ele decidiu seguir. Tais
                         complicações vêm acompanhadas do símbolo <b>†</b>).
                       </p>
-                      <div
-                        class="col-sm-12 text-justify"
-                        [innerHTML]="
+                      <div class="col-sm-12 text-justify" [innerHTML]="
                           this.classes === undefined ||
                           this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_complicacoes
-                        "
-                      ></div>
+                        "></div>
                     </div>
                   </mat-tab>
-                  <mat-tab
-                    *ngIf="
+                  <mat-tab *ngIf="
                       this.classes === undefined ||
                       this.classes[classeIndex] === undefined
                         ? ''
                         : classes[classeIndex].ha_poderes_db
-                    "
-                    label="Poderes DB"
-                  >
+                    " label="Poderes DB">
                     <div class="row">
                       <p></p>
                       <h5>Poderes de Classe da Dragão Brasil</h5>
@@ -311,15 +260,12 @@
                         são opcionais e podem apresentar mudanças caso
                         publicadas oficialmente.
                       </p>
-                      <div
-                        class="col-sm-12 text-justify"
-                        [innerHTML]="
+                      <div class="col-sm-12 text-justify" [innerHTML]="
                           this.classes === undefined ||
                           this.classes[classeIndex] === undefined
                             ? ''
                             : classes[classeIndex].descricao_poderes_db
-                        "
-                      ></div>
+                        "></div>
                     </div>
                   </mat-tab>
                 </mat-tab-group>

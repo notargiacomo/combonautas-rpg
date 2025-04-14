@@ -6,11 +6,10 @@
 
 <p><b>Sangue de Ferro.</b> Você pode pagar 3 PM para receber +2 em rolagens de dano e redução de dano 5 até o fim da cena. <i><b>e</b></i></p>
 
-<p><b>Armas da Destruição.</b> Você recebe +1 nas rolagens de dano e no multiplicador de crítico com armas.</p>
+<p><b>Armas da Destruição.</b>Você recebe +1 nas rolagens de dano e no multiplicador de crítico com armas nas quais é proficiente. </p>
 
-<p><b>Ferramentas da Guerra.</b> Uma vez por dia, você pode gastar uma hora e TS 10 por item para abençoar uma quantidade de itens limitada por sua Sabedoria. Armas abençoadas desta forma fornecem +2 em testes de ataque e rolagens de dano, enquanto armaduras e escudos têm seu bônus na Defesa aumentados em +2. Se o usuário de um item abençoado for derrotado em combate, o item é destruído. Os efeitos da bênção duram um dia. <i><b>e</b></i></p>
+<p><b>Expurgar a Derrota.</b> Se estiver com 0 PM, você pode gastar seus pontos de vida (exceto PV temporários) no lugar de mana, à taxa de 3 PV por 1 PM. Você não pode reduzir seus PV a 0 ou menos dessa forma e não pode usar este poder se estiver sob efeito de ter descumprido suas Obrigações & Restrições. Pontos de vida gastos dessa forma só podem ser recuperados com descanso.</p>
 
-<p><b>Golpe Tempestuoso.</b> Quando acerta um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso, a criatura é empurrada 3m em uma direção a sua escolha e fica vulnerável por 1 rodada.</p>
+<p><b>Ferramentas da Guerra.</b> Uma vez por dia, você pode gastar 1 hora e T$ 10 por item para abençoar uma quantidade de itens limitada por sua Sabedoria. Armas abençoadas dessa forma fornecem +2 em rolagens de dano, e armaduras e escudos fornecem RD 2. Se o usuário de um item abençoado for derrotado em combate, o item é destruído. Os efeitos da bênção duram 1 dia. <i><b>e</b></i></p>
 
-<p><b>Vitória a qualquer custo.</b> Se estiver com 0 PM, você pode gastar seus pontos de vida no lugar de mana, à taxa de 3 PV por 1 PM. Pontos de vida gastos dessa forma só podem ser recuperados com descanso.</p>
-<p>Quando faz um teste de ataque, de resistência ou de Guerra, você pode gastar 2 PM para rolar novamente este teste. Você pode usar este efeito várias vezes no mesmo teste, mas a cada novo uso seu custo aumenta em +1 PM.</p>
+<p><b>Vitória a qualquer custo.</b> Quando faz um teste de ataque, de resistência ou de Guerra, você pode gastar 2 PM para rolar novamente esse teste. Você pode fazer isso várias vezes no mesmo teste, mas cada novo uso aumenta o custo em +1 PM.</p>

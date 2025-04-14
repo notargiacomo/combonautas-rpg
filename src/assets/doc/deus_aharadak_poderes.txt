@@ -6,10 +6,10 @@
 
 <p><b>Rejeição Divina.</b> Você recebe resistência a magia divina +5.</p>
 
-<p><b>Corromper Equipamento.</b> Você pode gastar 2 PM para cobrir um item que esteja empunhando com uma substância rubra. Até o fim da cena, o item recebe os benefícios de matéria vermelha (Tormenta20, p. 167), cumulativo com outros materiais especiais. Se usar esse poder em uma arma produzida com Armamento Aberrante, seu custo é reduzido em –1 PM.</p>
+<p><b>Corromper Equipamento.</b> Você pode gastar 2 PM para cobrir uma arma, um escudo ou um esotérico que esteja empunhando com carapaça quitinosa. Até o fim da cena, o item recebe os benefícios de matéria vermelha (Tormenta20, p. 167), cumulativo com outros materiais especiais. Se usar este poder em uma arma produzida com Armamento Aberrante, seu custo é reduzido em –1 PM.</p>
+
+<p><b>Espalhar a Corrupção.</b> Quando chega em uma comunidade, você pode gastar um dia e fazer um teste de Religião (CD 20). Se passar, você planta a semente da corrupção no coração das pessoas em uma área equivalente a uma aldeia, um castelo ou um bairro de uma cidade grande. Por uma semana, ou até você partir do lugar, a categoria de atitude dessas pessoas em relação umas às outras piora em um passo, à medida que o senso moral delas se deteriora e seus piores desejos vêm à tona. Isso pode ser útil para gerar conflitos entre elas, embora caiba a você descobrir exatamente como se aproveitar deles.</p>
 
 <p><b>Júbilo na Dor.</b> Quando causa ou sofre dano, você recebe redução de dano 1. Esse efeito é cumulativo e limitado por sua Sabedoria e termina se você passar 1 rodada sem causar ou sofrer dano.</p>
 
-<p><b>Mediador da Tempestade.</b> Você pode falar com lefeu livremente e recebe +5 em testes de Diplomacia e Intuição com criaturas da Tormenta e devotos de Aharadak.</p>
-
-<p><b>Portal Vivo.</b> Você pode gastar uma ação completa e 2 PM para criar um enxame de insetos rubros em um ponto a sua escolha em alcance curto e com duração sustentada. O enxame tem tamanho Médio e pode passar pelo espaço de outras criaturas. Uma vez por rodada, você pode gastar uma ação de movimento para mover o enxame 9m. No final do seu turno, o enxame causa 2d6 pontos de dano de ácido a qualquer criatura no espaço que ele estiver ocupando. Você pode aprender Enxame Rubro de Ichabod como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. <i><b>e</b></i></p>
+<p><b>Mediador da Tempestade.</b> Você pode se comunicar com lefeu inteligentes (Int –3 ou maior) livremente e recebe +5 em testes de Diplomacia e Intuição com criaturas da Tormenta e devotos de Aharadak.</p>

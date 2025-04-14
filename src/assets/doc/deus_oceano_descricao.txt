@@ -2,6 +2,6 @@
 <p><b>Crenças e Objetivos.</b> Reverenciar os mares, o oceano e os seres que ali habitam. Promover harmonia entre o oceano e o mundo seco. Proteger os seres marinhos, mas também os seres do mundo seco que se aventuram sobre as ondas. Demandar devido respeito ao mar e seu poder.</p>
 <p><b>Símbolo Sagrado.</b> Uma concha.</p>
 <p><b>Canalizar Energia.</b> Qualquer.</p>
-<p><b>Arma Preferida.</b> Nenhuma e todas! Ao usar um efeito que dependa de arma preferida, qualquer arma (ou outro objeto!) pode aparecer, de acordo com o mestre.</p>
+<p><b>Arma Preferida.</b> Tridente.</p>
 <p><b>Devotos.</b> Dahllan, hynne, minotauros, sereias/tritões, bárbaros, bucaneiros, caçadores, druidas.</p>
 <p><b>Obrigações & Restrições.</b> As únicas armas permitidas para devotos do Oceano são a azagaia, a lança, o tridente e a rede. Podem usar apenas armaduras leves. O devoto também não pode se manter afastado do oceano por mais de um mês.</p>

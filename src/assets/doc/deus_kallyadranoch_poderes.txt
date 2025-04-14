@@ -6,10 +6,10 @@
 
 <p><b>Presas Primordiais.</b> Você pode gastar 1 PM para transformar seus dentes em presas afiadas até o fim da cena. Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Se já possuir outro ataque natural de mordida, em vez disso, o dano desse ataque aumenta em dois passos. <i><b>e</b></i></p>
 
-<p><b>Alimentar-se do Pavor.</b> Quando uma criatura em alcance curto sob efeito de uma condição de medo morre, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.</p>
+<p><b>Alimentar-se do Pavor.</b> Quando uma criatura em alcance curto sob efeito de uma condição de medo morre, você recebe pontos de vida temporários iguais ao dobro do seu ND, que duram até o fim da cena.</p>
 
-<p><b>Baforada Dracônica.</b> Escolha um elemento entre ácido, eletricidade, fogo, frio, luz ou trevas (uma vez feita, essa escolha não pode ser mudada). Você pode gastar uma ação padrão e PM (limitado por sua Constituição) para desferir um sopro elemental em uma criatura em alcance curto. Para cada PM que você gastar, o alvo sofre 1d10 pontos de dano do tipo escolhido (Ref CD Con reduz à metade). Alternativamente, quando faz a ação agredir, você pode usar este poder como parte dessa ação.</p>
+<p><b>Baforada Dracônica.</b> Escolha um elemento entre ácido, eletricidade, fogo, frio, luz ou trevas (uma vez feita, essa escolha não pode ser mudada). Uma vez por rodada, você pode gastar PM (limitados por sua Constituição) para desferir um sopro elemental em uma criatura em alcance curto. Para cada PM que você gastar, o alvo sofre 1d10 pontos de dano do tipo escolhido (Reflexos CD Con reduz à metade). Recarga (movimento).</p>
 
-<p><b>Poder Sem Limites.</b> Todos os seus limites de PM para habilidades aumentam em +2.</p>
+<p><b>Poder Sem Limites.</b> A CD e os limites de PM de suas habilidades (exceto magias e habilidades que as simulem) aumentam em um valor igual ao seu patamar.</p>
 
 <p><b>Temor Arcano.</b> Quando um inimigo em alcance médio sob efeito de uma condição de medo falha em um teste de resistência contra uma de suas magias, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.</p>

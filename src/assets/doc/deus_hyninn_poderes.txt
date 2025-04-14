@@ -6,10 +6,10 @@
 
 <p><b>Golpista Divino.</b> Você recebe +2 em Enganação, Jogatina e Ladinagem.</p>
 
-<p><b>Armadilha Divina.</b> Você recebe um poder de Armadilha do caçador (Tormenta20, p. 50) à sua escolha. Por ser criada a partir de energia divina, essa armadilha pode ser preparada em locais sem os materiais propícios. <i><b>e</b></i></p>
+<p><b>A Ferramenta Certa.</b> Você pode gastar 1 PM para fazer uma ferramenta ou um equipamento de aventura de até T$ 400 aparecer na sua mão ou em um espaço adjacente. O item dura até o fim da cena, ou até deixar sua posse. </p>
 
-<p><b>Dom da Furtividade.</b> Você soma sua Sabedoria em Furtividade e, contra criaturas desprevenidas, a CD para resistir às suas magias aumenta em +2.</p>
+<p><b>Armadilha Divina.</b> Você recebe um poder de Armadilha do caçador (Tormenta20, p. 50) a sua escolha. Por ser criada a partir de energia divina, essa armadilha pode ser preparada em locais sem os materiais propícios. <i><b>e</b></i></p>
 
-<p><b>Mochileiro Preparado.</b> Você pode gastar 1 PM para fazer uma ferramenta ou um item de aventura de até T$ 100 aparecer na sua mão ou em um espaço adjacente. O item dura até o fim da cena, ou até deixar sua posse.</p>
+<p><b>Dom da Furtividade.</b> Você soma sua Sabedoria em Furtividade e, para você, lançar magias é um ato pouco chamativo, o que reduz a penalidade para se esconder após conjurar para –10 (mas você ainda precisa de gestos e palavras).</p>
 
-<p><b>O Dobro ou Nada.</b> Quando usa uma habilidade com um custo em PM, você pode pagar o dobro desse custo. Se fizer isso, a CD dessa habilidade aumenta em +5. Se pelo menos um alvo passar no teste de resistência, você fica alquebrado.</p>
+<p><b>O Dobro ou Nada.</b> Quando usa uma habilidade com custo em PM, você pode pagar o dobro desse custo (após aplicar efeitos que alterem o custo) para aumentar a CD da habilidade em +5. Se pelo menos um alvo passar no teste de resistência, você fica alquebrado. Este poder não pode ser usado em magias, incluindo simuladas.</p>

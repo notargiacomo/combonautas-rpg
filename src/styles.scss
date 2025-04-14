@@ -35,6 +35,10 @@ header,
   }
 }
 
+.mat-expansion-panel-header:not([aria-disabled=true]){
+  padding-left: 0px;
+}
+
 
 .titulo_tormenta20 {
   width: 50% !important;
