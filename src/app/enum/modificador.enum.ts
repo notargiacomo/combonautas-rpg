@@ -1,5 +1,6 @@
-export enum ModificadorRacial {
+export enum Modificador {
     ACERTO = "Acerto",
+    ATRIBUTO = " Atributo",
     MANOBRA = "Manobra",
     DANO = "Dano",
     PASSO_DANO = "Passo de Dano",
@@ -15,7 +16,9 @@ export enum ModificadorRacial {
     DESLOCAMENTO = "Deslocamento",
     RESISTENCIAS = "Resistências",
     RESISTENCIAS_MAGIA = "Resistência a Magia" ,
+    CARGA = "Carga",
     CD = "CD",
+    PROFICIENCIA = "Proficiência",
     PERICIAS = "Perícias",
     PERICIAS_COM_FERRAMENTA = "Perícias com Ferramenta",
     PERICIA_A_ESCOLHER = "Perícia a Escolher",

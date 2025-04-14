@@ -31,7 +31,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { Deslocamento } from '../../enum/deslocamento.enum';
-import { ModificadorRacial } from '../../enum/modificador.racial.enum';
+import { Modificador } from '../../enum/modificador.enum';
 import { Referencia } from '../../enum/referencia.enum';
 import { Sentido } from '../../enum/sentido.enum';
 import { Tamanho } from '../../enum/tamanho.enum';
@@ -85,13 +85,7 @@ export class OrigensComponent implements OnInit {
   dataSource = new MatTableDataSource<Raca>();
   form!: FormGroup;
 
-  deslocamentos = Object.values(Deslocamento);
-  sentidos = Object.values(Sentido);
-  tamanhos = Object.values(Tamanho);
-  referencias = Object.values(Referencia);
-  tipos = Object.values(TipoCriatura);
-  bonus = Object.values(ModificadorRacial);
-  penalidade = Object.values(ModificadorRacial);
+  bonus = Object.values(Modificador);
 
   constructor(
     private readonly origemService: OrigemService,
@@ -132,27 +126,16 @@ export class OrigensComponent implements OnInit {
 
   private reiniciaFormulario() {
     this.form = this.fb.group({
-      tipo: [],
-      tamanho: [],
-      sentidos: [],
-      deslocamentos: [],
-      forca: [],
-      destreza: [],
-      constituicao: [],
-      inteligencia: [],
-      sabedoria: [],
-      carisma: [],
+      nome: [],
+      regiao: [],
       temMagia: [],
       temPoderGeral: [],
       temPericia: [],
       temRD: [],
-      temArmaNatural: [],
-      temDefeito: [],
+      concedeDinheiro: [],
+      concedeFerramenta: [],
+      concedeParceiro: [],
       bonus: [],
-      penalidade: [],
-      // referencias: new FormArray([]),
-      nome: [],
-      selecao: []
     });
   }
 
@@ -191,10 +174,6 @@ export class OrigensComponent implements OnInit {
 
   consultar() {
     let filtro = this.form.value;
-  
-    if (filtro.nome) {
-      filtro.nome = '^' + filtro.nome;
-    }
   
     // Corrigir tipos
     ['forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'].forEach(campo => {

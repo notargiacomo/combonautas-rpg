@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Referencia } from '../enum/referencia.enum';
 import { Origem } from '../model/origem';
+import { Modificador as Modificador } from '../enum/modificador.enum';
+import { flattenDiagnosticMessageText, ModifierFlags } from 'typescript';
 
 @Injectable({
   providedIn: 'root',
@@ -26,7 +28,15 @@ export class OrigemData {
         <h5>Membro da Igreja</h5>
         <p>Você consegue hospedagem confortável e informação em qualquer templo de sua divindade, para você e seus aliados.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'85'
+        paginas:'85',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 2,
@@ -39,8 +49,16 @@ export class OrigemData {
         <h5>Amigo Especial</h5>
         <p>Você recebe +5 em testes de Adestramento com animais. Além disso, possui um animal de estimação que o auxilia e o acompanha em suas aventuras. Em termos de jogo, é um parceiro que fornece +2 em uma perícia a sua escolha (exceto Luta ou Pontaria e aprovada pelo mestre) e não conta em seu limite de parceiros.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'85'
-      },
+        paginas:'85',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.PERICIAS, Modificador.PERICIA_ADESTRAMENTO],
+},
       {
         id: 3,
         nome: 'Amnésico',
@@ -52,7 +70,15 @@ export class OrigemData {
         <h5>Lembranças Graduais</h5>
         <p>Durante suas aventuras, em determinados momentos a critério do mestre, você pode fazer um teste de Sabedoria (CD 10) para reconhecer pessoas, criaturas ou lugares que tenha encontrado antes de perder a memória.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'86'
+        paginas:'86',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 4,
@@ -65,7 +91,15 @@ export class OrigemData {
         <h5>Sangue Azul</h5>
         <p>Você tem alguma influência política, suficiente para ser tratado com mais leniência pela guarda, conseguir uma audiência com o nobre local etc.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'86'
+        paginas:'86',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 5,
@@ -78,7 +112,15 @@ export class OrigemData {
         <h5>Frutos do Trabalho</h5>
         <p>No início de cada aventura, você recebe  até 5 itens gerais que possa fabricar num valor total de até T$ 50. Esse valor aumenta para T$ 100 no patamar aventureiro, T$ 300 no heroico e T$ 500 no lenda.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'86'
+        paginas:'86',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 6,
@@ -91,8 +133,16 @@ export class OrigemData {
         <h5>Dom artístico</h5>
         <p>Você recebe +2 em testes de Atuação, e recebe o dobro de tibares em apresentações</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'86 e 87'
-      },
+        paginas:'86 e 87',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ATUACAO],
+},
       {
         id: 7,
         nome: 'Assistente de Laboratório',
@@ -104,7 +154,15 @@ export class OrigemData {
         <h5>Esse Cheiro..</h5>
         <p>Você recebe +2 em Fortitude e detecta automaticamente a presença (mas não a localização ou natureza) de itens alquímicos em alcance curto.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'87 e 88'
+        paginas:'87 e 88',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FORTITUDE],
       },
       {
         id: 8,
@@ -118,8 +176,16 @@ export class OrigemData {
         <h5>Confissão</h5>
         <p>Você pode usar Intimidação para interrogar sem custo e em uma hora (veja Investigação).</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'88'
-      },
+        paginas:'88',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_INTIMIDACAO],
+},
       {
         id: 9,
         nome: 'Charlatão',
@@ -131,8 +197,16 @@ export class OrigemData {
         <h5>Alpinista Social</h5>
         <p>Você pode substituir testes de Diplomacia por testes de Enganação</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'88 e 89'
-      },
+        paginas:'88 e 89',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ENGANACAO],
+},
       {
         id: 10,
         nome: 'Circense',
@@ -144,8 +218,16 @@ export class OrigemData {
         <h5>Truque de Mágica</h5>
         <p>Você pode lançar Explosão de Chamas, Hipnotismo e Queda Suave, mas apenas com o aprimoramento Truque. Esta não é uma habilidade mágica — os efeitos provêm de prestidigitação.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'89'
-      },
+        paginas:'89',
+        temMagia: true,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
+},
       {
         id: 11,
         nome: 'Criminoso',
@@ -157,7 +239,15 @@ export class OrigemData {
         <h5>Punguista</h5>
         <p>Você pode fazer testes de Ladinagem para sustento (como a perícia Ofício), mas em apenas um dia. Se passar, recebe o dobro do dinheiro, mas, se falhar, pode ter problemas com a lei (a critério do mestre).</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'89'
+        paginas:'89',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 12,
@@ -170,8 +260,16 @@ export class OrigemData {
         <h5>Médico de Campo</h5>
         <p>Você soma sua Sabedoria aos PV restaurados por suas habilidades e itens mundanos de cura.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'89'
-      },
+        paginas:'89',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.RECUPERACAO_VIDA],
+},
       {
         id: 13,
         nome: 'Eremita',
@@ -184,7 +282,15 @@ export class OrigemData {
         <p>Quando você e seus companheiros estão diante de um mistério, incapazes de prosseguir, você pode gastar 1 PM para meditar sozinho durante algum tempo e receber uma dica do mestre.</p>`,
         referencias:Referencia.BASICO ,
         paginas:'89',
-        poderes: [{id: 278}]
+        poderes: [{id: 278}],
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 14,
@@ -197,7 +303,15 @@ export class OrigemData {
         <h5>Desejo de Liberdade</h5>
         <p>Ninguém voltará a torná-lo um escravo! Você recebe +5 em testes contra a manobra agarrar e efeitos de movimento.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'89 e 90'
+        paginas:'89 e 90',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.MANOBRA, Modificador.DESLOCAMENTO],
       },
       {
         id: 15,
@@ -210,8 +324,16 @@ export class OrigemData {
         <h5>Palpite Fundamentado</h5>
         <p>Você pode gastar 2 PM para substituir um teste de qualquer perícia originalmente baseada em Inteligência ou Sabedoria por um teste de Conhecimento.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'90'
-      },
+        paginas:'90',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
+},
       {
         id: 16,
         nome: 'Fazendeiro',
@@ -223,7 +345,15 @@ export class OrigemData {
         <h5>Água no Feijão</h5>
         <p>Você não sofre a penalidade de –5 e não gasta matéria prima adicional para fabricar pratos para cinco pessoas.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'90'
+        paginas:'90',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.PERICIA_OFICIO],
       },
       {
         id: 17,
@@ -236,8 +366,16 @@ export class OrigemData {
         <h5>Cultura Exótica</h5>
         <p>Por sua diferente visão de mundo, você encontra soluções inesperadas. Você pode gastar 1 PM para fazer um teste de perícia somente treinada, mesmo sem ser treinado na perícia.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'90'
-      },
+        paginas:'90',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIAS],
+},
       {
         id: 18,
         nome: 'Gladiador',
@@ -249,7 +387,15 @@ export class OrigemData {
         <h5>Pão e Circo</h5>
         <p>Por seu treino em combates de exibição, você sabe “bater sem machucar”. Pode escolher causar dano não letal sem sofrer a penalidade de –5.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'90 e 91'
+        paginas:'90 e 91',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.ACERTO],
       },
       {
         id: 19,
@@ -262,7 +408,15 @@ export class OrigemData {
         <h5>Detetive</h5>
         <p>Você pode gastar 1 PM para substituir testes de Percepção e Intuição por testes de Investigação até o fim da cena.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'91'
+        paginas:'91',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_INTUICAO, Modificador.PERICIA_PERCEPCAO],
       },
       {
         id: 20,
@@ -275,7 +429,15 @@ export class OrigemData {
         <h5>Herança</h5>
         <p>Você herdou um item de preço de até T$ 1.000. Você pode escolher este poder duas vezes, para um item de até T$ 2.000.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'91'
+        paginas:'91',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 21,
@@ -288,8 +450,16 @@ export class OrigemData {
         <h5>Coração Heroico</h5>
         <p>Você recebe +3 pontos de mana. Quando atinge um novo patamar (no 5º, 11º e 17º níveis), recebe +3 PM.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'91 e 92'
-      },
+        paginas:'91 e 92',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.MANA],
+},
       {
         id: 22,
         nome: 'Marujo',
@@ -301,8 +471,16 @@ export class OrigemData {
         <h5>Passagem de Navio</h5>
         <p>Você consegue transporte marítimo para você e seus aliados, sem custos, desde que todos paguem com trabalho (passar em pelo menos um teste de perícia adequado durante a viagem).`,
         referencias:Referencia.BASICO ,
-        paginas:'92'
-      },
+        paginas:'92',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
+},
       {
         id: 23,
         nome: 'Mateiro',
@@ -314,7 +492,15 @@ export class OrigemData {
         <h5>Vendedor de Carcaças</h5>
         <p>Você pode extrair recursos de criaturas em um minuto, em vez de uma hora, e recebe +5 no teste.`,
         referencias:Referencia.BASICO ,
-        paginas:'92'
+        paginas:'92',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIAS],
       },
       {
         id: 24,
@@ -327,7 +513,15 @@ export class OrigemData {
         <h5>Rede de Contatos</h5>
         <p>Graças à influência de sua guilda, você pode usar Diplomacia para interrogar sem custo e em uma hora (veja Investigação).`,
         referencias:Referencia.BASICO ,
-        paginas:'92'
+        paginas:'92',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 25,
@@ -340,7 +534,15 @@ export class OrigemData {
         <h5>Negociação</h5>
         <p>Você  pode  vender  itens  10%  mais  caro  (não cumulativo com barganha).`,
         referencias:Referencia.BASICO ,
-        paginas:'93'
+        paginas:'93',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.PERICIA_DIPLOMACIA],
       },
       {
         id: 26,
@@ -353,7 +555,15 @@ export class OrigemData {
         <h5>Escavador</h5>
         <p>Você se torna proficiente em picaretas, causa +1 de dano com elas e não é afetado por terreno difícil em masmorras e subterrâneos.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'93'
+        paginas:'93',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.DANO],
       },
       {
         id: 27,
@@ -366,8 +576,16 @@ export class OrigemData {
         <h5>Mochileiro</h5>
         <p>Seu limite de carga aumenta em 5 espaços.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'93'
-      },
+        paginas:'93',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.CARGA],
+},
       {
         id: 28,
         nome: 'Pivete',
@@ -379,8 +597,15 @@ export class OrigemData {
         <h5>Quebra-galho</h5>
         <p>Em cidades ou metrópoles, você pode comprar qualquer item mundano não superior por metade do preço normal. Esses itens não podem ser matérias-primas e não podem ser revendidos (são velhos, sujos, furtados...).</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'93'
-      },
+        paginas:'93',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        bonus: [],
+},
       {
         id: 29,
         nome: 'Refugiado',
@@ -392,8 +617,16 @@ export class OrigemData {
         <h5>Estoico</h5>
         <p>Sua condição de descanso é uma categoria acima do padrão pela situação (normal em condições ruins, confortável em condições normais e luxuosa em condições confortáveis ou melhores). Veja as regras de recuperação na página 106.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'93 e 94'
-      },
+        paginas:'93 e 94',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta:false,
+        concedeParceiro: false,
+        bonus: [Modificador.DESCANSO],
+},
       {
         id: 30,
         nome: 'Seguidor',
@@ -405,8 +638,16 @@ export class OrigemData {
         <h5>Antigo Mestre</h5>
         <p>Você ainda mantém contato com o herói que costumava servir. Uma vez por aventura, ele surge para ajudá-lo por uma cena. Ele é um parceiro mestre de um tipo a sua escolha (definido ao obter este poder) que não conta em seu limite de aliados.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'94'
-      },
+        paginas:'94',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [],
+},
       {
         id: 31,
         nome: 'Selvagem',
@@ -418,7 +659,15 @@ export class OrigemData {
         <h5>Vida Rústica</h5>
         <p>Você come coisas que fariam um avestruz vomitar (sendo imune a efeitos prejudiciais de itens ingeríveis) e também consegue descansar nos lugares mais desconfortáveis (mesmo dormindo ao relento, sua recuperação de PV e PM nunca é inferior a seu próprio nível).</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'94'
+        paginas:'94',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.DESCANSO],
       },
       {
         id: 32,
@@ -431,8 +680,16 @@ export class OrigemData {
         <h5>Influência Militar</h5>
         <p>Você fez amigos nas forças armadas. Onde houver acampamentos ou bases militares, você pode conseguir hospedagem e informações para você e seus aliados.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'94'
-      },
+        paginas:'94',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
+},
       {
         id: 33,
         nome: 'Taverneiro',
@@ -444,8 +701,16 @@ export class OrigemData {
         <h5>Gororoba</h5>
         <p>Você não sofre a penalidade de –5 para fabricar um prato especial adiconal.</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'94 E 95'
-      },
+        paginas:'94 E 95',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO],
+},
       {
         id: 34,
         nome: 'Trabalhador',
@@ -457,8 +722,16 @@ export class OrigemData {
         <h5>Esforçado</h5>
         <p>Você não teme trabalho duro, nem prazos apertados. Você  recebe  um  bônus  de  +2 em todos os testes de perícias estendidos (incluindo perigos complexos).</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'95'
-      },
+        paginas:'95',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIAS],
+},
       {
         id: 35,
         nome: 'Batedor',
@@ -470,8 +743,16 @@ export class OrigemData {
         <h5>À Prova de Tudo</h5>
         <p>Você não sofre penalidade em deslocamento e Sobrevivência por clima ruim e por terreno difícil natura</p>`,
         referencias:Referencia.BASICO ,
-        paginas:'88'
-      },
+        paginas:'88',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_SOBREVIVENCIA, Modificador.DESLOCAMENTO],
+},
       {
         id: 36,
         nome: 'Agricultor de Sambur',
@@ -481,8 +762,16 @@ export class OrigemData {
         <p><b>Itens.</b>  Ferramenta agrícola (mesmas estatísticas de uma lança), T$ 100 (um presente de despedida da sua família).</p>
         <p><b>Benefícios.</b>  Você é treinado em Adestramento e Sobrevivência e, uma vez por cena, pode gastar 1 PM para receber +1d6 em um teste de perícia.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'470'
-      },
+        paginas:'470',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ADESTRAMENTO, Modificador.PERICIA_SOBREVIVENCIA],
+},
       {
         id: 37,
         nome: 'Amazone de Hippion',
@@ -492,8 +781,16 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial, cavalo de guerra.</p>
         <p><b>Benefícios.</b> Você é treinada em Cavalgar e, se não estiver usando armadura pesada, soma seu Carisma nos PM, limitado pelo seu nível (apenas após um dia).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'470'
-      },
+        paginas:'470',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.MANA],
+},
       {
         id: 38,
         nome: 'Amóque Púrpura',
@@ -502,8 +799,16 @@ export class OrigemData {
         <p>Raiva compele os golpes de guerreiros por todo o mundo, mas nos Ermos Púrpuras a prática é refinada ao limite. Você cresceu entre esses lutadores imprevisíveis.</p>
         <p><b>Itens.</b> Arma simples, estandarte da sua tribo.</p>
         <p><b>Benefícios.</b> Você é treinado em Intimidação e, quando está sob efeito de Fúria, Fúria Divina ou Poder Oculto, recebe +2 em rolagens de dano.</p>`,
-        referencias:Referencia.ATLAS ,
-        paginas:'470'
+        referencias:Referencia.ATLAS,
+        paginas:'470',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_INTIMIDACAO, Modificador.DANO],
       },
       {
         id: 39,
@@ -514,7 +819,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma marcial tradicional anã, instrumentos de Ofício (armeiro).</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro) e recebe +2 em rolagens de dano com armas tradicionais anãs (machados, martelos, marretas e picaretas).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'470'
+        paginas:'470',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.DANO],
       },
       {
         id: 40,
@@ -527,8 +840,16 @@ export class OrigemData {
         <h5>Alikunhá</h5>
         <p>Os elementais que acompanham os ubaneri são conhecidos como alikunhá. Cada um desses espíritos é ligado a um elemento e conta como um parceiro iniciante de um tipo a sua escolha entre os associados ao seu elemento. Ar: assassino, perseguidor ou vigilante; água: ajudante, guardião ou médico; fogo:atirador, combatente ou fortão; terra:combatente, guardião ou montaria; luz:guardião, médico ou vigilante; trevas: assassino, magivocador ou perseguidor.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'470'
-      },
+        paginas:'470',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.DEFESA, Modificador.PROFICIENCIA],
+},
       {
         id: 41,
         nome: 'Aprendir de Dragoeiro',
@@ -538,8 +859,16 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial à sua escolha, troféu de caça, treckod</p>
         <p><b>Benefícios.</b> Você recebe +2 na Defesa contra criaturas maiores que você e +2 em Reflexos. Além disso, se passar em um teste de Reflexos, seus ataques contra a fonte do efeito causam +1d8 pontos de dano até o final da cena.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'470'
-      },
+        paginas:'470',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.DEFESA, Modificador.PERICIA_REFLEXOS, Modificador.DANO],
+},
       {
         id: 42,
         nome: 'Aprendiz de Drogadora',
@@ -549,7 +878,15 @@ export class OrigemData {
         <p><b>Itens.</b> Bálsamo restaurador x2, poção de curar ferimentos x2, maleta de medicamentos.</p>
         <p><b>Benefícios.</b> Você é treinada em Cura e Ofício (alquimista). Como usa partes de seu corpo para fabricar preparados alquímicos e poções, você gasta apenas 1/4 do preço dos itens em matérias-primas.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'470'
+        paginas:'470',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.PERICIA_CURA],
       },
       {
         id: 43,
@@ -560,8 +897,16 @@ export class OrigemData {
         <p><b>Itens.</b> Traje da corte, katana superior com uma melhoria (exceto material especial).</p>
         <p><b>Benefícios.</b> Você é treinado em Nobreza. Além disso, ao completar um descanso, caso não tenha feito nenhum teste de Enganação, Furtividade ou Ladinagem desde seu último descanso, você recebe +1 PM temporário para cada dois níveis</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'471'
-      },
+        paginas:'471',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_NOBREZA],
+},
       {
         id: 44,
         nome: 'Armeiro Armado',
@@ -571,7 +916,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma marcial, instrumentos de Ofício (armeiro).</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro) e pode fabricar armas com uma melhoria. Se aprender a fabricar armas superiores por outra habilidade, gasta apenas 1/4 do preço das melhorias que aplica em armas.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'471'
+        paginas:'471',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true, 
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO],
       },
       {
         id: 45,
@@ -582,7 +935,15 @@ export class OrigemData {
         <p><b>Itens.</b> Essência de mana, mochila de aventureiro.</p>
         <p><b>Benefícios.</b> Você recebe +1 em um atributo à sua escolha.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'471'
+        paginas:'471',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.ATRIBUTO],
       },
       {
         id: 46,
@@ -593,7 +954,15 @@ export class OrigemData {
         <p><b>Itens.</b> Lupa (conta como uma ferramenta que fornece +1 em Investigação).</p>
         <p><b>Benefícios.</b> Você é treinado em Investigação e pode usar esta perícia para necropsia, identificar itens alquímicos e rastrear (veja as perícias Cura, Ofício e Sobrevivência, em Tormenta20). Além disso, pode identificar criaturas em uma cena de crime ou equivalente mesmo que elas não estejam mais presentes. Isso funciona como um teste de identificar criatura, com uma penalidade de –1 para cada dia decorrido. Se passar, além do normal, você identifica a raça da criatura.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'471'
+        paginas:'471',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_INVESTIGACAO],
       },
       {
         id: 47,
@@ -604,7 +973,15 @@ export class OrigemData {
         <p><b>Itens.</b> Adaga, gazua, manto camuflado (urbano).</p>
         <p><b>Benefícios.</b> Você é treinado em Furtividade e Intimidação, e recebe resistência a medo +5.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'471'
+        paginas:'471',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_INTIMIDACAO, Modificador.RESISTENCIAS],
       },
       {
         id: 48,
@@ -615,7 +992,15 @@ export class OrigemData {
         <p><b>Itens.</b> Anel com símbolo da família (T$ 200), títulos de terras expirados (+2 em Diplomacia com nobres e burocratas), traje da corte.</p>
         <p><b>Benefícios.</b> Você é treinado em Nobreza. Sempre que falha em um teste de perícia e a falha acarreta uma consequência negativa (gastar uma ação, perder PV, sofrer um efeito etc.), você recebe +2 em testes da mesma perícia até o final da cena.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'471'
+        paginas:'471',
+        temMagia: false,
+        temPoder: true,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_NOBREZA],
       },
       {
         id: 49,
@@ -626,7 +1011,15 @@ export class OrigemData {
         <p><b>Itens.</b> Luneta, luvas de pelica, tranqueiras resgatadas do mar (2 espaços, valor de venda T$ 100).</p>
         <p><b>Benefícios.</b> Você é treinado em Fortitude e Percepção e pode gastar 1 PM para receber deslocamento de natação igual ao seu deslocamento básico (se já tiver deslocamento de natação, em vez disso ele aumenta em +3m) por uma cena. Esse deslocamento não permite respirar debaixo d’água automaticamente, mas dobra o limite de tempo em que você pode segurar sua respiração.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'471 e 472'
+        paginas:'471 e 472',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_PERCEPCAO, Modificador.DESLOCAMENTO, Modificador.RESISTENCIAS],
       },
       {
         id: 50,
@@ -637,8 +1030,16 @@ export class OrigemData {
         <p><b>Itens.</b> Corda, ração de viagem x10, essência de mana.</p>
         <p><b>Benefícios.</b> Você recebe resistência a espíritos e magia +2 e +1 PV por nível de personagem.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'472'
-      },
+        paginas:'472',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false, 
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.RESISTENCIAS, Modificador.VIDA],
+},
       {
         id: 51,
         nome: 'Competidor do Circuito',
@@ -648,8 +1049,16 @@ export class OrigemData {
         <p><b>Itens.</b> Arma marcial, T$ 100 (suas economias para comprar equipamentos de torneio).</p>
         <p><b>Benefícios.</b> Você recebe o poder Torcida. Enquanto está sob efeito desse poder, sempre que reduz um inimigo a 0 PV com um ataque corpo a corpo, você recupera 1 PM.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'472'
-      },
+        paginas:'472',
+        temMagia: false,
+        temPoder: true,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.RECUPERACAO_MANA],
+},
       {
         id: 52,
         nome: 'Cosmopolita',
@@ -659,8 +1068,16 @@ export class OrigemData {
         <p><b>Itens.</b> Equipamento de viagem, traje de viajante, um item artístico de origem cultural indefinida (½ espaço, T$ 100).</p>
         <p><b>Benefícios.</b>  Escolha um poder geral ou de uma classe na qual você tenha pelo menos dois níveis, e cujos requisitos você cumpra (exceto poderes concedidos ou da Tormenta). Você recebe esse poder. Uma vez por aventura, após concluir um descanso (oito horas de sono), pode trocar esse poder por outro.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'472'
-      },
+        paginas:'472',
+        temMagia: false,
+        temPoder: true,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
+},
       {
         id: 53,
         nome: 'Cria de Favela',
@@ -670,7 +1087,15 @@ export class OrigemData {
         <p><b>Itens.</b> Andrajos de aldeão, corda, vara de madeira.</p>
         <p><b>Benefícios.</b> Você recebe +1 em Constituição e, por piores que sejam as condições de descanso, sua recuperação é sempre pelo menos normal.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'472'
+        paginas:'472',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.ATRIBUTO],
       },
       {
         id: 54,
@@ -681,7 +1106,12 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples, armadura leve, lança.</p>
         <p><b>Benefícios.</b>  Você recebe +2 na Defesa e Sobrevivência e +3m em seu deslocamento.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'472'
+        paginas:'472',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        bonus: [Modificador.DEFESA, Modificador.PERICIA_SOBREVIVENCIA, Modificador.DESLOCAMENTO],
       },
       {
         id: 55,
@@ -692,7 +1122,15 @@ export class OrigemData {
         <p><b>Itens.</b> Trajes exóticos, um item qualquer de até T$ 100 do seu mundo natal.</p>
         <p><b>Benefícios.</b> Você possui uma habilidade ou tecnologia especial de seu mundo de origem. Para representar esse efeito, escolha uma magia de 1º círculo e um atributo-chave para ela. Se for uma habilidade, você pode lançar essa magia. Se for uma tecnologia, você recebe um item Minúsculo (RD 10, PV iguais à metade dos seus) que ocupa 1 espaço e deve ser empunhado para lançar a magia, mas seu limite de PM para ela aumenta em +2. Por fim, escolha se o efeito será mágico ou mundano (nesse caso, não contará como uma magia, exceto para fins de acúmulo). O mestre tem a palavra final sobre qualquer efeito e combinação.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'472'
+        paginas:'472',
+        temMagia: true,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 56,
@@ -703,7 +1141,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples, estojo de disfarces, ração de viagem x5.</p>
         <p><b>Benefícios.</b> Você recebe +2 em Percepção e pode lançar a magia Visão Mística. Caso aprenda essa magia novamente, seu custo diminui em –1 PM. e</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'473'
+        paginas:'473',
+        temMagia: true,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_PERCEPCAO],
       },
       {
         id: 57,
@@ -714,8 +1160,16 @@ export class OrigemData {
         <p><b>Itens.</b> Brunea com símbolo purista raspado, escudo pesado, espada bastarda, ração de viagem x10.</p>
         <p><b>Benefícios.</b> Você é treinado em Guerra e recebe proficiência com espadas bastardas e escudos. Se estiver empunhando uma espada bastarda e um escudo pesado, recebe +2 em testes de ataque.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'473'
-      },
+        paginas:'473',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_GUERRA, Modificador.PROFICIENCIA, Modificador.ACERTO],
+},
       {
         id: 58,
         nome: 'Duplo Feérico',
@@ -729,8 +1183,16 @@ export class OrigemData {
         <p>Caso uma das duas criaturas morra nesse encontro, a versão sobrevivente herda todas as lembranças do morto, incluindo uma de suas perícias treinadas, mas perde permanentemente 1 ponto de Carisma — já que, para o bem ou para o mal, perdeu uma parte de si para sempre.</p>
         `,
         referencias:Referencia.ATLAS ,
-        paginas:'474'
-      },
+        paginas:'474',
+        temMagia: false,
+        temPoder: true,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
+},
       {
         id: 59,
         nome: 'Duyshidakk Infiltrado',
@@ -740,8 +1202,16 @@ export class OrigemData {
         <p><b>Itens.</b> Arma marcial, peças sobressalentes (T$ 100 para vender ou construir engenhocas).</p>
         <p><b>Benefícios.</b> Você recebe +2 em Furtividade e Vontade e pode usar Sabedoria como atributo-chave de Enganação (em vez de Carisma).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'474'
-      },
+        paginas:'474',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_VONTADE, Modificador.PERICIA_ENGANACAO],
+},
       {
         id: 60,
         nome: 'Emissário Ubaneri',
@@ -753,8 +1223,16 @@ export class OrigemData {
         <h5>Alikunhá</h5>
         <p>Os elementais que acompanham os ubaneri são conhecidos como alikunhá. Cada um desses espíritos é ligado a um elemento e conta como um parceiro iniciante de um tipo a sua escolha entre os associados ao seu elemento. Ar: assassino, perseguidor ou vigilante; água: ajudante, guardião ou médico; fogo:atirador, combatente ou fortão; terra:combatente, guardião ou montaria; luz:guardião, médico ou vigilante; trevas: assassino, magivocador ou perseguidor.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'474'
-      },
+        paginas:'474',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.PERICIA_MISTICISMO],
+},
       {
         id: 61,
         nome: 'Escudeiro da Luz',
@@ -764,7 +1242,15 @@ export class OrigemData {
         <p><b>Itens.</b> Cota de malha ou escudo pesado, enfeite de elmo com o símbolo da Ordem da Luz.</p>
         <p><b>Benefícios.</b> Você é treinado em Nobreza. Além disso, recebe +2 na Defesa e +3 PM.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'474'
+        paginas:'474',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.DANO, Modificador.DEFESA, Modificador.MANA],
       },
       {
         id: 62,
@@ -775,7 +1261,15 @@ export class OrigemData {
         <p><b>Itens.</b> Cota de malha, escudo pesado, enfeite de elmo.</p>
         <p><b>Benefícios.</b> Você é treinado em Enganação e Ladinagem e recebe +10 em testes de Enganação para se disfarçar como cavaleiro da Luz. Além disso, se tiver Código de Honra (ou outro semelhante), atacar pelas costas não faz com que você o viole.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'474'
+        paginas:'474',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_LADINAGEM],
       },
       {
         id: 63,
@@ -786,7 +1280,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial, gibão de peles, fragmento do estandarte do seu povo (se vestido, fornece +1 em testes de Vontade).</p>
         <p><b>Benefícios.</b> Você recebe +2 em Sobrevivência e um poder de combate ou da Tormenta à sua escolha.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'474'
+        paginas:'474',
+        temMagia: false,
+        temPoder: true,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta:false, 
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_SOBREVIVENCIA],
       },
       {
         id: 64,
@@ -797,7 +1299,15 @@ export class OrigemData {
         <p><b>Itens.</b>  Coleção de livros (uma qualquer), essência de mana x2.</p>
         <p><b>Benefícios.</b> Você aprende e pode lançar uma magia arcana de 1o círculo a sua escolha (atributo-chave Inteligência). Além disso, pode fazer testes de Misticismo mesmo sem ser treinado nessa perícia. Se for treinado, recebe +2 em testes dela.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'474 e 475'
+        paginas:'474 e 475',
+        temMagia: true,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_MISTICISMO],
       },
       {
         id: 65,
@@ -808,8 +1318,16 @@ export class OrigemData {
         <p><b>Itens.</b>  Bálsamo restaurador x3, maleta de medicamentos.</p>
         <p><b>Benefícios.</b> Você é treinado em Cura. Além disso, seus efeitos de cura recuperam +2 PV por dado. Você perde esse benefício caso se torne um devoto de qualquer tipo.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
-      },
+        paginas:'475',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CURA, Modificador.RECUPERACAO_VIDA],
+},
       {
         id: 66,
         nome: 'Explorador de Ruínas',
@@ -819,7 +1337,15 @@ export class OrigemData {
         <p><b>Itens.</b>  Mochila de aventureiro, tocha, vara de madeira (3m).</p>
         <p><b>Benefícios.</b> Você recebe +2 em Ladinagem, Percepção e Reflexos e +3m em seu deslocamento.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
+        paginas:'475',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_LADINAGEM, Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_REFLEXOS, Modificador.DESLOCAMENTO],
       },
       {
         id: 67,
@@ -830,7 +1356,15 @@ export class OrigemData {
         <p><b>Itens.</b>  Instrumentos de Ofício (artesão), T$ 100 (que você está juntando para fabricar seu primeiro veículo aéreo).</p>
         <p><b>Benefícios.</b> Você é treinado em Acrobacia e Pilotagem. Quando faz um teste de uma dessas perícias, pode gastar 1 PM para rolar um dado adicional e usar o melhor resultado.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
+        paginas:'475',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ACROBACIA, Modificador.PERICIA_PILOTAGEM],
       },
       {
         id: 68,
@@ -841,8 +1375,16 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial com nome pomposo (e nenhuma melhoria), essência de mana x2</p>
         <p><b>Benefícios.</b> Escolha um dos poderes de sua classe, normalmente disponíveis a partir do 2º nível. Você recebe esse poder.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
-      },
+        paginas:'475',
+        temMagia: false,
+        temPoder: true,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
+},
       {
         id: 69,
         nome: 'Ginete Tumarkhân',
@@ -852,7 +1394,15 @@ export class OrigemData {
         <p><b>Itens.</b> Bálsamo restaurador, sela.</p>
         <p><b>Benefícios.</b> Você é treinado em Cavalgar e possui um parceiro tumarkhân iniciante, com quem recebe +2 em testes de Adestramento e Cavalgar. Se receber outra montaria especial (como pelos poderes Montaria ou Montaria Sagrada), você pode usar seu tumarkhân como essa montaria, acumulando o bônus em perícias com os benefícios da montaria especial</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
+        paginas:'475',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: true,
+        bonus: [Modificador.PERICIA_ADESTRAMENTO, Modificador.PERICIA_CAVALGAR],
       },
       {
         id: 70,
@@ -863,7 +1413,15 @@ export class OrigemData {
         <p><b>Itens.</b> Adaga, corda, tatuagem de sua antiga tripulação (+1 em Intimidação).</p>
         <p><b>Benefícios.</b> Você é treinado em Acrobacia, Atletismo e Reflexos e, se estiver se equilibrando, escalando ou nadando, só cai ou afunda se falhar no teste de perícia por 10 ou mais (em vez de 5 ou mais).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
+        paginas:'475',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ACROBACIA, Modificador.PERICIA_ATLETISMO, Modificador.PERICIA_REFLEXOS],
       },
       {
         id: 71,
@@ -874,7 +1432,15 @@ export class OrigemData {
         <p><b>Itens.</b> Casaco longo, cavalo glacial.</p>
         <p><b>Benefícios.</b> Você recebe redução de frio 5 e proficiência em arco longo e machado de batalha. Caso já possua proficiência com essas armas, você recebe +2 em rolagens de dano com elas.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
+        paginas:'475',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: true,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.PROFICIENCIA, Modificador.DANO],
       },
       {
         id: 72,
@@ -885,7 +1451,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial, gibão de peles.</p>
         <p><b>Benefícios.</b> Você pode fazer testes para identificar criaturas com uma ação de movimento e, quando acerta um ataque em uma criatura não humanoide, pode gastar 1 PM para causar +1d8 pontos de dano.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475'
+        paginas:'475',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.DANO],
       },
       {
         id: 73,
@@ -896,7 +1470,15 @@ export class OrigemData {
         <p><b>Itens.</b> Amuleto com um símbolo da resistência reconhecível por outros rebeldes, arma simples.</p>
         <p><b>Benefícios.</b> Você recebe +1 em Fortitude, Reflexos e Vontade. Além disso, recebe +3 pontos de vida no 1º nível e +1 PV por nível seguinte.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'475 e 476'
+        paginas:'475 e 476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_REFLEXOS, Modificador.PERICIA_VONTADE, Modificador.VIDA],
       },
       {
         id: 74,
@@ -907,7 +1489,15 @@ export class OrigemData {
         <p><b>Itens.</b> Bálsamo restaurador, sela.</p>
         <p><b>Benefícios.</b> Você possui um irmão cavalo, um cavalo de guerra parceiro iniciante que fornece +1 em testes de ataque e Reflexos. Se receber outra montaria especial (como aquela concedida pelos poderes Montaria ou Montaria Sagrada), você pode usar seu irmão cavalo como essa montaria, acumulando o bônus em perícias com os benefícios da montaria especial.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476'
+        paginas:'476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: true,
+        bonus: [Modificador.ACERTO],
       },
       {
         id: 75,
@@ -918,7 +1508,15 @@ export class OrigemData {
         <p><b>Itens.</b> Brunea com símbolo de sua legião, escudo pesado, gládio, ração de viagem x10.</p>
         <p><b>Benefícios.</b> Você é treinado em Guerra e recebe proficiência com gládios (veja Ameaças de Arton) e escudos. Se estiver empunhando um gládio e um escudo pesado, recebe +1 na margem de ameaça e +1 na Defesa.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476'
+        paginas:'476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_GUERRA, Modificador.PROFICIENCIA, Modificador.MARGEM_AMEACA, Modificador.DEFESA],
       },
       {
         id: 76,
@@ -929,7 +1527,15 @@ export class OrigemData {
         <p><b>Itens.</b> Item superior de madeira Tollon.</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (artesão) e recebe +5 em testes de perícias (exceto testes de ataque) relacionados a madeira. Além disso, você recebe proficiência com machadinhas e machados de batalha; caso já possua proficiência com essas armas, recebe +2 em rolagens de dano com elas.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476'
+        paginas:'476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIAS, Modificador.DANO],
       },
       {
         id: 77,
@@ -940,7 +1546,15 @@ export class OrigemData {
         <p><b>Itens.</b> Alaúde élfico, réplica de uma peça artística élfica (1 espaço, T$ 50).</p>
         <p><b>Benefícios.</b> Você é treinado em Atuação e recebe +2 nessa perícia. Além disso, pode usar Carisma como atributo-chave de Misticismo (no lugar de Inteligência).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476'
+        paginas:'476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ATUACAO, Modificador.PERICIA_MISTICISMO],
       },
       {
         id: 78,
@@ -951,7 +1565,15 @@ export class OrigemData {
         <p><b>Itens.</b> Carroça, mercadorias sortidas (8 espaços, T$ 400).</p>
         <p><b>Benefícios.</b> Você é treinado em Diplomacia e Intuição. Quando chega em uma cidade pela primeira vez em cada aventura, pode fazer um teste de Diplomacia (CD 20). Se passar, recebe 10% de desconto em todos os itens que comprar neste lugar (cumulativo com barganha).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476'
+        paginas:'476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_INTUICAO],
       },
       {
         id: 79,
@@ -962,7 +1584,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arco longo ou katana, camisa bufante ou traje de seda.</p>
         <p><b>Benefícios.</b> Você recebe proficiência em katana e arco longo. Caso receba proficiência nessas armas novamente, recebe +2 em rolagens de dano com elas. Além disso, quando falha em um teste de perícia originalmente baseada em Sabedoria, você pode gastar 2 PM para refazer esse teste (apenas uma vez por teste).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476'
+        paginas:'476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PROFICIENCIA, Modificador.DANO],
       },
       {
         id: 80,
@@ -973,7 +1603,15 @@ export class OrigemData {
         <p><b>Itens.</b> Traje da corte.</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro) e recebe uma arma superior com uma melhoria (exceto material especial). Se estiver de posse dessa arma, recebe +2 PM por patamar (apenas após um dia).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476'
+        paginas:'476',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.MANA, Modificador.PERICIA_OFICIO],
       },
       {
         id: 81,
@@ -984,7 +1622,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial, corcel do deserto ou dromedário (veja Ameaças de Arton), manto camuflado (deserto).</p>
         <p><b>Benefícios.</b> Você recebe +2 em Fortitude e Sobrevivência e nas rolagens de dano com alfanges, arcos curtos e cimitarras.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'476 e 477'
+        paginas:'476 e 477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_SOBREVIVENCIA, Modificador.DANO],
       },
       {
         id: 82,
@@ -995,7 +1641,15 @@ export class OrigemData {
         <p><b>Itens.</b> Vara de pesca (pode usar Sobrevivência para sustento), peixes raros salgados para revenda (1 espaço, T$ 50).</p>
         <p><b>Benefícios.</b> Você recebe +2 em Atletismo, Fortitude e Sobrevivência e +3 PV. Além disso, quando faz um teste de Atletismo para nadar você avança seu deslocamento (em vez de apenas a metade).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'477'
+        paginas:'477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false, 
+        bonus: [Modificador.PERICIA_ATLETISMO, Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_SOBREVIVENCIA, Modificador.VIDA, Modificador.DESLOCAMENTO],
       },
       {
         id: 83,
@@ -1006,7 +1660,15 @@ export class OrigemData {
         <p><b>Itens.</b> Bandoleira de poções, gorro de ervas, poção arcana de 1  círculo.</p>
         <p><b>Benefícios.</b> Você recebe +2 PM. Além disso, uma vez por rodada, quando falha em um teste de resistência contra um efeito mágico, você pode gastar 1 PM para rolar novamente esse teste.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'477'
+        paginas:'477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.MANA, Modificador.RESISTENCIAS],
       },
       {
         id: 84,
@@ -1017,7 +1679,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma marcial encontrada no corpo de alguém que não sobreviveu às Catacumbas.</p>
         <p><b>Benefícios.</b> Você é treinado em Percepção e Reflexos e recebe resistência a armadilhas e efeitos de movimento +5.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'477'
+        paginas:'477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_REFLEXOS, Modificador.RESISTENCIAS],
       },
       {
         id: 85,
@@ -1030,7 +1700,15 @@ export class OrigemData {
         <h5>Por um Punhado de Tibares</h5>
         <p>Personagens com a origem Procurado: Vivo ou Morto são caçados por pistoleiros e todo tipo de mercenários. Uma vez por aventura, a critério do mestre, você e seu grupo são atacados por caçadores de recompensa (um encontro de ND igual ou inferior ao do grupo). Cruéis e dispostos a qualquer coisa por uma recompensa, esses caçadores tendem a atacar nos momentos mais inconvenientes…</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'477'
+        paginas:'477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PROFICIENCIA, Modificador.PERICIA_INTIMIDACAO],
       },
       {
         id: 86,
@@ -1041,7 +1719,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial, bordão, pergaminho com diagrama do Akzath.</p>
         <p><b>Benefícios.</b> Você é treinado em Religião e pode lançar magias mesmo sob o efeito de Fúria Divina.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'477'
+        paginas:'477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_RELIGIAO],
       },
       {
         id: 87,
@@ -1052,7 +1738,15 @@ export class OrigemData {
         <p><b>Itens.</b> Essência de sombra, manto camuflado (urbano).</p>
         <p><b>Benefícios.</b> Você redução de frio e trevas 5 e visão no escuro. Se já possuir visão no escuro, em vez disso recebe +2 em Percepção.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'477'
+        paginas:'477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: true,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_PERCEPCAO],
       },
       {
         id: 88,
@@ -1063,7 +1757,15 @@ export class OrigemData {
         <p><b>Itens.</b>  Arma simples ou marcial, panfleto revolucionário, T$ 6d12 (impostos que você deixou de pagar).</p>
         <p><b>Benefícios.</b> Você é treinado em Iniciativa e, uma vez por aventura, pode gastar um dia para convencer pessoas comuns a ajudá-lo. Faça um teste de Diplomacia (CD 10). Se passar, você convence uma pessoa, mais uma para cada 10 pontos acima da CD (duas pessoas com resultado 20, três com resultado 30 e assim por diante). Cada pessoa pode ser usada como um parceiro iniciante de um tipo à sua escolha por uma cena. As pessoas não contam em seu limite de parceiros e ficam com você até serem usadas ou até o fim da aventura.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'477'
+        paginas:'477',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_INICIATIVA],
       },
       {
         id: 89,
@@ -1074,7 +1776,15 @@ export class OrigemData {
         <p><b>Itens.</b>  Mercadorias raras e variadas (2 espaços, T$ 300).</p>
         <p><b>Benefícios.</b> Você possui contatos em Vectora que lhe dão acesso a mercadorias. Se estiver em uma cidade ou outro lugar em que, a critério do mestre, possa acessar seus contatos, você pode gastar 1 dia para obter um aparato mágico: um item de 1 espaço que você (e apenas você) pode empunhar para lançar uma magia de 1º círculo (atributo-chave Inteligência), escolhida ao obter o aparato. Você pode ter até 2 aparatos ao mesmo tempo. Os aparatos não têm valor comercial.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'478'
+        paginas:'478',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [],
       },
       {
         id: 90,
@@ -1085,7 +1795,15 @@ export class OrigemData {
         <p><b>Itens.</b> Essência de mana x2, varinha arcana.</p>
         <p><b>Benefícios.</b> A CD para resistir a suas magias arcanas aumenta em +1 e elas causam +1 ponto de dano.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'478'
+        paginas:'478',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false, 
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.CD],
       },
       {
         id: 91,
@@ -1096,8 +1814,16 @@ export class OrigemData {
         <p><b>Itens.</b> Arma marcial, brunea, grifo iniciante.</p>
         <p><b>Benefícios.</b> Você recebe +1 PV por nível e redução de fogo 5, e é treinado em Cavalgar.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'478'
-      },
+        paginas:'478',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: true,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: true,
+        bonus: [Modificador.VIDA],
+},
       {
         id: 92,
         nome: 'Sábio Matemático',
@@ -1105,9 +1831,17 @@ export class OrigemData {
         descricao: `
         <p>Você estudou as complexas equações que os sar-allan usam para calcular a formação de portais no deserto. Talvez ainda não consiga prever esses eventos tão bem quanto seus mestres, mas sabe usar o poder da matemática para resolver diversos problemas.</p>
         <p><b>Itens.</b> Coleção de livros, luneta.</p>
-        <p><b>Benefícios.</b> Você é treinado em Conhecimento. Além disso, aprende e pode lançar Concentração de Com bate e Orientação. Estes efeitos não contam como magias (exceto para fins de acúmulo) e não são mágicos — eles provêm de sua habilidade de calcular resultados a partir de uma mistura de geometria, análise de probabilidades e outros campos da matemática.</p>`,
+        <p><b>Benefícios.</b> Você é treinado em Conhecimento. Além disso, aprende e pode lançar Concentração de Combate e Orientação. Estes efeitos não contam como magias (exceto para fins de acúmulo) e não são mágicos — eles provêm de sua habilidade de calcular resultados a partir de uma mistura de geometria, análise de probabilidades e outros campos da matemática.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'478'
+        paginas:'478',
+        temMagia: true,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CONHECIMENTO],
       },
       {
         id: 93,
@@ -1118,7 +1852,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma marcial, gibão de peles.</p>
         <p><b>Benefícios.</b> Você é treinado em Sobrevivência e, se não estiver usando armadura pesada, recebe +1 em rolagens de dano com armas e redução de dano 1.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'478'
+        paginas:'478',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: true,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.DANO],
       },
       {
         id: 94,
@@ -1129,7 +1871,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial, bálsamo restaurador, escudo leve ou pesado, essência de mana, ração de viagem x5, T$ 4d6.</p>
         <p><b>Benefícios.</b> Você é treinado em Guerra e Investigação. Além disso, quando rola na Tabela 8-1: Tesouro por Nível de Desafio (Tormenta20, p. 328), para cada tipo de tesouro (dinheiro ou item) você pode rolar novamente o resultado.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'478'
+        paginas:'478',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_GUERRA, Modificador.PERICIA_INVESTIGACAO],
       },
       {
         id: 95,
@@ -1142,7 +1892,15 @@ export class OrigemData {
         <h5>Tatuagem Mística</h5>
         <p>Os tatuadores tamalus de Khubar podem criar tatuagens especiais com Ofício (tatuador). Essas tatuagens podem terum entre três benefícios: +1 na Defesa, resistência a magia +2 ou a habilidade de lançar uma magia de 1  círculo (atributo-chave Sabedoria). Tatuagens precisam estar visíveis para funcionarem e, quando expostas, ocupam o espaço de um item vestido. Cada tatuagem custa T$ 1.000 x sua quantidade de tatuagens místicas (a primeira custa T$ 1.000, a segunda custa T$ 2.000 e assim progressivamente).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'478'
+        paginas:'478',
+        temMagia: true,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.DEFESA, Modificador.RESISTENCIAS_MAGIA, Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_NOBREZA],
       },
       {
         id: 96,
@@ -1153,7 +1911,15 @@ export class OrigemData {
         <p><b>Itens.</b> Bordão, ração de viagem x5.</p>
         <p><b>Benefícios.</b> Você é treinado em Adestramento e pode gastar 1 minuto e 1 PM para convocar um animal Minúsculo a sua escolha, como um falcão ou gato, em seu auxílio. A criatura convocada fornece +2 nos seus testes de uma perícia específica, adequada às suas capacidades, e permanece auxiliando-o até o fim da cena, quando então retorna para os ermos. Você pode ter um número de criaturas convocadas simultâneas igual à sua Sabedoria (mínimo de 1). O mestre tem a palavra final sobre quais criaturas estão disponíveis e em quais perícias elas podem prestar auxílio.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'479'
+        paginas:'479',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIAS],
       },
       {
         id: 97,
@@ -1164,7 +1930,12 @@ export class OrigemData {
         <p><b>Itens.</b> Trapos surrados, carcaça de couro de algum animal caçado por você (conta como um gibão de peles).</p>
         <p><b>Benefícios.</b>  Você é treinado em Atletismo e recebe +2 em rolagens de dano com armas naturais e ataques desarmados.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'479'
+        paginas:'479',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        bonus: [Modificador.DANO],
       },
       {
         id: 98,
@@ -1175,7 +1946,15 @@ export class OrigemData {
         <p><b>Itens.</b> Arma simples ou marcial, corda, mochila de aventureiro, vara de madeira (3 m).</p>
         <p><b>Benefícios.</b> Você pode usar Sabedoria como atributo-chave de Conhecimento e Nobreza e pode fazer testes dessas perícias mesmo sem treinamento. Além disso, recebe +1 em Fortitude e Vontade.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'479'
+        paginas:'479',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CONHECIMENTO, Modificador.PERICIA_NOBREZA, Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_VONTADE],
       },
       {
         id: 99,
@@ -1186,7 +1965,15 @@ export class OrigemData {
         <p><b>Itens.</b> Essência de sombra, gazua, estojo de disfarces.</p>
         <p><b>Benefícios.</b> Você recebe +2 em Enganação e Furtividade e pode usar Carisma como atributo-chave de Ladinagem (em vez de Destreza).</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'479'
+        paginas:'479',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_LADINAGEM],
       },
       {
         id: 100,
@@ -1196,8 +1983,15 @@ export class OrigemData {
         <p>Você assistiu a algumas aulas na Academia Arcana. Não se tornou um arcanista, mas aprendeu a lidar com magias e enjambrar alguns truques!</p>
         <p><b>Itens.</b> Três pergaminhos de magias arcanas de 1º círculo à sua escolha.</p>
         <p><b>Benefícios.</b> Você recebe resistência a magia +2 e pode ativar pergaminhos de todas as magias arcanas de 1º círculo como se as conhecesse.</p>`,
-        referencias:Referencia.ATLAS ,
-        paginas:'479'
+        referencias:Referencia.ATLAS,
+        paginas:'479',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        bonus: [Modificador.RESISTENCIAS_MAGIA],
       },
       {
         id: 101,
@@ -1208,7 +2002,15 @@ export class OrigemData {
         <p><b>Itens.</b> Bálsamo restaurador, essência de mana.</p>
         <p><b>Benefícios.</b> Você pode usar Sabedoria como atributo-chave de Misticismo (em vez de Inteligência). Além disso, é acompanhado por um kami incorpóreo e invisível. Ele é um parceiro especial, que permite que você veja criaturas incorpóreas invisíveis e afete criaturas com seus ataques e habilidades como se fossem mágicos, e não conta em seu limite de parceiros. Além disso, uma vez por rodada você pode gastar 1 PM para executar o equivalente a uma ação de movimento que só pode ser usada para manipular um objeto solto em alcance curto. O kami não pode se afastar além de alcance curto de você. Se for destruído por qualquer efeito, o kami desaparece, retornando no início da próxima cena.</p>`,
         referencias:Referencia.ATLAS ,
-        paginas:'479'
+        paginas:'479',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_MISTICISMO],
       },
       {
         id: 102,
@@ -1219,7 +2021,15 @@ export class OrigemData {
         <p><b>Itens.</b> Tabardo com o símbolo de Khalmyr, uma coleção de livros à sua escolha.</p>
         <p><b>Benefícios.</b> Você é treinado em Conhecimento, Diplomacia e Nobreza. Além disso, uma vez por cena pode usar Diplomacia para mudar atitude como uma ação livre.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CONHECIMENTO, Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_NOBREZA],
       },
       {
         id: 103,
@@ -1230,7 +2040,15 @@ export class OrigemData {
         <p><b>Itens.</b> Bálsamo restaurador, instrumentos de Ofício (alquimista), maleta de medicamentos.</p>
         <p><b>Benefícios.</b> Você é treinado em Cura e Ofício (alquimista). Além disso, pode fabricar poções de duas fórmulas de 1º círculo à sua escolha, como se tivesse o poder Alquimista Iniciado (Tormenta20, p. 68).</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: true,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CURA, Modificador.PERICIA_OFICIO],
       },
       {
         id: 104,
@@ -1241,7 +2059,15 @@ export class OrigemData {
         <p><b>Itens: </b> Clava, um gato (um parceiro perseguidor iniciante), T$ 50 (recompensa por sua última caçada).</p>
         <p><b>Benefícios.</b> Você é treinado em Furtividade, Investigação e Sobrevivência e recebe +2 em testes de perícias contra criaturas menores que você.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_INVESTIGACAO, Modificador.PERICIAS],
       },
       {
         id: 105,
@@ -1252,7 +2078,15 @@ export class OrigemData {
         <p><b>Itens: </b> Manoplas ou uma arma marcial.</p>
         <p><b>Benefícios.</b> Na primeira vez em cada cena em que você faz a ação agredir, pode fazer um ataque extra.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.ACERTO, Modificador.DANO],
       },
       {
         id: 106,
@@ -1263,7 +2097,15 @@ export class OrigemData {
         <p><b>Itens: </b> Algemas, lampião, uma arma corpo a corpo simples ou marcial a sua escolha.</p>
         <p><b>Benefícios.</b> Você recebe +2 em testes de manobras de combate e resistência a efeitos mentais +5. Além disso, é treinado em Intimidação ou Intuição, a sua escolha.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.MANOBRA, Modificador.RESISTENCIAS, Modificador.PERICIA_INTIMIDACAO, Modificador.PERICIA_INTUICAO],
       },
       {
         id: 107,
@@ -1274,7 +2116,15 @@ export class OrigemData {
         <p><b>Itens: </b> Instrumentos de Ofício (carpinteiro), uma arma de corte a sua escolha.</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (artesão). Além disso, recebe redução de corte 2 e, em suas mãos, armas de corte ignoram 5 pontos de redução de dano</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: true,
+        concedeDinheiro: false,
+        concedeFerramenta: false, 
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO],
       },
       {
         id: 108,
@@ -1285,7 +2135,15 @@ export class OrigemData {
         <p><b>Itens: </b> Dois equipamentos de aventura de até T$ 150 cada à sua escolha.</p>
         <p><b>Benefícios.</b> Você é treinado em Fortitude e Percepção. No início de cada aventura, pode fazer um teste de Percepção (CD 15 + metade do seu nível). Se passar, encontra um tesouro correspondente a seu próprio ND, escolhido pelo mestre ou rolado nas colunas Dinheiro e Itens da Tabela 8-2: Tesouro por Nível de Desafio (Tormenta20, p. 328).</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false, 
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_PERCEPCAO],
       },
       {
         id: 109,
@@ -1296,8 +2154,16 @@ export class OrigemData {
         <p><b>Itens: </b> Instrumentos de barbeiro, maleta de medicamentos.</p>
         <p><b>Benefícios.</b> Você é treinado em Cura e Ofício (barbeiro). Além disso, pode gastar uma ação completa e 2 PM para remover uma das seguintes condições de uma criatura adjacente: abalado, alquebrado, apavorado, atordoado, cego, confuso, debilitado, enjoado, envenenado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, ofuscado, paralisado, pasmo ou surdo. Contudo, a criatura também perde 1d6 pontos de vida.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
-      },
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CURA, Modificador.PERICIA_OFICIO],
+},
       {
         id: 110,
         nome: 'Citadino Abastado',
@@ -1307,7 +2173,15 @@ export class OrigemData {
         <p><b>Itens: </b> Uma arma, armadura, ferramenta ou vestuário no valor de até T$ 500.</p>
         <p><b>Benefícios.</b> Você é treinado em Nobreza e um Ofício à sua escolha. Se estiver em uma cidade grande (a critério do mestre), pode gastar tibares para aprender algum conhecimento local útil. O custo é T$ 10 x seu nível. Se fizer isso, escolha um poder de combate, de destino ou de uma de suas classes cujos pré-requisitos você cumpra (o mestre determina se um poder está disponível na cidade). Até o fim da aventura, ou até usar esta habilidade novamente, você pode usar o poder escolhido por uma cena.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_NOBREZA, Modificador.PERICIA_OFICIO],
       },
       {
         id: 111,
@@ -1318,7 +2192,15 @@ export class OrigemData {
         <p><b>Itens: </b> Cavalo ou trobo, carroça.</p>
         <p><b>Benefícios.</b> Você é treinado em Adestramento e Pilotagem e, quando está conduzindo um veículo, você e o veículo recebem +2 na Defesa e em testes de resistência.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false, 
+        concedeParceiro: false,
+        bonus: [Modificador.DEFESA, Modificador.RESISTENCIAS],
       },
       {
         id: 112,
@@ -1329,7 +2211,15 @@ export class OrigemData {
         <p><b>Itens: </b> Instrumentos de pedreiro ou uma ferramenta pesada (mesmas estatísticas de uma maça ou lança, a sua escolha).</p>
         <p><b>Benefícios.</b> Você é treinado em Fortitude e Ofício (pedreiro). Além disso, sabe encontrar pontos fracos em construções e estruturas. Pode pagar 2 PM para você ou um aliado em alcance curto ignorar 5 pontos da redução de dano por uma cena.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_OFICIO],
       },
       {
         id: 113,
@@ -1340,7 +2230,15 @@ export class OrigemData {
         <p><b>Itens: </b> Uma arma de fogo, ou 10 doses de venenos, com preço total de até T$ 500.</p>
         <p><b>Benefícios.</b> Você é treinado em Enganação e Ladinagem e recebe +5 em testes de Ladinagem para ocultar itens em si mesmo ou em veículos. Além disso, sua capacidade de carga aumenta em 2 espaços.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_LADINAGEM, Modificador.CARGA],
       },
       {
         id: 114,
@@ -1351,7 +2249,15 @@ export class OrigemData {
         <p><b>Itens: </b> Faca de corte (como uma adaga, mas com dano de corte), instrumentos de coureiro, T$ 100 em itens alquímicos.</p>
         <p><b>Benefícios.</b> Você é treinado em Fortitude e Ofício (coureiro). Além disso, pode gastar 10 minutos e T$ 10 para trabalhar em uma armadura de couro (incluindo couro batido, gibão de peles e brunea) e aumentar a Defesa dela em +1 e reduzir sua penalidade de armadura em –2 por um dia.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_OFICIO, Modificador.DEFESA],
       },
       {
         id: 115,
@@ -1362,7 +2268,15 @@ export class OrigemData {
         <p><b>Itens: </b> Cutelo (mesmas estatísticas de uma foice), instrumentos de cozinheiro aprimorado.</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro). Quando prepara um prato especial, seu benefício dura um dia adicional (se for um benefício com uso diário, ele pode ser usado novamente nesse dia).</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO],
       },
       {
         id: 116,
@@ -1373,7 +2287,15 @@ export class OrigemData {
         <p><b>Itens: </b> Instrumentos de escriba, organizador de pergaminhos, uma coleção de livros à sua escolha.</p>
         <p><b>Benefícios.</b> Você é treinado em Conhecimento e Ofício (escriba) e recebe o poder de bardo Lendas e Histórias (Tormenta20, p. 45). Se receber esse poder novamente, recebe um bônus de +5 ao rolar novamente um teste usando seu efeito.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CONHECIMENTO, Modificador.PERICIA_OFICIO],
       },
       {
         id: 117,
@@ -1384,7 +2306,15 @@ export class OrigemData {
         <p><b>Itens: </b> Estojo de disfarces, gazua, luneta, três doses de cosmético.</p>
         <p><b>Benefícios.</b> Você é treinado em Enganação, Além disso, escolha uma classe na qual você não tenha níveis. Para propósitos de escolher poderes de classe, você conta como um personagem de 1º nível da classe escolhida.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ENGANACAO],
       },
       {
         id: 118,
@@ -1395,7 +2325,15 @@ export class OrigemData {
         <p><b>Itens: </b> Instrumentos de armeiro, martelo leve.</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (armeiro). Além disso, recebe +2 em rolagens de dano com martelos e marretas de qualquer tipo.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.DANO],
       },
       {
         id: 119,
@@ -1406,7 +2344,15 @@ export class OrigemData {
         <p><b>Itens: </b> Maleta de medicamentos, manto eclesiástico, símbolo sagrado.</p>
         <p><b>Benefícios.</b> Você é treinada em Cura. Quando faz um teste de perícia para ajudar, você pode gastar 1 PM para aumentar o bônus da ajuda em +1d4 e, quando usa um efeito de cura, pode gastar 1 PM para aumentar esse efeito em +1 dado do mesmo tipo.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_CURA, Modificador.RECUPERACAO_VIDA],
       },
       {
         id: 120,
@@ -1417,7 +2363,15 @@ export class OrigemData {
         <p><b>Itens: </b> Instrumentos de cozinheiro, T$ 36 em ingredientes para produzir gorad quente.</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro) e, quando prepara um prato especial, pode gastar T$ 6 a mais para adicionar gorad a ele. Além de seus benefícios normais, um prato especial com gorad fornece 2 PM temporários por patamar do comensal.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.MANA],
       },
       {
         id: 121,
@@ -1428,7 +2382,15 @@ export class OrigemData {
         <p><b>Itens: </b> Uma arma simples ou ferramenta a sua escolha de até T$ 100.</p>
         <p><b>Benefícios.</b> Você é treinado em Sobrevivência e recebe resistência a magia +5.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_SOBREVIVENCIA, Modificador.RESISTENCIAS_MAGIA],
       },
       {
         id: 122,
@@ -1439,7 +2401,15 @@ export class OrigemData {
         <p><b>Itens: </b> Um ou mais itens somando T$ 100 que pertenciam a antigas vítim... ahem, interrogados.</p>
         <p><b>Benefícios.</b> Você é treinado em Intimidação e Investigação e recebe +1 na margem de ameaça contra criaturas feridas (PV abaixo do total), pois aprendeu a bater onde mais dói.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.MARGEM_AMEACA, Modificador.PERICIA_INTIMIDACAO],
       },
       {
         id: 123,
@@ -1450,7 +2420,15 @@ export class OrigemData {
         <p><b>Itens: </b> Uma pá (mesmas estatísticas de uma lança) e um pé de cabra.</p>
         <p><b>Benefícios.</b> Você é treinado em Ladinagem e Sobrevivência e recebe +2 na Defesa e em testes de perícia contra mortos-vivos. Além disso, recebe redução de trevas 5 (ou, se for um morto-vivo, recupera +1 PV por dado de dano de trevas).</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: true,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_LADINAGEM, Modificador.PERICIA_SOBREVIVENCIA, Modificador.DEFESA],
       },
       {
         id: 124,
@@ -1459,9 +2437,17 @@ export class OrigemData {
         descricao: `
         <p>Nem todo aquele disposto a cantar e dedilhar instrumentos está também disposto a viajar aos confins de Arton, rastejar em masmorras perigosas e receber baforadas de dragões. Muitos ficam mais que satisfeitos ao alegrar trabalhadores cansados em tavernas, animar festividades coloridas ou entreter nobres entediados, sem riscos maiores que uma ocasional fruta ou caneca arremessada. Isto é, assim você acreditava. Antes de conhecer aquele grupo de aventureiros, empolgar-se com suas histórias, encantar-se com a arcanista élfica de cabelos dourados como — ahem, enfim, você encontrou motivação para acompanhá-los. Como bardo? Talvez, talvez não. Brandir aquele machado não parece tão difícil...</p>
         <p><b>Itens: </b> Um instrumento musical de até T$ 35 à sua escolha.</p>
-        <p><b>Benefícios.</b> Você é treinado em Atuaçãoe recebe um poder de música de bardo, escolhido entre Balada Fascinante, Canção Assustadora e Melodia Curativa.</p>`,
+        <p><b>Benefícios.</b> Você é treinado em Atuação e recebe um poder de música de bardo, escolhido entre Balada Fascinante, Canção Assustadora e Melodia Curativa.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: true,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: true,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ATUACAO],
       },
       {
         id: 125,
@@ -1472,7 +2458,15 @@ export class OrigemData {
         <p><b>Itens: </b> Cavalo com sela, mochila de aventureiro, traje de viajante.</p>
         <p><b>Benefícios.</b> Você recebe +3m em seu deslocamento e +2 em testes de resistência.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: true,
+        bonus: [Modificador.DESLOCAMENTO, Modificador.RESISTENCIAS],
       },
       {
         id: 126,
@@ -1483,7 +2477,15 @@ export class OrigemData {
         <p><b>Itens: </b> Arco curto, 20 flechas, uma bola (ou outro objeto simples) com uma cara pintada e nome de gente.</p>
         <p><b>Benefícios.</b> Você recebe +5 PV e +2 PM. Além disso, uma vez por cena pode gastar 2 PM para receber um dos seguintes benefícios até o fim da cena: treinamento em uma perícia; proficiência em uma arma, armadura ou escudo; usar uma ferramenta no lugar de outra.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false, 
+        concedeParceiro: false,
+        bonus: [Modificador.VIDA, Modificador.MANA],
       },
       {
         id: 127,
@@ -1494,7 +2496,15 @@ export class OrigemData {
         <p><b>Itens: </b> Instrumentos de Ofício (cozinheiro), rolo de massa (mesmas estatísticas de uma clava).</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro). Além disso, sua profissão fortificou seus braços! Você recebe +1 em rolagens de dano com armas de impacto e pode substituir testes de Atletismo por testes de Ofício (cozinheiro).</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.PERICIA_ATLETISMO, Modificador.DANO],
       },
       {
         id: 128,
@@ -1505,7 +2515,15 @@ export class OrigemData {
         <p><b>Itens: </b> Andrajos, esmolas que guardou (1 bálsamo restaurador e 1 essência de mana).</p>
         <p><b>Benefícios.</b> Você é muito discreto, recebendo +2 em Enganação e Furtividade. Além disso, aprendeu a aproveitar o máximo de cada recurso e a partilhar do pouco que tinha com seus companheiros em dificuldade. Sempre que usa um alimento, preparado alquímico ou poção com efeito aleatório, pode rolar seu efeito duas vezes e usar o melhor resultado, ou pode dividir o item com um aliado adjacente (ele também gasta a ação para consumi-lo e recebe o benefício normal, mas você gasta apenas um item).</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: false,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_FURTIVIDADE],
       },
       {
         id: 129,
@@ -1516,7 +2534,15 @@ export class OrigemData {
         <p><b>Itens: </b> Bolsa cheia de minhocas, instrumentos de pescador.</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (pescador) e Sobrevivência. Além disso, você sabe aguardar o instante exato de puxar o anzol. Recebe +2 em Iniciativa e, sempre que prepara uma ação (Tormenta20, p. 234), recebe +2 em testes para executá-la.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.PERICIA_SOBREVIVENCIA, Modificador.PERICIA_INICIATIVA],
       },
       {
         id: 130,
@@ -1527,7 +2553,15 @@ export class OrigemData {
         <p><b>Itens: </b> Balde e vassoura (mesmas estatísticas de um bordão), tabardo de seu patrono.</p>
         <p><b>Benefícios.</b>  Você é treinado em Diplomacia e Ofício (serviçal). Além disso, recebe +2 em testes de Diplomacia e Enganação contra alvos que tenham status ou posição superior à sua (ou que acreditam ter) e pode substituir testes de Nobreza por testes de Ofício (serviçal).</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: true,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_OFICIO, Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_NOBREZA],
       },
       {
         id: 131,
@@ -1538,7 +2572,15 @@ export class OrigemData {
         <p><b>Itens: </b> Equipamento de viagem, instrumentos de ofício, maleta de medicamentos.</p>
         <p><b>Benefícios.</b> Sempre que faz um teste para ajudar, o bônus que você fornece aumenta em +2. Além disso, quando flanqueia um inimigo, o bônus que você e seus aliados recebem em testes de ataque aumenta para +4.</p>`,
         referencias:Referencia.HEROIS ,
-        paginas:''
+        paginas:'',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.ACERTO],
       }
     ];
   }

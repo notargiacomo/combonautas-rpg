@@ -31,7 +31,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { Deslocamento } from '../../enum/deslocamento.enum';
-import { ModificadorRacial } from '../../enum/modificador.racial.enum';
+import { Modificador } from '../../enum/modificador.enum';
 import { Referencia } from '../../enum/referencia.enum';
 import { Sentido } from '../../enum/sentido.enum';
 import { Tamanho } from '../../enum/tamanho.enum';
@@ -91,8 +91,8 @@ export class RacasComponent implements OnInit {
   tamanhos = Object.values(Tamanho);
   referencias = Object.values(Referencia);
   tipos = Object.values(TipoCriatura);
-  bonus = Object.values(ModificadorRacial);
-  penalidade = Object.values(ModificadorRacial);
+  bonus = Object.values(Modificador);
+  penalidade = Object.values(Modificador);
 
   constructor(
     private readonly racaService: RacaService,

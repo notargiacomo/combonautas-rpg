@@ -8,7 +8,7 @@ import { Chave } from '../enum/chave.enum';
 import { OpcoesSelecao } from '../enum/opcoes.selecao';
 import { AcrecimoAtributo } from '../enum/acrecimo.atributo.enum';
 import { DecrecimoAtributo } from '../enum/decrecimo.atributo.enum';
-import { ModificadorRacial } from '../enum/modificador.racial.enum';
+import { Modificador } from '../enum/modificador.enum';
 import { TipoCriatura } from '../enum/tipo.criatura.enum';
 
 @Injectable({
@@ -84,8 +84,8 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_PERCEPCAO, ModificadorRacial.PERICIA_SOBREVIVENCIA, ModificadorRacial.VIDA, ModificadorRacial.ACERTO],
-        penalidade: [ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_SOBREVIVENCIA, Modificador.VIDA, Modificador.ACERTO],
+        penalidade: [Modificador.DESLOCAMENTO],
       },
       {
         id: 3,
@@ -116,7 +116,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.REDUCAO_CUSTO_MANA, ModificadorRacial.DEFESA, ModificadorRacial.PERICIA_ADESTRAMENTO],
+        bonus: [Modificador.REDUCAO_CUSTO_MANA, Modificador.DEFESA, Modificador.PERICIA_ADESTRAMENTO],
         penalidade: [],
       },
       {
@@ -148,7 +148,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.MANA, ModificadorRacial.PERICIA_MISTICISMO, ModificadorRacial.PERICIA_PERCEPCAO],
+        bonus: [Modificador.DESLOCAMENTO, Modificador.MANA, Modificador.PERICIA_MISTICISMO, Modificador.PERICIA_PERCEPCAO],
         penalidade: [],
       },
       {
@@ -180,7 +180,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIAS_COM_FERRAMENTA, ModificadorRacial.PERICIA_FORTITUDE, ModificadorRacial.DESCANSO],
+        bonus: [Modificador.PERICIAS_COM_FERRAMENTA, Modificador.PERICIA_FORTITUDE, Modificador.DESCANSO],
         penalidade: [],
       },
       {
@@ -212,7 +212,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_A_ESCOLHER],
+        bonus: [Modificador.PERICIA_A_ESCOLHER],
         penalidade: [],
       },
       {
@@ -244,7 +244,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DEFESA],
+        bonus: [Modificador.DEFESA],
         penalidade: [],
       },
       {
@@ -276,7 +276,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
 
@@ -310,8 +310,8 @@ export class RacaData {
         temRD: true,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DEFESA, ModificadorRacial.RECUPERACAO_VIDA, ModificadorRacial.DESCANSO, ModificadorRacial.RECUPERACAO_MANA, ModificadorRacial.RECUPERACAO_MANA],
-        penalidade: [ModificadorRacial.DESCANSO, ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.DEFESA, Modificador.RECUPERACAO_VIDA, Modificador.DESCANSO, Modificador.RECUPERACAO_MANA, Modificador.RECUPERACAO_MANA],
+        penalidade: [Modificador.DESCANSO, Modificador.DESLOCAMENTO],
       },
       {
         id: 10,
@@ -342,8 +342,8 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PASSO_DANO, ModificadorRacial.PERICIA_ENGANACAO],
-        penalidade: [ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.PASSO_DANO, Modificador.PERICIA_ENGANACAO],
+        penalidade: [Modificador.DESLOCAMENTO],
       },
       {
         id: 11,
@@ -374,7 +374,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.REDUCAO_CUSTO_MANA, ModificadorRacial.PERICIA_OFICIO],
+        bonus: [Modificador.REDUCAO_CUSTO_MANA, Modificador.PERICIA_OFICIO],
         penalidade: [],
       },
       {
@@ -406,7 +406,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.RESISTENCIAS],
+        bonus: [Modificador.RESISTENCIAS],
         penalidade: [],
       },
       {
@@ -439,7 +439,7 @@ export class RacaData {
         temDefeito: true,
         temArmaNatural: false,
         bonus: [],
-        penalidade: [ModificadorRacial.DESCANSO],
+        penalidade: [Modificador.DESCANSO],
       },
       {
         id: 14,
@@ -470,7 +470,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.REDUCAO_CUSTO_MANA, ModificadorRacial.DANO, ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.REDUCAO_CUSTO_MANA, Modificador.DANO, Modificador.DESLOCAMENTO],
         penalidade: [],
       },
       {
@@ -502,7 +502,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.DESLOCAMENTO, Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
       {
@@ -534,7 +534,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_DIPLOMACIA, ModificadorRacial.PERICIA_INTUICAO, ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_INTUICAO, Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
       {
@@ -566,7 +566,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_ENGANACAO, ModificadorRacial.PERICIA_FURTIVIDADE, ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_FURTIVIDADE, Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
       {
@@ -598,7 +598,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DEFESA, ModificadorRacial.PERICIA_FURTIVIDADE],
+        bonus: [Modificador.DEFESA, Modificador.PERICIA_FURTIVIDADE],
         penalidade: [],
       },
 
@@ -633,7 +633,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_INTIMIDACAO, ModificadorRacial.PERICIA_PERCEPCAO, ModificadorRacial.PERICIA_SOBREVIVENCIA, ModificadorRacial.DANO],
+        bonus: [Modificador.PERICIA_INTIMIDACAO, Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_SOBREVIVENCIA, Modificador.DANO],
         penalidade: [],
       },
       {
@@ -665,7 +665,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DANO, ModificadorRacial.PERICIA_PERCEPCAO, ModificadorRacial.PERICIA_SOBREVIVENCIA, ModificadorRacial.PERICIA_FORTITUDE],
+        bonus: [Modificador.DANO, Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_SOBREVIVENCIA, Modificador.PERICIA_FORTITUDE],
         penalidade: [],
       },
       {
@@ -697,7 +697,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.ACERTO, ModificadorRacial.PERICIA_ATLETISMO],
+        bonus: [Modificador.ACERTO, Modificador.PERICIA_ATLETISMO],
         penalidade: [],
       },
       {
@@ -729,8 +729,8 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.VIDA, ],
-        penalidade: [ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.VIDA, ],
+        penalidade: [Modificador.DESLOCAMENTO],
       },
       {
         id: 23,
@@ -761,8 +761,8 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DANO],
-        penalidade: [ModificadorRacial.PERICIA_INTUICAO, ModificadorRacial.PERICIA_VONTADE],
+        bonus: [Modificador.DANO],
+        penalidade: [Modificador.PERICIA_INTUICAO, Modificador.PERICIA_VONTADE],
       },
       {
         id: 24,
@@ -793,7 +793,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PASSO_DANO, ModificadorRacial.ACERTO],
+        bonus: [Modificador.PASSO_DANO, Modificador.ACERTO],
         penalidade: [],
       },
       {
@@ -825,7 +825,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DANO, ModificadorRacial.PERICIA_OFICIO, ModificadorRacial.PERICIA_FURTIVIDADE],
+        bonus: [Modificador.DANO, Modificador.PERICIA_OFICIO, Modificador.PERICIA_FURTIVIDADE],
         penalidade: [],
       },
       {
@@ -857,7 +857,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.DESLOCAMENTO],
         penalidade: [],
       },
       {
@@ -889,7 +889,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DANO, ModificadorRacial.MANA],
+        bonus: [Modificador.DANO, Modificador.MANA],
         penalidade: [],
       },
       {
@@ -920,7 +920,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DEFESA, ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.DEFESA, Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
       {
@@ -952,7 +952,7 @@ export class RacaData {
         temRD: true,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.RESISTENCIAS],
+        bonus: [Modificador.RESISTENCIAS],
         penalidade: [],
       },
       {
@@ -984,7 +984,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DEFESA, ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.DEFESA, Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
       {
@@ -1015,7 +1015,7 @@ export class RacaData {
         temRD: true,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DANO, ModificadorRacial.MARGEM_AMEACA, ModificadorRacial.PERICIAS, ModificadorRacial.RECUPERACAO_VIDA, ModificadorRacial.REDUCAO_CUSTO_MANA, ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIA_ATLETISMO],
+        bonus: [Modificador.DANO, Modificador.MARGEM_AMEACA, Modificador.PERICIAS, Modificador.RECUPERACAO_VIDA, Modificador.REDUCAO_CUSTO_MANA, Modificador.DESLOCAMENTO, Modificador.PERICIA_ATLETISMO],
         penalidade: [],
       },
       {
@@ -1047,7 +1047,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PASSO_DANO, ModificadorRacial.RESISTENCIAS, ModificadorRacial.PERICIA_INTIMIDACAO, ModificadorRacial.MULTIPLICADOR_DANO],
+        bonus: [Modificador.PASSO_DANO, Modificador.RESISTENCIAS, Modificador.PERICIA_INTIMIDACAO, Modificador.MULTIPLICADOR_DANO],
         penalidade: [],
       },
       {
@@ -1079,7 +1079,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_ENGANACAO, ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIA_PERCEPCAO],
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.DESLOCAMENTO, Modificador.PERICIA_PERCEPCAO],
         penalidade: [],
       },
       {
@@ -1111,7 +1111,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_DIPLOMACIA, ModificadorRacial.PERICIA_INVESTIGACAO],
+        bonus: [Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_INVESTIGACAO],
         penalidade: [],
       },
       {
@@ -1143,7 +1143,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_SOBREVIVENCIA, ModificadorRacial.MANA, ModificadorRacial.DANO],
+        bonus: [Modificador.PERICIA_SOBREVIVENCIA, Modificador.MANA, Modificador.DANO],
         penalidade: [],
       },
       {
@@ -1175,7 +1175,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIA_INTIMIDACAO, ModificadorRacial.PERICIA_SOBREVIVENCIA],
+        bonus: [Modificador.DESLOCAMENTO, Modificador.PERICIA_INTIMIDACAO, Modificador.PERICIA_SOBREVIVENCIA],
         penalidade: [],
       },
       {
@@ -1207,7 +1207,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DEFESA],
+        bonus: [Modificador.DEFESA],
         penalidade: [],
       },
       {
@@ -1239,7 +1239,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIA_PERCEPCAO, ModificadorRacial.PERICIA_SOBREVIVENCIA],
+        bonus: [Modificador.DESLOCAMENTO, Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_SOBREVIVENCIA],
         penalidade: [],
       },
       {
@@ -1271,7 +1271,7 @@ export class RacaData {
         temRD: true,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_SOBREVIVENCIA, ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.PERICIA_SOBREVIVENCIA, Modificador.DESLOCAMENTO],
         penalidade: [],
       },
       {
@@ -1303,7 +1303,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_ATLETISMO, ModificadorRacial.DESCANSO, ModificadorRacial.PERICIA_SOBREVIVENCIA],
+        bonus: [Modificador.PERICIA_ATLETISMO, Modificador.DESCANSO, Modificador.PERICIA_SOBREVIVENCIA],
         penalidade: [],
       },
       {
@@ -1335,8 +1335,8 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DEFESA],
-        penalidade: [ModificadorRacial.DESCANSO],
+        bonus: [Modificador.DEFESA],
+        penalidade: [Modificador.DESCANSO],
       },
       {
         id: 43,
@@ -1367,7 +1367,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_PERCEPCAO, ModificadorRacial.PERICIA_VONTADE, ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_VONTADE, Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
       {
@@ -1399,7 +1399,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DANO, ModificadorRacial.RESISTENCIAS],
+        bonus: [Modificador.DANO, Modificador.RESISTENCIAS],
         penalidade: [],
       },
       {
@@ -1431,7 +1431,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIAS],
+        bonus: [Modificador.DESLOCAMENTO, Modificador.PERICIAS],
         penalidade: [],
       },
       {
@@ -1463,7 +1463,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_FURTIVIDADE, ModificadorRacial.MANOBRA, ModificadorRacial.DANO, ModificadorRacial.PERICIA_DIPLOMACIA, ModificadorRacial.CD],
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.MANOBRA, Modificador.DANO, Modificador.PERICIA_DIPLOMACIA, Modificador.CD],
         penalidade: [],
       },
       {
@@ -1495,7 +1495,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.ACERTO],
+        bonus: [Modificador.ACERTO],
         penalidade: [],
       },
       {
@@ -1526,7 +1526,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIA_REFLEXOS, ModificadorRacial.PERICIA_REFLEXOS],
+        bonus: [Modificador.DESLOCAMENTO, Modificador.PERICIA_REFLEXOS, Modificador.PERICIA_REFLEXOS],
         penalidade: [],
       },
       {
@@ -1558,7 +1558,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.MANOBRA, ModificadorRacial.DEFESA, ModificadorRacial.PERICIA_FURTIVIDADE],
+        bonus: [Modificador.MANOBRA, Modificador.DEFESA, Modificador.PERICIA_FURTIVIDADE],
         penalidade: [],
       },
       {
@@ -1590,7 +1590,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_FURTIVIDADE, ModificadorRacial.PERICIA_PERCEPCAO],
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_PERCEPCAO],
         penalidade: [],
       },
       {
@@ -1622,7 +1622,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_INTIMIDACAO, ModificadorRacial.PERICIA_PERCEPCAO],
+        bonus: [Modificador.PERICIA_INTIMIDACAO, Modificador.PERICIA_PERCEPCAO],
         penalidade: [],
       },
       {
@@ -1654,7 +1654,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.DANO, ModificadorRacial.MARGEM_AMEACA],
+        bonus: [Modificador.DANO, Modificador.MARGEM_AMEACA],
         penalidade: [],
       },
       {
@@ -1686,7 +1686,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIA_FURTIVIDADE, ModificadorRacial.PERICIA_PERCEPCAO],
+        bonus: [Modificador.DESLOCAMENTO, Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_PERCEPCAO],
         penalidade: [],
       },
       {
@@ -1782,7 +1782,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.ACERTO, ModificadorRacial.DEFESA, ModificadorRacial.PERICIA_FURTIVIDADE, ModificadorRacial.PERICIA_SOBREVIVENCIA],
+        bonus: [Modificador.ACERTO, Modificador.DEFESA, Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_SOBREVIVENCIA],
         penalidade: [],
       },
       {
@@ -1814,8 +1814,8 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_ENGANACAO, ModificadorRacial.DEFESA, ModificadorRacial.RESISTENCIAS],
-        penalidade: [ModificadorRacial.RESISTENCIAS],
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.DEFESA, Modificador.RESISTENCIAS],
+        penalidade: [Modificador.RESISTENCIAS],
       },
       {
         id: 58,
@@ -1846,8 +1846,8 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_ENGANACAO, ModificadorRacial.DEFESA, ModificadorRacial.RESISTENCIAS],
-        penalidade: [ModificadorRacial.RESISTENCIAS],
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.DEFESA, Modificador.RESISTENCIAS],
+        penalidade: [Modificador.RESISTENCIAS],
       },
       {
         id: 59,
@@ -1878,7 +1878,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIA_MISTICISMO, ModificadorRacial.RESISTENCIAS_MAGIA, ModificadorRacial.RECUPERACAO_VIDA],
+        bonus: [Modificador.PERICIA_MISTICISMO, Modificador.RESISTENCIAS_MAGIA, Modificador.RECUPERACAO_VIDA],
         penalidade: [],
       },
       {
@@ -1910,7 +1910,7 @@ export class RacaData {
         temRD: true,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.MANOBRA],
+        bonus: [Modificador.MANOBRA],
         penalidade: [],
       },
       {
@@ -1941,8 +1941,8 @@ export class RacaData {
         temRD: true,
         temDefeito: true,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.REDUCAO_CUSTO_MANA, ModificadorRacial.PERICIA_ADESTRAMENTO, ModificadorRacial.PERICIA_SOBREVIVENCIA, ModificadorRacial.PERICIA_MISTICISMO],
-        penalidade: [ModificadorRacial.DESLOCAMENTO, ModificadorRacial.PERICIA_DIPLOMACIA, ModificadorRacial.PERICIA_INICIATIVA, ModificadorRacial.PERICIA_LUTA, ModificadorRacial.PERICIA_PERCEPCAO],
+        bonus: [Modificador.REDUCAO_CUSTO_MANA, Modificador.PERICIA_ADESTRAMENTO, Modificador.PERICIA_SOBREVIVENCIA, Modificador.PERICIA_MISTICISMO],
+        penalidade: [Modificador.DESLOCAMENTO, Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_INICIATIVA, Modificador.PERICIA_LUTA, Modificador.PERICIA_PERCEPCAO],
       },
       {
         id: 62,
@@ -1973,7 +1973,7 @@ export class RacaData {
         temRD: false,
         temDefeito: true,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.REDUCAO_CUSTO_MANA],
+        bonus: [Modificador.REDUCAO_CUSTO_MANA],
         penalidade: [],
       },
       {
@@ -2037,7 +2037,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: false,
-        bonus: [ModificadorRacial.PERICIAS, ModificadorRacial.MANA],
+        bonus: [Modificador.PERICIAS, Modificador.MANA],
         penalidade: [],
       },
       {
@@ -2069,7 +2069,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_ATUACAO, ModificadorRacial.PERICIA_FORTITUDE, ModificadorRacial.REDUCAO_CUSTO_MANA, ModificadorRacial.DESLOCAMENTO],
+        bonus: [Modificador.PERICIA_ATUACAO, Modificador.PERICIA_FORTITUDE, Modificador.REDUCAO_CUSTO_MANA, Modificador.DESLOCAMENTO],
         penalidade: [],
       },
       {
@@ -2101,7 +2101,7 @@ export class RacaData {
         temRD: false,
         temDefeito: false,
         temArmaNatural: true,
-        bonus: [ModificadorRacial.PERICIA_MISTICISMO, ModificadorRacial.PERICIA_PERCEPCAO, ModificadorRacial.DESLOCAMENTO, ModificadorRacial.DEFESA, ModificadorRacial.PERICIA_REFLEXOS],
+        bonus: [Modificador.PERICIA_MISTICISMO, Modificador.PERICIA_PERCEPCAO, Modificador.DESLOCAMENTO, Modificador.DEFESA, Modificador.PERICIA_REFLEXOS],
         penalidade: [],
       },
       // {

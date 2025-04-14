@@ -26,12 +26,39 @@
           </div>
           <div class="col-sm-2 mt-1">
             <mat-checkbox formControlName="temRD" (change)="consultar()"
-              >Tem Redução de Dano?</mat-checkbox
+            >Tem Redução de Dano?</mat-checkbox
+            >
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-checkbox formControlName="concedeDinheiro" (change)="consultar()"
+              >Concede Dinheiro?</mat-checkbox
+            >
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-checkbox formControlName="concedeFerramenta" (change)="consultar()"
+              >Concede Ferramenta?</mat-checkbox
+            >
+          </div>
+          <div class="col-sm-2 mt-1">
+            <mat-checkbox formControlName="concedeParceiro" (change)="consultar()"
+              >Concede Parceiro?</mat-checkbox
             >
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 mt-1">
+          <div class="col-sm-2 mt-2">
+            <mat-form-field class="select-dobrado">
+              <mat-label>Bonus</mat-label>
+              <mat-select (selectionChange)="consultar()" formControlName="bonus">
+                @for (bonus of bonus; track bonus) {
+                <mat-option [value]="bonus">{{
+                  bonus
+                  }}</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-2 mt-2">
             <mat-form-field class="form-field">
               <mat-label>Origem</mat-label>
               <input
@@ -43,9 +70,9 @@
               />
             </mat-form-field>
           </div>
-          <div class="col-sm-6 mt-1">
+          <div class="col-sm-6 mt-2">
             <section>
-              <div class="button-row d-flex justify-content-end">
+              <div class="button-row mt-2 d-flex justify-content-end">
                 <button class="me-2" (click)="limparFiltros()" mat-flat-button>
                   Limpar Filtros
                 </button>
