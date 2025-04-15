@@ -54,28 +54,25 @@ export class PoderService extends AbstractService{
                   }
     
   
-                  if (typeof valorFiltro === 'string') {
+                  if (typeof valorFiltro === 'string' && valorPoder) {
                     return valorPoder.toUpperCase().includes(valorFiltro.toUpperCase());
                   }
-    
-                  // Comparação padrão (string, boolean etc.)
-                  return valorFiltro === valorPoder;
                 });
               });
             } else {
               filtrados = resultado; // sem filtros = retorna tudo
             }  
-            // filtrados.forEach(
-            //   (poder) => {
-            //     poder.id_deuses?.forEach((id_deus) => {
-            //     this.deusService.getbyId(id_deus).subscribe({
-            //       next: (deus) => {
-            //         poder.deuses === null || poder.deuses === undefined ? poder.deuses = []: '';
-            //         poder.deuses?.push(deus);
-            //       }
-            //     });
-            //   })
-            // });
+            filtrados.forEach(
+              (poder) => {
+                poder.id_deuses?.forEach((id_deus) => {
+                this.deusService.getbyId(id_deus).subscribe({
+                  next: (deus) => {
+                    poder.deuses === null || poder.deuses === undefined ? poder.deuses = []: '';
+                    poder.deuses?.push(deus);
+                  }
+                });
+              })
+            });
 
             return filtrados;
           })
