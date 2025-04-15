@@ -55,7 +55,7 @@ export class OrigemService extends AbstractService {
             });
           } else {
             filtrados = resultado; // sem filtros = retorna tudo
-          }  
+          } 
           return filtrados;
         })
       );

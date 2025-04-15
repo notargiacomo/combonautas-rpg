@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { Poder } from '../model/poder';
-import { TipoPoder } from '../enum/tipo.poder.enum';
 import { Atributo } from '../enum/atributo.enum';
-import { Referencia } from '../enum/referencia.enum';
 import { OpcoesSelecao } from '../enum/opcoes.selecao';
-import { Chave } from '../enum/chave.enum';
+import { Referencia } from '../enum/referencia.enum';
+import { TipoPoder } from '../enum/tipo.poder.enum';
+import { Poder } from '../model/poder';
 
 @Injectable({
   providedIn: 'root',
@@ -888,7 +887,7 @@ export class PoderData {
         id: 72,
         nome: 'Afinidade com a Tormenta',
         descricao:
-          'Você recebe +10 em testes de resistência contra efeitos da Tormenta, de suas criaturas e de devotos de Aharadak. Além disso, seu primeiro poder da Tormenta não conta para perda de Carisma.',
+        `Você recebe +10 em testes de resistência contra efeitos da Tormenta, de suas criaturas e de devotos de Aharadak. Além disso, seu primeiro poder da Tormenta não conta para perda de Carisma.`,
         id_deuses: [1],
         referencias: Referencia.BASICO,
         paginas: '132',
@@ -2113,7 +2112,7 @@ export class PoderData {
         id: 191,
         nome: 'Corromper Equipamento',
         descricao:
-          `Você pode gastar 2 PM para cobrir um item que esteja empunhando com uma substância rubra. Até o fim da cena, o item recebe os benefícios de matéria vermelha (Tormenta20, p. 167), cumulativo com outros materiais especiais. Se usar esse poder em uma arma produzida com Armamento Aberrante, seu custo é reduzido em –1 PM.`,
+          `Você pode gastar 2 PM para cobrir uma arma, um escudo ou um esotérico que esteja empunhando com carapaça quitinosa. Até o fim da cena, o item recebe os benefícios de matéria vermelha (Tormenta20, p. 167), cumulativo com outros materiais especiais. Se usar este poder em uma arma produzida com Armamento Aberrante, seu custo é reduzido em –1 PM.`,
         id_deuses:[1],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2350,7 +2349,7 @@ export class PoderData {
         id: 214,
         nome: 'Mediador da Tempestade',
         descricao:
-          `Você pode falar com lefeu livremente e recebe +5 em testes de Diplomacia e Intuição com criaturas da Tormenta e devotos de Aharadak.`,
+          `Você pode se comunicar com lefeu inteligentes (Int –3 ou maior) livremente e recebe +5 em testes de Diplomacia e Intuição com criaturas da Tormenta e devotos de Aharadak.`,
         id_deuses:[1],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2548,9 +2547,9 @@ export class PoderData {
       },
       {
         id: 229,
-        nome: 'Portal Vivo',
+        nome: 'Espalhar a Corrupção',
         descricao:
-          `Você pode gastar uma ação completa e 2 PM para criar um enxame de insetos rubros em um ponto a sua escolha em alcance curto e com duração sustentada. O enxame tem tamanho Médio e pode passar pelo espaço de outras criaturas. Uma vez por rodada, você pode gastar uma ação de movimento para mover o enxame 9m. No final do seu turno, o enxame causa 2d6 pontos de dano de ácido a qualquer criatura no espaço que ele estiver ocupando. Você pode aprender Enxame Rubro de Ichabod como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. <i><b>e</i></b>`,
+          `Quando chega em uma comunidade, você pode gastar um dia e fazer um teste de Religião (CD 20). Se passar, você planta a semente da corrupção no coração das pessoas em uma área equivalente a uma aldeia, um castelo ou um bairro de uma cidade grande. Por uma semana, ou até você partir do lugar, a categoria de atitude dessas pessoas em relação umas às outras piora em um passo, à medida que o senso moral delas se deteriora e seus piores desejos vêm à tona. Isso pode ser útil para gerar conflitos entre elas, embora caiba a você descobrir exatamente como se aproveitar deles.`,
         id_deuses:[1],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,

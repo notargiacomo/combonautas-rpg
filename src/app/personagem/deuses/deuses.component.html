@@ -10,39 +10,25 @@
         </div>
         <div class="row">
           <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temMagia" (change)="consultar()"
-              >Concede Magia?</mat-checkbox
-            >
+            <mat-checkbox formControlName="temMagia" (change)="consultar()">Concede Magia?</mat-checkbox>
           </div>
           <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temPoderGeral" (change)="consultar()"
-              >Concede Poder Geral?</mat-checkbox
-            >
+            <mat-checkbox formControlName="temPoderGeral" (change)="consultar()">Concede Poder Geral?</mat-checkbox>
           </div>
           <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temPericia" (change)="consultar()"
-              >Concede Perícia Grátis?</mat-checkbox
-            >
+            <mat-checkbox formControlName="temPericia" (change)="consultar()">Concede Perícia Grátis?</mat-checkbox>
           </div>
           <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temRD" (change)="consultar()"
-            >Tem Redução de Dano?</mat-checkbox
-            >
+            <mat-checkbox formControlName="temRD" (change)="consultar()">Tem Redução de Dano?</mat-checkbox>
           </div>
           <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="concedeDinheiro" (change)="consultar()"
-              >Concede Dinheiro?</mat-checkbox
-            >
+            <mat-checkbox formControlName="concedeDinheiro" (change)="consultar()">Concede Dinheiro?</mat-checkbox>
           </div>
           <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="concedeFerramenta" (change)="consultar()"
-              >Concede Ferramenta?</mat-checkbox
-            >
+            <mat-checkbox formControlName="concedeFerramenta" (change)="consultar()">Concede Ferramenta?</mat-checkbox>
           </div>
           <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="concedeParceiro" (change)="consultar()"
-              >Concede Parceiro?</mat-checkbox
-            >
+            <mat-checkbox formControlName="concedeParceiro" (change)="consultar()">Concede Parceiro?</mat-checkbox>
           </div>
         </div>
         <div class="row">
@@ -61,13 +47,7 @@
           <div class="col-sm-2 mt-2">
             <mat-form-field class="form-field">
               <mat-label>Deus</mat-label>
-              <input
-                formControlName="nome"
-                matInput
-                type="text"
-                name="nome"
-                (keyup)="consultar()"
-              />
+              <input formControlName="nome" matInput type="text" name="nome" (keyup)="consultar()" />
             </mat-form-field>
           </div>
           <div class="col-sm-6 mt-2">
@@ -90,30 +70,17 @@
           </div>
         </div>
         <br />
-        <table
-          mat-table
-          [dataSource]="dataSource"
-          multiTemplateDataRows
-          class="mat-elevation-z8"
-        >
+        <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
           @for (column of columnsToDisplay; track column) {
           <ng-container matColumnDef="{{ column }}">
-            <th
-              mat-header-cell
-              *matHeaderCellDef
-              style="text-transform: uppercase"
-            >
+            <th mat-header-cell *matHeaderCellDef style="text-transform: uppercase">
               {{ column }}
             </th>
-            <td
-              mat-cell
-              *matCellDef="let element"
-              style="
+            <td mat-cell *matCellDef="let element" style="
                 height: 0px !important;
                 min-height: 0px !important;
                 max-height: 0px !important;
-              "
-            >
+              ">
               {{ element[column] }}
             </td>
           </ng-container>
@@ -122,24 +89,16 @@
             <th mat-header-cell *matHeaderCellDef aria-label="row actions">
               &nbsp;
             </th>
-            <td
-              mat-cell
-              style="
+            <td mat-cell style="
                 height: 0px !important;
                 min-height: 0px !important;
                 max-height: 0px !important;
-              "
-              *matCellDef="let element"
-            >
-              <button
-                mat-icon-button
-                aria-label="expand row"
-                (click)="
+              " *matCellDef="let element">
+              <button mat-icon-button aria-label="expand row" (click)="
                   expandedElement =
                     expandedElement === element ? null : element;
                   $event.stopPropagation()
-                "
-              >
+                ">
                 @if (expandedElement === element) {
                 <mat-icon>keyboard_arrow_up</mat-icon>
                 } @else {
@@ -149,20 +108,12 @@
             </td>
           </ng-container>
           <ng-container matColumnDef="expandedDetail">
-            <td
-              mat-cell
-              *matCellDef="let element"
-              [attr.colspan]="columnsToDisplayWithExpand.length"
-              style="
+            <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" style="
                 height: 0px !important;
                 min-height: 0px !important;
                 max-height: 0px !important;
-              "
-            >
-              <div
-                class="element-detail-wrapper"
-                [class.element-detail-wrapper-expanded]="isExpanded(element)"
-              >
+              ">
+              <div class="element-detail-wrapper" [class.element-detail-wrapper-expanded]="isExpanded(element)">
                 <div class="element-detail">
                   <mat-tab-group>
                     <mat-tab label="Deus">
@@ -170,32 +121,30 @@
                         <div class="row">
                           <div class="col-sm-12 mt-4 mb-4 d-flex justify-content-center ">
                             <mat-card>
-                              <img [src]="element.simbolo"/>
+                              <img [src]="element.simbolo" />
                             </mat-card>
                           </div>
                         </div>
                         <div class="row">
-                          <div
-                            class="col-sm-12 text-justify"
-                            [innerHTML]="element.descricao"
-                          ></div>
+                          <div class="col-sm-12 text-justify" [innerHTML]="element.descricao"></div>
                         </div>
                       </div>
                     </mat-tab>
                     <mat-tab label="Poderes Concedidos">
                       <div class="row">
                         <p>
-                          (PS: Poderes Mágicoss são marcadas com o símbolo:
-                          <i><b>e</b></i
-                          >.)
+                          (PS: Poderes Mágicos são marcadas com o símbolo:
+                          <i><b>e</b></i>.)
                         </p>
-                        <div
-                          class="col-sm-8 text-justify"
-                          [innerHTML]="element.poderes"
-                        ></div>
+                        <div class="col-sm-8 text-justify">
+                          <div *ngFor="let poder of element.poderes" style=" text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <b>{{poder.nome}}.</b>
+                            <div class="col-sm-12 text-justify" [innerHTML]="poder.descricao"></div>
+                          </div>
+                        </div>
                         <div class="col-sm-4 mb-2">
                           <mat-card>
-                            <img [src]="element.imagem"/>
+                            <img [src]="element.imagem" />
                           </mat-card>
                         </div>
                       </div>
@@ -207,19 +156,10 @@
           </ng-container>
 
           <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
-          <tr
-            mat-row
-            *matRowDef="let element; columns: columnsToDisplayWithExpand"
-            class="example-element-row"
-            [ngClass]="{ zebra: isOdd(element) }"
-            [class.example-expanded-row]="isExpanded(element)"
-            (click)="toggle(element)"
-          ></tr>
-          <tr
-            mat-row
-            *matRowDef="let row; columns: ['expandedDetail']"
-            class="example-detail-row"
-          ></tr>
+          <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand" class="example-element-row"
+            [ngClass]="{ zebra: isOdd(element) }" [class.example-expanded-row]="isExpanded(element)"
+            (click)="toggle(element)"></tr>
+          <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
         </table>
       </mat-card>
     </div>

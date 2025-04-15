@@ -35,6 +35,8 @@ import { Modificador } from '../../enum/modificador.enum';
 import { Referencia } from '../../enum/referencia.enum';
 import { Deus } from '../../model/deus';
 import { DeusService } from '../../service/deus.service';
+import { PoderService } from '../../service/poder.service';
+import { response } from 'express';
 
 @Component({
   selector: 'app-deuses',
@@ -75,7 +77,7 @@ export class DeusesComponent implements OnInit {
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Deus | null;
   isExpandedRow = (index: number, row: any) => row === this.expandedElement;
-  Deuss!: Deus[];
+  deuses!: Deus[];
   
   atributo = [-2, -1, 0, 1, 2, 3];
   numero_registros = 0;
@@ -86,6 +88,7 @@ export class DeusesComponent implements OnInit {
 
   constructor(
     private readonly deusService: DeusService,
+    private readonly poderService: PoderService,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {
@@ -188,15 +191,35 @@ export class DeusesComponent implements OnInit {
           let nome_b = b.nome ? b.nome : 'b';
           return nome_a.localeCompare(nome_b);
         });
-        this.Deuss = response;
+        this.deuses = response;
         this.numero_registros = response.length;
+
+        this.deuses.forEach(deus => {
+          this.poderService.listar({id_deuses:deus.id}).subscribe({
+            next: (response: any[]) => {
+              response.sort((a, b) => {
+                let nome_a = a.nome ? a.nome : 'a';
+                let nome_b = b.nome ? b.nome : 'b';
+                return nome_a.localeCompare(nome_b);
+              });
+              response.forEach(poder => {
+                if (poder.e_poder_magico) {
+                  poder.descricao += '<i><b> e</b></i>';
+                }
+              });
+              deus.poderes = response;
+            }
+          });
+        });
         this.cdr.detectChanges();
       },
+
       error: (response: any[]) => {
         console.log(response);
       },
+
       complete: () => {
-        this.dataSource = new MatTableDataSource(this.Deuss);
+        this.dataSource = new MatTableDataSource(this.deuses);
       },
     });
   }

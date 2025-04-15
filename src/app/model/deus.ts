@@ -1,3 +1,5 @@
+import { Poder } from "./poder";
+
 export interface Deus {
 
   id: number;
@@ -6,7 +8,7 @@ export interface Deus {
   nome_arquivo_poderes?: string;
   nome_arquivo_avatar?: string;
   descricao?: string;
-  poderes?: string;
+  poderes?: Poder[];
   tipo?: string;
   simbolo?: string;
   imagem?: string;
