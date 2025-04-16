@@ -203,6 +203,7 @@ export class DeusesComponent implements OnInit {
                 return nome_a.localeCompare(nome_b);
               });
               response.forEach(poder => {
+                poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
                 if (poder.e_poder_magico) {
                   poder.descricao += '<i><b> e</b></i>';
                 }

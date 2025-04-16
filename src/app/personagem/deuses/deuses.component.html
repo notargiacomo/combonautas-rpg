@@ -9,42 +9,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temMagia" (change)="consultar()">Concede Magia?</mat-checkbox>
-          </div>
-          <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temPoderGeral" (change)="consultar()">Concede Poder Geral?</mat-checkbox>
-          </div>
-          <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temPericia" (change)="consultar()">Concede Perícia Grátis?</mat-checkbox>
-          </div>
-          <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="temRD" (change)="consultar()">Tem Redução de Dano?</mat-checkbox>
-          </div>
-          <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="concedeDinheiro" (change)="consultar()">Concede Dinheiro?</mat-checkbox>
-          </div>
-          <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="concedeFerramenta" (change)="consultar()">Concede Ferramenta?</mat-checkbox>
-          </div>
-          <div class="col-sm-2 mt-1">
-            <mat-checkbox formControlName="concedeParceiro" (change)="consultar()">Concede Parceiro?</mat-checkbox>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-2 mt-2">
-            <mat-form-field class="select-dobrado">
-              <mat-label>Bonus</mat-label>
-              <mat-select (selectionChange)="consultar()" formControlName="bonus">
-                @for (bonus of bonus; track bonus) {
-                <mat-option [value]="bonus">{{
-                  bonus
-                  }}</mat-option>
-                }
-              </mat-select>
-            </mat-form-field>
-          </div>
-          <div class="col-sm-2 mt-2">
+          <div class="col-sm-6 mt-2">
             <mat-form-field class="form-field">
               <mat-label>Deus</mat-label>
               <input formControlName="nome" matInput type="text" name="nome" (keyup)="consultar()" />
@@ -133,12 +98,11 @@
                     <mat-tab label="Poderes Concedidos">
                       <div class="row">
                         <p>
-                          (PS: Poderes Mágicos são marcadas com o símbolo:
-                          <i><b>e</b></i>.)
+                          ps: poderes mágicos são marcadas com o símbolo:
+                          <i><b>e</b></i>.
                         </p>
                         <div class="col-sm-8 text-justify">
                           <div *ngFor="let poder of element.poderes" style=" text-align: justify; margin-bottom: 1em; line-height: 1.6;">
-                            <b>{{poder.nome}}.</b>
                             <div class="col-sm-12 text-justify" [innerHTML]="poder.descricao"></div>
                           </div>
                         </div>

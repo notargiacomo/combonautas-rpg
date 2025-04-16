@@ -1896,7 +1896,7 @@ export class PoderData {
         id: 170,
         nome: 'Abraço da Fênix',
         descricao:
-          `Você se torna imune a fogo. Se fosse sofrer dano mágico de fogo, em vez disso recebe PV temporários em quantidade igual à metade desse dano.`,
+          `Você se torna imune a fogo. Se fosse sofrer dano mágico de fogo, em vez disso cura PV em quantidade igual à metade desse dano (se já faz isso por outro efeito, cura a quantidade completa).`,
         id_deuses:[18],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1904,9 +1904,9 @@ export class PoderData {
       },
       {
         id: 171,
-        nome: 'Adaga Lunar',
+        nome: 'Adaga Noturna',
         descricao:
-          `Você pode gastar 1 PM para fazer uma arma de perfuração que esteja empunhando causar +1d6 pontos de dano de frio até o fim da cena. `,
+          `Você pode gastar 1 PM para fazer uma arma de perfuração que esteja usando causar +1d6 pontos de dano de frio até o fim da cena. `,
         id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -1917,7 +1917,7 @@ export class PoderData {
         id: 172,
         nome: 'Alimentar-se do Pavor',
         descricao:
-          `Quando uma criatura em alcance curto sob efeito de uma condição de medo morre, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível, e eles desaparecem no fim da cena.`,
+          `Quando uma criatura em alcance curto sob efeito de uma condição de medo morre, você recebe pontos de vida temporários iguais ao dobro do seu ND, que duram até o fim da cena.`,
         id_deuses:[6, 11],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1927,7 +1927,7 @@ export class PoderData {
         id: 173,
         nome: 'Alma de Mudança',
         descricao:
-          `No início de cada aventura, você pode trocar um número de outros poderes até sua Sabedoria por poderes diferentes.`,
+          `No início de cada aventura, você pode trocar uma quantidade de poderes (limitada por sua Sabedoria) por poderes diferentes cujos pré-requisitos cumpra. Você não pode trocar este poder.`,
         id_deuses:[17],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1937,7 +1937,7 @@ export class PoderData {
         id: 174,
         nome: 'Andarilho Carregado',
         descricao:
-          `Sua primeira mochila de aventureiro não conta em seu limite de itens vestidos e, se estiver vestindo uma dessas mochilas, pode usar Sabedoria para estabelecer seu limite de carga (em vez de Força).`,
+          `Sua mochila de aventureiro não conta no seu limite de itens vestidos e, se estiver vestindo uma dessas mochilas, você pode usar Sabedoria para estabelecer seu limite de carga (em vez de Força). A critério do mestre, este poder pode ser aplicado a outro item equivalente (como uma mochila de carga).`,
         id_deuses:[19],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1947,7 +1947,7 @@ export class PoderData {
         id: 175,
         nome: 'Armadilha Divina',
         descricao:
-          `Você recebe um poder de Armadilha do caçador (Tormenta20, p. 50) à sua escolha. Por ser criada a partir de energia divina, essa armadilha pode ser preparada em locais sem os materiais propícios. `,
+          `Você recebe um poder de Armadilha do caçador (Tormenta20, p. 50) a sua escolha. Por ser criada a partir de energia divina, essa armadilha pode ser preparada em locais sem os materiais propícios. `,
         id_deuses:[5],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -1958,7 +1958,7 @@ export class PoderData {
         id: 176,
         nome: 'Armadura de Ossos',
         descricao:
-          `Você pode gastar 3 PM para receber +2 na Defesa e redução de corte, frio e perfuração 10 até o fim da cena. `,
+          `Você pode gastar uma ação de movimento e 2 PM para receber +2 na Defesa e em Intimidação, e redução de corte, frio e trevas 5 até o fim da cena. `,
         id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -1969,7 +1969,7 @@ export class PoderData {
         id: 177,
         nome: 'Armas da Destruição',
         descricao:
-          `Você recebe +1 nas rolagens de dano e no multiplicador de crítico com armas.`,
+          `Você recebe +1 nas rolagens de dano e no multiplicador de crítico com armas nas quais é proficiente.`,
         id_deuses:[3],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1979,7 +1979,7 @@ export class PoderData {
         id: 178,
         nome: 'Armas da Selvageria',
         descricao:
-          `Você considera todas as armas naturais como armas favoritas de Megalokk e recebe +2 em rolagens de dano com elas.`,
+          `Para você, armas naturais são armas favoritas de Megalokk. Você recebe +2 em rolagens de dano com elas, pode usar Abençoar Arma (Tormenta20, p. 57) nelas e, quando usa esse poder ou a magia Armamento da Natureza, pode aplicar seus benefícios a todas as suas armas naturais (sem custo adicional).`,
         id_deuses:[11],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -1999,7 +1999,7 @@ export class PoderData {
         id: 180,
         nome: 'Aventureiro Inquieto',
         descricao:
-          `Uma vez por busca (Tormenta20, p. 278), você pode rolar novamente um teste recém-realizado (mas deve aceitar o novo resultado) e, quando recebe uma recompensa ou castigo aleatório por uma busca, rola dois dados e escolhe entre os dois resultados.`,
+          `Uma vez por busca (Tormenta20, p. 278), você pode rolar novamente um teste recém-realizado (mas deve aceitar o novo resultado) e, quando recebe uma recompensa ou um castigo aleatório por uma busca (incluindo rolagens na Tabela 8-1; Tormenta20, p. 328), rola dois dados e escolhe entre os dois resultados.`,
         id_deuses:[19],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2009,7 +2009,7 @@ export class PoderData {
         id: 181,
         nome: 'Baforada Dracônica',
         descricao:
-          `Escolha um elemento entre ácido, eletricidade, fogo, frio, luz ou trevas (uma vez feita, essa escolha não pode ser mudada). Você pode gastar uma ação padrão e PM (limitado por sua Constituição) para desferir um sopro elemental em uma criatura em alcance curto. Para cada PM que você gastar, o alvo sofre 1d10 pontos de dano do tipo escolhido (Ref CD Con reduz à metade). Alternativamente, quando faz a ação agredir, você pode usar este poder como parte dessa ação.`,
+          `Escolha um elemento entre ácido, eletricidade, fogo, frio, luz ou trevas (uma vez feita, essa escolha não pode ser mudada). Uma vez por rodada, você pode gastar PM (limitados por sua Constituição) para desferir um sopro elemental em uma criatura em alcance curto. Para cada PM que você gastar, o alvo sofre 1d10 pontos de dano do tipo escolhido (Reflexos CD Con reduz à metade). Recarga (movimento).`,
         id_deuses:[6],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2019,7 +2019,7 @@ export class PoderData {
         id: 182,
         nome: 'Barreira de Coral',
         descricao:
-          `Você pode gastar uma ação de movimento e 2 PM para cobrir seu corpo de coral. Até o fim da cena, seu deslocamento é reduzido à metade, mas você recebe +2 na Defesa e, sempre que sofrer um ataque corpo a corpo, o atacante sofre dano de perfuração igual a 1d6 + sua Constituição. Se estiver com pelo menos metade do corpo imerso em água, você pode usar esse poder como uma ação livre.`,
+          `Você pode gastar uma ação de movimento e 3 PM para cobrir seu corpo de coral. Até o fim da cena, você recebe +5 na Defesa e, sempre que sofrer um ataque corpo a corpo, o atacante sofre dano de perfuração igual a 1d6 + sua Constituição. Para cada patamar acima de iniciante, esse dano aumenta em +1d6. e`,
         id_deuses:[13],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2030,7 +2030,7 @@ export class PoderData {
         id: 183,
         nome: 'Belo Presente',
         descricao:
-          `Uma vez por cena, você pode gastar uma ação padrão para pedir o conhecimento de uma magia a Wynna. Gaste uma ação padrão e faça um teste de Religião (CD 15+ custo em PM da magia). Você pode pedir qualquer magia que tenha visto sendo lançada nessa aventura e que seja de um círculo a que tenha acesso. Se passar, você pode lançar essa magia até o fim do seu próximo turno.`,
+          `Uma vez por cena, você pode pedir a Wynna o conhecimento de uma magia que tenha visto sendo lançada nessa aventura e que seja de um círculo a que você tenha acesso. Gaste uma ação padrão e faça um teste de Religião (CD 15 + custo em PM da magia). Se passar, você pode lançar essa magia até o fim do seu próximo turno (pagando seus custos normais).`,
         id_deuses:[20],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2040,7 +2040,7 @@ export class PoderData {
         id: 184,
         nome: 'Biblioteca Divina',
         descricao:
-          `Você recebe uma perícia treinada adicional por patamar.`,
+          `Você recebe uma perícia treinada. A cada patamar de jogo (Tormenta20, p. 35) acima de iniciante, recebe mais uma perícia treinada.`,
         id_deuses:[15],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2050,7 +2050,7 @@ export class PoderData {
         id: 185,
         nome: 'Cancioneiro da Esperança',
         descricao:
-          `Você pode gastar uma ação padrão e 2 PM para entoar uma canção de superação e paz. Criaturas escolhidas em alcance curto (limitadas por seu Carisma) recebem +2 em Força e Destreza e +3m de deslocamento até o fim da cena (Von CD Car evita), Se uma criatura afetada executar qualquer ação hostil, os bônus são substituídos por uma penalidade de –2 em todos os testes de perícia.`,
+          `Você pode gastar uma ação padrão e 2 PM para entoar uma canção de superação e paz. Criaturas escolhidas (limitadas por seu Carisma) em alcance curto recebem +2 em testes (exceto testes de ataque) e +3m de deslocamento até o fim da cena. Se uma criatura afetada for executar uma ação hostil, perde esses bônus.`,
         id_deuses:[10],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2060,7 +2060,7 @@ export class PoderData {
         id: 186,
         nome: 'Cerimonialista Divino',
         descricao:
-          `Uma vez por descanso, você pode executar uma cerimônia religiosa tradicional. Faça um teste de Religião com um bônus igual ao seu Carisma. Para cada 10 pontos no resultado desse teste, você recebe um marcador de pétalas. Você pode distribuir esses marcadores entre criaturas escolhidas que tenham participado da cerimônia. Até o fim do dia, cada criatura pode gastar um marcador para receber +1d6 em um teste de Iniciativa, Intuição, Diplomacia, Percepção ou Vontade. `,
+          `Uma vez por dia, você pode gastar 1 hora para executar uma cerimônia tradicional que afeta até 1 + seu Carisma criaturas por 1 dia. Faça um teste de Religião com um bônus igual ao seu Carisma. Para cada 10 pontos do resultado, cada criatura afetada recebe um dado de auxílio. Quando faz um teste de atributo ou perícia (exceto Enganação, Furtividade e Ladinagem), a criatura pode gastar um deles para receber +1d6 de bônus no teste. Para criaturas que gastarem T$ 25 em oferendas no ritual, esse bônus muda para +1d8.`,
         id_deuses:[9],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2071,7 +2071,7 @@ export class PoderData {
         id: 187,
         nome: 'Chamado Monstruoso',
         descricao:
-          `Você aprende e pode lançar Conjurar Monstro e pode lançar e sustentar essa magia sem violar suas Obrigações e Restrições. `,
+          `Você aprende e pode lançar Conjurar Monstro e pode lançar e sustentar essa magia sem violar suas Obrigações & Restrições. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.`,
         id_deuses:[11],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2082,7 +2082,7 @@ export class PoderData {
         id: 188,
         nome: 'Companheiro Celeste',
         descricao:
-          `Você possui um luminar (veja p. @@) que lhe acompanha como um parceiro iniciante. Se perder esse luminar, você recebe outro no início da próxima aventura.`,
+          `Você possui um luminar (veja p. 277) que o acompanha como um parceiro iniciante. Se perder esse luminar, você pode receber outro com uma cerimônia que exige 1 dia e T$ 100 em oferendas.`,
         id_deuses:[8, 10],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2092,7 +2092,7 @@ export class PoderData {
         id: 189,
         nome: 'Companheiro Silvestre',
         descricao:
-          `Você possui um bogum (veja Ameaças de Arton, p. 190) que lhe acompanha como um parceiro iniciante. Se perder esse bogum, você recebe outro no início da próxima aventura.`,
+          `Você possui um espírito da natureza que o acompanha como um parceiro perseguidor iniciante. Alternativamente, se você tiver o suplemento Ameaças de Arton, pode receber um bogum inciante (p. 190). Se perder esse parceiro, você pode receber outro com uma cerimônia que exige 1 dia e T$ 100 em oferendas.`,
         id_deuses:[2],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2102,7 +2102,7 @@ export class PoderData {
         id: 190,
         nome: 'Convicção Ambiciosa',
         descricao:
-          `Enquanto estiver encurralado ou sobrepujado (pelo menos dois oponentes para cada membro do grupo ou um encontro de ND maior que o do grupo), você recebe +2 em testes de perícia. Além disso, contra chefes finais (veja Ameaças de Arton, p. 368), você recebe uma ação padrão extra na primeira rodada de combate.`,
+          `Quando luta em desvantagem (um encontro contra o dobro de inimigos que seu grupo, ou com ND maior que o do grupo), você recebe +2 em testes de perícia até o fim da cena. Além disso, se houver um ou mais inimigos de ND igual ou maior que seu nível, você recebe uma ação padrão extra em seu primeiro turno de combate.`,
         id_deuses:[19],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2122,7 +2122,7 @@ export class PoderData {
         id: 192,
         nome: 'Curar o Espírito',
         descricao:
-          `Você pode gastar uma ação completa para inspirar esperança em uma criatura em que possa tocar. Faça um teste de Carisma (CD 10). Se passar, a criatura recupera 1d4 PM. Você só pode usar este poder uma vez por dia numa mesma criatura.`,
+          `Você pode gastar uma ação completa para inspirar esperança em uma criatura que possa tocar. Faça um teste de Carisma (CD 10). Se você passar, a criatura recupera 1d4+1 PM. Você só pode usar este poder uma vez por dia numa mesma criatura.`,
         id_deuses:[8],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2132,7 +2132,7 @@ export class PoderData {
         id: 193,
         nome: 'Discurso Conciliador',
         descricao:
-          `Quando faz um teste de Diplomacia para mudar atitude, você pode rolar dois dados e usar o melhor resultado ou ambos (como se tivesse usado mudar atitude duas vezes). Se passar em ambos, as mudanças de atitude serão cumulativas.`,
+          `Quando faz um teste de Diplomacia para mudar atitude, você pode rolar dois dados e usar o melhor resultado ou ambos (como se tivesse usado mudar atitude duas vezes). Se passar em ambos, as mudanças de atitude são cumulativas.`,
         id_deuses:[10],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2142,7 +2142,7 @@ export class PoderData {
         id: 194,
         nome: 'Dom da Furtividade',
         descricao:
-          `Você soma sua Sabedoria em Furtividade e, contra criaturas desprevenidas, a CD para resistir às suas magias aumenta em +2.`,
+          `Você soma sua Sabedoria em Furtividade e, para você, lançar magias é um ato pouco chamativo, o que reduz a penalidade para se esconder após conjurar para –10 (mas você ainda precisa de gestos e palavras).`,
         id_deuses:[5],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2152,7 +2152,7 @@ export class PoderData {
         id: 195,
         nome: 'Dom da Vontade',
         descricao:
-          `Você recebe +2 em Vontade e, uma vez por cena, quando falha em um teste de Vontade contra um efeito de um inimigo ou de um perigo, recebe 1d4 PM.`,
+          `Você recebe +2 em Vontade e, uma vez por cena, quando passa em um teste de Vontade contra um efeito de um inimigo ou de um perigo apresentado pelo mestre, recebe 1d4 PM temporários.`,
         id_deuses:[7],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2162,7 +2162,7 @@ export class PoderData {
         id: 196,
         nome: 'Dom dos Segredos',
         descricao:
-          `Você pode gastar uma ação padrão e 2 PM para suplicar à Sszzaas por um segredo oculto. Faça um teste de Carisma (CD 10). Se passar, você aprende um poder cujos requisitos possa cumprir (mas você não precisa cumprir requisitos de classe) até o fim da cena. Se falhar, entretanto, você fica alquebrado por um dia.`,
+          `Você pode gastar uma ação padrão e 2 PM para suplicar a Sszzaas por um segredo místico. Faça um teste de Carisma (CD 10, +2 para cada vez que usou este poder no mesmo dia). Se passar, você aprende e pode lançar uma magia de 1º círculo até o fim da cena (atributo-chave Car ou o seu atributo de conjuração, se houver).`,
         id_deuses:[14],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2172,7 +2172,7 @@ export class PoderData {
         id: 197,
         nome: 'Égide dos Mares',
         descricao:
-          `Você possui um escudeiro (veja Ameaças de Arton, p. 190) que lhe acompanha como um parceiro iniciante. Se perder esse escudeiro, você recebe outro no início da próxima aventura.`,
+          `Você possui um espírito das águas que o acompanha como um parceiro guardião iniciante. Alternativamente, se você tiver o suplemento Ameaças de Arton, pode receber um escudeiro inciante (p. 191). Em ambos os casos, se perder esse parceiro, você pode receber outro com uma cerimônia que exige 1 dia e T$ 100 em oferendas.`,
         id_deuses:[13],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2182,7 +2182,7 @@ export class PoderData {
         id: 198,
         nome: 'Espírito Animal',
         descricao:
-          `Você aprende e pode lançar Arma Espiritual. A arma convocada, entretanto, tem a forma um animal espiritual a sua escolha, que causa dano de um tipo apropriado à sua forma. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+          `Você pode gastar uma ação de movimento e 2 PM para conjurar um espírito animal que o envolve e luta com você. Até o fim da cena, você não pode ser flanqueado e recebe 10 PV temporários e uma arma natural (dano 1d6, crítico x2, tipo a sua escolha entre corte, impacto ou perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com essa arma. Quando usa este poder, você pode gastar PM adicionais (custo total limitado por sua Sabedoria). Para cada PM adicional, os PV temporários aumentam em +5.`,
         id_deuses:[2],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2193,7 +2193,7 @@ export class PoderData {
         id: 199,
         nome: 'Espírito do Conhecimento',
         descricao:
-          `Você pode gastar uma ação padrão e 2 PM para invocar uma manifestação do saber em um espaço desocupado em alcance curto. Ela é um espírito Minúsculo que tem deslocamento de voo 6m, For –, Des 3, Defesa 15, 1 PV, visão no escuro e falha em qualquer teste de resistência ou oposto. A partir do seu próximo turno, a manifestação pode fazer uma ação de movimento no início de cada um dos seus turnos. Você pode perceber tudo que a manifestação for capaz de perceber, e pode lançar magias com alcance de toque ou maior como se a manifestação fosse seu ponto de origem. A manifestação desaparece quando morre ou no fim da cena. `,
+          `Você pode gastar uma ação padrão e 2 PM para invocar uma manifestação do saber em um espaço desocupado em alcance curto. Ela é um espírito Minúsculo que tem deslocamento de voo 6m, Força nula, Defesa 15, 1 PV, visão no escuro e falha em qualquer teste oposto. No início de seus turnos, ela pode usar a ação movimentar-se uma vez. Você pode perceber tudo que a manifestação for capaz de perceber e pode lançar magias a partir dela (exceto magias de alcance pessoal com alvo você). A manifestação desaparece quando morre ou no fim da cena. `,
         id_deuses:[15],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2204,7 +2204,7 @@ export class PoderData {
         id: 200,
         nome: 'Estouro da Trobada',
         descricao:
-          `Você pode gastar uma ação completa e 2 PM para convocar uma manada enfurecida de trobos (ou qualquer outro animal da região) em um ponto a sua escolha em alcance curto com duração sustentada. A manada tem tamanho Grande e pode passar pelo espaço de outras criaturas. Você pode gastar uma ação de movimento para mover a manada 12m em linha reta. Criaturas pelas quais a manada passar sofrem 3d6 pontos de dano de impacto e ficam caídas (Fort CD Sab reduz à metade e evita a condição).`,
+          `Você pode gastar uma ação completa e 2 PM para convocar uma manada de trobos (ou outro animal da região) em um ponto desocupado a sua escolha em alcance curto com duração sustentada. A manada é Enorme e pode passar pelo espaço de outras criaturas. Você pode gastar uma ação de movimento para mover a manada 12m em linha reta. Criaturas pelas quais ela passar sofrem 3d6 pontos de dano de impacto e ficam caídas (Fort CD Sab reduz à metade e evita a condição).`,
         id_deuses:[2],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2212,9 +2212,9 @@ export class PoderData {
       },
       {
         id: 201,
-        nome: 'Expor Honra',
+        nome: 'Exaltar Honra',
         descricao:
-          `Você pode pagar 1 PM para gerar uma aura de verdade de 9m de raio e duração até o fim da cena. Dentro dessa área, devotos de Lin-Wu e personagens que sigam algum código de conduta (como Código de Honra ou Código do Herói) recebem +2 em Diplomacia e Nobreza, enquanto as demais criaturas sofrem –2 em testes de Enganação, Furtividade e Ladinagem. Apenas personagens com a habilidade Abençoado ou Devoto Fiel podem escolher este poder.`,
+          `Você pode gastar 2 PM para gerar uma aura de honradez de 9m de raio que dura até o fim da cena. Dentro dessa área, devotos de Lin-Wu e personagens que sigam algum código de conduta (como Código de Honra ou Código do Herói) recebem +5 em Diplomacia e Nobreza, e todas as criaturas na área sofrem –5 em perícias desonradas (Enganação, Furtividade e Ladinagem). Apenas personagens com a habilidade Abençoado ou Devoto Fiel podem escolher este poder.`,
         id_deuses:[9],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2224,7 +2224,7 @@ export class PoderData {
         id: 202,
         nome: 'Familiar Elemental',
         descricao:
-          `Você possui um familiar arcano (veja Tormenta20, p. 38) escolhido entre um aquin’ne, t’peel, pakk ou terrier (veja Ameaças de Arton, p. 88).`,
+          `Você possui um espírito arcano que o acompanha como um familiar com as habilidades de um adepto iniciante. Alternativamente, se você tiver o suplemento Ameaças de Arton, pode receber um familiar elemental inciante, escolhido entre aquin'ne, t'peel, pakk ou terrier (p. 88). Em ambos os casos, se perder esse parceiro, você pode receber outro com uma cerimônia que exige 1 dia e T$ 100 em oferendas.`,
         id_deuses:[20],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2234,7 +2234,7 @@ export class PoderData {
         id: 203,
         nome: 'Ferramentas da Guerra',
         descricao:
-          `Uma vez por dia, você pode gastar uma hora e TS 10 por item para abençoar uma quantidade de itens limitada por sua Sabedoria. Armas abençoadas desta forma fornecem +2 em testes de ataque e rolagens de dano, enquanto armaduras e escudos têm seu bônus na Defesa aumentados em +2. Se o usuário de um item abençoado for derrotado em combate, o item é destruído. Os efeitos da bênção duram um dia. `,
+          `Uma vez por dia, você pode gastar 1 hora e T$ 10 por item para abençoar uma quantidade de itens limitada por sua Sabedoria. Armas abençoadas dessa forma fornecem +2 em rolagens de dano, e armaduras e escudos fornecem RD 2. Se o usuário de um item abençoado for derrotado em combate, o item é destruído. Os efeitos da bênção duram 1 dia. `,
         id_deuses:[3],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2245,7 +2245,7 @@ export class PoderData {
         id: 204,
         nome: 'Golpe Semântico',
         descricao:
-          `Você pode substituir testes de Diplomacia e Enganação por Conhecimento.`,
+          `Você pode substituir testes de Diplomacia e Intimidação por Conhecimento.`,
         id_deuses:[15],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2255,7 +2255,7 @@ export class PoderData {
         id: 205,
         nome: 'Golpe Tempestuoso',
         descricao:
-          `Quando acerta um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso, a criatura é empurrada 3m em uma direção a sua escolha e fica vulnerável por 1 rodada.`,
+          `Quando acerta um ataque corpo a corpo, você pode gastar 2 PM. Se fizer isso, a criatura é empurrada 3m em uma direção a sua escolha e fica desprevenida por 1 rodada.`,
         id_deuses:[3, 13],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2265,7 +2265,7 @@ export class PoderData {
         id: 206,
         nome: 'Imolação Sagrada',
         descricao:
-          `Você pode gastar uma ação padrão e 2 PM para cobrir-se com chamas até o fim da cena ou té ser submerso em água. Enquanto estiver coberto pelas chamas, uma vez por rodada, quando sofre um ataque corpo a corpo, você pode causar 2d6 + Sabedoria pontos de dano de fogo no atacante. `,
+          `Você pode gastar uma ação padrão e 1 PM para cobrir seus braços com chamas com duração sustentada. Nesse estado, seus ataques corpo a corpo causam +1d6 pontos de dano de fogo. `,
         id_deuses:[4, 18],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2286,7 +2286,7 @@ export class PoderData {
         id: 208,
         nome: 'Jurista Divino',
         descricao:
-          `Você se torna treinado em Nobreza (se já for treinado, em vez disso recebe +2 nessa perícia) e pode usar esta perícia no lugar de Diplomacia e Intimidação.`,
+          `Você pode usar Sabedoria para Nobreza (em vez de Inteligência) e pode usar essa perícia no lugar de Diplomacia e Intimidação.`,
         id_deuses:[7, 9],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2296,7 +2296,7 @@ export class PoderData {
         id: 209,
         nome: 'Magia Caótica',
         descricao:
-          `Quando lança uma magia, você pode gastar 1 PM para aceitar o poder do caos. Se fizer isso, a CD para resistir a essa magia recebe um modificador igual a 1d20-10.`,
+          `Quando lança uma magia, você pode gastar +2 PM. Se fizer isso, a CD para resistir a essa magia é calculada com 1d20 + seus modificadores, em vez de 10 + seus modificadores.`,
         id_deuses:[12],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2306,7 +2306,7 @@ export class PoderData {
         id: 210,
         nome: 'Magia Piedosa',
         descricao:
-          `Quando lança uma magia que causa dano, você pode gastar +1 PM para transformar o dano dela em não-letal.`,
+          `Quando lança uma magia que causa dano, você pode fazer com que ela cause dano não letal.`,
         id_deuses:[8, 18],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2316,7 +2316,7 @@ export class PoderData {
         id: 211,
         nome: 'Magia Venenosa',
         descricao:
-          `Suas magias com resistência Fortitude recebem o seguinte aprimoramento: +1 PM: além do normal, criaturas que falharem perdem 1d12 PV por veneno.`,
+          `Suas magias com resistência Fortitude recebem o seguinte aprimoramento. +1 PM: além do normal, criaturas que falharem perdem 1d12 PV por veneno, ou 1d6 se passarem na resistência.`,
         id_deuses:[14],
         e_aprimoramento: true,
         referencias: Referencia.DEUSES,
@@ -2327,7 +2327,7 @@ export class PoderData {
         id: 212,
         nome: 'Manto Ardiloso',
         descricao:
-          `Você aprende a magia Disfarce Ilusório (CD Car). Na primeira vez que interage com alguém enquanto está sob efeito dessa magia, você recebe +10 no teste de Diplomacia para tentar mudar a atitude dela. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
+          `Você aprende a magia Disfarce Ilusório (CD Car). Na primeira vez que interage com alguém enquanto está sob efeito dessa magia, você recebe +10 no teste de Diplomacia para mudar a atitude dela. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. `,
         id_deuses:[14],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2338,7 +2338,7 @@ export class PoderData {
         id: 213,
         nome: 'Mar Revolto',
         descricao:
-          `Você pode gastar 1 PM para gerar uma aura de 6m de raio com duração sustentada. Cada criatura, à sua escolha, que começar seu próprio turno dentro dessa aura deverá passar em um teste de Acrobacia (CD Sab; criaturas dentro da água sofrem uma penalidade de –5 nesse teste.) ou ficará caída.`,
+          `Você pode gastar 1 PM para gerar uma aura de 6m de raio com duração sustentada. No início de seus turnos, criaturas a sua escolha na área devem passar em um teste de Acrobacia (CD Sab, +5 se a criatura estiver dentro da água) para não cair. `,
         id_deuses:[13],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2359,7 +2359,7 @@ export class PoderData {
         id: 215,
         nome: 'Mestre de Si',
         descricao:
-          `Você passa automaticamente no primeiro teste de Vontade que fizer a cada cena.`,
+          `Você passa automaticamente no primeiro teste de Vontade contra um efeito de um inimigo que fizer a cada cena.`,
         id_deuses:[9],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2367,10 +2367,11 @@ export class PoderData {
       },
       {
         id: 216,
-        nome: 'Mochileiro Preparado',
+        nome: 'A Ferramenta Certa',
         descricao:
-          `Você pode gastar 1 PM para fazer uma ferramenta ou um item de aventura de até T$ 100 aparecer na sua mão ou em um espaço adjacente. O item dura até o fim da cena, ou até deixar sua posse.`,
-        id_deuses:[5, 19],
+          `Você pode gastar 1 PM para fazer uma ferramenta ou um equipamento de aventura de até T$ 400 aparecer na sua mão ou em um espaço adjacente. O item dura até o fim da cena, ou até deixar sua posse.`,
+        id_deuses:[5],
+        e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2379,7 +2380,7 @@ export class PoderData {
         id: 217,
         nome: 'Mordida de Víbora',
         descricao:
-          `Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Suas presas são retráteis e podem armazenar até 2 doses de veneno, como o efeito da melhoria injeção alquímica (Tormenta20, p. 165).`,
+          `Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Suas presas são retráteis e podem armazenar até 2 doses de veneno de contato. Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Se acertar, pode inocular uma das doses de veneno no alvo.`,
         id_deuses:[14],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2389,7 +2390,7 @@ export class PoderData {
         id: 218,
         nome: 'Navegador Sagrado',
         descricao:
-          `Você se torna treinado em Pilotagem (se já for treinado, em vez disso recebe +2 nessa perícia) e, enquanto estiver em uma embarcação aquática, suas magias divinas custam –1 PM.`,
+          `Você pode usar Sabedoria para Pilotagem (em vez de Destreza) e, enquanto estiver em uma embarcação aquática, suas magias divinas custam –2 PM.`,
         id_deuses:[13],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2399,8 +2400,7 @@ export class PoderData {
         id: 219,
         nome: 'Nimb',
         descricao:
-          `<p><b>Nimb.</b> Você é Nimb, ou não. Você pode gastar uma ação padrão e 2 PM para gerar uma habilidade única. Para isso, role 1d6 duas vezes, uma para Área/Alvo e outra para Efeito. </p>
-          <p>
+          `Você é Nimb. Ou um filho ou filha dele. Ou uma casca de banana na qual ele escorregou certa vez. Você pode gastar uma ação padrão e 2 PM para gerar uma habilidade única. Para isso, role 1d6 em cada coluna abaixo.
           <div class="row">
           <div class="col-sm-12 mt-2 mb-4">
           <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -2454,9 +2454,9 @@ export class PoderData {
       },
       {
         id: 220,
-        nome: 'O dobro ou nada',
+        nome: 'O Dobro ou Nada',
         descricao:
-          `Quando usa uma habilidade com um custo em PM, você pode pagar o dobro desse custo. Se fizer isso, a CD dessa habilidade aumenta em +5. Se pelo menos um alvo passar no teste de resistência, você fica alquebrado.`,
+          `Quando usa uma habilidade com custo em PM, você pode pagar o dobro desse custo (após aplicar efeitos que alterem o custo) para aumentar a CD da habilidade em +5. Se pelo menos um alvo passar no teste de resistência, você fica alquebrado. Este poder não pode ser usado em magias, incluindo simuladas.`,
         id_deuses:[5, 12],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2464,9 +2464,9 @@ export class PoderData {
       },
       {
         id: 221,
-        nome: 'O Futuro que vier disso',
+        nome: 'O Futuro Que Vier Disso',
         descricao:
-          `Quando faz um teste, você pode rolar um dado à sua escolha (entre 1d4 e 1d20) e somar o resultado a este teste. Quando você faz isso, o mestre recebe um dado do mesmo tipo que ele pode gastar para aplicar como uma penalidade em um de seus testes até o fim da próxima sessão. Você não pode usar este poder novamente até que o mestre use o dado que ele recebeu.`,
+          `Quando faz um teste, você pode rolar um dado a sua escolha (d4 a d20) e somar o resultado a esse teste. Quando você faz isso, o mestre recebe um dado do mesmo tipo, que pode gastar para aplicar como penalidade em um de seus testes até o fim da próxima sessão. Você não pode usar este poder novamente na mesma sessão até que o mestre use o dado que recebeu.`,
         id_deuses:[17],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2476,7 +2476,7 @@ export class PoderData {
         id: 222,
         nome: 'O Sol que nos Aquece',
         descricao:
-          `Você pode gastar uma ação padrão e 3 PM para intensificar a luz solar em uma esfera de 6m de raio em alcance médio. Nessa área, habilidades mágicas de fogo e relacionadas à plantas (como Controlar Plantas) custam –1 PM e criaturas com sensibilidade a luz sofrem o dobro da penalidade por ficarem ofuscadas. Você só pode usar este poder se estiver sob a luz do sol natural. `,
+          `Você pode gastar uma ação padrão e 2 PM para projetar uma aura de luz solar em um raio de 6m. Nessa área, habilidades mágicas de fogo ou luz e relacionadas a plantas (como Controlar Plantas) custam –1 PM (cumulativo com outras reduções) e criaturas com sensibilidade a luz e mortos-vivos ficam vulneráveis. `,
         id_deuses:[2, 4],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2498,7 +2498,7 @@ export class PoderData {
         id: 224,
         nome: 'Passo Sombrio',
         descricao:
-          `Uma vez por rodada, você pode gastar 2 PM para se teleportar para um espaço desocupado em alcance curto. Se tanto você quanto o espaço de destino estiverem sob qualquer tipo de escuridão, o custo deste poder é reduzido em –1 PM. `,
+          `Uma vez por rodada, você pode gastar 2 PM para se teleportar para um espaço desocupado em alcance curto. Se tanto você quanto esse espaço estiverem sob escuridão, o custo deste poder diminui em –1 PM. Você não pode usar este poder se estiver imóvel. `,
         id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2509,7 +2509,7 @@ export class PoderData {
         id: 225,
         nome: 'Perceber Farsas',
         descricao:
-          `Você recebe +2 em Intuição e se torna imune a magias de ilusão.`,
+          `Você recebe +5 em Intuição e se torna imune a efeitos de ilusão.`,
         id_deuses:[15],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2519,7 +2519,7 @@ export class PoderData {
         id: 226,
         nome: 'Pilar de Heredrimm',
         descricao:
-          `Você pode gastar 2 PM receber +2 na Defesa e redução de dano 5 até o fim da cena ou até encerrar este poder (uma ação livre). Enquanto este efeito estiver ativo, seu deslocamento é reduzido à metade e você não pode correr ou fazer investidas.`,
+          `Você pode gastar 2 PM para receber +2 na Defesa e redução de dano 5 até o fim da cena ou até encerrar este poder (uma ação livre). Enquanto esse efeito estiver ativo, seu deslocamento é reduzido à metade.`,
         id_deuses:[7],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2529,7 +2529,7 @@ export class PoderData {
         id: 227,
         nome: 'Poder do Vínculo',
         descricao:
-          `Você pode gastar uma ação de movimento e uma quantidade de PM limitada ao círculo de magias a que você tem acesso1 PM (e +1 pm para cada círculo de magia que for capaz de conjurar) e tocar em uma criatura capaz de conjurar magias. O custo em PMs da próxima magia que aquela criatura lançar é reduzido numa quantidade igual aos PMs que você gastou.`,
+          `Você pode gastar uma ação de movimento e uma quantidade de PM (limitada ao círculo de magias a que tem acesso) para tocar em uma criatura capaz de lançar magias. O custo em PM da próxima magia que ela lançar diminui em um valor igual aos PM que você gastou.`,
         id_deuses:[20],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2539,7 +2539,7 @@ export class PoderData {
         id: 228,
         nome: 'Poder Sem Limites',
         descricao:
-          `Todos os seus limites de PM para habilidades aumentam em +2.`,
+          `A CD e os limites de PM de suas habilidades (exceto magias e habilidades que as simulem) aumentam em um valor igual ao seu patamar.`,
         id_deuses:[6],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2560,7 +2560,7 @@ export class PoderData {
         id: 230,
         nome: 'Proeminência Solar',
         descricao:
-          `Suas magias que causam dano de fogo e que têm um teste de resistência recebem o seguinte aprimoramento: +1 PM: Criaturas que falhem na resistência ficam em chamas. Elas também ficam lentas até apagarem as chamas.`,
+          `Suas magias que causam dano de fogo e que têm um teste de resistência recebem o seguinte aprimoramento: +1 PM: criaturas que falhem na resistência ficam em chamas e lentas até apagarem as chamas.`,
         id_deuses:[4],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2570,7 +2570,7 @@ export class PoderData {
         id: 231,
         nome: 'Quebrar Encanto',
         descricao:
-          `Você recebe +2 em testes de ataque para quebrar. Além disso, quando vence um teste oposto para quebrar um item, você pode gastar 2 PM. Se fizer isso, gera um efeito semelhante a Dissipar Magia sobre o item e sobre seu usuário, usando o resultado do seu teste de quebrar no lugar do teste de Misticismo. `,
+          `Você recebe +2 em testes de ataque para quebrar. Quando usa essa manobra, você pode gastar 2 PM. Se você acertar o ataque, o item e seu portador sofrem o efeito de Dissipar Magia, usando o resultado do teste de quebrar como teste de Misticismo e CD para resistir. `,
         id_deuses:[7],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2581,8 +2581,9 @@ export class PoderData {
         id: 232,
         nome: 'Redirecionar Destino',
         descricao:
-          `Ao escolher este poder, role um d20 e anote o resultado. Uma vez por rodada, quando uma criatura em alcance curto faz um teste, você pode gastar 1 PM para trocar o valor do dado desse teste pelo valor anotado (o valor do dado passa a ser o novo valor anotado).`,
+          `No início de cada dia, role um d20 e anote seu valor. Uma vez por rodada, quando uma criatura em alcance curto faz um teste, você pode gastar 3 PM para substituir o resultado do d20 desse teste pelo último valor anotado para este poder. O resultado do d20 substituído se torna seu novo valor anotado. `,
         id_deuses:[18],
+        e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
         tipo: TipoPoder.CONCEDIDO,
@@ -2591,7 +2592,7 @@ export class PoderData {
         id: 233,
         nome: 'Remorso do Belicista',
         descricao:
-          `Uma vez por rodada, quando sofre dano de um inimigo, você pode gastar 1 PM. Se fizer isso, até o fim da cena aquela criatura sofre uma penalidade cumulativa de –2 em testes de ataque e rolagens de dano. Mental.`,
+          `Uma vez por rodada, quando sofre dano de um inimigo, você pode gastar 1 PM. Se fizer isso, ele sofre uma penalidade cumulativa de –2 em testes de ataque e rolagens de dano até o fim da cena. Mental.`,
         id_deuses:[10],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2601,18 +2602,18 @@ export class PoderData {
         id: 234,
         nome: 'Resplendor Divino',
         descricao:
-          `Você pode gastar 2 PM para gerar uma aura de luz solar com 9m de raio e duração até o fim da cena. Além de sofrer os efeitos de exposição à luz solar, criaturas dentro da aura perdem toda camuflagem por escuridão, incluindo mágica. `,
+          `Você pode gastar 2 PM para gerar uma aura de luz solar com 9m de raio que dura até o fim da cena. Além de sofrer os efeitos de exposição à luz, criaturas dentro da aura perdem toda camuflagem por escuridão e efeitos semelhantes (como da cobertura de sombras do aprimoramento da magia Escuridão). `,
         id_deuses:[4],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
         paginas: '',
-        tipo: TipoPoder.CONCEDIDO,
+        tipo: TipoPoder.CONCEDIDO,  
       },
       {
         id: 235,
         nome: 'Saque Celestial',
         descricao:
-          `O primeiro ataque que você acertar numa rodada causa +1d6 pontos de dano de luz. Este dano extra é multiplicado em um acerto crítico.`,
+          `Você pode gastar 1 PM para sacar ou guardar uma arma como uma ação livre. Se sacar sua arma e fizer um ataque corpo a corpo no mesmo turno, você recebe +2 nesse teste de ataque e seu dano aumenta em dois passos (apenas uma vez contra cada criatura por cena).`,
         id_deuses:[9],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2622,7 +2623,7 @@ export class PoderData {
         id: 236,
         nome: 'Só os Loucos Sabem',
         descricao:
-          `No começo de cada dia, determine duas perícias aleatoriamente usando a Tabela 6-6: Desafios de Buscas (Tormenta20, p. 279). Até o fim do dia, você se torna treinado nas perícias determinadas ou, se já for treinado em alguma delas, recebe +2 naquela perícia.`,
+          `Role duas perícias na Tabela 6-6 (Tormenta20, p. 279). Você se torna treinado nelas (se já for, recebe +3 nessa perícia). No começo de cada dia, você pode gastar 3 PM para rolar novas perícias.`,
         id_deuses:[12],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2662,7 +2663,7 @@ export class PoderData {
         id: 240,
         nome: 'Toque de Não Vida',
         descricao:
-          `Você pode pagar 2 PM para cobrir você ou um aliado adjacente em trevas protetivas. O alvo recebe 2d12 PV temporários. Enquanto esses PV durarem, ele também tem camuflagem leve por escuridão. `,
+          `Você pode gastar uma ação de movimento e 2 PM para fornecer a si mesmo ou a uma criatura adjacente 2d12 PV temporários (que são sempre os primeiros a serem perdidos) e, enquanto os PV temporários durarem, camuflagem leve.`,
         id_deuses:[16],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2683,7 +2684,7 @@ export class PoderData {
         id: 242,
         nome: 'Trilha Desimpedida',
         descricao:
-          `Você está sempre sob o efeito básico da magia Caminhos da Natureza. Se aprender essa magia, o custo dela diminui em –1 PM. `,
+          `Você aprende e pode lançar a magia Caminhos da Natureza. Se aprender essa magia, o custo dela diminui em –1 PM.`,
         id_deuses:[2],
         e_poder_magico: true,
         referencias: Referencia.DEUSES,
@@ -2692,9 +2693,9 @@ export class PoderData {
       },
       {
         id: 243,
-        nome: 'Ushult',
+        nome: 'Ushultt',
         descricao:
-          `Escolha um de seus aliados como seu Ushult. Enquanto estiverem em alcance curto um do outro, vocês recebem +1 em testes de perícia e rolagens de dano (esse bônus dobra se o Ushult também for duyshidakk). Você pode trocar seu Ushult uma vez por aventura.`,
+          `Escolha um de seus aliados como seu ushultt. Enquanto estiverem em alcance curto um do outro, vocês recebem +2 em testes de ataque e rolagens de dano (esse bônus aumenta para +3 se o ushultt também for duyshidakk). Você pode trocar seu ushultt uma vez por aventura.`,
         id_deuses:[17],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -2702,10 +2703,9 @@ export class PoderData {
       },
       {
         id: 244,
-        nome: 'Vitória a Qualquer Custo',
+        nome: 'Expurgar a Derrota',
         descricao:
-          `<p>Se estiver com 0 PM, você pode gastar seus pontos de vida no lugar de mana, à taxa de 3 PV por 1 PM. Pontos de vida gastos dessa forma só podem ser recuperados com descanso.</p>
-          <p>Quando faz um teste de ataque, de resistência ou de Guerra, você pode gastar 2 PM para rolar novamente este teste. Você pode usar este efeito várias vezes no mesmo teste, mas a cada novo uso seu custo aumenta em +1 PM.</p>`,
+          `Se estiver com 0 PM, você pode gastar seus pontos de vida (exceto PV temporários) no lugar de mana, à taxa de 3 PV por 1 PM. Você não pode reduzir seus PV a 0 ou menos dessa forma e não pode usar este poder se estiver sob efeito de ter descumprido suas Obrigações & Restrições. Pontos de vida gastos dessa forma só podem ser recuperados com descanso.`,
         id_deuses:[3],
         referencias: Referencia.DEUSES,
         paginas: '',
@@ -3325,6 +3325,12 @@ export class PoderData {
         referencias: Referencia.BASICO,
         paginas: '93'
       },
+      {
+        id: 1015,
+        nome: 'Vitória a Qualquer Custo',
+        descricao: `Quando faz um teste de ataque, de resistência ou de Guerra, você pode gastar 2 PM para rolar novamente esse teste. Você pode fazer isso várias vezes no mesmo teste, mas cada novo uso aumenta o custo em +1 PM.`,
+        id_deuses: [3],
+      }
     ];
   }
 }
