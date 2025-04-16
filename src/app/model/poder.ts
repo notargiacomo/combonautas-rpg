@@ -21,8 +21,10 @@ export class Poder {
   deuses?: Deus[];
   fator_tormenta?: number;
   e_aprimoramento?: boolean;
-  e_poder_magico?:boolean;
+  e_poder_magico?: boolean;
+  e_habilidade?: boolean;
   tipo?: string;
+  id_classe?: number;
   classe?: Classe;
   raca?: Raca;
   duracao?: string;

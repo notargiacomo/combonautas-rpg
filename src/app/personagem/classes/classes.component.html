@@ -1,224 +1,222 @@
 <div class="container">
-  <div class="row mt-4">
-  <mat-card class="cartao">
-    <form [formGroup]="form">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2><b>CLASSES</b></h2>
-          <hr />
+  <form [formGroup]="form">
+    <div class="row mt-1">
+      <mat-card class="cartao">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2><b>CLASSES</b></h2>
+            <hr />
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 mt-4">
-          <mat-form-field class="form-field">
-            <mat-label>Classe</mat-label>
-            <input
-              formControlName="nome"
-              matInput
-              type="text"
-              name="raca"
-              (keyup)="consultar()"
-            />
-          </mat-form-field>
+        <div class="row">
+          <div class="col-sm-6 mt-2">
+            <mat-form-field class="form-field">
+              <mat-label>Classe</mat-label>
+              <input formControlName="nome" matInput type="text" name="nome" (keyup)="consultar()" />
+            </mat-form-field>
+          </div>
+          <div class="col-sm-6 mt-2">
+            <section>
+              <div class="button-row mt-2 d-flex justify-content-end">
+                <button class="me-2" (click)="limparFiltros()" mat-flat-button>
+                  Limpar Filtros
+                </button>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="col-sm-6 mt-4">
-          <section>
-            <div class="button-row d-flex justify-content-end">
-              <button class="me-2" (click)="limparFiltros()" mat-flat-button>
-                Limpar Filtros
+      </mat-card>
+    </div>
+    <div class="row mt-1">
+      <mat-card class="cartao">
+        <div class="row">
+          <div class="d-flex justify-content-end">
+            <b>Número de Registros: {{ numero_registros }}</b>
+          </div>
+        </div>
+        <br />
+        <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+          @for (column of columnsToDisplay; track column) {
+          <ng-container matColumnDef="{{ column }}">
+            <th mat-header-cell *matHeaderCellDef style="text-transform: uppercase">
+              {{ column }}
+            </th>
+            <td mat-cell *matCellDef="let element" style="
+                height: 0px !important;
+                min-height: 0px !important;
+                max-height: 0px !important;
+              ">
+              {{ element[column] }}
+            </td>
+          </ng-container>
+          }
+          <ng-container matColumnDef="expand">
+            <th mat-header-cell *matHeaderCellDef aria-label="row actions">
+              &nbsp;
+            </th>
+            <td mat-cell style="
+                height: 0px !important;
+                min-height: 0px !important;
+                max-height: 0px !important;
+              " *matCellDef="let element">
+              <button mat-icon-button aria-label="expand row" (click)="
+                  expandedElement =
+                    expandedElement === element ? null : element;
+                  $event.stopPropagation()
+                ">
+                @if (expandedElement === element) {
+                <mat-icon>keyboard_arrow_up</mat-icon>
+                } @else {
+                <mat-icon>keyboard_arrow_down</mat-icon>
+                }
               </button>
-              <!-- <button mat-flat-button>Adicionar Raça</button> -->
-            </div>
-          </section>
-        </div>
-      </div>
-    </form>
-  </mat-card>
-  </div>
-  <div class="row mt-4">
-    <mat-card class="cartao">
-      <div class="row">
-        <div class="d-flex justify-content-end">
-          <b>Número de Registros: {{ numero_registros }}</b>
-        </div>
-      </div>
-      <br>
-      <table
-        mat-table
-        [dataSource]="classes"
-        multiTemplateDataRows
-        class="mat-elevation-z8"
-      >
-        @for (column of columnsToDisplay; track column) {
-        <ng-container matColumnDef="{{ column }}">
-          <th
-            mat-header-cell
-            *matHeaderCellDef
-            style="text-transform: uppercase"
-          >
-            {{ column }}
-          </th>
-          <td mat-cell *matCellDef="let element">{{ element[column] }}</td>
-        </ng-container>
-        }
-        <ng-container matColumnDef="expand">
-          <th mat-header-cell *matHeaderCellDef aria-label="row actions">
-            &nbsp;
-          </th>
-          <td mat-cell *matCellDef="let element">
-            <button
-              mat-icon-button
-              aria-label="expand row"
-              (click)="
-                expandedElement = expandedElement === element ? null : element;
-                $event.stopPropagation()
-              "
-            >
-              @if (expandedElement === element) {
-              <mat-icon>keyboard_arrow_up</mat-icon>
-              } @else {
-              <mat-icon>keyboard_arrow_down</mat-icon>
-              }
-            </button>
-          </td>
-        </ng-container>
-        <ng-container matColumnDef="expandedDetail">
-          <td
-            mat-cell
-            *matCellDef="let element"
-            [attr.colspan]="columnsToDisplayWithExpand.length"
-          >
-            <div
-              class="element-detail"
-              [@detailExpand]="
-                element == expandedElement ? 'expanded' : 'collapsed'
-              "
-            >
-              <mat-tab-group>
-                <mat-tab label="Classe">
-                  <div class="content">
-                    <div class="row">
-                      <div class="col-sm-3 mt-4 mb-4 ml-1 mr-1">
-                        <mat-card *ngIf="element.tabela != null">
-                          <img [src]="element.tabela" [alt]="element.nome" />
-                        </mat-card>
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" style="
+                height: 0px !important;
+                min-height: 0px !important;
+                max-height: 0px !important;
+              ">
+              <div class="element-detail-wrapper" [class.element-detail-wrapper-expanded]="isExpanded(element)">
+                <div class="element-detail">
+                  <mat-tab-group>
+                    <mat-tab label="Classe">
+                      <div class="content">
+                        <div class="row">
+                          <div class="col-sm-3 mt-4 mb-4 ml-1 mr-1">
+                            <mat-card *ngIf="element.tabela != null">
+                              <img [src]="element.tabela" [alt]="element.nome" />
+                            </mat-card>
+                          </div>
+                          <div
+                            class="col-sm-5 mt-4 text-justify"
+                            [innerHTML]="element.descricao_classe"
+                          ></div>
+                          <div class="col-sm-3 mt-4 mb-4">
+                            <mat-card *ngIf="element.imagem != null">
+                              <img [src]="element.imagem" [alt]="element.nome" />
+                            </mat-card>
+                          </div>
+                        </div>
                       </div>
-                      <div
-                        class="col-sm-5 mt-4 text-justify"
-                        [innerHTML]="element.descricao_classe"
-                      ></div>
-                      <div class="col-sm-3 mt-4 mb-4">
-                        <mat-card *ngIf="element.imagem != null">
-                          <img [src]="element.imagem" [alt]="element.nome" />
-                        </mat-card>
+                    </mat-tab>
+                    <mat-tab label="Habilidades">
+                      <div class="row">
+                        <h5>Habilidades de Classe</h5>
+                        <p>
+                          Habilidades de Classe são poderes dados passivamente pela
+                          classe, de acordo com o nível da mesma. Segue as
+                          habilidades de {{ element.nome }}.
+                        </p>
+                        <p>
+                          (ps: Habilidades Mágicas são marcadas com o símbolo:
+                          <i><b>e</b></i
+                          >.)
+                        </p>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr />
+                          </div>
+                        </div>
+                        <div
+                          class="col-sm-12 text-justify"
+                          [innerHTML]="element.descricao_habilidades"
+                        ></div>
                       </div>
-                    </div>
-                  </div>
-                </mat-tab>
-                <mat-tab label="Habilidades">
-                  <div class="row">
-                    <h5>Habilidades de Classe</h5>
-                    <p>
-                      Habilidades de Classe são poderes dados passivamente pela
-                      classe, de acordo com o nível da mesma. Segue as
-                      habilidades de {{ element.nome }}.
-                    </p>
-                    <p>
-                      (PS: Habilidades Mágicas são marcadas com o símbolo:
-                      <i><b>e</b></i
-                      >.)
-                    </p>
-                    <div
-                      class="col-sm-12 text-justify"
-                      [innerHTML]="element.descricao_habilidades"
-                    ></div>
-                  </div>
-                </mat-tab>
-                <mat-tab label="Poderes">
-                  <div class="row">
-                    <h5>Poderes de Classe</h5>
-                    <p>
-                      (PS: Poderes Mágicos são marcados com o símbolo:
-                      <i><b>e</b></i
-                      >.)
-                    </p>
-                    <div
-                      class="col-sm-12 text-justify"
-                      [innerHTML]="element.descricao_poderes"
-                    ></div>
-                  </div>
-                </mat-tab>
-                <mat-tab
-                  *ngIf="element.ha_informacoes_adicionais"
-                  label="Informações Adicionais"
-                >
-                  <div class="row">
-                    <div
-                      class="col-sm-12 text-justify"
-                      [innerHTML]="element.descricao_informacoes"
-                    ></div>
-                  </div>
-                </mat-tab>
-                <mat-tab *ngIf="element.ha_complicacoes" label="Complicações">
-                  <div class="row">
-                    <h5>Complicações</h5>
-                    <p>
-                      Complicações são restrições e penalidades com as quais seu
-                      personagem precisa lidar. Quando você cria seu personagem,
-                      pode escolher uma complicação para ele (e apenas uma). Se
-                      fizer isso, recebe um poder geral extra. Você é livre para
-                      escolher o poder, mas deve preencher seus pré-requisitos.
-                    </p>
-                    <p>
-                      (PS:Certas complicações restringem as ações de um herói,
-                      seja por serem uma limitação de sua personalidade, seja
-                      por serem um código ou voto que ele decidiu seguir. Tais
-                      complicações vêm acompanhadas do símbolo <b>†</b>).
-                    </p>
-                    <div
-                      class="col-sm-12 text-justify"
-                      [innerHTML]="element.descricao_complicacoes"
-                    ></div>
-                  </div>
-                </mat-tab>
-                <mat-tab *ngIf="element.ha_poderes_db" label="Poderes DB">
-                  <div class="row">
-                    <p></p>
-                    <h5>Poderes de Classe da Dragão Brasil</h5>
-                    <p>
-                      Essa aba vai apresentar material de jogo em fase de teste,
-                      que está sendo trabalhado pela equipe de game design e
-                      pode (ou não) ser inserido em futuros suplementos da
-                      franquia. Todas as regras mostradas aqui são opcionais e
-                      podem apresentar mudanças caso publicadas oficialmente.
-                    </p>
-                    <div
-                      class="col-sm-12 text-justify"
-                      [innerHTML]="element.descricao_poderes_db"
-                    ></div>
-                  </div>
-                </mat-tab>
-              </mat-tab-group>
-            </div>
-          </td>
-        </ng-container>
+                    </mat-tab>
+                    <mat-tab label="Poderes">
+                      <div class="row">
+                        <h5>Poderes de Classe</h5>
+                        <p>
+                          (ps: Poderes Mágicos são marcados com o símbolo:
+                          <i><b>e</b></i
+                          >.)
+                        </p>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr />
+                          </div>
+                        </div>
+                        <div
+                          class="col-sm-12 text-justify"
+                          [innerHTML]="element.descricao_poderes"
+                        ></div>
+                      </div>
+                    </mat-tab>
+                    <mat-tab
+                      *ngIf="element.ha_informacoes_adicionais"
+                      label="Informações Adicionais"
+                    >
+                      <div class="row">
+                        <div
+                          class="col-sm-12 text-justify"
+                          [innerHTML]="element.descricao_informacoes"
+                        ></div>
+                      </div>
+                    </mat-tab>
+                    <mat-tab *ngIf="element.ha_complicacoes" label="Complicações">
+                      <div class="row">
+                        <h5>Complicações</h5>
+                        <p>
+                          Complicações são restrições e penalidades com as quais seu
+                          personagem precisa lidar. Quando você cria seu personagem,
+                          pode escolher uma complicação para ele (e apenas uma). Se
+                          fizer isso, recebe um poder geral extra. Você é livre para
+                          escolher o poder, mas deve preencher seus pré-requisitos.
+                        </p>
+                        <p>
+                          (PS:Certas complicações restringem as ações de um herói,
+                          seja por serem uma limitação de sua personalidade, seja
+                          por serem um código ou voto que ele decidiu seguir. Tais
+                          complicações vêm acompanhadas do símbolo <b>†</b>).
+                        </p>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr />
+                          </div>
+                        </div>
+                        <div
+                          class="col-sm-12 text-justify"
+                          [innerHTML]="element.descricao_complicacoes"
+                        ></div>
+                      </div>
+                    </mat-tab>
+                    <mat-tab *ngIf="element.ha_poderes_db" label="Poderes DB">
+                      <div class="row">
+                        <p></p>
+                        <h5>Poderes de Classe da Dragão Brasil</h5>
+                        <p>
+                          Essa aba vai apresentar material de jogo em fase de teste,
+                          que está sendo trabalhado pela equipe de game design e
+                          pode (ou não) ser inserido em futuros suplementos da
+                          franquia. Todas as regras mostradas aqui são opcionais e
+                          podem apresentar mudanças caso publicadas oficialmente.
+                        </p>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr />
+                          </div>
+                        </div>
+                        <div
+                          class="col-sm-12 text-justify"
+                          [innerHTML]="element.descricao_poderes_db"
+                        ></div>
+                      </div>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </div>
+            </td>
+          </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
-        <tr
-          mat-row
-          *matRowDef="let element; columns: columnsToDisplayWithExpand"
-          class="element-row"
-          [class.expanded-row]="expandedElement === element"
-          (click)="
-            expandedElement = expandedElement === element ? null : element
-          "
-        ></tr>
-        <tr
-          mat-row
-          *matRowDef="let row; columns: ['expandedDetail']"
-          class="detail-row"
-        ></tr>
-      </table>
-    </mat-card>
-  </div>
+          <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+          <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand" class="example-element-row"
+            [ngClass]="{ zebra: isOdd(element) }" [class.example-expanded-row]="isExpanded(element)"
+            (click)="toggle(element)"></tr>
+          <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+        </table>
+      </mat-card>
+    </div>
+  </form>
 </div>

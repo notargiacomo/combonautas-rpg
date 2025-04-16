@@ -1,4 +1,5 @@
 import { Proficiencia } from "../enum/proficiencia.enum";
+import { Poder } from "./poder";
 
 export interface Classe {
 
@@ -10,6 +11,7 @@ export interface Classe {
   nome_arquivo_descricao_informacoes?:string;
   nome_arquivo_descricao_complicacoes?:string;
   nome_arquivo_descricao_poderes_db?:string;
+  poderes?: Poder[];
   descricao_classe?: string;
   descricao_habilidades?: string;
   descricao_poderes?: string;
