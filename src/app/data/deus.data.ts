@@ -397,6 +397,34 @@ export class DeusData {
         canalizaEnergia: 'Qualquer',
         devotos: ['Elfo', 'Golen', 'Qareen', 'Sílfide', 'Arcanista', 'Bardo'],
       },
+      {
+        id: 21,
+        nome: 'Panteão',
+        nome_arquivo_descricao: 'deus_panteao_descricao',
+        tipo: 'Maior',
+        fundamentalista_sacerdote: `Acredita com fervor que todo o Panteão deve ser cultuado; favorecer este ou aquele deus acaba atraindo o desfavor dos outros dezenove. Não se associa a devotos de deuses específicos. Além de PM adicionais (p. 11), o sacerdote do Panteão fundamentalista recebe um poder de combate ou de destino a sua escolha.`,
+      },
+      {
+        id: 22,
+        nome: 'Arton',
+        nome_arquivo_descricao: 'deus_arton_descricao',
+        tipo: 'Maior',
+        aceitaDruidas: true,
+        fundamentalista_druida: `Jamais matar, nem mesmo para subsistência. Deve recorrer a meios mágicos para sustento. Em vez de um poder concedido, o druida de Arton fundamentalista recebe um poder geral.`
+      },
+      {
+        id: 23,
+        nome: 'Bem',
+        nome_arquivo_descricao: 'deus_bem_descricao',
+        tipo: 'Maior',
+        aceitaPaladinos: true,
+        fundamentalista_paladino: `Como o sacerdote do Panteão.`
+      },
+      {
+        id: 24,
+        nome: 'Ateísmo',
+        tipo: 'Maior',
+      }
     ];
   }
 }
