@@ -12,12 +12,10 @@ import {
   OnInit
 } from '@angular/core';
 import {
-  FormArray,
   FormBuilder,
-  FormControl,
   FormGroup,
   FormsModule,
-  ReactiveFormsModule,
+  ReactiveFormsModule
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -30,15 +28,12 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-import { Deslocamento } from '../../enum/deslocamento.enum';
 import { Modificador } from '../../enum/modificador.enum';
-import { Referencia } from '../../enum/referencia.enum';
-import { Deus } from '../../model/deus';
-import { DeusService } from '../../service/deus.service';
-import { PoderService } from '../../service/poder.service';
-import { response } from 'express';
 import { Classe } from '../../model/classe';
+import { Deus } from '../../model/deus';
 import { ClasseService } from '../../service/classe.service';
+import { PoderService } from '../../service/poder.service';
+import { TipoPoder } from '../../enum/tipo.poder.enum';
 
 @Component({
   selector: 'app-classes',
@@ -129,15 +124,6 @@ export class ClassesComponent implements OnInit {
   private reiniciaFormulario() {
     this.form = this.fb.group({
       nome: [],
-      regiao: [],
-      temMagia: [],
-      temPoderGeral: [],
-      temPericia: [],
-      temRD: [],
-      concedeDinheiro: [],
-      concedeFerramenta: [],
-      concedeParceiro: [],
-      bonus: [],
     });
   }
 
@@ -146,45 +132,9 @@ export class ClassesComponent implements OnInit {
     this.consultar();
   }
 
-  checkDeslocamento(deslocamento: Deslocamento, isChecked: boolean): void {
-    const formArray = this.form.controls['deslocamentos'] as FormArray;
-    if (isChecked) {
-      formArray.push(new FormControl(deslocamento));
-    } else {
-      const index = formArray.controls.findIndex(
-        (item) => item.value === deslocamento
-      );
-      formArray.removeAt(index);
-    }
-
-    this.consultar();
-  }
-
-  checkReferencia(referencia: Referencia, isChecked: boolean): void {
-    const formArray = this.form.controls['referencias'] as FormArray;
-    if (isChecked) {
-      formArray.push(new FormControl(referencia));
-    } else {
-      const index = formArray.controls.findIndex(
-        (item) => item.value === referencia
-      );
-      formArray.removeAt(index);
-    }
-
-    this.consultar();
-  }
-
   consultar() {
     let filtro = this.form.value;
   
-    // Corrigir tipos
-    ['forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'].forEach(campo => {
-      if (filtro[campo] !== null && filtro[campo] !== undefined && filtro[campo] !== '') {
-        filtro[campo] = Number(filtro[campo]);
-      } else {
-        delete filtro[campo]; // Remove para não enviar vazio
-      }
-    });
   
     this.classeService.listar(filtro).subscribe({
       next: (response: any[]) => {
@@ -197,12 +147,67 @@ export class ClassesComponent implements OnInit {
         this.numero_registros = response.length;
 
         this.classes.forEach(classe => {
-          this.poderService.listar({id_classe:classe.id}).subscribe({
+          if(classe.usa_poderes_variantes) {
+            this.poderService.listar({id_classe:classe.id, tipo: TipoPoder.PODER_CLASSE}).subscribe({
+              next: (response: any[]) => {
+                response.sort((a, b) => {
+                  let nome_a = a.nome ? a.nome : 'a';
+                  let nome_b = b.nome ? b.nome : 'b';
+                  return nome_a.localeCompare(nome_b);
+                });
+                response.forEach(poder => {
+                  poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
+                  if (poder.e_poder_magico) {
+                    poder.descricao += '<i><b> e</b></i>';
+                  }
+                });
+                classe.poderes = response;
+              }
+            });
+          } else if(classe.id_classe_pai) {
+            this.poderService.listar({id_classe:classe.id_classe_pai, tipo: TipoPoder.PODER_CLASSE}).subscribe({
+              next: (response: any[]) => {
+                response.sort((a, b) => {
+                  let nome_a = a.nome ? a.nome : 'a';
+                  let nome_b = b.nome ? b.nome : 'b';
+                  return nome_a.localeCompare(nome_b);
+                });
+                response.forEach(poder => {
+                  poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
+                  if (poder.e_poder_magico) {
+                    poder.descricao += '<i><b> e</b></i>';
+                  }
+                });
+                classe.poderes = response;
+              }
+            });
+          } else {
+            this.poderService.listar({id_classe:classe.id, tipo: TipoPoder.PODER_CLASSE}).subscribe({
+              next: (response: any[]) => {
+                response.sort((a, b) => {
+                  let nome_a = a.nome ? a.nome : 'a';
+                  let nome_b = b.nome ? b.nome : 'b';
+                  return nome_a.localeCompare(nome_b);
+                });
+                response.forEach(poder => {
+                  poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
+                  if (poder.e_poder_magico) {
+                    poder.descricao += '<i><b> e</b></i>';
+                  }
+                });
+                classe.poderes = response;
+              }
+            });
+          }
+        });
+
+        this.classes.forEach(classe => {
+          this.poderService.listar({id_classe:classe.id, tipo: TipoPoder.HABILIDADE_CLASSE}).subscribe({
             next: (response: any[]) => {
               response.sort((a, b) => {
-                let nome_a = a.nome ? a.nome : 'a';
-                let nome_b = b.nome ? b.nome : 'b';
-                return nome_a.localeCompare(nome_b);
+                const valor_a = a.valor ?? 0;
+                const valor_b = b.valor ?? 0;
+                return valor_a - valor_b;
               });
               response.forEach(poder => {
                 poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
@@ -210,7 +215,7 @@ export class ClassesComponent implements OnInit {
                   poder.descricao += '<i><b> e</b></i>';
                 }
               });
-              classe.poderes = response;
+              classe.habilidades = response;
             }
           });
         });

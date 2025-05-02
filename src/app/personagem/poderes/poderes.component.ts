@@ -102,7 +102,7 @@ export class PoderesComponent {
   }
 
   consultar(event: any) {
-    if(this.form.value.tipo !== TipoPoder.CONCEDIDO){
+    if(this.form.value.tipo !== TipoPoder.PODER_CONCEDIDO){
       this.form.value.id_deuses = null;
     }
     let filtro = this.form.value;
@@ -143,7 +143,7 @@ export class PoderesComponent {
   }
 
   seExibeDeuses(){
-    return this.form.value.tipo === TipoPoder.CONCEDIDO;
+    return this.form.value.tipo === TipoPoder.PODER_CONCEDIDO;
   }
 
   // selecaoDeuses(event: any): void {

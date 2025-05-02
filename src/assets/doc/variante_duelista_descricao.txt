@@ -1,0 +1,5 @@
+<h5>Características de Classe</h5>
+<p><b>Pontos de Vida.</b>  Um duelista começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+<p><b>Pontos de Mana.</b> 3 PM por nível.</p>
+<p><b>Perícias.</b>   Luta (For) ou Pontaria (Des), Reflexos (Des), mais 2 a sua escolha entre Acrobacia (Des), Atletismo (For), Atuação (Car), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Intimidação (Car), Luta (For), Ofício (Int), Percepção (Sab), Pilotagem (Des) e Pontaria (Des).</p>
+<p><b>Proficiências.</b> Armas marciais.</p>

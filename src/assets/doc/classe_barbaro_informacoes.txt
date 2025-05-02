@@ -12,3 +12,11 @@
 <li><b>Dragão.</b> Dragões não são animais, mas algumas tribos bárbaras veneram dragões e os adotam como seu totem. Isso os torna uma opção para animal totêmico. Implacável, o dragão permite que seus bárbaros lancem Arma Mágica. <b>(Dragão Brasil 200, Pag. 71)</b></li>
 <li><b>Texugo.</b> O corajoso texugo permite que você lance Arma Espiritual. A arma se manifesta como um texugo espectral que causa dano de perfuração com sua mordida. <b>(Dragão Brasil 208, Pag. 56)</b></li>
 </ul>
+<hr>
+<h5>Poderes de Brado</h5>
+<p>Alguns poderes do bárbaro são poderes de brado. Esses poderes compartilham as seguintes regras.</p>
+<ul>
+<li>Emitir um brado gasta uma ação de movimento e 1 PM, a menos que a descrição diga o contrário.</li>
+<li>Brados têm alcance curto.</li>
+</ul>
+<p>A critério do mestre, habilidades raciais baseadas em gritos, como o Rugido Imponente do moreau do leão (Ameaças de Arton, p. 305), podem ser consideradas poderes de brado para um bárbaro.</p>

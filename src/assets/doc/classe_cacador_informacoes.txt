@@ -12,4 +12,23 @@ ação padrão procurando e passar em um teste de Investigação (CD Sab).</li>
 como galhos e cipós. Porém, precisa estar em um ambiente propício, como uma 
 floresta, um beco repleto de entulhos etc.</li>
 </ul>
+
+<hr>
+
+<h5>Companheiro Animal</h5>
+<p>Um companheiro animal é um amigo valoroso e fiel. Você decide de qual espécie 
+é seu companheiro. Vocês têm um vínculo mental, sendo capazes de entender um ao outro. Seu companheiro animal obedece a você, mesmo que isso arrisque a vida dele.</p>
+<p>Em termos de jogo, seu companheiro animal é um parceiro ajudante, assassino, atirador, combatente, fortão, guardião, perseguidor, ou uma montaria, do nível iniciante. No 7º nível ele muda para veterano e, no 15º nível, para mestre (se 
+tiver mais de um tipo, todos mudam de nível). Se o companheiro animal morrer, 
+você fica atordoado por uma rodada. Você pode invocar um novo companheiro após 
+um dia inteiro de prece e meditação.</p>
+<p>A seguir, alguns exemplos de animais (mas você é livre para escolher outros). Veja a página 260 para as regras de parceiros.</p>
+<ul>
+<li>Ajudante. Corvo, macaco, raposa, serpente ou outro animal ágil ou esperto.</li>
+<li>Assassino. Lince, onça ou outro animal treinado para abater presas.</li>
+<li>Atirador. Águia, falcão ou outro animal capaz de mergulhar rapidamente nos alvos de seus ataques à distância. </li>
+<li>Fortão. Crocodilo, javali, leão, lobo ou outro animal capaz de lutar ao seu lado.</li>
+<li>Guardião. Alce, cão, coruja, tartaruga, urso ou outro animal pesado ou atento.</li>
+<li>Perseguidor. Gambá, sabujo ou outro animal farejador.</li>
+</ul>
 </div>

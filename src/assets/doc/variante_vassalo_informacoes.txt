@@ -1,0 +1,8 @@
+<div class="row">
+<h5>Vassalo em Campanha</h5>
+<p>O vassalo é uma classe variante diferente. Em vez de oferecer muitos poderes abertos, que podem ser escolhidos pelo jogador, tem uma lista em grande parte fixa e imutável. Em vez de se encaixar em quase qualquer campanha, exige uma progressão narrativa para o personagem — determinando parcialmente os rumos da história. Como lidar com toda essa esquisitice?</p>
+<p>Antes de escolher um personagem vassalo, o jogador deve conversar com o mestre, garantindo que essa variante tem espaço na campanha. Por sua vez, o mestre deve trabalhar com o jogador para que sua ascensão na aristocracia artoniana aconteça em jogo. Simulando o lado mais tradicional e até antiquado da nobreza de Arton, o vassalo também é uma variante mais estanque
+em termos de regras. Empurra o personagem e a campanha como um todo para um certo lado. Por isso, todos precisam estar de acordo para que ele funcione. Se você prefere um personagem mais solto, que tenha mais opções de poderes e liberdade na campanha, talvez um cavaleiro básico ou um nobre se encaixem mais com seu conceito.</p>
+<p>Para um exemplo de como um personagem vassalo funciona na mesa, você pode assistir à Guilda do Macaco — na campanha, Lothar Algherulff seguiu essa variante do 1º ao 17º nível. O sistema de jogo era outro, mas a classe era muito parecida e os ajustes necessários na campanha não dependeram de regras, mas de história.</p>
+<h5>O Treinamento de um Vassalo</h5>
+<p>Ao longo de sua carreira, o vassalo se torna treinado em diversas perícias. Sempre que receber um desses treinamentos por uma habilidade de vassalo, se já for treinado na perícia, em vez disso você recebe +2 nela.</p>

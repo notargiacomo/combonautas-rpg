@@ -90,8 +90,8 @@ export const condicoes = [
     id: 14,
     nome: 'ENJOADO',
     descricao:
-      'O personagem se torna prestativo em relação à fonte da condição. Ele não fica sob controle da fonte, mas percebe suas palavras e ações da maneira mais favorável possível. A fonte da condição recebe +10 em testes de Diplomacia com o personagem.',
-    tipo: TipoCondicao.MENTAL,
+      'O personagem só pode realizar uma ação padrão ou de movimento (não ambas) por rodada. Ele pode gastar uma ação padrão para fazer uma investida, mas pode avançar no máximo seu deslocamento (e não o dobro). Metabolismo.',
+    tipo: TipoCondicao.METABOLISMO,
   },
   {
     id: 15,

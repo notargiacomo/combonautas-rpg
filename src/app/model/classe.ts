@@ -1,9 +1,11 @@
 import { Proficiencia } from "../enum/proficiencia.enum";
+import { Complicacao } from "./complicacao";
 import { Poder } from "./poder";
 
 export interface Classe {
 
   id: number;
+  id_classe_pai?: number;
   nome?: string;
   nome_arquivo_descricao_classe?: string;
   nome_arquivo_descricao_habilidades?: string;
@@ -11,7 +13,11 @@ export interface Classe {
   nome_arquivo_descricao_informacoes?:string;
   nome_arquivo_descricao_complicacoes?:string;
   nome_arquivo_descricao_poderes_db?:string;
+  sem_poderes?: boolean;
   poderes?: Poder[];
+  habilidades?: Poder[];
+  complicacoes?: Complicacao[];
+  poderesDb?: Poder[];
   descricao_classe?: string;
   descricao_habilidades?: string;
   descricao_poderes?: string;
@@ -20,6 +26,7 @@ export interface Classe {
   ha_informacoes_adicionais?: boolean;
   ha_poderes_db?: boolean;
   ha_complicacoes?: boolean;
+  usa_poderes_variantes?: boolean;
   descricao_informacoes?:string;
   fator_vida?: number;
   fator_mana?:number;

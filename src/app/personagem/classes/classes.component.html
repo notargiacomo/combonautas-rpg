@@ -119,13 +119,14 @@
                             <hr />
                           </div>
                         </div>
-                        <div
-                          class="col-sm-12 text-justify"
-                          [innerHTML]="element.descricao_habilidades"
-                        ></div>
+                        <div class="col-sm-12 text-justify">
+                          <div *ngFor="let habilidade of element.habilidades" style=" text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <div class="col-sm-12 text-justify" [innerHTML]="habilidade.descricao"></div>
+                          </div>
+                        </div>
                       </div>
                     </mat-tab>
-                    <mat-tab label="Poderes">
+                    <mat-tab label="Poderes" *ngIf="!element.sem_poderes">
                       <div class="row">
                         <h5>Poderes de Classe</h5>
                         <p>
@@ -138,10 +139,19 @@
                             <hr />
                           </div>
                         </div>
-                        <div
-                          class="col-sm-12 text-justify"
-                          [innerHTML]="element.descricao_poderes"
-                        ></div>
+                        <div class="col-sm-6">
+                          <div *ngFor="let poderes of element.poderes.slice(0, element.poderes.length / 2)" 
+                               style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <div class="text-justify" [innerHTML]="poderes.descricao"></div>
+                          </div>
+                        </div>
+                      
+                        <div class="col-sm-6">
+                          <div *ngFor="let poderes of element.poderes.slice(element.poderes.length / 2)" 
+                               style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <div class="text-justify" [innerHTML]="poderes.descricao"></div>
+                          </div>
+                        </div>
                       </div>
                     </mat-tab>
                     <mat-tab

@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { AbstractService } from './abstract.service';
-import { ClasseData } from '../data/classe.data';
 import { Classe } from '../model/classe';
+import { AbstractService } from './abstract.service';
 
 @Injectable({
   providedIn: 'root',
