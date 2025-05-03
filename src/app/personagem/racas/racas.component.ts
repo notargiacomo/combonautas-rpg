@@ -39,6 +39,7 @@ import { TipoCriatura } from '../../enum/tipo.criatura.enum';
 import { Raca } from '../../model/raca';
 import { PoderService } from '../../service/poder.service';
 import { RacaService } from '../../service/raca.service';
+import { TipoPoder } from '../../enum/tipo.poder.enum';
 
 @Component({
   selector: 'app-racas',
@@ -209,8 +210,28 @@ export class RacasComponent implements OnInit {
           let nome_b = b.nome ? b.nome : 'b';
           return nome_a.localeCompare(nome_b);
         });
+
         this.racas = response;
         this.numero_registros = response.length;
+        
+        this.racas.forEach(raca => {
+          this.poderService.listar({id_raca:raca.id, tipo: TipoPoder.PODER_RACA}).subscribe({
+            next: (response: any[]) => {
+              response.sort((a, b) => {
+                let nome_a = a.nome ? a.nome : 'a';
+                let nome_b = b.nome ? b.nome : 'b';
+                return nome_a.localeCompare(nome_b);
+              });
+              response.forEach(poder => {
+                poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
+                if (poder.e_poder_magico) {
+                  poder.descricao += '<i><b> e</b></i>';
+                }
+              });
+              raca.poderes = response;
+            }
+          });
+        });
         this.cdr.detectChanges();
       },
       error: (response: any[]) => {

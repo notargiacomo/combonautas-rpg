@@ -20,6 +20,7 @@ export class Raca {
   instrucao?: string[];
   resolucao?: string[];
   habilidades?: Poder[];
+  poderes?: Poder[];
   seSelecaoFinalizada?: boolean;
   referencias?: string;
   paginas?: string;

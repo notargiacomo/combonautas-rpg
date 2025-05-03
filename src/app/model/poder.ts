@@ -24,6 +24,7 @@ export class Poder {
   e_poder_magico?: boolean;
   tipo?: string;
   id_classe?: number;
+  id_raca?: number[];
   classe?: Classe;
   raca?: Raca;
   duracao?: string;

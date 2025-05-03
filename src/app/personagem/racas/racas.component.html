@@ -211,7 +211,30 @@
                     </mat-tab>
                     <mat-tab label="Poderes Gerais">
                       <div class="row">
-                        <div class="col-sm-12 mt-4 text-justify" [innerHTML]="element.poderes_gerais"></div>
+                        <h5>Poderes de Classe</h5>
+                        <p>
+                          (ps: Poderes Mágicos são marcados com o símbolo:
+                          <i><b>e</b></i
+                          >.)
+                        </p>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div *ngFor="let poderes of element.poderes.slice(0, element.poderes.length / 2)" 
+                               style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <div class="text-justify" [innerHTML]="poderes.descricao"></div>
+                          </div>
+                        </div>
+                      
+                        <div class="col-sm-6">
+                          <div *ngFor="let poderes of element.poderes.slice(element.poderes.length / 2)" 
+                               style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <div class="text-justify" [innerHTML]="poderes.descricao"></div>
+                          </div>
+                        </div>
                       </div>
                     </mat-tab>
                     <mat-tab label="História">
