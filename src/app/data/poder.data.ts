@@ -8347,6 +8347,42 @@ export class PoderData {
           prerequisito_nivel: 1,
           id_raca: [25],
         },
+        {
+          id: 820,
+          nome: 'Couraça Rubra',
+          descricao: `Você recebe redução de dano 2. Sua couraça conta como um poder da Tormenta, exceto para perda de Carisma`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [29],
+        },
+        {
+          id: 821,
+          nome: 'Cria da Tormenta',
+          descricao: `Você é uma criatura do tipo monstro e recebe +5 em testes de resistência contra efeitos causados por lefeu e pela Tormenta. Além disso, efeitos da Tormenta que não afetem lefou também não afetam você.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [29],
+        },
+        {
+          id: 822,
+          nome: 'Disforme',
+          descricao: `Por sua anatomia anômala, você não pode empunhar nem vestir itens, a menos que sejam mágicos ou especialmente adaptados para você (o que demora um dia e custa 50% do preço do item, sem contar melhorias). Seus itens iniciais, e aqueles recebidos por sua origem ou habilidades, são adaptados para você. Esta habilidade conta como um poder da Tormenta, exceto para perda de Carisma.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [29],
+        },
+        {
+          id: 823,
+          nome: 'Terror Vivo',
+          descricao: `Você pode usar Força como atributo-chave de Intimidação (em vez de Carisma) e recebe um poder da Tormenta a sua escolha, que não conta para perda de Carisma.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [29],
+        },
     ];
   }
 }

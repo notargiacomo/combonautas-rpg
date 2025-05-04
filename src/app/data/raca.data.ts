@@ -975,7 +975,10 @@ export class RacaData {
         sentidos: [''],
         referencias: Referencia.AMEACAS,
         paginas: '157',
-        descricao: ``,
+        descricao: `<h4>Habilidades de Raça</h4>
+        <p><b>Força +2, Constituição +1, Carisma –2.</b></p>`,
+        longevidade: Longevidade.UM,
+        devotos: " Arsenal, Lin-Wu.",
         historia: ``, resolucao: [], 
         forca: 2,
         destreza: 0,
