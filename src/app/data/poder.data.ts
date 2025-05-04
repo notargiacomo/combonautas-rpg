@@ -2889,6 +2889,7 @@ export class PoderData {
         nome: 'Cria da Tormenta',
         descricao: 'Você é uma criatura do tipo monstro e recebe +5 em testes de resistência contra efeitos causados por lefeu e pela Tormenta',
         tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [6],
         instrucao: [`this.personagem.atualizaBonusExtraPericia('FORTITUDE', [{origem: 'Cria da Tormenta', bonus: 5, condicao:['Contra efeitos causados por lefeu e pela Tormenta'], ativo: false}]);`, `this.personagem.atualizaBonusExtraPericia('REFLEXO', [{origem: 'Cria da Tormenta', bonus: 5, condicao:['Contra efeitos causados por lefeu e pela Tormenta'], ativo: false}]);`, `this.personagem.atualizaBonusExtraPericia('VONTADE', [{origem: 'Cria da Tormenta', bonus: 5, condicao:['Contra efeitos causados por lefeu e pela Tormenta'], ativo: false}]);`],
         ativacao: [],
         referencias: Referencia.BASICO,
@@ -2899,6 +2900,7 @@ export class PoderData {
         nome: 'Deformidade',
         descricao: 'Todo lefou possui defeitos físicos que, embora desagradáveis, conferem certas vantagens. Você recebe +2 em duas perícias a sua escolha. Cada um desses bônus conta como um poder da Tormenta (exceto para perda de Crisma). Você pode trocar um desses bônus por um poder da Tormenta a sua escolha (ele também não conta para perda de Carisma)',
         tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [6],
         instrucao: ['this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261, undefined)', OpcoesSelecao.RADIO, `[{chave: 'Bonus +2 em Duas Perícias', value: 'this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 261, undefined)'}, {chave: 'Bonus +2 em Uma Perícias e um Poder da Tormenta', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder da tormenta (Deformidade)')"}]`],
         ativacao: [],
         referencias: Referencia.BASICO,
@@ -3257,7 +3259,7 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '93',
-        id_raca: [9],
+        id_raca: [9, 31],
         prerequisito_nivel: 1,
       },
       {
@@ -3280,7 +3282,7 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '93',
-        id_raca: [9],
+        id_raca: [9, 31],
         prerequisito_nivel: 1,
       },
       {
@@ -3292,7 +3294,7 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '93',
-        id_raca: [9],
+        id_raca: [9, 31],
         prerequisito_nivel: 1,
       },
       {
@@ -3309,7 +3311,7 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '93',
-        id_raca: [9],
+        id_raca: [9, 31],
         prerequisito_nivel: 1,
       },
       {
@@ -3354,6 +3356,9 @@ export class PoderData {
         descricao: 'Sua natureza multifacetada fez com que você aprendesse conhecimentos variados. Você se torna treinado em uma perícia a sua escolha (não precisa ser da sua classe)',
         instrucao: [`this.personagem.adicionaNumeroPericiasLivres(1)`],
         ativacao: [],
+        id_raca: [11],
+        prerequisito_nivel: 1,
+        tipo: TipoPoder.HABILIDADE_RACA,
         referencias: Referencia.BASICO,
         paginas: '93'
       },
@@ -3363,6 +3368,9 @@ export class PoderData {
         descricao: 'Quando faz um teste de perícia, você pode gastar 2 PM para somar sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque. Caso receba esta habilidade novamente, seu custo é reduzido em –1 PM',
         instrucao: [`this.personagem.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria({origem: 'Engenhosidade', atributo: 'inteligencia', condicao:['2 PM'], ativo: false});`],
         ativacao: [],
+        id_raca: [11],
+        prerequisito_nivel: 1,
+        tipo: TipoPoder.HABILIDADE_RACA,
         referencias: Referencia.BASICO,
         paginas: '93'
       },
@@ -3370,8 +3378,11 @@ export class PoderData {
         id: 300,
         nome: 'Ossos Frágeis',
         descricao: 'Você sofre 1 ponto de dano adicional por dado de dano de impacto. Por exemplo, se for atingido por uma clava (dano 1d6), sofre 1d6+1 pontos de dano. Se cair de 3m de altura (dano 2d6), sofre 2d6+2 pontos de dano',
+        id_raca: [11],
+        prerequisito_nivel: 1,
         instrucao: [],
         ativacao: [],
+        tipo: TipoPoder.HABILIDADE_RACA,
         referencias: Referencia.BASICO,
         paginas: '93'
       },
@@ -3381,6 +3392,9 @@ export class PoderData {
         descricao: 'Você recebe proficiência em armas de fogo e +2 em Ofício (um qualquer, a sua escolha)',
         instrucao: [`this.personagem.adicionaProficiencia('Armas de Fogo');`, `this.personagem.adicionaBonusPericiaPoderNaoLocalizado(2, 1014, ['Ofício Armeiro','Ofício Artesão','Ofício Alquimista', 'Ofício Cozinheiro', 'Ofício Alfaiate', 'Ofício Engenhoqueiro', 'Ofício Escriba', 'Ofício Professor', 'Ofício Tatuador', 'Ofício Fazendeiro', 'Ofício Pescador', 'Ofício Lenhador', 'Ofício Minerador', 'Ofício de Soldado', 'Ofício Marinheiro', 'Ofício Armadilheiro', 'Ofício Zelador', 'Ofício Mercador', 'Ofício Ferreiro', 'Ofício Taverneiro', 'Ofício Carpinteiro', 'Ofício Barbeiro', 'Ofício Pedreiro', 'Ofício Coureiro', 'Ofício Padeiro', 'Ofício Faxineiro'])`],
         ativacao: [],
+        id_raca: [11],
+        prerequisito_nivel: 1,
+        tipo: TipoPoder.HABILIDADE_RACA,
         referencias: Referencia.BASICO,
         paginas: '93'
       },
@@ -8408,6 +8422,146 @@ export class PoderData {
           tipo: TipoPoder.HABILIDADE_RACA,
           prerequisito_nivel: 1,
           id_raca: [28],
+        },
+        {
+          id: 826,
+          nome: 'Alma da Água',
+          descricao: `Você é uma criatura do tipo espírito e tem deslocamento de natação igual ao seu deslocamento terrestre.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [30],
+        },
+        {
+          id: 827,
+          nome: 'Carapaça Kappa',
+          descricao: `Você não pode ser flanqueado e recebe cobertura leve se estiver submerso ou caído. Você soma sua Constituição na Defesa, limitado pelo seu nível, mas apenas se não estiver usando armaduras pesadas (se já faz isso, como pela habilidade Casca Grossa, em vez disso você recebe +2 na Defesa).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [30],
+        },
+        {
+          id: 828,
+          nome: 'Cura das Águas',
+          descricao: `Você pode lançar a magia Curar Ferimentos (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você não pode usar esta habilidade se a água de sua cabeça estiver derramada.`,
+          e_poder_magico: true,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [30],
+        },
+        {
+          id: 829,
+          nome: 'Tigela D’água',
+          descricao: `Sempre que falhar por 5 ou mais em um teste para evitar ser agarrado, derrubado ou empurrado, você derrama a água de sua cabeça. Você fica enjoado até encher a tigela novamente (o que exige uma fonte de água e uma ação padrão).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [30],
+        },
+        {
+          id: 830,
+          nome: 'Ajuntamento Escamoso',
+          descricao: `Embora sejam um grupo de kobolds, para todos os efeitos vocês são uma única criatura Média com dois braços. Entretanto, contam como Pequenos para efeitos dos espaços por onde podem passar e, quando fazem um teste de resistência contra um efeito que afeta apenas uma criatura e não causa dano, rolam dois dados e usam o melhor resultado. Por fim, têm vulnerabilidade a dano de área.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [35],
+        },
+        {
+          id: 831,
+          nome: 'Praga Monstruosa',
+          descricao: `Vocês são criaturas do tipo monstro e recebem visão no escuro e +2 em Sobrevivência.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [35],
+        },
+        {
+          id: 832,
+          nome: 'Sensibilidade a Luz',
+          descricao: `Quando expostos à luz do sol ou similar, vocês ficam ofuscados.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [35],
+        },
+        {
+          id: 833,
+          nome: 'Talentos do Bando',
+          descricao: `<ul>
+          <li><b>Amontoados.</b>  Vocês são considerados uma criatura Grande para efeitos de espaço ocupado e modificadores de manobras de combate. Além disso, podem se organizar em qualquer forma equivalente a quatro cubos de 1,5m, desde cada um tenha pelo menos um lado adjacente a outro. Efeitos que aumentem seu tamanho se acumulam com este poder, e permitem que vocês se organizem em mais cubos (9 cubos de 1,5m para Enorme e 9 cubos de 3m para Colossal). Vocês podem mudar de configuração sempre que fizerem uma ação de movimento para se deslocar.</li>
+          <li><b>Armadilha Terrível.</b> Escolham uma magia de 1º círculo que tenha como alvo uma criatura ou que tenha um efeito em área e que cause dano ou um efeito negativo (como uma condição ou penalidade). Vocês possuem uma armadilha portátil que contém essa magia. Sua armadilha usa as mesmas regras de engenhocas (veja Tormenta20, p. 70), mas é acionada com Sobrevivência e tem Sabedoria como atributo-chave. Vocês podem escolher esta habilidade mais de uma vez para magias diferentes.</li>
+          <li><b>Diferentão.</b> Escolham um poder de outra classe cujos requisitos vocês cumpram (como um poder de bardo da lista de Poderes de Bardo). Vocês recebem o poder escolhido; para efeitos de nível na classe desse poder, considere seu nível de personagem −4.</li>
+          <li><b>Ex-Familiar.</b> Vocês recebem +2 PM e os benefícios de um tipo de familiar, escolhidos entre os familiares básicos de arcanista (veja Tormenta20, p. 38). Se não tiverem um atributo-chave para conjuração, para efeitos desta habilidade vocês usam Carisma.</li>
+          <li><b>O Ousado.</b> Uma vez por cena, vocês podem gastar 1 PM e uma ação de movimento para que um membro do bando se afaste e aja sozinho. Ele age a partir da sua próxima rodada, tem deslocamento 9m e pode gastar uma ação padrão para causar 2d4 pontos de dano de corte em uma criatura adjacente (a cada patamar além de iniciante, cada dado desse dano aumenta em um passo). Ele é Pequeno, tem as mesmas características do restante do bando, 1 PV, e retorna ao bando quando “morto” ou ao fim da cena. Usos criativos para o ousado ficam a critério do mestre.</li>
+          <li><b>Os do Fundo.</b> Vocês conseguem formar o equivalente a um terceiro braço, que pode empunhar um objeto (mas não concede ações extras). Se usarem-no para empunhar uma arma leve, uma vez por rodada, quando usam a ação agredir para atacar com outra arma, podem gastar 1 PM para fazer um ataque corpo a corpo extra com essa arma. Pré-requisito: Organizadinhos.</li>
+          <li><b>Organizadinhos.</b> Vocês podem usar Destreza para estabelecer seu limite de carga (em vez de Força) e podem se beneficiar de um item vestido adicional.</li>
+          <li><b>Pestes Oportunistas.</b> Uma vez por rodada, quando causam dano em uma criatura que já sofreu dano nessa rodada, vocês causam +1d6 pontos de dano do mesmo tipo. A cada patamar além de iniciante, esse dano extra aumenta em um passo.</li>
+          <li><b>Somos Explosivos.</b> Vocês podem gastar uma ação completa, 1 PM e uma quantidade de PV (limitado pelo seu nível) para arremessar um kobold explosivo em um ponto em alcance curto. Criaturas a até 3m desse ponto sofrem 1d6 pontos de dano de impacto por PV gasto (Ref CD Des reduz à metade). Sempre que rolar o valor máximo em um dos dados de dano, o dano aumenta em +1d6.</li>
+          <li><b>Tática de Enxame.</b> Vocês podem gastar 2 PM para assumir uma forma de enxame com duração sustentada. Nessa forma, vocês podem ocupar o espaço de criaturas inimigas, tornam-se imunes a manobras de combate e sofrem apenas metade do dano de armas. Entretanto, não podem fazer nenhuma ação que exija coordenação e concentração (como usar a perícia Furtividade ou lançar magias). Criaturas dentro do espaço que vocês ocupam são consideradas em condição ruim para lançar magias. Pré-requisito: Amontoados.</li>`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [35],
+        },
+        {
+          id: 834,
+          nome: 'Mashin (chassi)',
+          descricao: `+1 em dois atributos a sua escolha. Você se torna treinado em duas perícias a sua escolha e pode substituir uma dessas perícias por uma maravilha mecânica. Entretanto, você é sempre Médio.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [31],
+        },
+        {
+          id: 835,
+          nome: 'Maravilha Mecânica',
+          descricao: `Se escolher uma maravilha mecânica, você recebe um dos poderes a seguir. Uma vez por patamar, você pode escolher uma maravilha mecânica no lugar de um poder de classe.
+          <ul>
+          <li><b>Adaptação Elemental.</b> Quando sofre dano de ácido, eletricidade, fogo, frio, luz ou trevas, você pode gastar 2 PM para receber redução 10 contra esse tipo de dano até o fim da cena.</li>
+          <li><b>Arma Acoplada.</b> Você possui uma arma acoplada ao seu corpo. Ela fica recolhida em um compartimento e não pode ser desarmada, e você conta como se tivesse Saque Rápido para usá-la. Um personagem treinado em Ofício (artesão) pode substituir essa arma com uma hora de trabalho e o gasto de T$ 100.</li>
+          <li><b>Arma Elemental.</b> Você pode gastar uma ação de movimento e 2 PM para fazer uma arma que esteja empunhando causar +1d6 pontos de dano do tipo de sua fonte elemental até o fim da cena. Pré-requisito: Fonte de Energia (elemental).</li>
+          <li><b>Auxílio de Mira.</b>Quando faz um ataque à distância, você pode pagar 1 PM para aumentar em +2 a margem de ameaça desse ataque.</li>
+          <li><b>Caminho da Perfeição.</b> Escolha uma de suas perícias treinadas. Você recebe +2 nessa perícia.</li>
+          <li><b>Canalizar Reparos.</b> Como uma ação completa, você pode gastar pontos de mana para recuperar pontos de vida, à taxa de 5 PV por PM.</li>
+          <li><b>Canhão Energético.</b> Se sua arma acoplada for uma arma de fogo, você pode gastar uma ação de movimento e 1 PM para energizá-la. Até o fim da cena, seu próximo ataque com ela causa +1 dado de dano do mesmo tipo. Múltiplos usos deste poder são cumulativos (limitado por sua Constituição). Pré-requisito: Arma Acoplada.</li>
+          <li><b>Dínamo de Mana.</b> Escolha uma de suas habilidades com um custo em PM. Você pode gastar uma ação de movimento para canalizar seu mana. Quando faz isso, até o fim do seu turno, o custo do próximo uso da habilidade escolhida é reduzido em –1 PM. Um personagem treinado em Ofício (artesão) pode substituir essa habilidade com uma hora de trabalho e o gasto de T$ 100.</li>
+          <li><b>Pernas Aprimoradas.</b> Você pode gastar 2 PM para receber +6m em seu deslocamento e +5 em Atletismo até o fim da cena.</li>
+          <li><b>Reservatório Alquímico.</b> Você possui um reservatório em seu corpo que pode armazenar até duas doses de preparados alquímicos. Uma vez por rodada, você pode usar um desses preparados ou pode consumi-lo para  sua fonte de energia. Carregar seu reservatório exige uma ação completa e o gasto dos itens com os quais você quiser carregá-lo. Pré-requisito: Fonte de Energia (alquímica).</li>
+          </ul>`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [31],
+        },
+        {
+          id: 836,
+          nome: 'Cria de Megalokk',
+          descricao: `Você é uma criatura do tipo monstro e recebe visão no escuro.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [12],
+        },
+        {
+          id: 837,
+          nome: 'Natureza Venenosa',
+          descricao: `Você recebe resistência a veneno +5 e pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja usando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Veneno.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [12],
+        },
+        {
+          id: 838,
+          nome: 'Olhar Atordoante',
+          descricao: `Você pode gastar uma ação de movimento e 1 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se a criatura falhar, fica atordoada por uma rodada (apenas uma vez por cena).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [12],
         },
     ];
   }

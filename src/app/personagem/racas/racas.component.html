@@ -211,12 +211,16 @@
                           </div>
                           <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6;"><b>Longevidade:</b> {{element.longevidade}} x.</div>
                           <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6;"><b>Devoto:</b> {{element.devotos}}</div>
-                          <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6;"><b>Referência:</b> {{element.referencias+ ", p. "+element.paginas}}</div>
                         </div>
-                        <div class="col-sm-3 mt-4 mb-4">
-                          <mat-card *ngIf="element.imagem != null">
-                            <img [src]="element.imagem" [alt]="element.nome" />
-                          </mat-card>
+                        <div class="col-sm-3 mt-2 mb-2">
+                          <div class="row">
+                            <mat-card *ngIf="element.imagem != null">
+                              <img [src]="element.imagem" [alt]="element.nome" />
+                            </mat-card>
+                          </div>
+                          <div class="row">
+                            <div class="mt-2 mb-2"><b>Referência:</b> {{element.referencias+ ", p. "+element.paginas}}</div>
+                          </div>
                         </div>
                       </div>
                     </mat-tab>
