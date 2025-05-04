@@ -2716,7 +2716,7 @@ export class PoderData {
         nome: `Versátil`,
         descricao: `Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        raca: {id:1},
+        id_raca:[1],
         instrucao: ['this.personagem.adicionaNumeroPericiasLivres(1)', OpcoesSelecao.RADIO, `[{chave: 'Duas Perícias', value: 'this.personagem.adicionaNumeroPericiasLivres(1)'}, {chave: 'Uma Perícia e um Poder Geral', value: "this.personagem.adicionarEspacoSelecaoPoder('Escolha um poder geral (Versátil)')"}]`],
         referencias: Referencia.BASICO,
         paginas: '19'
@@ -2726,7 +2726,7 @@ export class PoderData {
         nome: `Conhecimento das Rochas`,
         descricao: `Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        raca: {id:2},
+        id_raca:[2],
         instrucao: [
           `this.personagem.adicionaSentido('Visão no Escuro')`, 
           `this.personagem.atualizaBonusExtraPericia('PERCEPÇÃO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`,
@@ -2739,7 +2739,7 @@ export class PoderData {
         nome: `Devagar e Sempre`,
         descricao: `Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        raca: {id:2},
+        id_raca:[2],
         instrucao: ["this.personagem.atualizarDeslocamento('Terrestre', 6);",`this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');`],
         referencias: Referencia.BASICO,
         paginas: '20'
@@ -2749,7 +2749,7 @@ export class PoderData {
         nome: `Duro como Pedra`,
         descricao: `Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        raca: {id:2},
+        id_raca:[2],
         instrucao: ['this.personagem.adicionaBonusTotalVida(2);',`this.personagem.adicionaBonusNivelVida(1);`],
         referencias: Referencia.BASICO,
         paginas: '20'
@@ -2759,7 +2759,7 @@ export class PoderData {
         nome: `Tradição de Heredrimm`,
         descricao: `Você é perito nas armas tradicionais anãs, seja por ter treinado com elas, seja por usá-las como ferramentas de ofício. Para você, todos os machados, martelos, marretas e picaretas são armas simples. Você recebe +2 em ataques com essas armas.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        raca: {id:2},
+        id_raca:[2],
         instrucao: [`this.personagem?.posse?.equipamentos_empunhados?.forEach(empunhado => {empunhado?.ataque?.bonus_ataque?.push({origem:'Raça Anão, Poder Tradição de Heredrimm', bonus: 2, condicao: 'Martelo, Machado e Picareta', ativo: false})})`],
         referencias: Referencia.BASICO,
         paginas: '20'
@@ -2771,27 +2771,33 @@ export class PoderData {
         tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: ['this.adicionarMagiaExtra(195)'],
         referencias: Referencia.BASICO,
-        paginas: '21'
+        paginas: '21',
+        prerequisito_nivel: 1,
+        id_raca: [3],
       },
       {
         id: 251,
         nome: 'Armadura de Allihanna',
-        descricao: 'Você pode gastar uma ação de movimento e 1 PM para transformarsua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena',
+        descricao: 'Você pode gastar uma ação de movimento e 1 PM para transformarsua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.',
         tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [],
         ativacao: [`this.personagem.adicionaBonusDefesa(2, 'Armadura de Allihanna', 'Cena');`],
         referencias: Referencia.BASICO,
-        paginas: '21'
+        paginas: '21',
+        prerequisito_nivel: 1,
+        id_raca: [3],
       },
       {
         id: 252,
         nome: 'Empatia Selvagem',
-        descricao: 'Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais (veja Diplomacia, na página 118). Caso receba esta habilidade novamente, recebe +2 em Adestramento',
+        descricao: 'Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais (veja Diplomacia, na página 118). Caso receba esta habilidade novamente, recebe +2 em Adestramento.',
         tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '21'
+        paginas: '21',
+        prerequisito_nivel: 1,
+        id_raca: [3],
       },
       {
         id: 253,
@@ -2801,7 +2807,9 @@ export class PoderData {
         instrucao: ["this.personagem.atualizarDeslocamento('Terrestre', 12);"],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '21'
+        paginas: '21',
+        id_raca: [4],
+        prerequisito_nivel: 1
       },
       {
         id: 254,
@@ -2811,7 +2819,9 @@ export class PoderData {
         instrucao: ['this.personagem.adicionaBonusNivelMana(1);'],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '21'
+        paginas: '21',
+        id_raca: [4],
+        prerequisito_nivel: 1
       },
       {
         id: 255,
@@ -2822,7 +2832,9 @@ export class PoderData {
           `this.personagem.atualizaBonusExtraPericia('PERCEPÇÃO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:[], ativo: true}]);`, `this.personagem.atualizaBonusExtraPericia('MISTICISMO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:[], ativo: true}]);`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '21'
+        paginas: '21',
+        id_raca: [4],
+        prerequisito_nivel: 1
       },
       {
         id: 256,
@@ -2832,7 +2844,9 @@ export class PoderData {
         instrucao: [`this.personagem.pericias?.forEach(pericia=>{if(pericia.objeto?.exigeFerramenta){pericia.adicionaBonusExtra([{origem: "Engenhoso", bonus: 2, condicao: ['Ferramenta'], ativo:false}])}})`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '23'
+        paginas: '23',
+        id_raca: [5],
+        prerequisito_nivel: 1
       },
       {
         id: 257,
@@ -2842,7 +2856,9 @@ export class PoderData {
         instrucao: [`this.personagem.adicionaSentido('Visão no Escuro')`, `this.personagem.adicionaDeslocamento('Escalada', this.personagem.deslocamentos[0].valor)`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '23'
+        paginas: '23',
+        id_raca: [5],
+        prerequisito_nivel: 1
       },
       {
         id: 258,
@@ -2852,7 +2868,9 @@ export class PoderData {
         instrucao: [`this.personagem.atualizaTamanho('Pequeno')`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '23'
+        paginas: '23',
+        id_raca: [5],
+        prerequisito_nivel: 1
       },
       {
         id: 259,
@@ -2862,7 +2880,9 @@ export class PoderData {
         instrucao: [`this.personagem.atualizaBonusExtraPericia('FORTITUDE', [{origem: 'Rato das Ruas', bonus: 2, condicao:[], ativo: true}]);`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '23'
+        paginas: '23',
+        id_raca: [5],
+        prerequisito_nivel: 1
       },
       {
         id: 260,
@@ -3197,8 +3217,18 @@ export class PoderData {
       {
         id: 290,
         nome: 'Chassi',
-        descricao: 'Você leva um dia para vestir ou remover uma armadura (pois precisa acoplar as peças dela a seu chassi). Entretanto, por ser acoplada, sua armadura não conta no limite de itens que você pode usar (mas você só pode usar uma armadura). Além disso, escolha um material para seu chassi entre os abaixo',
-        tipo: TipoPoder.HABILIDADE_ORIGEM,
+        descricao: `Você leva um dia para vestir ou remover uma armadura (pois precisa acoplar as peças dela a seu chassi). Entretanto, por ser acoplada, sua armadura não conta no limite de itens que você pode usar (mas você só pode usar uma armadura). Além disso, escolha um material para seu chassi entre os abaixo.
+        <ul>
+        <li><b>Barro.</b> Constituição +2. Seu deslocamento não é afetado por terreno difícil e você passa automaticamente em testes de Acrobacia para passar por espaços apertados. Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água.</li>
+        <li><b>Bronze.</b> +1 em dois atributos. Seu deslocamento não é reduzido por armaduras pesadas ou excesso de carga. Sua armadura não é acoplada ao seu corpo; você pode removê-la e colocá-la no tempo normal, mas ela conta em seu limite de itens vestidos.</li>
+        <li><b>Carne.</b> Constituição +2, Força +1, Carisma –1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a metamorfose e trevas, mas não pode escolher elemental (água ou fogo) ou vapor como sua fonte de energia, e dano mágico de fogo e frio o deixa lento por 1d4 rodadas.</li>
+        <li><b>Espelhos.</b> Carisma +2, Sabedoria +1, Constituição –1. Quando uma criatura em alcance curto usa uma habilidade de classe que você possa ver, você pode gastar 1 PM para copiar essa habilidade. Até o fim do seu próximo turno, você pode usá-la como uma habilidade de raça (se ela usar um atributo para algo, use seu Carisma). Se copiar outra habilidade, você perde a anterior.</li>
+        <li><b>Ferro.</b>  Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe +2 na Defesa, mas possui penalidade de armadura –2.</li>
+        <li><b>Gelo Eterno.</b> Constituição +2. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a frio e redução de fogo 10, mas não pode escolher elemental (fogo) ou vapor como sua fonte de energia (veja Golem de Nor na página 348).</li>
+        <li><b>Pedra.</b> Constituição +2. Você não pode correr e seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe redução de corte, fogo e perfuração 5.</li>
+        <li><b>Sucata.</b> Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Quando recebe cuidados prolongados com a perícia Ofício (artesão), sua recuperação de PV aumenta em +2 por nível nesse dia (em vez de +1).</li>
+        </ul>`,
+        tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [
           OpcoesSelecao.RADIO, 
           `[
@@ -3214,7 +3244,9 @@ export class PoderData {
         ],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '93'
+        paginas: '93',
+        id_raca: [9],
+        prerequisito_nivel: 1,
       },
       {
         id: 291,
@@ -3224,12 +3256,20 @@ export class PoderData {
         instrucao: [`this.personagem.adicionaSentido('Visão no Escuro');`, `this.personagem.adicionaImunidade('CANSAÇO', 'Condição');`, `this.personagem.adicionaImunidade('METABOLISMO', 'Condição');`, `this.personagem.adicionaImunidade('VENENO', 'Condição');`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '93'
+        paginas: '93',
+        id_raca: [9],
+        prerequisito_nivel: 1,
       },
       {
         id: 292,
         nome: 'Fonte de energia',
-        descricao: 'Escolha sua fonte de energia da lista abaixo',
+        descricao: `Escolha sua fonte de energia da lista abaixo.
+        <ul>
+        <li><b>Alquímica.</b> Uma mistura alquímica gera a energia necessária à sua vida. Você pode gastar uma ação padrão para ingerir um item alquímico qualquer; se fizer isso, recupera 1 PM.</li>
+        <li><b>Elemental.</b> Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico deste tipo, em vez disso cura PV em quantidade igual à metade do dano.</li>
+        <li><b>Sagrada.</b> Você foi animado por um texto ou símbolo sagrado depositado em seu corpo. Você pode lançar uma magia divina de 1º círculo a sua escolha (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Alguém treinado em Religião pode trocar essa magia com um ritual que demora um dia e exige o gasto de um pergaminho mágico com outra magia de 1° círculo.</li>
+        <li><b>Vapor.</b> Seu corpo é movido por vapor e engrenagens. Você é imune a dano de fogo; se fosse sofrer dano desse tipo, em vez disso seu deslocamento aumenta em 4,5m por 1 rodada. Entretanto, dano de frio deixa-o lento por 1 rodada. Você pode gastar uma ação padrão e PM para soprar um jato de vapor escaldante em um cone de 4,5m. Criaturas na área sofrem 1d6 pontos de dano de fogo por PM gasto e ficam em chamas (Ref CD Con reduz à metade e evita a condição).</li>
+        </ul>`,
         tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [OpcoesSelecao.RADIO, `[
           {chave: 'Alquímica. Uma mistura alquímica gera a energia necessária à sua vida. Você pode gastar uma ação padrão para ingerir um item alquímico qualquer; se fizer isso, recupera 1 PM', value: ""}, 
@@ -3239,7 +3279,9 @@ export class PoderData {
           ]`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '93'
+        paginas: '93',
+        id_raca: [9],
+        prerequisito_nivel: 1,
       },
       {
         id: 293,
@@ -3249,43 +3291,60 @@ export class PoderData {
         instrucao: ['this.disableOrigem = true;'],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '93'
+        paginas: '93',
+        id_raca: [9],
+        prerequisito_nivel: 1,
       },
       {
         id: 294,
         nome: 'Tamanho',
-        descricao: 'Escolha seu tamanho da lista abaixo',
+        descricao: `Escolha seu tamanho da lista abaixo.
+        <ul>
+        <li><b>Pequeno:</b> Destreza +1.</li>
+        <li><b>Médio:</b> Sem Ajustes.</li>
+        <li><b>Grande:</b> Destreza -1.</li>
+        </ul>`,
         tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [OpcoesSelecao.RADIO, `[{chave: 'Pequeno', value: "this.personagem.atualizaTamanho('Pequeno');this.personagem.adicionarAtributoDestreza(1, 1007)"}, {chave: 'Médio', value: "this.personagem.atualizaTamanho('Médio')"}, {chave: 'Grande', value: "this.personagem.atualizaTamanho('Pequeno');this.personagem.adicionarAtributoDestreza(-1, 1007)"}]`],
         ativacao: [],
         referencias: Referencia.BASICO,
-        paginas: '93'
+        paginas: '93',
+        id_raca: [9],
+        prerequisito_nivel: 1,
       },
       {
         id: 295,
         nome: 'Arremessador',
-        descricao: 'Quando faz um ataque à distância com uma funda ou uma arma de arremesso, seu dano aumenta em um passo',
+        descricao: 'Quando faz um ataque à distância com uma funda ou uma arma de arremesso, seu dano aumenta em um passo.',
         tipo: TipoPoder.HABILIDADE_RACA,
         instrucao: [`this.personagem.adicionaAumentoPasso(['Funda', 'Arremesso']);`],
         ativacao: [],
         referencias: Referencia.BASICO,
+        id_raca: [10],
+        prerequisito_nivel: 1,
         paginas: '93'
       },
       {
         id: 296,
         nome: 'Pequeno e Rechonchudo',
-        descricao: 'Seu tamanho é Pequeno (veja a página 106) e seu deslocamento é 6m. Você recebe +2 em Enganação e pode usar Destreza como atributo-chave de Atletismo (em vez de Força)',
+        descricao: 'Seu tamanho é Pequeno (veja a página 106) e seu deslocamento é 6m. Você recebe +2 em Enganação e pode usar Destreza como atributo-chave de Atletismo (em vez de Força).',
         instrucao: [`this.personagem.atualizaTamanho('Pequeno')`, `this.personagem.atualizarDeslocamento('Terrestre', 6);`,`this.personagem.atualizaBonusExtraPericia('ENGANAÇÃO', [{origem: 'Pequeno e Rechonchudo', bonus: 2, condicao:[], ativo: true}]);`],
+        id_raca: [10],
+        prerequisito_nivel: 1,
         ativacao: [],
+        tipo: TipoPoder.HABILIDADE_RACA,
         referencias: Referencia.BASICO,
         paginas: '93'
       },
       {
         id: 297,
         nome: 'Sorte Salvadora',
-        descricao: 'Quando faz um teste de resistência, você pode gastar 1 PM para rolar este teste novamente',
+        descricao: 'Quando faz um teste de resistência, você pode gastar 1 PM para rolar este teste novamente.',
         instrucao: [],
         ativacao: [],
+        id_raca: [10],
+        prerequisito_nivel: 1,
+        tipo: TipoPoder.HABILIDADE_RACA,
         referencias: Referencia.BASICO,
         paginas: '93'
       },
@@ -7798,6 +7857,496 @@ export class PoderData {
         prerequisito_nivel: 1,
         id_raca: [3, 15, 61, 65],
        },
+       {
+        id: 768,
+        nome: 'Herança Divina',
+        descricao: `Você é uma criatura do tipo espírito e recebe visão no escuro.`,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [16],
+       },
+       {
+        id: 769,
+        nome: 'Luz Sagrada (Aggelus)',
+        descricao: `Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.
+        <p>Mais de vinte traços raciais variantes para aggelus são listados a seguir, nomeados conforme cada reino divino e outros mundos planares. Um personagem suraggel pode substituir sua habilidade de raça Luz Sagrada.</p>
+        <ul>
+        <li><b>Herança de Al-Gazara.</b> Devido à presença do puro caos primordial de Nimb em seu sangue, você recebe +1 em um atributo aleatório.</li>
+        <li><b>Herança de Arbória.</b> Como parte do Grande Ciclo de Allihanna, você recebe a habilidade Forma Selvagem para uma única forma, escolhida entre Ágil, Sorrateira e Veloz. Caso adquira essa habilidade novamente, o custo dessa forma diminui em –1 PM.</li>
+        <li><b>Herança de Chacina.</b> Pela ferocidade de Megalokk, você recebe a habilidade Forma Selvagem para uma única forma, escolhida entre Feroz e Resistente. Caso adquira essa habilidade novamente, o custo dessa forma diminui em –1 PM.</li>
+        <li><b>Herança de Deathok.</b> A mudança constante faz parte de sua alma. Você recebe +2 em duas perícias a sua escolha. A cada manhã, você pode trocar essas perícias.</li>
+        <li><b>Herança de Drashantyr.</b> Graças ao poder elemental dos dragões, você recebe +1 PM e redução de ácido, eletricidade, fogo, frio, luz e trevas 5.</li>
+        <li><b>Herança de Kundali.</b> Pelo espírito protetor, mas também opressor, de Tauron, você recebe +2 na Defesa e em testes de manobras de combate.</li>
+        <li><b>Herança de Magika.</b> Você aprende e pode lançar uma magia arcana de 1º círculo a sua escolha (atributo-chave Inteligência ou Carisma, a sua escolha). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</li>
+        <li><b>Herança de Nivenciuén.</b> Mesmo que o Reino de Glórienn tenha sofrido um destino terrível, a antiga soberania élfica ainda permeia seu sangue. Você recebe +2 em Misticismo e uma habilidade racial dos elfos entre Graça de Glórienn e Sangue Mágico.</li>
+        <li><b>Herança de Odisseia.</b> Sua alma tocada por Valkaria está sempre preparada para problemas! Você recebe +2 em Iniciativa e Percepção, e sua capacidade de carga aumenta em 2 espaços.</li>
+        <li><b>Herança de Ordine.</b> As forças da lei e ordem de Khalmyr afetam suas ações. Você recebe +2 em Intuição, em Investigação e em testes sem rolagens de dados (ao escolher 0, 10 ou 20).</li>
+        <li><b>Herança de Pelágia.</b> Mesmo nas situações mais desesperadoras, seu espírito se mantém plácido e imperturbável como o próprio Oceano. Escolha três perícias. Com elas, você pode gastar 1 PM para escolher 10 em qualquer situação, exceto testes de ataque.</li>
+        <li><b>Herança de Pyra.</b> Em algum lugar dentro de você, sempre existe uma segunda chance. Quando faz um teste de resistência ou um teste de atributo para remover uma condição, você pode gastar 2 PM para rolá-lo novamente.</li>
+        <li><b>Herança de Ramknal.</b> Escolha duas perícias entre Acrobacia, Enganação, Furtividade, Jogatina e Ladinagem. Quando faz um teste da perícia escolhida, você pode gastar 2 PM para receber +5 nesse teste.</li>
+        <li><b>Herança de Serena.</b> Pela proteção de Marah, você recebe +2 na Defesa e em testes de resistência contra oponentes aos quais não tenha causado dano, perda de PV ou condições (exceto enfeitiçado, fascinado e pasmo) nessa cena.</li>
+        <li><b>Herança de Skerry.</b> Você carrega a força de criatividade. Quando faz um teste de Ofício, pode gastar 1 PM para ser treinado na perícia em questão ou para rolar dois dados e usar o melhor resultado.</li>
+        <li><b>Herança de Solaris.</b> Pelo poder de Azgher, durante o dia você recebe +1 em todos os testes de perícia. Se estiver diretamente sob a luz do sol, esse bônus aumenta para +2.</li>
+        <li><b>Herança de Sombria.</b> Pelo poder de Tenebra, durante a noite você recebe +1 em todos os testes de perícia. Se estiver num local sem nenhuma iluminação artificial (como tochas ou magia), esse bônus aumenta para +2.</li>
+        <li><b>Herança de Sora.</b> Os honrados espíritos ancestrais de Lin-Wu abençoam sua perseverança. Você recebe +2 em Nobreza, Vontade e em testes de perícia estendidos (incluindo contra perigos complexos).</li>
+        <li><b>Herança de Terápolis.</b> Você recebe +2 em Intuição e Vontade, e pode fazer testes dessas perícias contra ilusões automaticamente, sem precisar interagir com elas.</li>
+        <li><b>Herança de Venomia.</b> Ser escorregadio como Sszzaas faz parte de sua natureza, mesmo que você não goste disso. Você recebe +2 em Enganação e em testes para evitar manobras de combate e efeitos de movimento.</li>
+        <li><b>Herança de Vitalia.</b> A força da vida corre intensa em seu sangue. Você recebe +5 PV por patamar e sua recuperação de pontos de vida com descanso aumenta em uma categoria.</li>
+        <li><b>Herança de Werra.</b> Você possui um conhecimento intuitivo para armas. Você recebe +1 em testes de ataque com armas e proficiência com armas marciais ou com duas armas exóticas.</li>
+        </ul>`,
+        e_poder_magico: true,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [16],
+       },
+       {
+        id: 770,
+        nome: 'Sombras Profanas (Sulfure)',
+        descricao: `Você recebe +2 em Enganação e Furtividade. Além disso, pode lançar Escuridão (como uma magia divina; atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.
+        <p>Mais de vinte traços raciais variantes para sulfure são listados a seguir, nomeados conforme cada reino divino e outros mundos planares. Um personagem suraggel pode substituir sua habilidade de raça Sombras Profanas.</p>
+        <ul>
+        <li><b>Herança de Al-Gazara.</b> Devido à presença do puro caos primordial de Nimb em seu sangue, você recebe +1 em um atributo aleatório.</li>
+        <li><b>Herança de Arbória.</b> Como parte do Grande Ciclo de Allihanna, você recebe a habilidade Forma Selvagem para uma única forma, escolhida entre Ágil, Sorrateira e Veloz. Caso adquira essa habilidade novamente, o custo dessa forma diminui em –1 PM.</li>
+        <li><b>Herança de Chacina.</b> Pela ferocidade de Megalokk, você recebe a habilidade Forma Selvagem para uma única forma, escolhida entre Feroz e Resistente. Caso adquira essa habilidade novamente, o custo dessa forma diminui em –1 PM.</li>
+        <li><b>Herança de Deathok.</b> A mudança constante faz parte de sua alma. Você recebe +2 em duas perícias a sua escolha. A cada manhã, você pode trocar essas perícias.</li>
+        <li><b>Herança de Drashantyr.</b> Graças ao poder elemental dos dragões, você recebe +1 PM e redução de ácido, eletricidade, fogo, frio, luz e trevas 5.</li>
+        <li><b>Herança de Kundali.</b> Pelo espírito protetor, mas também opressor, de Tauron, você recebe +2 na Defesa e em testes de manobras de combate.</li>
+        <li><b>Herança de Magika.</b> Você aprende e pode lançar uma magia arcana de 1º círculo a sua escolha (atributo-chave Inteligência ou Carisma, a sua escolha). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</li>
+        <li><b>Herança de Nivenciuén.</b> Mesmo que o Reino de Glórienn tenha sofrido um destino terrível, a antiga soberania élfica ainda permeia seu sangue. Você recebe +2 em Misticismo e uma habilidade racial dos elfos entre Graça de Glórienn e Sangue Mágico.</li>
+        <li><b>Herança de Odisseia.</b> Sua alma tocada por Valkaria está sempre preparada para problemas! Você recebe +2 em Iniciativa e Percepção, e sua capacidade de carga aumenta em 2 espaços.</li>
+        <li><b>Herança de Ordine.</b> As forças da lei e ordem de Khalmyr afetam suas ações. Você recebe +2 em Intuição, em Investigação e em testes sem rolagens de dados (ao escolher 0, 10 ou 20).</li>
+        <li><b>Herança de Pelágia.</b> Mesmo nas situações mais desesperadoras, seu espírito se mantém plácido e imperturbável como o próprio Oceano. Escolha três perícias. Com elas, você pode gastar 1 PM para escolher 10 em qualquer situação, exceto testes de ataque.</li>
+        <li><b>Herança de Pyra.</b> Em algum lugar dentro de você, sempre existe uma segunda chance. Quando faz um teste de resistência ou um teste de atributo para remover uma condição, você pode gastar 2 PM para rolá-lo novamente.</li>
+        <li><b>Herança de Ramknal.</b> Escolha duas perícias entre Acrobacia, Enganação, Furtividade, Jogatina e Ladinagem. Quando faz um teste da perícia escolhida, você pode gastar 2 PM para receber +5 nesse teste.</li>
+        <li><b>Herança de Serena.</b> Pela proteção de Marah, você recebe +2 na Defesa e em testes de resistência contra oponentes aos quais não tenha causado dano, perda de PV ou condições (exceto enfeitiçado, fascinado e pasmo) nessa cena.</li>
+        <li><b>Herança de Skerry.</b> Você carrega a força de criatividade. Quando faz um teste de Ofício, pode gastar 1 PM para ser treinado na perícia em questão ou para rolar dois dados e usar o melhor resultado.</li>
+        <li><b>Herança de Solaris.</b> Pelo poder de Azgher, durante o dia você recebe +1 em todos os testes de perícia. Se estiver diretamente sob a luz do sol, esse bônus aumenta para +2.</li>
+        <li><b>Herança de Sombria.</b> Pelo poder de Tenebra, durante a noite você recebe +1 em todos os testes de perícia. Se estiver num local sem nenhuma iluminação artificial (como tochas ou magia), esse bônus aumenta para +2.</li>
+        <li><b>Herança de Sora.</b> Os honrados espíritos ancestrais de Lin-Wu abençoam sua perseverança. Você recebe +2 em Nobreza, Vontade e em testes de perícia estendidos (incluindo contra perigos complexos).</li>
+        <li><b>Herança de Terápolis.</b> Você recebe +2 em Intuição e Vontade, e pode fazer testes dessas perícias contra ilusões automaticamente, sem precisar interagir com elas.</li>
+        <li><b>Herança de Venomia.</b> Ser escorregadio como Sszzaas faz parte de sua natureza, mesmo que você não goste disso. Você recebe +2 em Enganação e em testes para evitar manobras de combate e efeitos de movimento.</li>
+        <li><b>Herança de Vitalia.</b> A força da vida corre intensa em seu sangue. Você recebe +5 PV por patamar e sua recuperação de pontos de vida com descanso aumenta em uma categoria.</li>
+        <li><b>Herança de Werra.</b> Você possui um conhecimento intuitivo para armas. Você recebe +1 em testes de ataque com armas e proficiência com armas marciais ou com duas armas exóticas.</li>
+        </ul>`,
+        e_poder_magico: true,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [17],
+       },
+       {
+        id: 775,
+        nome: 'Empunhadura Poderosa',
+        descricao: `Ao usar uma arma feita para uma categoria de tamanho maior que a sua (por exemplo, uma arma aumentada para uma criatura Pequena ou Média), a penalidade que você sofre nos testes de ataque diminui para –2. Caso receba esta habilidade novamente, a penalidade diminui para 0 e você pode também usar armas de até duas categorias de tamanho maiores que a sua com uma penalidade de –5 nos testes de ataque.`,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [24],
+       },
+       {
+        id: 776,
+        nome: 'Saborear Pavor',
+        descricao: `Você pode usar Força como atributo-chave de Intimidação (em vez de Carisma). Além disso, se estiver em alcance curto de outra criatura abalada ou apavorada, você recebe um bônus em testes de ataque igual à penalidade causada pela condição.`,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [24],
+       },
+       {
+        id: 777,
+        nome: 'Sentidos de Predador',
+        descricao: `Você recebe faro e visão no escuro.`,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [24],
+       },
+        {
+          id: 778,
+          nome: 'Avantajado',
+          descricao: `Seu tamanho é Grande e seu deslocamento é 12m.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [26],
+        },
+        {
+          id: 779,
+          nome: 'Cascos',
+          descricao: `Você possui uma arma natural de cascos (dano 1d8, crítico x2, impacto). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os cascos.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [26],
+        },
+        {
+          id: 780,
+          nome: 'Ginete Natural',
+          descricao: `Você é considerado montado para efeito de fazer investidas e para benefícios das armas que empunha, e pode escolher o poder Carga de Cavalaria mesmo sem cumprir seus pré-requisitos. Entretanto, não pode se beneficiar de uma montaria e, se estiver carregando um cavaleiro, sofre −2 em testes (além das penalidades de sobrecarga, se houver) e é considerado em condição ruim para lançar magias.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [26],
+        },
+        {
+          id: 781,
+          nome: 'Medo de Altura',
+          descricao: `Se estiver adjacente a uma queda de 3m ou mais (como um buraco ou penhasco), você fica abalado.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [26],
+        },
+        {
+          id: 782,
+          nome: 'Chifres',
+          descricao: `Você possui uma arma natural de chifres (dano 1d8, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [38],
+        },
+        {
+          id: 783,
+          nome: 'Papel Tribal',
+          descricao: `Você é treinado em uma perícia a sua escolha entre Cura, Intimidação, Ofício ou Sobrevivência.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [38],
+        },
+        {
+          id: 784,
+          nome: 'Paquidérmico',
+          descricao: `Seu tamanho é Grande. Você recebe +1 na Defesa e pode usar Força como atributo-chave de Intimidação (em vez de Carisma).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [38],
+        },
+        {
+          id: 785,
+          nome: 'Medo de Altura',
+          descricao: `Se estiver adjacente a uma queda de 3m ou mais (como um buraco ou penhasco), você fica abalado.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [38],
+        },
+        {
+          id: 786,
+          nome: 'Passo 1: Natureza',
+          descricao: `Você é uma criatura do tipo espírito. Além disso, escolha se você será animal, vegetal ou mineral.
+          <p><b>1) Animal.</b> Você é feito de carne e osso. Seu corpo é (mais ou menos) humanoide, mas sua aparência varia: pode ser algo similar a um elfo ou sílfide, um animal que anda sobre duas patas ou uma mistura dessas possibilidades. Você recebe +1 em um atributo a sua escolha.</p>
+          <p><b>2) Vegetal.</b> Você é feito de folhas, vinhas, cortiça ou madeira, podendo ser desde uma pequena flor saltitante até uma grande árvore desenraizada. Você recebe as habilidades Natureza Vegetal (é imune a atordoamento e metamorfose, mas pode ser afetado por efeitos que afetam plantas monstruosas — se o efeito não tiver um teste de resistência, você tem direito a um teste de Fortitude) e Regeneração Vegetal (uma vez por rodada, pode gastar 1 PM para recuperar 5 PV — esse efeito não cura dano de ácido ou fogo).</p>
+          <p><b>3) Mineral.</b> Você é feito de material inorgânico, como argila, rocha, cristal ou vidro. Você recebe imunidade a efeitos de metabolismo e redução de corte, fogo e perfuração 5, mas não se beneficia de itens da categoria alimentação.</p>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [61],
+        },
+        {
+          id: 789,
+          nome: 'Passo 2: Tamanho',
+          descricao: `Este passo é o mais direto: escolha seu tamanho, entre Minúsculo, Pequeno, Médio ou Grande.
+          <p><b>1) Minúsculo.</b> Você é miudinho e fofinho. Pode ser uma caneca falante, um gato de monóculo ou um corvo com cara de velho barbudo (é, talvez não seja tão fofo assim). Você é Minúsculo (+5 em testes de Furtividade, –5 em testes de manobras de combate, usa armas reduzidas), possui deslocamento base 6m e sofre –1 em Força.</p>
+          <p><b>2) Pequeno.</b> Você tem o tamanho de um hynne, de uma criança, de um cachorro ou de um barril. Você pode inclusive ser um barril. Você é Pequeno (+2 em testes de Furtividade, –2 em testes de manobra) e possui deslocamento base 6m.</p>
+          <p><b>3) Médio.</b> Que sem graça! Você é Médio (sem modificadores por tamanho) e possui deslocamento base 9m. Blé.</p>
+          <p><b>4) Grande.</b> Agora sim! Meta medo em qualquer um que achar que fadas são fracotes. Você é Grande (–2 em testes de Furtividade, +2 em testes de manobra, usa armas aumentadas), possui deslocamento base 9m e sofre –1 em Destreza.</p>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [61],
+        },
+        {
+          id: 790,
+          nome: 'Passo 3: Dons',
+          descricao: `Escolha dois atributos diferentes. Você recebe +1 em cada atributo escolhido. Não, não pode ser +2 em um único atributo. Xô, larga disso! Porém, se você for animal, pode adicionar um desses +1 no mesmo atributo que aumentou pela natureza. Se você estiver criando seu duende de forma aleatória, a rolagem de 2d6 determina os atributos nos quais você receberá +1, sendo uma rolagem 1 = Força, 2 = Destreza e assim por diante.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [61],
+        },
+        {
+          id: 791,
+          nome: 'Passo 4: Presentes de Magia e de Caos',
+          descricao: `Duendes não só são esquisitos: eles também conseguem fazer coisas esquisitas. Escolha três poderes da lista abaixo. Todos eles são mágicos. No caso de habilidades que permitam teste de resistência, a CD é Car, a menos que especificado o contrário. Uma vez por patamar, você pode escolher um presente no lugar de um poder de classe.
+          <p><b>1) Afinidade elemental.</b> Você possui ligação com um tipo de elemento do mundo natural, entre água, fogo ou vegetação.</p>
+          <ul>
+          <li>Água. Você é ligado a lagos e rios. Provavelmente tem a pele e/ou os cabelos azulados. Você recebe deslocamento de natação igual ao seu deslocamento base e pode lançar as magias Criar Elementos (apenas água) e Névoa.</li>
+          <li>Fogo. Você é ligado ao calor e às chamas. Provavelmente tem a pele e/ou os cabelos avermelhados. Você recebe redução de fogo 5 e pode lançar as magias Criar Elementos (apenas fogo) e Explosão de Chamas.</li>
+          <li>Vegetação. Você é ligado a bosques e florestas. Provavelmente tem a pele e/ou os cabelos esverdeados. Você pode atravessar terrenos difíceis naturais sem sofrer redução em seu deslocamento e pode lançar as magias Armamento da Natureza e Controlar Plantas.</li>
+          </ul>
+          <p>Seu atributo-chave para as magias acima é Carisma. Caso aprenda novamente uma delas, seu custo diminui em –1 PM.</p>
+          <p><b>2) Encantar objetos.</b> Você pode gastar uma ação de movimento e 3 PM para tocar um item e colocar nele um encanto pertinente a sua escolha (por exemplo, se tocar uma arma, pode colocar um encanto de arma nela). O encanto não pode ter pré-requisitos e dura até o fim da cena ou até você usar este poder novamente.</p>
+          <p><b>3) Enfeitiçar.</b> Suas feições feéricas podem deslumbrar outros seres. Você pode lançar Enfeitiçar e usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um arcanista de seu nível.</p>
+          <p><b>4) Invisibilidade.</b> Um poder comum entre duendes e responsável por boa parte do folclore confuso sobre eles (“Como assim você não viu aquela tartaruga alada falante que estava aqui agora há pouco?”). Você pode lançar Invisibilidade e usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um arcanista de seu nível.</p>
+          <p><b>5) Língua da natureza.</b> Você recebe +2 em Adestramento e Sobrevivência, e pode falar livremente com animais e plantas (como o efeito da magia Voz Divina).</p>
+          <p><b>6) Maldição.</b> Nem todos os poderes feéricos são fofos ou engraçados… Você pode gastar uma ação padrão e 3 PM para amaldiçoar uma criatura em alcance curto. A criatura tem direito a um teste de resistência. Se falhar, sofre o efeito da maldição. Se passar, fica imune a este presente por um dia. Para construir sua maldição, escolha qual resistência ela permite (entre Fortitude ou Vontade) e seu efeito (da lista abaixo). Uma vez feitas, essas escolhas não podem ser mudadas.</p>
+          <p>A maldição é permanente, mas você pode cancelá-la como uma ação livre (como o normal), e ela pode ser curada por Purificação com o aprimoramento de +7 PM. Além disso, você só pode manter uma maldição por vez (se quiser amaldiçoar uma nova criatura, precisa cancelar a maldição anterior). Com a permissão do mestre, você pode criar uma maldição personalizada, usando os efeitos abaixo como referência.</p>
+          <ul>
+          <li>Apatia profunda. A criatura fica alquebrada e frustrada.</li>
+          <li>Coração de Geleia. A criatura fica abalada e, na primeira vez que tentar fazer uma ação hostil em cada cena, deve repetir o teste de resistência. Se falhar, não consegue e perde sua ação.</li>
+          <li>Envelhecimento Súbito. A criatura fica fraca e lenta.</li>
+          <li>Loucura do Verão. No início de cada cena, a criatura deve repetir o teste de resistência. Se falhar, fica confusa.</li>
+          <li>Mil Verrugas. A vítima sofre –2 em Carisma e, na primeira vez em cada cena que outra criatura inicie seu turno em alcance curto dela, essa segunda criatura deve fazer um teste de Vontade. Se falhar, deve executar uma ação hostil contra a vítima da maldição, ou seus aliados, em seu próximo turno. Ser feio pode matar!</li>
+          <li>Ruína do Corpo. A criatura fica fatigada e vulnerável.</li>
+          </ul>
+          <p><b>7) Metamorfose animal.</b> Você pode se transformar em um tipo de animal específico. Escolha uma forma selvagem do druida, como forma ágil ou veloz (veja Tormenta20, p. 63). Você pode gastar uma ação completa e 3 PM para assumir essa forma, recebendo todos seus modificadores. Ao contrário de um druida, você pode falar e lançar magias mesmo em sua forma selvagem. Porém, você pode assumir apenas a forma escolhida, e apenas em sua versão básica (não aprimorada ou superior).</p>
+          <p><b>8) Mudança de tamanho.</b> Outro poder comum entre duendes. Você pode gastar uma ação de movimento e 3 PM para aumentar ou diminuir seu tamanho em uma categoria até o fim da cena (mínimo Minúsculo, máximo Grande). Se aumentar seu tamanho, recebe Força +1. Se diminuir, recebe Destreza +1.</p>
+          <p><b>9)Sonhos proféticos.</b> Uma vez por cena, você pode gastar 3 PM para ter uma visão que, graças a sua natureza feérica, provavelmente se concretizará. Role 1d20. Até o fim da cena, você pode substituir o resultado do d20 de um teste realizado por uma criatura em alcance curto (incluindo você mesmo) pelo resultado do dado que você rolou ao usar este presente.</p>
+          <p><b>10) Velocidade do pensamento.</b> Na primeira rodada de cada cena, você pode gastar 2 PM para realizar um turno adicional imediatamente após seu primeiro. Se fizer isso, você pula seu turno na segunda rodada.</p>
+          <p><b>11) Visão feérica.</b> Você recebe visão na penumbra e está permanentemente sob efeito da magia Visão Mística com o aprimoramento de enxergar criaturas e objetos invisíveis.</p>
+          <p><b>12) Voo.</b> Você possui asas ou alguma fonte de voo mágico. Consegue flutuar 1,5m acima do nível do chão com deslocamento igual ao seu deslocamento base +3m, o que permite que ignore terreno difícil e torna-o imune a dano por queda (a menos que esteja inconsciente). Você também pode voar, mas isso é cansativo: você gasta 1 PM por rodada para voar com deslocamento igual ao seu deslocamento base +6m.</p>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [61],
+        },
+        {
+          id: 792,
+          nome: 'Passo 5: Limitações',
+          descricao: `A natureza mágica e caótica dos duendes faz com que eles sejam poderosos — mas também lhes impõe várias limitações. Você recebe as habilidades a seguir.
+          <p><b>Aversão a Ferro.</b> Um material rígido e inflexível, o ferro é nocivo a duendes. Você sofre 1 ponto de dano adicional por dado de dano de ataques com armas de ferro, e sofre 1d6 pontos de dano por rodada se estiver empunhando ou vestindo um item de ferro. Isso também se aplica a aço, que inclui ferro em sua composição. Na prática, duendes usam apenas armas de madeira ou materiais especiais, como mitral.</p>
+          <p><b>Aversão a Sinos.</b> O badalar de um sino representa ordem e devoção, algo que faz mal a duendes. Se você escutar esse som, fica alquebrado e esmorecido até o fim da cena. No início de qualquer cena em um ambiente urbano no qual haja uma ou mais igrejas ou templos (o que inclui praticamente todas as aldeias e cidades do Reinado!), role 1d6. Em um resultado 1, você escutará um sino badalando em algum lugar.</p>
+          <p><b>Tabu.</b> Você possui um tabu — algo que nunca pode fazer (ou deixar de fazer). Crie seu tabu junto com o mestre. Em termos de regras, a esquisitice de seu tabu impõe uma penalidade de –5 em Diplomacia, Iniciativa, Luta ou Percepção, a sua escolha (um tabu que afete seu comportamento, por exemplo, impõe –5 em Diplomacia). Se você desrespeitar seu tabu, fica fatigado por um dia (mesmo que seja imune a esta condição). Nenhum efeito pode curar essa condição. Se no dia seguinte continuar desrespeitando o tabu, fica exausto. Se no terceiro dia não mudar seu comportamento, você morre.</p>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [61],
+        },
+        {
+          id: 793,
+          nome: 'Essência Feérica',
+          descricao: `Você é uma criatura do tipo espírito, recebe visão na penumbra e pode falar com animais livremente.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [62],
+        },
+        {
+          id: 794,
+          nome: 'Magia Instintiva',
+          descricao: `Você pode usar Sabedoria no lugar de seu atributo-chave de magias arcanas e Misticismo. Além disso, quando lança uma magia, você recebe +1 PM para gastar em seus aprimoramentos (não cumulativo com outros efeitos que fornecem PM para aprimoramentos, como bolsa de pó; Tormenta20, p. 159).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [62],
+        },
+        {
+          id: 795,
+          nome: 'Sentidos Místicos',
+          descricao: `Você está sempre sob o efeito básico da magia Visão Mística.`,
+          e_poder_magico: true,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [62],
+        },
+        {
+          id: 796,
+          nome: 'Canção da Melancolia',
+          descricao: `Quando faz um teste de Vontade contra efeitos mentais, você rola dois dados e usa o pior resultado.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [62],
+        },
+        {
+          id: 800,
+          nome: 'Arsenal do Oceano',
+          descricao: `Você recebe proficiência em arpão, rede e tridente e +2 em testes de ataque com essas armas. Se receber proficiência em uma dessas armas novamente, pode considerá-la uma arma leve.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [56],
+        },
+        {
+          id: 801,
+          nome: 'Cria das Águas',
+          descricao: `Você possui deslocamento de natação igual a seu deslocamento em terra e visão na penumbra. Quando dentro d’água, você recebe percepção às cegas e +2 na Defesa e, em Furtividade e Sobrevivência.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [56],
+        },
+        {
+          id: 802,
+          nome: 'Dependência de Água',
+          descricao: `Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água (ou, pelo menos, tomar um bom banho!).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [56],
+        },
+        {
+          id: 803,
+          nome: 'Corpo Vegetal',
+          descricao: `Você é uma criatura do tipo monstro e recebe natureza vegetal e visão no escuro.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [59],
+        },
+        {
+          id: 804,
+          nome: 'Presença Arcana',
+          descricao: `Você recebe +2 em Misticismo e resistência a magia +2.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [59],
+        },
+        {
+          id: 805,
+          nome: 'Regeneração Vegetal',
+          descricao: `Uma vez por rodada, você pode gastar 1 PM para recuperar 5 PV. Esta habilidade não cura dano de ácido ou fogo.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [59],
+        },
+        {
+          id: 806,
+          nome: 'Intolerância a Luz',
+          descricao: `Você recebe sensibilidade a luz e, quando exposto à luz do sol ou similar, não consegue ativar sua Regeneração Vegetal`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [59],
+        },
+        {
+          id: 807,
+          nome: 'Força dos Titãs',
+          descricao: `Quando acerta um ataque corpo a corpo ou de arremesso, você pode gastar 1 PM. Se fizer isso, sempre que rolar o resultado máximo em um dado de dano da arma, role um dado extra, repetindo até um limite de dados extras igual à sua Força.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [63],
+        },
+        {
+          id: 807,
+          nome: 'Meio-Gigante',
+          descricao: `Você é uma criatura do tipo humanoide (gigante). Seu tamanho é Grande e você pode usar Força como atributo-chave de Intimidação (em vez de Carisma).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [63],
+        },
+        {
+          id: 808,
+          nome: 'Infância Entre os Pequenos',
+          descricao: `Você se torna treinado em uma perícia a sua escolha.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [63],
+        },
+        {
+          id: 809,
+          nome: 'Faro',
+          descricao: `Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [27],
+        },
+        {
+          id: 810,
+          nome: 'Mordida',
+          descricao: `Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [27],
+        },
+        {
+          id: 811,
+          nome: 'Oportunista',
+          descricao: `Você recebe +2 nas rolagens de dano contra criaturas que tenham sofrido dano de outras criaturas desde seu último turno.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [27],
+        },
+        {
+          id: 812,
+          nome: 'Rendição',
+          descricao: `Quando um inimigo se rende, você recebe 1d4 PM temporários cumulativos. Da mesma forma, quando é reduzido a um quarto de seus PV ou menos, seu instinto é se render. Caso continue lutando, fica alquebrado.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [27],
+        },
+        {
+          id: 813,
+          nome: 'Asas de Abutre',
+          descricao: `Você possui asas no lugar dos braços e das mãos. Você pode pairar a 1,5m do chão com deslocamento 12m. Isso permite que você ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Se não estiver usando armadura pesada, você pode gastar 1 PM por rodada para voar com deslocamento de 12m.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [37],
+        },
+        {
+          id: 814,
+          nome: 'Cria de Masmorra',
+          descricao: `Você é uma criatura do tipo monstro e recebe visão no escuro e +2 em Intimidação e Sobrevivência.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [37],
+        },
+        {
+          id: 815,
+          nome: 'Grito Aterrorizante',
+          descricao: `Você pode gastar uma ação padrão e 1 PM para emitir um grito estridente. Criaturas em alcance curto ficam abaladas (Von CD Car evita).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [37],
+        },
+        {
+          id: 816,
+          nome: 'Pés Rapinantes',
+          descricao: `Seus pés podem ser usados como mãos ou como duas armas naturais de garras (dano 1d6 cada, crítico x2, corte). Uma vez por rodada, quando usa a ação agredir para atacar com uma arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma das garras, desde que ela esteja livre e não tenha sido usada para atacar neste turno. Como alternativa, se tiver habilidades que exijam uma arma secundária (como Estilo de Duas Armas), você pode usá-las com suas garras.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [37],
+        },
+        {
+          id: 817,
+          nome: 'Arte da Guerra',
+          descricao: `Você é treinado em Guerra e recebe proficiência em armas marciais. Se receber essa proficiência novamente, recebe +2 em rolagens de dano com essas armas.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [25],
+        },
+        {
+          id: 818,
+          nome: 'Metalurgia Hobgoblin',
+          descricao: `Você recebe +2 em Ofício (armeiro) e, se for treinado nesta perícia, pode fabricar armas e armaduras superiores com uma melhoria. Se aprender a fabricar itens superiores desses tipos por outra habilidade, gasta apenas ¼ do preço das melhorias que aplica nesses itens (em vez de ⅓).`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [25],
+        },
+        {
+          id: 819,
+          nome: 'Táticas de Guerrilha',
+          descricao: `Você recebe visão no escuro e +2 em Furtividade.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [25],
+        },
     ];
   }
 }

@@ -201,7 +201,17 @@
                   <mat-tab-group>
                     <mat-tab label="Raça">
                       <div class="row">
-                        <div class="col-sm-9 mt-4 text-justify" [innerHTML]="element.descricao"></div>
+                        <div class="col-sm-9 mt-4">
+                          <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <div class="text-justify" [innerHTML]="element.descricao"></div>
+                          </div>
+                          <div *ngFor="let poderes of element.habilidades" 
+                               style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                            <div [innerHTML]="poderes.descricao"></div>
+                          </div>
+                          <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6;"><b>Longevidade:</b> {{element.longevidade}} x.</div>
+                          <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6;"><b>Devoto:</b> {{element.devotos}}</div>
+                        </div>
                         <div class="col-sm-3 mt-4 mb-4">
                           <mat-card *ngIf="element.imagem != null">
                             <img [src]="element.imagem" [alt]="element.nome" />

@@ -32,6 +32,12 @@
         Magias
       </button>
     </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menuCampanha">Campanha</button>
+    <mat-menu #menuCampanha="matMenu" yPosition="below">
+      <button mat-menu-item (click)="navigateTo('campanha/distincoes')">Distinções</button>
+      <button mat-menu-item (click)="navigateTo('campanha/itens-magicos')">Itens Mágicos</button>
+      <button mat-menu-item (click)="navigateTo('campanha/parceiros')">Parceiros</button>
+    </mat-menu>
 
     <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
     <mat-menu #menuRegra="matMenu" yPosition="below">
@@ -41,16 +47,22 @@
         Condições
       </button>
     </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
+    <mat-menu #menuMestre="matMenu" yPosition="below">
+      <button mat-menu-item (click)="navigateTo('mestre/ameacas')">Ameaças</button>
+      <button mat-menu-item (click)="navigateTo('mestre/criando-ameacas')">Criando Ameaças</button>
+      <button mat-menu-item (click)="navigateTo('mestre/dashboard')">
+        Dashboard
+      </button>
+    </mat-menu>
     <button mat-button [matMenuTriggerFor]="menuUtilitarios">
       Utilitários
     </button>
     <mat-menu #menuUtilitarios="matMenu" yPosition="below">
-      <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">
-        Cálculo de Desafios
-      </button>
-      <button mat-menu-item (click)="navigateTo('utilitarios/personagem-aleatorio')">
-        Personagem Aleatório
-      </button>
+      <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">Cálculo de Desafios</button>
+      <button mat-menu-item (click)="navigateTo('utilitarios/personagem-aleatorio')">Personagem Aleatório</button>
+      <button mat-menu-item (click)="navigateTo('utilitarios/ficha')">Ficha</button>
+      <button mat-menu-item (click)="navigateTo('utilitarios/tesouros')">Tesouros</button>
     </mat-menu>
   </mat-card-content>
 </mat-card>

@@ -1,3 +1,4 @@
+import { Longevidade } from "../enum/longevidade.enum";
 import { OpcoesSelecao } from "../enum/opcoes.selecao";
 import { Poder } from "./poder";
 
@@ -38,6 +39,8 @@ export class Raca {
   temArmaNatural?: boolean;
   bonus?: string[];
   penalidade?: string[];
+  longevidade?: Longevidade;
+  devotos?: string;
 
   constructor(){
   }

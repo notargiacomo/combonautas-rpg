@@ -61,22 +61,10 @@ export class RacaService extends AbstractService {
           // Puxa os textos descritivos
           filtrados.forEach((raca) => {
             this.http
-              .get(`assets/doc/${raca.nome_arquivo_descricao}.txt`, {
-                responseType: 'text',
-              })
-              .subscribe((descricao) => (raca.descricao = descricao));
-  
-            this.http
               .get(`assets/doc/${raca.nome_arquivo_historia}.txt`, {
                 responseType: 'text',
               })
               .subscribe((historia) => (raca.historia = historia));
-
-              this.http
-              .get(`assets/doc/${raca.nome_arquivo_poderes_gerais}.txt`, {
-                responseType: 'text',
-              })
-              .subscribe((poderes_gerais) => (raca.poderes_gerais = poderes_gerais));
           });
   
           return filtrados;

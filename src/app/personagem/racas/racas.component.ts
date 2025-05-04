@@ -231,6 +231,22 @@ export class RacasComponent implements OnInit {
               raca.poderes = response;
             }
           });
+          this.poderService.listar({id_raca:raca.id, tipo: TipoPoder.HABILIDADE_RACA}).subscribe({
+            next: (response: any[]) => {
+              response.sort((a, b) => {
+                let nome_a = a.nome ? a.nome : 'a';
+                let nome_b = b.nome ? b.nome : 'b';
+                return nome_a.localeCompare(nome_b);
+              });
+              response.forEach(poder => {
+                poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
+                if (poder.e_poder_magico) {
+                  poder.descricao += '<i><b> e</b></i>';
+                }
+              });
+              raca.habilidades = response;
+            }
+          });
         });
         this.cdr.detectChanges();
       },

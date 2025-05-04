@@ -14,6 +14,14 @@ import { CalculoDesafiosComponent } from './utilitarios/calculo-desafios/calculo
 import { PersonagemAleatorioComponent } from './utilitarios/personagem-aleatorio/personagem-aleatorio.component';
 import { PericiasComponent } from './personagem/pericias/pericias.component';
 import { RegrasComponent } from './regras/regras.component';
+import { FichaComponent } from './utilitarios/ficha/ficha.component';
+import { DistincoesComponent } from './campanha/distincoes/distincoes.component';
+import { ItensMagicosComponent } from './campanha/itens-magicos/itens-magicos.component';
+import { ParceirosComponent } from './campanha/parceiros/parceiros.component';
+import { AmeacasComponent } from './mestre/ameacas/ameacas.component';
+import { CriandoAmeacaComponent } from './mestre/criando-ameaca/criando-ameaca.component';
+import { DashboardComponent } from './mestre/dashboard/dashboard.component';
+import { TesourosComponent } from './utilitarios/tesouros/tesouros.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -31,4 +39,12 @@ export const routes: Routes = [
     { path: 'regras/condicoes', component: CondicoesComponent},
     { path: 'regras/acoes', component: AcoesComponent},
     { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent},
+    { path: 'utilitarios/ficha', component: FichaComponent},
+    { path: 'utilitarios/tesouros', component: TesourosComponent},
+    { path: 'campanha/distincoes', component: DistincoesComponent},
+    { path: 'campanha/itens-magicos', component: ItensMagicosComponent},
+    { path: 'campanha/parceiros', component: ParceirosComponent},
+    { path: 'mestre/ameacas', component: AmeacasComponent},
+    { path: 'mestre/criando-ameacas', component: CriandoAmeacaComponent},
+    { path: 'mestre/dashboard', component: DashboardComponent},
 ];
