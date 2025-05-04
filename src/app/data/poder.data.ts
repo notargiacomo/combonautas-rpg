@@ -8383,6 +8383,32 @@ export class PoderData {
           prerequisito_nivel: 1,
           id_raca: [29],
         },
+        {
+          id: 824,
+          nome: 'Herança Dracônica',
+          descricao: `Você é uma criatura do tipo monstro e recebe redução 5 contra um tipo de dano a sua escolha entre ácido, eletricidade, fogo, frio, luz ou trevas.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [28],
+        },
+        {
+          id: 825,
+          nome: 'Bênção de Kallyadranoch',
+          descricao: `Escolha dois dos poderes a seguir. Uma vez por patamar, você pode escolher uma bênção no lugar de um poder de classe.
+          <ul>
+          <li><b>Armamento Kallyanach.</b> Você possui uma arma natural (dano 1d6, crítico x2) escolhida entre cauda (impacto), chifres (perfuração) ou mordida (perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com essa arma.</li>
+          <li><b>Asas Dracônicas.</b> Você pode gastar 1 PM por rodada para voar com deslocamento de 9m. Enquanto estiver voando desta forma, você fica vulnerável.</li>
+          <li><b>Escamas Elementais.</b> Sua pele é recoberta de escamas resistentes e brilhantes, que fornecem +2 na Defesa e aumentam a RD de sua Herança Dracônica para 10.</li>
+          <li><b>Prática Arcana.</b> Escolha uma magia arcana de 1º círculo que cause dano do mesmo tipo de sua Herança Dracônica. Você pode lançar essa magia (atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você pode escolher esta bênção mais de uma vez para outras magias. <b><I>e</I></b></li>
+          <li><b>Sentidos Dracônicos.</b> Seus sentidos são impregnados com poder dracônico. Você recebe faro e visão no escuro.</li>
+          <li><b>Sopro de Dragão.</b> Você pode gastar uma ação padrão e 1 PM para soprar um cone de 6m que causa 1d12 pontos de dano do tipo de sua Herança Dracônica (Ref CD Constituição reduz à metade). A cada quatro níveis após o 1º, você pode gastar +1 PM para aumentar o dano do sopro em +1d12.</li>
+          </ul>`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_RACA,
+          prerequisito_nivel: 1,
+          id_raca: [28],
+        },
     ];
   }
 }

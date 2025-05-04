@@ -943,7 +943,10 @@ export class RacaData {
         sentidos: [''],
         referencias: Referencia.AMEACAS,
         paginas: '151',
-        descricao: ``,
+        descricao: `<h4>Habilidades de Raça</h4>
+        <p><b>+2 em um atributo a sua escolha ou +1 em dois atributos a sua escolha.</b></p>`,
+        longevidade: Longevidade.DOIS,
+        devotos: "Arsenal, Kallyadranoch, Megalokk, Wynna.",
         historia: ``, resolucao: [], instrucao: [OpcoesSelecao.DOIS_ATRIBUTOS],
         forca: 0,
         destreza: 0,
