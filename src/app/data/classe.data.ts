@@ -755,7 +755,7 @@ export class ClasseData {
         id: 27,
         id_classe_pai: 9,
         nome: 'Inovador',
-        nome_arquivo_descricao_classe:'variante_inovador',
+        nome_arquivo_descricao_classe:'variante_inovador_descricao',
         nome_arquivo_descricao_informacoes: 'classe_guerreiro_informacoes',
         nome_arquivo_descricao_complicacoes: 'classe_guerreiro_complicacoes',
         descricao_classe: '',
