@@ -1,5 +1,4 @@
 <div class="row">
-    
     <div class="col-sm-6 text-justify">
         <p><b>Aspecto do Inverno.</b> Você aprende e pode lançar uma magia de convocação ou evocação, arcana ou divina, de qualquer círculo que possa lançar. Além disso, recebe redução de frio 5 e suas magias que causam dano de frio causam +1 ponto de dano por dado.</p>
         <p><b>Aspecto do Outono.</b> Você aprende e pode lançar uma magia de necromancia, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para impor uma penalidade de –2 nos testes de resistência de todos os inimigos em alcance curto até o início do seu próximo turno.</p>

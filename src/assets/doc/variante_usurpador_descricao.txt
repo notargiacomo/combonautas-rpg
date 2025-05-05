@@ -1,0 +1,6 @@
+<h5>Características de Classe</h5>
+<p><b>Pontos de Vida.</b>  Um clérigo começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+<p><b>Pontos de Mana.</b> 5 PM por nível.</p>
+<p><b>Perícias.</b> Enganação (Car) e Vontade (Sab), mais 2 a sua escolha entre Atuação (Car), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Furtividade (Des), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Misticismo (Int), Nobreza (Int), Ofício (Int), Percepção
+(Sab), Reflexos (Des) e Religião (Sab).</p>
+<p><b>Proficiências.</b> Nenhuma.</p>
