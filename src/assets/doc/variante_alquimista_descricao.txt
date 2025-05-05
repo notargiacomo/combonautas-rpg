@@ -1,0 +1,5 @@
+<h5>Características de Classe</h5>
+<p><b>Pontos de Vida.</b>  Um alquimista começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
+<p><b>Pontos de Mana.</b> 4 PM por nível.</p>
+<p><b>Perícias.</b>.  Ofício Alquimista (Int) e Vontade (Sab), mais 4 a sua escolha entre Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Investigação  (Int),  Luta  (For),  Misticismo  (Int), Ofício  (Int),  Pilotagem  (Des),  Percepção  (Sab)  e Pontaria (Des).</p>
+<p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>

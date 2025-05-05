@@ -783,7 +783,7 @@ export class ClasseData {
         id: 28,
         id_classe_pai: 10,
         nome: 'Alquimista',
-        nome_arquivo_descricao_classe:'variante_alquimista',
+        nome_arquivo_descricao_classe:'variante_alquimista_descricao',
         nome_arquivo_descricao_informacoes: 'classe_inventor_informacoes',
         nome_arquivo_descricao_complicacoes: 'classe_inventor_complicacoes',
         descricao_classe: '',
