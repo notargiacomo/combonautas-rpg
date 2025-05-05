@@ -18,4 +18,13 @@
 <p><b>Desconcertante (+1 PM).</b> Uma criatura que sofra dano do ataque fica Vulnerável por uma rodada. <b>(Dragão Brasil 159, Pag. 38)</b></p>
 <p><b>Desgastante (–1 PM).</b> Você fica fatigado após usar o golpe. <b>(Dragão Brasil 159, Pag. 38)</b></p>
 <p><b>Paralisante (+2 PM).</b> Uma criatura que sofra dano do ataque fica Paralisada por uma rodada (Fortitude CD For anula). <b>(Dragão Brasil 159, Pag. 38)</b></p>
+
+<h5>Novos Efeitos de Golpe Pessoal</h5>
+<p><b>Avanço (+1 PM).</b> Você pode percorrer até o seu deslocamento em linha reta antes de desferir o golpe.</p>
+<p><b>Brando (+0 PM).</b> Seu golpe causa dano não letal.</p>
+<p><b>Carregado (+1 PM).</b> Você pode gastar uma ação padrão para energizar seu ataque. Se você fizer isso e atacar até a próxima rodada, seu ataque causa +2d8 pontos de dano.
+<p><b>Sequencial (+2 PM).</b> Seu golpe causa +1d6 pontos de dano. A cada vez que você acerta o golpe na mesma cena, esse bônus aumenta em um passo.</p>
+<p><b>Sifão (+2 PM).</b> Você recebe 1 PM temporário para cada 10 pontos da rolagem de dano. Você pode receber um máximo de PM temporários por cena igual ao seu nível e eles desaparecem no fim da cena.</p>
+<p><b>Golpe de Abertura (–2 PM).</b> Seu golpe só pode ser usado em seu primeiro turno do combate.</p>
+<p><b>Truque Secreto (–2 PM).</b> Seu golpe só pode ser usado uma vez contra cada alvo por cena.</p>
 <div>
