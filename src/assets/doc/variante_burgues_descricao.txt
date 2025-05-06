@@ -1,0 +1,6 @@
+<h5>Características de Classe</h5>
+<p><b>Pontos de Vida.</b>  Um burguês começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
+<p><b>Pontos de Mana.</b>  4 PM por nível.</p>
+<p><b>Perícias.</b>  Diplomacia (Car) e Vontade (Sab), mais 6 a sua escolha entre Adestramento (Car), Atuação (Car), Cavalgar
+(Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pontaria (Des).</p>
+<p><b>Proficiências.</b> Nenhuma.</p>

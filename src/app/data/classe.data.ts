@@ -867,7 +867,7 @@ export class ClasseData {
         id: 31,
         id_classe_pai: 13,
         nome: 'Burguês',
-        nome_arquivo_descricao_classe:'variante_burgues',
+        nome_arquivo_descricao_classe:'variante_burgues_descricao',
         nome_arquivo_descricao_informacoes: 'classe_nobre_informacoes',
         nome_arquivo_descricao_complicacoes: 'classe_nobre_complicacoes',
         descricao_classe: '',

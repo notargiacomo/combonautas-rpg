@@ -13425,6 +13425,96 @@ export class PoderData {
           prerequisito_nivel: 2,
           id_classe: 13,
         },
+        {
+          id: 1348,
+          nome: 'Meios de Produção',
+          descricao: `No início de cada aventura, você recebe T$ 100 em dinheiro, itens mundanos ou poções a sua escolha. Esse valor aumenta para T$ 300 no patamar veterano, T$ 600 no campeão e T$ 1.000 no lenda.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 31,
+        },
+        {
+          id: 1349,
+          nome: 'Orgulho',
+          descricao: `Quando faz um teste de perícia, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu Carisma). Para cada PM que gastar, recebe +2 no teste.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 31,
+        },
+        {
+          id: 1350,
+          nome: 'Poder Monetário',
+          descricao: `Quando usa uma habilidade com um custo em PM, você pode consumir uma quantidade de tibares de ouro (limitada pelo seu Carisma). Cada TO consumido dessa forma paga 1 PM do custo da habilidade. Você pode consumir um número de TO por dia igual ao seu nível. No 5º nível, este limite aumenta para o dobro do seu nível.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 31,
+        },
+        {
+          id: 1351,
+          nome: 'Desmoralizar',
+          descricao: `No 2º nível, você aprende e pode lançar Perdição, e pode usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um clérigo de seu nível. Entretanto, pode lançá-la apenas em criaturas inteligentes (Int –3 ou maior). Esta não é uma habilidade mágica e provém da sua capacidade de abalar a autoconfiança de outras pessoas (veja “Magias Simuladas”, p. 44). Mental.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 31,
+        },
+        {
+          id: 1352,
+          nome: 'Negociante Nato',
+          descricao: `No 3º nível, quando chega em uma nova comunidade, você pode gastar 1 dia fazendo contatos com o comércio local para fazer um teste de Diplomacia (CD 20). Se passar, pode vender itens nessa comunidade por 60% do seu preço (em vez de 50%). Para cada 10 pontos pelos quais o resultado do teste exceder a CD, você aumenta o preço de venda em +10% (até o máximo de 100%). Esta habilidade não se acumula com barganha, e NPCs ainda estão limitados a comprar somente o que desejam, com o dinheiro que possuem.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 3,
+          id_classe: 31,
+        },
+        {
+          id: 1353,
+          nome: 'Suborno',
+          descricao: `No 4º nível, você aprende e pode lançar Enfeitiçar (atributo-chave Carisma). Esta não é uma habilidade mágica e provém de sua capacidade de instigar os outros com promessas de enriquecimento (veja “Magias Simuladas”, p. 44). A CD para resistir a essa magia aumenta em +2 se você tiver consumido pelo menos 1 tibar de ouro para pagar seu custo.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 4,
+          id_classe: 31,
+        },
+        {
+          id: 1354,
+          nome: 'Ostentação',
+          descricao: `A partir do 5º nível, você pode se beneficiar de um item vestido adicional. Além disso, a CD para resistir às suas habilidades de burguês aumenta em +1 se você possuir um item banhado a ouro, cravejado de gemas ou de mitral. Esse aumento é cumulativo; possuir três itens diferentes com as três modificações aumenta a CD em +3
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 31,
+        },
+        {
+          id: 1355,
+          nome: 'Novo Rico',
+          descricao: `No 9º nível, para cada item mágico que você estiver vestindo, você recebe +1 PM por nível de poder do item (somente após 1 dia de uso).
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 9,
+          id_classe: 31,
+        },
+        {
+          id: 1356,
+          nome: 'Magnata',
+          descricao: ` No 20º nível, quando você usa Desmoralizar, a penalidade em testes de ataque também se aplica à CD das habilidades das criaturas afetadas. Além disso, sempre que consome um tibar de ouro para pagar o custo em PM de uma habilidade, você recebe 10 PV temporários cumulativos, que duram até o fim da cena.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 20,
+          id_classe: 31,
+        },
     ];
   }
 }
