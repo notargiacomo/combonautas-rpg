@@ -12975,6 +12975,456 @@ export class PoderData {
           prerequisito_nivel: 2,
           id_classe: 16,
         },
+        {
+          id: 1304,
+          nome: 'Autoconfiança',
+          descricao: `Você pode usar seu Carisma em vez de Destreza na Defesa (mas continua não podendo somar um atributo na Defesa quando usa armadura pesada).
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 13,
+        },
+        {
+          id: 1305,
+          nome: 'Espólio',
+          descricao: `Você recebe um item a sua escolha com preço de até T$ 2.000.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 13,
+        },
+        {
+          id: 1306,
+          nome: 'Orgulho',
+          descricao: `Quando faz um teste de perícia, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu Carisma). Para cada PM que gastar, recebe +2 no teste.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 13,
+        },
+        {
+          id: 1307,
+          nome: 'Palavras Afiadas',
+          descricao: `No 2º nível, você pode gastar uma ação padrão e 1 PM para fazer um teste de Diplomacia ou Intimidação oposto ao teste de Vontade de uma criatura inteligente (Int –3 ou maior) em alcance curto. Se vencer, você causa 2d6 pontos de dano psíquico não letal à criatura. Se perder, causa metade deste dano. Se a criatura for reduzida a 0 ou menos PV, em vez de cair inconsciente, ela se rende (se você usou Diplomacia) ou fica apavorada e foge de você da maneira mais eficiente possível (se usou Intimidação). A cada quatro níveis, você pode gastar +1 PM para aumentar o dano (veja a tabela da classe). Mental.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1308,
+          nome: 'Riqueza',
+          descricao: `No 3º nível, você passa a receber dinheiro de sua família, patrono ou negócios. Uma vez por aventura, pode fazer um teste de Carisma com um bônus igual ao seu nível de nobre. Você recebe um número de Tibares de ouro igual ao resultado do teste. Assim, um nobre de 5º nível com Carisma 4 que role 13 no dado recebe 22 TO. O uso desta habilidade é condicionado a sua relação com sua família, patrono ou negócios e a onde você está. Por exemplo, um nobre viajando pelos ermos, isolado da civilização, dificilmente teria como receber dinheiro.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 3,
+          id_classe: 13,
+        },
+        {
+          id: 1309,
+          nome: 'Gritar Ordens',
+          descricao: `A partir do 4º nível, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu Carisma). Até o início de seu próximo turno, todos os seus aliados em alcance curto recebem um bônus nos testes de perícia igual à quantidade de PM que você gastou.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 4,
+          id_classe: 13,
+        },
+        {
+          id: 1310,
+          nome: 'Presença  Aristocrática',
+          descricao: `A partir do 5º nível, sempre que uma criatura inteligente tentar machucá-lo (causar dano com um ataque, magia ou habilidade) você pode gastar 2 PM. Se fizer isso, a criatura deve fazer um teste de Vontade (CD Car). Se falhar, não conseguirá machucá-lo e perderá a ação. Você só pode usar esta habilidade uma vez por cena contra cada criatura.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1311,
+          nome: 'Realeza',
+          descricao: `No 20º nível, a CD para resistir a sua Presença Aristocrática aumenta em +5 e uma criatura que falhe no teste de Vontade por 10 ou mais se arrepende tanto de ter tentado machucá-lo que passa a lutar ao seu lado (e seguir suas ordens, se puder entendê-lo) pelo resto da cena. Além disso, uma criatura que seja reduzida a 0 PV por Palavras Afiadas não sofre este dano; em vez disso, passa a lutar ao seu lado pelo resto da cena.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 20,
+          id_classe: 13,
+        },
+        {
+          id: 1311,
+          nome: 'Armadura Brilhante',
+          descricao: `Você pode usar seu Carisma na Defesa quando usa armadura pesada. Se fizer isso, não pode somar sua Destreza, mesmo que outras habilidades ou efeitos permitam isso. <i>Pré-requisito: 8º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 8,
+          id_classe: 13,
+        },
+        {
+          id: 1312,
+          nome: 'Autoridade Feudal',
+          descricao: `Você pode gastar uma hora e 2 PM para conclamar o povo a ajudá-lo (qualquer pessoa sem um título de nobreza ou uma posição numa igreja reconhecida pelo seu reino). Em termos de jogo, essas pessoas contam como um parceiro iniciante de um tipo a sua escolha (aprovado pelo mestre) que lhe acompanha até o fim da aventura. Esta habilidade só pode ser usada em locais onde sua posição carregue alguma influência (a critério do mestre). <i>Pré-requisito: 6º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 13,
+        },
+        {
+          id: 1313,
+          nome: 'Educação Privilegiada',
+          descricao: `Você se torna treinado em duas perícias de nobre a sua escolha.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1314,
+          nome: 'Estrategista',
+          descricao: `Você pode direcionar aliados em alcance curto. Gaste uma ação padrão e 1 PM por aliado que quiser direcionar (limitado pelo seu Carisma). No próximo turno do aliado, ele ganha uma ação de movimento. <i>Pré-requisitos: Int 1, treinado em Guerra, 6º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 13,
+        },
+        {
+          id: 1315,
+          nome: 'Favor',
+          descricao: `Você pode usar sua influência para pedir favores a pessoas poderosas. Isso gasta 5 PM e uma hora de conversa e bajulação, ou mais, de acordo com o mestre, e funciona como o uso persuasão de Diplomacia (veja a página 118). Porém, você pode pedir favores ainda mais caros, difíceis ou perigosos — um convite para uma festa particular, uma carona de barco até Galrasia ou mesmo acesso aos planos militares do reino. Se você falhar, não pode pedir o mesmo favor por pelo menos uma semana.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1316,
+          nome: 'General',
+          descricao: `Quando você usa o poder Estrategista, aliados direcionados recebem 1d4 PM temporários. Esses PM duram até o fim do turno do aliado e não podem ser usados em efeitos que concedam PM. <i>Pré-requisitos: Estrategista, 12º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 12,
+          id_classe: 13,
+        },
+        {
+          id: 1317,
+          nome: 'Grito Tirânico',
+          descricao: `Você pode usar Palavras Afiadas como uma ação completa, em vez de padrão. Se fizer isso, seus dados de dano aumentam para d8 e você atinge todos os inimigos em alcance curto. <i>Pré-requisito: 8º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 8,
+          id_classe: 13,
+        },
+        {
+          id: 1318,
+          nome: 'Inspirar Confiança',
+          descricao: `Sua presença faz as pessoas darem o melhor de si. Quando um aliado em alcance curto faz um teste, você pode gastar 2 PM para fazer com que ele possa rolar esse teste novamente.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1319,
+          nome: 'Inspirar Glória',
+          descricao: `A presença de um nobre motiva as pessoas a realizarem grandes façanhas. Uma vez por rodada, você pode gastar 5 PM para fazer um aliado em alcance curto ganhar uma ação padrão adicional no próximo turno dele. Você só pode usar esta habilidade uma vez por cena em cada aliado. <i>Pré-requisitos: Inspirar Confiança, 8º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 8,
+          id_classe: 13,
+        },
+        {
+          id: 1320,
+          nome: 'Jogo da Corte',
+          descricao: `Você pode gastar 1 PM para rolar novamente um teste recém realizado de Diplomacia, Intuição ou Nobreza.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1321,
+          nome: 'Liderar pelo Exemplo',
+          descricao: `Você pode gastar 2 PM para servir de inspiração. Até o início de seu próximo turno, sempre que você passar em um teste de perícia, aliados em alcance curto que fizerem um teste da mesma perícia podem usar o resultado do seu teste em vez de fazer o seu próprio. <i>Pré-requisito: 6º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 13,
+        },
+        {
+          id: 1322,
+          nome: 'Língua de Ouro',
+          descricao: `Você pode gastar uma ação padrão e 4 PM para gerar o efeito da magia Enfeitiçar com os aprimoramentos de sugerir ação e afetar todas as criaturas dentro do alcance (CD Car). Esta não é uma habilidade mágica e provém de sua capacidade de influenciar outras pessoas. <i>Pré-requisitos: Língua de Prata, 8º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 8,
+          id_classe: 13,
+        },
+        {
+          id: 1323,
+          nome: 'Língua de Prata',
+          descricao: `Quando faz um teste de perícia baseada em Carisma, você pode gastar 2 PM para receber um bônus no teste igual a metade do seu nível.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1324,
+          nome: 'Língua Rápida',
+          descricao: `Quando faz um teste de Diplomacia para mudar atitude como uma ação completa, você sofre uma penalidade de –5, em vez de –10.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1325,
+          nome: 'Presença Majestosa',
+          descricao: `Sua Presença Aristocrática passa a funcionar contra qualquer criatura com valor de Inteligência (passa a afetar até mesmo animais, embora continue não funcionando contra criaturas sem Int). Além disso, você pode usá-la mais de uma vez contra uma mesma criatura na mesma cena. <i>Pré-requisitos: 16º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1326,
+          nome: 'Título',
+          descricao: `Você adquire um título de nobreza. Converse com o mestre para definir os benefícios exatos de seu título. Como regra geral, no início de cada aventura você recebe 20 TO por nível de nobre (rendimentos dos impostos) ou a ajuda de um parceiro veterano (um membro de sua corte). <i>Pré-requisito: Autoridade Feudal, 10º nível de nobre, ter conquistado terras ou realizado um serviço para um nobre que possa se tornar seu suserano.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 10,
+          id_classe: 13,
+        },
+        {
+          id: 1327,
+          nome: 'Voz Poderosa',
+          descricao: `Você recebe +2 em Diplomacia e Intimidação. Suas habilidades de nobre com alcance curto passam para alcance médio.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1328,
+          nome: 'Agente de Elite',
+          descricao: `Você recebe um agente especial, um parceiro veterano que fornece os benefícios de um parceiro a sua escolha (Tormenta20, p. 260) ou um poder de outra classe, cujos pré-requisitos você cumpra (para efeitos de nível na classe desse poder, considere seu nível de nobre −4). No início de cada aventura, você pode trocar seu agente. <i>Pré-requisitos: Título, 11º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 11,
+          id_classe: 13,
+        },
+        {
+          id: 1329,
+          nome: 'Comandante de Campo',
+          descricao: `Seus capangas recebem +2 nas rolagens de dano e um bônus na Defesa igual ao seu Carisma. Além disso, quando contrata ou recebe capangas por qualquer motivo, você recebe um capanga adicional do mesmo tipo. <i>Pré-requisito: 5º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1330,
+          nome: 'Comitiva',
+          descricao: `Seu limite de parceiros aumenta em +1. A partir do 11º nível, esse limite aumenta em +1 adicional. <i>Pré-requisito: 5º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1331,
+          nome: 'Discurso de Batalha',
+          descricao: `Em seu primeiro turno de um combate, você pode gastar uma ação completa e fazer um teste de Diplomacia ou Intimidação. Se fizer isso, para cada 10 pontos no resultado do teste, você e seus aliados em alcance curto recebem 2 PM temporários. Esses PM temporários desaparecem no fim da cena.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1332,
+          nome: 'Fofocas da Corte',
+          descricao: `Quando chega em um ambiente social (taverna, acampamento militar, praça de vila, salão de castelo etc.), você pode gastar 1 hora para se inteirar das “novidades”. A critério do mestre, você recebe uma informação útil sobre os habitantes ou acontecimentos locais. Além disso, recebe 4d6 dados de auxílio. Sempre que faz um teste de perícia baseada em Carisma nesse ambiente, você pode gastar um desses dados e adicionar como um bônus no teste. <i>Pré-requisitos: treinado em Intuição e Investigação.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1333,
+          nome: 'Guarda Pessoal',
+          descricao: `Você recebe um pelotão de infantaria (p. 241) veterano que atua como seu guarda-costas. No 11º nível, o pelotão se torna um parceiro mestre. Se perder seu pelotão de infantaria, você pode arregimentar outro após uma semana. <i>Pré-requisito: 5º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1334,
+          nome: 'Hedonismo Aristocrático',
+          descricao: `Uma vez por dia, você pode gastar 1 hora e um valor a sua escolha entre T$ 100, T$ 500 e T$ 2.000 em luxos como comida, bebida e apresentações artísticas. Se tiver gastado T$ 100, você recebe 4 PM temporários por patamar, que duram até o fim do dia. Se tiver gastado T$ 500, o ganho aumenta para 5 PM por patamar e, se tiver gastado T$ 2.000, para 6 PM por patamar.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1335,
+          nome: 'Instigar Violência',
+          descricao: `Uma vez por rodada por aliado, quando um aliado em alcance curto faz um acerto crítico em um inimigo, você pode gastar 3 PM para que esse aliado faça mais um ataque contra o mesmo inimigo. <i>Pré-requisitos: treinado em Guerra, 11º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 11,
+          id_classe: 13,
+        },
+        {
+          id: 1336,
+          nome: 'Insuflar Investida',
+          descricao: `Quando faz uma investida, você pode gastar 1 PM por aliado a sua escolha em alcance curto. Se fizer isso, a próxima investida que cada um desses aliados fizer até o início do seu próximo turno causa +2d8 pontos de dano. <i>Pré-requisito: Estrategista.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1337,
+          nome: 'Legado Mágico',
+          descricao: `Você recebe um item mágico menor a sua escolha, como um presente ou uma herança de família. No início de cada aventura, você pode substituir esse item por outro. A partir do 14º nível, quando substitui o item pode escolher um item mágico médio e, a partir do 17º nível, um item mágico maior. <i>Pré-requisito: 11º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 11,
+          id_classe: 13,
+        },
+        {
+          id: 1338,
+          nome: 'Líder Enérgico',
+          descricao: `Você soma seu Carisma em Iniciativa. Além disso, se for o primeiro na iniciativa, em seu primeiro turno você pode usar uma habilidade de nobre com execução de ação de movimento ou padrão como ação livre. <i>Pré-requisito: treinado em Iniciativa.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1339,
+          nome: 'Líder Impiedoso',
+          descricao: `Sempre que um aliado sob efeito da sua habilidade Gritar Ordens fizer um acerto crítico ou reduzir um inimigo para 0 PV ou menos, você recupera 1 PM. <i>Pré-requisito: 5º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1340,
+          nome: 'Linhagem Distinta',
+          descricao: `Você descende de uma família ilustre — ou, por suas ações, tornou sua família ilustre. Seja como for, o nome de sua família o inspira a grandes feitos. Quando você usa Orgulho, o custo da habilidade diminui em –1 PM. Além disso, uma vez por cena, quando usa Orgulho, você pode gastar +5 PM. Se fizer isso, o bônus fornecido pela habilidade dobra e, ao fazer o teste de perícia afetado por ela, você rola dois dados e usa o melhor resultado. <i>Pré-requisito: 17º nível de nobre.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 17,
+          id_classe: 13,
+        },
+        {
+          id: 1341,
+          nome: 'Ordens Agressivas',
+          descricao: `Quando você usa Gritar Ordens, a habilidade também soma seu bônus na primeira rolagem de dano dos aliados até o início do seu próximo turno. <I>Pré-requisito: 5º nível de nobre.</I>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1342,
+          nome: 'Ordens Encorajadoras',
+          descricao: `Quando você usa Gritar Ordens, a habilidade também fornece 10 PV temporários cumulativos. Esses pontos desaparecem no fim da cena. <I>Pré-requisito: 5º nível de nobre.</I>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1343,
+          nome: 'Palavras de Efeito',
+          descricao: `Você soma seu Carisma no dano de sua habilidade Palavras Afiadas e a ação necessária para usá-la diminui em um passo (de completa para padrão, de padrão para movimento). <I>Pré-requisito: 5º nível de nobre.</I>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1344,
+          nome: 'Palavras Ressonantes',
+          descricao: `Quando você usa Palavras Afiadas, sempre que rolar o resultado máximo ou um ponto abaixo do máximo em um dado da habilidade (por exemplo, um 5 ou 6 ao rolar 1d6), role um dado extra. <I>Pré-requisito: 5º nível de nobre.</I>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1345,
+          nome: 'Protocolo Impecável',
+          descricao: `Quando chega em um ambiente social (veja Fofocas da Corte), você pode gastar 2 PM e fazer um teste de Nobreza (CD 20). Se passar, porta-se da maneira ideal para a situação, o que melhora a atitude de todas as criaturas em relação a você em uma categoria. Se passar por 10 ou mais, a critério do mestre você pode receber possibilidades de interação que normalmente não teria — por exemplo, ao chegar em um acampamento militar ou castelo, pode ser convidado para falar com o general ou o nobre comandante. <I>Pré-requisitos: treinado em Nobreza, Jogo da Corte.</I>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
+        {
+          id: 1346,
+          nome: 'Senescal',
+          descricao: `Você recebe +1 por patamar em testes de perícia para resolver ações de base, domínio ou negócio e, uma vez por turno dessas estruturas, pode executar uma ação de estrutura adicional. <I>Pré-requisito: 5º nível de nobre.</I>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 13,
+        },
+        {
+          id: 1347,
+          nome: 'Voz Límpida',
+          descricao: `Quando você usa uma habilidade de nobre que afete um ou mais aliados, o custo dessa habilidade diminui em –1 PM (isso não reduz efeitos baseados no custo em PM pago).
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 13,
+        },
     ];
   }
 }
