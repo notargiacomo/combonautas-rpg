@@ -5,14 +5,14 @@ export const condicoes = [
     id: 1,
     nome: 'ABALADO',
     descricao:
-      'O personagem sofre –2 em testes de perícia. Se ficar abalado novamente, em vez disso fica apavorado.',
+      ' O personagem sofre –2 em testes de perícia. Se ficar abalado novamente, em vez disso fica apavorado.',
     tipo: TipoCondicao.MEDO,
   },
   {
     id: 2,
     nome: 'AGARRADO',
     descricao:
-      'O personagem fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Ataques à distância contra um alvo envolvido em uma manobra agarrar têm 50% de chance de acertar o alvo errado.',
+      '. O personagem fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Ataques à distância contra um alvo envolvido em uma manobra agarrar têm 50% de chance de acertar o alvo errado.',
     tipo: TipoCondicao.MOVIMENTO,
   },
   {
@@ -39,7 +39,7 @@ export const condicoes = [
     id: 6,
     nome: 'CAÍDO',
     descricao:
-      'O personagem sofre –5 em ataques corpo a corpo e seu deslocamento é reduzido a 1,5m. Além disso, sofre –5 na Defesa contra ataques corpo a corpo e recebe +5 na Defesa contra ataques à distância (cumulativos com outras condições).',
+      ' O personagem sofre –5 em ataques corpo a corpo e seu deslocamento é reduzido a 1,5m. Além disso, sofre –5 na Defesa contra ataques corpo a corpo e recebe +5 na Defesa contra ataques à distância (cumulativos com outras condições).',
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ export const condicoes = [
   },
   {
     id: 11,
-    nome: 'DOENÇA',
+    nome: 'DOENTE',
     descricao: 'Sob efeito de uma doença.',
     tipo: TipoCondicao.METABOLISMO,
   },
@@ -102,27 +102,35 @@ export const condicoes = [
   },
   {
     id: 16,
+    nome: 'ENVENENADO',
+    descricao:
+      `O efeito desta condição varia de acordo com o veneno. Pode ser perda de vida recorrente ou outra condição (como fraco ou enjoado). Perda de vida recorrente por venenos é cumulativa.`,
+    tipo: TipoCondicao.VENENO,
+  },
+
+  {
+    id: 17,
     nome: 'ESMOREÇIDO',
     descricao:
       'O personagem sofre –5 em testes de Inteligência, Sabedoria e Carisma e de perícias baseadas nesses atributos.',
     tipo: TipoCondicao.MENTAL,
   },
   {
-    id: 17,
+    id: 18,
     nome: 'EXAUSTO',
     descricao:
       'O personagem fica debilitado, lento e vulnerável. Se ficar exausto novamente, em vez disso fica inconsciente.',
     tipo: TipoCondicao.CANSACO,
   },
   {
-    id: 18,
+    id: 19,
     nome: 'FASCINADO',
     descricao:
       'Com a atenção presa em alguma coisa. O personagem sofre –5 em Percepção e não pode fazer ações, exceto observar aquilo que o fascinou. Esta condição é anulada por ações hostis contra o personagem ou se o que o fascinou não estiver mais visível. Balançar uma criatura fascinada para tirá-la desse estado gasta uma ação padrão.',
     tipo: TipoCondicao.MENTAL,
   },
   {
-    id: 19,
+    id: 20,
     nome: 'FATIGADO',
     descricao:
       'O personagem fica fraco e vulnerável. Se ficar fatigado novamente, em vez disso fica exausto.',
@@ -186,36 +194,36 @@ export const condicoes = [
     tipo: TipoCondicao.MENTAL,
   },
   {
-    id: 31,
+    id: 30,
     nome: 'PETRIFICADO',
     descricao: 'O personagem fica inconsciente e recebe redução de dano 8.',
     tipo: TipoCondicao.METAMORFOSE,
   },
   {
-    id: 32,
+    id: 31,
     nome: 'SANGRANDO',
     descricao:
       'No início de seu turno, o personagem deve fazer um teste de Constituição (CD 15). Se falhar, perde 1d6 pontos de vida e continua sangrando. Se passar, remove essa condição.',
     tipo: TipoCondicao.METABOLISMO,
   },
   {
-    id: 33,
+    id: 32,
     nome: 'SOBRECARREGADO',
     descricao:
       'O personagem sofre penalidade de armadura –5 e seu deslocamento é reduzido –3m.',
     tipo: TipoCondicao.MOVIMENTO,
   },
   {
-    id: 34,
+    id: 33,
     nome: 'SURDO',
     descricao:
       'O personagem não pode fazer testes de Percepção para ouvir e sofre –5 em testes de Iniciativa. Além disso, é considerado em condição ruim para lançar magias.',
     tipo: TipoCondicao.SENTIDOS,
   },
   {
-    id: 35,
+    id: 34,
     nome: 'SURPREENDIDO',
     descricao: 'O personagem fica desprevenido e não pode fazer ações.',
   },
-  { id: 36, nome: 'VULNERÁVEL', descricao: 'O personagem sofre –2 na Defesa.' },
+  { id: 35, nome: 'VULNERÁVEL', descricao: 'O personagem sofre –2 na Defesa.' },
 ];

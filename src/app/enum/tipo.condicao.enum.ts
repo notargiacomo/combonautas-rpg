@@ -5,5 +5,6 @@ export enum TipoCondicao {
     SENTIDOS = "Sentidos",
     CANSACO = "Cansaço",
     METAMORFOSE = "Metamorfose",
-    METABOLISMO = "Metabolismo"
+    METABOLISMO = "Metabolismo",
+    VENENO = "Veneno"
 }
