@@ -1,4 +1,4 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -8,20 +8,28 @@ import { MatInputModule } from '@angular/material/input';
 import { Condicao } from '../../model/condicao';
 import { ComplicacaoService } from '../../service/complicacao.service';
 import { Complicacao } from '../../model/complicacao';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-complicacoes',
-  imports: [MatDividerModule, MatCardModule, MatGridListModule, NgFor,MatInputModule,FormsModule,ReactiveFormsModule],
+  imports: [MatDividerModule, MatCardModule, MatGridListModule, NgFor,MatInputModule,FormsModule,ReactiveFormsModule, NgIf],
   templateUrl: './complicacoes.component.html',
   styleUrl: './complicacoes.component.scss'
 })
 export class ComplicacoesComponent {
+  isMobile = false;
 
   complicacoes!: Complicacao[]
   form!: FormGroup;
   numero_registros=0;
 
-  constructor(private readonly service: ComplicacaoService,private fb: FormBuilder){}
+  constructor(private readonly service: ComplicacaoService,private fb: FormBuilder, private breakpointObserver: BreakpointObserver){
+    this.breakpointObserver.observe([Breakpoints.Handset])
+    .subscribe(result => {
+      this.isMobile = result.matches;
+      console.log('É celular?', this.isMobile);
+    });
+  }
 
   ngOnInit() {
       this.form = this.fb.group({
