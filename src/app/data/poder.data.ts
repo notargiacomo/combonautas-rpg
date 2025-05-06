@@ -14130,6 +14130,296 @@ export class PoderData {
           prerequisito_nivel: 20,
           id_classe: 32,
         },
+        {
+          id: 1416,
+          nome: 'Arma Ancestral',
+          descricao: `Você recebe proficiência em katana e começa o jogo com uma arma ancestral, uma katana superior com uma melhoria com preço total de até T$ 500. Nos níveis 4, 6 e 8, sua arma ancestral recebe uma nova melhoria à sua escolha. Nas mãos de qualquer outra pessoa, sua arma ancestral funciona como uma arma normal (sem benefícios por melhorias ou encantamentos). Se perder sua arma ancestral, você perde todos os seus PM e só pode recuperá-los no dia seguinte. Você pode reforjar uma arma ancestral perdida ou destruída com uma semana de trabalho e o gasto de tibares em valor igual ao preço básico da arma.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 17,
+        },
+        {
+          id: 1417,
+          nome: 'Código do Samurai',
+          descricao: `Você deve sempre manter sua palavra e nunca pode recusar um pedido de ajuda de alguém inocente. Além disso, nunca pode mentir, trapacear ou roubar. Se violar o código, você perde todos os seus PM e só pode recuperá-los a partir do próximo dia.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 17,
+        },
+        {
+          id: 1418,
+          nome: 'Grito de Kiai',
+          descricao: `Quando faz um ataque corpo a corpo, você pode gastar 2 PM para rolar dois dados e usar o melhor resultado. Se acertar esse ataque, você recebe +1d4 na rolagem de dano. Esse dano extra é multiplicado em caso de acerto crítico. A cada quatro níveis, o bônus de dano aumenta conforme indicado na tabela da classe.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 17,
+        },
+        {
+          id: 1419,
+          nome: 'Olhar Assustador',
+          descricao: `No 3º nível, você recebe +1 em Intimidação e Intuição. A cada seis níveis, esse bônus aumenta em +1.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 3,
+          id_classe: 17,
+        },
+        {
+          id: 1420,
+          nome: 'Arma Espiritual',
+          descricao: `No 10º nível, sua arma ancestral se torna uma arma mágica com um encanto à sua escolha. Nos níveis 12 e 14 ela recebe um novo encanto a sua escolha.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 10,
+          id_classe: 17,
+        },
+        {
+          id: 1421,
+          nome: 'Shogun',
+          descricao: `No 20º nível, o multiplicador de crítico da sua arma ancestral aumenta em dois. Além disso, recupera uma quantidade de pontos de vida igual a esse dano extra.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 20,
+          id_classe: 17,
+        },
+        {
+          id: 1422,
+          nome: 'Arma Ancestral Adicional',
+          descricao: `Você recebe uma arma ancestral adicional de um tipo à sua escolha. Esta arma segue a mesma progressão de melhorias e encantos de sua primeira arma ancestral, mas você pode escolher benefícios diferentes para ela.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1423,
+          nome: 'Arma Reverberante',
+          descricao: `Quando usa Grito de Kiai para atacar com sua arma ancestral, você pode gastar +1 PM para aumentar o bônus de dano em +1 dado do mesmo tipo concedido por seu grito. <i>Pré-requisito: 5º nível de samurai.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 5,
+          id_classe: 17,
+        },
+        {
+          id: 1424,
+          nome: 'Arma Veloz',
+          descricao: `Uma vez por rodada, quando usa a ação agredir com sua arma ancestral, você pode gastar 2 PM para realizar um ataque adicional com essa mesma arma. <i>Pré-requisito: 6º nível de samurai.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 17,
+        },
+        {
+          id: 1425,
+          nome: 'Ataque Disciplinado',
+          descricao: `Quando ataca com sua arma ancestral, você soma sua Sabedoria nas rolagens de dano (limitado pelo seu nível). <i>Pré-requisito: Sab 1.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1426,
+          nome: 'Avalanche das Três Mãos',
+          descricao: `Se estiver usando sua arma ancestral com as duas mãos, você soma sua Constituição nas rolagens de dano (limitado pelo seu nível). <i>Pré-requisitos: Con 1.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1427,
+          nome: 'Corte da Correnteza',
+          descricao: `Se estiver usando sua arma ancestral em corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e causa +1d6 pontos de dano com acertos críticos.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1428,
+          nome: 'Daisho',
+          descricao: `Você recebe proficiência com wakizashi e recebe uma dessas armas como uma arma ancestral adicional. Esta arma segue a mesma progressão de melhorias e encantos de sua primeira arma ancestral, mas você pode escolher benefícios diferentes para ela.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1429,
+          nome: 'Dois Céus',
+          descricao: `Se estiver empunhando sua arma ancestral e uma segunda arma (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Se possuir Estilo de Duas Armas, quando usa Grito de Kiai você pode gastar +1 PM para aplicar seu efeito a ambas as armas. <i>Pré-requisito: Des 2</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1430,
+          nome: 'Emblema do Império de Jade',
+          descricao: `Você soma sua Sabedoria em Diplomacia, Guerra e Nobreza. <i>Prérequisito: Sab 1.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1431,
+          nome: 'Honra dos Ancestrais',
+          descricao: `O nome de sua família invoca a honra e tradição de seus antepassados. Uma vez por cena, você pode gastar uma ação de movimento para fazer um teste de Diplomacia, Intimidação ou Nobreza (CD 10) e impressionar os presentes. Se passar, você recebe +1 em todos os seus testes de perícias baseadas em Carisma até o fim da cena. Esse bônus aumenta em +1 para cada 5 pontos pelos quais o resultado do teste exceder a CD (+2 para um resultado 15, +3 para 20 e assim por diante). Como alternativa, você pode aplicar esse bônus em seu próximo teste de ataque nesta cena. <i>Pré-requisito: 12º nível de samurai.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 12,
+          id_classe: 17,
+        },
+        {
+          id: 1432,
+          nome: 'Honra Inabalável',
+          descricao: `Você soma sua Sabedoria em seu total de pontos de vida e se torna imune a efeitos de medo. Este poder não elimina fobias raciais (como o medo de altura dos minotauros). <i>Pré-requisito: Sab 1.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1433,
+          nome: 'Iaijutsu',
+          descricao: `Você soma sua Sabedoria em Iniciativa e pode sacar ou guardar armas como uma ação livre (em vez de ação de movimento). Além disso, quando faz um teste de Iniciativa para agir, para cada 10 pontos no resultado de seu teste, você recebe +1 em testes de ataque e rolagens de dano com arma na primeira rodada de combate. <i>Prérequisito: treinado em Iniciativa.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1434,
+          nome: 'Ira Gentil',
+          descricao: `Enquanto tiver pontos de vida temporários fornecidos por Serenidade dos Kami, você soma seu bônus de Olhar Assustador em testes de ataque e rolagens de dano com sua arma ancestral. <i>Pré-requisito: Serenidade dos Kami.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1435,
+          nome: 'Kiai Assustador',
+          descricao: `Quando usa Grito de Kiai, você pode pagar 1 PM. Se acertar o ataque, todos os oponentes em alcance curto ficam abalados por 1 rodada. <i>Pré-requisito: treinado em Intimidação.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1436,
+          nome: 'Kiai Estremecedor',
+          descricao: `Quando usa Grito de Kiai, você pode pagar 1 PM. Se acertar o ataque, todos os oponentes em alcance curto do alvo do ataque ficam caídos (Fortitude CD Sab evita).
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1437,
+          nome: 'Limiar da Tempestade',
+          descricao: `Quando faz um ataque, você pode gastar todos os PV temporários fornecidos por Serenidade dos Kami. Se fizer isso, você recebe um bônus na rolagem de dano deste ataque igual à metade dos PV gastos. <i>Pré-requisito: Serenidade dos Kami.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1438,
+          nome: 'Kyudo',
+          descricao: `Você pode usar Grito de Kiai com ataques à distância. Quando usa uma arma de ataque à distância, pode usar sua Sabedoria em vez de Destreza nos testes de ataque (e, caso possua o poder Estilo de Disparo, nas rolagens de dano). <i>Pré-requisito: treinado em Pontaria.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1439,
+          nome: 'Meditação Artística',
+          descricao: `Você pode gastar 1 hora e 5 PM escrevendo um pequeno poema enquanto medita sobre os desafios por vir. Você recebe 5d6 dados de concentração. Pelas próximas 24 horas, sempre que for realizar um teste de perícia, você pode gastar um desses d6 e adicionar o resultado rolado como um bônus no teste. <i>Pré-requisitos: 8º nível de samurai, treinado em Ofício (calígrafo).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 8,
+          id_classe: 17,
+        },
+        {
+          id: 1440,
+          nome: 'Montanha Serena',
+          descricao: `Enquanto tiver pontos de vida temporários fornecidos por Serenidade dos Kami, você soma sua Constituição em testes de manobra e na CD para resistir às suas habilidades de samurai. <i>Pré-requisitos: Avalanche das Três Mãos, Serenidade dos Kami.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1441,
+          nome: 'Nuvem Serena',
+          descricao: `Enquanto tiver pontos de vida temporários fornecidos por Serenidade dos Kami, o dano de sua arma ancestral aumenta em um passo. <i>Pré-requisitos: Dois Céus, Serenidade dos Kami.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1442,
+          nome: 'Rio Sereno',
+          descricao: `Enquanto tiver pontos de vida temporários fornecidos por Serenidade dos Kami, seu deslocamento aumenta em +3m e não é reduzido por terreno difícil natural. <i>Pré-requisitos: Corte da Correnteza, Serenidade dos Kami.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1443,
+          nome: 'Ronin',
+          descricao: `Você não precisa mais seguir seu Código do Samurai. Além disso, você pode trocar sua katana por outro tipo de arma, e não está limitado a katanas como sua arma ancestral.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
+        {
+          id: 1444,
+          nome: 'Serenidade dos Kami',
+          descricao: `Você pode gastar uma ação de movimento e 3 PM para receber uma quantidade de PV temporários igual ao seu nível + sua sabedoria. Se usar este poder na primeira rodada de um combate, você não precisa gastar PM.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 17,
+        },
     ];
   }
 }
