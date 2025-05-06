@@ -1,0 +1,6 @@
+<h5>Combinações Desarmadas</h5>
+<p>Poderes de Combinação representam golpes que se aproveitam dos efeitos de ataques anteriores sobre seu oponente. Eles compartilham as seguintes regras.</p>
+<ul>
+<li>Combinações só podem ser usadas com ataques desarmados.</li>
+<li>Cada Combinação só pode ser usada uma vez por rodada, e apenas uma Combinação pode ser usada por ataque.</li>
+<li>Quando acerta um ataque usando um poder de Combinação, você começa uma contagem (individual por oponente). O próximo ataque de Combinação recebe um bônus de contagem (descrito em cada poder). A contagem zera se você passar uma rodada sem acertar um ataque usando um poder de combinação.</li>

@@ -1,0 +1,5 @@
+<h5>Características de Classe</h5>
+<p><b>Pontos de Vida.</b>  Um atleta começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
+<p><b>Pontos de Mana.</b> 3 PM por nível.</p>
+<p><b>Perícias.</b> Atletismo (For) e Luta (For), mais 4 a sua escolha entre Acrobacia (Des), Adestramento (Car), Cavalgar (Des), Cura (Sab), Fortitude (Con), Iniciativa (Des), Intimidação (Car), Ofício (Int), Percepção (Sab), Pilotagem (Des), Pontaria (Des) e Reflexos (Des).</p>
+<p><b>Proficiências.</b> Nenhuma.</p>
