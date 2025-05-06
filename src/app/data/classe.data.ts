@@ -895,7 +895,7 @@ export class ClasseData {
         id: 32,
         id_classe_pai: 14,
         nome: 'Santo',
-        nome_arquivo_descricao_classe:'variante_santo',
+        nome_arquivo_descricao_classe:'variante_santo_descricao',
         nome_arquivo_descricao_informacoes: 'classe_paladino_informacoes',
         nome_arquivo_descricao_complicacoes: 'classe_paladino_complicacoes',
         descricao_classe: '',
