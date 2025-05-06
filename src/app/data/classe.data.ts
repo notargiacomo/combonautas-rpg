@@ -811,7 +811,7 @@ export class ClasseData {
         id: 29,
         id_classe_pai: 11,
         nome: 'Ventanista',
-        nome_arquivo_descricao_classe:'variante_ventanista',
+        nome_arquivo_descricao_classe:'variante_ventanista_descricao',
         nome_arquivo_descricao_informacoes: 'classe_ladino_informacoes',
         nome_arquivo_descricao_complicacoes: 'classe_ladino_complicacoes',
         descricao_classe: '',
