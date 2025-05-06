@@ -1,0 +1,68 @@
+<h5>Mascotes</h5>
+<p>Um mascote é uma criatura com a qual você desenvolveu uma grande afinidade. Em termos de jogo, é um parceiro especial que não conta em seu limite de parceiros e com o qual você pode se comunicar através de gestos em alcance médio. Ele obedece a seus comandos, mas ainda está limitado ao que uma criatura de sua espécie pode fazer. Mascotes fornecem seus benefícios tanto para você quanto para seus melhores amigos. Se perder um de seus mascotes, você pode treinar um novo com uma semana de trabalho e T$ 100</p>
+<ul>
+<li>Águia Real. Uma vez por rodada, fornece +1d6 em uma rolagem de dano com arma.</li>
+<li>Bicho Preguiça. Agarrado às costas (suas ou de seu melhor amigo), este animal ocupa o espaço de um item vestido, mas fornece um ataque natural de garra (dano 1d6, crítico x2, corte). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com essa garra.</li>
+<li>Camundongo Espiritual. Aumenta a CD para resistir a habilidades mágicas em +1.</li>
+<li>Fada-Borboleta. Diminui o custo de habilidades mágicas em –1.</li>
+<li>Gekko Malhado. Fornece +2 na Defesa e em Reflexos.</li>
+<li>Mico-Leão Dourado. Permite usar Ladinagem para punga em alcance curto.</li>
+<li>Minivaca. Fornece +1 em testes de ataque. Esse bônus dobra em investidas.</li>
+<li>Ossinhos. O esqueleto de um animal reanimado. Fornece redução de corte, frio e perfuração 2.</li>
+</ul>
+
+<hr>
+<h5>O Melhor Amigo</h5>
+<p>Seu melhor amigo é uma criatura com a qual você possui uma afinidade única. Pode ser um animal que você criou desde filhote, um construto que você fabricou ou mesmo o espírito de um antepassado que decidiu protegê-lo! Em termos de regras, é um parceiro iniciante de um tipo a sua escolha condizente com suas características e aprovado pelo mestre. Se você receber um parceiro não inteligente por outra habilidade, como o poder Companheiro Animal (Tormenta20, p. 62) ou a origem Irmão sem Esporas (Atlas de Arton, p. 476), pode fazer esse parceiro ser seu melhor amigo, usando todos os bônus de parceiros (bônus iguais não se acumulam; use os melhores). Seu melhor amigo só fornece seus benefícios de parceiro se estiver em alcance curto de você.</p>
+<p>Ao contrário de outros parceiros, seu melhor amigo possui uma ficha completa, com as características a seguir — mesmo que sejam diferentes da ficha de sua espécie. Por exemplo, se você escolher um melhor amigo gorlogg, ele terá as características abaixo, não aquelas descritas em Tormenta20, p. 291. Da mesma forma, se escolher um melhor amigo elefante (Ameaças de Arton, p. 216), ele não será Enorme. Talvez o seu ainda seja um filhote que ainda não cresceu totalmente? Se achar isso sem graça, lembre-se de que você ainda pode escolher o truque Amigão para fazê-lo crescer!</p>
+<p><b>Tamanho.</b> Escolha entre Pequeno, Médio ou Grande.</p>
+<p><b>Atributos.</b> For 1, Des 1, Con 1, Int –4, Sab 1, Car 0.</p>
+<p><b>Pontos de Vida.</b> Começa com 16 pontos de vida + Constituição e ganha 4 PV + Con por nível.</p>
+<p><b>Pontos de Mana.</b> Seu melhor amigo não possui pontos de mana. Você usa os seus próprios PM para ativar as habilidades dele.</p>
+<p><b>Perícias Treinadas.</b> Escolha 3 entre Acrobacia (Des), Atletismo (For), Fortitude (Con), Furtividade (Des), Luta (For), Percepção (Sab), Pontaria (Des), Reflexos (Des), Sobrevivência (Sab) e Vontade (Sab).</p>
+<p><b>Defesa.</b> 10 + Destreza + Carisma do treinador + metade do nível do treinador.</p>
+<p><b>Deslocamento.</b> 12m (8q). Se o seu melhor amigo for uma montaria, em vez disso use os deslocamentos que ele fornece.</p>
+<p><b>Ataques.</b> Possui uma arma natural (dano 1d8, crítico x2, corte, impacto ou perfuração, escolhido ao criar o melhor amigo). Se você tiver o suplemento Ameaças de Arton, pode escolher uma das armas naturais descritas na p. 374.</p>
+<p><b>Tipo.</b> Escolha entre animal, construto, espírito, monstro ou morto-vivo. Conforme o tipo, ele recebe os benefícios a seguir.</p>
+<ul>
+<li><i>Animal.</i> +1 em Força, Destreza e Sabedoria, faro, visão na penumbra, treinamento em Percepção e Sobrevivência e +1 na margem de ameaça com suas armas naturais.</li>
+<li><i>Construto.</i> +2 em Constituição, visão no escuro e imunidade a efeitos de cansaço, metabólicos e de veneno. Não respira, alimenta-se ou dorme; não é afetado por condições de descanso, não se beneficia de cura mundana e itens de alimentação e a perícia Cura não funciona com ele, mas Ofício (artesão) pode ser usada com os mesmos efeitos.</li>
+<li><i>Espírito.</i> +1 em Sabedoria e Carisma. Pode assumir uma forma incorpórea Minúscula de energia positiva ou negativa (escolhida ao ser criado) com deslocamento de voo 9m, que não pode atacar ou usar habilidades. Nessa forma, fornece +2 em
+perícias baseadas em Sabedoria (energia positiva) ou +2 em perícias baseadas em Carisma (energia negativa). Você pode gastar uma ação de movimento para fazê-lo mudar entre sua forma normal e sua forma incorpórea.</li>
+<li><i>Monstro.</i> +1 em Força e Destreza, visão no escuro e uma segunda arma natural (quando o melhor amigo faz a ação agredir com outra arma, você pode gastar 1 PM para que ele faça um ataque corpo a corpo extra com essa arma).</li>
+<li><i>Morto-Vivo.</i> +2 em Constituição, visão no escuro e imunidade a efeitos de cansaço, metabólicos, de trevas e de veneno; não respira, alimenta-se ou dorme; não é afetado por condições de descanso, sofre dano por efeitos mágicos de cura de luz e recupera PV com dano de trevas.</li>
+</ul>
+<p><b>Ações.</b> Seu amigo depende de suas instruções para agir. Em termos de regras, a cada turno você pode gastar suas ações com seu personagem (o treinador) ou com seu melhor amigo, em qualquer combinação. Por exemplo, pode gastar sua ação de movimento para percorrer seu deslocamento e sua ação padrão para que seu melhor amigo faça uma ação agredir. Ações adicionais, como aquelas concedidas pela magia Velocidade, também podem ser distribuídas dessa forma.</p>
+<p><b>Nível.</b> Para efeitos baseados no nível do melhor amigo, use o nível do treinador.</p>
+<p><b>Equipamento.</b> Um melhor amigo não pode empunhar nem carregar itens, mas pode vestir até dois itens que, a critério do mestre, sejam adequados a sua forma e natureza.</p>
+
+<hr>
+<h5>Truques</h5>
+<ul>
+<li><i>Alado.</i> Seu melhor amigo ganha deslocamento de voo 15m. Pré-requisitos: Asas, 5º nível de treinador.</li>
+<li><i>Amigão.</i> Seu melhor amigo recebe +1 em Força e o tamanho dele muda para Enorme. Isso aumenta o dano de suas armas naturais em um passo e afeta seu modificador de Furtividade e manobras (Tormenta20, p. 107). Pré-requisito: melhor amigo Grande, 7º nível de treinador.</li>
+<li><i>Amigo Feroz.</i> Seu melhor amigo recebe +2 em testes de ataque e na margem de ameaça com suas armas naturais, e o dano delas aumenta em um passo.</li>
+<li><i>Amigo Protetor.</i> Quando você sofre dano, caso seu melhor amigo esteja em alcance curto, você pode gastar 2 PM para que ele salte em sua defesa. Se fizer isso, você sofre apenas metade do dano e o melhor amigo sofre o restante.</li>
+<li><i>Amigo Veterano.</i> Seu amigo vira um parceiro veterano de seu tipo. Pré-requisito: 5º nível de treinador.</li>
+<li><i>Amigo Mestre.</i> Seu amigo veterano vira um parceiro mestre de seu tipo. Pré-requisito: Amigo Veterano, 11º nível de treinador.</li>
+<li><i>Anatomia Humanoide.</i> Seu melhor amigo tem uma forma humanoide e Int –2 (em vez de –4). Ele não recebe uma arma natural inicial, mas tem proficiência com armas simples e armaduras leves, pode empunhar dois itens e vestir um item adicional,
+e tem um limite de carga de 10 espaços. Este truque só pode ser escolhido na criação do melhor amigo. Pré-requisito: construto ou morto-vivo.</li>
+<li><i>Arma Natural Adicional.</i> Seu melhor amigo recebe uma arma natural adicional. Quando ele faz a ação agredir com outra arma, você pode gastar 1 PM para que ele faça um ataque corpo a corpo extra com essa arma. Pré-requisito: animal ou monstro.</li>
+<li><i>Asas.</i> Seu melhor amigo possui asas que podem ser usadas para pairar a 1,5m do chão com deslocamento 12m. Isso permite que ele ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Você pode gastar 1 PM por rodada para que ele voe com deslocamento 12m.</li>
+<li><i>Bote.</i> Quando faz uma investida, seu melhor amigo pode atacar com todas as suas armas naturais. Todos os ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo. Pré-requisito: duas armas naturais.</li>
+<li><i>Condicionamento Especial.</i> O melhor amigo recebe +2 em um atributo e +1 em outro atributo, exceto Inteligência. Você pode escolher este truque uma vez por patamar.</li>
+<li><i>Deslocamento Especial.</i> Seu melhor amigo recebe deslocamento de escalada ou de natação igual a seu deslocamento base. Você pode escolher este truque uma segunda vez para que ele tenha ambos os deslocamentos.</li>
+<li><i>Magia Inata.</i> Escolha uma magia de 1º círculo, arcana ou divina. Seu melhor amigo aprende e pode lançar essa magia (atributo-chave Carisma do treinador). Você pode escolher este truque outras vezes para magias diferentes. Pré-requisito: espírito. e</li>
+<li><i>Manobra Ensaiada.</i> Escolha uma manobra de combate. Seu melhor amigo recebe +2 em testes de ataque para executar essa manobra e, uma vez por rodada, quando ele acerta um ataque com uma arma natural, você pode gastar 1 PM para que ele faça essa
+manobra contra o alvo do ataque como uma ação livre. </li>
+<li><i>Reanimação Sombria.</i> Uma vez por cena, se seu melhor amigo estiver com 0 PV ou menos, você pode gastar 3 PM por patamar para reanimá-lo. Se você fizer isso, ele é reerguido com pontos de vida iguais à metade do seu máximo. Pré-requisito: morto-vivo.</li>
+<li><i>Redução de Dano.</i> Seu melhor amigo recebe redução de dano 5. Pré-requisito: 5º nível de treinador.</li>
+<li><i>Sopro.</i> Seu melhor amigo recebe um sopro de um tipo a sua escolha entre ácido, fogo, frio ou eletricidade. Você pode gastar uma ação padrão e uma quantidade de PM limitada pelo seu Carisma para que seu melhor amigo sopre um cone de 6m de energia do tipo escolhido. Para cada PM gasto, criaturas na área sofrem 2d8 pontos de dano do tipo escolhido
+(Reflexos CD Car do treinador reduz à metade). Pré-requisito: construto, espírito ou monstro.</li>
+<li><i>Táticas de Matilha.</i> Se seu melhor amigo estiver flanqueando um inimigo, além do bônus normal por flanquear, recebe +2 nos testes de ataque (total +4) e nas rolagens de dano contra ele. Se você estiver flanqueando com ele, recebe os mesmos bônus.</li>
+<li><i>Treinamento de Companhia.</i> Seu melhor amigo recebe uma ação de movimento adicional nos turnos dele (apenas para se deslocar). Pré-requisito: animal.</li>
+<li><i>Treinamento Defensivo.</i> Seu melhor amigo passa a receber um bônus na Defesa igual ao seu nível (em vez de metade do nível).</li>
+<li><i>Treinamento Marcial.</i> Seu melhor amigo recebe +2 em testes de ataque e rolagens de dano. Para cada patamar acima de iniciante, esse bônus aumenta em +1. Se ele possuir o truque Anatomia Humanoide, também recebe proficiência com armas marciais,
+armaduras pesadas e escudos. </li>
+<li><i>Veloz.</i> Seu melhor amigo recebe +2 na Defesa e +3m em seus deslocamentos e se torna treinado em Atletismo (se já for, recebe +2 nessa perícia).</li>
+</ul>

@@ -922,7 +922,7 @@ export class ClasseData {
       {
         id: 33,
         nome: 'Treinador',
-        nome_arquivo_descricao_classe:'classe_treinador',
+        nome_arquivo_descricao_classe:'classe_treinador_descricao',
         nome_arquivo_descricao_informacoes: 'classe_treinador_informacoes',
         nome_arquivo_descricao_complicacoes: 'classe_treinador_complicacoes',
         descricao_classe: '',

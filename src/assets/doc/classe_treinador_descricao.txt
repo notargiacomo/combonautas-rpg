@@ -1,0 +1,5 @@
+<h5>Características de Classe</h5>
+<p><b>Pontos de Vida.</b> Um treinador começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
+<p><b>Pontos de Mana.</b>  4 PM por nível.</p>
+<p><b>Perícias.</b>  Adestramento (Car) e Vontade (Sab), mais 4 a sua escolha entre Atletismo (For), Cavalgar (Des), Diplomacia (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des), Reflexos (Des), Religião (Sab) e Sobrevivência (Sab).</p>
+<p><b>Proficiências.</b> Nenhuma.</p>
