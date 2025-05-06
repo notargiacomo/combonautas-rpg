@@ -12331,15 +12331,6 @@ export class PoderData {
           id_classe: 15,
         },
         {
-          id: 1239,
-          nome: 'Espiral Ampla',
-          descricao: `Você pode aplicar o bônus em rolagens de dano por Dança da Areia contra alvos em alcance médio, e, enquanto está executando a dança, seu deslocamento aumenta em +3m.`,
-          referencias: Referencia.BASICO,
-          tipo: TipoPoder.PODER_CLASSE,
-          prerequisito_nivel: 2,
-          id_classe: 15,
-        },
-        {
           id: 1240,
           nome: 'Erguer Areia',
           descricao: `Enquanto está executando uma Dança da Areia, uma vez por rodada você pode gastar 1 PM para projetar um pequeno redemoinho que percorre uma linha de 9m. Criaturas nessa área ficam cegas por 1d4 rodadas e caídas (Ref CD Sab reduz as condições para ofuscado por 1 rodada).`,
@@ -12447,6 +12438,542 @@ export class PoderData {
           tipo: TipoPoder.PODER_CLASSE,
           prerequisito_nivel: 2,
           id_classe: 15,
+        },
+        {
+          id: 1252,
+          nome: 'Afinidade',
+          descricao: `Escolha um elemento entre água, ar, fogo, luz, terra e trevas. Uma vez feita, essa escolha não pode ser mudada. Para cada círculo de magia que pode lançar, você recebe redução 5 contra o tipo de dano associado ao elemento escolhido (veja o quadro). Além disso, quando lança uma magia que causa dano de um tipo associado a outro elemento, você pode gastar 1 PM para transformar esse dano no tipo associado ao seu elemento. Por fim, cada elemento concede uma perícia treinada.`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 16,
+        },
+        {
+          id: 1253,
+          nome: 'Ataque Elemental',
+          descricao: `Quando faz um ataque corpo a corpo, você pode gastar uma quantidade de PM limitada pelo círculo máximo de magia que pode lançar para infundir a arma com energia elemental. Cada PM gasto concede +1 no teste de ataque e +1d8 pontos de dano do tipo associado a sua Afinidade.`,
+          e_poder_magico: true,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 16,
+        },
+        {
+          id: 1254,
+          nome: 'Magias',
+          descricao: `Você pode lançar magias arcanas de 1º círculo de evocação, de uma segunda escola definida por sua Afinidade e de uma terceira escola à sua escolha (uma vez feita, essa escolha não pode ser mudada). À medida que sobe de nível, pode lançar magias de círculos maiores (2º círculo no 6º nível, 3º círculo no 10º nível e 4º círculo no 14º nível).
+          <p>Você começa com Criar Elementos e duas outras magias de 1º círculo a sua escolha. A cada nível par (2º, 4º etc.), aprende uma magia de qualquer círculo e escola que possa lançar. Você pode lançar essas magias vestindo armaduras leves sem precisar de testes de Misticismo.</p>
+          <p>Seu atributo-chave para lançar magias é Sabedoria e você soma sua Sabedoria no seu total de PM. Veja o capítulo 4 de Tormenta20 para as regras de magia.</p>`,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 1,
+          id_classe: 16,
+        },
+        {
+          id: 1255,
+          nome: 'Língua Primordial',
+          descricao: `No 2º nível, você pode se comunicar com espíritos ligados ao elemento de sua Afinidade, como o efeito básico da magia Voz Divina, e recebe +5 em testes de Carisma e de perícias originalmente baseadas em Carisma com essas criaturas. O mestre define exatamente quais criaturas se encaixam nessa descrição mas, como regra geral, qualquer criatura do tipo espírito com imunidade ao tipo de dano associado à sua Afinidade é considerada ligada ao seu elemento.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1256,
+          nome: 'Tradição Oral',
+          descricao: `No 3º nível, você recebe +2 em Misticismo. Esse bônus aumenta para +4 no 9º nível e para +6 no 13º nível.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 3,
+          id_classe: 16,
+        },
+        {
+          id: 1257,
+          nome: 'Sexto Sentido',
+          descricao: `No 4º nível, você soma sua Sabedoria, limitada pelo seu nível, à sua Defesa. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 4,
+          id_classe: 16,
+        },
+        {
+          id: 1258,
+          nome: 'Afinidade Evoluída',
+          descricao: `No 6º nível, escolha uma das seguintes opções.
+          <ul>
+            <li>Afinidade Concentrada. Você recebe +2 na CD de suas habilidades de místico e em testes de ataque usando Ataque Elemental.</li>
+            <li>Afinidade Expandida. Escolha um segundo elemento para sua habilidade Afinidade. Você se torna treinado na perícia relacionada a este segundo elemento e recebe todos os benefícios de Afinidade relativos a ele, incluindo redução de dano e acesso a sua escola associada.</li>
+          </ul>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 16,
+        },
+        {
+          id: 1259,
+          nome: 'Comunhão Suprema',
+          descricao: `No 20º nível, você desenvolve uma comunhão perfeita com seu elemento. Você se torna imune ao tipo de dano da sua Afinidade e o custo em PM de suas magias que causem dano desse tipo ou façam parte da escola associada é reduzido à metade (após aplicar aprimoramentos e quaisquer outros efeitos que reduzam custo).
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 20,
+          id_classe: 16,
+        },
+        {
+          id: 1260,
+          nome: 'Absorver Elemento',
+          descricao: `Uma vez por cena, quando está em contato com uma expressão natural do seu elemento, você pode gastar uma ação de movimento para absorver energia mágica dele. Você adquire uma quantidade de PM temporários igual ao círculo máximo de magia que pode lançar. Esses PM duram por uma cena.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1261,
+          nome: 'Afinidade Maior',
+          descricao: `Você escolhe um terceiro elemento para sua habilidade Afinidade. <i>Pré-requisito: 12º nível de místico, Afinidade Expandida.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 12,
+          id_classe: 16,
+        },
+        {
+          id: 1262,
+          nome: 'Andar pelas Paredes',
+          descricao: `Você recebe deslocamento de escalada igual ao seu deslocamento terrestre. <i>Pré-requisito: Afinidade (terra).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1263,
+          nome: 'Armadura Rochosa',
+          descricao: `Você pode gastar uma ação de movimento e 2 PM para moldar uma esfera de terra ou rocha que fica orbitando ao seu redor. Para cada círculo de magia além do 1º que puder lançar, você pode gastar +2 PM para moldar mais uma dessas esferas. Quando sofre dano, você pode gastar 1 esfera para receber RD 30 contra esse dano. Você também pode gastar uma ação de movimento e 1 esfera para causar 4d6 + Sabedoria pontos de dano de impacto em uma criatura em alcance curto (Ref CD Sab reduz à metade). As esferas permanecem ao seu redor até o fim da cena ou até serem usadas. Você precisa ter acesso a uma expressão de seu elemento para usar este poder. <i>Pré-requisitos: 4º nível de místico, Afinidade (terra).</i>
+          `,
+          e_poder_magico: true,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 4,
+          id_classe: 16,
+        },
+        {
+          id: 1264,
+          nome: 'Auréola Celeste',
+          descricao: `Quando lança uma magia de abjuração ou que causa dano de luz, você pode gastar uma ação de movimento e PM para evocar uma auréola sobre a cabeça de um aliado em alcance curto. A auréola concede 5 PV temporários por PM gasto e +1 em testes de resistência e dura até o fim da cena ou até que os PV temporários sejam perdidos. <i>Pré-requisito: Afinidade (luz).</i>
+          `,
+          e_poder_magico: true,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1265,
+          nome: 'Contramágica Elemental',
+          descricao: `Você aprende Dissipar Magia e soma sua Sabedoria em testes de Misticismo para usar usá-la contra magias do elemento ou da escola associada a sua Afinidade. <i>Pré-requisito: 6º nível de místico.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 16,
+        },
+        {
+          id: 1266,
+          nome: 'Corpo Elemental',
+          descricao: `Uma vez por cena, você pode gastar uma ação de movimento para fortalecer seu físico com energia elemental. Você recebe 5 PV temporários para cada círculo de magias que pode lançar, ou o dobro disso se estiver em contato com uma expressão natural do seu elemento. Esses PV duram por uma cena.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 16,
+        },
+        {
+          id: 1267,
+          nome: 'Ditame Absoluto',
+          descricao: `Você aprende uma magia de 5º círculo a sua escolha de qualquer escola que possa lançar. Além disso, recebe acesso ao 5º círculo de magias para todos os efeitos, exceto para magias que pode aprender. <i>Pré-requisitos: 18º nível de místico, dois poderes de ditame.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 18,
+          id_classe: 16,
+        },
+        {
+          id: 1268,
+          nome: 'Ditame da Chuva',
+          descricao: `Você aprende a magia Área Escorregadia. No 6º nível, aprende Tempestade Divina e no 10º nível aprende Controlar Água. <i>Pré-requisito: Afinidade (água).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1269,
+          nome: 'Ditame da Cura',
+          descricao: `Você aprende a magia Curar Ferimentos. No 6º nível, aprende Purificação e no 10º nível aprende Sopro da Salvação. <i>Pré-requisito: Afinidade (luz).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1270,
+          nome: 'Ditame da Manhã',
+          descricao: `Você aprende a magia Luz com todos os seus aprimoramentos, como se fosse um conjurador arcano e divino. No 6º nível, aprende Raio Solar e, no 10º nível, aprende Coluna de Chamas. <i>Pré-requisito: Afinidade (fogo ou luz).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1271,
+          nome: 'Ditame da Montanha',
+          descricao: `Você aprende a magia Primor Atlético. No 10º nível, aprende Controlar Terra e no 14º nível aprende Terremoto. <i>Pré-requisito: Afinidade (terra).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1272,
+          nome: 'Ditame da Profecia',
+          descricao: `Você aprende a magia Augúrio. No 10º nível, aprende Lendas & Histórias e Vidência. Se lançar Augúrio em contato com uma expressão natural do seu elemento de tamanho Grande ou maior, não há chance de falha. <i>Prérequisito: 6º nível de místico.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 16,
+        },
+        {
+          id: 1273,
+          nome: 'Ditame das Brumas',
+          descricao: `Você aprende a magia Névoa. No 6º nível, aprende Camuflagem Ilusória e Miasma Mefítico. <i>Pré-requisito: Afinidade (água ou ar).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1274,
+          nome: 'Ditame das Chamas',
+          descricao: `Você aprende a magia Explosão de Chamas. No 6º nível, aprende Controlar Fogo e no 10º nível aprende Lança Ígnea de Aleph. <i>Pré-requisito: Afinidade (fogo).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1275,
+          nome: 'Ditame do Breu',
+          descricao: `Você aprende a magia Escuridão. No 10º nível, aprende Anular a Luz e Manto de Sombras. <i>Pré-requisito: Afinidade (trevas).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1276,
+          nome: 'Ditame do Crepúsculo',
+          descricao: `Você aprende as magias Consagrar e Profanar e, no 6º nível, aprende Crânio Voador de Vladislav. <i>Pré-requisito: Afinidade (luz ou trevas).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1277,
+          nome: 'Ditame do Espadachim',
+          descricao: `Você aprende a magia Concentração de Combate. No 6º nível, aprende Velocidade e, no 10º nível, aprende Transformação de Guerra. <i>Pré-requisito: treinado em Luta.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1278,
+          nome: 'Ditame dos Portais',
+          descricao: `Você aprende Salto Dimensional. No 10º nível, aprende Teletransporte e, no 14º nível, aprende Viagem Planar. <i>Pré-requisito: 6º nível de místico.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 16,
+        },
+        {
+          id: 1279,
+          nome: 'Disparo em Linha',
+          descricao: `Quando usa Disparo Elemental, você pode gastar 2 PM para atingir vários alvos alinhados. Faça um ataque à distância e compare-o com a Defesa de cada inimigo em uma linha de 9m e então faça uma única rolagem de dano e aplique o resultado a cada alvo atingido. <i>Pré-requisito: Disparo Elemental.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1280,
+          nome: 'Disparo Elemental',
+          descricao: `Você pode usar Ataque Elemental com armas de ataque à distância. <i>Prérequisito: treinado em Pontaria.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1281,
+          nome: 'Elementalismo Marcial',
+          descricao: `Quando usa Ataque Elemental, você pode gastar 2 PM para lançar uma magia que tenha tempo de execução de uma ação padrão ou menor, como uma ação livre. <i>Prérequisitos: 10º nível de místico, treinado em Luta.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 10,
+          id_classe: 16,
+        },
+        {
+          id: 1282,
+          nome: 'Elemento Penetrante',
+          descricao: `Quando causa dano do tipo da sua Afinidade, você pode gastar uma quantidade de PM limitada pelo círculo máximo de magias que pode lançar. Para cada PM gasto dessa forma, você ignora até 10 pontos da redução de dano dos alvos.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1283,
+          nome: 'Elemento Poderoso',
+          descricao: `A CD para resistir a suas habilidades de místico aumenta em +2. <i>Pré-requisito: 6º nível de místico.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1283,
+          nome: 'Empuxo',
+          descricao: `Você pode caminhar sobre água e fluidos similares e ganha deslocamento de natação igual ao seu deslocamento terrestre. <i>Pré-requisito: Afinidade (água ou ar).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1284,
+          nome: 'Escavador',
+          descricao: `Você recebe deslocamento de escavação igual a seu deslocamento terrestre. <i>Pré-requisito: Afinidade (terra).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1285,
+          nome: 'Estabilidade Terrena',
+          descricao: `Você recebe um bônus igual ao círculo máximo de magias que pode lançar em testes para resistir a manobras de combate e a efeitos de movimento. <i>Pré-requisito: Afinidade (terra).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1286,
+          nome: 'Escudo Elemental',
+          descricao: `Quando usa Ataque Elemental, para cada PM gasto você recebe +1 na Defesa e em testes de resistência por 1 rodada.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1287,
+          nome: 'Flagelo Elemental',
+          descricao: `Quando usa Ataque Elemental você aumenta seu multiplicador de crítico em +1.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1288,
+          nome: 'Golpe Ardente',
+          descricao: `Quando você usa Ataque Elemental e acerta o ataque, o alvo fica em chamas (Reflexos CD Sab evita). <i>Pré-requisito: Afinidade (fogo).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1289,
+          nome: 'Golpe Cortante',
+          descricao: `Quando você usa Ataque Elemental e acerta o ataque, o alvo fica sangrando (Reflexos CD Sab evita). <i>Pré-requisito: Afinidade (ar).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1290,
+          nome: 'Golpe Congelante',
+          descricao: `Quando você usa Ataque Elemental e acerta o ataque, o alvo fica lento por 1 rodada (Reflexos CD Sab evita). <i>Pré-requisito: Afinidade (água).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1291,
+          nome: 'Golpe Ofuscante',
+          descricao: `Quando você usa Ataque Elemental e acerta o ataque, o alvo fica cego por 1 rodada (Reflexos CD Sab evita). <i>Pré-requisito: Afinidade (ar, fogo ou luz).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1292,
+          nome: 'Golpe Pujante',
+          descricao: `Quando você usa Ataque Elemental e acerta o ataque, o alvo fica caído (Reflexos CD Sab evita). <i>Pré-requisito: Afinidade (água, terra ou trevas).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1293,
+          nome: 'Hidratação',
+          descricao: `Quando lança uma magia de encantamento ou que cause dano de frio, você pode gastar PM para se hidratar. Para cada PM que gastar, você cura 5 PV. <i>Pré-requisito: Afinidade (água).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1294,
+          nome: 'Oito Nuvens',
+          descricao: `Quando lança uma magia de ilusão ou que cause dano de eletricidade, você pode usar uma ação de movimento e gastar até 8 PM para ser rodeado por nuvens até o final da cena. Para cada PM gasto, você recebe uma nuvem, que concede +1 na Defesa. Além disso, se tiver pelo menos cinco nuvens, você recebe camuflagem leve. Sempre que um ataque contra você errar, uma nuvem é dissipada e o bônus na Defesa diminui em 1. <i>Prérequisito: Afinidade (ar).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1295,
+          nome: 'Pacto Cooperativo',
+          descricao: `Uma vez por rodada, você pode dar uma ordem para sua manifestação elemental como uma ação livre. Além disso, sua manifestação fornece bônus por flanquear contra um inimigo por rodada. <i>Pré-requisito: Pacto Elemental.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1296,
+          nome: 'Pacto Elemental',
+          descricao: `Através de um ritual místico, você cria um vínculo mágico com uma manifestação elemental do mesmo tipo de sua Afinidade (veja o quadro). <i>Pré-requisito: 6º nível de místico.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 6,
+          id_classe: 16,
+        },
+        {
+          id: 1297,
+          nome: 'Pacto Mágico',
+          descricao: `Você pode gastar uma ação de movimento para pedir que sua manifestação elemental busque uma magia em seu lugar. Você escolhe a magia quando faz o pedido, e pode pedir magias arcanas ou divinas, de qualquer escola, de um círculo ao qual tenha acesso. Uma vez ordenada, sua manifestação parte em busca da magia; encontrá-la demora um número de rodadas igual a 1d4 + o círculo da magia. Esse tempo aumenta em 2 rodadas se a magia for divina, e em 2 rodadas se for de uma escola à qual você não tem acesso. Ao final desse período, faça um teste de Misticismo (CD 15 + o círculo da magia; a cada novo pedido no mesmo dia aumenta a CD do teste em +5). Se você passar, a manifestação retorna e você aprende a magia por um dia. Se falhar, o parceiro se perde e só retorna no dia seguinte. <i>Pré-requisito: Pacto Elemental.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1298,
+          nome: 'Perícia Mística',
+          descricao: `Você aplica seu bônus de Tradição Oral à perícia extra recebida por sua Afinidade. <i>Pré-requisito: 3º nível de místico.</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 3,
+          id_classe: 16,
+        },
+        {
+          id: 1299,
+          nome: 'Propulsão',
+          descricao: `Você pode gastar 1 PM para adquirir deslocamento de voo 12m por uma rodada, mas cai se não encerrar seu movimento em uma superfície que sustente seu peso. No 10º nível, você aprende Voo. <i>Pré-requisito: Afinidade (ar ou fogo).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1300,
+          nome: 'Resistência Tenebrosa',
+          descricao: `Quando faz um teste de resistência, você pode gastar 1 PM para receber um bônus igual ao círculo máximo de magia que pode lançar. <i>Pré-requisito: Afinidade (trevas).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1301,
+          nome: 'Supernova',
+          descricao: `Quando lança uma magia que causa dano de fogo, você pode gastar pontos de vida para deixar as chamas mais intensas. Para cada 5 PV que gastar (conta como perda de vida), você aumenta o dano da magia em +1d12. <i>Pré-requisito: Afinidade (fogo).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1302,
+          nome: 'Sustento Primordial',
+          descricao: `Quando descansa em uma área ocupada pela expressão natural de seu elemento, suas condições de descanso melhoram em um passo.
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
+        },
+        {
+          id: 1303,
+          nome: 'Visão Noturna',
+          descricao: `Você recebe +2 em Percepção e visão no escuro. Se você já possui visão no escuro, seu alcance aumenta em um passo (de curto para médio, de médio para longo). <i>Pré-requisito: Afinidade (trevas).</i>
+          `,
+          referencias: Referencia.BASICO,
+          tipo: TipoPoder.PODER_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 16,
         },
     ];
   }
