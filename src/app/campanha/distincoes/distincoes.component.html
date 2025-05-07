@@ -1,1 +1,163 @@
-<p>distincoes works!</p>
+<div class="container">
+    <form [formGroup]="form">
+      <div class="row mt-1">
+        <mat-card class="cartao">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2><b>DISTINÇÕES</b></h2>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-2">
+              <mat-form-field class="form-field">
+                <mat-label>Distinções</mat-label>
+                <input formControlName="nome" matInput type="text" name="nome" (keyup)="consultar()" />
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6 mt-2">
+              <section>
+                <div class="button-row mt-2 d-flex justify-content-end">
+                  <button class="me-2" (click)="limparFiltros()" mat-flat-button>
+                    Limpar Filtros
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div class="row mt-1">
+        <mat-card class="cartao">
+          <div class="row">
+            <div class="d-flex justify-content-end">
+              <b>Número de Registros: {{ numero_registros }}</b>
+            </div>
+          </div>
+          <br />
+          <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+            @for (column of columnsToDisplay; track column) {
+            <ng-container matColumnDef="{{ column }}">
+              <th mat-header-cell *matHeaderCellDef style="text-transform: uppercase">
+                {{ column }}
+              </th>
+              <td mat-cell *matCellDef="let element" style="
+                  height: 0px !important;
+                  min-height: 0px !important;
+                  max-height: 0px !important;
+                ">
+                {{ element[column] }}
+              </td>
+            </ng-container>
+            }
+            <ng-container matColumnDef="expand">
+              <th mat-header-cell *matHeaderCellDef aria-label="row actions">
+                &nbsp;
+              </th>
+              <td mat-cell style="
+                  height: 0px !important;
+                  min-height: 0px !important;
+                  max-height: 0px !important;
+                " *matCellDef="let element">
+                <button mat-icon-button aria-label="expand row" (click)="
+                    expandedElement =
+                      expandedElement === element ? null : element;
+                    $event.stopPropagation()
+                  ">
+                  @if (expandedElement === element) {
+                  <mat-icon>keyboard_arrow_up</mat-icon>
+                  } @else {
+                  <mat-icon>keyboard_arrow_down</mat-icon>
+                  }
+                </button>
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="expandedDetail">
+              <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" style="
+                  height: 0px !important;
+                  min-height: 0px !important;
+                  max-height: 0px !important;
+                ">
+                <div class="element-detail-wrapper" [class.element-detail-wrapper-expanded]="isExpanded(element)">
+                  <div class="element-detail">
+                    <mat-tab-group>
+                      <mat-tab label="Distinção">
+                        <div class="content">
+                          <div class="row">
+                            <div
+                              class="col-sm-9 mt-4 text-justify"
+                              [innerHTML]="element.descricao_distincao"
+                            ></div>
+                            <div class="col-sm-3 mt-4 mb-4">
+                              <mat-card *ngIf="element.imagem != null">
+                                <img [src]="element.imagem" [alt]="element.nome" />
+                              </mat-card>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab label="Admissão">
+                        <div class="content">
+                            <div class="row">
+                              <div
+                                class="col-sm-8 mt-4 text-justify"
+                                [innerHTML]="element.admissao"
+                              ></div>
+                              <div class="col-sm-4 mt-4">
+                                <mat-card class="p-4">
+                                    <div
+                                    [innerHTML]="element.marca_distincao"
+                                  ></div>
+                                </mat-card>
+                              </div>
+                            </div>
+                          </div>
+                      </mat-tab>
+                      <mat-tab label="Poderes">
+                        <div class="row">
+                          <h5>Poderes de Distinção</h5>
+                          <p>
+                            (ps: Poderes Mágicos são marcados com o símbolo:
+                            <i><b>e</b></i
+                            >.)
+                          </p>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <hr />
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div *ngFor="let poderes of element.poderes" 
+                                 style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
+                              <div class="text-justify" [innerHTML]="poderes.descricao"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-tab>
+                      <mat-tab
+                        *ngIf="element.ha_informacoes_adicionais"
+                        label="Informações Adicionais"
+                      >
+                        <div class="row">
+                          <div
+                            class="col-sm-12 text-justify"
+                            [innerHTML]="element.descricao_informacoes"
+                          ></div>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </div>
+              </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+            <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand" class="example-element-row"
+              [ngClass]="{ zebra: isOdd(element) }" [class.example-expanded-row]="isExpanded(element)"
+              (click)="toggle(element)"></tr>
+            <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+          </table>
+        </mat-card>
+      </div>
+    </form>
+  </div>

@@ -14685,6 +14685,62 @@ export class PoderData {
           prerequisito_nivel: 2,
           id_classe: 33,
         },
+        {
+          id: 1471,
+          nome: 'Cabeça nas Nuvens',
+          descricao: `
+          <p><i>O aeronauta goblin se sente em casa nos céus, sua mente inspirada pela liberdade de voar.</i></p>
+          <p>Quando está pilotando uma aeronave, você recebe +1 em testes de perícia, rolagens de dano e na CD das suas habilidades e itens. Esse bônus aumenta em +1 para cada dois outros poderes da distinção que você possui. Pré-requisitos: Int 2, treinado em Ofício (artesão) e Pilotagem.</p>
+          <hr>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          id_distincao: 1,
+        },
+        {
+          id: 1472,
+          nome: 'Engenharia Aeronáutica',
+          descricao: `
+          <p><i>Tendo “dominado” a fabricação de aeronaves, é hora de aprimorar o ornitóptero.</i></p>
+          <p>Você pode fabricar ornitópteros superiores (veja adiante) e acoplar até duas engenhocas neles, seguindo as regras normais de engenhocas. Elas não contam em seu limite de engenhocas e não precisam ser empunhadas ou vestidas, mas só podem ser ativadas se você estiver pilotando o ornitóptero. Pré-requisitos: Cabeça nas Nuvens, Engenhoqueiro.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          id_distincao: 1,
+        },
+        {
+          id: 1473,
+          nome: 'Estou Bem, Pessoal!',
+          descricao: `
+          <p><i>Mais do que aprender a pilotar, um bom aeronauta aprende a se acidentar.</i></p>
+          <p>Você recebe redução de fogo e impacto 5 e sofre apenas metade do dano de quedas. Pré-requisito: Cabeça nas Nuvens.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          id_distincao: 1,
+        },
+        {
+          id: 1474,
+          nome: 'Manobras Defensivas',
+          descricao: `
+          <p><i>Às vezes, mais importante que preservar a própria vida é proteger a aeronave!</i></p>
+          <p>Você soma sua Inteligência na Defesa de qualquer aeronave que estiver pilotando. Além disso, quando você ou a aeronave que você está pilotando sofre dano, você pode gastar 2 PM para fazer um teste de Pilotagem e subtrair o resultado do dano sofrido. Pré-requisitos: treinado em Reflexos, Estou Bem, Pessoal!.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          id_distincao: 1,
+        },
+        {
+          id: 1475,
+          nome: 'Senhor dos Céus',
+          descricao: `
+          <p><i>Tendo derrotado inimigos suficientes, o aeronauta se tornou um verdadeiro ás.</i></p>
+          <p>Uma vez por rodada, enquanto está pilotando uma aeronave, você pode gastar 3 PM para realizar uma ação padrão adicional. Pré-requisitos: Manobras Defensivas, derrotar cinco aeronaves e/ou inimigos voadores enquanto pilota uma aeronave.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          id_distincao: 1,
+        },
     ];
   }
 }

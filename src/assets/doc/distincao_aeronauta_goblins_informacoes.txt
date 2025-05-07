@@ -1,0 +1,34 @@
+<h4>Ornitópteros Goblins</h4>
+<p>Independente de sua forma, todo ornitóptero é um veículo Grande capaz de transportar uma criatura Pequena e 10 espaços. Ele tem deslocamento de voo 15m, Defesa 15 (+ Des do piloto), RD 5 e PV iguais à metade dos pontos de vida de seu criador. Dentro do ornitóptero, o piloto recebe cobertura leve e pode executar investidas montadas como se estivesse sobre uma montaria</p>
+<p>Ornitópteros são fabricados com Ofício (artesão) com CD 20, uma semana de trabalho e custo de fabricação T$ 300. São mecanismos únicos e complexos, que só podem ser operados por seu criador. Para mais informações sobre veículos, veja a p. 241.</p>
+<h5>Melhorias para ornitópteros</h5>
+<p>Se possuir o poder Engenharia Aeronáutica, você pode construir ornitópteros superiores (Tormenta20, p. 164) com uma ou mais melhorias da lista a seguir</p>
+<p><b>Armado.</b> Suporte para acoplar uma arma de fogo, que pode ser usada pelo piloto como se ele a estivesse empunhando. Inclui espaço para 20 munições. Acoplar ou remover a arma de fogo é uma ação completa.</p>
+<p><b>Blindado.</b> +10 na Defesa.</p>
+<p><b>Bombardeiro.</b> Compartimento para quatro preparados alquímicos ou poções. Você pode arremessar esses itens a partir do ornitóptero gastando as ações normais; se fizer isso, seu alcance aumenta em uma categoria (de curto para médio e de médio para longo) e você soma +2 na CD para resistir a eles. Recarregar o compartimento exige uma ação completa e os itens com os quais você quiser carregá-lo.</p>
+<p><b>Camuflado.</b> Fornece +10 em Furtividade e, se estiver voando, você pode se esconder mesmo sem camuflagem ou cobertura disponível.</p>
+<p><b>Dobrável.</b> O ornitóptero pode ser dobrado para virar um veículo Médio com deslocamento 12m que não pode voar. Você pode gastar uma ação completa para dobrar ou desdobrar o ornitóptero, mesmo dentro dele.</p>
+<p><b>Durável.</b> Mecanismos redundantes e manutenção regular aumentam a durabilidade do ornitóptero. Ele passa a ter pontos de vida iguais aos do criador (em vez de metade).</p>
+<p><b>Espaçoso.</b> Além do piloto, o ornitóptero pode transportar um passageiro Pequeno ou 10 espaços de carga adicionais.</p>
+<p><b>Estável.</b> Cabos de seda e um manche mais preciso tornam o ornitóptero mais estável, fornecendo +5 nos testes de Pilotagem.</p>
+<p><b>Material Especial.</b> Os materiais especiais que podem ser empregados em ornitópteros, bem como seu custo adicional, são descritos a seguir.</p>
+<ul>
+<li><i>Aço-rubi.</i> Fortificação 50%. +T$ 6.000.</li>
+<li><i>Adamante.</i> RD 5, –2 em Pilotagem devido ao peso. +T$ 18.000.</li>
+<li><i>Casco de monstro*.</i> +2 na Defesa. +T$ 6.000.</li>
+<li><i>Cristal de sol*.</i> Redução de frio 10. Especial.</li>
+<li><i>Couro de bulette*.</i> Redução de ácido 10. Especial.</li>
+<li><i>Couraça de kaiju*.</i> RD 10/mágico. Especial.</li>
+<li><i>Gelo eterno.</i> Redução de fogo 10. +T$ 3.000.</li>
+<li><i>Lanajuste*.</i> Redução de corte 5. +T$ 3.000.</li>
+<li><i>Madeira Tollon.</i> Resistência a magia +5. +T$ 3.000.</li>
+<li><i>Matéria vermelha.</i> Camuflagem leve, –2 nas perícias baseadas em Carisma do piloto (exceto Intimidação). +T$ 18.000.</li>
+<li><i>Mitral.</i> +2 em Pilotagem. +T$ 12.000.</li>
+<li><i>Prata*.</i> Redução de trevas 10. +T$ 3.000.</li>
+<li><i>Pena de kraken*.</i> Quando uma criatura erra um ataque contra o ornitóptero, perde 10 PV. Especial.</li>
+</ul>
+<p><i>*Materiais especiais descritos em Ameaças de Arton.</i></p>
+<p><b>Resistente.</b> Reforços na fuselagem e doses extras de cola deixam o ornitóptero mais robusto. Aumenta a RD em +5.</p>
+<p><b>Veloz.</b> Deslocamento de voo +6m.</p>
+
+

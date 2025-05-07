@@ -23,6 +23,8 @@ import { Magia } from '../model/magia';
 import { MagiaData } from './magia.data';
 import { RegraData } from './regra.data';
 import { Regra } from '../model/regra';
+import { DistincaoData } from './distincao.data';
+import { Distincao } from '../model/distincao';
 
 @Injectable({
   providedIn: 'root',
@@ -40,6 +42,7 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly acaoData: AcaoData,
     private readonly magiaData: MagiaData,
     private readonly regraData: RegraData,
+    private readonly distincaoData: DistincaoData,
   ) {}
 
   createDb() {
@@ -54,6 +57,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const acao: Acao[] = this.acaoData.get();
     const magia: Magia[] = this.magiaData.get();
     const regra: Regra[] = this.regraData.get();
+    const distincao: Distincao[] = this.distincaoData.get();
 
     return {
       raca: raca,
@@ -68,6 +72,7 @@ export class InMemoryDataService implements InMemoryDbService {
       item: item,
       magia: magia,
       regra: regra,
+      distincao: distincao,
     };
   }
 }
