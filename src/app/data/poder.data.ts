@@ -14951,6 +14951,717 @@ export class PoderData {
           prerequisito_nivel: 5,
           id_distincao: 4,
         },
+        {
+          id: 1494,
+          nome: 'Energizar Arco',
+          descricao: `
+          <p><i>A primeira técnica aprendida pelo arqueiro de Lenórienn é entrelaçar sua magia com sua arma.</i></p>
+          <p>Você aprende a magia Arma Mágica e pode lançá-la em seu arco arcano como uma ação de movimento (em vez de uma ação padrão). Se aprender novamente essa magia, seu custo diminui em –1 PM. Pré-requisitos: treinado em Misticismo e Pontaria, habilidade de classe Magias, Foco em Arma (qualquer arco). </p>`,
+          e_poder_magico: true,
+          poder_chave_distincao: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 5,
+        },
+        {
+          id: 1495,
+          nome: 'Chuva de Flechas',
+          descricao: `
+          <p><i>Combinando magia e arco, o arqueiro de Lenórienn cobre seus inimigos com flechas mortais.</i></p>
+          <p>Você pode gastar uma ação padrão e 2 PM para multiplicar seu disparo. Faça um ataque à distância com seu arco e compare-o com a Defesa de um número de inimigos a sua escolha, no alcance do arco, limitado por seu atributo-chave para magias arcanas. Então faça uma única rolagem de dano e aplique-a a cada inimigo atingido. Você gasta apenas uma munição. Pré-requisitos: Energizar Arco, lançar magias arcanas de 3º círculo. </p>`,
+          e_poder_magico: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 5,
+        },
+        {
+          id: 1496,
+          nome: 'Encantar Flechas',
+          descricao: `
+          <p><i>O arqueiro de Lenórienn aprende a usar sua magia para criar flechas encantadas.</i></p>
+          <p>Você recebe 20 flechas mágicas menores a sua escolha e passa a poder fabricar flechas mágicas menores. Se tiver acesso a magias arcanas de 3º círculo, você pode fabricar flechas mágicas médias e, se tiver acesso a magias arcanas de 4º círculo, pode fabricar flechas maiores. Se você disparar todo o pacote de flechas, a energia mística imbuída nelas volta para você e você recupera os PM sacrificados para fabricá-las. Pré-requisitos: treinado em Ofício (armeiro), Energizar Arco, lançar magias arcanas de 2º círculo. </p>`,
+          e_poder_magico: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 5,
+        },
+        {
+          id: 1497,
+          nome: 'Flecha da Morte',
+          descricao: `
+          <p><i>Tendo superado todos os tipos de inimigos, o arqueiro de Lenórienn aprende a infundir a essência da morte em suas flechas.</i></p>
+          <p>Você pode gastar 1 dia e T$ 100 para criar uma flecha mágica chamada flecha da morte. Ela causa 1 dado extra de dano, fornece +2 na margem de ameaça e, se for usada em conjunto com Flecha de Toque ou Flecha Explosiva, aumenta a CD para resistir às magias em +2. Para cada dois outros poderes da distinção que você possui, esses bônus, e a quantidade de dados extras de dano, aumentam em +1. Você pode ter um máximo de flechas da morte igual ao total de poderes da distinção que possui (se criar uma além do seu limite, a flecha mais antiga perde seu poder). Pré-requisitos: Encantar Flechas, deve ter feito um acerto crítico com um arco em uma criatura de cada tipo (Tormenta20, p. 284). </p>`,
+          e_poder_magico: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 5,
+        },
+        {
+          id: 1498,
+          nome: 'Flecha de Toque',
+          descricao: `
+          <p><i>Com um sussurro mágico, o arqueiro faz sua flecha transportar uma de suas magias.</i></p>
+          <p>Quando lança uma magia que permite fazer um ataque corpo a corpo como parte de sua execução (como Infligir Ferimentos ou Toque Chocante aprimoradas), você pode substituir esse ataque por um ataque à distância com seu arco arcano. Pré-requisito: Energizar Arco.</p>`,
+          e_poder_magico: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 5,
+        },
+        {
+          id: 1499,
+          nome: 'Flecha Explosiva',
+          descricao: `
+          <p><i>Aprofundando seu treinamento, o arqueiro de Lenórienn aprende a lançar magias mais potentes com suas flechas.</i></p>
+          <p>Suas magias de área recebem um novo aprimoramento. +2 PM: como parte da execução da magia, você faz um ataque à distância com seu arco arcano contra uma criatura ou objeto. Se acertar, causa o dano do ataque e o efeito da magia (o centro desse efeito é o alvo atingido). Pré-requisito: Flecha de Toque. </p>`,
+          e_poder_magico: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 5,
+        },
+        {
+          id: 1500,
+          nome: 'Flecha Fantasma',
+          descricao: `
+          <p><i>Com um sussurro arcano, o arqueiro faz com que sua flecha alterne entre os Planos.</i></p>
+          <p>Quando faz um ataque com arco, você pode gastar 2 PM para transformar sua flecha em uma munição etérea. Uma flecha etérea fornece +5 no teste de ataque e ignora cobertura leve e 20 pontos da redução de dano do alvo. Pré-requisitos: Energizar Arco, Forma Etérea. </p>`,
+          e_poder_magico: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 5,
+        },
+        {
+          id: 1501,
+          nome: 'Conjuração Insana',
+          descricao: `
+          <p><i>O bruxo da Tormenta alimenta suas magias com seus próprios demônios.</i></p>
+          <p>Quando lança uma magia, você pode receber uma quantidade de pontos de insanidade, limitada pelo total de poderes da distinção que você possui. Se fizer isso, a CD dessa magia aumenta em +1 por PI recebido. Pré-requisitos: Int 2, Caminho do Arcanista (Mago ou Bruxo), um poder da Tormenta.</p>`,
+          poder_chave_distincao: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 6,
+        },
+        {
+          id: 1502,
+          nome: 'Corromper Magia',
+          descricao: `
+          <p><i>A corrupção empregada pelo bruxo da Tormenta se espalha através de suas magias.</i></p>
+          <p>Quando lança uma magia de dano, você pode receber uma quantidade de pontos de insanidade limitada pelo total de poderes da distinção que você possui. Se fizer isso, para cada PI recebido, a magia causa +1d6 pontos de dano de essência. Pré-requisitos: Magia Antiaberrante, Resistência à Tormenta.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 6,
+        },
+        {
+          id: 1503,
+          nome: 'Escudo Rubro',
+          descricao: `
+          <p><i>O bruxo da Tormenta usa sua loucura como uma armadura.</i></p>
+          <p>Quando faz um teste de resistência ou sofre dano, você pode receber uma quantidade de pontos de insanidade limitada pelo total de poderes da distinção que possui. Se fizer isso, para cada PI recebido você ecebe +2 nesse teste de resistência ou 5 pontos de RD contra esse dano. Esses benefícios são dobrados contra efeitos da Tormenta, de suas criaturas e de devotos de Aharadak. Pré-requisito: Resistência à Tormenta.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 6,
+        },
+        {
+          id: 1504,
+          nome: 'Magia Antiaberrante',
+          descricao: `
+          <p><i>Um bruxo da Tormenta conjura magias mais efetivas contra seres antinaturais.</i></p>
+          <p>Quando lança uma magia, você pode receber uma quantidade de pontos de insanidade igual ao círculo dela. Se fizer isso, ela ignora 10 pontos da RD dos alvos e, se algum deles for lefeu, ignora também suas imunidades. Pré-requisito: Conjuração Insana.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 6,
+        },
+        {
+          id: 1505,
+          nome: 'Resistência à Tormenta',
+          descricao: `
+          <p><i>O relâmpago de sangue cai dos céus, mas o bárbaro não parece ter sido afetado.</i></p>
+          <p>Você aprende e pode lançar Resistência a Energia. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Além disso, ela recebe o seguinte aprimoramento. +2 PM: o alvo é protegido de certos efeitos de áreas de Tormenta e templos de Aharadak (Ameaças de Arton, p. 60). Ao entrar nesses locais, ele não fica frustrado, seus itens mágicos encantados não perdem encantos e ele recebe +5 em testes de resistência contra Fenômenos Rubros (Ameaças de Arton, p. 360). Pré-requisito: Conjuração Insana.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 6,
+        },
+        {
+          id: 1506,
+          nome: 'Predador Alfa',
+          descricao: `
+          <p><i>O caçador de cabeças se move tão silenciosamente que parece se teleportar.</i></p>
+          <p>Uma vez por rodada, você pode gastar uma ação de movimento e 2 PM para fazer um teste de Furtividade oposto à Percepção de uma criatura em alcance curto. Se vencer o teste, você “surge” adjacente ao alvo e é considerado invisível contra ele até o início do seu próximo turno. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imó- vel. Pré-requisitos: treinado em Furtividade, Lobo Solitário, ser duyshidakk.</p>`,
+          poder_chave_distincao: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 7,
+        },
+        {
+          id: 1507,
+          nome: 'Arsenal do Caçador',
+          descricao: `
+          <p><i>Além de furtividade, o caçador de cabeças emprega uma variedade de itens alquímicos.</i></p>
+          <p>Você soma sua Sabedoria na CD e nas rolagens de dano (ou de perda de vida) dos preparados alquímicos e venenos que usa, e o alcance em que pode arremessá-los aumenta em uma categoria (de curto para médio e de médio para longo). Além disso, se o item exigir uma ação de movimento para ser preparado (como acender o pavio de uma bomba ou aplicar um veneno em sua arma), você pode fazer isso como uma ação livre. Pré-requisitos: Predador Alfa, Saque Rápido.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 7,
+        },
+        {
+          id: 1508,
+          nome: 'Camuflagem do Caçador',
+          descricao: `
+          <p><i>Quando está oculto, o caçador de cabeças é capaz de apagar completamente sua presença.</i></p>
+          <p>Quando você está sob camuflagem, seus inimigos aplicam a chance de erro por camuflagem a qualquer efeito contra você (não apenas ataques). Pré-requisitos: Camuflagem, Predador Alfa.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 7,
+        },
+        {
+          id: 1509,
+          nome: 'Exterminar Presa',
+          descricao: `
+          <p><i>Quando alcança seu alvo, o caçador de cabeças não oferece segundas chances.</i></p>
+          <p>Quando usa Marca da Presa, para cada poder da distinção você recebe 1 PM temporário que só pode ser usado contra a criatura marcada. Além disso, se fizer um acerto crítico contra essa criatura, seu dano adicional por Marca da Presa também é multiplicado. Pré-requisitos: Espreitar, Predador Alfa.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 7,
+        },
+        {
+          id: 1510,
+          nome: 'Sentidos de Caçada',
+          descricao: `
+          <p><i>O caçador de cabeças aprende a não depender dos sentidos para abater sua presa.</i></p>
+          <p>Você enxerga perfeitamente no escuro, incluindo escuridão mágica, e ignora camuflagem por fumaça ou névoa. Pré-requisitos: Predador Alfa, Sentidos Aguçados.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 7,
+        },
+        {
+          id: 1511,
+          nome: 'Destemor Inflamado',
+          descricao: `
+          <p><i>A presença de um dragão é suficiente para destruir a coragem de muitos, mas não de um caçador de dragões.</i></p>
+          <p>Você é imune a medo (exceto fobias raciais). Além disso, quando um inimigo usa um efeito de medo contra você, você recebe +2 em testes de perícia e rolagens de dano até o fim da cena. Para cada dois outros poderes da distinção que você possuir, esse bônus aumenta em +1. Pré-requisito: treinado em Vontade.</p>`,
+          poder_chave_distincao: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 8,
+        },
+        {
+          id: 1512,
+          nome: 'Alçar aos Céus',
+          descricao: `
+          <p><i>O caçador pega impulso, dando um salto impressionante para reduzir a distância até seu alvo, acertando-o com um ataque fulminante.</i></p>
+          <p>Você pode gastar 2 PM e uma ação completa para fazer uma investida saltando sobre uma criatura em alcance médio. Esse ataque causa um dado extra de dano, mais um dado extra para cada dois outros poderes da distinção. Se o alvo for um dragão, esses dados extras são dobrados. Após o ataque, você aterrissa em um espaço desocupado adjacente à criatura. Se a criatura for maior que você, você pode pode aterrissar sobre ela (nas costas, no dorso etc.) enquanto faz o ataque. Pré-requisitos: treinado em Atletismo, Destemor Inflamado.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 8,
+        },
+        {
+          id: 1513,
+          nome: 'Danificar as Asas',
+          descricao: `
+          <p><i>Com um ataque certeiro, o caçador de dragões atrapalha os movimentos do dragão.</i></p>
+          <p>Quando você faz um ataque, pode gastar 2 PM para machucar as asas ou outro membro locomotor do alvo. Se você acertar o ataque, o alvo fica caído e lento (Fort CD For ou Des reduz para lento por 1 rodada e a criatura não pode mais ser afetada por este poder nessa cena). Para cada poder da distinção, a CD aumenta em +1. Esse aumento é dobrado contra dragões. Pré-requisito: Destemor Inflamado.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 8,
+        },
+        {
+          id: 1514,
+          nome: 'Entortar Escamas',
+          descricao: `
+          <p><i>O caçador sabe enfraquecer aos poucos sua presa dracônica.</i></p>
+          <p>Quando faz um acerto crítico, você enfraquece as defesas do alvo. Até o fim da cena, a criatura sofre –2 na Defesa e sua redução de dano diminui em –5. Se você tiver cinco poderes da distinção, em vez disso a criatura sofre –5 na Defesa e sua redução de dano diminui em –10. Pré-requisitos: Destemor Inflamado, outro poder da distinção.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 8,
+        },
+        {
+          id: 1515,
+          nome: 'Evasão do Caçador',
+          descricao: `
+          <p><i>O caçador de dragões sabe o momento exato em que deve se esquivar.</i></p>
+          <p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano nenhum se passar e sofre apenas metade do dano se falhar. Além disso, uma vez por rodada, quando passa em um teste de Reflexos, você pode percorrer até metade do seu deslocamento. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver na condição imóvel. Pré-requisitos: treinado em Reflexos, Destemor Inflamado.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 8,
+        }
     ];
+    this.poderes.push(
+      {
+        id: 1516,
+        nome: 'Golpe Concentrado',
+        descricao: `
+        <p><i>A primeira técnica dominada pelo campeão é canalizar sua energia em seus golpes.</i></p>
+        <p>Você pode gastar uma ação de movimento e 2 PM para se concentrar em seus golpes. Quando faz isso, até o fim da cena você recebe +1d8 em suas rolagens de dano desarmado. Pré-requisitos: Sab 2, Briga.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 9,
+      },
+      {
+        id: 1517,
+        nome: 'Caminho da Mão Armada',
+        descricao: `
+        <p><i>O treinamento de um campeão por vezes envolve dominar as armas tradicionais de seu dojo.</i></p>
+        <p>Escolha três armas corpo a corpo com as quais tenha proficiência. Para você, essas armas contam como ataques desarmados para efeitos que interagem com eles de qualquer forma e, quando ataca com uma delas, você pode usar o dano básico da arma ou seu dano desarmado, o que for melhor. Pré-requisito: Golpe Concentrado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 9,
+      },
+      {
+        id: 1518,
+        nome: 'Caminhar do Dragão',
+        descricao: `
+        <p><i>O treinamento do campeão de dojo torna seus passos mais leves que o ar.</i></p>
+        <p>Você recebe +5 em Atletismo e pode gastar 1 PM para “correr no ar” por 1 rodada, como se tivesse deslocamento de voo igual ao seu deslocamento base. Você deve terminar seu movimento sobre o chão ou outra superfície firme, ou cairá ao solo. Pré-requisitos: treinado em Atletismo, Golpe Concentrado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 9,
+      },
+      {
+        id: 1519,
+        nome: 'Controlar a Respiração',
+        descricao: `
+        <p><i>Graças a seu treinamento intenso, o campeão de dojo se torna mestre do próprio corpo.</i></p>
+        <p>Você pode gastar uma ação de movimento e uma quantidade de PM limitada por sua Sabedoria. Para cada PM que gastar, recupera 2d6 pontos de vida. Para cada dois outros poderes da distinção que você possui, cada dado de cura aumenta em um passo. Pré-requisito: Golpe Concentrado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 9,
+      },
+      {
+        id: 1520,
+        nome: 'Sentidos do Tigre',
+        descricao: `
+        <p><i>Aprimorados por anos de treinamento, os sentidos do campeão protegem-no de qualquer ameaça.</i></p>
+        <p>Você soma sua Sabedoria na Defesa e em Reflexos. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel. Pré-requisitos: Golpe Concentrado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 9,
+      },
+      {
+        id: 1521,
+        nome: 'Içar A Bandeira Preta',
+        descricao: `
+        <p><i>A bandeira do Conclave Pirata inspira medo nos inimigos e esperança nos aliados.</i></p>
+        <p>Uma vez por cena, você pode gastar uma ação de movimento e 5 PM para motivar seus aliados e assustar seus inimigos. Aliados em alcance curto recebem 5 PV e 1 PM temporários para cada poder da distinção que você possui, que duram até o fim da cena. Inimigos em alcance curto ficam abalados por 1d4 rodadas (Vontade CD Car evita). Caso sua bandeira já esteja visível no começo da cena, você pode usar este poder gastando apenas uma ação livre e 3 PM. Pré-requisitos: treinado em Intimidação e Pilotagem, Audácia.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 10,
+      },
+      {
+        id: 1522,
+        nome: 'Língua Afiada',
+        descricao: `
+        <p><i>Certos insultos doem mais do que golpes de espada.</i></p>
+        <p>Quando vence um teste oposto de Enganação contra uma criatura inteligente (Int –3 ou maior), para cada poder da distinção que possuir você também pode causar 2d6 pontos de dano psíquico não letal a ela (apenas uma vez por cena). Além disso, se você usar Audácia em testes de Enganação, Diplomacia ou Intimidação, seu custo diminui em –1 PM. Pré-requisito: Içar a Bandeira Preta.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 10,
+      },
+      {
+        id: 1523,
+        nome: 'Lutar Sujo',
+        descricao: `
+        <p><i>Um pirata não tem nenhum pudor sobre chutar ferimentos ou enfiar dedos em olhos. Qualquer coisa vale a pena para vencer.</i></p>
+        <p>Você pode fazer um teste de manobra (Tormenta20, p. 234) para executar um truque sujo contra um inimigo. Se vencer, o inimigo sofre uma condição a sua escolha entre cego, enjoado, lento ou surdo por 1 rodada — ou até ele usar uma ação padrão para se recompor. Pré-requisito: Içar a Bandeira Preta.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 10,
+      },
+      {
+        id: 1524,
+        nome: 'Sentença de Bolso',
+        descricao: `
+        <p><i>Os canhões do Sentença são os mais terríveis de toda Arton. A mera menção de seu poder deixa qualquer marujo com as pernas bambas.</i></p>
+        <p>Você recebe +2 em Intimidação e na margem de ameaça com armas de fogo, e causa +2d6 pontos de dano com armas de fogo em oponentes desprevenidos. Pré-requisitos: proficiência com armas de fogo, Içar a Bandeira Preta.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 10,
+      },
+      {
+        id: 1525,
+        nome: 'Vento em Popa',
+        descricao: `
+        <p><i>Os capitães mais ligeiros têm os navios mais rápidos.</i></p>
+        <p>Uma vez por rodada, você pode gastar 2 PM para realizar uma ação de movimento adicional em seu turno. Se tiver o poder Velocidade Ladina, em vez disso o custo para usá-lo diminui em –1 PM. Em ambos os casos, o custo diminui em –1 PM (cumulativo com este poder) se você estiver a bordo de um veículo aquático. Por fim, se você usar Audácia em testes de Acrobacia, Atletismo ou Pilotagem, seu custo diminui em –1 PM. Pré-requisitos: treinado em Pilotagem, Içar a Bandeira Preta, Pernas do Mar.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 10,
+      },
+      {
+        id: 1526,
+        nome: 'Dado Viciado',
+        descricao: `
+        <p><i>A realidade é só mais uma mesa de jogo, onde vence quem tem os melhores dados.</i></p>
+        <p>No início de cada cena, você recebe 1d6 como dado de auxílio, +1d6 para cada outros dois poderes da distinção que possua. Quando faz um teste de perícia, você pode pagar 1 PM para cada dado de auxílio que quiser gastar, e soma o resultado deles como bônus no teste. Além disso, sempre que rolar mais de um dado de auxílio e o resultado de pelo menos dois deles for igual, você ganha 1 PM temporário por dado igual. Pré-requisito: treinado em Jogatina.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 11,
+      },
+      {
+        id: 1527,
+        nome: 'Ás na Manga',
+        descricao: `
+        <p><i>O arsenal de trapaças de um carteador é praticamente infinito.</i></p>
+        <p>Quando você faz um teste de perícia, pode gastar 2 PM para usar Jogatina no lugar dessa perícia. Você só pode fazer isso uma vez para cada perícia a cada cena. Pré-requisito: Dado Viciado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 11,
+      },
+      {
+        id: 1528,
+        nome: 'Jogo Perigoso',
+        descricao: `
+        <p><i>Só um tolo joga com as cartas que lhe foram dadas.</i></p>
+        <p>Você pode gastar uma ação completa para fazer uma aposta com uma entidade sobrenatural. Escolha uma magia de 1º círculo, arcana ou divina, e faça um teste de Jogatina (CD 20 + o custo em PM da magia). Se passar, até o fim da cena, ou até usar este poder novamente, você pode lançar essa magia (atributo-chave Carisma) e pode usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um bardo do seu nível. Se falhar, você perde 2 PM para cada círculo da magia. A cada dois outros poderes da distinção, você pode escolher magias de um círculo acima do 1º. Pré-requisitos: treinado em Misticismo, Ás na Manga. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 11,
+      },
+      {
+        id: 1529,
+        nome: 'Resultado Destinado',
+        descricao: `
+        <p><i>Um carteador é capaz de trapacear com seus inimigos, com os deuses e com o próprio destino.</i></p>
+        <p>Uma vez por cena, você pode pagar 5 PM. Escolha uma habilidade de classe de até 5° nível de uma classe que não seja a sua. Você recebe essa habilidade e pode usá-la como se tivesse 5 níveis nessa classe (se escolher a habilidade Magias, você aprende uma única magia, mas não soma o atributo-chave da habilidade em seu total de PM) até o fim da cena. Seu atributo-chave para a habilidade é Carisma. Você não pode escolher a mesma habilidade de classe duas vezes na mesma aventura. Pré-requisitos: Jogo Perigoso, 17° nível de personagem.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 17,
+        id_distincao: 11,
+      },
+      {
+        id: 1530,
+        nome: 'Seduzir a Sorte',
+        descricao: `
+        <p><i>Contam-se histórias sobre um carteador capaz de rolar um 7 num dado de 6 faces.</i></p>
+        <p>Quando rola um ou mais dados de auxílio, você pode pagar 1 PM para fazer uma aposta com o mestre. Você rola os seus dados de auxílio e soma o resultado, enquanto o mestre rola a mesma quantidade do mesmo tipo de dados em segredo. Após rolar seus dados, você deve adivinhar qual o maior resultado total (entre a sua rolagem e a do mestre). Se adivinhar corretamente, você recupera os dados de auxílio gastos. Se perder, fica frustrado. Pré-requisito: Dado Viciado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 11,
+      },
+      {
+        id: 1531,
+        nome: 'Reconhecimento e Infiltração',
+        descricao: `
+        <p><i>Para cumprir sua missão, o Corvo deve se mover de forma rápida e silenciosa mesmo equipado.</i></p>
+        <p>Seu deslocamento aumenta em +3m, você não sofre penalidade por armadura e a penalidade que você sofre por fazer uma ação chamativa quando usa Furtividade muda para –10. Pré-requisitos: treinado em Furtividade e Guerra, proficiência com armaduras pesadas.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 12,
+      },
+      {
+        id: 1532,
+        nome: 'A Qualquer Custo',
+        descricao: `
+        <p><i>Para um Cavaleiro do Corvo, nada é mais importante que o sucesso da missão.</i></p>
+        <p>Você pode declarar um determinado objetivo como sua missão. Esse objetivo deve ser algo específico, como “eliminar o dragão da Floresta dos Cem Olhos” ou “resgatar o sacerdote capturado pelos bandidos de estrada”. A preparação para a missão leva 1 dia, exige o gasto de T$ 500 em materiais e serviços (mapas, informantes etc.) e fornece um dos benefícios abaixo. Para cada outros dois poderes da distinção, fornece um benefício adicional diferente.</p>
+        <ul>
+        <li>Busca e Destruição. Uma de suas armas se torna uma arma anticriatura contra um tipo a sua escolha.</li>
+        <li>Guerra Não Convencional. Você se torna treinado em duas perícias a sua escolha.</li>
+        <li>Inteligência Militar. Você pode usar Guerra no lugar de duas perícias a sua escolha entre Conhecimento, Intuição, Investigação, Percepção e Sobrevivência.</li>
+        </ul>
+        <p>Você só pode ter uma missão de cada vez. Pré-requisito: Reconhecimento e Infiltração.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 12,
+      },
+      {
+        id: 1533,
+        nome: 'Atrás das Linhas Inimigas',
+        descricao: `
+        <p><i>O Cavaleiro do Corvo aprende a sobreviver em território dominado pelo inimigo.</i></p>
+        <p>Você recebe imunidade a atordoamento e cansaço e sua recuperação por descanso nunca é inferior a normal. Pré-requisito: Reconhecimento e Infiltração.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 12,
+      },
+      {
+        id: 1534,
+        nome: 'Das Trevas',
+        descricao: `
+        <p><i>Para o Cavaleiro do Corvo, a melhor tática é matar o inimigo antes que ele perceba a morte chegando.</i></p>
+        <p>Quando ataca um oponente desprevenido ou que você esteja flanqueando, e que você tenha escolhido como alvo da habilidade Duelo, os bônus dessa habilidade contra esse oponente aumentam em +2. Pré-requisitos: Duelo, Atrás das Linhas Inimigas.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 12,
+      },
+      {
+        id: 1535,
+        nome: 'Ferramenta de Morte',
+        descricao: `
+        <p><i>O Cavaleiro do Corvo aprende a compartilhar seu treinamento com seus aliados.</i></p>
+        <p>Você pode gastar uma ação de movimento e uma quantidade de PM a sua escolha (limitada pela sua Inteligência) para coordenar um ataque contra um oponente em alcance curto. Até o início do seu próximo turno, você e seus aliados recebem um bônus igual ao total de PM gastos em testes de ataque e rolagens de dano e na margem de ameaça contra esse oponente. Este poder só pode ser usado uma vez contra a mesma criatura em cada cena. Pré-requisitos: A Qualquer Custo, deve ter liderado um grupo de aventureiros em pelo menos dois combates vitoriosos (para efeitos deste requisito, liderar significa participar do combate apenas auxiliando seus aliados, como com testes para ajudar ou usando habilidades que forneçam bônus aos testes deles).</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 12,
+      },
+      {
+        id: 1536,
+        nome: 'Postura de Combate: Tomada Furtiva',
+        descricao: `
+        <p><i>Cavaleiros do Corvo aprendem a se mover em silêncio, enquanto avançam pelas linhas inimigas.</i></p>
+        <p>Você pode realizar a ação mirar como ação livre, não sofre penalidade em testes de Furtividade por se mover ao seu deslocamento normal e recebe +2 em testes de ataque e rolagens de dano com ataques à distância. Esse bônus aumenta em +1 para cada dois outros poderes da distinção. Pré-requisitos: treinado em Pontaria, Reconhecimento e Infiltração.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 12,
+      },
+      {
+        id: 1537,
+        nome: 'Trazemos a Luz',
+        descricao: `
+        <p><i>O Cavaleiro do Corvo une corpo, mente e conhecimento em um conjunto letal.</i></p>
+        <p>Uma vez por combate, você pode gastar uma ação de movimento e 3 PM para fazer um teste de Guerra. Você recebe uma quantidade de PV temporários igual ao resultado desse teste e, para cada 10 pontos no resultado, recebe +1 em testes de ataque e rolagens de dano. Além disso, se o resultado for 30 ou mais, você ignora a imunidade a acertos críticos e ataques furtivos de seus inimigos. Esses efeitos duram até o fim da cena. Pré-requisito: Das Trevas.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 12,
+      },
+      {
+        id: 1538,
+        nome: 'Arte Élfica',
+        descricao: `
+        <p><i>Cada tinir da espada é um acorde. Cada rugido de batalha é um verso. O esplendor de cada vitória é uma canção.</i></p>
+        <p>Uma vez por rodada, quando acerta um ataque com espada longa ou florete, você pode gastar 2 PM para ativar uma Música de bardo ou lançar uma magia arcana com execução de ação de movimento ou padrão como uma ação livre. O círculo máximo de magias que você pode lançar com este poder é limitado pela quantidade de poderes da distinção que possui. Pré-requisitos: habilidade de classe Magias, treinado em Atuação e Luta, Foco em Arma (espada longa ou florete).</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 13,
+      },
+      {
+        id: 1539,
+        nome: 'Arma da Floresta',
+        descricao: `
+        <p><i>Os espíritos da natureza tornam a elegante lâmina do cavaleiro feérico ainda mais letal.</i></p>
+        <p>Você pode gastar 1 PM para invocar elementos naturais, como madeira, folhas ou pólen, para cobrir uma espada longa ou florete. O dano da arma é considerado mágico e aumenta em um passo até o fim da cena. Caso você use este poder em uma floresta, o efeito dura 1 dia — ou até você sair dela. Pré-requisito: Arte Élfica. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 13,
+      },
+      {
+        id: 1540,
+        nome: 'Armadura da Floresta',
+        descricao: `
+        <p><i>O tributo do candidato retorna ao cavaleiro na forma da mais magnífica das armaduras.</i></p>
+        <p>Você recebe uma armadura completa feita de madeira levíssima, folhas e flores. Essa armadura não reduz seu deslocamento, e com ela você pode somar sua Destreza na Defesa e lançar magias arcanas sem necessidade de testes de Misticismo. A cada dois outros poderes da distinção que você possui, a armadura recebe uma melhoria a sua escolha, cujos pré-requisitos ela cumpra (exceto material especial). Se outra criatura tentar vestir essa armadura, ela murcha e morre em instantes. Se a armadura for destruída, renasce ao seu redor em 1 dia. Pré-requisito: Arte Élfica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 13,
+      },
+      {
+        id: 1541,
+        nome: 'Flagelo dos Duyshidakk',
+        descricao: `
+        <p><i>Dez deles por um dos nossos.</i></p>
+        <p>Você soma seu total de poderes da distinção em rolagens de dano contra bandos, enxames e duyshidakk. Além disso, uma vez por rodada, quando reduz um oponente a 0 PV ou menos com um ataque corpo a corpo, você pode gastar 2 PM para percorrer até o seu deslocamento e fazer um ataque corpo a corpo contra outro inimigo. Pré-requisito: Arte Élfica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 13,
+      },
+      {
+        id: 1542,
+        nome: 'Lâminas Feéricas',
+        descricao: `
+        <p><i>As tradicionais armas élficas são a base do treinamento de um cavaleiro feérico.</i></p>
+        <p>Para você, espadas longas são armas ágeis. Além disso, quando usa uma espada longa ou um florete, você soma o círculo máximo de magias que pode lançar ao dano e aumenta sua margem de ameaça em +1 para cada dois poderes da distinção. Pré-requisito: Arte Élfica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 13,
+      },
+      {
+        id: 1543,
+        nome: 'Montaria Feérica',
+        descricao: `
+        <p><i>O respeito do cavaleiro feérico pela natureza é recompensado na forma de um aliado leal.</i></p>
+        <p>Você recebe um parceiro montaria veterano, escolhido entre cavalo de guerra, trobo ou outra criatura que, a critério do mestre, tenha uma natureza feérica. Caso já possua uma montaria fornecida por outra habilidade, em vez disso essa montaria se torna também um parceiro combatente iniciante. Você recebe +5 em testes de Cavalgar para correr e saltar com sua montaria. Caso perca sua montaria, você pode treinar outra com uma semana de trabalho. Pré-requisitos: treinado em Cavalgar, Arte Élfica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 13,
+      },
+      {
+        id: 1544,
+        nome: 'Coração Duro',
+        descricao: `
+        <p><i>Não é fácil abalar o chapéu-preto, pois ele próprio já cometeu todo tipo de atrocidades.</i></p>
+        <p>Você recebe +2 em rolagens de dano com armas e imunidade a medo (ou +2 em Vontade, se já for imune a medo). Este poder não elimina fobias raciais, como o medo de altura dos minotauros. Pré-requisitos: treinado em Luta ou Pontaria, Presença Aterradora.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 14,
+      },
+      {
+        id: 1545,
+        nome: 'Bala nas Costas',
+        descricao: `
+        <p><i>Se um chapéu-preto realmente hábil quiser matá-lo, você não ficará sabendo — já estará morto.</i></p>
+        <p>Sempre que atacar um oponente pela primeira vez na cena, você pode gastar 1 PM para receber +10 na margem de ameaça desse ataque. Pré-requisitos: Coração Duro, dois outros poderes da distinção.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 14,
+      },
+      {
+        id: 1546,
+        nome: 'Congelar o Inferno',
+        descricao: `
+        <p><i>Quando surge um bandido realmente assustador, o tempo esfria, o sol empalidece, os animais fogem e até as pedras tremem de medo. Os mais infames chapéus-pretos podem fazer uma estátua baixar os olhos.</i></p>
+        <p>Quando usa um efeito de medo, você pode gastar 2 PM para ignorar quaisquer imunidades a medo e efeitos mentais dos alvos. Pré-requisitos: Coração Duro, dois outros poderes da distinção.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 14,
+      },
+      {
+        id: 1547,
+        nome: 'Dance!',
+        descricao: `
+        <p><i>Todos os gestos do chapéu-preto inspiram ameaça.</i></p>
+        <p>Quando faz um teste de Intimidação, você pode gastar 2 PM para fazer uma demonstração de habilidade com sua arma como parte desse teste. Se fizer isso, você recebe um bônus em seu teste de Intimidação igual ao atributo-chave de ataque com a arma que está usando. Pré-requisito: Coração Duro.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 14,
+      },
+      {
+        id: 1548,
+        nome: 'Olhos de Chumbo',
+        descricao: `
+        <p><i>Quando um chapéu-preto chega à cidade, é melhor fugir. E quando ele olha em seus olhos, você logo precisa de uma calça limpa.</i></p>
+        <p>Você projeta uma aura de medo com 9m de raio. Todas as criaturas a sua escolha nessa aura sofrem –2 em rolagens de dano e na Defesa. Essa penalidade aumenta em –1 para cada dois outros poderes da distinção que você possuir. Medo. Pré-requisitos: Coração Duro, ser procurado pelas autoridades por um crime.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 14,
+      },
+      {
+        id: 1549,
+        nome: 'Rápido ou Morto',
+        descricao: `
+        <p><i>Quanto mais notório o bandido, mais ele precisa estar preparado para matar.</i></p>
+        <p>Você recebe +2 em Iniciativa e +3m em seu deslocamento. Esses bônus aumentam respectivamente em +1 e +1,5m para cada dois outros poderes da distinção que você possuir. Pré-requisitos: treinado em Iniciativa, Coração Duro.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 14,
+      },
+      {
+        id: 1550,
+        nome: 'Tiro à Traição',
+        descricao: `
+        <p><i>Nunca dê as costas a um chapéu-preto.</i></p>
+        <p>O dano de seus ataques com armas contra alvos desprevenidos ou sob alguma condição de medo aumenta em um passo. Pré-requisitos: Coração Duro, ter feito pelo menos três acertos críticos em alvos desprevenidos.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 14,
+      },
+      {
+        id: 1551,
+        nome: 'Enxerto Experimental',
+        descricao: `
+        <p><i>Em busca de aperfeiçoamento, a cobaia se submete a procedimentos altamente experimentais.</i></p>
+        <p>Você recebe um implante de até T$ 18.000. Ele não conta em seu limite de implantes, mas foi enxertado de forma experimental. No início de cada cena, role 1d4. Em um resultado 1, o implante não funciona nessa cena. Para cada outro poder da distinção, esse dado aumenta em um passo. Pré-requisito: Foco em Perícia (Fortitude).</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 15,
+      },
+      {
+        id: 1552,
+        nome: 'Corpo Resiliente',
+        descricao: `
+        <p><i>Sucessivas cirurgias resultaram em um fortalecimento inesperado do organismo da cobaia.</i></p>
+        <p>Você não sofre a penalidade em Fortitude por implantes e seu limite de implantes aumenta em +1, +1 para cada dois outros poderes da distinção. Pré-requisito: Enxerto Experimental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 15,
+      },
+      {
+        id: 1553,
+        nome: 'Extrapolar o próprio Corpo',
+        descricao: `
+        <p><i>Implantes convencionais extraídos de monstros não satisfazem mais a sede de alterações da cobaia.</i></p>
+        <p>Escolha um poder racial (p. 84) cujos pré-requisitos você cumpra (ignorando requisitos de raça) e que seja aprovado pelo mestre. Você recebe um implante que fornece o benefício do poder escolhido. Pré-requisito: Implante Exclusivo. </p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 15,
+      },
+      {
+        id: 1554,
+        nome: 'Glândula de Infusão',
+        descricao: `
+        <p><i>Como um verdadeiro experimento, a cobaia recebe a vanguarda dos procedimentos do Grêmio.</i></p>
+        <p>Escolha uma magia de até 2º círculo com alvo você ou 1 criatura. Você recebe um implante que permite lançar essa magia seguindo as regras de engenhocas (Tormenta20, p. 70), mas você usa Constituição e Fortitude respectivamente no lugar de Inteligência e Ofício (engenhoqueiro) e só pode ter você como alvo. Este é um efeito orgânico e não é afetado por efeitos que afetem especificamente engenhocas. Pré-requisito: Enxerto Experimental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 15,
+      },
+      {
+        id: 1554,
+        nome: 'Implante Exclusivo',
+        descricao: `
+        <p><i>Uma cobaia tem acesso a serviços exclusivos, reservados apenas aos melhores clientes do Grêmio.</i></p>
+        <p>Escolha um encanto de armas sem nenhum pré-requisito. Você pode gastar uma ação de movimento e 1 PM para colocar esse encanto em uma arma que esteja empuhando. Ele não conta no limite de encantos da arma, e termina se você soltar o item ou no fim da cena. Pré-requisito: Enxerto Experimental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 15,
+      },
+    )
+
   }
 }
