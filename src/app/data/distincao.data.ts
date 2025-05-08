@@ -232,7 +232,7 @@ export class DistincaoData {
       },
       {
         id: 14,
-        nome: `Chapéu-preto`,
+        nome: `Chapéu-Preto`,
         nome_arquivo_descricao: `distincao_chapeu_preto_descricao`,
         nome_arquivo_admissao: `distincao_chapeu_preto_admissao`,
         nome_arquivo_informacoes: `distincao_chapeu_preto_informacoes`,
