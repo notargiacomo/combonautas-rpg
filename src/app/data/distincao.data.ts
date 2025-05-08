@@ -133,7 +133,7 @@ export class DistincaoData {
       },
       {
         id: 8,
-        nome: `Caçador de Dragoes`,
+        nome: `Caçador de Dragões`,
         nome_arquivo_descricao: `distincao_cacador_dragoes_descricao`,
         nome_arquivo_admissao: `distincao_cacador_dragoes_admissao`,
         nome_arquivo_informacoes: `distincao_cacador_dragoes_informacoes`,
