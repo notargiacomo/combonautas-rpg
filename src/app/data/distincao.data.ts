@@ -32,6 +32,23 @@ export class DistincaoData {
         imagem: 'assets/img/distincao_aeronauta_goblin.png',
         referencias: Referencia.HEROIS,
         paginas: '106, 107 e 108'
+      },
+      {
+        id: 2,
+        nome: `Algoz da Tormenta`,
+        nome_arquivo_descricao: `distincao_algoz_tormenta_descricao`,
+        nome_arquivo_admissao: `distincao_algoz_tormenta_admissao`,
+        nome_arquivo_informacoes: `distincao_algoz_tormenta_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Servo e Senhor</h5>
+        <p><i><b>Após ter sua existência remodelada pela Tormenta, um algoz não questiona seus senhores.</b></i></p>
+        <p>Você se torna imune à Insanidade da Tormenta e a efeitos de medo e mentais, exceto aqueles causados pelo lekael a quem serve.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_algoz_tormenta.png',
+        referencias: Referencia.HEROIS,
+        paginas: '109, 110 e 111'
       }
     ];
   }

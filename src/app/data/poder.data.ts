@@ -14752,6 +14752,65 @@ export class PoderData {
           prerequisito_nivel: 2,
           id_classe: 19
         },
+        {
+          id: 1477,
+          nome: 'Lar Infernal',
+          descricao: `
+          <p><i>Acostumado às áreas de Tormenta, o algoz só se sente em casa nesses infernos.</i></p>
+          <p>Você se torna imune aos efeitos de áreas de Tormenta (Tormenta20, p. 319). Além disso, nessas áreas você recebe +5 em testes de perícia e seu descanso conta como luxuoso. Pré-requisitos: dois poderes da Tormenta.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          id_distincao: 2,
+        },
+        {
+          id: 1478,
+          nome: 'Abraçar Anticriação',
+          descricao: `
+          <p><i>O algoz trai tudo que Arton é, tornando-se de corpo e alma como os invasores.</i></p>
+          <p>Seu tipo muda para monstro (lefeu) e você recebe todas as habilidades lefeu (Tormenta20, p. 315) — sua Insanidade da Tormenta causa perda de 1d6 PM para cada poder da distinção que você possui (atributo-chave Sabedoria). Pré-requisitos: General Rubro, 17º nível.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 17,
+          id_distincao: 2,
+        },
+        {
+          id: 1479,
+          nome: 'Ataque Corrupto',
+          descricao: `
+          <p><i>Os golpes do algoz carregam a Tormenta consigo.</i></p>
+          <p>Seus ataques recebem o benefício de matéria vermelha (Tormenta20, p. 167), cumulativo com melhorias de material especial (incluindo a própria matéria vermelha), mas seus efeitos nocivos não o afetam. Para cada dois outros poderes da distinção que você possui, o dano extra causado por este poder aumenta em +1d6. Pré-requisitos: treinado em Luta ou Pontaria, Lar Infernal.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 17,
+          id_distincao: 2,
+        },
+        {
+          id: 1480,
+          nome: 'Desprezo Profano',
+          descricao: `
+          <p><i>Qualquer forma de magia é patética contra a Anticriação.</i></p>
+          <p>Você recebe resistência a magia +1 para cada poder da distinção e pode lançar Dissipar Magia, substituindo o teste de Misticismo por Vontade. Esta não é uma habilidade mágica e provém de seu desprezo pela Criação (veja “Magias Simuladas”, p. 44). Pré-requisitos: treinado em Vontade, Ataque Corrupto, não ser devoto (exceto de Aharadak).</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 17,
+          id_distincao: 2,
+        },
+        {
+          id: 1481,
+          nome: 'General Rubro',
+          descricao: `
+          <p><i>Os lefeu reconhecem o algoz como um deles.</i></p>
+          <p>Lefeu de ND menor do que o seu nível são prestativos a você, enquanto criaturas tocadas pela Tormenta (lefou, pessoas com poderes da Tormenta, cultistas, devotos de Aharadak etc.) capazes de percebê-lo ficam enfeitiçados (Vontade CD Sab +2 para cada poder da Tormenta evita). Além disso, se você já possuir um parceiro fornecido por outra habilidade, ele se torna também um parceiro aberrante iniciante (veja p. 66). Pré-requisitos: Desprezo Profano, 11º nível.</p>
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 17,
+          id_distincao: 2,
+        },
     ];
   }
 }
