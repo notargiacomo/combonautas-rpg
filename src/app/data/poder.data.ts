@@ -14884,6 +14884,73 @@ export class PoderData {
           prerequisito_nivel: 5,
           id_distincao: 3,
         },
+        {
+          id: 1488,
+          nome: 'Armadilha Instantânea',
+          descricao: `
+          <p><i>Combinando o ambiente e seus próprios mecanismos, o armadilheiro produz armadilhas em um piscar de olhos.</i></p>
+          <p>Escolha duas armadilhas entre as de armadilheiro e as de caçador. Uma vez feita, essa escolha não pode ser mudada. Você pode preparar as armadilhas escolhidas conforme as regras de Armadilhas (Tormenta20, p. 51), mas não precisa estar em um ambiente propício (porque usa seus próprios materiais) e pode usar Inteligência como atributo-chave da CD para encontrar, desarmar e evitar essas armadilhas. A cada novo poder da distinção, você pode escolher uma nova armadilha. Pré-requisitos: treinado em Ladinagem e Ofício (artesão).</p>`,
+          poder_chave_distincao: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 4,
+        },
+        {
+          id: 1489,
+          nome: 'Armadilha Distante',
+          descricao: `
+          <p><i>Se o alvo não vem até a armadilha, a armadilha vai até o alvo.</i></p>
+          <p>Quando prepara uma armadilha, você pode gastar 1 PM para preparar essa armadilha em qualquer espaço desocupado em alcance curto. Pré-requisitos: Des 1, Armadilha Instantânea.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 4,
+        },
+        {
+          id: 1490,
+          nome: 'Armadilha Furtiva',
+          descricao: `
+          <p><i>O armadilheiro prepara surpresas particularmente letais.</i></p>
+          <p>A CD para encontrar, desarmar e resistir às suas armadilhas aumenta em +5 e você adiciona o dano de seu Ataque Furtivo ao dano que elas causam. Este poder não funciona contra criaturas que não fiquem desprevenidas ou surpreendidas. Pré-requisitos: Armadilha Instantânea, Ataque Furtivo.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 4,
+        },
+        {
+          id: 1491,
+          nome: 'Armadilha Recarregável',
+          descricao: `
+          <p><i>As armadilhas do armadilheiro continuam perigosas mesmo após serem disparadas.</i></p>
+          <p>Quando uma de suas armadilhas em alcance médio é disparada, você pode gastar 1 PM. Se fizer isso, a armadilha é rearmada automaticamente no início do seu próximo turno. Pré-requisito: Armadilha Instantânea.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 4,
+        },
+        {
+          id: 1492,
+          nome: 'Aumentar Complexidade',
+          descricao: `
+          <p><i>Mais complexas, mais engenhosas, mais perigosas, mais mortais.</i></p>
+          <p>Você soma sua Inteligência no dano e na CD de suas armadilhas (cumulativo) e elas passam a ocupar uma área de 4,5m de lado. Além disso, se você estiver em alcance médio de uma de suas armadilhas, pode dispará-la como uma ação livre. Pré-requisito: Armadilha Instantânea.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 4,
+        },
+        {
+          id: 1493,
+          nome: 'Tripla Ameaça',
+          descricao: `
+          <p><i>Mas e se pudesse ser mais…?</i></p>
+          <p>Você pode gastar 10 PM para preparar até 3 armadilhas ao mesmo tempo. Cada uma aparece em um ponto diferente em alcance curto. Pré-requisito: Aumentar Complexidade.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 4,
+        },
     ];
   }
 }

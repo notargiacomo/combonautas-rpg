@@ -57,16 +57,31 @@ export class DistincaoData {
         nome_arquivo_admissao: `distincao_amazona_admissao`,
         nome_arquivo_informacoes: `distincao_amazona_informacoes`,
         marca_distincao: `
-        <h4>Armadura das Amazonas</h4>
+        <h4>Marca da Distinção</h4>
         <h5>Armadura das Amazonas</h5>
         <p><i><b>Orgulhosas, as amazonas vestem sua autoconfiança como uma verdadeira armadura.</b></i></p>
         <p>Se não estiver usando armadura pesada, você recebe +2 na Defesa.</p>
         `,
-        ha_informacoes_adicionais: true,
         imagem: 'assets/img/distincao_amazona.png',
         referencias: Referencia.HEROIS,
         paginas: '112, 113 e 114'
-      }
+      },
+      {
+        id: 4,
+        nome: `Armadilheiro Mestre`,
+        nome_arquivo_descricao: `distincao_armadilheiro_mestre_descricao`,
+        nome_arquivo_admissao: `distincao_armadilheiro_mestre_admissao`,
+        nome_arquivo_informacoes: `distincao_armadilheiro_mestre_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Armadilheiro Experiente</h5>
+        <p>Você recebe +2 em testes de perícia relacionados a armadilhas, incluindo testes para encontrar, desarmar e resistir a seus efeitos. Além disso, sempre que desarma uma armadilha que não seja sua, você recupera 1 PM.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_armadilheiro_mestre.png',
+        referencias: Referencia.HEROIS,
+        paginas: '115, 116 e 117'
+      },
     ];
   }
 }
