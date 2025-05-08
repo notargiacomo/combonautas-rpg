@@ -14691,10 +14691,11 @@ export class PoderData {
           descricao: `
           <p><i>O aeronauta goblin se sente em casa nos céus, sua mente inspirada pela liberdade de voar.</i></p>
           <p>Quando está pilotando uma aeronave, você recebe +1 em testes de perícia, rolagens de dano e na CD das suas habilidades e itens. Esse bônus aumenta em +1 para cada dois outros poderes da distinção que você possui. Pré-requisitos: Int 2, treinado em Ofício (artesão) e Pilotagem.</p>
-          <hr>
           `,
+          poder_chave_distincao: true,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
           id_distincao: 1,
         },
         {
@@ -14706,6 +14707,7 @@ export class PoderData {
           `,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
           id_distincao: 1,
         },
         {
@@ -14717,6 +14719,7 @@ export class PoderData {
           `,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
           id_distincao: 1,
         },
         {
@@ -14728,6 +14731,7 @@ export class PoderData {
           `,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
           id_distincao: 1,
         },
         {
@@ -14739,6 +14743,7 @@ export class PoderData {
           `,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
           id_distincao: 1,
         },
         {
@@ -14749,7 +14754,7 @@ export class PoderData {
           `,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.HABILIDADE_CLASSE,
-          prerequisito_nivel: 2,
+          prerequisito_nivel: 5,
           id_classe: 19
         },
         {
@@ -14759,6 +14764,7 @@ export class PoderData {
           <p><i>Acostumado às áreas de Tormenta, o algoz só se sente em casa nesses infernos.</i></p>
           <p>Você se torna imune aos efeitos de áreas de Tormenta (Tormenta20, p. 319). Além disso, nessas áreas você recebe +5 em testes de perícia e seu descanso conta como luxuoso. Pré-requisitos: dois poderes da Tormenta.</p>
           `,
+          poder_chave_distincao: true,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.PODER_DISTINCAO,
           id_distincao: 2,
@@ -14784,7 +14790,7 @@ export class PoderData {
           `,
           referencias: Referencia.HEROIS,
           tipo: TipoPoder.PODER_DISTINCAO,
-          prerequisito_nivel: 17,
+          prerequisito_nivel: 5,
           id_distincao: 2,
         },
         {
@@ -14810,6 +14816,73 @@ export class PoderData {
           tipo: TipoPoder.PODER_DISTINCAO,
           prerequisito_nivel: 17,
           id_distincao: 2,
+        },
+        {
+          id: 1482,
+          nome: 'Predadora',
+          descricao: `
+          <p><i>Improvise. Adapte. Supere.</i></p>
+          <p>Você pode gastar uma ação de movimento e 2 PM para analisar um inimigo em alcance médio. Até o fim da cena, você recebe +1 em testes de perícia e rolagens de dano contra esse inimigo e outras criaturas do mesmo tipo. Para cada outro poder da distinção, você pode gastar +1 PM para aumentar esses bônus em +1. Pré-requisito: treinada em Sobrevivência.</p>`,
+          poder_chave_distincao: true,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 3,
+        },
+        {
+          id: 1483,
+          nome: 'Arquearia Montada',
+          descricao: `
+          <p><i>A morte é uma amazona montada.</i></p>
+          <p>Enquanto está montada, você pode aplicar quaisquer bônus em testes de ataque e rolagens de dano fornecidos pela montaria em seus ataques à distância. Pré-requisito: Bênção de Hippion.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 3,
+        },
+        {
+          id: 1484,
+          nome: 'Bênção de Hippion',
+          descricao: `
+          <p><i>Que o Trono das Rainhas Guerreiras sempre a acompanhe.</i></p>
+          <p>Você recebe um cavalo de guerra parceiro veterano. Caso já possua uma montaria fornecida por outra habilidade, em vez disso essa montaria fornece +2 em sua Destreza. Você e sua montaria possuem um vínculo emocional, sendo sempre capazes de entender um ao outro (não é preciso fazer testes de Adestramento). Caso perca sua montaria, você pode treinar outra com uma semana de trabalho. Pré-requisitos: Ginete, Predadora.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 3,
+        },
+        {
+          id: 1485,
+          nome: 'Estilo da Amazona',
+          descricao: `
+          <p><i>A amazona é uma guerreira rápida, versátil e letal.</i></p>
+          <p>Uma vez por rodada, quando faz um ataque corpo a corpo, se uma de suas mãos estiver livre ou empunhando um escudo leve, você pode gastar 2 PM para fazer um ataque adicional com uma arma de arremesso com essa mão. Pré-requisitos: Estilo de Arremesso, Predadora.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 3,
+        },
+        {
+          id: 1486,
+          nome: 'Nunca Ceder',
+          descricao: `
+          <p><i>Amazonas não se dobram às ferramentas dos opressores.</i></p>
+          <p>Quando falha em um teste de resistência contra um efeito de um inimigo, você pode gastar 2 PM para repetir esse teste, com um bônus igual ao total de poderes da distinção que você possui. Você só pode usar este poder uma vez por efeito. Pré-requisito: Estilo da Amazona.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 3,
+        },
+        {
+          id: 1487,
+          nome: 'Rainha Amazona',
+          descricao: `
+          <p><i>A amazona se torna uma campeã de sua causa — uma inspiração para suas irmãs e um pesadelo para seus inimigos.</i></p>
+          <p>Você recebe +1 em Carisma e, quando usa Predadora, aplica o bônus recebido como RD contra criaturas desse tipo. Pré-requisitos: Arquearia Montada, Nunca Ceder, ter realizado um grande feito ou missão em nome das amazonas.</p>`,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.PODER_DISTINCAO,
+          prerequisito_nivel: 5,
+          id_distincao: 3,
         },
     ];
   }

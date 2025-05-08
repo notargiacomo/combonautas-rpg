@@ -127,9 +127,14 @@
                             </div>
                           </div>
                           <div class="col-sm-12">
-                            <div *ngFor="let poderes of element.poderes" 
+                            <div *ngFor="let poder of element.poderes" 
                                  style="text-align: justify; margin-bottom: 1em; line-height: 1.6;">
-                              <div class="text-justify" [innerHTML]="poderes.descricao"></div>
+                              <div *ngIf="poder.poder_chave_distincao">
+                                  <mat-card class="p-4">
+                                      <div [innerHTML]="poder.descricao"></div>
+                                  </mat-card>
+                              </div>
+                              <div *ngIf="!poder.poder_chave_distincao" class="text-justify" [innerHTML]="poder.descricao"></div>
                             </div>
                           </div>
                         </div>

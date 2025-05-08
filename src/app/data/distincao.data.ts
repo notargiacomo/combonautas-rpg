@@ -49,6 +49,23 @@ export class DistincaoData {
         imagem: 'assets/img/distincao_algoz_tormenta.png',
         referencias: Referencia.HEROIS,
         paginas: '109, 110 e 111'
+      },
+      {
+        id: 3,
+        nome: `Amazona`,
+        nome_arquivo_descricao: `distincao_amazona_descricao`,
+        nome_arquivo_admissao: `distincao_amazona_admissao`,
+        nome_arquivo_informacoes: `distincao_amazona_informacoes`,
+        marca_distincao: `
+        <h4>Armadura das Amazonas</h4>
+        <h5>Armadura das Amazonas</h5>
+        <p><i><b>Orgulhosas, as amazonas vestem sua autoconfiança como uma verdadeira armadura.</b></i></p>
+        <p>Se não estiver usando armadura pesada, você recebe +2 na Defesa.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_amazona.png',
+        referencias: Referencia.HEROIS,
+        paginas: '112, 113 e 114'
       }
     ];
   }

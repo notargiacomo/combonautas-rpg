@@ -26,6 +26,7 @@ export class Poder {
   id_classe?: number;
   id_raca?: number[];
   id_distincao?: number;
+  poder_chave_distincao?: boolean;
   classe?: Classe;
   raca?: Raca;
   duracao?: string;
