@@ -204,11 +204,7 @@ export class ClassesComponent implements OnInit {
         this.classes.forEach(classe => {
           this.poderService.listar({id_classe:classe.id, tipo: TipoPoder.HABILIDADE_CLASSE}).subscribe({
             next: (response: any[]) => {
-              response.sort((a, b) => {
-                const valor_a = a.valor ?? 0;
-                const valor_b = b.valor ?? 0;
-                return valor_a - valor_b;
-              });
+              response.sort((a, b) => a.prerequisito_nivel - b.prerequisito_nivel);
               response.forEach(poder => {
                 poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
                 if (poder.e_poder_magico) {

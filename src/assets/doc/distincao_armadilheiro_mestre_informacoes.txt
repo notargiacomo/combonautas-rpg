@@ -1,0 +1,15 @@
+<h5>Combinando Armadilhas</h5>
+<p>Armadilhas fabricadas por outras habilidades, como aquelas criadas com os poderes de Armadilha do caçador, também são afetadas pelos poderes de armadilheiro mestre. Da mesma forma, habilidades de outras fontes que afetem armadilhas (como o próprio poder Armadilheiro) afetam as criações do armadilheiro mestre igualmente.</p>
+<h5>Armadilhas de Armadilheiro</h5>
+<p>As armadilhas a seguir fazem parte do arsenal de um armadilheiro mestre.</p>
+<ul>
+<li><i><b>Atordoante.<b/><i/> A criatura sofre 4d8 pontos de dano de impacto e fica atordoada por 1 rodada (Fortitude CD Int evita a condição). Uma criatura só pode ser atordoada por esta armadilha uma vez por cena.</li>
+<li><i><b>Barril de Óleo.<b/><i/> Criaturas na área ficam vulneráveis a fogo até se limparem (o que exige uma ação completa).</li>
+<li><i><b>Buraco Portátil.<b/><i/> Um fosso se abre na área. Queda de 6m causa 4d6 pontos de dano de impacto (Atletismo CD 20 para escalar de volta, Reflexos CD Int evita e move para fora da área).</li>
+<li><i><b>Constrangedora.<b/><i/> A criatura sofre um efeito constrangedor, como ser coberta de piche e penas. A vítima fica pasma por 1 rodada e frustrada (Vontade CD Int evita a condição pasmo). Uma criatura só pode ficar pasma por esta armadilha uma vez por cena</li>
+<li><i><b>Fumaça.<b/><i/> Uma nuvem de fumaça espessa obscurece toda a visão na área e dura até o fim da cena. Criaturas a até 1,5m têm camuflagem leve e criaturas a partir de 3m têm camuflagem total.</li>
+<li><i><b>Luz.<b/><i/> Criaturas na área ficam cegas por 1d4 rodadas e depois ofuscadas (Reflexos CD Int evita a condição cego).</li>
+<li><i><b>Mola.<b/><i/> A criatura é empurrada 9m na direção oposta ao centro da armadilha e fica caída (Reflexos CD Int evita o empurrão). Se colidir com algum obstáculo no caminho do empurrão, a vítima sofre 2d6 pontos de dano de impacto.</li>
+<li><i><b>Mina.<b/><i/> Criaturas na área sofrem 4d6 pontos de dano de impacto e são empurradas 3m na direção oposta ao centro da armadilha (Reflexos CD Int reduz à metade e evita o empurrão)</li>
+<li><i><b>Substância Enervante.<b/><i/> Criaturas na área são cobertas por substâncias enervantes que impedem que elas façam quaisquer ações que exijam calma ou concentração (como lançar magias) até se limparem (uma ação padrão).</li>
+</ul>

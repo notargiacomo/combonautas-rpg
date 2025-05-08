@@ -14741,6 +14741,17 @@ export class PoderData {
           tipo: TipoPoder.PODER_DISTINCAO,
           id_distincao: 1,
         },
+        {
+          id: 1476,
+          nome: 'Animar Cadáver',
+          descricao: `
+          No 2º nível, você pode gastar uma ação completa e 3 PM para animar o cadáver de uma criatura Pequena, Média ou Grande em alcance curto. O cadáver se torna um parceiro iniciante de um tipo a sua escolha, adequado ao seu tamanho e anatomia, que não conta em seu limite de parceiros (mas você só pode ter um parceiro cadáver por vez). Quando sofre dano, você pode sacrificar o parceiro cadáver para reduzir esse dano à metade. Cadáveres sacrificados não podem ser reanimados.
+          `,
+          referencias: Referencia.HEROIS,
+          tipo: TipoPoder.HABILIDADE_CLASSE,
+          prerequisito_nivel: 2,
+          id_classe: 19
+        },
     ];
   }
 }
