@@ -16307,6 +16307,346 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 26,
       },
+      {
+        id: 1591,
+        nome: 'Lógica Alcoólica',
+        descricao: `
+        <p><i>Quando o mestre bêbado entra em combate, ninguém sabe como ele vai lutar... Nem ele mesmo!</i></p>
+        <p>No início de cada rodada, você recebe um dos benefícios a seguir, que dura por 1 rodada. Role 1d6: 1) +2 em testes de ataque; 2) +2 em rolagens de dano; 3) +3m de deslocamento; 4) +2 na Defesa; 5) +2 na margem de ameaça com ataques desarmados; 6) +2 em testes de resistência. Para cada dois outros poderes da distinção, esses bônus aumentam em +1 (ou +1,5m). Pré-requisitos: treinado em Fortitude e Luta, Briga ou Estilo Desarmado.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 27,
+      },
+      {
+        id: 1592,
+        nome: 'Bafo de Dragão',
+        descricao: `
+        <p><i>O hálito do mestre bêbado pode ser inflamável!</i></p>
+        <p>Uma vez por rodada, você pode gastar uma ação de movimento e beber um número de goles do seu recipiente (limitado pelo número de poderes da distinção que você possui) para desferir um sopro flamejante num cone de 9m. Criaturas na área sofrem 2d6 pontos de dano de fogo por gole e ficam em chamas (Reflexos CD Con + número de poderes da distinção que você possui reduz à metade e evita a condição). Pré-requisitos: Con 3, Bafo de Troll.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 27,
+      },
+      {
+        id: 1593,
+        nome: 'Bafo de Troll',
+        descricao: `
+        <p><i>O hálito do mestre bêbado é capaz de fazer Megalokk perder o apetite.</i></p>
+        <p>Você pode gastar uma ação padrão e tomar um gole do seu recipiente para expelir um hálito horrível contra uma criatura adjacente. O alvo fica enjoado por 1d4+1 rodadas (Fort CD Con + número de poderes da distinção que você possui reduz para 1 rodada). Criaturas com Faro sofrem –5 no teste de Fortitude. Pré-requisito: Lógica Alcoólica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 27,
+      },
+      {
+        id: 1594,
+        nome: 'Bebida Revigorante',
+        descricao: `
+        <p><i>“Eu bebo pra ficar mal, se fosse pra ficar bem eu tomava remédio!”</i></p>
+        <p>Você pode gastar uma ação de movimento e tomar um gole do seu recipiente para recuperar 4d6 PV ou remover uma condição entre abalado, alquebrado, apavorado, atordoado, cego, confuso, enfeitiçado, esmorecido, exausto, fatigado, frustrado, pasmo ou surdo. Quando usa este poder, você pode beber goles adicionais (limitados pelo número de poderes da distinção que você possui) para remover uma condição adicional ou aumentar a cura em +2d6 PV. Pré-requisito: Lógica Alcoólica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 27,
+      },
+      {
+        id: 1595,
+        nome: 'Luta Ridícula',
+        descricao: `
+        <p><i>É difícil levar a sério um inimigo que está caindo de bêbado.</i></p>
+        <p>Quando passa em um teste para fintar contra uma criatura inteligente (Int –3 ou maior), além do normal, você faz essa criatura subestimá-lo por 1 rodada. Enquanto o está subestimando, a criatura não pode fazer ações hostis contra você, exceto a ação agredir — mas não pode fazer nenhum ataque adicional ao usá-la! Você pode beber um gole ao fintar para somar o número de poderes da distinção que possui no teste da finta. Pré-requisitos: treinado em Enganação, Lógica Alcoólica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 27,
+      },
+      {
+        id: 1596,
+        nome: 'Tudo que Há de Bom',
+        descricao: `
+        <p><i>“Açúcar, tempero... O que mais está faltando?”</i></p>
+        <p>Você pode coletar e usar ingredientes monstruosos em seus pratos (veja o quadro). Quando você fabrica um prato especial, pode adicionar 1 ingrediente monstruoso à receita, +1 ingrediente diferente para cada dois outros poderes da distinção que possui. Pré-requisito: Foco em Perícia (Ofício [cozinheiro]).</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 28,
+      },
+      {
+        id: 1597,
+        nome: 'À Moda da Casa',
+        descricao: `
+        <p><i>“...metade com pimenta, metade sem, e um terço sem cebola…”</i></p>
+        <p>Você pode preparar pratos especiais que combinam os efeitos de dois pratos diferentes — por exemplo, um caldo com os efeitos combinados de um prato de aventureiro e uma sopa de peixe. Fazer isso demora o mesmo tempo que um prato normal, mas consome os ingredientes de ambos e usa a mais alta CD para fabricar entre eles. Além disso, sempre que uma receita pedir um ingrediente específico, você pode substituí-lo por um ingrediente monstruoso. Pré-requisito: Tudo que Há de Bom.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 28,
+      },
+      {
+        id: 1598,
+        nome: 'Banquete de Aventureiros',
+        descricao: `
+        <p><i>“Comida faz mais do que sustentar — ela conecta. Memórias. Sentimentos. Pessoas. E, conectados, somos mais fortes.”</i></p>
+        <p>Uma vez por tempo entre aventuras, você pode gastar uma quantidade de ingredientes monstruosos igual ao número de poderes da distinção que possui para preparar um banquete para seu grupo. Os participantes desse banquete recebem, durante a próxima aventura, uma quantidade de dados de auxílio (d6) igual à quantidade de ingredientes gastos no banquete. Sempre que fizer um teste de perícia, você pode gastar 1 dado de auxílio e adicionar o resultado como bônus no teste. Se 3 ou mais ingredientes diferentes forem usados no banquete, os dados de auxílio tornam-se d8. Pré-requisitos: três poderes da distinção.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 28,
+      },
+      {
+        id: 1599,
+        nome: 'Guardar num potinho',
+        descricao: `
+        <p><i>“Manda dois pra viagem!”</i></p>
+        <p>Quando prepara um prato especial, você pode gastar 1 ingrediente monstruoso adicional. Se fizer isso, ao fim da refeição você pode embalar os restos do prato na forma de um lanche — que pode ser consumido com uma ação padrão e fornece os mesmos benefícios do prato original. Lanches duram 1 dia por poder da distinção. Pré-requisito: À Moda da Casa.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 28,
+      },
+      {
+        id: 1600,
+        nome: 'Mise en Place',
+        descricao: `
+        <p><i>“Eu já disse que julienne é corte na vertical! NA VERTICAL!”</i></p>
+        <p>Você pode usar Ofício (cozinheiro) para identificar criaturas, exceto construtos e mortos-vivos, e para extrair itens de criaturas mortas. Além disso, quando você passa num teste para extrair itens consumíveis de uma criatura morta, extrai 1 item adicional para cada 10 pontos pelos quais o resultado do teste supera a CD. Pré-requisito: Tudo que Há de Bom.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 28,
+      },
+      {
+        id: 1601,
+        nome: 'O Primeiro Desejo',
+        descricao: `
+        <p><i>O poder dos gênios aflora diante de um desejo sincero.</i></p>
+        <p>A redução de custo de suas magias lançadas com a habilidade Desejos muda para –2 PM. Pré-requisitos: treinado em Intuição e Misticismo.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 29,
+      },
+      {
+        id: 1602,
+        nome: 'O Segundo Desejo',
+        descricao: `
+        <p><i>O poder dos desejos desbloqueia conhecimentos que um mestre dos desejos jamais imaginava possuir.</i></p>
+        <p>Uma vez por rodada, um aliado pode gastar uma ação livre para pedir que você lance uma magia arcana de 1° círculo que você não conheça. Até o fim do seu próximo turno, você pode lançar essa magia. Pré-requisito: O Primeiro Desejo.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 29,
+      },
+      {
+        id: 1603,
+        nome: 'O Último Desejo',
+        descricao: `
+        <p><i>Não há nada mais forte que um desejo.</i></p>
+        <p>Uma vez por aventura, você pode lançar a magia Desejo sem pagar seu custo em PM (mas você ainda precisa pagar outros custos da magia, como sacrifício de PM). Você só pode usar esta habilidade em resposta a um pedido feito por um aliado desde seu último turno. Pré-requisitos: O Segundo Desejo, realizar três desejos grandiosos. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 29,
+      },
+      {
+        id: 1604,
+        nome: 'Gênio da Lâmpada',
+        descricao: `
+        <p><i>Além de uma morada, a lâmpada é um refúgio, um lugar onde o mestre dos desejos pode descansar.</i></p>
+        <p>Você recebe uma lâmpada mágica, um item Minúsculo com RD 10 e PV iguais à metade dos seus. Enquanto estiver de posse da lâmpada, você pode lançar a magia Refúgio sem pagar seu custo básico. Além disso, se for reduzido a 0 PV ou menos, você pode gastar 3 PM para ser transportado magicamente para dentro da lâmpada; isso interrompe qualquer perda de vida ou dano contínuo, mas o deixa inconsciente em um transe místico até você voltar a ter pelo menos 1 PV. Dentro da lâmpada, você recupera PV por descanso normalmente e pode ser afetado por efeitos mágicos de cura lançados sobre a lâmpada. Se perder sua lâmpada, você pode criar uma nova com uma semana de trabalho e T$ 100. Pré-requisitos: O Primeiro Desejo, Refúgio. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 29,
+      },
+      {
+        id: 1605,
+        nome: 'Sempre Disponível',
+        descricao: `
+        <p><i>O mestre dos desejos sempre está onde é mais necessário.</i></p>
+        <p>Você aprende e pode lançar a magia Salto Dimensional. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Além disso, se um aliado estiver empunhando sua lâmpada e gastar uma ação livre para esfregá-la, até o fim do seu próximo turno você pode lançar essa magia sem pagar seu custo básico, mas deve ter como destino um espaço adjacente à lâmpada. Pré-requisito: Gênio da Lâmpada.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 29,
+      },
+      {
+        id: 1606,
+        nome: 'Mahou-jutsu',
+        descricao: `
+        <p><i>O princípio fundamental do mahou-jutsu é a integração fluida de ataques desarmados e magias arcanas.</i></p>
+        <p>Uma vez por rodada, quando usa uma ação agredir para fazer dois ou mais ataques desarmados, você pode gastar 2 PM para lançar uma magia arcana com execução de ação de movimento ou padrão como ação livre. O círculo máximo de magias que você pode lançar com este poder é limitado pela quantidade de poderes da distinção que possui.Pré-requisitos: lançar magias arcanas, treinado em Misticismo, Briga ou Estilo Desarmado.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 30,
+      },
+      {
+        id: 1607,
+        nome: 'Defesa da Magia',
+        descricao: `
+        <p><i>O poder arcano fortalece as defesas do mestre mahou-jutsu.</i></p>
+        <p>Quando lança uma magia arcana, você recebe PV temporários iguais a 5x o círculo da magia lançada. Esses PV duram até o início do seu próximo turno. Pré-requisito: Mahou-Jutsu. </p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 30,
+      },
+      {
+        id: 1608,
+        nome: 'Determinação da Dor',
+        descricao: `
+        <p><i>A disciplina do treino permite ao mestre mahou-jutsu tirar forças do próprio sofrimento.</i></p>
+        <p>Você soma sua Constituição nos testes de Vontade para concentração em magias (Tormenta20, p. 170). Além disso, quando sofre dano, você soma sua Constituição no seu limite de PM para magias arcanas até o fim do seu próximo turno. Pré-requisitos: Con 1, Mahou-Jutsu.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 30,
+      },
+      {
+        id: 1609,
+        nome: 'Esplendor Vitorioso Inigualável',
+        descricao: `
+        <p><i>Para obter a vitória, o mestre mahou-jutsu pode sacrificar o próprio corpo.</i></p>
+        <p>Quando lança uma magia de dano, você pode gastar 10 PV para infundi-la com sua própria força vital. Se fizer isso, você soma sua Constituição à CD da magia e o dano básico de seu ataque desarmado ao dano dela. Pré-requisitos: lançar magias arcanas de 2º círculo, Punho Arcano.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 30,
+      },
+      {
+        id: 1610,
+        nome: 'Punho Arcano',
+        descricao: `
+        <p><i>Quando o punho de um mestre mahou-jutsu golpeia, carrega consigo os maiores segredos arcanos.</i></p>
+        <p>Uma vez por rodada, quando lança uma magia arcana com alcance de toque e execução de ação de movimento ou padrão, você pode gastar 2 PM para fazer um ataque desarmado contra o alvo da magia como ação livre. Se acertar esse ataque, a CD da magia aumenta em +1. Para cada dois outros poderes da distinção que você possui, a CD aumenta em +1. Pré-requisito: Mahou-Jutsu.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 30,
+      },
+      {
+        id: 1611,
+        nome: 'Mestre Esgrimista',
+        descricao: `
+        <p><i>Por suas restrições de equipamento, o Mosqueteiro treina sua esgrima mais que qualquer um.</i></p>
+        <p>Seu multiplicador de crítico com florete e rapieira aumenta em +1. Além disso, quando faz um ataque com uma dessas armas, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Pré-requisitos: proficiência com armas marciais, Estilo de Uma Arma.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 31,
+      },
+      {
+        id: 1612,
+        nome: 'Heroísmo GALANTE',
+        descricao: `
+        <p><i>Um Mosqueteiro não hesita em defender um inocente, mesmo que isso custe sua vida.</i></p>
+        <p>Quando um aliado adjacente é alvo de um ataque, você pode gastar 1 PM para se tornar o alvo do ataque, que então é resolvido normalmente. Se você tiver todos os poderes da distinção, quando um aliado em alcance curto é alvo de um ataque, você pode gastar 3 PM para se deslocar até um espaço adjacente a ele e ao atacante (desde que tenha um caminho desimpedido) e se tornar o alvo do ataque. Você só pode usar este poder uma vez por rodada e ele requer liberdade de movimentos; você não pode usá-lo se estiver de armadura pesada ou na condição imóvel. Pré-requisitos: treinado em Reflexos, Mestre Esgrimista. </p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 31,
+      },
+      {
+        id: 1613,
+        nome: 'Todos Por Um',
+        descricao: `
+        <p><i>Quando podem confiar em seus aliados, os Mosqueteiros se tornam imbatíveis.</i></p>
+        <p>Quando você usa Duelo, pode gastar +1 PM para cada aliado a sua escolha em alcance curto (limitado pelo seu Carisma). Aliados escolhidos também recebem os benefícios de Duelo contra o alvo (mas perdem-no se atacarem outro oponente). Pré-requisitos: Duelo, Um por Todos.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 31,
+      },
+      {
+        id: 1614,
+        nome: 'Um por Todos',
+        descricao: `
+        <p><i>O Mosqueteiro sabe trabalhar em equipe como ninguém.</i></p>
+        <p>Quando você faz um teste para ajudar (exceto para ataques), o bônus que você fornece aumenta em +2. Além disso, uma vez por rodada, quando acerta um ataque de florete ou rapieira em um inimigo, você pode usar o resultado desse ataque como um teste para ajudar um ataque de um aliado feito contra esse inimigo até a próxima rodada. Pré-requisito: Mestre Esgrimista.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 31,
+      },
+      {
+        id: 1615,
+        nome: 'Valentia',
+        descricao: `
+        <p><i>Um Mosqueteiro de Rishantor não teme nenhum perigo.</i></p>
+        <p>Você pode lançar Heroísmo, mas apenas sobre si mesmo. Esta não é uma habilidade mágica e provém de sua galanteria, panache e ousadia altaneira (veja “Magias Simuladas”, p. 44). Pré-requisitos: Mestre Esgrimista, dois outros poderes da distinção.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 31,
+      },
+      {
+        id: 1616,
+        nome: 'Fabricar Mutagênicos',
+        descricao: `
+        <p><i>O mutagenista desenvolve suas primeiras fórmulas.</i></p>
+        <p>Você pode fabricar e usar tonificantes (veja “Mutagênicos”). Para cada dois outros poderes da distinção, você pode fabricar e usar respectivamente energizantes e despersonalizantes. Pré-requisitos: treinado em Fortitude e Ofício (alquimista).</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 32,
+      },
+      {
+        id: 1617,
+        nome: 'Ingestão Rápida',
+        descricao: `
+        <p><i>Preparados são a chave do poder do mutagenista.</i></p>
+        <p>Uma vez por rodada, você pode ingerir uma poção ou preparado como ação livre. Pré-requisito: Fabricar Mutagênicos.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 32,
+      },
+      {
+        id: 1618,
+        nome: 'Mutagenia Adicional',
+        descricao: `
+        <p><i>Através de exercícios e fórmulas especiais, o mutagenista aumenta a tolerância de seu corpo a alterações.</i></p>
+        <p>Seu limite de mutagênicos ativos aumenta em +1. Pré-requisito: Fabricar Mutagênicos.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 32,
+      },
+      {
+        id: 1619,
+        nome: 'Potencializar Mutagênicos',
+        descricao: `
+        <p><i>Com a experimentação, o mutagenista desenvolve formas ainda mais eficientes de alterar seu corpo.</i></p>
+        <p>O efeito básico de seus mutagênicos se torna seu efeito de exaurir (você ainda pode exauri-lo com efeitos cumulativos). Pré-requisito: Organismo Reagente.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 32,
+      },
+      {
+        id: 1620,
+        nome: 'Organismo Reagente',
+        descricao: `
+        <p><i>O corpo do mutagenista se torna um laboratório.</i></p>
+        <p>Quando você ingere um preparado alquímico, se ele fornece um bônus em perícias, esse bônus aumenta em +1 e, se ele fornece PV ou PM (temporários ou por cura), esse efeito aumenta em +1 por dado. Para cada dois outros poderes da distinção, esses efeitos aumentam em +1. Pré-requisito: Mutagenia Adicional.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 32,
+      },
       
     )
 
