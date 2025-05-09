@@ -16647,7 +16647,241 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 32,
       },
-      
+      {
+        id: 1621,
+        nome: 'Rápido no Gatilho',
+        descricao: `
+        <p><i>“Você chama o infeliz para um duelo, olha bem nos olhos, saca primeiro e manda ele para o reino dos pés-juntos.”</i></p>
+        <p>Você recebe +2 em Iniciativa para cada poder da distinção que possui e, se for o primeiro na iniciativa, seus inimigos ficam desprevenidos contra você nessa rodada. Além disso, seu multiplicador de crítico contra criaturas desprevenidas aumenta em +1. Pré-requisitos: proficiência com armas de fogo, Saque Rápido.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 33,
+      },
+      {
+        id: 1622,
+        nome: 'Balada do Pistoleiro',
+        descricao: `
+        <p><i>“Vou dar a vocês uma última chance de desistir...”</i></p>
+        <p>Se estiver empunhando uma ou mais armas de fogo, você pode gastar uma ação completa e uma quantidade de PM a sua escolha (limitada pela quantidade de munição dessas armas) para desferir uma série de disparos com elas. Faça um ataque à distância contra cada inimigo a sua escolha, até um limite de inimigos igual ao total de PM gastos. Então faça uma única rolagem de dano com um dado extra de dano do mesmo tipo e aplique-a em cada inimigo atingido. Pré-requisito: Morrer Não É Muita Vida.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 33,
+      },
+      {
+        id: 1623,
+        nome: 'Buscar Cobertura',
+        descricao: `
+        <p><i>“Um pistoleiro sabe a hora de atirar e a hora de correr.”</i></p>
+        <p>Uma vez por rodada, você pode gastar 1 PM para se mover até uma cobertura que possa alcançar com seu deslocamento (desde que tenha um caminho desimpedido até ela). Pré-requisito: Rápido no Gatilho.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 33,
+      },
+      {
+        id: 1624,
+        nome: 'Fornecedor de Smokestone',
+        descricao: `
+        <p><i>“Eu conheço um cara…”</i></p>
+        <p>Quando chega em uma comunidade equivalente a uma vila ou maior, você pode gastar 2 PM para fazer um teste de Carisma (CD 10). Se passar, enquanto estiver nessa comunidade, pode comprar armas de fogo de qualquer tipo e suas munições com 20% de desconto (não cumulativo com barganha e outros descontos) e pode conseguir qualquer cuidado ou manutenção necessários para essas armas. Pré-requisito: Rápido no Gatilho.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 33,
+      },
+      {
+        id: 1625,
+        nome: 'Morrer não é Muita Vida',
+        descricao: `
+        <p><i>“A vida é dura, mas eu sou mais."</i></p>
+        <p>Você aprendeu a se defender com o que tem. Quando se move 6m ou mais, você recebe +2 na Defesa e em Reflexos. Além disso, carrega um amuleto da sorte, como um tibar ou uma garrafinha de metal, que já salvou sua vida mais de uma vez. Uma vez por cena, quando sofre dano que o levaria a 0 PV ou menos, você pode ignorar esse dano. Pré-requisito: Buscar Cobertura.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 33,
+      },
+      {
+        id: 1626,
+        nome: 'Viajante das planícies',
+        descricao: `
+        <p><i>“Você não trouxe um cavalo a menos, trouxe dois a mais…”</i></p>
+        <p>Você recebe um cavalo de guerra parceiro veterano. Caso já possua uma montaria fornecida por outra habilidade, em vez disso essa montaria se torna também um parceiro vigilante iniciante. Em ambos os casos, nessa montaria você não sofre a penalidade em testes de ataque à distância enquanto montado. Caso perca sua montaria, você pode treinar outra com uma semana de trabalho. Pré-requisitos: treinado em Cavalgar, Rápido no Gatilho.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 33,
+      },
+      {
+        id: 1627,
+        nome: 'Pedagogia Mágica',
+        descricao: `
+        <p><i>Um professor de magia domina meios peculiares de transmissão do conhecimento</i></p>
+        <p>Você pode gastar 1 hora e 1 PM para lecionar para uma quantidade de alunos igual à sua Inteligência. Escolha uma de suas magias de 1º círculo. Até o próximo dia, cada aluno pode lançar essa magia uma única vez, pagando seu custo normal (atributo-chave Inteligência). Para cada outros dois poderes da distinção que você possui, cada aluno pode lançar a magia “aprendida” uma vez adicional no mesmo dia. Se o aluno já conhecia essa magia, pode lançá-la esse número de vezes com custo diminuído em –1 PM. Pré-requisitos: lançar magias de 2° círculo, Foco em Perícia (Misticismo).</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 34,
+      },
+      {
+        id: 1628,
+        nome: 'Introdução à Magia',
+        descricao: `
+        <p><i>Alunos nessa etapa de aprendizado precisam de tutoria mais próxima e atenta.</i></p>
+        <p>Você e seus aliados em alcance curto recebem +2 em Misticismo e Vontade. Além disso, sempre que você lança uma magia, o custo das magias de seus aliados diminui em –1 PM por 1 rodada. Pré-requisito: Pedagogia Mágica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 34,
+      },
+      {
+        id: 1629,
+        nome: 'Demonstrações Práticas',
+        descricao: `
+        <p><i>Nessa fase do aprendizado, exemplos práticos falam mais alto do que qualquer outra coisa…</i></p>
+        <p>Quando um inimigo falha em um teste de resistência contra uma de suas magias, você pode fazer um teste de Misticismo para ajudar. Até a próxima rodada, cada aliado em alcance curto recebe um bônus em Misticismo e na CD de suas magias igual ao bônus fornecido por essa ajuda.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 34,
+      },
+      {
+        id: 1630,
+        nome: 'Notório Saber Arcano',
+        descricao: `
+        <p><i>Todo o respeito da Academia pelos mestres de notório saber.</i></p>
+        <p>Você recebe um assistente, um parceiro veterano a sua escolha entre adepto e magivocador. Além disso, o custo adicional de seus poderes de aprimoramento diminui em –1 PM (somente com magias arcanas). Pré-requisitos: Orgulho do Mestre, dois poderes de aprimoramento.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 34,
+      },
+      {
+        id: 1631,
+        nome: 'Orgulho do Mestre',
+        descricao: `
+        <p><i>Um verdadeiro professor vibra profundamente com as vitórias de seus alunos.</i></p>
+        <p>Sempre que um inimigo falha em um teste de resistência contra uma magia de um aliado em alcance curto, se essa magia custou pelo menos 1 PM, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao dobro do número de poderes da distinção que possui, e eles desaparecem no fim da cena. Pré-requisito: Demonstrações Práticas.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 34,
+      },
+      {
+        id: 1632,
+        nome: 'Cofres Fundos',
+        descricao: `
+        <p><i>Um senador que trabalha para o povo é a garantia de impostos bem gastos.</i></p>
+        <p>Uma vez por aventura, você pode receber fundos do Senado. Faça um teste de Carisma com um bônus de +4 por poder da distinção. Você recebe um número de tibares de ouro igual ao resultado do teste. Se tiver pelo menos três poderes da distinção, também pode requisitar um item mágico menor, que deve ser devolvido (ou reembolsado) ao Senado no fim da aventura. Se tiver cinco poderes da distinção, o item requisitado pode ser médio. O uso deste poder é condicionado ao local onde você se encontra e a sua possibilidade de contactar o Senado ou seus representantes. Pré-requisitos: treinado em Diplomacia e Nobreza.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 35,
+      },
+      {
+        id: 1633,
+        nome: 'Apoio Popular',
+        descricao: `
+        <p><i>A voz do povo é a voz do Senado.</i></p>
+        <p>Você pode usar o poder Autoridade Feudal (Tormenta20, p. 79). Se já o possui, pode conclamar dois parceiros pagando os custos de cada um. Para cada dois outros poderes da distinção, o nível desses parceiros aumenta em um (de iniciante para veterano, de veterano para mestre). Pré-requisito: Um Minotauro de Bem.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 35,
+      },
+      {
+        id: 1634,
+        nome: 'Deliberação Desnorteante',
+        descricao: `
+        <p><i>Sua argumentação complexa e intrincada é capaz de deixar seus adversários sem reação.</i></p>
+        <p>Quando usa uma habilidade que exige um teste de Vontade, você pode gastar 1 PM. Se fizer isso, as criaturas que falharem nesse teste ficam pasmas por 1 rodada (uma vez por cena). Pré-requisito: Cofres Fundos.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 35,
+      },
+      {
+        id: 1635,
+        nome: 'Inocência Convicta',
+        descricao: `
+        <p><i>“É uma mentira da Legião Imperial! Mentira da Legião Imperial! Mentira!”</i></p>
+        <p>Quando falha em um teste de resistência, você pode gastar 2 PM para rolar novamente, usando Nobreza em vez da perícia original, com um bônus igual ao total de poderes da distinção que você possui. Pré-requisito: Um Minotauro de Bem.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 35,
+      },
+      {
+        id: 1636,
+        nome: 'Um Minotauro de Bem',
+        descricao: `
+        <p><i>Um senador é reconhecido como um membro honrado e prestigioso da sociedade.</i></p>
+        <p>Você recebe +1 em testes de perícias baseadas em Carisma e na CD dos testes de Vontade para resistir às suas habilidades. Para cada outro poder da distinção, esses bônus aumentam em +1. Pré-requisito: Cofres Fundos.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 35,
+      },
+      {
+        id: 1637,
+        nome: 'Aquele Papinho',
+        descricao: `
+        <p><i>Uma boa conversa, uma cara inocente… e o vigarista tem seu alvo na palma da sua mão.</i></p>
+        <p>Você recebe +1 em Diplomacia, Enganação e Intuição e na CD de suas habilidades (exceto magias) baseadas em Carisma. Esses bônus aumentam em +1 para cada outro poder da distinção que você possuir. Pré-requisitos: treinado em Enganação, Aparência Inofensiva.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 36,
+      },
+      {
+        id: 1638,
+        nome: 'Calma Lá',
+        descricao: `
+        <p><i>Uma língua rápida é vital para quem vive de passar os outros para trás.</i></p>
+        <p>Você não sofre a penalidade de –10 por fazer um teste de Diplomacia para mudar atitude como uma ação completa e, quando a primeira rodada de combate se inicia, pode fazer um desses testes antes de todos os participantes agirem. Se mudar a atitude de algum inimigo para indiferente ou melhor dessa forma, em vez disso ele fica pasmo por 1 rodada. Pré-requisito: Aquele Papinho.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 36,
+      },
+      {
+        id: 1639,
+        nome: 'Efeito Placebo',
+        descricao: `
+        <p><i>“Mas é claro que funciona! Eu mentiria para você?”</i></p>
+        <p>Para cada poder da distinção, escolha uma magia de 1º círculo, arcana ou divina, que possa ser transformada em poção. Você pode gastar uma ação completa e 3 PM para transformar um de seus misteriosos elixires de água com açúcar em uma poção de uma dessas magias instantaneamente (atributo-chave Carisma). O custo do item é reduzido à metade e você não precisa fazer o teste de Ofício (alquimista), mas a poção só dura até o fim da cena. Pré-requisito: Aquele Papinho.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 36,
+      },
+      {
+        id: 1640,
+        nome: 'Na Cara Não!',
+        descricao: `
+        <p><i>A melhor forma de vencer uma briga é nunca entrar nela… Mas, se o trobo já foi para o brejo, o vigarista sabe pelo menos evitar o pior.</i></p>
+        <p>Quando usa Rolamento Defensivo, você recebe um uso adicional de Aparência Inofensiva nessa cena. Pré-requisitos: Aquele Papinho, Rolamento Defensivo.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 36,
+      },
+      {
+        id: 1641,
+        nome: 'Relíquias Sagradas',
+        descricao: `
+        <p><i>Certos vigaristas conseguem enredar até os deuses em sua teia de mentiras.</i></p>
+        <p>Você pode enfeitar um item mundano com motivos religiosos para que ele se pareça com um acessório mágico menor a sua escolha. Fazer isso gasta 1 hora de trabalho e 1/100 do preço do acessório. Para usar a “relíquia” primeiro você precisa empunhá-la (ou vesti-la) e gastar uma ação de movimento e 2 PM para professar seus poderes em voz alta. Se fizer isso, ela funciona como se fosse verdadeira até o fim da cena, ou até você ativar outra de suas relíquias. Você pode ter até uma relíquia sagrada por poder da distinção que possuir. Pré-requisitos: Calma Lá, Efeito Placebo.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 36,
+      },
     )
 
   }
