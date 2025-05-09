@@ -15661,6 +15661,653 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 15,
       },
+      {
+        id: 1555,
+        nome: 'Afinidade Dracônica',
+        descricao: `
+        <p><i>O primeiro passo de um dracomante real é dominar o elemento regido por seu mestre.</i></p>
+        <p>Você recebe +2 na CD de suas magias que causam dano do tipo da essência dracônica do seu mestre e, para cada poder da distinção, recebe redução 3 contra esse tipo de dano. Pré-requisito: 5º nível de Mago.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 16,
+      },
+      {
+        id: 1556,
+        nome: 'Dracomancia',
+        descricao: `
+        <p><i>Ao usar seu poder, o dracomante real se aproxima da forma de seu mestre.</i></p>
+        <p>Quando lança uma magia, você recebe redução de dano 5 e resistência a magia +5 até o início de seu próximo turno. Pré-requisito: Afinidade Dracônica.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 16,
+      },
+      {
+        id: 1557,
+        nome: 'Majestade Elemental',
+        descricao: `
+        <p><i>Assim como a fúria de um Dragão-Real, o poder do dracomante não pode ser detido.</i></p>
+        <p>Suas magias que causam dano do mesmo tipo da essência dracônica do seu mestre ignoram até 20 pontos de RD e, contra criaturas imunes, ainda causam metade do dano. Pré-requisitos: lançar magias arcanas de 3º círculo, Dracomancia. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 16,
+      },
+      {
+        id: 1558,
+        nome: 'Memória Dracônica',
+        descricao: `
+        <p><i>Assim como um verdadeiro dragão, o dracomante usa seu elemento de forma natural e instintiva.</i></p>
+        <p>Você pode memorizar um número de magias adicionais por dia igual ao total de poderes da distinção que possui, mas só pode memorizar dessa forma magias que causam dano do mesmo tipo que a essência dracônica de seu mestre. Pré-requisito: Dracomancia.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 16,
+      },
+      {
+        id: 1559,
+        nome: 'Verdadeiro Poder',
+        descricao: `
+        <p><i>O ápice do poder dracônico é se tornar um dragão.</i></p>
+        <p>Você aprende e pode lançar Metamorfose e, enquanto estiver sob efeito dessa magia, pode lançar magias normalmente. Alternativamente, se tiver o suplemento Ameaças de Arton, em vez disso aprende e pode lançar Transformação em Dragão (p. 405) e não precisa de componente material para se transformar em um dragão do tipo da essência dracônica de seu mestre. Se você aprender a magia fornecida por este poder novamente, seu custo diminui em –1 PM. Pré-requisitos: lançar magias arcanas de 4º círculo, quatro poderes da distinção.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 16,
+      },
+      {
+        id: 1560,
+        nome: 'Curandeira Exímia',
+        descricao: `
+        <p><i>A drogadora aprende técnicas curativas que usam seu próprio corpo para fortalecer remédios.</i></p>
+        <p>Seu corpo conta como uma maleta de medicamentos e instrumentos de Ofício (alquimista) e fornece um bônus nessas perícias igual ao total de poderes da distinção que você possui. Além disso, quando usa um preparado de cura que você mesma tenha fabricado, você soma sua Constituição no total de pontos de vida recuperados pelo item. Pré-requisitos: treinada em Cura e Ofício (alquimista), Vitalidade.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 17,
+      },
+      {
+        id: 1561,
+        nome: 'Aspersão Curativa',
+        descricao: `
+        <p><i>As emanações corporais da drogadora atuam como medicamentos poderosos sob seu controle.</i></p>
+        <p>Você pode gastar uma ação padrão e 3 PV (que não podem ser temporários) para secretar um líquido curativo sobre outra criatura adjacente. A criatura cura 3d6+3 pontos de vida ou uma de suas condições entre abalado, apavorado, alquebrado, atordoado, cego, confuso, debilitado, enjoado, envenenado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, ofuscado, paralisado, pasmo ou surdo. Para cada outros dois poderes da distinção, você pode gastar mais 3 PV quando usa este poder para curar mais 3d6+3 PV ou mais uma condição (em qualquer combinação de efeitos). Pontos de vida gastos dessa forma só podem ser recuperados com descanso. Pré-requisito: Curandeira Exímia.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 17,
+      },
+      {
+        id: 1562,
+        nome: 'Laboratório Natural',
+        descricao: `
+        <p><i>O corpo da drogadora se torna um laboratório natural, capaz de converter ingredientes em fórmulas como um processo biológico.</i></p>
+        <p>Um número de vezes por dia igual ao seu número de poderes da distinção, você pode fazer um teste de Ofício (alquimista) para fabricar um item alquímico ou uma poção, sem gastar tempo (mas você ainda gasta as matérias-primas). Pré-requisito: Remédios da Floresta.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 17,
+      },
+      {
+        id: 1563,
+        nome: 'Perfume Intoxicante',
+        descricao: `
+        <p><i>A drogadora aprende a metabolizar feromônios em seu corpo, capazes de marcar perigos e preparar seus aliados contra eles.</i></p>
+        <p>Você recebe +2 em Adestramento e Diplomacia e, quando você sofre um ataque corpo a corpo (sendo acertada ou não), o atacante é marcado por seus feromônios até o fim da cena. Você e seus aliados ignoram a camuflagem de criaturas marcadas dessa forma e recebem +2 em testes de ataque corpo a corpo ou à distância em alcance curto contra elas. Para cada dois outros poderes da distinção, todos os bônus fornecidos por este poder aumentam em +1. Pré-requisito: Curandeira Exímia.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 17,
+      },
+      {
+        id: 1564,
+        nome: 'Remédios da Floresta',
+        descricao: `
+        <p><i>A drogadora aprende a empregar seu próprio corpo para produzir poções mágicas.</i></p>
+        <p>Você aprende suas primeiras receitas de drogadora (veja o quadro acima) e pode gastar uma ação padrão para fabricar uma poção com essas receitas instantaneamente. Você não paga seu custo em tibares, mas gasta uma quantidade de PV (que não podem ser temporários) igual ao custo em PM da magia, e a poção só dura até o fim da cena. Pontos de vida perdidos dessa forma só podem ser recuperados por descanso. Pré-requisito: Curandeira Exímia.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 17,
+      },
+      {
+        id: 1565,
+        nome: 'Aprimorar Bugiganga',
+        descricao: `
+        <p><i>Aceitando uma explosão ocasional, o engenhoqueiro fica livre para tentar criações ainda “melhores”.</i></p>
+        <p>Você pode gastar 1 hora de trabalho e T$ 100 para instalar uma das gambiarras a seguir em uma de suas engenhocas. Cada engenhoca pode ter uma gambiarra para cada poder da distinção que você possui. Por sua natureza experimental, cada gambiarra aumenta o valor de falha automática da engenhoca em 1 (uma engenhoca com duas gambiarras falha automaticamente se você rolar 1, 2 ou 3 no teste de ativação). Gambiarras iguais não se acumulam, mas  seus efeitos se acumulam com os de aparatos (veja p. 235). O efeito de cada gambiarra é rolado a cada uso da engenhoca. Pré-requisitos: Engenhoqueiro, Vitalidade.</p>
+        <ul>
+        <li><i>Bateria Potente.</i> A CD para resistir à engenhoca aumenta em +1d4.</li>
+        <li><i>Bobina Poderosa.</i> Aumenta os dados de cura ou de dano da engenhoca em um passo (até um máximo de d12).</li>
+        <li><i>Cristal Canalizador.</i> Aumenta o limite de PM que você pode gastar em aprimoramentos da engenhoca em +1d4.</li>
+        <li><i>Etiqueta de Instruções.</i> A CD do teste para ativar a engenhoca diminui em –1d10.</li>
+        <li><i>Luneta Aproximadora.</i> Aumenta o alcance da engenhoca em 1d3 –1 passos (de curto para médio, de médio para longo).</li>
+        </ul>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 18,
+      },
+      {
+        id: 1566,
+        nome: 'Abandonar Geringonça',
+        descricao: `
+        <p><i>Acostumado a ver seus inventos explodindo, o engenhoqueiro goblin sabe reconhecer os sinais de mau funcionamento e pular fora na hora certa.</i></p>
+        <p>Quando falha na ativação de uma engenhoca por 5 ou mais (ou rola uma falha automática), você pode gastar 1 PM para arremessar a engenhoca em um ponto em alcance curto antes que ela exploda. Pré-requisito: Aprimorar Bugiganga, deve ter sofrido dano de uma de suas engenhocas que falhou em ativar pelo menos uma vez.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 18,
+      },
+      {
+        id: 1567,
+        nome: 'Autodestruição',
+        descricao: `
+        <p><i>O engenhoqueiro conhece muito bem a dor de uma explosão na cara. E está mais do que disposto a compartilhar esse conhecimento.</i></p>
+        <p>Você pode gastar uma ação completa e uma quantidade de PM limitada pelo total de poderes da distinção que possui para forçar uma falha crítica em uma engenhoca (veja Engenhocaria Goblnoide) e arremessá-la em um ponto em alcance curto para que exploda. A explosão atinge uma esfera com 1d4 x 1,5m de raio e seu dano aumenta em +2d6 pontos por PM gasto. Pré-requisito: Abandonar Geringonça.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 18,
+      },
+      {
+        id: 1568,
+        nome: 'ENJAMBRAÇÃO',
+        descricao: `
+        <p><i>Um engenhoqueiro precavido sempre tem a ferramenta certa. Já um engenhoqueiro goblin improvisa.</i></p>
+        <p>Você pode gastar uma ação completa para fabricar uma engenhoca com uma magia qualquer de até um círculo abaixo do círculo máximo de engenhocas que você pode fabricar. Você não gasta tibares para fabricar essa engenhoca, mas gasta os PM da magia para ativá-la (mesmo se falhar no teste de ativação). A engenhoca não conta em seu limite, dura até o fim da cena e sua chance de falha automática aumenta em +1d6. Pré-requisitos: Aprimorar Bugiganga, outro poder da distinção.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 18,
+      },
+      {
+        id: 1569,
+        nome: 'Manutenção Precária',
+        descricao: `
+        <p><i>Se algo se move e não devia, basta amarrar. Se não se move e devia, é só passar óleo.</i></p>
+        <p>Você pode usar um tempo entre aventuras (Tormenta20, p. 276) para fabricar um número de engenhocas igual a 1d3 + o número de poderes da distinção que você possui. Você precisa pagar os custos normais e fazer os testes normais para fabricá-las. Essas engenhocas não contam no seu limite de engenhocas e deixam de funcionar no fim da próxima aventura. Pré-requisito: Aprimorar Bugiganga.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 18,
+      },
+      {
+        id: 1570,
+        nome: 'Não Há Ninguém Aqui',
+        descricao: `
+        <p><i>Até mesmo os inimigos do escapista esquecem que ele existe.</i></p>
+        <p>Você pode gastar 2 PM para se esconder mesmo sem camuflagem ou cobertura disponível. Se tiver o poder Camuflagem, além disso a penalidade em Furtividade para se esconder quando realiza uma ação chamativa é reduzida à metade (aplicado depois de outras reduções). Pré-requisitos: Aparência Inofensiva, Escapista.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 19,
+      },
+      {
+        id: 1571,
+        nome: 'Aparência Insignificante',
+        descricao: `
+        <p><i>“Eu queria atacar o escapista, mas só estou vendo esse garotinho...”</i></p>
+        <p>Você soma seu total de poderes da distinção na CD para resistir ao seu poder Aparência Inofensiva. Além disso, a cada cena, pode usar esse poder uma vez contra cada inimigo (em vez de apenas uma vez). Pré-requisito: Não Há Ninguém Aqui.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 19,
+      },
+      {
+        id: 1572,
+        nome: 'Fujão',
+        descricao: `
+        <p><i>A maior proeza de um escapista é nunca estar onde seus inimigos esperam.</i></p>
+        <p>Quando é atingido por um ataque ou um efeito que exija um teste de resistência, você pode gastar 2 PM para fazer uma pirueta defensiva. Faça um teste de Acrobacia para escapar e use esse resultado no lugar de sua Defesa contra esse ataque, ou do teste de resistência contra o efeito. Pré-requisito: treinado em Acrobacia, Não Há Ninguém Aqui.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 19,
+      },
+      {
+        id: 1573,
+        nome: 'Mão Leve',
+        descricao: `
+        <p><i>Um escapista afana até mesmo itens nas mãos de seus oponentes!</i></p>
+        <p>Quando faz a manobra desarmar, você pode gastar 2 PM para substituir o teste de Luta por Ladinagem. Se vencer o teste de manobra e estiver com ao menos uma mão livre, pode ficar com o item na mão. Pré-requisito: Não Há Ninguém Aqui.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 19,
+      },
+      {
+        id: 1554,
+        nome: 'Peguei um Bobo',
+        descricao: `
+        <p><i>Os inimigos do escapista ficam tão confusos e enervados que acabam agindo como ele quer.</i></p>
+        <p>Você pode gastar uma ação padrão e 2 PM para gerar o efeito da magia Comando (CD Car, +1 para cada dois outros poderes da distinção), ignorando a restrição de tipo de criatura. Este não é um efeito de encantamento ou mental, nem uma habilidade mágica, e provém da sua capacidade de enganar outras pessoas (veja “Magias Simuladas”, p. 44). Pré-requisito: Aparência Insignificante.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 19,
+      },
+      {
+        id: 1555,
+        nome: 'Fúria dos Gigantes',
+        descricao: `
+        <p><i>O gigante transcende a simples fúria mental e passa a encarnar o desejo de destruição em seu corpo, tornando-se um avatar da ira.</i></p>
+        <p>Quando entra em fúria, você pode gastar 2 PM para aumentar seu tamanho em uma categoria; isso aumenta sua Força em +2 e faz com que seu equipamento aumente para o tamanho adequado. O aumento de tamanho dura até sua fúria terminar. Para cada dois outros poderes da distinção, você pode gastar +2 PM para aumentar seu tamanho em uma categoria adicional, aumentando o bônus na Força em +2. Seu tamanho com este poder nunca pode ser maior que o da maior criatura que você já matou. Pré-requisitos: Con 3, treinado em Fortitude, Fúria.</p>`,
+        poder_chave_distincao: true,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 20,
+      },
+      {
+        id: 1556,
+        nome: 'Arremesso de Rochas',
+        descricao: `
+        <p><i>Qualquer oponente que tente correr de um gigante furioso descobrirá rapidamente que eles são letais a qualquer distância.</i></p>
+        <p>Enquanto estiver em fúria, você pode gastar uma ação de movimento e 1 PM para arrancar uma rocha do chão e arremessá-la contra seus oponentes. Trate essa rocha como uma arma de arremesso com alcance médio (dano 1d12 impacto, crítico x2) que atinge todas as criaturas em um quadrado com 4,5m de lado. Para atacar com a rocha, faça um ataque à distância e compare-o com a Defesa de cada criatura na área. Então faça uma única rolagem de dano e aplique-a em cada inimigo atingido. Para cada categoria de tamanho que você tiver acima de Médio, o dano da rocha aumenta em +1d12. Pré-requisito: Fúria dos Gigantes.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 20,
+      },
+      {
+        id: 1557,
+        nome: 'Golpes Pesados',
+        descricao: `
+        <p><i>O tamanho e o volume do gigante são tão grandes que seus oponentes mal conseguem aguentar parados!</i></p>
+        <p>Quando faz um ataque corpo a corpo em fúria, você pode gastar 1 PM. Se fizer isso e acertar o ataque, além do dano você faz uma manobra empurrar contra o alvo como uma ação livre (use o resultado do ataque como o teste de manobra). Se houver uma parede ou outro objeto sólido (não uma criatura) no caminho do alvo, ele sofre 1d12 pontos de dano de impacto para cada 3m que for empurrado. Se você possuir o poder Ataque Pesado e usá-lo nesse ataque para empurrar, você executa uma única manobra, mas recebe +5 no teste de manobra. Pré-requisito: Fúria dos Gigantes.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 20,
+      },
+      {
+        id: 1558,
+        nome: 'Salto Tectônico',
+        descricao: `
+        <p><i>Os saltos poderosos do gigante desencadeiam terremotos onde ele cai.</i></p>
+        <p>Quando usa Terremoto da Fúria, como parte da ação para usar esse poder você pode saltar, aterrissando em um ponto qualquer em alcance médio e desencadeando uma onda de choque que fortalece o terremoto. Faça um teste de Atletismo (CD 10). Se passar, você aumenta o raio do terremoto em +3m e seu dano em +2d12. Além disso, para cada 10 pontos em que o resultado superar a CD, o raio do terremoto aumenta em +3m. Pré-requisitos: treinamento em Atletismo, Terremoto da Fúria.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 20,
+      },
+      {
+        id: 1559,
+        nome: 'Terremoto da Fúria',
+        descricao: `
+        <p><i>O tamanho do gigante furioso é capaz de abalar o próprio terreno onde ele pisa.</i></p>
+        <p>Quando está em fúria, você pode gastar uma ação de movimento e 3 PM para pisotear o chão, gerando uma onda de choque em um raio de 9m ao seu redor. Criaturas na área sofrem dano de impacto igual a 1d12 + sua Força e ficam caídas (Fort CD For reduz à metade e evita a condição). Para cada categoria de tamanho acima de Médio que você tiver, o dano aumenta em +1d12. Pré-requisito: Fúria dos Gigantes.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 20,
+      },
+      {
+        id: 1560,
+        nome: 'Irmão Campestre',
+        descricao: `
+        <p><i>Nascido no lombo do cavalo, o ginete sabe contornar todos os problemas quando está junto de seu irmão.</i></p>
+        <p>Quando faz um teste de perícia enquanto está montado em seu irmão cavalo, você pode gastar 1 PM para receber um bônus de +2 nesse teste. Para cada nível de parceiro da montaria acima de iniciante, você pode gastar +1 PM para aumentar esse bônus em +2. Pré-requisitos: Ginete, ter um irmão cavalo (veja o quadro).</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 21,
+      },
+      {
+        id: 1561,
+        nome: 'Caminho das Coxilhas',
+        descricao: `
+        <p><i>O corredor é estreito demais, mal é possível um humano adulto passar andando normalmente. Espere... ele está passando por aqui com um cavalo!?</i></p>
+        <p>O nível de parceiro de seu irmão cavalo aumenta em um (de iniciante para veterano ou de veterano para mestre). Se ele já for um parceiro mestre, esse aumento se aplica a outro de seus tipos. Além disso, enquanto estiver montando seu irmão cavalo, você pode substituir testes de perícias originalmente baseadas em Destreza por testes de Cavalgar. Pré- requisito: Cavaleiro Rústico.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 21,
+      },
+      {
+        id: 1562,
+        nome: 'Cavaleiro Rústico',
+        descricao: `
+        <p><i>Um verdadeiro ginete de Namalkah não teme nada e não precisa de um monte de metal para defendê-lo.</i></p>
+        <p>Você soma sua Sabedoria na Defesa e seu irmão cavalo recebe os benefícios de um parceiro guardião iniciante. Este poder exige liberdade de movimentos; você não pode usá-lo se estiver de armadura pesada ou imóvel. Pré-requisitos: Sab 1, Irmão Campestre.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 21,
+      },
+      {
+        id: 1563,
+        nome: 'Coice',
+        descricao: `
+        <p><i>Quando lutam juntos, cavalo e ginete agem como se fossem um só — a fúria dos ventos encarnada.</i></p>
+        <p>Enquanto estiver montado em seu irmão cavalo, você pode usar uma arma natural de cascos (1d8, crítico x2, impacto). Uma vez por rodada, quando usa as ações agredir ou investida montada para atacar com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com os cascos. O dano dos cascos aumenta em um passo para cada nível do irmão cavalo acima de iniciante. Pré-requisitos: treinado em Luta ou Pontaria, Irmão Campestre.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 21,
+      },
+      {
+        id: 1564,
+        nome: 'Irmãos Inseparáveis',
+        descricao: `
+        <p><i>Um ginete de Namalkah não recebe uma montaria — recebe um irmão para toda a vida.</i></p>
+        <p>O nível de parceiro de seu irmão cavalo aumenta em um (de veterano para mestre). Se ele já for um parceiro mestre, esse aumento se aplica a outro de seus tipos. Além disso, a conexão entre vocês permite que se comuniquem telepaticamente enquanto estiverem em alcance longo um do outro. Pré-requisito: Caminho das Coxilhas.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 21,
+      },
+      {
+        id: 1565,
+        nome: 'Estilo de Combate Arcano',
+        descricao: `
+        <p><i>Leves ou pesadas, armaduras fazem parte do treinamento de um guerreiro mágico.</i></p>
+        <p>Escolha um estilo de combate entre Encouraçado Místico e Dançarino Marcial. Uma vez feita, essa escolha não pode ser mudada. Se escolher Encouraçado Místico, você pode lançar magias arcanas vestindo armaduras sem precisar de testes de Misticismo e recebe +1 em testes de resistência se estiver de armadura. Se escolher Dançarino Marcial, você recebe +1 na Defesa e em rolagens de dano com armas. Em ambos os casos, os bônus aumentam em +1 para cada outro poder da distinção que você tiver. Pré-requisitos: habilidade de classe Magias, treinado em Luta.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 22,
+      },
+      {
+        id: 1566,
+        nome: 'Aparar Magia',
+        descricao: `
+        <p><i>Com um golpe, o guerreiro mágico corta o fluxo da magia.</i></p>
+        <p>Uma vez por rodada, quando falha em um teste de resistência contra uma habilidade mágica, você pode gastar 2 PM para fazer um teste de ataque e usar seu resultado como o valor do teste de resistência. Se o resultado do ataque superar a CD do efeito por 10 ou mais, você evita totalmente o efeito e o reflete contra a fonte, que passa a ser afetada em seu lugar (outras partes do efeito, como outros alvos ou o resto de sua área, não são afetadas). Pré-requisito: Fogo e Aço.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 22,
+      },
+      {
+        id: 1567,
+        nome: 'Ataque Arcano',
+        descricao: `
+        <p><i>A magia flui através dos golpes do guerreiro mágico.</i></p>
+        <p>Uma vez por rodada, quando faz um ataque corpo a corpo, você pode gastar 2 PM para desferir um ataque arcano. Se fizer isso e acertar o ataque, você pode lançar uma magia que tenha como alvo uma criatura ou que afete uma área como ação livre, tendo como alvo ou centro de sua área a criatura atingida. Apenas magias com execução de movimento ou padrão podem ser lançadas dessa forma. Pré-requisito: Fogo e Aço.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 22,
+      },
+      {
+        id: 1568,
+        nome: 'Fogo e Aço',
+        descricao: `
+        <p><i>Armas servem à magia, magia serve às armas.</i></p>
+        <p>Quando lança uma magia, você recebe um bônus em testes de ataque e rolagens de dano com armas igual ao círculo da magia lançada até o fim do seu próximo turno. Pré-requisito: Estilo de Combate Arcano.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 22,
+      },
+      {
+        id: 1569,
+        nome: 'Preparação Veloz',
+        descricao: `
+        <p><i>De seu treinamento marcial, o guerreiro mágico desenvolveu sua prontidão arcana.</i></p>
+        <p>Na primeira rodada de um combate, você pode lançar uma magia com alcance pessoal como uma ação livre. Pré-requisito: Fogo e Aço.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 22,
+      },
+      {
+        id: 1570,
+        nome: 'Trapaça Arcana',
+        descricao: `
+        <p><i>“Meu nome é Elohim. Ylena Elohim.”</i></p>
+        <p>Você pode lançar magias arcanas de 1º círculo. Se tiver pelo menos três poderes da distinção, pode lançar também magias de 2º círculo. Você começa com duas magias de 1º círculo e, a cada outro poder da distinção, aprende uma magia de qualquer círculo que possa lançar. Você pode lançar essas magias vestindo armaduras leves sem precisar de testes de Misticismo. Seu atributo-chave para essas magias é Inteligência. Pré-requisitos: treinado em Enganação, Ladinagem e Misticismo, capacidade de lançar pelo menos uma magia arcana.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 23,
+      },
+      {
+        id: 1571,
+        nome: 'Conjuração Furtiva',
+        descricao: `
+        <p><i>“Como você consegue ser espiã se todos conhecem o seu nome?”</i></p>
+        <p>Criaturas desprevenidas sofrem uma penalidade de –5 em testes de resistência contra suas habilidades mágicas. Pré-requisitos: treinado em Furtividade, Magia Traiçoeira.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 23,
+      },
+      {
+        id: 1572,
+        nome: 'Criar Armadilha Mágica',
+        descricao: `
+        <p><i>“Não, sra. Elohim. Eu espero que você morra.”</i></p>
+        <p>Você aprende a magia Conjurar Armadilha (p. 252) como uma de suas magias arcanas. Se aprender essa magia novamente, seu custo diminui em –1 PM. Pré-requisito: Trapaça Arcana. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 23,
+      },
+      {
+        id: 1573,
+        nome: 'Disfarce Mental',
+        descricao: `
+        <p><i>“Se sua identidade for descoberta, o Conselho negará qualquer envolvimento com você.”</i></p>
+        <p>Você pode usar Inteligência no lugar de Carisma para Enganação. Quando usa Disfarce Ilusório em si mesmo, você pode usar Inteligência no lugar do atributo-chave de uma perícia a sua escolha, adequada ao disfarce escolhido, e recebe +5 em testes de resistência contra efeitos mágicos de adivinhação. Pré-requisitos: Trapaça Arcana, Disfarce Ilusório.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 23,
+      },
+      {
+        id: 1574,
+        nome: 'Enganar Item Mágico',
+        descricao: `
+        <p><i>“Passe no Bureau Theuderulf, há alguns brinquedos novos esperando por você...”</i></p>
+        <p>Quando lança uma magia através de um item mágico que só permite o uso de aprimoramentos caso você conheça a magia, você pode usá-los mesmo sem conhecê-la. Além disso, pode ativar itens mágicos sem cumprir requisitos de raça, classe e devoção. Pré-requisito: Trapaça Arcana.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 23,
+      },
+      {
+        id: 1575,
+        nome: 'Magia Traiçoeira',
+        descricao: `
+        <p><i>“Parece que ele ficou... chocado.”</i></p>
+        <p>Quando lança uma magia de dano em um ou mais alvos desprevenidos, você pode usar seu ataque furtivo com ela em um deles. Custo: +2 PM. Pré-requisitos: Ataque Furtivo 3d6, Disfarce Mental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 23,
+      },
+      {
+        id: 1576,
+        nome: 'Conjurador Encouraçado',
+        descricao: `
+        <p><i>Como uma fortaleza móvel, o Mago de Batalha avança implacável, despejando morte e destruição.</i></p>
+        <p>Você recebe proficiência com armaduras pesadas e pode lançar magias arcanas de armadura sem fazer testes de Misticismo. Para cada outro poder da distinção que possui, você recebe +1 na Defesa com armaduras pesadas. Pré-requisitos: habilidade de classe Magias, lançar magias arcanas de 2º círculo, treinado em Misticismo, Arcano de Batalha.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 24,
+      },
+      {
+        id: 1577,
+        nome: 'Arsenal Arcano',
+        descricao: `
+        <p><i>Embora magias sejam sua arma principal, Magos de Batalha também sabem usar certas armas.</i></p>
+        <p>Você recebe proficiência com armas marciais e pode usar armas como se fossem itens esotéricos. Quando usa uma arma dessa forma, você pode somar o bônus de dano de melhorias e encantos da arma ao de seu poder Arcano de Batalha. Além disso, o material especial da arma afeta suas magias com seu efeito de esotérico. Por fim, você pode trocar o atributo de dano da arma por seu atributo-chave de magias. Pré-requisitos: treinado em Luta ou Pontaria, Conjurador Encouraçado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 24,
+      },
+      {
+        id: 1578,
+        nome: 'Conjuração MAGIBÉLICA',
+        descricao: `
+        <p><i>As técnicas do Mago de Batalha tornam suas magias devastadoras, mas cobram um preço de seu corpo.</i></p>
+        <p>Escolha uma técnica de conjuração magibélica (veja o quadro na página anterior). Uma vez feita, essa escolha não pode ser mudada. Para cada outro poder da distinção diferente (exceto Conjurador Encouraçado), você pode escolher uma técnica diferente. Pré-requisito: Conjurador Encouraçado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 24,
+      },
+      {
+        id: 1579,
+        nome: 'Guarda Mágica',
+        descricao: `
+        <p><i>Mestre em utilizar suas magias como arma, o Mago de Batalha também aprende a usá-las como defesa.</i></p>
+        <p>Quando lança uma magia arcana, você recebe uma quantidade de PV temporários, que duram até o início do seu próximo turno, igual ao total de PM gastos na magia. Pré-requisitos: treinado em Fortitude, Conjurador Encouraçado.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 24,
+      },
+      {
+        id: 1580,
+        nome: 'Infantaria Arcana',
+        descricao: `
+        <p><i>O Mago de Batalha é perito em usar itens esotéricos como armas.</i></p>
+        <p>Se lançar uma magia empunhando um item esotérico, você soma o número de poderes da distinção que possui ao bônus de dano de seu poder Arcano de Batalha. Além disso, criaturas que rolem um resultado 1 no teste de resistência de uma magia de dano sua sofrem +50% de dano da magia. Pré-requisitos: treinado em Guerra, Conjurador Encouraçado, vencer dez combates usando um item esotérico pelo menos uma vez em cada um.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 24,
+      },
+      {
+        id: 1581,
+        nome: 'Magia Experimental',
+        descricao: `
+        <p><i>“O tipo de magia que faço é instável. Quanto maior o efeito, maior o risco.”</i></p>
+        <p>Quando lança uma magia, você pode fazer um teste de Misticismo (CD 15 + o custo em PM da magia) para alterar seu funcionamento. Se passar, a magia recebe um dos benefícios a seguir, a sua escolha (ou dois, se o resultado for 20 natural):</p>
+        <ul>
+        <li>Escolha um poder de aprimoramento que você não possui. Você aplica os efeitos desse poder à magia, pagando seu custo adicional em PM.</li>
+        <li>Escolha um poder de aprimoramento que você possui. Você aplica os efeitos desse poder à magia, sem custo adicional.</li>
+        <li>O custo da magia diminui em –1 PM (cumulativo com outras reduções de custo).</li>
+        </ul>
+        <p>Se você falhar no teste de Misticismo, entretanto, a magia não tem efeito, mas você paga o custo dela mesmo assim. Se o resultado do teste for 1 natural, além disso você gera uma explosão arcana que atinge um raio de 9m; criaturas e objetos soltos nessa área sofrem 2d8 pontos de dano de essência por círculo da magia (Reflexos CD da magia reduz à metade; você mesmo não tem direito ao teste de resistência!). Pré-requisitos: habilidade de classe Magias, treinado em Misticismo, um poder de aprimoramento.</p>
+        `,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 25,
+      },
+      {
+        id: 1582,
+        nome: 'Conhecimento Obscuro',
+        descricao: `
+        <p><i>Os magos da Ordem do Vazio estudam tomos ocultos e podem tirar a melhor resposta de onde menos se espera.</i></p>
+        <p>Quando vai fazer um teste de perícia, você pode gastar 2 PM para substituí-la por Misticismo (isso permite fazer testes de perícias que exijam treinamento mesmo sem ser treinado nelas). A cada vez que usar este poder novamente na mesma cena, você fica fatigado (essa condição é cumulativa e o afeta mesmo que você seja imune a ela). Pré-requisito: Magia Experimental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 25,
+      },
+      {
+        id: 1583,
+        nome: 'Exercitar os Músculos Arcanos',
+        descricao: `
+        <p><i>“A magia é uma arte que deve ser domada como uma fera.”</i></p>
+        <p>Você pode executar uma rápida série de exercícios mágicos, evocando o treinamento de seus fundamentos arcanos. O custo da sua próxima magia lançada nessa cena diminui em –1 PM (cumulativo com outras reduções de custo). A cada vez que usar este poder novamente na mesma cena, você fica fatigado (essa condição é cumulativa e o afeta mesmo que você seja imune a ela). Pré-requisito: Magia Experimental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 25,
+      },
+      {
+        id: 1584,
+        nome: 'Ingrediente Secreto',
+        descricao: `
+        <p><i>As magias de um mago da Ordem do Vazio têm algo a mais.</i></p>
+        <p>Quando lança uma magia de dano que permita um teste de resistência, você pode gastar PM (limitados pelo número de poderes da distinção que você possui) para infundi-la com mana em estado bruto. Para cada PM gasto, cada criatura que falhar no teste de resistência sofre +2d6 pontos de dano de essência. Pré-requisito: Magia Experimental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 25,
+      },
+      {
+        id: 1585,
+        nome: 'Inovação Particular',
+        descricao: `
+        <p><i>“Cada mago tem seu método, e a criatividade é um escudo contra a intervenção alheia.”</i></p>
+        <p>Quando uma criatura tenta anular ou dissipar suas magias (como uma contramágica ou Dispersar as Trevas), ela precisa fazer um teste de Vontade (CD da sua magia, +2 para cada poder da distinção que você possui). Se falhar, o efeito que ela estava usando para isso falha. Pré-requisito: Magia Experimental.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 25,
+      },
+      {
+        id: 1586,
+        nome: 'Medicina Avançada',
+        descricao: `
+        <p><i>Aplicando estudo e ciência a seus procedimentos, os membros do Colégio Real alcançam além das fronteiras da medicina artoniana.</i></p>
+        <p>Cada dado de cura de seu poder Medicina aumenta para d10. Além disso, para cada dois outros poderes da distinção que você possui, pode usar esse poder mais uma vez por criatura a cada dia. Pré-requisitos: Foco em Perícia (Cura), Medicina.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 26,
+      },
+      {
+        id: 1587,
+        nome: 'Acompanhamento Médico',
+        descricao: `
+        <p><i>Acostumado a praticar seu ofício sob pressão, um médico de Salistick aprende a agir rapidamente.</i></p>
+        <p>Para você, a ação necessária para prestar primeiros socorros e usar itens alquímicos que recuperam PV, PM ou condições é reduzida em um passo (até um mínimo de ação de movimento). Além disso, você pode gastar 5 PM e uma ação completa para fazer um teste de Cura (CD 30) em uma criatura adjacente que tenha morrido há até uma rodada. Se você passar, a criatura é ressuscitada com 1 PV. Você pode usar esse efeito uma vez por dia por criatura. Pré-requisitos: Medicina Avançada.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 26,
+      },
+      {
+        id: 1588,
+        nome: 'Medicina Preventiva',
+        descricao: `
+        <p><i>Melhor que curar doenças é impedir que elas surjam.</i></p>
+        <p>Você pode gastar 1 hora para cuidar da saúde de um número de pessoas igual ao seu nível. Para cada poder da distinção que você possui, cada pessoa atendida recebe 5 PV temporários e +1 em testes de resistência por 1 dia. Este poder pode ser usado ao mesmo tempo que cuidados prolongados (veja Cura, Tormenta20, p. 117) se você aplicar ambos às mesmas pessoas. Pré-requisito: Medicina Avançada.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 26,
+      },
+      {
+        id: 1589,
+        nome: 'Remédios',
+        descricao: `
+        <p><i>Um médico de Salistick estuda princípios científicos para a fabricação e o uso dos mais variados fármacos.</i></p>
+        <p>Quando você usa um preparado alquímico que fornece PV ou PM (temporários ou por cura), esse efeito aumenta em +1 por dado. Além disso, você pode fabricar preparados com esses efeitos em 10 minutos (em vez de 1 dia), mas eles duram apenas até o fim da cena. Pré-requisitos: treinado em Ofício (alquimista), Medicina Avançada.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 26,
+      },
+      {
+        id: 1590,
+        nome: 'Saúde Perfeita',
+        descricao: `
+        <p><i>Um bom médico sabe cuidar de si mesmo (ou assim esperamos).</i></p>
+        <p>Você recebe +1 em Constituição e imunidade a veneno. Além disso, recebe +2 PM por poder da distinção que possui. Pré-requisitos: treinado em Fortitude, Acompanhamento Médico.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 26,
+      },
+      
     )
 
   }
