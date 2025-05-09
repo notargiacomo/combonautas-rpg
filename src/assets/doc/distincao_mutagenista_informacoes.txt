@@ -1,0 +1,21 @@
+<h5>Mutagênicos</h5>
+<p>Mutagênicos são preparados alquímicos que exigem treinamento próprio para sua fabricação e consumo. Um mutagênico só funciona com seu fabricante, e não funciona se ele for imune a efeitos de metabolismo.</p>
+<p><b>Fabricação.</b> Mutagênicos seguem as regras de fabricação de preparados (Tormenta20, p. 121). O preço de cada mutagênico é apresentado em sua descrição e para fabricá-los você precisa ter o poder Fabricar Mutagênicos.</p>
+<p><b>Ativação.</b> Para ativar um mutagênico você precisa gastar uma ação padrão para ingeri-lo. Seu efeito dura 1 dia e o máximo de mutagênicos ativos que você pode ter é igual ao seu total de poderes da distinção. Se ingerir outro, o efeito do mais antigo termina.</p>
+<p><b>Biochoque.</b> Ao ingerir um mutagênico, faça um teste de Fortitude (CD 10, +5 por teste adicional no mesmo dia). Se falhar, você sofre um biochoque de estágio 1. Cada nova falha no mesmo dia impõe um efeito de estágio adicional.
+<ul>
+<li><b>Estágio 1.</b> O mutagênico funciona, mas você fica enjoado.</li>
+<li><b>Estágio 2.</b> O mutagênico não funciona e você perde 1d12 PV..</li>
+<li><b>Estágio 3.</b> O mutagênico não funciona e você perde 1d12 PV. Além disso, fica confuso e em fúria (como um bárbaro) enquanto estiver confuso.</li>
+<li><b>Estágio 4.</b>  Seu corpo sofre mutações desordenadas por 1d4 rodadas. Após isso, você morre.</li>
+</ul>
+<p><b>Exaurir.</b> Você pode gastar uma ação livre para exaurir um mutagênico em seu corpo. Se fizer isso, seu efeito aumenta, mas termina ao fim da cena.</p>
+<p><b>Sobrecarga.</b> Quando ingere um mutagênico acima do seu limite, você pode tentar sobrecarregar seu corpo para manter o efeito mais antigo ativo. Faça um novo teste de biochoque. Se passar, você não perde o efeito anterior. Se falhar, além do biochoque, você perde todos os efeitos sobrecarregados. Seu limite de
+efeitos em sobrecarga é igual ao seu limite de mutagênicos.</p>
+<p><b>Uso Exclusivo.</b> Se o mutagênico for ingerido por outra criatura que não seu fabricante, não gera seu efeito e causa a perda de 2d12 PV por veneno.</p>
+
+<h5>Tipos de Mutagênicos</h5>
+<p><b>Tonificante.</b> Altera as propriedades básicas de um organismo, fornecendo +1 em um atributo específico. Esse aumento não oferece PV, PM ou perícias adicionais. Exaurir. O bônus aumenta em +1. Preço: T$ 60. </p>
+<p><b>Energizante.</b> Desenvolve habilidades excepcionais. Você pode lançar uma magia arcana de 1º círculo específica (atributo-chave Constituição) como um arcanista de seu nível. Esta não é uma habilidade mágica e provém de alterações em seu organismo (veja “Magias Simuladas”, p. 44). Exaurir. O custo da magia diminui em –1 (cumulativo com outras reduções). Preço: T$ 90.</p>
+<p><b>Despersonalizante.</b> Promove mutações poderosas e grotescas. Ingerir este mutagênico fornece uma habilidade de raça específica (exceto construtos e mortos-vivos). Exaurir. Você recebe +1 em um atributo em que a raça tenha um modificador positivo (esse aumento não oferece PV, PM ou perícias adicionais).
+Preço: T$ 150.</p>
