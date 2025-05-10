@@ -16889,7 +16889,7 @@ export class PoderData {
         <p><i>O bufão de Hyninn deve ser capaz de entreter os mais diversos públicos.</i></p>
         <p>Escolha duas cabriolas (veja o quadro). Uma vez feita, essa escolha não pode ser mudada. A cada outro poder da distinção você pode escolher uma nova cabriola. Pré-requisitos: devoto de Hyninn, treinado em Acrobacia e Atuação.</p>`,
         poder_chave_distincao: true,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 37,
@@ -16900,7 +16900,7 @@ export class PoderData {
         descricao: `
         <p><i>O bufão sabe ridicularizar seus inimigos a ponto de condená-los ao fracasso.</i></p>
         <p>Uma vez por rodada, quando uma criatura em alcance curto que você possa ver faz um teste de perícia, você pode imitá-la da forma mais ridícula possível. Faça um teste de Atuação para ajudar, mas em vez de fornecer um bônus, você impõe uma penalidade ao teste da criatura. Pré-requisito: Cabriolas de Bobo.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 37,
@@ -16911,7 +16911,7 @@ export class PoderData {
         descricao: `
         <p><i>“Um deheoni, um ahleniense e um sambur entram numa taverna…”</i></p>
         <p>Você pode gastar uma ação completa e 6 PM para contar uma piada tão hilária que o resto da vida parece perder o sentido. Faça um teste de Atuação oposto pela Vontade de uma criatura inteligente (Int –3 ou maior) em alcance curto. Se você vencer, a criatura deve gastar sua próxima ação padrão para atacar a si mesma da maneira mais eficiente possível. Uma criatura só pode ser alvo deste poder uma vez por cena. Mental. Pré-requisitos: Cabriolas de Bobo, Canção Assustadora.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 37,
@@ -16922,7 +16922,7 @@ export class PoderData {
         descricao: `
         <p><i>…ri melhor.</i></p>
         <p>Enquanto você for o último na ordem de iniciativa, você recebe +1 em testes de perícia e na CD de suas habilidades contra criaturas que já tenham agido na rodada. Esses bônus aumentam em +1 para cada dois outros poderes da distinção que você possui. Pré-requisito: Cabriolas de Bobo.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 37,
@@ -16933,7 +16933,7 @@ export class PoderData {
         descricao: `
         <p><i>Um bufão consegue achar graça de tudo, mesmo da própria desgraça.</i></p>
         <p>Uma vez por cena, quando fizer um teste de resistência contra uma habilidade de um inimigo, você pode gastar 3 PM para usar Atuação no lugar da perícia apropriada. Se fizer isso e passar no teste, você reverte o efeito: qualquer dano ou perda de vida se torna pontos de vida temporários (que desaparecem ao fim da cena) e qualquer penalidade numérica se torna um bônus equivalente até o fim da cena. Pré-requisito: Arremedar.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 37,
@@ -16945,7 +16945,7 @@ export class PoderData {
         <p><i>O golpe do cavaleiro da Luz faz seus inimigos se ajoelharem.</i></p>
         <p>Quando faz um ataque com uma arma corpo a corpo, você pode gastar 2 PM para desferir um golpe subjugante. Você soma seu Carisma no teste de ataque e +1d8 na rolagem de dano (se já soma seu Carisma no ataque, em vez disso recebe +2 no teste). Se causar dano, deixa o alvo vulnerável. Pré-requisitos: treinado em Luta, Car 1.</p>`,
         poder_chave_distincao: true,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 38,
@@ -16956,7 +16956,7 @@ export class PoderData {
         descricao: `
         <p><i>A montaria de um cavaleiro é um sinal de seu compromisso com a justiça.</i></p>
         <p>Você recebe um cavalo de guerra parceiro veterano. Caso já possua uma montaria fornecida por outra habilidade, em vez disso essa montaria se torna também um parceiro ajudante iniciante. Caso perca sua montaria, você pode receber outra visitando o Castelo da Luz. Pré-requisitos: treinado em Cavalgar, Ataque Subjugante.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 38,
@@ -16967,7 +16967,7 @@ export class PoderData {
         descricao: `
         <p><i>A alcunha de um cavaleiro abre portas e amedronta os corações dos inimigos.</i></p>
         <p>Quando faz um teste de uma perícia baseada em Carisma, você pode gastar uma quantidade de PM limitada pelo total de poderes da distinção que possui. Para cada PM que gastar, recebe +2 no teste. Pré-requisito: Ataque Subjugante.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 38,
@@ -16978,7 +16978,7 @@ export class PoderData {
         descricao: `
         <p><i>As armas dos inimigos fraquejam diante da honra do cavaleiro da Luz.</i></p>
         <p>Na primeira rodada de um combate, você pode gastar uma ação de movimento e 3 PM para fazer um teste de Diplomacia. Para cada 10 pontos no resultado desse teste, seus inimigos em alcance médio sofrem –1 em rolagens de dano até o fim da cena ou até você ficar inconsciente. Pré-requisitos: treinado em Diplomacia, Alcunha.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 38,
@@ -16989,7 +16989,7 @@ export class PoderData {
         descricao: `
         <p><i>A ordem de um cavaleiro da Luz é irrecusável, até para seus aliados.</i></p>
         <p>Uma vez por rodada, você pode gastar uma ação de movimento e 3 PM para encorajar seus companheiros. Até o início do seu próximo turno, você e seus aliados em alcance curto que fizerem uma ação agredir podem fazer um ataque adicional. Pré-requisitos: Comandar, quatro outros poderes de cavaleiro da Luz.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 38,
@@ -17001,7 +17001,7 @@ export class PoderData {
         <p><i>O desejo de derrotar os ímpios se manifesta na arma do cavaleiro de Khalmyr.</i></p>
         <p>Quando faz um ataque corpo a corpo, você pode gastar 2 PM para concentrar sua fé em seu golpe. Você soma sua Sabedoria no teste de ataque (se já faz isso, em vez disso recebe +2 no teste de ataque) e +1d8 na rolagem de dano. Pré-requisitos: devoto de Khalmyr, treinado em Luta.</p>`,
         poder_chave_distincao: true,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 39,
@@ -17012,7 +17012,7 @@ export class PoderData {
         descricao: `
         <p><i>Quanto maior a humilde, maior a força.</i></p>
         <p>Os bônus concedidos por Ao Sabor do Destino são dobrados. Além disso, você pode usar itens litúrgicos fabricados por devotos de Khalmyr sem perder os benefícios do poder. Pré-requisitos: Ao Sabor do Destino, Vitória da Ordem.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 39,
@@ -17023,7 +17023,7 @@ export class PoderData {
         descricao: `
         <p><i>Montaria e cavaleiro são os únicos capazes de dividir o fardo pesado da Justiça.</i></p>
         <p>Você recebe um cavalo de guerra parceiro veterano. Caso já possua uma montaria fornecida por outra habilidade, em vez disso essa montaria se torna também um parceiro guardião iniciante. Caso perca sua montaria, você pode receber outra visitando o Mosteiro de Khalmyr. Pré-requisitos: treinado em Cavalgar, Vitória da Ordem.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 39,
@@ -17034,7 +17034,7 @@ export class PoderData {
         descricao: `
         <p><i>A fé mantém o cavaleiro de pé, mesmo quando o mundo ao seu redor o faz querer desistir.</i></p>
         <p>Quando faz um teste de resistência ou sofre um ataque, você pode gastar uma quantidade de PM a sua escolha (limitada pela sua Sabedoria). Para cada PM que gastar, recebe +2 no teste ou na Defesa contra esse ataque. Pré-requisito: Sab 2, Vitória da Ordem.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 39,
@@ -17046,7 +17046,7 @@ export class PoderData {
         <p><i>O cavaleiro é cercado por uma aura de convicção.</i></p>
         <p>Você pode gastar 3 PM para projetar uma aura de ordem com 9m de raio e duração sustentada. Dentro da aura, você se torna imune a efeitos de medo e mentais, você e seus aliados recebem redução de dano igual à sua Sabedoria e inimigos que comecem seus turnos dentro da aura ficam enjoados por 1d6 rodadas (Vontade CD Sab evita e a criatura fica imune a esta habilidade por 1 dia). Pré-requisitos: Vitória da Ordem e dois outros poderes da distinção.</p>`,
         e_poder_magico: true,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 39,
@@ -17059,7 +17059,7 @@ export class PoderData {
         <p>Quando usa Forma Selvagem, você pode gastar PM adicionais (limitados pelo total de poderes da distinção que possui) para receber habilidades adicionais de criaturas que já devorou (veja o quadro) como parte de sua transformação. Pré-requisitos: Forma Selvagem, devoto de Megalokk.</p>`,
         poder_chave_distincao: true,
         e_poder_magico: true,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 40,
@@ -17070,7 +17070,7 @@ export class PoderData {
         descricao: `
         <p><i>A fome do colecionador monstruoso não tem fim.</i></p>
         <p>Quando usa Forma Selvagem Superior, você recebe o subtipo kaiju e ganha imunidade a efeitos de metabolismo e mentais, medo, metamorfose, paralisia e veneno, e seus ataques ignoram 20 pontos de RD. Pré-requisitos: Forma Selvagem Superior, ter usado Predação Monstruosa em um kaiju.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 40,
@@ -17081,7 +17081,7 @@ export class PoderData {
         descricao: `
         <p><i>Sua voracidade não pode ser controlada.</i></p>
         <p>Você pode gastar uma ação completa para devorar um monstro abatido. Se fizer isso, até o fim da aventura você recebe +10 PV e +1 em testes de ataque e rolagens de dano com armas naturais. Para cada outros dois poderes da distinção, você pode acumular esses efeitos uma vez. Pré-requisito: Forma Monstruosa.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 40,
@@ -17092,7 +17092,7 @@ export class PoderData {
         descricao: `
         <p><i>A fera em seu interior não será derrotada facilmente.</i></p>
         <p>Enquanto está em Forma Selvagem, você não fica inconsciente por estar com 0 PV ou menos (mas ainda morre se chegar em um valor negativo igual à metade de seus PV máximos). Pré-requisito: Vigor Monstruoso.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 40,
@@ -17103,10 +17103,67 @@ export class PoderData {
         descricao: `
         <p><i>Sua transformação é pura monstruosidade.</i></p>
         <p>Quando usa Forma Selvagem, para cada 1 PM gasto nessa habilidade você recebe 3 PV temporários. Pré-requisito: Forma Monstruosa.</p>`,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DEUSES,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 40,
+      },
+      {
+        id: 1661,
+        nome: 'Transe Dançante',
+        descricao: `
+        <p><i>A beleza dos movimentos da dançarina de Marah transcende a realidade.</i></p>
+        <p>Você pode gastar 3 PM para entrar em um transe dançante que gera uma aura de 9m de raio. Para manter esse transe, em cada um dos seus turnos você precisa se deslocar pelo menos 6m, sem passar pelos mesmos quadrados. Você e seus aliados dentro da aura podem executar uma ação de movimento adicional por turno e recebem +2 em testes de resistência e na Defesa. Para cada dois outros poderes da distinção que você possui, esse bônus aumenta em +1. Pré-requisitos: Foco em Perícia (Atuação), dois poderes concedidos de Marah.</p>`,
+        poder_chave_distincao: true,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 41,
+      },
+      {
+        id: 1662,
+        nome: 'Contrapasso do Espírito',
+        descricao: `
+        <p><i>Mais do que entreter, a arte da dançarina de Marah guia os espíritos de seus aliados.</i></p>
+        <p>Enquanto estiver em Transe Dançante, no início de cada um dos seus turnos, você e seus aliados dentro da aura recebem uma quantidade de PV temporários igual a 5 + seu Carisma. Pré-requisito: Transe Dançante.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 41,
+      },
+      {
+        id: 1663,
+        nome: 'Dança Hipnótica',
+        descricao: `
+        <p><i>Os passos da dançarina induzem, incitam e movem de uma forma que não pode ser recusada.</i></p>
+        <p>Se estiver em Transe Dançante, no início de cada um dos seus turnos, a categoria de atitude de cada inimigo dentro da aura melhora em um passo (apenas uma vez por cena) e ele fica fascinado (Vontade CD Car evita os efeitos e a criatura fica imune a esta habilidade até o fim da cena). Pré-requisitos: Êxtase da Dançarina, três poderes concedidos de Marah.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 41,
+      },
+      {
+        id: 1664,
+        nome: 'Êxtase da Dançarina',
+        descricao: `
+        <p><i>Os passos da dançarina de Marah cativam até seus inimigos.</i></p>
+        <p>Enquanto estiver em Transe Dançante, você soma o bônus do seu Transe na CD dos testes de Vontade das suas habilidades contra criaturas dentro da aura. Pré-requisito: Transe Dançante.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 41,
+      },
+      {
+        id: 1665,
+        nome: 'No Ritmo da Magia',
+        descricao: `
+        <p><i>Os passos da dançarina de Marah são carregados de magia.</i></p>
+        <p>Enquanto está em Transe Dançante, você pode lançar a magia Salto Dimensional (Tormenta20, p. 205). Caso aprenda essa magia, durante o Transe o custo dela diminui em –1 PM. Pré-requisito: Transe Dançante.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 41,
       },
     )
 
