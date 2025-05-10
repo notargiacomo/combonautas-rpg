@@ -16994,6 +16994,63 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 38,
       },
+      {
+        id: 1651,
+        nome: 'Vitória da Ordem',
+        descricao: `
+        <p><i>O desejo de derrotar os ímpios se manifesta na arma do cavaleiro de Khalmyr.</i></p>
+        <p>Quando faz um ataque corpo a corpo, você pode gastar 2 PM para concentrar sua fé em seu golpe. Você soma sua Sabedoria no teste de ataque (se já faz isso, em vez disso recebe +2 no teste de ataque) e +1d8 na rolagem de dano. Pré-requisitos: devoto de Khalmyr, treinado em Luta.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 39,
+      },
+      {
+        id: 1652,
+        nome: 'Campeão Abnegado',
+        descricao: `
+        <p><i>Quanto maior a humilde, maior a força.</i></p>
+        <p>Os bônus concedidos por Ao Sabor do Destino são dobrados. Além disso, você pode usar itens litúrgicos fabricados por devotos de Khalmyr sem perder os benefícios do poder. Pré-requisitos: Ao Sabor do Destino, Vitória da Ordem.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 39,
+      },
+      {
+        id: 1653,
+        nome: 'Corcel Santificado',
+        descricao: `
+        <p><i>Montaria e cavaleiro são os únicos capazes de dividir o fardo pesado da Justiça.</i></p>
+        <p>Você recebe um cavalo de guerra parceiro veterano. Caso já possua uma montaria fornecida por outra habilidade, em vez disso essa montaria se torna também um parceiro guardião iniciante. Caso perca sua montaria, você pode receber outra visitando o Mosteiro de Khalmyr. Pré-requisitos: treinado em Cavalgar, Vitória da Ordem.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 39,
+      },
+      {
+        id: 1654,
+        nome: 'Graça de Khalmyr',
+        descricao: `
+        <p><i>A fé mantém o cavaleiro de pé, mesmo quando o mundo ao seu redor o faz querer desistir.</i></p>
+        <p>Quando faz um teste de resistência ou sofre um ataque, você pode gastar uma quantidade de PM a sua escolha (limitada pela sua Sabedoria). Para cada PM que gastar, recebe +2 no teste ou na Defesa contra esse ataque. Pré-requisito: Sab 2, Vitória da Ordem.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 39,
+      },
+      {
+        id: 1655,
+        nome: 'Manto da Justiça',
+        descricao: `
+        <p><i>O cavaleiro é cercado por uma aura de convicção.</i></p>
+        <p>Você pode gastar 3 PM para projetar uma aura de ordem com 9m de raio e duração sustentada. Dentro da aura, você se torna imune a efeitos de medo e mentais, você e seus aliados recebem redução de dano igual à sua Sabedoria e inimigos que comecem seus turnos dentro da aura ficam enjoados por 1d6 rodadas (Vontade CD Sab evita e a criatura fica imune a esta habilidade por 1 dia). Pré-requisitos: Vitória da Ordem e dois outros poderes da distinção.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 39,
+      },
     )
 
   }
