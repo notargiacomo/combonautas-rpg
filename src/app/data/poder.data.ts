@@ -17165,6 +17165,161 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 41,
       },
+      {
+        id: 1666,
+        nome: 'Traçar Perfil',
+        descricao: `
+        <p><i>“As botas do suspeito estavam sujas de lama, mas não havia chovido na noite anterior.”</i></p>
+        <p>Você pode usar Investigação para identificar criaturas (veja Misticismo, em Tormenta20, p. 121) em quaisquer criaturas inteligentes (Int –3 ou maior). Quando identifica uma criatura dessa forma, além das informações recebidas, você pode gastar 2 PM para traçar seu perfil: até o fim da cena, você recebe +1 em testes de perícia e na CD de suas habilidades contra ela para cada poder da distinção que você possui. Pré-requisitos: devoto de Tanna-Toh, Investigador, Mente Analítica.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 42,
+      },
+      {
+        id: 1667,
+        nome: 'Classificar como Suspeito',
+        descricao: `
+        <p><i>Para o detetive de Tanna-Toh são fatos, e não suposições, que tornam alguém suspeito.</i></p>
+        <p>Quando usa Traçar Perfil, você pode classificar o alvo como um suspeito. Se fizer isso, os bônus fornecidos por esse poder duram até o fim da aventura e, quando faz um teste de Investigação ou Intuição contra essa criatura, você rola dois dados e usa o melhor resultado. Você pode ter um máximo de suspeitos por aventura igual ao total de poderes da distinção que possui. Você pode remover um suspeito de sua lista (para abrir espaço para outros), mas apenas se reunir provas que o eliminem como tal. Pré-requisito: Traçar Perfil.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 42,
+      },
+      {
+        id: 1668,
+        nome: 'Elementar',
+        descricao: `
+        <p><i>O detetive de Tanna-Toh aprende a ler cenas de crime como um livro.</i></p>
+        <p>Você pode gastar 10 minutos para analisar a cena de um evento ocorrido há no máximo dois dias por poder da distinção que possui. Se fizer isso, você pode fazer um teste de Investigação para identificar criatura contra o responsável pelo evento (CD Int da criatura) como se ele estivesse presente — e pode usar Traçar Perfil contra ele como o normal —, mas não descobre sua identidade automaticamente. Se o evento foi cometido por mais de uma criatura, considere apenas o líder delas. Você só pode usar este poder uma vez por cena de crime. Pré-requisito: Traçar Perfil.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 42,
+      },
+      {
+        id: 1669,
+        nome: 'Informantes',
+        descricao: `
+        <p><i>O detetive de Tanna-Toh conta com uma rede de contatos especializados.</i></p>
+        <p>Você possui um informante (veja o quadro) a sua escolha. A cada outro poder da distinção, você recebe um informante adicional. Pré-requisito: Traçar Perfil.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 42,
+      },
+      {
+        id: 1670,
+        nome: 'Sequência Dedutiva',
+        descricao: `
+        <p><i>O que diferencia o detetive de Tanna-Toh é sua capacidade de deduções lógicas.</i></p>
+        <p>Sempre que você passa em um teste de Investigação e sempre que você (o jogador) deduz uma informação relevante (a critério do mestre) sobre a aventura em questão, você recebe um bônus cumulativo de +1 em testes de perícias baseadas em Inteligência, Sabedoria e Carisma relacionados à aventura (limitado pelo total de poderes da distinção que você possui). Esses bônus diminuem em –1 se você falhar em um teste de Investigação e desaparecem no fim da aventura. Pré-requisito: Traçar Perfil.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 42,
+      },
+      {
+        id: 1671,
+        nome: 'Círculo Externo',
+        descricao: `
+        <p><i>Há várias abordagens para o Akzath, todas igualmente libertadoras.</i></p>
+        <p>Escolha um dos conceitos abaixo presentes na roda externa do Akzath. Você recebe a habilidade relacionada. Você pode escolher este poder até três vezes para conceitos diferentes, mas a cada vez adicional deve escolher um conceito adjacente a outro que já possua de acordo com o diagrama do Akzath (veja a imagem). Uma vez por dia você pode alterar todos os poderes desta distinção que tiver. Pré-requisitos: treinado em Religião, devoto de Thwor.</p>
+        <ul>
+        <li><i>Vida.</i> Quando você ou um aliado em alcance curto morre, você pode gastar 3 PM para que a criatura se mantenha viva por mais 1 rodada. Ela ainda sofre os demais efeitos do evento que a matou (como dano, condições etc.) e irá morrer na rodada seguinte, a menos que eles sejam revertidos ou dissipados. Você pode usar esta habilidade mesmo que esteja inconsciente. <b><i>e</i></b></li>
+        <li><i>Ignorância.</i> Quando uma criatura em alcance curto faz um teste de perícia ou usa uma habilidade com CD, você pode gastar 3 PM para impor uma penalidade de –5 nesse teste ou nessa CD (apenas para esse uso). <b><i>e</i></b></li>
+        <li><i>Mudança.</i> Você pode rezar uma Missa (Tormenta20, p. 58) especial. Cada participante pode escolher uma característica que possui um atributo-chave (como Defesa, uma habilidade, uma perícia ou o modificador de dano de um item) e substituir esse atributo por outro a sua escolha pela duração do efeito da Missa.</li>
+        <li><i>Fim.</i> Você pode gastar uma ação completa e 5 PM para encerrar a cena atual e iniciar uma nova imediatamente. Isso encerra todos os efeitos com duração cena ou de até 10 minutos, mas permite que habilidades com usos limitados pela cena possam ser usadas novamente. Se os participantes da cena haviam rolado Iniciativa, ela deverá ser rolada novamente. Esta habilidade não afeta os eventos narrativos, apenas a duração da cena, e não pode ser usada em uma cena iniciada por ela mesma. <b><i>e</i></b></li>
+        <li><i>Morte.</i> Quando passa em um teste de Constituição para remover a condição sangrando, você recupera 1d8 PV para cada teste desses já feito nesa mesma cena. Além disso, sempre que faz um acerto crítico em combate ou reduz um inimigo a 0 PV, você recupera 1d8 PV. Se recuperar mais pontos de vida dessa forma que o seu máximo, o excedente se torna PV temporários (cumulativo até o dobro de seu nível de personagem). <b><i>e</i></b></li>
+        <li><i>Conhecimento.</i> Você pode gastar 3 PM para expandir o conhecimento do Azkath a outros. Escolha uma perícia que exija treinamento. Até o fim da cena, você e seus aliados em alcance curto recebem os benefícios de ser treinado nela.</li>
+        <li><i>Continuidade.</i> Uma vez por rodada, quando uma habilidade ou item com duração instantânea é usada em um alvo em alcance curto, você pode gastar 3 PM para que esse efeito seja usado novamente na rodada seguinte sobre o mesmo alvo. Você não pode usar este poder em um efeito que já tenha sido repetido por ele. <b><i>e</i></b></li>
+        <li><i>Início.</i> Você pode gastar 3 PM para criar uma bolha temporal, dentro da qual o tempo passa mais devagar. Isso funciona como congelar o tempo da magia Controlar o Tempo (Tormenta20, p. 187), exceto que a bolha fornece apenas 1 turno extra. Este efeito só funciona na primeira rodada de cada cena.</li>
+        </ul>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 43,
+      },
+      {
+        id: 1672,
+        nome: 'Círculo Interno',
+        descricao: `
+        <p><i>A proximidade com todos os aspectos do Akzath é uma consequência natural para o exegeta.</i></p>
+        <p>Escolha um dos conceitos abaixo presentes na roda interna do Akzath. Você recebe a habilidade relacionada. Você pode escolher este poder até duas vezes para conceitos diferentes. Cada conceito possui como pré-requisito um dos conceitos do Círculo Externo. Quando troca os poderes do Círculo Externo, você também pode trocar os do Círculo Interno.</p>
+        <ul>
+        <li><i>Nós.</i>  No início de cada dia, escolha um número de aliados até o valor de sua Sabedoria. Até o final do dia, em vez de pontos de vida individuais, você e esses aliados compartilham de um total de PV igual à soma dos PV de cada um. Dano, recuperação e perda de vida são todos aplicados a esse total (após aplicar quaisquer habilidades, como RD, do alvo original do dano). Entretanto, se o total de PV acabar, todos os personagens sofrem os efeitos de serem reduzidos a 0 PV ou menos (e cada um ainda morre no seu limite individual de pontos de vida). Pré-requisito: Vida.</li>
+        <li><i>Dentro.</i> Quando lança uma magia com alcance pessoal, você recebe +2 PM para gastar em aprimoramentos. Pré-requisito: Ignorância.</li>
+        <li><i>Estagnação.</i> Você pode gastar uma ação padrão e 3 PM para gerar um pulso de estagnação em uma esfera de 6m em alcance médio. Cada criatura nessa área sob um efeito com duração maior que instantânea deve fazer um teste de Vontade (CD Sab). Se falhar, todos estes efeitos são dissipados. Pré-requisito: Mudança.</li>
+        <li><i>Trevas.</i> Quando usa uma habilidade mágica que possui teste de resistência, você pode gastar 1 PM. Se fizer isso, alvos que falharem na resistência não podem recuperar pontos de vida por 1 rodada. Pré-requisito: Fim.</li>
+        <li><i>Fora.</i> Quando usa uma habilidade mágica com efeito em área, você pode gastar 1 PM. Se fizer isso, você pode excluir da área afetada uma quantidade de alvos igual a sua Sabedoria. Pré-requisito: Morte</li>
+        <li><i>Eles.</i> Inimigos em alcance curto que você possa perceber sofrem uma penalidade de –2 em testes de ataque e rolagens de dano contra você. Essa penalidade aumenta para –5 se estiverem em alcance médio. Pré-requisito: Conhecimento.</li>
+        <li><i>Movimento.</i> Uma vez por rodada, quando uma criatura em alcance curto vai fazer uma ação de movimento para se deslocar, você pode gastar 2 PM. Se fizer isso, a criatura deve fazer um teste de Fortitude (CD Sab). Se falhar, ela perde a ação de movimento e você recebe uma ação de movimento adicional em seu próximo turno. Pré-requisito: Continuidade.</li>
+        <li><i>Luz.</i> Sempre que rolar o resultado máximo em um dado de cura ou dano de luz, role um dado extra e some ao resultado, repetindo até um limite de dados extras igual ao valor máximo do dado. Pré-requisito: Início.</li>
+        </ul>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 43,
+      },
+      {
+        id: 1673,
+        nome: 'Virtude do Forjador',
+        descricao: `
+        <p><i>Aço é meu corpo e fogo é meu sangue.</i></p>
+        <p>Você pode fabricar armas superiores com uma melhoria. Para cada outro poder da distinção que possuir, pode fabricar armas com uma melhoria adicional (até um máximo de 4 melhorias). Se aprender a fabricar armas superiores por outra habilidade, gasta metade do tempo para fabricá-las. Pré-requisitos: treinado em Luta e Ofício (armeiro), um poder concedido de Arsenal.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 44,
+      },
+      {
+        id: 1674,
+        nome: 'Armamento Sagrado',
+        descricao: `
+        <p><i>Aos olhos de Arsenal, todas as armas que seus forjadores fabricam são preferidas.</i></p>
+        <p>O custo do seu poder Abençoar Arma diminui em –1 PM e você pode usá-lo com qualquer arma que tenha fabricado. Pré-requisitos: Abençoar Arma, Virtude do Forjador.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 44,
+      },
+      {
+        id: 1675,
+        nome: 'Armamento Trabalhado',
+        descricao: `
+        <p><i>Um forjador litúrgico consegue moldar até mesmo os presentes de seu deus.</i></p>
+        <p>Quando usa Conjurar Arma, você pode gastar uma quantidade de PM adicionais igual ao dobro do total de poderes da distinção que possui. Para cada 2 PM gastos dessa forma, a arma recebe uma melhoria a sua escolha (até o máximo de 4 melhorias). Se pagar um total de 10 PM adicionais, além das melhorias a arma recebe um encanto a sua escolha. Pré-requisitos: Conjurar Arma, Forja Devocional.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 44,
+      },
+      {
+        id: 1676,
+        nome: 'Desprezo pelo Ordinário',
+        descricao: `
+        <p><i>Não será o simples artesanato dos plebeus, nem as mundanas garras de uma fera, que irá ferir o corpo de um forjador litúrgico.</i></p>
+        <p>Sempre que sofre dano não mágico, você pode gastar 2 PM para reduzir esse dano à metade. Pré-requisito: Forja Devocional.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 44,
+      },
+      {
+        id: 1677,
+        nome: 'Forja Devocional',
+        descricao: `
+        <p><i>Unindo forjaria e ritual, o forjador litúrgico consegue transferir magia para suas criações.</i></p>
+        <p>Você consegue transplantar encantos de outras armas para aquelas que você fabricou. Para isso, gaste metade do tempo necessário para fabricar a arma mágica e faça um teste de Ofício (armeiro) com a CD de fabricação dela. Se passar, a arma perde seus encantos e eles são transferidos para uma arma que você tenha fabricado (essa arma deve atender aos pré-requisitos dos encantos e respeitar o limite de encantos que pode ter). Pré-requisito: Virtude do Forjador.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 44,
+      },
     )
 
   }
