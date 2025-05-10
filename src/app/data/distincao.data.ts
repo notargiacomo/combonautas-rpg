@@ -989,7 +989,7 @@ export class DistincaoData {
         <p>Quando usa uma habilidade com um custo em PM, você pode consumir uma quantidade de tibares de ouro (limitada por seu Carisma). Cada TO consumido dessa forma paga 1 PM do custo da habilidade. Você pode consumir um número de TO por dia igual ao seu nível. Caso já possua essa habilidade, o limite de TO que você pode consumir por dia aumenta em +5.</p>
         `,
         ha_informacoes_adicionais: false,
-        imagem: 'assets/img/distincao_tibarista.png',
+        imagem: 'assets/img/distincao_tibarita.png',
         referencias: Referencia.DEUSES,
         paginas: '136, 137 e 138'
       },
@@ -1005,7 +1005,7 @@ export class DistincaoData {
         <p><i><b>Para o tirano, o primeiro passo é o elo com seu dragão.</b></i></p>
         <p>Você recebe um companheiro dragão jovem (de um tipo a sua escolha) que serve a você como um parceiro montaria iniciante (veja o quadro). Se o seu companheiro dragão morrer, você fica atordoado por 1 rodada. Um companheiro dragão morto pode ser substituído com uma ação entre aventuras.</p>
         `,
-        ha_informacoes_adicionais: false,
+        ha_informacoes_adicionais: true,
         imagem: 'assets/img/distincao_tirano_terceiro.png',
         referencias: Referencia.DEUSES,
         paginas: '139, 140 e 141'

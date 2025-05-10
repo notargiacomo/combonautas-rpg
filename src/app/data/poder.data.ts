@@ -17320,6 +17320,902 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 44,
       },
+      {
+        id: 1678,
+        nome: 'Destruir Anticriação',
+        descricao: `
+        <p><i>O poder da realidade pode ser canalizado para destruir tudo aquilo que é antinatural.</i></p>
+        <p>Quando faz um ataque corpo a corpo, você pode gastar 2 PM para canalizar a realidade em seu golpe. Você soma seu Carisma ao teste de ataque e +1d8 à rolagem de dano e, se o alvo for uma criatura da Tormenta, ignora sua imunidade a acertos críticos. Se possuir a habilidade Golpe Divino, em vez disso ela causa dois dados extras de dano e ignora a imunidade a acertos críticos de criaturas da Tormenta. Pré-requisitos: treinado em Luta, Vontade de Ferro.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 45,
+      },
+      {
+        id: 1679,
+        nome: 'Detectar Anticriação',
+        descricao: `
+        <p><i>Você sabe instintivamente o que é ou não real.</i></p>
+        <p>Você soma seu Carisma em Intuição e Percepção. Além disso, está permanentemente sob o efeito da magia Detectar Ameaças, com todos os seus aprimoramentos, mas apenas para efeitos da Tormenta. Pré-requisitos: treinado em Percepção, Destruir Anticriação.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 45,
+      },
+      {
+        id: 1680,
+        nome: 'Herói de Arton',
+        descricao: `
+        <p><i>O guardião da realidade não luta por um povo, um reino ou mesmo uma causa. Ele luta por toda Arton.</i></p>
+        <p>Uma vez por rodada, você pode gastar 2 PM para transformar um acerto crítico que tenha recém sofrido em um acerto normal, para repetir um teste de resistência recém realizado, ou para reduzir à metade o dano causado por uma fonte da Tormenta. Pré-requisito: Herói dos Reinos.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 45,
+      },
+      {
+        id: 1681,
+        nome: 'Herói dos Reinos',
+        descricao: `
+        <p><i>Por saber que seu dever é o mais exigente de todos, o guardião da realidade desenvolve uma reserva de força de vontade que nenhum outro herói possui.</i></p>
+        <p>Na primeira rodada de cada combate, você recebe uma quantidade de PM temporários igual ao seu Carisma. Além disso, uma vez por rodada, quando você usa uma habilidade contra um efeito da Tormenta, o custo dessa habilidade é reduzido em –1 PM (cumulativo com outras reduções). Pré-requisito: Detectar Anticriação.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 45,
+      },
+      {
+        id: 1682,
+        nome: 'Herói da Realidade',
+        descricao: `
+        <p><i>Após tantas lutas, o guardião da realidade enfim compreende que não defende apenas um mundo, mas toda a Criação.</i></p>
+        <p>Você projeta uma aura de realidade constante com 9m de raio. Criaturas a sua escolha nessa aura são protegidas dos seguintes efeitos de áreas de Tormenta e de templos de Aharadak (Ameaças de Arton, p. 60): ao entrar nesses locais elas não ficam frustradas e seus itens mágicos encantados não perdem encantos. O aumento de custo de suas habilidades por estar nesses locais diminui em 1 (+0 PM para templos e +1 PM para áreas). Por fim, dano contra criaturas da Tormenta a sua escolha dentro da aura ignora uma quantidade de RD igual ao seu Carisma e dentro da aura elas sofrem uma penalidade em rolagens de dano igual ao seu Carisma. Pré-requisito: Herói de Arton.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 45,
+      },
+      {
+        id: 1683,
+        nome: 'Sequência de Transformação',
+        descricao: `
+        <p><i>Em um clarão de luz, o inocente livreiro é coberto por uma armadura mística.</i></p>
+        <p>Escolha uma arma, escudo ou esotérico. Esse item e seu traje de combate recebem, cada um, uma melhoria a sua escolha (exceto material especial) que não conta em seu limite de melhorias. Além disso, você pode gastar uma ação de movimento para executar uma sequência de transformação; quando faz isso, sua armadura surge vestida em você e o item escolhido aparece em sua mão. Esse efeito funciona independentemente de onde os itens estiverem. Pré-requisito: Vontade de Ferro. e</p>`,
+        poder_chave_distincao: true,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 46,
+      },
+      {
+        id: 1684,
+        nome: 'Forma Final',
+        descricao: `
+        <p><i>O poder do herói henshin até agora era apenas uma faísca de seu verdadeiro potencial!</i></p>
+        <p>Quando usa sua Sequência de Transformação, você pode gastar 5 PM. Se fizer isso, os itens invocados pela sequência recebem um encanto cada, que não contam em seu limite de encantos e que duram até o fim da cena. Pré-requisito: quatro outros poderes da distinção.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 46,
+      },
+      {
+        id: 1685,
+        nome: 'Pose de Combate',
+        descricao: `
+        <p><i>O herói henshin assume uma postura que poderia ser cômica, mas afeta o coração de todos.</i></p>
+        <p>Escolha uma pose de combate (veja o quadro). Uma vez feita, essa escolha não pode ser alterada. A cada outro poder da distinção você recebe outra pose a sua escolha. Pré-requisitos: treinado em Luta, Sequência de Transformação.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 46,
+      },
+      {
+        id: 1686,
+        nome: 'Montaria Especial',
+        descricao: `
+        <p><i>O alazão do herói henshin é metálico e acompanha seu cavaleiro onde quer que a injustiça apareça.</i></p>
+        <p>Você pode gastar uma ação de movimento e 2 PM para invocar sua montaria especial. Ela aparece com um brilho de luz dourada ao seu lado e fica até o fim da cena, quando retorna magicamente para o lugar de onde veio. Ela é um parceiro montaria veterano de um tipo a sua escolha e aprovado pelo mestre, ou um birrotor henshin (veja o quadro). Caso já possua uma montaria fornecida por outra habilidade, em vez disso você pode invocá-la com este poder e ela se torna também uma montaria iniciante de outro tipo a sua escolha e aprovado pelo mestre. Pré-requisitos: treinado em Cavalgar ou Pilotagem, Sequência de Transformação. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 46,
+      },
+      {
+        id: 1687,
+        nome: 'Pose Complexa',
+        descricao: `
+        <p><i>Se acham que uma pose é estapafúrdia, acerte-os com duas!</i></p>
+        <p>Você pode ativar duas poses de combate ao mesmo tempo. Pré-requisitos: duas poses de combate.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 46,
+      },
+      {
+        id: 1688,
+        nome: 'Gambiarra Mestra',
+        descricao: `
+        <p><i>Uma pena, dois botões e o resto do jantar de ontem serão o suficiente…</i></p>
+        <p>Você pode gastar uma ação de movimento e 3 PM para improvisar algum tipo de gambiarra para uma tarefa específica. Escolha uma perícia. Até o fim da cena, você pode usar sua gambiarra para substituir testes da perícia escolhida por testes de Ofício. Pré- requisitos: treinado em Investigação e Ofício.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 47,
+      },
+      {
+        id: 1689,
+        nome: 'Efeito Cenográfico',
+        descricao: `
+        <p><i>Um bom improvisador encontra formas de vencer sem violência.</i></p>
+        <p>Quando causa dano não letal a uma criatura viva, você pode gastar 2 PM para desferir um golpe cenográfico. A vítima deve fazer um teste de Fortitude (CD Int, +1 por poder da distinção que você possui). Se falhar, ela fica inconsciente (se for um capanga) ou atordoada por 1 rodada (apenas uma vez por cena) se for de outro tipo. Pré-requisito: Poder Improvisado.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 47,
+      },
+      {
+        id: 1670,
+        nome: 'Habilidade Improvisada',
+        descricao: `
+        <p><i>Intrometendo-se nos campos de outros aventureiros, o improvisador adquire uma versatilidade impressionante.</i></p>
+        <p>Você pode gastar uma ação padrão e 3 PM para improvisar uma forma de executar uma tarefa. Escolha uma habilidade de uma classe (exceto Magias) que não seja a sua. Até o fim da cena, ou até usar este poder novamente, você pode utilizar essa habilidade como um personagem de nível igual ao seu total de poderes da distinção. Pré-requisito: Poder Improvisado.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 47,
+      },
+      {
+        id: 1671,
+        nome: 'Magia Improvisada',
+        descricao: `
+        <p><i>Usando uma corda, uma luneta e um esquilo desatento, o improvisador cria um aparato mágico útil para a ocasião.</i></p>
+        <p>Você pode gastar uma ação completa para improvisar uma forma de simular um feito místico. Escolha uma magia de 1º círculo e faça um teste de Inteligência (CD 10, +2 para cada vez que usou este poder no mesmo dia). Se passar, até o fim da cena, você pode lançar a magia escolhida uma única vez, pagando seu custo normal (atributo-chave Inteligência). Esta não é uma habilidade mágica e provém de sua elevada capacidade de improvisação (veja “Magias Simuladas”, em Heróis de Arton, Capítulo 1: Campeões de Arton). Pré-requisitos: treinado em Misticismo, Poder Improvisado.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 47,
+      },
+      {
+        id: 1672,
+        nome: 'Poder Improvisado',
+        descricao: `
+        <p><i>O improvisador é um indivíduo de muitos talentos, vários dos quais nem ele sabe que possui...</i></p>
+        <p>Você pode gastar uma ação padrão e 3 PM para pensar em uma solução criativa para um problema a sua frente. Escolha um poder de classe ou geral (exceto poderes concedidos e da Tormenta) cujos pré-requisitos você cumpra. Para efeitos desse poder, considere que seu nível em qualquer classe é igual ao seu total de poderes da distinção. Até o fim da cena, ou até usar este poder novamente, você pode utilizar o poder escolhido. Pré-requisito: Gambiarra Mestra.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 47,
+      },
+      {
+        id: 1673,
+        nome: 'Golpe Purificador',
+        descricao: `
+        <p><i>O poder divino do inquisidor pode encerrar o mau uso da magia.</i></p>
+        <p>Quando usa Golpe Divino, você pode gastar 2 PM para transformá-lo em um golpe purificador. Se acertar o ataque, além do dano, você causa um efeito semelhante à magia Dissipar Magia sobre o alvo, usando o resultado do teste de ataque no lugar do teste de Misticismo. Pré-requisitos: Abençoado, Golpe Divino. </p>`,
+        poder_chave_distincao: true,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 48,
+      },
+      {
+        id: 1674,
+        nome: 'Magia Sagrada',
+        descricao: `
+        <p><i>O inquisidor de Wynna é capaz de emprestar poder destruidor a suas magias.</i></p>
+        <p>Quando lança uma magia que causa dano, você pode gastar 2 PM para receber +2 na CD e +1d8 na rolagem de dano da magia. Para cada outro poder da distinção que possuir, você pode gastar +1 PM para aumentar o dano em +1d8. Pré-requisitos: Golpe Purificador, Orar.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 48,
+      },
+      {
+        id: 1675,
+        nome: 'Pira da Inquisição',
+        descricao: `
+        <p><i>O inquisidor pode punir o mau uso da magia com a chama essencial de Wynna.</i></p>
+        <p>Enquanto sua Aura Sagrada estiver ativa, no início de seus turnos, você gera um efeito semelhante a Dissipar Magia (usando Vontade no lugar de Misticismo) em criaturas e objetos a sua escolha na área. Para cada círculo de magia dissipada dessa forma, seu conjurador sofre 1d8+1 pontos de dano de essência. Pré-requisitos: Aura Sagrada, Golpe Purificador.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 48,
+      },
+      {
+        id: 1676,
+        nome: 'Refletir Magia',
+        descricao: `
+        <p><i>Os inquisidores se esforçam para aproveitar ao máximo o dom de Wynna, redirecionando energia arcana mal utilizada de volta para quem a emitiu.</i></p>
+        <p>Quando passa em um teste de resistência contra uma habilidade mágica, você pode gastar 6 PM para refletir esse efeito de volta à sua fonte. Você não sofre nenhum efeito da habilidade (outros alvos são afetados normalmente) e a fonte é afetada por ela como se fosse um dos alvos originais (a fonte ainda tem direito a quaisquer testes de resistência contra a habilidade). Pré-requisitos: outros dois poderes da distinção. e</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 48,
+      },
+      {
+        id: 1677,
+        nome: 'Veredito Inquisitorial',
+        descricao: `
+        <p><i>Os inquisidores de Wynna podem remover as bênçãos da Deusa daqueles que as empregam para o mal.</i></p>
+        <p>Quando usa Golpe Purificador, você pode gastar +6 PM. Se fizer isso e acertar o ataque, você atrapalha o fluxo de mana do alvo: até o fim da cena, a próxima vez que ele for executar uma ação com um custo em PM, deve fazer um teste de Vontade oposto ao resultado do seu teste de ataque. Se falhar, a ação não tem efeito (mas os PM são gastos mesmo assim). Pré-requisitos: quatro outros poderes da distinção.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 48,
+      },
+      {
+        id: 1678,
+        nome: 'Prata da Casa',
+        descricao: `
+        <p><i>O primeiro trabalho do mestre de armearia é se livrar das velharias e criar suas próprias armas.</i></p>
+        <p>Você pode fabricar armas de fogo não mágicas em uma semana, em vez de um mês, e recebe +1 em testes de ataque e rolagens de dano com armas de fogo que tenha fabricado. A cada dois outros poderes da distinção, esses bônus aumentam em +1. Pré-requisito: Balística.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 49,
+      },
+      {
+        id: 1679,
+        nome: 'Arma de Estimação',
+        descricao: `
+        <p><i>Um mestre de armearia trata suas armas como bichos de estimação — ou filhos!</i></p>
+        <p>Escolha uma arma de fogo que tenha fabricado para receber uma habilidade de classe de 1º nível de uma classe que não seja a sua. Você só pode escolher uma habilidade que seja ativada ao se fazer um ataque ou usar a ação agredir (como Ataque Especial) ou que afete testes de ataque e/ ou rolagens de dano e possa ser usada com a arma escolhida (como Duelo ou Marca da Presa). Você pode escolher a habilidade Magias, mas aprende uma única magia (que possa ser usada na arma ou com ela), com as mesmas limitações descritas, e não soma o atributo-chave da habilidade em seu total de PM. Você pode usar a habilidade como se tivesse 1 nível naquela classe, mas apenas com a arma escolhida. Pré-requisitos: Profissional Completo, ter feito três acertos críticos no mesmo combate com a arma escolhida.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 49,
+      },
+      {
+        id: 1680,
+        nome: 'Improvisar o Progresso',
+        descricao: `
+        <p><i>Um mestre de armearia aprende a fazer modificações rápidas para qualquer situação.</i></p>
+        <p>Você pode gastar uma ação completa e 2 PM para aplicar uma melhoria (exceto material especial) em uma arma de fogo que esteja empunhando. Você não precisa pagar o custo nem fazer o teste de Ofício (armeiro), mas a melhoria só dura até o fim da cena. Você também pode gastar +2 PM para aplicar também uma inovação. A melhoria e a inovação não contam nos limites da arma. Pré-requisitos: Inovação Tecnológica, ter construído pelo menos três armas com melhorias exclusivas.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 49,
+      },
+      {
+        id: 1681,
+        nome: 'Inovação Tecnológica',
+        descricao: `
+        <p><i>Insatisfeito com suas próprias armas e as de seus companheiros, o mestre de armearia desenvolve formas de aprimorá-las.</i></p>
+        <p>Você adiciona uma inovação a uma arma de fogo que possua e passa a poder fabricar armas de fogo superiores com inovações (veja o quadro). Pré-requisito: Prata da Casa.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 49,
+      },
+      {
+        id: 1682,
+        nome: 'Profissional Completo',
+        descricao: `
+        <p><i>O mestre de armearia não depende de treinamento para lutar, valendo-se de seu conhecimento e olhar de artesão.</i></p>
+        <p>Quando ataca com uma arma de fogo que tenha fabricado, você pode substituir testes de Pontaria por testes de Ofício (armeiro), e pode usar Maestria em Perícia nos ataques com ela. Pré-requisitos: Prata da Casa, Maestria em Perícia (Ofício [armeiro]).</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 49,
+      },
+      {
+        id: 1683,
+        nome: 'Aplicar Constante',
+        descricao: `
+        <p><i>A Criação foi feita a partir da matemática, que também rege toda magia.</i></p>
+        <p>No início de cada cena, role 1d4 e anote o resultado. Esse número passa a ser sua Constante M. Suas magias com um teste de resistência ganham o seguinte aprimoramento. +2PM: criaturas que falhem no teste de resistência sofrem uma penalidade na Defesa e em testes de resistência igual a sua Constante M. Pré-requisitos: treinado em Conhecimento e Misticismo, capacidade de lançar magias arcanas de 2º círculo.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 50,
+      },
+      {
+        id: 1684,
+        nome: 'Correção do Desvio Padrão',
+        descricao: `
+        <p><i>Na correção da dispersão natural está a força da concentração mágica.</i></p>
+        <p>Suas magias com efeitos baseados em dados recebem o seguinte aprimoramento. +3PM: para cada dado do efeito que rolar menos da metade de seu valor máximo, você pode considerar o resultado como a metade de seu valor máximo (por exemplo, um d6 que role 2 é considerado 3). Pré-requisito: Magicometria.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 50,
+      },
+      {
+        id: 1685,
+        nome: 'Função Metamágica de M',
+        descricao: `
+        <p><i>A interseção da derivada de uma magia com sua constante é uma fonte infindável de poder.</i></p>
+        <p>Você passa a rolar 1d6 para determinar sua Constante M (em vez de 1d4). Além disso, uma vez por rodada, se um ou mais dados forem rolados para definir o efeito de uma habilidade mágica usada em alcance médio e o resultado de um desses dados for sua Constante M, você pode lançar uma magia como ação livre (mas ainda limitado a uma magia como ação livre na rodada) até o fim de seu próximo turno. Pré-requisito: Magicometria.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 50,
+      },
+      {
+        id: 1686,
+        nome: 'Magicometria',
+        descricao: `
+        <p><i>Os números são o código com o qual o Nada e o Vazio fizeram a Criação.</i></p>
+        <p>Quando uma habilidade mágica com efeito baseado em dados é usada em alcance médio, você pode fazer um teste de Misticismo (CD 15 + o custo em PM da habilidade). Se passar, você pode rolar novamente uma quantidade de dados do efeito igual a sua Constante M. Pré-requisito: Aplicar Constante M.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 50,
+      },
+      {
+        id: 1687,
+        nome: 'Matriz da Equação Final',
+        descricao: `
+        <p><i>Na magias, Kallyadranoch está para os números naturais assim como Wynna está para os reais. A solução da Equação Final… está num conjunto ainda não imaginado…</i></p>
+        <p>Suas magias que causam dano baseado em dados ganham o seguinte aprimoramento. +2PM: em vez de rolar todos os dados de dano da magia, você pode rolar um único dado e multiplicar seu resultado pela quantidade de dados original do efeito. Pré-requisitos: Correção do Desvio Padrão, dois poderes de magia.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 50,
+      },
+      {
+        id: 1688,
+        nome: 'Combate Pacífico',
+        descricao: `
+        <p><i>O pacificador acredita que existem várias maneiras de se derrotar alguém sem matar.</i></p>
+        <p>Quando é atingido por um ataque corpo a corpo, você pode gastar 1 PM para fazer um teste de manobra. Se o resultado do seu teste for maior que o do atacante, você evita o ataque. Além disso, quando uma criatura atacá-lo e errar, você pode gastar 1 PM para fazer uma manobra contra essa criatura (desde que ela esteja em seu alcance). Você pode usar cada um desses efeitos uma vez por rodada. Pré-requisito: treinado em Luta.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 51,
+      },
+      {
+        id: 1689,
+        nome: 'Dor sem Morte',
+        descricao: `
+        <p><i>Você domina técnicas complexas e elaboradas para não matar.</i></p>
+        <p>Quando faz um ataque que causa dano não letal, você pode gastar 1 PM. Se fizer isso e acertar o ataque, o oponente sofre uma condição a sua escolha entre fraco, frustrado ou lento (Fortitude CD For ou Des evita). Para cada poder da distinção que você possui, a CD para resistir a este efeito aumenta em +1. Pré-requisito: Combate Pacífico.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 51,
+      },
+      {
+        id: 1690,
+        nome: 'Golpe Paralisante',
+        descricao: `
+        <p><i>O melhor jeito de não matar em uma batalha é evitar que ela aconteça.</i></p>
+        <p>Você pode gastar uma ação padrão e 3 PM para interromper o fluxo de energia corporal de uma criatura adjacente. A vítima fica paralisada (Fortitude CD For ou Des reduz para lenta). A cada rodada, a criatura pode gastar uma ação completa para fazer um novo teste de Fortitude. Se passar, liberta-se do efeito. Para cada poder da distinção que você possui, a CD para resistir a este efeito aumenta em +1. Metabolismo. Pré-requisito: Dor sem Morte.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 51,
+      },
+      {
+        id: 1691,
+        nome: 'Pacificação',
+        descricao: `
+        <p><i>“Ninguém precisa morrer aqui hoje. Nem nós, nem vocês.”</i></p>
+        <p>Sempre que derrotar um inimigo sem matá-lo, você recebe +10 PV e +2 PM cumulativos até o fim da aventura. A cada aventura, você pode receber esse benefício um número de vezes igual ao total de poderes da distinção que possui. Pré-requisito: Presença do Bem.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 51,
+      },
+      {
+        id: 1692,
+        nome: 'Presença do Bem',
+        descricao: `
+        <p><i>Tão importante quanto não matar seus inimigos é garantir que seus amigos não morram.</i></p>
+        <p>Você pode gastar uma ação de movimento e 1 PM para fornecer +2 na Defesa e em testes de resistência a você e todos os aliados adjacentes até o fim da cena. O bônus se encerra para uma criatura se ela causar dano letal. Pré-requisito: Combate Pacífico.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 51,
+      },
+      {
+        id: 1693,
+        nome: 'Sincretismo Oportuno',
+        descricao: `
+        <p><i>O pregador roga por Khalmyr, acende uma vela para Nimb, faz uma oferenda para Hyninn...</i></p>
+        <p>Você pode gastar uma ação padrão e 3 PM para orar a uma divindade que não seja a sua. Se fizer isso, recebe um poder concedido dela, mas passa a ser considerado seu devoto para efeitos de Obrigações & Restrições. Esse efeito dura até o fim da cena ou até você usá-lo novamente. Se violar as Obrigações & Restrições da divindade, você perde o poder obtido e não pode ganhar poderes dessa divindade até o fim da aventura. Pré-requisitos: treinado em Enganação e Religião, Devoto Fiel.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 52,
+      },
+      {
+        id: 1694,
+        nome: 'Abusar da Paciência',
+        descricao: `
+        <p><i>O pregador consegue alcançar até mesmo os limites da paciência infinita dos deuses.</i></p>
+        <p>Você pode fazer um teste de Religião (CD 15, +5 para cada outra vez que usou este poder no mesmo dia) para incomodar um deus qualquer em troca de poder mágico. Se passar, até o fim da cena pode lançar uma magia divina que não conheça, de qualquer círculo a que tenha acesso, pagando seus custos normalmente. Se falhar, não pode mais usar este poder até o fim do dia. Pré-requisitos: Está nas Escrituras, capacidade de lançar magias divinas de 2º círculo.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 52,
+      },
+      {
+        id: 1695,
+        nome: 'Está nas Escrituras',
+        descricao: `
+        <p><i>Para o pregador, a força dos textos sagrados está nas entrelinhas.</i></p>
+        <p>Quando falha em um teste de Enganação ou Religião, você pode gastar 1 PM para repetir esse teste usando a outra perícia (Enganação para um teste de Religião e vice-versa). Pré-requisito: Sincretismo Oportuno.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 52,
+      },
+      {
+        id: 1696,
+        nome: 'Não Fui Eu',
+        descricao: `
+        <p><i>Um sorriso “sincero” e desculpas no momento certo já livraram mais de um pregador.</i></p>
+        <p>Quando é alvo de uma ação hostil de uma criatura inteligente (Int –3 ou maior), você pode gastar 2 PM e fazer um teste de Enganação oposto pelo teste de Vontade dessa criatura. Se o alvo for devoto de uma divindade da qual você é considerado devoto, você recebe +5 nesse teste. Se passar, a ação hostil falha e a criatura perde a ação. Você só pode usar este poder uma vez por criatura por cena. Pré-requisito: Está nas Escrituras.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 52,
+      },
+      {
+        id: 1697,
+        nome: 'Releitura Conveniente',
+        descricao: `
+        <p><i>O pregador sabe que a palavra dos deuses está sujeita a “interpretações”.</i></p>
+        <p>Você pode gastar 1 PM para considerar uma característica de uma divindade como parte das características do seu deus. Você pode escolher entre Arma Preferida, Canalizar Energia ou ser considerado devoto desse deus para cumprir requisitos de usar habilidades e itens. Esse efeito dura até o fim da cena ou até você usá-lo novamente. Pré-requisito: Sincretismo Oportuno.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 52,
+      },
+      {
+        id: 1698,
+        nome: 'Vender Indulgências',
+        descricao: `
+        <p><i>O perdão dos deuses tem um preço. E na mão do pregador é mais barato.</i></p>
+        <p>Quando um aliado em alcance curto faz um teste de perícia, ele pode gastar 3 PM para rolar novamente esse teste. Se ele fizer isso, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena igual ao total de poderes da distinção que possui. Esses pontos temporários desaparecem no fim da cena. Pré-requisito: Sincretismo Oportuno.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 52,
+      },
+      {
+        id: 1699,
+        nome: 'Caminhar nas Trevas',
+        descricao: `
+        <p><i>As sombras que tudo cobrem não são mais que caminhos.</i></p>
+        <p>Você aprende e pode lançar Manto de Sombras. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Para cada dois outros poderes da distinção que você possui, a ação necessária para lançar essa magia diminui em um passo (de padrão para movimento e de movimento para livre). Pré-requisitos: treinado em Acrobacia e Furtividade, Passo Sombrio, deve ser capaz de enxergar no escuro.</p>`,
+        poder_chave_distincao: true,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 53,
+      },
+      {
+        id: 1700,
+        nome: 'Clone Sombrio',
+        descricao: `
+        <p><i>No gelado abraço da escuridão, encontramos aliados.</i></p>
+        <p>Você pode gastar uma ação padrão e 3 PM para criar um clone de sombras em um espaço desocupado em alcance curto. Ele é uma criatura com características iguais às suas, mas tem Evasão, é imune a efeitos mentais e tem 1 PV. No início dos seus turnos, ele pode usar a ação movimentar-se uma vez. Uma vez por rodada, você pode gastar uma ação de movimento para fazer o clone causar, em uma criatura adjacente, 1d6 pontos de dano de frio por poder da distinção que você possui, ou executar uma manobra de combate. Para cada dois outros poderes da distinção que possui, você pode pagar +3 PM para invocar um clone adicional. Pré-requisitos: treinado em Misticismo, Miragem das Sombras. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 53,
+      },
+      {
+        id: 1701,
+        nome: 'Forma de Sombra',
+        descricao: `
+        <p><i>Um com a escuridão, sempre.</i></p>
+        <p>Enquanto estiver sob efeito de Manto de Sombras, você causa +1 ponto de dano por dado de dano de trevas. Além disso, quando faz um ataque, você pode gastar 1 PM para cobrir sua arma de sombras. Se fizer isso, esse ataque pode afetar uma criatura normal e, se for um ataque furtivo, o dano extra dessa habilidade se torna dano de trevas. Pré-requisitos: Ataque Furtivo, Sombra Espreitadora.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 53,
+      },
+      {
+        id: 1702,
+        nome: 'Miragem de Sombras',
+        descricao: `
+        <p><i>Aqueles que não enxergam no escuro tentam preencher o vazio com imagens criadas por suas mentes.</i></p>
+        <p>Você aprende a magia Criar Ilusões (CD Int). Se possuir três outros poderes da distinção, a magia recebe o seguinte aprimoramento. +2PM: suas ilusões emanam uma aura de 3m que concede camuflagem leve por escuridão a criaturas adjacentes a elas. Pré-requisito: Caminhar nas Trevas.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 53,
+      },
+      {
+        id: 1703,
+        nome: 'Moldar Sombra',
+        descricao: `
+        <p><i>Mais que aliadas, as trevas são armas.</i></p>
+        <p>Você pode gastar uma ação de movimento e 2 PM para criar uma arma corpo a corpo ou de arremesso com a qual seja proficiente, ou uma ferramenta. O item surge em sua mão e dura até o fim da cena ou até passar 1 rodada sem ser empunhado por você. Armas criadas dessa forma causam dano de trevas em vez do seu tipo normal e ferramentas fornecem +1 em testes das respectivas perícias (cumulativo com quaisquer bônus já fornecidos pela ferramenta). Para cada dois outros poderes da distinção que você possui, o bônus fornecido pela ferramenta aumenta em +1. Pré-requisito: Miragem de Sombras. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 53,
+      },
+      {
+        id: 1704,
+        nome: 'Sombra Espreitadora',
+        descricao: `
+        <p><i>Seus inimigos irão aprender a temer a própria sombra.</i></p>
+        <p>Sempre que usar Passo Sombrio para alcançar um espaço adjacente a uma criatura, você pode fazer um teste de Acrobacia oposto ao teste de Percepção ou Reflexos dela. Se você passar, essa criatura fica desprevenida contra seu próximo ataque e esse ataque causa +1 ponto de dano de trevas por dado de dano. Pré-requisitos: Caminhar nas Trevas, Passo Sombrio.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 53,
+      },
+      {
+        id: 1705,
+        nome: 'Sorte Visitante',
+        descricao: `
+        <p><i>Para o sortudo de Nimb, a sorte é uma visita frequente.</i></p>
+        <p>No início de cada cena, role 1d8. Em um resultado 1, até o fim da cena você pode rolar novamente qualquer teste recém-feito. A cada dois outros poderes da distinção, esse d8 diminui em um passo. Pré-requisitos: Sortudo ou Sorte dos Loucos, devoto de Nimb.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 54,
+      },
+      {
+        id: 1706,
+        nome: 'Bênção de Nimb',
+        descricao: `
+        <p><i>É melhor ser sortudo do que ser bom.</i></p>
+        <p>Sempre que faz um teste ou rola um dado em uma tabela ou para determinar a ocorrência de um evento (como o dado de confusão das Obrigações & Restrições de Nimb), você rola duas vezes e escolhe qual resultado usar. A critério do mestre, este poder pode se aplicar a outras rolagens de eventos aleatórios, como a chance de ocorrer um encontro. Pré-requisito: Sorte Visitante.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 54,
+      },
+      {
+        id: 1707,
+        nome: 'Caminhada Descuidada',
+        descricao: `
+        <p><i>Com sorte você atravessa o mundo, sem sorte você não atravessa a rua.</i></p>
+        <p>Quando um ataque ou habilidade causa dano a você, você pode gastar 2 PM para fazer um teste de Vontade com CD igual ao resultado do teste de ataque ou à CD para resistir à habilidade. Se passar nesse teste, você não sofre dano e, se passar por 10 ou mais, uma criatura a sua escolha dentro do alcance do ataque ou da habilidade sofre o dano que seria causado. Pré-requisito: Bênção de Nimb.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 54,
+      },
+      {
+        id: 1708,
+        nome: '50/50',
+        descricao: `
+        <p><i>Na vida tudo acontece. Ou não.</i></p>
+        <p>Você pode gastar 5 PM e uma ação de movimento para gerar uma aura com 9m de raio de sorte e azar absolutos, com duração sustentada. Dentro dessa aura, todos os testes são resolvidos com uma rolagem de 1d2; resultados 1 são falhas e 2 são sucessos. Sempre que um teste dentro da aura for um sucesso, você recupera 2 PM e, sempre que for uma falha, você perde 2 PM. Pré-requisito: Sorte É o Que Se Faz. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 54,
+      },
+      {
+        id: 1709,
+        nome: 'Olha Só, Quem Diria?',
+        descricao: `
+        <p><i>Não é todo dia que se encontra uma vingadora sagrada no chão...</i></p>
+        <p>Uma vez por cena, você pode gastar uma ação completa e 6 PM para fazer um item mágico menor, a sua escolha, surgir em um espaço desocupado em alcance curto. Você não pode escolher itens únicos ou artefatos. O item desaparece ao fim da cena, ou se passar ao controle de outra pessoa. Quando isso acontece, quaisquer benefícios concedidos pelo item desaparecem. Pré-requisito: 50/50.  </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 54,
+      },
+      {
+        id: 1710,
+        nome: 'Sorte é o Que Se Faz',
+        descricao: `
+        <p><i>Até a sorte pode receber um empurrãozinho.</i></p>
+        <p>Uma vez por rodada, quando uma criatura em alcance curto faz um teste de perícia, você pode gastar 3 PM para influenciar a sorte, ou o azar, dela. Se fizer isso, role 1d20. Você pode trocar os resultados das duas rolagens (a criatura usa o resultado do seu d20 e você fica com o resultado do d20 dela). Até o fim da cena, você pode usar o resultado trocado como a rolagem de um de seus testes de perícia. Você só pode usar este poder uma vez por teste de perícia na mesma cena para cada criatura. Pré-requisito: Bênção de Nimb. </p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 54,
+      },
+      {
+        id: 1711,
+        nome: 'Proteção Divina',
+        descricao: `
+        <p><i>Ofensas de devotos menores não afetam o sumo; ele é o escolhido de seu deus.</i></p>
+        <p>Você passa automaticamente em testes de resistência contra magias divinas lançadas por devotos de sua divindade. Pré-requisitos: treinado em Religião, devoto de um deus maior.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 55,
+      },
+      {
+        id: 1712,
+        nome: 'Bênção do Patrono',
+        descricao: `
+        <p><i>Os deuses olham por seus principais mensageiros.</i></p>
+        <p>Você recebe um poder concedido de seu deus, desde que cumpra seus pré-requisitos. Além disso, pode gastar uma ação de movimento para trocar um de seus poderes concedidos por outro. Para cada outro poder da distinção, você recebe um novo poder concedido. Este poder afeta apenas poderes recebidos por sua devoção. Pré-requisito: Proteção Divina.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 55,
+      },
+      {
+        id: 1713,
+        nome: 'Evolução Espiritual',
+        descricao: `
+        <p><i>Para melhor representar seu deus, o sumo-sacerdote é abençoado com seu poder divino.</i></p>
+        <p>Para cada poder da distinção, você recebe +5 PV e +2 PM, e a CD de suas magias divinas e de seus poderes concedidos por sua divindade aumenta em +1. Pré-requisito: Proteção Divina.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 55,
+      },
+      {
+        id: 1714,
+        nome: 'Presente dos Deuses',
+        descricao: `
+        <p><i>Qualquer que seja sua origem, todo sumo-sacerdote é um canal para os milagres divinos.</i></p>
+        <p>Você recebe a habilidade Magias, como um clérigo de nível igual ao dobro dos poderes da distinção que você possui. Se já possui essa habilidade, em vez disso soma sua Sabedoria no limite de PM que pode gastar em magias divinas e em seu total de PM (cumulativo com efeitos que já o fazem). Pré-requisito: Bênção do Patrono.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 55,
+      },
+      {
+        id: 1715,
+        nome: 'Punição Divina',
+        descricao: `
+        <p><i>O sumo-sacerdote é um instrumento da ira de seu deus.</i></p>
+        <p>O sumo-sacerdote pode gastar uma ação padrão para cancelar as magias divinas e os poderes concedidos de um devoto de sua divindade em sua linha de visão (Von CD Sab, +1 por poder da distinção, evita e o devoto não pode mais ser punido por 1 dia). A punição pode ser revertida com uma ação padrão do sumo-sacerdote ou com uma missão sagrada realizada como parte de um rito (veja Religião em Tormenta20, p. 122). Pré-requisito: Bênção do Patrono.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 55,
+      },
+      {
+        id: 1716,
+        nome: 'Amigo de Outro Mundo',
+        descricao: `
+        <p><i>Ninguém nunca teve um amigo assim.</i></p>
+        <p>Você tem um amigo de outro mundo, uma criatura extraplanar que você pode invocar em momentos de necessidade. Escolha um parceiro entre os parceiros básicos (Tormenta20, p. 260) ou entre um pilly, luminar, pégaso e ou dragonete (veja o Capítulo 4). Uma vez feita, essa escolha não pode ser mudada. Você pode gastar uma ação de movimento e 2 PM para invocar seu amigo de outro mundo, que aparece com um brilho de luz mágica ao seu lado e permanece até o fim da cena ou até ser destruído (um amigo destruído não pode ser invocado novamente por 1 dia). Seu amigo é um parceiro iniciante mas, para cada dois outros poderes da distinção, sobe um nível (de iniciante para veterano, de veterano para mestre). Pré-requisitos: treinado em Religião, capacidade de lançar magias divinas de 3° círculo, Servo Divino. </p>`,
+        poder_chave_distincao: true,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 56,
+      },
+      {
+        id: 1717,
+        nome: 'Barganha Planar',
+        descricao: `
+        <p><i>O pacto do taumaturgista infunde suas invocações com poder planar.</i></p>
+        <p>Escolha um dos efeitos a seguir (uma vez feita, essa escolha não pode ser alterada). Quando invoca seu amigo de outro mundo ele traz uma fração de poder extraplanar do tipo escolhido.</p>
+        <ul>
+        <li><i>Abissal.</i> Quando seu amigo é invocado, criaturas a sua escolha em um raio de 6m dele sofrem 2d8+2 pontos de dano de trevas e ficam abaladas por 1 rodada (Vontade CD Sab reduz à metade e evita a condição).</li>
+        <li><i>Celestial.</i> Quando seu amigo é invocado, criaturas a sua escolha em um raio de 6m dele recebem 4d8+4 PV temporários.</li>
+        <li><i>Elemental.</i> Escolha um elemento entre ácido, eletricidade, fogo ou frio. Quando seu amigo é invocado, criaturas a sua escolha em um raio de 6m dele sofrem 2d12+2 pontos de dano do tipo escolhido (Reflexos CD Sab reduz à metade).</li>
+        <li><i>Feérico.</li> Quando seu amigo é invocado, criaturas a sua escolha em um raio de 6m dele sofrem –2 em testes de Vontade por 1 rodada.</li>
+        </ul>
+        <p>Pré-requisito: Amigo de Outro Mundo.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 56,
+      },
+      {
+        id: 1718,
+        nome: 'Contrato Planar',
+        descricao: `
+        <p><i>Um taumaturgista habilidoso mantém mais de um contrato planar ativo, sempre.</i></p>
+        <p>Você tem um segundo amigo de outro mundo. Escolha um efeito de Barganha Planar para esse segundo amigo. Se escolher um igual, ele é cumulativo. Pré-requisito: Barganha Planar.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 56,
+      },
+      {
+        id: 1719,
+        nome: 'Invocação Corrompida',
+        descricao: `
+        <p><i>Em suas pesquisas, o taumaturgista pode encontrar coisas terríveis… que podem ser invocadas.</i></p>
+        <p>Um ou mais dos seus amigos de outro mundo se tornam corrompidos pela Tormenta. Quando esse amigo é invocado, criaturas a sua escolha em um raio de 6m dele perdem 2d4 PM (CD Sab reduz à metade). Se isso zerar seus PM, a criatura fica confusa. Além disso, enquanto esse amigo estiver presente, você recebe +5 em Percepção e não pode ser flanqueado. Pré-requisitos: Amigo de Outro Mundo, dois poderes da Tormenta.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 56,
+      },
+      {
+        id: 1720,
+        nome: 'Titereiro Planar',
+        descricao: `
+        <p><i>Para o taumaturgista, controlar convocações menores se torna um ato banal.</i></p>
+        <p>Quando lança Conjurar Monstro, você pode dar ordens ao monstro como uma ação de movimento (em vez de uma ação padrão) e a magia não conta no limite de magias que você pode sustentar em um turno. Pré-requisitos: Conjurar Monstro, Amigo de Outro Mundo.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 56,
+      },
+      {
+        id: 1721,
+        nome: 'Conjuração Unificada',
+        descricao: `
+        <p><i>Nas mãos do teurgista, a magia é uma só.</i></p>
+        <p>Escolha um entre seus atributos-chave de magias. Você pode usar esse atributo como atributo-chave de todas as suas magias e habilidades relacionadas a elas, exceto cálculo de PM. Entretanto, restrições que afetem qualquer um de seus tipos de magias (como o uso de armaduras e magias arcanas) passam a afetar ambos os tipos. Pré-requisitos: treinado em Misticismo e Religião, habilidade Magias (arcanas), habilidade Magias (divinas).</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 57,
+      },
+      {
+        id: 1722,
+        nome: 'Conhecimento Adaptável',
+        descricao: `
+        <p><i>Conhecimento é conhecimento. Um teurgista sabe ler o divino através do arcano e o arcano através do divino.</i></p>
+        <p>Quando falha em um teste de Misticismo ou Religião, você pode gastar 1 PM para repetir esse teste usando a outra perícia (Misticismo para um teste de Religião e vice-versa). Pré-requisito: Conjuração Unificada.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 57,
+      },
+      {
+        id: 1723,
+        nome: 'Teurgia Aplicada',
+        descricao: `
+        <p><i>Um teurgista nunca defere um estudo por outro, pois sabe que arcano e divino são um só.</i></p>
+        <p>Escolha duas de suas classes com a habilidade Magias, uma para magias arcanas e outra para magias divinas. Você soma seu total de poderes da distinção no seu nível de cada uma dessas classes (até o limite de seu nível de personagem) para determinar o total de PM que pode gastar nessas magias e os círculos máximos de magia a que tem acesso. Pré-requisito: Conjuração Unificada.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 57,
+      },
+      {
+        id: 1724,
+        nome: 'Vontade Sobre Matéria',
+        descricao: `
+        <p><i>O teurgista aprende a lançar magias em sua forma mais pura.</i></p>
+        <p>Quando lança uma magia, você pode pagar +1 PM para que ela ignore imunidades e resistências baseadas em sua escola ou tipo (arcana ou divina). Pré-requisito: Teurgia Aplicada.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 57,
+      },
+      {
+        id: 1725,
+        nome: 'Zênite Teúrgico',
+        descricao: `
+        <p><i>Fogo ou gelo? Em sua essência, magia é magia.</i></p>
+        <p>Quando lança uma magia que causa dano, você pode aplicar a ela efeitos específicos de um tipo de dano como se ela fosse de todos os tipos. Por exemplo, você pode usar um cetro elemental (fogo) com uma magia Adaga Mental. Pré-requisitos: Conhecimento Adaptável, Teurgia Aplicada.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 57,
+      },
+      {
+        id: 1726,
+        nome: 'O Preço do Sucesso',
+        descricao: `
+        <p><i>Quem tem dinheiro não tenta, consegue.</i></p>
+        <p>Quando vai fazer um teste de perícia, você pode comprar um resultado em vez de rolar um dado. Você deve gastar T$ 100 por número desejado no dado (um 18, por exemplo, custa T$ 1.800). Contudo, um resultado comprado dessa forma não é um sucesso automático (deve superar a CD etc.). Pré-requisitos: devoto de Tibar, Car 3.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 58,
+      },
+      {
+        id: 1727,
+        nome: 'Faro para Tesouro',
+        descricao: `
+        <p><i>Para ser capaz de gastar dinheiro, você deve ser capaz de ganhar.</i></p>
+        <p>Sempre que é feita uma rolagem para determinar a chance de você ganhar dinheiro e/ou a quantidade de dinheiro que será obtida (incluindo recompensas aleatórias e rolagens de tesouros), você rola duas vezes e você escolhe entre um dos resultados. Pré-requisito: O Preço do Sucesso.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 58,
+      },
+      {
+        id: 1728,
+        nome: 'Gostei, Vou Comprar!',
+        descricao: `
+        <p><i>Não há nada fora do alcance daqueles que podem pagar.</i></p>
+        <p>Quando uma criatura em alcance curto usa uma habilidade de classe que você possa ver, você pode gastar 6 PM para “comprar” essa habilidade. Até o fim da cena, você pode usá-la como uma habilidade de raça (se ela usar um atributo para algo, use seu Carisma). Se “comprar” outra habilidade, você perde a anterior. Habilidades de ameaças com o mesmo nome de habilidades de classe, bem como cada uma de suas magias, também podem ser “compradas” com este poder. Pré-requisitos: O Preço do Sucesso, deve ter gastado pelo menos T$ 100.000 ao longo de sua carreira de aventureiro.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 58,
+      },
+      {
+        id: 1729,
+        nome: 'Revirar os Bolsos',
+        descricao: `
+        <p><i>“Então era aqui que estava essa algibeira!?”</i></p>
+        <p>A cada cena, o primeiro tibar de ouro que você consumir para pagar um custo em PM paga 1d4 PM desse custo. Pré-requisito: O Preço do Sucesso.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 58,
+      },
+      {
+        id: 1730,
+        nome: 'Saúde Comprada',
+        descricao: `
+        <p><i>Tudo tem um preço, até mesmo a vida.</i></p>
+        <p>Você pode gastar uma ação completa e uma quantidade de tibares de ouro (limitada pelo seu Carisma) para “comprar” saúde para uma criatura adjacente. Para cada TO gasto, você recupera 3d8 PV da criatura ou remove uma de suas condições entre abalado, alquebrado, apavorado, atordoado, cego, confuso, enfeitiçado, esmorecido, exausto, fatigado, frustrado, pasmo e surdo. Pré-requisito: O Preço do Sucesso.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 58,
+      },
+      {
+        id: 1731,
+        nome: 'Aspecto de Kallyadranoch',
+        descricao: `
+        <p><i>O corpo do tirano manifesta o elemento de seu companheiro dragão.</i></p>
+        <p>Você se torna imune à Aura Aterradora de dragões e recebe redução de dano 10 contra o tipo de dano do sopro do seu companheiro dragão. Além disso, se possuir o poder Escamas Dracônicas, os bônus fornecidos por ele aumentam para +5. Pré-requisitos: devoto de Kallyadranoch, treinado em Cavalgar.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 59,
+      },
+      {
+        id: 1732,
+        nome: 'Apoteose do Terceiro',
+        descricao: `
+        <p><i>Graças à magia do Terceiro, o tirano e seu dragão podem se tornar verdadeiramente um.</i></p>
+        <p>Se estiver com seu companheiro dragão e sob efeito de Ira Dracônica, você pode gastar uma ação completa e 10 PM para se fundir a ele com duração sustentada. Você continua recebendo os benefícios de seu dragão, mas seu tipo muda para monstro e seu tamanho muda para Grande, e você recebe imunidade contra o tipo de dano do seu parceiro, deslocamento de voo 18m e +2 em Força, Constituição, Inteligência e Carisma (esse aumento não oferece PV, PM ou perícias adicionais). Além disso, recebe uma arma natural de mordida (1d8, crítico x2, perfuração); uma vez por rodada, quando usa a ação agredir para atacar com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo de mordida (se já possuir uma mordida, em vez disso seu dano aumenta em dois passos). Pré-requisitos: Dádivas do Dragão, Sopro Compartilhado.</p>`,
+        e_poder_magico: true,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 59,
+      },
+      {
+        id: 1733,
+        nome: 'Dádivas do Dragão',
+        descricao: `
+        <p><i>Um combatente devotado, o tirano é recompensado com uma fração de poder divino.</i></p>
+        <p>Você aprende e pode lançar uma magia divina de 1º círculo a sua escolha (atributo-chave Sabedoria). A cada dois outros poderes da distinção, você aprende uma magia divina de 1º círculo adicional. Se for um conjurador divino, essas magias podem ser de qualquer círculo a que tenha acesso. Pré-requisitos: treinado em Religião, Ira Dracônica.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 59,
+      },
+      {
+        id: 1734,
+        nome: 'Ira Dracônica',
+        descricao: `
+        <p><i>Os músculos do tirano incham enquanto energia arcana corre em suas veias.</i></p>
+        <p>Você pode gastar 3 PM para invocar o aspecto combativo de Kallyadranoch até o fim da cena. Você recebe redução de dano 5 e +2 em testes de ataque, rolagens de dano e na CD de seu Sopro Compartilhado e de suas habilidades mágicas. Pré-requisitos: treinado em Luta, Aspecto de Kallyadranoch.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 59,
+      },
+      {
+        id: 1735,
+        nome: 'Sopro Compartilhado',
+        descricao: `
+        <p><i>A respiração do tirano exala magia elemental.</i></p>
+        <p>Você recebe o poder concedido Baforada Dracônica (p. 42) para o elemento do sopro de seu companheiro dragão. Se você já possui esse poder, seu dano total aumenta em mais dois dados e, quando usa seu sopro, você pode escolher entre afetar uma criatura em alcance médio ou todas as criaturas em um cone de 6m. Pré-requisito: Ira Dracônica.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 59,
+      },
     )
 
   }
