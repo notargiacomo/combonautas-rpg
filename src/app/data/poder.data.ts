@@ -17051,6 +17051,63 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 39,
       },
+      {
+        id: 1656,
+        nome: 'Forma Monstruosa',
+        descricao: `
+        <p><i>Rejeitando totalmente Allihanna, o colecionador monstruoso se transforma em algo terrível.</i></p>
+        <p>Quando usa Forma Selvagem, você pode gastar PM adicionais (limitados pelo total de poderes da distinção que possui) para receber habilidades adicionais de criaturas que já devorou (veja o quadro) como parte de sua transformação. Pré-requisitos: Forma Selvagem, devoto de Megalokk.</p>`,
+        poder_chave_distincao: true,
+        e_poder_magico: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 40,
+      },
+      {
+        id: 1657,
+        nome: 'Monstro Supremo',
+        descricao: `
+        <p><i>A fome do colecionador monstruoso não tem fim.</i></p>
+        <p>Quando usa Forma Selvagem Superior, você recebe o subtipo kaiju e ganha imunidade a efeitos de metabolismo e mentais, medo, metamorfose, paralisia e veneno, e seus ataques ignoram 20 pontos de RD. Pré-requisitos: Forma Selvagem Superior, ter usado Predação Monstruosa em um kaiju.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 40,
+      },
+      {
+        id: 1658,
+        nome: 'Predação Monstruosa',
+        descricao: `
+        <p><i>Sua voracidade não pode ser controlada.</i></p>
+        <p>Você pode gastar uma ação completa para devorar um monstro abatido. Se fizer isso, até o fim da aventura você recebe +10 PV e +1 em testes de ataque e rolagens de dano com armas naturais. Para cada outros dois poderes da distinção, você pode acumular esses efeitos uma vez. Pré-requisito: Forma Monstruosa.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 40,
+      },
+      {
+        id: 1659,
+        nome: 'Selvageria Incontrolável',
+        descricao: `
+        <p><i>A fera em seu interior não será derrotada facilmente.</i></p>
+        <p>Enquanto está em Forma Selvagem, você não fica inconsciente por estar com 0 PV ou menos (mas ainda morre se chegar em um valor negativo igual à metade de seus PV máximos). Pré-requisito: Vigor Monstruoso.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 40,
+      },
+      {
+        id: 1660,
+        nome: 'Vigor Monstruoso',
+        descricao: `
+        <p><i>Sua transformação é pura monstruosidade.</i></p>
+        <p>Quando usa Forma Selvagem, para cada 1 PM gasto nessa habilidade você recebe 3 PV temporários. Pré-requisito: Forma Monstruosa.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 40,
+      },
     )
 
   }
