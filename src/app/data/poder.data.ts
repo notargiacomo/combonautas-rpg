@@ -16938,6 +16938,62 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 37,
       },
+      {
+        id: 1646,
+        nome: 'Ataque Subjugante',
+        descricao: `
+        <p><i>O golpe do cavaleiro da Luz faz seus inimigos se ajoelharem.</i></p>
+        <p>Quando faz um ataque com uma arma corpo a corpo, você pode gastar 2 PM para desferir um golpe subjugante. Você soma seu Carisma no teste de ataque e +1d8 na rolagem de dano (se já soma seu Carisma no ataque, em vez disso recebe +2 no teste). Se causar dano, deixa o alvo vulnerável. Pré-requisitos: treinado em Luta, Car 1.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 38,
+      },
+      {
+        id: 1647,
+        nome: 'Alazão Impressionante',
+        descricao: `
+        <p><i>A montaria de um cavaleiro é um sinal de seu compromisso com a justiça.</i></p>
+        <p>Você recebe um cavalo de guerra parceiro veterano. Caso já possua uma montaria fornecida por outra habilidade, em vez disso essa montaria se torna também um parceiro ajudante iniciante. Caso perca sua montaria, você pode receber outra visitando o Castelo da Luz. Pré-requisitos: treinado em Cavalgar, Ataque Subjugante.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 38,
+      },
+      {
+        id: 1648,
+        nome: 'Alcunha',
+        descricao: `
+        <p><i>A alcunha de um cavaleiro abre portas e amedronta os corações dos inimigos.</i></p>
+        <p>Quando faz um teste de uma perícia baseada em Carisma, você pode gastar uma quantidade de PM limitada pelo total de poderes da distinção que possui. Para cada PM que gastar, recebe +2 no teste. Pré-requisito: Ataque Subjugante.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 38,
+      },
+      {
+        id: 1649,
+        nome: 'Armadura da Integridade',
+        descricao: `
+        <p><i>As armas dos inimigos fraquejam diante da honra do cavaleiro da Luz.</i></p>
+        <p>Na primeira rodada de um combate, você pode gastar uma ação de movimento e 3 PM para fazer um teste de Diplomacia. Para cada 10 pontos no resultado desse teste, seus inimigos em alcance médio sofrem –1 em rolagens de dano até o fim da cena ou até você ficar inconsciente. Pré-requisitos: treinado em Diplomacia, Alcunha.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 38,
+      },
+      {
+        id: 1650,
+        nome: 'Chamado às Armas',
+        descricao: `
+        <p><i>A ordem de um cavaleiro da Luz é irrecusável, até para seus aliados.</i></p>
+        <p>Uma vez por rodada, você pode gastar uma ação de movimento e 3 PM para encorajar seus companheiros. Até o início do seu próximo turno, você e seus aliados em alcance curto que fizerem uma ação agredir podem fazer um ataque adicional. Pré-requisitos: Comandar, quatro outros poderes de cavaleiro da Luz.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 38,
+      },
     )
 
   }
