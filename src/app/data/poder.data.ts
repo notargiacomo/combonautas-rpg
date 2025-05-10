@@ -16882,6 +16882,62 @@ export class PoderData {
         prerequisito_nivel: 5,
         id_distincao: 36,
       },
+      {
+        id: 1642,
+        nome: 'Cabriolas de Bobo',
+        descricao: `
+        <p><i>O bufão de Hyninn deve ser capaz de entreter os mais diversos públicos.</i></p>
+        <p>Escolha duas cabriolas (veja o quadro). Uma vez feita, essa escolha não pode ser mudada. A cada outro poder da distinção você pode escolher uma nova cabriola. Pré-requisitos: devoto de Hyninn, treinado em Acrobacia e Atuação.</p>`,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 37,
+      },
+      {
+        id: 1643,
+        nome: 'Arremedar',
+        descricao: `
+        <p><i>O bufão sabe ridicularizar seus inimigos a ponto de condená-los ao fracasso.</i></p>
+        <p>Uma vez por rodada, quando uma criatura em alcance curto que você possa ver faz um teste de perícia, você pode imitá-la da forma mais ridícula possível. Faça um teste de Atuação para ajudar, mas em vez de fornecer um bônus, você impõe uma penalidade ao teste da criatura. Pré-requisito: Cabriolas de Bobo.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 37,
+      },
+      {
+        id: 1644,
+        nome: 'Piada Mortal',
+        descricao: `
+        <p><i>“Um deheoni, um ahleniense e um sambur entram numa taverna…”</i></p>
+        <p>Você pode gastar uma ação completa e 6 PM para contar uma piada tão hilária que o resto da vida parece perder o sentido. Faça um teste de Atuação oposto pela Vontade de uma criatura inteligente (Int –3 ou maior) em alcance curto. Se você vencer, a criatura deve gastar sua próxima ação padrão para atacar a si mesma da maneira mais eficiente possível. Uma criatura só pode ser alvo deste poder uma vez por cena. Mental. Pré-requisitos: Cabriolas de Bobo, Canção Assustadora.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 37,
+      },
+      {
+        id: 1645,
+        nome: 'Quem Ri Por Último…',
+        descricao: `
+        <p><i>…ri melhor.</i></p>
+        <p>Enquanto você for o último na ordem de iniciativa, você recebe +1 em testes de perícia e na CD de suas habilidades contra criaturas que já tenham agido na rodada. Esses bônus aumentam em +1 para cada dois outros poderes da distinção que você possui. Pré-requisito: Cabriolas de Bobo.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 37,
+      },
+      {
+        id: 1645,
+        nome: 'Rir de Tudo',
+        descricao: `
+        <p><i>Um bufão consegue achar graça de tudo, mesmo da própria desgraça.</i></p>
+        <p>Uma vez por cena, quando fizer um teste de resistência contra uma habilidade de um inimigo, você pode gastar 3 PM para usar Atuação no lugar da perícia apropriada. Se fizer isso e passar no teste, você reverte o efeito: qualquer dano ou perda de vida se torna pontos de vida temporários (que desaparecem ao fim da cena) e qualquer penalidade numérica se torna um bônus equivalente até o fim da cena. Pré-requisito: Arremedar.</p>`,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 37,
+      },
     )
 
   }
