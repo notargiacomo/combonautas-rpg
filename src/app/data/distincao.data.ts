@@ -619,6 +619,397 @@ export class DistincaoData {
         referencias: Referencia.HEROIS,
         paginas: '211, 2012 e 213'
       },
+      {
+        id: 37,
+        nome: `Bufão de Hynnin`,
+        nome_arquivo_descricao: `distincao_bufao_descricao`,
+        nome_arquivo_admissao: `distincao_bufao_admissao`,
+        nome_arquivo_informacoes: `distincao_bufao_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Chapéu do Bobo</h5>
+        <p><i><b>Um bobo da corte precisa parecer berrante, chamativo e inerentemente engraçado.</b></i></p>
+        <p>Você recebe um gorro com guizos, um item de vestuário que não ocupa espaços nem conta em seu limite de itens vestidos. Ele permite usar Músicas de Bardo sem precisar empunhar um instrumento musical e fornece +2 em Atuação e Enganação, mas impõe –2 em Diplomacia e Intimidação e só funciona com você.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_bufao.png',
+        referencias: Referencia.DEUSES,
+        paginas: '70, 71 e 72'
+      },
+      {
+        id: 38,
+        nome: `Cavaleiro da Luz`,
+        nome_arquivo_descricao: `distincao_cavaleiro_luz_descricao`,
+        nome_arquivo_admissao: `distincao_cavaleiro_luz_admissao`,
+        nome_arquivo_informacoes: `distincao_cavaleiro_luz_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Etiqueta da Ordem da Luz</h5>
+        <p><i><b>Um cavaleiro da Luz é treinado tanto em enfrentar o mal quanto em lidar com a nobreza.</b></i></p>
+        <p>Você segue tanto o Código de Honra da classe cavaleiro quanto as Obrigações & Restrições de Khalmyr. Contudo, soma seu Carisma em Guerra e Nobreza, e consegue hospedagem confortável e informações em qualquer lugar afiliado à Ordem da Luz.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_cavaleiro_luz.png',
+        referencias: Referencia.DEUSES,
+        paginas: '73, 74 e 75'
+      },
+      {
+        id: 39,
+        nome: `Cavaleiro de Khalmyr`,
+        nome_arquivo_descricao: `distincao_cavaleiro_khalmyr_descricao`,
+        nome_arquivo_admissao: `distincao_cavaleiro_khalmyr_admissao`,
+        nome_arquivo_informacoes: `distincao_cavaleiro_khalmyr_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Seguir a Norma</h5>
+        <p><i><b>Seguir a Norma tira parte da liberdade do cavaleiro, mas fortalece seu espírito.</b></i></p>
+        <p>Você segue o Código da Norma (veja o quadro) e recebe +2 em Fortitude e Vontade.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_cavaleiro_khalmyr.png',
+        referencias: Referencia.DEUSES,
+        paginas: '76, 77 e 78'
+      },
+      {
+        id: 40,
+        nome: `Colecionador Monstruoso`,
+        nome_arquivo_descricao: `distincao_colecionador_monstruoso_descricao`,
+        nome_arquivo_admissao: `distincao_colecionador_monstruoso_admissao`,
+        nome_arquivo_informacoes: `distincao_colecionador_monstruoso_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Através da Selvageria</h5>
+        <p><i><b>Você devorou as entranhas da selvageria.</b></i></p>
+        <p>Quando usa Forma Selvagem, seu tipo muda para monstro e você recebe +1 no multiplicador de crítico com armas naturais.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_colecionador_monstruoso.png',
+        referencias: Referencia.DEUSES,
+        paginas: '79, 80 e 81'
+      },
+      {
+        id: 41,
+        nome: `Dançarina de Marah`,
+        nome_arquivo_descricao: `distincao_dancarina_marah_descricao`,
+        nome_arquivo_admissao: `distincao_dancarina_marah_admissao`,
+        nome_arquivo_informacoes: `distincao_dancarina_marah_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Graça de Marah</h5>
+        <p><i><b>Para a dançarina de Marah, a arte é uma linguagem universal.</b></i></p>
+        <p>Você soma sua Sabedoria em Atuação. Além disso, pode substituir testes de Diplomacia por testes de Atuação.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_dancarina_marah.png',
+        referencias: Referencia.DEUSES,
+        paginas: '82, 83 e 84'
+      },
+      {
+        id: 42,
+        nome: `Detetive de Tanna-Toh`,
+        nome_arquivo_descricao: `distincao_detetive_tannatoh_descricao`,
+        nome_arquivo_admissao: `distincao_detetive_tannatoh_admissao`,
+        nome_arquivo_informacoes: `distincao_detetive_tannatoh_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Nada Além de Fatos</h5>
+        <p><i><b>Ao se apoiar somente em fatos, o detetive de TannaToh fortalece sua capacidade dedutiva.</b></i></p>
+        <p>Você recebe +5 em Intuição e Investigação.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_detetive_tannatoh.png',
+        referencias: Referencia.DEUSES,
+        paginas: '85, 86 e 87'
+      },
+      {
+        id: 43,
+        nome: `Exegeta do Akzath`,
+        nome_arquivo_descricao: `distincao_exegeta_akzath_descricao`,
+        nome_arquivo_admissao: `distincao_exegeta_akzath_admissao`,
+        nome_arquivo_informacoes: `distincao_exegeta_akzath_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Compreender o Akzath</h5>
+        <p><i><b>O exegeta compreende a verdade das escrituras e pode empregá-la em toda a sua vida.</b></i></p>
+        <p>No início de cada cena, escolha uma perícia. Até o fim da cena, sempre que fizer um teste da perícia escolhida, você pode gastar 1 PM para substituí-lo por um teste de Religião.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_exegeta_akzath.png',
+        referencias: Referencia.DEUSES,
+        paginas: '88, 89 e 90'
+      },
+      {
+        id: 44,
+        nome: `Forjador Litúrgico`,
+        nome_arquivo_descricao: `distincao_forjador_liturgico_descricao`,
+        nome_arquivo_admissao: `distincao_forjador_liturgico_admissao`,
+        nome_arquivo_informacoes: `distincao_forjador_liturgico_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Ferreiro Sagrado</h5>
+        <p><i><b>Nos primeiros passos de seu ofício divino, o forjador litúrgico aprimora suas habilidades com armas.</b></i></p>
+        <p>Você recebe +2 em Ofício (armeiro) e em rolagens de dano com armas que tenha fabricado.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_forjador_liturgico.png',
+        referencias: Referencia.DEUSES,
+        paginas: '92, 93 e 94'
+      },
+      {
+        id: 45,
+        nome: `Guardião de Realidade`,
+        nome_arquivo_descricao: `distincao_guardiao_realidade_descricao`,
+        nome_arquivo_admissao: `distincao_guardiao_realidade_admissao`,
+        nome_arquivo_informacoes: `distincao_guardiao_realidade_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Escudo da Realidade</h5>
+        <p><i><b>Você encontra abrigo na força da realidade.</b></i></p>
+        <p>Você recebe +5 em testes de resistência. Contra efeitos da Tormenta, esse bônus aumenta em +1 por poder da distinção.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_guardiao_realidade.png',
+        referencias: Referencia.DEUSES,
+        paginas: '95, 96 e 97'
+      },
+      {
+        id: 46,
+        nome: `Herói Henshin`,
+        nome_arquivo_descricao: `distincao_heroi_henshin_descricao`,
+        nome_arquivo_admissao: `distincao_heroi_henshin_admissao`,
+        nome_arquivo_informacoes: `distincao_heroi_henshin_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Armadura Especial</h5>
+        <p><i><b>Sua armadura é seu símbolo, sua identidade transformada e seu verdadeiro eu.</b></i></p>
+        <p>Você transforma uma armadura ou um item de vestuário em seu traje de combate. Para você, esse item fornece +1 na Defesa (ou aumenta o bônus na Defesa fornecido em +1) e sua penalidade de armadura (se houver) é reduzida em –1. Se perder seu traje de combate, você pode transformar outra armadura ou item de vestuário com um dia de trabalho e T$ 100.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_heroi_henshin.png',
+        referencias: Referencia.DEUSES,
+        paginas: '98, 99, 100 e 101'
+      },
+      {
+        id: 47,
+        nome: `Improvisador de Lena`,
+        nome_arquivo_descricao: `distincao_improvisador_lena_descricao`,
+        nome_arquivo_admissao: `distincao_improvisador_lena_admissao`,
+        nome_arquivo_informacoes: `distincao_improvisador_lena_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Código do Improvisador</h5>
+        <p><i><b>O improvisador aprende como usar materiais ao seu redor para improvisar soluções.</b></i></p>
+        <p>Você segue o Código da Paz (p. 116). Além disso, uma vez por cena, pode gastar uma ação de movimento para, a partir de itens do ambiente, improvisar uma ferramenta especial que ocupa 1 espaço. Até o fim da cena, você pode gastar essa ferramenta para receber +2 em um teste de perícia ou para reduzir em –1 PM o custo de uma de suas habilidades.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_improvisador_lena.png',
+        referencias: Referencia.DEUSES,
+        paginas: '102, 103 e 104'
+      },
+      {
+        id: 48,
+        nome: `Inquisidor de Wynna`,
+        nome_arquivo_descricao: `distincao_inquisidor_wynna_descricao`,
+        nome_arquivo_admissao: `distincao_inquisidor_wynna_admissao`,
+        nome_arquivo_informacoes: `distincao_inquisidor_wynna_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Padroeira Adotiva</h5>
+        <p><i><b>Wynna não é sua deusa, mas acha-o muito simpático</b></i></p>
+        <p>Você recebe o poder Centelha Mágica, mas continua sendo um paladino e devoto de sua divindade original. Além disso, quando escolhe o poder Orar, você pode aprender também magias arcanas de 1º círculo como se fossem divinas.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_inquisidor_wynna.png',
+        referencias: Referencia.DEUSES,
+        paginas: '105, 106 e 107'
+      },
+      {
+        id: 49,
+        nome: `Mestre de Armearia`,
+        nome_arquivo_descricao: `distincao_mestre_armearia_descricao`,
+        nome_arquivo_admissao: `distincao_mestre_armearia_admissao`,
+        nome_arquivo_informacoes: `distincao_mestre_armearia_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Domínio da Pólvora</h5>
+        <p><i><b>Insatisfeito com o que já existe, o mestre de armearia imagina novas maneiras de destruir.</b></i></p>
+        <p>Você recebe +2 em testes de perícia (exceto de ataque) relacionados a armas de fogo e suas munições, incluindo testes para esconder, fabricar, identificar e negociar.</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_mestre_armearia.png',
+        referencias: Referencia.DEUSES,
+        paginas: '108, 109, 110 e 111'
+      },
+      {
+        id: 50,
+        nome: `Numeromante`,
+        nome_arquivo_descricao: `distincao_numeromante_descricao`,
+        nome_arquivo_admissao: `distincao_numeromante_admissao`,
+        nome_arquivo_informacoes: `distincao_numeromante_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Matemágica para iniciantes</h5>
+        <p><i><b>Um numeromante enxerga a magia escondida nos números.</b></i></p>
+        <p>Sempre que você lançar uma magia com um custo em PM igual a um quadrado perfeito (1, 4, 9, 16, 25, 36 etc.), o custo de sua próxima magia lançada até o fim da cena diminui em –1 PM.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_numeromante.png',
+        referencias: Referencia.DEUSES,
+        paginas: '112, 113 e 114'
+      },
+      {
+        id: 51,
+        nome: `Pacificador`,
+        nome_arquivo_descricao: `distincao_pacificador_descricao`,
+        nome_arquivo_admissao: `distincao_pacificador_admissao`,
+        nome_arquivo_informacoes: `distincao_pacificador_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Armas da Paz</h5>
+        <p><i><b>Qualquer um pode matar. Podemos ser melhores que isso.</b></i></p>
+        <p>Você adota o Código da Paz (veja o quadro) e se torna proficiente com qualquer arma que não cause dano ou que tenha a habilidade inata de causar dano não letal. Além disso, recebe +1 em testes de ataque e rolagens de dano com ataques que causam dano não letal.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_pacificador.png',
+        referencias: Referencia.DEUSES,
+        paginas: '115, 116 e 117'
+      },
+      {
+        id: 52,
+        nome: `Pregador`,
+        nome_arquivo_descricao: `distincao_pregador_descricao`,
+        nome_arquivo_admissao: `distincao_pregador_admissao`,
+        nome_arquivo_informacoes: `distincao_pregador_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Vista Grossa</h5>
+        <p><i><b>Se nem os deuses são perfeitos, por que os mortais deveriam ser?</b></i></p>
+        <p>Sempre que violar as Obrigações & Restrições de uma divindade que precisa cumprir, você pode fazer um teste de Religião (CD 10, +5 para cada outra vez que usou este poder na mesma aventura). Se passar, não sofre nenhuma consequência por essa violação.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_pregador.png',
+        referencias: Referencia.DEUSES,
+        paginas: '118, 119 e 120'
+      },
+      {
+        id: 53,
+        nome: `Sombra de Tenebra`,
+        nome_arquivo_descricao: `distincao_sombra_tenebra_descricao`,
+        nome_arquivo_admissao: `distincao_sombra_tenebra_admissao`,
+        nome_arquivo_informacoes: `distincao_sombra_tenebra_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Ameaça das Sombras</h5>
+        <p><i><b>Para o sombra de Tenebra, as trevas revelam as fraquezas dos inimigos.</b></i></p>
+        <p>Se estiver em uma área de escuridão, você pode usar a habilidade Ataque Furtivo +1d6. Se já possui a habilidade, o bônus é cumulativo.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_sombra_tenebra.png',
+        referencias: Referencia.DEUSES,
+        paginas: '121, 122 e 123'
+      },
+      {
+        id: 54,
+        nome: `Sortudo de Nimb`,
+        nome_arquivo_descricao: `distincao_sortudo_nimb_descricao`,
+        nome_arquivo_admissao: `distincao_sortudo_nimb_admissao`,
+        nome_arquivo_informacoes: `distincao_sortudo_nimb_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Sorte Boba</h5>
+        <p><i><b>Até mesmo a sua sorte tem sorte.</b></i></p>
+        <p>Quando usa uma habilidade que permite rolar qualquer dado novamente, você rola dois dados desse tipo e usa o melhor resultado.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_sortudo_nimb.png',
+        referencias: Referencia.DEUSES,
+        paginas: '124, 125 e 126'
+      },
+      {
+        id: 55,
+        nome: `Sumo-Sacerdote`,
+        nome_arquivo_descricao: `distincao_sumo_sacerdote_descricao`,
+        nome_arquivo_admissao: `distincao_sumo_sacerdote_admissao`,
+        nome_arquivo_informacoes: `distincao_sumo_sacerdote_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Autoridade Divina</h5>
+        <p><i><b>“Eu falo em nome do seu deus. Desrespeitar-me é desrespeitar sua fé.”</b></i></p>
+        <p>Você é a autoridade máxima em uma igreja reconhecida pelos outros membros de sua fé. Você recebe o poder Autoridade Eclesiástica para sua divindade. Se já tiver esse poder, em vez disso recebe +2 em Religião e na CD de suas magias divinas.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_sumo_sacerdote.png',
+        referencias: Referencia.DEUSES,
+        paginas: '127, 128 e 129'
+      },
+      {
+        id: 56,
+        nome: `Taumaturgista`,
+        nome_arquivo_descricao: `distincao_taumaturgista_descricao`,
+        nome_arquivo_admissao: `distincao_taumaturgista_admissao`,
+        nome_arquivo_informacoes: `distincao_taumaturgista_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Auxiliar Divino</h5>
+        <p><i><b>As primeiras conjurações do taumaturgista envolvem pequenos seres dos mundos divinos.</b></i></p>
+        <p>Você aprende e pode lançar uma das magias a seguir como uma de suas magias divinas: Conjurar Monstro, Montaria Arcana ou Servos Invisíveis. A cada dois poderes da distinção, você aprende e pode lançar outra dessas magias (caso aprenda novamente uma delas, seu custo diminui em –1 PM). <b><i>e</i></b></p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_taumaturgista.png',
+        referencias: Referencia.DEUSES,
+        paginas: '130, 131 e 132'
+      },
+      {
+        id: 57,
+        nome: `Teurgista Hermético`,
+        nome_arquivo_descricao: `distincao_teurgista_hermetico_descricao`,
+        nome_arquivo_admissao: `distincao_teurgista_hermetico_admissao`,
+        nome_arquivo_informacoes: `distincao_teurgista_hermetico_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Princípio Hermético</h5>
+        <p><i><b>O teurgista hermético supera as divisões tradicionais da magia.</b></i></p>
+        <p>Você é considerado um conjurador tanto arcano quanto divino, e suas magias são consideradas tanto arcanas quanto divinas.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_teurgista_hermetico.png',
+        referencias: Referencia.DEUSES,
+        paginas: '133, 134 e 135'
+      },
+      {
+        id: 58,
+        nome: `Tibarita`,
+        nome_arquivo_descricao: `distincao_tibarista_descricao`,
+        nome_arquivo_admissao: `distincao_tibarista_admissao`,
+        nome_arquivo_informacoes: `distincao_tibarista_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Poder Monetário</h5>
+        <p><i><b>Para o tibarita, gastar dinheiro é um ato de devoção e o motivo de sua existência.</b></i></p>
+        <p>Quando usa uma habilidade com um custo em PM, você pode consumir uma quantidade de tibares de ouro (limitada por seu Carisma). Cada TO consumido dessa forma paga 1 PM do custo da habilidade. Você pode consumir um número de TO por dia igual ao seu nível. Caso já possua essa habilidade, o limite de TO que você pode consumir por dia aumenta em +5.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_tibarista.png',
+        referencias: Referencia.DEUSES,
+        paginas: '136, 137 e 138'
+      },
+      {
+        id: 59,
+        nome: `Tirano do Terceiro`,
+        nome_arquivo_descricao: `distincao_tirano_terceiro_descricao`,
+        nome_arquivo_admissao: `distincao_tirano_terceiro_admissao`,
+        nome_arquivo_informacoes: `distincao_tirano_terceiro_informacoes`,
+        marca_distincao: `
+        <h4>Marca da Distinção</h4>
+        <h5>Companheiro Dragão</h5>
+        <p><i><b>Para o tirano, o primeiro passo é o elo com seu dragão.</b></i></p>
+        <p>Você recebe um companheiro dragão jovem (de um tipo a sua escolha) que serve a você como um parceiro montaria iniciante (veja o quadro). Se o seu companheiro dragão morrer, você fica atordoado por 1 rodada. Um companheiro dragão morto pode ser substituído com uma ação entre aventuras.</p>
+        `,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_tirano_terceiro.png',
+        referencias: Referencia.DEUSES,
+        paginas: '139, 140 e 141'
+      },
     ];
   }
 }

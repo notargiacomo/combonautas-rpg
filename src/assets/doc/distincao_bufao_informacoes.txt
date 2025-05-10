@@ -1,0 +1,12 @@
+<h5>Cabriolas de Bobo</h5>
+<p>Cambalhotas, brincadeiras e bobagens em geral que podem ser empregadas por um bufão de Hyninn para gerar vários efeitos mágicos. Cabriolas contam como Música de Bardo e seguem suas regras (Tormenta20, p. 45). <i><b>e</b></i></p>
+<ul>
+<li><i><b>Deboche Mágico.</b></i> Escolha uma criatura no alcance e faça um teste de Atuação. Até o fim da cena, na próxima vez que usar uma habilidade mágica, a criatura deve passar em um teste de Vontade (CD igual ao resultado do seu teste de Atuação). Se ela falhar, a habilidade não funciona e quaisquer custos pagos são perdidos. Mental.
+<li><i><b>Humor Macabro.</b></i> Escolha uma criatura no alcance. Até o fim da cena, na próxima vez que você ou um aliado causar dano a essa criatura, outra criatura pode fazer um ataque corpo a corpo contra ela como uma reação.</li>
+<li><i><b>Humor Macabro em Massa.</b></i> Como Humor Macabro, mas afeta cada criatura a sua escolha no alcance. Pré-requisito: Humor Macabro.</li>
+<li><i><b>Imitação Irritante.</b></i> Faça um teste de Atuação oposto ao teste de Vontade de uma criatura no alcance. Se você vencer, até o início do seu próximo turno o alvo sofre uma penalidade de –5 em quaisquer testes de perícia que já tenha usado nessa cena. Mental.</li>
+<li><i><b>Passo Hilariante.</b></i> Faça um teste de Atuação oposto ao teste de Vontade de uma criatura no alcance. Se você vencer, ela fica pasma por 1 rodada (apenas uma vez por cena) e vulnerável por 1d4+1 rodadas. Se você perder, ela fica vulnerável por 1 rodada.</li>
+<li><i><b>Passo Hilariante em Massa.</b></i> Como Passo Hilariante, mas afeta cada criatura a sua escolha no alcance. Pré-requisito: Passo Hilariante.</li>
+<li><i><b>Pirueta Desajeitada.</b></i> Faça um teste de Atuação oposto pelo teste de Vontade de cada criatura a sua escolha no alcance. Alvos que percam ficam enredados (nos próprios pés) por 1d4+1 rodadas e caídos. Alvos que passem ficam enredados por 1 rodada. Movimento.</li>
+<li><i><b>Rir da Desgraça Alheia.</b></i> Faça um teste de Atuação oposto ao teste de Vontade de uma criatura no alcance. Se você vencer, até o fim da cena, sempre que ela falhar em um teste de perícia, sofre uma penalidade cumulativa de –1 nessa perícia até o fim da cena (limitada por seu total de poderes da distinção). Mental.</li>
+</ul>
