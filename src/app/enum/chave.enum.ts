@@ -414,6 +414,7 @@ export enum Chave {
   AREA_CONE_NOVE_METROS = 'ÁREA CONE 9M',
 
   MAGIA = 'MAGIA',
+  CURA = 'CURA',
   LIMITE_PM = 'LIMITE DE PM',
   CD_MAGIA = 'CD DE MAGIA',
 
