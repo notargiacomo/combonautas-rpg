@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, Component, EventEmitter, inject, Input, Output, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, EventEmitter, inject, Input, Output, ViewChild } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -73,7 +73,7 @@ export class ItensComponent implements AfterViewInit {
   @ViewChild(MatSort)
   sort!: MatSort;
 
-  constructor(private readonly service: ItemService, private fb: FormBuilder) {}
+  constructor(private readonly service: ItemService, private fb: FormBuilder, private cdr: ChangeDetectorRef) {}
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
@@ -82,9 +82,9 @@ export class ItensComponent implements AfterViewInit {
 
   ngOnInit() {
     this.form = this.fb.group({
-      nome: [''],
-      chave: [''],
-      tipo: [''],
+      nome: [],
+      chave: [],
+      tipo: [],
     });
 
     this.consultar(false);
@@ -112,7 +112,7 @@ export class ItensComponent implements AfterViewInit {
 
   consultarTodos(filtro: string) {
     this.service.listar(filtro).subscribe({
-      next: (response) => {
+      next: (response: any[]) => {
         response.sort((a, b) => {
           let nome_a = a.nome ? a.nome : 'a';
           let nome_b = b.nome ? b.nome : 'b';
@@ -121,6 +121,7 @@ export class ItensComponent implements AfterViewInit {
         });
         this.objetos = response;
         this.numero_registros = response.length;
+        this.cdr.detectChanges();
       },
       error: (response) => {
         console.log(response);
@@ -170,17 +171,6 @@ export class ItensComponent implements AfterViewInit {
     }
 
     return itens_filtrado;
-  }
-
-  readonly dialog = inject(MatDialog);
-
-  openDialog(titulo: string, idTexto: number) {
-    this.dialog.open(BalaoInterativoPadraoComponent, {
-      data: {
-        titulo: titulo,
-        texto: Object.values(Regras)[idTexto],
-      },
-    });
   }
 
   limparFiltros() {
@@ -244,16 +234,6 @@ export class ItensComponent implements AfterViewInit {
   eMaterialEspecial(objeto: Item): boolean {
     return objeto.tipo === TipoItem.MATERIAL_ESPECIAL;
   }
-
-    /**
-     *
-     * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - ITEM
-     *
-     */
-  
-    @Input() itemSelecionado?: Item;
-    @Input() seVeioFicha: boolean = false;
-    @Output() itemSelecionadoChange = new EventEmitter<Item>();
 
 
 }

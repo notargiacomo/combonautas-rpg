@@ -3,4 +3,6 @@ export enum TipoDano {
     PERFURACAO = "Perfuração",
     IMPACTO = "Impacto",
     LUZ = "Luz",
+    ESSENCIA = "Essência",
+    FOGO = "Fogo",
 }
