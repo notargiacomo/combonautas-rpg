@@ -484,7 +484,7 @@ export class ItemMagicoData {
         chave: [Chave.CURA],
         descricao: `<p>Um chifre de unicórnio é um poderoso item mágico de cura. Se estiver empunhando o chifre, você pode lançar Curar Ferimentos e Purificação; caso já conheça essas magias, seu custo diminui em –1 PM, cumulativo com outras reduções. Ele também pode ser usado para lançar a magia Segunda Chance, mas perde todos os poderes após isso. Por fim, ele pode ser empunhado como uma espada curta formidável.</p>
         <p>Mesmo sem seus poderes, o chifre pode ser transformado em 12 doses de pó de chifre, um poderoso ingrediente para preparados e poções. Misturar uma dose desse pó aos ingredientes de um preparado ou poção aumenta cada dado de cura do efeito do item em dois passos (até um máximo de d12).</p>
-        <p>Ainda que o simples ato de portar um chifre de unicórnio não seja necessariamente maligno, muitos devotos, sobretudo de Allihanna e Marah, poderão questionar a origem do chifre. Chifres de unicórnio não podem ser fabricados, e são obtidos apenas de um unicórnio morto.</p>
+        <p>Ainda que o simples ato de portar um chifre de unicórnio não seja necessariamente maligno, muitos devotos, sobretudo de Allihanna e Marah, poderão questionar a origem do chifre. Chifres de unicórnio não podem ser fabricados, e são obtidos apenas de um unicórnio morto. Acessório maior, preço T$ 120.000.</p>
         `,
         dano: '',
         margem_ameaca: 2,
@@ -510,7 +510,7 @@ export class ItemMagicoData {
         nome: 'Fragmento de Filactério',
         tipo: TipoItem.ESOTERICO,
         chave: [Chave.MAGIA],
-        descricao: `Mesmo após a destruição do filactério de um lich, uma parte do poder mágico da criatura pode permanecer, geralmente em seu maior fragmento. Um fragmento de filactério conta como uma costela de lich poderosa que fornece +20 PM (somente após um dia de uso). Um fragmento só pode ser obtido de um filactério estilhaçado e não pode ser fabricado.
+        descricao: `Mesmo após a destruição do filactério de um lich, uma parte do poder mágico da criatura pode permanecer, geralmente em seu maior fragmento. Um fragmento de filactério conta como uma costela de lich poderosa que fornece +20 PM (somente após um dia de uso). Um fragmento só pode ser obtido de um filactério estilhaçado e não pode ser fabricado. Acessório maior, preço T$ 90.000.
         `,
         dano: '',
         margem_ameaca: 2,
@@ -530,6 +530,58 @@ export class ItemMagicoData {
         tempo_conserto_em_horas: 1,
         referencias: Referencia.AMEACAS,
         paginas: '402'
+      },
+      {
+        id: 21,
+        nome: 'Pilão ConspurcadO',
+        tipo: TipoItem.ESOTERICO,
+        chave: [Chave.MAGIA],
+        descricao: `Este pequeno pilão de madeira de aparência sinistra é decorado com símbolos místicos entalhados e fragmentos de ossos encravados. Conta como uma costela de lich. Além dos benefícios desse esotérico, o custo de suas magias de encantamento e necromancia lançadas pela varinha diminui em –1 PM e a CD para resistir a elas aumenta em +2. Acessório médio, preço T$ 21.000.
+        `,
+        dano: '',
+        margem_ameaca: 2,
+        multiplicador_critico: 2,
+        alcance: 0,
+        espaco: 1,
+        tipo_dano: [],
+        preco: 21000,
+        rd: 45,
+        pv: 42,
+        pericia_fabricacao_conserto: 'Ofício Armeiro',
+        preco_fabricacao: 7000,
+        cd_fabricacao: 50,
+        custo_permanente_pontos_mana: 3,
+        tempo_fabricacao_em_horas: 160,
+        preco_conserto: 2100,
+        tempo_conserto_em_horas: 1,
+        referencias: Referencia.AMEACAS,
+        paginas: '403'
+      },
+      {
+        id: 22,
+        nome: 'Pistola Demoníaca',
+        tipo: TipoItem.ARMA,
+        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA],
+        descricao: `Esta pistola ameaçadora formidável e profana não pode ser fabricada por nenhum meio conhecido por mortais e só pode ser obtida através de um pacto com um demônio da pólvora (veja p. 255). Uma pistola demoníaca está sempre carregada e não precisa de munição. Uma vez por dia, em um momento escolhido pelo mestre (ou na primeira ocasião em que houver outras pessoas próximas), o portador da arma é atingido pelo impulso homicida de disparar contra uma criatura inteligente aleatória à vista (incluindo aliados). O portador pode resistir a esse impulso por este dia passando em um teste de Vontade (CD 25). Qualquer medida para evitar acidentes (manter a pistola guardada, descarregada ou mesmo trancada e fora de alcance) fracassa automaticamente; quando o portador cede ao impulso assassino, a arma surge magicamente em suas mãos. Caso o portador da pistola seja morto, a arma desaparece. Arma específica média, preço T$ 72.250.
+        `,
+        dano: '2d6',
+        margem_ameaca: 2,
+        multiplicador_critico: 3,
+        alcance: Alcance.MEDIO,
+        espaco: 2,
+        tipo_dano: [TipoDano.PERFURACAO],
+        preco: 72250,
+        rd: 45,
+        pv: 45,
+        pericia_fabricacao_conserto: 'Ofício Armeiro',
+        preco_fabricacao: 24083.33,
+        cd_fabricacao: 50,
+        custo_permanente_pontos_mana: 3,
+        tempo_fabricacao_em_horas: 160,
+        preco_conserto: 7225,
+        tempo_conserto_em_horas: 1,
+        referencias: Referencia.AMEACAS,
+        paginas: '403'
       },
     ];
   }
