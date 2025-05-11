@@ -477,6 +477,60 @@ export class ItemMagicoData {
         referencias: Referencia.BASICO,
         paginas: '338'
       },
+      {
+        id: 19,
+        nome: 'Chifre de Unicórnio',
+        tipo: TipoItem.ESOTERICO,
+        chave: [Chave.CURA],
+        descricao: `<p>Um chifre de unicórnio é um poderoso item mágico de cura. Se estiver empunhando o chifre, você pode lançar Curar Ferimentos e Purificação; caso já conheça essas magias, seu custo diminui em –1 PM, cumulativo com outras reduções. Ele também pode ser usado para lançar a magia Segunda Chance, mas perde todos os poderes após isso. Por fim, ele pode ser empunhado como uma espada curta formidável.</p>
+        <p>Mesmo sem seus poderes, o chifre pode ser transformado em 12 doses de pó de chifre, um poderoso ingrediente para preparados e poções. Misturar uma dose desse pó aos ingredientes de um preparado ou poção aumenta cada dado de cura do efeito do item em dois passos (até um máximo de d12).</p>
+        <p>Ainda que o simples ato de portar um chifre de unicórnio não seja necessariamente maligno, muitos devotos, sobretudo de Allihanna e Marah, poderão questionar a origem do chifre. Chifres de unicórnio não podem ser fabricados, e são obtidos apenas de um unicórnio morto.</p>
+        `,
+        dano: '',
+        margem_ameaca: 2,
+        multiplicador_critico: 2,
+        alcance: 0,
+        espaco: 1,
+        tipo_dano: [],
+        preco: 120000,
+        rd: 40,
+        pv: 40,
+        pericia_fabricacao_conserto: 'Ofício Armeiro',
+        preco_fabricacao: 40000,
+        cd_fabricacao: 50,
+        custo_permanente_pontos_mana: 3,
+        tempo_fabricacao_em_horas: 160,
+        preco_conserto: 12000,
+        tempo_conserto_em_horas: 1,
+        referencias: Referencia.AMEACAS,
+        paginas: '402'
+      },
+      {
+        id: 20,
+        nome: 'Fragmento de Filactério',
+        tipo: TipoItem.ESOTERICO,
+        chave: [Chave.MAGIA],
+        descricao: `Mesmo após a destruição do filactério de um lich, uma parte do poder mágico da criatura pode permanecer, geralmente em seu maior fragmento. Um fragmento de filactério conta como uma costela de lich poderosa que fornece +20 PM (somente após um dia de uso). Um fragmento só pode ser obtido de um filactério estilhaçado e não pode ser fabricado.
+        `,
+        dano: '',
+        margem_ameaca: 2,
+        multiplicador_critico: 2,
+        alcance: 0,
+        espaco: 1,
+        tipo_dano: [],
+        preco: 90000,
+        rd: 40,
+        pv: 40,
+        pericia_fabricacao_conserto: 'Ofício Armeiro',
+        preco_fabricacao: 30000,
+        cd_fabricacao: 50,
+        custo_permanente_pontos_mana: 3,
+        tempo_fabricacao_em_horas: 160,
+        preco_conserto: 9000,
+        tempo_conserto_em_horas: 1,
+        referencias: Referencia.AMEACAS,
+        paginas: '402'
+      },
     ];
   }
 }
