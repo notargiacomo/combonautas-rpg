@@ -32,7 +32,7 @@ export class ItemMagicoData {
         </ul>
         `,
         dano: '3d8/4d8/3d6',
-        margem_ameaca: 20,
+        margem_ameaca: 1,
         multiplicador_critico: 3,
         alcance: Alcance.MEDIO,
         espaco: 2,
@@ -42,7 +42,7 @@ export class ItemMagicoData {
         pv: 50,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
         preco_fabricacao: 30.000,
-        cd_fabricacao: 40,
+        cd_fabricacao: 50,
         custo_permanente_pontos_mana: 3,
         tempo_fabricacao_em_horas: 160,
         preco_conserto: 9000,
