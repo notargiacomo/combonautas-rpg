@@ -41,7 +41,7 @@ export class ItemMagicoData {
         rd: 45,
         pv: 50,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
-        preco_fabricacao: 30.000,
+        preco_fabricacao: 30000,
         cd_fabricacao: 50,
         custo_permanente_pontos_mana: 3,
         tempo_fabricacao_em_horas: 160,
