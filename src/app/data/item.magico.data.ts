@@ -533,7 +533,7 @@ export class ItemMagicoData {
       },
       {
         id: 21,
-        nome: 'Pilão ConspurcadO',
+        nome: 'Pilão Conspurcado',
         tipo: TipoItem.ESOTERICO,
         chave: [Chave.MAGIA],
         descricao: `Este pequeno pilão de madeira de aparência sinistra é decorado com símbolos místicos entalhados e fragmentos de ossos encravados. Conta como uma costela de lich. Além dos benefícios desse esotérico, o custo de suas magias de encantamento e necromancia lançadas pela varinha diminui em –1 PM e a CD para resistir a elas aumenta em +2. Acessório médio, preço T$ 21.000.
@@ -590,13 +590,13 @@ export class ItemMagicoData {
         chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO],
         descricao: `Este machado de guerra magnífico aumentado atroz de adamante é marcado com escrita goblinoide em sua lâmina e aparenta já ter visto inúmeras batalhas. Quando empunhado por um duyshidakk, causa +2d8 pontos de dano contra qualquer criatura não duyshidakk e recebe um encanto adicional, conforme o elemento do círculo intermediário do Akzath mais próximo do portador: Luz, Sagrado; Nós, Piedoso; Dentro, Defensor; Estagnação, Excruciante; Trevas, Profano; Fora, Arremesso; Eles, Dilacerante; Movimento, Energético. A critério do mestre, se o portador do machado se tornar mais pró-ximo de outro elemento, o encanto muda de acordo. Arma específica média, preço T$ 78.050.
         `,
-        dano: '78050',
+        dano: '1d12',
         margem_ameaca: 1,
         multiplicador_critico: 3,
         alcance: Alcance.MEDIO,
         espaco: 2,
         tipo_dano: [TipoDano.CORTE],
-        preco: 72250,
+        preco: 78050,
         rd: 50,
         pv: 50,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
