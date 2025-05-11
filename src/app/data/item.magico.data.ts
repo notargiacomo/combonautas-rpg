@@ -131,7 +131,7 @@ export class ItemMagicoData {
         id: 5,
         nome: 'Cajado da Destruição',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA],
         descricao: `Este bordão formidável escuro e reforçado com ponteiras de metal é procurado por conjuradores de batalha. Conta como um cajado arcano. Além dos benefícios desse esotérico, quando você lança uma magia de dano, ela causa +1 ponto de dano por dado.`,
         dano: '1d6',
         margem_ameaca: 1,
