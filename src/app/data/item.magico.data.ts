@@ -136,7 +136,7 @@ export class ItemMagicoData {
         dano: '1d6',
         margem_ameaca: 1,
         multiplicador_critico: 2,
-        alcance: Alcance.MEDIO,
+        alcance: 0,
         espaco: 2,
         tipo_dano: [TipoDano.IMPACTO],
         preco: 60000,
