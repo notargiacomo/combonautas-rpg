@@ -49,8 +49,33 @@ export class ItemMagicoData {
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
         paginas: '336 e 337'
-        
-      }
+      },
+      {
+        id: 2,
+        nome: 'Avalanche',
+        tipo: TipoItem.ARMA,
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO],
+        descricao: `Este machado de guerra de gelo eterno congelante formidável fornece redução de fogo 10. Você pode gastar uma ação padrão e 6 PM para brandi-lo acima de sua cabeça e invocar uma tempestade de gelo que afeta alcance curto ao seu redor. Criaturas na área recebem camuflagem leve e sofrem 3d6 pontos de dano de impacto e 3d6 pontos de frio por rodada. Você não sofre os efeitos nocivos da tempestade (o dano e a chance de falha pela camuflagem) e pode gastar 1 PM no início de cada um de seus turnos para mantê-la.
+        `,
+        dano: '1d12',
+        margem_ameaca: 1,
+        multiplicador_critico: 3,
+        alcance: 0,
+        espaco: 2,
+        tipo_dano: [TipoDano.CORTE],
+        preco: 140000,
+        rd: 50,
+        pv: 50,
+        pericia_fabricacao_conserto: 'Ofício Armeiro',
+        preco_fabricacao: 46666.66,
+        cd_fabricacao: 50,
+        custo_permanente_pontos_mana: 3,
+        tempo_fabricacao_em_horas: 160,
+        preco_conserto: 14000,
+        tempo_conserto_em_horas: 1,
+        referencias: Referencia.BASICO,
+        paginas: '337'
+      },
     ];
   }
 }
