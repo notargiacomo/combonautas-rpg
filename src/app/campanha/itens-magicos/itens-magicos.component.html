@@ -847,7 +847,7 @@
                           <div class="col-sm-12">
                             <div class="d-flex justify-content-end">
                               {{
-                              objeto.referencias + " pag. " + objeto.paginas
+                              objeto.paginas!.length > 0 ? objeto.referencias + " pag. " + objeto.paginas: objeto.referencias
                               }}
                             </div>
                             <hr class="" />
@@ -980,7 +980,7 @@
                           <div class="col-sm-12">
                             <div class="d-flex justify-content-end">
                               {{
-                              objeto.referencias + " pag. " + objeto.paginas
+                                objeto.paginas!.length > 0 ? objeto.referencias + " pag. " + objeto.paginas: objeto.referencias
                               }}
                             </div>
                             <hr class="" />

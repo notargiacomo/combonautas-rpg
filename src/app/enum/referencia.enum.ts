@@ -4,6 +4,7 @@ export enum Referencia {
     ATLAS = "Atlas de Arton",
     DEUSES = "Deuses de Arton",
     HEROIS = "Heróis de Arton",
+    MARCA_TEXTO = "Marca Texto",
     REVISTA_T20 = "Revista Tormenta 20",
     DB = "Revista Dragão Brasil",
     GUIA_NPC = "Guia de NPC's"
