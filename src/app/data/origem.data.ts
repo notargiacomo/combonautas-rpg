@@ -2708,6 +2708,25 @@ redes, linhas e anzóis de materiais naturais, você pescava para consumo própr
         concedeParceiro: false,
         bonus: [Modificador.ACERTO],
       },
+      {
+        id: 132,
+        nome: 'Cria das Estradas',
+        regiao: 'Geral',
+        descricao: `
+        <p>Seus pais eram andarilho e você cresceu entre as estradas e trilha de Arton. Acostumado a viajar pelo mundo, você aprendeu a superar as mais variadas adversidades.</p>
+        <p><b>Itens: </b> Barraca, equipamento de viagem, mochila de aventureiro.</p>
+        <p><b>Benefícios.</b> Você é treinado em Fortitude e Sobrevivência e, uma vez por cena, pode ignorar todas as penalidades numéricas por condições e habilidades por uma rodada (como a penalidade na Defesa e Reflexos por estar desprevinido ou a penalidade em perícias e dano pela magia Oração)</p>`,
+        referencias: Referencia.MARCA_TEXTO,
+        paginas: '',
+        temMagia: false,
+        temPoder: false,
+        temPericia: false,
+        temRD: false,
+        concedeDinheiro: false,
+        concedeFerramenta: true,
+        concedeParceiro: false,
+        bonus: [Modificador.ACERTO],
+      },
     ];
   }
 }
