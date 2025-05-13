@@ -2131,7 +2131,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_armadura_completa.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
       },
       {
         id: 59,
@@ -2254,7 +2254,7 @@ export class ItemData {
         multiplicador_critico: 0,
         margem_ameaca: 0,
         alcance: 0,
-        penalidade: 2,
+        penalidade: 4,
         chave: [
           Chave.LIMITE_USO_VESTIDO, 
           Chave.EMPUNHADURA_ARMA_LEVE
