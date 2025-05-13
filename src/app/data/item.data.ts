@@ -2355,7 +2355,7 @@ export class ItemData {
         multiplicador_critico: 2,
         margem_ameaca: 1,
         alcance: 0,
-        penalidade: 1,
+        penalidade: 2,
         chave: [
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.PROFICIENCIA_ESCUDO,
