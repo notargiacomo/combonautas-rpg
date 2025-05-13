@@ -432,7 +432,7 @@
                 </div>
               </mat-card-content>
             </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eArmadura(objeto)">
+            <mat-card class="card-padrao" *ngIf="objeto && (eArmadura(objeto) || eEscudo(objeto))">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
                 {{ objeto.nome }}
               </mat-card-title>

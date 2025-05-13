@@ -13,4 +13,9 @@ export enum TipoItem {
     SERVICO = "12. Serviço",
     MELHORIA = "13. Melhoria",
     MATERIAL_ESPECIAL = "14. Material Especial", 
+    ESCUDO = "15. Escudo", 
+    ENCANTO = "16. Encanto",
+    ACESSORIO = "17. Acessório",
+    ARTEFATO = "18. Artefato"
+
 }
