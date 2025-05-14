@@ -194,6 +194,10 @@ export class ItensMagicosComponent implements AfterViewInit {
     return objeto.tipo === TipoItem.ESCUDO;
   }
 
+  eAcessorio(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ACESSORIO;
+  }
+
   eEquipamento(objeto: Item): boolean {
     return objeto.tipo === TipoItem.EQUIPAMENTO_AVENTURA;
   }

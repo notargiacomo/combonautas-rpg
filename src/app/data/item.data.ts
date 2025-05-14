@@ -2330,7 +2330,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_escudo_leve.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,pericia: '', proficiencia: ''
       },
       {
         id: 64,
@@ -2363,7 +2363,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_escudo_pesado.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,pericia: '', proficiencia: ''
       },
       {
         id: 65,
@@ -2561,7 +2561,7 @@ export class ItemData {
         imagem: 'assets/img/item_armadura_escudo_couro.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,pericia: '', proficiencia: ''
       },
       {
         id: 71,
