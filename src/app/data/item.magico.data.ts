@@ -6906,6 +6906,311 @@ export class ItemMagicoData {
         referencias: Referencia.HEROIS,
         paginas: '258'
       },
+      {
+        id: 291,
+        nome: 'Abafador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico ergue uma barreira permeável ao redor do alvo da magia, diminuindo as capacidades dele. Se uma criatura falhar num teste de resistência contra uma magia sua, a CD das habilidades dela diminui em –2 por uma rodada.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 292,
+        nome: 'Bélico',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico se parece com uma arma. Por exemplo, se for uma varinha, pode ser comprido e pontiagudo como uma espada curta. Quando lança uma magia de dano, você causa +1d10 pontos de dano de essência.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 293,
+        nome: 'Caridoso',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico emana uma sensação de conforto e união. Quando você lança uma magia em um aliado e gasta pelo menos 1 PM, recebe 1 PM temporário para gastar em aprimoramentos na próxima magia que lançar nessa cena. Esse PM não conta no limite de gasto de pontos de mana.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 294,
+        nome: 'Chocante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico é adornado com topázios e emite o som de estalos elétricos. Suas magias que causam dano de eletricidade causam um dado extra de dano do mesmo tipo e deixam o alvo ofuscado por 1 rodada.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 295,
+        nome: 'Clemente',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico vibra com energia positiva, como se estivesse ansioso para salvar vidas. Suas magias de cura curam um dado extra do mesmo tipo.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 296,
+        nome: 'Contido',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico suaviza efeitos destrutivos. Por exemplo, uma labareda infernal pode virar uma lufada de ar abafado que, em vez de carbonizar seu alvo, irá apenas fazê-lo desmaiar. Quando lança uma magia de dano, você pode gastar +1 PM para que ela cause dano não letal.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 297,
+        nome: 'Embusteiro',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico tem a aparência de um item mundano de tamanho equivalente — um cajado arcano pode parecer uma vassoura, enquanto uma varinha pode parecer um cachimbo. Ele permite que você use o poder Magia Discreta (Tormenta20, p. 131). Se você já o possui, em vez disso o custo para usá-lo diminui em –1 PM e você pode somar seu Carisma na CD do teste de Misticismo para perceber que você lançou uma magia.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 298,
+        nome: 'Emergencial',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico está sempre vibrando, ansioso para agir. Se estiver empunhando este esotérico, uma vez por rodada, quando você ou um aliado em alcance curto sofre dano, você pode gastar 4 PM para lançar uma magia de cura na vítima desse dano como uma reação. Apenas magias com execução de ação de movimento, padrão ou completa podem ser lançadas dessa forma.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 299,
+        nome: 'Encadeado',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico impulsiona a energia mágica de seus feitiços, fazendo-a saltar para outros alvos. Uma vez por cena, quando você reduz os PV de um inimigo a 0 ou menos com uma magia, você pode causar metade do dano da magia a outro inimigo dentro do alcance original dela. O inimigo tem direito ao mesmo teste de resistência original e não sofre qualquer outro efeito da magia, apenas o dano.`,        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 300,
+        nome: 'Escultor',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico está sempre vertendo um pouco de argila. Quando você lança uma magia com efeito de cone ou linha, pode gastar 1 PM para mudar a área dessa magia de cone para linha ou vice-versa. O comprimento de um cone que se torna linha dobra e o de uma linha que se torna cone é reduzido a um terço (arredonde para baixo, como o normal; por exemplo, 9m se era 30m).`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 301,
+        nome: 'Frugal',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico pode inibir seu poder, enfraquecendo suas magias, mas poupando suas energias no processo. Quando você lança uma magia que exige um teste de resistência e afeta um ou mais inimigos, pode diminuir a CD da magia em –2. Se fizer isso, o custo da magia também é diminuído em –2 PM.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 302,
+        nome: 'Glacial',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico é adornado com safiras e frio ao toque. Suas magias que causam dano de frio causam um dado extra de dano do mesmo tipo e deixam os alvos vulneráveis por 1 rodada.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 303,
+        nome: 'Imperioso',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico impõe sua vontade sobre suas criações. Quando você lança uma magia que exige que você gaste ações para comandar o efeito dela, como Conjurar Monstro ou Mão Poderosa de Talude, a ação que você gasta para emitir esse comando diminui em uma categoria (de ação completa para padrão, de padrão para movimento, de movimento para livre). Se a ação for reduzida para livre, você pode emitir apenas um comando como ação livre por rodada; os demais gastam ações de movimento.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 304,
+        nome: 'Implacável',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `Quando você lança uma magia, pode gastar +2 PM para afetar um alvo contra o qual você não tenha linha de efeito. Você deve estar vendo o alvo ou tê-lo visto em seu último turno, e ele ainda precisa estar no alcance. Pré-requisito: outro encanto.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 305,
+        nome: 'Incriminador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico é imbuído com energias enganadoras. Uma vez por cena, quando você lança uma magia, pode gastar 3 PM para criar uma ilusão que mostra a magia sendo lançada por outra criatura a sua escolha em alcance médio. Criaturas que identificarem a magia (veja Misticismo, em Tormenta20, p. 121) têm direito a um teste de Vontade (CD da magia) para desacreditar.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 306,
+        nome: 'Inflamável',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico é adornado com rubis e quente ao toque. Suas magias que causam dano de fogo causam um dado extra de dano do mesmo tipo e deixam o alvo em chamas (se já fizerem isso, o dano causado por essa condição aumenta em +1d6).`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 307,
+        nome: 'Inquisidor',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico é marcado com o símbolo sagrado de um deus maior. Quando você lança uma magia divina contra uma criatura que não seja devota dessa divindade, a CD da magia aumenta em +1. Se possuir a habilidade de classe Devoto Fiel dessa divindade, em vez disso a CD aumenta em +2.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 308,
+        nome: 'Insistente',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico emite um pulsar constante e ritmado. Quando você lança uma magia que causa dano por mais de uma rodada (como Flecha Ácida), os efeitos que normalmente só se aplicariam quando a magia é lançada (como Arcano de Batalha) se aplicam também à segunda rodada.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 309,
+        nome: 'Khalmyrita',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico está imbuído com a presença estável da Ordem. Quando lança uma magia com efeito variável, em vez de rolar os dados você pode escolher um valor igual à média da rolagem. Um esotérico khalmyrita não pode ser nímbico.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 310,
+        nome: 'Majestoso',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico possui um ornamento chamativo, como uma grande gema na ponta. A CD para resistir a suas magias arcanas aumenta em +1. Se você tiver a habilidade de classe Magias, em vez disso aumenta em +2. Pré-requisito: outro encanto.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 311,
+        nome: 'Nímbico',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico está imbuído com o poder delirante do Caos. Quando lança uma magia com efeito variável, você pode rolar novamente qualquer número de dados da rolagem original (limitado pelos seus PM atuais). Contudo, a cada resultado par numa dessas rolagens adicionais, você perde 1 PM. Um esotérico nímbico não pode ser khalmyrita.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 312,
+        nome: 'Pulverizante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico foi feito para a destruição, uma ferramenta de morte que não admite segundas chances ou arrependimento. Quando lança uma magia que reduz os PV de uma criatura a 0 ou menos, você pode gastar 2 PM para que a criatura seja desintegrada, restando apenas um fino pó. Qualquer equipamento que a criatura esteja carregando, vestindo ou empunhando também é desintegrado, exceto itens mágicos. Um esotérico pulverizante não pode ser contido. Pré-requisito: outro encanto.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 313,
+        nome: 'Retaliador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `Quando você evitar dano de um inimigo (na forma de RD) com o efeito de uma de suas magias, a CD da sua próxima magia de dano lançada até o fim do seu próximo turno aumenta em +1 para cada 10 pontos de dano evitado.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 314,
+        nome: 'Sanguessuga',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico possui entalhes de marfim pontiagudos, semelhantes a dentes caninos. Se você lançar uma magia e um ou mais inimigos falharem no teste de resistência contra ela, você recebe 10 PV temporários.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 315,
+        nome: 'Traiçoeiro',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico emite um sibilar baixo e constante. Se você lançar uma magia hostil e afetar um aliado, todas as criaturas afetadas pela magia (incluindo o aliado!) sofrem –2 em seus testes de resistência. O aliado não pode ter nenhum tipo de resistência ou imunidade contra o efeito da magia, nem se beneficiar dele de nenhuma forma, para este encanto funcionar — por exemplo, uma Bola de Fogo lançada contra um aliado com redução de fogo não ativa este efeito.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 316,
+        nome: 'Verdugo',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
+        descricao: `O esotérico retira poder da morte de seus inimigos. Na primeira vez em cada cena que você reduz um inimigo a 0 PV ou menos com uma magia lançada com este esotérico, o dano causado por suas magias aumenta em +1 por dado até o fim da cena.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 317,
+        nome: 'Aconchegante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `O vestuário torna o sono mais confortável, melhorando seu descanso em uma categoria.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
+      {
+        id: 318,
+        nome: 'Ajudante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `A ferramenta realiza movimentos por vontade própria, auxiliando-o. O bônus em uma perícia fornecido pela ferramenta aumenta em +2.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
+      {
+        id: 319,
+        nome: 'Autoritário',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `O vestuário tem ornamentos volumosos no peitoral e nas ombreiras, tornando sua figura mais imponente. Fornece +2 em Intimidação (cumulativo com outros bônus do item) e aumenta a CD de seus efeitos de medo em +2.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
+      {
+        id: 320,
+        nome: 'Compacto',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `Por meio de articulações engenhosas e bolsões planares, o equipamento não ocupa espaços.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
+      {
+        id: 321,
+        nome: 'Imaculado',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `O vestuário está sempre limpo e perfumado. Mesmo após emergir de um pântano ou esgoto, toda a imundície desaparece em 1 rodada. Fornece +2 em Diplomacia (cumulativo com outros bônus do item) e aumenta a CD de Aparência Inofensiva, Presença Aristocrática e efeitos similares em +2.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
+      {
+        id: 322,
+        nome: 'Insinuante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `O vestuário realça suas curvas e músculos. Fornece +2 em Enganação (cumulativo com outros bônus do item) e aumenta a CD de seus efeitos mentais em +2.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
+      {
+        id: 323,
+        nome: 'Ligeiro',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `O item pode ser vestido ou removido com uma ação livre (acompanhada ou não de pose e olhar fatal).`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
+      {
+        id: 324,
+        nome: 'Prontidão',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ACESSORIO],
+        descricao: `O item surge em suas mãos no instante em que precisa ser utilizado. Desde que ele esteja em alcance curto, você pode empunhá-lo ou guardá-lo como uma ação livre. Além disso, se executar uma reação em que poderia usar o item, você pode empunhá-lo como parte dessa ação.`,        
+        referencias: Referencia.HEROIS,
+        paginas: '262'
+      },
     ];
   }
 }
