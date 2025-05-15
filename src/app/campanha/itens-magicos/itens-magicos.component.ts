@@ -237,6 +237,9 @@ export class ItensMagicosComponent implements AfterViewInit {
   eMelhoria(objeto: Item): boolean {
     return objeto.tipo === TipoItem.MELHORIA;
   }
+  eEncanto(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ENCANTO;
+  }
 
   eMaterialEspecial(objeto: Item): boolean {
     return objeto.tipo === TipoItem.MATERIAL_ESPECIAL;

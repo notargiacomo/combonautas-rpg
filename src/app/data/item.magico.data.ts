@@ -6051,6 +6051,456 @@ export class ItemMagicoData {
         referencias: Referencia.HEROIS,
         paginas: '265'
       },
+      {
+        id: 196,
+        nome: 'Ameaçadora',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A margem de ameaça da arma duplica. Por exemplo, uma espada longa ameaçadora tem margem de ameaça 17. Efeitos que duplicam a margem de ameaça são aplicados antes de quaisquer efeitos que a aumentem.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 197,
+        nome: 'Anticriatura',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma é letal contra um tipo de criatura (ou uma raça de humanoides). Uma vez por rodada, quando ataca uma criatura desse tipo, você pode gastar 2 PM. Se fizer isso e acertar o ataque, causa +4d8 de dano. Para determinar o tipo de criatura aleatoriamente, role 1d6: 1) animal; 2) construto; 3) espírito; 4) monstro; 5) morto-vivo; 6) uma raça de humanoides.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 198,
+        nome: 'Arremesso',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma pode ser arremessada em alcance curto. Caso já pudesse ser arremessada, seu alcance aumenta em uma categoria. Após o ataque, se estiver livre, a arma volta voando para você. Pegá-la é uma reação.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 199,
+        nome: 'Assassina',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma aumenta os dados de dano extra de um ataque furtivo para d8. Além disso, quando faz um Ataque Furtivo, você pode gastar 2 PM. Se fizer isso, pode rolar novamente quaisquer resultados 1 nesses dados de dano extra.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 200,
+        nome: 'Caçadora',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma persegue o alvo, anulando penalidades por camuflagem leve e total e por cobertura leve. Caso a arma seja de ataque à distância, seu alcance também aumenta em uma categoria.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 201,
+        nome: 'Congelante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma causa +1d6 de dano de frio. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima fica enredada por uma rodada. Uma arma congelante é coberta por uma camada de gelo e névoa.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 202,
+        nome: 'Conjuradora',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Um conjurador pode lançar na arma uma magia que tenha como alvo uma criatura ou que afete uma área. A magia não gera efeito na hora; em vez disso, fica guardada no item. Quando acerta um ataque com a arma, você pode descarregar a magia guardada como uma ação livre e sem pagar seu custo. Ela tem como alvo (ou como centro de sua área) a criatura ou ponto atingido pelo ataque. Uma vez que a magia seja descarregada, outra pode ser armazenada.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 203,
+        nome: 'Corrosiva',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: ` A arma causa +1d6 de dano de ácido. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima sofre 4d4 pontos de dano de ácido na próxima rodada. Uma arma corrosiva exala vapores e goteja líquido tóxico.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 204,
+        nome: 'Dançarina',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer a arma flutuar e atacar uma criatura em alcance curto a sua escolha, com as mesmas estatísticas que teria se você a estivesse empunhando. Este efeito tem duração sustentada; se parar de sustentá-lo, a arma cai no chão.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 205,
+        nome: 'Defensora',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer a arma flutuar e atacar uma criatura em alcance curto a sua escolha, com as mesmas estatísticas que teria se você a estivesse empunhando. Este efeito tem duração sustentada; se parar de sustentá-lo, a arma cai no chão.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 206,
+        nome: 'Destruidora',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Se usada contra construtos e objetos (com a manobra quebrar), a arma fornece +2 no teste de ataque e causa +2d8 de dano.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 207,
+        nome: 'Dilacerante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma inflige ferimentos profundos. Quando faz um acerto crítico com a arma, você causa +10 pontos de dano.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 208,
+        nome: 'Drenante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Quando você faz um acerto crítico em uma criatura viva, a criatura fica fraca e você ganha 2d10 pontos de vida temporários. Uma arma drenante emite um brilho púrpura.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 209,
+        nome: 'Elétrica',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma causa +1d6 de dano de eletricidade. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, um raio atinge outra criatura em alcance curto, causando 3d8 pontos de dano de eletricidade. Uma arma elétrica emite faíscas e é coberta de arcos voltaicos.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 210,
+        nome: 'Energética',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma tem sua parte perigosa (a lâmina de uma espada, a ponta de uma lança...) transformada em magia pura. Ela fornece +4 em testes de ataque, ignora 20 pontos de redução de dano, converte todo o dano causado para essência e emana luz como uma tocha. Pré-requisito: formidável.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 211,
+        nome: 'Excruciante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma inflige dor terrível. Uma criatura viva atingida fica fraca. Se já estiver fraca, fica debilitada (a condição máxima que esta arma pode causar).`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 212,
+        nome: 'Flamejante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma causa +1d6 de dano de fogo. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso, em vez do ataque normal você dispara uma bola de fogo contra um alvo em alcance médio. O alvo sofre 6d6 pontos de dano. Um teste de Reflexos (CD For ou Des, à sua escolha) reduz à metade. Uma arma flamejante emana chamas como uma tocha.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 213,
+        nome: 'Formidável',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma é encantada para desferir golpes precisos. Ela fornece +2 em testes de ataque e rolagens de dano.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 214,
+        nome: 'Lancinante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma inflige ferimentos mortais. Quando faz um acerto crítico com a arma, você causa +10 pontos de dano ou, além de multiplicar os dados de dano, multiplica também quaisquer bônus numéricos, a sua escolha. Este efeito substitui o efeito de dilacerante. Pré-requisito: dilacerante.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 215,
+        nome: 'Magnífica',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma é encantada para desferir golpes perfeitos. Ela fornece +4 em testes de ataque e rolagens de dano. Pré-requisito: formidável.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 216,
+        nome: 'Piedosa',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma causa +1d8 de dano, mas todo o dano causado é não letal. Você pode gastar 1 PM para desativar e ativar este encanto.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 217,
+        nome: 'Profana',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma causa +2d8 de dano contra devotos de deuses que canalizam apenas energia positiva e criaturas bondosas (a critério do mestre). Uma arma profana emite luz rubra pulsante.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 218,
+        nome: 'Sagrada',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma causa +2d8 de dano contra devotos de deuses que canalizam apenas energia negativa e criaturas malignas (a critério do mestre). Uma arma sagrada emite uma sutil luz pura.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 219,
+        nome: 'Sanguinária',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Uma criatura viva atingida fica sangrando. Dano de sangramento causado pela arma é cumulativo — uma criatura atingida duas vezes perde 2d6 PV por sangramento por rodada.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 220,
+        nome: 'Trovejante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma emite um trovão ribombante a cada golpe. Quando você faz um acerto crítico, a vítima fica atordoada por uma rodada (apenas uma vez por cena; Fort CD For ou Des, a sua escolha, evita).`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 221,
+        nome: 'Tumular',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma causa +1d8 de dano de trevas. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso, o bônus de dano aumenta para +2d8, mas você perde 1d8 pontos de vida. Uma arma tumular drena o calor ao redor.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 222,
+        nome: 'Veloz',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Você recebe a habilidade Ataque Extra, do guerreiro, mas só pode usá-la com esta arma. Se já a possui, em vez disso, o custo para usá-la com esta arma diminui em –1 PM.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 223,
+        nome: 'Venenosa',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima fica envenenada, perdendo 1d12 pontos de vida por rodada durante 3 rodadas. Uma arma venenosa verte um líquido verde e viscoso.`,
+        referencias: Referencia.BASICO,
+        paginas: '335'
+      },
+      {
+        id: 224,
+        nome: 'Alvorada',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma brilha como o sol matinal. Ela causa +1d8 de dano de luz contra mortos-vivos e criaturas com sensibilidade a luz. Uma vez por rodada, quando ataca, você pode gastar 2 PM para cegar uma criatura em alcance curto por 1 rodada (apenas uma vez por cena por criatura, Fort CD For ou Des evita).`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 225,
+        nome: 'Anátema',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma enfraquece a magia do adversário. Quando uma criatura é atingida, a CD para resistir às habilidades mágicas dela diminui em –2 por 1 rodada.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 226,
+        nome: 'Brumosa',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma é envolta em névoa mágica que desorienta os oponentes. Toda vez que você acerta um ataque com a arma, recebe camuflagem leve por 1 rodada.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 227,
+        nome: 'Cantante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma canta, ou entoa música. Você recebe +2 em Atuação enquanto a empunha. Você pode gastar 1 PM para que você e seus aliados em alcance curto recebam +1 em testes de ataque por 1 rodada (cumulativo com outros bônus de itens).`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 228,
+        nome: 'Ciclônica',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma cria fortes correntes de ar ao redor do portador. Você recebe +2 em testes contra manobras. Além disso, uma vez por rodada, pode gastar 1 PM para criar uma rajada de vento em um cone de 9m que empurra todas as criaturas 3m na direção oposta (Fort CD For ou Des evita).`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 229,
+        nome: 'Crescente',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Você pode gastar 2 PM para fazer a arma aumentar de tamanho até o fim de seu turno. O dano dela aumenta em um passo e o alcance aumenta em +1,5m. Este encanto só pode ser aplicado a armas de combate corpo a corpo.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 230,
+        nome: 'Cristalina',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma é feita de cristal, brilhando com cores prismáticas. Causa +1d6 de dano de luz. Uma vez por rodada, quando ataca, você pode gastar 1 PM. Se fizer isso e acertar o ataque, a criatura atingida fica ofuscada por 1 rodada.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 231,
+        nome: 'Cronal',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Quando ataca, você pode gastar 3 PM para prever o futuro. Se fizer isso, você rola dois dados e usa o melhor resultado, e no próximo ataque que você sofrer até seu próximo turno, o atacante rola dois dados e usa o pior resultado. Pré-requisito: formidável.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 232,
+        nome: 'Cuidadora',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Esta arma acumula a energia de ataques falhos para protegê-lo. Quando você erra um ataque, recebe +2 na Defesa por 1 rodada. Uma vez por rodada, quando sofre dano, você pode gastar 2 PM para receber RD 10 contra esse dano.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 233,
+        nome: 'Espreitadora',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma pode assumir uma estrutura translúcida, quase invisível. Quando ataca, você pode gastar 2 PM para deixar o oponente desprevenido (apenas uma vez por cena por criatura; Von CD For ou Des evita).`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 234,
+        nome: 'Frenética',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma se alimenta de seu espírito de luta. Sempre que acerta um ataque em um inimigo, você pode gastar 1 PM para receber +1 em testes de ataque e dano com ela até o fim da cena. Esse efeito é cumulativo até um máximo de +5.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 235,
+        nome: 'Gárgula',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma é ornamentada com figuras de gárgulas que ganham vida temporariamente. Você pode gastar 2 PM para convocar uma pequena gárgula que atua como um parceiro combatente iniciante até o fim da cena.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 236,
+        nome: 'Horrenda',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma exala uma aura de medo. Você recebe +2 em Intimidação e o custo de suas habilidades de medo diminui em –1 PM.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 237,
+        nome: 'Infestada',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: ` A arma é habitada por insetos mágicos. Sempre que você acerta um ataque em um inimigo, pode gastar 2 PM para liberar um enxame sobre ele — o alvo perde 2d6 pontos de vida por veneno e fica enjoado por 1d4 rodadas (Fort CD For ou Des evita a condição).`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 238,
+        nome: 'Manáfaga',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma suga energia mágica do alvo. Quando você acerta um ataque com a arma em um inimigo, ele deve fazer um teste de Vontade (CD For ou Des). Se ele falhar, você recebe 1 PM temporário e ele perde 1d4 PM. Pré-requisito: formidável.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 239,
+        nome: 'Indignada',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Sempre que você erra um ataque, a arma emite um grunhido irritado que o incomoda e concede um bônus de +2 no próximo teste de ataque que você fizer até o fim da cena (cumulativo com outros bônus de itens).`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 240,
+        nome: 'Rebote',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Sempre que você erra um ataque em um inimigo, a arma ganha uma carga de energia (até um máximo de 3 cargas). Quando você acerta um ataque, a arma gasta todas as cargas de energia — para cada carga gasta, ela causa +1d6 pontos de dano.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 241,
+        nome: 'Reflexiva',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma tem uma superfície brilhante. Uma vez por rodada, quando é alvo de uma magia, você pode gastar uma quantidade de PM igual ao círculo da magia para refleti-la de volta ao conjurador. As características da magia (efeitos, CD...) se mantêm, mas você toma qualquer decisão exigida por ela. Pré-requisito: cristalina.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 242,
+        nome: 'Ressonante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma vibra com uma frequência harmônica. Quando você acerta um ataque, pode gastar 2 PM para emitir uma onda de choque em outra criatura em alcance curto. Compare o resultado desse ataque com a Defesa da criatura. Se for suficiente para acertar a criatura, ela sofre uma quantidade de dano psíquico igual à metade do dano causado pelo ataque.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 243,
+        nome: 'Sepulcral',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `A arma emana energia negativa. Quando gasta PM para ativar o efeito de tumular, se você acertar o ataque, a criatura não pode recuperar pontos de vida por 1d4 rodadas. Pré-requisito: tumular.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 244,
+        nome: 'Sombria',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: ` A arma é envolta em trevas que obscurecem sua presença. Você recebe +2 em testes de Furtividade enquanto empunha esta arma (cumulativo com outros bônus de itens) e pode lançar a magia Escuridão (se já puder lançar essa magia, seu custo diminui em –1 PM).`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
+      {
+        id: 245,
+        nome: 'Vampírica',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMA],
+        descricao: `Quando ataca com esta arma, você pode gastar 1 PM. Se fizer isso, ela causa +2d6 pontos de dano de trevas e você recupera vida igual ao dano de trevas que esse efeito causar.`,
+        referencias: Referencia.HEROIS,
+        paginas: '256'
+      },
     ];
   }
 }

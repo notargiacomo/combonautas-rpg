@@ -18,6 +18,7 @@ export interface Item {
     pv?:number;
     cd_fabricacao?:number;
     cd_identificar_item?:number;
+    custo_permanente_pontos_mana?:number,
     preco_fabricacao?:number;
     tempo_fabricacao_em_horas?:number;
     preco_conserto?:number;

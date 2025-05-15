@@ -1872,6 +1872,53 @@
                 </div>
               </mat-card-content>
             </mat-card>
+            <mat-card class="card-padrao" *ngIf="objeto && eEncanto(objeto)">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ objeto.nome }}
+              </mat-card-title>
+              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
+                <div class="content">
+                  <mat-tab-group>
+                    <mat-tab label="Descrição">
+                      <div class="content">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr class="" />
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="d-flex justify-content-end">
+                              {{
+                              objeto.referencias + " pag. " + objeto.paginas
+                              }}
+                            </div>
+                            <hr class="" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12 mt-2 button-row">
+                            <section class="d-flex flex-wrap gap-2">
+                              @for (chave of objeto.chave; track chave) {
+                              <button class="me-2" mat-flat-button disabled>
+                                {{ chave }}
+                              </button>
+                              }
+                            </section>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <hr class="" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
+                        </div>
+                      </div>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </mat-card-content>
+            </mat-card>
             <mat-card class="card-padrao" *ngIf="objeto && eMaterialEspecial(objeto)">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
                 {{ objeto.nome }}
