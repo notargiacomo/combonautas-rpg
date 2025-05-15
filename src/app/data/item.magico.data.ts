@@ -6501,6 +6501,411 @@ export class ItemMagicoData {
         referencias: Referencia.HEROIS,
         paginas: '256'
       },
+      {
+        id: 246,
+        nome: 'Abascanto',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe resistência a magia +5.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 247,
+        nome: 'Abençoado',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de trevas 10 e +5 em testes de resistência contra efeitos de necromancia. Um item abençoado é decorado com gravuras de símbolos sagrados de deuses do Bem.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 248,
+        nome: 'Acrobático',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe +5 em Acrobacia e ignora a penalidade de armadura do item para testes dessa perícia.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 249,
+        nome: 'Alado',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode gastar 2 PM para fazer asas emergirem de suas costas e receber deslocamento de voo 12m com duração sustentada.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 250,
+        nome: 'Animado',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer o escudo flutuar ao seu redor até o fim da cena. Você recebe o mesmo bônus na Defesa que receberia se estivesse empunhando o escudo, mas fica com as duas mãos livres. Você só pode ser protegido por um escudo ao mesmo tempo.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 251,
+        nome: 'Assustador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode gastar uma ação de movimento e 2 PM para gerar uma onda de medo. Inimigos em alcance curto devem passar num teste de Vontade (CD Car) ou ficarão abalados até o fim da cena. Um item assustador possui manchas de sangue, ossos pendurados e outras decorações horripilantes.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 252,
+        nome: 'Cáustica',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de ácido 10 e pode gastar uma ação de movimento e 2 PM para fazer o item gotejar ácido. Se fizer isso, seus ataques causam +1d4 de dano de ácido até o fim da cena.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 253,
+        nome: 'Defensor',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O item é encantado para desviar golpes. O bônus na Defesa do item aumenta em +2.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 254,
+        nome: 'Escorregadio',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe +10 em testes de Acrobacia para escapar e em testes de manobra contra agarrar. Um item escorregadio parece estar sempre coberto de óleo levemente gorduroso.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 255,
+        nome: 'Esmagador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Este escudo fornece +2 em ataques e dano e tem seu dano aumentado em um passo.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 256,
+        nome: 'Fantasmagórico',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: ` Você pode lançar a magia Manto de Sombras. Um item fantasmagórico é cinzento e esfumaçado.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 257,
+        nome: 'Fortificado',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe 25% de chance (para escudos) e 50% de chance (para armaduras) de ignorar o dano extra de acertos críticos e ataques furtivos.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 258,
+        nome: 'Gélido',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de frio 10 e pode gastar uma ação de movimento e 2 PM para se cobrir de gelo até o fim da cena. Se fizer isso, recebe 10 PV temporários. Um item gélido é azulado e frio ao toque.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 259,
+        nome: 'Guardião',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O item emite um campo de força que desvia ataques. O bônus na Defesa do item aumenta em +4. Pré-requisito: defensor.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 260,
+        nome: 'Hipnótico',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode gastar uma ação padrão e 3 PM para emitir luzes coloridas. Inimigos em alcance curto devem passar num teste de Vontade (CD Car) ou ficarão fascinados por 1d6 rodadas. O efeito termina se qualquer criatura afetada for atacada. Um item hipnótico é espalhafatoso e colorido.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 261,
+        nome: 'Ilusório',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer o item adquirir a aparência de uma roupa comum, mas mantendo suas propriedades (bônus na Defesa, penalidade de armadura...). A magia Visão da Verdade revela o item disfarçado.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 262,
+        nome: 'Incandescente',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de fogo 10 e pode gastar uma ação de movimento e 2 PM para fazer o item emitir labaredas até o fim da cena. Se fizer isso, no início de cada um de seus turnos você causa 1d6 pontos de dano de fogo em todas as criaturas adjacentes. Um item incandescente é avermelhado e quente ao toque.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 263,
+        nome: 'Invulnerável',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de dano 2 (para escudos) ou 5 (para armaduras).`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 264,
+        nome: 'Opaco',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de ácido, eletricidade, fogo e frio 10. Um item opaco parece sem cor, totalmente comum e desinteressante.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 265,
+        nome: 'Protetor',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe +2 em testes de resistência.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 266,
+        nome: 'Refletor',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Uma vez por rodada, quando você é alvo de uma magia, pode gastar PM igual ao custo dela para refleti-la de volta ao conjurador. As características da magia (efeitos, CD...) se mantêm, mas você toma qualquer decisão exigida por ela. Um item refletor parece espelhado.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 267,
+        nome: 'Relampejante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de eletricidade 10 e pode gastar uma ação de movimento e 2 PM para gerar arcos voltaicos até o fim da cena. Se fizer isso, qualquer criatura que o ataque em corpo a corpo sofre 2d6 pontos de dano de eletricidade. Um item relampejante é decorado com ouro, prata e cobre.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 268,
+        nome: 'Reluzente',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode gastar uma ação de movimento e 2 PM para emitir um clarão de luz. Todos os inimigos em alcance curto devem passar num teste de Reflexos (CD Car) ou ficarão cegos por uma rodada. Um item reluzente é polido e brilhante.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 269,
+        nome: 'Sombrio',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe +5 em Furtividade e ignora a penalidade de armadura do item para testes dessa perícia. Um item sombrio é escuro, fosco e bem lubrificado, para não fazer barulho.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 270,
+        nome: 'Zeloso',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Uma vez por rodada, se um aliado adjacente for alvo de um ataque, você pode gastar 1 PM para se tornar o alvo do ataque, que então é resolvido normalmente.`,
+        referencias: Referencia.BASICO,
+        paginas: '338'
+      },
+      {
+        id: 271,
+        nome: 'Abissal',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O item possui gravuras de demônios e tentáculos. Você recebe redução de ácido e fogo 10 e, uma vez por rodada, pode gastar 1 PM para causar 2d6 pontos de dano de ácido ou fogo a uma criatura adjacente.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 272,
+        nome: 'Ancorada',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O item possui gravuras de demônios e tentáculos. Você recebe redução de ácido e fogo 10 e, uma vez por rodada, pode gastar 1 PM para causar 2d6 pontos de dano de ácido ou fogo a uma criatura adjacente.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 273,
+        nome: 'Anulador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Uma vez por rodada, quando é alvo de uma magia, você pode gastar 3 PM por círculo da magia para anulá-la. Pré-requisito: abascanto.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 274,
+        nome: 'Arbóreo',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe resistência a magia divina +5. Além disso, pode lançar a magia Controlar Plantas (CD Sab). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 275,
+        nome: 'Astuto',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe +5 em Intuição e Percepção. Uma vez por rodada, pode gastar 3 PM para detectar automaticamente a presença e a localização de todas as criaturas escondidas ou invisíveis em alcance curto.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 276,
+        nome: 'Densa',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `A armadura gera uma aura de peso e lentidão. Isso reduz o deslocamento de inimigos em alcance curto em –3m. Uma vez por rodada, você pode gastar uma ação de movimento e 2 PM para deixar todos os inimigos em alcance curto abalados e lentos por 1d4 rodadas (CD For ou Des evita).`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 277,
+        nome: 'Égide',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O bônus na Defesa do item contra ataques à distância aumenta em +5. Além disso, uma vez por cena, quando sofre dano de um ataque à distância, você pode gastar 3 PM para ignorar esse dano.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 278,
+        nome: 'Enraizada',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `A armadura estende filamentos nododos que o mantêm firme no chão. Você recebe +5 em testes para resistir às manobras derrubar e empurrar. Quando faz um teste de resistência contra outro tipo de efeito de movimento, você pode gastar 2 PM para receber +5 no teste.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 279,
+        nome: 'Esmérico',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O item é decorado com esmeraldas encantadas. Você recebe redução de ácido 10 e resistência a veneno +5. Além disso, você pode gastar 1 PM para criar um campo de energia esverdeada com duração sustentada que estende essa proteção para todos os aliados em alcance curto.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 280,
+        nome: 'Estígio',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Uma vez por cena, se for reduzido a 0 PV ou menos, você pode gastar 5 PM para, em vez disso, ser reduzido a 1 PV. Pré-requisito: abençoado.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 281,
+        nome: 'Etéreo',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Uma vez por cena você pode gastar 3 PM para se tornar incorpóreo por 1 rodada. Nessa forma, você ignora ataques e efeitos não mágicos e pode atravessar paredes e objetos sólidos, mas não manipulá-los (você tem Força nula). Se terminar sua rodada dentro de um objeto sólido, você é expelido para o espaço vazio mais próximo e perde 1d12 PV para cada 1,5m pelo qual for expelido.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 282,
+        nome: 'Geomântico',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe redução de dano 10/impacto e fortificação 25%. Além disso, você pode lan- çar a magia Controlar Terra (CD Car). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 283,
+        nome: 'Ligeira',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `A armadura pode ser vestida ou removida com uma ação livre (acompanhada ou não de coreografia e música tema).`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 284,
+        nome: 'Luminescente',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode lançar Luz e usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um clérigo de seu nível (CD Car). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM. Além disso, quando você lança essa magia, além de seus efeitos normais, criaturas com sensibilidade a luz devem passar em um teste de Vontade ou ficam cegas por 1 rodada (apenas uma vez por cena).`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 285,
+        nome: 'Prístino',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe resistência a necromancia e veneno +5. Além disso, pode gastar 2 PM para remover uma condição entre doente, enjoado ou envenenado de uma criatura adjacente.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 286,
+        nome: 'Purificador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe resistência a medo e mental +5 e pode gastar 2 PM para permitir que um aliado em alcance curto repita um teste de resistência contra um desses efeitos que o esteja afetando. Se ele passar, cancela o efeito. Você só pode usar essa habilidade uma vez por efeito.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 287,
+        nome: 'Reanimador',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O item possui um brilho pulsante que emana calor reconfortante. Você pode lançar Curar Ferimentos (CD Sab). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 288,
+        nome: 'Replicante',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `O item possui pontas afiadas. Quando é atingido por um ataque corpo a corpo, você pode gastar 1 PM para causar 2d6 pontos de dano do mesmo tipo sofrido ao atacante e reduzir essa mesma quantidade do dano sofrido.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 289,
+        nome: 'Resiliente',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você recebe resistência a atordoamento, paralisia e petrificação +5. Além disso, pode gastar 1 PM para repetir um teste de resistência contra uma dessas condições que o esteja afetando. Se você passar, cancela o efeito. Você só pode usar essa habilidade uma vez por efeito.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
+      {
+        id: 290,
+        nome: 'Vórtice',
+        tipo: TipoItem.ENCANTO,
+        chave: [Chave.TIPO_ITEM_ARMADURA],
+        descricao: `Você pode gastar 1 PM para criar um redemoinho que puxa uma criatura em alcance curto até um ponto adjacente a você (Fort CD For evita).`,
+        referencias: Referencia.HEROIS,
+        paginas: '258'
+      },
     ];
   }
 }
