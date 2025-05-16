@@ -5,4 +5,5 @@ export enum TipoDano {
     LUZ = "Luz",
     ESSENCIA = "Essência",
     FOGO = "Fogo",
+    ACIDO = "Ácido"
 }
