@@ -430,7 +430,7 @@
                 </div>
               </mat-card-content>
             </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eArmadura(objeto)">
+            <mat-card class="card-padrao" *ngIf="objeto && (eArmadura(objeto) || eEscudo(objeto))">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
                 {{ objeto.nome }}
               </mat-card-title>
@@ -469,7 +469,12 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
+                          <div class="col-sm-8" [innerHTML]="objeto.descricao"></div>
+                          <div class="col-sm-4">
+                            <mat-card>
+                              <img [src]="objeto.imagem" />
+                            </mat-card>
+                          </div>
                         </div>
                       </div>
                     </mat-tab>

@@ -191,6 +191,10 @@ export class ItensComponent implements AfterViewInit {
     return objeto.tipo === TipoItem.ARMADURA;
   }
 
+  eEscudo(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ESCUDO;
+  }
+
   eEquipamento(objeto: Item): boolean {
     return objeto.tipo === TipoItem.EQUIPAMENTO_AVENTURA;
   }
