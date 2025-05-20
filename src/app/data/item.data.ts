@@ -22450,6 +22450,26 @@ export class ItemData {
         paginas: '231',
         tipo: TipoItem.FERRAMENTA
       },
+      {
+        id: 443,
+        nome: 'Avental de Forja',
+        descricao: `Um avental grosso, feito de couro tratado alquimicamente. Um artesão protegido dessa forma não precisa se preocupar com faíscas e pequenas gotas de metal derretido respingando sobre seu peito. Evitando ferimentos sérios, pode se arriscar mais ao trabalhar. Se estiver usando um avental de forja, você pode perder 1d6 PV para receber +1 em um teste de Ofício (cumulativo com outros itens).`,
+        preco: 75,
+        rd: 0,
+        pv: 5,
+        cd_fabricacao: 25,
+        cd_identificar_item: 0,
+        preco_fabricacao: 100,
+        tempo_fabricacao_em_horas: 40,
+        preco_conserto: 7.5,
+        tempo_conserto_em_horas: 1,
+        pericia_fabricacao_conserto: 'Ofício (artesão)',
+        espaco: 1,
+        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
+        referencias: Referencia.HEROIS,
+        paginas: '232',
+        tipo: TipoItem.VESTUARIO
+      },
     ];
   }
 }
