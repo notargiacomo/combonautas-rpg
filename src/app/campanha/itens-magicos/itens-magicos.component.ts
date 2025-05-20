@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { AfterViewInit, ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import {
   FormBuilder,
@@ -33,6 +33,7 @@ import { ItemMagico } from '../../model/item.magico';
     MatGridListModule,
     //NgFor,
     NgIf,
+    NgClass,
     MatIconModule,
     MatInputModule,
     FormsModule,
@@ -86,6 +87,11 @@ export class ItensMagicosComponent implements AfterViewInit {
     });
 
     this.consultar(false);
+  }
+  
+  isOdd(element: any): boolean {
+    const index = this.dataSource.data.indexOf(element);
+    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
   seleciona(objeto: Item) {

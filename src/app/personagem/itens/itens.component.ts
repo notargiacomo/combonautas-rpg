@@ -1,5 +1,5 @@
-import { NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, ChangeDetectorRef, Component, EventEmitter, inject, Input, Output, ViewChild } from '@angular/core';
+import { NgClass, NgFor, NgIf } from '@angular/common';
+import { AfterViewInit, ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -9,23 +9,22 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatTabsModule } from '@angular/material/tabs';
-import { ItemService } from '../../service/item.service';
-import { Item } from '../../model/item';
-import { TipoItem } from '../../enum/tipo.item.enum';
-import { BalaoInterativoPadraoComponent } from '../../components/caixa-informativa/balao-interativo-padrao.component';
-import { MatDialog } from '@angular/material/dialog';
-import { Regras } from '../../enum/regras.enum';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSort, MatSortModule } from '@angular/material/sort';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatIconModule } from '@angular/material/icon';
-import { Chave, chaveToString } from '../../enum/chave.enum';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { Chave } from '../../enum/chave.enum';
+import { TipoItem } from '../../enum/tipo.item.enum';
+import { Item } from '../../model/item';
+import { ItemService } from '../../service/item.service';
+import { ItemServiceSupabase } from '../../service/supaservice/item.service.supabase';
+import { TipoItemServiceSupabase } from '../../service/supaservice/tipo.item.service.supabase';
 
 @Component({
   selector: 'app-itens',
@@ -33,8 +32,9 @@ import { Chave, chaveToString } from '../../enum/chave.enum';
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
-    //NgFor,
+    NgFor,
     NgIf,
+    NgClass,
     MatIconModule,
     MatInputModule,
     FormsModule,
@@ -57,7 +57,7 @@ export class ItensComponent implements AfterViewInit {
   form!: FormGroup;
   objetos!: Item[];
   objeto: Item | undefined;
-  tipos = Object.values(TipoItem);
+  tiposItem: any[] = [];
   chaves: Chave[] = [];
 
   selecaoChave: boolean = false;
@@ -73,7 +73,13 @@ export class ItensComponent implements AfterViewInit {
   @ViewChild(MatSort)
   sort!: MatSort;
 
-  constructor(private readonly service: ItemService, private fb: FormBuilder, private cdr: ChangeDetectorRef) {}
+  constructor(
+    private readonly service: ItemService, 
+    private readonly itemServiceSB: ItemServiceSupabase, 
+    private readonly tipoItemServiceSB: TipoItemServiceSupabase,
+    private fb: FormBuilder, 
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
@@ -88,6 +94,22 @@ export class ItensComponent implements AfterViewInit {
     });
 
     this.consultar(false);
+    this.carregarItens();
+    this.carregarTiposItem();
+  }
+
+  async carregarTiposItem(){
+    try {
+      this.tiposItem = await this.tipoItemServiceSB.listarTiposItens();
+      this.cdr.detectChanges();
+    } catch (err) {
+      console.error('Erro ao carregar tipos de item', err);
+    }
+  }
+
+  isOdd(element: any): boolean {
+    const index = this.dataSource.data.indexOf(element);
+    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
   seleciona(objeto: Item) {
@@ -107,7 +129,17 @@ export class ItensComponent implements AfterViewInit {
       this.filtro_traco = this.form.value.tracos;
     }
 
+    // this.carregarItens();
     this.consultarTodos(filtro);
+  }
+  
+  async carregarItens() {
+    try {
+      this.objetos = await this.itemServiceSB.listarItens();
+      this.numero_registros = this.objetos.length;
+    } catch (err) {
+      console.error('Erro ao carregar itens', err);
+    }
   }
 
   consultarTodos(filtro: string) {
@@ -207,8 +239,16 @@ export class ItensComponent implements AfterViewInit {
     return objeto.tipo === TipoItem.VESTUARIO;
   }
 
+  eAcessorio(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ACESSORIO;
+  }
+
   eEsoterico(objeto: Item): boolean {
     return objeto.tipo === TipoItem.ESOTERICO;
+  }
+
+  eEncanto(objeto: Item): boolean {
+    return objeto.tipo === TipoItem.ENCANTO;
   }
 
   eAlquimico(objeto: Item): boolean {

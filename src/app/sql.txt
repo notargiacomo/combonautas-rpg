@@ -1,0 +1,5 @@
+create policy "Public read on tb_item_municao"
+on public.tb_item_municao
+for select
+to anon
+using (true);
