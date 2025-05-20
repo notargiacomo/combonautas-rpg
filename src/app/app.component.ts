@@ -1,23 +1,21 @@
-import { Component, Inject, inject, NgZone, OnInit, PLATFORM_ID } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
-import { NgxLoaderIndicatorDirective } from 'ngx-loader-indicator';
-import { LoadingIndicatorComponent } from './conf/loading-indicator/loading-indicator.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { AuthService } from './service/supaservice/auth.service';
-import { User } from '@supabase/supabase-js';
 import { NgIf } from '@angular/common';
-import { MatDialog } from '@angular/material/dialog';
-import { MatFormField } from '@angular/material/form-field';
+import { Component, Inject, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
   FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialog } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormField } from '@angular/material/form-field';
+import { MatMenuModule } from '@angular/material/menu';
+import { Router, RouterOutlet } from '@angular/router';
+import { User } from '@supabase/supabase-js';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoadingIndicatorComponent } from './conf/loading-indicator/loading-indicator.component';
 
 @Component({
   selector: 'app-root',
@@ -31,7 +29,6 @@ import {
     LoadingIndicatorComponent,
     FooterComponent,
     NgIf,
-    MatFormField,
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,

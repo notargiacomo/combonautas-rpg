@@ -9,7 +9,7 @@ export class TipoItemServiceSupabase {
   constructor(private supabase: SupabaseService) {}
 
   async listarTiposItens() {
-    const { data, error } = await this.supabase.client
+    const { data, error } = await this.supabase.client!
       .from('tb_tipo_item')
       .select('*');
       
