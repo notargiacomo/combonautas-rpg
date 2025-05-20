@@ -16,27 +16,27 @@ export class AuthService {
     );
   }
 
-  async loginComGoogle() {
-    await this.supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: {
-      redirectTo: 'http://localhost:4200/'  // ou localhost em dev
-  }
-    });
-  }
+  // async loginComGoogle() {
+  //   await this.supabase.auth.signInWithOAuth({
+  //     provider: 'google',
+  //     options: {
+  //     redirectTo: 'http://localhost:4200/'  // ou localhost em dev
+  // }
+  //   });
+  // }
 
-  async logout() {
-    await this.supabase.auth.signOut();
-  }
+  // async logout() {
+  //   await this.supabase.auth.signOut();
+  // }
 
-  async getUser(): Promise<User | null> {
-    const { data } = await this.supabase.auth.getUser();
-    return data.user;
-  }
+  // async getUser(): Promise<User | null> {
+  //   const { data } = await this.supabase.auth.getUser();
+  //   return data.user;
+  // }
 
-  onAuthStateChanged(callback: (user: User | null) => void) {
-    this.supabase.auth.onAuthStateChange((_event, session) => {
-      callback(session?.user ?? null);
-    });
-  }
+  // onAuthStateChanged(callback: (user: User | null) => void) {
+  //   this.supabase.auth.onAuthStateChange((_event, session) => {
+  //     callback(session?.user ?? null);
+  //   });
+  // }
 }

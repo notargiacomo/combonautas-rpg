@@ -49,31 +49,28 @@ export class AppComponent implements OnInit {
   readonly dialog = inject(MatDialog);
   form!: FormGroup;
 
-  constructor(private readonly router: Router, private fb: FormBuilder) {}
+  constructor(private readonly router: Router, private fb: FormBuilder) {
+      this.form = this.fb.group({
+        login: [''],
+        senha: [''], // nunca recupere senha da sessão
+        mostrarCamposLogin: [false],
+        logado: [false],
+      });
+  }
 
   ngOnInit() {
-    const login = sessionStorage.getItem('login') || '';
-    const logado = sessionStorage.getItem('logado') === 'true';
-    const mostrarCamposLogin =
-      sessionStorage.getItem('mostrarCamposLogin') !== 'false';
-
-    if (logado) {
-      this.form = this.fb.group({
-        login: [login],
-        senha: [''], // nunca recupere senha da sessão
-        mostrarCamposLogin: [mostrarCamposLogin],
-        logado: [logado],
-      });
-    } else {
-      this.form = this.fb.group({
-        login: [],
-        senha: [],
-        mostrarCamposLogin: [],
-        logado: [],
-      });
-
-      this.form.get('mostrarCamposLogin')?.setValue(false);
-      this.form.get('logado')?.setValue(false);
+    if (typeof window !== 'undefined') {
+      const login = sessionStorage.getItem('login') || '';
+      const logado = sessionStorage.getItem('logado') === 'true';
+      const mostrarCamposLogin =
+        sessionStorage.getItem('mostrarCamposLogin') !== 'false';
+  
+        this.form = this.fb.group({
+          login: [login],
+          senha: [''], // nunca recupere senha da sessão
+          mostrarCamposLogin: [mostrarCamposLogin],
+          logado: [logado],
+        });
     }
   }
 
