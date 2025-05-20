@@ -1,4 +1,4 @@
-import { Component, inject, NgZone, OnInit } from '@angular/core';
+import { Component, Inject, inject, NgZone, OnInit, PLATFORM_ID } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
   readonly dialog = inject(MatDialog);
   form!: FormGroup;
 
-  constructor(private readonly router: Router, private fb: FormBuilder) {
+  constructor(private readonly router: Router, private fb: FormBuilder, @Inject(PLATFORM_ID) private platformId: Object) {
       this.form = this.fb.group({
         login: [''],
         senha: [''], // nunca recupere senha da sessão
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
       });
   }
 
-  ngOnInit() {
+  ngAfterViewInit(){
     if (typeof window !== 'undefined') {
       const login = sessionStorage.getItem('login') || '';
       const logado = sessionStorage.getItem('logado') === 'true';
@@ -72,6 +72,10 @@ export class AppComponent implements OnInit {
           logado: [logado],
         });
     }
+  }
+
+  ngOnInit() {
+
   }
 
   logar() {
