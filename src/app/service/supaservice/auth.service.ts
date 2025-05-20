@@ -6,14 +6,14 @@ import { User } from '@supabase/supabase-js';
   providedIn: 'root',
 })
 export class AuthService {
-  private supabase: SupabaseClient;
+  // private supabase: SupabaseClient;
   user: User | null | undefined;
 
   constructor() {
-    this.supabase = createClient(
-      'https://wayuqqjsfdlilckjgtfo.supabase.co',
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndheXVxcWpzZmRsaWxja2pndGZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NzUwOTI3MSwiZXhwIjoyMDYzMDg1MjcxfQ.rH2wFIzdK0eDqOvlXHBcdrIrWCnqTFy-CxWsChVA89U'
-    );
+    // this.supabase = createClient(
+    //   'https://wayuqqjsfdlilckjgtfo.supabase.co',
+    //   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndheXVxcWpzZmRsaWxja2pndGZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NzUwOTI3MSwiZXhwIjoyMDYzMDg1MjcxfQ.rH2wFIzdK0eDqOvlXHBcdrIrWCnqTFy-CxWsChVA89U'
+    // );
   }
 
   // async loginComGoogle() {
