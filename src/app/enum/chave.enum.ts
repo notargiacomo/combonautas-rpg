@@ -598,6 +598,7 @@ export enum Chave {
   ITEM_MAGICO_MENOR = "Item Mágico Menor",
   ITEM_MAGICO_MEDIO = "Item Mágico Médio", 
   ITEM_MAGICO_MAIOR = "Item Mágico Maior",
+  ITEM_LITURGICO = "Item Litúrgico",
   
   SOB_MEDIDA = 'SOB MEDIDA',
 
