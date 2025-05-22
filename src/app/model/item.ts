@@ -7,6 +7,7 @@ export interface Item {
     id_prerequisitos?: number;
     tipo:string;
     nome?:string;
+    deus?:string;
     descricao?:string;
     descricao_extra?:string;
     preco?:number;
