@@ -597,6 +597,31 @@ tr.element-row:not(.example-expanded-row):active {
   background-color: white !important;
 }
 
-.mdc-text-field--filled:not(.mdc-text-field--disabled) {
-  background-color: white !important;
+.select-formulario-edicao {
+  .mat-mdc-select {
+    background-color: white !important;
+  }
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 98% !important;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
+
+.text-field-formulario-edicao {
+  .mdc-text-field {
+    background-color: white !important;
+    
+  }
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.text-area-formulario-edicao {
+  background-color: white !important;
+  width: 100% !important;
+}
+
+ 

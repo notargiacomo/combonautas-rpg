@@ -25,6 +25,10 @@ import { Item } from '../../model/item';
 import { ItemService } from '../../service/item.service';
 import { ItemServiceSupabase } from '../../service/supaservice/item.service.supabase';
 import { TipoItemServiceSupabase } from '../../service/supaservice/tipo.item.service.supabase';
+import { ReferenciaServiceSupabase } from '../../service/supaservice/referencia.service.supabase';
+import { ItemSB } from '../../model/supamodel/item.sb';
+import { RegraServiceSupabase } from '../../service/supaservice/regra.service.supabase';
+import { RegraItemSB } from '../../model/supamodel/regra.item.sb';
 
 @Component({
   selector: 'app-itens',
@@ -57,6 +61,7 @@ export class ItensComponent implements AfterViewInit {
   form!: FormGroup;
   objetos!: Item[];
   objeto: Item | undefined;
+  itemSB: ItemSB = {};
   tiposItem: any[] = [];
   chaves: Chave[] = [];
 
@@ -73,10 +78,18 @@ export class ItensComponent implements AfterViewInit {
   @ViewChild(MatSort)
   sort!: MatSort;
 
+  edicao: boolean = false;
+  referencia!: {id:number;nome:string};
+  referencias: any[] = [];
+  regras: any[] = [];
+  regrasItem: RegraItemSB[] = [];
+
   constructor(
     private readonly service: ItemService, 
     private readonly itemServiceSB: ItemServiceSupabase, 
     private readonly tipoItemServiceSB: TipoItemServiceSupabase,
+    private readonly referenciaServiceSB: ReferenciaServiceSupabase,
+    private readonly regraServiceSB: RegraServiceSupabase,
     private fb: FormBuilder, 
     private cdr: ChangeDetectorRef
   ) {}
@@ -87,21 +100,65 @@ export class ItensComponent implements AfterViewInit {
   }
 
   ngOnInit() {
+    const logado = sessionStorage.getItem('logado') || '';
+
+    if (logado) {
+      this.edicao = true;
+      const login = sessionStorage.getItem('login') || '';
+      console.log('Usuário logado:', login);
+    } else {
+      console.log('Usuário não está logado');
+    }
+
     this.form = this.fb.group({
+      id: [],
       nome: [],
+      descricao: [],
       chave: [],
+      idTipo: [],
       tipo: [],
+      tipoSb: [],
+      idReferencia: [],
+      referencia: [],
+      idRegra: [],
+      regra: [],
+      caminhoImagem: [],
+      paginas: []
     });
 
     this.consultar(false);
     this.carregarItens();
-    this.carregarTiposItem();
+    this.carregarTabelasDominio();
   }
 
-  async carregarTiposItem(){
+  async carregarTabelasDominio(){
     try {
       this.tiposItem = await this.tipoItemServiceSB.listarTiposItens();
-      this.cdr.detectChanges();
+      this.tiposItem = this.ordenacaoAlfabetica(this.tiposItem);
+
+      this.referencias = await this.referenciaServiceSB.listarReferencias();
+      this.referencias = this.ordenacaoAlfabetica(this.referencias);
+
+      this.regras = await this.regraServiceSB.listarRegras();
+      this.regras = this.ordenacaoAlfabetica(this.regras);
+    } catch (err) {
+      console.error('Erro ao carregar tipos de item', err);
+    }
+  }
+
+  ordenacaoAlfabetica(lista: any[]){
+    lista.sort((a, b) => {
+        let nome_a = a.nome ? a.nome : 'a';
+        let nome_b = b.nome ? b.nome : 'b';
+        return nome_a.localeCompare(nome_b);
+    });
+    return lista;
+  }
+
+  async consultarItemPorNome(nome: string){
+    try {
+      this.itemSB = await this.itemServiceSB.consultarPorNome(nome);
+      this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(this.itemSB.id!);
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -113,14 +170,61 @@ export class ItensComponent implements AfterViewInit {
   }
 
   seleciona(objeto: Item) {
-    this.objeto = objeto;
+    this.objeto = this.objetos.find(i => i.nome === objeto.nome);
+    this.consultarItemPorNome(objeto.nome!);
+    if(this.itemSB?.id!) {
+      this.form.get('id')?.setValue(this.itemSB.id);
+      this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
+      this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
+      this.cdr.detectChanges();
+      this.form.get('nome')?.setValue(this.itemSB.nome);
+      this.form.get('descricao')?.setValue(this.itemSB.descricao);
+      this.form.get('paginas')?.setValue(this.itemSB.paginas);
+    } else {
+      this.form.get('nome')?.setValue(objeto.nome);
+      this.form.get('tipoSb')?.setValue(objeto.tipo);
+      this.form.get('descricao')?.setValue(objeto.descricao);
+      this.form.get('paginas')?.setValue(objeto.paginas);
+    }
+
+  }
+
+  async  salvar(){
+    this.itemSB!.id_tipo = this.form.get('idTipo')?.value;
+    this.itemSB!.id_referencia = this.form.get('idReferencia')?.value;
+    this.itemSB!.nome = this.form.get('nome')?.value;
+    this.itemSB!.descricao = this.form.get('descricao')?.value;
+    this.itemSB!.paginas = this.form.get('paginas')?.value;
+    this.itemSB!.caminho_imagem = this.objeto?.imagem;
+    const id = this.form.get('id')?.value
+
+    try {
+      let resultado = null;
+      if(id) {
+        resultado = await this.itemServiceSB.atualizar(id, this.itemSB);        
+      } else {
+        resultado = await this.itemServiceSB.inserir(this.itemSB);
+      }
+
+      const idItem = this.form.get('id')?.value;
+      const ri: {id_item:number; id_regra:number;}[] = []
+      this.regrasItem.forEach((regraItem) => {
+        ri.push({id_item: idItem, id_regra: regraItem.id_regra! })
+      });
+
+      await this.regraServiceSB.inserirRegras(idItem, ri);
+
+      alert(this.itemSB!.nome + ' salvo no Banco com sucesso');
+      console.log('Retorno do Supabase:', resultado);
+    } catch (err) {
+      console.error('Erro ao inserir:', err);
+    }
   }
 
   consultar(selecaoChave: boolean): void {
     this.selecaoChave = selecaoChave;
     let filtro = { ...this.form.value };
     if (filtro.nome) {
-      // regex - in-memory-web-api
       filtro.nome = '^' + filtro.nome;
     }
 
@@ -128,8 +232,6 @@ export class ItensComponent implements AfterViewInit {
       filtro.tracos = '';
       this.filtro_traco = this.form.value.tracos;
     }
-
-    // this.carregarItens();
     this.consultarTodos(filtro);
   }
   
@@ -175,6 +277,25 @@ export class ItensComponent implements AfterViewInit {
         return a.localeCompare(b);
       });
     }
+  }
+
+  adicionarRegra(regra: any){
+    const regraParaAdicionar = this.regras.find(r  => r.id === regra.value)
+    if(!this.regrasItem.find(r  => r.id === regraParaAdicionar.id)){
+      let regra: RegraItemSB = {
+        id_item: this.form.get('id')?.value,
+        id_regra: regraParaAdicionar.id,
+        tb_regra: {
+        nome: regraParaAdicionar.nome
+        }
+      } 
+      this.regrasItem.push(regra);
+    }
+    this.form.get('idRegra')?.setValue(null)
+  }
+
+  removerRegra(regra: any){
+    this.regrasItem = this.regrasItem.filter(r  => r.id_regra !== regra.id_regra);
   }
 
   consultarTracosTodosItens(itens: Item[]): Item[] {
