@@ -281,7 +281,7 @@ export class ItensComponent implements AfterViewInit {
 
   adicionarRegra(regra: any){
     const regraParaAdicionar = this.regras.find(r  => r.id === regra.value)
-    if(!this.regrasItem.find(r  => r.id === regraParaAdicionar.id)){
+    if(!this.regrasItem.find(r  => r.id_regra === regraParaAdicionar.id)){
       let regra: RegraItemSB = {
         id_item: this.form.get('id')?.value,
         id_regra: regraParaAdicionar.id,
