@@ -110,7 +110,7 @@ export const condicoes = [
 
   {
     id: 17,
-    nome: 'ESMOREÇIDO',
+    nome: 'ESMORECIDO',
     descricao:
       'O personagem sofre –5 em testes de Inteligência, Sabedoria e Carisma e de perícias baseadas nesses atributos.',
     tipo: TipoCondicao.MENTAL,

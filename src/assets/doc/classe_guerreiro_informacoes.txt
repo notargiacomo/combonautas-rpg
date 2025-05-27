@@ -7,6 +7,7 @@
 <p><b>Distante (+1 PM).</b> Aumenta o alcance em um passo (de corpo a corpo para curto, médio e longo). Outras características não mudam (um ataque corpo a corpo com alcance curto continua usando Luta e somando sua Força no dano).</p>
 <p><b>Elemental (+2 PM).</b> Causa +2d6 pontos de dano de ácido, eletricidade, fogo ou frio. Você pode escolher este efeito mais vezes para aumentar o dano em +2d6 (do mesmo tipo ou de outro), por +2 PM a cada vez. <i><b>e</b></i></p>
 <p><b>Impactante (+1 PM).</b> Empurra o alvo 1,5m para cada 10 pontos de dano causado (arredondado para baixo). Por exemplo, 3m para 22 pontos de dano. Letal (+2 PM). Aumenta a margem de ameaça em +2. Você pode escolher este efeito duas vezes para aumentar a margem de ameaça em +5.</p>
+<p><b>Letal (+2 PM).</b> Aumenta a margem de ameaça em +2. Você pode escolher este efeito duas vezes para aumentar a margem de ameaça em +5</p>
 <p><b>Penetrante (+1 PM).</b> Ignora 10 pontos de RD.</p>
 <p><b>Preciso (+1 PM).</b> Quando faz o teste de ataque, você rola dois dados e usa o melhor resultado.</p>
 <p><b>Qualquer Arma (+1 PM).</b> Você pode usar seu Golpe Pessoal com qualquer tipo de arma. Ricocheteante (+1 PM). A arma volta pra você após o ataque. Só pode ser usado com armas de arremesso.</p>

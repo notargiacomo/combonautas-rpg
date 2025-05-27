@@ -12,13 +12,13 @@
           <div class="row g-3">
             <div class="col-sm-3 mt-4">
               <mat-form-field class="form-field">
-                <mat-label>Digite o nome do Item</mat-label>
+                <mat-label>Digite o Equipamento</mat-label>
                 <input formControlName="nome" matInput type="text" (keyup)="consultar(false)" />
               </mat-form-field>
             </div>
             <div class="col-sm-3 mt-4">
             <mat-form-field>
-              <mat-label>Tipo de Item</mat-label>
+              <mat-label>Tipo de Equipamento</mat-label>
               <mat-select formControlName="tipo" (selectionChange)="consultar(false)">
                 <mat-option *ngFor="let tipo of tiposItem" [value]="tipo.id">
                   {{ tipo.nome }}
@@ -28,7 +28,7 @@
             </div>
             <div class="col-sm-6 mt-4">
               <mat-form-field class="select-dobrado">
-                <mat-label>Chave</mat-label>
+                <mat-label>Regra</mat-label>
                 <mat-select formControlName="chave" (selectionChange)="consultar(true)">
                   @for (chave of chaves; track chave) {
                   <mat-option [value]="chave">{{
