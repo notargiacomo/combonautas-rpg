@@ -3,6 +3,6 @@ export interface RegraItemSB {
       id_item?: number;
       id_regra?: number;
       tb_regra?: {
-            nome: string;
+            nome?: string;
       };
 }

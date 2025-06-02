@@ -9,7 +9,7 @@ export class RegraServiceSupabase {
 
   constructor(private supabase: SupabaseService) {}
 
-  async listarRegras() {
+  async listar() {
     const { data, error } = await this.supabase.client!
       .from('tb_regra')
       .select('*');

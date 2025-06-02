@@ -1,5 +1,10 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, ChangeDetectorRef, Component, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  ViewChild,
+} from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -29,6 +34,15 @@ import { ReferenciaServiceSupabase } from '../../service/supaservice/referencia.
 import { ItemSB } from '../../model/supamodel/item.sb';
 import { RegraServiceSupabase } from '../../service/supaservice/regra.service.supabase';
 import { RegraItemSB } from '../../model/supamodel/regra.item.sb';
+import { TipoDanoServiceSupabase } from '../../service/supaservice/tipo.dano.service.supabase';
+import { AlcanceServiceSupabase } from '../../service/supaservice/alcance.service.supabase';
+import { TipoDanoSB } from '../../model/supamodel/tipo.dano.sb';
+import { AlcanceSB } from '../../model/supamodel/alcance.sb';
+import { TipoDanoItemSB } from '../../model/supamodel/tipo.dano.item.sb';
+import { PericiaItemSB } from '../../model/supamodel/pericia.item.sb';
+import { PericiasService } from '../../service/pericia.service';
+import { PericiaServiceSupabase } from '../../service/supaservice/pericia.service.supabase';
+import { PericiaSB } from '../../model/supamodel/pericia.sb';
 
 @Component({
   selector: 'app-itens',
@@ -61,7 +75,7 @@ export class ItensComponent implements AfterViewInit {
   form!: FormGroup;
   objetos!: Item[];
   objeto: Item | undefined;
-  itemSB: ItemSB = {};
+  itemSB!: ItemSB;
   tiposItem: any[] = [];
   chaves: Chave[] = [];
 
@@ -79,18 +93,27 @@ export class ItensComponent implements AfterViewInit {
   sort!: MatSort;
 
   edicao: boolean = false;
-  referencia!: {id:number;nome:string};
+  referencia!: { id: number; nome: string };
   referencias: any[] = [];
   regras: any[] = [];
   regrasItem: RegraItemSB[] = [];
+  pericias: PericiaSB[] = [];
+  periciasItem: PericiaItemSB[] = [];
+  alcances: AlcanceSB[] = [];
+  tiposDano: TipoDanoSB[] = [];
+  tiposDanoItem: TipoDanoItemSB[] = [];
+  tempos: any[] = [8, 40, 160];
 
   constructor(
-    private readonly service: ItemService, 
-    private readonly itemServiceSB: ItemServiceSupabase, 
+    private readonly service: ItemService,
+    private readonly itemServiceSB: ItemServiceSupabase,
     private readonly tipoItemServiceSB: TipoItemServiceSupabase,
     private readonly referenciaServiceSB: ReferenciaServiceSupabase,
     private readonly regraServiceSB: RegraServiceSupabase,
-    private fb: FormBuilder, 
+    private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
+    private readonly alcanceServiceSB: AlcanceServiceSupabase,
+    private readonly periciaServiceSB: PericiaServiceSupabase,
+    private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}
 
@@ -100,6 +123,7 @@ export class ItensComponent implements AfterViewInit {
   }
 
   ngOnInit() {
+    this.itemSB = new ItemSB(this.cdr);
     const logado = sessionStorage.getItem('logado') || '';
 
     if (logado) {
@@ -122,43 +146,71 @@ export class ItensComponent implements AfterViewInit {
       referencia: [],
       idRegra: [],
       regra: [],
+      idPericia: [],
+      pericia: [],
       caminhoImagem: [],
-      paginas: []
+      paginas: [],
+      dano: [],
+      margem: [],
+      multiplicador: [],
+      idAlcance: [],
+      idTipoDano: [],
+      tipoDano: [],
+      espaco: [],
+      rd: [],
+      pv: [],
+      preco: [],
+      cd: [],
+      tempo: [],
     });
 
     this.consultar(false);
     this.carregarItens();
     this.carregarTabelasDominio();
+
+    this.pericias.sort((a, b) => {
+      let nome_a = a ? a.nome : 'a';
+      let nome_b = b ? b.nome : 'b';
+      return nome_a!.localeCompare(nome_b!);
+    });
   }
 
-  async carregarTabelasDominio(){
+  async carregarTabelasDominio() {
     try {
       this.tiposItem = await this.tipoItemServiceSB.listarTiposItens();
       this.tiposItem = this.ordenacaoAlfabetica(this.tiposItem);
 
-      this.referencias = await this.referenciaServiceSB.listarReferencias();
+      this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
-      this.regras = await this.regraServiceSB.listarRegras();
+      this.regras = await this.regraServiceSB.listar();
       this.regras = this.ordenacaoAlfabetica(this.regras);
+
+      this.alcances = await this.alcanceServiceSB.listar();
+
+      this.pericias = await this.periciaServiceSB.listar();
+
+      this.tiposDano = await this.tiposDanoServiceSB.listar();
+      this.tiposDano = this.ordenacaoAlfabetica(this.tiposDano);
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
   }
 
-  ordenacaoAlfabetica(lista: any[]){
+  ordenacaoAlfabetica(lista: any[]) {
     lista.sort((a, b) => {
-        let nome_a = a.nome ? a.nome : 'a';
-        let nome_b = b.nome ? b.nome : 'b';
-        return nome_a.localeCompare(nome_b);
+      let nome_a = a.nome ? a.nome : 'a';
+      let nome_b = b.nome ? b.nome : 'b';
+      return nome_a.localeCompare(nome_b);
     });
     return lista;
   }
 
-  async consultarItemPorNome(nome: string){
+  async consultarItemPorNome(nome: string) {
     try {
       this.itemSB = await this.itemServiceSB.consultarPorNome(nome);
       this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(this.itemSB.id!);
+      this.tiposDanoItem = await this.tiposDanoServiceSB.recuperaTipoDanoDoItem(this.itemSB.id!);
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -170,13 +222,12 @@ export class ItensComponent implements AfterViewInit {
   }
 
   seleciona(objeto: Item) {
-    this.objeto = this.objetos.find(i => i.nome === objeto.nome);
+    this.objeto = this.objetos.find((i) => i.nome === objeto.nome);
     this.consultarItemPorNome(objeto.nome!);
-    if(this.itemSB?.id!) {
+    if (this.itemSB?.id!) {
       this.form.get('id')?.setValue(this.itemSB.id);
       this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
       this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
-      this.cdr.detectChanges();
       this.form.get('nome')?.setValue(this.itemSB.nome);
       this.form.get('descricao')?.setValue(this.itemSB.descricao);
       this.form.get('paginas')?.setValue(this.itemSB.paginas);
@@ -186,30 +237,73 @@ export class ItensComponent implements AfterViewInit {
       this.form.get('descricao')?.setValue(objeto.descricao);
       this.form.get('paginas')?.setValue(objeto.paginas);
     }
-
+    this.selecionaArma(objeto);
+    this.selecionaManutencao(objeto);
+    this.selecionaResistencia(objeto);
+    this.cdr.detectChanges();
   }
 
-  async  salvar(){
+  selecionaManutencao(objeto: Item) {
+    if (this.itemSB?.itemManutencao?.id) {
+      this.form.get('preco')?.setValue(this.itemSB.itemManutencao.preco);
+      this.form.get('cd')?.setValue(this.itemSB.itemManutencao.cd_fabricacao);
+      this.form.get('tempo')?.setValue(this.itemSB.itemManutencao.tempo_fabricacao);
+      this.form.get('pericia')?.setValue(this.itemSB.itemManutencao.pericia_manutencao);
+    } else {
+      this.form.get('preco')?.setValue(objeto.preco);
+      this.form.get('cd')?.setValue(objeto.cd_fabricacao);
+      this.form.get('tempo')?.setValue(objeto.tempo_fabricacao_em_horas);
+      this.form.get('pericia')?.setValue(objeto.pericia);
+    }
+  }
+
+  selecionaResistencia(objeto: Item){
+    if (this.itemSB?.itemResistencia?.id) {
+      this.form.get('rd')?.setValue(this.itemSB.itemResistencia?.reducao_dano);
+      this.form.get('pv')?.setValue(this.itemSB.itemResistencia?.pontos_vida);
+    } else {
+      this.form.get('rd')?.setValue(objeto.rd);
+      this.form.get('pv')?.setValue(objeto.pv);
+    }
+  }
+
+  selecionaArma(objeto: Item) {
+    if (this.itemSB?.itemArma?.id) {
+      this.form.get('dano')?.setValue(this.itemSB.itemArma.dano);
+      this.form.get('margem')?.setValue(this.itemSB.itemArma.margem_ameaca);
+      this.form.get('multiplicador')?.setValue(this.itemSB.itemArma.multiplicador_critico);
+      this.form.get('idAlcance')?.setValue(this.itemSB.itemArma.alcance?.id);
+      this.form.get('idTipoDano')?.setValue(this.itemSB.itemArma.tipoDano?.id);
+    } else {
+      this.form.get('dano')?.setValue(objeto.dano);
+      this.form.get('margem')?.setValue(objeto.margem_ameaca);
+      this.form.get('multiplicador')?.setValue(objeto.multiplicador_critico);
+      this.form.get('idAlcance')?.setValue(this.alcances.find( (i) => i.medida === objeto?.alcance || (objeto?.alcance === 0  && i.medida === 1.5) )?.id);
+      this.form.get('espaco')?.setValue(objeto.espaco);
+    }
+  }
+
+  async salvar() {
     this.itemSB!.id_tipo = this.form.get('idTipo')?.value;
     this.itemSB!.id_referencia = this.form.get('idReferencia')?.value;
     this.itemSB!.nome = this.form.get('nome')?.value;
     this.itemSB!.descricao = this.form.get('descricao')?.value;
     this.itemSB!.paginas = this.form.get('paginas')?.value;
     this.itemSB!.caminho_imagem = this.objeto?.imagem;
-    const id = this.form.get('id')?.value
+    const id = this.form.get('id')?.value;
 
     try {
       let resultado = null;
-      if(id) {
-        resultado = await this.itemServiceSB.atualizar(id, this.itemSB);        
+      if (id) {
+        resultado = await this.itemServiceSB.atualizar(id, this.itemSB);
       } else {
         resultado = await this.itemServiceSB.inserir(this.itemSB);
       }
 
       const idItem = this.form.get('id')?.value;
-      const ri: {id_item:number; id_regra:number;}[] = []
+      const ri: { id_item: number; id_regra: number }[] = [];
       this.regrasItem.forEach((regraItem) => {
-        ri.push({id_item: idItem, id_regra: regraItem.id_regra! })
+        ri.push({ id_item: idItem, id_regra: regraItem.id_regra! });
       });
 
       await this.regraServiceSB.inserirRegras(idItem, ri);
@@ -234,7 +328,7 @@ export class ItensComponent implements AfterViewInit {
     }
     this.consultarTodos(filtro);
   }
-  
+
   async carregarItens() {
     try {
       this.objetos = await this.itemServiceSB.listarItens();
@@ -251,7 +345,6 @@ export class ItensComponent implements AfterViewInit {
           let nome_a = a.nome ? a.nome : 'a';
           let nome_b = b.nome ? b.nome : 'b';
           return nome_a.localeCompare(nome_b);
-          
         });
         this.objetos = response;
         this.numero_registros = response.length;
@@ -279,23 +372,68 @@ export class ItensComponent implements AfterViewInit {
     }
   }
 
-  adicionarRegra(regra: any){
-    const regraParaAdicionar = this.regras.find(r  => r.id === regra.value)
-    if(!this.regrasItem.find(r  => r.id_regra === regraParaAdicionar.id)){
+  adicionarPericia(pericia: any) {
+    const periciaParaAdicionar = this.pericias.find((r) => r.id === pericia.value);
+    if (!this.periciasItem.find((r) => r.id_pericia === periciaParaAdicionar?.id)) {
+      let pericia: PericiaItemSB = {
+        id_item: this.form.get('id')?.value,
+        id_pericia: periciaParaAdicionar?.id,
+        tb_pericia: {
+          nome: periciaParaAdicionar?.nome,
+        },
+      };
+      this.periciasItem.push(pericia);
+    }
+    this.form.get('idPericia')?.setValue(null);
+  }
+
+
+  adicionarRegra(regra: any) {
+    const regraParaAdicionar = this.regras.find((r) => r.id === regra.value);
+    if (!this.regrasItem.find((r) => r.id_regra === regraParaAdicionar.id)) {
       let regra: RegraItemSB = {
         id_item: this.form.get('id')?.value,
         id_regra: regraParaAdicionar.id,
         tb_regra: {
-        nome: regraParaAdicionar.nome
-        }
-      } 
+          nome: regraParaAdicionar.nome,
+        },
+      };
       this.regrasItem.push(regra);
     }
-    this.form.get('idRegra')?.setValue(null)
+    this.form.get('idRegra')?.setValue(null);
   }
 
-  removerRegra(regra: any){
-    this.regrasItem = this.regrasItem.filter(r  => r.id_regra !== regra.id_regra);
+  adicionarTipoDano(tipoDano: any) {
+    const tipoDanoParaAdicionar = this.tiposDano.find((r) => r.id === tipoDano.value);
+    if (!this.tiposDanoItem.find((r) => r.id_tipo === tipoDanoParaAdicionar?.id)) {
+      let tipoDano: TipoDanoItemSB = {
+        id_item: this.form.get('id')?.value,
+        id_tipo: tipoDanoParaAdicionar?.id,
+        tb_tipo_dano: {
+          nome: tipoDanoParaAdicionar?.nome,
+        },
+      };
+      this.tiposDanoItem.push(tipoDano);
+    }
+    this.form.get('idTipoDano')?.setValue(null);
+  }
+
+  removerRegra(regra: any) {
+    this.regrasItem = this.regrasItem.filter(
+      (r) => r.id_regra !== regra.id_regra
+    );
+  }
+
+  removerTipoDano(tipoDanoItem: any) {
+    this.tiposDanoItem = this.tiposDanoItem.filter(
+      (r) => r.id_tipo !== tipoDanoItem.id_tipo
+    );
+  }
+
+  removerPericia(periciaItem: any) {
+    this.periciasItem = this.periciasItem.filter(
+      (r) => r.id_pericia !== periciaItem.id_pericia
+    );
   }
 
   consultarTracosTodosItens(itens: Item[]): Item[] {
@@ -399,6 +537,4 @@ export class ItensComponent implements AfterViewInit {
   eMaterialEspecial(objeto: Item): boolean {
     return objeto.tipo === TipoItem.MATERIAL_ESPECIAL;
   }
-
-
 }

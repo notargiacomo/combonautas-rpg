@@ -4,13 +4,13 @@ import { SupabaseService } from './supabase.service';
 @Injectable({
   providedIn: 'root'
 })
-export class ReferenciaServiceSupabase {
+export class AlcanceServiceSupabase {
 
   constructor(private supabase: SupabaseService) {}
 
   async listar() {
     const { data, error } = await this.supabase.client!
-      .from('tb_referencia')
+      .from('tb_alcance')
       .select('*');
       
     if (error) {
