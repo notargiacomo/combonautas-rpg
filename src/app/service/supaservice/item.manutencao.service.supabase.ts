@@ -26,14 +26,16 @@ export class ItemManutencaoServiceSupabase {
     const { data, error } = await this.supabase.client!
       .from('tb_item_manutencao')
       .select('*')
-      .eq('id', id);
+      .eq('id', id)
+      .limit(1);
     
     if (error) {
       console.error('Erro ao listar itens:', error);
       throw error;
     }
 
-    return data;
+    const item = data[0] ?? null;
+    return item;
   }
 
   async inserir(item: any) {

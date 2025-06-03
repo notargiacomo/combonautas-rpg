@@ -79,11 +79,7 @@ export class ItensComponent implements AfterViewInit {
 
   form!: FormGroup;
   objetos!: Item[];
-  objeto: Item | undefined;
-  itemSB!: ItemSB;
-  itemArma?: ItemArmaSB;
-  itemResistencia?: ItemResistenciaSB;
-  itemManutencao?: ItemManutencaoSB;
+
   tiposItem: any[] = [];
   chaves: Chave[] = [];
 
@@ -101,6 +97,12 @@ export class ItensComponent implements AfterViewInit {
   sort!: MatSort;
 
   edicao: boolean = false;
+
+  objeto: Item | undefined;
+  itemSB?: ItemSB;
+  itemArma?: ItemArmaSB;
+  itemResistencia?: ItemResistenciaSB;
+  itemManutencao?: ItemManutencaoSB;
   referencia!: { id: number; nome: string };
   referencias: any[] = [];
   regras: any[] = [];
@@ -224,15 +226,11 @@ export class ItensComponent implements AfterViewInit {
   async consultarItemPorNome(nome: string) {
     try {
       this.itemSB = await this.itemServiceSB.consultarPorNome(nome);
-      this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(
-        this.itemSB.id!
-      );
-      this.tiposDanoItem = await this.tiposDanoServiceSB.recuperaTipoDanoDoItem(
-        this.itemSB.id!
-      );
-      this.periciasItem = await this.periciaServiceSB.recuperaPericiaItem(
-        this.itemSB.id!
-      );
+      if(this.itemSB){
+        this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(this.itemSB.id!);
+        this.tiposDanoItem = await this.tiposDanoServiceSB.recuperaTipoDanoDoItem(this.itemSB.id!);
+        this.periciasItem = await this.periciaServiceSB.recuperaPericiaItem(this.itemSB.id!);
+      }
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -243,7 +241,21 @@ export class ItensComponent implements AfterViewInit {
     return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
+  limparSelecao(){
+    this.form.reset();
+    this.objeto = undefined;
+    this.itemSB = undefined;
+    this.itemArma = undefined;
+    this.itemResistencia = undefined;
+    this.itemManutencao = undefined;
+    this.regrasItem = [];
+    this.periciasItem= [];
+    this.tiposDanoItem = [];
+  }
+
   seleciona(objeto: Item) {
+    this.limparSelecao();
+
     this.consultarItemPorNome(objeto.nome!);
     this.objeto = this.objetos.find((i) => i.nome === objeto.nome);
     setTimeout(() => {
@@ -260,14 +272,20 @@ export class ItensComponent implements AfterViewInit {
         this.form.get('descricao')?.setValue(objeto.descricao);
         this.form.get('paginas')?.setValue(objeto.paginas);
       }
+      this.selecionaArma(objeto);
+      this.selecionaManutencao(objeto);
+      this.selecionaResistencia(objeto);
     }, 1000);
-    this.selecionaArma(objeto);
-    this.selecionaManutencao(objeto);
-    this.selecionaResistencia(objeto);
     this.cdr.detectChanges();
   }
 
-  selecionaManutencao(objeto: Item) {
+  async selecionaManutencao(objeto: Item) {
+    try {
+      this.itemManutencao = await this.itemManutencaoSB.consultarPorId(this.form.get('id')?.value);
+    } catch (err) {
+      console.error('Erro ao carregar Item Arma', err);
+    }
+
     if (this.itemManutencao?.id) {
       this.form.get('preco')?.setValue(this.itemManutencao.preco);
       this.form.get('cd')?.setValue(this.itemManutencao.cd_fabricacao);
@@ -276,7 +294,6 @@ export class ItensComponent implements AfterViewInit {
       this.form.get('preco')?.setValue(objeto.preco);
       this.form.get('cd')?.setValue(objeto.cd_fabricacao);
       this.form.get('tempo')?.setValue(objeto.tempo_fabricacao_em_horas);
-      this.form.get('pericia')?.setValue(objeto.pericia);
     }
   }
 
@@ -290,13 +307,19 @@ export class ItensComponent implements AfterViewInit {
     }
   }
 
-  selecionaArma(objeto: Item) {
+  async selecionaArma(objeto: Item) {
+    try {
+      this.itemArma = await this.itemArmaSB.consultarPorId(this.form.get('id')?.value);
+    } catch (err) {
+      console.error('Erro ao carregar Item Arma', err);
+    }
+
     if (this.itemArma?.id) {
       this.form.get('dano')?.setValue(this.itemArma.dano);
       this.form.get('margem')?.setValue(this.itemArma.margem_ameaca);
-      this.form
-        .get('multiplicador')
-        ?.setValue(this.itemArma.multiplicador_critico);
+      this.form.get('multiplicador')?.setValue(this.itemArma.multiplicador_critico);
+      this.form.get('espaco')?.setValue(this.itemArma.espaco);
+      this.form.get('idAlcance')?.setValue(this.alcances.find((i) => i.id === this.itemArma?.id_alcance)?.id);
     } else {
       this.form.get('dano')?.setValue(objeto.dano);
       this.form.get('margem')?.setValue(objeto.margem_ameaca);
@@ -352,7 +375,7 @@ export class ItensComponent implements AfterViewInit {
       }
 
       const itemResistencia = await this.itemResistenciaSB.consultarPorId(id);
-      if (itemResistencia.length > 0) {
+      if (itemResistencia) {
         await this.itemResistenciaSB.atualizar(id, this.itemResistencia);
       } else {
         this.itemResistencia.id = id;
@@ -360,7 +383,7 @@ export class ItensComponent implements AfterViewInit {
       }
 
       const itemManutencao = await this.itemManutencaoSB.consultarPorId(id);
-      if (itemManutencao.length > 0) {
+      if (itemManutencao) {
         await this.itemManutencaoSB.atualizar(id, this.itemManutencao);
       } else {
         this.itemManutencao.id = id;
@@ -368,7 +391,7 @@ export class ItensComponent implements AfterViewInit {
       }
 
       const itemArma = await this.itemArmaSB.consultarPorId(id);
-      if (itemArma.length > 0) {
+      if (itemArma) {
         this.itemArma.id_item_manutencao = id;
         this.itemArma.id_item_resistencia = id;
         await this.itemArmaSB.atualizar(id, this.itemArma);

@@ -1,5 +1,5 @@
 export enum Referencia {
-    BASICO = "Tormenta 20 Jogo do Ano",
+    BASICO = "Tormenta 20 - Jogo do Ano",
     AMEACAS = "Ameaças de Arton",
     ATLAS = "Atlas de Arton",
     DEUSES = "Deuses de Arton",
