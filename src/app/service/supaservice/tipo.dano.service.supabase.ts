@@ -21,7 +21,7 @@ export class TipoDanoServiceSupabase {
     return data;
   }
 
-  async inserirDano(idItem: any, tipoDanoItem: TipoDanoItemSB[]) {
+  async inserirDanos(idItem: any, tipoDanoItem: TipoDanoItemSB[]) {
   
       const tipoItemBanco = await this.recuperaTipoDanoDoItem(idItem);
   

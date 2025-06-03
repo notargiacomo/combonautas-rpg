@@ -7,6 +7,8 @@ export interface ItemArmaSB {
       dano?: string;
       multiplicador_critico?: number;
       margem_ameaca?: number;
-      alcance?: AlcanceSB;
-      tipoDano?: TipoDanoSB
+      espaco?: number;
+      id_alcance?: number;
+      id_item_manutencao?: number;
+      id_item_resistencia?: number;
 }

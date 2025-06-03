@@ -11,9 +11,7 @@ export class ItemServiceSupabase {
 
   constructor(
     private supabase: SupabaseService,
-    private itemManutencaoSB: ItemManutencaoServiceSupabase,
-    private itemArmaSB: ItemArmaServiceSupabase,
-    private itemResistenciaSB: ItemResistenciaServiceSupabase,
+
   ) {}
 
   async listarItens() {
@@ -31,10 +29,7 @@ export class ItemServiceSupabase {
   async consultarPorId(id: number) {
     const { data, error } = await this.supabase.client!
       .from('tb_item')
-      .select(`*, 
-        tb_item_arma(dano, multiplicador_critico, margem_ameaca, alcance_metros), 
-        tb_item_manutencao(preco, cd_fabricacao, cd_identificar_item, tempo_fabricacao_em_horas, pericia_manutencao, custo_permanente_pontos_mana),
-        tb_item_resistencia(reducao_dano, pontos_vida) `)
+      .select(`*`)
       .eq('id', id);
     if (error) {
       console.error('Erro ao listar itens:', error);
@@ -47,10 +42,7 @@ export class ItemServiceSupabase {
   async consultarPorNome(nome: string) {
     const { data, error } = await this.supabase.client!
       .from('tb_item')
-      .select(`*, 
-        tb_item_arma(dano, multiplicador_critico, margem_ameaca, alcance_metros), 
-        tb_item_manutencao(preco, cd_fabricacao, cd_identificar_item, tempo_fabricacao_em_horas, pericia_manutencao, custo_permanente_pontos_mana),
-        tb_item_resistencia(reducao_dano, pontos_vida) `)
+      .select(`*`)
       .eq('nome', nome)
       .limit(1);
     
@@ -66,11 +58,6 @@ export class ItemServiceSupabase {
     const { data, error } = await this.supabase.client!
       .from('tb_item')
       .insert([item]);
-    
-    await this.itemArmaSB.inserir(item.itemArma);
-    await this.itemResistenciaSB.inserir(item.itemResistencia);   
-    await this.itemManutencaoSB.inserir(item.itemManutencao);   
-    
 
     if (error) {
       console.error('Erro ao inserir item:', error);
@@ -84,10 +71,6 @@ export class ItemServiceSupabase {
       .from('tb_item')
       .update(item)
       .eq('id', id); // onde o id for igual ao que você quer atualizar
-
-    await this.itemArmaSB.atualizar(item.itemArma.id, item.itemArma);
-    await this.itemResistenciaSB.atualizar(item.itemResistencia.id, item.itemResistencia);   
-    await this.itemManutencaoSB.atualizar(item.itemManutencao.id, item.itemManutencao);   
 
     if (error) {
       console.error('Erro ao atualizar item:', error);
