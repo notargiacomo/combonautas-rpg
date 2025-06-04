@@ -7,16 +7,18 @@
           <hr />
         </div>
       </div>
-      <form [formGroup]="form">
-        <div class="container-fluid">
-          <div class="row g-3">
-            <div class="col-sm-3 mt-4">
-              <mat-form-field class="form-field">
-                <mat-label>Digite o Equipamento</mat-label>
-                <input formControlName="nome" matInput type="text" (keyup)="consultar(false)" />
-              </mat-form-field>
-            </div>
-            <div class="col-sm-3 mt-4">
+      <mat-tab-group>
+        <mat-tab label="Armas">
+          <form [formGroup]="form">
+            <div class="container-fluid">
+              <div class="row g-3">
+                <div class="col-sm-3 mt-4">
+                  <mat-form-field class="form-field">
+                    <mat-label>Digite o Equipamento</mat-label>
+                    <input formControlName="nome" matInput type="text" (keyup)="consultar(false, '1. Arma')" />
+                  </mat-form-field>
+                </div>
+                <!-- <div class="col-sm-3 mt-4">
               <mat-form-field>
                 <mat-label>Tipo de Equipamento</mat-label>
                 <mat-select formControlName="tipo" (selectionChange)="consultar(false)">
@@ -25,2142 +27,472 @@
                   </mat-option>
                 </mat-select>
               </mat-form-field>
-            </div>
-            <div class="col-sm-6 mt-4">
-              <mat-form-field class="select-dobrado">
-                <mat-label>Regra</mat-label>
-                <mat-select formControlName="chave" (selectionChange)="consultar(true)">
-                  @for (chave of chaves; track chave) {
-                  <mat-option [value]="chave">{{
-                    chave
-                    }}</mat-option>
-                  }
-                </mat-select>
-              </mat-form-field>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12 mt-4">
-              <section>
-                <div class="button-row d-flex justify-content-end">
+            </div> -->
+                <div class="col-sm-6 mt-4">
+                  <mat-form-field class="select-dobrado">
+                    <mat-label>Regra</mat-label>
+                    <mat-select formControlName="chave" (selectionChange)="consultar(true, null)">
+                      @for (chave of chaves; track chave) {
+                      <mat-option [value]="chave">{{
+                        chave
+                        }}</mat-option>
+                      }
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div *ngIf="edicao" class="col-sm-12 mt-4 button-row d-flex justify-content-end">
+                  <button class="me-2" (click)="salvar()" mat-flat-button>
+                    Salvar no Banco
+                  </button>
                   <button class="me-2" (click)="limparFiltros()" mat-flat-button>
                     Limpar Filtros
                   </button>
                 </div>
-              </section>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 mt-4">
-            <mat-card class="card-padrao">
-              <div class="mb-2">
-                <div class="d-flex justify-content-end">
-                  <b>Número de Registros: {{ numero_registros }}</b>
-                </div>
               </div>
-              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
-                <ng-container matColumnDef="nome">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header>
-                    Nome
-                  </th>
-                  <td mat-cell *matCellDef="let element">
-                    {{ element.nome }}
-                  </td>
-                </ng-container>
-
-                <ng-container matColumnDef="tipo">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header>
-                    Tipo
-                  </th>
-                  <td mat-cell *matCellDef="let element">
-                    {{ element.tipo }}
-                  </td>
-                </ng-container>
-
-                <ng-container matColumnDef="escola">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header>
-                    Escola
-                  </th>
-                  <td mat-cell *matCellDef="let element">
-                    {{ element.escola }}
-                  </td>
-                </ng-container>
-
-                <ng-container matColumnDef="circulo">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header>
-                    Circulo
-                  </th>
-                  <td mat-cell *matCellDef="let element">
-                    {{ element.circulo }}
-                  </td>
-                </ng-container>
-
-                <ng-container matColumnDef="acao">
-                  <th mat-header-cell *matHeaderCellDef>Ações</th>
-                  <td mat-cell *matCellDef="let element">
-                    <button class="meuBotao" mat-icon-button color="primary" (click)="seleciona(element)">
-                      <div class="row">
+            </div>
+            <div class="row">
+              <div class="col-sm-6 mt-4">
+                <mat-card class="card-padrao" *ngIf="objeto && eArma(objeto)">
+                  <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                    <div class="content" *ngIf="!edicao">
+                      <div *ngIf="!edicao" class="row">
                         <div class="col-sm-12">
-                          <mat-icon [ngClass]="{'zebra': isOdd(element)}">zoom_in</mat-icon>
+                          {{ objeto.nome }}
                         </div>
                       </div>
-                    </button>
-                  </td>
-                </ng-container>
-
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let element; columns: displayedColumns" [ngClass]="{'zebra': isOdd(element)}">
-                </tr>
-              </table>
-              <mat-paginator [pageSizeOptions]="[
-                  10,
-                  20,
-                  50,
-                  100,
-                  objetos ? objetos.length : 200
-                ]" showFirstLastButtons aria-label="Select page of periodic elements">
-              </mat-paginator>
-            </mat-card>
-          </div>
-          <div class="col-sm-6 mt-4">
-            <mat-card class="card-padrao" *ngIf="objeto && eArma(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                <div class="content" *ngIf="!edicao">
-                  <div *ngIf="!edicao" class="row">
-                    <div class="col-sm-12">
-                      {{ objeto.nome }}
                     </div>
-                  </div>
-                </div>
-                <div class="content" *ngIf="edicao">
-                  <div *ngIf="edicao" class="row">
-                    <div class="col-sm-6 mt-4">
-                      <mat-form-field class="text-field-formulario-edicao">
-                        <mat-label>Digite o nome do item</mat-label>
-                        <input formControlName="nomeSb" matInput type="text" />
-                      </mat-form-field>
-                    </div>
-                    <div class="col-sm-6 mt-4">
-                      <mat-form-field class="select-formulario-edicao">
-                        <mat-label>Tipo do Item</mat-label>
-                        <mat-select formControlName="idTipo" (selectionChange)="consultar(false)">
-                          <mat-option *ngFor="let tipo of tiposItem" [value]="tipo.id">
-                            {{ tipo.nome }}
-                          </mat-option>
-                        </mat-select>
-                      </mat-form-field>
-                    </div>
-                  </div>
-                </div>
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content" *ngIf="!edicao">
-                        <div class="col-sm-12">
-                          <hr class="" />
+                    <div class="content" *ngIf="edicao">
+                      <div *ngIf="edicao" class="row">
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="text-field-formulario-edicao">
+                            <mat-label>Digite o nome do item</mat-label>
+                            <input formControlName="nomeSb" matInput type="text" />
+                          </mat-form-field>
                         </div>
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            {{
-                            objeto.referencias + " pag. " + objeto.paginas
-                            }}
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <hr class="" />
-                        </div>
-                      </div>
-                      <div *ngIf="edicao" class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <mat-form-field class="select-formulario-edicao">
-                              <mat-label>Referência</mat-label>
-                              <mat-select formControlName="idReferencia" (selectionChange)="consultar(false)">
-                                <mat-option *ngFor="let referencia of referencias" [value]="referencia.id">
-                                  {{ referencia.nome }}
-                                </mat-option>
-                              </mat-select>
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-6">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>Digite as páginas</mat-label>
-                              <input formControlName="paginas" matInput type="text" />
-                            </mat-form-field>
-                          </div>
-                          <hr class="" />
-                        </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-4">
                           <mat-form-field class="select-formulario-edicao">
-                            <mat-label>Regra</mat-label>
-                            <mat-select formControlName="idRegra" (selectionChange)="adicionarRegra($event)">
-                              <mat-option *ngFor="let regra of regras" [value]="regra.id">
-                                {{ regra.nome }}
+                            <mat-label>Tipo do Item</mat-label>
+                            <mat-select formControlName="idTipo">
+                              <mat-option *ngFor="let tipo of tiposItem" [value]="tipo.id">
+                                {{ tipo.nome }}
                               </mat-option>
                             </mat-select>
                           </mat-form-field>
                         </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (regra of regrasItem; track regra.id_regra) {
-                              <button class="me-2" mat-flat-button (click)="removerRegra(regra)">
-                                {{ regra.tb_regra?.nome }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
                       </div>
-                      <div *ngIf="objeto.imagem" class="row">
-                        <div *ngIf="!edicao" class="col-sm-8" [innerHTML]="objeto.descricao"></div>
-                        <div *ngIf="edicao" class="col-sm-8">
-                          <mat-form-field class="text-field-formulario-edicao">
-                            <mat-label>Digite a descrição do item</mat-label>
-                            <textarea *ngIf="edicao" formControlName="descricao" rows="5" matInput></textarea>
-                          </mat-form-field>
-                        </div>
-                        <div class="col-sm-4">
-                          <mat-card>
-                            <img [src]="objeto.imagem" />
-                          </mat-card>
-                        </div>
-                      </div>
-                      <div *ngIf="!objeto.imagem" class="row">
-                        <div *ngIf="!edicao" class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        <div *ngIf="edicao" class="col-sm-12">
-                          <mat-form-field class="text-field-formulario-edicao">
-                            <mat-label>Digite a descrição do item</mat-label>
-                            <textarea *ngIf="edicao" formControlName="descricao" rows="5" matInput></textarea>
-                          </mat-form-field>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas" *ngIf="eArma(objeto)">
-                      <div *ngIf="!edicao" class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Dano</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.dano }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div *ngIf="!edicao" class="row">
-                          <div class="col-sm-6">Margem de Ameaça</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{
-                            objeto.margem_ameaca
-                            ? 21 - objeto.margem_ameaca
-                            : 20
-                            }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div *ngIf="!edicao" class="row">
-                          <div class="col-sm-6">Multiplicador de Crítico</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            x{{ objeto.multiplicador_critico }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Alcance</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{
-                            objeto.alcance === 0
-                            ? "-"
-                            : objeto.alcance + " metros"
-                            }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Tipo de Dano</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{
-                            objeto.tipo_dano?.length === 0
-                            ? "especial"
-                            : objeto.tipo_dano?.join("/")
-                            }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Espaço</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.espaco + " espaços de carga" }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                      <div *ngIf="edicao" class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>Digite o dano</mat-label>
-                              <input formControlName="dano" matInput type="text" />
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-6 mt-4">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>Digite a margem de ameaça</mat-label>
-                              <input formControlName="margem" matInput type="number" [disabled]="true" />
-                            </mat-form-field>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6 mt-2">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>Digite o multiplicador do crítico</mat-label>
-                              <input formControlName="multiplicador" matInput type="number" />
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-6">
-                            <mat-form-field class="select-formulario-edicao">
-                              <mat-label>Alcance</mat-label>
-                              <mat-select formControlName="idAlcance" (selectionChange)="adicionarRegra($event)">
-                                <mat-option *ngFor="let alcance of alcances" [value]="alcance.id">
-                                  {{ alcance.nome }}
-                                </mat-option>
-                              </mat-select>
-                            </mat-form-field>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6 mt-2">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>Digite o espaço</mat-label>
-                              <input formControlName="espaco" matInput type="number" />
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-6 mt-2">
-                            <mat-form-field class="select-formulario-edicao">
-                              <mat-label>Tipos de Dano</mat-label>
-                              <mat-select formControlName="idTipoDano" (selectionChange)="adicionarTipoDano($event)">
-                                <mat-option *ngFor="let tipoDano of tiposDano" [value]="tipoDano.id">
-                                  {{ tipoDano.nome }}
-                                </mat-option>
-                              </mat-select>
-                            </mat-form-field>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (tipoDanoItem of tiposDanoItem; track tipoDanoItem.id_tipo) {
-                              <button class="me-2" mat-flat-button (click)="removerTipoDano(tipoDanoItem)">
-                                {{ tipoDanoItem.tb_tipo_dano?.nome }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação" *ngIf="eArma(objeto)">
-                      <div *ngIf="!edicao" class="content">
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                      <div *ngIf="edicao" class="content">
-                        <div class="row">
-                          <div class="col-sm-4 mt-4">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>RD</mat-label>
-                              <input formControlName="rd" matInput type="number" />
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-4 mt-4">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>PV</mat-label>
-                              <input formControlName="pv" matInput type="number" />
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-4 mt-4">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>Preço</mat-label>
-                              <input formControlName="preco" matInput type="text" />
-                            </mat-form-field>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-4 mt-2">
-                            <mat-form-field class="text-field-formulario-edicao">
-                              <mat-label>CD</mat-label>
-                              <input formControlName="cd" matInput type="number" />
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-4 mt-2">
-                            <mat-form-field class="select-formulario-edicao">
-                              <mat-label>Tempo</mat-label>
-                              <mat-select formControlName="tempo" (selectionChange)="adicionarRegra($event)">
-                                <mat-option *ngFor="let tempo of tempos" [value]="tempo">
-                                  {{ tempo }}
-                                </mat-option>
-                              </mat-select>
-                            </mat-form-field>
-                          </div>
-                          <div class="col-sm-4 mt-2">
-                            <mat-form-field class="select-formulario-edicao">
-                              <mat-label>Perícia</mat-label>
-                              <mat-select formControlName="idPericia" (selectionChange)="adicionarPericia($event)">
-                                <mat-option *ngFor="let pericia of pericias" [value]="pericia.id">
-                                  {{ pericia.nome }}
-                                </mat-option>
-                              </mat-select>
-                            </mat-form-field>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (periciaItem of periciasItem; track periciaItem.id) {
-                              <button class="me-2" mat-flat-button (click)="removerPericia(periciaItem)">
-                                {{ periciaItem.tb_pericia?.nome }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eMunicao(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                    </div>
+                  </mat-card-title>
+                  <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
+                    <div class="content">
+                      <mat-tab-group>
+                        <mat-tab label="Descrição">
+                          <div class="content" *ngIf="!edicao">
+                            <div class="col-sm-12">
+                              <hr class="" />
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-8" [innerHTML]="objeto.descricao"></div>
-                          <div class="col-sm-4">
-                            <mat-card>
-                              <img [src]="objeto.imagem" />
-                            </mat-card>
-                          </div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Perícia para Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">CD para Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && (eArmadura(objeto) || eEscudo(objeto))">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div class="row">
+                              <div class="col-sm-12 d-flex justify-content-end">
+                                {{
+                                objeto.referencias + " pag. " + objeto.paginas
+                                }}
+                              </div>
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-8" [innerHTML]="objeto.descricao"></div>
-                          <div class="col-sm-4">
-                            <mat-card>
-                              <img [src]="objeto.imagem" />
-                            </mat-card>
-                          </div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Bônus de Defesa</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.defesa }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Penalidade de Armadura</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.penalidade }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eEquipamento(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div class="col-sm-12">
+                              <hr class="" />
                             </div>
-                            <hr class="" />
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6">Espaço</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eFerramenta(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                          <div *ngIf="edicao" class="content">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <hr class="" />
+                              </div>
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eVestuario(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <mat-form-field class="select-formulario-edicao">
+                                  <mat-label>Referência</mat-label>
+                                  <mat-select formControlName="idReferencia">
+                                    <mat-option *ngFor="let referencia of referencias" [value]="referencia.id">
+                                      {{ referencia.nome }}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-6">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Digite as páginas</mat-label>
+                                  <input formControlName="paginas" matInput type="text" />
+                                </mat-form-field>
+                              </div>
+                              <hr class="" />
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eAcessorio(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.paginas!.length > 0 ? objeto.referencias + " pag. " + objeto.paginas:
-                              objeto.referencias
-                              }}
+                            <div class="col-sm-6">
+                              <mat-form-field class="select-formulario-edicao">
+                                <mat-label>Regra</mat-label>
+                                <mat-select formControlName="idRegra" (selectionChange)="adicionarRegra($event)">
+                                  <mat-option *ngFor="let regra of regras" [value]="regra.id">
+                                    {{ regra.nome }}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">CD Identificação</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.cd_identificar_item }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eEncanto(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div class="row">
+                              <div class="col-sm-12 mt-2 button-row">
+                                <section class="d-flex flex-wrap gap-2">
+                                  @for (regra of regrasItem; track regra.id_regra) {
+                                  <button class="me-2" mat-flat-button (click)="removerRegra(regra)">
+                                    {{ regra.tb_regra?.nome }}
+                                  </button>
+                                  }
+                                </section>
+                              </div>
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eEsoterico(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <hr class="" />
+                              </div>
                             </div>
-                            <hr class="" />
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eAlquimico(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                          <div *ngIf="objeto.imagem" class="row">
+                            <div *ngIf="!edicao" class="col-sm-8" [innerHTML]="objeto.descricao"></div>
+                            <div *ngIf="edicao" class="col-sm-8">
+                              <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Digite a descrição do item</mat-label>
+                                <textarea *ngIf="edicao" formControlName="descricao" rows="5" matInput></textarea>
+                              </mat-form-field>
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">CD para Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eAlimentacao(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div class="col-sm-4">
+                              <mat-card>
+                                <img [src]="objeto.imagem" />
+                              </mat-card>
                             </div>
-                            <hr class="" />
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Espaço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.espaco }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eAnimal(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                          <div *ngIf="!objeto.imagem" class="row">
+                            <div *ngIf="!edicao" class="col-sm-12" [innerHTML]="objeto.descricao"></div>
+                            <div *ngIf="edicao" class="col-sm-12">
+                              <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Digite a descrição do item</mat-label>
+                                <textarea *ngIf="edicao" formControlName="descricao" rows="5" matInput></textarea>
+                              </mat-form-field>
                             </div>
-                            <hr class="" />
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab id="parceiro" label="Parceiro">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao_extra"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Outros">
-                      <div class="row">
-                        <div class="col-sm-3 mt-4">Preço</div>
-                        <div class="col-sm-9 mt-4 d-flex justify-content-end">
-                          {{
-                          objeto.preco !== 0
-                          ? "T$ " + objeto.preco
-                          : "Vide Treinando Montarias Selvagens"
-                          }}
-                        </div>
-                        <hr />
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6 mt-4">Tamanho</div>
-                        <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                          {{ objeto.tamanho }}
-                        </div>
-                        <hr />
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6 mt-4">Manutênção</div>
-                        <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                          {{
-                          objeto.manutencao +
-                          " " +
-                          objeto.tipo_manutencao +
-                          "/dia"
-                          }}
-                        </div>
-                        <hr />
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eVeiculo(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                        </mat-tab>
+                        <mat-tab label="Estatísticas" *ngIf="eArma(objeto)">
+                          <div *ngIf="!edicao" class="content">
+                            <div class="row">
+                              <div class="col-sm-6 mt-4">Dano</div>
+                              <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                                {{ objeto.dano }}
+                              </div>
+                              <hr />
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Estatísticas">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Tamanho</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.tamanho }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Capacidade Mínima</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ objeto.capacidade_minima_criaturas }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-11 mt-4">
-                            Capacidade Máxima Criaturas Médias (Ou Carga ou
-                            Criaturas)
-                          </div>
-                          <div class="col-sm-1 mt-4 d-flex justify-content-end">
-                            {{ objeto.capacidade_maxima_criaturas }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-9 mt-4">
-                            Cacidade de Carga (Ou Carga ou Criaturas)
-                          </div>
-                          <div class="col-sm-3 mt-4 d-flex justify-content-end">
-                            {{ objeto.capacidade_maxima_espacos + " espaços" }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                    <mat-tab label="Fabricação">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-6 mt-4">Preço</div>
-                          <div class="col-sm-6 mt-4 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">RD</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.rd }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">PV's</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pv }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Perícia para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.pericia_fabricacao_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            CD para Fabricação/Conserto
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.cd_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo de Fabricação</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_fabricacao }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Fabricação (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas! >=
-                            40 ? '1 semana': '1 dia'}}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">Custo para Conserto</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ "T$ " + objeto.preco_conserto }}
-                          </div>
-                          <hr />
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            Tempo de Conserto (Em Horas)
-                          </div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{ objeto.tempo_conserto_em_horas }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eServico(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div *ngIf="!edicao" class="row">
+                              <div class="col-sm-6">Margem de Ameaça</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{
+                                objeto.margem_ameaca
+                                ? 21 - objeto.margem_ameaca
+                                : 20
+                                }}
+                              </div>
+                              <hr />
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                        <br />
-                        <div class="row">
-                          <div class="col-sm-6">Preço</div>
-                          <div class="col-sm-6 d-flex justify-content-end">
-                            {{
-                            "T$ " +
-                            objeto.preco +
-                            " " +
-                            objeto.preco_descricao
-                            }}
-                          </div>
-                          <hr />
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eMelhoria(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias + " pag. " + objeto.paginas
-                              }}
+                            <div *ngIf="!edicao" class="row">
+                              <div class="col-sm-6">Multiplicador de Crítico</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                x{{ objeto.multiplicador_critico }}
+                              </div>
+                              <hr />
                             </div>
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <mat-card class="card-padrao" *ngIf="objeto && eMaterialEspecial(objeto)">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ objeto.nome }}
-              </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
-                <div class="content">
-                  <mat-tab-group>
-                    <mat-tab label="Descrição">
-                      <div class="content">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="d-flex justify-content-end">
-                              {{
-                              objeto.referencias +
-                              " pag. " +
-                              objeto.paginas
-                              }}
+                            <div class="row">
+                              <div class="col-sm-6">Alcance</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{
+                                objeto.alcance === 0
+                                ? "-"
+                                : objeto.alcance + " metros"
+                                }}
+                              </div>
+                              <hr />
                             </div>
-                            <hr class="" />
+                            <div class="row">
+                              <div class="col-sm-6">Tipo de Dano</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{
+                                objeto.tipo_dano?.length === 0
+                                ? "especial"
+                                : objeto.tipo_dano?.join("/")
+                                }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">Espaço</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ objeto.espaco + " espaços de carga" }}
+                              </div>
+                              <hr />
+                            </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12 mt-2 button-row">
-                            <section class="d-flex flex-wrap gap-2">
-                              @for (chave of objeto.chave; track chave) {
-                              <button class="me-2" mat-flat-button disabled>
-                                {{ chave }}
-                              </button>
-                              }
-                            </section>
+                          <div *ngIf="edicao" class="content">
+                            <div class="row">
+                              <div class="col-sm-6 mt-4">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Digite o dano</mat-label>
+                                  <input formControlName="dano" matInput type="text" />
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-6 mt-4">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Digite a margem de ameaça</mat-label>
+                                  <input formControlName="margem" matInput type="number" [disabled]="true" />
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6 mt-2">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Digite o multiplicador do crítico</mat-label>
+                                  <input formControlName="multiplicador" matInput type="number" />
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-6">
+                                <mat-form-field class="select-formulario-edicao">
+                                  <mat-label>Alcance</mat-label>
+                                  <mat-select formControlName="idAlcance" (selectionChange)="adicionarRegra($event)">
+                                    <mat-option *ngFor="let alcance of alcances" [value]="alcance.id">
+                                      {{ alcance.nome }}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6 mt-2">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Digite o espaço</mat-label>
+                                  <input formControlName="espaco" matInput type="number" />
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-6 mt-2">
+                                <mat-form-field class="select-formulario-edicao">
+                                  <mat-label>Tipos de Dano</mat-label>
+                                  <mat-select formControlName="idTipoDano"
+                                    (selectionChange)="adicionarTipoDano($event)">
+                                    <mat-option *ngFor="let tipoDano of tiposDano" [value]="tipoDano.id">
+                                      {{ tipoDano.nome }}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12 mt-2 button-row">
+                                <section class="d-flex flex-wrap gap-2">
+                                  @for (tipoDanoItem of tiposDanoItem; track tipoDanoItem.id_tipo) {
+                                  <button class="me-2" mat-flat-button (click)="removerTipoDano(tipoDanoItem)">
+                                    {{ tipoDanoItem.tb_tipo_dano?.nome }}
+                                  </button>
+                                  }
+                                </section>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <hr class="" />
+                        </mat-tab>
+                        <mat-tab label="Fabricação" *ngIf="eArma(objeto)">
+                          <div *ngIf="!edicao" class="content">
+                            <div class="row">
+                              <div class="col-sm-6">RD</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ objeto.rd }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">PV's</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ objeto.pv }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6 mt-4">Preço</div>
+                              <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                                {{ "T$ " + objeto.preco }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                Perícia para Fabricação/Conserto
+                              </div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ objeto.pericia_fabricacao_conserto }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                CD para Fabricação/Conserto
+                              </div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ objeto.cd_fabricacao }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">Custo de Fabricação</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ "T$ " + objeto.preco_fabricacao }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                Tempo de Fabricação (Em Horas)
+                              </div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ objeto.tempo_fabricacao_em_horas! >= 160 ? '1 mês': objeto.tempo_fabricacao_em_horas!
+                                >=
+                                40 ? '1 semana': '1 dia'}}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">Custo para Conserto</div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ "T$ " + objeto.preco_conserto }}
+                              </div>
+                              <hr />
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                Tempo de Conserto (Em Horas)
+                              </div>
+                              <div class="col-sm-6 d-flex justify-content-end">
+                                {{ objeto.tempo_conserto_em_horas }}
+                              </div>
+                              <hr />
+                            </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12" [innerHTML]="objeto.descricao"></div>
-                        </div>
-                      </div>
-                    </mat-tab>
-                  </mat-tab-group>
-                </div>
-              </mat-card-content>
-            </mat-card>
-            <div class="row">
-              <div class="col-sm-12 mt-4">
-                <section>
-                  <div *ngIf="edicao" class="button-row d-flex justify-content-end">
-                    <button class="me-2" (click)="salvar()" mat-flat-button>
-                      Salvar no Banco
-                    </button>
+                          <div *ngIf="edicao" class="content">
+                            <div class="row">
+                              <div class="col-sm-4 mt-4">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>RD</mat-label>
+                                  <input formControlName="rd" matInput type="number" />
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4 mt-4">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>PV</mat-label>
+                                  <input formControlName="pv" matInput type="number" />
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4 mt-4">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Preço</mat-label>
+                                  <input formControlName="preco" matInput type="text" />
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-4 mt-2">
+                                <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>CD</mat-label>
+                                  <input formControlName="cd" matInput type="number" />
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4 mt-2">
+                                <mat-form-field class="select-formulario-edicao">
+                                  <mat-label>Tempo</mat-label>
+                                  <mat-select formControlName="tempo" (selectionChange)="adicionarRegra($event)">
+                                    <mat-option *ngFor="let tempo of tempos" [value]="tempo">
+                                      {{ tempo }}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4 mt-2">
+                                <mat-form-field class="select-formulario-edicao">
+                                  <mat-label>Perícia</mat-label>
+                                  <mat-select formControlName="idPericia" (selectionChange)="adicionarPericia($event)">
+                                    <mat-option *ngFor="let pericia of pericias" [value]="pericia.id">
+                                      {{ pericia.nome }}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12 mt-2 button-row">
+                                <section class="d-flex flex-wrap gap-2">
+                                  @for (periciaItem of periciasItem; track periciaItem.id) {
+                                  <button class="me-2" mat-flat-button (click)="removerPericia(periciaItem)">
+                                    {{ periciaItem.tb_pericia?.nome }}
+                                  </button>
+                                  }
+                                </section>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-tab>
+                      </mat-tab-group>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-sm-6 mt-4">
+                <mat-card class="card-padrao">
+                  <div class="mb-2">
+                    <div class="d-flex justify-content-end">
+                      <b>Número de Registros: {{ numero_registros }}</b>
+                    </div>
                   </div>
-                </section>
+                  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+                    <ng-container matColumnDef="nome">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Nome
+                      </th>
+                      <td mat-cell *matCellDef="let element">
+                        {{ element.nome }}
+                      </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="acao">
+                      <th mat-header-cell *matHeaderCellDef>Ações</th>
+                      <td mat-cell *matCellDef="let element">
+                        <button class="meuBotao" mat-icon-button color="primary" (click)="seleciona(element)">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <mat-icon [ngClass]="{'zebra': isOdd(element)}">zoom_in</mat-icon>
+                            </div>
+                          </div>
+                        </button>
+                      </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let element; columns: displayedColumns"
+                      [ngClass]="{'zebra': isOdd(element)}">
+                    </tr>
+                  </table>
+                  <mat-paginator [pageSizeOptions]="[
+                      10,
+                      20,
+                      50,
+                      100,
+                      objetos ? objetos.length : 200
+                    ]" showFirstLastButtons aria-label="Select page of periodic elements">
+                  </mat-paginator>
+                </mat-card>
               </div>
             </div>
-          </div>
-        </div>
-      </form>
+          </form>
+        </mat-tab>
+      </mat-tab-group>
     </mat-card>
   </div>
 </div>

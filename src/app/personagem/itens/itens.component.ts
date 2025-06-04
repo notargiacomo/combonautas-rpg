@@ -75,7 +75,7 @@ import { TipoItemServiceSupabase } from '../../service/supaservice/tipo.item.ser
   styleUrl: './itens.component.scss',
 })
 export class ItensComponent implements AfterViewInit {
-  displayedColumns: string[] = ['nome', 'tipo', 'acao'];
+  displayedColumns: string[] = ['nome', 'acao'];
 
   form!: FormGroup;
   objetos!: Item[];
@@ -136,7 +136,7 @@ export class ItensComponent implements AfterViewInit {
   }
 
   ngOnInit() {
-    this.itemSB = new ItemSB(this.cdr);
+    this.itemSB = new ItemSB();
     const logado = sessionStorage.getItem('logado') || '';
 
     if (logado) {
@@ -164,7 +164,6 @@ export class ItensComponent implements AfterViewInit {
       pericia: [],
       caminhoImagem: [],
       paginas: [],
-      idArma: [],
       dano: [],
       margem: [],
       multiplicador: [],
@@ -172,16 +171,17 @@ export class ItensComponent implements AfterViewInit {
       idTipoDano: [],
       tipoDano: [],
       espaco: [],
-      idResistencia: [],
       rd: [],
       pv: [],
+      idArma: [],
+      idResistencia: [],
       idManutencao: [],
       preco: [],
       cd: [],
       tempo: [],
     });
 
-    this.consultar(false);
+    this.consultar(false, null);
     this.carregarItens();
     this.carregarTabelasDominio();
 
@@ -259,8 +259,11 @@ export class ItensComponent implements AfterViewInit {
     this.consultarItemPorNome(objeto.nome!);
     this.objeto = this.objetos.find((i) => i.nome === objeto.nome);
     setTimeout(() => {
-      if (this.itemSB?.id!) {
+      if (this.itemSB) {
         this.form.get('id')?.setValue(this.itemSB.id);
+        this.form.get('idArma')?.setValue(this.itemSB.id);
+        this.form.get('idResistencia')?.setValue(this.itemSB.id);
+        this.form.get('idManutencao')?.setValue(this.itemSB.id);
         this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
         this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
         this.form.get('nomeSb')?.setValue(this.itemSB.nome);
@@ -280,13 +283,15 @@ export class ItensComponent implements AfterViewInit {
   }
 
   async selecionaManutencao(objeto: Item) {
-    try {
-      this.itemManutencao = await this.itemManutencaoSB.consultarPorId(this.form.get('id')?.value);
-    } catch (err) {
-      console.error('Erro ao carregar Item Arma', err);
+    if(this.form.get('idManutencao')?.value){      
+      try {
+        this.itemManutencao = await this.itemManutencaoSB.consultarPorId(this.form.get('idManutencao')?.value);
+      } catch (err) {
+        console.error('Erro ao carregar Item Arma', err);
+      }
     }
 
-    if (this.itemManutencao?.id) {
+    if (this.itemManutencao) {
       this.form.get('preco')?.setValue(this.itemManutencao.preco);
       this.form.get('cd')?.setValue(this.itemManutencao.cd_fabricacao);
       this.form.get('tempo')?.setValue(this.itemManutencao.tempo_fabricacao_em_horas);
@@ -297,8 +302,16 @@ export class ItensComponent implements AfterViewInit {
     }
   }
 
-  selecionaResistencia(objeto: Item) {
-    if (this.itemResistencia?.id) {
+  async selecionaResistencia(objeto: Item) {
+    if(this.form.get('idResistencia')?.value){   
+      try {
+        this.itemResistencia = await this.itemResistenciaSB.consultarPorId(this.form.get('idResistencia')?.value);
+      } catch (err) {
+        console.error('Erro ao carregar Item Arma', err);
+      }
+    }
+
+    if (this.itemResistencia) {
       this.form.get('rd')?.setValue(this.itemResistencia?.reducao_dano);
       this.form.get('pv')?.setValue(this.itemResistencia?.pontos_vida);
     } else {
@@ -308,13 +321,16 @@ export class ItensComponent implements AfterViewInit {
   }
 
   async selecionaArma(objeto: Item) {
-    try {
-      this.itemArma = await this.itemArmaSB.consultarPorId(this.form.get('id')?.value);
-    } catch (err) {
-      console.error('Erro ao carregar Item Arma', err);
+
+    if(this.form.get('idArma')?.value){
+      try {
+        this.itemArma = await this.itemArmaSB.consultarPorId(this.form.get('idArma')?.value);
+      } catch (err) {
+        console.error('Erro ao carregar Item Arma', err);
+      }
     }
 
-    if (this.itemArma?.id) {
+    if (this.itemArma) {
       this.form.get('dano')?.setValue(this.itemArma.dano);
       this.form.get('margem')?.setValue(this.itemArma.margem_ameaca);
       this.form.get('multiplicador')?.setValue(this.itemArma.multiplicador_critico);
@@ -338,14 +354,14 @@ export class ItensComponent implements AfterViewInit {
   }
 
   async salvar() {
-    this.itemSB!.id_tipo = this.form.get('idTipo')?.value;
-    this.itemSB!.id_referencia = this.form.get('idReferencia')?.value;
-    this.itemSB!.nome = this.form.get('nomeSb')?.value;
-    this.itemSB!.descricao = this.form.get('descricao')?.value;
-    this.itemSB!.paginas = this.form.get('paginas')?.value;
-    this.itemSB!.caminho_imagem = this.objeto?.imagem;
-
-    const id = this.form.get('id')?.value;
+    this.itemSB = {
+      id_tipo: this.form.get('idTipo')?.value,
+      id_referencia: this.form.get('idReferencia')?.value,
+      nome: this.form.get('nomeSb')?.value,
+      descricao: this.form.get('descricao')?.value,
+      paginas: this.form.get('paginas')?.value,
+      caminho_imagem: this.objeto?.imagem
+    }
 
     this.itemArma = {
       dano: this.form.get('dano')?.value,
@@ -366,34 +382,35 @@ export class ItensComponent implements AfterViewInit {
       tempo_fabricacao_em_horas: this.form.get('tempo')?.value,
     };
 
+    let id = this.form.get('id')?.value;
+
     try {
       let resultado = null;
       if (id) {
         resultado = await this.itemServiceSB.atualizar(id, this.itemSB);
+        this.itemSB = await this.itemServiceSB.consultarPorNome(this.itemSB!.nome!);
+        id = this.itemSB?.id;
       } else {
         resultado = await this.itemServiceSB.inserir(this.itemSB);
+        this.itemSB = await this.itemServiceSB.consultarPorNome(this.itemSB!.nome!);
+        id = this.itemSB?.id;
       }
 
-      const itemResistencia = await this.itemResistenciaSB.consultarPorId(id);
-      if (itemResistencia) {
+      if(this.form.get('idResistencia')?.value){
         await this.itemResistenciaSB.atualizar(id, this.itemResistencia);
       } else {
         this.itemResistencia.id = id;
         await this.itemResistenciaSB.inserir(this.itemResistencia);
       }
 
-      const itemManutencao = await this.itemManutencaoSB.consultarPorId(id);
-      if (itemManutencao) {
+      if(this.form.get('idManutencao')?.value){
         await this.itemManutencaoSB.atualizar(id, this.itemManutencao);
       } else {
         this.itemManutencao.id = id;
         await this.itemManutencaoSB.inserir(this.itemManutencao);
       }
 
-      const itemArma = await this.itemArmaSB.consultarPorId(id);
-      if (itemArma) {
-        this.itemArma.id_item_manutencao = id;
-        this.itemArma.id_item_resistencia = id;
+      if(this.form.get('idArma')?.value){
         await this.itemArmaSB.atualizar(id, this.itemArma);
       } else {
         this.itemArma.id = id;
@@ -428,9 +445,11 @@ export class ItensComponent implements AfterViewInit {
     } catch (err) {
       console.error('Erro ao inserir:', err);
     }
+
+    this.objeto = undefined;
   }
 
-  consultar(selecaoChave: boolean): void {
+  consultar(selecaoChave: boolean, tipo: any): void {
     this.selecaoChave = selecaoChave;
     let filtro = { ...this.form.value };
     if (filtro.nome) {
@@ -441,6 +460,8 @@ export class ItensComponent implements AfterViewInit {
       filtro.tracos = '';
       this.filtro_traco = this.form.value.tracos;
     }
+
+    filtro.tipo = TipoItem.ARMA;
     this.consultarTodos(filtro);
   }
 
@@ -589,7 +610,7 @@ export class ItensComponent implements AfterViewInit {
   limparFiltros() {
     this.objeto = undefined;
     this.form.reset();
-    this.consultar(false);
+    this.consultar(false, null);
   }
 
   eArma(objeto: Item): boolean {

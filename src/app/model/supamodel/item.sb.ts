@@ -1,4 +1,3 @@
-import { ChangeDetectorRef } from '@angular/core';
 
 export class ItemSB {
   id?: number;
@@ -9,5 +8,4 @@ export class ItemSB {
   paginas?: string;
   caminho_imagem?: string;
 
-  constructor(private cdRef: ChangeDetectorRef) {}
 }
