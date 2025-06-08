@@ -34,7 +34,7 @@ import { ItemSB } from '../../../model/supamodel/item.sb';
 import { PericiaSB } from '../../../model/supamodel/pericia.sb';
 import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
 import { PericiaItemSB } from '../../../model/supamodel/pericia.item.sb';
-import { ReferenciaItemSB } from '../../../model/supamodel/referencia.item.sb';
+import { ReferenciaItemSB } from '@model/supamodel/referencia.item.sb';
 import { AlcanceSB } from '../../../model/supamodel/alcance.sb';
 import { TipoDanoSB } from '../../../model/supamodel/tipo.dano.sb';
 import { TipoDanoItemSB } from '../../../model/supamodel/tipo.dano.item.sb';
