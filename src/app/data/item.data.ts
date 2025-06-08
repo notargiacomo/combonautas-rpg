@@ -9066,6 +9066,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
           Chave.EMPUNHADURA_ARMA_LEVE,
           Chave.ATAQUE_CORPO_A_CORPO,
           Chave.LIMITE_USO_EMPUNHADO,
@@ -25988,28 +25989,6 @@ export class ItemData {
         custo_permanente_pontos_mana: 3,
         tempo_fabricacao_em_horas: 160,
         preco_conserto: 5400,
-        tempo_conserto_em_horas: 1,
-        referencias: Referencia.DEUSES,
-        paginas: '55'
-      },
-      {
-        id: 642,
-        nome: 'Adaga Ofídica',
-        tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
-        descricao: `Esta adaga cruel é feita da presa de uma serpente gigantesca. Possui um compartimento oco no cabo com veneno (peçonha concentrada) que é magicamente reposto a cada golpe. Se você for um devoto de Sszzaas, ela se torna uma adaga cruel formidável que ignora qualquer resistência ou imunidade a veneno de uma criatura atingida. Se você for de patamar campeão ou superior, o veneno vira peçonha potente. Arma específica média, preço T$ 36.000.
-        `,
-        deus: 'Sszzaas',
-        espaco: 1,
-        preco: 36000,
-        rd: 20,
-        pv: 20,
-        pericia_fabricacao_conserto: 'Ofício Artesão',
-        preco_fabricacao: 12000,
-        cd_fabricacao: 40,
-        custo_permanente_pontos_mana: 3,
-        tempo_fabricacao_em_horas: 160,
-        preco_conserto: 3600,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
         paginas: '55'

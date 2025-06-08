@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 import { SupabaseService } from './supabase.service';
-import { ItemManutencaoServiceSupabase } from './item.manutencao.service.supabase';
-import { ItemArmaServiceSupabase } from './item.arma.service.supabase';
-import { ItemResistenciaServiceSupabase } from './item.resistencia.service.supabase';
 
 @Injectable({
   providedIn: 'root'

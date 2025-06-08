@@ -7,5 +7,7 @@ export class ItemSB {
   descricao?: string;
   paginas?: string;
   caminho_imagem?: string;
-
+  referencia?: {
+            nome?: string;
+  };
 }
