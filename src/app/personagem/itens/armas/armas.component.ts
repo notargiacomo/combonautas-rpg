@@ -1,6 +1,7 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   signal,
@@ -15,6 +16,7 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
@@ -25,32 +27,33 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatTreeModule } from '@angular/material/tree';
+import { RegraTree } from '@app/model/RegraTree';
 import { Chave } from '../../../enum/chave.enum';
+import { TipoItem } from '../../../enum/tipo.item.enum';
 import { Item } from '../../../model/item';
+import { AlcanceSB } from '../../../model/supamodel/alcance.sb';
 import { ItemArmaSB } from '../../../model/supamodel/item.arma.sb';
 import { ItemManutencaoSB } from '../../../model/supamodel/item.manutencao.sb';
 import { ItemResistenciaSB } from '../../../model/supamodel/item.resistencia.sb';
 import { ItemSB } from '../../../model/supamodel/item.sb';
-import { PericiaSB } from '../../../model/supamodel/pericia.sb';
-import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
 import { PericiaItemSB } from '../../../model/supamodel/pericia.item.sb';
+import { PericiaSB } from '../../../model/supamodel/pericia.sb';
 import { ReferenciaItemSB } from '../../../model/supamodel/referencia.item.sb';
-import { AlcanceSB } from '../../../model/supamodel/alcance.sb';
-import { TipoDanoSB } from '../../../model/supamodel/tipo.dano.sb';
+import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
 import { TipoDanoItemSB } from '../../../model/supamodel/tipo.dano.item.sb';
+import { TipoDanoSB } from '../../../model/supamodel/tipo.dano.sb';
 import { ItemService } from '../../../service/item.service';
+import { AlcanceServiceSupabase } from '../../../service/supaservice/alcance.service.supabase';
+import { ItemArmaServiceSupabase } from '../../../service/supaservice/item.arma.service.supabase';
+import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
+import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
 import { ItemServiceSupabase } from '../../../service/supaservice/item.service.supabase';
-import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
+import { PericiaServiceSupabase } from '../../../service/supaservice/pericia.service.supabase';
 import { ReferenciaServiceSupabase } from '../../../service/supaservice/referencia.service.supabase';
 import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
 import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
-import { AlcanceServiceSupabase } from '../../../service/supaservice/alcance.service.supabase';
-import { PericiaServiceSupabase } from '../../../service/supaservice/pericia.service.supabase';
-import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
-import { ItemArmaServiceSupabase } from '../../../service/supaservice/item.arma.service.supabase';
-import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
-import { TipoItem } from '../../../enum/tipo.item.enum';
-import { MatExpansionModule } from '@angular/material/expansion';
+import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
 
 @Component({
   selector: 'app-armas',
@@ -73,15 +76,22 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSortModule,
     MatPaginatorModule,
     MatFormFieldModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTreeModule,
   ],
   templateUrl: './armas.component.html',
-  styleUrl: './armas.component.scss'
+  styleUrl: './armas.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ArmasComponent implements AfterViewInit {
+  dataSourceRegraTree: RegraTree[] = [];
+  conceitos: RegraTree[] = [];
+  childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
+  hasChild = (_: number, node: RegraTree) => !!node.children && node.children.length > 0;
 
   readonly panelOpenState = signal(false);
   displayedColumns: string[] = ['nome', 'acao'];
+  regraSelecionada?: RegraTree;
 
   form!: FormGroup;
   objetos!: Item[];
@@ -149,7 +159,7 @@ export class ArmasComponent implements AfterViewInit {
     private cdr: ChangeDetectorRef
   ) {}
 
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
     this.dataSourceAS = new MatTableDataSource<Item>();
     this.dataSourceAS.paginator = this.paginator;
     this.dataSourceAS.sort = this.sort;
@@ -165,10 +175,10 @@ export class ArmasComponent implements AfterViewInit {
     this.dataSourceAF = new MatTableDataSource<Item>();
     this.dataSourceAF.paginator = this.paginator;
     this.dataSourceAF.sort = this.sort;
-
   }
+  
+  async ngOnInit() {
 
-  ngOnInit() {
     this.itemSB = new ItemSB();
     const logado = sessionStorage.getItem('logado') || '';
 
@@ -212,8 +222,9 @@ export class ArmasComponent implements AfterViewInit {
       preco: [],
       cd: [],
       tempo: [],
-      tela: [] = ['ALFABETICA']
+      tela: ([] = ['ALFABETICA']),
     });
+
 
     this.consultar(false, null);
     this.carregarItens();
@@ -224,6 +235,22 @@ export class ArmasComponent implements AfterViewInit {
       let nome_b = b ? b.nome : 'b';
       return nome_a!.localeCompare(nome_b!);
     });
+
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 21 }));
+    this.cdr.detectChanges();
+  }
+
+  visao(visao: string){
+    let seVisao = false;
+    if(this.form != undefined) {
+      seVisao = this.form.get('tela')?.value == visao;
+    }
+
+    return seVisao;
+  }
+
+  selecionaRegra(regraSelecionada: any){
+    this.regraSelecionada = regraSelecionada;
   }
 
   async carregarTabelasDominio() {
@@ -260,12 +287,20 @@ export class ArmasComponent implements AfterViewInit {
   async consultarItemPorNome(nome: string) {
     try {
       this.itemSB = await this.itemServiceSB.consultarPorNome(nome);
-      if(this.itemSB){
-        this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(this.itemSB.id!);
-        this.tiposDanoItem = await this.tiposDanoServiceSB.recuperaTipoDanoDoItem(this.itemSB.id!);
-        this.periciasItem = await this.periciaServiceSB.recuperaPericiaItem(this.itemSB.id!);
-        this.referenciaItem = await this.referenciaServiceSB.consultarPorId(this.itemSB.id_referencia!);
+      if (this.itemSB) {
+        this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(
+          this.itemSB.id!
+        );
+        this.tiposDanoItem =
+          await this.tiposDanoServiceSB.recuperaTipoDanoDoItem(this.itemSB.id!);
+        this.periciasItem = await this.periciaServiceSB.recuperaPericiaItem(
+          this.itemSB.id!
+        );
+        this.referenciaItem = await this.referenciaServiceSB.consultarPorId(
+          this.itemSB.id_referencia!
+        );
       }
+      this.cdr.detectChanges();
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -296,7 +331,7 @@ export class ArmasComponent implements AfterViewInit {
     return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
-  limparSelecao(){
+  limparSelecao() {
     const tela = this.form.get('tela')?.value;
     this.form.reset();
     this.form.get('tela')?.setValue(tela);
@@ -306,7 +341,7 @@ export class ArmasComponent implements AfterViewInit {
     this.itemResistencia = undefined;
     this.itemManutencao = undefined;
     this.regrasItem = [];
-    this.periciasItem= [];
+    this.periciasItem = [];
     this.tiposDanoItem = [];
   }
 
@@ -340,9 +375,11 @@ export class ArmasComponent implements AfterViewInit {
   }
 
   async selecionaManutencao(objeto: Item) {
-    if(this.form.get('idManutencao')?.value){      
+    if (this.form.get('idManutencao')?.value) {
       try {
-        this.itemManutencao = await this.itemManutencaoSB.consultarPorId(this.form.get('idManutencao')?.value);
+        this.itemManutencao = await this.itemManutencaoSB.consultarPorId(
+          this.form.get('idManutencao')?.value
+        );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
@@ -351,7 +388,9 @@ export class ArmasComponent implements AfterViewInit {
     if (this.itemManutencao) {
       this.form.get('preco')?.setValue(this.itemManutencao.preco);
       this.form.get('cd')?.setValue(this.itemManutencao.cd_fabricacao);
-      this.form.get('tempo')?.setValue(this.itemManutencao.tempo_fabricacao_em_horas);
+      this.form
+        .get('tempo')
+        ?.setValue(this.itemManutencao.tempo_fabricacao_em_horas);
     } else {
       this.form.get('preco')?.setValue(objeto.preco);
       this.form.get('cd')?.setValue(objeto.cd_fabricacao);
@@ -360,9 +399,11 @@ export class ArmasComponent implements AfterViewInit {
   }
 
   async selecionaResistencia(objeto: Item) {
-    if(this.form.get('idResistencia')?.value){   
+    if (this.form.get('idResistencia')?.value) {
       try {
-        this.itemResistencia = await this.itemResistenciaSB.consultarPorId(this.form.get('idResistencia')?.value);
+        this.itemResistencia = await this.itemResistenciaSB.consultarPorId(
+          this.form.get('idResistencia')?.value
+        );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
@@ -378,10 +419,11 @@ export class ArmasComponent implements AfterViewInit {
   }
 
   async selecionaArma(objeto: Item) {
-
-    if(this.form.get('idArma')?.value){
+    if (this.form.get('idArma')?.value) {
       try {
-        this.itemArma = await this.itemArmaSB.consultarPorId(this.form.get('idArma')?.value);
+        this.itemArma = await this.itemArmaSB.consultarPorId(
+          this.form.get('idArma')?.value
+        );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
@@ -390,9 +432,15 @@ export class ArmasComponent implements AfterViewInit {
     if (this.itemArma) {
       this.form.get('dano')?.setValue(this.itemArma.dano);
       this.form.get('margem')?.setValue(this.itemArma.margem_ameaca);
-      this.form.get('multiplicador')?.setValue(this.itemArma.multiplicador_critico);
+      this.form
+        .get('multiplicador')
+        ?.setValue(this.itemArma.multiplicador_critico);
       this.form.get('espaco')?.setValue(this.itemArma.espaco);
-      this.form.get('idAlcance')?.setValue(this.alcances.find((i) => i.id === this.itemArma?.id_alcance)?.id);
+      this.form
+        .get('idAlcance')
+        ?.setValue(
+          this.alcances.find((i) => i.id === this.itemArma?.id_alcance)?.id
+        );
     } else {
       this.form.get('dano')?.setValue(objeto.dano);
       this.form.get('margem')?.setValue(objeto.margem_ameaca);
@@ -417,8 +465,8 @@ export class ArmasComponent implements AfterViewInit {
       nome: this.form.get('nomeSb')?.value,
       descricao: this.form.get('descricao')?.value,
       paginas: this.form.get('paginas')?.value,
-      caminho_imagem: this.objeto?.imagem
-    }
+      caminho_imagem: this.objeto?.imagem,
+    };
 
     this.itemArma = {
       dano: this.form.get('dano')?.value,
@@ -445,29 +493,33 @@ export class ArmasComponent implements AfterViewInit {
       let resultado = null;
       if (id) {
         resultado = await this.itemServiceSB.atualizar(id, this.itemSB);
-        this.itemSB = await this.itemServiceSB.consultarPorNome(this.itemSB!.nome!);
+        this.itemSB = await this.itemServiceSB.consultarPorNome(
+          this.itemSB!.nome!
+        );
         id = this.itemSB?.id;
       } else {
         resultado = await this.itemServiceSB.inserir(this.itemSB);
-        this.itemSB = await this.itemServiceSB.consultarPorNome(this.itemSB!.nome!);
+        this.itemSB = await this.itemServiceSB.consultarPorNome(
+          this.itemSB!.nome!
+        );
         id = this.itemSB?.id;
       }
 
-      if(this.form.get('idResistencia')?.value){
+      if (this.form.get('idResistencia')?.value) {
         await this.itemResistenciaSB.atualizar(id, this.itemResistencia);
       } else {
         this.itemResistencia.id = id;
         await this.itemResistenciaSB.inserir(this.itemResistencia);
       }
 
-      if(this.form.get('idManutencao')?.value){
+      if (this.form.get('idManutencao')?.value) {
         await this.itemManutencaoSB.atualizar(id, this.itemManutencao);
       } else {
         this.itemManutencao.id = id;
         await this.itemManutencaoSB.inserir(this.itemManutencao);
       }
 
-      if(this.form.get('idArma')?.value){
+      if (this.form.get('idArma')?.value) {
         await this.itemArmaSB.atualizar(id, this.itemArma);
       } else {
         this.itemArma.id = id;
@@ -548,19 +600,32 @@ export class ArmasComponent implements AfterViewInit {
         console.log(response);
       },
       complete: () => {
-
-        
-        const naoMagico = this.objetos.filter(p => !(p.chave.includes(Chave.ITEM_MAGICO_MENOR) || p.chave.includes(Chave.ITEM_MAGICO_MEDIO) || p.chave.includes(Chave.ITEM_MAGICO_MAIOR)));
+        const naoMagico = this.objetos.filter(
+          (p) =>
+            !(
+              p.chave.includes(Chave.ITEM_MAGICO_MENOR) ||
+              p.chave.includes(Chave.ITEM_MAGICO_MEDIO) ||
+              p.chave.includes(Chave.ITEM_MAGICO_MAIOR)
+            )
+        );
 
         this.dataSource = new MatTableDataSource(naoMagico);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
         this.numero_registros = naoMagico.length;
-        
-        this.armas_simples = naoMagico.filter(p => p.chave.includes(Chave.PROFICIENCIA_ARMA_SIMPLES));
-        this.armas_marciais = naoMagico.filter(p => p.chave.includes(Chave.PROFICIENCIA_ARMA_MARCIAL));
-        this.armas_exoticas = naoMagico.filter(p => p.chave.includes(Chave.PROFICIENCIA_ARMA_EXOTICA));
-        this.armas_fogo = naoMagico.filter(p => p.chave.includes(Chave.PROFICIENCIA_ARMA_DE_FOGO));
+
+        this.armas_simples = naoMagico.filter((p) =>
+          p.chave.includes(Chave.PROFICIENCIA_ARMA_SIMPLES)
+        );
+        this.armas_marciais = naoMagico.filter((p) =>
+          p.chave.includes(Chave.PROFICIENCIA_ARMA_MARCIAL)
+        );
+        this.armas_exoticas = naoMagico.filter((p) =>
+          p.chave.includes(Chave.PROFICIENCIA_ARMA_EXOTICA)
+        );
+        this.armas_fogo = naoMagico.filter((p) =>
+          p.chave.includes(Chave.PROFICIENCIA_ARMA_DE_FOGO)
+        );
 
         this.dataSourceAS = new MatTableDataSource(this.armas_simples);
         this.dataSourceAS.paginator = this.paginator;
@@ -697,11 +762,11 @@ export class ArmasComponent implements AfterViewInit {
   }
 
   umTerco(preco: number) {
-    return Number((preco/3).toFixed(1))
+    return Number((preco / 3).toFixed(1));
   }
 
   umDecimo(preco: number) {
-    return Number((preco/10).toFixed(1))
+    return Number((preco / 10).toFixed(1));
   }
 
   limparFiltros() {

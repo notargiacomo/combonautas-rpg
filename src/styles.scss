@@ -35,6 +35,14 @@ header,
   }
 }
 
+.mat-tree-node {
+  background-color: rgb(240, 230, 245) !important;
+  font-family: "Oswald" !important;
+  font-weight: normal !important; /* Pode ser 'bold' ou outros valores se necessário */
+  font-style: normal !important; /* Pode ser 'italic' ou outros estilos */
+  font-size: 12pt !important;
+}
+
 .mat-expansion-panel-header:not([aria-disabled=true]){
   padding-left: 0px;
 }
@@ -284,6 +292,19 @@ td {
 
 .mat-icon {
   cursor: pointer !important;
+}
+
+.no-arvore {
+  cursor: pointer !important;
+  border: none !important; /* Remove estilos padrão */
+  border-top: 2px solid rgb(240, 230, 245) !important; /* Define a cor e a altura */
+  border-radius: 10px !important; /* Arredonda os cantos */
+  background-color: rgb(240, 230, 245) !important;
+}
+
+.card-padrao .card-padrao-arvore {
+  background-color: rgb(45, 35, 60) !important; /* Cinza claro */
+  color: rgb(255, 255, 255) !important;
 }
 
 button[mat-flat-button] {

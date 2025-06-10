@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { SupabaseService } from './supabase.service';
 import { RegraItemSB } from '../../model/supamodel/regra.item.sb';
+import { RegraTree } from '@app/model/RegraTree';
 
 @Injectable({
   providedIn: 'root'
@@ -61,6 +62,61 @@ export class RegraServiceSupabase {
 
     return data;
   }
+
+  async consultarPorId(id: number) {
+    const { data, error } = await this.supabase.client!
+      .from('tb_regra')
+      .select('id, nome, descricao')
+      .eq('id', id);
+      
+    
+    if (error) {
+      console.error('Erro ao listar itens:', error);
+      throw error;
+    }
+
+    const item = data[0] ?? null;
+    return item;
+  }
+
+  async carregarMenusConceito(regra: RegraTree) : Promise<RegraTree>{
+    const { data, error } = await this.supabase.client!
+      .from('tb_regra')
+      .select('id, nome, descricao, sequencia')
+      .eq('id', regra.id)
+      .limit(1);
+
+    if (error) {
+      console.error('Erro ao listar regras:', error);
+      throw error;
+    }
+
+    return await this.carregarFilhos(data[0]) ?? null;
+  }
+
+async carregarFilhos(regra: RegraTree): Promise<RegraTree> {
+  const { data, error } = await this.supabase.client!
+    .from('tb_regra')
+    .select('id, nome, descricao, sequencia')
+    .eq('id_regra_pai', regra.id);
+
+  if (error) {
+    console.error('Erro ao listar regras:', error);
+    throw error;
+  }
+
+  data.sort((a, b) => a.sequencia - b.sequencia);
+
+  // Aqui criamos os filhos de forma segura e recursiva
+  const filhosCompletos: RegraTree[] = [];
+  for (const filho of data) {
+    const filhoCompleto = await this.carregarFilhos(filho);
+    filhosCompletos.push(filhoCompleto);
+  }
+
+  regra.children = filhosCompletos;
+  return regra;
+}
 
   async deletarRegrasItens(ids: number[]){
     const { data, error } = await this.supabase.client!
