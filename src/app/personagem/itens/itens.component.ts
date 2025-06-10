@@ -21,6 +21,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ArmasComponent } from "./armas/armas.component";
+import { MunicoesComponent } from "./municoes/municoes.component";
 
 @Component({
   selector: 'app-itens',
@@ -43,7 +44,8 @@ import { ArmasComponent } from "./armas/armas.component";
     MatSortModule,
     MatPaginatorModule,
     MatFormFieldModule,
-    ArmasComponent
+    ArmasComponent,
+    MunicoesComponent
 ],
   templateUrl: './itens.component.html',
   styleUrl: './itens.component.scss',
