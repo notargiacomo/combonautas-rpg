@@ -32,21 +32,18 @@ import { TipoItem } from '@app/enum/tipo.item.enum';
 import { Item } from '@app/model/item';
 import { RegraTree } from '@app/model/RegraTree';
 import { AlcanceSB } from '@app/model/supamodel/alcance.sb';
-import { ItemArmaSB } from '@app/model/supamodel/item.arma.sb';
 import { ItemManutencaoSB } from '@app/model/supamodel/item.manutencao.sb';
-import { ItemResistenciaSB } from '@app/model/supamodel/item.resistencia.sb';
+import { ItemMunicaoSB } from '@app/model/supamodel/item.municao.sb';
 import { ItemSB } from '@app/model/supamodel/item.sb';
 import { PericiaItemSB } from '@app/model/supamodel/pericia.item.sb';
 import { PericiaSB } from '@app/model/supamodel/pericia.sb';
 import { ReferenciaItemSB } from '@app/model/supamodel/referencia.item.sb';
 import { RegraItemSB } from '@app/model/supamodel/regra.item.sb';
 import { TipoDanoItemSB } from '@app/model/supamodel/tipo.dano.item.sb';
-import { TipoDanoSB } from '@app/model/supamodel/tipo.dano.sb';
 import { ItemService } from '@app/service/item.service';
 import { AlcanceServiceSupabase } from '@app/service/supaservice/alcance.service.supabase';
-import { ItemArmaServiceSupabase } from '@app/service/supaservice/item.arma.service.supabase';
 import { ItemManutencaoServiceSupabase } from '@app/service/supaservice/item.manutencao.service.supabase';
-import { ItemResistenciaServiceSupabase } from '@app/service/supaservice/item.resistencia.service.supabase';
+import { ItemMunicaoServiceSupabase } from '@app/service/supaservice/item.municao.service.supabase';
 import { ItemServiceSupabase } from '@app/service/supaservice/item.service.supabase';
 import { PericiaServiceSupabase } from '@app/service/supaservice/pericia.service.supabase';
 import { ReferenciaServiceSupabase } from '@app/service/supaservice/referencia.service.supabase';
@@ -94,10 +91,6 @@ export class MunicoesComponent implements AfterViewInit {
 
   form!: FormGroup;
   objetos!: Item[];
-  armas_simples!: Item[];
-  armas_marciais!: Item[];
-  armas_exoticas!: Item[];
-  armas_fogo!: Item[];
 
   tiposItem: any[] = [];
   chaves: Chave[] = [];
@@ -105,10 +98,6 @@ export class MunicoesComponent implements AfterViewInit {
   selecaoChave: boolean = false;
 
   numero_registros = 0;
-  numero_registros_armas_simples = 0;
-  numero_registros_armas_marciais = 0;
-  numero_registros_armas_exoticas = 0;
-  numero_registros_armas_de_fogo = 0;
   filtro_traco: string = '';
 
   dataSource = new MatTableDataSource<Item>();
@@ -127,8 +116,7 @@ export class MunicoesComponent implements AfterViewInit {
 
   objeto: Item | undefined;
   itemSB?: ItemSB;
-  itemArma?: ItemArmaSB;
-  itemResistencia?: ItemResistenciaSB;
+  itemMunicao?: ItemMunicaoSB;
   itemManutencao?: ItemManutencaoSB;
   referencia!: { id: number; nome: string };
   referencias: any[] = [];
@@ -138,7 +126,6 @@ export class MunicoesComponent implements AfterViewInit {
   periciasItem: PericiaItemSB[] = [];
   referenciaItem?: ReferenciaItemSB;
   alcances: AlcanceSB[] = [];
-  tiposDano: TipoDanoSB[] = [];
   tiposDanoItem: TipoDanoItemSB[] = [];
   tempos: any[] = [8, 40, 160];
 
@@ -152,8 +139,7 @@ export class MunicoesComponent implements AfterViewInit {
     private readonly alcanceServiceSB: AlcanceServiceSupabase,
     private readonly periciaServiceSB: PericiaServiceSupabase,
     private itemManutencaoSB: ItemManutencaoServiceSupabase,
-    private itemArmaSB: ItemArmaServiceSupabase,
-    private itemResistenciaSB: ItemResistenciaServiceSupabase,
+    private itemMunicaoSB: ItemMunicaoServiceSupabase,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}
@@ -210,7 +196,6 @@ export class MunicoesComponent implements AfterViewInit {
       rd: [],
       pv: [],
       idMunicao: [],
-      idResistencia: [],
       idManutencao: [],
       preco: [],
       cd: [],
@@ -253,8 +238,6 @@ export class MunicoesComponent implements AfterViewInit {
 
       this.pericias = await this.periciaServiceSB.listar();
 
-      this.tiposDano = await this.tiposDanoServiceSB.listar();
-      this.tiposDano = this.ordenacaoAlfabetica(this.tiposDano);
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -322,8 +305,7 @@ export class MunicoesComponent implements AfterViewInit {
     this.form.get('tela')?.setValue(tela);
     this.objeto = undefined;
     this.itemSB = undefined;
-    this.itemArma = undefined;
-    this.itemResistencia = undefined;
+    this.itemMunicao = undefined;
     this.itemManutencao = undefined;
     this.regrasItem = [];
     this.periciasItem = [];
@@ -354,7 +336,6 @@ export class MunicoesComponent implements AfterViewInit {
       }
       this.selecionaArma(objeto);
       this.selecionaManutencao(objeto);
-      this.selecionaResistencia(objeto);
     }, 1000);
     this.cdr.detectChanges();
   }
@@ -383,30 +364,10 @@ export class MunicoesComponent implements AfterViewInit {
     }
   }
 
-  async selecionaResistencia(objeto: Item) {
-    if (this.form.get('idResistencia')?.value) {
-      try {
-        this.itemResistencia = await this.itemResistenciaSB.consultarPorId(
-          this.form.get('idResistencia')?.value
-        );
-      } catch (err) {
-        console.error('Erro ao carregar Item Arma', err);
-      }
-    }
-
-    if (this.itemResistencia) {
-      this.form.get('rd')?.setValue(this.itemResistencia?.reducao_dano);
-      this.form.get('pv')?.setValue(this.itemResistencia?.pontos_vida);
-    } else {
-      this.form.get('rd')?.setValue(objeto.rd);
-      this.form.get('pv')?.setValue(objeto.pv);
-    }
-  }
-
   async selecionaArma(objeto: Item) {
     if (this.form.get('idMunicao')?.value) {
       try {
-        this.itemArma = await this.itemArmaSB.consultarPorId(
+        this.itemMunicao = await this.itemMunicaoSB.consultarPorId(
           this.form.get('idMunicao')?.value
         );
       } catch (err) {
@@ -414,31 +375,10 @@ export class MunicoesComponent implements AfterViewInit {
       }
     }
 
-    if (this.itemArma) {
-      this.form.get('dano')?.setValue(this.itemArma.dano);
-      this.form.get('margem')?.setValue(this.itemArma.margem_ameaca);
-      this.form
-        .get('multiplicador')
-        ?.setValue(this.itemArma.multiplicador_critico);
-      this.form.get('espaco')?.setValue(this.itemArma.espaco);
-      this.form
-        .get('idAlcance')
-        ?.setValue(
-          this.alcances.find((i) => i.id === this.itemArma?.id_alcance)?.id
-        );
+    if (this.itemMunicao) {
+      this.form.get('espaco')?.setValue(this.itemMunicao.espaco);
+      this.form.get('qtd_pacote_municao')?.setValue(this.itemMunicao.qtd_pacote_municao);
     } else {
-      this.form.get('dano')?.setValue(objeto.dano);
-      this.form.get('margem')?.setValue(objeto.margem_ameaca);
-      this.form.get('multiplicador')?.setValue(objeto.multiplicador_critico);
-      this.form
-        .get('idAlcance')
-        ?.setValue(
-          this.alcances.find(
-            (i) =>
-              i.medida === objeto?.alcance ||
-              (objeto?.alcance === 0 && i.medida === 1.5)
-          )?.id
-        );
       this.form.get('espaco')?.setValue(objeto.espaco);
     }
   }
@@ -453,17 +393,9 @@ export class MunicoesComponent implements AfterViewInit {
       caminho_imagem: this.objeto?.imagem,
     };
 
-    this.itemArma = {
-      dano: this.form.get('dano')?.value,
-      margem_ameaca: this.form.get('margem')?.value,
-      multiplicador_critico: this.form.get('multiplicador')?.value,
+    this.itemMunicao = {
       espaco: this.form.get('espaco')?.value,
-      id_alcance: this.form.get('idAlcance')?.value,
-    };
-
-    this.itemResistencia = {
-      pontos_vida: this.form.get('pv')?.value,
-      reducao_dano: this.form.get('rd')?.value,
+      qtd_pacote_municao: this.form.get('qtd_pacote_municao')?.value,
     };
 
     this.itemManutencao = {
@@ -490,13 +422,6 @@ export class MunicoesComponent implements AfterViewInit {
         id = this.itemSB?.id;
       }
 
-      if (this.form.get('idResistencia')?.value) {
-        await this.itemResistenciaSB.atualizar(id, this.itemResistencia);
-      } else {
-        this.itemResistencia.id = id;
-        await this.itemResistenciaSB.inserir(this.itemResistencia);
-      }
-
       if (this.form.get('idManutencao')?.value) {
         await this.itemManutencaoSB.atualizar(id, this.itemManutencao);
       } else {
@@ -505,12 +430,11 @@ export class MunicoesComponent implements AfterViewInit {
       }
 
       if (this.form.get('idMunicao')?.value) {
-        await this.itemArmaSB.atualizar(id, this.itemArma);
+        await this.itemMunicaoSB.atualizar(id, this.itemMunicao);
       } else {
-        this.itemArma.id = id;
-        this.itemArma.id_item_manutencao = id;
-        this.itemArma.id_item_resistencia = id;
-        await this.itemArmaSB.inserir(this.itemArma);
+        this.itemMunicao.id = id;
+        this.itemMunicao.id_item_manutencao = id;
+        await this.itemMunicaoSB.inserir(this.itemMunicao);
       }
 
       const ri: { id_item: number; id_regra: number }[] = [];
@@ -578,7 +502,6 @@ export class MunicoesComponent implements AfterViewInit {
           return nome_a.localeCompare(nome_b);
         });
         this.objetos = response;
-        this.numero_registros_armas_simples = response.length;
         this.cdr.detectChanges();
       },
       error: (response) => {
@@ -598,39 +521,6 @@ export class MunicoesComponent implements AfterViewInit {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
         this.numero_registros = naoMagico.length;
-
-        this.armas_simples = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_SIMPLES)
-        );
-        this.armas_marciais = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_MARCIAL)
-        );
-        this.armas_exoticas = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_EXOTICA)
-        );
-        this.armas_fogo = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_DE_FOGO)
-        );
-
-        this.dataSourceAS = new MatTableDataSource(this.armas_simples);
-        this.dataSourceAS.paginator = this.paginator;
-        this.dataSourceAS.sort = this.sort;
-        this.numero_registros_armas_simples = this.armas_simples.length;
-
-        this.dataSourceAM = new MatTableDataSource(this.armas_marciais);
-        this.dataSourceAM.paginator = this.paginator;
-        this.dataSourceAM.sort = this.sort;
-        this.numero_registros_armas_marciais = this.armas_marciais.length;
-
-        this.dataSourceAE = new MatTableDataSource(this.armas_exoticas);
-        this.dataSourceAE.paginator = this.paginator;
-        this.dataSourceAE.sort = this.sort;
-        this.numero_registros_armas_exoticas = this.armas_exoticas.length;
-
-        this.dataSourceAF = new MatTableDataSource(this.armas_fogo);
-        this.dataSourceAF.paginator = this.paginator;
-        this.dataSourceAF.sort = this.sort;
-        this.numero_registros_armas_de_fogo = this.armas_fogo.length;
 
         this.carregaChaves();
       },
@@ -681,34 +571,9 @@ export class MunicoesComponent implements AfterViewInit {
     this.form.get('idRegra')?.setValue(null);
   }
 
-  adicionarTipoDano(tipoDano: any) {
-    const tipoDanoParaAdicionar = this.tiposDano.find(
-      (r) => r.id === tipoDano.value
-    );
-    if (
-      !this.tiposDanoItem.find((r) => r.id_tipo === tipoDanoParaAdicionar?.id)
-    ) {
-      let tipoDano: TipoDanoItemSB = {
-        id_item: this.form.get('id')?.value,
-        id_tipo: tipoDanoParaAdicionar?.id,
-        tb_tipo_dano: {
-          nome: tipoDanoParaAdicionar?.nome,
-        },
-      };
-      this.tiposDanoItem.push(tipoDano);
-    }
-    this.form.get('idTipoDano')?.setValue(null);
-  }
-
   removerRegra(regra: any) {
     this.regrasItem = this.regrasItem.filter(
       (r) => r.id_regra !== regra.id_regra
-    );
-  }
-
-  removerTipoDano(tipoDanoItem: any) {
-    this.tiposDanoItem = this.tiposDanoItem.filter(
-      (r) => r.id_tipo !== tipoDanoItem.id_tipo
     );
   }
 
@@ -748,10 +613,6 @@ export class MunicoesComponent implements AfterViewInit {
 
   umTerco(preco: number) {
     return Number((preco / 3).toFixed(1));
-  }
-
-  umDecimo(preco: number) {
-    return Number((preco / 10).toFixed(1));
   }
 
   limparFiltros() {

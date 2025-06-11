@@ -21,6 +21,7 @@ export interface Item {
     cd_identificar_item?:number;
     custo_permanente_pontos_mana?:number,
     preco_fabricacao?:number;
+    qtd_pacote_municao?: number;
     tempo_fabricacao_em_horas?:number;
     preco_conserto?:number;
     tempo_conserto_em_horas?:number;
