@@ -1,7 +1,3 @@
-import { TipoDano } from "../../enum/tipo.dano.enum";
-import { AlcanceSB } from "./alcance.sb";
-import { TipoDanoSB } from "./tipo.dano.sb";
-
 export interface ItemArmaSB {
       id?: number;
       dano?: string;

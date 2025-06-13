@@ -259,8 +259,6 @@ export class MunicoesComponent implements AfterViewInit {
         this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(
           this.itemSB.id!
         );
-        this.tiposDanoItem =
-          await this.tiposDanoServiceSB.recuperaTipoDanoDoItem(this.itemSB.id!);
         this.periciasItem = await this.periciaServiceSB.recuperaPericiaItem(
           this.itemSB.id!
         );
@@ -321,7 +319,6 @@ export class MunicoesComponent implements AfterViewInit {
       if (this.itemSB) {
         this.form.get('id')?.setValue(this.itemSB.id);
         this.form.get('idMunicao')?.setValue(this.itemSB.id);
-        this.form.get('idResistencia')?.setValue(this.itemSB.id);
         this.form.get('idManutencao')?.setValue(this.itemSB.id);
         this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
         this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
@@ -334,9 +331,9 @@ export class MunicoesComponent implements AfterViewInit {
         this.form.get('descricao')?.setValue(objeto.descricao);
         this.form.get('paginas')?.setValue(objeto.paginas);
       }
-      this.selecionaArma(objeto);
+      this.selecionaMunicao(objeto);
       this.selecionaManutencao(objeto);
-    }, 1000);
+    }, 2000);
     this.cdr.detectChanges();
   }
 
@@ -364,7 +361,7 @@ export class MunicoesComponent implements AfterViewInit {
     }
   }
 
-  async selecionaArma(objeto: Item) {
+  async selecionaMunicao(objeto: Item) {
     if (this.form.get('idMunicao')?.value) {
       try {
         this.itemMunicao = await this.itemMunicaoSB.consultarPorId(

@@ -35,6 +35,10 @@ header,
   }
 }
 
+p {
+  text-align: justify !important;
+}
+
 .mat-tree-node {
   background-color: rgb(240, 230, 245) !important;
   font-family: "Oswald" !important;
@@ -645,5 +649,48 @@ tr.element-row:not(.example-expanded-row):active {
   background-color: white !important;
   width: 100% !important;
 }
+
+.mat-mdc-tab-header {
+  border-bottom: 2px solid #bfa7d7 !important;
+  color: #5a3e69 !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+// .mat-tab-group {
+//   background-color: transparent !important;
+//   border-bottom: 2px solid #bfa7d7 !important;
+//   background-color: rgba(255, 255, 255, 0.05) !important;
+//   color: white !important;
+// }
+
+// .mat-tab-labels {
+//   justify-content: center !important;
+//   gap: 32px !important;
+// }
+
+// .mat-tab-label {
+//   font-weight: 600 !important;
+//   font-size: 1.0rem !important;
+//   color: #5a3e69 !important;
+//   padding: 12px 24px !important;
+//   transition: all 0.3s ease !important;
+//   border-radius: 8px 8px 0 0 !important;
+//   background-color: rgba(255, 255, 255, 0.05) !important;
+// }
+
+// .mat-tab-label:hover {
+//   background-color: rgba(255, 255, 255, 0.12) !important;
+//   cursor: pointer !important;
+// }
+
+// .mat-tab-label.mat-tab-label-active {
+//   background-color: #5a3e69 !important;
+//   color: #fff !important;
+//   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1) !important;
+// }
+
+// .mat-ink-bar {
+//   background-color: transparent !important;
+// }
 
  

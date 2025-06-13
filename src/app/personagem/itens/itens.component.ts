@@ -1,7 +1,9 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import {
   AfterViewInit,
-  Component
+  ChangeDetectorRef,
+  Component,
+  signal
 } from '@angular/core';
 import {
   FormsModule,
@@ -22,6 +24,10 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ArmasComponent } from "./armas/armas.component";
 import { MunicoesComponent } from "./municoes/municoes.component";
+import { ArmadurasComponent } from "./armaduras/armaduras.component";
+import { RegraTree } from '@app/model/RegraTree';
+import { MatTreeModule } from '@angular/material/tree';
+import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
 
 @Component({
   selector: 'app-itens',
@@ -45,20 +51,50 @@ import { MunicoesComponent } from "./municoes/municoes.component";
     MatPaginatorModule,
     MatFormFieldModule,
     ArmasComponent,
-    MunicoesComponent
+    MunicoesComponent,
+    ArmadurasComponent,
+    MatTreeModule,
 ],
   templateUrl: './itens.component.html',
   styleUrl: './itens.component.scss',
 })
 export class ItensComponent implements AfterViewInit {
 
+  dataSourceRegraTree: RegraTree[] = [];
+  conceitos: RegraTree[] = [];
+  childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
+  hasChild = (_: number, node: RegraTree) => !!node.children && node.children.length > 0;
+
+  readonly panelOpenState = signal(false);
+  displayedColumns: string[] = ['nome', 'acao'];
+  regraSelecionada?: RegraTree;
+
   constructor(
+    private readonly regraServiceSB: RegraServiceSupabase,
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngAfterViewInit() {
   }
+  
 
-  ngOnInit() {
+  async ngOnInit() {
+
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 30 }));
+    this.cdr.detectChanges();
+  }
+
+  ordenacaoAlfabetica(lista: any[]) {
+    lista.sort((a, b) => {
+      let nome_a = a.nome ? a.nome : 'a';
+      let nome_b = b.nome ? b.nome : 'b';
+      return nome_a.localeCompare(nome_b);
+    });
+    return lista;
+  }
+
+  selecionaRegra(regraSelecionada: any){
+    this.regraSelecionada = regraSelecionada;
   }
   
 }
