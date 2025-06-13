@@ -1,11 +1,10 @@
-import { OpcoesSelecao } from "../enum/opcoes.selecao";
-import { Poder } from "./poder";
 
 export class Regra {
-  id!: number;
+  id?: number;
   nome?: string;
-  tipo?: string;
   descricao?: string;
+  sequencia?: number;
+  e_chave?: boolean;
 
   constructor(){
   }

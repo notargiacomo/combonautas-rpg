@@ -261,8 +261,8 @@ export class ArmasComponent implements AfterViewInit {
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
-      this.regras = await this.regraServiceSB.listar();
-      this.regras = this.ordenacaoAlfabetica(this.regras);
+      this.regras = await this.regraServiceSB.carregarCombo(21);
+      // this.regras = this.ordenacaoAlfabetica(this.regras);
 
       this.alcances = await this.alcanceServiceSB.listar();
 

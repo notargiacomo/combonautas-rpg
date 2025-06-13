@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { SupabaseService } from './supabase.service';
 import { RegraItemSB } from '../../model/supamodel/regra.item.sb';
 import { RegraTree } from '@app/model/RegraTree';
+import { Regra } from '@app/model/regra';
 
 @Injectable({
   providedIn: 'root'
@@ -79,6 +80,50 @@ export class RegraServiceSupabase {
     return item;
   }
 
+  async carregarCombo(id: number) : Promise<Regra[]>{
+    const { data, error } = await this.supabase.client!
+      .from('tb_regra')
+      .select('id, nome, descricao, sequencia')
+      .eq('id', id).eq('e_chave', true)
+      .limit(1);
+
+    if (error) {
+      console.error('Erro ao listar regras:', error);
+      throw error;
+    }
+
+    let regras: Regra[] = [];
+    regras.push(data[0]);
+    let id_pai = data[0].id
+
+    return await this.carregarFilhosCombo(id_pai, regras) ?? null;
+  }
+
+  async carregarFilhosCombo(id: number, regras: Regra[]): Promise<Regra[]> {
+  const { data, error } = await this.supabase.client!
+    .from('tb_regra')
+    .select('id, nome, descricao, sequencia, e_chave')
+    .eq('id_regra_pai', id);
+
+  if (error) {
+    console.error('Erro ao listar regras:', error);
+    throw error;
+  }
+
+  data.sort((a, b) => a.sequencia - b.sequencia);
+
+  for (const filho of data) {
+    if(filho.e_chave){
+      regras.push(filho);
+    }
+
+    let id_pai = filho.id;
+    const filhos = await this.carregarFilhosCombo(id_pai, regras);
+  }
+
+  return regras;
+}
+
   async carregarMenusConceito(regra: RegraTree) : Promise<RegraTree>{
     const { data, error } = await this.supabase.client!
       .from('tb_regra')
@@ -107,7 +152,6 @@ async carregarFilhos(regra: RegraTree): Promise<RegraTree> {
 
   data.sort((a, b) => a.sequencia - b.sequencia);
 
-  // Aqui criamos os filhos de forma segura e recursiva
   const filhosCompletos: RegraTree[] = [];
   for (const filho of data) {
     const filhoCompleto = await this.carregarFilhos(filho);
