@@ -241,8 +241,8 @@ export class ArmadurasComponent {
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
-      this.regras = await this.regraServiceSB.listar();
-      this.regras = this.ordenacaoAlfabetica(this.regras);
+      this.regras = await this.regraServiceSB.carregarCombo(38);
+      // this.regras = this.ordenacaoAlfabetica(this.regras);
 
       this.pericias = await this.periciaServiceSB.listar();
     } catch (err) {
