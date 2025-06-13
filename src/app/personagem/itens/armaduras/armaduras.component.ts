@@ -216,7 +216,7 @@ export class ArmadurasComponent {
       return nome_a!.localeCompare(nome_b!);
     });
 
-    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 21 }));
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 38 }));
     this.cdr.detectChanges();
   }
 
