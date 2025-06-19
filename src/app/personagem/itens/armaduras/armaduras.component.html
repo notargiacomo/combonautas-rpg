@@ -3,10 +3,12 @@
         <mat-tab label="Conceitos">
             <div class="row">
                 <div class="col-sm-6 mt-4">
-                    <mat-card class="card-padrao" *ngIf="regraSelecionada?.descricao" style="background-color: rgb(120, 80, 160) !important; color: white;">
+                    <mat-card class="card-padrao" *ngIf="regraSelecionada?.descricao"
+                        style="background-color: rgb(120, 80, 160) !important; color: white;">
                         <div class="row">
                             <div class="col-sm-12" style="color: white !important;">
-                                <b style="color: white !important; font-size: large !important;">{{ regraSelecionada?.nome?.toUpperCase() }}</b>
+                                <b style="color: white !important; font-size: large !important;">{{
+                                    regraSelecionada?.nome?.toUpperCase() }}</b>
                             </div>
                         </div>
                         <div class="row">
@@ -16,7 +18,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12 d-flex justify">
-                              <div [innerHTML]="regraSelecionada?.descricao"></div>
+                                <div [innerHTML]="regraSelecionada?.descricao"></div>
                             </div>
                         </div>
                     </mat-card>
@@ -26,16 +28,19 @@
                         [childrenAccessor]="childrenAccessor">
                         <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
                             <!-- <button matIconButton disabled></button> -->
-                            <a matButton (click)="selecionaRegra(node)" target="_blank" style="cursor: pointer !important;">{{node.nome}}</a>
+                            <a matButton (click)="selecionaRegra(node)" target="_blank"
+                                style="cursor: pointer !important;">{{node.nome}}</a>
                         </mat-tree-node>
                         <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodeToggle
                             [cdkTreeNodeTypeaheadLabel]="node.nome">
-                            <button matIconButton matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.nome" class="no-arvore">
+                            <button matIconButton matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.nome"
+                                class="no-arvore">
                                 <mat-icon class="mat-icon-rtl-mirror" class="no-arvore">
                                     {{tree.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
                                 </mat-icon>
                             </button>
-                            <a matButton (click)="selecionaRegra(node)" target="_blank" style="cursor: pointer !important;" >{{node.nome}}</a>
+                            <a matButton (click)="selecionaRegra(node)" target="_blank"
+                                style="cursor: pointer !important;">{{node.nome}}</a>
                         </mat-tree-node>
                     </mat-tree>
                 </div>
@@ -280,8 +285,8 @@
                                                         <div class="col-sm-4 mt-4">
                                                             <mat-form-field class="text-field-formulario-edicao">
                                                                 <mat-label>Digite a penalidade</mat-label>
-                                                                <input formControlName="penalidade" matInput type="number"
-                                                                    [disabled]="true" />
+                                                                <input formControlName="penalidade" matInput
+                                                                    type="number" [disabled]="true" />
                                                             </mat-form-field>
                                                         </div>
                                                         <div class="col-sm-4 mt-4">
@@ -451,9 +456,9 @@
                                         <b>Número de Registros: {{ numero_registros }}</b>
                                     </div>
                                 </div>
-                                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+                                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
                                     <ng-container matColumnDef="nome">
-                                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                                        <th mat-header-cell *matHeaderCellDef>
                                             Nome
                                         </th>
                                         <td mat-cell *matCellDef="let element">
@@ -481,6 +486,14 @@
                                         [ngClass]="{'zebra': isOdd(element)}">
                                     </tr>
                                 </table>
+                                <mat-paginator [length]="numero_registros" [pageSizeOptions]="[
+                                    10,
+                                    20,
+                                    50,
+                                    100,
+                                    numero_registros ? numero_registros : 200
+                                    ]" showFirstLastButtons aria-label="Select page of periodic elements">
+                                </mat-paginator>
                             </mat-card>
                         </div>
                         <div class="col-sm-6 mt-4" *ngIf="visao('PROFICIENCIA')">
@@ -504,9 +517,9 @@
                                                 <b>Número de Registros: {{ numero_registros_armadura_leve }}</b>
                                             </div>
                                         </div>
-                                        <table mat-table [dataSource]="dataSourceAL" class="mat-elevation-z8" matSort>
+                                        <table mat-table [dataSource]="dataSourceAL" class="mat-elevation-z8">
                                             <ng-container matColumnDef="nome">
-                                                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                                                <th mat-header-cell *matHeaderCellDef>
                                                     Nome
                                                 </th>
                                                 <td mat-cell *matCellDef="let element">
@@ -555,9 +568,9 @@
                                                 <b>Número de Registros: {{ numero_registros_armadura_pesada }}</b>
                                             </div>
                                         </div>
-                                        <table mat-table [dataSource]="dataSourceAP" class="mat-elevation-z8" matSort>
+                                        <table mat-table [dataSource]="dataSourceAP" class="mat-elevation-z8">
                                             <ng-container matColumnDef="nome">
-                                                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                                                <th mat-header-cell *matHeaderCellDef>
                                                     Nome
                                                 </th>
                                                 <td mat-cell *matCellDef="let element">

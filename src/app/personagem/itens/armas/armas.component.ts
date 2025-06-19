@@ -1,7 +1,5 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import {
-  AfterViewInit,
-  ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   signal,
@@ -54,6 +52,7 @@ import { ReferenciaServiceSupabase } from '../../../service/supaservice/referenc
 import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
 import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
 import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
+import { Regra } from '@app/model/regra';
 
 @Component({
   selector: 'app-armas',
@@ -81,9 +80,8 @@ import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.
   ],
   templateUrl: './armas.component.html',
   styleUrl: './armas.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ArmasComponent implements AfterViewInit {
+export class ArmasComponent {
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
@@ -121,9 +119,6 @@ export class ArmasComponent implements AfterViewInit {
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
 
-  @ViewChild(MatSort)
-  sort!: MatSort;
-
   edicao: boolean = false;
 
   objeto: Item | undefined;
@@ -160,21 +155,20 @@ export class ArmasComponent implements AfterViewInit {
   ) {}
 
   async ngAfterViewInit() {
+    this.dataSource = new MatTableDataSource<Item>();
+    this.dataSource.paginator = this.paginator;
+
     this.dataSourceAS = new MatTableDataSource<Item>();
     this.dataSourceAS.paginator = this.paginator;
-    this.dataSourceAS.sort = this.sort;
 
     this.dataSourceAM = new MatTableDataSource<Item>();
     this.dataSourceAM.paginator = this.paginator;
-    this.dataSourceAM.sort = this.sort;
 
     this.dataSourceAE = new MatTableDataSource<Item>();
     this.dataSourceAE.paginator = this.paginator;
-    this.dataSourceAE.sort = this.sort;
 
     this.dataSourceAF = new MatTableDataSource<Item>();
     this.dataSourceAF.paginator = this.paginator;
-    this.dataSourceAF.sort = this.sort;
   }
   
   async ngOnInit() {
@@ -261,8 +255,35 @@ export class ArmasComponent implements AfterViewInit {
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
-      this.regras = await this.regraServiceSB.carregarCombo(21);
-      // this.regras = this.ordenacaoAlfabetica(this.regras);
+      this.regraServiceSB.carregarCombo(21).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
+
+      this.regraServiceSB.carregarCombo(48).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
+
+      this.regraServiceSB.carregarCombo(49).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
 
       this.alcances = await this.alcanceServiceSB.listar();
 
@@ -593,7 +614,7 @@ export class ArmasComponent implements AfterViewInit {
           return nome_a.localeCompare(nome_b);
         });
         this.objetos = response;
-        this.numero_registros_armas_simples = response.length;
+        this.numero_registros = response.length;
         this.cdr.detectChanges();
       },
       error: (response) => {
@@ -611,7 +632,6 @@ export class ArmasComponent implements AfterViewInit {
 
         this.dataSource = new MatTableDataSource(naoMagico);
         this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
         this.numero_registros = naoMagico.length;
 
         this.armas_simples = naoMagico.filter((p) =>
@@ -629,22 +649,18 @@ export class ArmasComponent implements AfterViewInit {
 
         this.dataSourceAS = new MatTableDataSource(this.armas_simples);
         this.dataSourceAS.paginator = this.paginator;
-        this.dataSourceAS.sort = this.sort;
         this.numero_registros_armas_simples = this.armas_simples.length;
 
         this.dataSourceAM = new MatTableDataSource(this.armas_marciais);
         this.dataSourceAM.paginator = this.paginator;
-        this.dataSourceAM.sort = this.sort;
         this.numero_registros_armas_marciais = this.armas_marciais.length;
 
         this.dataSourceAE = new MatTableDataSource(this.armas_exoticas);
         this.dataSourceAE.paginator = this.paginator;
-        this.dataSourceAE.sort = this.sort;
         this.numero_registros_armas_exoticas = this.armas_exoticas.length;
 
         this.dataSourceAF = new MatTableDataSource(this.armas_fogo);
         this.dataSourceAF.paginator = this.paginator;
-        this.dataSourceAF.sort = this.sort;
         this.numero_registros_armas_de_fogo = this.armas_fogo.length;
 
         this.carregaChaves();

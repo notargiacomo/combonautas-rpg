@@ -1,16 +1,6 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import {
-  ChangeDetectorRef,
-  Component,
-  signal,
-  ViewChild
-} from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  FormsModule,
-  ReactiveFormsModule,
-} from '@angular/forms';
+import { ChangeDetectorRef, Component, signal, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
@@ -26,32 +16,32 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
-import { RegraTree } from '@app/model/RegraTree';
-import { ItemArmaduraSB } from '@app/model/supamodel/item.armadura.sb';
-import { ItemArmaduraServiceSupabase } from '@app/service/supaservice/item.armadura.service.supabase';
-import { Chave } from '../../../enum/chave.enum';
-import { TipoItem } from '../../../enum/tipo.item.enum';
-import { Item } from '../../../model/item';
-import { ItemManutencaoSB } from '../../../model/supamodel/item.manutencao.sb';
-import { ItemResistenciaSB } from '../../../model/supamodel/item.resistencia.sb';
-import { ItemSB } from '../../../model/supamodel/item.sb';
-import { PericiaItemSB } from '../../../model/supamodel/pericia.item.sb';
-import { PericiaSB } from '../../../model/supamodel/pericia.sb';
-import { ReferenciaItemSB } from '../../../model/supamodel/referencia.item.sb';
-import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
-import { ItemService } from '../../../service/item.service';
-import { AlcanceServiceSupabase } from '../../../service/supaservice/alcance.service.supabase';
-import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
-import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
-import { ItemServiceSupabase } from '../../../service/supaservice/item.service.supabase';
-import { PericiaServiceSupabase } from '../../../service/supaservice/pericia.service.supabase';
-import { ReferenciaServiceSupabase } from '../../../service/supaservice/referencia.service.supabase';
-import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
-import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
-import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
+import { Chave } from '@app/enum/chave.enum';
+import { TipoItem } from '@app/enum/tipo.item.enum';
+import { Item } from '@app/model/item';
 import { Regra } from '@app/model/regra';
+import { RegraTree } from '@app/model/RegraTree';
+import { ItemManutencaoSB } from '@app/model/supamodel/item.manutencao.sb';
+import { ItemSB } from '@app/model/supamodel/item.sb';
+import { ItemVestuarioSB } from '@app/model/supamodel/item.vestuario.sb';
+import { PericiaItemSB } from '@app/model/supamodel/pericia.item.sb';
+import { PericiaSB } from '@app/model/supamodel/pericia.sb';
+import { ReferenciaItemSB } from '@app/model/supamodel/referencia.item.sb';
+import { RegraItemSB } from '@app/model/supamodel/regra.item.sb';
+import { TipoDanoItemSB } from '@app/model/supamodel/tipo.dano.item.sb';
+import { ItemService } from '@app/service/item.service';
+import { ItemManutencaoServiceSupabase } from '@app/service/supaservice/item.manutencao.service.supabase';
+import { ItemServiceSupabase } from '@app/service/supaservice/item.service.supabase';
+import { ItemVestuarioServiceSupabase } from '@app/service/supaservice/item.vestuario.service.supabase';
+import { PericiaServiceSupabase } from '@app/service/supaservice/pericia.service.supabase';
+import { ReferenciaServiceSupabase } from '@app/service/supaservice/referencia.service.supabase';
+import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
+import { TipoDanoServiceSupabase } from '@app/service/supaservice/tipo.dano.service.supabase';
+import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.service.supabase';
+
+
 @Component({
-  selector: 'app-armaduras',
+  selector: 'app-vestuarios',
   imports: [
     MatDividerModule,
     MatCardModule,
@@ -74,15 +64,15 @@ import { Regra } from '@app/model/regra';
     MatExpansionModule,
     MatTreeModule,
   ],
-  templateUrl: './armaduras.component.html',
-  styleUrl: './armaduras.component.scss'
+  templateUrl: './vestuarios.component.html',
+  styleUrl: './vestuarios.component.scss'
 })
-export class ArmadurasComponent {
-  dataSourceRegraTree: RegraTree[] = [];
+export class VestuariosComponent {
+dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
-
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
-  hasChild = (_: number, node: RegraTree) => !!node.children && node.children.length > 0;
+  hasChild = (_: number, node: RegraTree) =>
+    !!node.children && node.children.length > 0;
 
   readonly panelOpenState = signal(false);
   displayedColumns: string[] = ['nome', 'acao'];
@@ -91,23 +81,15 @@ export class ArmadurasComponent {
   form!: FormGroup;
   objetos!: Item[];
 
-  armadura_leve!: Item[];
-  armadura_pesada!: Item[];
-
   tiposItem: any[] = [];
   chaves: Chave[] = [];
 
   selecaoChave: boolean = false;
 
   numero_registros = 0;
-  numero_registros_armadura_leve = 0;
-  numero_registros_armadura_pesada = 0;
-
   filtro_traco: string = '';
 
   dataSource = new MatTableDataSource<Item>();
-  dataSourceAL = new MatTableDataSource<Item>();
-  dataSourceAP = new MatTableDataSource<Item>();
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
@@ -115,23 +97,17 @@ export class ArmadurasComponent {
   edicao: boolean = false;
 
   objeto: Item | undefined;
-
   itemSB?: ItemSB;
-  itemArmadura?: ItemArmaduraSB;
-  itemResistencia?: ItemResistenciaSB;
   itemManutencao?: ItemManutencaoSB;
-
+  itemVestuario?: ItemVestuarioSB;
   referencia!: { id: number; nome: string };
   referencias: any[] = [];
-
   regras: any[] = [];
   regrasItem: RegraItemSB[] = [];
-
   pericias: PericiaSB[] = [];
   periciasItem: PericiaItemSB[] = [];
-
   referenciaItem?: ReferenciaItemSB;
-
+  tiposDanoItem: TipoDanoItemSB[] = [];
   tempos: any[] = [8, 40, 160];
 
   constructor(
@@ -142,27 +118,18 @@ export class ArmadurasComponent {
     private readonly regraServiceSB: RegraServiceSupabase,
     private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
     private readonly periciaServiceSB: PericiaServiceSupabase,
+    private readonly itemVestuarioServiceSupabase: ItemVestuarioServiceSupabase,
     private itemManutencaoSB: ItemManutencaoServiceSupabase,
-    private itemArmaduraSB: ItemArmaduraServiceSupabase,
-    private itemResistenciaSB: ItemResistenciaServiceSupabase,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}
 
   async ngAfterViewInit() {
-
     this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
-
-    this.dataSourceAL = new MatTableDataSource<Item>();
-    this.dataSourceAL.paginator = this.paginator;
-
-    this.dataSourceAP = new MatTableDataSource<Item>();
-    this.dataSourceAP.paginator = this.paginator;
   }
-  
-  async ngOnInit() {
 
+  async ngOnInit() {
     this.itemSB = new ItemSB();
     const logado = sessionStorage.getItem('logado') || '';
 
@@ -191,20 +158,16 @@ export class ArmadurasComponent {
       pericia: [],
       caminhoImagem: [],
       paginas: [],
-      defesa: [],
-      penalidade: [],
+      dano: [],
       espaco: [],
       rd: [],
       pv: [],
-      idArmadura: [],
-      idResistencia: [],
+      idVestuario: [],
       idManutencao: [],
       preco: [],
       cd: [],
       tempo: [],
-      tela: ([] = ['ALFABETICA']),
     });
-
 
     this.consultar(false, null);
     this.carregarItens();
@@ -216,20 +179,13 @@ export class ArmadurasComponent {
       return nome_a!.localeCompare(nome_b!);
     });
 
-    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 38 }));
+    this.dataSourceRegraTree.push(
+      await this.regraServiceSB.carregarMenusConceito({ id: 53 })
+    );
     this.cdr.detectChanges();
   }
 
-  visao(visao: string){
-    let seVisao = false;
-    if(this.form != undefined) {
-      seVisao = this.form.get('tela')?.value == visao;
-    }
-
-    return seVisao;
-  }
-
-  selecionaRegra(regraSelecionada: any){
+  selecionaRegra(regraSelecionada: any) {
     this.regraSelecionada = regraSelecionada;
   }
 
@@ -240,26 +196,6 @@ export class ArmadurasComponent {
 
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
-
-      this.regraServiceSB.carregarCombo(38).then((regras: Regra[]) => {
-        regras.forEach((r) => {
-          this.regras.push(r);
-        });
-        this.regras = this.ordenacaoAlfabetica(this.regras);
-      })
-      .catch((error) => {
-        console.error('Erro ao carregar regras', error);
-      });
-
-      this.regraServiceSB.carregarCombo(48).then((regras: Regra[]) => {
-        regras.forEach((r) => {
-          this.regras.push(r);
-        });
-        this.regras = this.ordenacaoAlfabetica(this.regras);
-      })
-      .catch((error) => {
-        console.error('Erro ao carregar regras', error);
-      });
 
       this.regraServiceSB.carregarCombo(49).then((regras: Regra[]) => {
         regras.forEach((r) => {
@@ -272,6 +208,7 @@ export class ArmadurasComponent {
       });
 
       this.pericias = await this.periciaServiceSB.listar();
+
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -311,15 +248,6 @@ export class ArmadurasComponent {
     return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
-  isOddAL(element: any): boolean {
-    const index = this.dataSourceAL.data.indexOf(element);
-    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
-  }
-
-  isOddAP(element: any): boolean {
-    const index = this.dataSourceAP.data.indexOf(element);
-    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
-  }
 
   limparSelecao() {
     const tela = this.form.get('tela')?.value;
@@ -327,11 +255,11 @@ export class ArmadurasComponent {
     this.form.get('tela')?.setValue(tela);
     this.objeto = undefined;
     this.itemSB = undefined;
-    this.itemArmadura = undefined;
-    this.itemResistencia = undefined;
+    this.itemVestuario = undefined;
     this.itemManutencao = undefined;
     this.regrasItem = [];
     this.periciasItem = [];
+    this.tiposDanoItem = [];
   }
 
   seleciona(objeto: Item) {
@@ -342,8 +270,7 @@ export class ArmadurasComponent {
     setTimeout(() => {
       if (this.itemSB) {
         this.form.get('id')?.setValue(this.itemSB.id);
-        this.form.get('idArmadura')?.setValue(this.itemSB.id);
-        this.form.get('idResistencia')?.setValue(this.itemSB.id);
+        this.form.get('idVestuario')?.setValue(this.itemSB.id);
         this.form.get('idManutencao')?.setValue(this.itemSB.id);
         this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
         this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
@@ -356,10 +283,9 @@ export class ArmadurasComponent {
         this.form.get('descricao')?.setValue(objeto.descricao);
         this.form.get('paginas')?.setValue(objeto.paginas);
       }
-      this.selecionaArmadura(objeto);
+      this.selecionaVestuario(objeto);
       this.selecionaManutencao(objeto);
-      this.selecionaResistencia(objeto);
-    }, 1000);
+    }, 2000);
     this.cdr.detectChanges();
   }
 
@@ -387,45 +313,20 @@ export class ArmadurasComponent {
     }
   }
 
-  async selecionaResistencia(objeto: Item) {
-    if (this.form.get('idResistencia')?.value) {
+  async selecionaVestuario(objeto: Item) {
+    if (this.form.get('idVestuario')?.value) {
       try {
-        this.itemResistencia = await this.itemResistenciaSB.consultarPorId(
-          this.form.get('idResistencia')?.value
+        this.itemVestuario = await this.itemVestuarioServiceSupabase.consultarPorId(
+          this.form.get('idVestuario')?.value
         );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
     }
 
-    if (this.itemResistencia) {
-      this.form.get('rd')?.setValue(this.itemResistencia?.reducao_dano);
-      this.form.get('pv')?.setValue(this.itemResistencia?.pontos_vida);
+    if (this.itemVestuario) {
+      this.form.get('espaco')?.setValue(this.itemVestuario.espaco);
     } else {
-      this.form.get('rd')?.setValue(objeto.rd);
-      this.form.get('pv')?.setValue(objeto.pv);
-    }
-  }
-
-  async selecionaArmadura(objeto: Item) {
-    if (this.form.get('idArmadura')?.value) {
-      try {
-        this.itemArmadura = await this.itemArmaduraSB.consultarPorId(
-          this.form.get('idArmadura')?.value
-        );
-      } catch (err) {
-        console.error('Erro ao carregar Item Arma', err);
-      }
-    }
-
-    if (this.itemArmadura) {
-      this.form.get('defesa')?.setValue(this.itemArmadura.defesa);
-      this.form.get('penalidade')?.setValue(this.itemArmadura.penalidade);
-      this.form.get('espaco')?.setValue(this.itemArmadura.espaco);
-      this.form
-    } else {
-      this.form.get('defesa')?.setValue(objeto.defesa);
-      this.form.get('penalidade')?.setValue(objeto.penalidade);
       this.form.get('espaco')?.setValue(objeto.espaco);
     }
   }
@@ -440,15 +341,8 @@ export class ArmadurasComponent {
       caminho_imagem: this.objeto?.imagem,
     };
 
-    this.itemArmadura = {
-      defesa: this.form.get('defesa')?.value,
-      penalidade: this.form.get('penalidade')?.value,
+    this.itemVestuario = {
       espaco: this.form.get('espaco')?.value,
-    };
-
-    this.itemResistencia = {
-      pontos_vida: this.form.get('pv')?.value,
-      reducao_dano: this.form.get('rd')?.value,
     };
 
     this.itemManutencao = {
@@ -475,13 +369,6 @@ export class ArmadurasComponent {
         id = this.itemSB?.id;
       }
 
-      if (this.form.get('idResistencia')?.value) {
-        await this.itemResistenciaSB.atualizar(id, this.itemResistencia);
-      } else {
-        this.itemResistencia.id = id;
-        await this.itemResistenciaSB.inserir(this.itemResistencia);
-      }
-
       if (this.form.get('idManutencao')?.value) {
         await this.itemManutencaoSB.atualizar(id, this.itemManutencao);
       } else {
@@ -489,13 +376,12 @@ export class ArmadurasComponent {
         await this.itemManutencaoSB.inserir(this.itemManutencao);
       }
 
-      if (this.form.get('idArmadura')?.value) {
-        await this.itemArmaduraSB.atualizar(id, this.itemArmadura);
+      if (this.form.get('idVestuario')?.value) {
+        await this.itemVestuarioServiceSupabase.atualizar(id, this.itemVestuario);
       } else {
-        this.itemArmadura.id = id;
-        this.itemArmadura.id_item_manutencao = id;
-        this.itemArmadura.id_item_resistencia = id;
-        await this.itemArmaduraSB.inserir(this.itemArmadura);
+        this.itemVestuario.id = id;
+        this.itemVestuario.id_item_manutencao = id;
+        await this.itemVestuarioServiceSupabase.inserir(this.itemVestuario);
       }
 
       const ri: { id_item: number; id_regra: number }[] = [];
@@ -513,6 +399,9 @@ export class ArmadurasComponent {
       await this.periciaServiceSB.inserirPericias(id, ip);
 
       const td: { id_item: number; id_tipo: number }[] = [];
+      this.tiposDanoItem.forEach((tipoDano) => {
+        td.push({ id_item: id, id_tipo: tipoDano.id_tipo! });
+      });
 
       await this.tiposDanoServiceSB.inserirDanos(id, td);
 
@@ -538,7 +427,7 @@ export class ArmadurasComponent {
     }
 
     filtro.tela = null;
-    filtro.tipo = TipoItem.ARMADURA;
+    filtro.tipo = TipoItem.VESTUARIO;
     this.consultarTodos(filtro);
   }
 
@@ -560,7 +449,6 @@ export class ArmadurasComponent {
           return nome_a.localeCompare(nome_b);
         });
         this.objetos = response;
-        this.numero_registros = response.length;
         this.cdr.detectChanges();
       },
       error: (response) => {
@@ -579,21 +467,6 @@ export class ArmadurasComponent {
         this.dataSource = new MatTableDataSource(naoMagico);
         this.dataSource.paginator = this.paginator;
         this.numero_registros = naoMagico.length;
-
-        this.armadura_leve = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMADURA_LEVE)
-        );
-        this.armadura_pesada = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMADURA_PESADA)
-        );
-
-        this.dataSourceAL = new MatTableDataSource(this.armadura_leve);
-        this.dataSourceAL.paginator = this.paginator;
-        this.numero_registros_armadura_leve = this.armadura_leve.length;
-
-        this.dataSourceAP = new MatTableDataSource(this.armadura_pesada);
-        this.dataSourceAP.paginator = this.paginator;
-        this.numero_registros_armadura_pesada = this.armadura_pesada.length;
 
         this.carregaChaves();
       },
@@ -688,14 +561,9 @@ export class ArmadurasComponent {
     return Number((preco / 3).toFixed(1));
   }
 
-  umDecimo(preco: number) {
-    return Number((preco / 10).toFixed(1));
-  }
-
   limparFiltros() {
     this.objeto = undefined;
     this.form.reset();
     this.consultar(false, null);
   }
-
 }

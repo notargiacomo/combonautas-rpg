@@ -10861,7 +10861,7 @@ export class ItemData {
       },
       {
         id: 105,
-        nome: Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
+        nome: 'Instrumento Musical',
         descricao: `Um instrumento típico, como um bandolim, flauta ou lira. Veja o
        quadro acima para as regras deste item`,
         preco: 35,

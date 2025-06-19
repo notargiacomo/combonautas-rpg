@@ -28,6 +28,9 @@ import { ArmadurasComponent } from "./armaduras/armaduras.component";
 import { RegraTree } from '@app/model/RegraTree';
 import { MatTreeModule } from '@angular/material/tree';
 import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
+import { EquipamentoAventuraComponent } from "./equipamento-aventura/equipamento-aventura.component";
+import { FerramentasComponent } from "../ferramentas/ferramentas.component";
+import { VestuariosComponent } from "../vestuarios/vestuarios.component";
 
 @Component({
   selector: 'app-itens',
@@ -54,6 +57,9 @@ import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.sup
     MunicoesComponent,
     ArmadurasComponent,
     MatTreeModule,
+    EquipamentoAventuraComponent,
+    FerramentasComponent,
+    VestuariosComponent
 ],
   templateUrl: './itens.component.html',
   styleUrl: './itens.component.scss',

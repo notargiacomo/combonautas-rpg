@@ -53,9 +53,18 @@
                         <div class="row g-3">
                             <div class="col-sm-3 mt-4">
                                 <mat-form-field class="form-field">
-                                    <mat-label>Digite o Equipamento</mat-label>
+                                    <mat-label>Digite a Ferramenta</mat-label>
                                     <input formControlName="nome" matInput type="text"
-                                        (keyup)="consultar(false, '1. Arma')" />
+                                        (keyup)="consultar(false, '5. Ferramenta')" />
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-3 mt-4">
+                                <mat-form-field>
+                                    <mat-label>Visão</mat-label>
+                                    <mat-select formControlName="tela">
+                                        <mat-option value="ALFABETICA">ALFABÉTICA</mat-option>
+                                        <mat-option value="INSTRUMENTO_MUSICAL">INSTRUMENTO MUSICAL</mat-option>
+                                    </mat-select>
                                 </mat-form-field>
                             </div>
                             <!-- <div class="col-sm-6 mt-4">
@@ -251,13 +260,6 @@
                                                         <hr />
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-sm-6">Quantidade por Pacote</div>
-                                                        <div class="col-sm-6 d-flex justify-content-end">
-                                                            {{ this.form.get('qtd_pacote_municao')?.value }}
-                                                        </div>
-                                                        <hr />
-                                                    </div>
-                                                    <div class="row">
                                                         <div class="col-sm-6">Preço</div>
                                                         <div class="col-sm-6 d-flex justify-content-end">
                                                             {{ "T$ " + objeto.preco }}
@@ -313,27 +315,19 @@
                                                         </div>
                                                         <div class="col-sm-6 mt-4">
                                                             <mat-form-field class="text-field-formulario-edicao">
-                                                                <mat-label>Digite a Quantidade por Pacote</mat-label>
-                                                                <input formControlName="qtd_pacote_municao" matInput
-                                                                    type="number" />
+                                                                <mat-label>Preço</mat-label>
+                                                                <input formControlName="preco" matInput type="text" />
                                                             </mat-form-field>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-sm-6 mt-2">
                                                             <mat-form-field class="text-field-formulario-edicao">
-                                                                <mat-label>Preço</mat-label>
-                                                                <input formControlName="preco" matInput type="text" />
-                                                            </mat-form-field>
-                                                        </div>
-                                                        <div class="col-sm-6 mt-2">
-                                                            <mat-form-field class="text-field-formulario-edicao">
                                                                 <mat-label>CD</mat-label>
                                                                 <input formControlName="cd" matInput type="number" />
                                                             </mat-form-field>
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col-sm-6 mt-2">
+                                                        <div class="col-sm-6 mt-2">
                                                                 <mat-form-field class="select-formulario-edicao">
                                                                     <mat-label>Tempo</mat-label>
                                                                     <mat-select formControlName="tempo"
@@ -345,6 +339,7 @@
                                                                     </mat-select>
                                                                 </mat-form-field>
                                                             </div>
+                                                        <div class="row">
                                                             <div class="col-sm-6 mt-2">
                                                                 <mat-form-field class="select-formulario-edicao">
                                                                     <mat-label>Perícia</mat-label>
@@ -378,7 +373,7 @@
                                 </mat-card-content>
                             </mat-card>
                         </div>
-                        <div class="col-sm-6 mt-4">
+                        <div class="col-sm-6 mt-4" *ngIf="visao('ALFABETICA')">
                             <mat-card class="card-padrao">
                                 <div class="mb-2">
                                     <div class="d-flex justify-content-end">
@@ -424,6 +419,112 @@
                                     ]" showFirstLastButtons aria-label="Select page of periodic elements">
                                 </mat-paginator>
                             </mat-card>
+                        </div>
+                        <div class="col-sm-6 mt-4" *ngIf="visao('INSTRUMENTO_MUSICAL')">
+                            <mat-accordion>
+                                <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                    (closed)="panelOpenState.set(false)">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <b>FERRAMENTAS</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                    <mat-card class="card-padrao">
+                                        <div class="mb-2">
+                                            <div class="d-flex justify-content-end">
+                                                <b>Número de Registros: {{ numero_registro_ferramentas }}</b>
+                                            </div>
+                                        </div>
+                                        <table mat-table [dataSource]="dataSourceF" class="mat-elevation-z8">
+                                            <ng-container matColumnDef="nome">
+                                                <th mat-header-cell *matHeaderCellDef>
+                                                    Nome
+                                                </th>
+                                                <td mat-cell *matCellDef="let element">
+                                                    {{ element.nome }}
+                                                </td>
+                                            </ng-container>
+
+                                            <ng-container matColumnDef="acao">
+                                                <th mat-header-cell *matHeaderCellDef>Ações</th>
+                                                <td mat-cell *matCellDef="let element">
+                                                    <button class="meuBotao" mat-icon-button color="primary"
+                                                        (click)="seleciona(element)">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <mat-icon
+                                                                    [ngClass]="{'zebra': isOddF(element)}">zoom_in</mat-icon>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </td>
+                                            </ng-container>
+
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                            <tr mat-row *matRowDef="let element; columns: displayedColumns"
+                                                [ngClass]="{'zebra': isOddF(element)}">
+                                            </tr>
+                                        </table>
+                                    </mat-card>
+                                </mat-expansion-panel>
+                                <mat-expansion-panel (opened)="panelOpenState.set(true)"
+                                    (closed)="panelOpenState.set(false)">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <b>INSTRUMENTOS MUSICAIS</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                    <mat-card class="card-padrao">
+                                        <div class="mb-2">
+                                            <div class="d-flex justify-content-end">
+                                                <b>Número de Registros: {{ numero_registro_instrumentos_musicais }}</b>
+                                            </div>
+                                        </div>
+                                        <table mat-table [dataSource]="dataSourceIM" class="mat-elevation-z8">
+                                            <ng-container matColumnDef="nome">
+                                                <th mat-header-cell *matHeaderCellDef>
+                                                    Nome
+                                                </th>
+                                                <td mat-cell *matCellDef="let element">
+                                                    {{ element.nome }}
+                                                </td>
+                                            </ng-container>
+
+                                            <ng-container matColumnDef="acao">
+                                                <th mat-header-cell *matHeaderCellDef>Ações</th>
+                                                <td mat-cell *matCellDef="let element">
+                                                    <button class="meuBotao" mat-icon-button color="primary"
+                                                        (click)="seleciona(element)">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <mat-icon
+                                                                    [ngClass]="{'zebra': isOddIM(element)}">zoom_in</mat-icon>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </td>
+                                            </ng-container>
+
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                            <tr mat-row *matRowDef="let element; columns: displayedColumns"
+                                                [ngClass]="{'zebra': isOddIM(element)}">
+                                            </tr>
+                                        </table>
+                                    </mat-card>
+                                </mat-expansion-panel>
+                            </mat-accordion>
                         </div>
                     </div>
                 </form>

@@ -30,6 +30,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { Chave } from '@app/enum/chave.enum';
 import { TipoItem } from '@app/enum/tipo.item.enum';
 import { Item } from '@app/model/item';
+import { Regra } from '@app/model/regra';
 import { RegraTree } from '@app/model/RegraTree';
 import { AlcanceSB } from '@app/model/supamodel/alcance.sb';
 import { ItemManutencaoSB } from '@app/model/supamodel/item.manutencao.sb';
@@ -109,9 +110,6 @@ export class MunicoesComponent implements AfterViewInit {
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
 
-  @ViewChild(MatSort)
-  sort!: MatSort;
-
   edicao: boolean = false;
 
   objeto: Item | undefined;
@@ -125,7 +123,6 @@ export class MunicoesComponent implements AfterViewInit {
   pericias: PericiaSB[] = [];
   periciasItem: PericiaItemSB[] = [];
   referenciaItem?: ReferenciaItemSB;
-  alcances: AlcanceSB[] = [];
   tiposDanoItem: TipoDanoItemSB[] = [];
   tempos: any[] = [8, 40, 160];
 
@@ -147,19 +144,15 @@ export class MunicoesComponent implements AfterViewInit {
   async ngAfterViewInit() {
     this.dataSourceAS = new MatTableDataSource<Item>();
     this.dataSourceAS.paginator = this.paginator;
-    this.dataSourceAS.sort = this.sort;
 
     this.dataSourceAM = new MatTableDataSource<Item>();
     this.dataSourceAM.paginator = this.paginator;
-    this.dataSourceAM.sort = this.sort;
 
     this.dataSourceAE = new MatTableDataSource<Item>();
     this.dataSourceAE.paginator = this.paginator;
-    this.dataSourceAE.sort = this.sort;
 
     this.dataSourceAF = new MatTableDataSource<Item>();
     this.dataSourceAF.paginator = this.paginator;
-    this.dataSourceAF.sort = this.sort;
   }
 
   async ngOnInit() {
@@ -231,10 +224,15 @@ export class MunicoesComponent implements AfterViewInit {
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
-      this.regras = await this.regraServiceSB.listar();
-      this.regras = this.ordenacaoAlfabetica(this.regras);
-
-      this.alcances = await this.alcanceServiceSB.listar();
+      this.regraServiceSB.carregarCombo(52).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
 
       this.pericias = await this.periciaServiceSB.listar();
 
@@ -516,7 +514,6 @@ export class MunicoesComponent implements AfterViewInit {
 
         this.dataSource = new MatTableDataSource(naoMagico);
         this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
         this.numero_registros = naoMagico.length;
 
         this.carregaChaves();

@@ -55,7 +55,7 @@
                                 <mat-form-field class="form-field">
                                     <mat-label>Digite o Equipamento</mat-label>
                                     <input formControlName="nome" matInput type="text"
-                                        (keyup)="consultar(false, '1. Arma')" />
+                                        (keyup)="consultar(false, '4. Equipamento de Aventura')" />
                                 </mat-form-field>
                             </div>
                             <!-- <div class="col-sm-6 mt-4">
@@ -251,13 +251,6 @@
                                                         <hr />
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-sm-6">Quantidade por Pacote</div>
-                                                        <div class="col-sm-6 d-flex justify-content-end">
-                                                            {{ this.form.get('qtd_pacote_municao')?.value }}
-                                                        </div>
-                                                        <hr />
-                                                    </div>
-                                                    <div class="row">
                                                         <div class="col-sm-6">Preço</div>
                                                         <div class="col-sm-6 d-flex justify-content-end">
                                                             {{ "T$ " + objeto.preco }}
@@ -313,38 +306,31 @@
                                                         </div>
                                                         <div class="col-sm-6 mt-4">
                                                             <mat-form-field class="text-field-formulario-edicao">
-                                                                <mat-label>Digite a Quantidade por Pacote</mat-label>
-                                                                <input formControlName="qtd_pacote_municao" matInput
-                                                                    type="number" />
+                                                                <mat-label>Preço</mat-label>
+                                                                <input formControlName="preco" matInput type="text" />
                                                             </mat-form-field>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-sm-6 mt-2">
                                                             <mat-form-field class="text-field-formulario-edicao">
-                                                                <mat-label>Preço</mat-label>
-                                                                <input formControlName="preco" matInput type="text" />
-                                                            </mat-form-field>
-                                                        </div>
-                                                        <div class="col-sm-6 mt-2">
-                                                            <mat-form-field class="text-field-formulario-edicao">
                                                                 <mat-label>CD</mat-label>
                                                                 <input formControlName="cd" matInput type="number" />
                                                             </mat-form-field>
                                                         </div>
+                                                        <div class="col-sm-6 mt-2">
+                                                            <mat-form-field class="select-formulario-edicao">
+                                                                <mat-label>Tempo</mat-label>
+                                                                <mat-select formControlName="tempo"
+                                                                    (selectionChange)="adicionarRegra($event)">
+                                                                    <mat-option *ngFor="let tempo of tempos"
+                                                                        [value]="tempo">
+                                                                        {{ tempo }}
+                                                                    </mat-option>
+                                                                </mat-select>
+                                                            </mat-form-field>
+                                                        </div>
                                                         <div class="row">
-                                                            <div class="col-sm-6 mt-2">
-                                                                <mat-form-field class="select-formulario-edicao">
-                                                                    <mat-label>Tempo</mat-label>
-                                                                    <mat-select formControlName="tempo"
-                                                                        (selectionChange)="adicionarRegra($event)">
-                                                                        <mat-option *ngFor="let tempo of tempos"
-                                                                            [value]="tempo">
-                                                                            {{ tempo }}
-                                                                        </mat-option>
-                                                                    </mat-select>
-                                                                </mat-form-field>
-                                                            </div>
                                                             <div class="col-sm-6 mt-2">
                                                                 <mat-form-field class="select-formulario-edicao">
                                                                     <mat-label>Perícia</mat-label>
