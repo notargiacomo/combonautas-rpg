@@ -204,6 +204,27 @@ dataSourceRegraTree: RegraTree[] = [];
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
+
+      this.regraServiceSB.carregarCombo(48).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
+
+      this.regraServiceSB.carregarCombo(49).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
+
       this.regraServiceSB.carregarCombo(51).then((regras: Regra[]) => {
         regras.forEach((r) => {
           this.regras.push(r);

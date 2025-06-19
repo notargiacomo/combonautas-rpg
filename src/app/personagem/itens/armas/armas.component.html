@@ -28,14 +28,14 @@
                         [childrenAccessor]="childrenAccessor">
                         <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
                             <!-- <button matIconButton disabled></button> -->
-                            <a matButton (click)="selecionaRegra(node)" target="_blank"
+                            <a matButton (click)="selecionaRegra(node)" target="_blank" class="m-2"
                                 style="cursor: pointer !important;">{{node.nome}}</a>
                         </mat-tree-node>
                         <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodeToggle
                             [cdkTreeNodeTypeaheadLabel]="node.nome">
                             <button matIconButton matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.nome"
                                 class="no-arvore">
-                                <mat-icon class="mat-icon-rtl-mirror" class="no-arvore">
+                                <mat-icon class="mat-icon-rtl-mirror m-2" class="no-arvore">
                                     {{tree.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
                                 </mat-icon>
                             </button>

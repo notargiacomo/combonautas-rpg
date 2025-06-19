@@ -40,11 +40,20 @@ p {
 }
 
 .mat-tree-node {
+  button {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
   background-color: rgb(240, 230, 245) !important;
   font-family: "Oswald" !important;
   font-weight: normal !important; /* Pode ser 'bold' ou outros valores se necessário */
   font-style: normal !important; /* Pode ser 'italic' ou outros estilos */
   font-size: 12pt !important;
+  background: rgb(45, 35, 60) !important;
+  color: white !important;
+  margin-top: 1% !important;
+  border-radius: 10px; /* Arredonda os cantos */
+  overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
 }
 
 .mat-expansion-panel-header:not([aria-disabled=true]){
@@ -295,9 +304,14 @@ td {
 
 .mat-icon {
   cursor: pointer !important;
+  margin-left: 5% !important;
 }
 
 .no-arvore {
+  button {
+    margin-left: 5px !important;
+    padding-left: 5px !important;
+  }
   cursor: pointer !important;
   border: none !important; /* Remove estilos padrão */
   border-top: 2px solid rgb(240, 230, 245) !important; /* Define a cor e a altura */
