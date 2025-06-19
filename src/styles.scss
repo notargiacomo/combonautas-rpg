@@ -42,7 +42,9 @@ p {
 .mat-tree-node {
   button {
     margin-left: 10px !important;
-    margin-right: 10px !important;
+  }
+  a {
+    margin-left: 10px !important;
   }
   background-color: rgb(240, 230, 245) !important;
   font-family: "Oswald" !important;
