@@ -1,6 +1,16 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component, signal, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  ChangeDetectorRef,
+  Component,
+  signal,
+  ViewChild
+} from '@angular/core';
+import {
+  FormBuilder,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
@@ -12,36 +22,37 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
-import { Chave } from '@app/enum/chave.enum';
-import { TipoItem } from '@app/enum/tipo.item.enum';
-import { Item } from '@app/model/item';
 import { Regra } from '@app/model/regra';
 import { RegraTree } from '@app/model/RegraTree';
-import { ItemFerramentaSB } from '@app/model/supamodel/item.ferramenta.sb';
-import { ItemManutencaoSB } from '@app/model/supamodel/item.manutencao.sb';
-import { ItemSB } from '@app/model/supamodel/item.sb';
-import { PericiaItemSB } from '@app/model/supamodel/pericia.item.sb';
-import { PericiaSB } from '@app/model/supamodel/pericia.sb';
-import { ReferenciaItemSB } from '@app/model/supamodel/referencia.item.sb';
-import { RegraItemSB } from '@app/model/supamodel/regra.item.sb';
-import { TipoDanoItemSB } from '@app/model/supamodel/tipo.dano.item.sb';
-import { ItemService } from '@app/service/item.service';
-import { ItemFerramentaServiceSupabase } from '@app/service/supaservice/item.ferramenta.service.supabase';
-import { ItemManutencaoServiceSupabase } from '@app/service/supaservice/item.manutencao.service.supabase';
-import { ItemServiceSupabase } from '@app/service/supaservice/item.service.supabase';
-import { PericiaServiceSupabase } from '@app/service/supaservice/pericia.service.supabase';
-import { ReferenciaServiceSupabase } from '@app/service/supaservice/referencia.service.supabase';
-import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
-import { TipoDanoServiceSupabase } from '@app/service/supaservice/tipo.dano.service.supabase';
-import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.service.supabase';
+import { ItemEscudoSB } from '@app/model/supamodel/item.escudo.sb';
+import { ItemEscudoServiceSupabase } from '@app/service/supaservice/item.escudo.service.supabase';
+import { Chave } from '../../../enum/chave.enum';
+import { TipoItem } from '../../../enum/tipo.item.enum';
+import { Item } from '../../../model/item';
+import { ItemManutencaoSB } from '../../../model/supamodel/item.manutencao.sb';
+import { ItemResistenciaSB } from '../../../model/supamodel/item.resistencia.sb';
+import { ItemSB } from '../../../model/supamodel/item.sb';
+import { PericiaItemSB } from '../../../model/supamodel/pericia.item.sb';
+import { PericiaSB } from '../../../model/supamodel/pericia.sb';
+import { ReferenciaItemSB } from '../../../model/supamodel/referencia.item.sb';
+import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
+import { ItemService } from '../../../service/item.service';
+import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
+import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
+import { ItemServiceSupabase } from '../../../service/supaservice/item.service.supabase';
+import { PericiaServiceSupabase } from '../../../service/supaservice/pericia.service.supabase';
+import { ReferenciaServiceSupabase } from '../../../service/supaservice/referencia.service.supabase';
+import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
+import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
+import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
 
 @Component({
-  selector: 'app-ferramentas',
-  imports: [
+  selector: 'app-escudos',
+imports: [
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
@@ -63,15 +74,15 @@ import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.serv
     MatExpansionModule,
     MatTreeModule,
   ],
-  templateUrl: './ferramentas.component.html',
-  styleUrl: './ferramentas.component.scss'
+  templateUrl: './escudos.component.html',
+  styleUrl: './escudos.component.scss'
 })
-export class FerramentasComponent {
-dataSourceRegraTree: RegraTree[] = [];
+export class EscudosComponent {
+  dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
+
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
-  hasChild = (_: number, node: RegraTree) =>
-    !!node.children && node.children.length > 0;
+  hasChild = (_: number, node: RegraTree) => !!node.children && node.children.length > 0;
 
   readonly panelOpenState = signal(false);
   displayedColumns: string[] = ['nome', 'acao'];
@@ -80,22 +91,16 @@ dataSourceRegraTree: RegraTree[] = [];
   form!: FormGroup;
   objetos!: Item[];
 
-  instrumentosMusicais!: Item[];
-  ferramentas!: Item[];
-
   tiposItem: any[] = [];
   chaves: Chave[] = [];
 
   selecaoChave: boolean = false;
 
   numero_registros = 0;
-  numero_registro_ferramentas = 0;
-  numero_registro_instrumentos_musicais = 0;
+
   filtro_traco: string = '';
 
   dataSource = new MatTableDataSource<Item>();
-  dataSourceF = new MatTableDataSource<Item>();
-  dataSourceIM = new MatTableDataSource<Item>();
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
@@ -103,17 +108,23 @@ dataSourceRegraTree: RegraTree[] = [];
   edicao: boolean = false;
 
   objeto: Item | undefined;
+
   itemSB?: ItemSB;
+  itemEscudo?: ItemEscudoSB;
+  itemResistencia?: ItemResistenciaSB;
   itemManutencao?: ItemManutencaoSB;
-  itemFerramenta?: ItemFerramentaSB;
+
   referencia!: { id: number; nome: string };
   referencias: any[] = [];
+
   regras: any[] = [];
   regrasItem: RegraItemSB[] = [];
+
   pericias: PericiaSB[] = [];
   periciasItem: PericiaItemSB[] = [];
+
   referenciaItem?: ReferenciaItemSB;
-  tiposDanoItem: TipoDanoItemSB[] = [];
+
   tempos: any[] = [8, 40, 160];
 
   constructor(
@@ -124,18 +135,21 @@ dataSourceRegraTree: RegraTree[] = [];
     private readonly regraServiceSB: RegraServiceSupabase,
     private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
     private readonly periciaServiceSB: PericiaServiceSupabase,
-    private readonly itemFerramentaServiceSupabase: ItemFerramentaServiceSupabase,
     private itemManutencaoSB: ItemManutencaoServiceSupabase,
+    private itemEscudoSB: ItemEscudoServiceSupabase,
+    private itemResistenciaSB: ItemResistenciaServiceSupabase,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}
 
   async ngAfterViewInit() {
+
     this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
   }
-
+  
   async ngOnInit() {
+
     this.itemSB = new ItemSB();
     const logado = sessionStorage.getItem('logado') || '';
 
@@ -164,17 +178,20 @@ dataSourceRegraTree: RegraTree[] = [];
       pericia: [],
       caminhoImagem: [],
       paginas: [],
-      dano: [],
+      defesa: [],
+      penalidade: [],
       espaco: [],
       rd: [],
       pv: [],
-      idFerramenta: [],
+      idEscudo: [],
+      idResistencia: [],
       idManutencao: [],
       preco: [],
       cd: [],
       tempo: [],
       tela: ([] = ['ALFABETICA']),
     });
+
 
     this.consultar(false, null);
     this.carregarItens();
@@ -186,13 +203,20 @@ dataSourceRegraTree: RegraTree[] = [];
       return nome_a!.localeCompare(nome_b!);
     });
 
-    this.dataSourceRegraTree.push(
-      await this.regraServiceSB.carregarMenusConceito({ id: 50 })
-    );
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 38 }));
     this.cdr.detectChanges();
   }
 
-  selecionaRegra(regraSelecionada: any) {
+  visao(visao: string){
+    let seVisao = false;
+    if(this.form != undefined) {
+      seVisao = this.form.get('tela')?.value == visao;
+    }
+
+    return seVisao;
+  }
+
+  selecionaRegra(regraSelecionada: any){
     this.regraSelecionada = regraSelecionada;
   }
 
@@ -204,6 +228,15 @@ dataSourceRegraTree: RegraTree[] = [];
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
+      this.regraServiceSB.carregarCombo(38).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
 
       this.regraServiceSB.carregarCombo(48).then((regras: Regra[]) => {
         regras.forEach((r) => {
@@ -225,7 +258,7 @@ dataSourceRegraTree: RegraTree[] = [];
         console.error('Erro ao carregar regras', error);
       });
 
-      this.regraServiceSB.carregarCombo(50).then((regras: Regra[]) => {
+      this.regraServiceSB.carregarCombo(59).then((regras: Regra[]) => {
         regras.forEach((r) => {
           this.regras.push(r);
         });
@@ -236,7 +269,6 @@ dataSourceRegraTree: RegraTree[] = [];
       });
 
       this.pericias = await this.periciaServiceSB.listar();
-
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -276,27 +308,17 @@ dataSourceRegraTree: RegraTree[] = [];
     return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
-  isOddF(element: any): boolean {
-    const index = this.dataSourceF.data.indexOf(element);
-    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
-  }
-
-  isOddIM(element: any): boolean {
-    const index = this.dataSourceIM.data.indexOf(element);
-    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
-  }
-
   limparSelecao() {
     const tela = this.form.get('tela')?.value;
     this.form.reset();
     this.form.get('tela')?.setValue(tela);
     this.objeto = undefined;
     this.itemSB = undefined;
-    this.itemFerramenta = undefined;
+    this.itemEscudo = undefined;
+    this.itemResistencia = undefined;
     this.itemManutencao = undefined;
     this.regrasItem = [];
     this.periciasItem = [];
-    this.tiposDanoItem = [];
   }
 
   seleciona(objeto: Item) {
@@ -307,7 +329,8 @@ dataSourceRegraTree: RegraTree[] = [];
     setTimeout(() => {
       if (this.itemSB) {
         this.form.get('id')?.setValue(this.itemSB.id);
-        this.form.get('idFerramenta')?.setValue(this.itemSB.id);
+        this.form.get('idEscudo')?.setValue(this.itemSB.id);
+        this.form.get('idResistencia')?.setValue(this.itemSB.id);
         this.form.get('idManutencao')?.setValue(this.itemSB.id);
         this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
         this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
@@ -320,9 +343,10 @@ dataSourceRegraTree: RegraTree[] = [];
         this.form.get('descricao')?.setValue(objeto.descricao);
         this.form.get('paginas')?.setValue(objeto.paginas);
       }
-      this.selecionaFerramenta(objeto);
+      this.selecionaEscudo(objeto);
       this.selecionaManutencao(objeto);
-    }, 2000);
+      this.selecionaResistencia(objeto);
+    }, 1000);
     this.cdr.detectChanges();
   }
 
@@ -333,7 +357,7 @@ dataSourceRegraTree: RegraTree[] = [];
           this.form.get('idManutencao')?.value
         );
       } catch (err) {
-        console.error('Erro ao carregar Item Arma', err);
+        console.error('Erro ao carregar Item Escudo', err);
       }
     }
 
@@ -350,20 +374,45 @@ dataSourceRegraTree: RegraTree[] = [];
     }
   }
 
-  async selecionaFerramenta(objeto: Item) {
-    if (this.form.get('idFerramenta')?.value) {
+  async selecionaResistencia(objeto: Item) {
+    if (this.form.get('idResistencia')?.value) {
       try {
-        this.itemFerramenta = await this.itemFerramentaServiceSupabase.consultarPorId(
-          this.form.get('idFerramenta')?.value
+        this.itemResistencia = await this.itemResistenciaSB.consultarPorId(
+          this.form.get('idResistencia')?.value
         );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
     }
 
-    if (this.itemFerramenta) {
-      this.form.get('espaco')?.setValue(this.itemFerramenta.espaco);
+    if (this.itemResistencia) {
+      this.form.get('rd')?.setValue(this.itemResistencia?.reducao_dano);
+      this.form.get('pv')?.setValue(this.itemResistencia?.pontos_vida);
     } else {
+      this.form.get('rd')?.setValue(objeto.rd);
+      this.form.get('pv')?.setValue(objeto.pv);
+    }
+  }
+
+  async selecionaEscudo(objeto: Item) {
+    if (this.form.get('idEscudo')?.value) {
+      try {
+        this.itemEscudo = await this.itemEscudoSB.consultarPorId(
+          this.form.get('idEscudo')?.value
+        );
+      } catch (err) {
+        console.error('Erro ao carregar Item Arma', err);
+      }
+    }
+
+    if (this.itemEscudo) {
+      this.form.get('defesa')?.setValue(this.itemEscudo.defesa);
+      this.form.get('penalidade')?.setValue(this.itemEscudo.penalidade);
+      this.form.get('espaco')?.setValue(this.itemEscudo.espaco);
+      this.form
+    } else {
+      this.form.get('defesa')?.setValue(objeto.defesa);
+      this.form.get('penalidade')?.setValue(objeto.penalidade);
       this.form.get('espaco')?.setValue(objeto.espaco);
     }
   }
@@ -378,8 +427,15 @@ dataSourceRegraTree: RegraTree[] = [];
       caminho_imagem: this.objeto?.imagem,
     };
 
-    this.itemFerramenta = {
+    this.itemEscudo = {
+      defesa: this.form.get('defesa')?.value,
+      penalidade: this.form.get('penalidade')?.value,
       espaco: this.form.get('espaco')?.value,
+    };
+
+    this.itemResistencia = {
+      pontos_vida: this.form.get('pv')?.value,
+      reducao_dano: this.form.get('rd')?.value,
     };
 
     this.itemManutencao = {
@@ -406,6 +462,13 @@ dataSourceRegraTree: RegraTree[] = [];
         id = this.itemSB?.id;
       }
 
+      if (this.form.get('idResistencia')?.value) {
+        await this.itemResistenciaSB.atualizar(id, this.itemResistencia);
+      } else {
+        this.itemResistencia.id = id;
+        await this.itemResistenciaSB.inserir(this.itemResistencia);
+      }
+
       if (this.form.get('idManutencao')?.value) {
         await this.itemManutencaoSB.atualizar(id, this.itemManutencao);
       } else {
@@ -413,12 +476,13 @@ dataSourceRegraTree: RegraTree[] = [];
         await this.itemManutencaoSB.inserir(this.itemManutencao);
       }
 
-      if (this.form.get('idFerramenta')?.value) {
-        await this.itemFerramentaServiceSupabase.atualizar(id, this.itemFerramenta);
+      if (this.form.get('idEscudo')?.value) {
+        await this.itemEscudoSB.atualizar(id, this.itemEscudo);
       } else {
-        this.itemFerramenta.id = id;
-        this.itemFerramenta.id_item_manutencao = id;
-        await this.itemFerramentaServiceSupabase.inserir(this.itemFerramenta);
+        this.itemEscudo.id = id;
+        this.itemEscudo.id_item_manutencao = id;
+        this.itemEscudo.id_item_resistencia = id;
+        await this.itemEscudoSB.inserir(this.itemEscudo);
       }
 
       const ri: { id_item: number; id_regra: number }[] = [];
@@ -436,9 +500,6 @@ dataSourceRegraTree: RegraTree[] = [];
       await this.periciaServiceSB.inserirPericias(id, ip);
 
       const td: { id_item: number; id_tipo: number }[] = [];
-      this.tiposDanoItem.forEach((tipoDano) => {
-        td.push({ id_item: id, id_tipo: tipoDano.id_tipo! });
-      });
 
       await this.tiposDanoServiceSB.inserirDanos(id, td);
 
@@ -464,7 +525,7 @@ dataSourceRegraTree: RegraTree[] = [];
     }
 
     filtro.tela = null;
-    filtro.tipo = TipoItem.FERRAMENTA;
+    filtro.tipo = TipoItem.ESCUDO;
     this.consultarTodos(filtro);
   }
 
@@ -486,6 +547,7 @@ dataSourceRegraTree: RegraTree[] = [];
           return nome_a.localeCompare(nome_b);
         });
         this.objetos = response;
+        this.numero_registros = response.length;
         this.cdr.detectChanges();
       },
       error: (response) => {
@@ -505,34 +567,9 @@ dataSourceRegraTree: RegraTree[] = [];
         this.dataSource.paginator = this.paginator;
         this.numero_registros = naoMagico.length;
 
-        this.instrumentosMusicais = naoMagico.filter((p) =>
-          p.chave.includes(Chave.FERRAMENTA_INSTRUMENTO_MUSICAL)
-        );
-
-        this.ferramentas = naoMagico.filter((p) =>
-          !p.chave.includes(Chave.FERRAMENTA_INSTRUMENTO_MUSICAL)
-        );
-
-        this.dataSourceF = new MatTableDataSource(this.ferramentas);
-        this.dataSourceF.paginator = this.paginator;
-        this.numero_registro_ferramentas = this.ferramentas.length;
-
-        this.dataSourceIM = new MatTableDataSource(this.instrumentosMusicais);
-        this.dataSourceIM.paginator = this.paginator;
-        this.numero_registro_instrumentos_musicais = this.instrumentosMusicais.length;
-
         this.carregaChaves();
       },
     });
-  }
-
-  visao(visao: string){
-    let seVisao = false;
-    if(this.form != undefined) {
-      seVisao = this.form.get('tela')?.value == visao;
-    }
-
-    return seVisao;
   }
 
   carregaChaves() {
@@ -621,6 +658,10 @@ dataSourceRegraTree: RegraTree[] = [];
 
   umTerco(preco: number) {
     return Number((preco / 3).toFixed(1));
+  }
+
+  umDecimo(preco: number) {
+    return Number((preco / 10).toFixed(1));
   }
 
   limparFiltros() {

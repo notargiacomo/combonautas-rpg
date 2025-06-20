@@ -226,27 +226,7 @@ export class AlquimicosComponent {
         console.error('Erro ao carregar regras', error);
       });
 
-      this.regraServiceSB.carregarCombo(56).then((regras: Regra[]) => {
-        regras.forEach((r) => {
-          this.regras.push(r);
-        });
-        this.regras = this.ordenacaoAlfabetica(this.regras);
-      })
-      .catch((error) => {
-        console.error('Erro ao carregar regras', error);
-      });
-
-      this.regraServiceSB.carregarCombo(57).then((regras: Regra[]) => {
-        regras.forEach((r) => {
-          this.regras.push(r);
-        });
-        this.regras = this.ordenacaoAlfabetica(this.regras);
-      })
-      .catch((error) => {
-        console.error('Erro ao carregar regras', error);
-      });
-
-      this.regraServiceSB.carregarCombo(58).then((regras: Regra[]) => {
+      this.regraServiceSB.carregarCombo(55).then((regras: Regra[]) => {
         regras.forEach((r) => {
           this.regras.push(r);
         });

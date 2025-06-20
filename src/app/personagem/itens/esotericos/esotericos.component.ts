@@ -216,6 +216,16 @@ export class EsotericosComponent {
         console.error('Erro ao carregar regras', error);
       });
 
+      this.regraServiceSB.carregarCombo(54).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
+
       this.pericias = await this.periciaServiceSB.listar();
 
     } catch (err) {

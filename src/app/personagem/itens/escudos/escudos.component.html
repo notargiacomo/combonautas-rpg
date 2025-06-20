@@ -55,10 +55,10 @@
                                 <mat-form-field class="form-field">
                                     <mat-label>Digite o Equipamento</mat-label>
                                     <input formControlName="nome" matInput type="text"
-                                        (keyup)="consultar(false, '1. Arma')" />
+                                        (keyup)="consultar(false, '15. Escudo')" />
                                 </mat-form-field>
                             </div>
-                            <!-- <div class="col-sm-6 mt-4">
+                            <div class="col-sm-6 mt-4">
                                 <mat-form-field class="select-dobrado">
                                     <mat-label>Regra</mat-label>
                                     <mat-select formControlName="chave" (selectionChange)="consultar(true, '1. Arma')">
@@ -69,7 +69,7 @@
                                         }
                                     </mat-select>
                                 </mat-form-field>
-                            </div> -->
+                            </div>
                         </div>
                         <div class="row">
                             <div *ngIf="edicao" class="col-sm-12 mt-4 button-row d-flex justify-content-end">
@@ -241,19 +241,68 @@
                                                     </div>
                                                 </div>
                                             </mat-tab>
-                                            <mat-tab label="Estatísticas/Fabricação">
+                                            <mat-tab label="Estatísticas">
                                                 <div *ngIf="!edicao" class="content">
-                                                    <div class="row mt-4">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 mt-4">Defesa</div>
+                                                        <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                                                            {{ objeto.defesa }}
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div *ngIf="!edicao" class="row">
+                                                        <div class="col-sm-6">Penalidade</div>
+                                                        <div class="col-sm-6 d-flex justify-content-end">
+                                                            {{ objeto.penalidade }}
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div class="row">
                                                         <div class="col-sm-6">Espaço</div>
                                                         <div class="col-sm-6 d-flex justify-content-end">
                                                             {{ objeto.espaco }}
                                                         </div>
                                                         <hr />
                                                     </div>
+                                                </div>
+                                                <div *ngIf="edicao" class="content">
                                                     <div class="row">
-                                                        <div class="col-sm-6">Quantidade por Pacote</div>
+                                                        <div class="col-sm-4 mt-4">
+                                                            <mat-form-field class="text-field-formulario-edicao">
+                                                                <mat-label>Digite a defesa</mat-label>
+                                                                <input formControlName="defesa" matInput type="text" />
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-sm-4 mt-4">
+                                                            <mat-form-field class="text-field-formulario-edicao">
+                                                                <mat-label>Digite a penalidade</mat-label>
+                                                                <input formControlName="penalidade" matInput
+                                                                    type="number" [disabled]="true" />
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-sm-4 mt-4">
+                                                            <mat-form-field class="text-field-formulario-edicao">
+                                                                <mat-label>Digite o espaço</mat-label>
+                                                                <input formControlName="espaco" matInput
+                                                                    type="number" />
+                                                            </mat-form-field>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </mat-tab>
+                                            <mat-tab label="Fabricação">
+                                                <div *ngIf="!edicao" class="content">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 mt-4">RD</div>
+                                                        <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                                                            {{ objeto.rd }}
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">PV's</div>
                                                         <div class="col-sm-6 d-flex justify-content-end">
-                                                            {{ this.form.get('qtd_pacote_municao')?.value }}
+                                                            {{ objeto.pv }}
                                                         </div>
                                                         <hr />
                                                     </div>
@@ -266,7 +315,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-sm-6">
-                                                            Perícia para Fabricação
+                                                            Perícia para Fabricação/Conserto
                                                         </div>
                                                         <div class="col-sm-6 d-flex justify-content-end">
                                                             {{ objeto.pericia_fabricacao_conserto }}
@@ -275,7 +324,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-sm-6">
-                                                            CD para Fabricação
+                                                            CD para Fabricação/Conserto
                                                         </div>
                                                         <div class="col-sm-6 d-flex justify-content-end">
                                                             {{ objeto.cd_fabricacao }}
@@ -301,74 +350,87 @@
                                                         </div>
                                                         <hr />
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">Custo para Conserto</div>
+                                                        <div class="col-sm-6 d-flex justify-content-end">
+                                                            {{ "T$ " + umDecimo(objeto.preco!) }}
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            Tempo de Conserto (Em Horas)
+                                                        </div>
+                                                        <div class="col-sm-6 d-flex justify-content-end">
+                                                            {{ 1 }}
+                                                        </div>
+                                                        <hr />
+                                                    </div>
                                                 </div>
                                                 <div *ngIf="edicao" class="content">
                                                     <div class="row">
-                                                        <div class="col-sm-6 mt-4">
+                                                        <div class="col-sm-4 mt-4">
                                                             <mat-form-field class="text-field-formulario-edicao">
-                                                                <mat-label>Digite o espaço</mat-label>
-                                                                <input formControlName="espaco" matInput
-                                                                    type="number" />
+                                                                <mat-label>RD</mat-label>
+                                                                <input formControlName="rd" matInput type="number" />
                                                             </mat-form-field>
                                                         </div>
-                                                        <div class="col-sm-6 mt-4">
+                                                        <div class="col-sm-4 mt-4">
                                                             <mat-form-field class="text-field-formulario-edicao">
-                                                                <mat-label>Digite a Quantidade por Pacote</mat-label>
-                                                                <input formControlName="qtd_pacote_municao" matInput
-                                                                    type="number" />
+                                                                <mat-label>PV</mat-label>
+                                                                <input formControlName="pv" matInput type="number" />
                                                             </mat-form-field>
                                                         </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6 mt-2">
+                                                        <div class="col-sm-4 mt-4">
                                                             <mat-form-field class="text-field-formulario-edicao">
                                                                 <mat-label>Preço</mat-label>
                                                                 <input formControlName="preco" matInput type="text" />
                                                             </mat-form-field>
                                                         </div>
-                                                        <div class="col-sm-6 mt-2">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4 mt-2">
                                                             <mat-form-field class="text-field-formulario-edicao">
                                                                 <mat-label>CD</mat-label>
                                                                 <input formControlName="cd" matInput type="number" />
                                                             </mat-form-field>
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col-sm-6 mt-2">
-                                                                <mat-form-field class="select-formulario-edicao">
-                                                                    <mat-label>Tempo</mat-label>
-                                                                    <mat-select formControlName="tempo"
-                                                                        (selectionChange)="adicionarRegra($event)">
-                                                                        <mat-option *ngFor="let tempo of tempos"
-                                                                            [value]="tempo">
-                                                                            {{ tempo }}
-                                                                        </mat-option>
-                                                                    </mat-select>
-                                                                </mat-form-field>
-                                                            </div>
-                                                            <div class="col-sm-6 mt-2">
-                                                                <mat-form-field class="select-formulario-edicao">
-                                                                    <mat-label>Perícia</mat-label>
-                                                                    <mat-select formControlName="idPericia"
-                                                                        (selectionChange)="adicionarPericia($event)">
-                                                                        <mat-option *ngFor="let pericia of pericias"
-                                                                            [value]="pericia.id">
-                                                                            {{ pericia.nome }}
-                                                                        </mat-option>
-                                                                    </mat-select>
-                                                                </mat-form-field>
-                                                            </div>
-                                                            <div class="col-sm-12 mt-2 button-row">
-                                                                <section class="d-flex flex-wrap gap-2">
-                                                                    @for (periciaItem of periciasItem; track
-                                                                    periciaItem.id)
-                                                                    {
-                                                                    <button class="me-2" mat-flat-button
-                                                                        (click)="removerPericia(periciaItem)">
-                                                                        {{ periciaItem.tb_pericia?.nome }}
-                                                                    </button>
-                                                                    }
-                                                                </section>
-                                                            </div>
+                                                        <div class="col-sm-4 mt-2">
+                                                            <mat-form-field class="select-formulario-edicao">
+                                                                <mat-label>Tempo</mat-label>
+                                                                <mat-select formControlName="tempo"
+                                                                    (selectionChange)="adicionarRegra($event)">
+                                                                    <mat-option *ngFor="let tempo of tempos"
+                                                                        [value]="tempo">
+                                                                        {{ tempo }}
+                                                                    </mat-option>
+                                                                </mat-select>
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-sm-4 mt-2">
+                                                            <mat-form-field class="select-formulario-edicao">
+                                                                <mat-label>Perícia</mat-label>
+                                                                <mat-select formControlName="idPericia"
+                                                                    (selectionChange)="adicionarPericia($event)">
+                                                                    <mat-option *ngFor="let pericia of pericias"
+                                                                        [value]="pericia.id">
+                                                                        {{ pericia.nome }}
+                                                                    </mat-option>
+                                                                </mat-select>
+                                                            </mat-form-field>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12 mt-2 button-row">
+                                                            <section class="d-flex flex-wrap gap-2">
+                                                                @for (periciaItem of periciasItem; track periciaItem.id)
+                                                                {
+                                                                <button class="me-2" mat-flat-button
+                                                                    (click)="removerPericia(periciaItem)">
+                                                                    {{ periciaItem.tb_pericia?.nome }}
+                                                                </button>
+                                                                }
+                                                            </section>
                                                         </div>
                                                     </div>
                                                 </div>

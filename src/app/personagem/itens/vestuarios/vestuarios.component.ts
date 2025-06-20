@@ -207,6 +207,16 @@ export class VestuariosComponent {
         console.error('Erro ao carregar regras', error);
       });
 
+      this.regraServiceSB.carregarCombo(53).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
+
       this.pericias = await this.periciaServiceSB.listar();
 
     } catch (err) {

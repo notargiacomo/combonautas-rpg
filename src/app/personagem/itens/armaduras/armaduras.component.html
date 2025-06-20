@@ -55,7 +55,7 @@
                                 <mat-form-field class="form-field">
                                     <mat-label>Digite o Equipamento</mat-label>
                                     <input formControlName="nome" matInput type="text"
-                                        (keyup)="consultar(false, '1. Arma')" />
+                                        (keyup)="consultar(false, '3. Armadura')" />
                                 </mat-form-field>
                             </div>
                             <div class="col-sm-3 mt-4">
@@ -152,7 +152,7 @@
                                                         <section class="d-flex flex-wrap gap-2">
                                                             @for (regra of regrasItem; track regra.id_regra) {
                                                             <button class="me-2" mat-flat-button
-                                                                (click)="removerRegra(regra)">
+                                                                (click)="removerRegra(regra)" disabled>
                                                                 {{ regra.tb_regra?.nome }}
                                                             </button>
                                                             }

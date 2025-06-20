@@ -152,7 +152,7 @@
                                                         <section class="d-flex flex-wrap gap-2">
                                                             @for (regra of regrasItem; track regra.id_regra) {
                                                             <button class="me-2" mat-flat-button
-                                                                (click)="removerRegra(regra)">
+                                                                (click)="removerRegra(regra)" disabled>
                                                                 {{ regra.tb_regra?.nome }}
                                                             </button>
                                                             }

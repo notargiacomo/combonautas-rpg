@@ -12,7 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
@@ -21,7 +21,7 @@ import { TipoItem } from '@app/enum/tipo.item.enum';
 import { Item } from '@app/model/item';
 import { Regra } from '@app/model/regra';
 import { RegraTree } from '@app/model/RegraTree';
-import { ItemFerramentaSB } from '@app/model/supamodel/item.ferramenta.sb';
+import { ItemAlimentoSB } from '@app/model/supamodel/item.alimento.sb';
 import { ItemManutencaoSB } from '@app/model/supamodel/item.manutencao.sb';
 import { ItemSB } from '@app/model/supamodel/item.sb';
 import { PericiaItemSB } from '@app/model/supamodel/pericia.item.sb';
@@ -30,7 +30,7 @@ import { ReferenciaItemSB } from '@app/model/supamodel/referencia.item.sb';
 import { RegraItemSB } from '@app/model/supamodel/regra.item.sb';
 import { TipoDanoItemSB } from '@app/model/supamodel/tipo.dano.item.sb';
 import { ItemService } from '@app/service/item.service';
-import { ItemFerramentaServiceSupabase } from '@app/service/supaservice/item.ferramenta.service.supabase';
+import { ItemAlimentoServiceSupabase } from '@app/service/supaservice/item.alimento.service.supabase';
 import { ItemManutencaoServiceSupabase } from '@app/service/supaservice/item.manutencao.service.supabase';
 import { ItemServiceSupabase } from '@app/service/supaservice/item.service.supabase';
 import { PericiaServiceSupabase } from '@app/service/supaservice/pericia.service.supabase';
@@ -40,34 +40,34 @@ import { TipoDanoServiceSupabase } from '@app/service/supaservice/tipo.dano.serv
 import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.service.supabase';
 
 @Component({
-  selector: 'app-ferramentas',
+  selector: 'app-alimentos',
   imports: [
-    MatDividerModule,
-    MatCardModule,
-    MatGridListModule,
-    NgFor,
-    NgIf,
-    NgClass,
-    MatIconModule,
-    MatInputModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatTabsModule,
-    MatRadioModule,
-    MatButtonModule,
-    MatTableModule,
-    MatSelectModule,
-    MatSortModule,
-    MatPaginatorModule,
-    MatFormFieldModule,
-    MatExpansionModule,
-    MatTreeModule,
+      MatDividerModule,
+      MatCardModule,
+      MatGridListModule,
+      NgFor,
+      NgIf,
+      NgClass,
+      MatIconModule,
+      MatInputModule,
+      FormsModule,
+      ReactiveFormsModule,
+      MatTabsModule,
+      MatRadioModule,
+      MatButtonModule,
+      MatTableModule,
+      MatSelectModule,
+      MatSortModule,
+      MatPaginatorModule,
+      MatFormFieldModule,
+      MatExpansionModule,
+      MatTreeModule,
   ],
-  templateUrl: './ferramentas.component.html',
-  styleUrl: './ferramentas.component.scss'
+  templateUrl: './alimentos.component.html',
+  styleUrl: './alimentos.component.scss'
 })
-export class FerramentasComponent {
-dataSourceRegraTree: RegraTree[] = [];
+export class AlimentosComponent {
+  dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
   hasChild = (_: number, node: RegraTree) =>
@@ -79,9 +79,9 @@ dataSourceRegraTree: RegraTree[] = [];
 
   form!: FormGroup;
   objetos!: Item[];
-
-  instrumentosMusicais!: Item[];
-  ferramentas!: Item[];
+  pratos_especiais!: Item[];
+  pratos_especiais_divinos!: Item[];
+  bebidas!: Item[];
 
   tiposItem: any[] = [];
   chaves: Chave[] = [];
@@ -89,13 +89,15 @@ dataSourceRegraTree: RegraTree[] = [];
   selecaoChave: boolean = false;
 
   numero_registros = 0;
-  numero_registro_ferramentas = 0;
-  numero_registro_instrumentos_musicais = 0;
+  numero_registros_pratos_especiais = 0;
+  numero_registros_pratos_especiais_divinos = 0;
+  numero_registros_bebidas = 0;
   filtro_traco: string = '';
 
   dataSource = new MatTableDataSource<Item>();
-  dataSourceF = new MatTableDataSource<Item>();
-  dataSourceIM = new MatTableDataSource<Item>();
+  dataSourcePE = new MatTableDataSource<Item>();
+  dataSourcePED = new MatTableDataSource<Item>();
+  dataSourceB = new MatTableDataSource<Item>();
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
@@ -105,7 +107,7 @@ dataSourceRegraTree: RegraTree[] = [];
   objeto: Item | undefined;
   itemSB?: ItemSB;
   itemManutencao?: ItemManutencaoSB;
-  itemFerramenta?: ItemFerramentaSB;
+  itemAlimento?: ItemAlimentoSB;
   referencia!: { id: number; nome: string };
   referencias: any[] = [];
   regras: any[] = [];
@@ -124,7 +126,7 @@ dataSourceRegraTree: RegraTree[] = [];
     private readonly regraServiceSB: RegraServiceSupabase,
     private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
     private readonly periciaServiceSB: PericiaServiceSupabase,
-    private readonly itemFerramentaServiceSupabase: ItemFerramentaServiceSupabase,
+    private readonly itemAlimentoServiceSupabase: ItemAlimentoServiceSupabase,
     private itemManutencaoSB: ItemManutencaoServiceSupabase,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
@@ -168,7 +170,7 @@ dataSourceRegraTree: RegraTree[] = [];
       espaco: [],
       rd: [],
       pv: [],
-      idFerramenta: [],
+      idAlimento: [],
       idManutencao: [],
       preco: [],
       cd: [],
@@ -177,7 +179,6 @@ dataSourceRegraTree: RegraTree[] = [];
     });
 
     this.consultar(false, null);
-    this.carregarItens();
     this.carregarTabelasDominio();
 
     this.pericias.sort((a, b) => {
@@ -187,7 +188,7 @@ dataSourceRegraTree: RegraTree[] = [];
     });
 
     this.dataSourceRegraTree.push(
-      await this.regraServiceSB.carregarMenusConceito({ id: 50 })
+      await this.regraServiceSB.carregarMenusConceito({ id: 60 })
     );
     this.cdr.detectChanges();
   }
@@ -204,8 +205,7 @@ dataSourceRegraTree: RegraTree[] = [];
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
-
-      this.regraServiceSB.carregarCombo(48).then((regras: Regra[]) => {
+      this.regraServiceSB.carregarCombo(60).then((regras: Regra[]) => {
         regras.forEach((r) => {
           this.regras.push(r);
         });
@@ -215,17 +215,7 @@ dataSourceRegraTree: RegraTree[] = [];
         console.error('Erro ao carregar regras', error);
       });
 
-      this.regraServiceSB.carregarCombo(49).then((regras: Regra[]) => {
-        regras.forEach((r) => {
-          this.regras.push(r);
-        });
-        this.regras = this.ordenacaoAlfabetica(this.regras);
-      })
-      .catch((error) => {
-        console.error('Erro ao carregar regras', error);
-      });
-
-      this.regraServiceSB.carregarCombo(50).then((regras: Regra[]) => {
+      this.regraServiceSB.carregarCombo(52).then((regras: Regra[]) => {
         regras.forEach((r) => {
           this.regras.push(r);
         });
@@ -276,13 +266,18 @@ dataSourceRegraTree: RegraTree[] = [];
     return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
-  isOddF(element: any): boolean {
-    const index = this.dataSourceF.data.indexOf(element);
+  isOddPE(element: any): boolean {
+    const index = this.dataSourcePE.data.indexOf(element);
     return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
-  isOddIM(element: any): boolean {
-    const index = this.dataSourceIM.data.indexOf(element);
+  isOddPED(element: any): boolean {
+    const index = this.dataSourcePED.data.indexOf(element);
+    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
+  }
+
+  isOddB(element: any): boolean {
+    const index = this.dataSourceB.data.indexOf(element);
     return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
   }
 
@@ -292,7 +287,7 @@ dataSourceRegraTree: RegraTree[] = [];
     this.form.get('tela')?.setValue(tela);
     this.objeto = undefined;
     this.itemSB = undefined;
-    this.itemFerramenta = undefined;
+    this.itemAlimento = undefined;
     this.itemManutencao = undefined;
     this.regrasItem = [];
     this.periciasItem = [];
@@ -307,7 +302,7 @@ dataSourceRegraTree: RegraTree[] = [];
     setTimeout(() => {
       if (this.itemSB) {
         this.form.get('id')?.setValue(this.itemSB.id);
-        this.form.get('idFerramenta')?.setValue(this.itemSB.id);
+        this.form.get('idAlimento')?.setValue(this.itemSB.id);
         this.form.get('idManutencao')?.setValue(this.itemSB.id);
         this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
         this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
@@ -320,7 +315,7 @@ dataSourceRegraTree: RegraTree[] = [];
         this.form.get('descricao')?.setValue(objeto.descricao);
         this.form.get('paginas')?.setValue(objeto.paginas);
       }
-      this.selecionaFerramenta(objeto);
+      this.selecionaAlimento(objeto);
       this.selecionaManutencao(objeto);
     }, 2000);
     this.cdr.detectChanges();
@@ -350,19 +345,19 @@ dataSourceRegraTree: RegraTree[] = [];
     }
   }
 
-  async selecionaFerramenta(objeto: Item) {
-    if (this.form.get('idFerramenta')?.value) {
+  async selecionaAlimento(objeto: Item) {
+    if (this.form.get('idAlimento')?.value) {
       try {
-        this.itemFerramenta = await this.itemFerramentaServiceSupabase.consultarPorId(
-          this.form.get('idFerramenta')?.value
+        this.itemAlimento = await this.itemAlimentoServiceSupabase.consultarPorId(
+          this.form.get('idAlimento')?.value
         );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
     }
 
-    if (this.itemFerramenta) {
-      this.form.get('espaco')?.setValue(this.itemFerramenta.espaco);
+    if (this.itemAlimento) {
+      this.form.get('espaco')?.setValue(this.itemAlimento.espaco);
     } else {
       this.form.get('espaco')?.setValue(objeto.espaco);
     }
@@ -378,7 +373,7 @@ dataSourceRegraTree: RegraTree[] = [];
       caminho_imagem: this.objeto?.imagem,
     };
 
-    this.itemFerramenta = {
+    this.itemAlimento = {
       espaco: this.form.get('espaco')?.value,
     };
 
@@ -413,12 +408,12 @@ dataSourceRegraTree: RegraTree[] = [];
         await this.itemManutencaoSB.inserir(this.itemManutencao);
       }
 
-      if (this.form.get('idFerramenta')?.value) {
-        await this.itemFerramentaServiceSupabase.atualizar(id, this.itemFerramenta);
+      if (this.form.get('idAlimento')?.value) {
+        await this.itemAlimentoServiceSupabase.atualizar(id, this.itemAlimento);
       } else {
-        this.itemFerramenta.id = id;
-        this.itemFerramenta.id_item_manutencao = id;
-        await this.itemFerramentaServiceSupabase.inserir(this.itemFerramenta);
+        this.itemAlimento.id = id;
+        this.itemAlimento.id_item_manutencao = id;
+        await this.itemAlimentoServiceSupabase.inserir(this.itemAlimento);
       }
 
       const ri: { id_item: number; id_regra: number }[] = [];
@@ -464,7 +459,7 @@ dataSourceRegraTree: RegraTree[] = [];
     }
 
     filtro.tela = null;
-    filtro.tipo = TipoItem.FERRAMENTA;
+    filtro.tipo = TipoItem.ALIMENTACAO;
     this.consultarTodos(filtro);
   }
 
@@ -505,34 +500,31 @@ dataSourceRegraTree: RegraTree[] = [];
         this.dataSource.paginator = this.paginator;
         this.numero_registros = naoMagico.length;
 
-        this.instrumentosMusicais = naoMagico.filter((p) =>
-          p.chave.includes(Chave.FERRAMENTA_INSTRUMENTO_MUSICAL)
+        this.pratos_especiais = naoMagico.filter((p) =>
+          p.chave.includes(Chave.PRATO_ESPECIAL)
+        );
+        this.pratos_especiais_divinos = naoMagico.filter((p) =>
+          p.chave.includes(Chave.PRATO_ESPECIAL_DIVINO)
+        );
+        this.bebidas = naoMagico.filter((p) =>
+          p.chave.includes(Chave.BEBIDA)
         );
 
-        this.ferramentas = naoMagico.filter((p) =>
-          !p.chave.includes(Chave.FERRAMENTA_INSTRUMENTO_MUSICAL)
-        );
+        this.dataSourcePE = new MatTableDataSource(this.pratos_especiais);
+        this.dataSourcePE.paginator = this.paginator;
+        this.numero_registros_pratos_especiais = this.pratos_especiais.length;
 
-        this.dataSourceF = new MatTableDataSource(this.ferramentas);
-        this.dataSourceF.paginator = this.paginator;
-        this.numero_registro_ferramentas = this.ferramentas.length;
+        this.dataSourcePED = new MatTableDataSource(this.pratos_especiais_divinos);
+        this.dataSourcePED.paginator = this.paginator;
+        this.numero_registros_pratos_especiais_divinos = this.pratos_especiais_divinos.length;
 
-        this.dataSourceIM = new MatTableDataSource(this.instrumentosMusicais);
-        this.dataSourceIM.paginator = this.paginator;
-        this.numero_registro_instrumentos_musicais = this.instrumentosMusicais.length;
+        this.dataSourceB = new MatTableDataSource(this.bebidas);
+        this.dataSourceB.paginator = this.paginator;
+        this.numero_registros_bebidas = this.bebidas.length;        
 
         this.carregaChaves();
       },
     });
-  }
-
-  visao(visao: string){
-    let seVisao = false;
-    if(this.form != undefined) {
-      seVisao = this.form.get('tela')?.value == visao;
-    }
-
-    return seVisao;
   }
 
   carregaChaves() {
@@ -627,5 +619,14 @@ dataSourceRegraTree: RegraTree[] = [];
     this.objeto = undefined;
     this.form.reset();
     this.consultar(false, null);
+  }
+
+    visao(visao: string){
+    let seVisao = false;
+    if(this.form != undefined) {
+      seVisao = this.form.get('tela')?.value == visao;
+    }
+
+    return seVisao;
   }
 }

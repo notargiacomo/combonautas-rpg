@@ -33,6 +33,8 @@ import { FerramentasComponent } from "./ferramentas/ferramentas.component";
 import { VestuariosComponent } from "./vestuarios/vestuarios.component";
 import { EsotericosComponent } from "./esotericos/esotericos.component";
 import { AlquimicosComponent } from "./alquimicos/alquimicos.component";
+import { EscudosComponent } from "./escudos/escudos.component";
+import { AlimentosComponent } from "./alimentos/alimentos.component";
 
 @Component({
   selector: 'app-itens',
@@ -63,7 +65,9 @@ import { AlquimicosComponent } from "./alquimicos/alquimicos.component";
     FerramentasComponent,
     VestuariosComponent,
     EsotericosComponent,
-    AlquimicosComponent
+    AlquimicosComponent,
+    EscudosComponent,
+    AlimentosComponent
 ],
   templateUrl: './itens.component.html',
   styleUrl: './itens.component.scss',

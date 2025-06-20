@@ -22,10 +22,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
+import { Regra } from '@app/model/regra';
 import { RegraTree } from '@app/model/RegraTree';
 import { ItemArmaduraSB } from '@app/model/supamodel/item.armadura.sb';
 import { ItemArmaduraServiceSupabase } from '@app/service/supaservice/item.armadura.service.supabase';
@@ -40,7 +41,6 @@ import { PericiaSB } from '../../../model/supamodel/pericia.sb';
 import { ReferenciaItemSB } from '../../../model/supamodel/referencia.item.sb';
 import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
 import { ItemService } from '../../../service/item.service';
-import { AlcanceServiceSupabase } from '../../../service/supaservice/alcance.service.supabase';
 import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
 import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
 import { ItemServiceSupabase } from '../../../service/supaservice/item.service.supabase';
@@ -49,7 +49,6 @@ import { ReferenciaServiceSupabase } from '../../../service/supaservice/referenc
 import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
 import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
 import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
-import { Regra } from '@app/model/regra';
 @Component({
   selector: 'app-armaduras',
   imports: [
