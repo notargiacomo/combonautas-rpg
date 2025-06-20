@@ -12,7 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
@@ -21,28 +21,27 @@ import { TipoItem } from '@app/enum/tipo.item.enum';
 import { Item } from '@app/model/item';
 import { Regra } from '@app/model/regra';
 import { RegraTree } from '@app/model/RegraTree';
+import { ItemEsotericoSB } from '@app/model/supamodel/item.esoterico.sb';
 import { ItemManutencaoSB } from '@app/model/supamodel/item.manutencao.sb';
 import { ItemSB } from '@app/model/supamodel/item.sb';
-import { ItemVestuarioSB } from '@app/model/supamodel/item.vestuario.sb';
 import { PericiaItemSB } from '@app/model/supamodel/pericia.item.sb';
 import { PericiaSB } from '@app/model/supamodel/pericia.sb';
 import { ReferenciaItemSB } from '@app/model/supamodel/referencia.item.sb';
 import { RegraItemSB } from '@app/model/supamodel/regra.item.sb';
 import { TipoDanoItemSB } from '@app/model/supamodel/tipo.dano.item.sb';
 import { ItemService } from '@app/service/item.service';
+import { ItemEsotericoServiceSupabase } from '@app/service/supaservice/item.esoterico.service.supabase';
 import { ItemManutencaoServiceSupabase } from '@app/service/supaservice/item.manutencao.service.supabase';
 import { ItemServiceSupabase } from '@app/service/supaservice/item.service.supabase';
-import { ItemVestuarioServiceSupabase } from '@app/service/supaservice/item.vestuario.service.supabase';
 import { PericiaServiceSupabase } from '@app/service/supaservice/pericia.service.supabase';
 import { ReferenciaServiceSupabase } from '@app/service/supaservice/referencia.service.supabase';
 import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
 import { TipoDanoServiceSupabase } from '@app/service/supaservice/tipo.dano.service.supabase';
 import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.service.supabase';
 
-
 @Component({
-  selector: 'app-vestuarios',
-  imports: [
+  selector: 'app-esotericos',
+imports: [
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
@@ -64,11 +63,11 @@ import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.serv
     MatExpansionModule,
     MatTreeModule,
   ],
-  templateUrl: './vestuarios.component.html',
-  styleUrl: './vestuarios.component.scss'
+  templateUrl: './esotericos.component.html',
+  styleUrl: './esotericos.component.scss'
 })
-export class VestuariosComponent {
-dataSourceRegraTree: RegraTree[] = [];
+export class EsotericosComponent {
+  dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
   hasChild = (_: number, node: RegraTree) =>
@@ -99,7 +98,7 @@ dataSourceRegraTree: RegraTree[] = [];
   objeto: Item | undefined;
   itemSB?: ItemSB;
   itemManutencao?: ItemManutencaoSB;
-  itemVestuario?: ItemVestuarioSB;
+  itemEsoterico?: ItemEsotericoSB;
   referencia!: { id: number; nome: string };
   referencias: any[] = [];
   regras: any[] = [];
@@ -118,7 +117,7 @@ dataSourceRegraTree: RegraTree[] = [];
     private readonly regraServiceSB: RegraServiceSupabase,
     private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
     private readonly periciaServiceSB: PericiaServiceSupabase,
-    private readonly itemVestuarioServiceSupabase: ItemVestuarioServiceSupabase,
+    private readonly itemEsotericoServiceSupabase: ItemEsotericoServiceSupabase,
     private itemManutencaoSB: ItemManutencaoServiceSupabase,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
@@ -162,7 +161,7 @@ dataSourceRegraTree: RegraTree[] = [];
       espaco: [],
       rd: [],
       pv: [],
-      idVestuario: [],
+      idEsoterico: [],
       idManutencao: [],
       preco: [],
       cd: [],
@@ -180,7 +179,7 @@ dataSourceRegraTree: RegraTree[] = [];
     });
 
     this.dataSourceRegraTree.push(
-      await this.regraServiceSB.carregarMenusConceito({ id: 53 })
+      await this.regraServiceSB.carregarMenusConceito({ id: 54 })
     );
     this.cdr.detectChanges();
   }
@@ -196,6 +195,16 @@ dataSourceRegraTree: RegraTree[] = [];
 
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
+
+      this.regraServiceSB.carregarCombo(48).then((regras: Regra[]) => {
+        regras.forEach((r) => {
+          this.regras.push(r);
+        });
+        this.regras = this.ordenacaoAlfabetica(this.regras);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar regras', error);
+      });
 
       this.regraServiceSB.carregarCombo(49).then((regras: Regra[]) => {
         regras.forEach((r) => {
@@ -255,7 +264,7 @@ dataSourceRegraTree: RegraTree[] = [];
     this.form.get('tela')?.setValue(tela);
     this.objeto = undefined;
     this.itemSB = undefined;
-    this.itemVestuario = undefined;
+    this.itemEsoterico = undefined;
     this.itemManutencao = undefined;
     this.regrasItem = [];
     this.periciasItem = [];
@@ -270,7 +279,7 @@ dataSourceRegraTree: RegraTree[] = [];
     setTimeout(() => {
       if (this.itemSB) {
         this.form.get('id')?.setValue(this.itemSB.id);
-        this.form.get('idVestuario')?.setValue(this.itemSB.id);
+        this.form.get('idEsoterico')?.setValue(this.itemSB.id);
         this.form.get('idManutencao')?.setValue(this.itemSB.id);
         this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
         this.form.get('idReferencia')?.setValue(this.itemSB.id_referencia);
@@ -283,7 +292,7 @@ dataSourceRegraTree: RegraTree[] = [];
         this.form.get('descricao')?.setValue(objeto.descricao);
         this.form.get('paginas')?.setValue(objeto.paginas);
       }
-      this.selecionaVestuario(objeto);
+      this.selecionaEsoterico(objeto);
       this.selecionaManutencao(objeto);
     }, 2000);
     this.cdr.detectChanges();
@@ -313,19 +322,19 @@ dataSourceRegraTree: RegraTree[] = [];
     }
   }
 
-  async selecionaVestuario(objeto: Item) {
-    if (this.form.get('idVestuario')?.value) {
+  async selecionaEsoterico(objeto: Item) {
+    if (this.form.get('idEsoterico')?.value) {
       try {
-        this.itemVestuario = await this.itemVestuarioServiceSupabase.consultarPorId(
-          this.form.get('idVestuario')?.value
+        this.itemEsoterico = await this.itemEsotericoServiceSupabase.consultarPorId(
+          this.form.get('idEsoterico')?.value
         );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
     }
 
-    if (this.itemVestuario) {
-      this.form.get('espaco')?.setValue(this.itemVestuario.espaco);
+    if (this.itemEsoterico) {
+      this.form.get('espaco')?.setValue(this.itemEsoterico.espaco);
     } else {
       this.form.get('espaco')?.setValue(objeto.espaco);
     }
@@ -341,7 +350,7 @@ dataSourceRegraTree: RegraTree[] = [];
       caminho_imagem: this.objeto?.imagem,
     };
 
-    this.itemVestuario = {
+    this.itemEsoterico = {
       espaco: this.form.get('espaco')?.value,
     };
 
@@ -376,12 +385,12 @@ dataSourceRegraTree: RegraTree[] = [];
         await this.itemManutencaoSB.inserir(this.itemManutencao);
       }
 
-      if (this.form.get('idVestuario')?.value) {
-        await this.itemVestuarioServiceSupabase.atualizar(id, this.itemVestuario);
+      if (this.form.get('idEsoterico')?.value) {
+        await this.itemEsotericoServiceSupabase.atualizar(id, this.itemEsoterico);
       } else {
-        this.itemVestuario.id = id;
-        this.itemVestuario.id_item_manutencao = id;
-        await this.itemVestuarioServiceSupabase.inserir(this.itemVestuario);
+        this.itemEsoterico.id = id;
+        this.itemEsoterico.id_item_manutencao = id;
+        await this.itemEsotericoServiceSupabase.inserir(this.itemEsoterico);
       }
 
       const ri: { id_item: number; id_regra: number }[] = [];
@@ -427,7 +436,7 @@ dataSourceRegraTree: RegraTree[] = [];
     }
 
     filtro.tela = null;
-    filtro.tipo = TipoItem.VESTUARIO;
+    filtro.tipo = TipoItem.ESOTERICO;
     this.consultarTodos(filtro);
   }
 
