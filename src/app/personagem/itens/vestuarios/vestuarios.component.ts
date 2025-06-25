@@ -1,5 +1,5 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component, signal, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, signal, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -67,7 +67,7 @@ import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.serv
   templateUrl: './vestuarios.component.html',
   styleUrl: './vestuarios.component.scss'
 })
-export class VestuariosComponent {
+export class VestuariosComponent implements OnInit {
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
@@ -124,21 +124,23 @@ export class VestuariosComponent {
     private cdr: ChangeDetectorRef
   ) {}
 
-  async ngAfterViewInit() {
+  ngAfterViewInit() {
     this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
   }
 
-  async ngOnInit() {
+  ngOnInit() {
     this.itemSB = new ItemSB();
-    const logado = sessionStorage.getItem('logado') || '';
-
-    if (logado) {
-      this.edicao = true;
-      const login = sessionStorage.getItem('login') || '';
-      console.log('Usuário logado:', login);
-    } else {
-      console.log('Usuário não está logado');
+    if (typeof window !== 'undefined' && sessionStorage) {
+      const logado = sessionStorage.getItem('logado') || '';
+  
+      if (logado) {
+        this.edicao = true;
+        const login = sessionStorage.getItem('login') || '';
+        console.log('Usuário logado:', login);
+      } else {
+        console.log('Usuário não está logado');
+      }
     }
 
     this.form = this.fb.group({
@@ -179,10 +181,13 @@ export class VestuariosComponent {
       return nome_a!.localeCompare(nome_b!);
     });
 
-    this.dataSourceRegraTree.push(
-      await this.regraServiceSB.carregarMenusConceito({ id: 53 })
-    );
+    this.carregaArvoreConceitos();
+  }
+
+  async carregaArvoreConceitos(){
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 53 }));
     this.cdr.detectChanges();
+
   }
 
   selecionaRegra(regraSelecionada: any) {
@@ -569,6 +574,14 @@ export class VestuariosComponent {
 
   umTerco(preco: number) {
     return Number((preco / 3).toFixed(1));
+  }
+
+  novo() {
+    this.form.get('idTipo')?.setValue(7);
+    this.objeto = {
+      id: 1,
+      tipo: TipoItem.ARMA,
+    } as Item;
   }
 
   limparFiltros() {

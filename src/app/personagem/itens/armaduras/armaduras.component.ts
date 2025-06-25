@@ -2,6 +2,7 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 import {
   ChangeDetectorRef,
   Component,
+  OnInit,
   signal,
   ViewChild
 } from '@angular/core';
@@ -76,7 +77,7 @@ import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.
   templateUrl: './armaduras.component.html',
   styleUrl: './armaduras.component.scss'
 })
-export class ArmadurasComponent {
+export class ArmadurasComponent implements OnInit{
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
 
@@ -160,18 +161,7 @@ export class ArmadurasComponent {
     this.dataSourceAP.paginator = this.paginator;
   }
   
-  async ngOnInit() {
-
-    this.itemSB = new ItemSB();
-    const logado = sessionStorage.getItem('logado') || '';
-
-    if (logado) {
-      this.edicao = true;
-      const login = sessionStorage.getItem('login') || '';
-      console.log('Usuário logado:', login);
-    } else {
-      console.log('Usuário não está logado');
-    }
+  ngOnInit() {
 
     this.form = this.fb.group({
       id: [],
@@ -204,6 +194,18 @@ export class ArmadurasComponent {
       tela: ([] = ['ALFABETICA']),
     });
 
+    this.itemSB = new ItemSB();
+    if (typeof window !== 'undefined' && sessionStorage) {
+      const logado = sessionStorage.getItem('logado') || '';
+  
+      if (logado) {
+        this.edicao = true;
+        const login = sessionStorage.getItem('login') || '';
+        console.log('Usuário logado:', login);
+      } else {
+        console.log('Usuário não está logado');
+      }
+    }
 
     this.consultar(false, null);
     this.carregarItens();
@@ -215,8 +217,13 @@ export class ArmadurasComponent {
       return nome_a!.localeCompare(nome_b!);
     });
 
+    this.carregaArvoreConceitos();
+  }
+
+  async carregaArvoreConceitos(){
     this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 38 }));
     this.cdr.detectChanges();
+
   }
 
   visao(visao: string){
@@ -713,6 +720,14 @@ export class ArmadurasComponent {
     this.objeto = undefined;
     this.form.reset();
     this.consultar(false, null);
+  }
+
+  novo() {
+    this.form.get('idTipo')?.setValue(3);
+    this.objeto = {
+      id: 1,
+      tipo: TipoItem.ARMA,
+    } as Item;
   }
 
 }

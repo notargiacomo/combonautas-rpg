@@ -72,8 +72,11 @@
                             </div> -->
                         </div>
                         <div class="row">
-                            <div *ngIf="edicao" class="col-sm-12 mt-4 button-row d-flex justify-content-end">
-                                <button class="me-2" (click)="salvar()" mat-flat-button>
+                            <div class="col-sm-12 mt-4 button-row d-flex justify-content-end">
+                                <button *ngIf="edicao" class="me-2" (click)="novo()" mat-flat-button>
+                                    Novo Equipamento
+                                </button>
+                                <button *ngIf="edicao" class="me-2" (click)="salvar()" mat-flat-button>
                                     Salvar no Banco
                                 </button>
                                 <button class="me-2" (click)="limparFiltros()" mat-flat-button>
@@ -127,7 +130,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-12 d-flex justify-content-end">
                                                             {{
-                                                            (referenciaItem ? referenciaItem?.nome : objeto.referencias)
+                                                            (referenciaItem ? referenciaItem.nome : objeto.referencias)
                                                             + ",
                                                             pag. " + (itemSB?.paginas ? itemSB?.paginas :
                                                             objeto.paginas)

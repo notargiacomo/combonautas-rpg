@@ -1,5 +1,5 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component, signal, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, signal, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -66,7 +66,7 @@ imports: [
   templateUrl: './esotericos.component.html',
   styleUrl: './esotericos.component.scss'
 })
-export class EsotericosComponent {
+export class EsotericosComponent implements OnInit {
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
@@ -123,21 +123,23 @@ export class EsotericosComponent {
     private cdr: ChangeDetectorRef
   ) {}
 
-  async ngAfterViewInit() {
+  ngAfterViewInit() {
     this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
   }
 
-  async ngOnInit() {
+  ngOnInit() {
     this.itemSB = new ItemSB();
-    const logado = sessionStorage.getItem('logado') || '';
-
-    if (logado) {
-      this.edicao = true;
-      const login = sessionStorage.getItem('login') || '';
-      console.log('Usuário logado:', login);
-    } else {
-      console.log('Usuário não está logado');
+    if (typeof window !== 'undefined' && sessionStorage) {
+      const logado = sessionStorage.getItem('logado') || '';
+  
+      if (logado) {
+        this.edicao = true;
+        const login = sessionStorage.getItem('login') || '';
+        console.log('Usuário logado:', login);
+      } else {
+        console.log('Usuário não está logado');
+      }
     }
 
     this.form = this.fb.group({
@@ -178,10 +180,13 @@ export class EsotericosComponent {
       return nome_a!.localeCompare(nome_b!);
     });
 
-    this.dataSourceRegraTree.push(
-      await this.regraServiceSB.carregarMenusConceito({ id: 54 })
-    );
+    this.carregaArvoreConceitos();
+  }
+
+  async carregaArvoreConceitos(){
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 54 }));
     this.cdr.detectChanges();
+
   }
 
   selecionaRegra(regraSelecionada: any) {
@@ -578,6 +583,14 @@ export class EsotericosComponent {
 
   umTerco(preco: number) {
     return Number((preco / 3).toFixed(1));
+  }
+
+  novo() {
+    this.form.get('idTipo')?.setValue(8);
+    this.objeto = {
+      id: 1,
+      tipo: TipoItem.ARMA,
+    } as Item;
   }
 
   limparFiltros() {

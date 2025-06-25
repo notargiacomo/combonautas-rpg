@@ -3,6 +3,7 @@ import {
   AfterViewInit,
   ChangeDetectorRef,
   Component,
+  OnInit,
   signal,
   ViewChild,
 } from '@angular/core';
@@ -79,7 +80,7 @@ import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.serv
   templateUrl: './municoes.component.html',
   styleUrl: './municoes.component.scss',
 })
-export class MunicoesComponent implements AfterViewInit {
+export class MunicoesComponent implements AfterViewInit, OnInit {
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
@@ -155,17 +156,7 @@ export class MunicoesComponent implements AfterViewInit {
     this.dataSourceAF.paginator = this.paginator;
   }
 
-  async ngOnInit() {
-    this.itemSB = new ItemSB();
-    const logado = sessionStorage.getItem('logado') || '';
-
-    if (logado) {
-      this.edicao = true;
-      const login = sessionStorage.getItem('login') || '';
-      console.log('Usuário logado:', login);
-    } else {
-      console.log('Usuário não está logado');
-    }
+  ngOnInit() {
 
     this.form = this.fb.group({
       id: [],
@@ -196,6 +187,19 @@ export class MunicoesComponent implements AfterViewInit {
       qtd_pacote_municao: [],
     });
 
+    this.itemSB = new ItemSB();
+    if (typeof window !== 'undefined' && sessionStorage) {
+      const logado = sessionStorage.getItem('logado') || '';
+  
+      if (logado) {
+        this.edicao = true;
+        const login = sessionStorage.getItem('login') || '';
+        console.log('Usuário logado:', login);
+      } else {
+        console.log('Usuário não está logado');
+      }
+    }
+
     this.consultar(false, null);
     this.carregarItens();
     this.carregarTabelasDominio();
@@ -206,10 +210,13 @@ export class MunicoesComponent implements AfterViewInit {
       return nome_a!.localeCompare(nome_b!);
     });
 
-    this.dataSourceRegraTree.push(
-      await this.regraServiceSB.carregarMenusConceito({ id: 29 })
-    );
+    this.carregaArvoreConceitos();
+  }
+
+  async carregaArvoreConceitos(){
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 29 }));
     this.cdr.detectChanges();
+
   }
 
   selecionaRegra(regraSelecionada: any) {
@@ -617,6 +624,14 @@ export class MunicoesComponent implements AfterViewInit {
 
   umTerco(preco: number) {
     return Number((preco / 3).toFixed(1));
+  }
+
+  novo() {
+    this.form.get('idTipo')?.setValue(2);
+    this.objeto = {
+      id: 1,
+      tipo: TipoItem.ARMA,
+    } as Item;
   }
 
   limparFiltros() {

@@ -1,8 +1,8 @@
-import { NgClass, NgFor, NgIf } from '@angular/common';
 import {
   AfterViewInit,
   ChangeDetectorRef,
   Component,
+  OnInit,
   signal
 } from '@angular/core';
 import {
@@ -22,19 +22,21 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-import { ArmasComponent } from "./armas/armas.component";
-import { MunicoesComponent } from "./municoes/municoes.component";
-import { ArmadurasComponent } from "./armaduras/armaduras.component";
-import { RegraTree } from '@app/model/RegraTree';
 import { MatTreeModule } from '@angular/material/tree';
+import { RegraTree } from '@app/model/RegraTree';
 import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
-import { EquipamentoAventuraComponent } from "./equipamento-aventura/equipamento-aventura.component";
-import { FerramentasComponent } from "./ferramentas/ferramentas.component";
-import { VestuariosComponent } from "./vestuarios/vestuarios.component";
-import { EsotericosComponent } from "./esotericos/esotericos.component";
-import { AlquimicosComponent } from "./alquimicos/alquimicos.component";
-import { EscudosComponent } from "./escudos/escudos.component";
 import { AlimentosComponent } from "./alimentos/alimentos.component";
+import { AlquimicosComponent } from "./alquimicos/alquimicos.component";
+import { ArmadurasComponent } from "./armaduras/armaduras.component";
+import { ArmasComponent } from "./armas/armas.component";
+import { EquipamentoAventuraComponent } from "./equipamento-aventura/equipamento-aventura.component";
+import { EscudosComponent } from "./escudos/escudos.component";
+import { EsotericosComponent } from "./esotericos/esotericos.component";
+import { FerramentasComponent } from "./ferramentas/ferramentas.component";
+import { MunicoesComponent } from "./municoes/municoes.component";
+import { TodosItensComponent } from "./todos-itens/todos-itens.component";
+import { VestuariosComponent } from "./vestuarios/vestuarios.component";
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-itens',
@@ -42,9 +44,6 @@ import { AlimentosComponent } from "./alimentos/alimentos.component";
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
-    NgFor,
-    NgIf,
-    NgClass,
     MatIconModule,
     MatInputModule,
     FormsModule,
@@ -67,12 +66,14 @@ import { AlimentosComponent } from "./alimentos/alimentos.component";
     EsotericosComponent,
     AlquimicosComponent,
     EscudosComponent,
-    AlimentosComponent
+    AlimentosComponent,
+    TodosItensComponent,
+    NgIf
 ],
   templateUrl: './itens.component.html',
   styleUrl: './itens.component.scss',
 })
-export class ItensComponent implements AfterViewInit {
+export class ItensComponent implements AfterViewInit, OnInit {
 
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
@@ -92,11 +93,16 @@ export class ItensComponent implements AfterViewInit {
   }
   
 
-  async ngOnInit() {
+  ngOnInit() {
+    this.carregaArvoreConceitos();
+  }
 
+  async carregaArvoreConceitos(){
     this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 30 }));
     this.cdr.detectChanges();
+
   }
+
 
   ordenacaoAlfabetica(lista: any[]) {
     lista.sort((a, b) => {

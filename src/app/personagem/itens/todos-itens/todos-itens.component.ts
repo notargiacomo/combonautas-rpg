@@ -4,7 +4,7 @@ import {
   Component,
   OnInit,
   signal,
-  ViewChild
+  ViewChild,
 } from '@angular/core';
 import {
   FormBuilder,
@@ -23,17 +23,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatSortModule } from '@angular/material/sort';
+import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
-import { Regra } from '@app/model/regra';
 import { RegraTree } from '@app/model/RegraTree';
-import { ItemEscudoSB } from '@app/model/supamodel/item.escudo.sb';
-import { ItemEscudoServiceSupabase } from '@app/service/supaservice/item.escudo.service.supabase';
 import { Chave } from '../../../enum/chave.enum';
 import { TipoItem } from '../../../enum/tipo.item.enum';
 import { Item } from '../../../model/item';
+import { AlcanceSB } from '../../../model/supamodel/alcance.sb';
+import { ItemArmaSB } from '../../../model/supamodel/item.arma.sb';
 import { ItemManutencaoSB } from '../../../model/supamodel/item.manutencao.sb';
 import { ItemResistenciaSB } from '../../../model/supamodel/item.resistencia.sb';
 import { ItemSB } from '../../../model/supamodel/item.sb';
@@ -41,7 +40,11 @@ import { PericiaItemSB } from '../../../model/supamodel/pericia.item.sb';
 import { PericiaSB } from '../../../model/supamodel/pericia.sb';
 import { ReferenciaItemSB } from '../../../model/supamodel/referencia.item.sb';
 import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
+import { TipoDanoItemSB } from '../../../model/supamodel/tipo.dano.item.sb';
+import { TipoDanoSB } from '../../../model/supamodel/tipo.dano.sb';
 import { ItemService } from '../../../service/item.service';
+import { AlcanceServiceSupabase } from '../../../service/supaservice/alcance.service.supabase';
+import { ItemArmaServiceSupabase } from '../../../service/supaservice/item.arma.service.supabase';
 import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
 import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
 import { ItemServiceSupabase } from '../../../service/supaservice/item.service.supabase';
@@ -50,14 +53,13 @@ import { ReferenciaServiceSupabase } from '../../../service/supaservice/referenc
 import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
 import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
 import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
-
+import { Regra } from '@app/model/regra';
 @Component({
-  selector: 'app-escudos',
+  selector: 'app-todos-itens',
 imports: [
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
-    NgFor,
     NgIf,
     NgClass,
     MatIconModule,
@@ -75,13 +77,12 @@ imports: [
     MatExpansionModule,
     MatTreeModule,
   ],
-  templateUrl: './escudos.component.html',
-  styleUrl: './escudos.component.scss'
+  templateUrl: './todos-itens.component.html',
+  styleUrl: './todos-itens.component.scss'
 })
-export class EscudosComponent implements OnInit {
-  dataSourceRegraTree: RegraTree[] = [];
+export class TodosItensComponent implements OnInit{
+dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
-
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
   hasChild = (_: number, node: RegraTree) => !!node.children && node.children.length > 0;
 
@@ -98,7 +99,6 @@ export class EscudosComponent implements OnInit {
   selecaoChave: boolean = false;
 
   numero_registros = 0;
-
   filtro_traco: string = '';
 
   dataSource = new MatTableDataSource<Item>();
@@ -106,26 +106,35 @@ export class EscudosComponent implements OnInit {
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
 
+  @ViewChild(MatPaginator)
+  paginatorAS!: MatPaginator;
+
+  @ViewChild(MatPaginator)
+  paginatorAM!: MatPaginator;
+
+  @ViewChild(MatPaginator)
+  paginatorAE!: MatPaginator;
+
+  @ViewChild(MatPaginator)
+  paginatorAF!: MatPaginator;
+
   edicao: boolean = false;
 
   objeto: Item | undefined;
-
   itemSB?: ItemSB;
-  itemEscudo?: ItemEscudoSB;
+  itemArma?: ItemArmaSB;
   itemResistencia?: ItemResistenciaSB;
   itemManutencao?: ItemManutencaoSB;
-
   referencia!: { id: number; nome: string };
   referencias: any[] = [];
-
   regras: any[] = [];
   regrasItem: RegraItemSB[] = [];
-
   pericias: PericiaSB[] = [];
   periciasItem: PericiaItemSB[] = [];
-
   referenciaItem?: ReferenciaItemSB;
-
+  alcances: AlcanceSB[] = [];
+  tiposDano: TipoDanoSB[] = [];
+  tiposDanoItem: TipoDanoItemSB[] = [];
   tempos: any[] = [8, 40, 160];
 
   constructor(
@@ -135,68 +144,35 @@ export class EscudosComponent implements OnInit {
     private readonly referenciaServiceSB: ReferenciaServiceSupabase,
     private readonly regraServiceSB: RegraServiceSupabase,
     private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
+    private readonly alcanceServiceSB: AlcanceServiceSupabase,
     private readonly periciaServiceSB: PericiaServiceSupabase,
     private itemManutencaoSB: ItemManutencaoServiceSupabase,
-    private itemEscudoSB: ItemEscudoServiceSupabase,
+    private itemArmaSB: ItemArmaServiceSupabase,
     private itemResistenciaSB: ItemResistenciaServiceSupabase,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}
 
   ngAfterViewInit() {
-
     this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
   }
   
   ngOnInit() {
 
-        this.form = this.fb.group({
-      id: [],
-      nome: [],
-      nomeSb: [],
-      descricao: [],
-      chave: [],
-      idTipo: [],
-      tipo: [],
-      tipoSb: [],
-      idReferencia: [],
-      referencia: [],
-      idRegra: [],
-      regra: [],
-      idPericia: [],
-      pericia: [],
-      caminhoImagem: [],
-      paginas: [],
-      defesa: [],
-      penalidade: [],
-      espaco: [],
-      rd: [],
-      pv: [],
-      idEscudo: [],
-      idResistencia: [],
-      idManutencao: [],
-      preco: [],
-      cd: [],
-      tempo: [],
-      tela: ([] = ['ALFABETICA']),
-    });
+    
 
     this.itemSB = new ItemSB();
-    if (typeof window !== 'undefined' && sessionStorage) {
-      const logado = sessionStorage.getItem('logado') || '';
-  
-      if (logado) {
-        this.edicao = true;
-        const login = sessionStorage.getItem('login') || '';
-        console.log('Usuário logado:', login);
-      } else {
-        console.log('Usuário não está logado');
-      }
+    const logado = sessionStorage.getItem('logado') || '';
+
+    if (logado) {
+      this.edicao = true;
+      const login = sessionStorage.getItem('login') || '';
+    } else {
+      console.log('Usuário não está logado');
     }
 
     this.consultar(false, null);
-    this.carregarItens();
     this.carregarTabelasDominio();
 
     this.pericias.sort((a, b) => {
@@ -209,8 +185,8 @@ export class EscudosComponent implements OnInit {
   }
 
   async carregaArvoreConceitos(){
-    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 38 }));
-    this.cdr.detectChanges();
+    // this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 31 }));
+    // this.cdr.detectChanges();
 
   }
 
@@ -235,7 +211,7 @@ export class EscudosComponent implements OnInit {
       this.referencias = await this.referenciaServiceSB.listar();
       this.referencias = this.ordenacaoAlfabetica(this.referencias);
 
-      this.regraServiceSB.carregarCombo(38).then((regras: Regra[]) => {
+      this.regraServiceSB.carregarCombo(21).then((regras: Regra[]) => {
         regras.forEach((r) => {
           this.regras.push(r);
         });
@@ -265,17 +241,12 @@ export class EscudosComponent implements OnInit {
         console.error('Erro ao carregar regras', error);
       });
 
-      this.regraServiceSB.carregarCombo(59).then((regras: Regra[]) => {
-        regras.forEach((r) => {
-          this.regras.push(r);
-        });
-        this.regras = this.ordenacaoAlfabetica(this.regras);
-      })
-      .catch((error) => {
-        console.error('Erro ao carregar regras', error);
-      });
+      this.alcances = await this.alcanceServiceSB.listar();
 
       this.pericias = await this.periciaServiceSB.listar();
+
+      this.tiposDano = await this.tiposDanoServiceSB.listar();
+      this.tiposDano = this.ordenacaoAlfabetica(this.tiposDano);
     } catch (err) {
       console.error('Erro ao carregar tipos de item', err);
     }
@@ -297,6 +268,8 @@ export class EscudosComponent implements OnInit {
         this.regrasItem = await this.regraServiceSB.recuperaRegrasDoItem(
           this.itemSB.id!
         );
+        this.tiposDanoItem =
+          await this.tiposDanoServiceSB.recuperaTipoDanoDoItem(this.itemSB.id!);
         this.periciasItem = await this.periciaServiceSB.recuperaPericiaItem(
           this.itemSB.id!
         );
@@ -321,11 +294,12 @@ export class EscudosComponent implements OnInit {
     this.form.get('tela')?.setValue(tela);
     this.objeto = undefined;
     this.itemSB = undefined;
-    this.itemEscudo = undefined;
+    this.itemArma = undefined;
     this.itemResistencia = undefined;
     this.itemManutencao = undefined;
     this.regrasItem = [];
     this.periciasItem = [];
+    this.tiposDanoItem = [];
   }
 
   seleciona(objeto: Item) {
@@ -336,7 +310,7 @@ export class EscudosComponent implements OnInit {
     setTimeout(() => {
       if (this.itemSB) {
         this.form.get('id')?.setValue(this.itemSB.id);
-        this.form.get('idEscudo')?.setValue(this.itemSB.id);
+        this.form.get('idArma')?.setValue(this.itemSB.id);
         this.form.get('idResistencia')?.setValue(this.itemSB.id);
         this.form.get('idManutencao')?.setValue(this.itemSB.id);
         this.form.get('idTipo')?.setValue(this.itemSB.id_tipo);
@@ -350,7 +324,7 @@ export class EscudosComponent implements OnInit {
         this.form.get('descricao')?.setValue(objeto.descricao);
         this.form.get('paginas')?.setValue(objeto.paginas);
       }
-      this.selecionaEscudo(objeto);
+      this.selecionaArma(objeto);
       this.selecionaManutencao(objeto);
       this.selecionaResistencia(objeto);
     }, 1000);
@@ -364,7 +338,7 @@ export class EscudosComponent implements OnInit {
           this.form.get('idManutencao')?.value
         );
       } catch (err) {
-        console.error('Erro ao carregar Item Escudo', err);
+        console.error('Erro ao carregar Item Arma', err);
       }
     }
 
@@ -401,29 +375,46 @@ export class EscudosComponent implements OnInit {
     }
   }
 
-  async selecionaEscudo(objeto: Item) {
-    if (this.form.get('idEscudo')?.value) {
+  async selecionaArma(objeto: Item) {
+    if (this.form.get('idArma')?.value) {
       try {
-        this.itemEscudo = await this.itemEscudoSB.consultarPorId(
-          this.form.get('idEscudo')?.value
+        this.itemArma = await this.itemArmaSB.consultarPorId(
+          this.form.get('idArma')?.value
         );
       } catch (err) {
         console.error('Erro ao carregar Item Arma', err);
       }
     }
 
-    if (this.itemEscudo) {
-      this.form.get('defesa')?.setValue(this.itemEscudo.defesa);
-      this.form.get('penalidade')?.setValue(this.itemEscudo.penalidade);
-      this.form.get('espaco')?.setValue(this.itemEscudo.espaco);
+    if (this.itemArma) {
+      this.form.get('dano')?.setValue(this.itemArma.dano);
+      this.form.get('margem')?.setValue(this.itemArma.margem_ameaca);
       this.form
+        .get('multiplicador')
+        ?.setValue(this.itemArma.multiplicador_critico);
+      this.form.get('espaco')?.setValue(this.itemArma.espaco);
+      this.form
+        .get('idAlcance')
+        ?.setValue(
+          this.alcances.find((i) => i.id === this.itemArma?.id_alcance)?.id
+        );
     } else {
-      this.form.get('defesa')?.setValue(objeto.defesa);
-      this.form.get('penalidade')?.setValue(objeto.penalidade);
+      this.form.get('dano')?.setValue(objeto.dano);
+      this.form.get('margem')?.setValue(objeto.margem_ameaca);
+      this.form.get('multiplicador')?.setValue(objeto.multiplicador_critico);
+      this.form
+        .get('idAlcance')
+        ?.setValue(
+          this.alcances.find(
+            (i) =>
+              i.medida === objeto?.alcance ||
+              (objeto?.alcance === 0 && i.medida === 1.5)
+          )?.id
+        );
       this.form.get('espaco')?.setValue(objeto.espaco);
     }
   }
-
+  
   async salvar() {
     this.itemSB = {
       id_tipo: this.form.get('idTipo')?.value,
@@ -434,10 +425,12 @@ export class EscudosComponent implements OnInit {
       caminho_imagem: this.objeto?.imagem,
     };
 
-    this.itemEscudo = {
-      defesa: this.form.get('defesa')?.value,
-      penalidade: this.form.get('penalidade')?.value,
+    this.itemArma = {
+      dano: this.form.get('dano')?.value,
+      margem_ameaca: this.form.get('margem')?.value,
+      multiplicador_critico: this.form.get('multiplicador')?.value,
       espaco: this.form.get('espaco')?.value,
+      id_alcance: this.form.get('idAlcance')?.value,
     };
 
     this.itemResistencia = {
@@ -483,13 +476,13 @@ export class EscudosComponent implements OnInit {
         await this.itemManutencaoSB.inserir(this.itemManutencao);
       }
 
-      if (this.form.get('idEscudo')?.value) {
-        await this.itemEscudoSB.atualizar(id, this.itemEscudo);
+      if (this.form.get('idArma')?.value) {
+        await this.itemArmaSB.atualizar(id, this.itemArma);
       } else {
-        this.itemEscudo.id = id;
-        this.itemEscudo.id_item_manutencao = id;
-        this.itemEscudo.id_item_resistencia = id;
-        await this.itemEscudoSB.inserir(this.itemEscudo);
+        this.itemArma.id = id;
+        this.itemArma.id_item_manutencao = id;
+        this.itemArma.id_item_resistencia = id;
+        await this.itemArmaSB.inserir(this.itemArma);
       }
 
       const ri: { id_item: number; id_regra: number }[] = [];
@@ -507,6 +500,9 @@ export class EscudosComponent implements OnInit {
       await this.periciaServiceSB.inserirPericias(id, ip);
 
       const td: { id_item: number; id_tipo: number }[] = [];
+      this.tiposDanoItem.forEach((tipoDano) => {
+        td.push({ id_item: id, id_tipo: tipoDano.id_tipo! });
+      });
 
       await this.tiposDanoServiceSB.inserirDanos(id, td);
 
@@ -532,17 +528,7 @@ export class EscudosComponent implements OnInit {
     }
 
     filtro.tela = null;
-    filtro.tipo = TipoItem.ESCUDO;
     this.consultarTodos(filtro);
-  }
-
-  async carregarItens() {
-    try {
-      this.objetos = await this.itemServiceSB.listarItens();
-      this.numero_registros = this.objetos.length;
-    } catch (err) {
-      console.error('Erro ao carregar itens', err);
-    }
   }
 
   consultarTodos(filtro: string) {
@@ -566,7 +552,16 @@ export class EscudosComponent implements OnInit {
             !(
               p.chave.includes(Chave.ITEM_MAGICO_MENOR) ||
               p.chave.includes(Chave.ITEM_MAGICO_MEDIO) ||
-              p.chave.includes(Chave.ITEM_MAGICO_MAIOR)
+              p.chave.includes(Chave.ITEM_MAGICO_MAIOR) ||
+              p.tipo.includes(TipoItem.ANIMAL) ||
+              p.tipo.includes(TipoItem.SERVICO) ||
+              p.tipo.includes(TipoItem.ACESSORIO) ||
+              p.tipo.includes(TipoItem.MELHORIA) ||
+              p.tipo.includes(TipoItem.MATERIAL_ESPECIAL) ||
+              p.tipo.includes(TipoItem.ENCANTO) ||
+              p.tipo.includes(TipoItem.ARTEFATO) ||
+              p.tipo.includes(TipoItem.APARATO) ||
+              p.tipo.includes(TipoItem.VEICULO)
             )
         );
 
@@ -623,9 +618,34 @@ export class EscudosComponent implements OnInit {
     this.form.get('idRegra')?.setValue(null);
   }
 
+  adicionarTipoDano(tipoDano: any) {
+    const tipoDanoParaAdicionar = this.tiposDano.find(
+      (r) => r.id === tipoDano.value
+    );
+    if (
+      !this.tiposDanoItem.find((r) => r.id_tipo === tipoDanoParaAdicionar?.id)
+    ) {
+      let tipoDano: TipoDanoItemSB = {
+        id_item: this.form.get('id')?.value,
+        id_tipo: tipoDanoParaAdicionar?.id,
+        tb_tipo_dano: {
+          nome: tipoDanoParaAdicionar?.nome,
+        },
+      };
+      this.tiposDanoItem.push(tipoDano);
+    }
+    this.form.get('idTipoDano')?.setValue(null);
+  }
+
   removerRegra(regra: any) {
     this.regrasItem = this.regrasItem.filter(
       (r) => r.id_regra !== regra.id_regra
+    );
+  }
+
+  removerTipoDano(tipoDanoItem: any) {
+    this.tiposDanoItem = this.tiposDanoItem.filter(
+      (r) => r.id_tipo !== tipoDanoItem.id_tipo
     );
   }
 
@@ -633,34 +653,6 @@ export class EscudosComponent implements OnInit {
     this.periciasItem = this.periciasItem.filter(
       (r) => r.id_pericia !== periciaItem.id_pericia
     );
-  }
-
-  consultarTracosTodosItens(itens: Item[]): Item[] {
-    let itens_filtrado: Item[] = [];
-    if (this.filtro_traco.length !== 0) {
-      itens.forEach((arma) => {
-        arma.chave?.forEach((traco) => {
-          if (
-            traco
-              .toLowerCase()
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')
-              .includes(
-                this.filtro_traco
-                  .toLowerCase()
-                  .normalize('NFD')
-                  .replace(/[\u0300-\u036f]/g, '')
-              )
-          ) {
-            if (!itens_filtrado.includes(arma)) {
-              itens_filtrado.push(arma);
-            }
-          }
-        });
-      });
-    }
-
-    return itens_filtrado;
   }
 
   umTerco(preco: number) {
@@ -671,17 +663,49 @@ export class EscudosComponent implements OnInit {
     return Number((preco / 10).toFixed(1));
   }
 
-  novo() {
-    this.form.get('idTipo')?.setValue(4);
-    this.objeto = {
-      id: 1,
-      tipo: TipoItem.ARMA,
-    } as Item;
-  }
-
   limparFiltros() {
     this.objeto = undefined;
     this.form.reset();
     this.consultar(false, null);
+  }
+
+  eAlimentacao(objeto: any){
+    return TipoItem.ALIMENTACAO.includes(objeto.tipo);
+  }
+
+  eAlquimico(objeto: any){
+    return TipoItem.ALQUIMICO.includes(objeto.tipo);
+  }
+
+  eEsoterico(objeto: any){
+    return TipoItem.ESOTERICO.includes(objeto.tipo);
+  }
+
+  eVestuario(objeto: any){
+    return TipoItem.VESTUARIO.includes(objeto.tipo);
+  }
+
+  eEquipamento(objeto: any){
+    return TipoItem.EQUIPAMENTO_AVENTURA.includes(objeto.tipo);
+  }
+
+  eArmadura(objeto: any){
+    return TipoItem.ARMADURA.includes(objeto.tipo);
+  }
+
+  eEscudo(objeto: any){
+    return TipoItem.ESCUDO.includes(objeto.tipo);
+  }
+
+  eArma(objeto: any){
+    return TipoItem.ARMA.includes(objeto.tipo);
+  }
+
+  eFerramenta(objeto: any){
+    return TipoItem.FERRAMENTA.includes(objeto.tipo);
+  }
+
+  eMunicao(objeto: any){
+    return TipoItem.MUNICAO.includes(objeto.tipo);
   }
 }

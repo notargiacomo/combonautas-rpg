@@ -1,5 +1,5 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component, signal, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, signal, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -66,7 +66,7 @@ import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.serv
   templateUrl: './equipamento-aventura.component.html',
   styleUrl: './equipamento-aventura.component.scss'
 })
-export class EquipamentoAventuraComponent {
+export class EquipamentoAventuraComponent implements OnInit{
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
@@ -123,24 +123,13 @@ export class EquipamentoAventuraComponent {
     private cdr: ChangeDetectorRef
   ) {}
 
-  async ngAfterViewInit() {
+  ngAfterViewInit() {
     this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
   }
 
-  async ngOnInit() {
-    this.itemSB = new ItemSB();
-    const logado = sessionStorage.getItem('logado') || '';
-
-    if (logado) {
-      this.edicao = true;
-      const login = sessionStorage.getItem('login') || '';
-      console.log('Usuário logado:', login);
-    } else {
-      console.log('Usuário não está logado');
-    }
-
-    this.form = this.fb.group({
+  ngOnInit() {
+        this.form = this.fb.group({
       id: [],
       nome: [],
       nomeSb: [],
@@ -168,6 +157,19 @@ export class EquipamentoAventuraComponent {
       tempo: [],
     });
 
+    this.itemSB = new ItemSB();
+    if (typeof window !== 'undefined' && sessionStorage) {
+      const logado = sessionStorage.getItem('logado') || '';
+  
+      if (logado) {
+        this.edicao = true;
+        const login = sessionStorage.getItem('login') || '';
+        console.log('Usuário logado:', login);
+      } else {
+        console.log('Usuário não está logado');
+      }
+    }
+
     this.consultar(false, null);
     this.carregarItens();
     this.carregarTabelasDominio();
@@ -177,10 +179,16 @@ export class EquipamentoAventuraComponent {
       let nome_b = b ? b.nome : 'b';
       return nome_a!.localeCompare(nome_b!);
     });
-    
+
+    this.carregaArvoreConceitos();
+  }
+
+  async carregaArvoreConceitos(){
     this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 47 }));
     this.cdr.detectChanges();
+
   }
+
 
   selecionaRegra(regraSelecionada: any) {
     this.regraSelecionada = regraSelecionada;
@@ -586,6 +594,14 @@ export class EquipamentoAventuraComponent {
 
   umTerco(preco: number) {
     return Number((preco / 3).toFixed(1));
+  }
+
+  novo() {
+    this.form.get('idTipo')?.setValue(5);
+    this.objeto = {
+      id: 1,
+      tipo: TipoItem.ARMA,
+    } as Item;
   }
 
   limparFiltros() {

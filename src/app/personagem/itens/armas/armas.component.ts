@@ -2,6 +2,7 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 import {
   ChangeDetectorRef,
   Component,
+  OnInit,
   signal,
   ViewChild,
 } from '@angular/core';
@@ -81,7 +82,7 @@ import { Regra } from '@app/model/regra';
   templateUrl: './armas.component.html',
   styleUrl: './armas.component.scss',
 })
-export class ArmasComponent {
+export class ArmasComponent implements OnInit{
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
@@ -183,19 +184,9 @@ export class ArmasComponent {
     this.dataSourceAF.paginator = this.paginatorAF;
   }
   
-  async ngOnInit() {
+  ngOnInit() {
 
-    this.itemSB = new ItemSB();
-    const logado = sessionStorage.getItem('logado') || '';
-
-    if (logado) {
-      this.edicao = true;
-      const login = sessionStorage.getItem('login') || '';
-    } else {
-      console.log('Usuário não está logado');
-    }
-
-    this.form = this.fb.group({
+        this.form = this.fb.group({
       id: [],
       nome: [],
       nomeSb: [],
@@ -230,6 +221,18 @@ export class ArmasComponent {
       tela: ([] = ['ALFABETICA']),
     });
 
+    this.itemSB = new ItemSB();
+    if (typeof window !== 'undefined' && sessionStorage) {
+      const logado = sessionStorage.getItem('logado') || '';
+  
+      if (logado) {
+        this.edicao = true;
+        const login = sessionStorage.getItem('login') || '';
+        console.log('Usuário logado:', login);
+      } else {
+        console.log('Usuário não está logado');
+      }
+    }
 
     this.consultar(false, null);
     this.carregarTabelasDominio();
@@ -240,8 +243,14 @@ export class ArmasComponent {
       return nome_a!.localeCompare(nome_b!);
     });
 
+    this.carregaArvoreConceitos();
+
+  }
+  
+  async carregaArvoreConceitos(){
     this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 21 }));
     this.cdr.detectChanges();
+
   }
 
   visao(visao: string){
@@ -790,6 +799,14 @@ export class ArmasComponent {
 
   umDecimo(preco: number) {
     return Number((preco / 10).toFixed(1));
+  }
+
+  novo() {
+    this.form.get('idTipo')?.setValue(1);
+    this.objeto = {
+      id: 1,
+      tipo: TipoItem.ARMA,
+    } as Item;
   }
 
   limparFiltros() {

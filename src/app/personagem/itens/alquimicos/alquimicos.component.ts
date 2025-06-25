@@ -1,5 +1,5 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component, signal, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, signal, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -66,7 +66,7 @@ import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.serv
   templateUrl: './alquimicos.component.html',
   styleUrl: './alquimicos.component.scss'
 })
-export class AlquimicosComponent {
+export class AlquimicosComponent implements OnInit{
   dataSourceRegraTree: RegraTree[] = [];
   conceitos: RegraTree[] = [];
   childrenAccessor = (node: RegraTree): RegraTree[] => node.children ?? [];
@@ -132,21 +132,23 @@ export class AlquimicosComponent {
     private cdr: ChangeDetectorRef
   ) {}
 
-  async ngAfterViewInit() {
+  ngAfterViewInit() {
     this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
   }
 
-  async ngOnInit() {
+  ngOnInit() {
     this.itemSB = new ItemSB();
-    const logado = sessionStorage.getItem('logado') || '';
-
-    if (logado) {
-      this.edicao = true;
-      const login = sessionStorage.getItem('login') || '';
-      console.log('Usuário logado:', login);
-    } else {
-      console.log('Usuário não está logado');
+    if (typeof window !== 'undefined' && sessionStorage) {
+      const logado = sessionStorage.getItem('logado') || '';
+  
+      if (logado) {
+        this.edicao = true;
+        const login = sessionStorage.getItem('login') || '';
+        console.log('Usuário logado:', login);
+      } else {
+        console.log('Usuário não está logado');
+      }
     }
 
     this.form = this.fb.group({
@@ -188,12 +190,14 @@ export class AlquimicosComponent {
       return nome_a!.localeCompare(nome_b!);
     });
 
-    this.dataSourceRegraTree.push(
-      await this.regraServiceSB.carregarMenusConceito({ id: 55 })
-    );
-    this.cdr.detectChanges();
+    this.carregaArvoreConceitos();
   }
 
+  async carregaArvoreConceitos(){
+    this.dataSourceRegraTree.push(await this.regraServiceSB.carregarMenusConceito({ id: 55 }));
+    this.cdr.detectChanges();
+
+  }
   selecionaRegra(regraSelecionada: any) {
     this.regraSelecionada = regraSelecionada;
   }
@@ -630,13 +634,21 @@ export class AlquimicosComponent {
     return Number((preco / 3).toFixed(1));
   }
 
+  novo() {
+    this.form.get('idTipo')?.setValue(9);
+    this.objeto = {
+      id: 1,
+      tipo: TipoItem.ARMA,
+    } as Item;
+  }
+
   limparFiltros() {
     this.objeto = undefined;
     this.form.reset();
     this.consultar(false, null);
   }
 
-    visao(visao: string){
+  visao(visao: string){
     let seVisao = false;
     if(this.form != undefined) {
       seVisao = this.form.get('tela')?.value == visao;
