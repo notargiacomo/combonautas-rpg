@@ -119,6 +119,18 @@ export class ArmasComponent {
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
 
+  @ViewChild(MatPaginator)
+  paginatorAS!: MatPaginator;
+
+  @ViewChild(MatPaginator)
+  paginatorAM!: MatPaginator;
+
+  @ViewChild(MatPaginator)
+  paginatorAE!: MatPaginator;
+
+  @ViewChild(MatPaginator)
+  paginatorAF!: MatPaginator;
+
   edicao: boolean = false;
 
   objeto: Item | undefined;
@@ -159,16 +171,16 @@ export class ArmasComponent {
     this.dataSource.paginator = this.paginator;
 
     this.dataSourceAS = new MatTableDataSource<Item>();
-    this.dataSourceAS.paginator = this.paginator;
+    this.dataSourceAS.paginator = this.paginatorAS;
 
     this.dataSourceAM = new MatTableDataSource<Item>();
-    this.dataSourceAM.paginator = this.paginator;
+    this.dataSourceAM.paginator = this.paginatorAM;
 
     this.dataSourceAE = new MatTableDataSource<Item>();
-    this.dataSourceAE.paginator = this.paginator;
+    this.dataSourceAE.paginator = this.paginatorAE;
 
     this.dataSourceAF = new MatTableDataSource<Item>();
-    this.dataSourceAF.paginator = this.paginator;
+    this.dataSourceAF.paginator = this.paginatorAF;
   }
   
   async ngOnInit() {
@@ -179,7 +191,6 @@ export class ArmasComponent {
     if (logado) {
       this.edicao = true;
       const login = sessionStorage.getItem('login') || '';
-      console.log('Usuário logado:', login);
     } else {
       console.log('Usuário não está logado');
     }
@@ -221,7 +232,6 @@ export class ArmasComponent {
 
 
     this.consultar(false, null);
-    this.carregarItens();
     this.carregarTabelasDominio();
 
     this.pericias.sort((a, b) => {
@@ -596,15 +606,6 @@ export class ArmasComponent {
     this.consultarTodos(filtro);
   }
 
-  async carregarItens() {
-    try {
-      this.objetos = await this.itemServiceSB.listarItens();
-      this.numero_registros = this.objetos.length;
-    } catch (err) {
-      console.error('Erro ao carregar itens', err);
-    }
-  }
-
   consultarTodos(filtro: string) {
     this.service.listar(filtro).subscribe({
       next: (response: any[]) => {
@@ -634,34 +635,68 @@ export class ArmasComponent {
         this.dataSource.paginator = this.paginator;
         this.numero_registros = naoMagico.length;
 
-        this.armas_simples = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_SIMPLES)
-        );
-        this.armas_marciais = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_MARCIAL)
-        );
-        this.armas_exoticas = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_EXOTICA)
-        );
-        this.armas_fogo = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMA_DE_FOGO)
-        );
+        setTimeout(async () => {
+          this.armas_simples = (
+          await Promise.all(
+            naoMagico.map(async (simples) => {
+              const item = await this.itemServiceSB.consultarPorNome(simples.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
 
-        this.dataSourceAS = new MatTableDataSource(this.armas_simples);
-        this.dataSourceAS.paginator = this.paginator;
-        this.numero_registros_armas_simples = this.armas_simples.length;
+              const possuiArmasSimples = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PROFICIENCIA_ARMA_SIMPLES) : false) || (item === null && simples.chave.includes(Chave.PROFICIENCIA_ARMA_SIMPLES))
 
-        this.dataSourceAM = new MatTableDataSource(this.armas_marciais);
-        this.dataSourceAM.paginator = this.paginator;
-        this.numero_registros_armas_marciais = this.armas_marciais.length;
+              return possuiArmasSimples ? simples : null;
+            }))
+          ).filter((inst) => inst !== null);
+          
+          this.dataSourceAS = new MatTableDataSource(this.armas_simples);
+          this.numero_registros_armas_simples = this.armas_simples.length;
 
-        this.dataSourceAE = new MatTableDataSource(this.armas_exoticas);
-        this.dataSourceAE.paginator = this.paginator;
-        this.numero_registros_armas_exoticas = this.armas_exoticas.length;
+          this.armas_marciais = (
+          await Promise.all(
+            naoMagico.map(async (marciais) => {
+              const item = await this.itemServiceSB.consultarPorNome(marciais.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
 
-        this.dataSourceAF = new MatTableDataSource(this.armas_fogo);
-        this.dataSourceAF.paginator = this.paginator;
-        this.numero_registros_armas_de_fogo = this.armas_fogo.length;
+              const possuiArmaMarcial = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PROFICIENCIA_ARMA_MARCIAL) : false) || (item === null && marciais.chave.includes(Chave.PROFICIENCIA_ARMA_MARCIAL))
+
+              return possuiArmaMarcial ? marciais : null;
+            }))
+          ).filter((fer) => fer !== null);
+          
+          this.dataSourceAM = new MatTableDataSource(this.armas_marciais);
+          this.numero_registros_armas_marciais = this.armas_marciais.length;
+
+        this.armas_exoticas = (
+          await Promise.all(
+            naoMagico.map(async (exoticas) => {
+              const item = await this.itemServiceSB.consultarPorNome(exoticas.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
+
+              const possuiArmaExotica = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PROFICIENCIA_ARMA_EXOTICA) : false) || (item === null && exoticas.chave.includes(Chave.PROFICIENCIA_ARMA_EXOTICA))
+
+              return possuiArmaExotica ? exoticas : null;
+            }))
+          ).filter((fer) => fer !== null);
+          
+          this.dataSourceAE = new MatTableDataSource(this.armas_exoticas);
+          this.numero_registros_armas_exoticas = this.armas_exoticas.length;
+
+        this.armas_fogo = (
+          await Promise.all(
+            naoMagico.map(async (fogo) => {
+              const item = await this.itemServiceSB.consultarPorNome(fogo.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
+
+              const possuiArmaFogo = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PROFICIENCIA_ARMA_DE_FOGO) : false) || (item === null && fogo.chave.includes(Chave.PROFICIENCIA_ARMA_DE_FOGO))
+
+              return possuiArmaFogo ? fogo : null;
+            }))
+          ).filter((fer) => fer !== null);
+          
+          this.dataSourceAF = new MatTableDataSource(this.armas_fogo);
+          this.numero_registros_armas_de_fogo = this.armas_fogo.length;
+
+        }, 4000);
 
         this.carregaChaves();
       },
@@ -747,34 +782,6 @@ export class ArmasComponent {
     this.periciasItem = this.periciasItem.filter(
       (r) => r.id_pericia !== periciaItem.id_pericia
     );
-  }
-
-  consultarTracosTodosItens(itens: Item[]): Item[] {
-    let itens_filtrado: Item[] = [];
-    if (this.filtro_traco.length !== 0) {
-      itens.forEach((arma) => {
-        arma.chave?.forEach((traco) => {
-          if (
-            traco
-              .toLowerCase()
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')
-              .includes(
-                this.filtro_traco
-                  .toLowerCase()
-                  .normalize('NFD')
-                  .replace(/[\u0300-\u036f]/g, '')
-              )
-          ) {
-            if (!itens_filtrado.includes(arma)) {
-              itens_filtrado.push(arma);
-            }
-          }
-        });
-      });
-    }
-
-    return itens_filtrado;
   }
 
   umTerco(preco: number) {

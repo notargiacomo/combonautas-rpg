@@ -51,9 +51,9 @@
                 <form [formGroup]="form">
                     <div class="container-fluid">
                         <div class="row g-3">
-                            <div class="col-sm-3 mt-4">
+                            <div class="col-sm-3 mt-4" *ngIf="visao('ALFABETICA')">
                                 <mat-form-field class="form-field">
-                                    <mat-label>Digite o Equipamento</mat-label>
+                                    <mat-label>Digite a Arma</mat-label>
                                     <input formControlName="nome" matInput type="text"
                                         (keyup)="consultar(false, '1. Arma')" />
                                 </mat-form-field>
@@ -67,7 +67,7 @@
                                     </mat-select>
                                 </mat-form-field>
                             </div>
-                            <div class="col-sm-6 mt-4">
+                            <!-- <div class="col-sm-6 mt-4">
                                 <mat-form-field class="select-dobrado">
                                     <mat-label>Regra</mat-label>
                                     <mat-select formControlName="chave" (selectionChange)="consultar(true, '1. Arma')">
@@ -78,7 +78,7 @@
                                         }
                                     </mat-select>
                                 </mat-form-field>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div *ngIf="edicao" class="col-sm-12 mt-4 button-row d-flex justify-content-end">
@@ -629,6 +629,14 @@
                                                 [ngClass]="{'zebra': isOddAS(element)}">
                                             </tr>
                                         </table>
+                                        <mat-paginator [length]="numero_registros_armas_simples" [pageSizeOptions]="[
+                                            10,
+                                            20,
+                                            50,
+                                            100,
+                                            numero_registros_armas_simples ? numero_registros_armas_simples : 200
+                                            ]" showFirstLastButtons aria-label="Select page of periodic elements">
+                                        </mat-paginator>
                                     </mat-card>
                                 </mat-expansion-panel>
                                 <mat-expansion-panel (opened)="panelOpenState.set(true)"

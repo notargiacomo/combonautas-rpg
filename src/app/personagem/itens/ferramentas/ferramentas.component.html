@@ -51,7 +51,7 @@
                 <form [formGroup]="form">
                     <div class="container-fluid">
                         <div class="row g-3">
-                            <div class="col-sm-3 mt-4">
+                            <div class="col-sm-3 mt-4" *ngIf="visao('ALFABETICA')">
                                 <mat-form-field class="form-field">
                                     <mat-label>Digite a Ferramenta</mat-label>
                                     <input formControlName="nome" matInput type="text"

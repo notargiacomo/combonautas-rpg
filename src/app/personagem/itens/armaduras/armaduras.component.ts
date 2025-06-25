@@ -579,20 +579,38 @@ export class ArmadurasComponent {
         this.dataSource.paginator = this.paginator;
         this.numero_registros = naoMagico.length;
 
-        this.armadura_leve = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMADURA_LEVE)
-        );
-        this.armadura_pesada = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PROFICIENCIA_ARMADURA_PESADA)
-        );
+        setTimeout(async () => {
+          this.armadura_leve = (
+          await Promise.all(
+            naoMagico.map(async (armaduras_leves) => {
+              const item = await this.itemServiceSB.consultarPorNome(armaduras_leves.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
 
-        this.dataSourceAL = new MatTableDataSource(this.armadura_leve);
-        this.dataSourceAL.paginator = this.paginator;
-        this.numero_registros_armadura_leve = this.armadura_leve.length;
+              const possuiArmaduraLeve = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PROFICIENCIA_ARMADURA_LEVE) : false) || (item === null && armaduras_leves.chave.includes(Chave.PROFICIENCIA_ARMADURA_LEVE))
 
-        this.dataSourceAP = new MatTableDataSource(this.armadura_pesada);
-        this.dataSourceAP.paginator = this.paginator;
-        this.numero_registros_armadura_pesada = this.armadura_pesada.length;
+              return possuiArmaduraLeve ? armaduras_leves : null;
+            }))
+          ).filter((inst) => inst !== null);
+          
+          this.dataSourceAL = new MatTableDataSource(this.armadura_leve);
+          this.numero_registros_armadura_leve = this.armadura_leve.length;
+
+          this.armadura_pesada = (
+          await Promise.all(
+            naoMagico.map(async (armadura_pesada) => {
+              const item = await this.itemServiceSB.consultarPorNome(armadura_pesada.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
+
+              const possuiArmaduraPesada = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PROFICIENCIA_ARMADURA_PESADA) : false) || (item === null && armadura_pesada.chave.includes(Chave.PROFICIENCIA_ARMADURA_PESADA))
+
+              return possuiArmaduraPesada ? armadura_pesada : null;
+            }))
+          ).filter((fer) => fer !== null);
+          
+          this.dataSourceAP = new MatTableDataSource(this.armadura_pesada);
+          this.numero_registros_armadura_pesada = this.armadura_pesada.length;
+
+        }, 4000);
 
         this.carregaChaves();
       },

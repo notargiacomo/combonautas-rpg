@@ -16,11 +16,9 @@
                   <mat-label>Tipo</mat-label>
                   <mat-select
                     formControlName="tipo"
-                    (selectionChange)="consultar()"
-                  >
-                    @for (tipo of tipos; track tipo) {
-                    <mat-option [value]="tipo">{{ tipo }}</mat-option>
-                    }
+                    (selectionChange)="consultar()">
+                    <mat-option [value]="'Arcana'">{{ 'Arcana' }}</mat-option>
+                    <mat-option [value]="'Divina'">{{ 'Divina' }}</mat-option>
                   </mat-select>
                 </mat-form-field>
               </div>
@@ -265,7 +263,7 @@
                                   <button class="me-2" mat-flat-button disabled>
                                     {{ "Duração: " + objeto.duracao }}
                                   </button>
-                                  <button class="me-2" mat-flat-button disabled>
+                                  <button *ngIf="objeto.pericia_resistencia" class="me-2" mat-flat-button disabled>
                                     {{
                                       "Resistência: " +
                                         objeto.pericia_resistencia +

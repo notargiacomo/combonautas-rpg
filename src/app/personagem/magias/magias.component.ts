@@ -56,7 +56,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   styleUrl: './magias.component.scss',
 })
 export class MagiasComponent implements AfterViewInit {
-  displayedColumns: string[] = ['nome', 'tipo', 'escola', 'circulo', 'acao'];
+  displayedColumns: string[] = ['nome', 
+    'tipo', 'escola', 'circulo', 
+    'acao'];
 
   form!: FormGroup;
   objetos!: Magia[];
@@ -119,12 +121,36 @@ export class MagiasComponent implements AfterViewInit {
         }
       );
         this.objetos = response;
-        this.numero_registros = response.length;
       },
       error: (response) => {
         console.log(response);
       },
       complete:() => {
+          filtro.tipo = 'Universal'
+          this.service.listar(filtro).subscribe({
+          next: (response) => {
+            response.forEach((r)=>{
+              this.objetos.push(r);
+            })
+            
+            this.objetos.sort((a, b) => {
+              let nome_a = a.nome ? a.nome : 'a';
+              let nome_b = b.nome ? b.nome : 'b';
+              return nome_a.localeCompare(nome_b);
+            }
+          );
+            this.numero_registros = this.objetos.length;
+          },
+          error: (response) => {
+            console.log(response);
+          },
+          complete:() => {
+            this.dataSource = new MatTableDataSource(this.objetos);
+            this.dataSource.paginator = this.paginator;
+            this.dataSource.sort = this.sort;
+          }
+        });
+
         this.dataSource = new MatTableDataSource(this.objetos);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
@@ -271,14 +297,4 @@ export class MagiasComponent implements AfterViewInit {
     selecionaMagia(objeto: Magia){
       this.objeto = objeto;
     }
-
-        /**
-         *
-         * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - MAGIA
-         *
-         */
-      
-        @Input() magiaSelecionada?: Magia;
-        @Input() seVeioFicha: boolean = false;
-        @Output() magiaSelecionadaChange = new EventEmitter<Magia>();
 }

@@ -99,8 +99,7 @@ export class AlimentosComponent {
   dataSourcePED = new MatTableDataSource<Item>();
   dataSourceB = new MatTableDataSource<Item>();
 
-  @ViewChild(MatPaginator)
-  paginator!: MatPaginator;
+  @ViewChild('paginator') paginator!: MatPaginator;
 
   edicao: boolean = false;
 
@@ -133,7 +132,6 @@ export class AlimentosComponent {
   ) {}
 
   async ngAfterViewInit() {
-    this.dataSource = new MatTableDataSource<Item>();
     this.dataSource.paginator = this.paginator;
   }
 
@@ -503,24 +501,54 @@ export class AlimentosComponent {
         this.pratos_especiais = naoMagico.filter((p) =>
           p.chave.includes(Chave.PRATO_ESPECIAL)
         );
-        this.pratos_especiais_divinos = naoMagico.filter((p) =>
-          p.chave.includes(Chave.PRATO_ESPECIAL_DIVINO)
-        );
-        this.bebidas = naoMagico.filter((p) =>
-          p.chave.includes(Chave.BEBIDA)
-        );
 
-        this.dataSourcePE = new MatTableDataSource(this.pratos_especiais);
-        this.dataSourcePE.paginator = this.paginator;
-        this.numero_registros_pratos_especiais = this.pratos_especiais.length;
+        setTimeout(async () => {
+          this.pratos_especiais = (
+          await Promise.all(
+            naoMagico.map(async (prato_especial) => {
+              const item = await this.itemServiceSB.consultarPorNome(prato_especial.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
 
-        this.dataSourcePED = new MatTableDataSource(this.pratos_especiais_divinos);
-        this.dataSourcePED.paginator = this.paginator;
-        this.numero_registros_pratos_especiais_divinos = this.pratos_especiais_divinos.length;
+              const possuiPratoEspecial = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PRATO_ESPECIAL) : false) || (item === null &&prato_especial.chave.includes(Chave.PRATO_ESPECIAL))
 
-        this.dataSourceB = new MatTableDataSource(this.bebidas);
-        this.dataSourceB.paginator = this.paginator;
-        this.numero_registros_bebidas = this.bebidas.length;        
+              return possuiPratoEspecial ? prato_especial : null;
+            }))
+          ).filter((ped) => ped !== null);
+          
+          this.dataSourcePE = new MatTableDataSource(this.pratos_especiais);
+          this.numero_registros_pratos_especiais = this.pratos_especiais.length;
+
+          this.pratos_especiais_divinos = (
+          await Promise.all(
+            naoMagico.map(async (prato_especial_divino) => {
+              const item = await this.itemServiceSB.consultarPorNome(prato_especial_divino.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
+
+              const possuiPratoEspecialDivino = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.PRATO_ESPECIAL_DIVINO) : false) || (item === null && prato_especial_divino.chave.includes(Chave.PRATO_ESPECIAL_DIVINO))
+
+              return possuiPratoEspecialDivino ? prato_especial_divino : null;
+            }))
+          ).filter((ped) => ped !== null);
+          
+          this.dataSourcePED = new MatTableDataSource(this.pratos_especiais_divinos);
+          this.numero_registros_pratos_especiais_divinos = this.pratos_especiais_divinos.length;
+
+          this.bebidas = (
+          await Promise.all(
+            naoMagico.map(async (bebidas) => {
+              const item = await this.itemServiceSB.consultarPorNome(bebidas.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
+
+              const possuiBebidas = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.BEBIDA) : false) || (item === null && bebidas.chave.includes(Chave.BEBIDA))
+
+              return possuiBebidas ? bebidas : null;
+            }))
+          ).filter((ped) => ped !== null);
+          
+          this.dataSourceB = new MatTableDataSource(this.bebidas);
+          this.numero_registros_bebidas = this.bebidas.length;
+
+        }, 4000);
 
         this.carregaChaves();
       },

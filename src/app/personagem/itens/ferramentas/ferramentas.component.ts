@@ -80,7 +80,7 @@ dataSourceRegraTree: RegraTree[] = [];
   form!: FormGroup;
   objetos!: Item[];
 
-  instrumentosMusicais!: Item[];
+  instrumentos_musicais!: Item[];
   ferramentas!: Item[];
 
   tiposItem: any[] = [];
@@ -505,21 +505,38 @@ dataSourceRegraTree: RegraTree[] = [];
         this.dataSource.paginator = this.paginator;
         this.numero_registros = naoMagico.length;
 
-        this.instrumentosMusicais = naoMagico.filter((p) =>
-          p.chave.includes(Chave.FERRAMENTA_INSTRUMENTO_MUSICAL)
-        );
+        setTimeout(async () => {
+          this.instrumentos_musicais = (
+          await Promise.all(
+            naoMagico.map(async (instrumento) => {
+              const item = await this.itemServiceSB.consultarPorNome(instrumento.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
 
-        this.ferramentas = naoMagico.filter((p) =>
-          !p.chave.includes(Chave.FERRAMENTA_INSTRUMENTO_MUSICAL)
-        );
+              const possuiInstrumento = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.FERRAMENTA_INSTRUMENTO_MUSICAL) : false) || (item === null &&instrumento.chave.includes(Chave.FERRAMENTA_INSTRUMENTO_MUSICAL))
 
-        this.dataSourceF = new MatTableDataSource(this.ferramentas);
-        this.dataSourceF.paginator = this.paginator;
-        this.numero_registro_ferramentas = this.ferramentas.length;
+              return possuiInstrumento ? instrumento : null;
+            }))
+          ).filter((inst) => inst !== null);
+          
+          this.dataSourceIM = new MatTableDataSource(this.instrumentos_musicais);
+          this.numero_registro_instrumentos_musicais = this.instrumentos_musicais.length;
 
-        this.dataSourceIM = new MatTableDataSource(this.instrumentosMusicais);
-        this.dataSourceIM.paginator = this.paginator;
-        this.numero_registro_instrumentos_musicais = this.instrumentosMusicais.length;
+          this.ferramentas = (
+          await Promise.all(
+            naoMagico.map(async (ferramenta) => {
+              const item = await this.itemServiceSB.consultarPorNome(ferramenta.nome!);
+              const regrasItem = item && item.id ? await this.regraServiceSB.recuperaRegrasDoItem(item.id) : null;
+
+              const possuiFerramenta = (regrasItem !== null ? regrasItem!.some((ri) => ri.tb_regra?.nome === Chave.TIPO_ITEM_FERRAMENTA) : false) || (item === null && ferramenta.chave.includes(Chave.TIPO_ITEM_FERRAMENTA))
+
+              return possuiFerramenta ? ferramenta : null;
+            }))
+          ).filter((fer) => fer !== null);
+          
+          this.dataSourceF = new MatTableDataSource(this.ferramentas);
+          this.numero_registro_ferramentas = this.ferramentas.length;
+
+        }, 4000);
 
         this.carregaChaves();
       },
