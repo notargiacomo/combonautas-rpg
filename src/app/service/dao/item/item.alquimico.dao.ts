@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
-import { SupabaseService } from './supabase.service';
+import { SupabaseDao } from '../supabase.dao';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ItemResistenciaServiceSupabase {
+export class ItemAlquimicoDao {
 
   constructor(
-    private supabase: SupabaseService,
+    private supabase: SupabaseDao,
   ) {}
 
   async listarItens() {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_resistencia')
+      .from('tb_item_alquimico')
       .select('*');
       
     if (error) {
@@ -24,7 +24,7 @@ export class ItemResistenciaServiceSupabase {
 
   async consultarPorId(id: number) {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_resistencia')
+      .from('tb_item_alquimico')
       .select('*')
       .eq('id', id)
       .limit(1);
@@ -40,7 +40,7 @@ export class ItemResistenciaServiceSupabase {
 
   async inserir(item: any) {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_resistencia')
+      .from('tb_item_alquimico')
       .insert([item]);
 
     if (error) {
@@ -52,7 +52,7 @@ export class ItemResistenciaServiceSupabase {
 
   async atualizar(id: number, item: any) {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_resistencia')
+      .from('tb_item_alquimico')
       .update(item)
       .eq('id', id); // onde o id for igual ao que você quer atualizar
 

@@ -24,7 +24,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
 import { RegraTree } from '@app/model/RegraTree';
-import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
+import { RegraDao } from '@app/service/dao/regra.dao';
 import { AlimentosComponent } from "./alimentos/alimentos.component";
 import { AlquimicosComponent } from "./alquimicos/alquimicos.component";
 import { ArmadurasComponent } from "./armaduras/armaduras.component";
@@ -85,7 +85,7 @@ export class ItensComponent implements AfterViewInit, OnInit {
   regraSelecionada?: RegraTree;
 
   constructor(
-    private readonly regraServiceSB: RegraServiceSupabase,
+    private readonly regraServiceSB: RegraDao,
     private cdr: ChangeDetectorRef
   ) {}
 

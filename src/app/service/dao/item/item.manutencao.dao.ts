@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { SupabaseService } from './supabase.service';
+import { SupabaseDao } from '../supabase.dao';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ItemManutencaoServiceSupabase {
+export class ItemManutencaoDao {
 
   constructor(
-    private supabase: SupabaseService,
+    private supabase: SupabaseDao,
   ) {}
 
   async listarItens() {

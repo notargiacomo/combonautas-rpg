@@ -2,10 +2,8 @@ import { isPlatformBrowser } from '@angular/common';
 import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class SupabaseService {
+@Injectable({providedIn: 'root'})
+export class SupabaseDao {
   private supabase: SupabaseClient | undefined;
 
   constructor() {

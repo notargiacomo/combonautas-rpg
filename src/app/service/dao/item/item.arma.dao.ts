@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
-import { SupabaseService } from './supabase.service';
-import { TipoDanoServiceSupabase } from './tipo.dano.service.supabase';
+import { SupabaseDao } from '../supabase.dao';
+import { TipoDanoDao } from '../tipo.dano.dao';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ItemEquipamentoAventuraServiceSupabase {
+export class ItemArmaDao {
 
   constructor(
-    private supabase: SupabaseService,
+    private supabase: SupabaseDao,
   ) {}
 
   async listarItens() {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_equipamento_aventura')
+      .from('tb_item_arma')
       .select('*');
       
     if (error) {
@@ -25,7 +25,7 @@ export class ItemEquipamentoAventuraServiceSupabase {
 
   async consultarPorId(id: number) {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_equipamento_aventura')
+      .from('tb_item_arma')
       .select('*')
       .eq('id', id)
       .limit(1);
@@ -41,7 +41,7 @@ export class ItemEquipamentoAventuraServiceSupabase {
 
   async inserir(item: any) {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_equipamento_aventura')
+      .from('tb_item_arma')
       .insert([item]);
 
     if (error) {
@@ -53,7 +53,7 @@ export class ItemEquipamentoAventuraServiceSupabase {
 
   async atualizar(id: number, item: any) {
     const { data, error } = await this.supabase.client!
-      .from('tb_item_equipamento_aventura')
+      .from('tb_item_arma')
       .update(item)
       .eq('id', id); // onde o id for igual ao que você quer atualizar
 

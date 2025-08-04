@@ -1,4 +1,6 @@
 <div class="container">
+<span class="example-pizza-party">
+</span>
   <div class="row mt-4">
     <mat-card class="card-padrao">
       <div class="row">
@@ -15,7 +17,7 @@
                 <mat-form-field>
                   <mat-label>Tipo</mat-label>
                   <mat-select
-                    formControlName="tipo"
+                    formControlName="tipo_consulta"
                     (selectionChange)="consultar()">
                     <mat-option [value]="'Arcana'">{{ 'Arcana' }}</mat-option>
                     <mat-option [value]="'Divina'">{{ 'Divina' }}</mat-option>
@@ -26,7 +28,7 @@
                 <mat-form-field>
                   <mat-label>Círculo</mat-label>
                   <mat-select
-                    formControlName="circulo"
+                    formControlName="circulo_consulta"
                     (selectionChange)="consultar()"
                   >
                     @for (circulo of circulos; track circulo) {
@@ -39,7 +41,7 @@
                 <mat-form-field>
                   <mat-label>Escolas</mat-label>
                   <mat-select
-                    formControlName="escola"
+                    formControlName="escola_consulta"
                     (selectionChange)="consultar()"
                   >
                     @for (escola of escolas; track escola) {
@@ -52,7 +54,7 @@
                 <mat-form-field>
                   <mat-label>Resistencias</mat-label>
                   <mat-select
-                    formControlName="pericia_resistencia"
+                    formControlName="pericia_resistencia_consulta"
                     (selectionChange)="consultar()"
                   >
                     @for (resistencia of resistencias; track resistencia) {
@@ -69,7 +71,7 @@
                 <mat-form-field>
                   <mat-label>Alcance</mat-label>
                   <mat-select
-                    formControlName="alcance"
+                    formControlName="alcance_consulta"
                     (selectionChange)="consultar()"
                   >
                     @for (alcance of alcances; track alcance) {
@@ -82,7 +84,7 @@
                 <mat-form-field>
                   <mat-label>Execução</mat-label>
                   <mat-select
-                    formControlName="execucao"
+                    formControlName="execucao_consulta"
                     (selectionChange)="consultar()"
                   >
                     @for (execucao of execucoes; track execucao) {
@@ -91,30 +93,19 @@
                   </mat-select>
                 </mat-form-field>
               </div>
-              <div class="col-sm-3 mt-4">
-                <mat-form-field class="form-field">
-                  <mat-label>Digite o nome da magia</mat-label>
-                  <input
-                    formControlName="nome"
-                    matInput
-                    type="text"
-                    (keyup)="consultar()"
-                  />
-                </mat-form-field>
-              </div>
-              <div class="col-sm-3 mt-4">
-                <section>
-                  <div class="button-row d-flex">
-                    <button
-                      class="me-2"
-                      (click)="limparFiltros()"
-                      mat-flat-button
-                    >
-                      Limpar Filtros
+            </div>
+              <div class="row">
+                <div class="col-sm-12 mt-4 button-row d-flex justify-content-end">
+                    <button *ngIf="edicao" class="me-2" (click)="novo()" mat-flat-button>
+                        Novo Magia
                     </button>
-                  </div>
-                </section>
-              </div>
+                    <button *ngIf="edicao" class="me-2" (click)="salvar()" mat-flat-button>
+                        Salvar no Banco
+                    </button>
+                    <button class="me-2" (click)="limparFiltros()" mat-flat-button>
+                        Limpar Filtros
+                    </button>
+                </div>
             </div>
             <div class="row">
               <div class="col-sm-6 mt-4">
@@ -204,10 +195,8 @@
               </div>
 
               <div class="col-sm-6 mt-4">
-                <mat-card *ngIf="objeto" class="card-padrao">
-                  <mat-card-title
-                    class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes"
-                  >
+                <mat-card *ngIf="objeto && !edicao" class="card-padrao">
+                  <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
                     {{ objeto.nome?.toUpperCase() }}
                   </mat-card-title>
                   <mat-card-content
@@ -224,7 +213,7 @@
                               <div class="col-sm-12">
                                 <div class="d-flex justify-content-end">
                                   {{
-                                    objeto.referencias +
+                                    referenciaItem!.nome +
                                       " pag. " +
                                       objeto.paginas
                                   }}
@@ -232,7 +221,7 @@
                                 <hr class="" />
                               </div>
                             </div>
-                            <div class="row">
+                            <!-- <div class="row">
                               <div class="col-sm-12 mt-2 button-row">
                                 <section class="d-flex flex-wrap gap-2">
                                   @for (traco of objeto.tracos; track traco) {
@@ -242,7 +231,7 @@
                                   }
                                 </section>
                               </div>
-                            </div>
+                            </div> -->
                             <div class="row">
                               <div class="col-sm-12">
                                 <hr class="" />
@@ -251,16 +240,16 @@
                             <div class="row">
                               <div class="col-sm-12 mt-2 button-row">
                                 <section class="d-flex flex-wrap gap-2">
-                                  <button class="me-2" mat-flat-button disabled>
+                                  <button *ngIf="objeto.execucao" class="me-2" mat-flat-button disabled>
                                     {{ "Execução: " + objeto.execucao }}
                                   </button>
-                                  <button class="me-2" mat-flat-button disabled>
+                                  <button *ngIf="objeto.alcance" class="me-2" mat-flat-button disabled>
                                     {{ "Alcance: " + objeto.alcance }}
                                   </button>
-                                  <button class="me-2" mat-flat-button disabled>
+                                  <button *ngIf="objeto.alvo" class="me-2" mat-flat-button disabled>
                                     {{ "Alvo: " + objeto.alvo }}
                                   </button>
-                                  <button class="me-2" mat-flat-button disabled>
+                                  <button *ngIf="objeto.duracao" class="me-2" mat-flat-button disabled>
                                     {{ "Duração: " + objeto.duracao }}
                                   </button>
                                   <button *ngIf="objeto.pericia_resistencia" class="me-2" mat-flat-button disabled>
@@ -268,7 +257,7 @@
                                       "Resistência: " +
                                         objeto.pericia_resistencia +
                                         " " +
-                                        objeto.maneira_resistencia
+                                        objeto.metodo_resistencia
                                     }}
                                   </button>
                                 </section>
@@ -290,18 +279,36 @@
                             <div class="col-sm-12">
                               <hr />
                             </div>
-                            @for (aprimoramento of objeto.aprimoramentos; track
+                            @for (aprimoramento of aprimoramentos; track
                             aprimoramento.id) {
                             <div class="row">
                               <div class="col-sm-12 mt-2 button-row">
                                 <section class="d-flex flex-wrap gap-2">
-                                  @for (traco_aprimoramento of
-                                  aprimoramento.tracos; track
-                                  traco_aprimoramento) {
+                                  <button class="me-2" mat-flat-button disabled>
+                                    {{ "Execução: " + aprimoramento.execucao }}
+                                  </button>
+                                  <button class="me-2" mat-flat-button disabled>
+                                    {{ "Alcance: " + aprimoramento.alcance }}
+                                  </button>
+                                  <button class="me-2" mat-flat-button disabled>
+                                    {{ "Alvo: " + aprimoramento.alvo }}
+                                  </button>
+                                  <button class="me-2" mat-flat-button disabled>
+                                    {{ "Duração: " + aprimoramento.duracao }}
+                                  </button>
+                                  <button *ngIf="aprimoramento.pericia_resistencia" class="me-2" mat-flat-button disabled>
+                                    {{
+                                      "Resistência: " +
+                                        aprimoramento.pericia_resistencia +
+                                        " " +
+                                        aprimoramento.metodo_resistencia
+                                    }}
+                                  </button>
+                                  <!-- @for (traco_aprimoramento of aprimoramento.tracos; track traco_aprimoramento) {
                                   <button class="me-2" mat-flat-button disabled>
                                     {{ traco_aprimoramento }}
                                   </button>
-                                  }
+                                  } -->
                                 </section>
                               </div>
                               <div
@@ -337,7 +344,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ "T$ " + objeto.custo_total }}
+                                <!-- {{ "T$ " + objeto.custo_total }} -->
                               </div>
                               <hr />
                             </div>
@@ -348,7 +355,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ "T$ " + calculoCusto(objeto) }}
+                                <!-- {{ "T$ " + calculoCusto(objeto) }} -->
                               </div>
                               <hr />
                             </div>
@@ -357,7 +364,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ calculaCD(objeto) }}
+                                <!-- {{ calculaCD(objeto) }} -->
                               </div>
                               <hr />
                             </div>
@@ -366,7 +373,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ descobreTipoAlquimico(objeto) }}
+                                <!-- {{ descobreTipoAlquimico(objeto) }} -->
                               </div>
                               <hr />
                             </div>
@@ -380,14 +387,14 @@
                               <hr />
                             </div>
                             <div class="row">
-                              @for (aprimoramento of objeto.aprimoramentos;
+                              @for (aprimoramento of aprimoramentos;
                               track aprimoramento.id) {
                               <div class="col-sm-3 mt-2">
                                 <div
                                   class="d-flex flex-wrap gap-2"
                                   *ngIf="aprimoramento.e_aumenta"
                                 >
-                                  <button
+                                  <!-- <button
                                     (click)="
                                       diminuiAprimoramento(
                                         aprimoramento,
@@ -396,8 +403,8 @@
                                     "
                                   >
                                     -
-                                  </button>
-                                  <input
+                                  </button> -->
+                                  <!-- <input
                                     size="1"
                                     [value]="aprimoramento.aumenta"
                                     disabled
@@ -411,18 +418,18 @@
                                     "
                                   >
                                     +
-                                  </button>
+                                  </button> -->
                                 </div>
                                 <div class="col-sm-3 mt-2">
                                   <div
                                     class="d-flex flex-wrap gap-2"
                                     *ngIf="!aprimoramento.e_aumenta"
                                   >
-                                    <mat-checkbox
+                                    <!-- <mat-checkbox
                                       (change)="
                                         calculaCheck(aprimoramento, objeto)
                                       "
-                                    ></mat-checkbox>
+                                    ></mat-checkbox> -->
                                   </div>
                                 </div>
                               </div>
@@ -455,7 +462,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ "T$ " + objeto.custo_total }}
+                                <!-- {{ "T$ " + objeto.custo_total }} -->
                               </div>
                               <hr />
                             </div>
@@ -466,7 +473,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ "T$ " + calculoCusto(objeto) }}
+                                <!-- {{ "T$ " + calculoCusto(objeto) }} -->
                               </div>
                               <hr />
                             </div>
@@ -475,7 +482,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ calculaCD(objeto) }}
+                                <!-- {{ calculaCD(objeto) }} -->
                               </div>
                               <hr />
                             </div>
@@ -484,23 +491,23 @@
                               <div
                                 class="col-sm-9 mt-1 d-flex justify-content-end"
                               >
-                                {{
+                                <!-- {{
                                   "Deve Conhecer a Magia Escrita ou Testar Misticismo CD (" +
                                     calculaCD(objeto) +
                                     ")"
-                                }}
+                                }} -->
                               </div>
                               <hr />
                             </div>
                             <div class="row">
-                              @for (aprimoramento of objeto.aprimoramentos;
+                              @for (aprimoramento of aprimoramentos;
                               track aprimoramento.id) {
                               <div class="col-sm-3 mt-2">
                                 <div
                                   class="d-flex flex-wrap gap-2"
                                   *ngIf="aprimoramento.e_aumenta"
                                 >
-                                  <button
+                                  <!-- <button
                                     (click)="
                                       diminuiAprimoramento(
                                         aprimoramento,
@@ -524,18 +531,18 @@
                                     "
                                   >
                                     +
-                                  </button>
+                                  </button> -->
                                 </div>
                                 <div class="col-sm-3 mt-2">
                                   <div
                                     class="d-flex flex-wrap gap-2"
                                     *ngIf="!aprimoramento.e_aumenta"
                                   >
-                                    <mat-checkbox
+                                    <!-- <mat-checkbox
                                       (change)="
                                         calculaCheck(aprimoramento, objeto)
                                       "
-                                    ></mat-checkbox>
+                                    ></mat-checkbox> -->
                                   </div>
                                 </div>
                               </div>
@@ -568,13 +575,13 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{
+                                <!-- {{
                                   "T$ " + objeto
                                     ? objeto.custo
                                       ? objeto.custo * 100
                                       : 0
                                     : 0
-                                }}
+                                }} -->
                               </div>
                               <hr />
                             </div>
@@ -583,7 +590,7 @@
                               <div
                                 class="col-sm-3 mt-1 d-flex justify-content-end"
                               >
-                                {{ calculaCDEngenhoqueiro(objeto) }}
+                                <!-- {{ calculaCDEngenhoqueiro(objeto) }} -->
                               </div>
                               <hr />
                             </div>
@@ -592,11 +599,11 @@
                               <div
                                 class="col-sm-9 mt-1 d-flex justify-content-end"
                               >
-                                {{
+                                <!-- {{
                                   "Testar Ofício Engenhoqueiro CD (" +
                                     calculaCD(objeto) +
                                     ")"
-                                }}
+                                }} -->
                               </div>
                               <hr />
                             </div>
@@ -607,19 +614,19 @@
                               <div
                                 class="col-sm-6 mt-1 d-flex justify-content-end"
                               >
-                                {{ calculaPMEngenhoqueiro(objeto) }}
+                                <!-- {{ calculaPMEngenhoqueiro(objeto) }} -->
                               </div>
                               <hr />
                             </div>
                             <div class="row">
-                              @for (aprimoramento of objeto.aprimoramentos;
+                              @for (aprimoramento of aprimoramentos;
                               track aprimoramento.id) {
                               <div class="col-sm-3 mt-2">
                                 <div
                                   class="d-flex flex-wrap gap-2"
                                   *ngIf="aprimoramento.e_aumenta"
                                 >
-                                  <button
+                                  <!-- <button
                                     (click)="
                                       diminuiAprimoramento(
                                         aprimoramento,
@@ -628,8 +635,8 @@
                                     "
                                   >
                                     -
-                                  </button>
-                                  <input
+                                  </button> -->
+                                  <!-- <input
                                     size="1"
                                     [value]="aprimoramento.aumenta"
                                     disabled
@@ -643,18 +650,18 @@
                                     "
                                   >
                                     +
-                                  </button>
+                                  </button> -->
                                 </div>
                                 <div class="col-sm-3 mt-2">
                                   <div
                                     class="d-flex flex-wrap gap-2"
                                     *ngIf="!aprimoramento.e_aumenta"
                                   >
-                                    <mat-checkbox
+                                    <!-- <mat-checkbox
                                       (change)="
                                         calculaCheck(aprimoramento, objeto)
                                       "
-                                    ></mat-checkbox>
+                                    ></mat-checkbox> -->
                                   </div>
                                 </div>
                               </div>
@@ -667,6 +674,389 @@
                           </div>
                         </mat-tab>
                       </mat-tab-group>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+                <mat-card *ngIf="objeto && edicao" class="card-padrao">
+                  <mat-card-title class="titulo-cartao-apresentacao interior-cartao              interior-cartao-condicoes">
+                    <div class="content">
+                      <div class="row">
+                          <div class="col-sm-6 mt-2">
+                              <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Nome da Magia</mat-label>
+                                  <input formControlName="nome" matInput type="text"  />
+                              </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-2">
+                          <mat-form-field class="select-formulario-edicao">
+                            <mat-label>Escola</mat-label>
+                            <mat-select formControlName="escola">
+                              @for (escola of escolas; track escola) {
+                                <mat-option [value]="escola">{{ escola }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-card-title>
+                  <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-itens">
+                    <div class="content">
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <mat-form-field class="select-formulario-edicao">
+                                  <mat-label>Referência</mat-label>
+                                  <mat-select formControlName="id_referencia">
+                                      <mat-option *ngFor="let referencia of referencias"
+                                          [value]="referencia.id">
+                                          {{ referencia.nome }}
+                                      </mat-option>
+                                  </mat-select>
+                              </mat-form-field>
+                          </div>
+                          <div class="col-sm-6">
+                              <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Páginas</mat-label>
+                                  <input formControlName="paginas" matInput type="text" />
+                              </mat-form-field>
+                          </div>
+                          <hr class="" />
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <mat-form-field class="select-formulario-edicao">
+                            <mat-label>Círculo</mat-label>
+                            <mat-select formControlName="circulo">
+                              @for (circulo of circulos; track circulo) {
+                                <mat-option [value]="circulo">{{ circulo }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                          <mat-form-field class="select-formulario-edicao">
+                            <mat-label>Execução</mat-label>
+                            <mat-select formControlName="execucao">
+                              @for (execucao of execucoes; track execucao) {
+                                <mat-option [value]="execucao">{{ execucao }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-6"> 
+                          <mat-form-field class="text-field-formulario-edicao">
+                              <mat-label>Alvo</mat-label>
+                              <input formControlName="alvo" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <mat-form-field class="text-field-formulario-edicao">
+                              <mat-label>PM's</mat-label>
+                              <input formControlName="custo_pm" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                          <mat-form-field class="text-field-formulario-edicao">
+                              <mat-label>PM's permanentes</mat-label>
+                              <input formControlName="custo_pm_permanente" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                          <mat-form-field class="text-field-formulario-edicao">
+                              <mat-label>Efeito</mat-label>
+                              <input formControlName="efeito" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-3">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Tipo</mat-label>
+                              <mat-select formControlName="tipo">
+                                @for (tipo of tipos; track tipo) {
+                                  <mat-option [value]="tipo">{{ tipo }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        <div class="col-sm-3">
+                            <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Custo material</mat-label>
+                                <input formControlName="custo_material" matInput type="text" />
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                          <mat-form-field class="text-field-formulario-edicao">
+                              <mat-label>Área</mat-label>
+                              <input formControlName="area" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-3 ">
+                            <div class="checkbox-wrapper">
+                              <mat-checkbox class="w-100" (change)="checkaAumenta(objeto!)">Aumenta?</mat-checkbox>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="checkbox-wrapper">
+                              <mat-checkbox class="w-100" (change)="checkaTruque(objeto!)">Truque?</mat-checkbox>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Restrição</mat-label>
+                                <input formControlName="restricao" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <mat-form-field class="select-formulario-edicao">
+                            <mat-label>Duração</mat-label>
+                            <mat-select formControlName="duracao" (selectionChange)="adicionarDuracao($event)">
+                              @for (duracao of duracoes; track duracao) {
+                                <mat-option [value]="duracao">{{ duracao }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                          <mat-form-field class="select-formulario-edicao">
+                            <mat-label>Alcance</mat-label>
+                            <mat-select formControlName="alcance">
+                              @for (alcance of alcances; track alcance) {
+                                <mat-option [value]="alcance">{{ alcance }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                          <mat-form-field class="select-formulario-edicao">
+                            <mat-label>Perícia</mat-label>
+                            <mat-select formControlName="pericia_resistencia">
+                              @for (resistencia of resistencias; track resistencia) {
+                                <mat-option [value]="resistencia">{{ resistencia }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                          <mat-form-field class="select-formulario-edicao">
+                            <mat-label>Resistência</mat-label>
+                            <mat-select formControlName="metodo_resistencia">
+                              @for (metodo of metodos; track metodo) {
+                                <mat-option [value]="metodo">{{ metodo }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row" *ngIf="objeto">
+                        <div class="col-sm-12 mb-4 button-row">
+                          <section class="d-flex flex-wrap gap-2">
+                              @for (concatenada of objeto?.duracoes_concatenadas; track concatenada) {
+                              <button class="me-2" mat-flat-button
+                                  (click)="removerDuracao(concatenada)">
+                                  {{ concatenada }}
+                              </button>
+                              }
+                          </section>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Descrição da magia</mat-label>
+                                <textarea formControlName="descricao"
+                                    rows="5" matInput></textarea>
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <hr>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 mt-2">
+                          <b>APRIMORAMENTOS</b>
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                          <section>
+                            <div class="button-row d-flex justify-content-end">
+                              <button
+                                class="me-2"
+                                (click)="adicionarAprimoramento()"
+                                mat-flat-button
+                              >
+                                Adicionar
+                              </button>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                      @for (aprimoramento of aprimoramentos; track aprimoramento.id_count) {
+                        <div class="row">
+                          <hr>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Escola</mat-label>
+                              <mat-select formControlName="tipo">
+                                @for (escola of escolas; track escola) {
+                                  <mat-option [value]="escola">{{ escola }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Círculo</mat-label>
+                              <mat-select formControlName="tipo">
+                                @for (circulo of circulos; track circulo) {
+                                  <mat-option [value]="circulo">{{ circulo }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Execução</mat-label>
+                              <mat-select formControlName="tipo">
+                                @for (execucao of execucoes; track execucao) {
+                                  <mat-option [value]="execucao">{{ execucao }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Alcance</mat-label>
+                              <mat-select formControlName="tipo">
+                                @for (alcance of alcances; track alcance) {
+                                  <mat-option [value]="alcance">{{ alcance }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Perícia</mat-label>
+                              <mat-select formControlName="pericia_resistencia">
+                                @for (resistencia of resistencias; track resistencia) {
+                                  <mat-option [value]="resistencia">{{ resistencia }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Resistência</mat-label>
+                              <mat-select formControlName="metodo_resistencia">
+                                @for (metodo of metodos; track metodo) {
+                                  <mat-option [value]="metodo">{{ metodo }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <mat-form-field class="select-formulario-edicao">
+                              <mat-label>Duração</mat-label>
+                              <mat-select formControlName="duracao" (selectionChange)="adicionarDuracao($event)">
+                                @for (duracao of duracoes; track duracao) {
+                                  <mat-option [value]="duracao">{{ duracao }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                            <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Efeito</mat-label>
+                                <input formControlName="efeito" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                            <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Área</mat-label>
+                                <input formControlName="area" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row" *ngIf="objeto">
+                          <div class="col-sm-12 mb-4 button-row">
+                            <section class="d-flex flex-wrap gap-2">
+                                @for (concatenada of objeto?.duracoes_concatenadas; track concatenada) {
+                                <button class="me-2" mat-flat-button
+                                    (click)="removerDuracao(concatenada)">
+                                    {{ concatenada }}
+                                </button>
+                                }
+                            </section>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <mat-form-field class="text-field-formulario-edicao">
+                                <mat-label>Custo em PM's</mat-label>
+                                <input formControlName="custo_pm" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                              <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Custo em PM's permanentes</mat-label>
+                                  <input formControlName="custo_pm_permanente" matInput type="text" />
+                              </mat-form-field>
+                          </div>
+                          <div class="col-sm-4">
+                              <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Custo material</mat-label>
+                                  <input formControlName="custo_material" matInput type="text" />
+                              </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-sm-6 mb-4">
+                          <div class="checkbox-wrapper">
+                            <mat-checkbox class="w-100" (change)="checkaAumenta(objeto!)">Aumenta?</mat-checkbox>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                          <div class="checkbox-wrapper">
+                            <mat-checkbox class="w-100" (change)="checkaTruque(objeto!)">Truque?</mat-checkbox>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                              <mat-form-field class="text-field-formulario-edicao">
+                                  <mat-label>Descrição da magia</mat-label>
+                                  <textarea formControlName="descricao"
+                                      rows="5" matInput></textarea>
+                              </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12 mb-2">
+                          <section>
+                            <div class="button-row d-flex justify-content-end">
+                              <button
+                                class="me-2"
+                                (click)="deletarAprimoramento(aprimoramento.id_count!)"
+                                mat-flat-button
+                              >
+                                Deletar
+                              </button>
+                            </div>
+                          </section>
+                        </div>
+                        </div>
+                      }
                     </div>
                   </mat-card-content>
                 </mat-card>

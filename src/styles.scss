@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
   font-style: normal; /* Pode ser 'italic' ou outros estilos */
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 header,
 .cabecalho {
@@ -50,7 +50,7 @@ p {
   font-family: "Oswald" !important;
   font-weight: normal !important; /* Pode ser 'bold' ou outros valores se necessário */
   font-style: normal !important; /* Pode ser 'italic' ou outros estilos */
-  font-size: 12pt !important;
+  font-size: 10pt !important;
   background: rgb(45, 35, 60) !important;
   color: white !important;
   margin-top: 1% !important;
@@ -66,9 +66,6 @@ p {
 .titulo_tormenta20 {
   width: 50% !important;
   height: 15% !important; /* Você pode ajustar a altura como preferir */
-  // background-size: cover!important;
-  // background-position: center!important;
-  // background-repeat: no-repeat!important;
   margin-top: 5%;
   margin-bottom: 5%;
   padding-right: 10%;
@@ -122,33 +119,49 @@ b {
 
 .mat-mdc-button {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
   border: 1px solid rgb(120, 80, 160); /* Moldura */
   background-color: rgb(45, 35, 60) !important;
   cursor: pointer !important;
 }
 
+.mat-mdc-snack-bar-container .mdc-snackbar__label {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
+  border: 1px solid rgb(120, 80, 160); /* Moldura */
+  background-color: rgb(45, 35, 60) !important;
+}
+
+.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
+  background-color: rgb(45, 35, 60) !important;
+  padding-right: 0px !important;
+}
+
 .mat-mdc-select {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
+  background-color: white !important;
+  border-radius: 4px !important;
 }
 
 .select-dobrado {
   .mat-mdc-select {
     font-family: "Oswald" !important;
-    font-size: 12pt !important;
+    font-size: 10pt !important;
+    background-color: white !important;
+    border-radius: 4px !important;
   }
   width: 300px !important;
 }
 
 .mat-mdc-option {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mdc-floating-label {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-mdc-icon-button[disabled],
@@ -158,38 +171,38 @@ b {
 
 .mat-mdc-menu-item-text {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-internal-form-field {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-mdc-header-row {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-mdc-unelevated-button {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-mdc-row {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
   height: var(--mat-table-row-item-container-height, 20px) !important;
 }
 
 .mat-expansion-panel-header {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-expansion-panel-content {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-mdc-card-title {
@@ -233,14 +246,31 @@ b {
 
 .titulo-cartao-apresentacao .mat-mdc-card-subtitle {
   text-align: center !important;
+
+  background-color: rgb(120, 80, 160) !important;
+  color: rgb(240, 240, 245) !important;
+  max-height: 600px !important; /* Defina a altura máxima do card */
+  overflow-y: auto !important; /* Habilita o scroll vertical */
+  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+}
+
+.mat-mdc-card-title, .mat-mdc-card-subtitle {
+  display: block;
+  margin: 0;
+  background-color: rgb(45, 35, 60) !important;
+  color: rgb(240, 240, 245) !important;
+  max-height: 600px !important; /* Defina a altura máxima do card */
+  overflow-y: auto !important; /* Habilita o scroll vertical */
+  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+  padding-bottom: 0.5rem !important;
 }
 
 .mat-mdc-card-content {
   background-color: rgb(120, 80, 160) !important;
   color: rgb(240, 240, 245) !important;
   max-height: 600px !important; /* Defina a altura máxima do card */
-  overflow-y: auto !important; /* Habilita o scroll vertical */
   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+  overflow-y: inherit !important;
 }
 
 img {
@@ -403,14 +433,14 @@ tr.element-row:not(.expanded-row):active {
 
 .mat-mdc-tab {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
   --mat-sys-primary: grey !important;
 }
 
 .mat-mdc-menu-content,
 .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
   font-family: "Oswald" !important;
-  font-size: 12pt !important;
+  font-size: 10pt !important;
 }
 
 .mat-mdc-dialog-surface {
@@ -428,9 +458,6 @@ tr.element-row:not(.expanded-row):active {
 
 .cdk-global-overlay-wrapper {
   display: flow-root !important;
-  // align-items: center;
-  // align-content: center;
-  // align-self: center !important;
 }
 
 .mat-mdc-dialog-surface {
@@ -440,12 +467,6 @@ tr.element-row:not(.expanded-row):active {
   height: 550px !important;
   margin-top: 17% !important;
   margin-left: 33% !important;
-}
-
-.mat-mdc-dialog-panel {
-  // align-self: start !important;
-  // vertical-align: middle !important;
-  // justify-content: start !important;
 }
 
 .mat-mdc-dialog-surface b {
@@ -597,22 +618,6 @@ tr.element-row:not(.example-expanded-row):active {
   color: rgb(255, 255, 255) !important;
 }
 
-// mat-row:nth-child(even) {
-//   background-color: rgb(204, 204, 204) !important; /* Cinza claro */
-// }
-
-// mat-row:nth-child(odd) {
-//   background-color: #ffffff !important; /* Branco */
-// }
-
-// .mat-mdc-table tr:nth-child(even) {
-//   background-color: rgb(204, 204, 204) !important;
-// }
-
-// .mat-mdc-table tr:nth-child(odd) {
-//   background-color: #ffffff !important;
-// }
-
 .mat-mdc-table th {
   background-color: rgb(45, 35, 60) !important;
   color: rgb(255, 255, 255) !important;
@@ -620,8 +625,6 @@ tr.element-row:not(.example-expanded-row):active {
 
 .custom-dialog-container {
   display: flex !important;
-  // align-items: center !important;
-  // justify-content: center !important;
 }
 
 .mat-mdc-form-field-infix{
@@ -629,18 +632,28 @@ tr.element-row:not(.example-expanded-row):active {
   font-family: "Oswald" !important;
 }
 
-.mat-mdc-form-field{
-  width: max-content !important;
-  max-width: max-content !important;
-}
-
 .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
   background-color: white !important;
+  border-radius: 4px !important;
+}
+
+.mat-mdc-text {
+  .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled){
+    background-color: white !important;
+  }
+}
+
+.mat-mdc-select {
+  background-color: white !important;
+  border-radius: 4px !important;
 }
 
 .select-formulario-edicao {
   .mat-mdc-select {
     background-color: white !important;
+    border-radius: 4px !important;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
     width: 100% !important;
     max-width: 100% !important;
@@ -651,10 +664,13 @@ tr.element-row:not(.example-expanded-row):active {
     margin-bottom: 0%;
 }
 
+
 .text-field-formulario-edicao {
   .mdc-text-field {
     background-color: white !important;
-    
+    border-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
   width: 100% !important;
   max-width: 100% !important;
@@ -663,6 +679,7 @@ tr.element-row:not(.example-expanded-row):active {
 .text-area-formulario-edicao {
   background-color: white !important;
   width: 100% !important;
+  max-width: 100% !important;
 }
 
 .mat-mdc-tab-header {
@@ -671,41 +688,25 @@ tr.element-row:not(.example-expanded-row):active {
   background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
-// .mat-tab-group {
-//   background-color: transparent !important;
-//   border-bottom: 2px solid #bfa7d7 !important;
-//   background-color: rgba(255, 255, 255, 0.05) !important;
-//   color: white !important;
-// }
+.checkbox-wrapper {
+  display: block !important;
+  width: 100% !important;
+  background-color: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.23) !important;
+  border-radius: 4px !important;
+  padding: 0.5rem 0.5rem !important;
+  margin-right: 5rem !important;
+  box-sizing: border-box !important;
+  // Isso garante que o mat-checkbox fique alinhado corretamente
+  display: flex !important;
+  align-items: center !important;
+}
 
-// .mat-tab-labels {
-//   justify-content: center !important;
-//   gap: 32px !important;
-// }
+::ng-deep .mat-mdc-form-field-infill {
+  border-radius: 8px !important; // ou 4px se quiser mais sutil
+}
 
-// .mat-tab-label {
-//   font-weight: 600 !important;
-//   font-size: 1.0rem !important;
-//   color: #5a3e69 !important;
-//   padding: 12px 24px !important;
-//   transition: all 0.3s ease !important;
-//   border-radius: 8px 8px 0 0 !important;
-//   background-color: rgba(255, 255, 255, 0.05) !important;
-// }
-
-// .mat-tab-label:hover {
-//   background-color: rgba(255, 255, 255, 0.12) !important;
-//   cursor: pointer !important;
-// }
-
-// .mat-tab-label.mat-tab-label-active {
-//   background-color: #5a3e69 !important;
-//   color: #fff !important;
-//   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1) !important;
-// }
-
-// .mat-ink-bar {
-//   background-color: transparent !important;
-// }
-
+textarea {
+  border-radius: 8px !important;
+}
  

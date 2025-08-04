@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { SupabaseService } from './supabase.service';
+import { SupabaseDao } from './supabase.dao';
 import { PericiaItemSB } from '../../model/supamodel/pericia.item.sb';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PericiaServiceSupabase {
+export class PericiaDao {
 
-  constructor(private supabase: SupabaseService) {}
+  constructor(private supabase: SupabaseDao) {}
 
   async listar() {
     const { data, error } = await this.supabase.client!

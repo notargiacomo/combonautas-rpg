@@ -30,14 +30,14 @@ import { ReferenciaItemSB } from '@app/model/supamodel/referencia.item.sb';
 import { RegraItemSB } from '@app/model/supamodel/regra.item.sb';
 import { TipoDanoItemSB } from '@app/model/supamodel/tipo.dano.item.sb';
 import { ItemService } from '@app/service/item.service';
-import { ItemAlquimicoServiceSupabase } from '@app/service/supaservice/item.alquimico.service.supabase';
-import { ItemManutencaoServiceSupabase } from '@app/service/supaservice/item.manutencao.service.supabase';
-import { ItemServiceSupabase } from '@app/service/supaservice/item.service.supabase';
-import { PericiaServiceSupabase } from '@app/service/supaservice/pericia.service.supabase';
-import { ReferenciaServiceSupabase } from '@app/service/supaservice/referencia.service.supabase';
-import { RegraServiceSupabase } from '@app/service/supaservice/regra.service.supabase';
-import { TipoDanoServiceSupabase } from '@app/service/supaservice/tipo.dano.service.supabase';
-import { TipoItemServiceSupabase } from '@app/service/supaservice/tipo.item.service.supabase';
+import { ItemAlquimicoDao } from '@app/service/dao/item/item.alquimico.dao';
+import { ItemManutencaoDao } from '@app/service/dao/item/item.manutencao.dao';
+import { ItemDao } from '@app/service/dao/item/item.dao';
+import { PericiaDao } from '@app/service/dao/pericia.dao';
+import { ReferenciaDao } from '@app/service/dao/referencia.dao';
+import { RegraDao } from '@app/service/dao/regra.dao';
+import { TipoDanoDao } from '@app/service/dao/tipo.dano.dao';
+import { TipoItemDao } from '@app/service/dao/tipo.item.dao';
 
 @Component({
   selector: 'app-alquimicos',
@@ -120,14 +120,14 @@ export class AlquimicosComponent implements OnInit{
 
   constructor(
     private readonly service: ItemService,
-    private readonly itemServiceSB: ItemServiceSupabase,
-    private readonly tipoItemServiceSB: TipoItemServiceSupabase,
-    private readonly referenciaServiceSB: ReferenciaServiceSupabase,
-    private readonly regraServiceSB: RegraServiceSupabase,
-    private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
-    private readonly periciaServiceSB: PericiaServiceSupabase,
-    private readonly itemAlquimicoServiceSupabase: ItemAlquimicoServiceSupabase,
-    private itemManutencaoSB: ItemManutencaoServiceSupabase,
+    private readonly itemServiceSB: ItemDao,
+    private readonly tipoItemServiceSB: TipoItemDao,
+    private readonly referenciaServiceSB: ReferenciaDao,
+    private readonly regraServiceSB: RegraDao,
+    private readonly tiposDanoServiceSB: TipoDanoDao,
+    private readonly periciaServiceSB: PericiaDao,
+    private readonly itemAlquimicoServiceSupabase: ItemAlquimicoDao,
+    private itemManutencaoSB: ItemManutencaoDao,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}

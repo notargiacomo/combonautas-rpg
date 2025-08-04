@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SupabaseService } from './supabase.service';
+import { SupabaseDao } from './supabase.dao';
 import { RegraItemSB } from '../../model/supamodel/regra.item.sb';
 import { RegraTree } from '@app/model/RegraTree';
 import { Regra } from '@app/model/regra';
@@ -7,9 +7,9 @@ import { Regra } from '@app/model/regra';
 @Injectable({
   providedIn: 'root'
 })
-export class RegraServiceSupabase {
+export class RegraDao {
 
-  constructor(private supabase: SupabaseService) {}
+  constructor(private supabase: SupabaseDao) {}
 
   async listar() {
     const { data, error } = await this.supabase.client!

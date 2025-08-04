@@ -1,7 +1,7 @@
 import { TipoMagia } from "../enum/tipo.magia.enum";
 
 export interface Magia {
-    id:number;
+    id?:number;
     nome?:string;
     descricao?:string;
     escola?:string;

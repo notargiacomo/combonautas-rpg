@@ -30,7 +30,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { Regra } from '@app/model/regra';
 import { RegraTree } from '@app/model/RegraTree';
 import { ItemEscudoSB } from '@app/model/supamodel/item.escudo.sb';
-import { ItemEscudoServiceSupabase } from '@app/service/supaservice/item.escudo.service.supabase';
+import { ItemEscudoDao } from '@app/service/dao/item/item.escudo.dao';
 import { Chave } from '../../../enum/chave.enum';
 import { TipoItem } from '../../../enum/tipo.item.enum';
 import { Item } from '../../../model/item';
@@ -42,14 +42,14 @@ import { PericiaSB } from '../../../model/supamodel/pericia.sb';
 import { ReferenciaItemSB } from '../../../model/supamodel/referencia.item.sb';
 import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
 import { ItemService } from '../../../service/item.service';
-import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
-import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
-import { ItemServiceSupabase } from '../../../service/supaservice/item.service.supabase';
-import { PericiaServiceSupabase } from '../../../service/supaservice/pericia.service.supabase';
-import { ReferenciaServiceSupabase } from '../../../service/supaservice/referencia.service.supabase';
-import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
-import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
-import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
+import { ItemManutencaoDao } from '../../../service/dao/item/item.manutencao.dao';
+import { ItemResistenciaDao } from '../../../service/dao/item/item.resistencia.dao';
+import { ItemDao } from '../../../service/dao/item/item.dao';
+import { PericiaDao } from '../../../service/dao/pericia.dao';
+import { ReferenciaDao } from '../../../service/dao/referencia.dao';
+import { RegraDao } from '../../../service/dao/regra.dao';
+import { TipoDanoDao } from '../../../service/dao/tipo.dano.dao';
+import { TipoItemDao } from '../../../service/dao/tipo.item.dao';
 
 @Component({
   selector: 'app-escudos',
@@ -130,15 +130,15 @@ export class EscudosComponent implements OnInit {
 
   constructor(
     private readonly service: ItemService,
-    private readonly itemServiceSB: ItemServiceSupabase,
-    private readonly tipoItemServiceSB: TipoItemServiceSupabase,
-    private readonly referenciaServiceSB: ReferenciaServiceSupabase,
-    private readonly regraServiceSB: RegraServiceSupabase,
-    private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
-    private readonly periciaServiceSB: PericiaServiceSupabase,
-    private itemManutencaoSB: ItemManutencaoServiceSupabase,
-    private itemEscudoSB: ItemEscudoServiceSupabase,
-    private itemResistenciaSB: ItemResistenciaServiceSupabase,
+    private readonly itemServiceSB: ItemDao,
+    private readonly tipoItemServiceSB: TipoItemDao,
+    private readonly referenciaServiceSB: ReferenciaDao,
+    private readonly regraServiceSB: RegraDao,
+    private readonly tiposDanoServiceSB: TipoDanoDao,
+    private readonly periciaServiceSB: PericiaDao,
+    private itemManutencaoSB: ItemManutencaoDao,
+    private itemEscudoSB: ItemEscudoDao,
+    private itemResistenciaSB: ItemResistenciaDao,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}

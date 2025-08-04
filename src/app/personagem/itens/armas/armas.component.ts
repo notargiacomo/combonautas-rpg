@@ -43,16 +43,16 @@ import { RegraItemSB } from '../../../model/supamodel/regra.item.sb';
 import { TipoDanoItemSB } from '../../../model/supamodel/tipo.dano.item.sb';
 import { TipoDanoSB } from '../../../model/supamodel/tipo.dano.sb';
 import { ItemService } from '../../../service/item.service';
-import { AlcanceServiceSupabase } from '../../../service/supaservice/alcance.service.supabase';
-import { ItemArmaServiceSupabase } from '../../../service/supaservice/item.arma.service.supabase';
-import { ItemManutencaoServiceSupabase } from '../../../service/supaservice/item.manutencao.service.supabase';
-import { ItemResistenciaServiceSupabase } from '../../../service/supaservice/item.resistencia.service.supabase';
-import { ItemServiceSupabase } from '../../../service/supaservice/item.service.supabase';
-import { PericiaServiceSupabase } from '../../../service/supaservice/pericia.service.supabase';
-import { ReferenciaServiceSupabase } from '../../../service/supaservice/referencia.service.supabase';
-import { RegraServiceSupabase } from '../../../service/supaservice/regra.service.supabase';
-import { TipoDanoServiceSupabase } from '../../../service/supaservice/tipo.dano.service.supabase';
-import { TipoItemServiceSupabase } from '../../../service/supaservice/tipo.item.service.supabase';
+import { AlcanceDao } from '../../../service/dao/alcance.dao';
+import { ItemArmaDao } from '../../../service/dao/item/item.arma.dao';
+import { ItemManutencaoDao } from '../../../service/dao/item/item.manutencao.dao';
+import { ItemResistenciaDao } from '../../../service/dao/item/item.resistencia.dao';
+import { ItemDao } from '../../../service/dao/item/item.dao';
+import { PericiaDao } from '../../../service/dao/pericia.dao';
+import { ReferenciaDao } from '../../../service/dao/referencia.dao';
+import { RegraDao } from '../../../service/dao/regra.dao';
+import { TipoDanoDao } from '../../../service/dao/tipo.dano.dao';
+import { TipoItemDao } from '../../../service/dao/tipo.item.dao';
 import { Regra } from '@app/model/regra';
 
 @Component({
@@ -153,16 +153,16 @@ export class ArmasComponent implements OnInit{
 
   constructor(
     private readonly service: ItemService,
-    private readonly itemServiceSB: ItemServiceSupabase,
-    private readonly tipoItemServiceSB: TipoItemServiceSupabase,
-    private readonly referenciaServiceSB: ReferenciaServiceSupabase,
-    private readonly regraServiceSB: RegraServiceSupabase,
-    private readonly tiposDanoServiceSB: TipoDanoServiceSupabase,
-    private readonly alcanceServiceSB: AlcanceServiceSupabase,
-    private readonly periciaServiceSB: PericiaServiceSupabase,
-    private itemManutencaoSB: ItemManutencaoServiceSupabase,
-    private itemArmaSB: ItemArmaServiceSupabase,
-    private itemResistenciaSB: ItemResistenciaServiceSupabase,
+    private readonly itemServiceSB: ItemDao,
+    private readonly tipoItemServiceSB: TipoItemDao,
+    private readonly referenciaServiceSB: ReferenciaDao,
+    private readonly regraServiceSB: RegraDao,
+    private readonly tiposDanoServiceSB: TipoDanoDao,
+    private readonly alcanceServiceSB: AlcanceDao,
+    private readonly periciaServiceSB: PericiaDao,
+    private itemManutencaoSB: ItemManutencaoDao,
+    private itemArmaSB: ItemArmaDao,
+    private itemResistenciaSB: ItemResistenciaDao,
     private fb: FormBuilder,
     private cdr: ChangeDetectorRef
   ) {}

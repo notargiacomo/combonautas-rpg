@@ -9,4 +9,36 @@
 .mat-mdc-dialog-surface b {
     color: rgb(240, 240, 245) !important;
     font-family: "Oswald" !important;
+}
+
+.text-field-formulario-edicao {
+  .mdc-text-field {
+    background-color: white !important;
+    font-size: 8pt !important;
   }
+  .mdc-floating-label {
+    background-color: white !important;
+    font-size: 8pt !important;
+  }
+}
+
+.select-formulario-edicao {
+  .mat-mdc-select {
+    background-color: white !important;
+  }
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 98% !important;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+.mdc-checkbox {
+  padding-right: 100px !important;
+}
+
+.mat-mdc-checkbox {
+  padding-right: 100px !important;
+}
