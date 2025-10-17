@@ -1,5 +1,6 @@
-export interface ItemManutencaoSB {
-      id?: number;
+import { Entity } from "./entity.sb";
+
+export interface ItemManutencaoSB extends Entity {
       preco?: number;
       cd_fabricacao?: number;
       cd_identificar_item?: number;

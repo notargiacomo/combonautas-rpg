@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
-import { SupabaseDao } from '../supabase.dao';
+import { GenericRepository } from '../generic.repository';
+import { ItemEsotericoSB } from '@app/model/supamodel/item.esoterico.sb';
 @Injectable({
   providedIn: 'root'
 })
-export class ItemEsotericoDao {
+export class ItemEsotericoDao extends GenericRepository<ItemEsotericoSB>{
 
-  constructor(
-    private supabase: SupabaseDao,
-  ) {}
+  constructor(){
+    super('tb_item_esoterico')
+  }
 
   async listarItens() {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_esoterico')
       .select('*');
       
@@ -22,7 +23,7 @@ export class ItemEsotericoDao {
   }
 
   async consultarPorId(id: number) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_esoterico')
       .select('*')
       .eq('id', id)
@@ -38,7 +39,7 @@ export class ItemEsotericoDao {
   }
 
   async inserir(item: any) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_esoterico')
       .insert([item]);
 
@@ -50,7 +51,7 @@ export class ItemEsotericoDao {
   }
 
   async atualizar(id: number, item: any) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_esoterico')
       .update(item)
       .eq('id', id); // onde o id for igual ao que você quer atualizar

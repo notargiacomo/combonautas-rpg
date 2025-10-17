@@ -48,7 +48,7 @@ import { ItemDao } from '@app/dao/item/item.dao';
 import { PericiaDao } from '../../../../dao/pericia.dao';
 import { ReferenciaDao } from '../../../../dao/referencia.dao';
 import { RegraDao } from '../../../../dao/regra.dao';
-import { TipoDanoDao } from '../../../../dao/tipo.dano.dao';
+import { TipoDanoDao } from '../../../../dao/tipo.dano.item.dao';
 import { TipoItemDao } from '../../../../dao/tipo.item.dao';
 
 @Component({

@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
-import { SupabaseDao } from '../supabase.dao';
+import { ItemArmaSB } from '@app/model/supamodel/item.arma.sb';
+import { GenericRepository } from '../generic.repository';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ItemArmaDao {
+export class ItemArmaDao extends GenericRepository<ItemArmaSB>{
 
-  constructor(
-    private supabase: SupabaseDao,
-  ) {}
+  constructor(){
+    super('tb_item_arma')
+  }
 
   async listarItens() {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_arma')
       .select('*');
       
@@ -23,7 +24,7 @@ export class ItemArmaDao {
   }
 
   async consultarPorId(id: number) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_arma')
       .select('*')
       .eq('id', id)
@@ -39,7 +40,7 @@ export class ItemArmaDao {
   }
 
   async inserir(item: any) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_arma')
       .insert([item]);
 
@@ -51,7 +52,7 @@ export class ItemArmaDao {
   }
 
   async atualizar(id: number, item: any) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_item_arma')
       .update(item)
       .eq('id', id); // onde o id for igual ao que você quer atualizar

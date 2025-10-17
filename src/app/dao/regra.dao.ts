@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SupabaseDao } from './supabase.dao';
+import { GenericRepository} from './generic.repository';
 import { RegraItemSB } from '../model/supamodel/regra.item.sb';
 import { RegraTree } from '@app/model/RegraTree';
 import { Regra } from '@app/model/regra';
@@ -7,12 +7,14 @@ import { Regra } from '@app/model/regra';
 @Injectable({
   providedIn: 'root'
 })
-export class RegraDao {
+export class RegraDao extends GenericRepository<RegraItemSB>{
 
-  constructor(private supabase: SupabaseDao) {}
+  constructor(){
+    super('tb_regra')
+  }
 
   async listar() {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_regra')
       .select('*');
       
@@ -39,7 +41,7 @@ export class RegraDao {
     const idsBanco = regrasBanco.map(r => r.id_regra);
     const regrasParaInclusao = regrasMemoria.filter(r => !idsBanco.includes(r.id_regra) && r.id_item === idItem);
 
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_regra_item')
       .insert(regrasParaInclusao); // ✅ pode ser array de objetos
 
@@ -51,7 +53,7 @@ export class RegraDao {
   }
 
   async recuperaRegrasDoItem(idItem: number) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_regra_item')
       .select('id, id_item, id_regra, tb_regra(nome)')
       .eq('id_item', idItem) as unknown as { data: RegraItemSB[]; error: any };
@@ -65,7 +67,7 @@ export class RegraDao {
   }
 
   async consultarPorId(id: number) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_regra')
       .select('id, nome, descricao')
       .eq('id', id);
@@ -81,7 +83,7 @@ export class RegraDao {
   }
 
   async carregarCombo(id: number) : Promise<Regra[]>{
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_regra')
       .select('id, nome, descricao, sequencia')
       .eq('id', id).eq('e_chave', true)
@@ -100,7 +102,7 @@ export class RegraDao {
   }
 
   async carregarFilhosCombo(id: number, regras: Regra[]): Promise<Regra[]> {
-  const { data, error } = await this.supabase.client!
+  const { data, error } = await this.client!
     .from('tb_regra')
     .select('id, nome, descricao, sequencia, e_chave')
     .eq('id_regra_pai', id);
@@ -125,7 +127,7 @@ export class RegraDao {
 }
 
   async carregarMenusConceito(regra: RegraTree) : Promise<RegraTree>{
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_regra')
       .select('id, nome, descricao, sequencia')
       .eq('id', regra.id)
@@ -140,7 +142,7 @@ export class RegraDao {
   }
 
 async carregarFilhos(regra: RegraTree): Promise<RegraTree> {
-  const { data, error } = await this.supabase.client!
+  const { data, error } = await this.client!
     .from('tb_regra')
     .select('id, nome, descricao, sequencia')
     .eq('id_regra_pai', regra.id);
@@ -163,7 +165,7 @@ async carregarFilhos(regra: RegraTree): Promise<RegraTree> {
 }
 
   async deletarRegrasItens(ids: number[]){
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_regra_item')
       .delete()
       .in('id', ids);

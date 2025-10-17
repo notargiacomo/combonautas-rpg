@@ -1,6 +1,6 @@
+import { Entity } from "./entity.sb";
 
-export class ItemSB {
-  id?: number;
+export interface ItemSB extends Entity{
   id_tipo?: number;
   id_referencia?: number;
   nome?: string;

@@ -1,28 +1,19 @@
 import { Injectable } from '@angular/core';
-import { SupabaseDao } from './supabase.dao';
+import { GenericRepository} from './generic.repository';
 import { PericiaItemSB } from '../model/supamodel/pericia.item.sb';
+import { PericiaSB } from '@app/model/supamodel/pericia.sb';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PericiaDao {
+export class PericiaDao extends GenericRepository<PericiaSB>{
 
-  constructor(private supabase: SupabaseDao) {}
-
-  async listar() {
-    const { data, error } = await this.supabase.client!
-      .from('tb_pericia')
-      .select('*');
-      
-    if (error) {
-      console.error('Erro ao listar itens:', error);
-      throw error;
-    }
-    return data;
+  constructor(){
+    super('tb_pericia')
   }
 
   async recuperaPericiaItem(idItem: number) {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client
       .from('tb_item_pericia')
       .select('id, id_item, id_pericia, tb_pericia(nome)')
       .eq('id_item', idItem) as unknown as { data: PericiaItemSB[]; error: any };
@@ -51,7 +42,7 @@ export class PericiaDao {
     const idsBanco = regrasBanco.map(r => r.id_pericia);
     const regrasParaInclusao = periciasMemoria.filter(r => !idsBanco.includes(r.id_pericia) && r.id_item === idItem);
 
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client
       .from('tb_item_pericia')
       .insert(regrasParaInclusao); // ✅ pode ser array de objetos
 
@@ -60,10 +51,10 @@ export class PericiaDao {
       throw error;
     }
     return data;
-  }
+ }
 
-    async deletarPericiasItens(ids: number[]){
-    const { data, error } = await this.supabase.client!
+  async deletarPericiasItens(ids: number[]){
+    const { data, error } = await this.client
       .from('tb_item_pericia')
       .delete()
       .in('id', ids);

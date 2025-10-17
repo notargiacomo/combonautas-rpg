@@ -1,5 +1,6 @@
-export interface MagiaSB {
-      id?: number;
+import { Entity } from "./entity.sb";
+
+export interface MagiaSB extends Entity{
       id_count?: number;
       id_pai?: number;
       id_referencia?: number;

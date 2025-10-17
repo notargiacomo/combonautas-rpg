@@ -1,6 +1,6 @@
+import { Entity } from "./entity.sb";
 
-export interface PericiaSB {
-      id?: number;
+export interface PericiaSB extends Entity{
       nome?: string;
       atributo?: string;
       descricao?: string;

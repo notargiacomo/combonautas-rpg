@@ -1,6 +1,6 @@
+import { Entity } from "./entity.sb";
 
-export interface ItemAlimentoSB {
-      id?: number;
+export interface ItemAlimentoSB extends Entity {
       id_item_manutencao?: number;
       espaco?: number;
 }

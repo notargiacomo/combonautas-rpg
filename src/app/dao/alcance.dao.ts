@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
-import { SupabaseDao } from './supabase.dao';
+import { GenericRepository } from './generic.repository';
+import { AlcanceSB } from '@app/model/supamodel/alcance.sb';
 
 @Injectable({providedIn: 'root'})
-export class AlcanceDao {
+export class AlcanceDao extends GenericRepository<AlcanceSB>{
 
-  constructor(private supabase: SupabaseDao) {}
+  constructor(){
+    super('tb_alcance')
+  }
 
   async listar() {
-    const { data, error } = await this.supabase.client!
+    const { data, error } = await this.client!
       .from('tb_alcance')
       .select('*');
       

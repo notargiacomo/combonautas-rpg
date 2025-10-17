@@ -1,22 +1,13 @@
 import { Injectable } from '@angular/core';
-import { SupabaseDao } from './supabase.dao';
+import { TipoItemSB } from '@app/model/supamodel/tipo.item.sb';
+import { GenericRepository } from './generic.repository';
 
 @Injectable({
   providedIn: 'root'
 })
-export class TipoItemDao {
+export class TipoItemDao extends GenericRepository<TipoItemSB> {
 
-  constructor(private supabase: SupabaseDao) {}
-
-  async listarTiposItens() {
-    const { data, error } = await this.supabase.client!
-      .from('tb_tipo_item')
-      .select('*');
-      
-    if (error) {
-      console.error('Erro ao listar itens:', error);
-      throw error;
-    }
-    return data;
+  constructor(){
+    super('tb_tipo_item')
   }
 }

@@ -1,5 +1,6 @@
-export interface ItemArmaSB {
-      id?: number;
+import { Entity } from "./entity.sb";
+
+export interface ItemArmaSB extends Entity{
       dano?: string;
       multiplicador_critico?: number;
       margem_ameaca?: number;
