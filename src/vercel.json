@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "SKIP_ROUTE_EXTRACTION": "true"
+    }
+  }
+}
