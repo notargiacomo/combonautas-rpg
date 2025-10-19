@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row mt-4">
-    <mat-card class="cartao">
+  <div class="mt-4">
+    <mat-card class="card-padrao">
       <form [formGroup]="form">
         <div class="row">
           <div class="col-sm-12">
@@ -10,7 +10,7 @@
         </div>
         <div class="row">
           <div class="col-sm-12 mt-4">
-            <mat-form-field class="form-field">
+            <mat-form-field class="form-field text-field-formulario-edicao">
               <mat-label>Ação</mat-label>
               <input
                 formControlName="nome"
@@ -23,8 +23,8 @@
         </div>
       </form>
     </mat-card>
-    <div class="row mt-4">
-      <mat-card class="cartao">
+    <div class="mt-4">
+      <mat-card class="card-padrao">
         <div class="row">
           <div class="d-flex justify-content-end">
             <b>Número de Registros: {{ numero_registros }}</b>
@@ -84,18 +84,18 @@
                 "
               >
                 <div class="container">
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-sm-12">
-                      <h5>TRAÇOS: {{ element.tracos.join(" - ") }}</h5>
+                      <b>TRAÇOS: {{ element.tracos.join(" - ") }}</b>
                       <hr />
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
-                      <h5>RECURSO: {{ element.custo }}</h5>
+                      <b>RECURSO: {{ element.custo }}</b>
                       <hr />
                     </div>
-                  </div>
+                  </div> -->
                   <br />
                   <div class="row">
                     <div

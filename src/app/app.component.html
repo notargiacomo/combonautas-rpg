@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-sm-8">
           <button mat-button (click)="navigateTo('')">Home</button>
-          <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
+          <!--<button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
           <mat-menu #menuPersonagem="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('personagem/racas')">
               Raças
@@ -25,7 +25,7 @@
             <button mat-menu-item (click)="navigateTo('personagem/complicacoes')">
               Complicações
             </button>
-            <button mat-menu-item (click)="navigateTo('personagem/poderes')">
+             <button mat-menu-item (click)="navigateTo('personagem/poderes')">
               Poderes
             </button>
             <button mat-menu-item (click)="navigateTo('personagem/itens')">
@@ -34,38 +34,38 @@
             <button mat-menu-item (click)="navigateTo('personagem/magias')">
               Magias
             </button>
-          </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuCampanha">Campanha</button>
+          </mat-menu> -->
+          <!-- <button mat-button [matMenuTriggerFor]="menuCampanha">Campanha</button>
           <mat-menu #menuCampanha="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('campanha/distincoes')">Distinções</button>
             <button mat-menu-item (click)="navigateTo('campanha/itens-magicos')">Itens Mágicos</button>
             <button mat-menu-item (click)="navigateTo('campanha/parceiros')">Parceiros</button>
-          </mat-menu>
+          </mat-menu> -->
   
           <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
           <mat-menu #menuRegra="matMenu" yPosition="below">
-            <button mat-menu-item (click)="navigateTo('regras/regras')">Regras</button>
+            <!-- <button mat-menu-item (click)="navigateTo('regras/regras')">Regras</button> -->
             <button mat-menu-item (click)="navigateTo('regras/acoes')">Ações</button>
             <button mat-menu-item (click)="navigateTo('regras/condicoes')">
               Condições
             </button>
           </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
+          <!-- <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
           <mat-menu #menuMestre="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('mestre/ameacas')">Ameaças</button>
             <button mat-menu-item (click)="navigateTo('mestre/criando-ameacas')">Criando Ameaças</button>
             <button mat-menu-item (click)="navigateTo('mestre/dashboard')">
               Dashboard
             </button>
-          </mat-menu>
+          </mat-menu> -->
           <button mat-button [matMenuTriggerFor]="menuUtilitarios">
             Utilitários
           </button>
           <mat-menu #menuUtilitarios="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">Cálculo de Desafios</button>
             <button mat-menu-item (click)="navigateTo('utilitarios/personagem-aleatorio')">Personagem Aleatório</button>
-            <button mat-menu-item (click)="navigateTo('utilitarios/ficha')">Ficha</button>
-            <button mat-menu-item (click)="navigateTo('utilitarios/tesouros')">Tesouros</button>
+            <!-- <button mat-menu-item (click)="navigateTo('utilitarios/ficha')">Ficha</button> -->
+            <!-- <button mat-menu-item (click)="navigateTo('utilitarios/tesouros')">Tesouros</button> -->
           </mat-menu>
         </div>
         <div class="col-sm-4">
@@ -73,8 +73,8 @@
               <div class="d-flex justify-content-end">
                 <input *ngIf="form.get('mostrarCamposLogin')?.value" class="me-1" formControlName="login" matInput type="text" name="login" placeholder="login"/>
                 <input *ngIf="form.get('mostrarCamposLogin')?.value" class="me-1" formControlName="senha" matInput type="password" name="senha" placeholder="senha"/>
-                <button class="me-2" *ngIf="!form.get('logado')?.value" (click)="logar()" mat-flat-button>Login</button>
-                <button class="me-2" *ngIf="form.get('logado')?.value" (click)="deslogar()" mat-flat-button>Logout</button>
+                <button  *ngIf="!form.get('logado')?.value" (click)="logar()" mat-flat-button>Login</button>
+                <button  *ngIf="form.get('logado')?.value" (click)="deslogar()" mat-flat-button>Logout</button>
               </div>
           </form>
           </div>

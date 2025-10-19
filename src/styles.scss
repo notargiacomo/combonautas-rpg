@@ -1,24 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
 
 html,
 body {
-  width: 100% !important;
-  background-color: rgb(
-    25,
-    20,
-    40
-  ) !important; /* Define o fundo como a cor dominante */
-  height: 100%;
+  width: 100% !important; /* Define percentual de uso de largura da terra */
+  height: 100%; /* Define percentual de uso de altura da terra */
+  background-color: rgb(25, 20, 40) !important; /* Define o fundo como a cor dominante */
   font-family: "Oswald" !important;
   margin: 0;
   font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
   font-style: normal; /* Pode ser 'italic' ou outros estilos */
-  font-size: 10pt !important;
+  font-size: 10pt !important; /* Tamanho padrão da fonte */
 }
+
 header,
 .cabecalho {
-  width: 100% !important;
-  height: 30% !important; /* Você pode ajustar a altura como preferir */
+  width: 100% !important; /* Define percentual de comprimento do header preferir */
+  height: 30% !important; /* Define percentual de altura do header preferir */
   background-image: url("assets/img/banner_combonautas_definitivo.jpg") !important; /* Substitua pelo caminho da sua imagem */
   max-height: 30% !important;
   background-size: cover !important;
@@ -28,6 +25,7 @@ header,
   border-bottom: 5px solid rgb(120, 80, 160); /* Moldura */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
+  font-family: "Oswald" !important;
 
   @media (max-width: 768px) {
     background-image: url("assets/img/preview-combonautas.png") !important;
@@ -37,51 +35,6 @@ header,
 
 p {
   text-align: justify !important;
-}
-
-.mat-tree-node {
-  button {
-    margin-left: 10px !important;
-  }
-  a {
-    margin-left: 10px !important;
-  }
-  background-color: rgb(240, 230, 245) !important;
-  font-family: "Oswald" !important;
-  font-weight: normal !important; /* Pode ser 'bold' ou outros valores se necessário */
-  font-style: normal !important; /* Pode ser 'italic' ou outros estilos */
-  font-size: 10pt !important;
-  background: rgb(45, 35, 60) !important;
-  color: white !important;
-  margin-top: 1% !important;
-  border-radius: 10px; /* Arredonda os cantos */
-  overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
-}
-
-.mat-expansion-panel-header:not([aria-disabled=true]){
-  padding-left: 0px;
-}
-
-
-.titulo_tormenta20 {
-  width: 50% !important;
-  height: 15% !important; /* Você pode ajustar a altura como preferir */
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-right: 10%;
-  margin-right: 10%;
-}
-
-.titulo_combonautas {
-  width: 50% !important;
-  height: auto !important; /* Você pode ajustar a altura como preferir */
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-right: 10%;
-  margin-right: 10%;
 }
 
 h2,
@@ -99,180 +52,6 @@ b {
   text-align: center !important;
 }
 
-.card-padrao {
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-}
-
-.botao-cartao-apresentacao {
-  margin-top: 15px !important;
-}
-
-.interior-cartao {
-  border-radius: 10px; /* Arredonda os cantos */
-  overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
-  margin-bottom: 10px !important;
-  text-align: justify;
-  // display: flex;
-}
-
-.mat-mdc-button {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-  border: 1px solid rgb(120, 80, 160); /* Moldura */
-  background-color: rgb(45, 35, 60) !important;
-  cursor: pointer !important;
-}
-
-.mat-mdc-snack-bar-container .mdc-snackbar__label {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-  border: 1px solid rgb(120, 80, 160); /* Moldura */
-  background-color: rgb(45, 35, 60) !important;
-}
-
-.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
-  background-color: rgb(45, 35, 60) !important;
-  padding-right: 0px !important;
-}
-
-.mat-mdc-select {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-  background-color: white !important;
-  border-radius: 4px !important;
-}
-
-.select-dobrado {
-  .mat-mdc-select {
-    font-family: "Oswald" !important;
-    font-size: 10pt !important;
-    background-color: white !important;
-    border-radius: 4px !important;
-  }
-  width: 300px !important;
-}
-
-.mat-mdc-option {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mdc-floating-label {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-mdc-icon-button[disabled],
-.mat-mdc-icon-button.mat-mdc-button-disabled {
-  background-color: lightgrey !important;
-}
-
-.mat-mdc-menu-item-text {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-internal-form-field {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-mdc-header-row {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-mdc-unelevated-button {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-mdc-row {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-  height: var(--mat-table-row-item-container-height, 20px) !important;
-}
-
-.mat-expansion-panel-header {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-expansion-panel-content {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-mdc-card-title {
-  font-weight: bold !important;
-  padding: 10px !important;
-  // font-family: "Source Sans 3", serif !important;
-  font-family: "Oswald" !important;
-  font-size: 20pt !important;
-  color: white;
-  background-color: rgb(45, 35, 60);
-}
-
-.mat-grid-tile-content {
-  margin: 0px !important;
-}
-
-.mat-mdc-card-content .mdc-tab__text-label {
-  color: white !important;
-}
-
-.mat-mdc-card-content .mat-mdc-tab-header {
-  border-radius: 10px !important; /* Arredonda os cantos */
-  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  background-color: rgb(45, 35, 60);
-  color: white !important;
-}
-
-.mat-mdc-card {
-  background-color: rgb(240, 230, 245) !important;
-}
-
-.mat-mdc-card-subtitle {
-  font-weight: bold !important;
-  text-align: center !important;
-}
-
-.mat-mdc-card-title,
-.mat-mdc-card-subtitle {
-  text-align: center !important;
-}
-
-.titulo-cartao-apresentacao .mat-mdc-card-subtitle {
-  text-align: center !important;
-
-  background-color: rgb(120, 80, 160) !important;
-  color: rgb(240, 240, 245) !important;
-  max-height: 600px !important; /* Defina a altura máxima do card */
-  overflow-y: auto !important; /* Habilita o scroll vertical */
-  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
-}
-
-.mat-mdc-card-title, .mat-mdc-card-subtitle {
-  display: block;
-  margin: 0;
-  background-color: rgb(45, 35, 60) !important;
-  color: rgb(240, 240, 245) !important;
-  max-height: 600px !important; /* Defina a altura máxima do card */
-  overflow-y: auto !important; /* Habilita o scroll vertical */
-  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
-  padding-bottom: 0.5rem !important;
-}
-
-.mat-mdc-card-content {
-  background-color: rgb(120, 80, 160) !important;
-  color: rgb(240, 240, 245) !important;
-  max-height: 600px !important; /* Defina a altura máxima do card */
-  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
-  overflow-y: inherit !important;
-}
-
 img {
   max-width: 400px; /* Largura máxima da imagem */
   max-height: 400px; /* Altura máxima da imagem */
@@ -284,84 +63,22 @@ img {
   background-color: white; /* Fundo da moldura */
 }
 
-.mat-mdc-card-content table {
+textarea {
+  border-radius: 8px !important;
+}
+
+table {
+  width: 100% !important;
+  max-width: 100% !important;
   border-collapse: collapse;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.mat-mdc-card-content th,
-td {
-  padding: 12px 15px;
-  color: #000;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-
-.mat-mdc-card-content th {
-  background-color: #f4f4f4;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.mat-mdc-card-content tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.mat-mdc-card-content tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-.mat-mdc-card-content tr:hover {
-  background-color: #f1f1f1;
-}
-
-.mat-mdc-card-content b {
-  color: rgb(240, 240, 245) !important;
-}
-
-.mat-mdc-card-content img {
-  background: rgb(240, 240, 245) !important;
-}
-
-.mat-mdc-card-content hr {
-  border: none !important; /* Remove estilos padrão */
-  border-top: 2px solid rgb(240, 240, 245) !important; /* Define a cor e a altura */
-  border-radius: 10px !important; /* Arredonda os cantos */
-  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  opacity: 1 !important;
-}
-
-.mat-icon {
-  cursor: pointer !important;
-  margin-left: 5% !important;
-}
-
-.no-arvore {
-  button {
-    margin-left: 5px !important;
-    padding-left: 5px !important;
-  }
-  cursor: pointer !important;
-  border: none !important; /* Remove estilos padrão */
-  border-top: 2px solid rgb(240, 230, 245) !important; /* Define a cor e a altura */
-  border-radius: 10px !important; /* Arredonda os cantos */
-  background-color: rgb(240, 230, 245) !important;
-}
-
-.card-padrao .card-padrao-arvore {
-  background-color: rgb(45, 35, 60) !important; /* Cinza claro */
-  color: rgb(255, 255, 255) !important;
 }
 
 button[mat-flat-button] {
   text-transform: uppercase; /* Deixa o texto em maiúsculas */
   font-size: 0.75rem; /* Reduz o tamanho da fonte */
   padding: 0.4rem 0.8rem; /* Ajusta o espaçamento interno */
-  background-color: #e0e0e0; /* Define uma cor de fundo diferente */
-  color: #333; /* Define a cor do texto */
+  background-color: #e0e0e0 !important; /* Define uma cor de fundo diferente */
+  color: #333 !important; /* Define a cor do texto */
   border-radius: 5px; /* Suaviza os cantos */
   transition: background-color 0.3s ease; /* Anima a mudança de cor */
   border: 1px solid rgb(120, 80, 160); /* Moldura */
@@ -371,20 +88,28 @@ button[mat-flat-button]:hover {
   background-color: #c8c8c8; /* Cor de fundo ao passar o mouse */
 }
 
-.content-cartao-condicoes {
-  height: 250px !important;
+.card-padrao {
+  width: 100% !important;
+  padding: 10px !important;
+  margin: 10px !important;
 }
 
-.mdc-button__label {
-  color: rgb(240, 240, 245);
+.mat-mdc-card {
+  background-color: rgb(240, 230, 245) !important;
 }
 
-.mat-mdc-unelevated-button:not(:disabled) {
-  color: var(
-    --mdc-filled-button-label-text-color,
-    var(--mat-sys-on-primary)
-  ) !important;
+.mat-icon {
+  cursor: pointer !important;
+  margin-left: 5% !important;
+}
+
+.mat-mdc-button {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
+  border: 1px solid rgb(120, 80, 160); /* Moldura */
   background-color: rgb(45, 35, 60) !important;
+  color: rgb(240, 240, 245) !important;
+  cursor: pointer !important;
 }
 
 .mat-mdc-button-disabled {
@@ -392,247 +117,9 @@ button[mat-flat-button]:hover {
   color: white !important;
 }
 
-.content-cartao-itens {
-  height: 500px !important;
-}
-
-.mat-mdc-tab-body-content {
-  overflow: hidden !important;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-tr.detail-row {
-  height: 0;
-}
-
-tr.element-row:not(.expanded-row):hover {
-  background: whitesmoke;
-}
-
-tr.element-row:not(.expanded-row):active {
-  background: #efefef;
-}
-
-.element-row td {
-  border-bottom-width: 0;
-}
-
-.element-symbol {
-  font-weight: bold !important;
-  font-size: 40px !important;
-  line-height: normal !important;
-}
-
-.element-description-attribution {
-  opacity: 0.5 !important;
-}
-
-.mat-mdc-tab {
+.mat-mdc-select {
   font-family: "Oswald" !important;
   font-size: 10pt !important;
-  --mat-sys-primary: grey !important;
-}
-
-.mat-mdc-menu-content,
-.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
-  font-family: "Oswald" !important;
-  font-size: 10pt !important;
-}
-
-.mat-mdc-dialog-surface {
-  border: 2px solid rgb(120, 80, 160);
-  background-color: rgb(25, 20, 40) !important;
-  border-radius: 16px !important; /* Arredondamento */
-  padding: 16px !important;
-  // max-height: 150% !important ;          /* Espaçamento interno */
-  height: 150% !important;
-  max-width: 200% !important;
-  width: 200% !important;
-  align-content: center !important;
-  align-self: center !important;
-}
-
-.cdk-global-overlay-wrapper {
-  display: flow-root !important;
-}
-
-.mat-mdc-dialog-surface {
-  max-height: 600px !important;
-  width: 1000px !important;
-  max-width: 500% !important;
-  height: 550px !important;
-  margin-top: 17% !important;
-  margin-left: 33% !important;
-}
-
-.mat-mdc-dialog-surface b {
-  color: black ;
-  font-family: "Oswald" ;
-}
-
-.mat-mdc-dialog-container .card-padrao {
-  border-radius: 0px !important;
-  border: 2px solid rgb(120, 80, 160);
-}
-
-.mat-mdc-dialog-surface .card-padrao {
-  background-color: rgb(240, 230, 245) !important;
-  color: white !important;
-  /* Arredondamento */
-  padding: 16px !important; /* Espaçamento interno */
-}
-
-.mat-mdc-dialog-container {
-  max-height: 500px !important;
-  max-width: 1000px !important;
-}
-
-.mat-mdc-dialog-content {
-  // border-radius: 16px !important;
-  border: 2px solid rgb(120, 80, 160);
-  background-color: rgb(240, 230, 245) !important;
-}
-
-.mat-mdc-dialog-container .mat-mdc-dialog-title {
-  height: 15% !important;
-  font-size: 40px !important ;
-}
-
-.mat-mdc-dialog-surface table {
-  border-collapse: collapse !important;
-  width: 100% !important;
-  background-color: #fff !important;
-  border: 1px solid #ddd !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-}
-
-table {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-tr.detail-row {
-  height: 0;
-}
-
-tr.element-row:not(.example-expanded-row):hover {
-  background: whitesmoke;
-}
-
-tr.element-row:not(.example-expanded-row):active {
-  background: #efefef;
-}
-
-.element-row td {
-  border-bottom-width: 0;
-}
-
-.element-detail {
-  overflow: hidden;
-  display: block !important;
-}
-
-.element-detail-wrapper {
-  overflow: hidden !important;
-  display: grid !important;
-  grid-template-rows: 0fr !important;
-  grid-template-columns: 100% !important;
-  transition: grid-template-rows 225ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.element-detail-wrapper-expanded {
-  grid-template-rows: 1fr !important;
-}
-
-.element-symbol {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: normal;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.element-description-attribution {
-  opacity: 0.5;
-}
-
-.cartao {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.divisao-filtro {
-  padding: 16px;
-  width: 30%;
-}
-
-.divisao-tabela {
-  padding: 16px;
-  width: 70%;
-}
-
-.mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
-  background-color: white;
-}
-
-.mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table {
-  height: 0px !important; min-height: 0px !important; max-height: 0px !important;
-}
-
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  margin: 1% !important;
-  max-width: 98% !important;
-}
-
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl .container-ficha {
-  margin: 1% !important;
-  max-width: 98% !important;
-}
-
-.zebra td {
-  background-color: rgb(45, 35, 60) !important; /* Cinza claro */
-  color: rgb(255, 255, 255) !important;
-}
-
-.zebra .mat-icon {
-  color: rgb(255, 255, 255) !important;
-}
-
-.mat-mdc-table th {
-  background-color: rgb(45, 35, 60) !important;
-  color: rgb(255, 255, 255) !important;
-}
-
-.custom-dialog-container {
-  display: flex !important;
-}
-
-.mat-mdc-form-field-infix{
-  width: 150px !important;
-  font-family: "Oswald" !important;
-}
-
-.mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
   background-color: white !important;
   border-radius: 4px !important;
 }
@@ -642,28 +129,6 @@ tr.element-row:not(.example-expanded-row):active {
     background-color: white !important;
   }
 }
-
-.mat-mdc-select {
-  background-color: white !important;
-  border-radius: 4px !important;
-}
-
-.select-formulario-edicao {
-  .mat-mdc-select {
-    background-color: white !important;
-    border-radius: 4px !important;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-  }
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 98% !important;
-    padding-top: 0%;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-}
-
 
 .text-field-formulario-edicao {
   .mdc-text-field {
@@ -682,31 +147,472 @@ tr.element-row:not(.example-expanded-row):active {
   max-width: 100% !important;
 }
 
-.mat-mdc-tab-header {
-  border-bottom: 2px solid #bfa7d7 !important;
-  color: #5a3e69 !important;
-  background-color: rgba(255, 255, 255, 0.12) !important;
+// titulo flutuante do campo de texto
+.mdc-floating-label {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
 }
 
-.checkbox-wrapper {
-  display: block !important;
-  width: 100% !important;
-  background-color: white !important;
-  border: 1px solid rgba(0, 0, 0, 0.23) !important;
-  border-radius: 4px !important;
-  padding: 0.5rem 0.5rem !important;
-  margin-right: 5rem !important;
-  box-sizing: border-box !important;
-  // Isso garante que o mat-checkbox fique alinhado corretamente
-  display: flex !important;
-  align-items: center !important;
+// cabeçalho da tabela
+.mat-mdc-header-row {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
 }
 
-::ng-deep .mat-mdc-form-field-infill {
-  border-radius: 8px !important; // ou 4px se quiser mais sutil
+// linha da tabela
+.mat-mdc-row {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
+  height: var(--mat-table-row-item-container-height, 20px) !important;
 }
 
-textarea {
-  border-radius: 8px !important;
+// cabeçalho do painel expandido
+.mat-expansion-panel-header {
+  font-family: "Oswald" !important;
+  font-size: 9pt !important;
 }
+
+// corpo do painel expandido
+.mat-expansion-panel-content {
+  font-family: "Oswald" !important;
+  font-size: 7pt !important;
+}
+
+
+
+// .mat-expansion-panel-header:not([aria-disabled=true]){
+//   padding-left: 0px;
+// }
+
+// .botao-cartao-apresentacao {
+//   margin-top: 15px !important;
+// }
+
+// .interior-cartao {
+//   border-radius: 10px; /* Arredonda os cantos */
+//   overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
+//   margin-bottom: 10px !important;
+//   text-align: justify;
+//   // display: flex;
+// }
+
+
+
+// .mat-mdc-snack-bar-container .mdc-snackbar__label {
+//   font-family: "Oswald" !important;
+//   font-size: 10pt !important;
+//   border: 1px solid rgb(120, 80, 160); /* Moldura */
+//   background-color: rgb(45, 35, 60) !important;
+// }
+
+// .mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
+//   background-color: rgb(45, 35, 60) !important;
+//   padding-right: 0px !important;
+// }
+
+
+
+// .select-dobrado {
+//   .mat-mdc-select {
+//     font-family: "Oswald" !important;
+//     font-size: 10pt !important;
+//     background-color: white !important;
+//     border-radius: 4px !important;
+//   }
+//   width: 300px !important;
+// }
+
+// .mat-mdc-option {
+//   font-family: "Oswald" !important;
+//   font-size: 10pt !important;
+// }
+
+
+
+.mat-mdc-icon-button[disabled],
+.mat-mdc-icon-button.mat-mdc-button-disabled {
+  background-color: lightgrey !important;
+}
+
+// .mat-mdc-menu-item-text {
+//   font-family: "Oswald" !important;
+//   font-size: 10pt !important;
+// }
+
+// .mat-internal-form-field {
+//   font-family: "Oswald" !important;
+//   font-size: 10pt !important;
+// }
+
+
+
+.mat-mdc-unelevated-button {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
+}
+
+
+
+// .mat-mdc-card-title {
+//   font-weight: bold !important;
+//   padding: 10px !important;
+//   // font-family: "Source Sans 3", serif !important;
+//   font-family: "Oswald" !important;
+//   font-size: 20pt !important;
+//   color: white;
+//   background-color: rgb(45, 35, 60);
+// }
+
+// .mat-grid-tile-content {
+//   margin: 0px !important;
+// }
+
+// .mat-mdc-card-content .mdc-tab__text-label {
+//   color: white !important;
+// }
+
+// .mat-mdc-card-content .mat-mdc-tab-header {
+//   border-radius: 10px !important; /* Arredonda os cantos */
+//   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+//   background-color: rgb(45, 35, 60);
+//   color: white !important;
+// }
+
+
+
+// .mat-mdc-card-subtitle {
+//   font-weight: bold !important;
+//   text-align: center !important;
+// }
+
+// .mat-mdc-card-title,
+// .mat-mdc-card-subtitle {
+//   text-align: center !important;
+// }
+
+// .titulo-cartao-apresentacao .mat-mdc-card-subtitle {
+//   text-align: center !important;
+
+//   background-color: rgb(120, 80, 160) !important;
+//   color: rgb(240, 240, 245) !important;
+//   max-height: 600px !important; /* Defina a altura máxima do card */
+//   overflow-y: auto !important; /* Habilita o scroll vertical */
+//   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+// }
+
+// .mat-mdc-card-title, .mat-mdc-card-subtitle {
+//   display: block;
+//   margin: 0;
+//   background-color: rgb(45, 35, 60) !important;
+//   color: rgb(240, 240, 245) !important;
+//   max-height: 600px !important; /* Defina a altura máxima do card */
+//   overflow-y: auto !important; /* Habilita o scroll vertical */
+//   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+//   padding-bottom: 0.5rem !important;
+// }
+
+// .mat-mdc-card-content {
+//   background-color: rgb(120, 80, 160) !important;
+//   color: rgb(240, 240, 245) !important;
+//   max-height: 600px !important; /* Defina a altura máxima do card */
+//   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+//   overflow-y: inherit !important;
+// }
+
+
+
+// .mat-mdc-card-content table {
+//   border-collapse: collapse;
+//   width: 100%;
+//   background-color: #fff;
+//   border: 1px solid #ddd;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// .mat-mdc-card-content th,
+// td {
+//   padding: 12px 15px;
+//   color: #000;
+//   text-align: center;
+//   border: 1px solid #ddd;
+// }
+
+// .mat-mdc-card-content th {
+//   background-color: #f4f4f4;
+//   font-size: 1.2em;
+//   font-weight: bold;
+// }
+
+// .mat-mdc-card-content tr:nth-child(even) {
+//   background-color: #f9f9f9;
+// }
+
+// .mat-mdc-card-content tr:nth-child(odd) {
+//   background-color: #ffffff;
+// }
+
+// .mat-mdc-card-content tr:hover {
+//   background-color: #f1f1f1;
+// }
+
+// .mat-mdc-card-content b {
+//   color: rgb(240, 240, 245) !important;
+// }
+
+// .mat-mdc-card-content img {
+//   background: rgb(240, 240, 245) !important;
+// }
+
+// .mat-mdc-card-content hr {
+//   border: none !important; /* Remove estilos padrão */
+//   border-top: 2px solid rgb(240, 240, 245) !important; /* Define a cor e a altura */
+//   border-radius: 10px !important; /* Arredonda os cantos */
+//   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+//   opacity: 1 !important;
+// }
+
+// .card-padrao .card-padrao-arvore {
+//   background-color: rgb(45, 35, 60) !important; /* Cinza claro */
+//   color: rgb(255, 255, 255) !important;
+// }
+
+
+
+
+
+// .content-cartao-condicoes {
+//   height: 250px !important;
+// }
+
+// .mat-mdc-unelevated-button:not(:disabled) {
+//   color: var(
+//     --mdc-filled-button-label-text-color,
+//     var(--mat-sys-on-primary)
+//   ) !important;
+//   background-color: rgb(45, 35, 60) !important;
+// }
+
+
+
+// .content-cartao-itens {
+//   height: 500px !important;
+// }
+
+// .mat-mdc-tab-body-content {
+//   overflow: hidden !important;
+// }
+
+// tr.detail-row {
+//   height: 0;
+// }
+
+// tr.element-row:not(.expanded-row):hover {
+//   background: whitesmoke;
+// }
+
+// tr.element-row:not(.expanded-row):active {
+//   background: #efefef;
+// }
+
+// .element-row td {
+//   border-bottom-width: 0;
+// }
+
+// .element-symbol {
+//   font-weight: bold !important;
+//   font-size: 40px !important;
+//   line-height: normal !important;
+// }
+
+// .element-description-attribution {
+//   opacity: 0.5 !important;
+// }
+
+// .mat-mdc-tab {
+//   font-family: "Oswald" !important;
+//   font-size: 10pt !important;
+//   --mat-sys-primary: grey !important;
+// }
+
+// .mat-mdc-menu-content,
+// .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+//   font-family: "Oswald" !important;
+//   font-size: 10pt !important;
+// }
+
+
+
+tr.detail-row {
+  height: 0;
+}
+
+// tr.element-row:not(.example-expanded-row):hover {
+//   background: whitesmoke;
+// }
+
+// tr.element-row:not(.example-expanded-row):active {
+//   background: #efefef;
+// }
+
+// .element-row td {
+//   border-bottom-width: 0;
+// }
+
+// .element-detail {
+//   overflow: hidden;
+//   display: block !important;
+// }
+
+// .element-detail-wrapper {
+//   overflow: hidden !important;
+//   display: grid !important;
+//   grid-template-rows: 0fr !important;
+//   grid-template-columns: 100% !important;
+//   transition: grid-template-rows 225ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+// }
+
+// .element-detail-wrapper-expanded {
+//   grid-template-rows: 1fr !important;
+// }
+
+// .element-symbol {
+//   font-weight: bold;
+//   font-size: 40px;
+//   line-height: normal;
+// }
+
+// .text-justify {
+//   text-align: justify;
+// }
+
+// .element-description-attribution {
+//   opacity: 0.5;
+// }
+
+// .cartao {
+//   width: 100%;
+//   padding: 10px;
+//   margin-top: 10px;
+//   margin-bottom: 5px;
+// }
+
+// .divisao-filtro {
+//   padding: 16px;
+//   width: 30%;
+// }
+
+// .divisao-tabela {
+//   padding: 16px;
+//   width: 70%;
+// }
+
+// .mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
+//   background-color: white;
+// }
+
+// .mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table {
+//   height: 0px !important; min-height: 0px !important; max-height: 0px !important;
+// }
+
+// .container,
+// .container-fluid,
+// .container-lg,
+// .container-md,
+// .container-sm,
+// .container-xl,
+// .container-xxl {
+//   margin: 1% !important;
+//   max-width: 98% !important;
+// }
+
+// .container,
+// .container-fluid,
+// .container-lg,
+// .container-md,
+// .container-sm,
+// .container-xl,
+// .container-xxl .container-ficha {
+//   margin: 1% !important;
+//   max-width: 98% !important;
+// }
+
+// .zebra td {
+//   background-color: rgb(45, 35, 60) !important; /* Cinza claro */
+//   color: rgb(255, 255, 255) !important;
+// }
+
+// .zebra .mat-icon {
+//   color: rgb(255, 255, 255) !important;
+// }
+
+// .mat-mdc-table th {
+//   background-color: rgb(45, 35, 60) !important;
+//   color: rgb(255, 255, 255) !important;
+// }
+
+// .custom-dialog-container {
+//   display: flex !important;
+// }
+
+// .mat-mdc-form-field-infix{
+//   width: 150px !important;
+//   font-family: "Oswald" !important;
+// }
+
+// .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
+//   background-color: white !important;
+//   border-radius: 4px !important;
+// }
+
+
+
+// .mat-mdc-select {
+//   background-color: white !important;
+//   border-radius: 4px !important;
+// }
+
+// .select-formulario-edicao {
+//   .mat-mdc-select {
+//     background-color: white !important;
+//     border-radius: 4px !important;
+//     border-bottom-right-radius: 4px;
+//     border-bottom-left-radius: 4px;
+//   }
+//     width: 100% !important;
+//     max-width: 100% !important;
+//     height: 98% !important;
+//     padding-top: 0%;
+//     margin-bottom: 0%;
+//     padding-bottom: 0%;
+//     margin-bottom: 0%;
+// }
+
+
+
+
+// .mat-mdc-tab-header {
+//   border-bottom: 2px solid #bfa7d7 !important;
+//   color: #5a3e69 !important;
+//   background-color: rgba(255, 255, 255, 0.12) !important;
+// }
+
+// .checkbox-wrapper {
+//   display: block !important;
+//   width: 100% !important;
+//   background-color: white !important;
+//   border: 1px solid rgba(0, 0, 0, 0.23) !important;
+//   border-radius: 4px !important;
+//   padding: 0.5rem 0.5rem !important;
+//   margin-right: 5rem !important;
+//   box-sizing: border-box !important;
+//   // Isso garante que o mat-checkbox fique alinhado corretamente
+//   display: flex !important;
+//   align-items: center !important;
+// }
+
+// ::ng-deep .mat-mdc-form-field-infill {
+//   border-radius: 8px !important; // ou 4px se quiser mais sutil
+// }
+
+
  
