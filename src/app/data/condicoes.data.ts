@@ -12,7 +12,7 @@ export const condicoes = [
     id: 2,
     nome: 'AGARRADO',
     descricao:
-      '. O personagem fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Ataques à distância contra um alvo envolvido em uma manobra agarrar têm 50% de chance de acertar o alvo errado.',
+      'O personagem fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Ataques à distância contra um alvo envolvido em uma manobra agarrar têm 50% de chance de acertar o alvo errado.',
     tipo: TipoCondicao.MOVIMENTO,
   },
   {

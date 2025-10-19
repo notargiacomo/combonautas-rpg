@@ -1,15 +1,16 @@
 <div class="container">
-  <mat-card class="card-padrao">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2><b>CONDIÇÕES</b></h2>
-        <hr>
-      </div>
-    </div>
-    <form [formGroup]="form">
+  <div class="mt-4">
+    <mat-card class="card-padrao">
+      <form [formGroup]="form">
       <div class="row" >
-        <div class="col-sm-6 mt-4">
-          <mat-form-field class="form-field">
+        <div class="col-sm-12 mt-4">
+          <div class="row">
+          <div class="col-sm-12">
+            <h2><b>CONDIÇÕES</b></h2>
+            <hr>
+          </div>
+        </div>
+          <mat-form-field class="form-field text-field-formulario-edicao">
             <mat-label>Condição</mat-label>
             <input formControlName="nome"
               matInput
@@ -20,6 +21,10 @@
         </div>
       </div>
     </form>
+    </mat-card>
+  </div>
+  <mat-card class="card-padrao">
+    
     <div class="col-sm-12 mt-4">
       <div class="d-flex justify-content-end">
         <b>Número de Registros: {{ numero_registros }}</b>

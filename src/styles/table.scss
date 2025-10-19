@@ -1,0 +1,43 @@
+
+// cabeçalho da tabela
+.mat-mdc-header-row {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
+  background-color: rgb(45, 35, 60) !important;
+  color: rgb(255, 255, 255) !important;
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+}
+
+// linha da tabela
+.mat-mdc-row {
+  font-family: "Oswald" !important;
+  font-size: 10pt !important;
+  height: 0px !important; 
+  min-height: 0px !important; 
+  max-height: 0px !important;
+}
+
+.mat-mdc-tab-header {
+  border-bottom: 2px solid #bfa7d7 !important;
+  color: #5a3e69 !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+
+}
+
+// Cabeçalho da Tabela
+.mat-mdc-header-row {
+  background-color: rgb(45, 35, 60) !important;
+  color: rgb(255, 255, 255) !important;
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+}
+
+.zebra td {
+  background-color: rgb(45, 35, 60) !important; /* Cinza claro */
+  color: rgb(255, 255, 255) !important;
+}
+
+.zebra .mat-icon {
+  color: rgb(255, 255, 255) !important;
+}

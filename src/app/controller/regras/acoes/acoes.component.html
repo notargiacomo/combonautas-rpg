@@ -33,7 +33,7 @@
         <br />
         <table
           mat-table
-          [dataSource]="acoes"
+          [dataSource]="dataSource"
           multiTemplateDataRows
           class="mat-elevation-z8"
         >
@@ -46,14 +46,14 @@
             >
               {{ column }}
             </th>
-            <td mat-cell *matCellDef="let element">{{ element[column] }}</td>
+            <td mat-cell *matCellDef="let element" style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;">{{ element[column] }}</td>
           </ng-container>
           }
           <ng-container matColumnDef="expand">
             <th mat-header-cell *matHeaderCellDef aria-label="row actions">
               &nbsp;
             </th>
-            <td mat-cell *matCellDef="let element">
+            <td mat-cell *matCellDef="let element" style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;">
               <button
                 mat-icon-button
                 aria-label="expand row"
@@ -76,6 +76,7 @@
               mat-cell
               *matCellDef="let element"
               [attr.colspan]="columnsToDisplayWithExpand.length"
+              style="height: 0px !important; min-height: 0px !important; max-height: 0px !important;"
             >
               <div
                 class="element-detail"
@@ -109,20 +110,11 @@
           </ng-container>
 
           <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
-          <tr
-            mat-row
-            *matRowDef="let element; columns: columnsToDisplayWithExpand"
-            class="element-row"
-            [class.expanded-row]="expandedElement === element"
-            (click)="
-              expandedElement = expandedElement === element ? null : element
-            "
-          ></tr>
-          <tr
-            mat-row
-            *matRowDef="let row; columns: ['expandedDetail']"
-            class="detail-row"
-          ></tr>
+          <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;" class="example-element-row"
+            [ngClass]="{'zebra': isOdd(element)}" [class.example-expanded-row]="isExpanded(element)"
+            (click)="toggle(element)">
+          </tr>
+          <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
         </table>
       </mat-card>
     </div>
