@@ -18,8 +18,7 @@ import { PoderService } from '@app/service/poder.service';
 
 @Component({
   selector: 'app-personagem-aleatorio',
-  imports: [MatDividerModule, MatCardModule, MatButtonModule, MatExpansionModule, MatDatepickerModule, MatTabsModule,
-      NgIf, NgFor],
+  imports: [MatDividerModule, MatCardModule, MatButtonModule, MatExpansionModule, MatDatepickerModule, MatTabsModule],
   templateUrl: './personagem-aleatorio.component.html',
   styleUrl: './personagem-aleatorio.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

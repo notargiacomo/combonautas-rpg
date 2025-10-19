@@ -109,7 +109,7 @@ export class CalculoDesafiosComponent implements OnInit {
 @Component({
   selector: 'dialog-elements-example-dialog',
   templateUrl: 'dialog-elements-example-dialog.html',
-  imports: [MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose, MatDialogActions, MatButtonModule, MatCardModule],
+  imports: [MatDialogContent, MatDialogActions, MatDialogClose, MatDialogActions, MatButtonModule, MatCardModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DialogElementsExampleDialog {}
