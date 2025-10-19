@@ -3,5 +3,6 @@
     "env": {
       "SKIP_ROUTE_EXTRACTION": "true"
     }
-  }
+  },
+  "framework": "vite"
 }
