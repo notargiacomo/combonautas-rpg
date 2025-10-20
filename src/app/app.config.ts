@@ -16,11 +16,11 @@ import {
 } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-// import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { provideEnvironmentNgxLoaderIndicator } from 'ngx-loader-indicator';
 import { routes } from './app.routes';
 import { LoaderInterceptor } from './conf/core/loader-interceptor';
-// import { InMemoryDataService } from './data/in-memory-data.service';
+import { InMemoryDataService } from './data/in-memory-data.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -35,14 +35,14 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withComponentInputBinding()),
     // provideClientHydration(withEventReplay()),
     provideAnimationsAsync(),
-    // importProvidersFrom(
-    //   FormsModule,
-    //   InMemoryWebApiModule.forRoot(InMemoryDataService, {
-    //     passThruUnknownUrl: true,
-    //     dataEncapsulation: false,
-    //     delay: 1000,
-    //   })
-    // ),
+    importProvidersFrom(
+      FormsModule,
+      InMemoryWebApiModule.forRoot(InMemoryDataService, {
+        passThruUnknownUrl: true,
+        dataEncapsulation: false,
+        delay: 1000,
+      })
+    ),
     provideAnimations(),
     provideEnvironmentNgxLoaderIndicator(),
     { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },

@@ -250,7 +250,7 @@ button[mat-flat-button]:hover {
 
 .mat-mdc-unelevated-button:not(:disabled) {
   color: var(
-    --mdc-filled-button-label-text-color,
+    --mat-button-filled-label-text-color,
     var(--mat-sys-on-primary)
   ) !important;
   background-color: rgb(45, 35, 60) !important;
