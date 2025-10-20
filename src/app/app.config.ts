@@ -25,11 +25,6 @@ import { InMemoryDataService } from './data/in-memory-data.service';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideAnimationsAsync(),
-    // providePrimeNG({
-    //   theme: {
-    //     preset: Aura,
-    //   },
-    // }),
     provideHttpClient(withFetch()),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes, withComponentInputBinding()),
