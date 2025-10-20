@@ -15,8 +15,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { Router } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
-import { DialogModule } from 'primeng/dialog';
+// import { ButtonModule } from 'primeng/button';
+// import { DialogModule } from 'primeng/dialog';
 import { MagiaService } from '@app/service/magia.service'; 
 import { PericiasService } from '@app/service/pericia.service';
 
@@ -25,7 +25,7 @@ import { PericiasService } from '@app/service/pericia.service';
   imports: [
     MatCardModule,
     MatDividerModule,
-    ButtonModule,
+    // ButtonModule,
     MatButtonModule,
     ReactiveFormsModule,
     MatIconModule,
@@ -39,7 +39,7 @@ import { PericiasService } from '@app/service/pericia.service';
     MatProgressBarModule,
     MatTabsModule,
     MatDatepickerModule,
-    DialogModule
+    // DialogModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
