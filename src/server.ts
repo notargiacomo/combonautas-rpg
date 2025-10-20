@@ -29,13 +29,13 @@ const angularApp = new AngularNodeAppEngine();
 /**
  * Serve static files from /browser
  */
-app.use(
-  express.static(browserDistFolder, {
-    maxAge: '1y',
-    index: false,
-    redirect: false,
-  }),
-);
+// app.use(
+//   express.static(browserDistFolder, {
+//     maxAge: '1y',
+//     index: false,
+//     redirect: false,
+//   }),
+// );
 
 /**
  * Handle all other requests by rendering the Angular application.
