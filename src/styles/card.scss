@@ -2,7 +2,7 @@
   width: 100% !important;
   padding: 10px !important;
   margin: 10px !important;
-    color: rgb(45, 35, 60) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .mat-mdc-card {
@@ -31,7 +31,7 @@
   font-weight: bold !important;
   padding: 10px !important;
   font-family: "Oswald" !important;
-  font-size: 20pt !important;
+  font-size: 15pt !important;
   color: white;
   background-color: rgb(45, 35, 60);
   text-align: center !important;
@@ -70,7 +70,7 @@
   background-color: rgb(120, 80, 160) !important;
   max-height: 600px !important; /* Defina a altura máxima do card */
   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
 }
 
 .mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
