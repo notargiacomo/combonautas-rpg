@@ -25,12 +25,13 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { ameacas } from '@app/data/ameacas.data'; 
 import { CalculoDesafiosDto } from '@app/dto/calculo-desafios.dto'; 
-import { Ameaca } from '@app/model/ameaca'; 
+import { Ameaca } from '@app/model/ameaca';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-calculo-desafios',
   standalone: true,
-  imports: [FormsModule, MatFormFieldModule, ReactiveFormsModule, MatDividerModule, MatCardModule, MatInputModule, MatCheckboxModule, MatRadioModule, MatSelectModule, MatListModule,MatIconModule, MatButtonModule],
+  imports: [FormsModule, MatFormFieldModule, ReactiveFormsModule, MatDividerModule, MatCardModule, MatInputModule, MatCheckboxModule, MatRadioModule, MatSelectModule, MatListModule,MatIconModule, MatButtonModule, MatExpansionModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './calculo-desafios.component.html',
   styleUrl: './calculo-desafios.component.scss',
