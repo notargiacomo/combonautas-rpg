@@ -166,7 +166,96 @@ export class RegraData {
         <p>Como dito acima, todas as raças funcionam para todos os tipos de personagem, e fazer combinações inusitadas pode ser muito divertido. Mas, se você for um jogador iniciante, prefira uma raça que forneça um bônus no atributo principal de sua classe.</p>
         <p><h5><b>Características das Raças</b></h5></p>
         <p><b>Modificadores de Atributo.</b> Sua raça modifica seus atributos, podendo aumentá-los acima de 4 ou diminuí-los abaixo de –2.</p>
-        <p><b>Habilidades de Raça.</b> Você possui todas as habilidades de sua raça. As regras para usar habilidades são explicadas no Capítulo 5: Jogando.</p>`,
+        <p><b>Habilidades de Raça.</b> Você possui todas as habilidades de sua raça. As regras para usar habilidades são explicadas no Capítulo 5: Jogando.</p>
+        <html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background: #faf7f2;
+    font-family: "Georgia", serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  table {
+    border-collapse: collapse;
+    background: #fffdf9;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border: 2px solid #a00000;
+    width: 420px;
+  }
+
+  caption {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a00000;
+    font-size: 1.1em;
+    border-top: 2px solid #a00000;
+    border-bottom: 2px solid #a00000;
+    padding: 6px 0;
+    letter-spacing: 0.5px;
+  }
+
+  th, td {
+    border: 1px solid #d8c5b0;
+    padding: 6px 12px;
+    text-align: left;
+  }
+
+  th {
+    background: #efe4d4;
+    color: #3b1e0c;
+    text-align: center;
+  }
+
+  td {
+    color: #2e1b0c;
+  }
+
+  tr:nth-child(even) td {
+    background: #f8f3ec;
+  }
+
+  td:first-child {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <caption><b>Tabela 1-2: Raças</b></caption>
+  <thead>
+    <tr>
+      <th>Raça</th>
+      <th>Modificadores de Atributo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Humano</td><td>+1 em três atributos diferentes</td></tr>
+    <tr><td>Anão</td><td>Con +3, Des –1, Des –1</td></tr>
+    <tr><td>Dahllan</td><td>Sab +2, Des +1, Int –1</td></tr>
+    <tr><td>Elfo</td><td>Int +2, Des +1, Con –1</td></tr>
+    <tr><td>Goblin</td><td>Des +2, Int +1, Car –1</td></tr>
+    <tr><td>Lefou</td><td>+1 em três atributos diferentes (exceto Car), Car –1</td></tr>
+    <tr><td>Minotauro</td><td>For +2, Con +1, Sab –1</td></tr>
+    <tr><td>Qareen</td><td>Car +2, Int +1, Sab –1</td></tr>
+    <tr><td>Golem</td><td>For +2, Con +1, Sab –1</td></tr>
+    <tr><td>Hynne</td><td>Des +2, Car +1, For –1</td></tr>
+    <tr><td>Kitsune</td><td>Int +2, Car +1, Con –1</td></tr>
+    <tr><td>Medusa</td><td>Des +2, Car +1, For –1</td></tr>
+    <tr><td>Osteon</td><td>+1 em três atributos diferentes</td></tr>
+    <tr><td>Seria/Tritão</td><td>+1 em três atributos diferentes</td></tr>
+    <tr><td>Sílﬁde</td><td>Car +2, Des +1, For –1</td></tr>
+    <tr><td>Suraggel</td><td>Sab +2, Int +1 (aggelus) ou Des +2, Int +1 (sulfure)</td></tr>
+    <tr><td>Trog</td><td>Con +2, For +1, Int –1</td></tr>
+  </tbody>
+</table>
+
+</body>
+</html>`,
         referencia: `Tormenta 20 Jogo do Ano - página 18`
       }
     ];
