@@ -476,6 +476,304 @@ export class RegraData {
         `,
         referencia: `Tormenta 20 Jogo do Ano - página 66`,
       },
+      {
+        id: 19,
+        nome: 'LIVRO DE FÓRMULAS',
+        descricao: `<p>Quando adquire o poder Alquimista Iniciado, você recebe um livro de fórmulas. Uma “fórmula” é uma magia divina ou arcana (atributo-chave Inteligência) que serve para cumprir os pré-requisitos de fabricação de poções.</p>
+        <p>Você começa com três fórmulas de 1º círculo. A cada nível além do 1º, aprende uma fórmula adicional. A partir do 6º nível, pode aprender fórmulas de 2º círculo e, se possuir o poder Mestre Alquimista, a cada quatro níveis (10º, 14º e 18º) pode aprender fórmulas de um círculo maior.</p>
+        <p>Se não tiver seu livro de fórmulas, você não pode fabricar poções. Se perder seu livro, você pode preparar outro com uma semana de trabalho e o gasto de T$ 100.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 70`,
+      },
+      {
+        id: 20,
+        nome: 'JULGAMENTO DIVINO',
+        descricao: `<p>Alguns poderes do paladino são Julgamentos Divinos. Esses poderes compartilham as seguintes regras.</p>
+        <p>• Proferir um julgamento gasta uma ação de movimento, a menos que a descrição diga o contrário.</p>
+        <p>• Julgamentos que não têm um efeito instantâneo duram até o fim da cena.</p>
+        <p>• Uma mesma criatura pode ser alvo de vários julgamentos diferentes, mas efeitos do mesmo julgamento não se acumulam.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 83`,
+      },
+      {
+        id: 21,
+        nome: 'VIRTUDES PALADINESCAS',
+        descricao: `<p>Este conjunto de poderes representa obediência veemente a um comportamento específico. Você recebe um bônus progressivo em seu total de pontos de mana de acordo com a quantidade de poderes desse tipo que possui: +1 PM para uma Virtude, +3 PM para duas, +6 PM para três, +10 PM para quatro e +15 PM para cinco Virtudes.</p>
+        <p>Virtudes Paladinescas são poderosas, mas possuem uma contrapartida — você deve se comportar de acordo com quaisquer Virtudes que possuir. Um paladino caridoso, por exemplo, deve sempre ajudar os necessitados, enquanto um casto nunca pode cair em tentação. Não seguir uma Virtude Paladinesca que você possua conta como uma violação do Código do Herói. O mestre tem a palavra final sobre o que exatamente constitui uma violação.</p>        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 84`,
+      },
+      {
+        id: 22,
+        nome: 'MONTARIA SAGRADA',
+        descricao: `<p>Um paladino de 5º nível pode receber uma montaria sagrada, designada pelos deuses. Este animal vai atuar como um fiel companheiro de batalhas. Normalmente será um cavalo de guerra para paladinos de tamanho Médio ou um pônei para Pequenos, mas suplementos futuros trarão outras opções de montarias.</p>
+        <p>Para invocar sua montaria você gasta uma ação de movimento e 2 PM. Ela aparece com um brilho de luz dourada ao seu lado e fica até o fim da cena, quando desaparece de volta para o mundo divino de onde veio.</p>
+        <p>Como opção para campanhas mais realistas, a montaria sagrada pode ser um animal mundano, em vez de invocado. Neste caso, você nunca precisa gastar uma ação ou PM para ter a montaria — que já estará com você. Por outro lado, o animal pode não ser capaz de acompanhá-lo em todos os lugares (um cavalo, por exemplo, não conseguirá entrar num túnel apertado ou escalar uma montanha).</p>
+        <p>Você e sua montaria têm um vínculo mental, sendo sempre capazes de entender um ao outro (não é preciso fazer testes de Adestramento). Ela fornece os benefícios de um parceiro veterano de seu tipo. No 11º nível, passa a fornecer os benefícios de um parceiro mestre. Veja a lista de parceiros na página 260. Uma montaria cumpre qualquer ordem sua, mesmo que signifique arriscar a vida. Se a montaria sagrada morrer, você fica atordoado por uma rodada. Você pode invocar uma nova montaria após um dia de prece e meditação.</p>`,        
+        referencia: `Tormenta 20 Jogo do Ano - página 84`,
+      },
+      {
+        id: 23,
+        nome: 'ENGENHOCAS',
+        descricao: `<p>Uma engenhoca é uma invenção que simula o efeito de uma magia. Exemplos incluem um canhão (simula o efeito da magia Bola de Fogo), uma arma de raios (Relâmpago), um casaco blindado (Armadura Arcana), um emplastro curativo (Curar Ferimentos), um guarda-costas mecânico (Conjurar Monstro), um projetor de imagens (Criar Ilusão), um veículo a vapor (Montaria Arcana) etc.</p>
+        <p>Uma engenhoca é um item mundano Minúsculo que ocupa 1 espaço e possui Defesa 15, pontos de vida iguais à metade dos PV de seu fabricante e RD 5. Quando é fabricada, escolha se ela será empunhada (precisa estar na sua mão para ser ativada) ou vestida (precisa estar vestida para ser ativada, conta para seu limite de itens vestidos). Ao ser ativada, uma engenhoca pode assumir outra forma. Por exemplo, uma engenhoca que simula Montaria Arcana pode ser uma caixinha de engrenagens que se desdobra na forma de uma moto de madeira. Suas estatísticas não mudam.</p>
+        <p><b>Fabricação.</b> Para fabricar uma engenhoca, escolha uma magia arcana ou divina de 1º círculo. Essa será a magia que a engenhoca irá simular. A partir do 6º nível, você pode criar engenhocas com magias de 2º círculo e, a cada quatro níveis, pode criar engenhocas de um círculo maior.</p>
+        <p>O custo de fabricação da engenhoca é T$ 100 x o custo em PM da magia que ela simula e a CD do teste é 20 + o custo em PM da magia. Assim, para fabricar uma engenhoca que simula o efeito de uma magia de 2º círculo (3 PM) você precisa gastar T$ 300 e passar em um teste de Ofício (engenhoqueiro) contra CD 23. O tempo de fabricação é uma semana.</p>
+        <p><I>Limite de Engenhocas.</I> Engenhocas são itens complexos e delicados, que exigem manutenção constante. O máximo de engenhocas que você pode ter ao mesmo tempo é igual a sua Inteligência.</p>
+        <p><b>Ativação.</b> Apenas o fabricante de uma engenhoca pode ativá-la. Ativar uma engenhoca exige uma ação padrão (ou a execução da magia, o que for maior) e um teste de Ofício (engenhoqueiro) contra CD 15 + custo em PM da magia. Se você passar, a engenhoca gera o efeito da magia (atributo-chave Int). Se falhar, ela enguiça e não pode ser utilizada até ser consertada, o que exige uma hora de trabalho. Cada nova ativação da engenhoca no mesmo dia aumenta a CD do teste de Ofício em +5.</p>
+        <p>Quando ativa uma engenhoca, você pode usar quaisquer aprimoramentos da magia que ela simula, até um custo igual a sua Inteligência. A CD para ativar a engenhoca aumenta em +1 por PM e você paga o custo em PM dos aprimoramentos.</p>
+        <p>Se a engenhoca simula o efeito de uma magia com custo especial, esse custo deve ser pago a cada ativação. Para outros custos e limitações, o efeito gerado pela engenhoca funciona como uma magia. Por exemplo, para manter um efeito com duração sustentada gerado por uma engenhoca, o inventor deve pagar 1 PM no início de cada um de seus turnos. Da mesma forma, só pode manter um efeito sustentado de engenhoca por vez. Se a magia simulada exigir um teste de Misticismo, use Ofício (engenhoqueiro) em seu lugar.</p>
+        <p><b>Efeito Mundano.</b> O efeito de uma engenhoca não é mágico. Isso significa que ele não pode ser dissipado, funciona em áreas de antimagia etc.</p>
+        <p><b>Penalidade de Armadura.</b> A ativação de uma engenhoca exige movimentos rápidos e precisos. Por isso, o teste de Ofício (engenhoqueiro) para ativar engenhocas sofre penalidade de armadura. Porém, você pode ativar engenhocas que geram magias arcanas enquanto usa armadura sem precisar fazer testes de Misticismo.</p>
+        <p><b>Efeitos que Impedem Conjuração.</b> Um efeito que especificamente impeça um personagem de lançar magias (como a Fúria de um bárbaro ou a magia Transformação de Guerra) também impede um inventor de ativar engenhocas.</p>`,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 70 e 71`,
+      },
+      {
+        id: 24,
+        nome: 'FORMA SELVAGEM',
+        descricao: `<p>Você pode gastar uma ação completa e 3 PM para adquirir a forma de uma criatura selvagem. Em termos de jogo, quando usa esta habilidade você adquire os modificadores de uma das formas abaixo. Características não mencionadas não mudam.</p>
+        <p>Na forma selvagem você não pode falar, empunhar itens ou lançar magias. Seu equipamento desaparece (mas você mantém os benefícios de quaisquer itens vestidos), ressurgindo quando você volta ao normal. Outras criaturas podem fazer um teste de Percepção oposto pelo seu teste de Enganação para perceber que você não é um animal comum (você recebe +10 neste teste). Cada transformação dura pelo tempo que você quiser, mas você reverte à forma normal se ficar inconsciente ou morrer.</p>
+
+        <h5><p><b>FORMA ÁGIL</b></p></h5>
+        <p>Você recebe Destreza +2 e duas armas naturais que causam 1d6 pontos de dano e possuem margem de ameaça 19. Se atacar com ambas, sofre –2 em todos os testes de ataque até o seu próximo turno.</p>
+        <p><I>• Aprimorada.</I> Você recebe Destreza +4, deslocamento +3m e duas armas naturais (como acima, mas com dano de 1d8). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</p>
+        <p><I>• Superior.</I> Você recebe Destreza +6, deslocamento +6m e duas armas naturais (como acima, mas com dano de 1d10). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</p>
+
+        <h5><p><b>FORMA FEROZ</b></p></h5>
+        <p>Você recebe Força +3, +2 na Defesa e uma arma natural que causa 1d8 pontos de dano.</p>
+        <p><I>• Aprimorada.</I> Você recebe Força +5, +4 na Defesa e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</p>
+        <p><I>• Superior.</I> Você recebe Força +10, +6 na Defesa e uma arma natural que causa 4d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra).</p>
+
+        <h5><p><b>FORMA RESISTENTE</b></p></h5>
+        <p>Você recebe +5 na Defesa, redução de dano 5 e uma arma natural que causa 1d6 pontos de dano.</p>
+        <p><I>• Aprimorada.</I>  Você recebe Força +3, +8 na Defesa, redução de dano 8 e uma arma natural que causa 1d8 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).</p>
+        <p><I>• Superior.</I> Você recebe Força +5, +10 na Defesa, redução de dano 10 e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra).</p>
+
+        <h5><p><b>FORMA SORRATEIRA</b></p></h5>
+        <p>Você recebe Destreza +2 e uma arma natural que causa 1d4 pontos de dano. Seu tamanho muda para Pequeno (+2 em Furtividade, –2 em testes de manobra).</p>
+        <p><I>• Aprimorada.</I> Você recebe Destreza +4. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra).</p>
+        <p><I>• Superior.</I> Você recebe Destreza +6 e deslocamento de voo 18m. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra).</p>
+
+        <h5><p><b>FORMA VELOZ</b></p></h5>
+        <p>Você recebe Destreza +2, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 15m, deslocamento de escalada 9m ou deslocamento de natação 9m.</p>
+        <p><I>• Aprimorada.</I> Você recebe Destreza +4, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m.</p>
+        <p><I>• Superior.</I> Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m.</p>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 63`,
+      },
+      {
+        id: 25,
+        nome: 'ORIGENS',
+        descricao: `<p>Enquanto sua raça diz como você nasceu e sua classe diz o que se tornou, sua origem revela sua ocupação antes de ser aventureiro. É o que você fazia até ganhar seu primeiro nível em uma classe.</p>
+        <p>Cada origem apresentada a seguir é intencionalmente vaga e breve, apenas uma ideia por onde começar. Você pode usá-la como está, para jogar rapidamente, ou então colorir com quantos detalhes quiser!</p>
+        <h5><p><b>ITENS DE ORIGENS</b></p></h5>
+        <p>Você começa com todos os itens descritos na linha “Itens” de sua origem sem pagar por eles.</p>
+        <h5><p><b>BENEFÍCIOS DE ORIGENS</b></p></h5>
+        <p>Cada origem possui uma lista de benefícios que inclui perícias e poderes gerais, descritos no Capítulo 2. Você escolhe dois benefícios da lista — duas perícias, dois poderes ou uma perícia e um poder. Se preferir regras mais rápidas, escolha apenas perícias.</p>
+        <p><b>Perícias.</b> Atuar como batedor aguçou os sentidos do meio-elfo Gorack Misuk. Uma infância na estrada tornou Aivy Karter capaz de cuidar de si mesma nos ermos. Fugir da milícia pelas ruas de Malpetrim fez de Sima, a Astuta, uma pessoa furtiva. Você se torna treinado na perícia escolhida, representando aprendizado adquirido em sua vida pregressa.</p>
+        <p><b>Poderes.</b> A vida de apresentações em Valkaria fez da barda Kiim Nomi uma estrela nata. Trabalhar em navios durante a juventude garantiu ao bucaneiro Don Doido contatos com quem conseguir transporte marítimo. Anos servindo no exército de Deheon ensinaram o paladino Rhogar a manejar sua espada. Você recebe o poder escolhido, mas ainda precisa cumprir seus pré-requisitos</p>
+        <p><b>Poder Único.</b> Cada origem tem um poder exclusivo, descrito após os outros benefícios. Ele pode ser escolhido como um de seus dois benefícios. Apenas personagens com essa origem podem escolher esse poder.</p>
+        <p>O humano clérigo Pivas, que cresceu isolado nas florestas de Tollon, escolhe a origem eremita. Ele começa com os seguintes itens: uma barraca e uma maleta de medicamentos. Pivas então pode escolher dois benefícios: ele escolhe a perícia Religião e o poder único Busca Interior.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 85`,
+      },
+      {
+        id: 26,
+        nome: 'SUA PRÓPRIA ORIGEM',
+        descricao: `<p>Uma origem é algo que você pode mudar, negociando com o mestre, para ajustar melhor à história que você imaginou. Por exemplo, Kurt Snyder estudou como médico de Salistick — mais especificamente, como alienista. A origem Curandeiro oferece as perícias Cura e Vontade. Nesse caso, o jogador de Kurt poderia trocar uma dessas por Intuição.</p>
+        <p>Outro exemplo: o suraggel paladino Agatodemo, um herói camponês, protegeu sua aldeia contra o ataque de hobgoblins que, ao fugir, deixaram cair uma arma exótica. Antes de partir da aldeia, Agatodemo treinou com essa arma. Assim, você poderia trocar seus itens iniciais pela própria arma, e pegar o poder Proficiência para saber usá-la.</p>
+        <p>Até mesmo uma nova habilidade pode ser inventada, usando as outras como referência e inspiração. Você não precisa ficar preso apenas a benefícios mecânicos, como “ganhar +2 em alguma coisa”. Pense em coisas que ajudem seu grupo ou tragam mais sabor à interpretação, ou ainda algo relacionado à própria campanha — ser parente de algum NPC importante, por exemplo.</p>
+        <p>Ainda, você pode inventar uma origem totalmente nova. Talvez Kaine, o Coletor, seja um guerreiro esqueleto conjurado pelo próprio necromante Vladislav, enquanto Ira Dodado é um clérigo de Nimb que começou sua carreira após matar um dragão com uma panelada, e Kadi O’ Blaine é um arcanista vindo de Magika, mundo da deusa Wynna. Lembre-se: em Arton, nenhum herói é estranho demais.</p>
+        <p>Aproveite a origem para transpor para o jogo ideias que você tenha e não consiga representar com raça e classe. Em outras palavras, ela é o espaço para o jogador criar. Só não vale apelar! “Ah, eu era seguidor de um arcanista de 18º nível, então ele morreu engasgado com um pretzel e eu fiquei com as coisas mágicas dele, tudo bem?”</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 95`,
+      },
+      {
+        id: 27,
+        nome: 'DEUSES',
+        descricao: `<p>Em Arton, você pode trabalhar a serviço dos deuses, cumprindo seus desígnios. Um personagem que serve a uma divindade é chamado devoto e, em troca de seguir certas obrigações, recebe poderes. Ser devoto é uma escolha. Por exemplo, você pode ser um cavaleiro normal, sem obrigações, ou um cavaleiro devoto de Khalmyr, com obrigações e poderes.</p>
+        <h5><p><b>ESCOLHENDO SEU DEUS</b></p></h5>
+        <p>Você pode se tornar devoto na construção de seu personagem ou sempre que subir de nível. Porém, só pode ter uma devoção e não pode mudá-la (exceto sob critério do mestre). Se você for clérigo, druida ou paladino, automaticamente será um devoto.</p>
+        <p>Para ser devoto de um deus, sua raça ou sua classe devem estar listadas na seção “Devotos” do deus em questão. Humanos e clérigos são exceção — podem ser devotos de qualquer divindade.</p>
+        <p>Ao se tornar devoto, você recebe um poder concedido a sua escolha da lista do deus e passa a seguir as Obrigações & Restrições dele. Se violá-las, perde todos os seus PM e só pode recuperá-los a partir do próximo dia. Se violá-las de novo na mesma aventura, perde todos os seus PM e não pode recuperá-los até fazer uma penitência (veja a perícia Religião). Poderes concedidos são descritos no Capítulo 2.</p>
+        <p><I><b>Multiclasse.</b></I> No caso de classes com listas de devoções permitidas, a classe com menos opções determina a que deve ser seguida (isso permite que uma devoção anterior seja mudada). Se não houver devoções compatíveis, a multiclasse não pode ser feita.</p>
+        <table>
+          <caption><b>Tabela 1-20: Deuses</b></caption>
+          <thead>
+            <tr>
+              <th>Divindade</th>
+              <th>Energia</th>
+              <th>Poderes Concedidos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Aharadak</td><td>Negativa</td><td>Afinidade com a Tormenta, Êxtase da Loucura, Percepção Temporal, Rejeição Divina</td></tr>
+            <tr><td>Allihanna</td><td>Positiva</td><td>Compreender os Ermos, Dedo Verde, Descanso Natural, Voz da Natureza</td></tr>
+            <tr><td>Arsenal</td><td>Qualquer</td><td>Conjurar Arma, Coragem Total, Fé Guerreira, Sangue de Ferro</td></tr>
+            <tr><td>Azgher</td><td>Positiva</td><td>Espada Solar, Fulgor Solar, Habitante do Deserto, Inimigo de Tenebra</td></tr>
+            <tr><td>Hyninn</td><td>Qualquer</td><td>Apostar com o Trapaceiro, Farsa do Fingidor, Forma de Macaco, Golpista Divino</td></tr>
+            <tr><td>Kallyadranoch</td><td>Negativa</td><td>Aura de Medo, Escamas Dracônicas, Presas Primordiais, Servos do Dragão</td></tr>
+            <tr><td>Khalmyr</td><td>Positiva</td><td>Coragem Total, Dom da Verdade, Espada Justiceira, Reparar Injustiça</td></tr>
+            <tr><td>Lena</td><td>Positiva</td><td>Ataque Piedoso, Aura Restauradora, Cura Gentil, Cura Perfeita</td></tr>
+            <tr><td>Lin-Wu</td><td>Qualquer</td><td>Coragem Total, Kiai Divino, Mente Vazia, Tradição de Lin-Wu</td></tr>
+            <tr><td>Marah</td><td>Positiva</td><td>Aura de Paz, Dom da Esperança, Palavras de Bondade, Talento Artístico</td></tr>
+            <tr><td>Megalokkh</td><td>Negativa</td><td>Olhar Amedrontador, Presas Primordiais, Uivo Divino, Voz dos Monstros</td></tr>
+            <tr><td>Nimb</td><td>Qualquer</td><td>Êxtase da Loucura, Poder Oculto, Sorte dos Loucos, Transmissão da Loucura</td></tr>
+            <tr><td>Oceano</td><td>Qualquer</td><td>Anfíbio, Arsenal das Profundezas, Mestre dos Mares, Sonhos do Mar</td></tr>
+            <tr><td>Sszzaas</td><td>Negativa</td><td>Astúcia da Serpente, Familiar Ofídico, Presas Venenosas, Sangue Ofídico</td></tr>
+            <tr><td>Tanna-Toh</td><td>Qualquer</td><td>Conhecimento Enciclopédico, Mente Analítica, Pesquisa Abençoada, Voz da Civilização</td></tr>
+            <tr><td>Tenebra</td><td>Negativa</td><td>Carícia Sombria, Manto da Penumbra, Visão nas Trevas, Zumbificar</td></tr>
+            <tr><td>Thwor</td><td>Qualquer</td><td>Almejar o Impossível, Fúria Divina, Olhar Amedrontador, Tropas Duyshidakk</td></tr>
+            <tr><td>Thyatis</td><td>Positiva</td><td>Ataque Piedoso, Dom da Imortalidade, Dom da Profecia, Dom da Ressurreição</td></tr>
+            <tr><td>Valkaria</td><td>Qualquer</td><td>Almejar o Impossível, Armas da Ambição, Coragem Total, Liderança Divina</td></tr>
+            <tr><td>Wynna</td><td>Qualquer</td><td>Benção do Mana, Centelha Mágica, Escudo Mágico, Teurgista Místico</td></tr>
+          </tbody>
+        </table>
+        <h5><p><b>CARACTERÍSTICAS DOS DEUSES</b></p></h5>
+        <p><b>Crenças e Objetivos.</b> Um resumo da doutrina da divindade, aquilo em que os devotos creem.</p>
+        <p><b>Símbolo Sagrado.</b> O símbolo do deus, normalmente usado como um medalhão ou na roupa.</p>
+        <p><b>Canalizar Energia.</b> O tipo de energia que a divindade canaliza. Devotos de alguns deuses podem escolher o tipo de energia (nesse caso, uma vez feita, a escolha não pode ser mudada).</p>
+        <p><b>Arma Preferida.</b> A arma típica de devotos do deus, importante para certas habilidades e magias.</p>
+
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 96 e 97`,
+      },
+      {
+        id: 28,
+        nome: 'PONTOS DE VIDA - PV',
+        descricao: `<p>Pontos de vida são uma medida de seu vigor físico, tolerância a dor e experiência em combate. Eles indicam a quantidade de dano que você pode sofrer antes de cair inconsciente. Assim, o mesmo ferimento que mataria um camponês comum será “apenas um arranhão” para um bárbaro embrutecido ou um ladino esquivo.</p>
+        <p>Enquanto tiver pelo menos 1 ponto de vida, você pode agir e lutar normalmente. Se ficar com 0 ou menos PV, você cai inconsciente e sangrando (veja mais sobre isso na página 236).</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106`,
+      },
+      {
+        id: 29,
+        nome: 'PONTOS DE MANA - PM',
+        descricao: `<p>Pontos de mana são uma medida de sua energia, determinação e força interior. Eles indicam quantas habilidades você consegue usar.</p>
+        <p>Você não pode gastar mais pontos de mana do que tem, mas não sofre penalidades por ficar com 0 ou menos PM.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106`,
+      },
+      {
+        id: 30,
+        nome: 'RECUPERANDO PV E PM',
+        descricao: `<p>Com uma noite de descanso (pelo menos oito horas de sono), você recupera PV e PM de acordo com seu nível e <b><I>condições de descanso.</I></b></p>
+        <p><b>Ruim.</b> Recuperação igual à metade do nível. Dormir ao relento, sem um saco de dormir e um acampamento, constitui condição ruim (veja Sobrevivência, na página 123).</p>
+        <p><b>Normal.</b> Recuperação igual à metade do nível. Dormir ao relento, sem um saco de dormir e um acampamento, constitui condição ruim (veja Sobrevivência, na página 123).</p>
+        <p><b>Confortável.</b> Recuperação igual à metade do nível. Dormir ao relento, sem um saco de dormir e um acampamento, constitui condição ruim (veja Sobrevivência, na página 123).</p>
+        <p><b>Luxuosa.</b> Recuperação igual à metade do nível. Dormir ao relento, sem um saco de dormir e um acampamento, constitui condição ruim (veja Sobrevivência, na página 123).</p>
+        <p>Certas habilidades, magias e itens também recuperam PV e PM. Você nunca pode recuperar mais pontos de vida ou mana do que perdeu — ou seja, não pode ultrapassar seu máximo.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106`,
+      },
+      {
+        id: 31,
+        nome: `PV's e PM's Temporários`,
+        descricao: `<p>Certos efeitos fornecem PV ou PM temporários. Eles são somados a seus pontos atuais, mesmo que ultrapassem o máximo. Pontos temporários são sempre os primeiros a serem gastos. Caso não seja especificado o contrário, pontos temporários desaparecem no fim do dia.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106`,
+      },
+      {
+        id: 32,
+        nome: `DEFESA`,
+        descricao: `<p>A Defesa representa o quão difícil é acertá-lo em combate. Sua Defesa é 10 + sua Destreza + seu bônus de armadura e escudo.</p>
+        <p>Quando você ataca um inimigo, a CD do seu teste de ataque é à Defesa dele (veja mais sobre isso no Capítulo 5: Jogando).</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106`,
+      },
+      {
+        id: 33,
+        nome: `TAMANHO`,
+        descricao: `<p>O tamanho de uma criatura é classificado em seis categorias: Minúsculo, Pequeno, Médio, Grande, Enorme e Colossal. Por padrão, seu tamanho é Médio, mas sua raça pode alterar isso. Criaturas Médias não recebem modificadores por tamanho. Criaturas menores recebem bônus em Furtividade e penalidade em manobras de combate. Para criaturas maiores, esses bônus e penalidades são invertidos.</p>
+        <p>Criaturas Minúsculas usam armas reduzidas, que causam um passo a menos de dano (veja a Tabela 3-2: Dano de Armas, na página 143). Criaturas Grandes e Enormes usam armas aumentadas, que causam um passo a mais de dano, e criaturas Colossais usam armas gigantes, que causam dois passos a mais de dano. Uma criatura pode usar uma arma feita para até uma categoria de tamanho maior ou menor que a dela, mas sofre –5 nos testes de ataque e a arma ocupa um espaço a mais ou a menos, respectivamente (mínimo meio espaço).</p>
+        <table style="width: 100%; border-collapse: collapse; color: black; font-family: 'Times New Roman', serif; text-align: center;">
+          <caption style="font-weight: bold; text-transform: uppercase; padding: 8px 0;">
+            <b>Tabela 1-21: Tamanho de Criaturas</b>
+          </caption>
+          <thead>
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;">Categoria de Tamanho</th>
+              <th style="border: 1px solid #000; padding: 6px;">Exemplos</th>
+              <th style="border: 1px solid #000; padding: 6px;">Espaço Ocupado* /<br>Alcance Natural</th>
+              <th style="border: 1px solid #000; padding: 6px;">Modificador de<br>Furtividade/Manobras</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px;">Minúsculo</td>
+              <td style="border: 1px solid #000; padding: 6px;">Falcão, rato, sílfide</td>
+              <td style="border: 1px solid #000; padding: 6px;">1,5m</td>
+              <td style="border: 1px solid #000; padding: 6px;">+5/–5</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px;">Pequeno</td>
+              <td style="border: 1px solid #000; padding: 6px;">Cão, goblin, hynne</td>
+              <td style="border: 1px solid #000; padding: 6px;">1,5m</td>
+              <td style="border: 1px solid #000; padding: 6px;">+2/–2</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px;">Médio</td>
+              <td style="border: 1px solid #000; padding: 6px;">Humano, anão, elfo</td>
+              <td style="border: 1px solid #000; padding: 6px;">1,5m</td>
+              <td style="border: 1px solid #000; padding: 6px;">0</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px;">Grande</td>
+              <td style="border: 1px solid #000; padding: 6px;">Cavalo, ogro, serpe</td>
+              <td style="border: 1px solid #000; padding: 6px;">3m</td>
+              <td style="border: 1px solid #000; padding: 6px;">–2/+2</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px;">Enorme</td>
+              <td style="border: 1px solid #000; padding: 6px;">Ente, gigante, hidra</td>
+              <td style="border: 1px solid #000; padding: 6px;">4,5m</td>
+              <td style="border: 1px solid #000; padding: 6px;">–5/+5</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px;">Colossal</td>
+              <td style="border: 1px solid #000; padding: 6px;">Colosso, dragão, kraken</td>
+              <td style="border: 1px solid #000; padding: 6px;">9m</td>
+              <td style="border: 1px solid #000; padding: 6px;">–10/+10</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="font-size: 14px; font-style: italic; margin-top: 4px; color: black;">
+          *Espaço ocupado pela criatura. “3m”, por exemplo, significa que a criatura ocupa um espaço de 3m x 3m, ou seja, 2x2 quadrados num mapa.
+        </p>
+
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106 e 107`,
+      },
+      {
+        id: 34,
+        nome: `DESLOCAMENTO`,
+        descricao: `<p>Sua velocidade, medida em quantos metros você anda com uma ação de movimento. Por padrão, seu deslocamento é 9 metros (6 quadrados no mapa), mas algumas habilidades podem mudar esse valor.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106`,
+      },
+      {
+        id: 35,
+        nome: `IDADE`,
+        descricao: `<p>Muitos heróis são jovens, mas nem todos precisam ser. Não há idade certa para viver aventuras, perseguir sonhos e combater o mal.
+        <h5><p><b>IDADE INICIAL</b></p></h5></p>
+        <p>Você pode escolher a idade inicial de seu personagem ou determiná-la aleatoriamente, com uma rolagem que varia conforme sua classe.</p>
+        <p><b>Bárbaro, Bucaneiro, Ladino, Lutador.</b> 1d6+15 anos (para um resultado entre 16 e 21 anos).</p>
+        <p><b>Bardo, Caçador, Cavaleiro, Guerreiro, Nobre, Paladino.</b> 2d4+15 anos (para um resultado entre 17 e 23 anos).</p>
+        <p><b>Arcanista, Clérigo, Druida, Inventor.</b> 2d6+15 anos (para um resultado entre 17 e 27 anos).</p>
+        <h5><p><b>ENVELHECENDO</b></p></h5></p>
+        <p>Conforme envelhecem, personagens recebem os seguintes modificadores.</p>
+        <p><b>Maduro (45 Anos).</b> For –1, Des –1, Con –1, Int +1, Sab +1, Car +1.</p>
+        <p><b>Velho (70 Anos).</b> For –2, Des –2, Con –2, Int +1, Sab +1, Car +1.</p>
+        <p><b>Longevidade Máxima.</b> 70 + 2d20 anos.</p>
+        <p>Os modificadores são cumulativos. Assim, um personagem velho recebe um total de For –3, Des –3, Con –3, Int +2, Sab +2, Car +2.</p>
+        <h5><p><b>RAÇAS LONGEVAS</b></p></h5></p>
+        <p>As categorias de envelhecimento abaixo se aplicam a todas as raças, com exceção de anões, dahllan, elfos, golens, osteon, qareen e sílfides. Essas raças usam a mesma idade inicial, mas multiplicam as categorias de envelhecimento (maduro e velho) e a longevidade máxima pelos seguintes valores.</p>
+        <p><b>• Anões e Qareen.</b> x2.</p>
+        <p><b>• Dahllan, Elfos, Golens, Osteon, Sílfides.</b> x5. Personagens dessas raças não têm longevidade máxima; podem viver para sempre, morrendo apenas de formas violentas ou por razões excepcionais (por exemplo, quando escolhem deixar de viver ou são chamados ao além-vida por sua divindade).</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 108`,
+      },
     ];
   }
 }

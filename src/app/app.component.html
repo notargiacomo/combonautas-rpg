@@ -44,25 +44,25 @@
   
           <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
           <mat-menu #menuRegra="matMenu" yPosition="below">
-            <button mat-menu-item (click)="navigateTo('regras/regras')">Regras</button>
+            <button mat-menu-item (click)="navigateTo('regras/regras')">Regras do Jogo</button>
             <button mat-menu-item (click)="navigateTo('regras/acoes')">Ações</button>
             <button mat-menu-item (click)="navigateTo('regras/condicoes')">
               Condições
             </button>
           </mat-menu>
-          <!-- <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
+          <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
           <mat-menu #menuMestre="matMenu" yPosition="below">
-            <button mat-menu-item (click)="navigateTo('mestre/ameacas')">Ameaças</button>
+            <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">Cálculo de Desafios</button>
+            <!-- <button mat-menu-item (click)="navigateTo('mestre/ameacas')">Ameaças</button>
             <button mat-menu-item (click)="navigateTo('mestre/criando-ameacas')">Criando Ameaças</button>
             <button mat-menu-item (click)="navigateTo('mestre/dashboard')">
               Dashboard
-            </button>
-          </mat-menu> -->
+            </button> -->
+          </mat-menu>
           <button mat-button [matMenuTriggerFor]="menuUtilitarios">
             Utilitários
           </button>
           <mat-menu #menuUtilitarios="matMenu" yPosition="below">
-            <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">Cálculo de Desafios</button>
             <button mat-menu-item (click)="navigateTo('utilitarios/personagem-aleatorio')">Personagem Aleatório</button>
             <!-- <button mat-menu-item (click)="navigateTo('utilitarios/ficha')">Ficha</button> -->
             <!-- <button mat-menu-item (click)="navigateTo('utilitarios/tesouros')">Tesouros</button> -->
