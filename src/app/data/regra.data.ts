@@ -774,6 +774,102 @@ export class RegraData {
         `,        
         referencia: `Tormenta 20 Jogo do Ano - página 108`,
       },
+      {
+        id: 36,
+        nome: `PERÍCIAS`,
+        descricao: `<p>Perícias medem suas capacidades mundanas. São usadas para realizar todo tipo de façanha, de saltar sobre um desfiladeiro a acertar um monstro com sua espada e decifrar um pergaminho antigo.</p>
+        <h5><p><b>ESCOLHENDO PERÍCIAS</b></p></h5></p>
+        <p>Ao escolher sua classe, você recebe um número de perícias treinadas (ou seja, nas quais é mais competente). Você também recebe um número de perícias treinadas igual a sua Inteligência. Perícias ganhas por Inteligência não precisam pertencer à lista de sua classe.</p>
+        <p>Você pode ganhar novas perícias treinadas com o poder Treinamento em Perícia ou aumentando sua Inteligência (exceto aumentos temporários).</p>
+        <h5><p><b>USANDO PERÍCIAS</b></p></h5></p>
+        <p>A descrição de cada perícia explica o que você pode fazer com ela, junto com exemplos de usos e suas respectivas regras. Testes de perícia seguem a mecânica básica do jogo, apresentada na Introdução e detalhada no Capítulo 5: Jogando.</p>
+        <h5><p><b>BÔNUS PERÍCIA</b></p></h5></p>
+        <p>Quando faz um teste de perícia, você soma seu bônus de perícia ao resultado do d20. Esse número é uma medida de sua competência com a perícia em questão. Ele é igual à metade do seu nível (arredondado para baixo) + o atributo-chave da perícia (veja a seguir). Nas perícias treinadas, você recebe um bônus de +2. No 7º nível, esse bônus aumenta para +4. No 15º nível, aumenta para +6.</p>
+        <p>Por exemplo, um personagem de 3º nível com Força 4 terá um bônus de +5 nas perícias baseadas em Força, no caso, Atletismo e Luta (+1 da metade do nível, +4 da Força). Se for treinado numa dessas perícias, seu bônus com ela será +7 (+1 da metade do nível, +4 de Força, +2 do treinamento).</p>
+        <p><b><center>Bônus de Perícia = Metade do Nível + Atributo-chave + Bônus de Treinamento (se for treinado)*</center></b>
+        <center>*O bônus de treinamento é +2 do 1º ao 6º níveis, +4 do 7º ao 14º níveis e +6 do 15º nível em diante</center></p><br />
+        <h5><p><b>ATRIBUTO-CHAVE</b></p></h5></p>
+        <p>O atributo usado com a perícia. Por exemplo, Diplomacia envolve lábia e capacidade de argumentação, por isso seu atributo-chave é Carisma. Já Conhecimento envolve estudo e memória, por isso seu atributo-chave é Inteligência. O atributo-chave afeta seu bônus de perícia (veja acima).</p>
+        <h5><p><b>TREINAMENTOS E TESTES</b></p></h5></p>
+        <p>Algumas perícias só podem ser usadas quando você é treinado nelas. Por exemplo, se você não é treinado em Ladinagem, não tem o conhecimento necessário para desarmar uma armadilha, independentemente de seu nível ou Destreza. Quando a palavra “treinada” aparece após o nome da perícia, você só poderá usá-la se for treinado nela. Além disso, algumas perícias possuem usos específicos que exigem treinamento.</p>
+        <h5><p><b>PENALIDADE DE ARMADURA</b></p></h5></p>
+        <p>Algumas perícias exigem liberdade de movimento. Quando a palavra “armadura” aparece após o nome da perícia, você sofrerá uma penalidade nos testes dela se estiver usando armadura ou escudo. Veja o Capítulo 3: Equipamento para detalhes.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 108`,
+      },
+      {
+        id: 37,
+        nome: `PERÍCIAS DE RESISTÊNCIA`,
+        descricao: `<p>Fortitude, Reflexos e Vontade são usadas para resistir a efeitos negativos, como uma explosão ou um encantamento de controle mental. Por isso, são chamadas de perícias de resistência. Efeitos que afetem seus “testes de resistência” afetam todos os testes destas perícias. Assim, um efeito que forneça +1 em testes de resistência fornece +1 em Fortitude, Reflexos e Vontade.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 106`,
+      },
+      {
+        id: 38,
+        nome: `PODERES GERAIS`,
+        descricao: `<p>Poderes gerais podem ser escolhidos por qualquer personagem, independentemente de sua classe. Eles seguem todas as regras de habilidades. Poderes gerais fornecem mais opções, ao custo de um pouco de complexidade. Usá-los ou não é uma decisão de cada jogador (veja o quadro na página ao lado).</p>
+        <h5><p><b>ESCOLHENDO PODERES GERAIS</b></p></h5></p>
+        <p>Algumas raças e origens fornecem poderes gerais. Além disso, sempre que você recebe um poder de classe, pode trocá-lo por um poder geral.</p>
+        <h5><p><b>GRUPOS DE PODERES</b></p></h5></p>
+        <p><b>Combate.</b> Poderes que melhoram características relacionadas a combate. </p>
+        <p><b>Destino.</b> Poderes que melhoram características não relacionadas a combate.</p>
+        <p><b>Magia.</b> Poderes ligados a magias e itens mágicos.</p>
+        <p><b>Concedidos.</b> Poderes recebidos por devotos.</p>
+        <p><b>Tormenta.</b> Poderes ligados à tempestade rubra.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 124`,
+      },
+      {
+        id: 39,
+        nome: `PODERES GERAIS: USAR OU NÃO?`,
+        descricao: `<p>Poderes gerais permitem diferenciar ainda mais seu personagem, trazendo novas opções e estratégias. No entanto, seu uso deixa o jogo mais pesado — construir o personagem e subir de nível será mais trabalhoso.</p>
+        <p>Se você está experimentando suas primeiras aventuras, pode ser melhor evitar poderes gerais. Suas escolhas de raça, classe e origem já oferecem um enorme número de combinações.</p>
+        <p>No entanto, se você é um veterano de várias campanhas, talvez queira mais capacidade de personalização. Nesse caso, fique à vontade para ler esta seção e escolher os poderes que preferir — seja para melhor representar o conceito de seu herói, seja para conseguir combinações mais efetivas.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 125`,
+      },
+      {
+        id: 40,
+        nome: `PODERES DE APRIMORAMENTO`,
+        descricao: `<p>Estes poderes acrescentam melhorias às magias conhecidas pelo conjurador. Eles seguem todas as regras para aprimoramentos (veja o Capítulo 4: Magia). Você pode aplicar quantos aprimoramentos quiser, desde que não ultrapasse seu limite de PM.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 131`,
+      },
+      {
+        id: 41,
+        nome: `PODERES DE MAGIA`,
+        descricao: `<p>Todos os poderes deste grupo possuem como pré-requisito lançar magias.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 131`,
+      },
+      {
+        id: 42,
+        nome: `PODERES CONCEDIDOS`,
+        descricao: `<p>Todos os poderes desta seção possuem como pré-requisito ser devoto de um dos deuses indicados. O atributo-chave desses poderes é Sabedoria.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 132`,
+      },
+      {
+        id: 43,
+        nome: `PODERES DA TORMENTA`,
+        descricao: `<p>Estes poderes oferecem habilidades ligadas à tempestade rubra. Quando escolhe um poder da Tormenta, você perde 1 de Carisma. Para cada dois outros poderes da Tormenta, você perde mais 1 de Carisma. Essa perda representa deformidades físicas e o desaparecimento gradual de sua própria identidade. Um personagem reduzido a menos que Car –5 torna-se um NPC sob controle do mestre.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 136`,
+      },
+      {
+        id: 44,
+        nome: `PODERES DE COMBATE`,
+        descricao: `<p>Poderes que melhoram características relacionadas a combate.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 124`,
+      },
+      {
+        id: 45,
+        nome: `PODERES DE DESTINO`,
+        descricao: `<p>Poderes que melhoram características não relacionadas a combate.</p>
+        `,        
+        referencia: `Tormenta 20 Jogo do Ano - página 124`,
+      },
     ];
   }
 }
