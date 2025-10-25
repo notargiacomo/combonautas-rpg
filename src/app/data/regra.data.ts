@@ -1614,6 +1614,412 @@ export class RegraData {
         `,
         referencia: `Tormenta 20 Jogo do Ano - páginas 222 e 223`,
       },
+      {
+        id: 96,
+        nome: `HABILIDADES`,
+        descricao: `<p>Além de atributos e perícias, personagens possuem habilidades fornecidas por sua raça, origem, classe, itens e outras fontes.</p>
+        <h5><b>USANDO HABILIDADES</b></h5>
+        <p>Habilidades podem ser passivas (seus efeitos estão sempre funcionando) ou ativadas (precisam ser usadas para gerar seus efeitos). O poder Coração da Selva, do druida é uma habilidade passiva, enquanto a Fúria do bárbaro é uma habilidade ativada. Para usar habilidades ativadas você precisa gastar uma ação e, provavelmente, pontos de mana.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 224`,
+      },
+      {
+        id: 97,
+        nome: `HABILIDADES: AÇÃO NECESSÁRIA`,
+        descricao: `<p>A descrição da habilidade determina a ação necessária para usá-la. Caso nada esteja descrito, usar a habilidade é uma ação livre (exceto no caso abaixo).</p>
+        <p><b>Habilidades Engatilhadas.</b> Habilidades ativadas por decorrência de outro evento (como fazer um ataque), são ativadas como uma reação e somente uma vez por instância do evento.</p>
+        <p><i>A habilidade Frenesi, do bárbaro, diz que quando você usa a ação agredir, pode gastar 2 PM para realizar um ataque adicional. Ativar Frenesi é uma reação que só pode ser feita uma vez por ação agredir.</i></p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 224`,
+      },
+      {
+        id: 98,
+        nome: `HABILIDADES: CUSTO DE PONTOS DE MANA`,
+        descricao: `<p>A descrição da habilidade determina se são necessários PM para usá-la. Nesse caso, você gasta os PM mesmo em caso de falha. Por exemplo, se um guerreiro usa Ataque Especial e erra o ataque, ainda assim gasta os pontos de mana.</p>
+        <p>Para habilidades com custo variável, o máximo de PM que você pode gastar por uso é igual ao seu nível na classe que fornece a habilidade (mas você sempre pode usar a habilidade em seu custo mínimo). Para habilidades de raça, origem ou outras fontes e poderes gerais, o limite é o seu nível de personagem.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 224`,
+      },
+      {
+        id: 99,
+        nome: `HABILIDADES: CUSTOS ESPECIAIS`,
+        descricao: `<p>Alguns habilidades possuem custos além de PM.</p>
+        <p><b>Componente Material.</b> A habilidade exige ingredientes para ser usada. Esses ingredientes devem estar na mão do personagem e são consumidos com o uso (mesmo que a habilidade falhe).</p>
+        <p><b>Penalidade de PM.</b> A habilidade reduz seus PM máximos enquanto estiver ativa (você não recupera esses PM até a duração da habilidade acabar).</p>
+        <p><b>Sacrifício de PM.</b> Certas habilidades poderosíssimas têm um custo ainda mais alto: você deve sacrificar permanentemente certa quantidade de PM para usá-las.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 224`,
+      },
+      {
+        id: 100,
+        nome: `HABILIDADES: ALCANCE`,
+        descricao: `<p>Muitas habilidades possuem um <I>alcance</I>, isto é, a distância máxima a partir do personagem da qual o efeito pode se originar. Caso alguma parte da área da habilidade esteja além do alcance, a área é afetada normalmente.</p>
+        <p><b>Pessoal.</b> A habilidade afeta somente o personagem e/ou objetos que ele esteja carregando. Também pode ser uma habilidade de área que se inicia a partir do personagem e só o afeta se mencionar.</p>
+        <p><b>Toque.</b> O personagem precisa tocar o alvo em seu alcance natural para afetá-lo, mas não precisa gastar uma ação ou fazer testes para isso (tocar o alvo faz parte da ação da habilidade).</p>
+        <p><b>Curto.</b> A habilidade alcança alvos a até 9m (6 quadrados em um mapa).</p>
+        <p><b>Médio.</b> A habilidade alcança alvos a até 30m (20 quadrados em um mapa).</p>
+        <p><b>Longo.</b> A habilidade alcança alvos a até 90m (60 quadrados em um mapa).</p>
+        <p><b>Ilimitado.</b> A habilidade alcança qualquer lugar no mesmo mundo. A maioria das habilidade com este alcance exige que você conheça e/ou já tenha estado no ponto de origem da habilidade.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 224`,
+      },
+      {
+        id: 101,
+        nome: `HABILIDADES: EFEITOS`,
+        descricao: `<p>Toda habilidade gera um <i>efeito</i> — causar dano em um alvo, fornecer um bônus a você ou qualquer outra coisa. A seguir estão regras gerais para efeitos. Muitos efeitos possuem um tipo (veja a página 228).</p>
+        <h5><b>ALVOS & ÁREAS</b></h5>
+        <p>A maior parte das habilidades atinge um ou mais alvos ou afeta uma área.</p>
+        <p><b>Linha de Efeito.</b> Um caminho direto e sem obstruções até onde a habilidade pode ter efeito. Você deve ter linha de efeito para qualquer alvo ou ponto de origem da área que queira afetar, ou para qualquer espaço onde queira criar um efeito. Qualquer barreira sólida, visível ou não, anula a linha de efeito.</p>
+        <p><b>Alvo.</b> A habilidade afeta um ou mais alvos, que podem ser criaturas ou objetos. Você usa a habilidade sobre os alvos e deve ser capaz de percebê-los. Uma habilidade usada sobre um tipo de alvo errado 224 Jogando falha automaticamente. Por exemplo, a magia Tranca Arcana não tem efeito se lançada sobre algo que não seja uma porta, baú ou semelhante.</p>
+        <p><i>Objetos e Tamanhos.</i> Algumas habilidades se referem a objetos em termos de espaços — consulte o Capítulo 3. Outras habilidades se referem a objetos em termos de categorias de tamanho. Nesse caso, o mestre deve arbitrar a categoria do objeto comparando-o com criaturas. Por exemplo, uma adaga é um objeto Minúsculo, uma carroça é um objeto Grande e um galeão é um objeto Colossal.</p>
+        <p><b>Área.</b> A habilidade afeta uma área. Normalmente, você escolhe um ponto dentro do alcance e que possa perceber para ser a origem da área, mas não controla quais criaturas ou objetos serão afetados — qualquer coisa na área estará sujeita aos efeitos, incluindo você. De acordo com o mestre, você pode usar uma habilidade numa área que não possa perceber com um teste de Percepção (Misticismo no caso de magias) contra CD 20 + custo em PM. Para habilidades com alcance pessoal, você é o ponto de origem e não é afetado (exceto quando dito o contrário). Áreas avançam até seu limite ou até serem interrompidas por uma barreira capaz de bloqueá-las. Em geral, áreas se enquadram em uma das categorias a seguir.</p>
+        <ul>
+        <li><i>Cilindro.</i> Surge na interseção de quatro quadrados, estendendo-se pela largura indicada e subindo até o fim da altura indicada.</li>
+        <li><i>Cone.</i> Surge adjacente a você e se afasta de você na direção escolhida, ficando mais largo com a distância, conforme os modelos da ilustração abaixo.</li>
+        <li><i>Esfera.</i> Surge na interseção de quatro quadrados, estendendo-se em todas as direções até o limite de seu raio.</li>
+        <li><i>Linha.</i> Surge adjacente a você e se afasta de você reta até o fim do alcance. A menos que indicado o contrário, uma linha tem 1,5m de largura.</li>
+        <li><i>Quadrado.</i> Surge no quadrado ou quadrados escolhidos, afetando o piso. Um “cubo” é como um quadrado, mas afeta também a altura.</li>
+        <li><i>Outros.</i> Algumas habilidades podem ter áreas específicas, citadas em sua descrição.</li>
+        </ul>
+        <p><b>Criação.</b> Caso a habilidade crie ou invoque alguma coisa, a coisa aparece em um local a sua escolha dentro do alcance e para o qual você tenha linha de efeito. Após surgir, a coisa pode se mover ou ser movida para fora da linha de efeito. Por exemplo, você não pode conjurar um monstro dentro de uma sala fechada. Mas, uma vez conjurar, o monstro pode entrar na sala, mesmo que você ainda não tenha linha de efeito para o interior dela.</p>
+        <p><b>Redirecionando Efeitos.</b> Algumas habilidades permitem redirecionar seu efeito para novos alvos ou áreas após serem usadas. Quando isso for possível, redirecionar a habilidade é uma ação padrão.</p>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 224 e 225`,
+      },
+      {
+        id: 102,
+        nome: `HABILIDADES: ACUMULANDO EFEITOS`,
+        descricao: `<p>A interação entre diferentes efeitos depende de sua origem. As fontes de efeitos são habilidades, perícias, itens, magias, parceiros e o ambiente.</p>
+        <p>Efeitos de habilidades e perícias acumulam entre si, exceto quando vierem da mesma habilidade ou perícia. Assim, o bônus na Defesa da Pele de Ferro do bárbaro acumula com o bônus na Defesa da Esquiva Sagaz do bucaneiro. Isso não inclui magias.</p>
+        <p>Efeitos de itens, magias, parceiros e o ambiente acumulam com os de outras fontes, mas não entre si. Assim, um personagem com um item que forneça +1 em Fortitude e uma magia que também forneça +1 em Fortitude terá um bônus de +2 nessa perícia. Porém, um personagem com dois itens ou duas magias que forneçam +1 em Fortitude não terá +2 — como os efeitos são da mesma fonte, não acumulam.</p>
+        <p><b>Armaduras.</b> Bônus na Defesa e penalidade de armadura de escudos se acumulam com os de armaduras e um outro item adicional a sua escolha.</p>
+        <p><b>Atributos.</b> O valor de um mesmo atributo não se acumula em características do personagem. Ou seja, um clérigo/druida não soma duas vezes sua Sabedoria nos pontos de mana, assim como um bucaneiro/nobre não soma duas vezes seu Carisma na Defesa. A exceção são perícias: é possível somar um atributo a uma perícia que use este mesmo atributo-chave, mas apenas uma vez. Por exemplo, um caçador pode usar Explorador para somar sua Sabedoria em Percepção e Sobrevivência (perícias que usam Sabedoria).</p>
+        <p><b>Chance de Falha.</b> Chance de falha nunca acumula acima de 75%. Sempre há no mínimo uma chance de 1 em 4 de acertar o alvo.</p>
+        <p><b>Reduções de Custo.</b> Reduções no custo de PM não são cumulativas. Uma habilidade nunca pode ter seu custo reduzido para menos de 1 PM.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 226`,
+      },
+      {
+        id: 103,
+        nome: `HABILIDADES: EFEITOS QUE AFETAM TESTE`,
+        descricao: `<p>Efeitos que fornecem um bônus a um teste ou modificam sua dificuldade devem ser usados antes de rolar o dado. Efeitos que permitem que você role novamente o dado devem ser usados antes de o mestre declarar se você passou ou não no teste (e você deve ficar com o segundo valor rolado, mesmo que seja pior que o primeiro).</p>
+        <p><I>A habilidade Orgulho, do nobre, que fornece um bônus para um teste, deve ser usada antes de rolar o teste. A habilidade Mestre em Arma, do guerreiro, que permite que você role novamente um ataque recém realizado, deve ser usada antes de o mestre declarar se o ataque acertou ou não.</I></p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 226`,
+      },
+      {
+        id: 104,
+        nome: `HABILIDADES: EFEITOS - LIMITES DE NÍVEL`,
+        descricao: `<p>Algumas habilidades são limitadas pelo seu nível. Para classes, use seu nível naquela classe. Para outros casos, seu nível de personagem.</p>
+        <p><I>A habilidade Insolência, do bucaneiro, permite que você some seu Carisma na Defesa, limitado pelo seu nível. Assim, um bucaneiro de 2º nível com Car 3 soma +2 na Defesa. Quando subir para o 3º nível, passará a somar +3. Da mesma forma, um lutador de 4º nível usando a habilidade Voadora soma no máximo +4d6 de dano, mesmo que tenha se deslocado mais de 8 quadrados.</I></p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 226`,
+      },
+      {
+        id: 105,
+        nome: `HABILIDADES: DURAÇÃO`,
+        descricao: `<p>A duração indica por quanto tempo a habilidade mantém seu efeito.</p>
+        <p><b>Instantânea.</b> O efeito da habilidade termina assim que ela é usada, mas suas consequências podem durar mais tempo. Por exemplo, uma magia Curar Ferimentos age instantaneamente, mas os ferimentos continuam curados.</p>
+        <p><b>Cena.</b> A habilidade dura uma cena inteira, encerrando-se quando esse momento da história acaba. Uma cena não tem uma medida fixa. Podem ser algumas rodadas (um combate), alguns minutos (uma conversa entre personagens), horas (atravessar um bosque) ou até dias (uma viagem sem incidentes). Veja mais sobre isso no Capítulo 6: O Mestre.</p>
+        <p><b>Sustentada.</b> A habilidade precisa de um fluxo constante de mana. O personagem deve gastar 1 PM como uma ação livre no início de cada turno seu para manter o efeito ativo. Se não o fizer, a habilidade termina. Você pode manter diversas habilidades sustentadas, pagando o custo de cada uma, mas apenas uma magia sustentada por vez.</p>
+        <p><b>Definida.</b>A duração pode ser medida em rodadas, horas, dias ou outra unidade de tempo.</p>
+        <p><b>Permanente.</b> A habilidade fica ativa para sempre, mas ainda pode ser encerrada de outras formas.</p>
+        <p><b>Duração e Áreas.</b> Caso a habilidade afete uma área, seus efeitos permanecem nessa área pela sua duração. Criaturas e objetos válidos que entrem na área são afetados, deixando de sê-lo quando saem.</p>
+        <p><b>Descarregar.</b> Algumas habilidades duram até serem ativadas e descarregadas. A habilidade permanece “dormente” até que determinado evento aconteça, quando é ativada e descarregada, ou até que sua duração transcorra, quando se encerra sem efeito.</p>
+        <p><b>Encerrando suas habilidades.</b> Um personagem pode encerrar uma habilidade sua e seus respectivos efeitos como uma ação livre.</p>
+        <p><b>Morte e Duração.</b> A morte de um personagem não afeta suas habilidades (exceto sustentadas) — elas permanecem até que sua duração termine.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 227`,
+      },
+      {
+        id: 106,
+        nome: `HABILIDADES: TESTE DE RESISTÊNCIA`,
+        descricao: `<p>Habilidades prejudiciais normalmente permitem que seus alvos façam um teste de resistência para evitar ou reduzir seus efeitos. Se esse for o caso, o tipo de teste (Fortitude, Reflexos ou Vontade) e a maneira como ele altera o efeito serão descritos na habilidade.</p>
+        <p>A CD do teste de resistência para qualquer efeito gerado por um personagem é 10 + metade do nível do personagem + seu valor num atributo. O atributo aparecerá entre parênteses na descrição da fonte do efeito (habilidade ou item; para magias, será sempre o atributo-chave da magia).</p>
+        <p><i>A habilidade Presença Aristocrática, do nobre, tem CD Car, ou seja, a CD para resistir a ela é 10 + metade do nível do personagem + seu Carisma. Para Marsha Yleus, uma humana nobre de 10º nível com Carisma 4, a CD para resistir a essa habilidade é 19 (10 + 5 + 4).</i></p>
+        <p><b>Anula.</b> A habilidade não tem efeito sobre um alvo que passe em seu teste de resistência.</p>
+        <p><b>Parcial.</b> O efeito é menor em um alvo que passe no teste de resistência.</p>
+        <p><b>Reduz à Metade.</b> O efeito é reduzido à metade em um alvo que passe no teste de resistência.</p>
+        <p><b>Desacredita.</b> Um termo específico para efeitos de ilusão. Se uma criatura interagir com a ilusão (examinando-a de perto ou tocando-a; apenas observá-la de longe não é suficiente) tem direito a um teste para perceber que ela não é real. A ilusão continua funcionando mesmo que uma criatura perceba que ela não é real; essa criatura pode avisar seus aliados como uma ação livre, permitindo que eles façam testes para desacreditar.</p>
+        <p><b>Objetos e Dano.</b> A menos que a descrição do efeito diga o contrário, itens carregados não sofrem dano por habilidades (mesmo de área). Objetos soltos sofrem dano (mas somente de habilidades que possam ter objetos como alvo ou afetem uma área).</p>
+        <p><b>Objetos e Testes de Resistência.</b> Para habilidades capazes de afetar objetos e que permitem testes de resistência, itens mundanos soltos falham automaticamente e itens mundanos carregados podem fazer testes com o bônus de seu portador. Itens mágicos sempre podem fazer teste de resistência, usando seu próprio bônus (veja página 334) ou de seu portador, se houver (o que for maior).</p>
+        <p><b>Testes de Perícia.</b> Algumas habilidades incluem testes de perícia para resistir a efeitos. A menos que a descrição indique o contrário, a dificuldade dos testes é igual à CD para resistir à habilidade.</p>
+                `,
+        referencia: `Tormenta 20 Jogo do Ano - página 227`,
+      },
+      {
+        id: 107,
+        nome: `CLARIFICAÇÕES DE REGRAS`,
+        descricao: `<p><b>Arredondando.</b> A menos que indicado o contrário, sempre que um efeito indica uma divisão, arredonde para baixo. Por exemplo, se um ataque causa 7 pontos de dano e um efeito reduz esse dano à metade, o ataque causa apenas 3 pontos de dano.</p>
+        <p><b>Ordem.</b> Se mais de um efeito afetar um valor, siga a ordem de operações padrão. Ou seja, aplique primeiro multiplicações e divisões, depois somas e subtrações. O resultado de um teste de resistência é sempre o primeiro a ser aplicado.</p>
+        <p><i>Por exemplo:</i> um guerreiro usando uma armadura incandescente (que fornece redução de fogo 10) é atingido por uma Bola de Fogo que causa 26 pontos de dano. Primeiro, ele faz seu teste de Reflexos. Se passar, reduz o dano à metade, para 13 (26/2=13).</p>
+        <p>Então, o guerreiro pode usar a habilidade Durão. Se tiver passado no teste de resistência, sofrerá 6 pontos de dano (13/2=6). Se tiver falhado, sofrerá 13 pontos de dano (26/2=13)</p>
+        <p>Por fim, ele aplica sua RD 10. Se tiver passado no teste de resistência e usado a habilidade Durão, não sofrerá dano. Se tiver passado no teste de resistência ou usado a habilidade Durão, sofrerá 3 pontos de dano (13–10=3). Por fim, se não tiver passado no teste nem usado Durão, sofrerá 16 pontos de dano (26–10=16).</p>
+        <p><b>Multiplicações.</b> Se mais de um efeito fizer você multiplicar um valor, combine-os em um único multiplicador, com cada efeito além do primeiro adicionando seu multiplicador –1. Por exemplo, dois efeitos que dobrem o valor (x2 + x2) irão triplicar o valor (2 + [2–1] = 3) em vez de quadruplicá-lo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 226`,
+      },
+      {
+        id: 108,
+        nome: `TIPOS DE EFEITOS DE HABILIDADES`,
+        descricao: `<p>Muitos efeitos são categorizados em um (ou em mais de um) dos tipos a seguir. Por si só, a maioria dos tipos não possui efeito em regras. Contudo, indicam como o efeito interage com outros. Por exemplo, uma criatura com imunidade a medo não será afetada por efeitos do tipo medo.</p>
+        <p><b>Arcano.</b> Gerado pelas energias místicas de Arton. Todos efeitos arcanos são mágicos.</p>
+        <p><b>Atordoamento.</b> Afeta a capacidade de agir do alvo.</p>
+        <p><b>Cansaço.</b> Diminui as capacidades físicas do alvo. Construtos e mortos-vivos são imunes a efeitos de cansaço.</p>
+        <p><b>Climático.</b> Gerado pelas forças da natureza.</p>
+        <p><b>Cura.</b> Cura pontos de vida do alvo.</p>
+        <p><b>Dano.</b> Reduz os PV do alvo. Efeitos deste tipo são subdivividos em tipos de dano (veja a página 230).</p>
+        <p><b>Divino.</b> Gerado pela energia de um deus, direta ou indiretamente. Todos efeitos divinos são mágicos.</p>
+        <p><b>Luz.</b> Efeitos relacionados a dano e cura de luz, iluminação e energia positiva (sinônimo de luz).</p>
+        <p><b>Mágico.</b> Energizados por forças arcanas ou divinas, envolvem magias, efeitos gerados por itens mágicos ou marcados com o símbolo 🧙‍♂️. Podem ser subdivididos em escolas de magia (veja a página 172).</p>
+        <p><b>Medo.</b> Medo capaz de prejudicar o alvo. Criaturas com Inteligência nula são imunes a medo.</p>
+        <p><b>Mental.</b> Afeta a mente do alvo, diminuindo suas capacidades ou influenciando-a. Criaturas com Inteligência nula são imunes a efeitos mentais.</p>
+        <p><b>Metabolismo.</b> Afeta a fisiologia do alvo. Incluem doenças, sangramento e fome. Construtos e mortos-vivos são imunes a efeitos de metabolismo.</p>
+        <p><b>Metamorfose.</b> Altera a forma ou composição corporal do alvo. Inclui petrificação.</p>
+        <p><b>Movimento.</b> Afeta ou remove a capacidade de se movimentar do alvo.</p>
+        <p><b>Perda de Vida.</b> Reduz os PV do alvo. Ao contrário de dano, não é afetado por redução de dano.</p>
+        <p><b>Sentidos.</b> Afeta os sentidos físicos do alvo, por exemplo, deixando-o cego ou surdo.</p>
+        <p><b>Trevas.</b> Efeitos relacionados a necromancia, escuridão e energia negativa (sinônimo de trevas).</p>
+        <p><b>Veneno.</b> Efeitos gerados por venenos. Construtos e mortos-vivos são imunes a venenos.</p>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 228`,
+      },
+      {
+        id: 109,
+        nome: `HABILIDADE GERAL: AGARRAR APRIMORADO`,
+        descricao: `<p>Se a criatura acertar um ataque com uma arma natural (especificada na habilidade), poderá fazer a manobra agarrar com esta arma como uma ação livre. Enquanto está usando a arma natural para agarrar, a criatura não pode usá-la para desferir outros ataques.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 228`,
+      },
+      {
+        id: 110,
+        nome: `HABILIDADE GERAL: CURA ACELERADA`,
+        descricao: `<p>No início de seu turno, a criatura recupera pontos de vida iguais ao seu valor de Cura Acelerada (por exemplo, 5 PV com Cura Acelerada 5). Se houver algum tipo de dano listado após uma barra, a Cura Acelerada não recupera dano daqueles tipos. Por exemplo, uma criatura com Cura Acelerada 10/ácido recupera 10 PV no início de seu turno, a menos que o dano tenha sido causado por ácido. Múltiplas habilidades de Cura Acelerada se acumulam. Cura Acelerada não cura perda de PV, apenas dano.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 228`,
+      },
+      {
+        id: 111,
+        nome: `HABILIDADE GERAL: DESLOCAMENTO DE ESCALADA`,
+        descricao: `<p>Pode caminhar por superfícies verticais e até mesmo de cabeça para baixo como se fossem o chão. O movimento de escalada segue as demais regras de movimento e é afetado pelas características da superfície (uma parede acidentada pode ser considerada terreno difícil, por exemplo). Uma criatura que esteja escalando e perca seu deslocamento de escalada ou a capacidade de realizar ações físicas (como por ficar inconsciente ou paralisada) cai.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 228`,
+      },
+      {
+        id: 112,
+        nome: `HABILIDADE GERAL: DESLOCAMENTO DE ESCAVAÇÃO`,
+        descricao: `<p>Pode se mover sob terreno granular, como terra e areia (mas não atravessar rocha sólida). Após a passagem da criatura, o terreno atrás dela se fecha devido aos restos de material deixados para trás. Deslocamento de escavação pode ser afetado pelas características do solo: por exemplo, um solo pedregoso pode ser considerado terreno difícil.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 228`,
+      },
+      {
+        id: 113,
+        nome: `HABILIDADE GERAL: DESLOCAMENTO DE NATAÇÃO`,
+        descricao: `<p>Pode se deslocar em líquidos sem precisar fazer testes de Atletismo. Porém, assim como criaturas terrestres podem precisar de testes de Acrobacia e Atletismo em certas circunstâncias (como durante um terremoto), uma criatura com deslocamento de natação pode precisar de testes de Atletismo (como em correntes aquáticas muito fortes ou num redemoinho). A criatura não sofre penalidades e limitações por estar submersa (com exceção daquelas relacionadas às suas armas — veja mais na página 269).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 228`,
+      },
+      {
+        id: 114,
+        nome: `HABILIDADE GERAL: DESLOCAMENTO DE VOO`,
+        descricao: `<p>Pode voar. Uma criatura com deslocamento de voo pode encerrar seu deslocamento em pleno ar e pode se mover e atacar como uma criatura terrestre. Uma criatura voando que perca seu deslocamento de voo ou a capacidade de realizar ações cai 150m por rodada. Uma criatura voando que sofra uma manobra derrubar bem-sucedida cai 1d6 x 1,5 m antes de recuperar o voo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 115,
+        nome: `HABILIDADE GERAL: FARO`,
+        descricao: `<p>A criatura tem olfato apurado. Contra inimigos em alcance curto que não possa ver, ela não fica desprevenida e camuflagem total lhe causa apenas 20% de chance de falha.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 116,
+        nome: `HABILIDADE GERAL: IMUNIDADE`,
+        descricao: `<p>A criatura é imune a um tipo de efeito ou outro elemento (como um tipo de dano, uma condição ou uma habilidade). Ela não sofre nenhuma consequência direta daquilo contra a qual ela é imune. Ela ainda pode ser afetada indiretamente — por exemplo, uma criatura imune a efeitos mágicos ainda é afetada por terreno difícil criado por magias. Imunidade a acertos críticos os transforma em acertos normais.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 117,
+        nome: `HABILIDADE GERAL: INCORPÓREO`,
+        descricao: `<p>A criatura não tem corpo físico. Só pode ser afetada por armas e efeitos mágicos (mesmo as com alcance toque) ou outras criaturas incorpóreas. Ela pode atravessar objetos sólidos, mas não manipulá-los e tem Força nula.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 118,
+        nome: `HABILIDADE GERAL: PERCEPÇÃO ÀS CEGAS`,
+        descricao: `<p>A criatura usa sentidos diferentes da visão (como radar, sonar, sensibilidade a vibrações etc.). Efeitos relacionados à visão, como escuridão e invisibilidade, não a afetam. Ela pode fazer testes de Percepção para observar usando estes sentidos, ao invés da visão. Esta habilidade tem alcance curto (a menos que especificado o contrário).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 119,
+        nome: `HABILIDADE GERAL: REDUÇÃO DE DANO(RD)`,
+        descricao: `<p>A criatura ignora parte do dano que sofre. Por exemplo, se uma criatura com RD 5 sofre um ataque que causa 8 pontos de dano, perde apenas 3 PV. A redução pode ser contra um ou mais tipos de dano específicos. Assim, uma criatura com redução de fogo 10 ignora 10 pontos de dano de fogo, mas sofre dano de outros tipos normalmente. Caso haja um ou mais tipos de dano listados após uma barra, a RD não se aplica àqueles tipos. Por exemplo, uma criatura com RD 10/mágico ignora 10 pontos de dano de todos os ataques que sofrer — exceto dano causado por habilidades e armas mágicas. Múltiplos efeitos de RD são cumulativos.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 120,
+        nome: `HABILIDADE GERAL: RESISTÊNCIA A <EFEITO>`,
+        descricao: `<p>A criatura recebe um bônus em testes de resistência contra efeitos do tipo especificado no nome desta habilidade. Por exemplo, uma criatura com resistência a magia +2 recebe +2 em testes de Fortitude, Reflexos ou Vontade contra habilidades mágicas.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 121,
+        nome: `HABILIDADE GERAL: VISÃO NA PENUMBRA`,
+        descricao: `<p>A criatura enxerga em escuridão leve em alcance curto (exceto mágica). Ela ignora camuflagem leve por esse tipo de escuridão (veja a página 318).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 122,
+        nome: `HABILIDADE GERAL: VISÃO NO ESCURO`,
+        descricao: `<p>A criatura enxerga em escuridão total em alcance curto (exceto mágica). Ela ignora camuflagem total por esse tipo de escuridão (veja a página 318).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 123,
+        nome: `HABILIDADE GERAL: VUNERABILIDADE A DANO`,
+        descricao: `<p>A criatura sofre +50% a mais de dano de um tipo específico. Por exemplo, se uma criatura com vulnerabilidade a frio sofre um ataque que causa 15 pontos de dano de frio, ela sofre 22 pontos de dano (15 x 1,5 = 22).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 229`,
+      },
+      {
+        id: 124,
+        nome: `COMBATE: TESTE DE ATAQUE`,
+        descricao: `<p>Este é um tipo específico de teste de perícia, para acertar um alvo com um ataque. Normalmente é um teste de Luta, para um ataque corpo a corpo, ou de Pontaria, para um ataque à distância.</p>
+        <p>A dificuldade do teste é a Defesa do alvo. Se o resultado é igual ou maior que a Defesa do alvo, você acerta e causa dano (veja Dano, a seguir).</p>
+        <p>Um teste de ataque pode sofrer modificadores por habilidades, arma e condições.</p>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 230`,
+      },
+      {
+        id: 125,
+        nome: `COMBATE: DANO`,
+        descricao: `<p>Quando você acerta um ataque, causa dano. Esse dano reduz os pontos de vida do inimigo (veja Ferimentos & Morte, a seguir).</p>
+        <p>Você rola dados para descobrir quanto dano causou. O tipo de dado depende da arma ou ataque utilizado — por exemplo, 1d4 para uma adaga ou 1d8 para uma espada longa. O dano de cada arma é descrito no Capítulo 3: Equipamento. Para ataques corpo a corpo ou com armas de arremesso, você soma sua Força na rolagem de dano.</p>
+        <p>Um teste de ataque pode sofrer modificadores por habilidades, arma e condições.</p>
+        <p><b><center>Dano com Arma Corpo a Corpo ou de Arremesso = Dano da Arma + Força do Atacante</center></b></p>
+        <p><b><center>Dano com Arma de Disparo = Dano da Arma</center></b></p>
+        <p>Assim, um personagem com Força 3 usando uma espada longa causa 1d8+3 pontos de dano (1d8 da espada longa mais 3 da Força).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 230`,
+      },
+      {
+        id: 126,
+        nome: `COMBATE: TIPO DE DANO`,
+        descricao: `<p>Cada arma ou efeito que causa dano possui um tipo, conforme a lista a seguir. Por si só, o tipo de dano não possui efeito em regras. Contudo, indica a relação do dano com outros efeitos. Por exemplo, uma criatura com redução de corte 5 reduz todo dano de corte que sofre em 5.</p>
+        <p><b>Ácido.</b> Certos monstros e perigos naturais, além de itens alquímicos, causam dano deste tipo. Ácido é ligado ao elemento terra.</p>
+        <p><b>Corte.</b> Armas afiadas, como espadas, machados e as garras de um monstro, causam dano de corte.</p>
+        <p><b>Essência.</b> Energia mágica pura, canalizada por magias como Seta Infalível de Talude.</p>
+        <p><b>Fogo.</b> Causado por calor e chamas naturais e mágicas. Fogo é ligado ao elemento... fogo!</p>
+        <p><b>Frio.</b> Algumas magias, além de clima severo, causam dano de frio. Ligado ao elemento água.</p>
+        <p><b>Impacto.</b> Causado por armas de contusão, como clavas e maças, além de ondas de choque, explosões, ataques sônicos e quedas.</p>
+        <p><b>Luz.</b> Magias e outros efeitos provenientes de divindades bondosas causam dano de luz.</p>
+        <p><b>Perfuração.</b> Armas pontudas, como lanças, e mordidas de monstros causam dano de perfuração.</p>
+        <p><b>Psíquico.</b> Ataques mentais e magias que afetam a mente da vítima causam dano deste tipo.</p>
+        <p><b>Trevas.</b> Causado por efeitos de necromancia e ligados a divindades malignas.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 230`,
+      },
+      {
+        id: 127,
+        nome: `COMBATE: ACERTOS CRÍTICOS`,
+        descricao: `<p>Um acerto crítico é um ataque especialmente certeiro, que atinge pontos vitais ou vulneráveis.</p>
+        <p>A tabela de armas do Capítulo 3: Equipamento possui uma coluna “Crítico”. Cada arma tem uma margem de ameaça (que pode ser 18, 19 ou 20) e um multiplicador (que pode ser x2, x3 ou x4). Quando nenhuma margem aparece, será 20. Quando nenhum multiplicador aparece, será x2.</p>
+        <p>Você faz um acerto crítico quando acerta um ataque rolando um valor igual ou maior que a margem de ameaça da arma. Neste caso, multiplica os dados de dano do ataque (incluindo quaisquer aumentos por passos) pelo multiplicador da arma. Bônus numéricos de dano, assim como dados extras (como pela habilidade Ataque Furtivo) não são multiplicados.</p>
+        <p>Certas criaturas são imunes a acertos críticos. Um alvo imune a acertos críticos ainda sofre o dano de um ataque normal.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 230 e 231`,
+      },
+      {
+        id: 128,
+        nome: `COMBATE: INICIATIVA`,
+        descricao: `<p>A cada rodada, todo personagem tem um turno — sua vez de agir. A Iniciativa determina a ordem dos turnos dentro da rodada.</p>
+        <p><b>Teste de Iniciativa.</b> No início do combate, cada jogador faz um teste de Iniciativa para seu personagem. O mestre faz um único teste para os inimigos (caso haja inimigos com bônus de Iniciativa diferentes, o mestre usa o menor valor). Aqueles com os resultados mais altos agem primeiro.</p>
+        <p>No caso de empates, o personagem com o maior modificador de perícia age primeiro. Se o empate persistir, eles fazem um novo teste de Iniciativa entre si, para decidir quem age primeiro.</p>
+        <p>Não é preciso fazer novos testes de Iniciativa a cada rodada; a ordem se mantém durante todo o combate.</p>
+        <p><b>Entrando na Batalha.</b> Se um personagem entra na batalha depois que ela começou, faz um teste de Iniciativa e age quando seu turno chegar, na rodada seguinte.</p>
+        <p><b>Surpresa.</b> Quando o combate começa, se você não percebeu seus inimigos, está surpreendido. Se você está ciente de seus inimigos, mas eles não estão cientes de você, eles é que estão surpreendidos. Caso os dois lados tenham se percebido, ninguém está surpreendido. E se nenhum lado percebe o outro... bem, nenhum combate acontece!</p>
+        <p><b>Percebendo os Inimigos.</b> O mestre diz quem está ciente de seus inimigos no começo do combate. Em geral, ele diz aos jogadores para fazerem testes de Percepção contra uma dificuldade ou opostos pelo teste de Furtividade dos inimigos (caso estes estejam sendo cautelosos).</p>
+        <p>Um personagem que nunca fica surpreendido (por exemplo, se tiver a habilidade Esquiva Sobrenatural) pode rolar a Iniciativa  e agir mesmo que falhe em seu teste de Percepção; de alguma maneira ele já esperava o perigo, ou reage com reflexos impossivelmente rápidos.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 230 e 231`,
+      },
+      {
+        id: 129,
+        nome: `COMBATE: TIPOS DE AÇÕES`,
+        descricao: `<p>No seu turno, você pode fazer uma ação padrão e uma ação de movimento, em qualquer ordem.</p>
+        <p>Você pode trocar sua ação padrão por uma ação de movimento, para fazer duas ações de movimento, mas não pode fazer o inverso.</p>
+        <p>Você também pode abrir mão das duas ações (tanto a padrão quanto a de movimento) para fazer uma ação completa.</p>
+        <p>Portanto, em um turno você pode fazer:</p>
+        <p><b><center>Uma ação padrão e uma ação de movimento;</center></b>
+        <b><center>Ou duas ações de movimento;</center></b>
+        <b><center> Ou uma ação completa.</center></b></p>
+        <p>Você também pode executar qualquer quantidade de ações livres e reações.</p>
+        <p><b>Ação Padrão.</b> Basicamente, uma ação padrão permite que você execute uma tarefa. Fazer um ataque ou lançar uma magia são as ações padrão mais comuns.</p>
+        <p><b>Ação de Movimento.</b> Esta ação representa algum tipo de movimento físico. Seu uso mais comum é percorrer uma distância igual a seu deslocamento. Levantar-se, sacar uma arma, pegar um item de sua mochila, abrir uma porta e subir numa montaria também são ações de movimento.</p>
+        <p><b>Ação Completa.</b> Este tipo de ação exige todo o tempo e esforço normal de uma rodada. Para uma ação completa, você deve abrir mão de sua ação padrão e de sua ação de movimento — mas, normalmente, você ainda pode realizar ações extras, ações livres e reações.</p>
+        <p><b>Ação Livre.</b> Esta ação não exige quase nenhum tempo e esforço, mas ainda só pode ser feita em seu turno. Jogar-se no chão ou gritar uma ordem são ações livres — mas o mestre pode decidir que algo é complicado demais para ser livre. Dar uma ordem curta é uma ação livre, explicar um plano inteiro, não!</p>
+        <p><b>Reação.</b> Uma reação acontece em resposta a outra coisa. Como ações livres, reações tomam tão pouco tempo que você pode realizar qualquer quantidade delas. A diferença é que uma ação livre é uma escolha consciente, executada no turno do personagem. Já uma reação é um reflexo ou uma resposta automática, que pode ocorrer mesmo fora do seu turno. Você pode reagir mesmo se não puder realizar ações normais, como quando estiver atordoado. Um teste de Percepção para perceber um troll escondido no pântano, ou um teste de Reflexos para escapar de uma explosão, são exemplos de reações.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 233`,
+      },
+      {
+        id: 130,
+        nome: `AÇÃO PADRÃO: AGREDIR`,
+        descricao: `<p>Você faz um ataque com uma arma corpo a corpo ou à distância.</p>
+        <p>Com uma arma corpo a corpo, você pode atacar qualquer inimigo dentro de seu alcance natural (1,5m para criaturas Pequenas e Médias ou um inimigo adjacente no mapa). Personagens maiores, ou usando certas armas, podem atacar mais longe. Você pode substituir um ataque corpo a corpo por uma manobra de combate (veja a seguir).</p>
+        <p>Com uma arma de ataque à distância, você pode atacar qualquer inimigo que consiga ver e que esteja no alcance da arma (ou até o dobro do alcance, sofrendo uma penalidade de –5).</p>
+        <p><I>Atirando em Combate Corpo a Corpo.</I> Quando faz um ataque à distância contra uma criatura em combate corpo a corpo, você sofre –5 no teste de ataque. Uma criatura está em combate corpo a corpo se estiver dentro do alcance natural de qualquer inimigo (incluindo você).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 233`,
+      },
+      {
+        id: 131,
+        nome: `AÇÃO PADRÃO: ATROPELAR`,
+        descricao: `<p>Você usa uma ação padrão durante um movimento para avançar pelo espaço ocupado por uma criatura (normalmente, você não pode fazer uma ação padrão durante um movimento; isto é uma exceção). A criatura pode lhe dar passagem ou resistir. Se der passagem, você avança pelo espaço dela; nenhum teste é necessário. Se resistir, faça um teste de manobra oposto; se você vencer, deixa a criatura caída e continua seu avanço. Se o alvo vencer, continua de pé e detém seu avanço. Atropelar é uma ação livre se tentada durante uma investida.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 233 e 234`,
+      },
+      {
+        id: 132,
+        nome: `AÇÃO PADRÃO: FINTAR`,
+        descricao: `<p>Faça um teste de Enganação oposto ao teste de Reflexos de uma criatura em alcance curto. Se você passar, ela fica desprevenida contra seu próximo ataque, mas apenas até o fim de seu próximo turno.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 234`,
+      },
+      {
+        id: 133,
+        nome: `AÇÃO PADRÃO: LANÇAR UMA MAGIA`,
+        descricao: `<p>A maioria das magias exige uma ação padrão para ser executada.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 234`,
+      },
+      {
+        id: 134,
+        nome: `AÇÃO PADRÃO: PREPARAR`,
+        descricao: `<p>Você prepara uma ação (padrão, de movimento ou livre) para realizar mais tarde, após seu turno, mas antes de seu turno na próxima rodada. Diga a ação que vai fazer e em quais circunstâncias (por exemplo, “disparar minha besta na primeira criatura que passar pela porta”). A qualquer momento antes de seu próximo turno, você pode fazer a ação preparada como uma reação a essas circunstâncias.</p>
+        <p>Se, no seu próximo turno, você ainda não tiver realizado sua ação preparada, não pode mais realizá-la (embora possa preparar a mesma ação de novo).</p>
+        <p>Pelo resto do combate, sua Iniciativa fica imediatamente acima da qual você fez a ação preparada.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 135,
+        nome: `AÇÃO PADRÃO: USAR UMA HABILIDADE OU ITEM MÁGICO`,
+        descricao: `<p>Algumas habilidades e itens mágicos, como poções, exigem uma ação padrão para serem usadas.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
     ];
   }
 }
