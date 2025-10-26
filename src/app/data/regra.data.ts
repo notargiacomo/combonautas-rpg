@@ -1061,6 +1061,7 @@ export class RegraData {
         <p><b>Alongada.</b> Dobra o alcance natural do atacante, mas não permite atacar um adversário adjacente.</p>
         <p><b>Desbalanceada.</b> Impõe uma penalidade de –2 em testes de ataque.</p>
         <p><b>Dupla.</b> Pode ser usada com Estilo de Duas Armas (e poderes similares) para fazer ataques adicionais, como se fosse uma arma de uma mão e uma arma leve. Cada “ponta” conta como uma arma separada para efeitos de melhorias e encantos.</p>
+        <p><b>Híbrida (Ameaças de Arton, pag. 393)./b> Uma arma híbrida possui dois ou mais modos de uso. Quando usa a arma, você considera apenas as características do modo que está usando e aplica apenas habilidades e efeitos que afetem este modo. Trocar de modo é uma ação de movimento (ou livre, se você tiver Saque Rápido). Aplicar melhorias e encantos em uma arma híbrida custa o dobro do preço em tibares.</p>
         <p><b>Versátil.</b> Fornece bônus em uma ou mais manobras (cumulativo com outros bônus de itens), conforme a arma.</p>
 
         `,        
@@ -2883,6 +2884,35 @@ export class RegraData {
         <p>Quando ativa um pergaminho, você toma quaisquer decisões exigidas pela magia, como se a tivesse lançado, e aplica habilidades que se aplicariam às suas próprias magias. Caso conheça a magia, pode aplicar aprimoramentos nela, pagando o custo em pontos de mana deles (você paga apenas o custo dos aprimoramentos, não o custo básico da magia).</p>
         `,
         referencia: `Tormenta 20 Jogo do Ano - página 341`,
+      },
+      {
+        id: 182,
+        nome: `ORIGENS REGIONAIS`,
+        descricao: `
+        <p>Origens regionais são relacionadas a um reino ou região de Arton. Você pode escolher uma delas (no lugar de sua origem comum) se for nativo desse local ou tiver passado os seus anos formativos lá.</p>
+        <p>Diferente das origens do livro básico, que representam conceitos amplos, origens regionais fornecem um benefício único, característico do local ao qual pertencem. Se o benefício incluir treinamento em uma perícia na qual você já seja treinado, você pode ser treinado em outra perícia de classe. Para os demais efeitos, use as mesmas regras de origens. Efeitos de origens contam como efeitos de habilidades para fins de acúmulo.</p>
+        `,
+        referencia: `Atlas de Arton - página 470`,
+      },
+      {
+        id: 183,
+        nome: `TATUAGEM MÍSTICA`,
+        descricao: `
+        <p>Os tatuadores tamalus de Khubar podem criar tatuagens especiais com Ofício (tatuador). Essas tatuagens podem ter um entre três benefícios: +1 na Defesa, resistência a magia +2 ou a habilidade de lançar uma magia de 1o círculo (atributochave Sabedoria). Tatuagens precisam estar visíveis para funcionarem e, quando expostas, ocupam o espaço de um item vestido. Cada tatuagem custa T$ 1.000 x sua quantidade de tatuagens místicas (a primeira custa T$ 1.000, a segunda custa T$ 2.000 e assim progressivamente).</p>
+        `,
+        referencia: `Atlas de Arton - página 470`,
+      },
+      {
+        id: 184,
+        nome: `TREINANDO MONTARIAS SELVAGENS`,
+        descricao: `
+        <p>As duas formas mais comuns para um personagem obter uma montaria é por meio de uma habilidade, como Companheiro Animal e Montaria Sagrada, ou usando tibares para comprar um cavalo, trobo ou outra das montarias comumente disponíveis nos mercados de Arton. Entretanto, existe outra maneira: treinar uma criatura selvagem.</p>
+        <p>O primeiro passo para treinar uma criatura é domá-la. Para isso, você precisa capturar a criatura (por meio de uma armadilha, magia etc.) ou derrotá-la em combate. Após isso, deve fazer um teste de Adestramento (CD 15 + ND da criatura). Se passar, você doma a criatura e pode começar a treiná-la. Se falhar, a criatura é muito selvagem para ser treinada.</p>
+        <p>Uma vez que a criatura seja domada, é hora de começar seu treinamento. Isso é um teste estendido de Adestramento (CD 15 + ND da criatura), no qual é necessário um total de sucessos igual a 3 + ND da criatura antes de 3 falhas. Cada teste representa um dia de trabalho e você recebe um bônus cumulativo de +1 para cada sucesso consecutivo. Se passar no teste estendido, transforma a criatura em um parceiro montaria iniciante. Se falhar, precisa começar o treinamento do início.</p>
+        <p>Treinar uma criatura selvagem exige tempo e dedicação. O treinador se torna responsável pela criatura e deve cuidar de sua alimentação, saúde e segurança. Além disso, precisa passar tempo suficiente a seu lado para que ela se acostume com sua presença. Por isso, durante o período de treinamento, você sofre uma penalidade de –2 em testes de perícia e sua recuperação de PM por descanso diminui em um nível.</p>
+        <p>A critério do mestre, estas regras também podem ser usadas para treinar outros tipos de parceiros irracionais (como um animal perseguidor ou vigilante).</p>
+        `,
+        referencia: `Ameaças de Arton - página 224`,
       },
     ];
   }
