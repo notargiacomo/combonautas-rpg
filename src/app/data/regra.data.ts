@@ -2870,7 +2870,7 @@ export class RegraData {
         <p><b>Ativação.</b> Para ativar uma poção você deve bebê-la (a poção afeta quem ingeri-la). Isso exige uma ação padrão. Também é possível dar uma poção a uma criatura inconsciente como uma ação completa ou forçar uma criatura a beber uma poção fazendo a manobra agarrar e então vencendo mais um teste de manobra.</p>
         <p>Ativar um óleo exige uma ação padrão para aplicá-lo no objeto que será afetado. Ativar uma granada exige uma ação padrão para arremessá-la em qualquer ponto em alcance curto (o centro do efeito da magia é o ponto onde a granada foi arremessada).</p>
         `,
-        referencia: `Tormenta 20 Jogo do Ano - páginas 333 e 334`,
+        referencia: `Tormenta 20 Jogo do Ano - página 341`,
       },
       {
         id: 181,
@@ -2882,7 +2882,7 @@ export class RegraData {
         <p><b>Ativação.</b> Para ativar um pergaminho você deve lê-lo em voz alta. Isso exige uma ação padrão ou a ação necessária para lançar a magia, o que for maior. Para ler um pergaminho, você deve conhecer a magia escrita nele ou passar em um teste de Misticismo (CD 20 + custo em PM da magia).</p>
         <p>Quando ativa um pergaminho, você toma quaisquer decisões exigidas pela magia, como se a tivesse lançado, e aplica habilidades que se aplicariam às suas próprias magias. Caso conheça a magia, pode aplicar aprimoramentos nela, pagando o custo em pontos de mana deles (você paga apenas o custo dos aprimoramentos, não o custo básico da magia).</p>
         `,
-        referencia: `Tormenta 20 Jogo do Ano - páginas 333 e 334`,
+        referencia: `Tormenta 20 Jogo do Ano - página 341`,
       },
     ];
   }
