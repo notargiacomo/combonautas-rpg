@@ -2651,6 +2651,239 @@ export class RegraData {
         `,
         referencia: `Tormenta 20 Jogo do Ano - página 260`,
       },
+      {
+        id: 174,
+        nome: `PONTOS DE EXPERIÊNCIA`,
+        descricao: `
+        <p>A progressão em poder de um personagem é medida em níveis. Estes, por sua vez, são obtidos através de pontos de experiência, ou XP — uma medida de quanto um personagem já evoluiu (você pode falar tanto “a XP”, se referindo a experiência, ou “os XP”, se referindo aos pontos de experiência).</p>
+        <p>Você precisa de certa quantidade de XP para subir de nível. Cada desafio vencido (monstro derrotado, armadilha desativada, enigma decifrado...) fornece XP conforme seu nível de desafio, ou ND — uma medida de sua dificuldade.</p>
+        <p>Multiplique o ND da ameaça por 1.000. Essa é a quantidade de XP que esse desafio renderá. Divida igualmente entre os membros do grupo.</p>
+        <p><center><b>Cálculo de Experiência: ND x 1.000 / número de personagens = XP para cada personagem</b></center></p>
+        <p>Assim, derrotar um ogro (ND 5) rende 5.000 XP (5 vezes 1.000). Se forem quatro aventureiros, cada um receberá 1.250 XP (5.000 dividido por 4).</p>
+        <p><b>Vencendo Desafios.</b> Muitos grupos preferem lidar com monstros ou vilões da maneira mais direta e definitiva — matando-os. Porém, você não precisa conceder XP apenas por inimigos mortos: o importante é derrotá-los. Se o necromante maligno é vencido e aprisionado, os aventureiros recebem XP. Se o demônio é banido para sua dimensão de origem, rende XP. Desde que a vitória seja real e decisiva, o XP é o mesmo.</p>
+        <p><b>Desafios Irrelevantes.</b> Personagens só ganham XP por perigos reais. Um desafio cujo ND seja 5 ou mais pontos menor que o nível do grupo não rende XP nenhum — os heróis não podem mais aprender nada enfrentando-o.</p>
+        <p><b>XP Parcial.</b> Em Tormenta20, os personagens ganham XP não apenas por vencer desafios, mas por enfrentá-los. Um desafio vencido traz mais experiência, mas mesmo uma derrota pode ensinar muita coisa! Um desafio vencido rende a XP total pelo ND, como acima. Um desafio que não é vencido, mas que também não derrota os heróis (um empate), rende metade da XP total. Um desafio que derrota os heróis rende um quarto da XP total.</p>
+        <p><b>XP Alternativo.</b> Você pode premiar boas interpretações e ideias com pontos de experiência. Mas cuidado para não distribuir pontos e mais pontos apenas por interpretação, ou você terá um grupo que nunca se aventura, apenas conversa!</p>
+        <h5><p><b>AVANÇOS POR MARCOS</b></p></h5>
+        <p>Nesta opção, os personagens não recebem pontos de experiência. Em vez disso, sobem de nível sempre que alcançam um determinado marco de história.</p>
+        <p>O mestre define os marcos. Normalmente, será o fim de uma aventura. Neste caso, ao término de cada aventura, todos os personagens sobem de nível. Porém, o mestre pode definir outros marcos de acordo com a campanha ou com os objetivos de cada personagem. Por exemplo, se a campanha envolve unir as diferentes tribos bárbaras das Montanhas Sanguinárias para enfrentar um monstro, cada tribo que se aliar ao grupo pode ser um marco.</p>
+        <p>As vantagens desta opção são mudar o foco do jogo — de “derrotar desafios”, ele passa para “avançar a história” — e simplificar a vida do mestre, que não precisa mais calcular a XP de cada sessão. Por outro lado, alguns grupos preferem a abordagem mais exata dos pontos de experiência.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 326`,
+      },
+      {
+        id: 175,
+        nome: `TESOUROS`,
+        descricao: `
+        <p>A profissão de aventureiro é perigosa, mas traz grandes recompensas. Com os espólios de inimigos caídos e os pagamentos por missões completadas, um herói pode se tornar tão rico quanto um rei.</p>
+        <h5><p><b>TESOURO EM COMBATE</b></p></h5>
+        <p>Para determinar o tesouro de um combate, faça os jogadores rolarem duas vezes na Tabela 8-1 (veja as páginas 328 e 329), uma vez na coluna Dinheiro e outra na coluna Itens, na linha equivalente ao ND da criatura derrotada. Assim, se o grupo derrotou um necromante (ND 7), deve rolar duas vezes na linha do ND 7, uma na coluna de Dinheiro e outra na de Itens (os jogadores decidem entre si quem rola). Se o grupo tiver derrotado mais de uma criatura, rola uma vez para cada criatura ou, de acordo com o mestre, uma vez na linha equivalente ao nível de desafio do combate.</p>
+        <p>A descrição da criatura indica o tesouro que ela fornece. “Nenhum” indica que a criatura não traz tesouro; nesse caso, não use a tabela. “Padrão” indica tesouro típico; use a tabela sem modificação. “Metade” indica que a criatura tem poucos tesouros; use a tabela, mas divida pela metade quaisquer resultados rolados na coluna Dinheiro. Por fim, “Dobro” significa que a criatura tem muitos tesouros. Role duas vezes em cada coluna da tabela.</p>
+        <p>A maneira como o grupo encontra o tesouro fica a seu critério. Você pode simplesmente descrever “depois de derrotar os gnolls, vocês vasculham suas bolsas e encontram...” ou preparar algo mais elaborado. Por exemplo, bandidos que ataquem o grupo em uma estrada provavelmente não estarão carregando o seu tesouro consigo. Em vez disso, podem ter um esconderijo próximo onde guardam o fruto de seus roubos. Depois de derrotar os bandidos, os personagens podem vasculhar as redondezas em busca desse esconderijo. Outro exemplo: em uma aventura que envolva explorar um antigo templo, você pode determinar que o tesouro de todos os combates está em uma sala trancada e protegida por armadilhas. Ao derrotar guardas em um corredor, o grupo não encontrará nenhum tesouro. Mas, se conseguirem acesso a essa câmara, terão todo o tesouro de uma só vez. Ou, ainda, em vez de encontrar tesouro de inimigos derrotados, o grupo pode receber um valor equivalente como pagamento por seu empregador. As possibilidades são diversas. E, é claro, em vez de rolar, você pode escolher um tesouro, usando a tabela como guia</p>
+        <h5><p><b>RESULTADO DA TABELA</b></p></h5>
+        <p>Dinheiro. O grupo encontra moedas ou riquezas.</p>
+        <ul>
+        <li><i>Moedas.</i> Você pode apenas descrever o valor (“Vocês encontram 25 TO”) ou detalhar mais (“Vocês encontram 25 Tibares de ouro da época do Rei-Imperador Phylidio, o Tranquilo. Tais moedas são muito valiosas hoje”).</li>
+        <li></i>Riquezas.</i> O grupo encontra um ou mais itens sem uso prático, mas valiosos. Role 1d% na Tabela 8-2 para determinar o valor de venda de cada riqueza. A tabela traz exemplos de itens e, entre parênteses, quantos espaços eles ocupam.</li>
+        </ul>
+        <p>Moedas e riquezas podem ser usadas como elementos de aventura. Por exemplo, se o grupo derrota mercenários contratados por um barão corrupto, pode encontrar moedas com a efígie do nobre, ligando-o os bandidos a ele.</p>
+        <p><b>Itens.</b> O grupo encontra um item diverso, um equipamento, um equipamento superior, uma ou mais poções ou um item mágico.</p>
+        <ul>
+        <li><i>Diverso.</i> Role na Tabela 8-3, na página seguinte, para determinar qual item o grupo encontra.</li>
+        <li><i>Equipamento.</i> Role 1d6 para determinar o tipo de equipamento: 1–3), arma; 4–5) armadura ou escudo; 6) esotérico. Então role na Tabela 8-4, na página seguinte, para determinar o item específico.</li>
+        <li><i>Superior.</i> Role para determinar se é uma arma, armadura/escudo ou esotérico, como acima. Então, para cada melhoria do item, role uma vez na Tabela 8-5: Itens Superiores, na página 332.</li>
+        <li><i>Poções.</i> Veja a página 341.</li>
+        <li><i>Mágico.</i> Role 1d6 para determinar o tipo de item: 1–2) arma (página 336); 3) armadura/escudo (página 339); 4–6) acessório (página 342).</li>
+        </ul>
+        <h5><p><b>TESOUROS EM OUTRAS SITUAÇÕES</b></p></h5>
+        <p>O mestre pode fornecer tesouros por outras situações que não envolvam combate — normalmente na forma de recompensas por atos realizados pelo grupo. Se os personagens resgatam o filho de uma mercadora, ela pode presenteá-los com tesouro.</p>
+        <p>Esta também é uma forma de garantir que o grupo receba o tesouro devido por uma aventura. Se os personagens são convocados por um rei para acabar com uma infestação de aparições, podem passar a aventura sem ganhar nada (pois aparições são criaturas com tesouro “nenhum”). Para resolver isso, no fim da aventura o rei pode recompensá-los com um valor equivalente ao que teriam ganhado pelos combates, se aparições possuíssem tesouro padrão.</p>
+        <h5><p><b>CONTROLANDO RIQUEZAS</b></p></h5>
+        <p>É importante controlar a riqueza do grupo. Personagens com dinheiro demais para seu nível terão acesso a itens que não deveriam ter, tornando os desafios fáceis. Da mesma forma, um grupo muito pobre terá dificuldade para sobreviver!</p>
+        <p>A tabela ao lado apresenta o tesouro médio que o grupo deve receber a cada cena com uma ameaça. A palavra-chave é “médio” — os personagens não precisam ganhar esse valor exato. Mas, se passarem por muitas cenas sem tesouro, faça com que recebam esse valor em outra ocasião (como visto em “Tesouro em Outras Situações”). Por outro lado, se estão muito ricos, devem passar por uma série de cenas sem tesouro, até a situação se normalizar. Um grupo de quatro personagens deve vencer quatro ameaças de ND igual ao seu nível para subir para o próximo. Assim, ao longo de cada nível, um grupo deve conquistar quatro vezes o valor na tabela.</p>
+        <p>Outra maneira de garantir que o grupo tenha riqueza apropriada é comparar seu nível e riqueza com a Tabela 3-1: Dinheiro Inicial. Um personagem de 10º nível, por exemplo, deve ter posses que somam perto de T$ 13.000. Se tiver muito mais ou muito menos, algo está errado e precisa ser ajustado.</p>
+        <table>
+          <caption><b>Tabela 8-6: Tesouro Médio por Cena</b></caption>
+          <thead>
+            <tr>
+              <th>Nível</th>
+              <th>Tesouro</th>
+              <th>Nível</th>
+              <th>Tesouro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1º</td>
+              <td>T$ 300</td>
+              <td>11º</td>
+              <td>T$ 8.000</td>
+            </tr>
+            <tr>
+              <td>2º</td>
+              <td>T$ 300</td>
+              <td>12º</td>
+              <td>T$ 9.000</td>
+            </tr>
+            <tr>
+              <td>3º</td>
+              <td>T$ 400</td>
+              <td>13º</td>
+              <td>T$ 13.000</td>
+            </tr>
+            <tr>
+              <td>4º</td>
+              <td>T$ 1.000</td>
+              <td>14º</td>
+              <td>T$ 17.000</td>
+            </tr>
+            <tr>
+              <td>5º</td>
+              <td>T$ 1.000</td>
+              <td>15º</td>
+              <td>T$ 22.000</td>
+            </tr>
+            <tr>
+              <td>6º</td>
+              <td>T$ 2.000</td>
+              <td>16º</td>
+              <td>T$ 22.000</td>
+            </tr>
+            <tr>
+              <td>7º</td>
+              <td>T$ 2.000</td>
+              <td>17º</td>
+              <td>T$ 40.000</td>
+            </tr>
+            <tr>
+              <td>8º</td>
+              <td>T$ 3.000</td>
+              <td>18º</td>
+              <td>T$ 50.000</td>
+            </tr>
+            <tr>
+              <td>9º</td>
+              <td>T$ 3.000</td>
+              <td>19º</td>
+              <td>T$ 60.000</td>
+            </tr>
+            <tr>
+              <td>10º</td>
+              <td>T$ 6.000</td>
+              <td>20º</td>
+              <td>T$ 72.000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 327 a 332`,
+      },
+      {
+        id: 176,
+        nome: `ITENS MÁGICOS`,
+        descricao: `
+        <p>A magia é uma força poderosa e muito presente em Arton. No entanto, itens mágicos são raros. Os heróis artonianos confiam mais nas próprias capacidades do que em objetos para garantir sua vitória.</p>
+        <p>Por outro lado, itens mágicos são especiais. Uma espada mágica não será apenas uma ferramenta, usada e descartada assim que surgir algo melhor. Um guerreiro precisará lutar muito por sua arma encantada — e, quando encontrá-la, descobrirá que é única, especial e poderosa.</p>
+        <p>Itens mágicos são uma forma marcante de recompensa. Tente pensar em pelo menos um item para cada personagem no grupo, um objeto único ligado a sua personalidade, estilo e táticas, e conceda-os apenas em momentos singulares, após bastante esforço.</p>
+        <p>Itens mágicos são divididos em uso único (poções e pergaminhos) e permanentes (armas, armaduras/ escudos e acessórios). Itens mágicos permanentes ainda são divididos em itens menores, médios e maiores.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 333`,
+      },
+      {
+        id: 177,
+        nome: `USANDO ITENS MÁGICOS`,
+        descricao: `
+        <p>Itens mundanos e mágicos seguem as mesmas regras para acúmulo de bônus e limites de uso e carga. Assim, se um item mundano e um item mágico fornecem um bônus na mesma característica, eles não se acumulam — use apenas o melhor. Da mesma forma, um personagem vestindo dois itens mundanos e dois itens mágicos não receberá os benefícios de um quinto item vestido.</p>
+        <p><b>Limites de Carga.</b> Itens mágicos ocupam espaço como itens mundanos. Uma espada longa flamejante, por exemplo, ocupa 1 espaço — o mesmo que uma espada longa mundana. Acessórios ocupam 1 espaço, a menos que sua descrição indique o contrário. Poções e pergaminhos ocupam meio espaço.</p>
+        <p><b>Ativação e Testes.</b> Para itens mágicos com habilidades ativadas, você precisa primeiro identificá-los (veja a seguir). A menos que sua descrição diga o contrário, ativar um item mágico é uma ação padrão. Para itens com efeitos que exigem teste de resistência, o atributo usado para definir a CD é indicado na descrição do item (para poções e pergaminhos, é Inteligência, Sabedoria ou Carisma, a escolha do usuário).</p>
+        <ul>
+        <li><i>Itens que lançam magias.</i> Lançar magias a partir de itens não exige pronunciar palavras mágicas, gesticular ou se concentrar, e magias arcanas lançadas por meio de itens não sofrem limitação pelo uso de armadura. Você pode usar aprimoramentos, mas precisa pagar por eles.</li>
+        </ul>
+        <p><b>Identificando Itens mágicos.</b> Alguns itens mágicos parecem comuns, sem nada de especial. Outros são visivelmente encantados: brilham, zunem ou são cobertos de runas ou gemas faiscantes. Alguns itens trazem inscrições indicando o que podem fazer; essas podem ser mágicas, mudando para um idioma que você saiba ler, ou exigir fluência em línguas exóticas (veja a perícia Conhecimento). Outros podem não trazer qualquer pista sobre seu funcionamento. Nesse caso, os poderes só ficam claros se você identificar o item. Para isso, use a perícia Misticismo — ou a velha tentativa e erro. Você pode subir naquela vassoura velha e saltar da janela. Se for uma vassoura voadora, você sairá voando. Se não for...</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 333`,
+      },
+      {
+        id: 178,
+        nome: `FABRICANDO ITENS MÁGICOS`,
+        descricao: `
+        <p>Itens mágicos podem ser fabricados por conjuradores e inventores com os poderes apropriados.</p>
+        <h5><p><b>ITENS DE USO ÚNICO</b></p></h5>
+        <p>Para fabricar uma poção ou pergaminho, escolha uma magia ou fórmula que você conheça. Essa será a magia que o item irá conter (poções podem conter apenas magias que tenham como alvo uma criatura ou objeto, ou que tenham efeito em área). O preço do item é T$ 30 x o custo em PM da magia ao quadrado (mínimo 1), e a CD para fabricá-lo é 20 + o custo em PM da magia. A seguir, alguns exemplos.</p>
+        <p><i>Magia de 1º círculo (1 PM): preço = T$ 30 x (1^2) = T$ 30; CD para fabricar = 20 + 1 = CD 21.</i></p>
+        <p><i>Magia de 3º círculo (6 PM): preço = T$ 30 x (6^2) = T$ 1.080; CD para fabricar = 20 + 6 = CD 26.</i></p>
+        <p>Quando fabrica uma poção, você pode aplicar aprimoramentos nela, até seu limite de gasto de PM, como se estivesse lançando a magia. O custo e a CD do teste de Ofício são ajustados de acordo. Quando fabrica um pergaminho, você não pode aplicar aprimoramentos. Porém, pode fazer isso ao ativá-lo.</p>
+        <h5><p><b>ITENS PERMANENTES</b></p></h5>
+        <p>Armas e armaduras mágicas podem ser encantadas ou específicas. Acessórios são sempre específicos.</p>
+        <p><b>Itens Encantados.</b> Funcionam como itens superiores (veja a página 164) — mas, em vez de melhorias, possuem encantos. Um item mágico menor possui um encanto, um médio possui dois e um item mágico maior possui três encantos. O preço e a CD do teste de Ofício aumentam de acordo com o número de encantos (veja a tabela ao lado). Bônus por encantos não se acumulam.</p>
+        <p>Um mesmo item pode ser superior e encantado. Some os modificadores de preço e CD no teste de Ofício, e os bônus fornecidos por melhorias e encantos para determinar o bônus do item.</p>
+        <p>Assim, uma espada longa com um encanto tem preço de T$ 18.015. Fabricá-la exige um gasto de T$ 6.005 e um teste de Ofício contra CD 30. Já uma espada longa com quatro melhorias e três encantos (o máximo possível) tem preço de T$ 90.015 (T$ 15 da espada + T$ 18.000 das quatro melhorias, mais T$ 72.000 dos três encantos). Fabricá-la exige um gasto de T$ 30.005 e um teste de Ofício contra CD 60. Apenas os maiores armeiros são capazes de forjar uma arma dessas!</p>
+        <p><b>Itens Específicos.</b> Usam as regras de fabricação de itens de Ofício. O preço de cada item aparece nas tabelas a seguir. A CD do teste de Ofício é dada pela categoria do item: CD 30 para itens menores, CD 40 para médios e CD 50 para itens maiores. Por fim, a perícia usada é determinada pelo tipo de item: Ofício (armeiro) para armas e armaduras e Ofício (artesão) para acessórios. De acordo com o mestre, outros Ofícios podem ser usados para itens específicos — como Ofício (joalheiro) para um anel. Itens específicos não podem receber encantos. Todas as armas e armaduras específicas deste livro são itens maiores.</p>
+        <p>Custo em Pontos de Mana. Para fabricar um item mágico permanente, o personagem deve sacrificar certa quantidade de pontos de mana: 1 PM para itens menores, 2 PM para médios e 3 PM para itens maiores. É essa essência que irá energizar o item. Os pontos de mana são perdidos para sempre. Contudo, caso o personagem destrua um item mágico permanente que criou, recupera os PM sacrificados naquele item. De acordo com o mestre, outras coisas podem ser sacrificadas no lugar de pontos de mana, como ingredientes raros. Porém, encontrar um ingrediente desses é sempre uma tarefa difícil — talvez o objetivo de uma aventura!</p>
+        <table>
+          <caption><b>Tabela 8-7: Preço de Encantos</b></caption>
+          <thead>
+            <tr>
+              <th>Número de Encantos</th>
+              <th>Aumento no Preço</th>
+              <th>Aumento na CD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>+ T$ 18.000</td>
+              <td>+10</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>+ T$ 36.000</td>
+              <td>+15</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>+ T$ 72.000</td>
+              <td>+20</td>
+            </tr>
+          </tbody>
+        </table>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 333 e 334`,
+      },
+      {
+        id: 179,
+        nome: `DESTRUINDO ITENS MÁGICOS`,
+        descricao: `
+        <p>Para determinar as características de um item mágico, veja a seção “Quebrando Objetos”, do Capítulo 5, para as características de um item normal do mesmo tipo. Itens mágicos permanentes recebem um bônus em PV e RD conforme sua categoria: +10 para itens menores, +20 para médios e +40 para maiores. Por exemplo, uma espada longa (normalmente PV 5 e RD 10) de categoria maior tem PV 45 e RD 50.</p>
+        <p>Um item mágico que não esteja sendo usado faz seus próprios testes de resistência. O bônus depende da categoria: +5 para itens menores, +10 para médios e +20 para maiores. Se estiver sendo usado, pode escolher entre seu bônus ou o do portador.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 333 e 334`,
+      },
+      {
+        id: 180,
+        nome: `POÇÕES`,
+        descricao: `
+        <p>Poções e pergaminhos contêm o efeito de uma magia. Quando são ativados, geram o efeito dessa magia e então desaparecem. Para gerar uma poção aleatoriamente, role na tabela ao lado.</p>
+        <p>Poções e pergaminhos são classificados conforme o círculo da magia que contêm: 1º ou 2º (item mágico menor), 3º ou 4º (médio) e 5º (maior).</p>
+        <p>Uma poção é um líquido mágico armazenado em um frasco de vidro ou cerâmica. Poções que afetam objetos também são chamadas de óleos e poções que geram efeito em área também são chamadas de granadas.</p>
+        <p><b>Ativação.</b> Para ativar uma poção você deve bebê-la (a poção afeta quem ingeri-la). Isso exige uma ação padrão. Também é possível dar uma poção a uma criatura inconsciente como uma ação completa ou forçar uma criatura a beber uma poção fazendo a manobra agarrar e então vencendo mais um teste de manobra.</p>
+        <p>Ativar um óleo exige uma ação padrão para aplicá-lo no objeto que será afetado. Ativar uma granada exige uma ação padrão para arremessá-la em qualquer ponto em alcance curto (o centro do efeito da magia é o ponto onde a granada foi arremessada).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 333 e 334`,
+      },
+      {
+        id: 181,
+        nome: `PERGAMINHOS`,
+        descricao: `
+        <p>Poções e pergaminhos contêm o efeito de uma magia. Quando são ativados, geram o efeito dessa magia e então desaparecem. Para gerar uma poção aleatoriamente, role na tabela ao lado.</p>
+        <p>Poções e pergaminhos são classificados conforme o círculo da magia que contêm: 1º ou 2º (item mágico menor), 3º ou 4º (médio) e 5º (maior).</p>
+        <p>Um pergaminho mágico é uma folha grossa feita de papel, papiro, couro ou outros materiais. Pergaminhos podem conter qualquer magia. Quando as palavras escritas nele são pronunciadas, a magia é ativada e o pergaminho se desfaz em cinzas.</p>
+        <p><b>Ativação.</b> Para ativar um pergaminho você deve lê-lo em voz alta. Isso exige uma ação padrão ou a ação necessária para lançar a magia, o que for maior. Para ler um pergaminho, você deve conhecer a magia escrita nele ou passar em um teste de Misticismo (CD 20 + custo em PM da magia).</p>
+        <p>Quando ativa um pergaminho, você toma quaisquer decisões exigidas pela magia, como se a tivesse lançado, e aplica habilidades que se aplicariam às suas próprias magias. Caso conheça a magia, pode aplicar aprimoramentos nela, pagando o custo em pontos de mana deles (você paga apenas o custo dos aprimoramentos, não o custo básico da magia).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 333 e 334`,
+      },
     ];
   }
 }
