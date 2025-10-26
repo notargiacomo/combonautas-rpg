@@ -2020,6 +2020,527 @@ export class RegraData {
         `,
         referencia: `Tormenta 20 Jogo do Ano - página 234`,
       },
+      {
+        id: 136,
+        nome: `AÇÃO PADRÃO: AGREDIR - MANOBRA DE COMBATE`,
+        descricao: `<p>Uma manobra é um ataque corpo a corpo para fazer algo diferente de causar dano — como arrancar a arma do oponente ou empurrá-lo para um abismo. Não é possível fazer manobras de combate com ataques à distância.</p>
+        <p>Faça um teste de manobra (um teste de ataque corpo a corpo) oposto com a criatura. Mesmo que ela esteja usando uma arma de ataque à distância, deve fazer o teste usando seu valor de Luta. Em caso de empate, o personagem com o maior bônus vence. Se os bônus forem iguais, outro teste deve ser feito. Em geral, você pode usar qualquer arma corpo a corpo para fazer manobras de combate.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 137,
+        nome: `MANOBRA DE COMBATE:  AGARRAR`,
+        descricao: `<p>Você segura uma criatura (por seu braço, sua roupa etc.). Uma criatura agarrada fica desprevenida e imóvel, sofre –2 nos testes de ataque e só pode atacar com armas leves. Ela pode se soltar com uma ação padrão, vencendo um teste de manobra oposto. Você só pode agarrar com um ataque desarmado ou arma natural e, enquanto agarra, fica com essa mão ou arma natural ocupada. Além disso, move-se metade do deslocamento normal, mas arrasta a criatura que estiver agarrando. Você pode soltá-la com uma ação livre. Você pode atacar uma criatura agarrada com sua mão livre. Se preferir, pode substituir um ataque por um teste de agarrar contra a criatura. Se vencer, causa dano de impacto igual a um ataque desarmado ou arma natural. Isso significa que você está esmagando ou sufocando o inimigo.</p>
+        <p>Um personagem fazendo um ataque à distância contra um alvo envolvido na manobra agarrar tem 50% de chance de mirar no alvo errado!</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 138,
+        nome: `MANOBRA DE COMBATE:  DERRUBAR`,
+        descricao: `<p>Você deixa o alvo caído. Esta queda normalmente não causa dano. Se você vencer o teste oposto por 5 pontos ou mais, derruba o oponente com tanta força que também o empurra um quadrado em uma direção a sua escolha. Se isso o jogar além de um parapeito ou precipício, ele pode fazer um teste de Reflexos (CD 20) para se agarrar numa beirada.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 139,
+        nome: `MANOBRA DE COMBATE:  DESARMAR`,
+        descricao: `<p>Você derruba um item que a criatura esteja segurando. Normalmente o item cai no mesmo lugar em que o alvo está (a menos que o alvo esteja voando, sobre uma ponte etc.). Se você vencer o teste oposto por 5 pontos ou mais, derruba o item com tanta força que também o empurra um quadrado em uma direção a sua escolha.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 140,
+        nome: `MANOBRA DE COMBATE:  EMPURRAR`,
+        descricao: `<p>Você empurra a criatura 1,5m. Para cada 5 pontos de diferença entre os testes, você empurra o alvo mais 1,5m. Você pode gastar uma ação de movimento para avançar junto com a criatura (até o limite do seu deslocamento).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 141,
+        nome: `MANOBRA DE COMBATE:  QUEBRAR`,
+        descricao: `
+        <p>Você atinge um item que a criatura esteja segurando. </p>
+        <p>Tentar quebrar ou destruir um objeto — desde uma porta fechada até uma espada empunhada por um inimigo — é similar a atacar uma criatura.</p>
+        <p>Para objetos soltos, faça um ataque contra a Defesa do objeto, definida por sua categoria de tamanho. Se o objeto estiver em movimento, recebe +5 na Defesa. Para um objeto segurado por outra criatura, veja a manobra quebrar.</p>
+        <p>Se você acerta o ataque, causa dano normal. Entretanto, objetos normalmente têm redução de dano, dependendo de seu material. Um objeto reduzido a 0 ou menos PV é destruído.</p>
+        <table>
+          <caption><b>Tabela 5-4: Estatísticas de Objetos</b></caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Exemplo</th>
+              <th scope="col">Tamanho</th>
+              <th scope="col">Def</th>
+              <th scope="col">RD</th>
+              <th scope="col">PV</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="section">
+              <td colspan="5"><strong>Objetos Gerais</strong></td>
+            </tr>
+
+            <tr>
+              <td>Pergaminho</td>
+              <td>Minúsculo</td>
+              <td>15</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Corda</td>
+              <td>Minúsculo</td>
+              <td>15</td>
+              <td>0</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Corrente</td>
+              <td>Minúsculo</td>
+              <td>15</td>
+              <td>10</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Cadeira</td>
+              <td>Pequeno</td>
+              <td>12</td>
+              <td>5</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Barril</td>
+              <td>Médio</td>
+              <td>10</td>
+              <td>5</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Porta de madeira</td>
+              <td>Grande</td>
+              <td>8</td>
+              <td>5</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Porta de pedra</td>
+              <td>Grande</td>
+              <td>8</td>
+              <td>8</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Porta de ferro</td>
+              <td>Grande</td>
+              <td>8</td>
+              <td>10</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Carroça</td>
+              <td>Grande</td>
+              <td>8</td>
+              <td>5</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Casebre</td>
+              <td>Enorme</td>
+              <td>5</td>
+              <td>5</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Celeiro</td>
+              <td>Colossal</td>
+              <td>0</td>
+              <td>5</td>
+              <td>200</td>
+            </tr>
+
+            <tr class="section">
+              <td colspan="5"><strong>Armas, Armaduras e Escudos*</strong></td>
+            </tr>
+
+            <tr>
+              <td>Arma leve de madeira (machadinha)</td>
+              <td></td>
+              <td>5</td>
+              <td></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Arma de uma mão de madeira (clava)</td>
+              <td></td>
+              <td>5</td>
+              <td></td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Arma de duas mãos de madeira (bordão)</td>
+              <td></td>
+              <td>5</td>
+              <td></td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Arma leve de metal (adaga)</td>
+              <td></td>
+              <td>10</td>
+              <td></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Arma de uma mão de metal (espada longa)</td>
+              <td></td>
+              <td>10</td>
+              <td></td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Arma de duas mãos de metal (montante)</td>
+              <td></td>
+              <td>10</td>
+              <td></td>
+              <td>10</td>
+            </tr>
+
+            <tr>
+              <td>Escudo leve</td>
+              <td></td>
+              <td>5</td>
+              <td></td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Escudo pesado</td>
+              <td></td>
+              <td>10</td>
+              <td></td>
+              <td>20</td>
+            </tr>
+
+            <tr>
+              <td>Armadura leve</td>
+              <td></td>
+              <td>5</td>
+              <td></td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Armadura pesada</td>
+              <td></td>
+              <td>10</td>
+              <td></td>
+              <td>40</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                <small>
+                  *Pontos de vida de itens comuns. Divida por 2 para itens reduzidos, multiplique por 2 para itens aumentados e multiplique por 5 para itens gigantes.
+                </small>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 234 e 239`,
+      },
+      {
+        id: 142,
+        nome: `AÇÃO DE MOVIMENTO: LEVANTAR-SE`,
+        descricao: `
+        <p>Levantar do chão (ou de uma cama, cadeira...) exige uma ação de movimento.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 143,
+        nome: `AÇÃO DE MOVIMENTO: MANIPULAR ÍTEM`,
+        descricao: `
+        <p>Muitas vezes, manipular um item exige uma ação de movimento. Pegar um objeto em uma mochila, abrir ou fechar uma porta e atirar uma corda para alguém são ações de movimento.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 144,
+        nome: `AÇÃO DE MOVIMENTO: MIRAR`,
+        descricao: `
+        <p>Você mira em um alvo que possa ver, dentro do alcance de sua arma. Isso anula a penalidade de –5 em testes de Pontaria realizados neste turno contra aquele alvo caso ele esteja engajado em combate corpo a corpo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 145,
+        nome: `AÇÃO DE MOVIMENTO: MOVIMENTAR-SE`,
+        descricao: `
+        <p>Você pode percorrer uma distância igual a seu deslocamento (tipicamente 9m para raças de tamanho Médio). Outros tipos de movimento, como nadar, escalar ou cavalgar, também usam esta ação.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 146,
+        nome: `AÇÃO DE MOVIMENTO: SACAR OU GUARDAR ITEM`,
+        descricao: `
+        <p>Sacar ou guardar um item exige uma ação de movimento.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 234`,
+      },
+      {
+        id: 147,
+        nome: `AÇÃO COMPLETA: CORRIDA`,
+        descricao: `
+        <p>Você corre mais rapidamente que seu deslocamento normal. Veja a perícia Atletismo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 235`,
+      },
+      {
+        id: 148,
+        nome: `AÇÃO COMPLETA: GOLPE DE MISERICÓRDIA`,
+        descricao: `
+        <p>Você desfere um golpe letal em um oponente adjacente e indefeso. Um golpe de misericórdia é um acerto crítico automático. Além de sofrer dano, a vítima tem uma chance de morrer instantaneamente. Esta chance é de 25% (1 em 1d4) para personagens e NPCs importantes e de 75% (1 a 3 em 1d4) para NPCs secundários.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 235`,
+      },
+      {
+        id: 149,
+        nome: `AÇÃO COMPLETA: INVESTIDA`,
+        descricao: `
+        <p>Você avança até o dobro de seu deslocamento (e no mínimo 3m) em linha reta e, no fim do movimento, faz um ataque corpo a corpo. Você recebe +2 no teste de ataque, mas sofre –2 na Defesa até o seu próximo turno, porque sua guarda fica aberta. Você não pode fazer uma investida em terreno difícil. Durante uma investida, você pode fazer a manobra atropelar como uma ação livre (mas não pode atropelar e atacar o mesmo alvo).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 235`,
+      },
+      {
+        id: 150,
+        nome: `AÇÃO COMPLETA: LANÇAR UMA MAGIA`,
+        descricao: `
+        <p>Ao lançar magias com execução maior do que uma ação completa, você gasta uma ação completa a cada rodada.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 235`,
+      },
+      {
+        id: 151,
+        nome: `AÇÃO LIVRE: ATRASAR`,
+        descricao: `
+        <p>Escolhendo atrasar sua ação, você age mais tarde na ordem de Iniciativa, em relação à Iniciativa que rolou. Isto é o mesmo que reduzir sua Iniciativa voluntariamente pelo resto do combate. Quando sua nova Iniciativa chegar, você age normalmente. Você pode especificar este novo valor de Iniciativa ou apenas esperar até algum momento e então agir, fixando sua nova Iniciativa neste ponto. Atrasar é útil para ver o que seus amigos ou inimigos farão, antes de decidir o que você mesmo fará.</p>
+        <ul>
+        <li><i>Limites para atrasar.</i> Você pode atrasar sua Iniciativa até –10 menos seu bônus de Iniciativa. Quando a contagem de Iniciativa chega a esse ponto, você deve agir ou abrir mão de qualquer ação na rodada. Por exemplo, um personagem com um bônus de Iniciativa +3 pode esperar até a contagem de Iniciativa chegar a –13. Nesse ponto, deve agir ou desistir de seu turno. Isso importa quando vários personagens atrasam suas ações.</li>
+        <li><i>Vários atrasos.</i> Se vários personagens estão atrasando suas ações, aquele com o maior bônus de Iniciativa (ou a maior Destreza, em caso de empate) tem a vantagem. Se dois ou mais personagens que estejam atrasando quiserem agir na mesma contagem de Iniciativa, aquele com o maior bônus age primeiro. Se dois ou mais personagens estão tentando agir um depois do outro, aquele com o maior bônus de Iniciativa tem o direito de agir depois.</li>
+        </ul>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 235 e 236`,
+      },
+      {
+        id: 152,
+        nome: `AÇÃO LIVRE: FALAR`,
+        descricao: `
+        <p>Em geral, falar é uma ação livre. Lançar magias ou usar habilidades de classe que dependem da voz não são ações livres. O mestre também pode limitar aquilo que você consegue falar durante uma rodada (vinte palavras são o limite padrão).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 236`,
+      },
+      {
+        id: 153,
+        nome: `AÇÃO LIVRE: JOGAR-SE NO CHÃO`,
+        descricao: `
+        <p>Jogar-se no chão é uma ação livre. Você recebe os benefícios e penalidades normais por estar caído, mas normalmente não sofre dano ao se jogar no chão.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 236`,
+      },
+      {
+        id: 154,
+        nome: `AÇÃO LIVRE: LARGAR UM ITEM`,
+        descricao: `
+        <p>Deixar cair um item que esteja segurando é uma ação livre. Mas deixar cair (ou jogar) um item com a intenção de acertar algo é uma ação padrão. E deixar cair (ou jogar) um item para que outra pessoa agarre é uma ação de movimento.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 236`,
+      },
+      {
+        id: 155,
+        nome: `FERIMENTOS & MORTE`,
+        descricao: `
+        <p>Sempre que você sofre dano — golpeado pelo tacape de um ogro, atingido por uma Bola de Fogo ou caindo em uma armadilha —, subtrai este valor de seus pontos de vida. Você anota seus pontos de vida em sua ficha de personagem ou em qualquer papel de rascunho.</p>
+        <p>O dano pode deixar cicatrizes, amassar sua armadura e sujar sua roupa de sangue, mas não o impede de agir. Isso só muda quando seus pontos de vida chegam a 0 ou menos.</p>
+        <p>Se ficar com 0 PV ou menos, você cai inconsciente e fica sangrando. No início de seu turno, faça um teste de Constituição (CD 15). Se passar, você estabiliza e não precisa mais fazer esse teste (exceto se perder mais PV). Se falhar, você perde 1d6 pontos de vida. Você deve repetir o teste a cada rodada, até estabilizar ou morrer. Um personagem sangrando pode ser estabilizado com um teste de Cura (CD 15) ou com qualquer efeito que cure pelo menos 1 PV.</p>
+        <p>Um personagem com 0 ou menos pontos de vida que recupere PV até um valor positivo (1 ou mais) por causa de uma habilidade, magia ou descanso, recobra a consciência e pode agir normalmente.</p>
+        <p>Quando seus pontos de vida chegam a –10 ou a um número negativo igual à metade de seus PV totais (o que for mais baixo), você morre.</p>
+        <p>Por exemplo: Oberon, o Martelo, um arcanista com 12 PV, morre se chegar a –10 PV. Mais tarde na campanha, Oberon sobe vários níveis e chega a 30 PV. Agora, ele só morre se chegar a –15 PV.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 236`,
+      },
+      {
+        id: 156,
+        nome: `DANO NÃO LETAL`,
+        descricao: `
+        <p>Dano não letal conta para determinar quando você cai inconsciente, mas não para determinar quando você começa a sangrar ou morre. Efeitos de cura recuperam primeiro pontos de vida perdidos por dano não letal.</p>
+        <p>Quase todo dano causado em condições normais (armas, armadilhas, magias...) é letal. Você pode usar uma arma para causar dano não letal (batendo com as partes não afiadas da arma, controlando a força dos golpes ou evitando pontos vitais), mas sofre uma penalidade de –5 no teste de ataque.</p>
+        <p>Ataques desarmados e certas armas específicas causam dano não letal. Você pode usar esses ataques e armas para causar dano letal, mas sofre a mesma penalidade de –5 no teste de ataque.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 236`,
+      },
+      {
+        id: 157,
+        nome: `MOVIMENTAÇÃO: DESLOCAMENTO`,
+        descricao: `
+        <p>Esta é a medida de quantos metros você pode percorrer com uma ação de movimento. O deslocamento padrão é 9m, mas algumas habilidades de raça e classe podem mudá-lo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 238`,
+      },
+      {
+        id: 158,
+        nome: `MOVIMENTAÇÃO: ATRAVESSAR UM ESPAÇO OCUPADO`,
+        descricao: `
+        <p>Você pode atravessar um espaço ocupado por um aliado. No entanto, não pode atravessar um espaço ocupado por um inimigo, a menos que ele esteja caído ou indefeso, ou seja pelo menos três categorias de tamanho maior ou menor que você. Você também pode atravessar um espaço ocupado por um inimigo com Acrobacia ou a ação atropelar. Espaço ocupado por um inimigo conta como terreno difícil.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 238`,
+      },
+      {
+        id: 159,
+        nome: `MOVIMENTAÇÃO: CARGA`,
+        descricao: `
+        <p>Se você estiver sobrecarregado (veja a página 141), seu deslocamento diminui em 3m.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 238`,
+      },
+      {
+        id: 160,
+        nome: `MOVIMENTAÇÃO: DIAGONAIS`,
+        descricao: `
+        <p>Em um mapa, mover-se na diagonal custa o dobro. Ou seja, andar 1,5m (1 quadrado) na diagonal conta como 3m (2 quadrados).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 238`,
+      },
+      {
+        id: 161,
+        nome: `MOVIMENTAÇÃO: OUTROS TIPOS DE MOVIMENTO`,
+        descricao: `
+        <p>Além de andar, você pode gastar uma ação de movimento para se mover de outras maneiras. Consulte as perícias Acrobacia e Atletismo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 238`,
+      },
+      {
+        id: 162,
+        nome: `MOVIMENTAÇÃO: SUBIR OU MERGULHAR`,
+        descricao: `
+        <p>Voando ou nadando, movimentar-se na vertical custa o dobro na subida (ou o triplo em diagonais) e metade na descida (ou o normal em diagonais). Ou seja, voar 1,5m para cima conta como 3m, enquanto voar 3m para baixo conta como 1,5m.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 238`,
+      },
+      {
+        id: 163,
+        nome: `MOVIMENTAÇÃO: TERRENO DIFÍCIL`,
+        descricao: `
+        <p>Lugares onde é difícil andar, como uma floresta cheia de raízes, neve profunda, ruínas com destroços ou mesmo uma rua lotada de pessoas, são terreno difícil. Mover-se em terreno difícil custa o dobro. Ou seja, você se move metade do deslocamento normal — ou gasta 3m de deslocamento por quadrado, em vez de 1,5m.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 238`,
+      },
+      {
+        id: 164,
+        nome: `SITUAÇÕES ESPECIAIS`,
+        descricao: `
+        <table>
+          <caption><b>Tabela 5-3: Situações Especiais</b></caption>
+          <thead>
+            <tr>
+              <th>O atacante está...</th>
+              <th>Modificador no ataque</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Caído</td>
+              <td>-5</td>
+            </tr>
+            <tr>
+              <td>Cego</td>
+              <td>50% de chance de falha</td>
+            </tr>
+            <tr>
+              <td>Em posição elevada</td>
+              <td>+2</td>
+            </tr>
+            <tr>
+              <td>Flanqueando o alvo</td>
+              <td>+2 (apenas para corpo a corpo)</td>
+            </tr>
+            <tr>
+              <td>Invisível</td>
+              <td>+5 (não se aplica a alvos cegos)</td>
+            </tr>
+            <tr>
+              <td>Ofuscado</td>
+              <td>-2</td>
+            </tr>
+            <tr class="section">
+              <td colspan="2"><strong>O alvo está...</strong></td>
+            </tr>
+            <tr>
+              <td>Caído</td>
+              <td>-5 contra ataques corpo a corpo, +5 contra ataques à distância</td>
+            </tr>
+            <tr>
+              <td>Cego</td>
+              <td>-5</td>
+            </tr>
+            <tr>
+              <td>Desprevenido</td>
+              <td>-5</td>
+            </tr>
+            <tr>
+              <td>Sob camuflagem leve</td>
+              <td>20% de chance de falha</td>
+            </tr>
+            <tr>
+              <td>Sob camuflagem total</td>
+              <td>50% de chance de falha</td>
+            </tr>
+            <tr>
+              <td>Sob cobertura leve</td>
+              <td>+2</td>
+            </tr>
+            <tr>
+              <td>Sob cobertura total</td>
+              <td>O alvo não pode ser atacado</td>
+            </tr>
+          </tbody>
+        </table>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 239`,
+      },
+      {
+        id: 165,
+        nome: `SITUAÇÕES ESPECIAIS: CAMUFLAGEM`,
+        descricao: `
+        <p>Você recebe camuflagem leve quando um efeito dificulta a visão dos inimigos. Pode ser escuridão leve, neblina, folhagens ou outro efeito similar no local onde você está ou no espaço entre você e o oponente. Ataques contra você têm 20% de chance de falha (ao fazer um ataque, o atacante rola 1d10 junto com o d20 do teste de ataque; se o resultado desse d10 for 1 ou 2, o ataque erra, independentemente do resultado do teste de ataque).</p>
+        <p>Você recebe camuflagem total quando um efeito impede a visão dos inimigos — por exemplo, em uma câmara em escuridão total. A chance de falha em camuflagem total é 50% (1 a 5 no d10).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 238 e 239`,
+      },
+      {
+        id: 166,
+        nome: `SITUAÇÕES ESPECIAIS: COBERTURA`,
+        descricao: `
+        <p>Você recebe cobertura leve quando está atrás de algo que bloqueia o ataque dos inimigos, como uma árvore, uma muralha de castelo, a lateral de uma carroça ou uma criatura maior. Cobertura leve fornece +5 na Defesa.</p>
+        <p><i>No mapa, o atacante e o alvo escolhem, cada um, um canto do quadrado onde estão. Trace uma linha reta entre os cantos. Se a linha é interrompida por um obstáculo ou criatura, o alvo tem cobertura leve. O alvo não recebe cobertura se a linha seguir ao longo de um obstáculo ou apenas tocar a ponta de um obstáculo.</i></p>
+        <p>Você recebe cobertura total quando seus inimigos não podem alcançá-lo — por exemplo, se estiver atrás de uma parede. Cobertura total impede que você seja atacado.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - páginas 238 e 239`,
+      },
+      {
+        id: 167,
+        nome: `SITUAÇÕES ESPECIAIS: FLANQUEAR`,
+        descricao: `
+        <p>Quando você luta corpo a corpo contra um oponente e um aliado faz o mesmo no lado oposto — ou seja, o inimigo está entre vocês — vocês estão flanqueando o alvo. Ambos recebem +2 em seus testes de ataque contra o alvo flanqueado. Não se pode flanquear à distância ou com ataques desarmados (a menos que você possua as habilidades Briga ou Estilo Desarmado).</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 239`,
+      },
     ];
   }
 }
