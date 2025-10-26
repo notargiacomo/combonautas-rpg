@@ -2541,6 +2541,55 @@ export class RegraData {
         `,
         referencia: `Tormenta 20 Jogo do Ano - página 239`,
       },
+      {
+        id: 168,
+        nome: `NPC: ATITUDE`,
+        descricao: `
+        <pTodo NPC possui uma categoria de atitude em relação a cada personagem — uma medida geral da relação do NPC com o personagem em questão. No geral, você não precisa se preocupar com a categoria de atitude. Porém, ela pode ajudá-lo a determinar o que o NPC está disposto a fazer pelo personagem.</p>
+        <p><b>Prestativo.</b> Adora o personagem e pode ajudá-lo, mesmo correndo perigo. Um herói recebe +5 em testes de persuasão contra NPCs prestativos.</p>
+        <p><b>Amistoso.</b> Gosta do personagem e pode ajudá-lo, mas dificilmente se arriscará por ele.</p>
+        <p><b>Indiferente.</b> Não gosta nem desgosta do personagem. Vai tratá-lo como socialmente esperado. Esta é a categoria padrão.</p>
+        <p><b>Inamistoso.</b> Desgosta do personagem, mas não a ponto de se arriscar para prejudicá-lo. Pode enganá-lo, criar intrigas sobre ele... Um herói sofre –5 em testes de persuasão contra um NPC inamistoso.</p>
+        <p><b>Hostil.</b> Odeia o personagem e vai tentar prejudicá-lo, mesmo correndo perigo — pode roubá-lo ou mesmo atacá-lo! Um herói falha automaticamente em testes de persuasão contra um NPC hostil.</p>
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 259`,
+      },
+      {
+        id: 169,
+        nome: `NPC: TESTES DE PERÍCIAS`,
+        descricao: `
+        <p>Às vezes, uma interação com um NPC exigirá uma estatística de jogo. Por exemplo, se um personagem quiser barganhar com um mercador, você precisará do valor de Vontade dele. Como dito anteriormente, você não precisa ter fichas completas para cada NPC. Em vez disso, use a tabela abaixo. Apenas determine o patamar do NPC de acordo com o papel dele no mundo e se a perícia em questão é “forte” ou “fraca” para ele. Por exemplo, um mercador usaria a coluna “forte” para Diplomacia, Ofício e Vontade, e a coluna “fraca” para as demais perícias.</p>
+        <table>
+          <caption><b>Tabela 6-1: Estatísticas de NPCs</b></caption>
+          <thead>
+            <tr>
+              <th>Patamar</th>
+              <th>Perícia Forte</th>
+              <th>Perícia Fraca</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Iniciante <em>(exemplo: guarda de cidade, mascate...)</em></td>
+              <td>+5</td>
+              <td>+0</td>
+            </tr>
+            <tr>
+              <td>Veterano <em>(capitão da guarda, mercador próspero...)</em></td>
+              <td>+10</td>
+              <td>+3</td>
+            </tr>
+            <tr>
+              <td>Campeão <em>(guarda-costas real, mestre de guilda...)</em></td>
+              <td>+15</td>
+              <td>+6</td>
+            </tr>
+          </tbody>
+        </table>
+
+        `,
+        referencia: `Tormenta 20 Jogo do Ano - página 259`,
+      },
     ];
   }
 }
