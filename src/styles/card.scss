@@ -1,30 +1,26 @@
-.card-padrao {
+// .card-padrao {
+//   width: 100% !important;
+//   padding: 10px !important;
+//   margin: 10px !important;
+//   color: rgb(199, 199, 199) !important;
+// }
+
+.mat-mdc-card {
   width: 100% !important;
   padding: 10px !important;
   margin: 10px !important;
   color: rgb(199, 199, 199) !important;
-}
-
-.mat-mdc-card {
-  color: rgb(221, 221, 221) !important;
+  border-radius: 0px !important; /* Arredonda os cantos */
 }
 
 .mdc-tab__text-label {
   color: rgb(199, 199, 199) !important;
 }
 
-.mat-mdc-card-content .mat-mdc-tab-header {
+.mat-mdc-tab-header {
   border-radius: 10px !important; /* Arredonda os cantos */
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  background-color: rgb(45, 35, 60);
-}
-
-.interior-cartao {
-  border-radius: 10px; /* Arredonda os cantos */
-  overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
-  margin-bottom: 10px !important;
-  text-align: justify;
-  // display: flex;
+  background-color: rgb(45, 35, 60) !important;
 }
 
 .mat-mdc-card-title {
@@ -38,6 +34,32 @@
   align-content: center !important;
 }
 
+.mat-mdc-card-content {
+  overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
+  margin-bottom: 10px !important;
+  text-align: justify;
+  background-color: rgb(120, 80, 160) !important;
+  max-height: 600px !important; /* Defina a altura máxima do card */
+  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+  overflow-y: auto !important;
+  border-color: rgb(45, 35, 60) !important;
+  border: 2px solid rgb(45, 35, 60) !important;
+}
+
+// .mat-mdc-card-content .mat-mdc-tab-header {
+//   border-radius: 10px !important; /* Arredonda os cantos */
+//   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+//   background-color: rgb(45, 35, 60);
+// }
+
+// .interior-cartao {
+//   border-radius: 10px; /* Arredonda os cantos */
+//   overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
+//   margin-bottom: 10px !important;
+//   text-align: justify;
+//   // display: flex;
+// }
+
 .mat-mdc-card-subtitle {
   font-weight: bold !important;
   text-align: center !important;
@@ -48,14 +70,14 @@
   text-align: center !important;
 }
 
-.titulo-cartao-apresentacao .mat-mdc-card-subtitle {
-  text-align: center !important;
+// .titulo-cartao-apresentacao .mat-mdc-card-subtitle {
+//   text-align: center !important;
 
-  background-color: rgb(120, 80, 160) !important;
-  max-height: 600px !important; /* Defina a altura máxima do card */
-  overflow-y: auto !important; /* Habilita o scroll vertical */
-  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
-}
+//   background-color: rgb(120, 80, 160) !important;
+//   max-height: 600px !important; /* Defina a altura máxima do card */
+//   overflow-y: auto !important; /* Habilita o scroll vertical */
+//   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+// }
 
 .mat-mdc-card-title, .mat-mdc-card-subtitle {
   display: block;
