@@ -3731,6 +3731,216 @@ export class RegraData {
         `,
         referencia: `Heróis de Arton - página 273`,
       },
+      {
+        id: 235,
+        nome: `ATRIBUTOS VARIADOS`,
+        descricao: `
+        <p>O livro básico traz duas opções para definir seus atributos: pontos ou rolagem. A seguir estão seis opções novas. Para todas que envolvem rolagens, consulte a tabela em Tormenta20, p. 17, para converter os resultados das rolagens em atributos.</p>
+        <h5><p><b>CLÁSSICA</b></p></h5>
+        <p>Como a rolagem padrão, mas rolando apenas 3d6 (em vez de 4d6 menos o menor). Este método gera personagens fracos — a maior parte dos atributos ficará entre –1 e 2, com valores 3 e 4 sendo raros — e desequilibrados entre si. É indicado para histórias mais realistas, com clima brutal, nas quais os heróis surgem do povo comum. Se quiser ser muito “raiz”, role os valores em ordem (ou seja, a primeira rolagem será sua Força, a segunda sua Destreza e assim por diante) e dê um jeito de jogar com o que sair!</p>
+        <h5><p><b>ÉPICA</b></p></h5>
+        <p>Como a rolagem padrão, mas rolando 3d6+6 menos o menor. O oposto do anterior, este método gera personagens mais poderosos, quase certamente sem nenhum ponto fraco e com menos desequilíbrio entre si. É útil para emular histórias nas quais os heróis são “escolhidos” de algum tipo.</p>
+        <h5><p><b>VALKARIA</b></p></h5>
+        <p>Cada atributo começa em 8 (calma! esse valor será convertido no final). Role 7d6 e aplique cada dado como quiser nos seis atributos. Converta o resultado final para gerar seus atributos, da mesma forma que outros métodos de rolagem, usando a tabela de Tormenta20, p. 17. Você só pode aplicar os dados inteiros (não pode “quebrá-los” em diferentes atributos) e, conforme a tabela, o valor máximo convertido de um atributo é 4, mesmo que o valor inicial seja maior que 18.</p>
+        <p>Exemplo: você rola 7d6 e obtém os resultados 2, 2, 3, 3, 4, 5 e 5. Você decide montar um bárbaro fortão, então aplica os dois 5 em sua Força, para somar 18. Aplica o 4 e o 2 em sua Destreza, para somar 14. Aplica dois 3 em sua Constituição, para somar 14. Por fim, aplica o segundo 2 em sua Sabedoria, para somar 10. Como seus dados acabaram, seus valores de Inteligência e Carisma ficam sendo apenas os 8 iniciais. Assim, seu personagem fica com Força 18 (valor convertido 4), Destreza 14 (2), Constituição 14 (2), Inteligência 8 (–1), Sabedoria 10 (0) e Carisma 8 (–1). Este método pode parecer maluco, mas dá boas chance de o jogador construir um personagem heroico e do jeito que ele quiser.</p>
+        <h5><p><b>KHALMYR</b></p></h5>
+        <p>Distribua os seguintes valores em seus atributos, sem rolar nada: 3, 3, 2, 1, 0 e –1. Isso gera personagens interessantes (com pontos fortes e fracos), mas completamente equilibrados entre si, já que todos do grupo terão os mesmos valores.</p>
+        <h5><p><b>NIMB</b></p></h5>
+        <p>Se o método Valkaria parecia maluco, este de fato é. Role 7d20 e descarte o menor. Então aplique cada um dos seis valores restantes em um atributo e converta-os usando a tabela, com as seguintes adições: resultados 1, 2 ou 3 geram um atributo –3 (sim, você será muito ruim em alguma coisa); resultados 18 ou 19 geram um atributo 4, e um resultado 20 gera um espantoso atributo 5 — um valor impossível de ser gerado em qualquer outro método. Este método pode gerar personagens muito poderosos (ou muito fracos!) e praticamente garante que o grupo será desequilibrado entre si. Use por sua conta e risco.</p>
+        <h5><p><b>PONTOS VARIADOS</b></p></h5>
+        <p>Por fim, você pode usar o método de pontos do livro básico, mas aumentando ou diminuindo a pontuação, para gerar personagens mais ou menos poderosos. Para campanhas “pé no chão”, use 5 pontos. Já para campanhas épicas e exageradas, 15 pontos.</p>        `,
+        referencia: `Heróis de Arton - páginas 280 e 281`,
+      },
+      {
+        id: 236,
+        nome: `RAÇAS ABERTAS`,
+        descricao: `
+        <p>Pela regra padrão, cada raça possui modificadores de atributos que representam as tendências desse povo. Por exemplo, os meios-gigantes galokk tendem a ser mais fortes que os pequeninos hynne, por isso a primeira raça tem um bônus de Força e a segunda, uma penalidade. Mas heróis artonianos são tudo, menos “padrão”! Com esta variante, você pode usar cada modificador de atributo de sua raça em qualquer atributo. Por exemplo, um anão (normalmente Con +2, Sab +1, Des –1) terá os modificadores +2, +1 e –1 para aplicar nos atributos que quiser, enquanto um aggelus (normalmente Sab +2 e Car +1) terá os modificadores +2 e +1. Você não pode aplicar mais de um modificador no mesmo atributo.</p>`,
+        referencia: `Heróis de Arton - página 281`,
+      },
+      {
+        id: 237,
+        nome: `DEVOÇÕES ABERTAS`,
+        descricao: `
+        <p>Esta variante é simples: um personagem pode ser devoto de qualquer divindade, independente de sua raça ou classe. O Panteão está sempre imerso em conflitos, e faz sentido que um deus aceite qualquer devoto para ganhar poder sobre seus irmãos.</p>`,
+        referencia: `Heróis de Arton - página 281`,
+      },
+      {
+        id: 238,
+        nome: `COMPLICAÇÕES`,
+        descricao: `
+        <p>Complicações são restrições e penalidades com as quais seu personagem precisa lidar. Quando você cria seu personagem, pode escolher uma complicação para ele (e apenas uma). Se fizer isso, recebe um poder geral extra. Você é livre para escolher o poder, mas deve preencher seus pré-requisitos.</p>
+        <p>Note que você sempre pode criar adversidades pessoais para seu personagem. Nada o impede de jogar com um bárbaro impulsivo ou um nobre pedante, por exemplo. No entanto, complicações oferecem efeitos em regras para representar isso. Traduzir tudo isso em regras tem duas vantagens: primeiro, garante que essa característica “apareça” nas aventuras e tenha peso na história. Segundo, permite que você tenha um poder a mais sem desequilibrar o jogo, o que por sua vez o ajuda a personalizar ainda mais seu personagem.</p>
+        <p>Em termos de regras, complicações contam como habilidades. Se uma complicação impõe uma condição, você a sofre mesmo que seja imune a ela.</p>
+        <h5><p><b>TIPOS DE COMPLICAÇÕES</b></p></h5>
+        <p>Assim como poderes, complicações são divididas entre gerais e específicas de cada classe. Sua complicação pode ser escolhida entre a lista geral ou entre a lista de sua classe do 1º nível. Se você tiver uma complicação de classe, só recebe e pode usar o poder proveniente dela se pelo menos metade de seus níveis totais forem nessa classe. Por exemplo, se um arcanista 2/guerreiro 2 que tenha uma complicação de arcanista subir de nível de guerreiro, não poderá usar seu poder geral proveniente da complicação.</p>
+        <h5><p><b>COMPLICAÇÕES COMPORTAMENTAIS</b></p></h5>
+        <p>Certas complicações restringem as ações de um herói, seja por traduzirem uma limitação de sua personalidade, seja por representarem um código ou voto que ele decidiu seguir. Essas complicações são marcadas pelo símbolo †. De forma similar aos Códigos de Honra de certas classes (como cavaleiro e paladino), esse símbolo significa que, se você violar a complicação, perde todos os seus PM e só pode recuperá-los a partir do próximo dia.</p>
+        `,
+        referencia: `Heróis de Arton - página 282`,
+      },
+      {
+        id: 239,
+        nome: `REGRA OPCIONAL: SUPERAÇÃO DE COMPLICAÇÃO`,
+        descricao: `
+        <p>Arton é um mundo de heróis — e heróis amadurecem e aprendem ao longo de suas jornadas. Ao longo da campanha, você pode tentar superar sua complicação… Mas saiba que isso não será fácil!</p>
+        <p>Com esta regra opcional, você pode superar sua complicação, na prática removendo-a de sua ficha — mas sem perder o poder que ela forneceu! Para fazer isso, deve estar no patamar campeão (a partir do 11º nível) e fazer uma ação específica durante o jogo. A ação varia de acordo com a complicação. Um aventureiro Cabeça Quente, por exemplo, talvez precise passar alguns meses num mosteiro de Lin-Wu, meditando para aprender a se controlar, enquanto um Fracote talvez precise servir nas legiões do Império de Tauron para ganhar um pouco de massa. Em termos gerais, essa ação deve ser equivalente à admissão em uma distinção. Além da ação em jogo, o herói deve gastar T$ 100 por nível e ser bemsucedido em um treinamento (veja “Tempo entre Aventuras” em Tormenta20, p. 277). Se conseguir isso tudo, o personagem não recebe um benefício de treinamento, mas supera a complicação.</p>
+        <p>Superar uma complicação não é uma tarefa simples, e nem deve ser. O ideal é que seja o clímax de uma jornada pessoal; um marco para o personagem, talvez para o grupo todo! O mestre também pode usar a superação de uma complicação como o objetivo ou a recompensa de uma aventura.</p>
+        <p>O que exatamente a superação representa varia. Se for uma complicação física, talvez ela seja curada, ou talvez você aprenda a conviver com ela. Se for mental, talvez você mude de comportamento após um processo de aprendizado ou mesmo um momento catártico.</p>
+        `,
+        referencia: `Heróis de Arton - página 287 `,
+      },
+      {
+        id: 240,
+        nome: `IDADES VARIADAS`,
+        descricao: `
+        <p>Personagens iniciantes em Tormenta20 normalmente são jovens, na casa dos 20 anos. Contudo, isso é apenas costume, não lei! Se você quiser, seu personagem pode ter uma idade diferente — a ficção está repleta de protagonistas mais novos ou mais velhos.</p>
+        <p>Você pode considerar a idade de seu personagem um fator puramente descritivo, sem efeito em jogo. Se não quiser complicar as coisas, esse é o melhor caminho. Contudo, na vida real a idade é um fator determinante para diversas características pessoais — uma criança dificilmente terá a mesma força física de um adulto, por exemplo. Se você quiser que sua faixa etária tenha consequências em jogo (ou se simplesmente quiser mais um elemento mecânico com o qual construir sua ficha), pode usar as regras opcionais desta seção. Estas regras substituem os modificadores de atributos para personagens mais velhos descritos no livro básico (Tormenta20, p. 108).</p>
+        <h5><p><b>PERSONAGENS DE IDADE VARIADAS</b></p></h5>
+        <p>Para criar um personagem de idade variada, escolha uma faixa etária para ele e aplique os efeitos dela. Existem sete faixas etárias: criança, adolescente, jovem, adulto, maduro, velho e ancião. A faixa etária padrão é jovem, a única que não altera sua ficha — todas as outras trazem benefícios e penalidades.</p>
+        <p>Os efeitos de faixas etárias não são necessariamente equilibrados. No geral, crianças são menos poderosas que adultos, e os efeitos refletem isso. Se você quer um jogo balanceado, sugerimos que não use estas regras — elas são opcionais justamente por trazerem certo desequilíbrio!</p>
+        <table>
+          <caption><b>Tabela 4-2: Faixas Etárias</b></caption>
+          <thead>
+            <tr>
+              <th>Faixa Etária</th>
+              <th>Idade</th>
+              <th>Modificadores</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Criança</td>
+              <td>9–12</td>
+              <td>For –2, Con –1, Sab –1, Tamanho Menor, Protegido dos Deuses, Sem Origem</td>
+            </tr>
+            <tr>
+              <td>Adolescente</td>
+              <td>13–17</td>
+              <td>Sab –1, Ímpeto Juvenil, Origem em Construção</td>
+            </tr>
+            <tr>
+              <td>Jovem</td>
+              <td>18–24</td>
+              <td>Nenhum</td>
+            </tr>
+            <tr>
+              <td>Adulto</td>
+              <td>25–39</td>
+              <td>Um poder geral extra, uma complicação de idade (opcional)</td>
+            </tr>
+            <tr>
+              <td>Maduro</td>
+              <td>40–59</td>
+              <td>Um nível extra, duas complicações de idade</td>
+            </tr>
+            <tr>
+              <td>Velho</td>
+              <td>60–79</td>
+              <td>For –1, Des –1, Con –1, dois níveis extras, três complicações de idade, Aumento de Atributo bloqueado para atributos físicos</td>
+            </tr>
+            <tr>
+              <td>Ancião</td>
+              <td>80+</td>
+              <td>For –2, Des –2, Con –2, três níveis extras, quatro complicações de idade, Aumento de Atributo bloqueado para atributos físicos</td>
+            </tr>
+          </tbody>
+        </table>
+
+        `,
+        referencia: `Heróis de Arton - página 288 `,
+      },
+      {
+        id: 241,
+        nome: `IDADE VARIADA: CRIANÇA`,
+        descricao: `
+        <p>A menor faixa etária possível para personagens jogadores. Obviamente existem pessoas mais novas no mundo, mas não recomendamos jogar com personagens com menos de 9 anos.</p>
+        <p>Crianças nasceram durante a Guerra Artoniana, ou logo antes, mas eram muito pequenas para terem participado do conflito — provavelmente nem lembram dele. Embora não tenham se envolvido diretamente, podem ter sofrido suas consequências. Por exemplo, podem ser órfãos da guerra ou filhos de refugiados. Ou, se tiverem sorte, filhos de soldados que enriqueceram com espólios, ou mesmo de nobres que ganharam terras com as mudanças políticas.</p>
+        <p><b>Força –2, Constituição –1, Sabedoria –1.</b> Crianças são fisicamente mais fracas e frágeis que adultos, além de menos capazes de entender as sutilezas do mundo.</p>
+        <p><b>Tamanho Menor.</b> Você é uma categoria de tamanho menor que o padrão de sua raça (exceto se sua raça já for Minúscula; nesse caso, a mudança é apenas estética).</p>
+        <p><b>Sem Origem.</b> Você não recebe benefícios de origem. Você está apenas começando a viver os anos que definirão quem você será!</p>
+        <p><b>Protegido dos Deuses.</b> Você recebe +2 na Defesa e +5 em todos os testes de resistência. Isso é uma mistura de sorte sobrenatural com o fato de que inimigos normalmente ignoram crianças, justamente por serem menos perigosas.</p>
+        `,
+        referencia: `Heróis de Arton - página 288 `,
+      },
+      {
+        id: 242,
+        nome: `IDADE VARIADA: ADOLECENTE`,
+        descricao: `
+        <p>Muitos aventureiros começam suas carreiras nesta idade. Adolescentes viram a Guerra Artoniana, mas dificilmente terão participado dela. Esta é a categoria de idade mais velha para um personagem que nasceu em Tamu-ra após a libertação da ilha.</p>
+        <p><b>Sabedoria –1.</b> Adolescentes são conhecidos por sua impetuosidade.</p>
+        <p><b>Ímpeto Juvenil.</b> Você recebe +3 pontos de mana. Adolescentes acham que podem fazer qualquer coisa, e essa confiança os torna mais heroicos.</p>
+        <p><b>Origem em Construção.</b> Você recebe apenas um benefício de origem, em vez de dois (se sua origem possuir um único benefício, comece com uma perícia treinada a menos por sua classe).</p>
+        `,
+        referencia: `Heróis de Arton - página 289 `,
+      },
+      {
+        id: 243,
+        nome: `IDADE VARIADA: JOVEM`,
+        descricao: `
+        <p>A idade padrão. Heróis jovens usam as regras básicas de construção de personagem, sem modificadores.</p>
+        <p>Jovens podem ter participado da Guerra Artoniana, mas provavelmente em postos iniciais. Eles podem se lembrar de fatos históricos como as Guerras Táuricas, a Marcha de Arsenal, a batalha dos deuses em Tamura, a Libertação de Valkaria e a coroação de Shivara como Rainha-Imperatriz, mas serão muito novos para terem efetivamente participado desses eventos.</p>
+        `,
+        referencia: `Heróis de Arton - página 289 `,
+      },
+      {
+        id: 244,
+        nome: `IDADE VARIADA: ADULTO`,
+        descricao: `
+        <p>Uma idade comum para aventureiros — pelo menos para aqueles que não morreram em sua primeira caverna infestada de glops! Um personagem adulto pode ter participado dos últimos grandes acontecimentos do mundo, como a Guerra Artoniana, a queda da Flecha de Fogo ou a rebelião de escravos no Império de Tauron. Mesmo que não tenha se envolvido diretamente, pode ter sofrido as consequências deles.</p>
+        <p>Um personagem desta faixa etária também terá visto acontecimentos mais antigos, como a queda do Paladino de Arton, a primeira batalha contra a Tormenta em Trebuck e a Libertação de Valkaria, mas dificilmente terá participado deles.</p>
+        <p><b>Já Vi Coisas.</b> Você pode receber um poder geral. Nesse caso, também recebe uma complicação de idade (veja a seguir).</p>
+        `,
+        referencia: `Heróis de Arton - página 289 `,
+      },
+      {
+        id: 245,
+        nome: `IDADE VARIADA: MADURO`,
+        descricao: `
+        <p>Muitas figuras de autoridade, como burgomestres e capitães da guarda, são desta faixa etária. Elas talvez não tenham o vigor de pessoas mais novas, mas compensam isso com experiência.</p>
+        <p>Um personagem maduro já terá visto muitas coisas. Além de tudo descrito em “Adulto”, acima, ele poderá se lembrar de eventos como a chegada de Mestre Arsenal ao mundo de Arton, a guerra civil de Bielefeld e o surgimento da Tormenta no Império de Jade. Será muito novo para ter participado desses eventos, mas poderá ter lutado contra Arsenal ou nas Guerras Táuricas, e novamente na Guerra Artoniana, sendo um veterano de diversos grandes conflitos.</p>
+        <p><b>Veterano Calejado.</b> Você começa o jogo com um nível adicional em relação aos personagens mais novos do grupo. Por exemplo, se o grupo vai começar no 1º nível, você começa no 2º. Contudo, essa experiência tem seu preço — você recebe duas complicações de idade.</p>
+        `,
+        referencia: `Heróis de Arton - página 289 `,
+      },
+      {
+        id: 246,
+        nome: `IDADE VARIADA: VELHO`,
+        descricao: `
+        <p>Num mundo de problemas como Arton, nem todos chegam a esta idade respeitável. Aqueles que a alcançam muitas vezes assumem posições de respeito, como mestres de guildas, alto sacerdotes ou conselheiros reais. Claro, nem todos atingem tamanha eminência. Alguns, ao chegar a esta idade, serão fazendeiros, artesãos ou estarão descansando em suas casas.</p>
+        <p>Um artoniano velho terá muitas histórias para contar! Ele poderá se lembrar de eventos considerados lendários na era atual, como o eclipse solar no qual Thwor nasceu e a coroação do Rei-Imperador Thormy. Um personagem desta idade poderia até mesmo ter lutado no Dia dos Gigantes, em Valkaria, uma batalha hoje envolta em lendas e mistérios!</p>
+        <p><b>Ai Minhas Costas.</b> Você começa o jogo com dois níveis adicionais. Contudo, perde 1 ponto em todos os atributos físicos (Força, Destreza e Constituição) e recebe três complicações de idade. Além disso, não pode escolher o poder Aumento de Atributo para nenhum atributo físico — infelizmente, os tempos de vigor ficaram para trás. A partir deste ponto, mesmo o mais saudável dos aventureiros começa a sentir que a idade é um caminho sem volta…</p>
+        `,
+        referencia: `Heróis de Arton - página 290 `,
+      },
+      {
+        id: 247,
+        nome: `IDADE VARIADA: ANCIÃO`,
+        descricao: `
+        <p>A última faixa etária. Em Arton, poucas pessoas chegam até aqui — mesmo aqueles que não encontram um fim violento normalmente acabam morrendo de simples velhice antes de se tornarem anciões. Contudo, entre aqueles ricos o bastante para adquirir poções e magias milagrosas (ou tratamento médico de Salistick), atingir este patamar é mais comum.</p>
+        <p>Um ancião é tão velho quanto o antigo ReiImperador Thormy. Ele terá visto diversas mudanças no mundo, como os primeiros contatos formais entre o Reinado e Tamu-ra e a chegada de Lorde Niebling a Arton. As histórias que um ancião escutava quando criança já foram praticamente esquecidas hoje, e falavam sobre o primeiro encontro de Talude e Vectorius, a fundação da Ordem da Luz e a luta contra um antigo deus chamado Sartan.</p>
+        <p><b>O Inverno da Vida.</b> Você começa o jogo com três níveis adicionais. Porém, perde 2 pontos em todos os atributos físicos (Força, Destreza e Constituição) e recebe quatro complicações de idade. Assim como velhos, você não pode escolher o poder Aumento de Atributo para atributos físicos.</p>
+        `,
+        referencia: `Heróis de Arton - página 290 `,
+      },
+      {
+        id: 248,
+        nome: `IDADE VARIADA: O PESO DA IDADE (COMPLICAÇÕES)`,
+        descricao: `
+        <p>Personagens adultos ou mais velhos precisam escolher uma complicação de idade por faixa etária — ou seja, uma para adultos, duas para maduros, três para velhos e quatro para anciões. Como a velhice não atinge todas as pessoas da mesma forma, esta mecânica representa melhor os efeitos do envelhecimento do que os modificadores de atributos da regra padrão. Complicações de idade funcionam como complicações normais (veja p. 282). Seus efeitos se acumulam!</p>
+        `,
+        referencia: `Heróis de Arton - página 290 `,
+      },
+      {
+        id: 249,
+        nome: `IDADE VARIADA: ENVELHECENDO`,
+        descricao: `
+        <p>Quando atinge uma faixa etária maior, você ajusta seus efeitos de idade de acordo. Assim, se for criança e se tornar adolescente, aumenta uma categoria de tamanho e recebe +2 em Força, +1 em Constituição, um benefício de origem e a habilidade Ímpeto Juvenil, mas perde a habilidade Protegido dos Deuses. Se mais tarde se tornar jovem, ganha +1 em Sabedoria e um benefício de origem (completando os dois habituais), mas perde a habilidade Ímpeto Juvenil.</p>
+        <p><b>Histórias de Maioridade.</b> Uma das coisas mais divertidas em uma campanha é acompanhar as mudanças do personagem — não apenas em regras, mas também em personalidade. E não há mudança maior do que a passagem da infância para a vida adulta. Assim, uma opção divertida envolvendo estas regras é começar uma campanha com personagens crianças então, depois de algumas aventuras, fazer um salto temporal, retomando a história com os mesmos heróis, agora crescidos. A personalidade deles pode ser influenciada pelos eventos que aconteceram na sua infância — como no histórico de muitos aventureiros. A diferença aqui é que esses eventos foram jogados!</p>
+        <p><b>Fonte da Juventude.</b> Por padrão, personagens não morrem por causas naturais, mas se o mestre quiser ser mais realista (ou malvado) pode pedir que personagens velhos e anciões rolem 1d20 no início de cada aventura. Num resultado 1 para velhos, e de 1 a 3 para anciões, o tempo do personagem estará chegando ao fim. Durante essa aventura, ele sofre os efeitos de mais uma complicação de idade aleatória — e, após essa última chance de glória, partirá do mundo mortal. A perspectiva da mortalidade pode incentivar os personagens a buscarem a imortalidade. Normalmente, não nos preocupamos em morrer por velhice, mas se isso for uma possibilidade, uma aventura em busca de algum tipo de “fonte da juventude” se torna interessante — especialmente se o rejuvenescimento eliminar as penalidades da idade, mas não seus benefícios.</p>
+        `,
+        referencia: `Heróis de Arton - página 290 `,
+      },
     ];
   }
 }
