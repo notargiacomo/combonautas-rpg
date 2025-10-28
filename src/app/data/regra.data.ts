@@ -3448,6 +3448,289 @@ export class RegraData {
         `,
         referencia: `Heróis de Arton - páginas 242 e 243`,
       },
+      {
+        id: 217,
+        nome: `BASES`,
+        descricao: `
+        <p>Embora a maior parte das histórias falem de aventureiros que vivem na estrada e dormem ao relento, muitos heróis desejam um lar. É claro que, em se falando de aventureiros, esse lugar será mais do que apenas uma casa. Será um refúgio onde descansar após cada expedição, um cofre no qual guardar seus tesouros e uma fortaleza contra ataques inimigos. Será uma base.</p>
+        <p>Uma base é um espaço compartilhado por todo o grupo, com cômodos onde todos os personagens podem morar — assim como seus parceiros e famílias, se assim desejarem. Bases exigem grande investimento, mas fornecem grandes benefícios.</p>
+        `,
+        referencia: `Heróis de Arton - página 244`,
+      },
+      {
+        id: 218,
+        nome: `BASES: ADQUIRINDO UMA`,
+        descricao: `
+        <p>Bases podem ser construídas, recebidas como recompensa por um serviço realizado ou mesmo compradas. Para construir uma base, primeiro é necessário escolher um lugar. Dependendo da região, isso pode ser tão simples quanto encontrar uma clareira ou tão complexo e burocrático quanto comprar um terreno e obter permissões e autorizações da nobreza ou do governo local. Com o lugar escolhido, você deve Bases gastar uma ação entre aventuras (veja Tormenta20, p. 276), T$ 1.000 e fazer um teste de Nobreza (ou de outra perícia que você possa justificar e seja aprovada pelo mestre) com CD 20. Outros personagens podem ajudar no teste de construção gastando suas próprias ações entre aventuras. Se falhar, você pode tentar novamente gastando mais uma ação entre aventuras e T$ 1.000. Se passar, você constrói uma base mínima (veja a tabela abaixo) de um tipo a sua escolha (veja “Tipos de Bases”, a seguir). Pode ter sido caro e demorado, mas agora seu grupo tem um lugar para chamar de seu! A partir disso, você pode trabalhar para expandir a base, então construir cômodos e enchê-los de mobília.</p>
+        <p>Também é possível receber uma base como recompensa por uma aventura — ou até mesmo como parte do tesouro. Um contratante rico pode pagar os heróis por um serviço realizado com uma de suas propriedades. E se os personagens derrotaram um mago vilão… por que não ficar com a torre dele? Por fim, o grupo pode simplesmente comprar sua base. Essa talvez seja a opção mais simples, mas também é a mais cara: o preço de comprar uma base pronta é igual a três vezes o valor da tabela abaixo. Além disso, de acordo com o mestre, pode ser necessário alguns dias procurando um lugar, negociando com o vendedor ou mesmo preenchendo papelada.</p>
+        `,
+        referencia: `Heróis de Arton - página 244`,
+      },
+      {
+        id: 219,
+        nome: `BASES: CARACTERÍSTICAS`,
+        descricao: `
+        <p>Uma base é uma estrutura natural ou fabricada que abriga diversos cômodos e mobílias. Bases podem ser fixas, como uma torre ou um esconderijo em uma caverna, ou móveis, como um navio ou um rochedo voador. Bases possuem as seguintes características.</p>
+        <p><b>Nome.</b> Pode ser o nome da construção ou uma referência a seus moradores.</p>
+        <p><b>Tipo.</b> A natureza da base e seus benefícios iniciais.</p>
+        <p><b>Porte.</b> O tamanho da base.</p>
+        <p><b>Segurança.</b> Um número de 1 a 20 que representa as defesas da base.</p>
+        <p><b>Manutenção.</b> O custo de manter a base, pago no início de cada aventura.</p>
+        <p><b>Cômodos.</b> Aposentos dentro da base, como quartos, bibliotecas e salas de treinamento.</p>
+        <p><b>Mobílias.</b> Móveis e itens de decoração que complementam os cômodos da base.</p>
+        <p>Benefícios fornecidos pelas características da base (tipo, cômodos e mobílias) se acumulam entre si, mas contam como benefícios de estruturas e não se acumulam com os benefícios de outras estruturas (como dádivas, domínios e negócios).</p>
+        <h5><p><b>TIPOS DE BASES</b></p></h5>
+        <p>O tipo da base representa sua forma física e função principal. O tipo é escolhido quando a base é criada e só pode ser alterado por meio de uma reforma (veja o quadro).</p>
+        <p><b>Centro de Poder.</b> A base foi construída sobre um centro de energias mágicas, como um bosque feérico, um pedaço de solo sagrado ou uma intersecção de linhas energéticas. Os residentes recebem +1 PM.</p>
+        <p><b>Empreendimento.</b> A base é parte de um negócio. Uma vez a cada intervalo entre aventuras, um residente pode fazer um teste de Inteligência, com um bônus igual ao número de cômodos que a base pode ter. A base rende um número de tibares de ouro igual ao resultado do teste. O residente pode gastar sua ação nesse intervalo entre aventuras administrando o negócio; se fizer isso, recebe o dobro de dinheiro. Como alternativa, se estiver usando as regras de negócios de Fim dos Tempos Arco 2: Valkaria, em vez disso a base conta como um negócio de nível 1 (e pode receber níveis de negócio separadamente).</p>
+        <p><b>Esconderijo.</b> A base está em um local oculto ou disfarçado, longe de olhos indiscretos. Os residentes recebem +1 em testes de resistência.</p>
+        <p><b>Fortificação.</b> A base é uma estrutura fortificada, como uma torre ou um forte, ou está localizada em um ponto de difícil acesso. Ela recebe +5 em segurança e seus residentes recebem +1 na Defesa.</p>
+        <p><b>Móvel.</b> A base é um veículo terrestre (deslocamento 12m) ou aquático (deslocamento de natação 12m), como uma carroça ou navio. Se for um veículo aquático, ela não pode submergir (a menos que tenha o cômodo cúpula protetora). Em ambos os casos, por estarem acostumados à estrada, os residentes recebem +1,5m em seu deslocamento — além da praticidade de poder mover a base para qualquer lugar.</p>
+        <p><b>Residência.</b> A base é um local confortável e aconchegante, onde os aventureiros podem descansar e relaxar. Cada residente recebe +3 PV e, uma vez por aventura, pode receber os benefícios de um prato especial descrito em Tormenta20 (p. 162).</p>
+        `,
+        referencia: `Heróis de Arton - página 245`,
+      },
+      {
+        id: 220,
+        nome: `BASES: REFORMANDO`,
+        descricao: `
+        <p>A critério do mestre, você pode alterar o tipo da base para outro. Isso é o equivalente a um teste para construir uma base (veja “Adquirindo uma Base”), mas o custo é metade do custo de construção e a CD é 20 + seu número de cômodos. Se passar, você troca o tipo da base. Quaisquer cômodos da base que tenham o tipo anterior como pré-requisito são destruídos no processo. Se falhar, você pode tentar novamente gastando mais uma ação entre aventuras e o valor dos materiais de construção.</p>
+        `,
+        referencia: `Heróis de Arton - página 245`,
+      },
+      {
+        id: 221,
+        nome: `BASES: PORTE`,
+        descricao: `
+        <p>O porte de uma base determina o espaço que ela ocupa, sua manutenção (bases maiores são mais caras de manter) e quantos cômodos ela pode abrigar. Uma base recém-construída é mínima (bases compradas ou recebidas podem ter qualquer porte).</p>
+        <p>Você pode aumentar o porte da base com uma ação entre aventuras. Para isso, gaste a diferença de preço entre o porte atual e o próximo (por exemplo, T$ 2.000 para subir de porte mínimo para modesto) e faça um teste como descrito em “Adquirindo uma Base”, mas com CD 20 + o número de cômodos do novo porte. Se passar, você amplia o porte da base em uma categoria. Se falhar, pode tentar novamente gastando mais uma ação entre aventuras e o valor dos materiais de construção.</p>
+        `,
+        referencia: `Heróis de Arton - página 245`,
+      },
+      {
+        id: 222,
+        nome: `BASES: SEGURANÇA`,
+        descricao: `
+        <p>Um número de 0 a 20 que representa as defesas da base. Invasores com ND inferior à segurança da base sofrem uma penalidade em testes de perícia e rolagens de dano dentro dela igual à diferença entre seu ND e o valor de segurança. Já criaturas com ND 5 pontos abaixo da segurança não conseguem invadir a base. A segurança de uma base recém-criada é 0.</p>
+        `,
+        referencia: `Heróis de Arton - página 246`,
+      },
+      {
+        id: 223,
+        nome: `BASES: MANUTENÇÃO`,
+        descricao: `
+        <p>As despesas recorrentes para que a base esteja sempre em ordem, como limpeza, reparos e criadagem. Ela depende de seu porte e deve ser paga no início de cada aventura; caso contrário, um dos cômodos da base é danificado e deixa de fornecer seus bônus até ser reparado (o que exige uma ação entre aventuras e o gasto de metade do custo do cômodo).</p>
+        `,
+        referencia: `Heróis de Arton - página 246`,
+      },
+      {
+        id: 224,
+        nome: `BASES: CÔMODOS`,
+        descricao: `
+        <p>Cômodos são as instalações de uma base. Cada base pode ter um número máximo de cômodos de acordo com seu porte. Para construir um cômodo, você precisa gastar uma ação entre aventuras e T$ 1.000 e fazer um teste de Nobreza, ou de outra perícia que você possa justificar e que seja aprovada pelo mestre. A CD é 20 + o número de cômodos que a base pode ter. Se você passar, o cômodo é construído. Se falhar, pode tentar novamente gastando mais uma ação entre aventuras e o custo do cômodo. Exceto quando algo for descrito em contrário, os benefícios de um cômodo se aplicam a todos os residentes.</p>
+        `,
+        referencia: `Heróis de Arton - página 246`,
+      },
+      {
+        id: 225,
+        nome: `BASES: MOBÍLIAS`,
+        descricao: `
+        <p>De tapeçarias a cabeças de monstros empalhadas, mobílias são objetos que podem ser incluídos em um cômodo para melhorar suas funcionalidades. Mobílias são adquiridas como itens comuns, podendo ser compradas, fabricadas (contam como equipamentos de aventura) ou mesmo encontradas como tesouros. Cada cômodo pode conter uma mobília, e os efeitos da mobília se acumulam com aqueles fornecidos pelo cômodo. Mobílias podem ser movidas de um cômodo para outro entre aventuras, mas uma mesma mobília só pode afetar um único cômodo a cada aventura.</p>        `,
+        referencia: `Heróis de Arton - página 250`,
+      },
+      {
+        id: 226,
+        nome: `BASES: TESOURO OU MOBÍLIA?`,
+        descricao: `
+        <p>A critério do mestre, tesouros encontrados em aventuras podem ser usados como mobílias. A chave simbólica de uma cidade, presenteada por seu grato burgomestre, ou uma flor encantada, entregue por uma dríade, podem lembrar os heróis de vitórias passadas. Os benefícios dessas mobílias ficam a cargo do mestre.</p>
+        `,
+        referencia: `Heróis de Arton - página 251`,
+      },
+      {
+        id: 227,
+        nome: `ESOTÉRICOS MÁGICOS`,
+        descricao: `
+        <p>Esotéricos mágicos funcionam de forma similar a armas mágicas, podendo ser tanto encantados quanto específicos (Tormenta20, p. 334).</p>
+        `,
+        referencia: `Heróis de Arton - página 260`,
+      },
+      {
+        id: 228,
+        nome: `ACESSÓRIOS MÁGICOS`,
+        descricao: `
+        <p>Acessórios representam versões mágicas de itens gerais e pertencem às mesmas categorias desses itens. Quando a descrição de um acessório não especificar sua categoria, guie-se por sua descrição e pela lógica. Uma flauta fantasma, por exemplo, é um instrumento musical, enquanto um chapéu do disfarce é um vestuário. O mestre tem a palavra final quanto à categoria de cada acessório. Acessórios mágicos funcionam de forma similar a armas mágicas, podendo ser tanto encantados quanto específicos (Tormenta20, p. 334).</p>
+        `,
+        referencia: `Heróis de Arton - página 262`,
+      },
+      {
+        id: 229,
+        nome: `ENCANTOS PARA ACESSÓRIOS`,
+        descricao: `
+        <p>Encantos para acessórios são aplicados a itens gerais (exceto esotéricos, que possuem sua própria seção; veja acima). A descrição de cada encanto indica para qual tipo de item ele se aplica.</p>
+        `,
+        referencia: `Heróis de Arton - página 262`,
+      },
+      {
+        id: 230,
+        nome: `ITENS INTELIGENTES`,
+        descricao: `
+        <p>Itens inteligentes são itens mágicos que, através de um evento específico, adquiriram consciência e capacidade de raciocínio alimentadas por magia. Mais do que simples objetos encantados, tornaram-se indivíduos únicos, dotados de personalidade e, muitas vezes, objetivos próprios. A inteligência de um item não pode ser fabricada como um mero encanto: cada um adquire suas faculdades mentais por meio de um evento único, específico de suas histórias particulares.</p>
+        <p>Objetos sencientes são raríssimos — menos de 1% dos itens mágicos são inteligentes. Eles pensam e agem como seres vivos, e devem ser tratados como NPCs, em vez de meras anotações nas fichas dos heróis. Assim, o mestre deve pensar com cuidado antes de colocar um item mágico inteligente na campanha.</p>
+        <p>Em termos de regras, um item inteligente é um item mágico único, com um conjunto de características adicionais que representam suas capacidades mentais — <i>nível, atributos, sentidos, comunicação, poderes secundários e pontos de mana</i>. Tornar-se inteligente não muda a categoria de poder do item — ele segue sendo menor, médio, maior ou artefato, como antes de adquirir consciência.</p>
+        `,
+        referencia: `Heróis de Arton - página 269`,
+      },
+      {
+        id: 231,
+        nome: `ITENS INTELIGENTES: CRIANDO UM ITEM MÁGICO INTELIGENTE`,
+        descricao: `
+        <p>Para criar um item mágico inteligente, primeiro gere um item mágico normal. Então leia as instruções a seguir para definir suas características adicionais.</p>
+        <p><b>Nível.</b> O nível do item inteligente é determinado por sua categoria de item mágico: menor, 9º; médio, 13º; maior, 17º, e artefato, 20º.</p>
+        <p><b>Atributos.</b> Itens mágicos inteligentes possuem apenas valores de atributos mentais — sua Força, Destreza e Constituição são nulas. Para definir os atributos do item, role 3d6 e converta o resultado rolado em um valor de atributo usando a Tabela 1-1 (Tormenta20, p. 17). Esta será a Inteligência do item. Repita o processo duas vezes para gerar sua Sabedoria e seu Carisma. Então, role 1d% na Tabela 3-12 (na página a seguir) e aplique os modificadores da coluna “Atributos”.</p>
+        <p><b>Sentidos.</b> Itens mágicos inteligentes podem ver e ouvir como seres humanos. Alguns, além dos sentidos comuns, possuem também visão no escuro e percepção às cegas. Para definir os sentidos do item, role 1d% na Tabela 3-12.</p>
+        <p><b>Comunicação.</b> Itens mágicos inteligentes podem se comunicar com seus usuários. Esta comunicação é rudimentar — o item pode apenas transmitir impulsos que incentivam (ou não) certas ações. O que um item específico incentiva depende de sua personalidade. Alguns itens mágicos podem falar ou comunicar-se telepaticamente (apenas com o usuário). Para definir as capacidades de comunicação do item, role 1d% na Tabela 3-12.</p>
+        <p><b>Poderes Secundários.</b> Além de seus encantos, itens mágicos inteligentes possuem um ou mais poderes secundários. Poderes secundários são divididos em menores e maiores. Para definir quantos poderes o item possui e de quais tipos, role 1d% na Tabela 3-12 (sim, ela de novo… e pela última vez).</p>
+        <ul>
+        <li><i>Treinamento em Perícia.</i> O item é treinado nas perícias indicadas. Ele faz testes usando seu próprio nível e atributo e, a menos que esteja sendo empunhado para outra ação (como uma arma sendo usada para atacar), pode fazer testes usando suas próprias ações.</li>
+        <li><i>Magias.</i> O item pode lançar as magias indicadas. Ele usa seu próprio nível e atributo e gasta seus próprios PM para isso. Ele gasta sua própria ação, a menos que esteja sendo empunhado para outra ação. O mestre define o atributo-chave dos poderes do item (em geral Carisma).</li>
+        </ul>
+        <p>Pontos de Mana. Um item inteligente possui sua própria reserva de PM, que é igual à soma do nível dele mais seus atributos mentais. Esses PM podem ser usados pelo item para ativar seus poderes, ou podem ser gastos pelo usuário para habilidades do próprio usuário. Nesse caso, cada PM gasto custa 2 PM do item. Itens inteligentes precisam ficar inertes por 8 horas por dia para recuperar seus PM. Quando fazem isso, recuperam 1 PM por nível (veja abaixo, eles não são afetados por condições de descanso).</p>
+        <table>
+          <caption><b>Tabela 3–13: Capacidades de Itens Mágicos Inteligentes</b></caption>
+          <thead>
+            <tr>
+              <th>d%</th>
+              <th>Atributos</th>
+              <th>Sentidos</th>
+              <th>Comunicação</th>
+              <th>Poderes Secundários</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01–25</td>
+              <td>Int –1, Sab +0, Car –2</td>
+              <td>Visão e audição normais</td>
+              <td>Empatia</td>
+              <td>Um menor</td>
+            </tr>
+            <tr>
+              <td>26–50</td>
+              <td>Int +0, Sab +1, Car –1</td>
+              <td>Visão e audição normais</td>
+              <td>Empatia</td>
+              <td>Dois menores</td>
+            </tr>
+            <tr>
+              <td>51–75</td>
+              <td>Int +1, Sab +2, Car +0</td>
+              <td>Visão no escuro</td>
+              <td>Fala</td>
+              <td>Dois menores e um maior</td>
+            </tr>
+            <tr>
+              <td>76–90</td>
+              <td>Int +2, Sab +3, Car +1</td>
+              <td>Percepção às cegas (curto)</td>
+              <td>Fala</td>
+              <td>Três menores e um maior</td>
+            </tr>
+            <tr>
+              <td>91–100</td>
+              <td>Int +3, Sab +4, Car +2</td>
+              <td>Percepção às cegas (médio)</td>
+              <td>Telepatia</td>
+              <td>Três menores e dois maiores</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption><b>Tabela 3–14: Poderes de Itens Mágicos Inteligentes</b></caption>
+          <thead>
+            <tr>
+              <th>d%</th>
+              <th>Poder Menor</th>
+              <th>d%</th>
+              <th>Poder Maior</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>01–10</td><td>Pode lançar <em>Adaga Mental</em></td><td>01–08</td><td>Pode lançar <em>Augúrio</em></td></tr>
+            <tr><td>11–15</td><td>Pode lançar <em>Bênção</em> (apenas no usuário)</td><td>09–14</td><td>Pode lançar <em>Campo de Força</em></td></tr>
+            <tr><td>16–19</td><td>Pode lançar <em>Compreensão</em></td><td>15–20</td><td>Pode lançar <em>Círculo da Justiça</em></td></tr>
+            <tr><td>20–22</td><td>Pode lançar <em>Controlar Plantas</em></td><td>21–26</td><td>Pode lançar <em>Condição</em></td></tr>
+            <tr><td>23–26</td><td>Pode lançar <em>Criar Ilusão</em></td><td>27–31</td><td>Pode lançar <em>Controlar Fogo</em></td></tr>
+            <tr><td>27–31</td><td>Pode lançar <em>Disfarce Ilusório</em></td><td>32–40</td><td>Pode lançar <em>Curar Ferimentos</em></td></tr>
+            <tr><td>32–33</td><td>Pode lançar <em>Escuridão</em></td><td>41–45</td><td>Pode lançar <em>Desespero Esmagador</em></td></tr>
+            <tr><td>34–36</td><td>Pode lançar <em>Hipnotismo</em></td><td>46–50</td><td>Pode lançar <em>Globo da Verdade de Gwen</em></td></tr>
+            <tr><td>37–40</td><td>Pode lançar <em>Visão Mística</em></td><td>51–55</td><td>Pode lançar <em>Ligação Telepática</em></td></tr>
+            <tr><td>41–45</td><td>Pode lançar <em>Vitalidade Fantasma</em></td><td>56–60</td><td>Pode lançar <em>Localização</em></td></tr>
+            <tr><td>46–55</td><td>Treinado em <em>Conhecimento e Religião</em></td><td>61–65</td><td>Pode lançar <em>Purificação</em></td></tr>
+            <tr><td>56–65</td><td>Treinado em <em>Diplomacia e Nobreza</em></td><td>66–75</td><td>Pode lançar <em>Raio Solar</em></td></tr>
+            <tr><td>66–75</td><td>Treinado em <em>Enganação e Jogatina</em></td><td>76–80</td><td>Pode lançar <em>Soco de Arsenal</em></td></tr>
+            <tr><td>76–80</td><td>Treinado em <em>Intimidação e Sobrevivência</em></td><td>81–85</td><td>Pode lançar <em>Sopro das Vivantes</em></td></tr>
+            <tr><td>81–90</td><td>Treinado em <em>Intuição e Percepção</em></td><td>86–90</td><td>Pode lançar <em>Velocidade</em></td></tr>
+            <tr><td>91–100</td><td>Treinado em <em>Misticismo</em></td><td>91–100</td><td>Fornece +1 em um atributo do usuário (defina aleatoriamente)</td></tr>
+          </tbody>
+        </table>
+        <p><small>Se um mesmo poder for rolado mais de uma vez, ignore e role novamente.</small></p>
+
+        `,
+        referencia: `Heróis de Arton - páginas 269 e 270`,
+      },
+      {
+        id: 232,
+        nome: `ITENS INTELIGENTES: EGO`,
+        descricao: `
+        <p>O ego mede a força de vontade do item e a probabilidade de ele influenciar (ou até mesmo dominar) seu usuário. O ego de um item é igual à soma de seus atributos, mais os modificadores apresentados na Tabela 3-14. Assim, um item mágico maior (ego 15) com três poderes menores (+3), um poder maior (+2), Int 3, Sab 4, Car 0 (+7) e comunicação por fala (+1) tem ego 28.</p>
+        <p>Sempre que você tentar fazer algo contrário aos interesses do item, deve fazer um teste de Vontade (CD igual ao ego do item). Se falhar, não consegue fazer a ação e não pode tentar novamente por 1 dia. Se falhar por 10 ou mais, o item controla suas ações por 1 dia.</p>
+        <table>
+          <caption><b>Tabela 3–15: Ego</b></caption>
+          <thead>
+            <tr>
+              <th>Característica do Item</th>
+              <th>Pontos de Ego</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Item menor</td><td>5</td></tr>
+            <tr><td>Item médio</td><td>10</td></tr>
+            <tr><td>Item maior</td><td>15</td></tr>
+            <tr><td>Artefato</td><td>20</td></tr>
+            <tr><td>Cada ponto de atributo</td><td>+1</td></tr>
+            <tr><td>Cada poder menor</td><td>+1</td></tr>
+            <tr><td>Cada poder maior</td><td>+2</td></tr>
+            <tr><td>Comunicação por fala</td><td>+1</td></tr>
+            <tr><td>Comunicação por telepatia</td><td>+2</td></tr>
+          </tbody>
+        </table>
+
+        `,
+        referencia: `Heróis de Arton - páginas 269 e 270`,
+      },
+      {
+        id: 233,
+        nome: `ITENS AMALDIÇOADOS`,
+        descricao: `
+        <p>Itens amaldiçoados são objetos mágicos que, por acidente ou de propósito, receberam efeitos negativos que prejudicam seu portador. Esses efeitos são representados por maldições.</p>
+        <p>Em termos de regras, uma maldição funciona de forma semelhante a um encanto. Para criar um item amaldiçoado, o mestre escolhe um item qualquer, com ou sem encantos, e adiciona a ele quantas maldições achar apropriado (até um máximo de três).</p>
+        <h5><p><b>REMOVENDO MALDIÇÕES</b></p></h5>
+        <p>Uma vez que um personagem use um item amaldiçoado, ele se torna alvo da maldição. Para esse efeito, “usar” significa vestir o item ou empregá-lo para seu propósito (como atacar com uma arma ou usar uma ferramenta para um teste de Ofício). Uma vez que isso aconteça, o personagem não pode mais se livrar do item até se livrar dessa maldição. Se o item é vestido, ele não consegue removê-lo e, se o item é empunhado, ele surge magicamente em sua mão em qualquer situação na qual poderia ser usado (a critério do mestre). A magia Purificação (Tormenta20, p. 202) com o aprimoramento de +3 PM permite que o personagem se livre do item. Entretanto, ela não remove a maldição do item em si.</p>
+        <p>Para remover a maldição de um item, é necessário usar uma magia como Desejo ou Intervenção Divina. Alternativamente, a maldição pode ser removida por alguma ação específica, como vingar a morte do antigo dono do item ou banhar o item nas águas de uma fonte específica. A forma exata para remover a maldição de cada item fica a cargo do mestre e descobri-la pode ser uma aventura por si só.</p>
+        `,
+        referencia: `Heróis de Arton - página 271`,
+      },
+      {
+        id: 234,
+        nome: `MALDIÇÕES OU BENÇÃOS?`,
+        descricao: `
+        <p>Certas maldições, como acalentadora e pró-criatura, têm efeitos que poderiam ser usados em prol dos heróis — anular condições negativas e curar dano, nesses casos. O texto diz explicitamente que as maldições não funcionam para isso, o que pode parecer um pouco arbitrário…</p>
+        <p>E é arbitrário mesmo! Itens amaldiçoados são feitos para prejudicar o usuário. Não são magia “neutra”, mas efeitos maldosos, irritantes e incômodos. Sempre pedras no sapato, nunca oportunidades. Em princípio, nenhum uso de itens amaldiçoados que beneficie os personagens é válido.</p>
+        <p>Contudo, o mestre pode, em raras exceções, permitir que jogadores com ótimas ideias encontrem um uso benéfico para um item amaldiçoado em uma situação específica. Digamos que a guerreira (usando pela primeira vez uma espada pró-criatura) acabou de fazer um acerto crítico e curou todo o dano do ogro que o grupo está enfrentando, sem saber que isso aconteceria. O bardo então faz um teste de Diplomacia (com todas as penalidades por fazer isso em uma rodada) para acalmar o grandalhão, argumentando que tudo não passa de um mal-entendido — afinal, a guerreira acabou de curá-lo!</p>
+        <p>Em casos como esses, itens amaldiçoados podem fornecer um bônus ou dar subsídios para um plano. A criatividade é uma das bases do RPG, afinal. Mas eles nunca devem ser fontes constantes e previsíveis de recursos ou efeitos positivos.</p>
+        `,
+        referencia: `Heróis de Arton - página 273`,
+      },
     ];
   }
 }
