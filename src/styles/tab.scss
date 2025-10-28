@@ -1,0 +1,9 @@
+.mdc-tab__text-label {
+  color: rgb(199, 199, 199) !important;
+}
+
+.mat-mdc-tab-header {
+  border-radius: 10px !important; /* Arredonda os cantos */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  background-color: rgb(45, 35, 60) !important;
+}

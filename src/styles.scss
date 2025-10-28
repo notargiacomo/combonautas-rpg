@@ -3,12 +3,13 @@
 @use 'styles/painel.scss';
 @use 'styles/card.scss';
 @use 'styles/dialog.scss';
+@use 'styles/tab.scss';
 
 html,
 body {
   width: 100% !important; /* Define percentual de uso de largura da terra */
   height: 100%; /* Define percentual de uso de altura da terra */
-  background-color: rgb(25, 20, 40) !important; /* Define o fundo como a cor dominante */
+  background-color: rgb(163, 78, 78) !important;/* Define o fundo como a cor dominante */
   font-family: "Oswald" !important;
   margin: 0;
   font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
@@ -26,7 +27,7 @@ header,
   background-position: center !important;
   background-repeat: no-repeat !important;
   object-fit: contain; /* Mantém as proporções */
-  border-bottom: 5px solid rgb(120, 80, 160); /* Moldura */
+  border-bottom: 5px solid rgb(68, 5, 18) !important; /* Moldura */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
   font-family: "Oswald" !important;
@@ -45,11 +46,11 @@ h2,
 h4,
 h5 {
   margin-top: 1% !important;
-  color: rgb(45, 35, 60) !important;
+  color: rgb(68, 5, 18) !important;
 }
 
 b {
-  color: rgb(45, 35, 60) !important;
+  color: rgb(68, 5, 18) !important;
 }
 
 .negrito-centralizado > b {
@@ -57,14 +58,14 @@ b {
 }
 
 label {
-  color: rgb(45, 35, 60) !important;
+  color: rgb(68, 5, 18) !important;
 }
 
 img {
   max-width: 400px; /* Largura máxima da imagem */
   max-height: 400px; /* Altura máxima da imagem */
   object-fit: contain; /* Mantém as proporções */
-  border: 5px solid rgb(120, 80, 160); /* Moldura */
+  border: 5px solid rgb(68, 5, 18) !important; /* Moldura */
   border-radius: 15px; /* Bordas arredondadas */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
@@ -105,7 +106,7 @@ button[mat-flat-button]:hover {
   font-family: "Oswald" !important;
   font-size: 10pt !important;
   border: 1px solid rgb(120, 80, 160); /* Moldura */
-  background-color: rgb(45, 35, 60) !important;
+  background-color: rgb(163, 78, 78) !important;
   color: rgb(240, 240, 245) !important;
   cursor: pointer !important;
 }

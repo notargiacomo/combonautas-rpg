@@ -456,9 +456,13 @@ export class RegraData {
       {
         id: 18,
         nome: 'EFEITOS DO GOLPE PESSOAL',
-        descricao: `<p><b>Amplo (+3 PM).</b> Seu ataque atinge todas as criaturas em alcance curto (incluindo aliados, mas não você mesmo). Faça um único teste de ataque e compare com a Defesa de cada criatura.</p>
+        descricao: `
+        <p><b>Amplo (+3 PM).</b> Seu ataque atinge todas as criaturas em alcance curto (incluindo aliados, mas não você mesmo). Faça um único teste de ataque e compare com a Defesa de cada criatura.</p>
+        <p><b>Avanço (+1 PM).</b> Você pode percorrer até o seu deslocamento em linha reta antes de desferir o golpe.</p>
         <p><b>Atordoante (+2 PM).</b> Uma criatura que sofra dano do ataque fica atordoada por uma rodada (apenas uma vez por cena; Fortitude CD For anula).</p>
+        <p><b>Brando (+0 PM).</b> Seu golpe causa dano não letal.</p>
         <p><b>Brutal (+1 PM).</b> Fornece um dado extra de dano do mesmo tipo.</p>
+        <p><b>Carregado (+1 PM).</b> Você pode gastar uma ação padrão para energizar seu ataque. Se você fizer isso e atacar até a próxima rodada, seu ataque causa +2d8 pontos de dano.</p>
         <p><b>Conjurador (Custo da Magia + 1 PM).</b> Escolha uma magia de 1º ou 2º círculos que tenha como alvo uma criatura ou que afete uma área. Se acertar seu golpe, você lança a magia como uma ação livre, tendo como alvo a criatura atingida ou como centro de sua área o ponto atingido pelo ataque (atributo-chave é um mental a sua escolha). Considere que a mão da arma está livre para lançar esta magia. 🧙‍♂️</p>
         <p><b>Destruidor (+2 PM).</b> Aumenta o multiplicador de crítico em +1.</p>
         <p><b>Distante (+1 PM).</b> Aumenta o alcance em um passo (de corpo a corpo para curto, médio e longo). Outras características não mudam (um ataque corpo a corpo com alcance curto continua usando Luta e somando sua Força no dano).</p>
@@ -469,10 +473,14 @@ export class RegraData {
         <p><b>Preciso (+1 PM). </b>Quando faz o teste de ataque, você rola dois dados e usa o melhor resultado.</p>
         <p><b>Qualquer Arma (+1 PM). </b>Você pode usar seu Golpe Pessoal com qualquer tipo de arma.</p>
         <p><b>Ricocheteante (+1 PM). </b>A arma volta pra você após o ataque. Só pode ser usado com armas de arremesso.</p>
+        <p><b>Sequencial (+2 PM).</b> Seu golpe causa +1d6 pontos de dano. A cada vez que você acerta o golpe na mesma cena, esse bônus aumenta em um passo.</p>
+        <p><b>Sifão (+2 PM).</b> Você recebe 1 PM temporário para cada 10 pontos da rolagem de dano. Você pode receber um máximo de PM temporários por cena igual ao seu nível e eles desaparecem no fim da cena.</p>
         <p><b>Teleguiado (+1 PM). </b>Ignora penalidades por camuflagem ou cobertura leves.</p>
+        <p><b>Golpe de Abertura (–2 PM).</b> Seu golpe só pode ser usado em seu primeiro turno do combate.</p>
         <p><b>Lento (–2 PM).</b> Seu ataque exige uma ação completa para ser usado</p>
-        <p><b>Perto da Morte (–2 PM). </b>O ataque só pode ser usado se você estiver com um quarto de seus PV ou menos.</p>
+        <p><b>Perto da Morte (–2 PM).</b> O ataque só pode ser usado se você estiver com um quarto de seus PV ou menos.</p>
         <p><b>Sacrifício (–2 PM).</b> Sempre que usa seu Golpe Pessoal, você perde 10 PV.</p>
+        <p><b>Truque Secreto (–2 PM).</b> Seu golpe só pode ser usado uma vez contra cada alvo por cena.</p>
         `,
         referencia: `Tormenta 20 Jogo do Ano - página 66`,
       },
@@ -1061,7 +1069,9 @@ export class RegraData {
         <p><b>Alongada.</b> Dobra o alcance natural do atacante, mas não permite atacar um adversário adjacente.</p>
         <p><b>Desbalanceada.</b> Impõe uma penalidade de –2 em testes de ataque.</p>
         <p><b>Dupla.</b> Pode ser usada com Estilo de Duas Armas (e poderes similares) para fazer ataques adicionais, como se fosse uma arma de uma mão e uma arma leve. Cada “ponta” conta como uma arma separada para efeitos de melhorias e encantos.</p>
-        <p><b>Híbrida (Ameaças de Arton, pag. 393)./b> Uma arma híbrida possui dois ou mais modos de uso. Quando usa a arma, você considera apenas as características do modo que está usando e aplica apenas habilidades e efeitos que afetem este modo. Trocar de modo é uma ação de movimento (ou livre, se você tiver Saque Rápido). Aplicar melhorias e encantos em uma arma híbrida custa o dobro do preço em tibares.</p>
+        <p><b>Híbrida.</b> (Ameaças de Arton, pag. 393)./b> Uma arma híbrida possui dois ou mais modos de uso. Quando usa a arma, você considera apenas as características do modo que está usando e aplica apenas habilidades e efeitos que afetem este modo. Trocar de modo é uma ação de movimento (ou livre, se você tiver Saque Rápido). Aplicar melhorias e encantos em uma arma híbrida custa o dobro do preço em tibares.</p>
+        <p><b>Ocultável.</b> O tamanho e/ou formato da arma tornam mais fácil escondê-la. Ela fornece +5 em testes de Ladinagem para ocultá-la. A adaga (Tormenta20, p. 146) é uma arma ocultável.</p>
+        <p><b>Surpreendente.</b> Uma vez por cena, se você sacar a arma como ação livre e usá-la para atacar no mesmo turno, o oponente fica desprevenido contra esse ataque.</p>
         <p><b>Versátil.</b> Fornece bônus em uma ou mais manobras (cumulativo com outros bônus de itens), conforme a arma.</p>
 
         `,        
@@ -3065,6 +3075,378 @@ export class RegraData {
         <p>Exceto quando indicado em sua descrição, parceiros que fornecem deslocamento de natação não permitem ao personagem falar ou respirar debaixo d’água nem anulam as penalidades padrão por estar submerso.</p>
         `,
         referencia: `Ameaças de Arton - página 416`,
+      },
+      {
+        id: 188,
+        nome: `DEVOÇÃO AMPLA`,
+        descricao: `
+        <p>Clérigos e frades do Panteão, druidas de Arton e paladinos do bem não recebem poderes concedidos. Em compensação, por sua devoção ampla, recebem +2 PM por patamar.</p>
+        `,
+        referencia: `Deuses de Arton - página 11`,
+      },
+      {
+        id: 189,
+        nome: `SACRÁRIOS`,
+        descricao: `
+        <p>Alguns poderes de frade são sacrários — uma área consagrada pelo poder divino. Esses poderes compartilham das seguintes regras.</p>
+        <ul>
+        <li>Criar um sacrário gasta uma ação padrão e 3 PM.</li>
+        <li>Um sacrário ocupa uma esfera de 3m de raio em alcance curto.</li>
+        <li>Um sacrário dura até o fim da cena, a menos que sua descrição diga o contrário.</li>
+        <li>Você pode ter um número de sacrários ativos simultâneos igual à sua Sabedoria.</li>
+        <li>Um sacrário não pode ser criado em uma área afetada por outro sacrário ou onde haja um símbolo visível de uma divindade diferente da sua.</li>
+        <li>Para ser afetada, uma criatura precisa estar inteiramente dentro da área do sacrário.</li>
+        </ul>
+        `,
+        referencia: `Deuses de Arton - página 39`,
+      },
+      {
+        id: 190,
+        nome: `DOM DA RESSURREIÇÃO E FRADES`,
+        descricao: `
+        <p>O poder concedido Dom da Ressurreição (Tormenta20, p. 133), originalmente limitado a clérigos, também pode ser escolhido por frades de Thyatis.</p>
+        `,
+        referencia: `Deuses de Arton - página 41`,
+      },
+      {
+        id: 191,
+        nome: `EQUIPAMENTOS RELIGIOSOS`,
+        descricao: `
+        <p>Esta seção descreve diversos equipamentos relacionados às divindades de Arton. Embora geralmente sejam usados por devotos, muitos desses itens não exigem uma conexão divina e frequentemente são empregados por aventureiros sem nenhuma ligação com os deuses.</p>
+        `,
+        referencia: `Deuses de Arton - página 48`,
+      },
+      {
+        id: 192,
+        nome: `SÍMBOLOS SAGRADOS VISÍVEIS`,
+        descricao: `
+        <p>Diversos efeitos, como os das magias Consagrar e Profanar, são modificados pela presença de um símbolo sagrado visível. Isso é qualquer símbolo sagrado que tenha sido intencionalmente colocado no local por um devoto, como parte da decoração ou arquitetura do lugar (como um símbolo de Khalmyr esculpido na parede de um templo), ou um símbolo que esteja sendo empunhado, ou vestido, de forma visível por um devoto da divindade. A critério do mestre, símbolos danificados ou deixados casualmente em um lugar por alguém que não seja um devoto (como o símbolo de um aventureiro morto encontrado em uma masmorra) não possuem o poder necessário para modificar esses efeitos.</p>
+        `,
+        referencia: `Deuses de Arton - página 51`,
+      },
+      {
+        id: 193,
+        nome: `PRATOS ESPECIAIS DIVINOS`,
+        descricao: `
+        <p>Cada prato especial desta seção é uma receita sagrada, dedicada a um deus específico e que leva como ingrediente especial uma porção da devoção do cozinheiro. Por isso, estes pratos só podem ser preparados por devotos do respectivo deus.</p>
+        `,
+        referencia: `Deuses de Arton - página 51`,
+      },
+      {
+        id: 194,
+        nome: `ITENS LITÚRGICOS`,
+        descricao: `
+        <p>Itens litúrgicos são itens mágicos imbuídos de poder divino. Mais do que meros objetos encantados, são símbolos de fé. Cada item litúrgico é associado a um deus e possui afinidade com seus devotos — alguns funcionam apenas com estes devotos, enquanto outros se tornam mais fortes nas mãos destes. De forma similar, um item litúrgico só pode ser fabricado por devotos da divindade em questão.</p>
+        <p>Itens litúrgicos não podem ser identificados com Misticismo, apenas com Religião. Se você for devoto do deus associado ao item, recebe +5 em testes para identificá-lo.</p>
+        `,
+        referencia: `Deuses de Arton - página 55`,
+      },
+      {
+        id: 195,
+        nome: `"MAS É OUTRO DEUS!"`,
+        descricao: `
+        <p>Grande parte das magias neste capítulo trazem o nome de um deus no título. Isso significa que a magia é tipicamente ofertada (ou foi criada) por aquela divindade. Mas então, sendo devoto de outra fé, ainda posso aprendê-la e lançá-la?</p>
+        <p>A resposta é sim. Embora existam rivalidades e inimizades, deuses maiores ainda formam um Panteão, são irmãos unidos sob uma mesma liderança. Poderes divinos são exclusivos, mas magias não (exceto quando sua descrição diz o contrário). Além disso, apesar de suas naturezas díspares, deuses são orgulhosos e vaidosos. Ficam satisfeitos quando devotos de outros entoam seu nome, recorrem a seus milagres. A divindade padroeira, contudo, talvez se aborreça um pouquinho...</p>
+        <p>Como regra opcional, quando você lança uma magia com o nome de um deus inimigo ou rival, o mestre pode estabelecer que essa transgressão cobra um pequeno preço. Se falhar em um teste de Religião (CD 20) para conseguir perdão adequado, você sofre –2 em seu próximo teste de perícia e recebe uma breve visão de sua divindade, levemente desapontada...</p>
+        `,
+        referencia: `Deuses de Arton - página 64`,
+      },
+      {
+        id: 196,
+        nome: `MASCOTES`,
+        descricao: `
+        <p>Um mascote é uma criatura com a qual você desenvolveu uma grande afinidade. Em termos de jogo, é um parceiro especial que não conta em seu limite de parceiros e com o qual você pode se comunicar através de gestos em alcance médio. Ele obedece a seus comandos, mas ainda está limitado ao que uma criatura de sua espécie pode fazer. Mascotes fornecem seus benefícios tanto para você quanto para seus melhores amigos. Se perder um de seus mascotes, você pode treinar um novo com uma semana de trabalho e T$ 100.</p>
+        <p>A resposta é sim. Embora existam rivalidades e inimizades, deuses maiores ainda formam um Panteão, são irmãos unidos sob uma mesma liderança. Poderes divinos são exclusivos, mas magias não (exceto quando sua descrição diz o contrário). Além disso, apesar de suas naturezas díspares, deuses são orgulhosos e vaidosos. Ficam satisfeitos quando devotos de outros entoam seu nome, recorrem a seus milagres. A divindade padroeira, contudo, talvez se aborreça um pouquinho...</p>
+        <ul>
+        <li><b>Águia Real.</b> Uma vez por rodada, fornece +1d6 em uma rolagem de dano com arma.</li>
+        <li><b>Bicho Preguiça.</b> Agarrado às costas (suas ou de seu melhor amigo), este animal ocupa o espaço de um item vestido, mas fornece um ataque natural de garra (dano 1d6, crítico x2, corte). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com essa garra.</li>
+        <li><b>Camundongo Espiritual.</b> Aumenta a CD para resistir a habilidades mágicas em +1.</li>
+        <li><b>Fada-Borboleta.</b> Diminui o custo de habilidades mágicas em –1.</li>
+        <li><b>Gekko Malhado.</b> Fornece +2 na Defesa e em Reflexos.</li>
+        <li><b>Mico-Leão Dourado.</b> Permite usar Ladinagem para punga em alcance curto</li>
+        <li><b>Minivaca.</b> Fornece +1 em testes de ataque. Esse bônus dobra em investidas.</li>
+        <li><b>Ossinhos.</b> O esqueleto de um animal reanimado. Fornece redução de corte, frio e perfuração 2.</li>
+        </ul>
+        `,
+        referencia: `Heróis de Arton - página 19`,
+      },
+      {
+        id: 197,
+        nome: `EMULSÃO`,
+        descricao: `
+        <p>Uma emulsão é um óleo que concede propriedades mágicas a um item. Usá-la é uma ação padrão e fornece um ou mais encantos para um item até o fim da cena. Conceder um encanto através de uma emulsão não tem custo adicional (além do gasto do óleo) e conta no limite de encantos do item.</p>
+        <p>Existem emulsões com um, dois e três encantos. Se um encanto contido em uma emulsão tiver outro como pré-requisito, a emulsão deve incluir também esse pré-requisito. Fabricar uma emulsão segue as mesmas regras para itens alquímicos, mas o custo e a CD dependem da quantidade de encantos contidos no óleo.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Encantos</th>
+              <th>Custo de Fabricação</th>
+              <th>CD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>T$ 250</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>T$ 750</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>T$ 1.500</td>
+              <td>35</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <p>Por sua volatilidade, que exige do criador manutenção constante, além da necessidade de supervisão em sua aplicação, emulsões não são comercializadas.</p>
+        `,
+        referencia: `Heróis de Arton - página 24`,
+      },
+      {
+        id: 198,
+        nome: `O SÍTIO SAGRADO`,
+        descricao: `
+        <p>Uma área erma com 5 km de raio, o sítio sagrado é um refúgio para o ermitão e fornece diversas habilidades a ele, algumas das quais o acompanham para além das fronteiras deste local. Caso o sítio sagrado seja destruído, você perde todos os seus PM e só pode recuperá-los ao criar um novo sítio. Fazer isso ocupa um tempo entre aventuras.</p>
+        <p><b>Aliados da Natureza.</b> Dentro do sítio, criaturas não inteligentes (Int –4 ou –5) têm atitude melhor com você, conforme seu tipo: no 7º nível, animais são amistosos e espíritos e monstros, indiferentes. No 15º nível suas categorias de atitude melhoram um passo. Você pode comandar criaturas prestativas para lutar ao seu lado e ajudar a defender o sítio sagrado, mas elas não irão segui-lo para fora dele. O mestre decide quais criaturas estão presentes no sítio (de forma geral, a qualquer momento há um número de criaturas com ND total somado igual ao seu nível).</p>
+        <p><b>Terreno Associado.</b> Ao receber seu sítio sagrado, escolha um terreno entre aquático, ártico, colina, deserto, floresta, montanha, pântano, planície ou subterrâneo. Esse será o tipo de terreno associado ao seu sítio sagrado. Sempre que estiver em um terreno desse tipo, você soma sua Sabedoria (mínimo +1) em Furtividade, Percepção, Misticismo, Religião e Sobrevivência. No 7º nível, e a cada quatro níveis subsequentes, escolha mais um tipo de terreno para associar ao seu sítio ou aumente o bônus de perícias de um tipo de terreno já escolhido em +2.</p>
+        <p>Você também é capaz de atingir uma conexão mais forte com sua divindade dentro do sítio sagrado. Dentro dele, seu redutor de PM por Vínculo com a Terra muda para –2.</p>
+        <p><b>Caminhos Sagrados.</b> Quando está em um terreno de um tipo associado ao seu sítio, você não sofre redução de deslocamento por terreno difícil natural e a CD para rastreá-lo aumenta em +10.</p>
+        <p><b>Base.</b> O sítio sagrado conta como uma base (veja p. 244) básica. Você paga apenas a metade do custo para aumentar o porte dessa base e para construir cômodos nela.</p>
+        `,
+        referencia: `Heróis de Arton - página 30`,
+      },
+      {
+        id: 199,
+        nome: `O RITUAL DO LICH`,
+        descricao: `
+        <p>O Ritual do Lich representa o auge do conhecimento mágico de um necromante. É o resultado de anos de estudos, pesquisas e experimentos, sendo conhecido por poucos. Os passos deste ritual são descritos a seguir</p>
+        <h5><p><b>PASSO 1: O FILACTÉRIO</b></p></h5>
+        <p>“Para viver para sempre, a alma não pode ser destruída”. Baseado nesse princípio, o candidato a lich deve possuir um filactério, um local seguro no qual poderá guardar sua alma. O filactério típico é uma caixa de metal selada, repleta de tiras de pergaminhos com escritos mágicos, mas pode ser quase qualquer objeto. Independente de sua forma, o filactério custa T$ 20.000. Com este item em mãos, você deve lançar as seguintes magias, nessa ordem: Profanar (com o aprimoramento que torna permanente), Ligação Sombria (como parte do ritual, pode ser lançada tendo como alvo o filactério), Roubar a Alma (em si mesmo) e Tranca Arcana (no filactério). As magias não surtem efeito imediatamente, apenas no fim do ritual</p>
+        <h5><p><b>PASSO 2: A POÇÃO DO SONO ETERNO</b></p></h5>
+        <p>Com um receptáculo em mãos, você deve se concentrar no próximo passo: morrer. Mas não de qualquer maneira — apenas através da poção do sono eterno. Esta poção especial contém vários tipos de venenos: beladona, cicuta, essência de sombra e pó de lich (uma dose de cada), que são usados como matéria-prima, e fabricá-la exige um teste de Ofício (alquimista) contra CD 35. Com a poção em mãos, você deve lançar as seguintes magias, nessa ordem: Erupção Glacial, Rogar Maldição e Servo Morto-Vivo. Você deve esperar uma noite de lua minguante para beber a poção, pois esta é uma etapa que não pode ser testemunhada por Lena.</p>
+        <h5><p><b>PASSO 3: O MAGO IMORTAL</b></p></h5>
+        <p>Para você, a poção do sono eterno é letal. Após sua morte, seu corpo fica inerte e sua alma é sugada para o filactério (assim, um candidato que não tenha realizado o primeiro passo do ritual simplesmente morre). Sem um corpo físico, sua consciência vaga pelos reinos dos deuses. Depois de uma semana, sua mente retorna para seu corpo — mas o tempo já cobrou seu preço. Seu corpo está seco, enrugado, com olhos vazios e ossos salientes. Você não respira mais e não tem sangue, tendo se tornado um morto-vivo. Este é um ritual complexo e a preparação e execução dele provavelmente terá tomado boa parte de seu tempo de vida. Mas isso não é um problema: agora você é um lich e não precisa mais se preocupar nem com tempo, nem com vida.</p>
+        <p>Em termos de regras, você adquire as características a seguir:</p>
+        <p><b>Atributos.</b> Inteligência +1, Sabedoria +1, Carisma +1, Constituição –1.</p>
+        <p><b>Morto-Vivo.</b> Seu tipo muda para morto-vivo. Você recebe visão no escuro e imunidade a efeitos de cansaço e metabólicos, eletricidade, frio, metamorfose, trevas e veneno. Além disso, não precisa respirar, alimentar-se ou dormir. Por fim, efeitos mágicos de cura de luz causam dano a você e você não se beneficia de itens da categoria alimentação, mas dano de trevas recupera seus PV.</p>
+        <p><b>Cadáver Resiliente.</b> Você recebe +5 na Defesa e redução de dano 10/mágico.</p>
+        <p><b>Aura de Medo.</b> Você recebe este poder (Tormenta20, p. 132, mas ele não é um poder concedido). Se já o possui, a CD para resistir a ele aumenta em +2.</p>
+        <p><b>Toque Gélido.</b> Quando faz um ataque desarmado, você pode gastar 3 PM para envolver sua mão em frio sobrenatural. Se fizer isso e acertar o ataque, em vez do dano normal você causa 6d6+6 pontos de dano de frio e a vítima fica paralisada por 1 rodada (apenas uma vez por cena, Fort CD Int evita).</p>
+        <p><b>Filactério.</b> Se for morto, você retorna completamente recuperado em 1d10 dias. A única forma de derrotá-lo permanentemente é destruir seu filactério. Você pode deixar o filactério em qualquer lugar, mas você e ele precisam estar no mesmo Plano. O filactério possui RD 30 e PV iguais aos seus. Se for danificado, é totalmente restaurado na próxima vez que você recuperar seus PM por descanso.</p>
+        <p><b>Preço da Não Vida.</b> Você precisa passar 8 horas sob a luz de estrelas ou no subterrâneo. Se fizer isso, recupera PV e PM por descanso em condições normais (você não é afetado por condições boas ou ruins de descanso). Caso contrário, sofre os efeitos de fome.</p>        `,
+        referencia: `Heróis de Arton - página 36`,
+      },
+      {
+        id: 200,
+        nome: `O TREINAMENTO DE UM VASSALO`,
+        descricao: `
+        <p>Ao longo de sua carreira, o vassalo se torna treinado em diversas perícias. Sempre que receber um desses treinamentos por uma habilidade de vassalo, se já for treinado na perícia, em vez disso você recebe +2 nela.</p>`,
+        referencia: `Heróis de Arton - página 43`,
+      },
+      {
+        id: 201,
+        nome: `MAGIAS SIMULADAS`,
+        descricao: `
+        <p>Uma magia simulada é uma habilidade não mágica que reproduz os efeitos de uma magia, como os poderes Flagelo dos Mares e Truque de Mágica (Tormenta20, pp. 48 e 89).</p>
+        <p>Magias simuladas seguem as mesmas regras de magias normais, exceto por não serem habilidades mágicas e não contarem como magias (não se beneficiam de efeitos que afetam magias, como itens esotéricos e catalisadores, e não exigem testes de concentração). Entretanto, elas não se acumulam com outras magias (simuladas ou não).</p>
+        `,
+        referencia: `Heróis de Arton - página 44`,
+      },
+      {
+        id: 202,
+        nome: `ORIGENS ESPECIAIS`,
+        descricao: `
+        <p>Esta seção traz origens que representam históricos relacionados a lugares, organizações ou eventos específicos de Arton. Você pode escolher uma delas (no lugar de sua origem comum) se sua história estiver de alguma forma ligada aos elementos dessa origem.</p>
+        <p>Diferentes das origens do livro básico, que representam conceitos amplos, origens especiais fornecem um benefício único, característico do local, evento ou organização a que se referem. Se o benefício incluir treinamento em uma perícia na qual você já é treinado, você pode ser treinado em outra perícia de classe. Efeitos de origens contam como habilidades para fins de acúmulo.</p>
+        `,
+        referencia: `Heróis de Arton - página 46`,
+      },
+      {
+        id: 203,
+        nome: `OFÍCIOS VARIADOS`,
+        descricao: `
+        <p>Algumas das origens descritas aqui fornecem treinamento em Ofícios variados, como coureiro ou barbeiro. Assim como os Ofícios básicos descritos em Tormenta20, essas perícias também podem ser usadas para fabricar e consertar itens dos tipos apropriados. Por exemplo, Ofício (coureiro) pode ser usado para fabricar quaisquer itens feitos primariamente de couro, como um gibão de peles, uma bandoleira de poções, uma mochila de aventureiro ou um item feito de um material especial à base de couro (como o couro de bulette, descrito em Ameaças de Arton, p. 399). Em todos os casos, o mestre tem a palavra final sobre quais itens fazem parte desses Ofícios.</p>
+        `,
+        referencia: `Heróis de Arton - página 46`,
+      },
+      {
+        id: 204,
+        nome: `PODERES DE BRADO`,
+        descricao: `
+        <p>Poderes de brado compartilham as seguintes regras.</p>
+        <ul>
+        <li>Emitir um brado gasta uma ação de movimento e 1 PM, a menos que a descrição diga o contrário.</li>
+        <li>Brados têm alcance curto.</li>
+        </ul>
+        <p>A critério do mestre, habilidades raciais baseadas em gritos, como o Rugido Imponente do moreau do leão (Ameaças de Arton, p. 305), podem ser consideradas poderes de brado para um bárbaro.</p>
+        `,
+        referencia: `Heróis de Arton - página 57`,
+      },
+      {
+        id: 205,
+        nome: `PODERES DE PAIXÃO`,
+        descricao: `
+        <p>Paixões são aspectos da vida de um cavaleiro aos quais ele se entrega com dedicação total. São crenças tão importantes que, em nome delas, ele é capaz de se inspirar e sobrepujar quaisquer limitações. Contudo, se um cavaleiro é derrotado enquanto está inspirado por sua Paixão, a vergonha pode abalá-lo profundamente. Esses poderes compartilham as seguintes regras.</p>
+        <ul>
+        <li>Evocar uma Paixão é uma ação livre.</li>
+        <li>Quando evoca uma Paixão, você faz um teste de Carisma (CD 10 +5 por teste dessa Paixão na mesma aventura). Se passar, recebe o benefício da Paixão. Se falhar, não pode mais usá-la até o fim da aventura.</li>
+        <li>Paixões que não têm um efeito instantâneo duram até o fim da cena.</li>
+        <li>Sempre que rola 20 natural em um teste de Paixão, ou obtém uma vitória significativa em uma cena em que usou uma Paixão com sucesso, você recebe um bônus permanente e cumulativo de +1 nos testes de atributo para ativá-la.</li>
+        <li>Sempre que rola 1 natural em um teste de Paixão, ou sofre uma falha significativa em uma cena em que usou uma Paixão com sucesso, você recebe uma penalidade permanente e cumulativa de –1 nos testes de atributo para ativá-la.</li>
+        </ul>
+        <h5><p><b>PAIXÕES E RESULTADOS SIGNIFICATIVOS</b></p></h5>
+        <p>Sempre que o cavaleiro evoca uma Paixão, está colocando à prova um sentimento que faz parte das fundações de sua alma. Nenhum cavaleiro que tenha uma Paixão ousa tratá-la como uma mera ferramenta, nem espera que o objeto de sua Paixão o defenda. Pelo contrário: ele está disposto a entregar a vida pelo objeto da Paixão.</p>
+        <p>Assim, uma “vitória significativa” ao usar uma Paixão nunca se refere ao próprio cavaleiro. Para que uma vitória seja significativa, deve beneficiar diretamente o alvo da Paixão e não pode servir a interesses pessoais ou egoístas do cavaleiro. Por exemplo, uma cavaleira que tenha Paixão: Amor (sua esposa) pode obter uma vitória significativa ao salvá-la de um vilão, mas não ao derrotar esse mesmo vilão se ela não estiver sendo ameaçada por ele. Se a mesma cavaleira tiver Paixão: Lealdade (a Ordem da Luz), pode obter uma vitória significativa ao defender o Castelo da Luz contra uma invasão, mas não ao vencer os mesmos inimigos em uma circunstância na qual a Ordem não esteja ameaçada.</p>
+        <p>Da mesma forma, uma “falha significativa” é uma circunstância em que o cavaleiro não consegue proteger o alvo de sua Paixão e, por omissão ou incompetência, permite que ele seja prejudicado. A mesma cavaleira teria uma falha significativa se sua esposa fosse aprisionada e levada embora pelo vilão, ou se o Castelo da Luz fosse invadido.</p>
+        <p>O mestre tem a palavra final sobre o que é uma vitória ou uma falha significativas no uso de uma Paixão. Como regra geral, o jogador deve se esforçar ao máximo para proteger e beneficiar o alvo da Paixão. Se negligenciá-la ou colocá-la em segundo plano, atrás de coisas como sua própria segurança, uma recompensa ou o grupo de aventureiros, pode sofrer uma penalidade, como se tivesse rolado 1 natural em um teste de Paixão</p>
+        `,
+        referencia: `Heróis de Arton - página 63`,
+      },
+      {
+        id: 206,
+        nome: `MESTRE CELEBRANTE`,
+        descricao: `
+        <p>O poder Mestre Celebrante (Tormenta20, p. 58) dobra os benefícios de Missas celebradas pelo personagem. Abaixo detalhamos como isso se aplica.</p>
+        <ul>
+        <li>Se a Missa fornece um bônus numérico que se aplica por toda sua duração, como o de Mente Abençoada, esse bônus é dobrado.</li>
+        <li>Se fornece uma quantidade de PV ou PM, como Elevação do Espírito, essa quantidade é dobrada</li>
+        <li>Se permite usar uma habilidade ou receber um benefício uma vez, como Compartilhar Milagre, esse efeito pode ser usado uma vez adicional pela duração da Missa.</li>
+        </ul>
+        `,
+        referencia: `Heróis de Arton - página 65`,
+      },
+      {
+        id: 207,
+        nome: `COMBINAÇÕES DESARMADAS`,
+        descricao: `
+        <p>Poderes de Combinação representam golpes que se aproveitam dos efeitos de ataques anteriores sobre seu oponente.Eles compartilham as seguintes regras.</p>
+        <ul>
+        <li>Combinações só podem ser usadas com ataques desarmados.</li>
+        <li>Cada Combinação só pode ser usada uma vez por rodada, e apenas uma Combinação pode ser usada por ataque.</li>
+        <li>Quando acerta um ataque usando um poder de Combinação, você começa uma contagem (individual por oponente). O próximo ataque de Combinação recebe um bônus de contagem (descrito em cada poder). A contagem zera se você passar uma rodada sem acertar um ataque usando um poder de combinação.</li>
+        </ul>
+        `,
+        referencia: `Heróis de Arton - página 74`,
+      },
+      {
+        id: 208,
+        nome: `PODERES DE RAÇA`,
+        descricao: `
+        <p>Poderes de raça são um novo grupo de poderes gerais. São caracterizados por possuírem como pré-requisito pertencer a uma raça específica. Exceto por isso, funcionam como quaisquer outros poderes gerais.</p>
+        `,
+        referencia: `Heróis de Arton - página 84`,
+      },
+      {
+        id: 209,
+        nome: `PODERES DE GRUPO`,
+        descricao: `
+        <p>Poderes de grupo fornecem bônus maiores que outros poderes; contudo, só funcionam se houver outro personagem com o mesmo poder na cena. Assim, se apenas você comprar um poder de grupo, ele não terá efeito! Muitas vezes, poderes de grupo se tornam mais eficientes de acordo com o número de personagens com o mesmo poder na cena.</p>
+        <p>O pré-requisito de ter um aliado com o mesmo poder na cena nunca pode ser cumprido por NPCs, parceiros e outros coadjuvantes — apenas por personagens jogadores. Também não pode ser cumprido por efeitos que permitam a um personagem usar um poder sem possuí-lo. Em suma, funcionam apenas se dois ou mais membros do grupo efetivamente tiverem escolhido o poder. Caso um membro do grupo morra e um poder de grupo fique inativo, você pode gastar tempo entre aventuras para treinar e trocar o poder, ou esperar que o jogador em questão faça outro personagem com o mesmo poder de grupo.</p>
+        `,
+        referencia: `Heróis de Arton - página 92`,
+      },
+      {
+        id: 210,
+        nome: `EU BEBO SIM`,
+        descricao: `
+        <p>Fabricar uma bebida exige um teste de Ofício (cozinheiro) com CD 20 e segue as regras normais de fabricação de itens consumíveis (com 1 dia você faz uma bebida, ou duas se aceitar uma penalidade de –5 no teste).</p>
+        <p>Consumir uma bebida leva alguns minutos — embora seja possível tomar alguns goles rapidamente, para receber os benefícios dela você precisa ingeri-la com calma! Benefícios de bebida duram 1 dia e se acumulam com outros benefícios de alimentação (incluindo de bebidas diferentes).</p>
+        <p>Quando você ingere uma bebida alcoólica, deve fazer um teste de Fortitude (CD indicada no item; cada dose adicional no mesmo dia aumenta a CD em +5). Se falhar, fica embriagado (–2 em testes baseados em Destreza e Carisma). Se já estava embriagado, fica bebum (desprevenido, –5 em testes baseados em Destreza e Carisma). Por fim, se já estava bebum, cai inconsciente. Todas as condições duram até o fim do dia.</p>
+        <p>Efeitos que evitem penalidades impostas por bebidas também anulam seus benefícios, pois eles andam lado a lado. Afinal, um personagem só recebe redução de dano ou bônus em perícias sociais ao beber por estar levemente embriagado! Um personagem com imunidade a efeitos prejudiciais de itens ingeríveis (como pelo poder Vida Rústica) pode abrir mão dessa imunidade ao beber para receber os benefícios da bebida. Nesse caso, ele recebe +5 em seu teste de Fortitude.</p>
+        <p>Use estas regras apenas se todos os membros do grupo forem maiores de idade. E, por mais que tavernas e bebidas alcoólicas sejam comuns em obras de fantasia, não custa lembrar: na vida real, consuma com moderação!</p>
+        `,
+        referencia: `Heróis de Arton - página 237`,
+      },
+      {
+        id: 211,
+        nome: `MONTARIA E ITENS VESTIDOS`,
+        descricao: `
+        <p>A menos que algo seja especificado em contrário em sua descrição, uma montaria pode ser equipada com dois itens vestidos, como uma sela ou um alforje (Tormenta20, pp. 158 e 162) ou outro dos itens para animais descritos aqui.</p>
+        `,
+        referencia: `Heróis de Arton - página 238`,
+      },
+      {
+        id: 212,
+        nome: `SERVIÇOS MERCENÁRIOS`,
+        descricao: `
+        <p>Você pode contratar mercenários como parceiros (Tormenta20, p. 260). O valor listado representa o preço para contratar o NPC por uma cena. Ele o acompanha, contando no seu limite de parceiros, mas sem oferecer benefícios, até que você peça sua ajuda. Então fornece seu benefício até o fim da cena. Após ajudá-lo, o mercenário vai embora. De acordo com o mestre, pode ser possível contratar um mercenário para uma aventura inteira pelo triplo do preço listado. A descrição de cada mercenário indica seu tipo e nível.</p>
+        `,
+        referencia: `Heróis de Arton - página 238`,
+      },
+      {
+        id: 213,
+        nome: `CAPANGAS`,
+        descricao: `
+        <p>Capangas são criaturas simplificadas que agem em grupo. Individualmente, são fracos, mas graças aos números, tornam-se perigosos. Eles usam as seguintes regras.</p>
+        <ul>
+        <li>Para usar um grupo de capangas em combate, primeiro você deve posicioná-los. Para isso, você gasta uma ação completa e posiciona cada capanga do grupo em um espaço desocupado em alcance curto.</li>
+        <li>Você pode usar uma ação de movimento para fazer quaisquer capangas já posicionados se mover ao deslocamento deles, ou uma ação padrão para fazê-los causar dano automático a criaturas adjacentes (apenas uma vez por rodada). Capangas não agem sem receber ordens.</li>
+        <li>Exceto quando dito o contrário, capangas têm 1 PV e falham automaticamente em qualquer teste oposto. Um capanga reduzido a 0 PV não pode ser usado pelo restante da cena.</li>
+        <li>Se o tamanho de um capanga não for indicado em sua descrição, ele é Médio.</li>
+        <li>Cada grupo de capangas conta como um parceiro para o limite de parceiros que você pode ter.</li>
+        <li>Usos criativos para capangas fora de combate ficam a critério do mestre.</li>
+        <li>Capangas são criaturas simplificadas e não se beneficiam de alguns efeitos (por exemplo, não recebem bônus em testes de ataque, pois causam dano automático).</li>
+        </ul>
+        `,
+        referencia: `Heróis de Arton - páginas 240 e 241`,
+      },
+      {
+        id: 214,
+        nome: `SERVIÇOS MERCENÁRIOS`,
+        descricao: `
+        <p>As criaturas convocadas pelas seguintes habilidades são capangas, e são afetadas por quaisquer efeitos que afetem especificamente capangas: Conjurar Mortos-Vivos, Servos do Dragão, Tropas Duyshidakk (Tormenta20), o aprimoramento que conjura kobolds de Conjurar Monstro (Ameaças de Arton) e Legião Tapistana (Jornada Heroica: Guerra Artoniana e Jornada Heroica: A Libertação de Valkaria). Em especial, um efeito que aumente a quantidade de capangas que você recebe, como Comandante de Campo (veja p. 75) aumenta a quantidade de capangas convocados. Da mesma forma, um efeito que reduza a ação necessária para posicionar seus capangas também reduz a ação necessária para usar essas habilidades (exceto para magias).</p>
+        <p>Capangas convocados não contam em seu limite de parceiros.</p>
+        `,
+        referencia: `Heróis de Arton - página 241`,
+      },
+      {
+        id: 215,
+        nome: `VEÍCULOS`,
+        descricao: `
+        <p>Carroças carregando repolhos e carruagens carregando princesas. Grandes veleiros singrando os mares e ágeis ornitópteros voando pelos céus. Arton possui diversos veículos, e cada vez mais eles são parte da vida — e das aventuras — dos heróis. Esta seção apresenta regras detalhadas para uso de veículos.</p>
+        <h5><p><b>CARACTERÍSTICAS DE VEÍCULOS</b></p></h5>
+        <p><b>Tamanho.</b> O tamanho de um veículo determina o espaço que ele ocupa, bem como seus modificadores de Furtividade e manobras (Tormenta20, p. 107). Além disso, o veículo aplica seu modificador de Furtividade por tamanho nos testes de Pilotagem do piloto.</p>
+        <p><b>Deslocamento.</b> Veículos seguem as regras normais para seus tipos de deslocamento, exceto que um veículo com deslocamento de natação se move apenas sobre a água, a menos que sua descrição especifica que ele podem submergir.</p>
+        <p><b>Defesa.</b> Indica a dureza dos materiais que compõem o veículo. Se o veículo adiciona um atributo (ou outra característica) do piloto à sua Defesa, ele só recebe esse benefício se estiver em movimento.</p>
+        <p><b>Pontos de Vida.</b> Representam a resistência dos materiais que compõem o veículo. Um veículo reduzido a 0 PV ou menos para de funcionar e, se for reduzido a um total de PV negativos igual à metade de seus pontos de vida máximos, é destruído além de qualquer conserto.</p>
+        <ul>
+        <li><i>Consertando Veículos.</i> Para consertar um veículo, você gasta 1 hora de trabalho e faz um teste de Ofício (artesão ou outro apropriado) com CD 15. Se passar, recupera 1d8 PV do veículo, +1d8 para cada 5 pontos pelos quais o teste superar a CD. Para cada d8 recuperado, você precisa gastar T$ 10 em materiais. A critério do mestre, várias pessoas podem reparar um veículo ao mesmo tempo, sobretudo se ele for Grande ou maior. Ao contrário de outros objetos, pontos de vida de veículos também podem ser recuperados com habilidades que recuperem PV de construtos, como a magia <i>Transmutar Objetos.</i></li>
+        </ul>
+        <p><b>Tripulação.</b> Cada veículo exige um ou mais tripulantes, conforme seu tamanho e complexidade.</p>
+        <ul>
+        <li><i>Piloto.</i> Responsável por conduzir o veículo. Todo veículo tripulado precisa de pelo menos um piloto.</i></li>
+        <li><i>Copiloto.</i> Pode fazer testes de Pilotagem para ajudar o piloto, e pode substituí-lo se necessário.</i></li>
+        <li><i>Capitão.</i> Veículos maiores, como navios, geralmente possuem um capitão. Ele desempenha diversas tarefas adequadas ao veículo e pode fazer testes para ajudar os demais tripulantes.</i></li>
+        </ul>
+        <p>Certos veículos podem ter outros tripulantes especializados, como navegadores, artesãos, canhoneiros, remadores etc. Se a tripulação de um veículo for menor que o necessário, o piloto sofre –2 em testes de Pilotagem. Se for menor que a metade do necessário, a penalidade aumenta para –5.</p>
+        <p><b>Passageiros e Carga.</b> Indica quantos passageiros ou espaços de carga o veículo pode transportar. Como regra geral, um passageiro Pequeno ou Médio que não esteja sobrecarregado equivale a 20 espaços de carga de um veículo. Qualquer sobrecarga do passageiro conta no limite de espaços do veículo.</p>
+        <p><b>Cobertura.</b> Alguns veículos fornecem cobertura, leve ou total, para seus ocupantes (indicado em sua descrição).</p>
+        `,
+        referencia: `Heróis de Arton - páginas 241 e 242`,
+      },
+      {
+        id: 216,
+        nome: `JOGANDO COM VEÍCULOS`,
+        descricao: `
+        <p><b>Embarcando.</b> Embarcar em um veículo geralmente é uma ação de movimento. No caso de veículos maiores, como navios, alcançar posições específicas pode demorar mais tempo.</p>
+        <p><b>Pilotagem.</b> Para conduzir um veículo em combate ou outras situações ruins (por exemplo, uma estrada esburacada para um veículo terrestre, ou um dia de ventania para um veículo voador) você precisa gastar uma ação de movimento e fazer um teste de Pilotagem contra CD 15. Em situações muito ruins (um bosque embarrado para um veículo terrestre, uma tempestade para um veículo voador), a CD aumenta para 25. Se passar, você avança seu deslocamento. Se falhar, avança metade desse deslocamento. Por fim, se falhar por 5 ou mais, sofre um contratempo.</p>
+        <p>Um contratempo pode ser perda de vida (2d6 para veículos Médios ou menores, +2d6 por categoria de tamanho acima), uma colisão ou um problema que desabilite uma roda ou incapacite uma das criaturas que puxa o veículo (veja a seguir).</p>
+        <ul>
+        <li><i>Pilotagem Cuidadosa.</i> No início de cada rodada, você pode pilotar cuidadosamente. Se fizer isso, nessa rodada o deslocamento do veículo diminui pela metade e você recebe +2 em Pilotagem.</li>
+        </ul>
+        <p><b>Colisões.</b> Veículos em movimento podem colidir com obstáculos, como paredes, árvores e outros veículos. Quando uma colisão ocorre, o veículo e seus ocupantes sofrem 1d6 pontos de dano de impacto para cada 3m de deslocamento do veículo (mínimo 1d6). Os ocupantes do veículo podem fazer um teste de Reflexos (CD 20 + o total de dados de dano) para reduzir esse dano à metade. A critério do mestre, obstáculos muito pequenos (três ou mais categorias de tamanho menores que o veículo) ou frágeis (como uma pilha de feno) não causam dano de colisão. Já obstáculos muito grandes (duas ou mais categorias de tamanho maiores que o veículo) podem, além do dano, forçar o veículo a parar completamente ou capotar.</p>
+        <p><b>Quebrando Rodas.</b> É possível quebrar ou sabotar as rodas de um veículo ou outras partes necessárias para seu deslocamento, como remos ou velas (veja Ladinagem em Tormenta20, p. 120). Se uma dessas partes for desabilitada, o piloto sofre uma penalidade de –2 em testes de Pilotagem. Se mais da metade dessas partes for desabilitada, o piloto sofre –5 em testes de Pilotagem e o deslocamento do veículo é reduzido à metade. O mestre tem a palavra final sobre quais partes de um veículo interferem em seu deslocamento.</p>
+        <p><b>Animais de Tração.</b> Para veículos puxados por criaturas, a descrição indica quantas delas são necessárias. Se a quantidade de criaturas presentes for menor que o indicado, o piloto sofre –2 em testes de Pilotagem. Se for menor que a metade, a penalidade em Pilotagem aumenta para –5 e o deslocamento do veículo é reduzido à metade.</p>
+        <p><b>Atacar em um Veículo.</b> O balanço de um veículo em movimento torna mais difícil atacar à distância (–2 em testes de ataque) e conta como condição ruim para lançar magias. A critério do mestre, poderes relacionados a combater em veículos, como Pernas do Mar (Tormenta20, p. 48), podem eliminar essas penalidades.</p>
+        <p><b>Atropelamento.</b> Você pode usar uma ação completa para atropelar criaturas. Faça um teste de Pilotagem para conduzir como normal. Se você passar, o veículo percorre até o dobro de seu deslocamento (mínimo 6m) em linha reta, podendo passar pelo espaço ocupado por criaturas menores que ele. Criaturas atropeladas sofrem 1d6 pontos de dano de impacto para cada 1,5m de deslocamento do veículo e ficam caídas (Ref CD igual ao resultado do teste de Pilotagem reduz à metade e evita a condição). Se encontrar uma criatura de tamanho igual ou maior que o seu, em vez de atropelá-la o veículo colide com ela (veja “Colisões”). Veículos Enormes e Colossais são ainda mais perigosos; seus dados de dano mudam respectivamente para d8 e d12.</p>
+        <p><b>Aeronaves.</b> Alguns veículos voadores, como balões, podem ficar parados em pleno ar sem perder sustentação. Já outros (indicados em sua descrição) precisam percorrer pelo menos metade do seu deslocamento a cada rodada para se manter voando. Caso contrário, começam a cair e perder controle; o mestre determina quantas rodadas uma aeronave leva para chegar ao solo (como regra geral, uma queda totalmente livre percorre 150m por rodada). Ao fim disso, a aeronave atinge o chão e sofre dano de queda como normal. Da mesma forma, uma aeronave reduzida a 0 PV ou menos perde a capacidade de voar e cai. Em ambos os casos, o piloto pode fazer um teste de Pilotagem para amortecer queda (veja a perícia Acrobacia).</p>
+        `,
+        referencia: `Heróis de Arton - páginas 242 e 243`,
       },
     ];
   }
