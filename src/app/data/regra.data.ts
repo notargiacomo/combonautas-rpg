@@ -3941,6 +3941,133 @@ export class RegraData {
         `,
         referencia: `Heróis de Arton - página 290 `,
       },
+      {
+        id: 250,
+        nome: `IDADE DAS RAÇAS`,
+        descricao: `
+        <p>Os intervalos de idade das faixas etárias usam as idades humanas como referência. Contudo, certas raças envelhecem em ritmos diferentes.</p>
+        <p>Anões, meios-elfos e qareen envelhecem mais lentamente que humanos. Multiplique os intervalos de idade deles a partir de adulto por 2. Já dahllan, duendes, eiradaan, elfos, golens, osteon, sátiros e sílfides envelhecem muito mais lentamente — multiplique os intervalos de idade deles a partir de adulto por 5. Assim, um anão se torna adulto aos 50 anos (25 x 2), enquanto um elfo se torna adulto apenas aos 125 anos (25 x 5)! Note que, embora essas raças sejam mais longevas, amadurecem no mesmo ritmo de humanos. Assim, tanto humanos quanto elfos serão crianças dos 9 aos 12 anos, adolescentes dos 13 aos 17 e jovens a partir dos 18. Apenas a partir daqui as diferenças surgem.</p>
+        <p>Já goblins e trogs são menos longevos que humanos. Multiplique todos os intervalos de idade deles por 0,7 (arredonde para o valor mais próximo). Assim, um goblin é criança a partir dos 6 anos, adolescente a partir dos 9, jovem a partir dos 13, adulto a partir dos 18, maduro a partir dos 28, velho a partir dos 42 e ancião a partir dos 56 anos.</p>
+        `,
+        referencia: `Heróis de Arton - página 289 `,
+      },
+      {
+        id: 251,
+        nome: `OBJETIVOS `,
+        descricao: `
+        <p>Com esta regra opcional, você pode escolher um objetivo heroico para seu personagem: ascender ao trono de um reino, vingar a morte de seu mestre, tornar-se o líder de uma guilda de ladrões ou outra coisa igualmente grandiosa. Um objetivo heroico deve ser algo que marca uma virada na vida do personagem e que o modificará para sempre.</p>
+        <p>Todo objetivo heroico deve ser grandioso e específico. Ser admitido na Ordem da Luz não é um objetivo heroico. Tornar-se o Alto Comandante, sim. Da mesma forma, não basta dizer que você deseja “ascender à nobreza” ou “punir um grande vilão”. Você deseja ser o rei de Bielefeld ou prender Dee. Cumprindo um objetivo heroico, você será o líder ou maior expoente de algo, terá revolucionado algum aspecto de Arton. O mestre tem a palavra final sobre o que pode ser um objetivo heroico.</p>
+        <p>Você pode escolher seu objetivo durante a construção do personagem ou com a campanha já em andamento. Um objetivo heroico nunca pode começar já estando perto de ser cumprido. Por exemplo, você não pode esperar até estar em Lamnor para decidir que seu objetivo é ser o novo Ayrrak.</p>
+        <p>Em termos de jogo, um personagem com um objetivo heroico recebe certos benefícios quando se aproxima de seu objetivo e sofre penalidades quando se afasta dele.</p>
+        <h5><p><b>BENEFÍCIOS DE OBJETIVO</b></p></h5>
+        <p>No início de qualquer cena diretamente relacionada a seu objetivo, você recebe um benefício de acordo com seu objetivo. Esse benefício conta como uma habilidade e dura até o fim da cena.</p>
+        <p>Você só pode receber um benefício de objetivo por aventura. Você pode escolher não receber o benefício em uma cena se achar que a aventura terá outra cena relacionada ao objetivo, que seja mais importante.</p>
+        <p>O que exatamente significa uma cena diretamente relacionada a seu objetivo fica a critério do mestre. Como regra geral, se ao término da cena você estiver mais perto de seu objetivo, a cena ativa o benefício.</p>
+        <h5><p><b>PENALIDADES DE OBJETIVO</b></p></h5>
+        <p>Se ao fim de uma cena você estiver mais longe de seu objetivo, sofre uma penalidade ditada por seu objetivo. Você sofre essa penalidade mesmo que seja imune a seu efeito.</p>
+        <p>Embora a maior parte das cenas não vá aproximá-lo de seu objetivo, provavelmente também não vai afastá-lo. Assim, cenas não relacionadas ao objetivo não impõem penalidades. Por exemplo, caso seu objetivo seja casar com Vladislav Tpish, uma cena longe da Academia Arcana não o afasta de seu objetivo. Contudo, uma cena em que você briga com ele o afasta.</p>
+        <h5><p><b>CONCLUINDO UM OBJETIVO</b></p></h5>
+        <p>Se você completar seu objetivo, recebe um benefício maior e permanente. A partir desse ponto, não recebe mais benefícios ou penalidades em cenas relacionadas ao objetivo. Você não pode escolher um novo objetivo — afinal, um objetivo heroico é algo que define toda uma vida.</p>
+        `,
+        referencia: `Heróis de Arton - página 292 `,
+      },
+      {
+        id: 252,
+        nome: `TIPOS DE OBJETIVOS`,
+        descricao: `
+        <p>A seguir estão algumas categorias amplas nas quais seu objetivo pode se enquadrar. Se você quiser um objetivo que não se enquadre em nenhuma delas, você e o mestre podem criar uma nova categoria, usando estas como base.</p>
+        <p><b>Benefício.</b> Você recebe este benefício em cenas diretamente ligadas ao seu objetivo (mas apenas uma vez por aventura).</p>
+        <p><b>Penalidade.</b> Você sofre esta penalidade se, ao término de uma cena, estiver mais longe de seu objetivo. A penalidade dura até o fim da aventura.</p>
+        <p><b>Conclusão.</b> Se alcançar seu objetivo, você recebe este benefício. Ele é permanente.</p>
+        `,
+        referencia: `Heróis de Arton - página 292 `,
+      },
+      {
+        id: 253,
+        nome: `TIPOS DE OBJETIVOS: DESAFIOS`,
+        descricao: `
+        <p>Você quer fazer algo muito difícil, apenas porque é difícil. Deseja escalar o Monte do Dragão Adormecido sem equipamento, sem magias e vendado; ou vencer Laan numa corrida a pé; ou derrotar Maquius em combate desarmado após ter bebido mais do que ele.</p>
+        <p><b>Benefício.</b> Você recebe +2d4 PM temporários.</p>
+        <p><b>Penalidade.</b> Você fica fatigado.</p>
+        <p><b>Conclusão.</b> Você recebe +1 em dois atributos diferentes a sua escolha.</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
+      {
+        id: 254,
+        nome: `TIPOS DE OBJETIVOS: DESCOBERTA`,
+        descricao: `
+        <p>Você deseja aprender um conhecimento específico, formular uma teoria ou desvendar um mistério: quer visitar todos os reinos dos deuses, descobrir como criar uma nova raça de seres vivos ou solucionar o assassinato do Rei de Salistick.</p>
+        <p><b>Benefício.</b> Você recebe um bônus de +2 em testes de Inteligência e de perícias baseadas nesse atributo.</p>
+        <p><b>Penalidade.</b> Você fica frustrado.</p>
+        <p><b>Conclusão.</b> Você recebe +1 em Inteligência eum poder geral a sua escolha.</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
+      {
+        id: 255,
+        nome: `TIPOS DE OBJETIVOS: LIDERANÇA`,
+        descricao: `
+        <p>Você quer ascender socialmente e conquistar uma posição de destaque: Alto Comandante da Ordem da Luz, irmão mais velho da Companhia dos Irmãos ou o próximo Ayrrak de Lamnor. Você é movido pela ambição, ou talvez seja o legítimo herdeiro de algum título.</p>
+        <p><b>Benefício.</b> Você recebe +2 em testes de Carisma e de perícias baseadas nesse atributo.</p>
+        <p><b>Penalidade.</b> Você fica alquebrado.</p>
+        <p><b>Conclusão.</b> Você recebe +1 em Carisma e uma estrutura ou benefício equivalente, a critério do mestre.</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
+      {
+        id: 256,
+        nome: `TIPOS DE OBJETIVOS: OBRA`,
+        descricao: `
+        <p>Você deseja construir uma obra monumental, algo nunca visto em Arton. Por exemplo, uma estátua maior que a de Sckhar, uma ponte ligando os dois continentes ou uma embarcação capaz de cruzar o éter divino.</p>
+        <p><b>Benefício.</b> Você recebe +2 em testes de resistência e 1d4 PM temporários.</p>
+        <p><b>Penalidade.</b> Você fica abalado.</p>
+        <p><b>Conclusão.</b>  Você recebe +1 em Constituição e os benefícios de sua obra (provavelmente uma base, domínio, negócio ou veículo, a critério do mestre).</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
+      {
+        id: 257,
+        nome: `TIPOS DE OBJETIVOS: RIQUEZA`,
+        descricao: `
+        <p>Você quer dinheiro, pura e simplesmente. Não é o mesmo que ascensão social, pois não envolve reconhecimento ou legitimidade. Para cumprir este objetivo, você deve acumular uma quantidade de tibares decidida pelo mestre (provavelmente um milhão!). Equipamento, patrimônio, domínios, propriedades e outros bens não contam para o cumprimento do objetivo, apenas dinheiro vivo!</p>
+        <p><b>Benefício.</b>  O custo em PM de suas habilidades é reduzido em –1.</p>
+        <p><b>Penalidade.</b> Você fica alquebrado.</p>
+        <p><b>Conclusão.</b> Escolha uma habilidade com custo em PM. O custo em PM para usá-la é reduzido em –2 PM (cumulativo com outras reduções). Além disso, agora você pode gastar o dinheiro guardado!</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
+      {
+        id: 258,
+        nome: `TIPOS DE OBJETIVOS: SALVAÇÃO`,
+        descricao: `
+        <p>Você deseja ajudar, encontrar ou resgatar uma pessoa necessitada, perdida ou aprisionada. Como alternativa, pode querer ajudar toda uma população. Por exemplo, quer libertar seu irmão da Fortaleza Hardof, devolver a divindade a Tilliann ou reformar toda a Favela dos Goblins.</p>
+        <p><b>Benefício.</b> Você recebe +2 na Defesa.</p>
+        <p><b>Penalidade.</b> Você fica vulnerável.</p>
+        <p><b>Conclusão.</b> Você recebe +2 na Defesa e em testes de resistência, além de um parceiro mestre de um tipo a sua escolha.</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
+      {
+        id: 259,
+        nome: `TIPOS DE OBJETIVOS: VINGANÇA`,
+        descricao: `
+        <p>Você quer matar, prender ou punir uma pessoa ou monstro que lhe fez um grande mal. Seja quem for, deve ser um vilão poderoso: Hermann Von Krauser, Ferren Asloth ou mesmo Gatzvalith!</p>
+        <p><b>Benefício.</b> Uma vez por rodada, você recebe +5 em uma rolagem de dano.</p>
+        <p><b>Penalidade.</b> Você fica fraco.</p>
+        <p><b>Conclusão.</b> Você recebe +1 em Força e um poder de combate a sua escolha.</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
+      {
+        id: 260,
+        nome: `ABANDONANDO UM OBJETIVO`,
+        descricao: `
+        <p>Uma vez que um personagem escolha um objetivo, deve se esforçar para cumpri-lo. Alguns objetivos oferecem benefícios significativos apenas por tentar cumprilos... Mas jogadores espertos podem escolhê-los sem nunca realmente almejar sua conclusão, apenas desfrutando os benefícios de tentar!</p> 
+        <p>Se o mestre julgar que o personagem não está se esforçando para cumprir o objetivo, pode definir que o objetivo foi abandonado. O jogador sofre a penalidade do objetivo por uma aventura, então o perde. Nenhum benefício ou penalidade se aplicam mais, mas ele não pode escolher um novo objetivo.</p>
+        `,
+        referencia: `Heróis de Arton - página 293`,
+      },
     ];
   }
 }
