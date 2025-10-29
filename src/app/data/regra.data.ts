@@ -4068,6 +4068,526 @@ export class RegraData {
         `,
         referencia: `Heróis de Arton - página 293`,
       },
+      {
+        id: 261,
+        nome: `PERIGOS`,
+        descricao: `
+        <p>Aventureiros não precisam se preocupar apenas com monstros e inimigos — Arton é um mundo de problemas e a vida dos heróis é sempre arriscada! Esta seção traz regras para perigos — armadilhas, doenças e outras ameaças que não são criaturas.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 317`,
+      },
+      {
+        id: 262,
+        nome: `PERIGOS: AREIA MOVEDIÇA`,
+        descricao: `
+        <p>Presente em pântanos e desertos, pode engolir criaturas ou objetos para dentro de si. Em geral, areia movediça ocupa um quadrado com 6m de lado.</p>
+        <p>Um personagem deve passar em um teste de Sobrevivência (CD 25) para notar areia movediça à frente. Se entrar na área da areia, fica agarrado. Se passar uma rodada inteira agarrado, submerge e precisa prender a respiração (veja Sufocamento).</p>
+        <p>Uma criatura na areia movediça pode gastar uma ação completa e fazer um teste de Atletismo (CD 25) para escapar. Se estava submersa, fica agarrada. Se estava agarrada, fica livre na margem da areia. Porém, se falhar por 5 ou mais, fica fatigada (se já estava fatigada, fica exausta e, se já estava exausta, fica inconsciente, provavelmente morrendo...).</p>
+        <p>Personagens fora da área de areia movediça podem ajudar no teste de Atletismo (alcançando um galho, vara ou corda para a vítima, por exemplo).</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 317`,
+      },
+      {
+        id: 263,
+        nome: `PERIGOS: ARMADILHAS`,
+        descricao: `
+        <p>Vilões adoram forrar seus covis de armadilhas para afastar aventureiros intrometidos. Mesmo antigos templos e masmorras abandonadas podem conter dispositivos diabólicos protegendo seus tesouros. A ficha de cada armadilha traz as informações a seguir.</p>
+        <p><b>Nome.</b> Armadilhas com o nome em <i>itálico</i> são mágicas e podem ser anuladas com <i>Dissipar Magia.</i></p>
+        <p><b>Efeito.</b> O que acontece com a criatura que disparou a armadilha. Normalmente, uma armadilha afeta apenas a criatura que a disparou; se afetar mais de uma criatura ou uma área, isso estará especificado.</p>
+        <p><b>Resistência.</b> O tipo e CD do teste de resistência que a vítima da armadilha deve fazer para evitar ou reduzir seu efeito, caso haja.</p>
+        <p><b>Investigação e Ladinagem.</b> A CD dos testes para encontrar e desarmar a armadilha.</p>
+        <p><b>ND.</b> O perigo que a armadilha representa. Funciona como o nível de desafio de uma criatura.</p>`,
+        referencia: `Tormenta 20 Jogo odo Ano - página 317`,
+      },
+      {
+        id: 264,
+        nome: `PERIGOS: DOENÇAS`,
+        descricao: `
+        <p>Uma doença pode ser transmitida por contato, inalação ou ingestão (veja “Venenos”, na página 161, para as regras de cada tipo). Um personagem exposto a uma doença deve fazer um teste de Fortitude (CD conforme a doença). Se falhar, é contaminado (mas ainda não sofre nenhum efeito). Contaminação não é cumulativa; uma vez que contraia a doença, o personagem não sofre efeitos adicionais por ser atingido novamente.</p>
+        <p>Um personagem contaminado deve repetir o teste de Fortitude no início de cada dia. Se falhar, sofre o efeito da doença naquele dia. Se passar, não sofre o efeito. Se passar por dois dias seguidos, estará curado.</p>`,
+        referencia: `Tormenta 20 Jogo odo Ano - página 318`,
+      },
+      {
+        id: 265,
+        nome: `PERIGOS: ESCURIDÃO`,
+        descricao: `
+        <p>Escuridão é dividida em leve e total.</p>
+        <p>Escuridão Leve. Qualquer situação de penumbra, como uma noite enluarada ou os cantos da cidade ao longe dos postes com seus lampiões. Fornece camuflagem leve.</p>
+        <p>Escuridão Total. O breu da noite sem estrelas ou luar, longe de qualquer fonte de luz, ou uma câmara totalmente fechada ou nos subterrâneos, longe da entrada. Fornece camuflagem total.</p>`,
+        referencia: `Tormenta 20 Jogo odo Ano - página 318`,
+      },
+      {
+        id: 266,
+        nome: `PERIGOS: FOGO`,
+        descricao: `
+        <p>Um personagem exposto a fogo deve fazer um teste de Reflexos (CD 15). Se falhar, fica em chamas, sofrendo 1d6 pontos de dano de fogo no início de seus turnos. O personagem pode gastar uma ação padrão para apagar o fogo com as mãos. Imersão em água também apaga as chamas.</p>
+        <p>Fogo provocado por efeitos instantâneos, como nas magias Explosão de Chamas e Bola de Fogo, não dura o suficiente para incendiar alguém.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 267,
+        nome: `PERIGOS: FOME E SEDE`,
+        descricao: `
+        <p>Um personagem pode resistir um dia inteiro sem água ou comida sem maiores problemas. Depois disso, deve fazer um teste de Fortitude por dia (CD 15 +1 por teste anterior). Se falhar, fica fatigado. Se falhar novamente, fica exausto. Se falhar pela terceira vez, fica inconsciente. A quarta falha é letal. Condições causadas por fome e sede só podem ser curadas por comida e bebida. Metabolismo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 268,
+        nome: `PERIGOS: FUMAÇA`,
+        descricao: `
+        <p>Um personagem imerso em fumaça densa (por exemplo, dentro de uma casa em chamas) deve fazer um teste de Fortitude no início de cada um de seus turnos (CD 10 +1 por teste anterior). Se falhar, perde o turno engasgando-se e tossindo, sem conseguir realizar nenhuma outra ação. Falhar em dois testes seguidos causa a perda de 1d6 pontos de vida. Metabolismo.</p>
+        <p>Fumaça também obscurece a visão, fornecendo camuflagem leve às criaturas em seu interior.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 269,
+        nome: `PERIGOS: LAVA`,
+        descricao: `
+        <p>Lava, magma e outros materiais incandescentes (como metal derretido) causam 2d6 pontos de dano de fogo por rodada de exposição direta.</p>
+        <p>Imersão total (por exemplo, cair na cratera de um vulcão) causa 20d6 pontos de dano de fogo por rodada e o dano persiste por uma rodada adicional. Por exemplo, se um personagem fica duas rodadas na lava e depois sai, sofre um total de 60d6 pontos de dano de fogo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 270,
+        nome: `PERIGOS: QUEDA`,
+        descricao: `
+        <p>Uma queda causa 1d6 pontos de dano de impacto para cada 1,5m, até um máximo de 40d6 para uma queda de 60m. Em caso de queda na água, reduza o dano em 6m (ou seja, –4d6).</p>
+        <p>Um objeto pesado (pedra, baú, barril...) que caia sobre uma criatura também causa 1d6 pontos de dano para cada 1,5m da queda. Dobre o dano para um objeto muito pesado (rocha, altar, carroça...).</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 271,
+        nome: `PERIGOS: SONO`,
+        descricao: `
+        <p>Um personagem pode ficar uma noite sem dormir sem problemas — embora não recupere PV e PM. Depois disso, deve fazer um teste de Fortitude por dia sem dormir (CD 15 +1 por teste anterior). Se falhar, fica fatigado. Se já estiver fatigado, fica exausto. Se já estiver exausto, cai inconsciente e não pode ser acordado até dormir pelo menos oito horas.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 272,
+        nome: `PERIGOS: SUFOCAMENTO`,
+        descricao: `
+        <p>Um personagem pode prender a respiração por um número de rodadas igual a 1 + sua Constituição (por exemplo, 3 rodadas se tem Con 2).</p>
+        <p>Depois disso, deve fazer um teste de Fortitude por rodada (CD 15 +1 por teste anterior). Se falhar, cai inconsciente e perde 1d6 PV por rodada até respirar novamente ou morrer. Metabolismo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 273,
+        nome: `PERIGOS: TORMENTA`,
+        descricao: `
+        <p>Como uma infecção que ataca Arton, a Tormenta corrompe tudo e todos: seres vivos, objetos, o terreno, até o próprio espaço e tempo.</p>
+        <p>Ao entrar em uma área de Tormenta, uma criatura fica automaticamente frustrada, à medida que sua mente luta contra a insanidade. No início de cada dia na área, a criatura deve fazer um teste de Vontade (CD 25 + 2 por dia anterior consecutivo) ou ficará esmorecida pelo dia. Se já estava esmorecida, fica confusa pelo dia. Se já estava confusa, fica completamente insana — se era um personagem, se torna um NPC maligno sob controle do mestre. Além disso, enquanto estiver na área de Tormenta, habilidades com custo em pontos de mana têm seu custo aumentado em 2 PM e itens mágicos encantados perdem um de seus encantamentos (a escolha do portador). Por fim, a recuperação de PV e PM por descanso é reduzida à metade (após aplicar outros efeitos que afetem sua recuperação).</p>
+        <p>Lefeu e lefou são imunes a todos esses efeitos.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 319`,
+      },
+      {
+        id: 274,
+        nome: `PERIGOS COMPLEXOS`,
+        descricao: `
+        <p>Uma avalanche nas Montanhas Uivantes, uma jornada pelos ermos e uma tempestade em alto mar são exemplos de perigos complexos. Enquanto perigos simples oferecem uma ameça dentro de uma cena, perigos complexos são uma cena por si só. Eles são uma boa opção para quando você quer uma cena de ação que não seja um combate.</p>
+        <p>Em termos de jogo, perigos complexos são similares a combates, envolvendo diversas decisões e múltiplos testes. A mecânica deles é baseada em testes estendidos (veja a página 222), mas cada um pode trazer regras próprias. A ficha de cada perigo complexo traz as seguintes informações.</p>
+        <p><b>Nome e ND.</b> O nome e o nível de desafio do perigo.</p>
+        <p><b>Objetivo.</b> Em um combate, o objetivo normalmente é simples: derrotar os inimigos. Já em um perigo, o objetivo nem sempre é tão óbvio. Afinal, não é possível “derrotar” algo como uma tempestade. Esta linha resume o que os personagens devem fazer para “vencer” o perigo.</p>
+        <p><b>Efeito.</b> O que o perigo causa aos personagens. Se o perigo fosse uma criatura, este bloco seria as ações que ele pode fazer.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - página 320`,
+      },
+      {
+        id: 275,
+        nome: `FICHA DE NPC'S`,
+        descricao: `
+        <p>Como dito no Capítulo 6, a maioria dos NPCs não precisa de fichas. Na verdade, os únicos que precisam são aqueles que podem enfrentar o grupo. Para esses, você pode criar uma ficha de ameaça, semelhante a das criaturas descritas neste capítulo.</p>
+        <p>Fichas de ameaça seguem uma lógica diferente das fichas de personagens. Elas não se preocupam com a origem de cada bônus e modificador das estatísticas, apenas com os valores finais. Para criar uma ficha de ameaça, siga os passos abaixo.</p>
+        <h5><p><b>CONCEITOS E ND</b></p></h5>
+        <p>Para começar, defina o conceito do NPC, o papel dele no mundo. Ele é um assassino furtivo, um combatente de armadura pesada ou um aristocrata que secretamente adora Aharadak?</p>
+        <p>Após pensar no conceito do NPC, escolha um nível de desafio adequado para ele (use como base os patamares de jogo descritos na página 35). O ND representa a experiência e poder geral do NPC e funciona como o nível de personagem dele.</p>
+        <h5><p><b>ESTATÍSTICAS DE JOGO</b></p></h5>
+        <p>Estatísticas de ameaças não são calculadas a partir de atributos, habilidades e equipamento. Em vez disso, são determinadas pelo ND e pela Tabela 7-2: Estatísticas de NPCs. Esse sistema torna a criação de NPCs mais fácil e rápida.</p>
+        <p><b>Ataque e Dano.</b> O teste de ataque e o dano do NPC. Um multiplicador ao lado do ataque indica que o NPC faz aquela quantidade de ataques por rodada (cada um com o dano indicado). Defina como o NPC ataca. Isso não afeta os valores, mas ajuda a definir detalhes como tipo de dano, alcance etc.</p>
+        <p><b>Defesa & PV.</b> Respectivamente, os valores de Defesa e pontos de vida do NPC.</p>
+        <p><b>Perícias.</b> Esta coluna apresenta dois valores. Use o primeiro para as perícias nos quais o NPC é focado, de acordo com seu conceito. Por exemplo, um assassino usaria o primeiro valor para Enganação, Furtividade e Iniciativa. Use o segundo valor para todas as outras perícias do NPC.</p>
+        <p><b>CD.</b> Indica a dificuldade para resistir às habilidades do NPC, como magias e outros efeitos.</p>
+        <p><b>Habilidades.</b> Escolha as habilidades do NPC. Um assassino pode ter ataque furtivo, um combatente de armadura pesada pode ter redução de dano e um cultista pode lançar magias. Como regra geral, um NPC de patamar iniciante deve ter uma ou duas habilidades, com uma habilidade adicional para cada patamar acima. Para exemplos de habilidades, veja as classes de personagem e as ameaças.</p>
+        <p>Evite usar pontos de mana. Eles são ótimos para medir os recursos de um personagem jogador, mas uma complicação desnecessária para o mestre, que já precisa controlar diversos elementos. Para habilidades simples, considere que o NPC pode usá-las à vontade. Para habilidades mais poderosas (como uma magia de alto círculo), considere que o NPC pode usá-la uma vez por cena ou então apenas após recarregá-la gastando uma ação. Se quiser usar pontos de mana, considere de 3 a 6 PM por ND.</p>
+        <p><b>Outras Características.</b> Defina a raça, os atributos, o deslocamento e o equipamento do NPC. A raça pode ser uma disponível para personagens ou uma exclusiva de ameaças, como orc ou finntroll. Seja como for, a escolha será apenas “estética”, pois não afeta outras estatísticas — embora possa ser uma inspiração para as habilidades.</p>
+        <p>Para atributos, veja o “pacote” correspondente ao patamar do NPC, a seguir, e distribua os valores dados entre os seis atributos. Assim como a raça, esses valores não influenciam as demais estatísticas, servindo apenas para testes de atributo. Iniciante: 3, 2, 1, 1, 0, –1. Veterano: 4, 3, 2, 1, 0, 0. Campeão: 5, 4, 3, 2, 1, 0. Lenda: 7, 5, 4, 2, 2, 1.</p>
+        <p>O deslocamento padrão é 9m, mas pode ser maior ou menor — nosso assassino furtivo pode ter deslocamento 12m, enquanto o combatente de armadura pesada pode ter 6m.</p>
+        <p>Por fim, decida se o NPC possui algum equipamento digno de nota. Novamente, isso é uma escolha visual, pois as estatísticas já foram definidas.</p>
+        <p>Alterando Valores. Essas regras permitem que você crie NPCs rapidamente e sem se prender em detalhes que não teriam impacto no jogo. Naturalmente, fique à vontade para ajustar os valores da tabela para que se encaixem melhor no conceito do NPC. Um bárbaro robusto e de tanga pode ter mais pontos de vida, mas menos Defesa. Já um conjurador pode ter menos PV, mas a capacidade de lançar magias. Para esses ajustes, você pode subir algumas estatísticas em 1 ou mais níveis, e baixar outras. O tal bárbaro robusto pode ter pontos de vida como se seu ND fosse 2 pontos maior, mas ter sua Defesa diminuída na mesma proporção. Apenas tome cuidado para não alterar demais os números sem ajustar o nível de desafio, para evitar ter uma ficha muito forte, ou muito fraca, para o seu ND.</p>
+        <h5><p><b>DESCRIÇÃO</b></p></h5>
+        <p>Uma vez que você tenha as estatísticas de jogo do NPC, é hora de definir seus aspectos descritivos, como nome, aparência, personalidade e histórico. Para isso, consulte as dicas para personagens, na página 107, e os arquétipos de NPCs a partir da página 257.</p>
+        <p>Fique à vontade para detalhar o quanto quiser, mas lembre-se de priorizar informa- ções que irão aparecer no jogo! Para a maioria dos NPCs, um nome, uma frase de descrição, e dois ou três traços de personalidade são suficientes.</p>
+        <table>
+          <caption>Tabela 7-2: Estatísticas de NPC</caption>
+          <thead>
+            <tr>
+              <th>Patamar</th>
+              <th>ND</th>
+              <th>Ataque</th>
+              <th>Dano</th>
+              <th>Defesa</th>
+              <th>PV</th>
+              <th>Perícias</th>
+              <th>CD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">Iniciante</td>
+              <td>1/2</td><td>+7</td><td>1d6+3</td><td>15</td><td>10</td><td>+4/+0</td><td>14</td>
+            </tr>
+            <tr>
+              <td>1</td><td>+9</td><td>1d8+6</td><td>16</td><td>20</td><td>+6/+1</td><td>15</td>
+            </tr>
+            <tr>
+              <td>2</td><td>+11</td><td>1d10+10</td><td>18</td><td>40</td><td>+8/+2</td><td>16</td>
+            </tr>
+            <tr>
+              <td>3</td><td>+13</td><td>2d6+11</td><td>21</td><td>70</td><td>+10/+3</td><td>17</td>
+            </tr>
+            <tr>
+              <td>4</td><td>+15</td><td>2d6+14</td><td>24</td><td>110</td><td>+12/+4</td><td>18</td>
+            </tr>
+
+            <tr>
+              <td rowspan="6">Veterano</td>
+              <td>5</td><td>+18, x2</td><td>1d12+11</td><td>28</td><td>150</td><td>+14/+5</td><td>20</td>
+            </tr>
+            <tr>
+              <td>6</td><td>+20, x2</td><td>2d6+15</td><td>31</td><td>190</td><td>+16/+6</td><td>22</td>
+            </tr>
+            <tr>
+              <td>7</td><td>+22, x2</td><td>2d8+19</td><td>34</td><td>230</td><td>+18/+7</td><td>24</td>
+            </tr>
+            <tr>
+              <td>8</td><td>+24, x2</td><td>2d10+20</td><td>37</td><td>270</td><td>+20/+8</td><td>26</td>
+            </tr>
+            <tr>
+              <td>9</td><td>+26, x2</td><td>2d12+21</td><td>40</td><td>310</td><td>+22/+9</td><td>28</td>
+            </tr>
+            <tr>
+              <td>10</td><td>+29, x2</td><td>3d6+26</td><td>43</td><td>350</td><td>+24/+10</td><td>30</td>
+            </tr>
+
+            <tr>
+              <td rowspan="6">Campeão</td>
+              <td>11</td><td>+32, x3</td><td>3d10+26</td><td>46</td><td>400</td><td>+25/+11</td><td>32</td>
+            </tr>
+            <tr>
+              <td>12</td><td>+35, x3</td><td>3d10+26</td><td>48</td><td>450</td><td>+26/+12</td><td>34</td>
+            </tr>
+            <tr>
+              <td>13</td><td>+37, x3</td><td>3d10+36</td><td>50</td><td>500</td><td>+27/+13</td><td>36</td>
+            </tr>
+            <tr>
+              <td>14</td><td>+40, x3</td><td>4d6+38</td><td>52</td><td>550</td><td>+28/+14</td><td>38</td>
+            </tr>
+            <tr>
+              <td>15</td><td>+43, x3</td><td>4d8+40</td><td>54</td><td>600</td><td>+29/+15</td><td>40</td>
+            </tr>
+            <tr>
+              <td>16</td><td>+45, x3</td><td>4d10+44</td><td>56</td><td>650</td><td>+30/+16</td><td>42</td>
+            </tr>
+
+            <tr>
+              <td rowspan="4">Lenda</td>
+              <td>17</td><td>+47, x4</td><td>4d12+45</td><td>59</td><td>700</td><td>+32/+17</td><td>44</td>
+            </tr>
+            <tr>
+              <td>18</td><td>+50, x4</td><td>4d12+45</td><td>61</td><td>750</td><td>+33/+18</td><td>46</td>
+            </tr>
+            <tr>
+              <td>19</td><td>+52, x4</td><td>4d12+45</td><td>63</td><td>850</td><td>+34/+19</td><td>48</td>
+            </tr>
+            <tr>
+              <td>20</td><td>+55, x4</td><td>4d12+50</td><td>65</td><td>900</td><td>+35/+20</td><td>50</td>
+            </tr>
+          </tbody>
+        </table>
+
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 322 e 323`,
+      },
+      {
+        id: 276,
+        nome: `AMBIENTE DE AVENTURA: MASMORRA`,
+        descricao: `
+        <p>Antigas redes de túneis levando ao reino secreto de Doherimm. Ruínas esquecidas de templos sszzaazitas. Covis de dragões, com suas promessas de tesouro. Lugares fechados, perigosos, repletos de armadilhas e monstros. Em Arton, esses lugares são conhecidos coletivamente como “masmorras”.</p>
+        <p>Uma masmorra pode ser pequena e apertada, um simples esconderijo de bandidos, ou um vasto complexo planar como o Labirinto de Valkaria, vencido por heróis do passado para libertar a Deusa da Humanidade. São lugares de mistério e bizarria, de eventos absurdos e sem sentido. Uma tribo orc vive no aposento vizinho ao ninho de aranhas gigantes, sem que ocorra qualquer conflito — até a chegada de aventureiros. Uma passagem secreta se abre onde não deveria estar. Um caldeirão na antiga cozinha pode conter tanto uma poção mágica de cura quanto uma mão zumbi estranguladora.</p>
+        <p>Todas as masmorras, no entanto, têm uma coisa em comum: são o alvo preferido de heróis que desejam adquirir experiência e conquistar tesouros.</p>
+        <p>Em termos de jogo, masmorras são um ambiente comum de aventura. Por serem fechadas, limitam as opções dos jogadores e simplificam a vida do mestre. Em uma masmorra, o grupo pode decidir basicamente para qual sala ir. Se você mapear todas as salas, terá uma resposta para todas as decisões dos jogadores. Mestres iniciantes devem considerar fazer suas primeiras aventuras nesse tipo de ambiente.</p>
+        <h5><p><b>CRIANDO AVENTURAS E MASMORRAS</b></p></h5>
+        <p>Criar uma aventura em uma masmorra exige basicamente criar a masmorra em si.</p>
+        <p><b>Conceito.</b> Defina o conceito da masmorra. A tabela ao lado traz algumas ideias, mas as possibilidades são ilimitadas — praticamente qualquer espaço fechado pode ser uma masmorra.</p>
+        <p><b>Tamanho.</b> A quantidade de salas. Masmorras pequenas têm entre 3 e 6 salas e podem ser resolvidas como parte de uma sessão de jogo. Masmorras médias têm entre 7 e 20 salas e ocupam uma sessão inteira. Masmorras grandes têm entre 21 e 50 salas e são o escopo de toda uma aventura. Não recomendamos masmorras maiores do que isso — por mais interessante que o ambiente seja, ficar tanto tempo num mesmo lugar acaba sendo entediante.</p>
+        <p><b>Objetivo Principal.</b> O objetivo da masmorra é aquilo que o grupo foi buscar nela. Um antídoto? O esconderijo do vilão? Um tesouro? O conceito funciona como um guia — se a masmorra é uma prisão, o objetivo pode ser resgatar um prisioneiro.</p>
+        <p><b>Objetivos Secundários (Opcional; Apenas Masmorras Médias e Grandes).</b> Invente um objetivo secundário, algo que o grupo deve fazer antes do objetivo principal. Por exemplo, uma chave que precisa ser encontrada para abrir a última porta. Um objetivo secundário faz com que o grupo interaja mais com a masmorra. Em vez de avançar direto rumo ao fim, os personagens terão que explorar em busca do objetivo secundário. Masmorras médias podem ter um objetivo secundário, enquanto masmorras grandes podem ter até três.</p>
+        <p><b>Objetivos Opcionais.</b> Invente objetivos que não são obrigatórios para atingir o principal. O melhor exemplo é uma sala pela qual os personagens não precisam passar, mas que possui um tesouro e um desafio. Os personagens encaram o desafio para conquistar o tesouro? A decisão é deles. Adicionar escolhas faz com que os jogadores se envolvam mais. Masmorras pequenas devem ter um objetivo opcional; masmorras médias, dois, e masmorras grandes, três.</p>
+        <p><b>Ameaças.</b> Calcule uma ameaça para cada três salas, com um misto de cenas de ação (monstros, armadilhas) e exploração (labirintos, enigmas). Veja o Capítulo 7: Ameaças.</p>
+        <p><b>Pontos de Interesse (Opcional).</b> Pense em elementos que tornarão a jornada dos heróis mais interessante. Um rio subterrâneo, uma coleção de tapeçarias com a história de um antigo reino, uma estátua falante... Isso inclui NPCs com os quais os personagens podem interagir (se o NPC for apenas um inimigo, será uma ameaça). Os pontos de interesse podem ter relação com os objetivos ou ameaças da masmorra ou ser apenas elementos descritivos.</p>
+        <p><b>Mapa.</b> Desenhe o mapa da masmorra, com o número de salas que escolheu e corredores para conectá-las. Distribua os objetivos (principal, secundários e opcionais) nas salas e as ameaças antes ou junto dos objetivos. Faça mais de um caminho, para que os jogadores tenham escolhas. Se você não souber ou não quiser desenhar, pode procurar mapas prontos ou geradores de mapas na internet. Na verdade, outra maneira de criar uma masmorra é começar pelo mapa e ir preenchendo-o com os elementos desta lista (objetivos, ameaças e pontos de interesse).</p>
+        <p><b>Descrição e Regras.</b> Por fim, escreva uma descrição rápida para cada sala da masmorra e as regras de cada objetivo e ameaça, como fichas de criaturas.</p>
+        <table>
+          <caption><b>Tabela 6-2: Ideias de Masmorras</b></caption>
+          <thead>
+            <tr>
+              <th>1d20</th>
+              <th>Masmorra</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Complexo de cavernas subterrâneas</td></tr>
+            <tr><td>2</td><td>Mina abandonada</td></tr>
+            <tr><td>3</td><td>Templo de um deus maligno</td></tr>
+            <tr><td>4</td><td>Esgotos da cidade</td></tr>
+            <tr><td>5</td><td>Castelo de um déspota</td></tr>
+            <tr><td>6</td><td>Torre de um mago louco</td></tr>
+            <tr><td>7</td><td>Moinho da vila</td></tr>
+            <tr><td>8</td><td>Armazém no porto</td></tr>
+            <tr><td>9</td><td>Ruínas de uma civilização perdida</td></tr>
+            <tr><td>10</td><td>Fortaleza anã abandonada</td></tr>
+            <tr><td>11</td><td>Mansão assombrada</td></tr>
+            <tr><td>12</td><td>Prisão da cidade</td></tr>
+            <tr><td>13</td><td>Caverna submersa</td></tr>
+            <tr><td>14</td><td>Gruta usada como covil por um monstro</td></tr>
+            <tr><td>15</td><td>Biblioteca mágica</td></tr>
+            <tr><td>16</td><td>Galeão encalhado</td></tr>
+            <tr><td>17</td><td>Labirinto feito para proteger um tesouro</td></tr>
+            <tr><td>18</td><td>Manicômio repleto de vilões insanos</td></tr>
+            <tr><td>19</td><td>Vulcão inativo</td></tr>
+            <tr><td>20</td><td>Castelo nas nuvens</td></tr>
+          </tbody>
+        </table>
+        <h5><p><b>ELEMENTOS DE MASMORRA</b></p></h5>
+        <p><b>Pisos.</b> Pisos planos (tablados de madeira, ladrilhos em bom estado...) não têm efeito em regras. Pisos irregulares (cavernas naturais, construções em ruínas...) exigem testes de Acrobacia (CD 10) para correr ou fazer uma investida. Piso escorregadio, seja por água, gelo ou mesmo sangue, também exige o uso de Acrobacia para se equilibrar. Um piso que seja irregular e escorregadio aumenta a CD do teste para 15. Por fim, pisos cobertos de escombros, entulhos ou outros obstáculos impactantes contam como terreno difícil.</p>
+        <p><b>Paredes.</b> Paredes normalmente são de alvenaria ou pedra bruta (escavada ou natural), mas também podem ser de madeira. Paredes de alvenaria têm redução de dano 8 e 200 PV por trecho de 1,5m de lado. A CD de Atletismo para escalá-las é 20. Paredes de pedra bruta têm RD 8, 500 PV e CD 15 para escalar. Por fim, paredes de madeira possuem RD 5, 100 PV e CD 20 para escalar.</p>
+        <p><b>Portas.</b> Podem ser de madeira (usada em casas comuns), madeira reforçada (encontrada em mansões, armazéns e outras construções protegidas), pedra (usada em templos e torres) e ferro (usada em salas de tesouro). Além de portas, muitos ambientes são fechados por grades de ferro, especialmente castelos, calabouços e esgotos. A tabela a seguir traz a redução de dano e os pontos de vida de cada tipo de porta. Também é possível abrir uma porta com um encontrão ou chute — em termos de jogo, uma ação padrão e um teste de Força. A dificuldade do teste aparece na tabela. Um personagem que falhe por 5 ou mais sofre 1d6 pontos de dano de impacto.</p>
+        <p><b>Portas Secretas.</b> Encontrar uma dessas exige um teste de Investigação, com CD de 20 (portas escondidas atrás de estantes ou tapeçarias) a 30 (portas feitas para se mesclar perfeitamente às paredes).</p>
+        <p><b>Escadarias.</b> Subir uma escadaria conta como terreno difícil. Descer uma escadaria correndo ou fazendo uma investida exige um teste de Acrobacia (CD 10). Em caso de falha, você cai no chão, rola 1d4 x 1,5m para frente (ou até o fim da escada) e sofre 1d6 pontos de dano de impacto por 1,5m rolados.</p>
+        <p><b>Pilares.</b> Pilares e colunas existem por motivos funcionais (suportar o peso do teto) e estéticos. Via de regra, quanto maior e mais profunda for uma sala, mais colunas ela terá. Pilares podem ser estreitos (com menos de 1,5m de largura) ou largos (com mais de 1,5m de largura). Um pilar estreito tem RD 8 e 100 PV. Um personagem pode ficar no mesmo espaço de um pilar estreito e receber cobertura leve por isso (+5 na Defesa). Um pilar largo possui RD 8 e 500 PV. Um personagem não pode ficar no mesmo espaço de um pilar largo, mas pode ficar atrás dele para ganhar cobertura leve. Estalagmites e estátuas contam como pilares estreitos ou largos, de acordo com seu tamanho.</p>
+        <p><b>Tapeçarias.</b> Um elemento comum de muitas masmorras (especialmente templos e castelos antigos), tapeçarias podem ser úteis como esconderijo ou meio de alcançar um ponto mais alto. Uma tapeçaria com 1,5m de largura tem RD 0 e 10 PV. Um personagem atrás de uma tapeçaria possui camuflagem leve. A CD do teste de Atletismo para escalar uma tapeçaria é 15 (supondo que ela seja resistente o bastante para sustentar o peso do personagem).</p>
+        <p><b>Altares.</b> Outro elemento típico de masmorras são altares — normalmente, blocos de pedra retangulares que são o centro de um templo. Um altar comum ocupa um espaço de 1,5m por 3m, possui RD 8 e 200 PV e fornece cobertura leve a qualquer criatura atrás dele, embora altares maiores, menores e de outros materiais existam. Um altar também pode emanar uma aura mágica, especialmente as magias Consagrar e Profanar.</p>
+        <table>
+          <caption><b>Tabela 6-3: Portas</b></caption>
+          <thead>
+            <tr>
+              <th>Tipo de Porta</th>
+              <th>RD</th>
+              <th>PV</th>
+              <th>CD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Madeira</td><td>5</td><td>20</td><td>15</td></tr>
+            <tr><td>Madeira reforçada</td><td>5</td><td>30</td><td>20</td></tr>
+            <tr><td>Pedra</td><td>8</td><td>100</td><td>25</td></tr>
+            <tr><td>Ferro</td><td>10</td><td>100</td><td>25</td></tr>
+            <tr><td>Grade</td><td>10</td><td>60</td><td>20</td></tr>
+          </tbody>
+        </table>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 263 à 265`,
+      },
+      {
+        id: 277,
+        nome: `AMBIENTE DE AVENTURA: OS ERMOS`,
+        descricao: `
+        <p>Florestas sombrias, montanhas escarpadas e o fundo do mar são exemplos de “ermos”, lugares abertos e inóspitos — ao contrário de masmorras, que são fechadas e inóspitas. Ermos e masmorras são os ambientes de aventura mais comuns. Incontáveis histórias de fantasia épica incluem jornadas pelos ermos.</p>
+        <h5><p><b>CRIANDO AVENTURAS NOS ERMOS</b></p></h5>
+        <p>É possível fazer uma aventura nos ermos como se fosse uma masmorra, ou seja, mapeando o lugar que os personagens vão explorar. No caso de uma floresta, por exemplo, apenas substitua as salas por clareiras e os corredores por trilhas entre as árvores.</p>
+        <p>Porém, ermos são definidos por serem lugares abertos, onde os personagens podem ir em qualquer direção. Para emular isso, é melhor usar uma abordagem abstrata. Em vez de fazer um mapa, defina uma condição para os personagens avançarem e uma série de encontros que eles terão à medida que avançam.</p>
+        <p>Imagine uma aventura que tenha como objetivo encontrar uma flor mágica no centro da Mata dos Galhos Partidos. Você define que, para avançar pela floresta, os personagens precisam passar em um teste de Sobrevivência. Cada teste representa um dia de viagem e, para chegar ao centro, é necessário passar em três testes (ou seja, na melhor das hipóteses, o grupo chegará em três dias). Para cada avanço, você prepara uma cena — uma ameaça, objetivo opcional ou ponto de interesse. Por exemplo, após o primeiro sucesso, os heróis são atacados por lobos famintos.</p>
+        <p>Para deixar as coisas mais envolventes, coloque escolhas para os jogadores. Após o segundo sucesso, o grupo vê seu caminho bloqueado por teias. Eles seguem em frente, arriscando serem atacados por aranhas gigantes, ou procuram outro caminho, talvez estendendo sua jornada em um ou mais dias? Por fim, defina uma consequência para o tempo perdido. Talvez o grupo tenha mantimentos limitados, talvez haja monstros errantes e a cada dia exista uma chance de que os heróis sejam atacados.</p>
+        <p>Prepare uma descrição para cada um dos dias da jornada e sua aventura estará pronta. Essa abordagem abstrata funciona bem — e simplifica a vida do mestre.</p>
+        `,
+        
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 266 à 270`,
+      },
+      {
+        id: 278,
+        nome: 'ERMOS: CLIMA',
+        descricao: `
+        <p>O clima pode ser um aspecto importante de uma cena — uma batalha sob uma tempestade costuma ser mais dramática que lutar em um belo dia de sol!</p>
+        <p><b>Calor e Frio.</b> Um personagem em clima muito quente (acima de 50º C) ou muito frio (abaixo de –10º C) deve fazer um teste de Fortitude por dia (CD 15 +1 por teste anterior). Se falhar sofre 1d6 pontos de dano de fogo ou frio que só pode ser curado após sair do clima quente ou frio. Em calor ou frio extremos (acima de 60º C ou abaixo de –20º C) o teste deve ser feito por minuto.</p>
+        <p><b>Neblina.</b> Fornece camuflagem. Neblina espessa fornece camuflagem leve a criaturas a 1,5m e camuflagem total a criaturas a mais de 1,5m.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 267`
+      },
+      {
+        id: 279,
+        nome: 'ERMOS: PRECIPITAÇÕES',
+        descricao: `
+        <p><b>Chuva.</b> –5 em testes de Percepção e os mesmos efeitos de vento forte.</p>
+        <p><b>Granizo.</b> Como chuva, mas no início de cada rodada, todas as criaturas sofrem 1 ponto de dano de impacto.</p>
+        <p><b>Neve.</b> Como chuva, mas cria terreno difícil.</p>
+        <p><b>Tempestade.</b> –10 em testes de Percepção e os mesmos efeitos de vendaval. No início de cada rodada, há 10% de chance de uma criatura aleatória ser atingida por um raio (8d10 pontos de dano de eletricidade).</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 267`
+      },
+      {
+        id: 280,
+        nome: 'ERMOS: VENTO',
+        descricao: `
+        <p><b>Vento Forte.</b> –2 em testes de ataque à distância e 50% de chance por rodada de apagar chamas ou dissipar névoas.</p>
+        <p><b>Vendaval.</b> –5 em testes de ataque à distância. Apaga chamas e dissipa névoas.</p>
+        <p><b>Furacão.</b> Torna ataques à distância impossíveis, apaga chamas e dissipa névoas. No início de cada rodada, criaturas Médias ou menores devem passar em um teste de Fortitude (CD 15) ou caem, são arrastadas 1d4 x 1,5m na direção do vento e sofrem 1d6 pontos de dano de impacto para cada 1,5m.</p>
+        <p><b>Tornado.</b> Torna ataques à distância impossíveis, apaga chamas e dissipa névoas. No início de cada rodada, criaturas Grandes ou menores devem passar em um teste de Fortitude (CD 25) ou caem, são arrastadas 1d12 x 1,5m em uma direção aleatória e sofrem 1d6 pontos de dano de impacto para cada 1,5m.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 267`
+      },
+      {
+        id: 281,
+        nome: 'TERRENOS: COLINAS',
+        descricao: `
+        <p>Um tipo de terreno caracterizado por ondulações (suaves ou íngremes) e eventuais penhascos.</p>
+        <p><b>Inclinação Suave.</b> Não afeta o movimento, mas personagens no lado superior recebem bônus por terreno elevado contra personagens no lado inferior.</p>
+        <p><b>Inclinação Íngreme.</b> Conta como terreno difícil para subir. Descer uma inclinação íngreme correndo ou fazendo uma investida exige um teste de Acrobacia (ou Cavalgar, se você estiver montado; CD 10). Em caso de falha, você cai no chão, rola 1d4 x 1,5m para frente (ou até o fim da inclinação) e sofre 1d6 pontos de dano de impacto por 1,5m rolados.</p>
+        <p><b>Penhasco.</b> Um rochedo alto e escarpado, um penhasco típico tem 1d6 x 3m de altura. Escalar um penhasco exige um teste de Atletismo (CD 15).</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+      },
+      {
+        id: 282,
+        nome: 'TERRENOS: DESERTOS',
+        descricao: `
+        <p>Lugares áridos e quentes (para desertos de clima frio, veja “Ártico”, a seguir).</p>
+        <p><b>Dunas.</b> Formadas pela ação do vento sobre a areia, dunas funcionam como inclinações íngremes (veja “Colinas”, acima). Porém, cair e rolar de uma duna não causa dano.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+      },
+      {
+        id: 283,
+        nome: 'TERRENOS: FLORESTAS',
+        descricao: `
+        <p>Incluem florestas fechadas e abertas (bosques). Florestas fechadas são cobertas de árvores largas, folhagens e vegetação rasteira. Bosques normalmente possuem apenas árvores estreitas.</p>
+        <p><b>Árvores.</b> Podem ser estreitas (com menos de 1,5m de largura) ou largas (com mais de 1,5m de largura). Uma árvore estreita tem RD 5 e 100 PV. Um personagem pode ficar no mesmo espaço de uma árvore estreita e receber cobertura leve. Uma árvore larga possui RD 5 e 500 PV. Um personagem não pode ficar no mesmo espaço de uma árvore larga, mas pode ficar atrás dela para ganhar cobertura leve. Subir numa árvore exige um teste de Atletismo (CD 15). Um personagem no topo de uma árvore precisa se equilibrar (CD 15; veja Acrobacia, na página 115). Um personagem no topo de uma árvore larga recebe camuflagem leve contra criaturas no solo.</p>
+        <p><b>Folhagens.</b> Moitas e arbustos contam como terreno difícil e fornecem camuflagem leve a criaturas dentro deles.</p>
+        <p><b>Vegetação Rasteira.</b> Raízes, vinhas e outros tipos de vegetação rasteira contam como terreno difícil. Além disso, impõem penalidade de –2 em teste de Furtividade pelas folhas secas e galhos caídos.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+      },
+      {
+        id: 284,
+        nome: 'TERRENOS: MONTANHAS',
+        descricao: `
+        <p>O início de um terreno montanhoso é normalmente marcado por inclinações e penhascos (veja “Colinas”, acima).</p>
+        <p><b>Abismo.</b> Uma fenda no chão, normalmente com 1d4 x 1,5m de largura e 2d4 x 3m de profundidade. Escalar para fora de um abismo exige um teste de Atletismo (CD 20).</p>
+        <p><b>Altitude.</b> A falta de oxigênio de grandes altitudes pode ser letal. Um personagem no cume de uma montanha deve fazer um teste de Fortitude (CD 15 + 1 por teste anterior) por dia. Em caso de falha, fica fatigado até descer (se já estava fatigado, fica exausto).</p>
+        <p><b>Paredão.</b> Um penhasco vertical e muito alto, normalmente com 2d6 x 3m de altura. Escalar um paredão exige um teste de Atletismo (CD 25).</p>
+        <p><b>Seixos.</b> Em montanhas, inclinações íngremes às vezes são cobertas de pedrinhas. Nesse caso, a CD do teste para descer a inclinação numa corrida ou investida aumenta para 15.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+      },
+      {
+        id: 285,
+        nome: 'TERRENOS: PÂNTANOS',
+        descricao: `
+        <p>Inclui brejos, charcos, mangues (pântanos de água salgada) e qualquer tipo de terreno alagado. Pântanos possuem muita vegetação rasteira, folhagens e árvores (veja “Florestas”, acima), além de água parada (veja “Aquático”, abaixo) e lodaçais.</p>
+        <p><b>Lodaçal.</b> Poças com uma mistura de água e lama que atrapalha os movimentos. Um lodaçal conta como terreno difícil e impõe a condição vulnerável a qualquer personagem dentro dele.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+      },
+      {
+        id: 286,
+        nome: 'TERRENOS: PLANÍCIES',
+        descricao: `
+        <p>Incluem estradas, pastos, fazendas e campos de batalha. Normalmente, não há elementos associados a planícies, embora às vezes elas contenham vegetação rasteira (veja em “Florestas”, acima). Campos de batalha, porém, muitas vezes possuem trincheiras.</p>
+        <p><b>Trincheira.</b> Uma vala escavada no solo para proteger soldados. Um personagem em uma trincheira recebe cobertura leve contra ataques à distância. Sair de uma trincheira conta como terreno difícil. Essa regra pode ser usada para valas, leitos de rio secos e acidentes geográficos similares.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+      },
+      {
+        id: 287,
+        nome: 'TERRENOS: ÁRTICOS',
+        descricao: `
+        <p>Qualquer região fria. Normalmente, regiões árticas são montanhas ou desertos gelados (tundras).</p>
+        <p><b>Gelo.</b> Você pode andar no gelo à metade do seu deslocamento sem testes. Porém, andar em seu deslocamento normal, correr, fazer uma investida ou sofrer dano sobre o gelo exige um teste de Acrobacia (CD 15, no caso de movimento, ou igual ao dano sofrido). Em caso de falha, você cai e desliza 1d4 x 1,5m (para a frente, no caso de movimento, ou na direção do ataque, no caso de dano sofrido).</p>
+        <p><b>Rio Congelado.</b> Andar sobre um rio congelado é como andar sobre gelo. Se você cair e rolar 1 no d4 para determinar quanto desliza, o gelo quebra e você afunda. Se você afundar, sofre 1d6 pontos de dano de frio por rodada e precisa nadar. Sair exige estar debaixo de um buraco no gelo e gastar uma ação de movimento para se erguer. Abrir um buraco exige causar 10 pontos de dano de impacto ou fogo.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+      },
+      {
+        id: 288,
+        nome: 'TERRENOS: AQUÁTICOS',
+        descricao: `
+        <p>Este tipo de terreno é dividido em água corrente (rios e mar agitado) e parada (lagos e mar calmo).</p>
+        <p><b>Água Corrente.</b> A velocidade típica de uma correnteza é 1d6 x 3m por rodada. No fim de cada rodada, todos os personagens na água são arrastados nessa velocidade na direção da correnteza. A CD de testes de Atletismo para nadar em um rio é 15 (para correntezas de 9m por rodada ou menos) ou 20 (para correntezas mais rápidas). Sair de uma correnteza com velocidade de 15m ou mais exige chegar até a margem ou ponto de apoio (como um bote ou uma tábua flutuante), então gastar uma ação de movimento e passar num teste de Atletismo (CD 20) para agarrar alguma coisa (galho, raiz, corda...). Se falhar, o personagem não consegue agarrar nada (e, no fim da rodada, será levado pela correnteza).</p>
+        <p><b>Água Parada.</b> Água parada exige testes de Atletismo para nadar, conforme a descrição da perícia, mas não possui nenhum outro modificador.</p>
+        <p><b>Personagens Submersos.</b> Criaturas debaixo d’água não podem falar (e, portanto, lançar magias) e sofrem –2 em testes de ataque e –5 em testes de Percepção. Eles só podem se deslocar fazendo testes de Atletismo para nadar. Criaturas com deslocamento de natação não sofrem essas penalidades.</p>
+        <p>Armas de ataque à distância não podem ser usadas (com exceção de armas de arremesso de perfuração, bestas e redes) e armas de corte e impacto causam metade do dano debaixo d’água. Por fim, criaturas submersas recebem camuflagem e cobertura leves contra personagens fora d’água.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+      },
+      {
+        id: 289,
+        nome: 'TERRENOS: COVIL',
+        descricao: `
+        <p>Da gruta de um urso-coruja ao fosso de um escorpião gigante, os ermos estão repletos de lares de monstros. Um covil pode ser avistado com testes de Percepção ou Sobrevivência, e esta última perícia pode ser usada para identificar o habitante do lugar (CD 15 + ND da criatura). Normalmente um monstro estará em seu covil, mas há 25% de chance de ele estar fora — e qualquer tesouro que ele possua estar desprotegido. Resta saber se os personagens conseguirão entrar e sair antes da criatura voltar...</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+      },
+      {
+        id: 290,
+        nome: 'TERRENOS: RUÍNA',
+        descricao: `
+        <p>Os ermos são repletos dos resquícios de eras passadas. Um personagem que entre em uma ruína deve rolar 1d6. Com um resultado 1 ou 2, a ruína possui apenas uma ameaça (normalmente uma armadilha ou monstro, a critério do mestre). Com um resultado 3 ou 4, estará vazia. Com um resultado 5, possui uma ameaça e um tesouro. Com um resultado 6, possui apenas um tesouro. As ameaças e os tesouros são apropriados para o nível do grupo. Essa mecânica serve para lugares pequenos — ruínas grandes são masmorras por si só!</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+      },
+      {
+        id: 291,
+        nome: 'TERRENOS: SANTUÁRIO',
+        descricao: `
+        <p>Mesmo em regiões inóspitas é possível encontrar lugares consagrados aos deuses — uma estátua de Khalmyr, um círculo de flores para Allihanna, uma pedra manchada de sangue para Megalokk... Um teste de Religião (CD 20) indica a qual deus o santuário é consagrado. Tocar um santuário de seu deus patrono fornece o efeito de uma magia (normalmente Bênção, Curar Ferimentos, Físico Divino ou Vestimenta da Fé), mas apenas uma vez por dia. Porém, se o santuário for de um deus inimigo, você é amaldiçoado (veja Rogar Maldição) até o final do dia.</p>
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+      },
+      {
+        id: 292,
+        nome: 'VIAGENS',
+        descricao: `
+        <p>Via de regra, é melhor lidar com viagens de forma abstrata (veja o quadro “Jornadas em ‘Montagem’”, na página 267). Mas, se quiser lidar com uma viagem de forma detalhada, use as informações a seguir.</p>
+        <p><b>Velocidade de Viagem.</b> Consulte a tabela abaixo para determinar a velocidade de viagem do grupo, por hora ou por dia, de acordo com o deslocamento do membro mais lento do grupo.</p>
+        <p><b>Terreno e Clima.</b> As distâncias na tabela consideram terreno aberto e clima bom. Em terreno difícil (florestas, pântanos...) ou clima ruim (chuva, neblina...) diminua a distância pela metade. Essas reduções são cumulativas. De acordo com o mestre, testes de Sobrevivência podem anular essas reduções.</p>
+        <p><b>Marcha Forçada.</b> As distâncias na tabela consideram um ritmo normal de caminhada, mas é possível avançar mais rápido. Nesse caso, a distância por hora dobra, mas a cada hora o personagem deve passar em um teste de Fortitude (CD 15 +1 por teste anterior) ou perde 1d6 pontos de vida.</p>
+        <p><b>Perdendo-se.</b> Se o grupo não está seguindo uma estrada ou marco — como um rio ou praia —, o guia deve passar em um teste de Sobrevivência por dia, ou ficará perdido. Um grupo perdido viaja em uma direção aleatória. Uma vez por dia, cada personagem pode fazer um teste de Sobrevivência (CD 20 –1 por dia de viagem aleatória) para perceber que está no caminho errado e determinar um novo caminho (com um novo teste de Sobrevivência).</p>
+        <p><b>Suprimentos.</b> Controle suprimentos apenas se isso for importante para a aventura — por exemplo, durante uma travessia pelo Deserto da Perdição, a falta de água e comida pode ser tão perigosa quanto um monstro! Nesse caso, os jogadores devem controlar suas rações de viagem. Testes de Sobrevivência para encontrar suprimentos, e de Fortitude para resistir à fome e à sede, podem tornar uma viagem tão emocionante quanto um combate.</p>
+        <table>
+          <caption><b>Tabela 6-4: Viagens</b></caption>
+          <thead>
+            <tr>
+              <th>Deslocamento</th>
+              <th>por hora¹</th>
+              <th>por dia²</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>4,5m</td><td>2,25km</td><td>18km</td></tr>
+            <tr><td>6m</td><td>3km</td><td>24km</td></tr>
+            <tr><td>7,5m</td><td>3,75km</td><td>30km</td></tr>
+            <tr><td>9m</td><td>4,5km</td><td>36km</td></tr>
+            <tr><td>12m</td><td>6km</td><td>48km</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                ¹Deslocamento × 0,5 km. &nbsp;&nbsp;
+                ²Deslocamento por hora × 8 km.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        `,
+        referencia: `Tormenta 20 Jogo odo Ano - páginas 270`
+      }
     ];
   }
 }
