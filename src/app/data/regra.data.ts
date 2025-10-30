@@ -4896,6 +4896,67 @@ export class RegraData {
         `,
         referencia: `Heróis de Arton - páginas 300 e 301`
       },
+      {
+        id: 315,
+        nome: 'COMBATE AVANÇADO: LANCINANTE REVISADO',
+        descricao: `
+        <p>Esta regra muda o efeito do encanto lancinante.</p>
+        <p><b>Lancinante.</b> A arma inflige ferimentos mortais. Quando você faz um acerto crítico, o bônus em dano fornecido pelo encanto dilacerante também é multiplicado. Por exemplo, um machado de batalha lancinante causa +30 pontos de dano em um acerto crítico. Pré-requisito: dilacerante.</p>
+        `,
+        referencia: `Heróis de Arton - página 304`
+      },
+      {
+        id: 316,
+        nome: 'COMBATE AVANÇADO: LESÕES',
+        descricao: `
+        <p>Esta regra apresenta machucados mais profundos do que aqueles representados por dano. Sempre que os PV de um personagem são reduzidos a 0 ou menos, ele sofre uma lesão, que significa uma penalidade cumulativa de –2 em testes de perícias. Lesões são recuperadas apenas com descanso. A cada noite de sono, você recupera uma lesão (ou duas, se tiver passado por cuidados prolongados).</p>
+        <p>Lesões também aparecem na regra de Morte Alternativa. Esta opção é boa se você gosta da regra padrão de morte, mas quer mais consequências para as batalhas. Para ainda mais brutalidade e realismo, substitua lesões por ferimentos permanentes (p. 301).</p>
+        `,
+        referencia: `Heróis de Arton - página 304`
+      },
+      {
+        id: 317,
+        nome: 'COMBATE AVANÇADO: MAIS ARMAS ÁGEIS',
+        descricao: `
+        <p>Nesta regra, as seguintes armas recebem a habilidade de arma ágil: azagaia (quando empunhada corpo a corpo), bordão e lança.</p>
+        `,
+        referencia: `Heróis de Arton - página 304`
+      },
+      {
+        id: 318,
+        nome: 'COMBATE AVANÇADO: MOVIMENTO INTERCALADO',
+        descricao: `
+        <p>Com esta regra, você pode intercalar sua ação de movimento com uma outra ação. Por exemplo, se tiver deslocamento 9m, pode usar uma ação de movimento para percorrer 6m, executar uma ação padrão e então percorrer os 3m restantes.</p>
+        `,
+        referencia: `Heróis de Arton - página 304`
+      },
+      {
+        id: 319,
+        nome: 'COMBATE AVANÇADO: POSICIONAMENTO',
+        descricao: `
+        <p>Com esta regra, a orientação de cada combatente interfere em sua capacidade de defesa. Cada personagem possui uma fronte (o lado para o qual está voltado), uma retaguarda (o lado oposto a sua fronte) e dois flancos, direito e esquerdo (os lados restantes). No final de cada turno, o personagem deve declarar sua fronte. Isso é uma ação livre, mas a fronte se mantém a mesma até seu próximo turno.</p>
+        <p><b>Escudos.</b> Escudos só fornecem seus benefícios contra ataques sofridos pela fronte ou pelo flanco da mão empunhando o escudo (incluindo os quadrados das diagonais). Você pode gastar uma ação de movimento para erguer seu escudo. Isso faz com que você receba os benefícios do escudo contra ataques em um lado adicional (retaguarda ou flanco oposto) até o início do seu próximo turno.</p>
+        <p><b>Retaguarda.</b> Uma criatura fica vulnerável contra ataques em sua retaguarda, a menos que tenha erguido seu escudo para proteger este lado.</p>
+        <p><b>Encurralar.</b> Uma criatura adjacente a uma parede, ou outro obstáculo grande o suficiente para fornecer cobertura leve, fica vulnerável contra ataques desferidos contra seus flancos que não estejam voltados para essa cobertura.</p>
+        <p><b>Ataques em Alturas Variadas.</b> Para ataques desferidos de um quadrado diretamente acima ou abaixo do personagem (em uma linha vertical reta), considere que o ataque é contra a retaguarda.</p>
+        `,
+        referencia: `Heróis de Arton - página 304`
+      },
+      {
+        id: 320,
+        nome: 'COMBATE AVANÇADO: RD COMBINADA',
+        descricao: `
+        <p>Nesta regra, a redução de dano fornecida por armaduras e por escudos se acumulam. Por exemplo, se estiver usando uma armadura e um escudo pesados de adamante, você tem RD 7.</p>
+        `,
+        referencia: `Heróis de Arton - página 304`
+      },
+      {
+        id: 321,
+        nome: 'COMBATE AVANÇADO: SAQUE RÁPIDO LIMITADO',
+        descricao: `
+        <p>Com esta regra, cada efeito que permite sacar ou guardar itens como ação livre só pode ser usado uma vez por rodada. Os efeitos se acumulam. Um personagem com o poder Saque Rápido e uma bandoleira de poções, por exemplo, pode sacar ou guardar um item qualquer e um item alquímico como ação livre na mesma rodada.</p>        `,
+        referencia: `Heróis de Arton - página 304`
+      },
     ];
   }
 }
