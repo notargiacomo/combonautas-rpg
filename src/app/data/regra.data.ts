@@ -4418,7 +4418,7 @@ export class RegraData {
         <p><b>Calor e Frio.</b> Um personagem em clima muito quente (acima de 50º C) ou muito frio (abaixo de –10º C) deve fazer um teste de Fortitude por dia (CD 15 +1 por teste anterior). Se falhar sofre 1d6 pontos de dano de fogo ou frio que só pode ser curado após sair do clima quente ou frio. Em calor ou frio extremos (acima de 60º C ou abaixo de –20º C) o teste deve ser feito por minuto.</p>
         <p><b>Neblina.</b> Fornece camuflagem. Neblina espessa fornece camuflagem leve a criaturas a 1,5m e camuflagem total a criaturas a mais de 1,5m.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 267`
+        referencia: `Tormenta 20 Jogo odo Ano - página 267`
       },
       {
         id: 279,
@@ -4429,7 +4429,7 @@ export class RegraData {
         <p><b>Neve.</b> Como chuva, mas cria terreno difícil.</p>
         <p><b>Tempestade.</b> –10 em testes de Percepção e os mesmos efeitos de vendaval. No início de cada rodada, há 10% de chance de uma criatura aleatória ser atingida por um raio (8d10 pontos de dano de eletricidade).</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 267`
+        referencia: `Tormenta 20 Jogo odo Ano - página 267`
       },
       {
         id: 280,
@@ -4440,7 +4440,7 @@ export class RegraData {
         <p><b>Furacão.</b> Torna ataques à distância impossíveis, apaga chamas e dissipa névoas. No início de cada rodada, criaturas Médias ou menores devem passar em um teste de Fortitude (CD 15) ou caem, são arrastadas 1d4 x 1,5m na direção do vento e sofrem 1d6 pontos de dano de impacto para cada 1,5m.</p>
         <p><b>Tornado.</b> Torna ataques à distância impossíveis, apaga chamas e dissipa névoas. No início de cada rodada, criaturas Grandes ou menores devem passar em um teste de Fortitude (CD 25) ou caem, são arrastadas 1d12 x 1,5m em uma direção aleatória e sofrem 1d6 pontos de dano de impacto para cada 1,5m.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 267`
+        referencia: `Tormenta 20 Jogo odo Ano - página 267`
       },
       {
         id: 281,
@@ -4451,7 +4451,7 @@ export class RegraData {
         <p><b>Inclinação Íngreme.</b> Conta como terreno difícil para subir. Descer uma inclinação íngreme correndo ou fazendo uma investida exige um teste de Acrobacia (ou Cavalgar, se você estiver montado; CD 10). Em caso de falha, você cai no chão, rola 1d4 x 1,5m para frente (ou até o fim da inclinação) e sofre 1d6 pontos de dano de impacto por 1,5m rolados.</p>
         <p><b>Penhasco.</b> Um rochedo alto e escarpado, um penhasco típico tem 1d6 x 3m de altura. Escalar um penhasco exige um teste de Atletismo (CD 15).</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+        referencia: `Tormenta 20 Jogo odo Ano - página 268`
       },
       {
         id: 282,
@@ -4460,7 +4460,7 @@ export class RegraData {
         <p>Lugares áridos e quentes (para desertos de clima frio, veja “Ártico”, a seguir).</p>
         <p><b>Dunas.</b> Formadas pela ação do vento sobre a areia, dunas funcionam como inclinações íngremes (veja “Colinas”, acima). Porém, cair e rolar de uma duna não causa dano.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+        referencia: `Tormenta 20 Jogo odo Ano - página 268`
       },
       {
         id: 283,
@@ -4471,7 +4471,7 @@ export class RegraData {
         <p><b>Folhagens.</b> Moitas e arbustos contam como terreno difícil e fornecem camuflagem leve a criaturas dentro deles.</p>
         <p><b>Vegetação Rasteira.</b> Raízes, vinhas e outros tipos de vegetação rasteira contam como terreno difícil. Além disso, impõem penalidade de –2 em teste de Furtividade pelas folhas secas e galhos caídos.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+        referencia: `Tormenta 20 Jogo odo Ano - página 268`
       },
       {
         id: 284,
@@ -4483,7 +4483,7 @@ export class RegraData {
         <p><b>Paredão.</b> Um penhasco vertical e muito alto, normalmente com 2d6 x 3m de altura. Escalar um paredão exige um teste de Atletismo (CD 25).</p>
         <p><b>Seixos.</b> Em montanhas, inclinações íngremes às vezes são cobertas de pedrinhas. Nesse caso, a CD do teste para descer a inclinação numa corrida ou investida aumenta para 15.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+        referencia: `Tormenta 20 Jogo odo Ano - página 268`
       },
       {
         id: 285,
@@ -4492,7 +4492,7 @@ export class RegraData {
         <p>Inclui brejos, charcos, mangues (pântanos de água salgada) e qualquer tipo de terreno alagado. Pântanos possuem muita vegetação rasteira, folhagens e árvores (veja “Florestas”, acima), além de água parada (veja “Aquático”, abaixo) e lodaçais.</p>
         <p><b>Lodaçal.</b> Poças com uma mistura de água e lama que atrapalha os movimentos. Um lodaçal conta como terreno difícil e impõe a condição vulnerável a qualquer personagem dentro dele.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+        referencia: `Tormenta 20 Jogo odo Ano - página 268`
       },
       {
         id: 286,
@@ -4501,7 +4501,7 @@ export class RegraData {
         <p>Incluem estradas, pastos, fazendas e campos de batalha. Normalmente, não há elementos associados a planícies, embora às vezes elas contenham vegetação rasteira (veja em “Florestas”, acima). Campos de batalha, porém, muitas vezes possuem trincheiras.</p>
         <p><b>Trincheira.</b> Uma vala escavada no solo para proteger soldados. Um personagem em uma trincheira recebe cobertura leve contra ataques à distância. Sair de uma trincheira conta como terreno difícil. Essa regra pode ser usada para valas, leitos de rio secos e acidentes geográficos similares.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 268`
+        referencia: `Tormenta 20 Jogo odo Ano - página 268`
       },
       {
         id: 287,
@@ -4511,7 +4511,7 @@ export class RegraData {
         <p><b>Gelo.</b> Você pode andar no gelo à metade do seu deslocamento sem testes. Porém, andar em seu deslocamento normal, correr, fazer uma investida ou sofrer dano sobre o gelo exige um teste de Acrobacia (CD 15, no caso de movimento, ou igual ao dano sofrido). Em caso de falha, você cai e desliza 1d4 x 1,5m (para a frente, no caso de movimento, ou na direção do ataque, no caso de dano sofrido).</p>
         <p><b>Rio Congelado.</b> Andar sobre um rio congelado é como andar sobre gelo. Se você cair e rolar 1 no d4 para determinar quanto desliza, o gelo quebra e você afunda. Se você afundar, sofre 1d6 pontos de dano de frio por rodada e precisa nadar. Sair exige estar debaixo de um buraco no gelo e gastar uma ação de movimento para se erguer. Abrir um buraco exige causar 10 pontos de dano de impacto ou fogo.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+        referencia: `Tormenta 20 Jogo odo Ano - página 269`
       },
       {
         id: 288,
@@ -4523,7 +4523,7 @@ export class RegraData {
         <p><b>Personagens Submersos.</b> Criaturas debaixo d’água não podem falar (e, portanto, lançar magias) e sofrem –2 em testes de ataque e –5 em testes de Percepção. Eles só podem se deslocar fazendo testes de Atletismo para nadar. Criaturas com deslocamento de natação não sofrem essas penalidades.</p>
         <p>Armas de ataque à distância não podem ser usadas (com exceção de armas de arremesso de perfuração, bestas e redes) e armas de corte e impacto causam metade do dano debaixo d’água. Por fim, criaturas submersas recebem camuflagem e cobertura leves contra personagens fora d’água.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+        referencia: `Tormenta 20 Jogo odo Ano - página 269`
       },
       {
         id: 289,
@@ -4531,7 +4531,7 @@ export class RegraData {
         descricao: `
         <p>Da gruta de um urso-coruja ao fosso de um escorpião gigante, os ermos estão repletos de lares de monstros. Um covil pode ser avistado com testes de Percepção ou Sobrevivência, e esta última perícia pode ser usada para identificar o habitante do lugar (CD 15 + ND da criatura). Normalmente um monstro estará em seu covil, mas há 25% de chance de ele estar fora — e qualquer tesouro que ele possua estar desprotegido. Resta saber se os personagens conseguirão entrar e sair antes da criatura voltar...</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+        referencia: `Tormenta 20 Jogo odo Ano - página 269`
       },
       {
         id: 290,
@@ -4539,7 +4539,7 @@ export class RegraData {
         descricao: `
         <p>Os ermos são repletos dos resquícios de eras passadas. Um personagem que entre em uma ruína deve rolar 1d6. Com um resultado 1 ou 2, a ruína possui apenas uma ameaça (normalmente uma armadilha ou monstro, a critério do mestre). Com um resultado 3 ou 4, estará vazia. Com um resultado 5, possui uma ameaça e um tesouro. Com um resultado 6, possui apenas um tesouro. As ameaças e os tesouros são apropriados para o nível do grupo. Essa mecânica serve para lugares pequenos — ruínas grandes são masmorras por si só!</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+        referencia: `Tormenta 20 Jogo odo Ano - página 269`
       },
       {
         id: 291,
@@ -4547,7 +4547,7 @@ export class RegraData {
         descricao: `
         <p>Mesmo em regiões inóspitas é possível encontrar lugares consagrados aos deuses — uma estátua de Khalmyr, um círculo de flores para Allihanna, uma pedra manchada de sangue para Megalokk... Um teste de Religião (CD 20) indica a qual deus o santuário é consagrado. Tocar um santuário de seu deus patrono fornece o efeito de uma magia (normalmente Bênção, Curar Ferimentos, Físico Divino ou Vestimenta da Fé), mas apenas uma vez por dia. Porém, se o santuário for de um deus inimigo, você é amaldiçoado (veja Rogar Maldição) até o final do dia.</p>
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 269`
+        referencia: `Tormenta 20 Jogo odo Ano - página 269`
       },
       {
         id: 292,
@@ -4586,7 +4586,7 @@ export class RegraData {
         </table>
 
         `,
-        referencia: `Tormenta 20 Jogo odo Ano - páginas 270`
+        referencia: `Tormenta 20 Jogo odo Ano - página 270`
       },
       {
         id: 293,
@@ -4600,7 +4600,7 @@ export class RegraData {
         <p>Embora os papéis digam respeito a tarefas da vida real, alguns podem se refletir nos personagens. Por exemplo, o cartógrafo pode interpretar um personagem que também mapeia o terreno — assim garantindo que os mapas existam dentro da campanha.</p>
         <p>A lista a seguir descreve os papéis disponíveis para personagens jogadores.</p>
         `,
-        referencia: `Heróis de Arton - páginas 294`
+        referencia: `Heróis de Arton - página 294`
       },
       {
         id: 294,
@@ -4609,7 +4609,7 @@ export class RegraData {
         <p>O papel do advogado é simples: ajudar o grupo com regras. Ao contrário de outros papéis, o jogador deve conhecer bem o sistema e saber onde encontrar a maior parte das informações. Faz parte de seu trabalho auxiliar jogadores novatos, achar regras no livro quando o mestre pede e até dar palpites (quando for solicitado) sobre otimização de fichas de seus colegas. Em suma, é um auxiliar de regras da mesa toda.</p>
         <p><center><b>Se for o advogado, você recebe +1 ponto de mana.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 294`
+        referencia: `Heróis de Arton - página 294`
       },
       {
         id: 295,
@@ -4618,7 +4618,7 @@ export class RegraData {
         <p>O arquivista anota nomes de NPCs e lugares, acontecimentos importantes, objetivos que outros jogadores tenham declarado e que possam esquecer (“Se um dia formos a Valkaria, quero procurar Lorde Niebling!”), além das relações entre os coadjuvantes mais importantes. Em suma, ele ajuda o mestre e os jogadores a lembrar de informações da história, impedindo que sejam ignoradas ou confundidas.</p>
         <p><center><b>Se for o arquivista, você recebe +1 em Diplomacia.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 294`
+        referencia: `Heróis de Arton - página 294`
       },
       {
         id: 296,
@@ -4627,7 +4627,7 @@ export class RegraData {
         <p>O bibliotecário é o guardião das informações que o grupo possui sobre o cenário. O jogador não precisa necessariamente conhecer muito sobre Arton. Contudo, assim que o grupo descobre algo digno de nota (por exemplo, a história da Revolta dos Três ou a estrutura dos exércitos da Supremacia Purista), o bibliotecário faz uma anotação sobre isso, com o livro e a página onde a informação pode ser encontrada para consulta. Grupos que estejam conhecendo o cenário aos poucos podem se beneficiar muito de um bibliotecário.</p>
         <p><center><b>Se for o bibliotecário, você recebe +1 em Conhecimento.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 294`
+        referencia: `Heróis de Arton - página 294`
       },
       {
         id: 297,
@@ -4645,7 +4645,7 @@ export class RegraData {
         <p>O enfermeiro mantém o controle de condições e penalidades que afetam os membros do grupo, totais de PV e suprimentos de cura. Se houver personagens sangrando, ele lembra dos testes de Constituição. Além disso, alerta os demais sobre companheiros prestes a morrer.</p>
         <p><center><b>Se for o enfermeiro, você recebe +1 em Cura.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 295`
+        referencia: `Heróis de Arton - página 295`
       },
       {
         id: 299,
@@ -4654,7 +4654,7 @@ export class RegraData {
         <p>O estrategista mantém o controle da iniciativa e das informações dos efeitos que afetam os personagens em combate. É dever dele lembrar os demais de bônus temporários (como pelo poder Comandar ou pela Aura Sagrada do paladino) e ter uma ideia geral dos principais poderes de combate de cada um, para que o grupo não ignore possibilidades em batalha.</p>
         <p><center><b>Se for o estrategista, você recebe +1 em Guerra.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 295`
+        referencia: `Heróis de Arton - página 295`
       },
       {
         id: 300,
@@ -4663,7 +4663,7 @@ export class RegraData {
         <p>O teratólogo mantém o controle sobre habilidades e fraquezas de monstros e inimigos que os personagens conheçam. Por exemplo, depois que o grupo encontra pela primeira vez um troll, o teratólogo pode anotar sua habilidade de regeneração, então lembrar a todos do que sabem da próxima vez. Não serve apenas para limitar as ações dos jogadores: também registra estratégias e vulnerabilidades. Este papel também pode ser útil para lembrar o mestre de habilidades e fraquezas de inimigos.</p>
         <p><center><b>Se for o teratólogo, você recebe +1 em Misticismo.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 295`
+        referencia: `Heróis de Arton - página 295`
       },
       {
         id: 301,
@@ -4673,7 +4673,7 @@ export class RegraData {
         <p>Bens de propriedade coletiva são de responsabilidade do tesoureiro. Ele também mantém o controle sobre quanto cada um investiu em uma propriedade coletiva, para garantir que todos estejam contribuindo.</p>
         <p><center><b>Se for o tesoureiro, você recebe +1 em Nobreza ou em um Ofício.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 295`
+        referencia: `Heróis de Arton - página 295`
       },
       {
         id: 302,
@@ -4683,7 +4683,7 @@ export class RegraData {
         <p>O xerife é um jogador que o mestre pode contactar discretamente (pela internet, sussurrando ou por um bilhete) para ajudá-lo a empurrar o grupo para a frente. Não se trata de fazer a história acontecer de uma determinada maneira — apenas de fazê-la acontecer! Por exemplo, o mestre pode dizer ao xerife “Essa porta não tem nada de especial, chega de discutir sobre ela” ou “O velhinho dormindo num canto não é um avatar de Khalmyr”. Outras responsabilidades do xerife podem ser ajudar o mestre a conter o número de piadas (desde que isso não vá prejudicar a diversão do grupo) ou servir de “voz do bom senso”, evitando decisões absurdas ou que resultarão no fim da campanha. Em suma, o xerife é um auxiliar do mestre, alguém que abre mão de algumas surpresas e ajuda o jogo a “andar”.</p>
         <p><center><b>Se for o xerife, você recebe +1 em Iniciativa.</b></center></p>
         `,
-        referencia: `Heróis de Arton - páginas 295`
+        referencia: `Heróis de Arton - página 295`
       },
       {
         id: 303,
@@ -4692,7 +4692,7 @@ export class RegraData {
         <p>Esta seção traz diversas regras opcionais para combate. Cada uma altera o funcionamento desse tipo de cena de uma forma específica, deixando suas lutas mais táticas, brutais ou cinematográficas.</p>
         <p>As mecânicas não são necessariamente relacionadas entre si, de modo que você pode usar apenas as que preferir.</p>
         `,
-        referencia: `Heróis de Arton - páginas 296`
+        referencia: `Heróis de Arton - página 296`
       },
       {
         id: 304,
@@ -4701,7 +4701,200 @@ export class RegraData {
         <p>Esta regra introduz um novo tipo de ação: rápida. Esta ação é algo simples, que ocupa apenas uma fração do seu movimento. Você não recebe ações rápidas automaticamente, mas pode usar suas ações de movimento para executá-las (cada movimento equivale a duas ações rápidas). Quando converte uma ação de movimento em ações rápidas, elas devem ser executadas em sequência (a menos que seu grupo esteja usando a regra opcional Movimento Intercalado).</p>
         <p>As seguintes ações descritas em Tormenta20 (p. 234) são consideradas ações rápidas: levantar-se, manipular item, mirar e sacar ou guardar item. Além disso, você pode usar uma ação rápida para percorrer uma distância igual à metade do seu deslocamento. Se o grupo estiver usando a regra opcional Posicionamento, erguer escudo (p. 304) também é considerada uma ação rápida.</p>
         `,
-        referencia: `Heróis de Arton - páginas 296`
+        referencia: `Heróis de Arton - página 296`
+      },
+      {
+        id: 305,
+        nome: 'COMBATE AVANÇADO: ARMAS LEVES E ÁGEIS',
+        descricao: `
+        <p>Com esta regra, você pode usar Destreza em vez de Força para testes de ataque corpo a corpo e na rolagem de dano com armas leves, ágeis e de arremesso. Se usar esta regra, ignore o pré-requisito de Acuidade com Arma em qualquer habilidade ou item.</p>
+        `,
+        referencia: `Heróis de Arton - página 296`
+      },
+      {
+        id: 306,
+        nome: 'COMBATE AVANÇADO: ATAQUES DE OPORTUNIDADE',
+        descricao: `
+        <p>Nesta regra, os combatentes podem aproveitar brechas na defesa de seus inimigos para desferir ataques de oportunidade. Um ataque de oportunidade é um ataque corpo a corpo, feito como uma reação quando um inimigo em seu alcance, e que você possa perceber, executa uma das ações descritas a seguir.</p>
+        <ul>
+        <li>Fazer um ataque à distância.</li>
+        <li>Levantar-se (a menos que o inimigo se levante como uma ação livre).</li>
+        <li>Lançar uma magia, exceto magias lançadas como reação ou ação livre (mas veja conjuração defensiva). Além disso, magias com alcance toque não provocam ataques de oportunidade de seu alvo (mas provocam de outras criaturas no alcance).</li>
+        <li>Sair de um quadrado ameaçado (mas veja as ações reposicionar e recuar).</li>
+        <li>Usar itens complexos, como ativar uma engenhoca ou beber uma poção. A critério do mestre, outras ações complexas podem provocar ataques de oportunidade (sacar ou guardar um item não é uma ação complexa, mas recarregar uma arma com ação de movimento ou maior, sim).</li>        
+        <li>Você só pode executar um ataque de oportunidade por rodada.</li>
+        </ul>
+        <p><b>Acrobacia e Oportunidade.</b> Passar por um inimigo usando Acrobacia (Tormenta20, p. 115) não provoca ataques de oportunidade desse inimigo.</p>
+        <p><b>Novas Ações.</b> Esta regra introduz as seguintes novas ações para personagens.</p>
+        <ul>
+        <li><i>Reposicionar (movimento).</i> Você ajusta sua posição com cautela; você percorre apenas 1,5m, mas este deslocamento não provoca ataques de oportunidade. Você não pode se reposicionar se o seu deslocamento for menor do que 1,5m.</li>
+        <li><i>Recuar (completa).</i> Você se move com cuidado; você percorre metade do seu deslocamento, mas este movimento não provoca ataques de oportunidade. Você não pode recuar se o seu deslocamento for menor do que 3m.</li>
+        <li><i>Conjuração defensiva.</i> Você lança uma magia concentrado-se em sua defesa. Você não provoca ataques de oportunidade com essa magia, mas precisa passar em um teste de Vontade (CD 20 + custo em PM da magia). Se falhar, a magia é perdida, mas os PM são gastos mesmo assim.</li>
+        </ul>
+        <p><b>Habilidades Existentes.</b> As seguintes habilidades possuem interações especiais ou clarificações sobre seu uso com ataques de oportunidade.</p>
+        <ul>
+        <li><i>Ataque Reflexo e Piqueiro (Tormenta20, pp. 65 e 128).</i> Os gatilhos pra usar estes poderes são diferentes das situações que causam ataques de oportunidade, por isso eles não se relacionam com esta regra. Você ainda pode usá-los mesmo que seu inimigo use as ações reposicionar ou recuar.</li>
+        <li><i>Bater e Correr e Carga de Cavalaria (Tormenta20, pp. 65 e 124).</i> Seu movimento adicional após o ataque não provoca ataques de oportunidade.</li>
+        <li><i>Disparo Preciso (Tormenta20, p. 125).</i> Seus ataques à distância não provocam ataques de oportunidade.</li>
+        </ul>
+        <p>A critério do mestre, habilidades com efeitos semelhantes podem ser modificadas da mesma forma.</p>
+        <p><b>Ameaças.</b> Ameaças podem realizar mais ataques de oportunidade por rodada do que personagens jogadores, conforme seu patamar (mas ainda estão limitadas a um ataque por instância do evento que lhes permitiu realizá-lo).</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Patamar da Ameaça</th>
+              <th>Ataques de Oportunidade/Rodada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Iniciante (ND 1 a 4)</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Veterano (ND 5 a 10)</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Campeão (ND 11 a 16)</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Lenda (ND 17 a 20)</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>S/S+</td>
+              <td>Ilimitados</td>
+            </tr>
+          </tbody>
+        </table>
+        `,
+        referencia: `Heróis de Arton - páginas 296 e 297`
+      },
+      {
+        id: 307,
+        nome: 'COMBATE AVANÇADO: ATAQUES MIRADOS',
+        descricao: `
+        <p>Com esta regra, sempre que faz um ataque, você pode mirar em uma parte específica do corpo do oponente para causar um efeito adicional. Se fizer isso, você sofre uma penalidade no teste de ataque de –5 para pernas, braços, tronco, asas e outros membros locomotores, e de –10 para cabeça ou equivalente (veja “Efeitos Críticos”, p. 298).</p>
+        <p>Se o ataque acertar e causar dano, você impõe um efeito adicional ao alvo, equivalente ao efeito crítico de menor severidade (veja “Efeitos Críticos”, p. 298) para a parte do corpo atingida. Se o ataque for um acerto crítico, use a severidade seguinte (ou resolva como um efeito crítico normal, se estiver usando a regra opcional Efeitos Críticos).</p>
+        `,
+        referencia: `Heróis de Arton - página 297`
+      },
+      {
+        id: 308,
+        nome: 'COMBATE AVANÇADO: COBERTURA LEVE E EFEITOS',
+        descricao: `
+        <p>Nesta regra, cobertura leve fornece +5 em testes de Reflexos contra efeitos com alvo que tenham origem no lado oposto da cobertura e contra efeitos de área cujo centro esteja do lado oposto da cobertura.</p>
+        `,
+        referencia: `Heróis de Arton - página 297`
+      },
+      {
+        id: 309,
+        nome: 'COMBATE AVANÇADO: DEFESA ÉPICA',
+        descricao: `
+        <p>Com esta regra, sua Defesa aumenta em +1 para cada nível par (mesma progressão das perícias). Indicada para campanhas de ação exagerada!</p>
+        `,
+        referencia: `Heróis de Arton - página 297`
+      },
+      {
+        id: 310,
+        nome: 'COMBATE AVANÇADO: DESAFIANDO A MORTE',
+        descricao: `
+        <p>Esta opção se inspira em conceitos narrativistas, colocando mais controle nas mãos dos jogadores. Com esta regra, os personagens não morrem. Simples assim. Caso um personagem “morra”, ou seja, alcance o limite de pontos de vida negativos, em vez disso fica fora do jogo até a próxima cena (mesmo que alguém tente curá-lo, ele estará muito ferido para voltar à ativa). Se o mestre quiser ser mais cruel, pode fazer com que cada personagem que “morra” em vez disso perca 1 ponto permanente num atributo (role 1d6, sendo 1 Força, 2 Destreza e assim por diante).</p>
+        <p>A qualquer momento, um personagem pode declarar que está “desafiando a morte”. Quando faz isso, seu limite de gasto de pontos de mana aumenta em +2 e ele recebe 2d6 PM temporários por patamar que duram até o fim da cena. Porém, durante essa cena, se chegar ao limite de pontos de vida negativos, irá morrer de verdade. O jogador só pode “desafiar a morte” em uma cena na qual tenha uma chance real de morrer! O mestre pode vetar qualquer uso abusivo desta opção (como usá-la para ganhar PM em uma cena claramente inofensiva).</p>
+        <p>Esta opção coloca o controle da vida e da morte de seus personagens nas mãos dos jogadores. Um jogador sempre poderá escolher entre lutar normalmente, tendo mais chance de ser derrotado e sofrer algum revés, como ser preso ou ver seu reino ser destruído, ou desafiar a morte para ter mais chance de vencer, mas arriscando ser morto caso tudo dê errado. Isso pode ser muito tentador numa luta contra um vilão odiado, ou caso um ente querido esteja em perigo — nesta regra, os personagens não podem morrer, mas não falamos nada de NPCs...</p>
+        <p>Esta opção garante que os personagens não morram em cenas secundárias — nada de perder um herói querido para um ataque de glops aleatórios — ao mesmo tempo em que fornece a chance de os personagens realizarem feitos heroicos quando quiserem. É importante ter em mente o seguinte: um jogador nunca deve ser obrigado a desafiar a morte. Para que esta regra funcione, isso deve ser sempre uma escolha.</p>
+        <p>Se o jogador arriscar, pode gravar sua marca no mundo. Se perder... bem, ele sabia dos riscos que estava correndo.</p>
+        `,
+        referencia: `Heróis de Arton - página 297`
+      },
+      {
+        id: 311,
+        nome: 'COMBATE AVANÇADO: EFEITOS CRÍTICOS',
+        descricao: `
+        <p>Nesta regra, sempre que fizer um acerto crítico, além do dano extra, você causa um efeito adicional. Para determinar esse efeito, você faz duas rolagens de d10: uma para definar a localização e a outra para definir a severidade do ataque. Criaturas imunes a acertos críticos também são imunes a esse efeito.</p>
+        <p><b>Localização.</b> Role 1d10 e consulte a tabela ao lado. Se estiver usando a regra Ataques Mirados e tiver mirado em uma parte específica, ignore esta etapa (a localização será aquela em que você mirou).</p>
+        <p><b>Severidade.</b> Role 1d10 e some um modificador conforme o multiplicador de crítico do ataque: +0 para crítico x2, +2 para crítico x3, +3 para crítico x4 e +4 para crítico x5 ou maior.</p>
+        <p><b>Efeito.</b> Para descobrir o efeito, veja a coluna do tipo de dano causado (se o ataque causa mais de um tipo, escolha um deles) e a linha da severidade.</p>
+        <p>Efeitos críticos são cumulativos com os das severidades inferiores (para condições, use a mais severa). Sangramentos causados por efeitos críticos também são cumulativos (resolva cada um individualmente). Por fim, condições iguais podem ter efeitos mais graves quando aplicadas a várias partes do corpo. Por exemplo, um personagem com Vagaroso em ambas as pernas fica imóvel, um personagem Maneta em ambos os braços não pode empunhar nenhum item e um personagem Caolho em ambos os olhos fica cego. O mestre tem a palavra final quanto à interação de complicações iguais.</p>
+        <p>Alguns efeitos impõem complicações (veja a p. 282) com as seguintes gravidades.</p>
+        <ul>
+        <li><i>Leve.</i> Um ferimento superficial, que pode ser tratado facilmente. A complicação é removida quando o personagem recupera uma quantidade de PV igual ao dobro do seu nível.</li>
+        <li><i>Grave.</i> Um ferimento severo, que requer mais cuidados para ser curado. A complicação é removida apenas com cura mágica capaz de recuperar uma quantidade de PV igual a quatro vezes o nível do personagem ou com uma cirurgia (um teste de Cura contra CD 30 que demora 1 dia).</li>
+        <li><i>Permanente.</i> Um ferimento profundo que deixa sequelas duradouras. Uma complicação permanente só pode ser removida com as magias Desejo ou Intervenção Divina.</li>
+        </ul>
+        `,
+        referencia: `Heróis de Arton - páginas 298 à 300`
+      },
+      {
+        id: 312,
+        nome: 'COMBATE AVANÇADO: ESCALANDO CRIATUAS',
+        descricao: `
+        <p>Com esta regra, um combatente audacioso pode escalar criaturas gigantes rumo à cabeça delas (ou outro ponto vulnerável, a critério do mestre). A criatura precisa ser Grande ou maior e pelo menos duas categorias de tamanho maiores que você.</p>
+        <p>Para escalar uma criatura você precisa estar adjacente a ela, gastar uma ação de movimento e fazer um teste de Acrobacia ou Atletismo oposto pelo Reflexos da criatura (se você possuir deslocamento de escalada, recebe +5 nesse teste). Se você vencer, sobe rumo à cabeça da criatura. Se perder, não consegue subir. Se perder por 5 ou mais, você escorrega e cai (ou a criatura consegue derrubá-lo com um safanão ou balançando o próprio corpo), sofrendo 2d6 pontos de dano de impacto por avanço feito e ficando caído e adjacente à criatura.</p>
+        <p>A quantidade de sucessos que você precisa acumular para chegar no topo da cabeça varia conforme o tamanho da criatura: um sucesso para Grande, dois para Enorme e quatro para Colossal. Uma vez na cabeça, você recebe camuflagem contra a criatura, ela conta como desprevenida contra você e seus ataques contra ela recebem +2 na margem de ameaça e +1 no multiplicador de crítico. No início de cada turno seu na cabeça da criatura, você deve fazer um teste contra ela, como se estivesse a escalando, mas como ação livre. Se perder por 5 ou mais, ela consegue derrubá-lo (veja o parágrafo anterior).</p>
+        `,
+        referencia: `Heróis de Arton - página 300`
+      },
+      {
+        id: 313,
+        nome: 'COMBATE AVANÇADO: FALHAS CRÍTICAS',
+        descricao: `
+        <p>A vida dos heróis não é feita apenas de triunfos. Mestres que desejam trazer um toque de desastre, tragédia ou até mesmo humor às suas campanhas podem aproveitar esta regra opcional. Sempre que um personagem rolar “1 natural” em um teste de ataque, sofrerá uma falha crítica. Nesse caso, além de errar automaticamente o ataque, o personagem deve rolar 1d100 na Tabela 4-6: Falhas Críticas (p. 302) para determinar o efeito que ocorrerá nessa rodada.</p>
+        <p>Nem todos os efeitos estão diretamente ligadosao ataque — muitos representam circunstâncias que emergem do caos do combate. O mestre deve adaptar as descrições da tabela para que se encaixem na cena.</p>
+        <p>Sempre que você rolar um efeito que não se encaixa na situação do personagem (por exemplo, um personagem que luta desarmado obtém um resultado que dita que sua arma se quebra), ignore a falha crítica — o ataque ainda é um erro, mas nada de pior acontece.</p>
+        `,
+        referencia: `Heróis de Arton - página 300`
+      },
+      {
+        id: 314,
+        nome: 'COMBATE AVANÇADO: MORTE ALTERNATIVA',
+        descricao: `
+        <p>Esta regra muda a forma como personagens morrem. Ela tem como objetivo equilibrar a chance de esse evento trágico acontecer ao longo da campanha — em especial, diminui a chance de morte em níveis baixos e evita completamente a chance de morte instantânea em qualquer nível.</p>
+        <p>Nesta regra, não há pontos de vida negativos. Se um personagem for reduzido a 0 ou menos pontos de vida, fica com 0 PV, inconsciente e moribundo.</p>
+        <p><b>Moribundo.</b> No início de seu turno, e sempre que sofrer dano estando moribundo, você deve fazer um teste de Constituição e consultar a tabela abaixo. A CD é 10 +2 para cada vez além da primeira que você ficou moribundo nessa cena e +2 para cada teste desses que já realizou nessa cena (esses aumentos são cumulativos). Você perde essa condição se recuperar 1 ou mais PV ou se receber primeiros socorros (veja a perícia Cura, mas a CD do teste de perícia é igual à CD atual do teste de Constituição).</p>
+        <table>
+          <caption><b>Tabela 4-5: Teste de Morte</b></caption>
+          <thead>
+            <tr>
+              <th>Teste de Constituição</th>
+              <th>Efeito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Falha por 10 ou mais</td>
+              <td>Morre</td>
+            </tr>
+            <tr>
+              <td>Falha por 5 ou mais</td>
+              <td>Sofre uma lesão</td>
+            </tr>
+            <tr>
+              <td>Falha</td>
+              <td>Continua moribundo</td>
+            </tr>
+            <tr>
+              <td>Passa</td>
+              <td>Perde a condição moribundo e acorda em 1d4 horas com 1 PV</td>
+            </tr>
+            <tr>
+              <td>Passa por 5 ou mais</td>
+              <td>Perde a condição moribundo e acorda com 1 PV</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+        <li><i>Lesão.</i> Você sofre um ferimento mais profundo do que mera perda de vida. Uma lesão impõe uma penalidade cumulativa de –2 em testes de perícias. Lesões são recuperadas apenas com descanso — a cada noite de sono em condições normais ou melhores, você recupera uma lesão (ou duas, se tiver passado por cuidados prolongados; veja a perícia Cura).</li>
+        </ul>
+        <p><h5><b>FERIMENTO PERMANENTE</b></h5></p>
+        <p>Esta é uma “opção da opção”. Se estiver usando a regra de Morte Alternativa e quiser um clima mais brutal para seu jogo, substitua o resultado “Lesão” na tabela de efeitos de moribundo pelo resultado “Ferimento Permanente”.</p>
+        <ul><li><i>Ferimento Permanente.</i> Você perde 1 ponto permanente em um atributo (role 1d6, sendo 1 Força, 2 Destreza e assim por diante). A critério do mestre, isso pode ser substituído por uma complicação coerente. Um ferimento permanente pode ser curado pelas magias Desejo ou Intervenção Divina, mas um personagem só pode ter um ferimento permanente curado por cada uma dessas magias ao longo de sua vida.</li></ul>        
+        <p>O objetivo desta regra é aumentar o risco e a tensão dos combates. Ela também transforma todas as lutas — mesmo aquelas fáceis, nas quais o grupo sabe que será vitorioso — em momentos emocionantes. Afinal, mesmo que os personagens vençam, ainda podem sair com um ferimento permanente. Isso tudo tem o efeito colateral de fazer os jogadores pensarem duas vezes antes de entrar num combate e, no geral, traz um clima mais brutal e realista para o jogo. Para campanhas que queiram essa sensação, é uma ótima regra. Mas, se você prefere um jogo mais épico e inconsequente, será melhor não usá-la.</p>
+
+        `,
+        referencia: `Heróis de Arton - páginas 300 e 301`
       },
     ];
   }
