@@ -4957,6 +4957,28 @@ export class RegraData {
         <p>Com esta regra, cada efeito que permite sacar ou guardar itens como ação livre só pode ser usado uma vez por rodada. Os efeitos se acumulam. Um personagem com o poder Saque Rápido e uma bandoleira de poções, por exemplo, pode sacar ou guardar um item qualquer e um item alquímico como ação livre na mesma rodada.</p>        `,
         referencia: `Heróis de Arton - página 304`
       },
+      {
+        id: 322,
+        nome: 'CULINÁRIA AVANÇADA',
+        descricao: `
+        <p>Esta seção traz regras alternativas para culinária em Tormenta20, com mecânicas mais concretas e detalhadas para a fabricação de pratos especiais</p>
+        <p>Use estas regras se quiser que a culinária seja um aspecto importante de sua campanha. Caso contrário, as regras do livro básico funcionarão melhor, por serem mais simples. Independentemente de qual versão for usada, as mecânicas básicas se mantêm: um prato especial deve ser consumido ao ser comprado ou fabricado, seu efeito dura 1 dia e você só pode receber um bônus de alimentação por dia.<p>
+        <p><h5><b>FABRICANDO PRATOS ESPECIAIS</b></h5></p>
+        <p>Para preparar um prato especial, você precisa saber sua receita, gastar seus ingredientes e fazer um teste de Ofício (cozinheiro).</p>
+        <p><b>Receitas.</b> Quando se torna treinado em Ofício (cozinheiro), você aprende um número de receitas igual a 1 + sua Inteligência. É possível aprender novas receitas lendo livros ou estudando com outros cozinheiros. Via de regra, aprender um novo prato leva 1 dia e custa T$ 100, embora alguns cozinheiros possam estar dispostos a ensinar seus segredos em troca de serviços.</p>
+        <p><b>Ingredientes.</b> Cada prato especial possui um número de ingredientes (normalmente, dois ou três). Veja mais na seção a seguir.</p>
+        <p><b>Teste.</b> Se você souber a receita e possuir os ingredientes, pode preparar o prato especial. Isso exige 1 hora de trabalho, o gasto dos ingredientes e um teste de Ofício (cozinheiro), cuja CD varia conforme o prato. Se passar, você prepara comida suficiente para seu grupo inteiro (isso difere da regra padrão, em que normalmente se prepara um prato para um indivíduo).</p>
+        `,
+        referencia: `Heróis de Arton - página 305`
+      },
+      {
+        id: 323,
+        nome: 'TEMPERO ESPECIAL',
+        descricao: `
+        <p>Um personagem treinado em Ofício (cozinheiro) pode dar um toque pessoal aos pratos que prepara. Isso exige gastar uma porção de especiarias (além dos ingredientes do prato) e aumenta a CD do teste em +5. Se você passar no teste e o prato especial fornecer um bônus numérico (incluindo rolagens de dados), esse bônus aumenta em +1. Se o prato fornecer PV ou PM temporários, esse valor aumenta em 50%. Outros efeitos de pratos especiais não são aprimorados por especiarias.</p>
+        `,
+        referencia: `Heróis de Arton - página 308`
+      },
     ];
   }
 }
