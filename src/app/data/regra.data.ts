@@ -4587,7 +4587,122 @@ export class RegraData {
 
         `,
         referencia: `Tormenta 20 Jogo odo Ano - páginas 270`
-      }
+      },
+      {
+        id: 293,
+        nome: 'PAPÉIS NO GRUPO',
+        descricao: `
+        <p>Grupos de Tormenta20 normalmente se organizam de forma natural e espontânea, de acordo com a personalidade de cada jogador. Cada pessoa na mesa cuida de seu personagem, incluindo tesouro, condições etc., enquanto o mestre fica responsável pelos NPCs e pelo mundo.</p>
+        <p>Contudo, essa forma de organização pode levar a alguns problemas. Um jogador que tenha dificuldade de ordenar suas anotações pode ignorar parte de seu tesouro, ou mesmo algum objetivo que já tinha planejado. Alguém com memória ruim e sem um sistema de controle pode se perder na duração de seus efeitos e nas condições (e bônus!) que afetam seu personagem. O próprio mestre pode se ver sobrecarregado por ter que lembrar de todos os eventos da campanha, além de todas as regras.</p>
+        <p>Para resolver esse tipo de situação, os jogadores podem se dividir em papéis.</p>
+        <p>Papéis são funções que cada jogador tem na mesa, auxiliando o bom andamento do jogo. Cada um fica responsável por uma parte “burocrática” ou específica da campanha, garantindo que ninguém acabe sobrecarregado e minimizando os erros. O mestre não tem um papel, já que normalmente cuida de muitos elementos que outros papéis tomam para si.</p>
+        <p>Existe um número maior de papéis do que a média de jogadores em um grupo. Isso é proposital: provavelmente alguns desses papéis serão divididos entre todos ou ficarão a cargo do mestre. Nenhum jogador pode assumir mais de um papel. Contudo, caso o grupo decida usar esta regra opcional, todos precisam assumir um. Ninguém fica isento de responsabilidades. O grupo como um todo deve decidir quais papéis são necessários e qual jogador é mais adequado para cada um deles.</p>
+        <p>Embora os papéis digam respeito a tarefas da vida real, alguns podem se refletir nos personagens. Por exemplo, o cartógrafo pode interpretar um personagem que também mapeia o terreno — assim garantindo que os mapas existam dentro da campanha.</p>
+        <p>A lista a seguir descreve os papéis disponíveis para personagens jogadores.</p>
+        `,
+        referencia: `Heróis de Arton - páginas 294`
+      },
+      {
+        id: 294,
+        nome: 'PAPÉIS NO GRUPO: ADVOGADO',
+        descricao: `
+        <p>O papel do advogado é simples: ajudar o grupo com regras. Ao contrário de outros papéis, o jogador deve conhecer bem o sistema e saber onde encontrar a maior parte das informações. Faz parte de seu trabalho auxiliar jogadores novatos, achar regras no livro quando o mestre pede e até dar palpites (quando for solicitado) sobre otimização de fichas de seus colegas. Em suma, é um auxiliar de regras da mesa toda.</p>
+        <p><center><b>Se for o advogado, você recebe +1 ponto de mana.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 294`
+      },
+      {
+        id: 295,
+        nome: 'PAPÉIS NO GRUPO: ARQUIVISTA',
+        descricao: `
+        <p>O arquivista anota nomes de NPCs e lugares, acontecimentos importantes, objetivos que outros jogadores tenham declarado e que possam esquecer (“Se um dia formos a Valkaria, quero procurar Lorde Niebling!”), além das relações entre os coadjuvantes mais importantes. Em suma, ele ajuda o mestre e os jogadores a lembrar de informações da história, impedindo que sejam ignoradas ou confundidas.</p>
+        <p><center><b>Se for o arquivista, você recebe +1 em Diplomacia.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 294`
+      },
+      {
+        id: 296,
+        nome: 'PAPÉIS NO GRUPO: BIBLIOTECÁRIO',
+        descricao: `
+        <p>O bibliotecário é o guardião das informações que o grupo possui sobre o cenário. O jogador não precisa necessariamente conhecer muito sobre Arton. Contudo, assim que o grupo descobre algo digno de nota (por exemplo, a história da Revolta dos Três ou a estrutura dos exércitos da Supremacia Purista), o bibliotecário faz uma anotação sobre isso, com o livro e a página onde a informação pode ser encontrada para consulta. Grupos que estejam conhecendo o cenário aos poucos podem se beneficiar muito de um bibliotecário.</p>
+        <p><center><b>Se for o bibliotecário, você recebe +1 em Conhecimento.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 294`
+      },
+      {
+        id: 297,
+        nome: 'PAPÉIS NO GRUPO: CARTÓGRAFO',
+        descricao: `
+        <p>O cartógrafo mapeia o terreno onde o grupo está — seja uma masmorra, sejam ermos em que eles possam se perder. Em grupos que não usam mapas de batalha, o cartógrafo deve manter um controle sobre onde cada personagem e NPC está num combate, além de suas posições relativas (para flanquear, por exemplo). Caso a campanha envolva longas viagens, o cartógrafo deve saber a distância aproximada dos principais pontos de interesse. Se o grupo calcular mantimentos de forma rígida, o cartógrafo pode auxiliar o tesoureiro a manter esse controle durante viagens.</p>
+        <p><center><b>Se for o cartógrafo, você recebe +1 em Sobrevivência.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 294 e 295`
+      },
+      {
+        id: 298,
+        nome: 'PAPÉIS NO GRUPO: ENFERMEIRO',
+        descricao: `
+        <p>O enfermeiro mantém o controle de condições e penalidades que afetam os membros do grupo, totais de PV e suprimentos de cura. Se houver personagens sangrando, ele lembra dos testes de Constituição. Além disso, alerta os demais sobre companheiros prestes a morrer.</p>
+        <p><center><b>Se for o enfermeiro, você recebe +1 em Cura.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 295`
+      },
+      {
+        id: 299,
+        nome: 'PAPÉIS NO GRUPO: ESTRATEGISTA',
+        descricao: `
+        <p>O estrategista mantém o controle da iniciativa e das informações dos efeitos que afetam os personagens em combate. É dever dele lembrar os demais de bônus temporários (como pelo poder Comandar ou pela Aura Sagrada do paladino) e ter uma ideia geral dos principais poderes de combate de cada um, para que o grupo não ignore possibilidades em batalha.</p>
+        <p><center><b>Se for o estrategista, você recebe +1 em Guerra.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 295`
+      },
+      {
+        id: 300,
+        nome: 'PAPÉIS NO GRUPO: TERATÓLOGO',
+        descricao: `
+        <p>O teratólogo mantém o controle sobre habilidades e fraquezas de monstros e inimigos que os personagens conheçam. Por exemplo, depois que o grupo encontra pela primeira vez um troll, o teratólogo pode anotar sua habilidade de regeneração, então lembrar a todos do que sabem da próxima vez. Não serve apenas para limitar as ações dos jogadores: também registra estratégias e vulnerabilidades. Este papel também pode ser útil para lembrar o mestre de habilidades e fraquezas de inimigos.</p>
+        <p><center><b>Se for o teratólogo, você recebe +1 em Misticismo.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 295`
+      },
+      {
+        id: 301,
+        nome: 'PAPÉIS NO GRUPO: TESOUREIRO',
+        descricao: `
+        <p>Responsável por anotar os bens do grupo. Quando o grupo encontra um tesouro, o tesoureiro divide-o entre todos igualmente, tendo a palavra final sobre quem ficará com um item específico. Uma vez que o item esteja com um personagem, não é mais responsabilidade do tesoureiro.</p>
+        <p>Bens de propriedade coletiva são de responsabilidade do tesoureiro. Ele também mantém o controle sobre quanto cada um investiu em uma propriedade coletiva, para garantir que todos estejam contribuindo.</p>
+        <p><center><b>Se for o tesoureiro, você recebe +1 em Nobreza ou em um Ofício.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 295`
+      },
+      {
+        id: 302,
+        nome: 'PAPÉIS NO GRUPO: XERIFE',
+        descricao: `
+        <p>Alguns grupos têm pouco tempo para jogar. Assim, qualquer indecisão exagerada (como demorar uma hora para abrir uma porta) pode prejudicar a sessão. Também podem sofrer outras limitações — jogam online com conexões ruins ou têm muitos jogadores. Outros grupos, mesmo sem nenhum desses problemas, são apenas indecisos demais. Seja pelo motivo que for, às vezes alguns grupos simplesmente perdem muito tempo sem que ninguém se divirta.</p>
+        <p>O xerife é um jogador que o mestre pode contactar discretamente (pela internet, sussurrando ou por um bilhete) para ajudá-lo a empurrar o grupo para a frente. Não se trata de fazer a história acontecer de uma determinada maneira — apenas de fazê-la acontecer! Por exemplo, o mestre pode dizer ao xerife “Essa porta não tem nada de especial, chega de discutir sobre ela” ou “O velhinho dormindo num canto não é um avatar de Khalmyr”. Outras responsabilidades do xerife podem ser ajudar o mestre a conter o número de piadas (desde que isso não vá prejudicar a diversão do grupo) ou servir de “voz do bom senso”, evitando decisões absurdas ou que resultarão no fim da campanha. Em suma, o xerife é um auxiliar do mestre, alguém que abre mão de algumas surpresas e ajuda o jogo a “andar”.</p>
+        <p><center><b>Se for o xerife, você recebe +1 em Iniciativa.</b></center></p>
+        `,
+        referencia: `Heróis de Arton - páginas 295`
+      },
+      {
+        id: 303,
+        nome: 'COMBATE AVANÇADO',
+        descricao: `
+        <p>Esta seção traz diversas regras opcionais para combate. Cada uma altera o funcionamento desse tipo de cena de uma forma específica, deixando suas lutas mais táticas, brutais ou cinematográficas.</p>
+        <p>As mecânicas não são necessariamente relacionadas entre si, de modo que você pode usar apenas as que preferir.</p>
+        `,
+        referencia: `Heróis de Arton - páginas 296`
+      },
+      {
+        id: 304,
+        nome: 'COMBATE AVANÇADO: AÇÕES RÁPIDAS',
+        descricao: `
+        <p>Esta regra introduz um novo tipo de ação: rápida. Esta ação é algo simples, que ocupa apenas uma fração do seu movimento. Você não recebe ações rápidas automaticamente, mas pode usar suas ações de movimento para executá-las (cada movimento equivale a duas ações rápidas). Quando converte uma ação de movimento em ações rápidas, elas devem ser executadas em sequência (a menos que seu grupo esteja usando a regra opcional Movimento Intercalado).</p>
+        <p>As seguintes ações descritas em Tormenta20 (p. 234) são consideradas ações rápidas: levantar-se, manipular item, mirar e sacar ou guardar item. Além disso, você pode usar uma ação rápida para percorrer uma distância igual à metade do seu deslocamento. Se o grupo estiver usando a regra opcional Posicionamento, erguer escudo (p. 304) também é considerada uma ação rápida.</p>
+        `,
+        referencia: `Heróis de Arton - páginas 296`
+      },
     ];
   }
 }
