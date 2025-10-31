@@ -13,7 +13,6 @@ export class RegraService extends AbstractService {
   }
 
   listar(filtro: any): Observable<Regra[]> {
-    console.log(filtro + ' chegou na consulta');
     let listas = this.http.get<Regra[]>(this.url);
     return this.filtrar(filtro, listas);
   }

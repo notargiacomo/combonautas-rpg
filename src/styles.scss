@@ -67,7 +67,7 @@ img {
   object-fit: contain; /* Mantém as proporções */
   border: 5px solid rgb(68, 5, 18) !important; /* Moldura */
   border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  box-shadow: 0 4px 6px rgb(68, 5, 18) !important; /* Sombra suave */
   padding: 10px; /* Espaço entre a imagem e a borda */
   background-color: white; /* Fundo da moldura */
 }
@@ -90,7 +90,7 @@ button[mat-flat-button] {
   color: #333 !important; /* Define a cor do texto */
   border-radius: 5px; /* Suaviza os cantos */
   transition: background-color 0.3s ease; /* Anima a mudança de cor */
-  border: 1px solid rgb(120, 80, 160); /* Moldura */
+  border: 1px solid rgb(156, 26, 26) !important; /* Moldura */
 }
 
 button[mat-flat-button]:hover {
@@ -254,12 +254,8 @@ button[mat-flat-button]:hover {
     --mat-button-filled-label-text-color,
     var(--mat-sys-on-primary)
   ) !important;
-  background-color: rgb(45, 35, 60) !important;
+  background-color: rgb(68, 5, 18) !important;
 }
-
-
-
-
 
 .mat-mdc-tab-body-content {
   overflow: hidden !important;

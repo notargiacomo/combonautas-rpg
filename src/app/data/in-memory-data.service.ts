@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 import { RacaData } from './raca.data';
 import { Raca } from '../model/raca';
-import { condicoes } from './condicoes.data';
 import { OrigemData } from './origem.data';
 import { Origem } from '../model/origem';
 import { Classe } from '../model/classe';
@@ -27,6 +26,8 @@ import { DistincaoData } from './distincao.data';
 import { Distincao } from '../model/distincao';
 import { ItemMagicoData } from './item.magico.data';
 import { ItemMagico } from '../model/item.magico';
+import { Condicao } from '@app/model/condicao';
+import { CondicaoData } from './condicoes.data';
 
 @Injectable({
   providedIn: 'root',
@@ -42,6 +43,7 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly poderData: PoderData,
     private readonly itemData: ItemData,
     private readonly acaoData: AcaoData,
+    private readonly condicaoData: CondicaoData,
     private readonly magiaData: MagiaData,
     private readonly regraData: RegraData,
     private readonly distincaoData: DistincaoData,
@@ -52,6 +54,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const raca: Raca[] = this.racaData.get();
     const origem: Origem[] = this.origemData.get();
     const classe: Classe[] = this.classeData.get();
+    const condicao: Condicao[] = this.condicaoData.get();
     const pericia: Pericia[] = this.periciaData.get();
     const deus: Deus[] = this.deusData.get();
     const complicacao: Complicacao[] = this.complicacaoData.get();
@@ -65,7 +68,7 @@ export class InMemoryDataService implements InMemoryDbService {
 
     return {
       raca: raca,
-      condicoes: condicoes,
+      condicao: condicao,
       acao: acao,
       origem: origem,
       classe: classe,

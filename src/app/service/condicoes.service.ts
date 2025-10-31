@@ -10,11 +10,12 @@ import { Condicao } from '../model/condicao';
 export class CondicoesService extends AbstractService {
 
   constructor(private readonly http: HttpClient) {
-      super('condicoes/');
+      super('condicao/');
   }
 
-  listar(filtro:any): Observable<Condicao[]> {
-    return this.http.get<Condicao[]>(this.url,{params:this.removeBlankAttributes(filtro)})
+  listar(filtro: any): Observable<Condicao[]> {
+    let listas = this.http.get<Condicao[]>(this.url);
+    return this.filtrar(filtro, listas);
   }
 
 }

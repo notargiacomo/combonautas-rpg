@@ -13,7 +13,8 @@ export class AcoesService extends AbstractService {
       super('acao/');
   }
 
-  listar(filtro:any): Observable<Acao[]> {
-    return this.http.get<Acao[]>(this.url,{params:this.removeBlankAttributes(filtro)})
+  listar(filtro: any): Observable<Acao[]> {
+    let listas = this.http.get<Acao[]>(this.url);
+    return this.filtrar(filtro, listas);
   }
 }

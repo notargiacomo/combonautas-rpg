@@ -1,17 +1,16 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatCardModule } from '@angular/material/card';
-import { AcoesService } from '@app/service/acao.service';
-import { Acao } from '@app/model/acao';
+import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
   FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { Acao } from '@app/model/acao';
+import { AcoesService } from '@app/service/acao.service';
 // import { NgFor, NgIf } from '@angular/common';
-import { MatInputModule } from '@angular/material/input';
 import {
   animate,
   state,
@@ -19,12 +18,9 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { MatButtonModule } from '@angular/material/button';
-import { NgClass, NgFor, NgIf } from '@angular/common';
-import { AcaoData } from '@app/data/acao.data';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { NgFor, NgIf } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-acoes',
@@ -79,10 +75,6 @@ export class AcoesComponent implements OnInit {
     consultar(){
       console.log(this.form.value)
       let filtro = this.form.value
-      if(filtro.nome){
-        // regex - in-memory-web-api
-        filtro.nome = '^'+ filtro.nome 
-      }
       this.service.listar( filtro ).subscribe({
         next: response =>{
           this.acoes = response;

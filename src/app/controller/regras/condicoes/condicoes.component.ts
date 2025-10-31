@@ -48,12 +48,7 @@ export class CondicoesComponent  implements OnInit {
     }
 
     consultar(){
-      console.log(this.form.value)
       let filtro = this.form.value
-      if(filtro.nome){
-        // regex - in-memory-web-api
-        filtro.nome = '^'+ filtro.nome 
-      }
       this.service.listar( filtro ).subscribe({
         next: response =>{
           this.condicoes = response;
