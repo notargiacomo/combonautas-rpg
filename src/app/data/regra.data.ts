@@ -4922,6 +4922,7 @@ export class RegraData {
             </tr>
           </tbody>
         </table>
+        <br />
         <ul>
         <li><i>Lesão.</i> Você sofre um ferimento mais profundo do que mera perda de vida. Uma lesão impõe uma penalidade cumulativa de –2 em testes de perícias. Lesões são recuperadas apenas com descanso — a cada noite de sono em condições normais ou melhores, você recupera uma lesão (ou duas, se tiver passado por cuidados prolongados; veja a perícia Cura).</li>
         </ul>
