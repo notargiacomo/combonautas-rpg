@@ -40,8 +40,10 @@ export class RegraData {
         <p><b>Pontos. </b>Você começa com todos os atributos em 0 e recebe 10 pontos para aumentá-los. O custo para aumentar cada atributo está descrito na tabela abaixo. Você também pode reduzir um atributo para –1 para receber 1 ponto adicional.</p>
         <p><b>Rolagens. </b>Role 4d6, descarte o menor e some os outros três. Anote o resultado. Repita esse processo cinco vezes, até obter um total de seis números. Então, converta esses números em atributos conforme a tabela abaixo. Por exemplo, se você rolar 13, 8, 15, 18, 10 e 9, seus atributos serão 1, –1, 2, 4, 0 e –1. Distribua esses valores entre os seis atributos como quiser. Caso seus atributos não somem pelo menos 6, role novamente o menor valor. Repita esse processo até seus atributos somarem 6 ou mais.</p>
         <table>
-          <caption><b>Tabela 1-1: Atributos</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 1-1: Atributos</th>
+            </tr>
             <tr>
               <th>Atributo</th>
               <th>Custo</th>
@@ -111,8 +113,10 @@ export class RegraData {
         <p><b>Modificadores de Atributo.</b> Sua raça modifica seus atributos, podendo aumentá-los acima de 4 ou diminuí-los abaixo de –2.</p>
         <p><b>Habilidades de Raça.</b> Você possui todas as habilidades de sua raça. As regras para usar habilidades são explicadas no Capítulo 5: Jogando.</p>
         <table>
-          <caption><b>Tabela 1-2: Raças</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 1-2: Raças</th>
+            </tr>
             <tr>
               <th>Raça</th>
               <th>Modificadores de Atributo</th>
@@ -151,8 +155,10 @@ export class RegraData {
         <p><b>Perícias.</b> Suas perícias treinadas. Veja mais sobre isso no Capítulo 2.</p>
         <p><b>Proficiências.</b> Os tipos de armas e armaduras que você sabe usar (além de armas simples e armaduras leves, que todos os personagens sabem usar). Veja mais sobre isso nas páginas 142 e 152.</p>
         <table>
-          <caption><b>Tabela 1-3: Classes</b></caption>
           <thead>
+            <tr>
+              <th colspan="6">Tabela 1-3: Classes</th>
+            </tr>
             <tr>
               <th>Classe</th>
               <th>Descrição</th>
@@ -304,8 +310,10 @@ export class RegraData {
         <p><b>2. Habilidades de Classe.</b> Você ganha todas as habilidades do nível alcançado. Consulte a tabela da sua classe para saber quais.</p>
         <p><b>3. Bônus em Perícias.</b> Seu bônus em perícias é igual à metade do seu nível. Assim, a cada nível par (2º, 4º, 6º etc.) ele aumenta em +1. Isso representa o fato de que heróis experientes se tornam mais capazes. Você usa o número antes da barra para perícias treinadas e o número depois da barra para perícias não treinadas. Veja mais sobre isso no Capítulo 2.</p>
         <table>
-          <caption><b>Tabela 1-4: Níveis de Personagem</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 1-4: Níveis de Personagem</th>
+            </tr>
             <tr>
               <th>Nível de Personagem</th>
               <th>Pontos de Experiência</th>
@@ -606,8 +614,10 @@ export class RegraData {
         <p>Ao se tornar devoto, você recebe um poder concedido a sua escolha da lista do deus e passa a seguir as Obrigações & Restrições dele. Se violá-las, perde todos os seus PM e só pode recuperá-los a partir do próximo dia. Se violá-las de novo na mesma aventura, perde todos os seus PM e não pode recuperá-los até fazer uma penitência (veja a perícia Religião). Poderes concedidos são descritos no Capítulo 2.</p>
         <p><I><b>Multiclasse.</b></I> No caso de classes com listas de devoções permitidas, a classe com menos opções determina a que deve ser seguida (isso permite que uma devoção anterior seja mudada). Se não houver devoções compatíveis, a multiclasse não pode ser feita.</p>
         <table>
-          <caption><b>Tabela 1-20: Deuses</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 1-20: Deuses</th>
+            </tr>
             <tr>
               <th>Divindade</th>
               <th>Energia</th>
@@ -695,10 +705,10 @@ export class RegraData {
         descricao: `<p>O tamanho de uma criatura é classificado em seis categorias: Minúsculo, Pequeno, Médio, Grande, Enorme e Colossal. Por padrão, seu tamanho é Médio, mas sua raça pode alterar isso. Criaturas Médias não recebem modificadores por tamanho. Criaturas menores recebem bônus em Furtividade e penalidade em manobras de combate. Para criaturas maiores, esses bônus e penalidades são invertidos.</p>
         <p>Criaturas Minúsculas usam armas reduzidas, que causam um passo a menos de dano (veja a Tabela 3-2: Dano de Armas, na página 143). Criaturas Grandes e Enormes usam armas aumentadas, que causam um passo a mais de dano, e criaturas Colossais usam armas gigantes, que causam dois passos a mais de dano. Uma criatura pode usar uma arma feita para até uma categoria de tamanho maior ou menor que a dela, mas sofre –5 nos testes de ataque e a arma ocupa um espaço a mais ou a menos, respectivamente (mínimo meio espaço).</p>
         <table style="width: 100%; border-collapse: collapse; color: black; font-family: 'Times New Roman', serif; text-align: center;">
-          <caption style="font-weight: bold; text-transform: uppercase; padding: 8px 0;">
-            <b>Tabela 1-21: Tamanho de Criaturas</b>
-          </caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 1-21: Tamanho de Criaturas</th>
+            </tr>
             <tr>
               <th style="border: 1px solid #000; padding: 6px;">Categoria de Tamanho</th>
               <th style="border: 1px solid #000; padding: 6px;">Exemplos</th>
@@ -2077,9 +2087,10 @@ export class RegraData {
         <p>Para objetos soltos, faça um ataque contra a Defesa do objeto, definida por sua categoria de tamanho. Se o objeto estiver em movimento, recebe +5 na Defesa. Para um objeto segurado por outra criatura, veja a manobra quebrar.</p>
         <p>Se você acerta o ataque, causa dano normal. Entretanto, objetos normalmente têm redução de dano, dependendo de seu material. Um objeto reduzido a 0 ou menos PV é destruído.</p>
         <table>
-          <caption><b>Tabela 5-4: Estatísticas de Objetos</b></caption>
-
           <thead>
+            <tr>
+              <th colspan="4">Tabela 5-4: Estatísticas de Objetos</th>
+            </tr>
             <tr>
               <th scope="col">Exemplo</th>
               <th scope="col">Tamanho</th>
@@ -2456,8 +2467,10 @@ export class RegraData {
         nome: `SITUAÇÕES ESPECIAIS`,
         descricao: `
         <table>
-          <caption><b>Tabela 5-3: Situações Especiais</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 5-3: Situações Especiais</th>
+            </tr>
             <tr>
               <th>O atacante está...</th>
               <th>Modificador no ataque</th>
@@ -2571,8 +2584,10 @@ export class RegraData {
         descricao: `
         <p>Às vezes, uma interação com um NPC exigirá uma estatística de jogo. Por exemplo, se um personagem quiser barganhar com um mercador, você precisará do valor de Vontade dele. Como dito anteriormente, você não precisa ter fichas completas para cada NPC. Em vez disso, use a tabela abaixo. Apenas determine o patamar do NPC de acordo com o papel dele no mundo e se a perícia em questão é “forte” ou “fraca” para ele. Por exemplo, um mercador usaria a coluna “forte” para Diplomacia, Ofício e Vontade, e a coluna “fraca” para as demais perícias.</p>
         <table>
-          <caption><b>Tabela 6-1: Estatísticas de NPCs</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 6-1: Estatísticas de NPCs</th>
+            </tr>
             <tr>
               <th>Patamar</th>
               <th>Perícia Forte</th>
@@ -2714,8 +2729,10 @@ export class RegraData {
         <p>A tabela ao lado apresenta o tesouro médio que o grupo deve receber a cada cena com uma ameaça. A palavra-chave é “médio” — os personagens não precisam ganhar esse valor exato. Mas, se passarem por muitas cenas sem tesouro, faça com que recebam esse valor em outra ocasião (como visto em “Tesouro em Outras Situações”). Por outro lado, se estão muito ricos, devem passar por uma série de cenas sem tesouro, até a situação se normalizar. Um grupo de quatro personagens deve vencer quatro ameaças de ND igual ao seu nível para subir para o próximo. Assim, ao longo de cada nível, um grupo deve conquistar quatro vezes o valor na tabela.</p>
         <p>Outra maneira de garantir que o grupo tenha riqueza apropriada é comparar seu nível e riqueza com a Tabela 3-1: Dinheiro Inicial. Um personagem de 10º nível, por exemplo, deve ter posses que somam perto de T$ 13.000. Se tiver muito mais ou muito menos, algo está errado e precisa ser ajustado.</p>
         <table>
-          <caption><b>Tabela 8-6: Tesouro Médio por Cena</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 8-6: Tesouro Médio por Cena</th>
+            </tr>
             <tr>
               <th>Nível</th>
               <th>Tesouro</th>
@@ -2833,8 +2850,10 @@ export class RegraData {
         <p><b>Itens Específicos.</b> Usam as regras de fabricação de itens de Ofício. O preço de cada item aparece nas tabelas a seguir. A CD do teste de Ofício é dada pela categoria do item: CD 30 para itens menores, CD 40 para médios e CD 50 para itens maiores. Por fim, a perícia usada é determinada pelo tipo de item: Ofício (armeiro) para armas e armaduras e Ofício (artesão) para acessórios. De acordo com o mestre, outros Ofícios podem ser usados para itens específicos — como Ofício (joalheiro) para um anel. Itens específicos não podem receber encantos. Todas as armas e armaduras específicas deste livro são itens maiores.</p>
         <p>Custo em Pontos de Mana. Para fabricar um item mágico permanente, o personagem deve sacrificar certa quantidade de pontos de mana: 1 PM para itens menores, 2 PM para médios e 3 PM para itens maiores. É essa essência que irá energizar o item. Os pontos de mana são perdidos para sempre. Contudo, caso o personagem destrua um item mágico permanente que criou, recupera os PM sacrificados naquele item. De acordo com o mestre, outras coisas podem ser sacrificadas no lugar de pontos de mana, como ingredientes raros. Porém, encontrar um ingrediente desses é sempre uma tarefa difícil — talvez o objetivo de uma aventura!</p>
         <table>
-          <caption><b>Tabela 8-7: Preço de Encantos</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 8-7: Preço de Encantos</th>
+            </tr>
             <tr>
               <th>Número de Encantos</th>
               <th>Aumento no Preço</th>
@@ -3596,8 +3615,10 @@ export class RegraData {
         </ul>
         <p>Pontos de Mana. Um item inteligente possui sua própria reserva de PM, que é igual à soma do nível dele mais seus atributos mentais. Esses PM podem ser usados pelo item para ativar seus poderes, ou podem ser gastos pelo usuário para habilidades do próprio usuário. Nesse caso, cada PM gasto custa 2 PM do item. Itens inteligentes precisam ficar inertes por 8 horas por dia para recuperar seus PM. Quando fazem isso, recuperam 1 PM por nível (veja abaixo, eles não são afetados por condições de descanso).</p>
         <table>
-          <caption><b>Tabela 3–13: Capacidades de Itens Mágicos Inteligentes</b></caption>
           <thead>
+            <tr>
+              <th colspan="5">Tabela 3–13: Capacidades de Itens Mágicos Inteligentes</th>
+            </tr>
             <tr>
               <th>d%</th>
               <th>Atributos</th>
@@ -3645,8 +3666,10 @@ export class RegraData {
           </tbody>
         </table>
         <table>
-          <caption><b>Tabela 3–14: Poderes de Itens Mágicos Inteligentes</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 3–14: Poderes de Itens Mágicos Inteligentes</th>
+            </tr>
             <tr>
               <th>d%</th>
               <th>Poder Menor</th>
@@ -3685,8 +3708,10 @@ export class RegraData {
         <p>O ego mede a força de vontade do item e a probabilidade de ele influenciar (ou até mesmo dominar) seu usuário. O ego de um item é igual à soma de seus atributos, mais os modificadores apresentados na Tabela 3-14. Assim, um item mágico maior (ego 15) com três poderes menores (+3), um poder maior (+2), Int 3, Sab 4, Car 0 (+7) e comunicação por fala (+1) tem ego 28.</p>
         <p>Sempre que você tentar fazer algo contrário aos interesses do item, deve fazer um teste de Vontade (CD igual ao ego do item). Se falhar, não consegue fazer a ação e não pode tentar novamente por 1 dia. Se falhar por 10 ou mais, o item controla suas ações por 1 dia.</p>
         <table>
-          <caption><b>Tabela 3–15: Ego</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 3–15: Ego</th>
+            </tr>
             <tr>
               <th>Característica do Item</th>
               <th>Pontos de Ego</th>
@@ -3800,8 +3825,10 @@ export class RegraData {
         <p>Para criar um personagem de idade variada, escolha uma faixa etária para ele e aplique os efeitos dela. Existem sete faixas etárias: criança, adolescente, jovem, adulto, maduro, velho e ancião. A faixa etária padrão é jovem, a única que não altera sua ficha — todas as outras trazem benefícios e penalidades.</p>
         <p>Os efeitos de faixas etárias não são necessariamente equilibrados. No geral, crianças são menos poderosas que adultos, e os efeitos refletem isso. Se você quer um jogo balanceado, sugerimos que não use estas regras — elas são opcionais justamente por trazerem certo desequilíbrio!</p>
         <table>
-          <caption><b>Tabela 4-2: Faixas Etárias</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 4-2: Faixas Etárias</th>
+            </tr>
             <tr>
               <th>Faixa Etária</th>
               <th>Idade</th>
@@ -4225,8 +4252,10 @@ export class RegraData {
         <p>Uma vez que você tenha as estatísticas de jogo do NPC, é hora de definir seus aspectos descritivos, como nome, aparência, personalidade e histórico. Para isso, consulte as dicas para personagens, na página 107, e os arquétipos de NPCs a partir da página 257.</p>
         <p>Fique à vontade para detalhar o quanto quiser, mas lembre-se de priorizar informa- ções que irão aparecer no jogo! Para a maioria dos NPCs, um nome, uma frase de descrição, e dois ou três traços de personalidade são suficientes.</p>
         <table>
-          <caption>Tabela 7-2: Estatísticas de NPC</caption>
           <thead>
+            <tr>
+              <th colspan="8">Tabela 7-2: Estatísticas de NPC</th>
+            </tr>
             <tr>
               <th>Patamar</th>
               <th>ND</th>
@@ -4335,8 +4364,10 @@ export class RegraData {
         <p><b>Mapa.</b> Desenhe o mapa da masmorra, com o número de salas que escolheu e corredores para conectá-las. Distribua os objetivos (principal, secundários e opcionais) nas salas e as ameaças antes ou junto dos objetivos. Faça mais de um caminho, para que os jogadores tenham escolhas. Se você não souber ou não quiser desenhar, pode procurar mapas prontos ou geradores de mapas na internet. Na verdade, outra maneira de criar uma masmorra é começar pelo mapa e ir preenchendo-o com os elementos desta lista (objetivos, ameaças e pontos de interesse).</p>
         <p><b>Descrição e Regras.</b> Por fim, escreva uma descrição rápida para cada sala da masmorra e as regras de cada objetivo e ameaça, como fichas de criaturas.</p>
         <table>
-          <caption><b>Tabela 6-2: Ideias de Masmorras</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 6-2: Ideias de Masmorras</th>
+            </tr>
             <tr>
               <th>1d20</th>
               <th>Masmorra</th>
@@ -4375,8 +4406,10 @@ export class RegraData {
         <p><b>Tapeçarias.</b> Um elemento comum de muitas masmorras (especialmente templos e castelos antigos), tapeçarias podem ser úteis como esconderijo ou meio de alcançar um ponto mais alto. Uma tapeçaria com 1,5m de largura tem RD 0 e 10 PV. Um personagem atrás de uma tapeçaria possui camuflagem leve. A CD do teste de Atletismo para escalar uma tapeçaria é 15 (supondo que ela seja resistente o bastante para sustentar o peso do personagem).</p>
         <p><b>Altares.</b> Outro elemento típico de masmorras são altares — normalmente, blocos de pedra retangulares que são o centro de um templo. Um altar comum ocupa um espaço de 1,5m por 3m, possui RD 8 e 200 PV e fornece cobertura leve a qualquer criatura atrás dele, embora altares maiores, menores e de outros materiais existam. Um altar também pode emanar uma aura mágica, especialmente as magias Consagrar e Profanar.</p>
         <table>
-          <caption><b>Tabela 6-3: Portas</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 6-3: Portas</th>
+            </tr>
             <tr>
               <th>Tipo de Porta</th>
               <th>RD</th>
@@ -4560,8 +4593,10 @@ export class RegraData {
         <p><b>Perdendo-se.</b> Se o grupo não está seguindo uma estrada ou marco — como um rio ou praia —, o guia deve passar em um teste de Sobrevivência por dia, ou ficará perdido. Um grupo perdido viaja em uma direção aleatória. Uma vez por dia, cada personagem pode fazer um teste de Sobrevivência (CD 20 –1 por dia de viagem aleatória) para perceber que está no caminho errado e determinar um novo caminho (com um novo teste de Sobrevivência).</p>
         <p><b>Suprimentos.</b> Controle suprimentos apenas se isso for importante para a aventura — por exemplo, durante uma travessia pelo Deserto da Perdição, a falta de água e comida pode ser tão perigosa quanto um monstro! Nesse caso, os jogadores devem controlar suas rações de viagem. Testes de Sobrevivência para encontrar suprimentos, e de Fortitude para resistir à fome e à sede, podem tornar uma viagem tão emocionante quanto um combate.</p>
         <table>
-          <caption><b>Tabela 6-4: Viagens</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 6-4: Viagens</th>
+            </tr>
             <tr>
               <th>Deslocamento</th>
               <th>por hora¹</th>
@@ -4855,8 +4890,10 @@ export class RegraData {
         <p>Nesta regra, não há pontos de vida negativos. Se um personagem for reduzido a 0 ou menos pontos de vida, fica com 0 PV, inconsciente e moribundo.</p>
         <p><b>Moribundo.</b> No início de seu turno, e sempre que sofrer dano estando moribundo, você deve fazer um teste de Constituição e consultar a tabela abaixo. A CD é 10 +2 para cada vez além da primeira que você ficou moribundo nessa cena e +2 para cada teste desses que já realizou nessa cena (esses aumentos são cumulativos). Você perde essa condição se recuperar 1 ou mais PV ou se receber primeiros socorros (veja a perícia Cura, mas a CD do teste de perícia é igual à CD atual do teste de Constituição).</p>
         <table>
-          <caption><b>Tabela 4-5: Teste de Morte</b></caption>
           <thead>
+            <tr>
+              <th colspan="4">Tabela 4-5: Teste de Morte</th>
+            </tr>
             <tr>
               <th>Teste de Constituição</th>
               <th>Efeito</th>
