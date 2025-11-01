@@ -5056,6 +5056,16 @@ export class RegraData {
         `,
         referencia: `Heróis de Arton - página 308`
       },
+      {
+        id: 324,
+        nome: 'FUNDAMENTALISTA',
+        descricao: `
+        <p>Enquanto um devoto normal às vezes questiona sua divindade, até mesmo desafiando-a, o fundamentalista é um seguidor extremo de seus ideais, beirando o fanatismo. Ele acredita que outros devotos são infiéis, que sua igreja tem sido liberal e tolerante demais! Não apenas segue as Obrigações & Restrições padrão à risca, mas também adota dogmas muito mais rígidos. A recompensa divina por tamanha lealdade é maior, assim como o castigo por falhar em cumprir essa doutrina severa.</p>
+        <p>Um fundamentalista recebe um poder concedido adicional, mas, além das Obrigações & Restrições de sua divindade, deve seguir também seus dogmas. Se violar qualquer deles, perde seus pontos de mana e habilidades de classe divina, só podendo recuperá-los a partir do próximo dia (habilidades são recuperadas após um descanso). Se violar obrigações ou dogmas de novo na mesma aventura, só pode recuperar os PM e habilidades após cumprir uma penitência — que deve ser imposta por outro fundamentalista do mesmo deus. Além disso, fundamentalistas usam apenas a arma favorita de sua divindade. Utilizar qualquer outra arma configura violação de seus dogmas.</p>
+        <p>Note que alguns dogmas fundamentalistas os tornam inviáveis como personagens jogadores, servindo melhor a NPCs.</p>
+        `,
+        referencia: `Deuses de Arton - página 11`
+      },
     ];
   }
 }

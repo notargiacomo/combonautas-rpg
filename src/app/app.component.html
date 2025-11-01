@@ -52,7 +52,8 @@
           </mat-menu>
           <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
           <mat-menu #menuMestre="matMenu" yPosition="below">
-            <button mat-menu-item (click)="navigateTo('utilitarios/calculo-desafios')">Cálculo de Desafios</button>
+            <button mat-menu-item (click)="navigateTo('mestre/calculo-desafios')">Cálculo de Desafios</button>
+            <button mat-menu-item (click)="navigateTo('mestre/tabela-geracao-tesouros')">Geração de Tesouro</button>
             <!-- <button mat-menu-item (click)="navigateTo('mestre/ameacas')">Ameaças</button>
             <button mat-menu-item (click)="navigateTo('mestre/criando-ameacas')">Criando Ameaças</button>
             <button mat-menu-item (click)="navigateTo('mestre/dashboard')">
