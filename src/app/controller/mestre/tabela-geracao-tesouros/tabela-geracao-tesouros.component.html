@@ -1,3 +1,53 @@
+<form [formGroup]="formulario">
 <div class="container">
-
+  <div class="row">
+    <div class="col-sm-12 mt-4">
+      <mat-card class="cartao">
+        <h2><b>GERAÇÃO DE TEROUROS</b></h2>
+        <hr />
+        <label><b class="negrito-centralizado" style="text-justify: center !important">
+            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO</b></label>
+        <div class="row">
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Nível de Desafio</mat-label>
+                <mat-select formControlName="nivel">
+                  @for (nivel of niveis; track nivel) {
+                  <mat-option [value]="nivel">{{
+                    nivel
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6 mt-4">
+              <mat-form-field class="select-dobrado">
+                <mat-label>Tipo de Tesouro</mat-label>
+                <mat-select formControlName="tipo">
+                  @for (tipo of tipos; track tipo) {
+                  <mat-option [value]="tipo">{{
+                    tipo
+                    }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+        </div>
+            <hr>
+            <label><b class="negrito-centralizado" style="text-justify: center !important">TESOURO: {{tesouro}}</b></label>
+            <div class="row">
+            <div class="col-sm-12 mt-4">
+                <section>
+                    <div class="button-row d-flex justify-content-end">
+                        <button class="me-2" (click)="gerarTesouro()" mat-flat-button>
+                            Gerar Tesouro
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
 </div>
+</form>

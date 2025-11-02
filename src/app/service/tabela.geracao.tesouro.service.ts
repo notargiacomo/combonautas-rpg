@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class TabelaGeracaoTesouroDataDinheiroService extends AbstractService {
+export class TabelaGeracaoTesouroDataService extends AbstractService {
 
   constructor(private readonly http: HttpClient) {
       super('tabelaGeracaoTesouroData/');
