@@ -34,12 +34,12 @@
             </div>
         </div>
             <hr>
-            <label><b class="negrito-centralizado" style="text-justify: center !important">TESOURO: {{tesouro}}</b></label>
+            <label><b class="negrito-centralizado" style="text-justify: center !important">TESOURO: {{tesouroDinheiro}}</b></label>
             <div class="row">
             <div class="col-sm-12 mt-4">
                 <section>
                     <div class="button-row d-flex justify-content-end">
-                        <button class="me-2" (click)="gerarTesouro()" mat-flat-button>
+                        <button class="me-2" (click)="gerarTesouro()" [disabled]="!this.formulario.get('nivel')?.value || !this.formulario.get('tipo')?.value" mat-flat-button>
                             Gerar Tesouro
                         </button>
                     </div>
