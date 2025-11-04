@@ -1,39 +1,37 @@
-<div class="container">
-    <form [formGroup]="form">
-      <div class="row mt-1" style="margin-right: 0.5% !important;">
-        <mat-card >
-          <div class="row">
-            <div class="col-sm-12">
-              <h2><b>REGRAS</b></h2>
-              <hr />
-            </div>
+<form [formGroup]="form">
+  <div class="container">
+    <div class="row mt-1" style="margin-right: 0.5% !important">
+      <mat-card>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2><b>REGRAS</b></h2>
+            <hr />
           </div>
-          <div class="row">
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <mat-form-field class="form-field text-field-formulario-edicao">
-                <mat-label>REGRA</mat-label>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <mat-form-field class="form-field text-field-formulario-edicao">
+              <mat-label>REGRA</mat-label>
               <input
                 formControlName="nome"
                 matInput
                 type="text"
                 (keyup)="consultar()"
               />
-              </mat-form-field>
-            </div>
+            </mat-form-field>
           </div>
-        </mat-card>
-      </div>
-      <div class="row mt-1" style="margin-right: 0.5% !important;">
-        <mat-card class="cartao">
-          <div class="row">
-            <div class="d-flex justify-content-end">
-              <b>Número de Registros: {{ numero_registros }}</b>
-            </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="row mt-1" style="margin-right: 0.5% !important">
+      <mat-card class="cartao">
+        <div class="row">
+          <div class="d-flex justify-content-end">
+            <b>Número de Registros: {{ numero_registros }}</b>
           </div>
-          <br />
-          <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
+        </div>
+        <br />
+        <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
           <mat-grid-tile *ngFor="let regra of regras">
             <mat-card class="card-padrao">
               <mat-card-title
@@ -93,7 +91,7 @@
             </mat-card>
           </mat-grid-tile>
         </mat-grid-list>
-        </mat-card>
-      </div>
-    </form>
+      </mat-card>
+    </div>
   </div>
+</form>
