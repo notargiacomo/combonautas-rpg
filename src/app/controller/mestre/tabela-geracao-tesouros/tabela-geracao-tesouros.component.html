@@ -33,10 +33,8 @@
               </mat-form-field>
             </div>
         </div>
-            <hr>
-            <label><b class="negrito-centralizado" style="text-justify: center !important">TESOURO: {{tesouroDinheiro}}</b></label>
-            <div class="row">
-            <div class="col-sm-12 mt-4">
+          <div class="row">
+            <div class="col-sm-12">
                 <section>
                     <div class="button-row d-flex justify-content-end">
                         <button class="me-2" (click)="gerarTesouro()" [disabled]="!this.formulario.get('nivel')?.value || !this.formulario.get('tipo')?.value" mat-flat-button>
@@ -45,7 +43,35 @@
                     </div>
                 </section>
             </div>
-        </div>
+          </div>
+          <hr>
+          <mat-accordion class="mb-4 mt-4">
+            <mat-expansion-panel [disabled]="dinheiro.length===0" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <b>TESOURO: {{dinheiro}}</b>
+                      </div>
+                    </div>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div
+                    class="col-sm-6 mt-1 text-justify"
+                    [innerHTML]="detalhesTesouroDinheiro">
+                  </div>
+                  <div
+                    class="col-sm-6 mt-1 text-justify"
+                    [innerHTML]="detalhesTesouroItens">
+                  </div>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
       </mat-card>
     </div>
   </div>
