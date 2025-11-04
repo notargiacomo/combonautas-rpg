@@ -65,7 +65,7 @@ export class TabelaGeracaoTesourosComponent {
     
     
     if(linhaDinheiroNivel.unidade.includes("riqueza")){
-      this.dinheiro = "T$ " + this.calcularRiqueza(linhaDinheiroNivel.unidade, linhaDinheiroNivel.modificador>0);
+      this.dinheiro = "T$ " + this.calcularRiqueza(linhaDinheiroNivel.unidade, linhaDinheiroNivel.modificador.length>0);
     } else {
       let contadorMoedas = this.contadorMoedas(linhaDinheiroNivel);
       this.dinheiro = 
@@ -102,6 +102,7 @@ export class TabelaGeracaoTesourosComponent {
       riquezas = this.tabelaTesouro[3];
     
     let random = Math.floor(Math.random() * 100)+1;
+    random = modificador ? random + 20 < 100 ? random + 20 : 100 : random;
     const linhaDinheiroNivel = riquezas.find((item: { min: number; max: number; }) => random >= item.min && random <= item.max);
     
     return this.contadorMoedas(linhaDinheiroNivel).toString();
