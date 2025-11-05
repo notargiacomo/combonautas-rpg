@@ -52,6 +52,11 @@ export class TabelaGeracaoTesourosComponent {
 
   gerarTesouro(){
     this.detalhesTesouroDinheiro = this.calcularDinheiro();
+    this.detalhesTesouroItens = this.gerarItem(); 
+  }
+
+  gerarItem(){
+    return '';
   }
 
   calcularDinheiro(){
