@@ -82,6 +82,10 @@
     </div>
   </mat-card-content>
 </mat-card>
-<router-outlet />
+<div class="container">
+  <div class="row mt-1" style="margin-right: 0.5% !important">
+    <router-outlet />
+  </div>
+</div>
 <app-footer></app-footer>
 <loading-indicator [detectRouteTransitions]="true" />

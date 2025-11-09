@@ -1,38 +1,39 @@
-<div class="container">
-  <mat-card class="cartao">
-    <div class="row">
-      <div class="col-sm-12 mt-4">
-        <h2><b>DEIXE NIMB CRIAR UM PERSONAGEM PARA VOCÊ!</b></h2>
-        <hr />
-      </div>
+<mat-card class="cartao">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2><b>DEIXE NIMB CRIAR UM PERSONAGEM PARA VOCÊ!</b></h2>
+      <hr />
     </div>
+  </div>
+  <div class="row">
     <div class="row">
-      <div class="row">
-        @if (gerou) {
-
-          <div class="col-sm-12">
-            <mat-accordion >
-              <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" disabled hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <b>
-                            RAÇA:
-                            {{
-                            this.racas === undefined ||
-                            this.racas[racaIndex] === undefined
-                            ? ""
-                            : this.racas[racaIndex].nome?.toUpperCase()
-                            }}
-                          </b>
-                        </div>
+      @if (gerou) {
+        <div class="col-sm-12">
+          <mat-accordion>
+            <mat-expansion-panel
+              (opened)="panelOpenState.set(true)"
+              (closed)="panelOpenState.set(false)"
+              disabled
+              hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <b>
+                          RAÇA:
+                          {{
+                            this.racas === undefined || this.racas[racaIndex] === undefined
+                              ? ''
+                              : this.racas[racaIndex].nome?.toUpperCase()
+                          }}
+                        </b>
                       </div>
                     </div>
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <!-- <mat-tab-group>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <!-- <mat-tab-group>
                   <mat-tab label="Raça">
                     <div class="row">
                       <div class="col-sm-9 mt-4 text-justify" [innerHTML]="racas[racaIndex].descricao"></div>
@@ -54,28 +55,31 @@
                     </div>
                   </mat-tab>
                 </mat-tab-group> -->
-              </mat-expansion-panel>
-              <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" disabled hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <b>
-                            ORIGEM:
-                            {{
-                            this.origens === undefined ||
-                            this.origens[origemIndex] === undefined
-                            ? ""
-                            : this.origens[origemIndex].nome?.toUpperCase()
-                            }}
-                          </b>
-                        </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              (opened)="panelOpenState.set(true)"
+              (closed)="panelOpenState.set(false)"
+              disabled
+              hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <b>
+                          ORIGEM:
+                          {{
+                            this.origens === undefined || this.origens[origemIndex] === undefined
+                              ? ''
+                              : this.origens[origemIndex].nome?.toUpperCase()
+                          }}
+                        </b>
                       </div>
                     </div>
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <!-- <div class="row">
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <!-- <div class="row">
                   <div class="element-detail">
                     <div class="row">
                       <div
@@ -85,28 +89,31 @@
                     </div>
                   </div>
                 </div> -->
-              </mat-expansion-panel>
-              <mat-expansion-panel  (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" disabled hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <b>
-                            CLASSE:
-                            {{
-                            this.classes === undefined ||
-                            this.classes[classeIndex] === undefined
-                            ? ""
-                            : this.classes[classeIndex].nome?.toLocaleUpperCase()
-                            }}
-                          </b>
-                        </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              (opened)="panelOpenState.set(true)"
+              (closed)="panelOpenState.set(false)"
+              disabled
+              hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <b>
+                          CLASSE:
+                          {{
+                            this.classes === undefined || this.classes[classeIndex] === undefined
+                              ? ''
+                              : this.classes[classeIndex].nome?.toLocaleUpperCase()
+                          }}
+                        </b>
                       </div>
                     </div>
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <!-- <div class="row">
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <!-- <div class="row">
                   <mat-tab-group>
                     <mat-tab label="Classe">
                       <div class="content">
@@ -272,28 +279,27 @@
                     </mat-tab>
                   </mat-tab-group>
                 </div> -->
-              </mat-expansion-panel>
-              <mat-expansion-panel disabled hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <b>
-                            DEUS:
-                            {{
-                            this.deuses === undefined ||
-                            this.deuses[deusIndex] === undefined
-                            ? ""
-                            : this.deuses[deusIndex].nome?.toUpperCase()
-                            }}
-                          </b>
-                        </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel disabled hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <b>
+                          DEUS:
+                          {{
+                            this.deuses === undefined || this.deuses[deusIndex] === undefined
+                              ? ''
+                              : this.deuses[deusIndex].nome?.toUpperCase()
+                          }}
+                        </b>
                       </div>
                     </div>
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <!-- <mat-tab-group>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <!-- <mat-tab-group>
                   <mat-tab label="Deus">
                     <div class="content">
                       <div class="row">
@@ -327,23 +333,20 @@
                     </div>
                   </mat-tab>
                 </mat-tab-group> -->
-              </mat-expansion-panel>
-            </mat-accordion>
-          </div>
-        }
-      </div>
-      <div class="row">
-        <div class="col-sm-12 mt-4">
-          <section>
-            <div class="button-row d-flex justify-content-end">
-              <button class="me-2" (click)="rezarPraNimb()" mat-flat-button>
-                Reze para Nimb e Alegre-se!
-              </button>
-              <!-- <button mat-flat-button>Adicionar Raça</button> -->
-            </div>
-          </section>
+            </mat-expansion-panel>
+          </mat-accordion>
         </div>
+      }
+    </div>
+    <div class="row">
+      <div class="col-sm-12 mt-4">
+        <section>
+          <div class="button-row d-flex justify-content-end">
+            <button class="me-2" (click)="rezarPraNimb()" mat-flat-button>Reze para Nimb e Alegre-se!</button>
+            <!-- <button mat-flat-button>Adicionar Raça</button> -->
+          </div>
+        </section>
       </div>
     </div>
-  </mat-card>
-</div>
+  </div>
+</mat-card>

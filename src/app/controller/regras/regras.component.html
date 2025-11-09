@@ -1,29 +1,27 @@
 <form [formGroup]="form">
-  <div class="container">
-    <div class="row mt-1" style="margin-right: 0.5% !important">
-      <mat-card>
-        <div class="row">
-          <div class="col-sm-12">
-            <h2><b>REGRAS</b></h2>
-            <hr />
-          </div>
+  <div class="col-sm-12">
+    <mat-card>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2><b>REGRAS</b></h2>
+          <hr />
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <mat-form-field class="form-field text-field-formulario-edicao">
-              <mat-label>REGRA</mat-label>
-              <input
-                formControlName="nome"
-                matInput
-                type="text"
-                (keyup)="consultar()"
-              />
-            </mat-form-field>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <mat-form-field class="form-field text-field-formulario-edicao">
+            <mat-label>REGRA</mat-label>
+            <input
+              formControlName="nome"
+              matInput
+              type="text"
+              (keyup)="consultar()"
+            />
+          </mat-form-field>
         </div>
-      </mat-card>
-    </div>
-    <div class="row mt-1" style="margin-right: 0.5% !important">
+      </div>
+    </mat-card>
+    <div>
       <mat-card class="cartao">
         <div class="row">
           <div class="d-flex justify-content-end">

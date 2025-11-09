@@ -1,90 +1,81 @@
-<div class="container">
-  <div class="mt-4" style="margin-right: 0.5% !important">
-    <mat-card class="card-padrao">
-      <form [formGroup]="form">
-      <div class="row" >
-        <div class="col-sm-12 mt-4">
-          <div class="row">
+<mat-card class="card-padrao">
+  <form [formGroup]="form">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
           <div class="col-sm-12">
             <h2><b>CONDIÇÕES</b></h2>
-            <hr>
+            <hr />
           </div>
         </div>
-          <mat-form-field class="form-field text-field-formulario-edicao">
-            <mat-label>Condição</mat-label>
-            <input formControlName="nome"
-              matInput
-              type="text"
-              (keyup)="consultar()"
-            />
-          </mat-form-field>
-        </div>
+        <mat-form-field class="form-field text-field-formulario-edicao">
+          <mat-label>Condição</mat-label>
+          <input formControlName="nome" matInput type="text" (keyup)="consultar()" />
+        </mat-form-field>
       </div>
-    </form>
-    </mat-card>
-    <mat-card class="card-padrao">
-      
-      <div class="col-sm-12 mt-4">
-        <div class="d-flex justify-content-end">
-          <b>Número de Registros: {{ numero_registros }}</b>
-        </div>
-      </div>
-      <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
-        <mat-grid-tile *ngFor="let condicao of condicoes">
-          <mat-card class="card-padrao">
-            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-              {{condicao.nome}}
-            </mat-card-title>
-            <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-              <div class="row">
-                <div class="col-sm-12 d-flex justify-content-end">
-                  {{condicao.tipo}}
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <hr class="" />
-                </div>
-              </div>
-              <div class="content">
-                <div class="row">
-                  <div class="col-sm-12 mt-4">
-                    {{condicao.descricao}}
-                  </div>
-                </div>
-              </div>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-      <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350">
-        <mat-grid-tile *ngFor="let condicao of condicoes">
-          <mat-card class="card-padrao">
-            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-              {{condicao.nome}}
-            </mat-card-title>
-            <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-              <div class="row">
-                <div class="col-sm-12 d-flex justify-content-end">
-                  {{condicao.tipo}}
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <hr class="" />
-                </div>
-              </div>
-              <div class="content">
-                <div class="row">
-                  <div class="col-sm-12 mt-4">
-                    {{condicao.descricao}}
-                  </div>
-                </div>
-              </div>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </mat-card>
+    </div>
+  </form>
+</mat-card>
+<mat-card class="card-padrao">
+  <div class="col-sm-12 mt-4">
+    <div class="d-flex justify-content-end">
+      <b>Número de Registros: {{ numero_registros }}</b>
+    </div>
   </div>
-</div>
+  <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
+    <mat-grid-tile *ngFor="let condicao of condicoes">
+      <mat-card class="card-padrao">
+        <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+          {{ condicao.nome }}
+        </mat-card-title>
+        <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+          <div class="row">
+            <div class="col-sm-12 d-flex justify-content-end">
+              {{ condicao.tipo }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <hr class="" />
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-sm-12 mt-4">
+                {{ condicao.descricao }}
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350">
+    <mat-grid-tile *ngFor="let condicao of condicoes">
+      <mat-card class="card-padrao">
+        <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+          {{ condicao.nome }}
+        </mat-card-title>
+        <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+          <div class="row">
+            <div class="col-sm-12 d-flex justify-content-end">
+              {{ condicao.tipo }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <hr class="" />
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-sm-12 mt-4">
+                {{ condicao.descricao }}
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
