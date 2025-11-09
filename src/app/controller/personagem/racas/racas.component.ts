@@ -1,24 +1,7 @@
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import {
-  ChangeDetectorRef,
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  FormArray,
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  FormsModule,
-  ReactiveFormsModule,
-} from '@angular/forms';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -30,16 +13,18 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-import { Deslocamento } from '@app/enum/deslocamento.enum'; 
-import { Modificador } from '@app/enum/modificador.enum'; 
-import { Referencia } from '@app/enum/referencia.enum'; 
-import { Sentido } from '@app/enum/sentido.enum'; 
-import { Tamanho } from '@app/enum/tamanho.enum'; 
-import { TipoCriatura } from '@app/enum/tipo.criatura.enum'; 
+import { Deslocamento } from '@app/enum/deslocamento.enum';
+import { Modificador } from '@app/enum/modificador.enum';
+import { Referencia } from '@app/enum/referencia.enum';
+import { Sentido } from '@app/enum/sentido.enum';
+import { Tamanho } from '@app/enum/tamanho.enum';
+import { TipoCriatura } from '@app/enum/tipo.criatura.enum';
 import { Raca } from '@app/model/raca';
-import { PoderService } from '@app/service/poder.service'; 
-import { RacaService } from '@app/service/raca.service'; 
-import { TipoPoder } from '@app/enum/tipo.poder.enum'; 
+import { PoderService } from '@app/service/poder.service';
+import { RacaService } from '@app/service/raca.service';
+import { TipoPoder } from '@app/enum/tipo.poder.enum';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-racas',
@@ -59,29 +44,29 @@ import { TipoPoder } from '@app/enum/tipo.poder.enum';
     MatSelectModule,
     NgFor,
     NgIf,
-    NgClass,
+    // NgClass,
     MatTabsModule,
-],
+    MatGridListModule,
+  ],
   templateUrl: './racas.component.html',
   styleUrl: './racas.component.scss',
   animations: [
     trigger('detailExpand', [
       state('collapsed,void', style({ height: '0px', minHeight: '0', maxHeight: '0' })),
       state('expanded', style({ height: '*' })),
-      transition(
-        'expanded <=> collapsed',
-        animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')
-      ),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
     ]),
   ],
 })
 export class RacasComponent implements OnInit {
+  isMobile = false;
+
   columnsToDisplay = ['nome', 'tipo'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement!: Raca | null;
   isExpandedRow = (index: number, row: any) => row === this.expandedElement;
   racas!: Raca[];
-  
+
   atributo = [-2, -1, 0, 1, 2, 3];
   numero_registros = 0;
   dataSource = new MatTableDataSource<Raca>();
@@ -99,8 +84,13 @@ export class RacasComponent implements OnInit {
     private readonly racaService: RacaService,
     private readonly poderService: PoderService,
     private fb: FormBuilder,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private breakpointObserver: BreakpointObserver
   ) {
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      this.isMobile = result.matches;
+      console.log('É celular?', this.isMobile);
+    });
   }
 
   ngOnInit() {
@@ -123,14 +113,14 @@ export class RacasComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      const linhas = document.querySelectorAll('tr.valorado');
-      linhas.forEach((linha, index) => {
-        if (index % 2 === 1) {
-          (linha as HTMLElement).style.backgroundColor = '#f2f2f2';
-        }
-      });
-    });
+    // setTimeout(() => {
+    //   const linhas = document.querySelectorAll('tr.valorado');
+    //   linhas.forEach((linha, index) => {
+    //     if (index % 2 === 1) {
+    //       (linha as HTMLElement).style.backgroundColor = '#f2f2f2';
+    //     }
+    //   });
+    // });
   }
 
   private reiniciaFormulario() {
@@ -155,7 +145,7 @@ export class RacasComponent implements OnInit {
       penalidade: [],
       // referencias: new FormArray([]),
       nome: [],
-      selecao: []
+      selecao: [],
     });
   }
 
@@ -169,9 +159,7 @@ export class RacasComponent implements OnInit {
     if (isChecked) {
       formArray.push(new FormControl(deslocamento));
     } else {
-      const index = formArray.controls.findIndex(
-        (item) => item.value === deslocamento
-      );
+      const index = formArray.controls.findIndex(item => item.value === deslocamento);
       formArray.removeAt(index);
     }
 
@@ -183,9 +171,7 @@ export class RacasComponent implements OnInit {
     if (isChecked) {
       formArray.push(new FormControl(referencia));
     } else {
-      const index = formArray.controls.findIndex(
-        (item) => item.value === referencia
-      );
+      const index = formArray.controls.findIndex(item => item.value === referencia);
       formArray.removeAt(index);
     }
 
@@ -202,7 +188,7 @@ export class RacasComponent implements OnInit {
         delete filtro[campo]; // Remove para não enviar vazio
       }
     });
-  
+
     this.racaService.listar(filtro).subscribe({
       next: (response: any[]) => {
         response.sort((a, b) => {
@@ -213,9 +199,9 @@ export class RacasComponent implements OnInit {
 
         this.racas = response;
         this.numero_registros = response.length;
-        
+
         this.racas.forEach(raca => {
-          this.poderService.listar({id_raca:raca.id, tipo: TipoPoder.PODER_RACA}).subscribe({
+          this.poderService.listar({ id_raca: raca.id, tipo: TipoPoder.PODER_RACA }).subscribe({
             next: (response: any[]) => {
               response.sort((a, b) => {
                 let nome_a = a.nome ? a.nome : 'a';
@@ -229,9 +215,9 @@ export class RacasComponent implements OnInit {
                 }
               });
               raca.poderes = response;
-            }
+            },
           });
-          this.poderService.listar({id_raca:raca.id, tipo: TipoPoder.HABILIDADE_RACA}).subscribe({
+          this.poderService.listar({ id_raca: raca.id, tipo: TipoPoder.HABILIDADE_RACA }).subscribe({
             next: (response: any[]) => {
               response.sort((a, b) => {
                 let nome_a = a.nome ? a.nome : 'a';
@@ -245,7 +231,7 @@ export class RacasComponent implements OnInit {
                 }
               });
               raca.habilidades = response;
-            }
+            },
           });
         });
         this.cdr.detectChanges();

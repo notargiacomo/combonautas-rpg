@@ -1,124 +1,219 @@
+// .mat-mdc-card {
+//   width: 100% !important;
+//   padding: 10px !important;
+//   margin: 10px !important;
+//   color: rgb(199, 199, 199) !important;
+//   border-radius: 0px !important; /* Arredonda os cantos */
+// }
+
+// .mat-mdc-card h4 {
+//   color: rgb(199, 199, 199) !important;
+// }
+
+// .mat-mdc-card-title {
+//   font-weight: bold !important;
+//   padding: 10px !important;
+//   font-family: 'Oswald' !important;
+//   font-size: 15pt !important;
+//   color: rgb(199, 199, 199) !important;
+//   background-color: rgb(68, 5, 18) !important;
+//   text-align: center !important;
+//   align-content: center !important;
+// }
+
+// .mat-mdc-card-content {
+//   overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
+//   margin-bottom: 10px !important;
+//   text-align: justify;
+//   max-height: 600px !important; /* Defina a altura máxima do card */
+//   padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
+//   overflow-y: auto !important;
+//   overflow-x: auto !important;
+//   border-color: rgb(68, 5, 18) !important;
+//   border: 2px solid rgb(68, 5, 18) !important;
+//   background-color: rgb(104, 16, 16) !important;
+//   max-height: 600px !important; /* Defina a altura máxima do card */
+// }
+
+// .mat-mdc-card-subtitle {
+//   font-weight: bold !important;
+//   text-align: center !important;
+// }
+
+// .mat-mdc-card-title,
+// .mat-mdc-card-subtitle {
+//   text-align: center !important;
+// }
+
+// .mat-mdc-card-title,
+// .mat-mdc-card-subtitle {
+//   display: block;
+//   margin: 0;
+//   border-color: rgb(68, 5, 18) !important;
+//   color: rgb(199, 199, 199) !important;
+//   max-height: 600px !important; /* Defina a altura máxima do card */
+//   overflow-y: auto !important; /* Habilita o scroll vertical */
+// }
+
+// .mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
+//   background-color: white;
+// }
+
+// // .cartao {
+// //   width: 100%;
+// //   padding: 10px;
+// //   margin-top: 10px;
+// //   margin-bottom: 5px;
+// // }
+
+// .content-cartao-itens {
+//   height: 500px !important;
+// }
+
+// .content-cartao-condicoes {
+//   height: 250px !important;
+// }
+
+// .botao-cartao-apresentacao {
+//   margin-top: 15px !important;
+// }
+
+// .mat-mdc-card-content table {
+//   border-collapse: collapse;
+//   width: 100%;
+//   background-color: #fff;
+//   border: 1px solid #ddd;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// .mat-mdc-card-content th,
+// td {
+//   padding: 12px 15px;
+//   color: #000;
+//   text-align: center;
+//   border: 1px solid #ddd;
+// }
+
+// .mat-mdc-card-content th {
+//   background-color: #f4f4f4;
+//   font-size: 1.2em;
+//   font-weight: bold;
+// }
+
+// .mat-mdc-card-content tr:nth-child(even) {
+//   background-color: #f9f9f9;
+// }
+
+// .mat-mdc-card-content tr:nth-child(odd) {
+//   background-color: #ffffff;
+// }
+
+// .mat-mdc-card-content tr:hover {
+//   background-color: #f1f1f1;
+// }
+
+// .mat-mdc-card-content b {
+//   color: rgb(240, 240, 245) !important;
+// }
+
+// .mat-mdc-card-content img {
+//   background: rgb(240, 240, 245) !important;
+// }
+
+// .mat-mdc-card-content hr {
+//   border: none !important; /* Remove estilos padrão */
+//   border-top: 2px solid rgb(240, 240, 245) !important; /* Define a cor e a altura */
+//   border-radius: 10px !important; /* Arredonda os cantos */
+//   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+//   opacity: 1 !important;
+// }
+
+.mdc-card {
+  margin-bottom: 5% !important;
+}
+
 .mat-mdc-card {
   width: 100% !important;
-  padding: 10px !important;
-  margin: 10px !important;
-  color: rgb(199, 199, 199) !important;
+  padding: 1% !important;
+  margin: 1% !important;
   border-radius: 0px !important; /* Arredonda os cantos */
 }
 
-.mat-mdc-card-title {
-  font-weight: bold !important;
-  padding: 10px !important;
-  font-family: "Oswald" !important;
-  font-size: 15pt !important;
+.mdc-card .card-game {
+  height: 100% !important;
   color: rgb(199, 199, 199) !important;
-  background-color: rgb(68, 5, 18) !important;
-  text-align: center !important;
-  align-content: center !important;
-}
-
-.mat-mdc-card-content {
-  overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
-  margin-bottom: 10px !important;
-  text-align: justify;
-  max-height: 600px !important; /* Defina a altura máxima do card */
-  padding: 18px !important; /* Opcional: ajuste o espaçamento interno */
-  overflow-y: auto !important;
-  overflow-x: auto !important;
-  border-color: rgb(68, 5, 18) !important;
-  border: 2px solid rgb(68, 5, 18) !important;
   background-color: rgb(104, 16, 16) !important;
-  max-height: 600px !important; /* Defina a altura máxima do card */
-}
+  border: 5px solid rgb(68, 5, 18) !important;
+  text-align: justify !important;
 
-.mat-mdc-card-subtitle {
-  font-weight: bold !important;
-  text-align: center !important;
-}
+  .mat-mdc-card-title {
+    background-color: rgb(68, 5, 18) !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    padding: 10px !important;
+    font-family: 'Oswald' !important;
+  }
 
-.mat-mdc-card-title,
-.mat-mdc-card-subtitle {
-  text-align: center !important;
-}
+  .mat-mdc-card-content {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    font-family: 'Oswald' !important;
+  }
 
-.mat-mdc-card-title, .mat-mdc-card-subtitle {
-  display: block;
-  margin: 0;
-  border-color: rgb(68, 5, 18) !important;
-  color: rgb(199, 199, 199) !important;
-  max-height: 600px !important; /* Defina a altura máxima do card */
-  overflow-y: auto !important; /* Habilita o scroll vertical */
-}
+  b {
+    color: white !important;
+  }
 
-.mat-mdc-card-content .mat-mdc-checkbox .mat-internal-form-field {
-  background-color: white;
-}
+  table {
+    border-collapse: collapse;
+    background: #fffdf9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #a00000;
+    width: 420px;
+  }
 
-// .cartao {
-//   width: 100%;
-//   padding: 10px;
-//   margin-top: 10px;
-//   margin-bottom: 5px;
-// }
+  caption {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a00000;
+    font-size: 1.1em;
+    border-top: 2px solid #a00000;
+    border-bottom: 2px solid #a00000;
+    padding: 6px 0;
+    letter-spacing: 0.5px;
+  }
 
-.content-cartao-itens {
-  height: 500px !important;
-}
+  th,
+  td {
+    border: 1px solid #d8c5b0;
+    padding: 6px 12px;
+    text-align: left;
+  }
 
-.content-cartao-condicoes {
-  height: 250px !important;
-}
+  th {
+    background: #efe4d4;
+    color: #3b1e0c;
+    text-align: center;
+  }
 
-.botao-cartao-apresentacao {
-  margin-top: 15px !important;
-}
+  td {
+    color: #2e1b0c;
+  }
 
-.mat-mdc-card-content table {
-  border-collapse: collapse;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  tr:nth-child(even) td {
+    background: #f8f3ec;
+  }
 
-.mat-mdc-card-content th,
-td {
-  padding: 12px 15px;
-  color: #000;
-  text-align: center;
-  border: 1px solid #ddd;
-}
+  td:first-child {
+    font-weight: bold;
+  }
 
-.mat-mdc-card-content th {
-  background-color: #f4f4f4;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.mat-mdc-card-content tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.mat-mdc-card-content tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-.mat-mdc-card-content tr:hover {
-  background-color: #f1f1f1;
-}
-
-.mat-mdc-card-content b {
-  color: rgb(240, 240, 245) !important;
-}
-
-.mat-mdc-card-content img {
-  background: rgb(240, 240, 245) !important;
-}
-
-.mat-mdc-card-content hr {
-  border: none !important; /* Remove estilos padrão */
-  border-top: 2px solid rgb(240, 240, 245) !important; /* Define a cor e a altura */
-  border-radius: 10px !important; /* Arredonda os cantos */
-  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
-  opacity: 1 !important;
+  img {
+    width: 100% !important; /* Largura máxima da imagem */
+    height: 100% !important; /* Altura máxima da imagem */
+    object-fit: contain !important; /* Mantém as proporções */
+    border: 5px solid rgb(68, 5, 18) !important; /* Moldura */
+    // border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgb(68, 5, 18) !important; /* Sombra suave */
+  }
 }

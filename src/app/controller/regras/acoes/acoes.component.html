@@ -16,7 +16,7 @@
     </div>
   </form>
 </mat-card>
-<mat-card class="card-padrao">
+<mat-card class="">
   <div class="row">
     <div class="d-flex justify-content-end">
       <b>Número de Registros: {{ numero_registros }}</b>
@@ -25,13 +25,13 @@
   <br />
   <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
     <mat-grid-tile *ngFor="let acao of acoes">
-      <mat-card class="card-padrao">
+      <mat-card class="card-game">
         <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
           {{ acao.nome }}
         </mat-card-title>
         <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
           <div class="row">
-            <div class="col-sm-12 d-flex justify-content-end">
+            <div class="col-sm-12 mt-1 d-flex justify-content-end">
               {{ acao.custo }}
             </div>
           </div>
@@ -51,13 +51,13 @@
   </mat-grid-list>
   <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350">
     <mat-grid-tile *ngFor="let acao of acoes">
-      <mat-card class="card-padrao">
+      <mat-card class="card-game">
         <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
           {{ acao.nome }}
         </mat-card-title>
         <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
           <div class="row">
-            <div class="col-sm-12 d-flex justify-content-end">
+            <div class="col-sm-12 mt-1 d-flex justify-content-end">
               {{ acao.custo }}
             </div>
           </div>

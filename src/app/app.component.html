@@ -1,15 +1,27 @@
 <div class="cabecalho"></div>
-<mat-card style="background-color: rgb(156, 26, 26) !important; overflow-x: hidden !important; padding: 0px !important; margin: 0px !important;overflow-y: hidden !important;">
-  <mat-card-content style="background-color: rgb(156, 26, 26) !important; overflow-x: hidden !important; padding: 0px !important; margin: 0px !important;overflow-y: hidden !important;">
+<mat-card
+  style="
+    background-color: rgb(156, 26, 26) !important;
+    overflow-x: hidden !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow-y: hidden !important;
+  ">
+  <mat-card-content
+    style="
+      background-color: rgb(156, 26, 26) !important;
+      overflow-x: hidden !important;
+      padding: 0px !important;
+      margin: 0px !important;
+      overflow-y: hidden !important;
+    ">
     <div class="content">
       <div class="row">
         <div class="col-sm-8">
           <button mat-button (click)="navigateTo('')">Home</button>
-          <!-- <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button> -->
+          <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
           <mat-menu #menuPersonagem="matMenu" yPosition="below">
-            <!-- <button mat-menu-item (click)="navigateTo('personagem/racas')">
-              Raças
-            </button> -->
+            <button mat-menu-item (click)="navigateTo('personagem/racas')">Raças</button>
             <!--<button mat-menu-item (click)="navigateTo('personagem/origens')">
               Origens
             </button>
@@ -34,21 +46,19 @@
             <button mat-menu-item (click)="navigateTo('personagem/magias')">
               Magias
             </button>-->
-          </mat-menu> 
+          </mat-menu>
           <!-- <button mat-button [matMenuTriggerFor]="menuCampanha">Campanha</button>
           <mat-menu #menuCampanha="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('campanha/distincoes')">Distinções</button>
             <button mat-menu-item (click)="navigateTo('campanha/itens-magicos')">Itens Mágicos</button>
             <button mat-menu-item (click)="navigateTo('campanha/parceiros')">Parceiros</button>
           </mat-menu> -->
-  
+
           <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
           <mat-menu #menuRegra="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('regras/regras')">Regras do Jogo</button>
             <button mat-menu-item (click)="navigateTo('regras/acoes')">Ações</button>
-            <button mat-menu-item (click)="navigateTo('regras/condicoes')">
-              Condições
-            </button>
+            <button mat-menu-item (click)="navigateTo('regras/condicoes')">Condições</button>
           </mat-menu>
           <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
           <mat-menu #menuMestre="matMenu" yPosition="below">
@@ -60,9 +70,7 @@
               Dashboard
             </button> -->
           </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuUtilitarios">
-            Utilitários
-          </button>
+          <button mat-button [matMenuTriggerFor]="menuUtilitarios">Utilitários</button>
           <mat-menu #menuUtilitarios="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('utilitarios/personagem-aleatorio')">Personagem Aleatório</button>
             <!-- <button mat-menu-item (click)="navigateTo('utilitarios/ficha')">Ficha</button> -->
