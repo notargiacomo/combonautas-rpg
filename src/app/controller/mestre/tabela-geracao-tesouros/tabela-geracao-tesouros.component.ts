@@ -1,18 +1,18 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   FormBuilder,
-  FormControl,
   FormGroup,
   FormsModule,
-  ReactiveFormsModule,
+  ReactiveFormsModule
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { MatCard, MatCardContent } from "@angular/material/card";
+import { MatCard } from "@angular/material/card";
 import { MatFormField, MatFormFieldModule, MatLabel } from "@angular/material/form-field";
-import { MatSelect, MatOption } from "@angular/material/select";
+import { MatOption, MatSelect } from "@angular/material/select";
 
-import { TabelaGeracaoTesouroDataService } from '@app/service/tabela.geracao.tesouro.service';
-import { MatAccordion, MatExpansionPanel, MatExpansionPanelHeader, MatExpansionPanelTitle, MatExpansionPanelDescription } from "@angular/material/expansion";
+import { MatAccordion, MatExpansionPanel, MatExpansionPanelHeader, MatExpansionPanelTitle } from "@angular/material/expansion";
+import { GeneratedTreasure, tabelaTesouroItens, TreasureContext } from './generate-factory/model/treasure';
+import { TreasureService } from './generate-factory/service/treasure.service';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -25,16 +25,18 @@ export class TabelaGeracaoTesourosComponent {
   formulario!: FormGroup;
   tabelaTesouro: any[] = [];
   tipos: string[] = ['PADRÃO', 'METADE', 'DOBRO'];
-  niveis: string[] = ['1/4', '1/2', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'];
+  niveis: number[] = [0.25, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   
-  tesouro:string = '';
+  item:string = '';
   dinheiro:string = '';
   
+  resultado?: GeneratedTreasure[] = [];
+
   detalhesTesouroDinheiro: string = '';
   detalhesTesouroItens: string = '';
 
   constructor(private fb: FormBuilder,
-    private readonly service: TabelaGeracaoTesouroDataService,
+    private treasureService: TreasureService
   ) {}
 
   ngOnInit() {
@@ -42,91 +44,39 @@ export class TabelaGeracaoTesourosComponent {
         tipo: [],
         nivel: [],
     });
-
-    this.service.listar().subscribe({
-      next: (response: any[]) => {
-        this.tabelaTesouro = response;
-      }
-    });
   }
 
   gerarTesouro(){
-    this.detalhesTesouroDinheiro = this.calcularDinheiro();
-    this.detalhesTesouroItens = this.gerarItem(); 
+    this.gerarDinheiro();
+    this.gerarItem();
+  }
+  
+  private gerarDinheiro() {
+    const contexto: TreasureContext = {
+      type: 'money',
+      level: this.formulario.get('nivel')?.value
+    };
+
+    let retorno = this.treasureService.generate(contexto);
+    this.dinheiro! = retorno.notes + " " + retorno.return;
+    this.detalhesTesouroDinheiro! = retorno.report!;
   }
 
   gerarItem(){
-    return '';
-  }
-
-  calcularDinheiro(){
-    let randomDinheiro = Math.floor(Math.random() * 100)+1;
-    let tabelaTesouroDinheiro = this.tabelaTesouro[0];
-    let nivel = this.formulario.get('nivel')?.value;
-
-    // Busca o objeto cujo intervalo [min, max] contém o valor
-    const tabelaDinheiroNivel = tabelaTesouroDinheiro.filter((item: { nd: string }) => item.nd === nivel);
-    const linhaDinheiroNivel = tabelaDinheiroNivel.find((item: { min: number; max: number; }) => randomDinheiro >= item.min && randomDinheiro <= item.max);
-    
-    
-    if(linhaDinheiroNivel.unidade.includes("riqueza")){
-      this.dinheiro = "T$ " + this.calcularRiqueza(linhaDinheiroNivel.unidade, linhaDinheiroNivel.modificador.length>0);
-    } else {
-      let contadorMoedas = this.contadorMoedas(linhaDinheiroNivel);
-      this.dinheiro = 
-            (this.formulario.get('tipo')?.value === 'METADE' ? contadorMoedas/2: 
-            this.formulario.get('tipo')?.value === 'DOBRO'? contadorMoedas*2: 
-            contadorMoedas).toString();
-
-      this.dinheiro = linhaDinheiroNivel.unidade + " " + this.dinheiro;
-    }
-
-    return `
-        <div class="row">
-            <b>DINHEIRO</b>
-        </div>
-        <div class="row">
-            <label><b>RESULTADO D100:</b> ${randomDinheiro}</label>
-        </div>
-        <div class="row">
-            <label><b>FÓRMULA:</b> ${linhaDinheiroNivel.dinheiro}</label>
-        </div>
-        <div class="row">
-            <label><b>DINHEIRO TOTAL:</b> ${this.dinheiro}</label>
-        </div>
-        `;
-  }
-
-  calcularRiqueza(unidade:string, modificador: boolean): string {
-    let riquezas = []
-    if(unidade.includes("menor"))
-      riquezas = this.tabelaTesouro[1];
-    if(unidade.includes("media"))
-      riquezas = this.tabelaTesouro[2];
-    if(unidade.includes("maior"))
-      riquezas = this.tabelaTesouro[3];
-    
     let random = Math.floor(Math.random() * 100)+1;
-    random = modificador ? random + 20 < 100 ? random + 20 : 100 : random;
-    const linhaDinheiroNivel = riquezas.find((item: { min: number; max: number; }) => random >= item.min && random <= item.max);
-    
-    return this.contadorMoedas(linhaDinheiroNivel).toString();
+    let nivel = String(this.formulario.get('nivel')?.value).trim();
+    const tabelaItemNivel = tabelaTesouroItens.filter((item: any ) => item.nd === Number(nivel));
+    const linhaItemNivel: any = tabelaItemNivel.find((item: any) => random >= item.min && random <= item.max);
+
+    const contexto: TreasureContext = {
+      type: linhaItemNivel.tipo,
+      level: this.formulario.get('nivel')?.value,
+      notes: linhaItemNivel.modificador,
+      random: random
+    };
+
+    let retorno = this.treasureService.generate(contexto);
+    this.item! = retorno.return;
+    this.detalhesTesouroItens! = retorno.report!;
   }
-
-
-  contadorMoedas(linhaDinheiroNivel: any): number {
-    let dinheiro = 0;
-    for (let index = 0; index < linhaDinheiroNivel.multiplicador; index++) {
-      dinheiro += Number(Math.floor(Math.random() * linhaDinheiroNivel.randomizador) + 1);
-    }
-
-    if (linhaDinheiroNivel.parcela) {
-      dinheiro += Number(linhaDinheiroNivel.parcela);
-    }
-
-    dinheiro = dinheiro * linhaDinheiroNivel.potencializador;
-    return dinheiro;
-  }
-
-
 }

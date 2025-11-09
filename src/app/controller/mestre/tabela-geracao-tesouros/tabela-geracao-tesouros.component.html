@@ -51,25 +51,26 @@
                 <mat-panel-title>
                   <div class="container">
                     <div class="row">
-                      <div class="col-sm-12">
+                      <div class="col-sm-6">
                         <b>TESOURO: {{dinheiro}}</b>
+                      </div>
+                      <div class="col-sm-6">
+                        <b>{{item}}</b>
                       </div>
                     </div>
                   </div>
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div
-                    class="col-sm-6 mt-1 text-justify"
+              <hr/>
+                <div class="row">
+                  <div class="col-sm-6"
                     [innerHTML]="detalhesTesouroDinheiro">
                   </div>
                   <div
-                    class="col-sm-6 mt-1 text-justify"
+                    class="col-sm-6"
                     [innerHTML]="detalhesTesouroItens">
                   </div>
                 </div>
-              </div>
             </mat-expansion-panel>
           </mat-accordion>
       </mat-card>
