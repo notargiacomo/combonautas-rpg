@@ -7,14 +7,18 @@ import { CondicoesComponent } from './controller/regras/condicoes/condicoes.comp
 import { RegrasComponent } from './controller/regras/regras.component';
 import { CalculoDesafiosComponent } from './controller/mestre/calculo-desafios/calculo-desafios.component';
 import { PersonagemAleatorioComponent } from './controller/utilitarios/personagem-aleatorio/personagem-aleatorio.component';
+import { OrigensComponent } from './controller/personagem/origens/origens.component';
+import { ClassesComponent } from './controller/personagem/classes/classes.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'regras/condicoes', component: CondicoesComponent },
-    { path: 'regras/acoes', component: AcoesComponent },
-    { path: 'regras/regras', component: RegrasComponent },
-    { path: 'mestre/calculo-desafios', component: CalculoDesafiosComponent },
-    { path: 'mestre/tabela-geracao-tesouros', component: TabelaGeracaoTesourosComponent },
-    { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent },
-    { path: 'personagem/racas', component: RacasComponent },
+  { path: '', component: HomeComponent },
+  { path: 'regras/condicoes', component: CondicoesComponent },
+  { path: 'regras/acoes', component: AcoesComponent },
+  { path: 'regras/regras', component: RegrasComponent },
+  { path: 'mestre/calculo-desafios', component: CalculoDesafiosComponent },
+  { path: 'mestre/tabela-geracao-tesouros', component: TabelaGeracaoTesourosComponent },
+  { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent },
+  { path: 'personagem/racas', component: RacasComponent },
+  { path: 'personagem/origens', component: OrigensComponent },
+  { path: 'personagem/classes', component: ClassesComponent },
 ];

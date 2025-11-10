@@ -22,12 +22,9 @@
           <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
           <mat-menu #menuPersonagem="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('personagem/racas')">Raças</button>
-            <!--<button mat-menu-item (click)="navigateTo('personagem/origens')">
-              Origens
-            </button>
-            <button mat-menu-item (click)="navigateTo('personagem/classes')">
-              Classes
-            </button>
+            <button mat-menu-item (click)="navigateTo('personagem/origens')">Origens</button>
+            <button mat-menu-item (click)="navigateTo('personagem/classes')">Classes</button>
+            <!--
             <button mat-menu-item (click)="navigateTo('personagem/pericias')">
               Perícias
             </button>

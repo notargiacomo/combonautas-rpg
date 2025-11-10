@@ -28,7 +28,6 @@ export class RacaService extends AbstractService {
             )
           );
 
-          // Espera todas as requisições terminarem e retorna as raças já com história
           return forkJoin(requests);
         })
       ),
