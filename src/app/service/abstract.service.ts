@@ -23,28 +23,24 @@ export class AbstractService {
     return objetos.pipe(
       map((resultado: any[]) => {
         // Se não houver filtro ou estiver vazio, retorna tudo
-        const temFiltroValido =
-          filtro &&
-          Object.values(filtro).some(
-            (v) => v !== null && v !== undefined && v !== ''
-          );
+        const temFiltroValido = filtro && Object.values(filtro).some(v => v !== null && v !== undefined && v !== '');
 
         if (!temFiltroValido) return resultado;
 
         // Caso exista um filtro, filtra cada item do resultado
-        return resultado.filter((item) => {
+        return resultado.filter(item => {
           // Concatena todos os valores do objeto em uma única string
           const valoresItem = Object.values(item)
-            .map((v) => String(v).toUpperCase())
+            .map(valorItem => {
+              if (Array.isArray(valorItem)) return valorItem.join(' ');
+              else if (!isNaN(Number(valorItem)) && typeof valorItem === 'number') return valorItem.toString();
+              else return String(valorItem).toUpperCase();
+            })
             .join(' ');
 
           // Para cada valor de filtro, verifica se está presente em algum campo do item
-          return Object.values(filtro).some((valorFiltro) => {
-            if (
-              valorFiltro === null ||
-              valorFiltro === undefined ||
-              valorFiltro === ''
-            ) {
+          return Object.values(filtro).some(valorFiltro => {
+            if (valorFiltro === null || valorFiltro === undefined || valorFiltro === '') {
               return true;
             }
 

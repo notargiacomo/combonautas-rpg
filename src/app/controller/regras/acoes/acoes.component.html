@@ -23,7 +23,7 @@
     </div>
   </div>
   <br />
-  <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
+  <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350" gutterSize="10px">
     <mat-grid-tile *ngFor="let acao of acoes">
       <mat-card class="card-game">
         <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
@@ -49,7 +49,7 @@
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
-  <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350">
+  <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350" gutterSize="10px">
     <mat-grid-tile *ngFor="let acao of acoes">
       <mat-card class="card-game">
         <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">

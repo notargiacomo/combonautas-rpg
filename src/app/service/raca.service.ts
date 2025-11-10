@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { forkJoin, map, Observable, switchMap } from 'rxjs';
-import { RacaData } from '../data/raca.data';
 import { Raca } from '../model/raca';
 import { AbstractService } from './abstract.service';
 
@@ -14,20 +13,25 @@ export class RacaService extends AbstractService {
   }
 
   listar(filtro: any): Observable<Raca[]> {
-    return this.filtrar(filtro, this.http.get<Raca[]>(this.url)).pipe(
-      switchMap((racas: Raca[]) => {
-        const requests = racas.map(raca =>
-          this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
-            map(historia => {
-              raca.historia = historia;
-              return raca;
-            })
-          )
-        );
+    let listas = this.http.get<Raca[]>(this.url);
 
-        // Espera todas as requisições terminarem e retorna as raças já com história
-        return forkJoin(requests);
-      })
+    return this.filtrar(
+      filtro,
+      listas.pipe(
+        switchMap((racas: Raca[]) => {
+          const requests = racas.map(raca =>
+            this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
+              map(historia => {
+                raca.historia = historia;
+                return raca;
+              })
+            )
+          );
+
+          // Espera todas as requisições terminarem e retorna as raças já com história
+          return forkJoin(requests);
+        })
+      )
     );
   }
 }
