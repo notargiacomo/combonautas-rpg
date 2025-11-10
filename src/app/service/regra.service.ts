@@ -14,6 +14,6 @@ export class RegraService extends AbstractService {
 
   listar(filtro: any): Observable<Regra[]> {
     let listas = this.http.get<Regra[]>(this.url);
-    return this.filtrar(filtro, listas);
+    return this.filtrar(filtro, listas, ['nome', 'descricao', 'regras', 'referencia']);
   }
 }

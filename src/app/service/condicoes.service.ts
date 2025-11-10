@@ -8,14 +8,12 @@ import { Condicao } from '../model/condicao';
   providedIn: 'root',
 })
 export class CondicoesService extends AbstractService {
-
   constructor(private readonly http: HttpClient) {
-      super('condicao/');
+    super('condicao/');
   }
 
   listar(filtro: any): Observable<Condicao[]> {
     let listas = this.http.get<Condicao[]>(this.url);
-    return this.filtrar(filtro, listas);
+    return this.filtrar(filtro, listas, ['nome', 'descricao', 'tipo']);
   }
-
 }
