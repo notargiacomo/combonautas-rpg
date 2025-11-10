@@ -35,14 +35,57 @@
                   {{ raca.referencias + ', pag. ' + raca.paginas }}
                 </div>
               </div>
-              <div class="content mt-1">
+              <div class="content mt-2">
                 <mat-tab-group>
                   <mat-tab label="Imagem">
                     <img [src]="raca.imagem" [alt]="raca.nome" />
                   </mat-tab>
                   <mat-tab label="Características">
                     <div class="row">
-                      <div class="col-sm-12" [innerHTML]="raca.descricao"></div>
+                      <div class="col-sm-12 mt-4">
+                        <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                          <div class="text-justify" [innerHTML]="raca.descricao"></div>
+                        </div>
+                        <div
+                          *ngFor="let poderes of raca.habilidades"
+                          style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                          <div [innerHTML]="poderes.descricao"></div>
+                        </div>
+                        <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                          <b>Longevidade:</b>
+                          {{ raca.longevidade }} x.
+                        </div>
+                        <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                          <b>Devoto:</b>
+                          {{ raca.devotos }}
+                        </div>
+                      </div>
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Poderes Gerais">
+                    <div class="row">
+                      <p class="mt-2">
+                        (ps: Poderes Mágicos são marcados com o símbolo:
+                        <i><b>e</b></i>
+                        .)
+                      </p>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <hr />
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div
+                          *ngFor="let poderes of raca.poderes"
+                          style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                          <div class="text-justify" [innerHTML]="poderes.descricao"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="História">
+                    <div class="row">
+                      <div class="col-sm-12 mt-4 text-justify" [innerHTML]="raca.historia"></div>
                     </div>
                   </mat-tab>
                 </mat-tab-group>
