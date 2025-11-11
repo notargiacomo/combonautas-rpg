@@ -47,7 +47,7 @@
                       <div class="col-sm-12 text-justify" [innerHTML]="deus.descricao"></div>
                     </div>
                   </mat-tab>
-                  <mat-tab label="Poderes Concedidos">
+                  <mat-tab label="Poderes Concedidos" *ngIf="deus.poderes && deus.poderes.length > 0">
                     <div class="row mt-2">
                       <p>
                         ps: poderes mágicos são marcadas com o símbolo:
@@ -94,7 +94,7 @@
                       <div class="col-sm-12 text-justify" [innerHTML]="deus.descricao"></div>
                     </div>
                   </mat-tab>
-                  <mat-tab label="Poderes Concedidos">
+                  <mat-tab label="Poderes Concedidos" *ngIf="deus.poderes && deus.poderes.length > 0">
                     <div class="row mt-2">
                       <p>
                         ps: poderes mágicos são marcadas com o símbolo:

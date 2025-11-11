@@ -16,4 +16,8 @@ export class DeusService extends AbstractService {
     let listas = this.http.get<Deus[]>(this.url);
     return this.filtrar(filtro, listas, ['nome']);
   }
+
+  getbyId(id: number | undefined) {
+    return this.http.get<any>(this.url + id);
+  }
 }

@@ -1,27 +1,23 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { NgClass, NgFor, NgIf } from '@angular/common';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { NgFor, NgIf } from '@angular/common';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridList, MatGridTile } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-import { Deslocamento } from '@app/enum/deslocamento.enum';
 import { Modificador } from '@app/enum/modificador.enum';
-import { Referencia } from '@app/enum/referencia.enum';
 import { Deus } from '@app/model/deus';
 import { DeusService } from '@app/service/deus.service';
 import { PoderService } from '@app/service/poder.service';
-import { response } from 'express';
-import { MatGridList, MatGridTile } from '@angular/material/grid-list';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-deuses',
