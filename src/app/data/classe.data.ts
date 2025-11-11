@@ -1000,7 +1000,7 @@ export class ClasseData {
         paginas: '81, 82, 83 e 84',
       },
       {
-        id: 15,
+        id: 19,
         id_classe_pai: 1,
         nome: 'Necromante',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1111,7 +1111,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 16,
+        id: 20,
         id_classe_pai: 2,
         nome: 'Machado de Pedra',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1174,7 +1174,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 17,
+        id: 21,
         id_classe_pai: 3,
         nome: 'Magimarcialista',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1234,7 +1234,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 18,
+        id: 22,
         id_classe_pai: 4,
         nome: 'Duelista',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1284,7 +1284,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 19,
+        id: 23,
         id_classe_pai: 5,
         nome: 'Seteiro',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1358,7 +1358,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 20,
+        id: 24,
         id_classe_pai: 6,
         nome: 'Vassalo',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1408,7 +1408,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 21,
+        id: 25,
         id_classe_pai: 7,
         nome: 'Usurpador',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1460,7 +1460,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 22,
+        id: 26,
         id_classe_pai: 8,
         nome: 'Ermitão',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1531,7 +1531,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 23,
+        id: 27,
         id_classe_pai: 9,
         nome: 'Inovador',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1603,7 +1603,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 24,
+        id: 28,
         id_classe_pai: 10,
         nome: 'Alquimista',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1662,7 +1662,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 25,
+        id: 29,
         id_classe_pai: 11,
         nome: 'Ventanista',
         descricao_classe: `
@@ -1715,7 +1715,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 26,
+        id: 30,
         id_classe_pai: 12,
         nome: 'Atleta',
         descricao_classe: `
@@ -1763,7 +1763,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 27,
+        id: 31,
         id_classe_pai: 13,
         nome: 'Burguês',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1805,7 +1805,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 28,
+        id: 32,
         id_classe_pai: 14,
         nome: 'Santo',
         descricao_classe: `<h5>Características de Classe</h5>
@@ -1866,7 +1866,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 29,
+        id: 33,
         nome: 'Treinador',
         descricao_classe: `<h5>Características de Classe</h5>
         <p><b>Pontos de Vida.</b> Um treinador começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
@@ -1973,7 +1973,7 @@ export class ClasseData {
         paginas: '',
       },
       {
-        id: 30,
+        id: 18,
         nome: 'Frade',
         descricao_classe: `<h5>Características de Classe</h5>
         <p><b>Pontos de Vida.</b> Um frade começa com 12 pontos de vida (+ Constituição) e ganha 3 PV (+

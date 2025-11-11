@@ -74,8 +74,8 @@ export class RacasComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.consultar();
     this.reiniciaFormulario();
+    this.consultar();
   }
 
   ngAfterViewInit() {}
