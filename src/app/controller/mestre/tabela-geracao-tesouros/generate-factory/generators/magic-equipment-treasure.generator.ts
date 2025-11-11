@@ -45,39 +45,38 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
 
   private gerarItemMagico(linhaItemNivel: any, tabela: any, tabelaEspecifica: any) {
     let randomItemMagico = Math.floor(Math.random() * 100) + 1;
-    let itemMagico: any[] = [];
-    itemMagico.push(tabela.find((item: any) => randomItemMagico === item.id));
-    const numero = Number(linhaItemNivel.modificador.match(/\d+/)?.[0] || 0);
+    let linhaItemMagico = tabela.find((item: any) => randomItemMagico === item.id);
+    const numero = linhaItemNivel.unidade.include('menor') ? 1 : linhaItemMagico.unidade.include('médio') ? 2 : 3;
 
-    let randomEncanto = Math.floor(Math.random() * 100) + 1;
-    let encanto = tabela.find((item: any) => randomEncanto === item.id);
+    for (let i = 1; i <= numero; i++) {
+      let randomEncanto = Math.floor(Math.random() * 100) + 1;
+      let encanto = tabela.find((item: any) => randomEncanto === item.id);
+      linhaItemMagico.encantos.push(encanto);
+    }
 
-    itemMagico.push(encanto);
-
-    return itemMagico;
-  }
-
-  randomIntervaloBanido(inicio: number, fim: number) {
-    let numero;
-
-    do {
-      numero = Math.floor(Math.random() * 100) + 1; // 1 a 100
-    } while (numero >= 66 && numero <= 75); // intervalo proibido
-
-    return numero;
+    return linhaItemMagico;
   }
 
   private gerarRelatorio(random: number, linha: any, linhaItem: any): string {
+    const linhasHtml = linhaItem
+      .map((item: any) => `<li>${item.id} - ${item.nome} ${this.encantos(item)}</li>`)
+      .join('');
+
+    let labelEquipamento = linha.valor.includes('2D') ? linha.valor + '(escolha um)' : linha.valor;
+
     return `
-      <div class="row">
-          <b>ITEM</b>
-      </div>
-      <div class="row">
-          <label><b>RESULTADO D100:</b> ${random}</label>
-      </div>
-      <div class="row">
-          <label><b>${linha.valor}:</b> ${linhaItem.join(', ')}</label>
-      </div>`;
+      <b>ITEM</b><br />
+      <label><b>RESULTADO D100:</b> ${random}</label><br />
+      <label><b>${labelEquipamento}:</b></label>
+      <ul>
+          ${linhasHtml}
+      </ul>
+      `;
+  }
+
+  private encantos(item: any) {
+    let relatorioEncantos = item.encantos.map((p: any) => p.nome).join(', ');
+    return `(${relatorioEncantos})`;
   }
 
   equipamentoMagico = [

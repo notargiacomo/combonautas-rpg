@@ -1,24 +1,12 @@
 import { NgFor, NgIf } from '@angular/common';
-import {
-  ChangeDetectorRef,
-  Component,
-  EventEmitter,
-  Input,
-  Output,
-  ViewChild,
-} from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  FormsModule,
-  ReactiveFormsModule,
-} from '@angular/forms';
+import { ChangeDetectorRef, Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { Poder } from '@app/model/poder';
-import { PoderService } from '@app/service/poder.service'; 
+import { PoderService } from '@app/service/poder.service';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TipoPoder } from '@app/enum/tipo.poder.enum';
 import { Deus } from '@app/model/deus';
@@ -30,6 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-poderes',
@@ -54,156 +43,54 @@ import { MatSort } from '@angular/material/sort';
   styleUrl: './poderes.component.scss',
 })
 export class PoderesComponent {
-  objeto: Poder | undefined;
+  isMobile = false;
+
   objetos!: Poder[];
   form!: FormGroup;
   numero_registros = 0;
   deuses: Deus[] = [];
-  dataSource = new MatTableDataSource<Poder>();
-  displayedColumns: string[] = ['nome', 'tipo', 'acao'];
-  tipos = Object.values(TipoPoder);
-
-  @ViewChild(MatPaginator)
-  paginator!: MatPaginator;
-
-  @ViewChild(MatSort)
-  sort!: MatSort;
 
   constructor(
     private readonly service: PoderService,
     private readonly serviceDeus: DeusService,
     private fb: FormBuilder,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private breakpointObserver: BreakpointObserver
   ) {}
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      this.isMobile = result.matches;
+      console.log('É celular?', this.isMobile);
+    });
   }
 
   ngOnInit() {
+    this.reiniciaFormulario();
+    this.consultar();
+  }
+
+  private reiniciaFormulario() {
     this.form = this.fb.group({
       nome: [],
-      tipo: [],
-      id_deuses: [],
-    });
-
-    this.consultar(null);
-
-    
-    this.serviceDeus.listar(null).subscribe({
-      next: (response) => {
-        this.deuses = response;
-      },
-      error: (response) => {
-        console.log(response);
-      },
     });
   }
 
-  consultar(event: any) {
-    if(this.form.value.tipo !== TipoPoder.PODER_CONCEDIDO){
-      this.form.value.id_deuses = null;
-    }
+  consultar() {
+    console.log(this.form.value);
     let filtro = this.form.value;
-    if (filtro.nome) {
-      // regex - in-memory-web-api
-      filtro.nome = '^' + filtro.nome;
-    }
     this.service.listar(filtro).subscribe({
-      next: (response) => {
-        response.sort((a, b) => {
-          let nome_a = a.nome ? a.nome : 'a';
-          let nome_b = b.nome ? b.nome : 'b';
-          return nome_a.localeCompare(nome_b);
-        });
+      next: response => {
         this.objetos = response;
         this.numero_registros = response.length;
       },
-      error: (response) => {
+      error: response => {
         console.log(response);
-      },
-      complete: () => {
-        if (event) {
-          console.log(event);
-          let poderes: Poder[] = [];
-          this.objetos.forEach((element) => {
-            if (element.id_deuses?.some((id) => id === Number(event))) {
-              poderes.push(element);
-            }
-          });
-          this.objetos = poderes;
-          this.numero_registros = this.objetos.length;
-        }
-        this.dataSource = new MatTableDataSource(this.objetos);
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
       },
     });
   }
 
-  seExibeDeuses(){
+  seExibeDeuses() {
     return this.form.value.tipo === TipoPoder.PODER_CONCEDIDO;
   }
-
-  // selecaoDeuses(event: any): void {
-  //   this.consultarPoderesConcedido(event);
-  // }
-
-  // consultarPoderesConcedido(event: any) {
-  //   console.log(this.form.value);
-  //   let filtro = this.form.value;
-  //   filtro.tipo = TipoPoder.CONCEDIDO;
-  //   if (filtro.nome) {
-  //     // regex - in-memory-web-api
-  //     filtro.nome = '^' + filtro.nome;
-  //   }
-  //   this.service.listar(filtro).subscribe({
-  //     next: (response) => {
-  //       this.poderes_concedido = response;
-  //       this.numero_registros_concedido = response.length;
-  //     },
-  //     error: (response) => {
-  //       console.log(response);
-  //     },
-  //     complete: () => {
-  //       if(event){
-  //         let poderes : Poder[] = [];
-  //         this.poderes_concedido.forEach(
-  //           (element) => {
-  //               if(element.id_deuses?.includes(Number(event))) {
-  //                 poderes.push(element);
-  //               }
-  //           }
-  //         );
-  //         this.poderes_concedido = poderes;
-  //         this.numero_registros_concedido = this.poderes_concedido.length;
-  //       }
-  //     }
-  //   });
-
-  // }
-
-  seleciona(objeto: Poder) {
-    this.objeto = objeto;
-  }
-
-  limparFiltros() {
-    this.form.reset();
-    this.consultar(null);
-  }
-
-  nomeDeuses(deuses?: Deus[]): string {
-    return deuses ? deuses.map((deus) => deus.nome).join(' ') : '';
-  }
-
-  /**
-   *
-   * DAQUI PARA FRENTE É TUDO SOBRE CALCULO DE FICHA - PODER
-   *
-   */
-
-  @Input() poderSelecionado?: Poder;
-  @Input() seVeioFicha: boolean = false;
-  @Output() poderSelecionadoChange = new EventEmitter<Poder>();
 }

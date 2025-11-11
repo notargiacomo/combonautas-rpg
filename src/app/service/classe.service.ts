@@ -24,4 +24,8 @@ export class ClasseService extends AbstractService {
       'devotos',
     ]);
   }
+
+  getbyId(id: number | undefined) {
+    return this.http.get<any>(this.url + id);
+  }
 }
