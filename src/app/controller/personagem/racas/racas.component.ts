@@ -13,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TipoPoder } from '@app/enum/tipo.poder.enum';
 import { Raca } from '@app/model/raca';
@@ -58,7 +58,6 @@ export class RacasComponent implements OnInit {
   racas!: Raca[];
 
   numero_registros = 0;
-  dataSource = new MatTableDataSource<Raca>();
   form!: FormGroup;
 
   constructor(
@@ -75,8 +74,8 @@ export class RacasComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.reiniciaFormulario();
     this.consultar();
+    this.reiniciaFormulario();
   }
 
   ngAfterViewInit() {}
@@ -142,60 +141,5 @@ export class RacasComponent implements OnInit {
         console.log(response);
       },
     });
-
-    // this.racaService.listar(filtro).subscribe({
-    //   next: (response: any[]) => {
-    //     response.sort((a, b) => {
-    //       let nome_a = a.nome ? a.nome : 'a';
-    //       let nome_b = b.nome ? b.nome : 'b';
-    //       return nome_a.localeCompare(nome_b);
-    //     });
-
-    //     this.racas = response;
-    //     this.numero_registros = response.length;
-
-    //     this.racas.forEach(raca => {
-    //       this.poderService.listar({ id_raca: raca.id, tipo: TipoPoder.PODER_RACA }).subscribe({
-    //         next: (response: any[]) => {
-    //           response.sort((a, b) => {
-    //             let nome_a = a.nome ? a.nome : 'a';
-    //             let nome_b = b.nome ? b.nome : 'b';
-    //             return nome_a.localeCompare(nome_b);
-    //           });
-    //           response.forEach(poder => {
-    //             poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
-    //             if (poder.e_poder_magico) {
-    //               poder.descricao += '<i><b> e</b></i>';
-    //             }
-    //           });
-    //           raca.poderes = response;
-    //         },
-    //       });
-    //       this.poderService.listar({ id_raca: raca.id, tipo: TipoPoder.HABILIDADE_RACA }).subscribe({
-    //         next: (response: any[]) => {
-    //           response.sort((a, b) => {
-    //             let nome_a = a.nome ? a.nome : 'a';
-    //             let nome_b = b.nome ? b.nome : 'b';
-    //             return nome_a.localeCompare(nome_b);
-    //           });
-    //           response.forEach(poder => {
-    //             poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
-    //             if (poder.e_poder_magico) {
-    //               poder.descricao += '<i><b> e</b></i>';
-    //             }
-    //           });
-    //           raca.habilidades = response;
-    //         },
-    //       });
-    //     });
-    //     this.cdr.detectChanges();
-    //   },
-    //   error: (response: any[]) => {
-    //     console.log(response);
-    //   },
-    //   complete: () => {
-    //     this.dataSource = new MatTableDataSource(this.racas);
-    //   },
-    // });
   }
 }
