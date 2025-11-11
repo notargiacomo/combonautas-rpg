@@ -1,24 +1,22 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatInputModule } from '@angular/material/input';
-import { Poder } from '@app/model/poder';
-import { PoderService } from '@app/service/poder.service';
-import { MatTabsModule } from '@angular/material/tabs';
-import { TipoPoder } from '@app/enum/tipo.poder.enum';
-import { Deus } from '@app/model/deus';
-import { MatRadioModule } from '@angular/material/radio';
-import { DeusService } from '@app/service/deus.service';
-import { MatButtonModule } from '@angular/material/button';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { MatSort } from '@angular/material/sort';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { Deus } from '@app/model/deus';
+import { Poder } from '@app/model/poder';
+import { DeusService } from '@app/service/deus.service';
+import { PoderService } from '@app/service/poder.service';
 
 @Component({
   selector: 'app-poderes',
@@ -88,9 +86,5 @@ export class PoderesComponent {
         console.log(response);
       },
     });
-  }
-
-  seExibeDeuses() {
-    return this.form.value.tipo === TipoPoder.PODER_CONCEDIDO;
   }
 }
