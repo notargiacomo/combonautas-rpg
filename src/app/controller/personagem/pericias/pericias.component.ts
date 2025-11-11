@@ -1,39 +1,22 @@
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import {
-  ChangeDetectorRef,
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  FormsModule,
-  ReactiveFormsModule
-} from '@angular/forms';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridList, MatGridTile } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-import { Modificador } from '@app/enum/modificador.enum'; 
-import { Classe } from '@app/model/classe'; 
-import { Deus } from '@app/model/deus'; 
-import { Pericia } from '@app/model/pericia'; 
-import { PericiasService } from '@app/service/pericia.service'; 
-import { Atributo } from '@app/enum/atributo.enum'; 
+import { Modificador } from '@app/enum/modificador.enum';
+import { Pericia } from '@app/model/pericia';
+import { PericiaService } from '@app/service/pericia.service';
 
 @Component({
   selector: 'app-pericias',
@@ -53,42 +36,32 @@ import { Atributo } from '@app/enum/atributo.enum';
     MatSelectModule,
     NgFor,
     NgIf,
-    NgClass,
     MatTabsModule,
-],
+    MatGridList,
+    MatGridTile,
+  ],
   templateUrl: './pericias.component.html',
   styleUrl: './pericias.component.scss',
-  animations: [
-    trigger('detailExpand', [
-      state('collapsed,void', style({ height: '0px', minHeight: '0', maxHeight: '0' })),
-      state('expanded', style({ height: '*' })),
-      transition(
-        'expanded <=> collapsed',
-        animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')
-      ),
-    ]),
-  ],
 })
 export class PericiasComponent implements OnInit {
-  columnsToDisplay = ['nome'];
-  columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
-  expandedElement!: Pericia | null;
-  isExpandedRow = (index: number, row: any) => row === this.expandedElement;
+  isMobile = false;
+
   pericias!: Pericia[];
-  atributos = Object.values(Atributo);
-  
-  atributo = [-2, -1, 0, 1, 2, 3];
-  numero_registros = 0;
-  dataSource = new MatTableDataSource<Classe>();
   form!: FormGroup;
+  numero_registros = 0;
 
   bonus = Object.values(Modificador);
 
   constructor(
-    private readonly periciasService: PericiasService,
+    private readonly periciasService: PericiaService,
     private fb: FormBuilder,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private breakpointObserver: BreakpointObserver
   ) {
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      this.isMobile = result.matches;
+      console.log('É celular?', this.isMobile);
+    });
   }
 
   ngOnInit() {
@@ -96,70 +69,23 @@ export class PericiasComponent implements OnInit {
     this.consultar();
   }
 
-  isOdd(element: any): boolean {
-    const index = this.dataSource.data.indexOf(element);
-    return index % 2 !== 0; // Vai adicionar a classe zebra APENAS nas linhas ímpares
-  }
-
-  isExpanded(element: Deus) {
-    return this.expandedElement === element;
-  }
-
-  /** Toggles the expanded state of an element. */
-  toggle(element: Deus) {
-    this.expandedElement = this.isExpanded(element) ? null : element;
-  }
-
-  ngAfterViewInit() {
-    setTimeout(() => {
-      const linhas = document.querySelectorAll('tr.valorado');
-      linhas.forEach((linha, index) => {
-        if (index % 2 === 1) {
-          (linha as HTMLElement).style.backgroundColor = '#f2f2f2';
-        }
-      });
-    });
-  }
-
   private reiniciaFormulario() {
     this.form = this.fb.group({
       nome: [],
-      atributo: []
+      atributo: [],
     });
-  }
-
-  limparFiltros() {
-    this.reiniciaFormulario();
-    this.consultar();
   }
 
   consultar() {
     let filtro = this.form.value;
-  
     this.periciasService.listar(filtro).subscribe({
-      next: (response: any[]) => {
-        response.sort((a, b) => {
-          let nome_a = a.nome ? a.nome : 'a';
-          let nome_b = b.nome ? b.nome : 'b';
-          return nome_a.localeCompare(nome_b);
-        });
+      next: response => {
         this.pericias = response;
         this.numero_registros = response.length;
-        this.cdr.detectChanges();
       },
-
-      error: (response: any[]) => {
+      error: response => {
         console.log(response);
       },
-
-      complete: () => {
-        this.dataSource = new MatTableDataSource(this.pericias);
-      },
     });
-  }
-
-  selecaoAtributos(event: any): void {
-    this.form.controls['atributo'].setValue(event);
-    this.consultar();
   }
 }

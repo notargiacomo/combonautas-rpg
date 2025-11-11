@@ -1,32 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
-import { ComplicacaoData } from '../data/complicacao.data';
-import { Complicacao } from '../model/complicacao';
+import { Complicacao } from '@app/model/complicacao';
+import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
-import { ClasseService } from './classe.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ComplicacaoService extends AbstractService{
-
-  constructor(private readonly complicacaoData: ComplicacaoData, private readonly http: HttpClient, private readonly classeService: ClasseService) {
+export class ComplicacaoService extends AbstractService {
+  constructor(private readonly http: HttpClient) {
     super('complicacao/');
   }
 
-  listar(filtro:any): Observable<Complicacao[]> {
-    return this.http.get<Complicacao[]>(this.url,{params:this.removeBlankAttributes(filtro)})
-        .pipe(map(resultado => {
-          resultado.forEach((complicacao) => {
-            this.classeService.getbyId(complicacao.classe?.id).subscribe({
-              next: (classe) => {
-                complicacao.classe = classe
-              }
-            });
-          });
-          return resultado;
-    
-        }));
+  listar(filtro: any): Observable<Complicacao[]> {
+    let listas = this.http.get<Complicacao[]>(this.url);
+    return this.filtrar(filtro, listas, ['nome', 'descricao']);
   }
 }

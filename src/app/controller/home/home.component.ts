@@ -17,8 +17,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { Router } from '@angular/router';
 // import { ButtonModule } from 'primeng/button';
 // import { DialogModule } from 'primeng/dialog';
-import { MagiaService } from '@app/service/magia.service'; 
-import { PericiasService } from '@app/service/pericia.service';
+import { MagiaService } from '@app/service/magia.service';
+import { PericiaService } from '@app/service/pericia.service';
 
 @Component({
   selector: 'app-home',
@@ -45,16 +45,13 @@ import { PericiasService } from '@app/service/pericia.service';
   styleUrl: './home.component.scss',
   // changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
-      trigger('detailExpand', [
-        state('collapsed,void', style({ height: '0px', minHeight: '0' })),
-        state('expanded', style({ height: '*' })),
-        transition(
-          'expanded <=> collapsed',
-          animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')
-        ),
-      ]),
-    ],
-  })
+    trigger('detailExpand', [
+      state('collapsed,void', style({ height: '0px', minHeight: '0' })),
+      state('expanded', style({ height: '*' })),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
+})
 export class HomeComponent {
   // pericias: Pericia[] = [];
   // personagens!: Personagem[];
@@ -70,7 +67,7 @@ export class HomeComponent {
   // displayedColumnsEmpunhados: string[] = ['nome', 'formula'];
   // displayedColumnsWithExpandEmpunhados = [...this.displayedColumnsEmpunhados, 'expand'];
   // isExpandedRowEmpunhados = (index: number, row: any) => row === this.expandedElementEmpunhados;
-  
+
   // displayedColumnsVestido: string[] = ['equipamento', 'formula'];
   // displayedColumnsCarregados: string[] = ['equipamento','quantidade','espaco'];
   // displayedColumnsItens: string[] = ['item', 'descricao'];
@@ -92,7 +89,7 @@ export class HomeComponent {
 
   constructor(
     private readonly router: Router,
-    private readonly servicoPericia: PericiasService,
+    private readonly servicoPericia: PericiaService,
     private readonly servicoMagia: MagiaService,
     private cdRef: ChangeDetectorRef
   ) {}
@@ -100,9 +97,7 @@ export class HomeComponent {
   ngOnInit() {
     // this.personagens = [];
     // this.personagem = new Personagem(this.cdRef);
-
     // // this.personagem.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria({origem: 'Engenhosidade', atributo: 'Inteligência', condicao:['2 PM'], ativo: false});
-
     // this.servicoPericia.listar(null).subscribe({
     //   next: (response) => {
     //     this.pericias = response;
@@ -158,11 +153,11 @@ export class HomeComponent {
   //         })
 
   //         this.dsEmpunhados = new MatTableDataSource(this.personagem.posse!.equipamentos_empunhados);
-          
+
   //         this.dataSourcePoderesPersonagens = new MatTableDataSource(
   //           this.personagem.poderes
   //         );
-  
+
   //         this.personagem.recalculaAtributos();
   //       }
   //     } else {
@@ -211,5 +206,4 @@ export class HomeComponent {
   //   this.personagem.atualizaBonusExtraPericia(nome, [{origem: condicao.origem, bonus: condicao.bonus, condicao:[], ativo: true, atributo: condicao.atributo}]);
   //   this.dsPericias = new MatTableDataSource(this.personagem.pericias);
   // }
-
 }

@@ -1,94 +1,87 @@
-<div class="container">
-  <div class="row mt-4">
-    <mat-card class="card-padrao">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2><b>COMPLICAÇÕES</b></h2>
-          <hr />
-        </div>
+<form [formGroup]="form">
+  <mat-card class="cartao">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2><b>COMPLICAÇÕES</b></h2>
+        <hr />
       </div>
-      <form [formGroup]="form">
-        <div class="row" >
-          <div class="col-sm-6 mt-4">
-            <mat-form-field class="form-field">
-              <mat-label>Complicação</mat-label>
-              <input formControlName="nome"
-                matInput
-                type="text"
-                (keyup)="consultar()"
-              />
-            </mat-form-field>
-          </div>
-        </div>
-      </form>
+    </div>
+    <div class="row">
       <div class="col-sm-12 mt-4">
-        <div class="d-flex justify-content-end">
-          <b>Número de Registros: {{ numero_registros }}</b>
-        </div>
+        <mat-form-field class="form-field text-field-formulario-edicao">
+          <mat-label>Complicação</mat-label>
+          <input formControlName="nome" matInput type="text" (keyup)="consultar()" />
+        </mat-form-field>
       </div>
-      <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
-        <mat-grid-tile *ngFor="let complicacao of complicacoes">
-          <mat-card class="card-padrao">
-            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-              {{complicacao.nome}}
-            </mat-card-title>
-            <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-              <div class="content">
-                <div class="row">
-                  <div class="col-sm-6">
-                    {{complicacao.classe?.nome}} 
-                  </div>
-                  <div class="col-sm-6 d-flex justify-content-end">
-                    {{complicacao.e_restritiva ? 'Restritiva †':''}}
-                  </div>
+    </div>
+  </mat-card>
+  <mat-card class="cartao">
+    <div class="col-sm-12 mt-4">
+      <div class="d-flex justify-content-end">
+        <b>Número de Registros: {{ numero_registros }}</b>
+      </div>
+    </div>
+    <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
+      <mat-grid-tile *ngFor="let complicacao of complicacoes">
+        <mat-card class="card-game">
+          <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+            {{ complicacao.nome }}
+          </mat-card-title>
+          <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+            <div class="content">
+              <div class="row">
+                <div class="col-sm-6">
+                  {{ complicacao.classe?.nome }}
                 </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <hr class="" />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 mt-4">
-                    {{complicacao.descricao}}
-                  </div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ complicacao.e_restritiva ? 'Restritiva †' : '' }}
                 </div>
               </div>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-      <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350">
-        <mat-grid-tile *ngFor="let complicacao of complicacoes">
-          <mat-card class="card-padrao">
-            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-              {{complicacao.nome}}
-            </mat-card-title>
-            <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-              <div class="content">
-                <div class="row">
-                  <div class="col-sm-6">
-                    {{complicacao.classe?.nome}} 
-                  </div>
-                  <div class="col-sm-6 d-flex justify-content-end">
-                    {{complicacao.e_restritiva ? 'Restritiva †':''}}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <hr class="" />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 mt-4">
-                    {{complicacao.descricao}}
-                  </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr class="" />
                 </div>
               </div>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </mat-card>
-  </div>
-  </div>
-  
+              <div class="row">
+                <div class="col-sm-12 mt-4">
+                  {{ complicacao.descricao }}
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350" gutterSize="10px">
+      <mat-grid-tile *ngFor="let complicacao of complicacoes">
+        <mat-card class="card-game">
+          <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+            {{ complicacao.nome }}
+          </mat-card-title>
+          <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+            <div class="content">
+              <div class="row">
+                <div class="col-sm-6">
+                  {{ complicacao.classe?.nome }}
+                </div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ complicacao.e_restritiva ? 'Restritiva †' : '' }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr class="" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 mt-4">
+                  {{ complicacao.descricao }}
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
+</form>
