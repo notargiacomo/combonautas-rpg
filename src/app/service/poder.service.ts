@@ -70,6 +70,6 @@ export class PoderService extends AbstractService {
       })
     );
 
-    return this.filtrar(filtro, listas, ['nome', 'tipo', 'referencias', 'descricao']);
+    return this.filtrar(filtro, listas, ['nome', 'tipo', 'referencias']);
   }
 }
