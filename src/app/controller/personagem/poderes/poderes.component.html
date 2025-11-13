@@ -80,17 +80,15 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" disabled>
+                <button class="btn btn-sm btn-outline-secondary" disabled>
                   {{ objeto.tipo?.toUpperCase() }}
                 </button>
               </div>
             </div>
-            <div class="content">
-              <div class="row">
-                <div class="col-sm-12 mt-2">
-                  <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                    <div class="text-justify" [innerHTML]="objeto.descricao"></div>
-                  </div>
+            <div class="row">
+              <div class="col-sm-12 mt-2">
+                <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                  <div class="text-justify" [innerHTML]="objeto.descricao"></div>
                 </div>
               </div>
             </div>
