@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { forkJoin, map, Observable, switchMap } from 'rxjs';
+import { TipoPoder } from '@app/enum/tipo.poder.enum';
+import { forkJoin, map, Observable, of, switchMap } from 'rxjs';
 import { Raca } from '../model/raca';
 import { AbstractService } from './abstract.service';
 import { PoderService } from './poder.service';
-import { Poder } from '@app/model/poder';
 
 @Injectable({
   providedIn: 'root',
@@ -41,69 +41,25 @@ export class RacaService extends AbstractService {
   }
 
   consult(filtro: any, searchColumn: string[]): Observable<Raca[]> {
-    let lista = this.http.get<Raca[]>(this.url);
-    lista = this.carregarHistoria(lista);
-    lista = this.carregaHabilidades(lista);
-    lista = this.carregaPoderesRaciais(lista);
-
-    return this.filtrar(filtro, lista, searchColumn).pipe(
-      switchMap((racas: Raca[]) => {
-        const requests = racas.map(raca =>
-          this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
-            map(historia => {
-              raca.historia = historia;
-              return raca;
-            })
-          )
-        );
-
-        return forkJoin(requests);
-      })
-    );
-  }
-
-  carregarHistoria(lista: Observable<Raca[]>) {
-    return lista.pipe(
-      switchMap((racas: Raca[]) => {
-        const requests = racas.map(raca =>
-          this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
-            map(historia => {
-              raca.historia = historia;
-              return raca;
-            })
-          )
-        );
-
-        return forkJoin(requests);
-      })
-    );
-  }
-
-  carregaHabilidades(lista: Observable<Raca[]>): Observable<Raca[]> {
-    return lista.pipe(
+    return this.http.get<Raca[]>(this.url).pipe(
       switchMap(racas =>
-        this.poderService.listar({}).pipe(
-          map(poderes =>
-            racas.map(raca => ({
+        forkJoin({
+          poderes: this.poderService.listar({}),
+          historias: forkJoin(
+            racas.map(r => this.http.get(`assets/doc/${r.nome_arquivo_historia}.txt`, { responseType: 'text' }))
+          ),
+        }).pipe(
+          map(({ poderes, historias }) => {
+            return racas.map((raca, index) => ({
               ...raca,
-              habilidades: poderes.filter(p => raca.habilidades?.some(h => h.id === p.id)),
-            }))
-          )
-        )
-      )
-    );
-  }
-
-  carregaPoderesRaciais(lista: Observable<Raca[]>): Observable<Raca[]> {
-    return lista.pipe(
-      switchMap(racas =>
-        this.poderService.listar({}).pipe(
-          map(poderes =>
-            racas.map(raca => ({
-              ...raca,
-              poderes: poderes.filter(p => p.id_raca?.includes(raca.id)),
-            }))
-          )
+              historia: historias[index],
+              habilidades: poderes.filter(
+                p => raca.habilidades?.some(h => h.id === p.id) && p.tipo === TipoPoder.HABILIDADE_RACA
+              ),
+              poderes: poderes.filter(p => p.id_raca?.includes(raca.id) && p.tipo === TipoPoder.PODER_RACA),
+            }));
+          }),
+          switchMap(racasFinal => this.filtrar(filtro, of(racasFinal), searchColumn))
         )
       )
     );

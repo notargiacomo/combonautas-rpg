@@ -1,242 +1,108 @@
-<form [formGroup]="form">
-  <mat-card class="cartao">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2><b>CLASSES</b></h2>
-        <hr />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <mat-form-field class="form-field text-field-formulario-edicao">
-          <mat-label>Classe</mat-label>
-          <input formControlName="nome" matInput type="text" (keyup)="consultar()" />
-        </mat-form-field>
-      </div>
-    </div>
-  </mat-card>
-  <mat-card class="cartao">
-    <div class="row">
-      <div class="d-flex justify-content-end">
-        <b>Número de Registros: {{ numero_registros }}</b>
-      </div>
-    </div>
-    <br />
-    <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="900" gutterSize="10px">
-      <mat-grid-tile *ngFor="let classe of classes">
-        <mat-card class="card-game">
-          <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-            {{ classe.nome }}
-          </mat-card-title>
-          <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-            <div class="row mt-1 mb-2">
-              <div class="col-sm-12 mt-1 d-flex justify-content-end">
-                {{ classe.referencias + ', pag. ' + classe.paginas }}
+<app-card-search
+  name="Classes"
+  [service]="classesService"
+  [searchColumn]="['nome', 'descricao']"
+  [colsGrid]="2"
+  [rowHeight]="900"
+  gutterSizeGrid="10px">
+  <ng-template let-item>
+    <mat-card class="card-game">
+      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+        {{ item.nome }}
+      </mat-card-title>
+      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+        <div class="row mt-1 mb-2">
+          <div class="col-sm-12 mt-1 d-flex justify-content-end">
+            {{ item.referencias + ', pag. ' + item.paginas }}
+          </div>
+        </div>
+        <mat-tab-group>
+          <mat-tab label="Imagem">
+            <img [src]="item.imagem" [alt]="item.nome" />
+          </mat-tab>
+          <mat-tab label="Características">
+            <div class="content mt-2">
+              <div class="row">
+                <div class="col-sm-12 mt-4">
+                  <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                    <div class="text-justify" [innerHTML]="item.descricao_classe"></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <mat-tab-group>
-              <mat-tab label="Imagem">
-                <img [src]="classe.imagem" [alt]="classe.nome" />
-              </mat-tab>
-              <mat-tab label="Características">
-                <div class="content mt-2">
-                  <div class="row">
-                    <div class="col-sm-12 mt-4">
-                      <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                        <div class="text-justify" [innerHTML]="classe.descricao_classe"></div>
-                      </div>
-                    </div>
-                  </div>
+          </mat-tab>
+          <mat-tab label="Habilidades">
+            <div class="row mt-2">
+              <h5>Habilidades de Classe</h5>
+              <p>
+                Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma. Segue
+                as habilidades de {{ item.nome }}.
+              </p>
+              <p>(ps: Habilidades Mágicas são marcadas com o símbolo: ✨)</p>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr />
                 </div>
-              </mat-tab>
-              <mat-tab label="Habilidades">
-                <div class="row">
-                  <h5>Habilidades de Classe</h5>
-                  <p>
-                    Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma.
-                    Segue as habilidades de {{ classe.nome }}.
-                  </p>
-                  <p>
-                    (ps: Habilidades Mágicas são marcadas com o símbolo:
-                    <i><b>e</b></i>
-                    .)
-                  </p>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="col-sm-12 text-justify">
-                    <div
-                      *ngFor="let habilidade of classe.habilidades"
-                      style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                      <div class="col-sm-12 text-justify" [innerHTML]="habilidade.descricao"></div>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-sm-12">
+                <div
+                  *ngFor="let poder of item.habilidades"
+                  style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                  <b>{{ poder.nome }}</b>
+                  <div class="text-justify" [innerHTML]="poder.descricao"></div>
                 </div>
-              </mat-tab>
-              <mat-tab label="Poderes" *ngIf="!classe.sem_poderes">
-                <div class="row">
-                  <h5>Poderes de Classe</h5>
-                  <p>
-                    (ps: Poderes Mágicos são marcados com o símbolo:
-                    <i><b>e</b></i>
-                    .)
-                  </p>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div
-                      *ngFor="let poderes of classe.poderes!"
-                      style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                      <div class="text-justify" [innerHTML]="poderes.descricao"></div>
-                    </div>
-                  </div>
-                </div>
-              </mat-tab>
-              <mat-tab *ngIf="classe.ha_informacoes_adicionais" label="Info.">
-                <div class="row">
-                  <div class="col-sm-12 text-justify" [innerHTML]="classe.descricao_informacoes"></div>
-                </div>
-              </mat-tab>
-              <mat-tab *ngIf="classe.ha_complicacoes" label="Complicações">
-                <div class="row">
-                  <h5>Complicações</h5>
-                  <p>
-                    Complicações são restrições e penalidades com as quais seu personagem precisa lidar. Quando você
-                    cria seu personagem, pode escolher uma complicação para ele (e apenas uma). Se fizer isso, recebe um
-                    poder geral extra. Você é livre para escolher o poder, mas deve preencher seus pré-requisitos.
-                  </p>
-                  <p>
-                    (PS:Certas complicações restringem as ações de um herói, seja por serem uma limitação de sua
-                    personalidade, seja por serem um código ou voto que ele decidiu seguir. Tais complicações vêm
-                    acompanhadas do símbolo
-                    <b>†</b>
-                    ).
-                  </p>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="col-sm-12 text-justify" [innerHTML]="classe.descricao_complicacoes"></div>
-                </div>
-              </mat-tab>
-            </mat-tab-group>
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
-    <mat-grid-list *ngIf="!isMobile" cols="2" rowHeight="900" gutterSize="10px">
-      <mat-grid-tile *ngFor="let classe of classes">
-        <mat-card class="card-game">
-          <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-            {{ classe.nome }}
-          </mat-card-title>
-          <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-            <div class="row mt-1 mb-2">
-              <div class="col-sm-12 mt-1 d-flex justify-content-end">
-                {{ classe.referencias + ', pag. ' + classe.paginas }}
               </div>
             </div>
-            <mat-tab-group>
-              <mat-tab label="Imagem">
-                <img [src]="classe.imagem" [alt]="classe.nome" />
-              </mat-tab>
-              <mat-tab label="Características">
-                <div class="content mt-2">
-                  <div class="row">
-                    <div class="col-sm-12 mt-4">
-                      <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                        <div class="text-justify" [innerHTML]="classe.descricao_classe"></div>
-                      </div>
-                    </div>
-                  </div>
+          </mat-tab>
+          <mat-tab label="Poderes" *ngIf="item.poderes && item.poderes.length > 0">
+            <div class="row">
+              <h5>Poderes de Classe</h5>
+              <p>(ps: Poderes Mágicos são marcados com o símbolo:✨)</p>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr />
                 </div>
-              </mat-tab>
-              <mat-tab label="Habilidades">
-                <div class="row">
-                  <h5>Habilidades de Classe</h5>
-                  <p>
-                    Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma.
-                    Segue as habilidades de {{ classe.nome }}.
-                  </p>
-                  <p>
-                    (ps: Habilidades Mágicas são marcadas com o símbolo:
-                    <i><b>e</b></i>
-                    .)
-                  </p>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="col-sm-12 text-justify">
-                    <div
-                      *ngFor="let habilidade of classe.habilidades"
-                      style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                      <div class="col-sm-12 text-justify" [innerHTML]="habilidade.descricao"></div>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-sm-12">
+                <div
+                  *ngFor="let poder of item.poderes"
+                  style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                  <b>{{ poder.nome }}</b>
+                  <div class="text-justify" [innerHTML]="poder.descricao"></div>
                 </div>
-              </mat-tab>
-              <mat-tab label="Poderes" *ngIf="!classe.sem_poderes">
-                <div class="row">
-                  <h5>Poderes de Classe</h5>
-                  <p>
-                    (ps: Poderes Mágicos são marcados com o símbolo:
-                    <i><b>e</b></i>
-                    .)
-                  </p>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div
-                      *ngFor="let poderes of classe.poderes!"
-                      style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                      <div class="text-justify" [innerHTML]="poderes.descricao"></div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab *ngIf="item.ha_informacoes_adicionais" label="Info.">
+            <div class="row">
+              <div class="col-sm-12 text-justify" [innerHTML]="item.descricao_informacoes"></div>
+            </div>
+          </mat-tab>
+          <mat-tab *ngIf="item.ha_complicacoes" label="Complicações">
+            <div class="row">
+              <h5>Complicações</h5>
+              <p>
+                Complicações são restrições e penalidades com as quais seu personagem precisa lidar. Quando você cria
+                seu personagem, pode escolher uma complicação para ele (e apenas uma). Se fizer isso, recebe um poder
+                geral extra. Você é livre para escolher o poder, mas deve preencher seus pré-requisitos.
+              </p>
+              <p>
+                (PS:Certas complicações restringem as ações de um herói, seja por serem uma limitação de sua
+                personalidade, seja por serem um código ou voto que ele decidiu seguir. Tais complicações vêm
+                acompanhadas do símbolo
+                <b>†</b>
+                ).
+              </p>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr />
                 </div>
-              </mat-tab>
-              <mat-tab *ngIf="classe.ha_informacoes_adicionais" label="Info.">
-                <div class="row">
-                  <div class="col-sm-12 text-justify" [innerHTML]="classe.descricao_informacoes"></div>
-                </div>
-              </mat-tab>
-              <mat-tab *ngIf="classe.ha_complicacoes" label="Complicações">
-                <div class="row">
-                  <h5>Complicações</h5>
-                  <p>
-                    Complicações são restrições e penalidades com as quais seu personagem precisa lidar. Quando você
-                    cria seu personagem, pode escolher uma complicação para ele (e apenas uma). Se fizer isso, recebe um
-                    poder geral extra. Você é livre para escolher o poder, mas deve preencher seus pré-requisitos.
-                  </p>
-                  <p>
-                    (PS:Certas complicações restringem as ações de um herói, seja por serem uma limitação de sua
-                    personalidade, seja por serem um código ou voto que ele decidiu seguir. Tais complicações vêm
-                    acompanhadas do símbolo
-                    <b>†</b>
-                    ).
-                  </p>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <hr />
-                    </div>
-                  </div>
-                  <div class="col-sm-12 text-justify" [innerHTML]="classe.descricao_complicacoes"></div>
-                </div>
-              </mat-tab>
-            </mat-tab-group>
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-card>
-</form>
+              </div>
+              <div class="col-sm-12 text-justify" [innerHTML]="item.descricao_complicacoes"></div>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</app-card-search>

@@ -1,7 +1,7 @@
 <app-card-search
   name="Raças"
   [service]="racaService"
-  [searchColumn]="['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descrição', 'devotos']"
+  [searchColumn]="['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'devotos']"
   [colsGrid]="2"
   [rowHeight]="900"
   gutterSizeGrid="10px">
@@ -27,13 +27,13 @@
                   <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
                     <div class="text-justify" [innerHTML]="item.descricao"></div>
                   </div>
-                  <div
-                    *ngFor="let poder of item.habilidades"
-                    style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                    <p>
+                  <div class="col-sm-12">
+                    <div
+                      *ngFor="let poder of item.habilidades"
+                      style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
                       <b>{{ poder.nome }}</b>
-                      {{ poder.descricao }}
-                    </p>
+                      <div class="text-justify" [innerHTML]="poder.descricao"></div>
+                    </div>
                   </div>
                   <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
                     <b>Longevidade:</b>
@@ -58,10 +58,8 @@
                   <div
                     *ngFor="let poder of item.poderes"
                     style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                    <p>
-                      <b>{{ poder.nome }}</b>
-                      {{ poder.descricao }}
-                    </p>
+                    <b>{{ poder.nome }}</b>
+                    <div class="text-justify" [innerHTML]="poder.descricao"></div>
                   </div>
                 </div>
               </div>

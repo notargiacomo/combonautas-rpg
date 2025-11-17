@@ -8,12 +8,12 @@ import { RegrasComponent } from './controller/regras/regras.component';
 import { CalculoDesafiosComponent } from './controller/mestre/calculo-desafios/calculo-desafios.component';
 import { PersonagemAleatorioComponent } from './controller/utilitarios/personagem-aleatorio/personagem-aleatorio.component';
 import { OrigensComponent } from './controller/personagem/origens/origens.component';
-import { ClassesComponent } from './controller/personagem/classes/classes.component';
 import { PericiasComponent } from './controller/personagem/pericias/pericias.component';
 import { DeusesComponent } from './controller/personagem/deuses/deuses.component';
 import { ComplicacoesComponent } from './controller/personagem/complicacoes/complicacoes.component';
 import { PoderesComponent } from './controller/personagem/poderes/poderes.component';
 import { TerrasDespedacadasComponent } from './terras-despedacadas/terras-despedacadas.component';
+import { ClassesComponent } from './controller/personagem/classes/classes.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
