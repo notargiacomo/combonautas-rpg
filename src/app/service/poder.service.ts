@@ -72,4 +72,8 @@ export class PoderService extends AbstractService {
 
     return this.filtrar(filtro, listas, ['nome', 'tipo', 'referencias']);
   }
+
+  findById(id: number): Observable<Poder | undefined> {
+    return this.http.get<Poder[]>(this.url).pipe(map(lista => lista.find(p => p.id === id)));
+  }
 }

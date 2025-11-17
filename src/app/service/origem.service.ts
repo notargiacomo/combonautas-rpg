@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable, switchMap } from 'rxjs';
+import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 import { Origem } from '../model/origem';
 
@@ -15,5 +15,10 @@ export class OrigemService extends AbstractService {
   listar(filtro: any): Observable<Origem[]> {
     let listas = this.http.get<Origem[]>(this.url);
     return this.filtrar(filtro, listas, ['nome', 'regiao', 'descricao', 'referencias']);
+  }
+
+  consult(filtro: any, searchColumn: string[]): Observable<Origem[]> {
+    let listas = this.http.get<Origem[]>(this.url);
+    return this.filtrar(filtro, listas, searchColumn);
   }
 }

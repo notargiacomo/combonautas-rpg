@@ -1,0 +1,37 @@
+<form [formGroup]="form">
+  <mat-card>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>
+          <b>{{ name.toUpperCase() }}</b>
+        </h2>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <mat-form-field class="text-field-formulario-edicao">
+          <mat-label>Procure por {{ searchColumn.join(', ') }}</mat-label>
+          <input formControlName="name" matInput type="text" (keyup)="consult()" />
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-card>
+  <mat-card>
+    <div class="row mb-2">
+      <div class="d-flex justify-content-end">
+        <b>Número de Registros: {{ records_number }}</b>
+      </div>
+    </div>
+    <mat-grid-list *ngIf="isMobile" cols="1" [rowHeight]="rowHeight" [gutterSize]="gutterSizeGrid">
+      <mat-grid-tile *ngFor="let object of objects">
+        <ng-container *ngTemplateOutlet="template; context: { $implicit: object }"></ng-container>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list *ngIf="!isMobile" [cols]="colsGrid" [rowHeight]="rowHeight" [gutterSize]="gutterSizeGrid">
+      <mat-grid-tile *ngFor="let object of objects">
+        <ng-container *ngTemplateOutlet="template; context: { $implicit: object }"></ng-container>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
+</form>

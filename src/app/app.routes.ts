@@ -13,21 +13,26 @@ import { PericiasComponent } from './controller/personagem/pericias/pericias.com
 import { DeusesComponent } from './controller/personagem/deuses/deuses.component';
 import { ComplicacoesComponent } from './controller/personagem/complicacoes/complicacoes.component';
 import { PoderesComponent } from './controller/personagem/poderes/poderes.component';
+import { TerrasDespedacadasComponent } from './terras-despedacadas/terras-despedacadas.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'regras/condicoes', component: CondicoesComponent },
   { path: 'regras/acoes', component: AcoesComponent },
   { path: 'regras/regras', component: RegrasComponent },
+
   { path: 'mestre/calculo-desafios', component: CalculoDesafiosComponent },
   { path: 'mestre/tabela-geracao-tesouros', component: TabelaGeracaoTesourosComponent },
+
   { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent },
+
   { path: 'personagem/racas', component: RacasComponent },
   { path: 'personagem/origens', component: OrigensComponent },
   { path: 'personagem/classes', component: ClassesComponent },
-
   { path: 'personagem/pericias', component: PericiasComponent },
   { path: 'personagem/deuses', component: DeusesComponent },
   { path: 'personagem/complicacoes', component: ComplicacoesComponent },
   { path: 'personagem/poderes', component: PoderesComponent },
+
+  { path: 'terras-despedacadas', component: TerrasDespedacadasComponent },
 ];
