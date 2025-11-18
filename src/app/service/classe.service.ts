@@ -10,10 +10,7 @@ import { PoderService } from './poder.service';
   providedIn: 'root',
 })
 export class ClasseService extends AbstractService {
-  constructor(
-    private readonly http: HttpClient,
-    private readonly poderService: PoderService
-  ) {
+  constructor(private readonly http: HttpClient) {
     super('classe/');
   }
 
@@ -27,21 +24,6 @@ export class ClasseService extends AbstractService {
   }
 
   consult(filtro: any, searchColumn: string[]): Observable<Classe[]> {
-    return this.http.get<Classe[]>(this.url).pipe(
-      switchMap(classes =>
-        forkJoin({
-          poderes: this.poderService.listar({}),
-        }).pipe(
-          map(({ poderes }) => {
-            return classes.map(classe => ({
-              ...classe,
-              habilidades: poderes.filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.HABILIDADE_CLASSE),
-              poderes: poderes.filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.PODER_CLASSE),
-            }));
-          }),
-          switchMap(racasFinal => this.filtrar(filtro, of(racasFinal), searchColumn))
-        )
-      )
-    );
+    return this.filtrar(filtro, this.http.get<Classe[]>(this.url), searchColumn);
   }
 }

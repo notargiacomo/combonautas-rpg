@@ -1,68 +1,16 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatInputModule } from '@angular/material/input';
-import { Complicacao } from '@app/model/complicacao';
+import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
+import { CardSearchComponent } from '@app/components/card-search/card-search.component';
 import { ComplicacaoService } from '@app/service/complicacao.service';
 
 @Component({
-  selector: 'app-complicacoes',
-  imports: [
-    MatDividerModule,
-    MatCardModule,
-    MatGridListModule,
-    NgFor,
-    MatInputModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgIf,
-  ],
+  selector: 'app-deuses',
+  standalone: true,
+  imports: [CardSearchComponent, MatCard, MatCardTitle, MatCardContent, NgIf],
   templateUrl: './complicacoes.component.html',
   styleUrl: './complicacoes.component.scss',
 })
 export class ComplicacoesComponent {
-  isMobile = false;
-
-  complicacoes!: Complicacao[];
-  form!: FormGroup;
-  numero_registros = 0;
-
-  constructor(
-    private readonly service: ComplicacaoService,
-    private fb: FormBuilder,
-    private breakpointObserver: BreakpointObserver
-  ) {
-    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
-      this.isMobile = result.matches;
-      console.log('É celular?', this.isMobile);
-    });
-  }
-
-  ngOnInit() {
-    this.reiniciaFormulario();
-    this.consultar();
-  }
-
-  private reiniciaFormulario() {
-    this.form = this.fb.group({
-      nome: [],
-    });
-  }
-
-  consultar() {
-    let filtro = this.form.value;
-    this.service.listar(filtro).subscribe({
-      next: response => {
-        this.complicacoes = response;
-        this.numero_registros = response.length;
-      },
-      error: response => {
-        console.log(response);
-      },
-    });
-  }
+  constructor(readonly complicacoesService: ComplicacaoService) {}
 }

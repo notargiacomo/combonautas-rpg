@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { CardSearchComponent } from '@app/components/card-search/card-search.component';
+import { ClasseFacadeService } from '@app/service/classe.facade.service';
 import { ClasseService } from '@app/service/classe.service';
 
 @Component({
@@ -13,5 +14,5 @@ import { ClasseService } from '@app/service/classe.service';
   styleUrl: './classes.component.scss',
 })
 export class ClassesComponent {
-  constructor(readonly classesService: ClasseService) {}
+  constructor(readonly classesService: ClasseFacadeService) {}
 }

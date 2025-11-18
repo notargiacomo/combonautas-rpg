@@ -14,19 +14,16 @@
         <div class="content">
           <div class="row mt-4">
             <div class="col-sm-12">
-              <button class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" disabled>
+              <button class="btn btn-sm btn-outline-secondary" disabled>
                 {{ item.atributo.toUpperCase() }}
               </button>
-              <button
-                *ngIf="item.temPenalidadeArmadura"
-                class="btn btn-sm btn-outline-secondary ms-2 botao-ficha"
-                disabled>
+              <button *ngIf="item.temPenalidadeArmadura" class="btn btn-sm btn-outline-secondary" disabled>
                 PENALIDADE DE ARMADURA
               </button>
-              <button *ngIf="item.exigeTreinamento" class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" disabled>
+              <button *ngIf="item.exigeTreinamento" class="btn btn-sm btn-outline-secondary" disabled>
                 EXIGE TREINAMENTO
               </button>
-              <button *ngIf="item.exigeFerramenta" class="btn btn-sm btn-outline-secondary ms-2 botao-ficha" disabled>
+              <button *ngIf="item.exigeFerramenta" class="btn btn-sm btn-outline-secondary" disabled>
                 EXIGE FERRAMENTA
               </button>
             </div>

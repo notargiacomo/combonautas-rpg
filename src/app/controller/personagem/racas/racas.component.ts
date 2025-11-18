@@ -1,9 +1,9 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
-import { CardSearchComponent } from '@app/components/card-search/card-search.component';
-import { RacaService } from '@app/service/raca.service';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
-import { NgFor } from '@angular/common';
+import { CardSearchComponent } from '@app/components/card-search/card-search.component';
+import { RacaFacadeService } from '@app/service/raca.facade.service';
 
 @Component({
   selector: 'app-racas',
@@ -13,5 +13,5 @@ import { NgFor } from '@angular/common';
   styleUrl: './racas.component.scss',
 })
 export class RacasComponent {
-  constructor(readonly racaService: RacaService) {}
+  constructor(readonly racaService: RacaFacadeService) {}
 }

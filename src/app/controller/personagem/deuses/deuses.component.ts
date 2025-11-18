@@ -2,8 +2,8 @@ import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { CardSearchComponent } from '@app/components/card-search/card-search.component';
-import { DeusService } from '@app/service/deus.service';
 import { MatTabGroup, MatTab } from '@angular/material/tabs';
+import { DeusFacadeService } from '@app/service/deus.facade.service';
 
 @Component({
   selector: 'app-deuses',
@@ -13,5 +13,5 @@ import { MatTabGroup, MatTab } from '@angular/material/tabs';
   styleUrl: './deuses.component.scss',
 })
 export class DeusesComponent {
-  constructor(readonly deusesService: DeusService) {}
+  constructor(readonly deusesService: DeusFacadeService) {}
 }

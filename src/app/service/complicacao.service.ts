@@ -16,4 +16,9 @@ export class ComplicacaoService extends AbstractService {
     let listas = this.http.get<Complicacao[]>(this.url);
     return this.filtrar(filtro, listas, ['nome', 'descricao']);
   }
+
+  consult(filtro: any, searchColumn: string[]): Observable<Complicacao[]> {
+    let listas = this.http.get<Complicacao[]>(this.url);
+    return this.filtrar(filtro, listas, searchColumn);
+  }
 }
