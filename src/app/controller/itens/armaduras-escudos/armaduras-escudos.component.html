@@ -1,1 +1,154 @@
-<p>armaduras-escudos works!</p>
+<app-card-search
+  name="Armaduras & Escudos"
+  [service]="service"
+  [searchColumn]="['nome', 'descrição', 'livro']"
+  [colsGrid]="3"
+  [rowHeight]="600"
+  gutterSizeGrid="10px">
+  <ng-template let-item>
+    <mat-card class="card-game">
+      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+        {{ item.nome }}
+      </mat-card-title>
+      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+        <div class="row">
+          <div class="col-sm-12 mt-1 d-flex justify-content-end">
+            {{ item.referencias + ', pag. ' + item.paginas }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <hr />
+          </div>
+        </div>
+        <mat-tab-group class="mt-1">
+          <mat-tab label="Imagem" *ngIf="item.imagem">
+            <img [src]="item.imagem" [alt]="item.nome" />
+          </mat-tab>
+          <mat-tab label="Descrição">
+            <div class="row mt-4">
+              <div class="col-sm-12">
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-sm btn-outline-secondary" disabled>
+                    {{ getTipoItemKey(item.tipo) }}
+                  </button>
+
+                  <button *ngFor="let ch of item.chave" class="btn btn-sm btn-outline-secondary" disabled>
+                    {{ ch.toString().toUpperCase() }}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="content mt-2">
+              <div class="row">
+                <div class="col-sm-12 mt-4">
+                  <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                    <div class="text-justify" [innerHTML]="item.descricao"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Estatísticas">
+            <div class="content">
+              <div class="row">
+                <div class="col-sm-6 mt-4">Defesa</div>
+                <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                  {{ item.defesa }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Penalidade</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ item.penalidade }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Espaço</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ item.espaco }}
+                </div>
+                <hr />
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Fabricação">
+            <div class="content">
+              <div class="row">
+                <div class="col-sm-6 mt-4">RD</div>
+                <div class="col-sm-6 mt-4 d-flex justify-content-end">
+                  {{ item.rd }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">PV's</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ item.pv }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Preço</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ 'T$ ' + item.preco }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Perícia para Fabricação/Conserto</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ item.pericia_fabricacao_conserto }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">CD para Fabricação/Conserto</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ item.cd_fabricacao }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Custo de Fabricação</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ 'T$ ' + umTerco(item.preco!) }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Tempo de Fabricação (Em Horas)</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{
+                    item.tempo_fabricacao_em_horas! >= 160
+                      ? '1 mês'
+                      : item.tempo_fabricacao_em_horas! >= 40
+                        ? '1 semana'
+                        : '1 dia'
+                  }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Custo para Conserto</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ 'T$ ' + umDecimo(item.preco!) }}
+                </div>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">Tempo de Conserto (Em Horas)</div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                  {{ 1 }}
+                </div>
+                <hr />
+              </div>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</app-card-search>

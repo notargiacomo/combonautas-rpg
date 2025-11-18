@@ -371,3 +371,11 @@ tr.element-row:not(.example-expanded-row):active {
 ::ng-deep .mat-mdc-form-field-infill {
   border-radius: 8px !important; // ou 4px se quiser mais sutil
 }
+
+.mat-mdc-tab-header-pagination-chevron {
+  border-style: solid !important;
+  border-width: 2px 2px 0 0 !important;
+  height: 8px !important;
+  width: 8px !important;
+  border-color: whitesmoke whitesmoke !important;
+}
