@@ -31,8 +31,12 @@ export abstract class CombonautasBase {
   }
 
   getTipoItemKey(tipo: any): string {
-    const value = this.getTipoItemLabel(tipo); // reaproveita sua função que já converte número
-    return Object.keys(TipoItem).find(key => TipoItem[key as keyof typeof TipoItem] === value) ?? '';
+    const value = this.getTipoItemLabel(tipo);
+    return (
+      Object.keys(TipoItem)
+        .find(key => TipoItem[key as keyof typeof TipoItem] === value)!
+        .replace(/_/g, ' ') ?? ''
+    );
   }
 
   umTerco(preco: number) {
@@ -41,5 +45,9 @@ export abstract class CombonautasBase {
 
   umDecimo(preco: number) {
     return Number((preco / 10).toFixed(1));
+  }
+
+  eTipo<T extends { tipo: U }, U>(objeto: T, tipo: U): boolean {
+    return objeto.tipo === tipo;
   }
 }

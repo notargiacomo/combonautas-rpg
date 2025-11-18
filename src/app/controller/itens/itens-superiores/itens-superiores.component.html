@@ -1,1 +1,49 @@
-<p>itens-superiores works!</p>
+<app-card-search
+  name="Itens Superiores"
+  [service]="service"
+  [searchColumn]="['nome', 'descrição', 'livro']"
+  [colsGrid]="3"
+  [rowHeight]="450"
+  gutterSizeGrid="10px">
+  <ng-template let-item>
+    <mat-card class="card-game">
+      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+        {{ item.nome }}
+      </mat-card-title>
+      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+        <div class="row">
+          <div class="col-sm-12 mt-1 d-flex justify-content-end">
+            {{ item.referencias + ', pag. ' + item.paginas }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <hr />
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-12">
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-sm btn-outline-secondary" disabled>
+                {{ getTipoItemKey(item.tipo) }}
+              </button>
+
+              <button *ngFor="let ch of item.chave" class="btn btn-sm btn-outline-secondary" disabled>
+                {{ ch.toString().toUpperCase() }}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col-sm-12 mt-4">
+              <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                <div class="text-justify" [innerHTML]="item.descricao"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</app-card-search>
