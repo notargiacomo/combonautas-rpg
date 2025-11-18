@@ -17,8 +17,8 @@ export class PericiaService extends AbstractService {
     return this.filtrar(filtro, listas, ['nome', 'descricao']);
   }
 
-  consult(filtro: any, searchColumn: string[]): Observable<Pericia[]> {
+  consult(filtro: any): Observable<Pericia[]> {
     let listas = this.http.get<Pericia[]>(this.url);
-    return this.filtrar(filtro, listas, searchColumn);
+    return this.filtrar(filtro, listas, ['nome', 'descricao', 'atributo']);
   }
 }

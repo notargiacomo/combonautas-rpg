@@ -16,7 +16,7 @@ export class ClasseFacadeService {
 
   consult(filtro: any, searchColumn: string[]): Observable<any[]> {
     return forkJoin({
-      classes: this.classeService.consult({}, []),
+      classes: this.classeService.consult({}),
       poderes: this.poderService.listAll(),
     }).pipe(
       map(({ classes, poderes }) =>

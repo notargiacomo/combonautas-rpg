@@ -15,12 +15,12 @@ export class PoderFacadeService {
   ) {}
 
   consult(filtro: any, searchColumn: string[]): Observable<any[]> {
-    return this.poderService.listAll().pipe(
+    return this.poderService.listGeneral().pipe(
       switchMap(poderes =>
         forkJoin({
-          deuses: this.deusService.consult({}, []),
-          racas: this.racaService.consult({}, []),
-          classes: this.classeService.consult({}, []),
+          deuses: this.deusService.consult({}),
+          racas: this.racaService.consult({}),
+          classes: this.classeService.consult({}),
         }).pipe(
           map(({ deuses, racas, classes }) =>
             poderes.map(poder => ({

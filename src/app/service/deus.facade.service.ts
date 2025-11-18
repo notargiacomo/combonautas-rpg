@@ -14,7 +14,7 @@ export class DeusFacadeService {
 
   consult(filtro: any, searchColumn: string[] = []): Observable<Deus[]> {
     return forkJoin({
-      deuses: this.deusService.consult({}, []),
+      deuses: this.deusService.consult({}),
       poderes: this.poderService.listAll(),
     }).pipe(
       map(({ deuses, poderes }) =>

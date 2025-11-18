@@ -17,8 +17,8 @@ export class OrigemService extends AbstractService {
     return this.filtrar(filtro, listas, ['nome', 'regiao', 'descricao', 'referencias']);
   }
 
-  consult(filtro: any, searchColumn: string[]): Observable<Origem[]> {
+  consult(filtro: any): Observable<Origem[]> {
     let listas = this.http.get<Origem[]>(this.url);
-    return this.filtrar(filtro, listas, searchColumn);
+    return this.filtrar(filtro, listas, ['nome', 'regiao', 'descricao', 'referencias']);
   }
 }

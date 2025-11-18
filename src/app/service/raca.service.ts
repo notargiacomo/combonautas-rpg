@@ -34,7 +34,7 @@ export class RacaService extends AbstractService {
     );
   }
 
-  consult(filtro: any, searchColumn: string[]): Observable<Raca[]> {
+  consult(filtro: any): Observable<Raca[]> {
     return this.filtrar(
       filtro,
       this.http.get<Raca[]>(this.url).pipe(
@@ -50,7 +50,7 @@ export class RacaService extends AbstractService {
           return forkJoin(requests);
         })
       ),
-      searchColumn
+      ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'devotos']
     );
   }
 }

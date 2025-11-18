@@ -37,6 +37,13 @@
               Magias
             </button>-->
           </mat-menu>
+          <button mat-button [matMenuTriggerFor]="menuCampanha">Itens</button>
+          <mat-menu #menuCampanha="matMenu" yPosition="below">
+            <button mat-menu-item (click)="navigateTo('itens/armas-municoes')">Armas & Munições</button>
+            <!-- <button mat-menu-item (click)="navigateTo('itens/armaduras-escudos')">Armaduras & Escudos</button>
+            <button mat-menu-item (click)="navigateTo('itens/itens-gerais')">Itens Gerais</button>
+            <button mat-menu-item (click)="navigateTo('itens/itens-superiores')">Itens Superiores</button> -->
+          </mat-menu>
           <!-- <button mat-button [matMenuTriggerFor]="menuCampanha">Campanha</button>
           <mat-menu #menuCampanha="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('campanha/distincoes')">Distinções</button>

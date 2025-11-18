@@ -14,6 +14,10 @@ import { ComplicacoesComponent } from './controller/personagem/complicacoes/comp
 import { PoderesComponent } from './controller/personagem/poderes/poderes.component';
 import { TerrasDespedacadasComponent } from './terras-despedacadas/terras-despedacadas.component';
 import { ClassesComponent } from './controller/personagem/classes/classes.component';
+import { ArmasMunicoesComponent } from './controller/itens/armas-municoes/armas-municoes.component';
+import { ArmadurasEscudosComponent } from './controller/itens/armaduras-escudos/armaduras-escudos.component';
+import { ItensGeraisComponent } from './controller/itens/itens-gerais/itens-gerais.component';
+import { ItensSuperioresComponent } from './controller/itens/itens-superiores/itens-superiores.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,6 +37,11 @@ export const routes: Routes = [
   { path: 'personagem/deuses', component: DeusesComponent },
   { path: 'personagem/complicacoes', component: ComplicacoesComponent },
   { path: 'personagem/poderes', component: PoderesComponent },
+
+  { path: 'itens/armas-municoes', component: ArmasMunicoesComponent },
+  { path: 'itens/armaduras-escudos', component: ArmadurasEscudosComponent },
+  { path: 'itens/itens-gerais', component: ItensGeraisComponent },
+  { path: 'itens/itens-superiores', component: ItensSuperioresComponent },
 
   { path: 'terras-despedacadas', component: TerrasDespedacadasComponent },
 ];

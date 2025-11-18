@@ -23,7 +23,7 @@ export class ClasseService extends AbstractService {
     return this.http.get<any>(this.url + id);
   }
 
-  consult(filtro: any, searchColumn: string[]): Observable<Classe[]> {
-    return this.filtrar(filtro, this.http.get<Classe[]>(this.url), searchColumn);
+  consult(filtro: any): Observable<Classe[]> {
+    return this.filtrar(filtro, this.http.get<Classe[]>(this.url), ['nome', 'descricao']);
   }
 }

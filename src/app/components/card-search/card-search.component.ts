@@ -60,7 +60,7 @@ export class CardSearchComponent {
   consult() {
     let filter = this.form.value;
     if (this.service && this.service.consult) {
-      this.service.consult(filter, this.searchColumn).subscribe((res: any[]) => {
+      this.service.consult(filter).subscribe((res: any[]) => {
         this.objects = res;
         this.records_number = res.length;
       });

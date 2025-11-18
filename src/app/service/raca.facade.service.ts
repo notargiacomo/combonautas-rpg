@@ -13,7 +13,7 @@ export class RacaFacadeService {
 
   consult(filtro: any, searchColumn: string[]): Observable<any[]> {
     return forkJoin({
-      racas: this.racaService.consult({}, []),
+      racas: this.racaService.consult({}),
       poderes: this.poderService.listAll(),
     }).pipe(
       map(({ racas, poderes }) =>
