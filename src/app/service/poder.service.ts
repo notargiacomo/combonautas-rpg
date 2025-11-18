@@ -9,10 +9,7 @@ import { DeusService } from './deus.service';
   providedIn: 'root',
 })
 export class PoderService extends AbstractService {
-  constructor(
-    private readonly http: HttpClient,
-    private readonly deuseService: DeusService
-  ) {
+  constructor(private readonly http: HttpClient) {
     super('poder/');
   }
 
@@ -55,16 +52,16 @@ export class PoderService extends AbstractService {
         } else {
           filtrados = resultado; // sem filtros = retorna tudo
         }
-        filtrados.forEach(poder => {
-          poder.id_deuses?.forEach(id_deus => {
-            this.deuseService.getbyId(id_deus).subscribe({
-              next: deus => {
-                poder.deuses === null || poder.deuses === undefined ? (poder.deuses = []) : '';
-                poder.deuses?.push(deus);
-              },
-            });
-          });
-        });
+        // filtrados.forEach(poder => {
+        //   poder.id_deuses?.forEach(id_deus => {
+        //     this.deuseService.getbyId(id_deus).subscribe({
+        //       next: deus => {
+        //         poder.deuses === null || poder.deuses === undefined ? (poder.deuses = []) : '';
+        //         poder.deuses?.push(deus);
+        //       },
+        //     });
+        //   });
+        // });
 
         return filtrados;
       })

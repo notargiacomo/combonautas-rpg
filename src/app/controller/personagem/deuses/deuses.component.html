@@ -1,121 +1,50 @@
-<form [formGroup]="form">
-  <mat-card class="cartao">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2><b>DEUSES</b></h2>
-        <hr />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 mt-2">
-        <mat-form-field class="form-field text-field-formulario-edicao">
-          <mat-label>Deus</mat-label>
-          <input formControlName="nome" matInput type="text" name="nome" (keyup)="consultar()" />
-        </mat-form-field>
-      </div>
-    </div>
-  </mat-card>
-  <mat-card class="cartao">
-    <div class="col-sm-12 mt-4">
-      <div class="row">
-        <div class="d-flex justify-content-end">
-          <b>Número de Registros: {{ numero_registros }}</b>
+<app-card-search
+  name="Deuses"
+  [service]="deusesService"
+  [searchColumn]="['nome', 'descricao', 'referencias']"
+  [colsGrid]="2"
+  [rowHeight]="900"
+  gutterSizeGrid="10px">
+  <ng-template let-item>
+    <mat-card class="card-game">
+      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+        {{ item.nome }}
+      </mat-card-title>
+      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+        <div class="row mt-1 mb-2">
+          <div class="col-sm-12 mt-1 d-flex justify-content-end">
+            {{ item.referencias + ', pag. ' + item.paginas }}
+          </div>
         </div>
-      </div>
-      <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="900" gutterSize="10px">
-        <mat-grid-tile *ngFor="let deus of deuses">
-          <mat-card class="card-game">
-            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-              {{ deus.nome }}
-            </mat-card-title>
-            <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-              <div class="row">
-                <div class="col-sm-12 mt-1 d-flex justify-content-end">
-                  {{ deus.referencias + ', pag. ' + deus.paginas }}
+        <div class="content">
+          <mat-tab-group>
+            <mat-tab label="Símbolo" *ngIf="item.simbolo">
+              <img [src]="item.simbolo" />
+            </mat-tab>
+            <mat-tab label="Deus" *ngIf="item.imagem">
+              <img [src]="item.imagem" />
+            </mat-tab>
+            <mat-tab label="Descrição">
+              <div class="row mt-2">
+                <div class="col-sm-12 text-justify" [innerHTML]="item.descricao"></div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Poderes Concedidos" *ngIf="item.poderes && item.poderes.length > 0">
+              <div class="row mt-2">
+                <p>ps: poderes mágicos são marcadas com o símbolo:✨</p>
+                <div class="col-sm-12">
+                  <div
+                    *ngFor="let poder of item.poderes"
+                    style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                    <b>{{ poder.nome }}</b>
+                    <div class="text-justify" [innerHTML]="poder.descricao"></div>
+                  </div>
                 </div>
               </div>
-              <div class="content">
-                <mat-tab-group>
-                  <mat-tab label="Símbolo" *ngIf="deus.simbolo">
-                    <img [src]="deus.simbolo" />
-                  </mat-tab>
-                  <mat-tab label="Deus" *ngIf="deus.imagem">
-                    <img [src]="deus.imagem" />
-                  </mat-tab>
-                  <mat-tab label="Descrição">
-                    <div class="row">
-                      <div class="col-sm-12 text-justify" [innerHTML]="deus.descricao"></div>
-                    </div>
-                  </mat-tab>
-                  <mat-tab label="Poderes Concedidos" *ngIf="deus.poderes && deus.poderes.length > 0">
-                    <div class="row mt-2">
-                      <p>
-                        ps: poderes mágicos são marcadas com o símbolo:
-                        <i><b>e</b></i>
-                        .
-                      </p>
-                      <div class="col-sm-12 text-justify">
-                        <div
-                          *ngFor="let poder of deus.poderes"
-                          style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                          <div class="col-sm-12 text-justify" [innerHTML]="poder.descricao"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </mat-tab>
-                </mat-tab-group>
-              </div>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-      <mat-grid-list *ngIf="!isMobile" cols="2" rowHeight="900" gutterSize="10px">
-        <mat-grid-tile *ngFor="let deus of deuses">
-          <mat-card class="card-game">
-            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-              {{ deus.nome }}
-            </mat-card-title>
-            <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
-              <div class="row mt-1 mb-2">
-                <div class="col-sm-12 mt-1 d-flex justify-content-end">
-                  {{ deus.referencias + ', pag. ' + deus.paginas }}
-                </div>
-              </div>
-              <div class="content">
-                <mat-tab-group>
-                  <mat-tab label="Símbolo" *ngIf="deus.simbolo">
-                    <img [src]="deus.simbolo" />
-                  </mat-tab>
-                  <mat-tab label="Deus" *ngIf="deus.imagem">
-                    <img [src]="deus.imagem" />
-                  </mat-tab>
-                  <mat-tab label="Descrição">
-                    <div class="row mt-2">
-                      <div class="col-sm-12 text-justify" [innerHTML]="deus.descricao"></div>
-                    </div>
-                  </mat-tab>
-                  <mat-tab label="Poderes Concedidos" *ngIf="deus.poderes && deus.poderes.length > 0">
-                    <div class="row mt-2">
-                      <p>
-                        ps: poderes mágicos são marcadas com o símbolo:
-                        <i><b>e</b></i>
-                        .
-                      </p>
-                      <div class="col-sm-12 mt-2 text-justify">
-                        <div
-                          *ngFor="let poder of deus.poderes"
-                          style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
-                          <div class="col-sm-12 text-justify" [innerHTML]="poder.descricao"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </mat-tab>
-                </mat-tab-group>
-              </div>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </div>
-  </mat-card>
-</form>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</app-card-search>
