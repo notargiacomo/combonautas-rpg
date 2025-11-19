@@ -30,7 +30,9 @@ export class PoderFacadeService {
               classe: classes.find(c => poder.id_classe === c.id),
             }))
           ),
-          switchMap(result => this.poderService.filtrar(filtro, of(result), searchColumn))
+          switchMap(result =>
+            this.poderService.filtrar(filtro, of(result), ['nome', 'descricao', 'referencias', 'tipo'])
+          )
         )
       )
     );

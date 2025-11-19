@@ -43,6 +43,6 @@ export class PoderService extends AbstractService {
 
   consult(filtro: any, searchColumn: string[]): Observable<Poder[]> {
     let listas = this.http.get<Poder[]>(this.url);
-    return this.filtrar(filtro, listas, searchColumn);
+    return this.filtrar(filtro, listas, ['nome', 'descricao', 'referencias', 'tipo']);
   }
 }

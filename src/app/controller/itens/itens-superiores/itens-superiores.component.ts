@@ -10,7 +10,7 @@ import { ItensSuperioresService } from '@app/service/itens.superiores.service';
 @Component({
   selector: 'app-itens-superiores',
   standalone: true,
-  imports: [CardSearchComponent, MatCard, MatCardTitle, MatCardContent, NgFor, MatTabGroup, MatTab, NgIf],
+  imports: [CardSearchComponent, MatCard, MatCardTitle, MatCardContent, NgFor],
   templateUrl: './itens-superiores.component.html',
   styleUrl: './itens-superiores.component.scss',
 })

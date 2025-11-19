@@ -30,27 +30,24 @@ export class RacaService extends AbstractService {
           return forkJoin(requests);
         })
       ),
-      ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descricao', 'devotos']
+      ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descricao']
     );
   }
 
   consult(filtro: any): Observable<Raca[]> {
-    return this.filtrar(
-      filtro,
-      this.http.get<Raca[]>(this.url).pipe(
-        switchMap((racas: Raca[]) => {
-          const requests = racas.map(raca =>
-            this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
-              map(historia => ({
-                ...raca,
-                historia,
-              }))
-            )
-          );
-          return forkJoin(requests);
-        })
-      ),
-      ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'devotos']
+    let listas = this.http.get<Raca[]>(this.url).pipe(
+      switchMap((racas: Raca[]) => {
+        const requests = racas.map(raca =>
+          this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
+            map(historia => ({
+              ...raca,
+              historia,
+            }))
+          )
+        );
+        return forkJoin(requests);
+      })
     );
+    return this.filtrar(filtro, listas, ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descricao']);
   }
 }

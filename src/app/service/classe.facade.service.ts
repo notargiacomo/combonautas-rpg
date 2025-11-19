@@ -26,7 +26,7 @@ export class ClasseFacadeService {
           poderes: poderes.filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.PODER_CLASSE),
         }))
       ),
-      switchMap(result => this.classeService.filtrar(filtro, of(result), searchColumn))
+      switchMap(result => this.classeService.filtrar(filtro, of(result), ['nome', 'descricao']))
     );
   }
 }

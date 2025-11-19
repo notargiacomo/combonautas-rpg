@@ -25,7 +25,16 @@ export class RacaFacadeService {
           poderes: poderes.filter(p => p.id_raca?.includes(raca.id) && p.tipo === TipoPoder.PODER_RACA),
         }))
       ),
-      switchMap(result => this.racaService.filtrar(filtro, of(result), searchColumn))
+      switchMap(result =>
+        this.racaService.filtrar(filtro, of(result), [
+          'nome',
+          'tipo',
+          'tamanho',
+          'deslocamentos',
+          'sentidos',
+          'descricao',
+        ])
+      )
     );
   }
 }

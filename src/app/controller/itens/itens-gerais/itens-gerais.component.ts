@@ -10,7 +10,7 @@ import { ItensGeraisService } from '@app/service/itens.gerais.service';
 @Component({
   selector: 'app-itens-gerais',
   standalone: true,
-  imports: [CardSearchComponent, MatCard, MatCardTitle, MatCardContent, NgFor, MatTabGroup, MatTab, NgIf],
+  imports: [CardSearchComponent, MatCard, MatCardTitle, MatCardContent, NgFor, MatTabGroup, MatTab],
   templateUrl: './itens-gerais.component.html',
   styleUrl: './itens-gerais.component.scss',
 })

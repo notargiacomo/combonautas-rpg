@@ -23,7 +23,9 @@ export class DeusFacadeService {
           poderes: poderes.filter(p => p.id_deuses?.includes(deus.id) && p.tipo === TipoPoder.PODER_CONCEDIDO),
         }))
       ),
-      switchMap(deusesEnriquecidos => this.deusService.filtrar(filtro, of(deusesEnriquecidos), searchColumn))
+      switchMap(deusesEnriquecidos =>
+        this.deusService.filtrar(filtro, of(deusesEnriquecidos), ['nome', 'descricao', 'referencias'])
+      )
     );
   }
 }
