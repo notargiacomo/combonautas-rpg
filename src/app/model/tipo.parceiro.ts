@@ -1,13 +1,12 @@
-import { Pericia } from "./pericia";
+import { Pericia } from './pericia';
 
 export interface TipoParceiro {
-    id:number; // Número do Identificador
-    nome?:string; // nome conforme livro
-    descricao?:string; // conforme livro
-    tracos?:string[]; // Descrições chaves que podem se repetir (filtros)
-    parceiro_patamar?:string[]; // Patamar do Parceiro
-    referencias?:string; // livro ou DB
-    pagina?:string; //página do livro ou volume da DB
+  id: number;
+  id_parceiro_pai?: number; // coloque o id do parceiro pai aqui, se houver
+  nome?: string;
+  descricao?: string;
+  tracos?: string[];
+  parceiro_patamar?: string[];
+  referencias?: string;
+  pagina?: string;
 }
-
-// tracos.include(nome => nome === 'PERICIA');
