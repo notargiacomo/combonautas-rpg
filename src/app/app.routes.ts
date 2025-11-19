@@ -18,6 +18,10 @@ import { ArmasMunicoesComponent } from './controller/itens/armas-municoes/armas-
 import { ArmadurasEscudosComponent } from './controller/itens/armaduras-escudos/armaduras-escudos.component';
 import { ItensGeraisComponent } from './controller/itens/itens-gerais/itens-gerais.component';
 import { ItensSuperioresComponent } from './controller/itens/itens-superiores/itens-superiores.component';
+import { ParceirosComponent } from './controller/campanha/parceiros/parceiros.component';
+import { DistincoesComponent } from './controller/campanha/distincoes/distincoes.component';
+import { ItensMagicosComponent } from './controller/campanha/itens-magicos/itens-magicos.component';
+import { ArtefatosComponent } from './controller/campanha/artefatos/artefatos.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,6 +31,11 @@ export const routes: Routes = [
 
   { path: 'mestre/calculo-desafios', component: CalculoDesafiosComponent },
   { path: 'mestre/tabela-geracao-tesouros', component: TabelaGeracaoTesourosComponent },
+
+  { path: 'campanha/parceiros', component: ParceirosComponent },
+  { path: 'campanha/distincoes', component: DistincoesComponent },
+  { path: 'campanha/itens-magicos', component: ItensMagicosComponent },
+  { path: 'campanha/artefatos', component: ArtefatosComponent },
 
   { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent },
 

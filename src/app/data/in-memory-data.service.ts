@@ -29,6 +29,8 @@ import { ItemMagico } from '../model/item.magico';
 import { Condicao } from '@app/model/condicao';
 import { CondicaoData } from './condicoes.data';
 import { TabelaGeracaoTesouroData } from './tabela.geracao.tesouro.data';
+import { TipoParceiroData } from './tipo.parceiro.data';
+import { Parceiro } from '@app/model/parceiro';
 
 @Injectable({
   providedIn: 'root',
@@ -49,7 +51,8 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly regraData: RegraData,
     private readonly distincaoData: DistincaoData,
     private readonly itemMagicoData: ItemMagicoData,
-    private readonly tabelaGeracaoTesouroData: TabelaGeracaoTesouroData
+    private readonly tabelaGeracaoTesouroData: TabelaGeracaoTesouroData,
+    private readonly parceiroData: TipoParceiroData
   ) {}
 
   createDb() {
@@ -65,6 +68,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const acao: Acao[] = this.acaoData.get();
     const magia: Magia[] = this.magiaData.get();
     const regra: Regra[] = this.regraData.get();
+    const parceiro: Parceiro[] = this.parceiroData.get();
     const distincao: Distincao[] = this.distincaoData.get();
     const itemMagico: ItemMagico[] = this.itemMagicoData.get();
     const tabelaGeracaoTesouroData: TabelaGeracaoTesouroData[] = this.tabelaGeracaoTesouroData.get();
@@ -84,6 +88,7 @@ export class InMemoryDataService implements InMemoryDbService {
       regra: regra,
       distincao: distincao,
       item_magico: itemMagico,
+      parceiro: parceiro,
       tabelaGeracaoTesouroData: tabelaGeracaoTesouroData,
     };
   }

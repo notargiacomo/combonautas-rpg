@@ -1,6 +1,6 @@
-import { Injectable, inject } from '@angular/core';
-import { forkJoin, map, Observable, of, switchMap } from 'rxjs';
+import { Injectable } from '@angular/core';
 import { TipoPoder } from '@app/enum/tipo.poder.enum';
+import { forkJoin, map, Observable, of, switchMap } from 'rxjs';
 import { PoderService } from './poder.service';
 import { RacaService } from './raca.service';
 

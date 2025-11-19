@@ -6,7 +6,7 @@ import { PoderService } from './poder.service';
 import { DistincaoService } from './distincao.service';
 
 @Injectable({ providedIn: 'root' })
-export class ClasseFacadeService {
+export class DistincaoFacadeService {
   constructor(
     private readonly distincaoService: DistincaoService,
     private readonly poderService: PoderService
@@ -14,14 +14,13 @@ export class ClasseFacadeService {
 
   consult(filtro: any, searchColumn: string[]): Observable<any[]> {
     return forkJoin({
-      classes: this.distincaoService.consult({}),
+      distincoes: this.distincaoService.consult({}),
       poderes: this.poderService.listAll(),
     }).pipe(
-      map(({ classes, poderes }) =>
-        classes.map(classe => ({
-          ...classe,
-          habilidades: poderes.filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.HABILIDADE_CLASSE),
-          poderes: poderes.filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.PODER_CLASSE),
+      map(({ distincoes, poderes }) =>
+        distincoes.map(distincao => ({
+          ...distincao,
+          poderes: poderes.filter(p => p.id_distincao === distincao.id && p.tipo === TipoPoder.PODER_DISTINCAO),
         }))
       ),
       switchMap(result => this.distincaoService.filtrar(filtro, of(result), ['nome', 'descricao']))
