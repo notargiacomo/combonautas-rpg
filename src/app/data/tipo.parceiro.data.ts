@@ -472,6 +472,20 @@ export class TipoParceiroData {
         referencias: Referencia.AMEACAS,
         pagina: '', // trecho "Cavalo de Guerra". :contentReference[oaicite:19]{index=19}
       },
+      {
+        id: 117,
+        id_parceiro_pai: 21, // montaria/besta de carga
+        nome: 'Falcão',
+        descricao: 'Um falcão é um parceiro especial (perseguidor) que fornece os benefícios a seguir. ',
+        tracos: ['PERSEGUIDOR'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> uma vez por cena, você pode gastar uma ação de movimento e fazer um teste de Adestramento (CD 10). Se passar, o falcão concede a você +1 em testes de ataque, Percepção e Sobrevivência até o fim da cena. Para cada 10 pontos pelos quais o resultado de seu teste passar a CD, esse bônus aumenta em +1. ',
+          '<b>Veterano:</b> você pode usar Sentidos Aguçados. ',
+          '<b>Mestre:</b> uma vez por rodada, você pode gastar 1 PM para fazer uma criatura em alcance médio ficar cega por 1d4 rodadas (Ref CD Car evita).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '', // trecho "Cavalo de Guerra". :contentReference[oaicite:19]{index=19}
+      },
     ];
   }
 }
