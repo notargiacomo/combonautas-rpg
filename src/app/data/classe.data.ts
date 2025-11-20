@@ -221,7 +221,42 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um bárbaro começa com 24 pontos de vida + Constituição e ganha 6 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b>  Fortitude (Con) e Luta (For), mais 4 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Iniciativa (Des), Intimidação (Car), Ofício (Int), Percepção (Sab), Pontaria (Des), Sobrevivência (Sab) e Vontade (Sab).</p>
-        <p><b>Proficiências.</b> Armas marciais e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais e escudos.</p>
+        
+        <!-- Imagem de referência -->
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Fúria +2</td></tr>
+    <tr><td>2º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>3º</td><td>Instinto selvagem +1, poder de bárbaro</td></tr>
+    <tr><td>4º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>5º</td><td>Poder de bárbaro, redução de dano 2</td></tr>
+    <tr><td>6º</td><td>Fúria +3, poder de bárbaro</td></tr>
+    <tr><td>7º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>8º</td><td>Poder de bárbaro, redução de dano 4</td></tr>
+    <tr><td>9º</td><td>Instinto selvagem +2, poder de bárbaro</td></tr>
+    <tr><td>10º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>11º</td><td>Fúria +4, poder de bárbaro, redução de dano 6</td></tr>
+    <tr><td>12º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>13º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>14º</td><td>Poder de bárbaro, redução de dano 8</td></tr>
+    <tr><td>15º</td><td>Instinto selvagem +3, poder de bárbaro</td></tr>
+    <tr><td>16º</td><td>Fúria +5, poder de bárbaro</td></tr>
+    <tr><td>17º</td><td>Poder de bárbaro, redução de dano 10</td></tr>
+    <tr><td>18º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>19º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>20º</td><td>Fúria titânica, poder de bárbaro</td></tr>
+  </tbody>
+</table>
+
+        `,
         ha_informacoes_adicionais: true,
         ha_poderes_db: true,
         ha_complicacoes: true,
@@ -283,7 +318,40 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um bardo começa com 12 pontos de vida + Constituição e ganha 3 PV + Con por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>   Atuação (Car) e Reflexos (Des) mais 6 a sua escolha entre Acrobacia (Des), Cavalgar (Des), Conhecimento  (Int),  Diplomacia  (Car),  Enganação (Car), Furtividade (Des), Iniciativa (Des), Intuição (Sab), Investigação (Int), Jogatina (Car), Ladinagem (Des), Luta (For), Misticismo (Int), Nobreza (Int), Percepção (Sab), Pontaria (Des) e Vontade (Sab).</p>
-        <p><b>Proficiências.</b> Armas marciais.</p>`,
+        <p><b>Proficiências.</b> Armas marciais.</p>
+        
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Inspiração +1, magias (1º círculo)</td></tr>
+    <tr><td>2º</td><td>Poder de bardo, eclético</td></tr>
+    <tr><td>3º</td><td>Poder de bardo</td></tr>
+    <tr><td>4º</td><td>Poder de bardo</td></tr>
+    <tr><td>5º</td><td>Inspiração +2, poder de bardo</td></tr>
+    <tr><td>6º</td><td>Magias (2º círculo), poder de bardo</td></tr>
+    <tr><td>7º</td><td>Poder de bardo</td></tr>
+    <tr><td>8º</td><td>Poder de bardo</td></tr>
+    <tr><td>9º</td><td>Inspiração +3, poder de bardo</td></tr>
+    <tr><td>10º</td><td>Magias (3º círculo), poder de bardo</td></tr>
+    <tr><td>11º</td><td>Poder de bardo</td></tr>
+    <tr><td>12º</td><td>Poder de bardo</td></tr>
+    <tr><td>13º</td><td>Inspiração +4, poder de bardo</td></tr>
+    <tr><td>14º</td><td>Magias (4º círculo), poder de bardo</td></tr>
+    <tr><td>15º</td><td>Poder de bardo</td></tr>
+    <tr><td>16º</td><td>Poder de bardo</td></tr>
+    <tr><td>17º</td><td>Inspiração +5, poder de bardo</td></tr>
+    <tr><td>18º</td><td>Poder de bardo</td></tr>
+    <tr><td>19º</td><td>Poder de bardo</td></tr>
+    <tr><td>20º</td><td>Artista completo, poder de bardo</td></tr>
+  </tbody>
+</table>
+
+        `,
         ha_informacoes_adicionais: true,
         ha_poderes_db: true,
         ha_complicacoes: true,
@@ -344,7 +412,40 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um bucaneiro começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b>   Luta (For) ou Pontaria (Des), Reflexos (Des), mais 4 a sua escolha entre Acrobacia (Des), Atletismo (For), Atuação (Car), Enganação (Car), Fortitude (Con), Furtividade (Des), Iniciativa (Des), Intimidação (Car), Jogatina (Car), Luta (For), Ofício  (Int),  Percepção  (Sab),  Pilotagem  (Des)  e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais.</p>`,
+        <p><b>Proficiências.</b> Armas marciais.</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Audácia, insolência</td></tr>
+    <tr><td>2º</td><td>Evasão, poder de bucaneiro</td></tr>
+    <tr><td>3º</td><td>Esquiva sagaz +1, poder de bucaneiro</td></tr>
+    <tr><td>4º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>5º</td><td>Panache, poder de bucaneiro</td></tr>
+    <tr><td>6º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>7º</td><td>Esquiva sagaz +2, poder de bucaneiro</td></tr>
+    <tr><td>8º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>9º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>10º</td><td>Evasão aprimorada, poder de bucaneiro</td></tr>
+    <tr><td>11º</td><td>Esquiva sagaz +3, poder de bucaneiro</td></tr>
+    <tr><td>12º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>13º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>14º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>15º</td><td>Esquiva sagaz +4, poder de bucaneiro</td></tr>
+    <tr><td>16º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>17º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>18º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>19º</td><td>Esquiva sagaz +5, poder de bucaneiro</td></tr>
+    <tr><td>20º</td><td>Poder de bucaneiro, sorte de Nimb</td></tr>
+  </tbody>
+</table>
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -395,7 +496,40 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>   Um caçador começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b> Luta (For) ou Pontaria (Des), Sobrevivência (Sab), mais 6 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Cura (Sab), Fortitude (Con), Furtividade (Des), Iniciativa (Des), Investigação (Int), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des) e Reflexos (Des).</p>
-        <p><b>Proficiências.</b>  Armas marciais e escudos.</p>`,
+        <p><b>Proficiências.</b>  Armas marciais e escudos.</p>
+        
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Marca da presa +1d4, rastreador</td></tr>
+    <tr><td>2º</td><td>Poder de caçador</td></tr>
+    <tr><td>3º</td><td>Explorador, poder de caçador</td></tr>
+    <tr><td>4º</td><td>Poder de caçador</td></tr>
+    <tr><td>5º</td><td>Caminho do explorador, marca da presa +1d8, poder de caçador</td></tr>
+    <tr><td>6º</td><td>Poder de caçador</td></tr>
+    <tr><td>7º</td><td>Explorador, poder de caçador</td></tr>
+    <tr><td>8º</td><td>Poder de caçador</td></tr>
+    <tr><td>9º</td><td>Marca da presa +1d12, poder de caçador</td></tr>
+    <tr><td>10º</td><td>Poder de caçador</td></tr>
+    <tr><td>11º</td><td>Explorador, poder de caçador</td></tr>
+    <tr><td>12º</td><td>Poder de caçador</td></tr>
+    <tr><td>13º</td><td>Marca da presa +2d8, poder de caçador</td></tr>
+    <tr><td>14º</td><td>Poder de caçador</td></tr>
+    <tr><td>15º</td><td>Explorador, poder de caçador</td></tr>
+    <tr><td>16º</td><td>Poder de caçador</td></tr>
+    <tr><td>17º</td><td>Marca da presa +2d10, poder de caçador</td></tr>
+    <tr><td>18º</td><td>Poder de caçador</td></tr>
+    <tr><td>19º</td><td>Explorador, poder de caçador</td></tr>
+    <tr><td>20º</td><td>Mestre caçador, poder de caçador</td></tr>
+  </tbody>
+</table>
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -475,7 +609,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um cavaleiro começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b>  Fortitude (Con) e Luta (For), mais 2 a sua escolha entre Adestramento (Car), Atletismo (For),  Cavalgar  (Des),  Diplomacia  (Car),  Guerra (Int), Iniciativa (Des), Intimidação (Car), Nobreza (Int), Percepção (Sab) e Vontade (Sab).</p>
-        <p><b>Proficiências.</b>  Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b>  Armas marciais, armaduras pesadas e escudos.</p>
+        
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Baluarte +2, código de honra</td></tr>
+    <tr><td>2º</td><td>Duelo +2, poder de cavaleiro</td></tr>
+    <tr><td>3º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>4º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>5º</td><td>Caminho do cavaleiro, baluarte +4, poder de cavaleiro</td></tr>
+    <tr><td>6º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>7º</td><td>Baluarte (aliados adjacentes), duelo +3, poder de cavaleiro</td></tr>
+    <tr><td>8º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>9º</td><td>Baluarte +6, poder de cavaleiro</td></tr>
+    <tr><td>10º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>11º</td><td>Poder de cavaleiro, resoluto</td></tr>
+    <tr><td>12º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>13º</td><td>Duelo +4, poder de cavaleiro</td></tr>
+    <tr><td>14º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>15º</td><td>Baluarte (aliados em alcance curto), poder de cavaleiro</td></tr>
+    <tr><td>16º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>17º</td><td>Baluarte +10, duelo +5, poder de cavaleiro</td></tr>
+    <tr><td>18º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>19º</td><td>Poder de cavaleiro</td></tr>
+    <tr><td>20º</td><td>Bravura final, poder de cavaleiro</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
