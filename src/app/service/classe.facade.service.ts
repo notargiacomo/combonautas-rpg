@@ -8,13 +8,13 @@ import { DistincaoService } from './distincao.service';
 @Injectable({ providedIn: 'root' })
 export class ClasseFacadeService {
   constructor(
-    private readonly distincaoService: DistincaoService,
+    private readonly classeService: ClasseService,
     private readonly poderService: PoderService
   ) {}
 
   consult(filtro: any, searchColumn: string[]): Observable<any[]> {
     return forkJoin({
-      classes: this.distincaoService.consult({}),
+      classes: this.classeService.consult({}),
       poderes: this.poderService.listAll(),
     }).pipe(
       map(({ classes, poderes }) =>
@@ -24,7 +24,7 @@ export class ClasseFacadeService {
           poderes: poderes.filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.PODER_CLASSE),
         }))
       ),
-      switchMap(result => this.distincaoService.filtrar(filtro, of(result), ['nome', 'descricao']))
+      switchMap(result => this.classeService.filtrar(filtro, of(result), ['nome', 'descricao']))
     );
   }
 }
