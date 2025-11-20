@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { TipoPoder } from '@app/enum/tipo.poder.enum';
 import { forkJoin, map, Observable, of, switchMap } from 'rxjs';
-import { ClasseService } from './classe.service';
-import { PoderService } from './poder.service';
 import { DistincaoService } from './distincao.service';
+import { PoderService } from './poder.service';
 
 @Injectable({ providedIn: 'root' })
 export class DistincaoFacadeService {
