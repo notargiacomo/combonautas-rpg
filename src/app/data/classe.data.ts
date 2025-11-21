@@ -711,7 +711,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um clérigo começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 5 PM por nível.</p>
         <p><b>Perícias.</b> Religião (Sab) e Vontade (Sab), mais 2  a  sua  escolha  entre  Conhecimento  (Int),  Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Intuição (Sab), Luta (For), Misticismo (Int), Nobreza (Int), Ofício (Int) e Percepção (Sab).</p>
-        <p><b>Proficiências.</b>  Armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b>  Armaduras pesadas e escudos.</p>
+
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Devoto, magias (1º círculo)</td></tr>
+    <tr><td>2º</td><td>Poder de clérigo</td></tr>
+    <tr><td>3º</td><td>Poder de clérigo</td></tr>
+    <tr><td>4º</td><td>Poder de clérigo</td></tr>
+    <tr><td>5º</td><td>Magias (2º círculo), poder de clérigo</td></tr>
+    <tr><td>6º</td><td>Poder de clérigo</td></tr>
+    <tr><td>7º</td><td>Poder de clérigo</td></tr>
+    <tr><td>8º</td><td>Poder de clérigo</td></tr>
+    <tr><td>9º</td><td>Magias (3º círculo), poder de clérigo</td></tr>
+    <tr><td>10º</td><td>Poder de clérigo</td></tr>
+    <tr><td>11º</td><td>Poder de clérigo</td></tr>
+    <tr><td>12º</td><td>Poder de clérigo</td></tr>
+    <tr><td>13º</td><td>Magias (4º círculo), poder de clérigo</td></tr>
+    <tr><td>14º</td><td>Poder de clérigo</td></tr>
+    <tr><td>15º</td><td>Poder de clérigo</td></tr>
+    <tr><td>16º</td><td>Poder de clérigo</td></tr>
+    <tr><td>17º</td><td>Magias (5º círculo), poder de clérigo</td></tr>
+    <tr><td>18º</td><td>Poder de clérigo</td></tr>
+    <tr><td>19º</td><td>Poder de clérigo</td></tr>
+    <tr><td>20º</td><td>Mão da divindade, poder de clérigo</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -766,7 +800,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um druida começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>  Sobrevivência (Sab) e Vontade (Sab), mais  4  a  sua  escolha  entre  Adestramento  (Car), Atletismo  (For),  Cavalgar  (Des),  Conhecimento (Int), Cura (Sab), Fortitude (Con), Iniciativa (Des), Intuição (Sab), Luta (For), Misticismo (Int), Ofício (Int), Percepção (Sab) e Religião (Sab).</p>
-        <p><b>Proficiências.</b> Escudos.</p>`,
+        <p><b>Proficiências.</b> Escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Devoto, empatia selvagem, magias (1º círculo)</td></tr>
+    <tr><td>2º</td><td>Caminho dos ermos, poder de druida</td></tr>
+    <tr><td>3º</td><td>Poder de druida</td></tr>
+    <tr><td>4º</td><td>Poder de druida</td></tr>
+    <tr><td>5º</td><td>Poder de druida</td></tr>
+    <tr><td>6º</td><td>Magias (2º círculo), poder de druida</td></tr>
+    <tr><td>7º</td><td>Poder de druida</td></tr>
+    <tr><td>8º</td><td>Poder de druida</td></tr>
+    <tr><td>9º</td><td>Poder de druida</td></tr>
+    <tr><td>10º</td><td>Magias (3º círculo), poder de druida</td></tr>
+    <tr><td>11º</td><td>Poder de druida</td></tr>
+    <tr><td>12º</td><td>Poder de druida</td></tr>
+    <tr><td>13º</td><td>Poder de druida</td></tr>
+    <tr><td>14º</td><td>Magias (4º círculo), poder de druida</td></tr>
+    <tr><td>15º</td><td>Poder de druida</td></tr>
+    <tr><td>16º</td><td>Poder de druida</td></tr>
+    <tr><td>17º</td><td>Poder de druida</td></tr>
+    <tr><td>18º</td><td>Poder de druida</td></tr>
+    <tr><td>19º</td><td>Poder de druida</td></tr>
+    <tr><td>20º</td><td>Força da natureza, poder de druida</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -920,7 +988,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um guerreiro começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b>. Luta (For) ou Pontaria (Des), Fortitude (Con), mais 2 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Guerra (Int), Iniciativa (Des), Intimidação (Car), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des) e Reflexos (Des)</p>
-        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Ataque especial +4</td></tr>
+    <tr><td>2º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>3º</td><td>Durão, poder de guerreiro</td></tr>
+    <tr><td>4º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>5º</td><td>Ataque especial +8, poder de guerreiro</td></tr>
+    <tr><td>6º</td><td>Ataque extra, poder de guerreiro</td></tr>
+    <tr><td>7º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>8º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>9º</td><td>Ataque especial +12, poder de guerreiro</td></tr>
+    <tr><td>10º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>11º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>12º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>13º</td><td>Ataque especial +16, poder de guerreiro</td></tr>
+    <tr><td>14º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>15º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>16º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>17º</td><td>Ataque especial +20, poder de guerreiro</td></tr>
+    <tr><td>18º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>19º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>20º</td><td>Campeão, poder de guerreiro</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -994,7 +1096,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um inventor começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>.  Ofício (Int) e Vontade (Sab), mais 4 a sua escolha entre Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Investigação  (Int),  Luta  (For),  Misticismo  (Int), Ofício  (Int),  Pilotagem  (Des),  Percepção  (Sab)  e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Engenhosidade, protótipo</td></tr>
+    <tr><td>2º</td><td>Fabricar item superior (1 melhoria), poder de inventor</td></tr>
+    <tr><td>3º</td><td>Comerciante, poder de inventor</td></tr>
+    <tr><td>4º</td><td>Poder de inventor</td></tr>
+    <tr><td>5º</td><td>Fabricar item superior (2 melhorias), poder de inventor</td></tr>
+    <tr><td>6º</td><td>Poder de inventor</td></tr>
+    <tr><td>7º</td><td>Encontrar fraqueza, poder de inventor</td></tr>
+    <tr><td>8º</td><td>Fabricar item superior (3 melhorias), poder de inventor</td></tr>
+    <tr><td>9º</td><td>Fabricar item mágico (menor), poder de inventor</td></tr>
+    <tr><td>10º</td><td>Olho do dragão, poder de inventor</td></tr>
+    <tr><td>11º</td><td>Fabricar item superior (4 melhorias), poder de inventor</td></tr>
+    <tr><td>12º</td><td>Poder de inventor</td></tr>
+    <tr><td>13º</td><td>Fabricar item mágico (médio), poder de inventor</td></tr>
+    <tr><td>14º</td><td>Poder de inventor</td></tr>
+    <tr><td>15º</td><td>Poder de inventor</td></tr>
+    <tr><td>16º</td><td>Poder de inventor</td></tr>
+    <tr><td>17º</td><td>Fabricar item mágico (maior), poder de inventor</td></tr>
+    <tr><td>18º</td><td>Poder de inventor</td></tr>
+    <tr><td>19º</td><td>Poder de inventor</td></tr>
+    <tr><td>20º</td><td>Obra-prima, poder de inventor</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -1051,7 +1187,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um ladino começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>.  Ladinagem (Des) e Reflexos (Des), mais 8 a sua escolha entre Acrobacia (Des), Atletismo (For), Atuação (Car), Cavalgar (Des), Conhecimento (Int),  Diplomacia  (Car),  Enganação  (Car),  Furtividade (Des), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Ofício (Int), Percepção (Sab), Pilotagem (Des) e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Ataque furtivo +1d6, especialista</td></tr>
+    <tr><td>2º</td><td>Evasão, poder de ladino</td></tr>
+    <tr><td>3º</td><td>Ataque furtivo +2d6, poder de ladino</td></tr>
+    <tr><td>4º</td><td>Esquiva sobrenatural, poder de ladino</td></tr>
+    <tr><td>5º</td><td>Ataque furtivo +3d6, poder de ladino</td></tr>
+    <tr><td>6º</td><td>Poder de ladino</td></tr>
+    <tr><td>7º</td><td>Ataque furtivo +4d6, poder de ladino</td></tr>
+    <tr><td>8º</td><td>Olhos nas costas, poder de ladino</td></tr>
+    <tr><td>9º</td><td>Ataque furtivo +5d6, poder de ladino</td></tr>
+    <tr><td>10º</td><td>Evasão aprimorada, poder de ladino</td></tr>
+    <tr><td>11º</td><td>Ataque furtivo +6d6, poder de ladino</td></tr>
+    <tr><td>12º</td><td>Poder de ladino</td></tr>
+    <tr><td>13º</td><td>Ataque furtivo +7d6, poder de ladino</td></tr>
+    <tr><td>14º</td><td>Poder de ladino</td></tr>
+    <tr><td>15º</td><td>Ataque furtivo +8d6, poder de ladino</td></tr>
+    <tr><td>16º</td><td>Poder de ladino</td></tr>
+    <tr><td>17º</td><td>Ataque furtivo +9d6, poder de ladino</td></tr>
+    <tr><td>18º</td><td>Poder de ladino</td></tr>
+    <tr><td>19º</td><td>Ataque furtivo +10d6, poder de ladino</td></tr>
+    <tr><td>20º</td><td>A pessoa certa para o trabalho, poder de ladino</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
