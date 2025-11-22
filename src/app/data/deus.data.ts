@@ -623,11 +623,133 @@ export class DeusData {
         <p>Paladinos são especiais, por vezes atraindo o interesse pessoal dos deuses. Este paladino pode acabar abordado por uma divindade maior, pedindo (ou exigindo) sua devoção exclusiva. Nesse momento dramático ele pode aceitar servir ao novo patrono ou — que ousadia! — preferir manter sua independência. É uma situação delicada, mesmo os deuses mais bondosos não lidam bem com orgulho ferido. Muito mais complicado é quando dois ou mais deuses cobiçam o guerreiro santo!</p>
         <p>Seguindo o código dos paladinos, mas sem Obrigações & Restrições, o paladino do bem costuma ser um excelente aliado e companheiro em grupos de aventureiros.</p>`,
       },
-      // {
-      //   id: 24,
-      //   nome: 'Ateísmo',
-      //   tipo: 'Maior',
-      // },
+      {
+        id: 24,
+        nome: 'Gwendolynn, a Deusa da Liberdade',
+        tipo: 'Menor',
+        imagem: 'assets/img/deus_gwendolynn.png',
+        referencias: Referencia.DEUSES,
+        paginas: '231',
+        armaPreferida: 'Cajado de batalha',
+        aceitaPaladinos: true,
+        descricao: `
+        <p>Uma elfa de longas tranças loiras, quase sempre de armadura e carregando um bordão. Exaventureira, participou de várias buscas que pareciam missões simples, mas acabaram mudando o destino de Arton. Gwen libertou o feudo de Adhurian de monstros conjurados a partir da Joia da Alma, um dos artefatos mais antigos da Criação. Envolveu-se com os organizadores da Revolta da Lavoura, sendo uma das principais responsáveis por acabar com o escravagismo no Império de Tauron.</p>
+        <p>Então ainda uma clériga de Tanna-Toh, Gwen se mostrou um símbolo de força, esperança e resistência, expondo ao mundo a traição de Glórienn e tornando-se um foco de devoção. Finalmente, ascendeu a divindade menor protegendo a cidade de Tiberus da destruição pela Tormenta.</p>
+        <p>Gwen prega liberdade de todo tipo de escravidão. Isso inclui escravidão física (como era praticada no Império de Tauron) e mental (como a crença na inferioridade dos goblinoides).</p>
+        <p><b>Crenças e Objetivos.</b> Libertar escravos. Libertar mentes. Transformar sistemas rígidos e antiquados. Lutar contra qualquer submissão involuntária. Pregar a independência.</p>
+        <p><b>Símbolo Sagrado.</b> Um elo de corrente partido ao meio.</p>
+        <p><b>Canalizar Energia.</b> Positiva.</p>
+        <p><b>Arma Preferida.</b> Cajado de batalha.</p>
+        <p><b>Devotos.</b> Dahllan, duendes, elfos, elfos-do-mar, eiradaan, galokk, goblins, lefou, minotauros, qareen, kliren, sátiros, sílfides, velocis, bardos, bucaneiros, inventores, ladinos, paladino (único).</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Gwendolynn jamais podem recusar uma missão que envolva a libertação de escravos, exceto quando isso significa a morte ou a ruína de seus próprios aliados.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Dahllan',
+          'Duendes',
+          'Elfos',
+          'Elfos-do-mar',
+          'Eiradaan',
+          'Galokk',
+          'Goblins',
+          'Lefou',
+          'Minotauros',
+          'Qareen',
+          'kliren',
+          'Sátiros',
+          'Sílfides',
+          'Velocis',
+          'Bardos',
+          'Bucaneiros',
+          'Inventores',
+          'Ladinos',
+          'Paladino (único)',
+        ],
+      },
+      {
+        id: 25,
+        nome: 'Mauziell, a Deusa das Avós',
+        tipo: 'Menor',
+        imagem: 'assets/img/deus_mauziell.png',
+        referencias: Referencia.DEUSES,
+        paginas: '231 e 232',
+        armaPreferida: 'Bengala (conta como uma clava; Tormenta20, p. 147).',
+        aceitaPaladinos: true,
+        descricao: `
+        <p>Uma velhinha enrugada e de aparência frágil, que mora em uma cabana no meio da floresta em Tollon. É impossível chegar a essa cabana por meios mágicos; de fato, existem apenas dois caminhos pela floresta para chegar lá — um longo e iluminado, que não chega a lugar nenhum, e outro estreito e escuro, cercado por olhos na sombra: o verdadeiro caminho. Mauziell afirma que vive ali para que seus netos tenham que vencer perigos para levar-lhe cestas de doces, e sua casa é abarrotada de enfeites e crochês. Mauziell tem idade para ser a avó de qualquer criatura (deuses inclusos) e sempre tem informações e objetos que apenas uma avó teria — o que inclui itens e memórias há muito perdidos ou esquecidos. Todos são netos de Mauziell, e por isso seus devotos são instigados a agir como ela, cuidando dos outros como apenas avós são capazes. Apesar de não parecer, Mauziell teve grande participação na empreitada de Orion Drake para libertar o Império de Jade da Tormenta. Ela ajudou a recrutar vários deuses para o exército do antigo cavaleiro da Luz e, na batalha na área de Tormenta de Tamu-ra, foi quem derrotou Andaluzia, a Bruxa sem Rosto que transportava os exércitos corrompidos de Crânio Negro por toda Arton, devolvendo a ela seu rosto, suas memórias e sua sanidade.</p>
+        <p><b>Crenças e Objetivos.</b> Cuidar dos outros como se fossem netos. Guardar coisas para que não se percam. Instigar pessoas a agir de forma adequada. Servir como exemplo.</p>
+        <p><b>Símbolo Sagrado.</b> Uma cesta de piquenique.</p>
+        <p><b>Canalizar Energia.</b> Positiva.</p>
+        <p><b>Arma Preferida.</b> Bengala (conta como uma clava; Tormenta20, p. 147).</p>
+        <p><b>Devotos.</b> Anões, centauros, duendes, elfos, gnolls, lefou, qareen, hynne, sátiros, tengu, arcanistas, bardos, caçadores, cavaleiros, guerreiros, nobres, paladino (único).</p>
+        <p><b>Obrigações & Restrições.</b> Um devoto de Mauziell é, para todos os efeitos, uma avó, e portanto precisa da ajuda de seus “netos” para realizar tarefas, como abrir potes de geleia ou carregar coisas pesadas. O devoto deve pedir a ajuda de uma criatura para realizar alguma tarefa pelo menos uma vez por dia (ou por sessão de jogo, o que demorar mais), como forma de honrar sua divindade. Em termos de jogo, a criatura deve passar em um teste de perícia aplicável ao pedido com CD mínima 15 + metade do seu nível.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Anões',
+          'Centauros',
+          'Duendes',
+          'Elfos',
+          'Gnolls',
+          'Lefou',
+          'Qareen',
+          'Hynne',
+          'Sátiros',
+          'Tengu',
+          'Arcanistas',
+          'Bardos',
+          'Caçadores',
+          'Cavaleiros',
+          'Guerreiros',
+          'Nobres',
+          'Paladino (único)',
+        ],
+      },
+      {
+        id: 26,
+        nome: 'Tibar, o Deus do Comércio',
+        tipo: 'Menor',
+        imagem: 'assets/img/deus_tibar.png',
+        referencias: Referencia.DEUSES,
+        paginas: '233',
+        armaPreferida: 'Não há. Devotos deste deus não podem usar a magia Arma Espiritual e similares.',
+        aceitaPaladinos: false,
+        descricao: `
+        <p>Cerca de 400 anos atrás, para facilitar o comércio e regulamentar os valores de cada mercadoria, foi cunhada uma moeda de prata com 1,5cm de diâmetro. A moeda tinha, numa face, o retrato de um rei com uma coroa. Na outra, o mesmo rei, mas sem a coroa.</p>
+        <p>Essa moeda foi criada por um humano chamado Quindogar Tolliannor, o primeiro conselheiro real de Deheon e grande adepto das artes da barganha e negociação. Tal moeda foi batizada de tibar e ficou tão popular tão rapidamente que seu criador começou a ser chamado pelo mesmo nome. Com o tempo, Quindogar ascendeu a Deus do Comércio, com o nome Tibar. Não se sabe mais como era a aparência original de Tibar, pois a crença dos fiéis foi tanta que hoje sua face é a mesma cunhada nas moedas de prata, cobre e ouro que circulam por todo o Reinado e além. Devotos do Deus do Comércio levam consigo sempre uma moeda de tibar, normalmente usada como um medalhão ao redor do pescoço. Alguns não devotos também costumam carregar uma moeda dessa forma, pois acredita-se que fazê-lo atrai a prosperidade financeira. Embora possa não parecer, Tibar é um deus poderoso. Toda e qualquer troca, seja um escambo, seja uma transação financeira, é domínio de Tibar e portanto uma forma de cultuá-lo.</p>
+        <p><b>Crenças e Objetivos.</b> Realizar negócios. Completar transações comerciais. Incentivar a troca de bens e mercadorias. Criar e proteger caravanas comerciais. Vender e comprar itens. Fomentar a prosperidade.</p>
+        <p><b>Símbolo Sagrado.</b> Um tibar.</p>
+        <p><b>Canalizar Energia.</b> Qualquer.</p>
+        <p><b>Arma Preferida.</b> Não há. Devotos deste deus não podem usar a magia Arma Espiritual e similares.</p>
+        <p><b>Devotos.</b> Anões, elfos, golens, hynne, kallyanach, kliren, minotauros, nagahs, qareen, arcanistas, bardos, bucaneiros, caçadores, guerreiros, inventores, nobres.</p>
+        <p><b>Obrigações & Restrições.</b> Um devoto de Tibar nunca pode deixar de comercializar! Ele sempre deve barganhar em qualquer transação financeira de que participar e, uma vez a cada semana, deve gastar pelo menos T$ 50 por patamar em itens ou serviços.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Anões',
+          'Elfos',
+          'Golens',
+          'Hynne',
+          'Kallyanach',
+          'Kliren',
+          'Minotauros',
+          'Nagahs',
+          'Qareen',
+          'Arcanistas',
+          'Bardos',
+          'Bucaneiros',
+          'Caçadores',
+          'Guerreiros',
+          'Inventores',
+          'Nobres',
+        ],
+      },
     ];
   }
 }

@@ -18121,6 +18121,36 @@ export class PoderData {
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 59,
+      },
+      {
+        id: 1736,
+        nome: 'Liberdade Irrestrita',
+        descricao: `
+        <p>Você recebe +2 em testes de manobra para evitar ser agarrado e de resistência contra efeitos mentais, de medo, de metamorfose e de movimento. Além disso, se falhar num desses testes, pode rolá-lo novamente. Se ainda assim falhar, no início de cada um de seus turnos pode rolar esse teste novamente, como uma ação livre e com um bônus cumulativo de +2, até se libertar.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [24],
+      },
+      {
+        id: 1737,
+        nome: 'Guardei para Você',
+        descricao: `
+        <p>Você pode gastar uma ação de movimento e 1 PM para produzir uma lembrança, na forma de uma memória ou de um objeto, para um aliado em alcance curto. Uma memória fornece +1d4 em um teste de perícia feito até o fim da cena, enquanto um objeto é uma versão mundana e não superior de um item não consumível a sua escolha, que dura até o fim da cena ou até ser largado pelo aliado. Você só pode produzir uma lembrança para cada aliado na mesma cena. ✨</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [25],
+      },
+      {
+        id: 1738,
+        nome: 'Incentivador da Economia',
+        descricao: `
+        <p>A cada T$ 50 x seu nível que gastar em uma aventura, você recebe +1 PM cumulativo até o fim da aventura.</p>`,
+        referencias: Referencia.DEUSES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [26],
       }
     );
   }
