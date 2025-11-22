@@ -24,7 +24,14 @@ export class ItemData {
         id: 1,
         nome: 'Arco do Poder',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ESFERA, Chave.NAO_LETAL, Chave.ACAO_AGARRAR, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [
+          Chave.ATAQUE,
+          Chave.ATAQUE_A_DISTANCIA,
+          Chave.ESFERA,
+          Chave.NAO_LETAL,
+          Chave.ACAO_AGARRAR,
+          Chave.ITEM_MAGICO_MAIOR,
+        ],
         descricao: `O arco do poder conta como um arco longo formidável, mas parece apenas o corpo de um arco — não tem corda e não aceita flechas. Contudo, quando você o empunha e faz o gesto de puxar a corda inexistente, o arco cria uma corda e uma flecha de energia dourada. O arco do poder é capaz de ler suas intenções, produzindo diferentes tipos de flechas energéticas a sua escolha.
         <ul>
         <li><i>Flecha Normal.</i> 3d8 pontos de dano de essência.</li>
@@ -51,13 +58,13 @@ export class ItemData {
         preco_conserto: 9000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '336 e 337'
+        paginas: '336 e 337',
       },
       {
         id: 2,
         nome: 'Avalanche',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este machado de guerra de gelo eterno congelante formidável fornece redução de fogo 10. Você pode gastar uma ação padrão e 6 PM para brandi-lo acima de sua cabeça e invocar uma tempestade de gelo que afeta alcance curto ao seu redor. Criaturas na área recebem camuflagem leve e sofrem 3d6 pontos de dano de impacto e 3d6 pontos de frio por rodada. Você não sofre os efeitos nocivos da tempestade (o dano e a chance de falha pela camuflagem) e pode gastar 1 PM no início de cada um de seus turnos para mantê-la.
         `,
         dano: '1d12',
@@ -78,13 +85,13 @@ export class ItemData {
         preco_conserto: 14000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 3,
         nome: 'Azagaia dos Relâmpagos',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Quando arremessada, esta azagaia se transforma em um Relâmpago (8d6 de dano de eletricidade numa linha com alcance médio; CD For ou Des a sua escolha). Quando atinge o fim do alcance ela volta a ser uma azagaia e volta para você no fim do turno.
         `,
         dano: '8d6',
@@ -105,13 +112,13 @@ export class ItemData {
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 4,
         nome: 'Besta Explosiva',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta besta pesada formidável é feita de madeira escurecida, similar a carvão. Quando usa uma besta explosiva, você pode gastar 3 PM para transformar o virote disparado por ela em uma Bola de Fogo. Você pode mirar esta Bola de Fogo em uma criatura ou em um ponto em alcance médio. No primeiro caso, faça um ataque contra o alvo. Se acertar, ele sofre o dano do disparo mais 6d6 de fogo. Além disso, todas as criaturas a até 6m do alvo sofrem 6d6 pontos de dano de fogo (Ref CD Des reduz à metade). Porém, se o ataque errar, o virote se desfaz em uma nuvem de cinzas inofensivas. No segundo caso, ela funciona como a magia de mesmo nome. Nenhum teste de ataque é necessário e todas as criaturas a 6m do ponto escolhido sofrem 6d6 pontos de dano de fogo (Ref reduz à metade). `,
         dano: '1d12/6d6',
         margem_ameaca: 2,
@@ -131,13 +138,13 @@ export class ItemData {
         preco_conserto: 10000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 5,
         nome: 'Cajado da Destruição',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este bordão formidável escuro e reforçado com ponteiras de metal é procurado por conjuradores de batalha. Conta como um cajado arcano. Além dos benefícios desse esotérico, quando você lança uma magia de dano, ela causa +1 ponto de dano por dado.`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -157,13 +164,13 @@ export class ItemData {
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 6,
         nome: 'Cajado da Vida',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.CURA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.CURA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este bordão formidável branco com runas prateadas é valorizado por curandeiros. Conta como um cajado arcano, mas afeta magias divinas. Além disso, quando você lança uma magia de cura, ela cura +2 pontos de vida por dado.`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -183,13 +190,13 @@ export class ItemData {
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 7,
         nome: 'Cajado do Poder',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este bordão defensor magnífico tem cabo reto e liso, com uma joia cintilante na ponta. Conta como um cajado arcano. Além dos benefícios desse esotérico, o custo de suas magias arcanas diminui em –1 PM (cumulativo com Mestre em Escola) e a CD para resistir a elas aumenta em +2 (para um aumento total de +3).`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -209,13 +216,13 @@ export class ItemData {
         preco_conserto: 18000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 8,
         nome: 'Espada Baronial',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta espada longa de guarda reta fornece +1 em testes de ataque e rolagens de dano. Este bônus aumenta em +1 se você possuir um código de conduta (de honra, do herói...), for devoto de Khalmyr ou for treinado em Nobreza. Os bônus são cumulativos — um personagem com um código de conduta, devoto de Khalmyr e treinado em Nobreza recebe +4 em ataque e dano.`,
         dano: '1d8',
         margem_ameaca: 2,
@@ -235,13 +242,13 @@ export class ItemData {
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 9,
         nome: 'Espada Sortuda',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta espada curta formidável é cravejada de brilhantes. Você recebe +2 nos testes de resistência e pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste). Se possuir o poder Sortudo, em vez disso seu custo diminui em –1 PM.`,
         dano: '1d6',
         margem_ameaca: 2,
@@ -261,13 +268,13 @@ export class ItemData {
         preco_conserto: 11000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 10,
         nome: 'Florete Fugaz',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este florete formidável tem o cabo e a guarda trabalhados com prata e pedrarias. Quando usa a ação agredir, você pode gastar 1 PM. Se fizer isso e acertar um crítico no turno, pode fazer um ataque adicional contra a mesma criatura.`,
         dano: '1d6',
         margem_ameaca: 3,
@@ -287,13 +294,13 @@ export class ItemData {
         preco_conserto: 5000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '337'
+        paginas: '337',
       },
       {
         id: 11,
         nome: 'Lâmina da Luz',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `De lâmina prateada e reluzente, esta espada bastarda formidável é concedida a cavaleiros da Luz de honra e virtude comprovadas. Você pode gastar uma ação de movimento e 2 PM para erguer a lâmina da luz acima de sua cabeça. Se fizer isso, ela irradia luz brilhante em alcance médio até o fim da cena. Todos os inimigos dentro da luz ficam ofuscados.`,
         dano: '1d10',
         margem_ameaca: 2,
@@ -313,13 +320,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 12,
         nome: 'Lança Animalesca',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Espinhos e folhas vivas brotam desta lança formidável. Se você usar a habilidade Forma Selvagem, aplica o bônus de +2 em ataque e dano da lança animalesca em suas armas naturais.`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -339,13 +346,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 13,
         nome: 'Língua do Deserto',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta cimitarra formidável é originária do Deserto da Perdição. Você pode gastar uma ação de movimento e 1 PM para transformar a lâmina dela em chamas até o fim da cena. Nessa condição, o dano da arma aumenta em um passo e passa a ser do tipo fogo. Você pode gastar uma ação de movimento e 2 PM para fazer as chamas brilharem com muita força. Isso deixa os inimigos em alcance curto desprevenidos por uma rodada.`,
         dano: '1d6',
         margem_ameaca: 3,
@@ -365,13 +372,13 @@ export class ItemData {
         preco_conserto: 9000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 14,
         nome: 'Maça do Terror',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: ` Esta maça formidável é feita com um osso e um crânio e permite que você lance a magia Amedrontar (CD For ou Car a sua escolha). Caso já conheça a magia, o custo para lançá-la diminui em –1 PM.`,
         dano: '1d8',
         margem_ameaca: 1,
@@ -391,13 +398,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 15,
         nome: 'Machado Silvestre',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `O cabo e a lâmina deste machado de batalha formidável são cobertos de gravuras representando plantas e animais selvagens. Quando você usa o machado silvestre em um ambiente ermo e ao ar livre, causa +1d8 de dano e recebe o poder Trespassar. Caso já possua este poder, pode utilizá-lo sem pagar pontos de mana.`,
         dano: '1d8',
         margem_ameaca: 1,
@@ -417,13 +424,13 @@ export class ItemData {
         preco_conserto: 7000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 16,
         nome: 'Martelo de Doherimm',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este martelo de guerra formidável é feito de pedra e aço. Quando empunhado por um anão, adquire o encanto arremesso e aumenta seu dano em +1d8 (ou +2d8 se usado contra criaturas Grandes ou maiores).`,
         dano: '1d8',
         margem_ameaca: 1,
@@ -443,13 +450,13 @@ export class ItemData {
         preco_conserto: 7000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 17,
         nome: 'Punhal Sszzaazita',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta adaga assassina formidável venenosa tem lâmina negra e ondulada. Você pode gastar uma ação padrão e 2 PM para transformar o punhal sszzaazita em um objeto inofensivo de tamanho similar, como uma colher ou pena. Nenhuma magia é capaz de detectar essa transformação. Transformar o punhal em arma é uma ação livre.`,
         dano: '1d4',
         margem_ameaca: 2,
@@ -457,7 +464,7 @@ export class ItemData {
         cd_identificar_item: 30,
         alcance: 0,
         espaco: 1,
-        tipo_dano: [TipoDano.PERFURACAO, Chave.TIPO_DANO_VENENO, Chave.ITEM_MAGICO_MAIOR,],
+        tipo_dano: [TipoDano.PERFURACAO, Chave.TIPO_DANO_VENENO, Chave.ITEM_MAGICO_MAIOR],
         preco: 100000,
         rd: 50,
         pv: 42,
@@ -469,13 +476,13 @@ export class ItemData {
         preco_conserto: 10000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 18,
         nome: 'Vingadora Sagrada',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta espada longa formidável revela todo o seu poder apenas quando empunhada por um paladino. Se você for um paladino, recebe +5 em testes de ataque e rolagens de dano, o custo de seu Golpe Divino é reduzido em –1 PM e você e seus aliados em alcance curto recebem resistência a magia +5.`,
         dano: '1d8',
         margem_ameaca: 2,
@@ -495,13 +502,13 @@ export class ItemData {
         preco_conserto: 20000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 19,
         nome: 'Chifre de Unicórnio',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.CURA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.CURA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `<p>Um chifre de unicórnio é um poderoso item mágico de cura. Se estiver empunhando o chifre, você pode lançar Curar Ferimentos e Purificação; caso já conheça essas magias, seu custo diminui em –1 PM, cumulativo com outras reduções. Ele também pode ser usado para lançar a magia Segunda Chance, mas perde todos os poderes após isso. Por fim, ele pode ser empunhado como uma espada curta formidável.</p>
         <p>Mesmo sem seus poderes, o chifre pode ser transformado em 12 doses de pó de chifre, um poderoso ingrediente para preparados e poções. Misturar uma dose desse pó aos ingredientes de um preparado ou poção aumenta cada dado de cura do efeito do item em dois passos (até um máximo de d12).</p>
         <p>Ainda que o simples ato de portar um chifre de unicórnio não seja necessariamente maligno, muitos devotos, sobretudo de Allihanna e Marah, poderão questionar a origem do chifre. Chifres de unicórnio não podem ser fabricados, e são obtidos apenas de um unicórnio morto. Acessório maior, preço T$ 120.000.</p>
@@ -524,13 +531,13 @@ export class ItemData {
         preco_conserto: 12000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.AMEACAS,
-        paginas: '402'
+        paginas: '402',
       },
       {
         id: 20,
         nome: 'Fragmento de Filactério',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Mesmo após a destruição do filactério de um lich, uma parte do poder mágico da criatura pode permanecer, geralmente em seu maior fragmento. Um fragmento de filactério conta como uma costela de lich poderosa que fornece +20 PM (somente após um dia de uso). Um fragmento só pode ser obtido de um filactério estilhaçado e não pode ser fabricado. Acessório maior, preço T$ 90.000.
         `,
         dano: '',
@@ -551,13 +558,13 @@ export class ItemData {
         preco_conserto: 9000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.AMEACAS,
-        paginas: '402'
+        paginas: '402',
       },
       {
         id: 21,
         nome: 'Pilão Conspurcado',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este pequeno pilão de madeira de aparência sinistra é decorado com símbolos místicos entalhados e fragmentos de ossos encravados. Conta como uma costela de lich. Além dos benefícios desse esotérico, o custo de suas magias de encantamento e necromancia lançadas pela varinha diminui em –1 PM e a CD para resistir a elas aumenta em +2. Acessório médio, preço T$ 21.000.
         `,
         dano: '',
@@ -578,13 +585,13 @@ export class ItemData {
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.AMEACAS,
-        paginas: '403'
+        paginas: '403',
       },
       {
         id: 22,
         nome: 'Pistola Demoníaca',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta pistola ameaçadora formidável e profana não pode ser fabricada por nenhum meio conhecido por mortais e só pode ser obtida através de um pacto com um demônio da pólvora (veja p. 255). Uma pistola demoníaca está sempre carregada e não precisa de munição. Uma vez por dia, em um momento escolhido pelo mestre (ou na primeira ocasião em que houver outras pessoas próximas), o portador da arma é atingido pelo impulso homicida de disparar contra uma criatura inteligente aleatória à vista (incluindo aliados). O portador pode resistir a esse impulso por este dia passando em um teste de Vontade (CD 25). Qualquer medida para evitar acidentes (manter a pistola guardada, descarregada ou mesmo trancada e fora de alcance) fracassa automaticamente; quando o portador cede ao impulso assassino, a arma surge magicamente em suas mãos. Caso o portador da pistola seja morto, a arma desaparece. Arma específica média, preço T$ 72.250.
         `,
         dano: '2d6',
@@ -605,13 +612,13 @@ export class ItemData {
         preco_conserto: 7225,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.AMEACAS,
-        paginas: '403'
+        paginas: '403',
       },
       {
         id: 23,
         nome: 'Uyzrrak Da’ukthra',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este machado de guerra magnífico aumentado atroz de adamante é marcado com escrita goblinoide em sua lâmina e aparenta já ter visto inúmeras batalhas. Quando empunhado por um duyshidakk, causa +2d8 pontos de dano contra qualquer criatura não duyshidakk e recebe um encanto adicional, conforme o elemento do círculo intermediário do Akzath mais próximo do portador: Luz, Sagrado; Nós, Piedoso; Dentro, Defensor; Estagnação, Excruciante; Trevas, Profano; Fora, Arremesso; Eles, Dilacerante; Movimento, Energético. A critério do mestre, se o portador do machado se tornar mais pró-ximo de outro elemento, o encanto muda de acordo. Arma específica média, preço T$ 78.050.
         `,
         dano: '1d12',
@@ -632,13 +639,13 @@ export class ItemData {
         preco_conserto: 7805,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.AMEACAS,
-        paginas: '403'
+        paginas: '403',
       },
       {
         id: 24,
         nome: 'Adaga da Bruma',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta lâmina fina, que parece estar sempre envolta em névoa suave, é uma adaga formidável. Se acertar um ataque com esta arma, você pode gastar 2 PM para se tornar invisível por 1 rodada.
         `,
         dano: '1d4',
@@ -659,13 +666,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 25,
         nome: 'Arco das Sombras',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Feito de madeira negra e fosca, que dizem provir do Reino de Tenebra, este arco curto sombrio parece absorver a luz ao redor. Quando ataca com esta arma, você pode gastar 2 PM. Se fizer isso e acertar o ataque, o alvo fica cego por 1 rodada (Fort CD Des evita).
         `,
         dano: '1d6',
@@ -686,13 +693,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 26,
         nome: 'Arco do Crepúsculo',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Um arco longo formidável que muda de cor conforme o sol se põe. Quando ataca com esta arma, você pode gastar 1 PM. Se fizer isso e acertar o ataque, o alvo fica ofuscado por 1d4 rodadas.
         `,
         dano: '1d8',
@@ -713,13 +720,13 @@ export class ItemData {
         preco_conserto: 2250,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 27,
         nome: 'Azagaia Fantasma',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_A_DISTANCIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta azagaia caçadora é feita de um material transparente como cristal. Quando a arremessa, você pode gastar 1 PM para que ela ignore a RD do alvo. Ela volta para você no fim do turno.
         `,
         dano: '1d6',
@@ -740,13 +747,13 @@ export class ItemData {
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 28,
         nome: 'Besta Estelar',
         tipo: TipoItem.ARMA,
-        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Incrustada com gemas que brilham como estrelas, esta é uma besta leve cravejada de gemas formidável. Você pode gastar 3 PM para disparar um projétil mágico que não causa dano, mas emite luzes coloridas, deixando inimigos em um raio de 9m do ponto de impacto fascinados por 1d4 rodadas (Von CD Des evita).
         `,
         dano: '1d8',
@@ -767,13 +774,13 @@ export class ItemData {
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 29,
         nome: 'Clava de Lava',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta clava de madeira escura apresenta fendas que emitem calor e luz alaranjada. É uma clava maciça flamejante formidável; quando acerta um ataque com ela, você pode gastar 1 PM para aumentar o dano de fogo para +3d6.
         `,
         dano: '1d6',
@@ -794,13 +801,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 30,
         nome: 'Espada da Tempestade',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta espada longa precisa formidável trovejante possui uma lâmina azulada, gravada com runas que brilham raivosas durante tempestades. Quando faz um acerto crítico, você pode gastar 2 PM para estender o efeito de atordoamento do encanto trovejante a todas as criaturas a sua escolha em alcance curto.
         `,
         dano: '1d8',
@@ -821,13 +828,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 31,
         nome: 'Espada do Guardião',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Uma espada longa defensora formidável com um cabo robusto e inscrições rúnicas protetoras. Uma vez por rodada, você pode gastar 3 PM para criar uma barreira que fornece RD 10 a você e todos os aliados em um raio de 6m por 1 rodada.
         `,
         dano: '1d8',
@@ -848,13 +855,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 32,
         nome: 'Espada Solar',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta espada bastarda magnífica emite uma luz dourada que aquece o entorno. Você pode gastar 3 PM para fazer a espada emitir um clarão que cega todos os inimigos em alcance curto por 1 rodada (Ref CD For ou Des evita).
         `,
         dano: '1d10',
@@ -875,13 +882,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '257'
+        paginas: '257',
       },
       {
         id: 33,
         nome: 'Florete do Vendaval',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Um florete leve formidável de mitral, ornamentado com penas e linhas suaves. Você pode gastar 3 PM para ganhar deslocamento de voo 12m por 2 rodadas. Durante esse tempo, você recebe +5 na Defesa contra ataques à distância.
         `,
         dano: '1d6',
@@ -902,13 +909,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 34,
         nome: 'Lança da Fênix',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ARREMESSO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta lança flamejante magníficatem a ponta forjada no formato de uma chama. Sempre que reduz um inimigo a 0 PV, você recupera 10 PV. Além disso, uma vez por cena, caso você seja reduzido a 0 PV, pode gastar 5 PM para renascer como uma fênix. Se fizer isso, você é reerguido com metade de seus PV totais e gera uma explosão que causa 10d6 pontos de dano de fogo em todas as demais criaturas em um raio de 9m.
         `,
         dano: '1d6',
@@ -929,13 +936,13 @@ export class ItemData {
         preco_conserto: 10000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 35,
         nome: 'Machado da Natureza',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este machado de batalha preciso formidável tem aparência rústica, coberto por musgos e vinhas. Sempre que você faz um acerto crítico com ele, recupera 1d12+1 PV.
         `,
         dano: '1d8',
@@ -947,7 +954,7 @@ export class ItemData {
         tipo_dano: [TipoDano.CORTE],
         preco: 22500,
         rd: 50,
-        pv: 45, 
+        pv: 45,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
         preco_fabricacao: 7500,
         cd_fabricacao: 50,
@@ -956,13 +963,13 @@ export class ItemData {
         preco_conserto: 2250,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 36,
         nome: 'Alaúde Elétrico',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este instrumento exótico decorado com uma pintura espalhafatosa, o Alaúde Elétrico é cheio de medidores e válvulas, como uma engenhoca goblon. Seu poder se manifesta quando um bardo começa a dedilhar suas cordas - o alaúde elétrico é imbuído com o poder do relâmpago. A cada nota que produz, faíscas e pequenas descargas elétricas correm pela pelas cordas e surgem de seu braço. Usando esse instrumento, a Inspiraçãodo bardo passa a afetar aliados em alcance médio. Além disso, uma vez por rodada, como uma ação completa, o bardo poder fazer um teste de atuação (CD 15 + Custo em PM da Magia) para tentar executar um solo mágico e lançar as magias Luz e Relâmpago sem custo. O usuário pode escolher usar os aprimoramentos das magias, aumentando a complexidade e a dificuldade do solo.
         `,
         dano: '',
@@ -974,7 +981,7 @@ export class ItemData {
         tipo_dano: [],
         preco: 27000,
         rd: 45,
-        pv: 45, 
+        pv: 45,
         pericia_fabricacao_conserto: 'Ofício Artesão',
         preco_fabricacao: 9000,
         cd_fabricacao: 50,
@@ -983,13 +990,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.MARCA_TEXTO,
-        paginas: ''
+        paginas: '',
       },
       {
         id: 37,
         nome: 'Machado do Abismo',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este machado de lâmina dupla é feito de metal negro e emite um leve brilho púrpura. É um machado de batalha macabro formidável. Você pode gastar uma ação de movimento e 3 PM para invocar uma onda de energia abissal. Quando faz isso, criaturas a sua escolha em um raio de 9m sofrem 4d8 pontos de dano de essência e ficam abaladas por 1 rodada (Vontade CD For ou Des reduz o dano à metade e evita a condição).
         `,
         dano: '1d8',
@@ -1001,7 +1008,7 @@ export class ItemData {
         tipo_dano: [TipoDano.CORTE],
         preco: 36000,
         rd: 50,
-        pv: 45, 
+        pv: 45,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
         preco_fabricacao: 12000,
         cd_fabricacao: 50,
@@ -1010,13 +1017,13 @@ export class ItemData {
         preco_conserto: 3600,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 38,
         nome: 'Machado do Vulcão',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este machado de guerra maciço flamejante formidável tem textura vítrea, com magma rodopiando em seu interior. Você pode gastar uma ação de movimento e 3 PM para causar uma detonação vulcânica em um quadrado de 3m em alcance médio. Criaturas nessa área sofrem 3d10 pontos de dano de fogo e ficam em chamas (Ref CD For ou Des reduz à metade e evita a condição).
         `,
         dano: '1d12',
@@ -1028,7 +1035,7 @@ export class ItemData {
         tipo_dano: [TipoDano.CORTE],
         preco: 54000,
         rd: 50,
-        pv: 50, 
+        pv: 50,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
         preco_fabricacao: 18000,
         cd_fabricacao: 50,
@@ -1037,13 +1044,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 39,
         nome: 'Martelo da Terra',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este martelo de guerra cravejado de gemas formidável de adamante é adornado com cristais brilhantes e gravuras de montanhas. Você pode gastar uma ação de movimento e 3 PM para invocar uma rachadura no solo, que percorre uma linha de 18m. Criaturas nessa área são tragadas pela rachadura de 1,5m de profundidade (Ref CD For ou Des evita). Uma criatura tragada fica caída e vulnerável até sair da rachadura, o que requer uma ação completa.
         `,
         dano: '1d8',
@@ -1055,7 +1062,7 @@ export class ItemData {
         tipo_dano: [TipoDano.IMPACTO],
         preco: 33000,
         rd: 50,
-        pv: 45, 
+        pv: 45,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
         preco_fabricacao: 11000,
         cd_fabricacao: 50,
@@ -1064,13 +1071,13 @@ export class ItemData {
         preco_conserto: 3300,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 40,
         nome: 'Martelo do Titã',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: ` Este martelo de guerra formidável, feito de rochas negras e pesadas, tem aparência robusta. Sempre que você faz um acerto crítico com ele, pode gastar 2 PM para empurrar o alvo 6m para trás.
         `,
         dano: '1d8',
@@ -1082,7 +1089,7 @@ export class ItemData {
         tipo_dano: [TipoDano.IMPACTO],
         preco: 33000,
         rd: 50,
-        pv: 45, 
+        pv: 45,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
         preco_fabricacao: 11000,
         cd_fabricacao: 50,
@@ -1091,13 +1098,13 @@ export class ItemData {
         preco_conserto: 3300,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 41,
         nome: 'Punhal das Profundezas',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Uma adaga formidável curva feita de um material escuro e úmido, com cheiro de sal. Quando ataca com este punhal, você pode gastar 1 PM para causar +3d6 pontos de dano de ácido.
         `,
         dano: '1d4',
@@ -1109,7 +1116,7 @@ export class ItemData {
         tipo_dano: [TipoDano.IMPACTO],
         preco: 36000,
         rd: 50,
-        pv: 42, 
+        pv: 42,
         pericia_fabricacao_conserto: 'Ofício Armeiro',
         preco_fabricacao: 12000,
         cd_fabricacao: 50,
@@ -1118,13 +1125,13 @@ export class ItemData {
         preco_conserto: 3600,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 42,
         nome: 'Cajado das Marés',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este cajado arcano glacial é feito de coral azul e conchas. Você recebe deslocamento de natação 9m (se já possui deslocamento de natação, ele aumenta em +3m). Além disso, você pode gastar uma ação de movimento e 2 PM para conjurar um redemoinho que empurra todos os inimigos adjacentes 4,5m para longe de você (Ref CD Int evita).`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -1144,13 +1151,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 43,
         nome: 'Cálice Sagrado',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este cálice pode ser luxuoso ou humilde — de ouro e adornado com gemas, ou de barro e feitio rústico —, conforme a divindade à qual foi consagrado. O custo de suas magias divinas diminui em –2 PM e todos os efeitos variáveis delas aumentam em +1 por dado.`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -1170,13 +1177,13 @@ export class ItemData {
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 44,
         nome: 'Relógio do Arcanista',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este relógio de bolso com corpo de prata possui símbolos arcanos no lugar de números em seu mostrador, e permite manipular o tempo necessário para lançar magias arcanas. Quando lança uma magia arcana com execução de movimento, padrão ou completa, você pode gastar +4 PM para lançá-la como uma ação livre. Se você possuir o poder Magia Acelerada, em vez disso o custo para usá-lo diminui em –2 PM.`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -1196,13 +1203,13 @@ export class ItemData {
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 45,
         nome: 'Varinha Milenar',
         tipo: TipoItem.ESOTERICO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.MAGIA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Um esotérico ancestral, que já foi usado por diversos arquimagos ao longo da história artoniana… e absorveu um pouco do poder de cada um deles. A varinha milenar conta como uma varinha arcana, mas aumenta a CD para resistir a suas magias arcanas em +4 e aumenta todos os dados de dano de suas magias arcanas em um passo. É um item poderoso, mas exigente: se um inimigo passar em um teste de resistência contra uma magia sua, você perde 1 PV por PM gasto na magia.`,
         dano: '1d6',
         margem_ameaca: 1,
@@ -1222,17 +1229,17 @@ export class ItemData {
         preco_conserto: 20000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 46,
         nome: 'Armadura da Luz',
         tipo: TipoItem.ARMADURA,
         chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PROFICIENCIA_ARMADURA_PESADA,
           Chave.SOB_MEDIDA,
-          Chave.ITEM_MAGICO_MAIOR,   
+          Chave.ITEM_MAGICO_MAIOR,
         ],
         descricao: `Esta armadura completa banhada a ouro reforçada guardiã zelosa possui o símbolo de Khalmyr gravado no peitoral. Se você possuir um código de conduta (de honra, do herói...) ou for devoto de uma divindade que canaliza apenas energia positiva, recebe redução de dano igual ao seu Carisma.`,
         preco: 150000,
@@ -1256,17 +1263,17 @@ export class ItemData {
         alcance: 0,
         penalidade: 6,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 47,
         nome: 'Baluarte Anão',
         tipo: TipoItem.ARMADURA,
         chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PROFICIENCIA_ARMADURA_PESADA,
           Chave.SOB_MEDIDA,
-          Chave.ITEM_MAGICO_MAIOR,   
+          Chave.ITEM_MAGICO_MAIOR,
         ],
         descricao: `Esta armadura completa reforçada defensora de adamante fornece proteção sem igual. Se você não se deslocar em seu turno, a RD que ela fornece aumenta para 10 até seu próximo turno.`,
         preco: 50000,
@@ -1290,15 +1297,15 @@ export class ItemData {
         alcance: 0,
         penalidade: 6,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 48,
         nome: 'Carapaça Demoníaca',
         tipo: TipoItem.ARMADURA,
         chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PROFICIENCIA_ARMADURA_PESADA,
           Chave.SOB_MEDIDA,
           Chave.ITEM_MAGICO_MAIOR,
         ],
@@ -1324,15 +1331,15 @@ export class ItemData {
         alcance: 0,
         penalidade: 6,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 49,
         nome: 'Cota Élfica',
         tipo: TipoItem.ARMADURA,
         chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PROFICIENCIA_ARMADURA_PESADA,
           Chave.SOB_MEDIDA,
           Chave.ITEM_MAGICO_MAIOR,
         ],
@@ -1358,17 +1365,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 50,
         nome: 'Couraça do Comando',
         tipo: TipoItem.ARMADURA,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.EMPUNHADURA_ARMA_LEVE,
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.EMPUNHADURA_ARMA_LEVE, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta couraça banhada a ouro sob medida defensora irradia uma aura de autoridade. Você recebe +1 em Carisma. Se usar o poder Comandar, o bônus fornecido aumenta para +2.`,
         preco: 45000,
         defesa: 7,
@@ -1391,17 +1394,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 4,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 51,
         nome: 'Couro de Monstro',
         tipo: TipoItem.ARMADURA,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_LEVE,
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_LEVE, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Usado por chefes bárbaros das Montanhas Sanguinárias, este gibão de peles defensor é feito do couro de monstros, como basiliscos e serpes. Se você usar o poder Ataque Poderoso ou fizer uma investida, recebe um bônus de +2d6 nas rolagens de dano.`,
         preco: 36000,
         defesa: 6,
@@ -1424,17 +1423,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 3,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 52,
         nome: 'Loriga do Centurião',
         tipo: TipoItem.ARMADURA,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta loriga segmentada defensora é dourada com detalhes em vermelho e possui o símbolo de Tauron, antigo Deus da Força, gravado no peitoral. Se estiver liderando uma ou mais criaturas (em termos de jogo, se estiver usando o poder Comandar ou similar), seus ataques corpo a corpo causam +2d6 de fogo.`,
         preco: 45000,
         defesa: 9,
@@ -1457,15 +1452,15 @@ export class ItemData {
         alcance: 0,
         penalidade: 3,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 53,
         nome: 'Grilhão de Descrença',
         tipo: TipoItem.ARMADURA,
         chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PROFICIENCIA_ARMADURA_PESADA,
           Chave.SOB_MEDIDA,
           Chave.ITEM_MAGICO_MAIOR,
         ],
@@ -1491,17 +1486,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 6,
         referencias: Referencia.AMEACAS,
-        paginas: '402'
+        paginas: '402',
       },
       {
         id: 54,
         nome: 'Armadura das Sombras Profundas',
         tipo: TipoItem.ARMADURA,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA,
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta cota de malha sob medida defensora sombria negra e translúcida parece feita de pura escuridão. Você recebe redução de luz 10 e pode lançar Invisibilidade. Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         preco: 40500,
         defesa: 6,
@@ -1524,15 +1515,15 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '259'
+        paginas: '259',
       },
       {
         id: 55,
         nome: 'Armadura do Dragão Ancião',
         tipo: TipoItem.ARMADURA,
         chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
+          Chave.LIMITE_USO_VESTIDO,
+          Chave.PROFICIENCIA_ARMADURA_PESADA,
           Chave.SOB_MEDIDA,
           Chave.ITEM_MAGICO_MAIOR,
         ],
@@ -1558,17 +1549,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 5,
         referencias: Referencia.HEROIS,
-        paginas: '259'
+        paginas: '259',
       },
       {
         id: 56,
         nome: 'Armadura do Inverno Perene',
         tipo: TipoItem.ARMADURA,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta couraça defensora gélida de gelo eterno é coberta por névoa gelada. Quando você usa a habilidade ativada do encanto gélido, recebe 20 PV (em vez de 10). Além disso, pode lançar Área Escorregadia (CD Sab) como uma ação de movimento — o efeito assume a forma de uma fina camada de gelo escorregadio. Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         preco: 40500,
         defesa: 7,
@@ -1591,17 +1578,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 4,
         referencias: Referencia.HEROIS,
-        paginas: '259'
+        paginas: '259',
       },
       {
         id: 57,
         nome: 'Cota da Serpente Marinha',
         tipo: TipoItem.ARMADURA,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta cota de malha ajustada guardiã azul-esverdeada é feita com escamas de monstros marinhos. Você recebe deslocamento de natação 12m e pode lançar Sopro das Uivantes (CD Sab). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         preco: 27000,
         defesa: 12,
@@ -1624,17 +1607,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 3,
         referencias: Referencia.HEROIS,
-        paginas: '259'
+        paginas: '259',
       },
       {
         id: 58,
         nome: 'Couraça do Guardião Celeste',
         tipo: TipoItem.ARMADURA,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_LEVE, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_LEVE, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta couraça banhada a ouro defensora protetora é adornada com asas douradas no peitoral e nas ombreiras. Você recebe +1 em Carisma (somente após um dia de uso) e seus efeitos de cura de luz curam +1 PV por dado de cura.`,
         preco: 54000,
         defesa: 7,
@@ -1657,17 +1636,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 4,
         referencias: Referencia.HEROIS,
-        paginas: '259'
+        paginas: '259',
       },
       {
         id: 59,
         nome: 'Escudo de Azgher',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo pesado guardião é forjado na forma de um sol estilizado. Você pode gastar uma ação padrão e 10 PM para fazê-lo emitir uma luz brilhante e quente num cone com alcance curto. A luz gera os efeitos da magia Visão da Verdade e causa 6d6 pontos de dano de fogo em todos os seus inimigos (mortos-vivos e criaturas vulneráveis a luz solar sofrem 6d8 pontos de dano). Você pode gastar 1 PM no início de cada um de seus turnos para manter a luz.`,
         preco: 140000,
         defesa: 6,
@@ -1690,17 +1665,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 60,
         nome: 'Escudo do Conjurador',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo leve defensor tem uma pequena tira de couro na parte interna, sobre a qual um conjurador pode lançar uma magia. A magia não surte efeito na hora; em vez disso, fica inscrita na tira. A tira pode então ser lida como um pergaminho. Uma vez que a magia seja lançada, outra pode ser inscrita.`,
         preco: 45000,
         defesa: 3,
@@ -1723,17 +1694,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 1,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 61,
         nome: 'Escudo do Eclipse',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo pesado defensor é completamente negro e parece absorver a luz. Ele fornece redução de trevas 10 e causa +1d8 de dano de trevas num ataque. Além disso, você pode gastar uma ação de movimento e 2 PM para lançar Escuridão.`,
         preco: 70000,
         defesa: 4,
@@ -1756,17 +1723,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 62,
         nome: 'Escudo Espinhoso',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo pesado defensor é coberto de espinhos. Você pode gastar uma ação de movimento e 2 PM para disparar um espinho em um alvo em alcance curto. O espinho acerta automaticamente e causa 1d10+2 pontos de dano de perfuração.`,
         preco: 50000,
         defesa: 4,
@@ -1789,17 +1752,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 63,
         nome: 'Escudo do Leão',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo pesado defensor é forjado como uma cabeça de leão rugindo. Uma vez por rodada, você pode gastar 2 PM para fazer a cabeça criar vida e morder uma criatura adjacente. A mordida acerta automaticamente e causa 2d6+2 pontos de dano de perfuração.`,
         preco: 50000,
         defesa: 4,
@@ -1822,17 +1781,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.BASICO,
-        paginas: '340'
+        paginas: '340',
       },
       {
         id: 64,
         nome: 'Escudo da Luz Estelar',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: ` Este escudo leve defensor parece feito de cristal e brilha com a luz das estrelas. Você recebe +5 em Percepção. Além disso, pode lançar Luz e usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um arcanista de seu nível (CD Int). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         preco: 27000,
         defesa: 3,
@@ -1855,17 +1810,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 1,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 65,
         nome: 'Escudo da Ira Vulcânica',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Feito de rocha vulcânica e gravado com runas de magma, este escudo pesado guardião fornece redução de fogo 10 e permite que você lance Explosão de Chamas como uma ação de movimento (Ref CD Car; se já puder lançar essa magia, sua área é dobrada).`,
         preco: 27000,
         defesa: 6,
@@ -1888,17 +1839,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 66,
         nome: 'Escudo da Natureza Viva',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo leve defensor de madeira Tollon é feito de madeira viva e constantemente floresce com plantas. Você recebe +2 em Fortitude e pode lançar Curar Ferimentos (CD Sab). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         preco: 27000,
         defesa: 3,
@@ -1921,17 +1868,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 1,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 67,
         nome: 'Escudo do Grifo',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo pesado defensor é forjado no formato de uma asa gigante. Você recebe redução de dano 10 contra ataques à distância e pode lançar Sopro das Uivantes (CD Sab). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         preco: 27000,
         defesa: 4,
@@ -1954,17 +1897,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 68,
         nome: 'Escudo do Trovão',
         tipo: TipoItem.ESCUDO,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este escudo pesado guardião de mitral é decorado com raios em alto-relevo. Sempre que você sofre dano de um ataque corpo a corpo, pode gastar 2 PM para liberar um estrondo sônico que empurra inimigos adjacentes 3m para trás (Fort CD Car evita).`,
         preco: 54000,
         defesa: 6,
@@ -1987,16 +1926,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 2,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 69,
         nome: 'Anel do Sustento',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Você não precisa comer ou beber e precisa dormir apenas duas horas por noite para descansar. Os efeitos do anel só se ativam após uma semana de uso.`,
         preco: 3000,
         defesa: 0,
@@ -2019,16 +1955,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 70,
         nome: 'Bainha mágica',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta bainha de couro curtido e prata muda de tamanho para acomodar qualquer arma corpo a corpo. Você pode lançar Arma Mágica em qualquer arma na bainha sem pagar seu custo em PM.`,
         preco: 3000,
         defesa: 0,
@@ -2051,16 +1984,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 71,
         nome: 'Corda da Escalada',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta corda de 15m é bastante fina, mas forte o suficiente para suportar até seis criaturas Médias (ou 120 espaços). Com um comando (uma ação de movimento), a corda se move em qualquer direção (incluindo para cima) a 3m por rodada, fixando-se firmemente onde você quiser. Ela pode se desamarrar e voltar da mesma forma.`,
         preco: 3000,
         defesa: 0,
@@ -2083,16 +2013,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 72,
         nome: 'Ferraduras da velocidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este conjunto de ferraduras pode ser fixado nos cascos de um cavalo (ou outro parceiro montaria, a critério do mestre) para aumentar seu deslocamento em +3m.`,
         preco: 3000,
         defesa: 0,
@@ -2115,16 +2042,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 73,
         nome: 'Garrafa da Fumaça Eterna',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Você pode abrir a tampa desta ânfora de metal para lançar a magia Névoa sem pagar seu custo em PM. A fumaça persiste até a garrafa ser tampada. Após isso, dissipa-se no fim da cena (ou após 4 rodadas, sob vento forte, ou 1 rodada, sob um vendaval).`,
         preco: 3000,
         defesa: 0,
@@ -2147,16 +2071,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 74,
         nome: 'Gema da Luminosidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este cristal tem a aparência de um longo prisma. Com um comando, emite luz equivalente a uma tocha ou então um raio brilhante, que deixa uma criatura em alcance curto cega por 1d4 rodadas (Fort CD Car evita).`,
         preco: 3000,
         defesa: 0,
@@ -2179,16 +2100,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 75,
         nome: 'Manto élfico',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este cristal tem a aparência de um longo prisma. Com um comando, emite luz equivalente a uma tocha ou então um raio brilhante, que deixa uma criatura em alcance curto cega por 1d4 rodadas (Fort CD Car evita).`,
         preco: 3000,
         defesa: 0,
@@ -2211,16 +2129,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 76,
         nome: 'Mochila de Carga',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este item, que parece uma simples mochila de pano, está na verdade ligado a um espaço interdimensional — fazendo com que seja maior por dentro do que por fora. A mochila de carga aumenta sua capacidade de carga em 10 espaços (ela própria não gasta um espaço). Se a mochila for rasgada, os objetos em seu interior são destruídos. Criaturas vivas colocadas no interior da mochila podem sobreviver até 10 minutos, mas depois disso ficarão sem ar.`,
         preco: 3000,
         defesa: 0,
@@ -2243,16 +2158,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 77,
         nome: 'Brincos da sagacidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este par de brincos de safira aguça o raciocínio. Você recebe +1 em Inteligência (somente após um dia de uso).`,
         preco: 4500,
         defesa: 0,
@@ -2275,16 +2187,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 78,
         nome: 'Luvas da delicadeza',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Estas luvas de tecido fino permitem manipulação delicada. Você recebe +1 em Destreza (somente após um dia de uso).`,
         preco: 4500,
         defesa: 0,
@@ -2307,16 +2216,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 79,
         nome: 'Manoplas da força do ogro',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este par de luvas é feito de couro grosso com rebites de ferro. Você recebe +1 em Força (somente após um dia de uso).`,
         preco: 4500,
         defesa: 0,
@@ -2339,16 +2245,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 80,
         nome: 'Manto da resistência',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este manto de tecido grosso e pesado protege seu usuário. Você recebe +2 em testes de resistência.`,
         preco: 4500,
         defesa: 0,
@@ -2371,16 +2274,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 81,
         nome: 'Manto do fascínio',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este manto de veludo possui bordados de ouro. Você recebe +1 em Carisma (somente após um dia de uso).`,
         preco: 4500,
         defesa: 0,
@@ -2403,16 +2303,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 82,
         nome: 'Torque do vigor',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `O acabamento deste colar ou bracelete remete a um animal poderoso, como um urso ou lobo. Você recebe +1 em Constituição (somente após um dia de uso).`,
         preco: 4500,
         defesa: 0,
@@ -2435,16 +2332,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 83,
         nome: 'Chapéu do disfarce',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Você pode lançar Disfarce Ilusório (CD Car), com o aprimoramento que inclui odores e sensações e muda o bônus em Enganação para disfarces para +20, sem pagar seu custo em PM. Você não pode usar outros aprimoramentos. Como parte do disfarce, o chapéu pode mudar para um elmo, faixa, tiara, gorro, touca e assim por diante.`,
         preco: 6000,
         defesa: 0,
@@ -2467,16 +2361,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 84,
         nome: 'Flauta fantasma',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: ` Se for treinado em Atuação, você pode lançar Esculpir Sons (CD Car) sem pagar seu custo em PM.`,
         preco: 6000,
         defesa: 0,
@@ -2499,16 +2390,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 85,
         nome: 'Lanterna da revelação',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este item funciona como um lampião normal, mas sua luz revela todas as criaturas e objetos invisíveis no alcance.`,
         preco: 6000,
         defesa: 0,
@@ -2531,16 +2419,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 86,
         nome: 'Anel da proteção',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este anel desvia ataques contra seu usuário. Você recebe +2 de Defesa.`,
         preco: 9000,
         defesa: 0,
@@ -2563,16 +2448,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 87,
         nome: 'Anel do Escudo Mental',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Você recebe imunidade a magias de adivinhação.`,
         preco: 9000,
         defesa: 0,
@@ -2595,16 +2477,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 88,
         nome: 'Pingente da saúde',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `O usuário desta joia verde em um cordão de prata recebe imunidade a doenças e venenos. Os efeitos só se ativam após uma semana de uso.`,
         preco: 9000,
         defesa: 0,
@@ -2627,16 +2506,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '342'
+        paginas: '342',
       },
       {
         id: 89,
         nome: 'Algibeira Mordedora',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Possivelmente concebida por algum arcanista cansado de ser furtado por punguistas, esta bolsa transforma sua abertura em uma bocarra de dentes atrozes, travando mandíbulas poderosas na mão do infeliz que tenta acessar seu conteúdo sem permissão. Quando uma criatura faz um teste de Ladinagem para punga contra você, sofre 6d6 pontos de dano de corte e fica agarrada pela algibeira. Para se soltar, a criatura precisa gastar uma ação padrão e passar em um teste de Acrobacia (CD do item) — você pode liberar a criatura proferindo uma palavra de comando (uma ação livre).`,
         preco: 9000,
         defesa: 0,
@@ -2659,16 +2535,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 90,
         nome: 'Algibeira Provedora',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta bolsa de couro parece normal à primeira vista, mas tem uma conexão planar com o Reino de Nimb. Você pode gastar uma ação completa para enfiar sua mão na algibeira e procurar por um item mundano não superior que ocupe até 1 espaço. Role 1d20. Se rolar 6 ou mais, você encontra o item. Ele dura até se afastar a mais de 9m de você ou até você procurar outro item. Se rolar 5 ou menos, você sai de mãos vazias e a algibeira perde seus poderes por 1 dia. Se rolar 1 natural, a algibeira cria dentes, lhe dá uma mordida (causando 4d6 pontos de dano de corte) e desaparece em uma nuvem de purpurina!`,
         preco: 6000,
         defesa: 0,
@@ -2691,16 +2564,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 91,
         nome: 'Amuleto da Visão Etérea',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este amuleto de cristal translúcido é preso a uma corrente de prata e brilha quando exposto à luz. Você recebe resistência a ilusões +5 e pode lançar Visão Mística. Caso já conheça essa magia, pode lançá-la como uma ação livre.`,
         preco: 3000,
         defesa: 0,
@@ -2723,16 +2593,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 92,
         nome: 'Anel da Proteção Mental',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este anel de platina contém uma pequena pedra lunar que brilha suavemente. Você recebe resistência a efeitos mentais +5.`,
         preco: 9000,
         defesa: 0,
@@ -2755,16 +2622,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 93,
         nome: 'Berço das Fadas',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este saco de dormir mágico é feito de tecido macio e aveludado, em um tom de azul profundo que lembra o céu noturno. Mesmo ao relento e sem um acampamento, oferece condição de descanso confortável. Além disso, enquanto está no saco de dormir, você é considerado sob efeito da magia Suporte Ambiental.`,
         preco: 9000,
         defesa: 0,
@@ -2787,16 +2651,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 94,
         nome: 'Chapéu dos Truques Infinitos',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta cartola ornamentada com estrelas e luas permite conjurar uma variedade de efeitos mágicos menores. Você pode lançar livremente qualquer versão truque de qualquer magia de 1º círculo que ofereça esse aprimoramento, mesmo que não a conheça.`,
         preco: 9000,
         defesa: 0,
@@ -2819,16 +2680,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 95,
         nome: 'Cinto da Leveza Graciosa',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este cinto mágico reduz o peso do usuário, tornando-o mais ágil e permitindo saltos mais altos e movimentos mais suaves. Você recebe +5 em Acrobacia e está sempre sob o efeito básico de Queda Suave.`,
         preco: 9000,
         defesa: 0,
@@ -2851,16 +2709,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 96,
         nome: 'Cinturão do Trobo',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este cinto de couro resistente aumenta a força do usuário para erguer peso. Você recebe +5 em testes de Atletismo para erguer peso e sua capacidade de carga aumenta em 5 espaços.`,
         preco: 3000,
         defesa: 0,
@@ -2883,16 +2738,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 97,
         nome: 'Corda da Resignação',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta corda feita de fibras mágicas possui um feitiço de aprisionamento. Quando é usada para amarrar alguém, a CD do teste de Acrobacia para escapar aumenta em +20. Além disso, uma vítima amarrada tem sua força de vontade drenada, e fica alquebrada e esmorecida.`,
         preco: 7500,
         defesa: 0,
@@ -2915,16 +2767,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 98,
         nome: 'Cristal da Voz Silenciosa',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Usado como pingente junto à garganta, este cristal permite ao usuário falar com uma voz mágica, audível apenas para as pessoas que ele selecionar, em alcance curto. Além de muito útil para comunicações secretas, o cristal também permite lançar magias sem necessidade de falar.`,
         preco: 9000,
         defesa: 0,
@@ -2947,16 +2796,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 99,
         nome: 'Cristal do Tempo Célere',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este cristal azulado contém em seu interior uma pequena porção de gás mágico que afeta a passagem do tempo. Quando o cristal é quebrado, pode acelerar o tempo dentro de um aposento. Em termos de jogo, gastar o cristal permite um intervalo entre aventuras no tempo de 1 dia.`,
         preco: 9000,
         defesa: 0,
@@ -2979,16 +2825,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 100,
         nome: 'Elixir da Eternidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.ITEM_MAGICO_MENOR,
-          Chave.TIPO_ITEM_ALQUIMICO,
-        ],
+        chave: [Chave.ITEM_MAGICO_MENOR, Chave.TIPO_ITEM_ALQUIMICO],
         descricao: `Este elixir dourado, guardado em uma ampola de vidro de alta qualidade, é capaz de preservar a vitalidade de uma criatura viva por um longo período. Quando ingerido, evita que o usuário envelheça. Até o fim da aventura, você recebe resistencia a trevas +5, torna-se imune a efeitos mágicos de envelhecimento e, se estiver usando a regra opcional de idades variadas (p. 288), ignora todas as suas complicações de idade.`,
         preco: 3000,
         defesa: 0,
@@ -3011,16 +2854,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 101,
         nome: 'Elixir da Eternidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.ITEM_MAGICO_MENOR,
-          Chave.TIPO_ITEM_ALQUIMICO,
-        ],
+        chave: [Chave.ITEM_MAGICO_MENOR, Chave.TIPO_ITEM_ALQUIMICO],
         descricao: `Este elixir de cor verde esmeralda permite ao usuário dividir sua consciência em duas partes. Quando ingerido, permite executar uma ação de movimento e uma ação padrão adicionais por rodada (esse efeito não se acumula com outros efeitos mágicos que concedem ações adicionais) até o fim da cena. Contudo, enquanto sua mente está dividida, você perde a capacidade de se focar plenamente em qualquer tarefa: sofre uma penalidade de –5 em testes de perícia (exceto testes feitos como reação) e é considerado em condição ruim para lançar magias (Tormenta20, p. 170). Além disso, quando o efeito acaba, você fica fatigado por 1 dia.`,
         preco: 1500,
         defesa: 0,
@@ -3043,16 +2883,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 102,
         nome: 'Gaiola dos Arcanos',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este item é uma gaiola de prata pequena e robusta, com um pequeno cristal pulsante em seu interior. Quando uma criatura usa uma habilidade mágica em um raio de 9m da gaiola, o cristal suga 1 PM por círculo da magia lançada, ou 2 PM no caso de outras habilidades mágicas, dessa criatura. Os efeitos de várias gaiolas no mesmo aposento são cumulativos.`,
         preco: 6000,
         defesa: 0,
@@ -3075,16 +2912,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 103,
         nome: 'Lâmpada da Ilusão Impecável',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta lâmpada de cristal contém uma chama dourada que nunca apaga. Quando sua cobertura é removida, ela projeta ilusões perfeitamente detalhadas de qualquer coisa que o usuário deseje — você pode lançar a magia Criar Ilusão, mas apenas para efeitos visuais (CD Int; se já puder lançar essa magia, recebe 2 PM para gastar em aprimoramentos dela). Contudo, a perfeição absoluta das imagens aumenta a CD para resistir à magia em +5.`,
         preco: 6000,
         defesa: 0,
@@ -3107,16 +2941,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 104,
         nome: 'Monóculo da Franqueza',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta lente emoldurada em prata revela intenções e pensamentos ocultos. Observando alguém em alcance curto através do monóculo, o usuário recebe uma leitura superficial de sua mente, discernindo mentiras ou intenções escusas. Você recebe +10 em testes de Intuição para perceber mentiras.`,
         preco: 4500,
         defesa: 0,
@@ -3125,7 +2956,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 1500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 450,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -3139,16 +2970,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 105,
         nome: 'Ocarina da Melodia Distante',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este instrumento musical feito de porcelana fornece +2 em Atuação. Contudo, seu verdadeiro potencial só é revelado quando é tocado por um bardo — o bônus em Atuação aumenta para +5 e o alcance de suas Músicas de bardo aumenta em um passo (de curto para médio e de médio para longo).`,
         preco: 9000,
         defesa: 0,
@@ -3157,7 +2985,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 3000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 900,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -3171,16 +2999,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 106,
         nome: 'Olhos do Corvo',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta tira de tecido deve ser amarrada sobre os olhos como uma venda, cobrindo-os com desenhos que imitam olhos de ave. Enquanto usa o item, você fica cego em ambientes iluminados, mas em ambientes escuros (escuridão leve ou total, mundana ou mágica) enxerga normalmente e fica imune às condições cego e ofuscado.`,
         preco: 9000,
         defesa: 0,
@@ -3189,7 +3014,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 3000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 900,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (alfaiate)',
@@ -3203,16 +3028,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 107,
         nome: 'Papiro das Estrelas',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Um pergaminho preto que parece conter constelações em sua superfície. Desenrolado, projeta um mapa celeste mágico que revela localizações ocultas, caminhos seguros ou perigos iminentes. Fornece +5 em testes de Sobrevivência para orientar-se e rastrear, e em testes de Percepção para evitar ser surpreendido por inimigos nos ermos.`,
         preco: 1500,
         defesa: 0,
@@ -3221,7 +3043,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 150,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (escriba)',
@@ -3235,16 +3057,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 108,
         nome: 'Pena da Criação',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta pena, que brilha em tom roxo escuro, pertencia a um malafex — tipo de corvo mágico sagrado de Nimb. Conta como instrumentos de Ofício (escriba) aprimorado. Uma vez por cena, você pode gastar uma ação completa para desenhar um monstro em um pergaminho ou outra superfície que aceite tinta. Faça um teste de Ofício (escriba) com CD 10. Se passar, você lança o efeito básico de Conjurar Monstro sem gastar PM. Para cada 5 pontos pelos quais o resultado do teste exceder a CD, você recebe +1 PM para gastar em aprimoramentos. Você pode usar esse efeito mesmo sem ser treinado no Ofício apropriado (mas talvez o monstro invocado seja um pouco… esquisito).`,
         preco: 6000,
         defesa: 0,
@@ -3253,7 +3072,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 2000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 600,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (escriba)',
@@ -3267,16 +3086,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 109,
         nome: 'Pergaminho da Verdade Cósmica',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este perigoso pergaminho contém uma revelação divina tão poderosa e terrível que pode destruir a mente do leitor (avisos a esse respeito estão gravados no estojo externo). Abrir e olhar o pergaminho exige fazer um teste de Vontade (CD 40). Nenhum tipo de habilidade ou efeito que conceda sucessos automáticos ou permita escolher 10 funciona para esse teste. Em caso de falha, sua mente se despedaça — você sofre o efeito debilidade de Rogar Maldição, em sua versão permanente. Contudo, em caso de sucesso, você pode imediatamente lançar Intervenção Divina, para qualquer divindade que deseje, sem precisar gastar ou sacrificar PM, independente do efeito que peça. Uma vez utilizado, o pergaminho se desfaz em cinzas; o mesmo acontece com a verdade revelada, sendo impossível uma mente mortal contê-la.`,
         preco: 9000,
         defesa: 0,
@@ -3285,7 +3101,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 3000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 900,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (escriba)',
@@ -3299,16 +3115,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 110,
         nome: 'Pérola da Nulificação Mágica',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Quando é ativada (uma ação de movimento), esta pequena pérola multicolorida produz o efeito básico da magia Campo Antimagia ao redor de seu portador, com duração de cena (em vez de sustentada). Contudo, o item tem apenas uma utilização; quando o efeito termina, a pérola adquire tom acinzentado, perdendo seu poder.`,
         preco: 3000,
         defesa: 0,
@@ -3317,7 +3130,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 1000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 300,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3331,16 +3144,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 111,
         nome: 'Saco dos Ventos Silenciosos',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MENOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este saco de algodão cru parece conter uma brisa constante. Quando aberto, libera um vento silencioso que pode ser usado para purificar ambientes, suavizar quedas ou aliviar calor extremo. Você pode lançar Criar Elementos (apenas ar), Queda Suave e Suporte Ambiental (apenas contra calor). Se já puder lançar qualquer dessas magias, seu custo diminui em –1 PM.`,
         preco: 3000,
         defesa: 0,
@@ -3349,7 +3159,7 @@ export class ItemData {
         cd_fabricacao: 30,
         cd_identificar_item: 20,
         preco_fabricacao: 1000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 300,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (alfaiate)',
@@ -3363,16 +3173,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '260'
+        paginas: '260',
       },
       {
         id: 112,
         nome: 'Anel de Telecinesia',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Você pode lançar Telecinesia (CD Int). Caso já conheça a magia, o custo para lançá-la diminui em –1 PM.`,
         preco: 10500,
         defesa: 0,
@@ -3381,7 +3188,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3395,16 +3202,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 113,
         nome: 'Bola de Cristal',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta pequena esfera revela pessoas e lugares distantes. Olhar através dela é uma ação completa e gera a magia Vidência (CD Sab).`,
         preco: 10500,
         defesa: 0,
@@ -3413,7 +3217,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3427,16 +3231,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 114,
         nome: 'Caveira Maldita',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta pedra esculpida em formato de crânio gera o efeito da magia Profanar, com o crânio como ponto de origem. Mortos-vivos e devotos de deuses que canalizam apenas energia negativa na área de efeito recebem +2 em testes e Defesa.`,
         preco: 10500,
         defesa: 0,
@@ -3445,7 +3246,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3459,16 +3260,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 115,
         nome: 'Botas Aladas',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Você pode gastar 2 PM para fazer asas brotarem dos calcanhares destas botas e receber deslocamento de voo 12m por uma rodada. Você pode gastar 1 PM no início de cada um de seus turnos para manter esse efeito.`,
         preco: 15000,
         defesa: 0,
@@ -3477,7 +3275,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (coureiro)',
@@ -3491,16 +3289,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 116,
         nome: 'Braceletes de Bronze',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Estes braceletes geram um campo de força invisível, porém tangível. Você recebe +4 na Defesa, cumulativo com outros itens mágicos, mas não com armaduras.`,
         preco: 16500,
         defesa: 0,
@@ -3509,7 +3304,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1650,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3523,16 +3318,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 117,
         nome: 'Anel da Energia',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Você recebe +5 PM (somente após um dia de uso).`,
         preco: 21000,
         defesa: 0,
@@ -3541,7 +3333,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3555,16 +3347,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 118,
         nome: 'Anel da Vitalidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Você recebe +10 PV (somente após um dia de uso).`,
         preco: 21000,
         defesa: 0,
@@ -3573,7 +3362,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3587,16 +3376,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 119,
         nome: 'Anel de Invisibilidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Ao colocar este anel de prata, você fica sob efeito de Invisibilidade. O efeito termina se você fizer um ataque ou lançar uma magia ofensiva, mas você pode tirar e recolocar o anel (uma ação padrão) para que ele volte a funcionar.`,
         preco: 21000,
         defesa: 0,
@@ -3605,7 +3391,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3619,16 +3405,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 120,
         nome: 'Braçadeiras do Arqueiro',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Você recebe +2 em rolagens de dano com armas de ataque à distância (cumulativo com outros itens).`,
         preco: 21000,
         defesa: 0,
@@ -3637,7 +3420,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3651,16 +3434,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 121,
         nome: 'Brincos de Marah',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este par de brincos brancos é abençoado pela Deusa da Paz. A primeira criatura que o atacar em uma cena deve fazer um teste de Vontade (CD Car). Se falhar, perderá a ação. Se você atacar uma criatura, o efeito dos brincos é cancelado por um dia. Se você possuir Aparência Inofensiva (ou um poder similar) os efeitos acumulam, afetando as duas primeiras criaturas que o atacarem em uma cena.`,
         preco: 21000,
         defesa: 0,
@@ -3669,7 +3449,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (joalheiro)',
@@ -3683,16 +3463,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 122,
         nome: 'Faixas do Pugilista',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Estas faixas surradas são amarradas nos punhos, nos braços ou na testa. Você recebe +2 em testes de ataque e rolagens de dano com ataques desarmados (cumulativo com outros itens).`,
         preco: 21000,
         defesa: 0,
@@ -3701,7 +3478,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (alfaiate)',
@@ -3715,16 +3492,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 123,
         nome: 'Manto da Aranha',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este manto é feito de seda negra com fios de prata bordados. Você recebe deslocamento de escalada igual ao seu deslocamento terrestre, +5 em testes de resistência contra venenos e imunidade a teias mundanas ou mágicas. Além disso, pode lançar Teia (CD Des). Caso já conheça a magia, o custo para lançá-la diminui em –1 PM. faixas surradas são amarradas nos punhos, nos braços ou na testa. Você recebe +2 em testes de ataque e rolagens de dano com ataques desarmados (cumulativo com outros itens).`,
         preco: 21000,
         defesa: 0,
@@ -3733,7 +3507,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão), Ofício (alfaiate)',
@@ -3747,16 +3521,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 124,
         nome: 'Vassoura Voadora',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Como um tapete voador, mas pode carregar duas pessoas (ou 40 espaços).`,
         preco: 21000,
         defesa: 0,
@@ -3765,7 +3536,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -3779,16 +3550,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 125,
         nome: 'Símbolo Abençoado',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Conta como um símbolo sagrado. Se você for devoto do deus, o custo de suas magias divinas diminui em –1 PM (cumulativo com o poder Símbolo Sagrado Energizado). Apenas devotos desse deus podem fabricar um símbolo abençoado.`,
         preco: 21000,
         defesa: 0,
@@ -3797,7 +3565,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -3811,16 +3579,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 126,
         nome: 'Amuleto da Robustez',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este disco com corrente de ouro é usado como um colar. Você recebe +2 em Constituição (somente após um dia de uso).`,
         preco: 25500,
         defesa: 0,
@@ -3829,7 +3594,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -3843,16 +3608,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 127,
         nome: 'Botas Velozes',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Você recebe +3m em seu deslocamento e pode lançar Velocidade (apenas sobre você mesmo).`,
         preco: 25500,
         defesa: 0,
@@ -3861,7 +3623,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -3875,16 +3637,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 128,
         nome: 'Cinto da Força do Gigante',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este cinto largo é feito de couro com rebites de ferro. Você recebe +2 em Força (somente após um dia de uso).`,
         preco: 25500,
         defesa: 0,
@@ -3893,7 +3652,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -3907,16 +3666,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 129,
         nome: 'Coroa Majestosa',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta coroa de ouro possui dezenas de pedras preciosas. Você recebe +2 em Carisma (somente após um dia de uso).`,
         preco: 25500,
         defesa: 0,
@@ -3925,7 +3681,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -3939,16 +3695,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 130,
         nome: 'Estola da Serenidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta faixa de pano com inscrições mágicas é usada sobre a nuca, com as duas extremidades caindo na frente do corpo. Você recebe +2 em Sabedoria (somente após um dia de uso).`,
         preco: 25500,
         defesa: 0,
@@ -3957,7 +3710,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (alfaiate)',
@@ -3971,25 +3724,22 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 131,
         nome: 'Manto do Morcego',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este manto marrom escuro ou negro fornece +5 em Furtividade e permite que você fique pendurado de ponta-cabeça no teto, como um morcego. Além disso, você pode gastar uma ação padrão para segurar as pontas do manto e se transformar em um morcego. Seu tamanho muda para Minúsculo e você recebe deslocamento de voo 12m e uma arma natural de mordida (dano 1d4, perfuração). Em outros aspectos, isso funciona como a Forma Selvagem do druida. Você só pode se transformar em morcego à noite ou em ambientes escuros.`,
         preco: 25500,
         defesa: 0,
         rd: 25,
         pv: 30,
-         cd_fabricacao: 40,
+        cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (alfaiate)',
@@ -4003,16 +3753,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 132,
         nome: 'Pulseiras da celeridade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta pulseira de platina aguça todos os seus movimentos. Você recebe +2 em Destreza (somente após um dia de uso).`,
         preco: 25500,
         defesa: 0,
@@ -4021,7 +3768,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4035,16 +3782,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 133,
         nome: 'Tiara da Sapiência',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta tiara delicada possui uma gema que descansa sobre a testa. Você recebe +2 em Inteligência (somente após um dia de uso).`,
         preco: 25500,
         defesa: 0,
@@ -4053,7 +3797,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4067,16 +3811,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 134,
         nome: 'Ampulheta da Harmonia Temporal',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Uma ampulheta dourada com areia prateada que parece flutuar em ciclos irregulares. Quando invertida, permite que você manipule levemente o fluxo do tempo ao redor, desacelerando ou acelerando pequenos eventos. Uma vez por dia, você pode realizar uma tarefa que normalmente consome de 1 minuto a 1 hora como uma ação completa.`,
         preco: 10500,
         defesa: 0,
@@ -4085,7 +3826,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4099,16 +3840,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 135,
         nome: 'Amuleto do Amparo',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este medalhão forjado em prata traz a figura de uma mão aberta. Quando você faz um teste para ajudar, o bônus que fornece aumenta em +2.`,
         preco: 10500,
         defesa: 0,
@@ -4117,7 +3855,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4131,16 +3869,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 136,
         nome: 'Anel da Beleza Ilusória',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este anel de ouro contém uma gema que reflete a luz de maneira incomum. Enquanto estiver vestindo este anel, você aparenta ser mais belo — não apenas conforme os padrões estéticos de seu povo ou raça, mas também de acordo com as preferências de cada observador. Você recebe +5 em testes de perícias baseadas em Carisma, exceto Intimidação, e pode lançar Enfeitiçar. Se já puder lançar essa magia, seu custo diminui em –1 PM.`,
         preco: 21000,
         defesa: 0,
@@ -4149,7 +3884,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4163,16 +3898,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 137,
         nome: 'Anel do Pacto Oneroso',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este anel de platina contém inscrições sobre um acordo com uma entidade poderosa — talvez um espírito ancestral, um Dragão-Real ou mesmo um deus do Panteão. O anel permite lançar uma magia divina de até 4º círculo a sua escolha, sem custo em PM. Contudo, para cada utilização, você deve realizar uma penitência ou busca determinada pelo mestre. Você não pode lançar uma nova magia até que a penitência pela magia anterior tenha sido cumprida.`,
         preco: 15000,
         defesa: 0,
@@ -4181,7 +3913,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4195,16 +3927,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 138,
         nome: 'Bastão da Grande Harmonia',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este bastão de madeira de carvalho é gravado com símbolos antigos e irregulares que irradiam uma energia suave. Você pode gastar uma ação padrão e 3 PM para gerar um pulso de energia tranquilizante em um raio de 9m. Outras criaturas nessa área devem fazer um teste de Vontade (CD Sab); aquelas que falharem largam quaisquer armas que estejam empunhando e ficam pasmas por 1 rodada (apenas uma vez por cena). Além disso, você pode lançar Guardião Divino. Se já puder lançar essa magia, seu custo diminui em –1 PM.`,
         preco: 25500,
         defesa: 0,
@@ -4213,7 +3942,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4227,16 +3956,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 139,
         nome: 'Bastão do Sonhador',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este bastão longo e esquelético possui uma gema cintilante na ponta e permite que você entre nos sonhos de uma pessoa adormecida. Em termos de jogo, você pode lançar Sonho. Se já puder lançar essa magia, uma vez por mês pode entregar um item para a pessoa ou roubar um item de posse dela. No primeiro caso, quando a pessoa acordar, estará com o item na vida real. No segundo, você precisa fazer um teste de Vontade oposto contra a pessoa. Se você vencer, quando sair do sonho estará com o item dela.`,
         preco: 21000,
         defesa: 0,
@@ -4245,7 +3971,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4259,16 +3985,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 140,
         nome: 'Botas do Andarilho das Sombras',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Estas botas de couro escuro são incrivelmente silenciosas, permitindo ao usuário se mover sem emitir sons. Você recebe +5 em testes de Furtividade realizados em ambientes urbanos ou escuros. Além disso, uma vez por dia, você pode lançar Salto Dimensional — mas apenas se existir no destino uma sombra de tamanho suficiente para sua passagem.`,
         preco: 15000,
         defesa: 0,
@@ -4277,7 +4000,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -4291,16 +4014,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 141,
         nome: 'Bracelete do Coração Vivaz',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este bracelete de ouro adornado com um coração fornece +10 PV (somente após um dia de uso). Além disso, quando você é reduzido a 0 PV ou menos, pode gastar 2 PM para curar 2d8+2 PV por luz.`,
         preco: 27000,
         defesa: 0,
@@ -4309,7 +4029,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 9000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4323,16 +4043,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 142,
         nome: 'Caixa dos Ecos Perdidos',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta caixa de madeira pequena e simples não aparenta nada especial, sem adereços ou ornamentos. No entanto, quando é aberta, liberta ecos do passado: seus muitos compartimentos contêm partes de memórias antigas, diálogos e fatos históricos. Você pode gastar 3 PM para receber um bônus de +10 em um teste de perícia baseada em Inteligência que, a critério do mestre, se relacione a um evento passado.`,
         preco: 10500,
         defesa: 0,
@@ -4341,7 +4058,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -4355,16 +4072,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 143,
         nome: 'Cálice das Marés',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este cálice de prata oferece ao portador o poder de comandar as águas. Você pode lançar Controlar Água (se já puder lançar essa magia, seu custo diminui em –1 PM).`,
         preco: 15000,
         defesa: 0,
@@ -4373,7 +4087,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4387,16 +4101,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 144,
         nome: 'Capa Nebulosa',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Feita com finos fios de névoa mágica, esta capa permite ao usuário desaparecer em nevoeiros ou escuridão, como se fizesse parte da névoa ou das trevas. Sempre que você estiver sob camuflagem leve por escuridão ou neblina, essa camuflagem se torna total.`,
         preco: 16500,
         defesa: 0,
@@ -4405,7 +4116,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1650,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (alfaiate)',
@@ -4419,16 +4130,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 145,
         nome: 'Cinto dos Caminhos Cruzados',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este cinto de couro possui fivelas de metal intrincadas que brilham com energia mágica. Uma vez por cena, você pode gastar uma ação de movimento e 3 PM para trocar de lugar com um aliado em alcance curto — vocês dois se teletransportam para onde o outro está.`,
         preco: 15000,
         defesa: 0,
@@ -4437,7 +4145,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -4451,16 +4159,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 146,
         nome: 'Colar da Fúria Monstruosa',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este colar rústico, feito com ossos e presas de monstros variados, invoca a fúria primeva de Megalokk. Você adquire a habilidade Fúria do bárbaro; caso já possua essa habilidade, seus bônus em testes de ataque e rolagens de dano aumentam em +1.`,
         preco: 21000,
         defesa: 0,
@@ -4469,7 +4174,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4483,16 +4188,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 147,
         nome: 'Colar da Perseverança',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este colar de âmbar proporciona ao usuário um aumento considerável em sua determinação. Você recebe +5 em Vontade e +2 em todos os testes estendidos.`,
         preco: 10500,
         defesa: 0,
@@ -4501,7 +4203,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4515,16 +4217,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 148,
         nome: 'Colar do Tirano',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este item cruel é fabricado por abissais e usado por escravagistas. Cada colar tem conexão planar com uma ou mais coleiras (tipicamente 1d8) destinadas a prisioneiros escravizados. Uma vez por rodada, o usuário do colar do tirano pode causar 2d8+2 pontos de dano de eletricidade a um escravo encoleirado. Tentativas mundanas de remover a coleira causam o mesmo dano — apenas efeitos como Dissipar Magia permitem destrancá-las. Além disso, qualquer dano ou efeito nocivo causado ao usuário do colar também afeta todos os escravos encoleirados.`,
         preco: 10500,
         defesa: 0,
@@ -4533,7 +4232,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4547,16 +4246,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 149,
         nome: 'Colar das Bolas de Fogo',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este colar de ouro possui cinco pequenos rubis incrustados (ou 1d4+1 rubis, se for encontrado num tesouro). Você recebe redução de fogo 10 e pode lançar Bola de Fogo (CD Int ou Car; se já puder lançar essa magia, você recebe 2 PM para gastar em aprimoramentos dela). Quando lança Bola de Fogo, você pode gastar uma ação de movimento para arrancar e quebrar um dos rubis. Se fizer isso, aumenta a CD para resistir a magia em +2 e todos os dados de dano dela em um passo (ambos os efeitos são cumulativos com bônus de outros itens). Se quebrar todos os rubis, o colar perde seus poderes.`,
         preco: 12000,
         defesa: 0,
@@ -4565,7 +4261,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 4000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1200,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4579,16 +4275,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 150,
         nome: 'Coroa da Floresta Sussurrante',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta tiara feita de galhos e folhas sempre verdes tem pequenas flores que se abrem ao toque. Ao vesti-la, você é considerado sob efeito da magia Voz Divina e pode lançar Acalmar Animal e Controlar Plantas (CD Sab; se já puder lançar uma dessas magias, pode lançá-la como uma ação de movimento).`,
         preco: 21000,
         defesa: 0,
@@ -4597,7 +4290,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -4611,16 +4304,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 151,
         nome: 'Espelho da Verdade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este grande espelho é emoldurado em ferro e adornado com figuras de celestiais combatendo abissais. A imagem de qualquer criatura ou objeto refletida no espelho revela sua forma verdadeira, como a magia Visão da Verdade — sendo assim um item muitas vezes encontrado em locais de alta segurança. O espelho também pode ser utilizado por um conjurador como a superfície reflexiva para lançar Vidência, aumentando a CD dessa magia em +5 e estendendo seu efeito de Visão da Verdade ao alvo observado.`,
         preco: 21000,
         defesa: 0,
@@ -4629,7 +4319,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4643,16 +4333,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 152,
         nome: 'Espelho do Outro Lado',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este pequeno espelho de bronze polido reflete não apenas a imagem física, mas a alma do indivíduo que o encara. Uma vez por aventura, você pode encarar o espelho para conversar por alguns minutos com sua contraparte espiritual. O resultado da interação é imprevisível, pois o reflexo pode se manifestar como um aliado solícito que oferece conselhos ou como um crítico severo que diminui sua autoconfiança. Em termos de regras, role 1d10–3. Se você rolar um número positivo, recebe esse número em d6 de auxílio — até o fim da aventura, quando faz um teste de perícia, pode gastar até 2d6 e adicionar o resultado como bônus no teste (cumulativo com bônus de outros itens). Se você rolar um número negativo, o mestre recebe esse número em d6. Até o fim da aventura, quando você faz um teste de perícia, o mestre pode gastar qualquer quantidade desses dados e impor o resultado como uma penalidade no teste, representando inseguranças incutidas em você por sua própria alma!`,
         preco: 18000,
         defesa: 0,
@@ -4661,7 +4348,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 6000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4675,16 +4362,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 153,
         nome: 'Frigideira do Chef Anão',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este pequeno espelho de bronze polido reflete não apenas a imagem física, mas a alma do indivíduo que o encara. Uma vez por aventura, você pode encarar o espelho para conversar por alguns minutos com sua contraparte espiritual. O resultado da interação é imprevisível, pois o reflexo pode se manifestar como um aliado solícito que oferece conselhos ou como um crítico severo que diminui sua autoconfiança. Em termos de regras, role 1d10–3. Se você rolar um número positivo, recebe esse número em d6 de auxílio — até o fim da aventura, quando faz um teste de perícia, pode gastar até 2d6 e adicionar o resultado como bônus no teste (cumulativo com bônus de outros itens). Se você rolar um número negativo, o mestre recebe esse número em d6. Até o fim da aventura, quando você faz um teste de perícia, o mestre pode gastar qualquer quantidade desses dados e impor o resultado como uma penalidade no teste, representando inseguranças incutidas em você por sua própria alma!`,
         preco: 24000,
         defesa: 0,
@@ -4693,7 +4377,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2400,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -4707,16 +4391,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 154,
         nome: 'Gema da Purificação',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta gema preciosa foi abençoada por Lena, Marah, Thyatis ou outra divindade piedosa. Você pode lançar a magia Purificação. Caso seja devoto de uma divindade que canaliza energia positiva e/ou já conheça essa magia, seu custo diminui em –1 PM (essas reduções são cumulativas entre si).`,
         preco: 18000,
         defesa: 0,
@@ -4725,7 +4406,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 6000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1800,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4739,16 +4420,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 155,
         nome: 'Gema da Santificação',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta gema preciosa foi abençoada por uma ou mais divindades benignas do Panteão, tipicamente Azgher, Khalmyr, Lena e outras que canalizam energia positiva. Toda a área em alcance curto da gema é considerada sob efeito da magia Consagrar. Se for devoto de uma dessas divindades, você pode também pagar PM para ativar seus aprimoramentos por uma cena.`,
         preco: 24000,
         defesa: 0,
@@ -4757,7 +4435,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 8000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2400,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4771,16 +4449,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 156,
         nome: 'Instrumentos da Celeridade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Existe uma versão destas ferramentas mágicas para cada perícia de Ofício. Conta como instrumentos do Ofício em questão aprimorado e permite fabricar um item adicional da mesma categoria e que tenha o mesmo tempo de fabricação ao mesmo tempo. Você precisa pagar o custo e fazer o teste de cada item.`,
         preco: 22500,
         defesa: 0,
@@ -4789,7 +4464,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2250,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4803,16 +4478,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 157,
         nome: 'Máscara da Raposa',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta máscara de marfim ornada com linhas em vermelho vivo é muitas vezes vista em representações recentes de Hyninn. Usando-a, você parece estar em vários lugares, e em nenhum. Você pode lançar Imagem Espelhada (se já puder lançar essa magia, pode lançá-la como uma ação de movimento e seu custo diminui em –1 PM).`,
         preco: 18000,
         defesa: 0,
@@ -4821,7 +4493,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 6000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1800,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -4835,16 +4507,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 158,
         nome: 'Máscara do Predador',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta máscara metálica rústica amplifica os sentidos do caçador, facilitando o rastreio de sua presa. Você recebe +5 em testes de Investigação para procurar e em testes de Sobrevivência para rastrear. Você também recebe a habilidade Marca da Presa do caçador. Se já a possui, o custo para usá-la diminui em –1 PM (essa redução não conta para suas habilidades baseadas no total de PM gastos em Marca da Presa).`,
         preco: 22500,
         defesa: 0,
@@ -4853,7 +4522,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 7500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 2250,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -4867,16 +4536,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 159,
         nome: 'Óculos da Revelação',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Quando invoca o poder destas lentes, você pode lançar a magia Lendas e Histórias.`,
         preco: 10500,
         defesa: 0,
@@ -4885,7 +4551,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 3500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -4899,16 +4565,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 160,
         nome: 'Pedra da Passagem',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Uma pequena pedra dourada que emite uma leve pulsação de luz. Você pode gastar uma ação padrão e 3 PM para segurá-la contra uma superfície sólida e produzir uma abertura de tamanho Médio. Afeta apenas superfícies não mágicas com RD 8 ou menos. Não abre buracos em seres vivos. Não abre buracos em golens ou osteon. Não abre buracos em armadilhas ou evita perigos complexos, mesmo que você ache as palavras “porta” ou “parede” em algum lugar da descrição. Não abre buracos em nada exceto portas e paredes. Francamente...!`,
         preco: 15000,
         defesa: 0,
@@ -4917,7 +4580,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -4931,16 +4594,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 161,
         nome: 'Pingente da Dor Partilhada',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta joia delicada, feita de prata escurecida, é ornamentada com um pequeno rubi em formato de lágrima, pulsando suavemente no ritmo do coração de seu portador. Quando um aliado em alcance curto se fere, você pode gastar 2 PM. Se fizer isso, o aliado não sofre o dano, mas você perde PV em quantidade igual ao dano que ele teria sofrido (após quaisquer efeitos que reduzam dano que seu aliado possua ou use, como RD ou Durão).`,
         preco: 15000,
         defesa: 0,
@@ -4949,7 +4609,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 5000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4963,16 +4623,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 162,
         nome: 'Sandálias de Valkaria',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MEDIO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Estas sandálias leves permitem andar sobre qualquer superfície, incluindo água e neve. Você ignora terrenos difíceis, pode caminhar sobre líquidos (como o aprimoramento da magia Libertação) e recebe +5 em testes de Acrobacia para atrevessar terreno escorregadio e em testes Atletismo para escalar.`,
         preco: 12000,
         defesa: 0,
@@ -4981,7 +4638,7 @@ export class ItemData {
         cd_fabricacao: 40,
         cd_identificar_item: 25,
         preco_fabricacao: 4000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 1200,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -4995,16 +4652,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 163,
         nome: 'Elmo do Teletransporte',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Você pode lançar Salto Dimensional e Teletransporte, mas apenas em você mesmo. Caso já conheça as magias, o custo para lançá-las diminui em –1 PM.`,
         preco: 30000,
         defesa: 0,
@@ -5013,7 +4667,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (armeiro)',
@@ -5027,16 +4681,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 164,
         nome: 'Gema da Telepatia',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Você pode lançar Compreensão e Enfeitiçar (CD Car) sem pagar seu custo em PM.`,
         preco: 30000,
         defesa: 0,
@@ -5045,7 +4696,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5059,16 +4710,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 165,
         nome: 'Gema Elemental',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Você pode lançar Conjurar Elemental sem pagar seu custo em PM.`,
         preco: 30000,
         defesa: 0,
@@ -5077,7 +4725,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5091,16 +4739,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 166,
         nome: 'Manual da Saúde Corporal',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este tomo volumoso contém exercícios de resistência e dietas saudáveis, mas suas palavras trazem um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Constituição.`,
         preco: 30000,
         defesa: 0,
@@ -5109,7 +4754,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5123,16 +4768,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 167,
         nome: 'Manual do Bom Exercício',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este tomo volumoso contém exercícios de musculação, mas escondido entre as palavras há um poderoso efeito mágico. Ler o livro leva uma semana e aumenta seu valor de Força em +1 permanentemente (não cumulativo com outras leituras do livro). Assim que o livro é lido, a magia desaparece de suas páginas e ele se torna um item mundano.`,
         preco: 30000,
         defesa: 0,
@@ -5141,7 +4783,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5155,16 +4797,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 168,
         nome: 'Manual dos Movimentos Precisos',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este tomo volumoso descreve exercícios de coordenação e equilíbrio, mas mesclado às palavras há um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Destreza.`,
         preco: 30000,
         defesa: 0,
@@ -5173,7 +4812,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5187,16 +4826,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 169,
         nome: 'Medalhão de Lena',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Quando você é reduzido a 0 ou menos PV, esta joia emite uma explosão de energia positiva que cura 100 PV (antes que você caia). Este poder só se ativa uma vez por dia.`,
         preco: 30000,
         defesa: 0,
@@ -5205,7 +4841,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5219,16 +4855,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 170,
         nome: 'Tomo da Compreensão',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este livro volumoso contém ensinamentos para tornar o leitor mais centrado e aguçar sua percepção, mas também possui um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Sabedoria.`,
         preco: 30000,
         defesa: 0,
@@ -5237,7 +4870,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5251,16 +4884,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 171,
         nome: 'Tomo da Liderança e Influência',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este livro de encadernação luxuosa contém instruções detalhadas para convencer e inspirar os demais, mas as páginas escondem um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Carisma.`,
         preco: 30000,
         defesa: 0,
@@ -5269,7 +4899,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5283,16 +4913,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 172,
         nome: 'Tomo dos Grandes Pensamentos',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este livro pesado contém exercícios para aprimorar o raciocínio e a memória, mas mesclado às palavras há um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Inteligência.`,
         preco: 30000,
         defesa: 0,
@@ -5301,7 +4928,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5315,16 +4942,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 173,
         nome: 'Anel Refletor',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este aro de platina é poderoso contra conjuradores. Uma vez por rodada, quando você é alvo de uma magia, pode gastar PM igual ao custo dela para refleti-la de volta ao seu conjurador. As características da magia (efeitos, CD...) se mantêm, mas você toma qualquer decisão exigida por ela.`,
         preco: 51000,
         defesa: 0,
@@ -5333,7 +4957,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 17000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 5100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5347,16 +4971,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 174,
         nome: 'Cinto do Campeão',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: ` Este cinturão de ouro é cravejado de joias e possui gravuras de gladiadores e pugilistas minotauros. Você recebe +1 em Força e a habilidade Briga (veja a página 76; somente após um dia de uso). Caso já a possua, seu dano desarmado será calculado como se você possuísse quatro níveis de lutador a mais (máximo 2d12). Por fim, caso possua o poder Torcida, o bônus que você recebe por ele aumenta para +3. Estes cintos eram dados aos vencedores dos jogos gladiatoriais do Império de Tauron. A cada ano, diversos combatentes de Arton viajavam a Tiberus para competir e ter uma chance de ganhar um destes itens.`,
         preco: 51000,
         defesa: 0,
@@ -5365,7 +4986,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 17000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 5100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -5379,16 +5000,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 175,
         nome: 'Colar Guardião',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este diamante lapidado preso em uma corrente de platina deflete ataques contra seu usuário. Você recebe +5 na Defesa.`,
         preco: 51000,
         defesa: 0,
@@ -5397,7 +5015,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 17000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 5100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5411,16 +5029,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 176,
         nome: 'Estatueta Animista',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta estatueta de pedra é esculpida na forma de um animal. Quando é atirada no chão e a palavra de comando é proferida, transforma-se no animal correspondente. O animal fornece os benefícios de um parceiro veterano até o fim da cena, quando então volta à sua forma de estatueta. O tipo de parceiro é definido pelo animal: raposa (ajudante; perícias definidas na fabricação do item), onça (assassino), águia (atirador), lobo (combatente), leão (fortão) ou urso (guardião).`,
         preco: 51000,
         defesa: 0,
@@ -5429,7 +5044,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 17000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 5100,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5443,16 +5058,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 177,
         nome: 'Anel da Liberdade',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Forjado em ouro, este anel é uma relíquia da Igreja de Valkaria. Você fica permanentemente sob efeito de Libertação.`,
         preco: 60000,
         defesa: 0,
@@ -5461,7 +5073,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 20000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -5475,16 +5087,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 178,
         nome: 'Tapete Voador',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Com um comando, este tapete flutua, fornecendo deslocamento de voo 12m. O tapete tem 3m x 3m e pode carregar seis criaturas Médias (ou 120 espaços). Se você estiver em alcance longo do tapete, pode comandar o voo dele.`,
         preco: 60000,
         defesa: 0,
@@ -5493,7 +5102,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 20000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (alfaiate)',
@@ -5507,16 +5116,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 179,
         nome: 'Braceletes de Ouro',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Como braceletes de bronze, mas fornece +8 na Defesa.`,
         preco: 64500,
         defesa: 0,
@@ -5525,7 +5131,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 21500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 6450,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5539,16 +5145,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 180,
         nome: 'Espelho da Oposição',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Como braceletes de bronze, mas fornece +8 na Defesa.`,
         preco: 75000,
         defesa: 0,
@@ -5557,7 +5160,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 25000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 7500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5571,16 +5174,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 181,
         nome: 'Robe do Arquimago',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este traje pesado alinha-se com as energias arcanas emitidas por seu usuário para gerar um campo protetor. Se você for um conjurador arcano, recebe um bônus na Defesa igual a 5 + o círculo de magia mais alto que puder lançar e um bônus em testes de resistência igual à metade do bônus na Defesa. Assim, um arcanista de 9º nível (capaz de lançar magias de 3º círculo) recebe +8 na Defesa e +4 em testes de resistência.`,
         preco: 90000,
         defesa: 0,
@@ -5589,7 +5189,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 30000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 9000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (alfaiate)',
@@ -5603,16 +5203,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 182,
         nome: 'Orbe das Tempestades',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta esfera de vidro com 20cm de diâmetro contém fumaça e raios em seu interior. Você pode lançar Controlar o Clima e Fúria do Panteão (CD Sab). Caso já conheça as magias, o custo para lançá-las diminui em –1 PM. Além disso, você e todos os seus aliados adjacentes ficam sob efeito de Suporte Ambiental.`,
         preco: 97500,
         defesa: 0,
@@ -5621,7 +5218,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 32500,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 9750,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5635,16 +5232,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 183,
         nome: 'Anel da Regeneração',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Você recebe Cura Acelerada 5 (somente após um dia de uso).`,
         preco: 150000,
         defesa: 0,
@@ -5653,7 +5247,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 50000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 15000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5667,16 +5261,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 184,
         nome: 'Espelho do Aprisionamento',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este item de cristal, com 1,5m de altura e moldura de metal, pode ser fixado em qualquer superfície e ativado (ou desativado) com um comando. Qualquer criatura que se aproxime a alcance curto do espelho do aprisionamento e enxergue seu próprio reflexo deve passar em um teste de Reflexos (CD Int) ou será transportada magicamente para um espaço extradimensional dentro do espelho, ficando presa ali. O tamanho da criatura não importa — mas construtos, mortos-vivos e objetos não podem ser transportados. Com um comando, é possível conversar com uma criatura presa no espelho ou libertá-la. Se o espelho for quebrado, todas as criaturas dentro dele são libertadas.`,
         preco: 150000,
         defesa: 0,
@@ -5685,7 +5276,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 50000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 15000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5699,16 +5290,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.BASICO,
-        paginas: '343'
+        paginas: '343',
       },
       {
         id: 185,
         nome: 'Anel da Chama Dançante',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Um anel de ouro com uma pequena chama mágica viva que nunca se apaga. A chama mágica — na verdade um pequeno elemental — atua como um parceiro vigilante veterano e permite que você lance Controlar Fogo (se já puder lançar essa magia, seu custo diminui em –1 PM).`,
         preco: 30000,
         defesa: 0,
@@ -5717,7 +5305,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5731,16 +5319,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 186,
         nome: 'Braçadeiras da Força do Colosso',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Estas braçadeiras de ferro negro são incrivelmente pesadas, mas fornecem um aumento massivo na força física do portador. Você recebe +4 em Força (somente após um dia de uso). Além disso, uma vez por cena, pode gastar 5 PM para aumentar esse bônus para +8 por 1 rodada.`,
         preco: 120000,
         defesa: 0,
@@ -5749,7 +5334,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 40000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 12000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5763,16 +5348,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 187,
         nome: 'Braceletes da Amizade Intensa',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Estas braçadeiras de ferro negro são incrivelmente pesadas, mas fornecem um aumento massivo na força física do portador. Você recebe +4 em Força (somente após um dia de uso). Além disso, uma vez por cena, pode gastar 5 PM para aumentar esse bônus para +8 por 1 rodada.`,
         preco: 36000,
         defesa: 0,
@@ -5781,7 +5363,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 12000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3600,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5795,16 +5377,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 188,
         nome: 'Chapéu Pensador',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este estranhíssimo “chapéu” na verdade tem o formato triangular de um telhado, com uma chaminé no topo, onde está alojado um ninho de pássaros ruidosos — que dizem ser raros animais planares sagrados de Tanna-Toh. Você recebe a habilidade Engenhosidade (Tormenta20, p. 68); caso já possua essa habilidade, o bônus fornecido por ela aumenta em +2.`,
         preco: 30000,
         defesa: 0,
@@ -5813,7 +5392,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (alfaiate)',
@@ -5827,16 +5406,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 189,
         nome: 'Chave dos Planos',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta pequena chave de metal parece comum à primeira vista, mas é capaz de abrir portas para lugares distantes. Inserida na fechadura de uma porta comum, permite que você lance Teletransporte ou Viagem Planar, sem necessidade de componente material, desde que também exista uma porta de qualquer tipo no local de chegada.`,
         preco: 60000,
         defesa: 0,
@@ -5845,7 +5421,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 20000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (joalheiro)',
@@ -5859,16 +5435,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 190,
         nome: 'Cinto da Desmaterialização',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este cinto feito de couro e metal possui um fecho especial que permite ao usuário desmaterializar seu corpo por um curto período. Você pode lançar Forma Etérea, mas apenas em você mesmo.`,
         preco: 60000,
         defesa: 0,
@@ -5877,7 +5450,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 20000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -5891,16 +5464,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 191,
         nome: 'Cinto da Flecha Veloz',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este cinto de couro ajustável permite ao usuário acelerar seus movimentos com arcos e bestas. Você recebe a habilidade Ataque Extra (Tormenta20, p. 66), mas só pode usá-la com armas de disparo. Se já a possui, em vez disso o custo para usá-la com armas de disparo diminui em –1 PM.`,
         preco: 60000,
         defesa: 0,
@@ -5909,7 +5479,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 20000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 6000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -5923,24 +5493,22 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 192,
         nome: 'Coração do Inverno',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
-        descricao: `Este cristal azul claro é muito frio ao toque, parecendo emitir uma aura gélida. Se estiver empunhando o cristal, você pode lançar Raio Polar (CD Int ou Car; se já puder lançar essa magia, seus dados de dano aumentam em um passo). Deixado em um aposento fechado e pequeno (equivalente a no máximo uma área de 9m de raio), faz com que seu interior se torne muito frio (abaixo de –10ºC).`,        preco: 45000,
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
+        descricao: `Este cristal azul claro é muito frio ao toque, parecendo emitir uma aura gélida. Se estiver empunhando o cristal, você pode lançar Raio Polar (CD Int ou Car; se já puder lançar essa magia, seus dados de dano aumentam em um passo). Deixado em um aposento fechado e pequeno (equivalente a no máximo uma área de 9m de raio), faz com que seu interior se torne muito frio (abaixo de –10ºC).`,
+        preco: 45000,
         defesa: 0,
         rd: 60,
         pv: 55,
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 15000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -5954,16 +5522,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 193,
         nome: 'Gema da Profanação',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta gema preciosa foi abençoada por uma ou mais divindades malignas do Panteão, tipicamente Aharadak, Arsenal, Kallyadranoch e outras que canalizam energia negativa. O custo de suas habilidades mágicas que causam dano de trevas diminui em –2 PM.`,
         preco: 30000,
         defesa: 0,
@@ -5972,7 +5537,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão) Ofício (coureiro)',
@@ -5986,16 +5551,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 194,
         nome: 'Tomo da Técnica Definitiva',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Destinado a guerreiros que desenvolveram seu próprio Golpe Pessoal, este manual permite aprimorar ainda mais sua técnica. Estudar o tomo exige uma ação entre aventuras. Uma vez que você tenha feito isso, seu Golpe Pessoal recebe novos efeitos num total de até 2 PM, que não contam no limite para construí-lo e que não aumentam seu custo em PM. Quando sobe de nível e reconstrói seu golpe, você pode alterá-los. Se você possuir mais de um Golpe Pessoal, esse efeito se aplica apenas a um deles.`,
         preco: 30000,
         defesa: 0,
@@ -6004,7 +5566,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 10000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -6018,16 +5580,13 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 195,
         nome: 'Tomo dos Companheiros',
         tipo: TipoItem.ACESSORIO,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.ITEM_MAGICO_MAIOR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Diz-se que este livro volumoso veio da própria Biblioteca de Tanna-Toh, em seu reino divino. De tão poderosas suas histórias, os personagens às vezes escapam para a vida real. Você pode gastar uma ação completa e 3 PM para ler um trecho do livro e convocar um parceiro veterano de um tipo a sua escolha, que surge em um espaço desocupado adjacente. O parceiro dura até o fim do dia ou até você conjurar outro parceiro com o tomo.`,
         preco: 45000,
         defesa: 0,
@@ -6036,7 +5595,7 @@ export class ItemData {
         cd_fabricacao: 50,
         cd_identificar_item: 30,
         preco_fabricacao: 15000,
-        tempo_fabricacao_em_horas: 160, 
+        tempo_fabricacao_em_horas: 160,
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (artesão)',
@@ -6050,7 +5609,7 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         referencias: Referencia.HEROIS,
-        paginas: '265'
+        paginas: '265',
       },
       {
         id: 196,
@@ -6059,7 +5618,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A margem de ameaça da arma duplica. Por exemplo, uma espada longa ameaçadora tem margem de ameaça 17. Efeitos que duplicam a margem de ameaça são aplicados antes de quaisquer efeitos que a aumentem.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 197,
@@ -6068,7 +5627,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma é letal contra um tipo de criatura (ou uma raça de humanoides). Uma vez por rodada, quando ataca uma criatura desse tipo, você pode gastar 2 PM. Se fizer isso e acertar o ataque, causa +4d8 de dano. Para determinar o tipo de criatura aleatoriamente, role 1d6: 1) animal; 2) construto; 3) espírito; 4) monstro; 5) morto-vivo; 6) uma raça de humanoides.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 198,
@@ -6077,7 +5636,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma pode ser arremessada em alcance curto. Caso já pudesse ser arremessada, seu alcance aumenta em uma categoria. Após o ataque, se estiver livre, a arma volta voando para você. Pegá-la é uma reação.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 199,
@@ -6086,7 +5645,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma aumenta os dados de dano extra de um ataque furtivo para d8. Além disso, quando faz um Ataque Furtivo, você pode gastar 2 PM. Se fizer isso, pode rolar novamente quaisquer resultados 1 nesses dados de dano extra.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 200,
@@ -6095,7 +5654,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma persegue o alvo, anulando penalidades por camuflagem leve e total e por cobertura leve. Caso a arma seja de ataque à distância, seu alcance também aumenta em uma categoria.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 201,
@@ -6104,7 +5663,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma causa +1d6 de dano de frio. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima fica enredada por uma rodada. Uma arma congelante é coberta por uma camada de gelo e névoa.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 202,
@@ -6113,7 +5672,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Um conjurador pode lançar na arma uma magia que tenha como alvo uma criatura ou que afete uma área. A magia não gera efeito na hora; em vez disso, fica guardada no item. Quando acerta um ataque com a arma, você pode descarregar a magia guardada como uma ação livre e sem pagar seu custo. Ela tem como alvo (ou como centro de sua área) a criatura ou ponto atingido pelo ataque. Uma vez que a magia seja descarregada, outra pode ser armazenada.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 203,
@@ -6122,7 +5681,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: ` A arma causa +1d6 de dano de ácido. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima sofre 4d4 pontos de dano de ácido na próxima rodada. Uma arma corrosiva exala vapores e goteja líquido tóxico.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 204,
@@ -6131,7 +5690,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer a arma flutuar e atacar uma criatura em alcance curto a sua escolha, com as mesmas estatísticas que teria se você a estivesse empunhando. Este efeito tem duração sustentada; se parar de sustentá-lo, a arma cai no chão.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 205,
@@ -6140,7 +5699,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer a arma flutuar e atacar uma criatura em alcance curto a sua escolha, com as mesmas estatísticas que teria se você a estivesse empunhando. Este efeito tem duração sustentada; se parar de sustentá-lo, a arma cai no chão.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 206,
@@ -6149,7 +5708,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Se usada contra construtos e objetos (com a manobra quebrar), a arma fornece +2 no teste de ataque e causa +2d8 de dano.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 207,
@@ -6158,7 +5717,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma inflige ferimentos profundos. Quando faz um acerto crítico com a arma, você causa +10 pontos de dano.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 208,
@@ -6167,7 +5726,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Quando você faz um acerto crítico em uma criatura viva, a criatura fica fraca e você ganha 2d10 pontos de vida temporários. Uma arma drenante emite um brilho púrpura.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 209,
@@ -6176,7 +5735,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma causa +1d6 de dano de eletricidade. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, um raio atinge outra criatura em alcance curto, causando 3d8 pontos de dano de eletricidade. Uma arma elétrica emite faíscas e é coberta de arcos voltaicos.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 210,
@@ -6185,7 +5744,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma tem sua parte perigosa (a lâmina de uma espada, a ponta de uma lança...) transformada em magia pura. Ela fornece +4 em testes de ataque, ignora 20 pontos de redução de dano, converte todo o dano causado para essência e emana luz como uma tocha. Pré-requisito: formidável.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 211,
@@ -6194,7 +5753,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma inflige dor terrível. Uma criatura viva atingida fica fraca. Se já estiver fraca, fica debilitada (a condição máxima que esta arma pode causar).`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 212,
@@ -6203,7 +5762,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma causa +1d6 de dano de fogo. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso, em vez do ataque normal você dispara uma bola de fogo contra um alvo em alcance médio. O alvo sofre 6d6 pontos de dano. Um teste de Reflexos (CD For ou Des, à sua escolha) reduz à metade. Uma arma flamejante emana chamas como uma tocha.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 213,
@@ -6212,7 +5771,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma é encantada para desferir golpes precisos. Ela fornece +2 em testes de ataque e rolagens de dano.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 214,
@@ -6221,7 +5780,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma inflige ferimentos mortais. Quando faz um acerto crítico com a arma, você causa +10 pontos de dano ou, além de multiplicar os dados de dano, multiplica também quaisquer bônus numéricos, a sua escolha. Este efeito substitui o efeito de dilacerante. Pré-requisito: dilacerante.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 215,
@@ -6230,7 +5789,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma é encantada para desferir golpes perfeitos. Ela fornece +4 em testes de ataque e rolagens de dano. Pré-requisito: formidável.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 216,
@@ -6239,7 +5798,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma causa +1d8 de dano, mas todo o dano causado é não letal. Você pode gastar 1 PM para desativar e ativar este encanto.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 217,
@@ -6248,7 +5807,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma causa +2d8 de dano contra devotos de deuses que canalizam apenas energia positiva e criaturas bondosas (a critério do mestre). Uma arma profana emite luz rubra pulsante.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 218,
@@ -6257,7 +5816,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma causa +2d8 de dano contra devotos de deuses que canalizam apenas energia negativa e criaturas malignas (a critério do mestre). Uma arma sagrada emite uma sutil luz pura.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 219,
@@ -6266,7 +5825,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Uma criatura viva atingida fica sangrando. Dano de sangramento causado pela arma é cumulativo — uma criatura atingida duas vezes perde 2d6 PV por sangramento por rodada.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 220,
@@ -6275,7 +5834,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma emite um trovão ribombante a cada golpe. Quando você faz um acerto crítico, a vítima fica atordoada por uma rodada (apenas uma vez por cena; Fort CD For ou Des, a sua escolha, evita).`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 221,
@@ -6284,7 +5843,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma causa +1d8 de dano de trevas. Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso, o bônus de dano aumenta para +2d8, mas você perde 1d8 pontos de vida. Uma arma tumular drena o calor ao redor.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 222,
@@ -6293,7 +5852,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Você recebe a habilidade Ataque Extra, do guerreiro, mas só pode usá-la com esta arma. Se já a possui, em vez disso, o custo para usá-la com esta arma diminui em –1 PM.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 223,
@@ -6302,7 +5861,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Uma vez por rodada, quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima fica envenenada, perdendo 1d12 pontos de vida por rodada durante 3 rodadas. Uma arma venenosa verte um líquido verde e viscoso.`,
         referencias: Referencia.BASICO,
-        paginas: '335'
+        paginas: '335',
       },
       {
         id: 224,
@@ -6311,7 +5870,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma brilha como o sol matinal. Ela causa +1d8 de dano de luz contra mortos-vivos e criaturas com sensibilidade a luz. Uma vez por rodada, quando ataca, você pode gastar 2 PM para cegar uma criatura em alcance curto por 1 rodada (apenas uma vez por cena por criatura, Fort CD For ou Des evita).`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 225,
@@ -6320,7 +5879,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma enfraquece a magia do adversário. Quando uma criatura é atingida, a CD para resistir às habilidades mágicas dela diminui em –2 por 1 rodada.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 226,
@@ -6329,7 +5888,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma é envolta em névoa mágica que desorienta os oponentes. Toda vez que você acerta um ataque com a arma, recebe camuflagem leve por 1 rodada.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 227,
@@ -6338,7 +5897,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma canta, ou entoa música. Você recebe +2 em Atuação enquanto a empunha. Você pode gastar 1 PM para que você e seus aliados em alcance curto recebam +1 em testes de ataque por 1 rodada (cumulativo com outros bônus de itens).`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 228,
@@ -6347,7 +5906,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma cria fortes correntes de ar ao redor do portador. Você recebe +2 em testes contra manobras. Além disso, uma vez por rodada, pode gastar 1 PM para criar uma rajada de vento em um cone de 9m que empurra todas as criaturas 3m na direção oposta (Fort CD For ou Des evita).`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 229,
@@ -6356,7 +5915,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Você pode gastar 2 PM para fazer a arma aumentar de tamanho até o fim de seu turno. O dano dela aumenta em um passo e o alcance aumenta em +1,5m. Este encanto só pode ser aplicado a armas de combate corpo a corpo.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 230,
@@ -6365,7 +5924,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma é feita de cristal, brilhando com cores prismáticas. Causa +1d6 de dano de luz. Uma vez por rodada, quando ataca, você pode gastar 1 PM. Se fizer isso e acertar o ataque, a criatura atingida fica ofuscada por 1 rodada.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 231,
@@ -6374,7 +5933,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Quando ataca, você pode gastar 3 PM para prever o futuro. Se fizer isso, você rola dois dados e usa o melhor resultado, e no próximo ataque que você sofrer até seu próximo turno, o atacante rola dois dados e usa o pior resultado. Pré-requisito: formidável.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 232,
@@ -6383,7 +5942,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Esta arma acumula a energia de ataques falhos para protegê-lo. Quando você erra um ataque, recebe +2 na Defesa por 1 rodada. Uma vez por rodada, quando sofre dano, você pode gastar 2 PM para receber RD 10 contra esse dano.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 233,
@@ -6392,7 +5951,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma pode assumir uma estrutura translúcida, quase invisível. Quando ataca, você pode gastar 2 PM para deixar o oponente desprevenido (apenas uma vez por cena por criatura; Von CD For ou Des evita).`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 234,
@@ -6401,7 +5960,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma se alimenta de seu espírito de luta. Sempre que acerta um ataque em um inimigo, você pode gastar 1 PM para receber +1 em testes de ataque e dano com ela até o fim da cena. Esse efeito é cumulativo até um máximo de +5.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 235,
@@ -6410,7 +5969,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma é ornamentada com figuras de gárgulas que ganham vida temporariamente. Você pode gastar 2 PM para convocar uma pequena gárgula que atua como um parceiro combatente iniciante até o fim da cena.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 236,
@@ -6419,7 +5978,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma exala uma aura de medo. Você recebe +2 em Intimidação e o custo de suas habilidades de medo diminui em –1 PM.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 237,
@@ -6428,7 +5987,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: ` A arma é habitada por insetos mágicos. Sempre que você acerta um ataque em um inimigo, pode gastar 2 PM para liberar um enxame sobre ele — o alvo perde 2d6 pontos de vida por veneno e fica enjoado por 1d4 rodadas (Fort CD For ou Des evita a condição).`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 238,
@@ -6437,7 +5996,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma suga energia mágica do alvo. Quando você acerta um ataque com a arma em um inimigo, ele deve fazer um teste de Vontade (CD For ou Des). Se ele falhar, você recebe 1 PM temporário e ele perde 1d4 PM. Pré-requisito: formidável.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 239,
@@ -6446,7 +6005,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Sempre que você erra um ataque, a arma emite um grunhido irritado que o incomoda e concede um bônus de +2 no próximo teste de ataque que você fizer até o fim da cena (cumulativo com outros bônus de itens).`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 240,
@@ -6455,7 +6014,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Sempre que você erra um ataque em um inimigo, a arma ganha uma carga de energia (até um máximo de 3 cargas). Quando você acerta um ataque, a arma gasta todas as cargas de energia — para cada carga gasta, ela causa +1d6 pontos de dano.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 241,
@@ -6464,7 +6023,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma tem uma superfície brilhante. Uma vez por rodada, quando é alvo de uma magia, você pode gastar uma quantidade de PM igual ao círculo da magia para refleti-la de volta ao conjurador. As características da magia (efeitos, CD...) se mantêm, mas você toma qualquer decisão exigida por ela. Pré-requisito: cristalina.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 242,
@@ -6473,7 +6032,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma vibra com uma frequência harmônica. Quando você acerta um ataque, pode gastar 2 PM para emitir uma onda de choque em outra criatura em alcance curto. Compare o resultado desse ataque com a Defesa da criatura. Se for suficiente para acertar a criatura, ela sofre uma quantidade de dano psíquico igual à metade do dano causado pelo ataque.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 243,
@@ -6482,7 +6041,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `A arma emana energia negativa. Quando gasta PM para ativar o efeito de tumular, se você acertar o ataque, a criatura não pode recuperar pontos de vida por 1d4 rodadas. Pré-requisito: tumular.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 244,
@@ -6491,7 +6050,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: ` A arma é envolta em trevas que obscurecem sua presença. Você recebe +2 em testes de Furtividade enquanto empunha esta arma (cumulativo com outros bônus de itens) e pode lançar a magia Escuridão (se já puder lançar essa magia, seu custo diminui em –1 PM).`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 245,
@@ -6500,7 +6059,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMA],
         descricao: `Quando ataca com esta arma, você pode gastar 1 PM. Se fizer isso, ela causa +2d6 pontos de dano de trevas e você recupera vida igual ao dano de trevas que esse efeito causar.`,
         referencias: Referencia.HEROIS,
-        paginas: '256'
+        paginas: '256',
       },
       {
         id: 246,
@@ -6509,7 +6068,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe resistência a magia +5.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 247,
@@ -6518,7 +6077,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de trevas 10 e +5 em testes de resistência contra efeitos de necromancia. Um item abençoado é decorado com gravuras de símbolos sagrados de deuses do Bem.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 248,
@@ -6527,7 +6086,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe +5 em Acrobacia e ignora a penalidade de armadura do item para testes dessa perícia.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 249,
@@ -6536,7 +6095,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode gastar 2 PM para fazer asas emergirem de suas costas e receber deslocamento de voo 12m com duração sustentada.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 250,
@@ -6545,7 +6104,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer o escudo flutuar ao seu redor até o fim da cena. Você recebe o mesmo bônus na Defesa que receberia se estivesse empunhando o escudo, mas fica com as duas mãos livres. Você só pode ser protegido por um escudo ao mesmo tempo.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 251,
@@ -6554,7 +6113,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode gastar uma ação de movimento e 2 PM para gerar uma onda de medo. Inimigos em alcance curto devem passar num teste de Vontade (CD Car) ou ficarão abalados até o fim da cena. Um item assustador possui manchas de sangue, ossos pendurados e outras decorações horripilantes.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 252,
@@ -6563,7 +6122,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de ácido 10 e pode gastar uma ação de movimento e 2 PM para fazer o item gotejar ácido. Se fizer isso, seus ataques causam +1d4 de dano de ácido até o fim da cena.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 253,
@@ -6572,7 +6131,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O item é encantado para desviar golpes. O bônus na Defesa do item aumenta em +2.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 254,
@@ -6581,7 +6140,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe +10 em testes de Acrobacia para escapar e em testes de manobra contra agarrar. Um item escorregadio parece estar sempre coberto de óleo levemente gorduroso.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 255,
@@ -6590,7 +6149,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Este escudo fornece +2 em ataques e dano e tem seu dano aumentado em um passo.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 256,
@@ -6599,7 +6158,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: ` Você pode lançar a magia Manto de Sombras. Um item fantasmagórico é cinzento e esfumaçado.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 257,
@@ -6608,7 +6167,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe 25% de chance (para escudos) e 50% de chance (para armaduras) de ignorar o dano extra de acertos críticos e ataques furtivos.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 258,
@@ -6617,7 +6176,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de frio 10 e pode gastar uma ação de movimento e 2 PM para se cobrir de gelo até o fim da cena. Se fizer isso, recebe 10 PV temporários. Um item gélido é azulado e frio ao toque.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 259,
@@ -6626,7 +6185,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O item emite um campo de força que desvia ataques. O bônus na Defesa do item aumenta em +4. Pré-requisito: defensor.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 260,
@@ -6635,7 +6194,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode gastar uma ação padrão e 3 PM para emitir luzes coloridas. Inimigos em alcance curto devem passar num teste de Vontade (CD Car) ou ficarão fascinados por 1d6 rodadas. O efeito termina se qualquer criatura afetada for atacada. Um item hipnótico é espalhafatoso e colorido.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 261,
@@ -6644,7 +6203,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode gastar uma ação de movimento e 1 PM para fazer o item adquirir a aparência de uma roupa comum, mas mantendo suas propriedades (bônus na Defesa, penalidade de armadura...). A magia Visão da Verdade revela o item disfarçado.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 262,
@@ -6653,7 +6212,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de fogo 10 e pode gastar uma ação de movimento e 2 PM para fazer o item emitir labaredas até o fim da cena. Se fizer isso, no início de cada um de seus turnos você causa 1d6 pontos de dano de fogo em todas as criaturas adjacentes. Um item incandescente é avermelhado e quente ao toque.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 263,
@@ -6662,7 +6221,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de dano 2 (para escudos) ou 5 (para armaduras).`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 264,
@@ -6671,7 +6230,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de ácido, eletricidade, fogo e frio 10. Um item opaco parece sem cor, totalmente comum e desinteressante.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 265,
@@ -6680,7 +6239,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe +2 em testes de resistência.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 266,
@@ -6689,7 +6248,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Uma vez por rodada, quando você é alvo de uma magia, pode gastar PM igual ao custo dela para refleti-la de volta ao conjurador. As características da magia (efeitos, CD...) se mantêm, mas você toma qualquer decisão exigida por ela. Um item refletor parece espelhado.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 267,
@@ -6698,7 +6257,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de eletricidade 10 e pode gastar uma ação de movimento e 2 PM para gerar arcos voltaicos até o fim da cena. Se fizer isso, qualquer criatura que o ataque em corpo a corpo sofre 2d6 pontos de dano de eletricidade. Um item relampejante é decorado com ouro, prata e cobre.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 268,
@@ -6707,7 +6266,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode gastar uma ação de movimento e 2 PM para emitir um clarão de luz. Todos os inimigos em alcance curto devem passar num teste de Reflexos (CD Car) ou ficarão cegos por uma rodada. Um item reluzente é polido e brilhante.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 269,
@@ -6716,7 +6275,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe +5 em Furtividade e ignora a penalidade de armadura do item para testes dessa perícia. Um item sombrio é escuro, fosco e bem lubrificado, para não fazer barulho.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 270,
@@ -6725,7 +6284,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Uma vez por rodada, se um aliado adjacente for alvo de um ataque, você pode gastar 1 PM para se tornar o alvo do ataque, que então é resolvido normalmente.`,
         referencias: Referencia.BASICO,
-        paginas: '338'
+        paginas: '338',
       },
       {
         id: 271,
@@ -6734,7 +6293,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O item possui gravuras de demônios e tentáculos. Você recebe redução de ácido e fogo 10 e, uma vez por rodada, pode gastar 1 PM para causar 2d6 pontos de dano de ácido ou fogo a uma criatura adjacente.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 272,
@@ -6743,7 +6302,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O item possui gravuras de demônios e tentáculos. Você recebe redução de ácido e fogo 10 e, uma vez por rodada, pode gastar 1 PM para causar 2d6 pontos de dano de ácido ou fogo a uma criatura adjacente.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 273,
@@ -6752,7 +6311,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Uma vez por rodada, quando é alvo de uma magia, você pode gastar 3 PM por círculo da magia para anulá-la. Pré-requisito: abascanto.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 274,
@@ -6761,7 +6320,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe resistência a magia divina +5. Além disso, pode lançar a magia Controlar Plantas (CD Sab). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 275,
@@ -6770,7 +6329,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe +5 em Intuição e Percepção. Uma vez por rodada, pode gastar 3 PM para detectar automaticamente a presença e a localização de todas as criaturas escondidas ou invisíveis em alcance curto.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 276,
@@ -6779,7 +6338,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `A armadura gera uma aura de peso e lentidão. Isso reduz o deslocamento de inimigos em alcance curto em –3m. Uma vez por rodada, você pode gastar uma ação de movimento e 2 PM para deixar todos os inimigos em alcance curto abalados e lentos por 1d4 rodadas (CD For ou Des evita).`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 277,
@@ -6788,7 +6347,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O bônus na Defesa do item contra ataques à distância aumenta em +5. Além disso, uma vez por cena, quando sofre dano de um ataque à distância, você pode gastar 3 PM para ignorar esse dano.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 278,
@@ -6797,7 +6356,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `A armadura estende filamentos nododos que o mantêm firme no chão. Você recebe +5 em testes para resistir às manobras derrubar e empurrar. Quando faz um teste de resistência contra outro tipo de efeito de movimento, você pode gastar 2 PM para receber +5 no teste.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 279,
@@ -6806,7 +6365,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O item é decorado com esmeraldas encantadas. Você recebe redução de ácido 10 e resistência a veneno +5. Além disso, você pode gastar 1 PM para criar um campo de energia esverdeada com duração sustentada que estende essa proteção para todos os aliados em alcance curto.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 280,
@@ -6815,7 +6374,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Uma vez por cena, se for reduzido a 0 PV ou menos, você pode gastar 5 PM para, em vez disso, ser reduzido a 1 PV. Pré-requisito: abençoado.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 281,
@@ -6824,7 +6383,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Uma vez por cena você pode gastar 3 PM para se tornar incorpóreo por 1 rodada. Nessa forma, você ignora ataques e efeitos não mágicos e pode atravessar paredes e objetos sólidos, mas não manipulá-los (você tem Força nula). Se terminar sua rodada dentro de um objeto sólido, você é expelido para o espaço vazio mais próximo e perde 1d12 PV para cada 1,5m pelo qual for expelido.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 282,
@@ -6833,7 +6392,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe redução de dano 10/impacto e fortificação 25%. Além disso, você pode lan- çar a magia Controlar Terra (CD Car). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 283,
@@ -6842,7 +6401,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `A armadura pode ser vestida ou removida com uma ação livre (acompanhada ou não de coreografia e música tema).`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 284,
@@ -6851,7 +6410,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode lançar Luz e usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um clérigo de seu nível (CD Car). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM. Além disso, quando você lança essa magia, além de seus efeitos normais, criaturas com sensibilidade a luz devem passar em um teste de Vontade ou ficam cegas por 1 rodada (apenas uma vez por cena).`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 285,
@@ -6860,7 +6419,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe resistência a necromancia e veneno +5. Além disso, pode gastar 2 PM para remover uma condição entre doente, enjoado ou envenenado de uma criatura adjacente.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 286,
@@ -6869,7 +6428,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe resistência a medo e mental +5 e pode gastar 2 PM para permitir que um aliado em alcance curto repita um teste de resistência contra um desses efeitos que o esteja afetando. Se ele passar, cancela o efeito. Você só pode usar essa habilidade uma vez por efeito.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 287,
@@ -6878,7 +6437,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O item possui um brilho pulsante que emana calor reconfortante. Você pode lançar Curar Ferimentos (CD Sab). Caso já conheça essa magia, o custo para lançá-la diminui em –1 PM.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 288,
@@ -6887,7 +6446,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `O item possui pontas afiadas. Quando é atingido por um ataque corpo a corpo, você pode gastar 1 PM para causar 2d6 pontos de dano do mesmo tipo sofrido ao atacante e reduzir essa mesma quantidade do dano sofrido.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 289,
@@ -6896,7 +6455,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você recebe resistência a atordoamento, paralisia e petrificação +5. Além disso, pode gastar 1 PM para repetir um teste de resistência contra uma dessas condições que o esteja afetando. Se você passar, cancela o efeito. Você só pode usar essa habilidade uma vez por efeito.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 290,
@@ -6905,7 +6464,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ARMADURA],
         descricao: `Você pode gastar 1 PM para criar um redemoinho que puxa uma criatura em alcance curto até um ponto adjacente a você (Fort CD For evita).`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 291,
@@ -6914,7 +6473,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico ergue uma barreira permeável ao redor do alvo da magia, diminuindo as capacidades dele. Se uma criatura falhar num teste de resistência contra uma magia sua, a CD das habilidades dela diminui em –2 por uma rodada.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 292,
@@ -6923,7 +6482,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico se parece com uma arma. Por exemplo, se for uma varinha, pode ser comprido e pontiagudo como uma espada curta. Quando lança uma magia de dano, você causa +1d10 pontos de dano de essência.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 293,
@@ -6932,7 +6491,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico emana uma sensação de conforto e união. Quando você lança uma magia em um aliado e gasta pelo menos 1 PM, recebe 1 PM temporário para gastar em aprimoramentos na próxima magia que lançar nessa cena. Esse PM não conta no limite de gasto de pontos de mana.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 294,
@@ -6941,7 +6500,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico é adornado com topázios e emite o som de estalos elétricos. Suas magias que causam dano de eletricidade causam um dado extra de dano do mesmo tipo e deixam o alvo ofuscado por 1 rodada.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 295,
@@ -6950,7 +6509,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico vibra com energia positiva, como se estivesse ansioso para salvar vidas. Suas magias de cura curam um dado extra do mesmo tipo.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 296,
@@ -6959,7 +6518,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico suaviza efeitos destrutivos. Por exemplo, uma labareda infernal pode virar uma lufada de ar abafado que, em vez de carbonizar seu alvo, irá apenas fazê-lo desmaiar. Quando lança uma magia de dano, você pode gastar +1 PM para que ela cause dano não letal.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 297,
@@ -6968,7 +6527,7 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico tem a aparência de um item mundano de tamanho equivalente — um cajado arcano pode parecer uma vassoura, enquanto uma varinha pode parecer um cachimbo. Ele permite que você use o poder Magia Discreta (Tormenta20, p. 131). Se você já o possui, em vez disso o custo para usá-lo diminui em –1 PM e você pode somar seu Carisma na CD do teste de Misticismo para perceber que você lançou uma magia.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 298,
@@ -6977,240 +6536,241 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESOTERICO],
         descricao: `O esotérico está sempre vibrando, ansioso para agir. Se estiver empunhando este esotérico, uma vez por rodada, quando você ou um aliado em alcance curto sofre dano, você pode gastar 4 PM para lançar uma magia de cura na vítima desse dano como uma reação. Apenas magias com execução de ação de movimento, padrão ou completa podem ser lançadas dessa forma.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 299,
         nome: 'Encadeado',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico impulsiona a energia mágica de seus feitiços, fazendo-a saltar para outros alvos. Uma vez por cena, quando você reduz os PV de um inimigo a 0 ou menos com uma magia, você pode causar metade do dano da magia a outro inimigo dentro do alcance original dela. O inimigo tem direito ao mesmo teste de resistência original e não sofre qualquer outro efeito da magia, apenas o dano.`,        referencias: Referencia.HEROIS,
-        paginas: '258'
+        descricao: `O esotérico impulsiona a energia mágica de seus feitiços, fazendo-a saltar para outros alvos. Uma vez por cena, quando você reduz os PV de um inimigo a 0 ou menos com uma magia, você pode causar metade do dano da magia a outro inimigo dentro do alcance original dela. O inimigo tem direito ao mesmo teste de resistência original e não sofre qualquer outro efeito da magia, apenas o dano.`,
+        referencias: Referencia.HEROIS,
+        paginas: '258',
       },
       {
         id: 300,
         nome: 'Escultor',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico está sempre vertendo um pouco de argila. Quando você lança uma magia com efeito de cone ou linha, pode gastar 1 PM para mudar a área dessa magia de cone para linha ou vice-versa. O comprimento de um cone que se torna linha dobra e o de uma linha que se torna cone é reduzido a um terço (arredonde para baixo, como o normal; por exemplo, 9m se era 30m).`,        
+        descricao: `O esotérico está sempre vertendo um pouco de argila. Quando você lança uma magia com efeito de cone ou linha, pode gastar 1 PM para mudar a área dessa magia de cone para linha ou vice-versa. O comprimento de um cone que se torna linha dobra e o de uma linha que se torna cone é reduzido a um terço (arredonde para baixo, como o normal; por exemplo, 9m se era 30m).`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 301,
         nome: 'Frugal',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico pode inibir seu poder, enfraquecendo suas magias, mas poupando suas energias no processo. Quando você lança uma magia que exige um teste de resistência e afeta um ou mais inimigos, pode diminuir a CD da magia em –2. Se fizer isso, o custo da magia também é diminuído em –2 PM.`,        
+        descricao: `O esotérico pode inibir seu poder, enfraquecendo suas magias, mas poupando suas energias no processo. Quando você lança uma magia que exige um teste de resistência e afeta um ou mais inimigos, pode diminuir a CD da magia em –2. Se fizer isso, o custo da magia também é diminuído em –2 PM.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 302,
         nome: 'Glacial',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico é adornado com safiras e frio ao toque. Suas magias que causam dano de frio causam um dado extra de dano do mesmo tipo e deixam os alvos vulneráveis por 1 rodada.`,        
+        descricao: `O esotérico é adornado com safiras e frio ao toque. Suas magias que causam dano de frio causam um dado extra de dano do mesmo tipo e deixam os alvos vulneráveis por 1 rodada.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 303,
         nome: 'Imperioso',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico impõe sua vontade sobre suas criações. Quando você lança uma magia que exige que você gaste ações para comandar o efeito dela, como Conjurar Monstro ou Mão Poderosa de Talude, a ação que você gasta para emitir esse comando diminui em uma categoria (de ação completa para padrão, de padrão para movimento, de movimento para livre). Se a ação for reduzida para livre, você pode emitir apenas um comando como ação livre por rodada; os demais gastam ações de movimento.`,        
+        descricao: `O esotérico impõe sua vontade sobre suas criações. Quando você lança uma magia que exige que você gaste ações para comandar o efeito dela, como Conjurar Monstro ou Mão Poderosa de Talude, a ação que você gasta para emitir esse comando diminui em uma categoria (de ação completa para padrão, de padrão para movimento, de movimento para livre). Se a ação for reduzida para livre, você pode emitir apenas um comando como ação livre por rodada; os demais gastam ações de movimento.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 304,
         nome: 'Implacável',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `Quando você lança uma magia, pode gastar +2 PM para afetar um alvo contra o qual você não tenha linha de efeito. Você deve estar vendo o alvo ou tê-lo visto em seu último turno, e ele ainda precisa estar no alcance. Pré-requisito: outro encanto.`,        
+        descricao: `Quando você lança uma magia, pode gastar +2 PM para afetar um alvo contra o qual você não tenha linha de efeito. Você deve estar vendo o alvo ou tê-lo visto em seu último turno, e ele ainda precisa estar no alcance. Pré-requisito: outro encanto.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 305,
         nome: 'Incriminador',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico é imbuído com energias enganadoras. Uma vez por cena, quando você lança uma magia, pode gastar 3 PM para criar uma ilusão que mostra a magia sendo lançada por outra criatura a sua escolha em alcance médio. Criaturas que identificarem a magia (veja Misticismo, em Tormenta20, p. 121) têm direito a um teste de Vontade (CD da magia) para desacreditar.`,        
+        descricao: `O esotérico é imbuído com energias enganadoras. Uma vez por cena, quando você lança uma magia, pode gastar 3 PM para criar uma ilusão que mostra a magia sendo lançada por outra criatura a sua escolha em alcance médio. Criaturas que identificarem a magia (veja Misticismo, em Tormenta20, p. 121) têm direito a um teste de Vontade (CD da magia) para desacreditar.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 306,
         nome: 'Inflamável',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico é adornado com rubis e quente ao toque. Suas magias que causam dano de fogo causam um dado extra de dano do mesmo tipo e deixam o alvo em chamas (se já fizerem isso, o dano causado por essa condição aumenta em +1d6).`,        
+        descricao: `O esotérico é adornado com rubis e quente ao toque. Suas magias que causam dano de fogo causam um dado extra de dano do mesmo tipo e deixam o alvo em chamas (se já fizerem isso, o dano causado por essa condição aumenta em +1d6).`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 307,
         nome: 'Inquisidor',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico é marcado com o símbolo sagrado de um deus maior. Quando você lança uma magia divina contra uma criatura que não seja devota dessa divindade, a CD da magia aumenta em +1. Se possuir a habilidade de classe Devoto Fiel dessa divindade, em vez disso a CD aumenta em +2.`,        
+        descricao: `O esotérico é marcado com o símbolo sagrado de um deus maior. Quando você lança uma magia divina contra uma criatura que não seja devota dessa divindade, a CD da magia aumenta em +1. Se possuir a habilidade de classe Devoto Fiel dessa divindade, em vez disso a CD aumenta em +2.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 308,
         nome: 'Insistente',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico emite um pulsar constante e ritmado. Quando você lança uma magia que causa dano por mais de uma rodada (como Flecha Ácida), os efeitos que normalmente só se aplicariam quando a magia é lançada (como Arcano de Batalha) se aplicam também à segunda rodada.`,        
+        descricao: `O esotérico emite um pulsar constante e ritmado. Quando você lança uma magia que causa dano por mais de uma rodada (como Flecha Ácida), os efeitos que normalmente só se aplicariam quando a magia é lançada (como Arcano de Batalha) se aplicam também à segunda rodada.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 309,
         nome: 'Khalmyrita',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico está imbuído com a presença estável da Ordem. Quando lança uma magia com efeito variável, em vez de rolar os dados você pode escolher um valor igual à média da rolagem. Um esotérico khalmyrita não pode ser nímbico.`,        
+        descricao: `O esotérico está imbuído com a presença estável da Ordem. Quando lança uma magia com efeito variável, em vez de rolar os dados você pode escolher um valor igual à média da rolagem. Um esotérico khalmyrita não pode ser nímbico.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 310,
         nome: 'Majestoso',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico possui um ornamento chamativo, como uma grande gema na ponta. A CD para resistir a suas magias arcanas aumenta em +1. Se você tiver a habilidade de classe Magias, em vez disso aumenta em +2. Pré-requisito: outro encanto.`,        
+        descricao: `O esotérico possui um ornamento chamativo, como uma grande gema na ponta. A CD para resistir a suas magias arcanas aumenta em +1. Se você tiver a habilidade de classe Magias, em vez disso aumenta em +2. Pré-requisito: outro encanto.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 311,
         nome: 'Nímbico',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico está imbuído com o poder delirante do Caos. Quando lança uma magia com efeito variável, você pode rolar novamente qualquer número de dados da rolagem original (limitado pelos seus PM atuais). Contudo, a cada resultado par numa dessas rolagens adicionais, você perde 1 PM. Um esotérico nímbico não pode ser khalmyrita.`,        
+        descricao: `O esotérico está imbuído com o poder delirante do Caos. Quando lança uma magia com efeito variável, você pode rolar novamente qualquer número de dados da rolagem original (limitado pelos seus PM atuais). Contudo, a cada resultado par numa dessas rolagens adicionais, você perde 1 PM. Um esotérico nímbico não pode ser khalmyrita.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 312,
         nome: 'Pulverizante',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico foi feito para a destruição, uma ferramenta de morte que não admite segundas chances ou arrependimento. Quando lança uma magia que reduz os PV de uma criatura a 0 ou menos, você pode gastar 2 PM para que a criatura seja desintegrada, restando apenas um fino pó. Qualquer equipamento que a criatura esteja carregando, vestindo ou empunhando também é desintegrado, exceto itens mágicos. Um esotérico pulverizante não pode ser contido. Pré-requisito: outro encanto.`,        
+        descricao: `O esotérico foi feito para a destruição, uma ferramenta de morte que não admite segundas chances ou arrependimento. Quando lança uma magia que reduz os PV de uma criatura a 0 ou menos, você pode gastar 2 PM para que a criatura seja desintegrada, restando apenas um fino pó. Qualquer equipamento que a criatura esteja carregando, vestindo ou empunhando também é desintegrado, exceto itens mágicos. Um esotérico pulverizante não pode ser contido. Pré-requisito: outro encanto.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 313,
         nome: 'Retaliador',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `Quando você evitar dano de um inimigo (na forma de RD) com o efeito de uma de suas magias, a CD da sua próxima magia de dano lançada até o fim do seu próximo turno aumenta em +1 para cada 10 pontos de dano evitado.`,        
+        descricao: `Quando você evitar dano de um inimigo (na forma de RD) com o efeito de uma de suas magias, a CD da sua próxima magia de dano lançada até o fim do seu próximo turno aumenta em +1 para cada 10 pontos de dano evitado.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 314,
         nome: 'Sanguessuga',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico possui entalhes de marfim pontiagudos, semelhantes a dentes caninos. Se você lançar uma magia e um ou mais inimigos falharem no teste de resistência contra ela, você recebe 10 PV temporários.`,        
+        descricao: `O esotérico possui entalhes de marfim pontiagudos, semelhantes a dentes caninos. Se você lançar uma magia e um ou mais inimigos falharem no teste de resistência contra ela, você recebe 10 PV temporários.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 315,
         nome: 'Traiçoeiro',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico emite um sibilar baixo e constante. Se você lançar uma magia hostil e afetar um aliado, todas as criaturas afetadas pela magia (incluindo o aliado!) sofrem –2 em seus testes de resistência. O aliado não pode ter nenhum tipo de resistência ou imunidade contra o efeito da magia, nem se beneficiar dele de nenhuma forma, para este encanto funcionar — por exemplo, uma Bola de Fogo lançada contra um aliado com redução de fogo não ativa este efeito.`,        
+        descricao: `O esotérico emite um sibilar baixo e constante. Se você lançar uma magia hostil e afetar um aliado, todas as criaturas afetadas pela magia (incluindo o aliado!) sofrem –2 em seus testes de resistência. O aliado não pode ter nenhum tipo de resistência ou imunidade contra o efeito da magia, nem se beneficiar dele de nenhuma forma, para este encanto funcionar — por exemplo, uma Bola de Fogo lançada contra um aliado com redução de fogo não ativa este efeito.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 316,
         nome: 'Verdugo',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ESOTERICO],
-        descricao: `O esotérico retira poder da morte de seus inimigos. Na primeira vez em cada cena que você reduz um inimigo a 0 PV ou menos com uma magia lançada com este esotérico, o dano causado por suas magias aumenta em +1 por dado até o fim da cena.`,        
+        descricao: `O esotérico retira poder da morte de seus inimigos. Na primeira vez em cada cena que você reduz um inimigo a 0 PV ou menos com uma magia lançada com este esotérico, o dano causado por suas magias aumenta em +1 por dado até o fim da cena.`,
         referencias: Referencia.HEROIS,
-        paginas: '258'
+        paginas: '258',
       },
       {
         id: 317,
         nome: 'Aconchegante',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `O vestuário torna o sono mais confortável, melhorando seu descanso em uma categoria.`,        
+        descricao: `O vestuário torna o sono mais confortável, melhorando seu descanso em uma categoria.`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 318,
         nome: 'Ajudante',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `A ferramenta realiza movimentos por vontade própria, auxiliando-o. O bônus em uma perícia fornecido pela ferramenta aumenta em +2.`,        
+        descricao: `A ferramenta realiza movimentos por vontade própria, auxiliando-o. O bônus em uma perícia fornecido pela ferramenta aumenta em +2.`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 319,
         nome: 'Autoritário',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `O vestuário tem ornamentos volumosos no peitoral e nas ombreiras, tornando sua figura mais imponente. Fornece +2 em Intimidação (cumulativo com outros bônus do item) e aumenta a CD de seus efeitos de medo em +2.`,        
+        descricao: `O vestuário tem ornamentos volumosos no peitoral e nas ombreiras, tornando sua figura mais imponente. Fornece +2 em Intimidação (cumulativo com outros bônus do item) e aumenta a CD de seus efeitos de medo em +2.`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 320,
         nome: 'Compacto',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `Por meio de articulações engenhosas e bolsões planares, o equipamento não ocupa espaços.`,        
+        descricao: `Por meio de articulações engenhosas e bolsões planares, o equipamento não ocupa espaços.`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 321,
         nome: 'Imaculado',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `O vestuário está sempre limpo e perfumado. Mesmo após emergir de um pântano ou esgoto, toda a imundície desaparece em 1 rodada. Fornece +2 em Diplomacia (cumulativo com outros bônus do item) e aumenta a CD de Aparência Inofensiva, Presença Aristocrática e efeitos similares em +2.`,        
+        descricao: `O vestuário está sempre limpo e perfumado. Mesmo após emergir de um pântano ou esgoto, toda a imundície desaparece em 1 rodada. Fornece +2 em Diplomacia (cumulativo com outros bônus do item) e aumenta a CD de Aparência Inofensiva, Presença Aristocrática e efeitos similares em +2.`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 322,
         nome: 'Insinuante',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `O vestuário realça suas curvas e músculos. Fornece +2 em Enganação (cumulativo com outros bônus do item) e aumenta a CD de seus efeitos mentais em +2.`,        
+        descricao: `O vestuário realça suas curvas e músculos. Fornece +2 em Enganação (cumulativo com outros bônus do item) e aumenta a CD de seus efeitos mentais em +2.`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 323,
         nome: 'Ligeiro',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `O item pode ser vestido ou removido com uma ação livre (acompanhada ou não de pose e olhar fatal).`,        
+        descricao: `O item pode ser vestido ou removido com uma ação livre (acompanhada ou não de pose e olhar fatal).`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 324,
         nome: 'Prontidão',
         tipo: TipoItem.ENCANTO,
         chave: [Chave.TIPO_ITEM_ACESSORIO],
-        descricao: `O item surge em suas mãos no instante em que precisa ser utilizado. Desde que ele esteja em alcance curto, você pode empunhá-lo ou guardá-lo como uma ação livre. Além disso, se executar uma reação em que poderia usar o item, você pode empunhá-lo como parte dessa ação.`,        
+        descricao: `O item surge em suas mãos no instante em que precisa ser utilizado. Desde que ele esteja em alcance curto, você pode empunhá-lo ou guardá-lo como uma ação livre. Além disso, se executar uma reação em que poderia usar o item, você pode empunhá-lo como parte dessa ação.`,
         referencias: Referencia.HEROIS,
-        paginas: '262'
+        paginas: '262',
       },
       {
         id: 1,
@@ -7245,12 +6805,14 @@ export class ItemData {
           Chave.DISCRETA,
           Chave.ARREMESSO,
           Chave.ATAQUE_DESTREZA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_adaga.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 2,
@@ -7283,12 +6845,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.HABILIDADE_ARMA_ALONGADA,
           Chave.TIPO_DANO_CORTE,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_alabarda.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 3,
@@ -7315,16 +6879,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_alfange.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 4,
@@ -7357,12 +6923,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_FLECHA,
           Chave.EMPUNHADURA_MONTADA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_arco_curto.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 5,
@@ -7395,12 +6963,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_FLECHA,
           Chave.SOMA_FORCA_DANO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_arco_longo.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 6,
@@ -7432,12 +7002,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.ATAQUE_CORPO_A_CORPO_PENALIDADE_MAIOR,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_azagaia.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 7,
@@ -7470,12 +7042,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.MUNICAO_VIROTE,
           Chave.RECARREGA_ACAO_MOVIMENTO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_besta_leve.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 8,
@@ -7508,12 +7082,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_VIROTE,
           Chave.RECARREGA_ACAO_PADRÃO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_besta_pesada.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 146',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 9,
@@ -7545,12 +7121,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.HABILIDADE_ARMA_DUPLA,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_bordao.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 10,
@@ -7582,16 +7160,18 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.HABILIDADE_ARMA_AGIL,
-          Chave.HABILIDADE_ARMA_VERSATIL, 
-          Chave.ACAO_DERRUBAR, 
+          Chave.HABILIDADE_ARMA_VERSATIL,
+          Chave.ACAO_DERRUBAR,
           Chave.ACAO_DESARMAR,
           Chave.HABILIDADE_ALCANCE,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_chicote.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 147',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 11,
@@ -7618,17 +7198,19 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.HABILIDADE_ARMA_AGIL,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_cimitarra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 12,
@@ -7655,16 +7237,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_SIMPLES, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_clava.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 147',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 14,
@@ -7697,12 +7281,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.HABILIDADE_ARMA_AGIL,
           Chave.PROFICIENCIA_ARMA_MARCIAL_DUAS_MAOS,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_espada_bastarda.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 15,
@@ -7729,17 +7315,19 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_SIMPLES, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.EMPUNHADURA_ARMA_LEVE, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.EMPUNHADURA_ARMA_LEVE,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_espada_curta.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 16,
@@ -7766,16 +7354,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
-          Chave.TIPO_DANO_CORTE
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_espada_longa.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 17,
@@ -7802,17 +7392,19 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.HABILIDADE_ARMA_AGIL,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_florete.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 18,
@@ -7839,17 +7431,19 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_SIMPLES, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_UMA_MAO, 
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.EMPUNHADURA_ARMA_LEVE,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_foice.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 19,
@@ -7883,12 +7477,14 @@ export class ItemData {
           Chave.ATAQUE_A_DISTANCIA,
           Chave.SOMA_FORCA_DANO,
           Chave.MUNICAO_PEDRA_POLIDA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_funda.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 20,
@@ -7915,16 +7511,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_gadanho.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 21,
@@ -7958,12 +7556,14 @@ export class ItemData {
           Chave.HABILIDADE_ARMA_ADAPTAVEL,
           Chave.HABILIDADE_ARMA_AGIL,
           Chave.PROFICIENCIA_ARMA_MARCIAL_DUAS_MAOS,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_katana.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 22,
@@ -7995,12 +7595,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.ARREMESSO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_lanca.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 23,
@@ -8034,12 +7636,14 @@ export class ItemData {
           Chave.ARREMESSO,
           Chave.HABILIDADE_ARMA_ALONGADA,
           Chave.EMPUNHADURA_MONTADA_UMA_MAO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_lanca_montada.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 148',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 24,
@@ -8066,16 +7670,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_maca.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 25,
@@ -8108,12 +7714,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.EMPUNHADURA_ARMA_LEVE,
           Chave.ARREMESSO,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_machadinha.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 26,
@@ -8145,12 +7753,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.PROFICIENCIA_ARMA_MARCIAL_DUAS_MAOS,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_machado_anao.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 27,
@@ -8177,16 +7787,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_machado_de_batalha.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 28,
@@ -8213,16 +7825,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_machado_guerra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 29,
@@ -8254,12 +7868,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.HABILIDADE_ARMA_DESBALANCEADA,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_machado_taurico.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 30,
@@ -8292,12 +7908,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.HABILIDADE_ARMA_VERSATIL,
           Chave.ACAO_DESARMAR,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_mangual.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 31,
@@ -8324,16 +7942,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_marreta.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 32,
@@ -8360,16 +7980,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_martelo_de_guerra.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 149',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 33,
@@ -8396,16 +8018,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         imagem: 'assets/img/item_arma_montante.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 34,
@@ -8438,12 +8062,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_BALA,
           Chave.RECARREGA_ACAO_PADRÃO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_mosquete.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 35,
@@ -8470,16 +8096,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_picareta.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 36,
@@ -8511,12 +8139,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.HABILIDADE_ARMA_ALONGADA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_pique.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 37,
@@ -8549,12 +8179,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.MUNICAO_BALA,
           Chave.RECARREGA_ACAO_PADRÃO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_pistola.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 38,
@@ -8581,7 +8213,7 @@ export class ItemData {
         alcance: Alcance.CURTO,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_EXOTICA, 
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
           Chave.ATAQUE_A_DISTANCIA,
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.CONDICAO_ENREDADO,
@@ -8589,7 +8221,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_rede.png',
         referencias: Referencia.BASICO,
         paginas: '145 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 39,
@@ -8616,16 +8250,18 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_SIMPLES, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_SIMPLES,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_tacape.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 40,
@@ -8659,12 +8295,14 @@ export class ItemData {
           Chave.HABILIDADE_ARMA_VERSATIL,
           Chave.ACAO_DERRUBAR,
           Chave.ARREMESSO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_tridente.png',
         referencias: Referencia.BASICO,
         paginas: '144 E 150',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 41,
@@ -8696,12 +8334,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.TIPO_DANO_CORTE,
-          Chave.METABOLISMO
+          Chave.METABOLISMO,
         ],
         imagem: 'assets/img/item_arma_acoite_finntroll.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 42,
@@ -8735,12 +8375,14 @@ export class ItemData {
           Chave.HABILIDADE_ARMA_DESBALANCEADA,
           Chave.MUNICAO_BALA,
           Chave.RECARREGA_ACAO_PADRÃO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_arcabuz.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 43,
@@ -8772,12 +8414,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.ARREMESSO,
           Chave.ATAQUE_CORPO_A_CORPO_PENALIDADE_MAIOR,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_arpao.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 44,
@@ -8812,12 +8456,14 @@ export class ItemData {
           Chave.RECARREGA_ACAO_COMPLETA,
           Chave.HABILIDADE_ALCANCE,
           Chave.CONE,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_bacamarte.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 45,
@@ -8844,17 +8490,19 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_EXOTICA, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_EXOTICA,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.TIPO_DANO_CORTE,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_espada_vespa.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 46,
@@ -8881,15 +8529,17 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_UMA_MAO
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_UMA_MAO,
         ],
         imagem: 'assets/img/item_arma_gladio.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 47,
@@ -8927,7 +8577,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_lanca_fogo.png',
         referencias: Referencia.AMEACAS,
         paginas: '392 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 48,
@@ -8961,12 +8613,14 @@ export class ItemData {
           Chave.HABILIDADE_ARMA_AGIL,
           Chave.HABILIDADE_ARMA_VERSATIL,
           Chave.ACAO_AGARRAR,
-          Chave.ACAO_DESARMAR
+          Chave.ACAO_DESARMAR,
         ],
         imagem: 'assets/img/item_arma_mordida_diabo.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 49,
@@ -9001,7 +8655,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_nekote.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 50,
@@ -9039,7 +8695,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_pistola_punhal.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 51,
@@ -9076,7 +8734,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_porrete.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 52,
@@ -9112,7 +8772,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_presa_serpente.png',
         referencias: Referencia.AMEACAS,
         paginas: '393 E 394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 53,
@@ -9147,7 +8809,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_shuriken.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 54,
@@ -9185,7 +8849,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_tetsubo.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 55,
@@ -9221,7 +8887,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_traque.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 56,
@@ -9257,7 +8925,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_zarabatana.png',
         referencias: Referencia.AMEACAS,
         paginas: '394',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 57,
@@ -9283,14 +8953,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_LEVE
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_LEVE],
         imagem: 'assets/img/item_armadura_acolchoada.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 58,
@@ -9317,15 +8986,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
-          Chave.SOB_MEDIDA,   
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA, Chave.SOB_MEDIDA],
         imagem: 'assets/img/item_armadura_armadura_completa.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 59,
@@ -9351,14 +9018,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.EMPUNHADURA_ARMA_LEVE
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.EMPUNHADURA_ARMA_LEVE],
         imagem: 'assets/img/item_armadura_armadura_couro.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 59,
@@ -9384,14 +9050,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_brunea.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 60,
@@ -9417,13 +9082,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_cota_malha.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 61,
@@ -9449,14 +9114,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 4,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.EMPUNHADURA_ARMA_LEVE
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.EMPUNHADURA_ARMA_LEVE],
         imagem: 'assets/img/item_armadura_couraca.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 62,
@@ -9482,14 +9146,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 1,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.EMPUNHADURA_ARMA_LEVE
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.EMPUNHADURA_ARMA_LEVE],
         imagem: 'assets/img/item_armadura_couro_batido.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 63,
@@ -9519,12 +9182,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.PROFICIENCIA_ESCUDO,
           Chave.HABILIDADE_ESCUDO_MAO_LIVRE_EXCETO_ARMA,
-          Chave.HABILIDADE_ESCUDO_PROFICIENCIA_ARMA_MARCIAL_PARA_ATAQUE
+          Chave.HABILIDADE_ESCUDO_PROFICIENCIA_ARMA_MARCIAL_PARA_ATAQUE,
         ],
         imagem: 'assets/img/item_armadura_escudo_leve.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ESCUDO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 64,
@@ -9550,14 +9215,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 2,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.PROFICIENCIA_ESCUDO,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO],
         imagem: 'assets/img/item_armadura_escudo_pesado.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ESCUDO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 65,
@@ -9583,14 +9247,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.EMPUNHADURA_ARMA_LEVE
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.EMPUNHADURA_ARMA_LEVE],
         imagem: 'assets/img/item_armadura_gibao_peles.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 66,
@@ -9616,14 +9279,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_loriga_segmentada.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 67,
@@ -9649,14 +9311,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 4,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_meia_armadura.png',
         referencias: Referencia.BASICO,
         paginas: '153 E 154',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 68,
@@ -9682,14 +9343,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.EMPUNHADURA_ARMA_LEVE,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.EMPUNHADURA_ARMA_LEVE],
         imagem: 'assets/img/item_armadura_armadura_ossos.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 69,
@@ -9715,14 +9375,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PROFICIENCIA_ARMADURA_PESADA, 
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_armadura_quitina.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 70,
@@ -9748,14 +9407,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 1,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.PROFICIENCIA_ESCUDO, 
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PROFICIENCIA_ESCUDO],
         imagem: 'assets/img/item_armadura_escudo_couro.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ESCUDO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 71,
@@ -9781,14 +9439,13 @@ export class ItemData {
         margem_ameaca: 1,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.EMPUNHADURA_ARMA_LEVE,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.EMPUNHADURA_ARMA_LEVE],
         imagem: 'assets/img/item_armadura_veste_teia_aranha.png',
         referencias: Referencia.AMEACAS,
         paginas: '396',
-        tipo: TipoItem.ARMADURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 72,
@@ -9814,14 +9471,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         imagem: 'assets/img/item_municao_balas.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 73,
@@ -9847,14 +9503,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         imagem: 'assets/img/item_municao_flechas.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 74,
@@ -9880,14 +9535,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.CONSUMIVEL,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         imagem: 'assets/img/item_municao_pedras.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 75,
@@ -9913,14 +9567,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL, 
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 76,
@@ -9946,14 +9599,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL, 
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
+
         referencias: Referencia.AMEACAS,
         paginas: '394 E 395',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 77,
@@ -9979,15 +9631,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.CONSUMIVEL,
-          Chave.ARREMESSO,
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL, Chave.ARREMESSO],
+
         referencias: Referencia.BASICO,
         paginas: '151',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 78,
@@ -10013,12 +9663,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-        ],
-        
+        chave: [],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 79,
@@ -10044,14 +9695,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_DUAS_MAOS],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 80,
@@ -10077,13 +9727,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-        ],
-        
+        chave: [Chave.LIMITE_USO_VESTIDO],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 81,
@@ -10110,10 +9760,12 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [],
-        
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 82,
@@ -10139,12 +9791,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-        ],
-        
+        chave: [],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 83,
@@ -10170,12 +9823,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-        ],
-        
+        chave: [],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 84,
@@ -10201,12 +9855,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-        ],
-        
+        chave: [],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 85,
@@ -10232,14 +9887,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONTAINER, 
-          Chave.NAO_CONTA_COMO_VESTIDO
-        ],
-        
+        chave: [Chave.CONTAINER, Chave.NAO_CONTA_COMO_VESTIDO],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 86,
@@ -10265,14 +9919,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONTAINER, 
-          Chave.NAO_CONTA_COMO_VESTIDO,
-        ],
-        
+        chave: [Chave.CONTAINER, Chave.NAO_CONTA_COMO_VESTIDO],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 87,
@@ -10298,15 +9951,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.ARREMESSO,
-          Chave.ALCANCE_CURTO,
-        ],
-        
+        chave: [Chave.CONSUMIVEL, Chave.ARREMESSO, Chave.ALCANCE_CURTO],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 88,
@@ -10332,13 +9983,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-        ],
-        
+        chave: [Chave.LIMITE_USO_VESTIDO],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 89,
@@ -10364,13 +10015,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 90,
@@ -10396,12 +10047,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-        ],
-        
+        chave: [],
+
         referencias: Referencia.BASICO,
         paginas: '155 E 156',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 91,
@@ -10427,14 +10079,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.LIMITE_USO_EMPUNHADO,
-        ],
-        
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.LIMITE_USO_EMPUNHADO],
+
         referencias: Referencia.BASICO,
         paginas: '156 E 157',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 92,
@@ -10460,14 +10111,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_LEVE, 
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_LEVE],
+
         referencias: Referencia.BASICO,
         paginas: '156 E 157',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 93,
@@ -10493,13 +10143,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO],
+
         referencias: Referencia.BASICO,
         paginas: '156 E 157',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 94,
@@ -10525,13 +10175,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO],
+
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 95,
@@ -10557,12 +10207,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-        ],
-        
+        chave: [],
+
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 96,
@@ -10588,14 +10239,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.CONSUMIVEL, 
-        ],
-        
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.CONSUMIVEL],
+
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 97,
@@ -10621,13 +10271,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-        ],
-        
+        chave: [Chave.LIMITE_USO_EMPUNHADO],
+
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 98,
@@ -10653,14 +10303,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-        ],
+        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_DUAS_MAOS],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 99,
@@ -10688,11 +10336,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-        ],
+        chave: [],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 100,
@@ -10720,13 +10369,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.FERRAMENTA_ACAO_REQUERIDA,
-          Chave.ACAO_ACAMPAMENTO
-        ],
+        chave: [Chave.FERRAMENTA_ACAO_REQUERIDA, Chave.ACAO_ACAMPAMENTO],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 101,
@@ -10752,13 +10400,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.FERRAMENTA_ACAO_REQUERIDA,
-          Chave.ACAO_DISFARCE
-        ],
+        chave: [Chave.FERRAMENTA_ACAO_REQUERIDA, Chave.ACAO_DISFARCE],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 102,
@@ -10785,14 +10432,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
-          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.EMPUNHADURA_ARMA_DUAS_MAOS],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 103,
@@ -10818,13 +10463,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.FERRAMENTA_ACAO_REQUERIDA,
-          Chave.ACAO_ABRIR_FECHADURA
-        ],
+        chave: [Chave.FERRAMENTA_ACAO_REQUERIDA, Chave.ACAO_ABRIR_FECHADURA],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 104,
@@ -10852,12 +10496,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.FERRAMENTA_PERICIA_REQUERIDA, Chave.PERICIA_OFICIO
-        ],
+        chave: [Chave.FERRAMENTA_PERICIA_REQUERIDA, Chave.PERICIA_OFICIO],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 105,
@@ -10884,14 +10528,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, 
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_DUAS_MAOS
-        ],
+        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_DUAS_MAOS],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 106,
@@ -10917,12 +10559,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 107,
@@ -10949,14 +10591,16 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.EMPUNHADURA_ARMA_DUAS_MAOS, 
+          Chave.LIMITE_USO_EMPUNHADO,
+          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.FERRAMENTA_PERICIA_REQUERIDA,
-          Chave.PERICIA_CURA
+          Chave.PERICIA_CURA,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 108,
@@ -10983,13 +10627,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.TIPO_ITEM_ANIMAL,
-          Chave.LIMITE_USO_VESTIDO,
-        ],
+        chave: [Chave.TIPO_ITEM_ANIMAL, Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 109,
@@ -11016,14 +10659,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.FERRAMENTA_INSTRUMENTO_MUSICAL,
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-        ],
+        chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL, Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_DUAS_MAOS],
         referencias: Referencia.BASICO,
         paginas: '156 E 158',
-        tipo: TipoItem.FERRAMENTA,pericia: '', proficiencia: ''
+        tipo: TipoItem.FERRAMENTA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 110,
@@ -11049,14 +10690,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.PERICIA_INVESTIGACAO,
-          Chave.ACAO_INTERROGAR,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_INVESTIGACAO, Chave.ACAO_INTERROGAR],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 111,
@@ -11082,13 +10721,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PERICIA_INTIMIDACAO
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_INTIMIDACAO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 112,
@@ -11114,12 +10752,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 113,
@@ -11145,13 +10783,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PERICIA_ATUACAO
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_ATUACAO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 114,
@@ -11177,13 +10814,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PERICIA_ENGANACAO
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_ENGANACAO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 115,
@@ -11209,13 +10845,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PERICIA_FORTITUDE
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_FORTITUDE],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 116,
@@ -11241,12 +10876,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 117,
@@ -11272,13 +10907,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PERSONAGEM_MANA
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERSONAGEM_MANA],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 118,
@@ -11304,13 +10938,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.MEDO
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.MEDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 119,
@@ -11341,11 +10974,13 @@ export class ItemData {
           Chave.PERICIA_ADESTRAMENTO,
           Chave.PERICIA_DIPLOMACIA,
           Chave.PERICIA_INVESTIGACAO,
-          Chave.ACAO_INTERROGAR
+          Chave.ACAO_INTERROGAR,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 120,
@@ -11374,7 +11009,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_VONTADE],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 121,
@@ -11403,7 +11040,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_LADINAGEM],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 122,
@@ -11429,14 +11068,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.ATAQUE_DESARMADO,
-          Chave.HABILIDADE_VESTUARIO_CONTA_COMO_ARMA,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.ATAQUE_DESARMADO, Chave.HABILIDADE_VESTUARIO_CONTA_COMO_ARMA],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 123,
@@ -11465,7 +11102,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_FURTIVIDADE],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 124,
@@ -11494,7 +11133,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_RELIGIAO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 125,
@@ -11523,7 +11164,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 126,
@@ -11549,13 +11192,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO, 
-          Chave.PERICIA_ACROBACIA
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_ACROBACIA],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 127,
@@ -11584,7 +11226,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_DIPLOMACIA],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 128,
@@ -11613,7 +11257,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 128,
@@ -11642,7 +11288,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 129,
@@ -11671,7 +11319,9 @@ export class ItemData {
         chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_REFLEXOS],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 130,
@@ -11697,13 +11347,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.HABILIDADE_VESTUARIO_CONTA_COMO_ARMA,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.HABILIDADE_VESTUARIO_CONTA_COMO_ARMA],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 131,
@@ -11729,12 +11378,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 132,
@@ -11760,10 +11409,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [Chave.LIMITE_USO_VESTIDO, ],
+        chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 133,
@@ -11789,10 +11440,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [Chave.LIMITE_USO_VESTIDO, ],
+        chave: [Chave.LIMITE_USO_VESTIDO],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 134,
@@ -11818,14 +11471,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.PERICIA_ATLETISMO,
-          Chave.DESLOCAMENTO
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_ATLETISMO, Chave.DESLOCAMENTO],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.VESTUARIO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VESTUARIO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 135,
@@ -11851,14 +11502,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_UMA_MAO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '156 E 159',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 136,
@@ -11894,7 +11543,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 137,
@@ -11925,11 +11576,13 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.ELEMENTAL,
           Chave.MAGIA,
-          Chave.PERICIA_MISTICISMO
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 138,
@@ -11959,11 +11612,13 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.PERICIA_MISTICISMO,
-          Chave.TIPO_DANO_TREVAS
+          Chave.TIPO_DANO_TREVAS,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 139,
@@ -11997,7 +11652,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 140,
@@ -12023,13 +11680,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 141,
@@ -12055,13 +11711,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_VESTIDO,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.LIMITE_USO_VESTIDO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 142,
@@ -12087,14 +11742,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.LIMITE_PM,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_UMA_MAO, Chave.LIMITE_PM],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 143,
@@ -12129,7 +11782,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 144,
@@ -12164,7 +11819,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 145,
@@ -12200,7 +11857,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '396 E 398',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 146,
@@ -12226,14 +11885,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.PERICIA_MISTICISMO
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.EMPUNHADURA_ARMA_UMA_MAO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '396 E 398',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 147,
@@ -12259,13 +11916,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ESOTERICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ESOTERICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 148,
@@ -12297,11 +11953,13 @@ export class ItemData {
           Chave.ARREMESSO,
           Chave.TIPO_DANO_ACIDO,
           Chave.PERICIA_REFLEXOS,
-          Chave.REDUZ_METADE
+          Chave.REDUZ_METADE,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 149,
@@ -12327,14 +11985,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.PERSONAGEM_MANA_REGENERAÇÃO
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.PERSONAGEM_MANA_REGENERAÇÃO],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 150,
@@ -12371,7 +12027,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 151,
@@ -12397,14 +12055,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.ATRIBUTO_CARISMA
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.ATRIBUTO_CARISMA],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 152,
@@ -12435,11 +12091,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
           Chave.CONDICAO_ENFEITICADO,
           Chave.PERICIA_VONTADE,
-          Chave.ANULA
+          Chave.ANULA,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 153,
@@ -12465,15 +12123,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.PERICIA_CURA,
-          Chave.PERSONAGEM_MANA
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.PERICIA_CURA, Chave.PERSONAGEM_MANA],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 154,
@@ -12505,11 +12160,13 @@ export class ItemData {
           Chave.ARREMESSO,
           Chave.TIPO_DANO_FOGO,
           Chave.CONDICAO_EM_CHAMAS,
-          Chave.PERICIA_REFLEXOS
+          Chave.PERICIA_REFLEXOS,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 155,
@@ -12535,13 +12192,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 156,
@@ -12571,11 +12227,13 @@ export class ItemData {
           Chave.CONSUMIVEL,
           Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
           Chave.TIPO_DANO_FOGO,
-          Chave.PERICIA_MISTICISMO
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 157,
@@ -12601,15 +12259,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-          Chave.MAGIA
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO, Chave.MAGIA],
         referencias: Referencia.BASICO,
         paginas: '156 E 160',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 158,
@@ -12640,11 +12295,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
           Chave.DANO,
           Chave.MAGIA,
-          Chave.PERICIA_MISTICISMO
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 159,
@@ -12674,11 +12331,13 @@ export class ItemData {
           Chave.CONSUMIVEL,
           Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
           Chave.TIPO_DANO_FRIO,
-          Chave.PERICIA_MISTICISMO
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 160,
@@ -12704,14 +12363,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 161,
@@ -12737,14 +12394,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 162,
@@ -12770,14 +12425,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 163,
@@ -12803,14 +12456,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 164,
@@ -12836,15 +12487,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-          Chave.PERICIA_CURA,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO, Chave.PERICIA_CURA],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 165,
@@ -12870,14 +12518,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 166,
@@ -12903,14 +12549,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
-          Chave.PERICIA_MISTICISMO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR, Chave.PERICIA_MISTICISMO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 167,
@@ -12941,11 +12585,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_VENENO,
           Chave.METODO_INOCULACAO_VENENO_INGESTAO,
           Chave.CONDICAO_PARALISADO,
-          Chave.CONDICAO_LENTO
+          Chave.CONDICAO_LENTO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 168,
@@ -12976,11 +12622,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_VENENO,
           Chave.METODO_INOCULACAO_VENENO_INALACAO,
           Chave.CONDICAO_INCONSCIENTE,
-          Chave.CONDICAO_ENJOADO
+          Chave.CONDICAO_ENJOADO,
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 169,
@@ -13006,14 +12654,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
-          Chave.METODO_INOCULACAO_VENENO_INGESTAO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_INGESTAO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 170,
@@ -13048,7 +12694,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 171,
@@ -13074,14 +12722,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
-          Chave.METODO_INOCULACAO_VENENO_INALACAO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_INALACAO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 172,
@@ -13107,11 +12753,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_CONTATO, 
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_CONTATO],
         referencias: Referencia.BASICO,
         paginas: '157 E 161',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 173,
@@ -13137,14 +12784,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
-          Chave.METODO_INOCULACAO_VENENO_CONTATO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_CONTATO],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 174,
@@ -13170,14 +12815,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
-          Chave.METODO_INOCULACAO_VENENO_CONTATO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_CONTATO],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 175,
@@ -13203,14 +12846,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
-          Chave.METODO_INOCULACAO_VENENO_INGESTAO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_INGESTAO],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 176,
@@ -13245,7 +12886,9 @@ export class ItemData {
         ],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 177,
@@ -13271,14 +12914,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.PERSONAGEM_VIDA_REGENERACAO
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.PERSONAGEM_VIDA_REGENERACAO],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 178,
@@ -13311,11 +12952,13 @@ export class ItemData {
           Chave.CILINDRO,
           Chave.CAMUFLAGEM_LEVE,
           Chave.CAMUFLAGEM_TOTAL,
-          Chave.CENA
+          Chave.CENA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 179,
@@ -13341,14 +12984,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.METODO_INOCULACAO_VENENO_INGESTAO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.METODO_INOCULACAO_VENENO_INGESTAO],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 180,
@@ -13374,15 +13015,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.ELEMENTAL,
-          Chave.CENA
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.ELEMENTAL, Chave.CENA],
         referencias: Referencia.AMEACAS,
         paginas: '396 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 181,
@@ -13408,15 +13046,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.ARREMESSO,
-          Chave.ALCANCE_MEDIO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.ARREMESSO, Chave.ALCANCE_MEDIO],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 182,
@@ -13442,14 +13077,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-          Chave.ARREMESSO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO, Chave.ARREMESSO],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 183,
@@ -13475,13 +13108,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 184,
@@ -13522,7 +13154,9 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 185,
@@ -13553,11 +13187,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,
           Chave.METODO_INOCULACAO_VENENO_INALACAO,
           Chave.PERSONAGEM_MANA,
-          Chave.PERSONAGEM_MANA_REGENERAÇÃO
+          Chave.PERSONAGEM_MANA_REGENERAÇÃO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 186,
@@ -13588,11 +13224,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
           Chave.DANO,
           Chave.MAGIA,
-          Chave.PERICIA_MISTICISMO
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 187,
@@ -13624,11 +13262,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
           Chave.TIPO_DANO_FRIO,
           Chave.MAGIA,
-          Chave.PERICIA_MISTICISMO
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 188,
@@ -13659,11 +13299,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
           Chave.PERICIA_MISTICISMO,
           Chave.PERICIA_FORTITUDE,
-          Chave.MAGIA
+          Chave.MAGIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 189,
@@ -13695,11 +13337,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,
           Chave.TIPO_DANO_ELETRECIDADE,
           Chave.MAGIA,
-          Chave.PERICIA_MISTICISMO
+          Chave.PERICIA_MISTICISMO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 190,
@@ -13730,11 +13374,13 @@ export class ItemData {
           Chave.TIPO_ITEM_ALQUIMICO_VENENO,
           Chave.METODO_INOCULACAO_VENENO_INALACAO,
           Chave.CONDICAO_PARALISADO,
-          Chave.CONDICAO_LENTO
+          Chave.CONDICAO_LENTO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 191,
@@ -13760,14 +13406,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.TIPO_ITEM_ALQUIMICO_VENENO,
-          Chave.METODO_INOCULACAO_VENENO_CONTATO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_CONTATO],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 192,
@@ -13793,14 +13437,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL, 
-          Chave.TIPO_ITEM_ALQUIMICO_VENENO, 
-          Chave.METODO_INOCULACAO_VENENO_CONTATO
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.TIPO_ITEM_ALQUIMICO_VENENO, Chave.METODO_INOCULACAO_VENENO_CONTATO],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 193,
@@ -13834,7 +13476,9 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALQUIMICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALQUIMICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 194,
@@ -13860,14 +13504,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 195,
@@ -13893,15 +13535,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-          Chave.PERSONAGEM_MANA_TEMPORARIO
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA, Chave.PERSONAGEM_MANA_TEMPORARIO],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 196,
@@ -13927,15 +13566,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-          Chave.PERSONAGEM_VIDA_TEMPORARIO
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA, Chave.PERSONAGEM_VIDA_TEMPORARIO],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 197,
@@ -13961,16 +13597,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-          Chave.PERICIA_CURA,
-          Chave.PERSONAGEM_VIDA
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA, Chave.PERICIA_CURA, Chave.PERSONAGEM_VIDA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 198,
@@ -13999,7 +13631,9 @@ export class ItemData {
         chave: [Chave.CONSUMIVEL, Chave.DIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 199,
@@ -14028,7 +13662,9 @@ export class ItemData {
         chave: [Chave.CONSUMIVEL, Chave.DIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 200,
@@ -14054,16 +13690,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-          Chave.PERICIA_CURA,
-          Chave.PERSONAGEM_MANA
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA, Chave.PERICIA_CURA, Chave.PERSONAGEM_MANA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 201,
@@ -14089,16 +13721,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-          Chave.ATRIBUTO_CARISMA,
-          Chave.CONDICAO_ENJOADO,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA, Chave.ATRIBUTO_CARISMA, Chave.CONDICAO_ENJOADO],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 202,
@@ -14124,14 +13752,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 203,
@@ -14157,14 +13783,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 204,
@@ -14190,14 +13814,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA],
         referencias: Referencia.AMEACAS,
         paginas: '397 E 398',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 205,
@@ -14233,7 +13855,9 @@ export class ItemData {
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 206,
@@ -14259,14 +13883,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONSUMIVEL,
-          Chave.PRATO_ESPECIAL,
-          Chave.DIA,
-        ],
+        chave: [Chave.CONSUMIVEL, Chave.PRATO_ESPECIAL, Chave.DIA],
         referencias: Referencia.AMEACAS,
         paginas: '398',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 207,
@@ -14297,11 +13919,13 @@ export class ItemData {
           Chave.PRATO_ESPECIAL,
           Chave.DIA,
           Chave.PERICIA_DIPLOMACIA,
-          Chave.PERSONAGEM_MANA_TEMPORARIO
+          Chave.PERSONAGEM_MANA_TEMPORARIO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398',
-        tipo: TipoItem.ALIMENTACAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.ALIMENTACAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 208,
@@ -14327,14 +13951,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.CONTAINER,
-          Chave.NAO_CONTA_COMO_VESTIDO,
-          Chave.TIPO_ITEM_ANIMAL,
-        ],
+        chave: [Chave.CONTAINER, Chave.NAO_CONTA_COMO_VESTIDO, Chave.TIPO_ITEM_ANIMAL],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA,pericia: '', proficiencia: ''
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 209,
@@ -14380,16 +14002,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_PERSEGUIDOR,
-          Chave.PERICIA_ADESTRAMENTO,
-          Chave.PARCEIRO_MONTARIA,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_PERSEGUIDOR, Chave.PERICIA_ADESTRAMENTO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 210,
@@ -14427,14 +14045,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 211,
@@ -14472,14 +14088,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 212,
@@ -14517,14 +14131,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 213,
@@ -14562,14 +14174,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.BASICO,
         paginas: '157 E 162',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 214,
@@ -14616,15 +14226,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.PARCEIRO_BESTA_CARGA,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.PARCEIRO_BESTA_CARGA],
         referencias: Referencia.BASICO,
         paginas: '157 E 163',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 215,
@@ -14662,15 +14269,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.PARCEIRO_SELVAGEM,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.PARCEIRO_SELVAGEM],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 216,
@@ -14708,15 +14312,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.PARCEIRO_SELVAGEM,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.PARCEIRO_SELVAGEM],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 217,
@@ -14754,15 +14355,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.PARCEIRO_SELVAGEM,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.PARCEIRO_SELVAGEM],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 218,
@@ -14800,15 +14398,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.PARCEIRO_SELVAGEM,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.PARCEIRO_SELVAGEM],
         referencias: Referencia.BASICO,
         paginas: '262',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 219,
@@ -14849,12 +14444,16 @@ export class ItemData {
         chave: [
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO, Chave.REGIAO_HALAK_TUR, Chave.REGIAO_UBANI, Chave.REGIAO_DOHERIMM ,
-          
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_HALAK_TUR,
+          Chave.REGIAO_UBANI,
+          Chave.REGIAO_DOHERIMM,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 220,
@@ -14893,15 +14492,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.RARIDADE_RARO],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 221,
@@ -14943,12 +14539,15 @@ export class ItemData {
         chave: [
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO, Chave.REGIAO_HALAK_TUR, Chave.REGIAO_UBANI,
-          
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_HALAK_TUR,
+          Chave.REGIAO_UBANI,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 222,
@@ -14990,12 +14589,15 @@ export class ItemData {
         chave: [
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO, Chave.TERRENO_DESERTO, Chave.TERRENO_MONTANHA,
-          
+          Chave.RARIDADE_RARO,
+          Chave.TERRENO_DESERTO,
+          Chave.TERRENO_MONTANHA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 223,
@@ -15034,15 +14636,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.RARIDADE_RARO],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 224,
@@ -15093,12 +14692,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.RARIDADE_RARO,
-          Chave.PARCEIRO_PERSEGUIDOR, Chave.PERICIA_ADESTRAMENTO,
-          
+          Chave.PARCEIRO_PERSEGUIDOR,
+          Chave.PERICIA_ADESTRAMENTO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 225,
@@ -15137,15 +14738,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.RARIDADE_RARO],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 226,
@@ -15184,15 +14782,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.RARIDADE_RARO],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 228,
@@ -15234,12 +14829,15 @@ export class ItemData {
         chave: [
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO, Chave.TERRENO_FLORESTA,  Chave.REGIAO_MONTANHAS_UIVANTES,
-          
+          Chave.RARIDADE_RARO,
+          Chave.TERRENO_FLORESTA,
+          Chave.REGIAO_MONTANHAS_UIVANTES,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '398 e 399',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 227,
@@ -15281,12 +14879,15 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.TERRENO_CEU, Chave.REGIAO_VECTORA,
-          
+          Chave.RARIDADE_RARO,
+          Chave.TERRENO_CEU,
+          Chave.REGIAO_VECTORA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '210',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 228,
@@ -15324,13 +14925,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_BESTA_CARGA,
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_BESTA_CARGA],
         referencias: Referencia.AMEACAS,
         paginas: '210',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 229,
@@ -15372,12 +14972,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_NAMALKAH,
-          
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_NAMALKAH,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '213',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 230,
@@ -15419,13 +15021,15 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES,
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_MONTANHAS_UIVANTES,
           Chave.TERRENO_ARTICO,
-          
         ],
         referencias: Referencia.AMEACAS,
         paginas: '213',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 231,
@@ -15467,12 +15071,15 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_SELVAGEM,
           Chave.PARCEIRO_ASSASSINO,
-          Chave.RARIDADE_RARO, Chave.TERRENO_FLORESTA, Chave.REGIAO_MONTANHAS_UIVANTES,
-          
+          Chave.RARIDADE_RARO,
+          Chave.TERRENO_FLORESTA,
+          Chave.REGIAO_MONTANHAS_UIVANTES,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 232,
@@ -15510,15 +15117,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.EXTREMAMENTE_RARO, Chave.REGIAO_TAMU_RA,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.EXTREMAMENTE_RARO, Chave.REGIAO_TAMU_RA],
         referencias: Referencia.AMEACAS,
         paginas: '216',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 233,
@@ -15560,12 +15164,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES,
-          
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_MONTANHAS_UIVANTES,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '216',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 234,
@@ -15607,11 +15213,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.TERRENO_PANTANO,
+          Chave.RARIDADE_RARO,
+          Chave.TERRENO_PANTANO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '220',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 235,
@@ -15653,11 +15262,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_KHUBAR,
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_KHUBAR,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '222',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 236,
@@ -15699,11 +15311,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.EXTREMAMENTE_RARO, Chave.REGIAO_TAMU_RA,
+          Chave.EXTREMAMENTE_RARO,
+          Chave.REGIAO_TAMU_RA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '222',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 237,
@@ -15745,11 +15360,15 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.REGIAO_MONTANHAS_SANGUINARIAS,
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_GALRASIA,
+          Chave.REGIAO_MONTANHAS_SANGUINARIAS,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '224',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 239,
@@ -15791,12 +15410,15 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_LAMNOR, Chave.REGIAO_MONTANHAS_SANGUINARIAS,
-          
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_LAMNOR,
+          Chave.REGIAO_MONTANHAS_SANGUINARIAS,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '225',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 240,
@@ -15839,12 +15461,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.MUITO_RARO, Chave.TERRENO_FLORESTA,
-          
+          Chave.MUITO_RARO,
+          Chave.TERRENO_FLORESTA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '226 E 227',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 241,
@@ -15886,12 +15510,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.TERRENO_PANTANO,
-          
+          Chave.RARIDADE_RARO,
+          Chave.TERRENO_PANTANO,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '36',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 242,
@@ -15934,12 +15560,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.PARCEIRO_CONTA_COMO_DOIS,
-          
+          Chave.RARIDADE_RARO,
+          Chave.PARCEIRO_CONTA_COMO_DOIS,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '67',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 243,
@@ -15981,12 +15609,14 @@ export class ItemData {
           Chave.PARCEIRO,
           Chave.PARCEIRO_MONTARIA,
           Chave.PARCEIRO_SELVAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA,
-          
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_GALRASIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '67',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 244,
@@ -16024,16 +15654,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.DEVOTO,
-          Chave.DEUS_KALLYADRANOCH
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.DEVOTO, Chave.DEUS_KALLYADRANOCH],
         referencias: Referencia.AMEACAS,
         paginas: '148',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 245,
@@ -16071,14 +15697,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_TAMU_RA ,
-          Chave.PARCEIRO_GUARDIAO
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_TAMU_RA, Chave.PARCEIRO_GUARDIAO],
         referencias: Referencia.AMEACAS,
         paginas: '155',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 246,
@@ -16116,15 +15740,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.PARCEIRO_MONTARIA,
-          Chave.RARIDADE_RARO, Chave.REGIAO_TAMU_RA ,
-          
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_MONTARIA, Chave.RARIDADE_RARO, Chave.REGIAO_TAMU_RA],
         referencias: Referencia.AMEACAS,
         paginas: '155',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 247,
@@ -16162,13 +15783,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO, Chave.PARCEIRO_FORTAO,
-          Chave.RARIDADE_RARO,
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_FORTAO, Chave.RARIDADE_RARO],
         referencias: Referencia.AMEACAS,
         paginas: '179',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 248,
@@ -16206,13 +15826,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.CLASSE_DRUIDA, Chave.DEUS_ALLIHANNA,
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.CLASSE_DRUIDA, Chave.DEUS_ALLIHANNA],
         referencias: Referencia.AMEACAS,
         paginas: '190',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 249,
@@ -16250,13 +15869,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO, Chave.PARCEIRO_FORTAO,
-          Chave.RARIDADE_RARO,
-        ],
+        chave: [Chave.PARCEIRO, Chave.PARCEIRO_FORTAO, Chave.RARIDADE_RARO],
         referencias: Referencia.AMEACAS,
         paginas: '190',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 250,
@@ -16294,13 +15912,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.PARCEIRO_GUARDIAO
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.PARCEIRO_GUARDIAO],
         referencias: Referencia.AMEACAS,
         paginas: '192',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 251,
@@ -16338,13 +15955,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.PARCEIRO_VIGILANTE
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.PARCEIRO_VIGILANTE],
         referencias: Referencia.AMEACAS,
         paginas: '192',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 252,
@@ -16382,13 +15998,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.TIPO_CRIATURA_ABISSAL, Chave.PARCEIRO_AJUDANTE
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.TIPO_CRIATURA_ABISSAL, Chave.PARCEIRO_AJUDANTE],
         referencias: Referencia.AMEACAS,
         paginas: '193',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 253,
@@ -16426,13 +16041,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_DOHERIMM, Chave.PARCEIRO_PERSEGUIDOR
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_DOHERIMM, Chave.PARCEIRO_PERSEGUIDOR],
         referencias: Referencia.AMEACAS,
         paginas: '194',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 253,
@@ -16470,13 +16084,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_DEHEON, Chave.PARCEIRO_VIGILANTE
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_DEHEON, Chave.PARCEIRO_VIGILANTE],
         referencias: Referencia.AMEACAS,
         paginas: '194',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 254,
@@ -16514,13 +16127,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.TERRENO_FLORESTA, Chave.PARCEIRO_VIGILANTE
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.TERRENO_FLORESTA, Chave.PARCEIRO_VIGILANTE],
         referencias: Referencia.AMEACAS,
         paginas: '195',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 255,
@@ -16558,16 +16170,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, 
-          Chave.DEVOTO,
-          Chave.DEUS_KHALMYR,
-          Chave.PARCEIRO_VIGILANTE
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.DEVOTO, Chave.DEUS_KHALMYR, Chave.PARCEIRO_VIGILANTE],
         referencias: Referencia.AMEACAS,
         paginas: '196 E 197',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 256,
@@ -16605,16 +16213,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, 
-          Chave.DEVOTO, 
-          Chave.DEUS_NIMB,
-          Chave.PARCEIRO_AJUDANTE
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.DEVOTO, Chave.DEUS_NIMB, Chave.PARCEIRO_AJUDANTE],
         referencias: Referencia.AMEACAS,
         paginas: '196 E 197',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 257,
@@ -16652,13 +16256,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.TERRENO_MASMORRA, Chave.PARCEIRO_ASSASSINO
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.TERRENO_MASMORRA, Chave.PARCEIRO_ASSASSINO],
         referencias: Referencia.AMEACAS,
         paginas: '198',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 258,
@@ -16696,13 +16299,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.PARCEIRO_ADEPTO
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.PARCEIRO_ADEPTO],
         referencias: Referencia.AMEACAS,
         paginas: '199',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 259,
@@ -16740,13 +16342,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '199',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 260,
@@ -16784,13 +16385,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '229',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 261,
@@ -16828,13 +16428,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '244',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 262,
@@ -16872,13 +16471,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '246',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 263,
@@ -16916,13 +16514,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '246',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 264,
@@ -16960,13 +16557,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_GALRASIA, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '249',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 265,
@@ -17007,11 +16603,15 @@ export class ItemData {
         chave: [
           Chave.PARCEIRO,
           Chave.PERICIA_PILOTAGEM,
-          Chave.RARIDADE_RARO, Chave.REGIAO_SUPREMACIA_PURISTA, Chave.PARCEIRO_MONTARIA, 
+          Chave.RARIDADE_RARO,
+          Chave.REGIAO_SUPREMACIA_PURISTA,
+          Chave.PARCEIRO_MONTARIA,
         ],
         referencias: Referencia.AMEACAS,
         paginas: '277',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 266,
@@ -17049,13 +16649,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_MOREANIA, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_MOREANIA, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '296',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 267,
@@ -17093,13 +16692,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_MOREANIA, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_MOREANIA, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '297 E 298',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 268,
@@ -17137,13 +16735,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.TERRENO_AQUATICO, Chave.PARCEIRO_MONTARIA
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.TERRENO_AQUATICO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '322',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 269,
@@ -17181,13 +16778,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.TERRENO_AQUATICO, Chave.PARCEIRO_MONTARIA,
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.TERRENO_AQUATICO, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '322',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 270,
@@ -17225,13 +16821,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.DEUS_SSZZAAS, Chave.PARCEIRO_ASSASSINO
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.DEUS_SSZZAAS, Chave.PARCEIRO_ASSASSINO],
         referencias: Referencia.AMEACAS,
         paginas: '328',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 271,
@@ -17269,13 +16864,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.PARCEIRO_PERSEGUIDOR
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.PARCEIRO_PERSEGUIDOR],
         referencias: Referencia.AMEACAS,
         paginas: '343',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 272,
@@ -17313,13 +16907,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_FORTAO
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_FORTAO],
         referencias: Referencia.AMEACAS,
         paginas: '348',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 273,
@@ -17357,13 +16950,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PARCEIRO,
-          Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_MONTARIA, 
-        ],
+        chave: [Chave.PARCEIRO, Chave.RARIDADE_RARO, Chave.REGIAO_MONTANHAS_UIVANTES, Chave.PARCEIRO_MONTARIA],
         referencias: Referencia.AMEACAS,
         paginas: '348',
-        tipo: TipoItem.ANIMAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.ANIMAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 275,
@@ -17392,10 +16984,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_VOO],
+        chave: [Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_VOO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VEICULO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 276,
@@ -17425,13 +17019,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ 
-          Chave.TIPO_ITEM_VEICULO, 
-          Chave.DESLOCAMENTO_TERRESTRE
-        ],
+        chave: [Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_TERRESTRE],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VEICULO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 277,
@@ -17461,14 +17054,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ 
-          Chave.TIPO_ITEM_VEICULO, 
-          Chave.DESLOCAMENTO_TERRESTRE, 
-          Chave.COBERTURA_LEVE
-        ],
+        chave: [Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_TERRESTRE, Chave.COBERTURA_LEVE],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VEICULO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 278,
@@ -17498,10 +17089,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
+        chave: [Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VEICULO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 279,
@@ -17531,10 +17124,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
+        chave: [Chave.TIPO_ITEM_VEICULO, Chave.DESLOCAMENTO_NATACAO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.VEICULO,pericia: '', proficiencia: ''
+        tipo: TipoItem.VEICULO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 280,
@@ -17565,10 +17160,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 281,
@@ -17599,10 +17196,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 282,
@@ -17633,10 +17232,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.ESTADIA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 283,
@@ -17667,10 +17268,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 283,
@@ -17701,10 +17304,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 284,
@@ -17735,10 +17340,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.CONDUCAO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 285,
@@ -17769,10 +17376,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.PERICIA_CURA],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.PERICIA_CURA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 286,
@@ -17803,10 +17412,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO],
+        chave: [Chave.TIPO_ITEM_SERVICO],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 287,
@@ -17837,10 +17448,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.MAGIA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 288,
@@ -17871,10 +17484,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.MAGIA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 289,
@@ -17905,10 +17520,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_SERVICO, Chave.MAGIA ],
+        chave: [Chave.TIPO_ITEM_SERVICO, Chave.MAGIA],
         referencias: Referencia.BASICO,
         paginas: '163',
-        tipo: TipoItem.SERVICO,pericia: '', proficiencia: ''
+        tipo: TipoItem.SERVICO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 290,
@@ -17939,10 +17556,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 291,
@@ -17973,10 +17592,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 292,
@@ -18008,10 +17629,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 293,
@@ -18043,10 +17666,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 294,
@@ -18077,10 +17702,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_VESTUARIO],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 295,
@@ -18111,10 +17738,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 296,
@@ -18145,10 +17774,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 297,
@@ -18179,10 +17810,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 298,
@@ -18213,10 +17852,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 299,
@@ -18247,10 +17888,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA,Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '164',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 300,
@@ -18281,10 +17930,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 301,
@@ -18315,10 +17966,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 302,
@@ -18349,10 +18002,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 303,
@@ -18383,10 +18038,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.PROFICIENCIA_ESCUDO],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 304,
@@ -18417,10 +18074,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 305,
@@ -18451,10 +18110,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 306,
@@ -18485,10 +18146,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 307,
@@ -18519,10 +18182,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 308,
@@ -18553,10 +18224,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [ Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 309,
@@ -18587,10 +18260,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '165',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 310,
@@ -18621,10 +18302,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 311,
@@ -18655,10 +18338,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 312,
@@ -18689,10 +18374,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 313,
@@ -18723,10 +18410,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 314,
@@ -18757,10 +18446,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 315,
@@ -18791,10 +18482,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 316,
@@ -18826,14 +18519,16 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 317,
-        nome: Chave.PARCEIRO_VIGILANTE,
+        nome: 'Vigilante',
         descricao: `O item usa parte de sua mana pessoal para gerar um campo que desvia ataques. Você recebe +2 na Defesa.`,
         descricao_extra: ``,
         preco: 0,
@@ -18860,10 +18555,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 318,
@@ -18894,10 +18591,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 319,
@@ -18929,10 +18628,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MELHORIA,pericia: '', proficiencia: ''
+        tipo: TipoItem.MELHORIA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 320,
@@ -18941,7 +18642,25 @@ export class ItemData {
         </p>
         <p><b>Arma.</b> A arma ignora 10 pontos de redução de dano, além de ignorar a imunidade a crítico de lefeu.</p>
         <p><b>Armadura e Escudo.</b> Fornece uma chance de ignorar o dano extra de acertos críticos e ataques furtivos: armaduras leves e escudos, 25% (1 em 1d4); armaduras pesadas, 50% (qualquer valor par em qualquer dado), cumulativas entre si.</p>
-        <p><b>Esotérico.</b> Quando lança uma magia que causa dano, ela ignora 10 pontos de redução de dano, além de ignorar as imunidades a dano de lefeu.</p>`,
+        <p><b>Esotérico.</b> Quando lança uma magia que causa dano, ela ignora 10 pontos de redução de dano, além de ignorar as imunidades a dano de lefeu.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 6.000</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 3.000</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 6.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 3.000</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 6.000</td></tr>
+  </tbody>
+</table>
+
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -18967,10 +18686,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 321,
@@ -18979,7 +18706,25 @@ export class ItemData {
         </p>
         <p><b>Arma.</b> Aumenta o dano em um passo.</p>
         <p><b>Armadura e Escudo.</b> Fornece redução de dano: armaduras leves e escudos, RD 2; armaduras pesadas, RD 5.</p>
-        <p><b>Esotérico.</b> Quando lança uma magia que causa dano, você pode pagar +1 PM para rolar novamente qualquer resultado 1 na rolagem de dano dela.</p>`,
+        <p><b>Esotérico.</b> Quando lança uma magia que causa dano, você pode pagar +1 PM para rolar novamente qualquer resultado 1 na rolagem de dano dela.</p>
+
+                <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 3.000</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 6.000</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 18.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 6.000</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 3.000</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19005,10 +18750,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 322,
@@ -19017,7 +18770,25 @@ export class ItemData {
         </p>
         <p><b>Arma.</b> Causa +2 pontos de dano por frio.</p>
         <p><b>Armadura e Escudo.</b> Fornece redução de fogo: armaduras leves e escudos, resistência 5; armaduras pesadas, resistência 10.</p>
-        <p><b>Esotérico.</b> Quando lança uma magia de frio que causa dano, você pode rolar novamente qualquer resultado 1 na rolagem de dano dela.</p>`,
+        <p><b>Esotérico.</b> Quando lança uma magia de frio que causa dano, você pode rolar novamente qualquer resultado 1 na rolagem de dano dela.</p>
+
+                        <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 600</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 3.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 3.000</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19043,10 +18814,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 323,
@@ -19054,7 +18833,23 @@ export class ItemData {
         descricao: `<p>A Floresta de Tollon produz um tipo de madeira negra, dura como aço e dotada de propriedades mágicas. Apenas armas de madeira — arcos, bordões, clavas, lanças, piques e tacapes —, escudos leves e esotéricos podem ser feitos com madeira Tollon.
         </p>
         <p><b>Arma.</b> Conta como mágica para vencer redução de dano. Além disso, habilidades ativadas ao se fazer um ataque ou usar a ação agredir têm seu custo em PM reduzido em –1.</p>
-        <p><b>Escudo e Esotérico.</b> Fornece resistência a magia +2.</p>`,
+        <p><b>Escudo e Esotérico.</b> Fornece resistência a magia +2.</p>
+
+                                <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 1.500</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19080,10 +18875,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.BASICO,
         paginas: '166',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 324,
@@ -19092,7 +18889,25 @@ export class ItemData {
         </p>
         <p><b>Arma.</b> Causa +1d6 de dano extra. Porém, sempre que você acerta um ataque com a arma, perde 1 ponto de vida. Lefou e lefeu são imunes tanto ao dano extra de matéria vermelha quanto à perda de vida por usar armas desse material.</p>
         <p><b>Armadura e Escudo.</b> Por sua aparência “borrada”, fornecem chance de falha para cada ataque: 10% para escudos e armaduras leves, 25% para armaduras pesadas (cumulativas entre si). Lefeu ignoram este efeito.</p>
-        <p><b>Esotérico.</b> Você e todos os seus inimigos em alcance curto sofrem –2 em testes de resistência contra efeitos mágicos..</p>`,
+        <p><b>Esotérico.</b> Você e todos os seus inimigos em alcance curto sofrem –2 em testes de resistência contra efeitos mágicos..</p>
+
+                                <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 6.000</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 18.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 6.000</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 3.000</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19118,19 +18933,45 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '167',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 325,
-        nome: 'Matéria Vermelha',
+        nome: 'Mitral',
         descricao: `<p>Metal raro e valioso, o mitral é prateado, brilhante e mais leve que aço. Itens de mitral ocupam –1 espaço (mínimo 1).
         </p>
         <p><b>Arma.</b> Aumenta sua margem de ameaça em 1. Por exemplo, uma espada longa de mitral tem margem de ameaça 18-20.</p>
         <p><b>Armadura e Escudo.</b> Tem sua penalidade de armadura diminuída em 2. Armaduras pesadas de mitral permitem que você aplique até dois pontos de sua Destreza na Defesa.</p>
-        <p><b>Esotérico.</b> Permite que você pague +2 PM ao lançar uma magia para aumentar a CD dela em +2.</p>`,
+        <p><b>Esotérico.</b> Permite que você pague +2 PM ao lançar uma magia para aumentar a CD dela em +2.</p>
+        
+                                        <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 12.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 3.000</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19156,10 +18997,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.BASICO,
         paginas: '167',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 326,
@@ -19168,7 +19017,25 @@ export class ItemData {
         </p>
         <p><b>Arma.</b> Conta como uma arma primitiva para a magia Armamento da Natureza e efeitos semelhantes.</p>
         <p><b>Armadura e Escudo.</b> Têm sua penalidade de armadura diminuída em 1. Armaduras pesadas de casco permitem aplicar 1 ponto de Destreza na Defesa.</p>
-        <p><b>Esotérico.</b> Quando lança uma magia, você recebe redução de dano 5 contra o próximo dano que sofrer até sua próxima rodada.</p>`,
+        <p><b>Esotérico.</b> Quando lança uma magia, você recebe redução de dano 5 contra o próximo dano que sofrer até sua próxima rodada.</p>
+        
+                                                <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 750</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 750</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 6.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 750</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 6.000</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19194,10 +19061,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 327,
@@ -19232,10 +19107,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.AMEACAS,
         paginas: '399',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 328,
@@ -19269,10 +19152,12 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.AMEACAS,
         paginas: '399',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 329,
@@ -19307,10 +19192,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA , Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 330,
@@ -19319,7 +19212,25 @@ export class ItemData {
         </p>
         <p><b>Arma .</b> Ataques com a arma ignoram penalidades por combate submerso. Além disso, pode ser utilizada por devotos do Oceano sem violar suas obrigações e restrições.</p>
         <p><b>Armadura e Escudo .</b> Fornece redução de corte: armaduras leves e escudos, redução 5; armaduras pesadas, redução 10.</p>
-        <p><b>Esotérico .</b> Quando lança uma magia que causa dano de corte, você pode rolar novamente qualquer resultado 1 na rolagem de dano.</p>`,
+        <p><b>Esotérico .</b> Quando lança uma magia que causa dano de corte, você pode rolar novamente qualquer resultado 1 na rolagem de dano.</p>
+        
+                                                        <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 600</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 1500</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 3.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 3.000</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19345,10 +19256,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 331,
@@ -19383,10 +19302,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 332,
@@ -19395,7 +19322,25 @@ export class ItemData {
         </p>
         <p><b>Arma (exige uma peça).</b> Causa +2 pontos de dano em espíritos e mortos-vivos e é considerada mágica para atacar essas criaturas.</p>
         <p><b>Armadura e Escudo.</b> Fornece redução de dano causado por espíritos e mortos-vivos: armaduras leves e escudos, RD 5; armaduras pesadas, RD 10.</p>
-        <p><b>Esotérico (exige uma peça).</b> Suas magias causam +2 pontos de dano em espíritos e mortos-vivos.</p>`,
+        <p><b>Esotérico (exige uma peça).</b> Suas magias causam +2 pontos de dano em espíritos e mortos-vivos.</p>
+        
+                                                                <table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Arma</td><td>+ T$ 600</td></tr>
+    <tr><td>Armadura leve</td><td>+ T$ 1500</td></tr>
+    <tr><td>Armadura pesada</td><td>+ T$ 3.000</td></tr>
+    <tr><td>Escudo</td><td>+ T$ 1.500</td></tr>
+    <tr><td>Esotéricos</td><td>+ T$ 400</td></tr>
+  </tbody>
+</table>
+        
+        `,
         descricao_extra: ``,
         preco: 0,
         preco_descricao: '',
@@ -19421,10 +19366,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.AMEACAS,
         paginas: '400',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 333,
@@ -19459,10 +19412,18 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [  Chave.TIPO_ITEM_MELHORIA, Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.PROFICIENCIA_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [
+          Chave.TIPO_ITEM_MELHORIA,
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.PROFICIENCIA_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+        ],
         referencias: Referencia.AMEACAS,
         paginas: '401',
-        tipo: TipoItem.MATERIAL_ESPECIAL,pericia: '', proficiencia: ''
+        tipo: TipoItem.MATERIAL_ESPECIAL,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 334,
@@ -19489,16 +19450,18 @@ export class ItemData {
         alcance: Alcance.CORPO_A_CORPO,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_adaga_oposta.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 335,
@@ -19525,16 +19488,18 @@ export class ItemData {
         alcance: Alcance.CORPO_A_CORPO,
         penalidade: 0,
         chave: [
-          Chave.PROFICIENCIA_ARMA_MARCIAL, 
-          Chave.ATAQUE_CORPO_A_CORPO, 
-          Chave.LIMITE_USO_EMPUNHADO, 
+          Chave.PROFICIENCIA_ARMA_MARCIAL,
+          Chave.ATAQUE_CORPO_A_CORPO,
+          Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_agulha_ahlen.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 336,
@@ -19567,12 +19532,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_FLECHA,
           Chave.SOMA_FORCA_DANO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_arco_guerra.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 337,
@@ -19605,12 +19572,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.EMPUNHADURA_MONTADA,
           Chave.MUNICAO_FLECHA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_arco_montado.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 338,
@@ -19643,12 +19612,14 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_FLECHA,
           Chave.SOMA_FORCA_DANO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_balestra.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 339,
@@ -19679,12 +19650,14 @@ export class ItemData {
           Chave.ATAQUE_CORPO_A_CORPO,
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_LEVE,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_bastao_ludico.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 340,
@@ -19716,12 +19689,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.MUNICAO_FLECHA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_besta_mao.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 341,
@@ -19753,12 +19728,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_FLECHA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_besta_repeticao.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 342,
@@ -19790,12 +19767,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_FLECHA,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_besta_dupla.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 343,
@@ -19826,12 +19805,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.TIPO_DANO_PERFURACAO,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_bico_corvo.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 344,
@@ -19861,12 +19842,14 @@ export class ItemData {
           Chave.PROFICIENCIA_ARMA_EXOTICA,
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_boleadeira.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 345,
@@ -19898,12 +19881,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.MUNICAO_BALA,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         imagem: 'assets/img/item_arma_canhao_portatil.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 346,
@@ -19935,12 +19920,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.TIPO_DANO_CORTE,
-          Chave.ARREMESSO
+          Chave.ARREMESSO,
         ],
         imagem: 'assets/img/item_arma_chakram.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 347,
@@ -19976,7 +19963,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_cinquedea.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 348,
@@ -20012,7 +20001,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_clava_grao.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 349,
@@ -20047,7 +20038,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_desmontador.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 350,
@@ -20083,7 +20076,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_dirk.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 351,
@@ -20120,7 +20115,9 @@ export class ItemData {
         imagem: '',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 352,
@@ -20156,7 +20153,9 @@ export class ItemData {
         imagem: '',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 353,
@@ -20192,7 +20191,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_espada_larga.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 354,
@@ -20228,7 +20229,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_espada_larga.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 355,
@@ -20264,7 +20267,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_espadim.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 356,
@@ -20301,7 +20306,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_garrucha.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 357,
@@ -20337,7 +20344,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_kimbata.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 358,
@@ -20373,7 +20382,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_khopesh.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 359,
@@ -20409,7 +20420,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_lanca_falange.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 360,
@@ -20445,7 +20458,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_lanca_justa.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 361,
@@ -20482,7 +20497,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_maca_estrela.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 362,
@@ -20518,7 +20535,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_machado_haste.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 363,
@@ -20554,7 +20573,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_malho.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 364,
@@ -20590,7 +20611,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_marrao.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 365,
@@ -20627,7 +20650,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_martelo_leve.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 366,
@@ -20660,12 +20685,14 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.TIPO_DANO_IMPACTO,
           Chave.TIPO_DANO_PERFURACAO,
-          Chave.HABILIDADE_ARMA_ALONGADA
+          Chave.HABILIDADE_ARMA_ALONGADA,
         ],
         imagem: 'assets/img/item_arma_martelo_longo.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 367,
@@ -20701,7 +20728,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_montante_cinetico.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 368,
@@ -20738,7 +20767,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_rapieira.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 369,
@@ -20774,7 +20805,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_serrilheira.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 370,
@@ -20810,7 +20843,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_sifao_caustico.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 371,
@@ -20846,7 +20881,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_tai_tai.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 372,
@@ -20882,7 +20919,9 @@ export class ItemData {
         imagem: 'assets/img/item_arma_tan_korak.png',
         referencias: Referencia.HEROIS,
         paginas: '216',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 373,
@@ -20908,13 +20947,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_PESADA,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_armadura_chumbo.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 374,
@@ -20940,13 +20979,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_LEVE,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_LEVE],
         imagem: 'assets/img/item_armadura_armadura_engenhoqueiro_goblin.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 375,
@@ -20972,13 +21011,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_LEVE,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_LEVE],
         imagem: 'assets/img/item_armadura_armadura_folhas.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 376,
@@ -21004,13 +21043,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 6,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_PESADA,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_armadura_hussardo_alado.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 377,
@@ -21036,13 +21075,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_PESADA,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_armadura_justa.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 378,
@@ -21068,13 +21107,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_PESADA,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_armadura_pedra.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 379,
@@ -21100,13 +21139,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_LEVE,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_LEVE],
         imagem: 'assets/img/item_armadura_armadura_sensual.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 380,
@@ -21132,13 +21171,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_PESADA,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_PESADA],
         imagem: 'assets/img/item_armadura_brigantina.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 381,
@@ -21164,13 +21203,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 1,
-        chave: [
-          Chave.PROFICIENCIA_ESCUDO,
-        ],
+        chave: [Chave.PROFICIENCIA_ESCUDO],
         imagem: 'assets/img/item_armadura_broquel.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ESCUDO, pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 382,
@@ -21196,13 +21235,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_LEVE,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_LEVE],
         imagem: 'assets/img/item_armadura_cota_moedas.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 383,
@@ -21228,13 +21267,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 5,
-        chave: [
-          Chave.PROFICIENCIA_ARMADURA_LEVE,
-        ],
+        chave: [Chave.PROFICIENCIA_ARMADURA_LEVE],
         imagem: 'assets/img/item_armadura_colete_fora_lei.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ARMADURA, pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMADURA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 384,
@@ -21260,13 +21299,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 2,
-        chave: [
-          Chave.PROFICIENCIA_ESCUDO,
-        ],
+        chave: [Chave.PROFICIENCIA_ESCUDO],
         imagem: 'assets/img/item_armadura_escudo_vime.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ESCUDO, pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 385,
@@ -21292,13 +21331,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 4,
-        chave: [
-          Chave.PROFICIENCIA_ESCUDO,
-        ],
+        chave: [Chave.PROFICIENCIA_ESCUDO],
         imagem: 'assets/img/item_armadura_escudo_torre.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ESCUDO, pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 386,
@@ -21324,13 +21363,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 3,
-        chave: [
-          Chave.PROFICIENCIA_ESCUDO,
-        ],
+        chave: [Chave.PROFICIENCIA_ESCUDO],
         imagem: 'assets/img/item_armadura_sagna.png',
         referencias: Referencia.HEROIS,
         paginas: '224',
-        tipo: TipoItem.ESCUDO, pericia: '', proficiencia: ''
+        tipo: TipoItem.ESCUDO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 387,
@@ -21350,7 +21389,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 388,
@@ -21370,7 +21409,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 389,
@@ -21390,7 +21429,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 390,
@@ -21410,7 +21449,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 391,
@@ -21430,7 +21469,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 392,
@@ -21450,7 +21489,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 393,
@@ -21470,7 +21509,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 394,
@@ -21490,7 +21529,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 395,
@@ -21510,7 +21549,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 396,
@@ -21530,7 +21569,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 397,
@@ -21550,7 +21589,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 398,
@@ -21570,7 +21609,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 399,
@@ -21590,7 +21629,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 400,
@@ -21610,7 +21649,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 401,
@@ -21630,7 +21669,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 402,
@@ -21650,7 +21689,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 403,
@@ -21670,7 +21709,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 404,
@@ -21690,7 +21729,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 405,
@@ -21710,7 +21749,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 406,
@@ -21730,7 +21769,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 407,
@@ -21750,7 +21789,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 408,
@@ -21770,7 +21809,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 409,
@@ -21790,7 +21829,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 410,
@@ -21810,7 +21849,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 411,
@@ -21830,7 +21869,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '227',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 412,
@@ -21850,7 +21889,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 413,
@@ -21870,7 +21909,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 414,
@@ -21890,7 +21929,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 415,
@@ -21910,7 +21949,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 416,
@@ -21930,7 +21969,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 417,
@@ -21950,7 +21989,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 418,
@@ -21970,7 +22009,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 419,
@@ -21990,7 +22029,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 420,
@@ -22010,7 +22049,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 421,
@@ -22030,7 +22069,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 422,
@@ -22050,7 +22089,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 423,
@@ -22070,7 +22109,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 424,
@@ -22090,7 +22129,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '48',
-        tipo: TipoItem.EQUIPAMENTO_AVENTURA
+        tipo: TipoItem.EQUIPAMENTO_AVENTURA,
       },
       {
         id: 425,
@@ -22110,7 +22149,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 426,
@@ -22130,7 +22169,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 427,
@@ -22150,7 +22189,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 428,
@@ -22170,7 +22209,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 429,
@@ -22190,7 +22229,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 430,
@@ -22210,7 +22249,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 431,
@@ -22230,7 +22269,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 432,
@@ -22250,7 +22289,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 433,
@@ -22270,7 +22309,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 434,
@@ -22290,7 +22329,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 435,
@@ -22310,7 +22349,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 436,
@@ -22330,7 +22369,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 437,
@@ -22350,7 +22389,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 438,
@@ -22370,7 +22409,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 439,
@@ -22390,7 +22429,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 440,
@@ -22410,7 +22449,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 441,
@@ -22430,7 +22469,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 442,
@@ -22450,7 +22489,7 @@ export class ItemData {
         chave: [Chave.FERRAMENTA_INSTRUMENTO_MUSICAL],
         referencias: Referencia.HEROIS,
         paginas: '231',
-        tipo: TipoItem.FERRAMENTA
+        tipo: TipoItem.FERRAMENTA,
       },
       {
         id: 443,
@@ -22470,7 +22509,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 444,
@@ -22490,7 +22529,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 445,
@@ -22510,7 +22549,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 446,
@@ -22530,7 +22569,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 447,
@@ -22550,7 +22589,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 448,
@@ -22570,7 +22609,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 449,
@@ -22590,7 +22629,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 450,
@@ -22610,7 +22649,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 451,
@@ -22630,7 +22669,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 452,
@@ -22650,7 +22689,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 453,
@@ -22670,7 +22709,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 454,
@@ -22690,7 +22729,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 455,
@@ -22710,7 +22749,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 456,
@@ -22730,7 +22769,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 457,
@@ -22750,7 +22789,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 458,
@@ -22770,7 +22809,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 459,
@@ -22790,7 +22829,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 460,
@@ -22810,7 +22849,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 461,
@@ -22830,7 +22869,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 462,
@@ -22850,7 +22889,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 462,
@@ -22870,7 +22909,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 463,
@@ -22890,7 +22929,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 464,
@@ -22910,7 +22949,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 465,
@@ -22930,7 +22969,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '232',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 466,
@@ -22950,7 +22989,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 467,
@@ -22970,7 +23009,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 468,
@@ -22990,7 +23029,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 469,
@@ -23010,7 +23049,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 470,
@@ -23030,7 +23069,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 471,
@@ -23050,7 +23089,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 472,
@@ -23070,7 +23109,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 473,
@@ -23090,7 +23129,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 474,
@@ -23110,7 +23149,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 475,
@@ -23130,7 +23169,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 476,
@@ -23150,7 +23189,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '49',
-        tipo: TipoItem.VESTUARIO
+        tipo: TipoItem.VESTUARIO,
       },
       {
         id: 477,
@@ -23170,7 +23209,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 478,
@@ -23190,7 +23229,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 479,
@@ -23210,7 +23249,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 480,
@@ -23230,7 +23269,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 481,
@@ -23250,7 +23289,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 482,
@@ -23270,7 +23309,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 483,
@@ -23290,7 +23329,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 484,
@@ -23310,7 +23349,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 485,
@@ -23330,7 +23369,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '51',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 486,
@@ -23350,7 +23389,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '233',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 487,
@@ -23370,7 +23409,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '233',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 488,
@@ -23390,7 +23429,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '233',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 489,
@@ -23410,7 +23449,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '233',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 490,
@@ -23430,7 +23469,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '233',
-        tipo: TipoItem.ESOTERICO
+        tipo: TipoItem.ESOTERICO,
       },
       {
         id: 491,
@@ -23447,10 +23486,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 492,
@@ -23467,10 +23506,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 493,
@@ -23487,10 +23526,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 494,
@@ -23507,10 +23546,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 495,
@@ -23527,10 +23566,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 496,
@@ -23547,10 +23586,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 497,
@@ -23567,10 +23606,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 498,
@@ -23587,10 +23626,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 499,
@@ -23607,10 +23646,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 500,
@@ -23627,10 +23666,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 501,
@@ -23647,10 +23686,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 502,
@@ -23667,10 +23706,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 503,
@@ -23687,10 +23726,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 504,
@@ -23707,10 +23746,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 505,
@@ -23727,10 +23766,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 506,
@@ -23747,10 +23786,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 507,
@@ -23767,10 +23806,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_VENENO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 508,
@@ -23787,10 +23826,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 509,
@@ -23807,10 +23846,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_PREPARADO],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 510,
@@ -23827,10 +23866,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 511,
@@ -23847,10 +23886,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 512,
@@ -23867,10 +23906,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 513,
@@ -23887,10 +23926,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 514,
@@ -23907,10 +23946,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 515,
@@ -23927,10 +23966,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 516,
@@ -23947,10 +23986,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 517,
@@ -23967,10 +24006,10 @@ export class ItemData {
         tempo_conserto_em_horas: 1,
         pericia_fabricacao_conserto: 'Ofício (alquimista)',
         espaco: 0.5,
-        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR,],
+        chave: [Chave.TIPO_ITEM_ALQUIMICO_CATALIZADOR],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALQUIMICO
+        tipo: TipoItem.ALQUIMICO,
       },
       {
         id: 518,
@@ -23990,7 +24029,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 519,
@@ -24010,7 +24049,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 520,
@@ -24030,7 +24069,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 521,
@@ -24050,7 +24089,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 522,
@@ -24070,7 +24109,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 523,
@@ -24090,7 +24129,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 524,
@@ -24110,7 +24149,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 525,
@@ -24130,7 +24169,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 526,
@@ -24150,7 +24189,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 527,
@@ -24170,7 +24209,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 528,
@@ -24190,7 +24229,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 529,
@@ -24210,7 +24249,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 530,
@@ -24230,7 +24269,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 531,
@@ -24250,7 +24289,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 532,
@@ -24270,7 +24309,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.APARATO
+        tipo: TipoItem.APARATO,
       },
       {
         id: 533,
@@ -24290,7 +24329,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 533,
@@ -24310,7 +24349,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 534,
@@ -24330,7 +24369,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 535,
@@ -24350,7 +24389,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 536,
@@ -24370,7 +24409,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 536,
@@ -24390,7 +24429,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 537,
@@ -24410,7 +24449,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 538,
@@ -24430,7 +24469,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 539,
@@ -24450,7 +24489,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 540,
@@ -24470,7 +24509,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 541,
@@ -24490,7 +24529,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 542,
@@ -24510,7 +24549,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 543,
@@ -24530,7 +24569,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 544,
@@ -24550,7 +24589,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '234',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 545,
@@ -24570,7 +24609,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 546,
@@ -24590,7 +24629,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 547,
@@ -24610,7 +24649,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 548,
@@ -24630,7 +24669,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 549,
@@ -24650,7 +24689,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 550,
@@ -24670,7 +24709,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 551,
@@ -24690,7 +24729,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 552,
@@ -24710,7 +24749,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 553,
@@ -24730,7 +24769,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 554,
@@ -24750,7 +24789,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 555,
@@ -24770,7 +24809,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 556,
@@ -24790,7 +24829,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 557,
@@ -24810,7 +24849,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 558,
@@ -24830,7 +24869,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 559,
@@ -24850,7 +24889,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 560,
@@ -24870,7 +24909,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 561,
@@ -24890,7 +24929,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 562,
@@ -24910,7 +24949,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 563,
@@ -24930,7 +24969,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 564,
@@ -24950,7 +24989,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.ALIMENTACAO
+        tipo: TipoItem.ALIMENTACAO,
       },
       {
         id: 565,
@@ -24960,7 +24999,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '52',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 566,
@@ -24970,7 +25009,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 567,
@@ -24980,7 +25019,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 568,
@@ -24990,7 +25029,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 569,
@@ -25000,7 +25039,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 570,
@@ -25010,7 +25049,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 571,
@@ -25020,7 +25059,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 572,
@@ -25030,7 +25069,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 573,
@@ -25040,7 +25079,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 574,
@@ -25050,7 +25089,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 575,
@@ -25060,7 +25099,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '150',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 576,
@@ -25070,7 +25109,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 577,
@@ -25080,7 +25119,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 578,
@@ -25090,7 +25129,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 579,
@@ -25100,7 +25139,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 580,
@@ -25110,7 +25149,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 581,
@@ -25120,7 +25159,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 582,
@@ -25130,7 +25169,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 583,
@@ -25140,7 +25179,7 @@ export class ItemData {
         chave: [Chave.SERVICO_MERCENARIO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 584,
@@ -25150,7 +25189,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 585,
@@ -25160,7 +25199,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 586,
@@ -25170,7 +25209,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 587,
@@ -25180,7 +25219,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 588,
@@ -25190,7 +25229,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 589,
@@ -25200,7 +25239,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.SERVICO
+        tipo: TipoItem.SERVICO,
       },
       {
         id: 590,
@@ -25210,7 +25249,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.ANIMAL
+        tipo: TipoItem.ANIMAL,
       },
       {
         id: 591,
@@ -25220,7 +25259,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.ANIMAL
+        tipo: TipoItem.ANIMAL,
       },
       {
         id: 592,
@@ -25230,7 +25269,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.ANIMAL
+        tipo: TipoItem.ANIMAL,
       },
       {
         id: 593,
@@ -25240,7 +25279,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.ANIMAL
+        tipo: TipoItem.ANIMAL,
       },
       {
         id: 594,
@@ -25250,7 +25289,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.ANIMAL
+        tipo: TipoItem.ANIMAL,
       },
       {
         id: 595,
@@ -25260,7 +25299,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.ANIMAL
+        tipo: TipoItem.ANIMAL,
       },
       {
         id: 596,
@@ -25270,7 +25309,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.VEICULO
+        tipo: TipoItem.VEICULO,
       },
       {
         id: 597,
@@ -25280,7 +25319,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.VEICULO
+        tipo: TipoItem.VEICULO,
       },
       {
         id: 598,
@@ -25290,7 +25329,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.VEICULO
+        tipo: TipoItem.VEICULO,
       },
       {
         id: 599,
@@ -25300,7 +25339,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.VEICULO
+        tipo: TipoItem.VEICULO,
       },
       {
         id: 600,
@@ -25310,7 +25349,7 @@ export class ItemData {
         chave: [],
         referencias: Referencia.HEROIS,
         paginas: '237',
-        tipo: TipoItem.VEICULO
+        tipo: TipoItem.VEICULO,
       },
       {
         id: 601,
@@ -25319,157 +25358,174 @@ export class ItemData {
         chave: [Chave.TIPO_ITEM_ESCUDO],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 602,
         nome: 'Brasonado',
         descricao: `Esta melhoria também é conhecida como “de grife”. O item é estampado com o brasão da guilda, loja ou casa comercial famosa que o fabricou ou vendeu, de forma muito proeminente, quase como um anúncio. Por exemplo, traz o brasão da alfaiataria Legrasse & Legrasse, de Valkaria, ou da Guilda Comercial Joia do Poente, de Halak-Tûr. Quando faz seu primeiro teste de de Diplomacia para mudar atitude em uma cena, você pode substituí-lo por um teste de outra perícia na qual o item forneça bônus (mas apenas com pessoas que admiram ostentação, a critério do mestre). Um item não pode ser brasonado e discreto.`,
-        chave: [Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_ESOTERICO, ],
+        chave: [Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 603,
         nome: 'Deslumbrante',
         descricao: `O item não é apenas decorado com metais ou pedras preciosas, ele é um ícone de ostentação dourada e brilhante, uma verdadeira pilha de luxo e exagero. A CD para resistir às suas habilidades baseadas em Carisma aumenta em +1. Só pode ser aplicada em armaduras e vestuários. Pré-requisito: banhado a ouro ou cravejado de gemas.`,
-        chave: [Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_ESOTERICO, ],
+        chave: [Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 604,
         nome: 'Farpada',
         descricao: `A arma possui farpas ou espinhos que aumentam a gravidade de seus golpes. Uma criatura atingida por um acerto crítico da arma fica sangrando e sofre –5 em testes de Constituição para remover essa condição até o fim da cena. Só pode ser aplicada em armas de corte ou perfuração. Pré-requisito: cruel.`,
-        chave: [Chave.TIPO_ITEM_ARMA, ],
+        chave: [Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 605,
         nome: 'Fósforo',
         descricao: `Esta melhoria só pode ser aplicada em munições. A munição possui uma pequena carga de pó incandescente que a deixa mais leve (seu dano diminui em um passo). Entretanto, quando atinge o alvo, ela irrompe em um lampejo luminoso momentâneo que o deixa ofuscado por 1 rodada.`,
-        chave: [Chave.TIPO_ITEM_MUNICAO, ],
+        chave: [Chave.TIPO_ITEM_MUNICAO],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 606,
         nome: 'Guarda',
         descricao: `A arma possui uma proteção elaborada próxima a sua empunhadura, que fornece +1 na Defesa e em testes contra manobras. Só pode ser aplicada em armas corpo a corpo.`,
-        chave: [Chave.TIPO_ITEM_ARMA, ],
+        chave: [Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 607,
         nome: 'Potencializador',
         descricao: `O esotérico possui duas gemas místicas que, combinadas, permitem que você canalize mais mana do que normalmente seria capaz. O máximo de PM que você pode gastar em magias aumenta em +2. Pré-requisito: canalizador.`,
-        chave: [Chave.TIPO_ITEM_ESOTERICO, ],
+        chave: [Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 608,
         nome: 'Pressurizada',
         descricao: `A arma possui um mecanismo articulado em seu interior, formado por um pistão e uma pequena câmara de ar. Você pode gastar uma ação completa para puxar o pistão e pressurizar a câmara. Quando faz um ataque com a arma, se ela estiver pressurizada, você pode descarregar a pressão para aumentar o impacto da arma. Se fizer isso, você recebe +2 no teste de ataque e na rolagem de dano. Esta melhoria só pode ser aplicada a armas corpo a corpo de impacto e armas de fogo.`,
-        chave: [Chave.TIPO_ITEM_ARMA, ],
+        chave: [Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 609,
         nome: 'Prudente',
         descricao: `Alguns aventureiros temem mais seus próprios erros do que os golpes dos adversários. Para eles existe esta melhoria, que pode ser aplicada a qualquer armadura. Representa dezenas de pequenos e grandes ajustes feitos para minimizar a chance de que um descuido do usuário cause sua ruína: grevas são equipadas com suportes para dificultar escorregões, elmos são abertos em pontos estratégicos para melhorar a audição e a visão, manoplas recebem cobertura aderente para impedir que armas sejam derrubadas... Se estiver usando a regra opcional Falhas Críticas (p. 300), uma vez por dia você pode rolar duas vezes na Tabela 4-6 e escolher o resultado que preferir.`,
-        chave: [Chave.TIPO_ITEM_ARMADURA, ],
+        chave: [Chave.TIPO_ITEM_ARMADURA],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 610,
         nome: 'Incendiária',
         descricao: `Esta melhoria só pode ser aplicada em munições. A munição causa +1 ponto de dano de fogo e, se acertar por 5 ou mais, deixa o alvo em chamas.`,
-        chave: [Chave.TIPO_ITEM_MUNICAO, ],
+        chave: [Chave.TIPO_ITEM_MUNICAO],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 611,
         nome: 'Injetora',
         descricao: `Um minúsculo frasco de cerâmica ou vidro é inserido dentro da armadura, junto a um mecanismo injetor ativado com um gesto específico. Você pode gastar uma ação de movimento para acionar o mecanismo e ingerir uma dose de um preparado ou poção. A melhoria tem espaço para 1 dose. Carregá-la exige uma ação completa e o gasto da dose.`,
-        chave: [Chave.TIPO_ITEM_ARMADURA, ],
+        chave: [Chave.TIPO_ITEM_ARMADURA],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 612,
         nome: 'Usado',
         descricao: `O item não foi comprado assim que foi fabricado — já está gasto e mostra marcas de uso, tendo passado pelas mãos de vários aventureiros, plebeus, nobres, bandidos... Em compensação, está “amaciado”, ajustando-se melhor do que qualquer peça recém-feita e ainda não testada. Uma vez por dia, você pode rolar novamente um resultado 1 natural em um teste de perícia com o item. Esta melhoria não pode ser aplicada por um artesão, apenas adquirida quando o item é comprado de segunda mão.`,
-        chave: [Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
+        chave: [Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO],
         referencias: Referencia.HEROIS,
         paginas: '239',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 613,
         nome: 'Canônico',
         descricao: `O item possui inscrições sagradas referentes a uma divindade específica. Se você for devoto dessa divindade, a CD de suas habilidades mágicas aumenta em +1.`,
-        chave: [Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_ESOTERICO ],
+        chave: [Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_ESOTERICO],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 614,
         nome: 'Conduíte',
         descricao: `A empunhadura da arma é ornamentada com uma medalha ou outro objeto minúsculo de significado religioso que a torna mais propícia para receber bênçãos. O custo para usar o poder Abençoar Arma nela é reduzido em –1 PM.`,
-        chave: [Chave.TIPO_ITEM_ARMA ],
+        chave: [Chave.TIPO_ITEM_ARMA],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 615,
         nome: 'Devotado',
         descricao: `O item foi banhado em água abençoada e sintonizado com o espírito de seu usuário. Escolha um poder concedido com custo em PM. Esse custo é reduzido em –1. Pré-requisito: Inscrito.`,
-        chave: [Chave.TIPO_ITEM_ARMA, Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_ESOTERICO, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
+        chave: [
+          Chave.TIPO_ITEM_ARMA,
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.TIPO_ITEM_ESCUDO,
+          Chave.TIPO_ITEM_ESOTERICO,
+          Chave.TIPO_ITEM_FERRAMENTA,
+          Chave.TIPO_ITEM_VESTUARIO,
+        ],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 616,
         nome: 'Diligente',
         descricao: `O item é decorado com símbolos que evocam aspectos divinos de combate ou proteção. Reduz o custo do poder Prece de Combate em –1 PM.`,
-        chave: [ Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
+        chave: [
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.TIPO_ITEM_ESCUDO,
+          Chave.TIPO_ITEM_FERRAMENTA,
+          Chave.TIPO_ITEM_VESTUARIO,
+        ],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 617,
         nome: 'Inscrito',
         descricao: `O item possui inscrições religiosas de uma divindade específica e conta como um símbolo sagrado desse deus (inclusive fornecendo o bônus de +1 em testes de resistência).`,
-        chave: [ Chave.TIPO_ITEM_ARMADURA, Chave.TIPO_ITEM_ESCUDO, Chave.TIPO_ITEM_FERRAMENTA, Chave.TIPO_ITEM_VESTUARIO ],
+        chave: [
+          Chave.TIPO_ITEM_ARMADURA,
+          Chave.TIPO_ITEM_ESCUDO,
+          Chave.TIPO_ITEM_FERRAMENTA,
+          Chave.TIPO_ITEM_VESTUARIO,
+        ],
         referencias: Referencia.DEUSES,
         paginas: '54',
-        tipo: TipoItem.MELHORIA
+        tipo: TipoItem.MELHORIA,
       },
       {
         id: 618,
         nome: 'Cilício Vivo',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta cinta de couro possui anzóis enferrujados e afiados. Para usar o cilício vivo, você deve amarrá-lo em sua coxa ou braço (ele conta como um item vestido), de forma a cravar os anzóis em sua carne. O cilício então bebe de seu sangue, adquirindo uma consistência úmida e pulsante. Isso reduz seus PV máximos em 1 por nível. Porém, a dor constante o mantém vigilante, fornecendo um bônus de +1 em todos os seus testes (cumulativo com outros bônus de itens). Se você for um devoto de Aharadak, o bônus aumenta para +2. Se for um devoto de Aharadak de patamar campeão ou superior, o cilício vivo também aumenta seus PM máximos em +1 por nível. Acessório maior, preço T$ 37.000.
         `,
         deus: 'Aharadak',
@@ -25485,13 +25541,13 @@ export class ItemData {
         preco_conserto: 3700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 619,
         nome: 'Coração Corrompido',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este pequeno baú de madeira esconde um coração cinzento e ressequido. Se um devoto de Aharadak matar uma criatura inteligente e derramar um pouco do sangue dela no coração, ele volta à “vida”, ficando vermelho e pulsante. Enquanto o coração corrompido estiver vivo, qualquer dano ou condição causado ao devoto será absorvido pelo item. O coração pode absorver até 100 pontos de dano e três condições. Quando isso acontecer, volta ao seu estado “morto”... até um novo sacrifício ser feito. O devoto não precisa estar em posse do coração para o efeito funcionar, apenas saber onde ele está. Isso significa que o devoto pode deixar o item escondido, mas, claro, quanto mais longe ele estiver, mais difícil será “revivê-lo” se necessário. Acessório maior, T$ 45.000.
         `,
         deus: 'Aharadak',
@@ -25507,13 +25563,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
-        id: 620 ,
+        id: 620,
         nome: 'Coroa de Flores',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este adereço é feito com ramos verdejantes e flores brancas, rosas, amarelas e lilases e, abençoado pela magia da natureza, permanece sempre vistoso. Se você for um devoto de Allihanna e vestir a coroa de flores, recebe +1 em Sabedoria (apenas após 1 dia de uso) e suas magias com efeitos numéricos variáveis recebem um bônus de +1 por dado (por exemplo, Curar Ferimentos lançada para curar 4d8+4 PV irá curar 4d8+8 PV). Acessório menor, preço T$ 9.000.
         `,
         deus: 'Allihanna',
@@ -25529,13 +25585,13 @@ export class ItemData {
         preco_conserto: 900,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
-        id: 621 ,
+        id: 621,
         nome: 'Cajado das Matas',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este bordão é feito com galhos retorcidos e trançados com couro. Se você for devoto de Allihanna, ele se torna um bordão formidável e, enquanto você estiver ao ar livre e pisando sobre terra, fornece +2 na Defesa (cumulativo com outros bônus de itens). Se for um devoto de patamar campeão ou superior, a arma se torna um bordão magnífico. Arma específica menor, preço T$ 27.000.
         `,
         deus: 'Allihanna',
@@ -25551,13 +25607,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 622,
         nome: 'Tapeçaria da Guerra',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta tapeçaria velha e manchada de sangue mostra um campo de batalha, com imagens representando terreno, tropas e objetivos. Analisar a tapeçaria aguça a sua percepção estratégica — ela funciona como uma ferramenta aprimorada, fornecendo +2 em Guerra. Se você for um devoto de Arsenal, estiver em combate e gastar uma ação completa para analisar a tapeçaria, a magia do item se revela, com as imagens se movendo para representar a batalha na qual você está. Como parte da ação completa, você faz um teste de Guerra (CD 20). Se você passar, o bônus em Guerra se estende para todos os testes de perícia, seus e de seus aliados em alcance curto, até o fim da cena. Se passar por 20 ou mais (ou seja, se somar 40 ou mais no teste de Guerra), você e seus aliados em alcance curto recebem uma ação padrão adicional, cada um em seu próximo turno (apenas uma vez por cena). Analisar a tapeçaria requer as duas mãos. Acessório maior, preço T$ 35.000.
         `,
         deus: 'Arsenal',
@@ -25573,13 +25629,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 623,
         nome: 'Machado da Bravura',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este machado de batalha certeiro e cruel tem cabo de madeira marrom escura com um reforço de metal nas laterais e lâmina única, feita de aço com muitos entalhes representando batalhas e monstros. Se você for um devoto de Arsenal, ele se torna um machado de batalha certeiro cruel formidável. Sempre que você fizer uma investida, recebe 1 PM temporário cumulativo. Você pode ganhar um número máximo de PM temporários por dia igual a sua Sabedoria. Arma específica menor, preço T$ 25.000.
         `,
         deus: 'Arsenal',
@@ -25595,13 +25651,13 @@ export class ItemData {
         preco_conserto: 2500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 624,
         nome: 'Alfange Dourado',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `A lâmina deste alfange maciço é feita de ouro alquimicamente tratado para ser duro como aço. Isso o torna muito pesado (–2 em testes de ataque), mas muda seu dano base para 2d6. Se você for um devoto de Azgher, pode gastar uma ação completa para entoar palavras sagradas e encostar ouro (itens ou tibares) na lâmina do alfange dourado. Se fizer isso, o ouro derrete e a arma brilha com energia mágica. Até o fim do dia, o alfange dourado perde sua penalidade em testes de ataque e recebe um bônus em testes de ataque e rolagens de dano de acordo com o sacrifício: bônus de +2 para T$ 10, +3 para T$ 100, +4 para T$ 500 e +5 para T$ 1.000. Arma específica média, preço T$ 36.000.
         `,
         deus: 'Azgher',
@@ -25617,13 +25673,13 @@ export class ItemData {
         preco_conserto: 3600,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 625,
         nome: 'Cimitarra Solar',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta cimitarra pungente tem cabo de marfim e lâmina de aço reluzente. Quando reflete a luz do sol, o aço tem um brilho dourado. Se você for um devoto de Azgher, a arma se torna uma cimitarra pungente flamejante formidável. Sob a luz do sol, a cimitarra reluz mais forte, com um brilho dourado, e aumenta o dano da bola de fogo que dispara (pelo encanto flamejante) para 12d6. Se você for de patamar campeão ou superior, a arma se torna uma cimitarra precisa flamejante magnífica. Arma específica média, preço T$ 54.000.
         `,
         deus: 'Azgher',
@@ -25639,13 +25695,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 626,
         nome: 'Adaga Sorrateira',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta adaga é feita do que parece ser metal enferrujado. Se você for um devoto de Hyninn, ela se torna uma adaga formidável. Além disso, na primeira vez em que você passar em um teste de Enganação ou Furtividade em cada cena, você recebe +5 em um teste ou rolagem a sua escolha até o fim da cena (cumulativo com outros bônus de itens). Se você for de patamar campeão ou superior, a arma se torna uma adaga magnífica. Arma específica menor, preço T$ 22.500.
         `,
         deus: 'Hyninn',
@@ -25661,13 +25717,13 @@ export class ItemData {
         preco_conserto: 2250,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 627,
         nome: 'Cubo Armadilha',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este pequeno cubo de metal possui diversos botões em sua superfície, mas se você apertá-los nada acontece… Exceto se você for um devoto de Hyninn. Um devoto da Trapaça pode gastar uma ação padrão para apertar os botões e escolher um espaço desocupado em alcance curto. O cubo então flutua até esse espaço e desaparece, ficando invisível e intangível. O primeiro inimigo que entrar nesse espaço é atingido por diversas serras e lâminas que surgem do nada, sofrendo 10d8 pontos de dano de corte (Ref CD Int reduz à metade). Para cada dado de dano que rolar um resultado mínimo ou máximo (ou seja, “1” ou “8”), role 1d8 extra, repetindo o processo a cada resultado mínimo ou máximo. O cubo então reaparece e flutua para seu dono (se ele estiver até alcance longo) ou fica parado no chão (se ele estiver mais longe do que isso). Uma criatura que veja o cubo armadilha sendo ativado pode simplesmente evitar o espaço para onde ele foi, de modo que este item funciona melhor quando usado com preparação. Além disso, uma criatura que procure por armadilhas tem direito a um teste de Investigação (CD 30 + Int do usuário). Se passar, percebe a forma etérea do cubo e pode passar por ele sem ativá-lo (embora não consiga desarmá-lo ou pegá-lo). Se passar e for devota de Hyninn, o cubo reaparece e flutua para ela, adotando-a como nova dona! Acessório médio, preço T$ 25.000.
         `,
         deus: 'Hyninn',
@@ -25683,13 +25739,13 @@ export class ItemData {
         preco_conserto: 2500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 628,
         nome: 'Lança da Dominação',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta lança maciça é feita de uma única haste de metal cinza escuro, e tem um tênue brilho alaranjado. Se você for um devoto de Kallyadranoch, torna-se uma lança maciça que fornece +1 em testes de ataque e rolagens de dano e, a cada acerto, causa +1d10 pontos de dano de ácido, eletricidade, fogo ou frio (a escolha do usuário a cada golpe). Cada vez que você sobe de nível enquanto estiver com a lança, os bônus que ela fornece em ataque e dano aumentam em +1 (até um máximo de +6). Entretanto, a cada mês que você passar separado da lança da dominação, os bônus dela diminuem em –1 (até um mínimo de +1). Arma específica média, preço T$ 45.000.
         `,
         deus: 'Kallyadranoch',
@@ -25705,13 +25761,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 629,
         nome: 'Ossos Dracônicos',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este item possui a forma de um acessório — como um colar, máscara, colete ou par de brincos — feito de ossos especialmente densos e duros. Qualquer um que toque nos ossos dracônicos sente que eles emanam uma tênue energia — calor, frio, estática ou outra, conforme a natureza do dragão a partir do qual foram feitos. A energia é desconfortável, mas não a ponto de causar dano ou impor qualquer penalidade. Se forem vestidos, os ossos dracônicos fornecem +4 em Intimidação e –2 em Diplomacia. Se forem vestidos por um devoto de Kallyadranoch, emprestam o poder armazenado neles, fornecendo também +2 em Força, +2 em Carisma e +2 na CD de todas as habilidades do devoto. Acessório maior, preço T$ 90.000.
         `,
         deus: 'Kallyadranoch',
@@ -25727,13 +25783,13 @@ export class ItemData {
         preco_conserto: 9000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 630,
         nome: 'Espada Monástica',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta espada longa certeira possui lâmina de aço reluzente e cabo de ouro com orações ao Deus da Justiça inscritas. Se você for um devoto de Khalmyr e estiver empunhando a espada monástica, pode gastar uma ação de movimento para ler um dos versículos inscritos nela e fazer um teste de Religião (CD 20). Se passar, a arma se torna formidável. Se passar por 10 ou mais, ela gera o efeito básico de Oração. Se passar por 20 ou mais, a arma se torna magnífica. Estes efeitos duram até o fim da cena. Arma específica média, preço T$ 54.000.
         `,
         deus: 'Khalmyr',
@@ -25749,13 +25805,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 631,
         nome: 'Armadura do Julgamento',
         tipo: TipoItem.ARMADURA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta armadura completa polida reforçada é feita de aço reluzente quase tão reflexivo quanto um espelho. Se você for um devoto de Khalmyr, ela se torna uma armadura completa polida reforçada defensora. Sempre que uma criatura atacá-lo, você pode gastar 2 PM para fazê-la ver seus pecados refletidos na armadura. A criatura fica pasma por 1 rodada (apenas uma vez por cena) e frustrada (Von CD Sab reduz para apenas frustrada). Note que a penalidade em testes mentais imposta pela frustração pode tornar mais fácil convencer a criatura a abandonar a luta através de Diplomacia ou outros efeitos que exijam testes de Vontade — um caminho digno para devotos do Deus da Justiça que queiram julgar seus inimigos em vez de apenas executá-los sumariamente! Se você for um devoto de patamar campeão ou superior, a armadura se torna uma armadura completa polida reforçada guardiã. Armadura específica média, preço T$ 54.000.
         `,
         deus: 'Khalmyr',
@@ -25771,13 +25827,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 632,
         nome: 'Caldeirão da Vida',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta grande panela de ferro é abençoada com o poder de Lena, e permite preparar refeições únicas. Para isso, você precisa gastar 1 hora, T$ 5 e fazer um teste de Ofício (cozinheiro) contra CD 15. Se você passar, faz comida suficiente para até 5 criaturas Médias ou Pequenas (uma criatura Minúscula come o equivalente à metade de uma criatura Média, uma criatura Grande ou Enorme come o dobro e uma criatura Colossal come o quádruplo). Todos que se alimentarem dela recebem +2 nos testes de resistência por um dia e, se forem devotos de Lena, recebem também 10 PV temporários. Também é possível preparar um prato especial no caldeirão. Nesse caso, faça um único teste de Ofício (cozinheiro) com a CD do prato especial +5 e some o custo da comida do caldeirão ao do prato especial. Se você passar, os benefícios do prato se acumulam com os da comida do caldeirão. Acessório médio, preço T$ 25.000.
         `,
         deus: 'Lena',
@@ -25793,13 +25849,13 @@ export class ItemData {
         preco_conserto: 2500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 633,
         nome: 'Alabarda da Coragem',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta alabarda certeira precisa possui fitas decorativas que dançam como a cauda de um dragão quando ela é usada em batalha. Se você for um devoto de Lin-Wu, ela se torna uma alabarda certeira precisa formidável que fornece +5 em Iniciativa. Sempre que você for o primeiro a agir em um combate, recebe 2 PM temporários por nível, que duram até o fim da cena. Arma específica média, preço T$ 36.000.
         `,
         deus: 'Lin-Wu',
@@ -25815,13 +25871,13 @@ export class ItemData {
         preco_conserto: 3600,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 634,
         nome: 'Katana da Determinação',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta katana precisa e pungente é feita de aço tamuraniano e tem cabo coberto de tiras de couro trançadas. A lâmina tem coloração avermelhada, sinal de Lin-Wu para que seus devotos nunca se esqueçam da tragédia que se abateu sobre seu povo. Se você for um devoto de Lin-Wu, a arma se torna uma katana precisa pungente formidável que ignora a imunidade a acertos críticos de lefeu. Sempre que você derrotar um lefeu com a katana, cura 2d8+2 PV e recebe +2 nas rolagens de dano (cumulativo com esse efeito e de outros itens) até o fim da cena. Se você for um devoto de patamar campeão ou superior, ela se torna uma katana precisa pungente magnífica. Arma específica média, preço T$ 54.000.
         `,
         deus: 'Lin-Wu',
@@ -25837,13 +25893,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 635,
         nome: 'Instrumento da Alegria',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Um instrumento musical comum, como um bandolim, flauta ou tambor, aprimorado (+1 em Atuação). Se você for treinado em Atuação e estiver empunhando o instrumento da alegria, pode gastar uma ação padrão e 1 PM para tocar uma música envolvente, que fornece +2 em testes de perícia para você e seus aliados em alcance médio até o fim da cena (cumulativo com outros bônus de itens). Se você for devoto de Marah e usar um poder de Música, pode ativar o efeito do item com uma ação livre. Acessório médio, preço T$ 10.500.
         `,
         deus: 'Marah',
@@ -25859,13 +25915,13 @@ export class ItemData {
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 636,
         nome: 'Véu Diáfano',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Um instrumento musical comum, como um bandolim, flauta ou tambor, aprimorado (+1 em Atuação). Se você for treinado em Atuação e estiver empunhando o instrumento da alegria, pode gastar uma ação padrão e 1 PM para tocar uma música envolvente, que fornece +2 em testes de perícia para você e seus aliados em alcance médio até o fim da cena (cumulativo com outros bônus de itens). Se você for devoto de Marah e usar um poder de Música, pode ativar o efeito do item com uma ação livre. Acessório médio, preço T$ 10.500.
         `,
         deus: 'Marah',
@@ -25881,13 +25937,13 @@ export class ItemData {
         preco_conserto: 1050,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 637,
         nome: 'Colar de Presas',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este adereço é feito com dentes e garras de monstros unidos por tendões. Se for vestido, fornece +2 em Intimidação, mas impõe –2 em Diplomacia. Mais do que isso, carrega em seu âmago o instinto brutal das feras e, se você for um devoto de Megalokk, fornece também +2 em testes de ataque e rolagens de dano com armas naturais. Acessório médio, preço T$ 21.000.
         `,
         deus: 'Megalokk',
@@ -25903,13 +25959,13 @@ export class ItemData {
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 638,
         nome: 'Maça Monstruosa',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta maça atroz é feita de rocha vulcânica pontiaguda e afiada. Se você for um devoto de Megalokk, ela se torna uma arma formidável e seu dano aumenta em dois passos. Se você for de patamar campeão ou superior, seu dano aumenta em mais dois passos (para um total de quatro). Arma específica menor, preço T$ 27.000.
         `,
         deus: 'Megalokk',
@@ -25925,13 +25981,13 @@ export class ItemData {
         preco_conserto: 2700,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 639,
         nome: 'Alguma Coisa de Nimb...',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Uma frigideira. Um salame. Uma pluma de avestruz prateada. Todos esses objetos, e quaisquer outros, podem ser itens litúrgicos de Nimb. Esse itens só aparecem para devotos do Caos e sempre em momentos inesperados. O devoto sabe instintivamente que a adaga na bota do guarda, a espiga de milho caída no campo ou a panela do cozinheiro goblin é um item sagrado de seu deus. Nas mãos de um devoto de Nimb, o item funciona como uma arma corpo a corpo simples de uma mão formidável veloz. Independente da forma do item, causa 3d8 pontos de dano (se necessário, role 1d3 para cada ataque, sendo 1 = corte, 2 = impacto e 3 = perfuração), com crítico x2. Quando faz um ataque com o item litúrgico, você pode gastar 1 PM. Se fizer isso e acertar, para cada resultado ímpar que rolar em um dado de dano, rola um dado extra de dano do mesmo tipo, repetindo o processo a cada resultado ímpar. Arma específica média, preço T$ 54.000.
         `,
         deus: 'Nimb',
@@ -25947,13 +26003,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 640,
         nome: 'Jarro das Profundezas',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este vaso de madrepérola é coberto de imagens de animais marítimos. Se você for um devoto do Oceano e estiver empunhando o jarro das profundezas, pode gastar uma ação padrão e PM para gerar alguns efeitos. Por 1 PM, cria 2 litros de água salgada. Essa água não pode ser bebida pela maioria dos seres, mas serve para cumprir suas Obrigações & Restrições de se manter em contato com o mar. Também por 1 PM, dispara uma onda de água que se derrama em um cone de 6m à sua frente e derruba quaisquer criaturas na área (Ref CD Sab evita). Por fim, por 2 PM você invoca um elemental da água que atua como um parceiro destruidor (dano de frio) ou guardião veterano até o fim da cena. Acessório menor, preço T$ 9.000.
         `,
         deus: 'Oceano',
@@ -25969,13 +26025,13 @@ export class ItemData {
         preco_conserto: 900,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 641,
         nome: 'Tridente Aquoso',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este tridente pungente é feito de coral azulado, e suas três pontas emanam uma tênue névoa gelada. Se você for um devoto do Oceano, ele se torna um tridente pungente congelante formidável. Se o tridente aquoso for mergulhado em água (exige uma ação de movimento e um reservatório de água grande o suficiente, como uma tina, cocho, banheira, rio…), torna-se magnífico até o fim da cena. Arma específica média, preço T$ 54.000.
         `,
         deus: 'Oceano',
@@ -25991,13 +26047,13 @@ export class ItemData {
         preco_conserto: 5400,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 643,
         nome: 'Adaga Ofídica',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta adaga cruel é feita da presa de uma serpente gigantesca. Possui um compartimento oco no cabo com veneno (peçonha concentrada) que é magicamente reposto a cada golpe. Se você for um devoto de Sszzaas, ela se torna uma adaga cruel formidável que ignora qualquer resistência ou imunidade a veneno de uma criatura atingida. Se você for de patamar campeão ou superior, o veneno vira peçonha potente. Arma específica média, preço T$ 36.000.
         `,
         deus: 'Sszzaas',
@@ -26013,13 +26069,13 @@ export class ItemData {
         preco_conserto: 3600,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 644,
         nome: 'Bordão Sabichão',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este bordão maciço é feito de metal e cravejado de gemas, todas da mesma cor (cada cajado individual tem sua cor). Se você for um devoto de Tanna-Toh, ele se torna um bordão maciço formidável piedoso. Além disso, sempre que você faz um teste de perícia, pode gastar 2 PM. Nesse caso, o item sussurra um conselho ou lembrete, permitindo que você some sua Sabedoria ao teste. Arma específica maior, preço T$ 72.000.
         `,
         deus: 'Tanna-Toh',
@@ -26035,13 +26091,13 @@ export class ItemData {
         preco_conserto: 7200,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 645,
         nome: 'Escrivaninha Consagrada',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta caixa de madeira repleta de dobradiças possui o símbolo de Tanna-Toh pintado na tampa. Ela pode ser aberta e desdobrada para virar uma escrivaninha portátil, útil para aventureiros que querem ter um espaço para ler e escrever mesmo nos ermos. Se você for um devoto da Deusa do Conhecimento e usar a escrivaninha consagrada para estudar por 1 hora, dobra seu bônus de treinamento em uma perícia baseada em Int ou Sab a sua escolha por 1 dia. Além disso, caso possa fabricar pergaminhos, uma vez por aventura recebe 1d3 pergaminhos que poderia ter criado. Considere que você escreveu esses pergaminhos durante seu tempo livre. A escrivaninha consagrada ocupa 2 espaços. Acessório menor, preço T$ 9.000.
         `,
         deus: 'Tanna-Toh',
@@ -26057,13 +26113,13 @@ export class ItemData {
         preco_conserto: 900,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 646,
         nome: 'Vestido Noturno',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este vestido negro possui pequenos diamantes costurados em seu tecido, que cintilam como as estrelas do céu noturno. Conta como uma veste de seda aprimorada cravejada de gemas, fornecendo +2 em Enganação e Reflexos. Se você for um devoto de Tenebra e vestir este item, pode gastar uma ação padrão e 5 PM para ficar invisível até o fim da cena (recebe camuflagem total e +10 em testes de Furtividade contra ouvir, e criaturas que não possam vê-lo ficam desprevenidas contra seus ataques). Esse efeito termina se você fizer uma ação hostil direta contra uma criatura (para mais detalhes, veja a magia Invisibilidade). Acessório médio, preço T$ 21.000.
         `,
         deus: 'Tenebra',
@@ -26079,13 +26135,13 @@ export class ItemData {
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 647,
         nome: 'Machado Lamnoriano',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MENOR],
         descricao: `Este machado de guerra atroz possui cabo feito da madeira de árvores milenares, que nascem apenas no continente sul, e lâmina de aço regado pelo sangue dos incontáveis massacres que já ocorreram nessa terra bestial. Se você for um devoto de Thwor, ele se torna um machado de guerra atroz formidável. Sempre que você entrar em fúria, o machado lamnoriano se retorce e cresce, energizado pela sua raiva, e seu dano aumenta em um passo. Se você for de patamar campeão ou superior, o dano aumenta em mais um passo (dois passos ao todo). Arma específica menor, preço T$ 22.500.
         `,
         deus: 'Thwor',
@@ -26101,13 +26157,13 @@ export class ItemData {
         preco_conserto: 2250,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 648,
         nome: 'Espada Imaculada',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta espada longa precisa tem cabo de aço tingido de vermelho vivo, com asas de pássaro servindo de guarda-mão. Se você for um devoto de Thyatis, ela se torna uma espada longa precisa formidável e você pode gastar 2 PM para fazer a lâmina dela se tornar plasma vermelho até o fim da cena. Nesse estado, o bônus de ataque da espada muda para +4 e seu dano aumenta em dois passos, muda para fogo não letal e ignora 20 pontos de redução de dano. Arma específica média, preço T$ 45.000.
         `,
         deus: 'Thyatis',
@@ -26123,13 +26179,13 @@ export class ItemData {
         preco_conserto: 2250,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 649,
         nome: 'Pira Póstera',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta pequena bacia de cerâmica negra possui linhas rajadas vermelhas. Se você for um devoto de Thyatis e estiver em posse da pira póstera, recebe +1 em Sabedoria (apenas após 1 dia de posse). Além disso, uma vez por dia pode enchê-la de água e olhar dentro dela para ter visões de possíveis perigos futuros. Uma vez até o fim do dia, quando faz um teste de Iniciativa, Percepção ou de resistência, você pode rolar novamente esse teste. Acessório médio, preço T$ 15.000.
         `,
         deus: 'Thyatis',
@@ -26145,13 +26201,13 @@ export class ItemData {
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 650,
         nome: 'Botas Inquietas',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esse par de botas reforçadas é bastante surrado, com marcas dos diversos terrenos pelos quais já passou: carrapichos de florestas, manchas das águas escuras de pântanos, pequenos rasgos das pedras afiadas de montanhas… Se você for um devoto de Valkaria e vestir as botas inquietas, sente um grande desejo de viajar e desbravar o mundo — e a disposição para tal empreitada! Você recebe +1 em Constituição (apenas após 1 dia de uso) e +5 em testes de Fortitude para marcha forçada. Além disso, sempre que realizar uma investida durante um combate, recebe 1 PM temporário cumulativo (até um máximo de 3 PM por patamar por dia). Acessório médio, preço T$ 15.000.
         `,
         deus: 'Valkaria',
@@ -26167,13 +26223,13 @@ export class ItemData {
         preco_conserto: 1500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 651,
         nome: 'Mangual Aventureiro',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Este mangual certeiro e cruel tem o cabo e a cabeça feitos de aço, interligados por uma corrente folheada a ouro. Se você for um devoto de Valkaria, ele se torna um mangual dançarino formidável. Se você estiver lutando em um lugar no qual nunca esteve antes, o dano do mangual aventureiro aumenta em dois passos. Arma específica média, preço T$ 40.000.
         `,
         deus: 'Valkaria',
@@ -26189,13 +26245,13 @@ export class ItemData {
         preco_conserto: 4000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 652,
         nome: 'Argolas Místicas',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta peculiar peça de vestuário consiste de tiras de couro cru conectadas por pequenas argolas metálicas. O conjunto é costurado, tratado com óleos alquímicos e abençoado por louvores a Wynna. Teria sido criada por arcanistas élficos da antiga Lenórienn inspirados por visões da própria Deusa da Magia, que usaria uma indumentária parecida. Seja qual for sua origem, as argolas místicas geram um efeito espantoso. Quando um devoto de Wynna lança uma magia, a energia flui pelas tiras (que funcionam como canais) em direção às argolas (que funcionam como um tipo de ímã místico), acumulando-se nelas. Normalmente, quando um arcanista conjura um feitiço, quantidades residuais da mana canalizada se dissipam na natureza. As argolas impedem isso, potencializando o esforço do conjurador. Em termos de regras, se você estiver vestindo as argolas místicas, for um devoto de Wynna e lançar uma magia, recebe +2 PM para gastar em aprimoramentos. Esses PM podem ultrapassar o limite de gasto de mana do devoto. As argolas podem ser usadas sobre outras roupas (respeitando-se o limite de quatro itens vestidos), mas sabe-se de pelo menos uma famosa arquimaga élfica que vestia apenas elas. Na época, ninguém acreditava quando a elfa explicava a função da peça, mas talvez ela estivesse falando a verdade o tempo inteiro. Acessório médio, preço T$ 25.500.
         `,
         deus: 'Wynna',
@@ -26211,13 +26267,13 @@ export class ItemData {
         preco_conserto: 2550,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 653,
         nome: 'Varinha da Generosidade',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ITEM_LITURGICO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Esta varinha arcana poderosa de madeira Tollon tem várias runas que emanam um brilho púrpura quando encontram a luz da lua. Se você for um devoto de Wynna, a varinha gera um campo de força que fornece redução de dano 5. Além disso, sempre que você lança uma magia, a mana usada na conjuração flui através da varinha para um aliado em alcance curto a sua escolha. Esse aliado recebe 1 PM temporário por círculo da magia lançada (limitado pelo total de PM gastos na magia). Cada aliado só pode receber mana de uma varinha da generosidade uma vez por dia. Acessório médio, preço T$ 30.000.
         `,
         deus: 'Wynna',
@@ -26233,7 +26289,7 @@ export class ItemData {
         preco_conserto: 3000,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.DEUSES,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 654,
@@ -26265,11 +26321,13 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_DUAS_MAOS,
           Chave.HABILIDADE_ARMA_DUPLA,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         referencias: Referencia.GUIA_NPC,
         paginas: '17',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 655,
@@ -26302,18 +26360,20 @@ export class ItemData {
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.MUNICAO_BALA,
           Chave.RECARREGA_ACAO_PADRÃO,
-          Chave.TIPO_DANO_PERFURACAO
+          Chave.TIPO_DANO_PERFURACAO,
         ],
         imagem: 'assets/img/item_arma_pistola.png',
         referencias: Referencia.GUIA_NPC,
         paginas: '19',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 656,
         nome: 'Punhal Escarlate',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Criada por Hemera, esta adaga formidável causa +1d6 pontos de dano de essência. Além disso, conta como um orbe cristalino. Arma específica média, preço T$ 41.000.`,
         dano: '1d8',
         margem_ameaca: 2,
@@ -26333,13 +26393,13 @@ export class ItemData {
         preco_conserto: 4100,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.GUIA_NPC,
-        paginas: '29'
+        paginas: '29',
       },
       {
         id: 657,
         nome: 'Braceletes das Escamas',
         tipo: TipoItem.ACESSORIO,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MEDIO,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MEDIO],
         descricao: `Criados por Acteia, estes braceletes de aço escurecido são entalhados de forma a parecer escamas de dragão. Fornecem redução de dano 5 e contam como uma luva de ferro. Acessório médio, preço T$ 21.000.`,
         dano: '1d8',
         margem_ameaca: 2,
@@ -26359,13 +26419,13 @@ export class ItemData {
         preco_conserto: 2100,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.GUIA_NPC,
-        paginas: '26'
+        paginas: '26',
       },
       {
         id: 658,
         nome: 'Kum’shrak',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.PROFICIENCIA_ARMA_EXOTICA,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.PROFICIENCIA_ARMA_EXOTICA],
         descricao: `Arma ritualística empunhada apenas pelos melhores guerreiros duyshidakk, um kum’shrak é uma arma especial que extrai poder de suas vítimas. Seguindo as leis de Lamnor e do Akzath, por ser empregado como uma ferramenta de “morte” cujo único propósito é pôr “fim” à vida, o kum’shrak está próximo das “trevas”. Assim, conforme é empunhada em combate, a arma se torna cada vez mais escura, afiada e avessa à vida, até alcançar um ponto em que se torna capaz de ferir qualquer ser vivo que a toque. Mesmo seu proprietário pode ser ferido pelo kum’shrak; se a arma não sentir que será usada em combate, pode manifestar seu poder sombrio. Se for usado como ferramenta, o kum’shrak pode impor uma penalidade de –5 em testes, se for usado para cortar alimentos, pode envenená-los, se o portador estiver com medo ou fugir, pode perder 1d4 pontos de vida e assim por diante.
         <p>Um kum’shrak recém-criado é um osso grande, que funciona como uma arma improvisada (–2 em ataques, 1d6 de dano, crítico x2). Quando mata pela primeira vez, torna-se uma clava. Quando mata cinco vítimas, torna-se um machado de batalha. Ao fazer sua décima vítima, o kum’shrak recebe uma melhoria escolhida por seu portador. Depois disso, sempre que dobra seu número de mortes (20, 40 etc.), adquire uma nova melhoria, até um máximo de quatro melhorias. Além das melhorias normais, um kum’shrak tem acesso a três melhorias exclusivas.</p>
         <ul>
@@ -26390,13 +26450,13 @@ export class ItemData {
         preco_conserto: 0,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.GUIA_NPC,
-        paginas: '36'
+        paginas: '36',
       },
       {
         id: 659,
         nome: 'Armadura de Khalmyr',
         tipo: TipoItem.ARMADURA,
-        chave: [Chave.ITEM_MAGICO_MENOR,],
+        chave: [Chave.ITEM_MAGICO_MENOR],
         descricao: `Esta armadura completa sob medida defensora fica armazenada magicamente em uma gargantilha com o símbolo do Deus da Justiça. Enquanto está armazenada dessa forma, a armadura não ocupa nenhum espaço (embora ainda conte como um item vestido) e não impõe nenhuma penalidade ao usuário (como se ele não estivesse de armadura). Ao pronunciar o nome de Khalmyr, o usuário evoca a armadura, que é vestida automaticamente. Devolver a armadura à gargantilha também é uma ação livre. Armadura específica média, T$ 42.000.`,
         defesa: 12,
         alcance: 0,
@@ -26413,13 +26473,13 @@ export class ItemData {
         preco_conserto: 4200,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.GUIA_NPC,
-        paginas: '41'
+        paginas: '41',
       },
       {
         id: 660,
         nome: 'Avir',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este montante aumentado macabro maciço formidável tumular foi fabricado a partir do fêmur da irmã de Narsogg. Uma arma única, conta como um cajado arcano. Além dos benefícios desse esotérico, as magias do usuário que causam dano de trevas causam +1 ponto de dano por dado. Arma específica maior, preço T$ 96.000.`,
         dano: '3d6',
         margem_ameaca: 2,
@@ -26439,7 +26499,7 @@ export class ItemData {
         preco_conserto: 9600,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.GUIA_NPC,
-        paginas: '55'
+        paginas: '55',
       },
       {
         id: 661,
@@ -26471,11 +26531,13 @@ export class ItemData {
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
           Chave.HABILIDADE_ARMA_DUPLA,
-          Chave.TIPO_DANO_IMPACTO
+          Chave.TIPO_DANO_IMPACTO,
         ],
         referencias: Referencia.GUIA_NPC,
         paginas: '63',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 662,
@@ -26506,17 +26568,19 @@ export class ItemData {
           Chave.ATAQUE_CORPO_A_CORPO,
           Chave.LIMITE_USO_EMPUNHADO,
           Chave.EMPUNHADURA_ARMA_UMA_MAO,
-          Chave.TIPO_DANO_CORTE
+          Chave.TIPO_DANO_CORTE,
         ],
         referencias: Referencia.GUIA_NPC,
         paginas: '69',
-        tipo: TipoItem.ARMA,pericia: '', proficiencia: ''
+        tipo: TipoItem.ARMA,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 663,
         nome: 'Báculo da Fé',
         tipo: TipoItem.ARMA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Este bordão banhado a ouro formidável é dedicado a uma divindade específica, que pode ser identificada pelos símbolos em sua empunhadura e extremidades. Quando empunhado por um devoto dessa divindade, causa +1d6 pontos de dano de fogo (para divindades que canalizam energia positiva) ou +1d6 pontos de dano de frio (para divindades que canalizam energia negativa). Arma mágica específica maior, T$ 45.000.`,
         dano: '3d6',
         margem_ameaca: 2,
@@ -26536,13 +26600,13 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.GUIA_NPC,
-        paginas: '69'
+        paginas: '69',
       },
       {
         id: 664,
         nome: 'Batina Consagrada',
         tipo: TipoItem.ARMADURA,
-        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR,],
+        chave: [Chave.ATAQUE, Chave.ATAQUE_CORPO_A_CORPO, Chave.ITEM_MAGICO_MAIOR],
         descricao: `Esta armadura acolchoada guardiã refletora é dedicada a uma divindade específica, que pode ser identificada pelos símbolos bordados em seu peito e mangas. Conta como um manto eclesiástico aprimorado e, se vestida por um devoto da divindade à qual é dedicada, fornece redução de dano 5. Armadura específica maior, T$ 80.000.`,
         defesa: 5,
         espaco: 2,
@@ -26557,7 +26621,7 @@ export class ItemData {
         preco_conserto: 4500,
         tempo_conserto_em_horas: 1,
         referencias: Referencia.GUIA_NPC,
-        paginas: '69'
+        paginas: '69',
       },
       {
         id: 665,
@@ -26583,14 +26647,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL, 
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         // imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.HEROIS,
         paginas: '223',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 666,
@@ -26616,14 +26679,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL, 
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         // imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.HEROIS,
         paginas: '223',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 667,
@@ -26649,14 +26711,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL, 
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         // imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.HEROIS,
         paginas: '223',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 668,
@@ -26682,14 +26743,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL, 
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         // imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.HEROIS,
         paginas: '223',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
       {
         id: 669,
@@ -26715,14 +26775,13 @@ export class ItemData {
         margem_ameaca: 0,
         alcance: 0,
         penalidade: 0,
-        chave: [
-          Chave.LIMITE_USO_EMPUNHADO, 
-          Chave.CONSUMIVEL, 
-        ],
+        chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL],
         // imagem: 'assets/img/item_municao_virotes.png',
         referencias: Referencia.HEROIS,
         paginas: '223',
-        tipo: TipoItem.MUNICAO,pericia: '', proficiencia: ''
+        tipo: TipoItem.MUNICAO,
+        pericia: '',
+        proficiencia: '',
       },
     ];
   }
