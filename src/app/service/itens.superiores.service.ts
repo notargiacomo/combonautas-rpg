@@ -20,7 +20,7 @@ export class ItensSuperioresService extends AbstractService {
 
   consult(filtro: any): Observable<Item[]> {
     let listas = this.http.get<Item[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao', 'referencias']).pipe(
+    return this.filtrar(filtro, listas, ['nome', 'descricao', 'tipo', 'referencias']).pipe(
       map(itens =>
         itens.filter(
           i =>
