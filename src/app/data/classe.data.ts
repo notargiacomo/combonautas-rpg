@@ -1276,7 +1276,40 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um lutador começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b> Fortitude (Con) e Luta (For), mais 4 a sua escolha entre Acrobacia (Des), Adestramento (Car), Atletismo (For), Enganação (Car), Furtividade (Des), Iniciativa (Des), Intimidação (Car), Ofício (Int), Percepção (Sab), Pontaria (Des) e Reflexos (Des)</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Briga (1d6), golpe relâmpago</td></tr>
+    <tr><td>2º</td><td>Poder de lutador</td></tr>
+    <tr><td>3º</td><td>Casca grossa (Con), poder de lutador</td></tr>
+    <tr><td>4º</td><td>Poder de lutador</td></tr>
+    <tr><td>5º</td><td>Briga (1d8), golpe cruel, poder de lutador</td></tr>
+    <tr><td>6º</td><td>Poder de lutador</td></tr>
+    <tr><td>7º</td><td>Casca grossa (Con+1), poder de lutador</td></tr>
+    <tr><td>8º</td><td>Poder de lutador</td></tr>
+    <tr><td>9º</td><td>Briga (1d10), golpe violento, poder de lutador</td></tr>
+    <tr><td>10º</td><td>Poder de lutador</td></tr>
+    <tr><td>11º</td><td>Casca grossa (Con+2), poder de lutador</td></tr>
+    <tr><td>12º</td><td>Poder de lutador</td></tr>
+    <tr><td>13º</td><td>Briga (2d6), poder de lutador</td></tr>
+    <tr><td>14º</td><td>Poder de lutador</td></tr>
+    <tr><td>15º</td><td>Casca grossa (Con+3), poder de lutador</td></tr>
+    <tr><td>16º</td><td>Poder de lutador</td></tr>
+    <tr><td>17º</td><td>Briga (2d8), poder de lutador</td></tr>
+    <tr><td>18º</td><td>Poder de lutador</td></tr>
+    <tr><td>19º</td><td>Casca grossa (Con+4), poder de lutador</td></tr>
+    <tr><td>20º</td><td>Dono da rua (2d10), poder de lutador</td></tr>
+  </tbody>
+</table>
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -1319,7 +1352,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um nobre começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b>  4 PM por nível.</p>
         <p><b>Perícias.</b>  Diplomacia  (Car)  ou  Intimidação (Car), Vontade (Sab), mais 4 a sua escolha entre Adestramento (Car), Atuação (Car), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car),  Fortitude  (Con),  Guerra  (Int),  Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        
+        <table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Autoconfiança, espólio, orgulho</td></tr>
+    <tr><td>2º</td><td>Palavras afiadas (2d6), poder de nobre</td></tr>
+    <tr><td>3º</td><td>Poder de nobre, riqueza</td></tr>
+    <tr><td>4º</td><td>Gritar ordens, poder de nobre</td></tr>
+    <tr><td>5º</td><td>Poder de nobre, presença aristocrática</td></tr>
+    <tr><td>6º</td><td>Palavras afiadas (4d6), poder de nobre</td></tr>
+    <tr><td>7º</td><td>Poder de nobre</td></tr>
+    <tr><td>8º</td><td>Poder de nobre</td></tr>
+    <tr><td>9º</td><td>Poder de nobre</td></tr>
+    <tr><td>10º</td><td>Palavras afiadas (6d6), poder de nobre</td></tr>
+    <tr><td>11º</td><td>Poder de nobre</td></tr>
+    <tr><td>12º</td><td>Poder de nobre</td></tr>
+    <tr><td>13º</td><td>Poder de nobre</td></tr>
+    <tr><td>14º</td><td>Palavras afiadas (8d6), poder de nobre</td></tr>
+    <tr><td>15º</td><td>Poder de nobre</td></tr>
+    <tr><td>16º</td><td>Poder de nobre</td></tr>
+    <tr><td>17º</td><td>Poder de nobre</td></tr>
+    <tr><td>18º</td><td>Palavras afiadas (10d6), poder de nobre</td></tr>
+    <tr><td>19º</td><td>Poder de nobre</td></tr>
+    <tr><td>20º</td><td>Realeza, poder de nobre</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: false,
@@ -1370,7 +1437,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um paladino começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b> Diplomacia  (Car)  ou  Intimidação (Car), Vontade (Sab), mais 4 a sua escolha entre Adestramento (Car), Atuação (Car), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car),  Fortitude  (Con),  Guerra  (Int),  Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Abençoado, código do herói, golpe divino (+1d8)</td></tr>
+    <tr><td>2º</td><td>Cura pelas mãos (1d8+1 PV), poder de paladino</td></tr>
+    <tr><td>3º</td><td>Aura sagrada, poder de paladino</td></tr>
+    <tr><td>4º</td><td>Poder de paladino</td></tr>
+    <tr><td>5º</td><td>Bênção da justiça, golpe divino (+2d8), poder de paladino</td></tr>
+    <tr><td>6º</td><td>Cura pelas mãos (2d8+2 PV), poder de paladino</td></tr>
+    <tr><td>7º</td><td>Poder de paladino</td></tr>
+    <tr><td>8º</td><td>Poder de paladino</td></tr>
+    <tr><td>9º</td><td>Golpe divino (+3d8), poder de paladino</td></tr>
+    <tr><td>10º</td><td>Cura pelas mãos (3d8+3 PV), poder de paladino</td></tr>
+    <tr><td>11º</td><td>Poder de paladino</td></tr>
+    <tr><td>12º</td><td>Poder de paladino</td></tr>
+    <tr><td>13º</td><td>Golpe divino (+4d8), poder de paladino</td></tr>
+    <tr><td>14º</td><td>Cura pelas mãos (4d8+4 PV), poder de paladino</td></tr>
+    <tr><td>15º</td><td>Poder de paladino</td></tr>
+    <tr><td>16º</td><td>Poder de paladino</td></tr>
+    <tr><td>17º</td><td>Golpe divino (+5d8), poder de paladino</td></tr>
+    <tr><td>18º</td><td>Cura pelas mãos (5d8+5 PV), poder de paladino</td></tr>
+    <tr><td>19º</td><td>Poder de paladino</td></tr>
+    <tr><td>20º</td><td>Poder de paladino, vingador sagrado</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,

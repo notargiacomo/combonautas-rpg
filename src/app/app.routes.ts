@@ -12,7 +12,7 @@ import { PericiasComponent } from './controller/personagem/pericias/pericias.com
 import { DeusesComponent } from './controller/personagem/deuses/deuses.component';
 import { ComplicacoesComponent } from './controller/personagem/complicacoes/complicacoes.component';
 import { PoderesComponent } from './controller/personagem/poderes/poderes.component';
-import { TerrasDespedacadasComponent } from './terras-despedacadas/terras-despedacadas.component';
+import { TerrasDespedacadasComponent } from './controller/terras-despedacadas/terras-despedacadas.component';
 import { ClassesComponent } from './controller/personagem/classes/classes.component';
 import { ArmasMunicoesComponent } from './controller/itens/armas-municoes/armas-municoes.component';
 import { ArmadurasEscudosComponent } from './controller/itens/armaduras-escudos/armaduras-escudos.component';

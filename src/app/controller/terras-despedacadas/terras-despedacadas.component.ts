@@ -1,15 +1,17 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCard } from '@angular/material/card';
 
 @Component({
   selector: 'app-terras-despedacadas',
-  imports: [MatCard, FormsModule, ReactiveFormsModule],
+  imports: [MatCard, FormsModule, ReactiveFormsModule, NgFor],
   templateUrl: './terras-despedacadas.component.html',
   styleUrl: './terras-despedacadas.component.scss',
 })
 export class TerrasDespedacadasComponent {
   form!: FormGroup;
+  objetos!: any;
 
   constructor(private fb: FormBuilder) {}
 

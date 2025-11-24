@@ -1,0 +1,31 @@
+<form [formGroup]="form">
+  <mat-card class="cartao">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2><b>TERRAS DESPEDAÇADAS</b></h2>
+        <hr />
+      </div>
+    </div>
+    <div classe="row mt-2">
+      <table>
+        <thead>
+          <tr>
+            <th>Função</th>
+            <th>Local</th>
+            <th>Perícia Adicional</th>
+            <th>Poder Adicional</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let objeto of objetos">
+            <td>{{ objeto.nome }}</td>
+            <td>{{ objeto.local }}</td>
+            <td title="objeto.funcionamento">{{ objeto.pericia }}</td>
+            <td>{{ objeto.poderes[0] }} ou {{ objeto.poderes[1] }}</td>
+            <td><input /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </mat-card>
+</form>
