@@ -750,6 +750,29 @@ export class DeusData {
           'Nobres',
         ],
       },
+      {
+        id: 27,
+        nome: 'A Espada-Deus',
+        tipo: 'Menor',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        paginas: '5',
+        armaPreferida: 'Espada longa.',
+        aceitaPaladinos: false,
+        descricao: `
+        <p>A Espada-Deus é a obra-prima de Rhond (ele próprio o Deus das Armas), uma arma lendária que transcende seus portadores. Já esteve nas mãos de guerreiros valentes, heróis gloriosos, assassinos astutos e santos devotos, mas os nomes desses mortais se perderam no tempo — pois a espada é maior que qualquer um deles. Sempre que cumpria eu propósito, acabava esquecida em locais remotos, esperando por um novo destino. Podia estar presa em algum lugar de onde só seria tirada por um mortal digno. Ou no fundo de um lago, sendo entregue por uma náiade, ou cravada em uma pedra, selecionando quem pode arrancá-la.</p>
+        <p>Além de guerreiros de uma aldeia no antigo Reino de Yudennach, a Espada-Deus tem poucos devotos em estruturas organizadas, sendo adorada mais comumente por clérigos nômades que migram de batalha em batalha. A Espada-Deus não rege um portfólio definido. Em vez disso, ela apenas é adorada, apenas é a ferramenta, a instigadora e a protagonista em inúmeras histórias de batalha e heroísmo. A última dessas foi a batalha em que Orion Drake liderou um  exército de deuses menores para derrotar Crânio Negro e expulsar a Tormenta de Tamu-ra, conquistando a primeira vitória de Arton contra os lefeu. Até onde se sabe, a Espada-Deus ainda se encontra de posse do cavaleiro, mas a qualquer momento ela pode ser “perdida”, para que seja encontrada por um novo campeão valoroso.</p>
+        <p><b>Crenças e Objetivos.</b> Estar pronto para cortar, perfurar e matar. Defender-se, defender aqueles que se ama, defender sua honra e orgulho. Estar sempre pronto para empunhar uma espada — e usá-la. Realizar grandes feitos. Provar-se digno.</p>
+        <p><b>Símbolo Sagrado.</b>  Uma espada.</p>
+        <p><b>Canalizar Energia.</b> Qualquer.</p>
+        <p><b>Arma Preferida.</b> Espada longa.</p>
+        <p><b>Devotos.</b> Anões, elfos, minotauros, bárbaros, caçadores, cavaleiros, guerreiros.</p>
+        <p><b>Obrigações & Restrições.</b> As únicas armas empunhadas que o devoto da Espada-Deus pode usar são espadas. Além disso, para atacar com outras armas (como naturais), ele deve fazer ao menos um ataque com espada na rodada.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Anões', 'Elfos', 'Minotauros', 'Bárbaros', 'Caçadores', 'Cavaleiros', 'Guerreiros'],
+      },
     ];
   }
 }

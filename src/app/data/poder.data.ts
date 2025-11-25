@@ -18151,6 +18151,16 @@ export class PoderData {
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
         id_deuses: [26],
+      },
+      {
+        id: 1739,
+        nome: 'Espadachim Divino',
+        descricao: `
+        <p>Você recebe +1 nas rolagens de dano e no multiplicador de crítico com espadas e, para você, todas as espadas marciais são armas simples.</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [27],
       }
     );
   }
