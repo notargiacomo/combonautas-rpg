@@ -1771,7 +1771,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um duelista começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b>   Luta (For) ou Pontaria (Des), Reflexos (Des), mais 2 a sua escolha entre Acrobacia (Des), Atletismo (For), Atuação (Car), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Intimidação (Car), Luta (For), Ofício (Int), Percepção (Sab), Pilotagem (Des) e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais.</p>`,
+        <p><b>Proficiências.</b> Armas marciais.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Duelo +2, insolência</td></tr>
+    <tr><td>2º</td><td>Escola de duelo, poder de bucaneiro</td></tr>
+    <tr><td>3º</td><td>Esquiva sagaz +1, poder de bucaneiro</td></tr>
+    <tr><td>4º</td><td>Poder de bucaneiro, truques de capa</td></tr>
+    <tr><td>5º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>6º</td><td>Duelo +3, poder de bucaneiro</td></tr>
+    <tr><td>7º</td><td>Esquiva sagaz +2, poder de bucaneiro</td></tr>
+    <tr><td>8º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>9º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>10º</td><td>Poder de bucaneiro, técnica avançada</td></tr>
+    <tr><td>11º</td><td>Duelo +4, esquiva sagaz +3, poder de bucaneiro</td></tr>
+    <tr><td>12º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>13º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>14º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>15º</td><td>Esquiva sagaz +4, poder de bucaneiro</td></tr>
+    <tr><td>16º</td><td>Duelo +5, poder de bucaneiro</td></tr>
+    <tr><td>17º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>18º</td><td>Poder de bucaneiro</td></tr>
+    <tr><td>19º</td><td>Esquiva sagaz +5, poder de bucaneiro</td></tr>
+    <tr><td>20º</td><td>Duelista lendário, poder de bucaneiro</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -1997,7 +2031,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um ermitão começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b> Sobrevivência (Sab) e Vontade (Sab), mais 2 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Conhecimento (Int), Cura (Sab), Fortitude (Con), Iniciativa (Des), Intuição (Sab), Luta (For), Misticismo (Int), Ofício (Int), Percepção (Sab) e Religião (Sab).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Devoto fiel, empatia selvagem, magias (1º círculo)</td></tr>
+    <tr><td>2º</td><td>Poder de druida</td></tr>
+    <tr><td>3º</td><td>Poder de druida, sítio sagrado</td></tr>
+    <tr><td>4º</td><td>Poder de druida</td></tr>
+    <tr><td>5º</td><td>Poder de druida, vínculo com a terra</td></tr>
+    <tr><td>6º</td><td>Magias (2º círculo), poder de druida</td></tr>
+    <tr><td>7º</td><td>Poder de druida</td></tr>
+    <tr><td>8º</td><td>Poder de druida</td></tr>
+    <tr><td>9º</td><td>Poder de druida</td></tr>
+    <tr><td>10º</td><td>Magias (3º círculo), poder de druida</td></tr>
+    <tr><td>11º</td><td>Poder de druida, temperado pelo clima</td></tr>
+    <tr><td>12º</td><td>Poder de druida</td></tr>
+    <tr><td>13º</td><td>Poder de druida</td></tr>
+    <tr><td>14º</td><td>Magias (4º círculo), poder de druida</td></tr>
+    <tr><td>15º</td><td>Poder de druida</td></tr>
+    <tr><td>16º</td><td>Poder de druida</td></tr>
+    <tr><td>17º</td><td>Poder de druida</td></tr>
+    <tr><td>18º</td><td>Poder de druida</td></tr>
+    <tr><td>19º</td><td>Poder de druida</td></tr>
+    <tr><td>20º</td><td>Eixo de pedras, poder de druida</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2140,7 +2208,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um alquimista começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>.  Ofício Alquimista (Int) e Vontade (Sab), mais 4 a sua escolha entre Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Investigação  (Int),  Luta  (For),  Misticismo  (Int), Ofício  (Int),  Pilotagem  (Des),  Percepção  (Sab)  e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Engenhosidade, laboratório pessoal</td></tr>
+    <tr><td>2º</td><td>Alquimista iniciado, poder de inventor</td></tr>
+    <tr><td>3º</td><td>Mistura básica, poder de inventor</td></tr>
+    <tr><td>4º</td><td>Poder de inventor</td></tr>
+    <tr><td>5º</td><td>Aplicação rápida, poder de inventor</td></tr>
+    <tr><td>6º</td><td>Poder de inventor</td></tr>
+    <tr><td>7º</td><td>Magia engarrafada, poder de inventor</td></tr>
+    <tr><td>8º</td><td>Odores alquímicos, poder de inventor</td></tr>
+    <tr><td>9º</td><td>Fabricar emulsão (1 encanto), poder de inventor</td></tr>
+    <tr><td>10º</td><td>Mestre alquimista, poder de inventor</td></tr>
+    <tr><td>11º</td><td>Bombardeio eficiente, poder de inventor</td></tr>
+    <tr><td>12º</td><td>Poder de inventor</td></tr>
+    <tr><td>13º</td><td>Fabricar emulsão (2 encantos), poder de inventor</td></tr>
+    <tr><td>14º</td><td>Poder de inventor</td></tr>
+    <tr><td>15º</td><td>Poder de inventor</td></tr>
+    <tr><td>16º</td><td>Poder de inventor</td></tr>
+    <tr><td>17º</td><td>Fabricar emulsão (3 encantos), poder de inventor</td></tr>
+    <tr><td>18º</td><td>Poder de inventor</td></tr>
+    <tr><td>19º</td><td>Poder de inventor</td></tr>
+    <tr><td>20º</td><td>Pedra filosofal, poder de inventor</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2253,7 +2355,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um atleta começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b> Atletismo (For) e Luta (For), mais 4 a sua escolha entre Acrobacia (Des), Adestramento (Car), Cavalgar (Des), Cura (Sab), Fortitude (Con), Iniciativa (Des), Intimidação (Car), Ofício (Int), Percepção (Sab), Pilotagem (Des), Pontaria (Des) e Reflexos (Des).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Briga (1d6), façanha atlética</td></tr>
+    <tr><td>2º</td><td>Arremesso atlético, poder de lutador, poderio muscular</td></tr>
+    <tr><td>3º</td><td>Casca grossa (Con), poder de lutador</td></tr>
+    <tr><td>4º</td><td>Poder de lutador</td></tr>
+    <tr><td>5º</td><td>Briga (1d8), mais alto e mais rápido, poder de lutador</td></tr>
+    <tr><td>6º</td><td>Poder de lutador</td></tr>
+    <tr><td>7º</td><td>Casca grossa (Con +1), poder de lutador</td></tr>
+    <tr><td>8º</td><td>Poder de lutador</td></tr>
+    <tr><td>9º</td><td>Briga (1d10), disciplina atlética, poder de lutador</td></tr>
+    <tr><td>10º</td><td>Poder de lutador</td></tr>
+    <tr><td>11º</td><td>Casca grossa (Con +2), poder de lutador</td></tr>
+    <tr><td>12º</td><td>Poder de lutador</td></tr>
+    <tr><td>13º</td><td>Briga (2d6), poder de lutador</td></tr>
+    <tr><td>14º</td><td>Poder de lutador</td></tr>
+    <tr><td>15º</td><td>Casca grossa (Con +3), poder de lutador</td></tr>
+    <tr><td>16º</td><td>Poder de lutador</td></tr>
+    <tr><td>17º</td><td>Briga (2d8), poder de lutador</td></tr>
+    <tr><td>18º</td><td>Poder de lutador</td></tr>
+    <tr><td>19º</td><td>Casca grossa (Con +4), poder de lutador</td></tr>
+    <tr><td>20º</td><td>Corpo ideal (2d10), poder de lutador</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2301,7 +2437,41 @@ export class ClasseData {
         <p><b>Pontos de Mana.</b>  4 PM por nível.</p>
         <p><b>Perícias.</b>  Diplomacia (Car) e Vontade (Sab), mais 6 a sua escolha entre Adestramento (Car), Atuação (Car), Cavalgar
         (Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pontaria (Des).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Meios de produção, orgulho, poder monetário</td></tr>
+    <tr><td>2º</td><td>Desmoralizar –1, poder de nobre</td></tr>
+    <tr><td>3º</td><td>Negociante nato, poder de nobre</td></tr>
+    <tr><td>4º</td><td>Poder de nobre, suborno</td></tr>
+    <tr><td>5º</td><td>Ostentação, poder de nobre</td></tr>
+    <tr><td>6º</td><td>Desmoralizar –2, poder de nobre</td></tr>
+    <tr><td>7º</td><td>Poder de nobre</td></tr>
+    <tr><td>8º</td><td>Poder de nobre</td></tr>
+    <tr><td>9º</td><td>Novo rico, poder de nobre</td></tr>
+    <tr><td>10º</td><td>Desmoralizar –3, poder de nobre</td></tr>
+    <tr><td>11º</td><td>Poder de nobre</td></tr>
+    <tr><td>12º</td><td>Poder de nobre</td></tr>
+    <tr><td>13º</td><td>Poder de nobre</td></tr>
+    <tr><td>14º</td><td>Desmoralizar –4, poder de nobre</td></tr>
+    <tr><td>15º</td><td>Poder de nobre</td></tr>
+    <tr><td>16º</td><td>Poder de nobre</td></tr>
+    <tr><td>17º</td><td>Poder de nobre</td></tr>
+    <tr><td>18º</td><td>Desmoralizar –5, poder de nobre</td></tr>
+    <tr><td>19º</td><td>Poder de nobre</td></tr>
+    <tr><td>20º</td><td>Magnata</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
