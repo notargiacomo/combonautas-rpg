@@ -922,6 +922,71 @@ export class DeusData {
         canalizaEnergia: 'Qualquer',
         devotos: ['Dahllan', 'Hobgoblins', 'Kobolds', 'Sílfides', 'Trogs', 'Bárbaros', 'Caçadores', 'Druidas'],
       },
+      {
+        id: 32,
+        nome: 'Artaphan',
+        tipo: 'Menor',
+        dominios: ['Amizade'],
+        natureza: 'Conceito Vivo',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_artaphan.png',
+        paginas: '8 e 9',
+        armaPreferida: 'Funda.',
+        aceitaPaladinos: true,
+        descricao: `
+        <p>Artaphan talvez seja único entre os deuses menores de Arton. Enquanto pessoas e até mesmo objetos foram elevados à divindade durante o período em que o Panteão estava incompleto, Artaphan foi criado a partir do nada.</p>
+        <p>Darien, um trambiqueiro (antes bandoleiro, depois Cavaleiro do Corvo e depois o infame Cavaleiro Risonho), inventou-o para ludibriar os cidadãos de Roschfallen e impedir que cultuassem a Tormenta ou deuses malignos. De fato, o próprio nome do deus é um anagrama de “patranha” — um sinônimo de mentira. O resultado foi um deus pequeno, esquálido, fraco… mas ainda assim um deus. Artaphan não era nada antes de se tornar divino. Nasceu capaz de falar, compreender e abençoar o mundo, imortal, formado de crença pura. Tem consciência de que Darien o inventou e sente gratidão, mas não é um servo dele.</p>
+        <p>Tudo indica que, pelo menos durante o início de sua vida, Artaphan seja extremamente maleável, afetado pela crença de seus devotos. Assim, caso o consenso geral diga que ele é um deus masculino, assumirá essa forma. Se o povo decidir que é feminino, assim será. Humanoide, animal, objeto... Artaphan é argila espiritual nas mãos de seus fiéis. Nasceu na antiga União Púrpura, fruto das lembranças de Darien a respeito de suas amizades da juventude. Por isso, Artaphan é fortemente associado à amizade juvenil e inconsequente.</p>
+        <p><b>Crenças e Objetivos.</b> Reverenciar Artaphan e a amizade. Espalhar a amizade. Ajudar os outros. Aproveitar a vida em comunidade ou com um grupo seleto.</p>
+        <p><b>Símbolo Sagrado.</b> Um par de mãos dadas.</p>
+        <p><b>Canalizar Energia.</b> Positiva.</p>
+        <p><b>Arma Preferida.</b> Funda.</p>
+        <p><b>Devotos.</b> Gnolls, goblins, hynne, qareen, sílfides, bardos, cavaleiros, nobres, treinadores, paladino.</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Artaphan devem espalhar a amizade. Uma vez por dia (ou por sessão de jogo, o que demorar mais), o devoto deve aproximar pessoas. Ele pode convencer alguém a ajudar outrem, passar um recado com uma mensagem positiva, colocar duas pessoas para beber juntas… Em termos de jogo, uma ação exigindo um teste de Diplomacia com CD mínima 15 + metade do seu nível.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Gnolls',
+          'Goblins',
+          'Hynnes',
+          'Qareen',
+          'Sílfides, Bardos',
+          'Cavaleiros',
+          'Nobres',
+          'Treinadores',
+          'Paladinos',
+        ],
+      },
+      {
+        id: 33,
+        nome: 'Ayllana',
+        tipo: 'Menor',
+        dominios: ['Sereias'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        // imagem: 'assets/img/deus_artaphan.png',
+        paginas: '9',
+        armaPreferida: 'Não há. Devotos desta deusa não podem usar a magia Arma Espiritual e similares.',
+        aceitaPaladinos: false,
+        descricao: `
+        <p>Nas profundezas cintilantes dos recifes, Ayllana destacou-se desde a infância por sua conexão com as forças arcanas do oceano. Superando os demais membros de sua raça, dominava os feitiços que controlavam as marés e invocavam feras dos abismos marinhos, transformando campos de batalha em tempestades místicas. Durante a eterna guerra das sereias e dos tritões contra os elfos-do-mar, sua habilidade mágica foi decisiva em numerosas batalhas. Em um confronto memorável, Ayllana enfrentou Tessalus, o feroz guerreiro dos elfos-do-mar — que acreditava que a força bruta superava qualquer encantamento.</p>
+        <p>Naquele dia, os dois colidiram em duelo mortal: o tridente mágico de Tessalus contra as invocações arcanas de Ayllana. Mesmo com a fúria do adversário, a feiticeira reverteu o ataque com feitiços potentes, selando uma vitória que marcou a história do conflito. Esse embate não apenas fortaleceu sua reputação, como também alimentou uma rivalidade que perduraria. Após o feito heroico, Ayllana foi elevada à posição divina. Seu culto é conduzido por feiticeiras-sacerdotisas, celebrando sua mente arguta e dons arcanistas — exercido não apenas sob as ondas de Arton, mas também no próprio Reino do Oceano. Devotas da Deusa das Sereias acreditam que seus encantamentos as fortalecem, renovando sua meta de governar os mares com magia e colocar os elfos em merecida submissão.</p>
+        <p><b>Crenças e Objetivos.</b> Proteger as sereias e sua soberania. Enaltecer a magia arcana. Dominar os oceanos. Derrotar os elfos-do-mar.</p>
+        <p><b>Símbolo Sagrado.</b> Um Uma barbatana dorsal multicolorida.</p>
+        <p><b>Canalizar Energia.</b> Positiva.</p>
+        <p><b>Arma Preferida.</b> Funda.</p>
+        <p><b>Devotos.</b> Qareen, sereias/tritões, arcanistas, bardos, bucaneiros.</p>
+        <p><b>Obrigações & Restrições.</b>  Devotos de Ayllana são proibidos de matar sereias e tritões, recusar-se a ajudar sereias e tritões inocentes, e recusar missões para resgatar ou proteger sereias/tritões e sua cultura.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: ['Qareen', 'Sereias/tritões', 'Arcanistas', 'Qareen', 'Bardos', 'Bucaneiros'],
+      },
     ];
   }
 }

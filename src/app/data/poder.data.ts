@@ -18201,6 +18201,26 @@ export class PoderData {
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
         id_deuses: [31],
+      },
+      {
+        id: 1744,
+        nome: 'Poder da Amizade',
+        descricao: `
+        <p>Escolha um personagem para ser seu amigo de fé. Se estiver em alcance médio dele e vocês puderem pelo menos trocar olhares, você recebe +2 em todos os testes de perícia e o custo de suas habilidades que tenham ele como alvo diminui em –1 PM (cumulativo com outras reduções). Entretanto, se ele morrer, seus pontos de mana máximos diminuem em 1 por nível até o fim da aventura. Se perder seu amigo de fé, você pode escolher outro entre os demais personagens no início da próxima aventura.</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [32],
+      },
+      {
+        id: 1745,
+        nome: 'Canção dos Mares',
+        descricao: `
+        <p>Você adquire a habilidade Canção dos Mares das sereias/tritões (Tormenta20, p. 30). Se já tiver essa habilidade, você pode escolher outras magia da lista da habilidade, ou as mesmas para diminuir seu custo. ✨</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [33],
       }
     );
   }
