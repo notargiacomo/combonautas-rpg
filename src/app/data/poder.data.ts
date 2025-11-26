@@ -18161,6 +18161,36 @@ export class PoderData {
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
         id_deuses: [27],
+      },
+      {
+        id: 1740,
+        nome: 'Espírito da Alcateia',
+        descricao: `
+        <p>Você pode se comunicar livremente com todos os tipos de cães e lobos, como se estivesse sob efeito da magia Voz Divina. Além disso, quando ataca um inimigo que você esteja flanqueando, você recebe +2 na rolagem de dano. ✨</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [28],
+      },
+      {
+        id: 1741,
+        nome: 'Liberdade das Montanhas',
+        descricao: `
+        <p>Quando faz um teste de Atletismo para escalar, você rola dois dados e usa o melhor resultado. Além disso, se você estiver em terreno elevado, recebe +2 em testes de perícia contra criaturas em terreno inferior.</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [29],
+      },
+      {
+        id: 1742,
+        nome: 'Inspiração Concedida',
+        descricao: `
+        <p>Você pode gastar 2 PM para evocar o poder da criatividade. Até o fim da cena, sempre que fizer um teste de perícia, você recebe um bônus cumulativo de +1 nesse teste (ou seja, +1 no primeiro teste, +2 no segundo teste, +3 no terceiro e assim por diante). Esse bônus dura até o fim da cena ou até você fazer um teste de uma perícia que já tenha usado nesta cena.</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [30],
       }
     );
   }

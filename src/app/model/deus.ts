@@ -1,9 +1,11 @@
-import { Poder } from "./poder";
+import { Poder } from './poder';
 
 export interface Deus {
-
   id: number;
   nome?: string;
+  dominios?: string[];
+  natureza?: string;
+  status?: string;
   nome_arquivo_descricao?: string;
   nome_arquivo_poderes?: string;
   nome_arquivo_avatar?: string;
@@ -23,5 +25,4 @@ export interface Deus {
   devotos?: string[];
   referencias?: string;
   paginas?: string;
-
 }

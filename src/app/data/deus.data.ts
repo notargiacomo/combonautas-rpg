@@ -627,6 +627,9 @@ export class DeusData {
         id: 24,
         nome: 'Gwendolynn, a Deusa da Liberdade',
         tipo: 'Menor',
+        dominios: ['Liberdade'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
         imagem: 'assets/img/deus_gwendolynn.png',
         referencias: Referencia.DEUSES,
         paginas: '231',
@@ -672,6 +675,9 @@ export class DeusData {
         id: 25,
         nome: 'Mauziell, a Deusa das Avós',
         tipo: 'Menor',
+        dominios: ['Avós'],
+        natureza: 'Entidade Primordial',
+        status: '4',
         imagem: 'assets/img/deus_mauziell.png',
         referencias: Referencia.DEUSES,
         paginas: '231 e 232',
@@ -713,6 +719,9 @@ export class DeusData {
         id: 26,
         nome: 'Tibar, o Deus do Comércio',
         tipo: 'Menor',
+        dominios: ['Comércio'],
+        natureza: 'Mortal Ascendido',
+        status: '5',
         imagem: 'assets/img/deus_tibar.png',
         referencias: Referencia.DEUSES,
         paginas: '233',
@@ -754,6 +763,9 @@ export class DeusData {
         id: 27,
         nome: 'A Espada-Deus',
         tipo: 'Menor',
+        dominios: [''],
+        natureza: 'Objeto Desperto',
+        status: '1',
         referencias: Referencia.GUIA_DEUSES_MENORES,
         paginas: '5',
         armaPreferida: 'Espada longa.',
@@ -772,6 +784,115 @@ export class DeusData {
         fundamentalista_druida: '',
         canalizaEnergia: 'Qualquer',
         devotos: ['Anões', 'Elfos', 'Minotauros', 'Bárbaros', 'Caçadores', 'Cavaleiros', 'Guerreiros'],
+      },
+      {
+        id: 28,
+        nome: 'Akok',
+        tipo: 'Menor',
+        dominios: ['Lobos'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_akok.png',
+        paginas: '5 e 6',
+        armaPreferida: 'Espada curta.',
+        aceitaPaladinos: false,
+        descricao: `
+        <p>Um enorme lobo com dentes que se projetam fora da mandíbula, Akok é o Deus dos Lobos, mas também governa certas raças de cães, principalmente de guerra, de guarda e de caça. É cultuado por goblinoides e outros humanoides que usam lobos como montaria, mas também por soldados responsáveis por bandos de cães de guerra, caçadores que só contam com seus cães ou lobos como companheiros e até mesmo por humanoides criados nos ermos por lobos. Devotos de Akok, entretanto, não são meros ginetes ou “donos”: são parte da alcateia e veem os lobos como seus irmãos peludos. São abençoados com instintos para lutar e agir em bando como lobos.</p>
+        <p>Sendo um deus animalesco, Akok nunca revelou sua origem (não tendo capacidade ou interesse para isso). Também não existem registros de quando teria ascendido. No entanto, uma lenda afirma que Akok foi o primeiro lobo a se aproximar de uma comunidade humanoide — talvez pressentindo que um dia poderia haver cooperação entre essas espécies, talvez apenas ferido e precisando de ajuda. Segundo essa história, teria sido esse gesto que deu origem à domesticação de lobos que levou à existência dos cães.</p>
+        <p><b>Crenças e Objetivos.</b> Reverenciar Akok como o único grande alfa. Trabalhar em equipe. Proteger alcateias. Promover harmonia entre matilhas e a civilização. Combater ameaças que perturbam o equilíbrio natural.</p>
+        <p><b>Símbolo Sagrado.</b>  Uma grande pata de lobo rodeada por patas menores..</p>
+        <p><b>Canalizar Energia.</b> Positiva.</p>
+        <p><b>Arma Preferida.</b> Espada curta.</p>
+        <p><b>Devotos.</b> Centauros, dahllan, elfos, gnolls, goblins, kobolds, bárbaros, caçadores, druidas, guerreiros, ladinos, lutadores, treinadores.</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Akok não podem aprisionar ou matar lobos de qualquer tipo (como lobos-das-cavernas), nem permitir que outros o façam. Além disso, o grupo ao qual o devoto pertence (família, aventureiros, guilda…) é considerado sua alcateia. Ele não pode enganá-la, traí-la ou abandoná-la.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Centauros',
+          'Dahllan',
+          'Elfos',
+          'Gnolls',
+          'Goblins',
+          'Kobolds',
+          'Bárbaros',
+          'Caçadores',
+          'Druidas',
+          'Guerreiros',
+          'Ladinos',
+          'Lutadores',
+          'Treinadores',
+        ],
+      },
+      {
+        id: 29,
+        nome: 'Altair',
+        tipo: 'Menor',
+        dominios: ['Montanhas'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        // imagem: 'assets/img/deus_akok.png',
+        paginas: '6 e 7',
+        armaPreferida: 'Machado de guerra.',
+        aceitaPaladinos: false,
+        descricao: `
+        <p>Este deus bárbaro era um homem alto, forte e musculoso. Usava apenas uma tanga, exibia o corpo cheio de cicatrizes e a cabeleira escura que parecia a juba de uma fera. Padroeiro dos que desafiam o mundo selvagem, escalou e venceu desafios nas maiores montanhas de Arton, além de ser associado à caça e à sobrevivência.</p>
+        <p>Embora seja o Deus Menor das Montanhas, Altair é mais do que isso: é o padroeiro do modo de vida das montanhas, da resiliência necessária para sobreviver e prosperar nesse tipo de ambiente, dos povos que nunca se dobraram à necessidade de erguer cidades em terrenos planos, mas mantiveram seus costumes ancestrais. Para muitos, as montanhas são território de monstros ou algo a ser “vencido” em uma escalada. Para os devotos de Altair, as montanhas são um lar desafiador, que acolhe seus habitantes ao mesmo tempo em que exige muito deles.</p>
+        <p>A ascensão de Altair já se perdeu no tempo. Ele surge como um herói folclórico em vários povos montanheses, desde as Lannestul até as Uivantes, e inclusive em algumas aldeias das Sanguinárias. Contudo, é consenso que não se trata de uma entidade, mas de um humano que ascendeu. Em todos os relatos, Altair aparece interagindo com a população, espreitando com bandos de caçadores e conversando com chefes. Mesmo entre seus devotos, parece ser uma pessoa quase comum. Existem inclusive histórias em que Altair obedece às ordens de um devoto, sendo mais um guerreiro em seu grupo!</p>
+        <p>Altair foi encontrado pela última vez nas Montanhas Lannestul, quando Orion Drake reuniu seu Exército de Deuses. Contudo, seu machado enorme foi usado pela última vez defendendo Betsumial, o Deus dos Vigias, quando então um vulcão surgiu sob seus pés e a horda lefeu conseguiu sobrepujá-lo na Batalha de Tamu-ra, em 1405.</p>
+        <p><b>Crenças e Objetivos.</b>  Reverenciar Altair e as cadeias montanhosas de Arton. Desafiar as montanhas e seus perigos. Proteger as montanhas. Nunca recuar perante as dificuldades da natureza.</p>
+        <p><b>Símbolo Sagrado.</b> Uma montanha com um machado cravado.</p>
+        <p><b>Canalizar Energia.</b> Qualquer.</p>
+        <p><b>Arma Preferida.</b> Machado de guerra.</p>
+        <p><b>Devotos.</b> Anões, minotauros, naidoras, trogs, bárbaros, caçadores, druidas, guerreiros, lutadores.</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Altair nunca podem recusar uma missão que envolva escalar ou desbravar uma montanha. Além disso, a cada 1d4+2 meses o devoto deve escalar a maior montanha da região onde está e passar um dia meditando em seu cume, para se reconectar com a natureza e com sua divindade.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Anões',
+          'Minotauros',
+          'Naidoras',
+          'Trogs',
+          'Bárbaros',
+          'Caçadores',
+          'Druidas',
+          'Guerreiros',
+          'Lutadores',
+        ],
+      },
+      {
+        id: 30,
+        nome: 'Anilatir',
+        tipo: 'Menor',
+        dominios: ['Inspiração'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_anilatir.png',
+        paginas: '7',
+        armaPreferida: 'Adaga, espada, arco longo… — muda na mesma frequência que seu símbolo sagrado.',
+        aceitaPaladinos: true,
+        descricao: `
+        <p>Anilatir, quando ainda era uma jovem mortal, trancou-se numa torre para que fosse resgatada por heróis. Ela mesma inventou uma série de perigos e desafios para seus salvadores e prometeu se casar com quem a libertasse. Muitos o fizeram, e ela viveu feliz para sempre por algumas semanas com cada um, até que se trancava de novo num lugar ainda mais inóspito, com mais perigos, para instigar heróis mais valorosos.</p>
+        <p>Quando enfim, depois de alguns anos, cansou-se do jogo, foi ela mesma uma aventureira, tendo sido clériga de Khalmyr, Thyatis, Lena, Nimb e Oceano. Após ter roubado uma fortuna de um dragão, decidiu entregá-la ao bardo que compusesse a melhor balada. Escolheu crianças que julgava terem potencial e arranjou para que suas famílias fossem chacinadas, impulsionando-as assim ao caminho de aventuras. Depois decidiu ser vilã, maquinando planos ilógicos de dominação e destruição para que heróis se levantassem para detê-la. Enfim, após essas e muitas outras peripécias, acabou ascendendo a Deusa da Inspiração, musa de bardos e centro de um minúsculo mas imaginativo culto.</p>
+        <p>A história de Anilatir é tão curiosa quanto improvável. Segundo esses relatos, ela parecia agir como uma divindade, decidida a inspirar mortais e sem qualquer preocupação com a própria segurança, mesmo muito jovem. Talvez isso seja sinal de que tais histórias não passam de mentiras. Ou talvez Anilatir tenha inspirado alguém (talvez seu paladino, o indefectível Tex Scorpion Mako) a desenvolver alguma técnica mágica que direcionasse sua própria inspiração a ela mesma, desafiando as barreiras do tempo. Impossível? Dizem que alguns clérigos de Anilatir já se interessaram pelo conceito do Akzath de Thwor…</p>
+        <p>Os clérigos de Anilatir se organizam (de forma bastante solta) em uma conspiração pela liberdade de Arton, eternamente combatendo a conspiração inimiga perpetrada pelos clérigos de Yasshara, a Deusa da Opressão, que desejam enclausurar o mundo em parâmetros rígidos e ordenados. Além disso, vivem aventuras, dançam, criam novas filosofias, entregam-se a todas as formas de expressão artística, traem o culto, arrependem-se, sagram-se cavaleiros, entram em guildas de ladrões… Fazem tudo que for diferente e inesperado. Serão seus melhores amigos, por pelo menos uma noite na taverna, desde que você aguente.</p>
+        <p><b>Crenças e Objetivos.</b> Reverenciar Anilatir com intensidade. Criar coisas novas. Estudar coisas novas. Tornar-se algo novo. Reinventar-se de tempos em tempos. Evoluir sempre e inspirar outros a fazer o mesmo.</p>
+        <p><b>Símbolo Sagrado.</b> Um escorpião, uma máscara, uma estrela, um pincel… — seu símbolo muda a cada 2d10+10 dias, mas seus devotos estão sempre cientes da mudança.</p>
+        <p><b>Canalizar Energia.</b> Qualquer.</p>
+        <p><b>Arma Preferida.</b> Adaga, espada, arco longo… — muda na mesma frequência que seu símbolo sagrado.</p>
+        <p><b>Devotos.</b> Quaisquer. Anilatir não rejeita ninguém que queira criar ou ser algo novo.</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Anilatir devem trocar pelo menos um item vestido ou empunhado por outro que ainda não tenham usado a cada 2d10+10 dias. (Para este efeito, versões aprimoradas ou encantadas de itens contam como itens diferentes.) Além disso, deve estar sempre atento às tramas de Yasshara, a Deusa Menor da Opressão, inimiga mortal de Anilatir.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Qualquer'],
       },
     ];
   }
