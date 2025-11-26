@@ -18191,6 +18191,16 @@ export class PoderData {
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
         id_deuses: [30],
+      },
+      {
+        id: 1743,
+        nome: 'Chamado da Colmeia',
+        descricao: `
+        <p>Você pode gastar 1 PM e uma ação padrão para invocar um enxame de abelhas Grande com duração sustentada, que surge em um espaço a sua escolha em alcance médio. O enxame pode passar pelo espaço de outras criaturas e não impede que outras criaturas entrem no espaço dele. No final de seus turnos, o enxame causa 2d6 pontos de dano de perfuração a qualquer criatura em seu espaço (Reflexos CD Sab reduz à metade). Você pode gastar uma ação de movimento para mover o enxame 12m. A cada patamar além de iniciante, você pode gastar +1 PM quando invoca o enxame para aumentar seu dano em +2d6. ✨</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [31],
       }
     );
   }

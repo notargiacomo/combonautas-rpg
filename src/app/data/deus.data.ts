@@ -894,6 +894,34 @@ export class DeusData {
         canalizaEnergia: 'Qualquer',
         devotos: ['Qualquer'],
       },
+      {
+        id: 31,
+        nome: 'Apis',
+        tipo: 'Menor',
+        dominios: ['Abelhas'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        // imagem: 'assets/img/deus_anilatir.png',
+        paginas: '8',
+        armaPreferida: 'Lança.',
+        aceitaPaladinos: false,
+        descricao: `
+        <p>Também conhecida como Abelha-Imperatriz, Apis é a rainha de todas as abelhas de Arton. Ela vive em Tzeh’collmah, uma gigantesca colmeia no coração das Montanhas Lannestul, com milhares de abelhas gigantes como suas operárias. Alguns bárbaros das Lannestul aprenderam a temer e venerar Apis ao longo das eras. Nas redondezas, vários druidas, da mesma forma que os insetos gigantes, são considerados abelhas operárias ou campeiras, responsáveis pela proteção da colmeia e coleta de recursos, como néctar, pólen, resina e água.</p>
+        <p>Alguns sábios fazem uma relação curiosa: Apis habita as Lannestul, onde também ficava a antiga nação de Ked’Rach, dos gigantes. Sabe-se que os gigantes escravizaram os minotauros durante muitos séculos, e que os minotauros só conseguiram se libertar usando trabalho em equipe e organização meticulosa. Segundo esses sábios, Goratikis, o líder minotauro responsável por unir seu povo, teria se inspirado em Apis, após encontrar por acaso Tzeh’collmah e observar a organização e união metódica das abelhas. Caso haja alguma verdade nisso, esta deusa, mesmo pouco conhecida, teria tido um impacto decisivo na história de Arton.</p>
+        <p>De fato, algumas pessoas acreditam que peregrinar a Tzeh’collmah e vislumbrar Apis, talvez trazendo mel de volta, seja um rito que garanta o sucesso na formação de qualquer ordem, guilda, companhia mercenária ou organização com hierarquia rígida. Além de garantir que o peregrino nunca mais seja picado por abelhas…</p>
+        <p><b>Crenças e Objetivos.</b>  Reverenciar Apis e as abelhas. Proteger a colmeia e o futuro das abelhas. Promover harmonia entre as abelhas e a civilização, e combater ameaças a essa harmonia.</p>
+        <p><b>Símbolo Sagrado.</b> Uma abelha em um hexágono imitando um favo de mel.</p>
+        <p><b>Canalizar Energia.</b> Qualquer.</p>
+        <p><b>Arma Preferida.</b> Lança.</p>
+        <p><b>Devotos.</b> Dahllan, hobgoblins, kobolds, sílfides, trogs, bárbaros, caçadores, druidas.</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Apis não podem aprisionar ou matar abelhas de qualquer tipo (como abelhas monstruosas), nem permitir que outros o façam. Além disso, devem consumir T$ 1 por nível em mel todos os dias.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Dahllan', 'Hobgoblins', 'Kobolds', 'Sílfides', 'Trogs', 'Bárbaros', 'Caçadores', 'Druidas'],
+      },
     ];
   }
 }
