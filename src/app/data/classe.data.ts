@@ -1537,7 +1537,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um arcanista começa com 8 pontos de vida (+ Constituição) e ganha 2 PV (+ Constituição) por nível.</p>
         <p><b>Pontos de Mana.</b> 6 PM por nível.</p>
         <p><b>Perícias.</b> Misticismo (Int) e Vontade (Sab), mais 2 a sua escolha entre Conhecimento (Int), Cura (Sab), Diplomacia (Car), Enganação (Car), Fortitude(Con), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Nobreza (Int), Ofício (Int) e Percepção (Sab).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Caminho do necromante, falar com mortos, magias (1º círculo)</td></tr>
+    <tr><td>2º</td><td>Animar cadáver, poder de arcanista</td></tr>
+    <tr><td>3º</td><td>Necrologia +2, poder de arcanista</td></tr>
+    <tr><td>4º</td><td>Distorção necrótica, poder de arcanista</td></tr>
+    <tr><td>5º</td><td>Magias (2º círculo), necropotência, poder de arcanista</td></tr>
+    <tr><td>6º</td><td>Poder de arcanista</td></tr>
+    <tr><td>7º</td><td>Poder de arcanista</td></tr>
+    <tr><td>8º</td><td>Necrologia +3, poder de arcanista</td></tr>
+    <tr><td>9º</td><td>Magias (3º círculo), poder de arcanista</td></tr>
+    <tr><td>10º</td><td>Poder de arcanista</td></tr>
+    <tr><td>11º</td><td>Poder de arcanista</td></tr>
+    <tr><td>12º</td><td>Poder de arcanista</td></tr>
+    <tr><td>13º</td><td>Magias (4º círculo), necrologia +4, poder de arcanista</td></tr>
+    <tr><td>14º</td><td>Poder de arcanista</td></tr>
+    <tr><td>15º</td><td>Poder de arcanista</td></tr>
+    <tr><td>16º</td><td>Poder de arcanista</td></tr>
+    <tr><td>17º</td><td>Magias (5º círculo), poder de arcanista</td></tr>
+    <tr><td>18º</td><td>Necrologia +5, poder de arcanista</td></tr>
+    <tr><td>19º</td><td>Poder de arcanista</td></tr>
+    <tr><td>20º</td><td>Domínio sobre a morte, poder de arcanista</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -1648,7 +1682,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um Machado de Pedra começa com 24 pontos de vida + Constituição e ganha 6 PV + Constituição por nível.
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b> Fortitude (Con) e Luta (For), mais 4 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Iniciativa (Des), Intimidação (Car), Ofício (Int), Percepção (Sab), Pontaria (Des), Sobrevivência (Sab) e Vontade (Sab).</p>
-        <p><b>Proficiências.</b> Escudos.</p>`,
+        <p><b>Proficiências.</b> Escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Fúria +2, grunhidos, machado de pedra, tanga de peles (Con)</td></tr>
+    <tr><td>2º</td><td>Fúria primitiva, poder de bárbaro</td></tr>
+    <tr><td>3º</td><td>Instinto selvagem +1, poder de bárbaro, tanga de peles (Def +1)</td></tr>
+    <tr><td>4º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>5º</td><td>Poder de bárbaro, resiliência primal 3</td></tr>
+    <tr><td>6º</td><td>Fúria +3, poder de bárbaro</td></tr>
+    <tr><td>7º</td><td>Poder de bárbaro, tanga de peles (Def +2)</td></tr>
+    <tr><td>8º</td><td>Poder de bárbaro, resiliência primal 6</td></tr>
+    <tr><td>9º</td><td>Instinto selvagem +2, poder de bárbaro</td></tr>
+    <tr><td>10º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>11º</td><td>Fúria +4, poder de bárbaro, resiliência primal 9, tanga de peles (Def +3)</td></tr>
+    <tr><td>12º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>13º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>14º</td><td>Poder de bárbaro, resiliência primal 12</td></tr>
+    <tr><td>15º</td><td>Instinto selvagem +3, poder de bárbaro, tanga de peles (Def +4)</td></tr>
+    <tr><td>16º</td><td>Fúria +5, poder de bárbaro</td></tr>
+    <tr><td>17º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>18º</td><td>Poder de bárbaro, tanga de peles (Def +5)</td></tr>
+    <tr><td>19º</td><td>Poder de bárbaro</td></tr>
+    <tr><td>20º</td><td>Fúria rústica, poder de bárbaro</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -1712,7 +1780,41 @@ export class ClasseData {
         + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b> Atuação (Car) e Luta (For), mais 6 a sua escolha entre Acrobacia (Des), Atletismo (For), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Jogatina (Car), Misticismo (Int) e Reflexos (Des).</p> 
-        <p><b>Proficiências.</b> Armas marciais.</p>`,
+        <p><b>Proficiências.</b> Armas marciais.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Cadência magicamarcal, magificação +2, magias (1º círculo)</td></tr>
+    <tr><td>2º</td><td>Bravado magicamarcal, poder de bardo</td></tr>
+    <tr><td>3º</td><td>Dança defensiva, poder de bardo</td></tr>
+    <tr><td>4º</td><td>Poder de bardo</td></tr>
+    <tr><td>5º</td><td>Poder de bardo</td></tr>
+    <tr><td>6º</td><td>Magias (2º círculo), magificação +3, poder de bardo</td></tr>
+    <tr><td>7º</td><td>Arte sublime, poder de bardo</td></tr>
+    <tr><td>8º</td><td>Poder de bardo</td></tr>
+    <tr><td>9º</td><td>Poder de bardo</td></tr>
+    <tr><td>10º</td><td>Magias (3º círculo), poder de bardo</td></tr>
+    <tr><td>11º</td><td>Magificação +4, poder de bardo</td></tr>
+    <tr><td>12º</td><td>Poder de bardo</td></tr>
+    <tr><td>13º</td><td>Poder de bardo</td></tr>
+    <tr><td>14º</td><td>Magias (4º círculo), poder de bardo</td></tr>
+    <tr><td>15º</td><td>Poder de bardo</td></tr>
+    <tr><td>16º</td><td>Magificação +5, poder de bardo</td></tr>
+    <tr><td>17º</td><td>Poder de bardo</td></tr>
+    <tr><td>18º</td><td>Poder de bardo</td></tr>
+    <tr><td>19º</td><td>Poder de bardo</td></tr>
+    <tr><td>20º</td><td>Crescendo vitorioso, poder de bardo</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2136,7 +2238,39 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um inovador começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b>. Luta (For) ou Pontaria (Des) e Acrobacia (Des), mais 2 a sua escolha entre Adestramento (Car), Atletismo (For), Conhecimento (Int), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intimidação (Car), Investigação (Int), Luta (For), Ofício (Int), Pontaria (Des) e Reflexos (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Do bom e do melhor, sequência especial +2</td></tr>
+    <tr><td>2º</td><td>Bombardeio sequencial, poder de guerreiro</td></tr>
+    <tr><td>3º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>4º</td><td>Acrobacia defensiva, poder de guerreiro</td></tr>
+    <tr><td>5º</td><td>Domínio excêntrico, poder de guerreiro, sequência especial +4</td></tr>
+    <tr><td>6º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>7º</td><td>Poder de guerreiro, técnica excêntrica</td></tr>
+    <tr><td>8º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>9º</td><td>Poder de guerreiro, sequência especial +6</td></tr>
+    <tr><td>10º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>11º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>12º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>13º</td><td>Poder de guerreiro, sequência especial +8</td></tr>
+    <tr><td>14º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>15º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>16º</td><td>Poder de guerreiro, sequência especial +10</td></tr>
+    <tr><td>17º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>18º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>19º</td><td>Poder de guerreiro</td></tr>
+    <tr><td>20º</td><td>Estilo único, poder de guerreiro</td></tr>
+  </tbody>
+</table>
+`,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2512,7 +2646,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um paladino começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>  (Sab) e Vontade (Sab), mais 2 a sua escolha entre Adestramento (Car), Atletismo (For), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intuição (Sab), Luta (For) Ofício (Int) e Percepção (Sab).</p>
-        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>`,
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Abençoado, código do herói, ladainha de combate (+1)</td></tr>
+    <tr><td>2º</td><td>Poder de paladino, santo curandeiro</td></tr>
+    <tr><td>3º</td><td>Poder de paladino, vaso sagrado</td></tr>
+    <tr><td>4º</td><td>Poder de paladino</td></tr>
+    <tr><td>5º</td><td>Ladainha de combate (+2, sacra), poder de paladino</td></tr>
+    <tr><td>6º</td><td>Mártir, poder de paladino</td></tr>
+    <tr><td>7º</td><td>Poder de paladino</td></tr>
+    <tr><td>8º</td><td>Pira santa, poder de paladino</td></tr>
+    <tr><td>9º</td><td>Ladainha de combate (+3, veloz), poder de paladino</td></tr>
+    <tr><td>10º</td><td>Poder de paladino</td></tr>
+    <tr><td>11º</td><td>Poder de paladino</td></tr>
+    <tr><td>12º</td><td>Poder de paladino</td></tr>
+    <tr><td>13º</td><td>Ladainha de combate (+4), poder de paladino</td></tr>
+    <tr><td>14º</td><td>Poder de paladino</td></tr>
+    <tr><td>15º</td><td>Poder de paladino</td></tr>
+    <tr><td>16º</td><td>Poder de paladino</td></tr>
+    <tr><td>17º</td><td>Ladainha de combate (+5), poder de paladino</td></tr>
+    <tr><td>18º</td><td>Poder de paladino</td></tr>
+    <tr><td>19º</td><td>Poder de paladino</td></tr>
+    <tr><td>20º</td><td>Poder de paladino, vingador santificado</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
