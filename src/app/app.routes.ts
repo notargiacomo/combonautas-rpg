@@ -23,6 +23,7 @@ import { CondicoesComponent } from './controller/regras/condicoes/condicoes.comp
 import { RegrasComponent } from './controller/regras/regras.component';
 import { TerrasDespedacadasComponent } from './controller/terras-despedacadas/terras-despedacadas.component';
 import { PersonagemAleatorioComponent } from './controller/utilitarios/personagem-aleatorio/personagem-aleatorio.component';
+import { FichaRapidaComponent } from './controller/utilitarios/ficha-rapida/ficha-rapida.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,6 +40,7 @@ export const routes: Routes = [
   { path: 'campanha/artefatos', component: ArtefatosComponent },
 
   { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent },
+  { path: 'utilitarios/ficha-rapida', component: FichaRapidaComponent },
 
   { path: 'personagem/racas', component: RacasComponent },
   { path: 'personagem/origens', component: OrigensComponent },

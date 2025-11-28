@@ -1957,7 +1957,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>   Um seteiro começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b> Pontaria (Des) e Sobrevivência (Sab), mais 6 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Cura (Sab), Fortitude (Con), Furtividade (Des), Iniciativa (Des), Investigação (Int), Luta (For), Ofício (Int), Percepção (Sab) e Reflexos (Des).</p>
-        <p><b>Proficiências.</b> Armas marciais.</p>`,
+        <p><b>Proficiências.</b> Armas marciais.</p>
+
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Caminho do atirador, marca da presa +1d4, tiro de supressão</td></tr>
+    <tr><td>2º</td><td>Poder de caçador</td></tr>
+    <tr><td>3º</td><td>Evasão, poder de caçador</td></tr>
+    <tr><td>4º</td><td>Poder de caçador</td></tr>
+    <tr><td>5º</td><td>Disparo constritor, marca da presa +1d8, poder de caçador</td></tr>
+    <tr><td>6º</td><td>Poder de caçador</td></tr>
+    <tr><td>7º</td><td>Poder de caçador</td></tr>
+    <tr><td>8º</td><td>Marca da presa +1d12, poder de caçador</td></tr>
+    <tr><td>9º</td><td>Poder de caçador, rajada de flechas</td></tr>
+    <tr><td>10º</td><td>Poder de caçador</td></tr>
+    <tr><td>11º</td><td>Poder de caçador</td></tr>
+    <tr><td>12º</td><td>Evasão aprimorada, marca da presa +2d8, poder de caçador</td></tr>
+    <tr><td>13º</td><td>Poder de caçador</td></tr>
+    <tr><td>14º</td><td>Poder de caçador, sentinela</td></tr>
+    <tr><td>15º</td><td>Poder de caçador</td></tr>
+    <tr><td>16º</td><td>Marca da presa +2d10, poder de caçador</td></tr>
+    <tr><td>17º</td><td>Poder de caçador</td></tr>
+    <tr><td>18º</td><td>Poder de caçador</td></tr>
+    <tr><td>19º</td><td>Poder de caçador</td></tr>
+    <tr><td>20º</td><td>Poder de caçador, mestre do disparo</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2031,7 +2065,41 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um vassalo começa com 20 pontos de vida + Constituição e ganha 5 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
         <p><b>Perícias.</b>  Fortitude (Con) e Luta (For), mais 2 a sua escolha entre Adestramento (Car), Atletismo (For),  Cavalgar  (Des),  Diplomacia  (Car),  Guerra (Int), Iniciativa (Des), Intimidação (Car), Nobreza (Int), Percepção (Sab) e Vontade (Sab).</p>
-        <p><b>Proficiências.</b>  Armas marciais e escudos.</p>`,
+        <p><b>Proficiências.</b>  Armas marciais e escudos.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Baluarte +2, código de honra, jovem pajem, suserano</td></tr>
+    <tr><td>2º</td><td>Valete</td></tr>
+    <tr><td>3º</td><td>Escudeiro aprendiz</td></tr>
+    <tr><td>4º</td><td>Guarda do castelo</td></tr>
+    <tr><td>5º</td><td>Baluarte +4, vigilante das estradas</td></tr>
+    <tr><td>6º</td><td>Cavaleiro do reino</td></tr>
+    <tr><td>7º</td><td>Sargento do reino</td></tr>
+    <tr><td>8º</td><td>Capitão do reino</td></tr>
+    <tr><td>9º</td><td>Baluarte +6, lorde</td></tr>
+    <tr><td>10º</td><td>Barão</td></tr>
+    <tr><td>11º</td><td>Visconde</td></tr>
+    <tr><td>12º</td><td>Conde</td></tr>
+    <tr><td>13º</td><td>Baluarte +8, marquês</td></tr>
+    <tr><td>14º</td><td>Duque</td></tr>
+    <tr><td>15º</td><td>Arquiduque</td></tr>
+    <tr><td>16º</td><td>Conselheiro real</td></tr>
+    <tr><td>17º</td><td>Baluarte +10, rei mercenário</td></tr>
+    <tr><td>18º</td><td>Rei</td></tr>
+    <tr><td>19º</td><td>Alto rei</td></tr>
+    <tr><td>20º</td><td>Imperador</td></tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2082,7 +2150,41 @@ export class ClasseData {
         <p><b>Pontos de Mana.</b> 5 PM por nível.</p>
         <p><b>Perícias.</b> Enganação (Car) e Vontade (Sab), mais 2 a sua escolha entre Atuação (Car), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Furtividade (Des), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Misticismo (Int), Nobreza (Int), Ofício (Int), Percepção
         (Sab), Reflexos (Des) e Religião (Sab).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1º</td><td>Inimigo dos deuses, magias (1º círculo), usurpar</td></tr>
+    <tr><td>2º</td><td>Canalização falsa, poder de clérigo</td></tr>
+    <tr><td>3º</td><td>Discrição divina +1, poder de clérigo</td></tr>
+    <tr><td>4º</td><td>Poder capturado, poder de clérigo</td></tr>
+    <tr><td>5º</td><td>Magias (2º círculo), poder de clérigo</td></tr>
+    <tr><td>6º</td><td>Poder de clérigo</td></tr>
+    <tr><td>7º</td><td>Poder de clérigo</td></tr>
+    <tr><td>8º</td><td>Poder de clérigo</td></tr>
+    <tr><td>9º</td><td>Discrição divina +2, magias (3º círculo), poder de clérigo</td></tr>
+    <tr><td>10º</td><td>Poder de clérigo</td></tr>
+    <tr><td>11º</td><td>Poder de clérigo</td></tr>
+    <tr><td>12º</td><td>Poder de clérigo</td></tr>
+    <tr><td>13º</td><td>Magias (4º círculo), poder de clérigo</td></tr>
+    <tr><td>14º</td><td>Poder de clérigo</td></tr>
+    <tr><td>15º</td><td>Discrição divina +3, poder de clérigo</td></tr>
+    <tr><td>16º</td><td>Poder de clérigo</td></tr>
+    <tr><td>17º</td><td>Magias (5º círculo), poder de clérigo</td></tr>
+    <tr><td>18º</td><td>Poder de clérigo</td></tr>
+    <tr><td>19º</td><td>Poder de clérigo</td></tr>
+    <tr><td>20º</td><td>Poder de clérigo, roubo divino</td></tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2436,7 +2538,101 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b>  Um ventanista começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>.  Ladinagem (Des) e Reflexos (Des), mais 8 a sua escolha entre Acrobacia (Des), Atletismo (For), Atuação (Car), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car), Furtividade (Des), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pilotagem (Des).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>Charme, truques do ofício</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>Evasão, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>3º</td>
+      <td>Disfarce elaborado (1 poder), poder de ladino</td>
+    </tr>
+    <tr>
+      <td>4º</td>
+      <td>Esquiva sobrenatural, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>5º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>6º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>7º</td>
+      <td>Poder de ladino, virar a casaca</td>
+    </tr>
+    <tr>
+      <td>8º</td>
+      <td>Olhos nas costas, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>9º</td>
+      <td>Disfarce elaborado (2 poderes), poder de ladino</td>
+    </tr>
+    <tr>
+      <td>10º</td>
+      <td>Evasão aprimorada, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>11º</td>
+      <td>Poder de ladino, provocação ousada</td>
+    </tr>
+    <tr>
+      <td>12º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>13º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>14º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>15º</td>
+      <td>Disfarce elaborado (3 poderes), poder de ladino</td>
+    </tr>
+    <tr>
+      <td>16º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>17º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>18º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>19º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>20º</td>
+      <td>O grande golpe, poder de ladino</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
@@ -2740,7 +2936,101 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um treinador começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b>  4 PM por nível.</p>
         <p><b>Perícias.</b>  Adestramento (Car) e Vontade (Sab), mais 4 a sua escolha entre Atletismo (For), Cavalgar (Des), Diplomacia (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des), Reflexos (Des), Religião (Sab) e Sobrevivência (Sab).</p>
-        <p><b>Proficiências.</b> Nenhuma.</p>`,
+        <p><b>Proficiências.</b> Nenhuma.</p>
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>Direcionar, melhor amigo (2 truques)</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>Domar criatura (2d8), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>3º</td>
+      <td>Poder de treinador</td>
+    </tr>
+    <tr>
+      <td>4º</td>
+      <td>Melhor amigo (3 truques), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>5º</td>
+      <td>Domar criatura (cena), poder de treinador, treino especializado</td>
+    </tr>
+    <tr>
+      <td>6º</td>
+      <td>Domar criatura (4d8), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>7º</td>
+      <td>Melhor amigo (4 truques), poder de treinador, sincronia de combate</td>
+    </tr>
+    <tr>
+      <td>8º</td>
+      <td>Domar criatura (dia), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>9º</td>
+      <td>Poder de treinador</td>
+    </tr>
+    <tr>
+      <td>10º</td>
+      <td>Domar criatura (6d8), melhor amigo (5 truques), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>11º</td>
+      <td>Poder de treinador</td>
+    </tr>
+    <tr>
+      <td>12º</td>
+      <td>Poder de treinador</td>
+    </tr>
+    <tr>
+      <td>13º</td>
+      <td>Melhor amigo (6 truques), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>14º</td>
+      <td>Domar criatura (8d8), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>15º</td>
+      <td>Poder de treinador</td>
+    </tr>
+    <tr>
+      <td>16º</td>
+      <td>Melhor amigo (7 truques), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>17º</td>
+      <td>Poder de treinador</td>
+    </tr>
+    <tr>
+      <td>18º</td>
+      <td>Poder de treinador</td>
+    </tr>
+    <tr>
+      <td>19º</td>
+      <td>Melhor amigo (8 truques), poder de treinador</td>
+    </tr>
+    <tr>
+      <td>20º</td>
+      <td>Poder de treinador, sincronia perfeita</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        `,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,

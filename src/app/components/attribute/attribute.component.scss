@@ -1,0 +1,17 @@
+@use '@angular/material' as mat;
+
+.campo-modificadores {
+  height: 100% !important;
+  width: 100% !important;
+  font-size: xx-large !important;
+  padding: 5% !important;
+  text-align: center;
+  border: 1px solid rgb(68, 5, 18) !important;
+}
+
+.botoes-mais-menos {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 5% !important;
+  border: 1px solid rgb(68, 5, 18) !important;
+}

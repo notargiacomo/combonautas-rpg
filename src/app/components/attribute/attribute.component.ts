@@ -8,22 +8,22 @@ import { Component, Input, output } from '@angular/core';
 })
 export class AttributeComponent {
   @Input()
-  atributo?: AtributoPersonagem = {};
+  attribute?: AtributoPersonagem = {};
 
   @Input()
-  pontos!: number;
-  pontosChange = output<number>();
+  points!: number;
+  changePoints = output<number>();
 
   calculaPontos(novoValor: number) {
     if (novoValor === -1 || novoValor === 0) {
-      this.pontos += this.atributo?.comprado! - novoValor;
+      this.points += this.attribute?.comprado! - novoValor;
     } else {
-      this.pontos += this.calculandoValorPonto(this.atributo!.comprado!);
-      this.pontos -= this.calculandoValorPonto(novoValor);
+      this.points += this.calculandoValorPonto(this.attribute!.comprado!);
+      this.points -= this.calculandoValorPonto(novoValor);
     }
-    this.atributo!.comprado = novoValor;
-    this.atributo!.total = this.atributo!.comprado + this.atributo!.racial! + this.atributo!.outros!;
-    this.pontosChange.emit(this.pontos);
+    this.attribute!.comprado = novoValor;
+    this.attribute!.total = this.attribute!.comprado + this.attribute!.racial! + this.attribute!.outros!;
+    this.changePoints.emit(this.points);
   }
 
   calculandoValorPonto(atributo: number): number {

@@ -1,12 +1,12 @@
-<div class="row align-items-center">
+<div class="row">
   <div class="col-sm-3">
     <div class="row">
       <div class="col-sm-12">
         <div>
           <button
             class="botoes-mais-menos"
-            [disabled]="atributo!.comprado"
-            (click)="calculaPontos(atributo!.comprado! + 1)">
+            [disabled]="attribute!.comprado"
+            (click)="calculaPontos(attribute!.comprado! + 1)">
             +
           </button>
         </div>
@@ -16,14 +16,14 @@
       <div class="col-sm-12">
         <button
           class="botoes-mais-menos"
-          [disabled]="atributo!.comprado! === -1"
-          (click)="calculaPontos(atributo!.comprado! - 1)">
+          [disabled]="attribute!.comprado! === -1"
+          (click)="calculaPontos(attribute!.comprado! - 1)">
           -
         </button>
       </div>
     </div>
   </div>
   <div class="col-sm-9" style="padding-left: 2% !important">
-    <input class="campo-modificadores" size="1" [value]="atributo?.total" disabled />
+    <input class="campo-modificadores" size="1" [value]="attribute?.total" disabled />
   </div>
 </div>

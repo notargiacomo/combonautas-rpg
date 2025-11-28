@@ -1,0 +1,206 @@
+@use '@angular/material' as mat;
+
+.campo-modificadores {
+  height: 56px !important;
+  width: 49px !important;
+  font-size: xx-large !important;
+  margin-top: 0px !important;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  padding-top: 0px !important;
+  text-align: center;
+  border: 1px solid rgb(120, 80, 160);
+}
+
+.campo-atributos {
+  width: 25px !important;
+  height: 25px !important;
+  font-size: small !important;
+  text-align: center;
+  border: 1px solid rgb(120, 80, 160);
+}
+
+.botoes-mais-menos {
+  width: 25px !important;
+  border: 1px solid rgb(120, 80, 160);
+}
+
+.img,
+.svg {
+  zoom: 100% !important;
+}
+
+.img-dado {
+  border: none !important;
+  padding: 0% !important;
+  margin-top: 1% !important;
+  margin-bottom: 20% !important;
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.imagem-ficha {
+  width: 100px !important; /* Ajuste para o tamanho desejado */
+  height: 100px !important; /* Ajuste para o tamanho desejado */
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  background-position: center !important;
+  background-size: cover !important; /* Isso ajusta o zoom para cobrir o círculo */
+  border: 5px solid rgb(120, 80, 160) !important;
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  background-color: transparent; /* Fundo da moldura */
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+.botao-ficha {
+  font-family: 'Oswald' !important;
+  font-size: 12pt !important;
+  border: 2px solid rgb(120, 80, 160) !important;
+  border-radius: 15px !important; /* Bordas arredondadas */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  background-color: rgb(45, 35, 60) !important;
+  cursor: pointer !important;
+  color: white !important;
+  width: 100% !important;
+  height: 80% !important;
+  max-height: 200% !important;
+  vertical-align: center !important;
+  align-self: center !important;
+}
+
+.pericia {
+  font-size: 12pt !important;
+}
+
+.pericia-valor {
+  font-size: 12pt !important;
+  text-align: center !important;
+}
+
+.mdc-data-table__cell,
+.mdc-data-table__header-cell {
+  padding: 0 8px !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.mat-column-treinado {
+  width: 40px !important; /* Ajuste conforme necessário */
+  min-width: 40px !important;
+  max-width: 40px !important;
+  height: 30px !important;
+  text-align: center !important;
+}
+
+.mat-mdc-cell {
+  padding-left: 0% !important;
+}
+
+.mat-mdc-header-cell {
+  padding-left: 0% !important;
+  padding-top: 0% !important;
+}
+
+.mat-mdc-table th {
+  background-color: rgb(45, 35, 60) !important;
+  color: white !important;
+}
+
+.mat-mdc-table {
+  border: 2px solid; /* Moldura */
+  border-radius: 15px !important; /* Bordas arredondadas */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  background-color: rgb(120, 80, 160);
+}
+
+.mat-mdc-header-row {
+  height: 30px !important;
+  min-height: 30px !important;
+  max-height: 30px !important;
+}
+
+.mat-mdc-table tr:nth-child(even) {
+  background-color: rgb(178, 141, 214) !important;
+}
+
+.vida-mana-defesa {
+  text-align: center !important;
+  font-size: 18pt !important;
+  border: 1px solid rgb(120, 80, 160) !important;
+  border-radius: 5px !important;
+}
+
+.mdc-checkbox {
+  padding-top: 0px !important;
+}
+
+.mat-expansion-panel-header.mat-expanded {
+  height: 15% !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.mat-expansion-panel-header {
+  height: 60% !important;
+  margin-top: 15px !important;
+  padding-top: 10px !important;
+  margin-bottom: 2px !important;
+}
+
+.mat-expansion-panel-body {
+  padding: 15 !important;
+}
+
+hr {
+  margin: 10px !important;
+}
+
+.proficiencia {
+  font-family: 'Oswald' !important;
+  font-size: 12pt !important;
+  border: 1px solid rgb(120, 80, 160); /* Moldura */
+  background-color: rgb(45, 35, 60) !important;
+  color: white !important;
+  width: 100% !important;
+  height: 15% !important;
+  min-height: 15% !important;
+  max-height: 15% !important;
+  size: 20% !important;
+  padding: 0% !important;
+}
+
+.detail-row {
+  display: none;
+}
+
+.element-row.expanded-row + .detail-row {
+  display: table-row;
+}
+
+.expanded-content {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.input-numerico {
+  text-align: center !important;
+  width: 50% !important;
+  border: 1px solid rgb(120, 80, 160) !important;
+  border-radius: 5px !important;
+}
+
+.mat-mdc-card-content b {
+  color: rgb(240, 240, 245) !important;
+}
+
+.mat-mdc-dialog-surface b {
+  color: rgb(240, 240, 245) !important;
+  font-family: 'Oswald' !important;
+}
