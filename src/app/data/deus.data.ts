@@ -978,7 +978,7 @@ export class DeusData {
         <p><b>Crenças e Objetivos.</b> Proteger as sereias e sua soberania. Enaltecer a magia arcana. Dominar os oceanos. Derrotar os elfos-do-mar.</p>
         <p><b>Símbolo Sagrado.</b> Um Uma barbatana dorsal multicolorida.</p>
         <p><b>Canalizar Energia.</b> Positiva.</p>
-        <p><b>Arma Preferida.</b> Funda.</p>
+        <p><b>Arma Preferida.</b> Não há. Devotos desta deusa não podem usar a magia Arma Espiritual e similares.</p>
         <p><b>Devotos.</b> Qareen, sereias/tritões, arcanistas, bardos, bucaneiros.</p>
         <p><b>Obrigações & Restrições.</b>  Devotos de Ayllana são proibidos de matar sereias e tritões, recusar-se a ajudar sereias e tritões inocentes, e recusar missões para resgatar ou proteger sereias/tritões e sua cultura.</p>`,
         fundamentalista_paladino: '',
@@ -986,6 +986,86 @@ export class DeusData {
         fundamentalista_druida: '',
         canalizaEnergia: 'Positiva',
         devotos: ['Qareen', 'Sereias/tritões', 'Arcanistas', 'Qareen', 'Bardos', 'Bucaneiros'],
+      },
+      {
+        id: 34,
+        nome: 'Beluhga',
+        tipo: 'Menor',
+        dominios: ['Dragões do Gelo'],
+        natureza: 'Dragão-Real',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_beluhga.png',
+        paginas: '10',
+        armaPreferida: 'Machado de guerra',
+        aceitaPaladinos: true,
+        descricao: `
+        <p>Tão majestosa quanto as próprias Montanhas Uivantes, Beluhga é venerada pelos povos que habitam a região. Ao contrário de quase todos os Dragões-Reais (e da maioria dos dragões em geral), Beluhga é uma presença do bem. Sua magia era capaz de curar, embora ela também fosse uma senhora tão exigente quanto as próprias Uivantes.</p>
+        <p>Sua história é trágica — na verdade, tão trágica que pode ser duvidosa, e coloca em xeque a benevolência de um dos deuses do Panteão. Diz-se que, há mais de 100.000 anos, Beluhga foi aprisionada nas Uivantes pelo próprio Khalmyr. Essa seria a verdadeira causa do clima na região: apenas a presença da Dragoa-Rainha do Gelo poderia tornar toda a cordilheira tão fria. Mas, se Beluhga não era maligna, por que foi punida? Segundo ao menos uma versão, Khalmyr estava apaixonado por Beluhga, mas ela o rejeitou. O Deus da Justiça teria então cometido uma injustiça suprema, apenas por seu orgulho ferido. Sabe-se que os deuses do Panteão não são perfeitos, mas Khalmyr não poderia ser tão imperfeito… ou poderia? Outras versões afirmam que a punição seria justa: Beluhga teria conspirado contra o Panteão, junto a Sckhar. Mas isso leva à pergunta de por que então Sckhar não foi punido…</p>
+        <p>Mesmo confinada às Uivantes como punição, Beluhga tomou para si o dever de proteger a região. Foi uma das divindades menores mais atuantes de Arton, e rivalizou apenas com Sckhar como Dragoa-Rainha mais influente nas vidas dos mortais. Contudo, sua tragédia não havia acabado.</p>
+        <p>Quando o Paladino de Arton se ergueu contra os deuses, tomou a Dragoa-Rainha como montaria, apenas para matá-la quando ela se tornou inútil para ele. Morta, Beluhga não retornou a sua forma dracônica; em vez disso, permaneceu como humanoide. Nessa forma — semelhante a uma meia-elfa de pele azulada, com cabelos roxos adornados por diademas cristalinos —, seu cadáver pôde ser levado de volta às Uivantes, onde repousa até hoje em um caixão de gelo eterno, impedindo o degelo da região. Dizem que um fantasma da Dragoa-Rainha foi visto nas montanhas; outros afirmam que não se trata de um fantasma, mas da própria Beluhga, retornada da morte para retomar seu reino gelado.</p>
+        <p><b>Crenças e Objetivos.</b> Reverenciar o cadáver congelado de Beluhga e impedir que ele seja profanado. Perpetuar as tradições criadas no território da Dragoa-Rainha do Gelo. Combater quaisquer criaturas que ameacem pessoas, animais e outros seres nativos das Montanhas Uivantes.</p>
+        <p><b>Símbolo Sagrado.</b> Uma lágrima azul cristalizada.</p>
+        <p><b>Canalizar Energia.</b> Positiva.</p>
+        <p><b>Arma Preferida.</b> Machado de guerra.</p>
+        <p><b>Devotos.</b> Anões, hynne, galokk, golens, kallyanach, minotauros, ogros, bárbaros, caçadores, druidas, guerreiros, paladino.</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Beluhga não devem permitir que não nativos das Uivantes adentrem a caverna onde repousa o corpo da Dragoa-Rainha. Não podem negar pedidos de ajuda feitos por um nativo inocente das Uivantes. Além disso, devem retornar às Uivantes para prestar seus respeitos a Beluhga a cada 1d4+2 meses.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Anões',
+          'Hynnes',
+          'Galokk',
+          'Golens',
+          'Kallyanachs',
+          'Minotauros',
+          'Ogros',
+          'Bárbaros',
+          'Caçadores',
+          'Druidas',
+          'Guerreiros',
+          'Paladinos',
+        ],
+      },
+      {
+        id: 35,
+        nome: 'Benthos',
+        tipo: 'Menor',
+        dominios: ['Dragões dos Mares'],
+        natureza: 'Dragão-Real',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_benthos.png',
+        paginas: '11',
+        armaPreferida: 'Tridente',
+        aceitaPaladinos: false,
+        descricao: `
+        <p>Pouco se sabe a respeito de Benthos, já que são raras suas visitas ao mundo seco. Para ele, nada importa além da vastidão submersa que habita e as inúmeras ilhas que defende. Quase nunca visto em terra firme, este Dragão-Rei interveio em um punhado de vezes na história dos bípedes do continente — e todas deixaram consequências que ecoam por séculos, como a retaliação contra Thomas Lendilkar e a batalha contra o Dragão da Tormenta.</p>
+        <p>Embora não seja uma figura benevolente, Benthos é o grande protetor de Khubar, o Reino Arquipélago. Os xamãs khubarianos possuem rituais secretos, capazes de invocar Benthos para combater ameaças às ilhas como um todo. Benthos é adorado em Khubar tanto quanto os deuses do Panteão, considerado por muitos a divindade principal, por sua proximidade e fisicalidade. Quase todos em Khubar lembram de alguma intervenção de Benthos, ou têm na família alguém que lembra. Assim, os ritos de adoração cotidiana ao Dragão-Rei têm um elemento de autopreservação e gratidão.</p>
+        <p>Em sua forma humanoide, Benthos costuma aparecer como um tritão robusto de pele azulada, com roupas feitas de conchas e algas. Em forma dracônica, exibe um corpanzil esguio, com escamas brilhantes em tons de azul claro e verde-água, barbatanas emergindo ao longo do corpo e uma longa cauda bifurcada. As asas, em forma de leque, são utilizadas para voar e nadar.</p>
+        <p><b>Crenças e Objetivos.</b> Reverenciar a magnificência de Benthos. Promover harmonia entre Khubar e o domínio submerso do Dragão-Rei dos Mares. Respeitar as dádivas providas pelas criaturas marinhas, além de retribuí-las sempre que possível. Proclamar a superioridade do Mar do Dragão-Rei e de suas ilhas. Vingar transgressões contra Khubar.</p>
+        <p><b>Símbolo Sagrado.</b> Uma coroa feita de conchas e pérolas.</p>
+        <p><b>Canalizar Energia.</b> Qualquer.</p>
+        <p><b>Arma Preferida.</b> Tridente.</p>
+        <p><b>Devotos.</b> Elfos-do-mar, kallyanach, sereias/tritões, tabrachi, bucaneiros, caçadores, druidas, guerreiros, ladinos.</p>
+        <p><b>Obrigações & Restrições.</b> Devotos de Beluhga não devem permitir que não nativos das Uivantes adentrem a caverna onde repousa o corpo da Dragoa-Rainha. Não podem negar pedidos de ajuda feitos por um nativo inocente das Uivantes. Além disso, devem retornar às Uivantes para prestar seus respeitos a Beluhga a cada 1d4+2 meses.</p>`,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Elfos-do-mar',
+          'Kallyanach',
+          'Sereias/Tritões',
+          'Tabrachi',
+          'Bucaneiros',
+          'Caçadores',
+          'Druidas',
+          'Guerreiros',
+          'Ladinos',
+        ],
       },
     ];
   }

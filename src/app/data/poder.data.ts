@@ -18221,6 +18221,26 @@ export class PoderData {
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
         id_deuses: [33],
+      },
+      {
+        id: 1746,
+        nome: 'Benção do Frio',
+        descricao: `
+        <p>Você recebe redução de frio 5. Além disso, se terminar o seu turno adjacente a um ou mais inimigos, eles ficam enredados por cristais de gelo por 1 rodada. Se já estavam enredados dessa forma, em vez disso ficam imóveis por 1 rodada (Fortitude evita a condição imóvel).  ✨</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [34],
+      },
+      {
+        id: 1747,
+        nome: 'Investida Tempestade',
+        descricao: `
+        <p>Quando faz uma investida, você pode gastar 2 PM para cobrir seu corpo com eletricidade. Se fizer isso, seu ataque causa +2d8 pontos de dano de eletricidade. Além disso, criaturas adjacentes ao caminho que você percorre na investida sofrem 2d8 pontos de dano de eletricidade e ficam ofuscadas por 1 rodada (Ref CD Sab reduz à metade e evita a condição).</p>`,
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        tipo: TipoPoder.PODER_CONCEDIDO,
+        prerequisito_nivel: 1,
+        id_deuses: [35],
       }
     );
   }

@@ -3137,7 +3137,101 @@ export class ClasseData {
         <p><b>Pontos de Vida.</b> Um frade começa com 12 pontos de vida (+ Constituição) e ganha 3 PV (+
         Constituição) por nível.</p>
         <p><b>Pontos de Mana.</b> 6 PM por nível.</p>
-        <p><b>Perícias.</b> Religião (Sab) e Vontade (Sab), mais 4 a sua escolha entre Adestramento (Car), Atuação (Car), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Misticismo (Int), Ofício (Int), Percepção (Sab) e Nobreza (Int).</p>`,
+        <p><b>Perícias.</b> Religião (Sab) e Vontade (Sab), mais 4 a sua escolha entre Adestramento (Car), Atuação (Car), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Misticismo (Int), Ofício (Int), Percepção (Sab) e Nobreza (Int).
+        
+        <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>Devoto fiel, erudição, magias (1º círculo)</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>Poder de frade, versiculário</td>
+    </tr>
+    <tr>
+      <td>3º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>4º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>5º</td>
+      <td>Dádiva da fé, magias (2º círculo), poder de frade</td>
+    </tr>
+    <tr>
+      <td>6º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>7º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>8º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>9º</td>
+      <td>Magias (3º círculo), poder de frade</td>
+    </tr>
+    <tr>
+      <td>10º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>11º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>12º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>13º</td>
+      <td>Magias (4º círculo), poder de frade</td>
+    </tr>
+    <tr>
+      <td>14º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>15º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>16º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>17º</td>
+      <td>Magias (5º círculo), poder de frade</td>
+    </tr>
+    <tr>
+      <td>18º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>19º</td>
+      <td>Poder de frade</td>
+    </tr>
+    <tr>
+      <td>20º</td>
+      <td>Poder de frade, solo santificado</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+        </p>`,
         descricao_habilidades: '',
         descricao_poderes: '',
         ha_informacoes_adicionais: true,
