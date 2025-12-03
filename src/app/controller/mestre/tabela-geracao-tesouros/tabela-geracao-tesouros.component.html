@@ -14,7 +14,7 @@
             <mat-label>Nível de Desafio</mat-label>
             <mat-select formControlName="nivel">
               @for (nivel of niveis; track nivel) {
-                <mat-option [value]="nivel">{{ nivel }}</mat-option>
+                <mat-option [value]="nivel">{{ nivel | fraction }}</mat-option>
               }
             </mat-select>
           </mat-form-field>
@@ -50,7 +50,7 @@
           <div class="col-sm-12">
             <mat-card class="card-game" *ngIf="formulario.get('nivel')?.value && formulario.get('tipo')?.value">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-                {{ 'TESOURO ND: ' + formulario.get('nivel')?.value + ' ' + formulario.get('tipo')?.value }}
+                {{ 'TESOURO ND: ' + (formulario.get('nivel')?.value | fraction) + ' ' + formulario.get('tipo')?.value }}
               </mat-card-title>
               <mat-card-content>
                 <div class="content mt-2">

@@ -14,7 +14,7 @@ import { MatCheckbox } from '@angular/material/checkbox';
 @Component({
   selector: 'app-magias',
   standalone: true,
-  imports: [CardSearchComponent, MatCard, MatCardTitle, MatCardContent, NgFor, MatTabGroup, MatTab, NgIf, MatCheckbox],
+  imports: [CardSearchComponent, MatCard, MatCardTitle, MatCardContent, MatTabGroup, MatTab, NgIf, MatCheckbox],
   templateUrl: './magias.component.html',
   styleUrl: './magias.component.scss',
 })

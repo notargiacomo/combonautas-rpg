@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 import { TreasureGenerator } from './treasure-generator';
 import { GeneratedTreasure, TreasureContext } from '../model/treasure';
+import { StringUtils } from '@app/util/string-utils';
 
 @Injectable({ providedIn: 'root' })
 export class MoneyTreasureGenerator implements TreasureGenerator {
@@ -58,7 +59,7 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
   calcularRiqueza(unidade: string, modificador: boolean): number {
     let riquezas: any[] = [];
     if (unidade.includes('menor')) riquezas = this.tabelaRiquezaMenor;
-    if (unidade.includes('media')) riquezas = this.tabelaRiquezaMedia;
+    if (StringUtils.removerAcentos(unidade.toLowerCase()).includes('media')) riquezas = this.tabelaRiquezaMedia;
     if (unidade.includes('maior')) riquezas = this.tabelaRiquezaMaior;
 
     let random = Math.floor(Math.random() * 100) + 1;
@@ -66,7 +67,6 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
     const linhaDinheiroNivel = riquezas.find(
       (item: { min: number; max: number }) => random >= item.min && random <= item.max
     );
-
     return this.contadorMoedas(linhaDinheiroNivel);
   }
 
@@ -1307,7 +1307,7 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
       unidade: 'T$',
     },
     {
-      min: 100,
+      min: 99,
       max: 100,
       valor: '6d8x1000 T$',
       multiplicador: 6,

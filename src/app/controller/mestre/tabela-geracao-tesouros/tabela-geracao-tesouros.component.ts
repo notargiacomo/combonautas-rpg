@@ -15,6 +15,7 @@ import {
 import { GeneratedTreasure, tabelaTesouroItens, TreasureContext } from './generate-factory/model/treasure';
 import { TreasureService } from './generate-factory/service/treasure.service';
 import { Console } from 'console';
+import { FractionPipe } from '@app/pipes/fraction.pipe';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -28,13 +29,10 @@ import { Console } from 'console';
     MatLabel,
     MatSelect,
     MatOption,
-    MatAccordion,
-    MatExpansionPanel,
-    MatExpansionPanelHeader,
-    MatExpansionPanelTitle,
     MatCardTitle,
     MatCardContent,
     NgIf,
+    FractionPipe,
   ],
   templateUrl: './tabela-geracao-tesouros.component.html',
   styleUrl: './tabela-geracao-tesouros.component.scss',
@@ -74,6 +72,11 @@ export class TabelaGeracaoTesourosComponent {
 
     let retorno = this.treasureService.generate(contexto);
     this.detalhesTesouroDinheiro! = retorno.report!;
+
+    if (this.formulario.get('tipo')?.value === 'DOBRO') {
+      this.detalhesTesouroDinheiro =
+        this.detalhesTesouroDinheiro + '<br /><br />' + this.treasureService.generate(contexto).report!;
+    }
   }
 
   gerarItem() {
@@ -90,7 +93,6 @@ export class TabelaGeracaoTesourosComponent {
     };
 
     if (linhaItemNivel.valor !== '—') {
-      console.log(contexto);
       let retorno = this.treasureService.generate(contexto);
       this.detalhesTesouroItens! = retorno.report!;
     } else {
@@ -98,6 +100,32 @@ export class TabelaGeracaoTesourosComponent {
       <label><b>RESULTADO D100:</b> ${random}</label><br />
       <label><b>ITEM:</b> N/A </label>
       `;
+    }
+
+    if (this.formulario.get('tipo')?.value === 'DOBRO') {
+      let randomDB = Math.floor(Math.random() * 100) + 1;
+      let nivelDB = String(this.formulario.get('nivel')?.value).trim();
+      const tabelaItemNivelDB = tabelaTesouroItens.filter((item: any) => item.nd === Number(nivelDB));
+      const linhaItemNivelDB: any = tabelaItemNivelDB.find((item: any) => randomDB >= item.min && randomDB <= item.max);
+
+      const contextoDB: TreasureContext = {
+        type: linhaItemNivelDB.tipo,
+        level: this.formulario.get('nivel')?.value,
+        notes: linhaItemNivelDB.modificador,
+        random: randomDB,
+      };
+
+      if (linhaItemNivelDB.valor !== '—') {
+        this.detalhesTesouroItens =
+          this.detalhesTesouroItens + '<br /><br />' + this.treasureService.generate(contextoDB).report!;
+      } else {
+        this.detalhesTesouroItens! =
+          this.detalhesTesouroItens +
+          `<br /><br />
+      <label><b>RESULTADO D100:</b> ${randomDB}</label><br />
+      <label><b>ITEM:</b> N/A </label>
+      `;
+      }
     }
   }
 }

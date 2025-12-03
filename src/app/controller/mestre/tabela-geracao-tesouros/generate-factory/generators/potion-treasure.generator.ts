@@ -27,7 +27,7 @@ export class PotionTreasureGenerator implements TreasureGenerator {
     const indiceSoma = linhaItemNivel.modificador.indexOf('+');
     let soma: number = 0;
 
-    if (indiceSoma !== -1 && indiceSoma + 1 < indiceSoma.modificador.length) {
+    if (indiceSoma !== -1 && indiceSoma + 1 < linhaItemNivel.modificador.length) {
       const proximoCaractere = linhaItemNivel.modificador[indiceSoma + 1];
       soma = Number(proximoCaractere);
     }

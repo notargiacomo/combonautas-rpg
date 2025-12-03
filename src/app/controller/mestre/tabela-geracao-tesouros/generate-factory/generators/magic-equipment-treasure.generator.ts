@@ -55,13 +55,15 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
   private gerarItemMagico(linhaItemNivel: any, tabela: any, tabelaEspecifica: any) {
     let randomItemMagico = Math.floor(Math.random() * 100) + 1;
     let linhaItemMagico = tabela.find((item: any) => randomItemMagico === item.id);
-    linhaItemMagico.encantos = [];
+    if (!linhaItemMagico.encantos) {
+      linhaItemMagico.encantos = [];
+    }
 
     const numero = linhaItemNivel.modificador.includes('menor')
       ? 1
-      : linhaItemNivel.modificador.includes('médio')
-        ? 2
-        : 3;
+      : linhaItemNivel.modificador.includes('maior')
+        ? 3
+        : 2;
 
     for (let i = 1; i <= numero; i++) {
       let randomEncanto = Math.floor(Math.random() * 100) + 1;
@@ -74,7 +76,7 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
 
   private gerarRelatorio(random: number, linha: any, linhaItem: any): string {
     const linhasHtml = linhaItem
-      .map((item: any) => `<li>${item.id} - ${item.nome} ${this.relatorioEncantos(item)}</li>`)
+      .map((item: any) => `<li>${item.id} - ${item.nome} ${item.encantos ? this.relatorioEncantos(item) : ''}</li>`)
       .join('');
 
     let labelEquipamento = linha.valor.includes('2D') ? linha.valor + ' (escolha um)' : linha.valor;
