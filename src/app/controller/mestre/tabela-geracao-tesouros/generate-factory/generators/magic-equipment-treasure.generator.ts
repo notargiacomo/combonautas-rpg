@@ -14,6 +14,23 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
     let tesouro: any[] = [];
     let gt: { items: any; return: string; notes: string; report: string };
 
+    this.gerarArmaArmaduraEsotericoOuAcessorio(tesouro, linhaItemNivel);
+
+    if (linhaItemNivel.valor.includes('2D')) {
+      this.gerarArmaArmaduraEsotericoOuAcessorio(tesouro, linhaItemNivel);
+    }
+
+    gt = {
+      items: linhaItemNivel,
+      return: linhaItemNivel.nome,
+      notes: linhaItemNivel.unidade,
+      report: this.gerarRelatorio(ctx.random!, linhaItemNivel, tesouro),
+    };
+
+    return gt;
+  }
+
+  private gerarArmaArmaduraEsotericoOuAcessorio(tesouro: any[], linhaItemNivel: any) {
     let randomItemMagico = Math.floor(Math.random() * 6) + 1;
     let linhaItemMagico = this.equipamentoMagico.find((item: any) => randomItemMagico === item.id);
 
@@ -33,15 +50,6 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
         tesouro.push(this.acessorioMaior.find((item: any) => randomAcessorioMagico === item.id));
       }
     }
-
-    gt = {
-      items: linhaItemNivel,
-      return: linhaItemNivel.nome,
-      notes: linhaItemNivel.unidade,
-      report: this.gerarRelatorio(ctx.random!, linhaItemNivel, tesouro),
-    };
-
-    return gt;
   }
 
   private gerarItemMagico(linhaItemNivel: any, tabela: any, tabelaEspecifica: any) {
@@ -72,7 +80,6 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
     let labelEquipamento = linha.valor.includes('2D') ? linha.valor + ' (escolha um)' : linha.valor;
 
     return `
-      <b>ITEM</b><br />
       <label><b>RESULTADO D100:</b> ${random}</label><br />
       <label><b>${labelEquipamento}:</b></label>
       <ul>

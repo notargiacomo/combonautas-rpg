@@ -1,76 +1,71 @@
 <form [formGroup]="formulario">
-    <div class="col-sm-12">
-      <mat-card>
-        <h2><b>GERAÇÃO DE TEROUROS</b></h2>
-        <hr />
-        <label><b class="negrito-centralizado" style="text-justify: center !important">
-            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO</b></label>
-        <div class="row">
-            <div class="col-sm-6 mt-4">
-              <mat-form-field class="select-dobrado">
-                <mat-label>Nível de Desafio</mat-label>
-                <mat-select formControlName="nivel">
-                  @for (nivel of niveis; track nivel) {
-                  <mat-option [value]="nivel">{{
-                    nivel
-                    }}</mat-option>
-                  }
-                </mat-select>
-              </mat-form-field>
-            </div>
-            <div class="col-sm-6 mt-4">
-              <mat-form-field class="select-dobrado">
-                <mat-label>Tipo de Tesouro</mat-label>
-                <mat-select formControlName="tipo">
-                  @for (tipo of tipos; track tipo) {
-                  <mat-option [value]="tipo">{{
-                    tipo
-                    }}</mat-option>
-                  }
-                </mat-select>
-              </mat-form-field>
-            </div>
+  <div class="row">
+    <mat-card>
+      <h2><b>GERAÇÃO DE TEROUROS</b></h2>
+      <hr />
+      <label>
+        <b class="negrito-centralizado" style="text-justify: center !important">
+          PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
+        </b>
+      </label>
+      <div class="row">
+        <div class="col-sm-6 mt-4">
+          <mat-form-field class="select-dobrado">
+            <mat-label>Nível de Desafio</mat-label>
+            <mat-select formControlName="nivel">
+              @for (nivel of niveis; track nivel) {
+                <mat-option [value]="nivel">{{ nivel }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
         </div>
-          <div class="row">
-            <div class="col-sm-12">
-                <section>
-                    <div class="button-row d-flex justify-content-end">
-                        <button class="me-2" (click)="gerarTesouro()" [disabled]="!this.formulario.get('nivel')?.value || !this.formulario.get('tipo')?.value" mat-flat-button>
-                            Gerar Tesouro
-                        </button>
-                    </div>
-                </section>
+        <div class="col-sm-6 mt-4">
+          <mat-form-field class="select-dobrado">
+            <mat-label>Tipo de Tesouro</mat-label>
+            <mat-select formControlName="tipo">
+              @for (tipo of tipos; track tipo) {
+                <mat-option [value]="tipo">{{ tipo }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <section>
+            <div class="button-row d-flex justify-content-end">
+              <button
+                class="me-2"
+                (click)="gerarTesouro()"
+                [disabled]="!this.formulario.get('nivel')?.value || !this.formulario.get('tipo')?.value"
+                mat-flat-button>
+                Gerar Tesouro
+              </button>
             </div>
-          </div>
-          <hr>
-          <mat-accordion class="mb-4 mt-4">
-            <mat-expansion-panel [disabled]="dinheiro.length===0" hideToggle>
-              <mat-expansion-panel-header>
-                <mat-panel-title>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <mat-card class="card-game" *ngIf="formulario.get('nivel')?.value && formulario.get('tipo')?.value">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ 'TESOURO ND: ' + formulario.get('nivel')?.value + ' ' + formulario.get('tipo')?.value }}
+              </mat-card-title>
+              <mat-card-content>
+                <div class="content mt-2">
                   <div class="container">
                     <div class="row">
-                      <div class="col-sm-6">
-                        <b>TESOURO: {{dinheiro}}</b>
-                      </div>
-                      <div class="col-sm-6">
-                        <b>{{item}}</b>
-                      </div>
+                      <div class="col-sm-6" [innerHTML]="detalhesTesouroDinheiro"></div>
+                      <div class="col-sm-6" [innerHTML]="detalhesTesouroItens"></div>
                     </div>
                   </div>
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <hr/>
-                <div class="row">
-                  <div class="col-sm-6"
-                    [innerHTML]="detalhesTesouroDinheiro">
-                  </div>
-                  <div
-                    class="col-sm-6"
-                    [innerHTML]="detalhesTesouroItens">
-                  </div>
                 </div>
-            </mat-expansion-panel>
-          </mat-accordion>
-      </mat-card>
-    </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
 </form>

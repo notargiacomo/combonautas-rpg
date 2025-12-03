@@ -14,6 +14,23 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
     let tesouro: any[] = [];
     let gt: { items: any; return: string; notes: string; report: string };
 
+    this.gerarArmaArmaduraOuEsoterico(tesouro, linhaItemNivel);
+
+    if (linhaItemNivel.valor.includes('2D')) {
+      this.gerarArmaArmaduraOuEsoterico(tesouro, linhaItemNivel);
+    }
+
+    gt = {
+      items: linhaItemNivel,
+      return: linhaItemNivel.nome,
+      notes: linhaItemNivel.unidade,
+      report: this.gerarRelatorio(ctx.random!, linhaItemNivel, tesouro),
+    };
+
+    return gt;
+  }
+
+  private gerarArmaArmaduraOuEsoterico(tesouro: any[], linhaItemNivel: any) {
     let randomEquipamento = Math.floor(Math.random() * 6) + 1;
     let linhaEquipamento = this.tipoEquipamento.find((item: any) => randomEquipamento === item.id);
 
@@ -28,15 +45,6 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
         this.gerarEquipamento(linhaItemNivel, this.equipamentoEsoterico, this.melhoriasSuperioresEsotericos, 62, 70)
       );
     }
-
-    gt = {
-      items: linhaItemNivel,
-      return: linhaItemNivel.nome,
-      notes: linhaItemNivel.unidade,
-      report: this.gerarRelatorio(ctx.random!, linhaItemNivel, tesouro),
-    };
-
-    return gt;
   }
 
   private gerarEquipamento(
@@ -60,7 +68,7 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
         if (melhoria.nome === 'Material especial' && !materialEspecial) {
           materialEspecial = true;
           let randomMaterialEspecial = Math.floor(Math.random() * 6) + 1;
-          melhoria = tabelaMelhoria.find((item: any) => randomMaterialEspecial === item.id);
+          melhoria = this.melhoriasSuperioresMaterialEspecial.find((item: any) => randomMaterialEspecial === item.id);
         } else {
           randomMelhoriaSuperior = this.randomIntervaloBanido(inicio, fim);
           melhoria = tabelaMelhoria.find((item: any) => randomMelhoriaSuperior === item.id);
@@ -91,7 +99,6 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
     let labelEquipamento = linha.valor.includes('2D') ? linha.valor + '(escolha um)' : linha.valor;
 
     return `
-      <b>ITEM</b><br />
       <label><b>RESULTADO D100:</b> ${random}</label><br />
       <label><b>${labelEquipamento}:</b></label>
       <ul>
@@ -102,7 +109,7 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
 
   private relatorioMelhorias(item: any) {
     let relatorioMelhoria = item.melhorias.map((p: any) => p.nome).join(', ');
-    return `(${relatorioMelhoria})`;
+    return relatorioMelhoria ? `(${relatorioMelhoria})` : '';
   }
 
   tipoEquipamento = [

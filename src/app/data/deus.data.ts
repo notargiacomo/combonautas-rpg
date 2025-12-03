@@ -1067,6 +1067,499 @@ export class DeusData {
           'Ladinos',
         ],
       },
+      {
+        id: 999,
+        nome: 'Betsumial',
+        tipo: 'Menor',
+        dominios: ['Vigília'],
+        natureza: 'Mortal Ascendido',
+        status: '1',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_betsumial.png',
+        paginas: '',
+        armaPreferida: 'Arco longo',
+        aceitaPaladinos: true,
+        descricao: `
+  <p>Betsumial era uma divindade de pequena importância há cerca de 300 anos. Nasceu em Petrynia, marcado por ter um único enorme olho no meio da face, capaz de enxergar a enormes distâncias. Seu nariz era deformado, para dar espaço ao olho ciclópico, resultando em uma voz fanhosa.</p>
+
+  <p>Devido a seus poderes, ainda na infância começou a ser cultuado por aqueles que dependiam da visão para sobreviver. Os primeiros devotos foram vigias; logo vieram guardas, exploradores, patrulheiros e outros. Ainda jovem, como um aventureiro errante, era disputado por lordes que desejavam tê-lo a seu serviço e por cidades que o queriam como seu guardião. Assim, Betsumial ascendeu a deus menor.</p>
+
+  <p>Seu culto sempre foi obscuro — dominado por uma irmandade de guardas e outros “vigilantes”. Ele mesmo nunca se preocupou em angariar seguidores, mas sempre concedeu sua bênção a todos que vinham procurá-lo. Sua religião nunca teve um centro definido até a queda de Glórienn, em 1405. Na época, formou-se um sítio de peregrinação nas colinas próximas à antiga Malpetrim, onde seus devotos controlavam a chegada de novos seguidores. As peregrinações acabaram quando Betsumial encontrou seu fim na Batalha de Tamu-ra, no mesmo ano.</p>
+
+  <p>Suas representações póstumas mostram um jovem magriço que usava uma venda cobrindo seu único olho — mas essa venda, curiosamente, às vezes trazia um olho enorme pintado no tecido.</p>
+
+  <p><b>Crenças e Objetivos.</b> Vigiar os arredores. Manter-se alerta. Preparar-se para os perigos e reagir a eles com antecipação. Proteger os mais fracos e indefesos.</p>
+
+  <p><b>Símbolo Sagrado.</b> Um olho aberto.</p>
+
+  <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+  <p><b>Arma Preferida.</b> Arco longo.</p>
+
+  <p><b>Devotos.</b> Anões, elfos, hynne, kliren, naidoras, bárbaros, bucaneiros, caçadores, cavaleiros, guerreiros, ladinos, paladinos.</p>
+
+  <p><b>Obrigações & Restrições.</b> Devotos de Betsumial sempre se oferecem para vigiar um local, objeto ou criatura, se isso for necessário, e jamais se recusam a fazê-lo (mas não precisam permanecer em vigília por mais de 1 dia).</p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Anões',
+          'Elfos',
+          'Hynne',
+          'Kliren',
+          'Naidoras',
+          'Bárbaros',
+          'Bucaneiros',
+          'Caçadores',
+          'Cavaleiros',
+          'Guerreiros',
+          'Ladinos',
+          'Paladinos',
+        ],
+      },
+      {
+        id: 998,
+        nome: 'Blinar',
+        tipo: 'Menor',
+        dominios: ['Máscaras'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_blinar.png',
+        paginas: '',
+        armaPreferida: 'Adaga',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Um deus dissimulado, com rosto na forma de uma máscara de porcelana que se transforma constantemente,
+      Blinar é uma figura enigmática e extravagante. Sempre veste roupas elaboradas que parecem fantasias —
+      ou talvez também façam parte de seu corpo.
+    </p>
+
+    <p>
+      Reverenciado em inúmeros bailes da corte e (secretamente) entre espiões, Blinar ensina seus devotos a
+      jamais mostrar quem realmente são. Muito popular em Ahlen, é considerado por muitos o padroeiro da
+      festa do Dia das Máscaras que acontece no Palácio Rishantor de Thartann, a capital do Reino da Intriga.
+    </p>
+
+    <p>
+      Blinar governa sobre todos os aspectos das máscaras, desde sua função festiva e brincalhona até seu
+      uso como disfarce e mesmo seu lado ritualístico. O deus ensina que, sob uma máscara, um mortal (ou
+      mesmo uma divindade) pode ser qualquer um, ou qualquer coisa.
+    </p>
+
+    <p>
+      A máscara seria a maior das defesas, pois protegeria a identidade — algo que engloba corpo, mente e alma.
+      Paradoxalmente, as pessoas também mostram quem são de verdade ao usar uma máscara. Afinal, não há
+      vergonha quando se usa um rosto que não é o seu próprio. Com sua identidade oculta, o que está em seu
+      interior pode aflorar…
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Nunca mostrar sua verdadeira face. Provar-se mais esperto do que os demais.
+    Deixar todos imaginando quem você é. Fazer aquilo que só é possível com anonimato total.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma máscara de baile.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Adaga.</p>
+
+    <p><b>Devotos.</b> Goblins, hynne, medusas, osteon, sílfides, sulfure, bardos, bucaneiros, ladinos, nobres.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Blinar devem sempre usar máscaras em público
+      (a máscara conta como um item vestido). Além disso, uma vez por semana devem fazer um estranho
+      acreditar que sua identidade é outra.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Goblins',
+          'Hynne',
+          'Medusas',
+          'Osteon',
+          'Sílfides',
+          'Sulfure',
+          'Bardos',
+          'Bucaneiros',
+          'Ladinos',
+          'Nobres',
+        ],
+      },
+      {
+        id: 997,
+        nome: 'Caerdellach',
+        tipo: 'Menor',
+        dominios: ['Unicórnios'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_caerdellach.png',
+        paginas: '',
+        armaPreferida: 'Lança',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Talvez exista um unicórnio mais antigo que Caerdellach, mas ninguém se lembra. Sendo,
+      presumivelmente, a mais ancestral dessas criaturas, desde sempre foi procurado por outros de sua espécie,
+      como conselheiro e sábio. Não demorou para começar a ser cultuado e se tornar um verdadeiro deus menor.
+    </p>
+
+    <p>
+      Caerdellach é uma divindade muito distante dos artonianos “civilizados”. Embora existam (raros)
+      unicórnios que se associam a bípedes, o Deus Menor dos Unicórnios não costuma participar desse tipo de
+      aliança. Prefere permanecer em existência reclusa, na Floresta de Tollon, sendo procurado por aqueles que
+      necessitam de conselhos ou a miraculosa cura que seu chifre concede.
+    </p>
+
+    <p>
+      Sua clareira é muitas vezes chamada de Refúgio dos Unicórnios, pois diz-se que nenhum mortal é capaz
+      de alcançá-la sem sua permissão, e todos esses seres delicados encontram lá abrigo e proteção.
+    </p>
+
+    <p>
+      Em vários pontos de Arton, a figura do unicórnio é relacionada ao conceito de pureza. Algumas pessoas
+      (principalmente em culturas rígidas) associam isso à castidade. Assim, existem artonianos de todos os
+      sexos e gêneros que cultuam Caerdellach porque, por alguma razão, valorizam e desejam preservar sua
+      “inocência”.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Preservar e pregar a sacralidade de corpo, mente e alma. Proteger bosques,
+    florestas, clareiras pacíficas, córregos límpidos e outros locais onde os unicórnios habitam. Curar os feridos.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um chifre dourado.</p>
+
+    <p><b>Canalizar Energia.</b> Positiva.</p>
+
+    <p><b>Arma Preferida.</b> Lança.</p>
+
+    <p><b>Devotos.</b> Aggelus, centauros, dahllan, eiradaan, elfos, meios-elfos, sílfides, cavaleiros, druidas,
+    treinadores, paladino.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Caerdellach devem ser sacros e castos, recusando-se a se casar
+      ou ter relações íntimas com outras pessoas. Além disso, não podem recusar pedidos de ajuda de pessoas
+      inocentes ou animais em perigo.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Aggelus',
+          'Centauros',
+          'Dahllan',
+          'Eiradaan',
+          'Elfos',
+          'Meios-Elfos',
+          'Sílfides',
+          'Cavaleiros',
+          'Druidas',
+          'Treinadores',
+          'Paladino',
+        ],
+      },
+      {
+        id: 996,
+        nome: 'Canastra',
+        tipo: 'Menor',
+        dominios: ['Armadilhas'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_canastra.png',
+        paginas: '13',
+        armaPreferida: 'Rede',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Um deus pequeno e esguio, com personalidade teatral, Canastra esconde sua inteligência e o perigo que
+      representa, fingindo ser indefeso. Protege aqueles que usam de esperteza e artimanhas para vencer e
+      diverte-se com devotos capazes de encontrar um jeitinho de se virar em situações perigosas.
+    </p>
+
+    <p>
+      Embora possua muitos servos em palácios, também é reverenciado por todo tipo de caçadores, desde meros
+      aldeões que usam de armadilhas para capturar pequenos animais até caçadores de monstros ou recompensas,
+      que guiam suas presas para as mais mortais emboscadas.
+    </p>
+
+    <p>
+      Canastra também tem outros devotos mais sofisticados… e mais perigosos. Em várias partes de Arton,
+      projetistas de masmorras cultuam este deus, em busca de inspiração para suas criações mortíferas e
+      engenhosas. De fato, alguns teólogos especulam que o próprio Hyninn possa sentir algum “ciúme” desse
+      culto. Outros afirmam que Canastra é um fantoche de Hyninn, para que o Deus da Trapaça possa influenciar
+      o mundo ainda mais, mantendo sua fachada “inofensiva”.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Planejar adiante. Estar sempre um passo à frente. Emboscar inimigos.
+    Preparar armadilhas. Manipular outros a seu favor.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma armadilha arataca.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Rede.</p>
+
+    <p>
+      <b>Devotos.</b> Finntroll, gnolls, goblins, harpias, hynne, kliren, kobolds, nezumi, sílfides, trogs, bardos,
+      caçadores, inventores, ladinos.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Canastra devem sempre estar um passo à frente de seus adversários.
+      Uma vez por dia (ou por sessão de jogo, o que demorar mais), devem executar uma armadilha ou uma
+      emboscada com sucesso.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Finntroll',
+          'Gnolls',
+          'Goblins',
+          'Harpias',
+          'Hynne',
+          'Kliren',
+          'Kobolds',
+          'Nezumi',
+          'Sílfides',
+          'Trogs',
+          'Bardos',
+          'Caçadores',
+          'Inventores',
+          'Ladinos',
+        ],
+      },
+      {
+        id: 995,
+        nome: 'Canora',
+        tipo: 'Menor',
+        dominios: ['Canção'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deusa_canora.png',
+        paginas: '',
+        armaPreferida: 'Florete',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Com a aparência de uma donzela esguia, pálida e com olheiras, esta deusa é capaz de modular a voz como
+      quiser, da melodia mais doce a um guincho doloroso ou mesmo mortal. Suas canções são capazes de agradar
+      os mais distintos gostos e seu repertório é infinito — desde as mais delicadas melodias élficas até as mais
+      poderosas óperas anãs. Do canto suave de pássaros aos berros agonizantes dos moribundos. Seus devotos
+      são ensinados a fazer o mesmo, usando suas vozes para incitar todos os tipos de emoções.
+    </p>
+
+    <p>
+      A voz de Canora pode ressoar com materiais específicos, destruindo-os com a mesma facilidade com que
+      ela encanta seu público. A deusa não aprecia o uso de sua arte como arma, mas sabe que às vezes isso é
+      necessário.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> A melodia é a perfeição. Treino vocal é imprescindível. O canto é a mais perfeita
+    forma de arte e o jeito certo de conquistar corações. A voz é a mais poderosa das armas.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma flor em forma de nota musical.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Florete.</p>
+
+    <p>
+      <b>Devotos.</b> Anões, elfos, harpias, hynne, qareen, sátiros, sereias/tritões, sílfides, arcanistas, bardos,
+      bucaneiros, nobres, paladino.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Canora nunca recusam uma oportunidade de cantar. Além disso,
+      uma vez por semana (ou por sessão de jogo, o que demorar mais), devem se apresentar para uma grande
+      plateia, como uma taverna lotada, a corte de um nobre local ou um festival em uma vila.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Anões',
+          'Elfos',
+          'Harpias',
+          'Hynne',
+          'Qareen',
+          'Sátiros',
+          'Sereias/Tritões',
+          'Sílfides',
+          'Arcanistas',
+          'Bardos',
+          'Bucaneiros',
+          'Nobres',
+          'Paladino',
+        ],
+      },
+      {
+        id: 994,
+        nome: 'Cette',
+        tipo: 'Menor',
+        dominios: ['Arqueiros'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_cette.png',
+        paginas: '',
+        armaPreferida: 'Arco longo',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Cette era um deus antigo, que transcendeu até mesmo a extrema longevidade élfica muito antes da queda
+      de Lenórienn — alguns dizem que já era uma divindade menor quando os elfos chegaram a Arton. Suas
+      maneiras, seu estilo de luta e sua própria aparência remetem a um tempo em que os elfos nunca haviam sido
+      humilhados, mas também a uma época ainda sem a arrogância e a autoconfiança excessiva que foram sua
+      perdição. De certa forma, Cette foi um símbolo de tudo que os elfos deveriam ter sido: perfeitos, mas sem
+      nenhuma noção de superioridade.
+    </p>
+
+    <p>
+      Embora representasse uma das maiores tradições élficas, Cette não parecia ter grande ligação com Glórienn.
+      De alguma forma, ao personificar a disciplina do arco e flecha, Cette se concentrou na arma e se afastou de
+      todo o resto. Também adquiriu certas características do arco (flexível, adquire força sob pressão) e da flecha
+      (direto, rápido, sem meandros). Assim, continuava apresentando a típica postura élfica de séculos atrás:
+      refinamento, delicadeza e tranquilidade, sem empáfia.
+    </p>
+
+    <p>
+      Cette perdeu muitos seguidores no período entre a chegada dos elfos a Arton e a queda de Glórienn — pois,
+      durante esse tempo, a raça se voltou cada vez mais para sua deusa padroeira, de forma quase exclusiva.
+      Mesmo assim, o Deus dos Arqueiros não parecia se abalar. Continuava pronto para defender as tradições
+      élficas, como sempre fizera.
+    </p>
+
+    <p>
+      De certa forma, Cette era uma divindade simples: não desafiava a compreensão nem adquiria formas
+      metafísicas. Era um elfo esguio, de longos cabelos verdes presos em tranças, tão leve que ao andar seus pés
+      mal tocavam o chão. Seu arco era tão alto quanto ele mesmo. Vestia-se com a mais fina malha élfica, trançada
+      com folhas vivas. Era um guerreiro eficiente, franco e até mesmo bem-humorado. Sua morte na Batalha de
+      Tamu-ra em 1405 foi uma grande perda para Arton.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Manter vivas as tradições de arquearia élficas. Treinar e aperfeiçoar-se nas artes
+    do tiro e da guerra. Honrar juramentos. Lutar por causas justas. Demonstrar força sob pressão e franqueza
+    nas palavras.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma flecha com folhas verdes.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Arco longo.</p>
+
+    <p>
+      <b>Devotos.</b> Elfos, medusas, naidoras, caçadores, inventores, guerreiros, nobres, paladino.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> As únicas armas empunhadas que o devoto de Cette pode usar são arcos.
+      Além disso, para atacar com outras armas (como naturais), ele deve fazer ao menos um ataque com arco
+      na rodada.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Elfos', 'Medusas', 'Naidoras', 'Caçadores', 'Inventores', 'Guerreiros', 'Nobres', 'Paladino'],
+      },
+      {
+        id: 993,
+        nome: 'Champarr',
+        tipo: 'Menor',
+        dominios: ['Jogos'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_champarr.png',
+        paginas: '',
+        armaPreferida: 'Espada curta',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Patrono dos torneios, dos conflitos e dos jogos, Champarr é a divindade favorita dos atletas, duelistas,
+      jogadores e guerreiros entre os moreau. É o juiz de todas as disputas, desde duelos de espadas até guerras
+      entre reinos, desde jogos de cartas até corridas de cavalos nos Reinos de Moreania. Ele abençoa os vencedores
+      e perdoa (ou amaldiçoa) os perdedores.
+    </p>
+
+    <p>
+      Os adoradores de Champarr conseguem traçar sua origem até os mais distantes domínios extraplanares. Há
+      milhares de anos ele teria participado de um torneio cósmico promovido por um poderoso Deus da Guerra —
+      com certeza Keenn, a menos que todas as escrituras sagradas estejam erradas e tenha havido um Deus da
+      Guerra antes dele! Esse presumivelmente foi o Torneio do Deus Guerreiro, a mesma disputa que rendeu a
+      Arsenal o título de Deus da Guerra.
+    </p>
+
+    <p>
+      Na ocasião, após sucessivas vitórias, Champarr chegou à grande final e duelou contra o deus em pessoa, mas
+      foi derrotado. No entanto, por sua tenacidade, teria recebido a imortalidade e o título de Deus dos Jogos.
+    </p>
+
+    <p>
+      Champarr tem a aparência de um poderoso gladiador, usando um elmo fechado que mantém suas emoções
+      indecifráveis. Está sempre armado com duas espadas curtas idênticas: uma delas concede a bênção da vitória
+      e a outra, a maldição da derrota.
+    </p>
+
+    <p>
+      Champarr é querido em Moreania, especialmente no reino de Brando, onde flâmulas em sua homenagem são
+      hasteadas antes de cada grande torneio, e seus clérigos atuam como juízes. Moreau diante de provações muitas
+      vezes rogam seu nome, para assegurar a vitória.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Reverenciar os jogos. Incitar disputas. Derrotar inimigos. Desafiar a si mesmo.
+    Superar limites. Promover e participar de torneios e jogos. Vencer em condições justas.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um troféu.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Espada curta.</p>
+
+    <p>
+      <b>Devotos.</b> Anões, elfos, hynne, sátiros, sílfides, bardos, bucaneiros, guerreiros, ladinos, lutadores, nobres.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Champarr devem vencer um jogo por dia (ou por sessão de jogo, o
+      que demorar mais). Em termos de regras, devem vencer um teste oposto de Jogatina, Luta ou Pontaria contra
+      um oponente digno (a critério do mestre). Outras perícias podem ser usadas para atender essa obrigação,
+      também a critério do mestre.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Anões',
+          'Elfos',
+          'Hynne',
+          'Sátiros',
+          'Sílfides',
+          'Bardos',
+          'Bucaneiros',
+          'Guerreiros',
+          'Ladinos',
+          'Lutadores',
+          'Nobres',
+        ],
+      },
     ];
   }
 }
