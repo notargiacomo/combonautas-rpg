@@ -1560,6 +1560,871 @@ export class DeusData {
           'Nobres',
         ],
       },
+      {
+        id: 992,
+        nome: 'Dahriol',
+        tipo: 'Menor',
+        dominios: ['Selos'],
+        natureza: 'Mortal Ascendido',
+        status: '1',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_dahriol.png',
+        paginas: '',
+        armaPreferida: 'Bordão',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Dahriol foi um grande herói eras atrás, responsável por atravessar verdadeiros infernos para entregar mensagens
+      de suma importância que mudaram o destino de reinos inteiros. Qualquer um que quisesse garantir a entrega
+      de sua carta buscava Dahriol e o herói nunca rompeu um selo que não devia — fosse o simples selo de cera
+      de um pergaminho confidencial, fosse o selo místico de uma porta.
+    </p>
+
+    <p>
+      Admirado por milhares, arrebanhou tanto poder que começou a ser considerado um deus por muitas pessoas
+      ajudadas por seus feitos, além de ter inspirado outros mensageiros a se comportar da mesma forma.
+    </p>
+
+    <p>
+      Num mundo em que vencer limites, quebrar barreiras e desvendar segredos são demonstrações de heroísmo
+      valorizadas por quase todos, Dahriol é um defensor daquilo que deve ser mantido fechado, protegido e seguro.
+      Desde entidades malignas que não podem escapar de suas prisões até informações sensíveis que não podem
+      chegar aos olhos e ouvidos de inimigos, tudo que deve ficar selado é domínio de Dahriol. Assim, mesmo sem
+      a fama de outros deuses menores, esta divindade carrega um grande fardo.
+    </p>
+
+    <p>
+      Como recompensa por suas ações e seu senso de dever, Dahriol costuma servir como mensageiro de Tanna-Toh,
+      a Deusa do Conhecimento, e ocasionalmente também de Khalmyr. Além disso, já foi enviado para Arton em
+      missões envolvendo reunir aventureiros e garantir que selos amaldiçoados continuassem intactos.
+    </p>
+
+    <p>
+      Durante sua participação na saga do Disco dos Três, ajudando a impedir que o deus menor Sartan viesse ao
+      mundo, Dahriol foi o instigador de uma das primeiras expedições registradas de aventureiros do continente
+      às proximidades de Galrasia. Assim, também é cultuado por alguns exploradores da ilha.
+    </p>
+
+    <p>
+      Costuma se mostrar aos mortais como um homem velho com longos cabelos e barba branca, vestido com roupas
+      simples e empunhando um cajado de madeira em uma das mãos.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Proteger os selos. Impedir que ameaças seladas causem mal a Arton. Estudar selos
+    místicos e manter o mal afastado através deles.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um selo de cera.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Bordão.</p>
+
+    <p>
+      <b>Devotos.</b> Anões, elfos, qareen, arcanistas, bardos, cavaleiros, guerreiros, nobres, paladino.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Dahriol não podem recusar pedidos de ajuda para entregar mensagens
+      ou impedir que selos sejam abertos. Além disso, não podem abrir selos trancados sem permissão. Para estes
+      fins, um “selo” é qualquer barreira, como uma porta, tranca ou fechadura, mundana ou mágica.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Anões', 'Elfos', 'Qareen', 'Arcanistas', 'Bardos', 'Cavaleiros', 'Guerreiros', 'Nobres', 'Paladino'],
+      },
+      {
+        id: 993,
+        nome: 'Drumak',
+        tipo: 'Menor',
+        dominios: ['Duelo'],
+        natureza: 'Conceito Vivo',
+        status: '1',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_drumak.png',
+        paginas: '',
+        armaPreferida: 'Espada longa',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Diferente da imensa maioria de deuses artonianos, o Deus do Duelo não é uma criatura, mas um título.
+      A cada ano é realizado o Torneio Deus do Duelo, um campeonato secreto no qual lutadores de toda Arton
+      desafiam uns aos outros em duelos formais, em diferentes arenas, muitas vezes mascarando essa competição
+      como simples brigas de rua ou lutas entre aventureiros.
+    </p>
+
+    <p>
+      O vencedor, conhecido como o “Guerreiro de Arton”, é então desafiado pelo Drumak atual. Se o Guerreiro
+      de Arton vence o duelo, ele se torna o novo Deus do Duelo, e parte da personalidade da divindade se une à
+      do campeão.
+    </p>
+
+    <p>
+      O segredo do torneio é mantido para que apenas aventureiros considerados combatentes e dignos saibam de sua
+      existência. Seus participantes formam uma grande confraria, respeitando-se mesmo sendo oponentes ferrenhos.
+      Assim como o deus, seus devotos honram e respeitam duelos formais, jamais interferindo — e jamais se acovardando.
+    </p>
+
+    <p>
+      O torneio ocorre no outono, tradição herdada de eras antigas quando aventureiros tinham a primavera e o verão
+      tomados por missões importantes. No outono, podiam então se dedicar à grande competição.
+    </p>
+
+    <p>
+      Até hoje, nunca houve um caso em que a luta contra Drumak não fosse a mais difícil do torneio. O deus menor
+      usa todas as técnicas, truques e poderes possíveis. Por isso, é comum que o posto permaneça com o hospedeiro
+      atual, pois poucos combatentes conseguem vencê-lo.
+    </p>
+
+    <p>
+      Dizem que a atual Deusa do Duelo, a bárbara Drusilla, está desaparecida há muitos anos. Vários competidores buscam
+      encontrá-la — seja por devoção, seja para desafiá-la.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Honrar duelos individuais. Aventurar-se. Aperfeiçoar a arte do combate.
+    Participar do Torneio Deus do Duelo. Buscar o mais forte.</p>
+
+    <p><b>Símbolo Sagrado.</b> Duas espadas se cruzando.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Espada longa.</p>
+
+    <p>
+      <b>Devotos.</b> Quaisquer combatentes. A critério do mestre, qualquer personagem que use o combate físico
+      como tática principal pode ser convidado ao torneio e assim tornar-se devoto.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Drumak devem competir no Torneio Deus do Duelo e não podem
+      interromper ou recusar lutas justas entre dois oponentes.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Combatentes em geral'],
+      },
+      {
+        id: 994,
+        nome: 'Dunsark',
+        tipo: 'Menor',
+        dominios: ['Mercenários'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_dunsark.png',
+        paginas: '',
+        armaPreferida: 'Espada longa',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Dunsark é um deus guerreiro, um combatente que carrega uma quantidade aparentemente infinita de armas pendendo de seu corpo, sempre interessado em lutar por dinheiro e arriscar-se por lucro. É o protetor das batalhas sem motivos pessoais, dos conflitos sem moralidade. Protege a noção de risco e ganho, a luta por puro interesse.
+    </p>
+
+    <p>
+      Reza a lenda que Dunsark foi um mercenário abençoado que já teve tanto ouro quanto os cofres de Sambúrdia e tantos itens mágicos quanto Arsenal. Seus devotos agarram-se a ele como uma esperança de riqueza e glória, anunciando seu nome após cada vitória em batalha, cada ataque bem-sucedido a um castelo, cada contrato lucrativo.
+    </p>
+
+    <p>
+      Mesmo os mercenários que não acreditam na lenda contam suas histórias ao redor das fogueiras. Sua última grande vitória foi na Batalha de Tamu-ra, em 1405, onde Dunsark enfrentou a Tormenta e escapou para contar a história.
+    </p>
+
+    <p>
+      Apesar de ser viciado em risco e campeão de incontáveis guerras, sua aparência é comum. Soldados supersticiosos desconfiam que qualquer mercenário poderoso sem vínculos de lealdade possa ser Dunsark disfarçado, buscando um novo contrato, uma nova guerra. Durante a Guerra Artoniana, Dunsark foi “visto” inúmeras vezes — talvez nem todos fossem rumores.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Lutar por dinheiro. Planejar e arriscar tudo por ouro, joias e espólios. Usar estratégias e técnicas superiores sempre. Colocar lucro acima de lealdade. Assumir grandes riscos por grandes recompensas.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma espada longa entre joias.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Espada longa.</p>
+
+    <p>
+      <b>Devotos.</b> Gnolls, goblins, kobolds, lefou, nezumi, orcs, osteon, suraggel, trogs, bárbaros, bucaneiros, caçadores, guerreiros, ladinos, lutadores, nobres.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Dunsark não podem recusar aventuras que envolvam recompensa em dinheiro e não podem aceitar aventuras sem esse tipo de pagamento. Além disso, não podem ajudar alguém sem receber algo em troca — e devem ajudar quem estiver disposto a pagar mais.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Gnolls',
+          'Goblins',
+          'Kobolds',
+          'Lefou',
+          'Nezumi',
+          'Orcs',
+          'Osteon',
+          'Suraggel',
+          'Trogs',
+          'Bárbaros',
+          'Bucaneiros',
+          'Caçadores',
+          'Guerreiros',
+          'Ladinos',
+          'Lutadores',
+          'Nobres',
+        ],
+      },
+      {
+        id: 993,
+        nome: 'Elrophin',
+        tipo: 'Menor',
+        dominios: ['Vaidade'],
+        natureza: 'Mortal Ascendido',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_elrophin.png',
+        paginas: '',
+        armaPreferida: 'Espada bastarda',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Não se sabe muito sobre a origem de Elrophin. Alguns dizem que seria filho de Valkaria, e assim um semideus. Também correm histórias de que teria sido um grande bardo, um poderoso guerreiro, ou ambos. Também dizem que Elrophin foi um antigo sumo-sacerdote da Deusa da Ambição, atuante quando Arton Norte ainda não havia sido desbravada.
+    </p>
+
+    <p>
+      As histórias afirmam que Elrophin era tão seguro de si em tudo que fazia que aos poucos foi conquistando tudo que desejava: poderes, vitórias, domínios, amores. Sua lábia e autoconfiança eram lendárias. E assim foi crescendo e conquistando uma legião de admiradores e seguidores, até que acabou por se transformar em um deus menor.
+    </p>
+
+    <p>
+      Talvez esse feito tenha recebido ajuda e bênção da própria Valkaria, que sempre admirou pessoas ambiciosas; outros pensam que Elrophin alcançou a divindade justamente por dar as costas a ela — pois a maior ambição (e a maior vaidade) seria não precisar nem mesmo dos deuses. Muitas lendas correm em torno deste deus — que, embora um tanto obscuro, não deixa de ser poderoso e influente.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Conhecer seu próprio valor e demonstrá-lo. Conquistar o que deseja através da lábia ou da força. Admirar-se e ser a maior prioridade de si mesmo.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma espada bastarda entre rosas.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Espada bastarda.</p>
+
+    <p>
+      <b>Devotos.</b> Elfos, goblins, medusas, minauros, minotauros, naidoras, qareen, suraggel, tabrachi, bardos, bucaneiros, cavaleiros, guerreiros, lutadores, nobres.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Elrophin devem pregar o quanto eles mesmos — e seu deus — são incríveis e convencer pessoas de seus feitos pelo menos uma vez por dia (ou por sessão de jogo, o que demorar mais). Em termos de jogo, uma ação exigindo um teste de Diplomacia com CD mínima 15 + metade do seu nível.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Elfos',
+          'Goblins',
+          'Medusas',
+          'Minauros',
+          'Minotauros',
+          'Naidoras',
+          'Qareen',
+          'Suraggel',
+          'Tabrachi',
+          'Bardos',
+          'Bucaneiros',
+          'Cavaleiros',
+          'Guerreiros',
+          'Lutadores',
+          'Nobres',
+        ],
+      },
+      {
+        id: 992,
+        nome: 'Escamandra',
+        tipo: 'Menor',
+        dominios: ['Permanência'],
+        natureza: 'Mortal Ascendido',
+        status: '1',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_escamandra.png',
+        paginas: '',
+        armaPreferida: 'Arco curto',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Antes de ser uma deusa, Escamandra foi uma grande líder entre as medusas, acolhendo aquelas que eram caçadas como monstros séculos atrás. Na Floresta dos Basiliscos, em certa área que passou a ser conhecida como Santuário das Estátuas Eternas, Escamandra criou um ambiente seguro para abrigar suas irmãs e, por esse feito, passou a ser adorada.
+    </p>
+
+    <p>
+      Aos poucos, a área ao redor do Santuário passou a abrigar mais e mais “estátuas de pedra”, na verdade pretensos intrusos que eram petrificados por Escamandra antes que pudessem ameaçar suas protegidas. Para contribuir com os objetivos de sua deusa, as medusas devotas de Escamandra passaram a domesticar os basiliscos da região — e até mesmo outros lagartos enormes sem poderes de petrificação —, usando-os para reduzir as suspeitas sobre as frequentes transformações de visitantes da floresta em estátuas.
+    </p>
+
+    <p>
+      A deusa Escamandra, uma medusa belíssima, de olhar fulminante e cabelos serpentinos cor de mármore, despreza invasores e envia seus devotos para atacar qualquer um que se aproxime demais de seu santuário — petrificando-os e transformando-os em mais das “estátuas eternas” que dão nome ao local. No entanto, há registros de pessoas que conseguiram dialogar com Escamandra e até mesmo se converteram à sua causa, passando a espalhar sua palavra por Arton.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Proteger as medusas e sua cultura. Proteger o Santuário das Estátuas Eternas e manter sua localização em sigilo, exceto de medusas em busca de abrigo. Lutar pela permanência e defender a imutabilidade.</p>
+
+    <p><b>Símbolo Sagrado.</b> Olhos de cobra em uma face de mármore.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Arco curto.</p>
+
+    <p>
+      <b>Devotos.</b> Anões, centauros, elfos, golens, medusas, osteon, arcanistas, bárbaros, caçadores, cavaleiros, druidas, nobres.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Escamandra não podem causar dano letal ou perda de PV a medusas, nagahs, trogs e outras criaturas relacionadas com cobras (fornecer bônus em dano letal contra elas também é proibido) a critério do mestre. Podem causar dano não letal e prejudicar essas criaturas (em termos de jogo, impondo condições), desde que não causem dano letal ou perda de PV. Além disso, não podem recusar pedidos de ajuda de medusas inocentes.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Anões',
+          'Centauros',
+          'Elfos',
+          'Golens',
+          'Medusas',
+          'Osteon',
+          'Arcanistas',
+          'Bárbaros',
+          'Caçadores',
+          'Cavaleiros',
+          'Druidas',
+          'Nobres',
+        ],
+      },
+      {
+        id: 991,
+        nome: 'Esmeralda',
+        tipo: 'Menor',
+        dominios: ['Joias'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_esmeralda.png',
+        paginas: '',
+        armaPreferida: 'Picareta',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Quando ainda era apenas humana, Esmeralda já atuava como uma excelente joalheira e ourives, procurada por especialistas em joias de todo o Reinado. Em meio à infindável batalha entre falsificadores de preciosidades e nobres exigentes, dizia-se que ninguém era mais confiável que Esmeralda para atestar a fidelidade de uma joia. Contudo, apesar de famosa, a ourives era misteriosa e enigmática; sabia que, se sua verdadeira identidade fosse descoberta por contrabandistas e falsificadores, sua vida estaria em risco.
+    </p>
+
+    <p>
+      Inevitavelmente, Esmeralda desapareceu e, na ausência de alguém igualmente competente, vários comerciantes e até mesmo nobres ergueram templos e passaram a orar por seu retorno — uma medida desesperada para evitar que suas joalherias fossem à falência, ou apenas para que não precisassem estar privados de suas obras. Aos poucos, as joias fabricadas enquanto Esmeralda estava desaparecida passaram a ser consideradas falsas, ou ao menos de qualidade inferior. Sem Esmeralda, nada podia ser realmente precioso. Todos desejavam a volta de Esmeralda que, inesperadamente, atendeu aos desejos daqueles que, a essa altura, já eram seus fiéis. Mas, quando retornou, não era mais a mesma.
+    </p>
+
+    <p>
+      Ela agora lembrava uma aristocrata humana, mas sua pele era feita de diamante e seus olhos eram gemas coloridas. Vendo nisso um sinal claro do significado transcendental da ourives, seus devotos passaram a espalhar sua palavra. Após seu retorno, podia haver mais uma vez joias “verdadeiras”.
+    </p>
+
+    <p>
+      Os devotos de Esmeralda aprendem as nuances dos metais valiosos e pedras preciosas, reconhecem o valor potencial de gemas brutas e honram sua deusa usando ou fabricando as mais deslumbrantes joias. Contudo, desprezam de forma quase irracional as joias fabricadas durante o curto período em que ela esteve desaparecida. Para eles, peças dessa época infeliz são como itens malditos.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Fabricar joias. Identificar pedras preciosas. Usar as mais finas preciosidades. Exalar a nobreza. Exibir a riqueza dos minérios.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um colar de ouro com um pingente de esmeralda.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Picareta.</p>
+
+    <p>
+      <b>Devotos.</b> Anões, elfos, qareen, sílfides, arcanistas, bardos, bucaneiros, inventores, ladinos, nobres.
+    </p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Esmeralda devem usar um item na forma de uma joia — que sempre será considerado um item vestido. A joia deve estar exposta. Se não estiver usando uma joia por motivo justificável (se for furtado ou preso, por exemplo), o devoto tem um dia para voltar a usar uma joia antes de descumprir estas Obrigações & Restrições.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Anões',
+          'Elfos',
+          'Qareen',
+          'Sílfides',
+          'Arcanistas',
+          'Bardos',
+          'Bucaneiros',
+          'Inventores',
+          'Ladinos',
+          'Nobres',
+        ],
+      },
+      {
+        id: 990,
+        nome: 'Garanaam',
+        tipo: 'Menor',
+        dominios: ['Charadas'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_garanaam.png',
+        paginas: '',
+        armaPreferida: 'Bordão',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Um homem com traços de esfinge, que sempre falava em metáforas, enigmas e perguntas, Garanaam pregava que as respostas só poderiam ser obtidas vendo as coisas por outro ponto de vista e que as mais importantes verdades se escondem da obviedade. Ao mesmo tempo, ensinava a seus devotos que só aqueles capazes de pensar fora dos padrões comuns e ver o que não é evidente eram dignos de suas bênçãos.
+    </p>
+
+    <p>
+      Diz-se que, apesar de um dia ter sido um mortal, Garanaam não guarda nenhuma semelhança com a pessoa que era antes de ascender. Sua aparência, sotaque, maneirismos e até mesmo seu nome teriam sido totalmente diferentes. De fato, talvez haja uma charada no próprio nome de Garanaam, além de um prêmio místico para quem for capaz de decifrá-la. Ao se tornar um deus menor, Garanaam virou ele mesmo uma charada, um enigma em forma de divindade.
+    </p>
+
+    <p>
+      Garanaam foi recrutado por Orion Drake para o Exército de Deuses e lutou na Batalha de Tamu-ra. Contudo, diferente da maioria das divindades menores que participaram desse conflito, o Deus das Charadas não está morto! Ao entrar na área de Tormenta de Tamu-ra, Garanaam se deparou com os lefeu e enlouqueceu. Em sua mente surgia a charada suprema: o que são aquelas criaturas? Qual a forma real dos demônios da Tormenta, meramente traduzidos pelos cérebros artonianos em quelíceras e carapaças rubras?
+    </p>
+
+    <p>
+      O Deus das Charadas agarrou as têmporas e caiu de joelhos, gargalhando insanamente. Quando a batalha acabou e a Tormenta foi sugada de volta para a Anticriação, Garanaam foi resgatado e levado de volta ao continente junto com os deuses feridos, mas carregava em sua mente a loucura que vivenciou. Hoje se veste com panos sujos e puídos. Seu cajado com a forma de um ponto de interrogação está quebrado. No entanto, suas charadas são ainda mais elaboradas: por trás de sua loucura, Garanaam mantém uma lógica em seus enigmas.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Testar a inteligência dos artonianos. Jogar com as palavras. Compreender significados. Propor enigmas. Esconder o que é óbvio.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um ponto de interrogação.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Bordão.</p>
+
+    <p><b>Devotos.</b> Goblins, kliren, qareen, arcanistas, bardos, bucaneiros, inventores, ladinos.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Um devoto de Garanaam deve, pelo menos uma vez por cena, responder a uma pergunta com um enigma, uma charada ou um jogo de palavras que devem ser decifrados por quem perguntou.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Goblins', 'Kliren', 'Qareen', 'Arcanistas', 'Bardos', 'Bucaneiros', 'Inventores', 'Ladinos'],
+      },
+      {
+        id: 989,
+        nome: 'Garth',
+        tipo: 'Menor',
+        dominios: ['Pólvora'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_garth.png',
+        paginas: '',
+        armaPreferida: 'Pistola',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Garth é um caso triste de um deus menor que odeia aquilo que governa. A maioria daqueles que usam armas de pólvora conhece a história de seu passado. Garth foi o pistoleiro mais sanguinário que já existiu. Era um bandido terrível, mas relutava em matar pessoas indefesas (embora tenha feito isso algumas vezes). Exceto por esses casos, se a morte fosse o caminho mais fácil ou eficiente, mesmo que desnecessário, Garth sempre escolhia-o e, assim, tornou-se temido e caçado nas infindáveis planícies de Petrynia, antes que esse território fizesse parte do Império de Tauron.
+    </p>
+
+    <p>
+      Contudo, pelo amor a uma mulher capaz de ver bondade dentro dele, Garth cansou da vida sem sentido e tentou se regenerar. Ambos se casaram, tiveram um filho e viveram em paz numa pequena fazenda por alguns anos, sem que Garth disparasse um único tiro. O temido pistoleiro passou a ver que as armas de fogo tinham sido uma prisão, uma maldição.
+    </p>
+
+    <p>
+      Infelizmente, o destino tinha outros planos para ele. Um bando de pistoleiros surgiu na fazenda, aproveitando sua ausência. Roubaram todo o pouco dinheiro que a família possuía. Mataram sua mulher e filho. Ao chegar em casa, Garth não parou sequer para enterrar os cadáveres. Pegou as pistolas e saiu em busca dos assassinos, caçando-os um a um.
+    </p>
+
+    <p>
+      Sua alma voltou a endurecer e ele aceitou que nunca teria redenção verdadeira. Garth odiava suas pistolas, mas elas eram tudo que ele tinha. Sua história se espalhou, pistoleiros passaram a cultuá-lo e logo se tornou o Deus Menor da Pólvora. Como uma divindade, poderia trazer sua família de volta à vida — mas sabe ser tarde para isso. Suas mortes, e a jornada de vingança que ele empreendeu, transformaram-no.
+    </p>
+
+    <p>
+      Hoje em dia, Garth existe apenas para espalhar mais morte, difundir a ciência letal das armas de pólvora que ele tanto odeia, com pistolas que nunca precisam ser recarregadas. Em seu coração, apenas ódio.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Matar. Matar rápido. Matar sempre. Jamais oferecer perdão ou rendição. Vingar-se de tudo e todos.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma pistola.</p>
+
+    <p><b>Canalizar Energia.</b> Negativa.</p>
+
+    <p><b>Arma Preferida.</b> Pistola.</p>
+
+    <p><b>Devotos.</b> Anões, goblins, hobgoblins, kliren, meios-orcs, minauros, osteon, sulfure, bucaneiros, caçadores, inventores, ladinos.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Garth não podem poupar inimigos nem aceitar ou oferecer perdão. Além disso, devem se vingar (de forma letal, usando armas de pólvora) de qualquer um que os prejudique seriamente.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Negativa',
+        devotos: [
+          'Anões',
+          'Goblins',
+          'Hobgoblins',
+          'Kliren',
+          'Meios-orcs',
+          'Minauros',
+          'Osteon',
+          'Sulfure',
+          'Bucaneiros',
+          'Caçadores',
+          'Inventores',
+          'Ladinos',
+        ],
+      },
+      {
+        id: 988,
+        nome: 'Goharom',
+        tipo: 'Menor',
+        dominios: ['Machados'],
+        natureza: 'Mortal Ascendido',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_goharom.png',
+        paginas: '',
+        armaPreferida: 'Machado anão',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Goharom era um dos deuses anões mais antigos e, à primeira vista, poderia ser confundido com um simples guerreiro da raça. Sua aparência não entregava a verdadeira natureza divina. Era um anão forte, de estatura impressionante, barbudo, sempre trajando armadura pesada e empunhando um imenso machado. Conta-se que, ocasionalmente, Goharom visitava Doherimm apenas para beber grandes quantidades de cerveja nas tavernas, e os outros frequentadores não percebiam estar na presença de um deus até notarem sua resistência fora do comum. Quando essas visitas terminavam, várias tavernas estavam sem estoque e a Guilda dos Cervejeiros precisava enviar carregamentos emergenciais.
+    </p>
+
+    <p>
+      Em sua vida mortal, Goharom era um habilidoso armeiro e guerreiro anão, especializado no uso de machados. Sua devoção a Rhond, o Deus das Armas, era evidente, mas ele próprio passou a ser cultuado quando suas criações se mostraram incomparáveis, superando tudo que os anões conheciam. Goharom poderia ter se tornado grão-mestre da Guilda dos Armeiros ou até mesmo rei, se quisesse. Contudo, essa nunca foi sua ambição. Após transcender a mortalidade, deixou Doherimm para espalhar a paixão pelos machados por toda Arton.
+    </p>
+
+    <p>
+      Goharom tinha uma ligação profunda com as armas que governava. Ao se concentrar, conseguia sentir e até visualizar qualquer criatura que empunhava um machado em Arton. Ele acreditava que o machado é uma arma essencialmente anã e seu uso propaga a cultura e estilo de vida dos anões. Isso se devia, em parte, à natureza do machado: uma arma que nunca é embainhada, está sempre pronta para ser usada. Contudo, nem mesmo seu poderoso machado pode protegê-lo da Tormenta, tendo seu fim nas mãos da tempestade rubra em 1405, na Batalha de Tamu-ra.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Forjar e usar os melhores machados. Honrar e proteger a raça, a cultura e as tradições anãs. Admirar machados como obras de arte, mas respeitá-los e usá-los como as ferramentas de trabalho ou guerra que são.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um machado.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Machado anão.</p>
+
+    <p><b>Devotos.</b> Anões, galokk, trogs, bárbaros, caçadores, cavaleiros, guerreiros, inventores.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> As únicas armas empunhadas que o devoto de Goharom pode usar são machados. Além disso, para atacar com outras armas (como naturais), ele deve fazer ao menos um ataque com machado na rodada.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: ['Anões', 'Galokk', 'Trogs', 'Bárbaros', 'Caçadores', 'Cavaleiros', 'Guerreiros', 'Inventores'],
+      },
+      {
+        id: 987,
+        nome: 'Granto',
+        tipo: 'Menor',
+        dominios: ['Escultores'],
+        natureza: 'Mortal Ascendido',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_granto.png',
+        paginas: '',
+        armaPreferida: 'Martelo leve',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Granto era um anão robusto e entroncado, cuja presença impunha respeito e admiração. Sua figura era uma verdadeira representação da força e resiliência da raça anã, com músculos visíveis sob a pele áspera e firme. Sua barba era longa e espessa, de um cinza profundo, cuidadosamente moldada em formas minuciosas que narravam a grandiosa história de seu povo. Cada mecha carregava símbolos e figuras que representavam feitos heroicos, batalhas épicas e lendas passadas, desde os primeiros dias de sua civilização até os eventos mais recentes que marcaram sua história.
+    </p>
+
+    <p>
+      As cicatrizes que atravessavam seu corpo tinham um caráter especial, pois, observadas mais de perto, revelavam formas surpreendentemente belas, como se cada uma fosse testemunho da resistência e coragem que o anão acumulou ao longo da vida. Granto, embora fosse um anão (e não um golem ou outro construto), era uma escultura viva, mais estátua do que gente.
+    </p>
+
+    <p>
+      Tudo que Granto tocava tinha o potencial de assumir uma forma bela, incluindo o que golpeava com seu estonteante martelo, fosse um objeto ou uma criatura. Até mesmo rachaduras em superfícies que ele martelava adquiriam formas artísticas. Mas, verdadeiro ao espírito anão de praticidade e utilitarismo, tudo que Granto fazia também tinha um propósito. Quando fez parte do Exército de Deuses de Orion Drake, Granto propôs construir uma imensa ponte do continente até Tamu-ra, para que não precisassem usar navios. E, quando esse plano foi rejeitado, Granto esculpiu os acrostólios que o general requisitou para adornar as proas das naus.
+    </p>
+
+    <p>
+      Granto foi morto pelas forças lefeu durante a Batalha de Tamu-ra. No entanto, muitas de suas obras continuam adornando os salões de Doherimm, além de vários lugares da superfície.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Esculpir as mais belas obras de arte. Valorizar e pregar a importância do trabalho duro. Honrar e proteger a cultura e as tradições dos escultores. Unir estética e função.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um cinzel e um martelo.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Martelo leve (Heróis de Arton, p. 221).</p>
+
+    <p><b>Devotos.</b> Anões, golens, kliren, qareen, bárbaros, cavaleiros, guerreiros, inventores, lutadores, nobres.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Granto devem fabricar ou consertar uma escultura (um item não consumível simples com preço de T$ 150 por patamar) pelo menos uma vez por aventura.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Anões',
+          'Golens',
+          'Kliren',
+          'Qareen',
+          'Bárbaros',
+          'Cavaleiros',
+          'Guerreiros',
+          'Inventores',
+          'Lutadores',
+          'Nobres',
+        ],
+      },
+      {
+        id: 986,
+        nome: 'Gratissa',
+        tipo: 'Menor',
+        dominios: ['Hospitalidade'],
+        natureza: 'Mortal Ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deusa_gratissa.png',
+        paginas: '',
+        armaPreferida: 'Nenhuma',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Outrora humana, Gratissa foi elevada à divindade por seu empenho em receber bem qualquer um que batesse à sua porta. Sua boa vontade comoveu criminosos, acolheu doentes e evitou conflitos, fazendo de sua imagem um símbolo de paz e aliança. A virtude, venerada por milhares de fiéis, rendeu-lhe a imortalidade.
+    </p>
+
+    <p>
+      A história de Gratissa se confunde com a própria tradição da hospitalidade no Reinado. Alguns historiadores afirmam que, enquanto mortal, Gratissa foi a maior defensora dessa tradição. Sua família descendia de muitos povos nativos de Arton Norte e da Caravana dos Exilados. Assim, foram capazes de notar que essa tradição estava presente em diversas culturas, sendo algo inerente aos costumes humanos. Gratissa teria sido o produto de gerações de educação voltada à hospitalidade.
+    </p>
+
+    <p>
+      Outros, contudo, afirmam que Gratissa deu origem a essa tradição! Ao receber as comitivas de dois lordes inimigos em sua casa durante uma tempestade, a anfitriã obrigou-os (com educação, simplicidade e palavras duras) a deixar de lado suas desavenças enquanto estivessem sob seu teto. O costume ancestral teria se espalhado a partir daí.
+    </p>
+
+    <p>
+      Atualmente, a deusa menor perambula pelo mundo ensinando sobre hospitalidade. Imagens suas podem ser encontradas na entrada de estalagens e residências, um culto ao bom anfitrião. Além disso, viajantes, aventureiros e caravaneiros também aprendem e utilizam as práticas do bom anfitrião mesmo em acampamentos.
+    </p>
+
+    <p>
+      Assim, não é incomum encontrar na estrada grupos muito hospitaleiros e dispostos a oferecer um lugar em suas fogueiras. Na verdade, os devotos de Gratissa afirmam que, no instante em que um grupo de viajantes qualquer prepara uma fogueira e ergue tendas, tem obrigação de acolher qualquer um que peça por sua hospitalidade. Da mesma forma, o acampamento deve ser considerado sua casa e respeitado. A tradição da hospitalidade deve ser preservada, e aqueles que a contrariam não passam de selvagens.
+    </p>
+
+    <p>
+      Entre as muitas aparências que Gratissa adota, a que mais se destaca é a de uma mulher humana com vestes aconchegantes, olhar convidativo e palavras que acalmam a mente e o coração. Sua chegada em qualquer local é capaz de apaziguar os ânimos e promover convivência pacífica, pelo menos enquanto dois ou mais lados em conflito estiverem sob o mesmo teto.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Servir bem a todos os que buscam descanso. Pregar o cuidado. Acolher outros da melhor maneira possível. Praticar e ensinar a tradição da hospitalidade.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma lareira.</p>
+
+    <p><b>Canalizar Energia.</b> Positiva.</p>
+
+    <p><b>Arma Preferida.</b> Não há. Devotos desta deusa não podem lançar a magia Arma Espiritual e similares.</p>
+
+    <p><b>Devotos.</b> Anões, centauros, elfos, hynne, minotauros, qareen, bardos, bucaneiros, caçadores, druidas, nobres, paladino.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Gratissa não podem causar dano, perda de PV e condições (exceto enfeitiçado, fascinado e pasmo) a criaturas inteligentes (Int –3 ou maior) que estejam convivendo, hospedadas ou sendo recebidas no mesmo local (como fregueses em uma taverna ou membros de uma caravana), nem podem fornecer bônus em dano contra essas criaturas. Além disso, não podem recusar hospitalidade a ninguém.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Anões',
+          'Centauros',
+          'Elfos',
+          'Hynne',
+          'Minotauros',
+          'Qareen',
+          'Bardos',
+          'Bucaneiros',
+          'Caçadores',
+          'Druidas',
+          'Nobres',
+          'Paladino',
+        ],
+      },
+      {
+        id: 985,
+        nome: 'Hippion',
+        tipo: 'Menor',
+        dominios: ['Cavalos'],
+        natureza: 'Mortal Ascendido',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_hippion.png',
+        paginas: '',
+        armaPreferida: 'Lança',
+        aceitaPaladinos: true,
+        descricao: `
+    <p>
+      Hippion é um dos poucos deuses menores cultuados como divindade principal de uma nação inteira no Reinado. Em Namalkah, ele é mais venerado até mesmo que Allihanna e Valkaria. Quando os primeiros colonos vindos do continente sul chegaram ao reino, seu contato com o povo nativo foi relativamente pacífico — daí surgiu boa parte da cultura de tropeiros e do nomadismo de Namalkah, inspirada nos centauros. E os povos nativos dessa região já cultuavam o senhor de todos os cavalos, chamado Hippion.
+    </p>
+
+    <p>
+      A origem do culto a Hippion se perde no tempo; ninguém sabe quando ele começou a ser cultuado, apenas que sua religião (o “culto hippionte”) sempre fez parte da cultura local. Hippion era venerado pelos centauros (e por cavalos inteligentes) antes que o primeiro humano pisasse nas terras que viriam a ser Namalkah. Diz a tradição que Hippion era um cavalo imortal mesmo antes de se tornar um deus, tendo servido como montaria ou líder para incontáveis heróis ao longo da história dos povos das coxilhas.
+    </p>
+
+    <p>
+      Quando a Caravana dos Exilados chegou a Arton Norte, um dos primeiros povos a fazer contato pacífico com os refugiados foram as Amazonas de Hippion, durante uma peregrinação periódica para a estátua de Valkaria. A rainha amazona se casou com o líder da caravana, consolidando uma tradição de ajuda mútua que perdura até hoje. Assim, Hippion tornou-se um dos deuses menores mais influentes da história do mundo conhecido.
+    </p>
+
+    <p>
+      A devoção a Hippion nunca diminuiu em Namalkah — com a integração de povos nativos e exilados de Lamnor, apenas aumentou. Ginetes e tropeiros o consideram sua principal divindade. Como é costume em Namalkah, muitos o chamam por apelidos grosseiros porém afetuosos (“o bagual eterno”). Diz-se que Hippion frequentemente galopa incógnito, deixando-se montar apenas pelos maiores heróis — sempre em pelo, nunca aceitando sela.
+    </p>
+
+    <p>
+      Contudo, sua presença pode ser reconhecida: ele é seguido por um enorme bando de corcéis, e outros cavalos parecem potros perto dele. Seu pelo é castanho e branco, sua crina é longa e revolta, e ele é capaz de falar. Hippion encarna tudo o que os cavalos são: força, velocidade, selvageria e lealdade. Acredita que cada um deve cumprir seu papel: o cavalo deve ser montado e carregar, o cavaleiro deve montar e lutar.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Reverenciar Hippion e respeitar os cavalos. Defender o vínculo e promover a harmonia entre montarias e ginetes. Combater monstros, mortos-vivos e criaturas que perturbem o equilíbrio natural. Galopar.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um cavalo galopando.</p>
+
+    <p><b>Canalizar Energia.</b> Positiva.</p>
+
+    <p><b>Arma Preferida.</b> Lança.</p>
+
+    <p><b>Devotos.</b> Aggelus, centauros, eiradaan, bárbaros, caçadores, cavaleiros, druidas, guerreiros, nobres, treinadores, paladino.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Hippion jamais podem matar cavalos, nem mesmo variantes monstruosas (como cavalos glaciais). Também não podem permitir que cavalos sejam assassinados ou maltratados. Além disso, nunca podem usar selas ou equipamentos de montaria enquanto estiverem montados.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: true,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Positiva',
+        devotos: [
+          'Aggelus',
+          'Centauros',
+          'Eiradaan',
+          'Bárbaros',
+          'Caçadores',
+          'Cavaleiros',
+          'Druidas',
+          'Guerreiros',
+          'Nobres',
+          'Treinadores',
+          'Paladino',
+        ],
+      },
+      {
+        id: 984,
+        nome: 'Hurlaagh',
+        tipo: 'Menor',
+        dominios: ['Hobgoblins'],
+        natureza: 'Entidade Primordial',
+        status: '3',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_hurlaagh.png',
+        paginas: '',
+        armaPreferida: 'Espada longa',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Hurlaagh é um hobgoblin imponente, com presença nobre e sempre trajado com vestes militares. Representa o auge da cultura marcial hobgoblin, uma tradição que ele próprio ajudou a moldar desde eras imemoriais. Ninguém conhece sua verdadeira origem, mas Hurlaagh fazia parte de um trio de entidades irmãs ligadas à guerra, ao conflito e à brutalidade — deuses menores antes mesmo de existirem mortais para cultuá-los. Seus irmãos eram Ragnar, que ascenderia a Deus da Morte, e Graolak. Cada um criou uma raça que refletia seus valores: Ragnar criou os bugbears, Graolak fez os goblins e Hurlaagh forjou os hobgoblins.
+    </p>
+
+    <p>
+      Enquanto muitas raças do norte durante eras trataram os hobgoblins como meros monstros, a verdade é que eles são muito mais antigos que a humanidade — por dezenas de milhares de anos. Talvez tenham sido a primeira raça de Lamnor a estabelecer fronteiras e reivindicar territórios como seus. Sob a influência de Hurlaagh, os hobgoblins enxergavam a si próprios como conquistadores naturais, donos legítimos de vastas regiões do continente.
+    </p>
+
+    <p>
+      O culto a Hurlaagh cresceu enormemente com a chegada dos elfos a Lamnor e o início da Infinita Guerra, unindo seu povo contra um inimigo comum. Contudo, sua influência declinou quando Ragnar ascendeu a deus maior, tornando-se a divindade principal dos povos goblinoides. Hurlaagh aliou-se então a um grupo de deuses menores que buscava derrubar Thwor para colocar um novo deus dos goblinoides em seu lugar. Há rumores de que seus cultistas infiltraram-se no exército de Thwor antes da queda de Khalifor, mas foram detidos por Gaardalok, sumo-sacerdote de Ragnar.
+    </p>
+
+    <p>
+      Com a queda da Flecha de Fogo, todos os planos de Hurlaagh ruíram. Não se sabe se sua aliança de deuses menores ainda existe ou se desistiu de tentar destronar Thwor. Hoje, embora ainda adorado por algumas comunidades hobgoblins ao sul de Arton, Hurlaagh raramente lidera tropas ou campanhas militares. O Deus dos Hobgoblins se tornou uma figura distante das batalhas que outrora definiram sua existência.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Promover guerra e conflito. Vencer a qualquer custo, seja por força ou estratégia. Jamais oferecer ou aceitar rendição. Jamais demonstrar fraqueza. Proteger a cultura e o modo de vida hobgoblin a qualquer custo.</p>
+
+    <p><b>Símbolo Sagrado.</b> Tambor de guerra hobgoblin.</p>
+
+    <p><b>Canalizar Energia.</b> Negativa.</p>
+
+    <p><b>Arma Preferida.</b> Espada longa.</p>
+
+    <p><b>Devotos.</b> Goblins, hobgoblins, minotauros, orcs, bárbaros, caçadores, cavaleiros, guerreiros.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Hurlaagh jamais podem desobedecer a ordens de um superior — seja um devoto de Hurlaagh de nível mais alto ou um hobgoblin de patente militar superior. Além disso, devem combater “o Mundo Como Deve Ser”, o ideal de ordem e supremacia goblinoide proposto por Thwor.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Negativa',
+        devotos: ['Goblins', 'Hobgoblins', 'Minotauros', 'Orcs', 'Bárbaros', 'Caçadores', 'Cavaleiros', 'Guerreiros'],
+      },
+      {
+        id: 983,
+        nome: 'Hydora',
+        tipo: 'Dragão-Rei',
+        dominios: ['Nuvens', 'Tempestades', 'Dragões-Reais'],
+        natureza: 'Dragão-Real',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_hydora.png',
+        paginas: '',
+        armaPreferida: 'Cimitarra',
+        aceitaPaladinos: false,
+        descricao: `
+    <p>
+      Hydora, o Dragão-Rei das Nuvens, é a própria encarnação das tempestades. Um dos mais poderosos Dragões-Reais de Arton, rivaliza com Benthos e só é superado por Tarso e Sckhar. Um ser marcial, volátil e imprevisível, Hydora muda de humor tão rápido quanto um relâmpago — prometendo algo pela manhã e negando ao anoitecer. Suas alianças mudam como o vento; suas palavras, como dizem em Arton, são tão sólidas quanto uma bolha de sabão.
+    </p>
+
+    <p>
+      Há eras especula-se que Hydora tenha transcendendido a necessidade de tocar o solo. O Dragão-Rei voa quase sem cessar, sem descanso, alimento ou sono. Ele se deleita em tempestades elétricas, cortando nuvens carregadas como quem saboreia a brisa da manhã. Onde há trovoadas, diz-se, Hydora vigia do alto.
+    </p>
+
+    <p>
+      Da união instável entre o dragão e uma heroína élfica surgiram os <i>naidora</i>, também chamados elfos-do-céu. Algumas versões dizem que Hydora raptou a elfa; outras, que foi amor verdadeiro. Conhecendo sua inconstância, talvez as duas histórias sejam verdade. Sua forma humanoide lembra um naidora de asas magníficas que mudam com seu humor, pele clara e longos cabelos azul-tempestade. Em forma dracônica, possui corpo serpentino, asas que misturam morcego e pássaro, e uma coroa de penas formando algo como uma juba. Seus olhos são de tons diferentes de azul.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Reverenciar a altivez de Hydora. Honrar os céus, o vento e a liberdade. Jamais permanecer preso ao chão. Agir segundo os próprios instintos. Ser inconstante, criativo e avesso ao conformismo. Promover o progresso e a inventividade.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma nuvem negra em forma de asa, cuspindo três raios.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Cimitarra.</p>
+
+    <p><b>Devotos.</b> Elfos, kallyanach, kliren, naidoras, qareen, sílfides, suraggel, tengu, arcanistas, bardos, caçadores, cavaleiros, guerreiros, inventores.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Hydora devem manter-se inquietos como o vento, proibidos de passar mais de um dia inteiro com os pés no chão — escalar uma montanha ou voar por uma única rodada já satisfaz o Dragão-Rei. Também não podem fixar moradia em locais baixos ou profundos; sua casa deve estar mais próxima dos céus do que da terra.
+    </p>
+  `,
+        fundamentalista_paladino: '',
+        aceitaDruidas: false,
+        fundamentalista_druida: '',
+        canalizaEnergia: 'Qualquer',
+        devotos: [
+          'Elfos',
+          'Kallyanach',
+          'Kliren',
+          'Naidoras',
+          'Qareen',
+          'Sílfides',
+          'Suraggel',
+          'Tengu',
+          'Arcanistas',
+          'Bardos',
+          'Caçadores',
+          'Cavaleiros',
+          'Guerreiros',
+          'Inventores',
+        ],
+      },
     ];
   }
 }
