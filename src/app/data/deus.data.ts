@@ -1127,7 +1127,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_blinar.png',
         paginas: '',
         armaPreferida: 'Adaga',
         aceitaPaladinos: false,
@@ -1199,7 +1198,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '3',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_caerdellach.png',
         paginas: '',
         armaPreferida: 'Lança',
         aceitaPaladinos: true,
@@ -1347,7 +1345,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deusa_canora.png',
         paginas: '',
         armaPreferida: 'Florete',
         aceitaPaladinos: true,
@@ -1414,7 +1411,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '3',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_cette.png',
         paginas: '',
         armaPreferida: 'Arco longo',
         aceitaPaladinos: true,
@@ -1568,7 +1564,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '1',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_dahriol.png',
         paginas: '',
         armaPreferida: 'Bordão',
         aceitaPaladinos: true,
@@ -1643,7 +1638,6 @@ export class DeusData {
         natureza: 'Conceito Vivo',
         status: '1',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_drumak.png',
         paginas: '',
         armaPreferida: 'Espada longa',
         aceitaPaladinos: true,
@@ -1716,7 +1710,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_dunsark.png',
         paginas: '',
         armaPreferida: 'Espada longa',
         aceitaPaladinos: true,
@@ -1847,7 +1840,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '1',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_escamandra.png',
         paginas: '',
         armaPreferida: 'Arco curto',
         aceitaPaladinos: true,
@@ -1907,7 +1899,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_esmeralda.png',
         paginas: '',
         armaPreferida: 'Picareta',
         aceitaPaladinos: true,
@@ -1969,7 +1960,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_garanaam.png',
         paginas: '',
         armaPreferida: 'Bordão',
         aceitaPaladinos: false,
@@ -2084,7 +2074,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '4',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_goharom.png',
         paginas: '',
         armaPreferida: 'Machado anão',
         aceitaPaladinos: false,
@@ -2129,7 +2118,6 @@ export class DeusData {
         natureza: 'Mortal Ascendido',
         status: '4',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_granto.png',
         paginas: '',
         armaPreferida: 'Martelo leve',
         aceitaPaladinos: false,
@@ -2551,7 +2539,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_jandra.png',
         paginas: '',
         armaPreferida: 'Adaga',
         aceitaPaladinos: false,
@@ -2600,7 +2587,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '4',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_klangor.png',
         paginas: '',
         armaPreferida: 'Martelo de guerra',
         aceitaPaladinos: true,
@@ -2649,7 +2635,6 @@ export class DeusData {
         natureza: 'Objeto desperto',
         status: '1',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_kurur_lianth.png',
         paginas: '',
         armaPreferida: 'Lança',
         aceitaPaladinos: false,
@@ -2811,7 +2796,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deusa_luvithy.png',
         paginas: '',
         armaPreferida: 'Gadanho',
         aceitaPaladinos: false,
@@ -2870,7 +2854,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '3',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deusa_marina.png',
         paginas: '',
         armaPreferida: 'Florete',
         aceitaPaladinos: false,
@@ -2992,7 +2975,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deusa_nerelim.png',
         paginas: '',
         canalizaEnergia: 'Qualquer',
         armaPreferida: 'Arpão',
@@ -3057,7 +3039,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deusa_neruite.png',
         paginas: '',
         canalizaEnergia: 'Qualquer',
         armaPreferida: 'Maça',
@@ -3135,7 +3116,6 @@ export class DeusData {
         natureza: 'Conceito vivo',
         status: '4',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_das_cidades.png',
         paginas: '',
         canalizaEnergia: 'Qualquer',
         armaPreferida: 'Martelo de guerra',
@@ -3212,7 +3192,6 @@ export class DeusData {
         natureza: 'Conceito vivo',
         status: '4',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_do_medo.png',
         paginas: '',
         canalizaEnergia: 'Negativa',
         armaPreferida: 'Corrente de espinhos',
@@ -3290,7 +3269,6 @@ export class DeusData {
         natureza: 'Conceito vivo',
         status: '1',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_piscigeros.png',
         paginas: '',
         canalizaEnergia: 'Negativa',
         armaPreferida: 'Tridente',
@@ -3599,7 +3577,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '2',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deusa_sunnary.png',
         paginas: '',
         canalizaEnergia: 'Positiva',
         armaPreferida: 'Adaga',
@@ -3666,7 +3643,6 @@ export class DeusData {
         natureza: 'Entidade primordial',
         status: '3',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_tamagrah.png',
         paginas: '',
         canalizaEnergia: 'Qualquer',
         armaPreferida: 'Lança',
@@ -3821,7 +3797,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '3',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_tessalus.png',
         paginas: '',
         canalizaEnergia: 'Qualquer',
         armaPreferida: 'Tridente',
@@ -4024,7 +3999,6 @@ export class DeusData {
         natureza: 'Entidade primordial',
         status: '3',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_ur.png',
         paginas: '',
         canalizaEnergia: 'Positiva',
         armaPreferida: 'Bordão',
@@ -4084,7 +4058,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '3',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deusa_yasshara.png',
         paginas: '',
         canalizaEnergia: 'Negativa',
         armaPreferida: 'Espada longa',
@@ -4231,7 +4204,6 @@ export class DeusData {
         natureza: 'Mortal ascendido',
         status: '4',
         referencias: Referencia.GUIA_DEUSES_MENORES,
-        imagem: 'assets/img/deus_zakharov.png',
         paginas: '',
         canalizaEnergia: 'Qualquer',
         armaPreferida: 'Machado anão',
@@ -4302,6 +4274,149 @@ export class DeusData {
           'Lutadores',
           'Paladino',
         ],
+
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
+      {
+        id: 954,
+        nome: 'Lupan',
+        tipo: 'Deus dos Caçadores',
+        natureza: 'Mortal ascendido',
+        status: '2',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_lupan.png',
+        paginas: '',
+        canalizaEnergia: 'Positiva',
+        armaPreferida: 'Arco curto',
+        aceitaPaladinos: true,
+        aceitaDruidas: true,
+
+        descricao: `
+    <p>
+      Lupan é um dos mais antigos deuses menores de Arton, cultuado desde eras anteriores às grandes
+      civilizações. Furtivo e reservado, podia assumir formas humanoides ou animais, sempre à espreita de sua
+      presa. Tradicionalmente considerado filho de Allihanna, simbolizava o aspecto predatório necessário ao
+      equilíbrio natural — um caçador que eliminava apenas aquilo que devia ser eliminado.
+    </p>
+
+    <p>
+      Segundo as tradições, Lupan conhecia profundamente o ciclo da vida e sabia exatamente quais criaturas
+      deveriam morrer para que as populações nunca se desequilibrassem. Assim, seus devotos o viam como um
+      guardião do ciclo natural: não um assassino, mas um regulador da vida selvagem.
+    </p>
+
+    <p>
+      Em 1405, compreendendo a necessidade de devolver Tamu-ra às leis naturais, Lupan se uniu ao exército de
+      deuses liderado por Orion Drake contra o Lorde da Tormenta. Caçou lefeu, combateu monstros e abriu
+      caminho até o coração da Tormenta. No entanto, Crânio Negro, com pontaria infalível, tomou posição no
+      alto de uma colina, empunhando um arco formado de matéria vermelha. Sua primeira flecha foi lançada — e
+      ela atravessou a cabeça de Lupan, matando-o instantaneamente. Assim, o Deus dos Caçadores encontrou
+      seu fim.
+    </p>
+
+    <p>
+      Embora morto, seu culto permanece vivo entre aqueles que seguem a harmonia natural, enxergando em
+      Lupan o ideal eterno do caçador sábio e necessário.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Reverenciar a natureza. Proteger o equilíbrio da vida selvagem. Promover a harmonia
+    entre natureza e civilização. Combater monstros, mortos-vivos e ameaças ao ciclo natural. Caçar apenas para
+    sustento, jamais por crueldade.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um cão de caça.</p>
+
+    <p><b>Canalizar Energia.</b> Positiva.</p>
+
+    <p><b>Arma Preferida.</b> Arco curto.</p>
+
+    <p><b>Devotos.</b> Dahllan, elfos, medusas, sereias/tritões, trogs, bárbaros, caçadores, druidas, ladinos, treinadores.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Lupan não podem matar criaturas não inteligentes (Int –4 ou –5)
+      que estejam grávidas ou sejam filhotes, nem permitir que outros o façam. Além disso, devem extrair algo útil
+      de qualquer criatura não inteligente que matarem — em regras, um teste de Sobrevivência com CD 15 + ND da
+      criatura. Alternativamente, usando o suplemento <i>Ameaças de Arton</i>, devem extrair ao menos um recurso
+      natural da criatura.
+    </p>
+  `,
+
+        devotos: [
+          'Dahllan',
+          'Elfos',
+          'Medusas',
+          'Sereias/tritões',
+          'Trogs',
+          'Bárbaros',
+          'Caçadores',
+          'Druidas',
+          'Ladinos',
+          'Treinadores',
+        ],
+
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
+      {
+        id: 953,
+        nome: 'O Deus Cristal de Urielka',
+        tipo: 'Deus Cristal de Urielka',
+        natureza: 'Objeto desperto',
+        status: '1',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_cristal_urielka.png',
+        paginas: '',
+        canalizaEnergia: 'Positiva',
+        armaPreferida: 'Lança',
+        aceitaPaladinos: true,
+        aceitaDruidas: false,
+
+        descricao: `
+    <p>
+      O Deus Cristal de Urielka é um dos mais antigos e curiosos exemplos de como a fé mortal pode despertar
+      uma divindade a partir de um objeto inanimado. Antes da queda da Flecha de Fogo, a aldeia de Urielka,
+      nos ermos de Tyrondir, tinha pouco de notável — exceto por um enorme cristal que atraía viajantes pela
+      simples beleza.
+    </p>
+
+    <p>
+      O cristal nunca exibiu nenhum poder mágico, até que Dealla, uma jovem elfa devastada pela perda de Glórienn,
+      começou a cultuá-lo. Ela se perguntou por que o cristal não era divino — e esse pensamento, aliado às
+      oferendas que passou a deixar, foi suficiente para gerar uma crença inicial.
+    </p>
+
+    <p>
+      Outros aldeões, igualmente carentes de fé, aderiram depressa ao culto. Logo, distorções e exageros criaram
+      uma narrativa de milagres antigos e supostos atos divinos do cristal. Viajantes se juntaram ao culto,
+      espalharam a história e, gradualmente, o cristal despertou como um deus menor, brilhando e comunicando-se
+      com seus devotos.
+    </p>
+
+    <p>
+      Após a queda da Flecha de Fogo, Urielka quase foi destruída, mas o Deus Cristal permaneceu intacto. O local
+      passou a ser visto como um refúgio sagrado no meio das Ruínas de Tyrondir, protegido do lodo negro. Muitos
+      peregrinos encontram ali descanso seguro, cura e bênçãos — o que só fortalece o culto.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Proteger a aldeia de Urielka e sua população. Abençoar forasteiros e viajantes.
+    Expandir a fé no Cristal.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um cristal.</p>
+
+    <p><b>Canalizar Energia.</b> Positiva.</p>
+
+    <p><b>Arma Preferida.</b> Lança.</p>
+
+    <p><b>Devotos.</b> Aggelus, elfos, hynne, qareen, bardos, caçadores, cavaleiros, nobres, paladino.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos do Deus Cristal de Urielka devem peregrinar à aldeia ao menos uma vez
+      por aventura (ou intervalo equivalente). Além disso, uma vez por ano devem retornar levando um novo devoto
+      convertido.
+    </p>
+  `,
+
+        devotos: ['Aggelus', 'Elfos', 'Hynne', 'Qareen', 'Bardos', 'Caçadores', 'Cavaleiros', 'Nobres', 'Paladino'],
 
         fundamentalista_paladino: ``,
         fundamentalista_druida: ``,
