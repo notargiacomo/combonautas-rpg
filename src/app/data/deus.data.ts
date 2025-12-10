@@ -4141,6 +4141,171 @@ export class DeusData {
         fundamentalista_paladino: ``,
         fundamentalista_druida: ``,
       },
+      {
+        id: 956,
+        nome: 'Zadbblein',
+        tipo: 'Dragoa-Rainha das Florestas',
+        natureza: 'Dragão-Real',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deusa_zadbblein.png',
+        paginas: '',
+        canalizaEnergia: 'Negativa',
+        armaPreferida: 'Bordão',
+        aceitaPaladinos: false,
+        aceitaDruidas: true,
+
+        descricao: `
+    <p>
+      Zadbblein, a Dragoa-Rainha das Florestas, é irmã gêmea de Heart, o antigo Dragão-Rei das Montanhas.
+      Embora fisicamente menos poderosa que o irmão, é muito mais inteligente, ardilosa e profundamente ligada
+      à magia. Enquanto Heart era preguiçoso e cruel por comodidade, Zadbblein sempre foi agressiva, territorial
+      e protetora de tudo que considera “seu”.
+    </p>
+
+    <p>
+      Com a morte de Heart pelas mãos do Paladino de Arton, Zadbblein retornou às suas aparições, reclamando
+      para si grandes extensões da Floresta das Escamas Verdes e outras regiões florestais do entorno. Sua energia
+      vital é tão intensa que as florestas se expandem onde ela permanece por longos períodos, o que fez alguns
+      druidas acreditarem que sua presença poderia simbolizar uma reconciliação entre Allihanna e Megalokk.
+      Outros, no entanto, apontam seus atos de crueldade contra intrusos — especialmente mortos-vivos,
+      construtos e criaturas “não naturais”.
+    </p>
+
+    <p>
+      Zadbblein nunca acreditou na falsa ideia de que Megalokk era o “criador dos dragões”. Assim, quando
+      Kallyadranoch retornou ao mundo, preso no corpo da elfa Yadallina, foi uma das primeiras a oferecer-lhe sua
+      magia e sua astúcia. Sua relação com a natureza é peculiar: ao mesmo tempo em que ama e protege as florestas,
+      considera que pode “aperfeiçoá-las” por meio da intervenção arcana.
+    </p>
+
+    <p>
+      Em forma humanoide, Zadbblein se apresenta como uma bela elfa de longos cabelos negros e olhos verdes,
+      trajando roupas que lembram suas próprias escamas. Em forma dracônica, é relativamente pequena para
+      um Dragão-Real, mas ainda assim majestosa: suas escamas têm a cor de esmeraldas polidas e sua presença
+      inspira reverência — ou terror.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Reverenciar Zadbblein. Proteger e aperfeiçoar as florestas. Garantir harmonia entre suas criaturas vivas.
+    Expandir seus domínios. Reforçar a superioridade dos dragões da terra. Expulsar invasores e ameaças.</p>
+
+    <p><b>Símbolo Sagrado.</b> Uma árvore cujas folhas são escamas verdes.</p>
+
+    <p><b>Canalizar Energia.</b> Negativa.</p>
+
+    <p><b>Arma Preferida.</b> Bordão.</p>
+
+    <p><b>Devotos.</b> Centauros, dahllan, eiradann, elfos, kallyanach, sátiros, tabrachi, trogs, arcanistas, bárbaros, caçadores, druidas, guerreiros, treinadores.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos de Zadbblein devem proteger a Floresta das Escamas Verdes e jamais
+      ferir animais ou dragões nativos dessas terras. Além disso, uma vez por mês, devem expandir os domínios
+      ou influência da Dragoa-Rainha de maneira significativa.
+    </p>
+  `,
+
+        devotos: [
+          'Centauros',
+          'Dahllan',
+          'Eiradann',
+          'Elfos',
+          'Kallyanach',
+          'Sátiros',
+          'Tabrachi',
+          'Trogs',
+          'Arcanistas',
+          'Bárbaros',
+          'Caçadores',
+          'Druidas',
+          'Guerreiros',
+          'Treinadores',
+        ],
+
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
+      {
+        id: 955,
+        nome: 'Zakharov',
+        tipo: 'Deus da Bravura',
+        natureza: 'Mortal ascendido',
+        status: '4',
+        referencias: Referencia.GUIA_DEUSES_MENORES,
+        imagem: 'assets/img/deus_zakharov.png',
+        paginas: '',
+        canalizaEnergia: 'Qualquer',
+        armaPreferida: 'Machado anão',
+        aceitaPaladinos: true,
+        aceitaDruidas: false,
+
+        descricao: `
+    <p>
+      Zakharov, um dos mais lendários heróis anões, era tão forte e robusto que sua pele parecia ser feita de
+      pedra talhada. Diferente da maioria de seu povo, raramente usava armadura — preferia enfrentar qualquer
+      adversário de peito aberto, confiando apenas em sua força inabalável e em seu lendário machado mágico,
+      Zakharin. Sua coragem era tamanha que ultrapassou o limite do heroísmo e se tornou devoção; assim,
+      Zakharov ascendeu como Deus da Bravura.
+    </p>
+
+    <p>
+      Suas histórias são inúmeras — e contraditórias. Em certas lendas, enfrentou sozinho um clã inteiro de
+      gigantes do fogo nas profundezas de Doherimm; em outras, caçou uma coluna de finntroll na superfície no
+      mesmo período. Teria encarado a suposta Rainha das Medusas, olhando diretamente para ela até que a
+      criatura se petrificasse, e depois desembaraçado suas serpentes como prova de amizade. Também se diz que
+      domou todos os javalis doheritas, criando a espécie ao desafiar um rinoceronte a “ser mais compacto”.
+    </p>
+
+    <p>
+      Apesar da força e da fama, Zakharov era simples, despojado e até esquecido: às vezes deixava o machado
+      Zakharin em tavernas ou cavernas após aventuras. Em determinada ocasião, ao receber de volta a arma das
+      mãos de uma comitiva de devotos, disse apenas que ficassem com ela e “usassem para algo útil um dia”.
+      Esse gesto inspirou o presente dado pelos anões aos primeiros colonizadores humanos do reino que hoje
+      leva seu nome: Zakharov, cuja capital é Zakharin.
+    </p>
+
+    <p>
+      O paradeiro atual da divindade é desconhecido. Alguns dizem que está cavando um túnel para o outro lado
+      do mundo, só porque seria uma façanha perigosa. Outros acreditam que vaga pela superfície, buscando
+      novos desafios. Há quem o considere morto na Batalha de Tamu-ra, em 1405, enquanto outros garantem que
+      vive tranquilamente em Doher, bebendo cerveja e rindo alto em tavernas anãs.
+    </p>
+
+    <p><b>Crenças e Objetivos.</b> Honrar o povo anão. Defender sua cultura e tradições. Combater finntrolls e inimigos
+    da raça. Demonstrar coragem. Encarar desafios difíceis sem proteção excessiva. Valorizar riscos e feitos heroicos.</p>
+
+    <p><b>Símbolo Sagrado.</b> Um braço segurando o machado Zakharin.</p>
+
+    <p><b>Canalizar Energia.</b> Qualquer.</p>
+
+    <p><b>Arma Preferida.</b> Machado anão.</p>
+
+    <p><b>Devotos.</b> Anões, centauros, golens, minotauros, trogs, bárbaros, cavaleiros, guerreiros, lutadores, paladino.</p>
+
+    <p>
+      <b>Obrigações & Restrições.</b> Devotos devem realizar ao menos uma demonstração genuína de coragem por
+      aventura (ou por mês, conforme o mestre). Isso inclui qualquer ação arriscada capaz de causar morte ou
+      consequências graves, tomada sem preparação que garanta segurança — como enfrentar um ogro sozinho,
+      escalar uma montanha sem equipamento ou pegar para si um item provavelmente amaldiçoado. O mestre tem
+      a palavra final sobre o que constitui um ato de coragem.
+    </p>
+  `,
+
+        devotos: [
+          'Anões',
+          'Centauros',
+          'Golens',
+          'Minotauros',
+          'Trogs',
+          'Bárbaros',
+          'Cavaleiros',
+          'Guerreiros',
+          'Lutadores',
+          'Paladino',
+        ],
+
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
     ];
   }
 }
