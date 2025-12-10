@@ -17,6 +17,31 @@
           </div>
         </div>
         <div class="content">
+          <div class="row mt-4 mb-4">
+            <div class="col-sm-12">
+              <div class="d-flex flex-wrap gap-2">
+                <button *ngIf="item.tipo" class="btn btn-sm btn-outline-secondary" disabled>
+                  {{ item.tipo }}
+                </button>
+                <button *ngIf="item.status" class="btn btn-sm btn-outline-secondary" disabled>
+                  {{ 'Status Divino: ' + item.status }}
+                </button>
+                <button *ngIf="item.canalizaEnergia" class="btn btn-sm btn-outline-secondary" disabled>
+                  {{ 'Canaliza Energia: ' + item.canalizaEnergia }}
+                </button>
+                @if (item.dominios) {
+                  @for (dominio of item.dominios; track dominio) {
+                    <button class="btn btn-sm btn-outline-secondary" disabled>
+                      {{ item.dominios[0] === dominio ? 'Domínios: ' + dominio : dominio }}
+                    </button>
+                  }
+                }
+                <button *ngIf="item.natureza" class="btn btn-sm btn-outline-secondary" disabled>
+                  {{ 'Natureza da Ascenção: ' + item.natureza }}
+                </button>
+              </div>
+            </div>
+          </div>
           <mat-tab-group>
             <mat-tab label="Símbolo" *ngIf="item.simbolo">
               <img [src]="item.simbolo" />

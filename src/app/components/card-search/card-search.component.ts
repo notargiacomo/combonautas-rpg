@@ -61,8 +61,8 @@ export class CardSearchComponent {
     let filter = this.form.value;
     if (this.service && this.service.consult) {
       this.service.consult(filter).subscribe((res: any[]) => {
-        this.objects = res;
-        this.records_number = res.length;
+        this.objects = res.sort((a, b) => a.nome.localeCompare(b.nome));
+        this.records_number = this.objects.length;
       });
     }
   }
