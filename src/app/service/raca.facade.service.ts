@@ -19,9 +19,10 @@ export class RacaFacadeService {
       map(({ racas, poderes }) =>
         racas.map(raca => ({
           ...raca,
-          habilidades: poderes.filter(
-            p => raca.habilidades?.some(h => h.id === p.id) && p.tipo === TipoPoder.HABILIDADE_RACA
-          ),
+          // habilidades: poderes.filter(
+          //   p => raca.habilidades?.some(h => h.id_raca?.includes(p.id)) && p.tipo === TipoPoder.HABILIDADE_RACA
+          // ),
+          habilidades: poderes.filter(p => p.id_raca?.includes(raca.id) && p.tipo === TipoPoder.HABILIDADE_RACA),
           poderes: poderes.filter(p => p.id_raca?.includes(raca.id) && p.tipo === TipoPoder.PODER_RACA),
         }))
       ),
