@@ -18099,7 +18099,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
