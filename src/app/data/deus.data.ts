@@ -1651,7 +1651,7 @@ export class DeusData {
         devotos: ['Anões', 'Elfos', 'Qareen', 'Arcanistas', 'Bardos', 'Cavaleiros', 'Guerreiros', 'Nobres', 'Paladino'],
       },
       {
-        id: 993,
+        id: 991,
         nome: 'Drumak',
         tipo: 'Menor',
         dominios: ['Duelo'],
@@ -1723,7 +1723,7 @@ export class DeusData {
         devotos: ['Combatentes em geral'],
       },
       {
-        id: 994,
+        id: 990,
         nome: 'Dunsark',
         tipo: 'Menor',
         dominios: ['Mercenários'],
@@ -1790,7 +1790,7 @@ export class DeusData {
         ],
       },
       {
-        id: 993,
+        id: 989,
         nome: 'Elrophin',
         tipo: 'Menor',
         dominios: ['Vaidade'],
@@ -1853,7 +1853,7 @@ export class DeusData {
         ],
       },
       {
-        id: 992,
+        id: 988,
         nome: 'Escamandra',
         tipo: 'Menor',
         dominios: ['Permanência'],
@@ -1912,7 +1912,7 @@ export class DeusData {
         ],
       },
       {
-        id: 991,
+        id: 987,
         nome: 'Esmeralda',
         tipo: 'Menor',
         dominios: ['Joias'],
@@ -1973,7 +1973,7 @@ export class DeusData {
         ],
       },
       {
-        id: 990,
+        id: 986,
         nome: 'Garanaam',
         tipo: 'Menor',
         dominios: ['Charadas'],
@@ -2021,7 +2021,7 @@ export class DeusData {
         devotos: ['Goblins', 'Kliren', 'Qareen', 'Arcanistas', 'Bardos', 'Bucaneiros', 'Inventores', 'Ladinos'],
       },
       {
-        id: 989,
+        id: 985,
         nome: 'Garth',
         tipo: 'Menor',
         dominios: ['Pólvora'],
@@ -2087,7 +2087,7 @@ export class DeusData {
         ],
       },
       {
-        id: 988,
+        id: 984,
         nome: 'Goharom',
         tipo: 'Menor',
         dominios: ['Machados'],
@@ -2131,7 +2131,7 @@ export class DeusData {
         devotos: ['Anões', 'Galokk', 'Trogs', 'Bárbaros', 'Caçadores', 'Cavaleiros', 'Guerreiros', 'Inventores'],
       },
       {
-        id: 987,
+        id: 983,
         nome: 'Granto',
         tipo: 'Menor',
         dominios: ['Escultores'],
@@ -2190,7 +2190,7 @@ export class DeusData {
         ],
       },
       {
-        id: 986,
+        id: 982,
         nome: 'Gratissa',
         tipo: 'Menor',
         dominios: ['Hospitalidade'],
@@ -2260,7 +2260,7 @@ export class DeusData {
         ],
       },
       {
-        id: 985,
+        id: 981,
         nome: 'Hippion',
         tipo: 'Menor',
         dominios: ['Cavalos'],
@@ -2325,7 +2325,7 @@ export class DeusData {
         ],
       },
       {
-        id: 984,
+        id: 980,
         nome: 'Hurlaagh',
         tipo: 'Menor',
         dominios: ['Hobgoblins'],
@@ -2374,7 +2374,7 @@ export class DeusData {
         devotos: ['Goblins', 'Hobgoblins', 'Minotauros', 'Orcs', 'Bárbaros', 'Caçadores', 'Cavaleiros', 'Guerreiros'],
       },
       {
-        id: 983,
+        id: 979,
         nome: 'Hydora',
         tipo: 'Dragão-Rei',
         dominios: ['Nuvens', 'Tempestades', 'Dragões-Reais'],
@@ -2434,7 +2434,7 @@ export class DeusData {
         ],
       },
       {
-        id: 982,
+        id: 978,
         nome: 'Inghlblhpholstgt',
         tipo: 'Grande Divindade Anfíbia',
         dominios: ['Pântanos', 'Anfíbios', 'Transformação'],
@@ -2492,7 +2492,7 @@ export class DeusData {
         ],
       },
       {
-        id: 981,
+        id: 977,
         nome: 'Irione',
         tipo: 'Deus da Sedução',
         dominios: ['Sedução', 'Desejo', 'Manipulação'],
@@ -2552,7 +2552,7 @@ export class DeusData {
         ],
       },
       {
-        id: 980,
+        id: 976,
         nome: 'Jandra',
         tipo: 'Deusa das Boas Maneiras',
         dominios: ['Etiqueta', 'Comedimento', 'Civilidade'],
@@ -2600,7 +2600,7 @@ export class DeusData {
         devotos: ['Aggelus', 'Anões', 'Elfos', 'Golens', 'Hynne', 'Minotauros', 'Bardos', 'Cavaleiros', 'Nobres'],
       },
       {
-        id: 979,
+        id: 975,
         nome: 'Klangor',
         tipo: 'Deus das Armaduras',
         dominios: ['Armaduras', 'Forja', 'Proteção'],
@@ -2648,7 +2648,7 @@ export class DeusData {
         devotos: ['Aggelus', 'Anões', 'Cavaleiros', 'Guerreiros', 'Inventores', 'Paladino'],
       },
       {
-        id: 978,
+        id: 974,
         nome: 'Kurur Lianth',
         tipo: 'Deus Vulcão de Khubar',
         dominios: ['Fogo', 'Destruição', 'Renovação'],
@@ -2692,7 +2692,7 @@ export class DeusData {
         devotos: ['Qareen', 'Suraggel', 'Trogs', 'Bárbaros', 'Bardos', 'Druidas', 'Guerreiros', 'Lutadores'],
       },
       {
-        id: 977,
+        id: 973,
         nome: 'Laan',
         tipo: 'Deus das Viagens',
         dominios: ['Viagens', 'Movimento', 'Comunicação'],
@@ -2748,7 +2748,7 @@ export class DeusData {
         ],
       },
       {
-        id: 976,
+        id: 972,
         nome: 'Lamashtu',
         tipo: 'Deusa da Matança',
         dominios: ['Morte', 'Mal', 'Destruição'],
@@ -2809,7 +2809,7 @@ export class DeusData {
         ],
       },
       {
-        id: 975,
+        id: 971,
         nome: 'Luvithy',
         tipo: 'Deusa da Peste',
         dominios: ['Peste', 'Doenças', 'Decadência'],
@@ -2867,7 +2867,7 @@ export class DeusData {
         ],
       },
       {
-        id: 974,
+        id: 970,
         nome: 'Marina',
         tipo: 'Deusa dos Marinheiros',
         dominios: ['Marinheiros', 'Viagens Marítimas', 'Aventura'],
@@ -2929,7 +2929,7 @@ export class DeusData {
         ],
       },
       {
-        id: 973,
+        id: 969,
         nome: 'Mzzileyn',
         tipo: 'Dragão-Rei das Trevas',
         dominios: ['Trevas', 'Sombra', 'Mentira', 'Destruição'],
@@ -2989,7 +2989,7 @@ export class DeusData {
         fundamentalista_druida: '',
       },
       {
-        id: 972,
+        id: 968,
         nome: 'Nerelim',
         tipo: 'Deusa da Água Doce',
         natureza: 'Mortal ascendido',
@@ -3053,7 +3053,7 @@ export class DeusData {
       },
 
       {
-        id: 971,
+        id: 967,
         nome: 'Neruíte',
         tipo: 'Deusa do Sono',
         natureza: 'Mortal ascendido',
@@ -3130,7 +3130,7 @@ export class DeusData {
   `,
       },
       {
-        id: 970,
+        id: 966,
         nome: 'O Deus das Cidades',
         tipo: 'Conceito vivo',
         natureza: 'Conceito vivo',
@@ -3206,7 +3206,7 @@ export class DeusData {
         fundamentalista_druida: '',
       },
       {
-        id: 969,
+        id: 965,
         nome: 'O Deus do Medo',
         tipo: 'Conceito vivo',
         natureza: 'Conceito vivo',
@@ -3283,7 +3283,7 @@ export class DeusData {
         fundamentalista_druida: '',
       },
       {
-        id: 968,
+        id: 964,
         nome: 'Piscigeros',
         tipo: 'Deus dos Homens-Peixes',
         natureza: 'Conceito vivo',
@@ -3361,7 +3361,7 @@ export class DeusData {
   `,
       },
       {
-        id: 967,
+        id: 963,
         nome: 'Rhond',
         tipo: 'Deus das Armas',
         natureza: 'Mortal ascendido',
@@ -3449,7 +3449,7 @@ export class DeusData {
         fundamentalista_druida: '',
       },
       {
-        id: 966,
+        id: 962,
         nome: 'Sartan',
         tipo: 'Deus da Desolação',
         natureza: 'Entidade primordial',
@@ -3517,7 +3517,7 @@ export class DeusData {
   `,
       },
       {
-        id: 965,
+        id: 961,
         nome: 'Sckhar',
         tipo: 'Dragão-Rei do Fogo',
         natureza: 'Dragão-Real',
@@ -3591,7 +3591,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 964,
+        id: 960,
         nome: 'Sunnary',
         tipo: 'Deusa da Culinária',
         natureza: 'Mortal ascendido',
@@ -3657,7 +3657,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 963,
+        id: 959,
         nome: 'Tamagrah',
         tipo: 'Deus da Ilha Viva',
         natureza: 'Entidade primordial',
@@ -3730,7 +3730,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 962,
+        id: 958,
         nome: 'Teldiskan',
         tipo: 'O Gigante Máximo',
         natureza: 'Entidade primordial',
@@ -3811,7 +3811,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 961,
+        id: 957,
         nome: 'Tessalus',
         tipo: 'Deus dos Elfos-do-Mar',
         natureza: 'Mortal ascendido',
@@ -3869,7 +3869,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 960,
+        id: 956,
         nome: 'Toris',
         tipo: 'Deusa de Jallar',
         natureza: 'Entidade primordial',
@@ -3936,7 +3936,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 959,
+        id: 955,
         nome: 'Tukala',
         tipo: 'Deusa dos Texugos Alados',
         natureza: 'Mortal ascendido',
@@ -4013,7 +4013,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 958,
+        id: 954,
         nome: 'Ur',
         tipo: 'Deus dos Carvalhos',
         natureza: 'Entidade primordial',
@@ -4072,7 +4072,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 957,
+        id: 953,
         nome: 'Yasshara',
         tipo: 'Deusa da Opressão',
         natureza: 'Mortal ascendido',
@@ -4135,7 +4135,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 956,
+        id: 952,
         nome: 'Zadbblein',
         tipo: 'Dragoa-Rainha das Florestas',
         natureza: 'Dragão-Real',
@@ -4218,7 +4218,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 955,
+        id: 951,
         nome: 'Zakharov',
         tipo: 'Deus da Bravura',
         natureza: 'Mortal ascendido',
@@ -4299,7 +4299,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 954,
+        id: 950,
         nome: 'Lupan',
         tipo: 'Deus dos Caçadores',
         natureza: 'Mortal ascendido',
@@ -4377,7 +4377,7 @@ export class DeusData {
         fundamentalista_druida: ``,
       },
       {
-        id: 953,
+        id: 949,
         nome: 'O Deus Cristal de Urielka',
         tipo: 'Deus Cristal de Urielka',
         natureza: 'Objeto desperto',

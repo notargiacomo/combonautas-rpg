@@ -18156,21 +18156,23 @@ export class PoderData {
         id: 2003,
         nome: 'Espadachim Divino',
         descricao: `
-  <p>Você recebe +1 nas rolagens de dano e no multiplicador de crítico com espadas e, para você, todas as espadas marciais são armas simples. Akok Deus dos Lobos Mortal ascendido, status divino 3 Um enorme lobo com dentes que se projetam fora da mandíbula, Akok é o Deus dos Lobos, mas também governa certas raças de cães, principalmente de guerra, de guarda e de caça. É cultuado por goblinoides e outros humanoides que usam lobos como montaria, Akok, o Deus Menor dos Lobos 5</p>
+  <p>Você recebe +1 nas rolagens de dano e no multiplicador de crítico com espadas e, para você, todas as espadas marciais são armas simples.</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [27],
       },
       {
         id: 2004,
         nome: 'Espírito da Alcateia',
         descricao: `
-  <p>Você pode se comunicar livremente com todos os tipos de cães e lobos, como se estivesse sob efeito da magia Voz Divina. Além disso, quando ataca um inimigo que você esteja flanqueando, você recebe +2 na rolagem de dano.</p>
+  <p>Você pode se comunicar livremente com todos os tipos de cães e lobos, como se estivesse sob efeito da magia Voz Divina. Além disso, quando ataca um inimigo que você esteja flanqueando, você recebe +2 na rolagem de dano. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [28],
       },
       {
         id: 2005,
@@ -18181,6 +18183,7 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [29],
       },
       {
         id: 2006,
@@ -18190,6 +18193,7 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [30],
       },
       {
         id: 2007,
@@ -18200,6 +18204,7 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [31],
       },
       {
         id: 2008,
@@ -18210,6 +18215,7 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [32],
       },
       {
         id: 2009,
@@ -18220,6 +18226,7 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [33],
       },
       {
         id: 2010,
@@ -18229,16 +18236,18 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [34],
       },
       {
         id: 2011,
-        nome: 'Tempestade',
+        nome: 'Investida Tempestade',
         descricao: `
   <p>Quando faz uma investida, você pode gastar 2 PM para cobrir seu corpo com eletricidade. Se fizer isso, seu ataque causa +2d8 pontos de dano de eletricidade. Além disso, criaturas adjacentes ao caminho que você percorre na investida sofrem 2d8 pontos de dano de eletricidade e ficam ofuscadas por 1 rodada (Ref CD Sab reduz à metade e evita a condição). </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [35],
       },
       {
         id: 2012,
@@ -18249,256 +18258,282 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [999],
       },
       {
         id: 2013,
-        nome: 'Mística',
+        nome: 'Máscara Mística',
         descricao: `
   <p>Se estiver usando uma máscara, você pode lançar as magias Disfarce Ilusório e Proteção Divina (mas apenas em você mesmo). Caso aprenda uma dessas magias, seu custo diminui em –1 PM enquanto você estiver de máscara. e Betsumial, o Deus Menor dos Vigias 12</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [998],
       },
       {
         id: 2014,
         nome: 'Pureza Corporal',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 1 PM para cobrir sua mão com luz e tocar uma criatura em alcance corpo a corpo. A criatura recupera 2d6+2 PV. Além disso, aprende e pode lançar a magia Purificação. Se aprender essa magia novamente, o custo dela diminui em –1 PM. e Canastra Deus das Armadilhas Mortal ascendido, status divino 2 Um deus pequeno e esguio, com personalidade teatral, Canastra esconde sua inteligência e o perigo que representa, fingindo ser indefeso. Protege aqueles que usam de esperteza e artimanhas para vencer e diverte-se com devotos capazes de encontrar um jeitinho de se virar em situações perigosas. Embora possua muitos servos em palácios, também é reverenciado por todo tipo de caçadores, desde meros aldeões que usam de armadilhas para capturar pequenos animais até caçadores de monstros ou recompensas, que guiam suas presas para as mais mortais emboscadas. Canastra também tem outros devotos mais sofisticados… e mais perigosos. Em várias partes de Arton, projetistas de masmorras cultuam este deus, em busca de inspiração para suas criações mortíferas e engenhosas. De fato, alguns teólogos especulam que o próprio Hyninn possa sentir algum “ciúme” desse culto. Outros afirmam que Canastra é um fantoche de Hyninn, para que o Deus da Trapaça possa influenciar o mundo ainda mais, mantendo sua fachada “inofensiva”. Crenças e Objetivos. Planejar adiante. Estar sempre um passo à frente. Emboscar inimigos. Preparar armadilhas. Manipular outros a seu favor. Símbolo Sagrado. Uma armadilha arataca. Canalizar Energia. Qualquer. Canastra, o Deus Menor das Armadilhas 13</p>
+  <p>Você pode gastar uma ação de movimento e 1 PM para cobrir sua mão com luz e tocar uma criatura em alcance corpo a corpo. A criatura recupera 2d6+2 PV. Além disso, aprende e pode lançar a magia Purificação. Se aprender essa magia novamente, o custo dela diminui em –1 PM. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [997],
       },
       {
         id: 2015,
-        nome: 'Armadilheiro',
+        nome: 'Dom de Armadilheiro',
         descricao: `
-  <p>Você recebe um poder de Armadilha do caçador a sua escolha e a CD de todas as suas armadilhas aumenta em +2. Além disso, você pode aprender Conjurar Armadilha (Heróis de Arton, p. 252) como uma magia divina. e Canora Deusa da Canção Mortal ascendido, status divino 2 Com a aparência de uma donzela esguia, pálida e com olheiras, esta deusa é capaz de modular a voz como quiser, da melodia mais doce a um guincho doloroso ou mesmo mortal. Suas canções são capazes de agradar os mais distintos gostos e seu repertório é infinito — desde as mais delicadas melodias élficas até as mais poderosas óperas anãs. Do canto suave de pássaros aos berros agonizantes dos moribundos. Seus devotos são ensinados a fazer o mesmo, usando suas vozes para incitar todos os tipos de emoções. A voz de Canora pode ressoar com materiais especí- ficos, destruindo-os com a mesma facilidade com que ela encanta seu público. A deusa não aprecia o uso de sua arte como arma, mas sabe que às vezes isso é necessário. Crenças e Objetivos. A melodia é a perfeição. Treino vocal é imprescindível. O canto é a mais perfeita forma de arte e o jeito certo de conquistar corações. A voz é a mais poderosa das armas. Símbolo Sagrado. Uma flor em forma de nota musical. Canalizar Energia. Qualquer. Arma Preferida. Florete. Devotos. Anões, elfos, harpias, hynne, qareen, sátiros, sereias/tritões, sílfides, arcanistas, bardos, bucaneiros, nobres, paladino. Obrigações & Restrições. Devotos de Canora nunca recusam uma oportunidade de cantar. Além disso, uma vez por semana (ou por sessão de jogo, o que demorar mais), devem se apresentar para uma grande plateia, como uma taverna lotada, a corte de um nobre local ou um festival em uma vila. Canção Divina poder concedido Você pode usar Sabedoria para Atuação (em vez de Carisma) e como atributo-chave de suas magias de bardo (se as tiver). Além disso, aprende e pode lançar a magia Despedaçar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e Cette Deus dos Arqueiros Mortal ascendido, status divino 3 Cette era um deus antigo, que transcendeu até mesmo a extrema longevidade élfica muito antes da queda de Lenórienn — alguns dizem que já era uma divindade menor quando os elfos chegaram a Arton. Suas maneiras, seu estilo de luta e sua própria aparência remetem a um tempo em que os elfos nunca haviam sido humilhados, mas também a uma época ainda sem a arrogância e a autoconfiança excessiva que foram sua perdição. De certa forma, Cette foi um símbolo de tudo que os elfos deveriam ter sido: perfeitos, mas sem nenhuma noção de superioridade. Embora representasse uma das maiores tradições élficas, Cette não parecia ter grande ligação com Gló- rienn. De alguma forma, ao personificar a disciplina do arco e flecha, Cette se concentrou na arma e se afastou de todo o resto. Também adquiriu certas características do arco (flexível, adquire força sob pressão) e da flecha (direto, rápido, sem meandros). Assim, continuava apresentando a típica postura élfica de séculos atrás: refinamento, delicadeza e tranquilidade, sem empáfia. Cette perdeu muitos seguidores no período entre a chegada dos elfos a Arton e a queda de Glórienn — pois, durante esse tempo, a raça se voltou cada vez mais para sua deusa padroeira, de forma quase exclusiva. Mesmo assim, o Deus dos Arqueiros não parecia se abalar. Continuava pronto para defender as tradições élficas, como sempre fizera. De certa forma, Cette era uma divindade simples: não desafiava a compreensão nem adquiria formas metafísicas. Era um elfo esguio, de longos cabelos verdes presos em tranças, tão leve que ao andar seus pés mal tocavam o chão. Seu arco era tão alto quanto ele mesmo. Vestia-se com a mais fina malha élfica, trançada com folhas vivas. Era um guerreiro eficiente, franco e até mesmo bem-humorado. Sua morte na Batalha de Tamu-ra em 1405 foi uma grande perda para Arton. 14</p>
+  <p>Você recebe um poder de Armadilha do caçador a sua escolha e a CD de todas as suas armadilhas aumenta em +2. Além disso, você pode aprender Conjurar Armadilha (Heróis de Arton, p. 252) como uma magia divina. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [996],
       },
       {
         id: 2016,
         nome: 'Canção Divina',
         descricao: `
-  <p>Você pode usar Sabedoria para Atuação (em vez de Carisma) e como atributo-chave de suas magias de bardo (se as tiver). Além disso, aprende e pode lançar a magia Despedaçar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e Cette Deus dos Arqueiros Mortal ascendido, status divino 3 Cette era um deus antigo, que transcendeu até mesmo a extrema longevidade élfica muito antes da queda de Lenórienn — alguns dizem que já era uma divindade menor quando os elfos chegaram a Arton. Suas maneiras, seu estilo de luta e sua própria aparência remetem a um tempo em que os elfos nunca haviam sido humilhados, mas também a uma época ainda sem a arrogância e a autoconfiança excessiva que foram sua perdição. De certa forma, Cette foi um símbolo de tudo que os elfos deveriam ter sido: perfeitos, mas sem nenhuma noção de superioridade. Embora representasse uma das maiores tradições élficas, Cette não parecia ter grande ligação com Gló- rienn. De alguma forma, ao personificar a disciplina do arco e flecha, Cette se concentrou na arma e se afastou de todo o resto. Também adquiriu certas características do arco (flexível, adquire força sob pressão) e da flecha (direto, rápido, sem meandros). Assim, continuava apresentando a típica postura élfica de séculos atrás: refinamento, delicadeza e tranquilidade, sem empáfia. Cette perdeu muitos seguidores no período entre a chegada dos elfos a Arton e a queda de Glórienn — pois, durante esse tempo, a raça se voltou cada vez mais para sua deusa padroeira, de forma quase exclusiva. Mesmo assim, o Deus dos Arqueiros não parecia se abalar. Continuava pronto para defender as tradições élficas, como sempre fizera. De certa forma, Cette era uma divindade simples: não desafiava a compreensão nem adquiria formas metafísicas. Era um elfo esguio, de longos cabelos verdes presos em tranças, tão leve que ao andar seus pés mal tocavam o chão. Seu arco era tão alto quanto ele mesmo. Vestia-se com a mais fina malha élfica, trançada com folhas vivas. Era um guerreiro eficiente, franco e até mesmo bem-humorado. Sua morte na Batalha de Tamu-ra em 1405 foi uma grande perda para Arton. 14</p>
+  <p>Você pode usar Sabedoria para Atuação (em vez de Carisma) e como atributo-chave de suas magias de bardo (se as tiver). Além disso, aprende e pode lançar a magia Despedaçar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [995],
       },
       {
         id: 2017,
         nome: 'Disparo Sublime',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 2 PM para fazer um teste de Percepção (CD 15 + ND da criatura) contra uma criatura em alcance médio. Se passar no teste e acertar um ataque com arco contra o alvo na mesma rodada, esse ataque é um acerto crítico automático. Se for o paladino de Cette, você pode usar Golpe Divino com ataques com arco à distância. Champarr Deus dos Jogos Mortal ascendido, status divino 3 Patrono dos torneios, dos conflitos e dos jogos, Champarr é a divindade favorita dos atletas, duelistas, jogadores e guerreiros entre os moreau. É o juiz de todas as disputas, desde duelos de espadas até guerras entre reinos, desde jogos de cartas até corridas de cavalos nos Reinos de Moreania. Ele abençoa os vencedores e perdoa (ou amaldiçoa) os perdedores. Os adoradores de Champarr conseguem traçar sua origem até os mais distantes domínios extraplanares. Há milhares de anos ele teria participado de um torneio cósmico promovido por um poderoso Deus da Guerra — com certeza Keenn, a menos que todas as escrituras sagradas estejam erradas e tenha havido um Deus da Guerra antes dele! Esse presumivelmente foi o Torneio do Deus Guerreiro, a mesma disputa que rendeu a Arsenal o título de Deus da Guerra. Na ocasião, após sucessivas vitórias, Champarr chegou à grande final e duelou contra o deus em pessoa, mas foi derrotado. No entanto, por sua tenacidade, teria recebido a imortalidade e o título de Deus dos Jogos. Champarr tem a aparência de um poderoso gladiador, usando um elmo fechado que mantém suas emoções indecifráveis. Está sempre armado com duas espadas curtas idênticas: uma delas concede a bênção da vitória e a outra, a maldição da derrota. Champarr é querido em Moreania, especialmente no reino de Brando, onde flâmulas em sua homenagem são hasteadas antes de cada grande torneio, e seus clé- rigos atuam como juízes. Moreau diante de provações muitas vezes rogam seu nome, para assegurar a vitória. Crenças e Objetivos. Reverenciar os jogos. Incitar disputas. Derrotar inimigos. Desafiar a si mesmo. Superar limites. Promover e participar de torneios e jogos. Vencer em condições justas. Símbolo Sagrado. Um troféu. Canalizar Energia. Qualquer. Arma Preferida. Espada curta. “Apostaram que, quando voltassem, eu seria um rei cavalgando um dragão!? Vocês, sempre me subestimando!” — Vardamir Lorenzo, arqueiro de Dagba Champarr, o Deus Menor dos Jogos 15</p>
+  <p>Você pode gastar uma ação de movimento e 2 PM para fazer um teste de Percepção (CD 15 + ND da criatura) contra uma criatura em alcance médio. Se passar no teste e acertar um ataque com arco contra o alvo na mesma rodada, esse ataque é um acerto crítico automático. Se for o paladino de Cette, você pode usar Golpe Divino com ataques com arco à distância. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [994],
       },
       {
         id: 2018,
         nome: 'Jogada Decisiva',
         descricao: `
-  <p>Uma vez por dia, quando faz um teste, você pode gastar 1 PM para somar +2 por patamar no teste. Dahriol Deus dos Selos Mortal ascendido, status divino 1 Dahriol foi um grande herói eras atrás, responsá- vel por atravessar verdadeiros infernos para entregar mensagens de suma importância que mudaram o destino de reinos inteiros. Qualquer um que quisesse garantir a entrega de sua carta buscava Dahriol e o herói nunca rompeu um selo que não devia — fosse o simples selo de cera de um pergaminho confidencial, fosse o selo místico de uma porta. Admirado por milhares, arrebanhou tanto poder que começou a ser considerado um deus por muitas pessoas ajudadas por seus feitos, além de ter inspirado outros mensageiros a se comportar da mesma forma. Num mundo em que vencer limites, quebrar barreiras e desvendar segredos são demonstrações de heroísmo valorizadas por quase todos, Dahriol é um defensor daquilo que deve ser mantido fechado, protegido e seguro. Desde entidades malignas que não podem escapar de suas prisões até informações sensíveis que não podem chegar aos olhos e ouvidos de inimigos, tudo que deve ficar selado é domínio de Dahriol. Assim, mesmo sem a fama de outros deuses menores, esta divindade carrega um grande fardo. Como recompensa por suas ações e seu senso de dever, Dahriol costuma servir como mensageiro de Tanna-Toh, a Deusa do Conhecimento, e ocasionalmente também de Khalmyr. Além disso, já foi enviado para Arton em missões envolvendo reunir aventureiros e garantir que selos amaldiçoados continuassem intactos. Durante sua participação na saga do Disco dos Três, ajudando a impedir que o deus menor Sartan viesse ao mundo, Dahriol foi o instigador de uma das primeiras expedições registradas de aventureiros do continente às proximidades de Galrasia. Assim, também é cultuado por alguns exploradores da ilha. Costuma se mostrar aos mortais como um homem velho com longos cabelos e barba branca, vestido com roupas simples e empunhando um cajado de madeira em uma das mãos. Crenças e Objetivos. Proteger os selos. Impedir que ameaças seladas causem mal a Arton. Estudar selos místicos e manter o mal afastado através deles. Símbolo Sagrado. Um selo de cera. Canalizar Energia. Qualquer. Arma Preferida. Bordão. Devotos. Anões, elfos, qareen, arcanistas, bardos, cavaleiros, guerreiros, nobres, paladino. Obrigações & Restrições. Devotos de Dahriol não podem recusar pedidos de ajuda para entregar mensagens ou impedir que selos sejam abertos. Além disso, não podem abrir selos trancados sem permissão. Para estes fins, um “selo” é qualquer barreira, como uma porta, tranca ou fechadura, mundana ou mágica. Selo Impedidor poder concedido Você pode gastar uma ação padrão e 3 PM para impedir uma criatura em alcance curto de usar uma habilidade a sua escolha até o fim da cena (Von CD Sab evita). Você só pode escolher uma habilidade que tenha visto a criatura usar ou que tenha identificado com um teste de perícia (como um teste de Misticismo para identificar criatura). Você não pode escolher a habilidade Magias (ou habilidades equivalentes), mas pode escolher uma magia específica. Uma mesma criatura só pode ser afetada por este poder uma vez por cena. Drumak Deus do Duelo Conceito vivo, status divino 1 Diferente da imensa maioria de deuses artonianos, o Deus do Duelo não é uma criatura, mas um título. A cada ano é realizado o Torneio Deus do Duelo, um campeonato secreto no qual lutadores de toda Arton desafiam uns aos outros em duelos formais, em diferentes arenas, muitas vezes mascarando essa competição como simples brigas de rua ou lutas entre aventureiros. O vencedor, que fica conhecido como o “Guerreiro de Arton”, é então desafiado pelo Drumak “Minotauros não desertam. Minotauros perseveram. Você quer meu passado? Tome meu chifre!” — Cebruthius, minotauro guerreiro ex-legionário 16</p>
+  <p>Uma vez por dia, quando faz um teste, você pode gastar 1 PM para somar +2 por patamar no teste.</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [993],
       },
       {
         id: 2019,
         nome: 'Selo Impedidor',
         descricao: `
-  <p>Você pode gastar uma ação padrão e 3 PM para impedir uma criatura em alcance curto de usar uma habilidade a sua escolha até o fim da cena (Von CD Sab evita). Você só pode escolher uma habilidade que tenha visto a criatura usar ou que tenha identificado com um teste de perícia (como um teste de Misticismo para identificar criatura). Você não pode escolher a habilidade Magias (ou habilidades equivalentes), mas pode escolher uma magia específica. Uma mesma criatura só pode ser afetada por este poder uma vez por cena. Drumak Deus do Duelo Conceito vivo, status divino 1 Diferente da imensa maioria de deuses artonianos, o Deus do Duelo não é uma criatura, mas um título. A cada ano é realizado o Torneio Deus do Duelo, um campeonato secreto no qual lutadores de toda Arton desafiam uns aos outros em duelos formais, em diferentes arenas, muitas vezes mascarando essa competição como simples brigas de rua ou lutas entre aventureiros. O vencedor, que fica conhecido como o “Guerreiro de Arton”, é então desafiado pelo Drumak “Minotauros não desertam. Minotauros perseveram. Você quer meu passado? Tome meu chifre!” — Cebruthius, minotauro guerreiro ex-legionário 16</p>
+  <p>Você pode gastar uma ação padrão e 3 PM para impedir uma criatura em alcance curto de usar uma habilidade a sua escolha até o fim da cena (Von CD Sab evita). Você só pode escolher uma habilidade que tenha visto a criatura usar ou que tenha identificado com um teste de perícia (como um teste de Misticismo para identificar criatura). Você não pode escolher a habilidade Magias (ou habilidades equivalentes), mas pode escolher uma magia específica. Uma mesma criatura só pode ser afetada por este poder uma vez por cena. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [992],
       },
       {
         id: 2020,
         nome: 'Um Contra Um',
         descricao: `
-  <p>Você pode gastar 2 PM para escolher um oponente em alcance curto e receber +2 em testes de ataque e rolagens de dano contra ele até o fim da cena. Se atacar outro oponente, o bônus termina. Se tiver a habilidade Duelo, em vez disso seu custo diminui em –1 PM. Dunsark Deus dos Mercenários Mortal ascendido, status divino 2 Dunsark é um deus guerreiro, um combatente que carrega uma quantidade aparentemente infinita de armas pendendo de seu corpo, sempre interessado em lutar por dinheiro e arriscar-se por lucro. É o protetor das batalhas sem motivos pessoais, dos conflitos sem moralidade. Protege a noção de risco e ganho, a luta por puro interesse. Reza a lenda que Dunsark foi um mercenário abençoado que já teve tanto ouro quanto os cofres de Sambúrdia e tantos itens mágicos quanto Arsenal. Seus devotos agarram-se a ele como uma esperança de riqueza e glória, anunciando seu nome após cada vitória em batalha, cada ataque bem-sucedido a um castelo, cada contrato lucrativo. Mesmo os mercenários que não acreditam na lenda contam suas histórias ao redor das fogueiras. Sua última grande vitória foi na Batalha de Tamu-ra, em 1405, onde Dunsark enfrentou a Tormenta e escapou para contar a história. Apesar de ser viciado em risco e campeão de incontáveis guerras, sua aparência é comum. Soldados supersticiosos desconfiam que qualquer mercenário poderoso sem vínculos de lealdade possa ser Dunsark disfarçado, buscando um novo contrato, uma nova guerra. Durante a Guerra Artoniana, Dunsark foi “visto” inúmeras vezes. Talvez algumas dessas não sejam mera boataria de acampamento. Crenças e Objetivos. Lutar por dinheiro. Planejar e arriscar tudo por ouro, joias e espólios. Usar estratégias e técnicas superiores sempre. Colocar “Abandonado ao nascer, sim. Amaldiçoado? Não. Abençoado por Lena, e isso basta!” — Kavriel Walker, lefou lutador de Pingo D’Ouro 17</p>
+  <p>Você pode gastar 2 PM para escolher um oponente em alcance curto e receber +2 em testes de ataque e rolagens de dano contra ele até o fim da cena. Se atacar outro oponente, o bônus termina. Se tiver a habilidade Duelo, em vez disso seu custo diminui em –1 PM. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [991],
       },
       {
         id: 2021,
         nome: 'Armas e Espólios',
         descricao: `
-  <p>Você recebe uma proficiência a sua escolha entre armaduras pesadas, armas de fogo, armas marciais ou escudos. Se já tiver proficiência com armas marciais, pode escolher armas exóticas. Além disso, quando rolar um tesouro, como na tabela de Tesouro por Nível de Desafio (Tormenta20, p. 328), você pode rolar duas vezes para cada coluna apropriada e escolher entre os dois resultados. Elrophin Deus da Vaidade Mortal ascendido, status divino 3 Não se sabe muito sobre a origem de Elrophin. Alguns dizem que seria filho de Valkaria, e assim um semideus. Também correm histórias de que teria sido um grande bardo, um poderoso guerreiro, ou ambos. Também dizem que Elrophin foi um antigo sumo-sacerdote da Deusa da Ambição, atuante quando Arton Norte ainda não havia sido desbravada. As histórias afirmam que Elrophin era tão seguro de si em tudo que fazia que aos poucos foi conquistando tudo que desejava: poderes, vitórias, domínios, amores. Sua lábia e autoconfiança eram lendárias. E assim foi crescendo e conquistando uma legião de admiradores e seguidores, até que acabou por se transformar em um deus menor. Talvez esse feito tenha recebido ajuda e bênção da própria Valkaria, que sempre admirou pessoas ambiciosas; outros pensam que Elrophin alcançou a divindade justamente por dar as costas a ela — pois a maior ambição (e a maior vaidade) seria não precisar nem mesmo dos deuses. Muitas lendas correm em torno deste deus — que, embora um tanto obscuro, não deixa de ser poderoso e influente. Crenças e Objetivos. Conhecer seu próprio valor e demonstrá-lo. Conquistar o que deseja através da lábia ou da força. Admirar-se e ser a maior prioridade de si mesmo. Símbolo Sagrado. Uma espada bastarda entre rosas. Canalizar Energia. Qualquer. Arma Preferida. Espada bastarda. Devotos. Elfos, goblins, medusas, minauros, minotauros, naidoras, qareen, suraggel, tabrachi, bardos, bucaneiros, cavaleiros, guerreiros, lutadores, nobres. Obrigações & Restrições. Devotos de Elrophin devem pregar o quanto eles mesmos — e seu deus — são incríveis e convencer pessoas de seus feitos pelo menos uma vez por dia (ou por sessão de jogo, o que demorar mais). Em termos de jogo, uma ação exigindo um teste de Diplomacia com CD mínima 15 + metade do seu nível. Vanglória poder concedido Uma vez por cena, quando faz um teste de perícia, você pode gastar 1 PM para somar +1d6 como um bônus no teste. Se rolar o valor máximo nesse dado de bônus, role um segundo d6 e adicione ao resultado. Você não pode usar esta habilidade em testes de ataque. 18</p>
+  <p>Você recebe uma proficiência a sua escolha entre armaduras pesadas, armas de fogo, armas marciais ou escudos. Se já tiver proficiência com armas marciais, pode escolher armas exóticas. Além disso, quando rolar um tesouro, como na tabela de Tesouro por Nível de Desafio (Tormenta20, p. 328), você pode rolar duas vezes para cada coluna apropriada e escolher entre os dois resultados. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [990],
       },
       {
         id: 2022,
         nome: 'Vanglória',
         descricao: `
-  <p>Uma vez por cena, quando faz um teste de perícia, você pode gastar 1 PM para somar +1d6 como um bônus no teste. Se rolar o valor máximo nesse dado de bônus, role um segundo d6 e adicione ao resultado. Você não pode usar esta habilidade em testes de ataque. 18</p>
+  <p>Uma vez por cena, quando faz um teste de perícia, você pode gastar 1 PM para somar +1d6 como um bônus no teste. Se rolar o valor máximo nesse dado de bônus, role um segundo d6 e adicione ao resultado. Você não pode usar esta habilidade em testes de ataque. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [989],
       },
       {
         id: 2023,
         nome: 'Olhar Atordoante',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 1 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se falhar, a criatura fica atordoada por 1 rodada (apenas uma vez por cena). Se você já tiver esta habilidade, em vez disso ela passa a afetar criaturas a sua escolha em alcance curto e a CD para resistir a ela aumenta em +2. Esmeralda Deusa das Joias Mortal ascendido, status divino 2 Quando ainda era apenas humana, Esmeralda já atuava como uma excelente joalheira e ourives, procurada por especialistas em joias de todo o Reinado. Em meio à infindável batalha entre falsificadores de preciosidades e nobres exigentes, dizia-se que ninguém era mais confiável que Esmeralda para atestar a fidelidade de uma joia. Contudo, apesar de famosa, a ourives era misteriosa e enigmática; sabia que, se sua verdadeira identidade fosse descoberta por contrabandistas e falsificadores, sua vida estaria em risco. Inevitavelmente, Esmeralda desapareceu e, na ausência de alguém igualmente competente, vários comerciantes e até mesmo nobres ergueram templos e passaram a orar por seu retorno — uma medida desesperada para evitar que suas joalherias fossem à falência, ou apenas para que não precisassem estar privados de suas obras. Aos poucos, as joias fabricadas enquanto Esmeralda estava desaparecida passaram a ser consideradas falsas, ou ao menos de qualidade inferior. Sem Esmeralda, nada podia ser realmente precioso. Todos desejavam a volta de Esmeralda que, inesperadamente, atendeu aos desejos daqueles que, a essa altura, já eram seus fiéis. Mas, quando retornou, não era mais a mesma. Ela agora lembrava uma aristocrata humana, mas sua pele era feita de diamante e seus olhos eram gemas coloridas. Vendo nisso um sinal claro do significado transcendental da ourives, seus devotos passaram a espalhar sua palavra. Após seu retorno, podia haver mais uma vez joias “verdadeiras”. Os devotos de Esmeralda aprendem as nuances dos metais valiosos e pedras preciosas, reconhecem o valor potencial de gemas brutas e honram sua deusa usando ou fabricando as mais deslumbrantes joias. Contudo, desprezam de forma quase irracional as joias fabricadas durante o curto período em que ela esteve desaparecida. Para eles, peças dessa época infeliz são como itens malditos. 19</p>
+  <p>Você pode gastar uma ação de movimento e 1 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se falhar, a criatura fica atordoada por 1 rodada (apenas uma vez por cena). Se você já tiver esta habilidade, em vez disso ela passa a afetar criaturas a sua escolha em alcance curto e a CD para resistir a ela aumenta em +2. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [988],
       },
       {
         id: 2024,
-        nome: 'Esmeralda',
+        nome: 'Toque de Esmeralda',
         descricao: `
-  <p>Se fabricar um item que possa receber as melhorias banhado a ouro ou cravejado de joias, você pode gastar T$ 100 para aplicar uma dessas melhorias automaticamente, sem aumento na CD e sem que ela conte como uma melhoria. Sempre que você encontra uma riqueza aleatória (Tormenta20, p. 330), pode rolar duas vezes na tabela e escolher o melhor valor. Garanaam Deus das Charadas Mortal ascendido, status divino 2 Um homem com traços de esfinge, que sempre falava em metáforas, enigmas e perguntas, Garanaam pregava que as respostas só poderiam ser obtidas vendo as coisas por outro ponto de vista e que as mais importantes verdades se escondem da obviedade. Ao mesmo tempo, ensinava a seus devotos que só aqueles capazes de pensar fora dos padrões comuns e ver o que não é evidente eram dignos de suas bênçãos. Diz-se que, apesar de um dia ter sido um mortal, Garanaam não guarda nenhuma semelhança com a pessoa que era antes de ascender. Sua aparência, sotaque, maneirismos e até mesmo seu nome teriam sido totalmente diferentes. De fato, talvez haja uma charada no próprio nome de Garanaam, além de um prêmio místico para quem for capaz de decifrá-la. Ao se tornar um deus menor, Garanaam virou ele mesmo uma charada, um enigma em forma de divindade. Garanaam foi recrutado por Orion Drake para o Exército de Deuses e lutou na Batalha de Tamu-ra. Contudo, diferente da maioria das divindades menores que participaram desse conflito, o Deus das Charadas não está morto! Ao entrar na área de Tormenta de Tamu-ra, Garanaam se deparou com os lefeu e enlouqueceu. Em sua mente surgia a charada suprema: o que são aquelas criaturas? Qual a forma real dos demônios da Tormenta, meramente traduzidos pelos cérebros artonianos em quelíceras e carapaças rubras? O Deus das Charadas agarrou as têmporas e caiu de joelhos, gargalhando insanamente. Quando a batalha acabou e a Tormenta foi sugada de volta para a Anticriação, Garanaam foi resgatado e levado de volta ao continente junto com os deuses feridos, mas carregava em sua mente a loucura que vivenciou. Hoje se veste com panos sujos e puídos. Seu cajado com a forma de um ponto de interrogação está quebrado. No entanto, suas charadas são ainda mais elaboradas: por trás de sua loucura, Garanaam mantém uma lógica em seus enigmas. Crenças e Objetivos. Testar a inteligência dos artonianos. Jogar com as palavras. Compreender significados. Propor enigmas. Esconder o que é óbvio. Símbolo Sagrado. Um ponto de interrogação. Canalizar Energia. Qualquer. Arma Preferida. Bordão. Devotos. Goblins, kliren, qareen, arcanistas, bardos, bucaneiros, inventores, ladinos. Obrigações & Restrições. Um devoto de Garanaam deve, pelo menos uma vez por cena, responder a uma pergunta com um enigma, uma charada ou um jogo de palavras que devem ser decifrados por quem perguntou. Na Ponta da Língua poder concedido Sempre que fizer um teste de Vontade para resistir a uma habilidade de uma criatura inteligente (Int –3 ou maior), você pode gastar 2 PM para propor uma charada a ela. Faça um teste de Enganação, oposto pelo Conhecimento ou Intuição da criatura. Se você vencer o teste, passa automaticamente no teste de Vontade. Caso contrário, faça o teste de Vontade normalmente. Garth Deus da Pólvora Mortal ascendido, status divino 2 Garth é um caso triste de um deus menor que odeia aquilo que governa. A maioria daqueles que usam armas de pólvora conhece a história de seu passado. Garth foi o pistoleiro mais sanguinário que já existiu. 20</p>
+  <p>Se fabricar um item que possa receber as melhorias banhado a ouro ou cravejado de joias, você pode gastar T$ 100 para aplicar uma dessas melhorias automaticamente, sem aumento na CD e sem que ela conte como uma melhoria. Sempre que você encontra uma riqueza aleatória (Tormenta20, p. 330), pode rolar duas vezes na tabela e escolher o melhor valor. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [987],
       },
       {
         id: 2025,
         nome: 'Na Ponta da Língua',
         descricao: `
-  <p>Sempre que fizer um teste de Vontade para resistir a uma habilidade de uma criatura inteligente (Int –3 ou maior), você pode gastar 2 PM para propor uma charada a ela. Faça um teste de Enganação, oposto pelo Conhecimento ou Intuição da criatura. Se você vencer o teste, passa automaticamente no teste de Vontade. Caso contrário, faça o teste de Vontade normalmente. Garth Deus da Pólvora Mortal ascendido, status divino 2 Garth é um caso triste de um deus menor que odeia aquilo que governa. A maioria daqueles que usam armas de pólvora conhece a história de seu passado. Garth foi o pistoleiro mais sanguinário que já existiu. 20</p>
+  <p>Sempre que fizer um teste de Vontade para resistir a uma habilidade de uma criatura inteligente (Int –3 ou maior), você pode gastar 2 PM para propor uma charada a ela. Faça um teste de Enganação, oposto pelo Conhecimento ou Intuição da criatura. Se você vencer o teste, passa automaticamente no teste de Vontade. Caso contrário, faça o teste de Vontade normalmente. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [986],
       },
       {
         id: 2026,
-        nome: 'Sagrada',
+        nome: 'Pólvora Sagrada',
         descricao: `
-  <p>Você recebe proficiência com armas de fogo. Além disso, pode gastar 1 PM para abençoar até 10 balas. Até o fim da cena, estas balas fornecem +1 na margem de ameaça e +2 nas rolagens de dano (cumulativo com outros bônus de itens). Goharom Deus dos Machados Mortal ascendido, status divino 4 Goharom era um dos deuses anões mais antigos e, à primeira vista, poderia ser confundido com um simples guerreiro da raça. Sua aparência não entregava a verdadeira natureza divina. Era um anão forte, de estatura impressionante, barbudo, sempre trajando armadura pesada e empunhando um imenso machado. Conta-se que, ocasionalmente, Goharom visitava Doherimm apenas para beber grandes quantidades de cerveja nas tavernas, e os outros frequentadores não percebiam estar na presença de um deus até notarem sua resistência fora do comum. Quando essas visitas terminavam, várias tavernas estavam sem estoque e a Guilda dos Cervejeiros precisava enviar carregamentos emergenciais. Em sua vida mortal, Goharom era um habilidoso armeiro e guerreiro anão, especializado no uso de machados. Sua devoção a Rhond, o Deus das Armas, era evidente, mas ele próprio passou a ser cultuado quando suas criações se mostraram incomparáveis, superando tudo que os anões conheciam. Goharom poderia ter Garth, o Deus Menor da Pólvora 21</p>
+  <p>Você recebe proficiência com armas de fogo. Além disso, pode gastar 1 PM para abençoar até 10 balas. Até o fim da cena, estas balas fornecem +1 na margem de ameaça e +2 nas rolagens de dano (cumulativo com outros bônus de itens). </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [985],
       },
       {
         id: 2027,
         nome: 'Amor ao Machado',
         descricao: `
-  <p>Você pode gastar uma ação padrão e 3 PM para tocar um machado e colocar nele um encanto de arma a sua escolha. O encanto não pode ter pré-requisitos e dura até o fim da cena ou até você usar este poder novamente. Granto Deus dos Escultores Mortal ascendido, status divino 4 Granto era um anão robusto e entroncado, cuja presença impunha respeito e admiração. Sua figura era uma verdadeira representação da força e resili- ência da raça anã, com músculos visíveis sob a pele áspera e firme. Sua barba era longa e espessa, de um cinza profundo, cuidadosamente moldada em formas minuciosas que narravam a grandiosa história de seu povo. Cada mecha carregava símbolos e figuras que representavam feitos heroicos, batalhas épicas e lendas passadas, desde os primeiros dias de sua civilização até os eventos mais recentes que marcaram sua história. As cicatrizes que atravessavam seu corpo tinham um caráter especial, pois, observadas mais de perto, revelavam formas surpreendentemente belas, como se cada uma fosse testemunho da resistência e coragem que o anão acumulou ao longo da vida. Granto, embora fosse um anão (e não um golem ou outro construto), era uma escultura viva, mais estátua do que gente. Tudo que Granto tocava tinha o potencial de assumir uma forma bela, incluindo o que golpeava com seu estonteante martelo, fosse um objeto ou uma criatura. Até mesmo rachaduras em superfícies que ele martelava adquiriam formas artísticas. Mas, verdadeiro ao espírito anão de praticidade e utilitarismo, tudo que Granto fazia também tinha um propósito. Quando fez parte do Exército de Deuses de Orion Drake, Granto propôs construir uma imensa ponte do continente até Tamu-ra, para que não precisassem usar navios. E, quando esse plano foi rejeitado, Granto esculpiu os acrostólios que o general requisitou para adornar as proas das naus. Granto foi morto pelas forças lefeu durante a Batalha de Tamu-ra. No entanto, muitas de suas obras continuam adornando os salões de Doherimm, além de vários lugares da superfície. Crenças e Objetivos. Esculpir as mais belas obras de arte. Valorizar e pregar a importância do trabalho duro. Honrar e proteger a cultura e as tradições dos escultores. Unir estética e função. Símbolo Sagrado. Um cinzel e um martelo. Canalizar Energia. Qualquer. Arma Preferida. Martelo leve (Heróis de Arton, p. 221). Devotos. Anões, golens, kliren, qareen, bárbaros, cavaleiros, guerreiros, inventores, lutadores, nobres. Obrigações & Restrições. Devotos de Granto devem fabricar ou consertar uma escultura (um item não consumível simples com preço de T$ 150 por patamar) pelo menos uma vez por aventura. Âmago de Escultor poder concedido Você paga 20% a menos em aposentos e mobílias de bases e construções de domínios. Além disso, pode “Se eu erguer este machado, alguém vai cair. Se você estiver no caminho… paciência.” — Carnack Holderreck, anão guerreiro de Doherimm 22</p>
+  <p>Você pode gastar uma ação padrão e 3 PM para tocar um machado e colocar nele um encanto de arma a sua escolha. O encanto não pode ter pré-requisitos e dura até o fim da cena ou até você usar este poder novamente. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [984],
       },
       {
         id: 2028,
         nome: 'Âmago de Escultor',
         descricao: `
-  <p>Você paga 20% a menos em aposentos e mobílias de bases e construções de domínios. Além disso, pode “Se eu erguer este machado, alguém vai cair. Se você estiver no caminho… paciência.” — Carnack Holderreck, anão guerreiro de Doherimm 22</p>
+  <p>Você paga 20% a menos em aposentos e mobílias de bases e construções de domínios. Além disso, pode construir um aposento ou construção acima do limite definido pelo tamanho da base ou nível do domínio.</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [983],
       },
       {
         id: 2029,
         nome: 'Igual ao Lar',
         descricao: `
-  <p>Uma vez por dia, você pode gastar alguns minutos para transformar um espaço de descanso em um lar provisório por um dia. Todas as criaturas que descansarem nesse local aumentam sua recuperação de PV ou PM em +1 por nível (a escolha da criatura) e, enquanto estiverem nesse lar, recebem +1 em testes de perícias. 23</p>
+  <p>Uma vez por dia, você pode gastar alguns minutos para transformar um espaço de descanso em um lar provisório por um dia. Todas as criaturas que descansarem nesse local aumentam sua recuperação de PV ou PM em +1 por nível (a escolha da criatura) e, enquanto estiverem nesse lar, recebem +1 em testes de perícias. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [982],
       },
       {
         id: 2030,
         nome: 'Ginete Altivo',
         descricao: `
-  <p>Enquanto está montado sobre um cavalo, você recebe +2 em testes de ataque e em Cavalgar. Além disso, você passa automaticamente em testes de Cavalgar para não cair do cavalo quando sofre dano e não sofre penalidades para atacar à distância ou lançar magias quando montado em cavalos. Este poder conta como o poder Ginete para efeitos de pré-requisitos de outras habilidades. Se você é um centauro, os benefícios deste poder mudam para: você pode fazer investidas em terreno difícil e não sofre a penalidade de –2 na Defesa por fazer uma investida. Por fim, recebe +2 nas rolagens de dano com armas em investidas. Hurlaagh Deus dos Hobgoblins Entidade primordial, status divino 3 Um hobgoblin imponente, com ares de nobreza e sempre trajado com roupas militares, Hurlaagh representa o auge da cultura militarista que ele mesmo ajudou a forjar. Ninguém sabe sua origem, mas era parte de um trio de entidades irmãs de guerra, conflito, violência e brutalidade — deuses menores antes mesmo que houvesse alguém para cultuá-los. Seus dois irmãos eram Ragnar, que mais tarde ascendeu a Deus da Morte, e Graolak. Cada um dos três criou uma raça mortal que encarnava seus valores e sua personalidade. Ragnar deu origem aos bugbears. Graolak fez os goblins. Hurlaagh forjou os hobgoblins. Os hobgoblins, embora por muito tempo tenham sido considerados meros monstros por grande parte dos povos do norte, são uma raça muito mais antiga que a humanidade (precedendo-a em dezenas de milhares de anos!). De fato, talvez sejam a primeira raça de Lamnor a estabelecer fronteiras e tomar terras como “suas”. Pela influência de Hurlaagh, os hobgoblins seriam os conquistadores e donos por direito de grande parte do continente. Curiosamente, o culto a Hurlaagh aumentou em fervor e intensidade com a chegada dos elfos a Lamnor. Com o início da Infinita Guerra, um inimigo poderoso fez com que os hobgoblins se unissem ainda mais sob seu deus. A influência de Hurlaagh em Lamnor só diminuiu significativamente quando seu irmão Ragnar ascendeu a deus maior, dando início a um plano que o tornou a divindade principal de todos os povos goblinoides. Hurlaagh então travou uma aliança com um grupo de deuses menores que buscava destronar o Deus da Morte dos Goblinoides, para que um deles ocupasse seu posto. Diz-se que, antes da queda de Khalifor, alguns de seus cultistas estavam infiltrados no exército de Thwor, com a intenção de provocar um levante. No entanto, foram descobertos e detidos por Gaardalok, o sumo-sacerdote de Ragnar, que os desmantelou utilizando espiões de Khalifor. A queda da Flecha de Fogo frustrou todos os planos de Hurlaagh. Ninguém sabe ao certo se sua aliança de deuses menores ainda existe ou desistiu de sua tentativa de tomar o posto de Thwor. Embora ainda seja adorado por algumas comunidades hobgoblins espalhadas pelo sul de Arton, há muito tempo Hurlaagh não lidera batalhões hobgoblins em campanhas militares ou incursões de guerra. O Deus dos Hobgoblins permanece uma figura distante da linha de frente das batalhas que tanto definiram seu passado. Crenças e Objetivos. Promover a guerra e o conflito. Vencer a qualquer custo, por força ou estraté- gia. Jamais oferecer ou aceitar rendição. Jamais demonstrar fraquezas. Proteger a cultura e o modo de vida hobgoblin a qualquer custo. Símbolo Sagrado. Tambor de guerra hobgoblin. Canalizar Energia. Negativa. Arma Preferida. Espada longa. Devotos. Goblins, hobgoblins, minotauros, orcs, bárbaros, caçadores, cavaleiros, guerreiros. Hurlaagh, o Deus Menor dos Hobgoblins 25</p>
+  <p>Enquanto está montado sobre um cavalo, você recebe +2 em testes de ataque e em Cavalgar. Além disso, você passa automaticamente em testes de Cavalgar para não cair do cavalo quando sofre dano e não sofre penalidades para atacar à distância ou lançar magias quando montado em cavalos. Este poder conta como o poder Ginete para efeitos de pré-requisitos de outras habilidades. Se você é um centauro, os benefícios deste poder mudam para: você pode fazer investidas em terreno difícil e não sofre a penalidade de –2 na Defesa por fazer uma investida. Por fim, recebe +2 nas rolagens de dano com armas em investidas. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [981],
       },
       {
         id: 2031,
         nome: 'Selvageria Marcial',
         descricao: `
-  <p>Você pode usar Sobrevivência no lugar de Guerra. Além disso, se passar em um teste para analisar terreno, além das vantagens descobertas, você fornece um bônus de +1 em testes de ataque e rolagens de dano de seus aliados em alcance curto até o fim da cena. Hydora Dragão-Rei das Nuvens Dragão-Real, status divino 4 Encarnação das tempestades, Hydora é um dos mais poderosos Dragões-Reais de Arton, superado apenas por Tarso e Sckhar e equiparando-se a Benthos. Isso explicaria como uma criatura tão instável conseguiu sobreviver por tanto tempo. Marcial e guerreiro como todos os dragões do ar, Hydora também tem humor volúvel como os raios e trovões. Muitas vezes já negou coisas que havia proferido, queHydora, o Dragão-Rei das Nuvens 26</p>
+  <p>Você pode usar Sobrevivência no lugar de Guerra. Além disso, se passar em um teste para analisar terreno, além das vantagens descobertas, você fornece um bônus de +1 em testes de ataque e rolagens de dano de seus aliados em alcance curto até o fim da cena. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [980],
       },
       {
         id: 2032,
         nome: 'Alcançar os Céus',
         descricao: `
-  <p>Você pode gastar uma quantidade de PM limitada por sua Sabedoria (mínimo de 1) para receber deslocamento de voo até o fim do seu turno. Esse deslocamento é igual a 12m, +3m para cada PM gasto além do primeiro. Inghlblhpholstgt a Grande Divindade Anfíbia Entidade primordial, status divino 3 Esta divindade menor possui um nome impronunciável para a maioria dos mortais, sendo conhecida como o Grande Deus Sapo entre os povos tabrachi. Nos antigos murais, é retratado como o primeiro ser marinho a pisar em terra firme, parte das criaturas que atenderam ao chamado de Allihanna, a Mãe Natureza, para deixar as profundezas oceânicas e migrar para o continente. Outras retratações históricas o descrevem como uma das inúmeras crias de Megalokk, o Deus dos Monstros. Existem até relatos afirmando que sua semente veio do éter divino, entre os mundos, precedendo a própria existência da vida em Arton. O templo mais conhecido dedicado a esta divindade encontra-se no Pântano dos Juncos, em Deheon. O local é protegido por uma criatura chamada catoblepas, capaz de transformar qualquer criatura em um ser batráquio com um simples olhar. Diz-se que essa habilidade do monstro sagrado é responsável por aumentar lentamente, mas de forma constante, a população tabrachi na região, que vem crescendo desde os primeiros tempos de ocupação do continente norte. Não se sabe ao certo quais são as intenções de Inghlblhpholtsgt. Existem rumores sobre uma antiga "Apenas os dignos conseguem pronunciar meu nome!" 27</p>
+  <p>Você pode gastar uma quantidade de PM limitada por sua Sabedoria (mínimo de 1) para receber deslocamento de voo até o fim do seu turno. Esse deslocamento é igual a 12m, +3m para cada PM gasto além do primeiro. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [979],
       },
       {
         id: 2033,
         nome: 'Salto Anurídeo',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 2 PM para saltar 9m em qualquer direção. Se terminar o salto em alcance corpo a corpo de uma criatura e atacá-la no mesmo turno, você recebe os benefícios e as penalidades de uma investida e sua arma causa um dado extra de dano do mesmo tipo durante esse ataque. Você pode aprender Primor Atlético como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. e de assumir qualquer forma. Normalmente, os duplos se infiltram nas sociedades, assassinando humanos e membros de outras raças civilizadas. No entanto, Irione logo percebeu que seu maior poder estava na sedução. Ao adotar diversas formas, experimentou o prazer de ser adorado, de ver homens e mulheres se atirando aos seus pés. Essa experiência se tornou viciante e Irione passou a buscar cada vez mais pretendentes. O próximo passo natural foi alcançar a divindade. Irione tem a habilidade de se transformar na figura que mais seduz cada pessoa. Sua transformação não é física, como os duplos, mas acontece na mente de quem o observa. Por isso, ao enxergá-lo, dois indivíduos podem ver, ouvir e até sentir coisas completamente diferentes ao mesmo tempo. Por exemplo, para Orion Drake, Irione parecia sua esposa Vanessa. Outra habilidade surpreendente de Irione é sua capacidade de se tornar inalcançável. Pessoas de todas as origens e modos de vida se veem seduzidas por ele, tentando alcançar sua presença para oferecer presentes e devoção, mas Irione sempre permanece distante, como se estivesse na próxima esquina ou um andar acima. Contudo, ele é uma divindade obcecada por atenção e mimos. Acostumado a seduzir, não tolera ser ignorado. A única maneira de convencê-lo a fazer algo que não seja para seu próprio benefício é justamente não lhe dar atenção ou importância. Nesse caso, Irione fará de tudo para conquistar seus alvos. Crenças e Objetivos. Provar seu valor, tornando-se alvo de desejo. Seduzir os outros para obter favores e adulações. Gerar suspiros de pretendentes. Tornar-se inalcançável para que todos venham atrás de você. Símbolo Sagrado. Marca de beijo. Canalizar Energia. Qualquer. Arma Preferida. Chicote. 28</p>
+  <p>Você pode gastar uma ação de movimento e 2 PM para saltar 9m em qualquer direção. Se terminar o salto em alcance corpo a corpo de uma criatura e atacá-la no mesmo turno, você recebe os benefícios e as penalidades de uma investida e sua arma causa um dado extra de dano do mesmo tipo durante esse ataque. Você pode aprender Primor Atlético como uma magia divina. Se fizer isso, o custo dela diminui em –1 PM. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [978],
       },
       {
         id: 2034,
         nome: 'Fisgar Corações',
         descricao: `
-  <p>Você aprende e pode lançar a magia Enfeitiçar (atributo-chave Carisma) usando apenas concentração, sem necessidade de gestos ou palavras (como se sob efeito do poder Magia Discreta). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e Jandra Deusa das Boas Maneiras Mortal ascendido, status divino 2 Uma dama de elegância impressionante, quase sempre ostentando penteado alto e vestido sofisticado, adornado com joias, Jandra é uma divindade que exala comedimento, altivez e requinte. Sua presença imponente é tamanha que poucos conseguem imaginar que, no passado, foi uma simples governanta. Quando era mortal, Jandra se dedicou a ensinar jovens nobres, criados e até plebeus sobre o comportamento adequado diante das pessoas de alta posição. Assim, criou uma verdadeira escola de boas maneiras e etiqueta. Boa parte de suas “regras” podia parecer arbitrária, mas quase todas tinham um fundo prático — destinavam-se a garantir que ninguém consumisse comida estragada, conferir se nenhum conviva trazia armas a uma reunião social, impedir a ativação de maldições… Após anos de ensino em um único local — uma mansão no antigo condado de Portsmouth — ela decidiu partir e viajar por todo o Reinado, espalhando seus conhecimentos de etiqueta a todos. Graças aos seus esforços, incontáveis conflitos foram evitados, pois as pessoas sabiam como se portar. Muitos notavam que, ainda que não soubessem a razão de todas as normas de etiqueta, sentiam estar dando importância a um evento (e às pessoas presentes) apenas por segui-las. Isso começou a adquirir um componente ritualístico, sagrado. Todos eram muito gratos e oravam por Jandra, até que tanta adoração foi suficiente para torná-la uma deusa. Hoje, Jandra segue percorrendo Arton, sendo uma convidada de honra em bailes e jantares — principalmente onde decisões importantes de cortes serão tomadas —, conquistando ainda mais seguidores ao ensinar os mortais sobre o valor das boas maneiras. Ao seguir certos padrões de comportamento, todos estão honrando a si mesmos, seus convivas… e a Deusa das Boas Maneiras. Crenças e Objetivos. Ensinar boas maneiras. Julgar a etiqueta dos presentes em ocasiões formais. Educar futuros aristocratas sobre as formas corretas de se portar entre os nobres. Ensinar servos a cumprir seu dever de maneira elegante e ao mesmo tempo imperceptível. Tratar cada convidado como o mais importante de um evento. Símbolo Sagrado. Uma xícara. Canalizar Energia. Qualquer. Arma Preferida. Adaga. Devotos. Aggelus, anões, elfos, golens, hynne, minotauros, bardos, cavaleiros, nobres. Obrigações & Restrições. Devotos de Jandra nunca deixam de fazer testes de Diplomacia ou Nobreza quando isso é socialmente adequado. Além disso, não suportam falta de modos e desconhecimento de etiqueta; quando presencia uma falha em um teste de Diplomacia ou Nobreza, o devoto deve corrigir a pessoa que falhou (em termos de jogo, deve passar em um teste da perícia apropriada com a mesma CD, enquanto explica de forma discreta e elegante onde ela errou). Etiqueta A Toda Hora poder concedido Uma vez por cena, você pode gastar uma ação de movimento e 1 PM para fazer um teste de Nobreza para ajudar. Cada aliado em alcance curto pode usar o bônus de ajuda fornecido por este teste em um de seus testes de perícia feito até o fim da cena. Klangor Deus das Armaduras Mortal ascendido, status divino 4 Klangor se destaca entre as várias divindades anãs como uma figura imponente e admirada. Ele não é apenas um deus de metais, mas um verdadeiro símbolo de resistência e resiliência. Seu corpo, recoberto por uma couraça de pedra e metal, desperta o temor e a admiração dos que o contemplam. É difícil discernir se essa armadura é uma construção criada pelo pró- prio Klangor ou se faz parte intrínseca de seu ser, um mistério que apenas ele pode responder. 29</p>
+  <p>Você aprende e pode lançar a magia Enfeitiçar (atributo-chave Carisma) usando apenas concentração, sem necessidade de gestos ou palavras (como se sob efeito do poder Magia Discreta). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [977],
       },
       {
         id: 2035,
-        nome: 'Toda Hora',
+        nome: 'Etiqueta A Toda Hora',
         descricao: `
-  <p>Uma vez por cena, você pode gastar uma ação de movimento e 1 PM para fazer um teste de Nobreza para ajudar. Cada aliado em alcance curto pode usar o bônus de ajuda fornecido por este teste em um de seus testes de perícia feito até o fim da cena. Klangor Deus das Armaduras Mortal ascendido, status divino 4 Klangor se destaca entre as várias divindades anãs como uma figura imponente e admirada. Ele não é apenas um deus de metais, mas um verdadeiro símbolo de resistência e resiliência. Seu corpo, recoberto por uma couraça de pedra e metal, desperta o temor e a admiração dos que o contemplam. É difícil discernir se essa armadura é uma construção criada pelo pró- prio Klangor ou se faz parte intrínseca de seu ser, um mistério que apenas ele pode responder. 29</p>
+  <p>Uma vez por cena, você pode gastar uma ação de movimento e 1 PM para fazer um teste de Nobreza para ajudar. Cada aliado em alcance curto pode usar o bônus de ajuda fornecido por este teste em um de seus testes de perícia feito até o fim da cena. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [976],
       },
       {
         id: 2036,
-        nome: 'Sagrada',
+        nome: 'Manutenção Sagrada',
         descricao: `
-  <p>Uma vez por dia, você pode gastar 10 minutos ajustando sua própria armadura. Faça um teste de Ofício (armeiro) para ajudar. Enquanto estiver trajando esta armadura, você recebe um bônus na Defesa igual ao bônus de ajuda fornecido pelo teste. Entretanto, a cada vez que você for atingido por um ataque, esse bônus diminui em 1 (até um mínimo de 0). e Kurur Lianth Deus Vulcão de Khubar Objeto desperto, status divino 1 Muitas lendas cercam Kurur Lianth, o maior e mais temido vulcão ativo de Khubar, o Reino Arquipélago. Localizado no coração da ilha de Hurtka, a mais próxima da costa de Bielefeld, Kurur Lianth é uma força da natureza cuja fúria não pode ser ignorada. Este vulcão expele fogo e explosões durante intensos períodos de uma semana ou mais, antes de se acalmar temporariamente, repousando por alguns meses. É dito, nas histórias antigas, que a única maneira de acalmar o “Velho Furiosoˮ, como é chamado por seus devotos, é através de um sacrifício humanoide voluntário, realizado quando o vulcão desperta de seu sono. Caso contrário, Kurur Lianth tomará todas as vidas que julgar necessárias. Algumas lendas atribuem essa necessidade de sacrifícios ao fato de que, no interior do vulcão, está aprisionado um antigo deus menor do fogo, derrotado por Thyatis em tempos imemoriais. Cada vez que o vulcão entra em erupção, acredita-se que o deus aprisionado desperta, provocando as explosões cataclísmicas que ameaçam a terra. Outras histórias sugerem que a cratera de Kurur Lianth é, na verdade, a bocarra de um monstruoso dragão do fogo, cuja magnitude colossal o impede de escapar do interior da terra, forçando-o a liberar sua fúria nas erupções. Seja qual for a verdadeira origem dessas lendas, o fato permanece: o vulcão é tratado como uma entidade viva, consciente. Com o passar dos séculos, os sacrifícios oferecidos ao vulcão fizeram com que ele fosse considerado algo sagrado, o que provocou sua ascensão a deus menor. Para seus seguidores, Kurur Lianth não é apenas um agente de destruição, mas uma divindade que protege a terra contra males ainda maiores, previstos para surgir em Khubar no futuro. Crenças e Objetivos. Cultuar o Velho Furioso. Proteger o povo da ilha de Hurtka e de Khubar em geral. Pregar a renovação que Kurur Lianth traz e a proteção que ele fará contra o grande mal descrito nas antigas profecias. Símbolo Sagrado. Um vulcão em erupção. Canalizar Energia. Negativa. Arma Preferida. Lança. Devotos. Qareen, suraggel, trogs, bárbaros, bardos, druidas, guerreiros, lutadores. Obrigações & Restrições. Devotos de Kurur Lianth devem se reunir com seu deus uma vez por ano 30</p>
+  <p>Uma vez por dia, você pode gastar 10 minutos ajustando sua própria armadura. Faça um teste de Ofício (armeiro) para ajudar. Enquanto estiver trajando esta armadura, você recebe um bônus na Defesa igual ao bônus de ajuda fornecido pelo teste. Entretanto, a cada vez que você for atingido por um ataque, esse bônus diminui em 1 (até um mínimo de 0). ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [975],
       },
       {
         id: 2037,
         nome: 'Alma em Erupção',
         descricao: `
-  <p>Você recebe redução de fogo 10 e, quando causa dano, pode perder 2 pontos de vida (exceto PV temporários) para causar +1d8 pontos de dano de fogo. Laan Deus das Viagens Entidade primordial, status divino 3 Talvez o deus menor mais antigo de que se tem notícia, Laan é um deus tão ancestral que parece sempre ter existido. Alguns especulam que nasceu numa era muito primordial de Arton, quando conceitos como “raças” ainda não eram tão definidos, e criaturas únicas surgiam e desapareciam de tempos em tempos. Alguns teólogos afirmam que Laan surgiu logo após as primeiras criaturas vivas deixarem os oceanos, impulsionadas por Allihanna — essa jornada primordial teria provocado o surgimento do deus. Assim, embora segundo essa hipótese não tenha “sempre existido”, Laan ainda seria mais velho do que quase qualquer outra coisa em Arton. Laan é um deus menor inquieto e curioso, em constante movimento. Governa não apenas as viagens, mas os viajantes e o próprio conceito de deslocamento de um lugar a outro. Também tem influência sobre comunicação e mensageiros. De alguma forma, Laan parece ter domínio sobre todos os tipos de jornadas — desde a viagem de Azgher pelos céus todos os dias até a passagem das almas de Arton aos reinos dos deuses após a morte. Seu propósito é desbravar novos terrenos, espalhar a necessidade de migração entre as criaturas. Laan nunca está onde as pessoas estão paradas, e ninguém nunca permanece parado após sua passagem. O Deus Menor das Viagens possui a estranha capacidade de abrir uma “estrada reta” à sua frente — um caminho que ignora todos os tipos de obstáculos físicos, por onde os viajantes progridem com muito mais rapidez, sem necessidade de paradas. Fisicamente, é um homem alto, largo e musculoso, com voz ribombante e risada monumental. Veste uma toga solta, uma tiara dourada e não usa sapatos, enfrentando o chão com seus enormes pés descalços. Crenças e Objetivos. Viajar. Deslocar-se de um lugar a outro. Explorar. Conhecer o mundo. Descobrir novos locais. Entregar mensagens. Levar pessoas e objetos até onde são necessários. Símbolo Sagrado. Uma estrada que se perde no horizonte. Canalizar Energia. Positiva. Arma Preferida. Bordão. Devotos. Goblins, golens, kliren, lefou, naidoras, bardos, bucaneiros, caçadores, guerreiros, paladino. Obrigações & Restrições. Devotos de Laan são proibidos de fixar moradia, não podendo permanecer mais de 1d10+10 dias na mesma cidade (ou vila, aldeia, povoado...) ou 1d4+1 meses no mesmo reino. Pé na Estrada poder concedido Você pode gastar 3 PM para fornecer o dom da caminhada a criaturas escolhidas em alcance curto. Até o fim da cena, as criaturas afetadas recebem +3m em deslocamento, ficam imunes às condições imóvel e lento e passam automaticamente em testes de Fortitude para marcha forçada (Tormenta20, p. 270). Laan, o Deus Menor das Viagens “Fui escravo. Fui sombra. Agora sou fogo, fórmula e feitiço. Sou livre.” — Asiman, kliren mago libertado 31</p>
+  <p>Você recebe redução de fogo 10 e, quando causa dano, pode perder 2 pontos de vida (exceto PV temporários) para causar +1d8 pontos de dano de fogo. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [974],
       },
       {
         id: 2038,
@@ -18509,256 +18544,271 @@ export class PoderData {
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [973],
       },
       {
         id: 2039,
-        nome: 'de Lâminas',
+        nome: 'Furacão de Lâminas',
         descricao: `
-  <p>Uma vez por rodada, quando erra um ataque corpo a corpo, você pode gastar 2 PM para fazer um novo ataque (com a mesma arma) contra outra criatura ao seu alcance. Lamashtu, a Deusa Menor da Matança 32</p>
+  <p>Uma vez por rodada, quando erra um ataque corpo a corpo, você pode gastar 2 PM para fazer um novo ataque (com a mesma arma) contra outra criatura ao seu alcance. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [972],
       },
       {
         id: 2040,
         nome: 'Passo do Caçador',
         descricao: `
-  <p>Você recebe +2 em Sobrevivência e soma sua Sabedoria em Furtividade. Além disso, contra criaturas desprevenidas ou surpreendidas, seus ataques causam +1d6 pontos de dano. Luvithy Deusa da Peste Mortal ascendido, status divino 2 Uma deusa de comunidades isoladas e nações hoje em dia quase esquecidas, Luvithy foi uma bruxa humana na época em que os nativos de Lamnor ainda não ousavam desbravar Arton Norte. Naquele período, a aldeia de Luvithy estava à beira da destruição devido à guerra com outros povos. Mas a bruxa lançou uma praga que adoeceu e matou todos os inimigos da região. Os povos que não estavam em confronto direto ficaram temerosos e prestaram respeito e devoção a Luvithy, que se tornou a Deusa Menor da Peste. Ao longo dos séculos, o culto a Luvithy se espalhou por todo o continente e chegou também a Lamnor. Todos aqueles que, frente a uma grande peste, suplicavam pela piedade da doença em vez de procurar sua cura acabavam, mesmo sem saber, adorando esta deusa menor. A devoção a Luvithy é um segredo em várias famílias, uma religião praticada em particular por pais e mães que têm medo de perder seus filhos por doenças, por servos que tentam manter vivos senhores moribundos, por pessoas que temem adoecer. Luvithy ganhou muitos devotos depois do surgimento da Praga Coral em Lomatubar. Mesmo sem relação nenhuma com essa doença mágica, a Deusa da Peste passou a ouvir as preces de várias comunidades desesperadas, que imaginavam que a Praga só podia ser obra de uma entidade da pestilência. Com a morte de Ragnar e a ascensão de Thwor, o culto a Luvithy tem se renovado, com fé revigorada e a ambição de conquistar o título de Deusa da Morte para sua padroeira. Crenças e Objetivos. Espalhar doenças. Trazer de volta a antiga glória de Luvithy. Símbolo Sagrado. Um crânio encapuzado. Canalizar Energia. Negativa. Arma Preferida. Gadanho. Devotos. Dahllan, kobolds, nezumi, orcs, osteon, sulfure, trogs, arcanistas, bárbaros, caçadores, druidas, guerreiros, ladinos. Obrigações & Restrições. Devotos de Luvithy devem contaminar pelo menos uma criatura 33</p>
+  <p>Você recebe +2 em Sobrevivência e soma sua Sabedoria em Furtividade. Além disso, contra criaturas desprevenidas ou surpreendidas, seus ataques causam +1d6 pontos de dano. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [950],
       },
       {
         id: 2041,
         nome: 'Toque Pestilento',
         descricao: `
-  <p>Você aprende e pode lançar Infligir Ferimentos e, quando você usa essa magia, se o alvo falhar no teste de resistência, ele também é exposto à doença maldição pegajosa (Tormenta20, p. 318) e sofre seu efeito inicial imediadamente. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e Marina Deusa dos Marinheiros Mortal ascendido, status divino 3 As histórias sobre a origem e a verdadeira aparência desta deusa são tão variadas quanto as histórias de pescadores, marinheiros e piratas. Uns dizem que ela foi uma sereia que se apaixonou por um marinheiro, abrindo mão de sua própria raça para ficar mais perto dele. Outros, que foi a maior capitã pirata do Mar Negro, conquistando a devoção de incontáveis tripulações. Há quem diga que foi uma jovem donzela capturada por piratas e jogada ao mar para morrer, mas que foi salva por Oceano. Outros ainda afirmam que ela foi um bebê que caiu no mar, mas sobreviveu ao ser levado para uma área de “ar molhado” (águas mágicas onde é possível respirar) e foi criada por peixes. Por fim, existem versões que afirmam que ela é a princesa de um antigo império submarino, e até mesmo aqueles que afirmam que Marina era um mero acrostólio (uma decoração de proa de navio) tão adorada pela tripulação que ganhou vida. Quando alguém pergunta diretamente à deusa qual das histórias é real, ela apenas responde: “sim”. A verdadeira personificação das histórias de marinheiros, Marina abençoa oficiais respeitáveis, piratas, pescadores e exploradores sem distinção, pois é a deusa de todos que desbravam o mar. É capaz de invocar incontáveis navios de todos os tipos e tamanhos, mais rápidos, resistentes e poderosos do que qualquer embarcação já vista em Arton. Ninguém sabe de onde vêm esses navios — o que leva alguns a especular que ela realmente possui um império subaquático. Também é capaz de construir navios, sozinha ou com a ajuda de misteriosas equipes que surgem apenas à noite. No convés de uma nau capitânia, é capaz de guiar uma frota inteira, domando as ondas e fazendo soprar os ventos mais favoráveis. Marina recebe devoção absoluta porque não é uma deusa do mar ou de suas criaturas, mas dos homens e mulheres que o desbravam. Seus fiéis não precisam apaziguar uma deusa imprevisível como o próprio mar, não precisam implorar permissão para singrá-lo: sob Marina, o mar pertence a eles. É comum que navios sejam dedicados a Marina antes de sua primeira viagem. Esse costume ficou ainda mais arraigado depois do papel decisivo desta deusa no combate à Tempestade Rubra: foi nos navios de Marina que o exército de deuses menores de Orion Drake chegou à área de Tormenta de Tamu-ra em 1405, libertando o Império de Jade de sua corrupção. Crenças e Objetivos. Explorar o mar. Desafiar as ondas. Desbravar o oceano. Enfrentar tempestades. Vencer limites. Desafiar o impossível. Construir, consertar e pilotar embarcações. Símbolo Sagrado. Um redemoinho marinho. Canalizar Energia. Qualquer. Arma Preferida. Florete. Devotos. Elfos, elfos-do-mar, hynne, kappa, minotauros, qareen, sereias/tritões, arcanistas, bárbaros, bucaneiros, caçadores, druidas, ladinos. Obrigações & Restrições. Devotos de Marina devem sempre carregar consigo um recipiente fechado com água do mar (em termos de jogo, um item que ocupa 0,5 espaço). Além disso, uma vez por aventura, devem passar pelo menos uma noite em uma embarcação no mar. Mar Aberto poder concedido Você aprende e pode lançar Caminhos da Natureza. Você só pode lançar essa magia em ambientes aquá- ticos, mas pode aplicar seu bônus em deslocamento em qualquer embarcação em que esteja. Caso aprenda novamente essa magia, pode usá-la em qualquer ambiente e seu custo diminui em –1 PM. e Mzzileyn Dragão-Rei das Trevas Dragão-Real, status divino 3 Dotado de uma inteligência comparável apenas a sua crueldade, Mzzileyn tece planos dentro de planos. Seus objetivos são cada vez mais perversos, mas todos espalham intriga, morte e destruição pelo mundo. Esta é uma divindade que se diverte com a desgraça e a infelicidade alheias, provocando catástrofes como passatempo. “Meu fedor não é de morte. É de liberdade. Eu escolhi a morte. Você ainda está preso.” — Akioko Sempukiako, necromante tamuraniano 34</p>
+  <p>Você aprende e pode lançar Infligir Ferimentos e, quando você usa essa magia, se o alvo falhar no teste de resistência, ele também é exposto à doença maldição pegajosa (Tormenta20, p. 318) e sofre seu efeito inicial imediadamente. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [971],
       },
       {
         id: 2042,
         nome: 'Mar Aberto',
         descricao: `
-  <p>Você aprende e pode lançar Caminhos da Natureza. Você só pode lançar essa magia em ambientes aquá- ticos, mas pode aplicar seu bônus em deslocamento em qualquer embarcação em que esteja. Caso aprenda novamente essa magia, pode usá-la em qualquer ambiente e seu custo diminui em –1 PM. e Mzzileyn Dragão-Rei das Trevas Dragão-Real, status divino 3 Dotado de uma inteligência comparável apenas a sua crueldade, Mzzileyn tece planos dentro de planos. Seus objetivos são cada vez mais perversos, mas todos espalham intriga, morte e destruição pelo mundo. Esta é uma divindade que se diverte com a desgraça e a infelicidade alheias, provocando catástrofes como passatempo. “Meu fedor não é de morte. É de liberdade. Eu escolhi a morte. Você ainda está preso.” — Akioko Sempukiako, necromante tamuraniano 34</p>
+  <p>Você aprende e pode lançar Caminhos da Natureza. Você só pode lançar essa magia em ambientes aquá- ticos, mas pode aplicar seu bônus em deslocamento em qualquer embarcação em que esteja. Caso aprenda novamente essa magia, pode usá-la em qualquer ambiente e seu custo diminui em –1 PM. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [970],
       },
       {
         id: 2043,
-        nome: 'Venenosas',
+        nome: 'Sombras Venenosas',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja usando. A arma causa perda de 1d12 PV por veneno. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Além disso, se você estiver em uma área de escuridão, a CD para resistir aos seus venenos aumenta em +2 e a perda de vida deles aumenta em +2 por dado. e Nerelim Deusa da Água Doce Mortal ascendido, status divino 2 Uma deusa de origem ancestral, cujo culto foi abraçado pelos colonos que fundaram o antigo reino de Callistia, Nerelim foi a divindade mais cultuada nessa nação, antes de ser absorvida pelas Repúblicas Livres de Sambúrdia. De fato, antigamente nenhuma família que não cultuasse Nerelim nesse reino era considerada “respeitável”, ao menos na capital. Nerelim costuma se apresentar na forma de uma mulher com cabelos imensos, trançados de modo a parecer uma rede de pesca. É também a padroeira dos Mzzileyn, o Dragão-Rei das Trevas 35</p>
+  <p>Você pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja usando. A arma causa perda de 1d12 PV por veneno. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Além disso, se você estiver em uma área de escuridão, a CD para resistir aos seus venenos aumenta em +2 e a perda de vida deles aumenta em +2 por dado. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [969],
       },
       {
         id: 2044,
         nome: 'Água da vida',
         descricao: `
-  <p>Uma vez por dia, você pode transformar um jarro (ou outro recipiente equivalente que ocupe 0,5 espa- ço) de água doce em uma poção mágica. Beber essa água mágica é uma ação padrão e recupera 2d8+2 PV e 1d4+1 PM. A água mantém suas propriedades mágicas por 1 semana ou até ser bebida. Neruíte Deusa do Sono Mortal ascendido, status divino 2 Neruíte é uma deusa maternal, de voz suave e melodiosa, que convida todos a relaxar em um sono tranquilo e reparador. Sua presença de aparência inconstante traz uma paz inexplicável, envolvendo os corações aflitos com serenidade e aconchego. Suas canções de ninar são mágicas e possuem o poder de adormecer qualquer criatura, independente de seu tamanho ou natureza. Uma vez adormecida pela melodia de Neruíte, a criatura não acordará até ter um descanso adequado, segundo os ensinamentos da deusa. Devotos de Neruíte acreditam que o sono, quando adequado e tranquilo, é um ritual sagrado. São ensinados a respeitar o ciclo natural do descanso, evitando excessos e buscando sempre a harmonia entre o dia e a noite. Os sacerdotes de Neruíte, conhecidos como “Sonhadoresˮ, passam seus dias compartilhando as lições de equilíbrio e de cuidados com o corpo e a mente, realizando cerimônias que celebram a importância do descanso. Não se sabe a origem exata de Neruíte, apenas que a deusa é muito antiga. Certas histórias falam de uma princesa de um reino ancestral, que teria adormecido num sono de décadas, sem envelhecer ou sofrer qualquer efeito do tempo. Seus súditos teriam começado a peregrinar para velar seu sono, aos poucos transformando-se em seus devotos… Infelizmente, ninguém conhece o final da história, pois todos adormecem ao ouvi-la, então não se sabe se tem algum fundo de verdade. Os templos de Neruíte são conhecidos por sua atmosfera serena e acolhedora. Decorados com tecidos suaves, almofadas e velas perfumadas, esses santuá- rios são considerados locais ideais para descansar e se reconectar com o divino. Crenças e Objetivos. Ensinar a importância de um bom sono. Auxiliar as pessoas a obterem o descanso adequado. Velar pelo sono alheio. Desvendar pesadelos. Interpretar sonhos. Sonhar. Símbolo Sagrado. Uma vela apagada. Canalizar Energia. Qualquer. Arma Preferida. Maça. Devotos. Aggelus, elfos, qareen, sereias/tritões, sílfides, arcanistas, bardos, caçadores, nobres. Obrigações & Restrições. Devotos de Neruí- te jamais podem acordar intencionalmente alguém que esteja dormindo, ou permitir que outros o façam. Além disso, sempre que acorda, o devoto fica pasmo por 1 rodada, enquanto seu espírito lentamente desperta de seu sono sagrado. Sono Reparador poder concedido Se descansar (dormindo) em condições normais ou melhores, você pode melhorar sua recuperação de PV ou PM em um passo. Alternativamente, você pode ter um sonho inspirador: ao despertar, recebe +1d6 em um teste de perícia a sua escolha realizado até o fim do dia. 36</p>
+  <p>Uma vez por dia, você pode transformar um jarro (ou outro recipiente equivalente que ocupe 0,5 espa- ço) de água doce em uma poção mágica. Beber essa água mágica é uma ação padrão e recupera 2d8+2 PV e 1d4+1 PM. A água mantém suas propriedades mágicas por 1 semana ou até ser bebida. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [968],
       },
       {
         id: 2045,
         nome: 'Sono Reparador',
         descricao: `
-  <p>Se descansar (dormindo) em condições normais ou melhores, você pode melhorar sua recuperação de PV ou PM em um passo. Alternativamente, você pode ter um sonho inspirador: ao despertar, recebe +1d6 em um teste de perícia a sua escolha realizado até o fim do dia. 36</p>
+  <p>Se descansar (dormindo) em condições normais ou melhores, você pode melhorar sua recuperação de PV ou PM em um passo. Alternativamente, você pode ter um sonho inspirador: ao despertar, recebe +1d6 em um teste de perícia a sua escolha realizado até o fim do dia. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [967],
       },
       {
         id: 2046,
-        nome: 'conjurar cristal',
+        nome: 'Conjurar Cristal',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 3 PM para conjurar um cristal azul, verde ou vermelho. Conforme a cor do cristal, você pode quebrá-lo para gerar um efeito: azul (recebe RD 20 contra um dano recém-sofrido); verde (rola novamente um teste de resistência recém-realizado); vermelho (ganha uma ação de movimento nesse turno). O cristal dura até o fim da cena, até ser usado ou até você conjurar outro cristal. e O Deus das Cidades Conceito vivo, status divino 4 À primeira vista, esta divindade parece não ter nome. No entanto, o oposto é verdade: o Deus das Cidades tem infinitos nomes, batizado de novo e de novo sempre que uma nova comunidade é formada. Chama-se Nova Malpetrim, Smokestone, Norm, Roschfallen, Var Raan, Gallien, Ghallystryx… Chama-se até O Deus Cristal de Urielka 37</p>
+  <p>Você pode gastar uma ação de movimento e 3 PM para conjurar um cristal azul, verde ou vermelho. Conforme a cor do cristal, você pode quebrá-lo para gerar um efeito: azul (recebe RD 20 contra um dano recém-sofrido); verde (rola novamente um teste de resistência recém-realizado); vermelho (ganha uma ação de movimento nesse turno). O cristal dura até o fim da cena, até ser usado ou até você conjurar outro cristal. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [949],
       },
       {
         id: 2047,
         nome: 'Manha da Cidade',
         descricao: `
-  <p>Quando está em uma comunidade, você soma sua Sabedoria (mínimo de 1) em testes de Conhecimento, Investigação, Ladinagem e Nobreza, e pode fazer testes dessas perícias mesmo sem ser treinado. Além disso, em comunidades pode fazer testes para interrogar sem precisar falar com pessoas ou gastar tibares, questionando a própria cidade. O Deus do Medo Conceito vivo, status divino 4 Um deus sem nome, cuja presença é sempre sentida, mas jamais vista diretamente — pois tudo é mais amedrontador quando não é visto, e mais terrível quando não pode ser nomeado. O Deus do Medo se encontra sempre fora do ângulo de visão de um observador, como se estivesse à beira da percepção, nunca completamente revelado, mas sua influência é inegável. Sua natureza misteriosa e evasiva reflete o instinto primitivo que representa: o medo. Por ser padroeiro desse instinto bá- sico, que está presente em todo ser vivo, esta divindade é extremamente poderosa e imortalizada nos corações dos mortais. O medo, em suas mais variadas formas, é infinito, uma força que governa a vida e a morte, a ação e a inação, e o deus sem nome compreende isso melhor do que qualquer outro ser. Os devotos do Deus Menor do Medo são aqueles que veem essa emoção como uma ferramenta a ser manipulada. Eles exploram cada nuance dos medos dos outros para alcançar seus próprios objetivos, seja em batalhas psicológicas, seja em estratégias para obter poder, controle ou influência. Ao alimentar e amplificar o medo, esses seguidores aumentam ainda mais o poder e a autoridade de sua divindade. Cada suspiro de pavor, cada sombra que se move de forma inesperada, serve para fortalecer o vínculo com o deus sem nome, aproximando-os cada vez mais de sua essência. Não ter medo é impossível. Também há outros devotos, esses involuntários: aqueles tomados pelo medo. Medo da morte, medo de uma tragédia, medo de um grande inimigo… Até mesmo medo da felicidade, do sucesso, de tentar alguma coisa. Pessoas paralisadas pelo medo muitas vezes acabam considerando esse sentimento sagrado e cultuando o Deus do Medo sem saber. Para piorar as coisas, isso pode fazer com que este deus se manifeste sempre atrás desses devotos. Mas, quando o infeliz se vira para olhar, a divindade não está mais lá. Crenças e Objetivos. Espalhar o medo e o terror. Afugentar inimigos. Amedrontar a todos. Fazer com que ninguém se sinta em segurança, nem mesmo em casa. Apavorar crianças. Temer. Símbolo Sagrado. Uma silhueta sombria. Canalizar Energia. Negativa. Arma Preferida. Corrente de espinhos. Devotos. Bugbears, lefou, minotauros, medusas, osteon, sulfure, trogs, voracis, arcanistas, bárbaros, bardos, bucaneiros, guerreiros, ladinos, lutadores. Obrigações & Restrições. Devotos do Deus do Medo devem deixar uma criatura sob qualquer efeito 38</p>
+  <p>Quando está em uma comunidade, você soma sua Sabedoria (mínimo de 1) em testes de Conhecimento, Investigação, Ladinagem e Nobreza, e pode fazer testes dessas perícias mesmo sem ser treinado. Além disso, em comunidades pode fazer testes para interrogar sem precisar falar com pessoas ou gastar tibares, questionando a própria cidade. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [966],
       },
       {
         id: 2048,
-        nome: 'domínio do medo',
+        nome: 'Domínio do Medo',
         descricao: `
-  <p>Você recebe +2 em Intimidação e na CD de seus efeitos de medo, e pode escolher poderes relacionados a efeitos de medo sem necessidade de cumprir pré-requisitos de classe ou devoção. Por fim, pode aprender magias de medo como magias divinas. Piscigeros deus dos Homens-Peixes Conceito vivo, status divino 1 Também chamado entre os homens-peixes de Pai Peixe, esta divindade possui uma história curiosa. Originalmente, o Pai Peixe não passava de uma mentira dos thalassothan, monstros aquáticos inteligentes e cruéis, capazes de herdar memórias de seus progenitores e absorvê-las de suas vítimas. Esses algozes das águas convenceram os homens-peixes da existência do deus Piscigeros para obter controle sobre eles, afirmando serem arautos dessa divindade. Entretanto, o poder da crença em Arton é tão forte — e a farsa durou tantas gerações — que há relatos de um indivíduo solto nas profundezas marítimas que afirma ser Piscigeros, e que está sendo cultuado pelos homens-peixes. Os thalassothan foram pegos desprevenidos por isso. Vários homens-peixes já se revoltaram contra seus mestres ao perceber que os “arautos do Pai Peixe” pareciam saber menos sobre o deus do que seus servos! Se o tal “Piscigeros” é um ser que tomou a identidade do Pai Peixe para si ou se de fato surgiu espontaneamente devido à crença dos fiéis, ninguém da superfície sabe ainda. O que se sabe é que a fé dos homens-peixes é genuína, e que seus devotos são os comandantes dessa raça submarina — alguns até mesmo desafiando o controle thalassothan. Crenças e Objetivos. Obedecer aos arautos do Pai Peixe acima de tudo. Vencer a qualquer custo, pela força ou estratégia. Proteger a cultura e o modo de vida dos homens-peixes. Dominar os mares e os seres sob as ondas. Símbolo Sagrado. Um peixe imenso em um cardume de peixes menores. Canalizar Energia. Negativa. Arma Preferida. Tridente. Devotos. Dahllan, elfos-do-mar, hynne, kappa, minotauros, sereias/tritões, bárbaros, bucaneiros, caçadores, druidas, treinadores. Obrigações & Restrições. Devotos de Piscigeros jamais podem ignorar um pedido de ajuda de um homem-peixe e devem proteger qualquer membro de seu povo até a morte, se preciso. Além disso, devotos do Pai Peixe jamais podem desobedecer às ordens dos arautos de sua divindade ou causar dano letal ou perda de PV a eles (habilidades que forneçam bônus em dano letal ou em perda de vida para criaturas em combate contra eles também são proibidas). Esse último dogma vem sendo contestado por alguns sacerdotes de Piscigeros, mas não se sabe ainda as consequências de fazer isso. Bolha Hídrica poder concedido Uma vez por rodada, quando você ou um aliado em alcance curto faz um teste de resistência ou sofre dano, você pode gastar 2 PM para cuspir uma bolha de água protetora que fornece +5 nesse teste de resistência ou RD 15 contra esse dano. Estes benefícios são dobrados contra efeitos de fogo. e Rhond Deus das Armas Mortal ascendido, status divino 3 Rhond é um dos deuses menores mais acessíveis — e sua história é uma das mais conhecidas. Ele reside na Cidade de Rhond, no reino de Zakharov, que também abriga seu templo mais importante e boa parte de seus clérigos. Rhond teria sido um dos mais antigos clérigos de Keenn, o antigo Deus da Guerra. Tanto um armeiro supremo quanto um aventureiro poderoso, Rhond forjou incontáveis armas, transcendendo a mera habilidade mundana para fabricar verdadeiros itens mágicos. Acumulou tanto poder e artefatos de sua própria criação que acreditou ser capaz de vencer o próprio Deus da Guerra e ocupar seu posto. E efetivamente viajou até o Reino de Keenn para desafiá-lo, mas foi vencido. No entanto, Keenn não puniu o desafiante. Orgulhoso da coragem de seu clérigo, recompensou-o com a imortalidade, o poder mágico de forjar as mais poderosas e magníficas ferramentas de morte. Contudo, também o puniu por sua arrogância: prendeu-o numa forma monstruosa de seis braços e obrigou-o a forjar armas pela eternidade. Assim, pensava Keenn, o poderoso desafiante estaria para sempre servindo a ele. Contudo, Rhond viu a recompensa/castigo como uma grande injustiça, o capricho de um deus arbitrário. Perdeu a fé e abandonou o sacerdócio, continuando em sua tarefa eterna. Com o passar dos séculos, sua fama como armeiro se tornou tão grande que ele 39</p>
+  <p>Você recebe +2 em Intimidação e na CD de seus efeitos de medo, e pode escolher poderes relacionados a efeitos de medo sem necessidade de cumprir pré-requisitos de classe ou devoção. Por fim, pode aprender magias de medo como magias divinas. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [965],
       },
       {
         id: 2049,
         nome: 'Bolha Hídrica',
         descricao: `
-  <p>Uma vez por rodada, quando você ou um aliado em alcance curto faz um teste de resistência ou sofre dano, você pode gastar 2 PM para cuspir uma bolha de água protetora que fornece +5 nesse teste de resistência ou RD 15 contra esse dano. Estes benefícios são dobrados contra efeitos de fogo. e Rhond Deus das Armas Mortal ascendido, status divino 3 Rhond é um dos deuses menores mais acessíveis — e sua história é uma das mais conhecidas. Ele reside na Cidade de Rhond, no reino de Zakharov, que também abriga seu templo mais importante e boa parte de seus clérigos. Rhond teria sido um dos mais antigos clérigos de Keenn, o antigo Deus da Guerra. Tanto um armeiro supremo quanto um aventureiro poderoso, Rhond forjou incontáveis armas, transcendendo a mera habilidade mundana para fabricar verdadeiros itens mágicos. Acumulou tanto poder e artefatos de sua própria criação que acreditou ser capaz de vencer o próprio Deus da Guerra e ocupar seu posto. E efetivamente viajou até o Reino de Keenn para desafiá-lo, mas foi vencido. No entanto, Keenn não puniu o desafiante. Orgulhoso da coragem de seu clérigo, recompensou-o com a imortalidade, o poder mágico de forjar as mais poderosas e magníficas ferramentas de morte. Contudo, também o puniu por sua arrogância: prendeu-o numa forma monstruosa de seis braços e obrigou-o a forjar armas pela eternidade. Assim, pensava Keenn, o poderoso desafiante estaria para sempre servindo a ele. Contudo, Rhond viu a recompensa/castigo como uma grande injustiça, o capricho de um deus arbitrário. Perdeu a fé e abandonou o sacerdócio, continuando em sua tarefa eterna. Com o passar dos séculos, sua fama como armeiro se tornou tão grande que ele 39</p>
+  <p>Uma vez por rodada, quando você ou um aliado em alcance curto faz um teste de resistência ou sofre dano, você pode gastar 2 PM para cuspir uma bolha de água protetora que fornece +5 nesse teste de resistência ou RD 15 contra esse dano. Estes benefícios são dobrados contra efeitos de fogo. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [964],
       },
       {
         id: 2050,
         nome: 'Artista das Armas',
         descricao: `
-  <p>Você pode infundir armas com uma fagulha divina. Gaste uma semana e T$ 100 e faça um teste de Ofício (armeiro) com CD igual à de fabricação da arma. Se passar, a arma se torna mágica e recebe uma melhoria cujos pré-requisitos cumpra (exceto material especial), que não conta em seu limite de melhorias. e Rhond, o Deus Menor das Armas 40</p>
+  <p>Você pode infundir armas com uma fagulha divina. Gaste uma semana e T$ 100 e faça um teste de Ofício (armeiro) com CD igual à de fabricação da arma. Se passar, a arma se torna mágica e recebe uma melhoria cujos pré-requisitos cumpra (exceto material especial), que não conta em seu limite de melhorias. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [963],
       },
       {
         id: 2051,
-        nome: 'dos Deuses',
+        nome: 'Inimigo dos Deuses',
         descricao: `
-  <p>Você recebe resistência a magia divina +5 e, contra devotos de outros deuses, recebe +2 em testes de ataque e na CD de suas habilidades. Sckhar Dragão-Rei do Fogo Dragão-Real, status divino 5 De várias formas, Sckhar representa tudo aquilo que define um dragão — força, influência, orgulho, perigo… —, sempre ao extremo. Sua expressão é intimidadora mesmo quando está calmo, e ele se enfurece com facilidade. Seus acessos de raiva são notórios, pois assassina seus servos, guardas e esposas diante da menor transgressão. Com uma nação inteira à sua disposição e nenhuma das preocupações “mundanas” de um regente (como intrigas, rivais ou ameaças de invasões), Sckhar devota grande parte do tempo e dos recursos de Sckharshantallas à sua adoração. Existem inúmeros relatos sobre Sckhar como um rei (ou tirano): sobre como considera todo o reino seu covil e tudo que está dentro de suas fronteiras como seu tesouro. Existem histórias sobre Sckhar como oponente: poucos sobrevivem a sua fúria, e ele teve papel decisivo na luta contra o Dragão da Tormenta. Existem até mesmo boatos sobre os sentimentos de Sckhar: ele teria se apaixonado por BeRei, dragão, deus luhga no passado, sendo capaz de uma forma de amor. Teria também feito um pacto com o cavaleiro Lothar Algherulff, mostrando astúcia e dando ouvidos a uma “criatura inferior”. Mas e Sckhar como divindade? Sckhar é um dos deuses menores mais presentes nas vidas de seus devotos. Eles sentem o toque do deus sempre que acordam sob o calor escaldante do reino. Festivais são realizados em sua honra, sacrifícios 42</p>
+  <p>Você recebe resistência a magia divina +5 e, contra devotos de outros deuses, recebe +2 em testes de ataque e na CD de suas habilidades. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [962],
       },
       {
         id: 2052,
         nome: 'Ego',
         descricao: `
-  <p>Quando faz um teste, você pode gastar 1 PM para receber +5 nesse teste. Se fizer isso e falhar no teste, até o fim da cena você sofre uma penalidade de –2 em testes e não pode usar este poder. Sunnary Deusa da Culinária Mortal ascendido, status divino 2 Dona Sunnary, como ficou conhecida, nasceu em uma pequena vila desconhecida, não se casou e nem teve filhos, mas adotou toda a vila como sua família. Sempre com uma refeição deliciosa e uma palavra amiga, resolvia todas as disputas e desavenças em torno da mesa farta. Era devota de Marah e representava muito bem o lado gentil e tranquilo da Deusa da Paz. Sua fama como cozinheira e mediadora de conflitos se espalhou pela região e logo a pequena vila recebia viajantes em busca da comida de Dona Sunnary. A vida transcorria tranquila até que o vilarejo foi ameaçado por um terrível dragão. Sem recursos para enfrentar a ameaça mortal, os aldeões entraram em pânico, rezando aos deuses por misericórdia e implorando por uma solução. No entanto, como a maioria dos artonianos sabe, os deuses não resolvem seus problemas diretamente, mas enviam campeões para isso. Nesse caso, a campeã não foi nenhuma aventureira. Emocionada pela situação e com fé inabalável nas próprias habilidades, a talentosa cozinheira decidiu intervir. Dona Sunnary escolheu suas melhores receitas e fez um banquete magnífico em honra ao seu “convidado” dragão, chamando-o para conversar e partilhar a refeição. Ao fim da sobremesa, o dragão já estava apaziguado e desistiu de destruir a vila. Adotou o vilarejo como seu protegido em troca de banquetes periódicos feitos pelas mãos divinas de Dona Sunnary. Curiosamente, logo a ameaça implícita nisso se dissipou. O dragão passou a ser apenas mais um conviva. A história se espalhou e logo começaram as peregrinações para conhecer a lendária cozinheira. E assim, Dona Sunnary, a simpática aldeã, ascendeu como divindade menor da culinária, abençoando a boa comida e aqueles que a produzem. Como deusa, Dona Sunnary costuma parecer uma senhora baixa de cabelos grisalhos, sempre presos em coque (para que seu cabelo não caia nas panelas), com olhos gentis, cintura roliça e nariz aquilino, sempre sorridente. Crenças e Objetivos. Reverenciar a arte da culinária. Alimentar os necessitados. Cozinhar com prazer. Criar novas receitas. Espalhar a palavra da boa culinária. Símbolo Sagrado. Panela sobre uma fogueira. Canalizar Energia. Positiva. 43</p>
+  <p>Quando faz um teste, você pode gastar 1 PM para receber +5 nesse teste. Se fizer isso e falhar no teste, até o fim da cena você sofre uma penalidade de –2 em testes e não pode usar este poder. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [961],
       },
       {
         id: 2053,
         nome: 'Alimento da Alma',
         descricao: `
-  <p>Você recebe treinamento em Ofício (cozinheiro) e aprende e pode lançar Abençoar Alimentos. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. e Tamagrah Deus da Ilha Viva Entidade primordial, status divino 3 Em Moreania há criaturas enormes — mas poucas se comparam a Tamagrah. O monstro se assemelha a um peixe achatado, com boca de bagre e olhos esbugalhados. Possui seis nadadeiras e uma cauda curta, porém vigorosa. Suas costas são protegidas por uma grossa carapaça, guarnecida por longos espinhos. Apesar da aparência demoníaca, Tamagrah é ainda mais assustador por seu tamanho: seu casco tem 12km de diâmetro, mantendo uma superfície de 8km emersa. Uma vez que a criatura flutua lentamente pelos mares, sem jamais submergir, vegetação floresceu em sua carapaça e vida animal passou a habitar Tamagrah como se fosse uma ilha. Nem todos conhecem a verdadeira natureza de Tamagrah: a maioria das pessoas acredita ser apenas uma ilhota peculiar. Mas aqueles que sabem do segredo cultuam o monstro como um deus. E são correspondidos. Tamagrah concede poderes a seus devotos — mas, exceto por esse fato, pouco interfere em assuntos dos mortais. Sua existência é milenar, suas preocupações são mistérios profundos como os mares: o monstro tanto ajuda aos que pedem seu auxílio em orações, como causa maremotos e catástrofes com um simples movimento de nadadeira. Crenças e Objetivos. Reverenciar Tamagrah. Proteger a vida selvagem e o povo da Ilha Viva. Combater monstros, mortos-vivos e invasores que perturbam o equilíbrio natural do ecossistema da Ilha Viva. Símbolo Sagrado. Um casco de tartaruga com seis nadadeiras de peixe. Canalizar Energia. Qualquer. Arma Preferida. Lança. Devotos. Anões, dahllan, elfos, hynne, sílfides, bárbaros, bucaneiros, caçadores, druidas, treinadores. Obrigações & Restrições. Devotos de Tamagrah devem proteger seu deus e, consequentemente, seu habitat, por meio de missões além mar para prevenir ameaças (pelo menos uma missão a cada 1d4+2 meses), mas não podem permanecer mais de 1d4+2 meses longe de Tamagrah. Casco de Tartaruga poder concedido Uma vez por rodada, quando sofre dano, você pode gastar 2 PM para receber RD 20 contra esse dano. Teldiskan o gigante Máximo Entidade primordial, status divino 1 Em Deheon, o Reino Capital, há uma cordilheira chamada de Montanhas Teldiskan, que ocupa boa parte do território a noroeste do reino. Apesar de fazerem parte da mesma formação das Montanhas Uivantes, o local tem sua própria identidade por ser lar de Teldiskan, o Gigante Máximo. Provavelmente a criatura mais alta de Arton, dizem que quando se levanta, Teldiskan consegue ver as nuvens que se formam em todos os reinos do que sobrou do Reinado, conseguindo prever o clima de semanas e até meses à frente. Por esse motivo os humanos há muitos séculos cultuam a criatura como a divindade menor do clima. Mas nem sempre Teldiskan foi bondoso ou pacífico — e talvez não o seja hoje em dia. Teldiskan, o Gigante Máximo, atacou a cidade de Valkaria, quando era um mero assentamento de refugiados, pouco depois da chegada da Caravana dos Exilados a Arton Norte. Na ocasião, a Rainha Yvanna das Amazonas e Roramar Pruss, o Rei Profeta, derrotaram juntos o gigante, banindo-o para as montanhas e assim selando a aliança entre o que viria a ser o reino de Deheon e as nações amazonas. Teldiskan teria se arrependido e, desde então, tornado-se uma divindade pastoril, que protege as pequenas aldeias que existem no sopé das montanhas. Um deus pacato, que pouco faz além de garantir bom tempo. Ou apenas um vilão dotado de enorme paciência. Atualmente, devotos de Teldiskan se espalham pelas diversas aldeias nas encostas das montanhas e usam de rituais para prever o clima e auxiliar o povo com suas criações de cabras, carneiros e outros animais montanheses. Entre os devotos, há um grupo chamado Pastores de Teldiskan que viaja por Deheon pregando como seu padroeiro é uma divindade 44</p>
+  <p>Você recebe treinamento em Ofício (cozinheiro) e aprende e pode lançar Abençoar Alimentos. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [960],
       },
       {
         id: 2054,
         nome: 'Casco de Tartaruga',
         descricao: `
-  <p>Uma vez por rodada, quando sofre dano, você pode gastar 2 PM para receber RD 20 contra esse dano. Teldiskan o gigante Máximo Entidade primordial, status divino 1 Em Deheon, o Reino Capital, há uma cordilheira chamada de Montanhas Teldiskan, que ocupa boa parte do território a noroeste do reino. Apesar de fazerem parte da mesma formação das Montanhas Uivantes, o local tem sua própria identidade por ser lar de Teldiskan, o Gigante Máximo. Provavelmente a criatura mais alta de Arton, dizem que quando se levanta, Teldiskan consegue ver as nuvens que se formam em todos os reinos do que sobrou do Reinado, conseguindo prever o clima de semanas e até meses à frente. Por esse motivo os humanos há muitos séculos cultuam a criatura como a divindade menor do clima. Mas nem sempre Teldiskan foi bondoso ou pacífico — e talvez não o seja hoje em dia. Teldiskan, o Gigante Máximo, atacou a cidade de Valkaria, quando era um mero assentamento de refugiados, pouco depois da chegada da Caravana dos Exilados a Arton Norte. Na ocasião, a Rainha Yvanna das Amazonas e Roramar Pruss, o Rei Profeta, derrotaram juntos o gigante, banindo-o para as montanhas e assim selando a aliança entre o que viria a ser o reino de Deheon e as nações amazonas. Teldiskan teria se arrependido e, desde então, tornado-se uma divindade pastoril, que protege as pequenas aldeias que existem no sopé das montanhas. Um deus pacato, que pouco faz além de garantir bom tempo. Ou apenas um vilão dotado de enorme paciência. Atualmente, devotos de Teldiskan se espalham pelas diversas aldeias nas encostas das montanhas e usam de rituais para prever o clima e auxiliar o povo com suas criações de cabras, carneiros e outros animais montanheses. Entre os devotos, há um grupo chamado Pastores de Teldiskan que viaja por Deheon pregando como seu padroeiro é uma divindade 44</p>
+  <p>Uma vez por rodada, quando sofre dano, você pode gastar 2 PM para receber RD 20 contra esse dano. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [959],
       },
       {
         id: 2055,
-        nome: 'do Gigante',
+        nome: 'Despertar do Gigante',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 3 PM para se tornar fisicamente mais imponente. Até o fim da cena você recebe +1 em Força e é considerado uma categoria de tamanho maior para modificadores de manobra de combate. Tessalus Deus dos Elfos-do-Mar Mortal ascendido, status divino 3 Nas águas turbulentas de Arton, Tessalus cresceu na tradição guerreira dos elfos-do-mar. Treinado desde a infância para a batalha, seu tridente encantado simbolizava a força e bravura desse povo bárbaro. Durante o acirrado conflito contra as sereias, ele se destacou como um líder feroz e destemido. Um dia, o destino o colocou frente a frente com Ayllana, a mais poderosa feiticeira entre as sereias. Em um duelo intenso, Tessalus viu seus ataques serem desviados por conjurações que invocavam redemoinhos, feras e tempestades. Aquele confronto, marcado pelo choque entre força bruta e poder místico, se tornaria lendário entre os elfos marinhos — pois Tessalus emergiu vitorioso, colocando a adversária em fuga. A admiração desmedida de seu povo elevou Tessalus ao status de Deus dos Elfos-do-Mar. Seu culto, pleno de rituais que exaltam a coragem, mantém viva a memória daquele confronto. Entre cânticos, cerimônias e duelos, seus seguidores espalham-se pelos mares de Arton, também dominando grandes extensões de Pelágia, o Reino de Oceano. Juram superar qualquer adversário, honrar a tradição e a fúria de seu deus bárbaro e, acima de tudo, buscam supremacia sobre as sereias. Crenças e Objetivos. Proteger os elfos-do-mar e sua soberania. Levar sua fúria às sereias e aos povos do mundo seco. Dominar os oceanos. Derrotar as sereias. Símbolo Sagrado. Um tridente. Canalizar Energia. Qualquer. Arma Preferida. Tridente. Devotos. Elfos-do-mar, qareen, bárbaros, bucaneiros, caçadores. Obrigações & Restrições. Devotos de Tessalus são proibidos de matar elfos-do-mar, recusar-se a ajudar elfos-do-mar, e recusar missões para resgatar ou proteger elfos-do-mar e seus ritos. Arsenal do Oceano poder concedido Você recebe proficiência em tridente e recebe +1 em testes de ataque e na margem de ameaça com essa arma. Se já for proficiente em tridente, seu dano aumenta em um passo. Toris Deusa de Jallar Entidade primordial, status divino 1 Pouquíssimas pessoas sabem da existência de Jallar, um minúsculo reino nos limites do Reinado. Isso se deve à paranoia de Toris, a deusa menor que fundou e protege o local desde sua origem. Seus devotos são praticamente toda a população do reino, seus clérigos são poucos e, anos atrás, ela possuía um paladino que era seu grande orgulho. O paladino passava os dias cavalgando e patrulhando as fronteiras do reino, e foi responsável por livrar Jallar da maioria Toris, a dos monstros Deusa Menor de Jallar 46</p>
+  <p>Você pode gastar uma ação de movimento e 3 PM para se tornar fisicamente mais imponente. Até o fim da cena você recebe +1 em Força e é considerado uma categoria de tamanho maior para modificadores de manobra de combate. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [958],
       },
       {
         id: 2056,
         nome: 'Arsenal do Oceano',
         descricao: `
-  <p>Você recebe proficiência em tridente e recebe +1 em testes de ataque e na margem de ameaça com essa arma. Se já for proficiente em tridente, seu dano aumenta em um passo. Toris Deusa de Jallar Entidade primordial, status divino 1 Pouquíssimas pessoas sabem da existência de Jallar, um minúsculo reino nos limites do Reinado. Isso se deve à paranoia de Toris, a deusa menor que fundou e protege o local desde sua origem. Seus devotos são praticamente toda a população do reino, seus clérigos são poucos e, anos atrás, ela possuía um paladino que era seu grande orgulho. O paladino passava os dias cavalgando e patrulhando as fronteiras do reino, e foi responsável por livrar Jallar da maioria Toris, a dos monstros Deusa Menor de Jallar 46</p>
+  <p>Você recebe proficiência em tridente e recebe +1 em testes de ataque e na margem de ameaça com essa arma. Se já for proficiente em tridente, seu dano aumenta em um passo. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [957],
       },
       {
         id: 2057,
         nome: 'Véu de Toris',
         descricao: `
-  <p>Você recebe +5 em Furtividade e não sofre penalidade de armadura em testes dessa perícia. Além disso, você sempre sabe em que direção está Jallar, sendo capaz de encontrar o pequeno reino mesmo com a magia de proteção contra detecção invocada pela deusa. Tukala Deusa dos Texugos Alados Mortal ascendido, status divino 1 Nascida nos Ermos Púrpuras e expulsa da região após uma série de conflitos contra criaturas da Tormenta, a Tribo do Texugo Cinzento possui um mito de criação próprio, em que a figura central é o Texugo, um ser alado (?!?) cujas asas foram roubadas por Sszzaas, que as deu de presente aos seus filhos, criando assim as serpes. Como vingança, o Texugo roubou os ovos das serpentes e os chocou ele mesmo. Quando os filhotes nasceram, ele deu aos rebentos sua fúria, criando assim os primeiros kobolds. Ninguém sabe se há algo de real nesse mito (na verdade, qualquer pessoa sã diria que o mito é tão irreal que, cada vez que ele é repetido, algumas coisas reais se tornam fictícias). Mas, se por um milagre houver uma migalha factual nessa história, ela se relaciona apenas aos kobolds dessa tribo. O que implicaria que existe uma tribo de kobolds que difere de todo o resto dessas criaturas, e que descende de um texugo alado que… Não, melhor não pensar nisso. Verdadeira ou não, a história é contada com orgulho pelos membros dos Texugos Cinzentos e deu origem até a uma ordem de bravos bárbaros alados que ostentam o título de Furiosos Cinzentos. “Não me façam repetir. Eu CURO. Mas se me irritar… eu EXPLODO!” — James “Paviocurto” Doperman, mago curandeiro 47</p>
+  <p>Você recebe +5 em Furtividade e não sofre penalidade de armadura em testes dessa perícia. Além disso, você sempre sabe em que direção está Jallar, sendo capaz de encontrar o pequeno reino mesmo com a magia de proteção contra detecção invocada pela deusa. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [956],
       },
       {
         id: 2058,
-        nome: 'de Texugos',
+        nome: 'Revoada de Texugos',
         descricao: `
-  <p>Você pode gastar uma ação de movimento e 3 PM para invocar uma revoada de 1d4+1 texugos alados espirituais que ficam ao seu redor até o fim da cena. Enquanto estiverem ao seu redor, os texugos fornecem +2 em rolagens de dano corpo a corpo e na Defesa. Além disso, quando sofre dano, você pode “gastar” um dos texugos alados para receber RD 5 contra esse dano. e Ur Deus dos Carvalhos Entidade primordial, status divino 3 Ur é uma das criaturas mais antigas de Arton. Lembra-se do mundo antes da Revolta dos Três e até mesmo antes da chegada dos elfos. Não se sabe se era um carvalho que adquiriu consciência por ser adorado ou se é um ente. O próprio Ur diz que isso não importa — quando se é tão velho quanto ele, lembrar de pormenores do passado pode tomar o resto da vida. Se as árvores possuem consciência, as florestas de Tollon cultuam Ur. Os entes certamente são seus seguidores. Alguns sábios afirmam que todos os entes de Arton estão em uma peregrinação até Ur — mas são tão lentos e pacientes que os humanos (e até mesmo os elfos!) não notam seus movimentos vagarosos e deliberados. Ur prefere passar seus dias em contemplação silenciosa. Mesmo quando é abordado por seus fiéis, passa longo tempo sem dizer nada, deixando que seu silêncio e placidez tragam as respostas. Apenas em casos de grande emergência (como um incêndio fora de controle) desloca-se e fala ativamente. Crenças e Objetivos. Reverenciar Ur, as árvores e os seres da natureza. Proteger as florestas e a vida selvagem. Combater incêndios, desmatamentos desenfreados, monstros, mortos-vivos e outras situações ou criaturas que perturbam o equilíbrio natural das florestas. Peregrinar até Ur. Símbolo Sagrado. Um carvalho com uma face. Canalizar Energia. Positiva. Arma Preferida. Bordão. Tukala, a Deusa Menor dos Texugos Alados 48</p>
+  <p>Você pode gastar uma ação de movimento e 3 PM para invocar uma revoada de 1d4+1 texugos alados espirituais que ficam ao seu redor até o fim da cena. Enquanto estiverem ao seu redor, os texugos fornecem +2 em rolagens de dano corpo a corpo e na Defesa. Além disso, quando sofre dano, você pode “gastar” um dos texugos alados para receber RD 5 contra esse dano. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [955],
       },
       {
         id: 2059,
         nome: 'Árvores Antigas',
         descricao: `
-  <p>Uma vez por rodada, você pode gastar 1 PM para entrar em uma árvore adjacente de tamanho igual ou maior que o seu e sair em outra árvore em alcance longo (também de tamanho igual ou maior que o seu). Você não precisa de linha de visão para a árvore de saída, mas deve estar ciente de sua existência. Yasshara Deusa da Opressão Mortal ascendido, status divino 3 Inimiga mortal de Anilatir, a Deusa da Inspiração, Yasshara é uma divindade marcada por uma história trágica. Quando jovem, seus pais foram mortos por uma mulher desequilibrada, que desejava forjar jovens “com potencialˮ para se tornarem aventureiros. Devastada, Yasshara se uniu ao clero de Khalmyr, na busca por algo nos dogmas do Deus da Justiça que pudesse explicar a insanidade que destruiu sua vida e a de tantas outras pessoas. No entanto, nada conseguiu aliviar sua alma. Após descobrir a identidade de sua algoz e enfrentar no clero de Nimb inimigos tão cruéis quanto ela, Yasshara assumiu como missão pessoal erradicar o caos do mundo e transformar a realidade em algo rígido e ordenado. Embora à primeira vista sua causa parecesse nobre, com o tempo a busca de Yasshara e de seu séquito se afastou dos preceitos de justiça de Khalmyr, focando unicamente em “consertarˮ a realidade, tornando-a estável e “compreensívelˮ. Isso é uma das versões da história de Yasshara. Outra versão da história, difundida pelos devotos de Anilatir, diz que Yasshara foi uma nobre que, desde sempre, teve uma necessidade doentia de monitorar e controlar as vidas de seus servos. Precisava que tudo fosse ordenado, previsível e igual, sempre. Teria sido devota de Khalmyr, mas perdeu a fé quando notou que o Deus da Justiça não era capaz de impor a verdadeira estabilidade. Proibiu a entrada de aventureiros em seu feudo, pois eles traziam coisas novas. Proibiu quaisquer inventos ou inovações que não existissem quando ela própria era uma criança. Por fim, passou a controlar de tal modo as vidas de seu povo que esse controle adquiriu características sagradas e ela ascendeu à divindade. Em sua busca obsessiva por eliminar tudo que é novo e diferente, por tornar Arton segura, constante e estanque, ela expandiu seu culto para além de suas fronteiras, criando uma verdadeira rede de devotos conspiradores, dedicados à opressão. Em ambas as versões, e em muitas outras, o clero de Yasshara teria entrado em conflito com o clero de Anilatir, e ambas existiriam numa eterna guerra pelo futuro de Arton. Existe ainda outra versão, sussurrada por poucos: Yasshara e Anilatir seriam a mesma pessoa, inimiga de si mesma. Afinal, para que exista inspiração para heróis, é preciso haver vilões. E, para que possa haver opressão e controle, é preciso que haja alguém ameaçando essa estabilidade. Crenças e Objetivos. Destruir o caos e a aleatoriedade. Pregar a ordem e a estabilidade. Fazer com que tudo seja igual, sempre. Moldar a realidade em padrões simplistas e compreensíveis até mesmo por aqueles de mente mais fechada. Impedir inovações. Símbolo Sagrado. Uma balança dentro de um círculo perfeito. Canalizar Energia. Negativa. Arma Preferida. Espada longa. Devotos. Anões, elfos, finntroll, minotauros, cavaleiros, guerreiros, nobres. Obrigações & Restrições. Devotos de Yasshara devem escolher o destino dos outros para que o mundo tenha ordem óbvia. Eles precisam garantir que, pelo menos uma vez por dia (ou por sessão de jogo, o que demorar mais), uma criatura obedeça a suas ordens. Em termos de jogo, uma ação exigindo um teste de Diplomacia ou Intimidação com CD mínima 15 + metade do seu nível. Além disso, o devoto deve estar sempre atento às tramas de Anilatir, a Deusa Menor da Inspiração, inimiga mortal de Yasshara. Por último, sempre que houver possibilidade de escolher 10 em um teste, o devoto deve fazer isso. Oprimir Escolhas poder concedido Quando uma criatura em alcance curto faz um teste de perícia, você pode gastar 2 PM para forçar essa criatura a escolher 10 nesse teste (mesmo que isso não seja possível). A criatura tem direito a um teste de Vontade (CD Sab) para resistir a esse efeito. Você só pode usar este poder uma vez por criatura em cada cena. 49</p>
+  <p>Uma vez por rodada, você pode gastar 1 PM para entrar em uma árvore adjacente de tamanho igual ou maior que o seu e sair em outra árvore em alcance longo (também de tamanho igual ou maior que o seu). Você não precisa de linha de visão para a árvore de saída, mas deve estar ciente de sua existência. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [954],
       },
       {
         id: 2060,
         nome: 'Oprimir Escolhas',
         descricao: `
-  <p>Quando uma criatura em alcance curto faz um teste de perícia, você pode gastar 2 PM para forçar essa criatura a escolher 10 nesse teste (mesmo que isso não seja possível). A criatura tem direito a um teste de Vontade (CD Sab) para resistir a esse efeito. Você só pode usar este poder uma vez por criatura em cada cena. 49</p>
+  <p>Quando uma criatura em alcance curto faz um teste de perícia, você pode gastar 2 PM para forçar essa criatura a escolher 10 nesse teste (mesmo que isso não seja possível). A criatura tem direito a um teste de Vontade (CD Sab) para resistir a esse efeito. Você só pode usar este poder uma vez por criatura em cada cena. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [953],
       },
       {
         id: 2061,
         nome: 'Natureza Gloriosa',
         descricao: `
-  <p>Você pode gastar 2 PM para que uma parte de seu corpo assuma uma forma animalesca até você ficar inconsciente ou escolher encerrá-la (uma ação livre). Quando faz isso, você recebe dois benefícios a sua escolha entre os seguintes: uma arma natural à sua escolha (dano 1d6, crítico x2, a sua escolha entre corte, impacto ou perfura- ção); +1 passo de dano em uma de suas armas naturais; +2 na Defesa; +6m de deslocamento; deslocamento de natação 9m; faro; ou +5 em Atletismo e Fortitude. e Zakharov Deus da Bravura Mortal ascendido, status divino 4 Uma das várias divindades anãs, Zakharov era um anão imensamente forte e musculoso, com um corpo tão robusto e duro que parecia uma estátua esculpida em mármore. Sua pele dava a impressão de ser feita de pedra. Ao contrário dos demais anões, ele não costumava ser visto com armadura alguma protegendo seu torso. Os equipamentos de batalha deste herói lendário se resumem ao seu elmo aberto, que sempre revelava sua farta e cobreada barba, e ao seu inseparável machado mágico, o Zakharin. Enfrentando todos os desafios de peito aberto, sem demonstrar hesitação ou mesmo necessidade de autopreservação, Zakharov passou a ser mais do que admirado — tornou-se adorado. Ascendeu à divindade, como Deus da Bravura. São muitas as histórias contadas sobre a coragem de Zakharov. Tantas, na verdade, que chegam a entrar em contradição: na mesma época Zakharov teria estado tanto vários níveis abaixo de Doherimm, enfrentando sozinho um clã de gigantes do fogo, quanto na superfície, caçando uma coluna finntroll. Teria olhado nos olhos da Rainha das Medusas (uma entidade que não existe exceto em algumas lendas), fazendo com que ela se transformasse em pedra, e desembaraçado suas serpentes, conquistando sua amizade eterna. Teria domado todos os javalis doheritas e criado ele mesmo essa espécie, ao desafiar um rinoceronte para que fosse mais compacto e adequado ao subterrâneo! Seja como for, algo é constante em quase todas as histórias: Zakharov é uma figura despojada e simples. Não seria nem um pouco apegado a seu lendário machado, às vezes esquecendo-o ao voltar para casa depois de mais uma aventura. Numa dessas ocasiões, quando mais uma vez uma comitiva de devotos veio lhe devolver a arma, Zakharov teria dito para que ficassem com ela e “usassem para alguma coisa útil um dia”. Essa seria a razão pela qual Zakharin foi presenteado de forma tão livre e surpreendente pelos anões aos humanos que colonizaram o reino de Zakharov. É justamente em honra a este deus que a nação humana de Zakharov e sua capital, Zakharin, receberam seus nomes. No entanto, devido a uma desavença ocorrida décadas atrás, considerada pelos anões como um desrespeito à divindade, as relações entre o reino humano e o reino anão nunca mais foram as mesmas. Não se sabe o paradeiro atual de Zakharov. Alguns afirmam que ele está escavando um túnel para o outro lado do mundo, apenas porque isso é algo muito perigoso. Outros garantem que anda pela superfície em busca de desafios. Há quem diga que ele morreu na Batalha de Tamu-ra, em 1405, enquanto outros afirmam que está vivendo tranquilamente em Doher e pode ser visto bebendo cerveja em várias tavernas da cidade. Crenças e Objetivos. Honrar e proteger a raça, a cultura e as tradições anãs. Combater os finntroll e quaisquer outros inimigos da raça anã. Lutar o bom combate. Demonstrar coragem. Não se proteger demais. Encarar desafios — quanto mais difíceis, melhor. Símbolo Sagrado. Um braço segurando o machado Zakharin. Canalizar Energia. Qualquer. Arma Preferida. Machado anão. Devotos. Anões, centauros, golens, minotauros, trogs, bárbaros, cavaleiros, guerreiros, lutadores, paladino. Obrigações & Restrições. Devotos de Zakharov devem fazer pelo menos uma demonstração de coragem por aventura (ou por mês, de acordo com o mestre). Para este efeito, uma demonstração de coragem é qualquer ato no qual o personagem possa morrer ou sofrer uma consequência grave e/ou permanente, que seja realizado sem nenhuma preparação que garanta sua segurança. Por exemplo, lutar contra um ogro sozinho, tentar escalar uma montanha sem equipamento ou tomar para si um item mágico que provavelmente é amaldiçoado são demonstrações de coragem. Enfrentar o mesmo ogro com seu grupo, escalar a montanha devidamente equipado ou tomar paar si um item mágico qualquer não são. O mestre tem a palavra final sobre o que configura uma demonstração de coragem. Irmão da Coragem poder concedido Você se torna imune a medo (se já for imune, em vez disso recebe +2 em Vontade). Além disso, uma vez por cena envolvendo um perigo, você pode substituir um teste de perícia por um teste de Vontade. 51</p>
+  <p>Você pode gastar 2 PM para que uma parte de seu corpo assuma uma forma animalesca até você ficar inconsciente ou escolher encerrá-la (uma ação livre). Quando faz isso, você recebe dois benefícios a sua escolha entre os seguintes: uma arma natural à sua escolha (dano 1d6, crítico x2, a sua escolha entre corte, impacto ou perfura- ção); +1 passo de dano em uma de suas armas naturais; +2 na Defesa; +6m de deslocamento; deslocamento de natação 9m; faro; ou +5 em Atletismo e Fortitude. ✨</p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
+        id_deuses: [952],
       },
       {
         id: 2062,
         nome: 'Irmão da Coragem',
         descricao: `
-  <p>Você se torna imune a medo (se já for imune, em vez disso recebe +2 em Vontade). Além disso, uma vez por cena envolvendo um perigo, você pode substituir um teste de perícia por um teste de Vontade. 51</p>
+  <p>Você se torna imune a medo (se já for imune, em vez disso recebe +2 em Vontade). Além disso, uma vez por cena envolvendo um perigo, você pode substituir um teste de perícia por um teste de Vontade. </p>
   `,
         referencias: Referencia.GUIA_DEUSES_MENORES,
         tipo: TipoPoder.PODER_CONCEDIDO,
         prerequisito_nivel: 1,
-      },
-      {
-        id: 2063,
-        nome: 'Restrições e um',
-        descricao: `
-  <p>. O que fazer com essas divindades ausentes? Por que elas estão aqui? Na época atual de Arton, todos esses deuses estão mesmo mortos. No entanto, nada impede que seu grupo jogue numa época anterior. Todos eles estão vivos durante A Libertação de Valkaria, por exemplo, e os personagens jogadores podem ser devotos de qualquer um deles. deuses mortos e renascidos No entanto, há duas outras opções para usar esses deuses, talvez mais interessantes. A primeira diz respeito à própria natureza dos deuses menores em Arton. Divindades maiores são muito, muito mais poderosas que deuses menores. Embora todo esse poder signifique que tenham um status único entre as entidades da Criação, também significa que obedecem a regras próprias. A morte de um deus maior é um fenômeno cósmico, algo que abala Arton como um todo. Um deus maior não tem corpo físico, nem um espírito como os mortais entendem esse conceito. Portanto, é impossível ressuscitar um deus maior. Nunca na história da Criação houve um evento desse tipo. 52</p>
-  `,
-        referencias: Referencia.GUIA_DEUSES_MENORES,
-        tipo: TipoPoder.PODER_CONCEDIDO,
-        prerequisito_nivel: 1,
+        id_deuses: [951],
       }
     );
   }
