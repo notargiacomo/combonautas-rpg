@@ -39,11 +39,7 @@ export class MagiaData {
         duracao: DuracaoMagia.CENA,
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '178',
         aprimoramentos: [
@@ -90,8 +86,7 @@ export class MagiaData {
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
             custo_material: 5,
-            descricao_material:
-              'componente material (pó de prata no valor de T$ 5).',
+            descricao_material: 'componente material (pó de prata no valor de T$ 5).',
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
             alvo: 'alimento para 1 criatura',
@@ -118,11 +113,7 @@ export class MagiaData {
         duracao: DuracaoMagia.CENA,
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '178',
         aprimoramentos: [
@@ -199,11 +190,7 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              CirculoMagia.TERCEIRO_CIRCULO,
-              AlvoMagia.MONSTRO,
-              AlvoMagia.ESPIRITO,
-            ],
+            tracos: [CirculoMagia.TERCEIRO_CIRCULO, AlvoMagia.MONSTRO, AlvoMagia.ESPIRITO],
           },
         ],
       },
@@ -222,11 +209,7 @@ export class MagiaData {
         duracao: DuracaoMagia.INSTANTANEA,
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '178',
         aprimoramentos: [
@@ -303,11 +286,7 @@ export class MagiaData {
         duracao: DuracaoMagia.DIA,
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '178',
         aprimoramentos: [
@@ -384,11 +363,7 @@ export class MagiaData {
         duracao: DuracaoMagia.DIA,
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '178',
         aprimoramentos: [
@@ -465,11 +440,7 @@ export class MagiaData {
         duracao: DuracaoMagia.INSTANTANEA,
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '179',
       },
@@ -494,11 +465,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
@@ -571,11 +538,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
@@ -645,11 +608,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlcanceMagia.TOQUE,
-              AlvoMagia.CRIATURA,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -672,11 +631,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlcanceMagia.TOQUE,
-              AlvoMagia.CRIATURA,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -702,11 +657,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
@@ -802,11 +753,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
@@ -871,8 +818,7 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.CRIATURA,
-            alvo_descricao:
-              'afeta todos os alvos válidos a sua escolha dentro do alcance.',
+            alvo_descricao: 'afeta todos os alvos válidos a sua escolha dentro do alcance.',
             duracao: DuracaoMagia.CENA,
             duracao_quantidade: 0,
             descricao_duracao: '',
@@ -904,11 +850,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '179',
         aprimoramentos: [
@@ -932,11 +874,7 @@ export class MagiaData {
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.MEDIO,
-              AlvoMagia.AREA,
-              Chave.CRIATURAS_ESCOLHIDAS,
-            ],
+            tracos: [AlcanceMagia.MEDIO, AlvoMagia.AREA, Chave.CRIATURAS_ESCOLHIDAS],
             aumenta: 0,
           },
           {
@@ -1005,11 +943,7 @@ export class MagiaData {
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              AlvoMagia.AREA,
-              Chave.COMPONENTE_MATERIAL,
-              DuracaoMagia.PERMANENTE,
-            ],
+            tracos: [AlvoMagia.AREA, Chave.COMPONENTE_MATERIAL, DuracaoMagia.PERMANENTE],
             aumenta: 0,
           },
           {
@@ -1032,11 +966,7 @@ export class MagiaData {
             descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.MEDIO,
-              AlvoMagia.AREA,
-              Chave.CRIATURAS_ESCOLHIDAS,
-            ],
+            tracos: [AlcanceMagia.MEDIO, AlvoMagia.AREA, Chave.CRIATURAS_ESCOLHIDAS],
             aumenta: 0,
           },
         ],
@@ -1056,18 +986,13 @@ export class MagiaData {
         execucao_complemento: '',
         alcance: AlcanceMagia.MEDIO,
         alvo: AlvoMagia.OBJETO,
-        alvo_descricao:
-          'até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme',
+        alvo_descricao: 'até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme',
         duracao: DuracaoMagia.CENA,
         duracao_quantidade: 0,
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '179 e 180',
         aprimoramentos: [
@@ -1117,11 +1042,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1217,11 +1138,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1277,11 +1194,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [],
@@ -1308,11 +1221,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1408,11 +1317,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1577,11 +1482,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1677,11 +1578,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1777,11 +1674,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1902,11 +1795,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [],
@@ -1933,11 +1822,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ADVINHACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -1984,11 +1869,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.DEZ_MINUTOS,
-              DuracaoMagia.UM_MINUTO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [ExecucaoMagia.DEZ_MINUTOS, DuracaoMagia.UM_MINUTO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -2060,11 +1941,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -2118,11 +1995,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ADVINHACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '180',
         aprimoramentos: [
@@ -2242,11 +2115,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ADVINHACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '184',
         aprimoramentos: [
@@ -2339,11 +2208,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              AlvoMagia.VOCE,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -2369,11 +2234,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ADVINHACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '184',
         aprimoramentos: [
@@ -2492,11 +2353,7 @@ export class MagiaData {
         descricao_duracao: '1 rodada',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '185',
         aprimoramentos: [
@@ -2520,11 +2377,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              DuracaoMagia.CENA,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, DuracaoMagia.CENA, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -2547,11 +2400,7 @@ export class MagiaData {
             descricao_duracao: '1 rodada',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              DuracaoMagia.CENA,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, DuracaoMagia.CENA, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -2603,11 +2452,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              DuracaoMagia.DIA,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, DuracaoMagia.DIA, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -2633,11 +2478,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ADVINHACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '185',
         aprimoramentos: [
@@ -2710,11 +2551,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '186',
         aprimoramentos: [
@@ -2787,11 +2624,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ADVINHACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '190',
         aprimoramentos: [
@@ -2865,11 +2698,7 @@ export class MagiaData {
         efeito: '1 globo',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ADVINHACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '194',
         aprimoramentos: [
@@ -2997,11 +2826,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ADVINHACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '196',
         aprimoramentos: [
@@ -3013,8 +2838,7 @@ export class MagiaData {
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 4,
             custo_material: 1000,
-            descricao_material:
-              'cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000',
+            descricao_material: 'cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000',
             execucao: ExecucaoMagia.DIA,
             execucao_quantidade: 0,
             execucao_complemento: '',
@@ -3026,11 +2850,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.DIA,
-              AlcanceMagia.ILIMITADO,
-              Chave.COMPONENTE_MATERIAL,
-            ],
+            tracos: [ExecucaoMagia.DIA, AlcanceMagia.ILIMITADO, Chave.COMPONENTE_MATERIAL],
             aumenta: 0,
           },
         ],
@@ -3056,11 +2876,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '197',
         aprimoramentos: [
@@ -3133,11 +2949,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '197',
         aprimoramentos: [
@@ -3210,11 +3022,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '198',
         aprimoramentos: [
@@ -3264,11 +3072,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ADVINHACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '198',
         aprimoramentos: [
@@ -3387,11 +3191,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '200',
         aprimoramentos: [
@@ -3461,10 +3261,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -3490,11 +3287,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ADVINHACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '201',
         aprimoramentos: [
@@ -3568,11 +3361,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ADVINHACAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '202',
         aprimoramentos: [
@@ -3622,11 +3411,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ADVINHACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '207',
         aprimoramentos: [
@@ -3681,8 +3466,7 @@ export class MagiaData {
       {
         id: 41, // Defina o ID conforme necessário
         nome: 'Escudo da Fé',
-        descricao:
-          'Um escudo místico se manifesta momentaneamente para bloquear um golpe. O alvo recebe +2 na Defesa.',
+        descricao: 'Um escudo místico se manifesta momentaneamente para bloquear um golpe. O alvo recebe +2 na Defesa.',
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -3700,18 +3484,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '192', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+1 PM:</b> muda a execução para ação padrão, o alcance para toque e a duração para cena.',
+            descricao: '<b>+1 PM:</b> muda a execução para ação padrão, o alcance para toque e a duração para cena.',
             e_aumenta: false,
             custo: 1,
             custo_material: 0,
@@ -3729,16 +3508,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              AlcanceMagia.TOQUE,
-              DuracaoMagia.CENA,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, DuracaoMagia.CENA],
           },
           {
             id: 2,
-            descricao:
-              '<b>+1 PM:</b> também fornece ao alvo camuflagem leve contra ataques à distância.',
+            descricao: '<b>+1 PM:</b> também fornece ao alvo camuflagem leve contra ataques à distância.',
             e_aumenta: false,
             custo: 1,
             custo_material: 0,
@@ -3756,11 +3530,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 3,
@@ -3782,11 +3552,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -3810,17 +3576,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              AlcanceMagia.TOQUE,
-              DuracaoMagia.CENA,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, DuracaoMagia.CENA, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 5,
-            descricao:
-              '<b>+3 PM:</b> muda a duração para um dia. Requer 2º círculo.',
+            descricao: '<b>+3 PM:</b> muda a duração para um dia. Requer 2º círculo.',
             e_aumenta: false,
             custo: 3,
             custo_material: 0,
@@ -3838,19 +3598,14 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
         ],
       },
       {
         id: 42, // Defina o ID conforme necessário
         nome: 'Proteção Divina',
-        descricao:
-          'Esta magia cria uma barreira mística invisível que fornece ao alvo +2 em testes de resistência.',
+        descricao: 'Esta magia cria uma barreira mística invisível que fornece ao alvo +2 em testes de resistência.',
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -3868,11 +3623,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '202', // ou número da página, se disponível
         aprimoramentos: [
@@ -3896,11 +3647,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -3924,11 +3671,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.REACAO,
-              AlcanceMagia.CURTO,
-              DuracaoMagia.RODADA,
-            ],
+            tracos: [ExecucaoMagia.REACAO, AlcanceMagia.CURTO, DuracaoMagia.RODADA],
           },
           {
             id: 3,
@@ -3955,8 +3698,7 @@ export class MagiaData {
           },
           {
             id: 4,
-            descricao:
-              '<b>+5 PM:</b> torna o alvo imune a efeitos mentais e de medo. Requer 3º círculo.',
+            descricao: '<b>+5 PM:</b> torna o alvo imune a efeitos mentais e de medo. Requer 3º círculo.',
             e_aumenta: false, // Não aumenta, apenas adiciona imunidade
             custo: 5,
             custo_material: 0,
@@ -3974,11 +3716,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -4004,11 +3742,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '204', // ou número da página, se disponível
         aprimoramentos: [
@@ -4032,17 +3766,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
             aumenta: 0,
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> muda a duração para um dia. Requer 2º círculo.',
+            descricao: '<b>+2 PM:</b> muda a duração para um dia. Requer 2º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica a duração
             custo: 2,
             custo_material: 0,
@@ -4064,8 +3793,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao:
-              '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas. Requer 3º círculo.',
+            descricao: '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas. Requer 3º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica alcance e alvo
             custo: 5,
             custo_material: 0,
@@ -4083,11 +3811,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 4,
@@ -4110,16 +3834,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 5,
-            descricao:
-              '<b>+9 PM:</b> muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo.',
+            descricao: '<b>+9 PM:</b> muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo.',
             e_aumenta: false, // Não aumenta, apenas muda para imunidade
             custo: 9,
             custo_material: 0,
@@ -4137,11 +3856,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
         ],
       },
@@ -4167,11 +3882,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '205', // ou número da página, se disponível
         aprimoramentos: [
@@ -4196,11 +3907,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -4223,11 +3930,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -4253,18 +3956,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '207', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas.',
+            descricao: '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas.',
             e_aumenta: false, // Não aumenta, apenas modifica alcance e alvo
             custo: 5,
             custo_material: 0,
@@ -4308,11 +4006,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '209', // ou número da página, se disponível
         aprimoramentos: [
@@ -4382,11 +4076,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -4417,12 +4107,11 @@ export class MagiaData {
       {
         id: 47, // Defina o ID conforme necessário
         nome: 'Campo de Força',
-        descricao:
-          'Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.',
+        descricao: 'Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.',
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
-        custo: 2, // custo base em PM
+        custo: 3, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -4436,11 +4125,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '183', // ou número da página, se disponível
         aprimoramentos: [
@@ -4469,9 +4154,8 @@ export class MagiaData {
           },
           {
             id: 2,
-            descricao:
-              '<b>+3 PM:</b> muda os PV temporários ou a RD para 50. Requer 3º círculo.',
-            e_aumenta: true, // Aumenta os PV temporários ou a RD
+            descricao: '<b>+3 PM:</b> muda os PV temporários ou a RD para 50. Requer 3º círculo.',
+            e_aumenta: false, // Aumenta os PV temporários ou a RD
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -4488,17 +4172,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 3,
-            descricao:
-              '<b>+7 PM:</b> muda os PV temporários ou a RD para 70. Requer 4º círculo.',
-            e_aumenta: true, // Aumenta os PV temporários ou a RD
+            descricao: '<b>+7 PM:</b> muda os PV temporários ou a RD para 70. Requer 4º círculo.',
+            e_aumenta: false, // Aumenta os PV temporários ou a RD
             custo: 7,
             custo_material: 0,
             descricao_material: '',
@@ -4515,11 +4194,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 4,
@@ -4610,11 +4285,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ADVINHACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '211',
         aprimoramentos: [],
@@ -4640,11 +4311,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ADVINHACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '211',
         aprimoramentos: [
@@ -4763,11 +4430,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ADVINHACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ADVINHACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '211',
         aprimoramentos: [
@@ -4866,11 +4529,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.CONVOCACAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '182 e 183',
         aprimoramentos: [
@@ -4921,11 +4580,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '183',
         aprimoramentos: [
@@ -5021,17 +4676,13 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '183',
         aprimoramentos: [
           {
             id: 1,
-            descricao: `<p><b>+2 PM:</b>aumenta o número de meteoros que atingem a área, o que aumenta o dano em +2d6 de impacto e +2d6 de fogo.</p>`,
+            descricao: `<p><b>+2 PM:</b> aumenta o número de meteoros que atingem a área, o que aumenta o dano em +2d6 de impacto e +2d6 de fogo.</p>`,
             e_aumenta: true,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUINTO_CIRCULO,
@@ -5082,11 +4733,7 @@ export class MagiaData {
         efeito: 'parceiro elemental',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '185',
         aprimoramentos: [
@@ -5168,11 +4815,7 @@ export class MagiaData {
         efeito: '1 criatura conjurada',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '185',
         aprimoramentos: [
@@ -5488,11 +5131,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '188',
         aprimoramentos: [
@@ -5617,11 +5256,7 @@ export class MagiaData {
         efeito: 'elemento escolhido',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '188',
         aprimoramentos: [
@@ -5670,11 +5305,7 @@ export class MagiaData {
             efeito: 'alvo 1 criatura ou objeto',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              AlvoMagia.CRIATURA_OBJETO,
-              Resistencia.REFLEXOS,
-              ResistenciaMagia.REDUZ_METADE,
-            ],
+            tracos: [AlvoMagia.CRIATURA_OBJETO, Resistencia.REFLEXOS, ResistenciaMagia.REDUZ_METADE],
             aumenta: 0,
           },
           {
@@ -5725,11 +5356,7 @@ export class MagiaData {
         efeito: '1 enxame Médio (quadrado de 1,5m)',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '192',
         aprimoramentos: [
@@ -5902,11 +5529,7 @@ export class MagiaData {
         efeito: 'elemental de luz invocado',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '194',
         aprimoramentos: [],
@@ -5945,11 +5568,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '195',
         aprimoramentos: [],
@@ -5979,11 +5598,7 @@ export class MagiaData {
         efeito: 'mão gigante de energia',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '197 e 198',
         aprimoramentos: [
@@ -6059,11 +5674,7 @@ export class MagiaData {
         efeito: 'criatura conjurada',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '199',
         aprimoramentos: [
@@ -6163,11 +5774,7 @@ export class MagiaData {
         efeito: 'nuvem com 6m de raio e 6m de altura',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '200',
         aprimoramentos: [
@@ -6338,11 +5945,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '205',
         aprimoramentos: [
@@ -6462,11 +6065,7 @@ export class MagiaData {
         efeito: 'semiplano com 30m de lado',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '205',
         aprimoramentos: [
@@ -6502,8 +6101,7 @@ export class MagiaData {
             circulo: CirculoMagia.QUINTO_CIRCULO,
             custo: 5,
             custo_material: 5000,
-            descricao_material:
-              'maquete do semiplano feita de materiais preciosos no valor de T$ 5.000',
+            descricao_material: 'maquete do semiplano feita de materiais preciosos no valor de T$ 5.000',
             execucao: ExecucaoMagia.COMPLETA,
             execucao_quantidade: 0,
             execucao_complemento: '',
@@ -6516,11 +6114,7 @@ export class MagiaData {
             efeito: 'semiplano com 30m de lado',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              DuracaoMagia.PERMANENTE,
-              Chave.COMPONENTE_MATERIAL,
-              Chave.AUMENTA,
-            ],
+            tracos: [DuracaoMagia.PERMANENTE, Chave.COMPONENTE_MATERIAL, Chave.AUMENTA],
             aumenta: 0,
           },
         ],
@@ -6549,11 +6143,7 @@ export class MagiaData {
         efeito: 'criatura conjurada',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '205',
         aprimoramentos: [
@@ -6629,11 +6219,7 @@ export class MagiaData {
         efeito: 'criaturas conjuradas',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '206',
         aprimoramentos: [
@@ -6708,11 +6294,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '206',
         aprimoramentos: [
@@ -6736,12 +6318,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              AlvoMagia.VOCE,
-              DuracaoMagia.CENA,
-              ResistenciaMagia.NENHUMA,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, DuracaoMagia.CENA, ResistenciaMagia.NENHUMA],
             aumenta: 0,
           },
           {
@@ -6823,7 +6400,7 @@ export class MagiaData {
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
-        custo: 2, // custo base em PM
+        custo: 3, // custo base em PM
         custo_material: 0, // custo em T$ de material (inicialmente sem custo)
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.COMPLETA,
@@ -6837,11 +6414,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
         maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '183', // ou número da página, se disponível
         aprimoramentos: [
@@ -6866,12 +6439,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              AlcanceMagia.PESSOAL,
-              AlvoMagia.VOCE,
-              DuracaoMagia.CENA,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.PESSOAL, AlvoMagia.VOCE, DuracaoMagia.CENA],
           },
           {
             id: 2,
@@ -6894,11 +6462,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 3,
@@ -6921,12 +6485,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-            tracos: [
-              DuracaoMagia.PERMANENTE,
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [DuracaoMagia.PERMANENTE, TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
         ],
       },
@@ -6946,18 +6505,13 @@ export class MagiaData {
         execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
         alcance: AlcanceMagia.MEDIO,
         alvo: AlvoMagia.CRIATURA_OBJETO_AREA,
-        alvo_descricao:
-          '1 criatura ou 1 objeto mágico ou esfera com 3m de raio', // descritivo para exibição do alvo
+        alvo_descricao: '1 criatura ou 1 objeto mágico ou esfera com 3m de raio', // descritivo para exibição do alvo
         duracao: DuracaoMagia.INSTANTANEA,
         duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '191', // ou número da página, se disponível
         aprimoramentos: [
@@ -6982,11 +6536,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.MEDIO,
-              AlvoMagia.AREA,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.MEDIO, AlvoMagia.AREA, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -7011,11 +6561,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '208',
         aprimoramentos: [
@@ -7112,11 +6658,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '203', // ou número da página, se disponível
         aprimoramentos: [
@@ -7141,11 +6683,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
@@ -7168,11 +6706,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 3,
@@ -7189,18 +6723,13 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.AREA,
-            alvo_descricao:
-              'espaço extradimensional que comporta até 10 criaturas Médias',
+            alvo_descricao: 'espaço extradimensional que comporta até 10 criaturas Médias',
             duracao: DuracaoMagia.DIA,
             duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 4,
@@ -7217,18 +6746,13 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.AREA,
-            alvo_descricao:
-              'mansão extradimensional que comporta até 100 criaturas Médias',
+            alvo_descricao: 'mansão extradimensional que comporta até 100 criaturas Médias',
             duracao: DuracaoMagia.DIA,
             duracao_quantidade: 0,
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
         ],
       },
@@ -7258,11 +6782,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '208',
         aprimoramentos: [
@@ -7358,11 +6878,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.CONVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '210',
         aprimoramentos: [
@@ -7386,11 +6902,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.TOQUE,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              DuracaoMagia.INSTANTANEA,
-            ],
+            tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURAS_ESCOLHIDAS, DuracaoMagia.INSTANTANEA],
             aumenta: 0,
           },
         ],
@@ -7417,11 +6929,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.CONVOCACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '211',
         aprimoramentos: [
@@ -7471,11 +6979,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '182',
         aprimoramentos: [
@@ -7553,11 +7057,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '184',
         aprimoramentos: [
@@ -7630,11 +7130,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '184',
         aprimoramentos: [
@@ -7684,11 +7180,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '190',
         aprimoramentos: [
@@ -7784,11 +7276,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '190',
         aprimoramentos: [
@@ -7862,11 +7350,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '196', // ou número da página, se disponível
         aprimoramentos: [
@@ -7891,16 +7375,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> além do normal, o alvo pode escolher 20 em todos os testes de Atletismo.',
+            descricao: '<b>+2 PM:</b> além do normal, o alvo pode escolher 20 em todos os testes de Atletismo.',
             e_aumenta: false, // Não aumenta, apenas adiciona um efeito
             custo: 2,
             custo_material: 0,
@@ -7918,11 +7397,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 3,
@@ -7945,16 +7420,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 4,
-            descricao:
-              '<b>+5 PM:</b> muda o alcance para curto e o alvo para até 5 criaturas.',
+            descricao: '<b>+5 PM:</b> muda o alcance para curto e o alvo para até 5 criaturas.',
             e_aumenta: false, // Não aumenta, apenas modifica o alcance e o alvo
             custo: 5,
             custo_material: 0,
@@ -7972,11 +7442,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 5,
@@ -7998,44 +7464,9 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
         ],
-      },
-      {
-        id: 82, // Defina o ID conforme necessário
-        nome: 'Aprisionamento',
-        descricao:
-          'Você cria uma prisão mágica para aprisionar uma criatura. Se falhar no teste de resistência, o alvo sofre o efeito da se passar, fica imune a esta magia por uma semana. Enquanto estiver aprisionada, a criatura não precisa respirar e alimentar-se, e não envelhece.s de adivinhação não conseguem localizar ou perceber o alvo. Ao lançar a, você escolhe uma das seguintes formas de prisão. O componente material varia, mas todos custam T$ 1.000.',
-        escola: EscolasMagia.ABJURACAO,
-        tipo: TipoMagia.ARCANA,
-        circulo: CirculoMagia.QUINTO_CIRCULO,
-        custo: 5, // custo base em PM
-        custo_material: 1000, // custo em T$ de material
-        descricao_material: 'varia conforme o tipo de prisão', // descritivo para exibição
-        execucao: ExecucaoMagia.COMPLETA,
-        execucao_quantidade: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
-        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
-        alcance: AlcanceMagia.CURTO,
-        alvo: AlvoMagia.CRIATURA,
-        alvo_descricao: '1 criatura', // descritivo para exibição do alvo
-        duracao: DuracaoMagia.PERMANENTE,
-        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
-        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
-        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
-        maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
-        referencias: Referencia.BASICO,
-        paginas: '180', // ou número da página, se disponível
-        aprimoramentos: [], // Sem aprimoramentos descritos
       },
       {
         id: 83, // Defina o ID conforme necessário
@@ -8059,11 +7490,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '204_205', // ou número da página, se disponível
         aprimoramentos: [
@@ -8087,11 +7514,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -8115,11 +7538,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              AlvoMagia.VOCE,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 3,
@@ -8142,11 +7561,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              AlvoMagia.VOCE,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -8172,18 +7587,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '194', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+4 PM:</b> muda o efeito para afetar magias de até 3º círculo. Requer 4º círculo.',
+            descricao: '<b>+4 PM:</b> muda o efeito para afetar magias de até 3º círculo. Requer 4º círculo.',
             e_aumenta: false, // Aumenta o nível das magias afetadas
             custo: 4,
             custo_material: 0,
@@ -8201,16 +7611,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 2,
-            descricao:
-              '<b>+9 PM:</b> muda o efeito para afetar magias de até 4º círculo. Requer 5º círculo.',
+            descricao: '<b>+9 PM:</b> muda o efeito para afetar magias de até 4º círculo. Requer 5º círculo.',
             e_aumenta: false, // Aumenta o nível das magias afetadas
             custo: 9,
             custo_material: 0,
@@ -8228,11 +7633,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -8258,11 +7659,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '192', // ou número da página, se disponível
         aprimoramentos: [
@@ -8287,11 +7684,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO],
           },
           {
             id: 2,
@@ -8313,11 +7706,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -8329,7 +7718,7 @@ export class MagiaData {
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 3, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.RODADA,
@@ -8343,11 +7732,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
         maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: 'Edição Jogo do Ano', // ou número da página, se disponível
         aprimoramentos: [
@@ -8372,11 +7757,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -8402,11 +7783,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '190_191', // ou número da página, se disponível
         aprimoramentos: [
@@ -8431,11 +7808,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.TOQUE,
-              AlvoMagia.AREA,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.TOQUE, AlvoMagia.AREA, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -8457,11 +7830,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -8473,7 +7842,7 @@ export class MagiaData {
         escola: EscolasMagia.ABJURACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 4, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -8487,11 +7856,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '183', // ou número da página, se disponível
         aprimoramentos: [], // Sem aprimoramentos descritos
@@ -8518,11 +7883,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
         maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '189', // ou número da página, se disponível
         aprimoramentos: [
@@ -8547,11 +7908,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
             maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 2,
@@ -8574,71 +7931,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade anula"
             maneira_resistencia: ResistenciaMagia.ANULA, // Resistência anula
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
-          },
-        ],
-      },
-      {
-        id: 90, // Defina o ID conforme necessário
-        nome: 'Aura Divina',
-        descricao:
-          'Você se torna um conduíte da energia de sua divindade, emanando uma aura brilhante. Você e aliados devotos da mesma divindade ficam imunes a encantamento e recebem +10 na Defesa e em testes de resistência. Aliados não devotos da mesma divindade recebem +5 na Defesa e em testes de resistência. Além disso, inimigos que entrem na área devem fazer um teste de Vontade em caso de falha, recebem uma condição a sua escolha entre esmorecido, debilitado ou lento até o fim da cena. O teste deve ser refeito cada vez que a criatura entrar novamente na área.',
-        escola: EscolasMagia.ABJURACAO,
-        tipo: TipoMagia.DIVINA,
-        circulo: CirculoMagia.QUINTO_CIRCULO,
-        custo: 5, // custo base em PM
-        custo_material: 0, // custo em T$ de material
-        descricao_material: '', // descritivo para exibição
-        execucao: ExecucaoMagia.PADRAO,
-        execucao_quantidade: 0, // se a execução for do ExecucaoMagia.RODADA, digitar numero rodadas
-        execucao_complemento: '', // se a execução for do ExecucaoMagia.RODADA, descrição para exibição
-        alcance: AlcanceMagia.PESSOAL,
-        alvo: AlvoMagia.AREA,
-        alvo_descricao: 'esfera com 9m de raio', // descritivo para exibição do alvo
-        duracao: DuracaoMagia.CENA,
-        duracao_quantidade: 0, // se a duracao for do DuracaoMagia.RODADA, digitar numero rodadas
-        descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
-        pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
-        maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
-        referencias: Referencia.BASICO,
-        paginas: '182', // ou número da página, se disponível
-        aprimoramentos: [
-          {
-            id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta os bônus na Defesa e em testes de resistência em +1.',
-            e_aumenta: true, // Aumenta os bônus
-            custo: 2,
-            custo_material: 0,
-            descricao_material: '',
-            tipo: TipoMagia.DIVINA,
-            circulo: CirculoMagia.QUINTO_CIRCULO,
-            execucao: ExecucaoMagia.PADRAO,
-            execucao_quantidade: 0,
-            execucao_complemento: '',
-            alcance: AlcanceMagia.PESSOAL,
-            alvo: AlvoMagia.AREA,
-            alvo_descricao: 'esfera com 9m de raio',
-            duracao: DuracaoMagia.CENA,
-            duracao_quantidade: 0,
-            descricao_duracao: '',
-            pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
-            maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
-            aumenta: 0,
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -8664,18 +7957,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '195_196', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+5 PM:</b> muda o alcance para curto e o alvo para 1 criatura.',
+            descricao: '<b>+5 PM:</b> muda o alcance para curto e o alvo para 1 criatura.',
             e_aumenta: false, // Não aumenta, apenas modifica o alcance e o alvo
             custo: 5,
             custo_material: 0,
@@ -8693,11 +7981,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURA,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURA, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -8723,18 +8007,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '202', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+4 PM:</b> muda o bônus para +10. Requer 4º círculo.',
+            descricao: '<b>+4 PM:</b> muda o bônus para +10. Requer 4º círculo.',
             e_aumenta: false, // Aumenta o bônus em testes de resistência
             custo: 4,
             custo_material: 0,
@@ -8752,11 +8031,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -8780,11 +8055,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 3,
@@ -8807,11 +8078,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -8837,18 +8104,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ABJURACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '210', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+3 PM:</b> o objeto oferece o mesmo bônus em testes de resistência. Requer 3º círculo.',
+            descricao: '<b>+3 PM:</b> o objeto oferece o mesmo bônus em testes de resistência. Requer 3º círculo.',
             e_aumenta: false, // Aumenta o bônus em testes de resistência
             custo: 3,
             custo_material: 0,
@@ -8866,11 +8128,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -8893,17 +8151,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
             id: 3,
-            descricao:
-              '<b>+7 PM:</b> o objeto também oferece redução de dano 5. Requer 4º círculo.',
+            descricao: '<b>+7 PM:</b> o objeto também oferece redução de dano 5. Requer 4º círculo.',
             e_aumenta: true, // Aumenta o efeito com redução de dano
             custo: 7,
             custo_material: 0,
@@ -8921,11 +8174,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.ABJURACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -8951,11 +8200,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '191',
         aprimoramentos: [
@@ -9051,11 +8296,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '194',
         aprimoramentos: [
@@ -9105,11 +8346,7 @@ export class MagiaData {
         descricao_duracao: '1d4 rodadas',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '194',
         aprimoramentos: [
@@ -9219,17 +8456,13 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
-            alvo_descricao:
-              'animais ou humanoides escolhidos, também afeta espíritos e monstros na área',
+            alvo_descricao: 'animais ou humanoides escolhidos, também afeta espíritos e monstros na área',
             duracao: DuracaoMagia.RODADA_VARIAVEL,
             duracao_quantidade: 0,
             descricao_duracao: '1d4 rodadas',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -9253,10 +8486,7 @@ export class MagiaData {
             descricao_duracao: '1d4 rodadas',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -9282,11 +8512,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ENCANTAMENTO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '195',
         aprimoramentos: [
@@ -9383,11 +8609,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '196',
         aprimoramentos: [
@@ -9439,11 +8661,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ENCANTAMENTO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '198',
         aprimoramentos: [
@@ -9520,11 +8738,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '198',
         aprimoramentos: [],
@@ -9552,11 +8766,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '199',
         aprimoramentos: [
@@ -9632,11 +8842,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duração for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade"
         maneira_resistencia: 'anula (veja texto)', // descrição da resistência
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '197', // ou número da página, se disponível
         aprimoramentos: [
@@ -9656,11 +8862,7 @@ export class MagiaData {
             duracao: DuracaoMagia.CENA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: 'anula (veja texto)',
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -9678,11 +8880,7 @@ export class MagiaData {
             duracao: DuracaoMagia.DIA,
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: 'anula (veja texto)',
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 3,
@@ -9727,18 +8925,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '186', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+1 PM:</b> além do normal, mortos-vivos na área sofrem –2 em testes e Defesa.',
+            descricao: '<b>+1 PM:</b> além do normal, mortos-vivos na área sofrem –2 em testes e Defesa.',
             e_aumenta: false, // Não aumenta, apenas adiciona um efeito
             custo: 1,
             custo_material: 0,
@@ -9756,11 +8949,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -9783,11 +8972,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 3,
@@ -9810,11 +8995,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              ExecucaoMagia.HORA,
-              DuracaoMagia.PERMANENTE,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [ExecucaoMagia.HORA, DuracaoMagia.PERMANENTE, CirculoMagia.QUARTO_CIRCULO],
           },
         ],
       },
@@ -9840,11 +9021,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
         maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.AMEACAS,
         paginas: 'Ameaças de Arton', // ou número da página, se disponível
         aprimoramentos: [
@@ -9868,11 +9045,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -9895,11 +9068,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -9925,11 +9094,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '206', // ou número da página, se disponível
         aprimoramentos: [
@@ -9954,11 +9119,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
@@ -9980,16 +9141,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 3,
-            descricao:
-              '<b>+4 PM:</b> muda o número de setas/lanças para cinco. Requer 2º círculo.',
+            descricao: '<b>+4 PM:</b> muda o número de setas/lanças para cinco. Requer 2º círculo.',
             e_aumenta: true, // Aumenta o número de setas/lanças
             custo: 4,
             custo_material: 0,
@@ -10007,16 +9163,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 4,
-            descricao:
-              '<b>+9 PM:</b> muda o número de setas/lanças para dez. Requer 4º círculo.',
+            descricao: '<b>+9 PM:</b> muda o número de setas/lanças para dez. Requer 4º círculo.',
             e_aumenta: true, // Aumenta o número de setas/lanças
             custo: 9,
             custo_material: 0,
@@ -10034,19 +9185,14 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
           },
         ],
       },
       {
         id: 106, // Defina o ID conforme necessário
         nome: 'Curar Ferimentos',
-        descricao:
-          'Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada.',
+        descricao: 'Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada.',
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -10064,11 +9210,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '189', // ou número da página, se disponível
         aprimoramentos: [
@@ -10093,11 +9235,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade reduz à metade"
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Resistência reduz à metade
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -10119,16 +9257,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 3,
-            descricao:
-              '<b>+2 PM:</b> também remove uma condição de fadiga do alvo.',
+            descricao: '<b>+2 PM:</b> também remove uma condição de fadiga do alvo.',
             e_aumenta: false, // Não aumenta, apenas adiciona um efeito
             custo: 2,
             custo_material: 0,
@@ -10146,11 +9279,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 4,
@@ -10172,17 +9301,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.CURTO,
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 5,
-            descricao:
-              '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas.',
+            descricao: '<b>+5 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas.',
             e_aumenta: false, // Não aumenta, apenas modifica o alcance e o alvo
             custo: 5,
             custo_material: 0,
@@ -10200,11 +9323,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -10230,11 +9349,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
@@ -10258,11 +9373,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -10285,11 +9396,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Sem teste de resistência
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -10315,11 +9422,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
         maneira_resistencia: ResistenciaMagia.PARCIAL, // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
@@ -10343,11 +9446,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -10370,11 +9469,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
         ],
       },
@@ -10400,11 +9495,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
@@ -10428,11 +9519,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -10455,11 +9542,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -10485,11 +9568,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '190', // ou número da página, se disponível
         aprimoramentos: [
@@ -10513,17 +9592,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
-            aumenta: 0
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
+            aumenta: 0,
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> muda o alvo para objeto mundano Médio. Requer 2º círculo.',
+            descricao: '<b>+2 PM:</b> muda o alvo para objeto mundano Médio. Requer 2º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o alvo
             custo: 2,
             custo_material: 0,
@@ -10541,16 +9615,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 3,
-            descricao:
-              '<b>+5 PM:</b> muda o alvo para objeto mundano Grande. Requer 3º círculo.',
+            descricao: '<b>+5 PM:</b> muda o alvo para objeto mundano Grande. Requer 3º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o alvo
             custo: 5,
             custo_material: 0,
@@ -10568,16 +9637,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 4,
-            descricao:
-              '<b>+9 PM:</b> muda o alvo para objeto mundano Enorme. Requer 4º círculo.',
+            descricao: '<b>+9 PM:</b> muda o alvo para objeto mundano Enorme. Requer 4º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o alvo
             custo: 9,
             custo_material: 0,
@@ -10595,16 +9659,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 5,
-            descricao:
-              '<b>+14 PM:</b> muda o alvo para objeto mundano Colossal. Requer 5º círculo.',
+            descricao: '<b>+14 PM:</b> muda o alvo para objeto mundano Colossal. Requer 5º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o alvo
             custo: 14,
             custo_material: 0,
@@ -10622,11 +9681,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
           },
           {
             id: 6,
@@ -10649,19 +9704,14 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
       {
         id: 111, // Defina o ID conforme necessário
         nome: 'Explosão de Chamas',
-        descricao:
-          'Um leque de chamas irrompe de suas mãos, causando 2d6 pontos de dano de fogo às criaturas na área.',
+        descricao: 'Um leque de chamas irrompe de suas mãos, causando 2d6 pontos de dano de fogo às criaturas na área.',
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -10679,11 +9729,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '193', // ou número da página, se disponível
         aprimoramentos: [
@@ -10707,11 +9753,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -10734,19 +9776,14 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
       {
         id: 112, // Defina o ID conforme necessário
         nome: 'Disparo Gélido',
-        descricao:
-          'Você dispara um dardo de neve e gelo contra o alvo, que causa 2d8+2 pontos de dano de frio.',
+        descricao: 'Você dispara um dardo de neve e gelo contra o alvo, que causa 2d8+2 pontos de dano de frio.',
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -10764,11 +9801,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude reduz à metade"
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Resistência reduz à metade
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil #', // ou número da página, se disponível
         aprimoramentos: [
@@ -10792,11 +9825,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude reduz à metade"
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE, // Resistência reduz à metade
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -10819,11 +9848,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: ResistenciaMagia.PARCIAL, // Resistência parcial
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -10836,8 +9861,7 @@ export class MagiaData {
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
         custo: 3,
         custo_material: 75,
-        descricao_material:
-          'T$ 25 por PM gasto em incensos ou outras oferendas.',
+        descricao_material: 'T$ 25 por PM gasto em incensos ou outras oferendas.',
         execucao: ExecucaoMagia.PADRAO,
         execucao_quantidade: 0,
         execucao_complemento: '',
@@ -10849,11 +9873,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '200',
         aprimoramentos: [
@@ -10865,8 +9885,7 @@ export class MagiaData {
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
             custo_material: 50,
-            descricao_material:
-              'T$ 25 por PM gasto em incensos ou outras oferendas.',
+            descricao_material: 'T$ 25 por PM gasto em incensos ou outras oferendas.',
             execucao: ExecucaoMagia.PADRAO,
             execucao_quantidade: 0,
             execucao_complemento: '',
@@ -10889,8 +9908,7 @@ export class MagiaData {
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
             custo_material: 50,
-            descricao_material:
-              'T$ 25 por PM gasto em incensos ou outras oferendas.',
+            descricao_material: 'T$ 25 por PM gasto em incensos ou outras oferendas.',
             execucao: ExecucaoMagia.PADRAO,
             execucao_quantidade: 0,
             execucao_complemento: '',
@@ -10913,8 +9931,7 @@ export class MagiaData {
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 3,
             custo_material: 75,
-            descricao_material:
-              'T$ 25 por PM gasto em incensos ou outras oferendas.',
+            descricao_material: 'T$ 25 por PM gasto em incensos ou outras oferendas.',
             execucao: ExecucaoMagia.PADRAO,
             execucao_quantidade: 0,
             execucao_complemento: '',
@@ -10957,11 +9974,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ENCANTAMENTO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '200',
         aprimoramentos: [],
@@ -10987,11 +10000,7 @@ export class MagiaData {
         descricao_duracao: '1 dia',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '201',
         aprimoramentos: [
@@ -11088,11 +10097,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude reduz à metade"
         maneira_resistencia: 'reduz à metade', // Descrição da resistência
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '186', // ou número da página, se disponível
         aprimoramentos: [
@@ -11116,11 +10121,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -11143,11 +10144,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 3,
@@ -11170,11 +10167,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -11186,7 +10179,7 @@ export class MagiaData {
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 3, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -11200,11 +10193,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
         maneira_resistencia: 'reduz à metade', // Descrição da resistência
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '182', // ou número da página, se disponível
         aprimoramentos: [
@@ -11228,11 +10217,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
@@ -11255,11 +10240,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 3,
@@ -11282,11 +10263,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
         ],
       },
@@ -11311,11 +10288,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ENCANTAMENTO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '205',
         aprimoramentos: [
@@ -11366,11 +10339,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '207',
         aprimoramentos: [
@@ -11437,8 +10406,7 @@ export class MagiaData {
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.HUMANOIDE,
             alvo_quantidade: 0,
-            alvo_descricao:
-              'todos os alvos válidos a sua escolha dentro do alcance.',
+            alvo_descricao: 'todos os alvos válidos a sua escolha dentro do alcance.',
             duracao: DuracaoMagia.CENA,
             duracao_quantidade: 0,
             descricao_duracao: '',
@@ -11470,11 +10438,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ENCANTAMENTO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '207',
         aprimoramentos: [
@@ -11544,10 +10508,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -11574,11 +10535,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '187', // ou número da página, se disponível
         aprimoramentos: [
@@ -11603,16 +10560,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano em +1d6 (exceto do efeito chamejar).',
+            descricao: '<b>+2 PM:</b> aumenta o dano em +1d6 (exceto do efeito chamejar).',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -11630,11 +10582,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -11652,18 +10600,13 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.CURTO,
             alvo: AlvoMagia.CRIATURA,
-            alvo_descricao:
-              '1 criatura composta principalmente por fogo, lava ou magma',
+            alvo_descricao: '1 criatura composta principalmente por fogo, lava ou magma',
             duracao: DuracaoMagia.INSTANTANEA,
             duracao_quantidade: 1, // ajustado para usar duracao_quantidade
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
         ],
       },
@@ -11689,11 +10632,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos parcial"
         maneira_resistencia: 'parcial', // Descrição da resistência
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '193', // ou número da página, se disponível
         aprimoramentos: [
@@ -11718,11 +10657,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
@@ -11744,17 +10679,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
             id: 3,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano inicial e o dano por rodada em +1d6.',
+            descricao: '<b>+2 PM:</b> aumenta o dano inicial e o dano por rodada em +1d6.',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -11772,11 +10702,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -11802,11 +10728,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '210',
         aprimoramentos: [
@@ -11876,11 +10798,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              AlcanceMagia.MEDIO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.MEDIO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -11907,18 +10825,13 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '202', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> também recupera todos os PV perdidos por veneno.',
+            descricao: '<b>+2 PM:</b> também recupera todos os PV perdidos por veneno.',
             e_aumenta: false, // Não aumenta, apenas adiciona um efeito
             custo: 2,
             custo_material: 0,
@@ -11936,16 +10849,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> em vez de uma, remove todas as condições listadas.',
+            descricao: '<b>+2 PM:</b> em vez de uma, remove todas as condições listadas.',
             e_aumenta: false, // Aumenta o número de condições removidas
             custo: 2,
             custo_material: 0,
@@ -11963,11 +10871,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 3,
@@ -11990,11 +10894,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 4,
@@ -12017,11 +10917,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -12047,11 +10943,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '191', // ou número da página, se disponível
         aprimoramentos: [
@@ -12075,11 +10967,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -12103,16 +10991,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURA_OBJETO,
-              DuracaoMagia.CENA,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURA_OBJETO, DuracaoMagia.CENA],
           },
           {
             id: 3,
-            descricao:
-              '<b>+4 PM:</b> muda o círculo máximo das magias dissipadas para 4º. Requer 4º círculo.',
+            descricao: '<b>+4 PM:</b> muda o círculo máximo das magias dissipadas para 4º. Requer 4º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 4,
             custo_material: 0,
@@ -12134,8 +11017,7 @@ export class MagiaData {
           },
           {
             id: 4,
-            descricao:
-              '<b>+9 PM:</b> muda o círculo máximo das magias dissipadas para 5º. Requer 5º círculo.',
+            descricao: '<b>+9 PM:</b> muda o círculo máximo das magias dissipadas para 5º. Requer 5º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 9,
             custo_material: 0,
@@ -12179,18 +11061,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '192', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+3 PM:</b> aumenta o dano de frio em +2d6 e o dano de corte em +2d6.',
+            descricao: '<b>+3 PM:</b> aumenta o dano de frio em +2d6 e o dano de corte em +2d6.',
             e_aumenta: true, // Aumenta o dano
             custo: 3,
             custo_material: 0,
@@ -12208,11 +11085,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -12236,11 +11109,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Sem teste de resistência
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.MEDIO,
-              DuracaoMagia.SUSTENTADA,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.MEDIO, DuracaoMagia.SUSTENTADA, CirculoMagia.QUARTO_CIRCULO],
           },
         ],
       },
@@ -12266,11 +11135,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos (veja texto)"
         maneira_resistencia: 'veja texto', // Descrição da resistência
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '203', // ou número da página, se disponível
         aprimoramentos: [
@@ -12295,16 +11160,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano ou cura em +1d8 (ou +1d12 em mortos-vivos).',
+            descricao: '<b>+2 PM:</b> aumenta o dano ou cura em +1d8 (ou +1d12 em mortos-vivos).',
             e_aumenta: true, // Aumenta o dano ou cura
             custo: 2,
             custo_material: 0,
@@ -12322,11 +11182,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos (veja texto)"
             maneira_resistencia: 'veja texto', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -12350,16 +11206,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos (veja texto)"
             maneira_resistencia: 'veja texto', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 4,
-            descricao:
-              '<b>+3 PM:</b> criaturas que falhem na resistência ficam cegas por 1d4 rodadas.',
+            descricao: '<b>+3 PM:</b> criaturas que falhem na resistência ficam cegas por 1d4 rodadas.',
             e_aumenta: false, // Não aumenta, apenas adiciona um efeito
             custo: 3,
             custo_material: 0,
@@ -12377,11 +11228,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos (veja texto)"
             maneira_resistencia: 'veja texto', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
         ],
       },
@@ -12407,11 +11254,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '208', // ou número da página, se disponível
         aprimoramentos: [
@@ -12436,16 +11279,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano de raios (veja acima) em +1d8.',
+            descricao: '<b>+2 PM:</b> aumenta o dano de raios (veja acima) em +1d8.',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -12463,11 +11301,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -12491,16 +11325,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 4,
-            descricao:
-              '<b>+3 PM:</b> se escolheu causar granizo, muda o dano para 2d6 por rodada.',
+            descricao: '<b>+3 PM:</b> se escolheu causar granizo, muda o dano para 2d6 por rodada.',
             e_aumenta: false, // Aumenta o dano
             custo: 3,
             custo_material: 0,
@@ -12518,11 +11347,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 5,
@@ -12545,16 +11370,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 6,
-            descricao:
-              '<b>+3 PM:</b> muda a área para cilindro com 90m de raio e 90m de altura.',
+            descricao: '<b>+3 PM:</b> muda a área para cilindro com 90m de raio e 90m de altura.',
             e_aumenta: false, // Aumenta a área
             custo: 3,
             custo_material: 0,
@@ -12572,11 +11392,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
           },
         ],
       },
@@ -12588,7 +11404,7 @@ export class MagiaData {
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 3, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -12602,11 +11418,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
         maneira_resistencia: 'reduz à metade', // Descrição da resistência
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '184', // ou número da página, se disponível
         aprimoramentos: [
@@ -12630,11 +11442,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -12657,11 +11465,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -12688,11 +11492,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
         maneira_resistencia: 'parcial', // Descrição da resistência
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '207', // ou número da página, se disponível
         aprimoramentos: [
@@ -12716,11 +11516,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -12744,11 +11540,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -12775,11 +11567,7 @@ export class MagiaData {
         descricao_duracao: '', // se a duracao for do DuracaoMagia.RODADA, descrição para exibição
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
         maneira_resistencia: 'reduz à metade', // Descrição da resistência
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '203', // ou número da página, se disponível
         aprimoramentos: [
@@ -12803,11 +11591,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -12831,11 +11615,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -12860,11 +11640,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '183',
         aprimoramentos: [
@@ -12911,11 +11687,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -12942,11 +11714,7 @@ export class MagiaData {
         efeito: 'ilusão que se estende a até 4 cubos de 1,5m',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.DESACREDITA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '189',
         aprimoramentos: [
@@ -13165,11 +11933,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.DESACREDITA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '191',
         aprimoramentos: [
@@ -13193,11 +11957,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
-            tracos: [
-              AlcanceMagia.TOQUE,
-              AlvoMagia.CRIATURA,
-              DuracaoMagia.SEMANA,
-            ],
+            tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, DuracaoMagia.SEMANA],
             aumenta: 0,
           },
           {
@@ -13243,12 +12003,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURA,
-              Resistencia.VONTADE,
-              ResistenciaMagia.ANULA,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURA, Resistencia.VONTADE, ResistenciaMagia.ANULA],
             aumenta: 0,
           },
           {
@@ -13294,11 +12049,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -13325,11 +12076,7 @@ export class MagiaData {
         efeito: 'cópia ilusória',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '191',
         aprimoramentos: [
@@ -13380,11 +12127,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '192',
         aprimoramentos: [
@@ -13439,11 +12182,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '193',
         aprimoramentos: [],
@@ -13469,11 +12208,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '195',
         aprimoramentos: [
@@ -13546,11 +12281,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '195',
         aprimoramentos: [
@@ -13626,11 +12357,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '195',
         aprimoramentos: [
@@ -13654,11 +12381,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              AlcanceMagia.TOQUE,
-              AlvoMagia.CRIATURA_OBJETO,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, AlvoMagia.CRIATURA_OBJETO],
             aumenta: 0,
           },
           {
@@ -13727,12 +12450,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              ExecucaoMagia.PADRAO,
-              AlcanceMagia.TOQUE,
-              AlvoMagia.CRIATURA,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -13758,11 +12476,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.DESACREDITA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '199',
         aprimoramentos: [
@@ -13835,11 +12549,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '204',
         aprimoramentos: [],
@@ -13865,11 +12575,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '206',
         aprimoramentos: [
@@ -13942,11 +12648,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '207',
         aprimoramentos: [
@@ -13997,11 +12699,7 @@ export class MagiaData {
         efeito: '6 mortos-vivos',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.NECROMANCIA, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '186',
         aprimoramentos: [
@@ -14203,11 +12901,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '186',
         aprimoramentos: [
@@ -14282,11 +12976,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '193',
         aprimoramentos: [
@@ -14356,12 +13046,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              AlvoMagia.CRIATURA,
-              Resistencia.FORTITUDE,
-              ResistenciaMagia.PARCIAL,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURA, Resistencia.FORTITUDE, ResistenciaMagia.PARCIAL, CirculoMagia.SEGUNDO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -14433,11 +13118,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '193',
         aprimoramentos: [
@@ -14484,10 +13165,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -14513,11 +13191,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '195',
         aprimoramentos: [
@@ -14636,11 +13310,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.ANULA,
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.NECROMANCIA, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '196',
         aprimoramentos: [
@@ -14690,11 +13360,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.NECROMANCIA, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '199',
         aprimoramentos: [
@@ -14718,12 +13384,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
-            tracos: [
-              AlcanceMagia.TOQUE,
-              AlvoMagia.CRIATURA,
-              Resistencia.FORTITUDE,
-              ResistenciaMagia.ANULA,
-            ],
+            tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, Resistencia.FORTITUDE, ResistenciaMagia.ANULA],
             aumenta: 0,
           },
           {
@@ -14797,11 +13458,7 @@ export class MagiaData {
         efeito: 'muro de ossos',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.NECROMANCIA, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '199',
         aprimoramentos: [
@@ -14876,11 +13533,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.NENHUMA,
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '201',
         aprimoramentos: [
@@ -14930,11 +13583,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.NECROMANCIA, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '201',
         aprimoramentos: [
@@ -14984,11 +13633,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '202',
         aprimoramentos: [
@@ -15089,11 +13734,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '203',
         aprimoramentos: [],
@@ -15125,11 +13766,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.NECROMANCIA, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '204',
         aprimoramentos: [
@@ -15203,11 +13840,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.VONTADE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.NECROMANCIA, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '204',
         aprimoramentos: [
@@ -15281,11 +13914,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.NECROMANCIA, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '206',
         aprimoramentos: [
@@ -15343,8 +13972,7 @@ export class MagiaData {
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 7,
             custo_material: 1000,
-            descricao_material:
-              'muda o componente material para ferramentas de embalsamar (T$ 1.000)',
+            descricao_material: 'muda o componente material para ferramentas de embalsamar (T$ 1.000)',
             execucao: ExecucaoMagia.COMPLETA,
             execucao_quantidade: 0,
             execucao_complemento: '',
@@ -15356,10 +13984,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              Chave.COMPONENTE_MATERIAL,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [Chave.COMPONENTE_MATERIAL, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -15385,11 +14010,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '209',
         aprimoramentos: [
@@ -15462,11 +14083,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.QUINTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.NECROMANCIA, CirculoMagia.QUINTO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '209',
         aprimoramentos: [
@@ -15539,11 +14156,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '209',
         aprimoramentos: [
@@ -15613,12 +14226,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              AlvoMagia.VOCE,
-              DuracaoMagia.CENA,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, DuracaoMagia.CENA, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -15644,11 +14252,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '211',
         aprimoramentos: [
@@ -15722,11 +14326,7 @@ export class MagiaData {
         efeito: 'familiar elemental',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.AMEACAS,
         paginas: '404',
         aprimoramentos: [
@@ -15807,11 +14407,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.CONVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.AMEACAS,
         paginas: '404 e 405',
         aprimoramentos: [
@@ -15907,11 +14503,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
         referencias: Referencia.DB,
         paginas: '',
         aprimoramentos: [
@@ -15979,18 +14571,13 @@ export class MagiaData {
         execucao_complemento: '',
         alcance: AlcanceMagia.TOQUE,
         alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
-        alvo_descricao:
-          'até dois itens que você possua, entre armas, armaduras e escudos;',
+        alvo_descricao: 'até dois itens que você possua, entre armas, armaduras e escudos;',
         duracao: DuracaoMagia.PERMANENTE,
         duracao_quantidade: 0,
         descricao_duracao: 'permanente até ser descarregada',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO],
         referencias: Referencia.GUIA_NPC,
         paginas: '17',
         aprimoramentos: [
@@ -16008,8 +14595,7 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.TOQUE,
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
-            alvo_descricao:
-              'até dois itens que você possua, entre armas, armaduras e escudos;',
+            alvo_descricao: 'até dois itens que você possua, entre armas, armaduras e escudos;',
             duracao: DuracaoMagia.PERMANENTE,
             duracao_quantidade: 0,
             descricao_duracao: 'permanente até ser descarregada',
@@ -16028,7 +14614,7 @@ export class MagiaData {
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUINTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 15, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -16042,11 +14628,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '182', // ou número da página, se disponível
         aprimoramentos: [
@@ -16070,11 +14652,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16098,11 +14676,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -16114,7 +14688,7 @@ export class MagiaData {
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -16128,11 +14702,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '184', // ou número da página, se disponível
         aprimoramentos: [
@@ -16156,11 +14726,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -16173,7 +14739,7 @@ export class MagiaData {
         escola: EscolasMagia.EVOCACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -16187,18 +14753,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '184', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano em +2d6 (+2d8 contra mortos-vivos).',
+            descricao: '<b>+2 PM:</b> aumenta o dano em +2d6 (+2d8 contra mortos-vivos).',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -16216,11 +14777,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16243,11 +14800,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16297,11 +14850,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '189_190', // ou número da página, se disponível
         aprimoramentos: [
@@ -16325,11 +14874,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16352,10 +14897,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -16381,11 +14923,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: '',
         maneira_resistencia: '', // Resistência depende do texto
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '194', // ou número da página, se disponível
         aprimoramentos: [],
@@ -16412,18 +14950,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano de ácido em +1d8 e o dano de veneno em +1d8.',
+            descricao: '<b>+2 PM:</b> aumenta o dano de ácido em +1d8 e o dano de veneno em +1d8.',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -16441,11 +14974,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.UNIVERSAL,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.UNIVERSAL, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -16472,18 +15001,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano de eletricidade em +1d6 e o dano de impacto em +1d6.',
+            descricao: '<b>+2 PM:</b> aumenta o dano de eletricidade em +1d6 e o dano de impacto em +1d6.',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -16501,17 +15025,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
             id: 2,
-            descricao:
-              '<b>+4 PM:</b> muda o alvo para “criaturas escolhidas”. Requer 4º Círculo.',
+            descricao: '<b>+4 PM:</b> muda o alvo para “criaturas escolhidas”. Requer 4º Círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 4,
             custo_material: 0,
@@ -16529,10 +15048,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUARTO_CIRCULO],
           },
         ],
       },
@@ -16558,18 +15074,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.AMEACAS,
         paginas: '404', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+3 PM:</b> aumenta o dano em +2d8 (ou +2d12 contra mortos-vivos).',
+            descricao: '<b>+3 PM:</b> aumenta o dano em +2d8 (ou +2d12 contra mortos-vivos).',
             e_aumenta: true, // Aumenta o dano
             custo: 3,
             custo_material: 0,
@@ -16587,11 +15098,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16609,8 +15116,7 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.PESSOAL,
             alvo: AlvoMagia.AREA,
-            alvo_descricao:
-              'linha de 120m ou quatro linhas de 30m em direções opostas, formando um “X”',
+            alvo_descricao: 'linha de 120m ou quatro linhas de 30m em direções opostas, formando um “X”',
             duracao: DuracaoMagia.INSTANTANEA,
             duracao_quantidade: 0,
             descricao_duracao: '',
@@ -16642,18 +15148,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '196', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+3 PM:</b> aumenta o dano inicial em +2d6 e o dano do efeito em chamas em +1d6.',
+            descricao: '<b>+3 PM:</b> aumenta o dano inicial em +2d6 e o dano do efeito em chamas em +1d6.',
             e_aumenta: true, // Aumenta o dano
             custo: 3,
             custo_material: 0,
@@ -16671,11 +15172,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16725,11 +15222,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '197', // ou número da página, se disponível
         aprimoramentos: [],
@@ -16756,11 +15249,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'reduz à metade', // Reflexos reduz à metade
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '198', // ou número da página, se disponível
         aprimoramentos: [
@@ -16784,11 +15273,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'reduz à metade',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -16816,18 +15301,13 @@ export class MagiaData {
         efeito: 'muralha de energia',
         pericia_resistencia: '',
         maneira_resistencia: '', // Resistência depende do texto
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '200', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano por atravessar a muralha em +2d6.',
+            descricao: '<b>+2 PM:</b> aumenta o dano por atravessar a muralha em +2d6.',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -16846,11 +15326,7 @@ export class MagiaData {
             efeito: 'muralha de energia',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16875,11 +15351,7 @@ export class MagiaData {
             efeito: 'muralha de energia',
             pericia_resistencia: '',
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -16930,11 +15402,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: 'reduz à metade', // Resistência reduz à metade
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
@@ -16958,11 +15426,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'reduz à metade',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -17013,11 +15477,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '203', // ou número da página, se disponível
         aprimoramentos: [
@@ -17041,11 +15501,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -17096,18 +15552,13 @@ export class MagiaData {
         efeito: 'bolas de fogo e relâmpagos',
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'reduz à metade', // Resistência reduz à metade
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '203_204', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12.',
+            descricao: '<b>+2 PM:</b> aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12.',
             e_aumenta: true, // Aumenta o dano
             custo: 2,
             custo_material: 0,
@@ -17126,11 +15577,7 @@ export class MagiaData {
             efeito: 'bolas de fogo e relâmpagos',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'reduz à metade',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
         ],
@@ -17157,11 +15604,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '205', // ou número da página, se disponível
         aprimoramentos: [
@@ -17185,17 +15628,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
             aumenta: 0,
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> muda o alcance para curto e o alvo para até 5 criaturas.',
+            descricao: '<b>+2 PM:</b> muda o alcance para curto e o alvo para até 5 criaturas.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 2,
             custo_material: 0,
@@ -17213,11 +15651,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUINTO_CIRCULO],
           },
           {
             id: 3,
@@ -17266,11 +15700,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '207', // ou número da página, se disponível
         aprimoramentos: [
@@ -17294,11 +15724,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -17322,16 +15748,11 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 3,
-            descricao:
-              '<b>+4 PM:</b> remove todas as condições listadas, em vez de apenas uma.',
+            descricao: '<b>+4 PM:</b> remove todas as condições listadas, em vez de apenas uma.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 4,
             custo_material: 0,
@@ -17349,11 +15770,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -17379,11 +15796,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '207', // ou número da página, se disponível
         aprimoramentos: [
@@ -17407,11 +15820,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -17435,11 +15844,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'reduz à metade',
-            tracos: [
-              AlcanceMagia.MEDIO,
-              DuracaoMagia.SUSTENTADA,
-              AlvoMagia.CRIATURA_OBJETO,
-            ],
+            tracos: [AlcanceMagia.MEDIO, DuracaoMagia.SUSTENTADA, AlvoMagia.CRIATURA_OBJETO],
           },
         ],
       },
@@ -17465,11 +15870,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: '',
         maneira_resistencia: '', // Resistência depende do texto
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '209', // ou número da página, se disponível
         aprimoramentos: [],
@@ -17496,11 +15897,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: 'parcial', // Resistência parcial
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.EVOCACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
@@ -17525,11 +15922,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -17551,24 +15944,20 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.EVOCACAO,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
             aumenta: 0,
           },
         ],
       },
       {
         id: 188, // Defina o ID conforme necessário
-        nome: 'Bênção da Dragão Rainha',
+        nome: 'Bênção da Dragoa Rainha',
         descricao:
           'Sua pele se torna branca como a neve e você manifesta um par de asas e uma coroa feitas de gelo cristalino que flutuam rentes ao seu corpo. Você recebe deslocamento de voo 18m, imunidade a fogo e frio e resistência a dano não mágico 15. Suas magias que causam dano de frio têm seu dano maximizado, mas você fica impedido de lançar magias que causam dano de fogo.',
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.UNIVERSAL,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.COMPLETA,
@@ -17582,11 +15971,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [],
@@ -17599,7 +15984,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -17613,11 +15998,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '186', // ou número da página, se disponível
         aprimoramentos: [],
@@ -17630,7 +16011,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -17644,11 +16025,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: '', // Resistência depende do texto
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '186_187', // ou número da página, se disponível
         aprimoramentos: [
@@ -17673,6 +16050,7 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
+            aumenta: 0,
           },
         ],
       },
@@ -17698,20 +16076,15 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: '', // Resistência depende do texto
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta o limite de tamanho de criaturas e objetos afetados em um passo.',
+            descricao: '<b>+2 PM:</b> aumenta o limite de tamanho de criaturas e objetos afetados em um passo.',
             e_aumenta: true, // Aumenta o limite de tamanho
-            custo: 2,
+            custo: 3,
             custo_material: 0,
             descricao_material: '',
             tipo: TipoMagia.DIVINA,
@@ -17728,6 +16101,7 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
+            aumenta: 0,
           },
         ],
       },
@@ -17739,7 +16113,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 3, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -17753,11 +16127,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '187', // ou número da página, se disponível
         aprimoramentos: [
@@ -17782,11 +16152,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              DuracaoMagia.DIA,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, DuracaoMagia.DIA, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
@@ -17813,8 +16179,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao:
-              '<b>+7 PM:</b> muda o tamanho do alvo para Enorme ou menor. Requer 3º círculo.',
+            descricao: '<b>+7 PM:</b> muda o tamanho do alvo para Enorme ou menor. Requer 3º círculo.',
             e_aumenta: true, // Aumenta o limite de tamanho
             custo: 7,
             custo_material: 0,
@@ -17836,8 +16201,7 @@ export class MagiaData {
           },
           {
             id: 4,
-            descricao:
-              '<b>+12 PM:</b> muda o tamanho do alvo para Colossal ou menor. Requer 4º círculo.',
+            descricao: '<b>+12 PM:</b> muda o tamanho do alvo para Colossal ou menor. Requer 4º círculo.',
             e_aumenta: true, // Aumenta o limite de tamanho
             custo: 12,
             custo_material: 0,
@@ -17867,7 +16231,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.COMPLETA,
@@ -17881,18 +16245,13 @@ export class MagiaData {
         descricao_duracao: '4d12 horas',
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '187', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+1 PM (Apenas Druidas):</b> muda o raio da área para 3km e duração para 1d4 dias.',
+            descricao: '<b>+1 PM (Apenas Druidas):</b> muda o raio da área para 3km e duração para 1d4 dias.',
             e_aumenta: false, // Aumenta o raio da área e altera a duração
             custo: 1,
             custo_material: 0,
@@ -17922,7 +16281,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUINTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 15, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -17936,11 +16295,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '187_188', // ou número da página, se disponível
         aprimoramentos: [],
@@ -17967,11 +16322,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS,
         maneira_resistencia: 'anula', // Reflexos anula
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '188', // ou número da página, se disponível
         aprimoramentos: [
@@ -18023,8 +16374,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao:
-              '<b>+1 PM:</b> além do normal, criaturas que falhem na resistência também ficam imóveis.',
+            descricao: '<b>+1 PM:</b> além do normal, criaturas que falhem na resistência também ficam imóveis.',
             e_aumenta: false, // Aumenta o efeito (imobilizar)
             custo: 1,
             custo_material: 0,
@@ -18042,11 +16392,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'anula',
-            tracos: [
-              TipoMagia.DIVINA,
-              EscolasMagia.TRANSMUTACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
             aumenta: 0,
           },
           {
@@ -18070,11 +16416,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              AlvoMagia.CRIATURA_OBJETO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, AlvoMagia.CRIATURA_OBJETO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
         ],
       },
@@ -18086,7 +16428,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -18100,11 +16442,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: '', // Resistência depende do texto
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '188', // ou número da página, se disponível
         aprimoramentos: [
@@ -18152,11 +16490,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.PESSOAL,
-              DuracaoMagia.DIA,
-              CirculoMagia.TERCEIRO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.PESSOAL, DuracaoMagia.DIA, CirculoMagia.TERCEIRO_CIRCULO],
           },
         ],
       },
@@ -18168,7 +16502,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUINTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 15, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.COMPLETA,
@@ -18182,11 +16516,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: '', // Resistência depende do efeito escolhido
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUINTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUINTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '190', // ou número da página, se disponível
         aprimoramentos: [
@@ -18223,7 +16553,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -18237,18 +16567,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
         maneira_resistencia: 'parcial', // Campo preenchido conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '190', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+4 PM:</b> aumenta o dano total em +2d12 e o dano mínimo em +1d12.',
+            descricao: '<b>+4 PM:</b> aumenta o dano total em +2d12 e o dano mínimo em +1d12.',
             e_aumenta: true, // Aumenta o dano total e o dano mínimo
             custo: 4,
             custo_material: 0,
@@ -18279,7 +16604,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 3, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -18293,18 +16618,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '193', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+3 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas.',
+            descricao: '<b>+3 PM:</b> muda o alcance para curto e o alvo para criaturas escolhidas.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 3,
             custo_material: 0,
@@ -18322,11 +16642,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlcanceMagia.CURTO,
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.SEGUNDO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.SEGUNDO_CIRCULO],
           },
           {
             id: 2,
@@ -18353,8 +16669,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao:
-              '<b>+7 PM:</b> em vez do normal, o alvo recebe +4 no atributo escolhido. Requer 4º círculo.',
+            descricao: '<b>+7 PM:</b> em vez do normal, o alvo recebe +4 no atributo escolhido. Requer 4º círculo.',
             e_aumenta: false, // Aumenta o bônus no atributo escolhido
             custo: 7,
             custo_material: 0,
@@ -18407,7 +16722,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.COMPLETA,
@@ -18421,11 +16736,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '193_194', // ou número da página, se disponível
         aprimoramentos: [
@@ -18444,8 +16755,7 @@ export class MagiaData {
             execucao_complemento: '',
             alcance: AlcanceMagia.TOQUE,
             alvo: AlvoMagia.CRIATURAS_ESCOLHIDAS,
-            alvo_descricao:
-              'até 5 criaturas voluntárias que estejam de mãos dadas',
+            alvo_descricao: 'até 5 criaturas voluntárias que estejam de mãos dadas',
             duracao: DuracaoMagia.SUSTENTADA,
             duracao_quantidade: 0,
             descricao_duracao: '',
@@ -18463,7 +16773,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 3, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -18477,11 +16787,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '198_199', // ou número da página, se disponível
         aprimoramentos: [
@@ -18510,8 +16816,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            descricao:
-              '<b>+3 PM:</b> a forma escolhida recebe percepção às cegas. Requer 3º círculo.',
+            descricao: '<b>+3 PM:</b> a forma escolhida recebe percepção às cegas. Requer 3º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 3,
             custo_material: 0,
@@ -18656,7 +16961,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -18670,18 +16975,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
         maneira_resistencia: 'reduz à metade', // Campo preenchido conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> aumenta o dano inicial e o dano do deslocamento em +1d8.',
+            descricao: '<b>+2 PM:</b> aumenta o dano inicial e o dano do deslocamento em +1d8.',
             e_aumenta: true, // Aumenta o dano inicial e o dano do deslocamento
             custo: 2,
             custo_material: 0,
@@ -18730,12 +17030,11 @@ export class MagiaData {
       {
         id: 203, // Defina o ID conforme necessário
         nome: 'Pele de Pedra',
-        descricao:
-          'Sua pele ganha aspecto e dureza de rocha. Você recebe redução de dano 5.',
+        descricao: 'Sua pele ganha aspecto e dureza de rocha. Você recebe redução de dano 5.',
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.UNIVERSAL,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -18749,18 +17048,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '201', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+1 PM:</b> muda o alcance para toque e o alvo para 1 criatura.',
+            descricao: '<b>+1 PM:</b> muda o alcance para toque e o alvo para 1 criatura.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 1,
             custo_material: 0,
@@ -18847,16 +17141,11 @@ export class MagiaData {
             descricao_duracao: '1d4 rodadas',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'anula',
-            tracos: [
-              AlcanceMagia.TOQUE,
-              DuracaoMagia.RODADA,
-              CirculoMagia.QUARTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.TOQUE, DuracaoMagia.RODADA, CirculoMagia.QUARTO_CIRCULO],
           },
           {
             id: 5,
-            descricao:
-              '<b>+9 PM:</b> como acima, mas com duração permanente. Requer 5º círculo.',
+            descricao: '<b>+9 PM:</b> como acima, mas com duração permanente. Requer 5º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 9,
             custo_material: 0,
@@ -18874,11 +17163,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'anula',
-            tracos: [
-              AlcanceMagia.TOQUE,
-              DuracaoMagia.PERMANENTE,
-              CirculoMagia.QUINTO_CIRCULO,
-            ],
+            tracos: [AlcanceMagia.TOQUE, DuracaoMagia.PERMANENTE, CirculoMagia.QUINTO_CIRCULO],
           },
         ],
       },
@@ -18890,7 +17175,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -18904,11 +17189,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '201', // ou número da página, se disponível
         aprimoramentos: [
@@ -19005,11 +17286,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '201_202', // ou número da página, se disponível
         aprimoramentos: [
@@ -19034,11 +17311,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.TRANSMUTACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 2,
@@ -19061,11 +17334,7 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              TipoMagia.ARCANA,
-              EscolasMagia.TRANSMUTACAO,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
           },
           {
             id: 3,
@@ -19142,11 +17411,7 @@ export class MagiaData {
         descricao_duracao: 'até chegar ao solo ou cena, o que vier primeiro.', // descrição complementar
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '202', // ou número da página, se disponível
         aprimoramentos: [
@@ -19175,8 +17440,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> muda o alvo para até 10 criaturas ou objetos adequados.',
+            descricao: '<b>+2 PM:</b> muda o alvo para até 10 criaturas ou objetos adequados.',
             e_aumenta: true, // Aumenta o número de alvos
             custo: 2,
             custo_material: 0,
@@ -19191,20 +17455,15 @@ export class MagiaData {
             alvo_descricao: 'até 10 criaturas ou objetos adequados',
             duracao: DuracaoMagia.CONDICIONAL,
             duracao_quantidade: 0,
-            descricao_duracao:
-              'até chegar ao solo ou cena, o que vier primeiro.',
+            descricao_duracao: 'até chegar ao solo ou cena, o que vier primeiro.',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
-            tracos: [
-              AlvoMagia.CRIATURAS_ESCOLHIDAS,
-              CirculoMagia.PRIMEIRO_CIRCULO,
-            ],
+            tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.PRIMEIRO_CIRCULO],
             aumenta: 0,
           },
           {
             id: 3,
-            descricao:
-              '<b>+2 PM:</b> aumenta a categoria de tamanho do alvo em uma.',
+            descricao: '<b>+2 PM:</b> aumenta a categoria de tamanho do alvo em uma.',
             e_aumenta: true, // Aumenta a categoria de tamanho
             custo: 2,
             custo_material: 0,
@@ -19219,8 +17478,7 @@ export class MagiaData {
             alvo_descricao: '1 criatura ou objeto Enorme ou menor',
             duracao: DuracaoMagia.CONDICIONAL,
             duracao_quantidade: 0,
-            descricao_duracao:
-              'até chegar ao solo ou cena, o que vier primeiro.',
+            descricao_duracao: 'até chegar ao solo ou cena, o que vier primeiro.',
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURA_OBJETO, CirculoMagia.PRIMEIRO_CIRCULO],
@@ -19236,7 +17494,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -19250,11 +17508,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '208', // ou número da página, se disponível
         aprimoramentos: [
@@ -19292,7 +17546,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 6, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -19306,11 +17560,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '210', // ou número da página, se disponível
         aprimoramentos: [
@@ -19371,10 +17621,9 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 1000, // custo em T$ de material
-        descricao_material:
-          'uma peça de couro de dragão ou uma escama de dragão no valor de T$ 1.000', // descritivo para exibição
+        descricao_material: 'uma peça de couro de dragão ou uma escama de dragão no valor de T$ 1.000', // descritivo para exibição
         execucao: ExecucaoMagia.COMPLETA,
         execucao_quantidade: 0, // quantidade de rodadas ou horas, se aplicável
         execucao_complemento: '', // descrição complementar, se necessário
@@ -19386,11 +17635,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.AMEACAS,
         paginas: '405', // ou número da página, se disponível
         aprimoramentos: [
@@ -19532,11 +17777,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '210', // ou número da página, se disponível
         aprimoramentos: [
@@ -19588,8 +17829,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao:
-              '<b>+2 PM:</b> aumenta o limite de tamanho do objeto em uma categoria.',
+            descricao: '<b>+2 PM:</b> aumenta o limite de tamanho do objeto em uma categoria.',
             e_aumenta: true, // Aumenta o limite de tamanho
             custo: 2,
             custo_material: 0,
@@ -19659,8 +17899,7 @@ export class MagiaData {
           },
           {
             id: 6,
-            descricao:
-              '<b>+9 PM:</b> como o aprimoramento anterior, mas passa a afetar itens mágicos.',
+            descricao: '<b>+9 PM:</b> como o aprimoramento anterior, mas passa a afetar itens mágicos.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 9,
             custo_material: 0,
@@ -19690,7 +17929,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.QUARTO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 10, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -19704,11 +17943,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
         maneira_resistencia: 'reduz à metade', // Campo preenchido conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.QUARTO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.QUARTO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.DB,
         paginas: 'Dragão Brasil', // ou número da página, se disponível
         aprimoramentos: [
@@ -19768,7 +18003,7 @@ export class MagiaData {
         escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.SEGUNDO_CIRCULO,
-        custo: 1, // custo base em PM
+        custo: 3, // custo base em PM
         custo_material: 0, // custo em T$ de material
         descricao_material: '', // descritivo para exibição
         execucao: ExecucaoMagia.PADRAO,
@@ -19782,11 +18017,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.SEGUNDO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '210', // ou número da página, se disponível
         aprimoramentos: [
@@ -19815,8 +18046,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            descricao:
-              '<b>+7 PM:</b> muda o alvo para criaturas escolhidas no alcance. Requer 4º círculo.',
+            descricao: '<b>+7 PM:</b> muda o alvo para criaturas escolhidas no alcance. Requer 4º círculo.',
             e_aumenta: false, // Aumenta o número de alvos
             custo: 7,
             custo_material: 0,
@@ -19883,18 +18113,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
         maneira_resistencia: '', // Campo vazio, conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.TRANSMUTACAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '211', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+1 PM:</b> muda o alcance para toque e o alvo para 1 criatura.',
+            descricao: '<b>+1 PM:</b> muda o alcance para toque e o alvo para 1 criatura.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 1,
             custo_material: 0,
@@ -19916,8 +18141,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            descricao:
-              '<b>+4 PM:</b> muda a duração para um dia. Requer 4º círculo.',
+            descricao: '<b>+4 PM:</b> muda a duração para um dia. Requer 4º círculo.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 4,
             custo_material: 0,
@@ -19939,8 +18163,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao:
-              '<b>+4 PM:</b> muda o alcance para curto e o alvo para até 10 criaturas. Requer 4º círculo.',
+            descricao: '<b>+4 PM:</b> muda o alcance para curto e o alvo para até 10 criaturas. Requer 4º círculo.',
             e_aumenta: false, // Aumenta o número de alvos
             custo: 4,
             custo_material: 0,
@@ -19985,11 +18208,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz parcial"
         maneira_resistencia: 'reduz parcial', // Campo preenchido conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.CONVOCACAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.CONVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.AMEACAS,
         paginas: '404', // ou número da página, se disponível
         aprimoramentos: [
@@ -20083,18 +18302,13 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.VONTADE, // Resistência é "Vontade parcial"
         maneira_resistencia: 'parcial', // Campo preenchido conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.ILUSAO, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '196', // ou número da página, se disponível
         aprimoramentos: [
           {
             id: 1,
-            descricao:
-              '<b>+2 PM:</b> além do normal, as criaturas afetadas ficam vulneráveis pela cena.',
+            descricao: '<b>+2 PM:</b> além do normal, as criaturas afetadas ficam vulneráveis pela cena.',
             e_aumenta: false, // Não aumenta, apenas modifica o efeito
             custo: 2,
             custo_material: 0,
@@ -20116,8 +18330,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            descricao:
-              '<b>+2 PM:</b> também afeta espíritos e monstros na área. Requer 2º círculo.',
+            descricao: '<b>+2 PM:</b> também afeta espíritos e monstros na área. Requer 2º círculo.',
             e_aumenta: true, // Aumenta o escopo de criaturas afetadas
             custo: 2,
             custo_material: 0,
@@ -20184,11 +18397,7 @@ export class MagiaData {
         descricao_duracao: '', // descrição complementar, se necessário
         pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
         maneira_resistencia: 'parcial', // Campo preenchido conforme solicitado
-        tracos: [
-          TipoMagia.ARCANA,
-          EscolasMagia.NECROMANCIA,
-          CirculoMagia.PRIMEIRO_CIRCULO,
-        ], // repetir os campos Tipo, Escola e Círculo
+        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.PRIMEIRO_CIRCULO], // repetir os campos Tipo, Escola e Círculo
         referencias: Referencia.BASICO,
         paginas: '202', // ou número da página, se disponível
         aprimoramentos: [
@@ -20240,8 +18449,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao:
-              '<b>+5 PM:</b> como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo.',
+            descricao: '<b>+5 PM:</b> como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo.',
             e_aumenta: true, // Aumenta o escopo de alvos
             custo: 5,
             custo_material: 0,
@@ -20284,11 +18492,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.DIVINA,
-          EscolasMagia.ENCANTAMENTO,
-          CirculoMagia.SEGUNDO_CIRCULO,
-        ],
+        tracos: [TipoMagia.DIVINA, EscolasMagia.ENCANTAMENTO, CirculoMagia.SEGUNDO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '211',
         aprimoramentos: [
@@ -20362,11 +18566,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: '',
         maneira_resistencia: '',
-        tracos: [
-          TipoMagia.UNIVERSAL,
-          EscolasMagia.ILUSAO,
-          CirculoMagia.TERCEIRO_CIRCULO,
-        ],
+        tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ILUSAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '197',
         aprimoramentos: [
