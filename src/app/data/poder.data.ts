@@ -9869,15 +9869,6 @@ export class PoderData {
         id_classe: 8,
       },
       {
-        id: 988,
-        nome: 'Metamorfose Instantânea',
-        descricao: `Uma vez por rodada, quando usa Forma Selvagem, você pode gastar +2 PM para usar essa habilidade como ação livre. Pré-requisitos: Forma Selvagem, 11º nível de druida</i>`,
-        referencias: Referencia.BASICO,
-        tipo: TipoPoder.PODER_CLASSE,
-        prerequisito_nivel: 11,
-        id_classe: 8,
-      },
-      {
         id: 989,
         nome: 'Oráculo da Natureza',
         descricao: `Você pode gastar uma ação de movimento para se conectar com as energias naturais do mundo. Enquanto você permanecer no mesmo lugar, a CD para resistir a suas magias aumenta em +2 e, sempre que você lança uma magia, recebe 2 PM para gastar em aprimoramentos. Se você estiver em um ambiente urbano, a ação necessária para usar este poder muda para completa. <i>Pré-requisitos: Xamã Místico, 11º nível de druida.</i>`,
