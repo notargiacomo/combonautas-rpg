@@ -15,3 +15,76 @@
   margin: 5% !important;
   border: 1px solid rgb(68, 5, 18) !important;
 }
+
+.campo-modificadores-subtotais {
+  height: 100% !important;
+  // width: 100% !important;
+  // max-width: 100% !important;
+  font-size: large !important;
+  text-align: center;
+  border: 1px solid rgb(68, 5, 18) !important;
+
+  // margin-right: 0% !important;
+  // margin-left: 0% !important;
+  // padding-right: 0% !important;
+  // padding-left: 0% !important;
+}
+
+.main-value {
+  border: 1px solid #7a0000;
+  border-radius: 4px;
+  background: #fff5f5;
+  text-align: center;
+  size: 100% !important;
+  max-height: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
+  font-size: xx-large !important;
+  padding: 5% !important;
+}
+
+.for-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: #7a0000;
+  font-weight: bold;
+  font-size: large;
+  padding-left: 3% !important;
+}
+
+.controls-inline {
+  display: flex;
+  gap: 4px;
+}
+
+.btn {
+  background: #fff5f5;
+  font-weight: bold;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.values {
+  display: flex;
+  gap: 6px;
+}
+
+.small-value {
+  flex: 1;
+  background: #fff5f5;
+  text-align: center !important;
+  padding: 10px;
+  border-radius: 4px;
+
+  .input {
+    text-align: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    align-self: center !important;
+  }
+}

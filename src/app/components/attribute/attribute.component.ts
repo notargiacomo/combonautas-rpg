@@ -1,8 +1,10 @@
 import { Component, Input, output } from '@angular/core';
+import { MatCard } from '@angular/material/card';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-attribute',
-  imports: [],
+  imports: [MatIcon],
   templateUrl: './attribute.component.html',
   styleUrl: './attribute.component.scss',
 })
