@@ -53,7 +53,7 @@
   color: #7a0000;
   font-weight: bold;
   font-size: large;
-  padding-left: 3% !important;
+  padding-left: 5% !important;
 }
 
 .controls-inline {
@@ -78,13 +78,10 @@
   flex: 1;
   background: #fff5f5;
   text-align: center !important;
-  padding: 10px;
+  padding: 4% !important;
   border-radius: 4px;
 
-  .input {
+  input {
     text-align: center !important;
-    align-items: center !important;
-    align-content: center !important;
-    align-self: center !important;
   }
 }
