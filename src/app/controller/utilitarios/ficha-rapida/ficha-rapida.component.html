@@ -1,27 +1,83 @@
-<mat-card>
-  <div class="row g-3">
-    <div class="col-12 col-sm-6 col-lg-2">
-      <app-attribute [attribute]="for"></app-attribute>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-2">
-      <app-attribute [attribute]="des"></app-attribute>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-2">
-      <app-attribute [attribute]="con"></app-attribute>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-2">
-      <app-attribute [attribute]="int"></app-attribute>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-2">
-      <app-attribute [attribute]="sab"></app-attribute>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-2">
-      <app-attribute [attribute]="car"></app-attribute>
-    </div>
+<form [formGroup]="form">
+  <div class="row">
+    <mat-card>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>
+            <b>Ficha Rápida</b>
+          </h2>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <mat-form-field class="text-field-formulario-edicao">
+            <mat-label>Nome do Personagem</mat-label>
+            <input formControlName="nome_personagem" matInput type="text" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="text-field-formulario-edicao">
+            <mat-label>Nome do Jogador</mat-label>
+            <input formControlName="nome_jogador" matInput type="text" />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <mat-form-field class="text-field-formulario-edicao">
+            <mat-label>Raça</mat-label>
+            <input formControlName="raca" matInput type="text" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field class="text-field-formulario-edicao">
+            <mat-label>Classe</mat-label>
+            <input formControlName="classe" matInput type="text" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field class="text-field-formulario-edicao">
+            <mat-label>Origem</mat-label>
+            <input formControlName="origem" matInput type="text" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field class="text-field-formulario-edicao">
+            <mat-label>Devoção</mat-label>
+            <input formControlName="devocao" matInput type="text" />
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card>
   </div>
-</mat-card>
+  <div class="row">
+    <mat-card>
+      <div class="row mt-1 g-3">
+        <div class="col-12 col-sm-6 col-lg-2">
+          <app-attribute [attribute]="for"></app-attribute>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+          <app-attribute [attribute]="des"></app-attribute>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+          <app-attribute [attribute]="con"></app-attribute>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+          <app-attribute [attribute]="int"></app-attribute>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+          <app-attribute [attribute]="sab"></app-attribute>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+          <app-attribute [attribute]="car"></app-attribute>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</form>
