@@ -52,8 +52,7 @@
 .label {
   color: #7a0000;
   font-weight: bold;
-  font-size: large;
-  padding-left: 5% !important;
+  font-size: smaller !important;
 }
 
 .controls-inline {
@@ -67,11 +66,12 @@
   font-size: x-large;
   cursor: pointer;
   border-radius: 4px;
+  padding: 17% !important;
 }
 
 .values {
   display: flex;
-  gap: 6px;
+  gap: 1px;
 }
 
 .small-value {

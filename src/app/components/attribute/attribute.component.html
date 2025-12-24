@@ -1,31 +1,34 @@
 <div class="card-game">
   <div class="row align-items-center for-row mb-2">
     <div class="row align-items-center for-row">
-      <div class="col-12 label" style="color: white !important">{{ attribute?.nome }}</div>
+      <div class="col-12 label" style="color: white !important; font-size: large !important">{{ attribute?.nome }}</div>
     </div>
+  </div>
+  <div class="row align-items-center for-row">
     <hr />
-    <div class="row align-items-center for-row mb-2">
-      <div class="col-3 label" style="color: white !important">PODER</div>
-      <div class="col-3 label" style="color: white !important">RACIAL</div>
-      <div class="col-3 label" style="color: white !important">COMPR.</div>
-      <div class="col-3 label d-flex justify-content-center" style="color: white !important">
-        <span class="material-symbols-outlined" disabled>
-          <mat-icon style="cursor: auto !important; padding-left: 20% !important">shopping_cart</mat-icon>
-        </span>
-      </div>
+  </div>
+  <div class="for-row mb-2 gap-1">
+    <div class="col-sm-3 label" style="color: white !important">PODER</div>
+    <div class="col-sm-3 label" style="color: white !important">RACIAL</div>
+    <div class="col-sm-2 label" style="color: white !important">COMPR.</div>
+    <div class="col-4 col-sm-4 label d-flex justify-content-center" style="color: white !important">
+      <span class="material-symbols-outlined" disabled>
+        <mat-icon style="cursor: auto !important; padding-left: 20% !important">shopping_cart</mat-icon>
+      </span>
     </div>
-
-    <div class="values">
+  </div>
+  <div class="row align-items-center for-row mb-2">
+    <div class="d-flex gap-1 justify-content-end">
       <div class="col-sm-3 small-value">
         <input size="1" [value]="attribute?.poder" />
       </div>
       <div class="col-sm-3 small-value">
         <input size="1" [value]="attribute?.racial" />
       </div>
-      <div class="col-sm-3 small-value">
+      <div class="col-sm-2 small-value">
         <div style="font-size: large">{{ attribute?.comprado }}</div>
       </div>
-      <div class="col-3 d-flex gap-2 justify-content-end">
+      <div class="col-2">
         <button
           style="color: #7a0000 !important"
           class="btn btn-outline-danger btn-sm w-100"
@@ -33,6 +36,8 @@
           (click)="calculaPontos(attribute!.comprado! + 1)">
           +
         </button>
+      </div>
+      <div class="col-2">
         <button
           style="color: #7a0000 !important"
           class="btn btn-outline-danger btn-sm w-100"
@@ -43,6 +48,7 @@
       </div>
     </div>
   </div>
+
   <div class="row align-items-center for-row mb-1">
     <div class="col-sm-12">
       <div class="main-value">{{ attribute?.total }}</div>
