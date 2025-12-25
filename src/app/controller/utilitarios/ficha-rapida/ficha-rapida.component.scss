@@ -13,7 +13,7 @@
   height: 100%; /* ocupa toda a coluna */
   min-height: 285px; /* define a altura fixa do quadro */
   max-height: 285px; /* impede crescer */
-  border: 6px solid #440512; /* moldura */
+  border: 5px solid #440512; /* moldura */
   border-radius: 8px;
   background-color: #fdf6f7;
   display: flex;
@@ -43,6 +43,6 @@
 }
 
 .card-ficha {
-  border: 6px solid #440512; /* moldura */
+  border: 5px solid #440512; /* moldura */
   border-radius: 8px;
 }
