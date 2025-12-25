@@ -7,6 +7,8 @@ import { CombonautasBase } from '@app/components/combonautas-base';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatIcon } from '@angular/material/icon';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-ficha-rapida',
@@ -19,6 +21,9 @@ import { MatInputModule } from '@angular/material/input';
     MatFormField,
     MatInputModule,
     MatLabel,
+    MatIcon,
+    NgIf,
+    NgFor,
   ],
   templateUrl: './ficha-rapida.component.html',
   styleUrl: './ficha-rapida.component.scss',
@@ -61,5 +66,27 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
       origem: [],
       devocao: [],
     });
+  }
+
+  adicionar() {}
+
+  imagePreview: string | null = null;
+
+  onFileSelected(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) return;
+
+    const file = input.files[0];
+
+    if (!file.type.startsWith('image/')) {
+      alert('Selecione uma imagem válida');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.imagePreview = reader.result as string;
+    };
+    reader.readAsDataURL(file);
   }
 }

@@ -1,0 +1,48 @@
+.btn-adicionar {
+  font-weight: bold;
+  color: rgb(68, 5, 18) !important;
+  background-color: rgb(68, 5, 18) !important;
+  height: 100% !important;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.image-frame {
+  width: 100%;
+  height: 100%; /* ocupa toda a coluna */
+  min-height: 285px; /* define a altura fixa do quadro */
+  max-height: 285px; /* impede crescer */
+  border: 6px solid #440512; /* moldura */
+  border-radius: 8px;
+  background-color: #fdf6f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.image-frame:hover {
+  box-shadow: 0 0 0 3px rgba(68, 5, 18, 0.2);
+}
+
+.image-frame span {
+  color: #440512;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+/* imagem dentro da moldura */
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ou contain, se preferir */
+}
+
+.card-ficha {
+  border: 6px solid #440512; /* moldura */
+  border-radius: 8px;
+}

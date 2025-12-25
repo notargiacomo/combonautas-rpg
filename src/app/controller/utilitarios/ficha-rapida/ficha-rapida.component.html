@@ -1,6 +1,6 @@
 <form [formGroup]="form">
   <div class="row">
-    <mat-card>
+    <mat-card class="card-ficha">
       <div class="row">
         <div class="col-sm-12">
           <h2>
@@ -10,43 +10,64 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6">
-          <mat-form-field class="text-field-formulario-edicao">
-            <mat-label>Nome do Personagem</mat-label>
-            <input formControlName="nome_personagem" matInput type="text" />
-          </mat-form-field>
+        <div class="col-12 col-lg-8">
+          <div class="row">
+            <div class="col-sm-12">
+              <mat-form-field class="text-field-formulario-edicao">
+                <mat-label>Nome do Personagem</mat-label>
+                <input formControlName="nome_personagem" matInput type="text" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <mat-form-field class="text-field-formulario-edicao">
+                <mat-label>Nome do Jogador</mat-label>
+                <input formControlName="nome_jogador" matInput type="text" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <mat-form-field class="text-field-formulario-edicao">
+                <mat-label>Raça</mat-label>
+                <input formControlName="raca" matInput type="text" />
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field class="text-field-formulario-edicao">
+                <mat-label>Classe</mat-label>
+                <input formControlName="classe" matInput type="text" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <mat-form-field class="text-field-formulario-edicao">
+                <mat-label>Origem</mat-label>
+                <input formControlName="origem" matInput type="text" />
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field class="text-field-formulario-edicao">
+                <mat-label>Devoção</mat-label>
+                <input formControlName="devocao" matInput type="text" />
+              </mat-form-field>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <mat-form-field class="text-field-formulario-edicao">
-            <mat-label>Nome do Jogador</mat-label>
-            <input formControlName="nome_jogador" matInput type="text" />
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <mat-form-field class="text-field-formulario-edicao">
-            <mat-label>Raça</mat-label>
-            <input formControlName="raca" matInput type="text" />
-          </mat-form-field>
-        </div>
-        <div class="col-sm-3">
-          <mat-form-field class="text-field-formulario-edicao">
-            <mat-label>Classe</mat-label>
-            <input formControlName="classe" matInput type="text" />
-          </mat-form-field>
-        </div>
-        <div class="col-sm-3">
-          <mat-form-field class="text-field-formulario-edicao">
-            <mat-label>Origem</mat-label>
-            <input formControlName="origem" matInput type="text" />
-          </mat-form-field>
-        </div>
-        <div class="col-sm-3">
-          <mat-form-field class="text-field-formulario-edicao">
-            <mat-label>Devoção</mat-label>
-            <input formControlName="devocao" matInput type="text" />
-          </mat-form-field>
+        <div class="col-12 col-lg-4">
+          <div class="image-frame" (click)="fileInput.click()">
+            <ng-container *ngIf="imagePreview; else placeholder">
+              <img [src]="imagePreview" alt="Imagem do personagem" />
+            </ng-container>
+
+            <ng-template #placeholder>
+              <span>Clique para adicionar imagem</span>
+            </ng-template>
+          </div>
+
+          <input type="file" #fileInput hidden accept="image/*" (change)="onFileSelected($event)" />
         </div>
       </div>
     </mat-card>
@@ -76,6 +97,253 @@
 
         <div class="col-12 col-sm-6 col-lg-2">
           <app-attribute [attribute]="car"></app-attribute>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div class="row">
+    <mat-card>
+      <div class="row mt-1 g-3">
+        <div class="col-12 col-sm-6 col-lg-2">
+          <div class="card-game">
+            <div class="row">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Pontos de Vida</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Pontos de Mana</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Defesa</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Ataque</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Ataques</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Proficiência</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Proficiências</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Sentido</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Sentidos</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Deslocamento</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Deslocamentos</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Resistência</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Resistências</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div class="row">
+    <mat-card>
+      <div class="row mt-1 g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Poder</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Poderes</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Pericia</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Perícias</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Item</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Itens</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card-game">
+            <div class="row align-items-center mb-2">
+              <div class="col-sm-12 mt-4">
+                <mat-form-field class="text-field-formulario-edicao">
+                  <mat-label style="color: rgb(68, 5, 18) !important">Magia</mat-label>
+                  <input formControlName="nome_personagem" matInput type="text" />
+                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </mat-form-field>
+                <table>
+                  <thead>
+                    <tr><th>Magias</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Teste</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </mat-card>
