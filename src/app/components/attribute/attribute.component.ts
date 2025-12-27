@@ -1,14 +1,16 @@
-import { Component, Input, output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit, output } from '@angular/core';
 import { MatCard } from '@angular/material/card';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-attribute',
-  imports: [MatIcon],
+  standalone: true,
+  imports: [MatIcon, CommonModule],
   templateUrl: './attribute.component.html',
   styleUrl: './attribute.component.scss',
 })
-export class AttributeComponent {
+export class AttributeComponent implements OnInit {
   @Input()
   attribute?: AtributoPersonagem = {};
 
@@ -16,12 +18,14 @@ export class AttributeComponent {
   points!: number;
   changePoints = output<number>();
 
+  ngOnInit(): void {}
+
   calculaPontos(novoValor: number) {
     if (novoValor === -1 || novoValor === 0) {
-      this.points += this.attribute?.comprado! - novoValor;
+      this.points += this.attribute?.comprado! + novoValor;
     } else {
-      this.points += this.calculandoValorPonto(this.attribute!.comprado!);
-      this.points -= this.calculandoValorPonto(novoValor);
+      this.points -= this.calculandoValorPonto(this.attribute!.comprado!);
+      this.points += this.calculandoValorPonto(novoValor);
     }
     this.attribute!.comprado = novoValor;
     this.attribute!.total = this.attribute!.comprado + this.attribute!.racial! + this.attribute!.outros!;
@@ -45,6 +49,24 @@ export class AttributeComponent {
       return n;
     }
     return n + this.fatorialRecursivo(n - 1);
+  }
+
+  onRacialChange(event: Event): void {
+    const value = Number((event.target as HTMLInputElement).value);
+
+    this.attribute!.racial = isNaN(value) ? 0 : value;
+    this.recalcularTotal();
+  }
+
+  onOutroChange(event: Event): void {
+    const value = Number((event.target as HTMLInputElement).value);
+
+    this.attribute!.outros = isNaN(value) ? 0 : value;
+    this.recalcularTotal();
+  }
+
+  recalcularTotal(): void {
+    this.attribute!.total = this.attribute!.racial! + this.attribute!.comprado! + this.attribute!.outros!;
   }
 }
 

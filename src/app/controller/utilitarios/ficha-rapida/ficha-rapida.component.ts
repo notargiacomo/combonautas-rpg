@@ -29,7 +29,7 @@ import { NgFor, NgIf } from '@angular/common';
   styleUrl: './ficha-rapida.component.scss',
 })
 export class FichaRapidaComponent extends CombonautasBase implements OnInit {
-  points: number = 10;
+  points: number = 0;
   form!: FormGroup;
   isMobile = false;
 
@@ -53,12 +53,12 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   pontos_gastos: number = 0;
 
   ngOnInit(): void {
-    this.for = { nome: 'FORÇA', comprado: 0, racial: 0, poder: 0, total: 0 };
-    this.des = { nome: 'DESTREZA', comprado: 0, racial: 0, poder: 0, total: 0 };
-    this.con = { nome: 'CONSTITUIÇÃO', comprado: 0, racial: 0, poder: 0, total: 0 };
-    this.int = { nome: 'INTELIGÊNCIA', comprado: 0, racial: 0, poder: 0, total: 0 };
-    this.sab = { nome: 'SABEDORIA', comprado: 0, racial: 0, poder: 0, total: 0 };
-    this.car = { nome: 'CARISMA', comprado: 0, racial: 0, poder: 0, total: 0 };
+    this.for = { nome: 'FORÇA', comprado: 0, racial: 0, outros: 0, total: 0 };
+    this.des = { nome: 'DESTREZA', comprado: 0, racial: 0, outros: 0, total: 0 };
+    this.con = { nome: 'CONSTITUIÇÃO', comprado: 0, racial: 0, outros: 0, total: 0 };
+    this.int = { nome: 'INTELIGÊNCIA', comprado: 0, racial: 0, outros: 0, total: 0 };
+    this.sab = { nome: 'SABEDORIA', comprado: 0, racial: 0, outros: 0, total: 0 };
+    this.car = { nome: 'CARISMA', comprado: 0, racial: 0, outros: 0, total: 0 };
 
     this.form = this.fb.group({
       nome_personagem: [],
@@ -72,8 +72,8 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
 
   adicionar() {}
 
-  calculaPontos(pontos_gastos: number) {
-    this.points = this.points + pontos_gastos;
+  calculaPontos(event: number) {
+    this.points = event;
   }
 
   imagePreview: string | null = null;

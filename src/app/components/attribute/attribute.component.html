@@ -7,9 +7,9 @@
   <div class="row align-items-center for-row">
     <hr />
   </div>
-  <div class="for-row mb-2 gap-1">
-    <div class="col-sm-2 label" style="color: white !important">PODER</div>
-    <div class="col-sm-3 label" style="color: white !important">RACIAL</div>
+  <div class="for-row mb-2">
+    <div class="col-sm-2 label" style="color: white !important">RACIAL</div>
+    <div class="col-sm-2 label" style="color: white !important; padding-right: 5% !important">OUTRO</div>
     <div class="col-sm-2 label" style="color: white !important">COMPR.</div>
     <div class="col-4 col-sm-4 label d-flex justify-content-center" style="color: white !important">
       <span class="material-symbols-outlined" disabled>
@@ -20,10 +20,10 @@
   <div class="row align-items-center for-row mb-2">
     <div class="d-flex gap-1 justify-content-end">
       <div class="col-sm-3 small-value">
-        <input size="1" [value]="attribute?.poder" />
+        <input type="number" [value]="attribute!.racial" min="-2" (input)="onRacialChange($event)" />
       </div>
       <div class="col-sm-3 small-value">
-        <input size="1" [value]="attribute?.racial" />
+        <input type="number" [value]="attribute!.outros" min="-2" (input)="onOutroChange($event)" />
       </div>
       <div class="col-sm-2 small-value">
         <div style="font-size: large">{{ attribute?.comprado }}</div>
@@ -32,7 +32,7 @@
         <button
           style="color: #7a0000 !important"
           class="btn btn-outline-danger btn-sm w-100"
-          [disabled]="attribute!.comprado"
+          [disabled]="attribute!.comprado === 6"
           (click)="calculaPontos(attribute!.comprado! + 1)">
           +
         </button>

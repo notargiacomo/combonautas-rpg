@@ -76,30 +76,30 @@
     <mat-card class="card-ficha">
       <div class="row mt-1 g-3">
         <div class="col-12 label">
-          {{ 'PONTOS GASTOS: ' + pontos_gastos }}
+          {{ 'PONTOS GASTOS: ' + points }}
         </div>
         <div class="col-12 col-sm-6 col-lg-2">
-          <app-attribute [attribute]="for"></app-attribute>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-2">
-          <app-attribute [attribute]="des"></app-attribute>
+          <app-attribute [points]="points" [attribute]="for" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-2">
-          <app-attribute [attribute]="con"></app-attribute>
+          <app-attribute [points]="points" [attribute]="des" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-2">
-          <app-attribute [attribute]="int"></app-attribute>
+          <app-attribute [points]="points" [attribute]="con" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-2">
-          <app-attribute [attribute]="sab"></app-attribute>
+          <app-attribute [points]="points" [attribute]="int" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-2">
-          <app-attribute [attribute]="car" (changePoints)="calculaPontos($event)"></app-attribute>
+          <app-attribute [points]="points" [attribute]="sab" (changePoints)="calculaPontos($event)"></app-attribute>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+          <app-attribute [points]="points" [attribute]="car" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
       </div>
     </mat-card>

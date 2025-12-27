@@ -78,10 +78,17 @@
   flex: 1;
   background: #fff5f5;
   text-align: center !important;
-  padding: 4% !important;
+  padding-top: 5% !important;
   border-radius: 4px;
 
   input {
     text-align: center !important;
+    width: 100% !important;
+
+    input[type='number' i] {
+      text-align: center !important;
+      border: 1px solid rgb(120, 80, 160) !important;
+      border-radius: 5px !important;
+    }
   }
 }
