@@ -50,6 +50,8 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   sab: AtributoPersonagem = {};
   car: AtributoPersonagem = {};
 
+  pontos_gastos: number = 0;
+
   ngOnInit(): void {
     this.for = { nome: 'FORÇA', comprado: 0, racial: 0, poder: 0, total: 0 };
     this.des = { nome: 'DESTREZA', comprado: 0, racial: 0, poder: 0, total: 0 };
@@ -69,6 +71,10 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   }
 
   adicionar() {}
+
+  calculaPontos(pontos_gastos: number) {
+    this.points = this.points + pontos_gastos;
+  }
 
   imagePreview: string | null = null;
 

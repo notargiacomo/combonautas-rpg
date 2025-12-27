@@ -46,3 +46,59 @@
   border: 5px solid #440512; /* moldura */
   border-radius: 8px;
 }
+
+.label {
+  color: #7a0000;
+  font-weight: bold;
+  font-size: large !important;
+}
+
+button[mat-flat-button] {
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  font-size: 0.75rem; /* Reduz o tamanho da fonte */
+  padding: 0.4rem 0.8rem; /* Ajusta o espaçamento interno */
+  background-color: rgb(68, 5, 18) !important;
+  color: white !important; /* Define a cor do texto */
+  border-radius: 5px; /* Suaviza os cantos */
+  transition: background-color 0.3s ease; /* Anima a mudança de cor */
+  border: 1px solid rgb(156, 26, 26) !important; /* Moldura */
+}
+
+button[mat-flat-button]:hover {
+  background-color: white !important;
+  color: rgb(68, 5, 18) !important;
+}
+
+.mat-icon {
+  cursor: pointer !important;
+  margin-left: 5% !important;
+}
+
+.mat-mdc-button {
+  font-family: 'Oswald' !important;
+  font-size: 10pt !important;
+  // border: 1px solid rgb(68, 5, 18) !important;
+  background-color: rgb(156, 26, 26) !important;
+  color: rgb(240, 240, 245) !important;
+  cursor: pointer !important;
+}
+
+.mat-mdc-button-disabled {
+  background-color: rgb(45, 35, 60) !important;
+  color: white !important;
+}
+
+.mat-mdc-icon-button[disabled],
+.mat-mdc-icon-button.mat-mdc-button-disabled {
+  background-color: lightgrey !important;
+}
+
+.mat-mdc-unelevated-button {
+  font-family: 'Oswald' !important;
+  font-size: 10pt !important;
+}
+
+.mat-mdc-unelevated-button:not(:disabled) {
+  color: var(--mat-button-filled-label-text-color, var(--mat-sys-on-primary)) !important;
+  background-color: rgb(68, 5, 18) !important;
+}

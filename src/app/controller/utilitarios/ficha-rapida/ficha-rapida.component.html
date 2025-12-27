@@ -75,6 +75,9 @@
   <div class="row">
     <mat-card class="card-ficha">
       <div class="row mt-1 g-3">
+        <div class="col-12 label">
+          {{ 'PONTOS GASTOS: ' + pontos_gastos }}
+        </div>
         <div class="col-12 col-sm-6 col-lg-2">
           <app-attribute [attribute]="for"></app-attribute>
         </div>
@@ -96,7 +99,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-lg-2">
-          <app-attribute [attribute]="car"></app-attribute>
+          <app-attribute [attribute]="car" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
       </div>
     </mat-card>
@@ -347,5 +350,16 @@
         </div>
       </div>
     </mat-card>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 mt-2">
+      <section>
+        <div class="button-row d-flex justify-content-end">
+          <button class="me-2" mat-flat-button>Carregar</button>
+          <button class="me-2" mat-flat-button>Exportar</button>
+          <button class="me-2" mat-flat-button>Salvar</button>
+        </div>
+      </section>
+    </div>
   </div>
 </form>
