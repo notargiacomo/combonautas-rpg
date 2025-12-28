@@ -22,7 +22,7 @@ export class AttributeComponent implements OnInit {
 
   calculaPontos(novoValor: number) {
     if (novoValor === -1 || novoValor === 0) {
-      this.points += this.attribute?.comprado! + novoValor;
+      this.points += novoValor - this.attribute?.comprado!;
     } else {
       this.points -= this.calculandoValorPonto(this.attribute!.comprado!);
       this.points += this.calculandoValorPonto(novoValor);
