@@ -52,6 +52,16 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
 
   pontos_gastos: number = 0;
 
+  ataques: string[] = [];
+  proficiencias: string[] = [];
+  sentidos: string[] = [];
+  deslocamentos: [] = [];
+  resistencias: [] = [];
+  poderes: [] = [];
+  pericias: [] = [];
+  itens: [] = [];
+  magias: [] = [];
+
   ngOnInit(): void {
     this.for = { nome: 'FORÇA', comprado: 0, racial: 0, outros: 0, total: 0 };
     this.des = { nome: 'DESTREZA', comprado: 0, racial: 0, outros: 0, total: 0 };
@@ -67,10 +77,36 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
       classe: [],
       origem: [],
       devocao: [],
+      ataque: [],
+      proficiencia: [],
+      sentido: [],
+      deslocamento: [],
+      resistencia: [],
+      poder: [],
+      pericia: [],
+      item: [],
+      magia: [],
     });
   }
 
-  adicionar() {}
+  adicionar(nomeLista: string, nomeVariavel: string) {
+    const valor = this.form.get(nomeVariavel)?.value;
+
+    const lista = (this as any)[nomeLista];
+
+    if (Array.isArray(lista) && valor.length > 0) {
+      lista.push(valor);
+      this.form.get(nomeVariavel)?.setValue('');
+    }
+  }
+
+  remover(nomeLista: string, index: number) {
+    const lista = (this as any)[nomeLista];
+
+    if (Array.isArray(lista)) {
+      lista.splice(index, 1);
+    }
+  }
 
   calculaPontos(event: number) {
     this.points = event;

@@ -141,17 +141,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Ataque</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="ataque" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar ataque"
+                    type="button"
+                    (click)="adicionar('ataques', 'ataque')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Ataques</th></tr>
+                    <tr><th [colSpan]="2">Ataques</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of ataques; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('ataques', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -164,17 +184,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Proficiência</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="proficiencia" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar proficiência"
+                    type="button"
+                    (click)="adicionar('proficiencias', 'proficiencia')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Proficiências</th></tr>
+                    <tr><th [colSpan]="2">Proficiências</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of proficiencias; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('proficiencias', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -187,17 +227,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Sentido</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="sentido" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar sentido"
+                    type="button"
+                    (click)="adicionar('sentidos', 'sentido')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Sentidos</th></tr>
+                    <tr><th [colSpan]="2">Sentidos</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of sentidos; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('sentidos', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -210,17 +270,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Deslocamento</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="deslocamento" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar deslocamento"
+                    type="button"
+                    (click)="adicionar('deslocamentos', 'deslocamento')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Deslocamentos</th></tr>
+                    <tr><th [colSpan]="2">Deslocamentos</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of deslocamentos; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('deslocamentos', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -233,17 +313,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Resistência</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="resistencia" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar resistência"
+                    type="button"
+                    (click)="adicionar('resistencias', 'resistencia')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Resistências</th></tr>
+                    <tr><th [colSpan]="2">Resistências</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of resistencias; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('resistencias', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -262,17 +362,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Poder</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="poder" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar poder"
+                    type="button"
+                    (click)="adicionar('poderes', 'poder')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Poderes</th></tr>
+                    <tr><th [colSpan]="2">Poderes</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of poderes; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('poderes', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -285,17 +405,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Pericia</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="pericia" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar perícia"
+                    type="button"
+                    (click)="adicionar('pericias', 'pericia')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Perícias</th></tr>
+                    <tr><th [colSpan]="2">Perícias</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of pericias; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('pericias', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -308,17 +448,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Item</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="item" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar item"
+                    type="button"
+                    (click)="adicionar('itens', 'item')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Itens</th></tr>
+                    <tr><th [colSpan]="2">Itens</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of itens; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('itens', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
@@ -331,17 +491,37 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Magia</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
-                  <button mat-icon-button matSuffix class="btn-adicionar" aria-label="Adicionar ataque" type="button">
+                  <input formControlName="magia" matInput type="text" />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="btn-adicionar"
+                    aria-label="Adicionar magia"
+                    type="button"
+                    (click)="adicionar('magias', 'magia')">
                     <mat-icon>add</mat-icon>
                   </button>
                 </mat-form-field>
                 <table>
                   <thead>
-                    <tr><th>Magias</th></tr>
+                    <tr><th [colSpan]="2">Magias</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Teste</td></tr>
+                    @for (item of magias; track $index) {
+                      <tr>
+                        <td>{{ item }}</td>
+                        <td [width]="8">
+                          <button
+                            mat-icon-button
+                            class="btn-adicionar"
+                            style="padding: 10% !important; font-size: xx-small !important"
+                            type="button"
+                            (click)="remover('magias', $index)">
+                            <mat-icon>remove</mat-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    }
                   </tbody>
                 </table>
               </div>
