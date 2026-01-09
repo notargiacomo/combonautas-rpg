@@ -113,7 +113,7 @@
               <div class="col-sm-12 mt-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Pontos de Vida</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
+                  <input formControlName="pontos_vida" matInput type="text" />
                 </mat-form-field>
               </div>
             </div>
@@ -121,7 +121,7 @@
               <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Pontos de Mana</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
+                  <input formControlName="pontos_mana" matInput type="text" />
                 </mat-form-field>
               </div>
             </div>
@@ -129,7 +129,7 @@
               <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Defesa</mat-label>
-                  <input formControlName="nome_personagem" matInput type="text" />
+                  <input formControlName="defesa" matInput type="text" />
                 </mat-form-field>
               </div>
             </div>
@@ -536,10 +536,32 @@
       <section>
         <div class="button-row d-flex justify-content-end">
           <button class="me-2" mat-flat-button>Carregar</button>
-          <button class="me-2" mat-flat-button>Exportar</button>
+          <button class="me-2" mat-flat-button (click)="exportar()">Exportar</button>
           <button class="me-2" mat-flat-button>Salvar</button>
         </div>
       </section>
     </div>
   </div>
+
+  <input type="file" accept="image/*" (change)="onImagemPersonagem($event)" />
+  <input type="file" accept="image/*" (change)="onImagemToken($event)" />
+
+  <app-card-personagem
+    [nome_jogador]="form.value.nome_jogador"
+    [nome_personagem]="form.value.nome_personagem"
+    [raca]="form.value.raca"
+    [origem]="form.value.origem"
+    [classe]="form.value.classe"
+    [devocao]="form.value.devocao"
+    [forca]="for.total!"
+    [destreza]="des.total!"
+    [constituicao]="con.total!"
+    [inteligencia]="int.total!"
+    [sabedoria]="sab.total!"
+    [carisma]="car.total!"
+    [pontos_vida]="form.value.pontos_vida"
+    [pontos_mana]="form.value.pontos_mana"
+    [personagemImg]="personagemPreview"
+    [tokenImg]="tokenPreview"
+    #card />
 </form>

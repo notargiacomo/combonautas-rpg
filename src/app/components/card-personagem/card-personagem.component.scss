@@ -1,0 +1,189 @@
+/* CARD PRINCIPAL */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 3 / 4;
+  font-family: 'Cinzel', serif;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* CAMADAS DE IMAGEM */
+.layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+/* ORDEM DE CAMADAS */
+.fundo {
+  z-index: 1;
+}
+
+.personagem {
+  z-index: 2;
+  object-fit: cover !important;
+  margin-left: 18% !important;
+  margin-top: 23% !important;
+  width: 65% !important;
+  height: 65% !important;
+  object-position: 50% 50% !important;
+}
+
+.token {
+  top: 150px !important;
+  left: 150px !important;
+  width: 150px !important;
+  height: 150px !important;
+  // border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  z-index: 3;
+}
+
+.token-img {
+  width: 45% !important;
+  height: 45% !important;
+  margin-left: 20% !important;
+  margin-top: 9.3% !important;
+  padding-left: 0% !important;
+  padding-top: 0% !important;
+  object-fit: cover;
+  background: transparent;
+}
+
+img {
+  border: 0px solid rgb(68, 5, 18) !important; /* Moldura */
+  box-shadow: 0 0px 0px !important; /* Sombra suave */
+  padding: 0px !important; /* Espaço entre a imagem e a borda */
+  object-fit: inherit !important; /* Mantém as proporções */
+}
+
+.topo {
+  z-index: 4;
+  pointer-events: none;
+  background: transparent;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* TEXTOS */
+.campo {
+  position: absolute;
+  z-index: 5; /* acima do topo */
+  color: #f3e6c8;
+  text-align: center;
+  font-size: 7px;
+  line-height: 1.2;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* CAMPOS SUPERIORES */
+
+.nome_personagem {
+  top: 25px;
+  left: 110px;
+  width: 200px;
+  font-size: 15px !important;
+  text-align: left !important;
+}
+
+.nome_jogador {
+  top: 50px;
+  left: 90px;
+  width: 200px;
+  font-size: 10px !important;
+  text-align: right !important;
+}
+
+.raca {
+  top: 96px;
+  left: 60px;
+  width: 80px;
+}
+
+.origem {
+  top: 96px;
+  left: 130px;
+  width: 80px;
+}
+
+.classe {
+  top: 96px;
+  left: 190px;
+  width: 80px;
+}
+
+.devocao {
+  top: 96px;
+  left: 255px;
+  width: 80px;
+}
+
+/* ATRIBUTOS */
+.atributo {
+  width: 40px;
+  font-size: 16px;
+}
+
+.forca {
+  top: 130px;
+  left: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+.destreza {
+  top: 180px;
+  left: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+.constituicao {
+  top: 237px;
+  left: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+.inteligencia {
+  top: 130px;
+  right: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+.sabedoria {
+  top: 180px;
+  right: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+.carisma {
+  top: 237px;
+  right: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+/* RECURSOS */
+.pv {
+  top: 330px;
+  left: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+.pm {
+  top: 330px;
+  right: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+/* HISTÓRIA */
+.historia {
+  bottom: 90px;
+  left: 60px;
+  right: 60px;
+  font-size: 12px;
+  text-align: left;
+}

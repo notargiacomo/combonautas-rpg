@@ -1,0 +1,36 @@
+<div class="card" #ficha id="ficha-personagem">
+  <!-- FUNDO -->
+  <img class="layer fundo" [src]="fundoImg" />
+
+  <!-- PERSONAGEM -->
+  <img class="layer personagem" [src]="personagemImg" />
+
+  <!-- TOKEN -->
+  <div class="token">
+    <img class="token-img" [src]="tokenImg" />
+  </div>
+
+  <!-- TOPO -->
+  <img class="layer topo" [src]="topoImg" />
+
+  <!-- TEXTOS -->
+
+  <div class="campo nome_jogador">{{ nome_jogador }}</div>
+  <div class="campo nome_personagem">{{ nome_personagem }}</div>
+
+  <div class="campo raca">{{ raca }}</div>
+  <div class="campo origem">{{ origem }}</div>
+  <div class="campo classe">{{ classe }}</div>
+  <div class="campo devocao">{{ devocao }}</div>
+
+  <div class="campo atributo forca">{{ forca }}</div>
+  <div class="campo atributo destreza">{{ destreza }}</div>
+  <div class="campo atributo constituicao">{{ constituicao }}</div>
+
+  <div class="campo atributo inteligencia">{{ inteligencia }}</div>
+  <div class="campo atributo sabedoria">{{ sabedoria }}</div>
+  <div class="campo atributo carisma">{{ carisma }}</div>
+
+  <div class="campo atributo pv">{{ pontos_vida }}</div>
+  <div class="campo atributo pm">{{ pontos_mana }}</div>
+</div>

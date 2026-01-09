@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatCard } from '@angular/material/card';
 import { AtributoPersonagem, AttributeComponent } from '@app/components/attribute/attribute.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -9,6 +9,7 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIcon } from '@angular/material/icon';
 import { NgFor, NgIf } from '@angular/common';
+import { CardPersonagemComponent } from '@app/components/card-personagem/card-personagem.component';
 
 @Component({
   selector: 'app-ficha-rapida',
@@ -24,6 +25,7 @@ import { NgFor, NgIf } from '@angular/common';
     MatIcon,
     NgIf,
     NgFor,
+    CardPersonagemComponent,
   ],
   templateUrl: './ficha-rapida.component.html',
   styleUrl: './ficha-rapida.component.scss',
@@ -32,6 +34,8 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   points: number = 0;
   form!: FormGroup;
   isMobile = false;
+
+  @ViewChild('card') card!: CardPersonagemComponent;
 
   constructor(
     private fb: FormBuilder,
@@ -62,6 +66,27 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   itens: [] = [];
   magias: [] = [];
 
+  personagemPreview = '';
+  tokenPreview = '';
+
+  onImagemPersonagem(event: Event) {
+    const file = (event.target as HTMLInputElement).files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => (this.personagemPreview = reader.result as string);
+    reader.readAsDataURL(file);
+  }
+
+  onImagemToken(event: Event) {
+    const file = (event.target as HTMLInputElement).files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => (this.tokenPreview = reader.result as string);
+    reader.readAsDataURL(file);
+  }
+
   ngOnInit(): void {
     this.for = { nome: 'FORÇA', comprado: 0, racial: 0, outros: 0, total: 0 };
     this.des = { nome: 'DESTREZA', comprado: 0, racial: 0, outros: 0, total: 0 };
@@ -77,6 +102,9 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
       classe: [],
       origem: [],
       devocao: [],
+      defesa: [],
+      pontos_vida: [],
+      pontos_mana: [],
       ataque: [],
       proficiencia: [],
       sentido: [],
@@ -130,5 +158,9 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
       this.imagePreview = reader.result as string;
     };
     reader.readAsDataURL(file);
+  }
+
+  exportar() {
+    this.card.exportFicha();
   }
 }
