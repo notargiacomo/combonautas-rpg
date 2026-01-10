@@ -13,8 +13,27 @@
   height: 100%; /* ocupa toda a coluna */
   min-height: 285px; /* define a altura fixa do quadro */
   max-height: 285px; /* impede crescer */
-  border: 5px solid #440512; /* moldura */
-  border-radius: 8px;
+  border: 1px solid #440512 !important; /* moldura */
+  border-radius: 0px;
+  background-color: #fdf6f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.image-token-frame {
+  width: 100%;
+  height: 100%; /* ocupa toda a coluna */
+  min-height: 150px; /* define a altura fixa do quadro */
+  max-height: 150px; /* impede crescer */
+  min-width: 150px; /* define a altura fixa do quadro */
+  max-width: 150px; /* impede crescer */
+  border: 1px solid #440512 !important; /* moldura */
+  border-radius: 0px;
   background-color: #fdf6f7;
   display: flex;
   align-items: center;

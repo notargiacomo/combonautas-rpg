@@ -4,7 +4,6 @@
   width: 100%;
   max-width: 420px;
   aspect-ratio: 3 / 4;
-  font-family: 'Cinzel', serif;
   background: transparent;
   overflow: hidden;
 }
@@ -47,7 +46,7 @@
 .token-img {
   width: 45% !important;
   height: 45% !important;
-  margin-left: 20% !important;
+  margin-left: 19% !important;
   margin-top: 9.3% !important;
   padding-left: 0% !important;
   padding-top: 0% !important;
@@ -74,30 +73,77 @@ img {
 .campo {
   position: absolute;
   z-index: 5; /* acima do topo */
-  color: #f3e6c8;
+  color: #d8b29d;
   text-align: center;
   font-size: 7px;
   line-height: 1.2;
-  pointer-events: none;
-  user-select: none;
+  // pointer-events: none;
+  // user-select: none;
 }
 
 /* CAMPOS SUPERIORES */
 
+.label_nome_personagem {
+  top: 15px;
+  left: 100px;
+  width: 200px;
+  text-align: left !important;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .nome_personagem {
-  top: 25px;
+  top: 32px;
   left: 110px;
   width: 200px;
-  font-size: 15px !important;
   text-align: left !important;
+  font-weight: bold;
+
+  font-size: 14px !important;
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.label_nome_jogador {
+  top: 53px;
+  right: 50px;
+  width: 200px;
+  text-align: right !important;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
 }
 
 .nome_jogador {
-  top: 50px;
-  left: 90px;
-  width: 200px;
+  top: 48px;
+  right: 0px;
+  width: 190px;
   font-size: 10px !important;
-  text-align: right !important;
+  text-align: left !important;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.2px black; /* contorno da letra */
+}
+
+.label_raca {
+  top: 83px;
+  left: 78px;
+  width: 80px;
+  text-align: left !important;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
 }
 
 .raca {
@@ -106,10 +152,36 @@ img {
   width: 80px;
 }
 
+.label_origem {
+  top: 83px;
+  left: 143px;
+  width: 80px;
+  text-align: left !important;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .origem {
   top: 96px;
   left: 130px;
   width: 80px;
+}
+
+.label_classe {
+  top: 83px;
+  left: 215px;
+  width: 80px;
+  text-align: left !important;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
 }
 
 .classe {
@@ -118,10 +190,36 @@ img {
   width: 80px;
 }
 
+.label_classe {
+  top: 83px;
+  left: 215px;
+  width: 80px;
+  text-align: left !important;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .devocao {
   top: 96px;
   left: 255px;
   width: 80px;
+}
+
+.label_devocao {
+  top: 83px;
+  left: 282px;
+  width: 80px;
+  text-align: left !important;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
 }
 
 /* ATRIBUTOS */
@@ -136,16 +234,55 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
+.label_forca {
+  top: 154px;
+  left: 26px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .destreza {
-  top: 180px;
+  top: 181px;
   left: 45px;
   color: rgb(68, 5, 18) !important;
 }
 
+.label_destreza {
+  top: 204px;
+  left: 26px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .constituicao {
-  top: 237px;
+  top: 236px;
   left: 45px;
   color: rgb(68, 5, 18) !important;
+}
+
+.label_constituicao {
+  top: 260px;
+  left: 26px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
 }
 
 .inteligencia {
@@ -154,16 +291,55 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
+.label_inteligencia {
+  top: 154px;
+  right: 26px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .sabedoria {
-  top: 180px;
+  top: 181px;
   right: 45px;
   color: rgb(68, 5, 18) !important;
 }
 
+.label_sabedoria {
+  top: 204px;
+  right: 26px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .carisma {
-  top: 237px;
+  top: 236px;
   right: 45px;
   color: rgb(68, 5, 18) !important;
+}
+
+.label_carisma {
+  top: 260px;
+  right: 26px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
 }
 
 /* RECURSOS */
@@ -173,9 +349,161 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
+.label_pv {
+  top: 355px;
+  left: 25.5px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 9px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
 .pm {
   top: 330px;
   right: 45px;
+  color: rgb(68, 5, 18) !important;
+}
+
+.label_pm {
+  top: 355px;
+  right: 26.5px;
+  width: 80px;
+  text-align: center !important;
+
+  font-size: 8.5px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.label_defesa {
+  top: 386px;
+  left: 29px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.defesa {
+  top: 400px;
+  left: 35px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: rgb(68, 5, 18) !important;
+}
+
+.label_faixa_etaria {
+  top: 386px;
+  left: 90px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.faixa_etaria {
+  top: 400px;
+  left: 98px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: rgb(68, 5, 18) !important;
+}
+
+.idade {
+  top: 386px;
+  left: 115px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.label_caracteristicas {
+  top: 397px;
+  left: 165px;
+  width: 90px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.label_tamanho {
+  top: 386px;
+  left: 255px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.tamanho {
+  top: 400px;
+  right: 100px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: rgb(68, 5, 18) !important;
+}
+
+.label_tipo {
+  top: 386px;
+  left: 305px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.tipo {
+  top: 400px;
+  right: 40px;
+  width: 60px;
+  text-align: center !important;
+
+  font-size: 10px;
+  font-weight: bold;
+
   color: rgb(68, 5, 18) !important;
 }
 

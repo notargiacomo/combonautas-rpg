@@ -10,64 +10,96 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-lg-8">
-          <div class="row">
-            <div class="col-sm-12">
-              <mat-form-field class="text-field-formulario-edicao">
-                <mat-label>Nome do Personagem</mat-label>
-                <input formControlName="nome_personagem" matInput type="text" />
-              </mat-form-field>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <mat-form-field class="text-field-formulario-edicao">
-                <mat-label>Nome do Jogador</mat-label>
-                <input formControlName="nome_jogador" matInput type="text" />
-              </mat-form-field>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <mat-form-field class="text-field-formulario-edicao">
-                <mat-label>Raça</mat-label>
-                <input formControlName="raca" matInput type="text" />
-              </mat-form-field>
-            </div>
-            <div class="col-sm-6">
-              <mat-form-field class="text-field-formulario-edicao">
-                <mat-label>Classe</mat-label>
-                <input formControlName="classe" matInput type="text" />
-              </mat-form-field>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <mat-form-field class="text-field-formulario-edicao">
-                <mat-label>Origem</mat-label>
-                <input formControlName="origem" matInput type="text" />
-              </mat-form-field>
-            </div>
-            <div class="col-sm-6">
-              <mat-form-field class="text-field-formulario-edicao">
-                <mat-label>Devoção</mat-label>
-                <input formControlName="devocao" matInput type="text" />
-              </mat-form-field>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="image-frame" (click)="fileInput.click()">
-            <ng-container *ngIf="imagePreview; else placeholder">
-              <img [src]="imagePreview" alt="Imagem do personagem" />
+        <div class="col-2">
+          <div class="image-token-frame" (click)="fileInputToken.click()">
+            <ng-container *ngIf="tokenPreview; else placeholder">
+              <img [src]="tokenPreview" alt="Imagem do personagem" />
             </ng-container>
 
             <ng-template #placeholder>
-              <span>Clique para adicionar imagem</span>
+              <span>Clique</span>
+            </ng-template>
+            <input type="file" #fileInputToken hidden accept="image/*" (change)="onImagemToken($event)" />
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="row">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Nome do Personagem</mat-label>
+              <input formControlName="nome_personagem" matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Nome do Jogador</mat-label>
+              <input formControlName="nome_jogador" matInput type="text" />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row mt-4">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Raça</mat-label>
+              <input formControlName="raca" matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Classe</mat-label>
+              <input formControlName="classe" matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Origem</mat-label>
+              <input formControlName="origem" matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Devoção</mat-label>
+              <input formControlName="devocao" matInput type="text" />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-4">
+          <div class="image-frame" (click)="fileInputImagem.click()">
+            <ng-container *ngIf="personagemPreview; else placeholder">
+              <img [src]="personagemPreview" alt="Imagem do personagem" />
+            </ng-container>
+
+            <ng-template #placeholder>
+              <span>Clique</span>
             </ng-template>
           </div>
 
-          <input type="file" #fileInput hidden accept="image/*" (change)="onFileSelected($event)" />
+          <input type="file" #fileInputImagem hidden accept="image/*" (change)="onImagemPersonagem($event)" />
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Faixa Etária</mat-label>
+              <input formControlName="faixa_etaria" matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="col-sm-3">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Idade</mat-label>
+              <input formControlName="idade" matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="col-sm-3">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Tamanho</mat-label>
+              <input formControlName="tamanho" matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="col-sm-3">
+            <mat-form-field class="text-field-formulario-edicao">
+              <mat-label>Tipo</mat-label>
+              <input formControlName="tipo" matInput type="text" />
+            </mat-form-field>
+          </div>
         </div>
       </div>
     </mat-card>
@@ -543,9 +575,6 @@
     </div>
   </div>
 
-  <input type="file" accept="image/*" (change)="onImagemPersonagem($event)" />
-  <input type="file" accept="image/*" (change)="onImagemToken($event)" />
-
   <app-card-personagem
     [nome_jogador]="form.value.nome_jogador"
     [nome_personagem]="form.value.nome_personagem"
@@ -561,6 +590,11 @@
     [carisma]="car.total!"
     [pontos_vida]="form.value.pontos_vida"
     [pontos_mana]="form.value.pontos_mana"
+    [defesa]="form.value.defesa"
+    [faixa_etaria]="form.value.faixa_etaria"
+    [idade]="form.value.idade"
+    [tamanho]="form.value.tamanho"
+    [tipo]="form.value.tipo"
     [personagemImg]="personagemPreview"
     [tokenImg]="tokenPreview"
     #card />

@@ -66,27 +66,6 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   itens: [] = [];
   magias: [] = [];
 
-  personagemPreview = '';
-  tokenPreview = '';
-
-  onImagemPersonagem(event: Event) {
-    const file = (event.target as HTMLInputElement).files?.[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = () => (this.personagemPreview = reader.result as string);
-    reader.readAsDataURL(file);
-  }
-
-  onImagemToken(event: Event) {
-    const file = (event.target as HTMLInputElement).files?.[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = () => (this.tokenPreview = reader.result as string);
-    reader.readAsDataURL(file);
-  }
-
   ngOnInit(): void {
     this.for = { nome: 'FORÇA', comprado: 0, racial: 0, outros: 0, total: 0 };
     this.des = { nome: 'DESTREZA', comprado: 0, racial: 0, outros: 0, total: 0 };
@@ -102,6 +81,10 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
       classe: [],
       origem: [],
       devocao: [],
+      faixa_etaria: [],
+      idade: [],
+      tamanho: [],
+      tipo: [],
       defesa: [],
       pontos_vida: [],
       pontos_mana: [],
@@ -140,23 +123,24 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
     this.points = event;
   }
 
-  imagePreview: string | null = null;
+  personagemPreview = '';
+  tokenPreview = '';
 
-  onFileSelected(event: Event) {
-    const input = event.target as HTMLInputElement;
-    if (!input.files || input.files.length === 0) return;
-
-    const file = input.files[0];
-
-    if (!file.type.startsWith('image/')) {
-      alert('Selecione uma imagem válida');
-      return;
-    }
+  onImagemPersonagem(event: Event) {
+    const file = (event.target as HTMLInputElement).files?.[0];
+    if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = () => {
-      this.imagePreview = reader.result as string;
-    };
+    reader.onload = () => (this.personagemPreview = reader.result as string);
+    reader.readAsDataURL(file);
+  }
+
+  onImagemToken(event: Event) {
+    const file = (event.target as HTMLInputElement).files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => (this.tokenPreview = reader.result as string);
     reader.readAsDataURL(file);
   }
 
