@@ -59,12 +59,12 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   ataques: string[] = [];
   proficiencias: string[] = [];
   sentidos: string[] = [];
-  deslocamentos: [] = [];
-  resistencias: [] = [];
-  poderes: [] = [];
-  pericias: [] = [];
-  itens: [] = [];
-  magias: [] = [];
+  deslocamentos: string[] = [];
+  resistencias: string[] = [];
+  poderes: string[] = [];
+  pericias: string[] = [];
+  itens: string[] = [];
+  magias: string[] = [];
 
   ngOnInit(): void {
     this.for = { nome: 'FORÇA', comprado: 0, racial: 0, outros: 0, total: 0 };

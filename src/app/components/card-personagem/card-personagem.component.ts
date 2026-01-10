@@ -11,7 +11,8 @@ import * as htmlToImage from 'html-to-image';
 export class CardPersonagemComponent {
   /* IMAGENS */
   @Input() fundoImg = 'assets/img/ficha/ficha_molde_base.png';
-  @Input() topoImg = 'assets/img/ficha/ficha_molde_topo.png';
+  @Input() topoImg = 'assets/img/ficha/ficha.png';
+  @Input() versoImg = 'assets/img/ficha/ficha_molde_topo.png';
   @Input() personagemImg = '';
   @Input() tokenImg = '';
 
@@ -43,6 +44,16 @@ export class CardPersonagemComponent {
   @Input() tamanho = 0;
   @Input() tipo = 0;
   @Input() pontos_gastos = 0;
+
+  @Input() ataques: string[] = [];
+  @Input() proficiencias: string[] = [];
+  @Input() sentidos: string[] = [];
+  @Input() deslocamentos: string[] = [];
+  @Input() resistencias: string[] = [];
+  @Input() poderes: string[] = [];
+  @Input() pericias: string[] = [];
+  @Input() itens: string[] = [];
+  @Input() magias: string[] = [];
 
   /* TEXTO LIVRE */
   @Input() historia = '';

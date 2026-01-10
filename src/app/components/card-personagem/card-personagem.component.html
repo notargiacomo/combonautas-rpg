@@ -1,6 +1,6 @@
 <div class="card" #ficha id="ficha-personagem">
   <!-- FUNDO -->
-  <img class="layer fundo" [src]="fundoImg" />
+  <!-- <img class="layer fundo" [src]="fundoImg" /> -->
 
   <!-- PERSONAGEM -->
   <img class="layer personagem" [src]="personagemImg" />
@@ -74,4 +74,39 @@
 
   <div class="campo label_tipo">TIPO</div>
   <div class="campo atributo tipo">{{ tipo }}</div>
+
+  <div class="campo label_ataques">ATAQUES</div>
+  @for (item of ataques; track $index) {
+    <div class="campo ataques" [style.bottom.px]="677 - $index * 7">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_sentidos">SENTIDOS</div>
+  @for (item of sentidos; track $index) {
+    <div class="campo sentidos" [style.bottom.px]="677 - $index * 7">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_proficiencias">PROFICIÊNCIAS</div>
+  @for (item of proficiencias; track $index) {
+    <div class="campo proficiencias" [style.bottom.px]="677 - $index * 7">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_deslocamentos">DESLOCAMENTOS</div>
+  @for (item of deslocamentos; track $index) {
+    <div class="campo deslocamentos" [style.bottom.px]="677 - $index * 7">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_resistencias">RESISTÊNCIAS</div>
+  @for (item of resistencias; track $index) {
+    <div class="campo resistencias" [style.bottom.px]="80 - $index * 7">
+      {{ item }}
+    </div>
+  }
 </div>
