@@ -25,7 +25,6 @@ import { FichaPersonagem } from './ficha.personagem';
     MatLabel,
     MatIcon,
     NgIf,
-    NgFor,
     CardPersonagemComponent,
   ],
   templateUrl: './ficha-rapida.component.html',
