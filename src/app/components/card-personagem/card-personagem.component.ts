@@ -11,7 +11,7 @@ import * as htmlToImage from 'html-to-image';
 export class CardPersonagemComponent {
   /* IMAGENS */
   @Input() fundoImg = 'assets/img/ficha/ficha_molde_base.png';
-  @Input() topoImg = 'assets/img/ficha/ficha_v3.png';
+  @Input() topoImg = 'assets/img/ficha/ficha_v5.png';
   @Input() versoImg = 'assets/img/ficha/ficha_molde_topo.png';
   @Input() personagemImg = '';
   @Input() tokenImg = '';

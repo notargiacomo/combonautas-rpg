@@ -25,6 +25,11 @@
 /* ORDEM */
 .fundo {
   z-index: 1;
+  // margin-left: 17% !important;
+  // margin-top: 25% !important;
+  width: 100% !important;
+  height: 50% !important;
+  // object-position: 50% 50% !important;
 }
 
 .topo {
@@ -673,8 +678,7 @@ img {
   font-size: 12px;
   font-weight: bold;
 
-  color: #d8b29d; /* cor do preenchimento */
-  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+  color: rgb(68, 5, 18) !important;
 }
 
 .resistencias-separator {
@@ -713,8 +717,7 @@ img {
   font-size: 12px;
   font-weight: bold;
 
-  color: #d8b29d; /* cor do preenchimento */
-  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+  color: rgb(68, 5, 18) !important;
 }
 
 .pericias-separator {
@@ -753,8 +756,7 @@ img {
   font-size: 12px;
   font-weight: bold;
 
-  color: #d8b29d; /* cor do preenchimento */
-  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+  color: rgb(68, 5, 18) !important;
 }
 
 .itens-separator {
@@ -793,8 +795,7 @@ img {
   font-size: 12px;
   font-weight: bold;
 
-  color: #d8b29d; /* cor do preenchimento */
-  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+  color: rgb(68, 5, 18) !important;
 }
 
 .poderes-separator {
@@ -833,8 +834,7 @@ img {
   font-size: 12px;
   font-weight: bold;
 
-  color: #d8b29d; /* cor do preenchimento */
-  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+  color: rgb(68, 5, 18) !important;
 }
 
 .magias-separator {

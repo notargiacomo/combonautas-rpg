@@ -567,9 +567,9 @@
     <div class="col-sm-12 mt-2">
       <section>
         <div class="button-row d-flex justify-content-end">
-          <button class="me-2" mat-flat-button>Carregar</button>
+          <button class="me-2" mat-flat-button (click)="carregarXML($event)">Carregar</button>
           <button class="me-2" mat-flat-button (click)="exportar()">Exportar</button>
-          <button class="me-2" mat-flat-button>Salvar</button>
+          <button class="me-2" mat-flat-button (click)="exportarXML()">Salvar</button>
         </div>
       </section>
     </div>
