@@ -37,8 +37,8 @@
   // object-fit: cover !important;
   margin-left: 17% !important;
   margin-top: 25% !important;
-  width: 70% !important;
-  height: 40% !important;
+  width: 65% !important;
+  height: 30% !important;
   object-position: 50% 50% !important;
 }
 
@@ -518,7 +518,7 @@ img {
 }
 
 .label_ataques {
-  bottom: 685px;
+  bottom: 682px;
   left: 55px;
   width: 100px;
   text-align: left !important;
@@ -529,8 +529,19 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
+.ataques-separador {
+  bottom: 673px;
+  left: 55px;
+  width: 73px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
 .ataques {
-  bottom: 115px;
+  bottom: 674px;
   left: 55px;
   width: 100px;
   text-align: left !important;
@@ -543,7 +554,7 @@ img {
 }
 
 .label_sentidos {
-  bottom: 685px;
+  bottom: 682px;
   left: 215px;
   width: 100px;
   text-align: left !important;
@@ -554,8 +565,19 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
+.sentidos-separador {
+  bottom: 673px;
+  left: 215px;
+  width: 55px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
 .sentidos {
-  bottom: 115px;
+  bottom: 674px;
   left: 215px;
   width: 80px;
   text-align: left !important;
@@ -567,7 +589,7 @@ img {
 }
 
 .label_deslocamentos {
-  bottom: 685px;
+  bottom: 682px;
   left: 280px;
   width: 100px;
 
@@ -579,8 +601,19 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
+.deslocamentos-separador {
+  bottom: 673px;
+  left: 280px;
+  width: 70px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
 .deslocamentos {
-  bottom: 685px;
+  bottom: 674px;
   left: 280px;
   width: 100px;
   text-align: left !important;
@@ -592,7 +625,7 @@ img {
 }
 
 .label_proficiencias {
-  bottom: 685px;
+  bottom: 682px;
   left: 135px;
   width: 100px;
 
@@ -604,8 +637,19 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
+.proficiencias-separator {
+  bottom: 673px;
+  left: 135px;
+  width: 70px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
 .proficiencias {
-  bottom: 115px;
+  bottom: 674px;
   left: 135px;
   width: 120px;
   text-align: left !important;
@@ -617,10 +661,37 @@ img {
 }
 
 .label_resistencias {
-  bottom: 535px;
-  left: 55px;
+  bottom: 525px;
+  left: 70px;
   width: 100px;
 
+  text-align: left !important;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.resistencias-separator {
+  bottom: 516px;
+  left: 70px;
+  width: 100px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
+.resistencias {
+  bottom: 512px;
+  left: 70px;
+  width: 100px;
   text-align: left !important;
 
   font-size: 8px;
@@ -629,13 +700,161 @@ img {
   color: rgb(68, 5, 18) !important;
 }
 
-.resistencias {
-  bottom: 80px;
-  left: 280px;
+.label_pericias {
+  bottom: 460px;
+  left: 70px;
+  width: 100px;
+
+  text-align: left !important;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.pericias-separator {
+  bottom: 451px;
+  left: 70px;
+  width: 100px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
+.pericias {
+  bottom: 447px;
+  left: 70px;
   width: 100px;
   text-align: left !important;
 
-  font-size: 6px;
+  font-size: 8px;
+  font-weight: bold;
+
+  color: rgb(68, 5, 18) !important;
+}
+
+.label_itens {
+  bottom: 260px;
+  left: 70px;
+  width: 100px;
+
+  text-align: left !important;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.itens-separator {
+  bottom: 251px;
+  left: 70px;
+  width: 100px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
+.itens {
+  bottom: 247px;
+  left: 70px;
+  width: 100px;
+  text-align: left !important;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  color: rgb(68, 5, 18) !important;
+}
+
+.label_poderes {
+  bottom: 525px;
+  left: 230px;
+  width: 100px;
+
+  text-align: left !important;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.poderes-separator {
+  bottom: 516px;
+  left: 230px;
+  width: 100px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
+.poderes {
+  bottom: 512px;
+  left: 230px;
+  width: 100px;
+  text-align: left !important;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  color: rgb(68, 5, 18) !important;
+}
+
+.label_magias {
+  bottom: 290px;
+  left: 230px;
+  width: 100px;
+
+  text-align: left !important;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #d8b29d; /* cor do preenchimento */
+  -webkit-text-stroke: 0.5px black; /* contorno da letra */
+}
+
+.magias-separator {
+  bottom: 281px;
+  left: 230px;
+  width: 100px;
+  height: 1px;
+  margin: 4px 0 6px 0;
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(68, 5, 18) !important;
+  opacity: 1 !important;
+}
+
+.magias {
+  bottom: 277px;
+  left: 230px;
+  width: 100px;
+  text-align: left !important;
+
+  font-size: 8px;
   font-weight: bold;
 
   color: rgb(68, 5, 18) !important;

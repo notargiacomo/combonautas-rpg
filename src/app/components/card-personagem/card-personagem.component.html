@@ -76,36 +76,73 @@
   <div class="campo atributo tipo">{{ tipo }}</div>
 
   <div class="campo label_ataques">ATAQUES</div>
+  <hr class="campo ataques-separador" />
   @for (item of ataques; track $index) {
-    <div class="campo ataques" [style.bottom.px]="677 - $index * 7">
+    <div class="campo ataques" [style.bottom.px]="668 - $index * 7">
       {{ item }}
     </div>
   }
 
   <div class="campo label_sentidos">SENTIDOS</div>
+  <hr class="campo sentidos-separador" />
   @for (item of sentidos; track $index) {
-    <div class="campo sentidos" [style.bottom.px]="677 - $index * 7">
+    <div class="campo sentidos" [style.bottom.px]="668 - $index * 7">
       {{ item }}
     </div>
   }
 
   <div class="campo label_proficiencias">PROFICIÊNCIAS</div>
+  <hr class="campo proficiencias-separator" />
   @for (item of proficiencias; track $index) {
-    <div class="campo proficiencias" [style.bottom.px]="677 - $index * 7">
+    <div class="campo proficiencias" [style.bottom.px]="668 - $index * 7">
       {{ item }}
     </div>
   }
 
   <div class="campo label_deslocamentos">DESLOCAMENTOS</div>
+  <hr class="campo deslocamentos-separador" />
   @for (item of deslocamentos; track $index) {
-    <div class="campo deslocamentos" [style.bottom.px]="677 - $index * 7">
+    <div class="campo deslocamentos" [style.bottom.px]="668 - $index * 7">
       {{ item }}
     </div>
   }
 
   <div class="campo label_resistencias">RESISTÊNCIAS</div>
+  <hr class="campo resistencias-separator" />
   @for (item of resistencias; track $index) {
-    <div class="campo resistencias" [style.bottom.px]="80 - $index * 7">
+    <div class="campo resistencias" [style.bottom.px]="511 - $index * 11">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_pericias">PERÍCIAS</div>
+  <hr class="campo pericias-separator" />
+  @for (item of pericias; track $index) {
+    <div class="campo pericias" [style.bottom.px]="446 - $index * 11">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_itens">EQUIPAMENTOS</div>
+  <hr class="campo itens-separator" />
+  @for (item of itens; track $index) {
+    <div class="campo itens" [style.bottom.px]="246 - $index * 11">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_poderes">PODERES</div>
+  <hr class="campo poderes-separator" />
+  @for (item of poderes; track $index) {
+    <div class="campo poderes" [style.bottom.px]="511 - $index * 11">
+      {{ item }}
+    </div>
+  }
+
+  <div class="campo label_magias">MAGIAS</div>
+  <hr class="campo magias-separator" />
+  @for (item of magias; track $index) {
+    <div class="campo magias" [style.bottom.px]="276 - $index * 11">
       {{ item }}
     </div>
   }
