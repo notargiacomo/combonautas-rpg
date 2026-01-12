@@ -523,18 +523,21 @@ img {
 }
 
 .label_ataques {
-  bottom: 682px;
-  left: 55px;
+  bottom: 525px;
+  left: 70px;
+
   width: 100px;
   text-align: left !important;
 
-  font-size: 8px;
+  font-size: 12px;
   font-weight: bold;
 
   color: rgb(68, 5, 18) !important;
 }
 
 .ataques-separador {
+  bottom: 516px;
+  left: 70px;
   bottom: 673px;
   left: 55px;
   width: 73px;
@@ -587,7 +590,7 @@ img {
   width: 80px;
   text-align: left !important;
 
-  font-size: 6px;
+  font-size: 8px;
   font-weight: bold;
 
   color: rgb(68, 5, 18) !important;
@@ -595,7 +598,7 @@ img {
 
 .label_deslocamentos {
   bottom: 682px;
-  left: 280px;
+  left: 285px;
   width: 100px;
 
   text-align: left !important;
@@ -608,7 +611,7 @@ img {
 
 .deslocamentos-separador {
   bottom: 673px;
-  left: 280px;
+  left: 285px;
   width: 70px;
   height: 1px;
   margin: 4px 0 6px 0;
@@ -619,11 +622,11 @@ img {
 
 .deslocamentos {
   bottom: 674px;
-  left: 280px;
+  left: 285px;
   width: 100px;
   text-align: left !important;
 
-  font-size: 6px;
+  font-size: 8px;
   font-weight: bold;
 
   color: rgb(68, 5, 18) !important;
@@ -659,23 +662,20 @@ img {
   width: 120px;
   text-align: left !important;
 
-  font-size: 6px;
+  font-size: 8px;
   font-weight: bold;
 
   color: rgb(68, 5, 18) !important;
 }
 
 .label_resistencias {
-  bottom: 525px;
-  left: 70px;
+  bottom: 682px;
+  left: 55px;
   width: 100px;
 
   text-align: left !important;
 
   font-size: 8px;
-  font-weight: bold;
-
-  font-size: 12px;
   font-weight: bold;
 
   color: rgb(68, 5, 18) !important;
@@ -694,7 +694,7 @@ img {
 
 .resistencias {
   bottom: 512px;
-  left: 70px;
+  left: 55px;
   width: 100px;
   text-align: left !important;
 
@@ -705,7 +705,7 @@ img {
 }
 
 .label_pericias {
-  bottom: 460px;
+  bottom: 420px;
   left: 70px;
   width: 100px;
 
@@ -721,7 +721,7 @@ img {
 }
 
 .pericias-separator {
-  bottom: 451px;
+  bottom: 411px;
   left: 70px;
   width: 100px;
   height: 1px;
@@ -744,7 +744,7 @@ img {
 }
 
 .label_itens {
-  bottom: 260px;
+  bottom: 240px;
   left: 70px;
   width: 100px;
 
@@ -760,7 +760,7 @@ img {
 }
 
 .itens-separator {
-  bottom: 251px;
+  bottom: 231px;
   left: 70px;
   width: 100px;
   height: 1px;
