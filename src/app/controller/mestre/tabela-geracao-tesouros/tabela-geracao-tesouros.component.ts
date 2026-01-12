@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
@@ -17,6 +17,9 @@ import { TreasureService } from './generate-factory/service/treasure.service';
 import { Console } from 'console';
 import { FractionPipe } from '@app/pipes/fraction.pipe';
 
+import * as htmlToImage from 'html-to-image';
+import { MatIcon } from '@angular/material/icon';
+
 @Component({
   selector: 'app-tabela-geracao-tesouros',
   imports: [
@@ -33,6 +36,7 @@ import { FractionPipe } from '@app/pipes/fraction.pipe';
     MatCardContent,
     NgIf,
     FractionPipe,
+    MatIcon,
   ],
   templateUrl: './tabela-geracao-tesouros.component.html',
   styleUrl: './tabela-geracao-tesouros.component.scss',
@@ -97,6 +101,7 @@ export class TabelaGeracaoTesourosComponent {
       this.detalhesTesouroItens! = retorno.report!;
     } else {
       this.detalhesTesouroItens! = `
+      <label><b>FÓRMULA:</b> ${linhaItemNivel.valor}</label><br />
       <label><b>RESULTADO D100:</b> ${random}</label><br />
       <label><b>ITEM:</b> N/A </label>
       `;
@@ -122,10 +127,62 @@ export class TabelaGeracaoTesourosComponent {
         this.detalhesTesouroItens! =
           this.detalhesTesouroItens +
           `<br /><br />
+      <label><b>FÓRMULA:</b> ${linhaItemNivelDB.valor}</label><br />
       <label><b>RESULTADO D100:</b> ${randomDB}</label><br />
       <label><b>ITEM:</b> N/A </label>
       `;
       }
     }
+  }
+
+  @ViewChild('tesouro', { static: false })
+  fichaRef!: ElementRef<HTMLDivElement>;
+
+  /* ==========================
+       MÉTODO ORQUESTRADOR
+       ========================== */
+  async downloadTesouro() {
+    const elemento = this.pegarElementoDaFicha();
+    const imagem = await this.converterElementoEmImagem(elemento);
+    this.dispararDownload(imagem);
+  }
+
+  /* ==========================
+       PASSO 1
+       ========================== */
+  private pegarElementoDaFicha(): HTMLDivElement {
+    return this.fichaRef.nativeElement;
+  }
+
+  /* ==========================
+       PASSO 2
+       ========================== */
+  private async converterElementoEmImagem(elemento: HTMLDivElement): Promise<string> {
+    const width = elemento.scrollWidth;
+    const height = elemento.scrollHeight;
+
+    return await htmlToImage.toPng(elemento, {
+      width,
+      height,
+      pixelRatio: 2,
+      backgroundColor: 'transparent',
+      cacheBust: true,
+      style: {
+        transform: 'scale(1)',
+        transformOrigin: 'top left',
+        width: `${width}px`,
+        height: `${height}px`,
+      },
+    });
+  }
+
+  /* ==========================
+       PASSO 3
+       ========================== */
+  private dispararDownload(dataUrl: string) {
+    const link = document.createElement('a');
+    link.download = 'tesouro.png';
+    link.href = dataUrl;
+    link.click();
   }
 }

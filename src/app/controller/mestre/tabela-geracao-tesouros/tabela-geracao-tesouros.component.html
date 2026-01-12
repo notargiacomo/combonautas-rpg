@@ -45,7 +45,7 @@
           </section>
         </div>
       </div>
-      <div class="row">
+      <div #tesouro class="row">
         <div class="row mb-2">
           <div class="col-sm-12">
             <mat-card class="card-game" *ngIf="formulario.get('nivel')?.value && formulario.get('tipo')?.value">
@@ -54,10 +54,25 @@
               </mat-card-title>
               <mat-card-content>
                 <div class="content mt-2">
-                  <div class="container">
+                  @if (detalhesTesouroDinheiro) {
                     <div class="row">
-                      <div class="col-sm-6" [innerHTML]="detalhesTesouroDinheiro"></div>
-                      <div class="col-sm-6" [innerHTML]="detalhesTesouroItens"></div>
+                      <div class="col-sm-12 d-flex justify-content-end">
+                        <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                          <mat-icon>download</mat-icon>
+                        </span>
+                      </div>
+                    </div>
+                  }
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h5><b>DINHEIRO</b></h5>
+                      <hr />
+                      <div [innerHTML]="detalhesTesouroDinheiro"></div>
+                    </div>
+                    <div class="col-sm-6">
+                      <h5><b>ITENS</b></h5>
+                      <hr />
+                      <div [innerHTML]="detalhesTesouroItens"></div>
                     </div>
                   </div>
                 </div>

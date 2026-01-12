@@ -99,6 +99,7 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
     let labelEquipamento = linha.valor.includes('2D') ? linha.valor + '(escolha um)' : linha.valor;
 
     return `
+      <label><b>FÓRMULA:</b> ${linha.valor}</label><br />
       <label><b>RESULTADO D100:</b> ${random}</label><br />
       <label><b>${labelEquipamento}:</b></label>
       <ul>
