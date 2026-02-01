@@ -13101,7 +13101,7 @@ export class MagiaData {
         id: 148,
         nome: 'Animar Objetos',
         descricao: `O sangue do alvo aquece até entrar em ebulição. Quando a magia é lançada, e no início de cada um de seus turnos, o alvo sofre 4d8 pontos de dano de fogo e fica enjoado por uma rodada (Fortitude reduz o dano à metade e evita a condição). Se o alvo passar em dois testes de Fortitude seguidos, dissipa a magia. Se o alvo for reduzido a 0 PV pelo dano desta magia, seu corpo explode, matando-o e causando 6d6 pontos de dano de fogo em todas as criaturas a até 3m (Reflexos reduz à metade). Essa magia não afeta criaturas sem sangue, como construtos ou mortos-vivos.`,
-        escola: EscolasMagia.NECROMANCIA,
+        escola: EscolasMagia.TRANSMUTACAO,
         tipo: TipoMagia.ARCANA,
         circulo: CirculoMagia.TERCEIRO_CIRCULO,
         custo: 6,
@@ -13118,7 +13118,7 @@ export class MagiaData {
         descricao_duracao: '',
         pericia_resistencia: Resistencia.FORTITUDE,
         maneira_resistencia: ResistenciaMagia.PARCIAL,
-        tracos: [TipoMagia.ARCANA, EscolasMagia.NECROMANCIA, CirculoMagia.TERCEIRO_CIRCULO],
+        tracos: [TipoMagia.ARCANA, EscolasMagia.TRANSMUTACAO, CirculoMagia.TERCEIRO_CIRCULO],
         referencias: Referencia.BASICO,
         paginas: '193',
         aprimoramentos: [

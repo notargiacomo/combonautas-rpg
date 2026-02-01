@@ -1,7 +1,7 @@
 <app-card-search
   name="Magias"
   [service]="service"
-  [searchColumn]="['nome', 'descrição', 'livro']"
+  [searchColumn]="['nome', 'tipo', 'circulo', 'escola', 'execucao', 'alcance', 'duracao', 'descricao']"
   [colsGrid]="2"
   [rowHeight]="900"
   gutterSizeGrid="10px">
@@ -70,7 +70,7 @@
               </div>
               @for (aprimoramento of item.aprimoramentos; track aprimoramento.id) {
                 <div class="row">
-                  <div class="d-flex flex-wrap gap-2">
+                  <!-- <div class="d-flex flex-wrap gap-2">
                     <button class="btn btn-sm btn-outline-secondary" disabled>
                       {{ 'Execução: ' + aprimoramento.execucao }}
                     </button>
@@ -95,7 +95,7 @@
                         {{ traco_aprimoramento }}
                       </button>
                     }
-                  </div>
+                  </div> -->
                   <div class="col-sm-12 mt-2" [innerHTML]="aprimoramento.descricao"></div>
                   <div class="col-sm-6 mt-4 d-flex justify-content-end"></div>
                   <hr />

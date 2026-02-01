@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Magia } from '../model/magia';
 import { AbstractService } from './abstract.service';
 
+export const FILTROS_MAGIA = ['nome', 'tipo', 'circulo', 'escola', 'execucao', 'alcance', 'duracao', 'descricao'];
 @Injectable({
   providedIn: 'root',
 })
@@ -18,6 +19,6 @@ export class MagiaService extends AbstractService {
 
   consult(filtro: any): Observable<Magia[]> {
     let listas = this.http.get<Magia[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'regiao', 'descricao', 'referencias']);
+    return this.filtrar(filtro, listas, FILTROS_MAGIA);
   }
 }
