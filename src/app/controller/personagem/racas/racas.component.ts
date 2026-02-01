@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { CardSearchComponent } from '@app/components/card-search/card-search.component';
+import { Raca } from '@app/model/raca';
 import { RacaFacadeService } from '@app/service/raca.facade.service';
 
 @Component({
@@ -14,4 +15,11 @@ import { RacaFacadeService } from '@app/service/raca.facade.service';
 })
 export class RacasComponent {
   constructor(readonly racaService: RacaFacadeService) {}
+
+  carregarAbas(raca: Raca) {
+    this.racaService.abrirHistoria(raca);
+    this.racaService.recuperaHabilidades(raca);
+    this.racaService.recuperaPoderes(raca);
+    return raca;
+  }
 }

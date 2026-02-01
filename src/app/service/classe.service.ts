@@ -1,11 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { TipoPoder } from '@app/enum/tipo.poder.enum';
 import { Classe } from '@app/model/classe';
-import { forkJoin, map, Observable, of, switchMap } from 'rxjs';
+import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
-import { PoderService } from './poder.service';
 
+export const FILTROS_CLASSE = ['nome', 'descricao'];
 @Injectable({
   providedIn: 'root',
 })

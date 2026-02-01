@@ -4,6 +4,7 @@ import { forkJoin, map, Observable, of, switchMap } from 'rxjs';
 import { Raca } from '../model/raca';
 import { AbstractService } from './abstract.service';
 
+export const FILTROS_RACA = ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descricao'];
 @Injectable({
   providedIn: 'root',
 })
@@ -14,40 +15,19 @@ export class RacaService extends AbstractService {
 
   listar(filtro: any): Observable<Raca[]> {
     let listas = this.http.get<Raca[]>(this.url);
-
-    return this.filtrar(
-      filtro,
-      listas.pipe(
-        switchMap((racas: Raca[]) => {
-          const requests = racas.map(raca =>
-            this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
-              map(historia => ({
-                ...raca,
-                historia,
-              }))
-            )
-          );
-          return forkJoin(requests);
-        })
-      ),
-      ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descricao']
-    );
+    return this.filtrar(filtro, listas, FILTROS_RACA);
   }
 
   consult(filtro: any): Observable<Raca[]> {
-    let listas = this.http.get<Raca[]>(this.url).pipe(
-      switchMap((racas: Raca[]) => {
-        const requests = racas.map(raca =>
-          this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' }).pipe(
-            map(historia => ({
-              ...raca,
-              historia,
-            }))
-          )
-        );
-        return forkJoin(requests);
-      })
-    );
-    return this.filtrar(filtro, listas, ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descricao']);
+    let listas = this.http.get<Raca[]>(this.url);
+    return this.filtrar(filtro, listas, FILTROS_RACA);
+  }
+
+  getHistoria(raca: Raca): Observable<string> {
+    if (!raca.nome_arquivo_historia) {
+      return of('');
+    }
+
+    return this.http.get(`assets/doc/${raca.nome_arquivo_historia}.txt`, { responseType: 'text' });
   }
 }

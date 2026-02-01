@@ -1,9 +1,8 @@
-import { Classe } from "./classe";
-import { Deus } from "./deus";
-import { Raca } from "./raca";
+import { Classe } from './classe';
+import { Deus } from './deus';
+import { Raca } from './raca';
 
 export class Poder {
-
   id!: number;
   ids_poder_pai?: number[];
   nome?: string;
@@ -38,5 +37,4 @@ export class Poder {
   referencias?: string;
   paginas?: string;
   auxiliar?: string;
-
 }

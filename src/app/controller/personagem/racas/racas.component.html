@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="content mt-2">
-          <mat-tab-group>
+          <mat-tab-group (click)="carregarAbas(item)">
             <mat-tab label="Imagem">
               <img [src]="item.imagem" [alt]="item.nome" />
             </mat-tab>

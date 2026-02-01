@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { CardSearchComponent } from '@app/components/card-search/card-search.component';
+import { Classe } from '@app/model/classe';
 import { ClasseFacadeService } from '@app/service/classe.facade.service';
 import { ClasseService } from '@app/service/classe.service';
 
@@ -15,4 +16,10 @@ import { ClasseService } from '@app/service/classe.service';
 })
 export class ClassesComponent {
   constructor(readonly classesService: ClasseFacadeService) {}
+
+  carregarAbas(classe: Classe) {
+    this.classesService.recuperaHabilidades(classe);
+    this.classesService.recuperaPoderes(classe);
+    return classe;
+  }
 }

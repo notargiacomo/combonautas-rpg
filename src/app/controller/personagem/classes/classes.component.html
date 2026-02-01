@@ -16,7 +16,7 @@
             {{ item.referencias + ', pag. ' + item.paginas }}
           </div>
         </div>
-        <mat-tab-group>
+        <mat-tab-group (click)="carregarAbas(item)">
           <mat-tab label="Imagem">
             <img [src]="item.imagem" [alt]="item.nome" style="height: 700px !important" />
           </mat-tab>
@@ -54,7 +54,7 @@
               </div>
             </div>
           </mat-tab>
-          <mat-tab label="Poderes" *ngIf="item.poderes && item.poderes.length > 0">
+          <mat-tab label="Poderes">
             <div class="row">
               <h5>Poderes de Classe</h5>
               <p>(ps: Poderes Mágicos são marcados com o símbolo:✨)</p>
