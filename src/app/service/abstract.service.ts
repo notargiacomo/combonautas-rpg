@@ -51,4 +51,12 @@ export class AbstractService {
       })
     );
   }
+
+  private normalizar(valor: string): string {
+    return valor
+      .toLowerCase()
+      .normalize('NFD') // separa acentos
+      .replace(/[\u0300-\u036f]/g, '') // remove acentos
+      .replace(/[^a-z0-9]/g, ''); // remove tudo que não é letra ou número
+  }
 }
