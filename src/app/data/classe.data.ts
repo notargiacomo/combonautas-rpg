@@ -3368,6 +3368,182 @@ export class ClasseData {
         referencias: Referencia.DB,
         paginas: '199, pag. 78 à 81',
       },
+      {
+        id: 35,
+        nome: 'Místico',
+        descricao_classe: `
+        <h5>Características de Classe</h5>
+        <p><b>Pontos de Vida.</b> Um místico começa com 16 pontos de vida (+ Constituição) e ganha 4 PV (+ Constituição) por nível.</p>
+        <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
+        <p><b>Perícias.</b> Misticismo (Int) e Vontade (Sab), mais 4 a sua escolha entre Acrobacia (Des), Atletismo (For), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des) e Reflexos (Des).</p>
+        <p><b>Proficiências.</b> Armas marciais.</p>
+        <table>
+            <thead>
+              <tr>
+                <th>Nível</th>
+                <th>Habilidade de Classe</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr><td>1º</td><td>Afinidade, Ataque elemental +1d8, Magias (1º Círculo)</td></tr>
+              <tr><td>2º</td><td>Língua primordial, Poder de místico</td></tr>
+              <tr><td>3º</td><td>Poder de místico, Tradição oral +2</td></tr>
+              <tr><td>4º</td><td>Poder de místico, Sexto sentido</td></tr>
+              <tr><td>5º</td><td>Poder de místico</td></tr>
+              <tr><td>6º</td><td>Ataque elemental +2d8, Magias (2º Círculo), Poder de místico</td></tr>
+              <tr><td>7º</td><td>Poder de místico</td></tr>
+              <tr><td>8º</td><td>Poder de místico</td></tr>
+              <tr><td>9º</td><td>Poder de místico, Tradição oral +4</td></tr>
+              <tr><td>10º</td><td>Ataque elemental +3d8, Magias (3º Círculo), Poder de místico</td></tr>
+              <tr><td>11º</td><td>Poder de místico</td></tr>
+              <tr><td>12º</td><td>Poder de místico</td></tr>
+              <tr><td>13º</td><td>Poder de místico, Tradição oral +6</td></tr>
+              <tr><td>14º</td><td>Ataque elemental +4d8, Magias (4º Círculo), Poder de místico</td></tr>
+              <tr><td>15º</td><td>Poder de místico</td></tr>
+              <tr><td>16º</td><td>Poder de místico</td></tr>
+              <tr><td>17º</td><td>Poder de místico</td></tr>
+              <tr><td>18º</td><td>Poder de místico</td></tr>
+              <tr><td>19º</td><td>Poder de místico</td></tr>
+              <tr><td>20º</td><td>Comunhão suprema, Poder de místico</td></tr>
+            </tbody>
+          </table>
+`,
+        ha_informacoes_adicionais: true,
+        ha_poderes_db: true,
+        ha_complicacoes: false,
+        descricao_informacoes: `<div class="row">
+<div class="col-sm-12 text-justify">
+<h5>Ditames</h5>
+<p>O místico expande suas magias conhecidas através de ditames, conjuntos temáticos fechados de conhecimento mágico. Ele não tem acesso a poderes como Conhecimento Mágico, do arcanista, e precisa seguir padrões e tradições estabelecidos há muito tempo e passados de geração a geração.</p>
+<p>Quando você adquire um poder de ditame, se já conhece uma das magias fornecidas pelo poder, pode trocá-la por outra magia de mesmo círculo, desde que essa magia seja de uma de suas escolas permitidas.</p>
+<p>Quando você lança uma magia aprendida por meio de um poder de ditame, se estiver em contato com uma expressão natural do seu elemento de volume equivalente a uma criatura Média, o custo dessa magia é reduzido em –1 PM.</p>
+<hr>
+<h5>Manifestações Elementais</h5>
+<p>Manifestações elementais são pequenos espíritos ligados a um tipo de energia elemental. Um místico que tenha realizado o ritual apropriado, pode se conectar a uma dessas manifestações e invocá-la em seu auxílio. Em termos de regras, manifestações elementais são parceiros que usam as regras a seguir.</p>
+<ul>
+    <li>Para usar uma manifestação elemental você precisa primeiro gastar uma ação de movimento e 2 PM para evocá-la. Para isso, você precisa de acesso a uma expressão natural do elemento correspondente. Uma manifestação evocada desaparece no fim da cena.</li>
+    <li>Em seu turno, você pode dar uma ordem para a manifestação usando uma ação de movimento. As ações que cada manifestação pode executar são apresentadas em sua descrição. Se a ação tiver um custo em PM, ele deve ser pago por você.</li>
+    <li>Para outros usos criativos do parceiro, caso a manifestação precise realizar um teste, considere um modificador igual ao círculo máximo de magias que você pode lançar. Quando ela faz um teste, você pode gastar uma quantidade de PM limitada por sua Sabedoria. Para cada PM gasto, a manifestação recebe +2 nesse teste. Se a situação for condizente com a natureza do parceiro (como pedir que uma manifestação da água apague um incêndio ou que uma manifestação da terra erga algo pesado), ela recebe +5 nesse teste.</li>
+</ul>
+
+<b>Água</b>
+<p><i>Bolha.</i> O elemental envolve seu corpo como uma bolha de água. Você recebe +4 na Defesa e pode respirar normalmente sob a água por uma rodada.</p>
+<p><i>Empurrão Hidráulico (2 PM).</i> O elemental dispara um jato de água pressurizado em um alvo em alcance curto. O alvo sofre 3d6 pontos de dano de impacto e fica caído (Fortitude CD Sab reduz o dano à metade e evita a condição).</p>
+<p><i>Surfar.</i> Uma criatura em alcance curto recebe deslocamento de natação 12m por uma rodada.</p>
+
+<b>Ar</b>
+<p><i>Barreira Eólica.</i> Você recebe camuflagem leve contra ataques à distância e +2 em Reflexos por uma rodada.</p>
+<p><i>Conduzir ao Solo.</i> Ao contrário de outras ações do elemental, esta é uma reação; você pode lançar Queda Suave, mas apenas em você mesmo.</p>
+<p><i>Planar (2 PM).</i> Uma criatura em alcance curto recebe deslocamento de voo 12m por uma rodada.</p>
+
+<b>Fogo</b>
+<p><i>Aura de Calor.</i> Até sua próxima rodada, inimigos que terminarem seus turnos adjacentes a você
+sofrem 2d6+2 pontos de dano de fogo.</p>
+<p><i>Chicote de Chamas (2 PM).</i> O elemental acerta uma criatura em alcance curto com um jato de chamas que causa 4d6 pontos de dano de fogo (Reflexos CD Sab reduz à metade).</p>
+<p><i>Labareda Propulsora.</i> Uma criatura em alcance curto recebe +10 em testes de Atletismo para correr e saltar por uma rodada.</p>
+
+<b>Luz</b>
+<p><i>Brilhar.</i> Emite luz como uma tocha. Uma criatura dentro do alcance curto fica ofuscada por 1 rodada (Vontade CD Sab nega).</p>
+<p><i>Curar (2 PM).</i> Uma criatura dentro do alcance curto cura 4d8 pontos de vida.</p>
+<p><i>Cegar.</i> Uma criatura dentro do alcance curto fica cega por 1 rodada (Vontade CD Sab nega).</p>
+
+<b>Terra</b>
+<p><i>Arremesso de Rocha (2 PM).</i> O elemental arremessa um pedregulho contra um alvo em alcance médio, causando 5d6 pontos de dano de impacto (Reflexos CD Sab evita).</p>
+<p><i>Muralha.</i> Você recebe resistência a corte, impacto e perfuração 10 por uma rodada.</p>
+<p><i>Tunelar.</i> Uma criatura dentro do alcance curto recebe deslocamento de escalada (12m) ou escavar (9m) por uma rodada.</p> 
+
+<b>Trevas</b>
+<p><i>Manto Sombrio.</i> Uma criatura dentro do alcance curto recebe +10 em testes de Furtividade para se esconder por 1 rodada.</p>
+<p><i>Tentáculo Obscuro (2 PM).</i> O elemental agarra uma criatura dentro do alcance médio com seu tentáculo. Faça um teste de Misticismo para agarrar, com um bônus igual ao círculo máximo de magias
+que pode lançar.</p>
+<p><i>Apavorar.</i> Uma criatura dentro do alcance curto fica abalada (Vontade CD Sab nega).</p> 
+
+<hr>
+
+<h5>Expressão Natural dos Elementos</h5>
+<p>Alguns poderes fazem referência a expressões naturais de um elemento. Isso quer dizer uma manifestação do elemento que ocorra sem que seja alimentada de magia. Uma fogueira pode servir como uma expressão natural de fogo mesmo que tenha sido acesa com uma Bola de Fogo, mas um ber’baram ou outro elemental não poderia, bem como as chamas da magia Muralha Elemental. Para luz, expressões naturais são ambientes banhados diretamente pela luz do sol e para trevas são ambientes completamente
+escuros. Para água, corpos de água como poças, lagos e rios são expressões naturais desde que estejam limpos. Para terra, montanhas e extensões de terra fértil são expressões naturais. Para ar, ambientes
+com ar puro servem como expressões naturais; normalmente, em grandes cidades, tais ambientes são encontrados apenas em altitudes elevadas.</p>
+
+<hr>
+
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Tabela 1-3: Os Seis Elementos</caption>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Tipo de Dano</th>
+      <th>Escola de Magia</th>
+      <th>Perícia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Água</td>
+      <td>Frio</td>
+      <td>Encantamento</td>
+      <td>Diplomacia (Car)</td>
+    </tr>
+    <tr>
+      <td>Ar</td>
+      <td>Eletricidade</td>
+      <td>Ilusão</td>
+      <td>Enganação (Car)</td>
+    </tr>
+    <tr>
+      <td>Fogo</td>
+      <td>Fogo</td>
+      <td>Transmutação</td>
+      <td>Acrobacia (Des)</td>
+    </tr>
+    <tr>
+      <td>Luz</td>
+      <td>Luz</td>
+      <td>Abjuração</td>
+      <td>Cura (Sab)</td>
+    </tr>
+    <tr>
+      <td>Terra</td>
+      <td>Ácido</td>
+      <td>Convocação</td>
+      <td>Investigação (Int)</td>
+    </tr>
+    <tr>
+      <td>Trevas</td>
+      <td>Trevas</td>
+      <td>Necromancia</td>
+      <td>Intimidação (Car)</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</div>
+        `,
+        fator_vida: 2,
+        fator_mana: 6,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES],
+        pericia_obrigatoria: 'Vontade',
+        pericia_escolha_entre_duas: ['Misticismo'],
+        pericias_escolha_grupo: [
+          'Conhecimento',
+          'Diplomacia',
+          'Enganação',
+          'Guerra',
+          'Iniciativa',
+          'Intimidação',
+          'Intuição',
+          'Investigação',
+          'Nobreza',
+          'Ofício',
+          'Percepção',
+        ],
+        numero_pericias_escolha_grupo: 2,
+        imagem: 'assets/img/classe_mistico.png',
+        referencias: Referencia.DB,
+        paginas: '199, pag. 82 à 89',
+      },
     ];
   }
 }

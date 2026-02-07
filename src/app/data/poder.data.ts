@@ -12343,17 +12343,17 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 1,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1253,
         nome: 'Ataque Elemental',
-        descricao: `Quando faz um ataque corpo a corpo, você pode gastar uma quantidade de PM limitada pelo círculo máximo de magia que pode lançar para infundir a arma com energia elemental. Cada PM gasto concede +1 no teste de ataque e +1d8 pontos de dano do tipo associado a sua Afinidade.`,
+        descricao: `Quando faz um ataque corpo a corpo, você pode gastar uma quantidade de PM limitada pelo círculo máximo de magia que pode lançar para infundir a arma com energia elemental. Cada PM gasto concede +1 no teste de ataque e +1d8 pontos de dano do tipo associado a sua Afinidade. ✨`,
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 1,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1254,
@@ -12364,7 +12364,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 1,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1255,
@@ -12374,7 +12374,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1256,
@@ -12384,7 +12384,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 3,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1257,
@@ -12394,7 +12394,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 4,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1258,
@@ -12408,7 +12408,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 6,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1259,
@@ -12418,7 +12418,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 20,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1260,
@@ -12428,7 +12428,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1261,
@@ -12438,7 +12438,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 12,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1262,
@@ -12448,29 +12448,29 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1263,
         nome: 'Armadura Rochosa',
-        descricao: `Você pode gastar uma ação de movimento e 2 PM para moldar uma esfera de terra ou rocha que fica orbitando ao seu redor. Para cada círculo de magia além do 1º que puder lançar, você pode gastar +2 PM para moldar mais uma dessas esferas. Quando sofre dano, você pode gastar 1 esfera para receber RD 30 contra esse dano. Você também pode gastar uma ação de movimento e 1 esfera para causar 4d6 + Sabedoria pontos de dano de impacto em uma criatura em alcance curto (Ref CD Sab reduz à metade). As esferas permanecem ao seu redor até o fim da cena ou até serem usadas. Você precisa ter acesso a uma expressão de seu elemento para usar este poder. <i>Pré-requisitos: 4º nível de místico, Afinidade (terra).</i>
+        descricao: `Você pode gastar uma ação de movimento e 2 PM para moldar uma esfera de terra ou rocha que fica orbitando ao seu redor. Para cada círculo de magia além do 1º que puder lançar, você pode gastar +2 PM para moldar mais uma dessas esferas. Quando sofre dano, você pode gastar 1 esfera para receber RD 30 contra esse dano. Você também pode gastar uma ação de movimento e 1 esfera para causar 4d6 + Sabedoria pontos de dano de impacto em uma criatura em alcance curto (Ref CD Sab reduz à metade). As esferas permanecem ao seu redor até o fim da cena ou até serem usadas. Você precisa ter acesso a uma expressão de seu elemento para usar este poder. <i>Pré-requisitos: 4º nível de místico, Afinidade (terra). ✨</i>
           `,
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 4,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1264,
         nome: 'Auréola Celeste',
-        descricao: `Quando lança uma magia de abjuração ou que causa dano de luz, você pode gastar uma ação de movimento e PM para evocar uma auréola sobre a cabeça de um aliado em alcance curto. A auréola concede 5 PV temporários por PM gasto e +1 em testes de resistência e dura até o fim da cena ou até que os PV temporários sejam perdidos. <i>Pré-requisito: Afinidade (luz).</i>
+        descricao: `Quando lança uma magia de abjuração ou que causa dano de luz, você pode gastar uma ação de movimento e PM para evocar uma auréola sobre a cabeça de um aliado em alcance curto. A auréola concede 5 PV temporários por PM gasto e +1 em testes de resistência e dura até o fim da cena ou até que os PV temporários sejam perdidos. <i>Pré-requisito: Afinidade (luz). ✨</i>
           `,
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1265,
@@ -12480,7 +12480,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 6,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1266,
@@ -12490,7 +12490,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 6,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1267,
@@ -12500,7 +12500,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 18,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1268,
@@ -12510,7 +12510,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1269,
@@ -12520,7 +12520,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1270,
@@ -12530,7 +12530,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1271,
@@ -12540,7 +12540,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1272,
@@ -12550,7 +12550,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 6,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1273,
@@ -12560,7 +12560,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1274,
@@ -12570,7 +12570,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1275,
@@ -12580,7 +12580,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1276,
@@ -12590,7 +12590,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1277,
@@ -12600,7 +12600,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1278,
@@ -12610,7 +12610,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 6,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1279,
@@ -12620,7 +12620,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1280,
@@ -12630,7 +12630,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1281,
@@ -12640,7 +12640,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 10,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1282,
@@ -12650,7 +12650,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1283,
@@ -12660,7 +12660,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1283,
@@ -12670,7 +12670,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1284,
@@ -12680,7 +12680,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1285,
@@ -12690,7 +12690,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1286,
@@ -12700,7 +12700,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1287,
@@ -12710,7 +12710,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1288,
@@ -12720,7 +12720,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1289,
@@ -12730,7 +12730,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1290,
@@ -12740,7 +12740,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1291,
@@ -12750,7 +12750,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1292,
@@ -12760,7 +12760,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1293,
@@ -12770,7 +12770,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1294,
@@ -12780,7 +12780,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1295,
@@ -12790,7 +12790,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1296,
@@ -12800,7 +12800,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 6,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1297,
@@ -12810,7 +12810,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1298,
@@ -12820,7 +12820,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 3,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1299,
@@ -12830,7 +12830,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1300,
@@ -12840,7 +12840,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1301,
@@ -12850,7 +12850,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1302,
@@ -12860,7 +12860,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1303,
@@ -12870,7 +12870,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 16,
+        id_classe: 35,
       },
       {
         id: 1304,
