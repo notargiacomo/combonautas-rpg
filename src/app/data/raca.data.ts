@@ -2655,6 +2655,24 @@ export class RacaData {
         devotos: 'Arsenal, Khalmyr, Lin-Wu, Tenebra.',
         historia: ``,
       },
+      {
+        id: 69,
+        id_raca_superior: 0,
+        nome: `Qareen Amigo da Magia`,
+        tipo: TipoCriatura.TIPO_CRIATURA_HUMANOIDE,
+        tamanho: Tamanho.MEDIO,
+        nome_arquivo_historia: `raca_qareen_historia`,
+        imagem: 'assets/img/raca_qareen_amigo_magia.png',
+        deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
+        sentidos: [],
+        referencias: Referencia.DB,
+        paginas: '173, pag. 279',
+        descricao: `
+        <p><b>Carisma +2, Inteligência +1, Sabedoria –1.</b></p>`,
+        longevidade: Longevidade.DOIS,
+        devotos: 'Azgher, Lena, Marah, Nimb, Tenebra, Wynna.',
+        historia: ``,
+      },
     ];
   }
 }
