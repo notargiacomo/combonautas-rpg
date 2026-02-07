@@ -3608,7 +3608,7 @@ com ar puro servem como expressões naturais; normalmente, em grandes cidades, t
           'Percepção',
         ],
         numero_pericias_escolha_grupo: 2,
-        imagem: 'assets/img/classe_mistico.png',
+        imagem: 'assets/img/classe_samurai.png',
         referencias: Referencia.DB,
         paginas: '199, pag. 82 à 89',
       },
