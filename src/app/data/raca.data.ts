@@ -2637,6 +2637,24 @@ export class RacaData {
         longevidade: Longevidade.CINCO,
         devotos: 'Qualquer.',
       },
+      {
+        id: 68,
+        id_raca_superior: 0,
+        nome: `Anão Adepto da Pólvora`,
+        tipo: TipoCriatura.TIPO_CRIATURA_HUMANOIDE,
+        tamanho: Tamanho.MEDIO,
+        nome_arquivo_historia: `raca_anao_historia`,
+        imagem: 'assets/img/raca_anao_adepto_polvora.png',
+        deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
+        sentidos: [Sentido.VISAO_ESCURO],
+        referencias: Referencia.DB,
+        paginas: '173, pag. 279',
+        descricao: `
+        <p><b>Constituição +2, Sabedoria +1, Destreza –1.</b></p>`,
+        longevidade: Longevidade.DOIS,
+        devotos: 'Arsenal, Khalmyr, Lin-Wu, Tenebra.',
+        historia: ``,
+      },
     ];
   }
 }

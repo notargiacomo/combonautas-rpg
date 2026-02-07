@@ -2547,7 +2547,7 @@ export class PoderData {
         nome: `Conhecimento das Rochas`,
         descricao: `Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        id_raca: [2],
+        id_raca: [2, 68],
         instrucao: [
           `this.personagem.adicionaSentido('Visão no Escuro')`,
           `this.personagem.atualizaBonusExtraPericia('PERCEPÇÃO', [{origem: 'Conhecimento das Rochas', bonus: 2, condicao:['SUBTERRÂNEO'], ativo: false}]);`,
@@ -2561,7 +2561,7 @@ export class PoderData {
         nome: `Devagar e Sempre`,
         descricao: `Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        id_raca: [2],
+        id_raca: [2, 68],
         instrucao: [
           "this.personagem.atualizarDeslocamento('Terrestre', 6);",
           `this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');`,
@@ -2574,7 +2574,7 @@ export class PoderData {
         nome: `Duro como Pedra`,
         descricao: `Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        id_raca: [2],
+        id_raca: [2, 68],
         instrucao: ['this.personagem.adicionaBonusTotalVida(2);', `this.personagem.adicionaBonusNivelVida(1);`],
         referencias: Referencia.BASICO,
         paginas: '20',
@@ -7090,7 +7090,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68,
         ],
       },
       {
@@ -7103,7 +7103,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68,
         ],
       },
       {
@@ -7131,7 +7131,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 25],
+        id_raca: [2, 25, 68],
       },
       {
         id: 696,
@@ -7258,7 +7258,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2],
+        id_raca: [2, 68],
       },
       {
         id: 710,
@@ -7276,7 +7276,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 12],
+        id_raca: [2, 12, 68],
       },
       {
         id: 712,
@@ -7357,7 +7357,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2],
+        id_raca: [2, 68],
       },
       {
         id: 721,
@@ -7519,7 +7519,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2],
+        id_raca: [2, 68],
       },
       {
         id: 739,
@@ -7762,7 +7762,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2],
+        id_raca: [2, 68],
       },
       {
         id: 765,
@@ -18809,6 +18809,15 @@ export class PoderData {
         tipo: TipoPoder.HABILIDADE_RACA,
         prerequisito_nivel: 1,
         id_raca: [67],
+      },
+      {
+        id: 2064,
+        nome: 'Adepto da Pólvora',
+        descricao: `Você acredita que a pedra-fumaça é um presente de Tenebra, um minério como qualquer outro que deve ter trabalhado e transformado. Você recebe proficiência com armas de fogo e pode fabricar armas de fogo, munições e bombas pagando um quarto do preço em matéria-prima, ao invés de um terço. Substitui Tradição de Heredrimm.`,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [68],
       }
     );
   }
