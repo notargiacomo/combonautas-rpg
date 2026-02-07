@@ -2601,7 +2601,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         paginas: '21',
         prerequisito_nivel: 1,
-        id_raca: [3],
+        id_raca: [3, 70],
       },
       {
         id: 251,
@@ -2627,7 +2627,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         paginas: '21',
         prerequisito_nivel: 1,
-        id_raca: [3],
+        id_raca: [3, 70],
       },
       {
         id: 253,
@@ -7090,7 +7090,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
         ],
       },
       {
@@ -7103,7 +7103,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
         ],
       },
       {
@@ -7163,12 +7163,12 @@ export class PoderData {
       {
         id: 699,
         nome: 'Arsenal de Lisandra',
-        descricao: `Você aprende e pode lançar Armamento da Natureza. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Além  disso, ao usar sua habilidade Armadura de Allihanna, você recebe um bônus na Defesa adicional de +1 por patamar (ou seja, Defesa +3 no patamar iniciante, +4 no veterano e assim por diante).`,
+        descricao: `Você aprende e pode lançar Armamento da Natureza. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Além  disso, ao usar sua habilidade Armadura de Allihanna, você recebe um bônus na Defesa adicional de +1 por patamar (ou seja, Defesa +3 no patamar iniciante, +4 no veterano e assim por diante). ✨`,
         e_poder_magico: true,
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [3],
+        id_raca: [3, 70],
       },
       {
         id: 700,
@@ -7267,7 +7267,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [3],
+        id_raca: [3, 70],
       },
       {
         id: 711,
@@ -7483,7 +7483,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [3, 61],
+        id_raca: [3, 61, 70],
       },
       {
         id: 735,
@@ -7789,7 +7789,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [3, 15, 61, 65],
+        id_raca: [3, 15, 61, 65, 70],
       },
       {
         id: 768,
@@ -18827,6 +18827,15 @@ export class PoderData {
         tipo: TipoPoder.HABILIDADE_RACA,
         prerequisito_nivel: 1,
         id_raca: [69],
+      },
+      {
+        id: 2066,
+        nome: 'Artesã Natural',
+        descricao: `Você pode lançar a magia Transmutar Objetos (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Substitui Armadura de Allihanna. ✨`,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [70],
       }
     );
   }

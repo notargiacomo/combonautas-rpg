@@ -2673,6 +2673,24 @@ export class RacaData {
         devotos: 'Azgher, Lena, Marah, Nimb, Tenebra, Wynna.',
         historia: ``,
       },
+      {
+        id: 70,
+        id_raca_superior: 0,
+        nome: `Dahllan Artesã Natural`,
+        tipo: TipoCriatura.TIPO_CRIATURA_HUMANOIDE,
+        tamanho: Tamanho.MEDIO,
+        nome_arquivo_historia: `raca_dahllan_historia`,
+        imagem: 'assets/img/raca_dahllan_artesa_natural.png',
+        deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
+        sentidos: [],
+        referencias: Referencia.DB,
+        paginas: '173, pag. 279',
+        descricao: `
+        <p><b>Sabedoria +2, Destreza +1, Inteligência –1.</b></p>`,
+        longevidade: Longevidade.CINCO,
+        devotos: 'Allihanna, Lena, Oceano.',
+        historia: ``,
+      },
     ];
   }
 }
