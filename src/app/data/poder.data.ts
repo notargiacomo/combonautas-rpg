@@ -14035,7 +14035,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 1,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1417,
@@ -14045,7 +14045,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 1,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1418,
@@ -14055,7 +14055,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 1,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1419,
@@ -14065,7 +14065,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 3,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1420,
@@ -14075,7 +14075,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 10,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1421,
@@ -14085,7 +14085,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_CLASSE,
         prerequisito_nivel: 20,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1422,
@@ -14095,7 +14095,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1423,
@@ -14105,7 +14105,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 5,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1424,
@@ -14115,7 +14115,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 6,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1425,
@@ -14125,7 +14125,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1426,
@@ -14135,7 +14135,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1427,
@@ -14145,7 +14145,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1428,
@@ -14155,7 +14155,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1429,
@@ -14165,7 +14165,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1430,
@@ -14175,7 +14175,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1431,
@@ -14185,7 +14185,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 12,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1432,
@@ -14195,7 +14195,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1433,
@@ -14205,7 +14205,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1434,
@@ -14215,7 +14215,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1435,
@@ -14225,7 +14225,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1436,
@@ -14235,7 +14235,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1437,
@@ -14245,7 +14245,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1438,
@@ -14255,7 +14255,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1439,
@@ -14265,7 +14265,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 8,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1440,
@@ -14275,7 +14275,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1441,
@@ -14285,7 +14285,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1442,
@@ -14295,7 +14295,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1443,
@@ -14305,7 +14305,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1444,
@@ -14315,7 +14315,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_CLASSE,
         prerequisito_nivel: 2,
-        id_classe: 17,
+        id_classe: 36,
       },
       {
         id: 1445,

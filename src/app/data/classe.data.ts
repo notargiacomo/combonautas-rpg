@@ -3544,6 +3544,74 @@ com ar puro servem como expressões naturais; normalmente, em grandes cidades, t
         referencias: Referencia.DB,
         paginas: '199, pag. 82 à 89',
       },
+      {
+        id: 36,
+        nome: 'Samurai',
+        descricao_classe: `
+        <h5>Características de Classe</h5>
+        <p><b>Pontos de Vida.</b>  Um samurai começa com 20 pontos de vida (+ Constituição) e ganha 5 PV (+ Constituição) por nível.</p>
+        <p><b>Pontos de Mana.</b> 3 PM por nível.</p>
+        <p><b>Perícias.</b> Misticismo (Int) e Vontade (Sab), mais 4 a sua escolha entre Acrobacia (Des), Atletismo (For), Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Luta (For), Ofício (Int), Percepção (Sab), Pontaria (Des) e Reflexos (Des).</p>
+        <p><b>Proficiências.</b> Armas marciais.</p>
+        <table>
+            <thead>
+              <tr>
+                <th>Nível</th>
+                <th>Habilidade de Classe</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr><td>1º</td><td>Arma ancestral (1 Melhoria), Código do samurai, Grito de kiai (+1d4)</td></tr>
+              <tr><td>2º</td><td>Poder de samurai</td></tr>
+              <tr><td>3º</td><td>Olhar assustador +1, Poder de samurai</td></tr>
+              <tr><td>4º</td><td>Arma ancestral (2 Melhorias), Poder de samurai</td></tr>
+              <tr><td>5º</td><td>Grito de kiai (+1d6), Poder de samurai</td></tr>
+              <tr><td>6º</td><td>Arma ancestral (3 Melhorias), Poder de samurai</td></tr>
+              <tr><td>7º</td><td>Poder de samurai</td></tr>
+              <tr><td>8º</td><td>Arma ancestral (4 Melhorias), Poder de samurai</td></tr>
+              <tr><td>9º</td><td>Grito de kiai (+1d8), Olhar assustador +2, Poder de samurai</td></tr>
+              <tr><td>10º</td><td>Arma espiritual (1 Encanto), Poder de samurai</td></tr>
+              <tr><td>11º</td><td>Poder de samurai</td></tr>
+              <tr><td>12º</td><td>Arma espiritual (2 Encantos), Poder de samurai</td></tr>
+              <tr><td>13º</td><td>Grito de kiai (+1d10), Poder de samurai</td></tr>
+              <tr><td>14º</td><td>Arma espiritual (3 Encantos), Poder de samurai</td></tr>
+              <tr><td>15º</td><td>Olhar assustador +3, Poder de samurai</td></tr>
+              <tr><td>16º</td><td>Poder de samurai</td></tr>
+              <tr><td>17º</td><td>Grito de kiai (+1d12), Poder de samurai</td></tr>
+              <tr><td>18º</td><td>Poder de samurai</td></tr>
+              <tr><td>19º</td><td>Poder de samurai</td></tr>
+              <tr><td>20º</td><td>Poder de samurai, Shogun</td></tr>
+            </tbody>
+          </table>
+`,
+        ha_informacoes_adicionais: false,
+        ha_poderes_db: true,
+        ha_complicacoes: false,
+        descricao_informacoes: ``,
+        fator_vida: 2,
+        fator_mana: 6,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES],
+        pericia_obrigatoria: 'Vontade',
+        pericia_escolha_entre_duas: ['Misticismo'],
+        pericias_escolha_grupo: [
+          'Conhecimento',
+          'Diplomacia',
+          'Enganação',
+          'Guerra',
+          'Iniciativa',
+          'Intimidação',
+          'Intuição',
+          'Investigação',
+          'Nobreza',
+          'Ofício',
+          'Percepção',
+        ],
+        numero_pericias_escolha_grupo: 2,
+        imagem: 'assets/img/classe_mistico.png',
+        referencias: Referencia.DB,
+        paginas: '199, pag. 82 à 89',
+      },
     ];
   }
 }
