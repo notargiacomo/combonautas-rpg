@@ -18836,6 +18836,31 @@ export class PoderData {
         tipo: TipoPoder.HABILIDADE_RACA,
         prerequisito_nivel: 1,
         id_raca: [70],
+      },
+      {
+        id: 2067,
+        nome: 'Destilar substrato',
+        descricao: `<p>
+Você é capaz de extrair substratos alquímicos de criaturas e utilizá-los na manufatura de poções.
+Se tiver acesso ao corpo de uma criatura recém-abatida (menos de 2 horas), você pode fazer um teste
+de <strong>Sobrevivência</strong> (para animais, monstros e humanoides) ou <strong>Misticismo</strong>
+(para construtos, dragões, espíritos e mortos-vivos) CD 12 + ND da criatura.
+Se passar, pode extrair o sangue (ou outra substância definida pelo mestre) da criatura para ser
+utilizado no preparo de poções, reduzindo o custo de fabricação em 1 PM para cada dois ND da criatura.
+Substratos de cada tipo de criatura afetam escolas de magia diferentes:
+</p>
+
+<ul>
+  <li><strong>Animais:</strong> Poções de Adivinhação e Encantamento.</li>
+  <li><strong>Construtos:</strong> Poções de Abjuração e Transmutação.</li>
+  <li><strong>Espíritos:</strong> Poções de Convocação e Ilusão.</li>
+  <li><strong>Monstros:</strong> Poções de Evocação.</li>
+  <li><strong>Mortos-Vivos:</strong> Poções de Necromancia.</li>
+</ul>
+`,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_MAGIA,
+        prerequisito_nivel: 4,
       }
     );
   }

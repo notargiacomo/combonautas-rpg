@@ -9,4 +9,5 @@ export enum Referencia {
   DB = 'Revista Dragão Brasil',
   GUIA_NPC = "Guia de NPC's",
   GUIA_DEUSES_MENORES = 'Guia de Deuses Menores',
+  AVENTURA_CORACAO_DE_RUBI = 'Aventura Coração de Rubi',
 }

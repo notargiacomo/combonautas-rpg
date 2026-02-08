@@ -3585,10 +3585,94 @@ com ar puro servem como expressões naturais; normalmente, em grandes cidades, t
             </tbody>
           </table>
 `,
-        ha_informacoes_adicionais: false,
+        ha_informacoes_adicionais: true,
         ha_poderes_db: true,
         ha_complicacoes: false,
-        descricao_informacoes: ``,
+        descricao_informacoes: `<h2><b>A IMPORTÂNCIA DA ARMA</b></h2>
+
+<p>
+A arma ancestral de um samurai representa muito mais que uma ferramenta de aventuras ou um instrumento de matança.
+Trata-se de uma extensão da alma, um símbolo de honra, de tradição, devoção e respeito mútuo para com o legado de
+sua linhagem.
+</p>
+
+<p>
+Enquanto o samurai confia na arma para proteger sua vida e seus ideais, os antepassados confiam no samurai para honrá-los
+através de sua habilidade e integridade. Ao brandir uma arma ancestral, o samurai não ataca sozinho; toda uma linhagem
+empunha a arma em conjunto.
+</p>
+
+<p>
+Embora esse elo já seja extremamente forte para qualquer samurai, existem aqueles que vão além. Estabelecem uma conexão
+mais direta com os espíritos dos ancestrais em sua arma, extraindo dela um tipo de poder que não pode ser encontrado em
+nenhum outro lugar. Esses espíritos são despertados, concedendo poderes incríveis.
+</p>
+
+<h2><b>DESPERTAR ANCESTRAL</b></h2>
+
+<p>
+A sintonia entre um samurai e sua arma ancestral cresce conforme ela é utilizada, concedendo-lhe a habilidade de invocar
+poderes mágicos a partir de suas melhorias ou encantamentos. Escolha uma das opções a seguir; você pode escolher
+Despertar Ancestral novamente, escolhendo uma nova opção como um novo poder, mas não mais de uma vez por patamar.
+</p>
+
+<p>
+Cada poder de Despertar Ancestral requer uma melhoria ou encantamento da arma ancestral. O poder não pode ser usado com
+uma arma normal contendo essa melhoria ou encantamento, nem com outra arma ancestral sem essa melhoria.
+</p>
+
+<p>
+Melhorias e encantamentos marcados com ⚠️ foram apresentados em Ameaças de Arton. Todos os poderes de Despertar
+Ancestral são habilidades mágicas.
+</p>
+
+<ul>
+<li><b>Acima do Bem e do Mal:</b> Quando faz um ataque com sua arma ancestral, você pode gastar 2 PM para aplicar o dano adicional do seu encanto profano ou sagrado contra qualquer criatura. Pré-requisitos: 10º nível de samurai, arma ancestral profana ou sagrada.</li>
+
+<li><b>Ancestral Dançarino:</b> Quando usa o efeito de dançarina de sua arma ancestral, você pode gastar 2 PM para invocar um espírito ancestral para empunhar a arma. O espírito permanece enquanto dançarina for sustentada, não conta para seu limite de parceiros e é de um parceiro veterano fortão e guardião. Pré-requisitos: 10º nível de samurai, arma ancestral dançarina.</li>
+
+<li><b>Aspecto Assustador:</b> Quando faz um ataque corpo a corpo com sua arma ancestral, você pode gastar 1 PM para assumir um aspecto assustador. Se acertar o ataque, o alvo fica abalado (Vont CD Sab evita). Pré-requisito: arma ancestral macabra.</li>
+
+<li><b>Aspecto Dourado:</b> Você pode gastar 1 PM para substituir um teste de resistência por um teste de Diplomacia. Pré-requisito: arma ancestral banhada em ouro.</li>
+
+<li><b>Aspecto Opulento:</b> Uma vez por rodada, você pode gastar 1 PM para fintar como uma ação de movimento (ou livre, se tiver Finta Aprimorada). Pré-requisito: arma ancestral cravejada de gemas.</li>
+
+<li><b>Avalanche Súbita:</b> Quando faz um ataque corpo a corpo com sua arma ancestral, você pode gastar 1 PM para desferir um golpe atordoante. Se acertar, o alvo fica atordoado por uma rodada (Fort CD Sab evita; uma criatura só pode ser atordoada por esta habilidade uma vez por cena). Se sua arma ancestral for atroz, a CD aumenta em +2. Pré-requisito: arma ancestral cruel.</li>
+
+<li><b>Cortar Magia:</b> Enquanto empunha sua arma ancestral, você pode usar Dissipar Magia com o modificador de contramágica, mas apenas em magias que tenham você como alvo. Pré-requisitos: 10º nível de samurai, arma ancestral energética.</li>
+
+<li><b>Corte do Vácuo:</b> Quando faz um ataque corpo a corpo com sua arma ancestral, você pode gastar 1 PM para projetar uma onda de energia. O alcance do ataque se torna curto e todo o dano causado se torna de essência. Pré-requisito: arma ancestral precisa.</li>
+
+<li><b>Cortador de Cavalos:</b> Quando faz um ataque corpo a corpo com sua arma ancestral, você pode gastar 1 PM para causar um dado de dano extra do mesmo tipo da arma. Pré-requisito: arma ancestral maciça.</li>
+
+<li><b>Dança dos Elementos:</b> Quando usa sua arma ancestral para causar dano por frio, ácido, eletricidade, fogo ou trevas, você pode gastar 1 PM para aumentar cada dado de dano em um passo. Pré-requisitos: 10º nível de samurai, arma ancestral congelante, corrosiva, elétrica, flamejante ou tumular.</li>
+
+<li><b>Dor Infinita:</b> Quando acerta um construto ou morto-vivo, você pode gastar 2 PM para aplicar nele o efeito de seu encanto excruciante. Pré-requisitos: 10º nível de samurai, arma ancestral excruciante.</li>
+
+<li><b>Engenhosidade Alquímica:</b> Quando usa injeção alquímica, você pode gastar 1 PM para aumentar o dano do preparado em um dado do mesmo tipo. Pré-requisito: arma ancestral injeção alquímica.</li>
+
+<li><b>Escudo Ancestral:</b> Quando faz um ataque com sua arma ancestral, você pode gastar 2 PM para escolher um aliado adjacente. Esse aliado recebe +5 na Defesa por uma rodada. Pré-requisito: arma ancestral defensora.</li>
+
+<li><b>Essência Fluida:</b> Quando obtém um acerto crítico com sua arma ancestral, você pode gastar 1 PM para se mover até o seu deslocamento. Pré-requisito: arma ancestral de mitral.</li>
+
+<li><b>Essência Gélida:</b> Quando faz um teste de Iniciativa, você pode gastar 1 PM para receber redução contra frio igual ao seu nível + sua Sabedoria até o fim da cena. Pré-requisito: arma ancestral de gelo eterno.</li>
+
+<li><b>Essência Invencível:</b> Quando faz um ataque com sua arma ancestral, você pode gastar 1 PM para aumentar o dano desse ataque em um passo. Pré-requisito: arma ancestral de adamante.</li>
+
+<li><b>Essência Lefeu:</b> Se estiver empunhando sua arma ancestral, você pode gastar 3 PM para somar sua Sabedoria nos testes de ataque e Reflexos e na Defesa por 1 rodada. Pré-requisitos: arma ancestral de matéria vermelha, Ronin.</li>
+
+<li><b>Essência Marinha:</b> Você soma sua Sabedoria em Atletismo e, quando faz um teste de Atletismo para nadar, pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Pré-requisitos: arma ancestral de lanajuste ⚠️.</li>
+
+<li><b>Essência Prateada:</b> Quando acerta um ataque com sua arma ancestral, você pode gastar 1 PM. Se fizer isso, o alvo perde cura acelerada por 1 rodada. Pré-requisito: arma ancestral de prata ⚠️.</li>
+
+<li><b>Essência Monstruosa:</b> Quando faz um acerto crítico com sua arma ancestral, você pode gastar 1 PM para receber PV temporários iguais à metade do seu nível + Sabedoria. Pré-requisitos: arma ancestral de casco de monstro ⚠️.</li>
+
+<li><b>Essência Rubi:</b> Quando faz um ataque com sua arma ancestral, você pode gastar 1 PM para ignorar toda a redução de dano do alvo. Pré-requisito: arma ancestral de aço-rubi.</li>
+
+<li><b>Essência Virente:</b> Se estiver empunhando sua arma ancestral, você pode gastar 1 PM para receber resistência a magia igual à sua Sabedoria por 1 rodada. Pré-requisito: arma ancestral de madeira tollon.</li>
+
+<li><b>Fulgor Púrpura:</b> Quando faz um ataque corpo a corpo com sua arma ancestral, você pode gastar PV temporários limitados pela sua Sabedoria. Para cada 2 PV gastos, seu ataque causa +1d8 de dano de essência. Pré-requis
+`,
         fator_vida: 2,
         fator_mana: 6,
         proficiencias: [Proficiencia.ARMAS_SIMPLES],
