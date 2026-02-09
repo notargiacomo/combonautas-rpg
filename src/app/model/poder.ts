@@ -22,7 +22,7 @@ export class Poder {
   e_aprimoramento?: boolean;
   e_poder_magico?: boolean;
   tipo?: string;
-  id_classe?: number[];
+  id_classe?: number;
   id_raca?: number[];
   id_distincao?: number;
   poder_chave_distincao?: boolean;
