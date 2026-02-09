@@ -18697,6 +18697,93 @@ Substratos de cada tipo de criatura afetam escolas de magia diferentes:
         referencias: Referencia.BASICO,
         prerequisito_nivel: 5,
         id_classe: 34,
+      },
+      {
+        id: 2071,
+        nome: 'Escolhido dos Deuses',
+        descricao: `<div class="escolhido-dos-deuses">
+
+  <p>
+    <b>Escolha um deus maior</b> (ou veja o quadro da p. 190). Você recebe os traços de aparência e o benefício listado para o deus que o escolheu.
+    <br>
+    <b>Pré-requisito:</b> origem Criação dos Deuses ou ter prestado um serviço de grande importância que tenha atraído a atenção do deus escolhido.
+  </p>
+
+  <h5><b>Escolhido de Aharadak</b></h5>
+  <p>Você possui alterações físicas grotescas, semelhantes às de um lefou (Tormenta20, p. 24). Você se torna imune a metamorfose e recebe +2 em uma perícia à sua escolha (não cumulativo com a habilidade Deformidade dos lefou). Este poder conta como um poder da Tormenta.</p>
+
+  <h5><b>Escolhido de Allihanna</b></h5>
+  <p>Você possui uma característica física de um animal, como orelhas de lobo, cauda de raposa ou um bico no lugar do nariz. Você pode falar com animais (como a magia Voz Divina; se já faz isso, recebe +2 em Adestramento) e, se estiver em terreno natural, pode gastar uma ação completa e 2 PM para invocar um animal à sua escolha. O animal invocado surge em 1d4 minutos e atua como um parceiro iniciante de um tipo à sua escolha até ser dispensado ou até o fim do dia. O mestre tem a palavra final sobre quais animais e tipos de parceiros estão disponíveis em uma determinada área.</p>
+
+  <h5><b>Escolhido de Arsenal/Keen</b></h5>
+  <p>Você projeta uma aura de austeridade e perigo que pode ser incômoda aos demais; você sofre –2 em Diplomacia. Entretanto, você recebe +1 em testes de ataque e na margem de ameaça com armas. Estes bônus são dobrados enquanto você estiver com menos da metade de seus PV.</p>
+
+  <h5><b>Escolhido de Azgher</b></h5>
+  <p>Suas pupilas possuem a aparência de chamas em constante movimento. Você pode gastar uma ação de movimento e 1 PM para gerar uma aura com 9m de raio a partir de você e duração sustentada. Esta aura ilumina como a luz do sol e, no início de seus turnos, causa 1d6 pontos de dano de fogo a criaturas à sua escolha dentro dela. Se for um paladino de Azgher e usar esta aura junto com sua Aura Sagrada, você pode sustentar ambas por apenas 1 PM.</p>
+
+  <h5><b>Escolhido de Glórienn</b></h5>
+  <p>Você possui uma perfeição que quase se iguala à dos elfos. Você recebe +2 em testes de perícias baseadas em Carisma contra não-elfos e, uma vez por cena, se passar em um teste de perícia baseada em Carisma, recebe 2 PM temporários.</p>
+
+  <h5><b>Escolhido de Hyninn</b></h5>
+  <p>Você possui uma característica física cosmética que claramente não pertence à sua raça. Você pode gastar uma ação de movimento e 2 PM para mergulhar no caos. Um de seus atributos, à sua escolha, é substituído por outro de seus atributos (determinado aleatoriamente) até o fim da cena. A substituição afeta apenas modificadores numéricos e não altera seus PV, PM ou perícias treinadas.</p>
+
+  <h5><b>Escolhido de Kallyadranoch</b></h5>
+  <p>Uma parte de seu corpo possui escamas em um padrão de cores à sua escolha. Além disso, você aprende e pode lançar uma magia de 1º círculo de ácido, eletricidade, fogo, frio, luz ou trevas à sua escolha (atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</p>
+
+  <h5><b>Escolhido de Khalmyr</b></h5>
+  <p>Você possui uma aparência altiva e nobre. Você tem imunidade a encantamento e efeitos de confusão e efeitos que causam perda de vida contínua (como sangramento) em você causam apenas metade do efeito máximo (arredondado para baixo).</p>
+
+  <h5><b>Escolhido de Lena</b></h5>
+  <p>Você é permanentemente acompanhado por uma pequena esfera de luz que flutua ao seu redor. Ao seu comando, essa esfera pode emanar luz como uma tocha. Além disso, sempre que uma criatura em alcance curto sofre dano, você pode transferir até 5 pontos desse dano para a esfera. A esfera pode armazenar um total de pontos de dano igual à metade dos seus PV, e elimina uma quantidade de dano armazenado a cada dia igual ao total de PV que você recuperar por descanso.</p>
+
+  <h5><b>Escolhido de Lin-Wu</b></h5>
+  <p>Seus cabelos, ou o equivalente, são prateados como os de um dragão celestial. Infundido com a essência do que é ser honrado, você é incapaz de mentir ou enganar outros seres (em termos de jogo, você segue as Obrigações & Restrições de Lin-Wu). Entretanto, você projeta uma aura de honradez de 9m de raio. Criaturas nessa área sofrem –5 em Enganação e Furtividade e você e seus aliados na área recebem +2 em Vontade.</p>
+
+  <h5><b>Escolhido de Marah</b></h5>
+  <p>Sua aparência, sua voz e seus movimentos são dotados de beleza e graça celestiais. Você recebe +2 em Adestramento, Atuação e Diplomacia. Além disso, você emana uma aura de calmaria de 9m de raio; criaturas nessa área sofrem –2 em testes de ataque e em rolagens de dano.</p>
+
+  <h5><b>Escolhido de Megalokk</b></h5>
+  <p>Seu corpo assume uma aparência feral, com pelos, carapaça ou outra característica monstruosa. Além disso, você recebe uma arma natural (dano 1d6, crítico x2) escolhida entre cauda (impacto), chifres (perfuração) ou mordida (perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com essa arma.</p>
+
+  <h5><b>Escolhido de Nimb</b></h5>
+  <p>Uma característica estética de seu corpo se altera de tempos em tempos. Pode ser a cor dos seus cabelos ou olhos, uma marca ou tatuagem na pele, ou mesmo sua própria voz. Além disso, você pode gastar 1 PM para receber +2 em um atributo, determinado aleatoriamente ao usar este poder, até o fim da cena (esse aumento não oferece PV, PM ou perícias adicionais). Você pode usar este poder múltiplas vezes na mesma cena, mas bônus no mesmo atributo não são cumulativos.</p>
+
+  <h5><b>Escolhido de Oceano</b></h5>
+  <p>Você possui guelras e membranas entre os dedos. Você pode respirar debaixo d’água e recebe deslocamento de natação igual ao seu deslocamento normal (se já tem um deslocamento de natação, em vez disso recebe camuflagem total dentro d’água).</p>
+
+  <h5><b>Escolhido de Ragnar</b></h5>
+  <p>Você possui traços físicos goblinóides perceptíveis, como se tivesse um antepassado desta raça. Você recebe +1 em rolagens de dano. Além disso, uma vez por rodada, quando você reduz um inimigo a 0 PV, recupera 1 PM.</p>
+
+  <h5><b>Escolhido de Sszzaas</b></h5>
+  <p>Sob escuridão total, seus olhos se tornam amarelados e suas pupilas verticais e alongadas, como as de serpentes. Exceto por isso, você é “comum”. De fato, exageradamente comum. Você recebe +2 em Furtividade e, sempre que passa por 10 ou mais num teste de Furtividade oposto a uma criatura lacaio, ela esquece que você esteve presente na cena.</p>
+
+  <h5><b>Escolhido de Tanna-Toh</b></h5>
+  <p>Você possui uma mecha branca em seus cabelos (ou equivalente). Uma vez por cena, se passar em um teste de Conhecimento, Guerra, Misticismo, Nobreza ou Religião, você recebe +1d6 que pode ser usado como bônus em outro teste de perícia na mesma cena, relacionado a esse teste.</p>
+
+  <h5><b>Escolhido de Tauron</b></h5>
+  <p>Seus pés são cascos, como os de um minotauro. Quando faz um teste de Força ou de perícia baseada em Força, você pode gastar 2 PM para receber +4 nesse teste. Se você estiver adjacente a um aliado indefeso, o custo deste poder é reduzido em –1 PM.</p>
+
+  <h5><b>Escolhido de Tenebra</b></h5>
+  <p>Uma parte do seu corpo, como seus cabelos, olhos, asas ou chifres (se os tiver) é negra como uma noite sem luar. Você pode pagar 2 PM para emanar uma aura de sombras em um raio de 9m com duração sustentada. Você e seus aliados na área recebem camuflagem leve por escuridão leve, redução de luz 5 e +5 em Furtividade.</p>
+
+  <h5><b>Escolhido de Thwor</b></h5>
+  <p>Você possui a Roda do Akzath gravada em suas costas, como uma tatuagem, cicatriz ou outra forma apropriada à sua pele. Uma vez por cena, você pode receber +2 em um teste de uma perícia que esteja usando pela primeira vez naquela cena.</p>
+
+  <h5><b>Escolhido de Thyatis</b></h5>
+  <p>Seus cabelos são vermelhos e ondulados, como chamas crepitantes. Você aprende e pode lançar Orientação, mas apenas em você. Se aprender novamente esta magia, seu custo é reduzido em –1 PM.</p>
+
+  <h5><b>Escolhido de Valkaria</b></h5>
+  <p>Sua pele possui marcas semelhantes às da pele deusa e seus olhos, ou seu cabelo, exibem o mesmo tom avermelhado dos cabelos dela. Além disso, em seu coração arde a chama da ambição. No início de cada aventura, você pode escolher um objetivo específico e uma perícia relacionada a este objetivo. Até o fim da aventura, você se torna treinado na perícia escolhida ou, se já for treinado, recebe +2 nela. O mestre deve aprovar tanto o objetivo quanto a perícia escolhidos.</p>
+
+  <h5><b>Escolhido de Wynna</b></h5>
+  <p>Você possui uma runa mística, que representa o nome que Wynna lhe deu, tatuada em algum lugar do seu corpo. Escolha um de seus atributos entre Inteligência, Sabedoria ou Carisma. Você soma o atributo escolhido em seu total de PM (limitado por seu nível).</p>
+
+</div>
+
+`,
+        tipo: TipoPoder.PODER_DESTINO,
+        referencias: Referencia.BASICO,
+        prerequisito_nivel: 1,
       }
     );
   }

@@ -10,4 +10,5 @@ export enum Referencia {
   GUIA_NPC = "Guia de NPC's",
   GUIA_DEUSES_MENORES = 'Guia de Deuses Menores',
   AVENTURA_CORACAO_DE_RUBI = 'Aventura Coração de Rubi',
+  AVENTURA_LIBERTACAO_VALKARIA = 'Aventura Libertação de Valkária',
 }

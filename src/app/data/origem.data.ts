@@ -770,10 +770,7 @@ export class OrigemData {
         concedeDinheiro: true,
         concedeFerramenta: true,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_ADESTRAMENTO,
-          Modificador.PERICIA_SOBREVIVENCIA,
-        ],
+        bonus: [Modificador.PERICIA_ADESTRAMENTO, Modificador.PERICIA_SOBREVIVENCIA],
       },
       {
         id: 37,
@@ -870,11 +867,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.DEFESA,
-          Modificador.PERICIA_REFLEXOS,
-          Modificador.DANO,
-        ],
+        bonus: [Modificador.DEFESA, Modificador.PERICIA_REFLEXOS, Modificador.DANO],
       },
       {
         id: 42,
@@ -988,11 +981,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: true,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_FURTIVIDADE,
-          Modificador.PERICIA_INTIMIDACAO,
-          Modificador.RESISTENCIAS,
-        ],
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_INTIMIDACAO, Modificador.RESISTENCIAS],
       },
       {
         id: 48,
@@ -1127,11 +1116,7 @@ export class OrigemData {
         temPoder: false,
         temPericia: false,
         temRD: false,
-        bonus: [
-          Modificador.DEFESA,
-          Modificador.PERICIA_SOBREVIVENCIA,
-          Modificador.DESLOCAMENTO,
-        ],
+        bonus: [Modificador.DEFESA, Modificador.PERICIA_SOBREVIVENCIA, Modificador.DESLOCAMENTO],
       },
       {
         id: 55,
@@ -1188,11 +1173,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_GUERRA,
-          Modificador.PROFICIENCIA,
-          Modificador.ACERTO,
-        ],
+        bonus: [Modificador.PERICIA_GUERRA, Modificador.PROFICIENCIA, Modificador.ACERTO],
       },
       {
         id: 58,
@@ -1234,11 +1215,7 @@ export class OrigemData {
         concedeDinheiro: true,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_FURTIVIDADE,
-          Modificador.PERICIA_VONTADE,
-          Modificador.PERICIA_ENGANACAO,
-        ],
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_VONTADE, Modificador.PERICIA_ENGANACAO],
       },
       {
         id: 60,
@@ -1454,11 +1431,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_ACROBACIA,
-          Modificador.PERICIA_ATLETISMO,
-          Modificador.PERICIA_REFLEXOS,
-        ],
+        bonus: [Modificador.PERICIA_ACROBACIA, Modificador.PERICIA_ATLETISMO, Modificador.PERICIA_REFLEXOS],
       },
       {
         id: 71,
@@ -1558,12 +1531,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_GUERRA,
-          Modificador.PROFICIENCIA,
-          Modificador.MARGEM_AMEACA,
-          Modificador.DEFESA,
-        ],
+        bonus: [Modificador.PERICIA_GUERRA, Modificador.PROFICIENCIA, Modificador.MARGEM_AMEACA, Modificador.DEFESA],
       },
       {
         id: 76,
@@ -1677,11 +1645,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: true,
-        bonus: [
-          Modificador.PERICIA_FORTITUDE,
-          Modificador.PERICIA_SOBREVIVENCIA,
-          Modificador.DANO,
-        ],
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_SOBREVIVENCIA, Modificador.DANO],
       },
       {
         id: 82,
@@ -1744,11 +1708,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_PERCEPCAO,
-          Modificador.PERICIA_REFLEXOS,
-          Modificador.RESISTENCIAS,
-        ],
+        bonus: [Modificador.PERICIA_PERCEPCAO, Modificador.PERICIA_REFLEXOS, Modificador.RESISTENCIAS],
       },
       {
         id: 85,
@@ -2044,11 +2004,7 @@ export class OrigemData {
         concedeDinheiro: true,
         concedeFerramenta: true,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_ENGANACAO,
-          Modificador.PERICIA_FURTIVIDADE,
-          Modificador.PERICIA_LADINAGEM,
-        ],
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_LADINAGEM],
       },
       {
         id: 100,
@@ -2104,11 +2060,7 @@ export class OrigemData {
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_CONHECIMENTO,
-          Modificador.PERICIA_DIPLOMACIA,
-          Modificador.PERICIA_NOBREZA,
-        ],
+        bonus: [Modificador.PERICIA_CONHECIMENTO, Modificador.PERICIA_DIPLOMACIA, Modificador.PERICIA_NOBREZA],
       },
       {
         id: 103,
@@ -2147,11 +2099,7 @@ manusear substâncias exóticas, uma dosagem errada podia ser fatal. Talvez voc�
         concedeDinheiro: true,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_FURTIVIDADE,
-          Modificador.PERICIA_INVESTIGACAO,
-          Modificador.PERICIAS,
-        ],
+        bonus: [Modificador.PERICIA_FURTIVIDADE, Modificador.PERICIA_INVESTIGACAO, Modificador.PERICIAS],
       },
       {
         id: 105,
@@ -2327,11 +2275,7 @@ manusear substâncias exóticas, uma dosagem errada podia ser fatal. Talvez voc�
         concedeDinheiro: true,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_ENGANACAO,
-          Modificador.PERICIA_LADINAGEM,
-          Modificador.CARGA,
-        ],
+        bonus: [Modificador.PERICIA_ENGANACAO, Modificador.PERICIA_LADINAGEM, Modificador.CARGA],
       },
       {
         id: 114,
@@ -2350,11 +2294,7 @@ manusear substâncias exóticas, uma dosagem errada podia ser fatal. Talvez voc�
         concedeDinheiro: true,
         concedeFerramenta: true,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_FORTITUDE,
-          Modificador.PERICIA_OFICIO,
-          Modificador.DEFESA,
-        ],
+        bonus: [Modificador.PERICIA_FORTITUDE, Modificador.PERICIA_OFICIO, Modificador.DEFESA],
       },
       {
         id: 115,
@@ -2491,10 +2431,7 @@ informações sobre armas lendárias ou reparos em seus equipamentos. Até que, 
         concedeDinheiro: true,
         concedeFerramenta: true,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_SOBREVIVENCIA,
-          Modificador.RESISTENCIAS_MAGIA,
-        ],
+        bonus: [Modificador.PERICIA_SOBREVIVENCIA, Modificador.RESISTENCIAS_MAGIA],
       },
       {
         id: 122,
@@ -2532,11 +2469,7 @@ informações sobre armas lendárias ou reparos em seus equipamentos. Até que, 
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_LADINAGEM,
-          Modificador.PERICIA_SOBREVIVENCIA,
-          Modificador.DEFESA,
-        ],
+        bonus: [Modificador.PERICIA_LADINAGEM, Modificador.PERICIA_SOBREVIVENCIA, Modificador.DEFESA],
       },
       {
         id: 124,
@@ -2614,11 +2547,7 @@ também preparava iguarias especiais para festivais, ou até encomendas secretas
         concedeDinheiro: false,
         concedeFerramenta: false,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_OFICIO,
-          Modificador.PERICIA_ATLETISMO,
-          Modificador.DANO,
-        ],
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.PERICIA_ATLETISMO, Modificador.DANO],
       },
       {
         id: 128,
@@ -2659,11 +2588,7 @@ redes, linhas e anzóis de materiais naturais, você pescava para consumo própr
         concedeDinheiro: false,
         concedeFerramenta: true,
         concedeParceiro: false,
-        bonus: [
-          Modificador.PERICIA_OFICIO,
-          Modificador.PERICIA_SOBREVIVENCIA,
-          Modificador.PERICIA_INICIATIVA,
-        ],
+        bonus: [Modificador.PERICIA_OFICIO, Modificador.PERICIA_SOBREVIVENCIA, Modificador.PERICIA_INICIATIVA],
       },
       {
         id: 130,
@@ -2726,6 +2651,28 @@ redes, linhas e anzóis de materiais naturais, você pescava para consumo própr
         concedeFerramenta: true,
         concedeParceiro: false,
         bonus: [Modificador.ACERTO],
+      },
+      {
+        id: 133,
+        nome: 'Criação dos Deuses',
+        regiao: 'Geral',
+        descricao: `
+        <p>Você foi criado por um dos deuses maiores de Arton, mas deixou seu plano natal muito cedo. Talvez tenha sido um dos poucos escolhidos enviados em uma missão divina, ou tenha escapado de seu lar por um motivo qualquer.</p>
+        <p><b>Itens: </b> Uma lembrança de seu plano natal (funciona como um símbolo sagrado do deus escolhido).</p>
+        <p><b>Benefícios.</b> Escolha um deus maior (ou veja o quadro da p. 190). Você se torna um espírito, mas retém as características de seu tipo original (veja Tormenta20, p. 284) e recebe redução de dano 5 conforme o tipo de energia canalizada pelo deus: trevas para energia positiva, luz para energia negativa, ou à sua escolha entre estas se o deus canaliza ambas. Por fim, você recebe o poder Escolhido dos Deuses para a divindade escolhida.</p>`,
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        paginas: '189 a 191',
+      },
+      {
+        id: 134,
+        nome: 'Iniciado Verdugo',
+        regiao: 'Ubani',
+        descricao: `
+        <p>Em Ubani, os ofícios da morte eram ensinados na cidade perdida de Ojumajele. Depois de sua queda diante da Tormenta, estes assuntos se tornaram cada vez mais tabu. Ainda existem aqueles, porém, devotados a cuidar dos ritos fúnebres e eliminar mortos-vivos.</p>
+        <p><b>Benefícios.</b> Você é treinado em Religião. Além disso, pode usar a habilidade Golpe Divino como um paladino de 1º nível. Se já possui a habilidade, em vez disso seu custo diminui em –1 PM.</p>
+        <p><b>Itens.</b> Água benta x2, cimitarra ou espada longa, símbolo sagrado (Allihanna, Kallyadranoch, Megalokk ou Wynna), T$50 (pagamento por ritos fúnebres realizados).</p>`,
+        referencias: Referencia.DB,
+        paginas: '214, pág. 73',
       },
     ];
   }
