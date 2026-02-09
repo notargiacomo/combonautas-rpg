@@ -27,7 +27,7 @@ export class PoderFacadeService {
               ...poder,
               deuses: deuses.filter(d => poder.id_deuses?.includes(d.id)),
               raca: racas.find(r => poder.id_raca?.includes(r.id)),
-              classe: classes.find(c => poder.id_classe === c.id),
+              classe: classes.find(c => poder.id_classe?.includes(c.id)),
             }))
           ),
           switchMap(result =>

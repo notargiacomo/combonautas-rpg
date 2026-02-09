@@ -28,7 +28,9 @@ export class ClasseFacadeService {
     if (classe.habilidades) return;
 
     this.poderService.listAll().subscribe(poderes => {
-      classe.habilidades = poderes.filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.HABILIDADE_CLASSE);
+      classe.habilidades = poderes.filter(
+        p => p.id_classe?.includes(classe.id) && p.tipo === TipoPoder.HABILIDADE_CLASSE
+      );
     });
   }
 
@@ -38,7 +40,9 @@ export class ClasseFacadeService {
     this.poderService.listAll().subscribe(poderes => {
       classe.poderes = poderes
         .filter(
-          p => (p.id_classe === classe.id || p.id_classe === classe.id_classe_pai) && p.tipo === TipoPoder.PODER_CLASSE
+          p =>
+            (p.id_classe?.includes(classe.id) || p.id_classe === classe.id_classe_pai) &&
+            p.tipo === TipoPoder.PODER_CLASSE
         )
         .sort((a, b) => a.nome!.localeCompare(b.nome!));
     });

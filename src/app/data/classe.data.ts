@@ -3289,6 +3289,7 @@ export class ClasseData {
       },
       {
         id: 34,
+        id_classe_pai: 5,
         nome: 'Miragem',
         descricao_classe: `
         <h5>Características de Classe</h5>
@@ -3300,51 +3301,37 @@ export class ClasseData {
             <thead>
               <tr>
                 <th>Nível</th>
-                <th>Habilidade de Classe</th>
+                <th>Habilidades de Classe</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td>1º</td><td>Dança da areia +1d4, Movimento furtivo</td></tr>
-              <tr><td>2º</td><td>Poder de miragem</td></tr>
-              <tr><td>3º</td><td>Investida acrobática, Poder de miragem</td></tr>
-              <tr><td>4º</td><td>Poder de miragem</td></tr>
-              <tr><td>5º</td><td>Cortina de poeira, Dança da areia +1d6, Poder de miragem</td></tr>
-              <tr><td>6º</td><td>Poder de miragem</td></tr>
-              <tr><td>7º</td><td>Guerrilheiro das dunas, Poder de miragem</td></tr>
-              <tr><td>8º</td><td>Poder de miragem</td></tr>
-              <tr><td>9º</td><td>Dança da areia +1d8, Mergulho terrestre, Poder de miragem</td></tr>
-              <tr><td>10º</td><td>Poder de miragem</td></tr>
-              <tr><td>11º</td><td>Poder de miragem</td></tr>
-              <tr><td>12º</td><td>Poder de miragem</td></tr>
-              <tr><td>13º</td><td>Dança da areia +1d10, Poder de miragem</td></tr>
-              <tr><td>14º</td><td>Poder de miragem</td></tr>
-              <tr><td>15º</td><td>Poder de miragem</td></tr>
-              <tr><td>16º</td><td>Poder de miragem</td></tr>
-              <tr><td>17º</td><td>Dança da areia +1d12, Poder de miragem</td></tr>
-              <tr><td>18º</td><td>Poder de miragem</td></tr>
-              <tr><td>19º</td><td>Poder de miragem</td></tr>
-              <tr><td>20º</td><td>Corpo de areia, Poder de miragem</td></tr>
+              <tr><td>1º</td><td>Dança da areia +1d4, rastreador</td></tr>
+              <tr><td>2º</td><td>Poder de caçador</td></tr>
+              <tr><td>3º</td><td>Explorador, poder de caçador</td></tr>
+              <tr><td>4º</td><td>Poder de caçador</td></tr>
+              <tr><td>5º</td><td>Caminho do explorador, dança da areia +1d6, poder de caçador</td></tr>
+              <tr><td>6º</td><td>Poder de caçador</td></tr>
+              <tr><td>7º</td><td>Cortina de poeira, poder de caçador</td></tr>
+              <tr><td>8º</td><td>Poder de caçador</td></tr>
+              <tr><td>9º</td><td>Dança da areia +1d8, passo do deserto, poder de caçador</td></tr>
+              <tr><td>10º</td><td>Poder de caçador</td></tr>
+              <tr><td>11º</td><td>Poder de caçador</td></tr>
+              <tr><td>12º</td><td>Poder de caçador</td></tr>
+              <tr><td>13º</td><td>Dança da areia +1d10, poder de caçador</td></tr>
+              <tr><td>14º</td><td>Poder de caçador</td></tr>
+              <tr><td>15º</td><td>Poder de caçador</td></tr>
+              <tr><td>16º</td><td>Poder de caçador</td></tr>
+              <tr><td>17º</td><td>Dança da areia +1d12, poder de caçador</td></tr>
+              <tr><td>18º</td><td>Poder de caçador</td></tr>
+              <tr><td>19º</td><td>Poder de caçador</td></tr>
+              <tr><td>20º</td><td>Mestre do deserto, poder de caçador</td></tr>
             </tbody>
           </table>
 `,
-        ha_informacoes_adicionais: true,
+        ha_informacoes_adicionais: false,
         ha_poderes_db: true,
         ha_complicacoes: false,
-        descricao_informacoes: `<div class="row">
-<div class="col-sm-12 text-justify">
-<h5>Demônios de Areia</h5>
-<p>Um demônio de areia é um espírito menor que se manifesta na forma de um pequeno animal do deserto feito de areia. Em termos de jogo, é um aliado especial com o qual você pode se comunicar telepaticamente em alcance médio. Ele obedece a suas ordens, mas ainda está limitado ao que uma criatura de sua forma pode fazer. Se ele morrer, você fica atordoado por uma rodada. Você pode invocar um novo demônio de areia com um ritual que exige um dia e T$ 100 em ingredientes.</p>
-<ul>
-<li>Coiote. Quando faz um teste de Acrobacia ou Sobrevivência, você pode pagar 1 PM para rolar dois dados e usar o melhor resultado.</li>
-<li>Escorpião. Você pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja empunhando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Veneno.</li>
-<li>Falcão. Você não pode ser surpreendido e nunca fica desprevenido.</li>
-<li>Raposa. Seu deslocamento aumenta em +3m.</li>
-<li>Serpente. Você adquire percepção às cegas em alcance curto.</li>
-<li>Urubu. Você soma sua Sabedoria em Fortitude e em seu total de pontos de vida.</li>
-</ul>
-</div>
-</div>
-        `,
+        descricao_informacoes: ``,
         fator_vida: 2,
         fator_mana: 6,
         proficiencias: [Proficiencia.ARMAS_SIMPLES],
