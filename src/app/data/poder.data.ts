@@ -18784,6 +18784,152 @@ Substratos de cada tipo de criatura afetam escolas de magia diferentes:
         tipo: TipoPoder.PODER_DESTINO,
         referencias: Referencia.BASICO,
         prerequisito_nivel: 1,
+      },
+      {
+        id: 2072,
+        nome: 'Bênçãos Vampíricas',
+        descricao: `
+<p>
+Escolha um dos poderes a seguir. Você pode escolher outros desses poderes no lugar de poderes de classe.
+</p>
+
+<ul>
+  <li>
+    <b>Cura Acelerada.</b>
+    No início de cada um dos seus turnos, você pode gastar 1 PM para recuperar 5 PV.
+    A partir do 5º nível, você pode escolher esta bênção uma segunda vez para aumentar a cura para 10 PV por PM gasto.
+  </li>
+
+  <li>
+    <b>Dominação Vampírica.</b>
+    Você pode gastar uma ação completa e 3 PM para sussurrar palavras de controle para um humanoide em alcance curto.
+    O alvo fica confuso, enfeitiçado ou fascinado até o final da cena ou perde suas memórias da última hora, à sua escolha
+    (Vontade CD Car evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena.
+    <b>Pré-requisito:</b> Presença Majestosa.
+  </li>
+
+  <li>
+    <b>Drenar Sangue.</b>
+    Você pode gastar uma ação padrão para drenar sangue de uma criatura viva que esteja agarrando.
+    Você causa 2d6 pontos de dano de perfuração por patamar e recupera a mesma quantidade de PV.
+    Drenar sangue dessa forma conta como se alimentar (veja Dieta de Sangue a seguir).
+  </li>
+
+  <li>
+    <b>Forma de Lobo.</b>
+    Você pode gastar uma ação padrão e 3 PM para se transformar em um lobo.
+    Isso conta como o efeito básico da Forma Selvagem Feroz (Tormenta20, p. 63); exceto que você se torna Médio
+    (se já não for), recebe +3m em seu deslocamento e, no lugar da arma natural, recebe uma arma natural de mordida
+    que causa 1d6 pontos de dano (se já tiver uma mordida, em vez disso o dano dela aumenta em um passo).
+  </li>
+
+  <li>
+    <b>Forma de Morcego.</b>
+    Você pode gastar uma ação padrão e 3 PM para se transformar em um morcego.
+    Você se torna Minúsculo (+5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de voo 12m.
+    Seu equipamento é absorvido (retornando quando você volta ao normal) e suas outras estatísticas não são alteradas.
+    A transformação dura quanto tempo você desejar, mas termina caso faça um ataque, lance uma magia ou sofra dano.
+  </li>
+
+  <li>
+    <b>Garras.</b>
+    Suas mãos são duas armas naturais de garras (dano 1d6 cada, crítico x2, corte).
+    Uma vez por rodada, quando usa a ação agredir para atacar com uma arma, você pode gastar 1 PM para fazer um
+    ataque corpo a corpo extra com uma das garras, desde que ela esteja livre e não tenha sido usada para atacar neste turno.
+    Como alternativa, se tiver habilidades que exijam uma arma secundária (como Estilo de Duas Armas), você pode usá-las com suas garras.
+  </li>
+
+  <li>
+    <b>Manto das Sombras.</b>
+    Você pode lançar Invisibilidade, mas apenas em você.
+    Caso aprenda novamente essa magia, seu custo diminui em –1 PM.
+  </li>
+
+  <li>
+    <b>Passo Vampírico.</b>
+    Você recebe +3m de deslocamento e deslocamento de escalada igual ao seu deslocamento padrão.
+  </li>
+
+  <li>
+    <b>Presença Majestosa.</b>
+    Você recebe a habilidade Presença Aristocrática (Tormenta20, p. 80).
+    Se já possuir essa habilidade, seu custo diminui em –1 PM e a CD para resistir a ela aumenta em +2.
+  </li>
+
+  <li>
+    <b>Resiliência Sombria.</b>
+    Você recebe redução de dano 5/luz.
+    <b>Pré-requisito:</b> Presença Majestosa, 5º nível de personagem.
+  </li>
+</ul>
+        `,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [71],
+      },
+      {
+        id: 2073,
+        nome: 'Resquícios da Outra Vida',
+        descricao: `
+<p>
+Você se torna treinado em uma perícia (não precisa ser da sua classe) ou recebe um poder geral a sua escolha. Como alternativa, você pode ser um vampiro de outra raça humanoide ou monstro que não humano. Neste caso, você ganha uma habilidade dessa raça a sua escolha (e aprovada pelo mestre). Se a raça era de tamanho diferente de Médio, você também possui sua categoria de tamanho. 
+</p>
+        `,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [71],
+      },
+      {
+        id: 2074,
+        nome: 'Natureza Não Viva',
+        descricao: `
+<p>
+ Você é uma criatura do tipo morto-vivo. Recebe visão no escuro e imunidade a efeitos de cansaço, metabólicos, de trevas e de veneno. Além disso, não precisa respirar, alimentar-se ou dormir. Por fim, efeitos mágicos de cura de luz causam dano a você e você não se beneficia de itens da categoria alimentação, mas dano de trevas recupera seus PV. 
+</p>
+        `,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [71],
+      },
+      {
+        id: 2075,
+        nome: 'Perda da Humanidade',
+        descricao: `
+<p>
+Conforme seus poderes vampíricos crescem, sua humanidade vai sucumbindo à monstruosidade em seu interior.
+Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais severas conforme você recebe novas bênçãos vampíricas.
+</p>
+
+<ul>
+  <li>
+    <b>Chamado das Trevas.</b>
+    Você precisa repousar por oito horas dentro da terra (no subterrâneo, em uma cova ou totalmente coberto de terra).
+    Se fizer isso, recupera PV e PM por descanso em condições normais (vampiros não são afetados por condições boas
+    ou ruins de descanso). Caso contrário, sofre uma penalidade em perícias de –1 por bênção vampírica que possuir.
+    Essa penalidade desaparece após repousar na terra.
+  </li>
+
+  <li>
+    <b>Sede de Sangue.</b>
+    Você precisa consumir pelo menos uma dose de sangue por semana (veja Dieta de Sangue a seguir).
+    Se não fizer isso, sofre os efeitos de fome (veja Fome e Sede em Tormenta20, p. 319).
+    Para cada bênção vampírica que possuir além da primeira, o intervalo entre suas refeições de sangue diminui
+    em um dia (até um mínimo de uma dose por dia).
+  </li>
+
+  <li>
+    <b>Sensibilidade ao Sol.</b>
+    Quando exposto à luz solar direta, você fica ofuscado e, a cada rodada, perde 1d6 PV por bênção vampírica que possuir.
+  </li>
+</ul>
+        `,
+        referencias: Referencia.BASICO,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        prerequisito_nivel: 1,
+        id_raca: [71],
       }
     );
   }

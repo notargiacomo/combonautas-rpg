@@ -2691,6 +2691,24 @@ export class RacaData {
         devotos: 'Allihanna, Lena, Oceano.',
         historia: ``,
       },
+      {
+        id: 71,
+        id_raca_superior: 0,
+        nome: `Vampiro`,
+        tipo: TipoCriatura.TIPO_CRIATURA_MORTO_VIVO,
+        tamanho: Tamanho.MEDIO,
+        nome_arquivo_historia: `raca_vampiro_historia`,
+        imagem: 'assets/img/raca_vampiro.png',
+        deslocamentos: [Chave.DESLOCAMENTO_TERRESTRE],
+        sentidos: [],
+        referencias: Referencia.DB,
+        paginas: '220, pags. 73 e 74',
+        descricao: `
+        <p><b>Carisma +1, +1 em dois atributos (exceto Constituição), Constituição –1.</b></p>`,
+        longevidade: Longevidade.INDEFINIDA,
+        devotos: '',
+        historia: ``,
+      },
     ];
   }
 }
