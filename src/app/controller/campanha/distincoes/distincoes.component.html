@@ -18,7 +18,7 @@
         </div>
         <mat-tab-group>
           <mat-tab label="Imagem">
-            <img [src]="item.imagem" [alt]="item.nome" />
+            <img [src]="item.imagem" [alt]="item.nome" style="height: 700px !important" />
           </mat-tab>
           <mat-tab label="Poderes" *ngIf="item.poderes && item.poderes.length > 0">
             <div class="row mt-2">
