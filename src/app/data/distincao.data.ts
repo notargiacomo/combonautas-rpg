@@ -2279,6 +2279,42 @@ Um Presa de Coral é um guerreiro de elite khubariano, um feroz campeão de seu 
         referencias: Referencia.DB,
         paginas: '206, pags 50 à 52',
       },
+      {
+        id: 63,
+        nome: `Furioso Cinzento`,
+        marca_distincao: `
+        <h4><b>Marca da Distinção</b></h4>
+        <h5>Voo do Texugo</h5>
+        <p>Seu deslocamento de voo aumenta em +3m e, enquanto estiver voando, você recebe +1 em rolagens de dano.</p>
+        `,
+        descricao: `<p>O rocambolesco e, vamos admitir, pouco confiável mito de Texugo, reserva um lugar especial para os furiosos cinzentos, os kobolds chocados pelo Texugo e que herdaram dele o poder da fúria. Estes primeiros membros da Tribo Cinzenta teriam apreendido como canalizar essa fúria para receber diversas habilidades de seu pai alado.</p>
+        <p>Por mais que nada disso faça muito sentido, o fato é que existem kobolds que aprendem a canalizar sua fúria em uma variedade de poderes texugais. Mais do que isso, sob a liderança de Grund e sua propensão a aceitar membros de outras raças como “kobolds honorários”, os segredos dos furiosos cinzentos alcançaram outros povos.</p>
+        <p>Um furioso cinzento é um guerreiro tribal que aprende a canalizar sua fúria para emular algumas habilidades do Texugo. Esse é um caminho exigente, pois requer que o candidato possua a capacidade de entrar em fúria, a habilidade de voar (de qualquer forma) e a concentração necessária para usar ambas em combate. Mais do que isso, o candidato precisa acreditar em um texugo voador!</p>`,
+        admissao: `<p>O processo de admissão de um furioso cinzento é algo que ainda está sendo debatido e “refinado” pela Tribo. Entretanto, alguns pontos já foram definidos e colocados em prática.</p>
+        <p>Seguindo a tradição de Grund e seus primeiros furiosos cinzentos, o candidato deve primeiro obter, de alguma maneira, uma forma de voar. Pode ser uma habilidade natural (como o voo das sílfides), uma magia ou um aparato (como asas de texugo). O importante é que o candidato consiga arrastar seu traseiro pelos céus. Depois de obter suas asas e executar um voo de combate, o candidato deve se apresentar a um xamã de Tukala, que irá guiar o restante do processo.</p>
+        <p>Uma vez que o candidato se apresente e comprove sua capacidade de voar, o xamã irá propor uma série de desafios (geralmente três, mas pode ser que ele erre as contas e peça mais, ou menos). Exemplos de desafios incluem comer um barril de bugulentos sem passar mal, invadir o covil de um inimigo, roubar uma escama do sovaco de um dragão, desenhar um texugo na testa de uma estátua de Khalmyr… o Texugo é um animal bravo, ousado e engenhoso, e seus furiosos também devem sê-lo.</p>
+        <p>Uma vez que tenha cumprido seus três (ou quatro, ou doze) desafios, o candidato deve apresentar as provas de seus feitos ao xamã encarregado de sua admissão. Se ele julgar as provas adequadas, o candidato poderá passar à última etapa do processo, em que deverá encontrar um texugo selvagem e oferecer comida a ele. Se o texugo aceitar a oferenda, o candidato terá cumprido todos os requisitos e se tornará um furioso cinzento.</p>
+`,
+        descricao_informacoes: `
+        <h5>Novo Item: Asas de Texugo</h5>
+        <p>Criada por Therato para auxiliar Grund e seus companheiros, esta engenhoca experimental deixou inúmeros engenhoqueiros goblins se perguntando: “Por que não pensei nisso antes?”</p>
+        <p>O aparato é vestido como uma mochila, da qual se projetam duas grandes asas formadas por hastes flexíveis, recobertas por um tecido fino esticado. Pedais, manivelas e roldanas permitem o “bater” das asas, sustentando um voo um tanto irregular, mas controlável. Quando não estão em uso, as asas podem ser dobradas dentro da estrutura.</p>
+        <p>Para voar com as asas do texugo, primeiro é necessário gastar uma ação de movimento para estender as asas. Isso faz com que você passe a ocupar o espaço de uma criatura de uma categoria de tamanho maior que a sua. Para sair do chão, entretanto, é necessário pegar impulso. Isso é um teste de Atletismo para saltar (CD 10). Se passar, você ganha deslocamento de voo 12m por 1 rodada, +1 rodada para cada 5 pontos dos quais o resultado passar a CD. Saltar de um ponto elevado, como do telhado de um celeiro ou da torre de um castelo, fornece um bônus de +5 nesse teste. Ao fim do tempo de voo, você plana lentamente rumo ao chão (como no efeito básico da magia Queda Suave).</p>
+        <p>O voo nas asas do texugo é turbulento; enquanto está voando, você sofre uma penalidade de –2 em testes de ataque e é considerado em condição ruim para lançar magias. Você pode gastar uma ação de movimento e fazer um teste de Atletismo ou Pilotagem (CD 20) para estabilizar as asas e ignorar essas penalidades até o fim de seu turno.</p>
+        <p><center><b>Equipamento de Aventura T$ 200 • 2 Espaços</b></center></p>
+        <hr/>
+        <h5>Totem Espiritial</h5>
+        <p>Personagens com o poder Totem Espiritual podem escolher este valoroso mamífero como seu animal totêmico.</p>
+        <p><b>Texugo.</b> O corajoso texugo permite que você lance Arma Espiritual. A arma se manifesta como um texugo espectral que causa dano de perfuração com sua mordida.</p>
+        <hr/>
+        <h5>Revoada de Texugos (Poder Concedido de Tukala, Deusa Menor dos texugos Alados)</h5>
+        <p>Você pode gastar uma ação de movimento e 3 PM para invocar uma revoada de 1d4+1 texugos alados espirituais que ficam ao seu redor até o fim da cena. Enquanto estiverem ao seu redor, os texugos fornecem +2 em rolagens de dano corpo a corpo e na Defesa. Além disso, quando sofre dano, você pode “gastar” um dos texugos alados para receber RD 5 contra esse dano. ✨</p>
+        `,
+        ha_informacoes_adicionais: true,
+        imagem: 'assets/img/distincao_furioso_cinzento.png',
+        referencias: Referencia.DB,
+        paginas: '208, pags 53 e 54',
+      },
     ];
   }
 }

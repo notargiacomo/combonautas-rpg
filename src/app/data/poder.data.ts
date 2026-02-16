@@ -19151,6 +19151,84 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 62,
+      },
+      {
+        id: 2093,
+        nome: 'Fúria Alada',
+        descricao: `
+          <p><i>O Texugo ensina a combinar asas e fúria para dominar os céus.</i></p>
+          <p>Enquanto está sob efeito de Fúria e voando, você soma o bônus de sua Fúria na margem de ameaça de seus ataques em corpo a corpo e com armas de arremesso. Pré-requisitos: Revoada de Texugos, Fúria.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 63,
+      },
+      {
+        id: 2094,
+        nome: 'Escamas do Texugo',
+        descricao: `
+          <p><i>Os primeiros filhos do Texugo aprenderam a usar suas próprias escamas como armadura.</i></p>
+          <p>Enquanto está sob efeito de Fúria, você soma o bônus de sua Fúria na Defesa e em testes de resistência. Pré-requisito: Fúria Alada.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 63,
+      },
+      {
+        id: 2095,
+        nome: 'Escolhido de Tukala',
+        descricao: `
+          <p><i>Quando você chama, muitos texugos ouvem.</i></p>
+          <p>O custo de sua Revoada de Texugos é reduzido em 1 PM e, para cada poder de furioso cinzento que você tiver, a quantidade de texugos invocados aumenta em um passo (de 1d4+1 para 1d6+1, por exemplo). Pré-requisito: Fúria Alada.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 63,
+      },
+      {
+        id: 2096,
+        nome: 'Presas do Texugo',
+        descricao: `
+          <p><i>Em sua sabedoria celeste, o Texugo lhe concedeu dentes afiados.</i></p>
+          <p>Quando entra em fúria, você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfuração) ou, se já possuir uma arma natural de mordida, o dano dela aumenta em dois passos. Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Pré-requisito: Fúria Alada. ✨</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 63,
+      },
+      {
+        id: 2097,
+        nome: 'Retaliação do Texugo',
+        descricao: `
+          <p><i>Atacar um furioso cinzento só serve para alimentar sua fúria.</i></p>
+          <p>Enquanto está em fúria, na primeira vez em cada rodada que sofrer dano de um inimigo, seu bônus pela Fúria aumenta em +1 até a fúria terminar. Este efeito é cumulativo e limitado ao seu total de poderes de furioso cinzento. Pré-requisito: Fúria Alada.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 63,
+      },
+      {
+        id: 2098,
+        nome: 'Texugo de Rapina',
+        descricao: `
+          <p><i>Não há dúvidas de que o Texugo foi a primeira ave de rapina!</i></p>
+          <p>Você pode fazer testes de Furtividade em Fúria e, quando faz uma investida alada, pode fazer uma ação agredir (em vez de um único ataque corpo a corpo) contra o alvo da investida. Pré-requisito: Presas do Texugo.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 63,
       }
     );
   }
