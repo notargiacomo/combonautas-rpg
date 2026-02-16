@@ -18930,6 +18930,71 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.HABILIDADE_RACA,
         prerequisito_nivel: 1,
         id_raca: [71],
+      },
+      {
+        id: 2076,
+        nome: 'Destruir o Crime',
+        descricao: `
+          <p><i>O poder sagrado de Azgher flui por suas armas.</i></p>
+          <p>Quando faz um ataque corpo a corpo, ou à distância com uma arma de fogo, você pode gastar 2 PM para fortalecer esse ataque com o poder de Azgher. Você soma seu Carisma no teste de ataque e +1d8 na rolagem de dano. Se possuir a habilidade Golpe Divino, em vez disso ela causa 1 dado extra de dano e pode ser usada com armas de fogo. Pré-requisitos: treinado em Intuição, proficiência em armas de fogo, devoto de Azgher.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 60,
+      },
+      {
+        id: 2077,
+        nome: 'Caçador de Bandidos',
+        descricao: `
+          <p><i>Uma vez que o xerife de Azgher esteja em seu encalço, resta aos malfeitores apenas a rendição.</i></p>
+          <p>Você pode gastar uma ação de movimento e uma quantidade de PM (limitada pelo número de poderes de xerife de Azgher que possui) para recitar em voz alta os crimes de uma criatura em alcance médio. Até o final da cena, ou até a criatura se render, para cada 1 PM gasto você recebe +1 na Defesa, em testes de perícia e em rolagens de dano contra esta criatura. Pré-requisito: Destruir o Crime.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 60,
+      },
+      {
+        id: 2078,
+        nome: 'O Longo Braço da Lei',
+        descricao: `
+          <p><i>Nenhum bandido está fora do alcance de um xerife de Azgher.</i></p>
+          <p>Uma vez por rodada, quando uma criatura a até 9m se move voluntariamente mais de 1,5m, você pode gastar 2 PM para fazer um ataque com arma de fogo ou cimitarra (se a criatura estiver em seu alcance natural) contra ela. Você pode sacar a arma com que vai atacar como parte dessa reação. Pré-requisitos: Olho de Azgher, Saque Rápido.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 60,
+      },
+      {
+        id: 2079,
+        nome: 'Olho de Azgher',
+        descricao: `
+          <p><i>Persistente como o sol do deserto, o xerife de Azgher sempre encontra os criminosos.</i></p>
+          <p>Você aprende e pode lançar Localização. Se tiver mais dois outros poderes de xerife de Azgher, aprende e pode lançar também Visão da Verdade. Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM. Pré-requisito: Pistoleiro Solar. ✨</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 60,
+      },
+      {
+        id: 2080,
+        nome: 'Pistoleiro Solar',
+        descricao: `
+          <p><i>Oficialmente sagrado, o xerife de Azgher recebe as bênçãos do Deus-Sol sobre suas armas.</i></p>
+          <p>Você passa a considerar todas as armas de fogo como armas preferidas de Azgher (além da cimitarra). Além disso, você pode usar o poder Espada Solar em armas de fogo e, para cada dois outros poderes de xerife de Azgher que possui, o dado de dano de fogo concedido por este poder aumenta em um passo. Pré-requisitos: Destruir o Crime, Espada Solar.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 60,
       }
     );
   }

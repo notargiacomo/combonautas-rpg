@@ -1300,7 +1300,7 @@ um vigarista de verdade.</p>
         ha_informacoes_adicionais: false,
         imagem: 'assets/img/distincao_vigarista.png',
         referencias: Referencia.HEROIS,
-        paginas: '211, 2012 e 213',
+        paginas: '211, 212 e 213',
       },
       {
         id: 37,
@@ -2189,6 +2189,43 @@ cobrir sua pele de escamas e até mesmo usar uma baforada como a dos dragões. M
         imagem: 'assets/img/distincao_tirano_terceiro.png',
         referencias: Referencia.DEUSES,
         paginas: '139, 140 e 141',
+      },
+      {
+        id: 60,
+        nome: `Xerife de Azgher`,
+        marca_distincao: `
+        <h4><b>Marca da Distinção</b></h4>
+        <h5>Sol Vigilante</h5>
+        <p><i><b>A insígnia dos xerifes de Azgher é um broche de ouro em formato de sol. Mais do que a marca de uma ordem religiosa, o Sol Vigilante é um símbolo de autoridade, lei e ordem.</b></i></p>
+        <p>Você recebe um Sol Vigilante, uma insígnia de ouro que conta como um símbolo sagrado de Azgher. Enquanto ostentá-lo, você recebe +2 em testes de Diplomacia com devotos de Azgher e agentes da lei, como cavaleiros, paladinos, nobres e guardas, e +2 em Intimidação com criminosos, malfeitores e outros indivíduos que, a critério do mestre, tenham problemas com a justiça. Além disso, você é considerado oficialmente uma figura de autoridade, o que inclui autorização para portar armas de fogo no Reinado. Se perder seu Sol Vigilante, você pode obter outro após um dia de orações a Azgher e uma oferenda de T$ 500.</p>
+        `,
+        descricao: `<p>Dentro das fronteiras do Reinado, a justiça é vigilante e afiada como a espada de Khalmyr. Mas em regiões distantes, longe de castelos e cavaleiros, a lei se torna cada vez mais nublada.</p>
+<p>Nessas fronteiras sem lei, criminosos e malfeitores se sentem cada vez mais seguros. Distantes da justiça de Khalmyr, se tornam mais ousados em seus trambiques e mais frequentes em seus achaques. O povo inocente sofre em silêncio, mas a verdade é que ninguém consegue se esconder do olhar implacável do Deus-Sol. Onde os bandidos gargalham crentes em sua impunidade, Azgher atua através de seus xerifes.</p>
+<p>Meio benfeitor, meio homem da lei, o xerife de Azgher é um viajante, missionário, caçador e juiz. Ele vaga de cidade em cidade, de vila em vila, caçando criminosos pela lei dos mortais e do Deus-Sol, protegendo os inocentes em nome de um poder superior. Muitos trazem o rosto oculto por um lenço ou máscara; alguns o fazem para proteger seus entes queridos contra a vingança dos criminosos, enquanto outros são devotos do deus Azgher e obedecem suas obrigações
+e restrições. Todos ostentam um broche mágico na forma de um sol dourado como símbolo de sua autoridade, conhecido como Sol Vigilante.</p>
+<p>Os xerifes de Azgher são uma organização afiliada à igreja do Deus-Sol que sagra oficiais para proteger o povo e garantir o
+cumprimento da lei. Operam frequentemente sozinhos, confiando em sua habilidade e retidão para garantir sua sobrevivência, por vezes com o apoio de grupos de aventureiros. São autorizados a usar armas de fogo mesmo dentro do Reinado, com uma predileção pela pistola, rivalizada pela a cimitarra tradicional entre devotos de Azgher.</p>
+<p>Algumas cidades têm um xerife de Azgher residente, mas isso só acontece nas piores pocilgas de Arton, tão infestadas pelo crime que exigem um guardião permanente.</p>`,
+        admissao: `<p>
+O candidato precisa encontrar, prender e entregar às autoridades um criminoso que tenha cometido um crime grave contra um inocente. O momento da entrega às autoridades deve acontecer às claras, sob a luz de Azgher. Depois que esta missão estiver cumprida, quando o candidato for dormir, terá um sonho mostrando o caminho para a sede dos xerifes, no Império de Tauron.
+</p>
+
+<p>
+Após visitar a sede e se identificar, o candidato deve provar seu valor para a ordem. Dependendo da notoriedade do criminoso preso pelo candidato, isso pode ser o suficiente. Caso contrário, a ordem pode designar alguns testes locais para avaliar sua habilidade. De qualquer forma, mesmo depois de considerado apto, o candidato precisa ajudar um xerife em um caso antes de ser sagrado.
+</p>
+
+<p>
+Normalmente se trata de uma aventura, na qual o xerife acompanha o candidato e permite que ele tome a iniciativa sempre que possível, atuando apenas como observador na maior parte do tempo. Ao longo dessa aventura, o xerife julgará principalmente a conduta do candidato. De certa forma, o teste na sede dos xerifes testa a habilidade e o caso acompanhando o xerife testa o caráter.
+</p>
+
+<p>
+Caso seja finalmente considerado digno, o candidato recebe um Sol Vigilante e é sagrado xerife de Azgher pela Ordem. É de bom tom que o candidato faça uma oferenda aos xerifes de pelo menos T$ 2.000 antes de ir embora.
+</p>
+`,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_xerife_de_azgher.png',
+        referencias: Referencia.DB,
+        paginas: '205, pags 58 à 60',
       },
     ];
   }

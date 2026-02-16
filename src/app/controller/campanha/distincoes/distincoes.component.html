@@ -13,7 +13,7 @@
       <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
         <div class="row mt-1 mb-2">
           <div class="col-sm-12 mt-1 d-flex justify-content-end">
-            {{ item.referencias + ', pag. ' + item.paginas }}
+            {{ item.referencias + ' ' + item.paginas }}
           </div>
         </div>
         <mat-tab-group>
@@ -22,7 +22,7 @@
           </mat-tab>
           <mat-tab label="Descrição">
             <div class="row mt-4">
-              <div class="col-sm-12 text-justify" [innerHTML]="item.descricao_distincao"></div>
+              <div class="col-sm-12 text-justify" [innerHTML]="item.descricao"></div>
             </div>
           </mat-tab>
           <mat-tab label="Admissão">
