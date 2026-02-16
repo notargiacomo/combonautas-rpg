@@ -18939,7 +18939,7 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
           <p>Quando faz um ataque corpo a corpo, ou à distância com uma arma de fogo, você pode gastar 2 PM para fortalecer esse ataque com o poder de Azgher. Você soma seu Carisma no teste de ataque e +1d8 na rolagem de dano. Se possuir a habilidade Golpe Divino, em vez disso ela causa 1 dado extra de dano e pode ser usada com armas de fogo. Pré-requisitos: treinado em Intuição, proficiência em armas de fogo, devoto de Azgher.</p>
           `,
         poder_chave_distincao: true,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DB,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 60,
@@ -18952,7 +18952,7 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
           <p>Você pode gastar uma ação de movimento e uma quantidade de PM (limitada pelo número de poderes de xerife de Azgher que possui) para recitar em voz alta os crimes de uma criatura em alcance médio. Até o final da cena, ou até a criatura se render, para cada 1 PM gasto você recebe +1 na Defesa, em testes de perícia e em rolagens de dano contra esta criatura. Pré-requisito: Destruir o Crime.</p>
           `,
         poder_chave_distincao: false,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DB,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 60,
@@ -18965,7 +18965,7 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
           <p>Uma vez por rodada, quando uma criatura a até 9m se move voluntariamente mais de 1,5m, você pode gastar 2 PM para fazer um ataque com arma de fogo ou cimitarra (se a criatura estiver em seu alcance natural) contra ela. Você pode sacar a arma com que vai atacar como parte dessa reação. Pré-requisitos: Olho de Azgher, Saque Rápido.</p>
           `,
         poder_chave_distincao: false,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DB,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 60,
@@ -18978,7 +18978,7 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
           <p>Você aprende e pode lançar Localização. Se tiver mais dois outros poderes de xerife de Azgher, aprende e pode lançar também Visão da Verdade. Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM. Pré-requisito: Pistoleiro Solar. ✨</p>
           `,
         poder_chave_distincao: false,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DB,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 60,
@@ -18991,10 +18991,75 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
           <p>Você passa a considerar todas as armas de fogo como armas preferidas de Azgher (além da cimitarra). Além disso, você pode usar o poder Espada Solar em armas de fogo e, para cada dois outros poderes de xerife de Azgher que possui, o dado de dano de fogo concedido por este poder aumenta em um passo. Pré-requisitos: Destruir o Crime, Espada Solar.</p>
           `,
         poder_chave_distincao: false,
-        referencias: Referencia.HEROIS,
+        referencias: Referencia.DB,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 60,
+      },
+      {
+        id: 2081,
+        nome: 'Técnica Endiabrada',
+        descricao: `
+          <p><i>Para um menestrel maldito, sua alma não é apenas uma moeda de barganha; ela é a energia que fortalece suas notas e torna sua música tão poderosa.</i></p>
+          <p>Quando usa Inspiração ou uma música de bardo empunhando seu instrumento afinado, o alcance desta habilidade aumenta em um passo (de curto para médio e de médio para longo). Além disso, quando faz um teste de Atuação com seu instrumento afinado, você pode gastar 1 PM para escolher 10, ou 5 PM para escolher 20, em qualquer situação, exceto testes de ataque. Se escolher 20 dessa forma, você fica alquebrado. Pré-requisitos: treinado em Atuação, Inspiração.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 61,
+      },
+      {
+        id: 2082,
+        nome: 'Celeridade Cerúlea',
+        descricao: `
+          <p><i>Não basta ser mais preciso que qualquer outro músico, um menestrel maldito é também mais rápido.</i></p>
+          <p>Uma vez por rodada, quando usa uma música de bardo empunhando seu instrumento afinado, você pode gastar 2 PM para usar esta música como uma ação livre. Pré-requisito: Técnica Endiabrada.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 61,
+      },
+      {
+        id: 2083,
+        nome: 'Composição Mágica',
+        descricao: `
+          <p><i>O menestrel maldito aprende a entrelaçar suas magias com a tristeza de suas notas musicais.</i></p>
+          <p>Quando lança uma magia de bardo com um teste de resistência, você pode gastar 2 PM para fazer um teste de Atuação (CD 10). Se passar, você aumenta a CD da magia em +1, +1 para cada 10 pontos que seu teste de Atuação passar a CD. Pré-requisitos: treinado em Misticismo, Técnica Endiabrada.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 61,
+      },
+      {
+        id: 2084,
+        nome: 'Música: Ária da Tristeza',
+        descricao: `
+          <p><i>Impreganada por sua própria tragédia, a música do menestrel maldito carrega tanta tristeza que pode até paralisar seus ouvintes.</i></p>
+          <p>Faça um teste de Atuação oposto ao teste de Vontade de cada criatura a sua escolha dentro do alcance (você faz um único teste). Alvos que falhem ficam atordoados por uma rodada (uma criatura só pode ser atordoada por este poder uma vez por cena) e frustrados. Pré-requisito: Técnica Endiabrada.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 61,
+      },
+      {
+        id: 2085,
+        nome: 'Música: Nota Azul',
+        descricao: `
+          <p><i>É um risco se deixar levar pela música de um menestrel maldito. Os acordes hipnóticos podem não apenas conquistar sua atenção, mas também consumir sua mente e levar à morte.</i></p>
+          <p>Faça um teste de Atuação oposto pelo teste de Vontade de cada criatura a sua escolha dentro do alcance (você faz um único teste). Alvos que falhem sofrem 1d8 pontos de dano mental (ou 1d12, se estiverem sofrendo alguma condição mental). Para cada outro poder de menestrel maldito que você possui, o dano de sua Nota Azul aumenta em +1d8 ou +1d12, conforme apropriado. Pré-requisito: Técnica Endiabrada.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 61,
       }
     );
   }

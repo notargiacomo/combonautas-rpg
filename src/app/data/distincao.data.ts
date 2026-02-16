@@ -2227,6 +2227,35 @@ Caso seja finalmente considerado digno, o candidato recebe um Sol Vigilante e é
         referencias: Referencia.DB,
         paginas: '205, pags 58 à 60',
       },
+      {
+        id: 61,
+        nome: `Menestrel Maldito`,
+        marca_distincao: `
+        <h4><b>Marca da Distinção</b></h4>
+        <h5>A Maldição do Menestrel</h5>
+        <p><i><b>Como pagamento pelo pacto com o Estranho de Azul, o menestrel cede uma pequena, mas importante, parte de sua alma.</b></i></p>
+        <p>Um instrumento musical à sua escolha se torna afinado com uma porção de sua própria alma. Quando usa esse instrumento, você recebe +1 em Atuação e a CD para resistir às suas habilidades de bardo aumenta em +1. Se perder seu instrumento, o Estranho de Azul irá afinar outro, desde que você passe uma noite em claro em uma encruzilhada.</p>
+        <p>Ter firmado esse pacto, entretanto, significa que seu tempo em Arton será mais breve que o normal. Sempre que estiver com 0 PV ou menos, sua alma fica à mercê do Estranho de Azul; no início de cada um dos seus turnos, você deve fazer um teste de Sabedoria (CD 15). Se passar, evita o Estranho e não precisa mais fazer esse teste até sofrer dano que o deixe com 0 PV ou menos novamente. Caso termine três rodadas (não necessariamente consecutivas) na mesma cena nessa situação, você morre e é levado pelo Estranho de Azul para as profundezas de Venomia. Lá, passará sua existência em eterna miséria, tocando suas desgraças para o deleite de Sszzass, e nunca poderá ser revivido. </p>
+        `,
+        descricao: `<p>
+Existe uma história sussurrada em tons de cautela e inveja nos conservatórios de música ou entre os bardos que frequentam as cortes dos nobres. Ela fala sobre uma figura trajada de azul que surge em uma encruzilhada diante de um músico que perdeu tudo e oferece a ele uma chance de começar de novo. É uma história de redenção e maldição, pois aqueles que aceitam a barganha do estranho de azul aceitam o maior dos preços por uma segunda chance em suas vidas.
+</p>
+
+<p>
+O mesmo relato pode ser ouvido nos mais diferentes lugares, nos mais variados tons. Ela pode ser um causo engraçado, contado entre risadas e bater de canecas em estalagens portuárias ou como uma fábula assustadora, recitada com seriedade diante de músicos aspirantes. Muitos que a ouvem acreditam ser apenas uma lenda, um conto feito para amedrontar os bem-sucedidos e levar uma módica esperança para aqueles que não têm nada. A realidade, entretanto, é que a história do Estranho de Azul é verdadeira; uma trágica narrativa que, independente de como seja contada, carrega mistério, suspense, esperança, maldição, arte e, inevitavelmente, morte.
+</p>
+
+<p>
+O menestrel maldito é um artista que perdeu tudo, ou ao menos aquilo que mais importava. Desiludido, ele perseguiu a história do Estranho de Azul até ser encontrado por ele. Em troca de uma porção de sua alma, este artista desesperado recebeu uma breve, mas redentora, segunda chance. Reencontrando sua arte, o menestrel maldito aprende que o pouco tempo que lhe resta é sua última chance de deixar uma marca indelével e emocionante na mente e na alma de seu público.
+</p>
+`,
+        admissao: `<p>O candidato precisa ter sofrido uma tragédia pessoal terrível. Pode ter sido abandonado por um grande amor, presenciado a morte de um amigo próximo, perdido uma posição de destaque ou algum outro evento similar. Depois disso, deve ir até uma encruzilhada levando seu instrumento musical, cair de joelhos e se lamentar para o vazio. Após horas de choro, surgirá um demônio na forma de um indivíduo alto e esguio, vestindo um manto azul, com longos cabelos que caem por cima de seu rosto, deixando visível apenas o brilho soturno de seus cinco olhos. A figura estenderá a mão, pedindo o instrumento do músico. Caso entregue, o Estranho de Azul afinará o instrumento, usando fragmentos da alma do próprio candidato, e o oferecerá de volta. Se o músico aceitar esse instrumento, se tornará um menestrel maldito até o resto dos seus breves dias.</p>
+`,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_menestrel_maldito.png',
+        referencias: Referencia.DB,
+        paginas: '206, pags 47 à 49',
+      },
     ];
   }
 }
