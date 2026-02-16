@@ -1,5 +1,0 @@
-<h5>Componentes Especiais</h5>
-<p>Os magos da Ordem do Vazio empregam componentes especiais para canalizar seu mana na forma de magias. Um componente especial é um material mundano, como retalhos de tecido, pedaços de queijo ou fios de cabelo. Esse componente deve ser empunhado da mesma forma que um componente material (o mago pode usar a mesma mão para ambos) e é consumido da mesma maneira. Cada mago da Ordem do Vazio possui seu  próprio componente especial, determinado quando ele ingressa na Ordem.</p>
-<p>Um componente especial é algo de preço insignificante, que pode ser encontrado no meio ambiente. Uma vez por dia, você consegue reunir um punhado de seu componente especial enquanto executa suas outras tarefas. Se dedicar um dia inteiro para reunir seu componente especial, em vez disso encontra 1d3+1 punhados. Um
-punhado de componente especial ocupa 1 espaço e é suficiente para 5 magias. A critério do mestre, pode não ser possível encontrar seu componente especial em
-determinados lugares (um mago da Ordem do Vazio que usa sementes de maçã, por exemplo, poderia ter dificuldade de encontrá-las em uma masmorra abandonada).</p>

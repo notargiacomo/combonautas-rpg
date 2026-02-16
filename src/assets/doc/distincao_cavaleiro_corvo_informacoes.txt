@@ -1,2 +1,0 @@
-<h5>A Língua dos Corvos</h5>
-<p>Composta por uma combinação de jargões, expressões e gestos, a Língua dos Corvos foi criada para transmitir informações e comandos de forma silenciosa e discreta em qualquer cenário de missão. Você pode gastar uma ação de movimento e 1 PM para transmitir informações para um aliado em alcance curto. Isso funciona como o efeito básico da magia Aviso, mas você não precisa falar (comunica-se por gestos) e o alvo deve ser capaz de vê-lo.</p>

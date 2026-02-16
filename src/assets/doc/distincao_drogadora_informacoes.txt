@@ -1,4 +1,0 @@
-<h5>Receitas da Drogadora</h5>
-<p>Quando adquire o poder Remédios da Floresta, você aprende suas primeiras receitas. Uma receita é uma magia divina ou arcana que pode ser usada
-para fabricar poções com esse poder.</p>
-<p>Você começa com uma quantidade de receitas de 1º círculo igual à sua Sabedoria. Para cada poder da distinção, você aprende uma receita adicional, que pode ser de até 2º círculo. Suas receitas são aprendidas como parte da tradição oral das drogadoras e não dependem de um livro ou outra forma de registro.</p>

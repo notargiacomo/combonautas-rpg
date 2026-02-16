@@ -20,6 +20,16 @@
           <mat-tab label="Imagem">
             <img [src]="item.imagem" [alt]="item.nome" style="height: 700px !important" />
           </mat-tab>
+          <mat-tab label="Descrição">
+            <div class="row mt-4">
+              <div class="col-sm-12 text-justify" [innerHTML]="item.descricao_distincao"></div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Admissão">
+            <div class="row mt-4">
+              <div class="col-sm-12 text-justify" [innerHTML]="item.admissao"></div>
+            </div>
+          </mat-tab>
           <mat-tab label="Poderes" *ngIf="item.poderes && item.poderes.length > 0">
             <div class="row mt-2">
               <h5>Poderes de Classe</h5>
@@ -28,6 +38,11 @@
                 <div class="col-sm-12">
                   <hr />
                 </div>
+              </div>
+              <div
+                class="col-sm-12 mt-1 mb-4"
+                style="background-color: rgb(68, 5, 18) !important; padding-left: 30px !important">
+                <div class="row col-sm-12 text-justify" [innerHTML]="item.marca_distincao"></div>
               </div>
               <div class="col-sm-12">
                 <div
@@ -39,9 +54,9 @@
               </div>
             </div>
           </mat-tab>
-          <mat-tab *ngIf="item.descricao_distincao" label="Info.">
+          <mat-tab *ngIf="item.ha_informacoes_adicionais" label="Info.">
             <div class="row mt-4">
-              <div class="col-sm-12 text-justify" [innerHTML]="item.descricao_distincao"></div>
+              <div class="col-sm-12 text-justify" [innerHTML]="item.descricao_informacoes"></div>
             </div>
           </mat-tab>
         </mat-tab-group>
