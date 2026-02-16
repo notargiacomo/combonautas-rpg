@@ -19060,6 +19060,97 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 61,
+      },
+      {
+        id: 2086,
+        nome: 'Arsenal de Coral',
+        descricao: `
+          <p><i>O Presa de Coral se torna mestre no uso das armas tradicionais de sua ordem.</i></p>
+          <p>Você recebe +1 na margem de ameaça com armas do arsenal de coral (cimitarras, espadas curtas, espadas longas, azagaias e lanças). Além disso, quando usa Sangue do Dragão-Rei, o dano extra de ácido com essas armas aumenta em 1 passo, +1 passo para cada três outros poderes de Presa de Coral que você possuir. Pré-requisitos: treinado em Atletismo e Luta</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 62,
+      },
+      {
+        id: 2087,
+        nome: 'Presa Distante: Azagaia de Água',
+        descricao: `
+          <p><i>Os Presas de Coral aprendem a usar lanças e azagaias para invocar a fúria do mar.</i></p>
+          <p>Você não sofre a penalidade em ataque por empunhar azagaias como armas corpo a corpo e o alcance de seus ataques à distância com azagaias e lanças aumenta em um passo. Além disso, se estiver empunhando uma dessas armas, você pode gastar uma ação padrão e 2 PM para disparar uma rajada de água salgada que percorre uma linha de 9m e usa as mesmas características da arma empunhada. Faça um teste de ataque à distância com a arma e compare o resultado com a Defesa de cada criatura nesta área. Então, faça uma rolagem de dano e aplique o resultado a cada inimigo atingido. Criaturas que sofram dano dessa forma também ficam lentas por 1 rodada. Pré-requisitos: Arsenal de Coral, Estilo de Arremesso. ✨</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 62,
+      },
+      {
+        id: 2088,
+        nome: 'Presa Dupla: Corte da Correnteza',
+        descricao: `
+          <p><i>Os Presas de Coral aprendem a usar armas em pares para atacar de forma implacável e replicar a intensidade da correnteza marítima.</i></p>
+          <p>Se estiver empunhando duas armas do arsenal de coral, você não sofre a penalidade em testes de ataque pelo poder Estilo de Duas Armas. Além disso, você pode gastar uma ação padrão e 3 PM para girar suas armas em um arco e invocar um redemoinho de água salgada. Faça um ataque corpo a corpo com cada uma das armas e compare-os com a Defesa de cada inimigo em seu alcance natural. Então, faça uma rolagem de dano para cada ataque e aplique o resultado correspondente a cada inimigo atingido. Criaturas atingidas por ambos os ataques ficam sangrando. Pré-requisitos: Arsenal de Coral, Estilo de Duas Armas.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 62,
+      },
+      {
+        id: 2089,
+        nome: 'Presa Suprema: Arquipélago de Dor',
+        descricao: `
+          <p><i>Da mesma forma que o mar envolve Khubar, um Presa de Coral pode se mover em volta de um oponente, preparando um golpe feroz.</i></p>
+          <p>Você pode gastar uma ação completa e 3 PM para desferir um ataque especial contra um oponente adjacente. Você pode percorrer qualquer distância, até o seu deslocamento, desde que se mantenha sempre adjacente ao alvo e não passe pelo mesmo espaço mais de uma vez. Ao final deste movimento, você faz uma ação agredir contra o alvo com um bônus de +1 no teste de ataque, na rolagem de dano e na margem de ameaça de seus ataques com armas do arsenal de coral para cada 1,5m percorrido desta forma. Pré-requisito: Três Se Tornam Um.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 62,
+      },
+      {
+        id: 2090,
+        nome: 'Manobra Maremoto',
+        descricao: `
+          <p><i>Quando um guerreiro khubariano de elite decide que vai atingir um alvo, nada pode detê-lo.</i></p>
+          <p>Quando faz uma investida empunhando pelo menos uma arma de seu arsenal de coral, você pode gastar 3 PM para se transformar em um maremoto vivo. Durante esta investida, seu deslocamento aumenta em +6m e você ignora terreno difícil natural. Além disso, pode passar por objetos como se fosse água e empurra criaturas em seu caminho; faça um teste da manobra empurrar e compare o resultado com o teste de cada criatura afetada. Criaturas que perderem o teste de manobra são empurradas 1,5m para um lado à sua escolha. Pré-requisito: Salto Oceânico. ✨</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 62,
+      },
+      {
+        id: 2091,
+        nome: 'Salto Oceânico',
+        descricao: `
+          <p><i>Os Presas de Coral são tão integrados ao oceano que podem nadar até mesmo em terra firme.</i></p>
+          <p>Você recebe deslocamento de natação igual ao seu deslocamento (se já tiver deslocamento de natação, em vez disso ele aumenta em 3 metros). Além disso, você aprende e pode lançar a magia Salto Dimensional (apenas em você). Caso esteja sob a chuva ou com pelo menos metade do corpo imerso em água, você pode lançar esta magia como uma ação de movimento. Pré-requisito: Arsenal de Coral.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 62,
+      },
+      {
+        id: 2092,
+        nome: 'Três Se Tornam Um',
+        descricao: `
+          <p><i>O estilo de luta dos Presas de Coral usa lanças e espadas. Os mais habilidosos entre esses guerreiros de elite aprendem a extrair o máximo de cada uma dessas armas.</i></p>
+          <p>Você pode gastar uma ação de movimento e 1 PM para combinar suas técnicas de luta. Até o fim da cena, cada arma do arsenal de coral que você empunhar recebe as habilidades adaptável, alongada, ágil e/ou arremessável (curto), à sua escolha, e se beneficia de bônus específicos de armas que você possua para qualquer arma do arsenal (como a habilidade Mestre do Tridente). Pré-requisito: Arsenal de Coral.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 62,
       }
     );
   }

@@ -2256,6 +2256,29 @@ O menestrel maldito é um artista que perdeu tudo, ou ao menos aquilo que mais i
         referencias: Referencia.DB,
         paginas: '206, pags 47 à 49',
       },
+      {
+        id: 62,
+        nome: `Presa Coral`,
+        marca_distincao: `
+        <h4><b>Marca da Distinção</b></h4>
+        <h5>Sangue do Dragão-Rei</h5>
+        <p><i><b>Parte do ritual de iniciação de um Presa de Coral, o consumo de Sangue do DragãoRei é também a etapa mais perigosa da preparação destes combatentes</b></i></p>
+        <p>A poção alquímica conhecida como Sangue do Dragão-Rei é feita com veneno de serpentes marinhas, ervas locais de Khubar, água do mar e (dizem) uma gota de sangue de dragão. Sua fórmula exata, entretanto, é o segredo mais bem guardado dos Presas de Coral. Como parte do ritual de iniciação, você deve ingerir um gole de Sangue do Dragão-Rei e fazer um teste estendido de Fortitude (CD 20, 3 sucessos). Para cada falha, você perde 2d12 pontos de vida por veneno e, em uma falha total, sofre uma morte agonizante e dolorida. Se passar no teste estendido, completa o ritual de iniciação e recebe a capacidade de imbuir suas armas com poder dracônico. Você pode gastar 2 PM e uma ação de movimento para que as armas que você empunha causem +1d4 pontos de dano de ácido até o fim da cena. </p>
+        `,
+        descricao: `O reino arquipélago de Khubar tem um guardião sem igual. Ao longo dos séculos Benthos, o Dragão-Rei dos Mares, protegeu seus habitantes das mais variadas e perigosas ameaças. Entretanto, os khubarianos não são um povo que se sente confortável de viver sob a sombra de ninguém, seja homem ou dragão.
+
+Com o primeiro contato entre os khubarianos e Benthos, começou a surgir entre os habitantes do arquipélago uma poderosa tradição guerreira, dedicada a emular o poder bélico do Dragão-Rei. Chamados de Presas de Coral, os membros desta tradição acumularam poder político e militar, mantendo-se aliados de todos governos locais, mas sempre independentes. Orgulhosos e dedicados, os Presas de Coral veem em Benthos uma fonte de poder e inspiração. Entretanto, ainda que alguns destes guerreiros venerem o DragãoRei como um deus, eles não se contentam apenas com preces. Como parte de seus ritos e treinamentos, eles se valem de um preparado alquímico especial para desenvolver habilidades mágicas que os permitem emular os poderes do próprio Dragão-Rei.
+
+Um Presa de Coral é um guerreiro de elite khubariano, um feroz campeão de seu povo. Ele empunha azagaia, espada e lança em combinações letais e invoca poderes mágicos assombrosos de sua conexão com Benthos e com o mar que cerca sua terra natal.
+</p>
+`,
+        admissao: `<p>Para começar o processo de admissão, um candidato deve impressionar um capitão dos Presas de Coral e ser convidado pessoalmente a integrar a ordem. Feitos que normalmente impressionam os capitães incluem derrotar um grande número de oponentes desafiadores sozinho, ou vencer, sozinho ou em grupo, um oponente de poder claramente superior. Uma vez que tenha atraído a atenção de um capitão e aceito o convite, o candidato passa a treinar com um grupo de candidatos ou, dependendo das circunstâncias, com outros Presas de Coral. Este treinamento inclui testes de coragem, aptidão física, habilidade marcial e comprometimento com Khubar e pode se estender por várias semanas. Por fim, após participar do treinamento, o candidato é enviado em uma missão em que deverá provar sua lealdade a Benthos, ao arquipélago e, sobretudo, aos Presas de Coral. Se for bem-sucedido nessa missão, o candidato é convidado a passar pela cerimônia de iniciação, que envolve consumo de sangue do Dragão-Rei (veja caixa). Se sobreviver, se tornará um Presa de Coral.</p>
+`,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_presa_coral.png',
+        referencias: Referencia.DB,
+        paginas: '206, pags 50 à 52',
+      },
     ];
   }
 }
