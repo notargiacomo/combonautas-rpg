@@ -19229,6 +19229,138 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 63,
+      },
+      {
+        id: 2099,
+        nome: 'Dádiva das Guildas',
+        descricao: `
+          <p><i>Um campeão das guildas é reconhecido pelas guildas às quais pertence, usando seu aprendizado de formas inovadoras.</i></p>
+          <p><section class="guildas">
+  <p>
+    Escolha duas das guildas às quais você pertence a seguir. Você recebe os benefícios
+    referentes às guildas escolhidas, desde que atenda aos pré-requisitos delas.
+  </p>
+
+  <ul>
+
+    <li>
+      <strong>Guilda dos Armeiros:</strong>
+      você pode fabricar armas, armaduras e escudos superiores com uma melhoria.
+      Se já for capaz de produzir itens com melhorias, pode fabricá-los com uma melhoria adicional
+      (para o máximo de quatro melhorias).
+      <br><strong>Avançado:</strong> você pode fabricar itens superiores com duas melhorias, sendo que
+      uma delas não conta para o limite de melhorias do item.
+      <br><em>Pré-requisito:</em> treinado em Ofício (armeiro).
+    </li>
+
+    <li>
+      <strong>Guilda dos Cervejeiros:</strong>
+      você pode usar Ofício (cozinheiro) para preparar poções de magias, arcanas ou divinas,
+      de 1º círculo, cujo alvo seja 1 criatura. As poções tomam a forma de bebidas e seguem
+      as regras desses itens, exceto que ingeri-las é uma ação padrão.
+      <br>A bebida pode ser comum ou especial. No segundo caso, a CD para fabricá-las aumenta
+      em +5 e o custo aumenta conforme a bebida especial, mas consumi-la gera ambos os efeitos
+      (da poção e da bebida especial).
+      <br><strong>Avançado:</strong> você pode preparar poções também de magias de 2º círculo.
+      <br><em>Pré-requisito:</em> treinado em Ofício (cozinheiro).
+    </li>
+
+    <li>
+      <strong>Guilda dos Construtores:</strong>
+      quando está em uma construção, você pode usar Ofício (engenheiro) para a ação analisar
+      terreno, da perícia Guerra.
+      <br><strong>Avançado:</strong> você pode usar Ofício (engenheiro) em vez de Investigação
+      e Ladinagem para encontrar e desarmar armadilhas, respectivamente.
+      <br><em>Pré-requisito:</em> treinado em Ofício (engenheiro).
+    </li>
+
+    <li>
+      <strong>Guilda dos Guerreiros:</strong>
+      se estiver vestindo armadura pesada, você recebe RD 2. Essa RD aumenta em 1 para cada
+      dois poderes de campeão das guildas.
+      <br><strong>Avançado:</strong> você pode gastar 2 PM para seus aliados adjacentes receberem
+      a sua RD até o fim da cena.
+      <br><em>Pré-requisito:</em> treinado em Luta ou Guerra.
+    </li>
+
+    <li>
+      <strong>Guilda dos Mineradores:</strong>
+      você recebe deslocamento de escavação igual à metade do seu deslocamento básico e +2
+      em testes de perícia no subterrâneo (exceto Luta e Pontaria).
+      <br><strong>Avançado:</strong> uma vez por dia, quando passa em um teste de Ofício (minerador)
+      para sustento, você pode gastar 2 PM para encontrar pedras preciosas.
+      <br><em>Pré-requisito:</em> treinado em Ofício (minerador).
+    </li>
+
+    <li>
+      <strong>Guilda dos Nobres:</strong>
+      você pode gastar uma ação padrão e 1 PM para fazer um teste de Nobreza (CD 20) e,
+      se passar, seus aliados em alcance curto recebem +2 em seu próximo teste até o fim
+      da cena, e +1 para cada 10 pontos acima da CD.
+      <br><strong>Avançado:</strong> o bônus no próximo teste aumenta em +1 para cada 5 pontos
+      acima da CD do teste.
+      <br><em>Pré-requisito:</em> treinado em Nobreza.
+    </li>
+
+    <li>
+      <strong>Guilda dos Pensadores:</strong>
+      uma vez por cena, quando falha em um teste de perícia (exceto testes de resistência,
+      Luta e Pontaria), você pode gastar 2 PM para substituir o teste pelo de outra perícia
+      treinada apropriada.
+      <br><strong>Avançado:</strong> você pode substituir até mesmo um teste de resistência,
+      Luta ou Pontaria.
+      <br><em>Pré-requisito:</em> treinado em Atuação, Conhecimento ou Religião.
+    </li>
+
+    <li>
+      <strong>Guilda dos Provedores:</strong>
+      quando faz um teste para sustento, você ganha TO 1, e mais TO 1 por ponto que seu teste
+      exceder a CD, em vez de T$ 1.
+      <br><strong>Avançado:</strong> o valor ganho aumenta para TO 5, e mais TO 5 para cada ponto
+      que o teste exceder a CD.
+      <br><em>Pré-requisito:</em> treinado em Ofício, exceto armeiro, engenheiro ou mineiro.
+    </li>
+
+  </ul>
+
+  <p>
+    Você pode escolher esse poder até quatro vezes, para receber as dádivas de outras guildas.
+    <br><em>Pré-requisito:</em> treinado nas perícias das guildas.
+  </p>
+</section>
+</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 64,
+      },
+      {
+        id: 2100,
+        nome: 'Mestre das Artes',
+        descricao: `
+          <p><i>Todos já se impressionavam com as habilidades do campeão das guildas. Mas o campeão está sempre buscando ser melhor</i></p>
+          <p>Você recebe o benefício avançado das dádivas das guildas que possuir.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 64,
+      },
+      {
+        id: 2101,
+        nome: 'Grão-Mestre por Aclamação',
+        descricao: `
+          <p><i>Para os membros das guildas, o campeão é um símbolo da cultura anã tão importante quanto os próprios grão-mestres.</i></p>
+          <p>Você recebe uma das habilidades raciais de anões a sua escolha (veja Tormenta20, p. 20). Se já for um anão, em vez disso você recebe +1 em Constituição e +2 nas rolagens de dano com machados, martelos, marretas e picaretas. Pré-requisitos: Mestre das Artes, dádivas de oito guildas.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 64,
       }
     );
   }
