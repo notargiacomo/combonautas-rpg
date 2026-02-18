@@ -19484,13 +19484,209 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         nome: 'Queixo de Pedra',
         descricao: `
           <p><i>O explorador destemido cai em precipícios, é envenenado por plantas, atingido por relâmpagos… mas continua caminhando normalmente!</i></p>
-          <p>Uma vez por rodada, quando sofrer dano de algum perigo, mas não de ataques, pode gastar 2 PM para fazer um teste de Sobrevivência e subtrair o resultado do dano sofrido. Pré-requisitos: quatro outros poderes de explorador destemido./p>
+          <p>Uma vez por rodada, quando sofrer dano de algum perigo, mas não de ataques, pode gastar 2 PM para fazer um teste de Sobrevivência e subtrair o resultado do dano sofrido. Pré-requisitos: quatro outros poderes de explorador destemido. </p>
           `,
         poder_chave_distincao: false,
         referencias: Referencia.DB,
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 66,
+      },
+      {
+        id: 2111,
+        nome: 'Inspirar bravura',
+        descricao: `
+          <p><i>O cavaleiro libertador inspira seus companheiros com sua coragem e atitude positiva.</i></p>
+          <p>Você pode gastar 2 PM para gerar uma aura com 9m de raio. Você e seus aliados dentro da área recebem +2 em rolagens de dano e em testes de resistência contra efeitos mentais, de medo e de movimento. Para cada dois outros poderes de cavaleiro libertador que você possui, quando ativa a aura você pode gastar +1 PM para aumentar os bônus em +1. Pré-requisitos: Car 2, treinado em Diplomacia, devoto de Valkaria. ✨</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 67,
+      },
+      {
+        id: 2112,
+        nome: 'Campeão da Deusa',
+        descricao: `
+          <p><i>Sua devoção pode ser ouvida por Valkaria em momentos de necessidade.</i></p>
+          <p>Você pode gastar uma ação de movimento e 2 PM para receber um poder concedido de Valkaria até o fim da cena ou até usar este poder novamente. Pré-requisitos: treinado em Religião, Inspirar Bravura.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 67,
+      },
+      {
+        id: 2113,
+        nome: 'Desafiar o Perigo',
+        descricao: `
+          <p><i>Quanto mais poderoso o inimigo, maior a confiança do cavaleiro em vencê-lo.</i></p>
+          <p>Você recebe +1 em testes de perícia e na Defesa quando luta em desvantagem (contra um grupo pelo menos duas vezes maior que o seu) ou quando combate sozinho um adversário de ND igual ou superior ao seu nível. Esses bônus aumentam em +1 para cada dois outros poderes de cavaleiro libertador que você possui. Pré-requisitos: Coragem Total, Inspirar Bravura.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 67,
+      },
+      {
+        id: 2114,
+        nome: 'Habilidade de Herói',
+        descricao: `
+          <p><i>Para combater a opressão e tirania, é necessário superar os próprios limites.</i></p>
+          <p>Você recebe +1 em um atributo a sua escolha. Se possuir todos os cinco poderes de cavaleiro libertador, você recebe +1 em outro atributo a sua escolha. Pré-requisito: Inspirar Bravura.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 67,
+      },
+      {
+        id: 2115,
+        nome: 'Por Valkaria!',
+        descricao: `
+          <p><i>O cavaleiro libertador possui fé suficiente para partilhar com seus aliados.</i></p>
+          <p>Você pode gastar uma ação padrão e 2 PM para compartilhar uma bênção de Valkaria. Escolha um poder concedido de Valkaria que você possua e qualquer número de aliados em alcance curto. Esses aliados recebem o poder escolhido até o fim da cena (o efeito também termina se você perder o poder concedido). Pré-requisito: Habilidade de Herói.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 67,
+      },
+      {
+        id: 2116,
+        nome: 'Escudo Redentor',
+        descricao: `
+          <p><i>O Cavaleiro da Redenção está sempre pronto a servir como escudo para seus aliados, permitindo que vivam mais tempo para se redimir</i></p>
+          <p>Quando um aliado dentro do efeito de sua Égide Sagrada se torna alvo de um ataque ou efeito hostil, você pode gastar 2 PM para proteger esse aliado usando seu próprio escudo. Apenas contra este ataque ou efeito, o aliado aplica quaisquer bônus que seu escudo forneça na Defesa, em testes de resistência e em redução de dano (isso conta como um benefício do poder, não de equipamento). Além disso, se o aliado sofrer dano desse ataque ou efeito, você sofre metade do dano no lugar dele. Pré-requisitos: treinado em Diplomacia, Luta e Vontade, Égide Sagrada, devoto de Thyatis.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 68,
+      },
+      {
+        id: 2117,
+        nome: 'Conceder Segunda Chance',
+        descricao: `
+          <p><i>Viver a redenção não é o bastante. Cabe ao Cavaleiro dividi-la com os outros.</i></p>
+          <p>Uma vez por rodada, quando um aliado em alcance curto falha em um teste, você pode gastar 2 PM para que esse aliado role novamente esse teste. Para cada dois outros poderes de Cavaleiro da Redenção, você pode usar este poder uma vez adicional por rodada (mas não no mesmo teste). Pré-requisito: Escudo Redentor.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 68,
+      },
+      {
+        id: 2118,
+        nome: 'Palavras Redentoras',
+        descricao: `
+          <p><i>A maior arma de um Cavaleiro da Redenção é uma palavra amiga.</i></p>
+          <p>Você aprende e pode lançar Escudo da Fé e Tranquilidade (atributo-chave Carisma). Pré-requisito: Escudo Redentor. ✨</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 68,
+      },
+      {
+        id: 2119,
+        nome: 'Provocação Flamejante',
+        descricao: `
+          <p><i>A ira de Thyatis recai sobre os tolos que ousam ameaçar os aliados do Cavaleiro da Redenção.</i></p>
+          <p>Quando um inimigo passa no teste de Vontade contra sua Provocação Petulante, você pode gastar 1 PM para causar 2d6 pontos de dano de fogo nele. Para cada outro poder de Cavaleiro da Redenção que possui, você pode gastar +1 PM para aumentar esse dano em +2d6. Pré-requisitos: Escudo Redentor, Provocação Petulante.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 68,
+      },
+      {
+        id: 2120,
+        nome: 'Revoada da Fênix',
+        descricao: `
+          <p><i>Da mesma forma que a ave flamejante desce majestosa dos céus, o Cavaleiro da Redenção chega no momento certo para proteger seus aliados.</i></p>
+          <p>Uma vez por rodada, você pode gastar 2 PM para receber uma ação de movimento adicional, que só pode ser usada para se deslocar em direção a um aliado. Pré-requisito: Escudo Redentor.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 68,
+      },
+      {
+        id: 2121,
+        nome: 'Cavaleiro das Trevas',
+        descricao: `
+          <p><i>Vigilantes mascarados se sentem mais à vontade na escuridão.</i></p>
+          <p>Você recebe visão no escuro e pode usar Ataque Furtivo contra criaturas sob qualquer condição de medo, mesmo que elas não estejam desprevenidas ou sendo flanqueadas por você. Além disso, quando desfere um acerto crítico ou Ataque Furtivo contra uma criatura, você pode gastar 1 PM para ignorar a imunidade a acertos críticos e/ou ataques furtivos dela. Pré-requisitos: treinado em Furtividade, Intimidação e Luta, Ataque Furtivo.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 69,
+      },
+      {
+        id: 2122,
+        nome: 'Criatura da Noite',
+        descricao: `
+          <p><i>Alguns vigilantes mascarados utilizam magia para imbuir seus trajes com poderes especiais. Outros foram mordidos por um animal mutante mágico.</i></p>
+          <p>Escolha uma das formas selvagens de druida (Tormenta20, p. 63) e um animal relacionado ao seu disfarce e à forma escolhida. Se estiver vestindo seu traje das sombras, você pode gastar uma ação completa e 3 PM para se transformar em uma versão humanoide desse animal. Você recebe os benefícios da forma selvagem escolhida, mas não assume completamente a forma do animal (e não recebe o bônus em Enganação).</p>
+          <p>Para os demais efeitos, este poder funciona como a habilidade Forma Selvagem. Se possuir três poderes de vigilante mascarado, você pode gastar 6 PM para usar a versão aprimorada da forma escolhida e, se possuir cinco poderes de vigilante mascarado, pode gastar 10 PM para usar a versão superior. Pré-requisitos: Cavaleiro das Trevas, ter a imagem do animal estampada em seu traje.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 69,
+      },
+      {
+        id: 2123,
+        nome: 'Mobilidade Urbana',
+        descricao: `
+          <p><i>O vigilante mascarado fica completamente à vontade em terreno urbano.</i></p>
+          <p>Se estiver em um ambiente urbano, você recebe +1 na Defesa e em Acrobacia, Atletismo, Furtividade, Investigação e Percepção. Esse bônus aumenta em +1 para cada outro poder de vigilante mascarado. Além disso, se estiver em terreno elevado (como em um telhado), você pode gastar 2 PM para fazer uma investida pulando sobre um oponente no chão. Faça um teste de Acrobacia para amortecer queda (Tormenta20, p. 115). Se passar, além dos efeitos normais da investida, para cada dado de dano de queda que você reduzir dessa forma, seu ataque causa +1d6 pontos de dano. Pré-requisitos: treinado em Acrobacia, Cavaleiro das Trevas.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 69,
+      },
+      {
+        id: 2124,
+        nome: 'Símbolo de Esperança',
+        descricao: `
+          <p><i>Para os cidadãos comuns de Valkaria, a visão de um vigilante mascarado é um alívio e uma bênção.</i></p>
+          <p>No início de uma cena, ou sempre que reduzir um inimigo a 0 PV com um ataque corpo a corpo, se estiver usando seu traje das sombras, você pode gastar 3 PM para inspirar seus aliados em alcance curto. Você e seus aliados recebem +2 na Defesa e em testes de resistência até o fim da cena. Além disso, a próxima habilidade que cada aliado usar nessa cena tem seu custo reduzido em –1 PM. Pré-requisito: Cavaleiro das Trevas.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 69,
+      },
+      {
+        id: 2125,
+        nome: 'Vingador Sem Rosto',
+        descricao: `
+          <p><i>O maior tesouro de um vigilante mascarado é sua identidade secreta.</i></p>
+          <p>Você se torna imune a todas as formas de detecção de sua identidade secreta, incluindo perícias como Intuição e Percepção e magias como Visão da Verdade. Essa imunidade protege apenas sua identidade secreta; você ainda pode ser detectado por perícias e habilidades, mas isso nunca revelará sua identidade. A única forma de descobrir sua identidade secreta é arrancando sua máscara de seu traje das sombras enquanto você estiver inconsciente ou paralisado. Pré-requisito: Cavaleiro das Trevas.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 69,
       }
     );
   }
