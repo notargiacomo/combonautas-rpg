@@ -19361,6 +19361,136 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 64,
+      },
+      {
+        id: 2102,
+        nome: 'Comandos Tapistanos',
+        descricao: `
+          <p><i>Quando lidera, as ordens de um centurião tiram o melhor daqueles que as seguem.</i></p>
+          <p>Quando usa o poder comandar, seu bônus aumenta em +1, e +1 para cada dois outros poderes de centurião. Além disso, o bônus fornecido pelo poder se aplica também a rolagens de dano. Pré-requisitos: Comandar, treinado em Luta.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 65,
+      },
+      {
+        id: 2103,
+        nome: 'É Proibido Morrer',
+        descricao: `
+          <p><i>Os soldados temem decepcionar o centurião mais do que a própria morte!</i></p>
+          <p>Uma vez por rodada, quando um aliado em alcance curto sofre dano que o levaria a 0 PV ou menos, você pode gastar 2 PM como reação para fazer um teste de Guerra ou Intimidação e subtrair o valor do resultado do dano sofrido. Pré-requisitos: Comandos Tapistanos, treinado em Guerra ou Intimidação.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 65,
+      },
+      {
+        id: 2104,
+        nome: 'Falange Intrespassável',
+        descricao: `
+          <p><i>O escudo de um centurião não existe para proteger apenas a si mesmo.</i></p>
+          <p>Se estiver empunhando um escudo, seus aliados adjacentes recebem o bônus de Defesa e qualquer outro efeito fornecido pelo escudo. Pré-requisitos: dois outros poderes de centurião, proficiência em escudos.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 65,
+      },
+      {
+        id: 2105,
+        nome: 'Liderar pelo Exemplo',
+        descricao: `
+          <p><i>Um centurião sabe que não pode exigir de seus homens nada do qual ele mesmo não seja capaz.</i></p>
+          <p>Uma vez por rodada, quando um aliado em alcance curto falha em um teste, você pode gastar 2 PM como reação para fazer um teste de Guerra, que substitui o teste original do seu aliado. Pré-requisitos: Comandos Tapistanos, treinado em Guerra.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 65,
+      },
+      {
+        id: 2106,
+        nome: 'Formação Inquebrável',
+        descricao: `
+          <p><i>Sob as ordens de um centurião, um grupo é uma unidade sólida, lutando como um único guerreiro invencível.</i></p>
+          <p>No início do dia, escolha um número de aliados até seu valor de Int ou Car (o que for maior). Até o final do dia, em vez de pontos de vida individuais, você e esses aliados compartilham um total de PV igual à soma dos PV de cada um. Dano, recuperação e perda de vida são todos aplicados a esse total (após aplicar quaisquer habilidades, como RD, do alvo original do dano). Entretanto, se o total de PV acabar, todos os personagens sofrem os efeitos de serem reduzidos a 0 PV ou menos (e cada um ainda morre no seu limite individual de pontos de vida). Pré-requisitos: outros quatro poderes de centurião.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 65,
+      },
+      {
+        id: 2107,
+        nome: 'A Prova de Tudo',
+        descricao: `
+          <p><i>Poucas coisas na natureza pegam o explorador despreparado. E aqueles que viajam com ele se beneficiam disso!</i></p>
+          <p>Quando usa Sobrevivência para acampamento, você pode lançar Suporte Ambiental. Esta não é uma habilidade mágica e provém de seu conhecimento em técnicas de sobrevivência (veja magias simuladas em Heróis de Arton, p. 44). Pré-requisito: treinado em Sobrevivência.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 66,
+      },
+      {
+        id: 2108,
+        nome: 'Sai da Frente!',
+        descricao: `
+          <p><i>O explorador destemido sabe que o melhor a fazer quando um perigo vem em sua direção é sair do caminho!</i></p>
+          <p>Você não é afetado por terreno difícil. Além disso, quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar e sofre apenas metade do dano se falhar. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou não puder se mover. Pré-requisitos: A Prova de Tudo, treinado em Reflexos.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 66,
+      },
+      {
+        id: 2109,
+        nome: 'Amigo de Todos',
+        descricao: `
+          <p><i>Parte do trabalho de um explorador destemido é coletar informações daqueles que sobrevivem nos locais mais inóspitos.</i></p>
+          <p>Você pode usar Sobrevivência para testes de Diplomacia com povos que vivem nos ermos. Além disso, ao usar Sobrevivência para mudar atitude, se passar por 5 acima da dificuldade melhora a atitude em duas categorias, e passando por 10 melhora em até três categorias. Pré-requisitos: A Prova de Tudo, Car 1.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 66,
+      },
+      {
+        id: 2110,
+        nome: 'Sempre Atento',
+        descricao: `
+          <p><i>A ruína ancestral está silenciosa. Silenciosa demais para o explorador destemido.</i></p>
+          <p>Você pode lançar a magia Detectar Ameaça como uma magia simulada, mas somente em ambientes naturais ou ruínas. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Além disso, pode usar Sobrevivência para encontrar armadilhas, em vez de Investigação. Pré-requisitos: outros dois poderes de explorador destemido.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 66,
+      },
+      {
+        id: 2110,
+        nome: 'Queixo de Pedra',
+        descricao: `
+          <p><i>O explorador destemido cai em precipícios, é envenenado por plantas, atingido por relâmpagos… mas continua caminhando normalmente!</i></p>
+          <p>Uma vez por rodada, quando sofrer dano de algum perigo, mas não de ataques, pode gastar 2 PM para fazer um teste de Sobrevivência e subtrair o resultado do dano sofrido. Pré-requisitos: quatro outros poderes de explorador destemido./p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.DB,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 66,
       }
     );
   }
