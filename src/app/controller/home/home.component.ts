@@ -142,4 +142,111 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
     { nome: 'Itens Mágicos', link: 'campanha/itens-magicos' },
     { nome: 'Artefatos', link: 'campanha/artefatos' },
   ];
+
+  /**
+   *  MENU Regras
+   */
+  titulo_menu_regras = 'Regras';
+  caminho_imagem_menu_regras = 'assets/img/menu_regras.png';
+  descricao_menu_regras = `
+  <p>
+    As regras existem para moderar o caos, alinhar expectativas e garantir que todos compartilhem o mesmo mundo.
+    Elas são o alicerce invisível que sustenta cada decisão, cada risco e cada vitória — mas, acima de tudo,
+    existem para proteger o verdadeiro propósito da jornada: a diversão.
+  </p>
+
+  <ul>
+
+    <li>
+      <b>Regras:</b>
+      consulte rapidamente os fundamentos oficiais que governam o mundo e suas possibilidades.
+    </li>
+
+    <li>
+      <b>Ações:</b>
+      descubra tudo que seu personagem pode fazer, do simples ao extraordinário.
+    </li>
+
+    <li>
+      <b>Condições:</b>
+      entenda os efeitos que podem limitar, desafiar ou transformar seu personagem.
+    </li>
+
+  </ul>
+
+  <p>
+    Domine as regras, dobre as probabilidades e desafie o destino — mas lembre-se:
+    se tudo der errado, a culpa é de Nimb.
+  </p>
+  `;
+  links_menu_regras = [
+    { nome: 'Regras', link: 'regras/regras' },
+    { nome: 'Ações', link: 'regras/acoes' },
+    { nome: 'Condições', link: 'regras/condicoes' },
+  ];
+
+  /**
+   *  MENU Mestre
+   */
+  titulo_menu_mestre = 'Mestre';
+  caminho_imagem_menu_mestre = 'assets/img/menu_mestre.png';
+  descricao_menu_mestre = `<p>
+            O mestre também tem direito a alguns brinquedinhos, afinal é quem mais trabalha para a felicidade do grupo.
+            Enquanto os jogadores aparecem, causam caos, ignoram pistas óbvias e adotam goblins aleatórios,
+            é o mestre quem mantém o universo inteiro funcionando com fita adesiva, café e sofrimento silencioso.
+        </p>
+
+        <p>
+            O <strong>Combonautas</strong> reconhece esse sacrifício heroico e oferece ferramentas dignas de quem carrega o destino do grupo nas costas:
+        </p>
+
+        <ul>
+            <li>
+                <b>[BETA] Cálculo de Desafios: </b>
+                Calcula o nível de desafio ideal, evitando TPKs acidentais… ou garantindo-os, se preferir.
+            </li>
+
+            <li>
+                <b>[ALPHA] Geração de Tesouros: </b>
+                Gera recompensas aleatórias, desde relíquias lendárias até aquele pergaminho inútil que ninguém pediu.
+            </li>
+        </ul>
+
+        <p class="final">
+            Porque um mestre feliz é um mestre equilibrado.  
+            E um mestre equilibrado é muito mais criativo na hora de fazer os jogadores sofrerem.
+        </p>`;
+  links_menu_mestre = [
+    { nome: 'Cálculo de Desafios', link: 'utilitarios/personagem-aleatorio' },
+    { nome: 'Geração de Tesouros', link: 'utilitarios/ficha-rapida' },
+  ];
+
+  /**
+   *  MENU Utilitários
+   */
+  titulo_menu_utilitarios = 'Utilitários';
+  caminho_imagem_menu_utilitarios = 'assets/img/menu_utilitario.png';
+  descricao_menu_utilitarios = `
+  <p>
+    Ferramentas e Brinquedos para todos brincarem. 
+  </p>
+
+  <ul>
+
+    <li>
+      <b>[BETA] Personagem Aleatório:</b> cansou de planejar minuciosamente seus personagens e quer mesmo abraçar Nimb e ver o circo pegar fogo? Vocês está no lugar certo doidão.
+    </li>
+
+    <li>
+     <b>[ALPHA] Ficha:</b> crie, planeje, altere, salve, exporte seu peronagem aqui.
+    </li>
+
+  </ul>
+
+  <p>Não é muito, mas Combonautas oferece de coração.
+  </p>`;
+  links_menu_utilitarios = [
+    { nome: 'Personagem Aleatório', link: 'utilitarios/personagem-aleatorio' },
+    { nome: 'Ficha', link: 'utilitarios/ficha-rapida' },
+  ];
 }
