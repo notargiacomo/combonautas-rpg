@@ -1,0 +1,16 @@
+<mat-card class="card-game">
+  <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+    {{ titulo }}
+  </mat-card-title>
+  <img [src]="caminho_imagem" class="imagem-presentation" />
+  <div class="text-justify mt-4" [innerHTML]="descricao"></div>
+  <mat-card-actions>
+    <div class="d-flex gap-2">
+      @for (item of links; track item) {
+        <button class="btn btn-sm btn-outline-secondary" [routerLink]="item.link">
+          {{ item.nome }}
+        </button>
+      }
+    </div>
+  </mat-card-actions>
+</mat-card>
