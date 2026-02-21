@@ -12,13 +12,12 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-card-presentation',
   standalone: true,
-  imports: [MatCard, MatCardHeader, MatCardTitle, MatCardContent, MatCardActions, MatCardSubtitle, RouterModule],
+  imports: [MatCard, MatCardTitle, MatCardActions, RouterModule],
   templateUrl: './card-presentation.component.html',
   styleUrl: './card-presentation.component.scss',
 })
 export class CardPresentationComponent {
   @Input() titulo!: string;
-  @Input() subtitulo!: string;
   @Input() caminho_imagem!: string;
   @Input() descricao!: string;
   @Input() links: LinkItem[] = [];

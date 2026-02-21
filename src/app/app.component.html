@@ -30,15 +30,8 @@
             <button mat-menu-item (click)="navigateTo('personagem/complicacoes')">Complicações</button>
             <button mat-menu-item (click)="navigateTo('personagem/poderes')">Poderes</button>
             <button mat-menu-item (click)="navigateTo('personagem/magias')">Magias</button>
-            <!--
-            <button mat-menu-item (click)="navigateTo('personagem/itens')">
-              Equipamentos
-            </button>
-            <button mat-menu-item (click)="navigateTo('personagem/magias')">
-              Magias
-            </button>-->
           </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuItens">Itens</button>
+          <button mat-button [matMenuTriggerFor]="menuItens">Item</button>
           <mat-menu #menuItens="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('itens/armas-municoes')">Armas & Munições</button>
             <button mat-menu-item (click)="navigateTo('itens/armaduras-escudos')">Armaduras & Escudos</button>
