@@ -112,4 +112,34 @@ Cada item conta uma história. Cada lâmina carrega batalhas, cada armadura guar
     { nome: 'Itens Gerais', link: 'itens/itens-gerais' },
     { nome: 'Itens Superiores', link: 'itens/itens-superiores' },
   ];
+
+  /**
+   *  MENU Campanha
+   */
+  titulo_menu_campanha = 'Campanha';
+  caminho_imagem_menu_campanha = 'assets/img/menu_campanha.png';
+  descricao_menu_campanha = `
+  <p>Novos aliados surgirão no seu caminho, trazendo saberes esquecidos e segredos valiosos.
+Desafios testarão sua coragem, e apenas os que perseverarem tocarão o extraordinário.
+Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante para sobreviver e reivindicá-las.</p>
+
+<ul>
+  <li><b>Parceiros:</b> encontre todos os tipos de parceiros do sistema aqui(e CAPIVARAS TAMBÉM).</li>
+
+  <li><b>Distinções:</b> você não quer ser igual a todo mundo? Que tal ser um Golem Cozinheiro?</li>
+
+  <li><b>Itens Mágicos:</b> parece que Arsenal deixou cair uns por ai!</li>
+
+  <li><b>Artefatos:</b> Meu Deus! EXATAMENTE, MEU DEUS!.</li>
+</ul>
+
+<p>Não tema em não voltar da Jornada, por que você não vai voltar. Seja vivo ou morto, o que voltar de você, não será mais você. Mas ainda sim ... vai ficar?
+</p>
+  `;
+  links_menu_campanha = [
+    { nome: 'Parceiros', link: 'campanha/parceiros' },
+    { nome: 'Distinções', link: 'campanha/distincoes' },
+    { nome: 'Itens Mágicos', link: 'campanha/itens-magicos' },
+    { nome: 'Artefatos', link: 'campanha/artefatos' },
+  ];
 }
