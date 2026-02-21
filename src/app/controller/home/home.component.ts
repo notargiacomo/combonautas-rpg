@@ -1,209 +1,94 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { CommonModule, NgFor, NgIf } from '@angular/common';
-import { ChangeDetectorRef, Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatIconModule } from '@angular/material/icon';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatSelectModule } from '@angular/material/select';
-import { MatTableModule } from '@angular/material/table';
-import { MatTabsModule } from '@angular/material/tabs';
-import { Router } from '@angular/router';
-// import { ButtonModule } from 'primeng/button';
-// import { DialogModule } from 'primeng/dialog';
-import { MagiaService } from '@app/service/magia.service';
-import { PericiaService } from '@app/service/pericia.service';
+import { Component, OnInit } from '@angular/core';
+import { CardPresentationComponent } from '@app/components/card-presentation/card-presentation.component';
+import { MatCard } from '@angular/material/card';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
-  imports: [
-    MatCardModule,
-    MatDividerModule,
-    // ButtonModule,
-    MatButtonModule,
-    ReactiveFormsModule,
-    MatIconModule,
-    MatTableModule,
-    MatCheckboxModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    FormsModule,
-    MatExpansionModule,
-    CommonModule,
-    MatProgressBarModule,
-    MatTabsModule,
-    MatDatepickerModule,
-    // DialogModule
-  ],
+  imports: [CardPresentationComponent, MatCard],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  // changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [
-    trigger('detailExpand', [
-      state('collapsed,void', style({ height: '0px', minHeight: '0' })),
-      state('expanded', style({ height: '*' })),
-      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
-    ]),
-  ],
 })
-export class HomeComponent {
-  // pericias: Pericia[] = [];
-  // personagens!: Personagem[];
-  // personagem!: Personagem;
-  // atributos = Object.values(Atributo);
-  // tamanhos = Object.values(Tamanho);
-  // dsPericias = new MatTableDataSource<PericiaPersonagem>();
-  // dsEmpunhados = new MatTableDataSource<Equipamento>();
-  // readonly panelOpenState = signal(false);
-  // disableOrigem = false;
+export class HomeComponent implements OnInit {
+  isMobile = false;
 
-  // expandedElementEmpunhados!: Equipamento | null;
-  // displayedColumnsEmpunhados: string[] = ['nome', 'formula'];
-  // displayedColumnsWithExpandEmpunhados = [...this.displayedColumnsEmpunhados, 'expand'];
-  // isExpandedRowEmpunhados = (index: number, row: any) => row === this.expandedElementEmpunhados;
-
-  // displayedColumnsVestido: string[] = ['equipamento', 'formula'];
-  // displayedColumnsCarregados: string[] = ['equipamento','quantidade','espaco'];
-  // displayedColumnsItens: string[] = ['item', 'descricao'];
-
-  // expandedElementPericia!: PericiaPersonagem | null;
-  // columnsToDisplayPericia: string[] = ['pericia', 'total', 'atributo', 'outros'];
-  // columnsToDisplayWithExpandPericia = [...this.columnsToDisplayPericia, 'expand'];
-  // isExpandedRowPericia = (index: number, row: any) => row === this.expandedElementPericia;
-
-  // expandedElementMagia!: MagiaPersonagem | null;
-  // displayedColumnsMagias: string[] = ['nome', 'tipo', 'escola'];
-  // displayedColumnsWithExpandMagias = [...this.displayedColumnsMagias, 'expand'];
-  // isExpandedRowMagias = (index: number, row: any) => row === this.expandedElementMagia;
-
-  // expandedElementPoderes!: PoderPersonagem | null;
-  // displayedColumnsPoderes: string[] = ['nome', 'tipo', 'acoes'];
-  // displayedColumnsWithExpandPoderes = [...this.displayedColumnsPoderes, 'expand'];
-  // isExpandedRowPoderes = (index: number, row: any) => row === this.expandedElementPoderes;
-
-  constructor(
-    private readonly router: Router,
-    private readonly servicoPericia: PericiaService,
-    private readonly servicoMagia: MagiaService,
-    private cdRef: ChangeDetectorRef
-  ) {}
-
-  ngOnInit() {
-    // this.personagens = [];
-    // this.personagem = new Personagem(this.cdRef);
-    // // this.personagem.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria({origem: 'Engenhosidade', atributo: 'Inteligência', condicao:['2 PM'], ativo: false});
-    // this.servicoPericia.listar(null).subscribe({
-    //   next: (response) => {
-    //     this.pericias = response;
-    //     this.personagem.inicializaPericias(this.pericias);
-    //     this.personagem.inicializaPosses();
-    //     this.dsPericias = new MatTableDataSource(this.personagem.pericias);
-    //   },
-    //   error: (response) => console.log(response),
-    // });
+  constructor(private breakpointObserver: BreakpointObserver) {
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      this.isMobile = result.matches;
+    });
   }
 
-  navigateTo(route: string): void {
-    this.router.navigate([route]);
-  }
+  titulo_menu_personagem = 'Personagem';
+  subtitulo_menu_personagem = 'Tudo para criação de Personagem. Ou quase =).';
+  caminho_imagem_menu_personagem = 'assets/img/menu_personagem.png';
+  descricao_menu_personagem = `
+        <div class="descricao-personagem">
 
-  // readonly dialog = inject(MatDialog);
-  // dataSourcePoderesPersonagens = new MatTableDataSource<PoderPersonagem>();
-  // dataSourceMagiasPersonagens = new MatTableDataSource<MagiaPersonagem>();
-  // openDialog(titulo: string, classe: number) {
-  //   const dialogRef = this.dialog.open(BalaoInterativoPadraoComponent, {
-  //     data: {
-  //       titulo: titulo,
-  //       objeto: this.personagem.raca,
-  //       classe: classe,
-  //     },
-  //     disableClose: true,
-  //   });
+  <p class="intro">
+    Todo grande herói começa como uma ideia… e é aqui que essa ideia ganha carne, alma e ficha técnica.
+    Neste santuário da criação, você molda cada fragmento do seu personagem — da origem esquecida ao poder capaz de alterar destinos.
+    Escolha com sabedoria… ou com estilo.
+  </p>
 
-  //   dialogRef.afterClosed().subscribe((resultado) => {
-  //     if (resultado) {
-  //       if(!(this.personagem.raca?.id === resultado.id)){
-  //         this.personagem.raca = resultado;
-  //         if (this.personagem.raca === undefined) {
-  //           resultado.resolucao = [];
-  //           resultado.resolucao.push(...resultado.instrucao);
-  //         }
-  //         this.personagem.resetarRaca();
-  //         this.personagem.raca?.resolucao?.forEach((res) => {
-  //           eval(res);
-  //         });
+  <ul class="lista-menus">
 
-  //         this.personagem.raca?.habilidades?.forEach(poder => {
-  //           this.personagem.poderes.push(new PoderPersonagem(poder, false));
-  //           if (poder.resolucao) {
-  //             poder.resolucao?.forEach((resolucao) => {
-  //               eval(resolucao);
-  //             });
-  //           } else {
-  //             poder.instrucao?.forEach((instrucao) => {
-  //               eval(instrucao);
-  //             });
-  //           }
-  //         })
+    <li>
+      <strong>Raças:</strong>
+      a essência do seu ser, moldando corpo, instinto e lugar no mundo.
+    </li>
 
-  //         this.dsEmpunhados = new MatTableDataSource(this.personagem.posse!.equipamentos_empunhados);
+    <li>
+      <strong>Origens:</strong>
+      o passado que deixou cicatrizes, histórias e motivações.
+    </li>
 
-  //         this.dataSourcePoderesPersonagens = new MatTableDataSource(
-  //           this.personagem.poderes
-  //         );
+    <li>
+      <strong>Classes:</strong>
+      o caminho de poder que define como você enfrenta o impossível.
+    </li>
 
-  //         this.personagem.recalculaAtributos();
-  //       }
-  //     } else {
-  //       console.log('Diálogo foi fechado sem retorno.');
-  //     }
-  //   });
-  // }
+    <li>
+      <strong>Perícias:</strong>
+      as habilidades que separam amadores de verdadeiras lendas.
+    </li>
 
-  // adicionarMagiaExtra(id: number) {
-  //   if(id != 0){
-  //     this.servicoMagia.listar({id: id}).subscribe({
-  //       next: (response) => {
-  //         this.personagem.magias?.push({magia: response[0]});
-  //         this.dataSourceMagiasPersonagens = new MatTableDataSource(this.personagem.magias);
-  //       },
-  //       error: (response) => console.log(response),
-  //     });
-  //   } else {
-  //     this.personagem.magias?.push({magia: {id:id, nome: 'Escolha uma magia (atributo-chave Carisma)'}});
-  //     this.dataSourceMagiasPersonagens = new MatTableDataSource(this.personagem.magias);
-  //   }
-  // }
+    <li>
+      <strong>Deuses:</strong>
+      as entidades que observam, julgam… e às vezes respondem.
+    </li>
 
-  // seDesabilitaCheck(pericia: PericiaPersonagem): boolean {
-  //   let periciaChekada = false;
-  //   this.personagem.pericias?.forEach((per) => {
-  //     if (pericia === per) {
-  //       periciaChekada = per.treinado ? per.treinado : false;
-  //     }
-  //   });
-  //   return (
-  //     this.personagem.numero_pericias_livre === 0 &&
-  //     (this.personagem.pericias && this.personagem.pericias.length > 0
-  //       ? !periciaChekada
-  //       : true)
-  //   );
-  // }
+    <li>
+      <strong>Complicações:</strong>
+      porque nenhuma boa história nasce de uma vida fácil.
+    </li>
 
-  // visible: boolean = false;
+    <li>
+      <strong>Poderes:</strong>
+      dons extraordinários que desafiam as regras da realidade.
+    </li>
 
-  // showDialog() {
-  //     this.visible = true;
-  // }
+    <li>
+      <strong>Magias:</strong>
+      o domínio das forças invisíveis que dobram o mundo à sua vontade.
+    </li>
 
-  // atualizaTabela(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[]; ativo: boolean; atributo: string;}){
-  //   this.personagem.atualizaBonusExtraPericia(nome, [{origem: condicao.origem, bonus: condicao.bonus, condicao:[], ativo: true, atributo: condicao.atributo}]);
-  //   this.dsPericias = new MatTableDataSource(this.personagem.pericias);
-  // }
+  </ul>
+
+  <p class="encerramento">
+    Cada escolha é um golpe na bigorna do destino. Então vá em frente… e forje algo que o mundo jamais esquecerá.
+  </p>
+
+</div>`;
+  links_menu_personagem = [
+    { nome: 'Raças', link: 'personagem/racas' },
+    { nome: 'Origens', link: 'personagem/origens' },
+    { nome: 'Classes', link: 'personagem/classes' },
+    { nome: 'Perícias', link: 'personagem/pericias' },
+    { nome: 'Deuses', link: 'personagem/deuses' },
+    { nome: 'Complicações', link: 'personagem/complicacoes' },
+    { nome: 'Poderes', link: 'personagem/poderes' },
+    { nome: 'Magias', link: 'personagem/magias' },
+  ];
+
+  ngOnInit(): void {}
 }

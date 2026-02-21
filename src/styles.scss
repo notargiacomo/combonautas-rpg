@@ -379,3 +379,12 @@ tr.element-row:not(.example-expanded-row):active {
   width: 8px !important;
   border-color: whitesmoke whitesmoke !important;
 }
+
+.imagem-presentation {
+  width: 100% !important;
+  height: 300px !important; /* controla o zoom */
+  object-fit: cover !important; /* faz o zoom e corte automático */
+  object-position: center !important; /* centraliza */
+  display: block !important;
+  background-color: rgb(68, 5, 18) !important;
+}
