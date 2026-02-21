@@ -34,35 +34,35 @@ export class HomeComponent implements OnInit {
         </p>
         <ul class="lista-menus">
           <li>
-            <strong>Raças:</strong>
+            <b>Raças:</b>
             a essência do seu ser, moldando corpo, instinto e lugar no mundo.
           </li>
           <li>
-            <strong>Origens:</strong>
+            <b>Origens:</b>
             o passado que deixou cicatrizes, histórias e motivações.
           </li>
           <li>
-            <strong>Classes:</strong>
+            <b>Classes:</b>
             o caminho de poder que define como você enfrenta o impossível.
           </li>
           <li>
-            <strong>Perícias:</strong>
+            <b>Perícias:</b>
             as habilidades que separam amadores de verdadeiras lendas.
           </li>
           <li>
-            <strong>Deuses:</strong>
+            <b>Deuses:</b>
             as entidades que observam, julgam… e às vezes respondem.
           </li>
           <li>
-            <strong>Complicações:</strong>
+            <b>Complicações:</b>
             porque nenhuma boa história nasce de uma vida fácil.
           </li>
           <li>
-            <strong>Poderes:</strong>
+            <b>Poderes:</b>
             dons extraordinários que desafiam as regras da realidade.
           </li>
           <li>
-            <strong>Magias:</strong>
+            <b>Magias:</b>
             o domínio das forças invisíveis que dobram o mundo à sua vontade.
           </li>
         </ul>
