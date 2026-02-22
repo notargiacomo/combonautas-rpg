@@ -172,6 +172,11 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
       entenda os efeitos que podem limitar, desafiar ou transformar seu personagem.
     </li>
 
+    <li>
+      <b>[PLANEJADO] Estruturas:</b>
+      Regras para uso de base, domínio e negócio.
+    </li>
+
   </ul>
 
   <p>
@@ -210,6 +215,34 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
                 <b>[ALPHA] Geração de Tesouros: </b>
                 Gera recompensas aleatórias, desde relíquias lendárias até aquele pergaminho inútil que ninguém pediu.
             </li>
+            <li>
+                <b>[PLANEJADO] Ameaças: </b>
+                Vá por mim, não é pokemon.
+            </li>
+            <li>
+                <b>[PLANEJADO] Armadilhas: </b>
+                "É impressão minha ou o teto a descendo" - últimas palavrasa do ladino do grupo.
+            </li>
+            <li>
+                <b>[PLANEJADO] Doenças: </b>
+                "É impressão minha ou o teto ta descendo" - últimas palavrasa do ladino do grupo.
+            </li>
+            <li>
+                <b>[PLANEJADO] Perigos: </b>
+                Corram para as colinas!!!!
+            </li>
+            <li>
+                <b>[PLANEJADO] Perigos Complexos: </b>
+                Até morrer é difícil hoje em dia, aff!
+            </li>
+            <li>
+                <b>[PLANEJADO] Encontros Aleatórios: </b>
+                Baseado em terreno, região, nível de dificuldade e aleatoriedade, gere um encontro para seu grupo de jogadores.
+            </li>
+            <li>
+                <b>[PLANEJADO] Ameaça Sintética: </b>
+                Nada como criar sua própria ameaça, usando as regras do jogo é claro (ou será que não 😏)
+            </li>
         </ul>
 
         <p class="final">
@@ -238,7 +271,12 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
     </li>
 
     <li>
-     <b>[ALPHA] Ficha:</b> crie, planeje, altere, salve, exporte seu peronagem aqui.
+     <b>[EM CONSTRUÇÃO] Ficha:</b> crie, planeje, altere, salve, exporte seu peronagem aqui.
+    </li>
+
+    <li>
+      <b>[PLANEJADO] Mapa Mundi: </b>
+      Navegue pelo mapa de arton, expanda, explore e leia.
     </li>
 
   </ul>
