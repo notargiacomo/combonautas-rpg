@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
             o passado que deixou cicatrizes, histórias e motivações.
           </li>
           <li>
-            <b>Classes:</b>
+            <b>[EM MANUTENÇÃO] Classes:</b>
             o caminho de poder que define como você enfrenta o impossível.
           </li>
           <li>
@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit {
             as habilidades que separam amadores de verdadeiras lendas.
           </li>
           <li>
-            <b>Deuses:</b>
+            <b>[EM MANUTENÇÃO] Deuses:</b>
             as entidades que observam, julgam… e às vezes respondem.
           </li>
           <li>
@@ -58,11 +58,11 @@ export class HomeComponent implements OnInit {
             porque nenhuma boa história nasce de uma vida fácil.
           </li>
           <li>
-            <b>Poderes:</b>
+            <b>[EM EVOLUÇÃO] Poderes:</b>
             dons extraordinários que desafiam as regras da realidade.
           </li>
           <li>
-            <b>Magias:</b>
+            <b>[EM MANUTENÇÃO] Magias:</b>
             o domínio das forças invisíveis que dobram o mundo à sua vontade.
           </li>
         </ul>
@@ -221,11 +221,11 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
             </li>
             <li>
                 <b>[PLANEJADO] Armadilhas: </b>
-                "É impressão minha ou o teto a descendo" - últimas palavrasa do ladino do grupo.
+                "É impressão minha ou o teto a descendo" - últimas palavras do ladino do grupo.
             </li>
             <li>
                 <b>[PLANEJADO] Doenças: </b>
-                "É impressão minha ou o teto ta descendo" - últimas palavrasa do ladino do grupo.
+                "Louvado seja Luvithy pelas suas chagas" - Morgrymn, sacerdote de Luvithy, a Deusa da Peste
             </li>
             <li>
                 <b>[PLANEJADO] Perigos: </b>
