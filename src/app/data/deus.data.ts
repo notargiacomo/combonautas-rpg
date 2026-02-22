@@ -4440,6 +4440,144 @@ export class DeusData {
         fundamentalista_paladino: ``,
         fundamentalista_druida: ``,
       },
+      {
+        id: 948,
+        nome: 'Glórienn',
+        tipo: 'Maior',
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        paginas: '',
+        canalizaEnergia: 'Positiva',
+        armaPreferida: 'Florete',
+        aceitaPaladinos: true,
+        aceitaDruidas: false,
+        simbolo: 'assets/img/simbolo_deus_glorienn.png',
+        imagem: 'assets/img/deus_glorienn.png',
+        descricao: `
+        <p>
+          Glórienn é a deusa dos elfos. Diz-se que suas mãos trouxeram este povo a Arton em embarcações mágicas, antes mesmo da existência de quaisquer outros humanoides. Quando a cidade-estado Lenórienn ainda se erguia majestosa, a deusa era amplamente cultuada. Contudo, após a humilhação e quase aniquilação do povo élfico nas mãos dos goblinoides, muitos fiéis a abandonaram, culpando-a por falhar em evitar a tragédia. Antigas gravuras representam Glórienn como uma deslumbrante elfa de cabelos púrpuras; hoje, qualquer representação da deusa ressalta sua tristeza e suas lágrimas.
+        </p>
+        <p>
+          <b>Crenças e Objetivos.</b> Os elfos são a raça mais antiga e perfeita de Arton. São aquilo que os humanos sonham ser. Glórienn deve ser admirada e venerada por sua obra, não rejeitada por aqueles de pouca fé.
+        </p>
+        <p><b>Símbolo Sagrado.</b> Arco e flecha dourados.</p>
+        <p><b>Canalizar Energia.</b> Positiva.</p>
+        <p><b>Arma Preferida.</b> Florete.</p>
+        <p><b>Devotos.</b> Elfos, apenas.</p>
+        <p>
+          <b>Obrigações & Restrições.</b> Apenas elfos podem ser devotos de Glórienn (esta é uma exceção para a regra de que todos os deuses aceitam devotos humanos). Um devoto de Glórienn é também proibido de matar elfos, recusar ajudar elfos, e recusar missões para resgatar ou proteger relíquias élficas.
+        </p>`,
+        devotos: ['Elfos'],
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
+      {
+        id: 947,
+        nome: 'Keenn',
+        tipo: 'Maior',
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        paginas: '',
+        canalizaEnergia: 'Negativa',
+        armaPreferida: 'Machado de batalha',
+        aceitaPaladinos: false,
+        aceitaDruidas: false,
+        simbolo: 'assets/img/simbolo_deus_keen.png',
+        imagem: 'assets/img/deus_keen.png',
+        descricao: `
+        <p>
+          O violento Deus da Guerra, responsável por semear e fomentar diversos conflitos e batalhas sangrentas ao longo da história de Arton. Apesar de sua natureza destrutiva,é uma divindade popular, invocada por soldados, mercenários e guerreiros — e por diversas pessoas que querem destruir um inimigo.
+        </p>
+        <p>
+          Existe apenas uma certeza sobre Keenn — ele quer destruição. Quanto mais uma guerra se prolonga, quanto mais pessoas morrem em batalha, maior seu poder. Dizem que, em tempos de paz, Keenn caminha sobre Arton sussurrando intrigas entre reinos vizinhos e incitando novos conflitos. De fato, seus clérigos atuam como conselheiros em muitas nações, instigando regentes a resolver suas diferenças através da força.
+        </p>
+        <p>
+          <b>Crenças e Objetivos.</b> Reverenciar a guerra, pois a paz é para os fracos e covardes — apenas em batalhas podemos provar nosso valor. Nunca oferecer ou aceitar rendição e jamais demonstrar fraqueza ou temor. Persistir por meio de agressividade e conflito.
+        </p>
+        <p><b>Símbolo Sagrado.</b> Escudo cruzado por uma espada longa, um martelo de guerra e um machado de batalha.</p>
+        <p><b>Canalizar Energia.</b> Negativa.</p>
+        <p><b>Arma Preferida.</b> Machado de batalha.</p>
+        <p><b>Devotos.</b> Anões, minotauros, bárbaros, guerreiros, lutadores, nobres.</p>
+        <p>
+          <b>Obrigações & Restrições.</b> Devotos de Keenn não podem se negar a participar de uma luta ou impedir que ela aconteça. Também são proibidos de fugir de qualquer batalha — quando derrotados, aceitam a morte ou captura, mas nunca recuam. Por fim, nunca podem lançar magias de cura.
+        </p>`,
+        devotos: ['Anões', 'minotauros', 'bárbaros', 'guerreiros', 'lutadores', 'nobres'],
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
+      {
+        id: 946,
+        nome: 'Ragnar',
+        tipo: 'Maior',
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        paginas: '',
+        canalizaEnergia: 'Negativa',
+        armaPreferida: 'Maça',
+        aceitaPaladinos: false,
+        aceitaDruidas: false,
+        simbolo: 'assets/img/simbolo_deus_ragnar.png',
+        imagem: 'assets/img/deus_ragnar.png',
+        descricao: `
+        <p>
+          Antigo deus menor dos bugbears, Ragnar ascendeu como Deus da Morte dos Goblinoides após Tillian e o Terceiro serem expulsos do Panteão, e após a vitória da Aliança Negra em Lamnor tornou-se a principal divindade entre estes povos. O objetivo de Ragnar é dizimar os humanos, elfos e anões para vingar-se dos milênios de humilhação que estas raças impuseram aos seus goblinoides. Através de seu arauto, Thwor
+          Khoshkothruk, a influência de Ragnar cresce a cada novo território conquistado.
+        </p>
+        <p>
+          Essa, contudo, é a crença dos povos goblinoides. Para os humanos, este posto pertence a Leen, a quem se devotam quanto aos domínios da morte, sem qualquer ligação com Thwor e as profecias que o tangenciam. Mesmo que sejam tratadas como divindades diferentes, Ragnar e Leen ocupam o mesmo papel e posição no Panteão, afinal, ainda são o mesmo deus.
+        </p>
+        <p>
+          <b>Crenças e Objetivos.</b> Promover a morte cruel e absoluta. Impedir o desenvolvimento e perpetuar a brutalidade. Jamais negar a alguém o direito de uma morte definitiva. Devotar-se à ideia de que a vida é uma ilusão, um pesadelo, sendo a morte o verdadeiro despertar. Destruir os elfos, humanos e anões.
+        </p>
+        <p><b>Símbolo Sagrado.</b> Um círculo branco eclipsado por um círculo negro.</p>
+        <p><b>Canalizar Energia.</b> Negativa.</p>
+        <p><b>Arma Preferida.</b> Maça.</p>
+        <p><b>Devotos.</b> Bugbears, goblins, hobgoblins, ogros, orcs, bárbaros, caçadores, guerreiros, ladinos.</p>
+        <p>
+          <b>Obrigações & Restrições.</b> Devotos de Ragnar não podem agir contra a morte; principalmente de elfos, humanos e anões, os maiores inimigos da Aliança Negra. Por conta disso, nunca podem causar dano não letal. Além disso, devotos especialmente malignos de Ragnar devem sacrificar uma vítima élfica, humana ou anã a seu deus todos os meses (não permitido para jogadores).
+        </p>`,
+        devotos: [
+          'Bugbears',
+          'goblins',
+          'hobgoblins',
+          'ogros',
+          'orcs',
+          'bárbaros',
+          'caçadores',
+          'guerreiros',
+          'ladinos',
+        ],
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
+      {
+        id: 945,
+        nome: 'Tauron',
+        tipo: 'Maior',
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        paginas: '',
+        canalizaEnergia: 'Qualquer',
+        armaPreferida: 'Machado de guerra',
+        aceitaPaladinos: false,
+        aceitaDruidas: false,
+        simbolo: 'assets/img/simbolo_deus_tauron.png',
+        imagem: 'assets/img/deus_tauron.png',
+        descricao: `
+        <p>
+          O Deus da Força é também o patrono dos minotauros. Corajoso e orgulhoso, Tauron representa dois conceitos que, à primeira vista, parecem opostos: a dominação dos fortes sobre os fracos e a proteção dos fracos pelos fortes.
+        </p>
+        <p>
+          <b>Crenças e Objetivos.</b> Venerar a força, a coragem e a determinação. Dominar os seres mansos e dóceis do mundo e exigir seu tributo e servidão, mas também protegê-los — com sua vida, se necessário.
+        </p>
+        <p><b>Símbolo Sagrado.</b> Uma cabeça de touro em chamas.</p>
+        <p><b>Canalizar Energia.</b> Qualquer.</p>
+        <p><b>Arma Preferida.</b> Machado de guerra.</p>
+        <p><b>Devotos.</b> Anões, elfos, medusas, minotauros, cavaleiros, guerreiros, lutadores, paladinos.</p>
+        <p>
+          <b>Obrigações & Restrições.</b>  Devotos de Tauron devem demonstrar coragem e honra em combate, jamais lutando contra um oponente em desvantagem numérica (não pode se beneficiar do bônus de flanquear) ou incapaz de lutar. Também não podem usar armas de ataque à distância e habilidades ofensivas com alcance maior que toque. Além disso, devem sempre manter sua palavra e nunca recusar um pedido de ajuda de uma criatura mais fraca (com ND igual ou inferior à metade do ND do próprio devoto).
+        </p>
+        <p>Em regiões mais distantes de Arton, há outra obrigação para devotos de Tauron: encontrar e adotar uma criatura mais fraca (veja acima) e protegê-la pelo resto da vida ou até que ela supere sua força. O devoto jamais deve aceitar qualquer ajuda do seu protegido, assim como deve ser honrado e respeitado por ele.</p>`,
+        devotos: ['Anões', 'elfos', 'medusas', 'minotauros', 'cavaleiros', 'guerreiros', 'lutadores', 'paladinos'],
+        fundamentalista_paladino: ``,
+        fundamentalista_druida: ``,
+      },
     ];
   }
 }

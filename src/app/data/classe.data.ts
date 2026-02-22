@@ -3683,6 +3683,73 @@ Ancestral são habilidades mágicas.
         referencias: Referencia.DB,
         paginas: '199, pag. 82 à 89',
       },
+      {
+        id: 37,
+        nome: 'Comandante',
+        descricao_classe: `
+        <h5>Características de Classe</h5>
+        <p><b>Pontos de Vida.</b> Um nobre começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+        <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
+        <p><b>Perícias.</b>  Intimidação (Car), Guerra (Int) e Vontade (Sab) mais 3 a sua escolha entre Adestramento (Car), Atuação (Car), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car), Fortitude (Con), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pontaria (Des).</p>
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+        <table class="tabela-comandante">
+          <thead>
+            <tr>
+              <th>Nível</th>
+              <th>Habilidades de Classe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="nivel">1º</td><td>Autoconfiança, coordenar, direcionar</td></tr>
+            <tr><td class="nivel">2º</td><td>Palavras afiadas (2d6), poder de nobre</td></tr>
+            <tr><td class="nivel">3º</td><td>Replanejar, poder de nobre</td></tr>
+            <tr><td class="nivel">4º</td><td>Gritar ordens, poder de nobre</td></tr>
+            <tr><td class="nivel">5º</td><td>Poder de nobre, presença de liderança</td></tr>
+            <tr><td class="nivel">6º</td><td>Palavras afiadas (4d6), poder de nobre</td></tr>
+            <tr><td class="nivel">7º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">8º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">9º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">10º</td><td>Palavras afiadas (6d6), poder de nobre</td></tr>
+            <tr><td class="nivel">11º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">12º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">13º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">14º</td><td>Palavras afiadas (8d6), poder de nobre</td></tr>
+            <tr><td class="nivel">15º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">16º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">17º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">18º</td><td>Palavras afiadas (10d6), poder de nobre</td></tr>
+            <tr><td class="nivel">19º</td><td>Poder de nobre</td></tr>
+            <tr><td class="nivel">20º</td><td>Líder nato, poder de nobre</td></tr>
+          </tbody>
+        </table>
+`,
+        ha_informacoes_adicionais: false,
+        ha_poderes_db: true,
+        ha_complicacoes: false,
+        descricao_informacoes: ``,
+        fator_vida: 2,
+        fator_mana: 6,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES],
+        pericia_obrigatoria: 'Vontade',
+        pericia_escolha_entre_duas: ['Misticismo'],
+        pericias_escolha_grupo: [
+          'Conhecimento',
+          'Diplomacia',
+          'Enganação',
+          'Guerra',
+          'Iniciativa',
+          'Intimidação',
+          'Intuição',
+          'Investigação',
+          'Nobreza',
+          'Ofício',
+          'Percepção',
+        ],
+        numero_pericias_escolha_grupo: 2,
+        imagem: 'assets/img/classe_comandante.png',
+        referencias: Referencia.DB,
+        paginas: '222, pag. 57 à 60',
+      },
     ];
   }
 }
