@@ -101,7 +101,8 @@ export class MagiaData {
       {
         id: 2,
         nome: 'Acalmar Animal',
-        descricao: `O animal fica prestativo em relação a você. Ele não fica sob seu controle, mas percebe suas palavras e ações da maneira mais favorável possível. Você recebe +10 nos testes de Adestramento e Diplomacia que fizer contra o animal. Um alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e ele retorna à atitude que tinha antes (ou piorada, de acordo com o mestre). Se tratar bem o alvo, a atitude pode permanecer mesmo após o término da magia.`,
+        descricao: `<p>O animal fica prestativo em relação a você. Ele não fica sob seu controle, mas percebe suas palavras e ações da maneira mais favorável possível. Você recebe +10 nos testes de Adestramento e Diplomacia que fizer contra o animal.</p> 
+        <p>Um alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e ele retorna à atitude que tinha antes (ou piorada, de acordo com o mestre). Se tratar bem o alvo, a atitude pode permanecer mesmo após o término da magia.</p>`,
         escola: EscolasMagia.ENCANTAMENTO,
         tipo: TipoMagia.DIVINA,
         circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -140,14 +141,14 @@ export class MagiaData {
             id: 2,
             e_aumenta: false,
             aumenta: 0,
-            descricao: `<b>+1 PM:</b> muda o alvo para 1 monstro ou espírito com Inteligência 1 ou 2.`,
+            descricao: `<b>+1 PM:</b>  muda o alvo para 1 monstro ou espírito com Inteligência –5 ou –4.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
             custo_material: 0,
             execucao: ExecucaoMagia.PADRAO,
             alcance: AlcanceMagia.CURTO,
-            alvo_descricao: '1 monstro ou espírito com Inteligência 1 ou 2.',
+            alvo_descricao: '1 monstro ou espírito com Inteligência –5 ou –4.',
             alvo: AlvoMagia.MONSTRO + ' ou ' + AlvoMagia.ESPIRITO,
             duracao: DuracaoMagia.CENA,
             pericia_resistencia: Resistencia.VONTADE,
@@ -8518,7 +8519,7 @@ export class MagiaData {
         aprimoramentos: [
           {
             id: 1,
-            descricao: `<p><b>+1 PM:</b> muda o alvo para 1 espírito.</p>`,
+            descricao: `<b>+1 PM:</b> muda o alvo para 1 espírito.`,
             e_aumenta: false,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
@@ -8541,7 +8542,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            descricao: `<p><b>2 PM:</b> aumenta o número de alvos em +1.</p>`,
+            descricao: `<b>+2 PM:</b> aumenta o número de alvos em +1.`,
             e_aumenta: true,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
@@ -8564,7 +8565,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            descricao: `<p><b>+3 PM:</b> muda o alvo para 1 criatura. Requer 4º círculo.</p>`,
+            descricao: `<b>+3 PM:</b> muda o alvo para 1 criatura. Requer 4º círculo.`,
             e_aumenta: false,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.QUARTO_CIRCULO,
