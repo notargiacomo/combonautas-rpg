@@ -106,31 +106,31 @@
   </div>
   <div class="row">
     <mat-card class="card-ficha">
-      <div class="row mt-1 g-3">
+      <div class="row g-3">
         <div class="col-12 label">
           {{ 'PONTOS GASTOS: ' + points }}
         </div>
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <app-attribute [points]="points" [attribute]="for" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <app-attribute [points]="points" [attribute]="des" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <app-attribute [points]="points" [attribute]="con" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <app-attribute [points]="points" [attribute]="int" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <app-attribute [points]="points" [attribute]="sab" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <app-attribute [points]="points" [attribute]="car" (changePoints)="calculaPontos($event)"></app-attribute>
         </div>
       </div>
@@ -138,11 +138,11 @@
   </div>
   <div class="row">
     <mat-card class="card-ficha">
-      <div class="row mt-1 g-3">
-        <div class="col-12 col-sm-6 col-lg-2">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <div class="card-game">
             <div class="row">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Pontos de Vida</mat-label>
                   <input formControlName="pontos_vida" matInput type="text" />
@@ -167,10 +167,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Ataque</mat-label>
                   <input formControlName="ataque" matInput type="text" />
@@ -210,10 +210,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Proficiência</mat-label>
                   <input formControlName="proficiencia" matInput type="text" />
@@ -253,10 +253,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Sentido</mat-label>
                   <input formControlName="sentido" matInput type="text" />
@@ -296,10 +296,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Deslocamento</mat-label>
                   <input formControlName="deslocamento" matInput type="text" />
@@ -339,10 +339,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2">
+        <div class="col-12 col-sm-6 col-lg-2 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Resistência</mat-label>
                   <input formControlName="resistencia" matInput type="text" />
@@ -387,11 +387,11 @@
   </div>
   <div class="row">
     <mat-card class="card-ficha">
-      <div class="row mt-1 g-3">
-        <div class="col-12 col-sm-6 col-lg-3">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
           <div class="card-game">
-            <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+            <div class="row align-items-center mb-4">
+              <div class="col-sm-12 mb-4">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Poder</mat-label>
                   <input formControlName="poder" matInput type="text" />
@@ -431,10 +431,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Pericia</mat-label>
                   <input formControlName="pericia" matInput type="text" />
@@ -474,10 +474,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Item</mat-label>
                   <input formControlName="item" matInput type="text" />
@@ -517,10 +517,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3 mb-4">
           <div class="card-game">
             <div class="row align-items-center mb-2">
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 <mat-form-field class="text-field-formulario-edicao">
                   <mat-label style="color: rgb(68, 5, 18) !important">Magia</mat-label>
                   <input formControlName="magia" matInput type="text" />
@@ -563,7 +563,7 @@
       </div>
     </mat-card>
   </div>
-  <div class="row">
+  <div class="row mb-4">
     <div class="col-sm-12 mt-2">
       <section>
         <div class="button-row d-flex justify-content-end">
