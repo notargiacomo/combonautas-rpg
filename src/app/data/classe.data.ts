@@ -3688,7 +3688,7 @@ Ancestral são habilidades mágicas.
         nome: 'Comandante',
         descricao_classe: `
         <h5>Características de Classe</h5>
-        <p><b>Pontos de Vida.</b> Um nobre começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+        <p><b>Pontos de Vida.</b> Um comandante começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b>  Intimidação (Car), Guerra (Int) e Vontade (Sab) mais 3 a sua escolha entre Adestramento (Car), Atuação (Car), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Enganação (Car), Fortitude (Con), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Nobreza (Int), Ofício (Int), Percepção (Sab) e Pontaria (Des).</p>
         <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
@@ -3876,6 +3876,260 @@ Ancestral são habilidades mágicas.
         imagem: 'assets/img/variante_sentinela.png',
         referencias: Referencia.DB,
         paginas: '222, pag. 60 e 61',
+      },
+      {
+        id: 39,
+        nome: 'Capanga',
+        descricao_classe: `
+        <h5>Características de Classe</h5>
+        <p><b>Pontos de Vida.</b>  Um capanga começa com 12 pontos de vida + Constituição e ganha 3 PV + Constituição por nível.</p>
+        <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
+        <p><b>Perícias.</b> Ladinagem (Des) e Enganação (Des), mais 6 a sua escolha entre Acrobacia (Des), Atletismo (For), Atuação (Car), Cavalgar (Des), Conhecimento (Int), Diplomacia (Car), Furtividade (Des), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Jogatina (Car), Luta (For), Ofício (Int), Percepção (Sab), Pilotagem (Des), Pontaria (Des) e Reflexos (Des).</p>
+        <p><b>Proficiências.</b> Nenhuma.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>Ataque furtivo brutal +1d8</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>Evasão, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>3º</td>
+      <td>Ataque furtivo brutal +2d8, poder de ladino, rápido e rasteiro +2</td>
+    </tr>
+    <tr>
+      <td>4º</td>
+      <td>Cara feia, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>5º</td>
+      <td>Ataque furtivo brutal +3d8, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>6º</td>
+      <td>Flanquear aprimorado, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>7º</td>
+      <td>Ataque furtivo brutal +4d8, poder de ladino, rápido e rasteiro +4</td>
+    </tr>
+    <tr>
+      <td>8º</td>
+      <td>Olho nas costas, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>9º</td>
+      <td>Ataque furtivo brutal +5d8, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>10º</td>
+      <td>Evasão aprimorada, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>11º</td>
+      <td>Ataque furtivo brutal +6d8, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>12º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>13º</td>
+      <td>Ataque furtivo brutal +7d8, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>14º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>15º</td>
+      <td>Ataque furtivo brutal +8d8, poder de ladino, rápido e rasteiro +6</td>
+    </tr>
+    <tr>
+      <td>16º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>17º</td>
+      <td>Ataque furtivo brutal +9d8, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>18º</td>
+      <td>Poder de ladino</td>
+    </tr>
+    <tr>
+      <td>19º</td>
+      <td>Ataque furtivo brutal +10d8, poder de ladino</td>
+    </tr>
+    <tr>
+      <td>20º</td>
+      <td>Debulhar inimigos</td>
+    </tr>
+  </tbody>
+</table>
+`,
+        ha_informacoes_adicionais: false,
+        ha_poderes_db: true,
+        ha_complicacoes: false,
+        descricao_informacoes: ``,
+        fator_vida: 2,
+        fator_mana: 6,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES],
+        pericia_obrigatoria: 'Vontade',
+        pericia_escolha_entre_duas: ['Misticismo'],
+        pericias_escolha_grupo: [
+          'Conhecimento',
+          'Diplomacia',
+          'Enganação',
+          'Guerra',
+          'Iniciativa',
+          'Intimidação',
+          'Intuição',
+          'Investigação',
+          'Nobreza',
+          'Ofício',
+          'Percepção',
+        ],
+        numero_pericias_escolha_grupo: 2,
+        imagem: 'assets/img/variante_capanga.png',
+        referencias: Referencia.DB,
+        paginas: '223, pag. 63 à 65',
+      },
+      {
+        id: 40,
+        nome: 'Cruzado',
+        descricao_classe: `
+        <h5>Características de Classe</h5>
+        <p><b>Pontos de Vida.</b> Um cruzado começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+        <p><b>Pontos de Mana.</b> 5 PM por nível.</p>
+        <p><b>Perícias.</b> Luta (For) ou Pontaria (Des) e Religião (Sab) mais 2 a sua escolha entre Conhecimento (Int), Cura (Sab), Diplomacia (Car), Fortitude (Con), Iniciativa (Des), Intuição (Sab), Luta (For), Misticismo (Int), Nobreza (Int), Ofício (Int), Percepção (Sab), Pontaria (Des) e Vontade (Sab).</p>
+        <p><b>Proficiências.</b> Armas marciais, armaduras pesadas e escudos.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>Habilidades de Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>Devoto fiel, magias (1º círculo), presente dos deuses (1 melhoria)</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>Alma guerreira, poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>3º</td>
+      <td>Fé inabalável, poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>4º</td>
+      <td>Poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>5º</td>
+      <td>Magias (2º círculo), poder de clérigo, presente dos deuses (2 melhorias)</td>
+    </tr>
+    <tr>
+      <td>6º</td>
+      <td>Poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>7º</td>
+      <td>Poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>8º</td>
+      <td>Poder de clérigo, presente dos deuses (3 melhorias)</td>
+    </tr>
+    <tr>
+      <td>9º</td>
+      <td>Magias (3º círculo), poder de clérigo, presente dos deuses (3 melhorias, 1 encanto)</td>
+    </tr>
+    <tr>
+      <td>10º</td>
+      <td>Oração marcial, poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>11º</td>
+      <td>Poder de clérigo, presente dos deuses (4 melhorias, 1 encanto)</td>
+    </tr>
+    <tr>
+      <td>12º</td>
+      <td>Poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>13º</td>
+      <td>Magias (4º círculo), poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>14º</td>
+      <td>Poder de clérigo, presente dos deuses (4 melhorias, 2 encantos)</td>
+    </tr>
+    <tr>
+      <td>15º</td>
+      <td>Poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>16º</td>
+      <td>Poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>17º</td>
+      <td>Magias (5º círculo), poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>18º</td>
+      <td>Poder de clérigo, presente dos deuses (4 melhorias, 3 encantos)</td>
+    </tr>
+    <tr>
+      <td>19º</td>
+      <td>Poder de clérigo</td>
+    </tr>
+    <tr>
+      <td>20º</td>
+      <td>Guerreiro Santificado, poder de clérigo</td>
+    </tr>
+  </tbody>
+</table>
+`,
+        ha_informacoes_adicionais: false,
+        ha_poderes_db: true,
+        ha_complicacoes: false,
+        descricao_informacoes: ``,
+        fator_vida: 2,
+        fator_mana: 6,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES],
+        pericia_obrigatoria: 'Vontade',
+        pericia_escolha_entre_duas: ['Misticismo'],
+        pericias_escolha_grupo: [
+          'Conhecimento',
+          'Diplomacia',
+          'Enganação',
+          'Guerra',
+          'Iniciativa',
+          'Intimidação',
+          'Intuição',
+          'Investigação',
+          'Nobreza',
+          'Ofício',
+          'Percepção',
+        ],
+        numero_pericias_escolha_grupo: 2,
+        imagem: 'assets/img/variante_cruzado.png',
+        referencias: Referencia.DB,
+        paginas: '223, pag. 63 à 65',
       },
     ];
   }
