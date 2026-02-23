@@ -96,13 +96,14 @@
     border: 5px solid rgb(68, 5, 18) !important; /* Moldura */
     // border-radius: 15px; /* Bordas arredondadas */
     box-shadow: 0 4px 6px rgb(68, 5, 18) !important; /* Sombra suave */
-    @media (max-width: 768px) {
-      height: 300px !important; /* Altura máxima da imagem */
-      border: 1px solid rgb(68, 5, 18) !important; /* Moldura */
-      box-shadow: 0 2px 3px rgb(68, 5, 18) !important; /* Sombra suave */
-      padding: 5px !important;
-      object-fit: cover !important;
-    }
+    // @media (max-width: 768px) {
+    //   width: 100% !important; /* Largura máxima da imagem */
+    //   height: 300px !important; /* Altura máxima da imagem */
+    //   border: 1px solid rgb(68, 5, 18) !important; /* Moldura */
+    //   box-shadow: 0 2px 3px rgb(68, 5, 18) !important; /* Sombra suave */
+    //   padding: 5px !important;
+    //   object-fit: cover !important;
+    // }
   }
 
   h5 {
