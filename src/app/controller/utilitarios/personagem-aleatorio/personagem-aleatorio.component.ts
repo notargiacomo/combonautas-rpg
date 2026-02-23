@@ -15,10 +15,21 @@ import { RacaService } from '@app/service/raca.service';
 import { Deus } from '@app/model/deus';
 import { DeusService } from '@app/service/deus.service';
 import { PoderService } from '@app/service/poder.service';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { RacaFacadeService } from '@app/service/raca.facade.service';
+import { ClasseFacadeService } from '@app/service/classe.facade.service';
 
 @Component({
   selector: 'app-personagem-aleatorio',
-  imports: [MatDividerModule, MatCardModule, MatButtonModule, MatExpansionModule, MatDatepickerModule, MatTabsModule],
+  imports: [
+    MatDividerModule,
+    MatCardModule,
+    MatButtonModule,
+    MatExpansionModule,
+    MatDatepickerModule,
+    MatTabsModule,
+    NgFor,
+  ],
   templateUrl: './personagem-aleatorio.component.html',
   styleUrl: './personagem-aleatorio.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -37,15 +48,23 @@ export class PersonagemAleatorioComponent implements OnInit {
   personagem_nimb!: string;
 
   gerou = false;
+  isMobile = false;
 
   constructor(
+    private readonly racaFacadeService: RacaFacadeService,
     private readonly racaService: RacaService,
     private readonly origemService: OrigemService,
+    private readonly classeFacadeService: ClasseFacadeService,
     private readonly classeService: ClasseService,
     private readonly deusService: DeusService,
     private readonly poderService: PoderService,
-    private cdr: ChangeDetectorRef
-  ) {}
+    private cdr: ChangeDetectorRef,
+    private breakpointObserver: BreakpointObserver
+  ) {
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      this.isMobile = result.matches;
+    });
+  }
 
   ngOnInit() {
     this.carregaRacas();
@@ -55,44 +74,18 @@ export class PersonagemAleatorioComponent implements OnInit {
   }
 
   rezarPraNimb() {
-    this.racaIndex = Math.floor(Math.random() * this.racas.length);
-    this.origemIndex = Math.floor(Math.random() * this.origens.length);
-    this.classeIndex = Math.floor(Math.random() * this.classes.length);
-
-    const deusesSubGrupo: Deus[] = [];
-    if (this.classes[this.classeIndex].nome === 'Clérigo') {
-      this.deuses.forEach(element => {
-        if (element.nome !== 'Ateísmo' && element.nome !== 'Bem' && element.nome !== 'Arton') {
-          deusesSubGrupo.push(element);
-        }
-      });
-
-      const deusSubGrupoIndex = Math.floor(Math.random() * deusesSubGrupo.length);
-      this.deusIndex = this.deuses.findIndex(deus => deus === deusesSubGrupo[deusSubGrupoIndex]);
-    } else if (this.classes[this.classeIndex].nome === 'Paladino') {
-      this.deuses.forEach(element => {
-        if (element.aceitaPaladinos) {
-          deusesSubGrupo.push(element);
-        }
-      });
-
-      const deusSubGrupoIndex = Math.floor(Math.random() * deusesSubGrupo.length);
-      deusesSubGrupo[deusSubGrupoIndex];
-      this.deusIndex = this.deuses.findIndex(deus => deus === deusesSubGrupo[deusSubGrupoIndex]);
-    } else if (this.classes[this.classeIndex].nome === 'Druida') {
-      this.deuses.forEach(element => {
-        if (element.aceitaDruidas) {
-          deusesSubGrupo.push(element);
-        }
-      });
-
-      const deusSubGrupoIndex = Math.floor(Math.random() * deusesSubGrupo.length);
-      this.deusIndex = this.deuses.findIndex(deus => deus === deusesSubGrupo[deusSubGrupoIndex]);
-    } else {
-      this.deusIndex = Math.floor(Math.random() * this.deuses.length);
-    }
+    this.racaIndex = Math.floor(Math.random() * this.racas.length) + 1;
+    this.origemIndex = Math.floor(Math.random() * this.origens.length) + 1;
+    this.classeIndex = Math.floor(Math.random() * this.classes.length) + 1;
     this.gerou = true;
     this.cdr.detectChanges();
+  }
+
+  khalmyrTaDeOlho() {
+    this.racaIndex = 0;
+    this.origemIndex = 0;
+    this.classeIndex = 0;
+    this.gerou = false;
   }
 
   carregaRacas() {
@@ -155,5 +148,18 @@ export class PersonagemAleatorioComponent implements OnInit {
         console.log(response);
       },
     });
+  }
+
+  carregarAbasClasse(classe: Classe) {
+    this.classeFacadeService.recuperaHabilidades(classe);
+    this.classeFacadeService.recuperaPoderes(classe);
+    return classe;
+  }
+
+  carregarAbasRacas(raca: Raca) {
+    this.racaFacadeService.abrirHistoria(raca);
+    this.racaFacadeService.recuperaHabilidades(raca);
+    this.racaFacadeService.recuperaPoderes(raca);
+    return raca;
   }
 }
