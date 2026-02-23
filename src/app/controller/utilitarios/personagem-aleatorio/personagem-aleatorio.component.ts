@@ -36,6 +36,7 @@ import { ClasseFacadeService } from '@app/service/classe.facade.service';
 })
 export class PersonagemAleatorioComponent implements OnInit {
   readonly panelOpenState = signal(false);
+
   racaIndex!: number;
   origemIndex!: number;
   classeIndex!: number;
@@ -45,10 +46,17 @@ export class PersonagemAleatorioComponent implements OnInit {
   origens!: Origem[];
   classes!: Classe[];
   deuses!: Deus[];
+
   personagem_nimb!: string;
 
   gerou = false;
   isMobile = false;
+
+  // SHUFFLE BAGS
+  private racasBag: number[] = [];
+  private origensBag: number[] = [];
+  private classesBag: number[] = [];
+  private deusesBag: number[] = [];
 
   constructor(
     private readonly racaFacadeService: RacaFacadeService,
@@ -73,29 +81,67 @@ export class PersonagemAleatorioComponent implements OnInit {
     this.carregaDeuses();
   }
 
+  // =========================
+  // SHUFFLE BAG CORE
+  // =========================
+
+  private criarBag(length: number): number[] {
+    const bag = Array.from({ length }, (_, i) => i);
+
+    for (let i = bag.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+
+      [bag[i], bag[j]] = [bag[j], bag[i]];
+    }
+
+    return bag;
+  }
+
+  private sortearDaBag(bag: number[], length: number): number {
+    if (bag.length === 0) bag.push(...this.criarBag(length));
+
+    return bag.pop()!;
+  }
+
+  // =========================
+  // RANDOMIZER PRINCIPAL
+  // =========================
+
   rezarPraNimb() {
-    this.racaIndex = Math.floor(Math.random() * this.racas.length) + 1;
-    this.origemIndex = Math.floor(Math.random() * this.origens.length) + 1;
-    this.classeIndex = Math.floor(Math.random() * this.classes.length) + 1;
+    if (!this.racas || !this.origens || !this.classes) return;
+
+    this.racaIndex = this.sortearDaBag(this.racasBag, this.racas.length);
+
+    this.origemIndex = this.sortearDaBag(this.origensBag, this.origens.length);
+
+    this.classeIndex = this.sortearDaBag(this.classesBag, this.classes.length);
+
+    if (this.deuses) this.deusIndex = this.sortearDaBag(this.deusesBag, this.deuses.length);
+
     this.gerou = true;
+
     this.cdr.detectChanges();
   }
 
   khalmyrTaDeOlho() {
-    this.racaIndex = 0;
-    this.origemIndex = 0;
-    this.classeIndex = 0;
     this.gerou = false;
+
+    this.cdr.detectChanges();
   }
+
+  // =========================
+  // LOADERS
+  // =========================
 
   carregaRacas() {
     this.racaService.listar(null).subscribe({
       next: response => {
         this.racas = response;
+
+        this.racasBag = [];
       },
-      error: response => {
-        console.log(response);
-      },
+
+      error: error => console.log(error),
     });
   }
 
@@ -103,10 +149,11 @@ export class PersonagemAleatorioComponent implements OnInit {
     this.classeService.listar(null).subscribe({
       next: response => {
         this.classes = response;
+
+        this.classesBag = [];
       },
-      error: response => {
-        console.log(response);
-      },
+
+      error: error => console.log(error),
     });
   }
 
@@ -114,28 +161,11 @@ export class PersonagemAleatorioComponent implements OnInit {
     this.deusService.listar(null).subscribe({
       next: response => {
         this.deuses = response;
-        this.deuses.forEach(deus => {
-          // this.poderService.listar({id_deuses:deus.id}).subscribe({
-          //   next: (response: any[]) => {
-          //     response.sort((a, b) => {
-          //       let nome_a = a.nome ? a.nome : 'a';
-          //       let nome_b = b.nome ? b.nome : 'b';
-          //       return nome_a.localeCompare(nome_b);
-          //     });
-          //     response.forEach(poder => {
-          //       poder.descricao = '<b>' + poder.nome + '.</b> ' + poder.descricao;
-          //       if (poder.e_poder_magico) {
-          //         poder.descricao += '<i><b> e</b></i>';
-          //       }
-          //     });
-          //     deus.poderes = response;
-          //   }
-          // });
-        });
+
+        this.deusesBag = [];
       },
-      error: response => {
-        console.log(response);
-      },
+
+      error: error => console.log(error),
     });
   }
 
@@ -143,23 +173,33 @@ export class PersonagemAleatorioComponent implements OnInit {
     this.origemService.listar(null).subscribe({
       next: response => {
         this.origens = response;
+
+        this.origensBag = [];
       },
-      error: response => {
-        console.log(response);
-      },
+
+      error: error => console.log(error),
     });
   }
 
+  // =========================
+  // FACADE LOADERS
+  // =========================
+
   carregarAbasClasse(classe: Classe) {
     this.classeFacadeService.recuperaHabilidades(classe);
+
     this.classeFacadeService.recuperaPoderes(classe);
+
     return classe;
   }
 
   carregarAbasRacas(raca: Raca) {
     this.racaFacadeService.abrirHistoria(raca);
+
     this.racaFacadeService.recuperaHabilidades(raca);
+
     this.racaFacadeService.recuperaPoderes(raca);
+
     return raca;
   }
 }
