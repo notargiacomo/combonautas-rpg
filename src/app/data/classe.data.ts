@@ -3750,6 +3750,133 @@ Ancestral são habilidades mágicas.
         referencias: Referencia.DB,
         paginas: '222, pag. 57 à 60',
       },
+      {
+        id: 38,
+        nome: 'Sentinela',
+        descricao_classe: `
+        <h5>Características de Classe</h5>
+        <p><b>Pontos de Vida.</b> Um sentinela começa com 12 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+        <p><b>Pontos de Mana.</b> 5 PM por nível.</p>
+        <p><b>Perícias.</b> Luta (For) e Misticismo (Int) mais 2 a sua escolha entre Conhecimento (Int), Diplomacia (Car), Enganação (Car), Guerra (Int), Iniciativa (Des), Intimidação (Car), Intuição (Sab), Investigação (Int), Nobreza (Int), Ofício (Int), Percepção (Sab) e Vontade (Sab).</p>
+        <p><b>Proficiências.</b> Armas marciais.</p>
+        <table>
+        <thead>
+          <tr>
+            <th>Nível</th>
+            <th>Habilidades de Classe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1º</td>
+            <td>Caminho do sentinela, gladiomancia, magias (1º círculo)</td>
+          </tr>
+          <tr>
+            <td>2º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>3º</td>
+            <td>Mago de combate, poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>4º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>5º</td>
+            <td>Magias (2º círculo), poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>6º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>7º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>8º</td>
+            <td>Ataque extra, poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>9º</td>
+            <td>Magias (3º círculo), poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>10º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>11º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>12º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>13º</td>
+            <td>Magias (4º círculo), poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>14º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>15º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>16º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>17º</td>
+            <td>Magias (5º círculo), poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>18º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>19º</td>
+            <td>Poder de arcanista</td>
+          </tr>
+          <tr>
+            <td>20º</td>
+            <td>Mestre arcano-combatente, poder de arcanista</td>
+          </tr>
+        </tbody>
+      </table>
+`,
+        ha_informacoes_adicionais: false,
+        ha_poderes_db: true,
+        ha_complicacoes: false,
+        descricao_informacoes: ``,
+        fator_vida: 2,
+        fator_mana: 6,
+        proficiencias: [Proficiencia.ARMAS_SIMPLES],
+        pericia_obrigatoria: 'Vontade',
+        pericia_escolha_entre_duas: ['Misticismo'],
+        pericias_escolha_grupo: [
+          'Conhecimento',
+          'Diplomacia',
+          'Enganação',
+          'Guerra',
+          'Iniciativa',
+          'Intimidação',
+          'Intuição',
+          'Investigação',
+          'Nobreza',
+          'Ofício',
+          'Percepção',
+        ],
+        numero_pericias_escolha_grupo: 2,
+        imagem: 'assets/img/variante_sentinela.png',
+        referencias: Referencia.DB,
+        paginas: '222, pag. 60 e 61',
+      },
     ];
   }
 }
