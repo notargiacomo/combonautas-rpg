@@ -455,8 +455,12 @@
       <div class="col-sm-12 mt-4">
         <section>
           <div class="button-row d-flex justify-content-end">
-            <button class="me-2" (click)="khalmyrTaDeOlho()" mat-flat-button>Khalmyr ta de olho!</button>
-            <button class="me-2" (click)="rezarPraNimb()" mat-flat-button>Reze para Nimb e Alegre-se!</button>
+            <button class="me-2" [disabled]="!gerou" (click)="khalmyrTaDeOlho()" mat-flat-button>
+              Khalmyr ta de olho!
+            </button>
+            <button class="me-2" [disabled]="gerou" (click)="rezarPraNimb()" mat-flat-button>
+              Reze para Nimb e Alegre-se!
+            </button>
           </div>
         </section>
       </div>
