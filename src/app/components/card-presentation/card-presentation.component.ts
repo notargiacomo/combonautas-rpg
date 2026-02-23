@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-card-presentation',
   standalone: true,
-  imports: [MatCard, MatCardTitle, MatCardActions, RouterModule, MatCardContent],
+  imports: [MatCard, MatCardTitle, MatCardActions, RouterModule],
   templateUrl: './card-presentation.component.html',
   styleUrl: './card-presentation.component.scss',
 })

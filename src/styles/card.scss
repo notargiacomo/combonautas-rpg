@@ -1,17 +1,17 @@
 .mdc-card {
-  margin-bottom: 5% !important;
 }
 
 .mat-mdc-card {
   width: 100% !important;
   padding: 1% !important;
   // margin: 1% !important;
-  margin-top: 5% !important;
   border: 5px solid #440512 !important; /* moldura */
   border-radius: 10px !important; /* Arredonda os cantos */
 }
 
 .mdc-card .card-game {
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
   height: 100% !important;
   color: rgb(199, 199, 199) !important;
   background-color: rgb(104, 16, 16) !important;
@@ -96,6 +96,13 @@
     border: 5px solid rgb(68, 5, 18) !important; /* Moldura */
     // border-radius: 15px; /* Bordas arredondadas */
     box-shadow: 0 4px 6px rgb(68, 5, 18) !important; /* Sombra suave */
+    @media (max-width: 768px) {
+      height: 300px !important; /* Altura máxima da imagem */
+      border: 1px solid rgb(68, 5, 18) !important; /* Moldura */
+      box-shadow: 0 2px 3px rgb(68, 5, 18) !important; /* Sombra suave */
+      padding: 5px !important;
+      object-fit: cover !important;
+    }
   }
 
   h5 {
