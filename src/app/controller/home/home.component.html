@@ -1,46 +1,58 @@
 <mat-card>
   @if (isMobile) {
+    <div class="row mb-2">
+      <div class="col-sm-12">
+        <app-card-presentation
+          [titulo]="titulo_menu_personagem"
+          [caminho_imagem]="caminho_imagem_menu_personagem"
+          [descricao]="descricao_menu_personagem"
+          [links]="links_menu_personagem"></app-card-presentation>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-sm-12">
+        <app-card-presentation
+          [titulo]="titulo_menu_item"
+          [caminho_imagem]="caminho_imagem_menu_item"
+          [descricao]="descricao_menu_item"
+          [links]="links_menu_item"></app-card-presentation>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-sm-12">
+        <app-card-presentation
+          [titulo]="titulo_menu_campanha"
+          [caminho_imagem]="caminho_imagem_menu_campanha"
+          [descricao]="descricao_menu_campanha"
+          [links]="links_menu_campanha"></app-card-presentation>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-sm-12">
+        <app-card-presentation
+          [titulo]="titulo_menu_regras"
+          [caminho_imagem]="caminho_imagem_menu_regras"
+          [descricao]="descricao_menu_regras"
+          [links]="links_menu_regras"></app-card-presentation>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-sm-12">
+        <app-card-presentation
+          [titulo]="titulo_menu_mestre"
+          [caminho_imagem]="caminho_imagem_menu_mestre"
+          [descricao]="descricao_menu_mestre"
+          [links]="links_menu_mestre"></app-card-presentation>
+      </div>
+    </div>
     <div class="row">
-      <app-card-presentation
-        [titulo]="titulo_menu_personagem"
-        [caminho_imagem]="caminho_imagem_menu_personagem"
-        [descricao]="descricao_menu_personagem"
-        [links]="links_menu_personagem"></app-card-presentation>
-    </div>
-    <div class="row mt-1">
-      <app-card-presentation
-        [titulo]="titulo_menu_item"
-        [caminho_imagem]="caminho_imagem_menu_item"
-        [descricao]="descricao_menu_item"
-        [links]="links_menu_item"></app-card-presentation>
-    </div>
-    <div class="row mt-1">
-      <app-card-presentation
-        [titulo]="titulo_menu_campanha"
-        [caminho_imagem]="caminho_imagem_menu_campanha"
-        [descricao]="descricao_menu_campanha"
-        [links]="links_menu_campanha"></app-card-presentation>
-    </div>
-    <div class="row mt-1">
-      <app-card-presentation
-        [titulo]="titulo_menu_regras"
-        [caminho_imagem]="caminho_imagem_menu_regras"
-        [descricao]="descricao_menu_regras"
-        [links]="links_menu_regras"></app-card-presentation>
-    </div>
-    <div class="row mt-1">
-      <app-card-presentation
-        [titulo]="titulo_menu_mestre"
-        [caminho_imagem]="caminho_imagem_menu_mestre"
-        [descricao]="descricao_menu_mestre"
-        [links]="links_menu_mestre"></app-card-presentation>
-    </div>
-    <div class="row mt-1">
-      <app-card-presentation
-        [titulo]="titulo_menu_utilitarios"
-        [caminho_imagem]="caminho_imagem_menu_utilitarios"
-        [descricao]="descricao_menu_utilitarios"
-        [links]="links_menu_utilitarios"></app-card-presentation>
+      <div class="col-sm-12">
+        <app-card-presentation
+          [titulo]="titulo_menu_utilitarios"
+          [caminho_imagem]="caminho_imagem_menu_utilitarios"
+          [descricao]="descricao_menu_utilitarios"
+          [links]="links_menu_utilitarios"></app-card-presentation>
+      </div>
     </div>
   } @else {
     <div class="row">

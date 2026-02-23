@@ -9,7 +9,7 @@ html,
 body {
   width: 100% !important; /* Define percentual de uso de largura da terra */
   height: 100%; /* Define percentual de uso de altura da terra */
-  background-color: rgb(68, 5, 18) !important; /* Define o fundo como a cor dominante */
+  background-color: rgb(68, 5, 18) !important;
   font-family: 'Oswald' !important;
   margin: 0;
   font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
@@ -242,6 +242,7 @@ button[mat-flat-button]:hover {
 .card-padrao .card-padrao-arvore {
   background-color: rgb(45, 35, 60) !important; /* Cinza claro */
   color: rgb(255, 255, 255) !important;
+  border-radius: 10px !important; /* Arredonda os cantos */
 }
 
 .mat-mdc-unelevated-button:not(:disabled) {
@@ -387,4 +388,13 @@ tr.element-row:not(.example-expanded-row):active {
   object-position: center !important; /* centraliza */
   display: block !important;
   background-color: rgb(68, 5, 18) !important;
+}
+
+.marca-distincao {
+  border-radius: 10px !important; /* Arredonda os cantos */
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  background-color: rgb(68, 5, 18) !important;
+  padding: 3% !important;
+  text-align: justify !important;
 }
