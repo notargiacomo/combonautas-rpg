@@ -68,16 +68,11 @@
             <button mat-menu-item (click)="navigateTo('utilitarios/ficha-rapida')">Ficha</button>
           </mat-menu>
         </div>
-        <!-- <div class="col-sm-4">
-          <form [formGroup]="form">
-              <div class="d-flex justify-content-end">
-                <input *ngIf="form.get('mostrarCamposLogin')?.value" class="me-1" formControlName="login" matInput type="text" name="login" placeholder="login"/>
-                <input *ngIf="form.get('mostrarCamposLogin')?.value" class="me-1" formControlName="senha" matInput type="password" name="senha" placeholder="senha"/>
-                <button  *ngIf="!form.get('logado')?.value" (click)="logar()" mat-flat-button>Login</button>
-                <button  *ngIf="form.get('logado')?.value" (click)="deslogar()" mat-flat-button>Logout</button>
-              </div>
-          </form>
-        </div> -->
+        <div class="col-sm-4 d-flex align-items-center justify-content-end pe-4">
+          <div class="ms-3">
+            <b class="text-white">COMBONAUTAS : {{ totalAcessos }}</b>
+          </div>
+        </div>
       </div>
     </div>
   </mat-card-content>

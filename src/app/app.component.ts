@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+import { NgIf, isPlatformBrowser } from '@angular/common';
 import { Component, Inject, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -9,6 +9,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { Router, RouterOutlet } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoadingIndicatorComponent } from './conf/loading-indicator/loading-indicator.component';
+import { Acesso } from './dao/acessos.dao';
 
 @Component({
   selector: 'app-root',
@@ -23,30 +24,37 @@ import { LoadingIndicatorComponent } from './conf/loading-indicator/loading-indi
     FooterComponent,
     ReactiveFormsModule,
     FormsModule,
-    MatButtonModule,
-    MatCardModule,
-    MatDividerModule,
-    FormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   title = 'combonautas';
+
   readonly dialog = inject(MatDialog);
+
   form!: FormGroup;
+
+  totalAcessos = 0;
 
   constructor(
     private readonly router: Router,
     private fb: FormBuilder,
+    private acessoDao: Acesso,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     this.form = this.fb.group({
       login: [''],
-      senha: [''], // nunca recupere senha da sessão
+      senha: [''],
       mostrarCamposLogin: [false],
       logado: [false],
     });
+  }
+
+  async ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      await this.controlarContador();
+    }
   }
 
   ngAfterViewInit() {
@@ -57,26 +65,40 @@ export class AppComponent implements OnInit {
 
       this.form = this.fb.group({
         login: [login],
-        senha: [''], // nunca recupere senha da sessão
+        senha: [''],
         mostrarCamposLogin: [mostrarCamposLogin],
         logado: [logado],
       });
     }
   }
 
-  ngOnInit() {}
+  private async controlarContador() {
+    try {
+      const jaContou = sessionStorage.getItem('contador_incrementado');
+
+      if (!jaContou) {
+        this.totalAcessos = await this.acessoDao.atualizar();
+
+        sessionStorage.setItem('contador_incrementado', 'true');
+      } else {
+        this.totalAcessos = await this.acessoDao.buscar();
+      }
+    } catch (erro) {
+      console.error('Erro ao controlar contador:', erro);
+    }
+  }
 
   logar() {
     const login = this.form.value.login;
     const senha = this.form.value.senha;
+
     if (this.form.value.mostrarCamposLogin) {
-      if (this.form.value.login === 'admin' && this.form.value.senha === 'admin') {
+      if (login === 'admin' && senha === 'admin') {
         this.form.patchValue({
           logado: true,
           mostrarCamposLogin: false,
         });
 
-        // Salvar na sessionStorage
         sessionStorage.setItem('login', login);
         sessionStorage.setItem('logado', 'true');
         sessionStorage.setItem('mostrarCamposLogin', 'false');
@@ -89,7 +111,6 @@ export class AppComponent implements OnInit {
   }
 
   deslogar() {
-    this.form.get('logado')?.setValue(false);
     this.form.patchValue({
       login: '',
       senha: '',
@@ -97,7 +118,9 @@ export class AppComponent implements OnInit {
       mostrarCamposLogin: true,
     });
 
-    sessionStorage.clear();
+    sessionStorage.removeItem('login');
+    sessionStorage.removeItem('logado');
+    sessionStorage.removeItem('mostrarCamposLogin');
   }
 
   navigateTo(route: string): void {
