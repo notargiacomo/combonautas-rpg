@@ -3,7 +3,7 @@ import { Deus } from './deus';
 import { Raca } from './raca';
 
 export class Poder {
-  id!: number;
+  id?: number;
   ids_poder_pai?: number[];
   nome?: string;
   descricao?: string;
@@ -17,6 +17,7 @@ export class Poder {
   prerequisito_habilidade?: string[];
   prerequisito_numero_habilidade_tormenta?: number;
   id_deuses?: number[];
+  id_classes_para_habilidades?: number[];
   deuses?: Deus[];
   fator_tormenta?: number;
   e_aprimoramento?: boolean;

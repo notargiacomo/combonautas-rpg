@@ -29,7 +29,7 @@ export class ClasseFacadeService {
 
     this.poderService.listAll().subscribe(poderes => {
       classe.habilidades = poderes
-        .filter(p => p.id_classe === classe.id && p.tipo === TipoPoder.HABILIDADE_CLASSE)
+        .filter(p => p.id_classes_para_habilidades?.includes(classe.id) && p.tipo === TipoPoder.HABILIDADE_CLASSE)
         .sort((a, b) => (a.prerequisito_nivel ?? 0) - (b.prerequisito_nivel ?? 0)); // ascendente
     });
   }

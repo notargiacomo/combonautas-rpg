@@ -3685,6 +3685,7 @@ Ancestral são habilidades mágicas.
       },
       {
         id: 37,
+        id_classe_pai: 13,
         nome: 'Comandante',
         descricao_classe: `
         <h5>Características de Classe</h5>
@@ -3752,6 +3753,7 @@ Ancestral são habilidades mágicas.
       },
       {
         id: 38,
+        id_classe_pai: 1,
         nome: 'Sentinela',
         descricao_classe: `
         <h5>Características de Classe</h5>
@@ -3879,6 +3881,7 @@ Ancestral são habilidades mágicas.
       },
       {
         id: 39,
+        id_classe_pai: 11,
         nome: 'Capanga',
         descricao_classe: `
         <h5>Características de Classe</h5>
@@ -4006,6 +4009,7 @@ Ancestral são habilidades mágicas.
       },
       {
         id: 40,
+        id_classe_pai: 7,
         nome: 'Cruzado',
         descricao_classe: `
         <h5>Características de Classe</h5>
