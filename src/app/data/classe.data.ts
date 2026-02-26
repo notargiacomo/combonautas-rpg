@@ -1954,7 +1954,7 @@ export class ClasseData {
         id_classe_pai: 5,
         nome: 'Seteiro',
         descricao_classe: `<h5>Características de Classe</h5>
-        <p><b>Pontos de Vida.</b>   Um seteiro começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
+        <p><b>Pontos de Vida.</b> Um seteiro começa com 16 pontos de vida + Constituição e ganha 4 PV + Constituição por nível.</p>
         <p><b>Pontos de Mana.</b> 4 PM por nível.</p>
         <p><b>Perícias.</b> Pontaria (Des) e Sobrevivência (Sab), mais 6 a sua escolha entre Adestramento (Car), Atletismo (For), Cavalgar (Des), Cura (Sab), Fortitude (Con), Furtividade (Des), Iniciativa (Des), Investigação (Int), Luta (For), Ofício (Int), Percepção (Sab) e Reflexos (Des).</p>
         <p><b>Proficiências.</b> Armas marciais.</p>

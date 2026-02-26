@@ -3,14 +3,9 @@ import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule }
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {
-  MatDialog,
-  MatDialogActions,
-  MatDialogClose,
-  MatDialogContent,
-  MatDialogTitle,
-} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -20,7 +15,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { ameacas } from '@app/data/ameacas.data';
 import { CalculoDesafiosDto } from '@app/dto/calculo-desafios.dto';
 import { Ameaca } from '@app/model/ameaca';
-import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-calculo-desafios',
@@ -49,6 +43,7 @@ export class CalculoDesafiosComponent implements OnInit {
   formulario!: FormGroup;
   calculoDesafios = new CalculoDesafiosDto();
   resultado: string = '';
+  nd: number = 0;
 
   situacoes: string[] = ['FAVORÁVEL', 'NEUTRA', 'DESFAVORÁVEL'];
 
@@ -57,10 +52,6 @@ export class CalculoDesafiosComponent implements OnInit {
   monstrosSelecionadosAleatoriamente: any[] = [];
 
   constructor(private fb: FormBuilder) {}
-
-  openDialog() {
-    this.dialog.open(DialogElementsExampleDialog);
-  }
 
   ngOnInit() {
     this.formulario = this.fb.group({
@@ -75,7 +66,6 @@ export class CalculoDesafiosComponent implements OnInit {
   }
 
   calcular() {
-    // console.log(this.formulario.get("entrosados")?.value);
     const valores: CalculoDesafiosDto = this.formulario.value;
     var resultado: number = valores.nivel;
     resultado += valores.numero_jogadores - 4;
@@ -83,6 +73,7 @@ export class CalculoDesafiosComponent implements OnInit {
     resultado += valores.entrosados ? 1 : 0;
     resultado += valores.situacao;
     resultado += -(valores.numero_encontros - 1);
+    this.nd = resultado;
     this.listaResultado(resultado);
     this.resultado = valores.numero_encontros + ' ENCONTRO(S) DE ND ' + resultado;
   }
@@ -110,11 +101,3 @@ export class CalculoDesafiosComponent implements OnInit {
     }
   }
 }
-
-@Component({
-  selector: 'dialog-elements-example-dialog',
-  templateUrl: 'dialog-elements-example-dialog.html',
-  imports: [MatDialogContent, MatDialogActions, MatDialogClose, MatDialogActions, MatButtonModule, MatCardModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-})
-export class DialogElementsExampleDialog {}

@@ -198,14 +198,116 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="row">
-          <div class="col-sm-12">
-            <hr />
-            <h5>RESULTADO: {{ resultado }}</h5>
+      <mat-card class="card-game">
+        <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+          <h5>RESULTADO: {{ resultado }}</h5>
+        </mat-card-title>
+        <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+          <div class="content mt-2">
+            <img src="assets/img/calculo_desafio.png" class="img-fluid" style="height: 500px !important" />
+            <h5>EXPLICANDO:</h5>
+            <p>
+              {{
+                'O grupo de aventureiros de ' +
+                  this.formulario.value.numero_jogadores +
+                  ' integrantes enfrenterá uma quantidade de ' +
+                  this.formulario.value.numero_encontros +
+                  ' encontros(s) grupo de oponentes, que calculados, tenham a ND total de ' +
+                  this.formulario.value.nivel +
+                  ' de forma equilibrada antes de precisar descansar. Isso significa que os desafios causarão dano aos heróis, exigirão que eles gastem pontos de mana e talvez derrubem alguns deles. Porém, ao fim do combate, os aventureiros prevalecerão. A partir dai é aconselhado ao mestre que permita descanso e/ou que eles encontrem alguma forma de se recuperar em forma de loot.'
+              }}
+            </p>
+            <p>
+              No entanto o cálculo acima proposto é um cálculo de nível moderado. Feito para cansar os aventureiros e
+              passar a sensação aos mesmos de que eles valem o quanto foram pagos. Mas outros níveis de dificuldades
+              podem se fazer necessários tendo outras aplicações e implicações sugeridas. A tabela abaixo sugere as
+              aplicações e implicações em níveis acima e abaixo. Tenha em mente o último mandanmento dos calculos dos
+              desafios antes de fazer os ajustes: "10. O BOM SENSO DO MESTRE E A DIVERSÃO DO GRUPO SÃO AS PRIORIDADES.".
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Desafio</th>
+                  <th>ND</th>
+                  <th>Aplicações</th>
+                  <th>Implicações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Irrelevante</td>
+                  <td>
+                    {{ this.nd - 2 > 1 ? this.nd - 3 : '0' }}
+                  </td>
+                  <td>Opa, desculpa, esbarrei em você, foi sem querer. Amigão ... oi amigão!!!???</td>
+                  <td>Aqui jaz um kobold solitário desconhecido.</td>
+                </tr>
+                <tr>
+                  <td>Trivial</td>
+                  <td>
+                    {{ this.nd - 2 > 1 ? this.nd - 2 : '1/' + (this.nd + 3) }}
+                  </td>
+                  <td>
+                    Alvorada. Aquecimento da manhã, sem tomar café mesmo. Nem precisa de armadura ou armas. Da pra
+                    resolver no mãozão.
+                  </td>
+                  <td>Se sangrar é fracote!</td>
+                </tr>
+                <tr>
+                  <td>Baixo</td>
+                  <td>
+                    {{ this.nd - 1 > 1 ? this.nd - 1 : '1/' + (this.nd + 1) }}
+                  </td>
+                  <td>
+                    Farmando Aura. Aqueles combates que trazem a esperança aos corações de aldeões desolados. Que vêem
+                    nos aventureiros o último raio de sol, ao ve-los enfrentar inimigos, que os matariam, sem nem soar.
+                  </td>
+                  <td>Feridas leves, poucos ou quase nenhum recursos gastos.</td>
+                </tr>
+                <tr>
+                  <td>Moderado</td>
+                  <td>{{ this.nd }}</td>
+                  <td>
+                    Final de Aventura, aqui você quer passar a relevância que os personagens tem pra alguém, nem que
+                    seja para si mesmo, e sem eles, algo ia quebrar permanentemente.
+                  </td>
+                  <td>Talvez um ou outro caia, mas vai ficar tudo bem.</td>
+                </tr>
+                <tr>
+                  <td>Severo</td>
+                  <td>{{ this.nd + 1 > 20 ? 20 : this.nd + 1 }}</td>
+                  <td>
+                    Final de Arco, o inimigo provavelmente não é brincadeira, os aventureiros tem que estar bem
+                    preparados, informados e entrosados.
+                  </td>
+                  <td>Provavelmente alguem vai morrer, se não agirem em equipe. Morrer mesmo.</td>
+                </tr>
+                <tr>
+                  <td>Extremo</td>
+                  <td>{{ this.nd + 2 > 20 ? 20 : this.nd + 2 }}</td>
+                  <td>
+                    Final de Campanha ou Evento Cataclismico. Talvez tudo na mida dos aventureiros tenham levado a esse
+                    momento. Viver ou morrer passar a não ter mais importância, afinal há algo mais que eles em jogo.
+                  </td>
+                  <td>Dê meios para seus jogadores fugirem ou receberam auxilio, ou será um provável tpk.</td>
+                </tr>
+                <tr>
+                  <td>Letal</td>
+                  <td>{{ this.nd + 3 > 20 ? 20 : this.nd + 3 }}</td>
+                  <td>
+                    Campanha no Mundo dos Mortos. Você quer matar todos, faz parte da campanha, só "esqueceu" de avisar
+                    aos jogadores.
+                  </td>
+                  <td>
+                    Todos simplesmente vão morrer, talvez em ou outro sobreviva se tiver sorte, ou se for covarde na
+                    hora certa.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-      </div>
+        </mat-card-content>
+      </mat-card>
     </div>
   </mat-card>
 </form>
