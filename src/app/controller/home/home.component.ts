@@ -210,11 +210,6 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
                 <b>[BETA] Cálculo de Desafios: </b>
                 Calcula o nível de desafio ideal, evitando TPKs acidentais… ou garantindo-os, se preferir.
             </li>
-
-            <li>
-                <b>[ALPHA] Geração de Tesouros: </b>
-                Gera recompensas aleatórias, desde relíquias lendárias até aquele pergaminho inútil que ninguém pediu.
-            </li>
             <li>
                 <b>[PLANEJADO] Ameaças: </b>
                 Vá por mim, não é pokemon.
@@ -250,8 +245,8 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
             E um mestre equilibrado é muito mais criativo na hora de fazer os jogadores sofrerem.
         </p>`;
   links_menu_mestre = [
-    { nome: 'Cálculo de Desafios', link: 'utilitarios/personagem-aleatorio' },
-    { nome: 'Geração de Tesouros', link: 'utilitarios/ficha-rapida' },
+    { nome: 'Cálculo de Desafios', link: 'mestre/calculo-desafios' },
+    { nome: 'Geração de Tesouros', link: 'mestre/tabela-geracao-tesouros' },
   ];
 
   /**
@@ -268,6 +263,11 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
 
     <li>
       <b>[BETA] Personagem Aleatório:</b> cansou de planejar minuciosamente seus personagens e quer mesmo abraçar Nimb e ver o circo pegar fogo? Vocês está no lugar certo doidão.
+    </li>
+
+    <li>
+      <b>[ALPHA] Geração de Tesouros: </b>
+      Gera recompensas aleatórias, desde relíquias lendárias até aquele pergaminho inútil que ninguém pediu.
     </li>
 
     <li>

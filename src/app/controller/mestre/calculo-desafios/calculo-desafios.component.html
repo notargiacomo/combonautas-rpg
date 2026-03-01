@@ -198,7 +198,7 @@
           </div>
         </div>
       </div>
-      <mat-card class="card-game">
+      <mat-card class="card-game" style="margin-top: 1% !important">
         <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
           <h5>RESULTADO: {{ resultado }}</h5>
         </mat-card-title>
@@ -221,8 +221,10 @@
               No entanto o cálculo acima proposto é um cálculo de nível moderado. Feito para cansar os aventureiros e
               passar a sensação aos mesmos de que eles valem o quanto foram pagos. Mas outros níveis de dificuldades
               podem se fazer necessários tendo outras aplicações e implicações sugeridas. A tabela abaixo sugere as
-              aplicações e implicações em níveis acima e abaixo. Tenha em mente o último mandanmento dos calculos dos
-              desafios antes de fazer os ajustes: "10. O BOM SENSO DO MESTRE E A DIVERSÃO DO GRUPO SÃO AS PRIORIDADES.".
+              aplicações e implicações em níveis de dificuldade superiores e inferiores. Avalie e escolha qual é a
+              melhor dificuldade para a situação que você deseja cria na sua mesa. Tenha em mente o último mandanmento
+              dos calculos dos desafios antes de fazer os ajustes: "10. O BOM SENSO DO MESTRE E A DIVERSÃO DO GRUPO SÃO
+              AS PRIORIDADES.".
             </p>
             <table>
               <thead>
@@ -237,74 +239,197 @@
                 <tr>
                   <td>Irrelevante</td>
                   <td>
-                    {{ this.nd - 2 > 1 ? this.nd - 3 : '0' }}
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd - 2 > 1 ? this.nd - 3 : '0')"
+                      mat-flat-button>
+                      {{ this.nd - 2 > 1 ? this.nd - 3 : '0' }}
+                    </button>
                   </td>
-                  <td>Opa, desculpa, esbarrei em você, foi sem querer. Amigão ... oi amigão!!!???</td>
-                  <td>Aqui jaz um kobold solitário desconhecido.</td>
+                  <td>Nem sei o que dizer</td>
+                  <td>
+                    Opa, desculpa, esbarrei em você, foi sem querer. Amigão ... oi amigão!!!??? Aqui jaz um kobold
+                    solitário desconhecido.
+                  </td>
                 </tr>
                 <tr>
                   <td>Trivial</td>
                   <td>
-                    {{ this.nd - 2 > 1 ? this.nd - 2 : '1/' + (this.nd + 3) }}
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd - 2 > 1 ? this.nd - 2 : '1/' + (this.nd + 3))"
+                      mat-flat-button>
+                      {{ this.nd - 2 > 1 ? this.nd - 2 : '1/' + (this.nd + 3) }}
+                    </button>
                   </td>
+                  <td>Alvorada</td>
                   <td>
-                    Alvorada. Aquecimento da manhã, sem tomar café mesmo. Nem precisa de armadura ou armas. Da pra
-                    resolver no mãozão.
+                    Aquecimento da manhã, sem tomar café mesmo. Nem precisa de armadura ou armas. Da pra resolver no
+                    mãozão. Se sangrar é fracote!
                   </td>
-                  <td>Se sangrar é fracote!</td>
                 </tr>
                 <tr>
                   <td>Baixo</td>
                   <td>
-                    {{ this.nd - 1 > 1 ? this.nd - 1 : '1/' + (this.nd + 1) }}
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd - 1 > 1 ? this.nd - 1 : '1/' + (this.nd + 1))"
+                      mat-flat-button>
+                      {{ this.nd - 1 > 1 ? this.nd - 1 : '1/' + (this.nd + 1) }}
+                    </button>
                   </td>
+                  <td>Farmando Aura</td>
                   <td>
-                    Farmando Aura. Aqueles combates que trazem a esperança aos corações de aldeões desolados. Que vêem
-                    nos aventureiros o último raio de sol, ao ve-los enfrentar inimigos, que os matariam, sem nem soar.
+                    Aqueles combates que trazem a esperança aos corações de aldeões desolados. Que vêem nos aventureiros
+                    o último raio de sol, ao ve-los enfrentar inimigos, que os matariam, sem nem suar. Aventureiros
+                    sofrem feridas levese gastam poucos ou quase nenhum recursos gastos.
                   </td>
-                  <td>Feridas leves, poucos ou quase nenhum recursos gastos.</td>
                 </tr>
                 <tr>
                   <td>Moderado</td>
-                  <td>{{ this.nd }}</td>
                   <td>
-                    Final de Aventura, aqui você quer passar a relevância que os personagens tem pra alguém, nem que
-                    seja para si mesmo, e sem eles, algo ia quebrar permanentemente.
+                    <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
+                      {{ this.nd }}
+                    </button>
                   </td>
-                  <td>Talvez um ou outro caia, mas vai ficar tudo bem.</td>
+
+                  <td>Final de Aventura</td>
+                  <td>
+                    Aqui os aventureiros veem a relevância que seus personagens tem pra alguém, nem que seja para si
+                    mesmo, e sem ele, algo ia quebrar permanentemente. Nesse encontro, talvez um ou outro caia, mas vai
+                    ficar tudo bem.
+                  </td>
                 </tr>
                 <tr>
                   <td>Severo</td>
-                  <td>{{ this.nd + 1 > 20 ? 20 : this.nd + 1 }}</td>
                   <td>
-                    Final de Arco, o inimigo provavelmente não é brincadeira, os aventureiros tem que estar bem
-                    preparados, informados e entrosados.
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd + 1 > 20 ? 20 : this.nd + 1)"
+                      mat-flat-button>
+                      {{ this.nd + 1 > 20 ? 20 : this.nd + 1 }}
+                    </button>
                   </td>
-                  <td>Provavelmente alguem vai morrer, se não agirem em equipe. Morrer mesmo.</td>
+                  <td>Final de Arco</td>
+                  <td>
+                    O inimigo provavelmente não é brincadeira, os aventureiros tem que estar bem preparados, informados
+                    e entrosados. Provavelmente alguem vai morrer, se não agirem em equipe. Morrer mesmo.
+                  </td>
                 </tr>
                 <tr>
                   <td>Extremo</td>
-                  <td>{{ this.nd + 2 > 20 ? 20 : this.nd + 2 }}</td>
                   <td>
-                    Final de Campanha ou Evento Cataclismico. Talvez tudo na mida dos aventureiros tenham levado a esse
-                    momento. Viver ou morrer passar a não ter mais importância, afinal há algo mais que eles em jogo.
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd + 2 > 20 ? 20 : this.nd + 2)"
+                      mat-flat-button>
+                      {{ this.nd + 2 > 20 ? 20 : this.nd + 2 }}
+                    </button>
                   </td>
-                  <td>Dê meios para seus jogadores fugirem ou receberam auxilio, ou será um provável tpk.</td>
+                  <td>Final de Campanha ou Evento Cataclismico</td>
+                  <td>
+                    Talvez tudo na vida dos aventureiros tenham levado a esse momento. Viver ou morrer passa a não ter
+                    mais importância, afinal há algo maior que eles em jogo. Dê meios para seus jogadores fugirem ou
+                    receberam auxilio, ou será um provável tpk.
+                  </td>
                 </tr>
                 <tr>
                   <td>Letal</td>
-                  <td>{{ this.nd + 3 > 20 ? 20 : this.nd + 3 }}</td>
                   <td>
-                    Campanha no Mundo dos Mortos. Você quer matar todos, faz parte da campanha, só "esqueceu" de avisar
-                    aos jogadores.
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd + 3 > 20 ? 20 : this.nd + 3)"
+                      mat-flat-button>
+                      {{ this.nd + 3 > 20 ? 20 : this.nd + 3 }}
+                    </button>
                   </td>
+                  <td>Campanha no Mundo dos Mortos</td>
                   <td>
-                    Todos simplesmente vão morrer, talvez em ou outro sobreviva se tiver sorte, ou se for covarde na
-                    hora certa.
+                    Você quer matar todos, faz parte da campanha, só "esqueceu" de avisar aos jogadores. Todos
+                    simplesmente vão morrer, talvez um ou outro sobreviva se tiver sorte, ou se for covarde na hora
+                    certa.
                   </td>
                 </tr>
               </tbody>
+              <tfoot>
+                <tr>
+                  <td [colSpan]="4">
+                    APÓS ESCOLHER A DIFICULDADE DO CÁLCULO DE DESAFIO QUE DESEJA UTILIZAR, CLIQUE NO BOTÃO
+                    CORRESPONDENTE MONTAR O COMBATE.
+                  </td>
+                </tr>
+              </tfoot>
             </table>
+
+            @if (construindoCombate) {
+              <div class="col-12 col-sm-12 col-lg-12">
+                <h5>{{ 'CONSTRUINDO O COMBATE - ORCAMENTO ND ' + this.orcamento }}</h5>
+                <div class="card-game" style="margin-top: 1% !important">
+                  <div class="row align-items-center mb-2">
+                    <div class="col-sm-12">
+                      <mat-form-field class="text-field-formulario-edicao">
+                        <mat-label>Busque Ameaça</mat-label>
+                        <input matInput aria-label="ameaca" [matAutocomplete]="auto" formControlName="ameaca" />
+                        <mat-autocomplete #auto="matAutocomplete">
+                          @for (ameaca of filteredAmeacas$ | async; track ameaca.id) {
+                            <mat-option [value]="ameaca.nome">
+                              <span>{{ ameaca.nome }}</span>
+                              <span>
+                                {{ ameaca.nd >= 1 ? ameaca.nd : '1/' + 1 / ameaca.nd }}
+                              </span>
+                            </mat-option>
+                          }
+                        </mat-autocomplete>
+                        <button
+                          mat-icon-button
+                          matSuffix
+                          class="btn-adicionar"
+                          aria-label="Adicionar magia"
+                          type="button"
+                          (click)="adicionar()">
+                          <mat-icon>add</mat-icon>
+                        </button>
+                      </mat-form-field>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th [colSpan]="3">
+                              {{
+                                'Ameaças (Custo do Combate = ' +
+                                  (this.custoCombate === 0
+                                    ? 0
+                                    : this.custoCombate >= 1
+                                      ? this.custoCombate
+                                      : '1/' + 1 / this.custoCombate) +
+                                  ')'
+                              }}
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of ameacasCombate; track $index) {
+                            <tr>
+                              <td>{{ item.nome }}</td>
+                              <td>{{ item.nd >= 1 ? item.nd : '1/' + 1 / item.nd }}</td>
+                              <td [width]="8">
+                                <button
+                                  mat-icon-button
+                                  class="btn-adicionar"
+                                  style="padding: 10% !important; font-size: xx-small !important"
+                                  type="button"
+                                  (click)="remover($index)">
+                                  <mat-icon>remove</mat-icon>
+                                </button>
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
           </div>
         </mat-card-content>
       </mat-card>

@@ -32,6 +32,7 @@ import { TabelaGeracaoTesouroData } from './tabela.geracao.tesouro.data';
 import { TipoParceiroData } from './tipo.parceiro.data';
 import { Parceiro } from '@app/model/parceiro';
 import { ArtefatoData } from './artefato.data';
+import { AmeacaData } from './ameacas.data';
 
 @Injectable({
   providedIn: 'root',
@@ -54,7 +55,8 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly itemMagicoData: ItemMagicoData,
     private readonly tabelaGeracaoTesouroData: TabelaGeracaoTesouroData,
     private readonly parceiroData: TipoParceiroData,
-    private readonly artefatoData: ArtefatoData
+    private readonly artefatoData: ArtefatoData,
+    private readonly ameacaData: AmeacaData
   ) {}
 
   createDb() {
@@ -75,6 +77,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const itemMagico: ItemMagico[] = this.itemMagicoData.get();
     const tabelaGeracaoTesouroData: TabelaGeracaoTesouroData[] = this.tabelaGeracaoTesouroData.get();
     const artefato: ArtefatoData[] = this.artefatoData.get();
+    const ameaca: AmeacaData[] = this.ameacaData.get();
 
     return {
       raca: raca,
@@ -94,6 +97,7 @@ export class InMemoryDataService implements InMemoryDbService {
       parceiro: parceiro,
       tabelaGeracaoTesouroData: tabelaGeracaoTesouroData,
       artefato: artefato,
+      ameaca: ameaca,
     };
   }
 }
