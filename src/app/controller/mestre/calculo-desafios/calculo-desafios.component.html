@@ -373,9 +373,31 @@
                         <mat-autocomplete #auto="matAutocomplete">
                           @for (ameaca of filteredAmeacas$ | async; track ameaca.id) {
                             <mat-option [value]="ameaca.nome">
-                              <span>{{ ameaca.nome }}</span>
+                              <span class="text-muted">ND {{ ameaca.nd >= 1 ? ameaca.nd : '1/' + 1 / ameaca.nd }}</span>
                               <span>
-                                {{ ameaca.nd >= 1 ? ameaca.nd : '1/' + 1 / ameaca.nd }}
+                                {{
+                                  ameaca.nd < 1
+                                    ? '&nbsp;&nbsp;-&nbsp;'
+                                    : ameaca.nd > 9
+                                      ? '&nbsp;&nbsp;&nbsp;-&nbsp;'
+                                      : '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'
+                                }}
+                              </span>
+                              <span>
+                                {{
+                                  ameaca.nome +
+                                    ' ( Papel: ' +
+                                    ameaca.papel +
+                                    '  | Grupo: ' +
+                                    ameaca.grupo +
+                                    '  | Tipo: ' +
+                                    ameaca.tipo +
+                                    '  | Tamanho: ' +
+                                    ameaca.tamanho +
+                                    '  | Ref.: ' +
+                                    ameaca.referencia +
+                                    ' )'
+                                }}
                               </span>
                             </mat-option>
                           }

@@ -3,6 +3,9 @@ export interface Ameaca {
   nd: number;
   nome: string;
   grupo?: string;
-  //   reforcos?: string;
-  //   tipo?: string; // se solo, lacaia ou reforço
+  papel?: string;
+  tipo?: string;
+  tamanho?: string;
+  reforcos?: string; //
+  referencia?: string;
 }
