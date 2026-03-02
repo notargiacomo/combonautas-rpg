@@ -14,7 +14,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { AsyncPipe } from '@angular/common';
 
-import { Observable, combineLatest, startWith, map, shareReplay } from 'rxjs';
+import { Observable, combineLatest, startWith, map, shareReplay, take } from 'rxjs';
 
 import { CalculoDesafiosDto } from '@app/dto/calculo-desafios.dto';
 import { Ameaca } from '@app/model/ameaca';
@@ -54,11 +54,9 @@ export class CalculoDesafiosComponent implements OnInit {
   custoCombate: number = 0;
   ameacasCombate: Ameaca[] = [];
 
-  // 🔥 Agora vem direto do service
   ameacas$!: Observable<Ameaca[]>;
-
-  // 🔥 Lista filtrada reativa
   filteredAmeacas$!: Observable<Ameaca[]>;
+
   orcamento: number = 0;
   construindoCombate: boolean = false;
 
@@ -75,22 +73,22 @@ export class CalculoDesafiosComponent implements OnInit {
       entrosados: new FormControl(this.calculoDesafios.entrosados),
       situacao: new FormControl(this.calculoDesafios.situacao),
       numero_encontros: new FormControl(this.calculoDesafios.numero_encontros),
-      ameaca: '',
+      ameaca: new FormControl(''),
     });
 
     this.calcular();
 
-    // 🔥 Carrega ameaças como stream
+    // Stream única das ameaças
     this.ameacas$ = this.ameacaService.listar(null).pipe(shareReplay(1));
 
-    // 🔥 Combina digitação + dados do backend
+    // Autocomplete reativo
     this.filteredAmeacas$ = combineLatest([
       this.ameacas$,
       this.formulario.get('ameaca')!.valueChanges.pipe(startWith('')),
     ]).pipe(
       map(([ameacas, valor]) => {
         const filtro = (valor || '').toLowerCase();
-        return ameacas.filter(a => a.nome.toLowerCase().includes(filtro));
+        return ameacas.filter(a => a.nome.toLowerCase().includes(filtro)).sort((a, b) => a.nd - b.nd);
       })
     );
   }
@@ -102,16 +100,19 @@ export class CalculoDesafiosComponent implements OnInit {
     const valor = this.formulario.get('ameaca')?.value;
     if (!valor) return;
 
-    this.ameacas$
-      .subscribe(lista => {
-        const ameaca = lista.find(a => a.nome === valor);
-        if (!ameaca) return;
+    this.ameacas$.pipe(take(1)).subscribe(lista => {
+      const ameaca = lista.find(a => a.nome === valor);
+      if (!ameaca) return;
 
-        this.ameacasCombate.push(ameaca);
-        this.formulario.get('ameaca')?.setValue('');
-        this.calcularCusto();
-      })
-      .unsubscribe();
+      this.ameacasCombate.push(ameaca);
+      this.formulario.get('ameaca')?.setValue('');
+      this.calcularCusto();
+    });
+  }
+
+  remover(index: number) {
+    this.ameacasCombate.splice(index, 1);
+    this.calcularCusto();
   }
 
   // =========================
@@ -128,20 +129,21 @@ export class CalculoDesafiosComponent implements OnInit {
     resultado += -(valores.numero_encontros - 1);
 
     this.nd = resultado;
-    this.resultado = valores.numero_encontros + ' ENCONTRO(S) DE ND ' + resultado;
+    this.resultado = `${valores.numero_encontros} ENCONTRO(S) DE ND ${resultado}`;
   }
 
-  remover(index: number) {
-    this.ameacasCombate.splice(index, 1);
-    this.calcularCusto();
-  }
-
+  // =========================
+  // CÁLCULO FINAL DO COMBATE
+  // =========================
   calcularCusto() {
     const listaNDs = this.ameacasCombate.map(a => a.nd);
     const listaProcessada = this.processarNDMenorQueUm(listaNDs);
     this.custoCombate = this.calcularNDTotal(listaProcessada);
   }
 
+  // =========================
+  // TRATAR ND < 1
+  // =========================
   processarNDMenorQueUm(lista: number[]): number[] {
     let resultado = [...lista];
     resultado = this.juntarPares(resultado, 0.25);
@@ -169,31 +171,48 @@ export class CalculoDesafiosComponent implements OnInit {
     return resultado;
   }
 
+  // =========================
+  // REGRA ACUMULATIVA CORRETA
+  // =========================
   calcularNDTotal(lista: number[]): number {
-    const mapa = new Map<number, number>();
+    let nds = [...lista];
+    let mudou = true;
 
-    lista.forEach(nd => {
-      mapa.set(nd, (mapa.get(nd) || 0) + 1);
-    });
+    while (mudou) {
+      mudou = false;
 
-    let maiorND = 0;
+      const mapa = new Map<number, number>();
 
-    mapa.forEach((quantidade, ndBase) => {
-      if (ndBase < 1) {
-        maiorND = Math.max(maiorND, ndBase);
-        return;
+      nds.forEach(nd => {
+        mapa.set(nd, (mapa.get(nd) || 0) + 1);
+      });
+
+      for (const [ndBase, quantidade] of mapa.entries()) {
+        if (quantidade >= 2) {
+          let removidos = 0;
+
+          nds = nds.filter(nd => {
+            if (nd === ndBase && removidos < 2) {
+              removidos++;
+              return false;
+            }
+            return true;
+          });
+
+          nds.push(ndBase + 2);
+          mudou = true;
+          break;
+        }
       }
+    }
 
-      const dobramentos = Math.floor(Math.log2(quantidade));
-      const ndFinal = ndBase + dobramentos * 2;
+    const maior = Math.max(...nds, 0);
 
-      maiorND = Math.max(maiorND, ndFinal);
-    });
-
-    return maiorND;
+    // 🔥 Limite máximo 20
+    return Math.min(maior, 20);
   }
 
-  selecionandoOrcamento(orc: any) {
+  selecionandoOrcamento(orc: number) {
     this.construindoCombate = true;
     this.orcamento = orc;
   }
