@@ -216,4 +216,9 @@ export class CalculoDesafiosComponent implements OnInit {
     this.construindoCombate = true;
     this.orcamento = orc;
   }
+
+  calculandoXPGanho() {
+    const soma = this.ameacasCombate.reduce((total, ameaca) => total + ameaca.nd, 0);
+    return (soma * 1000) / this.formulario.get('numero_jogadores')?.value;
+  }
 }

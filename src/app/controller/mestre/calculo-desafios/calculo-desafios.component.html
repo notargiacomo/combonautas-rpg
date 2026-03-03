@@ -372,60 +372,60 @@
                       (this.orcamento == 0 ? 0 : this.orcamento >= 1 ? this.orcamento : '1/' + 1 / this.orcamento)
                   }}
                 </h5>
-                <div class="card-game" style="margin-top: 1% !important">
-                  <div class="row align-items-center mb-2">
-                    <div class="col-sm-12">
-                      <mat-form-field class="text-field-formulario-edicao">
-                        <mat-label>Busque Ameaça</mat-label>
-                        <input matInput aria-label="ameaca" [matAutocomplete]="auto" formControlName="ameaca" />
-                        <mat-autocomplete #auto="matAutocomplete">
-                          @for (ameaca of filteredAmeacas$ | async; track ameaca.id) {
-                            <mat-option [value]="ameaca.nome">
-                              <span class="text-muted">ND {{ ameaca.nd >= 1 ? ameaca.nd : '1/' + 1 / ameaca.nd }}</span>
-                              <span>
-                                {{
-                                  ameaca.nd < 1
-                                    ? '&nbsp;&nbsp;-&nbsp;'
-                                    : ameaca.nd > 9
-                                      ? '&nbsp;&nbsp;&nbsp;-&nbsp;'
-                                      : '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'
-                                }}
-                              </span>
-                              <span>
-                                {{
-                                  ameaca.nome +
-                                    ' ( Papel: ' +
-                                    ameaca.papel +
-                                    '  | Grupo: ' +
-                                    ameaca.grupo +
-                                    '  | Tipo: ' +
-                                    ameaca.tipo +
-                                    '  | Tamanho: ' +
-                                    ameaca.tamanho +
-                                    '  | Ref.: ' +
-                                    ameaca.referencia +
-                                    ' )'
-                                }}
-                              </span>
-                            </mat-option>
-                          }
-                        </mat-autocomplete>
-                        <button
-                          mat-icon-button
-                          matSuffix
-                          class="btn-adicionar"
-                          aria-label="Adicionar magia"
-                          type="button"
-                          (click)="adicionar()">
-                          <mat-icon>add</mat-icon>
-                        </button>
-                      </mat-form-field>
+                <div class="row align-items-center mb-2">
+                  <div class="col-sm-12">
+                    <mat-form-field class="text-field-formulario-edicao">
+                      <mat-label>Busque Ameaça</mat-label>
+                      <input matInput aria-label="ameaca" [matAutocomplete]="auto" formControlName="ameaca" />
+                      <mat-autocomplete #auto="matAutocomplete">
+                        @for (ameaca of filteredAmeacas$ | async; track ameaca.id) {
+                          <mat-option [value]="ameaca.nome">
+                            <span class="text-muted">ND {{ ameaca.nd >= 1 ? ameaca.nd : '1/' + 1 / ameaca.nd }}</span>
+                            <span>
+                              {{
+                                ameaca.nd < 1
+                                  ? '&nbsp;&nbsp;-&nbsp;'
+                                  : ameaca.nd > 9
+                                    ? '&nbsp;&nbsp;&nbsp;-&nbsp;'
+                                    : '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;'
+                              }}
+                            </span>
+                            <span>
+                              {{
+                                ameaca.nome +
+                                  ' ( Papel: ' +
+                                  ameaca.papel +
+                                  '  | Grupo: ' +
+                                  ameaca.grupo +
+                                  '  | Tipo: ' +
+                                  ameaca.tipo +
+                                  '  | Tamanho: ' +
+                                  ameaca.tamanho +
+                                  '  | Ref.: ' +
+                                  ameaca.referencia +
+                                  ' )'
+                              }}
+                            </span>
+                          </mat-option>
+                        }
+                      </mat-autocomplete>
+                      <button
+                        mat-icon-button
+                        matSuffix
+                        class="btn-adicionar"
+                        aria-label="Adicionar magia"
+                        type="button"
+                        (click)="adicionar()">
+                        <mat-icon>add</mat-icon>
+                      </button>
+                    </mat-form-field>
+                    <div class="mb-4">
                       <table>
                         <thead>
                           <tr>
                             <th [colSpan]="3">
                               {{
-                                'Ameaças (Custo do Combate = ' +
+                                'AMEAÇAS (CUSTO DO COMBATE = ' +
                                   (this.custoCombate === 0
                                     ? 0
                                     : this.custoCombate >= 1
@@ -458,7 +458,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-game">
+                <div class="mb-4">
                   <table>
                     <thead>
                       <tr>
@@ -468,16 +468,39 @@
                     <tbody>
                       <tr>
                         <td>POR VITÓRIA</td>
-                        <td>{{ (this.custoCombate * 1000) / this.formulario.get('numero_jogadores')?.value }}</td>
+                        <td>{{ calculandoXPGanho() }}</td>
                       </tr>
                       <tr>
                         <td>POR EMPATE, FULGA OU DESENROLO</td>
-                        <td>{{ (this.custoCombate * 1000) / this.formulario.get('numero_jogadores')?.value / 2 }}</td>
+                        <td>{{ calculandoXPGanho() / 2 }}</td>
                       </tr>
                       <tr>
                         <td>POR DERROTA</td>
-                        <td>{{ (this.custoCombate * 1000) / this.formulario.get('numero_jogadores')?.value / 4 }}</td>
+                        <td>{{ calculandoXPGanho() / 4 }}</td>
                       </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mb-4">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th [colSpan]="3">ESPÓLIOS DO COMBATE</th>
+                      </tr>
+                      <tr>
+                        <th>AMEAÇA</th>
+                        <th>EQUIPAMENTOS</th>
+                        <th>TESOUROS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @for (item of ameacasCombate; track $index) {
+                        <tr>
+                          <td>{{ item.nome }}</td>
+                          <td>{{ item.equipamentos }}</td>
+                          <td>{{ item.tesouros + ' ND ' + (item.nd >= 1 ? item.nd : '1/' + 1 / item.nd) }}</td>
+                        </tr>
+                      }
                     </tbody>
                   </table>
                 </div>
