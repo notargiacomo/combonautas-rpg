@@ -11,3 +11,11 @@ label {
   cursor: pointer;
   border-radius: 4px;
 }
+
+tbody tr.linha-destaque td {
+  background-color: orange;
+}
+
+tbody tr:not(.linha-destaque):nth-child(even) td {
+  background-color: #f2f2f2;
+}

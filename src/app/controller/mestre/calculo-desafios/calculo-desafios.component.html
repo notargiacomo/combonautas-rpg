@@ -117,6 +117,7 @@
               matInput
               type="number"
               name="nivel"
+              min="1"
               (change)="calcular()"
               (keyup)="calcular()" />
           </mat-form-field>
@@ -130,6 +131,7 @@
               matInput
               type="number"
               name="numero_jogadores"
+              min="1"
               (change)="calcular()"
               (keyup)="calcular()" />
           </mat-form-field>
@@ -142,6 +144,7 @@
               matInput
               type="number"
               name="numero_encontros"
+              min="1"
               (change)="calcular()"
               (keyup)="calcular()" />
           </mat-form-field>
@@ -236,11 +239,14 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr [class.linha-destaque]="(this.nd - 3 >= 1 ? this.nd - 3 : 1 / 4) == orcamento">
                   <td>Irrelevante</td>
                   <td>
-                    <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
-                      {{ this.nd - 2 > 1 ? this.nd - 3 : '0' }}
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd - 3 >= 1 ? this.nd - 3 : 0.25)"
+                      mat-flat-button>
+                      {{ this.nd - 2 >= 1 ? this.nd - 3 : '1/' + (this.nd + 3) }}
                     </button>
                   </td>
                   <td>Nem sei o que dizer</td>
@@ -249,11 +255,14 @@
                     solitário desconhecido.
                   </td>
                 </tr>
-                <tr>
+                <tr [class.linha-destaque]="(this.nd - 2 >= 1 ? this.nd - 2 : 1 / 4) == orcamento">
                   <td>Trivial</td>
                   <td>
-                    <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
-                      {{ this.nd - 2 > 1 ? this.nd - 2 : '1/' + (this.nd + 3) }}
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd - 2 >= 1 ? this.nd - 2 : 0.25)"
+                      mat-flat-button>
+                      {{ this.nd - 2 >= 1 ? this.nd - 2 : '1/' + (this.nd + 3) }}
                     </button>
                   </td>
                   <td>Alvorada</td>
@@ -262,11 +271,14 @@
                     mãozão. Se sangrar é fracote!
                   </td>
                 </tr>
-                <tr>
+                <tr [class.linha-destaque]="(this.nd - 1 >= 1 ? this.nd - 1 : 1 / 2) == orcamento">
                   <td>Baixo</td>
                   <td>
-                    <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
-                      {{ this.nd - 1 > 1 ? this.nd - 1 : '1/' + (this.nd + 1) }}
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd - 1 >= 1 ? this.nd - 1 : 0.5)"
+                      mat-flat-button>
+                      {{ this.nd - 1 >= 1 ? this.nd - 1 : '1/' + (this.nd + 1) }}
                     </button>
                   </td>
                   <td>Farmando Aura</td>
@@ -276,7 +288,7 @@
                     sofrem feridas levese gastam poucos ou quase nenhum recursos gastos.
                   </td>
                 </tr>
-                <tr>
+                <tr [class.linha-destaque]="nd == orcamento">
                   <td>Moderado</td>
                   <td>
                     <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
@@ -291,10 +303,13 @@
                     ficar tudo bem.
                   </td>
                 </tr>
-                <tr>
+                <tr [class.linha-destaque]="nd + 1 == orcamento">
                   <td>Severo</td>
                   <td>
-                    <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd + 1 > 20 ? 20 : this.nd + 1)"
+                      mat-flat-button>
                       {{ this.nd + 1 > 20 ? 20 : this.nd + 1 }}
                     </button>
                   </td>
@@ -304,10 +319,13 @@
                     e entrosados. Provavelmente alguem vai morrer, se não agirem em equipe. Morrer mesmo.
                   </td>
                 </tr>
-                <tr>
+                <tr [class.linha-destaque]="nd + 2 == orcamento">
                   <td>Extremo</td>
                   <td>
-                    <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd + 2 > 20 ? 20 : this.nd + 2)"
+                      mat-flat-button>
                       {{ this.nd + 2 > 20 ? 20 : this.nd + 2 }}
                     </button>
                   </td>
@@ -318,10 +336,13 @@
                     receberam auxilio, ou será um provável tpk.
                   </td>
                 </tr>
-                <tr>
+                <tr [class.linha-destaque]="nd + 3 == orcamento">
                   <td>Letal</td>
                   <td>
-                    <button class="me-2" (click)="selecionandoOrcamento(this.nd)" mat-flat-button>
+                    <button
+                      class="me-2"
+                      (click)="selecionandoOrcamento(this.nd + 3 > 20 ? 20 : this.nd + 3)"
+                      mat-flat-button>
                       {{ this.nd + 3 > 20 ? 20 : this.nd + 3 }}
                     </button>
                   </td>
@@ -345,7 +366,12 @@
 
             @if (construindoCombate) {
               <div class="col-12 col-sm-12 col-lg-12">
-                <h5>{{ 'CONSTRUINDO O COMBATE - ORCAMENTO ND ' + this.orcamento }}</h5>
+                <h5>
+                  {{
+                    'CONSTRUINDO O COMBATE - ORCAMENTO ND ' +
+                      (this.orcamento == 0 ? 0 : this.orcamento >= 1 ? this.orcamento : '1/' + 1 / this.orcamento)
+                  }}
+                </h5>
                 <div class="card-game" style="margin-top: 1% !important">
                   <div class="row align-items-center mb-2">
                     <div class="col-sm-12">
@@ -431,6 +457,29 @@
                       </table>
                     </div>
                   </div>
+                </div>
+                <div class="card-game">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th [colSpan]="2">EXPERIÊNCIA DO COMBATE POR JOGADOR</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>POR VITÓRIA</td>
+                        <td>{{ (this.custoCombate * 1000) / this.formulario.get('numero_jogadores')?.value }}</td>
+                      </tr>
+                      <tr>
+                        <td>POR EMPATE, FULGA OU DESENROLO</td>
+                        <td>{{ (this.custoCombate * 1000) / this.formulario.get('numero_jogadores')?.value / 2 }}</td>
+                      </tr>
+                      <tr>
+                        <td>POR DERROTA</td>
+                        <td>{{ (this.custoCombate * 1000) / this.formulario.get('numero_jogadores')?.value / 4 }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             }
