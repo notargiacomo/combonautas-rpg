@@ -5,26 +5,20 @@ import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatFormField, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { MatOption, MatSelect } from '@angular/material/select';
 
-import { NgIf } from '@angular/common';
-import {
-  MatAccordion,
-  MatExpansionPanel,
-  MatExpansionPanelHeader,
-  MatExpansionPanelTitle,
-} from '@angular/material/expansion';
+import { FractionPipe } from '@app/pipes/fraction.pipe';
 import { GeneratedTreasure, tabelaTesouroItens, TreasureContext } from './generate-factory/model/treasure';
 import { TreasureService } from './generate-factory/service/treasure.service';
-import { Console } from 'console';
-import { FractionPipe } from '@app/pipes/fraction.pipe';
 
-import * as htmlToImage from 'html-to-image';
 import { MatIcon } from '@angular/material/icon';
+import * as htmlToImage from 'html-to-image';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
   imports: [
     FormsModule,
     MatFormFieldModule,
+    MatInputModule,
     ReactiveFormsModule,
     MatCard,
     MatButtonModule,
@@ -34,7 +28,6 @@ import { MatIcon } from '@angular/material/icon';
     MatOption,
     MatCardTitle,
     MatCardContent,
-    NgIf,
     FractionPipe,
     MatIcon,
   ],
@@ -45,6 +38,7 @@ export class TabelaGeracaoTesourosComponent {
   formulario!: FormGroup;
   tabelaTesouro: any[] = [];
   tipos: string[] = ['PADRÃO', 'METADE', 'DOBRO'];
+  riquezas: string[] = ['menor', 'media', 'maior'];
   niveis: number[] = [0.25, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   resultado?: GeneratedTreasure[] = [];
 
@@ -60,6 +54,8 @@ export class TabelaGeracaoTesourosComponent {
     this.formulario = this.fb.group({
       tipo: [],
       nivel: [],
+      dados: [],
+      percentual: [],
     });
   }
 
@@ -67,6 +63,9 @@ export class TabelaGeracaoTesourosComponent {
     this.gerarDinheiro();
     this.gerarItem();
   }
+
+  gerarRiqueza() {}
+  gerarItemDiverso() {}
 
   private gerarDinheiro() {
     const contexto: TreasureContext = {
@@ -101,9 +100,9 @@ export class TabelaGeracaoTesourosComponent {
       this.detalhesTesouroItens! = retorno.report!;
     } else {
       this.detalhesTesouroItens! = `
-      <label><b>FÓRMULA:</b> ${linhaItemNivel.valor}</label><br />
-      <label><b>RESULTADO D100:</b> ${random}</label><br />
-      <label><b>ITEM:</b> N/A </label>
+      <p><b>FÓRMULA:</b> ${linhaItemNivel.valor}</p>
+      <p><b>RESULTADO D100:</b>${random}</p>
+      <p><b>ITEM:</b> N/A</p>
       `;
     }
 
@@ -127,9 +126,9 @@ export class TabelaGeracaoTesourosComponent {
         this.detalhesTesouroItens! =
           this.detalhesTesouroItens +
           `<br /><br />
-      <label><b>FÓRMULA:</b> ${linhaItemNivelDB.valor}</label><br />
-      <label><b>RESULTADO D100:</b> ${randomDB}</label><br />
-      <label><b>ITEM:</b> N/A </label>
+      <p><b>FÓRMULA:</b> ${linhaItemNivelDB.valor}</p>
+      <p><b>RESULTADO D100:</b> ${randomDB}</p>
+      <p><b>ITEM:</b> N/A</p>
       `;
       }
     }

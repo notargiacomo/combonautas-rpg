@@ -46,21 +46,21 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
   private gerarRelatorio(random: number, linhaDinheiroNivel: any, dinheiro: number): string {
     return `
       <div class="row">
-          <label><b>RESULTADO D100:</b> ${random}</label>
+          <p><b>RESULTADO D100:</b> ${random}</p>
       </div>
       <div class="row">
-          <label><b>FÓRMULA:</b> ${linhaDinheiroNivel.dinheiro}</label>
+          <p><b>FÓRMULA:</b> ${linhaDinheiroNivel.dinheiro}</p>
       </div>
       <div class="row">
-          <label><b>DINHEIRO TOTAL:</b> ${linhaDinheiroNivel.unidade} ${dinheiro}</label>
+          <p><b>DINHEIRO TOTAL:</b> ${linhaDinheiroNivel.unidade} ${dinheiro}</p>
       </div>`;
   }
 
   calcularRiqueza(unidade: string, modificador: boolean): number {
     let riquezas: any[] = [];
-    if (unidade.includes('menor')) riquezas = this.tabelaRiquezaMenor;
-    if (StringUtils.removerAcentos(unidade.toLowerCase()).includes('media')) riquezas = this.tabelaRiquezaMedia;
-    if (unidade.includes('maior')) riquezas = this.tabelaRiquezaMaior;
+    if (unidade.includes('menor')) riquezas = tabelaRiquezaMenor;
+    if (StringUtils.removerAcentos(unidade.toLowerCase()).includes('media')) riquezas = tabelaRiquezaMedia;
+    if (unidade.includes('maior')) riquezas = tabelaRiquezaMaior;
 
     let random = Math.floor(Math.random() * 100) + 1;
     random = modificador ? (random + 20 < 100 ? random + 20 : 100) : random;
@@ -1269,87 +1269,87 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
       modificador: '+%',
     },
   ];
-
-  tabelaRiquezaMenor = [
-    { min: 1, max: 25, valor: '4d4 T$', multiplicador: 4, randomizador: 4, potencializador: 1, unidade: 'T$' },
-    { min: 26, max: 40, valor: '1d4x10 T$', multiplicador: 1, randomizador: 4, potencializador: 10, unidade: 'T$' },
-    { min: 41, max: 55, valor: '2d4x10 T$', multiplicador: 2, randomizador: 4, potencializador: 10, unidade: 'T$' },
-    { min: 56, max: 70, valor: '4d6x10 T$', multiplicador: 4, randomizador: 6, potencializador: 10, unidade: 'T$' },
-    { min: 71, max: 85, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
-    { min: 86, max: 95, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
-    { min: 96, max: 99, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
-    {
-      min: 100,
-      max: 100,
-      valor: '4d10x100 T$',
-      multiplicador: 4,
-      randomizador: 10,
-      potencializador: 100,
-      unidade: 'T$',
-    },
-  ];
-
-  tabelaRiquezaMedia = [
-    { min: 1, max: 10, valor: '2d4x10 T$', multiplicador: 2, randomizador: 4, potencializador: 10, unidade: 'T$' },
-    { min: 11, max: 30, valor: '4d4x10 T$', multiplicador: 4, randomizador: 4, potencializador: 10, unidade: 'T$' },
-    { min: 31, max: 50, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
-    { min: 51, max: 65, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
-    { min: 66, max: 80, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
-    { min: 81, max: 90, valor: '4d10x100 T$', multiplicador: 4, randomizador: 10, potencializador: 100, unidade: 'T$' },
-    { min: 91, max: 95, valor: '6d12x100 T$', multiplicador: 6, randomizador: 12, potencializador: 100, unidade: 'T$' },
-    {
-      min: 96,
-      max: 99,
-      valor: '2d10x1000 T$',
-      multiplicador: 2,
-      randomizador: 10,
-      potencializador: 1000,
-      unidade: 'T$',
-    },
-    {
-      min: 99,
-      max: 100,
-      valor: '6d8x1000 T$',
-      multiplicador: 6,
-      randomizador: 8,
-      potencializador: 1000,
-      unidade: 'T$',
-    },
-  ];
-
-  tabelaRiquezaMaior = [
-    { min: 1, max: 5, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
-    { min: 6, max: 15, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
-    { min: 16, max: 25, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
-    { min: 26, max: 40, valor: '4d10x100 T$', multiplicador: 4, randomizador: 10, potencializador: 100, unidade: 'T$' },
-    { min: 41, max: 60, valor: '6d12x100 T$', multiplicador: 6, randomizador: 12, potencializador: 100, unidade: 'T$' },
-    {
-      min: 61,
-      max: 75,
-      valor: '2d10x1000 T$',
-      multiplicador: 2,
-      randomizador: 10,
-      potencializador: 1000,
-      unidade: 'T$',
-    },
-    { min: 76, max: 85, valor: '6d8x1000 T$', multiplicador: 6, randomizador: 8, potencializador: 1000, unidade: 'T$' },
-    {
-      min: 86,
-      max: 95,
-      valor: '1d10x10000 T$',
-      multiplicador: 1,
-      randomizador: 10,
-      potencializador: 10000,
-      unidade: 'T$',
-    },
-    {
-      min: 96,
-      max: 100,
-      valor: '4d12x10000 T$',
-      multiplicador: 4,
-      randomizador: 12,
-      potencializador: 10000,
-      unidade: 'T$',
-    },
-  ];
 }
+
+export const tabelaRiquezaMenor = [
+  { min: 1, max: 25, valor: '4d4 T$', multiplicador: 4, randomizador: 4, potencializador: 1, unidade: 'T$' },
+  { min: 26, max: 40, valor: '1d4x10 T$', multiplicador: 1, randomizador: 4, potencializador: 10, unidade: 'T$' },
+  { min: 41, max: 55, valor: '2d4x10 T$', multiplicador: 2, randomizador: 4, potencializador: 10, unidade: 'T$' },
+  { min: 56, max: 70, valor: '4d6x10 T$', multiplicador: 4, randomizador: 6, potencializador: 10, unidade: 'T$' },
+  { min: 71, max: 85, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
+  { min: 86, max: 95, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
+  { min: 96, max: 99, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
+  {
+    min: 100,
+    max: 100,
+    valor: '4d10x100 T$',
+    multiplicador: 4,
+    randomizador: 10,
+    potencializador: 100,
+    unidade: 'T$',
+  },
+];
+
+export const tabelaRiquezaMedia = [
+  { min: 1, max: 10, valor: '2d4x10 T$', multiplicador: 2, randomizador: 4, potencializador: 10, unidade: 'T$' },
+  { min: 11, max: 30, valor: '4d4x10 T$', multiplicador: 4, randomizador: 4, potencializador: 10, unidade: 'T$' },
+  { min: 31, max: 50, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
+  { min: 51, max: 65, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
+  { min: 66, max: 80, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
+  { min: 81, max: 90, valor: '4d10x100 T$', multiplicador: 4, randomizador: 10, potencializador: 100, unidade: 'T$' },
+  { min: 91, max: 95, valor: '6d12x100 T$', multiplicador: 6, randomizador: 12, potencializador: 100, unidade: 'T$' },
+  {
+    min: 96,
+    max: 99,
+    valor: '2d10x1000 T$',
+    multiplicador: 2,
+    randomizador: 10,
+    potencializador: 1000,
+    unidade: 'T$',
+  },
+  {
+    min: 99,
+    max: 100,
+    valor: '6d8x1000 T$',
+    multiplicador: 6,
+    randomizador: 8,
+    potencializador: 1000,
+    unidade: 'T$',
+  },
+];
+
+export const tabelaRiquezaMaior = [
+  { min: 1, max: 5, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
+  { min: 6, max: 15, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
+  { min: 16, max: 25, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
+  { min: 26, max: 40, valor: '4d10x100 T$', multiplicador: 4, randomizador: 10, potencializador: 100, unidade: 'T$' },
+  { min: 41, max: 60, valor: '6d12x100 T$', multiplicador: 6, randomizador: 12, potencializador: 100, unidade: 'T$' },
+  {
+    min: 61,
+    max: 75,
+    valor: '2d10x1000 T$',
+    multiplicador: 2,
+    randomizador: 10,
+    potencializador: 1000,
+    unidade: 'T$',
+  },
+  { min: 76, max: 85, valor: '6d8x1000 T$', multiplicador: 6, randomizador: 8, potencializador: 1000, unidade: 'T$' },
+  {
+    min: 86,
+    max: 95,
+    valor: '1d10x10000 T$',
+    multiplicador: 1,
+    randomizador: 10,
+    potencializador: 10000,
+    unidade: 'T$',
+  },
+  {
+    min: 96,
+    max: 100,
+    valor: '4d12x10000 T$',
+    multiplicador: 4,
+    randomizador: 12,
+    potencializador: 10000,
+    unidade: 'T$',
+  },
+];

@@ -58,9 +58,9 @@ export class PotionTreasureGenerator implements TreasureGenerator {
     const linhasHtml = pocoes.map((item: any) => `<li>${item.id} - ${item.nome}</li>`).join('');
 
     return `
-    <label><b>FÓRMULA:</b> ${linha.valor}</label><br />
-      <label><b>RESULTADO D100:</b> ${random}</label><br />
-      <label><b>${linha.valor}:</b></label>
+    <p><b>FÓRMULA:</b> ${linha.valor}</p>
+    <p><b>RESULTADO D100:</b> ${random}</p>
+      <b>${linha.valor}:</b>
       <ul>
           ${linhasHtml}
       </ul>

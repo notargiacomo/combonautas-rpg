@@ -82,9 +82,9 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
     let labelEquipamento = linha.valor.includes('2D') ? linha.valor + ' (escolha um)' : linha.valor;
 
     return `
-    <label><b>FÓRMULA:</b> ${linha.valor}</label><br />
-      <label><b>RESULTADO D100:</b> ${random}</label><br />
-      <label><b>${labelEquipamento}:</b></label>
+    <p><b>FÓRMULA:</b> ${linha.valor}</p>
+      <p><b>RESULTADO D100:</b> ${random}</p>
+      <p><b>${labelEquipamento}:</b></p>
       <ul>
           ${linhasHtml}
       </ul>
