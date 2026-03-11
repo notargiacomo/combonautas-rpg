@@ -52,13 +52,13 @@
                     <div class="col-sm-6 mt-4">
                       <mat-form-field class="form-field text-field-formulario-edicao">
                         <mat-label>Qtd. Dados</mat-label>
-                        <input formControlName="dados" matInput type="text" />
+                        <input formControlName="dados" matInput type="number" min="1" max="3" />
                       </mat-form-field>
                     </div>
                     <div class="col-sm-6 mt-4">
                       <mat-form-field class="form-field text-field-formulario-edicao">
                         <mat-label>Percentual adicional</mat-label>
-                        <input formControlName="percentual" matInput type="text" />
+                        <input formControlName="percentual" matInput type="number" min="0" max="100" />
                       </mat-form-field>
                     </div>
                   </div>
@@ -77,18 +77,20 @@
                       </section>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h5><b>DINHEIRO</b></h5>
-                      <hr />
-                      <div style="color: white !important" [innerHTML]="detalhesTesouroDinheiro"></div>
+                  @for (item of dadosRange; track item) {
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5><b>DINHEIRO</b></h5>
+                        <hr />
+                        <div style="color: white !important" [innerHTML]="detalhesTesouroDinheiro[item]"></div>
+                      </div>
+                      <div class="col-sm-6">
+                        <h5><b>ITENS</b></h5>
+                        <hr />
+                        <div style="color: white !important" [innerHTML]="detalhesTesouroItens[item]"></div>
+                      </div>
                     </div>
-                    <div class="col-sm-6">
-                      <h5><b>ITENS</b></h5>
-                      <hr />
-                      <div style="color: white !important" [innerHTML]="detalhesTesouroItens"></div>
-                    </div>
-                  </div>
+                  }
                 </div>
               </mat-card-content>
             </mat-card>

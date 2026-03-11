@@ -42,8 +42,8 @@ export class TabelaGeracaoTesourosComponent {
   niveis: number[] = [0.25, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   resultado?: GeneratedTreasure[] = [];
 
-  detalhesTesouroDinheiro: string = '';
-  detalhesTesouroItens: string = '';
+  detalhesTesouroDinheiro: string[] = [];
+  detalhesTesouroItens: string[] = [];
 
   constructor(
     private fb: FormBuilder,
@@ -54,14 +54,21 @@ export class TabelaGeracaoTesourosComponent {
     this.formulario = this.fb.group({
       tipo: [],
       nivel: [],
-      dados: [],
-      percentual: [],
+      dados: [1],
+      percentual: [0],
     });
   }
 
   gerarTesouro() {
-    this.gerarDinheiro();
-    this.gerarItem();
+    this.detalhesTesouroDinheiro = [];
+    this.detalhesTesouroItens = [];
+
+    const dados = this.formulario.get('dados')?.value;
+
+    for (let i = 1; i <= dados; i++) {
+      this.gerarDinheiro();
+      this.gerarItem();
+    }
   }
 
   gerarRiqueza() {}
@@ -74,12 +81,18 @@ export class TabelaGeracaoTesourosComponent {
     };
 
     let retorno = this.treasureService.generate(contexto);
-    this.detalhesTesouroDinheiro! = retorno.report!;
+    this.detalhesTesouroDinheiro.push(retorno.report!);
 
     if (this.formulario.get('tipo')?.value === 'DOBRO') {
-      this.detalhesTesouroDinheiro =
-        this.detalhesTesouroDinheiro + '<br /><br />' + this.treasureService.generate(contexto).report!;
+      this.detalhesTesouroDinheiro.push(
+        this.detalhesTesouroDinheiro + '<br /><br />' + this.treasureService.generate(contexto).report!
+      );
     }
+  }
+
+  get dadosRange() {
+    const n = this.formulario.get('dados')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
   }
 
   gerarItem() {
@@ -97,13 +110,13 @@ export class TabelaGeracaoTesourosComponent {
 
     if (linhaItemNivel.valor !== '—') {
       let retorno = this.treasureService.generate(contexto);
-      this.detalhesTesouroItens! = retorno.report!;
+      this.detalhesTesouroItens.push(retorno.report!);
     } else {
-      this.detalhesTesouroItens! = `
+      this.detalhesTesouroItens.push(`
       <p><b>FÓRMULA:</b> ${linhaItemNivel.valor}</p>
       <p><b>RESULTADO D100:</b>${random}</p>
       <p><b>ITEM:</b> N/A</p>
-      `;
+      `);
     }
 
     if (this.formulario.get('tipo')?.value === 'DOBRO') {
@@ -120,16 +133,13 @@ export class TabelaGeracaoTesourosComponent {
       };
 
       if (linhaItemNivelDB.valor !== '—') {
-        this.detalhesTesouroItens =
-          this.detalhesTesouroItens + '<br /><br />' + this.treasureService.generate(contextoDB).report!;
+        this.detalhesTesouroItens.push('<br /><br />' + this.treasureService.generate(contextoDB).report!);
       } else {
-        this.detalhesTesouroItens! =
-          this.detalhesTesouroItens +
-          `<br /><br />
+        this.detalhesTesouroItens.push(`
       <p><b>FÓRMULA:</b> ${linhaItemNivelDB.valor}</p>
       <p><b>RESULTADO D100:</b> ${randomDB}</p>
       <p><b>ITEM:</b> N/A</p>
-      `;
+      `);
       }
     }
   }
