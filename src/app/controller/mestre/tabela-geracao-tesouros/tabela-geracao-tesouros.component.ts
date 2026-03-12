@@ -12,6 +12,8 @@ import { TreasureService } from './generate-factory/service/treasure.service';
 import { MatIcon } from '@angular/material/icon';
 import * as htmlToImage from 'html-to-image';
 import { MatInputModule } from '@angular/material/input';
+import { MatTab, MatTabGroup } from '@angular/material/tabs';
+import { tabelaDinheiro } from './generate-factory/model/treasure';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -30,6 +32,8 @@ import { MatInputModule } from '@angular/material/input';
     MatCardContent,
     FractionPipe,
     MatIcon,
+    MatTab,
+    MatTabGroup,
   ],
   templateUrl: './tabela-geracao-tesouros.component.html',
   styleUrl: './tabela-geracao-tesouros.component.scss',
@@ -44,6 +48,8 @@ export class TabelaGeracaoTesourosComponent {
 
   detalhesTesouroDinheiro: string[] = [];
   detalhesTesouroItens: string[] = [];
+  tabelaDinheiro = tabelaDinheiro;
+  tabelaTesouroItens = tabelaTesouroItens;
 
   constructor(
     private fb: FormBuilder,
