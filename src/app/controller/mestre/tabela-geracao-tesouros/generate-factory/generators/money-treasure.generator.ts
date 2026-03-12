@@ -29,7 +29,7 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
     let itens = [linhaDinheiroNivel];
 
     if (linhaDinheiroNivel.unidade!.includes('riqueza')) {
-      dinheiro = this.calcularRiqueza(linhaDinheiroNivel.unidade, linhaDinheiroNivel.modificador.length > 0);
+      dinheiro = this.calcularRiqueza(linhaDinheiroNivel.unidade, linhaDinheiroNivel.modificador.length > 0 ? 20 : 0);
       gt = {
         items: itens,
         return: dinheiro.toString(),
@@ -63,14 +63,14 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
       </div>`;
   }
 
-  calcularRiqueza(unidade: string, modificador: boolean): number {
+  calcularRiqueza(unidade: string, modificador: number): number {
     let riquezas: any[] = [];
     if (unidade.includes('menor')) riquezas = tabelaRiquezaMenor;
     if (StringUtils.removerAcentos(unidade.toLowerCase()).includes('media')) riquezas = tabelaRiquezaMedia;
     if (unidade.includes('maior')) riquezas = tabelaRiquezaMaior;
 
     let random = Math.floor(Math.random() * 100) + 1;
-    random = modificador ? (random + 20 < 100 ? random + 20 : 100) : random;
+    random = random + modificador < 100 ? random + modificador : 100;
     const linhaDinheiroNivel = riquezas.find(
       (item: { min: number; max: number }) => random >= item.min && random <= item.max
     );
@@ -89,5 +89,30 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
 
     dinheiro = dinheiro * linhaDinheiroNivel.potencializador;
     return dinheiro;
+  }
+
+  gerarRiqueza(riqueza: string) {
+    let random = Math.floor(Math.random() * 100) + 1;
+    let linhatabela: any = null;
+    if (riqueza === 'menor')
+      linhatabela = tabelaRiquezaMenor.find((item: any) => random >= item.min && random <= item.max);
+    else if (riqueza === 'media')
+      linhatabela = tabelaRiquezaMedia.find((item: any) => random >= item.min && random <= item.max);
+    else if (riqueza === 'maior')
+      linhatabela = tabelaRiquezaMaior.find((item: any) => random >= item.min && random <= item.max);
+
+    const valor = this.contadorMoedas(linhatabela);
+    const detalheRiqueza = `
+      <div class="row">
+          <p><b>RESULTADO D100:</b> ${random}</p>
+      </div>
+      <div class="row">
+          <p><b>FÓRMULA:</b> ${linhatabela.valor}</p>
+      </div>
+      <div class="row">
+          <p><b>DINHEIRO TOTAL:</b> T$ ${valor}</p>
+      </div>`;
+
+    return detalheRiqueza;
   }
 }

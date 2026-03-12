@@ -4,7 +4,312 @@
       <h2><b>GERAÇÃO DE TEROUROS</b></h2>
       <hr />
       <div #tesouro class="row" id="tesouroPrint">
-        <div class="row">
+        @if (isMobile) {
+          <div class="col-sm-12 mb-4">
+            <mat-card class="card-game">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ 'TESOURO POR ND' }}
+              </mat-card-title>
+              <mat-card-content>
+                <div class="row mt-4">
+                  <mat-tab-group>
+                    <mat-tab label="Geração">
+                      <div class="content mt-2">
+                        @if (detalhesTesouroDinheiro) {
+                          <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                                <mat-icon>download</mat-icon>
+                              </span>
+                            </div>
+                          </div>
+                        }
+                        <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
+                          </b>
+                        </label>
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>Nível de Desafio</mat-label>
+                              <mat-select formControlName="nivel">
+                                @for (nivel of niveis; track nivel) {
+                                  <mat-option [value]="nivel">{{ nivel | fraction }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>Tipo de Tesouro</mat-label>
+                              <mat-select formControlName="tipo">
+                                @for (tipo of tipos; track tipo) {
+                                  <mat-option [value]="tipo">{{ tipo }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Qtd. Dados</mat-label>
+                              <input formControlName="dados" matInput type="number" min="1" max="3" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Percentual adicional</mat-label>
+                              <input formControlName="percentual" matInput type="number" min="0" max="100" />
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-sm-12">
+                            <section>
+                              <div class="button-row d-flex justify-content-end">
+                                <button
+                                  class="me-2"
+                                  (click)="gerarTesouro()"
+                                  [disabled]="
+                                    !this.formulario.get('nivel')?.value || !this.formulario.get('tipo')?.value
+                                  "
+                                  mat-flat-button>
+                                  Gerar Tesouro
+                                </button>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        @for (item of dadosRange; track item) {
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <h5><b>DINHEIRO</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesTesouroDinheiro[item]"></div>
+                            </div>
+                            <div class="col-sm-6">
+                              <h5><b>ITENS</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesTesouroItens[item]"></div>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="Tabela Dinheiro">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>ND</th>
+                            <th>d%</th>
+                            <th>Dinheiro</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaDinheiro; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.nd >= 1 ? item.nd : '1/' + 1 / item.nd }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.faixa }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.dinheiro }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Tabela Itens">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>ND</th>
+                            <th>d%</th>
+                            <th>Dinheiro</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaTesouroItens; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.nd >= 1 ? item.nd : '1/' + 1 / item.nd }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.faixa }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.valor }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-sm-12 mb-4">
+            <mat-card class="card-game">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ 'RIQUEZAS' }}
+              </mat-card-title>
+              <mat-card-content>
+                <div class="row mt-4">
+                  <mat-tab-group>
+                    <mat-tab label="Geração">
+                      <div class="content mt-2">
+                        @if (detalhesTesouroDinheiro) {
+                          <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                                <mat-icon>download</mat-icon>
+                              </span>
+                            </div>
+                          </div>
+                        }
+                        <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
+                          </b>
+                        </label>
+                        <div class="row">
+                          <div class="col-sm-12 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>Nível de Riqueza</mat-label>
+                              <mat-select formControlName="riqueza">
+                                @for (riqueza of riquezas; track riqueza) {
+                                  <mat-option [value]="riqueza">{{ riqueza | fraction }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Qtd. Dados</mat-label>
+                              <input formControlName="dadosrq" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Percentual adicional</mat-label>
+                              <input formControlName="percentual" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-sm-12">
+                            <section>
+                              <div class="button-row d-flex justify-content-end">
+                                <button
+                                  class="me-2"
+                                  (click)="gerarRiqueza()"
+                                  [disabled]="!this.formulario.get('riqueza')?.value"
+                                  mat-flat-button>
+                                  Gerar Riqueza
+                                </button>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        @for (item of dadosRangeRq; track item) {
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h5><b>RIQUEZA</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesRiquezas[item]"></div>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="Menor">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaRiquezaMenor; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.min + '-' + item.max }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.valor }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Média">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaRiquezaMedia; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.min + '-' + item.max }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.valor }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Maior">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaRiquezaMaior; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.min + '-' + item.max }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.valor }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        } @else {
           <div class="col-sm-4">
             <mat-card class="card-game">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
@@ -159,85 +464,158 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <!-- <div class="col-sm-4">
+          <div class="col-sm-4">
             <mat-card class="card-game">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
                 {{ 'RIQUEZAS' }}
               </mat-card-title>
               <mat-card-content>
-                <div class="content mt-2">
-                  @if (detalhesTesouroDinheiro) {
-                    <div class="row">
-                      <div class="col-sm-12 d-flex justify-content-end">
-                        <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                          <mat-icon>download</mat-icon>
-                        </span>
-                      </div>
-                    </div>
-                  }
-                  <label>
-                    <b class="negrito-centralizado" style="text-justify: center !important">
-                      PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
-                    </b>
-                  </label>
-                  <div class="row">
-                    <div class="col-sm-12 mt-4">
-                      <mat-form-field class="select-dobrado">
-                        <mat-label>Nível de Riqueza</mat-label>
-                        <mat-select formControlName="nivel">
-                          @for (riqueza of riquezas; track riqueza) {
-                            <mat-option [value]="riqueza">{{ riqueza | fraction }}</mat-option>
-                          }
-                        </mat-select>
-                      </mat-form-field>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6 mt-4">
-                      <mat-form-field class="form-field text-field-formulario-edicao">
-                        <mat-label>Qtd. Dados</mat-label>
-                        <input formControlName="dados" matInput type="text" />
-                      </mat-form-field>
-                    </div>
-                    <div class="col-sm-6 mt-4">
-                      <mat-form-field class="form-field text-field-formulario-edicao">
-                        <mat-label>Percentual adicional</mat-label>
-                        <input formControlName="percentual" matInput type="text" />
-                      </mat-form-field>
-                    </div>
-                  </div>
-                  <div class="row mb-4">
-                    <div class="col-sm-12">
-                      <section>
-                        <div class="button-row d-flex justify-content-end">
-                          <button
-                            class="me-2"
-                            (click)="gerarRiqueza()"
-                            [disabled]="!this.formulario.get('nivel')?.value || !this.formulario.get('tipo')?.value"
-                            mat-flat-button>
-                            Gerar Riqueza
-                          </button>
+                <div class="row mt-4">
+                  <mat-tab-group>
+                    <mat-tab label="Geração">
+                      <div class="content mt-2">
+                        @if (detalhesTesouroDinheiro) {
+                          <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                                <mat-icon>download</mat-icon>
+                              </span>
+                            </div>
+                          </div>
+                        }
+                        <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
+                          </b>
+                        </label>
+                        <div class="row">
+                          <div class="col-sm-12 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>Nível de Riqueza</mat-label>
+                              <mat-select formControlName="riqueza">
+                                @for (riqueza of riquezas; track riqueza) {
+                                  <mat-option [value]="riqueza">{{ riqueza | fraction }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
                         </div>
-                      </section>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h5><b>VALOR</b></h5>
-                      <hr />
-                      <div [innerHTML]="detalhesTesouroDinheiro"></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <h5><b>EXEMPLOS</b></h5>
-                      <hr />
-                      <div [innerHTML]="detalhesTesouroItens"></div>
-                    </div>
-                  </div>
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Qtd. Dados</mat-label>
+                              <input formControlName="dadosrq" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Percentual adicional</mat-label>
+                              <input formControlName="percentual" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-sm-12">
+                            <section>
+                              <div class="button-row d-flex justify-content-end">
+                                <button
+                                  class="me-2"
+                                  (click)="gerarRiqueza()"
+                                  [disabled]="!this.formulario.get('riqueza')?.value"
+                                  mat-flat-button>
+                                  Gerar Riqueza
+                                </button>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        @for (item of dadosRangeRq; track item) {
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h5><b>RIQUEZA</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesRiquezas[item]"></div>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="Menor">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaRiquezaMenor; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.min + '-' + item.max }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.valor }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Média">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaRiquezaMedia; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.min + '-' + item.max }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.valor }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Maior">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of tabelaRiquezaMaior; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.min + '-' + item.max }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.valor }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                  </mat-tab-group>
                 </div>
               </mat-card-content>
             </mat-card>
-          </div> -->
-          <!-- <div class="col-sm-4">
+          </div>
+        }
+        <!-- <div class="col-sm-4">
             <mat-card class="card-game">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
                 {{ 'ITENS DIVERSOS' }}
@@ -296,7 +674,6 @@
               </mat-card-content>
             </mat-card>
           </div> -->
-        </div>
       </div>
     </mat-card>
   </div>

@@ -6,7 +6,14 @@ import { MatFormField, MatFormFieldModule, MatLabel } from '@angular/material/fo
 import { MatOption, MatSelect } from '@angular/material/select';
 
 import { FractionPipe } from '@app/pipes/fraction.pipe';
-import { GeneratedTreasure, tabelaTesouroItens, TreasureContext } from './generate-factory/model/treasure';
+import {
+  GeneratedTreasure,
+  tabelaRiquezaMaior,
+  tabelaRiquezaMedia,
+  tabelaRiquezaMenor,
+  tabelaTesouroItens,
+  TreasureContext,
+} from './generate-factory/model/treasure';
 import { TreasureService } from './generate-factory/service/treasure.service';
 
 import { MatIcon } from '@angular/material/icon';
@@ -14,6 +21,8 @@ import * as htmlToImage from 'html-to-image';
 import { MatInputModule } from '@angular/material/input';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { tabelaDinheiro } from './generate-factory/model/treasure';
+import { MoneyTreasureGenerator } from './generate-factory/generators/money-treasure.generator';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -48,13 +57,24 @@ export class TabelaGeracaoTesourosComponent {
 
   detalhesTesouroDinheiro: string[] = [];
   detalhesTesouroItens: string[] = [];
+  detalhesRiquezas: string[] = [];
   tabelaDinheiro = tabelaDinheiro;
   tabelaTesouroItens = tabelaTesouroItens;
+  tabelaRiquezaMenor = tabelaRiquezaMenor;
+  tabelaRiquezaMedia = tabelaRiquezaMedia;
+  tabelaRiquezaMaior = tabelaRiquezaMaior;
+  isMobile = false;
 
   constructor(
     private fb: FormBuilder,
-    private treasureService: TreasureService
-  ) {}
+    private treasureService: TreasureService,
+    private moneyTreasure: MoneyTreasureGenerator,
+    private breakpointObserver: BreakpointObserver
+  ) {
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      this.isMobile = result.matches;
+    });
+  }
 
   ngOnInit() {
     this.formulario = this.fb.group({
@@ -62,6 +82,8 @@ export class TabelaGeracaoTesourosComponent {
       nivel: [],
       dados: [1],
       percentual: [0],
+      riqueza: [],
+      dadosrq: [1],
     });
   }
 
@@ -77,7 +99,17 @@ export class TabelaGeracaoTesourosComponent {
     }
   }
 
-  gerarRiqueza() {}
+  gerarRiqueza() {
+    const riqueza = this.formulario.get('riqueza')?.value;
+    const dados = this.formulario.get('dadosrq')?.value;
+
+    this.detalhesRiquezas = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesRiquezas.push(this.moneyTreasure.gerarRiqueza(riqueza));
+    }
+  }
+
   gerarItemDiverso() {}
 
   private gerarDinheiro() {
@@ -98,6 +130,11 @@ export class TabelaGeracaoTesourosComponent {
 
   get dadosRange() {
     const n = this.formulario.get('dados')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
+  }
+
+  get dadosRangeRq() {
+    const n = this.formulario.get('dadosrq')?.value || 0;
     return Array.from({ length: n }, (_, i) => i);
   }
 
