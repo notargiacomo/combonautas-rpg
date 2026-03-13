@@ -91,7 +91,7 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
     return dinheiro;
   }
 
-  gerarRiqueza(riqueza: string) {
+  gerarIndividual(riqueza: string) {
     let random = Math.floor(Math.random() * 100) + 1;
     let linhatabela: any = null;
     if (riqueza === 'menor')

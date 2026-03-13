@@ -8,6 +8,7 @@ import { MatOption, MatSelect } from '@angular/material/select';
 import { FractionPipe } from '@app/pipes/fraction.pipe';
 import {
   GeneratedTreasure,
+  tabelaItensDiversos,
   tabelaRiquezaMaior,
   tabelaRiquezaMedia,
   tabelaRiquezaMenor,
@@ -23,6 +24,7 @@ import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { tabelaDinheiro } from './generate-factory/model/treasure';
 import { MoneyTreasureGenerator } from './generate-factory/generators/money-treasure.generator';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { MiscellaneousItemsTreasureGenerator } from './generate-factory/generators/miscellaneous-item-treasure.generator';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -58,17 +60,20 @@ export class TabelaGeracaoTesourosComponent {
   detalhesTesouroDinheiro: string[] = [];
   detalhesTesouroItens: string[] = [];
   detalhesRiquezas: string[] = [];
+  detalhesItensDiversos: string[] = [];
   tabelaDinheiro = tabelaDinheiro;
   tabelaTesouroItens = tabelaTesouroItens;
   tabelaRiquezaMenor = tabelaRiquezaMenor;
   tabelaRiquezaMedia = tabelaRiquezaMedia;
   tabelaRiquezaMaior = tabelaRiquezaMaior;
+  tabelaItensDiversos = tabelaItensDiversos;
   isMobile = false;
 
   constructor(
     private fb: FormBuilder,
     private treasureService: TreasureService,
     private moneyTreasure: MoneyTreasureGenerator,
+    private miscellaneousItemsTreasureGenerator: MiscellaneousItemsTreasureGenerator,
     private breakpointObserver: BreakpointObserver
   ) {
     this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
@@ -84,6 +89,7 @@ export class TabelaGeracaoTesourosComponent {
       percentual: [0],
       riqueza: [],
       dadosrq: [1],
+      dadosid: [1],
     });
   }
 
@@ -106,11 +112,19 @@ export class TabelaGeracaoTesourosComponent {
     this.detalhesRiquezas = [];
 
     for (let i = 1; i <= dados; i++) {
-      this.detalhesRiquezas.push(this.moneyTreasure.gerarRiqueza(riqueza));
+      this.detalhesRiquezas.push(this.moneyTreasure.gerarIndividual(riqueza));
     }
   }
 
-  gerarItemDiverso() {}
+  gerarItemDiverso() {
+    const dados = this.formulario.get('dadosid')?.value;
+
+    this.detalhesItensDiversos = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesItensDiversos.push(this.miscellaneousItemsTreasureGenerator.gerarIndividual());
+    }
+  }
 
   private gerarDinheiro() {
     const contexto: TreasureContext = {
