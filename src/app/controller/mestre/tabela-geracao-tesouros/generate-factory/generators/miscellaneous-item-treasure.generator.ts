@@ -35,7 +35,7 @@ export class MiscellaneousItemsTreasureGenerator implements TreasureGenerator {
     let random = Math.floor(Math.random() * 100) + 1;
     let linhatabela = tabelaItensDiversos.find((item: any) => random == item.id);
 
-    const detalheRiqueza = `
+    const detalhe = `
       <div class="row">
           <p><b>RESULTADO D100:</b> ${random}</p>
       </div>
@@ -43,9 +43,9 @@ export class MiscellaneousItemsTreasureGenerator implements TreasureGenerator {
           <p><b>FÓRMULA:</b> ${linhatabela?.nome}</p>
       </div>
       <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página' + linhatabela?.pagina}</p>
+          <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
       </div>`;
 
-    return detalheRiqueza;
+    return detalhe;
   }
 }

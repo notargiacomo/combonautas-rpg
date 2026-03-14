@@ -7,7 +7,13 @@ import { MatOption, MatSelect } from '@angular/material/select';
 
 import { FractionPipe } from '@app/pipes/fraction.pipe';
 import {
+  equipamentoArmaduras,
+  equipamentoArmas,
+  equipamentoEsoterico,
   GeneratedTreasure,
+  melhoriasSuperioresArmaduras,
+  melhoriasSuperioresArmas,
+  melhoriasSuperioresEsotericos,
   tabelaItensDiversos,
   tabelaRiquezaMaior,
   tabelaRiquezaMedia,
@@ -25,6 +31,7 @@ import { tabelaDinheiro } from './generate-factory/model/treasure';
 import { MoneyTreasureGenerator } from './generate-factory/generators/money-treasure.generator';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MiscellaneousItemsTreasureGenerator } from './generate-factory/generators/miscellaneous-item-treasure.generator';
+import { EquipmentTreasureGenerator } from './generate-factory/generators/equipment-treasure.generator';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -55,18 +62,28 @@ export class TabelaGeracaoTesourosComponent {
   tipos: string[] = ['PADRÃO', 'METADE', 'DOBRO'];
   riquezas: string[] = ['menor', 'media', 'maior'];
   niveis: number[] = [0.25, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  equipamentos: string[] = ['desconhecido', 'arma', 'armadura', 'esoterico'];
+  numero_melhorias: string[] = ['Um', 'Dois', 'Três', 'Quatro'];
   resultado?: GeneratedTreasure[] = [];
 
   detalhesTesouroDinheiro: string[] = [];
   detalhesTesouroItens: string[] = [];
   detalhesRiquezas: string[] = [];
   detalhesItensDiversos: string[] = [];
+  detalhesEquipamentos: string[] = [];
   tabelaDinheiro = tabelaDinheiro;
   tabelaTesouroItens = tabelaTesouroItens;
   tabelaRiquezaMenor = tabelaRiquezaMenor;
   tabelaRiquezaMedia = tabelaRiquezaMedia;
   tabelaRiquezaMaior = tabelaRiquezaMaior;
   tabelaItensDiversos = tabelaItensDiversos;
+  equipamentoArmas = equipamentoArmas;
+  equipamentoArmaduras = equipamentoArmaduras;
+  equipamentoEsoterico = equipamentoEsoterico;
+  melhoriasSuperioresArmas = melhoriasSuperioresArmas;
+  melhoriasSuperioresArmaduras = melhoriasSuperioresArmaduras;
+  melhoriasSuperioresEsotericos = melhoriasSuperioresEsotericos;
+
   isMobile = false;
 
   constructor(
@@ -74,6 +91,7 @@ export class TabelaGeracaoTesourosComponent {
     private treasureService: TreasureService,
     private moneyTreasure: MoneyTreasureGenerator,
     private miscellaneousItemsTreasureGenerator: MiscellaneousItemsTreasureGenerator,
+    private equipmentTreasureGenerator: EquipmentTreasureGenerator,
     private breakpointObserver: BreakpointObserver
   ) {
     this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
@@ -90,6 +108,9 @@ export class TabelaGeracaoTesourosComponent {
       riqueza: [],
       dadosrq: [1],
       dadosid: [1],
+      dadoseq: [1],
+      equipamento: [],
+      numero_melhorias: [0],
     });
   }
 
@@ -123,6 +144,17 @@ export class TabelaGeracaoTesourosComponent {
 
     for (let i = 1; i <= dados; i++) {
       this.detalhesItensDiversos.push(this.miscellaneousItemsTreasureGenerator.gerarIndividual());
+    }
+  }
+
+  gerarEquipamento() {
+    const dados = this.formulario.get('dadoseq')?.value;
+    const equipamento = this.formulario.get('equipamento')?.value;
+
+    this.detalhesEquipamentos = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesEquipamentos.push(this.equipmentTreasureGenerator.gerarIndividual(equipamento));
     }
   }
 
