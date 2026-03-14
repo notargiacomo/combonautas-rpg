@@ -397,6 +397,99 @@
             </mat-card>
           </div>
         </div>
+        <div class="col-sm-4 mb-4">
+          <mat-card class="card-game">
+            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              {{ 'POÇÕES' }}
+            </mat-card-title>
+            <mat-card-content>
+              <div class="row mt-4">
+                <mat-tab-group>
+                  <mat-tab label="Geração">
+                    <div class="content mt-2">
+                      @if (detalhesTesouroDinheiro) {
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                          </div>
+                        </div>
+                      }
+                      <div class="row">
+                        <div class="col-sm-12 mt-4">
+                          <mat-form-field class="form-field text-field-formulario-edicao">
+                            <mat-label>Qtd. Dados</mat-label>
+                            <input formControlName="dadosp" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!-- <div class="col-sm-6 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>N° Melhorias</mat-label>
+                              <input formControlName="numero_melhorias" matInput type="number" min="0" max="4" />
+                            </mat-form-field>
+                          </div> -->
+                      </div>
+                      <div class="row mb-4">
+                        <div class="col-sm-12">
+                          <section>
+                            <div class="button-row d-flex justify-content-end">
+                              <button class="me-2" (click)="gerarPocoes()" mat-flat-button>Gerar Poções</button>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                      @for (item of dadosRangeSp; track item) {
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5><b>POÇÃO</b></h5>
+                            <hr />
+                            <div style="color: white !important" [innerHTML]="detalhesPocoes[item]"></div>
+                          </div>
+                        </div>
+                      }
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Poções">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of pocoes; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                </mat-tab-group>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
         <div class="col-sm-12 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
@@ -956,6 +1049,99 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-sm-4">
+            <mat-card class="card-game">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ 'POÇÕES' }}
+              </mat-card-title>
+              <mat-card-content>
+                <div class="row mt-4">
+                  <mat-tab-group>
+                    <mat-tab label="Geração">
+                      <div class="content mt-2">
+                        @if (detalhesTesouroDinheiro) {
+                          <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                                <mat-icon>download</mat-icon>
+                              </span>
+                            </div>
+                          </div>
+                        }
+                        <div class="row">
+                          <div class="col-sm-12 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Qtd. Dados</mat-label>
+                              <input formControlName="dadosp" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <!-- <div class="col-sm-6 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>N° Melhorias</mat-label>
+                              <input formControlName="numero_melhorias" matInput type="number" min="0" max="4" />
+                            </mat-form-field>
+                          </div> -->
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-sm-12">
+                            <section>
+                              <div class="button-row d-flex justify-content-end">
+                                <button class="me-2" (click)="gerarPocoes()" mat-flat-button>Gerar Poções</button>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        @for (item of dadosRangeSp; track item) {
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h5><b>POÇÃO</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesPocoes[item]"></div>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="Poções">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of pocoes; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
           <div class="col-sm-4">
             <mat-card class="card-game">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">

@@ -40,7 +40,7 @@ export class MiscellaneousItemsTreasureGenerator implements TreasureGenerator {
           <p><b>RESULTADO D100:</b> ${random}</p>
       </div>
       <div class="row">
-          <p><b>FÓRMULA:</b> ${linhatabela?.nome}</p>
+          <p><b>ITEM:</b> ${linhatabela?.nome}</p>
       </div>
       <div class="row">
           <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>

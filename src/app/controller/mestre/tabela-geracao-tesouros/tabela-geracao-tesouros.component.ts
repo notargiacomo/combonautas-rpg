@@ -14,6 +14,7 @@ import {
   melhoriasSuperioresArmaduras,
   melhoriasSuperioresArmas,
   melhoriasSuperioresEsotericos,
+  pocoes,
   tabelaItensDiversos,
   tabelaRiquezaMaior,
   tabelaRiquezaMedia,
@@ -32,6 +33,7 @@ import { MoneyTreasureGenerator } from './generate-factory/generators/money-trea
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MiscellaneousItemsTreasureGenerator } from './generate-factory/generators/miscellaneous-item-treasure.generator';
 import { EquipmentTreasureGenerator } from './generate-factory/generators/equipment-treasure.generator';
+import { PotionTreasureGenerator } from './generate-factory/generators/potion-treasure.generator';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -71,6 +73,7 @@ export class TabelaGeracaoTesourosComponent {
   detalhesRiquezas: string[] = [];
   detalhesItensDiversos: string[] = [];
   detalhesEquipamentos: string[] = [];
+  detalhesPocoes: string[] = [];
   tabelaDinheiro = tabelaDinheiro;
   tabelaTesouroItens = tabelaTesouroItens;
   tabelaRiquezaMenor = tabelaRiquezaMenor;
@@ -83,6 +86,7 @@ export class TabelaGeracaoTesourosComponent {
   melhoriasSuperioresArmas = melhoriasSuperioresArmas;
   melhoriasSuperioresArmaduras = melhoriasSuperioresArmaduras;
   melhoriasSuperioresEsotericos = melhoriasSuperioresEsotericos;
+  pocoes = pocoes;
 
   isMobile = false;
 
@@ -92,6 +96,7 @@ export class TabelaGeracaoTesourosComponent {
     private moneyTreasure: MoneyTreasureGenerator,
     private miscellaneousItemsTreasureGenerator: MiscellaneousItemsTreasureGenerator,
     private equipmentTreasureGenerator: EquipmentTreasureGenerator,
+    private potionTreasureGenerator: PotionTreasureGenerator,
     private breakpointObserver: BreakpointObserver
   ) {
     this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
@@ -111,6 +116,7 @@ export class TabelaGeracaoTesourosComponent {
       dadoseq: [1],
       equipamento: [],
       numero_melhorias: [0],
+      dadosp: [1],
     });
   }
 
@@ -158,6 +164,16 @@ export class TabelaGeracaoTesourosComponent {
     }
   }
 
+  gerarPocoes() {
+    const dados = this.formulario.get('dadosp')?.value;
+
+    this.detalhesPocoes = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesPocoes.push(this.potionTreasureGenerator.gerarIndividual());
+    }
+  }
+
   private gerarDinheiro() {
     const contexto: TreasureContext = {
       type: 'money',
@@ -181,6 +197,11 @@ export class TabelaGeracaoTesourosComponent {
 
   get dadosRangeRq() {
     const n = this.formulario.get('dadosrq')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
+  }
+
+  get dadosRangeSp() {
+    const n = this.formulario.get('dadosp')?.value || 0;
     return Array.from({ length: n }, (_, i) => i);
   }
 

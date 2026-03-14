@@ -152,4 +152,36 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
 
     return detalhe;
   }
+
+  gerarIndividualMelhorias(tipo: string, num_melhoria: number) {
+    let random = Math.floor(Math.random() * 100) + 1;
+    let linhatabela: any = null;
+
+    if (tipo === 'desconhecido' || tipo == undefined) {
+      let randomTipo = Math.floor(Math.random() * 6) + 1;
+      tipo =
+        randomTipo === 1 || randomTipo === 2 || randomTipo === 3
+          ? 'arma'
+          : randomTipo === 3 || randomTipo === 4
+            ? 'armadura'
+            : 'esoterico';
+    }
+
+    if (tipo === 'arma') linhatabela = equipamentoArmas.find((item: any) => random === item.id);
+    else if (tipo === 'armadura') linhatabela = equipamentoArmaduras.find((item: any) => random === item.id);
+    else if (tipo === 'esoterico') linhatabela = equipamentoEsoterico.find((item: any) => random === item.id);
+
+    const detalhe = `
+        <div class="row">
+            <p><b>RESULTADO D100:</b> ${random}</p>
+        </div>
+        <div class="row">
+            <p><b>Equipamento:</b> ${linhatabela.nome}</p>
+        </div>
+      <div class="row">
+          <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
+      </div>`;
+
+    return detalhe;
+  }
 }
