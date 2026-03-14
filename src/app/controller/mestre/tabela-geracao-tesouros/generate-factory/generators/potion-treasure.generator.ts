@@ -81,7 +81,7 @@ export class PotionTreasureGenerator implements TreasureGenerator {
               <p><b>POÇÃO:</b> ${linhatabela.nome}</p>
           </div>
         <div class="row">
-            <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
+            <p><b>REFERÊNCIA:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
         </div>`;
 
     return detalhe;

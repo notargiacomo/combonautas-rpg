@@ -144,16 +144,16 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
             <p><b>RESULTADO D100:</b> ${random}</p>
         </div>
         <div class="row">
-            <p><b>Equipamento:</b> ${linhatabela.nome}</p>
+            <p><b>EQUIPAMENTO:</b> ${linhatabela.nome}</p>
         </div>
       <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
+          <p><b>REFERÊNCIAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
       </div>`;
 
     return detalhe;
   }
 
-  gerarIndividualMelhorias(tipo: string, num_melhoria: number) {
+  gerarIndividualMelhorias(tipo: string) {
     let random = Math.floor(Math.random() * 100) + 1;
     let linhatabela: any = null;
 
@@ -167,19 +167,39 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
             : 'esoterico';
     }
 
-    if (tipo === 'arma') linhatabela = equipamentoArmas.find((item: any) => random === item.id);
-    else if (tipo === 'armadura') linhatabela = equipamentoArmaduras.find((item: any) => random === item.id);
-    else if (tipo === 'esoterico') linhatabela = equipamentoEsoterico.find((item: any) => random === item.id);
+    if (tipo === 'arma') linhatabela = melhoriasSuperioresArmas.find((item: any) => random === item.id);
+    else if (tipo === 'armadura') linhatabela = melhoriasSuperioresArmaduras.find((item: any) => random === item.id);
+    else if (tipo === 'esoterico') linhatabela = melhoriasSuperioresEsotericos.find((item: any) => random === item.id);
 
     const detalhe = `
         <div class="row">
             <p><b>RESULTADO D100:</b> ${random}</p>
         </div>
         <div class="row">
-            <p><b>Equipamento:</b> ${linhatabela.nome}</p>
+            <p><b>MELHORIA:</b> ${linhatabela.nome}</p>
         </div>
       <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
+          <p><b>REFERÊNCIA:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
+      </div>`;
+
+    return detalhe;
+  }
+
+  gerarIndividualMaterialEspecial() {
+    let random = Math.floor(Math.random() * 6) + 1;
+    let linhatabela: any = null;
+
+    linhatabela = melhoriasSuperioresMaterialEspecial.find((item: any) => random === item.id);
+
+    const detalhe = `
+        <div class="row">
+            <p><b>RESULTADO D100:</b> ${random}</p>
+        </div>
+        <div class="row">
+            <p><b>MELHORIA:</b> ${linhatabela.nome}</p>
+        </div>
+      <div class="row">
+          <p><b>REFERÊNCIA:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
       </div>`;
 
     return detalhe;

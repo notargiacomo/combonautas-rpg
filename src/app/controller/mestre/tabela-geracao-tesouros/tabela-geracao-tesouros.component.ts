@@ -14,6 +14,7 @@ import {
   melhoriasSuperioresArmaduras,
   melhoriasSuperioresArmas,
   melhoriasSuperioresEsotericos,
+  melhoriasSuperioresMaterialEspecial,
   pocoes,
   tabelaItensDiversos,
   tabelaRiquezaMaior,
@@ -65,6 +66,8 @@ export class TabelaGeracaoTesourosComponent {
   riquezas: string[] = ['menor', 'media', 'maior'];
   niveis: number[] = [0.25, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   equipamentos: string[] = ['desconhecido', 'arma', 'armadura', 'esoterico'];
+  melhorias: string[] = ['arma', 'armadura', 'esoterico'];
+
   numero_melhorias: string[] = ['Um', 'Dois', 'Três', 'Quatro'];
   resultado?: GeneratedTreasure[] = [];
 
@@ -73,7 +76,9 @@ export class TabelaGeracaoTesourosComponent {
   detalhesRiquezas: string[] = [];
   detalhesItensDiversos: string[] = [];
   detalhesEquipamentos: string[] = [];
+  detalhesMelhorias: string[] = [];
   detalhesPocoes: string[] = [];
+  detalhesMaterialEspecial: string[] = [];
   tabelaDinheiro = tabelaDinheiro;
   tabelaTesouroItens = tabelaTesouroItens;
   tabelaRiquezaMenor = tabelaRiquezaMenor;
@@ -86,6 +91,7 @@ export class TabelaGeracaoTesourosComponent {
   melhoriasSuperioresArmas = melhoriasSuperioresArmas;
   melhoriasSuperioresArmaduras = melhoriasSuperioresArmaduras;
   melhoriasSuperioresEsotericos = melhoriasSuperioresEsotericos;
+  melhoriasSuperioresMaterialEspecial = melhoriasSuperioresMaterialEspecial;
   pocoes = pocoes;
 
   isMobile = false;
@@ -117,6 +123,9 @@ export class TabelaGeracaoTesourosComponent {
       equipamento: [],
       numero_melhorias: [0],
       dadosp: [1],
+      dadosm: [1],
+      melhoria: [],
+      dadosme: [1],
     });
   }
 
@@ -164,6 +173,17 @@ export class TabelaGeracaoTesourosComponent {
     }
   }
 
+  gerarMelhoria() {
+    const dados = this.formulario.get('dadosm')?.value;
+    const equipamento = this.formulario.get('melhoria')?.value;
+
+    this.detalhesMelhorias = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesMelhorias.push(this.equipmentTreasureGenerator.gerarIndividualMelhorias(equipamento));
+    }
+  }
+
   gerarPocoes() {
     const dados = this.formulario.get('dadosp')?.value;
 
@@ -190,6 +210,16 @@ export class TabelaGeracaoTesourosComponent {
     }
   }
 
+  gerarMaterialEspecial() {
+    const dados = this.formulario.get('dadosme')?.value;
+
+    this.detalhesMaterialEspecial = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesMaterialEspecial.push(this.equipmentTreasureGenerator.gerarIndividualMaterialEspecial());
+    }
+  }
+
   get dadosRange() {
     const n = this.formulario.get('dados')?.value || 0;
     return Array.from({ length: n }, (_, i) => i);
@@ -202,6 +232,16 @@ export class TabelaGeracaoTesourosComponent {
 
   get dadosRangeSp() {
     const n = this.formulario.get('dadosp')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
+  }
+
+  get dadosRangeM() {
+    const n = this.formulario.get('dadosm')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
+  }
+
+  get dadosRangeMe() {
+    const n = this.formulario.get('dadosme')?.value || 0;
     return Array.from({ length: n }, (_, i) => i);
   }
 

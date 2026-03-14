@@ -27,7 +27,7 @@ export class MiscellaneousItemsTreasureGenerator implements TreasureGenerator {
   private gerarRelatorio(random: number, itemDiverso: any): string {
     return `
       <p><b>RESULTADO D100:</b> ${random}</p>
-      <p><b>Item Diverso:</b> ${itemDiverso.id} - ${itemDiverso.nome}</p>
+      <p><b>ITEM DIVERSO:</b> ${itemDiverso.id} - ${itemDiverso.nome}</p>
       `;
   }
 
@@ -43,7 +43,7 @@ export class MiscellaneousItemsTreasureGenerator implements TreasureGenerator {
           <p><b>ITEM:</b> ${linhatabela?.nome}</p>
       </div>
       <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
+          <p><b>REFERÊNCIA:</b> ${linhatabela?.livro + ', página ' + linhatabela?.pagina}</p>
       </div>`;
 
     return detalhe;
