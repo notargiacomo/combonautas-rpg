@@ -117,12 +117,14 @@ export class TabelaGeracaoTesourosComponent {
       dados: [1],
       percentual: [0],
       riqueza: [],
+      percentualrq: [0],
       dadosrq: [1],
       dadosid: [1],
       dadoseq: [1],
       equipamento: [],
       numero_melhorias: [0],
       dadosp: [1],
+      percentualp: [0],
       dadosm: [1],
       melhoria: [],
       dadosme: [1],
@@ -144,11 +146,14 @@ export class TabelaGeracaoTesourosComponent {
   gerarRiqueza() {
     const riqueza = this.formulario.get('riqueza')?.value;
     const dados = this.formulario.get('dadosrq')?.value;
+    let random = Math.floor(Math.random() * 100) + 1;
+    let percentual = this.formulario.get('percentualrq')?.value;
+    random = random + percentual > 100 ? 100 : random + percentual;
 
     this.detalhesRiquezas = [];
 
     for (let i = 1; i <= dados; i++) {
-      this.detalhesRiquezas.push(this.moneyTreasure.gerarIndividual(riqueza));
+      this.detalhesRiquezas.push(this.moneyTreasure.gerarIndividual(riqueza, random));
     }
   }
 
@@ -185,19 +190,27 @@ export class TabelaGeracaoTesourosComponent {
   }
 
   gerarPocoes() {
+    let random = Math.floor(Math.random() * 120) + 1;
+    let percentual = this.formulario.get('percentualp')?.value;
+    random = random + percentual > 120 ? 120 : random + percentual;
     const dados = this.formulario.get('dadosp')?.value;
 
     this.detalhesPocoes = [];
 
     for (let i = 1; i <= dados; i++) {
-      this.detalhesPocoes.push(this.potionTreasureGenerator.gerarIndividual());
+      this.detalhesPocoes.push(this.potionTreasureGenerator.gerarIndividual(random));
     }
   }
 
   private gerarDinheiro() {
+    let random = Math.floor(Math.random() * 100) + 1;
+    let percentual = this.formulario.get('percentual')?.value;
+    random = random + percentual > 100 ? 100 : random + percentual;
+
     const contexto: TreasureContext = {
       type: 'money',
       level: this.formulario.get('nivel')?.value,
+      random: random,
     };
 
     let retorno = this.treasureService.generate(contexto);
@@ -247,6 +260,8 @@ export class TabelaGeracaoTesourosComponent {
 
   gerarItem() {
     let random = Math.floor(Math.random() * 100) + 1;
+    let percentual = this.formulario.get('percentual')?.value;
+    random = random + percentual > 100 ? 100 : random + percentual;
     let nivel = String(this.formulario.get('nivel')?.value).trim();
     const tabelaItemNivel = tabelaTesouroItens.filter((item: any) => item.nd === Number(nivel));
     const linhaItemNivel: any = tabelaItemNivel.find((item: any) => random >= item.min && random <= item.max);
@@ -269,29 +284,29 @@ export class TabelaGeracaoTesourosComponent {
       `);
     }
 
-    if (this.formulario.get('tipo')?.value === 'DOBRO') {
-      let randomDB = Math.floor(Math.random() * 100) + 1;
-      let nivelDB = String(this.formulario.get('nivel')?.value).trim();
-      const tabelaItemNivelDB = tabelaTesouroItens.filter((item: any) => item.nd === Number(nivelDB));
-      const linhaItemNivelDB: any = tabelaItemNivelDB.find((item: any) => randomDB >= item.min && randomDB <= item.max);
+    // if (this.formulario.get('tipo')?.value === 'DOBRO') {
+    //   let randomDB = Math.floor(Math.random() * 100) + 1;
+    //   let nivelDB = String(this.formulario.get('nivel')?.value).trim();
+    //   const tabelaItemNivelDB = tabelaTesouroItens.filter((item: any) => item.nd === Number(nivelDB));
+    //   const linhaItemNivelDB: any = tabelaItemNivelDB.find((item: any) => randomDB >= item.min && randomDB <= item.max);
 
-      const contextoDB: TreasureContext = {
-        type: linhaItemNivelDB.tipo,
-        level: this.formulario.get('nivel')?.value,
-        notes: linhaItemNivelDB.modificador,
-        random: randomDB,
-      };
+    //   const contextoDB: TreasureContext = {
+    //     type: linhaItemNivelDB.tipo,
+    //     level: this.formulario.get('nivel')?.value,
+    //     notes: linhaItemNivelDB.modificador,
+    //     random: randomDB,
+    //   };
 
-      if (linhaItemNivelDB.valor !== '—') {
-        this.detalhesTesouroItens.push('<br /><br />' + this.treasureService.generate(contextoDB).report!);
-      } else {
-        this.detalhesTesouroItens.push(`
-      <p><b>FÓRMULA:</b> ${linhaItemNivelDB.valor}</p>
-      <p><b>RESULTADO D100:</b> ${randomDB}</p>
-      <p><b>ITEM:</b> N/A</p>
-      `);
-      }
-    }
+    //   if (linhaItemNivelDB.valor !== '—') {
+    //     this.detalhesTesouroItens.push('<br /><br />' + this.treasureService.generate(contextoDB).report!);
+    //   } else {
+    //     this.detalhesTesouroItens.push(`
+    //   <p><b>FÓRMULA:</b> ${linhaItemNivelDB.valor}</p>
+    //   <p><b>RESULTADO D100:</b> ${randomDB}</p>
+    //   <p><b>ITEM:</b> N/A</p>
+    //   `);
+    //   }
+    // }
   }
 
   @ViewChild('tesouro', { static: false })

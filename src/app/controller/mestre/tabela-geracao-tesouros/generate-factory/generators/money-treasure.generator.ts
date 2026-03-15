@@ -16,12 +16,12 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
   constructor() {}
 
   public generate(ctx: TreasureContext): GeneratedTreasure {
-    let random = Math.floor(Math.random() * 100) + 1;
+    let random = ctx.random!;
     let nivel = ctx.level;
     let dinheiro: number;
 
     const tabelaDinheiroNivel = tabelaDinheiro.filter((item: any) => item.nd === nivel);
-    const linhaDinheiroNivel: any = tabelaDinheiroNivel.find((item: any) => random >= item.min && random <= item.max);
+    const linhaDinheiroNivel: any = tabelaDinheiroNivel.find((item: any) => random! >= item.min && random <= item.max);
 
     let tesouro: any[] = [];
     tesouro.push(linhaDinheiroNivel);
@@ -91,8 +91,7 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
     return dinheiro;
   }
 
-  gerarIndividual(riqueza: string) {
-    let random = Math.floor(Math.random() * 100) + 1;
+  gerarIndividual(riqueza: string, random: number) {
     let linhatabela: any = null;
     if (riqueza === 'menor')
       linhatabela = tabelaRiquezaMenor.find((item: any) => random >= item.min && random <= item.max);

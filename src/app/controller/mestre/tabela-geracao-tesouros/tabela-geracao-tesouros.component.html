@@ -205,7 +205,7 @@
                           <div class="col-sm-6 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
                               <mat-label>Percentual adicional</mat-label>
-                              <input formControlName="percentual" matInput type="text" />
+                              <input formControlName="percentualrq" matInput type="number" min="0" max="100" />
                             </mat-form-field>
                           </div>
                         </div>
@@ -417,10 +417,16 @@
                         </div>
                       }
                       <div class="row">
-                        <div class="col-sm-12 mt-4">
+                        <div class="col-sm-6 mt-4">
                           <mat-form-field class="form-field text-field-formulario-edicao">
                             <mat-label>Qtd. Dados</mat-label>
                             <input formControlName="dadosp" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="form-field text-field-formulario-edicao">
+                            <mat-label>Percentual adicional</mat-label>
+                            <input formControlName="percentualp" matInput type="number" min="0" max="100" />
                           </mat-form-field>
                         </div>
                       </div>
@@ -1097,7 +1103,7 @@
                           <div class="col-sm-6 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
                               <mat-label>Percentual adicional</mat-label>
-                              <input formControlName="percentual" matInput type="text" />
+                              <input formControlName="percentualrq" matInput type="number" min="0" max="100" />
                             </mat-form-field>
                           </div>
                         </div>
@@ -1310,10 +1316,16 @@
                           </div>
                         }
                         <div class="row">
-                          <div class="col-sm-12 mt-4">
+                          <div class="col-sm-6 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
                               <mat-label>Qtd. Dados</mat-label>
                               <input formControlName="dadosp" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Percentual adicional</mat-label>
+                              <input formControlName="percentualp" matInput type="number" min="0" max="100" />
                             </mat-form-field>
                           </div>
                         </div>

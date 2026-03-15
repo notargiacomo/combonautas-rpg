@@ -67,15 +67,14 @@ export class PotionTreasureGenerator implements TreasureGenerator {
       `;
   }
 
-  gerarIndividual() {
-    let random = Math.floor(Math.random() * 120) + 1;
+  gerarIndividual(random: number) {
     let linhatabela: any = null;
 
     linhatabela = pocoes.find((item: any) => random === item.id);
 
     const detalhe = `
           <div class="row">
-              <p><b>RESULTADO D100:</b> ${random}</p>
+              <p><b>RESULTADO D120:</b> ${random}</p>
           </div>
           <div class="row">
               <p><b>POÇÃO:</b> ${linhatabela.nome}</p>
