@@ -7,9 +7,18 @@ import { MatOption, MatSelect } from '@angular/material/select';
 
 import { FractionPipe } from '@app/pipes/fraction.pipe';
 import {
+  acessorioMaior,
+  acessorioMedio,
+  acessorioMenor,
+  armaduraMagica,
+  armaMagica,
+  encantoArma,
+  encantoArmadura,
+  encantoEsoterico,
   equipamentoArmaduras,
   equipamentoArmas,
   equipamentoEsoterico,
+  esotericoMagico,
   GeneratedTreasure,
   melhoriasSuperioresArmaduras,
   melhoriasSuperioresArmas,
@@ -35,6 +44,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MiscellaneousItemsTreasureGenerator } from './generate-factory/generators/miscellaneous-item-treasure.generator';
 import { EquipmentTreasureGenerator } from './generate-factory/generators/equipment-treasure.generator';
 import { PotionTreasureGenerator } from './generate-factory/generators/potion-treasure.generator';
+import { MagicEquipmentTreasureGenerator } from './generate-factory/generators/magic-equipment-treasure.generator';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -67,7 +77,7 @@ export class TabelaGeracaoTesourosComponent {
   niveis: number[] = [0.25, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   equipamentos: string[] = ['desconhecido', 'arma', 'armadura', 'esoterico'];
   melhorias: string[] = ['arma', 'armadura', 'esoterico'];
-
+  nivel_magico: string[] = ['menor', 'medio', 'maior'];
   numero_melhorias: string[] = ['Um', 'Dois', 'Três', 'Quatro'];
   resultado?: GeneratedTreasure[] = [];
 
@@ -79,6 +89,9 @@ export class TabelaGeracaoTesourosComponent {
   detalhesMelhorias: string[] = [];
   detalhesPocoes: string[] = [];
   detalhesMaterialEspecial: string[] = [];
+  detalhesEncantos: string[] = [];
+  detalhesItensEspecfificos: string[] = [];
+  detalhesAcessorios: string[] = [];
   tabelaDinheiro = tabelaDinheiro;
   tabelaTesouroItens = tabelaTesouroItens;
   tabelaRiquezaMenor = tabelaRiquezaMenor;
@@ -93,6 +106,15 @@ export class TabelaGeracaoTesourosComponent {
   melhoriasSuperioresEsotericos = melhoriasSuperioresEsotericos;
   melhoriasSuperioresMaterialEspecial = melhoriasSuperioresMaterialEspecial;
   pocoes = pocoes;
+  encantoArma = encantoArma;
+  encantoArmadura = encantoArmadura;
+  encantoEsoterico = encantoEsoterico;
+  armaMagica = armaMagica;
+  armaduraMagica = armaduraMagica;
+  esotericoMagico = esotericoMagico;
+  acessorioMenor = acessorioMenor;
+  acessorioMedio = acessorioMedio;
+  acessorioMaior = acessorioMaior;
 
   isMobile = false;
 
@@ -103,6 +125,7 @@ export class TabelaGeracaoTesourosComponent {
     private miscellaneousItemsTreasureGenerator: MiscellaneousItemsTreasureGenerator,
     private equipmentTreasureGenerator: EquipmentTreasureGenerator,
     private potionTreasureGenerator: PotionTreasureGenerator,
+    private magicEquipmentTreasureGenerator: MagicEquipmentTreasureGenerator,
     private breakpointObserver: BreakpointObserver
   ) {
     this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
@@ -128,6 +151,12 @@ export class TabelaGeracaoTesourosComponent {
       dadosm: [1],
       melhoria: [],
       dadosme: [1],
+      dadose: [1],
+      encanto: [],
+      dadoseie: [1],
+      especifico: [],
+      dadosa: [1],
+      nivel_m: [],
     });
   }
 
@@ -186,6 +215,41 @@ export class TabelaGeracaoTesourosComponent {
 
     for (let i = 1; i <= dados; i++) {
       this.detalhesMelhorias.push(this.equipmentTreasureGenerator.gerarIndividualMelhorias(equipamento));
+    }
+  }
+
+  gerarEncanto() {
+    const dados = this.formulario.get('dadose')?.value;
+    const equipamento = this.formulario.get('encanto')?.value;
+
+    this.detalhesEncantos = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesEncantos.push(this.magicEquipmentTreasureGenerator.gerarIndividualEncantos(equipamento));
+    }
+  }
+
+  gerarItemEspecifico() {
+    const dados = this.formulario.get('dadoseie')?.value;
+    const equipamento = this.formulario.get('especifico')?.value;
+
+    this.detalhesItensEspecfificos = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesItensEspecfificos.push(
+        this.magicEquipmentTreasureGenerator.gerarIndividualItensEspecifico(equipamento)
+      );
+    }
+  }
+
+  gerarAcessorio() {
+    const dados = this.formulario.get('dadosa')?.value;
+    const nivel = this.formulario.get('nivel_m')?.value;
+
+    this.detalhesAcessorios = [];
+
+    for (let i = 1; i <= dados; i++) {
+      this.detalhesAcessorios.push(this.magicEquipmentTreasureGenerator.gerarIndividualAcessorio(nivel));
     }
   }
 
@@ -255,6 +319,21 @@ export class TabelaGeracaoTesourosComponent {
 
   get dadosRangeMe() {
     const n = this.formulario.get('dadosme')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
+  }
+
+  get dadosRangeE() {
+    const n = this.formulario.get('dadose')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
+  }
+
+  get dadosRangeIe() {
+    const n = this.formulario.get('dadosie')?.value || 0;
+    return Array.from({ length: n }, (_, i) => i);
+  }
+
+  get dadosRangeA() {
+    const n = this.formulario.get('dadosa')?.value || 0;
     return Array.from({ length: n }, (_, i) => i);
   }
 

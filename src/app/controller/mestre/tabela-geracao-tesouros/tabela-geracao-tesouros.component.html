@@ -653,7 +653,7 @@
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
               {{ 'MELHORIAS' }}
@@ -875,6 +875,525 @@
                       </thead>
                       <tbody>
                         @for (item of melhoriasSuperioresMaterialEspecial; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                </mat-tab-group>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-sm-12 mb-4">
+          <mat-card class="card-game">
+            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              {{ 'ENCANTOS' }}
+            </mat-card-title>
+            <mat-card-content>
+              <div class="row mt-4">
+                <mat-tab-group>
+                  <mat-tab label="Geração">
+                    <div class="content mt-2">
+                      @if (detalhesTesouroDinheiro) {
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                          </div>
+                        </div>
+                      }
+                      <!-- <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
+                          </b>
+                        </label> -->
+                      <div class="row">
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="form-field text-field-formulario-edicao">
+                            <mat-label>Qtd. Dados</mat-label>
+                            <input formControlName="dadose" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="select-dobrado">
+                            <mat-label>Equipamento para Encanto</mat-label>
+                            <mat-select formControlName="encanto">
+                              @for (melhoria of melhorias; track melhoria) {
+                                <mat-option [value]="melhoria">{{ melhoria | fraction }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row"></div>
+                      <div class="row mb-4">
+                        <div class="col-sm-12">
+                          <section>
+                            <div class="button-row d-flex justify-content-end">
+                              <button
+                                class="me-2"
+                                (click)="gerarEncanto()"
+                                [disabled]="!this.formulario.get('encanto')?.value"
+                                mat-flat-button>
+                                Gerar Encantos
+                              </button>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                      @for (item of dadosRangeM; track item) {
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5><b>ENCANTOS</b></h5>
+                            <hr />
+                            <div style="color: white !important" [innerHTML]="detalhesEncantos[item]"></div>
+                          </div>
+                        </div>
+                      }
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Armas">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of encantoArma; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                  <mat-tab label="Armaduras">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of encantoArmadura; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                  <mat-tab label="Esotéricos">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of encantoEsoterico; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                </mat-tab-group>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-sm-12 mb-4">
+          <mat-card class="card-game">
+            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              {{ 'EQUIPAMENTOS MÁGICOS ESPECÍFICOS' }}
+            </mat-card-title>
+            <mat-card-content>
+              <div class="row mt-4">
+                <mat-tab-group>
+                  <mat-tab label="Geração">
+                    <div class="content mt-2">
+                      @if (detalhesTesouroDinheiro) {
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                          </div>
+                        </div>
+                      }
+                      <!-- <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
+                          </b>
+                        </label> -->
+                      <div class="row">
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="form-field text-field-formulario-edicao">
+                            <mat-label>Qtd. Dados</mat-label>
+                            <input formControlName="dadoseie" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="select-dobrado">
+                            <mat-label>Equipamento Mágico</mat-label>
+                            <mat-select formControlName="especifico">
+                              @for (melhoria of melhorias; track melhoria) {
+                                <mat-option [value]="melhoria">{{ melhoria | fraction }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row"></div>
+                      <div class="row mb-4">
+                        <div class="col-sm-12">
+                          <section>
+                            <div class="button-row d-flex justify-content-end">
+                              <button
+                                class="me-2"
+                                (click)="gerarItemEspecifico()"
+                                [disabled]="!this.formulario.get('especifico')?.value"
+                                mat-flat-button>
+                                Gerar Equipamentos Mágicos Específicos
+                              </button>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                      @for (item of dadosRangeM; track item) {
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5><b>EQUIPAMENTOS MÁGICOS ESPECÍFICOS</b></h5>
+                            <hr />
+                            <div style="color: white !important" [innerHTML]="detalhesItensEspecfificos[item]"></div>
+                          </div>
+                        </div>
+                      }
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Armas">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of armaMagica; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                  <mat-tab label="Armaduras">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of armaduraMagica; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                  <mat-tab label="Esotéricos">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of esotericoMagico; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                </mat-tab-group>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-sm-12 mb-4">
+          <mat-card class="card-game">
+            <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              {{ 'ACESSÓRIOS MÁGICOS' }}
+            </mat-card-title>
+            <mat-card-content>
+              <div class="row mt-4">
+                <mat-tab-group>
+                  <mat-tab label="Geração">
+                    <div class="content mt-2">
+                      @if (detalhesTesouroDinheiro) {
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                          </div>
+                        </div>
+                      }
+                      <!-- <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
+                          </b>
+                        </label> -->
+                      <div class="row">
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="form-field text-field-formulario-edicao">
+                            <mat-label>Qtd. Dados</mat-label>
+                            <input formControlName="dadosa" matInput type="text" />
+                          </mat-form-field>
+                        </div>
+                        <div class="col-sm-6 mt-4">
+                          <mat-form-field class="select-dobrado">
+                            <mat-label>Nível do Acessório</mat-label>
+                            <mat-select formControlName="nivel_m">
+                              @for (nivel of nivel_magico; track nivel) {
+                                <mat-option [value]="nivel">{{ nivel }}</mat-option>
+                              }
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row"></div>
+                      <div class="row mb-4">
+                        <div class="col-sm-12">
+                          <section>
+                            <div class="button-row d-flex justify-content-end">
+                              <button
+                                class="me-2"
+                                (click)="gerarAcessorio()"
+                                [disabled]="!this.formulario.get('nivel_m')?.value"
+                                mat-flat-button>
+                                Gerar Item Específico
+                              </button>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                      @for (item of dadosRangeM; track item) {
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5><b>ACESSÓRIOS MÁGICOS</b></h5>
+                            <hr />
+                            <div style="color: white !important" [innerHTML]="detalhesAcessorios[item]"></div>
+                          </div>
+                        </div>
+                      }
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Acessórios Menores">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of acessorioMenor; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                  <mat-tab label="Acessórios Médios">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of acessorioMedio; track $index) {
+                          <tr>
+                            <td class="text-center">
+                              {{ item.id }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.nome }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.livro }}
+                            </td>
+
+                            <td class="text-center">
+                              {{ item.pagina }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </mat-tab>
+                  <mat-tab label="Acessórios Maiores">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dado</th>
+                          <th>Item</th>
+                          <th>Livro</th>
+                          <th>Página</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (item of acessorioMaior; track $index) {
                           <tr>
                             <td class="text-center">
                               {{ item.id }}
@@ -1295,7 +1814,7 @@
             </mat-card>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-sm-4">
             <mat-card class="card-game">
               <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
@@ -1774,6 +2293,527 @@
                         </thead>
                         <tbody>
                           @for (item of melhoriasSuperioresMaterialEspecial; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-sm-4">
+            <mat-card class="card-game">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ 'ENCANTOS' }}
+              </mat-card-title>
+              <mat-card-content>
+                <div class="row mt-4">
+                  <mat-tab-group>
+                    <mat-tab label="Geração">
+                      <div class="content mt-2">
+                        @if (detalhesTesouroDinheiro) {
+                          <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                                <mat-icon>download</mat-icon>
+                              </span>
+                            </div>
+                          </div>
+                        }
+                        <!-- <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
+                          </b>
+                        </label> -->
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Qtd. Dados</mat-label>
+                              <input formControlName="dadose" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>Equipamento para Encanto</mat-label>
+                              <mat-select formControlName="encanto">
+                                @for (melhoria of melhorias; track melhoria) {
+                                  <mat-option [value]="melhoria">{{ melhoria | fraction }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row mb-4">
+                          <div class="col-sm-12">
+                            <section>
+                              <div class="button-row d-flex justify-content-end">
+                                <button
+                                  class="me-2"
+                                  (click)="gerarEncanto()"
+                                  [disabled]="!this.formulario.get('encanto')?.value"
+                                  mat-flat-button>
+                                  Gerar Encantos
+                                </button>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        @for (item of dadosRangeM; track item) {
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h5><b>ENCANTOS</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesEncantos[item]"></div>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="Armas">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of encantoArma; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Armaduras">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of encantoArmadura; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Esotéricos">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of encantoEsoterico; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-sm-4">
+            <mat-card class="card-game">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ 'EQUIPAMENTOS MÁGICOS ESPECÍFICOS' }}
+              </mat-card-title>
+              <mat-card-content>
+                <div class="row mt-4">
+                  <mat-tab-group>
+                    <mat-tab label="Geração">
+                      <div class="content mt-2">
+                        @if (detalhesTesouroDinheiro) {
+                          <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                                <mat-icon>download</mat-icon>
+                              </span>
+                            </div>
+                          </div>
+                        }
+                        <!-- <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
+                          </b>
+                        </label> -->
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Qtd. Dados</mat-label>
+                              <input formControlName="dadoseie" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>Equipamento Mágico</mat-label>
+                              <mat-select formControlName="especifico">
+                                @for (melhoria of melhorias; track melhoria) {
+                                  <mat-option [value]="melhoria">{{ melhoria | fraction }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row mb-4">
+                          <div class="col-sm-12">
+                            <section>
+                              <div class="button-row d-flex justify-content-end">
+                                <button
+                                  class="me-2"
+                                  (click)="gerarItemEspecifico()"
+                                  [disabled]="!this.formulario.get('especifico')?.value"
+                                  mat-flat-button>
+                                  Gerar Equipamentos Mágicos Específicos
+                                </button>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        @for (item of dadosRangeM; track item) {
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h5><b>EQUIPAMENTOS MÁGICOS ESPECÍFICOS</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesItensEspecfificos[item]"></div>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="Armas">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of armaMagica; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Armaduras">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of armaduraMagica; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Esotéricos">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of esotericoMagico; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                  </mat-tab-group>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-sm-4">
+            <mat-card class="card-game">
+              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+                {{ 'ACESSÓRIOS MÁGICOS' }}
+              </mat-card-title>
+              <mat-card-content>
+                <div class="row mt-4">
+                  <mat-tab-group>
+                    <mat-tab label="Geração">
+                      <div class="content mt-2">
+                        @if (detalhesTesouroDinheiro) {
+                          <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-end">
+                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
+                                <mat-icon>download</mat-icon>
+                              </span>
+                            </div>
+                          </div>
+                        }
+                        <!-- <label>
+                          <b class="negrito-centralizado" style="text-justify: center !important">
+                            SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
+                          </b>
+                        </label> -->
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="form-field text-field-formulario-edicao">
+                              <mat-label>Qtd. Dados</mat-label>
+                              <input formControlName="dadosa" matInput type="text" />
+                            </mat-form-field>
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <mat-form-field class="select-dobrado">
+                              <mat-label>Nível do Acessório</mat-label>
+                              <mat-select formControlName="nivel_m">
+                                @for (nivel of nivel_magico; track nivel) {
+                                  <mat-option [value]="nivel">{{ nivel }}</mat-option>
+                                }
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row mb-4">
+                          <div class="col-sm-12">
+                            <section>
+                              <div class="button-row d-flex justify-content-end">
+                                <button
+                                  class="me-2"
+                                  (click)="gerarAcessorio()"
+                                  [disabled]="!this.formulario.get('nivel_m')?.value"
+                                  mat-flat-button>
+                                  Gerar Item Específico
+                                </button>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        @for (item of dadosRangeM; track item) {
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h5><b>ACESSÓRIOS MÁGICOS</b></h5>
+                              <hr />
+                              <div style="color: white !important" [innerHTML]="detalhesAcessorios[item]"></div>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </mat-tab>
+                    <mat-tab label="Acessórios Menores">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of acessorioMenor; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Acessórios Médios">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of acessorioMedio; track $index) {
+                            <tr>
+                              <td class="text-center">
+                                {{ item.id }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.nome }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.livro }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ item.pagina }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    </mat-tab>
+                    <mat-tab label="Acessórios Maiores">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Dado</th>
+                            <th>Item</th>
+                            <th>Livro</th>
+                            <th>Página</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (item of acessorioMaior; track $index) {
                             <tr>
                               <td class="text-center">
                                 {{ item.id }}
