@@ -281,9 +281,7 @@ export class TabelaGeracaoTesourosComponent {
     this.detalhesTesouroDinheiro.push(retorno.report!);
 
     if (this.formulario.get('tipo')?.value === 'DOBRO') {
-      this.detalhesTesouroDinheiro.push(
-        this.detalhesTesouroDinheiro + '<br /><br />' + this.treasureService.generate(contexto).report!
-      );
+      this.detalhesTesouroDinheiro.push(this.treasureService.generate(contexto).report!);
     }
   }
 
