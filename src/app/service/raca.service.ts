@@ -4,7 +4,8 @@ import { forkJoin, map, Observable, of, switchMap } from 'rxjs';
 import { Raca } from '../model/raca';
 import { AbstractService } from './abstract.service';
 
-export const FILTROS_RACA = ['nome', 'tipo', 'tamanho', 'deslocamentos', 'sentidos', 'descricao'];
+export const FILTROS_RACA = ['nome', 'tipo', 'tamanho', 'deslocamento', 'sentido'];
+//'tamanho', 'deslocamentos', 'sentidos', 'descricao'
 @Injectable({
   providedIn: 'root',
 })
@@ -14,13 +15,17 @@ export class RacaService extends AbstractService {
   }
 
   listar(filtro: any): Observable<Raca[]> {
-    let listas = this.http.get<Raca[]>(this.url);
+    let listas = this.getAll();
     return this.filtrar(filtro, listas, FILTROS_RACA);
   }
 
   consult(filtro: any): Observable<Raca[]> {
-    let listas = this.http.get<Raca[]>(this.url);
+    let listas = this.getAll();
     return this.filtrar(filtro, listas, FILTROS_RACA);
+  }
+
+  getAll(): Observable<Raca[]> {
+    return this.http.get<Raca[]>(this.url);
   }
 
   getHistoria(raca: Raca): Observable<string> {

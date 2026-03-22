@@ -13,13 +13,13 @@ export class ClasseFacadeService {
     private readonly poderService: PoderService
   ) {}
 
-  consult(filtro: any, searchColumn: string[]): Observable<any[]> {
+  consult(filtro: any): Observable<any[]> {
     let result = null;
     if (filtro && Object.keys(filtro).length > 0) {
-      let listas = this.classeService.consult({});
+      let listas = this.classeService.getAll();
       result = this.classeService.filtrar(filtro, listas, FILTROS_CLASSE);
     } else {
-      result = this.classeService.consult({});
+      result = this.classeService.getAll();
     }
     return result;
   }

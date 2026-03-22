@@ -398,3 +398,9 @@ tr.element-row:not(.example-expanded-row):active {
   padding: 3% !important;
   text-align: justify !important;
 }
+
+.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label {
+  position: relative;
+  font-family: 'Oswald' !important;
+  color: rgb(68, 5, 18) !important;
+}

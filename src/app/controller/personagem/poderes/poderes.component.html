@@ -1,9 +1,18 @@
 <app-card-search
   name="Poderes"
   [service]="poderesService"
-  [searchColumn]="['nome', 'descrição', 'referências', 'tipo']"
+  [searchColumn]="[]"
   [colsGrid]="3"
   [rowHeight]="350"
+  [suggestions]="[
+    'Poder de Combate',
+    'Poder de Destino',
+    'Poder de Magia',
+    'Poder Concedido',
+    'Poder da Tormenta',
+    'Poder de Raça',
+    'Poder de Grupo',
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

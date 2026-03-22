@@ -1,4 +1,4 @@
-import { map, Observable, of, isObservable } from 'rxjs';
+import { map, Observable, of } from 'rxjs';
 
 const baseUrl = 'api/';
 
@@ -19,15 +19,19 @@ export class AbstractService {
     return result;
   }
 
-  filtrar(filtro: any, objetos: any, campos: string[]): Observable<any[]> {
-    // Se objetos NÃO for observable, convertemos para observable
+  filtrar(filtro: string, objetos: any, campos: string[]): Observable<any[]> {
     const fonte$: Observable<any[]> = objetos instanceof Observable ? objetos : of(objetos);
 
     return fonte$.pipe(
       map((resultado: any[]) => {
-        const temFiltroValido = filtro && Object.values(filtro).some(v => v !== null && v !== undefined && v !== '');
+        if (!filtro || String(filtro).trim() === '') return resultado;
 
-        if (!temFiltroValido) return resultado;
+        const clausulas = String(filtro)
+          .split(';')
+          .map(c => this.normalizar(c))
+          .filter(c => c.length > 0);
+
+        if (clausulas.length === 0) return resultado;
 
         return resultado.filter(item => {
           const valoresItem = campos
@@ -35,18 +39,15 @@ export class AbstractService {
               const valor = item[campo];
 
               if (valor === null || valor === undefined) return [];
+
               if (Array.isArray(valor)) return valor;
-              return valor.toString();
+
+              return [valor];
             })
-            .join(' ')
-            .toUpperCase();
+            .map(v => this.normalizar(String(v)))
+            .join(' ');
 
-          return Object.values(filtro).some(valorFiltro => {
-            if (valorFiltro === null || valorFiltro === undefined || valorFiltro === '') return true;
-
-            const filtroStr = String(valorFiltro).toUpperCase();
-            return valoresItem.includes(filtroStr);
-          });
+          return clausulas.every(clausula => valoresItem.includes(clausula));
         });
       })
     );
@@ -55,8 +56,8 @@ export class AbstractService {
   private normalizar(valor: string): string {
     return valor
       .toLowerCase()
-      .normalize('NFD') // separa acentos
-      .replace(/[\u0300-\u036f]/g, '') // remove acentos
-      .replace(/[^a-z0-9]/g, ''); // remove tudo que não é letra ou número
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]/g, '');
   }
 }

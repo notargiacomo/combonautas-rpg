@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Magia } from '../model/magia';
 import { AbstractService } from './abstract.service';
 
-export const FILTROS_MAGIA = ['nome', 'tipo', 'circulo', 'escola', 'execucao', 'alcance', 'duracao', 'descricao'];
+export const FILTROS_MAGIA = ['nome', 'tipo', 'circulo', 'escola', 'execucao', 'alcance', 'duracao'];
 @Injectable({
   providedIn: 'root',
 })

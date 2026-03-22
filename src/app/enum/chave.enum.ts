@@ -402,11 +402,11 @@ export enum Chave {
   CONDUCAO = 'CONDUÇÃO',
 
   // DESLOCAMENTO
-  DESLOCAMENTO_TERRESTRE = 'TERRESTRE',
-  DESLOCAMENTO_ESCALADA = 'ESCALADA',
-  DESLOCAMENTO_VOO = 'VOO',
-  DESLOCAMENTO_NATACAO = 'NATAÇÃO',
-  DESLOCAMENTO_ESCAVACAO = 'ESCAVAÇÃO',
+  DESLOCAMENTO_TERRESTRE = 'Terrestre',
+  DESLOCAMENTO_ESCALADA = 'Escalada',
+  DESLOCAMENTO_VOO = 'Voo',
+  DESLOCAMENTO_NATACAO = 'Natação',
+  DESLOCAMENTO_ESCAVACAO = 'Escavação',
 
   // VARIANTES DE TERRENO
   COBERTURA_LEVE = 'COBERTURA LEVE',
@@ -536,21 +536,20 @@ export enum Chave {
   MESTRE = 'MESTRE',
 
   // TIPOS DE PARCEIROS
-  PARCEIRO_ADEPTO = "ADEPTO",
-  PARCEIRO_AJUDANTE = "AJUDANTE",
-  PARCEIRO_ASSASSINO = "ASSASSINO",
-  PARCEIRO_ATIRADOR = "ATIRADOR",
-  PARCEIRO_BESTA_CARGA = "BESTA DE CARGA",
-  PARCEIRO_COMBATENTE = "COMBATENTE",
-  PARCEIRO_DESTRUIDOR = "DESTRUIDOR",
-  PARCEIRO_FORTAO = "FORTÃO",
-  PARCEIRO_GUARDIAO = "GUARDIÃO",
-  PARCEIRO_MAGIVOCADOR = "MAGIVOCADOR",
-  PARCEIRO_MEDICO = "MÉDICO",
-  PARCEIRO_PERSEGUIDOR = "PERSEGUIDOR",
-  PARCEIRO_VIGILANTE = "VIGILANTE",
+  PARCEIRO_ADEPTO = 'ADEPTO',
+  PARCEIRO_AJUDANTE = 'AJUDANTE',
+  PARCEIRO_ASSASSINO = 'ASSASSINO',
+  PARCEIRO_ATIRADOR = 'ATIRADOR',
+  PARCEIRO_BESTA_CARGA = 'BESTA DE CARGA',
+  PARCEIRO_COMBATENTE = 'COMBATENTE',
+  PARCEIRO_DESTRUIDOR = 'DESTRUIDOR',
+  PARCEIRO_FORTAO = 'FORTÃO',
+  PARCEIRO_GUARDIAO = 'GUARDIÃO',
+  PARCEIRO_MAGIVOCADOR = 'MAGIVOCADOR',
+  PARCEIRO_MEDICO = 'MÉDICO',
+  PARCEIRO_PERSEGUIDOR = 'PERSEGUIDOR',
+  PARCEIRO_VIGILANTE = 'VIGILANTE',
   PARCEIRO_MONTARIA = 'MONTARIA',
-  
 
   // RARIDADE ITEM
   EXTREMAMENTE_RARO = 'EXTREMAMENTE RARO',
@@ -593,17 +592,15 @@ export enum Chave {
   UMA_HORA = 'UMA HORA',
   VARIAVEL = 'VARIÁVEL',
 
-
-
   HABILIDADE_VESTUARIO_CONTA_COMO_ARMA = 'CONTA COMO ARMA',
   ATAQUE_DESARMADO = 'LETAL',
 
   // ITEM MÁGICO
-  ITEM_MAGICO_MENOR = "Item Mágico Menor",
-  ITEM_MAGICO_MEDIO = "Item Mágico Médio", 
-  ITEM_MAGICO_MAIOR = "Item Mágico Maior",
-  ITEM_LITURGICO = "Item Litúrgico",
-  
+  ITEM_MAGICO_MENOR = 'Item Mágico Menor',
+  ITEM_MAGICO_MEDIO = 'Item Mágico Médio',
+  ITEM_MAGICO_MAIOR = 'Item Mágico Maior',
+  ITEM_LITURGICO = 'Item Litúrgico',
+
   SOB_MEDIDA = 'SOB MEDIDA',
 
   // REGIÃO
@@ -665,18 +662,15 @@ export enum Chave {
   TERRENO_URBANO = 'URBANO',
   TERRENO_ARTICO = 'ÁRTICO',
   TERRENO_CEU = 'CEU',
-
 }
 
 export function chaveToString(chave: Chave): string {
-  let chaveEncontrada = Object.keys(Chave).find(
-    (key) => Chave[key as keyof typeof Chave] === chave
-  );
+  let chaveEncontrada = Object.keys(Chave).find(key => Chave[key as keyof typeof Chave] === chave);
   return chaveEncontrada ? chaveEncontrada.split('_').join(' ') : '';
 }
 
 export function getPrefixo(prefixo: string): string[] {
   return Object.keys(Chave)
-    .filter((key) => key.startsWith(prefixo)) 
-    .map((key) => Chave[key as keyof typeof Chave]);
+    .filter(key => key.startsWith(prefixo))
+    .map(key => Chave[key as keyof typeof Chave]);
 }

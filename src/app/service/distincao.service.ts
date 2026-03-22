@@ -20,6 +20,10 @@ export class DistincaoService extends AbstractService {
     return this.http.get<any>(this.url + id);
   }
 
+  getAll(): Observable<Distincao[]> {
+    return this.http.get<Distincao[]>(this.url);
+  }
+
   consult(filtro: any): Observable<Distincao[]> {
     let listas = this.http.get<Distincao[]>(this.url);
     return this.filtrar(filtro, listas, ['nome']);

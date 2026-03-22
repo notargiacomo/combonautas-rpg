@@ -13,7 +13,7 @@ export class DistincaoFacadeService {
 
   consult(filtro: any, searchColumn: string[]): Observable<any[]> {
     return forkJoin({
-      distincoes: this.distincaoService.consult({}),
+      distincoes: this.distincaoService.getAll(),
       poderes: this.poderService.listAll(),
     }).pipe(
       map(({ distincoes, poderes }) =>

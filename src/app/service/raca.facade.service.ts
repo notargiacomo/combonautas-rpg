@@ -12,13 +12,13 @@ export class RacaFacadeService {
     private readonly poderService: PoderService
   ) {}
 
-  consult(filtro: any, searchColumn: string[]): Observable<any[]> {
+  consult(filtro: any): Observable<any[]> {
     let result = null;
     if (filtro && Object.keys(filtro).length > 0) {
-      let listas = this.racaService.consult({});
+      let listas = this.racaService.getAll();
       result = this.racaService.filtrar(filtro, listas, FILTROS_RACA);
     } else {
-      result = this.racaService.consult({});
+      result = this.racaService.getAll();
     }
     return result;
   }

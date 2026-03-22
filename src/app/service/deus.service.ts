@@ -24,4 +24,8 @@ export class DeusService extends AbstractService {
   consult(filtro: any): Observable<Deus[]> {
     return this.filtrar(filtro, this.http.get<Deus[]>(this.url), ['nome', 'descricao', 'referencias']);
   }
+
+  getAll(): Observable<Deus[]> {
+    return this.http.get<Deus[]>(this.url);
+  }
 }

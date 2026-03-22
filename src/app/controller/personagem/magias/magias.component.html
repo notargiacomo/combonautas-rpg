@@ -1,9 +1,48 @@
 <app-card-search
   name="Magias"
   [service]="service"
-  [searchColumn]="['nome', 'tipo', 'circulo', 'escola', 'execucao', 'alcance', 'duracao', 'descricao']"
-  [colsGrid]="2"
-  [rowHeight]="900"
+  [searchColumn]="[]"
+  [colsGrid]="3"
+  [rowHeight]="600"
+  [suggestions]="[
+    'Arcana',
+    'Divina',
+    'Universal',
+    'Abjuração',
+    'Adivinhação',
+    'Convocação',
+    'Encantamento',
+    'Evocação',
+    'Ilusão',
+    'Necromancia',
+    'Transmutação',
+    '1º Círculo',
+    '2º Círculo',
+    '3º Círculo',
+    '4º Círculo',
+    '5º Círculo',
+    'Livre',
+    'Reação',
+    'Movimento',
+    'Padrão',
+    'Completa',
+    'Rodada',
+    'Fortitude',
+    'Reflexos',
+    'Vontade',
+    'Instantânea',
+    'Um turno',
+    'Uma rodada',
+    'Sustentada',
+    'Cena',
+    'Um dia',
+    'Permanente',
+    'Pessoal',
+    'Toque',
+    'Curto',
+    'Médio',
+    'Longo',
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
@@ -70,35 +109,7 @@
               </div>
               @for (aprimoramento of item.aprimoramentos; track aprimoramento.id) {
                 <div class="row">
-                  <!-- <div class="d-flex flex-wrap gap-2">
-                    <button class="btn btn-sm btn-outline-secondary" disabled>
-                      {{ 'Execução: ' + aprimoramento.execucao }}
-                    </button>
-                    <button class="btn btn-sm btn-outline-secondary" disabled>
-                      {{ 'Alcance: ' + aprimoramento.alcance }}
-                    </button>
-                    <button class="btn btn-sm btn-outline-secondary" disabled>
-                      {{ 'Alvo: ' + aprimoramento.alvo }}
-                    </button>
-                    <button class="btn btn-sm btn-outline-secondary" disabled>
-                      {{ 'Duração: ' + aprimoramento.duracao }}
-                    </button>
-                    <button *ngIf="aprimoramento.pericia_resistencia" class="btn btn-sm btn-outline-secondary" disabled>
-                      {{
-                        aprimoramento.metodo_resistencia
-                          ? 'Resistência: ' + aprimoramento.pericia_resistencia + ' ' + aprimoramento.metodo_resistencia
-                          : 'Resistência: ' + aprimoramento.pericia_resistencia + ' '
-                      }}
-                    </button>
-                    @for (traco_aprimoramento of aprimoramento.tracos; track traco_aprimoramento) {
-                      <button class="btn btn-sm btn-outline-secondary" disabled>
-                        {{ traco_aprimoramento }}
-                      </button>
-                    }
-                  </div> -->
                   <div class="col-sm-12 mt-2" [innerHTML]="aprimoramento.descricao"></div>
-                  <!-- <div class="col-sm-6 mt-4 d-flex justify-content-end"></div> -->
-                  <!-- <hr /> -->
                 </div>
               }
             </div>

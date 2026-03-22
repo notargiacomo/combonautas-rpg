@@ -1,9 +1,27 @@
 <app-card-search
   name="Raças"
   [service]="racaService"
-  [searchColumn]="['nome', 'tipo', 'tamanho', 'deslocamento', 'sentidos', 'devoção']"
+  [searchColumn]="['nome', 'tipo', 'tamanho', 'deslocamento', 'sentido']"
   [colsGrid]="2"
   [rowHeight]="900"
+  [suggestions]="[
+    'Humanóide',
+    'Espírito',
+    'Monstro',
+    'Morto-Vivo',
+    'Construto',
+    'Minúsculo',
+    'Pequeno',
+    'Médio',
+    'Grande',
+    'Terrestre',
+    'Escalada',
+    'Voo',
+    'Natação',
+    'Olfato Aguçado',
+    'Visão na Penumbra',
+    'Visão no Escuro',
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
