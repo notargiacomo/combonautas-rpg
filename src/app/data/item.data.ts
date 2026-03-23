@@ -6,7 +6,6 @@ import { Tamanho } from '../enum/tamanho.enum';
 import { TipoDano } from '../enum/tipo.dano.enum';
 import { TipoItem } from '../enum/tipo.item.enum';
 import { Item } from '../model/item';
-import { TipoAlquimico } from '../enum/tipo.alquimico.enum';
 
 @Injectable({
   providedIn: 'root',

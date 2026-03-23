@@ -1,9 +1,34 @@
 <app-card-search
   name="Armas & Munições"
   [service]="service"
-  [searchColumn]="['nome', 'descrição', 'livro']"
+  [searchColumn]="['nome', 'chave', 'tipo de dano']"
   [colsGrid]="3"
   [rowHeight]="600"
+  [suggestions]="[
+    'Arma Simples',
+    'Arma Marcial',
+    'Arma Exótica',
+    'Arma de Fogo',
+    'Ataque corpo a corpo',
+    'Ataque a distância',
+    'Arma Leve',
+    'Arma de uma mão',
+    'Arma de duas mãos',
+    'Corte',
+    'Perfuração',
+    'Impacto',
+    'Ácido',
+    'Adaptável',
+    'Ágil',
+    'Alongada',
+    'Desbalanceada',
+    'Dupla',
+    'Híbrida',
+    'Versátil',
+    'Alcance',
+    'Ocultável',
+    'Surpreendente',
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

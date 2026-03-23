@@ -8,14 +8,15 @@ import { AbstractService } from './abstract.service';
 @Injectable({
   providedIn: 'root',
 })
-export class ItemService extends AbstractService{
-
-  constructor(private readonly itemData: ItemData, private readonly http: HttpClient
+export class ItemService extends AbstractService {
+  constructor(
+    private readonly itemData: ItemData,
+    private readonly http: HttpClient
   ) {
     super('item/');
   }
 
-  listar(filtro:any): Observable<Item[]> {
-    return this.http.get<Item[]>(this.url,{params:this.removeBlankAttributes(filtro)});
+  listar(filtro: any): Observable<Item[]> {
+    return this.http.get<Item[]>(this.url, { params: this.removeBlankAttributes(filtro) });
   }
 }
