@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 import { Deus } from '@app/model/deus';
 
+export const FILTROS_DEUS = ['nome', 'canalizaEnergia'];
+
 @Injectable({
   providedIn: 'root',
 })
@@ -14,7 +16,7 @@ export class DeusService extends AbstractService {
 
   listar(filtro: any): Observable<Deus[]> {
     const lista = this.http.get<Deus[]>(this.url);
-    return this.filtrar(filtro, lista, ['nome']);
+    return this.filtrar(filtro, lista, FILTROS_DEUS);
   }
 
   getById(id: number): Observable<Deus> {
@@ -22,7 +24,7 @@ export class DeusService extends AbstractService {
   }
 
   consult(filtro: any): Observable<Deus[]> {
-    return this.filtrar(filtro, this.http.get<Deus[]>(this.url), ['nome', 'descricao', 'referencias']);
+    return this.filtrar(filtro, this.http.get<Deus[]>(this.url), FILTROS_DEUS);
   }
 
   getAll(): Observable<Deus[]> {

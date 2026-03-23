@@ -4,6 +4,8 @@ import { Complicacao } from '@app/model/complicacao';
 import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 
+export const FILTROS_COMPLICACAO = ['nome'];
+
 @Injectable({
   providedIn: 'root',
 })
@@ -14,11 +16,11 @@ export class ComplicacaoService extends AbstractService {
 
   listar(filtro: any): Observable<Complicacao[]> {
     let listas = this.http.get<Complicacao[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_COMPLICACAO);
   }
 
   consult(filtro: any, searchColumn: string[]): Observable<Complicacao[]> {
     let listas = this.http.get<Complicacao[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_COMPLICACAO);
   }
 }

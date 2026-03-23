@@ -1,10 +1,10 @@
 <app-card-search
   name="Perícias"
   [service]="periciasService"
-  [searchColumn]="['nome', 'descrição', 'atributo']"
+  [searchColumn]="['nome', 'atributo']"
   [colsGrid]="3"
   [rowHeight]="600"
-  [suggestions]="[]"
+  [suggestions]="['Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma']"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 import { Origem } from '../model/origem';
 
+export const FILTROS_ORIGEM = ['nome'];
 @Injectable({
   providedIn: 'root',
 })
@@ -14,11 +15,11 @@ export class OrigemService extends AbstractService {
 
   listar(filtro: any): Observable<Origem[]> {
     let listas = this.http.get<Origem[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'regiao', 'descricao', 'referencias']);
+    return this.filtrar(filtro, listas, FILTROS_ORIGEM);
   }
 
   consult(filtro: any): Observable<Origem[]> {
     let listas = this.http.get<Origem[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'regiao', 'descricao', 'referencias']);
+    return this.filtrar(filtro, listas, FILTROS_ORIGEM);
   }
 }

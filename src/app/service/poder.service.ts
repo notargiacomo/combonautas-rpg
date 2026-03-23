@@ -5,6 +5,7 @@ import { AbstractService } from './abstract.service';
 import { Poder } from '@app/model/poder';
 import { TipoPoder } from '@app/enum/tipo.poder.enum';
 
+export const FILTROS_PODER = ['nome', 'tipo'];
 @Injectable({
   providedIn: 'root',
 })
@@ -43,6 +44,6 @@ export class PoderService extends AbstractService {
 
   consult(filtro: any, searchColumn: string[]): Observable<Poder[]> {
     let listas = this.http.get<Poder[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao', 'referencias', 'tipo']);
+    return this.filtrar(filtro, listas, FILTROS_PODER);
   }
 }

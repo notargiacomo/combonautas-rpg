@@ -1,10 +1,10 @@
 <app-card-search
   name="Deuses"
   [service]="deusesService"
-  [searchColumn]="['nome', 'descricao', 'referencias']"
+  [searchColumn]="['nome', 'canaliza energia']"
   [colsGrid]="2"
   [rowHeight]="900"
-  [suggestions]="[]"
+  [suggestions]="['Positiva', 'Negativa', 'Qualquer']"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

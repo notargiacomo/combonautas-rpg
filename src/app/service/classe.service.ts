@@ -4,7 +4,7 @@ import { Classe } from '@app/model/classe';
 import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 
-export const FILTROS_CLASSE = ['nome', 'descricao'];
+export const FILTROS_CLASSE = ['nome', 'proficiencias'];
 @Injectable({
   providedIn: 'root',
 })
@@ -15,7 +15,7 @@ export class ClasseService extends AbstractService {
 
   listar(filtro: any): Observable<Classe[]> {
     let listas = this.http.get<Classe[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_CLASSE);
   }
 
   getbyId(id: number | undefined) {
@@ -27,6 +27,6 @@ export class ClasseService extends AbstractService {
   }
 
   consult(filtro: any): Observable<Classe[]> {
-    return this.filtrar(filtro, this.http.get<Classe[]>(this.url), ['nome', 'descricao']);
+    return this.filtrar(filtro, this.http.get<Classe[]>(this.url), FILTROS_CLASSE);
   }
 }

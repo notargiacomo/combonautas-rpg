@@ -1,10 +1,10 @@
 <app-card-search
   name="Classes"
   [service]="classesService"
-  [searchColumn]="['nome', 'descricao']"
+  [searchColumn]="['nome', 'proficiências']"
   [colsGrid]="2"
   [rowHeight]="900"
-  [suggestions]="[]"
+  [suggestions]="['Armas Marciais', 'Armaduras Pesadas', 'Escudos']"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
