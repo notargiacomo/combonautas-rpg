@@ -29,7 +29,7 @@ import { ItemMagico } from '../model/item.magico';
 import { Condicao } from '@app/model/condicao';
 import { CondicaoData } from './condicoes.data';
 import { TabelaGeracaoTesouroData } from './tabela.geracao.tesouro.data';
-import { TipoParceiroData } from './tipo.parceiro.data';
+import { ParceiroData } from './parceiro.data';
 import { Parceiro } from '@app/model/parceiro';
 import { ArtefatoData } from './artefato.data';
 import { AmeacaData } from './ameacas.data';
@@ -54,7 +54,7 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly distincaoData: DistincaoData,
     private readonly itemMagicoData: ItemMagicoData,
     private readonly tabelaGeracaoTesouroData: TabelaGeracaoTesouroData,
-    private readonly parceiroData: TipoParceiroData,
+    private readonly parceiroData: ParceiroData,
     private readonly artefatoData: ArtefatoData,
     private readonly ameacaData: AmeacaData
   ) {}

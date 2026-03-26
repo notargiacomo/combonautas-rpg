@@ -1,12 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Parceiro } from '@app/model/tipo.parceiro';
 import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
+import { Parceiro } from '@app/model/parceiro';
 
 export const FILTROS_PARCEIRO = [
   'nome',
-  'tipo',
   'chave',
 ];
 
@@ -20,11 +19,11 @@ export class ParceiroService extends AbstractService {
 
   listar(filtro: any): Observable<Parceiro[]> {
     let listas = this.http.get<Parceiro[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_PARCEIRO);
   }
 
   consult(filtro: any): Observable<Parceiro[]> {
     let listas = this.http.get<Parceiro[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_PARCEIRO);
   }
 }

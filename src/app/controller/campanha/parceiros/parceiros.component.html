@@ -1,9 +1,25 @@
 <app-card-search
   name="Parceiros"
   [service]="service"
-  [searchColumn]="['nome', 'descrição']"
+  [searchColumn]="['nome', 'chave']"
   [colsGrid]="3"
   [rowHeight]="450"
+  [suggestions]="[ 
+    'Pequeno',
+    'Médio', 
+    'Grande',
+    'Enorme', 
+    'Montaria', 
+    'Movimento Extra', 
+    'Besta de Carga', 
+    'Natação', 
+    'Familiar', 
+    'Especial', 
+    'Combatente',
+    'Perseguidor',
+    'Vigilante', 
+
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
