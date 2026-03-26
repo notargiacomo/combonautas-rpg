@@ -6,6 +6,12 @@ import { AbstractService } from './abstract.service';
 import { TipoItem } from '@app/enum/tipo.item.enum';
 import { Chave } from '@app/enum/chave.enum';
 
+export const FILTROS_ITENS_SUPERIORES = [
+  'nome',
+  'tipo',
+  'chave',
+];
+
 @Injectable({
   providedIn: 'root',
 })
@@ -20,7 +26,7 @@ export class ItensSuperioresService extends AbstractService {
 
   consult(filtro: any): Observable<Item[]> {
     let listas = this.http.get<Item[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao', 'tipo', 'referencias', 'chave']).pipe(
+    return this.filtrar(filtro, listas, FILTROS_ITENS_SUPERIORES).pipe(
       map(itens =>
         itens.filter(
           i =>

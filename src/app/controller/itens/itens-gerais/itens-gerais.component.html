@@ -1,9 +1,28 @@
 <app-card-search
   name="Itens Gerais"
   [service]="service"
-  [searchColumn]="['nome', 'descrição', 'livro', 'características', 'perícias que fabricam']"
+  [searchColumn]="['nome', 'tipo', 'chave']"
   [colsGrid]="3"
   [rowHeight]="450"
+  [suggestions]="[
+    'Ferramenta',
+    'Vestuário',
+    'Esotérico',
+    'Alquímico',
+    'Alimentação',
+    'Empunhado',
+    'Vestido',
+    'Serviço',
+    'Aparato',
+    'Arremesso',
+    'Consumível',
+    'Instrumento Musical',
+    'Ferramenta Requerida em Perícia',
+    'Ferramenta Requerida em Ação',
+    'Preparado',
+    'Catalizador',
+    'Veneno'
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

@@ -1,9 +1,11 @@
 <app-card-search
   name="Armaduras & Escudos"
   [service]="service"
-  [searchColumn]="['nome', 'descrição', 'livro']"
+  [searchColumn]="['nome', 'chave']"
   [colsGrid]="3"
   [rowHeight]="600"
+  [suggestions]="['Armadura Leve','Armadura Pesada','Escudo'
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

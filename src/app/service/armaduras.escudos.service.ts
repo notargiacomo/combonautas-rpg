@@ -6,7 +6,7 @@ import { AbstractService } from './abstract.service';
 import { TipoItem } from '@app/enum/tipo.item.enum';
 import { Chave } from '@app/enum/chave.enum';
 
-export const FILTROS_ARMADURAS_ESCUDOS = ['nome', 'descricao', 'tipo', 'referencias', 'chave'];
+export const FILTROS_ARMADURAS_ESCUDOS = ['nome', 'chave'];
 
 @Injectable({
   providedIn: 'root',

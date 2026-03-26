@@ -9631,7 +9631,6 @@ export class ItemData {
         alcance: 0,
         penalidade: 0,
         chave: [Chave.LIMITE_USO_EMPUNHADO, Chave.CONSUMIVEL, Chave.ARREMESSO],
-
         referencias: Referencia.BASICO,
         paginas: '151',
         tipo: TipoItem.EQUIPAMENTO_AVENTURA,
