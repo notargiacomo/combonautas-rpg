@@ -4,6 +4,12 @@ import { Observable } from 'rxjs';
 import { ItemMagico } from '../model/item.magico';
 import { AbstractService } from './abstract.service';
 
+export const FILTROS_ITEM_MAGICO = [
+  'nome',
+  'tipo',
+  'chave'
+];
+
 @Injectable({
   providedIn: 'root',
 })
@@ -17,6 +23,6 @@ export class ItemMagicoService extends AbstractService {
   }
 
   consult(filtro: any): Observable<ItemMagico[]> {
-    return this.filtrar(filtro, this.http.get<ItemMagico[]>(this.url), ['nome', 'descricao']);
+    return this.filtrar(filtro, this.http.get<ItemMagico[]>(this.url), FILTROS_ITEM_MAGICO);
   }
 }

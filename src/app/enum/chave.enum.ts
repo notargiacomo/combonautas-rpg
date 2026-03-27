@@ -145,7 +145,7 @@ export enum Chave {
   TIPO_ITEM_FERRAMENTA = 'Ferramenta',
   TIPO_ITEM_VESTUARIO = 'Vestuário',
   TIPO_ITEM_ESOTERICO = 'Esotérico',
-  TIPO_ITEM_ALQUIMICO = 'ALQUÍMICO',
+  TIPO_ITEM_ALQUIMICO = 'Alquímico',
   TIPO_ITEM_ALQUIMICO_PREPARADO = 'Preparado',
   TIPO_ITEM_ALQUIMICO_CATALIZADOR = 'Catalizador',
   TIPO_ITEM_ALQUIMICO_VENENO = 'Veneno',
@@ -237,7 +237,7 @@ export enum Chave {
   // PROPÓSITO DA ARMA
   ATAQUE_CORPO_A_CORPO = 'Ataque corpo a corpo',
   ATAQUE_A_DISTANCIA = 'Ataque a distância',
-  DISPARO = 'disparo',
+  DISPARO = 'Disparo',
   ARREMESSO = 'Arremesso',
 
   // MODIFICADORES DE ATAQUE E DANO

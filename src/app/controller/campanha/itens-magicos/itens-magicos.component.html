@@ -1,9 +1,25 @@
 <app-card-search
   name="Itens Mágicos"
   [service]="service"
-  [searchColumn]="['nome', 'descrição', 'livro']"
+  [searchColumn]="['nome', 'tipo', 'chave']"
   [colsGrid]="3"
   [rowHeight]="600"
+  [suggestions]="['Encanto','Arma', 'Armadura', 'Acessório', 'Esotérico',
+    'Item Mágico Menor',
+    'Item Mágico Médio',
+    'Item Mágico Maior',
+    'Item Litúrgico',
+    'Ataque corpo a corpo',
+    'Ataque a distância',
+    'Disparo',
+    'Arremesso',
+    'Armadura Leve',
+    'Armadura Pesada',
+    'Escudo',
+    'Empunhado',
+    'Vestido',
+    'Alquímico'
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

@@ -4,6 +4,10 @@ import { Artefato } from '@app/model/artefato';
 import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 
+export const FILTROS_ARTEFATO = [
+  'nome',
+];
+
 @Injectable({
   providedIn: 'root',
 })
@@ -14,11 +18,11 @@ export class ArtefatosService extends AbstractService {
 
   listar(filtro: any): Observable<Artefato[]> {
     let listas = this.http.get<Artefato[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_ARTEFATO);
   }
 
   consult(filtro: any): Observable<Artefato[]> {
     let listas = this.http.get<Artefato[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_ARTEFATO);
   }
 }

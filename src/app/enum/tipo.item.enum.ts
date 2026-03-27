@@ -1,5 +1,5 @@
 export enum TipoItem {
-    ARMA = "1. Arma",
+    ARMA = "Arma",
     MUNICAO = "2. Munição",
     ARMADURA = "3. Armadura",
     EQUIPAMENTO_AVENTURA = "Equipamento de Aventura",
@@ -14,8 +14,8 @@ export enum TipoItem {
     MELHORIA = "13. Melhoria",
     MATERIAL_ESPECIAL = "Material Especial", 
     ESCUDO = "15. Escudo", 
-    ENCANTO = "16. Encanto",
-    ACESSORIO = "17. Acessório",
+    ENCANTO = "Encanto",
+    ACESSORIO = "Acessório",
     ARTEFATO = "18. Artefato",
     APARATO = "Aparato"
 
