@@ -9757,6 +9757,7 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
+            aumenta: 0,
           },
           {
             id: 2,
