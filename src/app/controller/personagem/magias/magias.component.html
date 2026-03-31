@@ -165,9 +165,13 @@
                 @for (aprimoramento of item.aprimoramentos; track aprimoramento.id) {
                   <div class="col-sm-3 mt-2">
                     <div class="mt-3 d-flex flex-wrap gap-2" *ngIf="aprimoramento.e_aumenta">
-                      <button (click)="diminuiAprimoramento(aprimoramento, item)">-</button>
+                      <button (click)="diminuiAprimoramento(aprimoramento, item)" style="color: black !important">
+                        -
+                      </button>
                       <input size="1" [value]="aprimoramento.aumenta" disabled />
-                      <button (click)="aumentaAprimoramento(aprimoramento, item)">+</button>
+                      <button (click)="aumentaAprimoramento(aprimoramento, item)" style="color: black !important">
+                        +
+                      </button>
                     </div>
                     <div class="col-sm-3 mt-2">
                       <div class="d-flex flex-wrap gap-2" *ngIf="!aprimoramento.e_aumenta">
@@ -224,9 +228,13 @@
                 @for (aprimoramento of item.aprimoramentos; track aprimoramento.id) {
                   <div class="col-sm-3 mt-2">
                     <div class="mt-3 d-flex flex-wrap gap-2" *ngIf="aprimoramento.e_aumenta">
-                      <button (click)="diminuiAprimoramento(aprimoramento, item)">-</button>
+                      <button (click)="diminuiAprimoramento(aprimoramento, item)" style="color: black !important">
+                        -
+                      </button>
                       <input size="1" [value]="aprimoramento.aumenta" disabled />
-                      <button (click)="aumentaAprimoramento(aprimoramento, item)">+</button>
+                      <button (click)="aumentaAprimoramento(aprimoramento, item)" style="color: black !important">
+                        +
+                      </button>
                     </div>
                     <div class="col-sm-3 mt-2">
                       <div class="d-flex flex-wrap gap-2" *ngIf="!aprimoramento.e_aumenta">
@@ -283,9 +291,13 @@
                 @for (aprimoramento of item.aprimoramentos; track aprimoramento.id) {
                   <div class="col-sm-3 mt-2">
                     <div class="mt-3 d-flex flex-wrap gap-2" *ngIf="aprimoramento.e_aumenta">
-                      <button (click)="diminuiAprimoramento(aprimoramento, item)">-</button>
+                      <button (click)="diminuiAprimoramento(aprimoramento, item)" style="color: black !important">
+                        -
+                      </button>
                       <input size="1" [value]="aprimoramento.aumenta" disabled />
-                      <button (click)="aumentaAprimoramento(aprimoramento, item)">+</button>
+                      <button (click)="aumentaAprimoramento(aprimoramento, item)" style="color: black !important">
+                        +
+                      </button>
                     </div>
                     <div class="col-sm-3 mt-2">
                       <div class="d-flex flex-wrap gap-2" *ngIf="!aprimoramento.e_aumenta">
