@@ -4,6 +4,8 @@ import { map, Observable } from 'rxjs';
 import { Regra } from '../model/regra';
 import { AbstractService } from './abstract.service';
 
+export const FILTROS_REGRA = ['nome', 'descricao'];
+
 @Injectable({
   providedIn: 'root',
 })
@@ -14,6 +16,11 @@ export class RegraService extends AbstractService {
 
   listar(filtro: any): Observable<Regra[]> {
     let listas = this.http.get<Regra[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao', 'regras', 'referencia']);
+    return this.filtrar(filtro, listas, FILTROS_REGRA);
+  }
+
+  consult(filtro: any): Observable<Regra[]> {
+    let listas = this.http.get<Regra[]>(this.url);
+    return this.filtrar(filtro, listas, FILTROS_REGRA);
   }
 }

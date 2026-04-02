@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 import { Condicao } from '../model/condicao';
 
+export const FILTROS_CONDICAO = ['nome', 'descricao', 'tipo'];
+
 @Injectable({
   providedIn: 'root',
 })
@@ -14,6 +16,11 @@ export class CondicoesService extends AbstractService {
 
   listar(filtro: any): Observable<Condicao[]> {
     let listas = this.http.get<Condicao[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'descricao', 'tipo']);
+    return this.filtrar(filtro, listas, FILTROS_CONDICAO);
+  }
+
+  consult(filtro: any): Observable<Condicao[]> {
+    let listas = this.http.get<Condicao[]>(this.url);
+    return this.filtrar(filtro, listas, FILTROS_CONDICAO);
   }
 }

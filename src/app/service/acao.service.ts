@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Acao } from '../model/acao';
 import { Observable } from 'rxjs';
 
+export const FILTROS_ACAO = ['nome', 'descricao'];
 @Injectable({
   providedIn: 'root',
 })
@@ -14,6 +15,11 @@ export class AcoesService extends AbstractService {
 
   listar(filtro: any): Observable<Acao[]> {
     let listas = this.http.get<Acao[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome', 'custo', 'tracos', 'descricao']);
+    return this.filtrar(filtro, listas, FILTROS_ACAO);
+  }
+
+  consult(filtro: any): Observable<Acao[]> {
+    let listas = this.http.get<Acao[]>(this.url);
+    return this.filtrar(filtro, listas, FILTROS_ACAO);
   }
 }

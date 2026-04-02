@@ -1,81 +1,35 @@
-<mat-card class="">
-  <form [formGroup]="form">
-    <div class="row">
-      <div class="col-sm-12">
+<app-card-search
+  name="Condições"
+  [service]="service"
+  [searchColumn]="['nome', 'descricao', 'tipo']"
+  [colsGrid]="3"
+  [rowHeight]="350"
+  [suggestions]="['Medo', 'Movimento', 'Mental', 'Sentidos', 'Metabolismo', 'Veneno', 'Cansaço', 'Metamorfose']"
+  gutterSizeGrid="10px">
+  <ng-template let-item>
+    <mat-card class="card-game">
+      <mat-card-title class="">
+        {{ item.nome }}
+      </mat-card-title>
+      <mat-card-content class="">
         <div class="row">
-          <div class="col-sm-12">
-            <h2><b>CONDIÇÕES</b></h2>
-            <hr />
+          <div class="col-sm-12 mt-1 d-flex justify-content-end">
+            {{ item.tipo }}
           </div>
         </div>
-        <mat-form-field class="form-field text-field-formulario-edicao">
-          <mat-label>Condição</mat-label>
-          <input formControlName="nome" matInput type="text" (keyup)="consultar()" />
-        </mat-form-field>
-      </div>
-    </div>
-  </form>
-</mat-card>
-<mat-card class="">
-  <div class="col-sm-12 mt-4">
-    <div class="d-flex justify-content-end">
-      <b>Número de Registros: {{ numero_registros }}</b>
-    </div>
-  </div>
-  <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350" gutterSize="10px">
-    <mat-grid-tile *ngFor="let condicao of condicoes">
-      <mat-card class="card-game">
-        <mat-card-title class="">
-          {{ condicao.nome }}
-        </mat-card-title>
-        <mat-card-content class="">
+        <div class="row">
+          <div class="col-sm-12">
+            <hr class="" />
+          </div>
+        </div>
+        <div class="content">
           <div class="row">
-            <div class="col-sm-12 mt-1 justify-content-end">
-              {{ condicao.tipo }}
+            <div class="col-sm-12 mt-4">
+              {{ item.descricao }}
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <hr class="" />
-            </div>
-          </div>
-          <div class="content">
-            <div class="row">
-              <div class="col-sm-12 mt-4">
-                {{ condicao.descricao }}
-              </div>
-            </div>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-  <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350" gutterSize="10px">
-    <mat-grid-tile *ngFor="let condicao of condicoes">
-      <mat-card class="card-game">
-        <mat-card-title class="">
-          {{ condicao.nome }}
-        </mat-card-title>
-        <mat-card-content class="">
-          <div class="row">
-            <div class="col-sm-12 mt-1 d-flex justify-content-end">
-              {{ condicao.tipo }}
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <hr class="" />
-            </div>
-          </div>
-          <div class="content">
-            <div class="row">
-              <div class="col-sm-12 mt-4">
-                {{ condicao.descricao }}
-              </div>
-            </div>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</mat-card>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</app-card-search>
