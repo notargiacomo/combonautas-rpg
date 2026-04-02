@@ -2477,6 +2477,25 @@ Um Presa de Coral é um guerreiro de elite khubariano, um feroz campeão de seu 
         referencias: Referencia.AVENTURA_FIM_DOS_TEMPOS,
         paginas: 'pags 317 a 319',
       },
+      {
+        id: 70,
+        nome: `Andarilho do Horizonte`,
+        marca_distincao: `
+        <h4><b>Marca da Distinção</b></h4>
+        <h5>Trilheiro</h5>
+        <p><i><b>Seu conhecimento e suas experiências exploratórias tornaram estar em movimento uma necessidade, e você faz isso como ninguém.</b></i></p>
+        <p>Uma vez por rodada você pode percorrer 1,5m usando qualquer forma de deslocamento que possua. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel.</p>
+        `,
+        descricao: `<p>Arton é um mundo vasto, coberto por tipos muito diferentes de terreno. Existem aqueles que exploram toda essa extensão e contemplam a imensidão do céu azul imaginando o que há além. A esses viajantes incessantes foi dado o nome de andarilhos do horizonte. Vagando pelas terras, águas e céus de Arton, pelos mundos dos deuses e até mesmo pelo vazio entre eles, o andarilho do horizonte busca emoções, desafios e descobertas. São viajantes incessantes, que entram em comunhão com o próprio ambiente como se este fosse seu companheiro de jornadas. Desbravar é sua palavra de ordem. Nunca ficam muito tempo em um mesmo lugar, ansiosos por conhecer novas paragens, novas fronteiras, audaciosamente indo aonde ninguém jamais esteve.</p>
+        <p>Além de desbravar Arton, um andarilho do horizonte é consumido pelo desejo de ir além. Caminhar, nadar ou escalar não é o bastante para seu desejo exploratório. Atravessam o vazio entre os mundos para visitar a morada dos deuses, sempre caminhando rumo ao horizonte desconhecido.</p>
+        `,
+        admissao: `<p>O candidato deve ter desbravado cada um dos tipos de terreno (aquático, ártico, colina, deserto, floresta, montanha, pântano, planície, subterrâneo e urbano). Desbravar não significa apenas visitar; ele precisa viajar por tempo considerável em cada terreno e enfrentar as dificuldades de cada um deles. Como diretriz geral, o candidato precisa passar uma aventura em cada terreno — ou pelo menos passar uma semana e superar um perigo complexo relevante (como uma jornada pelos ermos) em cada terreno.</p>
+        <p>Além de explorar a geografia de Arton, o candidato deve ter visitado as terras além. Isso significa visitar pelo menos um outro plano de existência, desbravando esse plano de forma semelhante a desbravar os tipos de terrenos.</p>`,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_andarilho_horizonte.png',
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        paginas: 'pags 184 a 185',
+      },
     ];
   }
 }

@@ -2402,7 +2402,7 @@ informações sobre armas lendárias ou reparos em seus equipamentos. Até que, 
         descricao: `
         <p>Você tinha talento para preparar e decorar bolos e doces. Foi treinado por grandes mestres confeiteiros de Tragematum (a província do Império de Tauron antes conhecida como Hershire) ou talvez tenha vindo de lá! Você pode ter tido uma bela confeitaria em Valkaria ou Vectora, ou atuado em alguma cozinha palaciana preparando as mais belas sobremesas para jantares da nobreza. Tudo com base no mais saboroso e insubstituível ingrediente: gorad. Você era feliz, sempre buscando a excelência em cada gulodice, alegrando-se com a satisfação de seus convidados? Ou vivia frustrado, acreditando ser destinado a algo maior, mais importante? Talvez por isso, quando aqueles heróis foram recompensados com um banquete e ficaram maravilhados com suas guloseimas, você ficou tentado a servir-lhes mais vezes…</p>
         <p><b>Itens: </b> Instrumentos de cozinheiro, T$ 36 em ingredientes para produzir gorad quente.</p>
-        <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro) e, quando prepara um prato especial, pode gastar T$ 10 a mais para adicionar cobertura de gorad a ele. Além de seus benefícios normais, um prato especial com cobertura de gorad fornece 2 PM temporários por patamar do comensal.</p>`,
+        <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro) e, quando prepara um prato especial, pode gastar T$ 10 a mais para adicionar cobertura de gorad a ele. Além de seus benefícios normais, um prato especial com cobertura de gorad fornece 2 PM temporários por patamar do comensal.</p>`,
         referencias: Referencia.HEROIS,
         paginas: '',
         temMagia: false,
@@ -2534,7 +2534,7 @@ abordagem de piratas, ataque de elfos-do-mar, ou mesmo um kaiju? Você sobrevive
         nome: 'Padeiro',
         regiao: 'Incomum',
         descricao: `
-        <p>Você começava sua jornada ainda antes do amanhecer, acendendo o forno de pedra com madeira encantada para assar pães, bolos e tortas que alimentavam a comunidade. Amassava farinhas com trigo dourado de campos abençoados por Azgher ou frutas colhidas sob as estrelas de Tenebra. Em sua padaria, moradores e aventureiros se reuniam para comprar suas delícias e compartilhar notícias. Você 
+        <p>Você começava sua jornada ainda antes do amanhecer, acendendo o forno de pedra com madeira encantada para assar pães, bolos e tortas que alimentavam a comunidade. Amassava farinhas com trigo dourado de campos abençoados por Azgher ou frutas colhidas sob as estrelas de Tenebra. Em sua padaria, moradores e aventureiros se reuniam para comprar suas delícias e compartilhar notícias. Você 
 também preparava iguarias especiais para festivais, ou até encomendas secretas, como pães encantados para fortalecer guerreiros, ou aquela torta destinada a envenenar um inimigo... Ah sim, foi por isso que acabou fugindo e virando aventureiro!</p>
         <p><b>Itens: </b> Instrumentos de Ofício (cozinheiro), rolo de massa (mesmas estatísticas de uma clava).</p>
         <p><b>Benefícios.</b> Você é treinado em Ofício (cozinheiro). Além disso, sua profissão fortificou seus braços! Você recebe +1 em rolagens de dano com armas de impacto e pode substituir testes de Atletismo por testes de Ofício (cozinheiro).</p>`,
@@ -2554,7 +2554,7 @@ também preparava iguarias especiais para festivais, ou até encomendas secretas
         nome: 'Pedinte',
         regiao: 'Incomum',
         descricao: `
-        <p>Você sobrevivia às margens da sociedade, perambulando por ruas movimentadas em cidades como Valkaria, Crovandir ou Zakharin. Muitas vezes ignorado ou desprezado, dependia da caridade de transeuntes e sobras de festividades locais para obter comida e abrigo. Sua rotina era marcada pela incerteza, enfrentando mau tempo, fome e, às vezes, criaturas que espreitavam nas ruas sombrias. Mas você era astuto, ouvia segredos murmurados nas tavernas e becos, testemunhava eventos cruciais despercebido pelos outros. Um dia, acabou obtendo alguma informação valiosa que mudou sua vida, levando a sua transformação em aventureiro. </p>
+        <p>Você sobrevivia às margens da sociedade, perambulando por ruas movimentadas em cidades como Valkaria, Crovandir ou Zakharin. Muitas vezes ignorado ou desprezado, dependia da caridade de transeuntes e sobras de festividades locais para obter comida e abrigo. Sua rotina era marcada pela incerteza, enfrentando mau tempo, fome e, às vezes, criaturas que espreitavam nas ruas sombrias. Mas você era astuto, ouvia segredos murmurados nas tavernas e becos, testemunhava eventos cruciais despercebido pelos outros. Um dia, acabou obtendo alguma informação valiosa que mudou sua vida, levando a sua transformação em aventureiro. </p>
         <p><b>Itens: </b> Andrajos, esmolas que guardou (1 bálsamo restaurador e 1 essência de mana).</p>
         <p><b>Benefícios.</b> . Você é muito discreto, recebendo +2 em Enganação e Furtividade. Além disso, aprendeu a aproveitar o máximo de cada recurso e a partilhar do pouco que tinha com seus companheiros em dificuldades. Quando você usa um alimento, preparado alquímico ou poção, pode rolar seu efeito duas vezes 
 e usar o melhor resultado (se o efeito for aleatório), ou pode dividir o item com um aliado adjacente (ele também gasta a ação para consumi-lo e recebe o 
@@ -2673,6 +2673,17 @@ redes, linhas e anzóis de materiais naturais, você pescava para consumo própr
         <p><b>Itens.</b> Água benta x2, cimitarra ou espada longa, símbolo sagrado (Allihanna, Kallyadranoch, Megalokk ou Wynna), T$50 (pagamento por ritos fúnebres realizados).</p>`,
         referencias: Referencia.DB,
         paginas: '214, pág. 73',
+      },
+      {
+        id: 135,
+        nome: 'Herdeiro da Libertação',
+        regiao: 'Candehssa',
+        descricao: `
+        <p>Você é um dos raros seres nascidos em Candeh'ssa, a cidade planar criada para dar suporte aos Libertadores. Uma vaga no grupo desses heróis pode estar disponível - desbravar o Labirinto, afinal, não é tarefa fácil e perder um companheiro para seus desafios é mais comum do que parece. Ou sua própria história épica aguarda por ser contada, especialmente depois que Valkaria foi liberta e o acesso à cidade planar se tornou mais fácil.</p>
+        <p><b>Benefícios.</b> Você é treinado em uma perícia à sua escolha e pode gastar uma ação de movimento e 1 PM para se mover até o dobro do seu deslocamento. Esse movimento ignora terreno difícil e espaços apertados ou ocupados por inimigos. Além disso, uma vez a cada tempo entre aventuras, você pode visitar Candeh'ssa como pelo efeito da magia Viagem Planar.</p>
+        <p><b>Itens.</b> Essência de mana, mochila de aventureiro, uma lembrança da cidade planar (1⁄2 espaço, T$ 100).</p>`,
+        referencias: Referencia.DB,
+        paginas: '',
       },
     ];
   }

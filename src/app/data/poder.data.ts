@@ -20189,6 +20189,84 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         prerequisito_nivel: 20,
         id_classe: 40,
         id_classes_para_habilidades: [40],
+      },
+      {
+        id: 1165,
+        nome: 'Domínio de Terreno',
+        descricao: `
+          <p><i>Outros exploradores conhecem determinados tipos de terreno. O andarilho do horizonte os domina.</i></p>
+          <p>Escolha dois entre os tipos de terreno descritos a seguir. Você recebe os benefícios dos terrenos escolhidos mesmo que não esteja em terreno deste tipo. Você pode escolher este poder outras vezes para terrenos diferentes.</p>
+<ul>
+<li>Aquático. Você recebe deslocamento de natação 9m e ignora a penalidade de armadura para nadar. Se já possui deslocamento de natação, ele aumenta em +3m.</li>
+<li>Ártico. Você recebe redução de frio 5 e pode gastar 1 PM para fazer uma arma que esteja empunhando causar +1d6 pontos de dano por frio até o fim da cena.</li>
+<li>Colina. Você recebe +2 em testes de ataque e, se estiver em posição elevada em relação a outras criaturas, recebe +2 na Defesa contra elas.</li>
+<li>Deserto. Você recebe redução de fogo 5 e imunidade a cansaço.</li>
+<li>Floresta. Você recebe +2 em Furtividade e, quando está sob cobertura, recebe camuflagem leve.</li>
+<li>Montanha. Você recebe redução de eletricidade 5 e deslocamento de escalada 9m. Se já possui deslocamento de escalada, ele aumenta em +3m.</li>
+<li>Pântano. Você recebe redução de ácido 5 e resistência a veneno +5.</li>
+<li>Planície. Você recebe +2 em Atletismo e deslocamento +3m.</li>
+<li>Subterrâneo. Você recebe visão no escuro. Se já possuir esta habilidade, seu alcance aumenta para médio.</li>
+<li>Urbano. Você recebe redução de psíquico 5 e pode usar Sobrevivência no lugar de Diplomacia e Investigação.</li>
+</ul>
+<p>Pré-requisitos: treinado em Conhecimento, Fortitude e Sobrevivência.</p>
+          `,
+        poder_chave_distincao: true,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 70,
+      },
+      {
+        id: 1166,
+        nome: 'Domínio Planar',
+        descricao: `
+          <p><i>O andarilho do horizonte encontra meios para chegar em qualquer lugar, mesmo que seja fora de Arton.</i></p>
+          <p>Você aprende e pode lançar a magia Salto Dimensional. Além disso, se estiver em um terreno para o qual possua Domínio de Terreno, pode gastar oito horas para procurar um atalho para um plano específico. Faça um teste de Sobrevivência (CD 30); se passar, pode lançar Viagem Planar com esse destino. Pré-requisitos: três outros poderes de andarilho do horizonte.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 70,
+      },
+      {
+        id: 1167,
+        nome: 'Explorador do Horizonte',
+        descricao: `
+          <p><i>O andarilho do horizonte aprende a combinar seu domínio sobre os mais variados terrenos com seu conhecimento de explorador do mundo natural.</i></p>
+          <p>Quando está em um terreno para o qual possua Domínio de Terreno e Explorador, o bônus fornecido por Explorador se aplica a todos os seus testes de perícia e aumenta em +1 para cada dois outros poderes de Andarilho do Horizonte que você possui. Pré-requisitos: Domínio de Terreno, Explorador.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 70,
+      },
+      {
+        id: 1168,
+        nome: 'Já Vi de Tudo',
+        descricao: `
+          <p><i>Em suas andanças, o andarilho do horizonte entra em contato com tudo que o universo tem a mostrar.</i></p>
+          <p>Você pode usar Sobrevivência para identificar qualquer tipo de criatura como uma ação de movimento (em vez de padrão). Além disso, aprende e pode lançar Suporte Ambiental. Caso aprenda novamente a magia, seu custo diminui em –1 PM. Pré-requisito: Domínio de Terreno.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 70,
+      },
+      {
+        id: 1169,
+        nome: 'Lá Onde Não Há Horizonte',
+        descricao: `
+          <p><i>Mesmo onde o conceito de terreno não existe, você é capaz de encontrar seu caminho.</i></p>
+          <p>Você recebe +5 em testes de resistência contra efeitos da Tormenta, suas criaturas e devotos de Aharadak. Além disso, sempre que perde PM por um efeito (como Insanidade da Tormenta), essa perda é reduzida em –1 PM; para cada dois outros poderes de andarilho do horizonte que possuir, a perda é reduzida em –1 adicional. Este poder conta como Domínio de Terreno (área de Tormenta). Pré-requisitos: Ter sobrevivido a uma incursão em uma área de Tormenta, quatro outros poderes de Andarilho do Horizonte.</p>
+          `,
+        poder_chave_distincao: false,
+        referencias: Referencia.HEROIS,
+        tipo: TipoPoder.PODER_DISTINCAO,
+        prerequisito_nivel: 5,
+        id_distincao: 70,
       }
     );
   }
