@@ -80,7 +80,10 @@ export class CondicaoData {
       {
         id: 12,
         nome: `EM CHAMAS`,
-        descricao: `O personagem está pegando fogo. No início de seus turnos, sofre 1d6 pontos de dano de fogo. O personagem pode gastar uma ação padrão para apagar o fogo com as mãos. Imersão em água também apaga as chamas.`,
+        descricao: `O personagem está pegando fogo. No início de seus turnos, sofre 1d6 pontos de dano de fogo. O personagem pode gastar uma ação padrão para apagar o fogo com as mãos. Imersão em água também apaga as chamas.
+        
+        DB 219
+        O personagem está pegando fogo. No início de seus turnos, sofre 1d6 pontos de dano de fogo. O personagem pode gastar uma ação padrão para apagar o fogo com as mãos. Se ficar arrefecido ou molhado, em vez disso perde as duas condições. Se ficar congelado, em vez disso perde as duas condições e fica arrefecido.`,
       },
       {
         id: 13,
@@ -215,6 +218,126 @@ export class CondicaoData {
         id: 35,
         nome: `VULNERÁVEL`,
         descricao: `O personagem sofre –2 na Defesa.`,
+      },
+      {
+        id: 36,
+        nome: `ABENÇOADO`,
+        descricao: `O personagem foi momentaneamente tocado por uma força divina, se torna imune a efeitos de metabolismo, metamorfose, trevas e veneno. Se ficar decaído, em vez disso perde as duas condições.`,
+      },
+      {
+        id: 37,
+        nome: `ABSORVENDO`,
+        descricao: `O personagem recupera PV em uma quantidade igual à metade de todo dano que causa (limitado pelo nível).`,
+      },
+      {
+        id: 38,
+        nome: `ALENTADO`,
+        descricao: `O personagem recebe +5 em testes de Inteligência, Sabedoria e Carisma e de perícias baseadas nesses atributos.`,
+        tipo: TipoCondicao.MENTAL,
+      },
+      {
+        id: 39,
+        nome: `ARREFECIDO`,
+        descricao: `O personagem tem a temperatura corporal reduzida, tem seu movimento reduzido em –1,5m, não pode usar habilidades que exijam liberdade de movimentos e tem vulnerabilidade a frio, mas também recebe resistência a fogo +2. Se ficar molhado ou for arrefecido uma segunda vez, fica congelado. Se ficar em chamas enquanto estiver arrefecido, em vez disso perde as duas condições.`,
+        tipo: TipoCondicao.METABOLISMO,
+      },
+      {
+        id: 40,
+        nome: `AUDACIOSO`,
+        descricao: `O personagem recebe +2 em testes de perícia. Se ficar audacioso novamente, em vez disso fica intrépido.`,
+        tipo: TipoCondicao.MENTAL,
+      },
+      {
+        id: 41,
+        nome: `CONGELADO`,
+        descricao: `O personagem é coberto por uma camada grossa de gelo que o deixa paralisado e concede vulnerabilidade a frio, mas também concede resistência a fogo +2 e imunidade a arrefecido, cansaço, eletrizado, enfeitiçado, medo, sangrando e veneno. Se ficar em chamas enquanto estiver congelado, perde as duas condições e fica arrefecido.`,
+      },
+      {
+        id: 42,
+        nome: `DECAÍDO`,
+        descricao: `O personagem sofre dano por efeitos mágicos de cura de luz, mas dano de trevas recupera seus PV. Em mortos-vivos, tem o efeito inverso (dano de trevas causa dano normal e efeitos mágicos de cura de luz recuperam PV). Se ficar abençoado, em vez disso perde as duas condições.`,
+      },
+      {
+        id: 43,
+        nome: `DISPOSTO`,
+        descricao: `O personagem recebe +2 em testes de Inteligência, Sabedoria e Carisma e de perícias baseadas nesses atributos. Se ficar disposto novamente, em vez disso fica alentado.`,
+        tipo: TipoCondicao.MENTAL,
+      },
+      {
+        id: 44,
+        nome: `ELETRIFICADO`,
+        descricao: `O personagem tem correntes elétricas poderosas correndo pelo seu corpo. No início de seus turnos, sofre 1d6 pontos de dano de eletricidade. O personagem pode gastar uma ação padrão para descarregar a eletricidade ao tocar em metais ou no chão de terra. Se ficar molhado ou for eletrificado uma segunda vez, fica eletrizado.`,
+      },
+      {
+        id: 45,
+        nome: `ELETRIZADO`,
+        descricao: `O personagem fica paralisado por uma corrente elétrica, o que concede vulnerabilidade a eletricidade, mas também resistência a ácido +2 e imunidade a cansaço, congelado, eletrificado, enfeitiçado, medo, sangrando e veneno. Esta condição permanece até o fim da cena ou até que o personagem tenha contato com um objeto livre de metal ou algum tipo de óleo (como pela magia Área Escorregadia), o que acontecer primeiro.`,
+      },
+      {
+        id: 46,
+        nome: `ELETRIZADO`,
+        descricao: `O personagem fica paralisado por uma corrente elétrica, o que concede vulnerabilidade a eletricidade, mas também resistência a ácido +2 e imunidade a cansaço, congelado, eletrificado, enfeitiçado, medo, sangrando e veneno. Esta condição permanece até o fim da cena ou até que o personagem tenha contato com um objeto livre de metal ou algum tipo de óleo (como pela magia Área Escorregadia), o que acontecer primeiro.`,
+      },
+      {
+        id: 47,
+        nome: `FEDIDO`,
+        descricao: `O personagem sofre –5 em testes de Carisma e de perícias baseadas nesse atributo, pois está exalando um cheiro forte e é quase impossível ficar perto dele.`,
+      },
+      {
+        id: 48,
+        nome: `FORTALECIDO`,
+        descricao: `O personagem recebe +2 em testes de Força, Destreza e Constituição e de perícias baseadas nesses atributos. Se ficar fortalecido novamente, em vez disso fica vigoroso.`,
+      },
+      {
+        id: 49,
+        nome: `INTRÉPIDO`,
+        descricao: `O personagem sofre +5 em testes de perícias e recebe imunidade a medo.`,
+      },
+      {
+        id: 50,
+        nome: `LEVE`,
+        descricao: `O personagem não aplica penalidade de armadura em testes de Acrobacia e Furtividade e seu deslocamento é aumentado em +3m. Movimento.`,
+      },
+      {
+        id: 51,
+        nome: `LEVE`,
+        descricao: `O personagem não aplica penalidade de armadura em testes de Acrobacia e Furtividade e seu deslocamento é aumentado em +3m. Movimento.`,
+      },
+      {
+        id: 52,
+        nome: `MOLHADO`,
+        descricao: `O personagem se torna vulnerável a eletricidade e frio, mas recebe resistência a fogo. Qualquer criatura fica molhada se estiver imersa ou em contato com uma superfície de água. Se ficar arrefecido, fica congelado. Se ficar eletrificado, fica eletrizado. Se ficar em chamas enquanto estiver molhado, em vez disso perde as duas condições.`,
+      },
+      {
+        id: 53,
+        nome: `PODEROSO`,
+        descricao: `O custo em pontos de mana das habilidades do personagem diminui em –1. Mental.`,
+      },
+      {
+        id: 54,
+        nome: `PREVENIDO`,
+        descricao: `O personagem recebe +2 na Defesa durante a primeira rodada de combate.`,
+      },
+      {
+        id: 55,
+        nome: `RELAXADO`,
+        descricao: `O personagem fica fortalecido, prevenido e veloz durante uma rodada.`,
+      },
+      {
+        id: 56,
+        nome: `RESTAURANDO`,
+        descricao: `O personagem recebe cura acelerada igual aos PV que recebe por nível da sua classe com mais níveis.`,
+      },
+      {
+        id: 57,
+        nome: `VELOZ`,
+        descricao: `Todas as formas de deslocamento do personagem são duplicadas (arredonde para baixo para o primeiro incremento de 1,5m) e ele recebe imunidade a efeitos negativos de movimento.`,
+        tipo: TipoCondicao.MOVIMENTO,
+      },
+      {
+        id: 58,
+        nome: `VIGOROSO`,
+        descricao: `O personagem recebe +5 em testes de Força, Destreza e Constituição e de perícias baseadas nesses atributos.`,
       },
     ];
   }
