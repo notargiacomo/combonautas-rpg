@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
             o passado que deixou cicatrizes, histórias e motivações.
           </li>
           <li>
-            <b>[EM MANUTENÇÃO] Classes:</b>
+            <b>Classes:</b>
             o caminho de poder que define como você enfrenta o impossível.
           </li>
           <li>
@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit {
             as habilidades que separam amadores de verdadeiras lendas.
           </li>
           <li>
-            <b>[EM MANUTENÇÃO] Deuses:</b>
+            <b>Deuses:</b>
             as entidades que observam, julgam… e às vezes respondem.
           </li>
           <li>
@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
             dons extraordinários que desafiam as regras da realidade.
           </li>
           <li>
-            <b>[EM MANUTENÇÃO] Magias:</b>
+            <b>Magias:</b>
             o domínio das forças invisíveis que dobram o mundo à sua vontade.
           </li>
         </ul>
@@ -207,8 +207,12 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
 
         <ul>
             <li>
-                <b>[BETA] Cálculo de Desafios: </b>
+                <b>Cálculo de Desafios: </b>
                 Calcula o nível de desafio ideal, evitando TPKs acidentais… ou garantindo-os, se preferir.
+            </li>
+            <li>
+                <b>Geração de Tesouros: </b>
+                Gera recompensas aleatórias, desde relíquias lendárias até aquele pergaminho inútil que ninguém pediu.
             </li>
             <li>
                 <b>[PLANEJADO] Ameaças: </b>
@@ -262,12 +266,7 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
   <ul>
 
     <li>
-      <b>[BETA] Personagem Aleatório:</b> cansou de planejar minuciosamente seus personagens e quer mesmo abraçar Nimb e ver o circo pegar fogo? Vocês está no lugar certo doidão.
-    </li>
-
-    <li>
-      <b>[ALPHA] Geração de Tesouros: </b>
-      Gera recompensas aleatórias, desde relíquias lendárias até aquele pergaminho inútil que ninguém pediu.
+      <b>Personagem Aleatório:</b> cansou de planejar minuciosamente seus personagens e quer mesmo abraçar Nimb e ver o circo pegar fogo? Vocês está no lugar certo doidão.
     </li>
 
     <li>
@@ -275,7 +274,7 @@ Pois além do horizonte, relíquias mágicas aguardam aqueles ousados o bastante
     </li>
 
     <li>
-      <b>[PLANEJADO] Mapa Mundi: </b>
+      <b>[PLANEJADO] Mapa Mundi de Arton: </b>
       Navegue pelo mapa de arton, expanda, explore e leia.
     </li>
 
