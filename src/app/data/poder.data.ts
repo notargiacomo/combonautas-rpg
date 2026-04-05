@@ -2650,7 +2650,7 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '21',
-        id_raca: [4],
+        id_raca: [4, 73],
         prerequisito_nivel: 1,
       },
       {
@@ -2678,7 +2678,7 @@ export class PoderData {
         ativacao: [],
         referencias: Referencia.BASICO,
         paginas: '21',
-        id_raca: [4],
+        id_raca: [4, 66, 73, 74],
         prerequisito_nivel: 1,
       },
       {
@@ -7082,7 +7082,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74,
         ],
       },
       {
@@ -7095,7 +7095,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74,
         ],
       },
       {
@@ -7150,7 +7150,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [4, 64],
+        id_raca: [4, 64, 73, 74],
       },
       {
         id: 699,
@@ -7376,16 +7376,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [4, 64],
-      },
-      {
-        id: 724,
-        nome: 'Esgrima Élfica',
-        descricao: `Sua raça mescla arte e guerra como nenhuma outra. Você recebe +1 em testes de ataque com espadas e, para você, todas as espadas são consideradas armas ágeis.`,
-        referencias: Referencia.BASICO,
-        tipo: TipoPoder.PODER_RACA,
-        prerequisito_nivel: 1,
-        id_raca: [4, 64],
+        id_raca: [4, 64, 73, 74],
       },
       {
         id: 725,
@@ -7403,7 +7394,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [4, 57, 62, 64],
+        id_raca: [4, 57, 62, 64, 73, 74],
       },
       {
         id: 727,
@@ -7573,7 +7564,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [4, 28, 62, 64],
+        id_raca: [4, 28, 62, 64, 73, 74],
       },
       {
         id: 745,
@@ -7618,7 +7609,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [4, 62, 64],
+        id_raca: [4, 62, 64, 73, 74],
       },
       {
         id: 750,
@@ -7772,7 +7763,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [4, 64, 66],
+        id_raca: [4, 64, 66, 73, 74],
       },
       {
         id: 767,
@@ -8930,15 +8921,6 @@ export class PoderData {
         id: 890,
         nome: 'Asas Emplumadas',
         descricao: `Você pode gastar 1 PM por rodada para voar com deslocamento 12m. Enquanto está voando dessa forma, você recebe +2 na Defesa e em Reflexos.`,
-        referencias: Referencia.BASICO,
-        tipo: TipoPoder.HABILIDADE_RACA,
-        prerequisito_nivel: 1,
-        id_raca: [66],
-      },
-      {
-        id: 891,
-        nome: 'Sentidos Élficos',
-        descricao: `Você recebe visão na penumbra e +2 em Misticismo e Percepção.`,
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_RACA,
         prerequisito_nivel: 1,
@@ -20274,6 +20256,42 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         descricao: `Você nunca sai de casa sem estar preparado. Uma vez por sessão de jogo, você pode gastar uma ação completa e 1 PM para encontrar nos seus equipamentos um item de valor equivalente a T$ 1d10 + seu nível. Você também pode usar este poder para encontrar materiais de fabricação, mas o valor deve ser equivalente a T$ 1d6 + seu nível.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         id_raca: [72],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1171,
+        nome: `Herança Gélida`,
+        descricao: `Você recebe redução de frio 10 e resistência a frio +5.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [73],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1172,
+        nome: `Arsenal de Tenenbra`,
+        descricao: `Você recebe proficiência em florete, gadanho e mosquete e +2 em testes de ataque com essas armas. Se receber proficiência em uma dessas armas novamente, pode considerá-la uma arma leve.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [74],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1173,
+        nome: `Manto das Sombras`,
+        descricao: `Você pode lançar Invisibilidade, mas apenas em você. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. ✨`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [74],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1174,
+        nome: `Sensibilidade ao Sol`,
+        descricao: `Quando exposto à luz solar direta, você fica ofuscado e, a cada rodada, perde 2d6 PV por patamar de personagem.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [74],
         referencias: Referencia.DB,
         paginas: '',
       }
