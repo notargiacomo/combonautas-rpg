@@ -2573,7 +2573,7 @@ export class PoderData {
         nome: `Devagar e Sempre`,
         descricao: `Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        id_raca: [2, 68],
+        id_raca: [2, 68, 72],
         instrucao: [
           "this.personagem.atualizarDeslocamento('Terrestre', 6);",
           `this.personagem.adicionaImunidade('SOBRECARREGADO', 'Condição');`,
@@ -2586,7 +2586,7 @@ export class PoderData {
         nome: `Duro como Pedra`,
         descricao: `Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        id_raca: [2, 68],
+        id_raca: [2, 68, 72],
         instrucao: ['this.personagem.adicionaBonusTotalVida(2);', `this.personagem.adicionaBonusNivelVida(1);`],
         referencias: Referencia.BASICO,
         paginas: '20',
@@ -2596,7 +2596,7 @@ export class PoderData {
         nome: `Tradição de Heredrimm`,
         descricao: `Você é perito nas armas tradicionais anãs, seja por ter treinado com elas, seja por usá-las como ferramentas de ofício. Para você, todos os machados, martelos, marretas e picaretas são armas simples. Você recebe +2 em ataques com essas armas.`,
         tipo: TipoPoder.HABILIDADE_RACA,
-        id_raca: [2],
+        id_raca: [2, 72],
         instrucao: [
           `this.personagem?.posse?.equipamentos_empunhados?.forEach(empunhado => {empunhado?.ataque?.bonus_ataque?.push({origem:'Raça Anão, Poder Tradição de Heredrimm', bonus: 2, condicao: 'Martelo, Machado e Picareta', ativo: false})})`,
         ],
@@ -7082,7 +7082,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72,
         ],
       },
       {
@@ -7095,7 +7095,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72,
         ],
       },
       {
@@ -7123,7 +7123,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 25, 68],
+        id_raca: [2, 25, 68, 72],
       },
       {
         id: 696,
@@ -7250,7 +7250,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 68],
+        id_raca: [2, 68, 72],
       },
       {
         id: 710,
@@ -7268,7 +7268,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 12, 68],
+        id_raca: [2, 12, 68, 72],
       },
       {
         id: 712,
@@ -7349,7 +7349,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 68],
+        id_raca: [2, 68, 72],
       },
       {
         id: 721,
@@ -7511,7 +7511,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 68],
+        id_raca: [2, 68, 72],
       },
       {
         id: 739,
@@ -7754,7 +7754,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 68],
+        id_raca: [2, 68, 72],
       },
       {
         id: 765,
@@ -20267,6 +20267,15 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.PODER_DISTINCAO,
         prerequisito_nivel: 5,
         id_distincao: 70,
+      },
+      {
+        id: 1170,
+        nome: `Somente o Necessário`,
+        descricao: `Você nunca sai de casa sem estar preparado. Uma vez por sessão de jogo, você pode gastar uma ação completa e 1 PM para encontrar nos seus equipamentos um item de valor equivalente a T$ 1d10 + seu nível. Você também pode usar este poder para encontrar materiais de fabricação, mas o valor deve ser equivalente a T$ 1d6 + seu nível.`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [72],
+        referencias: Referencia.DB,
+        paginas: '',
       }
     );
   }
