@@ -7082,7 +7082,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74, 75, 76, 77,
         ],
       },
       {
@@ -7095,7 +7095,7 @@ export class PoderData {
         id_raca: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74,
+          58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74, 75, 76, 77,
         ],
       },
       {
@@ -7132,7 +7132,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [7, 18, 21, 22, 26, 27, 28, 32, 37, 38, 39, 41, 43, 44, 47, 49, 50, 51, 52, 54, 57, 58, 61, 65],
+        id_raca: [7, 18, 21, 22, 26, 27, 28, 32, 37, 38, 39, 41, 43, 44, 47, 49, 50, 51, 52, 54, 57, 58, 61, 65, 77],
       },
       {
         id: 697,
@@ -7141,7 +7141,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [7, 18, 21, 22, 26, 27, 28, 32, 37, 38, 39, 41, 43, 44, 47, 49, 50, 51, 52, 54, 57, 58, 61, 65],
+        id_raca: [7, 18, 21, 22, 26, 27, 28, 32, 37, 38, 39, 41, 43, 44, 47, 49, 50, 51, 52, 54, 57, 58, 61, 65, 77],
       },
       {
         id: 698,
@@ -7232,7 +7232,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [1, 10, 11, 64],
+        id_raca: [1, 10, 11, 64, 75],
       },
       {
         id: 708,
@@ -7241,7 +7241,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [1],
+        id_raca: [1, 75],
       },
       {
         id: 709,
@@ -7268,7 +7268,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [2, 12, 68, 72],
+        id_raca: [2, 12, 68, 72, 76],
       },
       {
         id: 712,
@@ -7277,7 +7277,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [12],
+        id_raca: [12, 76],
       },
       {
         id: 713,
@@ -7286,7 +7286,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [15, 61],
+        id_raca: [15, 61, 75],
       },
       {
         id: 714,
@@ -7385,7 +7385,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [1],
+        id_raca: [1, 75],
       },
       {
         id: 726,
@@ -7484,7 +7484,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [7, 18, 21, 22, 26, 27, 28, 32, 37, 38, 39, 41, 43, 44, 47, 49, 50, 51, 52, 54, 57, 58, 61, 65],
+        id_raca: [7, 18, 21, 22, 26, 27, 28, 32, 37, 38, 39, 41, 43, 44, 47, 49, 50, 51, 52, 54, 57, 58, 61, 65, 77],
       },
       {
         id: 737,
@@ -7518,7 +7518,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [15, 61, 62],
+        id_raca: [15, 61, 62, 75],
       },
       {
         id: 740,
@@ -7528,7 +7528,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 5,
-        id_raca: [15, 61, 62],
+        id_raca: [15, 61, 62, 75],
       },
       {
         id: 741,
@@ -7564,7 +7564,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [4, 28, 62, 64, 73, 74],
+        id_raca: [4, 28, 62, 64, 73, 74, 76],
       },
       {
         id: 745,
@@ -7709,7 +7709,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [8, 15, 62, 69],
+        id_raca: [8, 15, 62, 69, 75],
       },
       {
         id: 761,
@@ -7772,7 +7772,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.PODER_RACA,
         prerequisito_nivel: 1,
-        id_raca: [3, 15, 61, 65, 70],
+        id_raca: [3, 15, 61, 65, 70, 75],
       },
       {
         id: 768,
@@ -8446,7 +8446,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_RACA,
         prerequisito_nivel: 1,
-        id_raca: [12],
+        id_raca: [12, 76],
       },
       {
         id: 837,
@@ -9225,7 +9225,7 @@ export class PoderData {
         referencias: Referencia.BASICO,
         tipo: TipoPoder.HABILIDADE_RACA,
         prerequisito_nivel: 1,
-        id_raca: [21],
+        id_raca: [21, 77],
       },
       {
         id: 924,
@@ -20292,6 +20292,62 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         descricao: `Quando exposto à luz solar direta, você fica ofuscado e, a cada rodada, perde 2d6 PV por patamar de personagem.`,
         tipo: TipoPoder.HABILIDADE_RACA,
         id_raca: [74],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1175,
+        nome: `Bênção das Fadas`,
+        descricao: `<p>Escolha quatro bênçãos da lista a seguir. Quando recebe um novo poder de classe, pode trocar este poder por uma bênção. Cada bênção só pode ser escolhida uma vez.</p>
+        <ul>
+        <li>Ardiloso Como uma Cobra. Você pode lançar Disfarce Ilusório (atributo-chave Carisma). ✨</li>
+        <li>Duro Como Pedra. Você recebe +1 em Constituição e resistência a magia +2.</li>
+        <li>Falante Como um Grilo. Você recebe +2 em Adestramento e Sobrevivência, e pode falar com animais e plantas (como o efeito da magia Voz Divina). ✨</li>
+        <li>Forte Como um Touro. Você recebe +1 em Força e +5 de capacidade de carga.</li>
+        <li>Mágico Como uma Borboleta. Você pode lançar uma magia arcana de 1º círculo à sua escolha (atributo-chave Carisma). Se aprender novamente esta magia, seu custo diminui em –1 PM. ✨</li>
+        <li>Raivoso Como um Carcaju. Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma corpo a corpo, pode gastar 1 PM para fazer um ataque extra com a mordida.</li>
+        <li>Rápido Como um Coelho. Você recebe +1 em Destreza e deslocamento +3m.</li>
+        <li>Sábio Como uma Coruja. Você recebe +1 em Sabedoria e +3 PM.</li>
+        <li>Sagaz Como um Falcão. Você recebe visão na penumbra e está permanentemente sob efeito da magia Visão Mística com o aprimoramento de enxergar criaturas e objetos invisíveis. ✨</li>
+        </ul>`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [75],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1176,
+        nome: `Natureza Elemental`,
+        descricao: `<p>Escolha um tipo de dano entre ácido, eletricidade, fogo ou frio. Você recebe RD 5 do tipo escolhido. Além disso, pode gastar uma ação de movimento e 1 PM para encantar uma arma que esteja usando. A arma causa +1d12 pontos de dano do tipo escolhido. O efeito dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). ✨</p>`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [76],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1177,
+        nome: `Olhar Místico`,
+        descricao: `<p>Você pode lançar uma magia de 1º círculo à sua escolha. A magia deve ser da energia correspondente à sua Natureza Elemental. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Se você estiver cego ou semelhante, não consegue conjurar essa magia. ✨</p>`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [76],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1178,
+        nome: `Mecanismo de Defesa`,
+        descricao: `<p>Quando for alvo de um acerto crítico (ou de um efeito capaz de decepar um de seus membros), você pode gastar 3 PM para descolar o membro do corpo e reduzir o dano sofrido à metade. Um membro perdido dessa forma leva 2d6 dias para crescer novamente e, de acordo com o mestre, você pode sofrer o efeito de uma complicação que reflita a falta desse membro (como Maneta para a falta de um braço ou Vagaroso para a falta de uma perna) até que o membro perdido cresça novamente.</p>`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [77],
+        referencias: Referencia.DB,
+        paginas: '',
+      },
+      {
+        id: 1179,
+        nome: `Urodelo`,
+        descricao: `<p>Você recebe visão na penumbra e deslocamento de escalada igual ao seu deslocamento terrestre.</p>`,
+        tipo: TipoPoder.HABILIDADE_RACA,
+        id_raca: [77],
         referencias: Referencia.DB,
         paginas: '',
       }
