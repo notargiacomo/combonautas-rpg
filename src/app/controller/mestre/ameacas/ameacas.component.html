@@ -1,1 +1,59 @@
-<p>ameacas works!</p>
+<app-card-search
+  name="Ameaças"
+  [service]="service"
+  [searchColumn]="['nome', 'grupo']"
+  [colsGrid]="3"
+  [suggestions]="[]"
+  gutterSizeGrid="10px">
+  <ng-template let-item>
+    <mat-card class="card-game">
+      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+        <div class="row">
+          <div class="col-sm-7 mt-1 d-flex">
+            {{ '[ND ' + (item.nd === 0.5 ? '1/2' : item.nd === 0.25 ? '1/4' : item.nd) + '] ' + item.nome }}
+          </div>
+          <div class="col-sm-5 mt-1 d-flex justify-content-end">
+            {{ item.grupo }}
+          </div>
+        </div>
+      </mat-card-title>
+      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+        <div class="row">
+          <div class="col-sm-6 mt-4 d-flex">
+            {{ item.tipo + ' ' + item.tamanho + ' (' + item.papel + ')' }}
+          </div>
+          <div class="col-sm-6 mt-4 d-flex justify-content-end">
+            {{ item.referencia }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <hr />
+          </div>
+        </div>
+        <div class="content mt-2">
+          <div class="row">
+            <div class="col-sm-12 mt-4">
+              <mat-tab-group>
+                <mat-tab label="Imagem"></mat-tab>
+                <mat-tab label="Estatísticas"></mat-tab>
+                <mat-tab label="Espólios">
+                  <div class="mt-4" style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                    <p>
+                      <b>Equipamentos:</b>
+                      {{ item.equipamentos }}
+                    </p>
+                    <p>
+                      <b>Tesouros:</b>
+                      {{ item.tesouros }}
+                    </p>
+                  </div>
+                </mat-tab>
+              </mat-tab-group>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</app-card-search>

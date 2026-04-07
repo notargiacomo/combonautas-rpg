@@ -24,6 +24,7 @@ import { RegrasComponent } from './controller/regras/regras.component';
 import { TerrasDespedacadasComponent } from './controller/terras-despedacadas/terras-despedacadas.component';
 import { PersonagemAleatorioComponent } from './controller/utilitarios/personagem-aleatorio/personagem-aleatorio.component';
 import { FichaRapidaComponent } from './controller/utilitarios/ficha-rapida/ficha-rapida.component';
+import { AmeacasComponent } from './controller/mestre/ameacas/ameacas.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,6 +34,7 @@ export const routes: Routes = [
 
   { path: 'mestre/calculo-desafios', component: CalculoDesafiosComponent },
   { path: 'mestre/tabela-geracao-tesouros', component: TabelaGeracaoTesourosComponent },
+  { path: 'mestre/ameacas', component: AmeacasComponent },
 
   { path: 'campanha/parceiros', component: ParceirosComponent },
   { path: 'campanha/distincoes', component: DistincoesComponent },

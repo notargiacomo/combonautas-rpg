@@ -4,6 +4,7 @@ import { Ameaca } from '@app/model/ameaca';
 import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 
+export const FILTROS_AMEACA = ['nome', 'grupo'];
 @Injectable({
   providedIn: 'root',
 })
@@ -14,11 +15,11 @@ export class AmeacaService extends AbstractService {
 
   listar(filtro: any): Observable<Ameaca[]> {
     let listas = this.http.get<Ameaca[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome']);
+    return this.filtrar(filtro, listas, FILTROS_AMEACA);
   }
 
   consult(filtro: any): Observable<Ameaca[]> {
     let listas = this.http.get<Ameaca[]>(this.url);
-    return this.filtrar(filtro, listas, ['nome']);
+    return this.filtrar(filtro, listas, FILTROS_AMEACA);
   }
 }
