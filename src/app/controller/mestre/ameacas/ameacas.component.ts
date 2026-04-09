@@ -3,6 +3,7 @@ import { AmeacaService } from '@app/service/ameaca.service';
 import { CardSearchComponent } from '@app/components/card-search/card-search.component';
 import { MatCard, MatCardTitle, MatCardContent } from '@angular/material/card';
 import { MatTabGroup, MatTab } from '@angular/material/tabs';
+import { AmeacaMapa } from '@app/mapa/ameaca.mapa';
 
 @Component({
   selector: 'app-ameacas',
@@ -12,4 +13,14 @@ import { MatTabGroup, MatTab } from '@angular/material/tabs';
 })
 export class AmeacasComponent {
   constructor(readonly service: AmeacaService) {}
+
+  mapearParaRoll20(dados: any) {
+    const resultado: Record<string, any> = {};
+
+    for (const attr in AmeacaMapa) {
+      resultado[`attr_${attr}`] = AmeacaMapa[attr](dados);
+    }
+
+    return resultado;
+  }
 }
