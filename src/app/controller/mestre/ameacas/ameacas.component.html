@@ -2,7 +2,7 @@
   name="Ameaças"
   [service]="service"
   [searchColumn]="['nome', 'grupo']"
-  [colsGrid]="3"
+  [colsGrid]="2"
   [suggestions]="[]"
   [rowHeight]="900"
   gutterSizeGrid="10px">
@@ -38,7 +38,7 @@
               <mat-tab-group>
                 @if (item.imagem) {
                   <mat-tab label="Imagem">
-                    <img [src]="item.imagem" />
+                    <img [src]="item.imagem" style="height: 600px !important" />
                   </mat-tab>
                 }
                 <mat-tab label="Estatísticas">
@@ -188,7 +188,10 @@
                   </div>
                 </mat-tab>
                 <mat-tab label="Espólios">
-                  <div class="mt-4" style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                  <div class="row mt-2">
+                    <h5>Recursos</h5>
+                  </div>
+                  <div class="mt-2" style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
                     <p>
                       <b>Equipamentos:</b>
                       {{ item.equipamentos }}
@@ -198,6 +201,159 @@
                       {{ item.tesouros }}
                     </p>
                   </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <hr />
+                    </div>
+                  </div>
+                  <h5>Recursos Naturais (Sobrevivência {{ 15 + item.nd }} para extrair)</h5>
+                  <p>
+                    Certas criaturas, como dragões, elementais e monstros peçonhentos, fornecem recursos específicos
+                    como parte de seus tesouros. Entretanto, existem outros materiais de grande utilidade que podem ser
+                    extraídos de ameaças. Esta seção apresenta regras opcionais para mestres que desejam usar esse tipo
+                    de tesouro em suas aventuras.
+                  </p>
+                  <p>
+                    Recursos naturais podem ser incluídos em qualquer criatura que já não possua um recurso especial, e
+                    podem complementar seu tesouro normal ou substituí-lo (a critério do mestre). Para usar um desses
+                    recursos, escolha um tipo apropriado à criatura em questão. Alternativamente, você pode rolar na
+                    linha referente ao tipo da criatura na Tabela 3-5: Recursos Naturais. A quantidade de recursos
+                    fornecida depende do tamanho da criatura; criaturas Pequenas e Médias fornecem 1 unidade do recurso,
+                    criaturas Grandes e Enormes fornecem 2 unidades e criaturas Colossais fornecem 5 unidades. Criaturas
+                    Minúsculas são muito pequenas para produzir recursos. Embora seja possível extrair recursos de
+                    criaturas inteligentes, isso pode ser considerado um tabu, um crime ou simplesmente um ato hediondo,
+                    dependendo de onde os aventureiros estiverem.
+                  </p>
+                  <p>
+                    Recursos naturais são extraídos como recursos especiais; exigem uma hora de trabalho e um sucesso em
+                    um teste de Sobrevivência ou de um Ofício relacionado ao recurso, com CD 15 + ND da criatura
+                    <b>({{ 15 + item.nd }})</b>
+                    . Em caso de falha, os recursos são estragados.
+                  </p>
+                  <div class="row mt-2">
+                    <table>
+                      <thead>
+                        <tr><th colspan="8">Recursos Naturais</th></tr>
+                        <tr>
+                          <th>Tipo de Criatura (1d6)</th>
+                          <th>Carapaça</th>
+                          <th>Couro</th>
+                          <th>Fonte</th>
+                          <th>Ingrediente</th>
+                          <th>Mantimento</th>
+                          <th>Osso</th>
+                          <th>Sucata</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr [class.linha-destaque]="'Animal' == item.tipo">
+                          <td>Animal</td>
+                          <td>1</td>
+                          <td>2-3</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>4-5</td>
+                          <td>6</td>
+                          <td>-</td>
+                        </tr>
+                        <tr [class.linha-destaque]="'Construto' == item.tipo">
+                          <td>Construto</td>
+                          <td>1-2</td>
+                          <td>-</td>
+                          <td>3</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>5-6</td>
+                        </tr>
+
+                        <tr [class.linha-destaque]="'Espírito' == item.tipo">
+                          <td>Espírito</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>1-3</td>
+                          <td>4-6</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr [class.linha-destaque]="'Humanóide' == item.tipo">
+                          <td>Humanóide</td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>-</td>
+                          <td>4</td>
+                          <td>5-6</td>
+                          <td>-</td>
+                        </tr>
+                        <tr [class.linha-destaque]="'Monstro' == item.tipo">
+                          <td>Monstro</td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>6</td>
+                          <td>-</td>
+                        </tr>
+                        <tr [class.linha-destaque]="'Morto-vivo' == item.tipo">
+                          <td>Morto-vivo</td>
+                          <td>1</td>
+                          <td>-</td>
+                          <td>2-3</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>4-6</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td [colSpan]="8">* Use essa linha para criaturas incorpóreas de qualquer tipo.</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  @if (item.tipo == 'Animal' || item.tipo == 'Monstro') {
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <hr />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h5>
+                        Treinando Criaturas Selvagens - Adestramento
+                        {{ 15 + item.nd + ', Total de Sucessos ' + (3 + item.nd) + '/3 Falhas' }}
+                      </h5>
+                      <p>
+                        As duas formas mais comuns para um personagem obter uma montaria é por meio de uma habilidade,
+                        como Companheiro Animal e Montaria Sagrada, ou usando tibares para comprar um cavalo, trobo ou
+                        outra das montarias comumente disponíveis nos mercados de Arton. Entretanto, existe outra
+                        maneira: treinar uma criatura selvagem.
+                      </p>
+                      <p>
+                        O primeiro passo para treinar uma criatura é domá-la. Para isso, você precisa capturar a
+                        criatura (por meio de uma armadilha, magia etc.) ou derrotá-la em combate. Após isso, deve fazer
+                        um teste de Adestramento (CD 15 + ND da criatura). Se passar, você doma a criatura e pode
+                        começar a treiná-la. Se falhar, a criatura é muito selvagem para ser treinada.
+                      </p>
+                      <p>
+                        Uma vez que a criatura seja domada, é hora de começar seu treinamento. Isso é um teste estendido
+                        de Adestramento (CD 15 + ND da criatura), no qual é necessário um total de sucessos igual a 3 +
+                        ND da criatura antes de 3 falhas. Cada teste representa um dia de trabalho e você recebe um
+                        bônus cumulativo de +1 para cada sucesso consecutivo. Se passar no teste estendido, transforma a
+                        criatura em um parceiro montaria iniciante. Se falhar, precisa começar o treinamento do início.
+                      </p>
+                      <p>
+                        Treinar uma criatura selvagem exige tempo e dedicação. O treinador se torna responsável pela
+                        criatura e deve cuidar de sua alimentação, saúde e segurança. Além disso, precisa passar tempo
+                        suficiente a seu lado para que ela se acostume com sua presença. Por isso, durante o período de
+                        treinamento, você sofre uma penalidade de –2 em testes de perícia e sua recuperação de PM por
+                        descanso diminui em um nível.
+                      </p>
+                    </div>
+                  }
                 </mat-tab>
               </mat-tab-group>
             </div>
