@@ -3,7 +3,7 @@
   [service]="service"
   [searchColumn]="['nome']"
   [colsGrid]="4"
-  [rowHeight]="250"
+  [rowHeight]="300"
   [suggestions]="[]"
   gutterSizeGrid="10px">
   <ng-template let-item>
@@ -24,7 +24,7 @@
         </div>
         <div class="content">
           <div class="row">
-            <div class="col-sm-12 mt-4">
+            <div class="col-sm-12">
               <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
                 <div class="text-justify" [innerHTML]="item.beneficio"></div>
               </div>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Ameaca } from '../model/ameaca';
 import { Referencia } from '@app/enum/referencia.enum';
 import { Tamanho } from '@app/enum/tamanho.enum';
+import { Sentido } from '@app/enum/sentido.enum';
 
 @Injectable({
   providedIn: 'root',
@@ -1232,8 +1233,75 @@ export class AmeacaData {
         tipo: 'Monstro',
         tamanho: Tamanho.GRANDE,
         tesouros: '1d4 doses de veneno batráquio (CD 17 para extrair) e pedaço de língua (CD 17 para extrair)',
+        imagem: 'assets/img/ameaca_sapo_atroz.png',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        iniciativa: 6,
+        percepcao: 3,
+        sentidos: [Sentido.VISAO_PENUMBRA],
+        defesa: 16,
+        fortitude: 15,
+        reflexos: 7,
+        vontade: 0,
+        vida: 95,
+        mana: 0,
+        deslocamento_terrestre: 12,
+        deslocamento_escavacao: 9,
+        atributo_forca: 6,
+        atributo_destreza: 1,
+        atributo_constituicao: 3,
+        atributo_inteligencia: -4,
+        atributo_sabedoria: 1,
+        atributo_carisma: -2,
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Lingua',
+            acerto: 12,
+            dado_dano: '1d6',
+            dano: '6',
+            tipo_dano: 'impacto',
+            alcance: 3,
+            conecta_habilidade: '',
+          },
+        ],
+        ataques_distancia: [],
+        habilidades: [
+          {
+            nome: 'Agarrar Aprimorado (Livre)',
+            descricao: 'Língua (teste +16)',
+          },
+          {
+            nome: 'Boca de Sapo (Livre)',
+            descricao:
+              'No início de cada um de seus turnos, o sapo atroz causa 2d6+8 pontos de dano de impacto, mais veneno, na criatura que estiver agarrando com sua língua.',
+          },
+          {
+            nome: 'Salto Esmagador (Padrão)',
+            descricao:
+              'O sapo pula e cai sobre um oponente menor que ele em alcance curto. O alvo fica caído e sofre 2d6+12 pontos de dano de impacto (Ref CD 17 reduz à metade e evita a condição).',
+          },
+          {
+            nome: 'Veneno',
+            descricao:
+              'Perde 1d12 PV e fica paralisado por 1 rodada, Fort CD 18 evita a paralisia e reduz a perda de vida para 1d6.',
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Atletismo',
+            valor: 10,
+          },
+          {
+            nome: 'Saltar',
+            valor: 20,
+          },
+          {
+            nome: 'Furtividade',
+            valor: 7,
+          },
+        ],
       },
       {
         id: 104,

@@ -33,6 +33,8 @@ import { ParceiroData } from './parceiro.data';
 import { Parceiro } from '@app/model/parceiro';
 import { ArtefatoData } from './artefato.data';
 import { AmeacaData } from './ameacas.data';
+import { FamiliarData } from './familiar.data';
+import { Familiar } from '@app/model/familiar';
 
 @Injectable({
   providedIn: 'root',
@@ -56,7 +58,8 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly tabelaGeracaoTesouroData: TabelaGeracaoTesouroData,
     private readonly parceiroData: ParceiroData,
     private readonly artefatoData: ArtefatoData,
-    private readonly ameacaData: AmeacaData
+    private readonly ameacaData: AmeacaData,
+    private readonly familiarData: FamiliarData
   ) {}
 
   createDb() {
@@ -78,6 +81,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const tabelaGeracaoTesouroData: TabelaGeracaoTesouroData[] = this.tabelaGeracaoTesouroData.get();
     const artefato: ArtefatoData[] = this.artefatoData.get();
     const ameaca: AmeacaData[] = this.ameacaData.get();
+    const familiar: Familiar[] = this.familiarData.get();
 
     return {
       raca: raca,
@@ -98,6 +102,7 @@ export class InMemoryDataService implements InMemoryDbService {
       tabelaGeracaoTesouroData: tabelaGeracaoTesouroData,
       artefato: artefato,
       ameaca: ameaca,
+      familiar: familiar,
     };
   }
 }

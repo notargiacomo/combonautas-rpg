@@ -367,7 +367,7 @@ export class ParceiroData {
         nome: 'Urso Pardo',
         descricao:
           'Parceiro montaria (Grande): Iniciante: deslocamento 12m e +1d6 dano corpo a corpo; Veterano: manobra agarrar como ação livre (sem ocupar mãos); Mestre: bônus em rolagens de dano aumenta para +1d10.',
-        chave: ['Montaria', 'AGARRAR','Grande'],
+        chave: ['Montaria', 'AGARRAR', 'Grande'],
         parceiro_patamar: [
           '<b>Iniciante:</b> deslocamento 12m e +1d6 em rolagem de dano corpo a corpo.',
           '<b>Veterano:</b> pode fazer manobra agarrar como ação livre quando acerta ataque corpo a corpo.',
@@ -470,7 +470,7 @@ export class ParceiroData {
           '<b>Mestre:</b> benefícios maiores dependendo do treinamento.',
         ],
         referencias: Referencia.AMEACAS,
-        pagina: '', // trecho "Cavalo de Guerra". :contentReference[oaicite:19]{index=19}
+        pagina: '',
       },
       {
         id: 117,
@@ -484,7 +484,21 @@ export class ParceiroData {
           '<b>Mestre:</b> uma vez por rodada, você pode gastar 1 PM para fazer uma criatura em alcance médio ficar cega por 1d4 rodadas (Ref CD Car evita).',
         ],
         referencias: Referencia.AMEACAS,
-        pagina: '', // trecho "Cavalo de Guerra". :contentReference[oaicite:19]{index=19}
+        pagina: '',
+      },
+      {
+        id: 118,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Sapo Atroz',
+        descricao: ' O sapo atroz é um parceiro montaria (Grande) que fornece os benefícios a seguir. ',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m (normal e de natação) e você recebe uma ação de movimento extra por turno (apenas para se deslocar) e +5 em testes de Atletismo para saltar.',
+          '<b>Veterano:</b> você recebe +2 em testes para derrubar e desarmar.',
+          '<b>Mestre:</b> muda o bônus de Atletismo para +10 e, uma vez por rodada, você pode gastar 1 PM para fazer uma manobra desarmar ou derrubar contra um alvo a até 3m.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
       },
     ];
   }

@@ -4,6 +4,7 @@
   [searchColumn]="['nome', 'grupo']"
   [colsGrid]="3"
   [suggestions]="[]"
+  [rowHeight]="900"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
@@ -35,8 +36,157 @@
           <div class="row">
             <div class="col-sm-12 mt-2">
               <mat-tab-group>
-                <mat-tab label="Imagem"></mat-tab>
-                <mat-tab label="Estatísticas"></mat-tab>
+                @if (item.imagem) {
+                  <mat-tab label="Imagem">
+                    <img [src]="item.imagem" />
+                  </mat-tab>
+                }
+                <mat-tab label="Estatísticas">
+                  <div class="mt-4" style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                    <p>
+                      <b>Iniciativa:</b>
+                      {{ item.iniciativa }},
+                      <b>Percepção:</b>
+                      {{ item.percepcao }}
+                      @for (sentido of item.sentidos; track $index) {
+                        {{ ', ' + sentido }}
+                      }
+                    </p>
+                    <p>
+                      <b>Defesa:</b>
+                      {{ item.defesa }},
+                      <b>For:</b>
+                      + {{ item.fortitude }},
+                      <b>Ref:</b>
+                      + {{ item.reflexos }},
+                      <b>Von:</b>
+                      + {{ item.vontade }},
+                    </p>
+                    <p>
+                      <b>Pontos de Vida:</b>
+                      {{ item.vida }}
+                    </p>
+                    @if (item.mana > 0) {
+                      <p>
+                        <b>Pontos de Mana:</b>
+                        {{ item.mana }}
+                      </p>
+                    }
+                    <p>
+                      <b>Deslocamento:</b>
+                      {{ item.deslocamento_terrestre + 'm (' + item.deslocamento_terrestre / 1.5 + 'q)' }}
+                      @if (item.deslocamento_natacao > 0) {
+                        , natação {{ item.deslocamento_natacao + 'm (' + item.deslocamento_natacao / 1.5 + 'q)' }}
+                      }
+                      @if (item.deslocamento_escalada > 0) {
+                        , escalada {{ item.deslocamento_escalada + 'm (' + item.deslocamento_escalada / 1.5 + 'q)' }}
+                      }
+                      @if (item.deslocamento_escavacao > 0) {
+                        , escavação {{ item.deslocamento_escavacao + 'm (' + item.deslocamento_escavacao / 1.5 + 'q)' }}
+                      }
+                      @if (item.deslocamento_voo > 0) {
+                        , voo {{ item.deslocamento_voo + 'm (' + item.deslocamento_voo / 1.5 + 'q)' }}
+                      }
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <hr />
+                  </div>
+                  <div class="mt-4" style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                    @if (item.ataques_corpo != null && item.ataques_corpo.length > 0) {
+                      <p>
+                        <b>Corpo a Corpo</b>
+                        @for (corpo of item.ataques_corpo; track $index) {
+                          {{
+                            ' ' +
+                              corpo.nome +
+                              ' +' +
+                              corpo.acerto +
+                              ' (' +
+                              corpo.dado_dano +
+                              '+' +
+                              corpo.dano +
+                              ' ' +
+                              corpo.tipo_dano +
+                              ') alcance ' +
+                              corpo.alcance +
+                              'm'
+                          }}
+                          @if (corpo.conecta_habilidade.length > 0) {
+                            {{ ' mais ' + corpo.conecta_habilidade }}
+                          }
+                          ,
+                        }
+                      </p>
+                    }
+                    @if (item.ataques_distancia != null && item.ataques_distancia.length > 0) {
+                      <p>
+                        <b>Corpo a Corpo</b>
+                        @for (distancia of item.ataques_distancia; track $index) {
+                          {{
+                            ' ' +
+                              distancia.nome +
+                              ' +' +
+                              distancia.acerto +
+                              ' (' +
+                              distancia.dado_dano +
+                              '+' +
+                              distancia.dano +
+                              ' ' +
+                              distancia.tipo_dano +
+                              ') alcance ' +
+                              distancia.alcance +
+                              'm'
+                          }}
+                          @if (distancia.conecta_habilidade.length > 0) {
+                            {{ ' mais ' + distancia.conecta_habilidade }}
+                          }
+                          ,
+                        }
+                      </p>
+                    }
+                    @for (habilidade of item.habilidades; track $index) {
+                      <p>
+                        <b>{{ habilidade.nome }}:</b>
+                        {{ habilidade.descricao }}
+                      </p>
+                    }
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <hr />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 align-items-center" style="text-align: center">
+                      <b>FOR</b>
+                      {{ item.atributo_forca }}
+                      <b>DES</b>
+                      {{ item.atributo_destreza }}
+                      <b>CON</b>
+                      {{ item.atributo_constituicao }}
+                      <b>INT</b>
+                      {{ item.atributo_inteligencia }}
+                      <b>SAB</b>
+                      {{ item.atributo_sabedoria }}
+                      <b>CAR</b>
+                      {{ item.atributo_carisma }}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <hr />
+                    </div>
+                  </div>
+                  <div class="" style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
+                    <p>
+                      <b>Perícias</b>
+                      @for (pericia of item.pericias; track $index) {
+                        {{ pericia.nome + ' +' + pericia.valor + ', ' }}
+                      }
+                    </p>
+                  </div>
+                </mat-tab>
                 <mat-tab label="Espólios">
                   <div class="mt-4" style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
                     <p>

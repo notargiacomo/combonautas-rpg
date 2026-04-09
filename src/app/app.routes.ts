@@ -25,6 +25,7 @@ import { TerrasDespedacadasComponent } from './controller/terras-despedacadas/te
 import { PersonagemAleatorioComponent } from './controller/utilitarios/personagem-aleatorio/personagem-aleatorio.component';
 import { FichaRapidaComponent } from './controller/utilitarios/ficha-rapida/ficha-rapida.component';
 import { AmeacasComponent } from './controller/mestre/ameacas/ameacas.component';
+import { FamiliaresComponent } from './controller/campanha/familiares/familiares.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -40,6 +41,7 @@ export const routes: Routes = [
   { path: 'campanha/distincoes', component: DistincoesComponent },
   { path: 'campanha/itens-magicos', component: ItensMagicosComponent },
   { path: 'campanha/artefatos', component: ArtefatosComponent },
+  { path: 'campanha/familiares', component: FamiliaresComponent },
 
   { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent },
   { path: 'utilitarios/ficha-rapida', component: FichaRapidaComponent },
