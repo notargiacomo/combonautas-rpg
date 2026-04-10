@@ -753,20 +753,6 @@ export class ParceiroData {
         pagina: '',
       },
       {
-        id: 69,
-        id_parceiro_pai: 0, // montaria/besta de carga
-        nome: 'Leão',
-        descricao: 'A pantera é um parceiro especial (assassino) que fornece os benefícios a seguir.',
-        chave: ['Montaria'],
-        parceiro_patamar: [
-          '<b>Iniciante:</b> uma vez por rodada, quando causa dano com um ataque corpo a corpo, você pode deixar o alvo sangrando. ',
-          '<b>Veterano:</b> a CD dos testes para remover um sangramento que você provoca aumenta em +2.',
-          '<b>Mestre:</b> os sangramentos que você provoca exigem dois sucessos em testes para serem removidos.',
-        ],
-        referencias: Referencia.AMEACAS,
-        pagina: '',
-      },
-      {
         id: 70,
         id_parceiro_pai: 0, // montaria/besta de carga
         nome: 'Pantera',
