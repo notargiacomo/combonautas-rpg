@@ -922,20 +922,6 @@ export class ParceiroData {
         pagina: '',
       },
       {
-        id: 82,
-        id_parceiro_pai: 0, // montaria/besta de carga
-        nome: 'Unicórnio',
-        descricao: 'O unicórnio é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
-        chave: ['Montaria'],
-        parceiro_patamar: [
-          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
-          '<b>Veterano:</b> seu deslocamento muda para 15m e você pode lançar Purificação. Se aprender essa magia, seu custo é reduzido em –1 PM.',
-          '<b>Mestre:</b> cada dado de seus efeitos mágicos de cura aumenta em um passo (até o máximo de d12). Unicórnios só aceitam ser cavalgados por pessoas que considerem dignas e seus critérios nem sempre são transparentes. O mestre tem a palavra final sobre se um personagem é digno de cavalgar um unicórnio.',
-        ],
-        referencias: Referencia.AMEACAS,
-        pagina: '',
-      },
-      {
         id: 83,
         id_parceiro_pai: 0, // montaria/besta de carga
         nome: 'Cavalo Esqueleto',
