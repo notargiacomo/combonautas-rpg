@@ -16,7 +16,7 @@ export class ParceiroData {
   constructor() {
     this.parceiro = [
       {
-        id: 2,
+        id: 1,
         nome: 'Adepto',
         descricao: 'Um conjurador capaz de ajudá-lo a lançar suas magias.',
         chave: ['DIMINUI', 'CUSTO_MAGIA', 'Adepto'],
@@ -29,7 +29,7 @@ export class ParceiroData {
         pagina: '260',
       },
       {
-        id: 3,
+        id: 2,
         nome: 'Ajudante',
         descricao: 'Um bardo, nobre ou sábio que ajuda com palavras firmes ou encorajadoras.',
         chave: ['AUMENTA', 'PERICIA', 'Ajudante'],
@@ -43,7 +43,7 @@ export class ParceiroData {
         pagina: '260',
       },
       {
-        id: 6,
+        id: 3,
         nome: 'Assassino',
         descricao: 'Um ladino ou outro tipo furtivo e letal.',
         chave: ['AUMENTA', 'ATAQUE', 'DANO', 'Assassino'],
@@ -56,7 +56,7 @@ export class ParceiroData {
         pagina: '260',
       },
       {
-        id: 7,
+        id: 4,
         nome: 'Atirador',
         descricao: 'Um arqueiro, besteiro ou outro combatente à distância.',
         chave: ['AUMENTA', 'DANO', 'Atirador'],
@@ -69,7 +69,7 @@ export class ParceiroData {
         pagina: '261',
       },
       {
-        id: 8,
+        id: 5,
         nome: 'Besta de Carga',
         descricao: 'Um animal capaz de carregar peso, como um boi, burro ou mula.',
         chave: ['AUMENTA', 'Besta de Carga', 'ANIMAL'],
@@ -82,7 +82,7 @@ export class ParceiroData {
         pagina: '214',
       },
       {
-        id: 10,
+        id: 6,
         nome: 'Combatente',
         descricao: 'Um bucaneiro, guerreiro, paladino ou animal de caça.',
         chave: ['AUMENTA', 'ATAQUE', 'DANO', 'Combatente'],
@@ -95,7 +95,7 @@ export class ParceiroData {
         pagina: '261',
       },
       {
-        id: 11,
+        id: 7,
         nome: 'Destruidor',
         descricao: 'Um arcanista ou inventor.',
         chave: ['AUMENTA', 'DANO', 'Destruidor'],
@@ -108,7 +108,7 @@ export class ParceiroData {
         pagina: '261',
       },
       {
-        id: 14,
+        id: 8,
         nome: 'Fortão',
         descricao: 'Um bárbaro, lutador ou outro tipo que bate primeiro e pensa depois.',
         chave: ['AUMENTA', 'DANO', 'Fortão'],
@@ -121,7 +121,7 @@ export class ParceiroData {
         pagina: '214',
       },
       {
-        id: 15,
+        id: 9,
         nome: 'Guardião',
         descricao: 'Um cavaleiro, cão de guarda ou outro NPC cuja função primária é proteger.',
         chave: ['AUMENTA', 'DEFESA', 'Guardião'],
@@ -134,7 +134,7 @@ export class ParceiroData {
         pagina: '214',
       },
       {
-        id: 16,
+        id: 10,
         nome: 'Magivocador',
         descricao: 'Um conjurador especializado em magias ofensivas.',
         chave: ['AUMENTA', 'DANO', 'MAGIA', 'CD', 'Magivocador'],
@@ -147,7 +147,7 @@ export class ParceiroData {
         pagina: '215',
       },
       {
-        id: 17,
+        id: 11,
         nome: 'Médico',
         descricao: 'Um clérigo, druida, herbalista ou outro NPC com capacidades curativas.',
         chave: ['CURA', 'APOIO', 'REMOVE CONDIÇÃO', 'Médico'],
@@ -160,7 +160,7 @@ export class ParceiroData {
         pagina: '215',
       },
       {
-        id: 21,
+        id: 12,
         nome: 'Perseguidor',
         descricao: 'Um caçador, animal farejador ou outro especialista em localizar alvos.',
         chave: ['AUMENTA', 'PERÍCIA', 'CAÇA', 'Perseguidor'],
@@ -173,7 +173,7 @@ export class ParceiroData {
         pagina: '261',
       },
       {
-        id: 23,
+        id: 13,
         nome: 'Vigilante',
         descricao: 'Um vigia ou animal de guarda, sempre atento aos arredores.',
         chave: ['PERÍCIA', 'Vigilante'],
@@ -186,7 +186,7 @@ export class ParceiroData {
         pagina: '215',
       },
       {
-        id: 100,
+        id: 14,
         id_parceiro_pai: 8, // montaria / besta de carga (inferido)
         nome: 'Capivara',
         descricao:
@@ -202,7 +202,7 @@ export class ParceiroData {
       }, // fonte: trecho "Capivara" no arquivo. :contentReference[oaicite:2]{index=2}
 
       {
-        id: 101,
+        id: 15,
         id_parceiro_pai: 23, // vigilante
         nome: 'Tentacute',
         descricao:
@@ -218,7 +218,7 @@ export class ParceiroData {
       },
 
       {
-        id: 102,
+        id: 16,
         id_parceiro_pai: 6, // assassino (veneno / ataque furtivo)
         nome: 'Elemental do Veneno (Médio) - parceiro',
         descricao:
@@ -234,7 +234,7 @@ export class ParceiroData {
       },
 
       {
-        id: 103,
+        id: 17,
         id_parceiro_pai: 8, // montaria
         nome: 'Urso das Neves',
         descricao:
@@ -250,7 +250,7 @@ export class ParceiroData {
       },
 
       {
-        id: 104,
+        id: 18,
         id_parceiro_pai: 10, // combatente (montaria que aumenta dano)
         nome: 'Gorlogg Alfa (parceiro montaria)',
         descricao:
@@ -266,7 +266,7 @@ export class ParceiroData {
       },
 
       {
-        id: 105,
+        id: 19,
         id_parceiro_pai: 8, // montaria
         nome: 'Cavalo Glacial',
         descricao:
@@ -282,7 +282,7 @@ export class ParceiroData {
       },
 
       {
-        id: 106,
+        id: 20,
         id_parceiro_pai: 8, // cavalo / montaria (Cavalo de Namalkah)
         nome: 'Cavalo de Namalkah',
         descricao:
@@ -298,7 +298,7 @@ export class ParceiroData {
       },
 
       {
-        id: 107,
+        id: 21,
         id_parceiro_pai: 8, // besta de carga / montaria
         nome: 'Cavalo de Carga',
         descricao:
@@ -314,7 +314,7 @@ export class ParceiroData {
       },
 
       {
-        id: 108,
+        id: 22,
         id_parceiro_pai: 10, // combatente / aumenta dano
         nome: 'Deinonico (parceiro montaria média)',
         descricao:
@@ -330,7 +330,7 @@ export class ParceiroData {
       },
 
       {
-        id: 109,
+        id: 23,
         id_parceiro_pai: 3, // ajudante (kobold como parceiro especial: combatente, mas usa textualmente "combatente")
         nome: 'Kobold (parceiro especial)',
         descricao:
@@ -346,7 +346,7 @@ export class ParceiroData {
       },
 
       {
-        id: 110,
+        id: 24,
         id_parceiro_pai: 23, // vigilante / familiar
         nome: 'Verilêmur',
         descricao:
@@ -362,7 +362,7 @@ export class ParceiroData {
       },
 
       {
-        id: 111,
+        id: 25,
         id_parceiro_pai: 8, // montaria (Urso Pardo como montaria grande)
         nome: 'Urso Pardo',
         descricao:
@@ -378,7 +378,7 @@ export class ParceiroData {
       },
 
       {
-        id: 112,
+        id: 26,
         id_parceiro_pai: 8, // montaria enorme
         nome: 'Urso das Cavernas',
         descricao:
@@ -394,7 +394,7 @@ export class ParceiroData {
       },
 
       {
-        id: 113,
+        id: 27,
         id_parceiro_pai: 10, // combatente / montaria enorme (mamute → equivalente a elefante)
         nome: 'Mamute (parceiro montaria Enorme)',
         descricao:
@@ -410,7 +410,7 @@ export class ParceiroData {
       },
 
       {
-        id: 114,
+        id: 28,
         id_parceiro_pai: 21, // perseguidor (farejador, rastreador)
         nome: 'Perdigueiro Troll',
         descricao:
@@ -426,7 +426,7 @@ export class ParceiroData {
       },
 
       {
-        id: 115,
+        id: 29,
         id_parceiro_pai: 10, // montaria / combatente (selako)
         nome: 'Selako',
         descricao:
@@ -442,7 +442,7 @@ export class ParceiroData {
       },
 
       {
-        id: 116,
+        id: 30,
         id_parceiro_pai: 3, // ajudante / tipo de suporte
         nome: 'Platan (parceiro montaria/apoio)',
         descricao:
@@ -458,7 +458,7 @@ export class ParceiroData {
       },
 
       {
-        id: 117,
+        id: 31,
         id_parceiro_pai: 8, // montaria/besta de carga
         nome: 'Cavalo de Guerra',
         descricao:
@@ -473,7 +473,7 @@ export class ParceiroData {
         pagina: '',
       },
       {
-        id: 117,
+        id: 32,
         id_parceiro_pai: 21, // montaria/besta de carga
         nome: 'Falcão',
         descricao: 'Um falcão é um parceiro especial (perseguidor) que fornece os benefícios a seguir. ',
@@ -487,15 +487,693 @@ export class ParceiroData {
         pagina: '',
       },
       {
-        id: 118,
+        id: 33,
         id_parceiro_pai: 0, // montaria/besta de carga
         nome: 'Sapo Atroz',
-        descricao: ' O sapo atroz é um parceiro montaria (Grande) que fornece os benefícios a seguir. ',
+        descricao: 'O sapo atroz é um parceiro montaria (Grande) que fornece os benefícios a seguir. ',
         chave: ['Montaria'],
         parceiro_patamar: [
           '<b>Iniciante:</b> seu deslocamento muda para 9m (normal e de natação) e você recebe uma ação de movimento extra por turno (apenas para se deslocar) e +5 em testes de Atletismo para saltar.',
           '<b>Veterano:</b> você recebe +2 em testes para derrubar e desarmar.',
           '<b>Mestre:</b> muda o bônus de Atletismo para +10 e, uma vez por rodada, você pode gastar 1 PM para fazer uma manobra desarmar ou derrubar contra um alvo a até 3m.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 34,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Bulette',
+        descricao: 'O bulette é um parceiro montaria (Grande) que fornece os benefícios a seguir. ',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m (escavação 6m) e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo. ',
+          '<b>Veterano:</b> o bônus em rolagens de dano muda para +1d10.',
+          '<b>Mestre:</b> o deslocamento de escavação muda para 12m e o bônus em rolagens de dano muda para +2d8.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 35,
+        id_parceiro_pai: 21, // montaria/besta de carga
+        nome: 'Hiena',
+        descricao: 'A hiena é um parceiro especial (perseguidor) que fornece os benefícios a seguir.',
+        chave: ['Perseguidor'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> +2 em Furtividade e Sobrevivência.',
+          '<b>Veterano:</b> você pode usar Oportunismo. Se possuir esse poder, em vez disso seu custo diminui em –1 PM.',
+          '<b>Mestre:</b> você pode usar Sentidos Aguçados. Alternativamente, uma hiena pode ser uma montaria Média com as estatísticas de um hienodonte (a seguir).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 36,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Hienodonte',
+        descricao: 'O hienodonte é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Veterano:</b> você pode usar Oportunismo. Se possuir esse poder, em vez disso seu custo diminui em –1 PM.',
+          '<b>Mestre:</b> quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 37,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Corcel de Kally',
+        descricao: 'O corcel de Kally é um parceiro montaria (Grande) que fornece os benefícios a seguir. ',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.',
+          '<b>Veterano:</b> o bônus na rolagem de dano muda para +1d8 e seu deslocamento muda para 12m (normal e de voo).',
+          '<b>Mestre:</b> seu deslocamento normal e de voo muda para 18m e, uma vez por rodada, você pode gastar 2 PM para causar 3d8 pontos de dano de fogo em todas as criaturas em um cone de 6m (Ref CD Car reduz à metade).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 38,
+        id_parceiro_pai: 9, // montaria/besta de carga
+        nome: 'Ko-Kabuto',
+        descricao: 'O ko-kabuto é um parceiro especial (guardião) que fornece os benefícios a seguir.',
+        chave: ['Guardião'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você recebe visão na penumbra e +1 na Defesa.',
+          '<b>Veterano:</b> uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.',
+          '<b>Mestre:</b> o bônus na Defesa muda para +2 e o bônus em rolagens de dano muda para +1d10. Alternativamente, um ko-kabuto pode ser uma montaria Pequena (adequada a criaturas Minúsculas) com as estatísticas de um dai-kabuto (a seguir).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 39,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Dai-Kabuto',
+        descricao: 'O dai-kabuto é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m e você recebe +2 em testes de agarrar e derrubar e uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Veterano:</b> você recebe deslocamento de voo 6m.',
+          '<b>Mestre:</b> o bônus em agarrar se aplica a todas as manobras e você recebe +2 na Defesa.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 40,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Bogum',
+        descricao:
+          'O bogum é um parceiro especial (companheiro animal), exclusivo de druidas, que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você forma um elo mental com o bogum (semelhante ao de um arcanista com seu familiar) e recebe +2 em Percepção e Sobrevivência.',
+          '<b>Veterano:</b> uma vez por rodada, você recebe +1d6 de ácido em uma rolagem de dano. ',
+          '<b>Mestre:</b> o bogum fornece também o benefício de um dedo de ente (veja Tormenta20, p. 160)',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 41,
+        id_parceiro_pai: 8, // montaria/besta de carga
+        nome: 'Escudeiro',
+        descricao: 'O escudeiro é um parceiro especial (fortão) que fornece os benefícios a seguir.',
+        chave: ['Fortão'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você pode empunhar o escudeiro como uma lança e um escudo pesado na mesma mão; você pode atacar com a lança sem perder o bônus na Defesa com o escudo, mas não pode atacar com ela e o escudo na mesma rodada.',
+          '<b>Veterano:</b> o escudeiro recebe uma melhoria de arma ou de escudo (exceto material especial).',
+          '<b>Mestre:</b> o escudeiro recebe uma segunda melhoria de arma ou de escudo (exceto material especial).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 42,
+        id_parceiro_pai: 9, // montaria/besta de carga
+        nome: 'Escudeiro',
+        descricao:
+          'O fofo é um parceiro especial (guardião) que fornece os benefícios a seguir. Iniciante: você recebe redução de dano 1.',
+        chave: ['Guardião'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você recebe redução de dano 1.',
+          '<b>Veterano:</b> a RD aumenta para 2 e você pode vestir um item que ocupe 1 espaço ou menos sem contar em seu limite de itens vestidos.',
+          '<b>Mestre:</b> a RD aumenta para 3.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 43,
+        id_parceiro_pai: 13, // montaria/besta de carga
+        nome: 'Gambá',
+        descricao: 'O gambá é um parceiro especial (vigilante) que fornece os benefícios a seguir.',
+        chave: ['Vigilante'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você recebe +2 em Iniciativa e Percepção.',
+          '<b>Veterano:</b> você pode gastar uma ação de movimento e 1 PM para deixar uma criatura em alcance curto enjoada por 1d4 rodadas (Fort CD Sab evita). ',
+          '<b>Mestre:</b> os bônus em perícias aumentam para +5.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 44,
+        id_parceiro_pai: 2, // montaria/besta de carga
+        nome: 'Homúnculo',
+        descricao: 'O homúnculo é um parceiro especial (ajudante) que fornece os benefícios a seguir.',
+        chave: ['Ajudante'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seus venenos causam a perda de +1 PV por dado.',
+          '<b>Veterano:</b> uma vez por rodada, quando faz um ataque, você pode gastar 1 PM. Se acertar o ataque, causa a perda de 1d12 PV por veneno.',
+          '<b>Mestre:</b> a perda de PV aumenta para +2 por dado.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 45,
+        id_parceiro_pai: 12, // montaria/besta de carga
+        nome: 'Kill’Bone',
+        descricao: 'O kill’bone é um parceiro especial (perseguidor) que fornece os benefícios a seguir. ',
+        chave: ['Perseguidor'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você recebe faro e, uma vez por rodada, +1d6 em uma rolagem de dano corpo a corpo (o dano extra é dobrado contra finntroll e trolls).',
+          '<b>Veterano:</b> o bônus em rolagens de dano muda para +1d8 e você recebe +2 em testes de perícia contra finntroll e trolls. ',
+          '<b>Mestre:</b> o bônus em rolagens de dano muda para +1d10 e você não pode ser flanqueado.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 46,
+        id_parceiro_pai: 13, // montaria/besta de carga
+        nome: 'Tentacute',
+        descricao: 'O tentacute é um parceiro especial (vigilante) que fornece os benefícios a seguir.',
+        chave: ['Vigilante'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você recebe +2 em Percepção e, quando faz um teste de Ladinagem para punga, pode rolar dois dados e usar o melhor resultado.',
+          '<b>Veterano:</b> uma vez por rodada, você pode gastar uma ação de movimento e 1 PM para fazer um teste de Ladinagem para punga contra um alvo em alcance curto que possa ser alcançado pelo tentacute.',
+          '<b>Mestre:</b> o bônus em Percepção se torna +4 e o alcance da punga muda para médio.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 47,
+        id_parceiro_pai: 13, // montaria/besta de carga
+        nome: 'Verilêmur',
+        descricao: 'O verilêmur é um parceiro especial (vigilante) que fornece os benefícios a seguir.',
+        chave: ['Vigilante'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você pode lançar a magia Círculo da Justiça (atributo-chave Sabedoria); se aprender essa magia, seu custo diminui em –1 PM.',
+          '<b>Veterano:</b> quando falha em um teste de resistência contra uma magia, você pode gastar 2 PM para rolar novamente esse teste (apenas uma vez por teste).',
+          '<b>Mestre:</b> a CD para resistir à sua magia Círculo da Justiça aumenta em +5.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 48,
+        id_parceiro_pai: 2, // montaria/besta de carga
+        nome: 'Verilêmur',
+        descricao: 'O malafex é um parceiro especial (ajudante) que fornece os benefícios a seguir.',
+        chave: ['Ajudante'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você pode usar Sorte dos Loucos. Se já tiver esse poder, a perda de PM é reduzida para 1d4.',
+          '<b>Veterano:</b> você pode usar Sorte dos Loucos em aliados voluntários em alcance curto (caso falhe, o aliado perde os PM).',
+          '<b>Mestre:</b> quando um inimigo em alcance curto faz um teste, você pode gastar 2 PM para forçá-lo a rolar novamente o dado. Se ainda assim ele passar, você perde 1d6 PM (ou 1d4 se tiver Sorte dos Loucos).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 49,
+        id_parceiro_pai: 3, // montaria/besta de carga
+        nome: 'Asa-Assassina',
+        descricao: 'Uma asa-assassina é um parceiro especial (assassino) que fornece os benefícios a seguir.',
+        chave: ['Assassino'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> uma vez por rodada, quando causa dano com um ataque, você pode deixar a vítima sangrando.',
+          '<b>Veterano:</b> a perda de PV pelo sangramento aumenta para 1d8.',
+          '<b>Mestre:</b> a perda de PV aumenta para 2d8.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 50,
+        id_parceiro_pai: 1, // montaria/besta de carga
+        nome: 'Cocatriz',
+        descricao: 'A cocatriz é um parceiro especial (adepto) que fornece os benefícios a seguir.',
+        chave: ['Adepto'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> suas habilidades mágicas que causam condições de movimento têm o custo reduzido em –1 PM.',
+          '<b>Veterano:</b> a CD para resistir a essas habilidades aumenta em +2.',
+          '<b>Mestre:</b> a redução de custo se torna cumulativa com outras reduções.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 51,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Cocatriz-Real',
+        descricao: 'A cocatriz-real é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você ignora terreno difícil.',
+          '<b>Veterano:</b> uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer com que a vítima fique lenta (Fort CD For evita).',
+          '<b>Mestre:</b> seu deslocamento muda para 12m (normal e de voo). Entretanto, quando voa, você deve terminar seu movimento sobre o chão ou outra superfície firme.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 52,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Baleote',
+        descricao: 'O baleote é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> você pode gastar 1 PM para causar 2d6 pontos de dano de eletricidade em uma linha de 9m (um baleote iniciante é muito jovem para ser usado como montaria).',
+          '<b>Veterano:</b>  pode ser usado como montaria, mudando seu deslocamento para 9m (voo 12m).',
+          '<b>Mestre:</b> seu deslocamento de voo muda para 15m e você também pode gastar 4 PM para causar 6d6 pontos de dano de eletricidade em uma linha de 9m.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 53,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Capivara',
+        descricao: 'A capivara é um parceiro montaria (Médio) que fornece os benefícios a seguir. ',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m (natação 12m) e você recebe uma ação de movimento extra por turno (apenas para se deslocar). ',
+          '<b>Veterano:</b> você pode usar Aparência Inofensiva (se já possuir esse poder, a CD para resistir a ele aumenta em +2).',
+          '<b>Mestre:</b> uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 54,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Cavalo',
+        descricao:
+          'A montaria mais comum do Reinado. Cavalos sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar). ',
+          '<b>Veterano:</b> como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.',
+          '<b>Mestre:</b> como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 55,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Pônei',
+        descricao: 'Como cavalo, só que de tamanho médio.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar). ',
+          '<b>Veterano:</b> como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.',
+          '<b>Mestre:</b> como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 56,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Cão de Caça',
+        descricao: 'Cães de porte adequado são montarias comuns para personagens Pequenos ou Minúsculos.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m, você pode usar faro e recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Veterano:</b> como acima, mas seu deslocamento muda para 12m e você recebe +2 na Defesa.',
+          '<b>Mestre:</b> como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 57,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Lobo-das-Cavernas',
+        descricao:
+          'Primos primitivos e maiores dos lobos comuns, lobos-das-cavernas são usados como montaria por goblinoides e aventureiros selvagens.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar). ',
+          '<b>Veterano:</b>  como acima, mas seu deslocamento muda para 15m e, uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.',
+          '<b>Mestre:</b> como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 58,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Lobo',
+        descricao: 'Como Lobo-das-Cavernas, mas é montaria média.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar). ',
+          '<b>Veterano:</b>  como acima, mas seu deslocamento muda para 15m e, uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.',
+          '<b>Mestre:</b> como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 59,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Grifo',
+        descricao: 'Esta fera majestosa é muito cobiçada por heróis',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo (um grifo iniciante é um filhote e não pode ser usado como montaria).',
+          '<b>Veterano:</b>como acima, mas pode ser usado como montaria, mudando seu deslocamento para voo 18m. ',
+          '<b>Mestre:</b> como acima, mas você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 60,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Gorlogg',
+        descricao: 'Esta besta primitiva é usada como montaria pelos mais selvagens.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.',
+          '<b>Veterano:</b> como acima, mas o bônus em rolagens de dano corpo a corpo muda para +1d10.',
+          '<b>Mestre:</b> seu deslocamento muda para 15m e o bônus em rolagens de dano corpo a corpo muda para +2d8.',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 61,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Trobo',
+        descricao: 'Usados como animais de carga e tração, trobos também servem como montarias.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m e você recebe uma ação de movimento extra por turno (apenas para se deslocar) e +1 em testes de resistência.',
+          '<b>Veterano:</b> como acima, mas seu deslocamento muda para 12m e o bônus em testes de resistência muda para +2.',
+          '<b>Mestre:</b> como acima, mas o bônus em testes de resistência muda para +5.',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 62,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Cavalo de Guerra',
+        descricao:
+          'Como Cavalo normal, porém cavalo de guerra dispensam teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar). ',
+          '<b>Veterano:</b> como acima, mas seu deslocamento muda para 15m e você recebe +2 em ataques corpo a corpo.',
+          '<b>Mestre:</b> como acima, mas você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar).',
+        ],
+        referencias: Referencia.BASICO,
+        pagina: '',
+      },
+      {
+        id: 63,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Cavalo de Namalkah',
+        descricao: 'O cavalo de Namalkah é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 15m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Veterano:</b> seu deslocamento muda para 18m e você recebe +2 em ataques corpo a corpo.',
+          '<b>Mestre:</b> você recebe uma segunda ação de movimento extra por turno (novamente, apenas para se deslocar) e, uma vez por rodada, +2d6 em uma rolagem de dano corpo a corpo. Esses cavalos raramente são encontrados à venda fora de Namalkah. Mesmo no reino, conquistar um deles requer mais que dinheiro — requer merecimento. Obtê-los, mesmo por meio de uma habilidade, exige algum tipo de missão ou aventura para se provar digno.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 64,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Cavalo Glacial',
+        descricao: 'O cavalo de Namalkah é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> O cavalo glacial é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+          '<b>Veterano:</b> seu deslocamento muda para 9m (natação 12m) e você recebe redução de frio 5.',
+          '<b>Mestre:</b> uma vez por rodada, quando faz um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso e acertar o ataque, você causa +2d6 pontos de dano de frio. Mestre: muda a redução de frio para 10 e você recebe uma ação de movimento extra (apenas para se deslocar).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 65,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Corcel do Deserto',
+        descricao: 'O corcel do deserto é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você ignora terreno difícil natural.',
+          '<b>Veterano:</b> uma vez por rodada, você pode gastar 1 PM para causar 2d6 pontos de dano de impacto em uma criatura adjacente. ',
+          '<b>Mestre:</b> seu deslocamento muda para 15m e você recebe +5 em testes para resistir a efeitos de clima, calor e frio (veja Tormenta20, p. 267).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 66,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Dromedário',
+        descricao: 'O dromedário é um parceiro montaria (Grande) que fornece os benefícios a seguir',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e ignora terreno difícil natural em desertos e terrenos similares. ',
+          '<b>Veterano:</b> você recebe +2 em Percepção e Sobrevivência (este bônus é dobrado em desertos) e, uma vez por rodada, pode gastar 1 PM para causar 1d4+3 pontos de dano de impacto em uma criatura em alcance curto.',
+          '<b>Mestre:</b> você recebe uma ação de movimento extra por turno (apenas para se deslocar) e +5 em testes para resistir a efeitos de clima.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 67,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Elefante',
+        descricao: 'O elefante é um parceiro montaria (Enorme) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e ignora terreno difícil.',
+          '<b>Veterano:</b> uma vez por rodada, você pode sacar um item ou pegar um objeto solto em alcance de 4,5m como ação livre.',
+          '<b>Mestre:</b> Você recebe +5 em testes de manobra para atropelar e, uma vez por rodada, se vencer o teste para atropelar uma criatura, pode pagar 1 PM para fazer um ataque contra ela.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 68,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Leão',
+        descricao: 'O leão é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em rolagens de dano corpo a corpo. ',
+          '<b>Veterano:</b> quando faz uma investida, o bônus em rolagens de dano corpo a corpo dobra.',
+          '<b>Mestre:</b> seu deslocamento muda para 15m e o bônus em rolagens de dano corpo a corpo muda para +1d10.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 69,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Leão',
+        descricao: 'A pantera é um parceiro especial (assassino) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> uma vez por rodada, quando causa dano com um ataque corpo a corpo, você pode deixar o alvo sangrando. ',
+          '<b>Veterano:</b> a CD dos testes para remover um sangramento que você provoca aumenta em +2.',
+          '<b>Mestre:</b> os sangramentos que você provoca exigem dois sucessos em testes para serem removidos.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 70,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Pantera',
+        descricao: 'A pantera é um parceiro especial (assassino) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> uma vez por rodada, quando causa dano com um ataque corpo a corpo, você pode deixar o alvo sangrando. ',
+          '<b>Veterano:</b> a CD dos testes para remover um sangramento que você provoca aumenta em +2.',
+          '<b>Mestre:</b> os sangramentos que você provoca exigem dois sucessos em testes para serem removidos.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 71,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Tigre',
+        descricao: 'O tigre é um parceiro montaria (Grande) que fornece os benefícios a seguir. ',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe +5 em Iniciativa.',
+          '<b>Veterano:</b> na primeira rodada de combate, você recebe +5 em testes de ataque e rolagens de dano com armas.',
+          '<b>Mestre:</b> seu deslocamento muda para 15m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 72,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Rinoceronte',
+        descricao: 'O rinoceronte é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe +2 em testes de ataque quando faz investidas.',
+          '<b>Veterano:</b> você pode usar Carga de Cavalaria. Caso possua esse poder, o bônus no dano em investida aumenta em +1d8.',
+          '<b>Mestre:</b> quando faz uma investida você ignora 10 pontos de redução de dano do alvo.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 73,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Rinoceronte Lanoso',
+        descricao: 'O rinoceronte lanoso é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe +2 em testes de ataque quando faz investidas.',
+          '<b>Veterano:</b>  você pode usar Carga de Cavalaria. Se possui esse poder, o bônus no dano em investida aumenta em +1d8.',
+          '<b>Mestre:</b> seu deslocamento não é afetado por gelo ou neve.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 74,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Brontotério',
+        descricao: 'O brontotério é um parceiro montaria (Enorme) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe +1 na Defesa.',
+          '<b>Veterano:</b> o bônus na Defesa muda para +2 e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Mestre:</b> você recebe redução de dano 5.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 75,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Tatu-Montanha',
+        descricao: 'O tatu-montanha é um parceiro montaria (Enorme) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m (normal e de natação) e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Veterano:</b> você recebe +1 na Defesa e redução de ácido 5.',
+          '<b>Mestre:</b> muda o bônus na Defesa para +2 e a redução de ácido para 10.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 76,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Tumarkhân',
+        descricao: 'O tumarkhân é um parceiro montaria (Enorme) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e seu limite de carga aumenta em 5 espaços.',
+          '<b>Veterano:</b> você recebe uma ação de movimento extra por turno (apenas para se deslocar) e, uma vez por rodada, recebe +1d8 em uma rolagem de dano corpo a corpo. ',
+          '<b>Mestre:</b> o bônus no limite de carga muda para 10 espaços e, quando faz um teste de Força ou de perícia baseada em Força, você pode gastar 2 PM para rolar dois dados e usar o melhor resultado.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 77,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Urso Panda',
+        descricao: 'O panda é um parceiro montaria (Médio) que fornece os benefícios a seguir. ',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 9m e você recebe +2 em Diplomacia e uma ação de movimento extra por turno (apenas para se deslocar). ',
+          '<b>Veterano:</b> você pode usar Rolamento Defensivo. Caso possua esse poder, em vez disso o custo para usá-lo diminui em –1 PM.',
+          '<b>Mestre:</b> você pode usar Aparência Inofensiva. Se possuir esse poder, a CD para resistir a ele aumenta em +2.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 78,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Urso Pardo',
+        descricao: 'O urso pardo é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e, uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo.',
+          '<b>Veterano:</b> uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra agarrar como uma ação livre. Essa manobra não deixa sua mão ocupada, mas você só pode manter um inimigo agarrado por vez.',
+          '<b>Mestre:</b> muda o bônus em rolagens de dano corpo a corpo para +1d10.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 79,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Urso das Cavernas',
+        descricao: 'O urso das cavernas é um parceiro montaria (Enorme) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe redução de dano 2. ',
+          '<b>Veterano:</b> uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra agarrar como uma ação livre. Essa manobra não deixa sua mão ocupada, mas você só pode manter um inimigo agarrado desta forma.',
+          '<b>Mestre:</b> muda a redução de dano para 5.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 80,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Warg',
+        descricao:
+          'O warg é um parceiro montaria (Grande) que não causa penalidades em Furtividade por seu tamanho e fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Veterano:</b> você recebe +2 em Furtividade e pode usar a habilidade Ataque Furtivo +2d6 (se já possui Ataque Furtivo, o bônus de dano se acumula).',
+          '<b>Mestre:</b> uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.',
+        ],
+        referencias: Referencia.AMEACAS,
+        pagina: '',
+      },
+      {
+        id: 81,
+        id_parceiro_pai: 0, // montaria/besta de carga
+        nome: 'Unicórnio',
+        descricao: 'O unicórnio é um parceiro montaria (Grande) que fornece os benefícios a seguir.',
+        chave: ['Montaria'],
+        parceiro_patamar: [
+          '<b>Iniciante:</b>seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).',
+          '<b>Veterano:</b> seu deslocamento muda para 15m e você pode lançar Purificação. Se aprender essa magia, seu custo é reduzido em –1 PM.',
+          '<b>Mestre:</b> cada dado de seus efeitos mágicos de cura aumenta em um passo (até o máximo de d12). Unicórnios só aceitam ser cavalgados por pessoas que considerem dignas e seus critérios nem sempre são transparentes. O mestre tem a palavra final sobre se um personagem é digno de cavalgar um unicórnio..',
         ],
         referencias: Referencia.AMEACAS,
         pagina: '',
