@@ -373,7 +373,7 @@ export class ParceiroData {
       {
         id: 42,
         id_parceiro_pai: 9, // montaria/besta de carga
-        nome: 'Escudeiro',
+        nome: 'Fofo',
         descricao:
           'O fofo é um parceiro especial (guardião) que fornece os benefícios a seguir. Iniciante: você recebe redução de dano 1.',
         chave: ['Guardião'],
