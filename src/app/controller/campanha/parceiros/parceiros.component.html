@@ -4,21 +4,20 @@
   [searchColumn]="['nome', 'chave']"
   [colsGrid]="3"
   [rowHeight]="450"
-  [suggestions]="[ 
+  [suggestions]="[
     'Pequeno',
-    'Médio', 
+    'Médio',
     'Grande',
-    'Enorme', 
-    'Montaria', 
-    'Movimento Extra', 
-    'Besta de Carga', 
-    'Natação', 
-    'Familiar', 
-    'Especial', 
+    'Enorme',
+    'Montaria',
+    'Movimento Extra',
+    'Besta de Carga',
+    'Natação',
+    'Familiar',
+    'Especial',
     'Combatente',
     'Perseguidor',
-    'Vigilante', 
-
+    'Vigilante',
   ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
@@ -39,7 +38,7 @@
         </div>
         <div class="content mt-2">
           <div class="row">
-            <div class="col-sm-12 mt-4">
+            <div class="col-sm-12 mt-2">
               <div style="text-align: justify; margin-bottom: 1em; line-height: 1.6">
                 <div class="text-justify" [innerHTML]="item.descricao"></div>
                 <div *ngFor="let patamar of item.parceiro_patamar">
