@@ -2565,7 +2565,7 @@ export class RegraData {
             </tr>
             <tr>
               <td>Sob cobertura leve</td>
-              <td>+2</td>
+              <td>+5</td>
             </tr>
             <tr>
               <td>Sob cobertura total</td>
