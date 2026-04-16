@@ -1275,6 +1275,34 @@ export class ParceiroData {
         referencias: Referencia.DEUSES,
         pagina: '',
       },
+      {
+        id: 109,
+        id_parceiro_pai: 6, // montaria/besta de carga
+        nome: 'Texugo',
+        descricao: 'O texugo é um parceiro especial (combatente) que fornece os benefícios a seguir.',
+        chave: [''],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> uma vez por rodada você recebe +1d4 em um teste de ataque corpo a corpo.',
+          '<b>Veterano:</b> sua margem de ameaça com armas corpo a corpo aumenta em +1.',
+          '<b>Mestre:</b> quando sofre dano, você recebe +2 em testes de ataque e rolagens de dano até o fim de seu próximo turno.',
+        ],
+        referencias: Referencia.DB,
+        pagina: '',
+      },
+      {
+        id: 110,
+        id_parceiro_pai: 3, // montaria/besta de carga
+        nome: 'Guepardo',
+        descricao: 'O guepardo é um parceiro especial (assassino) que fornece os benefícios a seguir. ',
+        chave: [''],
+        parceiro_patamar: [
+          '<b>Iniciante:</b> +5 em Iniciativa e vítimas dos seus acertos críticos corpo a corpo ficam ND 2 sangrando.',
+          '<b>Veterano:</b> uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.',
+          '<b>Mestre:</b> como acima, mas esse bônus em rolagem de dano é dobrado contra criaturas que você esteja flanqueando.',
+        ],
+        referencias: Referencia.DB,
+        pagina: '',
+      },
     ];
   }
 }

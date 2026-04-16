@@ -158,6 +158,20 @@ export class FamiliarData {
           'Um diabrete fornece +1 PM para gastar em aprimoramentos sempre que você lança uma magia de ilusão ou veneno',
         referencias: Referencia.AMEACAS,
       },
+      {
+        id: 23,
+        nome: 'Anomalocaris',
+        beneficio:
+          'Uma aberrações da Tormenta alongada de carapaça escura e segmentada lembra algum animal marinho, como um camarão ou lagosta, mas do tamanho de um lobo. Ele ondula no ar como um peixe na água, movido por duas fileiras de asas-nadadeiras laterais. Tem olhos volumosos e uma estranha boca ventral, em forma de disco. Diante da boca, duas grandes garras articuladas com dentes. Um anomalocaris familiar fornece +1 PM para gastar em aprimoramentos sempre que você lança uma magia de conjuração. Apenas lefou e devotos de Aharadak podem invocar essas criaturas como familiares.',
+        referencias: Referencia.DB,
+      },
+      {
+        id: 24,
+        nome: 'Texugo',
+        beneficio:
+          'Uma aberrações da Tormenta alongada de carapaça escura e segmentada lembra algum animal marinho, como um camarão ou lagosta, mas do tamanho de um lobo. Ele ondula no ar como um peixe na água, movido por duas fileiras de asas-nadadeiras laterais. Tem olhos volumosos e uma estranha boca ventral, em forma de disco. Diante da boca, duas grandes garras articuladas com dentes. Um anomalocaris familiar fornece +1 PM para gastar em aprimoramentos sempre que você lança uma magia de conjuração. Apenas lefou e devotos de Aharadak podem invocar essas criaturas como familiares.',
+        referencias: Referencia.DB,
+      },
     ];
   }
 }
