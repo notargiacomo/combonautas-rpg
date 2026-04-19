@@ -1235,6 +1235,7 @@ export class AmeacaData {
         tesouros: '1d4 doses de veneno batráquio (CD 17 para extrair) e pedaço de língua (CD 17 para extrair)',
         imagem: 'assets/img/ameaca_sapo_atroz.png',
         equipamentos: 'Nenhum',
+        se_parceiro: true,
         referencia: Referencia.AMEACAS,
         iniciativa: 6,
         percepcao: 3,

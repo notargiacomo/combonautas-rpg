@@ -9,6 +9,8 @@ export interface Ameaca {
   equipamentos?: string;
   tesouros?: string;
   reforcos?: string; //
+  se_parceiro?: boolean;
+  se_familiar?: boolean;
   referencia?: string;
   imagem?: string;
   iniciativa?: number;

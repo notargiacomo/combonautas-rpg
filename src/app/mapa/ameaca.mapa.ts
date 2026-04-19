@@ -37,12 +37,12 @@ export const AmeacaMapa: Record<string, Mapeamento> = {
 
     return partes.join(', ');
   },
-  for: d => d.forca,
-  des: d => d.destreza,
-  con: d => d.constituicao,
-  int: d => d.inteligencia,
-  sab: d => d.sabedoria,
-  car: d => d.carisma,
+  for: d => d.atributo_forca,
+  des: d => d.atributo_destreza,
+  con: d => d.atributo_constituicao,
+  int: d => d.atributo_inteligencia,
+  sab: d => d.atributo_sabedoria,
+  car: d => d.atributo_carisma,
 };
 
 function formatar(valor: number): string {
