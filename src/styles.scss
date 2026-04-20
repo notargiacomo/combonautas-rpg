@@ -9,7 +9,7 @@ html,
 body {
   width: 100% !important; /* Define percentual de uso de largura da terra */
   height: 100%; /* Define percentual de uso de altura da terra */
-  background-color: rgb(68, 5, 18) !important;
+  // background-color: #e5e7eb; // rgb(68, 5, 18) !important;
   font-family: 'Oswald' !important;
   margin: 0;
   font-weight: normal; /* Pode ser 'bold' ou outros valores se necessário */
@@ -65,9 +65,9 @@ img {
   width: 100% !important; /* Largura máxima da imagem */
   // height: 100% !important; /* Altura máxima da imagem */
   object-fit: contain !important; /* Mantém as proporções */
-  border: 5px solid rgb(68, 5, 18) !important; /* Moldura */
+  border: 5px solid #310d0d !important; /* Moldura */
   // border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0 4px 6px rgb(68, 5, 18) !important; /* Sombra suave */
+  // box-shadow: 0 4px 6px rgb(68, 5, 18) !important; /* Sombra suave */
   padding: 20px; /* Espaço entre a imagem e a borda */
   background-color: white; /* Fundo da moldura */
 }
@@ -387,7 +387,7 @@ tr.element-row:not(.example-expanded-row):active {
   object-fit: cover !important; /* faz o zoom e corte automático */
   object-position: center !important; /* centraliza */
   display: block !important;
-  background-color: rgb(68, 5, 18) !important;
+  background-color: #310d0d !important;
 }
 
 .marca-distincao {

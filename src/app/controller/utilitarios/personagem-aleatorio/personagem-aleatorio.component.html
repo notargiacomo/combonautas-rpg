@@ -11,10 +11,10 @@
         @if (gerou) {
           <div class="col-sm-12 mb-4">
             <mat-card class="card-game" (click)="carregarAbasRacas(this.racas[racaIndex])">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              <mat-card-title class="titulo-cartao-apresentacao">
                 {{ this.racas === undefined || this.racas[racaIndex] === undefined ? '' : this.racas[racaIndex].nome }}
               </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+              <mat-card-content class="">
                 <div class="row">
                   <div class="col-sm-12 mt-1 d-flex justify-content-end">
                     {{ this.racas[racaIndex].referencias + ' ' + this.racas[racaIndex].paginas }}
@@ -83,10 +83,10 @@
           </div>
           <div class="col-sm-12 mb-4">
             <mat-card class="card-game">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              <mat-card-title class="titulo-cartao-apresentacao">
                 {{ this.origens[origemIndex].nome }}
               </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+              <mat-card-content class="">
                 <div class="row">
                   <div class="col-sm-12 mt-1 d-flex justify-content-end">
                     {{ this.origens[origemIndex].referencias + ', pag. ' + this.origens[origemIndex].paginas }}
@@ -111,10 +111,10 @@
           </div>
           <div class="col-sm-12 mb-4">
             <mat-card class="card-game" (click)="carregarAbasClasse(this.classes[classeIndex])">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              <mat-card-title class="titulo-cartao-apresentacao">
                 {{ this.classes[classeIndex].nome }}
               </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+              <mat-card-content class="">
                 <div class="row mt-1 mb-2">
                   <div class="col-sm-12 mt-1 d-flex justify-content-end">
                     {{ this.classes[classeIndex].referencias + ', pag. ' + this.classes[classeIndex].paginas }}
@@ -231,10 +231,10 @@
               class="card-game"
               (click)="carregarAbasRacas(this.racas[racaIndex])"
               style="max-height: 900px !important">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              <mat-card-title class="titulo-cartao-apresentacao">
                 {{ this.racas === undefined || this.racas[racaIndex] === undefined ? '' : this.racas[racaIndex].nome }}
               </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+              <mat-card-content class="">
                 <div class="row">
                   <div class="col-sm-12 mt-1 d-flex justify-content-end">
                     {{ this.racas[racaIndex].referencias + ' ' + this.racas[racaIndex].paginas }}
@@ -303,10 +303,10 @@
           </div>
           <div class="col-sm-4">
             <mat-card class="card-game" style="max-height: 900px !important">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              <mat-card-title class="titulo-cartao-apresentacao">
                 {{ this.origens[origemIndex].nome }}
               </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+              <mat-card-content class="">
                 <div class="row">
                   <div class="col-sm-12 mt-1 d-flex justify-content-end">
                     {{ this.origens[origemIndex].referencias + ', pag. ' + this.origens[origemIndex].paginas }}
@@ -334,10 +334,10 @@
               class="card-game"
               (click)="carregarAbasClasse(this.classes[classeIndex])"
               style="max-height: 900px !important">
-              <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+              <mat-card-title class="titulo-cartao-apresentacao">
                 {{ this.classes[classeIndex].nome }}
               </mat-card-title>
-              <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+              <mat-card-content class="">
                 <div class="row mt-1 mb-2">
                   <div class="col-sm-12 mt-1 d-flex justify-content-end">
                     {{ this.classes[classeIndex].referencias + ', pag. ' + this.classes[classeIndex].paginas }}

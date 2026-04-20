@@ -8,10 +8,10 @@
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
-      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+      <mat-card-title class="titulo-cartao-apresentacao">
         {{ item.nome }}
       </mat-card-title>
-      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+      <mat-card-content class="">
         <div class="content">
           <div class="row">
             <div class="col-sm-6">
@@ -64,10 +64,10 @@
     <mat-grid-list *ngIf="isMobile" cols="1" rowHeight="350">
       <mat-grid-tile *ngFor="let complicacao of complicacoes">
         <mat-card class="card-game">
-          <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+          <mat-card-title class="titulo-cartao-apresentacao  ">
             {{ complicacao.nome }}
           </mat-card-title>
-          <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+          <mat-card-content class="  ">
             <div class="content">
               <div class="row">
                 <div class="col-sm-6">
@@ -95,10 +95,10 @@
     <mat-grid-list *ngIf="!isMobile" cols="3" rowHeight="350" gutterSize="10px">
       <mat-grid-tile *ngFor="let complicacao of complicacoes">
         <mat-card class="card-game">
-          <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+          <mat-card-title class="titulo-cartao-apresentacao  ">
             {{ complicacao.nome }}
           </mat-card-title>
-          <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+          <mat-card-content class="  ">
             <div class="content">
               <div class="row">
                 <div class="col-sm-6">

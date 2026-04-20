@@ -1,9 +1,11 @@
-<mat-card class="card-game">
-  <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
-    {{ titulo }}
+<mat-card class="card-game card-presentation">
+  <mat-card-title class="titulo-cartao-apresentacao titulo">
+    {{ titulo.toUpperCase() }}
   </mat-card-title>
-  <img [src]="caminho_imagem" class="imagem-presentation" />
-  <div class="text-justify mt-4" [innerHTML]="descricao"></div>
+  <mat-card-content class="mat-mdc-card-content-game">
+    <img [src]="caminho_imagem" class="imagem-presentation" />
+    <div class="text-justify mt-4" [innerHTML]="descricao"></div>
+  </mat-card-content>
   <mat-card-actions>
     <div class="d-flex flex-wrap gap-2">
       @for (item of links; track item) {

@@ -1,25 +1,29 @@
 <div class="cabecalho"></div>
-<mat-card
-  style="
-    background-color: rgb(156, 26, 26) !important;
-    overflow-x: hidden !important;
-    padding: 0px !important;
-    margin: 0px !important;
-    overflow-y: hidden !important;
-  ">
-  <mat-card-content
-    style="
-      background-color: rgb(156, 26, 26) !important;
-      overflow-x: hidden !important;
-      padding: 0px !important;
-      margin: 0px !important;
-      overflow-y: hidden !important;
-    ">
+<mat-card>
+  <mat-card-content class="menu-card-content">
     <div class="content">
       <div class="row">
         <div class="col-sm-8">
-          <button mat-button (click)="navigateTo('')">Home</button>
-          <button mat-button [matMenuTriggerFor]="menuPersonagem">Personagem</button>
+          <button
+            style="
+              background-color: hsl(var(--border)) !important;
+              color: orange !important;
+              font-size: large !important;
+            "
+            mat-button
+            (click)="navigateTo('')">
+            HOME
+          </button>
+          <button
+            style="
+              background-color: hsl(var(--border)) !important;
+              color: orange !important;
+              font-size: large !important;
+            "
+            mat-button
+            [matMenuTriggerFor]="menuPersonagem">
+            PERSONAGEM
+          </button>
           <mat-menu #menuPersonagem="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('personagem/racas')">Raças</button>
             <button mat-menu-item (click)="navigateTo('personagem/origens')">Origens</button>
@@ -31,14 +35,32 @@
             <button mat-menu-item (click)="navigateTo('personagem/poderes')">Poderes</button>
             <button mat-menu-item (click)="navigateTo('personagem/magias')">Magias</button>
           </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuItens">Item</button>
+          <button
+            style="
+              background-color: hsl(var(--border)) !important;
+              color: orange !important;
+              font-size: large !important;
+            "
+            mat-button
+            [matMenuTriggerFor]="menuItens">
+            ITEM
+          </button>
           <mat-menu #menuItens="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('itens/armas-municoes')">Armas & Munições</button>
             <button mat-menu-item (click)="navigateTo('itens/armaduras-escudos')">Armaduras & Escudos</button>
             <button mat-menu-item (click)="navigateTo('itens/itens-gerais')">Itens Gerais</button>
             <button mat-menu-item (click)="navigateTo('itens/itens-superiores')">Itens Superiores</button>
           </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuCampanha">Campanha</button>
+          <button
+            style="
+              background-color: hsl(var(--border)) !important;
+              color: orange !important;
+              font-size: large !important;
+            "
+            mat-button
+            [matMenuTriggerFor]="menuCampanha">
+            CAMPANHA
+          </button>
           <mat-menu #menuCampanha="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('campanha/parceiros')">Parceiros</button>
             <button mat-menu-item (click)="navigateTo('campanha/distincoes')">Distinções</button>
@@ -47,13 +69,31 @@
             <button mat-menu-item (click)="navigateTo('campanha/familiares')">Familiares</button>
           </mat-menu>
 
-          <button mat-button [matMenuTriggerFor]="menuRegra">Regras</button>
+          <button
+            style="
+              background-color: hsl(var(--border)) !important;
+              color: orange !important;
+              font-size: large !important;
+            "
+            mat-button
+            [matMenuTriggerFor]="menuRegra">
+            REGRAS
+          </button>
           <mat-menu #menuRegra="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('regras/regras')">Regras do Jogo</button>
             <button mat-menu-item (click)="navigateTo('regras/acoes')">Ações</button>
             <button mat-menu-item (click)="navigateTo('regras/condicoes')">Condições</button>
           </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuMestre">Mestre</button>
+          <button
+            style="
+              background-color: hsl(var(--border)) !important;
+              color: orange !important;
+              font-size: large !important;
+            "
+            mat-button
+            [matMenuTriggerFor]="menuMestre">
+            MESTRE
+          </button>
           <mat-menu #menuMestre="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('mestre/calculo-desafios')">Cálculo de Desafios</button>
             <button mat-menu-item (click)="navigateTo('mestre/tabela-geracao-tesouros')">Geração de Tesouro</button>
@@ -63,7 +103,16 @@
               Dashboard
             </button> -->
           </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menuUtilitarios">Utilitários</button>
+          <button
+            style="
+              background-color: hsl(var(--border)) !important;
+              color: orange !important;
+              font-size: large !important;
+            "
+            mat-button
+            [matMenuTriggerFor]="menuUtilitarios">
+            UTILITÁRIOS
+          </button>
           <mat-menu #menuUtilitarios="matMenu" yPosition="below">
             <button mat-menu-item (click)="navigateTo('utilitarios/personagem-aleatorio')">Personagem Aleatório</button>
             <button mat-menu-item (click)="navigateTo('utilitarios/ficha-rapida')">Ficha</button>
@@ -71,7 +120,9 @@
         </div>
         <div class="col-sm-4 d-flex align-items-center justify-content-end pe-4">
           <div class="ms-3">
-            <b class="text-white">ACESSOS : {{ totalAcessos }}</b>
+            <b style="color: orange !important; font-size: large !important" class="text-white">
+              ACESSOS : {{ totalAcessos }}
+            </b>
           </div>
         </div>
       </div>

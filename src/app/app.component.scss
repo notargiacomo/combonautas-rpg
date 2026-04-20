@@ -1,7 +1,27 @@
 .mat-mdc-card-content {
-    background-color: rgb(45, 35, 60) !important;
-    color: rgb(240, 240, 245);
-    max-height: 600px !important; /* Defina a altura máxima do card */
-    overflow-y: auto !important; /* Habilita o scroll vertical */
-    padding: 8px !important; /* Opcional: ajuste o espaçamento interno */
-  }
+  background-color: rgb(68, 5, 18) !important;
+  color: rgb(240, 240, 245);
+  max-height: 600px !important; /* Defina a altura máxima do card */
+  overflow-y: auto !important; /* Habilita o scroll vertical */
+  padding: 8px !important; /* Opcional: ajuste o espaçamento interno */
+}
+
+.mdc-card {
+  border-radius: 0px !important; /* Arredonda os cantos */
+  overflow-x: hidden !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  overflow-y: hidden !important;
+}
+
+.mat-mdc-card {
+  border: 0px solid !important;
+}
+
+.menu-card-content {
+  background-color: rgb(68, 5, 18) !important;
+  overflow-x: hidden !important;
+  padding: 5px !important;
+  margin: 0px !important;
+  overflow-y: hidden !important;
+}

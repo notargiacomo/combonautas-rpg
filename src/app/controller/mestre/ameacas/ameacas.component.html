@@ -8,7 +8,7 @@
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
-      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+      <mat-card-title class="titulo-cartao-apresentacao">
         <div class="row">
           <div class="col-sm-7 mt-1 d-flex">
             {{ '[ND ' + (item.nd === 0.5 ? '1/2' : item.nd === 0.25 ? '1/4' : item.nd) + '] ' + item.nome }}
@@ -18,7 +18,7 @@
           </div>
         </div>
       </mat-card-title>
-      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+      <mat-card-content class="">
         <div class="row">
           <div class="col-sm-6 mt-4 d-flex">
             {{ item.tipo + ' ' + item.tamanho + ' (' + item.papel + ')' }}

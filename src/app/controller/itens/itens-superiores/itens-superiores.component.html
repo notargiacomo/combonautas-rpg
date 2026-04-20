@@ -4,15 +4,14 @@
   [searchColumn]="['nome', 'descrição', 'livro']"
   [colsGrid]="3"
   [rowHeight]="450"
-  [suggestions]="['Arma','Armadura','Escudo','Ferramenta','Vestuário','Esotérico','Material Especial'
-  ]"
+  [suggestions]="['Arma', 'Armadura', 'Escudo', 'Ferramenta', 'Vestuário', 'Esotérico', 'Material Especial']"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
-      <mat-card-title class="titulo-cartao-apresentacao interior-cartao interior-cartao-condicoes">
+      <mat-card-title class="titulo-cartao-apresentacao">
         {{ item.nome }}
       </mat-card-title>
-      <mat-card-content class="interior-cartao interior-cartao-condicoes content-cartao-condicoes">
+      <mat-card-content class="">
         <div class="row">
           <div class="col-sm-12 mt-1 d-flex justify-content-end">
             {{ item.referencias + ', pag. ' + item.paginas }}
