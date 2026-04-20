@@ -25,8 +25,8 @@
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
-      <mat-card-title class="titulo-cartao-apresentacao">
-        {{ item.nome }}
+      <mat-card-title class="mat-card-title">
+        {{ item.nome.toUpperCase() }}
       </mat-card-title>
       <mat-card-content class="">
         <div class="row">
@@ -37,7 +37,7 @@
         <div class="content mt-2">
           <mat-tab-group (click)="carregarAbas(item)">
             <mat-tab label="Imagem">
-              <img [src]="item.imagem" [alt]="item.nome" style="height: 700px !important" />
+              <img [src]="item.imagem" [alt]="item.nome.toUpperCase()" style="height: 700px !important" />
             </mat-tab>
             <mat-tab label="Características">
               <div class="row">

@@ -55,7 +55,7 @@ export class PotionTreasureGenerator implements TreasureGenerator {
   }
 
   private gerarRelatorio(random: number, linha: any, pocoes: any): string {
-    const linhasHtml = pocoes.map((item: any) => `<li>${item.id} - ${item.nome}</li>`).join('');
+    const linhasHtml = pocoes.map((item: any) => `<li>${item.id} - ${item.nome.toUpperCase()}</li>`).join('');
 
     return `
     <p><b>FÓRMULA:</b> ${linha.valor}</p>

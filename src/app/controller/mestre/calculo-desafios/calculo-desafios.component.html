@@ -202,7 +202,7 @@
         </div>
       </div>
       <mat-card class="card-game" style="margin-top: 1% !important">
-        <mat-card-title class="titulo-cartao-apresentacao">
+        <mat-card-title class="mat-card-title">
           <h5>RESULTADO: {{ resultado }}</h5>
         </mat-card-title>
         <mat-card-content class="">
@@ -439,7 +439,7 @@
                         <tbody>
                           @for (item of ameacasCombate; track $index) {
                             <tr>
-                              <td>{{ item.nome }}</td>
+                              <td>{{ item.nome.toUpperCase() }}</td>
                               <td>{{ item.nd >= 1 ? item.nd : '1/' + 1 / item.nd }}</td>
                               <td [width]="8">
                                 <button
@@ -496,7 +496,7 @@
                     <tbody>
                       @for (item of ameacasCombate; track $index) {
                         <tr>
-                          <td>{{ item.nome }}</td>
+                          <td>{{ item.nome.toUpperCase() }}</td>
                           <td>{{ item.equipamentos }}</td>
                           <td>{{ item.tesouros + ' ND ' + (item.nd >= 1 ? item.nd : '1/' + 1 / item.nd) }}</td>
                         </tr>

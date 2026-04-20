@@ -11,7 +11,7 @@
         @if (gerou) {
           <div class="col-sm-12 mb-4">
             <mat-card class="card-game" (click)="carregarAbasRacas(this.racas[racaIndex])">
-              <mat-card-title class="titulo-cartao-apresentacao">
+              <mat-card-title class="mat-card-title">
                 {{ this.racas === undefined || this.racas[racaIndex] === undefined ? '' : this.racas[racaIndex].nome }}
               </mat-card-title>
               <mat-card-content class="">
@@ -83,7 +83,7 @@
           </div>
           <div class="col-sm-12 mb-4">
             <mat-card class="card-game">
-              <mat-card-title class="titulo-cartao-apresentacao">
+              <mat-card-title class="mat-card-title">
                 {{ this.origens[origemIndex].nome }}
               </mat-card-title>
               <mat-card-content class="">
@@ -111,7 +111,7 @@
           </div>
           <div class="col-sm-12 mb-4">
             <mat-card class="card-game" (click)="carregarAbasClasse(this.classes[classeIndex])">
-              <mat-card-title class="titulo-cartao-apresentacao">
+              <mat-card-title class="mat-card-title">
                 {{ this.classes[classeIndex].nome }}
               </mat-card-title>
               <mat-card-content class="">
@@ -231,7 +231,7 @@
               class="card-game"
               (click)="carregarAbasRacas(this.racas[racaIndex])"
               style="max-height: 900px !important">
-              <mat-card-title class="titulo-cartao-apresentacao">
+              <mat-card-title class="mat-card-title">
                 {{ this.racas === undefined || this.racas[racaIndex] === undefined ? '' : this.racas[racaIndex].nome }}
               </mat-card-title>
               <mat-card-content class="">
@@ -303,7 +303,7 @@
           </div>
           <div class="col-sm-4">
             <mat-card class="card-game" style="max-height: 900px !important">
-              <mat-card-title class="titulo-cartao-apresentacao">
+              <mat-card-title class="mat-card-title">
                 {{ this.origens[origemIndex].nome }}
               </mat-card-title>
               <mat-card-content class="">
@@ -334,7 +334,7 @@
               class="card-game"
               (click)="carregarAbasClasse(this.classes[classeIndex])"
               style="max-height: 900px !important">
-              <mat-card-title class="titulo-cartao-apresentacao">
+              <mat-card-title class="mat-card-title">
                 {{ this.classes[classeIndex].nome }}
               </mat-card-title>
               <mat-card-content class="">

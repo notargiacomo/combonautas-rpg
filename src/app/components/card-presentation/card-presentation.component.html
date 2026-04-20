@@ -1,5 +1,5 @@
 <mat-card class="card-game card-presentation">
-  <mat-card-title class="titulo-cartao-apresentacao titulo">
+  <mat-card-title class="titulo">
     {{ titulo.toUpperCase() }}
   </mat-card-title>
   <mat-card-content class="mat-mdc-card-content-game">
@@ -10,7 +10,7 @@
     <div class="d-flex flex-wrap gap-2">
       @for (item of links; track item) {
         <button class="btn btn-sm btn-outline-secondary" [routerLink]="item.link">
-          {{ item.nome }}
+          {{ item.nome.toUpperCase() }}
         </button>
       }
     </div>

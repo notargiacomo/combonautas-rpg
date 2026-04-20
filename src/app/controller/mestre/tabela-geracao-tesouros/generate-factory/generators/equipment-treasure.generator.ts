@@ -101,7 +101,7 @@ export class EquipmentTreasureGenerator implements TreasureGenerator {
 
   private gerarRelatorio(random: number, linha: any, equipamentos: any): string {
     const linhasHtml = equipamentos
-      .map((item: any) => `<li>${item.id} - ${item.nome} ${this.relatorioMelhorias(item)}</li>`)
+      .map((item: any) => `<li>${item.id} - ${item.nome.toUpperCase()} ${this.relatorioMelhorias(item)}</li>`)
       .join('');
 
     let labelEquipamento = linha.valor.includes('2D') ? linha.valor + '(escolha um)' : linha.valor;

@@ -177,6 +177,8 @@ button[mat-flat-button]:hover {
 .mat-mdc-menu-content,
 .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
   font-family: 'Oswald' !important;
+  background-color: #310d0d !important;
+  color: orange !important;
   font-size: 10pt !important;
 }
 
@@ -403,4 +405,8 @@ tr.element-row:not(.example-expanded-row):active {
   position: relative;
   font-family: 'Oswald' !important;
   color: rgb(68, 5, 18) !important;
+}
+
+.mat-card-title {
+  color: orange !important;
 }

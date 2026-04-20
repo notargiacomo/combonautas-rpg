@@ -86,7 +86,10 @@ export class MagicEquipmentTreasureGenerator implements TreasureGenerator {
 
   private gerarRelatorio(random: number, linha: any, linhaItem: any): string {
     const linhasHtml = linhaItem
-      .map((item: any) => `<li>${item.id} - ${item.nome} ${item.encantos ? this.relatorioEncantos(item) : ''}</li>`)
+      .map(
+        (item: any) =>
+          `<li>${item.id} - ${item.nome.toUpperCase()} ${item.encantos ? this.relatorioEncantos(item) : ''}</li>`
+      )
       .join('');
 
     let labelEquipamento = linha.valor.includes('2D') ? linha.valor + ' (escolha um)' : linha.valor;

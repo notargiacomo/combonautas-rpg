@@ -8,10 +8,12 @@
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
-      <mat-card-title class="titulo-cartao-apresentacao">
+      <mat-card-title class="mat-card-title">
         <div class="row">
           <div class="col-sm-7 mt-1 d-flex">
-            {{ '[ND ' + (item.nd === 0.5 ? '1/2' : item.nd === 0.25 ? '1/4' : item.nd) + '] ' + item.nome }}
+            {{
+              '[ND ' + (item.nd === 0.5 ? '1/2' : item.nd === 0.25 ? '1/4' : item.nd) + '] ' + item.nome.toUpperCase()
+            }}
           </div>
           <div class="col-sm-5 mt-1 d-flex justify-content-end">
             {{ item.grupo }}

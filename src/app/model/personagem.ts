@@ -112,7 +112,7 @@ export class Personagem {
     this.proficiencia.push(Proficiencia.ARMADURAS_LEVES);
   }
 
-  public adicionaProficiencia(proficiencia: string){
+  public adicionaProficiencia(proficiencia: string) {
     this.proficiencia!.push(proficiencia);
   }
 
@@ -181,48 +181,35 @@ export class Personagem {
         if (novoValor === -1 || novoValor === 0) {
           this.pontos += this.atributos.forca_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(
-            this.atributos.forca_comprada
-          );
+          this.pontos += this.calculandoValorPonto(this.atributos.forca_comprada);
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
         this.atributos.forca_comprada = novoValor;
-        this.atributos.forca =
-          this.atributos.forca_comprada +
-          this.atributos.forca_racial +
-          this.atributos.forca_bonus;
+        this.atributos.forca = this.atributos.forca_comprada + this.atributos.forca_racial + this.atributos.forca_bonus;
         break;
       }
       case 'des': {
         if (novoValor === -1 || novoValor === 0) {
           this.pontos += this.atributos.destreza_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(
-            this.atributos.destreza_comprada
-          );
+          this.pontos += this.calculandoValorPonto(this.atributos.destreza_comprada);
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
         this.atributos.destreza_comprada = novoValor;
         this.atributos.destreza =
-          this.atributos.destreza_comprada +
-          this.atributos.destreza_racial +
-          this.atributos.destreza_bonus;
+          this.atributos.destreza_comprada + this.atributos.destreza_racial + this.atributos.destreza_bonus;
         break;
       }
       case 'con': {
         if (novoValor === -1 || novoValor === 0) {
           this.pontos += this.atributos.constituicao_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(
-            this.atributos.constituicao_comprada
-          );
+          this.pontos += this.calculandoValorPonto(this.atributos.constituicao_comprada);
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
         this.atributos.constituicao_comprada = novoValor;
         this.atributos.constituicao =
-          this.atributos.constituicao_comprada +
-          this.atributos.constituicao_racial +
-          this.atributos.constituicao_bonus;
+          this.atributos.constituicao_comprada + this.atributos.constituicao_racial + this.atributos.constituicao_bonus;
         this.recalculaVida();
         break;
       }
@@ -230,51 +217,37 @@ export class Personagem {
         if (novoValor === -1 || novoValor === 0) {
           this.pontos += this.atributos.inteligencia_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(
-            this.atributos.inteligencia_comprada
-          );
+          this.pontos += this.calculandoValorPonto(this.atributos.inteligencia_comprada);
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
-        this.adicionaNumeroPericiasLivres(
-          novoValor > this.atributos.inteligencia_comprada ? 1 : -1
-        );
+        this.adicionaNumeroPericiasLivres(novoValor > this.atributos.inteligencia_comprada ? 1 : -1);
         this.atributos.inteligencia_comprada = novoValor;
         this.atributos.inteligencia =
-          this.atributos.inteligencia_comprada +
-          this.atributos.inteligencia_racial +
-          this.atributos.inteligencia_bonus;
+          this.atributos.inteligencia_comprada + this.atributos.inteligencia_racial + this.atributos.inteligencia_bonus;
         break;
       }
       case 'sab': {
         if (novoValor === -1 || novoValor === 0) {
           this.pontos += this.atributos.sabedoria_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(
-            this.atributos.sabedoria_comprada
-          );
+          this.pontos += this.calculandoValorPonto(this.atributos.sabedoria_comprada);
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
         this.atributos.sabedoria_comprada = novoValor;
         this.atributos.sabedoria =
-          this.atributos.sabedoria_comprada +
-          this.atributos.sabedoria_racial +
-          this.atributos.sabedoria_bonus;
+          this.atributos.sabedoria_comprada + this.atributos.sabedoria_racial + this.atributos.sabedoria_bonus;
         break;
       }
       case 'car': {
         if (novoValor === -1 || novoValor === 0) {
           this.pontos += this.atributos.carisma_comprada - novoValor;
         } else {
-          this.pontos += this.calculandoValorPonto(
-            this.atributos.carisma_comprada
-          );
+          this.pontos += this.calculandoValorPonto(this.atributos.carisma_comprada);
           this.pontos -= this.calculandoValorPonto(novoValor);
         }
         this.atributos.carisma_comprada = novoValor;
         this.atributos.carisma =
-          this.atributos.carisma_comprada +
-          this.atributos.carisma_racial +
-          this.atributos.carisma_bonus;
+          this.atributos.carisma_comprada + this.atributos.carisma_racial + this.atributos.carisma_bonus;
         break;
       }
       default: {
@@ -322,11 +295,9 @@ export class Personagem {
   }
 
   public adicionarPontosAtributoLivres(valor: number, idPoder: number) {
-    this.poderes.forEach((poder) => {
+    this.poderes.forEach(poder => {
       if (poder.poder?.id === idPoder) {
-        poder.pontos_atributos_unicos_livres
-          ? (poder.pontos_atributos_unicos_livres += valor)
-          : valor;
+        poder.pontos_atributos_unicos_livres ? (poder.pontos_atributos_unicos_livres += valor) : valor;
         poder.decisao = true;
       }
     });
@@ -359,14 +330,11 @@ export class Personagem {
 
   recalculaVida() {
     this.pontos_vida_total =
-      this.atributos.constituicao * this.nivel! +
-      this.bonus_vida_total +
-      this.bonus_vida_nivel * this.nivel!;
+      this.atributos.constituicao * this.nivel! + this.bonus_vida_total + this.bonus_vida_nivel * this.nivel!;
   }
 
   recalculaMana() {
-    this.pontos_mana_atual =
-      this.bonus_mana_total + this.bonus_mana_nivel * this.nivel!;
+    this.pontos_mana_atual = this.bonus_mana_total + this.bonus_mana_nivel * this.nivel!;
   }
 
   public adicionaSentido(sentido: Sentido) {
@@ -384,16 +352,42 @@ export class Personagem {
   }
 
   public adicionaNumeroPericiasLivres(numeroPericiasExtras: number) {
-    this.numero_pericias_livre =
-      numeroPericiasExtras + this.numero_pericias_livre;
+    this.numero_pericias_livre = numeroPericiasExtras + this.numero_pericias_livre;
   }
 
-  oficio = ['Ofício Armeiro','Ofício Artesão','Ofício Alquimista', 'Ofício Cozinheiro', 'Ofício Alfaiate', 'Ofício Engenhoqueiro', 'Ofício Escriba', 'Ofício Professor', 'Ofício Tatuador', 'Ofício Fazendeiro', 'Ofício Pescador', 'Ofício Lenhador', 'Ofício Minerador', 'Ofício de Soldado', 'Ofício Marinheiro', 'Ofício Armadilheiro', 'Ofício Zelador', 'Ofício Mercador', 'Ofício Ferreiro', 'Ofício Taverneiro', 'Ofício Carpinteiro', 'Ofício Barbeiro', 'Ofício Pedreiro', 'Ofício Coureiro', 'Ofício Padeiro', 'Ofício Faxineiro'];
+  oficio = [
+    'Ofício Armeiro',
+    'Ofício Artesão',
+    'Ofício Alquimista',
+    'Ofício Cozinheiro',
+    'Ofício Alfaiate',
+    'Ofício Engenhoqueiro',
+    'Ofício Escriba',
+    'Ofício Professor',
+    'Ofício Tatuador',
+    'Ofício Fazendeiro',
+    'Ofício Pescador',
+    'Ofício Lenhador',
+    'Ofício Minerador',
+    'Ofício de Soldado',
+    'Ofício Marinheiro',
+    'Ofício Armadilheiro',
+    'Ofício Zelador',
+    'Ofício Mercador',
+    'Ofício Ferreiro',
+    'Ofício Taverneiro',
+    'Ofício Carpinteiro',
+    'Ofício Barbeiro',
+    'Ofício Pedreiro',
+    'Ofício Coureiro',
+    'Ofício Padeiro',
+    'Ofício Faxineiro',
+  ];
 
   adicionaBonusPericiaPoderNaoLocalizado?(bonus: number, idPoder: number, escopo_pericias?: string[]) {
-    this.poderes.forEach((poder) => {
+    this.poderes.forEach(poder => {
       if (poder.poder?.id === idPoder) {
-        poder.bonus_pericia_poder_nao_localizado?.push(...[{ bonus: bonus, escopo_pericias: escopo_pericias}]);
+        poder.bonus_pericia_poder_nao_localizado?.push(...[{ bonus: bonus, escopo_pericias: escopo_pericias }]);
         poder.decisao = true;
       }
     });
@@ -416,18 +410,16 @@ export class Personagem {
 
   public atualizaPericias() {
     this.atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria();
-    this.pericias?.forEach((pericia) => {
-      let valorAtributo = Number.parseInt(
-        this.recuperaValorAtributo(pericia.atributo_selecionado_descricao!)
-      );
+    this.pericias?.forEach(pericia => {
+      let valorAtributo = Number.parseInt(this.recuperaValorAtributo(pericia.atributo_selecionado_descricao!));
       pericia.atualiza(this.nivel!, valorAtributo, pericia.outros!);
     });
     this.posse?.atualizaPosses(this);
   }
 
   public atualizarDeslocamento(deslocamento: string, valor: number) {
-    if (this.deslocamentos?.find((desloc) => desloc.nome === deslocamento)) {
-      this.deslocamentos?.forEach((element) => {
+    if (this.deslocamentos?.find(desloc => desloc.nome === deslocamento)) {
+      this.deslocamentos?.forEach(element => {
         if (element.nome === deslocamento) {
           element.valor = valor;
         }
@@ -457,30 +449,17 @@ export class Personagem {
   }
 
   recalculaAtributos() {
-    this.atributos.forca =
-      this.atributos.forca_comprada +
-      this.atributos.forca_racial +
-      this.atributos.forca_bonus;
+    this.atributos.forca = this.atributos.forca_comprada + this.atributos.forca_racial + this.atributos.forca_bonus;
     this.atributos.destreza =
-      this.atributos.destreza_comprada +
-      this.atributos.destreza_racial +
-      this.atributos.destreza_bonus;
+      this.atributos.destreza_comprada + this.atributos.destreza_racial + this.atributos.destreza_bonus;
     this.atributos.constituicao =
-      this.atributos.constituicao_comprada +
-      this.atributos.constituicao_racial +
-      this.atributos.constituicao_bonus;
+      this.atributos.constituicao_comprada + this.atributos.constituicao_racial + this.atributos.constituicao_bonus;
     this.atributos.inteligencia =
-      this.atributos.inteligencia_comprada +
-      this.atributos.inteligencia_racial +
-      this.atributos.inteligencia_bonus;
+      this.atributos.inteligencia_comprada + this.atributos.inteligencia_racial + this.atributos.inteligencia_bonus;
     this.atributos.sabedoria =
-      this.atributos.sabedoria_comprada +
-      this.atributos.sabedoria_racial +
-      this.atributos.sabedoria_bonus;
+      this.atributos.sabedoria_comprada + this.atributos.sabedoria_racial + this.atributos.sabedoria_bonus;
     this.atributos.carisma =
-      this.atributos.carisma_comprada +
-      this.atributos.carisma_racial +
-      this.atributos.carisma_bonus;
+      this.atributos.carisma_comprada + this.atributos.carisma_racial + this.atributos.carisma_bonus;
 
     this.atualizaPericias();
     this.defesa.atualizaDefesa(this);
@@ -490,7 +469,7 @@ export class Personagem {
     this.pericias = [];
     this.numero_pericias_livre = this.atributos.inteligencia;
 
-    pericias?.forEach((pericia) => {
+    pericias?.forEach(pericia => {
       let valor = this.recuperaValorAtributo(pericia.atributo!.toString());
       var periciaPersonagem = new PericiaPersonagem();
 
@@ -537,15 +516,28 @@ export class Personagem {
     this.poderes.push({ poder: { id: 0, nome: descricao } });
   }
 
-  atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria(bonus?: {origem: string; atributo: string; condicao:string[], ativo: boolean}){
-    this.pericias?.forEach( pericia => {
-      if(bonus){
-        if(pericia.pericia !== "Luta" && pericia.pericia !== "Pontaria"){
-          this.atualizaBonusExtraPericia(pericia.pericia!, [{origem: bonus.origem, bonus: this.recuperaValorAtributo(bonus.atributo), condicao:['2 PM'], ativo: false, atributo: bonus.atributo}]);
+  atualizaBonusExtraPericiasSomaAtributoExcetoLutaPontaria(bonus?: {
+    origem: string;
+    atributo: string;
+    condicao: string[];
+    ativo: boolean;
+  }) {
+    this.pericias?.forEach(pericia => {
+      if (bonus) {
+        if (pericia.pericia !== 'Luta' && pericia.pericia !== 'Pontaria') {
+          this.atualizaBonusExtraPericia(pericia.pericia!, [
+            {
+              origem: bonus.origem,
+              bonus: this.recuperaValorAtributo(bonus.atributo),
+              condicao: ['2 PM'],
+              ativo: false,
+              atributo: bonus.atributo,
+            },
+          ]);
         }
       } else {
-        pericia.bonus_extras?.forEach( be => {
-          if(be.atributo){
+        pericia.bonus_extras?.forEach(be => {
+          if (be.atributo) {
             be.bonus = this.recuperaValorAtributo(be.atributo);
           }
         });
@@ -553,23 +545,40 @@ export class Personagem {
     });
   }
 
-  atualizaBonusExtraPericia(nome: string, condicao: {origem?: string; bonus?: number; condicao?: string[]; ativo: boolean; atributo: string;}[]) {
-    let pericia =  this.pericias?.find((p) => p.pericia?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === nome.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase());
+  atualizaBonusExtraPericia(
+    nome: string,
+    condicao: { origem?: string; bonus?: number; condicao?: string[]; ativo: boolean; atributo: string }[]
+  ) {
+    let pericia = this.pericias?.find(
+      p =>
+        p.pericia
+          ?.normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase() ===
+        nome
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+    );
 
-    if(pericia){
-      pericia?.adicionaBonusExtra(condicao)
+    if (pericia) {
+      pericia?.adicionaBonusExtra(condicao);
     } else {
-      if(nome.includes("Ofício")){
-        const indice = this.pericias!.indexOf(this.pericias!.find( (p) => {  return p.objeto!.nome === 'Ofício'})!);
+      if (nome.includes('Ofício')) {
+        const indice = this.pericias!.indexOf(
+          this.pericias!.find(p => {
+            return p.objeto!.nome === 'Ofício';
+          })!
+        );
         let oficio = new PericiaPersonagem();
         Object.assign(oficio, this.pericias![indice]);
         oficio.pericia = nome;
-        oficio?.adicionaBonusExtra(condicao)
+        oficio?.adicionaBonusExtra(condicao);
         this.pericias = [...this.pericias!.slice(0, indice + 1), oficio, ...this.pericias!.slice(indice + 1)];
         this.cdRef.detectChanges();
       }
     }
-    console.log(this.pericias)
+    console.log(this.pericias);
     this.atualizaPericias();
   }
 
@@ -585,16 +594,14 @@ export class Personagem {
       new Equipamento(
         nome,
         `+${
-          mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')
-            ?.total
+          mediator.pericias?.find(pericia => pericia.pericia === 'Luta')?.total
         } 1d3+${mediator.atributos.forca} 20x2`,
         Regras.ARMAS_NATURAIS,
         {
           ataque: 0,
           atributo_descricao_ataque: Atributo.FORCA,
           pericia_descricao_ataque:
-            Chave.PERICIA_LUTA.charAt(0).toUpperCase() +
-            Chave.PERICIA_LUTA.slice(1).toLowerCase(),
+            Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
           atributo_descricao_dano: Atributo.FORCA,
           total_bonus_ataque: 0,
           margem_ameaca: margem_ameaca,
@@ -614,11 +621,7 @@ export class Personagem {
     this.posse!.atualizaPosses(mediator);
   }
 
-  public adicionaBonusDefesa(
-    bonus: number,
-    descricao: string,
-    duracao: string
-  ) {
+  public adicionaBonusDefesa(bonus: number, descricao: string, duracao: string) {
     if (this.defesa.defesa_bonus === undefined) this.defesa.defesa_bonus = [];
     this.defesa.defesa_bonus.push({
       bonus: bonus,
@@ -627,14 +630,13 @@ export class Personagem {
     });
   }
 
-  adicionaAumentoPasso(condicao: string[]){
+  adicionaAumentoPasso(condicao: string[]) {
     this.posse?.condicao_aumento_passo_arma?.push(...condicao);
   }
 
-  atualizaTamanho(tamanho:string){
+  atualizaTamanho(tamanho: string) {
     this.tamanho = tamanho;
   }
-
 }
 export class PericiaPersonagem {
   objeto?: Pericia;
@@ -692,10 +694,7 @@ export class PericiaPersonagem {
     this.atributo_selecionado = atributo;
     this.atributo = atributo;
     this.total =
-      this.atributo_selecionado +
-      Math.floor(nivel / 2) +
-      this.outros +
-      (this.treinado ? this.bonus_treinado : 0);
+      this.atributo_selecionado + Math.floor(nivel / 2) + this.outros + (this.treinado ? this.bonus_treinado : 0);
   }
 
   rolarDado() {
@@ -706,13 +705,8 @@ export class PericiaPersonagem {
     return Math.floor(Number(this.nivel!) / 2);
   }
 
-  ativaDesativaBonusExtra(bonus: {
-    origem?: string;
-    bonus?: number;
-    condicao?: string[];
-    ativo: boolean;
-  }) {
-    this.bonus_extras?.forEach((element) => {
+  ativaDesativaBonusExtra(bonus: { origem?: string; bonus?: number; condicao?: string[]; ativo: boolean }) {
+    this.bonus_extras?.forEach(element => {
       if (bonus === element) {
         element.ativo = !element.ativo;
       }
@@ -722,12 +716,11 @@ export class PericiaPersonagem {
   }
 
   public atualizaPericia(valorAtributo?: number) {
-    this.atributo_selecionado =
-      valorAtributo !== undefined ? valorAtributo : this.atributo_selecionado;
+    this.atributo_selecionado = valorAtributo !== undefined ? valorAtributo : this.atributo_selecionado;
     this.atributo = this.atributo_selecionado;
 
     let bonus_extra_total = 0;
-    this.bonus_extras?.forEach((bonus) => {
+    this.bonus_extras?.forEach(bonus => {
       if (bonus.ativo) {
         bonus_extra_total += bonus.bonus!;
       }
@@ -847,7 +840,7 @@ export class Equipamento {
     item?: Item
   ) {
     this.item = item;
-    this.nome = item ? item.nome : nome;
+    this.nome = item ? item.nome.toUpperCase() : nome;
     this.formula = formula;
     this.descricao = descricao;
     this.ataque = ataque;
@@ -859,7 +852,7 @@ export class Equipamento {
     condicao?: string[];
     ativo: boolean;
   }) {
-    this.ataque?.bonus_ataque?.forEach((element) => {
+    this.ataque?.bonus_ataque?.forEach(element => {
       if (bonus === element) {
         element.ativo = !element.ativo;
       }
@@ -867,12 +860,8 @@ export class Equipamento {
   }
 
   public getBonusPericiaAtaque(personagem: Personagem) {
-    let pericia = personagem.pericias?.find(
-      (pericia) => pericia.pericia === this.ataque?.pericia_descricao_ataque
-    );
-    return pericia?.total
-      ? pericia?.total - Number(personagem.recuperaValorAtributo('forca'))
-      : 0;
+    let pericia = personagem.pericias?.find(pericia => pericia.pericia === this.ataque?.pericia_descricao_ataque);
+    return pericia?.total ? pericia?.total - Number(personagem.recuperaValorAtributo('forca')) : 0;
   }
 
   public getBonusAtributoAtaque(personagem: Personagem): number {
@@ -933,14 +922,14 @@ export class Posse {
   public aumentaPassoArma() {
     this.equipamentos_empunhados?.forEach(equip => {
       this.condicao_aumento_passo_arma?.forEach(condicao => {
-        if(equip.nome?.includes(condicao) || equip.item?.chave.toString().includes(condicao)){
+        if (equip.nome?.includes(condicao) || equip.item?.chave.toString().includes(condicao)) {
           for (let i = 0; i < passoDano.length; i++) {
             if (passoDano[i][0] === equip.ataque?.dano) {
               equip.ataque.dano = passoDano[i][1];
             }
           }
         }
-      })
+      });
     });
 
     this.atualizaPosses(this.mediator);
@@ -962,16 +951,14 @@ export class Posse {
         new Equipamento(
           'Mão Direita',
           `+${
-            mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')
-              ?.total
+            mediator.pericias?.find(pericia => pericia.pericia === 'Luta')?.total
           } 1d3+${mediator.atributos.forca} 20x2`,
           Regras.ATAQUES_DESARMADOS,
           {
             ataque: 0,
             atributo_descricao_ataque: Atributo.FORCA,
             pericia_descricao_ataque:
-              Chave.PERICIA_LUTA.charAt(0).toUpperCase() +
-              Chave.PERICIA_LUTA.slice(1).toLowerCase(),
+              Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
             atributo_descricao_dano: Atributo.FORCA,
             total_bonus_ataque: 0,
             margem_ameaca: 1,
@@ -991,16 +978,14 @@ export class Posse {
         new Equipamento(
           'Mão Esquerda',
           `+${
-            mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')
-              ?.total
+            mediator.pericias?.find(pericia => pericia.pericia === 'Luta')?.total
           } 1d3+${mediator.atributos.forca} 20x2`,
           Regras.ATAQUES_DESARMADOS,
           {
             ataque: 0,
             atributo_descricao_ataque: Atributo.FORCA,
             pericia_descricao_ataque:
-              Chave.PERICIA_LUTA.charAt(0).toUpperCase() +
-              Chave.PERICIA_LUTA.slice(1).toLowerCase(),
+              Chave.PERICIA_LUTA.charAt(0).toUpperCase() + Chave.PERICIA_LUTA.slice(1).toLowerCase(),
             atributo_descricao_dano: Atributo.FORCA,
             total_bonus_ataque: 0,
             margem_ameaca: 1,
@@ -1030,8 +1015,8 @@ export class Posse {
       this.atualizaCarga();
     }
 
-    this.equipamentos_empunhados.forEach((equip) => {
-      equip.ataque?.bonus_ataque?.forEach((bonus) => {
+    this.equipamentos_empunhados.forEach(equip => {
+      equip.ataque?.bonus_ataque?.forEach(bonus => {
         equip.ataque!.total_bonus_ataque! += bonus.bonus!;
       });
 
@@ -1041,16 +1026,13 @@ export class Posse {
         equip.ataque!.total_bonus_ataque!;
 
       equip.formula = `+${
-        mediator.pericias?.find((pericia) => pericia.pericia === 'Luta')?.total
+        mediator.pericias?.find(pericia => pericia.pericia === 'Luta')?.total
       } 1d3+${mediator.atributos.forca} 20x2`;
     });
   }
 
   public atualizaCarga() {
-    this.total_carga =
-      10 +
-      (this.mediator.atributos ? this.mediator.atributos.forca * 2 : 0) +
-      this.bonus_carga!;
+    this.total_carga = 10 + (this.mediator.atributos ? this.mediator.atributos.forca * 2 : 0) + this.bonus_carga!;
   }
 }
 export class MagiaPersonagem {
@@ -1067,14 +1049,16 @@ export class MagiaPersonagem {
 export class PoderPersonagem {
   poder?: Poder;
   ativo?: boolean;
-  bonus_pericia_poder_nao_localizado?: { bonus: number; pericia?: string; escopo_pericias?: string[]}[];
+  bonus_pericia_poder_nao_localizado?: { bonus: number; pericia?: string; escopo_pericias?: string[] }[];
   pontos_atributos_unicos_livres?: number;
   decisao?: boolean;
 
   constructor(poder: Poder, ativo: boolean) {
     this.poder = poder;
     this.ativo = ativo;
-    this.bonus_pericia_poder_nao_localizado = this.bonus_pericia_poder_nao_localizado ? this.bonus_pericia_poder_nao_localizado :[];
+    this.bonus_pericia_poder_nao_localizado = this.bonus_pericia_poder_nao_localizado
+      ? this.bonus_pericia_poder_nao_localizado
+      : [];
     this.decisao = false;
   }
 }
@@ -1103,7 +1087,7 @@ export class DefesaPersonagem {
 
   public atualizaDefesa(mediator: Personagem) {
     this.defesa = 10;
-    this.defesa_bonus.forEach((bonus) => {
+    this.defesa_bonus.forEach(bonus => {
       this.bonus_total += bonus.bonus!;
     });
     this.defesa += Number(this.bonus_total);

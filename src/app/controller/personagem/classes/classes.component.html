@@ -8,8 +8,8 @@
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
-      <mat-card-title class="titulo-cartao-apresentacao">
-        {{ item.nome }}
+      <mat-card-title class="mat-card-title">
+        {{ item.nome.toUpperCase() }}
       </mat-card-title>
       <mat-card-content class="">
         <div class="row mt-1 mb-2">
@@ -19,7 +19,7 @@
         </div>
         <mat-tab-group (click)="carregarAbas(item)">
           <mat-tab label="Imagem">
-            <img [src]="item.imagem" [alt]="item.nome" style="height: 700px !important" />
+            <img [src]="item.imagem" [alt]="item.nome.toUpperCase()" style="height: 700px !important" />
           </mat-tab>
           <mat-tab label="Características">
             <div class="content mt-2">
@@ -37,7 +37,7 @@
               <h5>Habilidades de Classe</h5>
               <p>
                 Habilidades de Classe são poderes dados passivamente pela classe, de acordo com o nível da mesma. Segue
-                as habilidades de {{ item.nome }}.
+                as habilidades de {{ item.nome.toUpperCase() }}.
               </p>
               <p>(ps: Habilidades Mágicas são marcadas com o símbolo: ✨)</p>
               <div class="row">
