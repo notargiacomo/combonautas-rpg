@@ -2,7 +2,7 @@ import { LiveAnnouncer } from '@angular/cdk/a11y';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { NgFor, NgIf, NgTemplateOutlet } from '@angular/common';
-import { Component, ContentChild, Input, TemplateRef, inject, signal } from '@angular/core';
+import { Component, ContentChild, Input, TemplateRef, ViewChild, inject, input, signal } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridList, MatGridTile } from '@angular/material/grid-list';
@@ -11,6 +11,9 @@ import { MatCard } from '@angular/material/card';
 import { MatAutocompleteModule, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatChipInputEvent, MatChipsModule } from '@angular/material/chips';
 import { MatIcon } from '@angular/material/icon';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatSort, MatSortModule } from '@angular/material/sort';
 
 @Component({
   selector: 'app-card-search',
@@ -29,6 +32,9 @@ import { MatIcon } from '@angular/material/icon';
     MatAutocompleteModule,
     MatChipsModule,
     MatIcon,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   templateUrl: './card-search.component.html',
   styleUrl: './card-search.component.scss',
@@ -55,6 +61,27 @@ export class CardSearchComponent {
   objects: any[] = [];
   form!: FormGroup;
   records_number = 0;
+
+  @Input() columns: { key: string; label: string }[] = [];
+  displayedColumns = [...this.columns.map(c => c.key), 'acao'];
+  @Input() modoApresentacao: string = 'grade'; // tabela
+
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+
+  @ViewChild(MatSort)
+  sort!: MatSort;
+  dataSource = new MatTableDataSource<any>();
+
+  element: any;
+
+  seleciona(element: any) {
+    this.element = element;
+  }
+
+  ngOnChanges() {
+    this.displayedColumns = [...this.columns.map(c => c.key), 'acao'];
+  }
 
   constructor(
     private fb: FormBuilder,
@@ -87,6 +114,9 @@ export class CardSearchComponent {
       this.service.consult(resultado).subscribe((res: any[]) => {
         this.objects = res.sort((a, b) => a.nome.localeCompare(b.nome));
         this.records_number = this.objects.length;
+        this.dataSource = new MatTableDataSource(this.objects);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
       });
     }
   }

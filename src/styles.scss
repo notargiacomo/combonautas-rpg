@@ -4,6 +4,7 @@
 @use 'styles/card.scss';
 @use 'styles/dialog.scss';
 @use 'styles/tab.scss';
+@use 'styles/button.scss';
 
 html,
 body {
@@ -76,63 +77,6 @@ textarea {
   border-radius: 8px !important;
 }
 
-table {
-  width: 100% !important;
-  max-width: 100% !important;
-  border-collapse: collapse;
-}
-
-button[mat-flat-button] {
-  text-transform: uppercase; /* Deixa o texto em maiúsculas */
-  font-size: 0.75rem; /* Reduz o tamanho da fonte */
-  padding: 0.4rem 0.8rem; /* Ajusta o espaçamento interno */
-  background-color: #e0e0e0 !important; /* Define uma cor de fundo diferente */
-  color: #333 !important; /* Define a cor do texto */
-  border-radius: 5px; /* Suaviza os cantos */
-  transition: background-color 0.3s ease; /* Anima a mudança de cor */
-  border: 1px solid rgb(156, 26, 26) !important; /* Moldura */
-}
-
-button[mat-flat-button]:hover {
-  background-color: #c8c8c8; /* Cor de fundo ao passar o mouse */
-}
-
-.mat-icon {
-  cursor: pointer !important;
-  margin-left: 5% !important;
-}
-
-.mat-mdc-button {
-  font-family: 'Oswald' !important;
-  font-size: 10pt !important;
-  // border: 1px solid rgb(68, 5, 18) !important;
-  background-color: rgb(156, 26, 26) !important;
-  color: rgb(240, 240, 245) !important;
-  cursor: pointer !important;
-}
-
-.mat-mdc-button-disabled {
-  background-color: rgb(45, 35, 60) !important;
-  color: white !important;
-}
-
-.mat-mdc-icon-button[disabled],
-.mat-mdc-icon-button.mat-mdc-button-disabled {
-  background-color: lightgrey !important;
-}
-
-.mat-mdc-unelevated-button {
-  font-family: 'Oswald' !important;
-  font-size: 10pt !important;
-}
-
-.mat-mdc-select {
-  font-family: 'Oswald' !important;
-  font-size: 10pt !important;
-  background-color: white !important;
-  border-radius: 4px !important;
-}
-
 .mat-mdc-text {
   .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) {
     background-color: white !important;
@@ -203,12 +147,12 @@ button[mat-flat-button]:hover {
 .mat-mdc-snack-bar-container .mdc-snackbar__label {
   font-family: 'Oswald' !important;
   font-size: 10pt !important;
-  border: 1px solid rgb(120, 80, 160); /* Moldura */
-  background-color: rgb(45, 35, 60) !important;
+  // border: 1px solid rgb(120, 80, 160); /* Moldura */
+  // background-color: rgb(45, 35, 60) !important;
 }
 
 .mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
-  background-color: rgb(45, 35, 60) !important;
+  // background-color: rgb(45, 35, 60) !important;
   padding-right: 0px !important;
 }
 
@@ -242,66 +186,9 @@ button[mat-flat-button]:hover {
 }
 
 .card-padrao .card-padrao-arvore {
-  background-color: rgb(45, 35, 60) !important; /* Cinza claro */
+  // background-color: rgb(45, 35, 60) !important; /* Cinza claro */
   color: rgb(255, 255, 255) !important;
   border-radius: 10px !important; /* Arredonda os cantos */
-}
-
-.mat-mdc-unelevated-button:not(:disabled) {
-  color: var(--mat-button-filled-label-text-color, var(--mat-sys-on-primary)) !important;
-  background-color: rgb(68, 5, 18) !important;
-}
-
-.mat-mdc-tab-body-content {
-  overflow: hidden !important;
-}
-
-tr.detail-row {
-  height: 0;
-}
-
-tr.element-row:not(.expanded-row):hover {
-  background: whitesmoke;
-}
-
-tr.element-row:not(.expanded-row):active {
-  background: #efefef;
-}
-
-.element-row td {
-  border-bottom-width: 0;
-}
-
-.element-symbol {
-  font-weight: bold !important;
-  font-size: 40px !important;
-  line-height: normal !important;
-}
-
-.element-description-attribution {
-  opacity: 0.5 !important;
-}
-
-.mat-mdc-tab {
-  font-family: 'Oswald' !important;
-  font-size: 10pt !important;
-  --mat-sys-primary: rgb(255, 138, 4) !important;
-}
-
-tr.detail-row {
-  height: 0;
-}
-
-tr.element-row:not(.example-expanded-row):hover {
-  background: whitesmoke;
-}
-
-tr.element-row:not(.example-expanded-row):active {
-  background: #efefef;
-}
-
-.element-row td {
-  border-bottom-width: 0;
 }
 
 .divisao-filtro {
@@ -345,32 +232,6 @@ tr.element-row:not(.example-expanded-row):active {
   font-family: 'Oswald' !important;
 }
 
-.mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
-  background-color: white !important;
-  border-radius: 4px !important;
-}
-
-.mat-mdc-select {
-  background-color: white !important;
-  border-radius: 4px !important;
-}
-
-.select-formulario-edicao {
-  .mat-mdc-select {
-    background-color: white !important;
-    border-radius: 4px !important;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-  }
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 98% !important;
-  padding-top: 0%;
-  margin-bottom: 0%;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
-}
-
 ::ng-deep .mat-mdc-form-field-infill {
   border-radius: 8px !important; // ou 4px se quiser mais sutil
 }
@@ -404,9 +265,5 @@ tr.element-row:not(.example-expanded-row):active {
 .mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label {
   position: relative;
   font-family: 'Oswald' !important;
-  color: rgb(68, 5, 18) !important;
-}
-
-.mat-card-title {
-  color: orange !important;
+  // color: rgb(68, 5, 18) !important;
 }

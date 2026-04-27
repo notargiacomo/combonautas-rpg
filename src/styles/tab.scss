@@ -7,3 +7,42 @@
   overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
   background-color: rgb(68, 5, 18) !important;
 }
+
+.mdc-data-table__cell,
+.mdc-data-table__header-cell {
+  padding: 0 8px !important;
+}
+
+.mat-mdc-cell {
+  padding-left: 0% !important;
+  padding: 5px !important;
+}
+
+.mat-mdc-header-cell {
+  padding-left: 0% !important;
+  padding-top: 0% !important;
+}
+
+.mat-mdc-table th {
+  background-color: rgb(68, 5, 18) !important;
+  color: orange !important;
+  padding: 5px !important;
+}
+
+.mat-mdc-table {
+  border: 2px solid; /* Moldura */
+  border-radius: 15px !important; /* Bordas arredondadas */
+  overflow: hidden !important; /* Garante que o conteúdo respeite o arredondamento */
+  margin-top: 1% !important;
+  background-color: #d8c5b0;
+}
+
+.mat-mdc-header-row {
+  height: 30px !important;
+  min-height: 30px !important;
+  max-height: 30px !important;
+}
+
+.mat-mdc-table tr:nth-child(even) {
+  background-color: #efe4d4 !important;
+}

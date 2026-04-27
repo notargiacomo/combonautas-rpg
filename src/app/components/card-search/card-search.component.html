@@ -50,23 +50,112 @@
     </div>
   </mat-card>
 
-  <mat-card>
-    <div class="row mb-2">
-      <div class="d-flex justify-content-end">
-        <b>Número de Registros: {{ records_number }}</b>
+  @if (modoApresentacao == 'grade') {
+    <mat-card>
+      <div class="row mb-2">
+        <div class="d-flex justify-content-end">
+          <b>Número de Registros: {{ records_number }}</b>
+        </div>
       </div>
-    </div>
 
-    <mat-grid-list *ngIf="isMobile" cols="1" [rowHeight]="rowHeight" [gutterSize]="gutterSizeGrid">
-      <mat-grid-tile *ngFor="let object of objects">
-        <ng-container *ngTemplateOutlet="template; context: { $implicit: object }"></ng-container>
-      </mat-grid-tile>
-    </mat-grid-list>
+      <mat-grid-list *ngIf="isMobile" cols="1" [rowHeight]="rowHeight" [gutterSize]="gutterSizeGrid">
+        <mat-grid-tile *ngFor="let object of objects">
+          <ng-container *ngTemplateOutlet="template; context: { $implicit: object }"></ng-container>
+        </mat-grid-tile>
+      </mat-grid-list>
 
-    <mat-grid-list *ngIf="!isMobile" [cols]="colsGrid" [rowHeight]="rowHeight" [gutterSize]="gutterSizeGrid">
-      <mat-grid-tile *ngFor="let object of objects">
-        <ng-container *ngTemplateOutlet="template; context: { $implicit: object }"></ng-container>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-card>
+      <mat-grid-list *ngIf="!isMobile" [cols]="colsGrid" [rowHeight]="rowHeight" [gutterSize]="gutterSizeGrid">
+        <mat-grid-tile *ngFor="let object of objects">
+          <ng-container *ngTemplateOutlet="template; context: { $implicit: object }"></ng-container>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+  }
+  @if (modoApresentacao == 'tabela') {
+    @if (isMobile) {
+      <mat-card>
+        <div class="row mt-2">
+          <table class="" mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+            <!-- Colunas dinâmicas -->
+            <ng-container *ngFor="let col of columns" [matColumnDef]="col.key">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                {{ col.label.toUpperCase() }}
+              </th>
+
+              <td mat-cell *matCellDef="let element">
+                {{ element[col.key] }}
+              </td>
+            </ng-container>
+
+            <!-- Coluna de ação -->
+            <ng-container matColumnDef="acao">
+              <th mat-header-cell *matHeaderCellDef></th>
+              <td mat-cell *matCellDef="let element">
+                <button class="" mat-icon-button (click)="seleciona(element)">
+                  <mat-icon>zoom_in</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+
+            <!-- Linhas -->
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+
+          <mat-paginator
+            [pageSizeOptions]="[10, 20, 50, 100, objects ? objects.length : 200]"
+            showFirstLastButtons
+            aria-label="Select page of periodic elements"></mat-paginator>
+        </div>
+        <div class="row mt-2">
+          @if (element) {
+            <ng-container class="" *ngTemplateOutlet="template; context: { $implicit: element }"></ng-container>
+          }
+        </div>
+      </mat-card>
+    } @else {
+      <mat-card>
+        <div class="row">
+          <div class="col-sm-6">
+            <table class="" mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+              <!-- Colunas dinâmicas -->
+              <ng-container *ngFor="let col of columns" [matColumnDef]="col.key">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                  {{ col.label.toUpperCase() }}
+                </th>
+
+                <td mat-cell *matCellDef="let element">
+                  {{ element[col.key] }}
+                </td>
+              </ng-container>
+
+              <!-- Coluna de ação -->
+              <ng-container matColumnDef="acao">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let element">
+                  <button mat-icon-button color="primary" (click)="seleciona(element)">
+                    <mat-icon>zoom_in</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <!-- Linhas -->
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+
+            <mat-paginator
+              [pageSizeOptions]="[10, 20, 50, 100, objects ? objects.length : 200]"
+              showFirstLastButtons
+              aria-label="Select page of periodic elements"></mat-paginator>
+          </div>
+          <div class="col-sm-6">
+            @if (element) {
+              <ng-container class="" *ngTemplateOutlet="template; context: { $implicit: element }"></ng-container>
+            }
+          </div>
+        </div>
+      </mat-card>
+    }
+  }
 </form>

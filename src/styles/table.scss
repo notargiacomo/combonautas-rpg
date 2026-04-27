@@ -1,7 +1,6 @@
-
 // cabeçalho da tabela
 .mat-mdc-header-row {
-  font-family: "Oswald" !important;
+  font-family: 'Oswald' !important;
   font-size: 10pt !important;
   background-color: rgb(45, 35, 60) !important;
   color: rgb(255, 255, 255) !important;
@@ -11,10 +10,10 @@
 
 // linha da tabela
 .mat-mdc-row {
-  font-family: "Oswald" !important;
+  font-family: 'Oswald' !important;
   font-size: 10pt !important;
-  height: 0px !important; 
-  min-height: 0px !important; 
+  height: 0px !important;
+  min-height: 0px !important;
   max-height: 0px !important;
 }
 
@@ -22,7 +21,6 @@
   border-bottom: 2px solid #bfa7d7 !important;
   color: #5a3e69 !important;
   background-color: rgba(255, 255, 255, 0.12) !important;
-
 }
 
 // Cabeçalho da Tabela
@@ -44,4 +42,62 @@
 
 th {
   color: black !important;
+}
+
+.mat-mdc-tab-body-content {
+  overflow: hidden !important;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.element-row:not(.expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.element-row:not(.expanded-row):active {
+  background: #efefef;
+}
+
+.element-row td {
+  border-bottom-width: 0;
+}
+
+.element-symbol {
+  font-weight: bold !important;
+  font-size: 40px !important;
+  line-height: normal !important;
+}
+
+.element-description-attribution {
+  opacity: 0.5 !important;
+}
+
+.mat-mdc-tab {
+  font-family: 'Oswald' !important;
+  font-size: 10pt !important;
+  --mat-sys-primary: rgb(255, 138, 4) !important;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.element-row td {
+  border-bottom-width: 0;
+}
+
+table {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-collapse: collapse;
 }

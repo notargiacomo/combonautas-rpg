@@ -2,6 +2,13 @@
   name="Magias"
   [service]="service"
   [searchColumn]="['nome', 'tipo', 'círculo', 'escola', 'execução', 'alcance', 'duração']"
+  [columns]="[
+    { key: 'nome', label: 'Nome' },
+    { key: 'tipo', label: 'Tipo' },
+    { key: 'escola', label: 'Escola' },
+    { key: 'circulo', label: 'Círculo' },
+  ]"
+  [modoApresentacao]="'tabela'"
   [colsGrid]="3"
   [rowHeight]="600"
   [suggestions]="[
