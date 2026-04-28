@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { AbstractService } from './abstract.service';
 import { Origem } from '../model/origem';
 
-export const FILTROS_ORIGEM = ['nome'];
+export const FILTROS_ORIGEM = ['nome', 'tipo'];
 @Injectable({
   providedIn: 'root',
 })

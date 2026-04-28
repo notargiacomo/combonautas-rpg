@@ -3,7 +3,11 @@
   [service]="origemService"
   [searchColumn]="['nome']"
   [colsGrid]="3"
-  [suggestions]="[]"
+  [suggestions]="['heroica', 'regional', 'mundana']"
+  [columns]="[
+    { key: 'nome', label: 'Nome' },
+    { key: 'tipo', label: 'Tipo' },
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

@@ -2,6 +2,11 @@
   name="Poderes"
   [service]="poderesService"
   [searchColumn]="['nome', 'tipo']"
+  [columns]="[
+    { key: 'nome', label: 'Nome' },
+    { key: 'tipo', label: 'Tipo' },
+  ]"
+  [modoApresentacao]="'tabela'"
   [colsGrid]="3"
   [rowHeight]="350"
   [suggestions]="[

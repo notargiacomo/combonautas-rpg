@@ -115,9 +115,17 @@ export class CardSearchComponent {
         this.objects = res.sort((a, b) => a.nome.localeCompare(b.nome));
         this.records_number = this.objects.length;
         this.dataSource = new MatTableDataSource(this.objects);
+        this.paginator.pageSize = 10;
+        this.paginator.pageSizeOptions = [10, 20, 50, 100, this.objects?.length || 200];
         this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
       });
+    }
+  }
+
+  mudaModoApresentacao(modoApresentacao: any) {
+    this.modoApresentacao = modoApresentacao;
+    if (this.modoApresentacao === 'tabela') {
+      this.consult();
     }
   }
 

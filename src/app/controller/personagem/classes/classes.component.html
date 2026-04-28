@@ -5,6 +5,11 @@
   [colsGrid]="2"
   [rowHeight]="900"
   [suggestions]="['Armas Marciais', 'Armaduras Pesadas', 'Escudos']"
+  [columns]="[
+    { key: 'nome', label: 'Nome' },
+    { key: 'fator_vida', label: 'Vida por Nível (+CON)' },
+    { key: 'fator_mana', label: 'Mana Por Nível' },
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">
