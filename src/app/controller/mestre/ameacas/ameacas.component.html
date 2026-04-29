@@ -5,6 +5,13 @@
   [colsGrid]="2"
   [suggestions]="[]"
   [rowHeight]="900"
+  [columns]="[
+    { key: 'nome', label: 'Nome' },
+    { key: 'tipo', label: 'Tipo' },
+    { key: 'tamanho', label: 'Tamanho' },
+    { key: 'papel', label: 'Papel' },
+  ]"
+  [modoApresentacao]="'tabela'"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

@@ -27,7 +27,9 @@ export class ArmadurasEscudosService extends AbstractService {
         itens.filter(
           i =>
             [TipoItem.ARMADURA.toString(), TipoItem.ESCUDO.toString()].includes(i.tipo!) &&
-            !i.chave.includes(Chave.ITEM_MAGICO_MAIOR, Chave.ITEM_MAGICO_MEDIO, Chave.ITEM_MAGICO_MENOR)
+            !i.chave.includes(Chave.ITEM_MAGICO_MAIOR) &&
+            !i.chave.includes(Chave.ITEM_MAGICO_MEDIO) &&
+            !i.chave.includes(Chave.ITEM_MAGICO_MENOR)
         )
       )
     );

@@ -6,11 +6,7 @@ import { AbstractService } from './abstract.service';
 import { TipoItem } from '@app/enum/tipo.item.enum';
 import { Chave } from '@app/enum/chave.enum';
 
-export const FILTROS_ITENS_GERAIS = [
-  'nome',
-  'tipo',
-  'chave',
-];
+export const FILTROS_ITENS_GERAIS = ['nome', 'tipo', 'chave'];
 @Injectable({
   providedIn: 'root',
 })
@@ -39,7 +35,9 @@ export class ItensGeraisService extends AbstractService {
               TipoItem.SERVICO.toString(),
               TipoItem.APARATO.toString(),
             ].includes(i.tipo!) &&
-            !i.chave.includes(Chave.ITEM_MAGICO_MAIOR, Chave.ITEM_MAGICO_MEDIO, Chave.ITEM_MAGICO_MENOR)
+            !i.chave.includes(Chave.ITEM_MAGICO_MAIOR) &&
+            !i.chave.includes(Chave.ITEM_MAGICO_MEDIO) &&
+            !i.chave.includes(Chave.ITEM_MAGICO_MENOR)
         )
       )
     );

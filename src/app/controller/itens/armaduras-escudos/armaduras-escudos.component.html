@@ -5,6 +5,11 @@
   [colsGrid]="3"
   [rowHeight]="600"
   [suggestions]="['Armadura Leve', 'Armadura Pesada', 'Escudo']"
+  [columns]="[
+    { key: 'nome', label: 'Nome' },
+    { key: 'tipo', label: 'Tipo' },
+    { key: 'preco', label: 'Preço (T$)' },
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

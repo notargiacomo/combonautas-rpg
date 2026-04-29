@@ -5,6 +5,10 @@
   [colsGrid]="3"
   [rowHeight]="350"
   [suggestions]="['Medo', 'Movimento', 'Mental', 'Sentidos', 'Metabolismo', 'Veneno', 'Cansaço', 'Metamorfose']"
+  [columns]="[
+    { key: 'nome', label: 'Nome' },
+    { key: 'tipo', label: 'Tipo' },
+  ]"
   gutterSizeGrid="10px">
   <ng-template let-item>
     <mat-card class="card-game">

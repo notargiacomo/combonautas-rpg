@@ -26,7 +26,9 @@ export class ArmasMunicoesService extends AbstractService {
         itens.filter(
           i =>
             [TipoItem.ARMA.toString(), TipoItem.MUNICAO.toString()].includes(i.tipo!) &&
-            !i.chave.includes(Chave.ITEM_MAGICO_MAIOR, Chave.ITEM_MAGICO_MEDIO, Chave.ITEM_MAGICO_MENOR)
+            !i.chave.includes(Chave.ITEM_MAGICO_MAIOR) &&
+            !i.chave.includes(Chave.ITEM_MAGICO_MEDIO) &&
+            !i.chave.includes(Chave.ITEM_MAGICO_MENOR)
         )
       )
     );
