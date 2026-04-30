@@ -2496,6 +2496,26 @@ Um Presa de Coral é um guerreiro de elite khubariano, um feroz campeão de seu 
         referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
         paginas: 'pags 184 a 185',
       },
+      {
+        id: 71,
+        nome: `Cavaleiro Silvestre`,
+        marca_distincao: `
+        <h4><b>Marca da Distinção</b></h4>
+        <h5>Naturalmente Furtivo</h5>
+        <p><i><b>É muito difícil acompanhar os movimentos de um cavaleiro silvestre quando ele está em seu território.</b></i></p>
+        <p>Você soma sua Inteligência em Furtividade. Além disso, quando está em uma floresta ou em outro tipo de terreno escolhido para seu poder Explorador, você pode gastar uma ação de movimento para usar o poder Camuflagem sem gastar PMs. Pré-requisitos: Camuflagem, Explorador (floresta), treinado em Furtividade.</p>
+        `,
+        descricao: `<p>Compreendendo o ato de guerrear como uma de muitas armas passíveis ao estudo rumo à perfeição, os elfos desenvolveram uma vasta gama de técnicas de combate nos tempos idos de Lenórienn. Os povos do Reinado têm na mais alta estima os arqueiros arcanos, representantes máximos da individualidade élfica, mas os olhos dos tradicionalistas realmente transbordam em lágrimas diante da lembrança da vanguarda armadurada.</p>
+        <p>Trajando armaduras de metal levíssimo, seus passos soavam silenciosos pela floresta. Lado a lado, seus escudos delgados se uniam em formas geométricas belíssimas e intransponíveis. Montavam criaturas livres da floresta, como trobos altamente treinados ou alces gigantes. Acima de tudo, dominavam a esgrima defensiva élfica, usando de aço e mitral para enfrentar toda sorte de inimigo. Não raro lutavam lado a lado dos Espadas de Glórienn, defendendo os guerreiros sagrados para que pudessem eliminar os inimigos dos elfos. Os feitos heroicos das fileiras de cavaleiros silvestres inspiravam as demais tropas élficas, dando forças para que seguissem em frente.</p>
+        <p>Tudo isso está no passado. Não existem mais fileiras de cavaleiros silvestres, eles não são mais escolhidos por uma deusa em um sonho, nenhuma criança observa seus treinamentos com olhos marejados, a última donzela que suspirou diante de seus feitos morreu na chuva ácida em Tapista. Manter viva essa arte menos individualista é difícil… mas não impossível.</p>
+        `,
+        admissao: `<p>No auge do povo élfico, a honra de se tornar um cavaleiro silvestre era entregue pessoalmente por Glórienn em um sonho. Após a cerimônia onírica, o candidato precisava integrar a Ordem Perene dos Cavaleiros de Lenórienn e treinar durante oito invernos.</p>
+        <p>Hoje em dia, pouquíssimos cavaleiros silvestres existem. Como o treinamento exige trabalho em equipe, a relação entre mestre e discípulo que mantém viva a tradição do arqueiro arcano não é ajuda para as fileiras vazias de cavaleiros silvestres. Há rumores, porém, de que um elfo vilão arrependido fundou a Nova Ordem Perene dos Cavaleiros Silvestres nas profundezas da Floresta de Greenaria. Eles observam, ocultos nas copas das árvores, aqueles que adentram seus domínios. Caso exista entre os visitantes um exemplar do ideal élfico, os cavaleiros se apresentam e convidam para se unir a eles para um treinamento, durante um inverno. O verdadeiro ideal élfico é um combatente ágil, versado em espada e magia, bonito, justo e ousado. Diante da situação atual do povo élfico, porém, as exigências são bem mais flexíveis; um combatente ágil e habilidoso ou um elfo fisicamente apto já podem ser abordados. Depois do treinamento inicial, de poucas semanas, o candidato deve retornar para Greenaria até o próximo inverno, trazendo uma oferenda para a ordem.`,
+        ha_informacoes_adicionais: false,
+        imagem: 'assets/img/distincao_cavaleiro_silvestre.png',
+        referencias: Referencia.AVENTURA_LIBERTACAO_VALKARIA,
+        paginas: 'pags 184 a 185',
+      },
     ];
   }
 }
