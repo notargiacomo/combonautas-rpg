@@ -1,0 +1,36 @@
+<mat-card>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2><b>CÁLCULO DE ATRIBUTOS</b></h2>
+      <hr />
+    </div>
+  </div>
+  <div class="row g-3">
+    <div class="col-12 label">
+      <b style="font-size: large">{{ 'PONTOS GASTOS: ' + points }}</b>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-2 mb-4">
+      <app-attribute [points]="points" [attribute]="for" (changePoints)="calculaPontos($event)"></app-attribute>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2 mb-4">
+      <app-attribute [points]="points" [attribute]="des" (changePoints)="calculaPontos($event)"></app-attribute>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2 mb-4">
+      <app-attribute [points]="points" [attribute]="con" (changePoints)="calculaPontos($event)"></app-attribute>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2 mb-4">
+      <app-attribute [points]="points" [attribute]="int" (changePoints)="calculaPontos($event)"></app-attribute>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2 mb-4">
+      <app-attribute [points]="points" [attribute]="sab" (changePoints)="calculaPontos($event)"></app-attribute>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-2 mb-4">
+      <app-attribute [points]="points" [attribute]="car" (changePoints)="calculaPontos($event)"></app-attribute>
+    </div>
+  </div>
+</mat-card>

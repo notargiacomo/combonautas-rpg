@@ -26,6 +26,7 @@ import { PersonagemAleatorioComponent } from './controller/utilitarios/personage
 import { FichaRapidaComponent } from './controller/utilitarios/ficha-rapida/ficha-rapida.component';
 import { AmeacasComponent } from './controller/mestre/ameacas/ameacas.component';
 import { FamiliaresComponent } from './controller/campanha/familiares/familiares.component';
+import { CalculoAtributosComponent } from './controller/utilitarios/calculo-atributos/calculo-atributos.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -44,6 +45,7 @@ export const routes: Routes = [
   { path: 'campanha/familiares', component: FamiliaresComponent },
 
   { path: 'utilitarios/personagem-aleatorio', component: PersonagemAleatorioComponent },
+  { path: 'utilitarios/calculo-atributos', component: CalculoAtributosComponent },
   { path: 'utilitarios/ficha-rapida', component: FichaRapidaComponent },
 
   { path: 'personagem/racas', component: RacasComponent },

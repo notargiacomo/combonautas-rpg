@@ -20954,85 +20954,85 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.PODER_TORMENTA,
         referencias: Referencia.HEROIS,
         paginas: '83',
-      },
-      {
-        id: 1600,
-        nome: 'Defesa Ágil',
-        descricao: `
-          <p><i>Na floresta de Grenaria, o aço não é sinônimo de lentidão. Trajados em armaduras delicadas e resistentes, os cavaleiros silvestres se movem com intensa agilidade.</i></p>
-          <p>Você se torna proficiente com armaduras pesadas. Quando usa uma armadura pesada, você pode aplicar 1 ponto da sua Destreza na Defesa e diminui a penalidade de armadura em 1. Esses bônus aumentam em +1 para cada dois outros poderes de cavaleiro silvestre que você possuir. Pré-requisitos: treinado em Luta e Sobrevivência, Acuidade com Arma, Esquiva.</p>
-          `,
-        poder_chave_distincao: true,
-        referencias: Referencia.DB,
-        tipo: TipoPoder.PODER_DISTINCAO,
-        prerequisito_nivel: 5,
-        id_distincao: 71,
-      },
-      {
-        id: 1601,
-        nome: 'Arte Élfica',
-        descricao: `
-          <p><i>Uma nota ao tinir da espada. Um verso ao rugir da batalha. Uma canção ao esplendor da vitória.</i></p>
-          <p>Quando acerta um ataque corpo a corpo com uma arma leve ou ágil, você pode gastar 1 PM. Se fizer isso, você e cada aliado em alcance curto recebem +2 em testes de perícia até o início do seu próximo turno. para cada dois outros poderes de cavaleiro silvestre que você possuir, pode gastar +1 PM quando usa este poder para aumentar esse bônus em +2. Pré-requisitos: treinado em Atuação, Defesa Ágil.</p>
-          `,
-        poder_chave_distincao: false,
-        referencias: Referencia.DB,
-        tipo: TipoPoder.PODER_DISTINCAO,
-        prerequisito_nivel: 5,
-        id_distincao: 71,
-      },
-      {
-        id: 1602,
-        nome: 'Ataque Elegante',
-        descricao: `
-          <p><i>A arma mais tradicional dos cavaleiros silvestres é a espada longa. Tratam-na como uma expansão do próprio corpo.</i></p>
-          <p>Você pode empunhar espadas longas como armas leves, e recebe +2 nas rolagens de dano com estas armas. Esse bônus aumenta +1 para cada dois outros poderes de cavaleiro silvestre. Pré-requisitos: Defesa Ágil, Foco em Arma (espada longa).</p>
-          `,
-        poder_chave_distincao: false,
-        referencias: Referencia.DB,
-        tipo: TipoPoder.PODER_DISTINCAO,
-        prerequisito_nivel: 5,
-        id_distincao: 71,
-      },
-      {
-        id: 1603,
-        nome: 'Força da União',
-        descricao: `
-          <p><i>Os cavaleiros silvestres estão em vantagem quando lutam em grupo.</i></p>
-          <p>Quando faz um ataque com uma arma leve ou ágil contra um alvo que você esteja flanqueando, você recebe +1 na margem de ameaça deste ataque. Para cada dois outros poderes de cavaleiro silvestre que você possui, este bônus aumenta em +1. Pré-requisito: Defesa Ágil.</p>
-          `,
-        poder_chave_distincao: false,
-        referencias: Referencia.DB,
-        tipo: TipoPoder.PODER_DISTINCAO,
-        prerequisito_nivel: 5,
-        id_distincao: 71,
-      },
-      {
-        id: 1604,
-        nome: 'Magia Silvestre',
-        descricao: `
-          <p><i>Nem só de aço vive a vanguarda élfica. Mesmo um conhecimento rudimentar de magia pode levar a um suporte poderoso.</i></p>
-          <p>Você aprende e pode lançar uma magia arcana de primeiro círculo (atributo-chave Inteligência). Para cada dois outros poderes de cavaleiro silvestre, você aprende mais uma magia arcana de primeiro círculo. Você pode lançar essas magias mesmo que esteja usando armadura. Pré-requisitos: treinado em Misticismo, Defesa Ágil.</p>
-          `,
-        poder_chave_distincao: false,
-        referencias: Referencia.DB,
-        tipo: TipoPoder.PODER_DISTINCAO,
-        prerequisito_nivel: 5,
-        id_distincao: 71,
-      },
-      {
-        id: 1605,
-        nome: 'Montaria Silvestre',
-        descricao: `
-          <p><i>A união entre trobo e cavaleiro vai além da simples amizade ou companheirismo. É um laço espiritual inquebrável.</i></p>
-          <p>Você recebe um parceiro trobo iniciante. Ele se torna veterano quando você tiver mais dois outros poderes de cavaleiro silvestre e mestre quando você tiver mais quatro outros poderes de cavaleiro silvestre. Enquanto estiver montado no seu trobo, você recebe +5 em testes de Atletismo para correr e saltar. Pré-requisitos: treinado em Cavalgar, Defesa Ágil.</p>
-          `,
-        poder_chave_distincao: false,
-        referencias: Referencia.DB,
-        tipo: TipoPoder.PODER_DISTINCAO,
-        prerequisito_nivel: 5,
-        id_distincao: 71,
       }
+      // {
+      //   id: 1600,
+      //   nome: 'Defesa Ágil',
+      //   descricao: `
+      //     <p><i>Na floresta de Grenaria, o aço não é sinônimo de lentidão. Trajados em armaduras delicadas e resistentes, os cavaleiros silvestres se movem com intensa agilidade.</i></p>
+      //     <p>Você se torna proficiente com armaduras pesadas. Quando usa uma armadura pesada, você pode aplicar 1 ponto da sua Destreza na Defesa e diminui a penalidade de armadura em 1. Esses bônus aumentam em +1 para cada dois outros poderes de cavaleiro silvestre que você possuir. Pré-requisitos: treinado em Luta e Sobrevivência, Acuidade com Arma, Esquiva.</p>
+      //     `,
+      //   poder_chave_distincao: true,
+      //   referencias: Referencia.DB,
+      //   tipo: TipoPoder.PODER_DISTINCAO,
+      //   prerequisito_nivel: 5,
+      //   id_distincao: 71,
+      // },
+      // {
+      //   id: 1601,
+      //   nome: 'Arte Élfica',
+      //   descricao: `
+      //     <p><i>Uma nota ao tinir da espada. Um verso ao rugir da batalha. Uma canção ao esplendor da vitória.</i></p>
+      //     <p>Quando acerta um ataque corpo a corpo com uma arma leve ou ágil, você pode gastar 1 PM. Se fizer isso, você e cada aliado em alcance curto recebem +2 em testes de perícia até o início do seu próximo turno. para cada dois outros poderes de cavaleiro silvestre que você possuir, pode gastar +1 PM quando usa este poder para aumentar esse bônus em +2. Pré-requisitos: treinado em Atuação, Defesa Ágil.</p>
+      //     `,
+      //   poder_chave_distincao: false,
+      //   referencias: Referencia.DB,
+      //   tipo: TipoPoder.PODER_DISTINCAO,
+      //   prerequisito_nivel: 5,
+      //   id_distincao: 71,
+      // },
+      // {
+      //   id: 1602,
+      //   nome: 'Ataque Elegante',
+      //   descricao: `
+      //     <p><i>A arma mais tradicional dos cavaleiros silvestres é a espada longa. Tratam-na como uma expansão do próprio corpo.</i></p>
+      //     <p>Você pode empunhar espadas longas como armas leves, e recebe +2 nas rolagens de dano com estas armas. Esse bônus aumenta +1 para cada dois outros poderes de cavaleiro silvestre. Pré-requisitos: Defesa Ágil, Foco em Arma (espada longa).</p>
+      //     `,
+      //   poder_chave_distincao: false,
+      //   referencias: Referencia.DB,
+      //   tipo: TipoPoder.PODER_DISTINCAO,
+      //   prerequisito_nivel: 5,
+      //   id_distincao: 71,
+      // },
+      // {
+      //   id: 1603,
+      //   nome: 'Força da União',
+      //   descricao: `
+      //     <p><i>Os cavaleiros silvestres estão em vantagem quando lutam em grupo.</i></p>
+      //     <p>Quando faz um ataque com uma arma leve ou ágil contra um alvo que você esteja flanqueando, você recebe +1 na margem de ameaça deste ataque. Para cada dois outros poderes de cavaleiro silvestre que você possui, este bônus aumenta em +1. Pré-requisito: Defesa Ágil.</p>
+      //     `,
+      //   poder_chave_distincao: false,
+      //   referencias: Referencia.DB,
+      //   tipo: TipoPoder.PODER_DISTINCAO,
+      //   prerequisito_nivel: 5,
+      //   id_distincao: 71,
+      // },
+      // {
+      //   id: 1604,
+      //   nome: 'Magia Silvestre',
+      //   descricao: `
+      //     <p><i>Nem só de aço vive a vanguarda élfica. Mesmo um conhecimento rudimentar de magia pode levar a um suporte poderoso.</i></p>
+      //     <p>Você aprende e pode lançar uma magia arcana de primeiro círculo (atributo-chave Inteligência). Para cada dois outros poderes de cavaleiro silvestre, você aprende mais uma magia arcana de primeiro círculo. Você pode lançar essas magias mesmo que esteja usando armadura. Pré-requisitos: treinado em Misticismo, Defesa Ágil.</p>
+      //     `,
+      //   poder_chave_distincao: false,
+      //   referencias: Referencia.DB,
+      //   tipo: TipoPoder.PODER_DISTINCAO,
+      //   prerequisito_nivel: 5,
+      //   id_distincao: 71,
+      // },
+      // {
+      //   id: 1605,
+      //   nome: 'Montaria Silvestre',
+      //   descricao: `
+      //     <p><i>A união entre trobo e cavaleiro vai além da simples amizade ou companheirismo. É um laço espiritual inquebrável.</i></p>
+      //     <p>Você recebe um parceiro trobo iniciante. Ele se torna veterano quando você tiver mais dois outros poderes de cavaleiro silvestre e mestre quando você tiver mais quatro outros poderes de cavaleiro silvestre. Enquanto estiver montado no seu trobo, você recebe +5 em testes de Atletismo para correr e saltar. Pré-requisitos: treinado em Cavalgar, Defesa Ágil.</p>
+      //     `,
+      //   poder_chave_distincao: false,
+      //   referencias: Referencia.DB,
+      //   tipo: TipoPoder.PODER_DISTINCAO,
+      //   prerequisito_nivel: 5,
+      //   id_distincao: 71,
+      // }
     );
   }
 }

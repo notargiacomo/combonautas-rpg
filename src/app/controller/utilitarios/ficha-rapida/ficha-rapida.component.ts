@@ -58,8 +58,6 @@ export class FichaRapidaComponent extends CombonautasBase implements OnInit {
   sab: AtributoPersonagem = {};
   car: AtributoPersonagem = {};
 
-  pontos_gastos: number = 0;
-
   ataques: string[] = [];
   proficiencias: string[] = [];
   sentidos: string[] = [];
