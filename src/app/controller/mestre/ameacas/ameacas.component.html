@@ -109,6 +109,8 @@
                           {{
                             ' ' +
                               corpo.nome +
+                              ' x' +
+                              corpo.numero_ataques +
                               ' +' +
                               corpo.acerto +
                               ' (' +
@@ -130,11 +132,13 @@
                     }
                     @if (item.ataques_distancia != null && item.ataques_distancia.length > 0) {
                       <p>
-                        <b>Corpo a Corpo</b>
+                        <b>À Distância</b>
                         @for (distancia of item.ataques_distancia; track $index) {
                           {{
                             ' ' +
                               distancia.nome +
+                              ' x' +
+                              distancia.numero_ataques +
                               ' +' +
                               distancia.acerto +
                               ' (' +
@@ -155,10 +159,8 @@
                       </p>
                     }
                     @for (habilidade of item.habilidades; track $index) {
-                      <p>
-                        <b>{{ habilidade.nome }}:</b>
-                        {{ habilidade.descricao }}
-                      </p>
+                      <b>{{ habilidade.nome }}:</b>
+                      <div class="text-justify mb-4" [innerHTML]="habilidade.descricao"></div>
                     }
                   </div>
                   <div class="row">

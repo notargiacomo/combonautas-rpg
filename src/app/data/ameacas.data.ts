@@ -2781,6 +2781,93 @@ export class AmeacaData {
         tesouros: 'Padrão',
         equipamentos: 'Azagaia x2, couraça, maça, símbolo sagrado de Kallyadranoch',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_clerigo_kally.png',
+        iniciativa: 9,
+        percepcao: 14,
+        sentidos: [],
+        defesa: 29,
+        fortitude: 15,
+        reflexos: 8,
+        vontade: 21,
+        vida: 224,
+        mana: 51,
+        deslocamento_terrestre: 9,
+        deslocamento_escavacao: 0,
+        atributo_forca: 1,
+        atributo_destreza: 1,
+        atributo_constituicao: 3,
+        atributo_inteligencia: 1,
+        atributo_sabedoria: 6,
+        atributo_carisma: 4,
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Maça',
+            acerto: 24,
+            dado_dano: '1d8',
+            dano: '17',
+            tipo_dano: 'impacto',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+        ataques_distancia: [
+          {
+            numero_ataques: 1,
+            tipo: 'Arremesso',
+            nome: 'Azagaia',
+            acerto: 24,
+            dado_dano: '1d6',
+            dano: '17',
+            tipo_dano: 'perfuração',
+            alcance: 30,
+            conecta_habilidade: '',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Aura de Medo (Livre, 2 PM) ',
+            descricao:
+              'O clérigo de Kally gera uma aura de medo de 9m de raio que dura até o fim da cena. Todos os inimigos que entrem na aura ficam abalados até o fim da cena (Von CD 28 evita e a criatura fica imune a esta habilidade por um dia). ✨',
+          },
+          {
+            nome: 'Magia Acelerada (Livre, +4 PM)',
+            descricao:
+              'Uma vez por rodada, quando lança uma magia com execução de ação completa ou menor, o clérigo muda a execução dela para livre.',
+          },
+          {
+            nome: 'Servos do Dragão (Completa, 2 PM) ',
+            descricao: 'O clérigo invoca 2d4+1 kobolds, (veja Acólito de Kally). ✨',
+          },
+          {
+            nome: 'Magias',
+            descricao: `Como um clérigo de Kallyadranoch de 9º nível (CD 28, limite de PM 9).
+              <ul>
+                <li>Coluna de Chamas (Padrão, 9 PM) Um cilindro de fogo sagrado com 3m de raio e 30m de altura desce dos céus em alcance longo, causando 9d6 pontos de dano de fogo mais 6d6 pontos de dano de luz nas criaturas e objetos livres na área.</li>
+                <li>Comando (Padrão, 4 PM) No início do seu próximo turno, duas criaturas em alcance curto ficam caídas e não podem levantar-se até o início do seu turno seguinte (Von evita).<li>
+                <li>Controlar Fogo (Padrão, 3 PM) O clérigo chameja qualquer número de armas e ataques desarmados escolhidos em alcance curto. Até o fim da cena, essas armas causam +1d6 pontos de dano de fogo.</li>
+                <li>Escudo da Fé (Reação, 1 PM) Quando uma criatura em alcance curto sofre um ataque, ela recebe +2 na Defesa por 1 turno.</li>
+                <li>Oração (Padrão, 7 PM, sustentada) O clérigo e seus aliados em alcance curto recebem +3 em testes de perícia e rolagens de dano, e todos seus inimigos em alcance curto sofrem –3 em testes de perícia e rolagens de dano. Esse efeito é cumulativo com outras magias.</li>
+                <li>Proteção Divina (Reação, 3 PM) Por uma rodada, uma criatura em alcance curto recebe +5 no próximo teste de resistência que fizer.</li>
+              </ul>
+              `,
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Intimidação',
+            valor: 12,
+          },
+          {
+            nome: 'Misticismo',
+            valor: 9,
+          },
+          {
+            nome: 'Religião',
+            valor: 16,
+          },
+        ],
       },
       {
         id: 226,
