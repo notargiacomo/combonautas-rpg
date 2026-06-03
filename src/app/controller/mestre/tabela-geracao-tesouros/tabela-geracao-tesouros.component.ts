@@ -275,14 +275,11 @@ export class TabelaGeracaoTesourosComponent {
       type: 'money',
       level: this.formulario.get('nivel')?.value,
       random: random,
+      notes: this.formulario.get('tipo')?.value,
     };
 
     let retorno = this.treasureService.generate(contexto);
     this.detalhesTesouroDinheiro.push(retorno.report!);
-
-    if (this.formulario.get('tipo')?.value === 'DOBRO') {
-      this.detalhesTesouroDinheiro.push(this.treasureService.generate(contexto).report!);
-    }
   }
 
   gerarMaterialEspecial() {

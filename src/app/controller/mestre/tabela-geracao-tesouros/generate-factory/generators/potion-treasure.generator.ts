@@ -59,7 +59,7 @@ export class PotionTreasureGenerator implements TreasureGenerator {
 
     return `
     <p><b>FÓRMULA:</b> ${linha.valor}</p>
-    <p><b>RESULTADO D100:</b> ${random}</p>
+    <p><b>RESULTADO D120:</b> ${random}</p>
       <b>${linha.valor}:</b>
       <ul>
           ${linhasHtml}

@@ -38,7 +38,12 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
       };
     } else {
       let contadorMoedas = this.contadorMoedas(linhaDinheiroNivel);
-      dinheiro = ctx.notes?.includes('METADE') ? contadorMoedas / 2 : contadorMoedas;
+      dinheiro = ctx.notes?.includes('METADE')
+        ? contadorMoedas / 2
+        : ctx.notes?.includes('DOBRO')
+          ? contadorMoedas * 2
+          : contadorMoedas;
+
       gt = {
         items: itens,
         return: dinheiro.toString(),
