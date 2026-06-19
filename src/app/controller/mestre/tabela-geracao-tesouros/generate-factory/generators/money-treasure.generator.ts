@@ -114,7 +114,7 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
           <p><b>FÓRMULA:</b> ${linhatabela.valor}</p>
       </div>
       <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> T$ ${valor}</p>
+          <p><b>DINHEIRO TOTAL:</b> T$${valor}</p>
       </div>`;
 
     return detalheRiqueza;

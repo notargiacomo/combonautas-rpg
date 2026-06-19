@@ -353,7 +353,7 @@ export class TabelaGeracaoTesourosComponent {
     } else {
       this.detalhesTesouroItens.push(`
       <p><b>FÓRMULA:</b> ${linhaItemNivel.valor}</p>
-      <p><b>RESULTADO D100:</b>${random}</p>
+      <p><b>RESULTADO D100:</b> ${random}</p>
       <p><b>ITEM:</b> N/A</p>
       `);
     }

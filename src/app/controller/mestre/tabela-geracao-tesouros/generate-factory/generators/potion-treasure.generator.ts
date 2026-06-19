@@ -34,8 +34,10 @@ export class PotionTreasureGenerator implements TreasureGenerator {
 
     iteracoes = randomQtdPocoes + soma > 0 ? randomQtdPocoes + soma : 1;
 
+    let randomPocoes: any = null;
+
     for (let i = 1; i <= iteracoes; i++) {
-      let randomPocoes = Math.floor(Math.random() * 120) + 1;
+      randomPocoes = Math.floor(Math.random() * 120) + 1;
 
       if (linhaItemNivel.modificador.includes('+%')) {
         randomPocoes = randomPocoes + 20 <= 120 ? randomPocoes + 20 : 120;
@@ -48,7 +50,7 @@ export class PotionTreasureGenerator implements TreasureGenerator {
       items: tesouro,
       return: linhaItemNivel.nome,
       notes: linhaItemNivel.unidade,
-      report: this.gerarRelatorio(ctx.random!, linhaItemNivel, tesouro),
+      report: this.gerarRelatorio(randomPocoes, linhaItemNivel, tesouro),
     };
 
     return gt;
