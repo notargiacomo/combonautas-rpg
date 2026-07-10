@@ -17672,7 +17672,7 @@ export class MagiaData {
           {
             id: 5,
             descricao: '<b>+3 PM:</b> o bônus em atributos se torna +4.',
-            e_aumenta: true, // Aumenta o bônus em atributos
+            e_aumenta: false, // Aumenta o bônus em atributos
             custo: 3,
             custo_material: 0,
             descricao_material: '',
