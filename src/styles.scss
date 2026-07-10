@@ -270,3 +270,94 @@ textarea {
   font-family: 'Oswald' !important;
   // color: rgb(68, 5, 18) !important;
 }
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9b4b61 #2a0707;
+}
+
+/* Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #2a0707, #3d0d14, #2a0707);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 2px solid #32090e;
+
+  background: linear-gradient(180deg, #b45b73 0%, #96354f 45%, #6a1f35 100%);
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.18),
+    0 0 8px rgba(180, 91, 115, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ca6d86 0%, #ad4460 45%, #7a2841 100%);
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.25),
+    0 0 12px rgba(202, 109, 134, 0.45);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg, #d77c93, #b74b67, #812c45);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9d4b62 #2b0707;
+}
+
+/* Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #250505 0%, #3b0909 50%, #250505 100%);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #b55b74 0%, #8b314b 45%, #642033 100%);
+  border-radius: 999px;
+  border: 2px solid #3a0909;
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.15),
+    0 0 8px rgba(255, 120, 140, 0.18);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #cf6d88 0%, #a43d5b 45%, #76253d 100%);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.2),
+    0 0 12px rgba(255, 150, 170, 0.35);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: white !important;
+}
+
+.mat-mdc-tab-header {
+  border-top: 1px solid orange !important;
+  border-left: 1px solid orange !important;
+  border-right: 1px solid orange !important;
+  border-radius: 5px !important; /* Arredonda os cantos */
+}

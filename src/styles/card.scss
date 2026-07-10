@@ -9,6 +9,7 @@
   // margin: 1% !important;
   // border: 5px solid #440512 !important; /* moldura */
   border-radius: 10px !important; /* Arredonda os cantos */
+  border: 2px solid orange !important; /* Moldura */
 }
 
 .mdc-card .card-game {
@@ -26,6 +27,8 @@
     font-weight: bold !important;
     padding: 10px !important;
     font-family: 'Oswald' !important;
+    border-radius: 5px !important; /* Arredonda os cantos */
+    border: 1px solid orange !important; /* Moldura */
   }
 
   .mat-mdc-card-content {
