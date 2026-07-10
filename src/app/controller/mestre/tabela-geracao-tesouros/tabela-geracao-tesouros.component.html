@@ -4,8 +4,8 @@
       <h2><b>GERAÇÃO DE TEROUROS</b></h2>
       <hr />
       @if (isMobile) {
-        <div #tesouro class="row" id="tesouroPrint">
-          <div class="col-sm-12 mb-4">
+        <div class="row" id="tesouroPrint">
+          <div #tesouro class="col-sm-12 mb-4">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'TESOURO POR ND' }}
@@ -15,18 +15,19 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(tesouro)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(tesouro)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
-                            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
+                            PREENCHA O NÍVEL DE DESAFIO E O TIPO DE TESOURO
                           </b>
                         </label>
                         <div class="row">
@@ -159,7 +160,7 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-12 mb-4">
+          <div #riqueza class="col-sm-12 mb-4">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'RIQUEZAS' }}
@@ -169,18 +170,19 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(riqueza)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(riqueza)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
-                            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
+                            PREENCHA O NÍVEL DE RIQUEZA
                           </b>
                         </label>
                         <div class="row">
@@ -309,7 +311,7 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-12 mb-4">
+          <div #diverso class="col-sm-12 mb-4">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'ITENS DIVERSOS' }}
@@ -319,15 +321,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(diverso)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(diverso)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <div class="row">
                           <div class="col-sm-12 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
@@ -358,7 +361,7 @@
                         }
                       </div>
                     </mat-tab>
-                    <mat-tab label="Tabela">
+                    <mat-tab label="Itens Diversos">
                       <table>
                         <thead>
                           <tr>
@@ -369,7 +372,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @for (item of tabelaItensDiversos; track $index) {
+                          @for (item of this.itensDiversos; track $index) {
                             <tr>
                               <td class="text-center">
                                 {{ item.id }}
@@ -397,7 +400,7 @@
             </mat-card>
           </div>
         </div>
-        <div class="col-sm-4 mb-4">
+        <div #pocao class="col-sm-4 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="mat-card-title">
               {{ 'POÇÕES' }}
@@ -407,15 +410,16 @@
                 <mat-tab-group>
                   <mat-tab label="Geração">
                     <div class="content mt-2">
-                      @if (detalhesTesouroDinheiro) {
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                              <mat-icon>download</mat-icon>
-                            </span>
-                          </div>
+                      <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                          <span class="material-symbols-outlined" (click)="downloadComoImagem(pocao)">
+                            <mat-icon>download</mat-icon>
+                          </span>
+                          <span class="material-symbols-outlined" (click)="copiarComoImagem(pocao)">
+                            <mat-icon>content_copy</mat-icon>
+                          </span>
                         </div>
-                      }
+                      </div>
                       <div class="row">
                         <div class="col-sm-6 mt-4">
                           <mat-form-field class="form-field text-field-formulario-edicao">
@@ -462,10 +466,10 @@
                         </tr>
                       </thead>
                       <tbody>
-                        @for (item of pocoes; track $index) {
+                        @for (item of this.pocoes; track $index) {
                           <tr>
                             <td class="text-center">
-                              {{ item.id }}
+                              {{ item.id.toString() }}
                             </td>
 
                             <td class="text-center">
@@ -489,7 +493,7 @@
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm-12 mb-4">
+        <div #equipamento class="col-sm-12 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="mat-card-title">
               {{ 'EQUIPAMENTOS' }}
@@ -499,15 +503,16 @@
                 <mat-tab-group>
                   <mat-tab label="Geração">
                     <div class="content mt-2">
-                      @if (detalhesTesouroDinheiro) {
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                              <mat-icon>download</mat-icon>
-                            </span>
-                          </div>
+                      <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                          <span class="material-symbols-outlined" (click)="downloadComoImagem(equipamento)">
+                            <mat-icon>download</mat-icon>
+                          </span>
+                          <span class="material-symbols-outlined" (click)="copiarComoImagem(equipamento)">
+                            <mat-icon>content_copy</mat-icon>
+                          </span>
                         </div>
-                      }
+                      </div>
                       <div class="row">
                         <div class="col-sm-6 mt-4">
                           <mat-form-field class="form-field text-field-formulario-edicao">
@@ -653,7 +658,7 @@
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm-12 mb-4">
+        <div #melhoria class="col-sm-12 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="mat-card-title">
               {{ 'MELHORIAS' }}
@@ -663,15 +668,16 @@
                 <mat-tab-group>
                   <mat-tab label="Geração">
                     <div class="content mt-2">
-                      @if (detalhesTesouroDinheiro) {
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                              <mat-icon>download</mat-icon>
-                            </span>
-                          </div>
+                      <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                          <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
+                            <mat-icon>download</mat-icon>
+                          </span>
+                          <span class="material-symbols-outlined" (click)="copiarComoImagem(melhoria)">
+                            <mat-icon>content_copy</mat-icon>
+                          </span>
                         </div>
-                      }
+                      </div>
                       <label>
                         <b class="negrito-centralizado" style="text-justify: center !important">
                           SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
@@ -724,15 +730,16 @@
                   </mat-tab>
                   <mat-tab label="Gerar Mat. Esp.">
                     <div class="content mt-2">
-                      @if (detalhesTesouroDinheiro) {
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                              <mat-icon>download</mat-icon>
-                            </span>
-                          </div>
+                      <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                          <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
+                            <mat-icon>download</mat-icon>
+                          </span>
+                          <span class="material-symbols-outlined" (click)="copiarComoImagem(melhoria)">
+                            <mat-icon>content_copy</mat-icon>
+                          </span>
                         </div>
-                      }
+                      </div>
                       <div class="row">
                         <div class="col-sm-12 mt-4">
                           <mat-form-field class="form-field text-field-formulario-edicao">
@@ -901,7 +908,7 @@
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm-12 mb-4">
+        <div #encanto class="col-sm-12 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="mat-card-title">
               {{ 'ENCANTOS' }}
@@ -911,15 +918,16 @@
                 <mat-tab-group>
                   <mat-tab label="Geração">
                     <div class="content mt-2">
-                      @if (detalhesTesouroDinheiro) {
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                              <mat-icon>download</mat-icon>
-                            </span>
-                          </div>
+                      <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                          <span class="material-symbols-outlined" (click)="downloadComoImagem(encanto)">
+                            <mat-icon>download</mat-icon>
+                          </span>
+                          <span class="material-symbols-outlined" (click)="copiarComoImagem(encanto)">
+                            <mat-icon>content_copy</mat-icon>
+                          </span>
                         </div>
-                      }
+                      </div>
                       <!-- <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
@@ -1074,7 +1082,7 @@
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm-12 mb-4">
+        <div #equipamentomagicoespecifico class="col-sm-12 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="mat-card-title">
               {{ 'EQUIPAMENTOS MÁGICOS ESPECÍFICOS' }}
@@ -1084,15 +1092,20 @@
                 <mat-tab-group>
                   <mat-tab label="Geração">
                     <div class="content mt-2">
-                      @if (detalhesTesouroDinheiro) {
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                              <mat-icon>download</mat-icon>
-                            </span>
-                          </div>
+                      <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                          <span
+                            class="material-symbols-outlined"
+                            (click)="downloadComoImagem(equipamentomagicoespecifico)">
+                            <mat-icon>download</mat-icon>
+                          </span>
+                          <span
+                            class="material-symbols-outlined"
+                            (click)="copiarComoImagem(equipamentomagicoespecifico)">
+                            <mat-icon>content_copy</mat-icon>
+                          </span>
                         </div>
-                      }
+                      </div>
                       <!-- <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
@@ -1247,7 +1260,7 @@
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm-12 mb-4">
+        <div #acessoriomagico class="col-sm-12 mb-4">
           <mat-card class="card-game">
             <mat-card-title class="mat-card-title">
               {{ 'ACESSÓRIOS MÁGICOS' }}
@@ -1257,15 +1270,16 @@
                 <mat-tab-group>
                   <mat-tab label="Geração">
                     <div class="content mt-2">
-                      @if (detalhesTesouroDinheiro) {
-                        <div class="row">
-                          <div class="col-sm-12 d-flex justify-content-end">
-                            <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                              <mat-icon>download</mat-icon>
-                            </span>
-                          </div>
+                      <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                          <span class="material-symbols-outlined" (click)="downloadComoImagem(acessoriomagico)">
+                            <mat-icon>download</mat-icon>
+                          </span>
+                          <span class="material-symbols-outlined" (click)="copiarComoImagem(acessoriomagico)">
+                            <mat-icon>content_copy</mat-icon>
+                          </span>
                         </div>
-                      }
+                      </div>
                       <!-- <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
@@ -1421,8 +1435,8 @@
           </mat-card>
         </div>
       } @else {
-        <div #tesouro class="row mb-4" id="tesouroPrint">
-          <div class="col-sm-4">
+        <div class="row mb-4">
+          <div #tesouro class="col-sm-6">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'TESOURO POR ND' }}
@@ -1432,18 +1446,19 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(tesouro)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(tesouro)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
-                            PREENCHA O NÍVEL DE DESAFIO E SE É TESOURO PADRÃO, METADE OU DOBRO
+                            PREENCHA O NÍVEL DE DESAFIO E O TIPO DE TESOURO
                           </b>
                         </label>
                         <div class="row">
@@ -1576,7 +1591,7 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-4">
+          <div #riqueza class="col-sm-6">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'RIQUEZAS' }}
@@ -1586,15 +1601,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(riqueza)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(riqueza)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             PREENCHA O NÍVEL DE RIQUEZA
@@ -1726,7 +1742,9 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row mb-4">
+          <div #itemdiverso class="col-sm-6">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'ITENS DIVERSOS' }}
@@ -1736,15 +1754,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(itemdiverso)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(itemdiverso)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <div class="row">
                           <div class="col-sm-12 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
@@ -1786,7 +1805,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @for (item of tabelaItensDiversos; track $index) {
+                          @for (item of this.itensDiversos; track $index) {
                             <tr>
                               <td class="text-center">
                                 {{ item.id }}
@@ -1813,9 +1832,7 @@
               </mat-card-content>
             </mat-card>
           </div>
-        </div>
-        <div class="row mb-4">
-          <div class="col-sm-4">
+          <div #pocoes class="col-sm-6">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'POÇÕES' }}
@@ -1825,15 +1842,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(pocoes)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(pocoes)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <div class="row">
                           <div class="col-sm-6 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
@@ -1880,7 +1898,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @for (item of pocoes; track $index) {
+                          @for (item of this.pocoes; track $index) {
                             <tr>
                               <td class="text-center">
                                 {{ item.id }}
@@ -1907,7 +1925,9 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row mb-4">
+          <div #equipamento class="col-sm-12">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'EQUIPAMENTOS' }}
@@ -1917,15 +1937,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(equipamento)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(equipamento)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <div class="row">
                           <div class="col-sm-6 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
@@ -2071,7 +2092,9 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row mb-4">
+          <div #melhoria class="col-sm-12">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'MELHORIAS' }}
@@ -2081,15 +2104,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(melhoria)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
@@ -2142,15 +2166,16 @@
                     </mat-tab>
                     <mat-tab label="Gerar Mat. Esp.">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(melhoria)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <div class="row">
                           <div class="col-sm-12 mt-4">
                             <mat-form-field class="form-field text-field-formulario-edicao">
@@ -2321,7 +2346,7 @@
           </div>
         </div>
         <div class="row mb-4">
-          <div class="col-sm-4">
+          <div #encanto class="col-sm-12">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'ENCANTOS' }}
@@ -2331,15 +2356,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(encanto)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(encanto)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <!-- <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
@@ -2494,7 +2520,9 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row mb-4">
+          <div #equipamentomagicoespecificos class="col-sm-12">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'EQUIPAMENTOS MÁGICOS ESPECÍFICOS' }}
@@ -2504,15 +2532,20 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span
+                              class="material-symbols-outlined"
+                              (click)="downloadComoImagem(equipamentomagicoespecificos)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span
+                              class="material-symbols-outlined"
+                              (click)="copiarComoImagem(equipamentomagicoespecificos)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <!-- <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA
@@ -2667,7 +2700,9 @@
               </mat-card-content>
             </mat-card>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row mb-4">
+          <div #acessoriomagico class="col-sm-12">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title">
                 {{ 'ACESSÓRIOS MÁGICOS' }}
@@ -2677,15 +2712,16 @@
                   <mat-tab-group>
                     <mat-tab label="Geração">
                       <div class="content mt-2">
-                        @if (detalhesTesouroDinheiro) {
-                          <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                              <span class="material-symbols-outlined" (click)="downloadTesouro()">
-                                <mat-icon>download</mat-icon>
-                              </span>
-                            </div>
+                        <div class="row">
+                          <div class="col-sm-12 d-flex justify-content-end">
+                            <span class="material-symbols-outlined" (click)="downloadComoImagem(acessoriomagico)">
+                              <mat-icon>download</mat-icon>
+                            </span>
+                            <span class="material-symbols-outlined" (click)="copiarComoImagem(acessoriomagico)">
+                              <mat-icon>content_copy</mat-icon>
+                            </span>
                           </div>
-                        }
+                        </div>
                         <!-- <label>
                           <b class="negrito-centralizado" style="text-justify: center !important">
                             SELECIONE O TIPO DO EQUIPAMENTO PARA MELHORIA

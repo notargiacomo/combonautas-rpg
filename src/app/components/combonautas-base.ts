@@ -1,6 +1,67 @@
 import { TipoItem } from '@app/enum/tipo.item.enum';
+import * as htmlToImage from 'html-to-image';
 
 export abstract class CombonautasBase {
+  async downloadComoImagem(elemento: HTMLDivElement) {
+    const imagem = await this.converterElementoEmImagem(elemento);
+    this.dispararDownload(imagem);
+  }
+
+  private async converterElementoEmImagem(elemento: HTMLDivElement): Promise<string> {
+    const width = elemento.scrollWidth;
+    const height = elemento.scrollHeight;
+
+    return await htmlToImage.toPng(elemento, {
+      width,
+      height,
+      pixelRatio: 2,
+      backgroundColor: 'transparent',
+      cacheBust: true,
+      style: {
+        transform: 'scale(1)',
+        transformOrigin: 'top left',
+        width: `${width}px`,
+        height: `${height}px`,
+      },
+    });
+  }
+
+  private dispararDownload(dataUrl: string) {
+    const link = document.createElement('a');
+    link.download = 'tesouro.png';
+    link.href = dataUrl;
+    link.click();
+  }
+
+  public async copiarComoImagem(elemento: HTMLDivElement): Promise<void> {
+    const width = elemento.scrollWidth;
+    const height = elemento.scrollHeight;
+
+    const blob = await htmlToImage.toBlob(elemento, {
+      width,
+      height,
+      pixelRatio: 2,
+      backgroundColor: 'transparent',
+      cacheBust: true,
+      style: {
+        transform: 'scale(1)',
+        transformOrigin: 'top left',
+        width: `${width}px`,
+        height: `${height}px`,
+      },
+    });
+
+    if (!blob) {
+      throw new Error('Não foi possível gerar a imagem.');
+    }
+
+    await navigator.clipboard.write([
+      new ClipboardItem({
+        'image/png': blob,
+      }),
+    ]);
+  }
+
   getTipoItemLabel(tipo: any): string {
     // 1) tratamento rápido de nulos/vazios
     if (tipo === null || tipo === undefined || tipo === '') return '';

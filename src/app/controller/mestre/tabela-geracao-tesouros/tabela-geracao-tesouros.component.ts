@@ -35,7 +35,6 @@ import {
 import { TreasureService } from './generate-factory/service/treasure.service';
 
 import { MatIcon } from '@angular/material/icon';
-import * as htmlToImage from 'html-to-image';
 import { MatInputModule } from '@angular/material/input';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { tabelaDinheiro } from './generate-factory/model/treasure';
@@ -45,6 +44,7 @@ import { MiscellaneousItemsTreasureGenerator } from './generate-factory/generato
 import { EquipmentTreasureGenerator } from './generate-factory/generators/equipment-treasure.generator';
 import { PotionTreasureGenerator } from './generate-factory/generators/potion-treasure.generator';
 import { MagicEquipmentTreasureGenerator } from './generate-factory/generators/magic-equipment-treasure.generator';
+import { CombonautasBase } from '@app/components/combonautas-base';
 
 @Component({
   selector: 'app-tabela-geracao-tesouros',
@@ -69,7 +69,7 @@ import { MagicEquipmentTreasureGenerator } from './generate-factory/generators/m
   templateUrl: './tabela-geracao-tesouros.component.html',
   styleUrl: './tabela-geracao-tesouros.component.scss',
 })
-export class TabelaGeracaoTesourosComponent {
+export class TabelaGeracaoTesourosComponent extends CombonautasBase {
   formulario!: FormGroup;
   tabelaTesouro: any[] = [];
   tipos: string[] = ['PADRÃO', 'METADE', 'DOBRO'];
@@ -97,7 +97,7 @@ export class TabelaGeracaoTesourosComponent {
   tabelaRiquezaMenor = tabelaRiquezaMenor;
   tabelaRiquezaMedia = tabelaRiquezaMedia;
   tabelaRiquezaMaior = tabelaRiquezaMaior;
-  tabelaItensDiversos = tabelaItensDiversos;
+  itensDiversos = tabelaItensDiversos;
   equipamentoArmas = equipamentoArmas;
   equipamentoArmaduras = equipamentoArmaduras;
   equipamentoEsoterico = equipamentoEsoterico;
@@ -128,6 +128,7 @@ export class TabelaGeracaoTesourosComponent {
     private magicEquipmentTreasureGenerator: MagicEquipmentTreasureGenerator,
     private breakpointObserver: BreakpointObserver
   ) {
+    super();
     this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
       this.isMobile = result.matches;
     });
@@ -158,6 +159,25 @@ export class TabelaGeracaoTesourosComponent {
       dadosa: [1],
       nivel_m: [],
     });
+
+    this.pocoes = this.getTabela(pocoes);
+    this.itensDiversos = this.getTabela(tabelaItensDiversos);
+    this.equipamentoArmas = this.getTabela(equipamentoArmas);
+    this.equipamentoArmaduras = this.getTabela(equipamentoArmaduras);
+    this.equipamentoEsoterico = this.getTabela(equipamentoEsoterico);
+    this.melhoriasSuperioresArmas = this.getTabela(melhoriasSuperioresArmas);
+    this.melhoriasSuperioresArmaduras = this.getTabela(melhoriasSuperioresArmaduras);
+    this.melhoriasSuperioresEsotericos = this.getTabela(melhoriasSuperioresEsotericos);
+    this.melhoriasSuperioresMaterialEspecial = this.getTabela(melhoriasSuperioresMaterialEspecial);
+    this.encantoArma = this.getTabela(encantoArma);
+    this.encantoArmadura = this.getTabela(encantoArmadura);
+    this.encantoEsoterico = this.getTabela(encantoEsoterico);
+    this.armaMagica = this.getTabela(armaMagica);
+    this.armaduraMagica = this.getTabela(armaduraMagica);
+    this.esotericoMagico = this.getTabela(esotericoMagico);
+    this.acessorioMenor = this.getTabela(acessorioMenor);
+    this.acessorioMedio = this.getTabela(acessorioMedio);
+    this.acessorioMaior = this.getTabela(acessorioMaior);
   }
 
   gerarTesouro() {
@@ -357,80 +377,50 @@ export class TabelaGeracaoTesourosComponent {
       <p><b>ITEM:</b> N/A</p>
       `);
     }
-
-    // if (this.formulario.get('tipo')?.value === 'DOBRO') {
-    //   let randomDB = Math.floor(Math.random() * 100) + 1;
-    //   let nivelDB = String(this.formulario.get('nivel')?.value).trim();
-    //   const tabelaItemNivelDB = tabelaTesouroItens.filter((item: any) => item.nd === Number(nivelDB));
-    //   const linhaItemNivelDB: any = tabelaItemNivelDB.find((item: any) => randomDB >= item.min && randomDB <= item.max);
-
-    //   const contextoDB: TreasureContext = {
-    //     type: linhaItemNivelDB.tipo,
-    //     level: this.formulario.get('nivel')?.value,
-    //     notes: linhaItemNivelDB.modificador,
-    //     random: randomDB,
-    //   };
-
-    //   if (linhaItemNivelDB.valor !== '—') {
-    //     this.detalhesTesouroItens.push('<br /><br />' + this.treasureService.generate(contextoDB).report!);
-    //   } else {
-    //     this.detalhesTesouroItens.push(`
-    //   <p><b>FÓRMULA:</b> ${linhaItemNivelDB.valor}</p>
-    //   <p><b>RESULTADO D100:</b> ${randomDB}</p>
-    //   <p><b>ITEM:</b> N/A</p>
-    //   `);
-    //   }
-    // }
   }
 
-  @ViewChild('tesouro', { static: false })
-  fichaRef!: ElementRef<HTMLDivElement>;
+  getTabela(lista: any[]): any[] {
+    let resultado: any[] = [];
 
-  /* ==========================
-       MÉTODO ORQUESTRADOR
-       ========================== */
-  async downloadTesouro() {
-    const elemento = this.pegarElementoDaFicha();
-    const imagem = await this.converterElementoEmImagem(elemento);
-    this.dispararDownload(imagem);
+    let i = 0;
+
+    while (i < lista.length) {
+      const atual = lista[i];
+
+      let inicio = atual.id;
+      let fim = atual.id;
+
+      while (i + 1 < lista.length && this.seObjetoIgual(lista[i + 1], atual)) {
+        fim = lista[i + 1].id;
+        i++;
+      }
+
+      resultado.push({
+        id: inicio === fim ? `${inicio}` : `${inicio}-${fim}`,
+        nome: atual.nome,
+        livro: atual.livro,
+        pagina: atual.pagina,
+      });
+
+      i++;
+    }
+
+    return resultado;
   }
 
-  /* ==========================
-       PASSO 1
-       ========================== */
-  private pegarElementoDaFicha(): HTMLDivElement {
-    return this.fichaRef.nativeElement;
-  }
+  seObjetoIgual(objeto1: any, objeto2: any): boolean {
+    for (const [chave1, valor1] of Object.entries(objeto1)) {
+      for (const [chave2, valor2] of Object.entries(objeto2)) {
+        if (chave1 === 'id' || chave2 === 'id') {
+          continue;
+        } else {
+          if (chave1 === chave2 && !(valor1 === valor2)) {
+            return false;
+          }
+        }
+      }
+    }
 
-  /* ==========================
-       PASSO 2
-       ========================== */
-  private async converterElementoEmImagem(elemento: HTMLDivElement): Promise<string> {
-    const width = elemento.scrollWidth;
-    const height = elemento.scrollHeight;
-
-    return await htmlToImage.toPng(elemento, {
-      width,
-      height,
-      pixelRatio: 2,
-      backgroundColor: 'transparent',
-      cacheBust: true,
-      style: {
-        transform: 'scale(1)',
-        transformOrigin: 'top left',
-        width: `${width}px`,
-        height: `${height}px`,
-      },
-    });
-  }
-
-  /* ==========================
-       PASSO 3
-       ========================== */
-  private dispararDownload(dataUrl: string) {
-    const link = document.createElement('a');
-    link.download = 'tesouro.png';
-    link.href = dataUrl;
-    link.click();
+    return true;
   }
 }
