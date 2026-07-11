@@ -14,7 +14,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(tesouro)">
@@ -169,7 +169,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(riqueza)">
@@ -320,7 +320,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(diverso)">
@@ -409,7 +409,7 @@
               <div class="row mt-4">
                 <mat-tab-group>
                   <mat-tab label="Geração">
-                    <div class="content mt-2">
+                    <div class="content mt-4">
                       <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                           <span class="material-symbols-outlined" (click)="downloadComoImagem(pocao)">
@@ -502,7 +502,7 @@
               <div class="row mt-4">
                 <mat-tab-group>
                   <mat-tab label="Geração">
-                    <div class="content mt-2">
+                    <div class="content mt-4">
                       <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                           <span class="material-symbols-outlined" (click)="downloadComoImagem(equipamento)">
@@ -667,7 +667,7 @@
               <div class="row mt-4">
                 <mat-tab-group>
                   <mat-tab label="Geração">
-                    <div class="content mt-2">
+                    <div class="content mt-4">
                       <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                           <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
@@ -729,7 +729,7 @@
                     </div>
                   </mat-tab>
                   <mat-tab label="Gerar Mat. Esp.">
-                    <div class="content mt-2">
+                    <div class="content mt-4">
                       <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                           <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
@@ -917,7 +917,7 @@
               <div class="row mt-4">
                 <mat-tab-group>
                   <mat-tab label="Geração">
-                    <div class="content mt-2">
+                    <div class="content mt-4">
                       <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                           <span class="material-symbols-outlined" (click)="downloadComoImagem(encanto)">
@@ -1091,7 +1091,7 @@
               <div class="row mt-4">
                 <mat-tab-group>
                   <mat-tab label="Geração">
-                    <div class="content mt-2">
+                    <div class="content mt-4">
                       <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                           <span
@@ -1269,7 +1269,7 @@
               <div class="row mt-4">
                 <mat-tab-group>
                   <mat-tab label="Geração">
-                    <div class="content mt-2">
+                    <div class="content mt-4">
                       <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                           <span class="material-symbols-outlined" (click)="downloadComoImagem(acessoriomagico)">
@@ -1445,7 +1445,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(tesouro)">
@@ -1600,7 +1600,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(riqueza)">
@@ -1753,7 +1753,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(itemdiverso)">
@@ -1841,7 +1841,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(pocoes)">
@@ -1893,6 +1893,7 @@
                           <tr>
                             <th>Dado</th>
                             <th>Item</th>
+                            <th>Preço</th>
                             <th>Livro</th>
                             <th>Página</th>
                           </tr>
@@ -1906,6 +1907,10 @@
 
                               <td class="text-center">
                                 {{ item.nome.toUpperCase() }}
+                              </td>
+
+                              <td class="text-center">
+                                {{ 'T$ ' + item.preco }}
                               </td>
 
                               <td class="text-center">
@@ -1936,7 +1941,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(equipamento)">
@@ -2103,7 +2108,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
@@ -2165,7 +2170,7 @@
                       </div>
                     </mat-tab>
                     <mat-tab label="Gerar Mat. Esp.">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(melhoria)">
@@ -2355,7 +2360,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(encanto)">
@@ -2531,7 +2536,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span
@@ -2711,7 +2716,7 @@
                 <div class="row mt-4">
                   <mat-tab-group>
                     <mat-tab label="Geração">
-                      <div class="content mt-2">
+                      <div class="content mt-4">
                         <div class="row">
                           <div class="col-sm-12 d-flex justify-content-end">
                             <span class="material-symbols-outlined" (click)="downloadComoImagem(acessoriomagico)">

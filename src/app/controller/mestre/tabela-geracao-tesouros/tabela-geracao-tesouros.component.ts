@@ -397,9 +397,7 @@ export class TabelaGeracaoTesourosComponent extends CombonautasBase {
 
       resultado.push({
         id: inicio === fim ? `${inicio}` : `${inicio}-${fim}`,
-        nome: atual.nome,
-        livro: atual.livro,
-        pagina: atual.pagina,
+        ...atual,
       });
 
       i++;
