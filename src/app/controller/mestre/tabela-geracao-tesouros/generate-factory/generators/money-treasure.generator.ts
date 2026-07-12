@@ -28,13 +28,32 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
     let gt: { items: any; return: string; notes: string; report: string };
     let itens = [linhaDinheiroNivel];
 
+    let tesouroObj = new Tesouro();
+    let riqueza = new Riqueza();
+    riqueza.valores = [];
+
     if (linhaDinheiroNivel.unidade!.includes('riqueza')) {
-      dinheiro = this.calcularRiqueza(linhaDinheiroNivel.unidade, linhaDinheiroNivel.modificador.length > 0 ? 20 : 0);
+      const numeroriquezas = Number(Math.floor(Math.random() * linhaDinheiroNivel.randomizador) + 1);
+
+      for (let index = 0; index < numeroriquezas; index++) {
+        let valorCalculado = this.calcularRiqueza(
+          linhaDinheiroNivel.unidade,
+          linhaDinheiroNivel.modificador.length > 0 ? 20 : 0
+        );
+        tesouroObj.valor += valorCalculado;
+        let valorRiqueza = new ValorRiqueza();
+        valorRiqueza.valor = valorCalculado;
+        riqueza.valores.push(valorRiqueza);
+      }
+
+      riqueza.quantidade = numeroriquezas;
+      tesouroObj.riqueza = riqueza;
+
       gt = {
         items: itens,
-        return: dinheiro.toString(),
+        return: tesouroObj.valor.toString(),
         notes: 'T$',
-        report: this.gerarRelatorio(random, linhaDinheiroNivel, dinheiro),
+        report: this.gerarRelatorio(random, linhaDinheiroNivel, tesouroObj),
       };
     } else {
       let contadorMoedas = this.contadorMoedas(linhaDinheiroNivel);
@@ -44,28 +63,51 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
           ? contadorMoedas * 2
           : contadorMoedas;
 
+      tesouroObj.valor = contadorMoedas;
+
       gt = {
         items: itens,
         return: dinheiro.toString(),
         notes: linhaDinheiroNivel.unidade,
-        report: this.gerarRelatorio(random, linhaDinheiroNivel, dinheiro),
+        report: this.gerarRelatorio(random, linhaDinheiroNivel, tesouroObj),
       };
     }
 
     return gt;
   }
 
-  private gerarRelatorio(random: number, linhaDinheiroNivel: any, dinheiro: number): string {
-    return `
-      <div class="row">
+  private gerarRelatorio(random: number, linhaDinheiroNivel: any, tesouroObj: Tesouro): string {
+    let retorno: string = `<div class="row">
           <p><b>RESULTADO D100:</b> ${random}</p>
       </div>
       <div class="row">
           <p><b>FÓRMULA:</b> ${linhaDinheiroNivel.dinheiro}</p>
-      </div>
-      <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> ${linhaDinheiroNivel.unidade} ${dinheiro}</p>
       </div>`;
+
+    if (linhaDinheiroNivel.unidade.includes('riqueza')) {
+      if (linhaDinheiroNivel.dinheiro.includes('1d')) {
+        retorno =
+          retorno +
+          `<div class="row">
+          <p><b>QTD RIQUEZAS:</b> ${tesouroObj.riqueza.quantidade}</p>
+      </div>`;
+        for (let index = 0; index < tesouroObj.riqueza.quantidade; index++) {
+          retorno =
+            retorno +
+            `<div class="row">
+          <p><b>Riqueza ${index + 1}:</b> T$ ${tesouroObj.riqueza.valores[index].valor}</p>
+      </div>`;
+        }
+      }
+    } else {
+      retorno =
+        retorno +
+        `<div class="row">
+          <p><b>DINHEIRO TOTAL:</b> ${linhaDinheiroNivel.unidade} ${tesouroObj.valor}</p>
+        </div>`;
+    }
+
+    return retorno;
   }
 
   calcularRiqueza(unidade: string, modificador: number): number {
@@ -119,4 +161,20 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
 
     return detalheRiqueza;
   }
+}
+
+class Tesouro {
+  valor!: number;
+  unidade!: number;
+  riqueza!: Riqueza;
+}
+
+class Riqueza {
+  quantidade!: number;
+  valores!: ValorRiqueza[];
+}
+
+class ValorRiqueza {
+  valor!: number;
+  volume!: string;
 }
