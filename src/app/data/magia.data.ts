@@ -49,15 +49,14 @@ export class MagiaData {
             descricao: `<b>Truque:</b> o alimento é purificado (não causa nenhum efeito nocivo se estava estragado ou envenenado), mas não fornece bônus ao ser consumido.`,
             custo: 0,
             tracos: [Chave.TRUQUE],
-            aumenta: 0,
           },
           {
             id: 2,
             e_aumenta: true,
+            aumenta: 0,
             descricao: `<b>+1 PM:</b> aumenta o número de alvos em +1.`,
             custo: 1,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -100,7 +99,6 @@ export class MagiaData {
             custo: 1,
             alcance: AlcanceMagia.MEDIO,
             tracos: [Chave.ALCANCE_MEDIO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -111,20 +109,18 @@ export class MagiaData {
             alvo: '1 monstro ou espírito com Inteligência 1 ou 2.',
             alvo_descricao: '1 monstro ou espírito com Inteligência 1 ou 2.',
             tracos: ['1 monstro ou espírito com Inteligência 1 ou 2.'],
-            aumenta: 0,
           },
           {
             id: 3,
             e_aumenta: true,
+            aumenta: 0,
             descricao: `<b>+2 PM:</b> aumenta o número de alvos em +1.`,
             custo: 2,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
             e_aumenta: false,
-            aumenta: 0,
             descricao: `<b>+5 PM:</b> muda o alvo para 1 monstro ou espírito. Requer 3º círculo.`,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 5,
@@ -156,8 +152,7 @@ export class MagiaData {
         aprimoramentos: [
           {
             id: 1,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+1 PM:</b> você lança a magia sem gesticular ou pronunciar palavras (o que permite lançar esta magia de armadura) e a adaga se torna invisível. Se o alvo falhar no teste de resistência, não percebe que você lançou uma magia contra ele.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -174,8 +169,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+1 PM:</b> muda a duração para um dia. Além do normal, você “finca” a adaga na mente do alvo. Enquanto a magia durar, você sabe a direção e localização do alvo, desde que ele esteja no mesmo mundo.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -231,8 +225,7 @@ export class MagiaData {
         aprimoramentos: [
           {
             id: 1,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+2 PM:</b> muda o alcance para pessoal. A área é emanada a partir de você.`,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -249,8 +242,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+5 PM:</b> além do normal, você também percebe qualquer efeito de adivinhação que seja usado dentro da área ou atravesse a área. Você pode fazer um teste oposto de Misticismo contra quem usou o efeito; se passar, tem um vislumbre de seu rosto e uma ideia aproximada de sua localização (“três dias de viagem ao norte”, por exemplo).`,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -267,8 +259,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+9 PM:</b> muda a duração para um dia ou até ser descarregada e a resistência para Vontade anula. Quando um intruso entra na área, você pode descarregar a magia. Se o intruso falhar na resistência, ficará paralisado por 1d4 rodadas. Além disso, pelas próximas 24 horas você e as criaturas escolhidas ganham +10 em testes de Sobrevivência para rastrear o intruso.`,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
@@ -306,8 +297,7 @@ export class MagiaData {
         aprimoramentos: [
           {
             id: 1,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+1 PM:</b> muda o alvo para 1 animal Minúsculo e a duração para 1 semana. Em vez do normal, o animal se desloca no melhor de suas capacidades até um local designado por você — em geral, para levar um item, carta ou similar. Quando o animal chega ao destino, fica esperando até o fim da magia, permitindo apenas que uma ou mais criaturas escolhidas por você se aproximem e peguem o que ele estiver carregando.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
@@ -324,8 +314,7 @@ export class MagiaData {
           },
           {
             id: 2,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+7 PM:</b> muda o parceiro para mestre. Requer 3º círculo.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
@@ -342,8 +331,7 @@ export class MagiaData {
           },
           {
             id: 3,
-            e_aumenta: false,
-            aumenta: 0,
+            e_aumenta: true,
             descricao: `<b>+12 PM:</b> muda o alvo para 2 animais prestativos. Cada animal funciona como um parceiro de um tipo diferente, e você pode receber a ajuda de ambos (mas ainda precisa seguir o limite de parceiros de acordo com o seu nível de personagem). Requer 4º círculo.`,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
@@ -425,7 +413,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.PESSOAL, AlvoMagia.AREA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -448,7 +435,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: ['APAGA 24 HORAS'],
-            aumenta: 0,
           },
         ],
       },
@@ -481,6 +467,7 @@ export class MagiaData {
             id: 1,
             descricao: `<b>+1 PM:</b> aumenta o número de alvos em +1.`,
             e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -498,7 +485,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -521,7 +507,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -544,7 +529,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -567,7 +551,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -600,6 +583,7 @@ export class MagiaData {
             id: 1,
             descricao: `<b>+2 PM:</b> aumenta o número de alvos em +1.`,
             e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -617,12 +601,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<b>+2 PM:</b> aumenta o número de laços em um alvo a sua escolha em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).`,
             e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -640,7 +624,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -663,7 +646,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -713,7 +695,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
 
           {
@@ -737,7 +718,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -760,7 +740,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -810,7 +789,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.MEDIO, AlvoMagia.AREA, Chave.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -833,7 +811,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -856,7 +833,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -879,7 +855,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.AREA, Chave.COMPONENTE_MATERIAL, DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -902,7 +877,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.MEDIO, AlvoMagia.AREA, Chave.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
         ],
       },
@@ -985,6 +959,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus na Defesa em +1.`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -1002,7 +977,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -1025,7 +999,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -1048,7 +1021,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -1098,7 +1070,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.HUMANOIDE],
-            aumenta: 0,
           },
         ],
       },
@@ -1164,6 +1135,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta a área em +1 quadrado de 1,5m.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -1181,7 +1153,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -1204,7 +1175,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -1227,7 +1197,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -1277,12 +1246,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus na Defesa em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -1300,7 +1269,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -1323,7 +1291,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO, DuracaoMagia.SUSTENTADA],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -1346,12 +1313,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 5,
             descricao: `<p><b>+2 PM:</b> aumenta o dano causado pela arma em +1d6 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -1369,7 +1336,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -1392,7 +1358,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -1425,6 +1390,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -1442,7 +1408,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -1465,7 +1430,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -1488,7 +1452,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -1538,12 +1501,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.REACAO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus na Defesa em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -1561,7 +1524,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -1584,7 +1546,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA],
-            aumenta: 0,
           },
         ],
       },
@@ -1634,7 +1595,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -1657,12 +1617,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.MOVIMENTO],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+3 PM:</b> aumenta o bônus nos testes de ataque em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 3,
@@ -1680,12 +1640,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 4,
             descricao: `<p><b>+5 PM:</b> aumenta o bônus nos testes de ataque em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 5,
@@ -1703,7 +1663,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -1784,7 +1743,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.UM_MINUTO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -1807,7 +1765,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.DEZ_MINUTOS, DuracaoMagia.UM_MINUTO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -1830,7 +1787,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -1853,7 +1809,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -1886,6 +1841,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta os bônus na Defesa e em testes de resistência em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.QUINTO_CIRCULO,
             custo: 2,
@@ -1903,7 +1859,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -1940,6 +1895,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o alcance em um fator de 10 (90m para 900m, 900m para 9km e assim por diante).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -1957,7 +1913,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA, AlcanceMagia.MAIOR],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -1980,7 +1935,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -2003,12 +1957,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.CENA],
-            aumenta: 0,
           },
           {
             id: 4,
             descricao: `<p><b>+3 PM:</b> aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 3,
@@ -2026,7 +1980,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -2077,7 +2030,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.CURTO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -2100,7 +2052,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -2123,7 +2074,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlvoMagia.CRIATURA, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -2146,7 +2096,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -2196,12 +2145,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.UM_MINUTO, DuracaoMagia.INSTANTANEA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+3 PM:</b> aumenta o número de dados de auxílio em +2.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 3,
@@ -2219,7 +2168,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -2242,7 +2190,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -2265,7 +2212,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -2315,7 +2261,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.PADRAO, DuracaoMagia.CENA, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -2338,7 +2283,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.PADRAO, DuracaoMagia.CENA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -2367,7 +2311,6 @@ export class MagiaData {
               AlvoMagia.CRIATURAS_ESCOLHIDAS,
               CirculoMagia.QUARTO_CIRCULO,
             ],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -2390,7 +2333,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.PADRAO, DuracaoMagia.DIA, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -2423,6 +2365,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 1,
@@ -2440,7 +2383,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -2463,7 +2405,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA],
-            aumenta: 0,
           },
         ],
       },
@@ -2496,6 +2437,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de dados de auxílio em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -2513,7 +2455,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -2536,7 +2477,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -2586,7 +2526,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -2609,7 +2548,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -2661,7 +2599,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -2685,7 +2622,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -2709,7 +2645,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -2733,7 +2668,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.LONGO, 'efeito: 10 globos'],
-            aumenta: 0,
           },
         ],
       },
@@ -2788,7 +2722,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.DIA, AlcanceMagia.ILIMITADO, Chave.COMPONENTE_MATERIAL],
-            aumenta: 0,
           },
         ],
       },
@@ -2821,6 +2754,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -2838,7 +2772,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -2861,7 +2794,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -2911,12 +2843,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.VOCE],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+5 PM:</b> aumenta a área em um fator de 10 (90m para 900m, 900m para 9km e assim por diante).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 0,
@@ -2934,7 +2866,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA, AlvoMagia.AREA],
-            aumenta: 0,
           },
         ],
       },
@@ -2984,7 +2915,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURA, DuracaoMagia.UMA_HORA],
-            aumenta: 0,
           },
         ],
       },
@@ -3034,7 +2964,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -3057,7 +2986,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -3080,7 +3008,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -3103,7 +3030,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -3153,7 +3079,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -3176,7 +3101,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -3199,7 +3123,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -3249,7 +3172,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.REACAO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -3272,7 +3194,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA],
-            aumenta: 0,
           },
         ],
       },
@@ -3323,7 +3244,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -3373,12 +3293,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+1 PM:</b> aumenta o número de alvos em +1. Todos os alvos compartilham um mesmo sonho (ou pesadelo) entre si e com você.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 1,
@@ -3396,7 +3316,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -3473,6 +3392,7 @@ export class MagiaData {
             id: 3,
             descricao: '<b>+2 PM:</b> aumenta o bônus na Defesa em +1.',
             e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -3490,7 +3410,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -3567,7 +3486,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o bônus concedido em +1.',
-            e_aumenta: true, // Aumenta o bônus em testes de resistência
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -3585,7 +3505,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -3686,7 +3605,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta a redução de dano em +5.',
-            e_aumenta: true, // Aumenta a redução de dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -3704,7 +3624,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -3996,7 +3915,8 @@ export class MagiaData {
           {
             id: 3,
             descricao: '<b>+5 PM:</b> aumenta a CD para abrir o alvo em +5.',
-            e_aumenta: true, // Aumenta a CD para abrir o alvo
+            e_aumenta: true,
+            aumenta: 0,
             custo: 5,
             custo_material: 0,
             descricao_material: '',
@@ -4014,7 +3934,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [TipoMagia.ARCANA, EscolasMagia.ABJURACAO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -4273,7 +4192,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -4296,7 +4214,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -4319,7 +4236,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -4342,7 +4258,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -4392,7 +4307,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -4415,7 +4329,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -4438,7 +4351,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -4492,7 +4404,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
         ],
       },
@@ -4542,7 +4453,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -4565,12 +4475,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus de deslocamento em +3m.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -4588,7 +4498,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -4621,6 +4530,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de meteoros que atingem a área, o que aumenta o dano em +2d6 de impacto e +2d6 de fogo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUINTO_CIRCULO,
             custo: 2,
@@ -4638,7 +4548,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -4696,7 +4605,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -4720,7 +4628,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -4778,12 +4685,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+1 PM:</b> aumenta o deslocamento do monstro em +3m.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -4802,7 +4709,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -4826,12 +4732,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
             descricao: `<p><b>+2 PM:</b> aumenta os PV do monstro em +10 para cada categoria de tamanho a partir de Pequeno (+10 PV para Pequeno, +20 PV para Médio etc.).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -4850,7 +4756,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -4874,7 +4779,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -4898,7 +4802,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 7,
@@ -4922,7 +4825,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 8,
@@ -4946,7 +4848,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 9,
@@ -4970,7 +4871,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 10,
@@ -4994,7 +4894,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 11,
@@ -5018,7 +4917,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 12,
@@ -5042,7 +4940,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -5093,7 +4990,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -5116,12 +5012,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: ['Alvo: 1 baú', DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM:</b>aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -5139,7 +5035,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -5162,7 +5057,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: ['Alvo: 1 objeto de até 10 espaços.'],
-            aumenta: 0,
           },
         ],
       },
@@ -5201,6 +5095,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta a quantidade do elemento em um passo (uma categoria de tamanho para água ou terra, +1 quadrado de 1,5m para ar e fogo).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -5219,7 +5114,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -5243,12 +5137,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURA_OBJETO, Resistencia.REFLEXOS, ResistenciaMagia.REDUZ_METADE],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+1 PM:</b> se escolheu fogo, aumenta o dano inicial de cada chama em +1d6.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -5267,7 +5161,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -5319,12 +5212,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d12.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -5343,7 +5236,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -5367,7 +5259,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -5391,7 +5282,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -5415,7 +5305,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -5439,7 +5328,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -5543,6 +5431,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d6+5.`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 2,
@@ -5561,7 +5450,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -5585,7 +5473,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -5637,7 +5524,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -5661,12 +5547,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+3 PM:</b> aumenta o tamanho da montaria em uma categoria. Isso também aumenta o número de criaturas que ela pode carregar — duas para uma criatura Enorme, seis para Colossal. Uma única criatura controla a montaria; as outras apenas são deslocadas.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 3,
@@ -5685,7 +5571,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -5737,7 +5622,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -5761,7 +5645,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -5785,7 +5668,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -5809,12 +5691,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 5,
             descricao: `<p><b>+3 PM:</b> aumenta o dano de ácido em +2d4.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 3,
@@ -5833,7 +5715,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -5857,7 +5738,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -5907,12 +5787,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.MEDIO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+1 PM:</b> muda o alvo para você e uma criatura voluntária. Você pode escolher este aprimoramento mais vezes para aumentar o número de alvos adicionais em +1, mas deve estar tocando todos os alvos.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 1,
@@ -5930,7 +5810,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -5953,7 +5832,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.REACAO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -5976,7 +5854,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.LONGO],
-            aumenta: 0,
           },
         ],
       },
@@ -6028,12 +5905,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+5 PM:</b> muda a duração para permanente e adiciona componente material (maquete do semiplano feita de materiais preciosos no valor de T$ 5.000). Você pode lançar a magia diversas vezes para aumentar as dimensões do semiplano em +30m de lado a cada vez.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUINTO_CIRCULO,
             custo: 5,
@@ -6052,7 +5929,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE, Chave.COMPONENTE_MATERIAL, Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -6106,7 +5982,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA, Chave.COMPONENTE_MATERIAL],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -6130,7 +6005,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.SEMANA, Chave.COMPONENTE_MATERIAL],
-            aumenta: 0,
           },
         ],
       },
@@ -6164,6 +6038,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de servos conjurados em 1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -6182,7 +6057,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -6206,7 +6080,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -6256,12 +6129,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, DuracaoMagia.CENA, ResistenciaMagia.NENHUMA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d6.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -6279,12 +6152,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+4 PM:</b> aumenta o empurrão em +3m.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 4,
@@ -6302,12 +6175,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 4,
             descricao: `<p><b>+5 PM:</b> muda o tipo do dano para essência.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 5,
@@ -6325,7 +6198,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -6523,7 +6395,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -6546,12 +6417,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+1 PM:</b> aumenta a área em +1 cubo de 1,5m.`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -6569,7 +6440,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -6727,6 +6597,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +5.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 6,
@@ -6744,7 +6615,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -6767,7 +6637,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -6790,7 +6659,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -6840,7 +6708,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURAS_ESCOLHIDAS, DuracaoMagia.INSTANTANEA],
-            aumenta: 0,
           },
         ],
       },
@@ -6891,7 +6758,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURAS_VOLUNTARIAS],
-            aumenta: 0,
           },
         ],
       },
@@ -6941,12 +6807,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.SEMANA, AlvoMagia.CADAVER],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta os bônus em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -6964,7 +6830,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -7019,12 +6884,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta a quantidade de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -7042,7 +6907,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
         ],
       },
@@ -7092,7 +6956,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -7142,7 +7005,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -7165,7 +7027,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -7188,7 +7049,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -7238,7 +7098,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.OBJETO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -7261,7 +7120,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
         ],
       },
@@ -7434,7 +7292,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +2d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -7452,7 +7311,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VARIA, // Resistência varia conforme o texto
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [TipoMagia.UNIVERSAL, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -7969,7 +7827,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -8066,12 +7923,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: '<b>+4 PM:</b> aumenta o bônus em +1.',
-            e_aumenta: true, // Aumenta o bônus
+            e_aumenta: true,
+            aumenta: 0,
             custo: 4,
             custo_material: 0,
             descricao_material: '',
@@ -8089,12 +7946,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: '<b>+7 PM:</b> o objeto também oferece redução de dano 5. Requer 4º círculo.',
-            e_aumenta: true, // Aumenta o efeito com redução de dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 7,
             custo_material: 0,
             descricao_material: '',
@@ -8112,7 +7969,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [TipoMagia.DIVINA, EscolasMagia.ABJURACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -8162,7 +8018,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -8185,7 +8040,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [DuracaoMagia.CONDICIONAL, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -8208,7 +8062,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
         ],
       },
@@ -8258,7 +8111,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -8308,7 +8160,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [DuracaoMagia.RODADA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -8331,7 +8182,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -8354,7 +8204,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -8377,7 +8226,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [DuracaoMagia.SUSTENTADA],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -8400,7 +8248,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -8424,7 +8271,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -8474,12 +8320,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.ESPIRITO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<b>+2 PM:</b> aumenta o número de alvos em +1.`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -8497,7 +8343,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -8520,7 +8365,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURA, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -8554,6 +8398,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUINTO_CIRCULO,
             custo: 1,
@@ -8572,7 +8417,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -8624,7 +8468,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [DuracaoMagia.DIA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -8648,7 +8491,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -8729,7 +8571,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.TOQUE, DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -8753,7 +8594,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [DuracaoMagia.ANO],
-            aumenta: 0,
           },
         ],
       },
@@ -8786,7 +8626,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta a área iluminada em +3m de raio.',
-            e_aumenta: true, // Aumenta a área iluminada
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -8892,7 +8733,8 @@ export class MagiaData {
             id: 2,
             descricao:
               '<b>+2 PM:</b> aumenta as penalidades para mortos-vivos em –1. (penalidade máxima limitada pelo círculo máximo de magia que você pode lançar)',
-            e_aumenta: true, // Aumenta as penalidades
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -8965,7 +8807,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -9061,7 +8904,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> muda o número de setas/lanças para três.',
-            e_aumenta: true, // Aumenta o número de setas/lanças
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -9083,7 +8927,8 @@ export class MagiaData {
           {
             id: 3,
             descricao: '<b>+4 PM:</b> muda o número de setas/lanças para cinco. Requer 2º círculo.',
-            e_aumenta: true, // Aumenta o número de setas/lanças
+            e_aumenta: true,
+            aumenta: 0,
             custo: 4,
             custo_material: 0,
             descricao_material: '',
@@ -9105,7 +8950,8 @@ export class MagiaData {
           {
             id: 4,
             descricao: '<b>+9 PM:</b> muda o número de setas/lanças para dez. Requer 4º círculo.',
-            e_aumenta: true, // Aumenta o número de setas/lanças
+            e_aumenta: true,
+            aumenta: 0,
             custo: 9,
             custo_material: 0,
             descricao_material: '',
@@ -9177,7 +9023,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+1 PM:</b> aumenta a cura em +1d8+1.',
-            e_aumenta: true, // Aumenta a cura
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -9293,7 +9140,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -9366,7 +9214,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -9439,7 +9288,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -9512,7 +9362,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +1d8+2.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -9530,7 +9381,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -9673,7 +9523,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -9691,7 +9542,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -9746,7 +9596,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d8+1.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -9819,6 +9670,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta os bônus em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -9836,12 +9688,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta as penalidades em –1 (penalidade máxima limitada pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -9859,7 +9711,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -9882,7 +9733,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.MEDIO],
-            aumenta: 0,
           },
         ],
       },
@@ -9963,7 +9813,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -9986,7 +9835,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -10009,7 +9857,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
         ],
       },
@@ -10042,7 +9889,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d8+1.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -10138,7 +9986,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -10251,7 +10100,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
         ],
       },
@@ -10303,7 +10151,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -10327,7 +10174,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -10351,7 +10197,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -10384,6 +10229,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -10401,7 +10247,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -10424,7 +10269,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -10447,7 +10291,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -10503,7 +10346,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> aumenta o dano em +1d6 (exceto do efeito chamejar).',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -10521,7 +10365,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA, // Resistência é "nenhuma"
             maneira_resistencia: '', // Campo vazio, conforme solicitado
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -10600,7 +10443,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> aumenta a redução na Defesa em +1.',
-            e_aumenta: true, // Aumenta a redução na Defesa
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -10618,12 +10462,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: '<b>+2 PM:</b> aumenta o dano inicial e o dano por rodada em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -10641,7 +10485,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -10691,12 +10534,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+1 PM:</b> aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -10714,7 +10557,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -10737,7 +10579,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlcanceMagia.MEDIO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -10888,7 +10729,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o bônus nas resistências em +1.',
-            e_aumenta: true, // Aumenta o bônus
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -10906,7 +10748,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -11006,7 +10847,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+3 PM:</b> aumenta o dano de frio em +2d6 e o dano de corte em +2d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -11024,7 +10866,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -11103,7 +10944,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> aumenta o dano ou cura em +1d8 (ou +1d12 em mortos-vivos).',
-            e_aumenta: true, // Aumenta o dano ou cura
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -11121,7 +10963,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos (veja texto)"
             maneira_resistencia: 'veja texto', // Descrição da resistência
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -11222,7 +11063,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> aumenta o dano de raios (veja acima) em +1d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -11240,7 +11082,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -11268,7 +11109,7 @@ export class MagiaData {
           {
             id: 4,
             descricao: '<b>+3 PM:</b> se escolheu causar granizo, muda o dano para 2d6 por rodada.',
-            e_aumenta: false, // Aumenta o dano
+            e_aumenta: false,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -11291,7 +11132,7 @@ export class MagiaData {
             id: 5,
             descricao:
               '<b>+3 PM:</b> se escolheu causar neve, criaturas na área sofrem 2d6 pontos de dano de frio no início de seus turnos.',
-            e_aumenta: false, // Aumenta o dano
+            e_aumenta: false,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -11363,7 +11204,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano de fogo em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -11381,12 +11223,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: '<b>+1 PM:</b> aumenta o dano de luz em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -11404,7 +11246,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -11437,7 +11278,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano de frio em +2d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -11455,13 +11297,13 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao:
               '<b>+3 PM:</b> aumenta o tamanho máximo das criaturas afetadas em uma categoria. Requer 3º círculo.',
-            e_aumenta: true, // Aumenta o tamanho máximo das criaturas afetadas
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -11479,7 +11321,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE, // Resistência é "Fortitude parcial"
             maneira_resistencia: 'parcial', // Descrição da resistência
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -11512,7 +11353,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -11530,7 +11372,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS, // Resistência é "Reflexos reduz à metade"
             maneira_resistencia: 'reduz à metade', // Descrição da resistência
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -11603,7 +11444,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.SUSTENTADA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -11626,7 +11466,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -11678,12 +11517,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [DuracaoMagia.SUSTENTADA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+1 PM:</b> aumenta o efeito da ilusão em +1 cubo de 1,5m.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -11702,7 +11541,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -11726,7 +11564,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -11750,7 +11587,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -11774,7 +11610,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -11798,7 +11633,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [AlvoMagia.ESFERA, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 7,
@@ -11822,7 +11656,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 8,
@@ -11846,7 +11679,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO, DuracaoMagia.SUSTENTADA],
-            aumenta: 0,
           },
         ],
       },
@@ -11896,7 +11728,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, DuracaoMagia.SEMANA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -11919,7 +11750,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [AlcanceMagia.CURTO, AlvoMagia.OBJETO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -11942,7 +11772,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURA, Resistencia.VONTADE, ResistenciaMagia.ANULA],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -11965,7 +11794,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -11988,7 +11816,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -12040,7 +11867,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -12073,6 +11899,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +1. Todas as criaturas e objetos devem ser afetadas da mesma forma.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -12090,7 +11917,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -12154,6 +11980,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+3 PM:</b> aumenta o dano em +2d6.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 3,
@@ -12171,12 +11998,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+4 PM:</b> muda a área para um cubo de 90m. Requer 4º círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 4,
@@ -12194,7 +12021,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -12227,6 +12053,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de cópias em +1 (e o bônus na Defesa em +2).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -12244,7 +12071,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -12267,7 +12093,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -12320,7 +12145,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, AlvoMagia.CRIATURA_OBJETO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -12343,7 +12167,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.CENA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -12366,7 +12189,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.SUSTENTADA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -12389,7 +12211,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.PADRAO, AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -12439,7 +12260,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -12462,7 +12282,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.DESACREDITA,
             tracos: [DuracaoMagia.PERMANENTE, Chave.COMPONENTE_MATERIAL],
-            aumenta: 0,
           },
         ],
       },
@@ -12538,7 +12357,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.OBJETO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -12561,7 +12379,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.CENA],
-            aumenta: 0,
           },
         ],
       },
@@ -12611,7 +12428,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
         ],
       },
@@ -12645,6 +12461,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de mortos-vivos conjurados em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -12663,7 +12480,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -12688,7 +12504,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -12713,7 +12528,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -12738,7 +12552,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -12763,7 +12576,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -12788,7 +12600,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 7,
@@ -12813,7 +12624,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -12847,6 +12657,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d8+1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 2,
@@ -12865,12 +12676,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 2,
@@ -12889,7 +12700,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -12922,6 +12732,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta a área da escuridão em +1,5m de raio.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -12939,7 +12750,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -12962,7 +12772,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -12985,7 +12794,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURA, Resistencia.FORTITUDE, ResistenciaMagia.PARCIAL, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -13008,7 +12816,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [DuracaoMagia.DIA],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -13031,7 +12838,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE],
-            aumenta: 0,
           },
         ],
       },
@@ -13064,6 +12870,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d8 </p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -13081,12 +12888,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+9 PM:</b> muda alvo para criaturas escolhidas. Requer 5º círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUINTO_CIRCULO,
             custo: 9,
@@ -13104,7 +12911,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -13154,12 +12960,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em 1d8+1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -13177,7 +12983,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -13200,7 +13005,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Resistencia.NENHUMA],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -13223,7 +13027,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
         ],
       },
@@ -13273,7 +13076,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -13323,12 +13125,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [AlcanceMagia.TOQUE, AlvoMagia.CRIATURA, Resistencia.FORTITUDE, ResistenciaMagia.ANULA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d6.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 3,
@@ -13346,12 +13148,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM:</b> muda o tipo do dano para trevas.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 3,
@@ -13369,7 +13171,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -13404,6 +13205,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+3 PM:</b> aumenta o comprimento em +15m e a altura em +3m.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 3,
@@ -13422,7 +13224,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -13446,7 +13247,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -13479,6 +13279,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta as penalidades em –1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -13496,7 +13297,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -13546,7 +13346,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -13596,12 +13395,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta os bônus para mortos-vivos em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -13619,7 +13418,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -13647,7 +13445,6 @@ export class MagiaData {
               Chave.COMPONENTE_MATERIAL,
               CirculoMagia.QUARTO_CIRCULO,
             ],
-            aumenta: 0,
           },
         ],
       },
@@ -13712,6 +13509,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+3 PM:</b> aumenta o número de efeitos que você pode escolher em +1. Requer 3º círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 3,
@@ -13729,7 +13527,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -13752,7 +13549,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.PERMANENTE],
-            aumenta: 0,
           },
         ],
       },
@@ -13803,7 +13599,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -13826,7 +13621,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -13877,7 +13671,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.COMPONENTE_MATERIAL],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -13900,7 +13693,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.COMPONENTE_MATERIAL],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -13923,7 +13715,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.COMPONENTE_MATERIAL, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -13956,6 +13747,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o raio da área em +3m.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -13973,12 +13765,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano dos tentáculos em +2d6.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -13996,7 +13788,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
         ],
       },
@@ -14046,7 +13837,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -14069,7 +13859,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, AlvoMagia.CRIATURAS_ESCOLHIDAS],
-            aumenta: 0,
           },
         ],
       },
@@ -14119,12 +13908,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [Resistencia.NENHUMA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +2d6.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -14142,7 +13931,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -14165,7 +13953,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [AlcanceMagia.PESSOAL, AlvoMagia.VOCE, DuracaoMagia.CENA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -14198,6 +13985,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta os PV temporários recebidos em +1d10. Caso a magia cause dano, em vez disso aumenta o dano causado em +1d10.`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -14215,7 +14003,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -14238,7 +14025,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlvoMagia.AREA],
-            aumenta: 0,
           },
         ],
       },
@@ -14290,7 +14076,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -14314,7 +14099,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -14353,6 +14137,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+3 PM:</b> aumenta o dano em +1 dado do mesmo tipo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 3,
@@ -14370,7 +14155,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -14393,7 +14177,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -14416,7 +14199,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -14449,6 +14231,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o dano em +1d8./p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -14466,7 +14249,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -14489,7 +14271,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -14523,6 +14304,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o número de alvos em dois e o custo adicional em +1 PM.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 1,
@@ -14540,7 +14322,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -14573,7 +14354,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+5 PM:</b> aumenta o dano de cada esfera em +2d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 5,
             custo_material: 0,
             descricao_material: '',
@@ -14591,7 +14373,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -14647,7 +14428,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta a regeneração de PV em 1d8+1.',
-            e_aumenta: true, // Aumenta a regeneração de PV
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -14665,7 +14447,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -14698,7 +14479,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d6 (+2d8 contra mortos-vivos).',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -14716,12 +14498,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: '<b>+2 PM:</b> aumenta a área em +6m de raio.',
-            e_aumenta: true, // Aumenta a área
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -14739,7 +14521,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -14795,7 +14576,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em 10.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -14813,7 +14595,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -14895,7 +14676,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano de ácido em +1d8 e o dano de veneno em +1d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -14913,7 +14695,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.UNIVERSAL, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -14946,7 +14727,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano de eletricidade em +1d6 e o dano de impacto em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -14964,7 +14746,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15019,7 +14800,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+3 PM:</b> aumenta o dano em +2d8 (ou +2d12 contra mortos-vivos).',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -15037,7 +14819,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15093,7 +14874,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+3 PM:</b> aumenta o dano inicial em +2d6 e o dano do efeito em chamas em +1d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -15111,7 +14893,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15194,7 +14975,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o dano em +1d12.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -15212,7 +14994,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'reduz à metade',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -15246,7 +15027,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano por atravessar a muralha em +2d6.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15265,13 +15047,13 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao:
               '<b>+2 PM:</b> aumenta o comprimento em +15m e altura em +3m, até 60m de comprimento e 9m de altura.',
-            e_aumenta: true, // Aumenta dimensões
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15290,7 +15072,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -15347,7 +15128,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15365,7 +15147,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'reduz à metade',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15422,7 +15203,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+3 PM:</b> aumenta o dano em +2d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -15440,7 +15222,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15497,7 +15278,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15516,7 +15298,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'reduz à metade',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -15549,7 +15330,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta a cura em +20 PV.',
-            e_aumenta: true, // Aumenta a cura
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -15567,7 +15349,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15645,7 +15426,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta a cura em +1d8+2.',
-            e_aumenta: true, // Aumenta a cura
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15663,7 +15445,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [TipoMagia.DIVINA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15741,7 +15522,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15759,7 +15541,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -15865,7 +15646,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15883,7 +15665,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
             tracos: [TipoMagia.ARCANA, EscolasMagia.EVOCACAO, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -15970,7 +15751,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -15988,7 +15770,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -16021,7 +15802,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o limite de tamanho de criaturas e objetos afetados em um passo.',
-            e_aumenta: true, // Aumenta o limite de tamanho
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -16039,7 +15821,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -16118,7 +15899,8 @@ export class MagiaData {
           {
             id: 3,
             descricao: '<b>+7 PM:</b> muda o tamanho do alvo para Enorme ou menor. Requer 3º círculo.',
-            e_aumenta: true, // Aumenta o limite de tamanho
+            e_aumenta: true,
+            aumenta: 0,
             custo: 7,
             custo_material: 0,
             descricao_material: '',
@@ -16140,7 +15922,8 @@ export class MagiaData {
           {
             id: 4,
             descricao: '<b>+12 PM:</b> muda o tamanho do alvo para Colossal ou menor. Requer 4º círculo.',
-            e_aumenta: true, // Aumenta o limite de tamanho
+            e_aumenta: true,
+            aumenta: 0,
             custo: 12,
             custo_material: 0,
             descricao_material: '',
@@ -16331,7 +16114,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'anula',
             tracos: [TipoMagia.DIVINA, EscolasMagia.TRANSMUTACAO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -16387,7 +16169,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+1 PM:</b> aumenta o número de cubos de 1,5m em +2.',
-            e_aumenta: true, // Aumenta o número de cubos
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -16405,7 +16188,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -16512,7 +16294,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+4 PM:</b> aumenta o dano total em +2d12 e o dano mínimo em +1d12.',
-            e_aumenta: true, // Aumenta o dano total e o dano mínimo
+            e_aumenta: true,
+            aumenta: 0,
             custo: 4,
             custo_material: 0,
             descricao_material: '',
@@ -16530,7 +16313,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: 'parcial',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -16920,7 +16702,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano inicial e o dano do deslocamento em +1d8.',
-            e_aumenta: true, // Aumenta o dano inicial e o dano do deslocamento
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -16938,7 +16721,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'reduz à metade',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -17033,13 +16815,13 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao:
               '<b>+4 PM:</b> sua pele ganha aspecto e dureza de aço. Você recebe redução de dano 10. Requer 4º círculo.',
-            e_aumenta: true, // Aumenta a RD
+            e_aumenta: true,
+            aumenta: 0,
             custo: 4,
             custo_material: 0,
             descricao_material: '',
@@ -17134,7 +16916,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o bônus de Força em +1.',
-            e_aumenta: true, // Aumenta o bônus de Força
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17152,12 +16935,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: '<b>+5 PM:</b> aumenta a RD em +5.',
-            e_aumenta: true, // Aumenta a RD
+            e_aumenta: true,
+            aumenta: 0,
             custo: 5,
             custo_material: 0,
             descricao_material: '',
@@ -17175,7 +16958,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -17232,7 +17014,8 @@ export class MagiaData {
             id: 1,
             descricao:
               '<b>+1 PM:</b> além do normal, o alvo recebe um bônus adicional de +20 em testes de Atletismo para saltar (para um bônus total de +30).',
-            e_aumenta: true, // Aumenta o bônus
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -17379,7 +17162,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> muda o alvo para até 10 criaturas ou objetos adequados.',
-            e_aumenta: true, // Aumenta o número de alvos
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17397,12 +17181,11 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURAS_ESCOLHIDAS, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: '<b>+2 PM:</b> aumenta a categoria de tamanho do alvo em uma.',
-            e_aumenta: true, // Aumenta a categoria de tamanho
+            e_aumenta: true,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17420,7 +17203,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [AlvoMagia.CRIATURA_OBJETO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -17454,7 +17236,8 @@ export class MagiaData {
             id: 1,
             descricao:
               '<b>+3 PM:</b> aumenta o tamanho máximo da criatura em uma categoria (para Grande, Enorme e Colossal) ou dobra a quantidade de espaços do objeto.',
-            e_aumenta: true, // Aumenta o tamanho ou a quantidade de espaços
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -17472,7 +17255,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -17506,7 +17288,8 @@ export class MagiaData {
             id: 1,
             descricao:
               '<b>+2 PM:</b> aumenta os bônus na Defesa, testes de ataque e rolagens de dano corpo a corpo em +1, e os PV temporários em +10.',
-            e_aumenta: true, // Aumenta os bônus e os PV temporários
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17524,7 +17307,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -17580,7 +17362,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano do sopro em +1d6+1.',
-            e_aumenta: true, // Aumenta o dano do sopro
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17598,12 +17381,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: '<b>+2 PM:</b> aumenta o bônus na Defesa em +1.',
-            e_aumenta: true, // Aumenta o bônus na Defesa
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17621,7 +17404,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -17746,7 +17528,8 @@ export class MagiaData {
             id: 2,
             descricao:
               '<b>+1 PM:</b> muda o alcance para toque, o alvo para 1 construto e a duração para instantânea. Em vez do normal, cura 2d8 PV do alvo. Você pode gastar 2 PM adicionais para aumentar a cura em +1d8.',
-            e_aumenta: true, // Aumenta a cura
+            e_aumenta: true,
+            aumenta: 0,
             custo: 1,
             custo_material: 0,
             descricao_material: '',
@@ -17768,7 +17551,8 @@ export class MagiaData {
           {
             id: 3,
             descricao: '<b>+2 PM:</b> aumenta o limite de tamanho do objeto em uma categoria.',
-            e_aumenta: true, // Aumenta o limite de tamanho
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17786,13 +17570,13 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [AlvoMagia.OBJETO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
             descricao:
               '<b>+3 PM:</b> aumenta o preço máximo do objeto criado em um fator de x10 (+3 PM por T$ 250 de preço, +6 PM por T$ 2.500 de preço e assim por diante).',
-            e_aumenta: true, // Aumenta o preço máximo
+            e_aumenta: true,
+            aumenta: 0,
             custo: 3,
             custo_material: 0,
             descricao_material: '',
@@ -17810,7 +17594,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [AlvoMagia.OBJETO, CirculoMagia.PRIMEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -17888,7 +17671,8 @@ export class MagiaData {
           {
             id: 1,
             descricao: '<b>+2 PM:</b> aumenta o dano em +2d8.',
-            e_aumenta: true, // Aumenta o dano
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -17906,7 +17690,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: 'reduz à metade',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -18120,7 +17903,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.NENHUMA,
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -18174,7 +17956,7 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> muda o dano para 4d6. Requer 2° círculo.',
-            e_aumenta: false, // Aumenta o dano
+            e_aumenta: false,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -18196,7 +17978,7 @@ export class MagiaData {
           {
             id: 3,
             descricao: '<b>+5 PM:</b> muda o dano para 6d6. Requer 3° círculo.',
-            e_aumenta: false, // Aumenta o dano
+            e_aumenta: false,
             custo: 5,
             custo_material: 0,
             descricao_material: '',
@@ -18268,7 +18050,8 @@ export class MagiaData {
           {
             id: 2,
             descricao: '<b>+2 PM:</b> também afeta espíritos e monstros na área. Requer 2º círculo.',
-            e_aumenta: true, // Aumenta o escopo de criaturas afetadas
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -18291,7 +18074,8 @@ export class MagiaData {
             id: 3,
             descricao:
               '<b>+5 PM:</b> também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo.',
-            e_aumenta: true, // Aumenta ainda mais o escopo de criaturas afetadas
+            e_aumenta: true,
+            aumenta: 0,
             custo: 5,
             custo_material: 0,
             descricao_material: '',
@@ -18365,7 +18149,8 @@ export class MagiaData {
             id: 2,
             descricao:
               '<b>+2 PM:</b> em vez do normal, se falhar na resistência o alvo fica exausto. Se passar, fica fatigado. Requer 2º círculo.',
-            e_aumenta: true, // Aumenta a severidade do efeito
+            e_aumenta: true,
+            aumenta: 0,
             custo: 2,
             custo_material: 0,
             descricao_material: '',
@@ -18387,7 +18172,8 @@ export class MagiaData {
           {
             id: 3,
             descricao: '<b>+5 PM:</b> como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo.',
-            e_aumenta: true, // Aumenta o escopo de alvos
+            e_aumenta: true,
+            aumenta: 0,
             custo: 5,
             custo_material: 0,
             descricao_material: '',
@@ -18454,7 +18240,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -18477,7 +18262,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -18528,7 +18312,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -18579,7 +18362,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.REACAO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -18602,7 +18384,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -18625,7 +18406,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA],
-            aumenta: 0,
           },
         ],
       },
@@ -18658,6 +18438,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -18675,7 +18456,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [Chave.AUMENTA],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -18698,7 +18478,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -18721,7 +18500,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -18771,12 +18549,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, '1 criatura', CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d6 (total de dados limitado pelo círculo máximo de magia que você pode lançar). Requer 3º círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -18794,7 +18572,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -18817,7 +18594,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -18840,7 +18616,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [Resistencia.REFLEXOS, ResistenciaMagia.PARCIAL],
-            aumenta: 0,
           },
         ],
       },
@@ -18915,12 +18690,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus de ataque e dano em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -18938,12 +18713,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM (Apenas Devotos de Lin-W:</b> muda o bônus de dano do aprimoramento acima para +2d4.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -18961,7 +18736,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -18994,6 +18768,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta a perda de vida para outras criaturas em +1d8 (número de dados de perda de vida máximos limitados pelo círculo máximo de magia que você pode lançar). Requer 3º círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 1,
@@ -19011,7 +18786,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -19034,7 +18808,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO, Resistencia.FORTITUDE, ResistenciaMagia.PARCIAL],
-            aumenta: 0,
           },
         ],
       },
@@ -19084,7 +18857,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -19107,7 +18879,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -19130,7 +18901,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -19153,7 +18923,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -19176,7 +18945,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -19226,7 +18994,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -19276,7 +19043,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -19299,7 +19065,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -19322,7 +19087,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO, ExecucaoMagia.PADRAO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -19345,7 +19109,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.MOVIMENTO],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -19368,7 +19131,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -19401,6 +19163,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta a Defesa em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 1,
@@ -19418,7 +19181,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -19441,7 +19203,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -19464,7 +19225,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -19487,7 +19247,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -19510,7 +19269,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -19560,12 +19318,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.DIA],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta a cura do aprimoramento abaixo para +10 PV.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -19583,7 +19341,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -19606,7 +19363,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -19639,6 +19395,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o bônus no teste em +5.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -19656,7 +19413,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -19679,7 +19435,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -19702,7 +19457,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -19752,12 +19506,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta a penalidade em testes para –15. Requer 2º círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -19775,7 +19529,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -19798,7 +19551,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -19848,7 +19600,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -19898,7 +19649,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -19921,7 +19671,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -19944,7 +19693,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -19967,7 +19715,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -20017,7 +19764,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20040,7 +19786,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -20063,7 +19808,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -20113,7 +19857,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -20146,6 +19889,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em um dado do mesmo tipo (total de dados limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -20163,7 +19907,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20186,7 +19929,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -20209,7 +19951,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -20232,7 +19973,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -20282,7 +20022,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20305,7 +20044,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.PADRAO, DuracaoMagia.CENA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -20328,7 +20066,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -20351,7 +20088,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -20384,6 +20120,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus em testes de ataque em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -20401,7 +20138,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20424,7 +20160,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO, DuracaoMagia.RODADA],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -20447,7 +20182,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -20470,7 +20204,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, '1 criatura'],
-            aumenta: 0,
           },
         ],
       },
@@ -20520,7 +20253,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO, '1 criatura'],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20543,7 +20275,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO, '1 alvo sob efeito de uma condição mental'],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -20566,7 +20297,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -20616,7 +20346,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20639,7 +20368,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -20662,7 +20390,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -20712,7 +20439,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO, AlcanceMagia.CURTO, '1 criatura'],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20735,7 +20461,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -20768,6 +20493,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +1. Requer 2° círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -20785,7 +20511,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -20808,7 +20533,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -20831,7 +20555,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -20881,12 +20604,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +1d8+1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -20904,12 +20627,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +1 (número de alvos adicionais limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -20927,7 +20650,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -20950,7 +20672,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -20973,7 +20694,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 6,
@@ -20996,7 +20716,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 7,
@@ -21019,7 +20738,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -21052,6 +20770,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta em 1 o círculo de magia afetado (limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -21069,7 +20788,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21092,7 +20810,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -21115,7 +20832,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -21138,7 +20854,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -21188,12 +20903,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta a penalidade em –1 (penalidade máxima limitada pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -21211,7 +20926,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -21234,7 +20948,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -21284,7 +20997,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21307,7 +21019,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -21330,7 +21041,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -21353,7 +21063,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -21403,7 +21112,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21426,7 +21134,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -21476,7 +21183,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, CirculoMagia.TERCEIRO_CIRCULO, '1 criatura'],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21499,7 +21205,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [ExecucaoMagia.PADRAO],
-            aumenta: 0,
           },
         ],
       },
@@ -21549,7 +21254,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21572,12 +21276,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus na Defesa em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -21595,7 +21299,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -21645,7 +21348,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -21695,7 +21397,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [DuracaoMagia.CENA, CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21718,7 +21419,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -21768,7 +21468,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21791,7 +21490,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE],
-            aumenta: 0,
           },
         ],
       },
@@ -21841,7 +21539,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, '1 criatura'],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -21864,7 +21561,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -21887,7 +21583,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -21937,12 +21632,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.CURTO, '1 criatura'],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM (Apenas Devotos de Aharadak):</b> aumenta o bônus em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.UNIVERSAL,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -21960,7 +21655,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22010,7 +21704,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -22033,7 +21726,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, '1 criatura', CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -22056,7 +21748,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -22106,7 +21797,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22139,6 +21829,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta a CD em +1 (bônus máximo limitado pelo círculo máximo de magias que você pode lançar). Requer 3° círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -22156,7 +21847,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -22179,7 +21869,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -22229,12 +21918,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus na Defesa em +2 (bônus máximo limitado ao dobro do círculo máximo de magia que você pode lançar). Requer 2º círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -22252,7 +21941,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -22275,7 +21963,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22325,7 +22012,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -22348,7 +22034,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [AlcanceMagia.TOQUE, '1 criatura'],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -22371,7 +22056,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -22394,7 +22078,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -22417,7 +22100,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUINTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -22450,6 +22132,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +2d8.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 2,
@@ -22467,12 +22150,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> muda o alcance para pessoal, a área para “Efeito: espada de plasma”, a duração para sustentada e a resistência para “Reflexos reduz à metade”. Ao invés do normal, você condensa a rajada na forma de uma espada de plasma que emite luz (alcance curto) e calor intensos. Você pode usar uma ação padrão para atingir um alvo adjacente com a espada, que causa 10d8 pontos de dano de fogo e ignora a resistência a dano de objetos. Sua mão que “empunha” a espada é considerada ocupada.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 2,
@@ -22490,12 +22173,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [AlcanceMagia.PESSOAL, DuracaoMagia.SUSTENTADA, 'Efeito: espada de plasma'],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+1 PM:</b> muda a resistência para Reflexos (eletricidade, fogo) ou Fortitude (frio) parcial. Se falha, a criatura sofre uma condição de acordo com o elemento da magia: arrefecido (frio), eletrificado (eletricidade) ou em chamas (fogo). (DB 219)</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.QUARTO_CIRCULO,
             custo: 1,
@@ -22513,7 +22196,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22563,7 +22245,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -22586,7 +22267,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -22609,7 +22289,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22642,6 +22321,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o dano em +1d6.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -22659,7 +22339,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -22682,7 +22361,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -22705,7 +22383,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [AlcanceMagia.PESSOAL, 'área cone de 9m', CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -22728,7 +22405,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.REFLEXOS,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22761,6 +22437,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta em +1 o total de usos antes de a magia ser descarregada.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -22778,7 +22455,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -22801,7 +22477,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -22824,7 +22499,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -22847,7 +22521,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22880,6 +22553,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> aumenta o dano em +1d8+1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -22897,7 +22571,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -22920,7 +22593,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [AlcanceMagia.PESSOAL, 'área esfera com 6m de raio'],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -22943,7 +22615,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -22976,6 +22647,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+1 PM:</b> a margem de ameaça de suas armas naturais aumenta em +1.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 1,
@@ -22993,12 +22665,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> o dano de suas armas naturais aumenta em um passo. Requer 3° círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -23016,7 +22688,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -23039,7 +22710,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -23089,7 +22759,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -23112,12 +22781,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM:</b> aumenta o bônus do aprimoramento acima em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar).</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.PRIMEIRO_CIRCULO,
             custo: 2,
@@ -23135,12 +22804,12 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
             descricao: `<p><b>+2 PM:</b> a margem de ameaça da arma aumenta em +1. Requer 2° círculo.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -23158,7 +22827,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.SEGUNDO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 5,
@@ -23181,7 +22849,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -23231,7 +22898,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -23254,7 +22920,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -23303,7 +22968,6 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -23325,12 +22989,12 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO, DuracaoMagia.DIA],
-            aumenta: 0,
           },
           {
             id: 3,
             descricao: `<p><b>+2 PM:</b> em vez do usuário, a arma se volta para outra criatura em alcance curto que você possa perceber, a sua escolha.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -23347,7 +23011,6 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -23369,7 +23032,6 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: Resistencia.VONTADE,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -23402,6 +23064,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +2. Você determina com quais criaturas cada alvo troca de lugar.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -23418,7 +23081,6 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -23440,7 +23102,6 @@ export class MagiaData {
             descricao_duracao: '',
             pericia_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -23462,7 +23123,6 @@ export class MagiaData {
             descricao_duracao: Resistencia.VONTADE,
             pericia_resistencia: ResistenciaMagia.ANULA,
             tracos: [CirculoMagia.QUARTO_CIRCULO, '2 criaturas do tipo lacaio'],
-            aumenta: 0,
           },
         ],
       },
@@ -23510,12 +23170,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +2d8.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.TERCEIRO_CIRCULO,
             custo: 2,
@@ -23531,7 +23191,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.FORTITUDE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -23552,7 +23211,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -23625,7 +23283,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -23646,7 +23303,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -23694,7 +23350,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.TERCEIRO_CIRCULO],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -23715,7 +23370,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [CirculoMagia.QUARTO_CIRCULO],
-            aumenta: 0,
           },
         ],
       },
@@ -23763,12 +23417,12 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: ['1 espírito ou morto-vivo'],
-            aumenta: 0,
           },
           {
             id: 2,
             descricao: `<p><b>+2 PM:</b> aumenta o dano em +2d8.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.DIVINA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -23784,7 +23438,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [],
-            aumenta: 0,
           },
           {
             id: 3,
@@ -23805,7 +23458,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: ['1 criatura'],
-            aumenta: 0,
           },
           {
             id: 4,
@@ -23826,7 +23478,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.REDUZ_METADE,
             tracos: [CirculoMagia.TERCEIRO_CIRCULO, 'criaturas escolhidas'],
-            aumenta: 0,
           },
         ],
       },
@@ -23874,7 +23525,6 @@ export class MagiaData {
             pericia_resistencia: '',
             maneira_resistencia: '',
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -23922,7 +23572,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: ['área para esfera com 6m de raio e o alvo para criaturas escolhidas'],
-            aumenta: 0,
           },
           {
             id: 2,
@@ -23943,7 +23592,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
@@ -23976,6 +23624,7 @@ export class MagiaData {
             id: 1,
             descricao: `<p><b>+2 PM:</b> aumenta o número de alvos em +1. Todas as criaturas e objetos devem ser afetadas da mesma forma.</p>`,
             e_aumenta: true,
+            aumenta: 0,
             tipo: TipoMagia.ARCANA,
             circulo: CirculoMagia.SEGUNDO_CIRCULO,
             custo: 2,
@@ -23991,7 +23640,6 @@ export class MagiaData {
             pericia_resistencia: Resistencia.VONTADE,
             maneira_resistencia: ResistenciaMagia.PARCIAL,
             tracos: [],
-            aumenta: 0,
           },
         ],
       },
