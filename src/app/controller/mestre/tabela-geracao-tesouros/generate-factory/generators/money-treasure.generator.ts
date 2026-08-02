@@ -90,13 +90,25 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
           retorno +
           `<div class="row">
           <p><b>QTD RIQUEZAS:</b> ${tesouroObj.riqueza.quantidade}</p>
-      </div>`;
+          </div>`;
+
         for (let index = 0; index < tesouroObj.riqueza.quantidade; index++) {
+          let linhatabela: any = null;
+          if (linhaDinheiroNivel.unidade.includes('nor'))
+            linhatabela = tabelaRiquezaMenor.find((item: any) => random >= item.min && random <= item.max);
+          else if (linhaDinheiroNivel.unidade.includes('dia'))
+            linhatabela = tabelaRiquezaMedia.find((item: any) => random >= item.min && random <= item.max);
+          else if (linhaDinheiroNivel.unidade.includes('ior'))
+            linhatabela = tabelaRiquezaMaior.find((item: any) => random >= item.min && random <= item.max);
+
+          let riquezas = this.riqueza(linhatabela);
           retorno =
             retorno +
             `<div class="row">
-          <p><b>Riqueza ${index + 1}:</b> T$ ${tesouroObj.riqueza.valores[index].valor}</p>
-      </div>`;
+              <p><b>Riqueza ${index + 1}:</b> ${riquezas.exemplos} (${
+                riquezas.espaco === 0 ? '-' : riquezas.espaco + ' espaços'
+              }) no valor de T$ ${tesouroObj.riqueza.valores[index].valor}</p>
+              </div>`;
         }
       }
     } else {
@@ -138,6 +150,12 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
     return dinheiro;
   }
 
+  riqueza(linhaDinheiroNivel: any): any {
+    let itens = linhaDinheiroNivel.itens[Math.floor(Math.random() * linhaDinheiroNivel.itens.length)];
+    let exemplos = itens.exemplos[Math.floor(Math.random() * itens.exemplos.length)];
+    return { exemplos: exemplos, espaco: itens.espaco };
+  }
+
   gerarIndividual(riqueza: string, random: number) {
     let linhatabela: any = null;
     if (riqueza === 'menor')
@@ -156,7 +174,7 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
           <p><b>FÓRMULA:</b> ${linhatabela.valor}</p>
       </div>
       <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> T$${valor}</p>
+          <p><b>DINHEIRO TOTAL:</b> T$${valor} </p>
       </div>`;
 
     return detalheRiqueza;

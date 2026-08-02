@@ -1646,35 +1646,925 @@ export const tabelaRiquezaMenor = [
       { espaco: 5, exemplos: ['barril de farinha', 'gaiola com galinhas'] },
     ],
   },
-  { min: 26, max: 40, valor: '1d4x10 T$', multiplicador: 1, randomizador: 4, potencializador: 10, unidade: 'T$' },
-  { min: 41, max: 55, valor: '2d4x10 T$', multiplicador: 2, randomizador: 4, potencializador: 10, unidade: 'T$' },
-  { min: 56, max: 70, valor: '4d6x10 T$', multiplicador: 4, randomizador: 6, potencializador: 10, unidade: 'T$' },
-  { min: 71, max: 85, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
-  { min: 86, max: 95, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
-  { min: 96, max: 99, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
-  { min: 100, max: 100, valor: '4d10x100 T$', multiplicador: 4, randomizador: 10, potencializador: 100, unidade: 'T$' },
+  {
+    min: 26,
+    max: 40,
+    valor: '1d4x10 T$',
+    multiplicador: 1,
+    randomizador: 4,
+    potencializador: 10,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['colar de presas de bulette', 'livreto de poesia bucaneira', 'quartzo rosa', 'topázio'],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'ânfora de prata com símbolo de Marah (vale o dobro em um templo da deusa)',
+          'caixa de tabaco',
+          'rolo de linho',
+          'urna de sais aromáticos (pode ser usada como ingrediente para preparados)',
+          'saco com penas de hipossauro',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['conjunto de talheres de prata', 'jarro de especiarias', 'como canela', 'gorad', 'pimenta ou sal'],
+      },
+      { espaco: 5, exemplos: ['candelabro de bronze', 'colchão de palha de boa qualidade'] },
+      { espaco: 0, exemplos: ['vaca leiteira (irá acompanhá-lo se você for treinado em Adestramento)'] },
+    ],
+  },
+  {
+    min: 41,
+    max: 55,
+    valor: '2d4x10 T$',
+    multiplicador: 2,
+    randomizador: 4,
+    potencializador: 10,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'ampulheta',
+          'arreios de prata',
+          'barra de gorad',
+          'bracelete de ouro finamente trabalhado',
+          'cadeado de latão de boa qualidade',
+          'leque de bambu e seda',
+          'garrafa com água das profundezas do Mar Negro (supostamente possui propriedades mágicas)',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'bengala de ébano com uma cabeça de serpente de marfim',
+          'estatueta de osso entalhado',
+          'frutas exóticas (estragam em 2d4 dias)',
+          'lamparina de ouro (vale o dobro para um devoto de Azgher)',
+          'livro de crônicas roramarianas',
+          'livro de receitas campeiras de Namalkah',
+          'molde para fabricar velas, rolo de seda',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'brazeiro de latão decorado',
+          'cobertor para montaria',
+          'couro curtido de um burafonte',
+          'vaso de prata',
+        ],
+      },
+    ],
+  },
+  {
+    min: 56,
+    max: 70,
+    valor: '4d6x10 T$',
+    multiplicador: 4,
+    randomizador: 6,
+    potencializador: 10,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'ametista',
+          'cartas de um nobre falecido (seus descendentes podem pagar o dobro)',
+          'frasco de tinta allavir',
+          'pente de madeira Tollon',
+          'pérola branca',
+          'suspensórios elegantes',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caixa com 5 pares de meias de seda',
+          'cálice de prata com gemas de lápis-lazúli',
+          'estojo com sinete e apetrechos burocráticos (vale o dobro para o proprietário original)',
+          'lingote de prata',
+          'sapatilha élfica confortável',
+          'tiara sinuosa própria para uma medusa',
+          'traje de festa exclusivo (concede +2 em Diplomacia durante a primeira cena em que for usado)',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'alvo para disparos sofisticado (treinar nele fornece +1 em Pontaria até o fim da aventura, mas o destrói)',
+          'bloco de gelo das Uivantes (derrete em 1d6+3 dias)',
+          'estatueta de uma cocatriz com olhos de madrepérola',
+        ],
+      },
+      {
+        espaco: 5,
+        exemplos: ['tapeçaria grande e bem-feita de lã'],
+      },
+      {
+        espaco: 20,
+        exemplos: ['porta de madeira maciça finamente entalhada'],
+      },
+    ],
+  },
+  {
+    min: 71,
+    max: 85,
+    valor: '1d6x100 T$',
+    multiplicador: 1,
+    randomizador: 6,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['alexandrita', 'pérola negra', 'peruca de crina de pégaso'],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caleidoscópio de bronze com imagens doheritas',
+          'espada cerimonial ornada com prata e gema negra no cabo',
+          'toga tapistana com barra bordada em ouro',
+          'pente de prata com pedras preciosas',
+          'roda de queijo de seiva de galhada (rende 12 fatias; cada uma recupera 1d4+1 PV)',
+          'sapatos de dança em couro de serpe',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['relógio de parede kliren'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['cadeira de madeira Tollon', 'cavalo de balanço com crina de verdade'],
+      },
+      {
+        espaco: 10,
+        exemplos: ['conjunto de velas de um galeão'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'carruagem (pode ser puxada por um animal de tração ou arrastada por um personagem como um item que ocupa 20 espaços)',
+        ],
+      },
+    ],
+  },
+  {
+    min: 86,
+    max: 95,
+    valor: '2d6x100 T$',
+    multiplicador: 2,
+    randomizador: 6,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'baralho de Wyrt com tinta de ouro',
+          'bracelete banhado em adamante',
+          'condecoração militar da Guerra Artoniana',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'escultura de vidro feito com areia de Halak-Tur',
+          'estatueta de Valkaria em prata azulada',
+          'pente em forma de dragão com olhos de gema vermelha',
+          'máscara teatral de marfim com pedras preciosas',
+          'réplica do machado Zakharin (portá-lo é crime no Reinado)',
+          'vestido digno de uma princesa',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['telescópio portátil'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['barril de cerveja fina de Doherimm', 'harpa de madeira exótica com ornamentos de zircão e marfim'],
+      },
+      {
+        espaco: 10,
+        exemplos: ['tronco de madeira Tollon'],
+      },
+    ],
+  },
+  {
+    min: 96,
+    max: 99,
+    valor: '2d8x100 T$',
+    multiplicador: 2,
+    randomizador: 8,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['brinco com uma joia de aço-rubi', 'opala negra', 'tapa-olho com um olho falso de safira'],
+      },
+      {
+        espaco: 1,
+        exemplos: ['luva bordada e adornada com gemas', 'pingente de opala vermelha com corrente de ouro'],
+      },
+      {
+        espaco: 2,
+        exemplos: ['gaiola de prata para falcoaria', 'lingote de ouro', 'pintura antiga'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['barril de especiarias de Moreania'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'carroça cheia de mercadorias comuns (pode ser puxada por um animal de tração ou arrastada por um personagem como um item que ocupa 20 espaços)',
+        ],
+      },
+    ],
+  },
+  {
+    min: 100,
+    max: 100,
+    valor: '4d10x100 T$',
+    multiplicador: 4,
+    randomizador: 10,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['esmeralda verde', 'pingente de safira'],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caixinha de música de ouro',
+          'ovo de grifo (com tempo e cuidado, pode ser transformado em um parceiro grifo iniciante)',
+          'tornozeleira com gemas',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['manto bordado em veludo e seda com inúmeras pedras preciosas'],
+      },
+      {
+        espaco: 5,
+        exemplos: [
+          'berço de madeira Tollon com detalhes em ouro',
+          'chafariz de mármore para fonte de jardim',
+          'conjunto de taças de cristal em caixote',
+        ],
+      },
+      {
+        espaco: 20,
+        exemplos: ['coluna de mármore em estilo neogórdio'],
+      },
+    ],
+  },
 ];
 
 export const tabelaRiquezaMedia = [
-  { min: 1, max: 10, valor: '2d4x10 T$', multiplicador: 2, randomizador: 4, potencializador: 10, unidade: 'T$' },
-  { min: 11, max: 30, valor: '4d4x10 T$', multiplicador: 4, randomizador: 4, potencializador: 10, unidade: 'T$' },
-  { min: 31, max: 50, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
-  { min: 51, max: 65, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
-  { min: 66, max: 80, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
-  { min: 81, max: 90, valor: '4d10x100 T$', multiplicador: 4, randomizador: 10, potencializador: 100, unidade: 'T$' },
-  { min: 91, max: 95, valor: '6d12x100 T$', multiplicador: 6, randomizador: 12, potencializador: 100, unidade: 'T$' },
-  { min: 96, max: 99, valor: '2d10x1000 T$', multiplicador: 2, randomizador: 10, potencializador: 1000, unidade: 'T$' },
-  { min: 99, max: 100, valor: '6d8x1000 T$', multiplicador: 6, randomizador: 8, potencializador: 1000, unidade: 'T$' },
+  {
+    min: 1,
+    max: 10,
+    valor: '2d4x10 T$',
+    multiplicador: 2,
+    randomizador: 4,
+    potencializador: 10,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'ampulheta',
+          'arreios de prata',
+          'barra de gorad',
+          'bracelete de ouro finamente trabalhado',
+          'cadeado de latão de boa qualidade',
+          'leque de bambu e seda',
+          'garrafa com água das profundezas do Mar Negro (supostamente possui propriedades mágicas)',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'bengala de ébano com uma cabeça de serpente de marfim',
+          'estatueta de osso entalhado',
+          'frutas exóticas (estragam em 2d4 dias)',
+          'lamparina de ouro (vale o dobro para um devoto de Azgher)',
+          'livro de crônicas roramarianas',
+          'livro de receitas campeiras de Namalkah',
+          'molde para fabricar velas, rolo de seda',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'brazeiro de latão decorado',
+          'cobertor para montaria',
+          'couro curtido de um burafonte',
+          'vaso de prata',
+        ],
+      },
+    ],
+  },
+  {
+    min: 11,
+    max: 30,
+    valor: '4d4x10 T$',
+    multiplicador: 4,
+    randomizador: 4,
+    potencializador: 10,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'ametista',
+          'cartas de um nobre falecido (seus descendentes podem pagar o dobro)',
+          'frasco de tinta allavir',
+          'pente de madeira Tollon',
+          'pérola branca',
+          'suspensórios elegantes',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caixa com 5 pares de meias de seda',
+          'cálice de prata com gemas de lápis-lazúli',
+          'estojo com sinete e apetrechos burocráticos (vale o dobro para o proprietário original)',
+          'lingote de prata',
+          'sapatilha élfica confortável',
+          'tiara sinuosa própria para uma medusa',
+          'traje de festa exclusivo (concede +2 em Diplomacia durante a primeira cena em que for usado)',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'alvo para disparos sofisticado (treinar nele fornece +1 em Pontaria até o fim da aventura, mas o destrói)',
+          'bloco de gelo das Uivantes (derrete em 1d6+3 dias)',
+          'estatueta de uma cocatriz com olhos de madrepérola',
+        ],
+      },
+      {
+        espaco: 5,
+        exemplos: ['tapeçaria grande e bem-feita de lã'],
+      },
+      {
+        espaco: 20,
+        exemplos: ['porta de madeira maciça finamente entalhada'],
+      },
+    ],
+  },
+  {
+    min: 31,
+    max: 50,
+    valor: '1d6x100 T$',
+    multiplicador: 1,
+    randomizador: 6,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['alexandrita', 'pérola negra', 'peruca de crina de pégaso'],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caleidoscópio de bronze com imagens doheritas',
+          'espada cerimonial ornada com prata e gema negra no cabo',
+          'toga tapistana com barra bordada em ouro',
+          'pente de prata com pedras preciosas',
+          'roda de queijo de seiva de galhada (rende 12 fatias; cada uma recupera 1d4+1 PV)',
+          'sapatos de dança em couro de serpe',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['relógio de parede kliren'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['cadeira de madeira Tollon', 'cavalo de balanço com crina de verdade'],
+      },
+      {
+        espaco: 10,
+        exemplos: ['conjunto de velas de um galeão'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'carruagem (pode ser puxada por um animal de tração ou arrastada por um personagem como um item que ocupa 20 espaços)',
+        ],
+      },
+    ],
+  },
+  {
+    min: 51,
+    max: 65,
+    valor: '2d6x100 T$',
+    multiplicador: 2,
+    randomizador: 6,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'baralho de Wyrt com tinta de ouro',
+          'bracelete banhado em adamante',
+          'condecoração militar da Guerra Artoniana',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'escultura de vidro feito com areia de Halak-Tur',
+          'estatueta de Valkaria em prata azulada',
+          'pente em forma de dragão com olhos de gema vermelha',
+          'máscara teatral de marfim com pedras preciosas',
+          'réplica do machado Zakharin (portá-lo é crime no Reinado)',
+          'vestido digno de uma princesa',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['telescópio portátil'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['barril de cerveja fina de Doherimm', 'harpa de madeira exótica com ornamentos de zircão e marfim'],
+      },
+      {
+        espaco: 10,
+        exemplos: ['tronco de madeira Tollon'],
+      },
+    ],
+  },
+  {
+    min: 66,
+    max: 80,
+    valor: '2d8x100 T$',
+    multiplicador: 2,
+    randomizador: 8,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['brinco com uma joia de aço-rubi', 'opala negra', 'tapa-olho com um olho falso de safira'],
+      },
+      {
+        espaco: 1,
+        exemplos: ['luva bordada e adornada com gemas', 'pingente de opala vermelha com corrente de ouro'],
+      },
+      {
+        espaco: 2,
+        exemplos: ['gaiola de prata para falcoaria', 'lingote de ouro', 'pintura antiga'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['barril de especiarias de Moreania'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'carroça cheia de mercadorias comuns (pode ser puxada por um animal de tração ou arrastada por um personagem como um item que ocupa 20 espaços)',
+        ],
+      },
+    ],
+  },
+  {
+    min: 81,
+    max: 90,
+    valor: '4d10x100 T$',
+    multiplicador: 4,
+    randomizador: 10,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['esmeralda verde', 'pingente de safira'],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caixinha de música de ouro',
+          'ovo de grifo (com tempo e cuidado, pode ser transformado em um parceiro grifo iniciante)',
+          'tornozeleira com gemas',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['manto bordado em veludo e seda com inúmeras pedras preciosas'],
+      },
+      {
+        espaco: 5,
+        exemplos: [
+          'berço de madeira Tollon com detalhes em ouro',
+          'chafariz de mármore para fonte de jardim',
+          'conjunto de taças de cristal em caixote',
+        ],
+      },
+      {
+        espaco: 20,
+        exemplos: ['coluna de mármore em estilo neogórdio'],
+      },
+    ],
+  },
+  {
+    min: 91,
+    max: 95,
+    valor: '6d12x100 T$',
+    multiplicador: 6,
+    randomizador: 12,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'anel de prata e safira',
+          'correntinha com pequenas pérolas rosas',
+          'diamante branco',
+          'pingente de ouro com um topázio em forma de Marah',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: ['espelho feito na Pondsmânia (adiciona traços feéricos ao reflexo do usuário)'],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'miniatura mecânica de um dragão feita por um inventor renomado',
+          'tábua de granito com reprodução da Tarvica em letras de ouro',
+          'vestido digno de uma rainha',
+        ],
+      },
+      {
+        espaco: 5,
+        exemplos: ['ídolo de ouro puro maciço', 'quadro élfico em estilo sobrenaturalista'],
+      },
+      {
+        espaco: 100,
+        exemplos: ['bloco de mármore bruto'],
+      },
+    ],
+  },
+  {
+    min: 96,
+    max: 99,
+    valor: '2d10x1000 T$',
+    multiplicador: 2,
+    randomizador: 10,
+    potencializador: 1000,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['anel de ouro e rubi', 'diamante vermelho'],
+      },
+      {
+        espaco: 1,
+        exemplos: ['tiara de mitral cravejada de rubis'],
+      },
+      {
+        espaco: 2,
+        exemplos: ['conjunto de taças de ouro decoradas com esmeraldas'],
+      },
+      {
+        espaco: 5,
+        exemplos: [
+          'busto de Tanna-Toh esculpido por um artista famoso',
+          'globo de Arton com pedras preciosas marcando os pontos de interesse conhecidos',
+        ],
+      },
+      {
+        espaco: 10,
+        exemplos: ['quadro do arquimago Vectorius em tamanho natural'],
+      },
+      {
+        espaco: 20,
+        exemplos: [
+          'piano em madeira Tollon com cordas de mitral e teclas de marfim de Galrasia, estátua dourada de Klunk',
+        ],
+      },
+    ],
+  },
+  {
+    min: 99,
+    max: 100,
+    valor: '6d8x1000 T$',
+    multiplicador: 6,
+    randomizador: 8,
+    potencializador: 1000,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 1,
+        exemplos: ['coroa de ouro adornada com centenas de gemas que pertenceu a um antigo monarca'],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'baú de mitral com coleção de diamantes',
+          'tapeçaria da Tormenta em estilo grigoriano (observá-la fornece 1 PM temporário para devotos de Aharadak uma vez por dia)',
+        ],
+      },
+      {
+        espaco: 5,
+        exemplos: ['estatueta de gelo eterno com uma essência elemental agitada em seu interior'],
+      },
+      {
+        espaco: 20,
+        exemplos: ['meteorito de adamante bruto', 'sino de catedral de ouro maciço'],
+      },
+    ],
+  },
 ];
 
 export const tabelaRiquezaMaior = [
-  { min: 1, max: 5, valor: '1d6x100 T$', multiplicador: 1, randomizador: 6, potencializador: 100, unidade: 'T$' },
-  { min: 6, max: 15, valor: '2d6x100 T$', multiplicador: 2, randomizador: 6, potencializador: 100, unidade: 'T$' },
-  { min: 16, max: 25, valor: '2d8x100 T$', multiplicador: 2, randomizador: 8, potencializador: 100, unidade: 'T$' },
-  { min: 26, max: 40, valor: '4d10x100 T$', multiplicador: 4, randomizador: 10, potencializador: 100, unidade: 'T$' },
-  { min: 41, max: 60, valor: '6d12x100 T$', multiplicador: 6, randomizador: 12, potencializador: 100, unidade: 'T$' },
-  { min: 61, max: 75, valor: '2d10x1000 T$', multiplicador: 2, randomizador: 10, potencializador: 1000, unidade: 'T$' },
-  { min: 76, max: 85, valor: '6d8x1000 T$', multiplicador: 6, randomizador: 8, potencializador: 1000, unidade: 'T$' },
+  {
+    min: 1,
+    max: 5,
+    valor: '1d6x100 T$',
+    multiplicador: 1,
+    randomizador: 6,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['alexandrita', 'pérola negra', 'peruca de crina de pégaso'],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caleidoscópio de bronze com imagens doheritas',
+          'espada cerimonial ornada com prata e gema negra no cabo',
+          'toga tapistana com barra bordada em ouro',
+          'pente de prata com pedras preciosas',
+          'roda de queijo de seiva de galhada (rende 12 fatias; cada uma recupera 1d4+1 PV)',
+          'sapatos de dança em couro de serpe',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['relógio de parede kliren'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['cadeira de madeira Tollon', 'cavalo de balanço com crina de verdade'],
+      },
+      {
+        espaco: 10,
+        exemplos: ['conjunto de velas de um galeão'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'carruagem (pode ser puxada por um animal de tração ou arrastada por um personagem como um item que ocupa 20 espaços)',
+        ],
+      },
+    ],
+  },
+  {
+    min: 6,
+    max: 15,
+    valor: '2d6x100 T$',
+    multiplicador: 2,
+    randomizador: 6,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'baralho de Wyrt com tinta de ouro',
+          'bracelete banhado em adamante',
+          'condecoração militar da Guerra Artoniana',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'escultura de vidro feito com areia de Halak-Tur',
+          'estatueta de Valkaria em prata azulada',
+          'pente em forma de dragão com olhos de gema vermelha',
+          'máscara teatral de marfim com pedras preciosas',
+          'réplica do machado Zakharin (portá-lo é crime no Reinado)',
+          'vestido digno de uma princesa',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['telescópio portátil'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['barril de cerveja fina de Doherimm', 'harpa de madeira exótica com ornamentos de zircão e marfim'],
+      },
+      {
+        espaco: 10,
+        exemplos: ['tronco de madeira Tollon'],
+      },
+    ],
+  },
+  {
+    min: 16,
+    max: 25,
+    valor: '2d8x100 T$',
+    multiplicador: 2,
+    randomizador: 8,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['brinco com uma joia de aço-rubi', 'opala negra', 'tapa-olho com um olho falso de safira'],
+      },
+      {
+        espaco: 1,
+        exemplos: ['luva bordada e adornada com gemas', 'pingente de opala vermelha com corrente de ouro'],
+      },
+      {
+        espaco: 2,
+        exemplos: ['gaiola de prata para falcoaria', 'lingote de ouro', 'pintura antiga'],
+      },
+      {
+        espaco: 5,
+        exemplos: ['barril de especiarias de Moreania'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'carroça cheia de mercadorias comuns (pode ser puxada por um animal de tração ou arrastada por um personagem como um item que ocupa 20 espaços)',
+        ],
+      },
+    ],
+  },
+  {
+    min: 26,
+    max: 40,
+    valor: '4d10x100 T$',
+    multiplicador: 4,
+    randomizador: 10,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['esmeralda verde', 'pingente de safira'],
+      },
+      {
+        espaco: 1,
+        exemplos: [
+          'caixinha de música de ouro',
+          'ovo de grifo (com tempo e cuidado, pode ser transformado em um parceiro grifo iniciante)',
+          'tornozeleira com gemas',
+        ],
+      },
+      {
+        espaco: 2,
+        exemplos: ['manto bordado em veludo e seda com inúmeras pedras preciosas'],
+      },
+      {
+        espaco: 5,
+        exemplos: [
+          'berço de madeira Tollon com detalhes em ouro',
+          'chafariz de mármore para fonte de jardim',
+          'conjunto de taças de cristal em caixote',
+        ],
+      },
+      {
+        espaco: 20,
+        exemplos: ['coluna de mármore em estilo neogórdio'],
+      },
+    ],
+  },
+  {
+    min: 41,
+    max: 60,
+    valor: '6d12x100 T$',
+    multiplicador: 6,
+    randomizador: 12,
+    potencializador: 100,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: [
+          'anel de prata e safira',
+          'correntinha com pequenas pérolas rosas',
+          'diamante branco',
+          'pingente de ouro com um topázio em forma de Marah',
+        ],
+      },
+      {
+        espaco: 1,
+        exemplos: ['espelho feito na Pondsmânia (adiciona traços feéricos ao reflexo do usuário)'],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'miniatura mecânica de um dragão feita por um inventor renomado',
+          'tábua de granito com reprodução da Tarvica em letras de ouro',
+          'vestido digno de uma rainha',
+        ],
+      },
+      {
+        espaco: 5,
+        exemplos: ['ídolo de ouro puro maciço', 'quadro élfico em estilo sobrenaturalista'],
+      },
+      {
+        espaco: 100,
+        exemplos: ['bloco de mármore bruto'],
+      },
+    ],
+  },
+  {
+    min: 61,
+    max: 75,
+    valor: '2d10x1000 T$',
+    multiplicador: 2,
+    randomizador: 10,
+    potencializador: 1000,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 0.5,
+        exemplos: ['anel de ouro e rubi', 'diamante vermelho'],
+      },
+      {
+        espaco: 1,
+        exemplos: ['tiara de mitral cravejada de rubis'],
+      },
+      {
+        espaco: 2,
+        exemplos: ['conjunto de taças de ouro decoradas com esmeraldas'],
+      },
+      {
+        espaco: 5,
+        exemplos: [
+          'busto de Tanna-Toh esculpido por um artista famoso',
+          'globo de Arton com pedras preciosas marcando os pontos de interesse conhecidos',
+        ],
+      },
+      {
+        espaco: 10,
+        exemplos: ['quadro do arquimago Vectorius em tamanho natural'],
+      },
+      {
+        espaco: 20,
+        exemplos: [
+          'piano em madeira Tollon com cordas de mitral e teclas de marfim de Galrasia, estátua dourada de Klunk',
+        ],
+      },
+    ],
+  },
+  {
+    min: 76,
+    max: 85,
+    valor: '6d8x1000 T$',
+    multiplicador: 6,
+    randomizador: 8,
+    potencializador: 1000,
+    unidade: 'T$',
+    itens: [
+      {
+        espaco: 1,
+        exemplos: ['coroa de ouro adornada com centenas de gemas que pertenceu a um antigo monarca'],
+      },
+      {
+        espaco: 2,
+        exemplos: [
+          'baú de mitral com coleção de diamantes',
+          'tapeçaria da Tormenta em estilo grigoriano (observá-la fornece 1 PM temporário para devotos de Aharadak uma vez por dia)',
+        ],
+      },
+      {
+        espaco: 5,
+        exemplos: ['estatueta de gelo eterno com uma essência elemental agitada em seu interior'],
+      },
+      {
+        espaco: 20,
+        exemplos: ['meteorito de adamante bruto', 'sino de catedral de ouro maciço'],
+      },
+    ],
+  },
   {
     min: 86,
     max: 95,
@@ -1683,6 +2573,26 @@ export const tabelaRiquezaMaior = [
     randomizador: 10,
     potencializador: 10000,
     unidade: 'T$',
+    itens: [
+      {
+        espaco: 1,
+        exemplos: ['elmo de matéria vermelha com detalhes em rubis e turmalinas'],
+      },
+      {
+        espaco: 10,
+        exemplos: ['altar religioso em granito e onix com inscrições em ouro', 'sarcófago de ouro cravejado de gemas'],
+      },
+      {
+        espaco: 20,
+        exemplos: ['arca de madeira reforçada repleta de lingotes de prata e ouro e pedras preciosas de vários tipos'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'carruagem de luxo em madeira Tollon banhada a ouro com detalhes em metais finos e pedras preciosas (pode ser puxada por um animal de tração ou arrastada por um personagem como um item que ocupa 20 espaços).',
+        ],
+      },
+    ],
   },
   {
     min: 96,
@@ -1692,6 +2602,18 @@ export const tabelaRiquezaMaior = [
     randomizador: 12,
     potencializador: 10000,
     unidade: 'T$',
+    itens: [
+      {
+        espaco: 20,
+        exemplos: ['estátua titanoteica em aventurina de uma divindade do Panteão'],
+      },
+      {
+        espaco: 0,
+        exemplos: [
+          'uma sala forrada de moedas (mover todo esse dinheiro exige trabalhadores e carroças, ou outra ideia por parte dos jogadores, além de atrair a atenção de bandidos, coletores de impostos e aproveitadores de vários tipos).',
+        ],
+      },
+    ],
   },
 ];
 
