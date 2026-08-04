@@ -93,23 +93,10 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
           </div>`;
 
         for (let index = 0; index < tesouroObj.riqueza.quantidade; index++) {
-          let linhatabela: any = null;
-          if (linhaDinheiroNivel.unidade.includes('nor'))
-            linhatabela = tabelaRiquezaMenor.find((item: any) => random >= item.min && random <= item.max);
-          else if (linhaDinheiroNivel.unidade.includes('dia'))
-            linhatabela = tabelaRiquezaMedia.find((item: any) => random >= item.min && random <= item.max);
-          else if (linhaDinheiroNivel.unidade.includes('ior'))
-            linhatabela = tabelaRiquezaMaior.find((item: any) => random >= item.min && random <= item.max);
-
-          let riquezas = this.riqueza(linhatabela);
-          retorno =
-            retorno +
-            `<div class="row">
-              <p><b>Riqueza ${index + 1}:</b> ${riquezas.exemplos} (${
-                riquezas.espaco === 0 ? '-' : riquezas.espaco + ' espaços'
-              }) no valor de T$ ${tesouroObj.riqueza.valores[index].valor}</p>
-              </div>`;
+          retorno = this.gerarRelatorioRiquezas(linhaDinheiroNivel, random, retorno, index, tesouroObj);
         }
+      } else {
+        retorno = this.gerarRelatorioRiquezas(linhaDinheiroNivel, random, retorno, 0, tesouroObj);
       }
     } else {
       retorno =
@@ -119,6 +106,30 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
         </div>`;
     }
 
+    return retorno;
+  }
+
+  private gerarRelatorioRiquezas(
+    linhaDinheiroNivel: any,
+    random: number,
+    retorno: string,
+    index: number,
+    tesouroObj: Tesouro
+  ) {
+    let linhatabela: any = null;
+    if (linhaDinheiroNivel.unidade.includes('nor'))
+      linhatabela = tabelaRiquezaMenor.find((item: any) => random >= item.min && random <= item.max);
+    else if (linhaDinheiroNivel.unidade.includes('dia'))
+      linhatabela = tabelaRiquezaMedia.find((item: any) => random >= item.min && random <= item.max);
+    else if (linhaDinheiroNivel.unidade.includes('ior'))
+      linhatabela = tabelaRiquezaMaior.find((item: any) => random >= item.min && random <= item.max);
+
+    let riquezas = this.riqueza(linhatabela);
+    retorno =
+      retorno +
+      `<div class="row">
+              <p><b>Riqueza ${index + 1}:</b> ${riquezas.exemplos} (${riquezas.espaco === 0 ? '-' : riquezas.espaco + ' espaços'}) no valor de T$ ${tesouroObj.riqueza.valores[index].valor}</p>
+              </div>`;
     return retorno;
   }
 
