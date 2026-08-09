@@ -8,7 +8,11 @@
           <div #tesouro class="col-sm-12 mb-4">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title mb-4">
-                {{ 'TESOURO POR ND' }}
+                <div class="row">
+                  <div class="col-sm-12">
+                    {{ 'TESOURO POR ND ' }}
+                  </div>
+                </div>
               </mat-card-title>
               <mat-card-content>
                 <div class="row mt-4">
@@ -84,7 +88,7 @@
                           </div>
                         </div>
                         @for (item of dadosRange; track item) {
-                          <div class="row mb-4">
+                          <div class="row">
                             <div class="col-sm-6">
                               <h5><b>DINHEIRO</b></h5>
                               <hr />
@@ -1439,7 +1443,14 @@
           <div #tesouro class="col-sm-6">
             <mat-card class="card-game">
               <mat-card-title class="mat-card-title mb-4">
-                {{ 'TESOURO POR ND' }}
+                <div class="row">
+                  <div class="col-sm-1">
+                    <img src="assets/img/icone-tesouros.png" alt="Tesouro" class="icone-tesouros" />
+                  </div>
+                  <div class="col-sm-11">
+                    {{ 'TESOURO POR ND ' }}
+                  </div>
+                </div>
               </mat-card-title>
               <mat-card-content>
                 <div class="row mt-4">
@@ -1514,14 +1525,21 @@
                             </section>
                           </div>
                         </div>
+
                         @for (item of dadosRange; track item) {
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-1">
+                              <img src="assets/img/icone-moedas.png" alt="Dinheiro" class="icone-dinheiro" />
+                            </div>
+                            <div class="col-sm-5">
                               <h5><b>DINHEIRO</b></h5>
                               <hr />
                               <div style="color: white !important" [innerHTML]="detalhesTesouroDinheiro[item]"></div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-1">
+                              <img src="assets/img/icone-itens.png" alt="Itens" class="icone-itens" />
+                            </div>
+                            <div class="col-sm-5">
                               <h5><b>ITENS</b></h5>
                               <hr />
                               <div style="color: white !important" [innerHTML]="detalhesTesouroItens[item]"></div>
