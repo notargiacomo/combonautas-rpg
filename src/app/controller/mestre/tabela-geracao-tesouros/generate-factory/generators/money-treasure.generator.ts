@@ -135,9 +135,9 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
 
   calcularRiqueza(unidade: string, modificador: number): number {
     let riquezas: any[] = [];
-    if (unidade.includes('menor')) riquezas = tabelaRiquezaMenor;
-    if (StringUtils.removerAcentos(unidade.toLowerCase()).includes('media')) riquezas = tabelaRiquezaMedia;
-    if (unidade.includes('maior')) riquezas = tabelaRiquezaMaior;
+    if (unidade.includes('nor')) riquezas = tabelaRiquezaMenor;
+    if (StringUtils.removerAcentos(unidade.toLowerCase()).includes('dia')) riquezas = tabelaRiquezaMedia;
+    if (unidade.includes('ior')) riquezas = tabelaRiquezaMaior;
 
     let random = Math.floor(Math.random() * 100) + 1;
     random = random + modificador < 100 ? random + modificador : 100;
@@ -169,26 +169,18 @@ export class MoneyTreasureGenerator implements TreasureGenerator {
 
   gerarIndividual(riqueza: string, random: number) {
     let linhatabela: any = null;
-    if (riqueza === 'menor')
+    if (riqueza.includes('nor'))
       linhatabela = tabelaRiquezaMenor.find((item: any) => random >= item.min && random <= item.max);
-    else if (riqueza === 'media')
+    else if (riqueza.includes('dia'))
       linhatabela = tabelaRiquezaMedia.find((item: any) => random >= item.min && random <= item.max);
-    else if (riqueza === 'maior')
+    else if (riqueza.includes('ior'))
       linhatabela = tabelaRiquezaMaior.find((item: any) => random >= item.min && random <= item.max);
 
-    const valor = this.contadorMoedas(linhatabela);
-    const detalheRiqueza = `
-      <div class="row">
-          <p><b>RESULTADO D100:</b> ${random}</p>
-      </div>
-      <div class="row">
-          <p><b>FÓRMULA:</b> ${linhatabela.valor}</p>
-      </div>
-      <div class="row">
-          <p><b>DINHEIRO TOTAL:</b> T$${valor} </p>
-      </div>`;
-
-    return detalheRiqueza;
+    let riquezas = this.riqueza(linhatabela);
+    let retorno = `<div class="row">
+              <p><b>Riqueza:</b> ${riquezas.exemplos} (${riquezas.espaco === 0 ? '-' : riquezas.espaco + ' espaços'}) no valor de T$ ${linhatabela.valor}</p>
+              </div>`;
+    return retorno;
   }
 }
 
