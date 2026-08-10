@@ -2769,6 +2769,73 @@ export class AmeacaData {
         tesouros: 'Padrão',
         equipamentos: 'Gibão de peles, maça, símbolo sagrado de Kallyadranoch',
         referencia: Referencia.AMEACAS,
+        iniciativa: 4,
+        percepcao: 7,
+        sentidos: [],
+        defesa: 19,
+        fortitude: 10,
+        reflexos: 3,
+        vontade: 14,
+        vida: 60,
+        mana: 0,
+        deslocamento_terrestre: 9,
+        deslocamento_escavacao: 0,
+        atributo_forca: 1,
+        atributo_destreza: 1,
+        atributo_constituicao: 2,
+        atributo_inteligencia: 1,
+        atributo_sabedoria: 4,
+        atributo_carisma: 4,
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Maça',
+            acerto: 13,
+            dado_dano: '1d8',
+            dano: '13',
+            tipo_dano: 'impacto',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+        ataques_distancia: [],
+        habilidades: [
+          {
+            nome: 'Aura de Medo (Livre, 2 PM) ',
+            descricao:
+              'O clérigo de Kally gera uma aura de medo de 9m de raio que dura até o fim da cena. Todos os inimigos que entrem na aura ficam abalados até o fim da cena (Von CD 28 evita e a criatura fica imune a esta habilidade por um dia). ✨',
+          },
+          {
+            nome: 'Servos do Dragão (Completa, 2 PM) ',
+            descricao: 'O clérigo invoca 2d4+1 kobolds, (veja Acólito de Kally). ✨',
+          },
+          {
+            nome: 'Magias',
+            descricao: `Como um clérigo de Kallyadranoch de 9º nível (CD 28, limite de PM 9).
+              <ul>
+                <li>Comando (Padrão, 4 PM) No início do seu próximo turno, duas criaturas em alcance curto ficam caídas e não podem levantar-se até o início do seu turno seguinte (Von evita).<li>
+                <li>Controlar Fogo (Padrão, 3 PM) O clérigo chameja qualquer número de armas e ataques desarmados escolhidos em alcance curto. Até o fim da cena, essas armas causam +1d6 pontos de dano de fogo.</li>
+                <li>Escudo da Fé (Reação, 1 PM) Quando uma criatura em alcance curto sofre um ataque, ela recebe +2 na Defesa por 1 turno.</li>
+                <li>Perdição (Padrão, 3 PM) Criaturas escolhidas em alcance curto recebem –2 em testes de ataque e rolagens de dano até o fim da cena.</li>
+              </ul>
+              `,
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Intimidação',
+            valor: 9,
+          },
+          {
+            nome: 'Misticismo',
+            valor: 4,
+          },
+          {
+            nome: 'Religião',
+            valor: 9,
+          },
+        ],
       },
       {
         id: 225,
@@ -4538,6 +4605,44 @@ export class AmeacaData {
         tesouros: 'Nenhum',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_afogado.png',
+        iniciativa: 9,
+        percepcao: 6,
+        sentidos: [Sentido.VISAO_ESCURO],
+        defesa: 29,
+        fortitude: 19,
+        reflexos: 14,
+        vontade: 8,
+        vida: 60,
+        mana: 0,
+        deslocamento_terrestre: 6,
+        deslocamento_natacao: 9,
+        atributo_forca: 3,
+        atributo_destreza: 2,
+        atributo_constituicao: 3,
+        atributo_inteligencia: -1,
+        atributo_sabedoria: -1,
+        atributo_carisma: -1,
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Pancada',
+            acerto: 26,
+            dado_dano: '2d6',
+            dano: '18 mais 2d8 ácido',
+            tipo_dano: 'impacto',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Aura de Medo (Livre, 2 PM) ',
+            descricao:
+              'No início de cada turno do afogado, cada criatura em um raio de 9m que não seja capaz de respirar na água deve fazer um teste de Fortitude (CD 24, +1 por teste anterior). Se falhar, a criatura se afoga. Uma criatura afogada desta forma fica inconsciente e perde 1d6 pontos de vida por rodada até sair da área.',
+          },
+        ],
       },
       {
         id: 359,
@@ -5522,6 +5627,53 @@ export class AmeacaData {
         tesouros: 'Filamentos corrosivos (CD 16 para extrair, valem T$ 10 para fabricar ácidos)',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        iniciativa: 5,
+        percepcao: 3,
+        sentidos: [Sentido.VISAO_ESCURO],
+        defesa: 15,
+        fortitude: 5,
+        reflexos: 10,
+        vontade: 1,
+        vida: 9,
+        mana: 0,
+        deslocamento_terrestre: 0,
+        deslocamento_natacao: 12,
+        atributo_forca: 0,
+        atributo_destreza: 3,
+        atributo_constituicao: 1,
+        atributo_inteligencia: -4,
+        atributo_sabedoria: 1,
+        atributo_carisma: -2,
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Tentáculo',
+            acerto: 11,
+            dado_dano: '1d6',
+            dano: '2 mais 1d6 ácido',
+            tipo_dano: 'impacto',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Corpo Aquático',
+            descricao:
+              'Fora d’água, a água-viva evapora e morre em 1d8 horas. Nesse tempo, qualquer criatura que tocar nela sofre 1d6 pontos de dano de ácido.',
+          },
+          {
+            nome: 'Mesclar-se',
+            descricao: 'Enquanto está submersa em água, a água-viva tem camuflagem leve',
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Furtividade',
+            valor: 7,
+          },
+        ],
       },
       {
         id: 439,
