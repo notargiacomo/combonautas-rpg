@@ -70,6 +70,9 @@
                       + {{ item.reflexos }},
                       <b>Von:</b>
                       + {{ item.vontade }},
+                      @for (imunidade of item.imunidades; track $index) {
+                        {{ ', ' + imunidade }}
+                      }
                     </p>
                     <p>
                       <b>Pontos de Vida:</b>

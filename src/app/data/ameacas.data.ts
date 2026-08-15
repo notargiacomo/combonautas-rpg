@@ -1589,6 +1589,87 @@ export class AmeacaData {
         tesouros: 'Padrão',
         equipamentos: 'Adaga, Capa Esvoaçante Aprimorada, Gazua, Manto Eclesiástico, Símbolo Sagrado de Hyninn',
         referencia: Referencia.AMEACAS,
+        iniciativa: 13,
+        percepcao: 13,
+        sentidos: [],
+        defesa: 30,
+        fortitude: 10,
+        reflexos: 15,
+        vontade: 19,
+        imunidades: ['imunidade a efeitos mentais'],
+        vida: 175,
+        mana: 60,
+        deslocamento_terrestre: 9,
+        deslocamento_escavacao: 0,
+        atributo_forca: 0,
+        atributo_destreza: 3,
+        atributo_constituicao: 1,
+        atributo_inteligencia: 1,
+        atributo_sabedoria: 5,
+        atributo_carisma: 4,
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Adaga',
+            acerto: 24,
+            dado_dano: '1d4',
+            dano: '12,19',
+            tipo_dano: 'perfuração',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+        ataques_distancia: [],
+        habilidades: [
+          {
+            nome: 'Bênção do Gatuno (Livre)',
+            descricao:
+              'Uma vez por cena, o alto sacerdote de Hyninn lança uma magia como uma ação livre, pagando seu custo normal.',
+          },
+          {
+            nome: 'Fé na Sorte (Reação) ',
+            descricao: 'Uma vez por rodada, quando sofre dano, o alto sacerdote reduz esse dano à metade.',
+          },
+          {
+            nome: 'Forma de Macaco (Completa, 2 PM)',
+            descricao:
+              'O alto sacerdote se transforma em um macaco. Ele adquire tamanho Minúsculo (+5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de escalada 9m. Seu equipamento desaparece (e ele perde seus benefícios) até voltar ao normal, mas suas outras estatísticas não são alteradas. A transformação dura indefinidamente, mas termina caso ele faça um ataque, lance uma magia ou sofra dano. ✨',
+          },
+          {
+            nome: 'Malandragem Divina (Livre, 1 PM)',
+            descricao: 'Quando faz um teste de perícia, o alto sacerdote usa Enganação no lugar da perícia original.',
+          },
+          {
+            nome: 'Magias',
+            descricao: `Como um clérigo de Hyninn de 8º nível (CD 28).
+              <ul>
+                <li>Arma Espiritual (Padrão, 6 PM) Até o fim da cena, o alto sacerdote recebe +2 na Defesa e, uma ver por rodada, quando sofre um ataque corpo a corpo, pode usar uma reação para causar 3d6 pontos de dano de corte no atacante.<li>
+                <li>Curar Ferimentos (Padrão, 8 PM) Uma criatura adjacente cura 9d8+9 PV.</li>
+                <li>Despedaçar (Padrão, 7 PM) Um alvo em alcance curto sofre 4d8+8 pontos de dano de impacto se for uma criatura, ou o dobro disso sem aplicar RD se for um construto ou um objeto mundano Pequeno, e fica atordoado (Fort reduz à metade e evita a condição). Uma criatura só pode ficar atordoada por esta magia uma vez por cena.</li>
+                <li>Enxame de Pestes (Completa, 7 PM, sustentada) Um enxame de palhaços em miniatura surge em alcance médio e ocupa um quadrado de 1,5m. No fim de cada um dos turnos do alto sacerdote, o enxame causa 4d12 pontos de dano de corte a qualquer criatura em seu espaço (Fort reduz à metade). O alto sacerdote pode gastar uma ação de movimento para mover o enxame 12m.</li>
+              </ul>
+              `,
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Enganação',
+            valor: 16,
+          },
+          {
+            nome: 'Furtividade',
+            valor: 13,
+          },
+          {
+            nome: 'Ladinagem',
+            valor: 14,
+          },
+          {
+            nome: 'Religião',
+            valor: 14,
+          },
+        ],
       },
       {
         id: 123,
@@ -2870,7 +2951,7 @@ export class AmeacaData {
           },
           {
             nome: 'Magias',
-            descricao: `Como um clérigo de Kallyadranoch de 9º nível (CD 28, limite de PM 9).
+            descricao: `Como um clérigo de Kallyadranoch de 5º nível (CD 19).
               <ul>
                 <li>Comando (Padrão, 4 PM) No início do seu próximo turno, duas criaturas em alcance curto ficam caídas e não podem levantar-se até o início do seu turno seguinte (Von evita).<li>
                 <li>Controlar Fogo (Padrão, 3 PM) O clérigo chameja qualquer número de armas e ataques desarmados escolhidos em alcance curto. Até o fim da cena, essas armas causam +1d6 pontos de dano de fogo.</li>
@@ -3070,7 +3151,7 @@ export class AmeacaData {
           },
           {
             nome: 'Magias',
-            descricao: `Como um clérigo de Kallyadranoch de 9º nível (CD 28, limite de PM 9).
+            descricao: `Como um clérigo de Kallyadranoch de 13º nível (CD 37).
               <ul>
                 <li>Coluna de Chamas (Padrão, 13 PM) Um cilindro de fogo sagrado com 3m de raio e 30m de altura desce dos céus em alcance longo, causando 13d6 pontos de dano de fogo mais 6d6 pontos de dano de luz nas criaturas e objetos livres na área.</li>
                 <li>Comando (Padrão, 8 PM) No início do seu próximo turno, quatro criaturas em alcance curto ficam caídas e não podem levantar-se até o início do seu turno seguinte (Von evita).<li>
@@ -6491,6 +6572,87 @@ export class AmeacaData {
         tesouros: 'Padrão',
         equipamentos: 'Adaga precisa, anel do escudo mental, manto pesado , meia armadura, símbolo sagrado de Tenebra',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_alto_sacerdote_finntroll.png',
+        iniciativa: 18,
+        percepcao: 17,
+        sentidos: [Sentido.VISAO_ESCURO],
+        defesa: 39,
+        fortitude: 19,
+        reflexos: 11,
+        vontade: 27,
+        imunidades: ['imunidade a magia de adivinhação e encantamento', 'redução de dano 5'],
+        vida: 413,
+        mana: 77,
+        deslocamento_terrestre: 6,
+        deslocamento_escavacao: 0,
+        atributo_forca: -1,
+        atributo_destreza: 3,
+        atributo_constituicao: 6,
+        atributo_inteligencia: 2,
+        atributo_sabedoria: 5,
+        atributo_carisma: 1,
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Adaga',
+            acerto: 27,
+            dado_dano: '1d4',
+            dano: '6',
+            tipo_dano: 'perfuração',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Arrogância Divina',
+            descricao:
+              'O alto sacerdote finntroll se considera a representação suprema da maior obra dos deuses. Criaturas que falhem em testes de resistência contra suas magias ficam frustradas.',
+          },
+          {
+            nome: 'Magia Acelerada (Livre, +4 PM)',
+            descricao:
+              'Uma vez por rodada, quando lança uma magia com execução de ação completa ou menor, o alto sacerdote muda a execução dela para livre.',
+          },
+          {
+            nome: 'Trevas Insidiosas',
+            descricao:
+              'O alto sacerdote soma sua Sabedoria em suas rolagens de dano de magias de trevas (já contabilizado).',
+          },
+          {
+            nome: 'Magias',
+            descricao: ` Como um clérigo de Tenebra de 15º nível (CD 35, limite de PM 15, –1 PM no custo de Toque Vampírico).
+              <ul>
+                <li>Curar Ferimentos (Padrão, 10 PM) Uma criatura adjacente cura 11d8+11 PV.</li>
+                <li>Ligação Sombria (Padrão, 10 PM) O alto sacerdote escolhe um alvo em alcance longo e cria uma conexão entre seu corpo e o desse alvo, deixando uma marca idêntica na pele de ambos. Enquanto a magia durar, sempre que ele sofrer qualquer dano ou condição, o alvo desta magia deve fazer um teste de Fortitude; se falhar, sofre o mesmo dano que o sacerdote ou recebe a mesma condição. A magia termina se o alvo chegar a 0 PV.<li>
+                <li>Pele de Pedra (Padrão, 10 PM) Uma criatura adjacente é transformada em uma estátua de pedra sem consciência por 1d4 rodadas (Fort evita).</li>
+                <li>Perdição (Padrão, 7 PM) Criaturas escolhidas em alcance curto sofrem –4 em testes de ataque e rolagens de dano.</li>
+                <li>Profanar (Padrão, 1 PM) Uma esfera de 9m em alcance longo se enche com energia negativa por 1 dia. Dentro dela, todo dano de trevas é maximizado.</li>
+                <li> Resistência a Energia (Padrão, 6 PM) Criaturas escolhidas em alcance curto recebem redução de ácido ou fogo 10 até o fim da cena.</li>
+                <li>Toque Vampírico (Padrão, 6 PM) O alto sacerdote faz um ataque corpo a corpo. Se acertar, além do dano normal, causa 8d6+5 pontos de dano de trevas (Fort reduz à metade) e recupera pontos de vida iguais à metade do dano de trevas causado.</li>
+              </ul>
+              `,
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Conhecimento',
+            valor: 17,
+          },
+          {
+            nome: 'Intimidação',
+            valor: 16,
+          },
+          {
+            nome: 'Misticismo',
+            valor: 17,
+          },
+          {
+            nome: 'Religião',
+            valor: 20,
+          },
+        ],
       },
       {
         id: 481,

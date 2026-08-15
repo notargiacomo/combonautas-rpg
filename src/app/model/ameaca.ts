@@ -20,6 +20,7 @@ export interface Ameaca {
   fortitude?: number;
   reflexos?: number;
   vontade?: number;
+  imunidades?: string[];
   vida?: number;
   mana?: number;
   deslocamento_terrestre?: number;
