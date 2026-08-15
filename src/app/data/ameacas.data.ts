@@ -255,6 +255,62 @@ export class AmeacaData {
         tesouros: '1d4 doses de veneno de aranha gigante (CD 17 para extrair, T$ 45 cada dose)',
         equipamentos: 'Nenhum',
         referencia: Referencia.BASICO,
+        iniciativa: 17,
+        percepcao: 3,
+        sentidos: [Sentido.VISAO_ESCURO],
+
+        defesa: 19,
+        fortitude: 8,
+        reflexos: 11,
+        vontade: 3,
+
+        imunidades: [],
+
+        vida: 77,
+        mana: 0,
+
+        deslocamento_terrestre: 12,
+        deslocamento_escalada: 12,
+
+        atributo_forca: 5,
+        atributo_destreza: 4,
+        atributo_constituicao: 1,
+        atributo_inteligencia: -5,
+        atributo_sabedoria: 0,
+        atributo_carisma: -4,
+
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Mordida',
+            acerto: 12,
+            dado_dano: '2d6',
+            dano: '5',
+            tipo_dano: 'perfuração',
+            alcance: 1.5,
+            conecta_habilidade: 'Veneno',
+          },
+        ],
+
+        habilidades: [
+          {
+            nome: 'Teia (Padrão)',
+            descricao:
+              'A aranha gigante dispara teia em um quadrado de 3m de lado em alcance curto. Criaturas na área ficam enredadas (Reflexos CD 18 evita). Uma criatura enredada pode se soltar com uma ação completa e um teste de Força ou Acrobacia (CD 20) ou cortar uma teia (cada espaço de 1,5m de teia tem 5 PV e RD 5). Fogo queima a teia em duas rodadas (liberta as criaturas), mas causa 1d6 pontos de dano de fogo por rodada a todas as criaturas nela. A aranha gigante também pode usar a teia para cobrir uma área quadrada com 6m de lado. Por sua semitransparência, a teia é difícil de ver (Percepção CD 20) até ser tarde demais. Uma criatura que entre na área fica enredada. A aranha pode andar na própria teia sem se enredar. Ela percebe automaticamente (como se tivesse percepção às cegas) qualquer criatura na teia.',
+          },
+          {
+            nome: 'Veneno',
+            descricao: 'Fortitude CD 18, efeito: fraqueza.',
+          },
+        ],
+
+        pericias: [
+          {
+            nome: 'Furtividade',
+            valor: 9,
+          },
+        ],
       },
       {
         id: 21,
@@ -580,6 +636,58 @@ export class AmeacaData {
         tesouros: 'Nenhum',
         equipamentos: 'Nenhum',
         referencia: Referencia.BASICO,
+        iniciativa: 10,
+        percepcao: 6,
+        sentidos: [Sentido.VISAO_ESCURO],
+
+        defesa: 23,
+        fortitude: 15,
+        reflexos: 17,
+        vontade: 11,
+
+        imunidades: ['incorpóreo'],
+
+        vida: 110,
+        mana: 0,
+
+        deslocamento_terrestre: 12,
+        deslocamento_escavacao: 0,
+
+        atributo_forca: -6,
+        atributo_destreza: 6,
+        atributo_constituicao: 0,
+        atributo_inteligencia: 0,
+        atributo_sabedoria: 2,
+        atributo_carisma: 2,
+
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Toque drenante',
+            acerto: 18,
+            dado_dano: '3d8',
+            dano: '6',
+            tipo_dano: 'trevas',
+            alcance: 1.5,
+            conecta_habilidade:
+              'Uma criatura viva atingida deve fazer um teste de Fortitude (CD 21). Se falhar, fica fraca e a aparição recebe 20 PV temporários cumulativos.',
+          },
+        ],
+
+        habilidades: [
+          {
+            nome: 'Vulnerabilidade à Luz do Dia',
+            descricao: 'Uma aparição exposta à luz solar fica debilitada.',
+          },
+        ],
+
+        pericias: [
+          {
+            nome: 'Furtividade',
+            valor: 15,
+          },
+        ],
       },
       {
         id: 48,
@@ -1007,7 +1115,7 @@ export class AmeacaData {
         mana: 0,
         deslocamento_terrestre: 9,
         deslocamento_natacao: 0,
-        atributo_forca: -5,
+        atributo_forca: -6,
         atributo_destreza: 7,
         atributo_constituicao: 2,
         atributo_inteligencia: -1,
@@ -2156,6 +2264,92 @@ export class AmeacaData {
         tesouros: '1 dose de éter elemental (frio) (CD 17 para extrair)',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_aquinne.png',
+
+        iniciativa: 4,
+        percepcao: 4,
+        sentidos: [Sentido.VISAO_ESCURO],
+
+        defesa: 18,
+        fortitude: 10,
+        reflexos: 7,
+        vontade: 3,
+
+        imunidades: [
+          'imunidade a acertos críticos',
+          'atordoado',
+          'cansaço',
+          'efeitos de metabolismo',
+          'frio',
+          'paralisia',
+          'vulnerabilidade a fogo',
+        ],
+
+        vida: 21,
+        mana: 0,
+
+        deslocamento_terrestre: 9,
+        deslocamento_natacao: 15,
+
+        atributo_forca: 4,
+        atributo_destreza: 2,
+        atributo_constituicao: 2,
+        atributo_inteligencia: -2,
+        atributo_sabedoria: 2,
+        atributo_carisma: -2,
+
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Tentáculo hídrico',
+            acerto: 13,
+            dado_dano: '2d4',
+            dano: '6',
+            tipo_dano: 'corte',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+
+        habilidades: [
+          {
+            nome: 'Afogar',
+            descricao: 'Uma criatura agarrada pelo aquin’ne é considerada submersa até se soltar.',
+          },
+          {
+            nome: 'Agarrar Aprimorado (Livre)',
+            descricao: 'Tentáculo hídrico (teste +13).',
+          },
+          {
+            nome: 'Redemoinho de Maresia (Padrão)',
+            descricao: 'O aquin’ne toma um objeto adjacente, que perde 5 PV (Ref CD 16 evita).',
+          },
+          {
+            nome: 'Familiar',
+            descricao:
+              'Um aquin’ne familiar concede deslocamento de natação 9m e permite lançar magias e respirar debaixo d’água.',
+          },
+        ],
+
+        pericias: [
+          {
+            nome: 'Atletismo',
+            valor: 6,
+          },
+          {
+            nome: 'Atletismo na água',
+            valor: 20,
+          },
+          {
+            nome: 'Furtividade',
+            valor: 4,
+          },
+          {
+            nome: 'Furtividade na água',
+            valor: 20,
+          },
+        ],
       },
       {
         id: 163,
@@ -5519,6 +5713,76 @@ export class AmeacaData {
         tesouros: 'Tomo do rancor',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_alzeras.png',
+
+        iniciativa: 18,
+        percepcao: 16,
+        sentidos: [Sentido.VISAO_ESCURO],
+
+        defesa: 29,
+        fortitude: 11,
+        reflexos: 18,
+        vontade: 24,
+
+        imunidades: ['imunidade a atordoado e medo', 'incorpóreo', 'resistência a magia +5'],
+
+        vida: 385,
+        mana: 130,
+
+        deslocamento_terrestre: 0,
+        deslocamento_escavacao: 0,
+
+        atributo_forca: -6,
+        atributo_destreza: 4,
+        atributo_constituicao: 2,
+        atributo_inteligencia: 6,
+        atributo_sabedoria: 2,
+        atributo_carisma: 3,
+
+        ataques_corpo: [],
+
+        habilidades: [
+          {
+            nome: 'Contramágica Aprimorada (Reação)',
+            descricao: 'Uma vez por rodada, o alzeras faz uma contramágica.',
+          },
+          {
+            nome: 'Conjuração Odiosa (Livre, 2 PM)',
+            descricao:
+              'Quando lança uma magia, o alzeras pode impregná-la com ódio. Criaturas que falhem na resistência contra a magia sofrem 4d8+4 pontos de dano de corte, impacto ou perfuração (à escolha do alzeras).',
+          },
+          {
+            nome: 'Magias',
+            descricao: `Como um mago de 13º nível (CD 33).
+        <ul>
+          <li>Amarras Etéreas (Padrão, 6 PM) Três laços de energia surgem e se enroscam em uma criatura em alcance médio, deixando-a agarrada (Ref evita). A vítima pode tentar se livrar, gastando uma ação padrão para fazer um teste de Atletismo. Se passar, destrói um laço, mais um laço adicional para cada 5 pontos pelos quais superou a CD. Cada laço também pode ser atacado e destruído (Defesa 10, 10 PV, RD 5 e imunidade a dano mágico). Um laço destruído causa 1d8+1 pontos de dano de essência na criatura amarrada. Se todos os laços forem destruídos, a magia é dissipada. Os laços afetam criaturas incorpóreas.</li>
+          <li>Armadura Arcana (Reação, 10 PM) Quando sofre um ataque, o alzeras recebe +9 na Defesa contra esse ataque.</li>
+          <li>Dissipar Magia (Padrão, 3 PM) O alzeras escolhe uma criatura, objeto ou esfera de 3m em alcance médio e faz um teste de Misticismo. Todas as magias nesse alvo com CD igual ou menor que o resultado do teste são dissipadas.</li>
+          <li>Imobilizar (Padrão, 6 PM) Até duas criaturas em alcance curto ficam paralisadas (Von muda para lenta). A cada rodada, a vítima pode gastar uma ação completa para fazer um novo teste de Vontade. Se passar, liberta-se do efeito.</li>
+          <li>Leque Cromático (Padrão, 6 PM) Criaturas em um cone de 4,5m ficam atordoadas por 1 rodada (apenas uma vez por cena, Von anula) e ofuscadas.</li>
+          <li>Marionete (Padrão, 10 PM, sustentada) O alzeras controla as ações físicas de uma criatura em alcance médio. Ao sofrer a magia, e no início de cada um de seus turnos, a vítima faz um teste de Fortitude. Se passar, a magia é anulada.</li>
+          <li>Raio do Enfraquecimento (Padrão, 8 PM) Criaturas escolhidas em alcance curto ficam exaustas (Fort muda para fatigado).</li>
+          <li>Selo de Mana (Padrão, 6 PM) Um selo mágico se manifesta em uma criatura adjacente até o fim da cena. Sempre que ela fizer qualquer ação que gaste PM, deve fazer um teste de Vontade. Se passar, a ação funciona. Se falhar, a ação não tem efeito, mas os PM são gastos mesmo assim.</li>
+          <li>Sussurros Insanos (Padrão, 3 PM) Um humanoide em alcance curto fica confuso (Von anula).</li>
+          <li>Teia (Padrão, 2 PM) O alzeras cria um cubo de terreno difícil de 6m em alcance curto. Criaturas na área, ou que comecem seu turno em seu interior, ficam enredadas e imóveis (Ref evita). Uma criatura pode se libertar com uma ação padrão e um teste de Acrobacia ou Atletismo.</li>
+        </ul>`,
+          },
+        ],
+
+        pericias: [
+          {
+            nome: 'Furtividade',
+            valor: 18,
+          },
+          {
+            nome: 'Intuição',
+            valor: 11,
+          },
+          {
+            nome: 'Misticismo',
+            valor: 25,
+          },
+        ],
       },
       {
         id: 405,
