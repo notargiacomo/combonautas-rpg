@@ -995,6 +995,64 @@ export class AmeacaData {
         tesouros: 'Nenhum',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_alma_acorrentada.png',
+        iniciativa: 14,
+        percepcao: 9,
+        sentidos: [Sentido.VISAO_ESCURO],
+        defesa: 26,
+        fortitude: 14,
+        reflexos: 19,
+        vontade: 8,
+        vida: 56,
+        mana: 0,
+        deslocamento_terrestre: 9,
+        deslocamento_natacao: 0,
+        atributo_forca: -5,
+        atributo_destreza: 7,
+        atributo_constituicao: 2,
+        atributo_inteligencia: -1,
+        atributo_sabedoria: 0,
+        atributo_carisma: -2,
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Toque Cáustico',
+            acerto: 26,
+            dado_dano: '2d6',
+            dano: '+10',
+            tipo_dano: 'ácido',
+            alcance: 1.5,
+            conecta_habilidade: 'Agarrar Oportunista (Livre) ',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Agarrar Oportunista (Livre) ',
+            descricao:
+              'Quando a alma acorrentada acerta um ataque, pode usar a manobra agarrar (teste +28). Contra uma criatura agarrada, a alma é consideradan corpórea. Se a alma matar uma criatura que esteja agarrando, ambas desaparecerão.',
+          },
+          {
+            nome: 'Aura Cáustica',
+            descricao:
+              'No início de cada turno da alma, todas as criaturas adjacentes à alma acorrentada sofrem 6d6 pontos de dano de ácido. Uma criatura que morra dentro da aura cáustica não pode ser trazida de volta à vida.',
+          },
+          {
+            nome: 'Invisibilidade Rubra',
+            descricao:
+              'A alma tem camuflagem total em áreas de Tormenta. Quando ela ataca, essa camuflagem muda para leve até o início de seu próximo turno.',
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Furtividade',
+            valor: 15,
+          },
+          {
+            nome: 'Furtividade em áreas de Tormenta',
+            valor: 25,
+          },
+        ],
       },
       {
         id: 82,
@@ -2947,6 +3005,103 @@ export class AmeacaData {
         tesouros: 'Padrão',
         equipamentos: 'Lança de arremesso, meia armadura, símbolo sagrado de Kallyadranoch. ',
         referencia: Referencia.AMEACAS,
+        iniciativa: 10,
+        percepcao: 17,
+        sentidos: [],
+        defesa: 40,
+        fortitude: 20,
+        reflexos: 13,
+        vontade: 26,
+        vida: 455,
+        mana: 72,
+        deslocamento_terrestre: 6,
+        deslocamento_escavacao: 0,
+        deslocamento_voo: 6,
+        atributo_forca: 2,
+        atributo_destreza: 0,
+        atributo_constituicao: 3,
+        atributo_inteligencia: 1,
+        atributo_sabedoria: 7,
+        atributo_carisma: 3,
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Lança',
+            acerto: 35,
+            dado_dano: '1d6',
+            dano: '23, 19, mais 1d6 fogo',
+            tipo_dano: 'perfuração',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+        ataques_distancia: [
+          {
+            numero_ataques: 1,
+            tipo: 'Arremesso',
+            nome: 'Lança',
+            acerto: 35,
+            dado_dano: '1d6',
+            dano: '23, 19, mais 1d6 fogo',
+            tipo_dano: 'perfuração',
+            alcance: 9,
+            conecta_habilidade: '',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Aura de Medo (Livre, 2 PM) ',
+            descricao:
+              'O clérigo de Kally gera uma aura de medo de 9m de raio que dura até o fim da cena. Todos os inimigos que entrem na aura ficam abalados até o fim da cena (Von CD 37 evita e a criatura fica imune a esta habilidade por um dia). ✨',
+          },
+          {
+            nome: 'Magia Acelerada (Livre, +4 PM)',
+            descricao:
+              'Uma vez por rodada, quando lança uma magia com execução de ação completa ou menor, o clérigo muda a execução dela para livre.',
+          },
+          {
+            nome: 'Poder Ilimitado! (Livre, 3 PM)',
+            descricao: 'Quando lança uma magia sustentada, o alto clérigo muda a duração dela para cena.',
+          },
+          {
+            nome: 'Servos do Dragão (Completa, 2 PM) ',
+            descricao: 'O clérigo invoca 2d4+1 kobolds, (veja Acólito de Kally). ✨',
+          },
+          {
+            nome: 'Magias',
+            descricao: `Como um clérigo de Kallyadranoch de 9º nível (CD 28, limite de PM 9).
+              <ul>
+                <li>Coluna de Chamas (Padrão, 13 PM) Um cilindro de fogo sagrado com 3m de raio e 30m de altura desce dos céus em alcance longo, causando 13d6 pontos de dano de fogo mais 6d6 pontos de dano de luz nas criaturas e objetos livres na área.</li>
+                <li>Comando (Padrão, 8 PM) No início do seu próximo turno, quatro criaturas em alcance curto ficam caídas e não podem levantar-se até o início do seu turno seguinte (Von evita).<li>
+                <li>Controlar Fogo (Padrão, 3 PM) O clérigo chameja qualquer número de armas e ataques desarmados escolhidos em alcance curto. Até o fim da cena, essas armas causam +1d6 pontos de dano de fogo.</li>
+                <li>Escudo da Fé (Reação, 1 PM) Quando uma criatura em alcance curto sofre um ataque, ela recebe +2 na Defesa por 1 turno.</li>
+                <li>Manto do Cruzado (Padrão, 10 PM, sustentada) Criaturas escolhidas em alcance curto sofrem 4d8 pontos de dano de trevas no início de cada um de seus turnos. O alto clérigo cura metade de todo dano causado pela magia.</li>
+                <li>Oração (Padrão, 7 PM, sustentada) O clérigo e seus aliados em alcance curto recebem +4 em testes de perícia e rolagens de dano, e todos seus inimigos em alcance curto sofrem –4 em testes de perícia e rolagens de dano. Esse efeito é cumulativo com outras magias.</li>
+                <li>Potência Divina (Padrão, 6 PM, sustentada) O tamanho do alto clérigo aumenta uma categoria e ele recebe Força +4 e RD 10. Ele não pode lançar magias enquanto estiver sob efeito de Potência Divina.</li>
+                <li>Proteção Divina (Reação, 3 PM) Por uma rodada, uma criatura em alcance curto recebe +5 no próximo teste de resistência que fizer.</li>
+              </ul>
+              `,
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Intimidação',
+            valor: 15,
+          },
+          {
+            nome: 'Intuição',
+            valor: 17,
+          },
+          {
+            nome: 'Misticismo',
+            valor: 11,
+          },
+          {
+            nome: 'Religião',
+            valor: 19,
+          },
+        ],
       },
       {
         id: 227,
@@ -3225,6 +3380,88 @@ export class AmeacaData {
         tesouros: 'Nenhum',
         equipamentos: 'Gibão de peles, tetsubo aumentado de matéria vermelha',
         referencia: Referencia.AMEACAS,
+        iniciativa: 9,
+        percepcao: 14,
+        sentidos: [Sentido.VISAO_PENUMBRA],
+        defesa: 35,
+        fortitude: 21,
+        reflexos: 16,
+        vontade: 9,
+        vida: 360,
+        mana: 0,
+        deslocamento_terrestre: 9,
+        deslocamento_natacao: 0,
+        atributo_forca: 7,
+        atributo_destreza: 1,
+        atributo_constituicao: 4,
+        atributo_inteligencia: -1,
+        atributo_sabedoria: 1,
+        atributo_carisma: -4,
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Tetsubo',
+            acerto: 28,
+            dado_dano: '1d12',
+            dano: '18, x3 mais 1d6 matéria vermelha',
+            tipo_dano: 'impacto',
+            alcance: 1.5,
+            conecta_habilidade: 'Ataque Pesado (Livre)',
+          },
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Pinças',
+            acerto: 28,
+            dado_dano: '1d4',
+            dano: '13',
+            tipo_dano: 'corte',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Chifre',
+            acerto: 28,
+            dado_dano: '1d6',
+            dano: '13',
+            tipo_dano: 'perfuração',
+            alcance: 1.5,
+            conecta_habilidade: 'Doença',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Ataque Pesado (Livre)',
+            descricao:
+              'Quando acerta um ataque de tetsubo, o aka oni faz a manobra derrubar ou empurrar contra o alvo (teste +30).',
+          },
+          {
+            nome: 'Avesso à Honra',
+            descricao:
+              'Os ataques do oni causam +1d10 pontos de dano de trevas contra devotos de Lin-Wu e personagens que sigam algum código de conduta (como Código de Honra ou Código do Herói).',
+          },
+          {
+            nome: 'Doença',
+            descricao: 'Uma criatura atingida pelos chifres do oni é exposta à doença infecção escarlate',
+          },
+          {
+            nome: 'Insanidade da Tormenta',
+            descricao: '2d6 PM (Von CD 28 evita)',
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Atletismo',
+            valor: 15,
+          },
+          {
+            nome: 'Intimidação',
+            valor: 11,
+          },
+        ],
       },
       {
         id: 250,
@@ -5698,6 +5935,53 @@ export class AmeacaData {
         tesouros: 'Filamentos corrosivos (CD 23 para extrair, valem T$ 120 para fabricar ácidos)',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        iniciativa: 11,
+        percepcao: 7,
+        sentidos: [Sentido.VISAO_ESCURO],
+        defesa: 33,
+        fortitude: 15,
+        reflexos: 21,
+        vontade: 8,
+        vida: 320,
+        mana: 0,
+        deslocamento_terrestre: 0,
+        deslocamento_natacao: 12,
+        atributo_forca: 0,
+        atributo_destreza: 4,
+        atributo_constituicao: 3,
+        atributo_inteligencia: -4,
+        atributo_sabedoria: 1,
+        atributo_carisma: -3,
+        ataques_corpo: [
+          {
+            numero_ataques: 2,
+            tipo: 'Corpo a Corpo',
+            nome: 'Tentáculo',
+            acerto: 26,
+            dado_dano: '3d6',
+            dano: '22 mais 3d6 ácido',
+            tipo_dano: 'impacto',
+            alcance: 3,
+            conecta_habilidade: '',
+          },
+        ],
+        habilidades: [
+          {
+            nome: 'Corpo Aquático',
+            descricao:
+              'Fora d’água, a água-viva evapora e morre em 1d8 horas. Nesse tempo, qualquer criatura que tocar nela sofre 3d6 pontos de dano de ácido.',
+          },
+          {
+            nome: 'Mesclar-se',
+            descricao: 'Enquanto está submersa em água, a água-viva tem camuflagem leve',
+          },
+        ],
+        pericias: [
+          {
+            nome: 'Furtividade',
+            valor: 12,
+          },
+        ],
       },
       {
         id: 441,
