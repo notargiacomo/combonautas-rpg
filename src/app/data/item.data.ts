@@ -27011,7 +27011,6 @@ export class ItemData {
           Chave.MUNICAO_FLECHA,
           Chave.TIPO_DANO_PERFURACAO,
         ],
-        imagem: 'assets/img/item_arma_arco_longo.png',
         referencias: Referencia.AVENTURA_GUERRA_ARTONIANA,
         paginas: '41',
         tipo: TipoItem.ARMA,
