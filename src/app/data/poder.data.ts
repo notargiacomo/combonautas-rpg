@@ -174,7 +174,7 @@ export class PoderData {
         ids_poder_pai: [13],
         nome: 'Ataque Preciso',
         descricao:
-          'Se estiver empunhando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e +1 no multiplicador de crítico',
+          'Se estiver empunhando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e +1 no multiplicador de crítico. Pré-requisito: Estilo de Uma Arma',
         prerequisito: 'Pré-requisito: Estilo de Uma Arma',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -185,7 +185,7 @@ export class PoderData {
         ids_poder_pai: [8],
         nome: 'Bloqueio com Escudo',
         descricao:
-          'Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo',
+          'Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo. Pré-requisito: Estilo de Arma e Escudo',
         prerequisito: 'Pré-requisito: Estilo de Arma e Escudo',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -207,7 +207,7 @@ export class PoderData {
         ids_poder_pai: [16],
         nome: 'Carga de Cavalaria',
         descricao:
-          'Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento',
+          'Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento. Pré-requisito: Ginete',
         prerequisito: 'Pré-requisito: Ginete',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -229,7 +229,7 @@ export class PoderData {
         ids_poder_pai: [18],
         nome: 'Derrubar Aprimorado',
         descricao:
-          'Você recebe +2 em testes de ataque para derrubar. Quando derruba uma criatura com essa manobra, pode gastar 1 PM para fazer um ataque extra contra ela',
+          'Você recebe +2 em testes de ataque para derrubar. Quando derruba uma criatura com essa manobra, pode gastar 1 PM para fazer um ataque extra contra ela. Pré-requisito: Combate Defensivo.',
         prerequisito: 'Pré-requisito: Combate Defensivo',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -261,7 +261,7 @@ export class PoderData {
         ids_poder_pai: [4, 21],
         nome: 'Disparo Preciso',
         descricao:
-          'Você pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem sofrer a penalidade de –5 no teste de ataque',
+          'Você pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem sofrer a penalidade de –5 no teste de ataque. Pré-requisito: Estilo de Disparo ou Estilo de Arremesso',
         prerequisito: 'Pré-requisito: Estilo de Disparo ou Estilo de Arremesso',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -272,7 +272,7 @@ export class PoderData {
         ids_poder_pai: [21],
         nome: 'Disparo Rápido',
         descricao:
-          'Se estiver empunhando uma arma de disparo que possa recarregar como ação livre e gastar uma ação completa para agredir, pode fazer um ataque adicional com ela. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno',
+          'Se estiver empunhando uma arma de disparo que possa recarregar como ação livre e gastar uma ação completa para agredir, pode fazer um ataque adicional com ela. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Pré-requisitos: Des 1, Estilo de Disparo',
         prerequisito: 'Pré-requisitos: Des 1, Estilo de Disparo',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -284,7 +284,7 @@ export class PoderData {
         id: 24,
         nome: 'Empunhadura Poderosa',
         descricao:
-          'Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, usar uma arma de uma categoria de tamanho maior impõe –5 nos testes de ataque)',
+          'Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, usar uma arma de uma categoria de tamanho maior impõe –5 nos testes de ataque). Pré-requisito: For 3',
         prerequisito: 'Pré-requisito: For 3',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 3,
@@ -305,7 +305,7 @@ export class PoderData {
         ids_poder_pai: [25],
         nome: 'Encouraçado',
         descricao:
-          'Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito',
+          'Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito. Pré-requisito: proficiência com armaduras pesadas.',
         prerequisito: 'Pré-requisito: proficiência com armaduras pesadas',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -314,7 +314,7 @@ export class PoderData {
       {
         id: 27,
         nome: 'Esquiva',
-        descricao: 'Você recebe +2 na Defesa e Reflexos',
+        descricao: 'Você recebe +2 na Defesa e Reflexos. Pré-requisito: Des 1',
         prerequisito: 'Pré-requisito: Des 1',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -326,7 +326,7 @@ export class PoderData {
         id: 28,
         nome: 'Estilo de Arma Longa',
         descricao:
-          'Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas',
+          'Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas. Pré-requisitos: For 1, treinado em Luta',
         prerequisito: 'Pré-requisitos: For 1, treinado em Luta',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -339,7 +339,7 @@ export class PoderData {
         id: 29,
         nome: 'Estilo Desarmado',
         descricao:
-          'Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades)',
+          'Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades). Pré-requisito: treinado em Luta',
         prerequisito: 'Pré-requisito: treinado em Luta',
         prerequisito_pericia: ['Luta'],
         referencias: Referencia.BASICO,
@@ -350,7 +350,8 @@ export class PoderData {
         id: 30,
         ids_poder_pai: [26],
         nome: 'Inexpugnável',
-        descricao: 'Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência',
+        descricao:
+          'Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência. Pré-requisitos: Encouraçado, 6º nível de personagem',
         prerequisito: 'Pré-requisitos: Encouraçado, 6º nível de personagem',
         prerequisito_nivel: 6,
         referencias: Referencia.BASICO,
@@ -361,7 +362,8 @@ export class PoderData {
         id: 31,
         ids_poder_pai: [26],
         nome: 'Fanático',
-        descricao: 'Seu deslocamento não é reduzido por usar armaduras pesadas. ',
+        descricao:
+          'Seu deslocamento não é reduzido por usar armaduras pesadas. Pré-requisitos: 12º nível de personagem, Encouraçado. ',
         prerequisito: 'Pré-requisitos: 12º nível de personagem, Encouraçado',
         prerequisito_nivel: 12,
         referencias: Referencia.BASICO,
@@ -371,7 +373,8 @@ export class PoderData {
       {
         id: 32,
         nome: 'Finta Aprimorada',
-        descricao: 'Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento',
+        descricao:
+          'Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento. Pré-requisitos: treinado em Enganação.',
         prerequisito: 'Pré-requisitos: treinado em Enganação',
         prerequisito_pericia: ['Enganação'],
         referencias: Referencia.BASICO,
@@ -391,7 +394,7 @@ export class PoderData {
         ids_poder_pai: [34],
         nome: 'Foco em Arma',
         descricao:
-          'Escolha uma arma. Você recebe +2 em testes de ataque com essa arma. Você pode escolher este poder outras vezes para armas diferentes',
+          'Escolha uma arma. Você recebe +2 em testes de ataque com essa arma. Você pode escolher este poder outras vezes para armas diferentes. Pré-requisito: proficiência com a arma.',
         prerequisito: 'Pré-requisito: proficiência com a arma',
         referencias: Referencia.BASICO,
         paginas: '128',
@@ -402,7 +405,7 @@ export class PoderData {
         ids_poder_pai: [22],
         nome: 'Mira Apurada',
         descricao:
-          'Quando usa a ação mirar, você recebe +2 em testes de ataque e na margem de ameaça com ataques à distância até o fim do turno',
+          'Quando usa a ação mirar, você recebe +2 em testes de ataque e na margem de ameaça com ataques à distância até o fim do turno. Pré-requisitos: Sab 1, Disparo Preciso',
         prerequisito: 'Pré-requisitos: Sab 1, Disparo Preciso',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -415,7 +418,7 @@ export class PoderData {
         ids_poder_pai: [29],
         nome: 'Piqueiro',
         descricao:
-          'Uma vez por rodada, se estiver empunhando uma arma alongada e um inimigo entrar voluntariamente em seu alcance corpo a corpo, você pode gastar 1 PM para fazer um ataque corpo a corpo contra este oponente com esta arma. Se o oponente tiver se aproximado fazendo uma investida, seu ataque causa dois dados de dano extra do mesmo tipo',
+          'Uma vez por rodada, se estiver empunhando uma arma alongada e um inimigo entrar voluntariamente em seu alcance corpo a corpo, você pode gastar 1 PM para fazer um ataque corpo a corpo contra este oponente com esta arma. Se o oponente tiver se aproximado fazendo uma investida, seu ataque causa dois dados de dano extra do mesmo tipo. Pré-requisito: Estilo de Arma Longa',
         prerequisito: 'Pré-requisito: Estilo de Arma Longa',
         referencias: Referencia.BASICO,
         paginas: '128',
@@ -425,7 +428,7 @@ export class PoderData {
         id: 37,
         nome: 'Presença Aterradora',
         descricao:
-          'Você pode gastar uma ação padrão e 1 PM para assustar todas as criaturas a sua escolha em alcance curto. Veja a perícia Intimidação para as regras de assustar',
+          'Você pode gastar uma ação padrão e 1 PM para assustar todas as criaturas a sua escolha em alcance curto. Veja a perícia Intimidação para as regras de assustar. Pré-requisito: treinado em Intimidação.',
         prerequisito: 'Pré-requisito: treinado em Intimidação',
         prerequisito_pericia: ['Intimidação'],
         referencias: Referencia.BASICO,
@@ -437,7 +440,7 @@ export class PoderData {
         ids_poder_pai: [12],
         nome: 'Quebrar Aprimorado',
         descricao:
-          'Você recebe +2 em testes de ataque para quebrar. Quando reduz os PV de uma arma para 0 ou menos, você pode gastar 1 PM para realizar um ataque extra contra o usuário dela. O ataque adicional usa os mesmos valores de ataque e dano, mas os dados devem ser rolados novamente',
+          'Você recebe +2 em testes de ataque para quebrar. Quando reduz os PV de uma arma para 0 ou menos, você pode gastar 1 PM para realizar um ataque extra contra o usuário dela. O ataque adicional usa os mesmos valores de ataque e dano, mas os dados devem ser rolados novamente. Pré-requisito: Ataque Poderoso.',
         prerequisito: 'Pré-requisito: Ataque Poderoso',
         referencias: Referencia.BASICO,
         paginas: '129',
@@ -446,7 +449,8 @@ export class PoderData {
       {
         id: 39,
         nome: 'Reflexos de Combate',
-        descricao: 'Você ganha uma ação de movimento extra no seu primeiro turno de cada combate',
+        descricao:
+          'Você ganha uma ação de movimento extra no seu primeiro turno de cada combate. Pré-requisito: Des 1.',
         prerequisito: 'Pré-requisito: Des 1',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -458,7 +462,7 @@ export class PoderData {
         id: 40,
         nome: 'Saque Rápido',
         descricao:
-          'Você recebe +2 em Iniciativa e pode sacar ou guardar itens como uma ação livre (em vez de ação de movimento). Além disso, a ação que você gasta para recarregar armas de disparo diminui em uma categoria (ação completa para padrão, padrão para movimento, movimento para livre)',
+          'Você recebe +2 em Iniciativa e pode sacar ou guardar itens como uma ação livre (em vez de ação de movimento). Além disso, a ação que você gasta para recarregar armas de disparo diminui em uma categoria (ação completa para padrão, padrão para movimento, movimento para livre). Pré-requisito: treinado em Iniciativa.',
         prerequisito: 'Pré-requisito: treinado em Iniciativa',
         prerequisito_pericia: ['Iniciativa'],
         referencias: Referencia.BASICO,
@@ -470,7 +474,7 @@ export class PoderData {
         ids_poder_pai: [12],
         nome: 'Trespassar',
         descricao:
-          'Quando você faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance',
+          'Quando você faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance. Pré-requisito: Ataque Poderoso.',
         prerequisito: 'Pré-requisito: Ataque Poderoso',
         referencias: Referencia.BASICO,
         paginas: '129',
@@ -479,7 +483,7 @@ export class PoderData {
       {
         id: 42,
         nome: 'Vitalidade',
-        descricao: 'Você recebe +1 PV por nível de personagem e +2 em Fortitude',
+        descricao: 'Você recebe +1 PV por nível de personagem e +2 em Fortitude. Pré-requisito: Con 1.',
         prerequisito: 'Pré-requisito: Con 1',
         prerequisito_atributo_nome: Atributo.CONSTITUICAO,
         prerequisito_atributo_valor: 1,
@@ -495,7 +499,7 @@ export class PoderData {
         id: 43,
         nome: 'Acrobático',
         descricao:
-          'Você pode usar sua Destreza em vez de Força em testes de Atletismo. Além disso, terreno difícil não reduz seu deslocamento nem o impede de realizar investidas',
+          'Você pode usar sua Destreza em vez de Força em testes de Atletismo. Além disso, terreno difícil não reduz seu deslocamento nem o impede de realizar investidas. Pré-requisito: Des 2.',
         prerequisito: 'Pré-requisito: Des 2',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 2,
@@ -570,7 +574,7 @@ export class PoderData {
         </div>
         </div>
       </div>
-        Os bônus não são cumulativos (os bônus em atributos e perícias devem ser aplicados num atributo ou perícia diferente a cada vez). Se você utilizar voluntariamente qualquer item mágico (exceto poções), perde o benefício deste poder até o fim da aventura. Você ainda pode lançar magias, receber magias benéficas ou beneficiar-se de itens usados por outros — por exemplo, pode “ir de carona” em um tapete voador, mas não pode você mesmo conduzi-lo.
+        Os bônus não são cumulativos (os bônus em atributos e perícias devem ser aplicados num atributo ou perícia diferente a cada vez). Se você utilizar voluntariamente qualquer item mágico (exceto poções), perde o benefício deste poder até o fim da aventura. Você ainda pode lançar magias, receber magias benéficas ou beneficiar-se de itens usados por outros — por exemplo, pode “ir de carona” em um tapete voador, mas não pode você mesmo conduzi-lo. Pré-requisito: 6º nível de personagem.
       `,
         prerequisito: 'Pré-requisito: 6º nível de personagem',
         prerequisito_nivel: 6,
@@ -582,7 +586,7 @@ export class PoderData {
         id: 45,
         nome: 'Aparência Inofensiva',
         descricao:
-          'A primeira criatura inteligente (Int –3 ou maior) que atacar você em uma cena deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Este poder só funciona uma vez por cena; independentemente de a criatura falhar ou não no teste, poderá atacá-lo nas rodadas seguintes',
+          'A primeira criatura inteligente (Int –3 ou maior) que atacar você em uma cena deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Este poder só funciona uma vez por cena; independentemente de a criatura falhar ou não no teste, poderá atacá-lo nas rodadas seguintes. Pré-requisito: Car 1',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -593,7 +597,7 @@ export class PoderData {
       {
         id: 46,
         nome: 'Atlético',
-        descricao: 'Você recebe +2 em Atletismo e +3m em seu deslocamento',
+        descricao: 'Você recebe +2 em Atletismo e +3m em seu deslocamento. Pré-requisito: For 2.',
         prerequisito: 'Pré-requisito: For 2',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 2,
@@ -605,7 +609,7 @@ export class PoderData {
         id: 47,
         nome: 'Atraente',
         descricao:
-          'Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você',
+          'Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você. Pré-requisito: Car 1.',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -617,7 +621,7 @@ export class PoderData {
         id: 48,
         nome: 'Comandar',
         descricao:
-          'Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena',
+          'Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena. Pré-requisito: Car 1',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -628,7 +632,8 @@ export class PoderData {
       {
         id: 49,
         nome: 'Costas Largas',
-        descricao: 'Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional',
+        descricao:
+          'Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional. Pré-requisito: Con 1, For 1',
         prerequisito: 'Pré-requisito: Con 1, For 1',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -1460,7 +1465,7 @@ export class PoderData {
       {
         id: 137,
         nome: 'Teurgista Místico',
-        descricao: `Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (se você for um conjurador arcano) ou entre magias arcanas (se for um conjurador divino).`,
+        descricao: `Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (se você for um conjurador arcano) ou entre magias arcanas (se for um conjurador divino). Pré-requisito: habilidade de classe Magias.`,
         prerequisito: 'Pré-requisito: habilidade de classe Magias',
         prerequisito_habilidade: ['Magia'],
         id_deuses: [20],
@@ -2339,7 +2344,7 @@ export class PoderData {
       {
         id: 150,
         nome: 'Armamento Aberrante',
-        descricao: `Você pode gastar uma ação de movimento e 1 PM para produzir uma versão orgânica de qualquer arma corpo a corpo ou de arremesso com a qual seja proficiente — ela brota do seu braço, ombro ou costas como uma planta grotesca e então se desprende. O dano da arma aumenta em um passo para cada dois outros poderes da Tormenta que você possui. A arma dura pela cena, então se desfaz numa poça de gosma.`,
+        descricao: `Você pode gastar uma ação de movimento e 1 PM para produzir uma versão orgânica de qualquer arma corpo a corpo ou de arremesso com a qual seja proficiente — ela brota do seu braço, ombro ou costas como uma planta grotesca e então se desprende. O dano da arma aumenta em um passo para cada dois outros poderes da Tormenta que você possui. A arma dura pela cena, então se desfaz numa poça de gosma. Pré-requisito: outro poder da Tormenta.`,
         prerequisito: 'Pré-requisito: outro poder da Tormenta',
         prerequisito_habilidade: [TipoPoder.PODER_TORMENTA],
         prerequisito_numero_habilidade_tormenta: 1,
@@ -2350,7 +2355,7 @@ export class PoderData {
       {
         id: 151,
         nome: 'Asas Insetoides',
-        descricao: `Você pode gastar 1 PM para receber deslocamento de voo 9m até o fim do seu turno. O deslocamento aumenta em +1,5m para cada outro poder da Tormenta que você possui.`,
+        descricao: `Você pode gastar 1 PM para receber deslocamento de voo 9m até o fim do seu turno. O deslocamento aumenta em +1,5m para cada outro poder da Tormenta que você possui. Pré-requisitos: quatro outros poderes da Tormenta.`,
         prerequisito: 'Pré-requisitos: quatro outros poderes da Tormenta',
         prerequisito_habilidade: [TipoPoder.PODER_TORMENTA],
         prerequisito_numero_habilidade_tormenta: 4,
@@ -2370,7 +2375,7 @@ export class PoderData {
       {
         id: 153,
         nome: 'Corpo Aberrante',
-        descricao: `Crostas vermelhas em várias partes de seu corpo tornam seus ataques mais perigosos. Seu dano desarmado aumenta em um passo, mais um passo para cada quatro outros poderes da Tormenta que você possui.`,
+        descricao: `Crostas vermelhas em várias partes de seu corpo tornam seus ataques mais perigosos. Seu dano desarmado aumenta em um passo, mais um passo para cada quatro outros poderes da Tormenta que você possui. Pré-requisito: outro poder da Tormenta.`,
         prerequisito: 'Pré-requisito: outro poder da Tormenta',
         referencias: Referencia.BASICO,
         prerequisito_habilidade: [TipoPoder.PODER_TORMENTA],
@@ -2399,7 +2404,7 @@ export class PoderData {
       {
         id: 156,
         nome: 'Desprezar a Realidade',
-        descricao: `Você pode gastar 2 PM para ficar no limiar da realidade até o início de seu próximo turno. Nesse estado, você ignora terreno difícil e causa 20% de chance de falha em efeitos usados contra você (não apenas ataques). Para cada dois outros poderes de Tormenta que você possuir, essa chance aumenta em 5% (máximo de 50%).`,
+        descricao: `Você pode gastar 2 PM para ficar no limiar da realidade até o início de seu próximo turno. Nesse estado, você ignora terreno difícil e causa 20% de chance de falha em efeitos usados contra você (não apenas ataques). Para cada dois outros poderes de Tormenta que você possuir, essa chance aumenta em 5% (máximo de 50%). Pré-requisito: quatro outros poderes da Tormenta.`,
         prerequisito: 'Pré-requisito: quatro outros poderes da Tormenta',
         prerequisito_habilidade: [TipoPoder.PODER_TORMENTA],
         prerequisito_numero_habilidade_tormenta: 4,
@@ -2430,7 +2435,7 @@ export class PoderData {
         id: 159,
         nome: 'Larva Explosiva',
         ids_poder_pai: [155],
-        descricao: `Se uma criatura que tenha sofrido dano de sua mordida nesta cena for reduzida a 0 ou menos PV, ela explode em chuva cáustica, morrendo e causando 4d4 pontos de dano de ácido em criaturas adjacentes. Para cada dois outros poderes da Tormenta que você possui, o dano aumenta em +2d4. Você é imune a esse dano. `,
+        descricao: `Se uma criatura que tenha sofrido dano de sua mordida nesta cena for reduzida a 0 ou menos PV, ela explode em chuva cáustica, morrendo e causando 4d4 pontos de dano de ácido em criaturas adjacentes. Para cada dois outros poderes da Tormenta que você possui, o dano aumenta em +2d4. Você é imune a esse dano. Pré-requisito: Dentes Afiados.`,
         prerequisito: 'Pré-requisito: Dentes Afiados',
         e_poder_magico: true,
         fator_tormenta: 2,
@@ -2442,7 +2447,7 @@ export class PoderData {
         id: 160,
         nome: 'Legião Aberrante',
         ids_poder_pai: [146],
-        descricao: `Seu corpo se transforma em uma massa de insetos rubros. Você pode atravessar qualquer espaço por onde seja possível passar uma moeda (mas considera esses espaços como terreno difícil) e recebe +1 em testes contra manobras de combate e de resistência contra efeitos que tenham você como alvo (mas não efeitos de área). Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui. `,
+        descricao: `Seu corpo se transforma em uma massa de insetos rubros. Você pode atravessar qualquer espaço por onde seja possível passar uma moeda (mas considera esses espaços como terreno difícil) e recebe +1 em testes contra manobras de combate e de resistência contra efeitos que tenham você como alvo (mas não efeitos de área). Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui. 'Pré-requisito: Anatomia Insana, três outros poderes da Tormenta.`,
         prerequisito: 'Pré-requisito: Anatomia Insana, três outros poderes da Tormenta',
         prerequisito_habilidade: [TipoPoder.PODER_TORMENTA],
         prerequisito_numero_habilidade_tormenta: 3,
@@ -2472,7 +2477,7 @@ export class PoderData {
       {
         id: 163,
         nome: 'Membros Extras',
-        descricao: `Você possui duas armas naturais de patas insetoides que saem de suas costas, ombros ou flancos. Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 2 PM para fazer um ataque corpo a corpo extra com cada uma (dano 1d4, crítico x2, corte). Se possuir Ambidestria ou Estilo de Duas Armas, pode empunhar armas leves em suas patas insetoides (mas ainda precisa pagar 2 PM para atacar com elas e sofre a penalidade de –2 em todos os ataques).`,
+        descricao: `Você possui duas armas naturais de patas insetoides que saem de suas costas, ombros ou flancos. Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 2 PM para fazer um ataque corpo a corpo extra com cada uma (dano 1d4, crítico x2, corte). Se possuir Ambidestria ou Estilo de Duas Armas, pode empunhar armas leves em suas patas insetoides (mas ainda precisa pagar 2 PM para atacar com elas e sofre a penalidade de –2 em todos os ataques). Pré-requisitos: quatro outros poderes da Tormenta.`,
         prerequisito: 'Pré-requisitos: quatro outros poderes da Tormenta',
         prerequisito_habilidade: [TipoPoder.PODER_TORMENTA],
         prerequisito_numero_habilidade_tormenta: 4,
@@ -20593,15 +20598,6 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         tipo: TipoPoder.PODER_COMBATE,
         referencias: Referencia.HEROIS,
         paginas: '79',
-      },
-      {
-        id: 1207,
-        nome: `Alma Livre`,
-        descricao: `<p>Arton tem muitas maravilhas a serem exploradas, muitos caminhos a serem percorridos — e você não é louco de se prender a um só. Escolha uma classe. Você pode escolher um poder dessa classe como se pertencesse a ela (para efeitos de nível na classe desse poder, considere seu nível de personagem −4). Note que você não recebe o poder, apenas o direito de escolhê-lo mais tarde.</p>`,
-        prerequisito: ``,
-        tipo: TipoPoder.PODER_COMBATE,
-        referencias: Referencia.HEROIS,
-        paginas: '80',
       },
       {
         id: 1208,
