@@ -33,4 +33,44 @@ export class AmeacasComponent implements OnInit {
 
     return resultado;
   }
+
+  montandoParteArma(arma: {
+    numero_ataques?: number;
+    tipo?: string;
+    nome?: string;
+    acerto?: number;
+    multiplicador_critico?: number;
+    margem_ameaca?: number;
+    dado_dano?: string;
+    dano?: string;
+    tipo_dano?: string;
+    dano_extra?: string;
+    alcance?: number;
+    conecta_habilidade?: string;
+  }): any {
+    if (arma.margem_ameaca && arma.multiplicador_critico) {
+      return arma.margem_ameaca + '/x' + arma.multiplicador_critico + ', ';
+    } else if (arma.margem_ameaca) {
+      return arma.margem_ameaca + ', ';
+    } else if (arma.multiplicador_critico) {
+      return 'x' + arma.multiplicador_critico + ', ';
+    } else return '';
+  }
+
+  montandoDanoExtra(arma: {
+    numero_ataques?: number;
+    tipo?: string;
+    nome?: string;
+    acerto?: number;
+    multiplicador_critico?: number;
+    margem_ameaca?: number;
+    dado_dano?: string;
+    dano?: string;
+    tipo_dano?: string;
+    dano_extra?: string;
+    alcance?: number;
+    conecta_habilidade?: string;
+  }): any {
+    return arma.dano_extra ? ', ' + arma.dano_extra : '';
+  }
 }

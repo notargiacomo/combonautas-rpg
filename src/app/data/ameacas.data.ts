@@ -1187,7 +1187,7 @@ export class AmeacaData {
             nome: 'Toque Cáustico',
             acerto: 26,
             dado_dano: '2d6',
-            dano: '+10',
+            dano: '10',
             tipo_dano: 'ácido',
             alcance: 1.5,
             conecta_habilidade: 'Agarrar Oportunista (Livre) ',
@@ -1781,7 +1781,8 @@ export class AmeacaData {
             nome: 'Adaga',
             acerto: 24,
             dado_dano: '1d4',
-            dano: '12,19',
+            dano: '12',
+            margem_ameaca: 19,
             tipo_dano: 'perfuração',
             alcance: 1.5,
             conecta_habilidade: '',
@@ -3364,7 +3365,9 @@ export class AmeacaData {
             nome: 'Lança',
             acerto: 35,
             dado_dano: '1d6',
-            dano: '23, 19, mais 1d6 fogo',
+            dano: '23',
+            margem_ameaca: 19,
+            dano_extra: 'mais 1d6 fogo',
             tipo_dano: 'perfuração',
             alcance: 1.5,
             conecta_habilidade: '',
@@ -3377,7 +3380,9 @@ export class AmeacaData {
             nome: 'Lança',
             acerto: 35,
             dado_dano: '1d6',
-            dano: '23, 19, mais 1d6 fogo',
+            dano: '23',
+            margem_ameaca: 19,
+            dano_extra: 'mais 1d6 fogo',
             tipo_dano: 'perfuração',
             alcance: 9,
             conecta_habilidade: '',
@@ -5027,6 +5032,58 @@ export class AmeacaData {
           '2d4 protuberâncias ósseas (CD 23 para extrair, cada protuberância vale T$ 100 para fabricar armas corpo a corpo superiores)',
         equipamentos: 'Nenhum',
         referencia: Referencia.AMEACAS,
+        iniciativa: 5,
+        percepcao: 6,
+        sentidos: ['faro', 'visão na penumbra'],
+
+        defesa: 35,
+        fortitude: 21,
+        reflexos: 15,
+        vontade: 8,
+
+        imunidades: [],
+
+        vida: 310,
+        mana: 0,
+
+        deslocamento_terrestre: 9,
+        deslocamento_escavacao: 0,
+
+        atributo_forca: 8,
+        atributo_destreza: 1,
+        atributo_constituicao: 4,
+        atributo_inteligencia: -4,
+        atributo_sabedoria: -2,
+        atributo_carisma: -1,
+
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Cauda',
+            acerto: 26,
+            dado_dano: '2d10',
+            dano: '24, x3',
+            tipo_dano: 'impacto',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+
+        habilidades: [
+          {
+            nome: 'Cauda Espinhosa',
+            descricao:
+              'Quando faz um acerto crítico em uma criatura com sua cauda, o armento de burafontes deixa a vítima sangrando.',
+          },
+          {
+            nome: 'Postura Protetora (Movimento)',
+            descricao:
+              'O armento forma um círculo para proteger seus filhotes, mantendo suas caudas voltadas para fora. Enquanto essa postura estiver ativa, o armento não pode se deslocar, mas pode golpear todas as criaturas ao seu redor. Ele faz um único ataque de cauda e compara o resultado com a Defesa de cada criatura ao seu alcance.',
+          },
+        ],
+
+        pericias: [],
       },
       {
         id: 347,
@@ -5201,8 +5258,9 @@ export class AmeacaData {
             nome: 'Pancada',
             acerto: 26,
             dado_dano: '2d6',
-            dano: '18 mais 2d8 ácido',
+            dano: '18',
             tipo_dano: 'impacto',
+            dano_extra: 'mais 2d8 ácido',
             alcance: 1.5,
             conecta_habilidade: '',
           },
@@ -5239,6 +5297,100 @@ export class AmeacaData {
         tesouros: 'Padrão',
         equipamentos: 'Armadura de couro, balas x20, machado de batalha, mosquete certeiro, símbolo sagrado de Tenebra',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_armeiro_de_tenebra_devoto.png',
+        iniciativa: 7,
+        percepcao: 8,
+        sentidos: [Sentido.VISAO_ESCURO],
+
+        defesa: 26,
+        fortitude: 12,
+        reflexos: 6,
+        vontade: 18,
+
+        imunidades: ['imunidade a trevas'],
+
+        vida: 220,
+        mana: 0,
+
+        deslocamento_terrestre: 6,
+        deslocamento_escavacao: 0,
+
+        atributo_forca: 0,
+        atributo_destreza: 0,
+        atributo_constituicao: 5,
+        atributo_inteligencia: 1,
+        atributo_sabedoria: 3,
+        atributo_carisma: -2,
+
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Machado de batalha',
+            acerto: 20,
+            dado_dano: '1d8',
+            dano: 'x3',
+            tipo_dano: 'corte',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+
+        ataques_distancia: [
+          {
+            numero_ataques: 1,
+            tipo: 'À Distância',
+            nome: 'Mosquete',
+            acerto: 20,
+            dado_dano: '2d8',
+            dano: '12',
+            margem_ameaca: 18,
+            multiplicador_critico: 3,
+            dano_extra: 'mais 8d6 trevas',
+            tipo_dano: 'perfuração',
+            alcance: 18,
+            conecta_habilidade: '',
+          },
+        ],
+
+        habilidades: [
+          {
+            nome: 'Disparo Preciso',
+            descricao:
+              'O armeiro de Tenebra devoto pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem a penalidade padrão de –5 no teste de ataque.',
+          },
+          {
+            nome: 'Manto da Penumbra (Padrão)',
+            descricao:
+              'Uma vez por cena, o armeiro pode gerar uma área de sombras como o efeito básico da magia Escuridão (CD 22). ✨',
+          },
+          {
+            nome: 'Mira Apurada (Movimento)',
+            descricao:
+              'O armeiro recebe +2 em testes de ataque e na margem de ameaça com ataques à distância até o fim do turno.',
+          },
+          {
+            nome: 'Pacto da Pólvora',
+            descricao:
+              'Quando causa dano de trevas com seu mosquete, o armeiro recupera uma quantidade de pontos de vida igual à metade do dano de trevas causado.',
+          },
+          {
+            nome: 'Saque Rápido',
+            descricao:
+              'O armeiro pode sacar ou guardar itens como uma ação livre e recarregar seu mosquete como uma ação de movimento.',
+          },
+        ],
+
+        pericias: [
+          {
+            nome: 'Percepção em Subterrâneo',
+            valor: 10,
+          },
+          {
+            nome: 'Ofício (armeiro)',
+            valor: 9,
+          },
+        ],
       },
       {
         id: 361,
@@ -5252,6 +5404,110 @@ export class AmeacaData {
         equipamentos:
           'Balas x20, capa pesada, cota de malha, machado de batalha, mosquete certeiro, símbolo sagrado de Tenebra',
         referencia: Referencia.AMEACAS,
+        imagem: 'assets/img/ameaca_armeiro_de_tenebra_clerigo.png',
+
+        iniciativa: 10,
+        percepcao: 13,
+        sentidos: [Sentido.VISAO_ESCURO],
+
+        defesa: 31,
+        fortitude: 15,
+        reflexos: 8,
+        vontade: 21,
+
+        imunidades: ['imunidade a trevas trevas'],
+
+        vida: 210,
+        mana: 45,
+
+        deslocamento_terrestre: 6,
+        deslocamento_escavacao: 0,
+
+        atributo_forca: 1,
+        atributo_destreza: 0,
+        atributo_constituicao: 5,
+        atributo_inteligencia: 1,
+        atributo_sabedoria: 5,
+        atributo_carisma: -2,
+
+        ataques_corpo: [
+          {
+            numero_ataques: 1,
+            tipo: 'Corpo a Corpo',
+            nome: 'Machado de batalha',
+            acerto: 24,
+            dado_dano: '1d8',
+            dano: '1, x3',
+            tipo_dano: 'corte',
+            alcance: 1.5,
+            conecta_habilidade: '',
+          },
+        ],
+
+        ataques_distancia: [
+          {
+            numero_ataques: 1,
+            tipo: 'À Distância',
+            nome: 'Mosquete',
+            acerto: 24,
+            dado_dano: '2d8',
+            dano: '16, 18/x3, mais 8d6 trevas',
+            tipo_dano: 'perefuração',
+            alcance: 18,
+            conecta_habilidade: '',
+          },
+        ],
+
+        habilidades: [
+          {
+            nome: 'Disparo Preciso',
+            descricao:
+              'O armeiro de Tenebra clérigo pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem a penalidade padrão de –5 no teste de ataque.',
+          },
+          {
+            nome: 'Pacto da Pólvora',
+            descricao:
+              'Quando causa dano de trevas com seu mosquete, o armeiro recupera uma quantidade de PV igual à metade do dano de trevas causado.',
+          },
+          {
+            nome: 'Saque Rápido',
+            descricao:
+              'O armeiro pode sacar ou guardar itens como uma ação livre e recarregar seu mosquete como uma ação de movimento.',
+          },
+          {
+            nome: 'Visão nas Trevas',
+            descricao: 'O armeiro enxerga no escuro mesmo em magias de escuridão.',
+          },
+          {
+            nome: 'Magias',
+            descricao: `Como um clérigo de Tenebra de 8º nível (CD 28).
+        <ul>
+          <li>Arma Mágica (Padrão, 8 PM) Até o fim da cena, uma arma adjacente se torna mágica, fornecendo +2 nos testes de ataque e rolagens de dano e +2d6 pontos de dano de frio.</li>
+          <li>Curar Ferimentos (Padrão, 8 PM) Uma criatura adjacente cura 9d8+9 PV.</li>
+          <li>Escudo da Fé (Reação, 8 PM) Quando uma criatura em alcance curto sofre um ataque, ela recebe +5 na Defesa contra ataques à distância até seu próximo turno.</li>
+          <li>Miasma Mefítico (Padrão, 7 PM) Uma nuvem de 6m de raio se forma em alcance médio. Criaturas na área sofrem 7d6 pontos de dano de ácido e ficam enjoadas por 1 rodada (Fort reduz à metade e evita a condição).</li>
+        </ul>`,
+          },
+        ],
+
+        pericias: [
+          {
+            nome: 'Percepção em Subterrâneo',
+            valor: 15,
+          },
+          {
+            nome: 'Misticismo',
+            valor: 9,
+          },
+          {
+            nome: 'Ofício (armeiro)',
+            valor: 11,
+          },
+          {
+            nome: 'Religião',
+            valor: 13,
+          },
+        ],
       },
       {
         id: 362,
@@ -5650,7 +5906,8 @@ export class AmeacaData {
             nome: 'Adaga',
             acerto: 13,
             dado_dano: '1d4',
-            dano: '2, 19',
+            dano: '2',
+            margem_ameaca: 19,
             tipo_dano: 'perfuração',
             alcance: 1.5,
             conecta_habilidade: '',
@@ -5727,7 +5984,8 @@ export class AmeacaData {
             nome: 'Adaga',
             acerto: 31,
             dado_dano: '1d4',
-            dano: '2, 19',
+            dano: '2',
+            margem_ameaca: 19,
             tipo_dano: '',
             alcance: 1.5,
             conecta_habilidade: '',
@@ -6432,7 +6690,8 @@ export class AmeacaData {
             nome: 'Tentáculo',
             acerto: 11,
             dado_dano: '1d6',
-            dano: '2 mais 1d6 ácido',
+            dano: '2',
+            dano_extra: 'mais 1d6 ácido',
             tipo_dano: 'impacto',
             alcance: 1.5,
             conecta_habilidade: '',
@@ -6503,8 +6762,9 @@ export class AmeacaData {
             nome: 'Tentáculo',
             acerto: 26,
             dado_dano: '3d6',
-            dano: '22 mais 3d6 ácido',
+            dano: '22',
             tipo_dano: 'impacto',
+            dano_extra: ' mais 3d6 ácido',
             alcance: 3,
             conecta_habilidade: '',
           },
@@ -6917,7 +7177,7 @@ export class AmeacaData {
             acerto: 35,
             dado_dano: '1d8',
             dano: '2',
-            tipo_dano: '',
+            tipo_dano: 'corte',
             alcance: 1.5,
             conecta_habilidade: '',
           },

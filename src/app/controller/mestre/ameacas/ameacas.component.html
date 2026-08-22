@@ -120,12 +120,14 @@
                               corpo.dado_dano +
                               '+' +
                               corpo.dano +
-                              ' ' +
-                              corpo.tipo_dano +
-                              ') alcance ' +
-                              corpo.alcance +
-                              'm'
+                              ', '
                           }}
+                          {{ montandoParteArma(corpo) }}
+                          {{ corpo.tipo_dano }}
+
+                          {{ montandoDanoExtra(corpo) }}
+
+                          {{ ') alcance ' + corpo.alcance + 'm' }}
                           @if (corpo.conecta_habilidade.length > 0) {
                             {{ ' mais ' + corpo.conecta_habilidade }}
                           }
@@ -148,12 +150,14 @@
                               distancia.dado_dano +
                               '+' +
                               distancia.dano +
-                              ' ' +
-                              distancia.tipo_dano +
-                              ') alcance ' +
-                              distancia.alcance +
-                              'm'
+                              ', '
                           }}
+                          {{ montandoParteArma(distancia) }}
+                          {{ distancia.tipo_dano }}
+
+                          {{ montandoDanoExtra(distancia) }}
+
+                          {{ ') alcance ' + distancia.alcance + 'm' }}
                           @if (distancia.conecta_habilidade.length > 0) {
                             {{ ' mais ' + distancia.conecta_habilidade }}
                           }

@@ -39,9 +39,12 @@ export interface Ameaca {
     tipo?: string;
     nome?: string;
     acerto?: number;
+    multiplicador_critico?: number;
+    margem_ameaca?: number;
     dado_dano?: string;
     dano?: string;
     tipo_dano?: string;
+    dano_extra?: string;
     alcance?: number;
     conecta_habilidade?: string;
   }[];
@@ -50,9 +53,12 @@ export interface Ameaca {
     tipo?: string;
     nome?: string;
     acerto?: number;
+    multiplicador_critico?: number;
+    margem_ameaca?: number;
     dado_dano?: string;
     dano?: string;
     tipo_dano?: string;
+    dano_extra?: string;
     alcance?: number;
     conecta_habilidade?: string;
   }[];
