@@ -48,7 +48,8 @@ export class PoderData {
         id: 3,
         ids_poder_pai: [2],
         nome: 'Arma Secundária Grande',
-        descricao: 'Você pode empunhar duas armas de uma mão com o poder Estilo de Duas Armas',
+        descricao:
+          'Você pode empunhar duas armas de uma mão com o poder Estilo de Duas Armas. Pré-requisito: Estilo de Duas Armas.',
         prerequisito: 'Pré-requisito: Estilo de Duas Armas',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -4500,7 +4501,7 @@ export class PoderData {
       {
         id: 426,
         nome: 'Sede Sanguinária',
-        descricao: `Enquanto está em fúria, quando faz um acerto crítico ou reduz um inimigo a 0 PV ou menos você recupera 10 PV e 3 PM. Pré-requisitos: Sangue dos Inimigos, 5º nível de bárbaro.`,
+        descricao: `Enquanto está em fúria, quando faz um acerto crítico ou reduz um inimigo a 0 PV ou menos você recupera 10 PV e 2 PM. Pré-requisitos: Sangue dos Inimigos, 5º nível de bárbaro.`,
         tipo: TipoPoder.PODER_CLASSE,
         referencias: Referencia.BASICO,
         prerequisito_nivel: 5,
