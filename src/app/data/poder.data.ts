@@ -23,7 +23,7 @@ export class PoderData {
         id: 1,
         nome: 'Acuidade com Arma',
         descricao:
-          'Quando usa uma arma corpo a corpo leve ou uma arma de arremesso, você pode usar sua Destreza em vez de Força nos testes de ataque e rolagens de dano',
+          'Quando usa uma arma corpo a corpo leve ou uma arma de arremesso, você pode usar sua Destreza em vez de Força nos testes de ataque e rolagens de dano. Pré-requisito: Des 1',
         prerequisito: 'Pré-requisito: Des 1',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -35,7 +35,7 @@ export class PoderData {
         id: 2,
         nome: 'Estilo de Duas Armas',
         descricao:
-          'Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Se possuir Ambidestria, em vez disso não sofre penalidade para usá-lo',
+          'Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Se possuir Ambidestria, em vez disso não sofre penalidade para usá-lo. Pré-requisitos: Des 2, treinado em Luta.',
         prerequisito: 'Pré-requisitos: Des 2, treinado em Luta',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 2,
@@ -59,7 +59,7 @@ export class PoderData {
         id: 4,
         nome: 'Estilo de Arremesso',
         descricao:
-          'Você pode sacar armas de arremesso como uma ação livre e recebe +2 nas rolagens de dano com elas. Se também possuir o poder Saque Rápido, também recebe +2 nos testes de ataque com essas armas',
+          'Você pode sacar armas de arremesso como uma ação livre e recebe +2 nas rolagens de dano com elas. Se também possuir o poder Saque Rápido, também recebe +2 nos testes de ataque com essas armas. Pré-requisito: treinado em Pontaria.',
         prerequisito: 'Pré-requisito: treinado em Pontaria',
         prerequisito_pericia: ['Pontaria'],
         referencias: Referencia.BASICO,
@@ -71,7 +71,7 @@ export class PoderData {
         ids_poder_pai: [4],
         nome: 'Arremesso Potente',
         descricao:
-          'Quando usa uma arma de arremesso, você pode usar sua Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso',
+          'Quando usa uma arma de arremesso, você pode usar sua Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso. Pré-requisitos: For 1, Estilo de Arremesso.',
         prerequisito: 'Pré-requisitos: For 1, Estilo de Arremesso',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -84,7 +84,7 @@ export class PoderData {
         ids_poder_pai: [4],
         nome: 'Arremesso Múltiplo',
         descricao:
-          'Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso',
+          'Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso. Pré-requisitos: Des 1, Estilo de Arremesso.',
         prerequisito: 'Pré-requisitos: Des 1, Estilo de Arremesso',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -93,21 +93,13 @@ export class PoderData {
         tipo: TipoPoder.PODER_COMBATE,
       },
       {
-        id: 7,
-        nome: 'Proficiência com Escudos',
-        descricao: 'Você recebe essa proficiência com escudos',
-        referencias: Referencia.BASICO,
-        paginas: '129',
-        tipo: TipoPoder.PODER_COMBATE,
-      },
-      {
         id: 8,
-        ids_poder_pai: [7],
         nome: 'Estilo de Arma e Escudo',
         descricao:
-          'Se você estiver usando um escudo, o bônus na Defesa que ele fornece aumenta em +2. Pré-requisitos: treinado em Luta, proficiência com escudos',
+          'Se você estiver usando um escudo, o bônus na Defesa que ele fornece aumenta em +2. Pré-requisitos: treinado em Luta, proficiência com escudos. Pré-requisitos: treinado em Luta, proficiência com escudos.',
         prerequisito: 'Pré-requisitos: treinado em Luta, proficiência com escudos',
         prerequisito_pericia: ['Luta'],
+        prerequisito_proficiencia: ['escudos'],
         referencias: Referencia.BASICO,
         paginas: '129',
         tipo: TipoPoder.PODER_COMBATE,
@@ -117,7 +109,7 @@ export class PoderData {
         ids_poder_pai: [8],
         nome: 'Ataque com Escudo',
         descricao:
-          'Uma vez por rodada, se estiver empunhando um escudo e fizer a ação agredir, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com o escudo. Este ataque não faz você perder o bônus do escudo na Defesa',
+          'Uma vez por rodada, se estiver empunhando um escudo e fizer a ação agredir, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com o escudo. Este ataque não faz você perder o bônus do escudo na Defesa. Pré-requisito: Estilo de Arma e Escudo.',
         prerequisito: 'Pré-requisito: Estilo de Arma e Escudo',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -127,7 +119,7 @@ export class PoderData {
         id: 10,
         nome: 'Estilo de Duas Mãos',
         descricao:
-          'Se estiver usando uma arma corpo a corpo com as duas mãos, você recebe +5 nas rolagens de dano. Este poder não pode ser usado com armas leves',
+          'Se estiver usando uma arma corpo a corpo com as duas mãos, você recebe +5 nas rolagens de dano. Este poder não pode ser usado com armas leves. Pré-requisitos: For 2, Treinado em Luta.',
         prerequisito: 'Pré-requisitos: For 2, Treinado em Luta',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 2,
@@ -141,7 +133,7 @@ export class PoderData {
         ids_poder_pai: [10],
         nome: 'Ataque Pesado',
         descricao:
-          'Quando faz um ataque corpo a corpo com uma arma de duas mãos, você pode pagar 1 PM. Se fizer isso e acertar o ataque, além do dano você faz uma manobra derrubar ou empurrar contra o alvo como uma ação livre (use o resultado do ataque como o teste de manobra)',
+          'Quando faz um ataque corpo a corpo com uma arma de duas mãos, você pode pagar 1 PM. Se fizer isso e acertar o ataque, além do dano você faz uma manobra derrubar ou empurrar contra o alvo como uma ação livre (use o resultado do ataque como o teste de manobra). Pré-requisito: Estilo de Duas Mãos.',
         prerequisito: 'Pré-requisito: Estilo de Duas Mãos',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -151,7 +143,7 @@ export class PoderData {
         id: 12,
         nome: 'Ataque Poderoso',
         descricao:
-          'Sempre que faz um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na rolagem de dano',
+          'Sempre que faz um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na rolagem de dano. Pré-requisito: For 1.',
         prerequisito: 'Pré-requisito: For 1',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -163,7 +155,7 @@ export class PoderData {
         id: 13,
         nome: 'Estilo de Uma Arma',
         descricao:
-          'Se estiver usando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na Defesa e nos testes de ataque com essa arma (exceto ataques desarmados)',
+          'Se estiver usando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na Defesa e nos testes de ataque com essa arma (exceto ataques desarmados). Pré-requisito: treinado em Luta.',
         prerequisito: 'Pré-requisito: treinado em Luta',
         prerequisito_pericia: ['Luta'],
         referencias: Referencia.BASICO,
@@ -175,7 +167,7 @@ export class PoderData {
         ids_poder_pai: [13],
         nome: 'Ataque Preciso',
         descricao:
-          'Se estiver empunhando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e +1 no multiplicador de crítico. Pré-requisito: Estilo de Uma Arma',
+          'Se estiver empunhando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e +1 no multiplicador de crítico. Pré-requisito: Estilo de Uma Arma.',
         prerequisito: 'Pré-requisito: Estilo de Uma Arma',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -186,7 +178,7 @@ export class PoderData {
         ids_poder_pai: [8],
         nome: 'Bloqueio com Escudo',
         descricao:
-          'Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo. Pré-requisito: Estilo de Arma e Escudo',
+          'Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo. Pré-requisito: Estilo de Arma e Escudo.',
         prerequisito: 'Pré-requisito: Estilo de Arma e Escudo',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -196,7 +188,7 @@ export class PoderData {
         id: 16,
         nome: 'Ginete',
         descricao:
-          'Você passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano. Além disso, não sofre penalidades para atacar à distância ou lançar magias quando montado',
+          'Você passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano. Além disso, não sofre penalidades para atacar à distância ou lançar magias quando montado. Pré-requisito: treinado em Cavalgar.',
         prerequisito: 'Pré-requisito: treinado em Cavalgar',
         prerequisito_pericia: ['Cavalgar'],
         referencias: Referencia.BASICO,
@@ -208,7 +200,7 @@ export class PoderData {
         ids_poder_pai: [16],
         nome: 'Carga de Cavalaria',
         descricao:
-          'Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento. Pré-requisito: Ginete',
+          'Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento. Pré-requisito: Ginete.',
         prerequisito: 'Pré-requisito: Ginete',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -218,9 +210,10 @@ export class PoderData {
         id: 18,
         nome: 'Combate Defensivo',
         descricao:
-          'Quando usa a ação agredir, você pode usar este poder. Se fizer isso, até seu próximo turno, sofre –2 em todos os testes de ataque, mas recebe +5 na Defesa. Pré-requisito: Int 1',
-        prerequisito_atributo_nome: Atributo.INTELIGENCIA,
-        prerequisito_atributo_valor: 1,
+          'Quando usa a ação agredir, você pode usar este poder. Se fizer isso, até seu próximo turno, sofre –2 em todos os testes de ataque, mas recebe +5 na Defesa. Pré-requisito: Int 1.',
+        prerequisito: 'Pré-requisito: Int 1',
+        prerequisito_segundo_atributo_nome: Atributo.INTELIGENCIA,
+        prerequisito_segundo_atributo_valor: 1,
         referencias: Referencia.BASICO,
         paginas: '125',
         tipo: TipoPoder.PODER_COMBATE,
@@ -241,7 +234,7 @@ export class PoderData {
         ids_poder_pai: [18],
         nome: 'Desarmar Aprimorado',
         descricao:
-          'Você recebe +2 em testes de ataque para desarmar. Quando desarma uma criatura, pode gastar 1 PM para arremessar a arma dela para longe. Para definir onde a arma cai, role 1d8 para a direção (sendo “1” diretamente à sua frente, “2” à frente e à direita e assim por diante) e 1d6 para a distância (medida em quadrados de 1,5m a partir da criatura desarmada). Pré-requisito: Combate Defensivo',
+          'Você recebe +2 em testes de ataque para desarmar. Quando desarma uma criatura, pode gastar 1 PM para arremessar a arma dela para longe. Para definir onde a arma cai, role 1d8 para a direção (sendo “1” diretamente à sua frente, “2” à frente e à direita e assim por diante) e 1d6 para a distância (medida em quadrados de 1,5m a partir da criatura desarmada). Pré-requisito: Combate Defensivo.',
         prerequisito: 'Pré-requisito: Combate Defensivo',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -250,7 +243,8 @@ export class PoderData {
       {
         id: 21,
         nome: 'Estilo de Disparo',
-        descricao: 'Se estiver usando uma arma de disparo, você soma sua Destreza nas rolagens de dano',
+        descricao:
+          'Se estiver usando uma arma de disparo, você soma sua Destreza nas rolagens de dano. Pré-requisito: treinado em Pontaria.',
         prerequisito: 'Pré-requisito: treinado em Pontaria',
         prerequisito_pericia: ['Pontaria'],
         referencias: Referencia.BASICO,
@@ -262,7 +256,7 @@ export class PoderData {
         ids_poder_pai: [4, 21],
         nome: 'Disparo Preciso',
         descricao:
-          'Você pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem sofrer a penalidade de –5 no teste de ataque. Pré-requisito: Estilo de Disparo ou Estilo de Arremesso',
+          'Você pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem sofrer a penalidade de –5 no teste de ataque. Pré-requisito: Estilo de Disparo ou Estilo de Arremesso.',
         prerequisito: 'Pré-requisito: Estilo de Disparo ou Estilo de Arremesso',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -273,7 +267,7 @@ export class PoderData {
         ids_poder_pai: [21],
         nome: 'Disparo Rápido',
         descricao:
-          'Se estiver empunhando uma arma de disparo que possa recarregar como ação livre e gastar uma ação completa para agredir, pode fazer um ataque adicional com ela. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Pré-requisitos: Des 1, Estilo de Disparo',
+          'Se estiver empunhando uma arma de disparo que possa recarregar como ação livre e gastar uma ação completa para agredir, pode fazer um ataque adicional com ela. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Pré-requisitos: Des 1, Estilo de Disparo.',
         prerequisito: 'Pré-requisitos: Des 1, Estilo de Disparo',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -285,7 +279,7 @@ export class PoderData {
         id: 24,
         nome: 'Empunhadura Poderosa',
         descricao:
-          'Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, usar uma arma de uma categoria de tamanho maior impõe –5 nos testes de ataque). Pré-requisito: For 3',
+          'Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, usar uma arma de uma categoria de tamanho maior impõe –5 nos testes de ataque). Pré-requisito: For 3.',
         prerequisito: 'Pré-requisito: For 3',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 3,
@@ -294,20 +288,12 @@ export class PoderData {
         tipo: TipoPoder.PODER_COMBATE,
       },
       {
-        id: 25,
-        nome: 'Proficiência com Armaduras Pesadas',
-        descricao: 'Você recebe essa proficiência com Armaduras Pesadas',
-        referencias: Referencia.BASICO,
-        paginas: '129',
-        tipo: TipoPoder.PODER_COMBATE,
-      },
-      {
         id: 26,
-        ids_poder_pai: [25],
         nome: 'Encouraçado',
         descricao:
           'Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito. Pré-requisito: proficiência com armaduras pesadas.',
         prerequisito: 'Pré-requisito: proficiência com armaduras pesadas',
+        prerequisito_proficiencia: ['armaduras pesadas'],
         referencias: Referencia.BASICO,
         paginas: '125',
         tipo: TipoPoder.PODER_COMBATE,
@@ -315,7 +301,7 @@ export class PoderData {
       {
         id: 27,
         nome: 'Esquiva',
-        descricao: 'Você recebe +2 na Defesa e Reflexos. Pré-requisito: Des 1',
+        descricao: 'Você recebe +2 na Defesa e Reflexos. Pré-requisito: Des 1.',
         prerequisito: 'Pré-requisito: Des 1',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -327,7 +313,7 @@ export class PoderData {
         id: 28,
         nome: 'Estilo de Arma Longa',
         descricao:
-          'Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas. Pré-requisitos: For 1, treinado em Luta',
+          'Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas. Pré-requisitos: For 1, treinado em Luta.',
         prerequisito: 'Pré-requisitos: For 1, treinado em Luta',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -340,7 +326,7 @@ export class PoderData {
         id: 29,
         nome: 'Estilo Desarmado',
         descricao:
-          'Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades). Pré-requisito: treinado em Luta',
+          'Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades). Pré-requisito: treinado em Luta.',
         prerequisito: 'Pré-requisito: treinado em Luta',
         prerequisito_pericia: ['Luta'],
         referencias: Referencia.BASICO,
@@ -352,7 +338,7 @@ export class PoderData {
         ids_poder_pai: [26],
         nome: 'Inexpugnável',
         descricao:
-          'Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência. Pré-requisitos: Encouraçado, 6º nível de personagem',
+          'Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência. Pré-requisitos: Encouraçado, 6º nível de personagem.',
         prerequisito: 'Pré-requisitos: Encouraçado, 6º nível de personagem',
         prerequisito_nivel: 6,
         referencias: Referencia.BASICO,
@@ -383,16 +369,7 @@ export class PoderData {
         tipo: TipoPoder.PODER_COMBATE,
       },
       {
-        id: 33,
-        nome: 'Proficiência com a Arma',
-        descricao: 'Você recebe essa proficiência com a Arma',
-        referencias: Referencia.BASICO,
-        paginas: '129',
-        tipo: TipoPoder.PODER_COMBATE,
-      },
-      {
         id: 34,
-        ids_poder_pai: [34],
         nome: 'Foco em Arma',
         descricao:
           'Escolha uma arma. Você recebe +2 em testes de ataque com essa arma. Você pode escolher este poder outras vezes para armas diferentes. Pré-requisito: proficiência com a arma.',
@@ -406,7 +383,7 @@ export class PoderData {
         ids_poder_pai: [22],
         nome: 'Mira Apurada',
         descricao:
-          'Quando usa a ação mirar, você recebe +2 em testes de ataque e na margem de ameaça com ataques à distância até o fim do turno. Pré-requisitos: Sab 1, Disparo Preciso',
+          'Quando usa a ação mirar, você recebe +2 em testes de ataque e na margem de ameaça com ataques à distância até o fim do turno. Pré-requisitos: Sab 1, Disparo Preciso.',
         prerequisito: 'Pré-requisitos: Sab 1, Disparo Preciso',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -419,7 +396,7 @@ export class PoderData {
         ids_poder_pai: [29],
         nome: 'Piqueiro',
         descricao:
-          'Uma vez por rodada, se estiver empunhando uma arma alongada e um inimigo entrar voluntariamente em seu alcance corpo a corpo, você pode gastar 1 PM para fazer um ataque corpo a corpo contra este oponente com esta arma. Se o oponente tiver se aproximado fazendo uma investida, seu ataque causa dois dados de dano extra do mesmo tipo. Pré-requisito: Estilo de Arma Longa',
+          'Uma vez por rodada, se estiver empunhando uma arma alongada e um inimigo entrar voluntariamente em seu alcance corpo a corpo, você pode gastar 1 PM para fazer um ataque corpo a corpo contra este oponente com esta arma. Se o oponente tiver se aproximado fazendo uma investida, seu ataque causa dois dados de dano extra do mesmo tipo. Pré-requisito: Estilo de Arma Longa.',
         prerequisito: 'Pré-requisito: Estilo de Arma Longa',
         referencias: Referencia.BASICO,
         paginas: '128',
@@ -494,7 +471,73 @@ export class PoderData {
       },
     ];
 
-    //** PODERES GERAIS DE DESTINO */
+    /** PODERES GERAIS DE DESTINO 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    */
     this.poderes.push(
       {
         id: 43,
@@ -622,7 +665,7 @@ export class PoderData {
         id: 48,
         nome: 'Comandar',
         descricao:
-          'Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena. Pré-requisito: Car 1',
+          'Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena. Pré-requisito: Car 1.',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -634,7 +677,7 @@ export class PoderData {
         id: 49,
         nome: 'Costas Largas',
         descricao:
-          'Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional. Pré-requisito: Con 1, For 1',
+          'Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional. Pré-requisito: Con 1, For 1.',
         prerequisito: 'Pré-requisito: Con 1, For 1',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -655,10 +698,9 @@ export class PoderData {
       },
       {
         id: 51,
-        ids_poder_pai: [50],
         nome: 'Foco em Perícia',
         descricao:
-          'Escolha uma perícia. Quando faz um teste dessa perícia, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Você pode escolher este poder outras vezes para perícias diferentes. Este poder não pode ser aplicado em Luta e Pontaria (mas veja Foco em Arma)',
+          'Escolha uma perícia. Quando faz um teste dessa perícia, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Você pode escolher este poder outras vezes para perícias diferentes. Este poder não pode ser aplicado em Luta e Pontaria (mas veja Foco em Arma). Pré-requisito: treinado na perícia escolhida.',
         prerequisito: 'Pré-requisito: treinado na perícia escolhida',
         referencias: Referencia.BASICO,
         paginas: '130',
@@ -668,7 +710,7 @@ export class PoderData {
         id: 52,
         nome: 'Inventário Organizado',
         descricao:
-          'Você soma sua Inteligência no limite de espaços que pode carregar. Para você, itens muito leves ou pequenos, que normalmente ocupam meio espaço, em vez disso ocupam 1/4 de espaço',
+          'Você soma sua Inteligência no limite de espaços que pode carregar. Para você, itens muito leves ou pequenos, que normalmente ocupam meio espaço, em vez disso ocupam 1/4 de espaço. Pré-requisito: Int 1.',
         prerequisito: 'Pré-requisito: Int 1',
         prerequisito_atributo_nome: Atributo.INTELIGENCIA,
         prerequisito_atributo_valor: 1,
@@ -679,7 +721,7 @@ export class PoderData {
       {
         id: 53,
         nome: 'Investigador',
-        descricao: 'Você recebe +2 em Investigação e soma sua Inteligência em Intuição',
+        descricao: 'Você recebe +2 em Investigação e soma sua Inteligência em Intuição. Pré-requisito: Int 1.',
         prerequisito: 'Pré-requisito: Int 1',
         prerequisito_atributo_nome: Atributo.INTELIGENCIA,
         prerequisito_atributo_valor: 1,
@@ -691,7 +733,7 @@ export class PoderData {
         id: 54,
         nome: 'Lobo Solitário',
         descricao:
-          'Você recebe +1 em testes de perícia e Defesa se estiver sem nenhum aliado em alcance curto. Você não sofre penalidade por usar Cura em si mesmo',
+          'Você recebe +1 em testes de perícia e Defesa se estiver sem nenhum aliado em alcance curto. Você não sofre penalidade por usar Cura em si mesmo.',
         referencias: Referencia.BASICO,
         paginas: '130',
         tipo: TipoPoder.PODER_DESTINO,
@@ -700,7 +742,7 @@ export class PoderData {
         id: 55,
         nome: 'Medicina',
         descricao:
-          'Você pode gastar uma ação completa para fazer um teste de Cura (CD 15) em uma criatura. Se você passar, ela recupera 1d6 PV, mais 1d6 para cada 5 pontos pelos quais o resultado do teste exceder a CD (2d6 com um resultado 20, 3d6 com um resultado 25 e assim por diante). Você só pode usar este poder uma vez por dia numa mesma criatura',
+          'Você pode gastar uma ação completa para fazer um teste de Cura (CD 15) em uma criatura. Se você passar, ela recupera 1d6 PV, mais 1d6 para cada 5 pontos pelos quais o resultado do teste exceder a CD (2d6 com um resultado 20, 3d6 com um resultado 25 e assim por diante). Você só pode usar este poder uma vez por dia numa mesma criatura. Pré-requisitos: Sab 1, treinado em Cura.',
         prerequisito: 'Pré-requisitos: Sab 1, treinado em Cura',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -713,11 +755,11 @@ export class PoderData {
         id: 56,
         nome: 'Parceiro',
         descricao:
-          'Você possui um parceiro animal ou humanoide que o acompanha em aventuras. Escolha os detalhes dele, como nome, aparência e personalidade. Em termos de jogo, é um parceiro iniciante de um tipo a sua escolha (veja a página 260). O parceiro obedece às suas ordens e se arrisca para ajudá-lo, mas, se for maltratado, pode parar de segui-lo (de acordo com o mestre). Se perder seu parceiro, você recebe outro no início da próxima aventura',
+          'Você possui um parceiro animal ou humanoide que o acompanha em aventuras. Escolha os detalhes dele, como nome, aparência e personalidade. Em termos de jogo, é um parceiro iniciante de um tipo a sua escolha (veja a página 260). O parceiro obedece às suas ordens e se arrisca para ajudá-lo, mas, se for maltratado, pode parar de segui-lo (de acordo com o mestre). Se perder seu parceiro, você recebe outro no início da próxima aventura. Pré-requisitos: treinado em Adestramento (parceiro animal) ou Diplomacia (parceiro humanoide), 5º nível de personagem.',
         prerequisito:
           'Pré-requisitos: treinado em Adestramento (parceiro animal) ou Diplomacia (parceiro humanoide), 5º nível de personagem',
         prerequisito_nivel: 5,
-        prerequisito_pericia: ['Adestramento', 'Diplomacia'],
+        prerequisito_pericia: ['Adestramento', 'ou', 'Diplomacia'],
         referencias: Referencia.BASICO,
         paginas: '130',
         tipo: TipoPoder.PODER_DESTINO,
@@ -726,7 +768,7 @@ export class PoderData {
         id: 57,
         nome: 'Sentidos Aguçados',
         descricao:
-          'Você recebe +2 em Percepção, não fica desprevenido contra inimigos que não possa ver e, sempre que erra um ataque devido a camuflagem, pode rolar mais uma vez o dado da chance de falha',
+          'Você recebe +2 em Percepção, não fica desprevenido contra inimigos que não possa ver e, sempre que erra um ataque devido a camuflagem, pode rolar mais uma vez o dado da chance de falha. Pré-requisitos: Sab 1, treinado em Percepção.',
         prerequisito: 'Pré-requisitos: Sab 1, treinado em Percepção',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -738,7 +780,7 @@ export class PoderData {
       {
         id: 58,
         nome: 'Sortudo',
-        descricao: 'Você pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste)',
+        descricao: 'Você pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste).',
         referencias: Referencia.BASICO,
         paginas: '131',
         tipo: TipoPoder.PODER_DESTINO,
@@ -746,7 +788,7 @@ export class PoderData {
       {
         id: 59,
         nome: 'Surto Heroico',
-        descricao: 'Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional',
+        descricao: 'Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.',
         referencias: Referencia.BASICO,
         paginas: '131',
         tipo: TipoPoder.PODER_DESTINO,
@@ -755,7 +797,7 @@ export class PoderData {
         id: 61,
         nome: 'Torcida',
         descricao:
-          'Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida” qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você',
+          'Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida” qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você. Pré-requisito: Car 1.',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -767,7 +809,7 @@ export class PoderData {
         id: 62,
         nome: 'Venefício',
         descricao:
-          'Quando usa um veneno, você não corre risco de se envenenar acidentalmente. Além disso, a CD para resistir aos seus venenos aumenta em +2',
+          'Quando usa um veneno, você não corre risco de se envenenar acidentalmente. Além disso, a CD para resistir aos seus venenos aumenta em +2. Pré-requisito: treinado em Ofício (alquimista).',
         prerequisito: 'Pré-requisito: treinado em Ofício (alquimista)',
         prerequisito_pericia: ['Ofício (alquimista)'],
         referencias: Referencia.BASICO,
@@ -777,7 +819,7 @@ export class PoderData {
       {
         id: 63,
         nome: 'Vontade de Ferro',
-        descricao: 'Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade',
+        descricao: 'Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade. Pré-requisito: Sab 1.',
         prerequisito: 'Pré-requisito: Sab 1',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -787,16 +829,63 @@ export class PoderData {
       }
     );
 
-    //** PODERES GERAIS DE MAGIA */
+    /** PODERES GERAIS DE MAGIA 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    */
     this.poderes.push(
       {
         id: 64,
         nome: 'Celebrar Ritual',
         descricao:
-          'Você pode lançar magias como rituais. Isso dobra seu limite de PM, mas muda a execução para 1 hora (ou o dobro, o que for maior) e exige um gasto de T$ 10 por PM gasto (em incensos, oferendas...). Assim, um arcanista de 8º nível pode lançar uma magia de 16 PM gastando T$ 160. Magias lançadas como rituais não podem ser armazenadas em itens',
+          'Você pode lançar magias como rituais. Isso dobra seu limite de PM, mas muda a execução para 1 hora (ou o dobro, o que for maior) e exige um gasto de T$ 10 por PM gasto (em incensos, oferendas...). Assim, um arcanista de 8º nível pode lançar uma magia de 16 PM gastando T$ 160. Magias lançadas como rituais não podem ser armazenadas em itens. Pré-requisitos: treinado em Misticismo ou Religião, 8º nível de personagem.',
         prerequisito: 'Pré-requisitos: treinado em Misticismo ou Religião, 8º nível de personagem',
         prerequisito_nivel: 8,
-        prerequisito_pericia: ['Misticismo', 'Religião'],
+        prerequisito_pericia: ['Misticismo', 'ou', 'Religião'],
         referencias: Referencia.BASICO,
         paginas: '131',
         tipo: TipoPoder.PODER_MAGIA,
@@ -805,7 +894,7 @@ export class PoderData {
         id: 65,
         nome: 'Escrever Pergaminho',
         descricao:
-          'Você pode usar a perícia Ofício (escriba) para fabricar pergaminhos com magias que conheça. Veja a página 121 para a regra de fabricar itens e as páginas 333 e 341 para as regras de pergaminhos. De acordo com o mestre, você pode usar objetos similares, como runas, tabuletas de argila etc',
+          'Você pode usar a perícia Ofício (escriba) para fabricar pergaminhos com magias que conheça. Veja a página 121 para a regra de fabricar itens e as páginas 333 e 341 para as regras de pergaminhos. De acordo com o mestre, você pode usar objetos similares, como runas, tabuletas de argila etc. Pré-requisitos: habilidade de classe Magias, treinado em Ofício (escriba).',
         prerequisito: 'Pré-requisitos: habilidade de classe Magias, treinado em Ofício (escriba)',
         prerequisito_pericia: ['Ofício (escriba)'],
         prerequisito_habilidade: ['Magia'],
@@ -817,7 +906,7 @@ export class PoderData {
         id: 66,
         nome: 'Foco em Magia',
         descricao:
-          'Escolha uma magia que possa lançar. Seu custo diminui em –1 PM (cumulativo com outras reduções de custo). Você pode escolher este poder outras vezes para magias diferentes',
+          'Escolha uma magia que possa lançar. Seu custo diminui em –1 PM (cumulativo com outras reduções de custo). Você pode escolher este poder outras vezes para magias diferentes.',
         referencias: Referencia.BASICO,
         paginas: '131',
         tipo: TipoPoder.PODER_MAGIA,
@@ -826,7 +915,7 @@ export class PoderData {
         id: 67,
         nome: 'Magia Acelerada',
         descricao:
-          'Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada. Custo: +4 PM',
+          'Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada. Custo: +4 PM. Pré-requisito: lançar magias de 2º círculo.',
         prerequisito: 'Pré-requisito: lançar magias de 2º círculo',
         e_aprimoramento: true,
         prerequisito_habilidade: ['Magia 2º círculo'],
@@ -838,7 +927,7 @@ export class PoderData {
         id: 68,
         nome: 'Magia Ampliada',
         descricao:
-          'Aumenta o alcance da magia em um passo (de curto para médio, de médio para longo) ou dobra a área de efeito da magia. Por exemplo, uma Bola de Fogo ampliada tem seu alcance aumentado para longo ou sua área aumentada para 12m de raio. Custo: +2 PM',
+          'Aumenta o alcance da magia em um passo (de curto para médio, de médio para longo) ou dobra a área de efeito da magia. Por exemplo, uma Bola de Fogo ampliada tem seu alcance aumentado para longo ou sua área aumentada para 12m de raio. Custo: +2 PM.',
         e_aprimoramento: true,
         referencias: Referencia.BASICO,
         paginas: '131',
@@ -848,7 +937,7 @@ export class PoderData {
         id: 69,
         nome: 'Magia Discreta',
         descricao:
-          'Você lança a magia sem gesticular e falar, usando apenas concentração. Isso permite lançar magias com as mãos presas, amordaçado etc. Também permite lançar magias arcanas usando armadura sem teste de Misticismo. Outros personagens só percebem que você lançou uma magia se passarem num teste de Misticismo (CD 20). Custo: +2 PM',
+          'Você lança a magia sem gesticular e falar, usando apenas concentração. Isso permite lançar magias com as mãos presas, amordaçado etc. Também permite lançar magias arcanas usando armadura sem teste de Misticismo. Outros personagens só percebem que você lançou uma magia se passarem num teste de Misticismo (CD 20). Custo: +2 PM.',
         e_aprimoramento: true,
         referencias: Referencia.BASICO,
         paginas: '131',
@@ -858,7 +947,7 @@ export class PoderData {
         id: 70,
         nome: 'Magia Ilimitada',
         descricao:
-          'Você soma seu atributo-chave no limite de PM que pode gastar numa magia. Por exemplo, um arcanista de 5º nível com Int 4 e este poder pode gastar até 9 PM em cada magia',
+          'Você soma seu atributo-chave no limite de PM que pode gastar numa magia. Por exemplo, um arcanista de 5º nível com Int 4 e este poder pode gastar até 9 PM em cada magia.',
         referencias: Referencia.BASICO,
         paginas: '131',
         tipo: TipoPoder.PODER_MAGIA,
@@ -867,7 +956,7 @@ export class PoderData {
         id: 71,
         nome: 'Preparar Poção',
         descricao:
-          'Você pode usar a perícia Ofício (alquimista) para fabricar poções com magias que conheça de 1º e 2º círculos. Veja a página 121 para a regra de fabricar itens e as páginas 333 e 341 para as regras de poções',
+          'Você pode usar a perícia Ofício (alquimista) para fabricar poções com magias que conheça de 1º e 2º círculos. Veja a página 121 para a regra de fabricar itens e as páginas 333 e 341 para as regras de poções. Pré-requisitos: habilidade de classe Magias, treinado em Ofício (alquimista).',
         prerequisito: 'Pré-requisitos: habilidade de classe Magias, treinado em Ofício (alquimista)',
         referencias: Referencia.BASICO,
         prerequisito_pericia: ['Ofício (alquimista)'],
@@ -877,7 +966,71 @@ export class PoderData {
       }
     );
 
-    //** PODERES GERAIS DE CONCEDIDO */
+    /** PODERES GERAIS DE CONCEDIDO 
+    // 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    */
     this.poderes.push(
       {
         id: 72,
@@ -2314,7 +2467,74 @@ export class PoderData {
         tipo: TipoPoder.PODER_CONCEDIDO,
       }
     );
-    //** PODERES GERAIS DE TORMENTA */
+    /** PODERES GERAIS DE TORMENTA 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    */
     this.poderes.push(
       {
         id: 147,
@@ -2543,7 +2763,104 @@ export class PoderData {
       }
     );
 
-    //** PODERES RACIAIS */
+    /** PODERES RACIAIS 
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    */
 
     this.poderes.push(
       {
@@ -4500,6 +4817,7 @@ export class PoderData {
       },
       {
         id: 426,
+        ids_poder_pai: [400],
         nome: 'Sede Sanguinária',
         descricao: `Enquanto está em fúria, quando faz um acerto crítico ou reduz um inimigo a 0 PV ou menos você recupera 10 PV e 2 PM. Pré-requisitos: Sangue dos Inimigos, 5º nível de bárbaro.`,
         tipo: TipoPoder.PODER_CLASSE,

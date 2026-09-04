@@ -13,6 +13,7 @@ export class Poder {
   prerequisito_segundo_atributo_nome?: string;
   prerequisito_segundo_atributo_valor?: number;
   prerequisito_pericia?: string[];
+  prerequisito_proficiencia?: string[];
   prerequisito_nivel?: number;
   prerequisito_habilidade?: string[];
   prerequisito_numero_habilidade_tormenta?: number;
