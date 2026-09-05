@@ -46,4 +46,71 @@ export class PoderService extends AbstractService {
     let listas = this.http.get<Poder[]>(this.url);
     return this.filtrar(filtro, listas, FILTROS_PODER);
   }
+
+  getArvore(idPoder: number): Observable<PoderArvore | undefined> {
+    return this.listAll().pipe(
+      map(poderes => {
+        const poder = poderes.find(p => p.id === idPoder);
+
+        if (!poder) {
+          return undefined;
+        }
+
+        return this.montarArvore(poder, poderes);
+      })
+    );
+  }
+
+  private montarArvore(poder: Poder, poderes: Poder[], caminho = new Set<number>()): PoderArvore {
+    const pais: PoderArvore[] = [];
+    const filhos: PoderArvore[] = [];
+
+    if (poder.id === undefined) {
+      return {
+        poder,
+        pais,
+        filhos,
+      };
+    }
+
+    // Evita ciclos
+    const novoCaminho = new Set(caminho);
+    novoCaminho.add(poder.id);
+
+    // =========================
+    // PAIS
+    // =========================
+
+    const poderesPais = poderes.filter(p => poder.ids_poder_pai?.includes(p.id!) ?? false);
+
+    for (const pai of poderesPais) {
+      if (pai.id !== undefined && !novoCaminho.has(pai.id)) {
+        pais.push(this.montarArvore(pai, poderes, novoCaminho));
+      }
+    }
+
+    // =========================
+    // FILHOS
+    // =========================
+
+    const poderesFilhos = poderes.filter(p => p.ids_poder_pai?.includes(poder.id!) ?? false);
+
+    for (const filho of poderesFilhos) {
+      if (filho.id !== undefined && !novoCaminho.has(filho.id)) {
+        filhos.push(this.montarArvore(filho, poderes, novoCaminho));
+      }
+    }
+
+    return {
+      poder,
+      pais,
+      filhos,
+    };
+  }
+}
+
+export interface PoderArvore {
+  poder: Poder;
+  pais: PoderArvore[];
+  filhos: PoderArvore[];
 }
