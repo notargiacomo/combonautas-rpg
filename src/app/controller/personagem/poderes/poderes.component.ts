@@ -34,18 +34,24 @@ import { Poder } from '@app/model/poder';
 export class PoderesComponent {
   readonly dialog = inject(MatDialog);
 
-  constructor(readonly poderesService: PoderFacadeService) {}
+  constructor(readonly poderesService: PoderFacadeService) {
+    this.poderesService.carregarPoderes();
+  }
 
   abrirPoderesRelacionados(poder: Poder): void {
-    this.poderesService.getPoderesRelacionados(poder.id!).subscribe(poderes => {
-      this.dialog.open(DialogPoderes, {
-        width: '700px',
-        data: {
-          nomePoder: poder.nome!,
-          poderesRelacionados: poderes,
-        } satisfies DialogPoderesData,
-      });
+    const poderes = this.poderesService.getPoderesRelacionados(poder.id!);
+
+    this.dialog.open(DialogPoderes, {
+      width: '700px',
+      data: {
+        nomePoder: poder.nome!,
+        poderesRelacionados: poderes,
+      } satisfies DialogPoderesData,
     });
+  }
+
+  temPoderesRelacionados(poder: Poder): boolean {
+    return this.poderesService.getPoderesRelacionados(poder.id!).length > 0;
   }
 }
 

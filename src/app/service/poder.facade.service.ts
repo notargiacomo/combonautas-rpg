@@ -39,7 +39,11 @@ export class PoderFacadeService {
     );
   }
 
-  getPoderesRelacionados(idPoder: number): Observable<Poder[]> {
+  carregarPoderes() {
+    this.poderService.carregarPoderes();
+  }
+
+  getPoderesRelacionados(idPoder: number): Poder[] {
     return this.poderService.getPoderesRelacionados(idPoder);
   }
 }

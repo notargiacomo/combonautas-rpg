@@ -47,39 +47,42 @@ export class PoderService extends AbstractService {
     return this.filtrar(filtro, listas, FILTROS_PODER);
   }
 
-  getPoderesRelacionados(idPoder: number): Observable<Poder[]> {
-    return this.listAll().pipe(
-      map(poderes => {
-        const relacionados = new Map<number, Poder>();
+  private poderes: Poder[] = [];
 
-        const adicionar = (poder: Poder) => {
-          if (poder.id === undefined || relacionados.has(poder.id)) {
-            return;
-          }
+  carregarPoderes(): void {
+    this.listAll().subscribe(poderes => {
+      this.poderes = poderes;
+    });
+  }
+  getPoderesRelacionados(idPoder: number): Poder[] {
+    const relacionados = new Map<number, Poder>();
 
-          relacionados.set(poder.id, poder);
+    const adicionar = (poder: Poder) => {
+      if (poder.id === undefined || relacionados.has(poder.id)) {
+        return;
+      }
 
-          // Pais
-          const pais = poderes.filter(p => poder.ids_poder_pai?.includes(p.id!) ?? false);
+      relacionados.set(poder.id, poder);
 
-          pais.forEach(adicionar);
+      // Pais
+      const pais = this.poderes.filter(p => poder.ids_poder_pai?.includes(p.id!) ?? false);
 
-          // Filhos
-          const filhos = poderes.filter(p => p.ids_poder_pai?.includes(poder.id!) ?? false);
+      pais.forEach(adicionar);
 
-          filhos.forEach(adicionar);
-        };
+      // Filhos
+      const filhos = this.poderes.filter(p => p.ids_poder_pai?.includes(poder.id!) ?? false);
 
-        const poder = poderes.find(p => p.id === idPoder);
+      filhos.forEach(adicionar);
+    };
 
-        if (!poder) {
-          return [];
-        }
+    const poder = this.poderes.find(p => p.id === idPoder);
 
-        adicionar(poder);
+    if (!poder) {
+      return [];
+    }
 
-        return Array.from(relacionados.values()).filter(p => p.id !== idPoder);
-      })
-    );
+    adicionar(poder);
+
+    return Array.from(relacionados.values()).filter(p => p.id !== idPoder);
   }
 }
