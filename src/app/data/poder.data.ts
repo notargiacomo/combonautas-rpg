@@ -279,7 +279,7 @@ export class PoderData {
         id: 24,
         nome: 'Empunhadura Poderosa',
         descricao:
-          'Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, usar uma arma de uma categoria de tamanho maior impõe –5 nos testes de ataque). Pré-requisito: For 3.',
+          '<p>Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, usar uma arma de uma categoria de tamanho maior impõe –5 nos testes de ataque). Pré-requisito: For 3.</p>',
         prerequisito: 'Pré-requisito: For 3',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 3,
@@ -291,7 +291,7 @@ export class PoderData {
         id: 26,
         nome: 'Encouraçado',
         descricao:
-          'Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito. Pré-requisito: proficiência com armaduras pesadas.',
+          '<p>Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito. Pré-requisito: proficiência com armaduras pesadas.</p>',
         prerequisito: 'Pré-requisito: proficiência com armaduras pesadas',
         prerequisito_proficiencia: ['armaduras pesadas'],
         referencias: Referencia.BASICO,
@@ -301,7 +301,7 @@ export class PoderData {
       {
         id: 27,
         nome: 'Esquiva',
-        descricao: 'Você recebe +2 na Defesa e Reflexos. Pré-requisito: Des 1.',
+        descricao: '<p>Você recebe +2 na Defesa e Reflexos. Pré-requisito: Des 1.</p>',
         prerequisito: 'Pré-requisito: Des 1',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -313,7 +313,7 @@ export class PoderData {
         id: 28,
         nome: 'Estilo de Arma Longa',
         descricao:
-          'Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas. Pré-requisitos: For 1, treinado em Luta.',
+          '<p>Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas. Pré-requisitos: For 1, treinado em Luta.</p>',
         prerequisito: 'Pré-requisitos: For 1, treinado em Luta',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -326,7 +326,7 @@ export class PoderData {
         id: 29,
         nome: 'Estilo Desarmado',
         descricao:
-          'Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades). Pré-requisito: treinado em Luta.',
+          '<p>Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades). Pré-requisito: treinado em Luta.</p>',
         prerequisito: 'Pré-requisito: treinado em Luta',
         prerequisito_pericia: ['Luta'],
         referencias: Referencia.BASICO,
@@ -338,7 +338,7 @@ export class PoderData {
         ids_poder_pai: [26],
         nome: 'Inexpugnável',
         descricao:
-          'Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência. Pré-requisitos: Encouraçado, 6º nível de personagem.',
+          '<p>Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência. Pré-requisitos: Encouraçado, 6º nível de personagem.</p>',
         prerequisito: 'Pré-requisitos: Encouraçado, 6º nível de personagem',
         prerequisito_nivel: 6,
         referencias: Referencia.BASICO,
@@ -350,7 +350,7 @@ export class PoderData {
         ids_poder_pai: [26],
         nome: 'Fanático',
         descricao:
-          'Seu deslocamento não é reduzido por usar armaduras pesadas. Pré-requisitos: 12º nível de personagem, Encouraçado. ',
+          '<p>Seu deslocamento não é reduzido por usar armaduras pesadas. Pré-requisitos: 12º nível de personagem, Encouraçado.</p>',
         prerequisito: 'Pré-requisitos: 12º nível de personagem, Encouraçado',
         prerequisito_nivel: 12,
         referencias: Referencia.BASICO,
@@ -361,7 +361,7 @@ export class PoderData {
         id: 32,
         nome: 'Finta Aprimorada',
         descricao:
-          'Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento. Pré-requisitos: treinado em Enganação.',
+          '<p>Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento. Pré-requisitos: treinado em Enganação.</p>',
         prerequisito: 'Pré-requisitos: treinado em Enganação',
         prerequisito_pericia: ['Enganação'],
         referencias: Referencia.BASICO,
@@ -372,7 +372,7 @@ export class PoderData {
         id: 34,
         nome: 'Foco em Arma',
         descricao:
-          'Escolha uma arma. Você recebe +2 em testes de ataque com essa arma. Você pode escolher este poder outras vezes para armas diferentes. Pré-requisito: proficiência com a arma.',
+          '<p>Escolha uma arma. Você recebe +2 em testes de ataque com essa arma. Você pode escolher este poder outras vezes para armas diferentes. Pré-requisito: proficiência com a arma.</p>',
         prerequisito: 'Pré-requisito: proficiência com a arma',
         referencias: Referencia.BASICO,
         paginas: '128',
@@ -393,10 +393,10 @@ export class PoderData {
       },
       {
         id: 36,
-        ids_poder_pai: [29],
+        ids_poder_pai: [28],
         nome: 'Piqueiro',
         descricao:
-          'Uma vez por rodada, se estiver empunhando uma arma alongada e um inimigo entrar voluntariamente em seu alcance corpo a corpo, você pode gastar 1 PM para fazer um ataque corpo a corpo contra este oponente com esta arma. Se o oponente tiver se aproximado fazendo uma investida, seu ataque causa dois dados de dano extra do mesmo tipo. Pré-requisito: Estilo de Arma Longa.',
+          '<p>Uma vez por rodada, se estiver empunhando uma arma alongada e um inimigo entrar voluntariamente em seu alcance corpo a corpo, você pode gastar 1 PM para fazer um ataque corpo a corpo contra este oponente com esta arma. Se o oponente tiver se aproximado fazendo uma investida, seu ataque causa dois dados de dano extra do mesmo tipo. Pré-requisito: Estilo de Arma Longa.</p>',
         prerequisito: 'Pré-requisito: Estilo de Arma Longa',
         referencias: Referencia.BASICO,
         paginas: '128',
@@ -406,7 +406,7 @@ export class PoderData {
         id: 37,
         nome: 'Presença Aterradora',
         descricao:
-          'Você pode gastar uma ação padrão e 1 PM para assustar todas as criaturas a sua escolha em alcance curto. Veja a perícia Intimidação para as regras de assustar. Pré-requisito: treinado em Intimidação.',
+          '<p>Você pode gastar uma ação padrão e 1 PM para assustar todas as criaturas a sua escolha em alcance curto. Veja a perícia Intimidação para as regras de assustar. Pré-requisito: treinado em Intimidação.</p>',
         prerequisito: 'Pré-requisito: treinado em Intimidação',
         prerequisito_pericia: ['Intimidação'],
         referencias: Referencia.BASICO,
@@ -428,7 +428,7 @@ export class PoderData {
         id: 39,
         nome: 'Reflexos de Combate',
         descricao:
-          'Você ganha uma ação de movimento extra no seu primeiro turno de cada combate. Pré-requisito: Des 1.',
+          '<p>Você ganha uma ação de movimento extra no seu primeiro turno de cada combate. Pré-requisito: Des 1.</p>',
         prerequisito: 'Pré-requisito: Des 1',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -440,7 +440,7 @@ export class PoderData {
         id: 40,
         nome: 'Saque Rápido',
         descricao:
-          'Você recebe +2 em Iniciativa e pode sacar ou guardar itens como uma ação livre (em vez de ação de movimento). Além disso, a ação que você gasta para recarregar armas de disparo diminui em uma categoria (ação completa para padrão, padrão para movimento, movimento para livre). Pré-requisito: treinado em Iniciativa.',
+          '<p>Você recebe +2 em Iniciativa e pode sacar ou guardar itens como uma ação livre (em vez de ação de movimento). Além disso, a ação que você gasta para recarregar armas de disparo diminui em uma categoria (ação completa para padrão, padrão para movimento, movimento para livre). Pré-requisito: treinado em Iniciativa.</p>',
         prerequisito: 'Pré-requisito: treinado em Iniciativa',
         prerequisito_pericia: ['Iniciativa'],
         referencias: Referencia.BASICO,
@@ -461,7 +461,7 @@ export class PoderData {
       {
         id: 42,
         nome: 'Vitalidade',
-        descricao: 'Você recebe +1 PV por nível de personagem e +2 em Fortitude. Pré-requisito: Con 1.',
+        descricao: '<p>Você recebe +1 PV por nível de personagem e +2 em Fortitude. Pré-requisito: Con 1.</p>',
         prerequisito: 'Pré-requisito: Con 1',
         prerequisito_atributo_nome: Atributo.CONSTITUICAO,
         prerequisito_atributo_valor: 1,
@@ -554,7 +554,7 @@ export class PoderData {
       {
         id: 44,
         nome: 'Ao Sabor do Destino',
-        descricao: `Confiando em suas próprias habilidades (ou em sua própria sorte), você abre mão de usar itens mágicos. Sua autoconfiança fornece diversos benefícios, de acordo com seu nível de personagem e a tabela da página seguinte.
+        descricao: `<p>Confiando em suas próprias habilidades (ou em sua própria sorte), você abre mão de usar itens mágicos. Sua autoconfiança fornece diversos benefícios, de acordo com seu nível de personagem e a tabela da página seguinte.</p>
         <div class="row">
         <div class="col-sm-12 mt-2 mb-4">
         <table border="1">
@@ -618,7 +618,7 @@ export class PoderData {
         </div>
         </div>
       </div>
-        Os bônus não são cumulativos (os bônus em atributos e perícias devem ser aplicados num atributo ou perícia diferente a cada vez). Se você utilizar voluntariamente qualquer item mágico (exceto poções), perde o benefício deste poder até o fim da aventura. Você ainda pode lançar magias, receber magias benéficas ou beneficiar-se de itens usados por outros — por exemplo, pode “ir de carona” em um tapete voador, mas não pode você mesmo conduzi-lo. Pré-requisito: 6º nível de personagem.
+        <p>Os bônus não são cumulativos (os bônus em atributos e perícias devem ser aplicados num atributo ou perícia diferente a cada vez). Se você utilizar voluntariamente qualquer item mágico (exceto poções), perde o benefício deste poder até o fim da aventura. Você ainda pode lançar magias, receber magias benéficas ou beneficiar-se de itens usados por outros — por exemplo, pode “ir de carona” em um tapete voador, mas não pode você mesmo conduzi-lo. Pré-requisito: 6º nível de personagem.</p>
       `,
         prerequisito: 'Pré-requisito: 6º nível de personagem',
         prerequisito_nivel: 6,
@@ -630,7 +630,7 @@ export class PoderData {
         id: 45,
         nome: 'Aparência Inofensiva',
         descricao:
-          'A primeira criatura inteligente (Int –3 ou maior) que atacar você em uma cena deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Este poder só funciona uma vez por cena; independentemente de a criatura falhar ou não no teste, poderá atacá-lo nas rodadas seguintes. Pré-requisito: Car 1',
+          '<p>A primeira criatura inteligente (Int –3 ou maior) que atacar você em uma cena deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Este poder só funciona uma vez por cena; independentemente de a criatura falhar ou não no teste, poderá atacá-lo nas rodadas seguintes. Pré-requisito: Car 1</p>',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -641,7 +641,7 @@ export class PoderData {
       {
         id: 46,
         nome: 'Atlético',
-        descricao: 'Você recebe +2 em Atletismo e +3m em seu deslocamento. Pré-requisito: For 2.',
+        descricao: '<p>Você recebe +2 em Atletismo e +3m em seu deslocamento. Pré-requisito: For 2.</p>',
         prerequisito: 'Pré-requisito: For 2',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 2,
@@ -653,7 +653,7 @@ export class PoderData {
         id: 47,
         nome: 'Atraente',
         descricao:
-          'Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você. Pré-requisito: Car 1.',
+          '<p>Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você. Pré-requisito: Car 1.</p>',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -665,7 +665,7 @@ export class PoderData {
         id: 48,
         nome: 'Comandar',
         descricao:
-          'Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena. Pré-requisito: Car 1.',
+          '<p>Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena. Pré-requisito: Car 1.</p>',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -677,7 +677,7 @@ export class PoderData {
         id: 49,
         nome: 'Costas Largas',
         descricao:
-          'Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional. Pré-requisito: Con 1, For 1.',
+          '<p>Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional. Pré-requisito: Con 1, For 1.</p>',
         prerequisito: 'Pré-requisito: Con 1, For 1',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -691,7 +691,7 @@ export class PoderData {
         id: 50,
         nome: 'Treinamento em Perícia',
         descricao:
-          'Você se torna treinado em uma perícia a sua escolha. Você pode escolher este poder outras vezes para perícias diferentes',
+          '<p>Você se torna treinado em uma perícia a sua escolha. Você pode escolher este poder outras vezes para perícias diferentes.</p>',
         referencias: Referencia.BASICO,
         paginas: '129',
         tipo: TipoPoder.PODER_DESTINO,
@@ -700,7 +700,7 @@ export class PoderData {
         id: 51,
         nome: 'Foco em Perícia',
         descricao:
-          'Escolha uma perícia. Quando faz um teste dessa perícia, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Você pode escolher este poder outras vezes para perícias diferentes. Este poder não pode ser aplicado em Luta e Pontaria (mas veja Foco em Arma). Pré-requisito: treinado na perícia escolhida.',
+          '<p>Escolha uma perícia. Quando faz um teste dessa perícia, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Você pode escolher este poder outras vezes para perícias diferentes. Este poder não pode ser aplicado em Luta e Pontaria (mas veja Foco em Arma). Pré-requisito: treinado na perícia escolhida.</p>',
         prerequisito: 'Pré-requisito: treinado na perícia escolhida',
         referencias: Referencia.BASICO,
         paginas: '130',
@@ -710,7 +710,7 @@ export class PoderData {
         id: 52,
         nome: 'Inventário Organizado',
         descricao:
-          'Você soma sua Inteligência no limite de espaços que pode carregar. Para você, itens muito leves ou pequenos, que normalmente ocupam meio espaço, em vez disso ocupam 1/4 de espaço. Pré-requisito: Int 1.',
+          '<p>Você soma sua Inteligência no limite de espaços que pode carregar. Para você, itens muito leves ou pequenos, que normalmente ocupam meio espaço, em vez disso ocupam 1/4 de espaço. Pré-requisito: Int 1.</p>',
         prerequisito: 'Pré-requisito: Int 1',
         prerequisito_atributo_nome: Atributo.INTELIGENCIA,
         prerequisito_atributo_valor: 1,
@@ -721,7 +721,7 @@ export class PoderData {
       {
         id: 53,
         nome: 'Investigador',
-        descricao: 'Você recebe +2 em Investigação e soma sua Inteligência em Intuição. Pré-requisito: Int 1.',
+        descricao: '<p>Você recebe +2 em Investigação e soma sua Inteligência em Intuição. Pré-requisito: Int 1.</p>',
         prerequisito: 'Pré-requisito: Int 1',
         prerequisito_atributo_nome: Atributo.INTELIGENCIA,
         prerequisito_atributo_valor: 1,
@@ -733,7 +733,7 @@ export class PoderData {
         id: 54,
         nome: 'Lobo Solitário',
         descricao:
-          'Você recebe +1 em testes de perícia e Defesa se estiver sem nenhum aliado em alcance curto. Você não sofre penalidade por usar Cura em si mesmo.',
+          '<p>Você recebe +1 em testes de perícia e Defesa se estiver sem nenhum aliado em alcance curto. Você não sofre penalidade por usar Cura em si mesmo.</p>',
         referencias: Referencia.BASICO,
         paginas: '130',
         tipo: TipoPoder.PODER_DESTINO,
@@ -742,7 +742,7 @@ export class PoderData {
         id: 55,
         nome: 'Medicina',
         descricao:
-          'Você pode gastar uma ação completa para fazer um teste de Cura (CD 15) em uma criatura. Se você passar, ela recupera 1d6 PV, mais 1d6 para cada 5 pontos pelos quais o resultado do teste exceder a CD (2d6 com um resultado 20, 3d6 com um resultado 25 e assim por diante). Você só pode usar este poder uma vez por dia numa mesma criatura. Pré-requisitos: Sab 1, treinado em Cura.',
+          '<p>Você pode gastar uma ação completa para fazer um teste de Cura (CD 15) em uma criatura. Se você passar, ela recupera 1d6 PV, mais 1d6 para cada 5 pontos pelos quais o resultado do teste exceder a CD (2d6 com um resultado 20, 3d6 com um resultado 25 e assim por diante). Você só pode usar este poder uma vez por dia numa mesma criatura. Pré-requisitos: Sab 1, treinado em Cura.</p>',
         prerequisito: 'Pré-requisitos: Sab 1, treinado em Cura',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -755,7 +755,7 @@ export class PoderData {
         id: 56,
         nome: 'Parceiro',
         descricao:
-          'Você possui um parceiro animal ou humanoide que o acompanha em aventuras. Escolha os detalhes dele, como nome, aparência e personalidade. Em termos de jogo, é um parceiro iniciante de um tipo a sua escolha (veja a página 260). O parceiro obedece às suas ordens e se arrisca para ajudá-lo, mas, se for maltratado, pode parar de segui-lo (de acordo com o mestre). Se perder seu parceiro, você recebe outro no início da próxima aventura. Pré-requisitos: treinado em Adestramento (parceiro animal) ou Diplomacia (parceiro humanoide), 5º nível de personagem.',
+          '<p>Você possui um parceiro animal ou humanoide que o acompanha em aventuras. Escolha os detalhes dele, como nome, aparência e personalidade. Em termos de jogo, é um parceiro iniciante de um tipo a sua escolha (veja a página 260). O parceiro obedece às suas ordens e se arrisca para ajudá-lo, mas, se for maltratado, pode parar de segui-lo (de acordo com o mestre). Se perder seu parceiro, você recebe outro no início da próxima aventura. Pré-requisitos: treinado em Adestramento (parceiro animal) ou Diplomacia (parceiro humanoide), 5º nível de personagem.</p>',
         prerequisito:
           'Pré-requisitos: treinado em Adestramento (parceiro animal) ou Diplomacia (parceiro humanoide), 5º nível de personagem',
         prerequisito_nivel: 5,
@@ -768,7 +768,7 @@ export class PoderData {
         id: 57,
         nome: 'Sentidos Aguçados',
         descricao:
-          'Você recebe +2 em Percepção, não fica desprevenido contra inimigos que não possa ver e, sempre que erra um ataque devido a camuflagem, pode rolar mais uma vez o dado da chance de falha. Pré-requisitos: Sab 1, treinado em Percepção.',
+          '<p>Você recebe +2 em Percepção, não fica desprevenido contra inimigos que não possa ver e, sempre que erra um ataque devido a camuflagem, pode rolar mais uma vez o dado da chance de falha. Pré-requisitos: Sab 1, treinado em Percepção.</p>',
         prerequisito: 'Pré-requisitos: Sab 1, treinado em Percepção',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -780,7 +780,8 @@ export class PoderData {
       {
         id: 58,
         nome: 'Sortudo',
-        descricao: 'Você pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste).',
+        descricao:
+          '<p>Você pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste).</p>',
         referencias: Referencia.BASICO,
         paginas: '131',
         tipo: TipoPoder.PODER_DESTINO,
@@ -788,7 +789,8 @@ export class PoderData {
       {
         id: 59,
         nome: 'Surto Heroico',
-        descricao: 'Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.',
+        descricao:
+          '<p>Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.</p>',
         referencias: Referencia.BASICO,
         paginas: '131',
         tipo: TipoPoder.PODER_DESTINO,
@@ -797,7 +799,7 @@ export class PoderData {
         id: 61,
         nome: 'Torcida',
         descricao:
-          'Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida” qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você. Pré-requisito: Car 1.',
+          '<p>Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida” qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você. Pré-requisito: Car 1.</p>',
         prerequisito: 'Pré-requisito: Car 1',
         prerequisito_atributo_nome: Atributo.CARISMA,
         prerequisito_atributo_valor: 1,
@@ -809,7 +811,7 @@ export class PoderData {
         id: 62,
         nome: 'Venefício',
         descricao:
-          'Quando usa um veneno, você não corre risco de se envenenar acidentalmente. Além disso, a CD para resistir aos seus venenos aumenta em +2. Pré-requisito: treinado em Ofício (alquimista).',
+          '<p>Quando usa um veneno, você não corre risco de se envenenar acidentalmente. Além disso, a CD para resistir aos seus venenos aumenta em +2. Pré-requisito: treinado em Ofício (alquimista).</p>',
         prerequisito: 'Pré-requisito: treinado em Ofício (alquimista)',
         prerequisito_pericia: ['Ofício (alquimista)'],
         referencias: Referencia.BASICO,
@@ -819,7 +821,8 @@ export class PoderData {
       {
         id: 63,
         nome: 'Vontade de Ferro',
-        descricao: 'Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade. Pré-requisito: Sab 1.',
+        descricao:
+          '<p>Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade. Pré-requisito: Sab 1.</p>',
         prerequisito: 'Pré-requisito: Sab 1',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -12000,7 +12003,7 @@ export class PoderData {
         id_classe: 12,
       },
       {
-        id: 1182,
+        id: 10182,
         nome: 'Confiança dos Ringues',
         descricao: `Quando um inimigo erra um ataque corpo a corpo contra você, você recebe  2  PM  temporários  (cumulativos).  Você pode ganhar um máximo de PM temporários por cena igual ao seu nível. Esses pontos temporários desaparecem no final da cena. <i>Pré-requisito: 8º nível de lutador.</i>`,
         referencias: Referencia.BASICO,
@@ -20735,7 +20738,8 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         paginas: '78',
       },
       {
-        id: 1186,
+        id: 10186,
+        ids_poder_pai: [1171, 29],
         nome: `Briga de Rua`,
         descricao: `<p>Você sabe chutar áreas sensíveis dos inimigos e usar outros truques sujos. Uma vez por rodada, quando faz uma finta, você pode gastar 1 PM. Se fizer isso e vencer o teste oposto da finta, além dos efeitos de fintar, você pode fazer um ataque desarmado contra o alvo como uma ação livre. Se acertar esse ataque, causa +2d6 pontos de dano. Pré-requisito: Briga ou Estilo Desarmado.</p>`,
         prerequisito: `Pré-requisito: Briga ou Estilo Desarmado.`,
@@ -20744,7 +20748,8 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         paginas: '78',
       },
       {
-        id: 1187,
+        id: 10187,
+        ids_poder_pai: [1171, 29, 2],
         nome: `Chuva de Golpes`,
         descricao: `<p>Quando ataca com duas armas empunhadas usando o poder Estilo de Duas Armas, você pode fazer um ataque desarmado adicional. Pré-requisitos: Briga ou Estilo Desarmado, Estilo de Duas Armas.</p>`,
         prerequisito: `Pré-requisitos: Briga ou Estilo Desarmado, Estilo de Duas Armas.`,
@@ -20753,7 +20758,7 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         paginas: '78',
       },
       {
-        id: 1188,
+        id: 10188,
         ids_poder_pai: [16, 26],
         nome: `Catafractário`,
         descricao: `<p>Antigos guerreiros montados de Lamnor, os catafractários eram famosos por suas táticas defensivas. Embora suas unidades não existam mais, suas técnicas perduraram. Se estiver montado e vestindo armadura pesada, você recebe +1 na Defesa por nível de parceiro de sua montaria. Pré-requisitos: Encouraçado, Ginete.</p>`,
@@ -20763,7 +20768,7 @@ Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais sev
         paginas: '78',
       },
       {
-        id: 1189,
+        id: 10189,
         ids_poder_pai: [18],
         nome: `Contra-Ataque`,
         descricao: `<p>Uma vez por rodada, se uma criatura atacá-lo e errar, você pode gastar 2 PM para fazer um ataque corpo a corpo contra essa criatura. Pré-requisito: Combate Defensivo.</p>`,
