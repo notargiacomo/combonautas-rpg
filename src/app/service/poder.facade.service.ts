@@ -4,6 +4,7 @@ import { ClasseService } from './classe.service';
 import { DeusService } from './deus.service';
 import { PoderService } from './poder.service';
 import { RacaService } from './raca.service';
+import { Poder } from '@app/model/poder';
 
 @Injectable({ providedIn: 'root' })
 export class PoderFacadeService {
@@ -36,5 +37,9 @@ export class PoderFacadeService {
         )
       )
     );
+  }
+
+  getPoderesRelacionados(idPoder: number): Observable<Poder[]> {
+    return this.poderService.getPoderesRelacionados(idPoder);
   }
 }

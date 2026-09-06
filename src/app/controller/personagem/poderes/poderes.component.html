@@ -23,6 +23,7 @@
     <mat-card class="card-game">
       <mat-card-title class="mat-card-title">
         {{ item.nome.toUpperCase() }}
+        <span class="material-symbols-outlined" (click)="abrirPoderesRelacionados(item)">flowchart</span>
       </mat-card-title>
       <mat-card-content class="">
         <div class="row mt-2 mb-1">

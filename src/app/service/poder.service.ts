@@ -47,70 +47,39 @@ export class PoderService extends AbstractService {
     return this.filtrar(filtro, listas, FILTROS_PODER);
   }
 
-  getArvore(idPoder: number): Observable<PoderArvore | undefined> {
+  getPoderesRelacionados(idPoder: number): Observable<Poder[]> {
     return this.listAll().pipe(
       map(poderes => {
+        const relacionados = new Map<number, Poder>();
+
+        const adicionar = (poder: Poder) => {
+          if (poder.id === undefined || relacionados.has(poder.id)) {
+            return;
+          }
+
+          relacionados.set(poder.id, poder);
+
+          // Pais
+          const pais = poderes.filter(p => poder.ids_poder_pai?.includes(p.id!) ?? false);
+
+          pais.forEach(adicionar);
+
+          // Filhos
+          const filhos = poderes.filter(p => p.ids_poder_pai?.includes(poder.id!) ?? false);
+
+          filhos.forEach(adicionar);
+        };
+
         const poder = poderes.find(p => p.id === idPoder);
 
         if (!poder) {
-          return undefined;
+          return [];
         }
 
-        return this.montarArvore(poder, poderes);
+        adicionar(poder);
+
+        return Array.from(relacionados.values()).filter(p => p.id !== idPoder);
       })
     );
   }
-
-  private montarArvore(poder: Poder, poderes: Poder[], caminho = new Set<number>()): PoderArvore {
-    const pais: PoderArvore[] = [];
-    const filhos: PoderArvore[] = [];
-
-    if (poder.id === undefined) {
-      return {
-        poder,
-        pais,
-        filhos,
-      };
-    }
-
-    // Evita ciclos
-    const novoCaminho = new Set(caminho);
-    novoCaminho.add(poder.id);
-
-    // =========================
-    // PAIS
-    // =========================
-
-    const poderesPais = poderes.filter(p => poder.ids_poder_pai?.includes(p.id!) ?? false);
-
-    for (const pai of poderesPais) {
-      if (pai.id !== undefined && !novoCaminho.has(pai.id)) {
-        pais.push(this.montarArvore(pai, poderes, novoCaminho));
-      }
-    }
-
-    // =========================
-    // FILHOS
-    // =========================
-
-    const poderesFilhos = poderes.filter(p => p.ids_poder_pai?.includes(poder.id!) ?? false);
-
-    for (const filho of poderesFilhos) {
-      if (filho.id !== undefined && !novoCaminho.has(filho.id)) {
-        filhos.push(this.montarArvore(filho, poderes, novoCaminho));
-      }
-    }
-
-    return {
-      poder,
-      pais,
-      filhos,
-    };
-  }
-}
-
-export interface PoderArvore {
-  poder: Poder;
-  pais: PoderArvore[];
-  filhos: PoderArvore[];
 }

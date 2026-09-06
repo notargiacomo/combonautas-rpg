@@ -23,7 +23,7 @@ export class PoderData {
         id: 1,
         nome: 'Acuidade com Arma',
         descricao:
-          'Quando usa uma arma corpo a corpo leve ou uma arma de arremesso, você pode usar sua Destreza em vez de Força nos testes de ataque e rolagens de dano. Pré-requisito: Des 1',
+          '<p>Quando usa uma arma corpo a corpo leve ou uma arma de arremesso, você pode usar sua Destreza em vez de Força nos testes de ataque e rolagens de dano. Pré-requisito: Des 1</p>',
         prerequisito: 'Pré-requisito: Des 1',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -35,7 +35,7 @@ export class PoderData {
         id: 2,
         nome: 'Estilo de Duas Armas',
         descricao:
-          'Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Se possuir Ambidestria, em vez disso não sofre penalidade para usá-lo. Pré-requisitos: Des 2, treinado em Luta.',
+          '<p>Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Se possuir Ambidestria, em vez disso não sofre penalidade para usá-lo. Pré-requisitos: Des 2, treinado em Luta.</p>',
         prerequisito: 'Pré-requisitos: Des 2, treinado em Luta',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 2,
@@ -49,7 +49,7 @@ export class PoderData {
         ids_poder_pai: [2],
         nome: 'Arma Secundária Grande',
         descricao:
-          'Você pode empunhar duas armas de uma mão com o poder Estilo de Duas Armas. Pré-requisito: Estilo de Duas Armas.',
+          '<p>Você pode empunhar duas armas de uma mão com o poder Estilo de Duas Armas. Pré-requisito: Estilo de Duas Armas.</p>',
         prerequisito: 'Pré-requisito: Estilo de Duas Armas',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -59,7 +59,7 @@ export class PoderData {
         id: 4,
         nome: 'Estilo de Arremesso',
         descricao:
-          'Você pode sacar armas de arremesso como uma ação livre e recebe +2 nas rolagens de dano com elas. Se também possuir o poder Saque Rápido, também recebe +2 nos testes de ataque com essas armas. Pré-requisito: treinado em Pontaria.',
+          '<p>Você pode sacar armas de arremesso como uma ação livre e recebe +2 nas rolagens de dano com elas. Se também possuir o poder Saque Rápido, também recebe +2 nos testes de ataque com essas armas. Pré-requisito: treinado em Pontaria.</p>',
         prerequisito: 'Pré-requisito: treinado em Pontaria',
         prerequisito_pericia: ['Pontaria'],
         referencias: Referencia.BASICO,
@@ -71,7 +71,7 @@ export class PoderData {
         ids_poder_pai: [4],
         nome: 'Arremesso Potente',
         descricao:
-          'Quando usa uma arma de arremesso, você pode usar sua Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso. Pré-requisitos: For 1, Estilo de Arremesso.',
+          '<p>Quando usa uma arma de arremesso, você pode usar sua Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso. Pré-requisitos: For 1, Estilo de Arremesso.</p>',
         prerequisito: 'Pré-requisitos: For 1, Estilo de Arremesso',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -84,7 +84,7 @@ export class PoderData {
         ids_poder_pai: [4],
         nome: 'Arremesso Múltiplo',
         descricao:
-          'Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso. Pré-requisitos: Des 1, Estilo de Arremesso.',
+          '<p>Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso. Pré-requisitos: Des 1, Estilo de Arremesso.</p>',
         prerequisito: 'Pré-requisitos: Des 1, Estilo de Arremesso',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -96,7 +96,7 @@ export class PoderData {
         id: 8,
         nome: 'Estilo de Arma e Escudo',
         descricao:
-          'Se você estiver usando um escudo, o bônus na Defesa que ele fornece aumenta em +2. Pré-requisitos: treinado em Luta, proficiência com escudos. Pré-requisitos: treinado em Luta, proficiência com escudos.',
+          '<p>Se você estiver usando um escudo, o bônus na Defesa que ele fornece aumenta em +2. Pré-requisitos: treinado em Luta, proficiência com escudos. Pré-requisitos: treinado em Luta, proficiência com escudos.</p>',
         prerequisito: 'Pré-requisitos: treinado em Luta, proficiência com escudos',
         prerequisito_pericia: ['Luta'],
         prerequisito_proficiencia: ['escudos'],
@@ -109,7 +109,7 @@ export class PoderData {
         ids_poder_pai: [8],
         nome: 'Ataque com Escudo',
         descricao:
-          'Uma vez por rodada, se estiver empunhando um escudo e fizer a ação agredir, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com o escudo. Este ataque não faz você perder o bônus do escudo na Defesa. Pré-requisito: Estilo de Arma e Escudo.',
+          '<p>Uma vez por rodada, se estiver empunhando um escudo e fizer a ação agredir, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com o escudo. Este ataque não faz você perder o bônus do escudo na Defesa. Pré-requisito: Estilo de Arma e Escudo.</p>',
         prerequisito: 'Pré-requisito: Estilo de Arma e Escudo',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -119,7 +119,7 @@ export class PoderData {
         id: 10,
         nome: 'Estilo de Duas Mãos',
         descricao:
-          'Se estiver usando uma arma corpo a corpo com as duas mãos, você recebe +5 nas rolagens de dano. Este poder não pode ser usado com armas leves. Pré-requisitos: For 2, Treinado em Luta.',
+          '<p>Se estiver usando uma arma corpo a corpo com as duas mãos, você recebe +5 nas rolagens de dano. Este poder não pode ser usado com armas leves. Pré-requisitos: For 2, Treinado em Luta.</p>',
         prerequisito: 'Pré-requisitos: For 2, Treinado em Luta',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 2,
@@ -133,7 +133,7 @@ export class PoderData {
         ids_poder_pai: [10],
         nome: 'Ataque Pesado',
         descricao:
-          'Quando faz um ataque corpo a corpo com uma arma de duas mãos, você pode pagar 1 PM. Se fizer isso e acertar o ataque, além do dano você faz uma manobra derrubar ou empurrar contra o alvo como uma ação livre (use o resultado do ataque como o teste de manobra). Pré-requisito: Estilo de Duas Mãos.',
+          '<p>Quando faz um ataque corpo a corpo com uma arma de duas mãos, você pode pagar 1 PM. Se fizer isso e acertar o ataque, além do dano você faz uma manobra derrubar ou empurrar contra o alvo como uma ação livre (use o resultado do ataque como o teste de manobra). Pré-requisito: Estilo de Duas Mãos.</p>',
         prerequisito: 'Pré-requisito: Estilo de Duas Mãos',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -143,7 +143,7 @@ export class PoderData {
         id: 12,
         nome: 'Ataque Poderoso',
         descricao:
-          'Sempre que faz um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na rolagem de dano. Pré-requisito: For 1.',
+          '<p>Sempre que faz um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na rolagem de dano. Pré-requisito: For 1.</p>',
         prerequisito: 'Pré-requisito: For 1',
         prerequisito_atributo_nome: Atributo.FORCA,
         prerequisito_atributo_valor: 1,
@@ -155,7 +155,7 @@ export class PoderData {
         id: 13,
         nome: 'Estilo de Uma Arma',
         descricao:
-          'Se estiver usando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na Defesa e nos testes de ataque com essa arma (exceto ataques desarmados). Pré-requisito: treinado em Luta.',
+          '<p>Se estiver usando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na Defesa e nos testes de ataque com essa arma (exceto ataques desarmados). Pré-requisito: treinado em Luta.</p>',
         prerequisito: 'Pré-requisito: treinado em Luta',
         prerequisito_pericia: ['Luta'],
         referencias: Referencia.BASICO,
@@ -167,7 +167,7 @@ export class PoderData {
         ids_poder_pai: [13],
         nome: 'Ataque Preciso',
         descricao:
-          'Se estiver empunhando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e +1 no multiplicador de crítico. Pré-requisito: Estilo de Uma Arma.',
+          '<p>Se estiver empunhando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e +1 no multiplicador de crítico. Pré-requisito: Estilo de Uma Arma.</p>',
         prerequisito: 'Pré-requisito: Estilo de Uma Arma',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -178,7 +178,7 @@ export class PoderData {
         ids_poder_pai: [8],
         nome: 'Bloqueio com Escudo',
         descricao:
-          'Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo. Pré-requisito: Estilo de Arma e Escudo.',
+          '<p>Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo. Pré-requisito: Estilo de Arma e Escudo.</p>',
         prerequisito: 'Pré-requisito: Estilo de Arma e Escudo',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -188,7 +188,7 @@ export class PoderData {
         id: 16,
         nome: 'Ginete',
         descricao:
-          'Você passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano. Além disso, não sofre penalidades para atacar à distância ou lançar magias quando montado. Pré-requisito: treinado em Cavalgar.',
+          '<p>Você passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano. Além disso, não sofre penalidades para atacar à distância ou lançar magias quando montado. Pré-requisito: treinado em Cavalgar.</p>',
         prerequisito: 'Pré-requisito: treinado em Cavalgar',
         prerequisito_pericia: ['Cavalgar'],
         referencias: Referencia.BASICO,
@@ -200,7 +200,7 @@ export class PoderData {
         ids_poder_pai: [16],
         nome: 'Carga de Cavalaria',
         descricao:
-          'Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento. Pré-requisito: Ginete.',
+          '<p>Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento. Pré-requisito: Ginete.</p>',
         prerequisito: 'Pré-requisito: Ginete',
         referencias: Referencia.BASICO,
         paginas: '124',
@@ -210,7 +210,7 @@ export class PoderData {
         id: 18,
         nome: 'Combate Defensivo',
         descricao:
-          'Quando usa a ação agredir, você pode usar este poder. Se fizer isso, até seu próximo turno, sofre –2 em todos os testes de ataque, mas recebe +5 na Defesa. Pré-requisito: Int 1.',
+          '<p>Quando usa a ação agredir, você pode usar este poder. Se fizer isso, até seu próximo turno, sofre –2 em todos os testes de ataque, mas recebe +5 na Defesa. Pré-requisito: Int 1.</p>',
         prerequisito: 'Pré-requisito: Int 1',
         prerequisito_segundo_atributo_nome: Atributo.INTELIGENCIA,
         prerequisito_segundo_atributo_valor: 1,
@@ -223,7 +223,7 @@ export class PoderData {
         ids_poder_pai: [18],
         nome: 'Derrubar Aprimorado',
         descricao:
-          'Você recebe +2 em testes de ataque para derrubar. Quando derruba uma criatura com essa manobra, pode gastar 1 PM para fazer um ataque extra contra ela. Pré-requisito: Combate Defensivo.',
+          '<p>Você recebe +2 em testes de ataque para derrubar. Quando derruba uma criatura com essa manobra, pode gastar 1 PM para fazer um ataque extra contra ela. Pré-requisito: Combate Defensivo.</p>',
         prerequisito: 'Pré-requisito: Combate Defensivo',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -234,7 +234,7 @@ export class PoderData {
         ids_poder_pai: [18],
         nome: 'Desarmar Aprimorado',
         descricao:
-          'Você recebe +2 em testes de ataque para desarmar. Quando desarma uma criatura, pode gastar 1 PM para arremessar a arma dela para longe. Para definir onde a arma cai, role 1d8 para a direção (sendo “1” diretamente à sua frente, “2” à frente e à direita e assim por diante) e 1d6 para a distância (medida em quadrados de 1,5m a partir da criatura desarmada). Pré-requisito: Combate Defensivo.',
+          '<p>Você recebe +2 em testes de ataque para desarmar. Quando desarma uma criatura, pode gastar 1 PM para arremessar a arma dela para longe. Para definir onde a arma cai, role 1d8 para a direção (sendo “1” diretamente à sua frente, “2” à frente e à direita e assim por diante) e 1d6 para a distância (medida em quadrados de 1,5m a partir da criatura desarmada). Pré-requisito: Combate Defensivo.</p>',
         prerequisito: 'Pré-requisito: Combate Defensivo',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -244,7 +244,7 @@ export class PoderData {
         id: 21,
         nome: 'Estilo de Disparo',
         descricao:
-          'Se estiver usando uma arma de disparo, você soma sua Destreza nas rolagens de dano. Pré-requisito: treinado em Pontaria.',
+          '<p>Se estiver usando uma arma de disparo, você soma sua Destreza nas rolagens de dano. Pré-requisito: treinado em Pontaria.</p>',
         prerequisito: 'Pré-requisito: treinado em Pontaria',
         prerequisito_pericia: ['Pontaria'],
         referencias: Referencia.BASICO,
@@ -256,7 +256,7 @@ export class PoderData {
         ids_poder_pai: [4, 21],
         nome: 'Disparo Preciso',
         descricao:
-          'Você pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem sofrer a penalidade de –5 no teste de ataque. Pré-requisito: Estilo de Disparo ou Estilo de Arremesso.',
+          '<p>Você pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem sofrer a penalidade de –5 no teste de ataque. Pré-requisito: Estilo de Disparo ou Estilo de Arremesso.</p>',
         prerequisito: 'Pré-requisito: Estilo de Disparo ou Estilo de Arremesso',
         referencias: Referencia.BASICO,
         paginas: '125',
@@ -267,7 +267,7 @@ export class PoderData {
         ids_poder_pai: [21],
         nome: 'Disparo Rápido',
         descricao:
-          'Se estiver empunhando uma arma de disparo que possa recarregar como ação livre e gastar uma ação completa para agredir, pode fazer um ataque adicional com ela. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Pré-requisitos: Des 1, Estilo de Disparo.',
+          '<p>Se estiver empunhando uma arma de disparo que possa recarregar como ação livre e gastar uma ação completa para agredir, pode fazer um ataque adicional com ela. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Pré-requisitos: Des 1, Estilo de Disparo.</p>',
         prerequisito: 'Pré-requisitos: Des 1, Estilo de Disparo',
         prerequisito_atributo_nome: Atributo.DESTREZA,
         prerequisito_atributo_valor: 1,
@@ -383,7 +383,7 @@ export class PoderData {
         ids_poder_pai: [22],
         nome: 'Mira Apurada',
         descricao:
-          'Quando usa a ação mirar, você recebe +2 em testes de ataque e na margem de ameaça com ataques à distância até o fim do turno. Pré-requisitos: Sab 1, Disparo Preciso.',
+          '<p>Quando usa a ação mirar, você recebe +2 em testes de ataque e na margem de ameaça com ataques à distância até o fim do turno. Pré-requisitos: Sab 1, Disparo Preciso.</p>',
         prerequisito: 'Pré-requisitos: Sab 1, Disparo Preciso',
         prerequisito_atributo_nome: Atributo.SABEDORIA,
         prerequisito_atributo_valor: 1,
@@ -418,7 +418,7 @@ export class PoderData {
         ids_poder_pai: [12],
         nome: 'Quebrar Aprimorado',
         descricao:
-          'Você recebe +2 em testes de ataque para quebrar. Quando reduz os PV de uma arma para 0 ou menos, você pode gastar 1 PM para realizar um ataque extra contra o usuário dela. O ataque adicional usa os mesmos valores de ataque e dano, mas os dados devem ser rolados novamente. Pré-requisito: Ataque Poderoso.',
+          '<p>Você recebe +2 em testes de ataque para quebrar. Quando reduz os PV de uma arma para 0 ou menos, você pode gastar 1 PM para realizar um ataque extra contra o usuário dela. O ataque adicional usa os mesmos valores de ataque e dano, mas os dados devem ser rolados novamente. Pré-requisito: Ataque Poderoso.</p>',
         prerequisito: 'Pré-requisito: Ataque Poderoso',
         referencias: Referencia.BASICO,
         paginas: '129',
@@ -452,7 +452,7 @@ export class PoderData {
         ids_poder_pai: [12],
         nome: 'Trespassar',
         descricao:
-          'Quando você faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance. Pré-requisito: Ataque Poderoso.',
+          '<p>Quando você faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance. Pré-requisito: Ataque Poderoso.</p>',
         prerequisito: 'Pré-requisito: Ataque Poderoso',
         referencias: Referencia.BASICO,
         paginas: '129',

@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Poderes Relacionados com {{ data.nomePoder }}</h2>
+
+<mat-dialog-content>
+  @for (poder of data.poderesRelacionados; track poder.id) {
+    <div>
+      <b>{{ poder.nome + ': ' }}</b>
+      <div class="text-justify" [innerHTML]="poder.descricao"></div>
+    </div>
+  }
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button matButton (click)="close()">Sair</button>
+</mat-dialog-actions>
