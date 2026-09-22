@@ -27,12 +27,14 @@ import { FichaRapidaComponent } from './controller/utilitarios/ficha-rapida/fich
 import { AmeacasComponent } from './controller/mestre/ameacas/ameacas.component';
 import { FamiliaresComponent } from './controller/campanha/familiares/familiares.component';
 import { CalculoAtributosComponent } from './controller/utilitarios/calculo-atributos/calculo-atributos.component';
+import { StrComponent } from './controller/regras/str/str.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'regras/condicoes', component: CondicoesComponent },
   { path: 'regras/acoes', component: AcoesComponent },
   { path: 'regras/regras', component: RegrasComponent },
+  { path: 'regras/str', component: StrComponent },
 
   { path: 'mestre/calculo-desafios', component: CalculoDesafiosComponent },
   { path: 'mestre/tabela-geracao-tesouros', component: TabelaGeracaoTesourosComponent },

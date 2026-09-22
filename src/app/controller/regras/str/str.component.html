@@ -1,0 +1,38 @@
+<app-card-search
+  name="Str"
+  [service]="strService"
+  [searchColumn]="['nome', 'pergunta', 'resposta']"
+  [colsGrid]="2"
+  [suggestions]="[]"
+  [columns]="[{ key: 'nome', label: 'Nome' }]"
+  gutterSizeGrid="10px">
+  <ng-template let-item>
+    <mat-card class="card-game">
+      <mat-card-title class="mat-card-title">
+        {{ 'CONS. ' + item.nome.toUpperCase() }}
+      </mat-card-title>
+      <mat-card-content class="">
+        <div class="content">
+          <div class="row">
+            <div class="col-sm-12 mt-2 d-flex justify-content-end">
+              {{ 'SÚMULA DE ' + item.data.toUpperCase() + ' - DB ' + item.db + ', pag. ' + item.pagina }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <hr class="" />
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="text-justify" [innerHTML]="item.pergunta" style="color: rgb(255, 165, 0)"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 mt-4">
+              <div class="text-justify" [innerHTML]="item.resposta"></div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</app-card-search>
