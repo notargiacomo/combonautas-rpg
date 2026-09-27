@@ -37,6 +37,10 @@ import { FamiliarData } from './familiar.data';
 import { Familiar } from '@app/model/familiar';
 import { StrData } from './str.data';
 import { Str } from '@app/model/str';
+import { TerritorioData } from './territorio.data';
+import { Territorio } from '@app/model/territorio';
+import { EncontroAleatorioData } from './encontro.aleatorio.data';
+import { EncontroAleatorio } from '@app/model/encontro.aleatorio';
 
 @Injectable({
   providedIn: 'root',
@@ -62,7 +66,9 @@ export class InMemoryDataService implements InMemoryDbService {
     private readonly artefatoData: ArtefatoData,
     private readonly ameacaData: AmeacaData,
     private readonly familiarData: FamiliarData,
-    private readonly strData: StrData
+    private readonly strData: StrData,
+    private readonly territorioData: TerritorioData,
+    private readonly encontroAleatorioData: EncontroAleatorioData
   ) {}
 
   createDb() {
@@ -86,6 +92,8 @@ export class InMemoryDataService implements InMemoryDbService {
     const ameaca: AmeacaData[] = this.ameacaData.get();
     const familiar: Familiar[] = this.familiarData.get();
     const str: Str[] = this.strData.get();
+    const territorio: Territorio[] = this.territorioData.get();
+    const encontroAleatorio: EncontroAleatorio[] = this.encontroAleatorioData.get();
 
     return {
       raca: raca,
@@ -108,6 +116,8 @@ export class InMemoryDataService implements InMemoryDbService {
       ameaca: ameaca,
       familiar: familiar,
       str: str,
+      territorio: territorio,
+      encontroAleatorio: encontroAleatorio,
     };
   }
 }

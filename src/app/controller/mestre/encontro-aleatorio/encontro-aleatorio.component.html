@@ -1,0 +1,71 @@
+<form [formGroup]="form">
+  <mat-card class="card-padrao">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2><b>ENCONTROS ALEATÓRIOS</b></h2>
+        <hr />
+      </div>
+    </div>
+    <label>
+      <b class="negrito-centralizado" style="text-justify: center !important">PREENCHA AS OPÇÕES DE ENCONTRO ABAIXO:</b>
+    </label>
+    <div class="col-sm-12 mt-4">
+      <div class="row">
+        <!-- <div class="col-sm-4">
+          <mat-form-field class="form-field text-field-formulario-edicao">
+            <mat-label>Território</mat-label>
+            <mat-select formControlName="territorio">
+              @for (territorio of territorios; track territorio) {
+                <mat-option [value]="territorio">{{ territorio.nome }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+        </div> -->
+        <div class="col-sm-6">
+          <mat-form-field class="form-field text-field-formulario-edicao">
+            <mat-label>Terreno</mat-label>
+            <mat-select formControlName="terreno" name="terreno">
+              @for (terreno of terrenos; track terreno) {
+                <mat-option [value]="terreno">{{ terreno }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="form-field text-field-formulario-edicao">
+            <mat-label>Patamar</mat-label>
+            <mat-select formControlName="patamar" name="patamar">
+              @for (patamar of patamares; track patamar) {
+                <mat-option [value]="patamar">{{ patamar }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-sm-12">
+          <section>
+            <div class="button-row d-flex justify-content-end">
+              <button
+                class="me-2"
+                (click)="gerarEncontroAleatorio()"
+                [disabled]="!this.form.get('terreno')?.value || !this.form.get('patamar')?.value"
+                mat-flat-button>
+                Gerar Encontro
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+  <mat-card>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5><b>ENCONTRO</b></h5>
+        <hr />
+        <h5>{{ this.encontroAleatorio }}</h5>
+      </div>
+    </div>
+  </mat-card>
+</form>

@@ -28,6 +28,7 @@ import { AmeacasComponent } from './controller/mestre/ameacas/ameacas.component'
 import { FamiliaresComponent } from './controller/campanha/familiares/familiares.component';
 import { CalculoAtributosComponent } from './controller/utilitarios/calculo-atributos/calculo-atributos.component';
 import { StrComponent } from './controller/regras/str/str.component';
+import { EncontroAleatorioComponent } from './controller/mestre/encontro-aleatorio/encontro-aleatorio.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,6 +40,7 @@ export const routes: Routes = [
   { path: 'mestre/calculo-desafios', component: CalculoDesafiosComponent },
   { path: 'mestre/tabela-geracao-tesouros', component: TabelaGeracaoTesourosComponent },
   { path: 'mestre/ameacas', component: AmeacasComponent },
+  { path: 'mestre/encontro-aleatorio', component: EncontroAleatorioComponent },
 
   { path: 'campanha/parceiros', component: ParceirosComponent },
   { path: 'campanha/distincoes', component: DistincoesComponent },
