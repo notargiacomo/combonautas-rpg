@@ -43,3 +43,8 @@ button[mat-flat-button]:hover {
 .mat-flat-button {
   background-color: #310d0d !important;
 }
+
+.mdc-button:disabled {
+  background-color: lightgrey !important;
+  color: #310d0d !important;
+}
